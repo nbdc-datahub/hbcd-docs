@@ -1,0 +1,42 @@
+site_name: HBCD Data Release Docs
+
+theme:
+  name: readthedocs
+  custom_dir: docs/overrides # for template overrides, used in this case for addition of "Page Last Updated: <DATE>" to pages
+  features:
+    - toc.integrate
+    - navigation.expand
+    - toc.follow
+    - navigation.sections
+    - header.autohide
+    - content.code.annotate  
+
+markdown_extensions:
+  - toc:
+      permalink: '🔗'  
+  
+extra_javascript:
+  - js/extra.js
+
+extra_css:
+  - css/custom.css
+  - css/copybox.css
+  - css/banners.css
+  - css/legends.css
+  - css/headers.css
+  - css/tables.css
+  - overrides/styles.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+
+docs_dir: docs
+
+nav: 
+  - ABOUT: index.md
+   
+  
+

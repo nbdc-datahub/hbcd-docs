@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block header %}
+  {{ super() }}
+  <div class="version-dropdown">
+    <label for="version-selector">Select Version:</label>
+    <select id="version-selector" onchange="location = this.value;">
+      <option value="https://hbcd-docs.readthedocs.io/en/public/">Public</option>
+      <option value="https://hbcd-docs.readthedocs.io/en/latest/">Internal</option>
+    </select>
+  </div>
+{% endblock %}
+

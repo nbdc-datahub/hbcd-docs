@@ -1,0 +1,63 @@
+/* Styling for click to copy */ 
+/* Box styling */
+.copy-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9; /* Light neutral background for contrast */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 900px; /* Adjust to your layout */
+    margin: 20px auto; /* Center on the page */
+  }
+  /* Text container styles */
+  .copy-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+  /* Text span styling */
+  #specific-text {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+  #specific-text-code {
+    font-family: monospace;
+    font-size: 11px;
+    color: #000;
+    line-height: 1.2;
+    word-wrap: break-word;
+    white-space: pre-wrap; /* Preserve spacing and line breaks */
+  }  
+  /* Link styling */
+  #specific-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  #specific-text a:hover {
+    text-decoration: underline;
+  }
+  .copy-button {
+    background: #007bff; 
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  .copy-button:hover {
+    background: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .copy-button:active {
+    background: #004080;
+  }
