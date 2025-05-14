@@ -1,4 +1,4 @@
-<p style="text-align: center; font-size: 2em">🚧 🚧 COMING SOON 🚧 🚧</p>
+<p style="text-align: center; font-size: 2em">🚧 COMING SOON 🚧</p>
 
 <p align="center">
 <img src="images/logo_HBCD_final.png" alt="logo" width="500">
@@ -10,7 +10,7 @@
 
 <br>
 <br>
-Annual data releases, hosted by the <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study">NIH Brain Development Cohorts (NBDC) Data Hub</a>, include information from the current participant cohort and all visits completed up to just before the release date. The inaugural HBCD Data Release 1.0, scheduled for Spring 2025, includes prenatal data from over 1300 pregnant participants as well as follow-up data from over half of their babies.
+Annual data releases, hosted by the <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study">NIH Brain Development Cohorts (NBDC) Data Hub</a>, include information from the current participant cohort and all visits completed up to just before the release date. The inaugural HBCD Data Release 1.0, scheduled for Summer 2025, includes prenatal data from over 1300 pregnant participants as well as follow-up data from over half of their babies.
 
 <br>
 <br>
