@@ -9,10 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Collapsible content: toggles open class AND rotate class to ON when arrow is clicked to expand/collapse the section.
+// Collapsible content - new logic
+function toggleNotificationCollapse(banner) {
+  const content = banner.nextElementSibling;
+  if (content && content.classList.contains('open-collapsible-content')) {
+    content.classList.toggle('open');
+  }
+}
+
+// Collapsed content: toggles open class AND rotate class to ON when arrow is clicked to expand/collapse the section.
 function toggleCollapse(element) {
   const collapsibleContent = element.nextElementSibling;
-  const arrow = element.querySelector(['.arrow', '.notification-arrow', '.table-arrow']);
+  const arrow = element.querySelector(['.arrow']);
 
   if (collapsibleContent.classList.contains('open')) {
     collapsibleContent.classList.remove('open');
@@ -28,9 +36,11 @@ function expandCollapsibleById(id) {
   const element = document.getElementById(id);
   
   if (element && (element.classList.contains('notification-banner') || 
-                  element.classList.contains('table-banner'))) {
+                  element.classList.contains('table-banner') ||
+                  element.classList.contains('warning-banner') ||
+                  element.classList.contains('alert-banner'))) {
     const collapsibleContent = element.nextElementSibling;
-    const arrow = element.querySelector(['.arrow', '.notification-arrow', '.table-arrow']);
+    const arrow = element.querySelector(['.arrow']);
 
     if (collapsibleContent && !collapsibleContent.classList.contains('open')) {
       collapsibleContent.classList.add('open');
@@ -40,14 +50,29 @@ function expandCollapsibleById(id) {
   }
 }
 
-// Auto-expand all collapsible banners on page load
+// Auto-expand banners if navigated via external link
 document.addEventListener('DOMContentLoaded', function () {
-  const collapsibleContents = document.querySelectorAll(['.collapsible-content', '.table-open-collapsible-content']);
-  const arrowIcons = document.querySelectorAll('.arrow');
+  const hash = window.location.hash.substring(1);
+  if (hash) {
+    expandCollapsibleById(hash);
+  }
+});
 
-  // Loop through all collapsible sections to open and rotate arrow
-  collapsibleContents.forEach(content => content.classList.add('open'));
-  arrowIcons.forEach(arrow => arrow.classList.add('rotate'));
+
+// Expand only collapsible sections with arrows that have the "open-arrow" class
+document.addEventListener('DOMContentLoaded', function () {
+  const openArrows = document.querySelectorAll('.open-arrow');
+
+  openArrows.forEach(arrow => {
+    arrow.classList.add('rotate');
+
+    // Find the related collapsible content (assumes it is the next sibling or nearby)
+    const content = arrow.closest('.collapsible-header')?.nextElementSibling;
+
+    if (content && content.classList.contains('collapsible-content')) {
+      content.classList.add('open');
+    }
+  });
 
   // Auto-expand specific banner if navigated via external link
   const hash = window.location.hash.substring(1);
@@ -81,3 +106,32 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+
+// Expand all function for measures overview page 
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleAllBtn = document.getElementById("toggle-all-btn");
+  const banners = document.querySelectorAll(".table-banner");
+  const sections = document.querySelectorAll(".table-collapsible-content");
+
+  toggleAllBtn.addEventListener("click", function () {
+      const allExpanded = Array.from(sections).every(sec => sec.classList.contains("open"));
+
+      banners.forEach(banner => {
+          if (allExpanded) {
+              // If all are expanded, collapse them
+              if (banner.nextElementSibling.classList.contains("open")) {
+                  toggleCollapse(banner);
+              }
+          } else {
+              // If not all are expanded, expand them
+              if (!banner.nextElementSibling.classList.contains("open")) {
+                  toggleCollapse(banner);
+              }
+          }
+      });
+
+      toggleAllBtn.textContent = allExpanded ? "Expand All Sections  ↕️" : "Collapse All Sections ↕️";
+  });
+});
+

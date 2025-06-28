@@ -4,6 +4,51 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
+/* styling for text with hyperlinks */
+a {
+  color: #0066cc;               /* Use a distinguishable color */
+  font-weight: 600;             /* Optional: Slightly bolder text */
+}
+/* Change appearance when hovering */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Inline code styling */
+:not(pre) > code {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  color: #c900cc !important;
+  font-size: 0.8em !important;
+  font-weight: 500;
+}
+
+code, pre {
+  font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace;
+  font-size: 0.95em;
+}
+
+
+/* Style for expand all button (measures overview page) */
+#toggle-all-btn {
+  background-color: #d0dff0;
+  color: #474646;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.592);
+  display: block;
+}
+#toggle-all-btn:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
 /* Style for folder tree display */
 .folder-tree {
   font-family: monospace;

@@ -1,0 +1,86 @@
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    border-bottom: 1px dotted #555; /* Dotted underline for hover indication */
+    color: #007bff; /* A blue color to indicate interactivity */
+    font-weight: 500;
+}
+
+/* Default Tooltip (Above the Text) */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    border-radius: 4px;
+    position: absolute;
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 10;
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 90vw; /* Prevents the tooltip from exceeding the viewport width */
+    
+    /* Default tooltip appears above */
+    bottom: 100%; /* Positions above */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; /* Space between text and tooltip */
+}
+
+/* Show tooltip on hover */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+/* Add a slight color change on hover */
+.tooltip:hover {
+    color: #0056b3;
+    border-bottom: 1px dotted #0056b3;
+}
+/* Position the tooltip to the left */
+.tooltip-left .tooltiptext {
+    /* Override default positioning */
+    bottom: auto; /* Reset bottom positioning */
+    left: auto;
+    
+    /* Position it to the left */
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+}
+
+/* Position the tooltip to the right */
+.tooltip-right .tooltiptext {
+    /* Override default positioning */
+    bottom: auto; /* Reset bottom positioning */
+    left: auto;
+    right: auto;
+    
+    /* Position it to the right */
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+
+/* Position the tooltip underneath the element */
+.tooltip-bottom .tooltiptext {
+    top: 100%;                /* Place directly below the element */
+    left: 50%;                /* Center horizontally */
+    transform: translateX(-50%);
+    margin-top: 5px;
+
+    bottom: auto;             /* Ensure no conflict with vertical position */
+    right: auto;              /* Ensure no conflict with horizontal position */
+
+    width: auto;              /* Allow width to expand as needed */
+    max-width: 90vw;          /* Keep it responsive */
+    white-space: normal;      /* Allow wrapping */
+    word-wrap: break-word;    /* Ensure long words wrap */
+}

@@ -1,4 +1,35 @@
-/* General Non-Collapsible Banner Settings */
+/* Anchor links for collapsible sections */
+.text-with-link {
+  position: relative;
+}
+.anchor-link {
+  margin-left: 0;
+  text-decoration: none;
+  font-size: 0.9em;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.text-with-link:hover .anchor-link {
+  opacity: 1;
+}
+.anchor-link:hover {
+  opacity: 1;
+}
+
+/* General Banner Settings */
+/* arrow */
+.arrow {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  color: #3e3e3e;
+  margin-left: auto; /* Pushes the arrow to the right */
+}
+/* Rotate when explicitly marked or when JS adds rotate class */
+.arrow.rotate,
+.arrow.open-arrow {
+  transform: rotate(90deg);
+}
 .banner {
   background-color: #eaf9f0;
   border: 1px solid #3333331a;
@@ -17,7 +48,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
-  background-color: #fff;
+  background-color: #d0dff03d;
   border: 1px solid #3333331a;
   border-top: none;
   padding: 0 20px;
@@ -35,7 +66,8 @@
   margin-bottom: 0.8em;
 }
 .collapsible-content b {
-  color: #0077cc;
+  color: #6300d3;;
+  line-height: 1.3;
 }
 .collapsible-content ul {
   margin-top: 1rem;
@@ -44,27 +76,19 @@
 }
 .collapsible-content li {
   margin-bottom: 0.1rem;
+  line-height: 1;
 }
 .collapsible-content ul ul {
   margin-top: 0.1rem;
+  line-height: 1;
 }
 .collapsible-content ul ul li {
   margin-bottom: 0.1rem;
+  line-height: 1;
 }
 .collapsible-content li b {
-  color: #0077cc;
-}
-
-/* arrow */
-.arrow {
-  font-size: 1.8rem;
-  transition: transform 0.3s ease;
-  transform-origin: center;
-  color: #3e3e3e;
-  margin-left: auto; /* Pushes the arrow to the right */
-}
-.arrow.rotate {
-  transform: rotate(90deg);
+  color: #6300d3;
+  line-height: 1;
 }
 
 /* text */
@@ -75,112 +99,5 @@
   text-align-last: left;
   margin-right: 10px; /* Adds space between text and the arrow */
   word-wrap: break-word; /* Ensures text wraps if too long */
-}
-
-/* Individual Collapsible Banner Settings */
-/* Red Collapsible RDU Alert Banner */
-.alert-banner {
-  display: flex;
-  align-items: center; /* Ensures vertical alignment of items */
-  justify-content: space-between; /* Ensures proper spacing */
-  background-color: #be044537; 
-  border: 1px solid #3333331a;
-  padding: 0 20px;
-  border-radius: 5px;
-  font-family: Lato; 
-  color: #3e3e3e;
-  cursor: pointer;
-}
-.alert-banner .emoji {
-  font-size: 1.5rem; 
-  margin-right: 10px;
-  color: red;
-}
-
-/* Yellow Collapsible Warning Banner */
-.warning-banner {
-  display: flex;
-  align-items: center;
-  background-color: #ffe10066;
-  border: 1px solid #3333331a;
-  padding: 0 20px;
-  border-radius: 5px;
-  font-family: Lato; 
-  color: #3e3e3e;
-  cursor: pointer;
-}
-.warning-banner .emoji {
-  font-size: 1.5rem; 
-  margin-right: 10px;
-  color: #ffa500;
-}
-
-/* Green Collapsible Notification Banner */
-.notification-banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Ensures proper spacing */
-  background-color: #25ae7049;
-  border: 1px solid #3333331a;
-  padding: 0 20px;
-  border-radius: 5px;
-  font-family: Lato; 
-  color: #3e3e3e;
-  cursor: pointer; 
-}
-.notification-banner .emoji {
-  font-size: 1.2rem; 
-  margin-right: 10px;
-  color: #007f49;
-}
-
-.notification-collapsible-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  background-color: #fff;
-  border: 1px solid #3333331a;
-  border-top: none;
-  padding: 0 20px;
-  border-radius: 0 0 5px 5px;
-  font-size: 0.9em;
-  margin-bottom: 10px; /* Adds spacing below the section */
-}
-.notification-collapsible-content p {
-  font-size: 1.0em;
-  line-height: 1.3;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-}
-.notification-collapsible-content.open {
-  max-height: none;
-}
-.notification-arrow {
-  font-size: 1.8rem;
-  transition: transform 0.3s ease;
-  display: inline-block;
-  transform-origin: center;
-  color: #3e3e3e;
-  margin-left: auto; /* Pushes the arrow to the right */
-}
-.notification-arrow.rotate {
-  transform: rotate(90deg);
-}
-.notification-collapsible-content ul {
-  margin-top: 1rem;
-  padding-left: 1.5rem;
-  line-height: 1.6;
-}
-.notification-collapsible-content li {
-  margin-bottom: 0.3rem;
-}
-.notification-collapsible-content ul ul {
-  margin-top: 0.5rem;
-}
-.notification-collapsible-content ul ul li {
-  margin-bottom: 0.3rem;
-}
-.notification-collapsible-content li b {
-  color: #0077cc;
 }
 
