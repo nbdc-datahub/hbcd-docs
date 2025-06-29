@@ -25,7 +25,7 @@
 </table>
 
 ## Instrument Details
-The eHITS is a self-administered 5 question Likert scale screener for experiences of psychological aggression, physical assault, sexual coercion, and injury. Originally created for quick administration in a health care setting or emergency department, the eHITS asks individuals to indicate whether their partner has done any of the following over the past 12 months: "physically hurt you", "insulted you", "threatened to harm you", "screamed or cursed at you", or "forced you to have sexual activities."
+The eHITS is a self-administered 5 question Likert scale screener for experiences of psychological aggression, physical assault, sexual coercion, and injury. Originally created for quick administration in a health care setting or emergency department, the eHITS asks individuals to indicate whether their partner has physically hurt them, insulted them, threatened to harm them, screamed or cursed at them, or forced them to engage in sexual activity in the past 12 months. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -107,8 +107,18 @@ The following outlines the differences in the wording and/or content of question
     </tr>
 </tbody>
 </table>
+</div>
 
-<p><b>Scoring Procedures</b></p>
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <p>The eHITS summary score (sum of item ratings) is used clinically as a screening tool for intimate partner violence (IPV) based on a certain threshold. For HBCD, a clinical alert for IPV is triggered when the summary score is greater than 7 and/or the scores for “…physically hurt you?” or “…forced you to engage in sexual activity?” is greater than 0. If a respondent selects “Don’t know” for one or more questions, a clinical alert may not generate for a participant whose correct responses would result in a score sufficient to trigger an alert.</p>
 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
