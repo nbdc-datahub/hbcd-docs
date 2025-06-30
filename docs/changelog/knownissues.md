@@ -58,6 +58,12 @@ The HBCD-MADE summary statistics for resting-state EEG data contained in the der
 
 **Expected Fix:** Release 1.1
 
+## Magnetic Resonance Imaging (MRI)
+
+##### ⚠️ BrainSwipes Missing 8 Participants
+
+There are 8 participant sessions with existing processed structural/functional outputs present in the XCP-D derivatives of the release data without corresponding [BrainSwipes](../instruments/mri/qc.md#brainswipes) QC results include in the `img_brainswipes_xcpd-T2w` and `img_brainswipes_xcpd-bold` tables. Users may perform visual inspection of the visual reports themselves to determine whether to include these data in their analyses by inspecting the `sub-<label>_ses-<label>_executive_summary.html` XCP-D derivatives file (see details [here](../datacuration/derivatives.md#xcp-d-xcp_d)). For guidance on how to perform visual inspection, create an account at [BrainSwipes](https://brainswipes.us) and review the tutorials provided for [surface delineation](https://brainswipes.us/tutorial/anat), [atlas registration](https://brainswipes.us/tutorial/atlas), and [functional registration](https://brainswipes.us/tutorial/func).
+
 ## Neurocognition & Language
 ##### ⚠️ SPM-2 T-Scores
 The t-scores are currently not provided, as the original conversion from raw score to t-score was incorrect. The t-scores will be corrected and provided in a future data release.      
