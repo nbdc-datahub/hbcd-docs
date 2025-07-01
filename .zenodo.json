@@ -1,0 +1,22 @@
+{
+  "title": "HBCD Data Release Docs",
+  "description": "Docs website for HEALthy Brain and Child Development (HBCD) Study Data Release documentation: https://docs.hbcdstudy.org",
+  "creators": [
+    {
+      "name": "HBCD Consortium"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Lucille A. Moore",
+      "affiliation": "Masonic Institute for the Developing Brain (MIDB), University of Minnesota",
+      "type": "ProjectLeader",
+      "orcid": "https://orcid.org/0000-0002-7665-2713"
+    }
+  ],
+  "license": "Apache License 2.0",
+  "access_right": "open",
+  "upload_type": "publication",
+  "publication_type": "manual",
+  "keywords": ["HBCD", "data release", "metadata", "Zenodo"]
+}
