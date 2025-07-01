@@ -7,9 +7,9 @@ contributors:
   - family-names: Moore
     given-names: Lucille A.
     orcid: "https://orcid.org/0000-0002-7665-2713"
-    affiliation: Masonic Institute for the Developing Brain (MIDB), University of Minnesota
+    affiliation: "Masonic Institute for the Developing Brain, UMN"
     roles:
-      - project-leader
+      - "Data curator"
 license: Apache-2.0
 keywords:
   - HBCD
