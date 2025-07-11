@@ -20,6 +20,11 @@ The variable 'Mother Race' (`sed_basic_demographics_screen_mother_race`) has dup
 
 **Expected Fix:** Release 1.1    
 
+##### ⚠️ Erroneous Inclusion of Response Option (2=Hawaiian) in 'Mother Race' Variable
+The variable `sed_basic_demographics_screen_mother_race` has two levels to reflect Hawaiian race (`2` = `Hawaiian`; `7` = `Native Hawaiian or Other Pacific Islander`). `2` = `Hawaiian` was not a response option to this question and can be ignored; no participants selected this option.
+
+**Expected Fix:** Release 1.1  
+
 ##### ⚠️ Mother Ethnicity
 The variable `screen_mother_ethnicity` should be a 2-level variable, however it is currently noted as a 4-level variable in the data dictionary. Levels of 0 and 1 (in the data dictionary) are included in error, they do not appear in the dataset; all participants with valid data have a value of 2 (Hispanic) or 3 (non-Hispanic).        
 
