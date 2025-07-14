@@ -106,7 +106,7 @@ Users should be aware that each item for the EPDS is duplicated (for example, `e
 ##### ⚠️ Blank Cells in PhenX Discrimination Survey
 For the PhenX+ Discrimination survey, one of the multi-select questions (column `sed_bm_phx__discr.006`: *"What do you think is the main reason for these experiences? If more than one main reason, check all that apply."*) is blank for some participants.       
 
-**Expected Fix:** Release 1.1
+**Expected Fix:** Release 2.0
 
 ## Visit Information
 ##### ⚠️ Invalid Participant Withdrawal Dates for Participants Who Did Not Withdraw
