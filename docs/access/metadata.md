@@ -371,6 +371,8 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 </div>
 </p>
 
+A unified naming convention has been generally implemented for both instrument and field names of the tabulated data. Nonetheless, *in the current release there may be exceptions where the naming standard is not applied for specific field names.* As a result, naming patterns may vary across instruments and variables. To enhance interpretability, improved consistency in the naming scheme is planned for future releases.
+
 ### General Structure 
 
 Most table names in the tabulated data follow a standardized naming convention with the structure: `domain_source_acronym`. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. Each component represents the following:
@@ -470,8 +472,6 @@ Most table names in the tabulated data follow a standardized naming convention w
 ### Single vs Double Underscores 
 
 Instrument table and field names may include either single ( `_` ) or double ( `__` ) underscores (e.g. `ncl_ch_mlds` vs `ncl_cg_spm2__inf` instruments in the [Neurocognition & Language](../instruments/index.md#neurocog) domain). Typically, a single underscore denotes a higher-level grouping (e.g., instrument or domain), while a double underscore is used to separate more granular elements like scales and subscale counters.
-
-A unified naming convention has been generally implemented for both instrument and field names. Nonetheless, in the current release there may be exceptions where the naming standard is not applied for specific field names. As a result, naming patterns may vary across instruments and variables. To enhance interpretability, improved consistency in the naming scheme is planned for future releases.
 
 ## Study Design Logic: Child-Centric Data Structure
 
