@@ -148,7 +148,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Instrument table and field names may contain either single or double underscores. See the subsection of <a href="../../access/metadata/#single-vs-double-underscores">File Naming Conventions</a> for details on the logic.
+<p>Instrument table and field names may contain either single or double underscores. See the subsection of <a href="../../access/metadata/#single-vs-double-underscores">Table Naming Conventions</a> for details on the logic.
 </div>
 
 
