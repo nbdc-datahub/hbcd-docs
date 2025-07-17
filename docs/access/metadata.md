@@ -359,52 +359,110 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 
 ## Naming Conventions
 
-Most table names in the tabulated data (`table_name` in the [data dictionary](#data-dictionary)), which contain study instrument/measure data, follow a standardized naming convention with the structure: `domain_source_acronym`. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. Note that imaging derivatives do not follow this naming scheme, but are generally understood to be under the MRI, EEG, etc. domain and strictly for the 'Child.' Each component represents the following:
+<p>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">
+    Tabulated vs File-Based Data Naming Conventions
+  </span>
+</div>
+<div class="notification-static-content">
+<p><b>Tabulated data</b> are in table format and largely include behavior, demographics, visit data, and toxicology results. <b>File-based</b> data include both raw and processed MRI, MRS, EEG, and motion/accelerometry. Note that file-based data follow a separate naming scheme, but are generally understood to be under the MRI, EEG, etc. domain and strictly for the 'Child.' See <a href="../../datacuration/overview">here</a> for further information on the differences between these data types.</p>
+</div>
+</p>
 
-- **domain**: The general domain or category the protocol element falls under (e.g., biospecimens, MRI, behavior).
-- **source**: Indicates who the protocol element is about or, in some cases, who completed the assessment. The source can represent either the *respondent* (who provided the information) or the *subject* (who the data is about).
-For example, `mri_ra_prep` refers to MRI-related data entered by a research assistant (RA), representing procedural details as opposed to direct input from a child or caregiver.
-- **acronym/abbreviation**: A short form or code representing the specific protocol element.
+Most table names in the tabulated data follow a standardized naming convention with the structure: `domain_source_acronym`. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. Each component represents the following:
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <th></th>
+  <th>Definition</th>
+  <th>Possible Values</th>
+</thead>
+<tbody>
+<tr>
+  <td><b>domain</b></td>
+  <td>General category/<a href="https://hbcdstudy.org/workgroups-and-committees/">HBCD Workgroup</a></td>
+  <td>
+    <span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>,
+    <span class="tooltip"><code>mh</code><span class="tooltiptext">Behavior & Child-Caregiver Interaction</span></span>,
+    <span class="tooltip"><code>sed</code><span class="tooltiptext">Social & Environmental Determinants</span></span>,
+    <span class="tooltip"><code>sens</code><span class="tooltiptext">Biosensor</span></span>,
+    <span class="tooltip"><code>ph</code><span class="tooltiptext">Physical Health</span></span>,
+    <span class="tooltip"><code>ncl</code><span class="tooltiptext">Neurocognition & Language</span></span>,
+    <span class="tooltip"><code>nt</code><span class="tooltiptext">Novel Tech</span></span>,
+    <span class="tooltip"><code>eeg</code><span class="tooltiptext">EEG</span></span>,
+    <span class="tooltip"><code>mri</code><span class="tooltiptext">MRI</span></span>
+  </td>
+</tr>
+<tr>
+  <td><b>source</b></td>
+  <td>Who it’s about <i>OR</i> who completed it</td>
+  <td>
+    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>,
+    <span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>,
+    <span class="tooltip"><code>si</code><span class="tooltiptext">Sibling</span></span>,
+    <span class="tooltip"><code>te</code><span class="tooltiptext">Teacher</span></span>,
+    <span class="tooltip"><code>cl</code><span class="tooltiptext">Clinician</span></span>,
+    <span class="tooltip"><code>ra</code><span class="tooltiptext">Research Assistant</span></span>,
+    <span class="tooltip"><code>ld</code><span class="tooltiptext">Linked Data</span></span>,
+    <span class="tooltip"><code>fd</code><span class="tooltiptext">Family Data</span></span>
+  </td>
+</tr>
+<tr>
+<td><b>Acronym</b></td>
+<td>Specific protocol element</td>
+<td>Varies by instrument; see full data dictionary for details.</td></tr>
+</tbody>
+</table>
+
+<p style="font-style: italic;">Example: <code>mri_ra_prep</code> = MRI-related data entered by a research assistant (ra)</p>
 
 <div id="domain-source" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="text">Values for 'domain' and 'source' components</span>
+  <span style="display: inline-flex; align-items: center;">
+    <img src="../images/universal-access-accessibility-icon.png" 
+        alt="Accessibility icon" 
+        width="24" 
+        style="vertical-align: middle; margin-right: 0.4em;" />
+    Accessibility Feature: Show possible values in table format
+  </span>
   <a class="anchor-link" href="#domain-source" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
-  <div style="display: flex; gap: 40px; flex-wrap: wrap;">
-    <div>
-      <p><strong>Possible values for <b>domain</b>:</strong></p>
-      <ul>
-        <li><code>bio</code> - Biospecimens</li>
-        <li><code>mh</code> - Behavior/Child-Caregiver Interaction</li>
-        <li><code>sed</code> - Social/Environmental Health Determinants</li>
-        <li><code>sens</code> - Biosensor</li>
-        <li><code>ph</code> - Physical Health</li>
-        <li><code>ncl</code> - Neurocognition and Language</li>
-        <li><code>nt</code> - Novel Tech</li>
-        <li><code>eeg</code> - EEG</li>
-        <li><code>mri</code> - MRI</li>
-      </ul>
-    </div>
-    <div>
-      <p><strong>Possible values for <b>source</b>:</strong></p>
-      <ul>
-        <li><code>ch</code> - Child</li>
-        <li><code>bm</code> - Biological Mother</li>
-        <li><code>si</code> - Sibling</li>
-        <li><code>te</code> - Teacher</li>
-        <li><code>cl</code> - Clinician</li>
-        <li><code>ra</code> - RA (research assistant)</li>
-        <li><code>ld</code> - Linked Data</li>
-        <li><code>fd</code> - Family Data</li>
-      </ul>
-    </div>
-  </div>
+<div class="table-collapsible-content">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- domain values -->
+    <tr><td><code>bio</code></td><td>Biospecimens</td></tr>
+    <tr><td><code>mh</code></td><td>Behavior & Child-Caregiver Interaction</td></tr>
+    <tr><td><code>sed</code></td><td>Social & Environmental Determinants</td></tr>
+    <tr><td><code>sens</code></td><td>Biosensor</td></tr>
+    <tr><td><code>ph</code></td><td>Physical Health</td></tr>
+    <tr><td><code>ncl</code></td><td>Neurocognition & Language</td></tr>
+    <tr><td><code>nt</code></td><td>Novel Tech</td></tr>
+    <tr><td><code>eeg</code></td><td>EEG</td></tr>
+    <tr><td><code>mri</code></td><td>MRI</td></tr>
+    <!-- source values -->
+    <tr><td><code>ch</code></td><td>Child</td></tr>
+    <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
+    <tr><td><code>si</code></td><td>Sibling</td></tr>
+    <tr><td><code>te</code></td><td>Teacher</td></tr>
+    <tr><td><code>cl</code></td><td>Clinician</td></tr>
+    <tr><td><code>ra</code></td><td>Research Assistant</td></tr>
+    <tr><td><code>ld</code></td><td>Linked Data</td></tr>
+    <tr><td><code>fd</code></td><td>Family Data</td></tr>
+  </tbody>
+</table>
 </div>
 
 ### Single vs Double Underscores 

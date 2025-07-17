@@ -24,6 +24,7 @@
     white-space: normal;
     word-wrap: break-word;
     max-width: 90vw; /* Prevents the tooltip from exceeding the viewport width */
+    font-size: 12px;
     
     /* Default tooltip appears above */
     bottom: 100%; /* Positions above */
