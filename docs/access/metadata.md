@@ -410,7 +410,7 @@ Most table names in the tabulated data follow a standardized naming convention w
   </td>
 </tr>
 <tr>
-<td><b>Acronym</b></td>
+<td><b>Acronym/Abbreviation</b></td>
 <td>Specific protocol element</td>
 <td>Varies by instrument; see full data dictionary for details.</td></tr>
 </tbody>
