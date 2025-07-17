@@ -45,7 +45,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>domain</code></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Domain</td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Domain/<a href="https://hbcdstudy.org/workgroups-and-committees/">HBCD Workgroup</a></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Biospecimens, MRI, etc. (<a href="#general-structure">see details</a>)</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">BioSpecimens, MRI, etc. (<a href="#general-structure">see details</a>)</td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
         <tr>
@@ -388,7 +388,7 @@ Most table names in the tabulated data follow a standardized naming convention w
   <td><b>domain</b></td>
   <td>General category/<a href="https://hbcdstudy.org/workgroups-and-committees/">HBCD Workgroup</a></td>
   <td>
-    <span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>,
+    <span class="tooltip"><code>bio</code><span class="tooltiptext">BioSpecimens</span></span>,
     <span class="tooltip"><code>mh</code><span class="tooltiptext">Behavior & Child-Caregiver Interaction</span></span>,
     <span class="tooltip"><code>sed</code><span class="tooltiptext">Social & Environmental Determinants</span></span>,
     <span class="tooltip"><code>sens</code><span class="tooltiptext">Biosensor</span></span>,
@@ -441,13 +441,18 @@ Most table names in the tabulated data follow a standardized naming convention w
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
     <tr>
+      <th></th>
       <th>Code</th>
-      <th>Description</th>
+      <th>Label</th>
     </tr>
   </thead>
   <tbody>
     <!-- domain values -->
-    <tr><td><code>bio</code></td><td>Biospecimens</td></tr>
+    <tr>
+      <td rowspan="9"><b>Domain</b></td>
+      <td><code>bio</code></td>
+      <td>BioSpecimens</td>
+    </tr>
     <tr><td><code>mh</code></td><td>Behavior & Child-Caregiver Interaction</td></tr>
     <tr><td><code>sed</code></td><td>Social & Environmental Determinants</td></tr>
     <tr><td><code>sens</code></td><td>Biosensor</td></tr>
@@ -457,7 +462,11 @@ Most table names in the tabulated data follow a standardized naming convention w
     <tr><td><code>eeg</code></td><td>EEG</td></tr>
     <tr><td><code>mri</code></td><td>MRI</td></tr>
     <!-- source values -->
-    <tr><td><code>ch</code></td><td>Child</td></tr>
+    <tr>
+      <td rowspan="8"><b>Source</b></td>
+      <td><code>ch</code></td>
+      <td>Child</td>
+    </tr>
     <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
     <tr><td><code>si</code></td><td>Sibling</td></tr>
     <tr><td><code>te</code></td><td>Teacher</td></tr>
