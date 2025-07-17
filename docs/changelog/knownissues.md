@@ -93,7 +93,7 @@ The following fields are 'Descriptive' fields and should have been excluded. The
 **Expected Fix:** Release 1.1
 
 ##### ⚠️ PEX (TLFB Substance Use Flags)
-The TLFB Substance Use Flags are intended to indicate whether a participant had **ever met the substance-specific use criteria** during or after pregnancy across visits V01 and V02 at the time of survey administration. Currently, **only the alcohol use flag** correctly follows this logic. All other substance use flags are incorrect and will be corrected in a future release. R code will soon be provided so users can derive their own substance use flag variables.         
+The TLFB Substance Use Flags are intended to indicate whether a participant had **ever met the substance-specific use criteria** during or after pregnancy across visits V01 and V02 at the time of survey administration. Currently, **only the alcohol use flag** correctly follows this logic. All other substance use flags are incorrect and will be corrected in a future release. In the meantime, use the R code provided [here](https://github.com/nbdc-datahub/hbcd-tlfb-su-flags) to derive your own substance use flag variables.         
 
 **Expected Fix:** Release 1.1
 
