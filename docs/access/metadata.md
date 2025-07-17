@@ -371,6 +371,8 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 </div>
 </p>
 
+### General Structure 
+
 Most table names in the tabulated data follow a standardized naming convention with the structure: `domain_source_acronym`. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. Each component represents the following:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
