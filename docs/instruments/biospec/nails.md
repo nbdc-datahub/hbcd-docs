@@ -1,7 +1,7 @@
 # Nails
 
 **Full Name**: Maternal Nails       
-**Table Name**: `bio_biosample_nails`       
+**Table Name**: `bio_bm_biosample_nails`       
 **Construct**: Toxicology screen for substances & environmental exposures conducted on fingernails and toenails
 
 <p>

@@ -1,7 +1,7 @@
 # Urine
 
 **Full Name**: Maternal Urine       
-**Table Name**: `bio_biosample_urine`       
+**Table Name**: `bio_bm_biosample_urine`       
 **Construct**: Toxicology screen for substances & environmental exposures
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">

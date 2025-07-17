@@ -1,8 +1,9 @@
 # Wearable Sensors
 
-**Full Name**: Wearable Sensors            
-**Table Name**: `sens_ch_setup`       
-**Construct**: Channel setup
+Available as file-based data ([see details](../../datacuration/overview.md)):
+
+<i class="fa fa-hammer"></i><strong> Raw BIDS: </strong><a href="../../../datacuration/rawbids/#motion"><code>motion/</code></a><br>
+<i class="fas fa-cog"></i><strong> Derivatives: </strong><a href="../../../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
