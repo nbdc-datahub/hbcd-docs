@@ -401,7 +401,7 @@ Most table names in the tabulated data follow a standardized naming convention w
 </tr>
 <tr>
   <td><b>source</b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Corresponds with the <code>source</code> element of the <a href="#data-dictionary">NBDC Data Dictionary</a> - may refer to either who it’s about <i>OR</i> who completed it <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">See <a href="../../../help/faq/#faq-subids">this FAQ</a> for help determining whether data is associated with the birth parent or child</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Corresponds with the <code>source</code> element of the <a href="#data-dictionary">NBDC Data Dictionary</a> - may refer to either who it’s about <i>OR</i> who completed it <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">See <a href="../../help/faq/#faq-subids">this FAQ</a> for help determining whether data is associated with the birth parent or child</span></span></td>
   <td>
     <span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
     <span class="tooltip"><code>cg</code><span class="tooltiptext">Caregiver (Responsible Adult)</span></span>;
