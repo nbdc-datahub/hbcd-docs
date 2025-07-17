@@ -469,7 +469,7 @@ Most table names in the tabulated data follow a standardized naming convention w
 
 Instrument table and field names may include either single ( `_` ) or double ( `__` ) underscores (e.g. `ncl_ch_mlds` vs `ncl_cg_spm2__inf` instruments in the [Neurocognition & Language](../instruments/index.md#neurocog) domain). Typically, a single underscore denotes a higher-level grouping (e.g., instrument or domain), while a double underscore is used to separate more granular elements like scales and subscale counters.
 
-However, a unified naming convention has not been consistently applied in the current release. As a result, naming patterns may vary across instruments and variables. A standardized naming scheme is planned for future releases to improve consistency and interpretability.
+A unified naming convention has been generally implemented for both instrument and field names. Nonetheless, in the current release there may be exceptions where the naming standard is not applied for specific field names. As a result, naming patterns may vary across instruments and variables. To enhance interpretability, improved consistency in the naming scheme is planned for future releases.
 
 ## Study Design Logic: Child-Centric Data Structure
 
