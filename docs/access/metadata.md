@@ -359,7 +359,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 </p>
 </div>
 
-## Naming Conventions
+## Table Naming Conventions
 
 <p>
 <div class="notification-banner static-banner">
@@ -375,13 +375,13 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 
 ### General Structure 
 
-Most table names in the tabulated data follow a standardized naming convention with the structure: `domain_source_acronym`. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. ***In the current release***, each component represents the following:
+Most table names in the tabulated data follow a standardized naming convention with the structure: `domain_source_acronym`. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. Each component represents the following, with possible values for data included ***in the current release*** listed:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <th></th>
   <th>Definition</th>
-  <th>Possible Standard Values</th>
+  <th>Possible Values</th>
 </thead>
 <tbody>
 <tr>
@@ -394,6 +394,7 @@ Most table names in the tabulated data follow a standardized naming convention w
     <span class="tooltip"><code>mri</code><span class="tooltiptext">MRI</span></span>;
     <span class="tooltip"><code>ncl</code><span class="tooltiptext">Neurocognition and Language</span></span>;
     <span class="tooltip"><code>nt</code><span class="tooltiptext">Novel Tech</span></span>;
+    <span class="tooltip"><code>par</code><span class="tooltiptext">Demographics</span></span>;
     <span class="tooltip"><code>pex</code><span class="tooltiptext">Pregnancy/Exposure Including Substance</span></span>;
     <span class="tooltip"><code>ph</code><span class="tooltiptext">Physical Health</span></span>;
     <span class="tooltip"><code>sed</code><span class="tooltiptext">Social & Environmental Determinants</span></span>
@@ -403,6 +404,7 @@ Most table names in the tabulated data follow a standardized naming convention w
   <td><b>source</b></td>
   <td style="word-wrap: break-word; white-space: normal;">Corresponds with the <code>source</code> element of the <a href="#data-dictionary">NBDC Data Dictionary</a> - may refer to either who it’s about <i>OR</i> who completed it <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">See <a href="../../help/faq/#faq-subids">this FAQ</a> for help determining whether data is associated with the birth parent or child</span></span></td>
   <td>
+    <span class="tooltip"><code>basic</code>/<code>visit</code><span class="tooltiptext">General</span></span>;
     <span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
     <span class="tooltip"><code>cg</code><span class="tooltiptext">Caregiver (Responsible Adult)</span></span>;
     <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>
@@ -468,13 +470,7 @@ Most table names in the tabulated data follow a standardized naming convention w
 
 #### Exceptions
 
-A unified naming convention has been generally implemented for both instrument and field names of the tabulated data. Nonetheless, *in the current release there may be exceptions where the naming standard is not applied for specific field names.* As a result, naming patterns may vary across instruments and variables. To enhance interpretability, improved consistency in the naming scheme is planned for future releases. Data with table names that do not follow the conventions outlined above include:
-
-**Demographics & Visit Information**    
-One value for the domain element of the NBDC Data Dictionary is Demographics, which does not have a single corresponding value for the domain element of the naming conventions. Demographics includes participant Visit Information (`par_visit_data`) and Basic Demographics (`sed_basic_demo`). The `source` element is similarly unique. 
-
-**Tabulated MRI & EEG Data**        
-Tabulated data derived from file-based data follow a separate naming scheme, but are generally understood to be under the MRI, EEG, etc. domain and strictly for the 'Child.' 
+A unified naming convention has been generally implemented for both instrument and field names of the tabulated data. Nonetheless, *in the current release there may be exceptions where the naming standard is not applied for specific field names.* As a result, naming patterns may vary across instruments and variables. To enhance interpretability, improved consistency in the naming scheme is planned for future releases. Data with table names that do not follow the conventions outlined below include **tabulated data derived from MRI, EEG, other file-based data**. However, it is generally understood that these data are associated with the MRI, EEG, etc. domains and strictly associated with the 'Child.' 
 
 ### Single vs Double Underscores 
 
