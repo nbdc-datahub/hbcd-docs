@@ -394,7 +394,7 @@ Most table names in the tabulated data follow a standardized naming convention w
     <span class="tooltip"><code>mri</code><span class="tooltiptext">MRI</span></span>;
     <span class="tooltip"><code>ncl</code><span class="tooltiptext">Neurocognition and Language</span></span>;
     <span class="tooltip"><code>nt</code><span class="tooltiptext">Novel Tech</span></span>;
-    <span class="tooltip"><code>par</code><span class="tooltiptext">Demographics</span></span>;
+    <span class="tooltip tooltip-bottom"><code>par</code><span class="tooltiptext">Participant info, under Demographics domain in DD</span></span>;
     <span class="tooltip"><code>pex</code><span class="tooltiptext">Pregnancy/Exposure Including Substance</span></span>;
     <span class="tooltip"><code>ph</code><span class="tooltiptext">Physical Health</span></span>;
     <span class="tooltip"><code>sed</code><span class="tooltiptext">Social & Environmental Determinants</span></span>
@@ -445,7 +445,7 @@ Most table names in the tabulated data follow a standardized naming convention w
   <tbody>
     <!-- domain values -->
     <tr>
-      <td rowspan="9"><b>Domain</b></td>
+      <td rowspan="10"><b>Domain</b></td>
       <td><code>bio</code></td><td>BioSpecimens</td>
     </tr>
     <tr><td><code>eeg</code></td><td>EEG</td></tr>
@@ -453,12 +453,14 @@ Most table names in the tabulated data follow a standardized naming convention w
     <tr><td><code>mri</code></td><td>MRI</td></tr>
     <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
     <tr><td><code>nt</code></td><td>Novel Tech</td></tr>
+    <tr><td><code>par</code></td><td>Participant information (associated with Demographics domain in Data Dictionary)</td></tr>
     <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
     <tr><td><code>ph</code></td><td>Physical Health</td></tr>
     <tr><td><code>sed</code></td><td>Social & Environmental Determinants</td></tr>
     <!-- source values -->
     <tr>
-      <td rowspan="4"><b>Source</b></td>
+      <td rowspan="5"><b>Source</b></td>
+      <tr><td><code>basic</code> / <code>visit</code></td><td>Both associated with General source in Data Dictionary</td></tr>
       <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
     </tr>
     <td><code>cg</code></td><td>Caregiver (Responsible Adult)</td>
