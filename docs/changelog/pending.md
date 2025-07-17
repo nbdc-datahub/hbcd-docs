@@ -5,6 +5,7 @@
 ### Additional Data & Information Expected in 1.1
 
  - Resolution of [Known Issues](knownissues.md) noted with **Expected Fix**: Release 1.1
+ - [BrainSwipes](../instruments/mri/qc.md#brainswipes) QC results for remaining participants with XCP-D derivatives available, but no corresponding BrainSwipes results, in Release 1.0
 
 ### Improvements to Existing Data
 
