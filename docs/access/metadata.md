@@ -369,11 +369,9 @@ Below are the definitions for the columns in the data dictionary and levels tabl
   </span>
 </div>
 <div class="notification-static-content">
-<p><b>Tabulated data</b> are in table format and largely include behavior, demographics, visit data, and toxicology results. <b>File-based</b> data include both raw and processed MRI, MRS, EEG, and motion/accelerometry. Note that file-based data follow a separate naming scheme, but are generally understood to be under the MRI, EEG, etc. domain and strictly for the 'Child.' See <a href="../../datacuration/overview">here</a> for further information on the differences between these data types.</p>
+<p><b>Tabulated data</b> are in table format and largely include behavior, demographics, visit data, and toxicology results. <b>File-based</b> data include both raw and processed MRI, MRS, EEG, and motion/accelerometry. See <a href="../../datacuration/overview">here</a> for further information on the differences between these data types.</p>
 </div>
 </p>
-
-A unified naming convention has been generally implemented for both instrument and field names of the tabulated data. Nonetheless, *in the current release there may be exceptions where the naming standard is not applied for specific field names.* As a result, naming patterns may vary across instruments and variables. To enhance interpretability, improved consistency in the naming scheme is planned for future releases.
 
 ### General Structure 
 
@@ -403,7 +401,7 @@ Most table names in the tabulated data follow a standardized naming convention w
 </tr>
 <tr>
   <td><b>source</b></td>
-  <td>Who it’s about <i>OR</i> who completed it</td>
+  <td>Who it’s about <i>OR</i> who completed it <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">See <a href="../../../help/faq/#faq-subids">this FAQ</a> for help determining whether data is associated with the birth parent or child</span></span></td>
   <td>
     <span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
     <span class="tooltip"><code>cg</code><span class="tooltiptext">Caregiver (Responsible Adult)</span></span>;
@@ -416,8 +414,6 @@ Most table names in the tabulated data follow a standardized naming convention w
 <td>Varies by instrument; see full data dictionary for details.</td></tr>
 </tbody>
 </table>
-
-<p style="font-style: italic;">Example: <code>mri_ra_prep</code> = MRI-related data entered by a research assistant (ra)</p>
 
 <p>
 <div id="domain-source" class="table-banner" onclick="toggleCollapse(this)">
@@ -472,10 +468,13 @@ Most table names in the tabulated data follow a standardized naming convention w
 
 #### Exceptions
 
+A unified naming convention has been generally implemented for both instrument and field names of the tabulated data. Nonetheless, *in the current release there may be exceptions where the naming standard is not applied for specific field names.* As a result, naming patterns may vary across instruments and variables. To enhance interpretability, improved consistency in the naming scheme is planned for future releases. Data with table names that do not follow the conventions outlined above include:
+
 **Demographics & Visit Information**    
 One value for the domain element of the NBDC Data Dictionary is Demographics, which does not have a single corresponding value for the domain element of the naming conventions. Demographics includes participant Visit Information (`par_visit_data`) and Basic Demographics (`sed_basic_demo`). The `source` element is similarly unique. 
 
-**File-based tabulated data**
+**Tabulated MRI & EEG Data**        
+Tabulated data derived from file-based data follow a separate naming scheme, but are generally understood to be under the MRI, EEG, etc. domain and strictly for the 'Child.' 
 
 ### Single vs Double Underscores 
 
