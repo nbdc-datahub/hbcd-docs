@@ -248,7 +248,7 @@ Expand each section below to see a list of study instruments associated with eac
       <td style="word-wrap: break-word; white-space: normal;"><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
       <td style="word-wrap: break-word; white-space: normal;">USDA short form</td>
       <td style="word-wrap: break-word; white-space: normal;">Food insecurity</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code><code>sed_cg_foodins</code></td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_foodins</code></td>
     </tr>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
