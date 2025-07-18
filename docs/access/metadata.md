@@ -406,10 +406,11 @@ A unified naming convention has been applied to most table names in the tabulate
   <td><b>source</b></td>
   <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> (e.g. child vs birth parent)</td>
   <td>
-    <span class="tooltip"><code>basic</code>/<code>visit</code><span class="tooltiptext">General</span></span>;
+    <span class="tooltip"><code>basic</code><span class="tooltiptext">General</span></span>;
     <span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
     <span class="tooltip"><code>cg</code><span class="tooltiptext">Caregiver (Responsible Adult)</span></span>;
-    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>
+    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>;
+    <span class="tooltip"><code>visit</code><span class="tooltiptext">General</span></span>
   </td>
 </tr>
 <tr>
@@ -462,12 +463,13 @@ A unified naming convention has been applied to most table names in the tabulate
     <tr><td><code>sed</code></td><td>Social & Environmental Determinants</td></tr>
     <!-- source values -->
     <tr>
-      <td rowspan="5"><b>Source</b></td>
-      <tr><td><code>basic</code> / <code>visit</code></td><td>Both associated with General source in Data Dictionary</td></tr>
+      <td rowspan="6"><b>Source</b></td>
+      <tr><td><code>basic</code></td><td>Associated with General source in Data Dictionary</td></tr>
       <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
     </tr>
     <td><code>cg</code></td><td>Caregiver (Responsible Adult)</td>
     <tr><td><code>ch</code></td><td>Child</td></tr>
+    <tr><td><code>visit</code></td><td>Associated with General source in Data Dictionary</td></tr>
   </tbody>
 </table>
 </div>
