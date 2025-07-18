@@ -371,13 +371,19 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 
 ### General Structure 
 
-Most table names in the tabulated data follow a standardized naming convention with the structure: `domain_source_acronym`. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. Each component represents the following, with possible values for **only** data tables included in the current release:
+A unified naming convention has been applied to most table names in the tabulated release data. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. The **standard table name format** is:
+
+<p style="font-size: 1.2em; font-weight: bold;">
+  \[
+  \text{domain_source_acronym}
+  \]
+</p>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <th></th>
   <th>Definition</th>
-  <th>Possible Values</th>
+  <th>Possible Values <span class="blue-text"><b>**</b></span></th>
 </thead>
 <tbody>
 <tr>
@@ -408,10 +414,11 @@ Most table names in the tabulated data follow a standardized naming convention w
 </tr>
 <tr>
 <td><b>acronym</b></td>
-<td>Specific protocol element</td>
+<td>Specific instrument name/protocol element</td>
 <td>Varies by instrument; see full data dictionary for details.</td></tr>
 </tbody>
 </table>
+<span class="blue-text"><b>**</b></span> <span><i>Note: the possible values listed include only values for data included in the current release.</i></span>
 
 <p>
 <div id="domain-source" class="table-banner" onclick="toggleCollapse(this)">
@@ -466,9 +473,16 @@ Most table names in the tabulated data follow a standardized naming convention w
 </div>
 </p>
 
-#### Exceptions
 
-A unified naming convention has been generally implemented for both instrument and field names of the tabulated data. Nonetheless, *in the current release there may be exceptions where the naming standard is not applied for specific field names.* As a result, naming patterns may vary across instruments and variables. To enhance interpretability, improved consistency in the naming scheme is planned for future releases. Data with table names that do not follow the conventions outlined below include **tabulated data derived from MRI, EEG, other file-based data**. However, it is generally understood that these data are associated with the MRI, EEG, etc. domains and strictly associated with the 'Child.' 
+<div class="warning-banner warning-static-banner">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text">
+    Exceptions
+  </span>
+</div>
+<div class="warning-static-content">
+<p>Some tables in this release do not follow the standard naming convention precisely, which will be improved in future releases. Notable exceptions include tabulated data derived from file-based sources, including <a href="../../instruments/#mri">MRI & MRS</a> and <a href="../../instruments/#eeg">EEG</a>. However, they are clearly associated with their respective domains (e.g., MRI, EEG) and pertain exclusively to the Child.</p>
+</div>
 
 ### Single vs Double Underscores 
 
