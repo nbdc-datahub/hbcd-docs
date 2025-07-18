@@ -352,11 +352,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>
-  The following columns are currently blank in the Lasso Dictionary Query Tool for the HBCD Study and will become available in a future release: 
-  <b>unit</b>, column names appended with <b>*_es</b>, and columns prepended with <b>url_*</b>.
-  <p>Some columns in the data dictionary are not applicable to HBCD study data. These columns will appear in Lasso Portal queries, but will have blank values. Examples include <b>atlas</b>, <b>metric</b>, <b>sub_domain</b>, columns including <b>nda/deap/redcap</b>, etc. These columns can be safely ignored.</p>
-</p>
+<p>Column names appended with <b>*_es</b> are currently blank in the Lasso Dictionary Query Tool and will become available in a future release. Some columns in the data dictionary are not applicable to HBCD study data. These columns will appear in Lasso Portal queries, but will have blank values. Examples include <b>atlas</b>, <b>metric</b>, <b>sub_domain</b>, columns including <b>nda/deap/redcap</b>, etc. These columns can be safely ignored.</p>
 </div>
 
 ## Table Naming Conventions

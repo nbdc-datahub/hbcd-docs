@@ -4,7 +4,7 @@
 The HEALthy Brain and Child Development (HBCD) study dataset is a large, rich, and complex resource that can drive scientific discovery, provide a foundation for translation and implementation research, and inform development of public policy. To create this dataset, thousands of participants have given generously of their time and their bodies to help advance science. They have trusted us with sensitive information. The use of HBCD data carries ethical responsibilities to minimize risks of harm to participants and to treat them respectfully and justly. One way data users can respect participants’ contributions is by conducting careful, high-quality science.  
 
 ## Warnings
-To facilitate responsible data use, table- and variable-level warnings are embedded in the NBDC Data Dictionary linking to data and responsible use warnings within the [study instrument documentation](../instruments/index.md). There are 2 types of warnings, both of which may aid in more scientifically rigorous use of HBCD data - click to expand each section below for a description of the function of these warnings:
+To facilitate responsible data use, table- and variable-level warnings are embedded in the [NBDC Data Dictionary](metadata.md#data-dictionary) linking to data and responsible use warnings within the [study instrument documentation](../instruments/index.md). There are 2 types of warnings, both of which may aid in more scientifically rigorous use of HBCD data - click to expand each section below for a description of the function of these warnings:
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -23,8 +23,6 @@ To facilitate responsible data use, table- and variable-level warnings are embed
 <div class="alert-collapsible-content">
 <p>The purpose of this warning is to offer guidance for research design, data interpretation, and communication of findings, including conceptual information. These warnings also include information on stigma and stigmatizing language related to some variables, or information on the manner in which race variables were conceptualized and collected for this study.</p>
 </div>
-
-**Note that only [DEAP](https://docs.deapscience.com/) currently has embedded links to data and responsible use warnings.** These links will be added to the [Lasso platform](https://nbdc-datashare.lassoinformatics.com/) after the release, but the warnings can still be viewed by visiting the [study instrument documentation](../instruments/index.md) of interest.
 
 We recommend that all data users:
 
