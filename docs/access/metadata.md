@@ -375,7 +375,7 @@ A unified naming convention has been applied to most table names in the tabulate
 
 <p style="font-size: 1.2em; font-weight: bold;">
   \[
-  \text{domain_source_acronym}
+  \text{domain_source_table}
   \]
 </p>
 
@@ -414,7 +414,7 @@ A unified naming convention has been applied to most table names in the tabulate
   </td>
 </tr>
 <tr>
-<td><b>acronym</b></td>
+<td><b>table</b></td>
 <td>Specific instrument name/protocol element</td>
 <td>Varies by instrument; see full data dictionary for details.</td></tr>
 </tbody>
