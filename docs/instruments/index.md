@@ -34,20 +34,20 @@ Expand each section below to see a list of study instruments associated with eac
   <thead>
     <tr>
       <th style="width: 20%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Acronym</th>
+      <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
       <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 20%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Demographics</td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/basicdemo" target="_blank">Basic Demographics information</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Basic Demographics</td>
     <td style="word-wrap: break-word; white-space: normal;">Demographics data derived from multiple sources</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>sed_basic_demographics</code></td>
   </tr>
     <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/visitinfo" target="_blank">Visit Information</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Visit Information</td>
     <td style="word-wrap: break-word; white-space: normal;">Participant visit information</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data</code></td>
@@ -84,13 +84,13 @@ Expand each section below to see a list of study instruments associated with eac
     <td><code>mh_cg_pms__cc__inf</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">Infant Behavior Questionnaire &ndash; Revised Very Short Form + Behavior Inhibition</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">IBQ-R Very Short Form + Behavior Inhibition</a></td>
     <td style="word-wrap: break-word; white-space: normal;">IBQ-R (VSF)+BI</td>
     <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
     <td><code>mh_cg_ibqr</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale, Version: Infancy (< 1 year)</a></td>
     <td style="word-wrap: break-word; white-space: normal;">MAPS-TL</td>
     <td style="word-wrap: break-word; white-space: normal;">Irritability</td>
     <td><code>mh_cg_mapdb__inf</code></td>
@@ -114,20 +114,20 @@ Expand each section below to see a list of study instruments associated with eac
   <thead>
     <tr>
       <th style="width: 20%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Acronym</th>
+      <th style="width: 20%; text-align: center;">Short Name</th>
       <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 20%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
       <tr>
-      <td style="text-align: left;"><a href="biospec/nails" target="_blank">Nails Toxicology Screen</a></td>
+      <td style="text-align: left;"><a href="biospec/nails" target="_blank">USDTL Nails Toxicology results</a></td>
       <td style="text-align: left;">Nails</td>
-      <td style="text-align: left;">Toxicology Screen</td>
-      <td style="text-align: left;"><code>bio_bm_biosample_nails</code></td>
+      <td style="text-align: left;">Toxicology Screen & Specimen Type</td>
+      <td style="text-align: left;"><code>bio_bm_biosample_nails_results</code><br><code>bio_bm_biosample_nails_type</code></td>
     </tr>
     <tr>
-        <td style="text-align: left;"><a href="biospec/urine" target="_blank">Urine Toxicology Screen</a></td>
+        <td style="text-align: left;"><a href="biospec/urine" target="_blank">USDTL Urine Toxicology results</a></td>
         <td style="text-align: left;">Urine</td>
         <td style="text-align: left;">Toxicology Screen</td>
         <td style="text-align: left;"><code>bio_bm_biosample_urine</code></td>
@@ -185,11 +185,10 @@ Expand each section below to see a list of study instruments associated with eac
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 10%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Acronym</th>
-      <th style="width: 20%; text-align: center;">Construct</th>
+      <th style="width: 30%; text-align: center;">Name of Instrument</th>
+      <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
-      <th style="width: 40%; text-align: center;">File-Based Data<br>
+      <th style="width: 20%; text-align: center;">File-Based Data<br>
           <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
           <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
     </tr>
@@ -197,7 +196,6 @@ Expand each section below to see a list of study instruments associated with eac
   <tbody>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/wearsensors" target="_blank">Wearable Sensors</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">Channel setup</td>
       <td style="word-wrap: break-word; white-space: normal;">N/A</td>
       <td style="word-wrap: break-word; white-space: normal;">N/A</td>
       <td style="word-wrap: break-word; white-space: normal;">
@@ -206,8 +204,7 @@ Expand each section below to see a list of study instruments associated with eac
       </td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">N/A</td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Motor behavior, physical activity, sleep</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>nt_ch_sens__qtn_1</code><br>
           <code>nt_ch_sens__qtn_2</code><br>

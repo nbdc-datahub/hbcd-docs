@@ -1,5 +1,7 @@
-# Basic Demographics
-   
+# Basic Demographics Information
+
+**Full Name**: Basic Demographics Information     
+**Alternative/Short Name**: Basic Demographics             
 **Table Name**: `sed_basic_demographics`    
 
 <p>

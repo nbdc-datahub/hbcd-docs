@@ -1,4 +1,4 @@
-# IBQ-R (VSF)+BI
+# IBQ-R Very Short Form + Behavior Inhibition
 
 **Full Name**: Infant Behavior Questionnaire – Revised Very Short Form + Behavior Inhibition           
 **Acronym**: IBQ-R (VSF)+BI                
