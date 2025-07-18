@@ -38,7 +38,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>study</code></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Study</td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Indicates whether table/measure is a core components of the study or belongs to a substudy / anxiliary study</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{ </b>Core; Substudy<b> }</b></td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b> Core; Substudy <b>}</b></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
@@ -46,7 +46,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Domain</td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Domain/<a href="https://hbcdstudy.org/workgroups-and-committees/">HBCD Workgroup</a></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">
-        { Behavior/Child-Caregiver Interaction;<br>BioSpecimens;<br>Demographics;<br>Neurocognition & Language;<br>Novel Tech;<br>Physical Health;<br>Pregnancy/Exposure Including Substance;<br>Social & Environmental Determinants;<br>Tabular EEG;<br>Tabular imaging }
+        <b>{</b> Behavior/Child-Caregiver Interaction;<br>Biospecimens;<br>Demographics;<br>Neurocognition & Language;<br>Novel Tech;<br>Physical Health;<br>Pregnancy/Exposure Including Substance;<br>Social & Environmental Determinants;<br>Tabular EEG;<br>Tabular imaging <b>}</b>
         </td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
@@ -54,7 +54,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>source</code></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Source</td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Source of information for this table/measure</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">{ Biological Mother;<br>Caregiver (Responsible Adult);<br>Child;<br>General }</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b> Biological Mother;<br>Caregiver (Responsible Adult);<br>Child;<br>General <b>}</b></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
@@ -375,7 +375,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 
 ### General Structure 
 
-Most table names in the tabulated data follow a standardized naming convention with the structure: `domain_source_acronym`. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. Each component represents the following, with possible values for data included ***in the current release*** listed:
+Most table names in the tabulated data follow a standardized naming convention with the structure: `domain_source_acronym`. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. Each component represents the following, with possible values for **only** data tables included in the current release:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -386,9 +386,9 @@ Most table names in the tabulated data follow a standardized naming convention w
 <tbody>
 <tr>
   <td><b>domain</b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Corresponds with the <code>domain</code> element of the <a href="#data-dictionary">NBDC Data Dictionary</a></td>
+  <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>domain</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> (e.g. MRI, Biospecimens, etc.)</td>
   <td>
-    <span class="tooltip"><code>bio</code><span class="tooltiptext">BioSpecimens</span></span>;
+    <span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>;
     <span class="tooltip"><code>eeg</code><span class="tooltiptext">EEG</span></span>;
     <span class="tooltip"><code>mh</code><span class="tooltiptext">Behavior/Child-Caregiver Interaction</span></span>;
     <span class="tooltip"><code>mri</code><span class="tooltiptext">MRI</span></span>;
@@ -402,7 +402,7 @@ Most table names in the tabulated data follow a standardized naming convention w
 </tr>
 <tr>
   <td><b>source</b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Corresponds with the <code>source</code> element of the <a href="#data-dictionary">NBDC Data Dictionary</a> - may refer to either who it’s about <i>OR</i> who completed it <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">See <a href="../../help/faq/#faq-subids">this FAQ</a> for help determining whether data is associated with the birth parent or child</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> (e.g. child vs birth parent)</td>
   <td>
     <span class="tooltip"><code>basic</code>/<code>visit</code><span class="tooltiptext">General</span></span>;
     <span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
@@ -446,7 +446,7 @@ Most table names in the tabulated data follow a standardized naming convention w
     <!-- domain values -->
     <tr>
       <td rowspan="10"><b>Domain</b></td>
-      <td><code>bio</code></td><td>BioSpecimens</td>
+      <td><code>bio</code></td><td>Biospecimens</td>
     </tr>
     <tr><td><code>eeg</code></td><td>EEG</td></tr>
     <tr><td><code>mh</code></td><td>Behavior/Child-Caregiver Interaction</td></tr>

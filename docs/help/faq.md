@@ -116,9 +116,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>In the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../access/metadata/#study-design-logic-child-centric-data-structure">here</a>.</p> 
-<p>Currently, the simplest way to confirm the source of the data (e.g. child vs birth parent) is via DEAP - <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22source%22%2C%22domain%22%5D&hierarchy=%5B%5B%22%22%2C%22HBCD%22%5D%5D#/my-datasets/create-dataset"><b>click here</b></a> to view the list of instruments associated with each source.</p>
-<p>Note that the <b>source</b> component of table names also typically indicates whether the data came from the caregiver, child, or another source. However, the meaning of source is not consistent across all instruments at this time - please see <a href="../../access/metadata/#table-naming-conventions">Table Naming Conventions</a> for details.</p>
+<p>The <b>source</b> element in the <a href="../../access/metadata/#nbdc-data-dictionary">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../access/metadata/#table-naming-conventions">Table Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../access/metadata/#study-design-logic-child-centric-data-structure">here</a>.</p>
 </div>
 
 
