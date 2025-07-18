@@ -1,6 +1,6 @@
 # Medications
 
-**Full Name**: Pregnancy Health-Medications          
+**Full Name**: Pex Bm Health Preg I Meds              
 **Acronym**: Exp I Meds                            
 **Table Name**: `pex_bm_health_preg__meds`               
 **Construct**: Medications in pregnancy

@@ -1,6 +1,6 @@
 # Infant health- V2
 
-**Full Name**: Infant health- V2                    
+**Full Name**: Pex Bm Healthv2 Inf                          
 **Acronym**: Healthv2 Inf                                  
 **Table Name**: `pex_bm_healthv2_inf`               
 **Construct**: Delivery and birth outcomes 

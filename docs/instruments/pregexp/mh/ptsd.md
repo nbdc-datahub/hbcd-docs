@@ -1,7 +1,7 @@
-# NSESSS—PTSD/Acute Stress Disorder
+# DSM5 Severity Acute Stress or PTSD
 
 **Full Name**: National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder                
-**Acronym**: NSESSS—PTSD/Acute Stress Disorder     
+**Acronym**: DSM5 Severity Acute Stress or PTSD     
 **Table Name**: `pex_bm_str__ptsd`       
 **Construct**: PTSD/acute stress disorder symptom severity
 

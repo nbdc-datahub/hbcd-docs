@@ -1,6 +1,6 @@
 # Chronic Conditions
 
-**Full Name**: Pregnancy Health-Chronic Conditions        
+**Full Name**: Pex Bm Health Preg I Healthhx                
 **Acronym**: Exp I chroncond                            
 **Table Name**: `pex_bm_health_preg__chroncond`       
 **Construct**: Chronic conditions and sexually transmitted infections in pregnancy
