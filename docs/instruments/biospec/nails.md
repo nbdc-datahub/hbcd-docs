@@ -1,7 +1,8 @@
-# Nails
+# USDTL Nails Toxicology Results
 
-**Full Name**: Maternal Nails       
-**Table Name**: `bio_bm_biosample_nails`       
+**Full Name**: USDTL Nails Toxicology results        
+**Short/Alternative Names**: Nails; Maternal Nails        
+**Table Names**: `bio_bm_biosample_nails_results` (toxicology screen), `bio_bm_biosample_nails_type` (specimen type)      
 **Construct**: Toxicology screen for substances & environmental exposures conducted on fingernails and toenails
 
 <p>

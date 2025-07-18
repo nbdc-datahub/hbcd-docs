@@ -1,6 +1,6 @@
 # Illness
 
-**Full Name**: Pregnancy Health-Illness       
+**Full Name**: Pex Bm Health Preg I Illness          
 **Acronym**: Exp I illness                            
 **Table Name**: `pex_bm_health_preg__illness`       
 **Construct**: Illness in pregnancy

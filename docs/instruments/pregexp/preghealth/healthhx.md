@@ -1,6 +1,6 @@
 # Pregnancy Health
 
-**Full Name**: Pregnancy Health                
+**Full Name**: Pex Bm Health Preg I Healthhx        
 **Acronym**: Healthhx       
 **Table Name**: `pex_bm_health_preg__healthhx`       
 **Construct**: Pre-pregnancy and pregnancy health

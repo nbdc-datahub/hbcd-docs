@@ -34,20 +34,20 @@ Expand each section below to see a list of study instruments associated with eac
   <thead>
     <tr>
       <th style="width: 20%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Acronym</th>
+      <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
       <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 20%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Demographics</td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/basicdemo" target="_blank">Basic Demographics information</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Basic Demographics</td>
     <td style="word-wrap: break-word; white-space: normal;">Demographics data derived from multiple sources</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>sed_basic_demographics</code></td>
   </tr>
     <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/visitinfo" target="_blank">Visit Information</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Visit Information</td>
     <td style="word-wrap: break-word; white-space: normal;">Participant visit information</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data</code></td>
@@ -84,13 +84,13 @@ Expand each section below to see a list of study instruments associated with eac
     <td><code>mh_cg_pms__cc__inf</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">Infant Behavior Questionnaire &ndash; Revised Very Short Form + Behavior Inhibition</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">IBQ-R Very Short Form + Behavior Inhibition</a></td>
     <td style="word-wrap: break-word; white-space: normal;">IBQ-R (VSF)+BI</td>
     <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
     <td><code>mh_cg_ibqr</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale, Version: Infancy (< 1 year)</a></td>
     <td style="word-wrap: break-word; white-space: normal;">MAPS-TL</td>
     <td style="word-wrap: break-word; white-space: normal;">Irritability</td>
     <td><code>mh_cg_mapdb__inf</code></td>
@@ -114,20 +114,20 @@ Expand each section below to see a list of study instruments associated with eac
   <thead>
     <tr>
       <th style="width: 20%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Acronym</th>
+      <th style="width: 20%; text-align: center;">Short Name</th>
       <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 20%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
       <tr>
-      <td style="text-align: left;"><a href="biospec/nails" target="_blank">Nails Toxicology Screen</a></td>
+      <td style="text-align: left;"><a href="biospec/nails" target="_blank">USDTL Nails Toxicology results</a></td>
       <td style="text-align: left;">Nails</td>
-      <td style="text-align: left;">Toxicology Screen</td>
-      <td style="text-align: left;"><code>bio_bm_biosample_nails</code></td>
+      <td style="text-align: left;">Toxicology Screen & Specimen Type</td>
+      <td style="text-align: left;"><code>bio_bm_biosample_nails_results</code><br><code>bio_bm_biosample_nails_type</code></td>
     </tr>
     <tr>
-        <td style="text-align: left;"><a href="biospec/urine" target="_blank">Urine Toxicology Screen</a></td>
+        <td style="text-align: left;"><a href="biospec/urine" target="_blank">USDTL Urine Toxicology results</a></td>
         <td style="text-align: left;">Urine</td>
         <td style="text-align: left;">Toxicology Screen</td>
         <td style="text-align: left;"><code>bio_bm_biosample_urine</code></td>
@@ -185,11 +185,10 @@ Expand each section below to see a list of study instruments associated with eac
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 10%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Acronym</th>
-      <th style="width: 20%; text-align: center;">Construct</th>
+      <th style="width: 30%; text-align: center;">Name of Instrument</th>
+      <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
-      <th style="width: 40%; text-align: center;">File-Based Data<br>
+      <th style="width: 20%; text-align: center;">File-Based Data<br>
           <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
           <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
     </tr>
@@ -197,7 +196,6 @@ Expand each section below to see a list of study instruments associated with eac
   <tbody>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/wearsensors" target="_blank">Wearable Sensors</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">Channel setup</td>
       <td style="word-wrap: break-word; white-space: normal;">N/A</td>
       <td style="word-wrap: break-word; white-space: normal;">N/A</td>
       <td style="word-wrap: break-word; white-space: normal;">
@@ -206,8 +204,7 @@ Expand each section below to see a list of study instruments associated with eac
       </td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">N/A</td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Motor behavior, physical activity, sleep</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>nt_ch_sens__qtn_1</code><br>
           <code>nt_ch_sens__qtn_2</code><br>
@@ -348,19 +345,19 @@ Expand each section below to see a list of study instruments associated with eac
   </thead>
   <tbody>
   <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/fam-mh" target="_blank">Personal and family psychiatric history</a></td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/fam-mh" target="_blank">Personal and Family Psychiatric History</a></td>
       <td style="word-wrap: break-word; white-space: normal;">FAM MH</td>
       <td style="word-wrap: break-word; white-space: normal;">Personal and family mental health</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_psych</code></td>
     </tr>            
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/apa12" target="_blank">DSM-5 Self-Rated Level 1 and Level 2 (version 8a) Cross-Cutting Symptom Measure—Adult</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">APA 1/2</td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/apa12" target="_blank">DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">APA Level 1 / Level 2</td>
       <td style="word-wrap: break-word; white-space: normal;">Mental Health</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_apa</code></td>
     </tr>  
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/ptsd" target="_blank">National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder</a></td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/ptsd" target="_blank">DSM5 Severity Acute Stress or PTSD</a></td>
       <td style="word-wrap: break-word; white-space: normal;">NSESSS—PTSD/Acute Stress Disorder</td>
       <td style="word-wrap: break-word; white-space: normal;">PTSD/acute stress disorder symptom severity</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_str__ptsd</code></td>
@@ -388,19 +385,19 @@ Expand each section below to see a list of study instruments associated with eac
   <tbody>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/su/assist" target="_blank">Alcohol, Smoking and Substance Involvement Screening Test V1.0</a></td>
-    <td>Assist V1</td>
+    <td>ASSIST V1</td>
     <td style="word-wrap: break-word; white-space: normal;">Substance use and problematic use before and during pregnancy</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_assistv1</code></td>
   </tr>    
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/su/assist" target="_blank">Alcohol, Smoking and Substance Involvement Screening Test V2.0</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Assist V2</td>
+    <td style="word-wrap: break-word; white-space: normal;">ASSIST V2</td>
     <td style="word-wrap: break-word; white-space: normal;">Substance use during end of pregnancy ( between V1 and delivery) and postnatal (weeks 0-4, between delivery and V2)</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_assistv2</code></td>
   </tr>    
   <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/su/assist" target="_blank">Alcohol, Smoking and Substance Involvement Screening Test V3.0</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">Assist V3</td>
+      <td style="word-wrap: break-word; white-space: normal;">ASSIST V3</td>
       <td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_assistv3</code></td>
   </tr>   
@@ -429,14 +426,14 @@ Expand each section below to see a list of study instruments associated with eac
   <thead>
     <tr>
       <th style="width: 30%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Acronym</th>
+      <th style="width: 20%; text-align: center;">Acronym/Short Name</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/bfy" target="_blank">Baby’s First Years – Benefits/Services/Economic Stress</a></td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/bfy" target="_blank">BFY - Benefits/Services, Economic Stress</a></td>
       <td style="word-wrap: break-word; white-space: normal;">BFY</td>
       <td style="word-wrap: break-word; white-space: normal;">Benefits/Services/Economic Stress</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_bfy</code></td>
@@ -448,7 +445,7 @@ Expand each section below to see a list of study instruments associated with eac
         <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_phx__discr</code></td>
     </tr>   
     <tr>
-          <td style="word-wrap: break-word; white-space: normal;"><a href="SED/ehits" target="_blank">Extended – Hurt, Insult, Threaten, Scream</a></td>
+          <td style="word-wrap: break-word; white-space: normal;"><a href="SED/ehits" target="_blank">Partner Dynamics (eHITS)</a></td>
           <td style="word-wrap: break-word; white-space: normal;">eHITS</td>
           <td style="word-wrap: break-word; white-space: normal;">Intimate Partner Violence</td>
           <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_ehits</code></td>
@@ -460,13 +457,13 @@ Expand each section below to see a list of study instruments associated with eac
           <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_demo</code></td>
       </tr>     
       <tr>
-          <td style="word-wrap: break-word; white-space: normal;"><a href="SED/promis" target="_blank">Patient-Reported Outcome Measurement Information System</a></td>
+          <td style="word-wrap: break-word; white-space: normal;"><a href="SED/promis" target="_blank">PROMIS Perceived Stress/Social Support</a></td>
           <td style="word-wrap: break-word; white-space: normal;">PROMIS</td>
           <td style="word-wrap: break-word; white-space: normal;">Perceived Stress/Social Support</td>
           <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_strsup</code></td>
       </tr> 
       <tr>
-          <td style="word-wrap: break-word; white-space: normal;"><a href="SED/safety" target="_blank">PhenX+ Toolkit Neighborhood Safety</a></td>
+          <td style="word-wrap: break-word; white-space: normal;"><a href="SED/safety" target="_blank">PhenX+ Neighborhood Safety</a></td>
           <td style="word-wrap: break-word; white-space: normal;">Neighborhood Safety</td>
           <td style="word-wrap: break-word; white-space: normal;">Neighborhood Safety</td>
           <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_nbhsaf</code></td>

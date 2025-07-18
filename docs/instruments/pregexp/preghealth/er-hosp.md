@@ -1,6 +1,6 @@
 # ER/Hospitalizations
 
-**Full Name**: Pregnancy Health-ER/Hospitalizations       
+**Full Name**: Pex Bm Health Preg I Erhosp           
 **Acronym**: Exp I ERhosp                            
 **Table Name**: `pex_bm_health_preg__erhosp`               
 **Construct**: ER visit(s) or hospitalization(s) during pregnancy

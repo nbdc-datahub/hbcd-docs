@@ -1,9 +1,21 @@
 # Wearable Sensors
 
-Available as file-based data ([see details](../../datacuration/overview.md)):
+Motion/accelerometry data collected from wearable infant leg sensors is provided as file-based data (and does not have any associated tabulated data - see overview of tabulated vs. file-based data [here](../../datacuration/overview.md)):
 
-<i class="fa fa-hammer"></i><strong> Raw BIDS: </strong><a href="../../../datacuration/rawbids/#motion"><code>motion/</code></a><br>
-<i class="fas fa-cog"></i><strong> Derivatives: </strong><a href="../../../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a>
+- <i class="fa fa-hammer"></i><strong> Raw BIDS</strong> under subject- and session-specific <code>motion/</code> folders - <a href="../../../datacuration/rawbids/#motion">see details</a>
+- <i class="fas fa-cog"></i><strong> Derivatives</strong> produced by the HBCD-Motion pipeline under <code>hbcd_motion/</code> - <a href="../../../datacuration/derivatives/#hbcd-motion-hbcd_motion">see details</a>
+
+*HBCD data structure summary with only motion/accelerometry data included:*
+<pre class="folder-tree">
+hbcd/
+|__ rawdata/ 
+|   |__ sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw BIDS (file-based data)</span>
+|       |__ ses-<span class="label">&lt;label&gt;</span>/
+|           |__ motion/
+|
+|__ derivatives/        <span class="hashtag"># Derivatives (file-based data)</span>
+    |__ hbcd_motion/
+</pre>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

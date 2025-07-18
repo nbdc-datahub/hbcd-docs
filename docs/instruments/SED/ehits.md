@@ -1,9 +1,9 @@
-# Intimate Partner Violence
+# Partner Dynamics (eHITS)
 
-**Full Name**: Extended – Hurt, Insult, Threaten, Scream     
+**Full Name**: Partner Dynamics Extended – Hurt, Insult, Threaten, Scream (eHITS)      
 **Acronym**: eHITS                  
 **Table Name**: `sed_bm_ehits`       
-**Construct**: ntimate Partner Violence
+**Construct**: Intimate Partner Violence
 
 ## Administration & Quality Control
 

@@ -1,7 +1,7 @@
-# Mental Health
+# APA Level 1 / Level 2
 
 **Full Name**: DSM-5 Self-Rated Level 1 and Level 2 Cross-Cutting Symptom Measure—Adult           
-**Acronym**: APA 1/2     
+**Acronym**: APA Level 1 / Level 2         
 **Table Name**: `pex_bm_apa`       
 **Construct**: Mental health
 

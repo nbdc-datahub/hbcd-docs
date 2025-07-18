@@ -99,11 +99,11 @@ nav:
                 - Infant Health: instruments/pregexp/preghealth/infanthealth.md
             - Mental Health:
                 - Personal & Family Psychiatric History: instruments/pregexp/mh/fam-mh.md
-                - APA 1/2: instruments/pregexp/mh/apa12.md
+                - APA Level 1 / Level 2: instruments/pregexp/mh/apa12.md
                 - PTSD & Acute Stress: instruments/pregexp/mh/ptsd.md
                 - Postnatal Depression: instruments/pregexp/mh/epds.md
             - Substance Use:
-                - Assist V1, V2, & V3: instruments/pregexp/su/assist.md
+                - ASSIST V1, V2, & V3: instruments/pregexp/su/assist.md
                 - TLFB: instruments/pregexp/su/tlfb.md
         - Social & Environmental Determinants:
             - V01 Demographics: instruments/SED/v01-demo.md

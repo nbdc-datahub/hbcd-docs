@@ -1,6 +1,6 @@
-# MAPS-TL
+# MAPS-TL, Version: Infancy (< 1 year)
 
-**Full Name**: Multidimensional Assessment Profiles - Temper Loss scale       
+**Full Name**: Multidimensional Assessment Profiles - Temper Loss scale, Version: Infancy (< 1 year)       
 **Acronym**: MAPS-TL                  
 **Table Name**: `mh_cg_mapdb__inf`       
 **Construct**: Irritability

@@ -1,5 +1,7 @@
-# Visit Information
+# Visit Level Data
 
+**Full Name**: Visit Level Data          
+**Alternative/Short Name**: Visit Information          
 **Table Name**: `par_visit_data`       
 
 <p style="margin: 0 0 5px;">Visit information contains all participant visit data, including:</p>

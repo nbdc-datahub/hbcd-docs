@@ -1,6 +1,6 @@
 # Infant Sensor Questionnaire
 
-**Full Name**: Infant Sensor Questionnaire            
+**Full Name**: Infant Sensor Questionnaire 1/2/3                 
 **Table Name**: `nt_ch_sens__qtn_1`, `nt_ch_sens__qtn_2`, `nt_ch_sens__qtn_3`       
 **Construct**: Motor behavior, physical activity, sleep
 

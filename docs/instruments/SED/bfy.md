@@ -1,9 +1,9 @@
 # Baby's First Years
 
-**Full Name**: Baby’s First Years – Benefits/Services/Economic Stress     
+**Full Name**: Baby’s First Years - Benefits/Services, Economic Stress   
 **Acronym**: BFY             
 **Table Name**: `sed_bm_bfy`       
-**Construct**: Benefits/Services/Economic Stress
+**Construct**: Benefits/Services, Economic Stress
 
 ## Administration & Quality Control
 

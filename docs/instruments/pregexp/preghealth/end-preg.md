@@ -1,6 +1,6 @@
-# Pregnancy Health-V2
+# Pregnancy Health-V2 (End of Pregnancy)
 
-**Full Name**: Pregnancy Health-V2 (End of Pregnancy)             
+**Full Name**: Pex Bm Healthv2 Preg                 
 **Acronym**: Healthv2 Preg                            
 **Table Name**: `pex_bm_healthv2_preg`               
 **Construct**: Updates information between enrollment and delivery

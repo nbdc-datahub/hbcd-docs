@@ -1,6 +1,6 @@
 # Exposures and Vaccines
 
-**Full Name**: Pregnancy Health-Exposures and Vaccines          
+**Full Name**: Pex Bm Health Preg I Exp I Vacc          
 **Acronym**: Vacc                            
 **Table Name**: `pex_bm_health_preg__exp__vacc`       
 **Construct**: Vaccines in pregnancy
