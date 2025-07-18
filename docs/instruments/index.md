@@ -124,13 +124,13 @@ Expand each section below to see a list of study instruments associated with eac
       <td style="text-align: left;"><a href="biospec/nails" target="_blank">Nails Toxicology Screen</a></td>
       <td style="text-align: left;">Nails</td>
       <td style="text-align: left;">Toxicology Screen</td>
-      <td style="text-align: left;"><code>bio_biosample_nails</code></td>
+      <td style="text-align: left;"><code>bio_bm_biosample_nails</code></td>
     </tr>
     <tr>
         <td style="text-align: left;"><a href="biospec/urine" target="_blank">Urine Toxicology Screen</a></td>
         <td style="text-align: left;">Urine</td>
         <td style="text-align: left;">Toxicology Screen</td>
-        <td style="text-align: left;"><code>bio_biosample_urine</code></td>
+        <td style="text-align: left;"><code>bio_bm_biosample_urine</code></td>
     </tr>
   </tbody>
   </table>
@@ -199,7 +199,7 @@ Expand each section below to see a list of study instruments associated with eac
       <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/wearsensors" target="_blank">Wearable Sensors</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Channel setup</td>
       <td style="word-wrap: break-word; white-space: normal;">N/A</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>sens_ch_setup</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">N/A</td>
       <td style="word-wrap: break-word; white-space: normal;">
       <i class="fa fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#motion"><code>motion/</code></a><br>
       <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a>
@@ -248,7 +248,7 @@ Expand each section below to see a list of study instruments associated with eac
       <td style="word-wrap: break-word; white-space: normal;"><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
       <td style="word-wrap: break-word; white-space: normal;">USDA short form</td>
       <td style="word-wrap: break-word; white-space: normal;">Food insecurity</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code><code>sed_cg_foodins</code></td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_foodins</code></td>
     </tr>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>

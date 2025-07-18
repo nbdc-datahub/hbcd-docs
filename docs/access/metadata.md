@@ -26,7 +26,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
         <th style="width: 5%; border: 1px solid #ddd; padding: 5px; text-align: center;">Name</th>
         <th style="width: 20%; border: 1px solid #ddd; padding: 5px; text-align: center;">Label</th>
         <th style="width: 25%; border: 1px solid #ddd; padding: 5px; text-align: center;">Description</th>
-        <th style="width: 25%; border: 1px solid #ddd; padding: 5px; text-align: center;"><b>{</b>Possible Values<b>}</b> / Example(s)</th>
+        <th style="width: 30%; border: 1px solid #ddd; padding: 5px; text-align: center;"><b>{ </b>Possible Values<b> }</b> / Example(s)</th>
         <th style="width: 5%; border: 1px solid #ddd; padding: 5px; word-wrap: break-word; white-space: normal; text-align: center;">
             <span class="tooltip tooltip-left">Mutable
                 <span class="tooltiptext">Values may vary between releases</span>
@@ -38,21 +38,23 @@ Below are the definitions for the columns in the data dictionary and levels tabl
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>study</code></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Study</td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Indicates whether table/measure is a core components of the study or belongs to a substudy / anxiliary study</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b>Core; Substudy<b>}</b></td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b> Core; Substudy <b>}</b></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>domain</code></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Domain</td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Domain/<a href="https://hbcdstudy.org/workgroups-and-committees/">HBCD Workgroup</a></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Biospecimens, MRI, etc. (<a href="#domain-source">see details</a>)</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">
+        <b>{</b> Behavior/Child-Caregiver Interaction;<br>Biospecimens;<br>Demographics;<br>Neurocognition & Language;<br>Novel Tech;<br>Physical Health;<br>Pregnancy/Exposure Including Substance;<br>Social & Environmental Determinants;<br>Tabular EEG;<br>Tabular imaging <b>}</b>
+        </td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
-        <tr>
+    <tr>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>source</code></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Source</td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Source of information for this table/measure</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Child, Biological Mother, etc. (<a href="#domain-source">see details</a>)</td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b> Biological Mother;<br>Caregiver (Responsible Adult);<br>Child;<br>General <b>}</b></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
@@ -141,7 +143,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
             <span class="tooltiptext">Derived from original data provided by the participant - e.g. if the participant filled in two fields to enter their height in feet and inches, a derived item could integrate this information into one field that provides the height in inches</span>
           </span>; <span class="tooltip">summary score
             <span class="tooltiptext">Summary and/or score output based on algorithmic conversions of items/raw data</span>
-          </span><b>}</b>
+          </span><b> }</b>
       </td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
@@ -149,11 +151,11 @@ Below are the definitions for the columns in the data dictionary and levels tabl
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>type_data</code></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Data type</td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Data type (in database)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b>date; timestamp; time;
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b> date; timestamp; time;
       <span class="tooltip">character
         <span class="tooltiptext">Character only used for categorical columns</span>
       </span>;
-      text; integer; double<b>}</b></td>
+      text; integer; double <b>}</b></td>
     </td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">NO</td>
     </tr>
@@ -161,7 +163,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>type_level</code></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Level of measurement</td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Measurement level/scale type</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b>nominal; ordinal; interval; ratio<b>}</b></td>
+        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b> nominal; ordinal; interval; ratio <b>}</b></td>
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
@@ -357,7 +359,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 </p>
 </div>
 
-## Naming Conventions
+## Table Naming Conventions
 
 <p>
 <div class="notification-banner static-banner">
@@ -367,15 +369,13 @@ Below are the definitions for the columns in the data dictionary and levels tabl
   </span>
 </div>
 <div class="notification-static-content">
-<p><b>Tabulated data</b> are in table format and largely include behavior, demographics, visit data, and toxicology results. <b>File-based</b> data include both raw and processed MRI, MRS, EEG, and motion/accelerometry. Note that file-based data follow a separate naming scheme, but are generally understood to be under the MRI, EEG, etc. domain and strictly for the 'Child.' See <a href="../../datacuration/overview">here</a> for further information on the differences between these data types.</p>
+<p><b>Tabulated data</b> are in table format and largely include behavior, demographics, visit data, and toxicology results. <b>File-based</b> data include both raw and processed MRI, MRS, EEG, and motion/accelerometry. See <a href="../../datacuration/overview">here</a> for further information on the differences between these data types.</p>
 </div>
 </p>
 
-A unified naming convention has been generally implemented for both instrument and field names of the tabulated data. Nonetheless, *in the current release there may be exceptions where the naming standard is not applied for specific field names.* As a result, naming patterns may vary across instruments and variables. To enhance interpretability, improved consistency in the naming scheme is planned for future releases.
-
 ### General Structure 
 
-Most table names in the tabulated data follow a standardized naming convention with the structure: `domain_source_acronym`. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. Each component represents the following:
+Most table names in the tabulated data follow a standardized naming convention with the structure: `domain_source_acronym`. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. Each component represents the following, with possible values for **only** data tables included in the current release:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -386,42 +386,38 @@ Most table names in the tabulated data follow a standardized naming convention w
 <tbody>
 <tr>
   <td><b>domain</b></td>
-  <td>General category/<a href="https://hbcdstudy.org/workgroups-and-committees/">HBCD Workgroup</a></td>
+  <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>domain</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> (e.g. MRI, Biospecimens, etc.)</td>
   <td>
-    <span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>,
-    <span class="tooltip"><code>mh</code><span class="tooltiptext">Behavior & Child-Caregiver Interaction</span></span>,
-    <span class="tooltip"><code>sed</code><span class="tooltiptext">Social & Environmental Determinants</span></span>,
-    <span class="tooltip"><code>sens</code><span class="tooltiptext">Biosensor</span></span>,
-    <span class="tooltip"><code>ph</code><span class="tooltiptext">Physical Health</span></span>,
-    <span class="tooltip"><code>ncl</code><span class="tooltiptext">Neurocognition & Language</span></span>,
-    <span class="tooltip"><code>nt</code><span class="tooltiptext">Novel Tech</span></span>,
-    <span class="tooltip"><code>eeg</code><span class="tooltiptext">EEG</span></span>,
-    <span class="tooltip"><code>mri</code><span class="tooltiptext">MRI</span></span>
+    <span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>;
+    <span class="tooltip"><code>eeg</code><span class="tooltiptext">EEG</span></span>;
+    <span class="tooltip"><code>mh</code><span class="tooltiptext">Behavior/Child-Caregiver Interaction</span></span>;
+    <span class="tooltip"><code>mri</code><span class="tooltiptext">MRI</span></span>;
+    <span class="tooltip"><code>ncl</code><span class="tooltiptext">Neurocognition and Language</span></span>;
+    <span class="tooltip"><code>nt</code><span class="tooltiptext">Novel Tech</span></span>;
+    <span class="tooltip tooltip-bottom"><code>par</code><span class="tooltiptext">Participant info, under Demographics domain in DD</span></span>;
+    <span class="tooltip"><code>pex</code><span class="tooltiptext">Pregnancy/Exposure Including Substance</span></span>;
+    <span class="tooltip"><code>ph</code><span class="tooltiptext">Physical Health</span></span>;
+    <span class="tooltip"><code>sed</code><span class="tooltiptext">Social & Environmental Determinants</span></span>
   </td>
 </tr>
 <tr>
   <td><b>source</b></td>
-  <td>Who it’s about <i>OR</i> who completed it</td>
+  <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> (e.g. child vs birth parent)</td>
   <td>
-    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>,
-    <span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>,
-    <span class="tooltip"><code>si</code><span class="tooltiptext">Sibling</span></span>,
-    <span class="tooltip"><code>te</code><span class="tooltiptext">Teacher</span></span>,
-    <span class="tooltip"><code>cl</code><span class="tooltiptext">Clinician</span></span>,
-    <span class="tooltip"><code>ra</code><span class="tooltiptext">Research Assistant</span></span>,
-    <span class="tooltip"><code>ld</code><span class="tooltiptext">Linked Data</span></span>,
-    <span class="tooltip"><code>fd</code><span class="tooltiptext">Family Data</span></span>
+    <span class="tooltip"><code>basic</code>/<code>visit</code><span class="tooltiptext">General</span></span>;
+    <span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
+    <span class="tooltip"><code>cg</code><span class="tooltiptext">Caregiver (Responsible Adult)</span></span>;
+    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>
   </td>
 </tr>
 <tr>
-<td><b>Acronym/Abbreviation</b></td>
+<td><b>acronym</b></td>
 <td>Specific protocol element</td>
 <td>Varies by instrument; see full data dictionary for details.</td></tr>
 </tbody>
 </table>
 
-<p style="font-style: italic;">Example: <code>mri_ra_prep</code> = MRI-related data entered by a research assistant (ra)</p>
-
+<p>
 <div id="domain-source" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span style="display: inline-flex; align-items: center;">
@@ -441,33 +437,42 @@ Most table names in the tabulated data follow a standardized naming convention w
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
     <tr>
+      <th></th>
       <th>Code</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <!-- domain values -->
-    <tr><td><code>bio</code></td><td>Biospecimens</td></tr>
-    <tr><td><code>mh</code></td><td>Behavior & Child-Caregiver Interaction</td></tr>
-    <tr><td><code>sed</code></td><td>Social & Environmental Determinants</td></tr>
-    <tr><td><code>sens</code></td><td>Biosensor</td></tr>
-    <tr><td><code>ph</code></td><td>Physical Health</td></tr>
-    <tr><td><code>ncl</code></td><td>Neurocognition & Language</td></tr>
-    <tr><td><code>nt</code></td><td>Novel Tech</td></tr>
+    <tr>
+      <td rowspan="10"><b>Domain</b></td>
+      <td><code>bio</code></td><td>Biospecimens</td>
+    </tr>
     <tr><td><code>eeg</code></td><td>EEG</td></tr>
+    <tr><td><code>mh</code></td><td>Behavior/Child-Caregiver Interaction</td></tr>
     <tr><td><code>mri</code></td><td>MRI</td></tr>
+    <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
+    <tr><td><code>nt</code></td><td>Novel Tech</td></tr>
+    <tr><td><code>par</code></td><td>Participant information (associated with Demographics domain in Data Dictionary)</td></tr>
+    <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
+    <tr><td><code>ph</code></td><td>Physical Health</td></tr>
+    <tr><td><code>sed</code></td><td>Social & Environmental Determinants</td></tr>
     <!-- source values -->
+    <tr>
+      <td rowspan="5"><b>Source</b></td>
+      <tr><td><code>basic</code> / <code>visit</code></td><td>Both associated with General source in Data Dictionary</td></tr>
+      <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
+    </tr>
+    <td><code>cg</code></td><td>Caregiver (Responsible Adult)</td>
     <tr><td><code>ch</code></td><td>Child</td></tr>
-    <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
-    <tr><td><code>si</code></td><td>Sibling</td></tr>
-    <tr><td><code>te</code></td><td>Teacher</td></tr>
-    <tr><td><code>cl</code></td><td>Clinician</td></tr>
-    <tr><td><code>ra</code></td><td>Research Assistant</td></tr>
-    <tr><td><code>ld</code></td><td>Linked Data</td></tr>
-    <tr><td><code>fd</code></td><td>Family Data</td></tr>
   </tbody>
 </table>
 </div>
+</p>
+
+#### Exceptions
+
+A unified naming convention has been generally implemented for both instrument and field names of the tabulated data. Nonetheless, *in the current release there may be exceptions where the naming standard is not applied for specific field names.* As a result, naming patterns may vary across instruments and variables. To enhance interpretability, improved consistency in the naming scheme is planned for future releases. Data with table names that do not follow the conventions outlined below include **tabulated data derived from MRI, EEG, other file-based data**. However, it is generally understood that these data are associated with the MRI, EEG, etc. domains and strictly associated with the 'Child.' 
 
 ### Single vs Double Underscores 
 
