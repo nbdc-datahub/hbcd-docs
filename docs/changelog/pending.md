@@ -22,10 +22,6 @@ The interim release will include birth parent sexual orientation information (**
 
 <span class="blue-text"><b>**</b></span> <span><i>Note: Further information on this response option (via branching logic) will not be included in release.</i></span>
 
-#### Physical Health 
-
-Age-based height/weight/head z-scores calculated based on (non-jittered) date of birth.
-
 ## Release 2.0 (Release Date TBA)
 
 ### Additional Data & Information Expected in 2.0
@@ -129,3 +125,7 @@ The interim release will refine medication classifications in the [Pregnancy & E
 - Ingredient
 - Precise Ingredient
 - Multiple Active Ingredients
+
+#### Physical Health 
+
+Age-based height/weight/head z-scores calculated based on (non-jittered) date of birth.
