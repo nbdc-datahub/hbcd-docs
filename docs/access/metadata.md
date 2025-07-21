@@ -379,7 +379,7 @@ A unified naming convention has been applied to most table names in the tabulate
     <span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>;
     <span class="tooltip"><code>eeg</code><span class="tooltiptext">EEG</span></span>;
     <span class="tooltip"><code>mh</code><span class="tooltiptext">Behavior/Child-Caregiver Interaction</span></span>;
-    <span class="tooltip"><code>mri</code><span class="tooltiptext">MRI</span></span>;
+    <span class="tooltip"><code>img</code><span class="tooltiptext">Imaging/MRI</span></span>;
     <span class="tooltip"><code>ncl</code><span class="tooltiptext">Neurocognition and Language</span></span>;
     <span class="tooltip"><code>nt</code><span class="tooltiptext">Novel Tech</span></span>;
     <span class="tooltip"><code>pex</code><span class="tooltiptext">Pregnancy/Exposure Including Substance</span></span>;
@@ -391,11 +391,9 @@ A unified naming convention has been applied to most table names in the tabulate
   <td><b><code>source</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> (e.g. child vs birth parent)</td>
   <td>
-    <span class="tooltip"><code>basic</code><span class="tooltiptext">General</span></span>;
     <span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
     <span class="tooltip"><code>cg</code><span class="tooltiptext">Caregiver (Responsible Adult)</span></span>;
-    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>;
-    <span class="tooltip"><code>visit</code><span class="tooltiptext">General</span></span>
+    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>
   </td>
 </tr>
 <tr>
@@ -438,7 +436,7 @@ A unified naming convention has been applied to most table names in the tabulate
     </tr>
     <tr><td><code>eeg</code></td><td>EEG</td></tr>
     <tr><td><code>mh</code></td><td>Behavior/Child-Caregiver Interaction</td></tr>
-    <tr><td><code>mri</code></td><td>MRI</td></tr>
+    <tr><td><code>img</code></td><td>Imaging/MRI</td></tr>
     <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
     <tr><td><code>nt</code></td><td>Novel Tech</td></tr>
     <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
@@ -480,16 +478,17 @@ The field names within a table are all prepended by the table name (as described
 <img src="../images/field-naming.png" alt="field naming convention: domain_source_table_scale_item"  width="400">
 </p>
 
+
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <th></th>
-  <th>Definition</th>
-  <th>Example Values <span class="tooltip tooltip-right"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">for tables provided in the current release only</span></span>
+  <th style="width: 50%;">Definition</th>
+  <th style="width: 50%;">Example Values <span class="tooltip tooltip-left"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">for tables provided in the current release only</span></span>
 </thead>
 <tbody>
 <tr>
   <td><b><code>scale</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Name of scale or subscale</td>
+  <td>Name of scale or subscale within instrument/protocol element</td>
   <td><span class="tooltip"><code>herit</code><span class="tooltiptext">heritage information</span></span>;
   <span class="tooltip"><code>lang</code><span class="tooltiptext">languages spoken</span></span>;
   <span class="tooltip"><code>administration</code><span class="tooltiptext">instrument administration</span></span>; etc.
