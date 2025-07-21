@@ -490,12 +490,15 @@ The field names within a table are all prepended by the table name (as described
 <tr>
   <td><b><code>scale</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Name of scale or subscale</td>
-  <td>  </td>
+  <td><span class="tooltip"><code>herit</code><span class="tooltiptext">heritage information</span></span>;
+  <span class="tooltip"><code>lang</code><span class="tooltiptext">languages spoken</span></span>;
+  <span class="tooltip"><code>administration</code><span class="tooltiptext">instrument administration</span></span>; etc.
+  </td>
 </tr>
 <tr>
 <td><b><code>item</code></b></td>
 <td>Item in scale</td>
-<td><code>001</code>; <code>001__01</code>; <code>mean</code>; <code>standard</code></td></tr>
+<td><code>001</code>; <code>001__01</code>; <code>mean</code>; <code>standard</code>; etc.</td></tr>
 </tbody>
 </table>
 
