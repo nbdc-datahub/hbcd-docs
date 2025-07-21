@@ -355,9 +355,9 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 <p>Column names appended with <b>*_es</b> are currently blank in the Lasso Dictionary Query Tool and will become available in a future release. Some columns in the data dictionary are not applicable to HBCD study data. These columns will appear in Lasso Portal queries, but will have blank values. Examples include <b>atlas</b>, <b>metric</b>, <b>sub_domain</b>, columns including <b>nda/deap/redcap</b>, etc. These columns can be safely ignored.</p>
 </div>
 
-## Table Naming Conventions
+## Naming Conventions
 
-### General Structure 
+### Table Names
 
 A unified naming convention has been applied to most table names in the tabulated release data (see overview of tabulated vs. file-based data [here](../datacuration/overview.md)). This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. The **standard table name format** is:
 
@@ -471,6 +471,33 @@ A unified naming convention has been applied to most table names in the tabulate
 <li><strong><a href="../../instruments/#mri">MRI & MRS</a> and <a href="../../instruments/#eeg">EEG</a></strong> tabulated data derived from file-based sources. These are clearly associated with their respective domains (e.g., MRI, EEG) and pertain exclusively to the Child.</li>
 <li><strong>Derived tables</strong>: including Basic Demographics (<code>sed_basic_demographics</code>, containing global, static variables) and Visit Information (<code>par_visit_data</code>, containing dynamic/longitudinal visit-level data) - <a href="../../instruments/#demo">see details</a>.</li>
 </div>
+
+### Field Names
+
+The field names within a table are all prepended by the table name (as described [above](#table-names)) followed by *scale* and *item* like so:
+
+<p align="center">
+<img src="../images/field-naming.png" alt="field naming convention: domain_source_table_scale_item"  width="400">
+</p>
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <th></th>
+  <th>Definition</th>
+  <th>Example Values <span class="tooltip tooltip-right"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">for tables provided in the current release only</span></span>
+</thead>
+<tbody>
+<tr>
+  <td><b><code>scale</code></b></td>
+  <td style="word-wrap: break-word; white-space: normal;">Name of scale or subscale</td>
+  <td>  </td>
+</tr>
+<tr>
+<td><b><code>item</code></b></td>
+<td>Item in scale</td>
+<td><code>001</code>; <code>001__01</code>; <code>mean</code>; <code>standard</code></td></tr>
+</tbody>
+</table>
 
 ### Single vs Double Underscores 
 
