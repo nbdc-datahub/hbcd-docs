@@ -357,37 +357,23 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 
 ## Table Naming Conventions
 
-<p>
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">
-    Tabulated vs File-Based Data Naming Conventions
-  </span>
-</div>
-<div class="notification-static-content">
-<p><b>Tabulated data</b> are in table format and largely include behavior, demographics, visit data, and toxicology results. <b>File-based</b> data include both raw and processed MRI, MRS, EEG, and motion/accelerometry. See <a href="../../datacuration/overview">here</a> for further information on the differences between these data types.</p>
-</div>
-</p>
-
 ### General Structure 
 
-A unified naming convention has been applied to most table names in the tabulated release data. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. The **standard table name format** is:
+A unified naming convention has been applied to most table names in the tabulated release data (see overview of tabulated vs. file-based data [here](../datacuration/overview.md)). This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. The **standard table name format** is:
 
-<p style="font-size: 1.2em; font-weight: bold;">
-  \[
-  \text{domain_source_table}
-  \]
+<p style="font-size: 1.8em; font-weight: bold;" align="center">
+<code>domain_source_table</code>
 </p>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <th></th>
   <th>Definition</th>
-  <th>Possible Values <span class="blue-text"><b>**</b></span></th>
+  <th>Possible Values <span class="tooltip tooltip-right"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">for tables provided in the current release only</span></span>
 </thead>
 <tbody>
 <tr>
-  <td><b>domain</b></td>
+  <td><b><code>domain</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>domain</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> (e.g. MRI, Biospecimens, etc.)</td>
   <td>
     <span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>;
@@ -396,14 +382,13 @@ A unified naming convention has been applied to most table names in the tabulate
     <span class="tooltip"><code>mri</code><span class="tooltiptext">MRI</span></span>;
     <span class="tooltip"><code>ncl</code><span class="tooltiptext">Neurocognition and Language</span></span>;
     <span class="tooltip"><code>nt</code><span class="tooltiptext">Novel Tech</span></span>;
-    <span class="tooltip tooltip-bottom"><code>par</code><span class="tooltiptext">Participant info, under Demographics domain in DD</span></span>;
     <span class="tooltip"><code>pex</code><span class="tooltiptext">Pregnancy/Exposure Including Substance</span></span>;
     <span class="tooltip"><code>ph</code><span class="tooltiptext">Physical Health</span></span>;
     <span class="tooltip"><code>sed</code><span class="tooltiptext">Social & Environmental Determinants</span></span>
   </td>
 </tr>
 <tr>
-  <td><b>source</b></td>
+  <td><b><code>source</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> (e.g. child vs birth parent)</td>
   <td>
     <span class="tooltip"><code>basic</code><span class="tooltiptext">General</span></span>;
@@ -414,12 +399,11 @@ A unified naming convention has been applied to most table names in the tabulate
   </td>
 </tr>
 <tr>
-<td><b>table</b></td>
+<td><b><code>table</code></b></td>
 <td>Specific instrument name/protocol element</td>
 <td>Varies by instrument; see full data dictionary for details.</td></tr>
 </tbody>
 </table>
-<span class="blue-text"><b>**</b></span> <span><i>Note: the possible values listed include only values for data included in the current release.</i></span>
 
 <p>
 <div id="domain-source" class="table-banner" onclick="toggleCollapse(this)">
@@ -449,7 +433,7 @@ A unified naming convention has been applied to most table names in the tabulate
   <tbody>
     <!-- domain values -->
     <tr>
-      <td rowspan="10"><b>Domain</b></td>
+      <td rowspan="9"><b>Domain</b></td>
       <td><code>bio</code></td><td>Biospecimens</td>
     </tr>
     <tr><td><code>eeg</code></td><td>EEG</td></tr>
@@ -457,33 +441,35 @@ A unified naming convention has been applied to most table names in the tabulate
     <tr><td><code>mri</code></td><td>MRI</td></tr>
     <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
     <tr><td><code>nt</code></td><td>Novel Tech</td></tr>
-    <tr><td><code>par</code></td><td>Participant information (associated with Demographics domain in Data Dictionary)</td></tr>
     <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
     <tr><td><code>ph</code></td><td>Physical Health</td></tr>
     <tr><td><code>sed</code></td><td>Social & Environmental Determinants</td></tr>
     <!-- source values -->
     <tr>
-      <td rowspan="6"><b>Source</b></td>
-      <tr><td><code>basic</code></td><td>Associated with General source in Data Dictionary</td></tr>
+      <td rowspan="4"><b>Source</b></td>
       <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
     </tr>
     <td><code>cg</code></td><td>Caregiver (Responsible Adult)</td>
     <tr><td><code>ch</code></td><td>Child</td></tr>
-    <tr><td><code>visit</code></td><td>Associated with General source in Data Dictionary</td></tr>
   </tbody>
 </table>
 </div>
 </p>
 
-
-<div class="warning-banner warning-static-banner">
+<div id="exceptions" class="warning-banner warning-static-banner">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text">
-    Exceptions
+  <span class="text-with-link">
+  <span class="text">Exceptions</span>
+  <a class="anchor-link" href="#exceptions" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
   </span>
 </div>
 <div class="warning-static-content">
-<p>Some tables in this release do not follow the standard naming convention precisely, which will be improved in future releases. Notable exceptions include tabulated data derived from file-based sources, including <a href="../../instruments/#mri">MRI & MRS</a> and <a href="../../instruments/#eeg">EEG</a>. However, they are clearly associated with their respective domains (e.g., MRI, EEG) and pertain exclusively to the Child.</p>
+<p>Some tables in this release do not follow the standard naming convention precisely, which will be improved in future releases. Notable exceptions include:<br>
+<ul>
+<li><strong><a href="../../instruments/#mri">MRI & MRS</a> and <a href="../../instruments/#eeg">EEG</a></strong> tabulated data derived from file-based sources. These are clearly associated with their respective domains (e.g., MRI, EEG) and pertain exclusively to the Child.</li>
+<li><strong>Derived tables</strong>: including Basic Demographics (<code>sed_basic_demographics</code>, containing global, static variables) and Visit Information (<code>par_visit_data</code>, containing dynamic/longitudinal visit-level data) - <a href="../../instruments/#demo">see details</a>.</li>
 </div>
 
 ### Single vs Double Underscores 
