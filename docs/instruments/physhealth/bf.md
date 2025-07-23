@@ -39,6 +39,6 @@
 
 ## Instrument Details
 
-Breast Feeding History is a nutrition construct that measures initiation, exclusivity, and cessation of breast milk feedings.
+Breast Feeding History is a nutrition construct that measures initiation, exclusivity, and cessation of breast milk feedings. Note that the current data release only includes one item from this questionnaire: *history (ever/never) of breastfeeding*.
 
 
