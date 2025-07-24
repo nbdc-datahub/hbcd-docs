@@ -14,17 +14,17 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
 <tr>
 <td><strong><a href="../phenotypes"><b>Tabulated Data</b></a></strong></td>
 <td><code>rawdata/phenotype/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Tabulated demographics and visit information, toxicology, behavior, and tabulated data associated with MRI, spectroscopy, EEG, and <a href="../../instruments/sensors/wearsensors">wearable sensor</a> recordings</td>
+<td style="word-wrap: break-word; white-space: normal;">Instrument data in tabulated format, including demographics and visit information, toxicology, behavior, and tabulated data associated with MRI, spectroscopy, EEG, and <a href="../../instruments/sensors/wearsensors">wearable sensor</a> recordings (derived from the file-based data)</td>
 </tr>
 <tr>
 <td><strong><a href="../rawbids"><b>Raw File-based Data</b></a></strong></td>
 <td><code>rawdata/sub-&lt;ID&gt;/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">BIDS-formatted raw data for MRI, MRS, EEG, and motion/accelerometry  </td>
+<td style="word-wrap: break-word; white-space: normal;">BIDS-formatted raw data of varied formats for MRI, MRS, EEG, and motion/accelerometry</td>
 </tr>
 <tr>
 <td><strong><a href="../derivatives"><b>Processed File-based Data</b></a></strong></td>
 <td><code>derivatives/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Pre-processed MRI, MRS, EEG, and motion/accelerometry data derived from processing pipelines</td>
+<td style="word-wrap: break-word; white-space: normal;">Pre-processed MRI, MRS, EEG, and motion/accelerometry data of varied formats derived from processing pipelines</td>
 </tr>
 </tbody>
 </table>
