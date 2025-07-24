@@ -12,10 +12,11 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 <img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="80%" height="auto" class="center">
 
-HBCD Study data includes both **tabulated data** and **file-based data** (see [overview of data structure](../datacuration/overview.md)):
+HBCD Study data includes both <span class="tooltip">tabulated<span class="tooltiptext">instrument data<br>(tabulated format)</span></span>
+ and <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data - see [overview of data structure](../datacuration/overview.md):
 
 - **Tabulated data** are in table format and include behavior, demographics, visit data, toxicology results, and tabulated data associated with brain imaging and other file-based data ([see details](../datacuration/phenotypes.md)). 
-- **File-based data** are in BIDS format and include both <span><i class="fas fa-hammer"></i> <b>Raw BIDS</b></span> ([details](../datacuration/rawbids.md)) and processed <span><i class="fas fa-cog"></i> <b>Derivatives</b></span> ([details](../datacuration/derivatives.md)) for MRI, MRS, EEG, and motion/accelerometry. 
+- **File-based data** include both <span><i class="fas fa-hammer"></i> <b>Raw BIDS</b></span> ([details](../datacuration/rawbids.md)) and processed <span><i class="fas fa-cog"></i> <b>Derivatives</b></span> ([details](../datacuration/derivatives.md)) for MRI/MRS, EEG, and motion/accelerometry (in varied modality-specific formats).
 
 Expand each section below to see a list of study instruments associated with each domain included in Release 1.0, including the table names for **tabulated data** and links to information for associated **file-based data** where relevant.
 
@@ -188,7 +189,7 @@ Expand each section below to see a list of study instruments associated with eac
       <th style="width: 30%; text-align: center;">Name of Instrument</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
-      <th style="width: 20%; text-align: center;">File-Based Data<br>
+      <th style="width: 20%; text-align: center;"><span class="tooltip tooltip-left">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
           <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
           <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
     </tr>
@@ -495,7 +496,7 @@ Expand each section below to see a list of study instruments associated with eac
   <thead>
     <tr>
       <th style="width: 10%; text-align: center;">Name</th>
-      <th style="width: 30%; text-align: center;">File-Based Data<br>
+      <th style="width: 30%; text-align: center;"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
       <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
       <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
       <th style="width: 60%; text-align: center;">Table Name(s)</th>
@@ -620,7 +621,7 @@ Expand each section below to see a list of study instruments associated with eac
   <thead>
     <tr>
       <th style="width: 25%; text-align: center;">Task</th>
-      <th style="width: 25%; text-align: center;">File-Based Data<br>
+      <th style="width: 25%; text-align: center;"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
         <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
         <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
       <th style="width: 60%; text-align: center;">Table Name</th>

@@ -20,11 +20,12 @@
     position: absolute;
     transition: opacity 0.3s;
     opacity: 0;
-    z-index: 10;
+    z-index: 1000; /* Appear above everything else */
     white-space: normal;
     word-wrap: break-word;
     max-width: 90vw; /* Prevents the tooltip from exceeding the viewport width */
     font-size: 12px;
+    line-height: 1.2;
     
     /* Default tooltip appears above */
     bottom: 100%; /* Positions above */
@@ -85,3 +86,20 @@
     white-space: normal;      /* Allow wrapping */
     word-wrap: break-word;    /* Ensure long words wrap */
 }
+
+/* Position the tooltip above the element */
+.tooltip-top .tooltiptext {
+    bottom: 100%;              /* Place directly above the element */
+    left: 50%;                 /* Center horizontally */
+    transform: translateX(-50%);
+    margin-bottom: 5px;        /* Add spacing between element and tooltip */
+
+    top: auto;                 /* Ensure no conflict with vertical position */
+    right: auto;               /* Ensure no conflict with horizontal position */
+
+    width: auto;               /* Allow width to expand as needed */
+    max-width: 90vw;           /* Keep it responsive */
+    white-space: normal;       /* Allow wrapping */
+    word-wrap: break-word;     /* Ensure long words wrap */
+}
+

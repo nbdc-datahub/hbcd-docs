@@ -51,7 +51,7 @@ In addition, Release 2.0 will include MRI scanner information for all scanners u
   * `ScannerSofwareVersion`
   * `ScannerSerialNumber` (Used to differentiate different scanners at the same site)
 
-Until then, complete scanner metadata is available in the sidecar `.json` files that accompany the [raw file-based image data](../datacuration/rawbids.md). For example, metadata for a T1-weighted scan is located here:
+Until then, complete scanner metadata is available in the sidecar `.json` files that accompany the raw <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> image data ([see details](../datacuration/rawbids.md)). For example, metadata for a T1-weighted scan is located here:
 
 <pre class="folder-tree">
 hbcd/
@@ -119,7 +119,7 @@ hbcd/
 ### Improvements to Existing Data
 
 #### Enhanced Medication Classification for Pregnancy & Exposure Data  
-The interim release will refine medication classifications in the [Pregnancy & Exposure, Including Substance Use](../instruments/index.md#pregexp) domain by categorizing them into more detailed components based on RxNorm IDs. These enhancements will improve clarity and enable more granular analyses. Additional columns in the tabulated data will specify:
+The interim release will refine medication classifications in the [Pregnancy & Exposure, Including Substance Use](../instruments/index.md#pregexp) domain by categorizing them into more detailed components based on RxNorm IDs. These enhancements will improve clarity and enable more granular analyses. Additional columns in the <span class="tooltip">tabulated data<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> will specify:
 
 - Brand Name
 - Ingredient
