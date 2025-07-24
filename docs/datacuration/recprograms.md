@@ -2,7 +2,7 @@
 
 ## Tabulated Data
 <i class="fas fa-database"></i> **NBDCtools** [COMING SOON]   
-This R package can be used to parse the columns or tables you want to use as a data frame in R. The package will automatically determine the appropriate file to pull from and how to format the data based on the data dictionary. This allows for easy manipulation and analysis of the data without having to manually parse the files or worry about formatting issues.   
+For <span class="tooltip">tabulated data<span class="tooltiptext">instrument data<br>(tabulated format)</span></span>, this R package can be used to parse the columns or tables you want to use as a data frame in R. The package will automatically determine the appropriate file to pull from and how to format the data based on the data dictionary. This allows for easy manipulation and analysis of the data without having to manually parse the files or worry about formatting issues.   
 [Download page for NBDCtools <i class="fa fa-download"></i>]() 
 
 ## Brain Imaging Data
