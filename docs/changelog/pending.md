@@ -119,7 +119,7 @@ hbcd/
 ### Improvements to Existing Data
 
 #### Enhanced Medication Classification for Pregnancy & Exposure Data  
-The interim release will refine medication classifications in the [Pregnancy & Exposure, Including Substance Use](../instruments/index.md#pregexp) domain by categorizing them into more detailed components based on RxNorm IDs. These enhancements will improve clarity and enable more granular analyses. Additional columns in the <span class="tooltip">tabulated data<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> will specify:
+The interim release will refine medication classifications in the [Pregnancy & Exposure, Including Substance Use](../instruments/index.md#pregexp) domain by categorizing them into more detailed components based on RxNorm IDs. These enhancements will improve clarity and enable more granular analyses. Additional columns in the <span class="tooltip">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> will specify:
 
 - Brand Name
 - Ingredient

@@ -1,6 +1,6 @@
 # Wearable Sensors
 
-Motion/accelerometry data collected from wearable infant leg sensors is provided as <span class="tooltip">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> (and does not have any associated <span class="tooltip">tabulated data<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> - see more information on tabulated vs. file-based data [here](../../datacuration/overview.md)):
+Motion/accelerometry data collected from wearable infant leg sensors is provided as <span class="tooltip">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> (and does not have any associated <span class="tooltip">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> - see more information on tabulated vs. file-based data [here](../../datacuration/overview.md)):
 
 - <i class="fa fa-hammer"></i><strong> Raw BIDS</strong> under subject- and session-specific <code>motion/</code> folders - <a href="../../../datacuration/rawbids/#motion">see details</a>
 - <i class="fas fa-cog"></i><strong> Derivatives</strong> produced by the HBCD-Motion pipeline under <code>hbcd_motion/</code> - <a href="../../../datacuration/derivatives/#hbcd-motion-hbcd_motion">see details</a>
