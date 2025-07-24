@@ -28,6 +28,7 @@
         "data release"
     ],
     "license": "Apache-2.0",
-    "upload_type": "software",
+    "upload_type": "publication",
+    "publication_type": "other",
     "language": "eng"
 }
