@@ -1,0 +1,33 @@
+{
+    "creators": [
+        {
+            "name": "HBCD Consortium",
+            "type": "Organizational"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Moore, Lucille A.",
+            "orcid": "https://orcid.org/0000-0002-7665-2713",
+            "affiliation": "Masonic Institute for the Developing Brain, UMN",
+            "type": "DataCurator"
+        }
+    ],
+    "title": "HBCD Data Release Docs",
+    "description": "Docs website for HEALthy Brain and Child Development (HBCD) Study Data Release documentation: https://docs.hbcdstudy.org.",
+    "access_right": "open",
+    "related_identifiers": [
+        {
+            "identifier": "https://docs.hbcdstudy.org",
+            "relation": "isPublishedIn",
+            "resource_type": "other"
+        }
+    ],
+    "keywords": [
+        "HBCD",
+        "data release"
+    ],
+    "license": "Apache-2.0",
+    "upload_type": "software",
+    "language": "eng"
+}
