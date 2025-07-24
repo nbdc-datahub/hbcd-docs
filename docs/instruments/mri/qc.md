@@ -630,7 +630,7 @@ Swipes display GIFs of full-resolution T2w images as a grayscale background, wit
 </div>
 </p>
 
-BrainSwipes QC results are provided as tabulated instrument data in the `rawdata/phenotype/` folder of the data release (see details [here](../../datacuration/phenotypes.md)), including `img_brainswipes_xcpd-T2w` and `img_brainswipes_xcpd-bold` instrument files. These files contain the BrainSwipes results reporting the average QC score and number of reviewers for each individual visual report. 
+BrainSwipes QC results are provided as <span class="tooltip">tabulated<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> instrument data in the `rawdata/phenotype/` folder of the data release (see details [here](../../datacuration/phenotypes.md)), including `img_brainswipes_xcpd-T2w` and `img_brainswipes_xcpd-bold` instrument files. These files contain the BrainSwipes results reporting the average QC score and number of reviewers for each individual visual report. 
 
 The results are also combined for each subject modality to report the overall average QC score and average number of reviewers across visual reports per run. In other words, a single average QC score is provided for each session-level T2w and session-level BOLD run. Below we provide a Python helper function to read a BrainSwipes TSV file into a Pandas DataFrame and filter out all subject runs with an average overall QC score of greater than or equal to a threshold specified by the user:
 

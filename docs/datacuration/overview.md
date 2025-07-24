@@ -24,7 +24,7 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
 <tr>
 <td><strong><a href="../derivatives"><b>Processed File-based Data</b></a></strong></td>
 <td><code>derivatives/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Pre-processed MRI, MRS, EEG, and motion/accelerometry data of varied formats derived from processing pipelines</td>
+<td style="word-wrap: break-word; white-space: normal;">Processed MRI, MRS, EEG, and motion/accelerometry derivatives of varied formats derived from processing pipelines</td>
 </tr>
 </tbody>
 </table>

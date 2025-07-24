@@ -7,7 +7,7 @@ EEG tasks are acquired during visits V03, V04, and V06. For full details on the 
 
 ## Release Data
 
-EEG data in the release includes **tabulated data** (see table names listed [here](../index.md#eeg)) and the following **file-based data**:
+EEG data in the release includes <span class="tooltip">tabulated data<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> (see table names listed [here](../index.md#eeg)) and the following <span class="tooltip">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span>:
 
 - <i class="fa fa-hammer"></i><strong> Raw BIDS</strong> under subject- and session-specific <code>eeg/</code> folders - <a href="../../../datacuration/rawbids/#eeg">see details</a>
 - <i class="fas fa-cog"></i><strong> Derivatives</strong> produced by the HBCD-MADE pipeline under <code>made/</code> - <a href="../../../datacuration/derivatives/#hbcd-made-made">see details</a>
@@ -55,7 +55,7 @@ During quality control, a frequently observed issue across all tasks was the irr
 <p>
 <div id="demo-fyi" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text">EEG data with a capping quality rating of "Not usable" are not included in the current release. Capping ratings can be found in the tabulated QC file for each task (<code>eeg_qc_task-&lt;TASK&gt;</code>).</span>
+    <span class="text">EEG data with a capping quality rating of "Not usable" are not included in the current release. Capping ratings can be found in the <span class="tooltip">tabulated<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> QC file for each task (<code>eeg_qc_task-&lt;TASK&gt;</code>).</span>
 </div>
 </p>
 
