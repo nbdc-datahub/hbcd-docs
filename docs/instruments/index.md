@@ -12,7 +12,7 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 <img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="80%" height="auto" class="center">
 
-HBCD Study data includes both <span class="tooltip">tabulated<span class="tooltiptext">instrument data<br>(tabulated format)</span></span>
+HBCD Study data includes both <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span>
  and <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data - see [overview of data structure](../datacuration/overview.md):
 
 - **Tabulated data** are in table format and include behavior, demographics, visit data, toxicology results, and tabulated data associated with brain imaging and other file-based data ([see details](../datacuration/phenotypes.md)). 

@@ -14,7 +14,7 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
 <tr>
 <td><strong><a href="../phenotypes"><b>Tabulated Data</b></a></strong></td>
 <td><code>rawdata/phenotype/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Instrument data in tabulated format, including demographics and visit information, toxicology, behavior, and tabulated data associated with MRI, spectroscopy, EEG, and <a href="../../instruments/sensors/wearsensors">wearable sensor</a> recordings (derived from the file-based data)</td>
+<td style="word-wrap: break-word; white-space: normal;">Instrument data in tabulated format, including demographics and visit information, toxicology, behavior, and tabulated data derived from file-based data, including MRI, spectroscopy, EEG, and <a href="../../instruments/sensors/wearsensors">wearable sensor</a></td>
 </tr>
 <tr>
 <td><strong><a href="../rawbids"><b>Raw File-based Data</b></a></strong></td>

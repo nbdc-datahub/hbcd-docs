@@ -2,12 +2,21 @@
 
 ## NBDC Data Dictionary
 
-HBCD data is organized into tables, each of which contains a set of variables. The metadata for studies released via the NBDC Data Hub consists of:
+<span class="tooltip">Tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> HBCD data is organized into a standardized table format, each of which contains a set of variables. The metadata for studies released via the NBDC Data Hub consists of:
 
- - **Data dictionary**: Provides detailed information about the variables in the <span class="tooltip">tabulated<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> data resource, including the variable name, label, description, data type, and other relevant information. 
- - **Levels table**: Provides information about the levels of categorical variables in the <span class="tooltip">tabulated<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> data (label, order, etc.)
+ - **Data dictionary**: Provides detailed information about the variables in the tabulated data resource, including the variable name, label, description, data type, and other relevant information. 
+ - **Levels table**: Provides information about the levels of categorical variables in the tabulated format data (label, order, etc.)
 
-Below are the definitions for the columns in the data dictionary and levels table. Note that some columns also correspond to elements in the BIDS JSON files that accompany all <span class="tooltip">tabulated<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> data (hover over <i class="bi bi-filetype-json" style="font-size:18px; color:blue;"></i> icon for details in table below).
+Below are the definitions for the columns in the data dictionary and levels table. Note that some columns also correspond to elements in the BIDS JSON files that accompany all <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data (hover over <i class="bi bi-filetype-json" style="font-size:18px; color:blue;"></i> icon for details in table below).
+
+<p>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">
+    See <a href="../../../datacuration/overview/">here</a> for overview of tabulated vs file-based data.
+  </span>
+</div>
+</p>
 
 ### Data Dictionary & Levels Column Definitions
 
@@ -359,7 +368,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 
 ### Table Names
 
-A unified naming convention has been applied to most table names in the <span class="tooltip">tabulated<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> release data (see overview of tabulated vs. <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data [here](../datacuration/overview.md)). This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. The **standard table name format** is:
+A unified naming convention has been applied to most table names in the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> release data (see overview of tabulated vs. <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data [here](../datacuration/overview.md)). This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. The **standard table name format** is:
 
 <p style="font-size: 1.8em; font-weight: bold;" align="center">
 <code>domain_source_table</code>
@@ -466,7 +475,7 @@ A unified naming convention has been applied to most table names in the <span cl
 <div class="warning-static-content">
 <p>Some tables in this release do not follow the standard naming convention precisely, which will be improved in future releases. Notable exceptions include:<br>
 <ul>
-<li><strong><a href="../../instruments/#mri">MRI & MRS</a> and <a href="../../instruments/#eeg">EEG</a></strong> <span class="tooltip">tabulated<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> data derived from <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> sources. These are clearly associated with their respective domains (e.g., MRI, EEG) and pertain exclusively to the Child.</li>
+<li><strong><a href="../../instruments/#mri">MRI & MRS</a> and <a href="../../instruments/#eeg">EEG</a></strong> <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data derived from <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> sources. These are clearly associated with their respective domains (e.g., MRI, EEG) and pertain exclusively to the Child.</li>
 <li><strong>Derived tables</strong>: including Basic Demographics (<code>sed_basic_demographics</code>, containing global, static variables) and Visit Information (<code>par_visit_data</code>, containing dynamic/longitudinal visit-level data) - <a href="../../instruments/#demo">see details</a>.</li>
 </div>
 

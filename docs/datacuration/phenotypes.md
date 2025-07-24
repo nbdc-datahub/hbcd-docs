@@ -40,7 +40,7 @@ Tabulated data lists information for all participants in both plain text (`.tsv`
 </p>
 
 ## File Types
-Tabulated data is available in both tab-separated values (TSV) and [Apache Parquet](https://parquet.apache.org/) formats. Both formats are provided to support a range of tools and user preferences. However, **using Parquet for NBDC <span class="tooltip">tabulated<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> data ensures correctly specified data types, faster loading speeds, and lower memory usage.**
+Tabulated data is available in both tab-separated values (TSV) and [Apache Parquet](https://parquet.apache.org/) formats. Both formats are provided to support a range of tools and user preferences. However, **using Parquet for NBDC <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data ensures correctly specified data types, faster loading speeds, and lower memory usage.**
 
 ### Plain Text vs. Parquet Files
 #### Plain Text (TSV/CSV)
@@ -106,7 +106,7 @@ In HBCD, some participant responses like “Don’t know” or “Decline to ans
 #### Working with Shadow Matrices in R and Python 
 Here we describe how researchers can use shadow matrix files in combination with the data files to, for example, explore and understand patterns of missing data or integrate missingness reasons (e.g., `Decline to Answer`, `Logic Skipped`, etc.) into your analysis. 
 
-For working in **R**, we recommend using the `NBDCtools` package ([see details](recprograms.md#tabulated-data)). For **Python**, the following helper function joins the <span class="tooltip">tabulated<span class="tooltiptext">instrument data<br>(tabulated format)</span></span> data file with its corresponding shadow matrix file so data columns are combined with columns providing the reasons for missingness in the same data frame. This function works with both TSV and CSV file formats, but can be updated for Parquet files using the loading logic shown under the section on Parquet files above ([here](#parquet)).
+For working in **R**, we recommend using the `NBDCtools` package ([see details](recprograms.md#tabulated-data)). For **Python**, the following helper function joins the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data file with its corresponding shadow matrix file so data columns are combined with columns providing the reasons for missingness in the same data frame. This function works with both TSV and CSV file formats, but can be updated for Parquet files using the loading logic shown under the section on Parquet files above ([here](#parquet)).
 
 ##### 🐍 Python Helper Function
 ```
