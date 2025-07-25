@@ -5,17 +5,20 @@
 /* black/gray: #6b6b6b */ 
 
 /* styling for text with hyperlinks (not TOC) */
-.wy-nav-content a {
-  color: #0066cc;                /* Use a distinguishable color */
-  font-weight: 500;              /* Optional: Slightly bolder text */
-  text-decoration: underline dotted; /* Subtle dotted underline */
-  text-underline-offset: 2px;    /* Optional: Adjust distance of underline from text */
+.rst-content a:not(.rst-footer-buttons a) {
+  color: #0066cc;
+  font-weight: 500;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
   text-decoration-thickness: thin; 
   text-decoration-thickness: 0.3px; 
+  background-color: rgba(0, 102, 204, 0.031); /* Add slight color box around text with embedded links too */
+  padding: 0 2px;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
 }
-
-/* Change appearance when hovering */
-a:hover {
+.rst-content a:hover {
+  background-color: rgba(0, 102, 204, 0.15);
   text-decoration: underline;
 }
 

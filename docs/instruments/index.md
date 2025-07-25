@@ -25,6 +25,18 @@ Expand each section below to see a list of study instruments associated with eac
 Click a domain heading below to expand and view the instruments included in the current data release.   
 Each instrument name links to a dedicated page with detailed documentation for that measure.
 
+<button id="toggle-all-btn" style="
+  margin: 10px 0;
+  padding: 6px 12px;
+  font-size: 0.9em;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+">
+  Expand All Sections ↕️
+</button>
+
 ### Demographics & Visit Information
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -262,8 +274,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </tbody>
   </table>
 </div>
-
-
 
 <div id="pregexp" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -671,9 +681,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </table>
   </div>
 
-
-
-  <p>
+<p>
 <div class="notification-banner static-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
   <span class="text">
