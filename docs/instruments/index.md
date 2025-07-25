@@ -38,6 +38,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
 </button>
 
 ### Demographics & Visit Information
+
+<i class="fa-solid fa-circle-info"></i>
+<i style="font-weight: normal;"> Click sections to expand and view the associated domain instruments/measures.</i>
+
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Basic Demographics & Visit Info</span>
@@ -75,6 +79,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
 </div>
 
 ### Behavior, Biology, & Environment
+
+<i class="fa-solid fa-circle-info"></i>
+<i style="font-weight: normal;"> Click sections to expand and view the associated domain instruments/measures.</i>
+
 <div id="bcgi" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Behavior & Caregiver-Child Interaction</span>
@@ -495,6 +503,9 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </div>
 
 ### Brain Activity - MRI & EEG
+
+<i class="fa-solid fa-circle-info"></i>
+<i style="font-weight: normal;"> Click sections to expand and view the associated domain instruments/measures.</i>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">

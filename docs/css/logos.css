@@ -50,3 +50,11 @@
     max-height: 40px;
   }
 }
+
+/* Prevent text styling for embedded links from being applied to logos */
+.logo-row a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+}
