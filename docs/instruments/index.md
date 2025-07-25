@@ -20,6 +20,11 @@ HBCD Study data includes both <span class="tooltip">tabulated<span class="toolti
 
 Expand each section below to see a list of study instruments associated with each domain included in Release 1.0, including the table names for **tabulated data** and links to information for associated **file-based data** where relevant.
 
+## Instruments by Domain
+
+Click a domain heading below to expand and view the instruments included in the current data release.   
+Each instrument name links to a dedicated page with detailed documentation for that measure.
+
 ### Demographics & Visit Information
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
