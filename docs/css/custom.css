@@ -4,11 +4,16 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
-/* styling for text with hyperlinks */
-a {
-  color: #0066cc;               /* Use a distinguishable color */
-  font-weight: 600;             /* Optional: Slightly bolder text */
+/* styling for text with hyperlinks (not TOC) */
+.wy-nav-content a {
+  color: #0066cc;                /* Use a distinguishable color */
+  font-weight: 500;              /* Optional: Slightly bolder text */
+  text-decoration: underline dotted; /* Subtle dotted underline */
+  text-underline-offset: 2px;    /* Optional: Adjust distance of underline from text */
+  text-decoration-thickness: thin; 
+  text-decoration-thickness: 0.3px; 
 }
+
 /* Change appearance when hovering */
 a:hover {
   text-decoration: underline;
