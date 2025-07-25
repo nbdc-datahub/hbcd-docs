@@ -500,11 +500,11 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 10%; text-align: center;">Name</th>
+      <th style="width: 20%; text-align: center;">Name</th>
       <th style="width: 30%; text-align: center;"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
       <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
       <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
-      <th style="width: 60%; text-align: center;">Table Name(s)</th>
+      <th style="width: 70%; text-align: center;">Table Name(s)</th>
     </tr>
   </thead>
   <tbody>
@@ -523,11 +523,11 @@ Each instrument name links to a dedicated page with detailed documentation for t
       </td>
       <td><code>img_brainswipes_xcpd-T2w</td>
     </tr>
-    <tr><td><code>img_mriqc_&lt;T1w|T2w&gt;</code></td></tr>
-    <tr><td><code>img_bibsnet_space-&lt;T1w|T2w&gt;_desc-aseg_volumes</code></td></tr>
-    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-A&gt;</span>_stat-mean_desc-curv_morph</code></td></tr>
-    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-A&gt;</span>_stat-mean_desc-sulc_morph</code></td></tr>
-    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-A&gt;</span>_stat-mean_desc-thickness_morph</code></td></tr>
+    <tr><td><code>img_mriqc_<span class="blue-text">&lt;T1w|T2w&gt;</span></code></td></tr>
+    <tr><td><code>img_bibsnet_space-<span class="blue-text">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes</code></td></tr>
+    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="tooltip">⁠<span class="blue-text">&lt;SEG-A&gt;</span><span class="tooltiptext">4S{1-10}00Parcels, Glasser, Gordon, MIDB, MyersLabonte</span></span>_stat-mean_desc-curv_morph</code></td></tr>
+    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="tooltip">⁠<span class="blue-text">&lt;SEG-A&gt;</span><span class="tooltiptext">4S{1-10}00Parcels, Glasser, Gordon, MIDB, MyersLabonte</span></span>_stat-mean_desc-sulc_morph</code></td></tr>
+    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="tooltip">⁠<span class="blue-text">&lt;SEG-A&gt;</span><span class="tooltiptext">4S{1-10}00Parcels, Glasser, Gordon, MIDB, MyersLabonte</span></span>_stat-mean_desc-thickness_morph</code></td></tr>
 <!-- fMRI -->
     <tr>
       <td rowspan="5"><span class="tooltip tooltip-right">
@@ -544,9 +544,9 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td><code>img_brainswipes_xcpd-bold</td>
     </tr>
     <tr><td><code>img_mriqc_bold</td></tr>
-    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-F&gt;</span>_stat-alff_bold</code></td></tr>
-    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-F&gt;</span>_stat-coverage_bold</code></td></tr>
-    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-F&gt;</span>_stat-reho_bold</code></td></tr>
+    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="tooltip">⁠<span class="blue-text">&lt;SEG-F&gt;</span><span class="tooltiptext">4S{1-10}00Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian</span></span>_stat-alff_bold</code></td></tr>
+    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="tooltip">⁠<span class="blue-text">&lt;SEG-F&gt;</span><span class="tooltiptext">4S{1-10}00Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian</span></span>_stat-coverage_bold</code></td></tr>
+    <tr><td><code>img_xcpd_space-fsLR_seg-<span class="tooltip">⁠<span class="blue-text">&lt;SEG-F&gt;</span><span class="tooltiptext">4S{1-10}00Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian</span></span>_stat-reho_bold</code></td></tr>
 <!-- dMRI -->
     <tr>
     <td><span class="tooltip tooltip-right">
@@ -587,26 +587,16 @@ Each instrument name links to a dedicated page with detailed documentation for t
         <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#mr-spectroscopy-mrs"><code>mrs/</code></a><br>
         <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#osprey-bids-osprey">OSPREY-BIDS</a>
       </td>
-      <td><code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code></td>
-    </tr>
-    <tr><td><code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code></td></tr>
-    <tr><td><code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_CSFWaterScaled_Voxel_1_Basis_1</code></td></tr>
-    <tr><td><code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_TissCorrWaterScaled_Voxel_1_Basis_1</code></td></tr>
-    <tr><td><code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_rawWaterScaled_Voxel_1_Basis_1</code></td></tr>
-    <tr><td><code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_amplMets_Voxel_1_Basis_1</code></td></tr>
-    <tr><td><code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_tCr_Voxel_1_Basis_1</code></td></tr>
+      <td><code>img_osprey_<span class="tooltip">⁠<span class="blue-text">&lt;PROC&gt;</span><span class="tooltiptext">HERCULES_diff1, HERCULES_diff2, HERCULES_sum,<br>unedited_A</span></span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code></td></tr>
+    <tr><td><code>img_osprey_<span class="tooltip">⁠<span class="blue-text">&lt;PROC&gt;</span><span class="tooltiptext">HERCULES_diff1, HERCULES_diff2, HERCULES_sum,<br>unedited_A</span></span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code></td></tr>
+    <tr><td><code>img_osprey_<span class="tooltip">⁠<span class="blue-text">&lt;PROC&gt;</span><span class="tooltiptext">HERCULES_diff1, HERCULES_diff2, HERCULES_sum,<br>unedited_A</span></span>_CSFWaterScaled_Voxel_1_Basis_1</code></td></tr>
+    <tr><td><code>img_osprey_<span class="tooltip">⁠<span class="blue-text">&lt;PROC&gt;</span><span class="tooltiptext">HERCULES_diff1, HERCULES_diff2, HERCULES_sum,<br>unedited_A</span></span>_TissCorrWaterScaled_Voxel_1_Basis_1</code></td></tr>
+    <tr><td><code>img_osprey_<span class="tooltip">⁠<span class="blue-text">&lt;PROC&gt;</span><span class="tooltiptext">HERCULES_diff1, HERCULES_diff2, HERCULES_sum,<br>unedited_A</span></span>_rawWaterScaled_Voxel_1_Basis_1</code></td></tr>
+    <tr><td><code>img_osprey_<span class="tooltip">⁠<span class="blue-text">&lt;PROC&gt;</span><span class="tooltiptext">HERCULES_diff1, HERCULES_diff2, HERCULES_sum,<br>unedited_A</span></span>_amplMets_Voxel_1_Basis_1</code></td></tr>
+    <tr><td><code>img_osprey_<span class="tooltip">⁠<span class="blue-text">&lt;PROC&gt;</span><span class="tooltiptext">HERCULES_diff1, HERCULES_diff2, HERCULES_sum,<br>unedited_A</span></span>_tCr_Voxel_1_Basis_1</code></td></tr>
     <tr><td><code>img_osprey_HERCULES_qm_processed_spectra</code></td></tr>
     <tr><td><code>img_osprey_unedited_qm_processed_spectra</code></td></tr>
   </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3" style="word-wrap: break-word; white-space: normal; padding: 10px;">
-          <li><b class="blue-text">&lt;SEG-A&gt;</b> label values: 4S&lt;1-10&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte</li>
-          <li><b class="blue-text">&lt;SEG-F&gt;</b> label values: 4S&lt;1-10&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian</li>
-          <li><b class="blue-text">&lt;PROC&gt;</b> label values: HERCULES_&lt;diff1|diff2|sum&gt;, unedited_A</li>
-      </td>
-    </tr>
-  </tfoot>
 </table>
 </div>
 
