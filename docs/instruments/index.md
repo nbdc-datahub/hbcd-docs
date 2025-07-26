@@ -57,8 +57,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <tr>
       <th style="width: 20%; text-align: center;">Name of Instrument</th>
       <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
-      <th style="width: 40%; text-align: center;">Construct</th>
-      <th style="width: 20%; text-align: center;">Table Name</th>
+      <th style="width: 30%; text-align: center;">Construct</th>
+      <th style="width: 40%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
@@ -66,13 +66,13 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td style="word-wrap: break-word; white-space: normal;"><a href="demo/basicdemo" target="_blank">Basic Demographics information</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Basic Demographics</td>
     <td style="word-wrap: break-word; white-space: normal;">Demographics data derived from multiple sources</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>sed_basic_demographics</code></td>
+    <td style="word-wrap: break-word; white-space: normal;"><img src="../../images/deap_icon.svg" alt="deap logo" width="18"> <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><code>sed_basic_demographics</code></a></td>
   </tr>
     <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Visit Information</td>
     <td style="word-wrap: break-word; white-space: normal;">Participant visit information</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data</code></td>
+    <td style="word-wrap: break-word; white-space: normal;"><img src="../../images/deap_icon.svg" alt="deap logo" width="18"> <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Visit%20Level%20Data%22%5D%5D#/my-datasets/create-dataset"><code>par_visit_data</code></a></td>
   </tr>
   </tbody>
   </table>
