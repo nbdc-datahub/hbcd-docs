@@ -680,7 +680,7 @@ sub-<span class="label">&lt;label&gt;</span>.html
 <details open>
 <summary>Label Values Legend</summary>
 <p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
-  <b style="color: #0077cc;">SEG-A</b>: 4S&lt;1-10&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte <br>
-  <b style="color: #0077cc;">SEG-F</b>: 4S&lt;1-10&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian
+  <b style="color: #0077cc;">SEG-A</b>: 4S&lt;1-10&gt;00Parcels, Glasser, Gordon, MIDB, MyersLabonte <br>
+  <b style="color: #0077cc;">SEG-F</b>: 4S&lt;1-10&gt;00Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian
 </p>
 </details>
