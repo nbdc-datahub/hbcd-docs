@@ -57,8 +57,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <tr>
       <th style="width: 20%; text-align: center;">Name of Instrument</th>
       <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
-      <th style="width: 40%; text-align: center;">Construct</th>
-      <th style="width: 20%; text-align: center;">Table Name</th>
+      <th style="width: 30%; text-align: center;">Construct</th>
+      <th style="width: 40%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>

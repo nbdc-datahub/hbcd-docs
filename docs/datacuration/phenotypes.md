@@ -1,6 +1,6 @@
 # Tabulated Data
 
-Tabulated data, located under `rawdata/phenotype/`, refers to **instrument data in tabulated format** for the measures listed under the documentation on [study instruments](../instruments/index.md). This includes behavior, demographics, visit data, toxicology results, and tabulated data associated with brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data:
+Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format** curated to follow a standardized format linked by participant ID and visit number. This includes behavior, demographics, visit data, toxicology results, and tabulated data derived from brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data (see full list of measures included in the release under [study instruments](../instruments/index.md)). Accompanying metadata explains each variable and table to support data use.
 
 <pre class="folder-tree">
 hbcd/
