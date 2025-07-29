@@ -51,3 +51,13 @@
   background: none;
   border: none;
 }
+
+/* Separate class for hover logic for general purpose (eg the study instruments overview tables) */
+.logo-hover {
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+.logo-hover:hover {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(95%) saturate(3000%) hue-rotate(200deg) brightness(95%) contrast(90%);
+  transform: scale(1.05);
+  cursor: pointer;
+}

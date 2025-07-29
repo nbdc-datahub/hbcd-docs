@@ -59,6 +59,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 40%; text-align: center;">Table Name</th>
+      <th style="width: 5%; text-align: center; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
     </tr>
   </thead>
   <tbody>
@@ -67,12 +68,19 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td style="word-wrap: break-word; white-space: normal;">Basic Demographics</td>
     <td style="word-wrap: break-word; white-space: normal;">Demographics data derived from multiple sources</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>sed_basic_demographics</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">
+        <a href="https://abcd-eks.lassoinformatics.com/"> <img src="../images/lasso_icon.png" alt="Lasso" width="18" class="logo-hover"></a>
+        <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"> <img src="../images/deap_icon.svg" alt="DEAP" width="18" class="logo-hover"></a>
+    </td>
   </tr>
     <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Visit Information</td>
     <td style="word-wrap: break-word; white-space: normal;">Participant visit information</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">
+        <a href="https://abcd-eks.lassoinformatics.com/"> <img src="../images/lasso_icon.png" alt="Lasso" width="18" class="logo-hover"></a>
+        <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Visit%20Level%20Data%22%5D%5D#/my-datasets/create-dataset"> <img src="../images/deap_icon.svg" alt="DEAP" width="18" class="logo-hover"></a></td>
   </tr>
   </tbody>
   </table>
