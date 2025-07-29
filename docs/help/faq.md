@@ -91,16 +91,48 @@
 
 <div id="faq-protocol" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text-with-link">
+  <span class="text-with-link">
     <span class="text">Where can I find the protocol for the HBCD study?</span>
     <a class="anchor-link" href="#faq-protocol" title="Copy link">
-    <i class="fa-solid fa-link"></i>
+      <i class="fa-solid fa-link"></i>
     </a>
-    </span>
+  </span>
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>HBCD study protocols are available in the Scientist section of the main <a href="https://hbcdstudy.org/study-protocols/">HBCD Study website</a>. However, please note that we are generally unable to share the specific measures used outside of the study, as many are proprietary. General information about the questions asked and corresponding answer options can be explored via the Lasso Portal Query Tool and DEAP (<a href="../../access/download/#explore-hbcd-study-data">see details</a>). Additional details/resources are available on this site in documentation provided for each study instrument (<a href="../../instruments/">see details</a>). For further details on the protocol development, please refer to the <a href="https://www.sciencedirect.com/special-issue/10VNSS1BBLV">special issue of Developmental Cognitive Neuroscience</a> dedicated to the HBCD Study.</p>
+  <p>Refer to the resources below for protocol information. Note that specific measures for proprietary instruments are generally not available.</p>
+  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+    <thead class="sr-only">
+      <tr>
+        <th scope="col">Resource</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://hbcdstudy.org/study-protocols/">HBCD Study Protocols</a></td>
+        <td style="word-wrap: break-word; white-space: normal;">Available on the main HBCD Study site.</td>
+      </tr>
+      <tr>
+        <td><a href="../../access/download/#explore-hbcd-study-data">Lasso and DEAP Data Dictionary Explorers</a></td>
+        <td style="word-wrap: break-word; white-space: normal;">
+          Show survey questions and response options (see related <a href="../../changelog/knownissues/#instruction-metadata-caution-please-read-carefully">known issue</a>).
+        </td>
+      </tr>
+      <tr>
+        <td><a href="../../instruments/#instruments-by-domain">HBCD Study Instrument Documentation</a></td>
+        <td style="word-wrap: break-word; white-space: normal;">
+          Each instrument has a dedicated page on this site with links to source documentation and available surveys. Click instrument names in the domain tables to view their documentation pages.
+        </td>
+      </tr>
+      <tr>
+        <td><a href="https://www.sciencedirect.com/special-issue/10VNSS1BBLV">DCN Special Issue on HBCD</a></td>
+        <td style="word-wrap: break-word; white-space: normal;">
+          A collection of articles describing the HBCD study design and protocol development for specific measures.
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ## Tabulated Data
