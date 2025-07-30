@@ -57,9 +57,9 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <tr>
       <th style="width: 20%; text-align: center;">Name of Instrument</th>
       <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 40%; text-align: center;">Table Name</th>
-      <th style="width: 5%; text-align: center; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
+      <th style="width: 35%; text-align: center;">Construct</th>
+      <th style="width: 20%; text-align: center;">Table Name</th>
+      <th style="width: 5%; text-align: center;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
     </tr>
   </thead>
   <tbody>
@@ -68,9 +68,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td style="word-wrap: break-word; white-space: normal;">Basic Demographics</td>
     <td style="word-wrap: break-word; white-space: normal;">Demographics data derived from multiple sources</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>sed_basic_demographics</code></td>
-        <td style="word-wrap: break-word; white-space: normal;">
-        <a href="https://abcd-eks.lassoinformatics.com/"> <img src="../images/lasso_icon.png" alt="Lasso" width="18" class="logo-hover"></a>
-        <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"> <img src="../images/deap_icon.svg" alt="DEAP" width="18" class="logo-hover"></a>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+      <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
     </td>
   </tr>
     <tr>
@@ -78,9 +77,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td style="word-wrap: break-word; white-space: normal;">Visit Information</td>
     <td style="word-wrap: break-word; white-space: normal;">Participant visit information</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">
-        <a href="https://abcd-eks.lassoinformatics.com/"> <img src="../images/lasso_icon.png" alt="Lasso" width="18" class="logo-hover"></a>
-        <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Visit%20Level%20Data%22%5D%5D#/my-datasets/create-dataset"> <img src="../images/deap_icon.svg" alt="DEAP" width="18" class="logo-hover"></a></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+        <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Visit%20Level%20Data%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP"  class="logo-hover"></a></td>
   </tr>
   </tbody>
   </table>
@@ -108,6 +106,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <th style="width: 20%; text-align: center;">Acronym</th>
       <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 20%; text-align: center;">Table Name</th>
+      <th style="width: 5%; text-align: center;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
     </tr>
   </thead>
   <tbody>
@@ -116,18 +115,27 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td style="word-wrap: break-word; white-space: normal;">ecPROMIS</td>
     <td style="word-wrap: break-word; white-space: normal;">Relationships</td>
     <td><code>mh_cg_pms__cc__inf</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">IBQ-R Very Short Form + Behavior Inhibition</a></td>
     <td style="word-wrap: break-word; white-space: normal;">IBQ-R (VSF)+BI</td>
     <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
     <td><code>mh_cg_ibqr</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale, Version: Infancy (< 1 year)</a></td>
     <td style="word-wrap: break-word; white-space: normal;">MAPS-TL</td>
     <td style="word-wrap: break-word; white-space: normal;">Irritability</td>
     <td><code>mh_cg_mapdb__inf</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>
   </tbody>
   </table>
@@ -148,23 +156,30 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <thead>
     <tr>
       <th style="width: 20%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Short Name</th>
-      <th style="width: 40%; text-align: center;">Construct</th>
+      <th style="width: 5%; text-align: center;">Short Name</th>
+      <th style="width: 50%; text-align: center;">Construct</th>
       <th style="width: 20%; text-align: center;">Table Name</th>
+      <th style="width: 5%; text-align: center;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
     </tr>
   </thead>
   <tbody>
       <tr>
-      <td style="text-align: left;"><a href="biospec/nails" target="_blank">USDTL Nails Toxicology results</a></td>
-      <td style="text-align: left;">Nails</td>
-      <td style="text-align: left;">Toxicology Screen & Specimen Type</td>
-      <td style="text-align: left;"><code>bio_bm_biosample_nails_results</code><br><code>bio_bm_biosample_nails_type</code></td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="biospec/nails" target="_blank">USDTL Nails Toxicology results</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Nails</td>
+      <td style="word-wrap: break-word; white-space: normal;">Toxicology Screen & Specimen Type</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>bio_bm_biosample_nails_results</code><br><code>bio_bm_biosample_nails_type</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>
     <tr>
         <td style="text-align: left;"><a href="biospec/urine" target="_blank">USDTL Urine Toxicology results</a></td>
         <td style="text-align: left;">Urine</td>
         <td style="text-align: left;">Toxicology Screen</td>
         <td style="text-align: left;"><code>bio_bm_biosample_urine</code></td>
+        <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+              <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+        </td>
     </tr>
   </tbody>
   </table>
@@ -187,6 +202,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <th style="width: 10%; text-align: center;">Acronym</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 5%; text-align: center;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
     </tr>
   </thead>
   <tbody>
@@ -195,12 +211,18 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td style="word-wrap: break-word; white-space: normal;">MLDS</td>
       <td style="word-wrap: break-word; white-space: normal;">Multilingual exposure</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>ncl_ch_mlds</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="neurocog/spm2" target="_blank">Sensory Processing Measure – Infant/Toddler</a></td>
       <td style="word-wrap: break-word; white-space: normal;">SPM-2</td>
       <td style="word-wrap: break-word; white-space: normal;">Sensory processing</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>ncl_cg_spm2__inf</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>
   </tbody>
   </table>
