@@ -15,6 +15,7 @@ Instruction text in the form's metadata is extracted programmatically from the m
 
 
 ## Basic Demographics
+
 ##### ⚠️ Duplicate Options for 'Mother Race' Variable
 The variable 'Mother Race' (`sed_basic_demographics_screen_mother_race`) has duplicate options for the selection of 'Black African American' (option #3). This option is not used for data entry, and instead the 'Black_or African American' option (option #5) should be used. No other variables are affected by this.       
 
@@ -24,6 +25,12 @@ The variable 'Mother Race' (`sed_basic_demographics_screen_mother_race`) has dup
 The variable `sed_basic_demographics_screen_mother_race` has two levels to reflect Hawaiian race (`2` = `Hawaiian`; `7` = `Native Hawaiian or Other Pacific Islander`). `2` = `Hawaiian` was not a response option to this question and can be ignored; no participants selected this option.
 
 **Expected Fix:** Release 1.1  
+
+##### ⚠️ Gestational Age at Delivery and Mother’s Age at Delivery
+
+Gestational Age at Delivery (`sed_basic_demographics_gestational_age_delivery`) and Mother's Age at Delivery (`sed_basic_demographics_mother_age_delivery`) are variables that should only be available for participants who have V01 + V02 or V03 in the data release which had a cutoff of visit completion of July 1, 2024. However, for these measures data for deliveries after July 1, 2024 were included in the release in error. These fields which represent births beyond our cutoff dates were incorrectly made available, did not undergo QC, and will be removed in the patch release. Users can currently filter or remove any values for participants that do not have a V01 + V02 or V03 until the fix.
+
+**Expected Fix:** Release 1.1    
 
 ##### ⚠️ Mother Ethnicity
 The variable `screen_mother_ethnicity` should be a 2-level variable, however it is currently noted as a 4-level variable in the data dictionary. Levels of 0 and 1 (in the data dictionary) are included in error, they do not appear in the dataset; all participants with valid data have a value of 2 (Hispanic) or 3 (non-Hispanic).        
