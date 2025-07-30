@@ -13,7 +13,7 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 <img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="80%" height="auto" class="center">
 
 HBCD Study data includes both <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span>
- and <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data - see [overview of data structure](../datacuration/overview.md):
+ and <span class="tooltip">file-based<span class="tooltiptext">Imaging and biosignal data<br>(varied formats)</span></span> data - see [overview of data structure](../datacuration/overview.md):
 
 - **Tabulated data** are in table format and include behavior, demographics, visit data, toxicology results, and tabulated data associated with brain imaging and other file-based data ([see details](../datacuration/phenotypes.md)). 
 - **File-based data** include both <span><i class="fas fa-hammer"></i> <b>Raw BIDS</b></span> ([details](../datacuration/rawbids.md)) and processed <span><i class="fas fa-cog"></i> <b>Derivatives</b></span> ([details](../datacuration/derivatives.md)) for MRI/MRS, EEG, and motion/accelerometry (in varied modality-specific formats).
@@ -241,31 +241,34 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Name of Instrument</th>
+      <th style="width: 20%; text-align: center;">Name of Instrument</th>
       <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
-      <th style="width: 20%; text-align: center;"><span class="tooltip tooltip-left">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
+      <th style="width: 20%; text-align: center;"><span class="tooltip tooltip-left">File-Based Data<span class="tooltiptext">Imaging and biosignal data<br>(varied formats)</span></span><br>
           <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
           <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
+      <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 5%; text-align: center;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/wearsensors" target="_blank">Wearable Sensors</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">N/A</td>
-      <td style="word-wrap: break-word; white-space: normal;">N/A</td>
+      <td style="word-wrap: break-word; white-space: normal;">NA</td>
       <td style="word-wrap: break-word; white-space: normal;">
-      <i class="fa fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#motion"><code>motion/</code></a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a>
+          <i class="fa fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#motion"><code>motion/</code></a><br>
+          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a>
       </td>
+      <td style="word-wrap: break-word; white-space: normal;">NA</td>
+      <td style="word-wrap: break-word; white-space: normal;">NA</td>
     </tr>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Motor behavior, physical activity, sleep</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>nt_ch_sens__qtn_1</code><br>
-          <code>nt_ch_sens__qtn_2</code><br>
-          <code>nt_ch_sens__qtn_3</code></td>
       <td style="word-wrap: break-word; white-space: normal;">NA</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>nt_ch_sens__qtn_{1|2|3}</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>
   </tbody>
   </table>
@@ -284,10 +287,11 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 40%; text-align: center;">Name of Instrument</th>
+      <th style="width: 30%; text-align: center;">Name of Instrument</th>
       <th style="width: 20%; text-align: center;">Acronym</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 20%; text-align: center;">Construct</th>
+      <th style="width: 20%; text-align: center;">Table Name</th>
+      <th style="width: 5%; text-align: center;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
     </tr>
   </thead>
   <tbody>
@@ -296,18 +300,27 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td style="word-wrap: break-word; white-space: normal;">PHENX BF</td>
       <td style="word-wrap: break-word; white-space: normal;">Nutrition</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>ph_cg_phx__bfh</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
       <td style="word-wrap: break-word; white-space: normal;">USDA short form</td>
       <td style="word-wrap: break-word; white-space: normal;">Food insecurity</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_foodins</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Growth</td>
       <td style="word-wrap: break-word; white-space: normal;">Growth</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>ph_ch_anthro</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
   </tr> 
   </tbody>
   </table>
@@ -333,6 +346,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <th style="width: 20%; text-align: center;">Acronym</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 5%; text-align: center;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
     </tr>
   </thead>
   <tbody>
@@ -341,48 +355,72 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td style="word-wrap: break-word; white-space: normal;">Healthhx</td>
       <td style="word-wrap: break-word; white-space: normal;">Pre-pregnancy and pregnancy health</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__healthhx</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>          
     <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/vacc" target="_blank">Pregnancy Health-Exposures and Vaccines</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Vacc</td>
     <td style="word-wrap: break-word; white-space: normal;">Vaccines in pregnancy</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__exp__vacc</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>    
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/chronconditions" target="_blank">Pregnancy Health-Chronic Conditions</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Exp I chroncond</td>
     <td style="word-wrap: break-word; white-space: normal;">Chronic conditions and sexually transmitted infections in pregnancy</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__chroncond</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/illness" target="_blank">Pregnancy Health-Illness</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Exp I illness</td>
     <td style="word-wrap: break-word; white-space: normal;">Illness in pregnancy</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__illness</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>     
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/er-hosp" target="_blank">Pregnancy Health-ER/Hospitalizations</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Exp I ERhosp</td>
     <td style="word-wrap: break-word; white-space: normal;">ER visit or hospitalization in pregnancy</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__erhosp</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/medications" target="_blank">Pregnancy Health-Medications</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Exp I Meds</td>
     <td style="word-wrap: break-word; white-space: normal;">Prescription and over the counter medications in pregnancy</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__meds</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/end-preg" target="_blank">Pregnancy Health-V2 (End of Pregnancy)</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Healthv2 Preg</td>
     <td style="word-wrap: break-word; white-space: normal;">Updates information between enrollment and delivery</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_preg</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>     
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/infanthealth" target="_blank">Infant health- V2</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Healthv2 Inf</td>
     <td style="word-wrap: break-word; white-space: normal;">Delivery and birth outcomes</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_inf</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>    
 </tbody>
 </table>
@@ -393,8 +431,9 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <tr>
       <th style="width: 30%; text-align: center;">Name of Instrument</th>
       <th style="width: 10%; text-align: center;">Acronym</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
+      <th style="width: 25%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 5%; text-align: center;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
     </tr>
   </thead>
   <tbody>
@@ -403,24 +442,36 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td style="word-wrap: break-word; white-space: normal;">FAM MH</td>
       <td style="word-wrap: break-word; white-space: normal;">Personal and family mental health</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_psych</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>            
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/apa12" target="_blank">DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">APA Level 1 / Level 2</td>
+      <td style="word-wrap: break-word; white-space: normal;">APA Level 1/2</td>
       <td style="word-wrap: break-word; white-space: normal;">Mental Health</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_apa</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>  
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/ptsd" target="_blank">DSM5 Severity Acute Stress or PTSD</a></td>
       <td style="word-wrap: break-word; white-space: normal;">NSESSS—PTSD/Acute Stress Disorder</td>
       <td style="word-wrap: break-word; white-space: normal;">PTSD/acute stress disorder symptom severity</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_str__ptsd</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>      
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/epds" target="_blank">Edinburgh Postnatal Depression Scale</a></td>
       <td style="word-wrap: break-word; white-space: normal;">EPDS</td>
       <td style="word-wrap: break-word; white-space: normal;">Postnatal depression</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_epds</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>      
   </tbody>
   </table>
@@ -434,6 +485,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <th style="width: 10%; text-align: center;">Acronym</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 5%; text-align: center;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
     </tr>
   </thead>
   <tbody>
@@ -442,24 +494,36 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td>ASSIST V1</td>
     <td style="word-wrap: break-word; white-space: normal;">Substance use and problematic use before and during pregnancy</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_assistv1</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>    
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/su/assist" target="_blank">Alcohol, Smoking and Substance Involvement Screening Test V2.0</a></td>
     <td style="word-wrap: break-word; white-space: normal;">ASSIST V2</td>
     <td style="word-wrap: break-word; white-space: normal;">Substance use during end of pregnancy ( between V1 and delivery) and postnatal (weeks 0-4, between delivery and V2)</td>
     <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_assistv2</code></td>
+    <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+          <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+    </td>
   </tr>    
   <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/su/assist" target="_blank">Alcohol, Smoking and Substance Involvement Screening Test V3.0</a></td>
       <td style="word-wrap: break-word; white-space: normal;">ASSIST V3</td>
       <td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_assistv3</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
   </tr>   
   <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/su/tlfb" target="_blank">Timeline Follow Back</a></td>
       <td style="word-wrap: break-word; white-space: normal;">TLFB</td>
       <td style="word-wrap: break-word; white-space: normal;">Substance use before and during pregnancy</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_ch_tlfb</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
   </tr>   
   </tbody>
   </table>
@@ -483,6 +547,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <th style="width: 20%; text-align: center;">Acronym/Short Name</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 5%; text-align: center;"><span class="tooltip tooltip-left">DD<span class="tooltiptext">View in Data Dictionary</span></span></th>
     </tr>
   </thead>
   <tbody>
@@ -491,42 +556,63 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td style="word-wrap: break-word; white-space: normal;">BFY</td>
       <td style="word-wrap: break-word; white-space: normal;">Benefits/Services/Economic Stress</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_bfy</code></td>
+      <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+            <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+      </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;"><a href="SED/discr" target="_blank">Experiences of Unfair Treatment</a></td>
         <td style="word-wrap: break-word; white-space: normal;">PhenX+ Discrimination</td>
         <td style="word-wrap: break-word; white-space: normal;">Experiences of Unfair Treatment</td>
         <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_phx__discr</code></td>
+        <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+              <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+        </td>
     </tr>   
     <tr>
           <td style="word-wrap: break-word; white-space: normal;"><a href="SED/ehits" target="_blank">Partner Dynamics (eHITS)</a></td>
           <td style="word-wrap: break-word; white-space: normal;">eHITS</td>
           <td style="word-wrap: break-word; white-space: normal;">Intimate Partner Violence</td>
           <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_ehits</code></td>
+          <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+                <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+          </td>
       </tr>  
       <tr>
           <td style="word-wrap: break-word; white-space: normal;"><a href="SED/v01-demo" target="_blank">HBCD Demographics V01</a></td>
           <td style="word-wrap: break-word; white-space: normal;">Demographics</td>
           <td style="word-wrap: break-word; white-space: normal;">Basic social characteristics related to the birthing parent, the other biological parent, and their household</td>
           <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_demo</code></td>
+          <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+                <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+          </td>
       </tr>     
       <tr>
           <td style="word-wrap: break-word; white-space: normal;"><a href="SED/promis" target="_blank">PROMIS Perceived Stress/Social Support</a></td>
           <td style="word-wrap: break-word; white-space: normal;">PROMIS</td>
           <td style="word-wrap: break-word; white-space: normal;">Perceived Stress/Social Support</td>
           <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_strsup</code></td>
+          <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+                <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+          </td>
       </tr> 
       <tr>
           <td style="word-wrap: break-word; white-space: normal;"><a href="SED/safety" target="_blank">PhenX+ Neighborhood Safety</a></td>
           <td style="word-wrap: break-word; white-space: normal;">Neighborhood Safety</td>
           <td style="word-wrap: break-word; white-space: normal;">Neighborhood Safety</td>
           <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_nbhsaf</code></td>
+          <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+                <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+          </td>
       </tr>          
       <tr>
           <td style="word-wrap: break-word; white-space: normal;"><a href="SED/paces" target="_blank">Protective and Compensatory Experience</a></td>
           <td style="word-wrap: break-word; white-space: normal;">PACES</td>
           <td style="word-wrap: break-word; white-space: normal;">Protective Factors</td>
           <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_paces</code></td>
+          <td><a href="https://abcd-eks.lassoinformatics.com/"><img src="../images/lasso_icon.png" alt="Lasso" class="logo-hover"></a><br>
+                <a href="https://hbcd.deapscience.com/?hierarchyOrder=%5B%22study%22%2C%22domain%22%2C%22source%22%5D&hierarchy=%5B%5B%22General%22%2C%22Basic%20Demographics%20information%22%5D%5D#/my-datasets/create-dataset"><img src="../images/deap_icon.svg" alt="DEAP" class="logo-hover"></a>
+          </td>
       </tr>      
   </tbody>
   </table>
@@ -552,7 +638,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <thead>
     <tr>
       <th style="width: 20%; text-align: center;">Name</th>
-      <th style="width: 30%; text-align: center;"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
+      <th style="width: 30%; text-align: center;"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">Imaging and biosignal data<br>(varied formats)</span></span><br>
       <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
       <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
       <th style="width: 70%; text-align: center;">Table Name(s)</th>
@@ -667,7 +753,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <thead>
     <tr>
       <th style="width: 25%; text-align: center;">Task</th>
-      <th style="width: 25%; text-align: center;"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
+      <th style="width: 25%; text-align: center;"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">Imaging and biosignal data<br>(varied formats)</span></span><br>
         <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
         <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
       <th style="width: 60%; text-align: center;">Table Name</th>
