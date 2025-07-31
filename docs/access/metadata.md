@@ -366,51 +366,105 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 
 ## Naming Conventions
 
-### Table Names
+A unified naming convention has been applied to most table and field names in the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> release data (see overview of tabulated vs. <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data [here](../datacuration/overview.md)). HBCD largely follows the same naming conventions as ABCD ([see details](https://docs.abcdstudy.org/latest/documentation/curation/naming.html)), adapted for HBCD study measures. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. 
 
-A unified naming convention has been applied to most table names in the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> release data (see overview of tabulated vs. <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data [here](../datacuration/overview.md)). This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. The **standard table name format** is:
+The **standard variable naming format** is comprised of 4 components, separated by a single underscore ( `_` ):
 
 <p style="font-size: 1.8em; font-weight: bold;" align="center">
-<code>domain_source_table</code>
+<code>domain_source_table_item</code>
 </p>
 
+As with ABCD, the `table` and `item` components can have additional subcomponents separated by double underscores ( `__` ) to indicate nesting within the four main components.
+
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <th></th>
-  <th>Definition</th>
-  <th>Possible Values <span class="tooltip tooltip-right"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">for tables provided in the current release only</span></span>
-</thead>
 <tbody>
 <tr>
   <td><b><code>domain</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>domain</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> (e.g. MRI, Biospecimens, etc.)</td>
-  <td>
-    <span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>;
-    <span class="tooltip"><code>eeg</code><span class="tooltiptext">EEG</span></span>;
-    <span class="tooltip"><code>mh</code><span class="tooltiptext">Behavior/Child-Caregiver Interaction</span></span>;
-    <span class="tooltip"><code>img</code><span class="tooltiptext">Imaging/MRI</span></span>;
-    <span class="tooltip"><code>ncl</code><span class="tooltiptext">Neurocognition and Language</span></span>;
-    <span class="tooltip"><code>nt</code><span class="tooltiptext">Novel Tech</span></span>;
-    <span class="tooltip"><code>pex</code><span class="tooltiptext">Pregnancy/Exposure Including Substance</span></span>;
-    <span class="tooltip"><code>ph</code><span class="tooltiptext">Physical Health</span></span>;
-    <span class="tooltip"><code>sed</code><span class="tooltiptext">Social & Environmental Determinants</span></span>
-  </td>
 </tr>
 <tr>
   <td><b><code>source</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> (e.g. child vs birth parent)</td>
-  <td>
-    <span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
-    <span class="tooltip"><code>cg</code><span class="tooltiptext">Caregiver (Responsible Adult)</span></span>;
-    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>
-  </td>
 </tr>
 <tr>
 <td><b><code>table</code></b></td>
 <td>Specific instrument name/protocol element</td>
-<td>Varies by instrument; see full data dictionary for details.</td></tr>
 </tbody>
 </table>
+
+<div id="domain" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span style="display: inline-flex; align-items: center;">
+   Domain Values
+  </span>
+  <a class="anchor-link" href="#domain" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>bio</code></td><td>Biospecimens</td></tr>
+    <tr><td><code>eeg</code></td><td>EEG</td></tr>
+    <tr><td><code>mh</code></td><td>Behavior/Child-Caregiver Interaction</td></tr>
+    <tr><td><code>img</code></td><td>Imaging/MRI</td></tr>
+    <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
+    <tr><td><code>nt</code></td><td>Novel Tech</td></tr>
+    <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
+    <tr><td><code>ph</code></td><td>Physical Health</td></tr>
+    <tr><td><code>sed</code></td><td>Social & Environmental Determinants</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div id="source" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span style="display: inline-flex; align-items: center;">
+   Source Values
+  </span>
+  <a class="anchor-link" href="#source" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
+    <td><code>cg</code></td><td>Caregiver (Responsible Adult)</td>
+    <tr><td><code>ch</code></td><td>Child</td></tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+### Components
+
+#### Domain
 
 <p>
 <div id="domain-source" class="table-banner" onclick="toggleCollapse(this)">
