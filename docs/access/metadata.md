@@ -401,7 +401,7 @@ The **standard variable naming format** is comprised of 4 components, separated 
 <tr>
 <td><b><code>table</code></b></td>
 <td>Specific instrument name/protocol element.</td>
-<td style="word-wrap: break-word; white-space: normal;">Varies by instrument; see full data dictionary for details.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
 </tr>
 <tr>
 <td><b><code>item</code></b></td>
