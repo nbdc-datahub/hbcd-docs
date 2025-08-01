@@ -378,9 +378,9 @@ The **standard variable naming format** is comprised of 4 components, separated 
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-  <th></th>
-  <th>Definition</th>
-  <th>Example Values</th>
+  <th style="width: 5%;"></th>
+  <th style="width: 60%;">Definition</th>
+  <th style="width: 25%;">Example Values</th>
 </thead>
 <tbody>
 <tr>
@@ -405,8 +405,13 @@ The **standard variable naming format** is comprised of 4 components, separated 
 </tr>
 <tr>
 <td><b><code>item</code></b></td>
-<td style="word-wrap: break-word; white-space: normal;">A 3-digit number typically corresponding to individual questions in a scale/questionnaire</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>001</code>; <code>001__01</code>; <code>mean</code>; <code>standard</code>; etc.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">The item component will be one of the following:<br>
+  1) a 3-digit number corresponding to individual questions in a scale<br>
+  2) an administrative variable<br>
+  3) a summary scores for individual items in a table</td>
+<td style="word-wrap: break-word; white-space: normal;"> 1) <code>001</code><br>
+  2) <code>administration</code>, <code>lang</code>, etc.<br>
+  3) <code>summary_score</code></td></tr>
 </tr>
 </tbody>
 </table>
