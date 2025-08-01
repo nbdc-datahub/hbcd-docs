@@ -498,7 +498,12 @@ For example, for the table name `ncl_cg_spm2__inf`, the double underscore separa
 
 ### Exceptions
 
-Some variables do not follow the standard naming convention precisely, which will be improved in future releases. Notable exceptions include tabulated data for MRI and EEG derived from the <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data.
+Some variables do not fully follow the standard naming convention, though this will be improved in future releases. Notable exceptions include tabulated data for [MRI & MRS](../instruments/index.md#mri) and [EEG](../instruments/index.md#eeg) derived from associated <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. 
+
+All files begin with the **domain** (`img` or `eeg`) in accordance with the conventions described above, but the following elements may differ:
+
+ - In place of **source**, which for all MRI and EEG data is Child/`ch`, the pipeline name is typically given (e.g. `bibsnet`, `xcpd`, `osprey`, `made`, etc.)
+ - In place of **table_item**, the keywords typically match the name of the pipeline derivative file from which the table was generated (see full lists of file-based derivatives for each pipeline [here](../datacuration/derivatives.md)). 
 
 ## Study Design Logic: Child-Centric Data Structure
 
