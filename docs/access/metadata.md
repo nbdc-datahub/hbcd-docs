@@ -368,6 +368,8 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 
 A unified naming convention has been applied to most table and field names in the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> release data (see overview of tabulated vs. <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data [here](../datacuration/overview.md)). HBCD largely follows the same naming conventions as ABCD ([see details](https://docs.abcdstudy.org/latest/documentation/curation/naming.html)), adapted for HBCD study measures. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. 
 
+### Primary Components
+
 The **standard variable naming format** is comprised of 4 components, separated by a single underscore ( `_` ):
 
 <p style="font-size: 1.8em; font-weight: bold;" align="center">
@@ -403,7 +405,7 @@ The **standard variable naming format** is comprised of 4 components, separated 
 </tr>
 <tr>
 <td><b><code>item</code></b></td>
-<td>Item in scale</td>
+<td style="word-wrap: break-word; white-space: normal;">A 3-digit number typically corresponding to individual questions in a scale/questionnaire</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>001</code>; <code>001__01</code>; <code>mean</code>; <code>standard</code>; etc.</td></tr>
 </tr>
 </tbody>
@@ -473,13 +475,29 @@ The **standard variable naming format** is comprised of 4 components, separated 
     <tr><td><code>ra</code></td><td>RA (research assistant)</td></tr>
     <tr><td><code>si</code></td><td>Sibling</td></tr>
     <tr><td><code>te</code></td><td>Teacher</td></tr>
+    <tr><td><code>basic</code></td><td>General information. <i>Not included in NBDC Data Dictionary source options, e.g. for <code>sed_basic_demographics</code> (derived demographics information), the DD source is <code>General</code></i>.</td></tr>
+    <tr><td><code>visit</code></td><td>Visit information. <i>Not included in NBDC Data Dictionary source options, e.g. for <code>par_visit_data</code> (visit-level data), the DD source is <code>General</code></i>.</td></tr>
   </tbody>
 </table>
 </div>
 
 ### Subcomponents
 
-As with ABCD, the `table` and `item` components can have additional subcomponents separated by double underscores ( `__` ) to indicate nesting within the four main components.
+As with ABCD, the `table` and `item` components can have additional subcomponents separated by **double underscores ( `__` )** to indicate nesting within the four main components. Subcomponents distinguish finer details such as **subscales**, **versions**, or **counter types** within a given table or field.
+
+For example, for the table name `ncl_cg_spm2__inf`, the double underscore separates the instrument (`spm2`) from its subcomponent/version (`inf`), i.e., the infant-specific version of SPM-2:
+
+ - `ncl` (domain): <a href="../../instruments/#neurocog">Neurocognition & Language</a>
+ - `cg` (source): Caregiver
+ - `spm2` (table): the <a href="../../instruments/neurocog/spm2">SPM-2</a> instrument
+    - `inf` (table subcomponent): infant version of SPM-2
+
+### Exceptions
+
+Some variables do not follow the standard naming convention precisely, which will be improved in future releases. Notable exceptions include derived variables:
+
+ - Variables derived from <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data, such as MRI and EEG
+ - Basic demographics (`sed_basic_demographics`) and visit information (`par_visit_data`) containing global, static variables derived from other tables ([see details](../instruments/index.md#demo))
 
 
 ## Study Design Logic: Child-Centric Data Structure
@@ -488,5 +506,3 @@ The HBCD Study organizes data around the Child ID as the central key. All caregi
 
 - **Simplifying child-focused analysis**: Researchers can track each child’s data over time without remapping caregiver information.
 - **Handling multi-birth cases cleanly**: When a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.
-
-<br>
