@@ -432,21 +432,20 @@ The **standard variable naming format** is comprised of 4 components, separated 
   <thead>
     <tr>
       <th>Keyword</th>
-      <th>Description</th>
+      <th>Domain</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td><code>bio</code></td><td>Biospecimens</td></tr>
-    <tr><td><code>eeg</code></td><td>EEG</td></tr>
+    <tr><td><code>bio</code></td><td>BioSpecimens</td></tr>
+    <tr><td><code>eeg</code></td><td>Tabular EEG</td></tr>
     <tr><td><code>mh</code></td><td>Behavior/Child-Caregiver Interaction</td></tr>
-    <tr><td><code>img</code></td><td>Imaging/MRI</td></tr>
+    <tr><td><code>img</code></td><td>Tabular Imaging</td></tr>
     <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
-    <tr><td><code>nt</code></td><td>Novel Tech</td></tr>
+    <tr><td><code>nt</code></td><td><span class="tooltip">Novel Tech<span class="tooltiptext">Novel Technology & Wearable Sensors</span></span></td></tr>
     <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
     <tr><td><code>ph</code></td><td>Physical Health</td></tr>
-    <tr><td><code>sed</code></td><td>Social & Environmental Determinants</td></tr>
-    <tr><td><code>par</code></td><td>Participant Information. <i>Not included in NBDC Data Dictionary domains, e.g. <code>par_visit_data</code> (Visit Information), containing dynamic/longitudinal visit-level data, falls under the domain <code>Demographics</code></i>.</td></tr>
-    <tr><td><code>sens</code></td><td>Biosensor. <i>Not included in NBDC Data Dictionary domains</i></td></tr>
+    <tr><td><code>sed</code></td><td>Social and Environmental Determinants</td></tr>
+    <tr><td><code>par</code></td><td style="word-wrap: break-word; white-space: normal;">Participant Information<br><i>Note: this is an additional domain not included in NBDC Data Dictionary domains, e.g. <code>par_visit_data</code> (Visit Information), containing dynamic/longitudinal visit-level data, falls under the DD domain <code>Demographics</code></td></tr>
   </tbody>
 </table>
 </div>
@@ -467,7 +466,7 @@ The **standard variable naming format** is comprised of 4 components, separated 
   <thead>
     <tr>
       <th>Keyword</th>
-      <th>Description</th>
+      <th>Source</th>
     </tr>
   </thead>
   <tbody>
@@ -499,11 +498,7 @@ For example, for the table name `ncl_cg_spm2__inf`, the double underscore separa
 
 ### Exceptions
 
-Some variables do not follow the standard naming convention precisely, which will be improved in future releases. Notable exceptions include derived variables:
-
- - Variables derived from <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data, such as MRI and EEG
- - Basic demographics (`sed_basic_demographics`) and visit information (`par_visit_data`) containing global, static variables derived from other tables ([see details](../instruments/index.md#demo))
-
+Some variables do not follow the standard naming convention precisely, which will be improved in future releases. Notable exceptions include tabulated data for MRI and EEG derived from the <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data.
 
 ## Study Design Logic: Child-Centric Data Structure
 
