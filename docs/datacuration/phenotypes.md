@@ -46,7 +46,7 @@ Tabulated data is available in both tab-separated values (TSV) and [Apache Parqu
 #### Plain Text (TSV/CSV)
 Plain text formats (TSV/CSV) are widely compatible and easy to inspect, but less efficient for large datasets. They don't support selective column loading or preserve metadata, such as data type specification; the metadata is instead available via the sidecar JSON files for plan text files. As a result, tools like Python or R must guess data types during import, often incorrectly. For example, categorical values like "0"/"1" for "Yes"/"No" (commonly used in NBDC datasets) may be interpreted as numeric, and columns with mostly missing values may be treated as empty if the first few rows lack data.
 
-To avoid such issues, you may manually define column types using the accompanying data dictionaries included in the sidecar JSON metadata files during the import. The `NBDCtools` R package offers a helper function, `read_dsv_formatted()`, to automate this process (see [Recommended Tools](recprograms.md#tabulated-data) for details).
+To avoid such issues, you may manually define column types using the accompanying data dictionaries included in the sidecar JSON metadata files during the import. The `NBDCtools` R package offers a utility function, `read_dsv_formatted()`, to automate this process (see [Useful Utilities](recprograms.md#tabulated-data) for details).
 
 #### Parquet
 <div id="parquetbids" class="notification-banner" onclick="toggleCollapse(this)">
@@ -90,7 +90,7 @@ In the data files, missing values are represented as blank cells. Shadow matrice
 
 ![](images/shadowmatrix.png)
 
-In HBCD, some participant responses like “Don’t know” or “Decline to answer” (which are typically considered non-responses) are deliberately converted to missing values in the data file, with the original response converted to a missingness reason stored in the shadow matrix. This prevents analytical errors such as inadvertently treating placeholder codes (like `777` or `999`, common in other datasets) as valid numeric values during analysis and ensures consistency in data types across all entries (e.g. text notes in numeric fields are avoided).
+The categorical codes for “Don’t know” (`999`) and “Decline to answer” (`777`) that are used across different tables in the HBCD dataset (and are typically considered non-responses) are deliberately converted to missing values in the data file, with the original response converted to a missingness reason stored in the shadow matrix. This prevents analytical errors such as inadvertently treating placeholder codes (like `777` or `999`) as valid numeric values during analysis and ensures consistency in data types across all entries (e.g. text notes in numeric fields are avoided).
 
 <p>
 <div id="shadowFYI" class="notification-banner" onclick="toggleCollapse(this)">
@@ -104,11 +104,10 @@ In HBCD, some participant responses like “Don’t know” or “Decline to ans
 </p>
 
 #### Working with Shadow Matrices in R and Python 
-Here we describe how researchers can use shadow matrix files in combination with the data files to, for example, explore and understand patterns of missing data or integrate missingness reasons (e.g., `Decline to Answer`, `Logic Skipped`, etc.) into your analysis. 
 
-For working in **R**, we recommend using the `NBDCtools` package ([see details](recprograms.md#tabulated-data)). For **Python**, the following helper function joins the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data file with its corresponding shadow matrix file so data columns are combined with columns providing the reasons for missingness in the same data frame. This function works with both TSV and CSV file formats, but can be updated for Parquet files using the loading logic shown under the section on Parquet files above ([here](#parquet)).
+Here we describe how researchers can combine data with the shadow information into a single data frame using the R or Python programming languages. This can be useful for understanding patterns of missing data or integrating missingness reasons (e.g., `Decline to Answer`, `Logic Skipped`, etc.) into your analysis.
 
-##### 🐍 Python Helper Function
+##### <i class="fa-brands fa-python"></i> Python Helper Function
 ```
 import pandas as pd
 import os
@@ -141,4 +140,22 @@ df = load_data_with_shadow("data.tsv", "shadow_matrix.tsv")
 
 # Example: View reasons for missing data for a given column/variable in the data file 
 df[df["<COLUMN NAME>"].isna()][["<COLUMN NAME>_missing_reason"]]  
+```
+
+##### <i class="fa-brands fa-r-project"></i> R Helper Function Using [NBDCtools](recprograms.md#tabulated-data)
+```
+library(dplyr)
+library(NBDCtools)
+
+# read in data and shadow matrix
+data <- arrow::read_parquet("path/to/data/<table_name>.parquet")
+shadow <- arrow::read_parquet("path/to/data/<table_name_shadow>.parquet")
+
+# bind shadow columns to data
+data_shadow <- shadow_bind_data(data, shadow)
+
+# show the reasons for missing values for a given variable
+data_shadow |>
+  filter(is.na(<column_name>)) |> 
+  count(<column_name>)
 ```
