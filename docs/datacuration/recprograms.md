@@ -1,9 +1,9 @@
 # Useful Programs & Utilities
 
 ## Tabulated Data
-<i class="fas fa-database"></i> **NBDCtools** [COMING SOON]   
-For <span class="tooltip">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span>, this R package can be used to parse the columns or tables you want to use as a data frame in R. The package will automatically determine the appropriate file to pull from and how to format the data based on the data dictionary. This allows for easy manipulation and analysis of the data without having to manually parse the files or worry about formatting issues.   
-[Download page for NBDCtools <i class="fa fa-download"></i>]() 
+<i class="fas fa-database"></i> **NBDCtools**  
+NBDCtools is an R package for creating custom, analysis-ready datasets by simply specifying the variable and/or table names you need. The package automatically retrieves the specified columns from locally downloaded HBCD tabulated data and assembles them into a single in-memory data frame, minimizing storage and memory use. This provides a flexible alternative to building datasets through the Lasso or DEAP platforms, eliminating the need to manually parse files or resolve formatting issues. In addition to dataset assembly, NBDCtools includes functions for working with [shadow matrices](phenotypes.md#shadow-matrices) as well as applying transformations and filters.   
+[Download page for NBDCtools <i class="fa fa-download"></i>](https://software.nbdc-datahub.org/NBDCtools/index.html) 
 
 ## Brain Imaging Data
 #### Interactive Visualization of Volumetric NIfTI (`.nii.gz`) files (e.g. T1w, T2w, DTI, etc.)
