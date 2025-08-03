@@ -1,5 +1,7 @@
 site_name: HBCD Data Release Docs
 
+use_directory_urls: true
+
 theme:
   name: readthedocs
   custom_dir: docs/overrides # for template overrides, used in this case for addition of "Page Last Updated: <DATE>" to pages
