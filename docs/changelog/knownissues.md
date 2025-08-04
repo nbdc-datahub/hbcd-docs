@@ -13,6 +13,11 @@ Instruction text in the form's metadata is extracted programmatically from the m
 
 **Expected Fix:** Release 1.1  
 
+##### ⚠️ Run ID Order May Be Incorrect for HBCD BIDS
+
+For HBCD BIDS data with multiple runs (which may include MRI, MRS, EEG, and/or motion data), the run number displayed in the `run-<label>` field is not guaranteed to reflect the chronological acquisition order. This applies to both raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data, as well as derived <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data. Despite this, the data remain internally consistent — for example, the run IDs in the raw BIDS data match the corresponding runs in the processed BIDS data.
+
+**Expected Fix:** Release 2.0 
 
 ## Basic Demographics
 
