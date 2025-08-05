@@ -22,6 +22,7 @@ th, td {
   padding: 8px 10px;
   border-radius: 5px;
   font-family: Lato; 
+  font-weight: bold;
   color: #474646;
   cursor: pointer;
   width: 100%;

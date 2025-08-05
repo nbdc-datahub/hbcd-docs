@@ -370,9 +370,9 @@ A unified naming convention has been applied to most table and field names in th
 
 ### Primary Components
 
-The **standard variable naming format** is comprised of 4 components, separated by a single underscore ( `_` ):
+The standard variable naming format is comprised of either 4 or 5 main components, separated by a single underscore ( `_` ). Variables that represent a scale within an instrument comprised of multiple scales will include the component `scale` and otherwise will not include this component:
 
-<p style="font-size: 1.8em; font-weight: bold;" align="center">
+<p style="font-size: 1.8em; font-weight: bold; padding: 20px;" align="center">
 <code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
 </p>
 
@@ -386,15 +386,13 @@ The **standard variable naming format** is comprised of 4 components, separated 
 <tr>
   <td><b><code>domain</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Expanded version of <a href="#data-dictionary">NBDC Data Dictionary</a> <code>domain</code> values that includes additional domains (e.g. Biosensors)</td>
-  <td>
-  <span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>;
+  <td><span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>;
   <span class="tooltip"><code>img</code><span class="tooltiptext">Imaging/MRI</span></span> (<i><a href="#domain">see full list</a></i>)</td>
 </tr>
 <tr>
   <td><b><code>source</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a>; indicates either the subject (who the protocol element is about) or respondent (who completed the assessment).</td>
-  <td>
-    <span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
+  <td><span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
     <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span> (<i><a href="#source">see full list</a></i>)
   </td>
 </tr>
@@ -405,7 +403,7 @@ The **standard variable naming format** is comprised of 4 components, separated 
 </tr>
 <tr>
 <td><b><code><span style="color: teal;">{scale}</span></code></b></td>
-<td style="word-wrap: break-word; white-space: normal;"><i>If applicable</i>, name of scale within instrument/protocol element. Variables without separate scales will not include this naming component.</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>If applicable</b>, name of scale within instrument/protocol element. Variables without separate scales will not include this naming component.</td>
 <td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
 </tr>
 <tr>
@@ -420,6 +418,17 @@ The **standard variable naming format** is comprised of 4 components, separated 
 </tr>
 </tbody>
 </table>
+
+<p>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">Scale/<code><span style="color: teal;">{scale}</span></code> Naming Component</span>
+</div>
+<div class="notification-static-content">
+<p>In future releases, scales will use a hyphen (<code>-</code>) instead of a single underscore (<code>_</code>) before the scale name. This change ensures all variables have the same number of naming components, making it easier to distinguish main components without needing prior knowledge of whether an instrument contains multiple scales.</p>
+</div>
+</p>
+
 
 <div id="domain" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -490,11 +499,6 @@ The **standard variable naming format** is comprised of 4 components, separated 
 </table>
 </div>
 
-<br>
-
-#### Scales
-
-**In the future, scales will be preceded by a hyphen (`-`) so that all variables have a consistent number of naming components, making it easier to differentiate between main components**
 
 ### Subcomponents
 
