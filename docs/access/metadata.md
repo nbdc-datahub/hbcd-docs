@@ -492,9 +492,7 @@ The standard variable naming format is comprised of either 4 or 5 main component
 
 <div id="scale" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span style="display: inline-flex; align-items: center;">
-   Scale Naming Component Details - <code><span style="color: teal;">{scale}</span></code>
-  </span>
+  <span style="display: inline-flex; align-items: center;">Scale Details</span>
   <a class="anchor-link" href="#scale" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
