@@ -379,8 +379,8 @@ The standard variable naming format is comprised of either 4 or 5 main component
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <th style="width: 5%;"></th>
-  <th style="width: 60%;">Definition</th>
-  <th style="width: 25%;">Example Values</th>
+  <th style="width: 50%;">Definition</th>
+  <th style="width: 30%;">Example Values</th>
 </thead>
 <tbody>
 <tr>
@@ -407,14 +407,20 @@ The standard variable naming format is comprised of either 4 or 5 main component
 <td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
 </tr>
 <tr>
-<td><b><code>item</code></b></td>
-<td style="word-wrap: break-word; white-space: normal;">The item component will be one of the following:<br>
-  1) a 3-digit number corresponding to individual questions in a scale<br>
-  2) an administrative variable<b>**</b><br>
-  3) a summary scores for individual items in a table</td>
-<td style="word-wrap: break-word; white-space: normal;"> 1) <code>001</code><br>
-  2) <code>administration</code>, <code>lang</code>, etc.<br>
-  3) <code>summary_score</code>, <code>score</code></td></tr>
+  <td colspan="1" rowspan="3">
+  <div><b><code>item</code></b></div>
+  </td>
+  <td><b>The <code>item</code> component will be one of the following:</b><br><br>
+    1) 3-digit number corresponding to individual questions in a scale</td>
+  <td><br><br>1) <code>001</code>; <code>001__01</code>; etc.</td>
+  </tr>
+  <tr>
+  <td>2) Summary scores for individual items in a table</td>
+  <td>2) <code>summary_score</code>; <code>score</code>; etc.</td>
+  </tr>
+  <tr>
+  <td>3) Administrative variable<b>**</b><br><br></td>
+  <td style="word-wrap: break-word; white-space: normal;">3) <code>administration</code>; <code>location</code>; <span class="tooltip tooltip-left">etc.<span class="tooltiptext"><code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></span></span><br><br></td>
 </tr>
 </tbody>
 </table>
@@ -503,7 +509,7 @@ The standard variable naming format is comprised of either 4 or 5 main component
 <p>Study instruments/tables composed of multiple scales will include the <code><span style="color: teal;">{scale}</span></code> naming component. This is applicable to the following instruments in the current release:</p>
 <br>
 <br>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px"">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
       <th style="width: 5%; padding-right: 2px;">Domain</th>
