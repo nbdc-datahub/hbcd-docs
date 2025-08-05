@@ -425,7 +425,7 @@ The standard variable naming format is comprised of either 4 or 5 main component
   <span class="text">Scale/<code><span style="color: teal;">{scale}</span></code> Naming Component</span>
 </div>
 <div class="notification-static-content">
-<p>In future releases, scales will use a hyphen (<code>-</code>) instead of a single underscore (<code>_</code>) before the scale name. This change ensures all variables have the same number of naming components, making it easier to distinguish main components without needing prior knowledge of whether an instrument contains multiple scales.</p>
+<p>In future releases, scales will use a hyphen (<code>-</code>) instead of a single underscore ( <code>_</code> ) before the scale name. This change ensures all variables have the same number of naming components, making it easier to distinguish main components without needing prior knowledge of whether an instrument contains multiple scales.</p>
 </div>
 </p>
 
