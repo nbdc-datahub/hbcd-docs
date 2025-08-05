@@ -403,31 +403,22 @@ The standard variable naming format is comprised of either 4 or 5 main component
 </tr>
 <tr>
 <td><b><code><span style="color: teal;">{scale}</span></code></b></td>
-<td style="word-wrap: break-word; white-space: normal;"><b>If applicable</b>, name of scale within instrument/protocol element. Variables without separate scales will not include this naming component.</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>If applicable</b> (<i><a href="#scale">see details</a></i>), name of scale within instrument/protocol element. Variables without separate scales will not include this naming component.</td>
 <td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
 </tr>
 <tr>
 <td><b><code>item</code></b></td>
 <td style="word-wrap: break-word; white-space: normal;">The item component will be one of the following:<br>
   1) a 3-digit number corresponding to individual questions in a scale<br>
-  2) an administrative variable<br>
+  2) an administrative variable<b>**</b><br>
   3) a summary scores for individual items in a table</td>
 <td style="word-wrap: break-word; white-space: normal;"> 1) <code>001</code><br>
   2) <code>administration</code>, <code>lang</code>, etc.<br>
-  3) <code>summary_score</code></td></tr>
+  3) <code>summary_score</code>, <code>score</code></td></tr>
 </tr>
 </tbody>
 </table>
-
-<p>
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">Scale/<code><span style="color: teal;">{scale}</span></code> Naming Component</span>
-</div>
-<div class="notification-static-content">
-<p>In future releases, scales will use a hyphen (<code>-</code>) instead of a single underscore ( <code>_</code> ) before the scale name. This change ensures all variables have the same number of naming components, making it easier to distinguish main components without needing prior knowledge of whether an instrument contains multiple scales.</p>
-</div>
-</p>
+<i><b>**</b>Note: For instruments with scales, administrative variables (e.g. <code>mh_cg_ibqr_administration</code>) will have <code>administration</code> in place of <code>scale_item</code> and thus only have 4 components.</i>
 
 
 <div id="domain" class="table-banner" onclick="toggleCollapse(this)">
@@ -499,6 +490,55 @@ The standard variable naming format is comprised of either 4 or 5 main component
 </table>
 </div>
 
+<div id="scale" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span style="display: inline-flex; align-items: center;">
+   Scale Naming Component Details - <code><span style="color: teal;"> {scale}</span></code>
+  </span>
+  <a class="anchor-link" href="#scale" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Study instruments/tables that include several scales and will thus include all 5 naming components include:</p>
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th>Instrument</th>
+      <th>Table Name</th>
+      <th>Example Variable Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IBQ-R (VSF)+BI</td>
+      <td><code>mh_cg_ibqr</code></td>
+      <td><code>mh_cg_ibqr_<span style="color: teal;">beh</span>_001</code></td>
+    </tr>
+    <tr>
+      <td>SPM-2</td>
+      <td><code>ncl_cg_spm2__inf</code></td>
+      <td><code>ncl_cg_spm2__inf_<span style="color: teal;">soc</span>_001</code></td>
+    </tr>
+    <tr>
+      <td>Growth</td>
+      <td><code>ph_ch_anthro</code></td>
+      <td><code>ph_ch_anthro_<span style="color: teal;">head</span>_001__01</code></td>
+    </tr>
+    <tr>
+      <td>All <a href="../../instruments/#pregexp">Pregnancy & Infant Health</a><br>instruments, e.g. Healthhx:</td>
+      <td><code>pex_bm_health_preg__healthhx</code></td>
+      <td><code>pex_bm_health_<span style="color: teal;">preg__healthhx__preghx</span>_001__01</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In future releases, scales will use a hyphen (<code>-</code>) instead of a single underscore ( <code>_</code> ) before the scale name. This change ensures all variables have the same number of naming components, making it easier to distinguish main components without needing prior knowledge of whether an instrument contains multiple scales.
+</p>
+</div>
 
 ### Subcomponents
 
@@ -510,6 +550,7 @@ For example, for the table name `ncl_cg_spm2__inf`, the double underscore separa
  - `cg` (source): Caregiver
  - `spm2` (table): the <a href="../../instruments/neurocog/spm2">SPM-2</a> instrument
     - `inf` (table subcomponent): infant version of SPM-2
+
 
 ### Exceptions
 
