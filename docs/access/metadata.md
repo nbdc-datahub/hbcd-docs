@@ -493,7 +493,7 @@ The standard variable naming format is comprised of either 4 or 5 main component
 <div id="scale" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span style="display: inline-flex; align-items: center;">
-   Scale Naming Component Details - <code><span style="color: teal;"> {scale}</span></code>
+   Scale Naming Component Details - <code><span style="color: teal;">{scale}</span></code>
   </span>
   <a class="anchor-link" href="#scale" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -502,7 +502,7 @@ The standard variable naming format is comprised of either 4 or 5 main component
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Study instruments/tables composed of multiple scales will include the <code><span style="color: teal;"> {scale}</span></code> naming component. This is applicable to the following instruments in the current release:</p>
+<p>Study instruments/tables composed of multiple scales will include the <code><span style="color: teal;">{scale}</span></code> naming component. This is applicable to the following instruments in the current release:</p>
 <br>
 <br>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px"">
