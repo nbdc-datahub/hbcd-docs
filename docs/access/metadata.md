@@ -407,20 +407,16 @@ The standard variable naming format is comprised of either 4 or 5 main component
 <td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
 </tr>
 <tr>
-  <td colspan="1" rowspan="3">
-  <div><b><code>item</code></b></div>
-  </td>
-  <td><b>The <code>item</code> component will be one of the following:</b><br><br>
-    1) 3-digit number corresponding to individual questions in a scale</td>
-  <td><br><br>1) <code>001</code>; <code>001__01</code>; etc.</td>
-  </tr>
-  <tr>
-  <td>2) Summary scores for individual items in a table</td>
-  <td>2) <code>summary_score</code>; <code>score</code>; etc.</td>
-  </tr>
-  <tr>
-  <td>3) Administrative variable<span class="blue-text">**</span><br><br></td>
-  <td style="word-wrap: break-word; white-space: normal;">3) <code>administration</code>; <code>location</code>; <span class="tooltip tooltip-left">etc.<span class="tooltiptext"><code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></span></span><br><br></td>
+  <td><b><code>item</code></b></td>
+  <td style="word-wrap: break-word; white-space: normal;"><b>The <code>item</code> component will be one of the following:</b><br>
+  1) 3-digit number corresponding to individual questions in a scale<br>
+  2) Summary scores for individual items in a table<br>
+  3) Administrative variable<span class="blue-text">**</span><br></td>
+  <td style="word-wrap: break-word; white-space: normal;"><br><br>
+  1) <code>001</code>; <code>001__01</code>; etc<br>
+  2) <code>summary_score</code>; <code>score</code>; etc.<br>
+  3) <code>administration</code>; <code>location</code>; <span class="tooltip tooltip-left">etc.<span class="tooltiptext"><code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></span></span><br><br>
+  </td></tr>
 </tr>
 </tbody>
 </table>
