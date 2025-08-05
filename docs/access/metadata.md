@@ -487,7 +487,7 @@ The **standard variable naming format** is comprised of 4 components, separated 
 
 ### Subcomponents
 
-The `table` and `item` components can have additional subcomponents separated by **double underscores ( `__` )** to indicate nesting within the four main components. Subcomponents distinguish finer details such as **subscales**, **versions**, or **counter types** within a given table or field.
+The `table` and `item` components can have additional subcomponents separated by **double ( `__` ) or triple ( `___` ) underscores** to indicate nesting within the four main components. Subcomponents distinguish finer details such as **subscales**, **versions**, or **counter types** within a given table or field.
 
 For example, for the table name `ncl_cg_spm2__inf`, the double underscore separates the instrument (`spm2`) from its subcomponent/version (`inf`), i.e., the infant-specific version of SPM-2:
 
