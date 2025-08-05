@@ -502,7 +502,7 @@ The standard variable naming format is comprised of either 4 or 5 main component
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Study instruments/tables composed of multiple scales will include the <code><span style="color: teal;">{scale}</span></code> naming component. This is applicable to the following instruments in the current release:</p>
+<p>Study instruments/tables composed of multiple scales will include the <code><span style="color: teal;">{scale}</span></code> naming component in their variable names. This is applicable to the following instruments in the current release:</p>
 <br>
 <br>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
