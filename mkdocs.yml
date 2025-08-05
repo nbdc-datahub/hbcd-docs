@@ -53,7 +53,6 @@ nav:
   - Data Usage:
     - Access & Download Data: access/download.md
     - Metadata & Naming Conventions: access/metadata.md
-    - Naming Convention Details: access/namingconventions.md
     - Responsible Data Use: access/resp_data_use.md
     - Data Use Acknowledgement: access/dua.md
   - Data Structure & File Types:
