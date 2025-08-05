@@ -370,7 +370,7 @@ A unified naming convention has been applied to most table and field names in th
 
 ### Primary Components
 
-The standard variable naming format is comprised of either 4 or 5 main components, separated by a single underscore ( `_` ). Variables that represent a scale within an instrument comprised of multiple scales will include the component `scale` and otherwise will not include this component:
+The standard variable naming format is comprised of either 4 or 5 main components, separated by a single underscore (vs double or triple underscores, which precede subcomponents - **see section on [Subcomponents](#subcomponents) below**). Variables that represent a scale within an instrument comprised of multiple scales will include the component `scale` and otherwise will not include this component:
 
 <p style="font-size: 1.8em; font-weight: bold; padding: 20px;" align="center">
 <code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
