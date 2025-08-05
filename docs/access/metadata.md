@@ -577,14 +577,13 @@ The standard variable naming format is comprised of either 4 or 5 main component
     </tr>
   </tbody>
 </table>
-
 <p>In future releases, scales will use a hyphen (<code>-</code>) instead of a single underscore ( <code>_</code> ) before the scale name. This change ensures all variables have the same number of naming components, making it easier to distinguish main components without needing prior knowledge of whether an instrument contains multiple scales.
 </p>
 </div>
 
 ### Subcomponents
 
-The `table`, <code><span style="color: teal;">scale</span></code>, and `item` components can have additional subcomponents separated by **double underscores ( `__` )** to indicate nesting within the main components. Subcomponents distinguish finer details such as **subscales**, **versions**, or **counter types** within a given table or field.
+The `table`, <code><span style="color: teal;">scale</span></code>, and `item` components can have additional subcomponents separated by **double ( `__` ) or triple ( `___` ) underscores** to indicate nesting within the main components. Subcomponents distinguish finer details such as **subscales**, **versions**, or **counter types** within a given table or field.
 
 For example, for the table name `ncl_cg_spm2__inf`, the double underscore separates the instrument (`spm2`) from its subcomponent/version (`inf`), i.e., the infant-specific version of SPM-2:
 
