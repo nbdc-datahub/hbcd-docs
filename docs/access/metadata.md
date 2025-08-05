@@ -373,7 +373,7 @@ A unified naming convention has been applied to most table and field names in th
 The **standard variable naming format** is comprised of 4 components, separated by a single underscore ( `_` ):
 
 <p style="font-size: 1.8em; font-weight: bold;" align="center">
-<code>domain_source_table_item</code>
+<code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
 </p>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -401,6 +401,11 @@ The **standard variable naming format** is comprised of 4 components, separated 
 <tr>
 <td><b><code>table</code></b></td>
 <td>Specific instrument name/protocol element.</td>
+<td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
+</tr>
+<tr>
+<td><b><code><span style="color: teal;">{scale}</span></code></b></td>
+<td style="word-wrap: break-word; white-space: normal;"><i>If applicable</i>, name of scale within instrument/protocol element. Variables without separate scales will not include this naming component.</td>
 <td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
 </tr>
 <tr>
@@ -484,6 +489,12 @@ The **standard variable naming format** is comprised of 4 components, separated 
   </tbody>
 </table>
 </div>
+
+<br>
+
+#### Scales
+
+**In the future, scales will be preceded by a hyphen (`-`) so that all variables have a consistent number of naming components, making it easier to differentiate between main components**
 
 ### Subcomponents
 
