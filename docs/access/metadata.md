@@ -508,62 +508,72 @@ The standard variable naming format is comprised of either 4 or 5 main component
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px"">
   <thead>
     <tr>
-      <th style="width: 5%">Domain</th>
-      <th style="width: 30%">Instrument</th>
-      <th style="width: 30%">Table Name</th>
-      <th style="width: 10%">Example Variable</th>
+      <th style="width: 5%; padding-right: 2px;">Domain</th>
+      <th style="width: 30%; padding-right: 2px;">Instrument</th>
+      <th style="width: 30%; padding-left: 2px; padding-right: 2px;">Table Name</th>
+      <th style="width: 10%; padding-left: 2px;">Example Variable</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><span class="tooltip tooltip-right">BCGI<span class="tooltiptext">Behavior & Child-Caregiver Interaction</span></span></td>
       <td><a href="../../instruments/bcgi/ibqr" target="_blank">IBQ-R (VSF)+BI</a></td>
-      <td><code>mh_cg_ibqr</code></td>
-      <td><code>mh_cg_ibqr_<span style="color: teal;">beh</span>_001</code></td>
+      <td style="padding-left: 2px; padding-right: 2px;"><code>mh_cg_ibqr</code></td>
+      <td style="padding-left: 2px;"><code>mh_cg_ibqr_<span style="color: teal;">beh</span>_001</code></td>
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right">NCL<span class="tooltiptext">Neurocognition & Language</span></span></td>
       <td><a href="../../instruments/neurocog/spm2" target="_blank">SPM-2</a></td>
-      <td><code>ncl_cg_spm2__inf</code></td>
-      <td><code>ncl_cg_spm2__inf_<span style="color: teal;">soc</span>_001</code></td>
+      <td style="padding-left: 2px; padding-right: 2px;"><code>ncl_cg_spm2__inf</code></td>
+      <td style="padding-left: 2px;"><code>ncl_cg_spm2__inf_<span style="color: teal;">soc</span>_001</code></td>
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right">PH<span class="tooltiptext">Physical Health</span></span></td>
       <td><a href="../../instruments/physhealth/growth" target="_blank">Growth</a></td>
-      <td><code>ph_ch_anthro</code></td>
-      <td><code>ph_ch_anthro_<span style="color: teal;">head</span>_001__01</code></td>
+      <td style="padding-left: 2px; padding-right: 2px;"><code>ph_ch_anthro</code></td>
+      <td style="padding-left: 2px;"><code>ph_ch_anthro_<span style="color: teal;">head</span>_001__01</code></td>
     </tr>
     <tr>
-      <td rowspan="3"><span class="tooltip tooltip-right">PEX<span class="tooltiptext">Pregnancy & Exposure, Including Substance Use</span></span></td>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#pregexp">Pregnancy & Infant Health</a> instruments, e.g. Healthhx:</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__healthhx</code></td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_<span style="color: teal;">preg__healthhx__preghx</span>_001__01</code></td>
+      <td rowspan="5"><span class="tooltip tooltip-right">PEX<span class="tooltiptext">Pregnancy & Exposure, Including Substance Use</span></span></td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#pregexp" target="_blank">Pregnancy Health</a> (ALL),<br>e.g. Healthhx:</td>
+      <td style="padding-left: 2px; padding-right: 2px; word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__healthhx</code></td>
+      <td style="padding-left: 2px; word-wrap: break-word; white-space: normal;"><code>pex_bm_health_<span style="color: teal;">preg__healthhx__preghx</span>_001__01</code></td>
+    </tr>
+    <tr>
+      <td><a href="../../instruments/pregexp/preghealth/end-preg/" target="_blank">Preg Health V2</a></td>
+      <td style="padding-left: 2px; padding-right: 2px;"><code>pex_bm_healthv2_preg</code></td>
+      <td style="padding-left: 2px;"><code>pex_bm_healthv2_<span style="color: teal;">preg__exp__vacc</span>_018___0</code></td>
+    </tr>
+    <tr>
+      <td><a href="../../instruments/pregexp/preghealth/infanthealth/" target="_blank">Infant Health V2</a></td>
+      <td style="padding-left: 2px; padding-right: 2px;"><code>pex_bm_healthv2_inf</code></td>
+      <td style="padding-left: 2px;"><code>pex_bm_healthv2_<span style="color: teal;">inf</span>_001__00</code></td>
     </tr>
     <tr>
       <td><a href="../../instruments/pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
-      <td><code>pex_bm_psych</code></td>
-      <td><code>pex_bm_psych_<span style="color: teal;">bf</span>_001</code></td>
+      <td style="padding-left: 2px; padding-right: 2px;"><code>pex_bm_psych</code></td>
+      <td style="padding-left: 2px;"><code>pex_bm_psych_<span style="color: teal;">bf</span>_001</code></td>
     </tr>
     <tr>
       <td><a href="../../instruments/pregexp/su/assist" target="_blank">ASSIST V1/2/3</a></td>
-      <td><code>pex_bm_assistv1</code></td>
-      <td><code>pex_bm_assistv1_<span style="color: teal;">lt__use</span>_001</code></td>
+      <td style="padding-left: 2px; padding-right: 2px;"><code>pex_bm_assistv1</code></td>
+      <td style="padding-left: 2px;"><code>pex_bm_assistv1_<span style="color: teal;">lt__use</span>_001</code></td>
     </tr>
     <tr>
       <td rowspan="3"><span class="tooltip tooltip-right">SED<span class="tooltiptext">Social & Environmental Determinants</span></span></td>
       <td><a href="../../instruments/SED/bfy" target="_blank">BFY</a></td>
-      <td><code>sed_bm_bfy</code></td>
-      <td><code>sed_bm_bfy_<span style="color: teal;">econstr</span>_001</code></td>
+      <td style="padding-left: 2px; padding-right: 2px;"><code>sed_bm_bfy</code></td>
+      <td style="padding-left: 2px;"><code>sed_bm_bfy_<span style="color: teal;">econstr</span>_001</code></td>
     </tr>
     <tr>
       <td><a href="../../instruments/SED/v01-demo" target="_blank">Demographics</a></td>
-      <td><code>sed_bm_demo</code></td>
-      <td><code>sed_bm_demo_<span style="color: teal;">residence</span>_001</code></td>
+      <td style="padding-left: 2px; padding-right: 2px;"><code>sed_bm_demo</code></td>
+      <td style="padding-left: 2px;"><code>sed_bm_demo_<span style="color: teal;">residence</span>_001</code></td>
     </tr>
      <tr>
       <td><a href="../../instruments/SED/promis" target="_blank">PROMIS</a></td>
-      <td><code>sed_bm_strsup</code></td>
-      <td><code>sed_bm_strsup_<span style="color: teal;">socspprt</span>_001</code></td>
+      <td style="padding-left: 2px; padding-right: 2px;"><code>sed_bm_strsup</code></td>
+      <td style="padding-left: 2px;"><code>sed_bm_strsup_<span style="color: teal;">socspprt</span>_001</code></td>
     </tr>
   </tbody>
 </table>
