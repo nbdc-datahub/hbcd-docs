@@ -419,12 +419,12 @@ The standard variable naming format is comprised of either 4 or 5 main component
   <td>2) <code>summary_score</code>; <code>score</code>; etc.</td>
   </tr>
   <tr>
-  <td>3) Administrative variable<b>**</b><br><br></td>
+  <td>3) Administrative variable<span class="blue-text">**</span><br><br></td>
   <td style="word-wrap: break-word; white-space: normal;">3) <code>administration</code>; <code>location</code>; <span class="tooltip tooltip-left">etc.<span class="tooltiptext"><code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></span></span><br><br></td>
 </tr>
 </tbody>
 </table>
-<i><b>**</b>Note: For instruments with scales, administrative variables (e.g. <code>mh_cg_ibqr_administration</code>) will have <code>administration</code> in place of <code>scale_item</code> and thus only have 4 components.</i>
+<span class="blue-text">**</span><i><b>Note</b>: For tables with variables that include the <code><span style="color: teal;">{scale}</span></code> naming component, the administrative variables will supplant the <code>scale_item</code> components with one of the possible administrative values.</i>
 
 
 <div id="domain" class="table-banner" onclick="toggleCollapse(this)">
