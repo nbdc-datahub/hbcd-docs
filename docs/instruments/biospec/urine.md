@@ -670,7 +670,7 @@ These data are the results of urine toxicology assays. **Screening** results for
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Assay results may be scored as invalid if specimens are identified as dilute, substituted, adulterated, or otherwise insufficient based on validation. Validation is based on creatinine, pH, and nitrite measurements. Specimens with low creatinine (< 20 mg/dL) are confirmed using specific gravity via refractometer (decision grid below), and the creatinine analysis is repeated to rule out issues with the first analysis (e.g. sample mix-ups, air bubble in a line on the instrument, etc.).</p>
+<p>Assay results may be scored as invalid if specimens are identified as dilute, substituted, adulterated, or otherwise insufficient based on validation. Validation is based on creatinine, pH, and nitrite measurements. <b>Only specimens with low creatinine (< 20 mg/dL) are confirmed using specific gravity via a refractometer</b> (decision grid below), and the creatinine analysis is repeated to rule out issues with the first analysis (e.g. sample mix-ups, air bubble in a line on the instrument, etc.).</p>
 <img src="../images/Table1_biospec_urine.png" width="70%" height="auto" class="center">
 <br>
 </div>
