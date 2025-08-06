@@ -69,7 +69,7 @@ The HBCD-MADE summary statistics for resting-state EEG data contained in the der
 
 **Expected Fix:** Release 1.1
 
-## Magnetic Resonance Imaging (MRI) & Spectroscopy (MRS)
+## Imaging Data
 
 ##### ⚠️ Run ID Order May Be Incorrect
 
