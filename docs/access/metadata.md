@@ -406,7 +406,7 @@ Double ( `__` ) or triple ( `___` ) underscores are used for nesting `table`, `s
 </tr>
 <tr>
 <td><b><code><span style="color: teal;">{scale}</span></code></b></td>
-<td style="padding-left: 2px; word-wrap: break-word; white-space: normal;">Name of scale within instrument/protocol element. With the exception of administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span>, <b>only variables of instruments with multiple scales contain the <code><span style="color: teal;">scale</span></code> element</b> (<i><a href="#scale">see details</a></i>).</td>
+<td style="padding-left: 2px; word-wrap: break-word; white-space: normal;">Name of scale within instrument/protocol element. With the exception of administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span>, <b>only variables of instruments with multiple scales contain the <code><span style="color: teal;">scale</span></code> component</b> (<i><a href="#scale">see details</a></i>).</td>
 <td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
 </tr>
 <tr>
