@@ -366,70 +366,67 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 
 ## Naming Conventions
 
-A unified naming convention has been applied to most table and field names in the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> release data <a href="../../datacuration/overview" target="_blank"><span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">Click to go to overview of tabulated vs. file-based data</span></span></a>. HBCD largely follows the same naming conventions as ABCD ([see details](https://docs.abcdstudy.org/latest/documentation/curation/naming.html)), adapted for HBCD study measures. This convention is designed to provide clarity and consistency across the dataset, making it easier for users to understand the structure and content of the data. 
+A standardized variable naming convention is used across most tables and fields in the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> release data. These conventions are adapted from the [ABCD Study](https://docs.abcdstudy.org/latest/documentation/curation/naming.html) and ensure consistency across instruments and derived datasets, allowing for intuitive parsing of variable meaning and structure.
 
-### Primary Components
+### Convention Logic & Rules
 
-The standard variable naming format is comprised of 4 or 5 main components separated by a single underscore ( `_` ): 
+The standard variable naming format is comprised of 4 or 5 main components: 
 
  <p style="font-size: 1.8em; font-weight: bold; padding: 10px;" align="center">
 <code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
 </p>
 
-Double ( `__` ) or triple ( `___` ) underscores are used for nesting `table`, `scale`, and/or `item` *subcomponents*, [described below](#subcomponents). Note that variables names will only include the <code><span style="color: teal;">scale</span></code> component if the instrument is composed of multiple scales. 
+- **Main components** are generally separated by a single underscore ( `_` ).
+- **Subcomponents** are separated by double/triple ( `__` ,  `___` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*.
+- Variables names will only include the <code><span style="color: teal;">scale</span></code> component if the instrument is composed of multiple scales.
 
-<p style="font-size: 1.1em; font-weight: bold; margin-bottom: 0; padding-bottom: 0;">Naming Component Details</p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+### Naming Component Definitions
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-  <th style="width: 5%; padding-right: 2px;"></th>
-  <th style="width: 50%; padding-left: 2px; padding-right: 2px;">Definition</th>
-  <th style="width: 30%;">Example Values</th>
+  <th style="width: 10%;">Component</th>
+  <th style="width: 45%;">Definition</th>
+  <th style="width: 35%;">Example Values</th>
 </thead>
 <tbody>
 <tr>
-  <td style="padding-right: 2px;"><b><code>domain</code></b></td>
-  <td style="padding-right: 2px; padding-left: 2px; word-wrap: break-word; white-space: normal;">Expanded version of <a href="#data-dictionary">NBDC Data Dictionary</a> <code>domain</code> values that includes additional domains (e.g. Biosensors)</td>
+  <td><b><code>domain</code></b></td>
+  <td style="word-wrap: break-word; white-space: normal;">Data domain (e.g. biospecimens, imaging)</td>
   <td><span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>;
-  <span class="tooltip"><code>img</code><span class="tooltiptext">Imaging/MRI</span></span> (<i><a href="#domain">see full list</a></i>)</td>
+  <span class="tooltip"><code>img</code><span class="tooltiptext">Imaging/MRI</span></span>; <i><a href="#domain">see full list</a></i></td>
 </tr>
 <tr>
-  <td style="padding-right: 2px;"><b><code>source</code></b></td>
-  <td style="padding-right: 2px; padding-left: 2px; word-wrap: break-word; white-space: normal;">Corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a>; indicates either the subject (who the protocol element is about) or respondent (who completed the assessment).</td>
+  <td><b><code>source</code></b></td>
+  <td style="word-wrap: break-word; white-space: normal;">Subject/respondent (e.g., child, birth parent)</td>
   <td><span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
-    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span> (<i><a href="#source">see full list</a></i>)
+    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>; <i><a href="#source">see full list</a></i>
   </td>
 </tr>
 <tr>
-<td style="padding-right: 2px;"><b><code>table</code></b></td>
-<td style="padding-left: 2px;">Specific instrument name/protocol element.</td>
-<td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
+<td><b><code>table</code></b></td>
+<td>Instrument/protocol element name</td>
+<td>Varies by instrument</td></tr>
 </tr>
 <tr>
 <td><b><code><span style="color: teal;">{scale}</span></code></b></td>
-<td style="padding-left: 2px; word-wrap: break-word; white-space: normal;">Name of scale within instrument/protocol element. With the exception of administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span>, <b>only variables of instruments with multiple scales contain the <code><span style="color: teal;">scale</span></code> component</b> (<i><a href="#scale">see details</a></i>).</td>
-<td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Name of scale within instrument/protocol element - <i>only if instrument contains multiple scales</i></td>
+<td style="word-wrap: break-word; white-space: normal;">Varies by instrument - <i><a href="#scale">see details</a></i></td></tr>
 </tr>
 <tr>
-  <td style="padding-right: 2px;"><b><code>item</code></b></td>
-  <td style="padding-left: 2px; word-wrap: break-word; white-space: normal;"><i>The <code>item</code> component will be one of the following:</i><br><br>
-  1) <b>Scale item</b>: a 3-digit number corresponding to individual questions in a scale<br>
-  2) <b>Score label</b> for individual items in a table<br>
-  3) <b>Administrative label</b> for administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span><br></td>
-  <td style="word-wrap: break-word; white-space: normal;"><br><br><br>
-  1) <code>001</code>; <code>001__01</code>; etc<br>
-  2) <code>score</code>; <code>total_score</code>; etc.<br>
-  3) <code>administration</code>; <code>location</code>; <span class="tooltip tooltip-left">etc.<span class="tooltiptext"><code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></span></span><br><br>
-  </td></tr>
+  <td><b><code>item</code></b></td>
+  <td style="word-wrap: break-word; white-space: normal;">Item number, score label, or admin field</td>
+  <td style="word-wrap: break-word; white-space: normal;"><code>001</code>; <code>score</code>; <code>administration</code> - <i><a href="#item">see details</a></i></td>
+</tr>
 </tr>
 </tbody>
 </table>
 
 
+### Naming Component Details (*Click to Expand*)
+
 <div id="domain" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span style="display: inline-flex; align-items: center;">
-   Domain Values
-  </span>
+  <span style="display: inline-flex; align-items: center;">Domain</span>
   <a class="anchor-link" href="#domain" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -437,6 +434,7 @@ Double ( `__` ) or triple ( `___` ) underscores are used for nesting `table`, `s
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p>Domain is an expanded version of <a href="#data-dictionary">NBDC Data Dictionary</a> <code>domain</code> values that includes additional domains (e.g. Biosensors):</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
     <tr>
@@ -461,9 +459,7 @@ Double ( `__` ) or triple ( `___` ) underscores are used for nesting `table`, `s
 
 <div id="source" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span style="display: inline-flex; align-items: center;">
-   Source Values
-  </span>
+  <span style="display: inline-flex; align-items: center;">Source</span>
   <a class="anchor-link" href="#source" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -471,6 +467,7 @@ Double ( `__` ) or triple ( `___` ) underscores are used for nesting `table`, `s
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p>Source corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> and indicates either the subject (who the protocol element is about) or respondent (who completed the assessment).</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
     <tr>
@@ -496,7 +493,7 @@ Double ( `__` ) or triple ( `___` ) underscores are used for nesting `table`, `s
 
 <div id="scale" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span style="display: inline-flex; align-items: center;">Scale Details</span>
+  <span style="display: inline-flex; align-items: center;">Scale</span>
   <a class="anchor-link" href="#scale" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -504,7 +501,7 @@ Double ( `__` ) or triple ( `___` ) underscores are used for nesting `table`, `s
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Study instruments/tables composed of multiple scales will include the <code><span style="color: teal;">{scale}</span></code> naming component in their variable names. This is applicable to the following instruments in the current release:</p>
+<p><i>Only variables of instruments/tables composed of multiple scales include the <code><span style="color: teal;">scale</span></code> component</i>. Scale is also excluded from administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span>. The following instruments in the current release include the scale component in their variable names:</p>
 <br>
 <br>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
@@ -583,23 +580,53 @@ Double ( `__` ) or triple ( `___` ) underscores are used for nesting `table`, `s
 </p>
 </div>
 
-### Subcomponents
+<div id="item" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span style="display: inline-flex; align-items: center;">Item</span>
+  <a class="anchor-link" href="#item" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <th>Possible Item Type</th>
+  <th>Example Values</th>
+</thead>
+<tbody>
+<tr>
+  <td><b>Scale item</b>: a 3-digit number corresponding to individual questions in a scale</td>
+  <td><code>001</code>; <code>001__01</code>; etc</td>
+</tr>
+<tr>
+  <td><b>Score label</b> for individual items in a table</td>
+  <td><code>score</code>; <code>total_score</code>; etc.</td>
+</tr>
+<tr>
+  <td><b>Administrative label</b> for administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span></td>
+  <td  style="word-wrap: break-word; white-space: normal;"><code>administration</code>; <code>location</code>; <code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-The `table`, <code><span style="color: teal;">scale</span></code>, and `item` components can have additional subcomponents separated by **double ( `__` ) or triple ( `___` ) underscores** to indicate nesting within the main components. Subcomponents distinguish finer details such as **subscales**, **versions**, or **counter types** within a given table or field.
+### Example
 
-For example, for the table name `ncl_cg_spm2__inf`, the double underscore separates the instrument (`spm2`) from its subcomponent/version (`inf`), i.e., the infant-specific version of SPM-2:
+Let's break down the following example: `ncl_cg_spm2__inf_soc_001`
 
- - `ncl` (domain): <a href="../../instruments/#neurocog">Neurocognition & Language</a>
- - `cg` (source): Caregiver
- - `spm2` (table): the <a href="../../instruments/neurocog/spm2">SPM-2</a> instrument
-    - `inf` (table subcomponent): infant version of SPM-2
-
+- `ncl`: [Neurocognition & Language](../instruments/index.md#neurocog) (*domain*)
+- `cg`: Caregiver (*source*)
+- `spm2__inf`: nested table name
+    - `spm2`: the [SPM-2](../instruments/neurocog/spm2.md) instrument (*table*)
+    - `inf`: Infant version of SPM-2 (*table subcomponent*)
+- `soc`: scale for metrics of socialization
+- `001`: item number
 
 ### Exceptions
 
-Some variables do not fully follow the standard naming convention, though this will be improved in future releases. Notable exceptions include tabulated data for [MRI & MRS](../instruments/index.md#mri) and [EEG](../instruments/index.md#eeg) derived from associated <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. 
-
-All files begin with the **domain** (`img` or `eeg`) in accordance with the conventions described above, but the following elements may differ:
+Some variables do not fully follow the standard naming convention, though this will be improved in future releases. Notable exceptions include tabulated data for [MRI & MRS](../instruments/index.md#mri) and [EEG](../instruments/index.md#eeg) derived from associated <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. All files begin with the **domain** (`img` or `eeg`) in accordance with the conventions described above, but the following elements may differ:
 
  - In place of **source**, which for all MRI and EEG data is Child/`ch`, the pipeline name is typically given (e.g. `bibsnet`, `xcpd`, `osprey`, `made`, etc.)
  - In place of **table_item**, the keywords typically match the name of the pipeline derivative file from which the table was generated (see full lists of file-based derivatives for each pipeline [here](../datacuration/derivatives.md)). 
