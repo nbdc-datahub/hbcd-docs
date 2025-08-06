@@ -376,9 +376,8 @@ The standard variable naming format is comprised of 4 or 5 main components:
 <code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
 </p>
 
-- **Main components** are generally separated by a single underscore ( `_` ).
-- **Subcomponents** are separated by double/triple ( `__` ,  `___` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*.
-- Variables names will only include the <code><span style="color: teal;">scale</span></code> component if the instrument is composed of multiple scales.
+**Main components** are generally separated by a single underscore ( `_` ). Variables names will only include the <code><span style="color: teal;">scale</span></code> component if the instrument is composed of multiple scales.    
+**Subcomponents** are separated by double/triple ( `__` ,  `___` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*.
 
 ### Naming Component Definitions
 
