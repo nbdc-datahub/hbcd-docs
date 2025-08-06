@@ -620,8 +620,8 @@ Let's break down the following example: `ncl_cg_spm2__inf_soc_001`
 - `spm2__inf`: nested table name
     - `spm2`: the [SPM-2](../instruments/neurocog/spm2.md) instrument (*table*)
     - `inf`: Infant version of SPM-2 (*table subcomponent*)
-- `soc`: scale for metrics of socialization
-- `001`: item number
+- `soc`: scale for metrics of socialization (*scale*)
+- `001`: item number (*item*)
 
 ### Exceptions
 
