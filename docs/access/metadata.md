@@ -376,9 +376,10 @@ The standard variable naming format is comprised of 4 or 5 main components:
 <code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
 </p>
 
-**Main components** are generally separated by a single underscore ( `_` ). Variables names will only include the <code><span style="color: teal;">scale</span></code> component if the instrument is composed of multiple scales.    
-**Subcomponents** are separated by double/triple ( `__` ,  `___` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*.
-
+ - **Main components** are generally separated by a single underscore ( `_` ). Variables names will only include the <code><span style="color: teal;">scale</span></code> component if the instrument is composed of multiple scales.    
+ - **Subcomponents** are separated by double/triple ( `__` ,  `___` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*.
+ - **Administrative** (e.g., language or date of administration) and **summary score** (e.g., sums or means of individual items in a table) variables include admin fields and score labels in place of `item` (or <code><span style="color: teal;">{scale}</span>_item</code> where relevant). Admin and score labels often include single underscores (e.g., `date_taken`, `total_score`, etc.), but represent single main components. See more examples of possible admin and score values under [Item Details](#item).
+ 
 ### Naming Component Definitions
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -415,7 +416,6 @@ The standard variable naming format is comprised of 4 or 5 main components:
   <td><b><code>item</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Item number, score label, or admin field</td>
   <td style="word-wrap: break-word; white-space: normal;"><code>001</code>; <code>score</code>; <code>administration</code> - <i><a href="#item">see details</a></i></td>
-</tr>
 </tr>
 </tbody>
 </table>
