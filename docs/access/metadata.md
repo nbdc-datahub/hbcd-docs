@@ -370,57 +370,61 @@ A unified naming convention has been applied to most table and field names in th
 
 ### Primary Components
 
-The standard variable naming format is comprised of either 4 or 5 main components, separated by a single underscore (vs double or triple underscores, which precede subcomponents - **see section on [Subcomponents](#subcomponents) below**). Variables that represent a scale within an instrument comprised of multiple scales will include the component `scale` and otherwise will not include this component:
+The standard variable naming format is comprised of 4 or 5 main components separated by a single underscore ( `_` ). 
 
-<p style="font-size: 1.8em; font-weight: bold; padding: 20px;" align="center">
+ <p style="font-size: 1.8em; font-weight: bold; padding: 10px;" align="center">
 <code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
 </p>
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+Double ( `__` ) or triple ( `___` ) underscores are used for nesting `table`, `scale`, and/or `item` *subcomponents* (see details under ([Subcomponents](#subcomponents) below). Note that variables names will only include the <code><span style="color: teal;">scale</span></code> component if the instrument is composed of multiple scales. Additional details on each of these naming components is as follows:
+
+<p style="font-size: 1.1em; font-weight: bold; margin-bottom: 0; padding-bottom: 0;">Naming Component Details</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-  <th style="width: 5%;"></th>
-  <th style="width: 50%;">Definition</th>
+  <th style="width: 5%; padding-right: 2px;"></th>
+  <th style="width: 50%; padding-left: 2px; padding-right: 2px;">Definition</th>
   <th style="width: 30%;">Example Values</th>
 </thead>
 <tbody>
 <tr>
-  <td><b><code>domain</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Expanded version of <a href="#data-dictionary">NBDC Data Dictionary</a> <code>domain</code> values that includes additional domains (e.g. Biosensors)</td>
+  <td style="padding-right: 2px;"><b><code>domain</code></b></td>
+  <td style="padding-right: 2px; padding-left: 2px; word-wrap: break-word; white-space: normal;">Expanded version of <a href="#data-dictionary">NBDC Data Dictionary</a> <code>domain</code> values that includes additional domains (e.g. Biosensors)</td>
   <td><span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>;
   <span class="tooltip"><code>img</code><span class="tooltiptext">Imaging/MRI</span></span> (<i><a href="#domain">see full list</a></i>)</td>
 </tr>
 <tr>
-  <td><b><code>source</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a>; indicates either the subject (who the protocol element is about) or respondent (who completed the assessment).</td>
+  <td style="padding-right: 2px;"><b><code>source</code></b></td>
+  <td style="padding-right: 2px; padding-left: 2px; word-wrap: break-word; white-space: normal;">Corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a>; indicates either the subject (who the protocol element is about) or respondent (who completed the assessment).</td>
   <td><span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
     <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span> (<i><a href="#source">see full list</a></i>)
   </td>
 </tr>
 <tr>
-<td><b><code>table</code></b></td>
-<td>Specific instrument name/protocol element.</td>
+<td style="padding-right: 2px;"><b><code>table</code></b></td>
+<td style="padding-left: 2px;">Specific instrument name/protocol element.</td>
 <td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
 </tr>
 <tr>
 <td><b><code><span style="color: teal;">{scale}</span></code></b></td>
-<td style="word-wrap: break-word; white-space: normal;"><b>If applicable</b> (<i><a href="#scale">see details</a></i>), name of scale within instrument/protocol element. Variables without separate scales will not include this naming component.</td>
+<td style="padding-left: 2px; word-wrap: break-word; white-space: normal;"><b>If applicable</b> (<i><a href="#scale">see details</a></i>), name of scale within instrument/protocol element. The following variables will be missing the <code><span style="color: teal;">scale</span></code> element:<br>
+  &nbsp;&nbsp;• Variables that do not contain multiple scales<br>
+  &nbsp;&nbsp;• Administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span></td>
 <td style="word-wrap: break-word; white-space: normal;">(varies by instrument)</td></tr>
 </tr>
 <tr>
-  <td><b><code>item</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;"><b>The <code>item</code> component will be one of the following:</b><br>
-  1) 3-digit number corresponding to individual questions in a scale<br>
-  2) Summary scores for individual items in a table<br>
-  3) Administrative variable<span class="blue-text">**</span><br></td>
-  <td style="word-wrap: break-word; white-space: normal;"><br><br>
+  <td style="padding-right: 2px;"><b><code>item</code></b></td>
+  <td style="padding-left: 2px; word-wrap: break-word; white-space: normal;"><i>The <code>item</code> component will be one of the following:</i><br><br>
+  1) <b>Scale item</b>: a 3-digit number corresponding to individual questions in a scale<br>
+  2) <b>Score label</b> for individual items in a table<br>
+  3) <b>Administrative label</b> for administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span><br></td>
+  <td style="word-wrap: break-word; white-space: normal;"><br><br><br>
   1) <code>001</code>; <code>001__01</code>; etc<br>
-  2) <code>summary_score</code>; <code>score</code>; etc.<br>
+  2) <code>score</code>; <code>total_score</code>; etc.<br>
   3) <code>administration</code>; <code>location</code>; <span class="tooltip tooltip-left">etc.<span class="tooltiptext"><code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></span></span><br><br>
   </td></tr>
 </tr>
 </tbody>
 </table>
-<span class="blue-text">**</span><i><b>Note</b>: For tables with variables that include the <code><span style="color: teal;">{scale}</span></code> naming component, the administrative variables will supplant the <code>scale_item</code> components with one of the possible administrative values.</i>
 
 
 <div id="domain" class="table-banner" onclick="toggleCollapse(this)">
