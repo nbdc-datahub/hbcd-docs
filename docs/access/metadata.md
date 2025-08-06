@@ -370,13 +370,13 @@ A unified naming convention has been applied to most table and field names in th
 
 ### Primary Components
 
-The standard variable naming format is comprised of 4 or 5 main components separated by a single underscore ( `_` ). 
+The standard variable naming format is comprised of 4 or 5 main components separated by a single underscore ( `_` ): 
 
  <p style="font-size: 1.8em; font-weight: bold; padding: 10px;" align="center">
 <code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
 </p>
 
-Double ( `__` ) or triple ( `___` ) underscores are used for nesting `table`, `scale`, and/or `item` *subcomponents* (see details under ([Subcomponents](#subcomponents) below). Note that variables names will only include the <code><span style="color: teal;">scale</span></code> component if the instrument is composed of multiple scales. Additional details on each of these naming components is as follows:
+Double ( `__` ) or triple ( `___` ) underscores are used for nesting `table`, `scale`, and/or `item` *subcomponents*, [described below](#subcomponents). Note that variables names will only include the <code><span style="color: teal;">scale</span></code> component if the instrument is composed of multiple scales. Additional details on each of these naming components is as follows:
 
 <p style="font-size: 1.1em; font-weight: bold; margin-bottom: 0; padding-bottom: 0;">Naming Component Details</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
