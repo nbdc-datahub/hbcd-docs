@@ -378,7 +378,7 @@ The standard variable naming format is comprised of 4 or 5 main components:
 
  - **Main components** are generally separated by a single underscore ( `_` ). Variables names will only include the <code><span style="color: teal;">scale</span></code> component if the instrument is composed of multiple scales.    
  - **Subcomponents** are separated by double/triple ( `__` ,  `___` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*.
- - **Administrative** (e.g., language or date of administration) and **summary score** (e.g., sums or means of individual items in a table) variables include admin fields and score labels in place of `item` (or <code><span style="color: teal;">{scale}</span>_item</code> where relevant). Admin and score labels often include single underscores (e.g., `date_taken`, `total_score`, etc.), but represent single main components. See more examples of possible admin and score values under [Item Details](#item).
+ - **Administrative** (e.g., language or date of administration) and **summary score** (e.g., sums or means of individual items in a table) variables include admin fields and score labels in place of `item` (or <code><span style="color: teal;">{scale}</span>_item</code> where relevant). Admin and score labels often include single underscores (e.g., `date_taken`, `total_score`, etc.), but represent single main components - [see details](#administrative-summary-score-variables).
  
 ### Naming Component Definitions
 
@@ -414,12 +414,11 @@ The standard variable naming format is comprised of 4 or 5 main components:
 </tr>
 <tr>
   <td><b><code>item</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Item number, score label, or admin field</td>
-  <td style="word-wrap: break-word; white-space: normal;"><code>001</code>; <code>score</code>; <code>administration</code> - <i><a href="#item">see details</a></i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Item number corresponding to individual questions in a scale. Admin and summary score variables will have an admin field or score label in place of item - <a href="#administrative-summary-score-variables">see details</a></td>
+  <td style="word-wrap: break-word; white-space: normal;"><code>001</code>; <code>001__01</code>; etc. or admin/score label - <i><a href="#item">see details</a></i></td>
 </tr>
 </tbody>
 </table>
-
 
 ### Naming Component Details (*Click to Expand*)
 
@@ -611,6 +610,7 @@ The standard variable naming format is comprised of 4 or 5 main components:
 </table>
 </div>
 
+
 ### Example
 
 Let's break down the following example: `ncl_cg_spm2__inf_soc_001`
@@ -625,10 +625,33 @@ Let's break down the following example: `ncl_cg_spm2__inf_soc_001`
 
 ### Exceptions
 
-Some variables do not fully follow the standard naming convention, though this will be improved in future releases. Notable exceptions include tabulated data for [MRI & MRS](../instruments/index.md#mri) and [EEG](../instruments/index.md#eeg) derived from associated <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. All files begin with the **domain** (`img` or `eeg`) in accordance with the conventions described above, but the following elements may differ:
+Some variables do not fully follow the standard naming convention, though this will be improved in future releases. Notable exceptions include the following.
+
+#### Administrative & Summary Score Variables
+
+Administrative (e.g., language or date of administration) and summary score (e.g., sums or means of individual items in a table) variables include **admin fields** and **score labels** in place of `item` (or <code><span style="color: teal;">{scale}</span>_item</code> where relevant). Admin and score labels often include single underscores, but represent single main components. For example, possible values include:
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+  <td><b>Admin fields</b></td>
+  <td  style="word-wrap: break-word; white-space: normal;"><code>administration</code>; <code>location</code>; <code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></td>
+</tr>
+<tr>
+  <td><b>Score labels</b></td>
+  <td><code>score</code>; <code>summary_score</code>; <code>total_score</code>; etc.</td>
+</tr>
+</tbody>
+</table>
+
+#### MRI, MRS, & EEG
+
+Tabulated data for [MRI & MRS](../instruments/index.md#mri) and [EEG](../instruments/index.md#eeg) derived from associated <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. All files begin with the **domain** (`img` or `eeg`) in accordance with the conventions described above, but the following elements may differ:
 
  - In place of **source**, which for all MRI and EEG data is Child/`ch`, the pipeline name is typically given (e.g. `bibsnet`, `xcpd`, `osprey`, `made`, etc.)
  - In place of **table_item**, the keywords typically match the name of the pipeline derivative file from which the table was generated (see full lists of file-based derivatives for each pipeline [here](../datacuration/derivatives.md)). 
+
+
 
 ## Study Design Logic: Child-Centric Data Structure
 
