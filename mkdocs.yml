@@ -74,6 +74,7 @@ nav:
     - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 
             - ecPROMIS: instruments/bcgi/ecpromis.md
+            - HOME-21: instruments/bcgi/home21.md
             - IBQ-R (VSF)+BI: instruments/bcgi/ibqr.md
             - MAPS-TL: instruments/bcgi/maps-tl.md
         - Biospecimens & Omics:
