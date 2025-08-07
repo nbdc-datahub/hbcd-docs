@@ -13,7 +13,6 @@ Instruction text in the form's metadata is extracted programmatically from the m
 
 **Expected Fix:** Release 1.1  
 
-
 ## Basic Demographics
 
 ##### ⚠️ Duplicate Options for 'Mother Race' Variable
@@ -64,11 +63,19 @@ There are two participants with negative gestational ages in the urine biosample
 
 **Expected Fix:** Release 1.1
 
-## Electroencephalography (EEG)
+## EEG
 ##### ⚠️ HBCD-MADE Resting-State Derivatives
 The HBCD-MADE summary statistics for resting-state EEG data contained in the derivative file `processed_data/*_task-RS_powerSummaryStats.csv` (see HBCD-MADE derivatives structure [here](../datacuration/derivatives.md#hbcd-made-made) for details) are incorrect due to a former bug in the pipeline and should not be used for analysis. Users should instead generate these files themselves using scripts provided via [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/en/stable/) for extracting summary statistics.    
 
 **Expected Fix:** Release 1.1
+
+## Imaging Data
+
+##### ⚠️ Run ID Order May Be Incorrect
+
+For HBCD BIDS data with multiple runs, the run number displayed in the `run-<label>` field is not guaranteed to reflect the chronological acquisition order. This applies to both raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data, as well as derived <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data. Despite this, the data remain internally consistent — for example, the run IDs in the raw BIDS data match the corresponding runs in the processed BIDS data.
+
+**Expected Fix:** Release 2.0 
 
 ## Neurocognition & Language
 ##### ⚠️ SPM-2 T-Scores
