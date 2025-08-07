@@ -60,14 +60,20 @@ Assessment of children’s home environments is crucial to understanding context
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The HOME-21 is scored in 2 domains, <b>Cognitive Stimulation (C)</b> and <b>Emotional Support (E)</b> (see NLSY Scale* in table below), plus a total score. Individual items are rescored as Yes/No and summed within each domain and overall. The tool is intended to be used in infants aged Birth-2y11m30d. Details are as follows:</p>
-<ul>
-  <li><b>Cognitive Stimulation (C)</b>: Sum of Yes (1) responses for items with C in table (range 0-8) provided complete valid responses.</li>
-  <li><b>Emotional Support (E)</b>: Sum of Yes (1) responses for items with E in table (range 0-3) provided complete valid responses.</li>
-  <li><b>HOME-21 Infant/Toddler Total</b>: Sum of all Yes (1) responses in table (range 0-12) provided complete valid responses.</li>
-</ul>
+<p>The HOME-21 is scored in 2 domains, <i>Cognitive Stimulation (C)</i> and <i>Emotional Support (E)</i> (see NLSY Scale* in table below), plus a total score:</p><br><br>
 
-<p>See <a href="https://doi.org/10.1037/pas0001183">Lansford et al. (2023)</a> for complete scoring procedure details.
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px; padding-bottom: 0; margin-bottom: 0;">
+<tbody>
+<tr><td><b>Cognitive Stimulation (C)</b></td>
+<td style="word-wrap: break-word; white-space: normal;">Sum of Yes (1) responses for items with C in table (range 0-8) provided complete valid responses.</td></tr> 
+<tr><td><b>Emotional Support (E)</b></td>
+<td style="word-wrap: break-word; white-space: normal;">Sum of Yes (1) responses for items with E in table (range 0-3) provided complete valid responses.</td></tr> 
+<tr><td><b>HOME-21 Infant/Toddler Total</b></td>
+<td style="word-wrap: break-word; white-space: normal;">Sum of all Yes (1) responses in table (range 0-12) provided complete valid responses.</td></tr> 
+</tbody>
+</table>
+<p>Individual items are rescored as Yes/No and summed within each domain and overall. The tool is intended to be used in infants aged Birth-2y11m30d. Details are as follows. See <a href="https://doi.org/10.1037/pas0001183">Lansford et al. (2023)</a> for complete scoring procedure details.</p>
+<br><br>
 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
 <thead>
