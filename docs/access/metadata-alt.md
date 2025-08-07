@@ -1,3 +1,74 @@
+<div style="display: flex; gap: 30px; align-items: flex-start;">
+  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+    <caption style="caption-side: top; font-weight: bold; padding-bottom: 8px;">
+    Possible Values:  <code>domain</code>
+    </caption>
+    <tbody>
+      <tr><td><code>bio</code></td><td>BioSpecimens</td></tr>
+      <tr><td><code>eeg</code></td><td>Tabular EEG</td></tr>
+      <tr><td><code>mh</code></td><td>Behavior/Child-Caregiver Interaction</td></tr>
+      <tr><td><code>img</code></td><td>Tabular Imaging</td></tr>
+      <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
+      <tr><td><code>nt</code></td><td>Novel Tech (<i>Novel Technology & Wearable Sensors</i>)</td></tr>
+      <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
+      <tr><td><code>ph</code></td><td>Physical Health</td></tr>
+      <tr><td><code>sed</code></td><td>Social and Environmental Determinants</td></tr>
+    </tbody>
+  </table>
+  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+    <caption style="caption-side: top; font-weight: bold; padding-bottom: 8px;">
+    Possible Values:  <code>source</code>
+    </caption>
+    <tbody>
+      <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
+      <tr><td><code>cg</code></td><td>Caregiver (Responsible Adult)</td></tr>
+      <tr><td><code>ch</code></td><td>Child</td></tr>
+      <tr><td><code>ld</code></td><td>Linked Data</td></tr>
+      <tr><td><code>ra</code></td><td>RA (research assistant)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th>Domain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>bio</code></td><td>BioSpecimens</td></tr>
+    <tr><td><code>eeg</code></td><td>Tabular EEG</td></tr>
+    <tr><td><code>mh</code></td><td>Behavior/Child-Caregiver Interaction</td></tr>
+    <tr><td><code>img</code></td><td>Tabular Imaging</td></tr>
+    <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
+    <tr><td><code>nt</code></td><td><span class="tooltip">Novel Tech<span class="tooltiptext">Novel Technology & Wearable Sensors</span></span></td></tr>
+    <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
+    <tr><td><code>ph</code></td><td>Physical Health</td></tr>
+    <tr><td><code>sed</code></td><td>Social and Environmental Determinants</td></tr>
+  </tbody>
+</table>
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
+    <td><code>cg</code></td><td>Caregiver (Responsible Adult)</td>
+    <tr><td><code>ch</code></td><td>Child</td></tr>
+    <tr><td><code>ld</code></td><td>Linked Data</td></tr>
+    <tr><td><code>ra</code></td><td>RA (research assistant)</td></tr>
+  </tbody>
+</table>
+
+
+
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <th style="width: 10%;">Component</th>

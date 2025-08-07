@@ -377,8 +377,7 @@ The standard variable naming format is comprised of 4 or 5 main components:
 </p>
 
  - **Main components** are generally separated by a single underscore ( `_` ). Most instruments with multiple scales will additionally include the <code><span style="color: teal;">scale</span></code> component (this component is otherwise optional and not included in all variable names).   
- - **Subcomponents** are separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*.
- - Multiselect fields are preceded by triple underscores ( `___` ), mainly relevant for [V01 Demographics](../instruments/SED/v01-demo.md) (`sed_bm_demo`) variables.
+ - **Subcomponents** are separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*. Multiselect fields are preceded by triple underscores ( `___` ), mainly relevant for [V01 Demographics](../instruments/SED/v01-demo.md) (`sed_bm_demo`) variables.
  
 ### Naming Component Definitions
 
@@ -396,13 +395,13 @@ The standard variable naming format is comprised of 4 or 5 main components:
   <span class="tooltip"><code>img</code><span class="tooltiptext">Imaging/MRI</span></span>;
   <span class="tooltip"><code>sed</code><span class="tooltiptext">Social & Environmental Determinants</span></span>;
   <span class="tooltip"><code>pex</code><span class="tooltiptext">Pregnancy & Exposures, Including Substance Use</span></span>;
-  <i><a href="#domain">see full list</a></i></td>
+  <i><a href="#domain-source-values">see full list</a></i></td>
 </tr>
 <tr>
   <td><b><code>source</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Subject/respondent (e.g., child, birth parent)</td>
+  <td style="word-wrap: break-word; white-space: normal;"><span class="tooltip">Subject<span class="tooltiptext">who the protocol element is about</span></span>/<span class="tooltip">respondent<span class="tooltiptext">who completed the assessment</span></span> (e.g., child, birth parent)</td>
   <td><span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
-    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>; <i><a href="#source">see full list</a></i>
+    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>; <i><a href="#domain-source-values">see full list</a></i>
   </td>
 </tr>
 <tr>
@@ -417,78 +416,60 @@ The standard variable naming format is comprised of 4 or 5 main components:
 </tr>
 <tr>
   <td><b><code>item</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Will either be an item number corresponding to individual questions in a scale or admin field/score label for administrative/summary score variables - <a href="#administrative-summary-score-variables">see details</a></td>
+  <td style="word-wrap: break-word; white-space: normal;">Will either be an item number corresponding to individual questions in a scale <b>or</b> admin field/score label for administrative/summary score variables - <a href="#administrative-summary-score-variables"><i>see details</i></a></td>
   <td style="word-wrap: break-word; white-space: normal;"><code>001</code>; <code>001__01</code>; etc.<br>
-    or <a href="#administrative-summary-score-variables">admin field/score label</a>
+    <b>or</b> <a href="#administrative-summary-score-variables">admin field/score label</a>
 </tr>
 </tbody>
 </table>
 
-### Naming Component Details (*Click to Expand*)
+#### Details (*Click to Expand*)
 
-<div id="domain" class="table-banner" onclick="toggleCollapse(this)">
+<div id="domain-source-values" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span style="display: inline-flex; align-items: center;">Domain</span>
-  <a class="anchor-link" href="#domain" title="Copy link">
+  <span style="display: inline-flex; align-items: center;">Domain & Source: Possible Values</span>
+  <a class="anchor-link" href="#domain-source-values" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Domain is an expanded version of <a href="#data-dictionary">NBDC Data Dictionary</a> <code>domain</code> values that includes additional domains (e.g. Biosensors):</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-  <thead>
-    <tr>
-      <th>Keyword</th>
-      <th>Domain</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td><code>bio</code></td><td>BioSpecimens</td></tr>
-    <tr><td><code>eeg</code></td><td>Tabular EEG</td></tr>
-    <tr><td><code>mh</code></td><td>Behavior/Child-Caregiver Interaction</td></tr>
-    <tr><td><code>img</code></td><td>Tabular Imaging</td></tr>
-    <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
-    <tr><td><code>nt</code></td><td><span class="tooltip">Novel Tech<span class="tooltiptext">Novel Technology & Wearable Sensors</span></span></td></tr>
-    <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
-    <tr><td><code>ph</code></td><td>Physical Health</td></tr>
-    <tr><td><code>sed</code></td><td>Social and Environmental Determinants</td></tr>
-  </tbody>
-</table>
+<div style="display: flex; gap: 30px; align-items: flex-start;">
+  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+    <caption style="caption-side: top; font-weight: bold; padding-bottom: 8px;">
+    Possible Values:  <code>domain</code>
+    </caption>
+    <tbody>
+      <tr><td><code>bio</code></td><td>BioSpecimens</td></tr>
+      <tr><td><code>eeg</code></td><td>Tabular EEG</td></tr>
+      <tr><td><code>mh</code></td><td>Behavior/Child-Caregiver Interaction</td></tr>
+      <tr><td><code>img</code></td><td>Tabular Imaging</td></tr>
+      <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
+      <tr><td><code>nt</code></td><td>Novel Tech (<i>Novel Technology & Wearable Sensors</i>)</td></tr>
+      <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
+      <tr><td><code>ph</code></td><td>Physical Health</td></tr>
+      <tr><td><code>sed</code></td><td>Social and Environmental Determinants</td></tr>
+    </tbody>
+  </table>
+  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+    <caption style="caption-side: top; font-weight: bold; padding-bottom: 8px;">
+    Possible Values:  <code>source</code>
+    </caption>
+    <tbody>
+      <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
+      <tr><td><code>cg</code></td><td>Caregiver (Responsible Adult)</td></tr>
+      <tr><td><code>ch</code></td><td>Child</td></tr>
+      <tr><td><code>ld</code></td><td>Linked Data</td></tr>
+      <tr><td><code>ra</code></td><td>RA (research assistant)</td></tr>
+    </tbody>
+  </table>
 </div>
-
-<div id="source" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span style="display: inline-flex; align-items: center;">Source</span>
-  <a class="anchor-link" href="#source" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>Source corresponds with <code>source</code> in <a href="#data-dictionary">NBDC Data Dictionary</a> and indicates either the subject (who the protocol element is about) or respondent (who completed the assessment).</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-  <thead>
-    <tr>
-      <th>Keyword</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
-    <td><code>cg</code></td><td>Caregiver (Responsible Adult)</td>
-    <tr><td><code>ch</code></td><td>Child</td></tr>
-    <tr><td><code>ld</code></td><td>Linked Data</td></tr>
-    <tr><td><code>ra</code></td><td>RA (research assistant)</td></tr>
-  </tbody>
-</table>
 </div>
 
 <div id="scale" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span style="display: inline-flex; align-items: center;">Scale</span>
+  <span style="display: inline-flex; align-items: center;">Scale Details</span>
   <a class="anchor-link" href="#scale" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -496,7 +477,7 @@ The standard variable naming format is comprised of 4 or 5 main components:
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><i>Only variables of instruments/tables composed of multiple scales include the <code><span style="color: teal;">scale</span></code> component</i>. Scale is also excluded from administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span>. The following instruments in the current release are examples of tables that include the scale component in their variable names. Note that this is not a comprehensive list.</p>
+<p>Most variables of instruments/tables composed of multiple scales include additional naming component for <code><span style="color: teal;">scale</span></code> (with the exception of administrative/summary score variables - <a href="#administrative-summary-score-variables"><i>see details</i></a>). The following instruments in the current release are examples of tables that include the scale component in their variable names. Note that this is not a comprehensive list.</p>
 <br>
 <br>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
@@ -573,18 +554,6 @@ The standard variable naming format is comprised of 4 or 5 main components:
 </table>
 </div>
 
-### Example
-
-Let's break down the following example: `ncl_cg_spm2__inf_soc_001`
-
-- `ncl`: [Neurocognition & Language](../instruments/index.md#neurocog) (*domain*)
-- `cg`: Caregiver (*source*)
-- `spm2__inf`: nested table name
-    - `spm2`: the [SPM-2](../instruments/neurocog/spm2.md) instrument (*table*)
-    - `inf`: Infant version of SPM-2 (*table subcomponent*)
-- `soc`: scale for metrics of socialization (*scale*)
-- `001`: item number (*item*)
-
 ### Exceptions
 
 Some variables do not fully follow the standard naming convention, though this will be improved in future releases. Notable exceptions include the following.
@@ -622,6 +591,18 @@ Tabulated data for [MRI & MRS](../instruments/index.md#mri) and [EEG](../instrum
  - In place of **source**, which for all MRI and EEG data is Child/`ch`, the pipeline name is typically given (e.g. `bibsnet`, `xcpd`, `osprey`, `made`, etc.)
  - In place of **table_item**, the keywords typically match the name of the pipeline derivative file from which the table was generated (see full lists of file-based derivatives for each pipeline [here](../datacuration/derivatives.md)). 
 
+
+### Example
+
+Let's break down the following example: `ncl_cg_spm2__inf_soc_001`
+
+- `ncl`: [Neurocognition & Language](../instruments/index.md#neurocog) (*domain*)
+- `cg`: Caregiver (*source*)
+- `spm2__inf`: nested table name
+    - `spm2`: the [SPM-2](../instruments/neurocog/spm2.md) instrument (*table*)
+    - `inf`: Infant version of SPM-2 (*table subcomponent*)
+- `soc`: scale for metrics of socialization (*scale*)
+- `001`: item number (*item*)
 
 
 ## Study Design Logic: Child-Centric Data Structure
