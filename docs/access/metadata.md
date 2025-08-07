@@ -376,8 +376,9 @@ The standard variable naming format is comprised of 4 or 5 main components:
 <code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
 </p>
 
- - **Main components** are generally separated by a single underscore ( `_` ). Variables names will only include the <code><span style="color: teal;">scale</span></code> component if the instrument is composed of multiple scales.    
- - **Subcomponents** are separated by double/triple ( `__` ,  `___` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*.
+ - **Main components** are generally separated by a single underscore ( `_` ). Most instruments with multiple scales will additionally include the <code><span style="color: teal;">scale</span></code> component (this component is otherwise optional and not included in all variable names).   
+ - **Subcomponents** are separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*.
+ - Multiselect fields are preceded by triple underscores ( `___` ), mainly relevant for V01 Demographics (`sed_bm_demo`) variables
  - **Administrative** (e.g., language or date of administration) and **summary score** (e.g., sums or means of individual items in a table) variables include admin fields and score labels in place of `item` (or <code><span style="color: teal;">{scale}</span>_item</code> where relevant). Admin and score labels often include single underscores (e.g., `date_taken`, `total_score`, etc.), but represent single main components - [see details](#administrative-summary-score-variables).
  
 ### Naming Component Definitions
@@ -393,7 +394,10 @@ The standard variable naming format is comprised of 4 or 5 main components:
   <td><b><code>domain</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Data domain (e.g. biospecimens, imaging)</td>
   <td><span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>;
-  <span class="tooltip"><code>img</code><span class="tooltiptext">Imaging/MRI</span></span>; <i><a href="#domain">see full list</a></i></td>
+  <span class="tooltip"><code>img</code><span class="tooltiptext">Imaging/MRI</span></span>;
+  <span class="tooltip"><code>sed</code><span class="tooltiptext">Social & Environmental Determinants</span></span>;
+  <span class="tooltip"><code>pex</code><span class="tooltiptext">Pregnancy & Exposures, Including Substance Use</span></span>;
+  <i><a href="#domain">see full list</a></i></td>
 </tr>
 <tr>
   <td><b><code>source</code></b></td>
@@ -450,7 +454,6 @@ The standard variable naming format is comprised of 4 or 5 main components:
     <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
     <tr><td><code>ph</code></td><td>Physical Health</td></tr>
     <tr><td><code>sed</code></td><td>Social and Environmental Determinants</td></tr>
-    <tr><td><code>par</code></td><td style="word-wrap: break-word; white-space: normal;">Participant Information<br><i>Note: this is an additional domain not included in NBDC Data Dictionary domains, e.g. <code>par_visit_data</code> (Visit Information), containing dynamic/longitudinal visit-level data, falls under the DD domain <code>Demographics</code></td></tr>
   </tbody>
 </table>
 </div>
@@ -477,14 +480,8 @@ The standard variable naming format is comprised of 4 or 5 main components:
     <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
     <td><code>cg</code></td><td>Caregiver (Responsible Adult)</td>
     <tr><td><code>ch</code></td><td>Child</td></tr>
-    <tr><td><code>cl</code></td><td>Clinician</td></tr>
-    <tr><td><code>fd</code></td><td>Family Data</td></tr>
     <tr><td><code>ld</code></td><td>Linked Data</td></tr>
     <tr><td><code>ra</code></td><td>RA (research assistant)</td></tr>
-    <tr><td><code>si</code></td><td>Sibling</td></tr>
-    <tr><td><code>te</code></td><td>Teacher</td></tr>
-    <tr><td><code>basic</code></td><td>General information. <i>Not included in NBDC Data Dictionary source options, e.g. for <code>sed_basic_demographics</code> (derived demographics information), the DD source is <code>General</code></i>.</td></tr>
-    <tr><td><code>visit</code></td><td>Visit information. <i>Not included in NBDC Data Dictionary source options, e.g. for <code>par_visit_data</code> (visit-level data), the DD source is <code>General</code></i>.</td></tr>
   </tbody>
 </table>
 </div>
@@ -574,8 +571,6 @@ The standard variable naming format is comprised of 4 or 5 main components:
     </tr>
   </tbody>
 </table>
-<p>In future releases, scales will use a hyphen (<code>-</code>) instead of a single underscore ( <code>_</code> ) before the scale name. This change ensures all variables have the same number of naming components, making it easier to distinguish main components without needing prior knowledge of whether an instrument contains multiple scales.
-</p>
 </div>
 
 <div id="item" class="table-banner" onclick="toggleCollapse(this)">
@@ -643,6 +638,18 @@ Administrative (e.g., language or date of administration) and summary score (e.g
 </tr>
 </tbody>
 </table>
+
+#### Derived Variables
+
+Derived tables, including Basic Demographics (`sed_basic_demographics`), containing global, static variables, and Visit Information (`par_visit_data`), containing dynamic/longitudinal visit-level data, follow unique naming conventions:
+
+ - **Domain**: Both of these tables are under the domain `Demographics` in the NBDC Data Dictionary. `sed` is in reference to Social & Environmental Determinants from which the basic demographics information is partially derived and `par` means 'participant information.'
+ - **Source**: The data dictionary source for these tables is `General`. The labels `basic` (for 'Basic' Demographics) and `visit` (for 'Visit' Information) are both descriptive labels in place of a source label.
+
+#### Biospecimens
+
+Biospecimen names are largely descriptive, e.g. `bio_bm_biosample_nails_results` and `bio_bm_biosample_urine` table names.
+
 
 #### MRI, MRS, & EEG
 
