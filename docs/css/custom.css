@@ -32,7 +32,8 @@
 }
 
 /* Inline code styling */
-:not(pre) > code {
+/* Default inline code styling */
+code {
   background: none !important;
   border: none !important;
   padding: 0 !important;
@@ -40,12 +41,21 @@
   font-size: 0.85em !important;
   font-weight: 500;
 }
-
-code, pre {
+/* Reset for code inside <pre> */
+pre > code {
+  all: unset;
   font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace;
   font-size: 0.95em;
 }
-
+/* Reset for code inside tooltips */
+.tooltiptext code,
+[role="tooltiptext"] code {
+  all: unset;
+  font-family: inherit;
+  color: white !important;
+  font-size: inherit;
+  font-weight: inherit;
+}
 
 /* Style for expand all button (measures overview page) */
 #toggle-all-btn {

@@ -83,5 +83,47 @@ th, td {
   background-color: rgba(255, 255, 255, 0.6) !important;
 }
 
+/* Compact Table Style */
+.compact-table {
+  font-size: 0.8em;
+  line-height: 1.2;
+  width: 100%;
+  border-collapse: collapse;
+}
+.compact-table th,
+.compact-table td {
+  vertical-align: top;
+  text-align: left;
+  padding: 0.3em 0.6em;
+  border: 1px solid #ddd;
+}
+.compact-table th {
+  background-color: #e3f2fd;
+  width: 20%;
+}
+.compact-table td {
+  background-color: #f9f9f9;
+}
 
+
+/* Compact table with no vertical lines */
+.compact-table-no-vertical-lines {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+.compact-table-no-vertical-lines th,
+.compact-table-no-vertical-lines td {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: none !important;
+  border-right: none !important;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.6) !important; 
+  vertical-align: top;
+  padding: 0.1em 0.1em;
+  padding-left: 1px;
+  padding-right: 1px;
+}
 
