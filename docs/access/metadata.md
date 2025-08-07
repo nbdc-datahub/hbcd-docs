@@ -378,8 +378,7 @@ The standard variable naming format is comprised of 4 or 5 main components:
 
  - **Main components** are generally separated by a single underscore ( `_` ). Most instruments with multiple scales will additionally include the <code><span style="color: teal;">scale</span></code> component (this component is otherwise optional and not included in all variable names).   
  - **Subcomponents** are separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*.
- - Multiselect fields are preceded by triple underscores ( `___` ), mainly relevant for V01 Demographics (`sed_bm_demo`) variables
- - **Administrative** (e.g., language or date of administration) and **summary score** (e.g., sums or means of individual items in a table) variables include admin fields and score labels in place of `item` (or <code><span style="color: teal;">{scale}</span>_item</code> where relevant). Admin and score labels often include single underscores (e.g., `date_taken`, `total_score`, etc.), but represent single main components - [see details](#administrative-summary-score-variables).
+ - Multiselect fields are preceded by triple underscores ( `___` ), mainly relevant for [V01 Demographics](../instruments/SED/v01-demo.md) (`sed_bm_demo`) variables.
  
 ### Naming Component Definitions
 
@@ -418,8 +417,9 @@ The standard variable naming format is comprised of 4 or 5 main components:
 </tr>
 <tr>
   <td><b><code>item</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Item number corresponding to individual questions in a scale. Admin and summary score variables will have an admin field or score label in place of item - <a href="#administrative-summary-score-variables">see details</a></td>
-  <td style="word-wrap: break-word; white-space: normal;"><code>001</code>; <code>001__01</code>; etc. or admin/score label - <i><a href="#item">see details</a></i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Will either be an item number corresponding to individual questions in a scale or admin field/score label for administrative/summary score variables - <a href="#administrative-summary-score-variables">see details</a></td>
+  <td style="word-wrap: break-word; white-space: normal;"><code>001</code>; <code>001__01</code>; etc.<br>
+    or <a href="#administrative-summary-score-variables">admin field/score label</a>
 </tr>
 </tbody>
 </table>
@@ -573,39 +573,6 @@ The standard variable naming format is comprised of 4 or 5 main components:
 </table>
 </div>
 
-<div id="item" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span style="display: inline-flex; align-items: center;">Item</span>
-  <a class="anchor-link" href="#item" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <th>Possible Item Type</th>
-  <th>Example Values</th>
-</thead>
-<tbody>
-<tr>
-  <td><b>Scale item</b>: a 3-digit number corresponding to individual questions in a scale</td>
-  <td><code>001</code>; <code>001__01</code>; etc</td>
-</tr>
-<tr>
-  <td><b>Score label</b> for individual items in a table</td>
-  <td><code>score</code>; <code>total_score</code>; etc.</td>
-</tr>
-<tr>
-  <td><b>Administrative label</b> for administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span></td>
-  <td  style="word-wrap: break-word; white-space: normal;"><code>administration</code>; <code>location</code>; <code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-
-
 ### Example
 
 Let's break down the following example: `ncl_cg_spm2__inf_soc_001`
@@ -641,10 +608,7 @@ Administrative (e.g., language or date of administration) and summary score (e.g
 
 #### Derived Variables
 
-Derived tables, including Basic Demographics (`sed_basic_demographics`), containing global, static variables, and Visit Information (`par_visit_data`), containing dynamic/longitudinal visit-level data, follow unique naming conventions:
-
- - **Domain**: Both of these tables are under the domain `Demographics` in the NBDC Data Dictionary. `sed` is in reference to Social & Environmental Determinants from which the basic demographics information is partially derived and `par` means 'participant information.'
- - **Source**: The data dictionary source for these tables is `General`. The labels `basic` (for 'Basic' Demographics) and `visit` (for 'Visit' Information) are both descriptive labels in place of a source label.
+Derived tables, including Basic Demographics (`sed_basic_demographics`), containing global, static variables, and Visit Information (`par_visit_data`), containing dynamic/longitudinal visit-level data, do not follow the naming conventions outlined above. For example, both fall under the domain `Demographics` and source `General` in the [NBDC Data Dictionary](#nbdc-data-dictionary), but use `sed_basic` (in reference to Social & Environmental Determinants from which the Basic Demographics information is derived) and `par_visit` (for participant information from visit-level data) in place of the `domain_source` naming component. 
 
 #### Biospecimens
 
