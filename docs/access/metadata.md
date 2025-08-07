@@ -496,7 +496,7 @@ The standard variable naming format is comprised of 4 or 5 main components:
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><i>Only variables of instruments/tables composed of multiple scales include the <code><span style="color: teal;">scale</span></code> component</i>. Scale is also excluded from administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span>. The following instruments in the current release include the scale component in their variable names:</p>
+<p><i>Only variables of instruments/tables composed of multiple scales include the <code><span style="color: teal;">scale</span></code> component</i>. Scale is also excluded from administrative variables <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">e.g. language or date of administration</span></span>. The following instruments in the current release are examples of tables that include the scale component in their variable names. Note that this is not a comprehensive list.</p>
 <br>
 <br>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
