@@ -477,7 +477,7 @@ The standard variable naming format is comprised of 4 or 5 main components:
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Most variables of instruments/tables composed of multiple scales include additional naming component for <code><span style="color: teal;">scale</span></code> (with the exception of administrative/summary score variables - <a href="#administrative-summary-score-variables"><i>see details</i></a>). The following instruments in the current release are examples of tables that include the scale component in their variable names. Note that this is not a comprehensive list.</p>
+<p>Most variables of instruments/tables composed of multiple scales include an additional naming component for <code><span style="color: teal;">scale</span></code> (with the exception of administrative/summary score variables - <a href="#administrative-summary-score-variables"><i>see details</i></a>). The following instruments in the current release are examples of tables that include the scale component in their variable names. Note that this is not a comprehensive list.</p>
 <br>
 <br>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
@@ -556,7 +556,7 @@ The standard variable naming format is comprised of 4 or 5 main components:
 
 ### Exceptions
 
-Some variables do not fully follow the standard naming convention, though this will be improved in future releases. Notable exceptions include the following.
+Some variables do not fully follow the standard naming convention, though this will be improved in future releases. Notable exceptions are as follows:
 
 #### Administrative & Summary Score Variables
 
@@ -577,7 +577,7 @@ Administrative (e.g., language or date of administration) and summary score (e.g
 
 #### Derived Variables
 
-Derived tables, including Basic Demographics (`sed_basic_demographics`), containing global, static variables, and Visit Information (`par_visit_data`), containing dynamic/longitudinal visit-level data, do not follow the naming conventions outlined above. For example, both fall under the domain `Demographics` and source `General` in the [NBDC Data Dictionary](#nbdc-data-dictionary), but use `sed_basic` (in reference to Social & Environmental Determinants from which the Basic Demographics information is derived) and `par_visit` (for participant information from visit-level data) in place of the `domain_source` naming component. 
+Derived tables, including Basic Demographics (`sed_basic_demographics`), containing global, static variables, and Visit Information (`par_visit_data`), containing dynamic/longitudinal visit-level data, do not follow the naming conventions outlined above. For example, both fall under the domain `Demographics` and source `General` in the [NBDC Data Dictionary](#nbdc-data-dictionary), but use `sed_basic` (in reference to Social & Environmental Determinants from which the Basic Demographics information is derived) and `par_visit` (for participant information from visit-level data) in place of the `domain_source` naming components. 
 
 #### Biospecimens
 
