@@ -521,11 +521,11 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 10%; text-align: center;">Name</th>
-      <th style="width: 20%; text-align: center;"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
+      <th style="width: 20%; text-align: center;">Name</th>
+      <th style="width: 25%; text-align: center;"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
       <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
       <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
-      <th style="width: 70%; text-align: center;">Table Name(s)</th>
+      <th style="width: 90%; text-align: center;">Table Name(s)</th>
     </tr>
   </thead>
   <tbody>
@@ -637,11 +637,11 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 35%; text-align: center;">Task</th>
+      <th style="width: 30%; text-align: center;">Task</th>
       <th style="width: 20%; text-align: center;"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
         <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
         <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
-      <th style="width: 50%; text-align: center;">Table Name</th>
+      <th style="width: 70%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
