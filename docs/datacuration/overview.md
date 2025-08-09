@@ -73,12 +73,13 @@ hbcd/
 
 ## When To Use Tabulated vs. File-Based Data
 
-Tabulated data derived from file-based data exists in order to make the pipeline outputs more accessible. However, not all processed data is converted to tabulated data. Tabulated data includes all participant data, with one row per participant/session. As such, only the processed derivative files that can be collapsed into a single row/column of data are able to be converted. Therefore, if tabulated data doesn't exist for the derivatives/data you need for your analysis, you will need to use the file-based data instead.
+For MRS, MRI, EEG, and wearable sensor data, tabulated data is derived from file-based outputs when possible to provide the data in a more standardized and familiar format for users. However, not all processed data is available in tabulated form. Tabulated datasets contain one row per participant/session, so only derivative outputs that can be summarized into a single row and column structure are included. If no tabulated version exists for the derivatives you need, you must use the file-based data instead.
 
-Note that the tabulated data derived from processed file-based pipeline outputs will have a name basically matching the name of the derivative file from which it was sourced. For example, filenames for data from the following subject/session-level <a href="../derivatives/#xcp-d-xcp_d" target="_blank">XCP-D derivatives</a> combined into a single tabulated data file are:
+Tabulated files are named to closely match their source derivative files. For example, the following subject/session-level <a href="../derivatives/#xcp-d-xcp_d" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:
+
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
 <tr>
-<td><b>File-based derivative</b></td>
+<td><b>File-based derivatives</b></td>
 <td><code>sub-&lt;label&gt;_ses-&lt;label&gt;_task-rest_dir-PA_run-#<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
 </tr>
 <tbody>
