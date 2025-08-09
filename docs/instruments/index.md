@@ -537,10 +537,11 @@ Each instrument name links to a dedicated page with detailed documentation for t
           </span>
       </td>
       <td rowspan="6" style="word-wrap: break-word; white-space: normal;">
-      <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#anatomical-anat"><code>anat/</code></a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#bibsnet-bibsnet">BIBSNet</a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#mriqc-mriqc">MRIQC</a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#xcp-d-xcp_d">XCP-D</a>
+      <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#anatomical-anat" target="_blank"><code>anat/</code></a><br>
+      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#bibsnet-bibsnet" target="_blank">BIBSNet</a><br>
+      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#mriqc-mriqc" target="_blank">MRIQC</a><br>
+      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank">Infant-fMRIPrep</a><br>
+      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#xcp-d-xcp_d" target="_blank">XCP-D</a>
       </td>
       <td><code>img_brainswipes_xcpd-T2w</td>
     </tr>
@@ -557,10 +558,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
         </span>
       </td>
       <td rowspan="5" style="word-wrap: break-word; white-space: normal;">
-      <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#functional-func-and-fieldmaps-fmap"><code>func/</code></a><br>
-      <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#functional-func-and-fieldmaps-fmap"><code>fmap/</code></a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#infant-fmriprep-nibabies">Infant-fMRIPrep</a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#xcp-d-xcp_d">XCP-D</a>
+      <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#functional-func-and-fieldmaps-fmap" target="_blank"><code>func/</code></a><br>
+      <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#functional-func-and-fieldmaps-fmap" target="_blank"><code>fmap/</code></a><br>
+      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank">Infant-fMRIPrep</a><br>
+      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#xcp-d-xcp_d" target="_blank">XCP-D</a>
       </td>
       <td><code>img_brainswipes_xcpd-bold</td>
     </tr>
@@ -576,9 +577,9 @@ Each instrument name links to a dedicated page with detailed documentation for t
         </span>
     </td>
       <td style="word-wrap: break-word; white-space: normal;">
-      <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#diffusion-dwi"><code>dwi/</code></a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#qsiprep-qsiprep">QSIPrep</a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#qsirecon">QSIRecon</a>
+      <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#diffusion-dwi" target="_blank"><code>dwi/</code></a><br>
+      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#qsiprep-qsiprep" target="_blank">QSIPrep</a><br>
+      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#qsirecon" target="_blank">QSIRecon</a>
       </td>
       <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
     </tr>
@@ -590,9 +591,9 @@ Each instrument name links to a dedicated page with detailed documentation for t
         </span>
     </td>
       <td style="word-wrap: break-word; white-space: normal;">
-      <i class="fa fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#diffusion-dwi"><code>anat/</code></a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#symri-symri">SyMRI</a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#qmri-postproc-qmri_postproc">qMRI Postproc</a>
+      <i class="fa fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#diffusion-dwi" target="_blank"><code>anat/</code></a><br>
+      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#symri-symri" target="_blank">SyMRI</a><br>
+      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#qmri-postproc-qmri_postproc" target="_blank">qMRI Postproc</a>
       </td>
       <td>N/A</td>
     </tr>
@@ -605,8 +606,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
       </span>
       </td>
       <td rowspan="9" style="word-wrap: break-word; white-space: normal;">
-        <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#mr-spectroscopy-mrs"><code>mrs/</code></a><br>
-        <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#osprey-bids-osprey">OSPREY-BIDS</a>
+        <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#mr-spectroscopy-mrs" target="_blank"><code>mrs/</code></a><br>
+        <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#osprey-bids-osprey" target="_blank">OSPREY-BIDS</a>
       </td>
       <td><code>img_osprey_<span class="tooltip">⁠<span class="blue-text">&lt;PROC&gt;</span><span class="tooltiptext">HERCULES_diff1, HERCULES_diff2, HERCULES_sum,<br>unedited_A</span></span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code></td></tr>
     <tr><td><code>img_osprey_<span class="tooltip">⁠<span class="blue-text">&lt;PROC&gt;</span><span class="tooltiptext">HERCULES_diff1, HERCULES_diff2, HERCULES_sum,<br>unedited_A</span></span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code></td></tr>
@@ -647,8 +648,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <tr>
         <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="eeg/mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></td>
         <td rowspan="2" style="word-wrap: break-word; white-space: normal;">
-          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg"><code>eeg/</code></a><br>
-          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made">HBCD-MADE</a>
+          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a><br>
+          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a>
         </td>
         <td><code>eeg_made_task-MMN_acq-eeg_preprocessingReport</code></td>
       </tr>
@@ -658,8 +659,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <tr>
         <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="eeg/faces" target="_blank">Faces (Face)</a></td>
           <td rowspan="2" style="word-wrap: break-word; white-space: normal;">
-          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg"><code>eeg/</code></a><br>
-          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made">HBCD-MADE</a>
+          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a><br>
+          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a>
         </td>
         <td><code>eeg_made_task-FACE_acq-eeg_preprocessingReport</code></td>
       </tr>
@@ -669,8 +670,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <tr>
         <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="eeg/videors" target="_blank">Video Resting State (RS)</a></td>
           <td rowspan="2" style="word-wrap: break-word; white-space: normal;">
-          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg"><code>eeg/</code></a><br>
-          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made">HBCD-MADE</a>
+          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a><br>
+          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a>
         </td>
         <td><code>eeg_made_task-RS_acq-eeg_preprocessingReport</code></td>
       </tr>
@@ -680,8 +681,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <tr>
         <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="eeg/vep" target="_blank">Visual Evoked Potential (VEP)</a></td>
           <td rowspan="2" style="word-wrap: break-word; white-space: normal;">
-          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg"><code>eeg/</code></a><br>
-          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made">HBCD-MADE</a>
+          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a><br>
+          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a>
         </td>
         <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code></td>
       </tr>
