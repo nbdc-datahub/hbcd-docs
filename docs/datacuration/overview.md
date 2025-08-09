@@ -5,26 +5,26 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
 <thead>
 <tr>
-<td>&nbsp;</td>
-<td style="width: 20%; text-align: center;"><b>Folder Location</b></td>
-<td style="text-align: center;"><b>Description</b></td>
+<td style="width: 10%;">&nbsp;</td>
+<td style="width: 10%; text-align: center;"><b>Folder Location</b></td>
+<td style="width: 70%; text-align: center;"><b>Description</b></td>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong><a href="../phenotypes"><b>Tabulated Data</b></a></strong></td>
 <td><code>rawdata/phenotype/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Instrument data in tabulated format, including demographics and visit information, toxicology, behavior, and tabulated data derived from file-based data, including MRI, spectroscopy, EEG, and <a href="../../instruments/sensors/wearsensors">wearable sensor</a></td>
+<td style="word-wrap: break-word; white-space: normal;">Instrument data in tabulated format, containing all participant data per table, including demographics and visit information, toxicology, behavior, and tabulated data derived from file-based data (MRI, spectroscopy, EEG, and <a href="../../instruments/sensors/wearsensors">wearable sensors</a>).</td>
 </tr>
 <tr>
 <td><strong><a href="../rawbids"><b>Raw File-based Data</b></a></strong></td>
 <td><code>rawdata/sub-&lt;ID&gt;/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">BIDS-formatted raw data of varied formats for MRI, MRS, EEG, and motion/accelerometry</td>
+<td style="word-wrap: break-word; white-space: normal;">BIDS-formatted raw data of varied formats for MRI, MRS, EEG, and motion/accelerometry. Participant data is included in separate subject/session-level folders.</td>
 </tr>
 <tr>
 <td><strong><a href="../derivatives"><b>Processed File-based Data</b></a></strong></td>
 <td><code>derivatives/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Processed MRI, MRS, EEG, and motion/accelerometry derivatives of varied formats derived from processing pipelines</td>
+<td style="word-wrap: break-word; white-space: normal;">Processed MRI, MRS, EEG, and motion/accelerometry derivatives of varied formats derived from processing pipelines. Participant data is included in separate subject/session-level folders</td>
 </tr>
 </tbody>
 </table>
@@ -75,11 +75,18 @@ hbcd/
 
 Tabulated data derived from file-based data exists in order to make the pipeline outputs more accessible. However, not all processed data is converted to tabulated data. Tabulated data includes all participant data, with one row per participant/session. As such, only the processed derivative files that can be collapsed into a single row/column of data are able to be converted. Therefore, if tabulated data doesn't exist for the derivatives/data you need for your analysis, you will need to use the file-based data instead.
 
-Note that the tabulated data derived from processed file-based pipeline outputs will have a name basically matching the name of the derivative file from which it was sourced. For example, data from subject/session-level XCP-D derivative files named:       
-<code>sub-&lt;label&gt;_ses-&lt;label&gt;_task-rest_dir-PA_run-#<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code>      
-
-are compiled across participants into the tabulated file:   
-<code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code>
+Note that the tabulated data derived from processed file-based pipeline outputs will have a name basically matching the name of the derivative file from which it was sourced. For example, filenames for data from the following subject/session-level <a href="../derivatives/#xcp-d-xcp_d" target="_blank">XCP-D derivatives</a> combined into a single tabulated data file are:
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<tr>
+<td><b>File-based derivative</b></td>
+<td><code>sub-&lt;label&gt;_ses-&lt;label&gt;_task-rest_dir-PA_run-#<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
+</tr>
+<tbody>
+<tr>
+<td><b>Tabulated file</b></td>
+<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
+</tbody>
+</table>
 
 <br>
 
