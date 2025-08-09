@@ -71,9 +71,11 @@ hbcd/
 </pre>
 
 
-## When To Use Tabulated vs. File-Based Data
+### When To Use Tabulated vs. File-Based Data When Both Are Available
 
-For MRS, MRI, EEG, and wearable sensor data, tabulated data is derived from file-based outputs when possible to provide the data in a more standardized and familiar format for users. However, not all processed data is available in tabulated form. Tabulated datasets contain one row per participant/session, so only derivative outputs that can be summarized into a single row and column structure are included. If no tabulated version exists for the derivatives you need, you must use the file-based data instead.
+For MRS, MRI, EEG, and wearable sensor data, tabulated data is derived from file-based outputs when possible to provide the data in a more standardized and familiar format for users. The data itself, though structured differently, is the same between the file-based and derived tabulated files. Users can therefore choose to use either one depending on which structure best suits their needs.
+
+However, not all processed data is available in tabulated form. Tabulated datasets contain one row per participant/session, so only derivative outputs that can be summarized into a single row and column structure are included. As such, **if no tabulated file version exists for the information/derivatives you need, you must use the file-based data instead.**
 
 Tabulated files are named to closely match their source derivative files. For example, the following subject/session-level <a href="../derivatives/#xcp-d-xcp_d" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:
 

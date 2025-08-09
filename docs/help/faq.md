@@ -135,7 +135,21 @@
   </table>
 </div>
 
-## Tabulated Data
+## Release Data
+
+<div id="faq-tab-vs-fb" class="notification-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+    <span class="text-with-link">
+    <span class="text">What are and what is the difference between tabulated and file-based data?</span>
+    <a class="anchor-link" href="#faq-tab-vs-fb" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+    </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="notification-collapsible-content">
+<p>HBCD Study data includes data in both tabulated and file-based formats. <b>Tabulated data</b> is in a standardized table format, with one table provided for all participant data per measure, and includes instrument data (e.g., demographics, behavior, environmental determinants, etc.) as well as data derived from the file-based data. <b>File-based data</b> are imaging and biosignal data provided in varied formats depending on the modality. This includes MRI & MRS, EEG, and wearable sensor recordings. See the section on <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a further details, including <a href="../../datacuration/overview/#when-to-use-tabulated-vs-file-based-data-when-both-are-available" target="_blank">When To Use Tabulated vs. File-Based Data When Both Are Available</a>.</p>
+</div>
 
 <div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -151,7 +165,6 @@
 <p>The <b>source</b> element in the <a href="../../access/metadata/#nbdc-data-dictionary">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../access/metadata/#table-naming-conventions">Table Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../access/metadata/#study-design-logic-child-centric-data-structure">here</a>.</p>
 </div>
 
-
 <div id="faq-age" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
@@ -166,7 +179,6 @@
 <p>Fields reporting age include global, single-point (i.e. static) variables in <b>Basic Demographics</b> (see <a href="../../instruments/demo/basicdemo">here</a>), <b>instrument-specific variables</b> for age in <span class="tooltip tooltip-right">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> that vary depending on the date of administration for a given instrument (see <a href="../../datacuration/phenotypes/#instrument-age">infobox</a>), and age variables for raw <span class="tooltip tooltip-right">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> that vary based on date of acquisition (see <a href="../../datacuration/rawbids/#age">infobox</a>). All of this information is additionally summarized in a single location in table format in the <a href="../../instruments/agevariables">Age Variable Definitions</a> section.</p>
 </div>
 
-
 <div id="faq-underscores" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
@@ -178,11 +190,11 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Instrument table and field names may contain either single or double underscores. See the subsection of <a href="../../access/metadata/#single-vs-double-underscores">Table Naming Conventions</a> for details on the logic.
+<p>Instrument table and field names may contain either single or double underscores. Single underscores separate main naming components (e.g. the domain or source of the data) while double underscores separate subcomponents that provide additional details nested within the main naming components. See the section of <a href="../../access/metadata/#naming-conventions">Naming Conventions</a> for full details.
 </div>
 
 
-## Imaging Data
+### Imaging Data
 
 <div id="faq-mriprotocol" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -342,3 +354,5 @@
 <div class="notification-collapsible-content">
 <p>Due to the relatively limited brain coverage in dMRI and fMRI acquisitions, the superior or inferior edges of the brain may occasionally fall outside the slice stack, referred to as field of view (FOV) cutoff. In cases where the cutoff is extreme (>30% of the image), the dMRI and fMRI series fail QC and are therefore excluded from inclusion in the data release. However, mild (&lt;10%) to moderate (10–30%) FOV cutoff does not lead to QC failure. Brain regions outside of the FOV will have missing values in the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> imaging data, but the remaining areas remain usable. Automated post-processing QC metrics provide measurements of superior and inferior FOV cutoff, which researchers use for the exclusion of participants with significant FOV cutoff from analyses. See <a href="../../instruments/mri/qc/#hbcd-raw-mri-data-qc">HBCD Raw MRI Data QC</a> in the Release Notes for a description of automated and manual quality control procedures for raw imaging data.</p>
 </div>
+
+<br>
