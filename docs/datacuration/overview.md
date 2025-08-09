@@ -69,4 +69,17 @@ hbcd/
     |__ symri/
     |__ xcp_d/
 </pre>
+
+
+## When To Use Tabulated vs. File-Based Data
+
+Tabulated data derived from file-based data exists in order to make the pipeline outputs more accessible. However, not all processed data is converted to tabulated data. Tabulated data includes all participant data, with one row per participant/session. As such, only the processed derivative files that can be collapsed into a single row/column of data are able to be converted. Therefore, if tabulated data doesn't exist for the derivatives/data you need for your analysis, you will need to use the file-based data instead.
+
+Note that the tabulated data derived from processed file-based pipeline outputs will have a name basically matching the name of the derivative file from which it was sourced. For example, data from subject/session-level XCP-D derivative files named:       
+<code>sub-&lt;label&gt;_ses-&lt;label&gt;_task-rest_dir-PA_run-#<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code>      
+
+are compiled across participants into the tabulated file:   
+<code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code>
+
 <br>
+

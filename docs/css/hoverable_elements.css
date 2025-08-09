@@ -15,10 +15,10 @@
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 6px;
+    padding: 4px;
     border-radius: 4px;
     position: absolute;
-    transition: opacity 0.3s;
+    transition: opacity 0.2s;
     opacity: 0;
     z-index: 1000; /* Appear above everything else */
     white-space: normal;

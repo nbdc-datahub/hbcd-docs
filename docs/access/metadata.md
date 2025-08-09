@@ -37,9 +37,8 @@ Below are the definitions for the columns in the data dictionary and levels tabl
         <th style="width: 25%; border: 1px solid #ddd; padding: 5px; text-align: center;">Description</th>
         <th style="width: 30%; border: 1px solid #ddd; padding: 5px; text-align: center;"><b>{ </b>Possible Values<b> }</b> / Example(s)</th>
         <th style="width: 5%; border: 1px solid #ddd; padding: 5px; word-wrap: break-word; white-space: normal; text-align: center;">
-            <span class="tooltip tooltip-left">Mutable
-                <span class="tooltiptext">Values may vary between releases</span>
-            </span></th>
+            <span class="tooltip tooltip-left">Mutable<span class="tooltiptext">Values may vary across releases</span></span>
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -287,7 +286,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
         <th style="width: 10%; text-align: center;">Example</th>
         <th style="width: 5%; text-align: center;">
       <span class="tooltip tooltip-left">Mutable
-        <span class="tooltiptext">Can change across releases</span>
+        <span class="tooltiptext">Values may vary across releases</span>
       </span></th>
       </tr>
     </thead>
