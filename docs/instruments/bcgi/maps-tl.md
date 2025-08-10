@@ -28,7 +28,7 @@
 <tr><td><b>Respondent</b></td>
 <td>Primary caregiver</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely. Surveys were translated to Spanish for HBCD by <a href="https://burgtranslations.com/our-services/">BURG Translations</a>.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
 <td>V03</td></tr>
 <tr><td><b>Completion Time</b></td>

@@ -29,7 +29,7 @@ The co-occurrence of psychiatric symptoms and substance use during pregnancy is 
 <tr><td><b>Respondent</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Pregnant Participant, Birth Parent, or Primary Caregiver</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered in-person or remote. Surveys were translated to Spanish for HBCD by <a href="https://burgtranslations.com/our-services/">BURG Translations</a>.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self-administered in-person or remote</td></tr>
 <tr><td><b>Visits</b></td>
 <td>V01, V02, V03</td></tr>
 <tr><td><b>Completion Time</b></td>
@@ -55,7 +55,7 @@ The HBCD Severity of Posttraumatic/Acute Stress Symptoms measure was developed t
 Future publications should note that this measure combines NSESSS-PTSD and NSESSS-Acute Stress Disorder.
 
 <div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">
     Questionnaire prompt/instructions:
   </span>

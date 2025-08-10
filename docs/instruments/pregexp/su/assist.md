@@ -62,7 +62,7 @@
 <tr><td><b>Child Specific</b></td>
 <td>No</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in-person (except in Alabama, where participants were trained to self-administer). Surveys were translated to Spanish for HBCD by <a href="https://burgtranslations.com/our-services/">BURG Translations</a>.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in-person (except in Alabama, where participants were trained to self-administer)</td></tr>
 </tbody>
 </table>
 

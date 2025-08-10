@@ -14,7 +14,7 @@
 <tr><td><b>Respondent</b></td>
 <td>Parent</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self, in person or remote. Surveys were translated to Spanish for HBCD by <a href="https://burgtranslations.com/our-services/">BURG Translations</a>.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self, in person or remote</td></tr>
 <tr><td><b>Visits</b></td>
 <td>V01, V02, V07, V09</td></tr>
 <tr><td><b>Completion Time</b></td>

@@ -30,7 +30,7 @@ hbcd/
 
 <p>
 <div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">
     See <a href="../../../datacuration/overview/">here</a> for overview of tabulated vs file-based data.
   </span>

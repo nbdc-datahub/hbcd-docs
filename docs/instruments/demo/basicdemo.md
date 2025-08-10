@@ -5,8 +5,8 @@
 **Table Name**: `sed_basic_demographics`    
 
 <p>
-<div id="faq-access" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+<div id="faq-access" class="notification-banner static-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
     <span class="text">Basic Demographics is a <i>derived measure</i> computed from multiple sources. For more extensive demographics information, please see <a href="../../SED/v01-demo">V01 Demographics</a>.</span>
 </div>
 </p>
@@ -58,7 +58,7 @@ Some participants reported challenges in answering certain questions, such as th
 
 #### Variable Logic
 <div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">
     <i>Fields Reporting Age & Combined Race/Ethnicity</i>
   </span>

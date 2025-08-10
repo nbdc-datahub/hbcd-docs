@@ -33,7 +33,7 @@ Note that calculated scores for Level 2 measures will be included in a future re
 <tr><td><b>Respondent</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Pregnant Participant, Birth Parent, or Primary Caregiver</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered in-person or remote. Surveys were translated to Spanish for HBCD by <a href="https://burgtranslations.com/our-services/">BURG Translations</a>.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self-administered in-person or remote</td></tr>
 <tr><td><b>Visits</b></td>
 <td>V01, V02, V03</td></tr>
 <tr><td><b>Completion Time</b></td>
