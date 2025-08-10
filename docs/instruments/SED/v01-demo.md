@@ -67,7 +67,7 @@ This item will be available in the interim Release 1.1 - <a href="../../../chang
 <tr><td><b>Respondent</b></td>
 <td>Parent</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in person. Surveys were translated to Spanish for HBCD by <a href="https://burgtranslations.com/our-services/">BURG Translations</a>.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in person</td></tr>
 <tr><td><b>Visits</b></td>
 <td>V01, V04</td></tr>
 <tr><td><b>Completion Time</b></td>

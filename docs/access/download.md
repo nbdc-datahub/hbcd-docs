@@ -18,7 +18,7 @@
 To access HBCD Study data, researchers must submit a **Data Use Certification (DUC)** through the [NBDC Data Hub](https://www.nbdc-datahub.org/) - see [here](https://www.nbdc-datahub.org/data-access-process) for detailed DUC submission instructions.
 
 <div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">
     Additional Resources
   </span>

@@ -620,7 +620,7 @@ Swipes display GIFs of full-resolution T2w images as a grayscale background, wit
 
 <p>
 <div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">
     BrainSwipes Quality Control (QC) Scoring
   </span>

@@ -3,7 +3,7 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 <p>
 <div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">
     Visit numbers are labeled as Visit X or V0X in the release notes (e.g., V01 = Visit 1). 
   </span>
@@ -82,6 +82,16 @@ Each instrument name links to a dedicated page with detailed documentation for t
 
 <i class="fa-solid fa-circle-info"></i>
 <i style="font-weight: normal;"> Click sections to expand and view the associated domain instruments/measures.</i>
+
+
+<p>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">
+    <b>NOTE</b>: All surveys used in the HBCD Study were translated to Spanish by <a href="https://burgtranslations.com/our-services/">BURG Translations</a>.
+  </span>
+</div>
+</p>
 
 <div id="bcgi" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -695,7 +705,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 
 <p>
 <div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">
     Additional Resources
   </span>

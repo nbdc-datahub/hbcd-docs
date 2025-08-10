@@ -14,7 +14,7 @@
 <tr><td><b>Respondent</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Pregnant Participant or Birth Parent</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered in-person or remote. Surveys were translated to Spanish for HBCD by <a href="https://burgtranslations.com/our-services/">BURG Translations</a>.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self-administered in-person or remote</td></tr>
 <tr><td><b>Visits</b></td>
 <td>V01, V02, V03</td></tr>
 <tr><td><b>Completion Time</b></td>
@@ -37,7 +37,7 @@ The Edinburgh Postnatal Depression Scale (<a href="https://downloads.aap.org/AAP
 
 <p>
 <div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">
     Questionnaire prompt/instructions:
   </span>

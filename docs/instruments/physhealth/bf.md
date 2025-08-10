@@ -27,7 +27,7 @@
 <tr><td><b>Respondent</b></td>
 <td>Parent</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Remote survey. Surveys were translated to Spanish for HBCD by <a href="https://burgtranslations.com/our-services/">BURG Translations</a>.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Remote survey</td></tr>
 <tr><td><b>Visits</b></td>
 <td>V02, V03, V04, V06, V08 (<i>V08 (31-45 months) only administered if still breastfeeding at prior visit</i>)</td></tr>
 <tr><td><b>Completion Time</b></td>

@@ -14,7 +14,7 @@
 <tr><td><b>Respondent</b></td>
 <td>Pregnant Participant</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered. Surveys were translated to Spanish for HBCD by <a href="https://burgtranslations.com/our-services/">BURG Translations</a>.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self-administered</td></tr>
 <tr><td><b>Visits</b></td>
 <td>V01</td></tr>
 <tr><td><b>Completion Time</b></td>
