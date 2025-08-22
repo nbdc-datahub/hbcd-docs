@@ -71,14 +71,14 @@ nav:
     - Demographics & Visit Information:
         - Basic Demographics: instruments/demo/basicdemo.md
         - Visit Information: instruments/demo/visitinfo.md
-        - Study Navigators Contact Form: instruments/demo/study-navigators.md
+        - 🚧 Study Navigators Contact Form: instruments/demo/study-navigators.md
     - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 
             - ecPROMIS: instruments/bcgi/ecpromis.md
             - IBQ-R (VSF)+BI: instruments/bcgi/ibqr.md
             - MAPS-TL: instruments/bcgi/maps-tl.md
-            - CHAOS: instruments/bcgi/chaos.md
-            - HOME-21: instruments/bcgi/home21.md
+            - 🚧 CHAOS: instruments/bcgi/chaos.md
+            - 🚧 HOME-21: instruments/bcgi/home21.md
         - Biospecimens & Omics:
             - Nails: instruments/biospec/nails.md
             - Urine: instruments/biospec/urine.md
@@ -118,11 +118,11 @@ nav:
             - Perceived Stress/Social Support: instruments/SED/promis.md
             - Neighborhood Safety: instruments/SED/safety.md
             - Protective Factors: instruments/SED/paces.md
-            - Current Employment: instruments/SED/current-employment.md
-            - Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
-            - Lead Exposures: instruments/SED/lead-exposures.md
-            - Second Hand Smoke exposure: instruments/SED/second-hand-smoke-exposure.md
-            - Vancouver Index: instruments/SED/vi.md
+            - 🚧 Current Employment: instruments/SED/current-employment.md
+            - 🚧 Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
+            - 🚧 Lead Exposures: instruments/SED/lead-exposures.md
+            - 🚧 Second Hand Smoke exposure: instruments/SED/second-hand-smoke-exposure.md
+            - 🚧 Vancouver Index: instruments/SED/vi.md
     - Brain Activity - MRI & EEG:
         - Electroencephalography:
             - Overview & Quality Control: instruments/eeg/index.md
