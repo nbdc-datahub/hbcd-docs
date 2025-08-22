@@ -1,7 +1,5 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-# Current Employment
-
 <p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:<br>
 <ul style="color: red;">
   <li><b>Workgroup</b>: Social & Environmental Determinants</li>
@@ -11,6 +9,8 @@
 </p>
 
 ------------------------------------------------------------
+
+# Current Employment
 
 **Full Name**: Current Employment       
 **Table Name**: `sed_cg_employ`   
