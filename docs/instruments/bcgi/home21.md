@@ -3,7 +3,7 @@
 
 # HOME-21 Infant-Toddler
 
-<p style="color: red;">Notes:<br>
+ <p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:<br>
  - table name missing<br>
  - Caldwell & Bradley, 2016, 2003 sited in instrument details missing from ref list</p>
 
