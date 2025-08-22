@@ -4,23 +4,60 @@
 
 ### Additional Data & Information Expected in 1.1
 
- - Resolution of [Known Issues](knownissues.md) noted with **Expected Fix**: Release 1.1
- - [BrainSwipes](../instruments/mri/qc.md#brainswipes) QC results for remaining participants with XCP-D derivatives available, but no corresponding BrainSwipes results, in Release 1.0
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <tbody>
+    <tr>
+      <td style="text-align: center; vertical-align: top; white-space: nowrap;"><b>[1]</b></td>
+      <td style="word-wrap: break-word; white-space: normal;"><b>Known Issues</b>: Resolution of <a href="../knownissues">Known Issues</a> noted with <strong>Expected Fix</strong>: Release 1.1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: top; white-space: nowrap;"><b>[2]</b></td>
+      <td style="word-wrap: break-word; white-space: normal;"><b>BrainSwipes QC results</b> (<a href="../../instruments/mri/qc/#brainswipes">see details</a>) for remaining participants with XCP-D derivatives available, but no corresponding BrainSwipes results, in Release 1.0 (N=8)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Improvements to Existing Data
 
-#### Inclusion of Birth Parent Sexual Orientation
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <tbody>
+    <tr>
+      <td style="text-align: center; vertical-align: top; white-space: nowrap;"><b>[1]</b></td>
+      <td style="word-wrap: break-word; white-space: normal;">
+        <b>Inclusion of Birth Parent Sexual Orientation</b>
+        <p>
+          The interim release will include birth parent sexual orientation information (<i>"Which of the following best represents how you think of yourself?"</i>), collected with the following response options:<br>
+          • Gay/Lesbian<br>
+          • Straight; that is, not gay or lesbian, etc.<br>
+          • None of these describe me, and I'd like to see additional options 
+          <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">Note: Further information on this response option (via branching logic) will not be included in release.</span></span><br>
+          • Don't know<br>
+          • Decline to answer<br>
+          • Bisexual<br>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: top; white-space: nowrap;"><b>[2]</b></td>
+      <td style="word-wrap: break-word; white-space: normal;">
+        <b>Enhanced Medication Classification for Pregnancy & Exposure Data</b>
+        <p>
+          The interim release will refine medication classifications in the 
+          <a href="../../instruments/#pregexp">Pregnancy & Exposure, Including Substance Use</a> domain by categorizing them into more detailed components based on RxNorm IDs. These enhancements will improve clarity and enable more granular analyses. Additional columns in the 
+          <span class="tooltip">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> will specify:<br>
+          • Brand Name<br>
+          • Ingredient<br>
+          • Precise Ingredient<br>
+          • Multiple Active Ingredients
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-The interim release will include birth parent sexual orientation information (**Which of the following best represents how you think of yourself?**), collected with the following response options:
-
-- Gay / Lesbian
-- Straight; that is, not gay or lesbian, etc.
-- Bisexual
-- None of these describe me, and I'd like to see additional options <span class="blue-text"><b>**</b></span>
-- Don't know
-- Decline to answer
-
-<span class="blue-text"><b>**</b></span> <span><i>Note: Further information on this response option (via branching logic) will not be included in release.</i></span>
+-----------------------
 
 ## Release 2.0 (Release Date TBA)
 
@@ -117,14 +154,6 @@ hbcd/
 
 
 ### Improvements to Existing Data
-
-#### Enhanced Medication Classification for Pregnancy & Exposure Data  
-The interim release will refine medication classifications in the [Pregnancy & Exposure, Including Substance Use](../instruments/index.md#pregexp) domain by categorizing them into more detailed components based on RxNorm IDs. These enhancements will improve clarity and enable more granular analyses. Additional columns in the <span class="tooltip">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> will specify:
-
-- Brand Name
-- Ingredient
-- Precise Ingredient
-- Multiple Active Ingredients
 
 #### Physical Health 
 

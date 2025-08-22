@@ -140,16 +140,16 @@ pre > code {
 /* Styling for NBDC Lasso quick link in Data Access section */ 
 .button-link {
   display: inline-block;
-  background-color: #25ae7066;
+  background-color: #EBDDF9;
   color: #3e3e3e !important; /* Ensures text stays black */
   font-weight: bold; 
   font-family: Lato; 
-  padding: 5px 15px;
+  padding: 20px 20px;
   text-decoration: none;
-  border: 1px solid #25ae70;
-  border-radius: 5px;
+  border: 2px solid #9325ae;
+  border-radius: 30px;
   font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
 }
 /* Explicitly set link states to black */
 .button-link:link,

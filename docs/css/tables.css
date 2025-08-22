@@ -107,6 +107,9 @@ th, td {
 .table-no-vertical-lines th {
   background-color: rgba(255, 255, 255, 0.6) !important;
 }
+.table-no-vertical-lines b {
+  color: #6300d3;
+}
 
 /* Compact Table Style */
 .compact-table {
