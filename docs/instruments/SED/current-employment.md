@@ -57,7 +57,7 @@ Version “Caregiver Occupation and Employment”. Caregiver employment and indu
 <thead>
   <tr>
     <th style="width: 5%;">Item</th>
-    <th style="width: 30%;">Original Text</th>
+    <th style="width: 40%;">Original Text</th>
     <th style="width: 60%;">Updated Text</th>
   </tr>
   </thead>
@@ -90,7 +90,7 @@ Version “Caregiver Occupation and Employment”. Caregiver employment and indu
 <tr>
 <td>Section B</td>
 <td style="word-wrap: break-word; white-space: normal;">Section B: Occupation and Employment of Spouse/Partner<br />INSTRUCTIONS: Please answer Section B questions if you have a spouse/partner; otherwise, SKIP TO END</td>
-<td style="word-wrap: break-word; white-space: normal;">The following questions are about your partner's occupation and employment. Your "partner"<br />refers to any significant figure in your life that helps you in raising your child. For example,<br />your partner could be your spouse. However, your partner could also be your<br />boyfriend/girlfriend or relative.</td>
+<td style="word-wrap: break-word; white-space: normal;">The following questions are about your partner's occupation and employment. Your "partner" refers to any significant figure in your life that helps you in raising your child. For example, your partner could be your spouse. However, your partner could also be your boyfriend/girlfriend or relative.</td>
 </tr>
 <tr>
 <td>New item</td>
@@ -105,12 +105,12 @@ Version “Caregiver Occupation and Employment”. Caregiver employment and indu
 <tr>
 <td>New item</td>
 <td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">At any time during your most recent pregnancy, did <br />your partner work at a job for pay?</td>
+<td style="word-wrap: break-word; white-space: normal;">At any time during your most recent pregnancy, did your partner work at a job for pay?</td>
 </tr>
 <tr>
 <td>New item</td>
 <td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">Has your partner returned to the job they held during <br />your most recent pregnancy?</td>
+<td style="word-wrap: break-word; white-space: normal;">Has your partner returned to the job they held during your most recent pregnancy?</td>
 </tr>
 <tr>
 <td>New item</td>
@@ -125,7 +125,7 @@ Version “Caregiver Occupation and Employment”. Caregiver employment and indu
 <tr>
 <td>New item</td>
 <td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">The following questions are about substances that you or any member of your child's<br />household may be exposed to during your/their current employment.</td>
+<td style="word-wrap: break-word; white-space: normal;">The following questions are about substances that you or any member of your child's household may be exposed to during your/their current employment.</td>
 </tr>
 <tr>
 <td>New item</td>
@@ -140,7 +140,7 @@ Version “Caregiver Occupation and Employment”. Caregiver employment and indu
 <tr>
 <td>New item</td>
 <td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">Are your/their work clothes laundered separately from<br />the family wash?</td>
+<td style="word-wrap: break-word; white-space: normal;">Are your/their work clothes laundered separately from the family wash?</td>
 </tr>
 </tbody>
 </table>
