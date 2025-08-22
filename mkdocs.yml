@@ -77,7 +77,6 @@ nav:
             - ecPROMIS: instruments/bcgi/ecpromis.md
             - IBQ-R (VSF)+BI: instruments/bcgi/ibqr.md
             - MAPS-TL: instruments/bcgi/maps-tl.md
-            - Behavior/Inhibition Task: instruments/bcgi/behinh.md
             - CHAOS: instruments/bcgi/chaos.md
             - ECGB VSF+BI: instruments/bcgi/ecgb.md
             - HOME-21: instruments/bcgi/home21.md

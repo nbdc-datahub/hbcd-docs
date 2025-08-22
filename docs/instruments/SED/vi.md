@@ -1,3 +1,5 @@
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
+
 ## Vancouver Index of Acculturation
 
 ## HBCD Modification Details to format/organize
