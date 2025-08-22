@@ -35,11 +35,10 @@
 </tbody>
 </table>
 
-
-
 ## Instrument Details
 
-NOTE: See google doc [here](https://drive.google.com/open?id=1SSTVICBVrFANhG35KxS6FHW4UkH3jIyl)
+This is a modified version of ECHO-wide Cohort Version 01.20 / November 30, 2018
+Version “Caregiver Occupation and Employment”. Caregiver employment and industry can provide information on socioeconomic position, shift work, and take-home environmental exposures that can adversely affect the health of children in the home, especially at young ages when children spend time on the floor and have hand-to-mouth behaviors ([1](https://www.cdc.gov/niosh/docs/97-125/default.html), [2](https://www.cdc.gov/niosh/reproductive-health/about/take-home.html)).
 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
@@ -55,5 +54,16 @@ NOTE: See google doc [here](https://drive.google.com/open?id=1SSTVICBVrFANhG35Kx
 <p> See google doc <a href="https://drive.google.com/open?id=1DYUODLRPpmUAqxWotluuXJQBWq7x6lD7">here</a></p>
 </div>
 
-<br>
+## References
 
+<div class="references">  
+</div>
+
+
+Add and properly cite following references:
+
+https://www.cdc.gov/niosh/reproductive-health/about/take-home.html
+
+https://www.cdc.gov/niosh/docs/97-125/default.html
+
+<br>
