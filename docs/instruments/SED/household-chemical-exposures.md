@@ -4,6 +4,7 @@
 <ul style="color: red;">
   <li><b>Workgroup</b>: Social & Environmental Determinants</li>
   <li><b>Contact</b>: mulherin@unc.edu</li>
+</ul>
 </p>
 
 
