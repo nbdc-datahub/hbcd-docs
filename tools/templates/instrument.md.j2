@@ -1,0 +1,134 @@
+# {{ title }}
+
+<p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:<br>
+<ul style="color: red;">
+  <li><b>Workgroup</b>: {{ workgroup }}</li>
+  <li><b>Contact</b>: {{ email }}</li>
+  {% if additional_comments %}
+  <li><b>Additional comments/questions you have about this form</b>: {{ additional_comments }}</li>
+  {% endif %}
+  {% if additional_files %}
+  <li><b>Additional files you would like to provide (please explain what each is under Additional comments/questions)</b>: {{ additional_files }}</li>
+  {% endif %}
+</ul>
+</ul>
+</p>
+
+------------------------------------------------------------
+
+**Full Name**: {{ name }}       
+{% if acronym  %}- **Acronym:** {{ acronym  }}{% endif %}           
+**Table Name**: `{{ table_name }}`    
+{% if construct %}
+**Construct:** {{ construct }}
+{% endif %}   
+
+{% if responsible_use %}
+<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Responsible Use Warning</span>
+  <a class="anchor-link" href="#alert" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="alert-collapsible-content">
+<p>{{ responsible_use }}</p>
+</div>
+{% endif %}
+
+{% if data_warning %}
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>{{ data_warning }}</p> 
+</div>
+{% endif %}
+
+## Administration & Quality Control
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr><td><b>Child Specific</b></td>
+<td>{{ child_specific }} </td></tr>
+<tr><td><b>Respondent</b></td>
+<td>{{ respondent }}</td></tr>
+<tr><td><b>Administration</b></td>
+<td style="word-wrap: break-word; white-space: normal;">{{ administration }}</td></tr>
+<tr><td><b>Visits</b></td>
+<td>{{ visits }}</td></tr>
+<tr><td><b>Completion Time</b></td>
+<td>{{ completion_time }}</td></tr>
+<tr><td><b>Quality Control Procedures</b></td>
+<td style="word-wrap: break-word; white-space: normal;">{{ quality_control }}</td></tr>      
+</tbody>
+</table>
+
+{% if qc_file %}
+<p style="color: red;">ADMIN NOTE FOR PAGE CONSTRUCTION:</p> See additional/supplemental QC document provided [here]({{ qc_file }})
+{% endif %}
+
+## Instrument Details
+
+NOTE: See google doc [here]({{ instrument_details }})
+
+{% if hbcd_modifications %}
+<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">HBCD Modification Details</span>
+  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p> See google doc <a href="{{ hbcd_modifications }}">here</a></p>
+</div>
+{% endif %}
+
+{% if scoring_procedures %}
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>{{ scoring_procedures }}</p>
+</div>
+{% endif %}
+
+{% if scoring_file %}
+<p style="color: red;">ADMIN NOTE FOR PAGE CONSTRUCTION:</p> See additional/supplemental scoring document [here]({{ scoring_file }})
+{% endif %}
+
+
+{% if references %}
+## References
+
+<div class="references"> 
+<p><a href="" target="_blank"></a></p>  
+</div>
+
+<p style="color: red;">TO ADD & FORMAT:<br></p>
+
+{{ references }}
+
+{% endif %}
+<br>
+
+
