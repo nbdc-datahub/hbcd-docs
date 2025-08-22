@@ -51,10 +51,8 @@ As of 2022, about 1 in 5 US adults report current smoking ([https://www.cdc.gov/
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p> See google doc <a href="https://drive.google.com/open?id=1sYKx0vLT9oTlarNH8OfX_qs8Gy_BnMRe">here</a></p>
+<p> Content to be added: See google doc <a href="https://drive.google.com/open?id=1sYKx0vLT9oTlarNH8OfX_qs8Gy_BnMRe">here</a></p>
 </div>
-
-
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
