@@ -33,12 +33,10 @@
 </tbody>
 </table>
 
-
-
 ## Instrument Details
 
-NOTE: See google doc [here](https://drive.google.com/open?id=1T142aC6NtXvrbd60-Jg10EJvB8wPGeDL)
-
+This is a modified version of ECHO-wide cohort version 01.30/June 16, 2020 “Household Chemical Exposures-Current”. 
+Home-based exposures to chemical contaminants can occur through exposure to drinking water contaminants, off-gassing of various structural components to housing, accumulation of chemical contaminants in household dust, insecticides related to pest control, exposure to air toxicants related to heating and cooking, as well as allergens and insecticides related to pets that may be living in the home. Older homes have the potential for lead exposure due to lead-based paint. In addition, water damage to homes can result in exposure to mold. These exposures can have broad impacts on health including neurodevelopmental outcomes ([Zota et al. 2017](https://doi.org/10.1136/jech-2016-208676)). 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -56,14 +54,8 @@ NOTE: See google doc [here](https://drive.google.com/open?id=1T142aC6NtXvrbd60-J
 ## References
 
 <div class="references"> 
-<p><a href="" target="_blank"></a></p>  
+<p>Zota, A. R., Singla, V., Adamkiewicz, G., Mitro, S. D., & Dodson, R. E. (2017). Reducing chemical exposures at home: opportunities for action. <i>Journal of Epidemiology and Community Health</i>, 71(9), 937–940. <a href="https://doi.org/10.1136/jech-2016-208676">https://doi.org/10.1136/jech-2016-208676</a></p>  
 </div>
-
-<p style="color: red;">TO ADD & FORMAT:<br></p>
-
-included in the file
-
-<br>
 
 
 
