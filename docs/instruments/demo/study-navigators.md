@@ -1,12 +1,14 @@
-# Study Navigator Contact Form
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
 <p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:</p>
+<ul style="color: red;">
+<li>"Relevant Documents: Study Navigator Contact Form Guide (in Ripple/Confluence). The SN Contact Form is also in Ripple in the Birth Parent and Child Profile." - not included in content below as this is not relevant to external users</li>
+<li>what is table name?</li>
+<li>Is this organized appropriately, or should it be in its own section outside of demo & visit info?</li>
+</ul>
+</p>
 
-- *Relevant Documents: Study Navigator Contact Form Guide (in Ripple/Confluence). The SN Contact Form is also in Ripple in the Birth Parent and Child Profile.* - is this something we will want to make available to users as well?
-- what is table name?
-- is this organized appropriately, or should it be in its own section outside of demo & visit info?
-
------------------
+# Study Navigator Contact Form
 
 **Full Name**: Study Navigator Contact Form           
 **Acronym**: SN Contact Form            

@@ -1,4 +1,4 @@
-# Second Hand Smoke Exposure
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
 <p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:<br>
 <ul style="color: red;">
@@ -7,9 +7,9 @@
 </ul>
 </p>
 
-
-
 ------------------------------------------------------------
+
+# Second Hand Smoke Exposure
 
 **Full Name**: Second Hand Smoke Exposure       
 **Acronym:** Second Hand Smoke            

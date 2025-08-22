@@ -1,5 +1,4 @@
-# Lead Exposures
-
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 <p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:<br>
 <ul style="color: red;">
   <li><b>Workgroup</b>: Social & Environmental Determinants</li>
@@ -7,8 +6,9 @@
 </ul>
 </p>
 
-
 ------------------------------------------------------------
+
+# Lead Exposures
 
 **Full Name**: Lead Exposures       
 **Table Name**: `sed_cg_leadexp`    
