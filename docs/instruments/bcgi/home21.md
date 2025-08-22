@@ -1,13 +1,12 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-
-# HOME-21 Infant-Toddler
-
  <p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:<br>
  - table name missing<br>
  - Caldwell & Bradley, 2016, 2003 sited in instrument details missing from ref list</p>
 
 ----------------
+
+# HOME-21 Infant-Toddler
 
 **Full Name**: Home Observation for Measurement of the Environment (HOME)-21. Infant-Toddler Version                    
 **Acronym**: HOME-21 IT          
