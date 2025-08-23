@@ -1,14 +1,4 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
-<p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:<br>
-<ul style="color: red;">
-  <li><b>Workgroup</b>: Social & Environmental Determinants</li>
-  <li><b>Contact</b>: mulherin@unc.edu</li>
-</ul>
-</p>
-
-- orig google doc submitted for instrument description: See google doc [here](https://drive.google.com/open?id=1lkmSLRs2q83uL4Pt0TIgPC3DJqKHc8N2)
-
-------------------------------------------------------------
 
 # Lead Exposures
 
