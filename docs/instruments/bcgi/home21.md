@@ -10,7 +10,7 @@
 
 **Full Name**: Home Observation for Measurement of the Environment (HOME)-21. Infant-Toddler Version                    
 **Acronym**: HOME-21 IT          
-**Table Name**: `sed_cg_home_ec`            
+**Table Name**: `sed_cg_home_it`           
 **Construct**: Child’s Home Environment: Cognitive Stimulation and Emotional Support in the home
 
 ## Administration & Quality Control
