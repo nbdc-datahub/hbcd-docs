@@ -42,10 +42,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <i class="fa-solid fa-circle-info"></i>
 <i style="font-weight: normal;"> Click sections to expand and view the associated domain instruments/measures.</i>
 
-<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
+<div id="admin" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Administrative Variables</span>
-  <a class="anchor-link" href="#demo" title="Copy link">
+  <a class="anchor-link" href="#admin" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -149,10 +149,22 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </thead>
   <tbody>
   <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/chaos" target="_blank">CHAOS</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">CHAOS</td>
+    <td style="word-wrap: break-word; white-space: normal;"></td>
+    <td><code>mh_cg_chaos</code></td>
+  </tr>
+  <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">Early Childhood Patient-Reported Outcome Measurement Information System Child/Caregiver Relationship Scale</a></td>
     <td style="word-wrap: break-word; white-space: normal;">ecPROMIS</td>
     <td style="word-wrap: break-word; white-space: normal;">Relationships</td>
     <td><code>mh_cg_pms__cc__inf</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/home21" target="_blank">HOME-21 Infant-Toddler</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">HOME-21</td>
+    <td style="word-wrap: break-word; white-space: normal;">Child’s Home Environment</td>
+    <td><code>sed_cg_home_ec</code></td>
   </tr>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">IBQ-R Very Short Form + Behavior Inhibition</a></td>
@@ -502,10 +514,28 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </thead>
   <tbody>
     <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/aces" target="_blank">Pediatric Adverse Childhood Experiences</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">ACEs</td>
+      <td style="word-wrap: break-word; white-space: normal;">Adverse Childhood Experiences</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_pedaces</code></td>
+    </tr>
+    <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="SED/bfy" target="_blank">BFY - Benefits/Services, Economic Stress</a></td>
       <td style="word-wrap: break-word; white-space: normal;">BFY</td>
       <td style="word-wrap: break-word; white-space: normal;">Benefits/Services/Economic Stress</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_bfy</code></td>
+    </tr>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/composite-abuse-scale" target="_blank">Composite Abuse Scale Revised - Short Form</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">CABr-SF</td>
+      <td style="word-wrap: break-word; white-space: normal;"></td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_cabr_sf</code></td>
+    </tr>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/current-employment" target="_blank">Current Employment</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Employment</td>
+      <td style="word-wrap: break-word; white-space: normal;">Current Employment</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_employ</code></td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;"><a href="SED/discr" target="_blank">Experiences of Unfair Treatment</a></td>

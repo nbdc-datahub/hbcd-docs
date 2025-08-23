@@ -113,6 +113,8 @@ nav:
                 - ASSIST V1, V2, & V3: instruments/pregexp/su/assist.md
                 - TLFB: instruments/pregexp/su/tlfb.md
         - Social & Environmental Determinants:
+            - ACEs: instruments/SED/aces.md
+            - CABr-SF: instruments/SED/composite-abuse-scale.md
             - V01 Demographics: instruments/SED/v01-demo.md
             - Baby's First Years: instruments/SED/bfy.md
             - Unfair Treatment: instruments/SED/discr.md
