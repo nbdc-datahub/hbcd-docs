@@ -1,15 +1,5 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-<p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:<br>
-<ul style="color: red;">
-  <li><b>Workgroup</b>: Social & Environmental Determinants</li>
-  <li><b>Contact</b>: mulherin@unc.edu</li>
-</ul>
-</ul>
-</p>
-
-------------------------------------------------------------
-
 # Current Employment
 
 **Full Name**: Current Employment       
