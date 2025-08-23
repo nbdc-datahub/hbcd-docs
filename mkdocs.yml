@@ -68,10 +68,11 @@ nav:
   - Study Instruments:
     - Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
+    - Administrative:
+        - 🚧 Study Navigators Contact Form: instruments/admin/study-navigators.md
     - Demographics & Visit Information:
         - Basic Demographics: instruments/demo/basicdemo.md
         - Visit Information: instruments/demo/visitinfo.md
-        - 🚧 Study Navigators Contact Form: instruments/demo/study-navigators.md
     - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 
             - ecPROMIS: instruments/bcgi/ecpromis.md
