@@ -28,7 +28,7 @@
 ## Instrument Details
 
 This is a modified version of ECHO-wide Cohort Version 01.20 / November 30, 2018
-Version “Caregiver Occupation and Employment”. Caregiver employment and industry can provide information on socioeconomic position, shift work, and take-home environmental exposures that can adversely affect the health of children in the home, especially at young ages when children spend time on the floor and have hand-to-mouth behaviors ([1](https://www.cdc.gov/niosh/docs/97-125/default.html), [2](https://www.cdc.gov/niosh/reproductive-health/about/take-home.html)).
+Version “Caregiver Occupation and Employment”. Caregiver employment and industry can provide information on socioeconomic position, shift work, and take-home environmental exposures that can adversely affect the health of children in the home, especially at young ages when children spend time on the floor and have hand-to-mouth behaviors ([National Institute for Occupational Safety and Health, 2024](https://www.cdc.gov/niosh/reproductive-health/about/take-home.html); [National Institute for Occupational Safety and Health, 1995](https://www.cdc.gov/niosh/docs/97-125/default.html)).
 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
@@ -143,13 +143,8 @@ The ECHO form allowed for write-in durations, whereas HBCD form requires radio b
 ## References
 
 <div class="references">  
+  <p>National Institute for Occupational Safety and Health. (2024, April 3). About take-home exposures. U.S. Centers for Disease Control and Prevention. <a href="https://www.cdc.gov/niosh/reproductive-health/about/take-home.html">https://www.cdc.gov/niosh/reproductive-health/about/take-home.html</a></p>
+  <p>National Institute for Occupational Safety and Health. (1995, September). Protect your family: Reduce contamination at home (NIOSH Publication No. 97-125). Centers for Disease Control and Prevention. <a href="https://www.cdc.gov/niosh/docs/97-125/default.html">https://www.cdc.gov/niosh/docs/97-125/default.html</a></p>
 </div>
-
-
-Add and properly cite following references:
-
-https://www.cdc.gov/niosh/reproductive-health/about/take-home.html
-
-https://www.cdc.gov/niosh/docs/97-125/default.html
 
 <br>
