@@ -3,7 +3,7 @@
 <p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:</p>
 <ul style="color: red;">
 <li>what is table name?</li>
-<li>Is this organized appropriately, or should it be in its own section outside of demo & visit info?</li>
+<li>Is this organized appropriately, ie under Admin?</li>
 </ul>
 </p>
 

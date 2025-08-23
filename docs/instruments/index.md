@@ -37,6 +37,41 @@ Each instrument name links to a dedicated page with detailed documentation for t
   Expand All Sections ↕️
 </button>
 
+### Administrative
+
+<i class="fa-solid fa-circle-info"></i>
+<i style="font-weight: normal;"> Click sections to expand and view the associated domain instruments/measures.</i>
+
+<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Administrative Variables</span>
+  <a class="anchor-link" href="#demo" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th style="width: 20%; text-align: center;">Name of Instrument</th>
+      <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
+      <th style="width: 30%; text-align: center;">Construct</th>
+      <th style="width: 40%; text-align: center;">Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/basicdemo" target="_blank">Basic Demographics information</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Basic Demographics</td>
+    <td style="word-wrap: break-word; white-space: normal;">Demographics data derived from multiple sources</td>
+    <td style="word-wrap: break-word; white-space: normal;"><code>sed_basic_demographics</code></td>
+  </tr>
+  </tbody>
+  </table>
+</div>
+
 ### Demographics & Visit Information
 
 <i class="fa-solid fa-circle-info"></i>
