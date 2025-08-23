@@ -138,8 +138,6 @@ Version “Caregiver Occupation and Employment”. Caregiver employment and indu
 The ECHO form allowed for write-in durations, whereas HBCD form requires radio button choices throughout for durations.</p>
 </div>
 
-
-
 ## References
 
 <div class="references"> 
