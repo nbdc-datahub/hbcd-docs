@@ -1,14 +1,5 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-<p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:<br>
-<ul style="color: red;">
-  <li><b>Workgroup</b>: Social & Environmental Determinants</li>
-  <li><b>Contact</b>: mulherin@unc.edu</li>
-</ul>
-</p>
-
-------------------------------------------------------------
-
 # Second Hand Smoke Exposure
 
 **Full Name**: Second Hand Smoke Exposure       
@@ -39,7 +30,7 @@
 
 Instrument was adapted from Version 01.30 of “Household Exposure to Secondhand Smoke-Current” in the ECHO Study (Environmental influences on Child Health Outcomes). 
 
-As of 2022, about 1 in 5 US adults report current smoking ([https://www.cdc.gov/tobacco/media/pdfs/2024/09/cdc-osh-ncis-data-report-508.pdf](https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cdc.gov%2Ftobacco%2Fmedia%2Fpdfs%2F2024%2F09%2Fcdc-osh-ncis-data-report-508.pdf&data=05%7C02%7C%7C525f412fa44040551da108dde0f3c210%7C58b3d54f16c942d3af081fcabd095666%7C1%7C0%7C638914059735309155%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=x3VxbNZ7W68Ekqtej8kKqgCybSP62L6DNvYf4eYAoJg%3D&reserved=0) ). For a child at young ages, all of their smoke exposure will be through contact with adults who smoke, and the majority of that exposure will occur in their household. Childhood exposure to 2nd hand smoke is a significant risk factor for asthma, incident and recurrent respiratory infections, SIDS, lost school days due to infection and hospitalization, and long term risks of chronic pulmonary diseases  [https://www.epa.gov/indoor-air-quality-iaq/what-epas-position-childrens-exposure-secondhand-smokeaerosol](https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.epa.gov%2Findoor-air-quality-iaq%2Fwhat-epas-position-childrens-exposure-secondhand-smokeaerosol&data=05%7C02%7C%7C525f412fa44040551da108dde0f3c210%7C58b3d54f16c942d3af081fcabd095666%7C1%7C0%7C638914059735348560%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=NSrgbFVU8Kl7PkQ1qVMN%2BFBaq4FMpKciAHt6ULSgk40%3D&reserved=0). Even limited exposure to second hand smoke has been associated with changes in brain function in young adults, and some animal and human evidence suggests second hand smoke exposure in early life induces changes in cognition, some of which may be sex-specific ([Brody et al. 2011](https://doi.org/10.1001/archgenpsychiatry.2011.51); [Ling et al. 2016](https://doi.org/10.3389/fpsyt.2016.00046)).
+As of 2022, about 1 in 5 US adults report current smoking ([CDC 2022](https://www.cdc.gov/tobacco/media/pdfs/2024/09/cdc-osh-ncis-data-report-508.pdf)). For a child at young ages, all of their smoke exposure will be through contact with adults who smoke, and the majority of that exposure will occur in their household. Childhood exposure to 2nd hand smoke is a significant risk factor for asthma, incident and recurrent respiratory infections, SIDS, lost school days due to infection and hospitalization, and long term risks of chronic pulmonary diseases ([EPA 2024](https://www.epa.gov/indoor-air-quality-iaq/what-epas-position-childrens-exposure-secondhand-smokeaerosol)). Even limited exposure to second hand smoke has been associated with changes in brain function in young adults, and some animal and human evidence suggests second hand smoke exposure in early life induces changes in cognition, some of which may be sex-specific ([Brody et al. 2011](https://doi.org/10.1001/archgenpsychiatry.2011.51); [Ling et al. 2016](https://doi.org/10.3389/fpsyt.2016.00046)).
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -113,8 +104,9 @@ As of 2022, about 1 in 5 US adults report current smoking ([https://www.cdc.gov/
 
 <div class="references"> 
 <p>Brody AL, Mandelkern MA, London ED et al. 2011 Sep; 68(9):953-60. <a href="https://doi.org/10.1001/archgenpsychiatry.2011.51">https://doi.org/10.1001/archgenpsychiatry.2011.51</a></p>  
+<p>CDC. (2022). TOBACCO PRODUCT USE AMONG ADULTS— United States, 2022 [PDF]. Retrieved August 23, 2025, from  <a href="https://www.cdc.gov/tobacco/media/pdfs/2024/09/cdc-osh-ncis-data-report-508.pdf">https://www.cdc.gov/tobacco/media/pdfs/2024/09/cdc-osh-ncis-data-report-508.pdf</a></p>  
 <p>Ling J and Heffernan T. Front Psychiatry. 2016 Mar 24; 7:46. <a href="https://doi.org/10.3389/fpsyt.2016.00046">https://doi.org/10.3389/fpsyt.2016.00046</a></p>  
+<p>U.S. Environmental Protection Agency. (2024, December 20). What is EPA’s position on children’s exposure to secondhand smoke/aerosol? <a href="https://www.epa.gov/indoor-air-quality-iaq/what-epas-position-childrens-exposure-secondhand-smokeaerosol">https://www.epa.gov/indoor-air-quality-iaq/what-epas-position-childrens-exposure-secondhand-smokeaerosol</a></p>
 </div>
 <br>
-
 
