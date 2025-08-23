@@ -5,7 +5,7 @@
 
 **Full Name**: Vancouver Index of Acculturation
 **Acronym**: Vancouver Index/VI    
-**Table Name**: `sed_??`   
+**Table Name**: `sed_cg_via`   
 **Construct:** Acculturation
 
 

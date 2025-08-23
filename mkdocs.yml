@@ -123,6 +123,7 @@ nav:
             - 🚧 Lead Exposures: instruments/SED/lead-exposures.md
             - 🚧 Second Hand Smoke exposure: instruments/SED/second-hand-smoke-exposure.md
             - 🚧 Vancouver Index: instruments/SED/vi.md
+            - 🚧 2-Item Food Insecurity: instruments/SED/2item-food-insecurity.md
     - Brain Activity - MRI & EEG:
         - Electroencephalography:
             - Overview & Quality Control: instruments/eeg/index.md
