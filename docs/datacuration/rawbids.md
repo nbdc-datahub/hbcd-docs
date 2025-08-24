@@ -23,36 +23,16 @@ hbcd/
     |__ participants.json 
 </pre>
 
-
-<div id="age" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text-with-link">
-  <span class="text">Raw BIDS Data: Fields Reporting Age</span>
-  <a class="anchor-link" href="#age" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="notification-collapsible-content">
-<br>
-<i>Age is reported with the following fields in the <code>sessions.tsv</code> and <code>scans.tsv</code> files for V02 onwards. See the <a href="../../instruments/agevariables">Age Variable Definitions</a> section for a summary of all age-related variables across the release, as well as the information summarized in table format <a href="../../instruments/agevariables/#raw-file-based-data">here</a>.</i></i>
-<br>
-<br>
-<b>Adjusted Age at Time of Scan</b> (<code>age_adjusted</code>): Reported in days (not rounded), adjusted age is the time from the estimated date of delivery (EDD) to the scan date.
-<br>
-<br>
-<b>Chronological Age at Time of Scan</b> (<code>age</code>): Reported in years (to three decimal places), chronological age is the time from birth (with the birthdate jittered up to 7 days to mitigate identification risks) to the date of data acquisition. It is calculated by dividing the total days elapsed (rounded down) by 365.25. Reporting in years, rather than months, ensures consistency across developmental stages (e.g., toddlerhood, childhood), while three-decimal precision compensates for birthdate adjustments, yielding values closer to actual age.
-<br>
-<br>
-</div>
-
 ## Participant-, Session-, & Scan-Level Data
 Participant-, session-, and scan-level data are stored in standardized `.tsv` files, accompanied by a `.json` sidecar file that defines the columns and describes the data fields, located in the `rawdata/` directory and its subdirectories:
 
 - **Participant-level**: Stored in `rawdata/participants.tsv`, this file includes basic demographic and participant information (e.g., sex).
 - **Session-level**: Stored in `sub-<label>_sessions.tsv` within each subject folder, this file includes session information such as collection site, the participant’s age at each session, and head size.
 - **Scan-level**:  Each session folder includes a `sub-<label>_ses-<label>_scans.tsv` file with per-scan information including participant age at scan as well as all raw data QC scores (see [HBCD MR Quality Control Procedures](../instruments/mri/qc.md#location-of-raw-data-qc-results-in-data-release)).
+
+### Fields Reporting Age
+
+See description of fields reporting age under Age Variable Definitions > <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Raw File-Based Data</a>.
 
 ## Imaging
 
