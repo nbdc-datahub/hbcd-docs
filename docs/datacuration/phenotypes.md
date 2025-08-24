@@ -1,6 +1,6 @@
 # Tabulated Data
 
-Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**, curated to follow a standardized format linked by participant ID and visit number (see [Table Organization](#table-organization) below). This includes behavior, demographics, toxicology results, and data derived from brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. Tabulated data is available in both plain text (`.tsv`) and Parquet (`.parquet`) formats, with accompanying metadata explaining the contents of each table (see [File Types](#file-types) below).
+Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**. This includes behavior, demographics, toxicology results, and data derived from brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. 
 
 <div class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
@@ -8,6 +8,12 @@ Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or de
      See full list of tables included in the release under <a href="../../instruments/#instruments-by-domain" target="_blank">Instruments by Domain</a>.
   </span>
 </div>
+<p></p>
+
+Key features of tabulated data include:
+
+- Data are curated to follow the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files.html#phenotypic-and-assessment-data) standard linked by participant ID and visit number. See [Table Organization](#table-organization) below for details.
+- Tabulated data is available in both plain text (`.tsv`) and Parquet (`.parquet`) formats, with accompanying metadata explaining the contents of each table. See [File Types](#file-types) below for details.
 
 <pre class="folder-tree">
 hbcd/
@@ -53,11 +59,37 @@ See description of fields reporting age in the tabulated data under Age Variable
 
 ## File Types
 
-Tabulated data is available in both tab-separated values (TSV) and [Apache Parquet](https://parquet.apache.org/) formats. 
+Our tabulated data are available in two formats provided to support a range of tools and user preferences:
 
-TSV files are tab-separated values files that can be easily opened in spreadsheet software or text editors, with metadata (including the names and types of each column) provided in a separate `.json` file. The Parquet files are a columnar storage format optimized for performance and efficiency, with metadata stored directly in the file. Each data file is additionally accompanied by a corresponding shadow matrix file (in `.tsv` and `.parquet` format) that mirrors the structure of the data file with the values replaced by reason for data missingness. 
+ - **TSV (tab-separated values)** plain text files you can open in Excel or text editors. Metadata is stored in a separate `.json` file.
+ - **Parquet**: a modern, compressed columnar format optimized for analysis. Metadata is stored directly in the file.
 
-Both formats are provided to support a range of tools and user preferences. However, **using Parquet for NBDC <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data ensures correctly specified data types, faster loading speeds, and lower memory usage.**
+Each data table also comes with a **shadow matrix file**, which has the same structure, but contains codes explaining why values are missing.
+
+#### Quick Summary: Which format should I use?
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <th style="width: 10%;">Format</th>
+  <th style="width: 20%;">When to use</th>
+  <th style="width: 20%;">Advantages</th>
+  <th style="width: 20%;">Limitations</th>
+</thead>
+<tbody>
+<tr>
+<td>TSV</td>
+<td>Quick inspection, spreadsheet use</td>
+<td style="word-wrap: break-word; white-space: normal;">Easy to open, widely compatible</td>
+<td style="word-wrap: break-word; white-space: normal;">Large files load slowly, metadata separate</td>
+</tr>
+<tr>
+<td>Parquet</td>
+<td style="word-wrap: break-word; white-space: normal;">Analysis in Python/R, large datasets</td>
+<td style="word-wrap: break-word; white-space: normal;">Faster loading, smaller size, metadata embedded, ensures correctly specified data types</td>
+<td style="word-wrap: break-word; white-space: normal;">Not easily viewable in Excel, not BIDS standard</td>
+</tr>
+</tbody>
+</table>
 
 ### Plain Text vs. Parquet Files
 #### Plain Text (TSV/CSV)
@@ -66,14 +98,13 @@ Plain text formats (TSV/CSV) are widely compatible and easy to inspect, but less
 To avoid such issues, you may manually define column types using the accompanying data dictionaries included in the sidecar JSON metadata files during the import. The `NBDCtools` R package offers a utility function, `read_dsv_formatted()`, to automate this process (see [Useful Utilities](recprograms.md#tabulated-data) for details).
 
 #### Parquet
-<div id="parquetbids" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">Note: Parquet Not Currently Supported by BIDS</span>
-  <span class="arrow">▸</span>
+
+<p>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">Note: Parquet is not yet officially supported by <a href="https://bids-specification.readthedocs.io/en/stable/">BIDS</a>, but is provided as an alternative.</span>
 </div>
-<div class="notification-collapsible-content">
-<p>Please note that Parquet files are currently not officially supported by the <a href="https://bids-specification.readthedocs.io/en/stable/">BIDS specification</a>. For NBDC datasets, we decided to add Parquet as an alternative file format to the BIDS standard TSV to allow users to take advantage of the features of this modern and efficient open source format that is commonly used in the data science community.</p>
-</div>
+</p>
 
 [Apache Parquet](https://parquet.apache.org/) is a modern, compressed, columnar format optimized for large-scale data. In contrast to TSV files, Parquet supports selective column loading and smaller file sizes. This improves loading speed and memory usage and enhances performance for analytical workflows. Crucially, parqet can store metadata (including column types, variable/value labels, and categorical coding) directly in the file, enabling accurate import without manual setup.
 
