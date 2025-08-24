@@ -40,7 +40,7 @@ Fields reporting age in the <span class="tooltip">tabulated data<span class="too
 
 ## Tabulated Instrument Data
 
-All [tabulated data](../datacuration/phenotypes.md) include the following fields that report the age of the **child participants** at the time of instrument administration. Note that the infobox [Fields Reporting Age](../datacuration/phenotypes.md#instrument-age) in the <span class="tooltip">Tabulated Data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> section contains the same information as the following table, presented in a different format.
+All [tabulated data](../datacuration/phenotypes.md) include the following fields that report the age of the **child participants** at the time of instrument administration.
 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
     <thead>
@@ -88,7 +88,7 @@ All [tabulated data](../datacuration/phenotypes.md) include the following fields
 
 ## Raw File-Based Data
 
-Raw <span class="tooltip">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> includes raw magnetic resonance imaging (MRI), spectroscopy (MRS), electroencephalography (EEG), and motion/accelerometry (see [here](../datacuration/rawbids.md) for details - note that infobox [Fields Reporting Age](../datacuration/rawbids.md#age) on this page contains the same information as the following table, presented in a different format). This data is acquired from child participants and is thus unavailable for the prenatal visit V01. For visit V02 onward, age of the child on the date of data acquisition is reported within the subject folder-level `sub-<label>_sessions.tsv` and session folder-level `sub-<label>_ses-<label>_scans.tsv` files via the following:
+Raw <span class="tooltip">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> includes MRI, MRS, EEG, and motion/accelerometry data acquired from the child participants ([see details](../datacuration/rawbids.md)). For visits V02 onward (*data unavailable for prenatal visit V01*), the age of the child at the time of data acquisition is reported in the session- and scan-level `.tsv` files that accompany these data ([see details](../datacuration/rawbids.md#participant-session-scan-level-data)).
 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
     <thead>

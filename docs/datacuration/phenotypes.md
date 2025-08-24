@@ -1,6 +1,13 @@
 # Tabulated Data
 
-Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format** curated to follow a standardized format linked by participant ID and visit number. This includes behavior, demographics, visit data, toxicology results, and tabulated data derived from brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data (see full list of measures included in the release under [study instruments](../instruments/index.md)). Accompanying metadata explains each variable and table to support data use.
+Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**, curated to follow a standardized format linked by participant ID and visit number (see [Table Organization](#table-organization) below). This includes behavior, demographics, toxicology results, and data derived from brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. Tabulated data is available in both plain text (`.tsv`) and Parquet (`.parquet`) formats, with accompanying metadata explaining the contents of each table (see [File Types](#file-types) below).
+
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">
+     See full list of tables included in the release under <a href="../../instruments/#instruments-by-domain" target="_blank">Instruments by Domain</a>.
+  </span>
+</div>
 
 <pre class="folder-tree">
 hbcd/
@@ -12,35 +19,45 @@ hbcd/
         |__ <span class="placeholder">&lt;instrument_name&gt;</span>.*             <span class="hashtag"># Instrument Data</span>
 </pre>
 
-Tabulated data lists information for all participants in both plain text (`.tsv`) and Parquet (`.parquet`) formats (see example below). TSV files are tab-separated values files that can be easily opened in spreadsheet software or text editors, with metadata (including the names and types of each column) provided in a separate `.json` file. The Parquet files are a columnar storage format optimized for performance and efficiency, with metadata stored directly in the file. Each data file is additionally accompanied by a corresponding shadow matrix file (in `.tsv` and `.parquet` format) that mirrors the structure of the data file with the values replaced by reason for data missingness. 
+## Table Organization
 
-<p>
-<div id="instrument-age" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text-with-link">
-    <span class="text">Instrument-Specific Fields Reporting Age</span>
-    <a class="anchor-link" href="#instrument-age" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-    </a>
-    </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="notification-collapsible-content">
-<p><i>See the <a href="../../instruments/agevariables">Age Variable Definitions</a> section for a summary of all age-related variables across the release, as well as the information summarized in table format <a href="../../instruments/agevariables/#tabulated-instrument-data">here</a>.</i></p>
-<b>Gestational Age at Administration</b> (<code>&lt;instrument_name&gt;_gestational_age</code>): 'GAA' is the time from the first day of the birth parent’s last menstrual period (LMP), estimated as EDD minus 280 days, to the instrument administration date. GAA is given in whole weeks, rounded down, for only the V01 visit. For a given participant, GAA typically varies by no more than 4 weeks across protocol elements except in cases where protocol exceptions were granted.
-<br>
-<br>
-<b>Chronological Age at Administration</b> (<code>&lt;instrument_name&gt;_candidate_age</code>): Reported in years (to three decimal places), chronological age is the time from birth (with the birthdate jittered up to 7 days to mitigate identification risks) to the date of instrument administration (for V02 onward). It is calculated by dividing the total days elapsed (rounded down) by 365.25. Reporting in years, rather than months, ensures consistency across developmental stages (e.g., toddlerhood, childhood), while three-decimal precision compensates for birthdate adjustments, yielding values closer to actual age.
-<br>
-<br>
-<b>Adjusted Chronological Age at Administration</b> (<code>&lt;instrument_name&gt;_adjusted_age</code>): 'ACAA' is the time elapsed between the estimated date of delivery (EDD) and date of instrument administration (for V02 onward), reported in whole weeks rounded down to the nearest week.
-<br>
-<br>
-</div>
-</p>
+Every row of data in the tabulated data includes a set of “identifier columns,” including participant ID and visit number, that allow you to link information between tables.
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <th style="width: 10%;">Column Name</th>
+  <th style="width: 45%;">Definition</th>
+  <th style="width: 35%;">Example</th>
+</thead>
+<tbody>
+<tr>
+  <td><b><code>participant_id</code></b></td>
+  <td style="word-wrap: break-word; white-space: normal;">Unique identifier for a participant</td>
+  <td><span class="tooltip"><code>sub-0123456789</code></td>
+</tr>
+<tr>
+  <td><b><code>session_id</code></b></td>
+  <td style="word-wrap: break-word; white-space: normal;">Unique identifier for session/visit number</td>
+  <td><span class="tooltip"><code>ses-V01</code></td>
+</tr>
+</tbody>
+</table>
+
+ - **Static tables** (one record per person) use only `participant_id`.
+ - **Longitudinal tables** (multiple records per person over time) use both `participant_id` and `session_id`.
+
+## Fields Reporting Age
+
+See description of fields reporting age in the tabulated data under Age Variable Definitions > <a href="../../instruments/agevariables/#tabulated-instrument-data" target="_blank">Tabulated Instrument Data</a>.
+
 
 ## File Types
-Tabulated data is available in both tab-separated values (TSV) and [Apache Parquet](https://parquet.apache.org/) formats. Both formats are provided to support a range of tools and user preferences. However, **using Parquet for NBDC <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data ensures correctly specified data types, faster loading speeds, and lower memory usage.**
+
+Tabulated data is available in both tab-separated values (TSV) and [Apache Parquet](https://parquet.apache.org/) formats. 
+
+TSV files are tab-separated values files that can be easily opened in spreadsheet software or text editors, with metadata (including the names and types of each column) provided in a separate `.json` file. The Parquet files are a columnar storage format optimized for performance and efficiency, with metadata stored directly in the file. Each data file is additionally accompanied by a corresponding shadow matrix file (in `.tsv` and `.parquet` format) that mirrors the structure of the data file with the values replaced by reason for data missingness. 
+
+Both formats are provided to support a range of tools and user preferences. However, **using Parquet for NBDC <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data ensures correctly specified data types, faster loading speeds, and lower memory usage.**
 
 ### Plain Text vs. Parquet Files
 #### Plain Text (TSV/CSV)
