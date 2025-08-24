@@ -73,7 +73,7 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 2px;
   line-height: 1.1;
   font-size: 0.9em;
   border-left: 5px solid #199bd6;
@@ -87,7 +87,7 @@
 .notification-static-content {
   background-color: #f9fbff;
   border-left: 5px solid #199bd6;
-  padding: 10px 12px;
+  padding: 2px 10px;
   margin-top: 0;
   font-size: 1em;
 }
