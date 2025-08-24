@@ -21,7 +21,7 @@ hbcd/
 
 ## Table Organization
 
-Every row of data in the tabulated data includes a set of “identifier columns,” including participant ID and visit number, that allow you to link information between tables.
+Each table includes “identifier columns” for participant ID and visit number that allow you to link information between tables:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
