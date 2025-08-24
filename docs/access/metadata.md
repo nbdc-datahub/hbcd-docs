@@ -13,7 +13,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 <div class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">
-    See <a href="../../../datacuration/overview/">here</a> for overview of tabulated vs file-based data.
+    See <a href="../../../datacuration/overview/" target="_blank">here</a> for overview of tabulated vs file-based data.
   </span>
 </div>
 </p>
@@ -28,7 +28,16 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 </div>
 </p>
 
-#### Data Dictionary
+<div id="nbdc-dd" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span style="display: inline-flex; align-items: center;">Data Dictionary Column Definitions</span>
+  <a class="anchor-link" href="#nbdc-dd" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
     <thead>
       <tr>
@@ -274,9 +283,18 @@ Below are the definitions for the columns in the data dictionary and levels tabl
     </tr>
 </tbody>
 </table>
+</div>
 
-
-#### Levels Table
+<div id="levels" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span style="display: inline-flex; align-items: center;">Levels Definitions</span>
+  <a class="anchor-link" href="#levels" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
     <thead>
       <tr>
@@ -330,7 +348,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
         <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
       </tr>
 </table>
-
+</div>
 
 ### Lasso User Warnings - HBCD
 
@@ -365,7 +383,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 
 ## Naming Conventions
 
-A standardized variable naming convention is used across most tables and fields in the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> release data. These conventions are adapted from the [ABCD Study](https://docs.abcdstudy.org/latest/documentation/curation/naming.html) and ensure consistency across instruments and derived datasets, allowing for intuitive parsing of variable meaning and structure.
+A standardized naming convention is used across most tables and fields in the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> release data. These conventions are adapted from the [ABCD Study](https://docs.abcdstudy.org/latest/documentation/curation/naming.html) and ensure consistency across instruments and derived datasets, allowing for intuitive parsing of variable meaning and structure.
 
 ### Convention Logic & Rules
 
@@ -518,12 +536,19 @@ The standard variable naming format is comprised of 4 or 5 main components:
 
 ### Exceptions
 
-Some variables do not fully follow the standard naming convention, though this will be improved in future releases. Notable exceptions are as follows:
+Some variables do not fully follow the standard naming convention, which will be improved in future releases. Notable exceptions are as follows (*click to expand*):
 
-#### Administrative & Summary Score Variables
-
-Administrative (e.g., language or date of administration) and summary score (e.g., sums or means of individual items in a table) variables include **admin fields** and **score labels** in place of `item` (or <code><span style="color: teal;">{scale}</span>_item</code> where relevant). Admin and score labels often include single underscores, but represent single main components. For example, possible values include:
-
+<div id="exceptions-admin" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span style="display: inline-flex; align-items: center;">Administrative & Summary Score Variables</span>
+  <a class="anchor-link" href="#exceptions-admin" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Administrative (e.g., language or date of administration) and summary score (e.g., sums or means of individual items in a table) variables include <strong>administrative fields</strong> and <strong>score labels</strong> in place of <code>item</code> (or <code><span style="color: teal;">{scale}</span>_item</code> where relevant). Admin and score labels often include single underscores, but represent single main components. For example, possible values include:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
@@ -536,23 +561,51 @@ Administrative (e.g., language or date of administration) and summary score (e.g
 </tr>
 </tbody>
 </table>
+</div>
 
-#### Derived Variables
+<div id="exceptions-derived" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span style="display: inline-flex; align-items: center;">Derived Variables</span>
+  <a class="anchor-link" href="#exceptions-derived" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>Derived tables, including Basic Demographics (<code>sed_basic_demographics</code>), containing global, static variables, and Visit Information (<code>par_visit_data</code>), containing dynamic/longitudinal visit-level data, do not follow the naming conventions outlined above. For example, both fall under the domain <code>Demographics</code> and source <code>General</code> in the <a href="#nbdc-data-dictionary">NBDC Data Dictionary</a>, but use <code>sed_basic</code> (in reference to Social &amp; Environmental Determinants from which the Basic Demographics information is derived) and <code>par_visit</code> (for participant information from visit-level data) in place of the <code>domain_source</code> naming components. </p>
+</div>
 
-Derived tables, including Basic Demographics (`sed_basic_demographics`), containing global, static variables, and Visit Information (`par_visit_data`), containing dynamic/longitudinal visit-level data, do not follow the naming conventions outlined above. For example, both fall under the domain `Demographics` and source `General` in the [NBDC Data Dictionary](#nbdc-data-dictionary), but use `sed_basic` (in reference to Social & Environmental Determinants from which the Basic Demographics information is derived) and `par_visit` (for participant information from visit-level data) in place of the `domain_source` naming components. 
+<div id="exceptions-biospec" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span style="display: inline-flex; align-items: center;">Biospecimens</span>
+  <a class="anchor-link" href="#exceptions-biospec" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>Biospecimen names are largely descriptive, e.g. <code>bio_bm_biosample_nails_results</code> and <code>bio_bm_biosample_urine</code> table names.</p>
+</div>
 
-#### Biospecimens
 
-Biospecimen names are largely descriptive, e.g. `bio_bm_biosample_nails_results` and `bio_bm_biosample_urine` table names.
-
-
-#### MRI, MRS, & EEG
-
-Tabulated data for [MRI & MRS](../instruments/index.md#mri) and [EEG](../instruments/index.md#eeg) derived from associated <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. All files begin with the **domain** (`img` or `eeg`) in accordance with the conventions described above, but the following elements may differ:
-
- - In place of **source**, which for all MRI and EEG data is Child/`ch`, the pipeline name is typically given (e.g. `bibsnet`, `xcpd`, `osprey`, `made`, etc.)
- - In place of **table_item**, the keywords typically match the name of the pipeline derivative file from which the table was generated (see full lists of file-based derivatives for each pipeline [here](../datacuration/derivatives.md)). 
-
+<div id="exceptions-mri" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span style="display: inline-flex; align-items: center;">Tabulated MRI, MRS, & EEG Data</span>
+  <a class="anchor-link" href="#exceptions-mri" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>Tabulated data for <a href="../../instruments/#mri" target="_blank">MRI & MRS</a> and <a href="../../instruments/#eeg" target="_blank">EEG</a> derived from associated <span class="tooltip tooltip-right">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. All files begin with the <strong>domain</strong> (<code>img</code> or <code>eeg</code>) in accordance with the conventions described above, but the following elements may differ:</p>
+<ul>
+<li>In place of <strong>source</strong>, which for all MRI and EEG data is Child (<code>ch</code>), the pipeline name is typically given (e.g. <code>bibsnet</code>, <code>xcpd</code>, <code>osprey</code>, <code>made</code>, etc.)</li>
+<li>In place of <strong>table_item</strong>, the keywords typically match the name of the pipeline derivative file from which the table was generated (see full lists of file-based derivatives for each pipeline <a href="../../datacuration/derivatives" target="_blank">here</a>). </li>
+</ul>
+</div>
 
 ### Example
 
