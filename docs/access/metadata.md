@@ -433,12 +433,14 @@ The standard variable naming format is comprised of 4 or 5 main components:
 </tr>
 <tr>
   <td><b><code>item</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Will either be an item number corresponding to individual questions in a scale <b>or</b> admin field/score label for administrative/summary score variables - <a href="#administrative-summary-score-variables"><i>see details</i></a></td>
+  <td style="word-wrap: break-word; white-space: normal;">Will either be an item number corresponding to individual questions in a scale <b>or</b> admin field/score label for administrative/summary score variables - <a href="#exceptions-admin"><i>see details</i></a></td>
   <td style="word-wrap: break-word; white-space: normal;"><code>001</code>; <code>001__01</code>; etc.<br>
-    <b>or</b> <a href="#administrative-summary-score-variables">admin field/score label</a>
+    <b>or</b> <a href="#exceptions-admin">admin field/score label</a>
 </tr>
 </tbody>
 </table>
+
+exceptions-admin
 
 #### Details (*Click to Expand*)
 
@@ -494,7 +496,7 @@ The standard variable naming format is comprised of 4 or 5 main components:
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Most variables of instruments/tables composed of multiple scales include an additional naming component for <code><span style="color: teal;">scale</span></code> (with the exception of administrative/summary score variables - <a href="#administrative-summary-score-variables"><i>see details</i></a>). The following instruments in the current release are examples of tables that include the scale component in their variable names. Note that this is not a comprehensive list.</p>
+<p>Most variables of instruments/tables composed of multiple scales include an additional naming component for <code><span style="color: teal;">scale</span></code> (with the exception of administrative/summary score variables - <a href="#exceptions-admin"><i>see details</i></a>). The following instruments in the current release are examples of tables that include the scale component in their variable names. Note that this is not a comprehensive list.</p>
 <br>
 <br>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
