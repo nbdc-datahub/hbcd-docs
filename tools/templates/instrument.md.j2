@@ -14,13 +14,12 @@
 </ul>
 </p>
 
-
 ------------------------------------------------------------
 
 # {{ title }}
 
 **Full Name**: {{ name }}       
-{% if acronym  %}- **Acronym:** {{ acronym  }}{% endif %}           
+{% if acronym  %} **Acronym:** {{ acronym  }}{% endif %}           
 **Table Name**: `{{ table_name }}`    
 {% if construct %}
 **Construct:** {{ construct }}
@@ -83,9 +82,9 @@
 
 ## Instrument Details
 
-NOTE: See google doc [here]({{ instrument_details }})
+{{ instrument_details }}
 
-{% if hbcd_modifications %}
+{% if hbcd_modifications or hbcd_modifications_file%}
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
@@ -96,11 +95,17 @@ NOTE: See google doc [here]({{ instrument_details }})
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p> See google doc <a href="{{ hbcd_modifications }}">here</a></p>
+{% if hbcd_modifications %}
+<p>{{ hbcd_modifications }}</p> 
+{% endif %}
+
+{% if hbcd_modifications_file %}
+<p> See google doc <a href="{{ hbcd_modifications_file }}">here</a></p>
+{% endif %}
 </div>
 {% endif %}
 
-{% if scoring_procedures %}
+{% if scoring_procedures or scoring_file %}
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>

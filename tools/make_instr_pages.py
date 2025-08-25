@@ -3,7 +3,7 @@ import csv, re, requests, sys, pathlib
 from jinja2 import Environment, FileSystemLoader
 
 # ===== CONFIG =====
-CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGlLulWGbqHPglvKSZDDck8wkRtPKZjcinGGTc3RZg_4iyGOq5KLOoVekclucPwNOV_T44Ikkz_8gU/pub?gid=1164815538&single=true&output=csv"
+CSV_URL = "https://docs.google.com/spreadsheets/d/1YRBlGWEBa5ke5xDKwKlHOrxwdUe1UTRsx8d8Z86Fs4U/export?format=csv&gid=942697265#gid=942697265"
 
 # Column headers as they appear in your sheet
 COLS = {
@@ -14,20 +14,22 @@ COLS = {
     "Name of Instrument as you would like it to appear in the table of contents and the top of the page": "title",
     "Table name (as it appears on Lasso preferred if known)": "table_name",
     "Construct, e.g. Mental health (if applicable)": "construct",
-    "Child Specific? (Administration & Quality Control)": "child_specific",
-    "Respondent (Administration & Quality Control)": "respondent",
-    "Administration method (Administration & Quality Control) - SELECT ALL THAT APPLY": "administration",
-    "Visits administered (Administration & Quality Control) - SELECT ALL THAT APPLY": "visits",
-    "Completion time (Administration & Quality Control)": "completion_time",
-    "Quality Control Procedures": "quality_control",
-    "If needed: upload file(s) for quality control description": "qc_file",
-    "INSTRUMENT DETAILS": "instrument_details",
+    "Child Specific?": "child_specific",
+    "Respondent": "respondent",
+    "Administration method - SELECT ALL THAT APPLY": "administration",
+    "Visits administered - SELECT ALL THAT APPLY": "visits",
+    "Completion time": "completion_time",
+    "QC Procedures Option 1": "quality_control",
+    "QC Procedures Option 2": "qc_file",
+    "Instrument Details Option 1": "instrument_details",
+    "Instrument Details Option 2": "instrument_details_file",
+    "HBCD Modifications": "hbcd_modifications",
+    "HBCD Modifications File": "hbcd_modification_file",
     "Scoring Procedures - OPTION 1 - enter text in form": "scoring_procedures",
     "Scoring Procedures - OPTION 2 - Upload a file": "scoring_file",
-    "Responsible Use Warning": "responsible_use",
     "Data Warning": "data_warning",
+    "Responsible Use Warning": "responsible_use",
     "References": "references",
-    "Detailed instruction, assessment item, and scoring changes": "hbcd_modifications",
     "Additional comments/questions you have about this form": "additional_comments",
     "Additional files you would like to provide (please explain what each is under Additional comments/questions)": "additional_files"
 }
