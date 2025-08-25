@@ -62,10 +62,7 @@ Tabulated data are available in two formats, **plain text files** (`.tsv`/`.csv`
 
 ### Plain Text vs. Parquet Files
 
-Tabulated data are provided in multiple formats to support a range of tools and user preferences:
-
- - **Plain text files** (`.tsv`/`.csv`): widely compatible and easy to open/inspect in Excel or text editors. Metadata is stored in separate `.json` files.
- - **Parquet** (`.parquet`): [Apache Parquet](https://parquet.apache.org/) is a modern, compressed columnar format optimized for analysis and large-scale data. Metadata is embedded directly in the file.
+Tabulated data are provided in multiple formats to support a range of tools and user preferences. **Plain text files** (`.tsv`/`.csv`) are widely compatible and easy to open/inspect in Excel or text editors. Metadata (including column types, variable labels, categorical coding, etc.) is stored in separate `.json` files accompanying each plain text file. [Apache Parquet](https://parquet.apache.org/), or simply **Parquet** (`.parquet`), is a modern, compressed columnar format optimized for analysis and large-scale data. Unlike plain text files, metadata is embedded directly in parquet files, ensuring correct data types and enabling efficient loading and analysis in Python or R.
 
 #### Which format should I use?
 
@@ -88,7 +85,7 @@ Tabulated data are provided in multiple formats to support a range of tools and 
       </td>
       <td>
         <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Large files load slowly<br>
-        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Separate metadata (<i>see <a href="#user-warning-using-plain-text-files-for-analysis">user warning</a></i>)<br>
+        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Separate metadata (<i>see <a href="#caution-using-plain-text-files-for-analysis">Caution</a> below</i>)<br>
         <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Selective column loading not supported
       </td>
     </tr>
@@ -112,12 +109,12 @@ Tabulated data are provided in multiple formats to support a range of tools and 
 
 #### Caution: Using Plain Text Files for Analysis
 
-Plain text formats like TSV/CSV are easy to open in Excel or text editors, but they can cause problems in large-scale analyses. The main issue is that **metadata (including column types, variable labels, categorical coding, etc.) is stored separately** (in sidecar JSON files), so Python, R, or other tools may make mistakes when importing the data. For example:
+Plain text formats like TSV/CSV can cause problems in large-scale analyses due to the fact that **metadata is stored separately** (in sidecar JSON files). Python, R, or other tools may make mistakes when importing the data. For example:
 
 - Tools may misinterpret data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical.
 - Columns with mostly missing values may be treated as empty if the first few rows contain no data.
 
-We therefore recommend using Parquet files for analysis whenever possible to avoid these issues, as the metadata is embedded directly. However, **if you do choose to use TSV/CSV files for analysis, be sure to manually define column types during import** using the sidecar JSON metadata files. We recommend using the [NBDCtools](recprograms.md#tabulated-data) `read_dsv_formatted()` function to automate this process.
+**We therefore recommend using Parquet files for analysis to avoid these issues**, as the metadata is embedded directly. However, **if you do choose to use TSV/CSV files for analysis:** be sure to manually define column types during import using the sidecar JSON metadata files. We recommend using the [NBDCtools](recprograms.md#tabulated-data) `read_dsv_formatted()` function to automate this process.
 
 #### Working with Parquet in Python and R
 <p>
