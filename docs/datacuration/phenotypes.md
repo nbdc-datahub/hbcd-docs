@@ -174,9 +174,7 @@ Shadow matrices make analyses cleaner and more reliable by:
 
 #### Working with Shadow Matrices in Python and R 
 
-While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, **there are situations where non-responses are themselves meaningful.** For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables.
-
-To understand patterns of missing data, users can re-integrate the non-responses from the shadow matrix back into the data. The following helper functions illustrate how to do combine data with the shadow information into a single data frame in Python or R (*click to expand*).
+While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, **there are situations where non-responses are themselves meaningful.** For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables. To understand patterns of missing data, users can re-integrate the non-responses from the shadow matrix back into the data using the following helper functions (*click to expand*):
 
 <div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
