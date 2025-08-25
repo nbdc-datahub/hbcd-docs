@@ -155,10 +155,22 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td><code>mh_cg_chaos</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">Early Childhood Patient-Reported Outcome Measurement Information System Child/Caregiver Relationship Scale</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">ecPROMIS</td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS (&lt;1 y/o) - Caregiver Child Relationship Scale</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">ecPROMIS (&lt;1 y/o)</td>
     <td style="word-wrap: break-word; white-space: normal;">Relationships</td>
     <td><code>mh_cg_pms__cc__inf</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS (1-5 y/o) - Caregiver Child Relationship Scale</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">ecPROMIS (1-5 y/o)</td>
+    <td style="word-wrap: break-word; white-space: normal;">Relationships</td>
+    <td><code>mh_cg_pms__cc__1to5</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis-selfreg" target="_blank">ecPROMIS - Self-regulation-Flexibility Scale</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"></td>
+    <td style="word-wrap: break-word; white-space: normal;">Self-Regulation and Flexibility</td>
+    <td><code>mh_cg_pms__selfreg</code></td>
   </tr>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/home21" target="_blank">HOME-21 Infant-Toddler</a></td>
@@ -433,7 +445,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
     </tr>            
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/apa12" target="_blank">DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">APA Level 1 / Level 2</td>
+      <td style="word-wrap: break-word; white-space: normal;">APA 1/2</td>
       <td style="word-wrap: break-word; white-space: normal;">Mental Health</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_apa</code></td>
     </tr>  
