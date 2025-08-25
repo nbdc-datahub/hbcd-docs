@@ -2,12 +2,13 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>NEW README NOT YET SUBMITTED</i> 🚧 </p>
 
 
-# ecPROMIS - Self-regulation-Flexibility Scale
+# FAD
 
-**Full Name**: Early Childhood Patient-Reported Outcome Measurement Information System - Self-regulation-Flexibility       
-**Acronym**:                   
-**Table Name**: `mh_cg_pms__selfreg`       
-**Construct**: Self-Regulation and Flexibility
+**Full Name**: 6-item General Functioning subscale of the Family Assessment Device Short Form              
+**Acronym**: FAD                         
+**Table Name**: `mh_cg_fad`       
+**Construct**: Global functioning of the family unit
+
 
 ## Administration & Quality Control
 
@@ -27,19 +28,3 @@
 <td style="word-wrap: break-word; white-space: normal;"></td></tr>
 </tbody>
 </table>
-
-
-
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p></p>
-</div>
-

@@ -141,7 +141,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 50%; text-align: center;">Name of Instrument</th>
+      <th style="width: 40%; text-align: center;">Name of Instrument</th>
       <th style="width: 20%; text-align: center;">Acronym</th>
       <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 20%; text-align: center;">Table Name</th>
@@ -151,12 +151,12 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/chaos" target="_blank">Confusion, Hubbub and Order scale</a></td>
     <td style="word-wrap: break-word; white-space: normal;">CHAOS</td>
-    <td style="word-wrap: break-word; white-space: normal;"></td>
+    <td style="word-wrap: break-word; white-space: normal;">Family Organization</td>
     <td><code>mh_cg_chaos</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS (&lt;1 y/o) - Caregiver Child Relationship Scale</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">ecPROMIS (&lt;1 y/o)</td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS Child-Caregiver Int (&lt;1 year)</a></td>
+    <td>ecPROMIS (&lt;1 y/o)</td>
     <td style="word-wrap: break-word; white-space: normal;">Relationships</td>
     <td><code>mh_cg_pms__cc__inf</code></td>
   </tr>
@@ -167,10 +167,28 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td><code>mh_cg_pms__cc__1to5</code></td>
   </tr>
   <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis-pr" target="_blank">ecPROMIS- Peer Relation</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">ecPROMIS</td>
+    <td style="word-wrap: break-word; white-space: normal;">Peer Relationships</td>
+    <td><code>mh_cg_pms__peer</code></td>
+  </tr>
+  <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis-selfreg" target="_blank">ecPROMIS - Self-regulation-Flexibility Scale</a></td>
     <td style="word-wrap: break-word; white-space: normal;"></td>
     <td style="word-wrap: break-word; white-space: normal;">Self-Regulation and Flexibility</td>
     <td><code>mh_cg_pms__selfreg</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/erica" target="_blank">ERICA-FCM</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">ERICA</td>
+    <td style="word-wrap: break-word; white-space: normal;">Co-regulation, Child Regulation/Dysregulation, Parenting</td>
+    <td><code>mh_pa_erica</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/fad" target="_blank">Family Assessment Device</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">FAD</td>
+    <td style="word-wrap: break-word; white-space: normal;">Global functioning of the family unit</td>
+    <td><code>mh_cg_fad</code></td>
   </tr>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/home21" target="_blank">HOME-21 Infant-Toddler</a></td>
@@ -183,6 +201,12 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td style="word-wrap: break-word; white-space: normal;">IBQ-R (VSF)+BI</td>
     <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
     <td><code>mh_cg_ibqr</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/lab-tab" target="_blank">Laboratory Temperament Assessment Battery</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Lab-TAB</td>
+    <td style="word-wrap: break-word; white-space: normal;">Behavioral Inhibition</td>
+    <td><code>mh_ch_labtab</code></td>
   </tr>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale, Version: Infancy (< 1 year)</a></td>
