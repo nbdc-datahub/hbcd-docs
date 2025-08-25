@@ -149,7 +149,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </thead>
   <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/chaos" target="_blank">CHAOS</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/chaos" target="_blank">Confusion, Hubbub and Order scale</a></td>
     <td style="word-wrap: break-word; white-space: normal;">CHAOS</td>
     <td style="word-wrap: break-word; white-space: normal;"></td>
     <td><code>mh_cg_chaos</code></td>

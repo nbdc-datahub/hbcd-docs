@@ -3,9 +3,10 @@
 
 # CHAOS
 
-
-ADD CONTENT HERE
-
+**Full Name**: Confusion, Hubbub and Order scale                    
+**Acronym**: CHAOS          
+**Table Name**: `mh_cg_chaos`           
+**Construct**: XXXXXX
 
 ## Instrument Details
 
