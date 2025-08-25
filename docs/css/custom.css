@@ -38,14 +38,15 @@ code {
   border: none !important;
   padding: 0 !important;
   color: #c900cc !important;
-  font-size: 0.85em !important;
+  font-size: 0.8em !important;
   font-weight: 500;
 }
 /* Reset for code inside <pre> */
 pre > code {
-  all: unset;
+  all: unset !important; 
   font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace;
-  font-size: 0.95em;
+  color: black !important;
+  font-size: 0.75em !important;
 }
 /* Reset for code inside tooltips */
 .tooltiptext code,
@@ -56,6 +57,21 @@ pre > code {
   font-size: inherit;
   font-weight: inherit;
 }
+
+/* Custom style for helper-code blocks */
+pre.helper-code {
+  background-color: #f5f5f5;  /* light gray background */
+  padding: 1px !important;          /* space inside */
+  border-radius: 2px !important;         /* rounded corners */
+  overflow-x: auto;           /* horizontal scroll if too wide */
+}
+pre.helper-code code {
+  font-size: 0.8em !important;  /* slightly larger text */
+  color: #000;                /* default black text */
+  font-family: monospace;
+  background: none;           /* don’t override the pre background */
+}
+
 
 /* Style for expand all button (measures overview page) */
 #toggle-all-btn {

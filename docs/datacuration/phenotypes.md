@@ -56,77 +56,101 @@ Each table includes “identifier columns” for participant ID and visit number
 
 See description of fields reporting age in the tabulated data under Age Variable Definitions > <a href="../../instruments/agevariables/#tabulated-instrument-data" target="_blank">Tabulated Instrument Data</a>.
 
-
 ## File Types
 
-Our tabulated data are available in two formats provided to support a range of tools and user preferences:
-
- - **TSV (tab-separated values)** plain text files you can open in Excel or text editors. Metadata is stored in a separate `.json` file.
- - **Parquet**: a modern, compressed columnar format optimized for analysis. Metadata is stored directly in the file.
-
-Each data table also comes with a **shadow matrix file**, which has the same structure, but contains codes explaining why values are missing.
-
-#### Quick Summary: Which format should I use?
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <th style="width: 10%;">Format</th>
-  <th style="width: 20%;">When to use</th>
-  <th style="width: 20%;">Advantages</th>
-  <th style="width: 20%;">Limitations</th>
-</thead>
-<tbody>
-<tr>
-<td>TSV</td>
-<td>Quick inspection, spreadsheet use</td>
-<td style="word-wrap: break-word; white-space: normal;">Easy to open, widely compatible</td>
-<td style="word-wrap: break-word; white-space: normal;">Large files load slowly, metadata separate</td>
-</tr>
-<tr>
-<td>Parquet</td>
-<td style="word-wrap: break-word; white-space: normal;">Analysis in Python/R, large datasets</td>
-<td style="word-wrap: break-word; white-space: normal;">Faster loading, smaller size, metadata embedded, ensures correctly specified data types</td>
-<td style="word-wrap: break-word; white-space: normal;">Not easily viewable in Excel, not BIDS standard</td>
-</tr>
-</tbody>
-</table>
+Tabulated data are available in two formats, **plain text files** (`.tsv`/`.csv`) and **Parquet** (`.parquet`) - [see details](#plain-text-vs-parquet-files) below. Each data table also comes with a **shadow matrix file** (`<instrument_name>_shadow.<tsv|parquet>`), which has the same structure of the corresponding data table, but contains codes explaining why values are missing - [see details](#shadow-matrices) below. 
 
 ### Plain Text vs. Parquet Files
-#### Plain Text (TSV/CSV)
-Plain text formats (TSV/CSV) are widely compatible and easy to inspect, but less efficient for large datasets. They don't support selective column loading or preserve metadata, such as data type specification; the metadata is instead available via the sidecar JSON files for plan text files. As a result, tools like Python or R must guess data types during import, often incorrectly. For example, categorical values like "0"/"1" for "Yes"/"No" (commonly used in NBDC datasets) may be interpreted as numeric, and columns with mostly missing values may be treated as empty if the first few rows lack data.
 
-To avoid such issues, you may manually define column types using the accompanying data dictionaries included in the sidecar JSON metadata files during the import. The `NBDCtools` R package offers a utility function, `read_dsv_formatted()`, to automate this process (see [Useful Utilities](recprograms.md#tabulated-data) for details).
+Tabulated data are provided in multiple formats to support a range of tools and user preferences:
 
-#### Parquet
+ - **Plain text files** (`.tsv`/`.csv`): widely compatible and easy to open/inspect in Excel or text editors. Metadata is stored in separate `.json` files.
+ - **Parquet** (`.parquet`): [Apache Parquet](https://parquet.apache.org/) is a modern, compressed columnar format optimized for analysis and large-scale data. Metadata is embedded directly in the file.
 
+#### Which format should I use?
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="width: 10%;">Format</th>
+      <th style="width: 25%;">When to use</th>
+      <th style="width: 20%;">Advantages</th>
+      <th style="width: 35%;">Limitations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>TSV/CSV</b></td>
+      <td style="word-wrap: break-word; white-space: normal;">Quick inspection, spreadsheet use</td>
+      <td>
+        <i style="color: blue;" class="fas fa-check"></i> Easy to open<br>
+        <i style="color: blue;" class="fas fa-check"></i> Widely compatible format
+      </td>
+      <td>
+        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Large files load slowly<br>
+        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Separate metadata (<i>see <a href="#user-warning-using-plain-text-files-for-analysis">user warning</a></i>)<br>
+        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Selective column loading not supported
+      </td>
+    </tr>
+    <tr>
+      <td><b>Parquet</b></td>
+      <td style="word-wrap: break-word; white-space: normal;">Analysis in Python/R for large data</td>
+      <td>
+        <i style="color: blue;" class="fas fa-check"></i> Optimized for large-scale data<br>
+        <i style="color: blue;" class="fas fa-check"></i> Fast loading and smaller files<br>
+        <i style="color: blue;" class="fas fa-check"></i> Metadata embedded<br>
+        <i style="color: blue;" class="fas fa-check"></i> Ensures correctly specified data types<br>
+        <i style="color: blue;" class="fas fa-check"></i> Supports selective column loading (saves memory)
+      </td>
+      <td>
+        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Not easily viewable in Excel<br>
+        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Not currently supported by <a href="https://bids-specification.readthedocs.io/en/stable/">BIDS</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Caution: Using Plain Text Files for Analysis
+
+Plain text formats like TSV/CSV are easy to open in Excel or text editors, but they can cause problems in large-scale analyses. The main issue is that **metadata (including column types, variable labels, categorical coding, etc.) is stored separately** (in sidecar JSON files), so Python, R, or other tools may make mistakes when importing the data. For example:
+
+- Tools may misinterpret data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical.
+- Columns with mostly missing values may be treated as empty if the first few rows contain no data.
+
+We therefore recommend using Parquet files for analysis whenever possible to avoid these issues, as the metadata is embedded directly. However, **if you do choose to use TSV/CSV files for analysis, be sure to manually define column types during import** using the sidecar JSON metadata files. We recommend using the [NBDCtools](recprograms.md#tabulated-data) `read_dsv_formatted()` function to automate this process.
+
+#### Working with Parquet in Python and R
 <p>
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Note: Parquet is not yet officially supported by <a href="https://bids-specification.readthedocs.io/en/stable/">BIDS</a>, but is provided as an alternative.</span>
+<div id="load-parquet" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="emoji"><i class="fa-brands fa-python"></i> / <i class="fa-brands fa-r-project"></i></span>
+  <span class="text">Loading Parquet Files in Python/R</span>
+  <a class="anchor-link" href="#load-parquet" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p><strong>Loading parquet files in Python (<a href="https://docs.pola.rs/" target="_blank">polars</a> or <a href="https://pandas.pydata.org/docs/getting_started/index.html" target="_blank">pandas</a> module):</strong></p>
+  <pre class="helper-code"><code>
+    # Using `polars` module [RECOMMENDED]:
+    import polars as pl
+    parquet_df = pl.read_parquet("path/to/file.parquet")
+
+    # Using `pandas` module:
+    import pandas as pd
+    parquet_df = pd.read_parquet("path/to/file.parquet")
+  </code></pre>
+<strong>Loading Parquet file in R (<a href="https://arrow.apache.org/docs/r/" target="_blank">arrow</a> package):</strong>
+  <pre class="helper-code"><code>
+    # Using `arrow` package:
+    library(arrow)
+    parquet_df <- read_parquet("path/to/file.parquet")
+  </code></pre>
 </div>
 </p>
 
-[Apache Parquet](https://parquet.apache.org/) is a modern, compressed, columnar format optimized for large-scale data. In contrast to TSV files, Parquet supports selective column loading and smaller file sizes. This improves loading speed and memory usage and enhances performance for analytical workflows. Crucially, parqet can store metadata (including column types, variable/value labels, and categorical coding) directly in the file, enabling accurate import without manual setup.
-
-<p style="margin-bottom: 0; padding-bottom: 0;"><b>Example: Loading Parquet file in Python (using <a href="https://docs.pola.rs/">polars</a> or <a href="https://pandas.pydata.org/docs/getting_started/index.html">pandas</a> modules)</b></p>
-
-```bash
-# Using `polars` module [RECOMMENDED]:
-import polars as pl
-parquet_df = pl.read_parquet("path/to/file.parquet")
-
-# Using `pandas` module:
-import pandas as pd
-parquet_df = pd.read_parquet("path/to/file.parquet")
-```
-
-<p style="margin-bottom: 0; padding-bottom: 0;"><b>Example: Loading Parquet file in R (<a href="https://arrow.apache.org/docs/r/">arrow</a> package):</b></p>
-
-```bash 
-# Using `arrow` package:
-library(arrow)
-parquet_df <- read_parquet("path/to/file.parquet")
-```
 
 ### Shadow Matrices
 Each TSV and Parquet ***data file*** in the BIDS `/rawdata/phenotype/` directory has a corresponding ***shadow matrix file*** in the same format (TSV or Parquet). These shadow matrix files mirror the structure and column names of the original data files and are available to download via Lasso and DEAP.
@@ -140,23 +164,31 @@ In the data files, missing values are represented as blank cells. Shadow matrice
 
 The categorical codes for “Don’t know” (`999`) and “Decline to answer” (`777`) that are used across different tables in the HBCD dataset (and are typically considered non-responses) are deliberately converted to missing values in the data file, with the original response converted to a missingness reason stored in the shadow matrix. This prevents analytical errors such as inadvertently treating placeholder codes (like `777` or `999`) as valid numeric values during analysis and ensures consistency in data types across all entries (e.g. text notes in numeric fields are avoided).
 
-<p>
-<div id="shadowFYI" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">When should I use shadow matrices?</span>
-  <span class="arrow">▸</span>
 </div>
-<div class="notification-collapsible-content">
+<div class="notification-static-content">
 <p>While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, there are situations where non-responses are themselves meaningful. For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables. In such cases, users can re-integrate the non-responses from the shadow matrix back into the data.</p>
 </div>
-</p>
+<br>
 
-#### Working with Shadow Matrices in R and Python 
+#### Working with Shadow Matrices in Python and R 
 
 Here we describe how researchers can combine data with the shadow information into a single data frame using the R or Python programming languages. This can be useful for understanding patterns of missing data or integrating missingness reasons (e.g., `Decline to Answer`, `Logic Skipped`, etc.) into your analysis.
 
-##### <i class="fa-brands fa-python"></i> Python Helper Function
-```
+<div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="emoji"><i class="fa-brands fa-python"></i></span>
+  <span class="text">Python Helper Function</span>
+  <a class="anchor-link" href="#python-helper-function" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<pre class="helper-code"><code>
 import pandas as pd
 import os
 
@@ -187,23 +219,36 @@ def load_data_with_shadow(data_path, shadow_path):
 df = load_data_with_shadow("data.tsv", "shadow_matrix.tsv")
 
 # Example: View reasons for missing data for a given column/variable in the data file 
-df[df["<COLUMN NAME>"].isna()][["<COLUMN NAME>_missing_reason"]]  
-```
+df[df["<COLUMN NAME>"].isna()][["<COLUMN NAME>_missing_reason"]]
+</code></pre>
+</div>
 
-##### <i class="fa-brands fa-r-project"></i> R Helper Function Using [NBDCtools](recprograms.md#tabulated-data)
-```
-library(dplyr)
-library(NBDCtools)
+<div id="r-helper-function" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="emoji"><i class="fa-brands fa-r-project"></i></span>
+  <span class="text">R Helper Function Using <a href="../recprograms/#tabulated-data">NBDCtools</a></span>
+  <a class="anchor-link" href="#r-helper-function" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+  <pre class="helper-code"><code>
+  library(dplyr)
+  library(NBDCtools)
 
-# read in data and shadow matrix
-data <- arrow::read_parquet("path/to/data/<table_name>.parquet")
-shadow <- arrow::read_parquet("path/to/data/<table_name_shadow>.parquet")
+  # read in data and shadow matrix
+  data <- arrow::read_parquet("path/to/data/<table_name>.parquet")
+  shadow <- arrow::read_parquet("path/to/data/<table_name_shadow>.parquet")
 
-# bind shadow columns to data
-data_shadow <- shadow_bind_data(data, shadow)
+  # bind shadow columns to data
+  data_shadow <- shadow_bind_data(data, shadow)
 
-# show the reasons for missing values for a given variable
-data_shadow |>
-  filter(is.na(<column_name>)) |> 
-  count(<column_name>)
-```
+  # show the reasons for missing values for a given variable
+  data_shadow |>
+    filter(is.na(<column_name>)) |> 
+    count(<column_name>)
+  </code></pre>
+</div>
+<br>
