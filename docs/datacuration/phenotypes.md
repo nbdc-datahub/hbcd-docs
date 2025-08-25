@@ -54,9 +54,6 @@ Each table includes “identifier columns” for participant ID, visit number, a
 </tbody>
 </table>
 
- - **Static tables** (one record per person) use only `participant_id`.
- - **Longitudinal tables** (multiple records per person over time) use both `participant_id` and `session_id`.
-
 ## Fields Reporting Age
 
 See description of fields reporting age in the tabulated data under Age Variable Definitions > <a href="../../instruments/agevariables/#tabulated-instrument-data" target="_blank">Tabulated Instrument Data</a>.
