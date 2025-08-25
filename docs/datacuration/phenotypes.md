@@ -27,24 +27,29 @@ hbcd/
 
 ## Table Organization
 
-Each table includes “identifier columns” for participant ID and visit number that allow you to link information between tables:
+Each table includes “identifier columns” for participant ID, visit number, and run number (when applicable) that allow you to link information between tables:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-  <th style="width: 10%;">Column Name</th>
-  <th style="width: 45%;">Definition</th>
-  <th style="width: 35%;">Example</th>
+  <th>Column Name</th>
+  <th>Definition</th>
+  <th style="width: 20%;">Example</th>
 </thead>
 <tbody>
 <tr>
   <td><b><code>participant_id</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Unique identifier for a participant</td>
-  <td><span class="tooltip"><code>sub-0123456789</code></td>
+  <td><code>sub-0123456789</code></td>
 </tr>
 <tr>
   <td><b><code>session_id</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Unique identifier for session/visit number</td>
-  <td><span class="tooltip"><code>ses-V01</code></td>
+  <td><code>ses-V01</code></td>
+</tr>
+<tr>
+  <td><b><code>run_id</code></b></td>
+  <td style="word-wrap: break-word; white-space: normal;">Unique identifier for run number - <i>only present in tables derived from file-based data with multiple runs, e.g. for MRI acquisition</i></td>
+  <td><code>1</code></td>
 </tr>
 </tbody>
 </table>
