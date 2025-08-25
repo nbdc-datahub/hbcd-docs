@@ -1,12 +1,5 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-<p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:</p>
-<ul style="color: red;">
-<li>what is table name?</li>
-<li>Is this organized appropriately, ie under Admin?</li>
-</ul>
-</p>
-
 # Study Navigator Contact Form
 
 **Full Name**: Study Navigator Contact Form           

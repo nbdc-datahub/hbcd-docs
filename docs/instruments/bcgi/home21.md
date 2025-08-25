@@ -1,11 +1,5 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
- <p style="color: red;">ADMIN INFO FOR PAGE CONSTRUCTION:<br>
- - table name missing<br>
- - Caldwell & Bradley, 2016, 2003 sited in instrument details missing from ref list</p>
-
-----------------
-
 # HOME-21 Infant-Toddler
 
 **Full Name**: Home Observation for Measurement of the Environment (HOME)-21. Infant-Toddler Version                    
@@ -178,7 +172,12 @@ Assessment of children’s home environments is crucial to understanding context
 <p>Bradley, R. H., Corwyn, R. F., McAdoo, H. P., & Coll, C. G. (2001). The home environments of children in the United States part I: variations by age, ethnicity, and poverty status. <i>Child Development</i>, 72(6), 1844–1867. <a href="https://doi.org/10.1111/1467-8624.t01-1-00382" target="_blank">https://doi.org/10.1111/1467-8624.t01-1-00382</a></p>  
 <p>Bradley, Robert H. (2015). Constructing and adapting causal and formative measures of family settings: The HOME Inventory as illustration. <i>Journal of Family Theory & Review</i>, 7(4), 381–414. <a href="https://doi.org/10.1111/jftr.12108" target="_blank">https://doi.org/10.1111/jftr.12108</a></p>  
 <p>Bradley, Robert H., & Caldwell, B. M. (1984). The HOME Inventory and family demographics. <i>Developmental Psychology</i>, 20(2), 315–320. <a href="https://doi.org/10.1037/0012-1649.20.2.315" target="_blank">https://doi.org/10.1037/0012-1649.20.2.315</a></p>  
+<p>Caldwell, B. M., & Bradley, R. H. (2003). <i>Home observation measurement environment: Administration manual</i> (pp. 23–33).</p>
+<p>Caldwell BM, & Bradley RH (2016). <i>Home Observation for Measurement of the Environment</i>. Tempe, AZ: The Connect Center, Arizona State University.</p>
 <p>Lansford, J. E., Odgers, C. L., Bradley, R. H., Godwin, J., Copeland, W. E., Rothenberg, W. A., & Dodge, K. A. (2023). The HOME-21: A revised measure of the home environment for the 21st century tested in two independent samples. <i>Psychological Assessment</i>, 35(1), 1–11. <a href="https://doi.org/10.1037/pas0001183" target="_blank">https://doi.org/10.1037/pas0001183</a></p>  
 <p>Mott, F. L. (2004). The utility of the HOME-SF scale for child development research in a large national longitudinal survey: The national longitudinal survey of youth 1979 cohort. <i>Parenting, Science and Practice</i>, 4(2–3), 259–270. <a href="https://doi.org/10.1080/15295192.2004.9681273" target="_blank">https://doi.org/10.1080/15295192.2004.9681273</a></p>  
 </div>
 <br>
+
+
+
