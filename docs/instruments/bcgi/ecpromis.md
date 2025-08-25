@@ -1,10 +1,30 @@
-# ecPROMIS (<1 y/o)
+# ecPROMIS <1 Year & 1-5 Years
 
-**Full Name**: Early Childhood Patient-Reported Outcome Measurement Information System Child/Caregiver Relationship Scale       
-**Acronym**: ecPROMIS                  
-**Table Name**: `mh_cg_pms__cc__inf`       
-**Construct**: Relationships
+**Full Name**: <span class="tooltip">ecPROMIS<span class="tooltiptext">Early Childhood Patient-Reported Outcome Measurement Information System</span></span> Child/Caregiver Relationship Scale
 
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<td style="text-align: center;"><strong>Instrument</strong></td>
+<td style="text-align: center;"><strong>Version</strong></td>
+<td style="text-align: center;"><strong>Construct</strong></td>
+<td style="text-align: center;"><strong>Table Name</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2">ecPROMIS</td>
+  <td><b>ecPROMIS &lt;1 year</b></td>
+  <td>Relationships (&lt;1 year)</td>
+  <td><code>mh_cg_pms__cc__inf</code></td>
+</tr>
+<tr>
+  <td><b>ecPROMIS (1-5 years)</b></td>
+  <td>Relationships (1-5 years)</td>
+  <td><code>mh_cg_pms__cc__1to5</code></td>
+</tr>
+</tbody>
+</table>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -20,7 +40,6 @@
 <p>The ecPROMIS assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p> 
 </div>
 
-
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -30,9 +49,9 @@
 <tr><td><b>Respondent</b></td>
 <td>Primary caregiver</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V03, V04, V06</td></tr>
+<td>V03 [<strong>&lt;1 year</strong>]; V04, V06 [<strong>1-5 years</strong>]</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>1-2 min</td></tr>
 <tr><td><b>Quality Control</b></td>
@@ -43,7 +62,9 @@
 
 ## Instrument Details
 
-The ecPROMIS (Early Childhood Patient-Reported Outcome Measurement Information System) offers clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. One component is the Child-Caregiver Relationship Scale, which assesses the degree to which young children develop close, satisfying relationships with caregivers. The **ecPROMIS Child-Caregiver Relationship Form (Infancy: < 1 year)** was developed for HBCD based on this scale (specifically the ecPROMIS Parent-Report Short Form v1.0 - Social Relationships – Child-Caregiver Interactions 5a Form) with updated language to make the items suitable for the pre-V03 age range (3 to 9 months) (i.e. the term ‘my child’ was replaced with 'my baby,' per the guidance of ecPROMIS developers, as the original measure was designed for 1-5 year old children).
+The **Early Childhood Patient-Reported Outcome Measurement Information System (ecPROMIS)** provides clinicians and researchers with a brief, reliable way to assess young children’s well-being. One of its key components is the Child–Caregiver Relationship Scale, which evaluates the degree to which young children develop close, satisfying relationships with caregivers. 
+
+For the HBCD study, the **ecPROMIS Child–Caregiver Relationship Form** was developed based on the ecPROMIS Parent-Report Short Form v1.0 – Social Relationships: Child–Caregiver Interactions 5a. Because the original measure was designed for children aged **1–5 years**, an adapted version was created for **infants under 1 year** (i.e. 3-9 month old infants from visit V03), replacing the term ‘my child’ with 'my baby' per the guidance of ecPROMIS developers.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">

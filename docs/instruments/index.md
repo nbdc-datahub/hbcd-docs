@@ -155,13 +155,13 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td><code>mh_cg_chaos</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS Child-Caregiver Int (&lt;1 year)</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS - Caregiver Child Relationship Scale (&lt;1 year)</a></td>
     <td>ecPROMIS (&lt;1 y/o)</td>
     <td style="word-wrap: break-word; white-space: normal;">Relationships</td>
     <td><code>mh_cg_pms__cc__inf</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS (1-5 y/o) - Caregiver Child Relationship Scale</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS - Caregiver Child Relationship Scale (1-5 y/o)</a></td>
     <td style="word-wrap: break-word; white-space: normal;">ecPROMIS (1-5 y/o)</td>
     <td style="word-wrap: break-word; white-space: normal;">Relationships</td>
     <td><code>mh_cg_pms__cc__1to5</code></td>
