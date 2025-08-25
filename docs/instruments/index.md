@@ -270,14 +270,14 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <tr>
       <th style="width: 50%; text-align: center;">Name of Instrument</th>
       <th style="width: 10%; text-align: center;">Acronym</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
+      <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="neurocog/bayley-4" target="_blank">Bayley Scales of Infant and Toddler Development, Fourth Edition</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">BSID-4, Bayley</td>
+      <td>BSID-4, Bayley</td>
       <td style="word-wrap: break-word; white-space: normal;">Child Development (Cognitive, Language, and Motor)</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>nc_ch_bayley</code></td>
     </tr>
