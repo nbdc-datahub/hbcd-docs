@@ -58,7 +58,7 @@ See description of fields reporting age in the tabulated data under Age Variable
 
 ## File Types
 
-Tabulated data are available in two formats, **plain text files** (`.tsv`/`.csv`) and **Parquet** (`.parquet`) - [see details](#plain-text-vs-parquet-files) below. Each data table also comes with a **shadow matrix file** (`<instrument_name>_shadow.<tsv|parquet>`), which has the same structure of the corresponding data table, but contains codes explaining why values are missing - [see details](#shadow-matrices) below. 
+Tabulated data are available in two formats, **plain text files** (`.tsv`/`.csv`) and **Parquet** (`.parquet`) - [see details](#plain-text-vs-parquet-files) below. Each data table also comes with a **shadow matrix file** (`<instrument_name>_shadow.<tsv|parquet>`), which has the same structure of the corresponding data table, but contains codes explaining why values are missing - [see details](#shadow-matrices-for-missing-data) below. 
 
 ### Plain Text vs. Parquet Files
 
@@ -121,7 +121,7 @@ Plain text formats like TSV/CSV can cause problems in large-scale analyses due t
 <div id="load-parquet" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="emoji"><i class="fa-brands fa-python"></i> / <i class="fa-brands fa-r-project"></i></span>
-  <span class="text">Loading Parquet Files in Python/R</span>
+  <span class="text">Loading Parquet Files</span>
   <a class="anchor-link" href="#load-parquet" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -149,30 +149,32 @@ Plain text formats like TSV/CSV can cause problems in large-scale analyses due t
 </p>
 
 
-### Shadow Matrices
-Each TSV and Parquet ***data file*** in the BIDS `/rawdata/phenotype/` directory has a corresponding ***shadow matrix file*** in the same format (TSV or Parquet). These shadow matrix files mirror the structure and column names of the original data files and are available to download via Lasso and DEAP.
+### Shadow Matrices for Missing Data
 
-In the data files, missing values are represented as blank cells. Shadow matrices provide essential context by indicating the reason a value is missing (e.g., “don’t know,” “declined to answer,” “missed visit”). Each cell in a shadow matrix corresponds to the same cell in the associated data file:
+Each TSV or Parquet file in `/rawdata/phenotype/` has a corresponding **shadow matrix file** in the same format that record the reason for missing values (e.g., “don’t know,” “declined to answer,” “missed visit”) in the phenotype data.
 
-- If a data cell contains a value, the corresponding shadow matrix cell is blank.
-- If a data cell is missing, the corresponding shadow matrix cell includes a code or description indicating the reason the data is missing, as illustrated below by the <mark style="background-color: #f9cb9b; font-weight: normal;">highlighted cells</mark> in the data file (*left*) vs. the corresponding shadow matrix (*right*).
+#### How They Work
+
+In the data files, categorical codes for non-responses such as “Don’t know” (`999`) and “Decline to answer” (`777`) are deliberately converted to blank cells. The original responses are converted to a missingness reason stored in the shadow matrix, which mirror the structure and column names of the original data file (i.e. each cell corresponds to the same cell in the associated data file):
+
+ - If a data cell contains a value: the shadow matrix cell is blank.
+ - If a data cell is missing: the shadow matrix cell records the reason (e.g., “Don’t know”)
+ 
+For example, compare the <mark style="background-color: #f9cb9b; font-weight: normal;">highlighted cells</mark> in the data file (*left*) vs. the corresponding shadow matrix (*right*) below:
 
 ![](images/shadowmatrix.png)
 
-The categorical codes for “Don’t know” (`999`) and “Decline to answer” (`777`) that are used across different tables in the HBCD dataset (and are typically considered non-responses) are deliberately converted to missing values in the data file, with the original response converted to a missingness reason stored in the shadow matrix. This prevents analytical errors such as inadvertently treating placeholder codes (like `777` or `999`) as valid numeric values during analysis and ensures consistency in data types across all entries (e.g. text notes in numeric fields are avoided).
+#### Why Shadow Matrices Are Useful
 
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">When should I use shadow matrices?</span>
-</div>
-<div class="notification-static-content">
-<p>While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, there are situations where non-responses are themselves meaningful. For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables. In such cases, users can re-integrate the non-responses from the shadow matrix back into the data.</p>
-</div>
-<br>
+Shadow matrices make analyses cleaner and more reliable by:
+
+ - Preventing analytical errors, e.g., misinterpreting placeholder codes (like `777` or `999`) as valid numbers.
+ - Maintaining consistent data types across entries (e.g., avoids mixing text notes into numeric fields).
+ - Preserving non-response information without cluttering the main dataset.
 
 #### Working with Shadow Matrices in Python and R 
 
-Here we describe how researchers can combine data with the shadow information into a single data frame using the R or Python programming languages. This can be useful for understanding patterns of missing data or integrating missingness reasons (e.g., `Decline to Answer`, `Logic Skipped`, etc.) into your analysis.
+While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, **there are situations where non-responses are themselves meaningful.** For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables. To understand patterns of missing data, users can re-integrate the non-responses from the shadow matrix (e.g., `Decline to Answer`, `Logic Skipped`, etc.) back into the data. The following helper functions illustrate how to do combine data with the shadow information into a single data frame in Python or R (*click to expand*).
 
 <div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
