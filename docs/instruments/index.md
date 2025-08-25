@@ -275,6 +275,12 @@ Each instrument name links to a dedicated page with detailed documentation for t
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="neurocog/bayley-4" target="_blank">Bayley Scales of Infant and Toddler Development, Fourth Edition</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">BSID-4, Bayley</td>
+      <td style="word-wrap: break-word; white-space: normal;">Child Development (Cognitive, Language, and Motor)</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>nc_ch_bayley</code></td>
+    </tr>
    <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="neurocog/mlds" target="_blank">Multilingual Language Development Screener</a></td>
       <td style="word-wrap: break-word; white-space: normal;">MLDS</td>
