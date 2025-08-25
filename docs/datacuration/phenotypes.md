@@ -1,6 +1,19 @@
 # Tabulated Data
 
-Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format** curated to follow a standardized format linked by participant ID and visit number. This includes behavior, demographics, visit data, toxicology results, and tabulated data derived from brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data (see full list of measures included in the release under [study instruments](../instruments/index.md)). Accompanying metadata explains each variable and table to support data use.
+Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**. This includes behavior, demographics, toxicology results, and data derived from brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. 
+
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">
+     See full list of tables included in the release under <a href="../../instruments/#instruments-by-domain" target="_blank">Instruments by Domain</a>.
+  </span>
+</div>
+<p></p>
+
+Key features of tabulated data include:
+
+- Data are curated to follow the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files.html#phenotypic-and-assessment-data) standard linked by participant ID and visit number. See [Table Organization](#table-organization) below for details.
+- Tabulated data is available in both plain text (`.tsv`) and Parquet (`.parquet`) formats, with accompanying metadata explaining the contents of each table. See [File Types](#file-types) below for details.
 
 <pre class="folder-tree">
 hbcd/
@@ -12,103 +25,171 @@ hbcd/
         |__ <span class="placeholder">&lt;instrument_name&gt;</span>.*             <span class="hashtag"># Instrument Data</span>
 </pre>
 
-Tabulated data lists information for all participants in both plain text (`.tsv`) and Parquet (`.parquet`) formats (see example below). TSV files are tab-separated values files that can be easily opened in spreadsheet software or text editors, with metadata (including the names and types of each column) provided in a separate `.json` file. The Parquet files are a columnar storage format optimized for performance and efficiency, with metadata stored directly in the file. Each data file is additionally accompanied by a corresponding shadow matrix file (in `.tsv` and `.parquet` format) that mirrors the structure of the data file with the values replaced by reason for data missingness. 
+## Table Organization
 
+Each table includes “identifier columns” for participant ID, visit number, and run number (when applicable) that allow you to link information between tables:
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <th>Column Name</th>
+  <th>Definition</th>
+  <th style="width: 20%;">Example</th>
+</thead>
+<tbody>
+<tr>
+  <td><b><code>participant_id</code></b></td>
+  <td style="word-wrap: break-word; white-space: normal;">Unique identifier for a participant</td>
+  <td><code>sub-0123456789</code></td>
+</tr>
+<tr>
+  <td><b><code>session_id</code></b></td>
+  <td style="word-wrap: break-word; white-space: normal;">Unique identifier for session/visit number</td>
+  <td><code>ses-V01</code></td>
+</tr>
+<tr>
+  <td><b><code>run_id</code></b></td>
+  <td style="word-wrap: break-word; white-space: normal;">Unique identifier for run number - <i>only present in tables derived from file-based data with multiple runs, e.g. for MRI acquisition</i></td>
+  <td><code>1</code></td>
+</tr>
+</tbody>
+</table>
+
+## Fields Reporting Age
+
+See description of fields reporting age in the tabulated data under Age Variable Definitions > <a href="../../instruments/agevariables/#tabulated-instrument-data" target="_blank">Tabulated Instrument Data</a>.
+
+## File Types
+
+Tabulated data are available in two formats, **plain text files** (`.tsv`/`.csv`) and **Parquet** (`.parquet`) - [see details](#plain-text-vs-parquet-files) below. Each data table also comes with a **shadow matrix file** (`<instrument_name>_shadow.<tsv|parquet>`), which has the same structure of the corresponding data table, but contains codes explaining why values are missing - [see details](#shadow-matrices-for-missing-data) below. 
+
+### Plain Text vs. Parquet Files
+
+Tabulated data are provided in multiple formats to support a range of tools and user preferences. **Plain text files** (`.tsv`/`.csv`) are widely compatible and easy to open/inspect in Excel or text editors. Metadata (including column types, variable labels, categorical coding, etc.) is stored in separate `.json` files accompanying each plain text file. [Apache Parquet](https://parquet.apache.org/), or simply **Parquet** (`.parquet`), is a modern, compressed columnar format optimized for analysis and large-scale data. Unlike plain text files, metadata is embedded directly in parquet files, ensuring correct data types and enabling efficient loading and analysis in Python or R.
+
+#### Which format should I use?
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="width: 10%;">Format</th>
+      <th style="width: 25%;">When to use</th>
+      <th style="width: 20%;">Advantages</th>
+      <th style="width: 35%;">Limitations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>TSV/CSV</b></td>
+      <td style="word-wrap: break-word; white-space: normal;">Quick inspection, spreadsheet use</td>
+      <td>
+        <i style="color: blue;" class="fas fa-check"></i> Easy to open<br>
+        <i style="color: blue;" class="fas fa-check"></i> Widely compatible format
+      </td>
+      <td>
+        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Large files load slowly<br>
+        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Separate metadata (<i>see <a href="#caution-using-plain-text-files-for-analysis">Caution</a> below</i>)<br>
+        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Selective column loading not supported
+      </td>
+    </tr>
+    <tr>
+      <td><b>Parquet</b></td>
+      <td style="word-wrap: break-word; white-space: normal;">Analysis in Python/R for large data</td>
+      <td>
+        <i style="color: blue;" class="fas fa-check"></i> Optimized for large-scale data<br>
+        <i style="color: blue;" class="fas fa-check"></i> Fast loading and smaller files<br>
+        <i style="color: blue;" class="fas fa-check"></i> Metadata embedded<br>
+        <i style="color: blue;" class="fas fa-check"></i> Ensures correctly specified data types<br>
+        <i style="color: blue;" class="fas fa-check"></i> Supports selective column loading (saves memory)
+      </td>
+      <td>
+        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Not easily viewable in Excel<br>
+        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Not currently supported by <a href="https://bids-specification.readthedocs.io/en/stable/">BIDS</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Caution: Using Plain Text Files for Analysis
+
+Plain text formats like TSV/CSV can cause problems in large-scale analyses due to the fact that **metadata is stored separately** (in sidecar JSON files). Python, R, or other tools may make mistakes when importing the data. For example:
+
+- Tools may misinterpret data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical.
+- Columns with mostly missing values may be treated as empty if the first few rows contain no data.
+
+**We therefore recommend using Parquet files for analysis to avoid these issues**, as the metadata is embedded directly. However, **if you do choose to use TSV/CSV files for analysis:** be sure to manually define column types during import using the sidecar JSON metadata files. We recommend using [NBDCtools](recprograms.md#tabulated-data) to automate this process - see documentation for the function `read_dsv_formatted()` [here](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html).
+
+#### Working with Parquet in Python and R
 <p>
-<div id="instrument-age" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text-with-link">
-    <span class="text">Instrument-Specific Fields Reporting Age</span>
-    <a class="anchor-link" href="#instrument-age" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-    </a>
-    </span>
+<div id="load-parquet" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="emoji"><i class="fa-brands fa-python"></i> / <i class="fa-brands fa-r-project"></i></span>
+  <span class="text">Loading Parquet Files</span>
+  <a class="anchor-link" href="#load-parquet" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
   <span class="arrow">▸</span>
 </div>
-<div class="notification-collapsible-content">
-<p><i>See the <a href="../../instruments/agevariables">Age Variable Definitions</a> section for a summary of all age-related variables across the release, as well as the information summarized in table format <a href="../../instruments/agevariables/#tabulated-instrument-data">here</a>.</i></p>
-<b>Gestational Age at Administration</b> (<code>&lt;instrument_name&gt;_gestational_age</code>): 'GAA' is the time from the first day of the birth parent’s last menstrual period (LMP), estimated as EDD minus 280 days, to the instrument administration date. GAA is given in whole weeks, rounded down, for only the V01 visit. For a given participant, GAA typically varies by no more than 4 weeks across protocol elements except in cases where protocol exceptions were granted.
-<br>
-<br>
-<b>Chronological Age at Administration</b> (<code>&lt;instrument_name&gt;_candidate_age</code>): Reported in years (to three decimal places), chronological age is the time from birth (with the birthdate jittered up to 7 days to mitigate identification risks) to the date of instrument administration (for V02 onward). It is calculated by dividing the total days elapsed (rounded down) by 365.25. Reporting in years, rather than months, ensures consistency across developmental stages (e.g., toddlerhood, childhood), while three-decimal precision compensates for birthdate adjustments, yielding values closer to actual age.
-<br>
-<br>
-<b>Adjusted Chronological Age at Administration</b> (<code>&lt;instrument_name&gt;_adjusted_age</code>): 'ACAA' is the time elapsed between the estimated date of delivery (EDD) and date of instrument administration (for V02 onward), reported in whole weeks rounded down to the nearest week.
-<br>
-<br>
+<div class="collapsible-content">
+<p><strong>Loading parquet files in Python (<a href="https://docs.pola.rs/" target="_blank">polars</a> or <a href="https://pandas.pydata.org/docs/getting_started/index.html" target="_blank">pandas</a> module):</strong></p>
+  <pre class="helper-code"><code>
+    # Using `polars` module [RECOMMENDED]:
+    import polars as pl
+    parquet_df = pl.read_parquet("path/to/file.parquet")
+
+    # Using `pandas` module:
+    import pandas as pd
+    parquet_df = pd.read_parquet("path/to/file.parquet")
+  </code></pre>
+<strong>Loading Parquet file in R (<a href="https://arrow.apache.org/docs/r/" target="_blank">arrow</a> package):</strong>
+  <pre class="helper-code"><code>
+    # Using `arrow` package:
+    library(arrow)
+    parquet_df <- read_parquet("path/to/file.parquet")
+  </code></pre>
 </div>
 </p>
 
-## File Types
-Tabulated data is available in both tab-separated values (TSV) and [Apache Parquet](https://parquet.apache.org/) formats. Both formats are provided to support a range of tools and user preferences. However, **using Parquet for NBDC <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data ensures correctly specified data types, faster loading speeds, and lower memory usage.**
 
-### Plain Text vs. Parquet Files
-#### Plain Text (TSV/CSV)
-Plain text formats (TSV/CSV) are widely compatible and easy to inspect, but less efficient for large datasets. They don't support selective column loading or preserve metadata, such as data type specification; the metadata is instead available via the sidecar JSON files for plan text files. As a result, tools like Python or R must guess data types during import, often incorrectly. For example, categorical values like "0"/"1" for "Yes"/"No" (commonly used in NBDC datasets) may be interpreted as numeric, and columns with mostly missing values may be treated as empty if the first few rows lack data.
+### Shadow Matrices for Missing Data
 
-To avoid such issues, you may manually define column types using the accompanying data dictionaries included in the sidecar JSON metadata files during the import. The `NBDCtools` R package offers a utility function, `read_dsv_formatted()`, to automate this process (see [Useful Utilities](recprograms.md#tabulated-data) for details).
+Each TSV or Parquet file in `/rawdata/phenotype/` has a corresponding **shadow matrix file** in the same format that record the reason for missing values (e.g., `Don't know`, `Decline to Answer`, `Logic Skipped`, etc.) in the phenotype data.
 
-#### Parquet
-<div id="parquetbids" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">Note: Parquet Not Currently Supported by BIDS</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="notification-collapsible-content">
-<p>Please note that Parquet files are currently not officially supported by the <a href="https://bids-specification.readthedocs.io/en/stable/">BIDS specification</a>. For NBDC datasets, we decided to add Parquet as an alternative file format to the BIDS standard TSV to allow users to take advantage of the features of this modern and efficient open source format that is commonly used in the data science community.</p>
-</div>
+#### How They Work
 
-[Apache Parquet](https://parquet.apache.org/) is a modern, compressed, columnar format optimized for large-scale data. In contrast to TSV files, Parquet supports selective column loading and smaller file sizes. This improves loading speed and memory usage and enhances performance for analytical workflows. Crucially, parqet can store metadata (including column types, variable/value labels, and categorical coding) directly in the file, enabling accurate import without manual setup.
+In the data files, categorical codes for non-responses such as “Don’t know” (`999`) and “Decline to answer” (`777`) are deliberately converted to blank cells. The original responses are converted to a missingness reason stored in the shadow matrix, which mirror the structure and column names of the original data file (i.e. each cell corresponds to the same cell in the associated data file):
 
-<p style="margin-bottom: 0; padding-bottom: 0;"><b>Example: Loading Parquet file in Python (using <a href="https://docs.pola.rs/">polars</a> or <a href="https://pandas.pydata.org/docs/getting_started/index.html">pandas</a> modules)</b></p>
-
-```bash
-# Using `polars` module [RECOMMENDED]:
-import polars as pl
-parquet_df = pl.read_parquet("path/to/file.parquet")
-
-# Using `pandas` module:
-import pandas as pd
-parquet_df = pd.read_parquet("path/to/file.parquet")
-```
-
-<p style="margin-bottom: 0; padding-bottom: 0;"><b>Example: Loading Parquet file in R (<a href="https://arrow.apache.org/docs/r/">arrow</a> package):</b></p>
-
-```bash 
-# Using `arrow` package:
-library(arrow)
-parquet_df <- read_parquet("path/to/file.parquet")
-```
-
-### Shadow Matrices
-Each TSV and Parquet ***data file*** in the BIDS `/rawdata/phenotype/` directory has a corresponding ***shadow matrix file*** in the same format (TSV or Parquet). These shadow matrix files mirror the structure and column names of the original data files and are available to download via Lasso and DEAP.
-
-In the data files, missing values are represented as blank cells. Shadow matrices provide essential context by indicating the reason a value is missing (e.g., “don’t know,” “declined to answer,” “missed visit”). Each cell in a shadow matrix corresponds to the same cell in the associated data file:
-
-- If a data cell contains a value, the corresponding shadow matrix cell is blank.
-- If a data cell is missing, the corresponding shadow matrix cell includes a code or description indicating the reason the data is missing, as illustrated below by the <mark style="background-color: #f9cb9b; font-weight: normal;">highlighted cells</mark> in the data file (*left*) vs. the corresponding shadow matrix (*right*).
+ - If a data cell contains a value: the shadow matrix cell is blank.
+ - If a data cell is missing: the shadow matrix cell records the reason (e.g., “Don’t know”)
+ 
+For example, compare the <mark style="background-color: #f9cb9b; font-weight: normal;">highlighted cells</mark> in the data file (*left*) vs. the corresponding shadow matrix (*right*) below:
 
 ![](images/shadowmatrix.png)
 
-The categorical codes for “Don’t know” (`999`) and “Decline to answer” (`777`) that are used across different tables in the HBCD dataset (and are typically considered non-responses) are deliberately converted to missing values in the data file, with the original response converted to a missingness reason stored in the shadow matrix. This prevents analytical errors such as inadvertently treating placeholder codes (like `777` or `999`) as valid numeric values during analysis and ensures consistency in data types across all entries (e.g. text notes in numeric fields are avoided).
+#### Why Shadow Matrices Are Useful
 
-<p>
-<div id="shadowFYI" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">When should I use shadow matrices?</span>
+Shadow matrices make analyses cleaner and more reliable by:
+
+ - Preventing analytical errors, e.g., misinterpreting placeholder codes (like `777` or `999`) as valid numbers.
+ - Maintaining consistent data types across entries (e.g., avoids mixing text notes into numeric fields).
+ - Preserving non-response information without cluttering the main dataset.
+
+#### Working with Shadow Matrices in Python and R 
+
+While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, **there are situations where non-responses are themselves meaningful.** For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables. To understand patterns of missing data, users can re-integrate the non-responses from the shadow matrix back into the data using the following helper functions (*click to expand*):
+
+<div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="emoji"><i class="fa-brands fa-python"></i></span>
+  <span class="text">Python</span>
+  <a class="anchor-link" href="#python-helper-function" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
   <span class="arrow">▸</span>
 </div>
-<div class="notification-collapsible-content">
-<p>While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, there are situations where non-responses are themselves meaningful. For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables. In such cases, users can re-integrate the non-responses from the shadow matrix back into the data.</p>
-</div>
-</p>
-
-#### Working with Shadow Matrices in R and Python 
-
-Here we describe how researchers can combine data with the shadow information into a single data frame using the R or Python programming languages. This can be useful for understanding patterns of missing data or integrating missingness reasons (e.g., `Decline to Answer`, `Logic Skipped`, etc.) into your analysis.
-
-##### <i class="fa-brands fa-python"></i> Python Helper Function
-```
+<div class="collapsible-content">
+<pre class="helper-code"><code>
 import pandas as pd
 import os
 
@@ -139,23 +220,36 @@ def load_data_with_shadow(data_path, shadow_path):
 df = load_data_with_shadow("data.tsv", "shadow_matrix.tsv")
 
 # Example: View reasons for missing data for a given column/variable in the data file 
-df[df["<COLUMN NAME>"].isna()][["<COLUMN NAME>_missing_reason"]]  
-```
+df[df["&lt;COLUMN NAME&gt;"].isna()][["&lt;COLUMN NAME&gt;_missing_reason"]]
+</code></pre>
+</div>
 
-##### <i class="fa-brands fa-r-project"></i> R Helper Function Using [NBDCtools](recprograms.md#tabulated-data)
-```
-library(dplyr)
-library(NBDCtools)
+<div id="r-helper-function" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="emoji"><i class="fa-brands fa-r-project"></i></span>
+  <span class="text">R (using <a href="../recprograms/#tabulated-data">NBDCtools</a>)</span>
+  <a class="anchor-link" href="#r-helper-function" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+  <pre class="helper-code"><code>
+    library(dplyr)
+    library(NBDCtools)
 
-# read in data and shadow matrix
-data <- arrow::read_parquet("path/to/data/<table_name>.parquet")
-shadow <- arrow::read_parquet("path/to/data/<table_name_shadow>.parquet")
+    # read in data and shadow matrix
+    data <- arrow::read_parquet("path/to/data/&lt;table_name&gt;.parquet")
+    shadow <- arrow::read_parquet("path/to/data/&lt;table_name_shadow&gt;.parquet")
 
-# bind shadow columns to data
-data_shadow <- shadow_bind_data(data, shadow)
+    # bind shadow columns to data
+    data_shadow <- shadow_bind_data(data, shadow)
 
-# show the reasons for missing values for a given variable
-data_shadow |>
-  filter(is.na(<column_name>)) |> 
-  count(<column_name>)
-```
+    # show the reasons for missing values for a given variable
+    data_shadow |>
+      filter(is.na(&lt;column_name&gt;)) |> 
+      count(&lt;column_name&gt;)
+  </code></pre>
+</div>
+<br>

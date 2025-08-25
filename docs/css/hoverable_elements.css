@@ -4,7 +4,7 @@
     display: inline-block;
     cursor: help;
     border-bottom: 1px dotted #555; /* Dotted underline for hover indication */
-    color: #007bff; /* A blue color to indicate interactivity */
+    color: teal;
     font-weight: 500;
 }
 
@@ -41,7 +41,7 @@
 }
 /* Add a slight color change on hover */
 .tooltip:hover {
-    color: #0056b3;
+    color: rgb(0, 207, 207);
     border-bottom: 1px dotted #0056b3;
 }
 /* Position the tooltip to the left */

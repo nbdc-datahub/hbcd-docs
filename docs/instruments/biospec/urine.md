@@ -51,6 +51,7 @@ These data are the results of urine toxicology assays. **Screening** results for
 <p>
 <div id="urine-table1" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
+  <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text">Table 1. Urine Assay Thresholds for Analytes</span>
   <a class="anchor-link" href="#urine-table1" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -466,6 +467,7 @@ These data are the results of urine toxicology assays. **Screening** results for
 
 <div id="urine-table2" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
+  <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text">Table 2. Mapping From Class to Screening Tests and Confirmatory Tests</span>
   <a class="anchor-link" href="#urine-table2" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -662,6 +664,7 @@ These data are the results of urine toxicology assays. **Screening** results for
 
 <div id="validation" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
+  <span class="emoji"><i class="fas fa-clipboard-check"></i></span>
   <span class="text">Validation Procedures</span>
   <a class="anchor-link" href="#validation" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -686,6 +689,7 @@ The scoring for each test type is summarized below:
 
 <div id="urine-table3" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
+  <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text">Table 3. Screening Result Scoring</span>
   <a class="anchor-link" href="#urine-table3" title="Copy link">
   <i class="fa-solid fa-link"></i>
