@@ -55,7 +55,7 @@
 <tr><td style="word-wrap: break-word; white-space: normal;"><b>QC Procedures</b></td>
 <td style="word-wrap: break-word; white-space: normal;">
 <ul>
-    <li>HBCD Study staff/Research Assistants (RAs) underwent a training process and were required to submit videos and item scoring responses of an administration for review by trained Bayley administrators who then certified that the RA was compliant with the administration instructions as outlined in the manual.</li>
+    <li>Research assistants (RAs) underwent a training process and were required to submit videos and item scoring responses of an administration for review by trained Bayley administrators who then certified that the RA was compliant with the administration instructions as outlined in the manual.</li>
     <li>For data collection, a QR code was used to enter the child&#39;s study ID number and Date of Birth. Adjustments for prematurity were made using the QR code.</li>
     <li>For data collection, responses were entered into QGlobal during testing and QGlobal aided RAs in determining appropriate basal and ceiling criteria during administration.</li>
     <li>All scoring (addition of item responses) and tabulation of standard scores was done by the QGlobal software.</li>
