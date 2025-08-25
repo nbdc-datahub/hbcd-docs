@@ -114,7 +114,7 @@ Plain text formats like TSV/CSV can cause problems in large-scale analyses due t
 - Tools may misinterpret data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical.
 - Columns with mostly missing values may be treated as empty if the first few rows contain no data.
 
-**We therefore recommend using Parquet files for analysis to avoid these issues**, as the metadata is embedded directly. However, **if you do choose to use TSV/CSV files for analysis:** be sure to manually define column types during import using the sidecar JSON metadata files. We recommend using the [NBDCtools](recprograms.md#tabulated-data) `read_dsv_formatted()` function to automate this process.
+**We therefore recommend using Parquet files for analysis to avoid these issues**, as the metadata is embedded directly. However, **if you do choose to use TSV/CSV files for analysis:** be sure to manually define column types during import using the sidecar JSON metadata files. We recommend using [NBDCtools](recprograms.md#tabulated-data) to automate this process - see documentation for the function `read_dsv_formatted()` [here](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html).
 
 #### Working with Parquet in Python and R
 <p>
@@ -179,7 +179,7 @@ While the approach of storing missingness reasons in a shadow matrix file suppor
 <div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="emoji"><i class="fa-brands fa-python"></i></span>
-  <span class="text">Python Helper Function</span>
+  <span class="text">Python</span>
   <a class="anchor-link" href="#python-helper-function" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -218,14 +218,14 @@ def load_data_with_shadow(data_path, shadow_path):
 df = load_data_with_shadow("data.tsv", "shadow_matrix.tsv")
 
 # Example: View reasons for missing data for a given column/variable in the data file 
-df[df["<COLUMN NAME>"].isna()][["<COLUMN NAME>_missing_reason"]]
+df[df["&lt;COLUMN NAME&gt;"].isna()][["&lt;COLUMN NAME&gt;_missing_reason"]]
 </code></pre>
 </div>
 
 <div id="r-helper-function" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="emoji"><i class="fa-brands fa-r-project"></i></span>
-  <span class="text">R Helper Function Using <a href="../recprograms/#tabulated-data">NBDCtools</a></span>
+  <span class="text">R (using <a href="../recprograms/#tabulated-data">NBDCtools</a>)</span>
   <a class="anchor-link" href="#r-helper-function" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -234,20 +234,20 @@ df[df["<COLUMN NAME>"].isna()][["<COLUMN NAME>_missing_reason"]]
 </div>
 <div class="collapsible-content">
   <pre class="helper-code"><code>
-  library(dplyr)
-  library(NBDCtools)
+    library(dplyr)
+    library(NBDCtools)
 
-  # read in data and shadow matrix
-  data <- arrow::read_parquet("path/to/data/<table_name>.parquet")
-  shadow <- arrow::read_parquet("path/to/data/<table_name_shadow>.parquet")
+    # read in data and shadow matrix
+    data <- arrow::read_parquet("path/to/data/&lt;table_name&gt;.parquet")
+    shadow <- arrow::read_parquet("path/to/data/&lt;table_name_shadow&gt;.parquet")
 
-  # bind shadow columns to data
-  data_shadow <- shadow_bind_data(data, shadow)
+    # bind shadow columns to data
+    data_shadow <- shadow_bind_data(data, shadow)
 
-  # show the reasons for missing values for a given variable
-  data_shadow |>
-    filter(is.na(<column_name>)) |> 
-    count(<column_name>)
+    # show the reasons for missing values for a given variable
+    data_shadow |>
+      filter(is.na(&lt;column_name&gt;)) |> 
+      count(&lt;column_name&gt;)
   </code></pre>
 </div>
 <br>
