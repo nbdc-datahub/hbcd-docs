@@ -1,27 +1,32 @@
 
 /* Green Collapsible Notification Banner */
 .notification-banner {
+  display: flex;
+  align-items: center;      /* centers emoji relative to text block */
   background-color: #25ae7049;
-  padding: 6px 8px; /* Reduced vertical padding */
+  padding: 4px 8px;
   border-bottom: 1px solid #e0e0e0;
   font-family: Lato; 
   color: #474646;
   font-weight: bold;
-  display: flex;
-  align-items: center; /* Ensures vertical alignment of items */
-  justify-content: space-between; /* Ensures proper spacing */
-  gap: 3px;
-  line-height: 18px;
+  gap: 8px;                 /* space between emoji and text */
   font-size: 0.9em;
-  border-radius: 0; /* Make square shaped */
-  cursor: pointer;
+  line-height: 1.1;
+  border-radius: 6px; /* round edges */
   width: 100%;
 }
 .notification-banner .emoji {
-  font-size: 1.2rem; 
-  margin-right: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;   /* increase this for larger icon */
   color: #007f49;
 }
+.notification-banner .text {
+  flex: 1;                  /* text takes remaining space */
+}
+
 .notification-collapsible-content {
   max-height: 0;
   overflow: hidden;

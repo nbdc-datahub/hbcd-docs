@@ -56,8 +56,6 @@ There are several items with branching logic; please consult the following resou
 This item will be available in the interim Release 1.1 - <a href="../../../changelog/pending/#inclusion-of-birth-parent-sexual-orientation">see details</a>.</p>
 </div>
 
-
-
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -114,6 +112,7 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
 </div>
 
 <div id="demo-tables" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-magnifying-glass"></i></span>
   <span class="text-with-link">
   <span class="text">Sources for Demographic Protocols & Modifications</span>
   <a class="anchor-link" href="#demo-tables" title="Copy link">

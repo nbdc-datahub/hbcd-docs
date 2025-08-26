@@ -233,6 +233,7 @@ M-CRIB-S is a surface reconstruction method developed for neonates using the sur
 *Note*: The M-CRIB-S `mcribs/SUBSES/freesurfer/` folder mostly mirrors the contents of the FreeSurfer (`derivatives/freesurfer/`) folder ([see details below](#freesurfer)), except for two symlinks replacing regular files. The visual below shows only the files unique to the M-CRIB-S `freesurfer/` folder.
 
 <div id="symlinks" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-rotate-left"></i></span>
   <span class="text-with-link">
   <span class="text">Restoring Symlink Files</span>
   <a class="anchor-link" href="#symlinks" title="Copy link">
