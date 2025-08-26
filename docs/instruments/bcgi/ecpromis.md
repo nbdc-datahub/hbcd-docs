@@ -1,8 +1,6 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 (addition of 1-5 year version)</i> 🚧 </p>
 
-# ecPROMIS, Versions: <1 Year & 1-5 Years
-
-**Full Name**: <span class="tooltip">ecPROMIS<span class="tooltiptext">Early Childhood Patient-Reported Outcome Measurement Information System</span></span> Child/Caregiver Relationship Scale
+# ecPROMIS Child/Caregiver Relationship Scale
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -15,7 +13,7 @@
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2">ecPROMIS</td>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;"> <span class="tooltip tooltip-right">ecPROMIS<span class="tooltiptext">Early Childhood Patient-Reported Outcome Measurement Information System</span></span> Child/Caregiver<br>Relationship Scale</td>
   <td><b>ecPROMIS &lt;1 year</b></td>
   <td>Relationships (&lt;1 year)</td>
   <td><code>mh_cg_pms__cc__inf</code></td>
