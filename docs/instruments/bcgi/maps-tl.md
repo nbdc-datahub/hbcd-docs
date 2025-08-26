@@ -46,7 +46,7 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">V03 [<strong>Infancy</strong>]; VX, VX, etc [<strong>Toddlerhood and Preschool</strong>]</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">V03 <strong>[Infancy]</strong>; VX, VX, etc. <strong>[Toddlerhood and Preschool]</strong></td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>5 min</td></tr>
 <tr><td><b>Quality Control</b></td>
