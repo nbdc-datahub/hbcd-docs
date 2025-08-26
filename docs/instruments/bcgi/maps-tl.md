@@ -3,7 +3,7 @@
 # MAPS-TL
 
 <p>
-<strong>Full Name</strong>: Multidimensional Assessment Profiles - Temper Loss scale (*multiple versions*)<br>     
+<strong>Full Name</strong>: Multidimensional Assessment Profiles - Temper Loss scale (<i>multiple versions</i>)<br>     
 <strong>Acronym</strong>: MAPS-TL<br>
 <strong>Construct</strong>: Irritability<br>
 <strong>Table Names</strong>:
