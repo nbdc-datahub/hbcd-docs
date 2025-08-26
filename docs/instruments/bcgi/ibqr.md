@@ -46,6 +46,7 @@ The IBQ-R (VSF)+BI is a caregiver report form used to assess temperamental react
 In addition to the overall Surgency, Negative Affect and Effortful Control scales derived from the validated IBQ-R-VSF, the HBCD Workgroup and measure experts added a Behavior Inhibition (or Social Fear) scale using items from the long form of the IBQ-R (IBQ-R-LF). The HBCD measure therefore consists of 4 scale domains: surgency/extraversion (13 items), negative affectivity (12 items), effortful control (12 items), and behavioral inhibition (13 items).
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
@@ -59,6 +60,7 @@ In addition to the overall Surgency, Negative Affect and Effortful Control scale
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
   <a class="anchor-link" href="#scoring" title="Copy link">

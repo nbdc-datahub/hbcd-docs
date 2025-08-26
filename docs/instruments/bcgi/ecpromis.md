@@ -46,6 +46,7 @@
 The ecPROMIS (Early Childhood Patient-Reported Outcome Measurement Information System) offers clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. One component is the Child-Caregiver Relationship Scale, which assesses the degree to which young children develop close, satisfying relationships with caregivers. The **ecPROMIS Child-Caregiver Relationship Form (Infancy: < 1 year)** was developed for HBCD based on this scale (specifically the ecPROMIS Parent-Report Short Form v1.0 - Social Relationships – Child-Caregiver Interactions 5a Form) with updated language to make the items suitable for the pre-V03 age range (3 to 9 months) (i.e. the term ‘my child’ was replaced with 'my baby,' per the guidance of ecPROMIS developers, as the original measure was designed for 1-5 year old children).
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
@@ -59,6 +60,7 @@ The ecPROMIS (Early Childhood Patient-Reported Outcome Measurement Information S
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
   <a class="anchor-link" href="#scoring" title="Copy link">
@@ -74,7 +76,6 @@ The ecPROMIS (Early Childhood Patient-Reported Outcome Measurement Information S
   \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{5}
   \]
 </p>
-
 If fewer than 3 items are completed, the sum score is marked as missing.</p>
 </div>
 

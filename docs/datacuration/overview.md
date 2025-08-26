@@ -79,7 +79,7 @@ However, not all processed data is available in tabulated form. Tabulated datase
 
 Tabulated files are named to closely match their source derivative files. For example, the following subject/session-level <a href="../derivatives/#xcp-d-xcp_d" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
 <tr>
 <td><b>File-based derivatives</b></td>
 <td><code>sub-&lt;label&gt;_ses-&lt;label&gt;_task-rest_dir-PA_run-#<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>

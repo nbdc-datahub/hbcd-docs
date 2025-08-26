@@ -36,17 +36,21 @@ See description of fields reporting age under Age Variable Definitions > <a href
 
 ## Imaging
 
-<div id="bids-imaging" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">BIDS Conversion Procedures: Imaging</span>
+<div id="bids-imaging" class="table-banner" onclick="toggleCollapse(this)">
+  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
+  <span class="text-with-link">
+  <span>BIDS Conversion Procedures: Imaging</span>
+  <a class="anchor-link" href="#bids-imaging" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
   <span class="arrow">▸</span>
 </div>
-<div class="notification-collapsible-content">
-<p>To convert imaging data to BIDS standard formatting, the DICOM image files are processed through an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized version</a> of the <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a> tool. </p>
-<br>
+<div class="collapsible-content">
+<p>To convert imaging data to BIDS standard formatting, the DICOM image files are processed through an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized version</a> of the <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a> tool.</p>
 
-<b>Hardcoded Fields for Philips &amp; GE</b>
-<p>In some cases, <code>dcm2niix</code> conversion led to missing or incorrectly configured NIfTI/JSON metadata. To address these issues, the headers for the file types listed below were hard-coded after conversion. These hard-coded values are also documented in the <code>HardCodedValues</code> field of the corresponding JSON sidecar file.</p>
+<p><b>Hardcoded Fields for Philips &amp; GE</b><br>
+In some cases, <code>dcm2niix</code> conversion led to missing or incorrectly configured NIfTI/JSON metadata. To address these issues, the headers for the file types listed below were hard-coded after conversion. These hard-coded values are also documented in the <code>HardCodedValues</code> field of the corresponding JSON sidecar file.
 <ul>
 <strong><u>Philips</u></strong>
 <li>DWI: <code>PhaseEncodingDirection</code>, <code>TotalReadoutTime</code>, & <code>SliceTiming</code> (<code>SmallDelta</code> & <code>LargeDelta</code> also added)</li>
@@ -56,13 +60,14 @@ See description of fields reporting age under Age Variable Definitions > <a href
 <strong><u>Philips & GE</u></strong>
 <li>T1W: <code>RepetitionTime</code></li>
 </ul>
-<br>
-<b>QALAS Post-Conversion Modifications</b>
-<p>Depending on the scanner manufacturer, <code>dcm2niix</code> conversion for QALAS produced either five 3D NIfTI files or a single 4D NIfTI file with five volumes (as well as missing JSON header information). To standardize the output, all <code>dcm2niix</code>-derived QALAS series were converted into five separate NIfTI files, each corresponding to a different inversion time (labeled using the <code>inv-&lt;label&gt;</code> BIDS entity). The associated JSON sidecar was then updated with the following:</p>
+</p>
+<p><b>QALAS Post-Conversion Modifications</b><br>
+Depending on the scanner manufacturer, <code>dcm2niix</code> conversion for QALAS produced either five 3D NIfTI files or a single 4D NIfTI file with five volumes (as well as missing JSON header information). To standardize the output, all <code>dcm2niix</code>-derived QALAS series were converted into five separate NIfTI files, each corresponding to a different inversion time (labeled using the <code>inv-&lt;label&gt;</code> BIDS entity). The associated JSON sidecar was then updated with the following:
 <ol>
 <li><code>T2Prep</code> field of <code>inv-0</code> QALAS file hard-coded to 0.10 (Siemens), 0.09 (GE), and 0.10 (Philips)</li>
 <li><code>InversionTime</code> values (sec) for QALAS files hard-coded as follows for each manufacturer:</li>
 </ol>
+</p>
 <table>
   <tr>
   <th width="100">QALAS file</th>
@@ -139,12 +144,18 @@ Functional files include BOLD functional resting state images under `func/`. Eac
 *NOTE: See information about hardcoded fields for Philips and GE BOLD data [here](#bids-imaging).*
 
 ## MR Spectroscopy (mrs/)
-<div id="bids-mrs" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">BIDS Conversion Procedures: MRS</span>
+
+<div id="bids-mrs" class="table-banner" onclick="toggleCollapse(this)">
+  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
+  <span class="text-with-link">
+  <span>BIDS Conversion Procedures: MRS</span>
+  <a class="anchor-link" href="#bids-mrs" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
   <span class="arrow">▸</span>
 </div>
-<div class="notification-collapsible-content">
+<div class="collapsible-content">
 <p>For MRS, vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.</p>
 </div>
 
@@ -163,12 +174,17 @@ mrs/
 
 ## EEG
 
-<div id="bids-eeg" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">BIDS Conversion Procedures: EEG</span>
+<div id="bids-eeg" class="table-banner" onclick="toggleCollapse(this)">
+  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
+  <span class="text-with-link">
+  <span>BIDS Conversion Procedures: EEG</span>
+  <a class="anchor-link" href="#bids-eeg" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
   <span class="arrow">▸</span>
 </div>
-<div class="notification-collapsible-content">
+<div class="collapsible-content">
 <p>EEG BIDS conversion was handled by <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application developed for HBCD EEG data management and BIDS formatting installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which, among other things, converts this data to the BIDS standard data structure.</p>
 </div>
 
