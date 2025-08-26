@@ -99,7 +99,6 @@ For the HBCD study, the **ecPROMIS Child–Caregiver Relationship Form** was dev
   \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{5}
   \]
 </p>
-
 If fewer than 3 items are completed, the sum score is marked as missing.</p>
 </div>
 

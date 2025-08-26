@@ -2,14 +2,16 @@
 .warning-banner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: #ffe10066;
-  border: 1px solid #3333331a;
+  border-bottom: 1px solid #e0e0e0;
   padding: 0 20px;
-  border-radius: 5px;
   font-family: Lato; 
   color: #3e3e3e;
   cursor: pointer;
   border-radius: 0; /* Make square shaped */
+  line-height: 30px;
+  font-size: 0.9em;
 }
 .warning-banner .emoji {
   font-size: 1.5rem; 

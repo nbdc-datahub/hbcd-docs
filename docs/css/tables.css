@@ -16,14 +16,14 @@ th, td {
 .table-banner {
   background-color: #dde6fe;
   padding: 4px 8px;           /* Reduced vertical padding */
-  border: none;
+  border-bottom: 1px solid #e0e0e0;
   font-family: Lato; 
   color: #474646;
   font-weight: bold;
   display: flex;
   align-items: center; /* Ensures vertical alignment of items */
   justify-content: space-between; /* Ensures proper spacing */
-  gap: 6px;
+  gap: 3px;
   line-height: 18px;
   font-size: 0.9em;
   border-radius: 0; /* Make square shaped */

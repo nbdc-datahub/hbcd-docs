@@ -29,8 +29,8 @@
 Protective and Compensatory Experience (PACES) is a 10-question scale with scores ranging between 0 and 10 assessing positive childhood experiences through age 18 such as: relationships, feeling of connectedness, physical activity, engagement, environment, and opportunities.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fa fa-gear"></i></span>
-<span class="text-with-link">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
+  <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
   <i class="fa-solid fa-link"></i>
