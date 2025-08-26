@@ -1,32 +1,25 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 - adding version: Toddlerhood and Preschool</i> 🚧 </p>
 
-# MAPS-TL, Versions: Infancy (< 1 year) & Toddlerhood and Preschool
+# MAPS-TL
 
-**Full Name**: Multidimensional Assessment Profiles - Temper Loss scale
-
+<p>
+<strong>Full Name</strong>: Multidimensional Assessment Profiles - Temper Loss scale (*multiple versions*)<br>     
+<strong>Acronym</strong>: MAPS-TL<br>
+<strong>Construct</strong>: Irritability<br>
+<strong>Table Names</strong>:
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-<td style="text-align: center;"><strong>Instrument</strong></td>
-<td style="text-align: center;"><strong>Version</strong></td>
-<td style="text-align: center;"><strong>Construct</strong></td>
-<td style="text-align: center;"><strong>Table Name</strong></td>
-</tr>
-</thead>
 <tbody>
 <tr>
-  <td rowspan="2">MAPS-TL</td>
-  <td><b>Infancy (&lt;1 year)</b></td>
-  <td>Irritability</td>
+  <td><b>Version: Infancy (&lt;1 year)</b>:</td>
   <td><code>mh_cg_mapdb__inf</code></td>
 </tr>
 <tr>
-  <td><b>Toddlerhood and Preschool</b></td>
-  <td>Irritability</td>
+  <td><b>Version: Toddlerhood and Preschool</b>:</td>
   <td><code>mh_cg_mapstl__tod</code></td>
 </tr>
 </tbody>
 </table>
+</p>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
