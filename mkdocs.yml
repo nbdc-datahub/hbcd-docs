@@ -68,18 +68,24 @@ nav:
   - Study Instruments:
     - Instruments Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
+    - Administrative:
+        - 🚧 Study Navigators Contact Form: instruments/admin/study-navigators.md
+        - 🚧 Transition in Care Screener: instruments/admin/transitions-in-care.md
     - Demographics & Visit Information:
         - Basic Demographics: instruments/demo/basicdemo.md
         - Visit Information: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 
-            - ecPROMIS: instruments/bcgi/ecpromis.md
+            - 🚧 ecPROMIS: instruments/bcgi/ecpromis.md
             - IBQ-R (VSF)+BI: instruments/bcgi/ibqr.md
-            - MAPS-TL: instruments/bcgi/maps-tl.md
+            - 🚧 MAPS-TL: instruments/bcgi/maps-tl.md
+            - 🚧 CHAOS: instruments/bcgi/chaos.md
+            - 🚧 HOME-21: instruments/bcgi/home21.md
         - Biospecimens & Omics:
             - Nails: instruments/biospec/nails.md
             - Urine: instruments/biospec/urine.md
         - Neurocognition & Language:
+            - 🚧 Bayley-4: instruments/neurocog/bayley-4.md
             - MLDS: instruments/neurocog/mlds.md
             - SPM-2: instruments/neurocog/spm2.md
         - Novel Tech & Wearable Sensors:
@@ -108,6 +114,8 @@ nav:
                 - ASSIST V1, V2, & V3: instruments/pregexp/su/assist.md
                 - TLFB: instruments/pregexp/su/tlfb.md
         - Social & Environmental Determinants:
+            - ACEs: instruments/SED/aces.md
+            - CABr-SF: instruments/SED/composite-abuse-scale.md
             - V01 Demographics: instruments/SED/v01-demo.md
             - Baby's First Years: instruments/SED/bfy.md
             - Unfair Treatment: instruments/SED/discr.md
@@ -115,6 +123,11 @@ nav:
             - Perceived Stress/Social Support: instruments/SED/promis.md
             - Neighborhood Safety: instruments/SED/safety.md
             - Protective Factors: instruments/SED/paces.md
+            - 🚧 Current Employment: instruments/SED/current-employment.md
+            - 🚧 Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
+            - 🚧 Lead Exposures: instruments/SED/lead-exposures.md
+            - 🚧 Second Hand Smoke exposure: instruments/SED/second-hand-smoke-exposure.md
+            - 🚧 Vancouver Index: instruments/SED/vi.md
     - Brain Activity - MRI & EEG:
         - Electroencephalography:
             - Overview & Quality Control: instruments/eeg/index.md

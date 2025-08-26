@@ -29,8 +29,8 @@
 This [PhenX+ Toolkit Discrimination](https://www.phenxtoolkit.org/protocols/view/210302) measure is a questionnaire to assess perceived experiences of being treated unfairly. This is an important factor in an individual’s health because it affects access to employment, housing, and education opportunities and can affect self-esteem and cause stress.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
+<span class="emoji"><i class="fa fa-gear"></i></span>
+<span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
   <i class="fa-solid fa-link"></i>

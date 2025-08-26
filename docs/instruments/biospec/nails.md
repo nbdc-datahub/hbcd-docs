@@ -25,7 +25,6 @@
 </div>
 </p>
 
-
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

@@ -5,20 +5,20 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-<td>&nbsp;</td>
-<td style="text-align: center;"><b>Construct</b></td>
-<td style="text-align: center;"><b>Table Name</b></td>
+<td style="text-align: center;"><strong>Version</strong></td>
+<td style="text-align: center;"><strong>Construct</strong></td>
+<td style="text-align: center;"><strong>Table Name</strong></td>
 </tr>
 </thead>
 <tbody>
-<tr><td><strong>ASSIST V1</strong></td>
+<tr><td><b>ASSIST V1</b></td>
 <td>Substance use and problematic use before and during pregnancy</td>
 <td><code>pex_bm_assistv1</code></td>
 </tr>
-<tr><td><strong>ASSIST V2</strong></td>
+<tr><td><b>ASSIST V2</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Substance use during end of pregnancy ( between V01 and delivery) and postnatal (weeks 0-4, between delivery and V2)</td>
 <td><code>pex_bm_assistv2</code></td></tr>
-<tr><td><strong>ASSIST V3</strong></td>
+<tr><td><b>ASSIST V3</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy</td>
 <td><code>pex_bm_assistv3</code></td></tr>
 </tbody>
