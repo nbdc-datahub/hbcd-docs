@@ -37,6 +37,41 @@ Each instrument name links to a dedicated page with detailed documentation for t
   Expand All Sections ↕️
 </button>
 
+### Administrative
+
+<i class="fa-solid fa-circle-info"></i>
+<i style="font-weight: normal;"> Click sections to expand and view the associated domain instruments/measures.</i>
+
+<div id="admin" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Administrative Variables</span>
+  <a class="anchor-link" href="#admin" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th style="width: 20%; text-align: center;">Name of Instrument</th>
+      <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
+      <th style="width: 30%; text-align: center;">Construct</th>
+      <th style="width: 40%; text-align: center;">Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/basicdemo" target="_blank">Basic Demographics information</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Basic Demographics</td>
+    <td style="word-wrap: break-word; white-space: normal;">Demographics data derived from multiple sources</td>
+    <td style="word-wrap: break-word; white-space: normal;"><code>sed_basic_demographics</code></td>
+  </tr>
+  </tbody>
+  </table>
+</div>
+
 ### Demographics & Visit Information
 
 <i class="fa-solid fa-circle-info"></i>
@@ -106,7 +141,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 50%; text-align: center;">Name of Instrument</th>
+      <th style="width: 40%; text-align: center;">Name of Instrument</th>
       <th style="width: 20%; text-align: center;">Acronym</th>
       <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 20%; text-align: center;">Table Name</th>
@@ -114,10 +149,52 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </thead>
   <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">Early Childhood Patient-Reported Outcome Measurement Information System Child/Caregiver Relationship Scale</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">ecPROMIS</td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/chaos" target="_blank">Confusion, Hubbub and Order scale</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">CHAOS</td>
+    <td style="word-wrap: break-word; white-space: normal;">Family Organization</td>
+    <td><code>mh_cg_chaos</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS - Caregiver Child Relationship Scale (&lt;1 year)</a></td>
+    <td>ecPROMIS (&lt;1 y/o)</td>
     <td style="word-wrap: break-word; white-space: normal;">Relationships</td>
     <td><code>mh_cg_pms__cc__inf</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS - Caregiver Child Relationship Scale (1-5 y/o)</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">ecPROMIS (1-5 y/o)</td>
+    <td style="word-wrap: break-word; white-space: normal;">Relationships</td>
+    <td><code>mh_cg_pms__cc__1to5</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis-pr" target="_blank">ecPROMIS- Peer Relation</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">ecPROMIS</td>
+    <td style="word-wrap: break-word; white-space: normal;">Peer Relationships</td>
+    <td><code>mh_cg_pms__peer</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis-selfreg" target="_blank">ecPROMIS - Self-regulation-Flexibility Scale</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"></td>
+    <td style="word-wrap: break-word; white-space: normal;">Self-Regulation and Flexibility</td>
+    <td><code>mh_cg_pms__selfreg</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/erica" target="_blank">ERICA-FCM</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">ERICA</td>
+    <td style="word-wrap: break-word; white-space: normal;">Co-regulation, Child Regulation/Dysregulation, Parenting</td>
+    <td><code>mh_pa_erica</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/fad" target="_blank">Family Assessment Device</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">FAD</td>
+    <td style="word-wrap: break-word; white-space: normal;">Global functioning of the family unit</td>
+    <td><code>mh_cg_fad</code></td>
+  </tr>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/home21" target="_blank">HOME-21 Infant-Toddler</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">HOME-21</td>
+    <td style="word-wrap: break-word; white-space: normal;">Child’s Home Environment</td>
+    <td><code>sed_cg_home_ec</code></td>
   </tr>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">IBQ-R Very Short Form + Behavior Inhibition</a></td>
@@ -126,10 +203,22 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td><code>mh_cg_ibqr</code></td>
   </tr>
   <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/lab-tab" target="_blank">Laboratory Temperament Assessment Battery</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Lab-TAB</td>
+    <td style="word-wrap: break-word; white-space: normal;">Behavioral Inhibition</td>
+    <td><code>mh_ch_labtab</code></td>
+  </tr>
+  <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale, Version: Infancy (< 1 year)</a></td>
     <td style="word-wrap: break-word; white-space: normal;">MAPS-TL</td>
     <td style="word-wrap: break-word; white-space: normal;">Irritability</td>
     <td><code>mh_cg_mapdb__inf</code></td>
+  </tr>
+    <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale, Version: Toddlerhood and Preschool</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">MAPS-TL</td>
+    <td style="word-wrap: break-word; white-space: normal;">Irritability</td>
+    <td><code>mh_cg_mapstl__tod</code></td>
   </tr>
   </tbody>
   </table>
@@ -187,11 +276,17 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <tr>
       <th style="width: 50%; text-align: center;">Name of Instrument</th>
       <th style="width: 10%; text-align: center;">Acronym</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
+      <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="neurocog/bayley-4" target="_blank">Bayley Scales of Infant and Toddler Development, Fourth Edition</a></td>
+      <td>BSID-4, Bayley</td>
+      <td style="word-wrap: break-word; white-space: normal;">Child Development (Cognitive, Language, and Motor)</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>nc_ch_bayley</code></td>
+    </tr>
    <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="neurocog/mlds" target="_blank">Multilingual Language Development Screener</a></td>
       <td style="word-wrap: break-word; white-space: normal;">MLDS</td>
@@ -386,7 +481,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
     </tr>            
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/apa12" target="_blank">DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">APA Level 1 / Level 2</td>
+      <td style="word-wrap: break-word; white-space: normal;">APA 1/2</td>
       <td style="word-wrap: break-word; white-space: normal;">Mental Health</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_apa</code></td>
     </tr>  
@@ -467,10 +562,28 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </thead>
   <tbody>
     <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/aces" target="_blank">Pediatric Adverse Childhood Experiences</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">ACEs</td>
+      <td style="word-wrap: break-word; white-space: normal;">Adverse Childhood Experiences</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_pedaces</code></td>
+    </tr>
+    <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="SED/bfy" target="_blank">BFY - Benefits/Services, Economic Stress</a></td>
       <td style="word-wrap: break-word; white-space: normal;">BFY</td>
       <td style="word-wrap: break-word; white-space: normal;">Benefits/Services/Economic Stress</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_bfy</code></td>
+    </tr>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/composite-abuse-scale" target="_blank">Composite Abuse Scale Revised - Short Form</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">CABr-SF</td>
+      <td style="word-wrap: break-word; white-space: normal;"></td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_cabr_sf</code></td>
+    </tr>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/current-employment" target="_blank">Current Employment</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Employment</td>
+      <td style="word-wrap: break-word; white-space: normal;">Current Employment</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_employ</code></td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;"><a href="SED/discr" target="_blank">Experiences of Unfair Treatment</a></td>

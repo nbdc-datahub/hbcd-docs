@@ -49,10 +49,13 @@ Each table includes “identifier columns” for participant ID, visit number, a
 <tr>
   <td><b><code>run_id</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Unique identifier for run number - <i>only present in tables derived from file-based data with multiple runs, e.g. for MRI acquisition</i></td>
-  <td><code>1</code></td>
+  <td><code>run-01</code></td>
 </tr>
 </tbody>
 </table>
+
+ - **Static tables** (one record per person) use only `participant_id`.
+ - **Longitudinal tables** (multiple records per person over time) use both `participant_id` and `session_id`.
 
 ## Fields Reporting Age
 
