@@ -59,6 +59,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 **Level 1** includes 1 - 2 questions for each of <span class="tooltip">11 mental health domains <span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">Depression, Anger, Mania, Anxiety, Somatic Symptoms, Suicidal Ideation, Psychosis, Sleep Disturbance, Memory, Repetitive Behaviors, Dissociation</span></span>. This excludes *Personality Functioning* and *Substance Use* present in the original measure (SU is captured by a separate set of instruments for HBCD - see measures listed [here](../../index.md#pregexp)). When symptoms were reported for Level 1, participants were subsequently administered corresponding **Level 2** measures, which asked about <span class="tooltip">additional symptoms <span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">Anger, Anxiety, Depression, Somatic Symptoms, Mania, Repetitive Thoughts, Sleep Problems</span></span> associated with the following 8 mental health domains: Anxiety, Anger, Depression, Mania, Personality, Repetitive Behavior, Sleep, and Somatic symptoms. For HBCD, Level 2 symptom measures for *Depression* and *Sleep Disturbance* were replaced with the PROMIS Short Forms v1.0 [Depression 8a questionnaire](https://www.phenxtoolkit.org/toolkit_content/supplemental_info/psychiatric/measures/07_Depressed_Mood.doc) and [Sleep Disturbance 8a](https://heal.nih.gov/files/CDEs/2024-07/promis-sleep-disturbance-8a-crf.pdf). Level 2 additionally includes the [Personality Inventory for DSM-5 Brief](https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf), which assesses <span class="tooltip">5 personality trait domains <span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">Negative Affect, Detachment, Antagonism, Disinhibition, Psychoticism</span></span>.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
@@ -77,6 +78,7 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
   <a class="anchor-link" href="#scoring" title="Copy link">

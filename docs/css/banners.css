@@ -32,14 +32,20 @@
 }
 .banner {
   background-color: #eaf9f0;
-  border: 1px solid #3333331a;
-  padding: 4px 20px;
-  border-radius: 5px;
+  padding: 4px 8px;           /* Reduced vertical padding */
+  border-bottom: 1px solid #e0e0e0;
   font-family: Lato; 
-  color: #3e3e3e;
-  display: flex; 
-  justify-content: flex-start;
-  align-items: flex-start; /* Aligns emoji with the first line of text */
+  color: #474646;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Ensures vertical alignment of items */
+  justify-content: space-between; /* Ensures proper spacing */
+  gap: 3px;
+  line-height: 18px;
+  font-size: 0.9em;
+  border-radius: 0; /* Make square shaped */
+  cursor: pointer;
+  width: 100%;
 }
 
 /* General Collapsible Banner Settings */

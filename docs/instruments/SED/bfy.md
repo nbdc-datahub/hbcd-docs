@@ -28,6 +28,7 @@
 The HBCD BFY includes a selection of questions from the [BFY Age 1 Survey Instrument](https://www.babysfirstyears.com/_files/ugd/88a466_5a28f2b284e74fa4b61b2c483008416e.docx?dn=BFY_Age%201%20Survey.docx). [Baby’s First Years](https://www.babysfirstyears.com/) is an NIH-funded study of infant and child development and assesses economic stress (originally sourced from the Moving to Opportunity (MTO) study), financial instability, ability to meet basic needs, and benefits/services received over the past 12 months on a 10-point Likert Scale ([Noble et al. 2021](https://doi.org/10.1542/peds.2020-049702)). 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">HBCD Modification Details</i></span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">

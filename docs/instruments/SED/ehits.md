@@ -28,6 +28,7 @@
 The eHITS is a self-administered 5 question Likert scale screener for experiences of psychological aggression, physical assault, sexual coercion, and injury. Originally created for quick administration in a health care setting or emergency department, the eHITS asks individuals to indicate whether their partner has done any of the following over the past 12 months: "physically hurt you", "insulted you", "threatened to harm you", "screamed or cursed at you", or "forced you to have sexual activities."
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">

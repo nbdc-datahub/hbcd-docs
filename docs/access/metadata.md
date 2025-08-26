@@ -23,12 +23,13 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 <p>
 <div id="metadata" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text">CAUTION – INSTRUCTION TEXT MAY BE INCOMPLETE OR MISALIGNED: Please review the details of this known issue carefully <a href="../../changelog/knownissues/#instruction-metadata-caution-please-read-carefully">HERE</a> before use.
+  <span class="text">CAUTION: Instruction text may be incomplete or misaligned! Review the <a href="../../changelog/knownissues/#instruction-metadata-caution-please-read-carefully">known issue</a> before use.
  </span>
 </div>
 </p>
 
 <div id="nbdc-dd" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-book"></i></span>
   <span class="text-with-link">
   <span style="display: inline-flex; align-items: center;">Data Dictionary Column Definitions</span>
   <a class="anchor-link" href="#nbdc-dd" title="Copy link">
@@ -286,6 +287,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 </div>
 
 <div id="levels" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-book"></i></span>
   <span class="text-with-link">
   <span style="display: inline-flex; align-items: center;">Levels Definitions</span>
   <a class="anchor-link" href="#levels" title="Copy link">
@@ -440,11 +442,10 @@ The standard variable naming format is comprised of 4 or 5 main components:
 </tbody>
 </table>
 
-exceptions-admin
-
 #### Details (*Click to Expand*)
 
 <div id="domain-source-values" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
   <span style="display: inline-flex; align-items: center;">Domain & Source: Possible Values</span>
   <a class="anchor-link" href="#domain-source-values" title="Copy link">
@@ -487,6 +488,7 @@ exceptions-admin
 </div>
 
 <div id="scale" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
   <span style="display: inline-flex; align-items: center;">Scale Details</span>
   <a class="anchor-link" href="#scale" title="Copy link">
@@ -541,6 +543,7 @@ exceptions-admin
 Some variables do not fully follow the standard naming convention, which will be improved in future releases. Notable exceptions are as follows (*click to expand*):
 
 <div id="exceptions-admin" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span style="display: inline-flex; align-items: center;">Administrative & Summary Score Variables</span>
   <a class="anchor-link" href="#exceptions-admin" title="Copy link">
@@ -566,6 +569,7 @@ Some variables do not fully follow the standard naming convention, which will be
 </div>
 
 <div id="exceptions-derived" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span style="display: inline-flex; align-items: center;">Derived Variables</span>
   <a class="anchor-link" href="#exceptions-derived" title="Copy link">
@@ -579,6 +583,7 @@ Some variables do not fully follow the standard naming convention, which will be
 </div>
 
 <div id="exceptions-biospec" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span style="display: inline-flex; align-items: center;">Biospecimens</span>
   <a class="anchor-link" href="#exceptions-biospec" title="Copy link">
@@ -591,8 +596,8 @@ Some variables do not fully follow the standard naming convention, which will be
 <p>Biospecimen names are largely descriptive, e.g. <code>bio_bm_biosample_nails_results</code> and <code>bio_bm_biosample_urine</code> table names.</p>
 </div>
 
-
 <div id="exceptions-mri" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span style="display: inline-flex; align-items: center;">Tabulated MRI, MRS, & EEG Data</span>
   <a class="anchor-link" href="#exceptions-mri" title="Copy link">
