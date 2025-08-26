@@ -4,9 +4,7 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 <p>
 <div class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    Visit numbers are labeled as Visit X or V0X in the release notes (e.g., V01 = Visit 1). 
-  </span>
+  <span class="text">All surveys used in the HBCD Study were translated to Spanish by <a href="https://burgtranslations.com/our-services/">BURG Translations</a></span>
 </div>
 </p>
 
@@ -37,9 +35,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
   Expand All Sections ↕️
 </button>
 
-### Administrative<span class="hint">(Click sections to expand)</span>
+### Administrative & Demographics <span class="hint">(Click sections to expand)</span>
 
 <div id="admin" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-clipboard"></i></span>
   <span class="text-with-link">
   <span class="text">Administrative Variables</span>
   <a class="anchor-link" href="#admin" title="Copy link">
@@ -52,24 +51,28 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 20%; text-align: center;">Name of Instrument</th>
+      <th style="width: 30%; text-align: center;">Name of Instrument</th>
       <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
       <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 40%; text-align: center;">Table Name</th>
+      <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/basicdemo" target="_blank">Basic Demographics information</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Basic Demographics</td>
-    <td style="word-wrap: break-word; white-space: normal;">Demographics data derived from multiple sources</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>sed_basic_demographics</code></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">SN Contact Form</td>
+    <td style="word-wrap: break-word; white-space: normal;"></td>
+    <td><code>TBD</code></td>
+  </tr>
+    <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"></td>
+    <td style="word-wrap: break-word; white-space: normal;"></td>
+    <td><code>TBD</code></td>
   </tr>
   </tbody>
   </table>
 </div>
-
-### Demographics & Visit Information<span class="hint">(Click sections to expand)</span>
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
@@ -85,10 +88,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 20%; text-align: center;">Name of Instrument</th>
+      <th style="width: 30%; text-align: center;">Name of Instrument</th>
       <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
       <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 40%; text-align: center;">Table Name</th>
+      <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
@@ -96,28 +99,19 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td style="word-wrap: break-word; white-space: normal;"><a href="demo/basicdemo" target="_blank">Basic Demographics information</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Basic Demographics</td>
     <td style="word-wrap: break-word; white-space: normal;">Demographics data derived from multiple sources</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>sed_basic_demographics</code></td>
+    <td><code>sed_basic_demographics</code></td>
   </tr>
     <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Visit Information</td>
     <td style="word-wrap: break-word; white-space: normal;">Participant visit information</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data</code></td>
+    <td><code>par_visit_data</code></td>
   </tr>
   </tbody>
   </table>
 </div>
 
 ### Behavior, Biology, & Environment<span class="hint">(Click sections to expand)</span>
-
-<p>
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    <b>NOTE</b>: All surveys used in the HBCD Study were translated to Spanish by <a href="https://burgtranslations.com/our-services/">BURG Translations</a>.
-  </span>
-</div>
-</p>
 
 <div id="bcgi" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-people-arrows"></i></span>
