@@ -1,9 +1,36 @@
-# IBQ-R Very Short Form + Behavior Inhibition
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 (addition of ECBQ)</i> 🚧 </p>
 
-**Full Name**: Infant Behavior Questionnaire – Revised Very Short Form + Behavior Inhibition           
-**Acronym**: IBQ-R (VSF)+BI                
-**Table Name**: `mh_cg_ibqr`       
-**Construct**: Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition
+# Behavior Questionnaire + Inhibition
+
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
+</div>
+<p></p>
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<td><strong>Instrument</strong></td>
+<td><strong>Version</strong></td>
+<td><strong>Construct</strong></td>
+<td><strong>Table Name</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Behavior Questionnaire Very Short Form + Behavior Inhibition</td>
+  <td><span class="tooltip tooltip-right"><strong>IBQ-R</strong><span class="tooltiptext">Infant Behavior Questionnaire – Revised</span></span> <strong>(VSF)+BI</strong></td>
+  <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, Behavioral Inhibition</td>
+  <td><code>mh_cg_ibqr</code></td>
+</tr>
+<tr>
+  <td><span class="tooltip tooltip-right"><strong>ECBQ</strong><span class="tooltiptext">Early Childhood Behavior Questionnaire</span></span> <strong>(VSF)+BI</strong></td>
+  <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency, Negative Affect, Effortful Control & Behavior Inhibition</td>
+  <td><code>mh_cg_ecbq</code></td>
+</tr>
+</tbody>
+</table>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -26,13 +53,13 @@
 <tr><td><b>Child Specific</b></td>
 <td>Yes</td></tr>
 <tr><td><b>Respondent</b></td>
-<td>Primary caregiver</td></tr>
+<td>Primary caregiver on Child</td></tr>
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">V03, V05 (<i>Validated for ages 3 months 0 days to 17 months 30 days for HBCD</i>)</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">V03 <strong>[IBQ-R (VSF)+BI]</strong>; V05 <strong>[ECBQ]</strong> (<i>Validated for ages 3 months, 0 days to 17 months, 30 days for HBCD</i>)</td></tr>
 <tr><td><b>Completion Time</b></td>
-<td>7-10 min</td></tr>
+<td>7-10 min (<b>SAME FOR ECBQ?</b>)</td></tr>
 <tr><td><b>Quality Control</b></td>
 <td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within the expected range of 3-18 months. Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
 </tbody>

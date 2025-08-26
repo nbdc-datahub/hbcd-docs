@@ -1,24 +1,30 @@
 # ASSIST V1/V2/V3
 
-**Full Name**: Alcohol, Smoking and Substance Involvement Screening Test V1.0, V2.0, and V3.0                            
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
+</div>
+<p></p>
+
+**Full Name**: Alcohol, Smoking and Substance Involvement Screening Test V1.0, V2.0, and V3.0 
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-<td style="text-align: center;"><strong>Version</strong></td>
-<td style="text-align: center;"><strong>Construct</strong></td>
-<td style="text-align: center;"><strong>Table Name</strong></td>
+<td><strong>Version</strong></td>
+<td><strong>Construct</strong></td>
+<td><strong>Table Name</strong></td>
 </tr>
 </thead>
 <tbody>
-<tr><td><b>ASSIST V1</b></td>
+<tr><td><strong>ASSIST V1</strong></td>
 <td>Substance use and problematic use before and during pregnancy</td>
 <td><code>pex_bm_assistv1</code></td>
 </tr>
-<tr><td><b>ASSIST V2</b></td>
+<tr><td><strong>ASSIST V2</strong></td>
 <td style="word-wrap: break-word; white-space: normal;">Substance use during end of pregnancy ( between V01 and delivery) and postnatal (weeks 0-4, between delivery and V2)</td>
 <td><code>pex_bm_assistv2</code></td></tr>
-<tr><td><b>ASSIST V3</b></td>
+<tr><td><strong>ASSIST V3</strong></td>
 <td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy</td>
 <td><code>pex_bm_assistv3</code></td></tr>
 </tbody>

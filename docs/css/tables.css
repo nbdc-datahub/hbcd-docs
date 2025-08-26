@@ -11,30 +11,33 @@ th, td {
     word-wrap: break-word;
     white-space: normal;
 }
-
-/* Collapsible tables */
 .table-banner {
   display: flex;
-  align-items: center;   /* vertically align text and arrow */
+  align-items: center;      /* centers emoji relative to text block */
   background-color: #dde6fe;
-  padding: 4px 8px;
+  padding: 8px 8px;
   border-bottom: 1px solid #e0e0e0;
   font-family: Lato; 
   color: #474646;
   font-weight: bold;
-  gap: 3px;
-  line-height: 18px;
+  gap: 8px;                 /* space between emoji and text */
   font-size: 0.9em;
-  border-radius: 0; /* Make square shaped */
-  cursor: pointer;
+  line-height: 1;
+  border-radius: 6px; /* round edges */
   width: 100%;
 }
 .table-banner .emoji {
-  font-size: 1.2rem; 
-  margin-right: 10px;
-  margin-left: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;   /* increase this for larger icon */
   color: #199bd6;
 }
+.table-banner .text {
+  flex: 1;                  /* text takes remaining space */
+}
+
 .table-collapsible-content {
   max-height: 0;
   overflow: hidden;
@@ -48,7 +51,6 @@ th, td {
   display: block;
   overflow-x: auto; 
 }
-
 .table-collapsible-content table {
   background-color: #ffffff;
 }

@@ -2,24 +2,31 @@
 
 # MAPS-TL
 
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
+</div>
+<p></p>
+
+
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-<td style="text-align: center;"><strong>Instrument</strong></td>
-<td style="text-align: center;"><strong>Version</strong></td>
-<td style="text-align: center;"><strong>Construct</strong></td>
-<td style="text-align: center;"><strong>Table Name</strong></td>
+<td style="width: 35%;"><strong>Instrument</strong></td>
+<td style="width: 20%"><strong>Version</strong></td>
+<td style="width: 20%"><strong>Construct</strong></td>
+<td style="width: 20%"><strong>Table Name</strong></td>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Multidimensional Assessment Profiles - Temper Loss scale (MAPS-TL)</td>
-  <td><b>Infancy (&lt;1 year)</b></td>
+  <td><strong>Infancy (&lt;1 year)</strong></td>
   <td>Irritability</td>
   <td><code>mh_cg_mapdb__inf</code></td>
 </tr>
 <tr>
-  <td><b>Toddlerhood and Preschool</b></td>
+  <td><strong>Toddlerhood and Preschool</strong></td>
   <td>Irritability</td>
   <td><code>mh_cg_mapstl__tod</code></td>
 </tr>

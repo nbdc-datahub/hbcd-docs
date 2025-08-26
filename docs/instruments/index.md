@@ -191,8 +191,14 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">IBQ-R Very Short Form + Behavior Inhibition</a></td>
     <td style="word-wrap: break-word; white-space: normal;">IBQ-R (VSF)+BI</td>
-    <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
+    <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, Behavioral Inhibition</td>
     <td><code>mh_cg_ibqr</code></td>
+  </tr>
+    <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">ECBQ Very Short Form + Behavior Inhibition</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">ECBQ (VSF)+BI</td>
+    <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
+    <td><code>mh_cg_ecbq</code></td>
   </tr>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/lab-tab" target="_blank">Laboratory Temperament Assessment Battery</a></td>
