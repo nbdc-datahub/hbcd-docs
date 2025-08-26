@@ -7,10 +7,11 @@
 /* styling text to make more subtle, e.g. "Click to Expand"*/
 .hint {
   color: #888;
-  font-size: 90%;
-  font-style: normal;
+  font-size: 0.8em;
+  font-style: italic;
   font-weight: normal;
-  background-color: transparent; /* <--- critical */
+  background-color: transparent !important;
+  align-items: center;
 }
 
 /* styling for text with hyperlinks (not TOC, previous and next footer buttons, or images) */
