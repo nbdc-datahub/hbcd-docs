@@ -74,7 +74,8 @@ The **Multidimensional Assessment Profiles- Temper Loss scale (MAPS-TL)** is a w
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible - see table below. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.</p>
+<p><b>General Language Modifications</b><br>
+Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible - see table below. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.</p>
 <p><b>Updated Assessment Item Language, Version: Toddlerhood and Preschool</b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
