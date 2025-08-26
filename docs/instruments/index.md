@@ -10,7 +10,7 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 </div>
 </p>
 
-<img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="80%" height="auto" class="center">
+<img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="90%" height="auto" class="center">
 
 HBCD Study data includes both <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span>
  and <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data - see [Data Structure Overview](../datacuration/overview.md):
@@ -43,6 +43,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <i style="font-weight: normal;"> Click sections to expand and view the associated domain instruments/measures.</i>
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-id-card"></i></span>
   <span class="text-with-link">
   <span class="text">Basic Demographics & Visit Info</span>
   <a class="anchor-link" href="#demo" title="Copy link">
@@ -83,7 +84,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <i class="fa-solid fa-circle-info"></i>
 <i style="font-weight: normal;"> Click sections to expand and view the associated domain instruments/measures.</i>
 
-
 <p>
 <div class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
@@ -94,6 +94,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 </p>
 
 <div id="bcgi" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-people-arrows"></i></span>
   <span class="text-with-link">
   <span class="text">Behavior & Caregiver-Child Interaction</span>
   <a class="anchor-link" href="#bcgi" title="Copy link">
@@ -135,8 +136,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </table>
 </div>
 
-
 <div id="biospec" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-vial"></i></span>
   <span class="text-with-link">
   <span class="text">Biospecimen & Omics</span>
   <a class="anchor-link" href="#biospec" title="Copy link">
@@ -173,6 +174,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 </div>
 
 <div id="neurocog" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
   <a class="anchor-link" href="#neurocog" title="Copy link">
@@ -209,6 +211,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 </div>
 
 <div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-microchip"></i></span>
   <span class="text-with-link">
   <span class="text">Novel Technologies & Wearable Sensors</span>
   <a class="anchor-link" href="#sensors" title="Copy link">
@@ -252,6 +255,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 </div>
 
 <div id="physhealth" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-heart-pulse"></i></span>
   <span class="text-with-link">
   <span class="text">Physical Health</span>
   <a class="anchor-link" href="#physhealth" title="Copy link">
@@ -294,6 +298,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 </div>
 
 <div id="pregexp" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-baby"></i></span>
   <span class="text-with-link">
   <span class="text">Pregnancy & Exposure, Including Substance Use</span>
   <a class="anchor-link" href="#pregexp" title="Copy link">
@@ -406,7 +411,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </table>
 
 <p style="margin-bottom: 5px; font-size: 1.2em; text-align: center;">&nbsp; <strong>Substance Use</strong></p>
-
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
@@ -445,8 +449,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </table>
 </div>
 
-
 <div id="socenvdet" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-city"></i></span>
   <span class="text-with-link">
   <span class="text">Social & Environmental Determinants</span>
   <a class="anchor-link" href="#socenvdet" title="Copy link">
@@ -518,6 +522,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <i style="font-weight: normal;"> Click sections to expand and view the associated domain instruments/measures.</i>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-magnet"></i></span>
   <span class="text-with-link">
   <span class="text">MRI & MRS</span>
   <a class="anchor-link" href="#mri" title="Copy link">
@@ -632,8 +637,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
 </table>
 </div>
 
-
 <div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-bolt"></i></span>
   <span class="text-with-link">
   <span class="text">EEG</span>
   <a class="anchor-link" href="#eeg" title="Copy link">
