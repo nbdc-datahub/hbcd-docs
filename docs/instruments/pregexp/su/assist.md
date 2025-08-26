@@ -109,7 +109,8 @@ The NIDA quick screen tool (*have you used alcohol, tobacco, prescription drugs,
 Finally, the Time Line Follow Back (TLFB) was triggered when substance use was reported before [`pre-use`] or during pregnancy [`during_use`] on the ASSIST V1 or at the end of pregnancy [`end_use`] on the ASSIST V2 (see [documentation on TLFB](tlfb.md)). 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
+<span class="emoji"><i class="fa fa-gear"></i></span>
+<span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -200,6 +201,7 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
 
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
   <a class="anchor-link" href="#scoring" title="Copy link">

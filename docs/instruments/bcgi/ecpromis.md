@@ -69,6 +69,7 @@ The **Early Childhood Patient-Reported Outcome Measurement Information System (e
 For the HBCD study, the **ecPROMIS Child–Caregiver Relationship Form** was developed based on the ecPROMIS Parent-Report Short Form v1.0 – Social Relationships: Child–Caregiver Interactions 5a. Because the original measure was designed for children aged **1–5 years**, an adapted version was created for **infants under 1 year** (i.e. 3-9 month old infants from visit V03), replacing the term ‘my child’ with 'my baby' per the guidance of ecPROMIS developers.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
@@ -82,6 +83,7 @@ For the HBCD study, the **ecPROMIS Child–Caregiver Relationship Form** was dev
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
   <a class="anchor-link" href="#scoring" title="Copy link">

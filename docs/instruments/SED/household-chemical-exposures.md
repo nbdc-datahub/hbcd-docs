@@ -31,7 +31,8 @@ This is a modified version of ECHO-wide cohort version 01.30/June 16, 2020 “Ho
 Home-based exposures to chemical contaminants can occur through exposure to drinking water contaminants, off-gassing of various structural components to housing, accumulation of chemical contaminants in household dust, insecticides related to pest control, exposure to air toxicants related to heating and cooking, as well as allergens and insecticides related to pets that may be living in the home. Older homes have the potential for lead exposure due to lead-based paint. In addition, water damage to homes can result in exposure to mold. These exposures can have broad impacts on health including neurodevelopmental outcomes ([Zota et al. 2017](https://doi.org/10.1136/jech-2016-208676)). 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
+<span class="emoji"><i class="fa fa-gear"></i></span>
+<span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
   <i class="fa-solid fa-link"></i>

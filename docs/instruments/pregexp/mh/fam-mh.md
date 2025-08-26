@@ -67,7 +67,8 @@ The **HBCD FAM MH** assesses self-reported diagnoses and mental health condition
 Future publications should note that this measure is a combination of these and that this is not a scored scale, but simply descriptive for family psychiatric history.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
+<span class="emoji"><i class="fa fa-gear"></i></span>
+<span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
   <i class="fa-solid fa-link"></i>

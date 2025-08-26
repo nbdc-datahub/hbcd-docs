@@ -49,7 +49,8 @@ The Edinburgh Postnatal Depression Scale (<a href="https://downloads.aap.org/AAP
 </p>
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
+<span class="emoji"><i class="fa fa-gear"></i></span>
+<span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
   <i class="fa-solid fa-link"></i>

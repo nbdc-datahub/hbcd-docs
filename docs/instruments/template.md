@@ -59,6 +59,7 @@ and common issues identified during QC processes that users should be aware of (
 Description of the instrument, including its purpose, constructs measured, and any relevant background information. This section should provide enough context for the user to understand the significance of the instrument within the study. Include embedded links for in-line citations.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
@@ -72,6 +73,7 @@ Description of the instrument, including its purpose, constructs measured, and a
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
   <a class="anchor-link" href="#scoring" title="Copy link">

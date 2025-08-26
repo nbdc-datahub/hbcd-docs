@@ -48,6 +48,7 @@ CDC-recommended lead testing protocols are described [here](https://www.cdc.gov/
 Incidents of pediatric lead poisoning have previously been linked to consumption of [certain imported candies and food colorings](https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm), [traditional remedies](https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html), or food storage vessels. The identification of these specific sources in the Lead Exposures questionnaire is based on documented cases of lead poisoning tied to specific products and should not be interpreted as highlighting any group as having particularly high risk as a result of their race or ethnicity.
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
   <a class="anchor-link" href="#scoring" title="Copy link">

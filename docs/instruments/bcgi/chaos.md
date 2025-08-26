@@ -32,7 +32,8 @@
 ADD CONTENT HERE
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
+<span class="emoji"><i class="fa fa-gear"></i></span>
+<span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -87,6 +88,7 @@ For HBCD, the CHAOS measure (acquired Visits 5 and 7) was changed from a True/Fa
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
   <a class="anchor-link" href="#scoring" title="Copy link">

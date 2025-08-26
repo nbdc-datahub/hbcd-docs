@@ -31,6 +31,7 @@
 Assessment of children’s home environments is crucial to understanding contexts and experiences that are important predictors of children’s development. The Home Observation for Measurement of the Environment (HOME) Inventory (Caldwell & Bradley, 2016, 2003) is one of the most widely used measures of the quality and quantity of support available to a child in the child’s home environment. The HOME-21 is a revision of the HOME-Short Form that was used in the NLSY. The HOME-21 includes updates to tool to be responsive to changes in the composition of families, gender roles and the division of childcare in families, norms about the acceptability and advisability of different forms of discipline, and the digital environment in which children live (<a href="https://doi.org/10.1037/pas0001183" target="_blank">Lansford et al., 2023</a>).
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
@@ -44,6 +45,7 @@ Assessment of children’s home environments is crucial to understanding context
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
   <a class="anchor-link" href="#scoring" title="Copy link">
