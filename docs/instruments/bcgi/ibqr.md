@@ -163,9 +163,17 @@ The items added for the <strong>Behavior Inhibition (or Social Fear) scale</stro
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale: 1 [Never], 2 [Very rarely], 3 [Less than half the time], 4 [About half the time], 5 [More than half the time], 6 [Almost always], 7 [Always].</p>
-<p>Scale scores, generated for each domain, are the mean score of all scale items applicable to the child as judged by the caregiver. Importantly, this calculation only includes items with scores of 1 through 7: items where the caregiver selects "does not apply" or “choose not to respond" receive no numerical score and are not included in the total number of items for the scale. Items with an “R” are reverse-scored and already implemented in the HBCD scoring algorithm.</p>
-<p>For additional information, please see the data dictionary for details on items and scales as well as <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a>.</p>
+<p><b>Response Scale</b><br>
+Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale: 1 = Never; 2 = Very rarely; 3 = Less than half the time; 4 = About half the time; 5 = More than half the time; 6 = Almost always; 7 = Always.</p>
+<p><b>Scale Scores</b><br>
+Each domain score is calculated as the mean of all applicable scale items:</p>
+<ul>
+  <li>Only items scored 1–7 are included.</li>
+  <li>Responses of “Does not apply” or “Choose not to respond” receive no numerical score and are not included in the total number of items for the scale.</li>
+  <li>Items marked with an “R” are <strong>reverse-scored</strong> and already implemented in the HBCD scoring algorithm.</li>
+</ul>
+<p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
+</p>
 </div>
 
 ## References
