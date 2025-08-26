@@ -2,24 +2,29 @@
 
 # MAPS-TL
 
-<p>
-<strong>Full Name</strong>: Multidimensional Assessment Profiles - Temper Loss scale (<i>multiple versions</i>)<br>     
-<strong>Acronym</strong>: MAPS-TL<br>
-<strong>Construct</strong>: Irritability<br>
-<strong>Table Names</strong>:
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<td style="text-align: center;"><strong>Instrument</strong></td>
+<td style="text-align: center;"><strong>Version</strong></td>
+<td style="text-align: center;"><strong>Construct</strong></td>
+<td style="text-align: center;"><strong>Table Name</strong></td>
+</tr>
+</thead>
 <tbody>
 <tr>
-  <td><b>Version: Infancy (&lt;1 year)</b>:</td>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Multidimensional Assessment Profiles - Temper Loss scale (MAPS-TL)</td>
+  <td><b>Infancy (&lt;1 year)</b></td>
+  <td>Irritability</td>
   <td><code>mh_cg_mapdb__inf</code></td>
 </tr>
 <tr>
-  <td><b>Version: Toddlerhood and Preschool</b>:</td>
+  <td><b>Toddlerhood and Preschool</b></td>
+  <td>Irritability</td>
   <td><code>mh_cg_mapstl__tod</code></td>
 </tr>
 </tbody>
 </table>
-</p>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
