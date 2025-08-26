@@ -85,8 +85,8 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fa fa-gear"></i></span>
-<span class="text-with-link">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
+  <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
   <i class="fa-solid fa-link"></i>
