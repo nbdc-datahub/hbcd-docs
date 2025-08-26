@@ -155,6 +155,7 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
 </div>
 
 <div id="substance-options" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">Expanded ASSIST Substance Type Options</span>
   <a class="anchor-link" href="#substance-options" title="Copy link">
