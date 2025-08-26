@@ -121,8 +121,8 @@ Plain text formats like TSV/CSV can cause problems in large-scale analyses due t
 #### Working with Parquet in Python and R
 <p>
 <div id="load-parquet" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
   <span class="emoji"><i class="fa-brands fa-python"></i> / <i class="fa-brands fa-r-project"></i></span>
+  <span class="text-with-link">
   <span class="text">Loading Parquet Files</span>
   <a class="anchor-link" href="#load-parquet" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -179,8 +179,8 @@ Shadow matrices make analyses cleaner and more reliable by:
 While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, **there are situations where non-responses are themselves meaningful.** For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables. To understand patterns of missing data, users can re-integrate the non-responses from the shadow matrix back into the data using the following helper functions (*click to expand*):
 
 <div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
   <span class="emoji"><i class="fa-brands fa-python"></i></span>
+  <span class="text-with-link">
   <span class="text">Python</span>
   <a class="anchor-link" href="#python-helper-function" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -225,8 +225,8 @@ df[df["&lt;COLUMN NAME&gt;"].isna()][["&lt;COLUMN NAME&gt;_missing_reason"]]
 </div>
 
 <div id="r-helper-function" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
   <span class="emoji"><i class="fa-brands fa-r-project"></i></span>
+  <span class="text-with-link">
   <span class="text">R (using <a href="../recprograms/#tabulated-data">NBDCtools</a>)</span>
   <a class="anchor-link" href="#r-helper-function" title="Copy link">
   <i class="fa-solid fa-link"></i>

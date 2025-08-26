@@ -1,23 +1,31 @@
 /* Red Collapsible RDU Alert Banner */
 .alert-banner {
   display: flex;
-  align-items: center; /* Ensures vertical alignment of items */
-  justify-content: space-between; /* Ensures proper spacing */
-  background-color: #be044537; 
+  align-items: center;      /* centers emoji relative to text block */
+  background-color: #be044537;
+  padding: 4px 8px;
   border-bottom: 1px solid #e0e0e0;
-  padding: 0 20px;
   font-family: Lato; 
-  color: #3e3e3e;
-  cursor: pointer;
-  border-radius: 0; /* Make square shaped */
-  line-height: 30px;
+  color: #474646;
+  font-weight: bold;
+  gap: 8px;                 /* space between emoji and text */
   font-size: 0.9em;
+  line-height: 1.1;
+  border-radius: 6px; /* round edges */
+  width: 100%;
 }
 .alert-banner .emoji {
-  font-size: 1.5rem; 
-  margin-right: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;   /* increase this for larger icon */
   color: red;
 }
+.alert-banner .text {
+  flex: 1;                  /* text takes remaining space */
+}
+
 .alert-collapsible-content {
   max-height: 0;
   overflow: hidden;
