@@ -39,9 +39,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
 
 ### Administrative<span class="hint">(Click sections to expand)</span>
 
-<i class="fa-solid fa-circle-info"></i>
-<i style="font-weight: normal;"> Click sections to expand and view the associated domain instruments/measures.</i>
-
 <div id="admin" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Administrative Variables</span>
