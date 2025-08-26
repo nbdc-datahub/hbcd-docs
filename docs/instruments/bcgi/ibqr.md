@@ -43,7 +43,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>The IBQ-R (VSF)+BI assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p> 
+<p>The IBQ-R (VSF)+BI and ECBQ (VSF)+BI assess normative variations in infant/child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p> 
 </div>
 
 ## Administration & Quality Control
@@ -57,7 +57,7 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">V03 <strong>[IBQ-R (VSF)+BI]</strong>; V05 <strong>[ECBQ]</strong> (<i>Validated for ages 3 months, 0 days to 17 months, 30 days for HBCD</i>)</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">V03 <strong>[IBQ-R (VSF)+BI]</strong>; V05 <strong>[ECBQ (VSF)+BI]</strong> (<i>Validated for ages 3 months, 0 days to 17 months, 30 days for HBCD</i>)</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>7-10 min (<b>SAME FOR ECBQ?</b>)</td></tr>
 <tr><td><b>Quality Control</b></td>
