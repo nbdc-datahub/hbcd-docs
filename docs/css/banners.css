@@ -19,11 +19,14 @@
 /* General Banner Settings */
 /* arrow */
 .arrow {
-  font-size: 1.8rem;
+  font-size: 1.5em;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  color: #3e3e3e;
+  margin-left: auto;          /* spacing from text */
   transition: transform 0.3s ease;
   transform-origin: center;
-  color: #3e3e3e;
-  margin-left: auto; /* Pushes the arrow to the right */
 }
 /* Rotate when explicitly marked or when JS adds rotate class */
 .arrow.rotate,
@@ -31,15 +34,14 @@
   transform: rotate(90deg);
 }
 .banner {
+  display: flex;
+  align-items: center;   /* vertically align text and arrow */
   background-color: #eaf9f0;
   padding: 4px 8px;           /* Reduced vertical padding */
   border-bottom: 1px solid #e0e0e0;
   font-family: Lato; 
   color: #474646;
   font-weight: bold;
-  display: flex;
-  align-items: center; /* Ensures vertical alignment of items */
-  justify-content: space-between; /* Ensures proper spacing */
   gap: 3px;
   line-height: 18px;
   font-size: 0.9em;

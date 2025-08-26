@@ -62,14 +62,14 @@ The Edinburgh Postnatal Depression Scale (<a href="https://downloads.aap.org/AAP
 <p>In the HBCD study, a ‘Decline to answer’ option was added to all items. A ‘Don’t know’ option was also available early in data collection, but was subsequently removed. Questions answered with ‘Decline to answer’ or ‘Don’t know’ are marked as missing. In addition, scores for EPDS Self-Harm (score>1) and Depression (total score>11) triggered clinical alerts for study staff.</p>
 </div>
 
-
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-    <span class="text-with-link">
-    <span class="text">Scoring Procedures</span>
-    <a class="anchor-link" href="#scoring" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-    </a>
-    </span>
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">

@@ -45,8 +45,14 @@ The Multilingual Language Development Screener (MLDS) consists of questionnaires
 
 Designed specifically for HBCD, this measure informs assessment teams conducting neurocognitive and language evaluations. Responses help determine whether assessments are conducted in English or Spanish and identify potential challenges such as hearing impairments or other languages. Caregivers select their child’s language preference (English or Spanish) for in-person tasks like the NIH Baby Toolbox, Bayley-4, or Deferred Imitation. For the MacArthur-Bates Communicative Development Inventories (CDI), an algorithm determines whether it is administered in English, Spanish, both, or not at all.
 
-<div id="mlds-scoring-procedures" class="table-banner" onclick="toggleCollapse(this)">
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
+  <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
