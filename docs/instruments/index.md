@@ -214,6 +214,12 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td style="word-wrap: break-word; white-space: normal;">Irritability</td>
     <td><code>mh_cg_mapdb__inf</code></td>
   </tr>
+    <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale, Version: Toddlerhood and Preschool</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">MAPS-TL</td>
+    <td style="word-wrap: break-word; white-space: normal;">Irritability</td>
+    <td><code>mh_cg_mapstl__tod</code></td>
+  </tr>
   </tbody>
   </table>
 </div>

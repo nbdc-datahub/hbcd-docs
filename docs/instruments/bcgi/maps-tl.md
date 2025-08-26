@@ -1,9 +1,32 @@
-# MAPS-TL, Version: Infancy (< 1 year)
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 - adding version: Toddlerhood and Preschool</i> 🚧 </p>
 
-**Full Name**: Multidimensional Assessment Profiles - Temper Loss scale, Version: Infancy (< 1 year)       
-**Acronym**: MAPS-TL                  
-**Table Name**: `mh_cg_mapdb__inf`       
-**Construct**: Irritability
+# MAPS-TL, Versions: Infancy (< 1 year) & Toddlerhood and Preschool
+
+**Full Name**: Multidimensional Assessment Profiles - Temper Loss scale
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<td style="text-align: center;"><strong>Instrument</strong></td>
+<td style="text-align: center;"><strong>Version</strong></td>
+<td style="text-align: center;"><strong>Construct</strong></td>
+<td style="text-align: center;"><strong>Table Name</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2">MAPS-TL</td>
+  <td><b>Infancy (&lt;1 year)</b></td>
+  <td>Irritability</td>
+  <td><code>mh_cg_mapdb__inf</code></td>
+</tr>
+<tr>
+  <td><b>Toddlerhood and Preschool</b></td>
+  <td>Irritability</td>
+  <td><code>mh_cg_mapstl__tod</code></td>
+</tr>
+</tbody>
+</table>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -26,21 +49,21 @@
 <tr><td><b>Child Specific</b></td>
 <td>Yes</td></tr>
 <tr><td><b>Respondent</b></td>
-<td>Primary caregiver</td></tr>
+<td>Primary caregiver on Child</td></tr>
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V03</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">V03 [<strong>Infancy</strong>]; VX, VX, etc [<strong>Toddlerhood and Preschool</strong>]</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>5 min</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within the expected range of 3-9 months. Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within the expected range (3-9 months for Infant version; XX for Toddlerhood and Preschool version). Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
 </tbody>
 </table>
 
 ## Instrument Details
 
-Multidimensional Assessment Profiles- Temper Loss scale (MAPS-TL) is a well-validated survey assessing irritability that serves as a tool for characterizing the developmental expression of early mental health risk. MAPS-TL measures a range of behaviors that encompass dysregulation, responsiveness to environmental input, and context. Questions inquire about the behaviors of the focal child over the past month. Irritability has been identified as an early dimensional marker of lifespan mental health risk. MAPS-TL aims to delineate the typical-to-atypical spectrum of irritability in early childhood and identify those young children at high probability of subsequent adaptational problems based on problems with dysregulation. 
+The **Multidimensional Assessment Profiles- Temper Loss scale (MAPS-TL)** is a well-validated survey assessing irritability that serves as a tool for characterizing the developmental expression of early mental health risk. MAPS-TL measures a range of behaviors that encompass dysregulation, responsiveness to environmental input, and context. Questions inquire about the behaviors of the focal child over the past month. Irritability has been identified as an early dimensional marker of lifespan mental health risk. MAPS-TL aims to delineate the typical-to-atypical spectrum of irritability in early childhood and identify those young children at high probability of subsequent adaptational problems based on problems with dysregulation. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -65,7 +88,7 @@ Multidimensional Assessment Profiles- Temper Loss scale (MAPS-TL) is a well-vali
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Each of the 17 items for MAPS-TL is answered on a scale of 1 to 6: 1 [Never], 2 [Rarely (Less than once per week)], 3 [Some (1-3) days of the week], 4 [Most (4-6) days of the week], 5 [Every day of the week], 6 [Many times each day]. A **sum score** is generated when the caregiver provides a numerical score of 1 to 6 for at least 9 out of the 17 items. If fewer than 9 items are completed, the score is marked as missing. When responses are available for 9 to 16 items, a prorated score is calculated using the formula:
+<p>Each of the 17 items for MAPS-TL is answered on a scale of 1 to 6: 1 [Never], 2 [Rarely (Less than once per week)], 3 [Some (1-3) days of the week], 4 [Most (4-6) days of the week], 5 [Every day of the week], 6 [Many times each day]. A <strong>summary score</strong> is generated when the caregiver provides a numerical score of 1 to 6 for at least 9 out of the 17 items. If fewer than 9 items are completed, the score is marked as missing. When responses are available for 9 to 16 items, a prorated score is calculated using the formula:
 <p style="font-size: 0.9em;">
   \[
   \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{17}
