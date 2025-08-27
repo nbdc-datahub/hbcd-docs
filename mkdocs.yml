@@ -76,13 +76,13 @@ nav:
         - Visit Information: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 
+            - 🚧 CHAOS: instruments/bcgi/chaos.md
             - 🚧 ecPROMIS C/CG Relationship: instruments/bcgi/ecpromis.md
             - 🚧 ecPROMIS - Peer Relation: instruments/bcgi/ecpromis-pr.md
             - 🚧 ERICA: instruments/bcgi/erica.md
+            - 🚧 HOME-21: instruments/bcgi/home21.md
             - 🚧 IBQ-R/ECBQ: instruments/bcgi/ibqr.md
             - 🚧 MAPS-TL: instruments/bcgi/maps-tl.md
-            - 🚧 CHAOS: instruments/bcgi/chaos.md
-            - 🚧 HOME-21: instruments/bcgi/home21.md
         - Biospecimens & Omics:
             - Nails: instruments/biospec/nails.md
             - Urine: instruments/biospec/urine.md
