@@ -11,28 +11,33 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-<td style="width: 20%;"><strong>Instrument</strong></td>
-<td style="width: 20%"><strong>Version</strong></td>
-<td style="width: 20%"><strong>Table Name</strong></td>
+<td style="width: 50%;"><strong>Instrument</strong></td>
+<td style="width: 25%"><strong>Version</strong></td>
+<td style="width: 25%"><strong>Construct</strong></td>
+<td><strong>Table Name</strong></td>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="4" style="word-wrap: break-word; white-space: normal;">HBCD Demographics Adult</td>
+  <td rowspan="4">HBCD Demographics Adult</td>
   <td><strong>V1</strong></td>
+  <td>Demographics (Adult Visit 1)</td>
   <td><code>sed_bm_demo</code></td>
 </tr>
 <tr>
-  <td><strong>V4 Adult (Birth Parent)</strong></td>
-  <td><code>XXXXXX</code></td>
+  <td><strong>V4 (Birth Parent)</strong></td>
+  <td>Demographics (Birth Parent Visit 4)</td>
+  <td>ADD<code></code></td>
 </tr>
 <tr>
-  <td><strong>V4 Adult (Alt. Caregiver)</strong></td>
-  <td><code>XXXXXX</code></td>
+  <td><strong>V4 (Alt. Caregiver)</strong></td>
+  <td>Demographics (Alt. Caregiver Visit 4)</td>
+  <td>ADD<code></code></td>
 </tr>
 <tr>
-  <td><strong>V6 Adult</strong></td>
-  <td><code>XXXXXX</code></td>
+  <td><strong>V6</strong></td>
+  <td>Demographics (Adult Visit 6)</td>
+  <td>ADD<code></code></td>
 </tr>
 </tbody>
 </table>

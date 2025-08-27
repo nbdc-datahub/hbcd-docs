@@ -12,19 +12,22 @@
 <thead>
 <tr>
 <td style="width: 20%;"><strong>Instrument</strong></td>
-<td style="width: 20%"><strong>Version</strong></td>
+<td style="width: 10%"><strong>Version</strong></td>
+<td style="width: 20%"><strong>Construct</strong></td>
 <td style="width: 20%"><strong>Table Name</strong></td>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">HBCD Demographics Child</td>
+  <td rowspan="2">HBCD Demographics Child</td>
   <td><strong>V4</strong></td>
+  <td>Demographics (Child Visit 4)</td>
   <td><code>sed_bm_demo_child</code></td>
 </tr>
 <tr>
   <td><strong>V6</strong></td>
-  <td><code>XXXXXX</code> ??</td>
+  <td>Demographics (Child Visit 6)</td>
+  <td><code></code>ADD</td>
 </tr>
 </tbody>
 </table>
