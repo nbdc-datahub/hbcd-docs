@@ -557,12 +557,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </thead>
   <tbody>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/aces" target="_blank">Pediatric Adverse Childhood Experiences</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">ACEs</td>
-      <td style="word-wrap: break-word; white-space: normal;">Adverse Childhood Experiences</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_pedaces</code></td>
-    </tr>
-    <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="SED/bfy" target="_blank">BFY - Benefits/Services, Economic Stress</a></td>
       <td style="word-wrap: break-word; white-space: normal;">BFY</td>
       <td style="word-wrap: break-word; white-space: normal;">Benefits/Services/Economic Stress</td>
@@ -587,18 +581,24 @@ Each instrument name links to a dedicated page with detailed documentation for t
         <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_phx__discr</code></td>
     </tr>   
     <tr>
-          <td style="word-wrap: break-word; white-space: normal;"><a href="SED/ehits" target="_blank">Partner Dynamics (eHITS)</a></td>
-          <td style="word-wrap: break-word; white-space: normal;">eHITS</td>
-          <td style="word-wrap: break-word; white-space: normal;">Intimate Partner Violence</td>
-          <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_ehits</code></td>
-      </tr>  
-      <tr>
-          <td style="word-wrap: break-word; white-space: normal;"><a href="SED/v01-demo" target="_blank">HBCD Demographics V01</a></td>
-          <td style="word-wrap: break-word; white-space: normal;">Demographics</td>
-          <td style="word-wrap: break-word; white-space: normal;">Basic social characteristics related to the birthing parent, the other biological parent, and their household</td>
-          <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_demo</code></td>
-      </tr>     
-      <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/v01-demo" target="_blank">HBCD Demographics V01</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Demographics</td>
+      <td style="word-wrap: break-word; white-space: normal;">Basic social characteristics related to the birthing parent, the other biological parent, and their household</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_demo</code></td>
+    </tr>   
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/ehits" target="_blank">Partner Dynamics (eHITS)</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">eHITS</td>
+      <td style="word-wrap: break-word; white-space: normal;">Intimate Partner Violence</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_ehits</code></td>
+    </tr>  
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/aces" target="_blank">Pediatric Adverse Childhood Experiences</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Pediatric ACEs</td>
+      <td style="word-wrap: break-word; white-space: normal;">Adverse Childhood Experiences</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_pedaces</code></td>
+    </tr>  
+    <tr>
           <td style="word-wrap: break-word; white-space: normal;"><a href="SED/promis" target="_blank">PROMIS Perceived Stress/Social Support</a></td>
           <td style="word-wrap: break-word; white-space: normal;">PROMIS</td>
           <td style="word-wrap: break-word; white-space: normal;">Perceived Stress/Social Support</td>
