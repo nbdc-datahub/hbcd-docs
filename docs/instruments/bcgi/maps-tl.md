@@ -100,11 +100,11 @@ Alterations were made to replace “parent” with “parent/caregiver” where 
 Each of the 17 items for MAPS-TL is answered on a scale of 1 to 6: 1 [Never], 2 [Rarely (Less than once per week)], 3 [Some (1-3) days of the week], 4 [Most (4-6) days of the week], 5 [Every day of the week], 6 [Many times each day]. A <strong>summary score</strong> is generated when the caregiver provides a numerical score of 1 to 6 for at least 9 out of the 17 items. If fewer than 9 items are completed, the score is marked as missing. When responses are available for 9 to 16 items, a prorated score is calculated using the formula:
 <p style="font-size: 0.9em;">
   \[
-  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{40}
+  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{17}
   \]
 </p>
 <p><b>V05</b><br>
-Each of the 40  items for MAPS-TL is answered on a scale of 1 to 6: 1 [Never], 2 [Rarely (Less than once per week)], 3 [Some (1-3) days of the week], 4 [Most (4-6) days of the week], 5 [Every day of the week], 6 [Many times each day]. A summary score is generated when the caregiver provides a numerical score of 1 to 6 for at least 20 out of the 40 items. If fewer than 20 items are completed, the score is marked as missing. When responses are available for 20 to 40 items, a prorated score is calculated using the formula:
+Each of the 40  items for MAPS-TL is answered on a scale of 1 to 6: 1 [Never], 2 [Rarely (Less than once per week)], 3 [Some (1-3) days of the week], 4 [Most (4-6) days of the week], 5 [Every day of the week], 6 [Many times each day]. A <strong>summary score</strong> is generated when the caregiver provides a numerical score of 1 to 6 for at least 20 out of the 40 items. If fewer than 20 items are completed, the score is marked as missing. When responses are available for 20 to 40 items, a prorated score is calculated using the formula:
 <p style="font-size: 0.9em;">
   \[
   \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{40}
