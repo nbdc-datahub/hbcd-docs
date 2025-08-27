@@ -17,9 +17,9 @@
 <tr><td><b>Respondent</b></td>
 <td>Primary Caregiver on Child</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td></td></tr>
+<td></td>V05, V07</tr>
 <tr><td><b>Completion Time</b></td>
 <td></td></tr>
 <tr><td><b>Quality Control</b></td>
@@ -42,43 +42,31 @@ ADD CONTENT HERE
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Global Measure Changes</b><br>
-For HBCD, the CHAOS measure (acquired Visits 5 and 7) was changed from a True/False scale to a Likert scale because, although the majority of prior studies used True/False, a Likert scale generally results in higher alpha coefficients (e.g. 0.81-0.87 vs 0.77-0.79; studies using 4-point Likert scale include Emond et al. 2018, Coe et al. 2020, Larsen et al. 2020, Andrews et al. 2021, Wilhoit et al. 2021, Zhao et al. 2023).</p>
-<p>Alternative response options from literature:</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px; padding-bottom: 0; margin-bottom: 0;">
+<p>For HBCD, the CHAOS measure was changed from a True/False scale to a <strong>4-point Likert scale</strong> (see <a href="#scoring">Scoring Procedures</a>).</p>
+<p><b>Alternative Response Options From Literature</b><br>
+Although the original and majority of prior studies use True/False, more recent studies tend to use a Likert scale because it results in higher alpha coefficients (e.g. <strong>0.81-0.87</strong> vs <strong>0.77-0.79</strong>). <i>Studies using a 4-point Likert scale</i>: <a href="https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-021-00651-1">Andrews et al. 2021</a>; <a href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-018-6113-2">Emond et al. 2018</a>; <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8680262/">Wilhoit et al. 2021</a>; <a href="https://link.springer.com/article/10.1007/s10826-019-01645-9">Larsen et al. 2020</a> (see full text <a href="https://www.proquest.com/docview/2375654169?pq-origsite=gscholar&fromopenview=true">here</a>); <a href="https://europepmc.org/article/med/32655209">Coe et al. 2020</a>; <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1087710/full">Zhao et al. 2023</a>.</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
     <th>Alternative Response Set</th>
     <th>Usage</th>
 </thead>
 <tbody>
-<tr>
-    <td>Not true, Quite true, Very true</td>
+<tr><td>Not true, Quite true, Very true</td>
     <td style="word-wrap: break-word; white-space: normal;">6-item version (child report)</td>
 </tr> 
-<tr>
-    <td>0 (“strongly disagree”) to 4 (“strongly agree”)</td>
+<tr><td>0 (“strongly disagree”) to 4 (“strongly agree”)</td>
     <td style="word-wrap: break-word; white-space: normal;">6-item version</td>
 </tr> 
-<tr>
-    <td>Definitely false, False, Not Really True or False, True, Definitely True</td>
+<tr><td>Definitely false, False, Not Really True or False, True, Definitely True</td>
     <td style="word-wrap: break-word; white-space: normal;">Only 1 study uses this scale, but ended up recoding as 0/1 to be consistent with original – had lower alpha coefficient (0.64)</td>
 </tr> 
-<tr>
-    <td>1 (Definitely Untrue) to 5 (Definitely True)</td>
+<tr><td>1 (Definitely Untrue) to 5 (Definitely True)</td>
     <td style="word-wrap: break-word; white-space: normal;">6-item version, low alpha coefficient (0.59, 0.64)</td>
 </tr> 
 </tbody>
 </table>
-
-<p><b>Answer/Response Option Changes</b><br>
-<i>Please respond to each statement by marking a number between 1 and 4 to indicate how much each statement describes your home environment. Please use the following scale:</i><br>
-    1 - Very much like your own home<br>
-    2 - Somewhat like your own home<br>
-    3 - A little bit like your own home<br>
-    4 - Not at all like your own home
-</p>
-<b>Long (Original) vs Short Versions</b>
 <ul>
+<b>Long (Original) vs. Short Versions</b>
     <li>More variability in items used and scales for short versions</li>
     <li>Reports of measurement concerns with short versions</li>
     <li>Short versions generally have lower internal consistency</li>
@@ -90,19 +78,32 @@ For HBCD, the CHAOS measure (acquired Visits 5 and 7) was changed from a True/Fa
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
+    <span class="text">Scoring Procedures</span>
+    <a class="anchor-link" href="#scoring" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>If caregiver declined to answer an item, that item receives no numerical score.</p>
+  <p>The CHAOS instrument consists of 15 items, each rated on a 4-point scale to indicate how much each statement describes the participant's home environment:</p>
+  <ul>
+    <li>1 = Very much like your own home</li>
+    <li>2 = Somewhat like your own home</li>
+    <li>3 = A little bit like your own home</li>
+    <li>4 = Not at all like your own home</li>
+  </ul>
+  <p>A non-response option, <em>“Decline to Answer”</em>, is available and does not contribute to scoring.</p>
+  <p><strong>Total score:</strong> Calculated as the sum of all numerical item responses, excluding non-responses. Higher scores indicate a higher level of household CHAOS.</p>
+  <p><strong>Scoring rules:</strong></p>
+  <ul>
+    <li>Scored as coded: <code>Chaos_1</code>, <code>Chaos_2</code>, <code>Chaos_4</code>, <code>Chaos_7</code>, <code>Chaos_12</code>, <code>Chaos_14</code>, <code>Chaos_15</code></li>
+    <li>Reverse-scored (1→4, 2→3, 3→2, 4→1): <code>Chaos_3</code>, <code>Chaos_5</code>, <code>Chaos_6</code>, <code>Chaos_8</code>, <code>Chaos_9</code>, <code>Chaos_10</code>, <code>Chaos_11</code>, <code>Chaos_13</code></li>
+  </ul>
 </div>
 
-## References
 
+## References
 
 <div class="references"> 
 <p>Andrews, K., Dunn, J. R., Prime, H., Duku, E., Atkinson, L., Tiwari, A., &amp; Gonzalez, A. (2021). Effects of household chaos and parental responsiveness on child executive functions: a novel, multi-method approach. <em>BMC Psychology</em>, 9(1), 147. <a href="https://doi.org/10.1186/s40359-021-00651-1">https://doi.org/10.1186/s40359-021-00651-1</a></p>
