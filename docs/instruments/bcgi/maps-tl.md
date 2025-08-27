@@ -58,11 +58,11 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">V03 <strong>[Infancy]</strong>; VX, VX, etc. <strong>[Toddlerhood and Preschool]</strong></td></tr>
+<td style="word-wrap: break-word; white-space: normal;">V03 <strong>[Infancy]</strong>; V05 <strong>[Toddlerhood and Preschool]</strong></td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>5 min</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within the expected range (3-9 months for Infant version; XX for Toddlerhood and Preschool version). Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within the expected range (3-9 months for Infant version; 10-17 months for Toddlerhood and Preschool version). Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
 </tbody>
 </table>
 
@@ -82,62 +82,7 @@ The **Multidimensional Assessment Profiles- Temper Loss scale (MAPS-TL)** is a w
 </div>
 <div class="table-collapsible-content">
 <p><b>General Language Modifications</b><br>
-Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible - see table below. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.</p>
-<p><b>Updated Assessment Item Language, Version: Toddlerhood and Preschool</b></p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-  <th>Item</th>
-  <th>Revised Item Text</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">5</td>
-<td style="word-wrap: break-word; white-space: normal;">Stamp feet when frustrated</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">7</td>
-<td style="word-wrap: break-word; white-space: normal;">Do things that could hurt themselves during a tantrum (for example bang head, bite or scratch self)</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">16</td>
-<td style="word-wrap: break-word; white-space: normal;">Have a temper tantrum when you were out in public</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">18</td>
-<td style="word-wrap: break-word; white-space: normal;">Have a temper tantrum when frustrated, angry, or upset</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">20</td>
-<td style="word-wrap: break-word; white-space: normal;">Have a temper tantrum when tired, hungry, or sick</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">26</td>
-<td style="word-wrap: break-word; white-space: normal;">Have a temper tantrum when your child was with other adults (e.g., babysitter, childcare provider, teacher, family member)</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">27</td>
-<td style="word-wrap: break-word; white-space: normal;">Have a temper tantrum when your child was with you or other parent/caregiver</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">28</td>
-<td style="word-wrap: break-word; white-space: normal;">Keep on having a temper tantrum even when you tried to help calm your child down</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">29</td>
-<td style="word-wrap: break-word; white-space: normal;">Have a temper tantrum until your child was exhausted</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">32</td>
-<td style="word-wrap: break-word; white-space: normal;">Make you feel that you have to "walk on eggshells" to avoid setting your child off</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">38</td>
-<td style="word-wrap: break-word; white-space: normal;">Have a temper tantrum to get something your child wanted</td>
-</tr>
-</tbody>
-</table>
+Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replaced with ‘my child’ when eliminating pronouns was not grammatically possible. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.</p>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
@@ -151,10 +96,18 @@ Alterations were made to replace “parent” with “parent/caregiver” where 
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Each of the 17 items for MAPS-TL is answered on a scale of 1 to 6: 1 [Never], 2 [Rarely (Less than once per week)], 3 [Some (1-3) days of the week], 4 [Most (4-6) days of the week], 5 [Every day of the week], 6 [Many times each day]. A <strong>summary score</strong> is generated when the caregiver provides a numerical score of 1 to 6 for at least 9 out of the 17 items. If fewer than 9 items are completed, the score is marked as missing. When responses are available for 9 to 16 items, a prorated score is calculated using the formula:
+<p><b>V03</b><br>
+Each of the 17 items for MAPS-TL is answered on a scale of 1 to 6: 1 [Never], 2 [Rarely (Less than once per week)], 3 [Some (1-3) days of the week], 4 [Most (4-6) days of the week], 5 [Every day of the week], 6 [Many times each day]. A <strong>summary score</strong> is generated when the caregiver provides a numerical score of 1 to 6 for at least 9 out of the 17 items. If fewer than 9 items are completed, the score is marked as missing. When responses are available for 9 to 16 items, a prorated score is calculated using the formula:
 <p style="font-size: 0.9em;">
   \[
-  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{17}
+  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{40}
+  \]
+</p>
+<p><b>V05</b><br>
+Each of the 40  items for MAPS-TL is answered on a scale of 1 to 6: 1 [Never], 2 [Rarely (Less than once per week)], 3 [Some (1-3) days of the week], 4 [Most (4-6) days of the week], 5 [Every day of the week], 6 [Many times each day]. A summary score is generated when the caregiver provides a numerical score of 1 to 6 for at least 20 out of the 40 items. If fewer than 20 items are completed, the score is marked as missing. When responses are available for 20 to 40 items, a prorated score is calculated using the formula:
+<p style="font-size: 0.9em;">
+  \[
+  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{40}
   \]
 </p>
 </div>
