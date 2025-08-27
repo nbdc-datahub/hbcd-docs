@@ -621,7 +621,13 @@ Each instrument name links to a dedicated page with detailed documentation for t
           <td style="word-wrap: break-word; white-space: normal;">PACES</td>
           <td style="word-wrap: break-word; white-space: normal;">Protective Factors</td>
           <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_paces</code></td>
-      </tr>      
+      </tr>
+      <tr>
+          <td style="word-wrap: break-word; white-space: normal;"><a href="SED/vi" target="_blank">Vancouver Index of Acculturation</a></td>
+          <td style="word-wrap: break-word; white-space: normal;">Vancouver Index/VI </td>
+          <td style="word-wrap: break-word; white-space: normal;">Acculturation</td>
+          <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_via</code></td>
+      </tr>          
   </tbody>
   </table>
   </div>
