@@ -396,7 +396,7 @@ The standard variable naming format is comprised of 4 or 5 main components:
 </p>
 
  - **Main components** are generally separated by a single underscore ( `_` ). Most instruments with multiple scales will additionally include the <code><span style="color: teal;">scale</span></code> component (this component is otherwise optional and not included in all variable names).   
- - **Subcomponents** are separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*. Multiselect fields are preceded by triple underscores ( `___` ), mainly relevant for [V01 Demographics](../instruments/SED/v01-demo.md) (`sed_bm_demo`) variables.
+ - **Subcomponents** are separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*. Multiselect fields are preceded by triple underscores ( `___` ), mainly relevant for demographics table variables.
  
 ### Naming Component Definitions
 

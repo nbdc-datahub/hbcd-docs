@@ -85,7 +85,7 @@ There are several items with branching logic; please consult the following resou
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in person</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V04</td></tr>
+<td>V04, V06</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>10 min</td></tr>
 <tr><td><b>Quality Control</b></td>
