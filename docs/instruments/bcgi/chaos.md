@@ -32,45 +32,60 @@
 ADD CONTENT HERE
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fa fa-gear"></i></span>
-<span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
+  <span class="emoji"><i class="fa fa-gear"></i></span>
+  <span class="text-with-link">
+    <span class="text">HBCD Modification Details</span>
+    <a class="anchor-link" href="#hbcd-mod" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>For HBCD, the CHAOS measure was changed from a True/False scale to a <strong>4-point Likert scale</strong> (see <a href="#scoring">Scoring Procedures</a>).</p>
-<p>Although the original and majority of prior studies use True/False, more recent studies tend to use a Likert scale because it results in higher alpha coefficients (e.g. <strong>0.81-0.87</strong> vs <strong>0.77-0.79</strong>). <i>Studies using a 4-point Likert scale</i>: <a href="https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-021-00651-1">Andrews et al. 2021</a>; <a href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-018-6113-2">Emond et al. 2018</a>; <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8680262/">Wilhoit et al. 2021</a>; <a href="https://link.springer.com/article/10.1007/s10826-019-01645-9">Larsen et al. 2020</a> (see full text <a href="https://www.proquest.com/docview/2375654169?pq-origsite=gscholar&fromopenview=true">here</a>); <a href="https://europepmc.org/article/med/32655209">Coe et al. 2020</a>; <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1087710/full">Zhao et al. 2023</a>.</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-<thead>
-    <th>Alternative Response Set</th>
-    <th>Usage</th>
-</thead>
-<tbody>
-<tr><td>Not true, Quite true, Very true</td>
-    <td style="word-wrap: break-word; white-space: normal;">6-item version (child report)</td>
-</tr> 
-<tr><td>0 (“strongly disagree”) to 4 (“strongly agree”)</td>
-    <td style="word-wrap: break-word; white-space: normal;">6-item version</td>
-</tr> 
-<tr><td>Definitely false, False, Not Really True or False, True, Definitely True</td>
-    <td style="word-wrap: break-word; white-space: normal;">Only 1 study uses this scale, but ended up recoding as 0/1 to be consistent with original – had lower alpha coefficient (0.64)</td>
-</tr> 
-<tr><td>1 (Definitely Untrue) to 5 (Definitely True)</td>
-    <td style="word-wrap: break-word; white-space: normal;">6-item version, low alpha coefficient (0.59, 0.64)</td>
-</tr> 
-</tbody>
-</table>
-<ul>
-Finally, HBCD utilizes the long/original version of the scale vs. the short version for the following reasons:
-    <li>More variability in items used and scales for short versions</li>
-    <li>Reports of measurement concerns with short versions</li>
-    <li>Short versions generally have lower internal consistency</li>
-    <li>Long version validated in several studies, theory-driven</li>
-</ul>
+  <p>In HBCD, the CHAOS measure was modified from a binary <em>True/False</em> format to a <strong>4-point Likert scale</strong> (see <a href="#scoring">Scoring Procedures</a>), which improves reliability and is more consistent with recent studies.</p>
+  <p>Likert scales yield higher internal consistency (α ≈ <strong>0.81–0.87</strong>) compared to the original True/False version (α ≈ <strong>0.77–0.79</strong>).</p>
+  <p><strong>Examples of studies using a 4-point Likert scale:</strong></p>
+  <ul>
+    <li><a href="https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-021-00651-1">Andrews et al., 2021</a></li>
+    <li><a href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-018-6113-2">Emond et al., 2018</a></li>
+    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8680262/">Wilhoit et al., 2021</a></li>
+    <li><a href="https://link.springer.com/article/10.1007/s10826-019-01645-9">Larsen et al., 2020</a> (<a href="https://www.proquest.com/docview/2375654169?pq-origsite=gscholar&fromopenview=true">full text</a>)</li>
+    <li><a href="https://europepmc.org/article/med/32655209">Coe et al., 2020</a></li>
+    <li><a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1087710/full">Zhao et al., 2023</a></li>
+  </ul>
+  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+    <thead>
+      <tr>
+        <th>Alternative Response Set</th>
+        <th>Usage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Not true, Quite true, Very true</td>
+        <td>6-item version (child report)</td>
+      </tr>
+      <tr>
+        <td>0 (“Strongly disagree”) to 4 (“Strongly agree”)</td>
+        <td>6-item version</td>
+      </tr>
+      <tr>
+        <td>Definitely false, False, Not Really True or False, True, Definitely True</td>
+        <td>Rarely used; recoded to 0/1; α = 0.64</td>
+      </tr>
+      <tr>
+        <td>1 (Definitely Untrue) to 5 (Definitely True)</td>
+        <td>6-item version; low reliability (α = 0.59–0.64)</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>Rationale for using the long/original version:</strong></p>
+  <ul>
+    <li>Greater item stability across studies</li>
+    <li>Short versions show measurement concerns</li>
+    <li>Short forms generally yield lower reliability</li>
+    <li>The long version is theory-driven and validated in multiple studies</li>
+  </ul>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
