@@ -195,12 +195,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td><code>mh_cg_ecbq</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/lab-tab" target="_blank">Laboratory Temperament Assessment Battery</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Lab-TAB</td>
-    <td style="word-wrap: break-word; white-space: normal;">Behavioral Inhibition</td>
-    <td><code>mh_ch_labtab</code></td>
-  </tr>
-  <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale, Version: Infancy (< 1 year)</a></td>
     <td style="word-wrap: break-word; white-space: normal;">MAPS-TL</td>
     <td style="word-wrap: break-word; white-space: normal;">Irritability</td>
