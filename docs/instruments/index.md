@@ -632,6 +632,103 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </table>
   </div>
 
+
+  <div id="socenvdet-alt" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-city"></i></span>
+  <span class="text-with-link">
+  <span class="text">Social & Environmental Determinants-ALT</span>
+  <a class="anchor-link" href="#socenvdet-alt" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th style="text-align: center;">Instrument</th>
+      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
+      <th style="width: 60%; text-align: center;">Construct</th>
+      <th style="text-align: center;">Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="SED/bfy" target="_blank">BFY</a></td>
+      <td></td>
+      <td>Benefits/Services/Economic Stress</td>
+      <td><code>sed_bm_bfy</code></td>
+    </tr>
+    <tr>
+      <td><a href="SED/cab" target="_blank">CABr-SF</a></td>
+      <td></td>
+      <td>Intimate Partner Violence</td>
+      <td><code>sed_cg_cabr_sf</code></td>
+    </tr>
+    <tr>
+      <td><a href="SED/current-employment" target="_blank">Employment</a></td>
+      <td></td>
+      <td>Current Employment</td>
+      <td><code>sed_cg_employ</code></td>
+    </tr>
+    <tr>
+      <td><a href="SED/v01-demo" target="_blank">Demographics V01</a></td>
+      <td></td>
+      <td style="word-wrap: break-word; white-space: normal;">Basic social characteristics related to the birthing parent, the other biological parent, and their household</td>
+      <td><code>sed_bm_demo</code></td>
+    </tr>   
+    <tr>
+      <td><a href="SED/ehits" target="_blank">eHITS</a></td>
+      <td></td>
+      <td>Intimate Partner Violence</td>
+      <td><code>sed_bm_ehits</code></td>
+    </tr>  
+    <tr>
+      <td rowspan="2"><a href="SED/aces" target="_blank">ACEs</a></td>
+      <td>ACEs</td>
+      <td>Adverse Childhood Experiences (Caregiver)</td>
+      <td><code>sed_cg_ace</code></td>
+    </tr>  
+    <tr>
+      <td>Pediatric ACEs</td>
+      <td>Adverse Childhood Experiences (Child)</td>
+      <td><code>sed_cg_pedaces</code></td>
+    </tr>  
+    <tr>
+      <td><a href="SED/promis" target="_blank">PROMIS</a></td>
+      <td></td>
+      <td>Perceived Stress/Social Support</td>
+      <td><code>sed_bm_strsup</code></td>
+      </tr> 
+    <tr>
+      <td><a href="SED/safety" target="_blank">Neighborhood Safety</a></td>
+      <td></td>
+      <td>Neighborhood Safety</td>
+      <td><code>sed_bm_nbhsaf</code></td>
+    </tr>          
+    <tr>
+      <td><a href="SED/paces" target="_blank">PACES</a></td>
+      <td></td>
+      <td>Protective Factors</td>
+      <td><code>sed_bm_paces</code></td>
+    </tr>
+    <tr>
+      <td><a href="SED/vi" target="_blank">Vancouver Index</a></td>
+      <td></td>
+      <td>Acculturation</td>
+      <td><code>sed_cg_via</code></td>
+    </tr>      
+    <tr>
+      <td><a href="SED/discr" target="_blank">Unfair Treatment</a></td>
+      <td></td>
+      <td>Experiences of Unfair Treatment</td>
+      <td><code>sed_bm_phx__discr</code></td>
+    </tr>       
+  </tbody>
+  </table>
+  </div>
+
 ### Brain Activity - MRI & EEG<span class="hint">(Click sections to expand)</span>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
