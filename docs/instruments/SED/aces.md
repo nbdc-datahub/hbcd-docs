@@ -30,21 +30,7 @@
 
 ## Instrument Details
 
-This measure indexes adverse events experienced by the child.
-
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Participants only report the total ACE events, there is no scoring.</p>
-</div>
+This measure indexes adverse events experienced by the child. Note that participants only report the total ACE events, so there is no scoring.
 
 ## References
 
