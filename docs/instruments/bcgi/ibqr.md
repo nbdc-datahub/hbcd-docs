@@ -67,7 +67,7 @@
 
 ## Instrument Details
 
-The **IBQ-R (VSF)+BI** (for infancy) and **ECBQ (VSF)+BI** (for early childhood) are caregiver-report questionnaires used to evaluate temperamental reactivity and self-regulation during the early years of development. These instruments are adapted from the validated Very Short Forms (VSF) of the IBQ-R and ECBQ, with additional items drawn from the long forms to capture **Behavioral Inhibition (Social Fear)** (*items listed under [HBCD Modifications](#hbcd-mod)*).
+The **IBQ-R (VSF)+BI** (for infancy) and **ECBQ (VSF)+BI** (for early childhood) are caregiver-report questionnaires used to evaluate temperamental reactivity and self-regulation during the early years of development. These instruments are adapted from the validated Very Short Forms (VSF) of the IBQ-R and ECBQ, with additional items (items 38-47) drawn from the long forms to capture **Behavioral Inhibition (Social Fear)**.
 
 **The HBCD versions therefore include four scale domains:**
 
@@ -114,61 +114,8 @@ The **IBQ-R (VSF)+BI** (for infancy) and **ECBQ (VSF)+BI** (for early childhood)
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>General</b><br>
-Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, the pronouns "she/he" or "her/him" in reference to the child/baby were changed to “the baby/child” or “they/them” as fit the item wording.</p>
+<p>Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, the pronouns "she/he" or "her/him" in reference to the child/baby were changed to “the baby/child” or “they/them” as fit the item wording.</p>
 <p>The creators of this measure have requested that these alterations be noted in all documentation and publications.</p>
-<p><b>Behavior Inhibition Scale Items Added</b><br>
-The items added for the <strong>Behavior Inhibition (or Social Fear) scale</strong> from the long forms (LF) of the IBQ-R/ECBQ include:</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-  <th>Item</th>
-  <th>Item Text</th>
-  </tr>
-</thead>
-<tbody>
- <tr>
-      <td style="word-wrap: break-word; white-space: normal;">38</td>
-      <td style="word-wrap: break-word; white-space: normal;">When introduced to an unfamiliar adult, how often did the baby hang back from the adult?</td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;">39</td>
-      <td style="word-wrap: break-word; white-space: normal;">When introduced to an unfamiliar adult, how often did the baby never “warm up” to the unfamiliar adult?</td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;">40</td>
-      <td style="word-wrap: break-word; white-space: normal;">When in the presence of several unfamiliar adults, how often did the baby cry?</td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;">41</td>
-      <td style="word-wrap: break-word; white-space: normal;">When in the presence of several unfamiliar adults, how often did the baby continue to be upset for 10 minutes or longer?</td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;">42</td>
-      <td style="word-wrap: break-word; white-space: normal;">When visiting a new place, how often did the baby show distress for the first few minutes?</td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;">43</td>
-      <td style="word-wrap: break-word; white-space: normal;">When visiting a new place, how often did the baby continue to be upset for 10 minutes or more?</td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;">44</td>
-      <td style="word-wrap: break-word; white-space: normal;">When your baby was approached by an unfamiliar person when you and your baby were out (for example, shopping), how often did the baby show distress?</td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;">45</td>
-      <td style="word-wrap: break-word; white-space: normal;">When your baby was approached by an unfamiliar person when you and your baby were out (for example, shopping), how often did the baby cry?</td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;">46R</td>
-      <td style="word-wrap: break-word; white-space: normal;">When an unfamiliar person came to your home or apartment, how often did your baby allow themselves to be picked up without protest?</td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;">47</td>
-      <td style="word-wrap: break-word; white-space: normal;">When an unfamiliar person came to your home or apartment, how often did your baby cry when the visitor attempted to pick them up?</td>
-    </tr>
-  </tbody>
-  </table>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
