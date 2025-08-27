@@ -1,3 +1,5 @@
+**Pulled from remaining HBCD Modification documentation**
+
 # Composite Abuse Scale Revised – Short Form
 
  - Current of former husband, partner or boyfriend/girlfriend" replaced with "spouse, partner, significant other"
