@@ -46,12 +46,10 @@ ADD CONTENT
   <p><b>Addition of New Item</b><br>
   The item <code>[peer_yn]</code> was added to the beginning of the survey instrument for HBCD to assess whether the child had opportunities to interact with other children during the primary period (past 7 days).</p>
   <blockquote>
-    <strong>Item text</strong>: “My child had opportunities to interact with other children."<br>
+    <strong>Item text</strong>: <i>“My child had opportunities to interact with other children."</i><br>
     <strong>Response options</strong>: 0 [No]; 1 [Yes]; Decline to Answer
   </blockquote>
-  <p>This item is not scored. Investigators may choose to use it as a filter variable during analyses.</p>
-  <p><b>Publication & Analysis Considerations</b><br>
-  The addition of <code>[peer_yn]</code> does not affect scoring and was approved by the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure</p>.
+  The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn't scored), but can be used as a filter variable for analyses. This item was added with the approval of the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure.</p>
 </div>
 
 ## References
