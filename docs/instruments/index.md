@@ -586,6 +586,18 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td><code>sed_bm_demo</code></td>
     </tr> 
     <tr>
+      <td><a href="SED/demo-ch" target="_blank">Demographics: Child</a></td>
+      <td></td>
+      <td style="word-wrap: break-word; white-space: normal;"></td>
+      <td><code></code></td>
+    </tr> 
+    <tr>
+      <td><a href="SED/demo-ch" target="_blank">Demographics: Caregiver/Birth Parent</a></td>
+      <td></td>
+      <td style="word-wrap: break-word; white-space: normal;"></td>
+      <td><code></code></td>
+    </tr> 
+    <tr>
       <td><a href="SED/ehits" target="_blank">eHITS</a></td>
       <td></td>
       <td>Intimate Partner Violence</td>
