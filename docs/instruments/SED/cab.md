@@ -58,3 +58,4 @@ Language was updated to use gender-neutral terminology in the definition of inti
 <div class="collapsible-content">
 <p>The summary score is computed as the mean of the frequency of abuse experience responses multiplied by 15 when there are response for at least 11 items. Note that in the updated scoring procedures, "Don’t Know" and "Decline to answer" are regarded as missing or non-responses.</p>
 </div>
+<br>
