@@ -1,10 +1,37 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: potentially add additional versions for later visits to this same page</i> 🚧 </p>
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: add additional versions for later visits to this same page</i> 🚧 </p>
 
-# V01 Demographics
+# Demographics Adult
 
-**Full Name**: HBCD V01 Demographics            
-**Table Name**: `sed_bm_demo`       
-**Construct**: Basic social characteristics related to the birthing parent, the other biological parent, and their household
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
+</div>
+<p></p>
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<td style="width: 20%;"><strong>Instrument</strong></td>
+<td style="width: 20%"><strong>Version</strong></td>
+<td style="width: 20%"><strong>Table Name</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="3" style="word-wrap: break-word; white-space: normal;">HBCD Demographics Adult</td>
+  <td><strong>V4 Adult (Birth Parent)</strong></td>
+  <td><code>sed_bm_demo</code> (?)</td>
+</tr>
+<tr>
+  <td><strong>V4 Adult (Alt. Caregiver)</strong></td>
+  <td><code>XXXXXX</code></td>
+</tr>
+<tr>
+  <td><strong>V6 Adult</strong></td>
+  <td><code>XXXXXX</code></td>
+</tr>
+</tbody>
+</table>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -52,11 +79,7 @@ There are several items with branching logic; please consult the following resou
 <td><a href="../images/other-parent.png" target="_blank"><i>Click to view</i></a></td></tr>
 </tbody>
 </table>
-<p><b>Birth Parent Sexual Orientation Excluded From Current Release</b><br>
-This item will be available in the interim Release 1.1 - <a href="../../../changelog/pending/#inclusion-of-birth-parent-sexual-orientation">see details</a>.</p>
 </div>
-
-
 
 ## Administration & Quality Control
 
@@ -140,10 +163,10 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
     <td>Hamilton, et al. (2011)</td>
     </tr>
     <tr>
-		<td>Sexual Orientation (<i>available Release 1.1 - <a href="../../../changelog/pending/#inclusion-of-birth-parent-sexual-orientation">see details</a></i>)</td>
-		<td><a href="https://www.phenxtoolkit.org/protocols/view/11701">PhenX</a></td>
-		<td>Hamilton, et al. (2011)</td>
-	</tr>
+        <td>Sexual Orientation (<i>available Release 1.1 - <a href="../../../changelog/pending/#inclusion-of-birth-parent-sexual-orientation">see details</a></i>)</td>
+        <td><a href="https://www.phenxtoolkit.org/protocols/view/11701">PhenX</a></td>
+        <td>Hamilton, et al. (2011)</td>
+    </tr>
     <tr>
         <td>Primary Residence</td>
         <td>HBCD</td>

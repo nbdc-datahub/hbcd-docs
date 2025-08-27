@@ -580,21 +580,15 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td><code>sed_cg_cabr_sf</code></td>
     </tr>
     <tr>
-      <td><a href="SED/v01-demo" target="_blank">Demographics V01</a></td>
+      <td><a href="SED/demo-ch" target="_blank">Demographics Child</a></td>
       <td></td>
-      <td style="word-wrap: break-word; white-space: normal;">Basic social characteristics related to the birthing parent, the other biological parent, and their household</td>
-      <td><code>sed_bm_demo</code></td>
-    </tr> 
-    <tr>
-      <td><a href="SED/demo-ch" target="_blank">Demographics: Child</a></td>
-      <td></td>
-      <td style="word-wrap: break-word; white-space: normal;"></td>
+      <td style="word-wrap: break-word; white-space: normal;">Demographics of child</td>
       <td><code></code></td>
     </tr> 
     <tr>
-      <td><a href="SED/demo-ch" target="_blank">Demographics: Caregiver/Birth Parent</a></td>
+      <td><a href="SED/demo-ch" target="_blank">Demographics Adult</a></td>
       <td></td>
-      <td style="word-wrap: break-word; white-space: normal;"></td>
+      <td style="word-wrap: break-word; white-space: normal;">Demographics of birth parent/caregiver</td>
       <td><code></code></td>
     </tr> 
     <tr>
