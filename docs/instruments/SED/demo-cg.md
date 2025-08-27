@@ -18,9 +18,13 @@
 </thead>
 <tbody>
 <tr>
-  <td rowspan="3" style="word-wrap: break-word; white-space: normal;">HBCD Demographics Adult</td>
+  <td rowspan="4" style="word-wrap: break-word; white-space: normal;">HBCD Demographics Adult</td>
+  <td><strong>V1</strong></td>
+  <td><code>sed_bm_demo</code></td>
+</tr>
+<tr>
   <td><strong>V4 Adult (Birth Parent)</strong></td>
-  <td><code>sed_bm_demo</code> (?)</td>
+  <td><code>XXXXXX</code></td>
 </tr>
 <tr>
   <td><strong>V4 Adult (Alt. Caregiver)</strong></td>
@@ -92,7 +96,7 @@ There are several items with branching logic; please consult the following resou
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in person</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V01, V04</td></tr>
+<td>V01, V04, V06</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>10 min</td></tr>
 <tr><td><b>Quality Control</b></td>
@@ -105,7 +109,6 @@ There are several items with branching logic; please consult the following resou
 Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. The HBCD Study demographics survey is designed to gather comprehensive information on socioeconomic status and various demographic factors. Its primary purpose is to capture data on race, ethnicity, nativity, income, education, and occupation, as well as relationship status, primary residence, and household composition of the parent carrying the child, and some basic information on the other biological parent. Please see [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the HBCD Demographics survey.
 
 Please see the section on <a href="../demographics/#basic-demographics">Basic Demographics</a>, which includes variables derived from the HBCD Demographics V01 instrument and data collected during study enrolment/screening.
-
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -137,6 +140,7 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
 </div>
 
 <div id="demo-tables" class="table-banner" onclick="toggleCollapse(this)">
+ <span class="emoji"><i class="fa fa-magnifying-glass"></i></span>
   <span class="text-with-link">
   <span class="text">Sources for Demographic Protocols & Modifications</span>
   <a class="anchor-link" href="#demo-tables" title="Copy link">
@@ -333,7 +337,8 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
 </table>
 </div>
 
-<h4 style="margin-bottom: 0; margin-top: 1em;">References</h4>
+## References
+
 <div class="references">
   <p>Barch, D. M., Albaugh, M. D., Avenevoli, S., Chang, L., Clark, D. B., Glantz, M. D., Hudziak, J. J., Jernigan, T. L., Tapert, S. F., Yurgelun-Todd, D., Alia-Klein, N., Potter, A. S., Paulus, M. P., Prouty, D., Zucker, R. A., & Sher, K. J. (2018). Demographic, physical and mental health assessments in the adolescent brain and cognitive development study: Rationale and description. <em>Developmental Cognitive Neuroscience</em>, 32, 55–66. <a href="https://doi.org/10.1016/j.dcn.2017.10.010" target="_blank">https://doi.org/10.1016/j.dcn.2017.10.010</a></p>
   <p>Cioffredi, L.-A., Yerby, L. G., Burris, H. H., Cole, K. M., Engel, S. M., Murray, T. M., Slopen, N., Volk, H. E., Acheson, A., & HBCD Social and Environmental Determinants Working Group. (2024). Assessing prenatal and early childhood social and environmental determinants of health in the HEALthy Brain and Child Development Study (HBCD). <em>Developmental Cognitive Neuroscience</em>, 69(101429), 101429. <a href="https://doi.org/10.1016/j.dcn.2024.101429" target="_blank">https://doi.org/10.1016/j.dcn.2024.101429</a></p>

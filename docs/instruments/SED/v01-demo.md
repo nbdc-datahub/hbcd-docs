@@ -56,8 +56,6 @@ There are several items with branching logic; please consult the following resou
 This item will be available in the interim Release 1.1 - <a href="../../../changelog/pending/#inclusion-of-birth-parent-sexual-orientation">see details</a>.</p>
 </div>
 
-
-
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
