@@ -292,6 +292,12 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td style="word-wrap: break-word; white-space: normal;">Sensory processing</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>ncl_cg_spm2__inf</code></td>
     </tr>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="neurocog/vineland" target="_blank">Vineland Scales of Adaptive Behavior</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Vineland</td>
+      <td style="word-wrap: break-word; white-space: normal;">Adaptive Behavior</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>nc_cg_vabs</code></td>
+    </tr>
   </tbody>
   </table>
 </div>

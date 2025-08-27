@@ -17,7 +17,7 @@
 <tr><td><b>Respondent</b></td>
 <td>Primary Caregiver on Child</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
 <td></td></tr>
 <tr><td><b>Completion Time</b></td>
