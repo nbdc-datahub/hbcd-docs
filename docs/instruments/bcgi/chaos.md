@@ -43,8 +43,7 @@ ADD CONTENT HERE
 </div>
 <div class="collapsible-content">
 <p>For HBCD, the CHAOS measure was changed from a True/False scale to a <strong>4-point Likert scale</strong> (see <a href="#scoring">Scoring Procedures</a>).</p>
-<p><b>Alternative Response Options From Literature</b><br>
-Although the original and majority of prior studies use True/False, more recent studies tend to use a Likert scale because it results in higher alpha coefficients (e.g. <strong>0.81-0.87</strong> vs <strong>0.77-0.79</strong>). <i>Studies using a 4-point Likert scale</i>: <a href="https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-021-00651-1">Andrews et al. 2021</a>; <a href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-018-6113-2">Emond et al. 2018</a>; <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8680262/">Wilhoit et al. 2021</a>; <a href="https://link.springer.com/article/10.1007/s10826-019-01645-9">Larsen et al. 2020</a> (see full text <a href="https://www.proquest.com/docview/2375654169?pq-origsite=gscholar&fromopenview=true">here</a>); <a href="https://europepmc.org/article/med/32655209">Coe et al. 2020</a>; <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1087710/full">Zhao et al. 2023</a>.</p>
+<p>Although the original and majority of prior studies use True/False, more recent studies tend to use a Likert scale because it results in higher alpha coefficients (e.g. <strong>0.81-0.87</strong> vs <strong>0.77-0.79</strong>). <i>Studies using a 4-point Likert scale</i>: <a href="https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-021-00651-1">Andrews et al. 2021</a>; <a href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-018-6113-2">Emond et al. 2018</a>; <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8680262/">Wilhoit et al. 2021</a>; <a href="https://link.springer.com/article/10.1007/s10826-019-01645-9">Larsen et al. 2020</a> (see full text <a href="https://www.proquest.com/docview/2375654169?pq-origsite=gscholar&fromopenview=true">here</a>); <a href="https://europepmc.org/article/med/32655209">Coe et al. 2020</a>; <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1087710/full">Zhao et al. 2023</a>.</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
     <th>Alternative Response Set</th>
@@ -66,12 +65,11 @@ Although the original and majority of prior studies use True/False, more recent 
 </tbody>
 </table>
 <ul>
-<b>Long (Original) vs. Short Versions</b>
+Finally, HBCD utilizes the long/original version of the scale vs. the short version for the following reasons:
     <li>More variability in items used and scales for short versions</li>
     <li>Reports of measurement concerns with short versions</li>
     <li>Short versions generally have lower internal consistency</li>
     <li>Long version validated in several studies, theory-driven</li>
-</li>
 </ul>
 </div>
 
