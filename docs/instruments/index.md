@@ -575,9 +575,9 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_bfy</code></td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/composite-abuse-scale" target="_blank">Composite Abuse Scale Revised - Short Form</a></td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/cab" target="_blank">Composite Abuse Scale Revised - Short Form</a></td>
       <td style="word-wrap: break-word; white-space: normal;">CABr-SF</td>
-      <td style="word-wrap: break-word; white-space: normal;"></td>
+      <td style="word-wrap: break-word; white-space: normal;">Intimate Partner Violence</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_cabr_sf</code></td>
     </tr>
     <tr>
