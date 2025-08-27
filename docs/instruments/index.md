@@ -580,7 +580,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td><code>sed_cg_cabr_sf</code></td>
     </tr>
     <tr>
-      <td rowspan="4"><a href="SED/demo-adult" target="_blank">Demographics Adult</a></td>
+      <td rowspan="4"><a href="SED/demo-cg" target="_blank">Demographics Adult</a></td>
       <td>V1</td>
       <td>Demographics (Adult Visit 1)</td>
       <td><code>sed_bm_demo</code></td>
