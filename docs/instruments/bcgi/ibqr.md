@@ -57,9 +57,9 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">V03 <strong>[IBQ-R (VSF)+BI]</strong>; V05 <strong>[ECBQ (VSF)+BI]</strong> (<i>Validated for ages 3 months, 0 days to 17 months, 30 days for HBCD</i>)</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">V03 <strong>[IBQ-R (VSF)+BI]</strong>; V05 <strong>[IBQ-R & ECBQ (VSF)+BI]</strong><br>(<i>Validated for ages 3 months, 0 days to 17 months, 30 days for HBCD</i>)</td></tr>
 <tr><td><b>Completion Time</b></td>
-<td>7-10 min (<b>SAME FOR ECBQ?</b>)</td></tr>
+<td>7-10 min</td></tr>
 <tr><td><b>Quality Control</b></td>
 <td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within the expected range of 3-18 months. Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
 </tbody>
@@ -71,17 +71,36 @@ The **IBQ-R (VSF)+BI** (for infancy) and **ECBQ (VSF)+BI** (for early childhood)
 
 **The HBCD versions therefore include four scale domains:**
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px; line-height: 1.4;">
-<tbody>
-<tr>
-  <td>Scales derived from Very Short Forms (VSF) of IBQ-R/ECBQ:</td>
-  <td> <strong>[1] Surgency/Extraversion</strong> (13 items)<br><strong>[2] Negative Affectivity</strong> (12 items)<br><strong>[3] Effortful Control</strong> (12 items)</td>
-</tr>
-<tr>
-  <td>Scale derived from Long Forms (LF) of IBQ-R/ECBQ:</td>
-  <td><strong>[4] Behavioral Inhibition (Social Fear)</strong> (13 items)</td>
-</tr>
-</tbody>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 16px; line-height: 1.4; text-align: center;">
+  <thead>
+    <tr>
+      <th style="text-align: left;">Scale Domain</th>
+      <th>IBQ-R (# items)</th>
+      <th>ECBQ (# items)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left;"><strong>Surgency / Extraversion</strong></td>
+      <td>13</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;"><strong>Negative Affectivity</strong></td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;"><strong>Effortful Control</strong></td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;"><strong>Behavioral Inhibition (Social Fear)</strong></td>
+      <td>13 <span style="font-size: 0.9em; color: #666;">(3 overlap with Negative Affectivity)</span></td>
+      <td>12 <span style="font-size: 0.9em; color: #666;">(1 overlaps with Negative Affectivity)</span></td>
+    </tr>
+  </tbody>
 </table>
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">

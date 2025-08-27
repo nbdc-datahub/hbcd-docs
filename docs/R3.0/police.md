@@ -1,5 +1,3 @@
-**Pulled from remaining HBCD Modification documentation**
-
 ## Experiences with Police
 
 ### Reference(s) to the Original Measure
