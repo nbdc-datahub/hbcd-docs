@@ -108,6 +108,5 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
   <p>Hamilton, C. M., Strader, L. C., Pratt, J. G., Maiese, D., Hendershot, T., Kwok, R. K., Hammond, J. A., Huggins, W., Jackman, D., Pan, H., Nettles, D. S., Beaty, T. H., Farrer, L. A., Kraft, P., Marazita, M. L., Ordovas, J. M., Pato, C. N., Spitz, M. R., Wagener, D., … Haines, J. (2011). The PhenX Toolkit: get the most from your measures. <em>American Journal of Epidemiology</em>, 174(3), 253–260. <a href="https://doi.org/10.1093/aje/kwr193" target="_blank">https://doi.org/10.1093/aje/kwr193</a></p>
   <p>Jones, C. P., Truman, B. I., Elam-Evans, L. D., Jones, C. A., Jones, C. Y., Jiles, R., Rumisha, S. F., & Perry, G. S. (2008). Using “socially assigned race” to probe white advantages in health status. <em>Ethnicity & Disease</em>, 18(4), 496–504. <a href="https://www.ncbi.nlm.nih.gov/pubmed/19157256" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/19157256</a></p>
   <p>Zachek, C. M., Schwartz, J. M., Glasser, M., DeMicco, E., & Woodruff, T. J. (2019). A screening questionnaire for occupational and hobby exposures during pregnancy. Occupational Medicine (Oxford, England), 69(6), 428–435. <a href="https://doi.org/10.1093/occmed/kqz094">https://doi.org/10.1093/occmed/kqz094</a></p>
-
 </div>
-
+<br>
