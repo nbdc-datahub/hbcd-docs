@@ -37,7 +37,6 @@
 <p>Although the Bayley Scales of Infant and Toddler Development, Fourth Edition, is a well-established and validated measure of infant development, tests of this nature have historically had limited predictive validity for long-term neurocognitive status.</p> 
 </div>
 
-
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -74,7 +73,6 @@
 The **Bayley Scales of Infant and Toddler Development, Fourth Edition**, is an established measure of early development that is commercially available. The test provides an estimate of the child's cognitive, language, and motor skills. Within the Language Domain both the child's receptive and expressive communication skills are assessed. Within the Motor Domain, both the child's fine and gross motor skills are assessed. The Social-Emotional and Adaptive Behavior Scales of the test were not used in this study.
 
 Additional details regarding the instrument are available from the publisher - see [here](https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Cognition-%26-Neuro/Bayley-Scales-of-Infant-and-Toddler-Development-%7C-Fourth-Edition/p/100001996).
-
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
