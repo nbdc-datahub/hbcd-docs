@@ -19,7 +19,6 @@ Basic Demographics is derived information computed from:
 
 Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.). *However*, if only V01 data for a given participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about the child will be missing, as the child is not born until after the V01 visit (all variables about the child are available beginning with V02).
 
-
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
   <span class="text-with-link">
