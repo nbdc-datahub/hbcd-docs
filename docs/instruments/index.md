@@ -593,16 +593,22 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_ehits</code></td>
     </tr>  
     <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/aces" target="_blank">Adverse Childhood Experiences</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">ACEs</td>
+      <td style="word-wrap: break-word; white-space: normal;">Adverse Childhood Experiences (Caregiver)</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_ace</code></td>
+    </tr>  
+    <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="SED/aces" target="_blank">Pediatric Adverse Childhood Experiences</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Pediatric ACEs</td>
-      <td style="word-wrap: break-word; white-space: normal;">Adverse Childhood Experiences</td>
+      <td style="word-wrap: break-word; white-space: normal;">Adverse Childhood Experiences (Child)</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_pedaces</code></td>
     </tr>  
     <tr>
-          <td style="word-wrap: break-word; white-space: normal;"><a href="SED/promis" target="_blank">PROMIS Perceived Stress/Social Support</a></td>
-          <td style="word-wrap: break-word; white-space: normal;">PROMIS</td>
-          <td style="word-wrap: break-word; white-space: normal;">Perceived Stress/Social Support</td>
-          <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_strsup</code></td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/promis" target="_blank">PROMIS Perceived Stress/Social Support</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">PROMIS</td>
+      <td style="word-wrap: break-word; white-space: normal;">Perceived Stress/Social Support</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code>sed_bm_strsup</code></td>
       </tr> 
       <tr>
           <td style="word-wrap: break-word; white-space: normal;"><a href="SED/safety" target="_blank">PhenX+ Neighborhood Safety</a></td>
