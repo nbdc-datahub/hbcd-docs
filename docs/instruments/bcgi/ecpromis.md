@@ -57,7 +57,7 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V03 [<strong>&lt;1 year</strong>]; V04, V06 [<strong>1-5 years</strong>]</td></tr>
+<td>V03 <strong>[&lt;1 year]</strong>; V05 <strong>[&lt;1 year</strong> & <strong>1-5 years]</strong>; V07, V09 <strong>[1-5 years]</strong></td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>1-2 min</td></tr>
 <tr><td><b>Quality Control</b></td>
@@ -86,25 +86,6 @@ For the HBCD study, the **ecPROMIS Child–Caregiver Relationship Form** was dev
 <p><b>General Language Modifications</b><br>
 Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible. In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
 <p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p>
-<p><b>Updated Assessment Item Language, Version: ecPROMIS (1-5 years)</b></p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-  <th>Item</th>
-  <th>Revised Item Text</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;">1</td>
-  <td style="word-wrap: break-word; white-space: normal;">My child was good at expressing needs to me or other parent.</td>
-</tr>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;">4</td>
-  <td style="word-wrap: break-word; white-space: normal;">My child came to me or other parent for help when needed.</td>
-</tr>
-</tbody>
-</table>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
