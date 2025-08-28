@@ -86,10 +86,10 @@ Based on the predefined threshold outlined in [Table 1](#table1), the PEth test 
 </table>
 </div>
 
-#### Final PEth assay follows these rules:
+#### Final PEth assay results follow these rules:
 
 - If the PEth test is positive (`c_peth_b_cat`), the sample level (`c_any_specimen_b`) is positive (value = 1). 
-- Otherwise, if the PEth confirmatory tests is negative (value = 0) then sample-level (`c_any_specimen_b`) is negative (0). 
+- If the PEth confirmatory tests is negative (value = 0), then sample-level (`c_any_specimen_b`) is negative (0). 
 - If the PEth confirmatory tests is cancelled (value = 3) then sample-level (`c_any_specimen_b`) is cancelled (value = 3).
 
 <div id="table2" class="table-banner" onclick="toggleCollapse(this)">
@@ -140,3 +140,4 @@ Based on the predefined threshold outlined in [Table 1](#table1), the PEth test 
 </tr>
 </tbody>
 </table>
+<br>
