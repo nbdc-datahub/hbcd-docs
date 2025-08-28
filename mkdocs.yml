@@ -85,6 +85,7 @@ nav:
             - 🚧 IBQ-R/ECBQ: instruments/bcgi/ibqr.md
             - 🚧 MAPS-TL: instruments/bcgi/maps-tl.md
         - Biospecimens & Omics:
+            - Blood: instruments/biospec/blood.md
             - Nails: instruments/biospec/nails.md
             - Urine: instruments/biospec/urine.md
         - Neurocognition & Language:

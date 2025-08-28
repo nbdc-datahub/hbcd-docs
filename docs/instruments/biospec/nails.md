@@ -545,8 +545,8 @@ Based on the predefined threshold outlined in [Table 1](#nails-table1), a confir
 The scoring for each test type is summarized below:
 
 <div id="nails-table3" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
   <span class="emoji"><i class="fa fa-table"></i></span>
+  <span class="text-with-link">
   <span class="text">Table 3. Screening Result Scoring</span>
   <a class="anchor-link" href="#nails-table3" title="Copy link">
   <i class="fa-solid fa-link"></i>

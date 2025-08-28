@@ -51,8 +51,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
+      <th style="width: 30%; text-align: center;">Instrument</th>
+      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
@@ -60,13 +60,13 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <tbody>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">SN Contact Form</td>
+    <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
     <td style="word-wrap: break-word; white-space: normal;">Administrative</td>
     <td><code>TBD</code></td>
   </tr>
     <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">TIC</td>
+    <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
     <td style="word-wrap: break-word; white-space: normal;">Administrative</td>
     <td><code>TBD</code></td>
   </tr>
@@ -88,23 +88,23 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Alternative/Short Name</th>
+      <th style="width: 20%; text-align: center;">Instrument</th>
+      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
       <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 30%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/basicdemo" target="_blank">Basic Demographics information</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Basic Demographics</td>
-    <td style="word-wrap: break-word; white-space: normal;">Demographics data derived from multiple sources</td>
+    <td><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
+    <td><i>NA</i></td>
+    <td>Demographics data derived from multiple sources</td>
     <td><code>sed_basic_demographics</code></td>
   </tr>
     <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Visit Information</td>
-    <td style="word-wrap: break-word; white-space: normal;">Participant visit information</td>
+    <td><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
+    <td><i>NA</i></td>
+    <td>Participant visit information</td>
     <td><code>par_visit_data</code></td>
   </tr>
   </tbody>
@@ -127,7 +127,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Name of Instrument</th>
+      <th style="width: 30%; text-align: center;">Instrument</th>
       <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
       <th style="width: 50%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
@@ -221,24 +221,35 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 20%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Short Name</th>
+      <th style="width: 10%; text-align: center;">Instrument</th>
+      <th style="text-align: center;">Version</th>
       <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 20%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
-      <tr>
-      <td style="text-align: left;"><a href="biospec/nails" target="_blank">USDTL Nails Toxicology results</a></td>
-      <td style="text-align: left;">Nails</td>
-      <td style="text-align: left;">Toxicology Screen & Specimen Type</td>
-      <td style="text-align: left;"><code>bio_bm_biosample_nails_results</code><br><code>bio_bm_biosample_nails_type</code></td>
-    </tr>
-    <tr>
-        <td style="text-align: left;"><a href="biospec/urine" target="_blank">USDTL Urine Toxicology results</a></td>
-        <td style="text-align: left;">Urine</td>
-        <td style="text-align: left;">Toxicology Screen</td>
-        <td style="text-align: left;"><code>bio_bm_biosample_urine</code></td>
+  <tr>
+    <td style="text-align: left;"><a href="biospec/blood" target="_blank">Blood</a></td>
+    <td style="text-align: left;">Maternal</td>
+    <td style="text-align: left;">Metals, nutrition, toxins, proteins</td>
+    <td style="text-align: left;"><code>bio_bm_biosample_blood</code></td>
+  </tr>
+  <tr>
+    <td style="text-align: left;"><a href="biospec/nails" target="_blank">Nails</a></td>
+    <td style="text-align: left;">Maternal</td>
+    <td style="text-align: left;">Drug, Environmental Exposure</td>
+    <td style="text-align: left;"><code>bio_bm_biosample_nails_results</code><br><code>bio_bm_biosample_nails_type</code></td>
+  </tr>
+  <tr>
+      <td rowspan="2" style="text-align: left;"><a href="biospec/urine" target="_blank">Urine</a></td>
+      <td style="text-align: left;">Maternal</td>
+      <td style="text-align: left;">Drug Panel, Toxins</td>
+      <td style="text-align: left;"><code>bio_bm_biosample_urine</code></td>
+  </tr>
+  <tr>
+      <td style="text-align: left;">Child</td>
+      <td style="text-align: left;">Metabolites & environmental exposures/toxins</td>
+      <td style="text-align: left;"><code>bio_ch_biosample_urine</code></td>
     </tr>
   </tbody>
   </table>
@@ -258,7 +269,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 50%; text-align: center;">Name of Instrument</th>
+      <th style="width: 50%; text-align: center;">Instrument</th>
       <th style="width: 10%; text-align: center;">Acronym</th>
       <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
@@ -307,7 +318,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Name of Instrument</th>
+      <th style="width: 30%; text-align: center;">Instrument</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
       <th style="width: 20%; text-align: center;"><span class="tooltip tooltip-left">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
@@ -351,7 +362,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 40%; text-align: center;">Name of Instrument</th>
+      <th style="width: 40%; text-align: center;">Instrument</th>
       <th style="width: 20%; text-align: center;">Acronym</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
@@ -397,7 +408,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Name of Instrument</th>
+      <th style="width: 30%; text-align: center;">Instrument</th>
       <th style="width: 20%; text-align: center;">Acronym</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
@@ -459,7 +470,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Name of Instrument</th>
+      <th style="width: 30%; text-align: center;">Instrument</th>
       <th style="width: 10%; text-align: center;">Acronym</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
@@ -497,7 +508,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Name of Instrument</th>
+      <th style="width: 30%; text-align: center;">Instrument</th>
       <th style="width: 10%; text-align: center;">Acronym</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
