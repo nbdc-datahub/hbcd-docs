@@ -1,6 +1,6 @@
-# USDTL Blood Toxicology Results
+# Blood Toxicology Results
 
-**Full Name**: USDTL Blood Toxicology results        
+**Full Name**: Maternal Blood- Whole Blood           
 **Short/Alternative Names**: Blood            
 **Table Names**: `bio_bm_biosample_blood`         
 **Construct**: Toxicology screen for substances & environmental exposures (metals, nutrition, toxins, proteins) conducted on blood samples
