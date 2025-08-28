@@ -51,7 +51,6 @@ For the USDTL assay, fingernail and toenail specimens are sorted by weight, and 
 
 Based on the predefined threshold outlined in [Table 1](#nails-table1), a confirmatory test result for any substance analyte is determined to be positive, negative, or invalid (*QNS* i.e. *quantity not sufficient*). Substance analytes (e.g. **Amphetamine (`c_amp_n`)**) are grouped into different classes by analyte screening tests and confirmatory tests (**[Table 2](#nails-table2)**). 
 
-
 <div id="nails-table1" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
@@ -535,26 +534,26 @@ Based on the predefined threshold outlined in [Table 1](#nails-table1), a confir
 </tbody>
 </table> 
 </div>
-</p>  
 
-#### Final results for each substance follows these rules:
-
-- If the confirmatory test for any substance analyte (e.g. Amphetamine (`c_amp_n`)) is positive based on predefined thresholds (**[Table 1](#nails-table1)**), the class-level (`c_any_stim_n`) and sample-level (`c_any_specimen_n`) are also positive (value =1).
-- Otherwise, if the substance analyte confirmatory tests are negative, then class-level are negative (value =0). If all classes are negative (value = 0), then sample-level (`c_any_specimen_n`) are negative (value = 0).
-- Finally, if any substance analyte confirmatory tests are invalid (value = 3) then that class-level, and sample-level values are also invalid (value = 3).
-
-The scoring for each test type is summarized below:
-
-<div id="nails-table3" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-table"></i></span>
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
-  <span class="text">Table 3. Screening Result Scoring</span>
-  <a class="anchor-link" href="#nails-table3" title="Copy link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
+  <span class="arrow">▸</span>
 </div>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+<div class="table-collapsible-content">
+<p><b>Final results for each substance follows these rules</b>:</p>
+<ul>
+<li>If the confirmatory test for any substance analyte (e.g. Amphetamine (<code>c_amp_n</code>)) is positive based on predefined thresholds (<strong><a href="#nails-table1">Table 1</a></strong>), the class-level (<code>c_any_stim_n</code>) and sample-level (<code>c_any_specimen_n</code>) are also positive (value =1).</li>
+<li>Otherwise, if the substance analyte confirmatory tests are negative, then class-level are negative (value =0). If all classes are negative (value = 0), then sample-level (<code>c_any_specimen_n</code>) are negative (value = 0).</li>
+<li>Finally, if any substance analyte confirmatory tests are invalid (value = 3) then that class-level, and sample-level values are also invalid (value = 3)</li>
+</ul>
+<p><b>Table 3. Screening Result Scoring</b></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
     <thead>
       <tr>
         <th style="width: 10%; text-align: center;">Level</th>
@@ -568,13 +567,13 @@ The scoring for each test type is summarized below:
 <td>Specimen</td>
 <td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte)</td>
 <td><code>c_any_specimen_n</code></td>
-<td>1: positive<br />0: negative<br />3: invalid</td>
+<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
 </tr>
 <tr>
 <td>Class</td>
 <td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte in class)</td>
 <td><code>c_any_stim_n</code></td>
-<td>1: positive<br />0: negative<br />3: invalid</td>
+<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
 </tr>
 <tr>
 <td colspan="1" rowspan="3">
@@ -582,7 +581,7 @@ The scoring for each test type is summarized below:
 </td>
 <td>Screening results</td>
 <td><code>s_amp_n</code></td>
-<td>1: positive<br />0: negative<br />3: invalid</td>
+<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
 </tr>
 <tr>
 <td>Confirmatory results</td>
@@ -592,12 +591,14 @@ The scoring for each test type is summarized below:
 <tr>
 <td>Confirmatory results - categorical</td>
 <td><span class="tooltip"><code>c_amp_n_cat</code><span class="tooltiptext" style="font-size: 0.9em;">Categorical confirmatory test variable for alcohol follows a different convention and is ‘c_ethanol_n’</span></span></td>
-<td>1: positive<br />0: negative<br />3: cancelled<br />4: screen negative</td>
+<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid; <code>4</code>=screen negative</td>
 </tr>
 </tbody>
 </table>
+</div>
 
-### References
+## References
+
 <div class="references">
     <p>Bandoli, G., Anunziata, F., Bogdan, R., Zilverstand, A., Chaiyachati, B. H., Gurka, K. K., Sullivan, E., Croff, J., & Bakhireva, L. N. (2024). Assessment of substance exposures in nail clipping samples: A systematic review. <i>Drug and Alcohol Dependence</i>, 254, 111038. <a href="https://doi.org/10.1016/j.drugalcdep.2023.111038" target="_blank">https://doi.org/10.1016/j.drugalcdep.2023.111038</a></p>
     <p>Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <a href="https://doi.org/10.1016/j.dcn.2024.101451">https://doi.org/10.1016/j.dcn.2024.101451</a></p>

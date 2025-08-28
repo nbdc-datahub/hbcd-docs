@@ -35,7 +35,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
   Expand All Sections ↕️
 </button>
 
-### Demographics & Visit Information<span class="hint">(Click sections to expand)</span>
+### Demographics & Visit Information <span class="hint">(Click sections to expand)</span>
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
@@ -74,7 +74,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </table>
 </div>
 
-### Behavior, Biology, & Environment<span class="hint">(Click sections to expand)</span>
+### Behavior, Biology, & Environment <span class="hint">(Click sections to expand)</span>
 
 <div id="bcgi" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-people-arrows"></i></span>
@@ -499,7 +499,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </table>
   </div>
 
-### Brain Activity - MRI & EEG<span class="hint">(Click sections to expand)</span>
+### Brain Activity - MRI & EEG <span class="hint">(Click sections to expand)</span>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-magnet"></i></span>
