@@ -85,10 +85,10 @@ nav:
             - 🚧 IBQ-R/ECBQ: instruments/bcgi/ibqr.md
             - 🚧 MAPS-TL: instruments/bcgi/maps-tl.md
         - Biospecimens & Omics:
-            - 🚧 Blood: instruments/biospec/blood.md
+            - 🚧 Blood Plasma: instruments/biospec/blood-plasma.md
             - Nails: instruments/biospec/nails.md
             - 🚧 Saliva: instruments/biospec/saliva.md
-            - 🚧 Urine: instruments/biospec/urine.md
+            - Urine: instruments/biospec/urine.md
         - Neurocognition & Language:
             - 🚧 Bayley-4: instruments/neurocog/bayley-4.md
             - MLDS: instruments/neurocog/mlds.md

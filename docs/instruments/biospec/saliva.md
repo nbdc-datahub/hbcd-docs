@@ -19,12 +19,12 @@
 <tr>
   <td rowspan="2">Saliva Oragene/Isohelix</td>
   <td><strong>Maternal</strong></td>
-  <td>GWAS, EWAS, transcriptome</td>
+  <td>GWAS, EWAS, Transcriptome</td>
   <td><code>bio_bm_biosample_saliva</code></td>
 </tr>
 <tr>
   <td><strong>Child</strong></td>
-  <td>GWAS, EWAS, transcriptome</td>
+  <td>GWAS, EWAS, Transcriptome</td>
   <td><code>bio_ch_biosample_saliva</code></td>
 </tr>
 </tbody>

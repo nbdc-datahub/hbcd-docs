@@ -27,6 +27,10 @@ For all toxicology screens, continuous variables should be interpreted with caut
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
+<tr>
+    <td><b>Child Specific</b></td>
+    <td>No</td>
+</tr>
 <tr><td><b>Respondent</b></td>
 <td>Pregnant person</td></tr>
 <tr><td><b>Administration</b></td>

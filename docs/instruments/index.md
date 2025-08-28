@@ -223,16 +223,16 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <tr>
       <th style="width: 10%; text-align: center;">Instrument</th>
       <th style="text-align: center;">Version</th>
-      <th style="width: 40%; text-align: center;">Construct</th>
-      <th style="width: 20%; text-align: center;">Table Name</th>
+      <th style="width: 30%; text-align: center;">Construct</th>
+      <th style="width: 30%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td style="text-align: left;"><a href="biospec/blood" target="_blank">Blood</a></td>
+    <tr>
+    <td style="text-align: left;"><a href="biospec/blood-plasma" target="_blank">Blood- Plasma</a></td>
     <td style="text-align: left;">Maternal</td>
-    <td style="text-align: left;">Metals, nutrition, toxins, proteins</td>
-    <td style="text-align: left;"><code>bio_bm_biosample_blood</code></td>
+    <td style="text-align: left;">Metals, Nutrition, Toxins, Proteins</td>
+    <td style="text-align: left;"><code>bio_bm_SAMPLED_epplcr</code></td>
   </tr>
   <tr>
     <td style="text-align: left;"><a href="biospec/nails" target="_blank">Nails</a></td>
@@ -243,12 +243,12 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <tr>
     <td rowspan="2" style="text-align: left;"><a href="biospec/saliva" target="_blank">Saliva</a></td>
     <td style="text-align: left;">Maternal</td>
-    <td style="text-align: left;">GWAS, EWAS, transcriptome</td>
+    <td style="text-align: left;">GWAS, EWAS, Transcriptome</td>
     <td style="text-align: left;"><code>bio_bm_biosample_saliva</code></td>
   </tr>
   <tr>
     <td style="text-align: left;">Child</td>
-    <td style="text-align: left;">GWAS, EWAS, transcriptome</td>
+    <td style="text-align: left;">GWAS, EWAS, Transcriptome</td>
     <td style="text-align: left;"><code>bio_ch_biosample_saliva</code></td>
   </tr>
   <tr>
@@ -257,11 +257,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td style="text-align: left;">Drug Panel, Toxins</td>
       <td style="text-align: left;"><code>bio_bm_biosample_urine</code></td>
   </tr>
-  <tr>
-      <td style="text-align: left;">Child</td>
-      <td style="text-align: left;">Metabolites & environmental exposures/toxins</td>
-      <td style="text-align: left;"><code>bio_ch_biosample_urine</code></td>
-    </tr>
   </tbody>
   </table>
 </div>
