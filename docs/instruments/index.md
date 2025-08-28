@@ -630,61 +630,55 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see <a href="eeg">Overview & Quality Control</a></strong></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
+    <!-- First header row -->
     <tr>
-      <th style="width: 30%; text-align: center;">Task</th>
-      <th style="width: 20%; text-align: center;"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
-        <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
-        <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
-      <th style="width: 70%; text-align: center;">Table Name</th>
+      <th style="width: 30%; text-align: center;" rowspan="2">Task</th>
+      <th style="width: 40%; text-align: center;" colspan="2">
+        <span class="tooltip tooltip-right">
+          File-Based Data
+          <span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span>
+        </span>
+      </th>
+      <th style="width: 40%; text-align: center;" rowspan="2">Table Names</th>
+    </tr>
+    <!-- Second header row -->
+    <tr>
+      <th style="width: 10%; text-align: center;">
+        <i class="fas fa-hammer"></i> Raw BIDS
+      </th>
+      <th style="width: 10%; text-align: center;">
+        <i class="fas fa-cog"></i> Derivatives
+      </th>
     </tr>
   </thead>
   <tbody>
-      <tr>
-        <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="eeg/mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></td>
-        <td rowspan="2" style="word-wrap: break-word; white-space: normal;">
-          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a><br>
-          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a>
-        </td>
-        <td><code>eeg_made_task-MMN_acq-eeg_preprocessingReport</code></td>
-      </tr>
-      <tr>
-        <td><code>eeg_qc_task-MMN</code></td>
-      </tr>
-      <tr>
-        <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="eeg/faces" target="_blank">Faces (Face)</a></td>
-          <td rowspan="2" style="word-wrap: break-word; white-space: normal;">
-          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a><br>
-          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a>
-        </td>
-        <td><code>eeg_made_task-FACE_acq-eeg_preprocessingReport</code></td>
-      </tr>
-      <tr>
-        <td><code>eeg_qc_task-FACE</code></td>
-      </tr>
-      <tr>
-        <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="eeg/videors" target="_blank">Video Resting State (RS)</a></td>
-          <td rowspan="2" style="word-wrap: break-word; white-space: normal;">
-          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a><br>
-          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a>
-        </td>
-        <td><code>eeg_made_task-RS_acq-eeg_preprocessingReport</code></td>
-      </tr>
-      <tr>
-        <td><code>eeg_qc_task-RS</code></td>
-      </tr>
-      <tr>
-        <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="eeg/vep" target="_blank">Visual Evoked Potential (VEP)</a></td>
-          <td rowspan="2" style="word-wrap: break-word; white-space: normal;">
-          <i class="fas fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a><br>
-          <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a>
-        </td>
-        <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code></td>
-      </tr>
-      <tr>
-        <td><code>eeg_qc_task-VEP</code></td>
-      </tr>
-    </tbody>
-  </table>
+    <tr>
+      <td><a href="eeg/mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
+      <td><code>eeg_made_task-MMN_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-MMN</code></td>
+    </tr>
+    <tr>
+      <td><a href="eeg/faces" target="_blank">Faces (Face)</a></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
+      <td><code>eeg_made_task-FACE_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-FACE</code></td>
+    </tr>
+    <tr>
+      <td><a href="eeg/videors" target="_blank">Video Resting State (RS)</a></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
+      <td><code>eeg_made_task-RS_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-RS</code></td>
+    </tr>
+    <tr>
+      <td><a href="eeg/vep" target="_blank">Visual Evoked Potential (VEP)</a></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
+      <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code><br>
+          <code>eeg_qc_task-VEP</code></td>
+    </tr>
+  </tbody>
+</table>
   </div>
 
 <br>
