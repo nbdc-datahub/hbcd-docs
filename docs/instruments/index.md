@@ -269,36 +269,36 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 50%; text-align: center;">Instrument</th>
-      <th style="width: 10%; text-align: center;">Acronym</th>
+      <th style="width: 10%; text-align: center;">Instrument</th>
+      <th style="width: 10%; text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
       <th style="width: 40%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="neurocog/bayley-4" target="_blank">Bayley Scales of Infant and Toddler Development, Fourth Edition</a></td>
-      <td>BSID-4, Bayley</td>
-      <td style="word-wrap: break-word; white-space: normal;">Child Development (Cognitive, Language, and Motor)</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>nc_ch_bayley</code></td>
+      <td><a href="neurocog/bayley-4" target="_blank">Bayley-4</a></td>
+      <td></td>
+      <td>Child Development (Cognitive, Language, and Motor)</td>
+      <td><code>nc_ch_bayley</code></td>
     </tr>
    <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="neurocog/mlds" target="_blank">Multilingual Language Development Screener</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">MLDS</td>
-      <td style="word-wrap: break-word; white-space: normal;">Multilingual exposure</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>ncl_ch_mlds</code></td>
+      <td><a href="neurocog/mlds" target="_blank">MLDS</a></td>
+      <td></td>
+      <td>Multilingual exposure</td>
+      <td><code>ncl_ch_mlds</code></td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="neurocog/spm2" target="_blank">Sensory Processing Measure – Infant/Toddler</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">SPM-2</td>
-      <td style="word-wrap: break-word; white-space: normal;">Sensory processing</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>ncl_cg_spm2__inf</code></td>
+      <td><a href="neurocog/spm2" target="_blank">SPM-2</a></td>
+      <td>Infant/Toddler</td>
+      <td>Sensory processing</td>
+      <td><code>ncl_cg_spm2__inf</code></td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="neurocog/vineland" target="_blank">Vineland Scales of Adaptive Behavior</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">Vineland</td>
-      <td style="word-wrap: break-word; white-space: normal;">Adaptive Behavior</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>nc_cg_vabs</code></td>
+      <td><a href="neurocog/vineland" target="_blank">Vineland</a></td>
+      <td></td>
+      <td>Adaptive Behavior</td>
+      <td><code>nc_cg_vabs</code></td>
     </tr>
   </tbody>
   </table>
@@ -359,33 +359,29 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
     <tr>
-      <th style="width: 40%; text-align: center;">Instrument</th>
-      <th style="width: 20%; text-align: center;">Acronym</th>
+      <th style="width: 35%; text-align: center;">Instrument</th>
       <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 30%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">PHENX BF</td>
-      <td style="word-wrap: break-word; white-space: normal;">Nutrition</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>ph_cg_phx__bfh</code></td>
+      <td><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
+      <td>Nutrition</td>
+      <td><code>ph_cg_phx__bfh</code></td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">USDA short form</td>
-      <td style="word-wrap: break-word; white-space: normal;">Food insecurity</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>sed_cg_foodins</code></td>
+      <td><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
+      <td>Food insecurity</td>
+      <td><code>sed_cg_foodins</code></td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">Growth</td>
-      <td style="word-wrap: break-word; white-space: normal;">Growth</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>ph_ch_anthro</code></td>
+      <td><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
+      <td>Growth</td>
+      <td><code>ph_ch_anthro</code></td>
   </tr> 
   </tbody>
   </table>
@@ -409,59 +405,50 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <thead>
     <tr>
       <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="width: 20%; text-align: center;">Acronym</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/healthhx" target="_blank">Pregnancy Health</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">Healthhx</td>
-      <td style="word-wrap: break-word; white-space: normal;">Pre-pregnancy and pregnancy health</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__healthhx</code></td>
+      <td><a href="pregexp/preghealth/healthhx" target="_blank">Health V1- Health History</a></td>
+      <td>Pre-pregnancy and pregnancy health</td>
+      <td><code>pex_bm_health_preg__healthhx</code></td>
     </tr>          
     <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/vacc" target="_blank">Pregnancy Health-Exposures and Vaccines</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Vacc</td>
-    <td style="word-wrap: break-word; white-space: normal;">Vaccines in pregnancy</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__exp__vacc</code></td>
+    <td><a href="pregexp/preghealth/vacc" target="_blank">Health V1- Exposures & Vaccines</a></td>
+    <td>Vaccines in pregnancy</td>
+    <td><code>pex_bm_health_preg__exp__vacc</code></td>
   </tr>    
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/chronconditions" target="_blank">Pregnancy Health-Chronic Conditions</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Exp I chroncond</td>
-    <td style="word-wrap: break-word; white-space: normal;">Chronic conditions and sexually transmitted infections in pregnancy</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__chroncond</code></td>
+    <td><a href="pregexp/preghealth/chronconditions" target="_blank">Health V1- Chronic Conditions</a></td>
+    <td>Chronic conditions and STIs in pregnancy</td>
+    <td><code>pex_bm_health_preg__chroncond</code></td>
   </tr>  
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/illness" target="_blank">Pregnancy Health-Illness</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Exp I illness</td>
-    <td style="word-wrap: break-word; white-space: normal;">Illness in pregnancy</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__illness</code></td>
+    <td><a href="pregexp/preghealth/illness" target="_blank">Health V1- Illness</a></td>
+    <td>Illness in pregnancy</td>
+    <td><code>pex_bm_health_preg__illness</code></td>
   </tr>     
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/er-hosp" target="_blank">Pregnancy Health-ER/Hospitalizations</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Exp I ERhosp</td>
-    <td style="word-wrap: break-word; white-space: normal;">ER visit or hospitalization in pregnancy</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__erhosp</code></td>
+    <td><a href="pregexp/preghealth/er-hosp" target="_blank">Health V1- ER & Hospital Admissions</a></td>
+    <td>ER visit or hospitalization in pregnancy</td>
+    <td><code>pex_bm_health_preg__erhosp</code></td>
   </tr>  
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/medications" target="_blank">Pregnancy Health-Medications</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Exp I Meds</td>
-    <td style="word-wrap: break-word; white-space: normal;">Prescription and over the counter medications in pregnancy</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__meds</code></td>
+    <td><a href="pregexp/preghealth/medications" target="_blank">Health V1- Medications</a></td>
+    <td>Prescription and OTC medications in pregnancy</td>
+    <td><code>pex_bm_health_preg__meds</code></td>
   </tr>  
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/end-preg" target="_blank">Pregnancy Health-V2 (End of Pregnancy)</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Healthv2 Preg</td>
-    <td style="word-wrap: break-word; white-space: normal;">Updates information between enrollment and delivery</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_preg</code></td>
+    <td><a href="pregexp/preghealth/end-preg" target="_blank">Health V2- Pregnancy</a></td>
+    <td>Updates between enrollment and delivery</td>
+    <td><code>pex_bm_healthv2_preg</code></td>
   </tr>     
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/preghealth/infanthealth" target="_blank">Infant health- V2</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Healthv2 Inf</td>
-    <td style="word-wrap: break-word; white-space: normal;">Delivery and birth outcomes</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_inf</code></td>
+    <td><a href="pregexp/preghealth/infanthealth" target="_blank">Health V2- Infancy</a></td>
+    <td>Delivery and birth outcomes</td>
+    <td><code>pex_bm_healthv2_inf</code></td>
   </tr>    
 </tbody>
 </table>
@@ -471,35 +458,30 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <thead>
     <tr>
       <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="width: 10%; text-align: center;">Acronym</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/fam-mh" target="_blank">Personal and Family Psychiatric History</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">FAM MH</td>
-      <td style="word-wrap: break-word; white-space: normal;">Personal and family mental health</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_psych</code></td>
+      <td><a href="pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
+      <td>Personal and family mental health</td>
+      <td><code>pex_bm_psych</code></td>
     </tr>            
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/apa12" target="_blank">DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">APA 1/2</td>
-      <td style="word-wrap: break-word; white-space: normal;">Mental Health</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_apa</code></td>
+      <td><a href="pregexp/mh/apa12" target="_blank">APA 1/2</a></td>
+      <td>Mental Health</td>
+      <td><code>pex_bm_apa</code></td>
     </tr>  
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/ptsd" target="_blank">DSM5 Severity Acute Stress or PTSD</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">NSESSS—PTSD/Acute Stress Disorder</td>
-      <td style="word-wrap: break-word; white-space: normal;">PTSD/acute stress disorder symptom severity</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_str__ptsd</code></td>
+      <td><a href="pregexp/mh/ptsd" target="_blank">DSM5 Severity Acute Stress or PTSD</a></td>
+      <td>PTSD/acute stress disorder symptom severity</td>
+      <td><code>pex_bm_str__ptsd</code></td>
     </tr>      
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/mh/epds" target="_blank">Edinburgh Postnatal Depression Scale</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">EPDS</td>
-      <td style="word-wrap: break-word; white-space: normal;">Postnatal depression</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_epds</code></td>
+      <td><a href="pregexp/mh/epds" target="_blank">EPDS</a></td>
+      <td>Postnatal depression</td>
+      <td><code>pex_bm_epds</code></td>
     </tr>      
   </tbody>
   </table>
@@ -508,36 +490,34 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="width: 10%; text-align: center;">Acronym</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
+      <th style="width: 20%; text-align: center;">Instrument</th>
+      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
+      <th style="width: 10%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/su/assist" target="_blank">Alcohol, Smoking and Substance Involvement Screening Test V1.0</a></td>
-    <td>ASSIST V1</td>
-    <td style="word-wrap: break-word; white-space: normal;">Substance use and problematic use before and during pregnancy</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_assistv1</code></td>
+    <td rowspan="3"><a href="pregexp/su/assist" target="_blank">ASSIST</a></td>
+    <td>V1.0</td>
+    <td>Substance use and problematic use before and during pregnancy</td>
+    <td><code>pex_bm_assistv1</code></td>
   </tr>    
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/su/assist" target="_blank">Alcohol, Smoking and Substance Involvement Screening Test V2.0</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">ASSIST V2</td>
-    <td style="word-wrap: break-word; white-space: normal;">Substance use during end of pregnancy ( between V1 and delivery) and postnatal (weeks 0-4, between delivery and V2)</td>
-    <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_assistv2</code></td>
+    <td>V2.0</td>
+    <td>Substance use during end of pregnancy and postnatal</td>
+    <td><code>pex_bm_assistv2</code></td>
   </tr>    
   <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/su/assist" target="_blank">Alcohol, Smoking and Substance Involvement Screening Test V3.0</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">ASSIST V3</td>
-      <td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_assistv3</code></td>
+    <td>V3.0</td>
+    <td>Substance use after pregnancy</td>
+    <td><code>pex_bm_assistv3</code></td>
   </tr>   
   <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="pregexp/su/tlfb" target="_blank">Timeline Follow Back</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">TLFB</td>
-      <td style="word-wrap: break-word; white-space: normal;">Substance use before and during pregnancy</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>pex_ch_tlfb</code></td>
+    <td><a href="pregexp/su/tlfb" target="_blank">TLFB</a></td>
+    <td></td>
+    <td>Substance use before and during pregnancy</td>
+    <td><code>pex_ch_tlfb</code></td>
   </tr>   
   </tbody>
   </table>
