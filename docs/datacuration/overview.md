@@ -1,5 +1,39 @@
 
 # Data Structure Overview
+
+<p>
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Which file-based data are also available as tabulated data? <span class="hint">(Click to expand)</span></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p><strong>When possible</strong>, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
+<p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are included. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
+<ul>
+<li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
+<li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
+</ul>
+<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../derivatives/#xcp-d-xcp_d" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<tr>
+<td><b>File-based derivatives</b></td>
+<td><code>sub-&lt;label&gt;_ses-&lt;label&gt;_task-rest_dir-PA_run-#<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
+</tr>
+<tbody>
+<tr>
+<td><b>Tabulated file</b></td>
+<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
+</tbody>
+</table>
+</div>
+</p>
+
 HBCD is organized following [Brain Imaging Data Structure](https://bids-specification.readthedocs.io/en/stable/) (BIDS) standards. At a high level, HBCD BIDS data has the folder structure displayed below, with all data nested under `hbcd/`. The three main folders of interest are as follows: see linked sections for further details on the contents and folder structure of each.
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
@@ -69,27 +103,4 @@ hbcd/
     |__ symri/
     |__ xcp_d/
 </pre>
-
-
-### When To Use Tabulated vs. File-Based Data When Both Are Available
-
-For MRS, MRI, EEG, and wearable sensor data, tabulated data is derived from file-based outputs when possible to provide the data in a more standardized and familiar format for users. The data itself, though structured differently, is the same between the file-based and derived tabulated files. Users can therefore choose to use either one depending on which structure best suits their needs.
-
-However, not all processed data is available in tabulated form. Tabulated datasets contain one row per participant/session, so only derivative outputs that can be summarized into a single row and column structure are included. As such, **if no tabulated file version exists for the information/derivatives you need, you must use the file-based data instead.**
-
-Tabulated files are named to closely match their source derivative files. For example, the following subject/session-level <a href="../derivatives/#xcp-d-xcp_d" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
-<tr>
-<td><b>File-based derivatives</b></td>
-<td><code>sub-&lt;label&gt;_ses-&lt;label&gt;_task-rest_dir-PA_run-#<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
-</tr>
-<tbody>
-<tr>
-<td><b>Tabulated file</b></td>
-<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
-</tbody>
-</table>
-
 <br>
-
