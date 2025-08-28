@@ -86,21 +86,25 @@ Based on the predefined threshold outlined in [Table 1](#table1), the PEth test 
 </table>
 </div>
 
-#### Final PEth assay results follow these rules:
 
-- If the PEth test is positive (`c_peth_b_cat`), the sample level (`c_any_specimen_b`) is positive (value = 1). 
-- If the PEth confirmatory tests is negative (value = 0), then sample-level (`c_any_specimen_b`) is negative (0). 
-- If the PEth confirmatory tests is cancelled (value = 3) then sample-level (`c_any_specimen_b`) is cancelled (value = 3).
-
-<div id="table2" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-table"></i></span>
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
-  <span class="text">Table 2. Screening Result Scoring</span>
-  <a class="anchor-link" href="#table2" title="Copy link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
+  <span class="arrow">▸</span>
 </div>
+<div class="table-collapsible-content">
+<p><b>Final PEth assay results follow these rules</b>:</p>
+<ul>
+<li>If the PEth test is positive (<code>c_peth_b_cat</code>), the sample level (<code>c_any_specimen_b</code>) is positive (value = 1). </li>
+<li>If the PEth confirmatory tests is negative (value = 0), then sample-level (<code>c_any_specimen_b</code>) is negative (0). </li>
+<li>If the PEth confirmatory tests is cancelled (value = 3) then sample-level (<code>c_any_specimen_b</code>) is cancelled (value = 3).</li>
+</ul>
+<p><b>Table 2. Screening Result Scoring</b></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
     <thead>
       <tr>
@@ -115,13 +119,13 @@ Based on the predefined threshold outlined in [Table 1](#table1), the PEth test 
 <td>Specimen</td>
 <td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte)</td>
 <td><code>c_any_specimen_b</code></td>
-<td>1: positive<br />0: negative<br />3: Cancelled</td>
+<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=cancelled</td>
 </tr>
 <tr>
 <td>Class</td>
 <td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte in class - only one class)</td>
 <td><code>c_ethanol_b</code></td>
-<td>1: positive<br />0: negative<br />3: Cancelled</td>
+<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=cancelled</td>
 </tr>
 <tr>
 <td colspan="1" rowspan="3">
@@ -136,8 +140,9 @@ Based on the predefined threshold outlined in [Table 1](#table1), the PEth test 
 <tr>
 <td>Confirmatory results - categorical</td>
 <td><code>c_peth_b_cat</code></td>
-<td>1: positive<br />0: negative<br />3: Cancelled</td>
+<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=cancelled</td>
 </tr>
 </tbody>
 </table>
+</div>
 <br>
