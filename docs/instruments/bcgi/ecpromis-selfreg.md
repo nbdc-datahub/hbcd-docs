@@ -1,4 +1,4 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>README NOT YET SUBMITTED</i> 🚧 </p>
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
 # ecPROMIS - Self-regulation-Flexibility Scale
 
@@ -16,19 +16,19 @@
 <tr><td><b>Respondent</b></td>
 <td>Primary Caregiver on Child</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td></td></tr>
+<td>V05, V07, V09</td></tr>
 <tr><td><b>Completion Time</b></td>
-<td></td></tr>
+<td>1-2 min</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;"></td></tr>
+<td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within an expected range of 3-9 months. Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
 </tbody>
 </table>
 
 ## Instrument Details
 
-ADD CONTENT
+The Early Childhood Patient-Reported Outcome Measurement Information System (ecPROMIS) offers clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The Self Regulation - Flexibility Scale assesses young children’s ability to adapt in response to environmental demands, changes, and expectations. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -55,7 +55,13 @@ ADD CONTENT
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p></p>
+<p>Caregivers respond to five items on a 1–5 scale (1 = Never, 5 = Always; “Decline to Answer” is allowed, but “Don’t Know” is not recommended). If all items are answered, the sum of the numerical responses is used. If at least three items are answered but some are missing, a prorated sum is calculated:
+<p style="font-size: 0.9em;">
+  \[
+  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{5}
+  \]
+</p>
+If fewer than three items are answered, the sum score is set to missing.</p>
 </div>
 
 ## References
