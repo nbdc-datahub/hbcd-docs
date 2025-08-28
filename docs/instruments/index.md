@@ -16,7 +16,7 @@ HBCD Study data includes both <span class="tooltip">tabulated<span class="toolti
 - **Tabulated data** are in table format and include behavior, demographics, visit data, toxicology results, and tabulated data derived from brain imaging and other file-based data ([see details](../datacuration/phenotypes.md)). 
 - **File-based data** include both <span><i class="fas fa-hammer"></i> <b>Raw BIDS</b></span> ([details](../datacuration/rawbids.md)) and processed <span><i class="fas fa-cog"></i> <b>Derivatives</b></span> ([details](../datacuration/derivatives.md)) for MRI/MRS, EEG, and motion/accelerometry (in varied modality-specific formats).
 
-Expand each section below to see a list of study instruments associated with each domain included in Release 1.0, including the table names for **tabulated data** and links to information for associated **file-based data** where relevant (also see: [When To Use File-Based vs. Tabulated Data When Both Are Available](../datacuration/overview.md#when-to-use-tabulated-vs-file-based-data-when-both-are-available)).
+Expand each section below to see a list of study instruments associated with each domain included in Release 1.0, including the table names for **tabulated data** and links to information for associated **file-based data** where relevant (also see: [When To Use File-Based vs. Tabulated Data When Both Are Available](../datacuration/overview.md#warning)).
 
 ## Instruments by Domain
 
