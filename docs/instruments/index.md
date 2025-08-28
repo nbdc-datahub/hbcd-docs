@@ -295,10 +295,15 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td><code>ncl_ch_mlds</code></td>
     </tr>
     <tr>
-      <td><a href="neurocog/spm2" target="_blank">SPM-2</a></td>
-      <td>Infant/Toddler</td>
-      <td>Sensory processing</td>
+      <td rowspan="2"><a href="neurocog/spm2" target="_blank">SPM-2</a></td>
+      <td>Infant</td>
+      <td>Sensory Processing/Integration</td>
       <td><code>ncl_cg_spm2__inf</code></td>
+    </tr>
+    <tr>
+      <td>Toddler</td>
+      <td>Sensory Processing/Integration</td>
+      <td><code>ncl_cg_spm2__tod</code></td>
     </tr>
     <tr>
       <td><a href="neurocog/vineland" target="_blank">Vineland</a></td>

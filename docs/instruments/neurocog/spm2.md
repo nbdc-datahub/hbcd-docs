@@ -1,9 +1,35 @@
 # SPM-2
 
-**Full Name**: Sensory Processing Measure – Infant/Toddler	            
-**Acronym**: SPM-2       
-**Table Name**: `ncl_cg_spm2__inf`       
-**Construct**: Sensory processing
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
+</div>
+<p></p>
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <td style="width: 30%;"><strong>Instrument</strong></td>
+  <td style="width: 20%"><strong>Version</strong></td>
+  <td style="width: 20%"><strong>Construct</strong></td>
+  <td style="width: 20%"><strong>Table Name</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Sensory Processing Measure-2</td>
+  <td><strong>Infant</strong></td>
+  <td>Sensory Processing/Integration</td>
+  <td><code>ncl_cg_spm2__inf</code></td>
+</tr>
+<tr>
+  <td><strong>Toddler</strong></td>
+  <td>Sensory Processing/Integration</td>
+  <td><code>ncl_cg_spm2__tod</code></td>
+</tr>
+</tbody>
+</table>
+
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -26,11 +52,11 @@
 <tr><td><b>Child Specific</b></td>
 <td>Yes</td></tr>
 <tr><td><b>Respondent</b></td>
-<td>Primary Caregiver</td></tr>
+<td>Primary Caregiver on Child</td></tr>
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V03 (SPM Infant), V05 (SPM Toddler)</td></tr>
+<td>V03 <strong>[Infant]</strong>, V05 <strong>[Toddler]</strong></td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>12 min</td></tr>
 <tr><td><b>Quality Control</b></td>
@@ -41,7 +67,7 @@
 
 ## Instrument Details
 
-The Sensory Processing Measure – Infant/Toddler (SPM-2) is designed to assess whether a child’s nervous system integrates visual, auditory, tactile, olfactory, gustatory, vestibular, and proprioceptive sensory information from the body and environment efficiently and effectively. Effective sensory processing contributes to the development of emotion regulation, motor skills, and social relatedness. Difficulties in the integration of sensory information can hinder the development of these skills and higher-level functions such as learning to plan and organize behaviors. The sensory systems serve as foundation for increasingly more complex behaviors and are critical to development.
+The **Sensory Processing Measure – Infant/Toddler (SPM-2)** is designed to assess whether a child’s nervous system integrates visual, auditory, tactile, olfactory, gustatory, vestibular, and proprioceptive sensory information from the body and environment efficiently and effectively. Effective sensory processing contributes to the development of emotion regulation, motor skills, and social relatedness. Difficulties in the integration of sensory information can hinder the development of these skills and higher-level functions such as learning to plan and organize behaviors. The sensory systems serve as foundation for increasingly more complex behaviors and are critical to development.
 
 This questionnaire asks about the ways the child sensory systems contribute to daily functioning. The caregiver selects whether their child’s behavior during the past month never, occasionally, frequently, or always resembles the behavior described. Seven sensory domains are assessed as well as functions related to ideas/planning and social relatedness. The reference sample tables from which the summary scores were derived are available from Western Psychological Services (Parham et al. 2021). These items contain imputed scores based on tables from the publisher. At this time, released data does not specify the exact items that have been imputed.
 
