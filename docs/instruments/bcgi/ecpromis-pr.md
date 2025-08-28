@@ -1,5 +1,4 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>NEW README NOT YET SUBMITTED</i> 🚧 </p>
 
 # ecPROMIS - Peer Relation
 
@@ -19,18 +18,17 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td></td></tr>
+<td>V05, V07, V09</td></tr>
 <tr><td><b>Completion Time</b></td>
-<td></td></tr>
+<td>1-2 min</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;"></td></tr>
+<td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within an expected range of 3-9 months. Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
 </tbody>
 </table>
 
 ## Instrument Details
 
-ADD CONTENT
-
+The Early Childhood Patient-Reported Outcome Measurement Information System (**ecPROMIS**) offers clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Peer Relationships Scale** assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -50,6 +48,26 @@ ADD CONTENT
     <strong>Response options</strong>: 0 [No]; 1 [Yes]; Decline to Answer
   </blockquote>
   The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn't scored), but can be used as a filter variable for analyses. This item was added with the approval of the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure.</p>
+</div>
+
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>Each of the 4 items are responded to using the following scale: 1, Never | 2, Almost Never | 3, Sometimes | 4, Often | 5, Almost Always | Decline to Answer, <code>peer_yn</code> is answered on a yes/no 0:1 scale. If all four items are answered, their sum is calculated. If at least three items are answered but some are missing, a prorated sum is computed: 
+<p style="font-size: 0.9em;">
+  \[
+  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{4}
+  \]
+</p>
+If fewer than two items are answered, the sum score is set to missing.</p>
 </div>
 
 ## References
