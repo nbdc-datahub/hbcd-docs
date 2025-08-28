@@ -387,140 +387,143 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </table>
 </div>
 
-<div id="pregexp" class="table-banner" onclick="toggleCollapse(this)">
+<div id="pex" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-baby"></i></span>
   <span class="text-with-link">
   <span class="text">Pregnancy & Exposure, Including Substance Use</span>
-  <a class="anchor-link" href="#pregexp" title="Copy link">
+  <a class="anchor-link" href="#pex" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<br>
-<p style="margin-bottom: 5px; font-size: 1.2em; text-align: center;">&nbsp; <strong>Pregnancy & Infant Health</strong></p>
-
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-      <td><a href="pregexp/preghealth/healthhx" target="_blank">Health V1- Health History</a></td>
-      <td>Pre-pregnancy and pregnancy health</td>
-      <td><code>pex_bm_health_preg__healthhx</code></td>
-    </tr>          
-    <tr>
-    <td><a href="pregexp/preghealth/vacc" target="_blank">Health V1- Exposures & Vaccines</a></td>
+<thead>
+<tr>
+    <th style="width: 5%; text-align: center;">Instrument</th>
+    <th style="width: 5%; text-align: center;">Version</th>
+    <th style="width: 30%; text-align: center;">Construct</th>
+    <th style="width: 10%; text-align: center;">Table Name</th>
+</tr>
+</thead>
+<tbody>
+<!-- Pregnancy & Infant Health -->
+<tr class="section-health">
+  <td colspan="4" class="subsection-header">
+    <i style="color: #3e3e3e;" class="fa-solid fa-baby"></i> <strong>&nbsp;&nbsp;Pregnancy & Infant Health</strong>
+  </td>
+</tr>
+<tr class="section-health">
+    <td><a href="pregexp/preghealth/healthhx" target="_blank">Health V1-Health History</a></td>
+    <td></td>
+    <td>Pre-pregnancy and pregnancy health</td>
+    <td><code>pex_bm_health_preg__healthhx</code></td>
+</tr>
+<tr class="section-health">
+    <td><a href="pregexp/preghealth/vacc" target="_blank">Health V1-Exposures & Vaccines</a></td>
+    <td></td>
     <td>Vaccines in pregnancy</td>
     <td><code>pex_bm_health_preg__exp__vacc</code></td>
-  </tr>    
-  <tr>
-    <td><a href="pregexp/preghealth/chronconditions" target="_blank">Health V1- Chronic Conditions</a></td>
-    <td>Chronic conditions and STIs in pregnancy</td>
+</tr>
+<tr class="section-health">
+    <td><a href="pregexp/preghealth/chronconditions" target="_blank">Health V1-Chronic Conditions</a></td>
+    <td></td>
+    <td>Chronic conditions/STIs in pregnancy</td>
     <td><code>pex_bm_health_preg__chroncond</code></td>
-  </tr>  
-  <tr>
-    <td><a href="pregexp/preghealth/illness" target="_blank">Health V1- Illness</a></td>
+</tr>
+<tr class="section-health">
+    <td><a href="pregexp/preghealth/illness" target="_blank">Health V1-Illness</a></td>
+    <td></td>
     <td>Illness in pregnancy</td>
     <td><code>pex_bm_health_preg__illness</code></td>
-  </tr>     
-  <tr>
-    <td><a href="pregexp/preghealth/er-hosp" target="_blank">Health V1- ER & Hospital Admissions</a></td>
+</tr>
+<tr class="section-health">
+    <td><a href="pregexp/preghealth/er-hosp" target="_blank">Health V1-ER Admissions</a></td>
+    <td></td>
     <td>ER visit or hospitalization in pregnancy</td>
     <td><code>pex_bm_health_preg__erhosp</code></td>
-  </tr>  
-  <tr>
-    <td><a href="pregexp/preghealth/medications" target="_blank">Health V1- Medications</a></td>
-    <td>Prescription and OTC medications in pregnancy</td>
+</tr>
+<tr class="section-health">
+    <td><a href="pregexp/preghealth/medications" target="_blank">Health V1-Medications</a></td>
+    <td></td>
+    <td>Medications in pregnancy</td>
     <td><code>pex_bm_health_preg__meds</code></td>
-  </tr>  
-  <tr>
-    <td><a href="pregexp/preghealth/end-preg" target="_blank">Health V2- Pregnancy</a></td>
-    <td>Updates between enrollment and delivery</td>
+</tr>
+<tr class="section-health">
+    <td><a href="pregexp/preghealth/end-preg" target="_blank">Health V2-Pregnancy</a></td>
+    <td></td>
+    <td>Health updates up to delivery</td>
     <td><code>pex_bm_healthv2_preg</code></td>
-  </tr>     
-  <tr>
-    <td><a href="pregexp/preghealth/infanthealth" target="_blank">Health V2- Infancy</a></td>
+</tr>
+<tr class="section-health">
+    <td><a href="pregexp/preghealth/infanthealth" target="_blank">Health V2-Infancy</a></td>
+    <td></td>
     <td>Delivery and birth outcomes</td>
     <td><code>pex_bm_healthv2_inf</code></td>
-  </tr>    
+</tr>
+
+<!-- Mental Health -->
+<tr class="section-mh">
+  <td colspan="4" class="subsection-header">
+    <i style="color: #3e3e3e;" class="fas fa-brain"></i> <strong style="color: #3e3e3e;">&nbsp;&nbsp;Mental Health</strong>
+  </td>
+</tr>
+<tr class="section-mh">
+    <td><a href="pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
+    <td></td>
+    <td>Personal and family mental health</td>
+    <td><code>pex_bm_psych</code></td>
+</tr>
+<tr class="section-mh">
+    <td><a href="pregexp/mh/apa12" target="_blank">APA 1/2</a></td>
+    <td></td>
+    <td>Mental Health</td>
+    <td><code>pex_bm_apa</code></td>
+</tr>
+<tr class="section-mh">
+    <td><a href="pregexp/mh/ptsd" target="_blank">DSM5 Acute Stress or PTSD</a></td>
+    <td></td>
+    <td>PTSD/acute stress symptom severity</td>
+    <td><code>pex_bm_str__ptsd</code></td>
+</tr>
+<tr class="section-mh">
+    <td><a href="pregexp/mh/epds" target="_blank">EPDS</a></td>
+    <td></td>
+    <td>Postnatal depression</td>
+    <td><code>pex_bm_epds</code></td>
+</tr>
+
+<!-- Substance Use -->
+<tr class="section-su">
+  <td colspan="4" class="subsection-header">
+    <i style="color: #3e3e3e;" class="fa-solid fa-prescription-bottle"></i> <strong style="color: #3e3e3e;">&nbsp;&nbsp;Substance Use</strong>
+  </td>
+</tr>
+<tr class="section-su">
+  <td rowspan="3"><a href="pregexp/su/assist" target="_blank">ASSIST</a></td>
+  <td>V1.0</td>
+  <td>Substance use before and during pregnancy</td>
+  <td><code>pex_bm_assistv1</code></td>
+</tr>
+<tr class="section-su">
+  <td>V2.0</td>
+  <td>Substance use, pregnancy end and postnatal</td>
+  <td><code>pex_bm_assistv2</code></td>
+</tr>
+<tr class="section-su">
+  <td>V3.0</td>
+  <td>Substance use post-pregnancy</td>
+  <td><code>pex_bm_assistv3</code></td>
+</tr>
+<tr class="section-su">
+  <td><a href="pregexp/su/tlfb" target="_blank">TLFB</a></td>
+  <td></td>
+  <td>Substance use before and during pregnancy</td>
+  <td><code>pex_ch_tlfb</code></td>
+</tr>
 </tbody>
 </table>
-
-<p style="margin-bottom: 5px; font-size: 1.2em; text-align: center;">&nbsp; <strong>Mental Health</strong></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-      <td><a href="pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
-      <td>Personal and family mental health</td>
-      <td><code>pex_bm_psych</code></td>
-    </tr>            
-    <tr>
-      <td><a href="pregexp/mh/apa12" target="_blank">APA 1/2</a></td>
-      <td>Mental Health</td>
-      <td><code>pex_bm_apa</code></td>
-    </tr>  
-    <tr>
-      <td><a href="pregexp/mh/ptsd" target="_blank">DSM5 Severity Acute Stress or PTSD</a></td>
-      <td>PTSD/acute stress disorder symptom severity</td>
-      <td><code>pex_bm_str__ptsd</code></td>
-    </tr>      
-    <tr>
-      <td><a href="pregexp/mh/epds" target="_blank">EPDS</a></td>
-      <td>Postnatal depression</td>
-      <td><code>pex_bm_epds</code></td>
-    </tr>      
-  </tbody>
-  </table>
-
-<p style="margin-bottom: 5px; font-size: 1.2em; text-align: center;">&nbsp; <strong>Substance Use</strong></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 20%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
-      <th style="width: 10%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td rowspan="3"><a href="pregexp/su/assist" target="_blank">ASSIST</a></td>
-    <td>V1.0</td>
-    <td>Substance use and problematic use before and during pregnancy</td>
-    <td><code>pex_bm_assistv1</code></td>
-  </tr>    
-  <tr>
-    <td>V2.0</td>
-    <td>Substance use during end of pregnancy and postnatal</td>
-    <td><code>pex_bm_assistv2</code></td>
-  </tr>    
-  <tr>
-    <td>V3.0</td>
-    <td>Substance use after pregnancy</td>
-    <td><code>pex_bm_assistv3</code></td>
-  </tr>   
-  <tr>
-    <td><a href="pregexp/su/tlfb" target="_blank">TLFB</a></td>
-    <td></td>
-    <td>Substance use before and during pregnancy</td>
-    <td><code>pex_ch_tlfb</code></td>
-  </tr>   
-  </tbody>
-  </table>
 </div>
 
 <div id="socenvdet" class="table-banner" onclick="toggleCollapse(this)">
@@ -853,3 +856,5 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </div>
 
 <br>
+
+
