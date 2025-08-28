@@ -19,11 +19,9 @@
 <br>
 <b>Continuous Variables</b>
 <p>For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#urine-table1">Table 1. Urine Assay Thresholds for Analytes</a>.</p> 
-
 <b>Urinary Concentration Corrections</b>
-<p>Urine concentrations vary by participant. Urinary concentration corrections can be made by creatine or specific gravity. There is a <a href="../../../changelog/knownissues/#urine-incorrect-specific-gravity-variable">known issue</a> with the specific gravity values and they are not meaningful in the current data release; therefore, only the initial creatinine results from sample validation should be used for urinary concentration corrections. Creatinine values are provided for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds.</p> 
+<p>Urine concentrations vary by participant. Urinary concentration corrections can be made by creatine or specific gravity. There is a <a href="../../../changelog/knownissues/#urine-incorrect-specific-gravity-variable">known issue</a> with the specific gravity values and they are not meaningful in the current data release; therefore, only the initial creatinine results from sample validation should be used for urinary concentration corrections. Creatinine values are provided for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds.</p>
 </div>
-
 
 ## Administration & Quality Control
 
@@ -48,10 +46,9 @@
 
 These data are the results of urine toxicology assays. **Screening** results for substances are determined to be positive or negative based on predefined thresholds (**[Table 1](#urine-table1)**), or invalid - see [Validation Procedures](#validation). **Confirmatory tests** are used to confirm the results of screening for any substance analyte (e.g. **Amphetamine (`c_amp_u`)**), which are grouped into different classes by analyte screening tests and analyte confirmatory tests (**[Table 2](#urine-table2)**).
 
-<p>
 <div id="urine-table1" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
   <span class="emoji"><i class="fa fa-table"></i></span>
+  <span class="text-with-link">
   <span class="text">Table 1. Urine Assay Thresholds for Analytes</span>
   <a class="anchor-link" href="#urine-table1" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -466,8 +463,8 @@ These data are the results of urine toxicology assays. **Screening** results for
 </div>
 
 <div id="urine-table2" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
   <span class="emoji"><i class="fa fa-table"></i></span>
+  <span class="text-with-link">
   <span class="text">Table 2. Mapping From Class to Screening Tests and Confirmatory Tests</span>
   <a class="anchor-link" href="#urine-table2" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -663,8 +660,8 @@ These data are the results of urine toxicology assays. **Screening** results for
 </div>
 
 <div id="validation" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
   <span class="emoji"><i class="fas fa-clipboard-check"></i></span>
+  <span class="text-with-link">
   <span class="text">Validation Procedures</span>
   <a class="anchor-link" href="#validation" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -677,25 +674,25 @@ These data are the results of urine toxicology assays. **Screening** results for
 <img src="../images/Table1_biospec_urine.png" width="70%" height="auto" class="center">
 <br>
 </div>
-</p>
 
-#### Final results for each substance follows these rules:
-
-- If the confirmatory test for any substance analyte (e.g. Amphetamine (`c_amp_u`)) is positive based on predefined thresholds (**[Table 1](#urine-table1)**), the class-level (`c_any_stim_u`) and sample-level (`c_any_specimen_u`) are also positive (value =1).
-- Otherwise, if the  substance analyte confirmatory tests are negative (e.g., `c_ethglu_u` and `c_ ethsyl_u`, values = 0) then class-level (e.g., `c_etgeia_u`) are negative (value =0). If all classes are negative (value = 0), then sample-level (e.g., `c_any_specimen_u`) are negative (value = 0).
-- Finally, if any substance analyte confirmatory tests are invalid (value = 3) then that class-level, and sample-level values are also invalid (value = 3).
-
-The scoring for each test type is summarized below:
-
-<div id="urine-table3" class="table-banner" onclick="toggleCollapse(this)">
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
-  <span class="emoji"><i class="fa fa-table"></i></span>
-  <span class="text">Table 3. Screening Result Scoring</span>
-  <a class="anchor-link" href="#urine-table3" title="Copy link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
+  <span class="arrow">▸</span>
 </div>
+<div class="table-collapsible-content">
+<p><b>Final results for each substance follows these rules</b>:</p>
+<ul>
+<li>If the confirmatory test for any substance analyte (e.g. Amphetamine (<code>c_amp_u</code>)) is positive based on predefined thresholds (<strong><a href="#urine-table1">Table 1</a></strong>), the class-level (<code>c_any_stim_u</code>) and sample-level (<code>c_any_specimen_u</code>) are also positive (value =1).</li>
+<li>Otherwise, if the  substance analyte confirmatory tests are negative (e.g., <code>c_ethglu_u</code> and <code>c_ethsyl_u</code>, values = 0) then class-level (e.g., <code>c_etgeia_u</code>) are negative (value =0). If all classes are negative (value = 0), then sample-level (e.g., <code>c_any_specimen_u</code>) are negative (value = 0).</li>
+<li>Finally, if any substance analyte confirmatory tests are invalid (value = 3) then that class-level, and sample-level values are also invalid (value = 3).</li>
+</ul>
+<p><b>Table 3. Screening Result Scoring</b></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
     <thead>
       <tr>
@@ -710,21 +707,19 @@ The scoring for each test type is summarized below:
 <td>Specimen</td>
 <td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte)</td>
 <td><code>c_any_specimen_u</code></td>
-<td>1: positive<br />0: negative<br />3: invalid</td>
+<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
 </tr>
 <tr>
 <td>Class</td>
 <td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte in class)</td>
 <td><code>c_any_stim_u</code></td>
-<td>1: positive<br />0: negative<br />3: invalid</td>
+<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
 </tr>
 <tr>
-<td colspan="1" rowspan="3">
-<div>Analyte</div>
-</td>
+<td rowspan="3">Analyte</td>
 <td>Screening results</td>
 <td><code>s_amp_u</code></td>
-<td>1: positive<br />0: negative<br />3: invalid</td>
+<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
 </tr>
 <tr>
 <td>Confirmatory results</td>
@@ -733,15 +728,18 @@ The scoring for each test type is summarized below:
 </tr>
 <tr>
 <td>Confirmatory results - categorical</td>
-<td><span class="tooltip tooltip-right"><code>c_amp_u_cat</code><span class="tooltiptext" style="font-size: 0.9em;">Categorical confirmatory test variable for nicotine follows a different convention and is ‘c_nicotine_u'</span></span></td>
-<td>1: positive<br />0: negative<br />3: cancelled<br />4: screen negative</td>
+<td><code>c_amp_u_cat</code>⁠<span class="blue-text">**</span></td>
+<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid; <code>4</code>=screen negative</td>
 </tr>
 </tbody>
 </table>
+⁠<span class="blue-text">**</span> <small>Note: the categorical confirmatory test variable for nicotine follows the convention: <code>c_nicotine_u</code>.</small>
+<br>
+</div>
 
-### References
+## References
+
 <div class="references">
     <p>Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <a href="https://doi.org/10.1016/j.dcn.2024.101451">https://doi.org/10.1016/j.dcn.2024.101451</a></p>
 </div>
 <br>
-
