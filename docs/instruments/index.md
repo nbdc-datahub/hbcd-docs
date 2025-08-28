@@ -61,13 +61,13 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
     <td style="word-wrap: break-word; white-space: normal;">SN Contact Form</td>
-    <td style="word-wrap: break-word; white-space: normal;"></td>
+    <td style="word-wrap: break-word; white-space: normal;">Administrative</td>
     <td><code>TBD</code></td>
   </tr>
     <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
-    <td style="word-wrap: break-word; white-space: normal;"></td>
-    <td style="word-wrap: break-word; white-space: normal;"></td>
+    <td style="word-wrap: break-word; white-space: normal;">TIC</td>
+    <td style="word-wrap: break-word; white-space: normal;">Administrative</td>
     <td><code>TBD</code></td>
   </tr>
   </tbody>
@@ -127,83 +127,80 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 40%; text-align: center;">Name of Instrument</th>
-      <th style="width: 20%; text-align: center;">Acronym</th>
-      <th style="width: 40%; text-align: center;">Construct</th>
-      <th style="width: 20%; text-align: center;">Table Name</th>
+      <th style="width: 30%; text-align: center;">Name of Instrument</th>
+      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
+      <th style="width: 50%; text-align: center;">Construct</th>
+      <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/chaos" target="_blank">Confusion, Hubbub and Order scale</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">CHAOS</td>
-    <td style="word-wrap: break-word; white-space: normal;">Family Organization</td>
+    <td><a href="bcgi/chaos" target="_blank">CHAOS</a></td>
+    <td></td>
+    <td>Family Organization</td>
     <td><code>mh_cg_chaos</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS - Caregiver Child Relationship Scale (&lt;1 year)</a></td>
-    <td>ecPROMIS (&lt;1 y/o)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Relationships</td>
+    <td rowspan="2"><a href="bcgi/ecpromis" target="_blank">ecPROMIS-Ch/CG Interaction</a></td>
+    <td>&lt;1 year</td>
+    <td>Child/Caregiver Relationship</td>
     <td><code>mh_cg_pms__cc__inf</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis" target="_blank">ecPROMIS - Caregiver Child Relationship Scale (1-5 y/o)</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">ecPROMIS (1-5 y/o)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Relationships</td>
+    <td>1-5 years</td>
+    <td>Child/Caregiver Relationship</td>
     <td><code>mh_cg_pms__cc__1to5</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis-pr" target="_blank">ecPROMIS- Peer Relation</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">ecPROMIS</td>
-    <td style="word-wrap: break-word; white-space: normal;">Peer Relationships</td>
+    <td><a href="bcgi/ecpromis-pr" target="_blank">ecPROMIS-Peer Relation</a></td>
+    <td></td>
+    <td>Peer Relationships</td>
     <td><code>mh_cg_pms__peer</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis-selfreg" target="_blank">ecPROMIS - Self-regulation-Flexibility Scale</a></td>
-    <td style="word-wrap: break-word; white-space: normal;"></td>
-    <td style="word-wrap: break-word; white-space: normal;">Self-Regulation and Flexibility</td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis-selfreg" target="_blank">ecPROMIS-Self-regulation</a></td>
+    <td></td>
+    <td>Self-Regulation and Flexibility</td>
     <td><code>mh_cg_pms__selfreg</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/erica" target="_blank">ERICA-FCM</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">ERICA</td>
+    <td><a href="bcgi/erica" target="_blank">ERICA-FCM</a></td>
+    <td></td>
     <td style="word-wrap: break-word; white-space: normal;">Co-regulation, Child Regulation/Dysregulation, Parenting</td>
     <td><code>mh_pa_erica</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/fad" target="_blank">Family Assessment Device</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">FAD</td>
-    <td style="word-wrap: break-word; white-space: normal;">Global functioning of the family unit</td>
+    <td><a href="bcgi/fad" target="_blank">FAD</a></td>
+    <td></td>
+    <td style="word-wrap: break-word; white-space: normal;">Global functioning of family unit</td>
     <td><code>mh_cg_fad</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/home21" target="_blank">HOME-21 Infant-Toddler</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">HOME-21</td>
-    <td style="word-wrap: break-word; white-space: normal;">Child’s Home Environment</td>
+    <td><a href="bcgi/home21" target="_blank">HOME-21</a></td>
+    <td></td>
+    <td>Child’s Home Environment</td>
     <td><code>sed_cg_home_ec</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">IBQ-R Very Short Form + Behavior Inhibition</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">IBQ-R (VSF)+BI</td>
-    <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, Behavioral Inhibition</td>
+    <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">BQ (VSF)+BI</a></td>
+    <td>IBQ-R (VSF)+BI<br>(<i>Infant</i>)</td>
+    <td style="word-wrap: break-word; white-space: normal;">Surgency/Extraversion, Negative Affectivity, Effortful Control, Behavioral Inhibition</td>
     <td><code>mh_cg_ibqr</code></td>
   </tr>
     <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">ECBQ Very Short Form + Behavior Inhibition</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">ECBQ (VSF)+BI</td>
-    <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
+    <td>ECBQ (VSF)+BI<br>(<i>Early Childhood</i>)</td>
+    <td style="word-wrap: break-word; white-space: normal;">Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
     <td><code>mh_cg_ecbq</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale, Version: Infancy (< 1 year)</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">MAPS-TL</td>
-    <td style="word-wrap: break-word; white-space: normal;">Irritability</td>
+    <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">MAPS-TL</a></td>
+    <td>Infancy (< 1 year)</td>
+    <td>Irritability</td>
     <td><code>mh_cg_mapdb__inf</code></td>
   </tr>
     <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">Multidimensional Assessment Profiles - Temper Loss scale, Version: Toddlerhood and Preschool</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">MAPS-TL</td>
-    <td style="word-wrap: break-word; white-space: normal;">Irritability</td>
+    <td>Toddlerhood & Preschool</td>
+    <td>Irritability</td>
     <td><code>mh_cg_mapstl__tod</code></td>
   </tr>
   </tbody>
