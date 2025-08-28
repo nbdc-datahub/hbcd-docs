@@ -18,8 +18,8 @@
 </div>
 <div class="warning-collapsible-content">
 <br>
-<b>Continuous Variables</b>
-<p>For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#table1">Table 1. Blood Assay Thresholds PEth</a>.</p> 
+<p><b>Continuous Variables</b><br>
+For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#table1">Table 1. Blood Assay Thresholds PEth</a>.</p> 
 </div>
 </p>
 

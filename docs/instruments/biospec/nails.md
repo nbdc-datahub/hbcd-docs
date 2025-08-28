@@ -17,14 +17,12 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<br>
-<b>Continuous Variables</b>
-<p>For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#nails-table1">Table 1. Nail Assay Thresholds</a>.</p> 
-<b>Updated Workflow</b>
-<p>As of July 1, 2024, the nail processing workflow was updated to optimize specimen use and allow confirmation testing for low sample quantities. Prior to this update, remnants of ELISA extract were not used for confirmation when specimens had insufficient sample.</p> 
+<p><b>Continuous Variables</b><br>
+For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#nails-table1">Table 1. Nail Assay Thresholds</a>.</p> 
+<p><b>Updated Workflow</b><br>
+As of July 1, 2024, the nail processing workflow was updated to optimize specimen use and allow confirmation testing for low sample quantities. Prior to this update, remnants of ELISA extract were not used for confirmation when specimens had insufficient sample.</p> 
 </div>
 </p>
-
 
 ## Administration & Quality Control
 
