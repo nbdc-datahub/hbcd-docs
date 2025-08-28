@@ -241,6 +241,17 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td style="text-align: left;"><code>bio_bm_biosample_nails_results</code><br><code>bio_bm_biosample_nails_type</code></td>
   </tr>
   <tr>
+    <td rowspan="2" style="text-align: left;"><a href="biospec/saliva" target="_blank">Saliva</a></td>
+    <td style="text-align: left;">Maternal</td>
+    <td style="text-align: left;">GWAS, EWAS, transcriptome</td>
+    <td style="text-align: left;"><code>bio_bm_biosample_saliva</code></td>
+  </tr>
+  <tr>
+    <td style="text-align: left;">Child</td>
+    <td style="text-align: left;">GWAS, EWAS, transcriptome</td>
+    <td style="text-align: left;"><code>bio_ch_biosample_saliva</code></td>
+  </tr>
+  <tr>
       <td rowspan="2" style="text-align: left;"><a href="biospec/urine" target="_blank">Urine</a></td>
       <td style="text-align: left;">Maternal</td>
       <td style="text-align: left;">Drug Panel, Toxins</td>
