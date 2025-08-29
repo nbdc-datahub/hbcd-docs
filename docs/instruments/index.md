@@ -51,10 +51,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 20%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 30%; text-align: center;">Table Name</th>
+      <th style="width: 20%;">Instrument</th>
+      <th>Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;">Table Name</th>
     </tr>
   </thead>
   <tbody>
@@ -90,10 +90,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version</th>
-      <th style="width: 50%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 20%;">Instrument</th>
+      <th>Version</th>
+      <th style="width: 50%;">Construct</th>
+      <th style="width: 10%;">Table Name</th>
     </tr>
   </thead>
   <tbody>
@@ -104,8 +104,8 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td><code>mh_cg_pms__cc__inf</code></td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">BQ (VSF)+BI</a></td>
-    <td>IBQ-R (VSF)+BI<br>(<i>Infant</i>)</td>
+    <td><a href="bcgi/ibqr" target="_blank">BQ (VSF)+BI</a></td>
+    <td>IBQ-R (VSF)+BI (<i>Infant</i>)</td>
     <td style="word-wrap: break-word; white-space: normal;">Surgency/Extraversion, Negative Affectivity, Effortful Control, Behavioral Inhibition</td>
     <td><code>mh_cg_ibqr</code></td>
   <tr>
@@ -132,10 +132,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 10%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version</th>
-      <th style="width: 40%; text-align: center;">Construct</th>
-      <th style="width: 20%; text-align: center;">Table Name</th>
+      <th style="width: 10%;">Instrument</th>
+      <th>Version</th>
+      <th style="width: 40%;">Construct</th>
+      <th style="width: 20%;">Table Name</th>
     </tr>
   </thead>
   <tbody>
@@ -169,10 +169,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 10%; text-align: center;">Instrument</th>
-      <th style="width: 10%; text-align: center;">Version</th>
-      <th style="width: 40%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 10%;">Instrument</th>
+      <th style="width: 10%;">Version</th>
+      <th style="width: 40%;">Construct</th>
+      <th style="width: 10%;">Table Name</th>
     </tr>
   </thead>
   <tbody>
@@ -203,37 +203,43 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><b>Tabulated Data</b></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
-      <th style="width: 20%; text-align: center;"><span class="tooltip tooltip-left">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
-          <i class="fas fa-hammer"></i> &nbsp;<i>Raw BIDS</i><br>
-          <i class="fas fa-cog"></i> &nbsp;<i>Derivatives</i></th>
+      <th style="width: 30%;">Instrument</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;">Table Names</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/wearsensors" target="_blank">Wearable Sensors</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">N/A</td>
-      <td style="word-wrap: break-word; white-space: normal;">N/A</td>
-      <td style="word-wrap: break-word; white-space: normal;">
-      <i class="fa fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#motion"><code>motion/</code></a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">Motor behavior, physical activity, sleep</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code>nt_ch_sens__qtn_1</code><br>
-          <code>nt_ch_sens__qtn_2</code><br>
-          <code>nt_ch_sens__qtn_3</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">NA</td>
-    </tr>
+  <tr>
+    <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
+    <td>Motor behavior, physical activity, sleep</td>
+    <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
+  </tr>
   </tbody>
   </table>
+<p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>From Wearable Sensors</b></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th>Sensor</th>
+      <th>Description</th>
+      <th><i class="fas fa-hammer"></i> Raw Data</th>
+      <th><i class="fas fa-cog"></i> Derivatives</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="sensors/wearsensors" target="_blank">Infant Leg Sensors</a></td>
+    <td>Motion/accelerometry data collected from wearable infant leg sensors</td>
+    <td><a href="../datacuration/rawbids/#motion"><code>motion/</code></a></td>
+    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a></td>
+  </tr>
+  </tbody>
+  </thead>
+</table>
 </div>
 
 <div id="physhealth" class="table-banner" onclick="toggleCollapse(this)">
@@ -250,9 +256,9 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 30%; text-align: center;">Table Name</th>
+      <th style="width: 30%;">Instrument</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;">Table Name</th>
     </tr>
   </thead>
   <tbody>
@@ -289,10 +295,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
 <thead>
 <tr>
-    <th style="width: 5%; text-align: center;">Instrument</th>
-    <th style="width: 5%; text-align: center;">Version</th>
-    <th style="width: 30%; text-align: center;">Construct</th>
-    <th style="width: 10%; text-align: center;">Table Name</th>
+    <th style="width: 5%;">Instrument</th>
+    <th style="width: 5%;">Version</th>
+    <th style="width: 30%;">Construct</th>
+    <th style="width: 10%;">Table Name</th>
 </tr>
 </thead>
 <tbody>
@@ -350,7 +356,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td>Delivery and birth outcomes</td>
     <td><code>pex_bm_healthv2_inf</code></td>
 </tr>
-
 <!-- Mental Health -->
 <tr class="section-mh">
   <td colspan="4" class="subsection-header">
@@ -381,7 +386,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td>Postnatal depression</td>
     <td><code>pex_bm_epds</code></td>
 </tr>
-
 <!-- Substance Use -->
 <tr class="section-su">
   <td colspan="4" class="subsection-header">
@@ -414,8 +418,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
 </table>
 </div>
 
-
-
 <div id="socenvdet" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-city"></i></span>
   <span class="text-with-link">
@@ -430,10 +432,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version</th>
-      <th style="width: 60%; text-align: center;">Construct</th>
-      <th style="text-align: center;">Table Name</th>
+      <th>Instrument</th>
+      <th>Version</th>
+      <th style="width: 60%;">Construct</th>
+      <th>Table Name</th>
     </tr>
   </thead>
   <tbody> 
@@ -504,21 +506,16 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <thead>
     <!-- First header row -->
     <tr>
-      <th style="width: 15%; text-align: center;" rowspan="2">Name</th>
-      <th style="width: 20%; text-align: center;" colspan="2">
-        <span class="tooltip tooltip-right">
-          File-Based Data
-          <span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span>
-        </span>
-      </th>
-      <th style="width: 60%; text-align: center;" rowspan="2">Table Name(s)</th>
+      <th style="width: 15%;" rowspan="2">Name</th>
+      <th style="width: 20%; text-align: center;" colspan="2"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span></th>
+      <th style="width: 60%;" rowspan="2">Table Name(s)</th>
     </tr>
     <!-- Second header row -->
     <tr>
-      <th style="width: 20%; text-align: center;">
+      <th style="width: 20%;">
         <i class="fas fa-hammer"></i> Raw Data
       </th>
-      <th style="width: 20%; text-align: center;">
+      <th style="width: 20%;">
         <i class="fas fa-cog"></i> Derivatives
       </th>
     </tr>
@@ -632,21 +629,21 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <thead>
     <!-- First header row -->
     <tr>
-      <th style="width: 30%; text-align: center;" rowspan="2">Task</th>
+      <th style="width: 30%;" rowspan="2">Task</th>
       <th style="width: 40%; text-align: center;" colspan="2">
         <span class="tooltip tooltip-right">
           File-Based Data
           <span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span>
         </span>
       </th>
-      <th style="width: 40%; text-align: center;" rowspan="2">Table Names</th>
+      <th style="width: 40%;" rowspan="2">Table Names</th>
     </tr>
     <!-- Second header row -->
     <tr>
-      <th style="width: 10%; text-align: center;">
+      <th style="width: 10%;">
         <i class="fas fa-hammer"></i> Raw BIDS
       </th>
-      <th style="width: 10%; text-align: center;">
+      <th style="width: 10%;">
         <i class="fas fa-cog"></i> Derivatives
       </th>
     </tr>
