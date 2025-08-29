@@ -47,7 +47,7 @@
   <li>Acculturation surveys may make some individuals feel excluded or othered. However, this measure aims to capture the process and understand an individual's personal preferences for taking part in their personal family cultural values as well as those of "American" culture.</li>
   <li>Participants are allowed to choose more than one culture to account for individuals who may live in multicultural households.</li>
 </ul>
-<p style="color: red;">Luci note: the documentation above is great, but I think they belong in a different section than QC - perhaps move to the Responsible Use section or Instrument Details? QC describes checks made to make sure the data isn't incorrect/corrupted somehow, such as checking for missingness</p>
+<p style="color: red;">Luci note: I would recommend moving the documentation above to the Instrument Details section, or perhaps some or all of it would be relevant to the Responsible Use section? Quality Control Procedures should describe checks made to make sure the data isn't incorrect/corrupted somehow, such as checking for missingness</p>
 </td></tr>      
 </tbody>
 </table>
