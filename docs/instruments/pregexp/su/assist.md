@@ -25,10 +25,10 @@
 <td style="word-wrap: break-word; white-space: normal;">Substance use during end of pregnancy ( between V01 and delivery) and postnatal (weeks 0-4, between delivery and V2)</td>
 <td><code>pex_bm_assistv2</code></td></tr>
 <tr><td><strong>ASSIST V3</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy</td>
+<td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy (3 month anchors)</td>
 <td><code>pex_bm_assistv3</code></td></tr>
 <tr><td><strong>ASSIST V4</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">????</td>
+<td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy (12 month anchors)</td>
 <td><code>pex_bm_assistv4</code></td></tr>
 </tbody>
 </table>
@@ -132,6 +132,14 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
     <li>[3m_use] IN THE PAST THREE MONTHS, how often have you used any of the following substances for any reason? [followed by list of substance options from section below]</li>
     <li>[problem] DURING THE PAST THREE MONTHS, has your use of this substance led to physical or mental health, social, or financial problems?</li>
     <li>[perform] DURING THE PAST THREE MONTHS, have you ever failed to do what was normally expected of you (like work, go to school, be a parent, or household tasks) because of your use of this substance?</li>
+</ul>
+
+<b>ASSIST V4</b><br>
+<strong>Assess use and impact of substance use after pregnancy in past 12 months (12m):</strong>
+<ul>
+    <li>[12m_use] IN THE PAST TWELVE MONTHS, how often have you used any of the following substances for any reason? [followed by list of substance options from section below]</li>
+    <li>[problem] DURING THE PAST TWELVE MONTHS, has your use of this substance led to physical or mental health, social, or financial problems?</li>
+    <li>[perform] DURING THE PAST TWELVE MONTHS, have you ever failed to do what was normally expected of you (like work, go to school, be a parent, or household tasks) because of your use of this substance?</li>
 </ul>
 </div>
 
