@@ -1,6 +1,5 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-<p style="color: red;">ADMIN NOTES FOR PAGE CONSTRUCTION:<br>
 <ul style="color: red;">
   <li><b>Workgroup</b>: Novel Tech & Wearables</li>
   <li><b>Contact</b>: nicolo.pini92@gmail.com</li>
