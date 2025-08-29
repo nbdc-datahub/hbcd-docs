@@ -7,6 +7,9 @@
 **Table Name**: `sed_cg_via`    
 **Construct:** Acculturation
 
+
+
+
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
@@ -19,10 +22,11 @@
 </div>
 <div class="alert-collapsible-content">
 <p>Please do not mention or ask participants about immigration or documentation status. They should only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided.</p>
+
+<p style="color: red;">Luci note: this looks like internal documentation that is not relevant to the end user (who do not interact at all with the study participants). Perhaps remove or rephrase as "Participants are not asked about immigration or documentation status. The intent is that they only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided."</p>
 </div>
 
 ## Administration & Quality Control
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr><td><b>Child Specific</b></td>
@@ -66,7 +70,8 @@ Some immigrants may consider American culture as their family culture. They can 
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The order of questions is flipped in the HBCD English and Spanish version. This will affect scoring as the scoring instructions lump all the odd (heritage culture answers) and even (American culture) questions. This needs to be fixed so that the second-to-last and last questions on the HBCD survey are reversed.</p> 
+<p>The order of questions is flipped in the HBCD English and Spanish version. This will affect scoring as the scoring instructions lump all the odd (heritage culture answers) and even (American culture) questions. This needs to be fixed so that the second-to-last and last questions on the HBCD survey are reversed.</p>
+<p style="color: red;">Luci note: is this an internal fix needed, or recommendations to the user? should it be added as a known issue?</p> 
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
@@ -82,6 +87,8 @@ Some immigrants may consider American culture as their family culture. They can 
 <div class="collapsible-content">
 <p>The family culture subscore is the mean of the items asking about family culture, whereas the mainstream subscore is the mean of the items asking about American culture.</p>
 <p>If a participant chooses 777 (Decline to answer), or 999 (Don't know), please do not include those values in the score.</p>
+
+<p style="color: red;">Luci note: the second note looks like internal documentation. if summary scores are included in data release and already follow this, perhaps rephrase to: "Non-responses ("Decline to answer" or "Don't know") are not included in the score."</p> 
 </div>
 
 ## References
