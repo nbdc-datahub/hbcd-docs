@@ -1,15 +1,5 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-<p style="color: red;">ADMIN NOTES FOR PAGE CONSTRUCTION:<br>
-<ul style="color: red;">
-  <li><b>Workgroup</b>: Pregnancy & Exposures</li>
-  <li><b>Contact</b>: gbandoli@ucsd.edu</li>
-</ul>
-</ul>
-</p>
-
-------------------------------------------------------------
-
 # Substance Use Patterns in Pregnancy
       
 **Table Name**: `pex_bm_subst`    
