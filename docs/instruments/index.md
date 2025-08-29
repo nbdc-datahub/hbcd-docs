@@ -370,30 +370,70 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 35%; text-align: center;">Instrument</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 30%; text-align: center;">Table Name</th>
+      <th style="width: 40%; text-align: center;">Instrument</th>
+      <th style="width: 40%; text-align: center;">Construct</th>
+      <th style="width: 40%; text-align: center;">Table Name</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
-      <td>Nutrition</td>
-      <td><code>ph_cg_phx__bfh</code></td>
-    </tr>
     <tr>
       <td><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
       <td>Food insecurity</td>
       <td><code>sed_cg_foodins</code></td>
     </tr>
     <tr>
+    <td>BISQ-SF</td>
+    <td>Sleep</td>
+    <td><code>ph_cg_bisq</code></td>
+    </tr>
+    <tr>
+      <td><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
+      <td>Nutrition</td>
+      <td><code>ph_cg_phx__bfh</code></td>
+    </tr>
+    <tr>
+    <td>Child Nutrition Questionnaire</td>
+    <td>Nutrition</td>
+    <td><code>ph_cg_cnq</code></td>
+    </tr>
+    <tr>
+    <td>ecPROMIS - Physical Activity/Greenspace</td>
+    <td>Physical Activity</td>
+    <td><code>ph_cg_pms_i_pags</code></td>
+    </tr>
+    <tr>
+    <td>ecPROMIS - Sleep</td>
+    <td>Sleep</td>
+    <td><code>ph_cg_pms_i_sleep</code></td>
+    </tr>
+    <tr>
       <td><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
       <td>Growth</td>
       <td><code>ph_ch_anthro</code></td>
-  </tr> 
+    </tr> 
+    <tr>
+    <td>Infant Nutrition Questionnaire</td>
+    <td>Nutrition</td>
+    <td><code>ph_cg_inq<code></td>
+    </tr>
+    <tr>
+    <td>Medical History</td>
+    <td>Medical History</td>
+    <td><code>ph_cg_ecls_i_medhist</code></td>
+    </tr>
+    <tr>
+    <td>ScreenQ - Media Use</td>
+    <td>Media Use</td>
+    <td><code>ph_cg_screenq</code></td>
+    </tr>
+    <tr>
+    <td>Vision Screener</td>
+    <td>Vision</td>
+    <td><code>ph_ch_vs</code></td>
+    </tr>
   </tbody>
   </table>
 </div>
