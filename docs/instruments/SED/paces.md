@@ -1,10 +1,34 @@
 # Protective and Compensatory Experience
 
-**Full Name**: Protective and Compensatory Experience (Current)                    
-**Acronym**: PACES                                
-**Table Name**: `sed_bm_paces`             
-**Construct**: Protective Factors        
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
+</div>
+<p></p>
 
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <td style="width: 30%;"><strong>Instrument</strong></td>
+  <td style="width: 30%"><strong>Version</strong></td>
+  <td style="width: 30%"><strong>Construct</strong></td>
+  <td style="width: 30%"><strong>Table Name</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;"> <span class="tooltip tooltip-right">PACES<span class="tooltiptext">Protective and Compensatory Experience</span></span></td>
+  <td><strong>PACES (Current)</strong></td>
+  <td>Protective Factors</td>
+  <td><code>sed_bm_paces</code></td>
+</tr>
+<tr>
+  <td><strong>PACES (&lt;18)</strong></td>
+  <td>Protective Factors</td>
+  <td><code>sed_cg_paces</code></td>
+</tr>
+</tbody>
+</table>
 
 ## Administration & Quality Control
 
@@ -13,9 +37,9 @@
 <tr><td><b>Child Specific</b></td>
 <td>No</td></tr>
 <tr><td><b>Respondent</b></td>
-<td>Parent</td></tr>
+<td>Parent on Self</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self, in person or remote</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Parent, in person or remote</td></tr>
 <tr><td><b>Visits</b></td>
 <td>V01</td></tr>
 <tr><td><b>Completion Time</b></td>
@@ -39,24 +63,11 @@ Protective and Compensatory Experience (PACES) is a 10-question scale with score
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<br>
-<p><b>Instruction Item Modifications</b></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <tr>
-    <th>Original Text</th>
-    <th>Modified Text</th>
-  </tr>
-  <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
-      <small>When answering these questions, think about the last 12 months. On a scale of 1 to 5, fill the circle of the number that best describes how often each of the items occurred.</small>
-    </td>
-    <td style="word-wrap: break-word; white-space: normal;">
-      <small>When answering these questions, think about the last 12 months. Please select the response that best describes you.</small>
-    </td>
-  </tr>
-</table>
-<p><b>For responses options, “Declined to answer” was added for all items.</b></p>
-<br>
+<p>“Decline to answer” was added as a response option for all items. Instruction item language was also modified as follows:</p>
+<ul>
+<li>Original text: <i>On a scale of 1 to 5, fill the circle of the number that best describes how often each of the items occurred.</i>
+<li>Revised text: <i>Please select the response that best describes you.</i>
+</ul>
 </div>
 
 ## References

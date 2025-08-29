@@ -645,10 +645,15 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td><code>sed_bm_nbhsaf</code></td>
     </tr> 
     <tr>
-      <td><a href="SED/paces" target="_blank">PACES</a></td>
-      <td></td>
+      <td rowspan="2"><a href="SED/paces" target="_blank">PACES</a></td>
+      <td>PACES (Current)</td>
       <td>Protective Factors</td>
       <td><code>sed_bm_paces</code></td>
+    </tr>
+     <tr>
+      <td>PACES (&lt;18)</td>
+      <td>Protective Factors</td>
+      <td><code>sed_cg_paces</code></td>
     </tr>
     <tr>
       <td><a href="SED/promis" target="_blank">PROMIS</a></td>
