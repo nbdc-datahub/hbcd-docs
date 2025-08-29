@@ -89,7 +89,7 @@ Some immigrants may consider American culture as their family culture. They can 
 <p>The family culture subscore is the mean of the items asking about family culture, whereas the mainstream subscore is the mean of the items asking about American culture.</p>
 <p>If a participant chooses 777 (Decline to answer), or 999 (Don't know), please do not include those values in the score.</p>
 
-<p style="color: red;">Luci note: the second note looks like internal documentation. if summary scores are to be included in data release and will already follow this rule, perhaps rephrase to: "Non-responses ("Decline to answer" or "Don't know") are not included in the score."</p> 
+<p style="color: red;">Luci note: the second note looks like internal documentation. If summary scores are already included in data release (as opposed to users having to calculate it themselves), I would rephrase as follows: "Non-responses ("Decline to answer" or "Don't know") are not included in the subscores."</p> 
 </div>
 
 ## References
