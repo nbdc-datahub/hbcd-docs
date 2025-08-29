@@ -15,8 +15,7 @@
 # Infant Heart Rate Wearable Sensor
 
 **Full Name**: GABI- infant heart rate       
-**Acronym:** GABI           
-**Table Name**: `???` or only file-based data       
+**Acronym:** GABI                
 **Construct:** Regulation (Sleep State Sycles)/Autonomic Function
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">

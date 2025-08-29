@@ -1,4 +1,4 @@
-# Wearable Sensors
+# Infant Leg Motion Wearable Sensor
 
 Motion/accelerometry data collected from wearable infant leg sensors is provided as <span class="tooltip">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> (and does not have any associated <span class="tooltip">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> - see more information on tabulated vs. file-based data [here](../../datacuration/overview.md)):
 
