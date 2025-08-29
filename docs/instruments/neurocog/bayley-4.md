@@ -73,9 +73,15 @@
 
 ## Instrument Details
 
-The **Bayley Scales of Infant and Toddler Development, Fourth Edition**, is an established measure of early development that is commercially available. The test provides an estimate of the child's cognitive, language, and motor skills. Within the Language Domain both the child's receptive and expressive communication skills are assessed. Within the Motor Domain, both the child's fine and gross motor skills are assessed. The Social-Emotional and Adaptive Behavior Scales of the test were not used in this study.
+<p>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">Publisher documentation for the Bayley-4 is available <a href="https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Cognition-%26-Neuro/Bayley-Scales-of-Infant-and-Toddler-Development-%7C-Fourth-Edition/p/100001996" target="_blank">here</a>.
+  </span>
+</div>
+</p>
 
-Additional details regarding the instrument are available from the publisher - see [here](https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Cognition-%26-Neuro/Bayley-Scales-of-Infant-and-Toddler-Development-%7C-Fourth-Edition/p/100001996).
+The **Bayley Scales of Infant and Toddler Development, Fourth Edition**, is an established, commercially available measure of early development. The test provides an estimate of the child's cognitive, language, and motor skills. The **Language Domain** evaluates both receptive and expressive communication skills. The **Motor Domain** evaluates both fine and gross motor skills. The **Social-Emotional** and **Adaptive Behavior** Scales of the Bayley-4 were not administered in this study.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
