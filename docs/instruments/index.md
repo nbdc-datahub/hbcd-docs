@@ -520,12 +520,12 @@ Each instrument name links to a dedicated page with detailed documentation for t
 </tr>
 <tr class="section-su">
   <td>V3.0</td>
-  <td>Substance use post-pregnancy</td>
+  <td>SU after pregnancy (3 mo anchors)</td>
   <td><code>pex_bm_assistv3</code></td>
 </tr>
 <tr class="section-su">
   <td>V4.0</td>
-  <td>?????</td>
+  <td>SU after pregnancy (12 mo anchors)</td>
   <td><code>pex_bm_assistv4</code></td>
 </tr>
 <tr class="section-su">
