@@ -95,8 +95,9 @@ nav:
             - SPM-2: instruments/neurocog/spm2.md
             - 🚧 Vineland: instruments/neurocog/vineland.md
         - Novel Tech & Wearable Sensors:
-            - Wearable Sensors: instruments/sensors/wearsensors.md
+            - GABI: instruments/sensors/gabi.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
+            - Wearable Sensors: instruments/sensors/wearsensors.md
         - Physical Health:
             - Breastfeeding: instruments/physhealth/bf.md
             - Food Insecurity: instruments/physhealth/foodinsecurity.md

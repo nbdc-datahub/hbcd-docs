@@ -339,13 +339,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </thead>
   <tbody>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/wearsensors" target="_blank">Wearable Sensors</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">N/A</td>
-      <td style="word-wrap: break-word; white-space: normal;">N/A</td>
-      <td style="word-wrap: break-word; white-space: normal;">
-      <i class="fa fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#motion"><code>motion/</code></a><br>
-      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a>
-      </td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/gabi" target="_blank">GABI</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Regulation (Sleep State Sycles)/Autonomic Function</td>
+      <td style="word-wrap: break-word; white-space: normal;"><code></code></td>
+      <td style="word-wrap: break-word; white-space: normal;">NA</td>
     </tr>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
@@ -354,6 +351,15 @@ Each instrument name links to a dedicated page with detailed documentation for t
           <code>nt_ch_sens__qtn_2</code><br>
           <code>nt_ch_sens__qtn_3</code></td>
       <td style="word-wrap: break-word; white-space: normal;">NA</td>
+    </tr>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/wearsensors" target="_blank">Wearable Sensors</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">N/A</td>
+      <td style="word-wrap: break-word; white-space: normal;">N/A</td>
+      <td style="word-wrap: break-word; white-space: normal;">
+      <i class="fa fa-hammer"></i> &nbsp;<a href="../datacuration/rawbids/#motion"><code>motion/</code></a><br>
+      <i class="fas fa-cog"></i> &nbsp;<a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a>
+      </td>
     </tr>
   </tbody>
   </table>
