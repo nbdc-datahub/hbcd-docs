@@ -74,7 +74,7 @@
 
 ## Instrument Details
 
-This measure indexes adverse events experienced by the parent/caregiver before age 18 (**ACEs**) or child (**pediatric ACEs**). Note that participants only report the total ACE events, so there is no scoring.
+**Adverse childhood experiences (ACEs)** are stressful or traumatic events experienced before the age of 18 years and associated with poor health outcomes. The ACEs measure indexes adverse events experienced by the parent/caregiver before age 18 (**ACEs**) ([developer documentation](https://www.acesaware.org/learn-about-screening/screening-tools/)) or child (**pediatric ACEs**) ([Koita et. al, 2018](https://doi.org/10.1371/journal.pone.0208088)). Note that participants only report the total ACE events, so there is no scoring. 
 
 ## References
 
