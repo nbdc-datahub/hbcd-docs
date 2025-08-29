@@ -315,62 +315,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </table>
 </div>
 
-<div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-microchip"></i></span>
-  <span class="text-with-link">
-  <span class="text">Novel Technologies & Wearable Sensors</span>
-  <a class="anchor-link" href="#sensors" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><b>Tabulated Data</b></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 30%;">Instrument</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Names</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
-    <td>Motor behavior, physical activity, sleep</td>
-    <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
-  </tr>
-  </tbody>
-  </table>
-<p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>From Wearable Sensors</b></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th>Sensor</th>
-      <th>Construct</th>
-      <th style="width: 20%;"><i class="fas fa-hammer"></i> Raw Data</th>
-      <th style="width: 20%;"><i class="fas fa-cog"></i> Derivatives</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="sensors/gabi" target="_blank">Infant Heart Rate Sensor</a></td>
-    <td>Regulation (Sleep State Sycles)/Autonomic Function</td>
-    <td><code>gabi/</code></td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td><a href="sensors/wearsensors" target="_blank">Infant Leg Motion Sensors</a></td>
-    <td>Motor Development, Regulation (Sleep/Wake)</td>
-    <td><a href="../datacuration/rawbids/#motion"><code>motion/</code></a></td>
-    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a></td>
-  </tr>
-  </tbody>
-  </thead>
-</table>
-</div>
-
 <div id="physhealth" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-heart-pulse"></i></span>
   <span class="text-with-link">
@@ -733,6 +677,65 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </tbody>
   </table>
   </div>
+
+### Wearable Sensors
+
+<div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-microchip"></i></span>
+  <span class="text-with-link">
+  <span class="text">Novel Technologies & Wearable Sensors</span>
+  <a class="anchor-link" href="#sensors" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><b>Tabulated Data</b></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th style="width: 30%;">Instrument</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;">Table Names</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
+    <td>Motor behavior, physical activity, sleep</td>
+    <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
+  </tr>
+  </tbody>
+  </table>
+<p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>From Wearable Sensors</b></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th>Sensor</th>
+      <th>Construct</th>
+      <th style="width: 20%;"><i class="fas fa-hammer"></i> Raw Data</th>
+      <th style="width: 20%;"><i class="fas fa-cog"></i> Derivatives</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="sensors/gabi" target="_blank">Infant Heart Rate Sensor</a></td>
+    <td>Regulation (Sleep State Sycles)/Autonomic Function</td>
+    <td><code>gabi/</code></td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td><a href="sensors/wearsensors" target="_blank">Infant Leg Motion Sensors</a></td>
+    <td>Motor Development, Regulation (Sleep/Wake)</td>
+    <td><a href="../datacuration/rawbids/#motion"><code>motion/</code></a></td>
+    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a></td>
+  </tr>
+  </tbody>
+  </thead>
+</table>
+</div>
+
 
 ### Brain Activity - MRI & EEG<span class="hint">(Click sections to expand)</span>
 

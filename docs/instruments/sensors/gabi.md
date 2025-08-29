@@ -5,7 +5,7 @@
   <li><b>Workgroup</b>: Novel Tech & Wearables</li>
   <li><b>Contact</b>: nicolo.pini92@gmail.com</li>
   <li><b>Additional comments/questions you have about this form</b>: my institutional email is not gmail based so I could not submit this form using np2600@cumc.columbia.edu (which would be the preferred email) and using my person one.</li>
-  <li><b>NOTE FROM LUCI</b>: need to clarify whether this is file-based or tabulated data and update the file/table name accordingly, but the essential info below is ready for RUDC review</li>
+  <li><b>NOTE FROM LUCI</b>: unclear whether this data will indeed by ready for R2.0, but will be included as raw BIDS data only. Follow up with Cecile to get raw BIDS file tree and BIDS conversion procedures. However, the essential info below is ready for RUDC review</li>
 </ul>
 </ul>
 </p>
@@ -14,9 +14,15 @@
 
 # Infant Heart Rate Wearable Sensor
 
-**Full Name**: GABI- infant heart rate       
-**Acronym:** GABI                
-**Construct:** Regulation (Sleep State Sycles)/Autonomic Function
+Infant heart rate data collected from wearable sensors is available as <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. The current release includes only <a href="../../../datacuration/rawbids/#gabi" target="_blank">raw sensor data</a> located in the subject- and session-level <code>gabi/</code> folders. Future releases will include <a href="../../../datacuration/derivatives" target="_blank">processed derivatives</a> as well. 
+
+<pre class="folder-tree">
+hbcd/
+|__ rawdata/ 
+    |__ sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw sensor data</span>
+        |__ ses-<span class="label">&lt;label&gt;</span>/
+            |__ gabi/
+</pre>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -70,9 +76,14 @@
 
 ## Instrument Details
 
-**Infant heart rate sensor data** collected by the infant heart rate wearable sensor for HBCD captures information related to the infant's physiology and sleep. The device is fastened to the infant's upper arm with a soft-textile band. The photoplethysmography (PPG) sensors (one emitting green light PPG and one emitting red light PPG) embedded in the device allow for the collection of three biosignals: **pulse rate** (beats per minute), **blood oxygen saturation** (SpO<sub>2</sub>, percentage), and **respiratory rate** (breaths per minute). These biosignal estimates are sampled at 1 Hz. 
+**Infant heart rate sensor data** collected by the infant heart rate wearable sensor for HBCD captures information related to the infant's physiology and sleep. The device is fastened to the infant's upper arm with a soft-textile band. The photoplethysmography (PPG) sensors (one emitting green light PPG and one emitting red light PPG) embedded in the device allow for the collection of three biosignal estimates sampled at 1 Hz: 
+
+ - **Rulse rate** (beats per minute)
+ - **Blood oxygen saturation** (SpO<sub>2</sub>, percentage)
+ - **Respiratory rate** (breaths per minute)
 
 In addition, sleep states are derived from these vital sign data. Data collection is planned for 72 continuous hours. Caregivers followed typical routines, removing the sensor only for water exposure (e.g., baths) and repositioning it afterward. See [Pini et al. 2024](https://www.sciencedirect.com/science/article/pii/S1878929324001075?via%3Dihub) for a full measure description.
+
 
 ## References
 
