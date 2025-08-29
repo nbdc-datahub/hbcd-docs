@@ -329,7 +329,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Instrument</th>
+      <th style="width: 10%; text-align: center;">Instrument</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
       <th style="width: 20%; text-align: center;"><span class="tooltip tooltip-left">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span><br>
@@ -341,11 +341,11 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <tr>
       <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/gabi" target="_blank">GABI</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Regulation (Sleep State Sycles)/Autonomic Function</td>
-      <td style="word-wrap: break-word; white-space: normal;"><code></code></td>
-      <td style="word-wrap: break-word; white-space: normal;">NA</td>
+      <td style="word-wrap: break-word; white-space: normal;">CHECK<code></code></td>
+      <td style="word-wrap: break-word; white-space: normal;">CHECK</td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaires</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Motor behavior, physical activity, sleep</td>
       <td style="word-wrap: break-word; white-space: normal;"><code>nt_ch_sens__qtn_1</code><br>
           <code>nt_ch_sens__qtn_2</code><br>
