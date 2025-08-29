@@ -1,4 +1,4 @@
-# ASSIST V1/V2/V3
+# ASSIST
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -6,7 +6,7 @@
 </div>
 <p></p>
 
-**Full Name**: Alcohol, Smoking and Substance Involvement Screening Test V1.0, V2.0, and V3.0 
+**Full Name**: Alcohol, Smoking and Substance Involvement Screening Test 
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -27,6 +27,9 @@
 <tr><td><strong>ASSIST V3</strong></td>
 <td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy</td>
 <td><code>pex_bm_assistv3</code></td></tr>
+<tr><td><strong>ASSIST V4</strong></td>
+<td style="word-wrap: break-word; white-space: normal;">????</td>
+<td><code>pex_bm_assistv4</code></td></tr>
 </tbody>
 </table>
 
@@ -59,56 +62,28 @@
 <p>It was difficult for some participants to self-report the typical size of a single drink (in oz) to capture ‘standard drinks’ of alcohol for ASSIST, leading to some reports falling outside the expected range. Similarly, reporting the frequency of use for substances like electronic cigarette devices proved difficult, resulting in outliers. While sites were queried on these outliers, participants could not always be re-contacted for clarification.</p> 
 </div>
 
-
 ## Administration & Quality Control
 
-#### Common to All Versions
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr><td><b>Child Specific</b></td>
 <td>No</td></tr>
+<tr><td><b>Respondent</b></td>
+<td style="word-wrap: break-word; white-space: normal;">Pregnant Participant <strong>[V1]</strong>; Birth Parent <strong>[V2]</strong>; Birth Parent or Primary Caregiver <strong>[V3, V4]</strong></td></tr>
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in-person (except in Alabama, where participants were trained to self-administer)</td></tr>
-</tbody>
-</table>
-
-#### Version-Specific Items
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-<td>&nbsp;</td>
-<td style="text-align: center;"><b>ASSIST V1</b></td>
-<td style="text-align: center;"><b>ASSIST V2</b></td>
-<td style="text-align: center;"><b>ASSIST V3</b></td>
-</tr>
-</thead>
-<tbody>
-<tr><td><b>Respondent</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Pregnant Participant</td>
-<td style="word-wrap: break-word; white-space: normal;">Birth Parent</td>
-<td style="word-wrap: break-word; white-space: normal;">Person who gave birth or Primary Caregiver</td>
-</tr>
 <tr><td><b>Visits</b></td>
-<td>V01</td>
-<td>V02</td>
-<td>V03</td>
-</tr>
+<td>V01, V02, V03, V04</td></tr>
 <tr><td><b>Completion Time</b></td>
-<td>5 min</td>
-<td>5 min</td>
-<td>3 min</td>
-</tr>
+<td>5 min <strong>[V1, V2]</strong>; 3 min <strong>[V3, V4]</strong></td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers and additionally cross-checked with TLFB to ensure consistency in reported substances.</td>
-<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers and additionally cross-checked with TLFB to ensure consistency in reported substances.</td>
-<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers.</td>
-</tr>
+<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers and, for V1 and V2, additionally cross-checked with TLFB to ensure consistency in reported substances.</td></tr>
 </tbody>
 </table>
 
 ## Instrument Details
 
-The HBCD ASSIST V1, V2, and V3 measures were modified from the [NIDA Quick Screen (Modified ASSIST)](https://nida.nih.gov/sites/default/files/pdf/nmassist.pdf) and included questions from the Family History Assessment Module (FHAM) and the All of Us Personal and Family Health History. The original NIDA quick screen was scored; however, our version is not scored. To acknowledge these changes in future publications, authors can note that questions were motivated from the NIDA Modified ASSIST.
+The HBCD ASSIST measures were modified from the [NIDA Quick Screen (Modified ASSIST)](https://nida.nih.gov/sites/default/files/pdf/nmassist.pdf) and included questions from the Family History Assessment Module (FHAM) and the All of Us Personal and Family Health History. The original NIDA quick screen was scored; however, our version is not scored. To acknowledge these changes in future publications, authors can note that questions were motivated from the NIDA Modified ASSIST.
 
 The NIDA quick screen tool (*have you used alcohol, tobacco, prescription drugs, or illegal drugs in the last year*) was modified to assess more details regarding types of substances used and the timeline of use before and during pregnancy - see [HBCD Modification Details](#hbcd-mod) for modifications made to each instrument version. In addition, for lifetime and problematic use, and use pre-pregnancy, pregnancy, end-pregnancy, post-pregnancy, and past 3 months, use was greatly expanded - see [Expanded ASSIST Substance Type Options](#substance-options).
 

@@ -552,7 +552,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </td>
 </tr>
 <tr class="section-su">
-  <td rowspan="3"><a href="pregexp/su/assist" target="_blank">ASSIST</a></td>
+  <td rowspan="4"><a href="pregexp/su/assist" target="_blank">ASSIST</a></td>
   <td>V1.0</td>
   <td>Substance use before and during pregnancy</td>
   <td><code>pex_bm_assistv1</code></td>
@@ -566,6 +566,11 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <td>V3.0</td>
   <td>Substance use post-pregnancy</td>
   <td><code>pex_bm_assistv3</code></td>
+</tr>
+<tr class="section-su">
+  <td>V4.0</td>
+  <td>?????</td>
+  <td><code>pex_bm_assistv4</code></td>
 </tr>
 <tr class="section-su">
   <td><a href="pregexp/su/tlfb" target="_blank">TLFB</a></td>
