@@ -529,6 +529,12 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <td><code>pex_bm_assistv4</code></td>
 </tr>
 <tr class="section-su">
+  <td><a href="pregexp/su/su-patterns" target="_blank">Substance Use Patterns</a></td>
+  <td></td>
+  <td>Substance Use in Pregnancy</td>
+  <td><code>pex_bm_subst</code></td>
+</tr>
+<tr class="section-su">
   <td><a href="pregexp/su/tlfb" target="_blank">TLFB</a></td>
   <td></td>
   <td>Substance use before and during pregnancy</td>

@@ -119,6 +119,7 @@ nav:
                 - Postnatal Depression: instruments/pregexp/mh/epds.md
             - Substance Use:
                 - ASSIST: instruments/pregexp/su/assist.md
+                - Substance Use Patterns: instruments/pregexp/su/su-patterns.md
                 - TLFB: instruments/pregexp/su/tlfb.md
         - Social & Environmental Determinants:
             - ACEs: instruments/SED/aces.md
