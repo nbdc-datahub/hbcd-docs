@@ -7,9 +7,6 @@
 **Table Name**: `sed_cg_via`    
 **Construct:** Acculturation
 
-
-
-
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
@@ -23,7 +20,7 @@
 <div class="alert-collapsible-content">
 <p>Please do not mention or ask participants about immigration or documentation status. They should only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided.</p>
 
-<p style="color: red;">Luci note: this looks like internal documentation that is not relevant to the end user (who do not interact at all with the study participants). Perhaps remove or rephrase like so:<br>
+<p style="color: red;">Luci note: this is great, but the way it is currently phrased looks like internal documentation that is not relevant to the end user/researchers using the data (who do not interact with study participants). I would maybe move this to the Instrument Details section and rephrase like so:<br>
 "Participants are not asked about immigration or documentation status. The intent is that they only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided."</p>
 </div>
 
@@ -50,7 +47,7 @@
   <li>Acculturation surveys may make some individuals feel excluded or othered. However, this measure aims to capture the process and understand an individual's personal preferences for taking part in their personal family cultural values as well as those of "American" culture.</li>
   <li>Participants are allowed to choose more than one culture to account for individuals who may live in multicultural households.</li>
 </ul>
-<p style="color: red;">Luci note: the documentation above is great, but I think they belong in a different section than QC - perhaps move to the Responsible Use section or Instrument Details?</p>
+<p style="color: red;">Luci note: the documentation above is great, but I think they belong in a different section than QC - perhaps move to the Responsible Use section or Instrument Details? QC describes checks made to make sure the data isn't incorrect/corrupted somehow, such as checking for missingness</p>
 </td></tr>      
 </tbody>
 </table>
