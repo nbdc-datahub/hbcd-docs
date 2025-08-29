@@ -5,6 +5,7 @@
   <li><b>Workgroup</b>: Novel Tech & Wearables</li>
   <li><b>Contact</b>: nicolo.pini92@gmail.com</li>
   <li><b>Additional comments/questions you have about this form</b>: my institutional email is not gmail based so I could not submit this form using np2600@cumc.columbia.edu (which would be the preferred email) and using my person one.</li>
+  <li><b>NOTE FROM LUCI</b>: need to clarify whether this is file-based or tabulated data and update the file/table name accordingly, but the essential info below is ready for RUDC review</li>
 </ul>
 </ul>
 </p>
