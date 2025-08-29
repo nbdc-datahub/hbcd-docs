@@ -83,7 +83,7 @@ nav:
             - MLDS: instruments/neurocog/mlds.md
             - SPM-2: instruments/neurocog/spm2.md
         - Novel Tech & Wearable Sensors:
-            - Wearable Sensors: instruments/sensors/wearsensors.md
+            - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
         - Physical Health:
             - Breastfeeding: instruments/physhealth/bf.md
