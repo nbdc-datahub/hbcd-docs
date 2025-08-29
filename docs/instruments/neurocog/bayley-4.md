@@ -73,15 +73,7 @@
 
 ## Instrument Details
 
-<p>
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Publisher documentation for the Bayley-4 is available <a href="https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Cognition-%26-Neuro/Bayley-Scales-of-Infant-and-Toddler-Development-%7C-Fourth-Edition/p/100001996" target="_blank">here</a>.
-  </span>
-</div>
-</p>
-
-The **Bayley Scales of Infant and Toddler Development, Fourth Edition**, is an established, commercially available measure of early development. The test provides an estimate of the child's cognitive, language, and motor skills. The **Language Domain** evaluates both receptive and expressive communication skills. The **Motor Domain** evaluates both fine and gross motor skills. The **Social-Emotional** and **Adaptive Behavior** Scales of the Bayley-4 were not administered in this study.
+The **Bayley Scales of Infant and Toddler Development, Fourth Edition**, is an established, commercially available measure of early development. The test provides an estimate of the child's cognitive, language, and motor skills. The **Language Domain** evaluates both receptive and expressive communication skills. The **Motor Domain** evaluates both fine and gross motor skills. The **Social-Emotional** and **Adaptive Behavior** Scales of the Bayley-4 were not administered in this study. Publisher documentation for the Bayley-4 is available [here](https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Cognition-%26-Neuro/Bayley-Scales-of-Infant-and-Toddler-Development-%7C-Fourth-Edition/p/100001996).
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
