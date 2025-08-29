@@ -1,4 +1,4 @@
-# ASSIST V1/V2/V3
+# ASSIST
 
 **Full Name**: Alcohol, Smoking and Substance Involvement Screening Test V1.0, V2.0, and V3.0                            
 
