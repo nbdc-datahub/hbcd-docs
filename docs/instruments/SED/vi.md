@@ -1,13 +1,5 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-<p style="color: red;">ADMIN NOTES FOR PAGE CONSTRUCTION:<br>
-<ul style="color: red;">
-  <li><b>Workgroup</b>: Social & Environmental Determinants</li>
-  <li><b>Contact</b>: montoyawid@chop.edu</li>
-</ul>
-</ul>
-</p>
-
 # Vancouver Index of Acculturation (VIA)
 
 **Full Name**: Vancouver Index of Acculturation       
