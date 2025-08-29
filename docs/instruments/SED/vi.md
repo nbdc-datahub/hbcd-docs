@@ -1,37 +1,65 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>NEW README NOT YET SUBMITTED VIA GOOGLE FORMS</i> 🚧 </p>
 
-## Vancouver Index of Acculturation
+<p style="color: red;">ADMIN NOTES FOR PAGE CONSTRUCTION:<br>
+<ul style="color: red;">
+  <li><b>Workgroup</b>: Social & Environmental Determinants</li>
+  <li><b>Contact</b>: montoyawid@chop.edu</li>
+</ul>
+</ul>
+</p>
 
-**Full Name**: Vancouver Index of Acculturation     
-**Acronym**: Vancouver Index/VI    
-**Table Name**: `sed_cg_via`   
+# Vancouver Index of Acculturation (VIA)
+
+**Full Name**: Vancouver Index of Acculturation       
+**Acronym:** VIA           
+**Table Name**: `sed_cg_via`    
 **Construct:** Acculturation
 
-## Administration & Quality Control
+<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Responsible Use Warning</span>
+  <a class="anchor-link" href="#alert" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="alert-collapsible-content">
+<p>Please do not mention or ask participants about immigration or documentation status. They should only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided.</p>
+</div>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr><td><b>Child Specific</b></td>
-<td></td></tr>
+<td>No</td></tr>
 <tr><td><b>Respondent</b></td>
-<td></td></tr>
+<td>Birth Parent or Primary Caregiver</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;"></td></tr>
+<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff or Self administered, in person or remote</td></tr>
 <tr><td><b>Visits</b></td>
-<td></td></tr>
+<td>V05</td></tr>
 <tr><td><b>Completion Time</b></td>
-<td></td></tr>
+<td>5 min</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;"></td></tr>      
+<td style="word-wrap: break-word; white-space: normal;">
+<ul>
+  <li>Only individuals who themselves, their spouses/partners or any of the child's grandparents are identified as having been born outside the US should be filling out this survey. REDCap should end after those screening questions for those who identify themselves, their spouse/caregiver, and all grandparents as all being born in the US.</li>
+  <li>This measure does not specifically define what "American" should mean, but allows the participant to decide what it means to them.</li>
+  <li>Acculturation surveys may make some individuals feel excluded or othered. However, this measure is aiming to capture the process and understand an individual's personal preferences for taking part in their personal family cultural values as well as those of "American" culture</li>
+  <li>Participants are allowed to choose more than one culture to account for individuals who may live in multicultural households.</li>
+</ul>
+</td></tr>      
 </tbody>
 </table>
 
 ## Instrument Details
 
-ADD DESCRIPTION HERE
+**Acculturation** is a cultural change that occurs when individuals from one cultural background come into continuous, first-hand contact with another cultural setting. This happens when immigrants emigrate from their heritage culture to a receiving culture, in this case the United States or “American” culture. Acculturation may also happen when second-generation US-born individuals with foreign-born parents experience a family/heritage culture in their home and upbringing that is different from the environmental culture they were born into, in this case “American” culture. This first-hand contact may result in individual changes (i.e., values, attitudes, beliefs, and identities) and group changes (i.e., social and cultural systems). 
 
+The **Vancouver Index of Acculturation (VIA)** measures acculturation orientations, or the way immigrants prefer to relate to the society of settlement (cultural adoption) and country of origin (cultural maintenance). For this study, we use the terms “family culture” for a participant’s heritage/ethnic cultural practices and “American culture” for cultural practices that are part of mainstream American culture. In VIA, concepts are not unidimensional where an individual can either maintain the culture of origin OR adopt the culture of settlement. The VIA seeks to understand the participant’s personal preferences for taking part in their family culture as well as those of American culture, if they are different.
 
+Some immigrants may consider American culture as their family culture. They can select “none” to indicate they do not identify with a culture other than American. We attempted to capture many different countries, ethnicities, and religions for participants to select. However, if a participant’s family culture is not listed, they can select “None of these apply/My family culture is not listed”.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -44,22 +72,22 @@ ADD DESCRIPTION HERE
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>General</b><br>
-The language of the survey was updated to replace "Native” with “Family” and “Mainstream” with “Other American”.</p>
-<p><b>Instructions Modifications</b><br>
-The following instruction text was added:<br>
-<i>Many of these questions are about your culture. In this country, people come from a lot of
-different cultures. There are many words to describe these cultures, such as the culture of
-your family, a country where you or your family members were born, an ethnicity, or a
-religion. We refer to these below as your "family culture." While we ALL live in America, when
-we refer to "American" culture in the following items, we mean cultural practices or traditions
-that are NOT part of your family's ethnic, religious, or other cultural practices, but that are
-practiced often as part of "American" culture.<br>
-Please select all that apply.<br>
-If you do not identify with a culture other than American, select "none". If your family culture
-is not listed, select "None of these apply/My family culture is not listed".</i></p> 
-<p><b>Assessment Items</b><br>
-The following item was removed: "I would be willing to marry a person from my native culture."</p>
+<p>The order of questions is flipped in the HBCD English and Spanish version. This will affect scoring as the scoring instructions lump all the odd (heritage culture answers) and even (American culture) questions. This needs to be fixed so that the second-to-last and last questions on the HBCD survey are reversed.</p> 
+</div>
+
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>The family culture subscore is the mean of the items asking about family culture, whereas the mainstream subscore is the mean of the items asking about American culture.</p>
+<p>If a participant chooses 777 (Decline to answer), or 999 (Don't know), please do not include those values in the score.</p>
 </div>
 
 ## References
