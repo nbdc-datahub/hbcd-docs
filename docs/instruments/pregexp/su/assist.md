@@ -1,4 +1,4 @@
-# ASSIST V1/V2/V3
+# ASSIST
 
 **Full Name**: Alcohol, Smoking and Substance Involvement Screening Test V1.0, V2.0, and V3.0                            
 
@@ -56,47 +56,20 @@
 
 ## Administration & Quality Control
 
-#### Common to All Versions
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr><td><b>Child Specific</b></td>
 <td>No</td></tr>
+<tr><td><b>Respondent</b></td>
+<td style="word-wrap: break-word; white-space: normal;">Pregnant Participant <strong>[V1]</strong>; Birth Parent <strong>[V2]</strong>; Birth Parent or Primary Caregiver <strong>[V3]</strong></td></tr>
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in-person (except in Alabama, where participants were trained to self-administer)</td></tr>
-</tbody>
-</table>
-
-#### Version-Specific Items
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-<td>&nbsp;</td>
-<td style="text-align: center;"><b>ASSIST V1</b></td>
-<td style="text-align: center;"><b>ASSIST V2</b></td>
-<td style="text-align: center;"><b>ASSIST V3</b></td>
-</tr>
-</thead>
-<tbody>
-<tr><td><b>Respondent</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Pregnant Participant</td>
-<td style="word-wrap: break-word; white-space: normal;">Birth Parent</td>
-<td style="word-wrap: break-word; white-space: normal;">Person who gave birth or Primary Caregiver</td>
-</tr>
 <tr><td><b>Visits</b></td>
-<td>V01</td>
-<td>V02</td>
-<td>V03</td>
-</tr>
+<td>V01, V02, V03</td></tr>
 <tr><td><b>Completion Time</b></td>
-<td>5 min</td>
-<td>5 min</td>
-<td>3 min</td>
-</tr>
+<td>5 min <strong>[V1, V2]</strong>; 3 min <strong>[V3]</strong></td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers and additionally cross-checked with TLFB to ensure consistency in reported substances.</td>
-<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers and additionally cross-checked with TLFB to ensure consistency in reported substances.</td>
-<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers.</td>
-</tr>
+<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers and, for V1 and V2, additionally cross-checked with TLFB to ensure consistency in reported substances.</td></tr>
 </tbody>
 </table>
 
