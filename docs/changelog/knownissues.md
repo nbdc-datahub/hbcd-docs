@@ -15,6 +15,12 @@ Instruction text in the form's metadata is extracted programmatically from the m
 
 ## Basic Demographics
 
+##### ⚠️ Income Not Displayed For All Participants
+
+In rare cases, the `Income` field in Basic Demographics (sed_basic_demographics) may not be displayed for certain participants. This issue results from errors in transferring data from the REDCap Demographics form (`sed_bm_demo`) into the Basic Demographics. For complete income information, please reference the original source field in `sed_bm_demo`.
+
+**Expected Fix:** Release 1.1   
+
 ##### ⚠️ Duplicate Options for 'Mother Race' Variable
 The variable 'Mother Race' (`sed_basic_demographics_screen_mother_race`) has duplicate options for the selection of 'Black African American' (option #3). This option is not used for data entry, and instead the 'Black_or African American' option (option #5) should be used. No other variables are affected by this.       
 
@@ -117,6 +123,7 @@ Users should be aware that each item for the EPDS is duplicated (for example, `e
 **Expected fix:** Release 1.1
 
 ## Social & Environmental Determinants
+
 ##### ⚠️ Blank Cells in PhenX Discrimination Survey
 For the PhenX+ Discrimination survey, one of the multi-select questions (column `sed_bm_phx__discr.006`: *"What do you think is the main reason for these experiences? If more than one main reason, check all that apply."*) is blank for some participants.       
 
