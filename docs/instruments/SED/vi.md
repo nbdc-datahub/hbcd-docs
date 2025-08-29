@@ -52,8 +52,6 @@
 </tbody>
 </table>
 
-
-
 ## Instrument Details
 
 **Acculturation** is a cultural change that occurs when individuals from one cultural background come into continuous, first-hand contact with another cultural setting. This happens when immigrants emigrate from their heritage culture to a receiving culture, in this case the United States or “American” culture. Acculturation may also happen when second-generation US-born individuals with foreign-born parents experience a family/heritage culture in their home and upbringing that is different from the environmental culture they were born into, in this case “American” culture. This first-hand contact may result in individual changes (i.e., values, attitudes, beliefs, and identities) and group changes (i.e., social and cultural systems). 
@@ -91,7 +89,7 @@ Some immigrants may consider American culture as their family culture. They can 
 <p>The family culture subscore is the mean of the items asking about family culture, whereas the mainstream subscore is the mean of the items asking about American culture.</p>
 <p>If a participant chooses 777 (Decline to answer), or 999 (Don't know), please do not include those values in the score.</p>
 
-<p style="color: red;">Luci note: the second note looks like internal documentation. if summary scores are included in data release and already follow this, perhaps rephrase to: "Non-responses ("Decline to answer" or "Don't know") are not included in the score."</p> 
+<p style="color: red;">Luci note: the second note looks like internal documentation. if summary scores are to be included in data release and will already follow this rule, perhaps rephrase to: "Non-responses ("Decline to answer" or "Don't know") are not included in the score."</p> 
 </div>
 
 ## References
