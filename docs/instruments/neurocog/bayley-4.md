@@ -63,10 +63,13 @@
     <li>Mean and range checks were also done on items and summary scores across the overall cohort to assess deviations. These findings informed RA trainings.</li>
     <li>Completion rates were monitored for the overall consortium and at the site level to address any additional training needed.</li>
 </ul>
-</td></tr>      
+</td></tr>    
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;"><b>QC Procedures-ALT</b></td>
+  <td style="word-wrap: break-word; white-space: normal;">HBCD Study staff were trained and certified by experienced Bayley administrators to ensure adherence to standardized procedures. During testing, responses were entered into QGlobal (Pearson’s official scoring platform for the Bayley Scales), which automatically applied scoring rules and generated standardized scores. Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations. Completion rates were monitored across sites, with additional training provided when needed.</td>
+</tr>  
 </tbody>
 </table>
-
 
 ## Instrument Details
 
