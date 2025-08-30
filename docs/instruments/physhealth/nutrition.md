@@ -1,8 +1,7 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
-<p style="font-size: 1.5em;">⚠️ <i>NEW README NOT YET SUBMITTED</i></p>
+<p style="font-size: 1.5em;">⚠️ <i>README NOT YET SUBMITTED</i></p>
 
 # Nutrition Questionnaire
-
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -46,7 +45,7 @@
 <tr><td><b>Administration</b></td>
 <td>Remote survey</td></tr>
 <tr><td><b>Visits</b></td>
-<td></td></tr>
+<td>VXX <strong>[Infant]</strong>; VXX <strong>[Child]</strong></td></tr>
 <tr><td><b>Completion Time</b></td>
 <td></td></tr>
 <tr><td><b>Quality Control</b></td>
