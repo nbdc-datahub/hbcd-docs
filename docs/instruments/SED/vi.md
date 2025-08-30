@@ -20,7 +20,7 @@
 <div class="alert-collapsible-content">
 <p>Please do not mention or ask participants about immigration or documentation status. They should only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided.</p>
 
-<p style="color: red;">Luci note: this is great, but the way it is currently phrased looks like internal documentation that is not relevant to the end user/researchers using the data (who do not interact with study participants). I would maybe move this to the Instrument Details section and rephrase like so:<br>
+<p style="color: red;">Luci note: this is great, but the way it is currently phrased looks like internal documentation that is not relevant to the end user/researchers using the data (who do not interact with study participants). I would perhaps move this to the Instrument Details section and rephrase like so:<br>
 "Participants are not asked about immigration or documentation status. The intent is that they only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided."</p>
 </div>
 
@@ -41,7 +41,7 @@
 <td style="word-wrap: break-word; white-space: normal;">
 <ul>
   <li>Only individuals who themselves, their spouses/partners or any of the child's grandparents are identified as having been born outside the US should be filling out this survey. REDCap should end after those screening questions for those who identify themselves, their spouse/caregiver, and all grandparents as all being born in the US.<br>
-  <p style="color: red;">Luci suggested rewrite to emphasize QC relevance: "The VIA is administered only if the caregiver, spouse/partner, or any of the child's grandparent were born outside the U.S. If all are U.S.-born, the survey platform (REDCap) automatically ends the questionnaire after the screening questions."
+  <p style="color: red;">Luci suggested rewrite to emphasize QC relevance and process: "The VIA is administered only if the caregiver, spouse/partner, or any of the child's grandparents were born outside the U.S. If all are U.S.-born, the survey platform (REDCap) automatically ends the questionnaire after the screening questions."
   </p></li>
   <li>This measure does not specifically define what "American" should mean, but allows the participant to decide what it means to them.</li>
   <li>Acculturation surveys may make some individuals feel excluded or othered. However, this measure aims to capture the process and understand an individual's personal preferences for taking part in their personal family cultural values as well as those of "American" culture.</li>
