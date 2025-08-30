@@ -203,6 +203,12 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td>Irritability</td>
     <td><code>mh_cg_mapstl__tod</code></td>
   </tr>
+    <tr>
+    <td><a href="bcgi/ssfp" target="_blank">SSFP</a></td>
+    <td></td>
+    <td>Caregiver-Child Interaction</td>
+    <td><code>mh_ch_pcx</code></td>
+  </tr>
   </tbody>
   </table>
 </div>
