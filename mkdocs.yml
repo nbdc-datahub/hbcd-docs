@@ -68,11 +68,10 @@ nav:
   - Study Instruments:
     - Instruments Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
-    - Administrative:
-        - 🚧 Study Navigators Contact Form: instruments/admin/study-navigators.md
-        - 🚧 Transition in Care Screener: instruments/admin/transitions-in-care.md
-    - Demographics & Visit Information:
+    - Administrative & Demographics:
         - Basic Demographics: instruments/demo/basicdemo.md
+        - 🚧 Study Navigators Contact Form: instruments/admin/study-navigators.md
+        - ⚠️ Transition in Care Screener: instruments/admin/transitions-in-care.md
         - Visit Information: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 

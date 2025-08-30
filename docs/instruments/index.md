@@ -52,7 +52,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <thead>
     <tr>
       <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
+      <th style="text-align: center;">Version</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
@@ -61,13 +61,13 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
     <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
-    <td style="word-wrap: break-word; white-space: normal;">Administrative</td>
+    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention (Administrative)</td>
     <td><code>TBD</code></td>
   </tr>
     <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
     <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
-    <td style="word-wrap: break-word; white-space: normal;">Administrative</td>
+    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention (Administrative)</td>
     <td><code>TBD</code></td>
   </tr>
   </tbody>

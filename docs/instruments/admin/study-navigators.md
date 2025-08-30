@@ -1,10 +1,9 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
 
 # Study Navigator Contact Form
-
-**Full Name**: Study Navigator Contact Form           
-**Acronym**: SN Contact Form            
-**Table Name**: `XXXXX`
+      
+**Table Name**: `TBD`         
+**Construct**: Recruitment/Retention
 
 ## Administration & Quality Control
 
