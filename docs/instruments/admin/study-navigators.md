@@ -1,5 +1,10 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
 
+<p style="color: red;">ADMINISTRATIVE NOTES<br>
+<b>Additional comments/questions you have about this form</b>:
+"This form is different from the other validated/standardized assessments in HBCD. I have no idea what kind of detail is required for the QC (or if it is needed at all). I am not sure the data warnings or the RUD are appropriate or detailed enough. Please advise." 
+</p>
+
 # Study Navigator Contact Form
       
 **Table Name**: `TBD`         
@@ -30,7 +35,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>The Study Navigator Contact Form was created for the HBCD study and is being tested as a valuable document for characterizing participant contacts and support. The form was developed by integrating valuable metrics from documents used in similar support professions such as certified peer support specialists. Use of the form was strongly encouraged, but not mandatory for the HBCD sites to complete.</p> 
+<p>The Study Navigator Contact Form was created for the HBCD Study and is being tested as a valuable document for characterizing participant contacts and support. The form was developed by integrating valuable metrics from documents used in similar support professions such as certified peer support specialists. Use of the form was strongly encouraged, but not mandatory, for the HBCD sites to complete.</p> 
 </div>
 
 ## Administration & Quality Control
@@ -40,7 +45,7 @@
 <tr><td><b>Child Specific</b></td>
 <td>No</td></tr>
 <tr><td><b>Respondent</b></td>
-<td>Study Navigator or Person who is offering Study Navigator services</td></tr>
+<td>Study Navigator or person who is offering Study Navigator services</td></tr>
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff in person</td></tr>
 <tr><td><b>Visits</b></td>
@@ -48,13 +53,13 @@
 <tr><td><b>Completion Time</b></td>
 <td>5-10 min</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">This form is under development for HBCD. Data was collected with guidance using the SN Contact Form Guide (<a href="../SNContactFormCompanionGuideOutline_Pilot_V4-HH.pdf">see attachment</a>).</td></tr>      
+<td style="word-wrap: break-word; white-space: normal;">This form is under development for HBCD. Data was collected with guidance using the <a href="../SNContactFormCompanionGuideOutline_Pilot_V4-HH.pdf" target="_blank">HBCD Study Navigation Contact Form Guide</a>.</td></tr>      
 </tbody>
 </table>
 
 ## Instrument Details
 
-Mistrust among pregnant individuals who use substances can present significant barriers to recruitment and retention. To address this, the HBCD Study employs a novel approach: integrating Study Navigators, support professionals such as certified peer support specialists, into the research team. This model enhances recruitment, engagement, and retention, particularly among marginalized and underrepresented populations. The inclusion of Study Navigators represents a paradigm shift in longitudinal research, placing greater emphasis on participant support and human-centered engagement.
+Mistrust among pregnant individuals who use substances can present significant barriers to recruitment and retention. To address this, the HBCD Study employs a novel approach of integrating **Study Navigators (support professionals such as certified peer support specialists)** into the research team. This model enhances recruitment, engagement, and retention, particularly among marginalized and underrepresented populations. The inclusion of Study Navigators represents a paradigm shift in longitudinal research, placing greater emphasis on participant support and human-centered engagement.
 
 For details on the conceptual framework, core skills, training, and team integration of support professionals, see [Hilliard et al. 2025](https://doi.org/10.1016/j.dcn.2024.101495).
 
@@ -64,7 +69,7 @@ The **Study Navigator Contact Form** included in the data release captures visit
 - Support topics discussed
 - Actions taken during each contact
 
-Note that the data is not scored. It is descriptive data about the type/provision of Study Navigator supports and contacts. 
+Note that the data is not scored: it is descriptive data about the type/provision of Study Navigator supports and contacts. 
 
 ## References
 

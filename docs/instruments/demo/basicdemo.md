@@ -11,7 +11,6 @@
 </div>
 </p>
 
-
 Basic Demographics is derived information computed from: 
 
 - A subset of **V01 Demographics** (`sed_bm_demo`) Social & Environmental Determinants domain instrument variables 
