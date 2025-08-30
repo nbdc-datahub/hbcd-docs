@@ -418,10 +418,10 @@ Each instrument name links to a dedicated page with detailed documentation for t
     <td><code>ph_cg_screenq</code></td>
     </tr>
     <tr>
-    <td>Vision Screener</td>
-    <td></td>
-    <td>Vision</td>
-    <td><code>ph_ch_vs</code></td>
+      <td><a href="physhealth/vision" target="_blank">Vision Screener</a></td>
+      <td></td>
+      <td>Vision</td>
+      <td><code>ph_ch_vs</code></td>
     </tr>
   </tbody>
   </table>

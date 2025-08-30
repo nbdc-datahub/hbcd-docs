@@ -40,7 +40,7 @@ ADD CONTENT
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Response options "Decline to answer" and "Don’t know" were added for the HBCD version of this instrument. The impact on scoring is described under <a href="#scoring">Scoring Procedures</a> below.</p>
+<p>The HBCD ScreenQ includes additional response options "Decline to answer" and "Don’t know." The impact on scoring is described under <a href="#scoring">Scoring Procedures</a> below.</p>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
@@ -54,8 +54,9 @@ ADD CONTENT
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>A summary sccore is not computed If data are missing. Note that "Decline to answer" and "Don’t know" (additional response options incorporated for HBCD) are both considered missing/non-responses and any questionnaire that includes those answers should not have a summative score calculated. Researchers can decide how to deal with missingness.</p>
+<p>ADD DESCRIPTION OF SCORING PROCEDURES</p>
+<p>A summary sccore is not computed if data are missing. Note that "Decline to answer" and "Don’t know" (additional response options incorporated for HBCD) are both considered missing/non-responses; any questionnaire that includes those answers should not have a summative score calculated. Researchers can decide independently how to handle missingness.</p>
 </div>
-
+<br>
 
 
