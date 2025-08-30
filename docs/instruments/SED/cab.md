@@ -1,8 +1,8 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 - waiting on README submissiong</i> 🚧 </p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
+<p style="font-size: 1.5em;">⚠️ <i>NEW README NOT YET SUBMITTED</i>. Info for HCBD Modifications and Scoring Procedures sections pulled from old documentation provided, so these sections can be skipped in the google form, but WG should confirm that the info is still accurate</p>
 
-# Composite Abuse Scale
-
-**Full Name**: Composite Abuse Scale Revised - Short Form                     
+# Composite Abuse Scale - Short Form
+              
 **Acronym**: CABr-SF                         
 **Table Name**: `sed_cg_cabr_sf`              
 **Construct**: Intimate Partner Violence
@@ -27,6 +27,8 @@
 </table>
 
 ## Instrument Details
+
+ADD CONTENT 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-gear"></i></span>

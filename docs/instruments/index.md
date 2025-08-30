@@ -351,64 +351,75 @@ Each instrument name links to a dedicated page with detailed documentation for t
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 40%; text-align: center;">Instrument</th>
-      <th style="width: 40%; text-align: center;">Construct</th>
-      <th style="width: 40%; text-align: center;">Table Name</th>
+      <th style="width: 25%;">Instrument</th>
+      <th>Version</th>
+      <th style="width: 25%;">Construct</th>
+      <th style="width: 25%;">Table Name</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
+      <td></td>
       <td>Food insecurity</td>
       <td><code>sed_cg_foodins</code></td>
     </tr>
     <tr>
-    <td>BISQ-SF</td>
-    <td>Sleep</td>
-    <td><code>ph_cg_bisq</code></td>
+      <td><a href="physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
+      <td></td>
+      <td>Sleep</td>
+      <td><code>ph_cg_bisq</code></td>
     </tr>
     <tr>
       <td><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
+      <td></td>
       <td>Nutrition</td>
       <td><code>ph_cg_phx__bfh</code></td>
     </tr>
     <tr>
-    <td>Child Nutrition Questionnaire</td>
-    <td>Nutrition</td>
-    <td><code>ph_cg_cnq</code></td>
+      <td><a href="physhealth/ecpromis-pags" target="_blank">ecPROMIS- Physical Activity/Greenspace</a></td>
+      <td>Early Childhood</td>
+      <td>Physical Activity</td>
+      <td><code>ph_cg_pms__pags</code></td>
     </tr>
     <tr>
-    <td>ecPROMIS - Physical Activity/Greenspace</td>
-    <td>Physical Activity</td>
-    <td><code>ph_cg_pms_i_pags</code></td>
-    </tr>
-    <tr>
-    <td>ecPROMIS - Sleep</td>
-    <td>Sleep</td>
-    <td><code>ph_cg_pms_i_sleep</code></td>
+      <td><a href="physhealth/ecpromis-sleep" target="_blank">ecPROMIS- Sleep</a></td>
+      <td>Early Childhood</td>
+      <td>Sleep</td>
+      <td><code>ph_cg_pms__sleep</code></td>
     </tr>
     <tr>
       <td><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
+      <td></td>
       <td>Growth</td>
       <td><code>ph_ch_anthro</code></td>
     </tr> 
     <tr>
-    <td>Infant Nutrition Questionnaire</td>
-    <td>Nutrition</td>
-    <td><code>ph_cg_inq<code></td>
+      <td rowspan="2"><a href="physhealth/nutrition" target="_blank">Nutrition Questionnaire</a></td>
+      <td>Infant</td>
+      <td>Nutrition</td>
+      <td><code>ph_cg_inq</code></td>
+    </tr>
+    <tr>
+      <td>Child</td>
+      <td>Nutrition</td>
+      <td><code>ph_cg_cnq</code></td>
     </tr>
     <tr>
     <td>Medical History</td>
+    <td></td>
     <td>Medical History</td>
-    <td><code>ph_cg_ecls_i_medhist</code></td>
+    <td><code>ph_cg_ecls__medhist</code></td>
     </tr>
     <tr>
     <td>ScreenQ - Media Use</td>
+    <td></td>
     <td>Media Use</td>
     <td><code>ph_cg_screenq</code></td>
     </tr>
     <tr>
     <td>Vision Screener</td>
+    <td></td>
     <td>Vision</td>
     <td><code>ph_ch_vs</code></td>
     </tr>

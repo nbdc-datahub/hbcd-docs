@@ -102,9 +102,13 @@ nav:
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
         - Physical Health:
+            - ⚠️ Brief Infant Sleep Questionnaire: instruments/physhealth/bisq-sf.md
             - Breastfeeding: instruments/physhealth/bf.md
+            - ⚠️ ecPROMIS- PA/GS: instruments/physhealth/ecpromis-pags.md
+            - ⚠️ ecPROMIS- Sleep: instruments/physhealth/ecpromis-sleep.md
             - Food Insecurity: instruments/physhealth/foodinsecurity.md
             - Growth: instruments/physhealth/growth.md
+            - ⚠️ Nutrition: instruments/physhealth/nutrition.md
         - Pregnancy & Exposures:
             - Pregnancy & Infant Health:
                 - Pregnancy Health: instruments/pregexp/preghealth/healthhx.md

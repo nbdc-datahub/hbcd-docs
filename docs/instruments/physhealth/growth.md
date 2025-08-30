@@ -1,7 +1,5 @@
-# Growth
-
-**Full Name**: Height/Weight/Head Circumference              
-**Acronym**: Growth                  
+# Height/Weight/Head Circumference (Growth)
+               
 **Table Name**: `ph_ch_anthro`       
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">

@@ -1,7 +1,5 @@
-# Food Insecurity
-
-**Full Name**: 2-item Food Insecurity                     
-**Acronym**: USDA short form                          
+# 2-item Food Insecurity (USDA Short Form)                       
+   
 **Table Name**: `sed_cg_foodins`       
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
