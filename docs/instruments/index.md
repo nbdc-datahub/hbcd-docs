@@ -61,13 +61,13 @@ Each instrument name links to a dedicated page with detailed documentation for t
   <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
     <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
-    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention (Administrative)</td>
+    <td style="word-wrap: break-word; white-space: normal;">Study Navigation</td>
     <td><code>TBD</code></td>
   </tr>
     <tr>
     <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
     <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
-    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention (Administrative)</td>
+    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
     <td><code>TBD</code></td>
   </tr>
   </tbody>
