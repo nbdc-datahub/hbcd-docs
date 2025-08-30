@@ -20,17 +20,23 @@ Expand each section below to see a list of study instruments associated with eac
 
 ## Instruments by Domain
 
-Click a domain heading below to expand and view the instruments included in the current data release.   
-Each instrument name links to a dedicated page with detailed documentation for that measure.
+<div class="warning-static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">Click a **domain header** (<i>e.g., Biospecimen & Omics</i>) to expand and view measures in a given domain.</span>
+</div>
+<div class="warning-static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">Click an **instrument name** in the first column (<i>e.g., Nails</i>) to access its detailed documentation.</span>
+</div>
 
 <button id="toggle-all-btn" style="
   margin: 10px 0;
   padding: 6px 12px;
   font-size: 0.9em;
-  background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
+  background-color: #ffe10042;
 ">
   Expand All Sections ↕️
 </button>
