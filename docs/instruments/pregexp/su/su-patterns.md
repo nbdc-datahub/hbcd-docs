@@ -16,7 +16,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="alert-collapsible-content">
-<p>This form is to understand general patterns of use and used to complement the TLFB, which asks about specific select weeks of use during pregnancy, and biospecimens, which has variable look back periods. In addition, participants were asked about typical use patterns in each trimester. However, some individuals only consider use after pregnancy recognition as 'pregnancy use', and thus may have discordant responses between this measure, the ASSIST and the TLFB.</p>
+<p>This form is to understand general patterns of use and used to complement the TLFB, which asks about specific select weeks of use during pregnancy, and biospecimens, which has variable look back periods. In addition, participants were asked about typical use patterns in each trimester. However, some individuals only consider use after pregnancy recognition as 'pregnancy use,' and thus may have discordant responses between this measure, the ASSIST, and the TLFB.</p>
 </div>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
@@ -30,7 +30,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>This measure was added one year into recruitment. Thus, while most people will have the measure at V2 (<i>note- only if they endorsed substances on the V1 or V2 ASSIST</i>), the first 1200 participants who had passed V2 were offered the measure at their next scheduled assessment, so can appear in any visit after V2.</p> 
+<p>This measure is administered only if participants endorsed substance use on the V1 or V2 ASSIST. However, because the instrument was added one year after study enrollment began, its availability varies. While most participants first received the measure at V2, early enrollees (~1,200 participants) who had already completed V2 before the measure was introduced were instead administered this measure at their next available visit.</p> 
 </div>
 
 ## Administration & Quality Control
@@ -44,7 +44,7 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self administered in person</td></tr>
 <tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">V02; <i>Note:</i> This measure should only trigger from the V1 or V2 ASSIST at V2. However, it was added one year into enrollment, so previously enrolled participants who were past V2 were given the measure at their next visit</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">V02 <i>or later (see <a href="#warning">Data Warning</a></i></td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>5 min</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
