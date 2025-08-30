@@ -2,8 +2,7 @@
 
 # CHAOS
 
-**Full Name**: Confusion, Hubbub and Order scale                    
-**Acronym**: CHAOS          
+**Full Name**: Confusion, Hubbub and Order scale                           
 **Table Name**: `mh_cg_chaos`           
 **Construct**: Family Organization
 

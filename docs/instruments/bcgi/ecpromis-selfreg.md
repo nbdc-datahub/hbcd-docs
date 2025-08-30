@@ -1,6 +1,6 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-# ecPROMIS - Self-regulation-Flexibility Scale
+# ecPROMIS - Self-Reegulation-Flexibility Scale
 
 **Full Name**: Early Childhood Patient-Reported Outcome Measurement Information System - Self-regulation-Flexibility       
 **Acronym**: ecPROMIS Self Regulation                   

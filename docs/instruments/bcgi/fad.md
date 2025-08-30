@@ -4,8 +4,7 @@
 
 # FAD
 
-**Full Name**: 6-item General Functioning subscale of the Family Assessment Device Short Form              
-**Acronym**: FAD                         
+**Full Name**: 6-item General Functioning subscale of the Family Assessment Device Short Form                                     
 **Table Name**: `mh_cg_fad`       
 **Construct**: Global functioning of the family unit
 
