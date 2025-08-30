@@ -108,7 +108,9 @@ nav:
             - ⚠️ ecPROMIS- Sleep: instruments/physhealth/ecpromis-sleep.md
             - Food Insecurity: instruments/physhealth/foodinsecurity.md
             - Growth: instruments/physhealth/growth.md
+            - ⚠️ Medical History: instruments/physhealth/medical-history.md
             - ⚠️ Nutrition: instruments/physhealth/nutrition.md
+            - ⚠️ ScreenQ: instruments/physhealth/screenq.md
         - Pregnancy & Exposures:
             - Pregnancy & Infant Health:
                 - Pregnancy Health: instruments/pregexp/preghealth/healthhx.md

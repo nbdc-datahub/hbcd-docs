@@ -395,6 +395,12 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td><code>ph_ch_anthro</code></td>
     </tr> 
     <tr>
+      <td><a href="physhealth/medical-history" target="_blank">Medical History</a></td>
+      <td></td>
+      <td>Medical History</td>
+      <td><code>ph_cg_ecls__medhist</code></td>
+    </tr>
+    <tr>
       <td rowspan="2"><a href="physhealth/nutrition" target="_blank">Nutrition Questionnaire</a></td>
       <td>Infant</td>
       <td>Nutrition</td>
@@ -406,13 +412,7 @@ Each instrument name links to a dedicated page with detailed documentation for t
       <td><code>ph_cg_cnq</code></td>
     </tr>
     <tr>
-    <td>Medical History</td>
-    <td></td>
-    <td>Medical History</td>
-    <td><code>ph_cg_ecls__medhist</code></td>
-    </tr>
-    <tr>
-    <td>ScreenQ - Media Use</td>
+    <td><a href="physhealth/screenq" target="_blank">ScreenQ</a></td>
     <td></td>
     <td>Media Use</td>
     <td><code>ph_cg_screenq</code></td>

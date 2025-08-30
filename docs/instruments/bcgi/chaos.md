@@ -36,7 +36,6 @@
 
 The **Confusion, Hubbub, and Order Scale (CHAOS)** is a 15-item, self-report scale designed to assess household chaos conceptualized as disorganization, disruption, and a chaotic atmosphere ([Matheny et al., 1995](https://doi.org/10.1016/0193-3973(95)90028-4); [Wilhoit et al., 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8680262/)). The CHAOS is intended to measure two facets of household chaos: 1. routines and organization; 2. disorganization, confusion, and noise. It does not assess other features that have been linked to household chaos, such as shifting family structure or housing instability.
 
-
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
