@@ -68,11 +68,6 @@ nav:
   - Study Instruments:
     - Instruments Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
-    - Administrative & Demographics:
-        - Basic Demographics: instruments/demo/basicdemo.md
-        - 🚧 Study Navigators Contact Form: instruments/admin/study-navigators.md
-        - ⚠️ Transition in Care Screener: instruments/admin/transitions-in-care.md
-        - Visit Information: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 
             - 🚧 CHAOS: instruments/bcgi/chaos.md
@@ -166,6 +161,12 @@ nav:
         - Processing & Analytic Standards: 
             - Processing Pipelines: instruments/processing/index.md
             - Pipeline Software Standards: instruments/processing/standards.md
+    - Demographics & Visit Information:
+        - Basic Demographics: instruments/demo/basicdemo.md
+        - Visit Information: instruments/demo/visitinfo.md
+    - Recruitment & Retention:
+        - 🚧 Study Navigators Contact Form: instruments/admin/study-navigators.md
+        - ⚠️ Transition in Care Screener: instruments/admin/transitions-in-care.md
   - Release Notes: 
     - Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md

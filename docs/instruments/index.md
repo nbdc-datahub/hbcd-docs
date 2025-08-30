@@ -20,96 +20,26 @@ Expand each section below to see a list of study instruments associated with eac
 
 ## Instruments by Domain
 
-Click a domain heading below to expand and view the instruments included in the current data release.   
-Each instrument name links to a dedicated page with detailed documentation for that measure.
+<div class="warning-static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">Click a **domain header** (<i>e.g., Biospecimen & Omics</i>) to expand and view measures in a given domain.</span>
+</div>
+<div class="warning-static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">Click an **instrument name** in the first column (<i>e.g., Nails</i>) to access its detailed documentation.</span>
+</div>
 
 <button id="toggle-all-btn" style="
   margin: 10px 0;
   padding: 6px 12px;
   font-size: 0.9em;
-  background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
+  background-color: #ffe10042;
 ">
   Expand All Sections ↕️
 </button>
-
-### Administrative & Demographics <span class="hint">(Click sections to expand)</span>
-
-<div id="admin" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-clipboard"></i></span>
-  <span class="text-with-link">
-  <span class="text">Administrative Variables</span>
-  <a class="anchor-link" href="#admin" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
-    <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
-    <td style="word-wrap: break-word; white-space: normal;">Study Navigation</td>
-    <td><code>TBD</code></td>
-  </tr>
-    <tr>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
-    <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
-    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
-    <td><code>TBD</code></td>
-  </tr>
-  </tbody>
-  </table>
-</div>
-
-<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-id-card"></i></span>
-  <span class="text-with-link">
-  <span class="text">Basic Demographics & Visit Info</span>
-  <a class="anchor-link" href="#demo" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 20%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 30%; text-align: center;">Table Name</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
-    <td><i>NA</i></td>
-    <td>Demographics data derived from multiple sources</td>
-    <td><code>sed_basic_demographics</code></td>
-  </tr>
-    <tr>
-    <td><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
-    <td><i>NA</i></td>
-    <td>Participant visit information</td>
-    <td><code>par_visit_data</code></td>
-  </tr>
-  </tbody>
-  </table>
-</div>
 
 ### Behavior, Biology, & Environment<span class="hint">(Click sections to expand)</span>
 
@@ -335,6 +265,62 @@ Each instrument name links to a dedicated page with detailed documentation for t
     </tr>
   </tbody>
   </table>
+</div>
+
+<div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-microchip"></i></span>
+  <span class="text-with-link">
+  <span class="text">Novel Technologies & Wearable Sensors</span>
+  <a class="anchor-link" href="#sensors" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><b>Tabulated Data</b></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th style="width: 30%;">Instrument</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;">Table Names</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
+    <td>Motor behavior, physical activity, sleep</td>
+    <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
+  </tr>
+  </tbody>
+  </table>
+<p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>From Wearable Sensors</b></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th>Sensor</th>
+      <th>Construct</th>
+      <th style="width: 20%;"><i class="fas fa-hammer"></i> Raw Data</th>
+      <th style="width: 20%;"><i class="fas fa-cog"></i> Derivatives</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="sensors/gabi" target="_blank">Infant Heart Rate Sensor</a></td>
+    <td>Regulation (Sleep State Sycles)/Autonomic Function</td>
+    <td><code>gabi/</code></td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td><a href="sensors/wearsensors" target="_blank">Infant Leg Motion Sensors</a></td>
+    <td>Motor Development, Regulation (Sleep/Wake)</td>
+    <td><a href="../datacuration/rawbids/#motion"><code>motion/</code></a></td>
+    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a></td>
+  </tr>
+  </tbody>
+  </thead>
+</table>
 </div>
 
 <div id="physhealth" class="table-banner" onclick="toggleCollapse(this)">
@@ -720,65 +706,6 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </table>
   </div>
 
-### Wearable Sensors
-
-<div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-microchip"></i></span>
-  <span class="text-with-link">
-  <span class="text">Novel Technologies & Wearable Sensors</span>
-  <a class="anchor-link" href="#sensors" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><b>Tabulated Data</b></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 30%;">Instrument</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Names</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
-    <td>Motor behavior, physical activity, sleep</td>
-    <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
-  </tr>
-  </tbody>
-  </table>
-<p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>From Wearable Sensors</b></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th>Sensor</th>
-      <th>Construct</th>
-      <th style="width: 20%;"><i class="fas fa-hammer"></i> Raw Data</th>
-      <th style="width: 20%;"><i class="fas fa-cog"></i> Derivatives</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="sensors/gabi" target="_blank">Infant Heart Rate Sensor</a></td>
-    <td>Regulation (Sleep State Sycles)/Autonomic Function</td>
-    <td><code>gabi/</code></td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td><a href="sensors/wearsensors" target="_blank">Infant Leg Motion Sensors</a></td>
-    <td>Motor Development, Regulation (Sleep/Wake)</td>
-    <td><a href="../datacuration/rawbids/#motion"><code>motion/</code></a></td>
-    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a></td>
-  </tr>
-  </tbody>
-  </thead>
-</table>
-</div>
-
-
 ### Brain Activity - MRI & EEG<span class="hint"> (Click sections to expand)</span>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
@@ -975,5 +902,85 @@ Each instrument name links to a dedicated page with detailed documentation for t
   </tbody>
 </table>
   </div>
+
+
+### Demographics & Visit Information <span class="hint">(Click sections to expand)</span>
+
+<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-id-card"></i></span>
+  <span class="text-with-link">
+  <span class="text">Basic Demographics & Visit Info</span>
+  <a class="anchor-link" href="#demo" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th style="width: 20%; text-align: center;">Instrument</th>
+      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
+      <th style="width: 30%; text-align: center;">Construct</th>
+      <th style="width: 30%; text-align: center;">Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
+    <td><i>NA</i></td>
+    <td>Demographics data derived from multiple sources</td>
+    <td><code>sed_basic_demographics</code></td>
+  </tr>
+    <tr>
+    <td><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
+    <td><i>NA</i></td>
+    <td>Participant visit information</td>
+    <td><code>par_visit_data</code></td>
+  </tr>
+  </tbody>
+  </table>
+</div>
+
+### Recruitment & Retention <span class="hint">(Click sections to expand)</span>
+
+<div id="admin" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-clipboard"></i></span>
+  <span class="text-with-link">
+  <span class="text">Recruitment & Retention</span>
+  <a class="anchor-link" href="#admin" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th style="width: 30%; text-align: center;">Instrument</th>
+      <th style="text-align: center;">Version</th>
+      <th style="width: 30%; text-align: center;">Construct</th>
+      <th style="width: 10%; text-align: center;">Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
+    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
+    <td><code>TBD</code></td>
+  </tr>
+    <tr>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
+    <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
+    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
+    <td><code>TBD</code></td>
+  </tr>
+  </tbody>
+  </table>
+</div>
+
 
 <br>

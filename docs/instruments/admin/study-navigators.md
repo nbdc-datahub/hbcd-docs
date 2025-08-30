@@ -59,9 +59,7 @@
 
 ## Instrument Details
 
-Mistrust among pregnant individuals who use substances can present significant barriers to recruitment and retention. To address this, the HBCD Study employs a novel approach of integrating **Study Navigators (support professionals such as certified peer support specialists)** into the research team. This model enhances recruitment, engagement, and retention, particularly among marginalized and underrepresented populations. The inclusion of Study Navigators represents a paradigm shift in longitudinal research, placing greater emphasis on participant support and human-centered engagement.
-
-For details on the conceptual framework, core skills, training, and team integration of support professionals, see [Hilliard et al. 2025](https://doi.org/10.1016/j.dcn.2024.101495).
+Mistrust among pregnant individuals who use substances can present significant barriers to recruitment and retention. To address this, the HBCD Study employs a novel approach of integrating **Study Navigators (support professionals such as certified peer support specialists)** to support recruitment, engagement, and retention. For details on the conceptual framework, core skills, training, and team integration of support professionals, see [Hilliard et al. 2025](https://doi.org/10.1016/j.dcn.2024.101495).
 
 The **Study Navigator Contact Form** included in the data release captures visit-specific information when participant support is provided. It documents:
 
