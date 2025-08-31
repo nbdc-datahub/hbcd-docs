@@ -607,10 +607,22 @@ Some variables do not fully follow the standard naming convention, which will be
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Tabulated data for <a href="../../instruments/#mri" target="_blank">MRI & MRS</a> and <a href="../../instruments/#eeg" target="_blank">EEG</a> derived from associated <span class="tooltip tooltip-right">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. All files begin with the <strong>domain</strong> (<code>img</code> or <code>eeg</code>) in accordance with the conventions described above, but the following elements may differ:</p>
-<ul>
-<li>In place of <strong>source</strong>, which for all MRI and EEG data is Child (<code>ch</code>), the pipeline name is typically given (e.g. <code>bibsnet</code>, <code>xcpd</code>, <code>osprey</code>, <code>made</code>, etc.)</li>
-<li>In place of <strong>table_item</strong>, the keywords typically match the name of the pipeline derivative file from which the table was generated (see full lists of file-based derivatives for each pipeline <a href="../../datacuration/derivatives" target="_blank">here</a>). </li>
+<p>Tabulated data derived from <a href="../../instruments/#mri" target="_blank">MRI & MRS</a> and <a href="../../instruments/#eeg" target="_blank">EEG</a> file-based data follow a unique naming convention. All files begin with the <strong>domain</strong> (<code>img</code> or <code>eeg</code>) in accordance with the conventions described above, but the following elements are the pipeline name (<code>pipeline</code>) and basename of the derivative output by that pipeline (<code>derivative</code>):</p> 
+<p style="font-size: 1.4em; font-weight: bold; padding: 10px;" align="center">
+<code>domain_pipeline_derivative</code>
+</p>
+<p>For example, the following subject/session-level <a href="../derivatives/#xcp-d-xcp_d" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<tr>
+<td><b>File-based derivatives</b></td>
+<td><code>sub-&lt;label&gt;_ses-&lt;label&gt;_task-rest_dir-PA_run-#<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
+</tr>
+<tbody>
+<tr>
+<td><b>Tabulated file</b></td>
+<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
+</tbody>
+</table>
 </ul>
 </div>
 

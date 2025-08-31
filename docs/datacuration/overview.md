@@ -19,18 +19,7 @@
 <li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
 <li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
 </ul>
-<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../derivatives/#xcp-d-xcp_d" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-<tr>
-<td><b>File-based derivatives</b></td>
-<td><code>sub-&lt;label&gt;_ses-&lt;label&gt;_task-rest_dir-PA_run-#<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
-</tr>
-<tbody>
-<tr>
-<td><b>Tabulated file</b></td>
-<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
-</tbody>
-</table>
+<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. See <a href="../../access/metadata/#exceptions-mri" target="_blank">here</a> for details.</p>
 </div>
 </p>
 
