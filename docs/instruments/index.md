@@ -22,17 +22,13 @@ Expand each section below to see a list of study instruments associated with eac
 
 <div class="warning-static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Click a **domain header** (<i>e.g., Biospecimen & Omics</i>) to expand and view measures in a given domain.</span>
+  <span class="text">Click <i>domain headers</i> (e.g., <i>Biospecimen & Omics</i>) to expand and view domain measures.<br>
+  Click <i>instrument names</i> (e.g., <i>Nails</i>) to access detailed instrument documentation.</span>
 </div>
-<div class="warning-static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Click an **instrument name** in the first column (<i>e.g., Nails</i>) to access its detailed documentation.</span>
-</div>
-
+<br>
 <button id="toggle-all-btn" style="
-  margin: 10px 0;
   padding: 6px 12px;
-  font-size: 0.9em;
+  font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
@@ -40,45 +36,6 @@ Expand each section below to see a list of study instruments associated with eac
 ">
   Expand All Sections ↕️
 </button>
-
-### Demographics & Visit Information <span class="hint">(Click sections to expand)</span>
-
-<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-id-card"></i></span>
-  <span class="text-with-link">
-  <span class="text">Basic Demographics & Visit Info</span>
-  <a class="anchor-link" href="#demo" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 20%;">Instrument</th>
-      <th>Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Name</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
-    <td><i>NA</i></td>
-    <td>Demographics data derived from multiple sources</td>
-    <td><code>sed_basic_demographics</code></td>
-  </tr>
-    <tr>
-    <td><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
-    <td><i>NA</i></td>
-    <td>Participant visit information</td>
-    <td><code>par_visit_data</code></td>
-  </tr>
-  </tbody>
-  </table>
-</div>
 
 ### Behavior, Biology, & Environment <span class="hint">(Click sections to expand)</span>
 
@@ -201,7 +158,7 @@ Expand each section below to see a list of study instruments associated with eac
 <div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-microchip"></i></span>
   <span class="text-with-link">
-  <span class="text">Novel Technologies & Wearable Sensors</span>
+  <span class="text">Novel Technologies & Wearable Sensors <span class="hint">(Primarily file-based data)</span></span>
   <a class="anchor-link" href="#sensors" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -683,5 +640,44 @@ Expand each section below to see a list of study instruments associated with eac
   </tbody>
 </table>
   </div>
+
+### Demographics & Visit Information <span class="hint">(Click sections to expand)</span>
+
+<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-id-card"></i></span>
+  <span class="text-with-link">
+  <span class="text">Basic Demographics & Visit Info</span>
+  <a class="anchor-link" href="#demo" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th style="width: 20%;">Instrument</th>
+      <th>Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;">Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
+    <td><i>NA</i></td>
+    <td>Demographics data derived from multiple sources</td>
+    <td><code>sed_basic_demographics</code></td>
+  </tr>
+    <tr>
+    <td><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
+    <td><i>NA</i></td>
+    <td>Participant visit information</td>
+    <td><code>par_visit_data</code></td>
+  </tr>
+  </tbody>
+  </table>
+</div>
 
 <br>
