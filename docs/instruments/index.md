@@ -12,8 +12,8 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 
-- <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD. This includes data for behavior, demographics, toxicology, data derived from MRI and other file-based data, etc.
-- File-based data include <a href="../datacuration/rawbids" target="_blank"><b>raw</b></a> and <a href="../datacuration/derivatives" target="_blank"><b>processed derivative</b></a> data for MRI/MRS and EEG, and wearable sensors. The files are organized under subject/session-level folders and are in varied modality-specific formats.
+- <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
+- File-based data include <a href="../datacuration/rawbids" target="_blank"><b>raw</b></a> and <a href="../datacuration/derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
 
 Expand the sections below to see a list of measures associated with each domain included in Release 1.0.
 
@@ -356,17 +356,17 @@ Expand the sections below to see a list of measures associated with each domain 
 </tr>
 <tr class="section-su">
   <td rowspan="3"><a href="pregexp/su/assist" target="_blank">ASSIST</a></td>
-  <td>V1.0</td>
+  <td>V1</td>
   <td>Substance use before and during pregnancy</td>
   <td><code>pex_bm_assistv1</code></td>
 </tr>
 <tr class="section-su">
-  <td>V2.0</td>
+  <td>V2</td>
   <td>Substance use, pregnancy end and postnatal</td>
   <td><code>pex_bm_assistv2</code></td>
 </tr>
 <tr class="section-su">
-  <td>V3.0</td>
+  <td>V3</td>
   <td>Substance use post-pregnancy</td>
   <td><code>pex_bm_assistv3</code></td>
 </tr>
@@ -657,7 +657,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <thead>
     <tr>
       <th style="width: 20%;">Instrument</th>
-      <th>Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
+      <th>Version</th>
       <th style="width: 30%;">Construct</th>
       <th style="width: 30%;">Table Name</th>
     </tr>
