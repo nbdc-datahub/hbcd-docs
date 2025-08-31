@@ -10,13 +10,12 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 <img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="90%" height="auto" class="center">
 
-HBCD Study data includes both <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span>
- and <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data - see [Data Structure Overview](../datacuration/overview.md):
+HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 
-- **Tabulated data** are in table format and include behavior, demographics, visit data, toxicology results, and tabulated data derived from brain imaging and other file-based data ([see details](../datacuration/phenotypes.md)). 
-- **File-based data** include both <span><i class="fas fa-hammer"></i> <b>Raw BIDS</b></span> ([details](../datacuration/rawbids.md)) and processed <span><i class="fas fa-cog"></i> <b>Derivatives</b></span> ([details](../datacuration/derivatives.md)) for MRI/MRS, EEG, and motion/accelerometry (in varied modality-specific formats).
+- <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD. This includes data for behavior, demographics, toxicology, data derived from MRI and other file-based data, etc.
+- File-based data include <a href="../datacuration/rawbids" target="_blank"><b>raw</b></a> and <a href="../datacuration/derivatives" target="_blank"><b>processed derivative</b></a> data for MRI/MRS and EEG, and wearable sensors. The files are organized under subject/session-level folders and are in varied modality-specific formats.
 
-Expand each section below to see a list of study instruments associated with each domain included in Release 1.0, including the table names for **tabulated data** and links to information for associated **file-based data** where relevant (also see: [When To Use File-Based vs. Tabulated Data When Both Are Available](../datacuration/overview.md#warning)).
+Expand the sections below to see a list of measures associated with each domain included in Release 1.0.
 
 ## Instruments by Domain
 
@@ -37,7 +36,7 @@ Expand each section below to see a list of study instruments associated with eac
   Expand All Sections ↕️
 </button>
 
-### Behavior, Biology, & Environment <span class="hint">(Click sections to expand)</span>
+### Behavior, Biology, & Environment
 
 <div id="bcgi" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-people-arrows"></i></span>
@@ -448,7 +447,7 @@ Expand each section below to see a list of study instruments associated with eac
   </table>
   </div>
 
-### Brain Activity - MRI & EEG <span class="hint">(Click sections to expand)</span>
+### Brain Activity - MRI & EEG
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-magnet"></i></span>
@@ -641,7 +640,7 @@ Expand each section below to see a list of study instruments associated with eac
 </table>
   </div>
 
-### Demographics & Visit Information <span class="hint">(Click sections to expand)</span>
+### Demographics & Visit Information
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
