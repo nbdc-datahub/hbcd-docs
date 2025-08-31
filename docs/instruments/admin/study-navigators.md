@@ -61,13 +61,11 @@
 
 Recruitment and retention in studies involving pregnant individuals who use substances can be challenged by mistrust due to SUD-related stigma. To address this, the HBCD Study integrates **certified [peer support](https://www.sciencedirect.com/topics/nursing-and-health-professions/peer-group) specialists, i.e. Study Navigators**, who provide participant-centered support throughout the study. For details on the conceptual framework, core skills, training, and team integration of support professionals, see [Hilliard et al. 2025](https://doi.org/10.1016/j.dcn.2024.101495).
 
-The **Study Navigator Contact Form** included in the data release captures visit-specific information when participant support is provided. It documents:
+The **Study Navigator Contact Form** included in the data release captures visit-specific information when participant support is provided. This data is purely descriptive and thus not scored. It documents:
 
 - Visit details (date, time, location, scheduling, etc.)
 - Support topics discussed
 - Actions taken during each contact
-
-Note that the data is not scored. This is descriptive data about the type/provision of Study Navigator supports and contacts. 
 
 ## References
 
