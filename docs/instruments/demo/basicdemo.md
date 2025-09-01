@@ -1,4 +1,4 @@
-NOTE: i, just a note that there is going to be a group convening to discuss the transition of this table into "Static" and "Dynamic" tables (Wes may be the lead, but I am not sure). The Demographics WG will be one of several WGs to be contributing variables to these tables, but my understanding is that some other group or a set of people will be leading this. I am happy to help however I can.
+<p style="font-size: 1.2em;">🚧 UNDER CONSTRUCTION TO BE UPDATED FOR R2.0 - <i style="color: red;">per Natalie: Basic Demo will be transitioned into "Static" and "Dynamic" tables (effort potentially led by Wes)</i></p>
 
 
 # Basic Demographics Information
