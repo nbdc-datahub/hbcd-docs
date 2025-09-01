@@ -10,29 +10,24 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 <img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="90%" height="auto" class="center">
 
-HBCD Study data includes both <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span>
- and <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data - see [Data Structure Overview](../datacuration/overview.md):
+HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 
-- **Tabulated data** are in table format and include behavior, demographics, visit data, toxicology results, and tabulated data derived from brain imaging and other file-based data ([see details](../datacuration/phenotypes.md)). 
-- **File-based data** include both <span><i class="fas fa-hammer"></i> <b>Raw BIDS</b></span> ([details](../datacuration/rawbids.md)) and processed <span><i class="fas fa-cog"></i> <b>Derivatives</b></span> ([details](../datacuration/derivatives.md)) for MRI/MRS, EEG, and motion/accelerometry (in varied modality-specific formats).
+- <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
+- File-based data include <a href="../datacuration/rawbids" target="_blank"><b>raw</b></a> and <a href="../datacuration/derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
 
-Expand each section below to see a list of study instruments associated with each domain included in Release 1.0, including the table names for **tabulated data** and links to information for associated **file-based data** where relevant (also see: [When To Use File-Based vs. Tabulated Data When Both Are Available](../datacuration/overview.md#when-to-use-tabulated-vs-file-based-data-when-both-are-available)).
+Expand the sections below to see a list of measures associated with each domain included in Release 1.0.
 
 ## Instruments by Domain
 
 <div class="warning-static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Click a **domain header** (<i>e.g., Biospecimen & Omics</i>) to expand and view measures in a given domain.</span>
+  <span class="text">Click <i>domain headers</i> (e.g., <i>Biospecimen & Omics</i>) to expand and view domain measures.<br>
+  Click <i>instrument names</i> (e.g., <i>Nails</i>) to access detailed instrument documentation.</span>
 </div>
-<div class="warning-static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Click an **instrument name** in the first column (<i>e.g., Nails</i>) to access its detailed documentation.</span>
-</div>
-
+<br>
 <button id="toggle-all-btn" style="
-  margin: 10px 0;
   padding: 6px 12px;
-  font-size: 0.9em;
+  font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
@@ -41,7 +36,7 @@ Expand each section below to see a list of study instruments associated with eac
   Expand All Sections ↕️
 </button>
 
-### Behavior, Biology, & Environment<span class="hint">(Click sections to expand)</span>
+### Behavior, Biology, & Environment
 
 <div id="bcgi" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-people-arrows"></i></span>
@@ -58,7 +53,7 @@ Expand each section below to see a list of study instruments associated with eac
   <thead>
     <tr>
       <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
+      <th style="text-align: center;">Version</th>
       <th style="width: 50%; text-align: center;">Construct</th>
       <th style="width: 10%; text-align: center;">Table Name</th>
     </tr>
@@ -107,7 +102,7 @@ Expand each section below to see a list of study instruments associated with eac
   </tr>
   <tr>
     <td><a href="bcgi/home21" target="_blank">HOME-21</a></td>
-    <td></td>
+    <td>Infant-Toddler</td>
     <td>Child’s Home Environment</td>
     <td><code>sed_cg_home_ec</code></td>
   </tr>
@@ -265,62 +260,6 @@ Expand each section below to see a list of study instruments associated with eac
     </tr>
   </tbody>
   </table>
-</div>
-
-<div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-microchip"></i></span>
-  <span class="text-with-link">
-  <span class="text">Novel Technologies & Wearable Sensors</span>
-  <a class="anchor-link" href="#sensors" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><b>Tabulated Data</b></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 30%;">Instrument</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Names</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
-    <td>Motor behavior, physical activity, sleep</td>
-    <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
-  </tr>
-  </tbody>
-  </table>
-<p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>From Wearable Sensors</b></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th>Sensor</th>
-      <th>Construct</th>
-      <th style="width: 20%;"><i class="fas fa-hammer"></i> Raw Data</th>
-      <th style="width: 20%;"><i class="fas fa-cog"></i> Derivatives</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="sensors/gabi" target="_blank">Infant Heart Rate Sensor</a></td>
-    <td>Regulation (Sleep State Sycles)/Autonomic Function</td>
-    <td><code>gabi/</code></td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td><a href="sensors/wearsensors" target="_blank">Infant Leg Motion Sensors</a></td>
-    <td>Motor Development, Regulation (Sleep/Wake)</td>
-    <td><a href="../datacuration/rawbids/#motion"><code>motion/</code></a></td>
-    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a></td>
-  </tr>
-  </tbody>
-  </thead>
-</table>
 </div>
 
 <div id="physhealth" class="table-banner" onclick="toggleCollapse(this)">
@@ -526,22 +465,22 @@ Expand each section below to see a list of study instruments associated with eac
 </tr>
 <tr class="section-su">
   <td rowspan="4"><a href="pregexp/su/assist" target="_blank">ASSIST</a></td>
-  <td>V1.0</td>
+  <td>V1</td>
   <td>Substance use before and during pregnancy</td>
   <td><code>pex_bm_assistv1</code></td>
 </tr>
 <tr class="section-su">
-  <td>V2.0</td>
+  <td>V2</td>
   <td>Substance use, pregnancy end and postnatal</td>
   <td><code>pex_bm_assistv2</code></td>
 </tr>
 <tr class="section-su">
-  <td>V3.0</td>
+  <td>V3</td>
   <td>SU after pregnancy (3 mo anchors)</td>
   <td><code>pex_bm_assistv3</code></td>
 </tr>
 <tr class="section-su">
-  <td>V4.0</td>
+  <td>V4</td>
   <td>SU after pregnancy (12 mo anchors)</td>
   <td><code>pex_bm_assistv4</code></td>
 </tr>
@@ -576,7 +515,7 @@ Expand each section below to see a list of study instruments associated with eac
   <thead>
     <tr>
       <th style="text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
+      <th style="text-align: center;">Version</th>
       <th style="width: 60%; text-align: center;">Construct</th>
       <th style="text-align: center;">Table Name</th>
     </tr>
@@ -706,7 +645,72 @@ Expand each section below to see a list of study instruments associated with eac
   </table>
   </div>
 
-### Brain Activity - MRI & EEG<span class="hint"> (Click sections to expand)</span>
+### Brain Activity & Wearable Sensors
+
+<div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-bolt"></i></span>
+  <span class="text-with-link">
+  <span class="text">EEG</span>
+  <a class="anchor-link" href="#eeg" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see <a href="eeg">Overview & Quality Control</a></strong></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <!-- First header row -->
+    <tr>
+      <th style="width: 30%;" rowspan="2">Task</th>
+      <th style="width: 40%; text-align: center;" colspan="2">
+        <span class="tooltip tooltip-right">
+          File-Based Data
+          <span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span>
+        </span>
+      </th>
+      <th style="width: 40%;" rowspan="2">Table Names</th>
+    </tr>
+    <!-- Second header row -->
+    <tr>
+      <th style="width: 10%;">
+        <i class="fas fa-hammer"></i> Raw BIDS
+      </th>
+      <th style="width: 10%;">
+        <i class="fas fa-cog"></i> Derivatives
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="eeg/mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
+      <td><code>eeg_made_task-MMN_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-MMN</code></td>
+    </tr>
+    <tr>
+      <td><a href="eeg/faces" target="_blank">Faces (Face)</a></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
+      <td><code>eeg_made_task-FACE_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-FACE</code></td>
+    </tr>
+    <tr>
+      <td><a href="eeg/videors" target="_blank">Video Resting State (RS)</a></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
+      <td><code>eeg_made_task-RS_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-RS</code></td>
+    </tr>
+    <tr>
+      <td><a href="eeg/vep" target="_blank">Visual Evoked Potential (VEP)</a></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
+      <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code><br>
+          <code>eeg_qc_task-VEP</code></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-magnet"></i></span>
@@ -838,73 +842,63 @@ Expand each section below to see a list of study instruments associated with eac
 </details>
 </div>
 
-<div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-bolt"></i></span>
+<div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-microchip"></i></span>
   <span class="text-with-link">
-  <span class="text">EEG</span>
-  <a class="anchor-link" href="#eeg" title="Copy link">
+  <span class="text">Novel Technologies & Wearable Sensors</span>
+  <a class="anchor-link" href="#sensors" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see <a href="eeg">Overview & Quality Control</a></strong></p>
+<p><b>Tabulated Data</b></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
-    <!-- First header row -->
     <tr>
-      <th style="width: 30%;" rowspan="2">Task</th>
-      <th style="width: 40%; text-align: center;" colspan="2">
-        <span class="tooltip tooltip-right">
-          File-Based Data
-          <span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span>
-        </span>
-      </th>
-      <th style="width: 40%;" rowspan="2">Table Names</th>
-    </tr>
-    <!-- Second header row -->
-    <tr>
-      <th style="width: 10%;">
-        <i class="fas fa-hammer"></i> Raw BIDS
-      </th>
-      <th style="width: 10%;">
-        <i class="fas fa-cog"></i> Derivatives
-      </th>
+      <th style="width: 30%;">Instrument</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;">Table Names</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><a href="eeg/mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></td>
-      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
-      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
-      <td><code>eeg_made_task-MMN_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-MMN</code></td>
-    </tr>
-    <tr>
-      <td><a href="eeg/faces" target="_blank">Faces (Face)</a></td>
-      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
-      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
-      <td><code>eeg_made_task-FACE_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-FACE</code></td>
-    </tr>
-    <tr>
-      <td><a href="eeg/videors" target="_blank">Video Resting State (RS)</a></td>
-      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
-      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
-      <td><code>eeg_made_task-RS_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-RS</code></td>
-    </tr>
-    <tr>
-      <td><a href="eeg/vep" target="_blank">Visual Evoked Potential (VEP)</a></td>
-      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
-      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
-      <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code><br>
-          <code>eeg_qc_task-VEP</code></td>
-    </tr>
+  <tr>
+    <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
+    <td>Motor behavior, physical activity, sleep</td>
+    <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
+  </tr>
   </tbody>
+  </table>
+<p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>From Wearable Sensors</b></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th>Sensor</th>
+      <th>Construct</th>
+      <th style="width: 20%;"><i class="fas fa-hammer"></i> Raw Data</th>
+      <th style="width: 20%;"><i class="fas fa-cog"></i> Derivatives</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="sensors/gabi" target="_blank">Infant Heart Rate Sensor</a></td>
+    <td>Regulation (Sleep State Sycles)/Autonomic Function</td>
+    <td><code>gabi/</code></td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td><a href="sensors/wearsensors" target="_blank">Infant Leg Motion Sensors</a></td>
+    <td>Motor Development, Regulation (Sleep/Wake)</td>
+    <td><a href="../datacuration/rawbids/#motion"><code>motion/</code></a></td>
+    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a></td>
+  </tr>
+  </tbody>
+  </thead>
 </table>
-  </div>
+</div>
 
-
-### Demographics & Visit Information <span class="hint">(Click sections to expand)</span>
+### Demographics & Visit Information
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
@@ -921,7 +915,7 @@ Expand each section below to see a list of study instruments associated with eac
   <thead>
     <tr>
       <th style="width: 20%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version <span class="tooltip tooltip-right"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">if more than one version is included in the release</span></span></th>
+      <th style="text-align: center;">Version</th>
       <th style="width: 30%; text-align: center;">Construct</th>
       <th style="width: 30%; text-align: center;">Table Name</th>
     </tr>
@@ -943,7 +937,7 @@ Expand each section below to see a list of study instruments associated with eac
   </table>
 </div>
 
-### Recruitment & Retention <span class="hint">(Click sections to expand)</span>
+### Recruitment & Retention
 
 <div id="admin" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-clipboard"></i></span>

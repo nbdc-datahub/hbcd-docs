@@ -7,7 +7,7 @@
 /* styling text to make more subtle, e.g. "Click to Expand"*/
 .hint {
   color: #888;
-  font-size: 0.8em;
+  font-size: 1rem;
   font-style: italic;
   font-weight: normal;
   background-color: transparent !important;
@@ -76,6 +76,7 @@ pre.helper-code code {
 
 /* Style for expand all button (measures overview page) */
 #toggle-all-btn {
+  background-color: #d0dff0;
   color: #474646;
   border: none;
   padding: 10px 20px;
@@ -86,6 +87,8 @@ pre.helper-code code {
   transition: background-color 0.3s, transform 0.2s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.592);
   display: block;
+  width: fit-content;   /* shrink to its content width */
+  margin: 0 auto;       /* centers it horizontally */
 }
 #toggle-all-btn:hover {
   transform: scale(1.05); /* Slight zoom effect */
@@ -178,5 +181,3 @@ pre.helper-code code {
 .button-link:hover {
   background-color: #25ae70; /* background color on hover */
 }
-
-

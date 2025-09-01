@@ -19,7 +19,7 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">HBCD Study staff in-person</td></tr>
 <tr><td><b>Visits</b></td>
-<td></td></tr>
+<td>V03, V04, V06</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td></td></tr>
 <tr><td><b>Quality Control</b></td>

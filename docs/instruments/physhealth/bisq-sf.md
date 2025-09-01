@@ -24,3 +24,7 @@
 <td style="word-wrap: break-word; white-space: normal;"></td></tr>
 </tbody>
 </table>
+
+## Instrument Details
+
+**Brief Infant Sleep Questionnaire (BISQ-SF)** - ADD CONTENT
