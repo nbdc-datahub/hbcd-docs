@@ -208,22 +208,15 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
         <td>Hamilton, et al. (2011)</td>
     </tr>
     <tr>
-        <td>Race/Ethnicity</td>
-    <td>
-      <span class="tooltip"><a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">OMB</a>
-      <span class="tooltiptext">Office of Management & Budget</span>
-      </span>
-    </td>
-        <td>Federal Register 2023</td>
+    <tr>
+      <td>Race/Ethnicity</td>
+      <td><span class="tooltip">OMB<span class="tooltiptext">Office of Management & Budget</span></span></td>
+      <td><a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">Federal Register 2023</a></td>
     </tr>
     <tr>
-        <td>Others Describe You</td>
-    <td>
-      <span class="tooltip">BRFSS
-      <span class="tooltiptext">Behavioral Risk Factor Surveillance System</span>
-      </span>
-    </td>
-        <td>Jones et al. 2008</td>
+      <td>Others Describe You</td>
+      <td><span class="tooltip">BRFSS<span class="tooltiptext">Behavioral Risk Factor Surveillance System</span></span></td>
+      <td>Jones et al. 2008</td>
     </tr>
     <tr>
         <td>Biological Parents Birthplace and Heritage</td>
@@ -231,13 +224,9 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
         <td>Hamilton, et al. (2011)</td>
     </tr>
     <tr>
-        <td>Annual Household Income</td>
-    <td>
-      <span class="tooltip">ABCD
-      <span class="tooltiptext">Adolescent Brain Child Development Study</span>
-      </span>
-    </td>
-        <td>Barch et al. 2017</td>
+      <td>Annual Household Income</td>
+      <td><span class="tooltip">ABCD<span class="tooltiptext">Adolescent Brain Child Development Study</span></span></td>
+      <td>Barch et al. 2017</td>
     </tr>
     <tr>
         <td>Educational Attainment</td>
@@ -307,13 +296,9 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
     <td style="width: 300px; word-wrap: break-word; white-space: normal;">Cioffredi, et al. (2024)</td>
 </tr>
 <tr>
-    <td>Race/Ethnicity</td>
-    <td>
-      <span class="tooltip"><a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">OMB</a>
-      <span class="tooltiptext">Office of Management & Budget</span>
-      </span>
-    </td>
-    <td>Federal Register 2023</td>
+  <td>Race/Ethnicity</td>
+  <td><span class="tooltip">OMB<span class="tooltiptext">Office of Management & Budget</span></span></td>
+  <td><a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">Federal Register 2023</a></td>
 </tr>
 <tr>
     <td>Birthplace and Heritage</td>
