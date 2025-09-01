@@ -1,6 +1,6 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: add additional versions for later visits to this same page</i> 🚧 </p>
 
-# Demographics Adult
+# Adult Demographics
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -25,13 +25,8 @@
   <td><code>sed_bm_demo</code></td>
 </tr>
 <tr>
-  <td><strong>V4 (Birth Parent)</strong></td>
-  <td>Demographics (Birth Parent Visit 4)</td>
-  <td>ADD<code></code></td>
-</tr>
-<tr>
-  <td><strong>V4 (Alt. Caregiver)</strong></td>
-  <td>Demographics (Alt. Caregiver Visit 4)</td>
+  <td><strong>V4</strong></td>
+  <td>Demographics (Birth Parent & Alt. Caregiver Visit 4)</td>
   <td>ADD<code></code></td>
 </tr>
 <tr>
@@ -54,7 +49,7 @@
 </div>
 <div class="alert-collapsible-content">
 <p>When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables such as race, ethnicity, country of origin, and socioeconomic data, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.</p> 
-<p>Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race/ethnicity variables as a proxy for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.</p>
+<p>Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race and/or ethnicity variables as proxies for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.</p>
 </div>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
@@ -69,11 +64,11 @@
 </div>
 <div class="warning-collapsible-content">
 <p><b>Participant-Reported Challenges</b><br>
-Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e. imperfect option for job type and number of hours).</p> 
+Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e., imperfect option for job type and number of hours).</p> 
 <p><b>Withheld Variables/Variable Data With Small Cell Sizes</b><br>
-Some variables with small cell sizes were withheld from the data release to minimize any risk of disclosure of identifying information. In addition, there are some variables that do not contain any data in the current data release (e.g., response options allowed for more household members and more jobs during pregnancy than were reported by the respondents who completed V01 to date). These variables are currently being retained because this could change as data collection proceeds.</p> 
+Some variables with small cell sizes were withheld from the data release to minimize the risk of disclosing identifying information <i style="color: red;">[Note from Natalie: this may need to be updated based on decisions being discussed with the RUDC and others in HCAC/HDCC]</i>. In addition, there are some variables that do not contain any data in the current data release (e.g., response options allowed for more household members and more jobs during pregnancy than were reported by respondents who have completed V01 to date). These variables are currently being retained, as their relevance may change as data collection proceeds.</p> 
 <p><b>Branching Logic</b><br>
-There are several items with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include: 
+There are several items that Alternate Caregivers receive with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include: 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr><td><strong>Household roster</strong></td>
@@ -88,6 +83,8 @@ There are several items with branching logic; please consult the following resou
 <td><a href="../images/other-parent.png" target="_blank"><i>Click to view</i></a></td></tr>
 </tbody>
 </table>
+<p><b>Introduction of Child Demographic Form Beginning at V04</b><br>
+Beginning at V04, some information that was collected in the V01 Adult Demographic form has moved to the child form (i.e., household roster, and total household income). Please see <a href="../demo-ch" target="_blank">Child Demographics</a> for more information.</p>
 </div>
 
 ## Administration & Quality Control
@@ -111,9 +108,11 @@ There are several items with branching logic; please consult the following resou
 
 ## Instrument Details
 
-Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. The HBCD Study demographics survey is designed to gather comprehensive information on socioeconomic status and various demographic factors. Its primary purpose is to capture data on race, ethnicity, nativity, income, education, and occupation, as well as relationship status, primary residence, and household composition of the parent carrying the child, and some basic information on the other biological parent. Please see [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the HBCD Demographics survey.
+Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. The HBCD Study demographics survey at V01 is designed to gather comprehensive information on socioeconomic status and various demographic factors. Its primary purpose is to capture data on race, ethnicity, nativity, income, education, and occupation, as well as relationship status, primary residence, and household composition of the parent carrying the child, and some basic information on the other biological parent. Please see [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the baseline HBCD Demographics survey.
 
-Please see the section on <a href="../demographics/#basic-demographics">Basic Demographics</a>, which includes variables derived from the HBCD Demographics V01 instrument and data collected during study enrolment/screening.
+At subsequent times of assessment (i.e., V04+), a selected set of variables that can change over time were re-administered, and several new topics were added (i.e., disability status and access to reliable transportation). Of note, from V04 onward, there is a separate <a href="../demo-ch" target="_blank">Child Demographics</a> form that includes child-focused information including child race and ethnicity, relationship to the child/custody, household roster, type of residence, and household income. In addition, from V04 onward, data on caregiver work/employment characteristics are in a separate form.
+
+Please see the section on <a href="../demographics/#basic-demographics">Basic Demographics</a>, which includes variables derived from the HBCD Demographics V01 instrument and data collected during screening/enrollment.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>

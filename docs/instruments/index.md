@@ -545,7 +545,7 @@ Expand the sections below to see a list of measures associated with each domain 
       <td><code>sed_cg_cabr_sf</code></td>
     </tr>
     <tr>
-      <td rowspan="4"><a href="SED/demo-cg" target="_blank">Demographics Adult</a></td>
+      <td rowspan="3"><a href="SED/demo-cg" target="_blank">Adult Demographics</a></td>
       <td>V1</td>
       <td>Demographics (Adult Visit 1)</td>
       <td><code>sed_bm_demo</code></td>
@@ -556,17 +556,12 @@ Expand the sections below to see a list of measures associated with each domain 
       <td>ADD<code></code></td>
     </tr> 
     <tr>
-      <td>V4 (Alt. Caregiver)</td>
-      <td>Demographics (Alt. Caregiver Visit 4)</td>
-      <td>ADD<code></code></td>
-    </tr> 
-    <tr>
       <td>V6</td>
       <td>Demographics (Adult Visit 6)</td>
       <td>ADD<code></code></td>
     </tr> 
     <tr>
-      <td rowspan="2"><a href="SED/demo-ch" target="_blank">Demographics Child</a></td>
+      <td rowspan="2"><a href="SED/demo-ch" target="_blank">Child Demographics</a></td>
       <td>V4</td>
       <td>Demographics (Child Visit 4)</td>
       <td><code>sed_bm_demo_child</code></td>
