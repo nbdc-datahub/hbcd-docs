@@ -289,12 +289,7 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
   </tbody>
   </table>
 
-
-  
-  
-
-
-<strong>&nbsp;&nbsp;Table 2. Demographics of Other Biological Parent</strong>
+<strong>&nbsp;&nbsp;Table 2. Demographics of Other Biological Parent <i>(Only collected at V01 baseline interview)</i></strong>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
     <tr>
