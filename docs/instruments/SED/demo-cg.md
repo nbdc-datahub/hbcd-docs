@@ -1,4 +1,4 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: add additional versions for later visits to this same page</i> 🚧 </p>
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: add additional versions for later visits to this same page</i></p>
 
 # Adult Demographics
 
@@ -38,7 +38,7 @@
 </table>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
   <span class="text-with-link">
   <span class="text">Responsible Use Warning</i></span>
   <a class="anchor-link" href="#alert" title="Copy link">
@@ -53,7 +53,7 @@
 </div>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</i></span>
   <a class="anchor-link" href="#warning" title="Copy link">
@@ -125,7 +125,7 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Below are alterations made to demographic constructs to tailor it to the HBCD Study. The modifications were made to reduce bias and capture a more inclusive and accurate breadth of demographic information, e.g. by correcting for embedded assumptions of heteronormative nuclear-family structures.</p>
+<p>Below are alterations made to demographic constructs to tailor it to the HBCD Study. The modifications were made to reduce bias and capture a more inclusive and accurate breadth of demographic information, e.g., by correcting for embedded assumptions of heteronormative nuclear-family structures.</p>
   <ul>
     <li><b>Marital & Relationship Status</b> alterations to reduce heteronormative bias:
       <ul>
@@ -229,7 +229,7 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
         <td>Hamilton, et al. (2011)</td>
     </tr>
     <tr>
-        <td>Income</td>
+        <td>Annual Household Income</td>
     <td>
       <span class="tooltip">ABCD
       <span class="tooltiptext">Adolescent Brain Child Development Study</span>
@@ -276,8 +276,24 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
     </td>
         <td>Year 1 Protocol - G39, SchedMain</td>
     </tr>
+    <tr>
+      <td>Disability</td>
+      <td><span class="tooltip">ACS<span class="tooltiptext">US Census Bureau's American Community Survey</span></span> Disability Questions</td>
+      <td><a href="https://www.census.gov/topics/health/disability/guidance/data-collection-acs.html">US Census Bureau 2021</a></td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td><span class="tooltip">CMS<span class="tooltiptext">Centers for Medicare & Medicaid Services</span></span></td>
+      <td><a href="https://www.cms.gov/priorities/innovation/files/worksheets/ahcm-screeningtool.pdf"><span class="tooltip">AHC HRSN<span class="tooltiptext">Accountable Health Communities Health-Related Social Needs</span></span> Screening Tool</a></td>
+    </tr>
   </tbody>
   </table>
+
+
+  
+  
+
+
 <strong>&nbsp;&nbsp;Table 2. Demographics of Other Biological Parent</strong>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -349,7 +365,11 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
   <p>Federal Register. (2023, January 27). Initial Proposals For Updating OMB’s Race and Ethnicity Statistical Standards (<a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards" target="_blank">Document No. 2023-01635</a>). 88 FR 5375-5384.</p>
   <p>Hamilton, C. M., Strader, L. C., Pratt, J. G., Maiese, D., Hendershot, T., Kwok, R. K., Hammond, J. A., Huggins, W., Jackman, D., Pan, H., Nettles, D. S., Beaty, T. H., Farrer, L. A., Kraft, P., Marazita, M. L., Ordovas, J. M., Pato, C. N., Spitz, M. R., Wagener, D., … Haines, J. (2011). The PhenX Toolkit: get the most from your measures. <em>American Journal of Epidemiology</em>, 174(3), 253–260. <a href="https://doi.org/10.1093/aje/kwr193" target="_blank">https://doi.org/10.1093/aje/kwr193</a></p>
   <p>Jones, C. P., Truman, B. I., Elam-Evans, L. D., Jones, C. A., Jones, C. Y., Jiles, R., Rumisha, S. F., & Perry, G. S. (2008). Using “socially assigned race” to probe white advantages in health status. <em>Ethnicity & Disease</em>, 18(4), 496–504. <a href="https://www.ncbi.nlm.nih.gov/pubmed/19157256" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/19157256</a></p>
+  <p>US Census Bureau. (November 2021). <i>How disability data are collected from the American community survey</i>. Census.gov. Retrieved September 1, 2025, from <a href="https://www.census.gov/topics/health/disability/guidance/data-collection-acs.html">https://www.census.gov/topics/health/disability/guidance/data-collection-acs.html</a></p>
   <p>Zachek, C. M., Schwartz, J. M., Glasser, M., DeMicco, E., & Woodruff, T. J. (2019). A screening questionnaire for occupational and hobby exposures during pregnancy. Occupational Medicine (Oxford, England), 69(6), 428–435. <a href="https://doi.org/10.1093/occmed/kqz094">https://doi.org/10.1093/occmed/kqz094</a></p>
 </div>
+
+
+
 
 <br>

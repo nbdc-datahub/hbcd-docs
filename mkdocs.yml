@@ -126,8 +126,8 @@ nav:
             - ACEs: instruments/SED/aces.md
             - Baby's First Years: instruments/SED/bfy.md
             - 🚧 Composite Abuse Scale: instruments/SED/cab.md
-            - ⚠️ Demographics Adult: instruments/SED/demo-cg.md
-            - ⚠️ Demographics Child: instruments/SED/demo-ch.md
+            - 🚧 Demographics Adult: instruments/SED/demo-cg.md
+            - 🚧 Demographics Child: instruments/SED/demo-ch.md
             - Intimate Partner Violence: instruments/SED/ehits.md
             - 🚧 Employment: instruments/SED/current-employment.md
             - 🚧 Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
@@ -162,7 +162,7 @@ nav:
             - Processing Pipelines: instruments/processing/index.md
             - Pipeline Software Standards: instruments/processing/standards.md
     - Demographics & Visit Information:
-        - Basic Demographics: instruments/demo/basicdemo.md
+        - ⚠️ Basic Demographics: instruments/demo/basicdemo.md
         - Visit Information: instruments/demo/visitinfo.md
     - Recruitment & Retention:
         - 🚧 Study Navigators Contact Form: instruments/admin/study-navigators.md

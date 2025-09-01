@@ -1,3 +1,6 @@
+NOTE: i, just a note that there is going to be a group convening to discuss the transition of this table into "Static" and "Dynamic" tables (Wes may be the lead, but I am not sure). The Demographics WG will be one of several WGs to be contributing variables to these tables, but my understanding is that some other group or a set of people will be leading this. I am happy to help however I can.
+
+
 # Basic Demographics Information
 
 **Full Name**: Basic Demographics Information     
