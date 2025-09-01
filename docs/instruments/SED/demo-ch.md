@@ -11,15 +11,15 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-<td style="width: 20%;"><strong>Instrument</strong></td>
-<td style="width: 10%"><strong>Version</strong></td>
-<td style="width: 20%"><strong>Construct</strong></td>
-<td style="width: 20%"><strong>Table Name</strong></td>
+  <th style="width: 25%;">Instrument</th>
+  <th style="width: 15%;">Version</th>
+  <th style="width: 25%;">Construct</th>
+  <th style="width: 25%;">Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2">HBCD Demographics Child</td>
+  <td rowspan="2">HBCD Child Demographics</td>
   <td><strong>V4</strong></td>
   <td>Demographics (Child Visit 4)</td>
   <td><code>sed_bm_demo_child</code></td>

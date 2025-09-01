@@ -11,15 +11,15 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-<td style="width: 50%;"><strong>Instrument</strong></td>
-<td style="width: 25%"><strong>Version</strong></td>
-<td style="width: 25%"><strong>Construct</strong></td>
-<td><strong>Table Name</strong></td>
+  <th style="width: 25%;">Instrument</th>
+  <th style="width: 15%;">Version</th>
+  <th style="width: 25%;">Construct</th>
+  <th style="width: 25%;">Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="4">HBCD Demographics Adult</td>
+  <td rowspan="4">HBCD Adult Demographics</td>
   <td><strong>V1</strong></td>
   <td>Demographics (Adult Visit 1)</td>
   <td><code>sed_bm_demo</code></td>
@@ -78,10 +78,10 @@ There are several items that Alternate Caregivers receive with branching logic; 
 <tr><td><strong>Nativity</strong></td>
 <td><a href="https://www.phenxtoolkit.org/protocols/view/10201">PhenX Toolkit</a></td></tr>
 <tr><td><strong>Jobs / work environment</strong></td>
-<td style="word-wrap: break-word; white-space: normal;"><a href="https://doi.org/10.1093/occmed/kqz094">Zachek et al., 2019</a> <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">Original instrument for the workplace hazard</span></span><br>
-<a href="https://www.phenxtoolkit.org/protocols/view/60501">PhenX Occupation/Occupational History Toolkit</a>
+<td>(1) <a href="https://doi.org/10.1093/occmed/kqz094">Zachek et al., 2019</a> <i>(Original instrument for the Workplace Hazard)</i><br>
+(2) <a href="https://www.phenxtoolkit.org/protocols/view/60501">PhenX Occupation/Occupational History Toolkit</a>
 </td></tr>
-<tr><td style="word-wrap: break-word; white-space: normal;"><strong>Items on other biological parent with opt in responses</strong></td>
+<tr><td><strong>Items on other biological parent with opt-in responses</strong></td>
 <td><a href="../images/other-parent.png" target="_blank"><i>Click to view</i></a></td></tr>
 </tbody>
 </table>
