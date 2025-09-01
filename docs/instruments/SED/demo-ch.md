@@ -1,4 +1,4 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: add additional versions for later visits to this same page</i> 🚧 </p>
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: add additional versions for later visits to this same page</i></p>
 
 # Child Demographics
 
@@ -44,7 +44,7 @@
 </div>
 <div class="alert-collapsible-content">
 <p>When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables such as race, ethnicity, country of origin, and socioeconomic data, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.</p> 
-<p>Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race/ethnicity variables as a proxy for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.</p>
+<p>Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race and/or ethnicity variables as proxies for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.</p>
 </div>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
@@ -59,19 +59,12 @@
 </div>
 <div class="warning-collapsible-content">
 <p><b>Participant-Reported Challenges</b><br>
-Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e. imperfect option for job type and number of hours).</p> 
+Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture how they choose to identify their child).</p> 
 <p><b>Withheld Variables/Variable Data With Small Cell Sizes</b><br>
-Some variables with small cell sizes were withheld from the data release to minimize any risk of disclosure of identifying information. In addition, there are some variables that do not contain any data in the current data release (e.g., response options allowed for more household members and more jobs during pregnancy than were reported by the respondents who completed V01 to date). These variables are currently being retained because this could change as data collection proceeds.</p> 
+<i style="color: red;">[INTERNAL NOTE from Natalie: this may need to be updated. There is an ongoing discussion re: a principled approached to deciding if we will withhold small cell sizes or release all and rely on the DUC. I can update you as soon as I know more]</i><br>
+Some variables with small cell sizes were withheld from the data release to minimize the risk of disclosing identifying information. In addition, there are some variables that do not contain any data in the current data release (e.g., household roster response options allowed for more household members than were reported by the respondents who completed V04 or V06  to date). These variables are currently being retained, as their relevance may change as data collection proceeds.</p> 
 <p><b>Branching Logic</b><br>
-There are several items with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include: 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><strong>Household roster</strong></td>
-<td><a href="../images/household-relationships.png" target="_blank"><i>Click to view</i></a></td></tr>
-<tr><td><strong>Nativity</strong></td>
-<td><a href="https://www.phenxtoolkit.org/protocols/view/10201">PhenX Toolkit</a></td></tr>
-</tbody>
-</table>
+There are several items with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include <a href="../images/household-relationships.png" target="_blank">Household Roster</a> and <a href="" target="_blank">Child Custody/Guardianship - ADD LINK</a>.</p>
 </div>
 
 ## Administration & Quality Control

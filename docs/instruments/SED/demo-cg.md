@@ -66,7 +66,9 @@
 <p><b>Participant-Reported Challenges</b><br>
 Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e., imperfect option for job type and number of hours).</p> 
 <p><b>Withheld Variables/Variable Data With Small Cell Sizes</b><br>
-Some variables with small cell sizes were withheld from the data release to minimize the risk of disclosing identifying information <i style="color: red;">[Note from Natalie: this may need to be updated based on decisions being discussed with the RUDC and others in HCAC/HDCC]</i>. In addition, there are some variables that do not contain any data in the current data release (e.g., response options allowed for more household members and more jobs during pregnancy than were reported by respondents who have completed V01 to date). These variables are currently being retained, as their relevance may change as data collection proceeds.</p> 
+Some variables with small cell sizes were withheld from the data release to minimize the risk of disclosing identifying information 
+
+<i style="color: red;">[INTERNAL NOTE from Natalie: this may need to be updated based on decisions being discussed with the RUDC and others in HCAC/HDCC]</i>. In addition, there are some variables that do not contain any data in the current data release (e.g., response options allowed for more household members and more jobs during pregnancy than were reported by respondents who have completed V01 to date). These variables are currently being retained, as their relevance may change as data collection proceeds.</p> 
 <p><b>Branching Logic</b><br>
 There are several items that Alternate Caregivers receive with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include: 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
