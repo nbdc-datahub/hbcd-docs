@@ -41,7 +41,7 @@ The [NBDC Data Hub](https://nbdc-datahub.org) provides two main platforms for ex
 
 **Before obtaining DUC access**, users can preview the data available in the release using the following tools:
 
- - **[NBDC Data Access Platform Query Tool](https://nbdc.lassoinformatics.com/data-query-and-downloads)**
+ - **[NBDC Data Access Platform Query Tool](https://www.nbdc-datahub.org/data-tools-lasso)**
  - **[DEAP's data dictionary & ontology browser](https://docs.deapscience.com/data_dictionary/)**
 
 Both applications can be used for similar tasks, but differ in their user interface and specific features. Users can explore both to determine which best suits their needs. See [Metadata & Naming Conventions](metadata.md) for guidance on navigating the data structure on either platform.
