@@ -23,9 +23,9 @@
 <tr><td><b>Quality Control</b></td>
 <td style="word-wrap: break-word; white-space: normal;">
     <ul>
-        <li>Monthly data consistency checks</li>
-        <li>Clarifying contradictory information by sites (e.g., inconsistencies in site responses where reported answers about whether a transition in care had “ever” occurred conflicted with the information recorded in TIC Screeners)</li>
-        <li>Handling of data entry errors, i.e. incomplete or missing responses by sites (e.g., multiple forms submitted with conflicting information, erroneous completion at V1 (during pregnancy))</li>
+        <li>Monthly data consistency checks.</li>
+        <li>Checks and site followup for contradictory information by sites (e.g., inconsistencies in site responses where reported answers about whether a TIC had “ever” occurred conflicted with the information recorded in TIC Screeners), followed up by contacting sites to resolve.</li>
+        <li>Checks and site followup for data entry errors/incomplete or missing responses by sites (e.g., multiple forms submitted with conflicting information, erroneous completion at V1 (during pregnancy)).</li>
     </ul>
 </td></tr>
 </tbody>
