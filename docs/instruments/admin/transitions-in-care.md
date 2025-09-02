@@ -20,22 +20,6 @@
 <p>Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives. The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.</p> 
 </div>
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</i></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>The TIC Screeners initially live in Ripple and then need to be pulled over to LORIS. When an error in the original TIC Screener data entry occurs, we ask RAs to complete a new TIC Screener form with the correct information, submitted in Ripple, but we can’t “erase” old erroneous forms.</p>
-
-<p>A number of TIC Screeners were submitted for V1. Those should NOT be used, as the infant was still a fetus and could not have experienced a transition in care.</p>
-</div>
-
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
