@@ -50,7 +50,19 @@
 <tr><td><b>Completion Time</b></td>
 <td>20-60 min</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">1. Administration QC: HBCD SOPs instruct RAâs to present instructions exactly as presented in the existing Web-CDI.  See https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf for example instructions.2. All data collection, calculation of summary scores and percentile scores is done within Web-CDI and imported into the HBCD database.  Data was reviewed to verify that fields are appropriately labeled upon import, and range checks of all summary variables were completed.</td></tr>      
+<td style="word-wrap: break-word; white-space: normal;">
+  <ul>
+  <li>
+    <strong>Administration QC:</strong> HBCD SOPs instruct RAs to present instructions exactly as shown in the existing 
+    <a href="https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf" target="_blank">Web-CDI Manual</a>.
+  </li>
+  <li>
+    All data collection, calculation of summary scores, and percentile scores are completed within Web-CDI and then 
+    imported into the HBCD database. Data were reviewed to verify that fields are appropriately labeled upon import, 
+    and range checks of all summary variables were performed.
+  </li>
+</ul>
+</td></tr>      
 </tbody>
 </table>
 
