@@ -59,7 +59,6 @@ The **Transitions in Care (TIC) Screener** documents when children spend time li
 Below is info from the README that I interpreted as internal documentation and did not include or updated in the page above:
 
  - pilot data dictionary excluded
- - I added the text under "Additional Resources" to the Responsible Use Warning
  - **For QC**, I changed "Common Issues Identified:" to "Common Issues Identified and addressed" so that users don't think that these issues will exist in the release data. I also did not include any of the detailed text about potential issues noted by subject matter experts as they were already summarized in the text describing QC issues identified (with a level of detail more fitting/relevant for the end user)
  - This text was located under "Additional info" and I originally thought to add it to a Responsible Use Warning, but I believe it is general responsible use (already described elsewhere on the site) as opposed to instrument-specific, so left it out for now:
 
