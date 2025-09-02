@@ -49,7 +49,7 @@ The General Functioning (GF) subscale of the Family Assessment Device (FAD) meas
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Scores are computed by the following method:</p>
+<p><strong>Scores are computed by the following method:</strong></p>
 <ol>
   <li>
     Sum all numerical item responses. The items are scored as coded:
