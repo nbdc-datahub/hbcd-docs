@@ -1,6 +1,6 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: add additional versions for later visits to this same page</i></p>
 
-# Adult Demographics
+# Demographics Adult
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>

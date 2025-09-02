@@ -1,6 +1,6 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: add additional versions for later visits to this same page</i></p>
 
-# Child Demographics
+# Demographics Child
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -149,3 +149,5 @@ Please see the section on <a href="../demographics/#basic-demographics">Basic De
   <p>Jones, C. P., Truman, B. I., Elam-Evans, L. D., Jones, C. A., Jones, C. Y., Jiles, R., Rumisha, S. F., & Perry, G. S. (2008). Using “socially assigned race” to probe white advantages in health status. <em>Ethnicity & Disease</em>, 18(4), 496–504. <a href="https://www.ncbi.nlm.nih.gov/pubmed/19157256" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/19157256</a></p>
 </div>
 <br>
+
+
