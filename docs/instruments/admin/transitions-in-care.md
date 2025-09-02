@@ -28,9 +28,9 @@
             <li>Clarifying contradictory information by sites</li>
             <li>Handling of incomplete or missing responses by sites</li>
         </ul>
-    <i>Common issues identified and addressed include:</i>
+    <i>Common issues addressed via QC:</i>
         <ul>
-            <li>Erroneously completed at V1 (which is not possible because the visit occurs during pregnancy)</li>
+            <li>Erroneous completion at V1 (i.e. during pregnancy)</li>
             <li>Data entry errors (e.g., inconsistencies in site responses where reported answers about whether a transition in care had “ever” occurred conflicted with the information recorded in TIC Screeners)</li>
             <li>Multiple forms submitted with conflicting information</li>
             <li>Missing data patterns</li>
