@@ -7,9 +7,9 @@ hbcd/
 |__ derivatives/ 
     |__ bibsnet/
     |__ hbcd_motion/
-    |__ freesurfer/
+    |__ freesurfer/ <span class="hashtag"># Derived from Infant fMRIPrep sourcedata/ folder</span>
     |__ made/
-    |__ mcribs/
+    |__ mcribs/ <span class="hashtag"># Derived from Infant fMRIPrep sourcedata/ folder</span>
     |__ mriqc/
     |__ nibabies/
     |__ osprey/
@@ -25,19 +25,17 @@ hbcd/
     |__ xcp_d/
 </pre>
 
-
 <p>
-<div id="visformat" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+<div id="visformat" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">Format of File Structure Visuals</span>
   <span class="arrow">▸</span>
 </div>
-<div class="notification-collapsible-content">
-<br>
-<li><strong>The following formatting was employed to enhance readability of the file structure visuals:</strong></li>
+<div class="table-collapsible-content">
+<p><strong>The following formatting was employed to enhance readability of the file structure visuals:</strong></p>
 <ul>
 <li>The BIDS entities <code>sub-&lt;label&gt;_ses-&lt;label&gt;</code> are replaced with the string <code>SUBSES</code></li>
-<li>Some entities include a set of specific values, each of which is associated with a separate file: these values are either enclosed within <code>&lt;&gt;</code> as a list, separated by <code>|</code>, or listed in a <b>Label Values Legend</b></li>
+<li>Some entities include a set of specific values, each of which is associated with a separate file: these values are either enclosed within <code>&lt;&gt;</code> as a list, separated by <code>|</code>, or listed in a <strong>Label Values Legend</strong></li>
 <li>For brevity, sidecar JSON files may not be displayed, in which case files with corresponding JSONs are labeled with <code>(+JSON)</code> after the filename</li>
 <li>Several pipelines produce an <code>.html</code> visual summary report intended to be used for quality assessment of processed outputs. These files, typically located at either the pipeline folder or session-level, source their images from a <code>figures/</code> folder found in the derivatives. For readability, the contents of the <code>figures/</code> folders are not listed</li>
 </ul>
@@ -161,7 +159,7 @@ mriqc/
 Infant-fMRIPrep (also known as NiBabies) outputs from minimal structural and functional MRI processing include visual quality assessment reports, preprocessed derivatives, and confounds to be used for denoising in subsequent processing procedures. Please see their webpage [here](https://nibabies.readthedocs.io/en/latest/outputs.html) for a detailed description of the file outputs.
 
 <p>
-<div id="fyi-nibabies" class="notification-banner">
+<div id="fyi-nibabies" class="table-banner">
     <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text">NOTE: The current release includes Infant fMRIPrep (and consequently XCP-D) derivatives for V02 only.
 	</span>
@@ -225,7 +223,8 @@ sub-<span class="label">&lt;label&gt;</span>/
 *See [Format of File Structure Visuals](#visformat) for further guidance on interpreting the folder tree above.*
 
 ### M-CRIB-S & FreeSurfer Source Directories
-M-CRIB-S and FreeSurfer source directories from [Infant-fMRIPrep](#infant-fmriprep-nibabies) processing are included under `derivatives/` in the data release as well. These are intermediate pipeline outputs used for surface reconstruction, organized for the release within the `mcribs/` and `freesurfer/` folders, respectively.
+
+[Infant-fMRIPrep](#infant-fmriprep-nibabies) generates a FreeSurfer-like subjects directory in a `sourcedata/` folder that stores intermediate pipeline outputs from surface reconstruction methods, including `sourcedata/freesurfer` (for FreeSurfer) and `sourcedata/mcribs` (for M-CRIB-S) ([see details](https://nibabies.readthedocs.io/en/latest/outputs.html#surface-reconstruction)). For the HBCD data release, the M-CRIB-S and FreeSurfer source directories are organized as separate derivatives directories, i.e. `derivatives/mcribs/` and `derivatives/freesurfer/`.
 
 #### M-CRIB-S
 M-CRIB-S is a surface reconstruction method developed for neonates using the surface-based Melbourne Children's Regional Infant Brain atlases ([Adamson et al. 2020](https://doi.org/10.1038/s41598-020-61326-2)). 
