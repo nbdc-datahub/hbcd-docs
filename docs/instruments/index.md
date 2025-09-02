@@ -95,7 +95,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><code>mh_pa_erica</code></td>
   </tr>
   <tr>
-    <td><a href="bcgi/fad" target="_blank">FAD</a></td>
+    <td><a href="bcgi/fad" target="_blank">FAD (GF6+)</a></td>
     <td></td>
     <td style="word-wrap: break-word; white-space: normal;">Global functioning of family unit</td>
     <td><code>mh_cg_fad</code></td>
