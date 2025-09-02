@@ -105,18 +105,25 @@ The MacArthur-Bates Communicative Development Inventories, Words and Gestures is
 ## References
 
 <div class="references"> 
-<p><a href=""></a></p>  
+  <p>
+    deMayo, B., Kellier, D., Braginsky, M., Bergmann, C., Hendriks, C., Rowland, C., et al. (2021). 
+    Web-CDI: A system for online administration of the MacArthur-Bates Communicative Development Inventories. 
+    <i>Language Development Research</i>, 1, 55–98. 
+    <a href="https://doi.org/10.31234/osf.io/8mjx9" target="_blank">https://doi.org/10.31234/osf.io/8mjx9</a>
+  </p>  
+  <p>
+    Marchman, V. A., Dale, P. S., & Fenson, L. (2023). 
+    <i>The MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual</i> 
+    (V. A. Marchman, P. S. Dale, & L. Fenson, Eds.; 3rd ed.). 
+    Baltimore, MD: Brookes Publishing Co.
+  </p>  
+  <p>
+    Marchman, V. A., & Dale, P. S. (2023). 
+    The MacArthur-Bates Communicative Development Inventories: Updates from the CDI advisory board. 
+    <i>Frontiers in Psychology</i>, 14, 1170303. 
+    <a href="https://doi.org/10.3389/fpsyg.2023.1170303" target="_blank">https://doi.org/10.3389/fpsyg.2023.1170303</a>
+  </p>  
 </div>
-
-<p style="color: red;">TO ADD & FORMAT:<br></p>
-
-Marchman, V. A., Dale, P. S., and Fenson, L. (2023). The MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual (V. A. Marchman, P. S. Dale, and L. Fenson (Eds.); 3rd Edn. Baltimore, MD: Brookes Publishing Co.
-
-deMayo, B., Kellier, D., Braginsky, M., Bergmann, C., Hendriks, C., Rowland, C., et al. (2021). Web-CDI: A system for online administration of the MacArthur-Bates Communicative Development Inventories. Lang. Dev. Res. 1, 55–98. doi: 10.31234/osf.io/8mjx9
-
-Marchman, V. A., & Dale, P. S. (2023). The MacArthur-bates communicative development inventories: updates from the CDI advisory board. Frontiers in psychology, 14, 1170303. https://doi.org/10.3389/fpsyg.2023.1170303
-
-
 
 <br>
 
