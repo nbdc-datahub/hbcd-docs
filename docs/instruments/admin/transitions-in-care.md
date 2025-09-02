@@ -5,21 +5,7 @@
 **Acronym**: TIC Screener                         
 **Table Name**: `TBD`           
 **Construct**: Recruitment/Retention
-
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Responsible Use Warning</span>
-  <a class="anchor-link" href="#alert" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="alert-collapsible-content">
-<p>Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives. The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.</p> 
-</div>
-
+  
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -75,3 +61,8 @@ Below is info from the README that I interpreted as internal documentation and d
  - pilot data dictionary excluded
  - I added the text under "Additional Resources" to the Responsible Use Warning
  - **For QC**, I changed "Common Issues Identified:" to "Common Issues Identified and addressed" so that users don't think that these issues will exist in the release data. I also did not include any of the detailed text about potential issues noted by subject matter experts as they were already summarized in the text describing QC issues identified (with a level of detail more fitting/relevant for the end user)
+ - This text was located under "Additional info" and I originally thought to add it to a Responsible Use Warning, but I believe it is general responsible use (already described elsewhere on the site) as opposed to instrument-specific, so left it out for now:
+
+ "Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives. The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses."
+
+ Let me know if any changes are needed or if a Responsible Use Warning/Data Warning should be added! 
