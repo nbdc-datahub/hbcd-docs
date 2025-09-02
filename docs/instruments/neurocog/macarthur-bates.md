@@ -4,8 +4,8 @@
 
 **Full Name**: MacArthur-Bates Communicative Development Inventories, Words and Gestures, Web Version, English and Spanish       
 **Acronym:** CDI-WG, Web-CDI-WG           
-**Table Name**: `nc_ch_cdiws` and `nc_ch_cdiwg`             
-**Construct**: Co-regulation, Child Regulation/Dysregulation, Parenting
+**Table Names**: `nc_ch_cdiws` (**Words**) and `nc_ch_cdiwg` (**Gestures**)             
+**Construct**: Language Development in Child
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -18,7 +18,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="alert-collapsible-content">
-<p>The CDI forms are well-documented and widely used assessments. We note that percentile scores were calculated based on the norms described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023), see additional references below. See <a href="#hbcd-mod">HBCD Modifications</a> for a description of how the CDI-WG is administered to children with exposure to different languages; users may want to consider the Multilingual Language Development questionnaire in conjunction with the CDI.</p>
+<p>The CDI forms are well-documented and widely used assessments. We note that percentile scores were calculated based on the norms described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023), see additional references below. See <a href="#hbcd-mod">HBCD Modifications</a> for a description of how the CDI-WG is administered to children with exposure to different languages; users may want to consider the <a href="../mlds" target="_blank">Multilingual Language Development</a> questionnaire in conjunction with the CDI.</p>
 </div>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
