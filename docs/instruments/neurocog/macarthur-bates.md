@@ -96,10 +96,8 @@ The MacArthur-Bates Communicative Development Inventories, Words and Gestures is
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>All summary scores (e.g. Total Gestures, Words Understood, Words Produced) and associated percentiles (with and without adjustment for child sex) were computed within Web-CDI using the most updated norms within that software and described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023).</p>  
-<p>The child’s age at administration for purposes of scoring the CDI is entered by the caregiver as part of the Web-CDI form. The caregiver also notes on this form if the child was born prematurely and if so, by how many weeks. The Web-CDI then provides percentile scores both unadjusted and adjusted for prematurity. See https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf.</p>
-<p>All summary scores (e.g. Total Gestures, Words Understood, Words Produced) and associated percentiles (with and without adjustment for child sex) were computed within Web-CDI using the most updated norms within that software and described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023).</p>  
-<p>The child’s age at administration for purposes of scoring the CDI is entered by the caregiver as part of the Web-CDI form. The caregiver also notes on this form if the child was born prematurely and if so, by how many weeks. The Web-CDI then provides percentile scores both unadjusted and adjusted for prematurity. See https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf.</p>
+<p>All summary scores (e.g. <strong>Total Gestures</strong>, <strong>Words Understood</strong>, <strong>Words Produced</strong>) and associated percentiles (with and without adjustment for child sex) were computed within Web-CDI using the most updated norms within that software and described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023).</p>  
+<p>The child’s age at administration for purposes of scoring the CDI is entered by the caregiver as part of the Web-CDI form. The caregiver also notes on this form if the child was born prematurely and if so, by how many weeks. The Web-CDI then provides percentile scores both unadjusted and adjusted for prematurity. See <a href="https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf">https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf</a>.</p>
 </div>
 
 ## References
