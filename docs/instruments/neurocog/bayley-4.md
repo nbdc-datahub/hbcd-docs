@@ -1,8 +1,7 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
 # Bayley Scales of Infant and Toddler Development, Fourth Edition
-
-**Full Name**: Bayley Scales of Infant and Toddler Development, Fourth Edition       
+    
 **Acronym:** BSID-4, Bayley           
 **Table Name**: `nc_ch_bayley`    
 **Construct:** Child Development (Cognitive, Language, and Motor)
@@ -66,7 +65,9 @@
 </td></tr>    
 <tr>
   <td style="word-wrap: break-word; white-space: normal;"><b>QC Procedures-ALT</b></td>
-  <td style="word-wrap: break-word; white-space: normal;">HBCD Study staff were trained and certified by experienced Bayley administrators to ensure adherence to standardized procedures. During testing, responses were entered into QGlobal (Pearson’s official scoring platform for the Bayley Scales), which automatically applied scoring rules and generated standardized scores. Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations. Completion rates were monitored across sites, with additional training provided when needed.</td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  <p style="color: red;">Luci note: I've included a suggested update to the QC text. The text above is fantastic internal documentation, but for the website, I think it can be simplified to only include relevant info/details for the end user like so:</p>
+  <p>HBCD Study staff were trained and certified by experienced Bayley administrators to ensure adherence to standardized procedures. During testing, responses were entered into QGlobal (Pearson’s official scoring platform for the Bayley Scales), which automatically applied scoring rules and generated standardized scores. Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations. Completion rates were monitored across sites, with additional training provided when needed.</td>
 </tr>  
 </tbody>
 </table>
