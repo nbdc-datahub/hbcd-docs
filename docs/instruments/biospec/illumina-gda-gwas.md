@@ -70,20 +70,6 @@ Additional description will be added. These data contain a `.bed`, `.bim`, and `
 **Number of variants**: ~XXX    
 **Number of Individuals**: X,XXX
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>No modifications. It is possible that samples whose identity cannot be resolved will be removed during QC.</p> 
-</div>
-
 ## References
 
 <div class="references"> 
