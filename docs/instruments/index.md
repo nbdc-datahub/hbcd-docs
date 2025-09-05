@@ -159,19 +159,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <td style="text-align: left;"><code>bio_bm_SAMPLED_epplcr</code></td>
   </tr>
   <tr>
-    <td style="text-align: left;"><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
-    <td style="text-align: left;"></td>
-    <td style="text-align: left;">Genomics</td>
-    <td style="text-align: left;"><code>TBD</code></td>
-  </tr>
-  <tr>
-    <td style="text-align: left;"><a href="biospec/nails" target="_blank">Nails</a></td>
-    <td style="text-align: left;">Maternal</td>
-    <td style="text-align: left;">Drug, Environmental Exposure</td>
-    <td style="text-align: left;"><code>bio_bm_biosample_nails_results</code><br><code>bio_bm_biosample_nails_type</code></td>
-  </tr>
-  <tr>
-    <td rowspan="2" style="text-align: left;"><a href="biospec/saliva" target="_blank">Saliva</a></td>
+    <td rowspan="2" style="text-align: left;"><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
     <td style="text-align: left;">Maternal</td>
     <td style="text-align: left;">GWAS, EWAS, Transcriptome</td>
     <td style="text-align: left;"><code>bio_bm_biosample_saliva</code></td>
@@ -180,6 +168,12 @@ Expand the sections below to see a list of measures associated with each domain 
     <td style="text-align: left;">Child</td>
     <td style="text-align: left;">GWAS, EWAS, Transcriptome</td>
     <td style="text-align: left;"><code>bio_ch_biosample_saliva</code></td>
+  </tr>
+  <tr>
+    <td style="text-align: left;"><a href="biospec/nails" target="_blank">Nails</a></td>
+    <td style="text-align: left;">Maternal</td>
+    <td style="text-align: left;">Drug, Environmental Exposure</td>
+    <td style="text-align: left;"><code>bio_bm_biosample_nails_results</code><br><code>bio_bm_biosample_nails_type</code></td>
   </tr>
   <tr>
       <td rowspan="2" style="text-align: left;"><a href="biospec/urine" target="_blank">Urine</a></td>
