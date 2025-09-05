@@ -3,7 +3,7 @@
 # Illumina Global Diversity GWAS Array
      
 **Acronym:** GDA GWAS           
-**Table Name**: `TBD`         
+**Table Name**: `add` (maternal child saliva)         
 **Construct:** Genomics
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
