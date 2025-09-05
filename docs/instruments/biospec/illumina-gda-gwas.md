@@ -42,24 +42,33 @@ The use of population descriptors in genetic research can often be varied and in
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr><td><b>Child Specific</b></td>
-<td>No </td></tr>
+<td>No</td></tr>
 <tr><td><b>Respondent</b></td>
 <td>Data will be included from the birth parent and child in the same files.</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff in person, Self administered remote</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff in person, Self-administered remote</td></tr>
 <tr><td><b>Visits</b></td>
 <td style="word-wrap: break-word; white-space: normal;">V01, V02, V03, V04, V05, V06, These samples are assayed from one sample but it may come from any session based on DNA Yields.</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>Not applicable</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Temporary description of initial checks. This will need to be updated prior to data release with a document we will upload. For the initial data release we will do the following:1. Check that sampled ID matches from Sampled File and Lasso database2. Check that sample specific barcode matches between Sampled file and Lasso Database.3. Check that genomic sex matches with sex at birth.4. Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is ~.50 between the birth parent and child as well as siblings; evaluate potential twins)5. Use FHET estimates to check for plate contamination.</td></tr>      
+<td style="word-wrap: break-word; white-space: normal;">
+<ol>
+  <li>Check that sampled ID matches from Sampled File and Lasso database</li>
+  <li>Check that sample specific barcode matches between Sampled file and Lasso Database.</li>
+  <li>Check that genomic sex matches with sex at birth.</li>
+  <li>Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is ~.50 between the birth parent and child as well as siblings; evaluate potential twins)</li>
+  <li>Use FHET estimates to check for plate contamination.</li>
+</ol>
+</td></tr>      
 </tbody>
 </table>
 
 ## Instrument Details
 
-Additional description will be added. These data contain a `.bed`, `.bim`, and `.fam` file which include genomic data. There is also a `batch.info` file which details sample batching for genotyping. A README file describes these data. Genome Build: hg19Number of variants: ~XXXNumber of Individuals: X,XXX
+Additional description will be added. These data contain a `.bed`, `.bim`, and `.fam` file which include genomic data. There is also a `batch.info` file which details sample batching for genotyping. A README file describes these data.
 
+**Genome Build**: hg19    
+**Number of variants**: ~XXX    
+**Number of Individuals**: X,XXX
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
