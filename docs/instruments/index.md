@@ -152,11 +152,17 @@ Expand the sections below to see a list of measures associated with each domain 
     </tr>
   </thead>
   <tbody>
-    <tr>
+  <tr>
     <td style="text-align: left;"><a href="biospec/blood-plasma" target="_blank">Blood- Plasma</a></td>
     <td style="text-align: left;">Maternal</td>
     <td style="text-align: left;">Metals, Nutrition, Toxins, Proteins</td>
     <td style="text-align: left;"><code>bio_bm_SAMPLED_epplcr</code></td>
+  </tr>
+  <tr>
+    <td style="text-align: left;"><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
+    <td style="text-align: left;"></td>
+    <td style="text-align: left;">Genomics</td>
+    <td style="text-align: left;"><code>TBD</code></td>
   </tr>
   <tr>
     <td style="text-align: left;"><a href="biospec/nails" target="_blank">Nails</a></td>

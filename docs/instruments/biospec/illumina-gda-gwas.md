@@ -1,26 +1,10 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
-
-<p style="color: red;">ADMIN NOTES FOR PAGE CONSTRUCTION:<br>
-<ul style="color: red;">
-  <li><b>Workgroup</b>: Biospecimens</li>
-  <li><b>Contact</b>: rbogdan@wustl.edu</li>
-  
-  
-</ul>
-</ul>
-</p>
-
-------------------------------------------------------------
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
 
 # Illumina Global Diversity GWAS Array
-
-**Full Name**: Illumina Global Diversity GWAS Array       
- **Acronym:** GDA GWAS           
-**Table Name**: `GDA GWAS`    
-
+     
+**Acronym:** GDA GWAS           
+**Table Name**: `TBD`         
 **Construct:** Genomics
-   
-
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -33,10 +17,11 @@
   <span class="arrow">▸</span>
 </div>
 <div class="alert-collapsible-content">
-<p>Balanced Research PracticesResearchers must adhere to ethical guidelines and ensure that genetic data are analyzed and interpreted responsibly. Research should aim to advance scientific understanding and avoid misinterpretation or misuse of genetic findings. Evidence of users engaging in stigmatizing research will result in termination of data access.Consideration of Population DescriptorsThe use of population descriptors in genetic research can often be varied and inconsistent. We encourage users to review the NASEM report (https://doi.org/10.17226/26902) for consideration of appropriate population descriptors. Self-reported race and ethnicity may reflect social and environmental experiences that do not directly correspond to genetic variation. Key reference: (2023). https://doi.org/10.17226/26902</p>
+<p><b>Balanced Research Practices</b><br>
+Researchers must adhere to ethical guidelines and ensure that genetic data are analyzed and interpreted responsibly. Research should aim to advance scientific understanding and avoid misinterpretation or misuse of genetic findings. Evidence of users engaging in stigmatizing research will result in termination of data access.</p>
+<p><b>Consideration of Population Descriptors</b><br>
+The use of population descriptors in genetic research can often be varied and inconsistent. We encourage users to review the <a href="https://doi.org/10.17226/26902">NASEM report</a> for consideration of appropriate population descriptors. Self-reported race and ethnicity may reflect social and environmental experiences that do not directly correspond to genetic variation.</p>
 </div>
-
-
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -52,7 +37,6 @@
 <p>Any removal of data during QC will be described.</p> 
 </div>
 
-
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -64,7 +48,7 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">HBCD Study staff in person, Self administered remote</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V01, V02, V03, V04, V05, V06, These samples are assayed from one sample but it may come from any session based on DNA Yields.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">V01, V02, V03, V04, V05, V06, These samples are assayed from one sample but it may come from any session based on DNA Yields.</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>Not applicable</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
@@ -72,11 +56,9 @@
 </tbody>
 </table>
 
-
-
 ## Instrument Details
 
-Additional desccription will be added. These data contain a .bed, .bim, and .fam file which include genomic data. There is also a batch.info file which details sample batching for genotyping. A README file describes these data. Genome Build: hg19Number of variants: ~XXXNumber of Individuals: X,XXX
+Additional description will be added. These data contain a `.bed`, `.bim`, and `.fam` file which include genomic data. There is also a `batch.info` file which details sample batching for genotyping. A README file describes these data. Genome Build: hg19Number of variants: ~XXXNumber of Individuals: X,XXX
 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
@@ -90,44 +72,14 @@ Additional desccription will be added. These data contain a .bed, .bim, and .fam
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-
 <p>No modifications. It is possible that samples whose identity cannot be resolved will be removed during QC.</p> 
-
-
-
 </div>
-
-
-
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>N/A</p>
-</div>
-
-
-
-
-
 
 ## References
 
 <div class="references"> 
-<p><a href=""></a></p>  
+<p>Committee on the Use of Race, Ethnicity, and Ancestry as Population Descriptors in Genomics Research, Board on Health Sciences Policy, Committee on Population, Health and Medicine Division, Division of Behavioral and Social Sciences and Education, & National Academies of Sciences, Engineering, and Medicine. (2023). Using population descriptors in genetics and genomics research. National Academies Press. <a href="https://doi.org/10.17226/26902">https://doi.org/10.17226/26902</a></p>  
 </div>
-
-<p style="color: red;">TO ADD & FORMAT:<br></p>
-
-Key reference: (2023). https://doi.org/10.17226/26902
-
 
 <br>
 
