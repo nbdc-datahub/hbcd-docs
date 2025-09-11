@@ -43,7 +43,7 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Parent, in person or remote</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V01</td></tr>
+<td>V01 <strong>[Current]</strong>; V05 <strong>[&lt;18]</strong>;</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>NA</td></tr>
 <tr><td><b>Quality Control</b></td>
@@ -52,7 +52,7 @@
 </table>
 
 ## Instrument Details
-Protective and Compensatory Experience (PACES) is a 10-question scale with scores ranging between 0 and 10 assessing positive childhood experiences through age 18 such as: relationships, feeling of connectedness, physical activity, engagement, environment, and opportunities.
+**Protective and Compensatory Experience (PACES)** is a 10-question scale with scores ranging between 0 and 10 assessing protective experiences in the last year (**PACES (Current)**) and protective experiences in childhood through age 18 (**PACES (<18)**). This includes: relationships, feelings of connectedness, physical activity, engagement, environment, and opportunities.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
