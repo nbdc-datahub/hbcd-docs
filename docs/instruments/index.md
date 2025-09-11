@@ -319,15 +319,10 @@ Expand the sections below to see a list of measures associated with each domain 
       <td><code>ph_cg_ecls__medhist</code></td>
     </tr>
     <tr>
-      <td rowspan="2"><a href="physhealth/nutrition" target="_blank">Nutrition Questionnaire</a></td>
+      <td><a href="physhealth/nutrition" target="_blank">Nutrition Questionnaire</a></td>
       <td>Infant</td>
       <td>Nutrition</td>
       <td><code>ph_cg_inq</code></td>
-    </tr>
-    <tr>
-      <td>Child</td>
-      <td>Nutrition</td>
-      <td><code>ph_cg_cnq</code></td>
     </tr>
     <tr>
     <td><a href="physhealth/screenq" target="_blank">ScreenQ</a></td>
