@@ -1,9 +1,9 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
-<p style="font-size: 1.5em;">⚠️ <i>NEW README NOT YET SUBMITTED</i>. Info for HCBD Modifications and Scoring Procedures sections pulled from old documentation provided, so these sections can be skipped in the google form, but WG should confirm that the info is still accurate</p>
 
-# Composite Abuse Scale - Short Form
-              
-**Acronym**: CABr-SF                         
+
+# Composite Abuse Scale Revised - Short Form
+ 
+**Acronym:** CASR-SF                              
 **Table Name**: `sed_cg_cabr_sf`              
 **Construct**: Intimate Partner Violence
 
@@ -14,21 +14,27 @@
 <tr><td><b>Child Specific</b></td>
 <td>No</td></tr>
 <tr><td><b>Respondent</b></td>
-<td>Primary Caregiver on self</td></tr>
+<td>Birth Parent or Primary Caregiver</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff in-person</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self administered in person (only if HBCD Study staff were able to administer in-person and in a private setting away from additional adults)</td></tr>
 <tr><td><b>Visits</b></td>
-<td></td></tr>
+<td>V04, V06</td></tr>
 <tr><td><b>Completion Time</b></td>
-<td></td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;"></td></tr>
+<td>2 minutes</td></tr>
+<tr><td><b>Quality Control Procedures</b></td>
+<td style="word-wrap: break-word; white-space: normal;">
+  <ul>
+    <li>Scoring verification</li>
+    <li>Data consistency checks</li>
+    <li>Checks for missingness</li>
+  </ul>
+</td></tr> 
 </tbody>
 </table>
 
 ## Instrument Details
 
-ADD CONTENT 
+The **CASR-SF** is a 15-item scale indexing lifetime and current experiences and frequency (in the past 12 months) with physical, sexual, and psychological abuse. It is participant self-administered and administered in a private setting away from any additional adults who may have accompanied the participant to the visit. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -58,6 +64,13 @@ Language was updated to use gender-neutral terminology in the definition of inti
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The summary score is computed as the mean of the frequency of abuse experience responses multiplied by 15 when there are response for at least 11 items. Note that in the updated scoring procedures, "Don’t Know" and "Decline to answer" are regarded as missing or non-responses.</p>
+<p>The summary score is computed as the mean of the frequency of abuse experience responses (e.g., ranging from "not in the past 12 months" (0) to "daily/almost daily" (5)) multiplied by 15 when there are response for at least 11 of the 15 items. Note that in the updated scoring procedures, "Don’t Know" and "Decline to answer" are regarded as missing or non-responses.</p>
 </div>
+
+## References
+
+<div class="references"> 
+<p>Ford-Gilboe, M., Wathen, C. N., Varcoe, C., MacMillan, H. L., Scott-Storey, K., Mantler, T., Hegarty, K., & Perrin, N. (2016). Development of a brief measure of intimate partner violence experiences: the Composite Abuse Scale (Revised)-Short Form (CASR-SF). <i>BMJ Open</i>, 6(12), e012824. <a href="https://doi.org/10.1136/bmjopen-2016-012824">https://doi.org/10.1136/bmjopen-2016-012824</a></p>  
+</div>
+
 <br>
