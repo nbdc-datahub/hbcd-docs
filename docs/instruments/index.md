@@ -167,7 +167,6 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
   </tbody>
   </table>
-
 <p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>for Genomics</b></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
@@ -186,6 +185,7 @@ Expand the sections below to see a list of measures associated with each domain 
   </tbody>
   </table>
 </div>
+
 
 <div id="neurocog" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
@@ -504,7 +504,7 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="text-align: center;">Instrument</th>
+      <th style="width: 15%; text-align: center;">Instrument</th>
       <th style="text-align: center;">Version</th>
       <th style="width: 60%; text-align: center;">Construct</th>
       <th style="text-align: center;">Table Name</th>
@@ -573,6 +573,12 @@ Expand the sections below to see a list of measures associated with each domain 
       <td>Current Employment</td>
       <td><code>sed_cg_employ</code></td>
     </tr>  
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="sed/geocoded-linkage" target="_blank">Geocoded Linkage from Home & Work Addresses</a></td>
+      <td></td>
+      <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure & Other Neighborhood Measures</td>
+      <td><code>????</code></td>
+    </tr>
     <tr>
       <td><a href="SED/household-chemical-exposures" target="_blank">Household Chemical Exposures</a></td>
       <td></td>
