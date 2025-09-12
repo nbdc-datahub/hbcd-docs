@@ -142,6 +142,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><b>Tabulated Data</b></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
@@ -152,17 +153,6 @@ Expand the sections below to see a list of measures associated with each domain 
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td rowspan="2" style="text-align: left;"><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
-    <td style="text-align: left;">Maternal</td>
-    <td style="text-align: left;">GWAS, EWAS, Transcriptome</td>
-    <td style="text-align: left;"><code>bio_bm_biosample_saliva</code></td>
-  </tr>
-  <tr>
-    <td style="text-align: left;">Child</td>
-    <td style="text-align: left;">GWAS, EWAS, Transcriptome</td>
-    <td style="text-align: left;"><code>bio_ch_biosample_saliva</code></td>
-  </tr>
   <tr>
     <td style="text-align: left;"><a href="biospec/nails" target="_blank">Nails</a></td>
     <td style="text-align: left;">Maternal</td>
@@ -175,6 +165,24 @@ Expand the sections below to see a list of measures associated with each domain 
       <td style="text-align: left;">Drug Panel, Toxins</td>
       <td style="text-align: left;"><code>bio_bm_biosample_urine</code></td>
   </tr>
+  </tbody>
+  </table>
+
+<p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>for Genomics</b></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th>Instrument</th>
+      <th>Construct</th>
+      <th style="width: 20%;"><i class="fas fa-layer-group"></i> Concatenated Data</th>
+      <th style="width: 20%;"><i class="fas fa-hammer"></i> Raw Data/<br><i class="fas fa-cog"></i> Derivatives</th>
+    </tr>
+  </thead>
+  <tbody>
+      <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
+      <td>GWAS, EWAS, Transcriptome (Maternal & Child)</td>
+      <td><a href="../datacuration/concat" target="_blank"><code>genetics/</code></a></td>
+      <td>NA</td>
   </tbody>
   </table>
 </div>
