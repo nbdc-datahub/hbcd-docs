@@ -3,11 +3,11 @@
 # Illumina Global Diversity GWAS Array
      
 **Acronym:** GDA GWAS           
-**Table Name**: `add` (maternal child saliva)         
+**Table Name**: `bio_bm_biosample_saliva` (Maternal), `bio_ch_biosample_saliva` (Child)              
 **Construct:** Genomics
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
   <span class="text-with-link">
   <span class="text">Responsible Use Warning</span>
   <a class="anchor-link" href="#alert" title="Copy link">
@@ -48,7 +48,7 @@ The use of population descriptors in genetic research can often be varied and in
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">HBCD Study staff in person, Self-administered remote</td></tr>
 <tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">V01, V02, V03, V04, V05, V06, These samples are assayed from one sample but it may come from any session based on DNA Yields.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Samples are assayed from one sample, but may come from any session (V01-V06) based on DNA Yields.</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
 <td style="word-wrap: break-word; white-space: normal;">
 <ol>

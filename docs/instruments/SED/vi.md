@@ -8,7 +8,7 @@
 **Construct:** Acculturation
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
   <span class="text-with-link">
   <span class="text">Responsible Use Warning</span>
   <a class="anchor-link" href="#alert" title="Copy link">
