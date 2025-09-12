@@ -67,10 +67,10 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
 
 <pre class="folder-tree">
 hbcd/
-|__ concatenated/
+|__ concatenated/      <span class="hashtag"># Concatenated Data (Genetics)</span>
 |   |__ genetics/
 |
-|__ derivatives/        <span class="hashtag"># Processed File-Based Data (MRI, EEG, etc.)</span>
+|__ derivatives/       <span class="hashtag"># Processed File-Based Data (MRI, EEG, etc.)</span>
 |   |__ bibsnet/
 |   |__ hbcd_motion/
 |   |__ made/
