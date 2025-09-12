@@ -29,7 +29,7 @@ The variable 'Mother Race' (`sed_basic_demographics_screen_mother_race`) has dup
 ##### ⚠️ Erroneous Inclusion of Response Option (2=Hawaiian) in 'Mother Race' Variable
 The variable `sed_basic_demographics_screen_mother_race` has two levels to reflect Hawaiian race (`2` = `Hawaiian`; `7` = `Native Hawaiian or Other Pacific Islander`). `2` = `Hawaiian` was not a response option to this question and can be ignored; no participants selected this option.
 
-**Expected Fix:** Release 1.1  
+**Expected Fix:** Release 2.0  
 
 ##### ⚠️ Gestational Age at Delivery and Mother’s Age at Delivery
 
