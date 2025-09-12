@@ -98,7 +98,7 @@ Individual items for Level 1 and Level 2 domains are provided, but any summary s
 ##### ⚠️ ICD Code Names/Labels Inconsistently Provided (Pregnancy & Infant Health)
 In cases where ICD codes are provided, corresponding names/labels are sometimes not provided. This is a known issue to be fixed in future releases. In the meantime, users can consider existing packages to merge ICD labels in [Stata](https://www.stata.com/features/overview/icd/), [SAS](https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp), or [R](https://www.rdocumentation.org/packages/icd/versions/3.3).       
 
-**Expected Fix:** Release 1.1
+**Expected Fix:** Release 2.0
 
 ##### ⚠️ Infant Health Check 
 
