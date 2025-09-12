@@ -34,7 +34,7 @@ The use of population descriptors in genetic research can often be varied and in
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Any removal of data during QC will be described.</p> 
+<p>Any removal of data during QC will be described in the README file accompanying the data.</p> 
 </div>
 
 ## Administration & Quality Control
@@ -64,11 +64,7 @@ The use of population descriptors in genetic research can often be varied and in
 
 ## Instrument Details
 
-Additional description will be added. These data contain a `.bed`, `.bim`, and `.fam` file which include genomic data. There is also a `batch.info` file which details sample batching for genotyping. A README file describes these data.
-
-**Genome Build**: hg19    
-**Number of variants**: ~XXX    
-**Number of Individuals**: X,XXX
+Genomic data generated from the Illumina Global Diversity Array are provided as `.bed`, `.bim`, and `.fam` plink files on the hg19 genome build. A `batch.info` file contains which batch each participant was run on. The README file contains details of initial QC to ensure sample matches (e.g., ID checks, sex checks, etc.).
 
 ## References
 
