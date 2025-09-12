@@ -2,7 +2,7 @@
 
 # Illumina Global Diversity GWAS Array 
 
-Genomic data generated from the Illumina Global Diversity Array (GDA GWAS) are provided as <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data under the `concat/` BIDS folder (<a href="../../../datacuration/concat" target="_blank">see details</a>):
+Genomic data generated from the Illumina Global Diversity Array (*GDA GWAS*) are provided as <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data under the `concat/` BIDS folder (<a href="../../../datacuration/concat" target="_blank">see details</a>):
 
 <p>
 <pre class="folder-tree">
