@@ -25,12 +25,12 @@
 
 HBCD is organized following [Brain Imaging Data Structure](https://bids-specification.readthedocs.io/en/stable/) (BIDS) standards. At a high level, HBCD BIDS data has the folder structure displayed below, with all data nested under `hbcd/`. The main folders of interest are as follows: see linked sections for further details on the contents and folder structure of each.
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
 <tr>
-  <td style="width: 20%; text-align: left;"><b>Data Type</b></td>
-  <td style="width: 15%; text-align: center;"><b>Folder Location</b></td>
-  <td style="width: 65%; text-align: center;"><b>Description</b></td>
+  <th style="width: 15%;">Data Type</th>
+  <th style="width: 15%;">Folder Location</th>
+  <th style="width: 70%;">Description</th>
 </tr>
 </thead>
 <tbody>
