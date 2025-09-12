@@ -59,16 +59,20 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
   <td><i class="fa-solid fa-folder-open" style="margin-right:6px; color:#666;"></i><strong><a href="../concat" target="_blank">Concatenated Data</a></strong></td>
   <td><code style="background:#f5f5f5;">concatenated/</code></td>
   <td style="word-wrap: break-word; white-space: normal;">
-    Concatenated files combining participant data for certain modalities (currently genetics only). Each file contains data for all participants.
+    Concatenated files combining participant data for certain modalities, organized into subfolders based on the type of data (e.g. Genetics, Geocoded Linkage, etc.).
   </td>
 </tr>
 </tbody>
 </table>
 
+<p style="color: red;">TO DO: update concatenated file tree and description as needed</p>
+
 <pre class="folder-tree">
 hbcd/
-|__ concatenated/      <span class="hashtag"># Concatenated Data (Genetics)</span>
+|__ concatenated/      <span class="hashtag"># Concatenated Data</span>
 |   |__ genetics/
+|   |__ geocoded_linkage/
+|   |__ tic/
 |
 |__ derivatives/       <span class="hashtag"># Processed File-Based Data (MRI, EEG, etc.)</span>
 |   |__ bibsnet/

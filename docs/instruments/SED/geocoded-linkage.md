@@ -2,6 +2,23 @@
 <p style="font-size: 1.5em;">⚠️ <i>NEW README NOT YET SUBMITTED</i></p>
 
 # Geocoded Linkage from Home and Work Addresses
+
+Geocoded linkage data are provided as <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data under the `concatenated/` BIDS folder (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details):
+
+<p>
+<pre class="folder-tree">
+hbcd/
+|__ concatenated/ 
+    |__ genetics/
+        |__ .bed
+        |__ .bim
+        |__ .fam
+        |__ batch.info
+        |__ README
+</pre>
+</p>
+
+
                     
 **Table Name**: `TBD`                   
 **Construct**: Toxin Exposure and Other Neighborhood Measures
