@@ -1,8 +1,19 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
+
+***NOTES***
+
+ - Potentially add following info back in if data will also be provided in tabulated form for 2.0:
+    - **Table Name**: `bio_bm_biosample_saliva` (Maternal), `bio_ch_biosample_saliva` (Child)              
+    - **Construct:** Genomics
+- Fix [overview page](../index.md#biospec) that links to this page accordingly
+- Update [Data Structure Overview](../../datacuration/overview.md) page to add `concat/`, potentially have separate page for concat as with other data types? 
+
+
+---------------------------------------
 
 # Illumina Global Diversity GWAS Array 
 
-Genomic data generated from the Illumina Global Diversity Array (*GDA GWAS*) are provided as <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data under the `concat/` BIDS folder (<a href="../../../datacuration/concat" target="_blank">see details</a>):
+Genomic data generated from the Illumina Global Diversity Array (*GDA GWAS*) are provided as <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data under the `concat/` BIDS folder (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details):
 
 <p>
 <pre class="folder-tree">
@@ -120,14 +131,3 @@ Genomic data generated from the Illumina Global Diversity Array are provided as 
 
 
 
-
-
-## Other
-
-potentially add back if data will also be provided in tabulated form for 2.0:
-
-
-**Table Name**: `bio_bm_biosample_saliva` (Maternal), `bio_ch_biosample_saliva` (Child)              
-**Construct:** Genomics
-
-- fix overview page that links to this page
