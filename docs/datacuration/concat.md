@@ -2,7 +2,7 @@
 
 # Concatenated File-Based Data
 
-The `concat/` folder contains concatenated data files for various instruments and modalities, organized into subdirectories based on the type of data (only genetics data in the current release). Each file contains information for all participants.
+The `concat/` BIDS folder can contain concatenated data files for various instruments and modalities, organized into subdirectories based on the type of data. Each file contains information for all participants. For HBCD, only concatenated genetics data are included in the current release - see the  [Illumina Global Diversity GWAS Array](../instruments/biospec/illumina-gda-gwas.md) instrument documentation for details.
 
 <pre class="folder-tree">
 hbcd/

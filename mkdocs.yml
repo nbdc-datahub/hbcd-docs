@@ -61,7 +61,7 @@ nav:
     - File-Based Data: 
         - Raw File-Based Data: datacuration/rawbids.md
         - Processed File-Based Data: datacuration/derivatives.md
-        - Concatenated File-Based Data: datacuration/concat.md
+        - Concatenated File-Based Data: datacuration/.md
     - Tools: 
         - Useful Utilities: datacuration/recprograms.md
         - NMIND: datacuration/nmind.md
