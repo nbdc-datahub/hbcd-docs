@@ -23,36 +23,44 @@
 </div>
 </p>
 
-HBCD is organized following [Brain Imaging Data Structure](https://bids-specification.readthedocs.io/en/stable/) (BIDS) standards. At a high level, HBCD BIDS data has the folder structure displayed below, with all data nested under `hbcd/`. The three main folders of interest are as follows: see linked sections for further details on the contents and folder structure of each.
+HBCD is organized following [Brain Imaging Data Structure](https://bids-specification.readthedocs.io/en/stable/) (BIDS) standards. At a high level, HBCD BIDS data has the folder structure displayed below, with all data nested under `hbcd/`. The main folders of interest are as follows: see linked sections for further details on the contents and folder structure of each.
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
 <thead>
 <tr>
-<td style="width: 10%;">&nbsp;</td>
-<td style="width: 10%; text-align: center;"><b>Folder Location</b></td>
-<td style="width: 70%; text-align: center;"><b>Description</b></td>
+  <td style="width: 20%; text-align: left;"><b>Data Type</b></td>
+  <td style="width: 15%; text-align: center;"><b>Folder Location</b></td>
+  <td style="width: 65%; text-align: center;"><b>Description</b></td>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong><a href="../phenotypes"><b>Tabulated Data</b></a></strong></td>
-<td><code>rawdata/phenotype/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Instrument data in tabulated format, containing all participant data per table, including demographics and visit information, toxicology, behavior, and tabulated data derived from file-based data (MRI, spectroscopy, EEG, and <a href="../../instruments/sensors/wearsensors">wearable sensors</a>).</td>
+<tr style="background-color: #f9f9f9;">
+  <td><strong><a href="../phenotypes" target="_blank">Tabulated Data</a></strong></td>
+  <td><code style="background:#f5f5f5;">rawdata/phenotype/</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+    Tabulated instrument data, one row per participant. Includes demographics, visit information, toxicology, behavior, and tables derived from file-based data (e.g., MRI, spectroscopy, EEG, and <a href="../../instruments/sensors/wearsensors">wearable sensors</a>).
+  </td>
 </tr>
 <tr>
-<td><strong><a href="../rawbids"><b>Raw File-based Data</b></a></strong></td>
-<td><code>rawdata/sub-&lt;ID&gt;/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">BIDS-formatted raw data of varied formats for MRI, MRS, EEG, and motion/accelerometry. Participant data is included in separate subject/session-level folders.</td>
+  <td><strong><a href="../rawbids" target="_blank">Raw Data (File-based)</a></strong></td>
+  <td><code style="background:#f5f5f5;">rawdata/sub-&lt;ID&gt;/</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+    Raw participant-level files in <a href="https://bids.neuroimaging.io/">BIDS</a> format, organized by subject/session. Includes MRI, MRS, EEG, and motion/accelerometry.
+  </td>
+</tr>
+<tr style="background-color: #f9f9f9;">
+  <td><strong><a href="../derivatives" target="_blank">Processed Data (File-based)</a></strong></td>
+  <td><code style="background:#f5f5f5;">derivatives/</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+    Processed derivatives of MRI, MRS, EEG, and motion/accelerometry data. Organized by subject/session following BIDS <code>derivatives/</code> conventions.
+  </td>
 </tr>
 <tr>
-<td><strong><a href="../derivatives"><b>Processed File-based Data</b></a></strong></td>
-<td><code>derivatives/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Processed MRI, MRS, EEG, and motion/accelerometry derivatives of varied formats derived from processing pipelines. Participant data is included in separate subject/session-level folders.</td>
-</tr>
-<tr>
-<td><strong><a href="../concat"><b>Concatenated File-based Data</b></a></strong></td>
-<td><code>concatenated/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Concatenated data files for various instruments and modalities, organized into subdirectories based on the type of data (only genetics data in the current release). Each file contains information for all participants.</td>
+  <td><strong><a href="../concat" target="_blank">Concatenated Data</a></strong></td>
+  <td><code style="background:#f5f5f5;">concatenated/</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+    Concatenated files combining participant data for certain modalities (currently genetics only). Each file contains data for all participants.
+  </td>
 </tr>
 </tbody>
 </table>
