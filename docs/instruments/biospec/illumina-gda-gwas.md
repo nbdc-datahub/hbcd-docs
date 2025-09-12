@@ -117,16 +117,3 @@ Genomic data generated from the Illumina Global Diversity Array are provided as 
 </div>
 
 <br>
-
-
----------------------------------------
-
-## ADMIN NOTES - REMOVE FROM FINAL
-
-
- - Potentially add following info back in if data will also be provided in tabulated form for 2.0:
-    - **Table Name**: `bio_bm_biosample_saliva` (Maternal), `bio_ch_biosample_saliva` (Child)              
-    - **Construct:** Genomics
-- Fix [overview page](../index.md#biospec) that links to this page accordingly
-- Update [Data Structure Overview](../../datacuration/overview.md) page to add `concatenated/`, potentially have separate page for concatenated as with other data types? 
-
