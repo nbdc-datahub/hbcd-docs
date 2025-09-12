@@ -88,16 +88,16 @@ Genomic data generated from the Illumina Global Diversity Array are provided as 
 </thead>
 <tbody>
 <tr>
-<td>PLINK file: <code>.bed</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Binary genotype file table (see <a href="https://www.cog-genomics.org/plink/1.9/formats#bed">PLINK 1.9 &gt; .bed</a>). Note that these are PLINK <code>.bed</code> files, not to be confused with UCSD genome browser BED files.</td>
+<td><code>.bed</code></td>
+<td style="word-wrap: break-word; white-space: normal;"><a href="https://www.cog-genomics.org/plink/1.9/formats#bed">PLINK 1.9 .bed</a>: Binary genotype file table (note: these are distinct from UCSD genome browser BED files).</td>
 </tr>
 <tr>
-<td>PLINK file: <code>.bim</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Contains additional information regarding genotypes - e.g., chromosome, identifier (e.g., rs number), position, allele 1 and 2 (see <a href="https://www.cog-genomics.org/plink/1.9/formats#bim">PLINK 1.9 &gt; .bim</a>).</td>
+<td><code>.bim</code></td>
+<td style="word-wrap: break-word; white-space: normal;"><a href="https://www.cog-genomics.org/plink/1.9/formats#bim">PLINK 1.9 .bim</a>: Contains additional information regarding genotypes - e.g., chromosome, identifier (e.g., rs number), position, allele 1 and 2.</td>
 </tr>
 <tr>
-<td>PLINK file: <code>.fam</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Text file containing the participant information (see <a href="https://www.cog-genomics.org/plink/1.9/formats#fam">PLINK 1.9 &gt; .fam</a>).</td>
+<td><code>.fam</code></td>
+<td style="word-wrap: break-word; white-space: normal;"><a href="https://www.cog-genomics.org/plink/1.9/formats#fam">PLINK 1.9 .fam</a>: Text file containing the participant information.</td>
 </tr>
 <tr>
 <td><code>batch.info</code></td>
