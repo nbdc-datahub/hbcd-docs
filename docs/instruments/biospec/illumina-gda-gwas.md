@@ -1,10 +1,21 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
 
-# Illumina Global Diversity GWAS Array
-     
-**Acronym:** GDA GWAS           
-**Table Name**: `bio_bm_biosample_saliva` (Maternal), `bio_ch_biosample_saliva` (Child)              
-**Construct:** Genomics
+# Illumina Global Diversity GWAS Array (GDA GWAS)
+
+Genomic data generated from the Illumina Global Diversity Array are provided as <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data under the `concat/` BIDS folder (<a href="../../../datacuration/concat" target="_blank">see details</a>):
+
+<p>
+<pre class="folder-tree">
+hbcd/
+|__ concat/ 
+    |__ genetics/
+        |__ .bed
+        |__ .bim
+        |__ .fam
+        |__ batch.info
+        |__ README
+</pre>
+</p>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -64,7 +75,40 @@ The use of population descriptors in genetic research can often be varied and in
 
 ## Instrument Details
 
-Genomic data generated from the Illumina Global Diversity Array are provided as `.bed`, `.bim`, and `.fam` plink files on the hg19 genome build. A `batch.info` file contains which batch each participant was run on. The README file contains details of initial QC to ensure sample matches (e.g., ID checks, sex checks, etc.).
+Genomic data generated from the Illumina Global Diversity Array are provided as 3 interlinked `.bed`, `.bim`, and `.fam` plink files on the hg19 genome build. A `batch.info` file contains which batch each participant was run on. The README file contains details of initial QC to ensure sample matches (e.g., ID checks, sex checks, etc.). 
+
+#### File Type Details
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr>
+  <th>File</th>
+  <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+<td>PLINK file: <code>.bed</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Binary genotype file table (see <a href="https://www.cog-genomics.org/plink/1.9/formats#bed">PLINK 1.9 &gt; .bed</a>). Note that these are PLINK <code>.bed</code> files, not to be confused with UCSD genome browser BED files.</td>
+</tr>
+<tr>
+<td>PLINK file: <code>.bim</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Contains additional information regarding genotypes - e.g., chromosome, identifier (e.g., rs number), position, allele 1 and 2 (see <a href="https://www.cog-genomics.org/plink/1.9/formats#bim">PLINK 1.9 &gt; .bim</a>).</td>
+</tr>
+<tr>
+<td>PLINK file: <code>.fam</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Text file containing the participant information (see <a href="https://www.cog-genomics.org/plink/1.9/formats#fam">PLINK 1.9 &gt; .fam</a>).</td>
+</tr>
+<tr>
+<td><code>batch.info</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Simple text file listing what batch of genotype each subject was one.</td>
+</tr>
+<tr>
+<td><code>README</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Describes the sample QC steps that were taken.</td>
+</tr>
+</tbody>
+</table>
 
 ## References
 
@@ -74,3 +118,16 @@ Genomic data generated from the Illumina Global Diversity Array are provided as 
 
 <br>
 
+
+
+
+
+## Other
+
+potentially add back if data will also be provided in tabulated form for 2.0:
+
+
+**Table Name**: `bio_bm_biosample_saliva` (Maternal), `bio_ch_biosample_saliva` (Child)              
+**Construct:** Genomics
+
+- fix overview page that links to this page

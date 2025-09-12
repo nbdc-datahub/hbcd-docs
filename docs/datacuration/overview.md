@@ -47,49 +47,57 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
 <tr>
 <td><strong><a href="../derivatives"><b>Processed File-based Data</b></a></strong></td>
 <td><code>derivatives/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Processed MRI, MRS, EEG, and motion/accelerometry derivatives of varied formats derived from processing pipelines. Participant data is included in separate subject/session-level folders</td>
+<td style="word-wrap: break-word; white-space: normal;">Processed MRI, MRS, EEG, and motion/accelerometry derivatives of varied formats derived from processing pipelines. Participant data is included in separate subject/session-level folders.</td>
+</tr>
+<tr>
+<td><strong><a href="../concat"><b>Concatenated File-based Data</b></a></strong></td>
+<td><code>concat/</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Concatenated data files for various instruments and modalities, organized into subdirectories based on the type of data (only genetics data in the current release). Each file contains information for all participants.</td>
 </tr>
 </tbody>
 </table>
 
-
 <pre class="folder-tree">
 hbcd/
-|__ rawdata/ 
-|   |__ phenotype/     <span class="hashtag"># Tabulated Data (demographics, visit info, behavior, etc.)</span>
-|   |   |__ par_visit_data.*
-|   |   |__ sed_basic_demographics.*
-|   |   |__ <span class="placeholder">&lt;instrument_name&gt;</span>.*
-|   |
-|   |__ sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw File-Based Data (MRI, EEG, etc.)</span>
-|   |   |__ sub-<span class="label">&lt;label&gt;</span>_sessions.tsv
-|   |   |__ sub-<span class="label">&lt;label&gt;</span>_sessions.json
-|   |   |__ ses-<span class="label">&lt;label&gt;</span>/
-|   |       |__ anat/
-|   |       |__ dwi/
-|   |       |__ eeg/
-|   |       |__ fmap/
-|   |       |__ func/
-|   |       |__ motion/
-|   |       |__ mrs/
-|   |       |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_scans.tsv
-|   |       |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_scans.json
-|   |
-|   |__ dataset_description.json
-|   |__ participants.tsv
-|   |__ participants.json 
+|__ concat/
+|   |__ genetics/
+|       |__ XXXXXX
 |
 |__ derivatives/        <span class="hashtag"># Processed File-Based Data (MRI, EEG, etc.)</span>
-    |__ bibsnet/
-    |__ hbcd_motion/
-    |__ made/
-    |__ mriqc/
-    |__ nibabies/
-    |__ osprey/
-    |__ qmri_postproc/
-    |__ qsiprep/
-    |__ qsirecon/
-    |__ symri/
-    |__ xcp_d/
+|   |__ bibsnet/
+|   |__ hbcd_motion/
+|   |__ made/
+|   |__ mriqc/
+|   |__ nibabies/
+|   |__ osprey/
+|   |__ qmri_postproc/
+|   |__ qsiprep/
+|   |__ qsirecon/
+|   |__ symri/
+|   |__ xcp_d/
+|
+|__ rawdata/ 
+    |__ phenotype/     <span class="hashtag"># Tabulated Data (demographics, visit info, behavior, etc.)</span>
+    |   |__ par_visit_data.*
+    |   |__ sed_basic_demographics.*
+    |   |__ <span class="placeholder">&lt;instrument_name&gt;</span>.*
+    |
+    |__ sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw File-Based Data (MRI, EEG, etc.)</span>
+    |   |__ sub-<span class="label">&lt;label&gt;</span>_sessions.tsv
+    |   |__ sub-<span class="label">&lt;label&gt;</span>_sessions.json
+    |   |__ ses-<span class="label">&lt;label&gt;</span>/
+    |       |__ anat/
+    |       |__ dwi/
+    |       |__ eeg/
+    |       |__ fmap/
+    |       |__ func/
+    |       |__ motion/
+    |       |__ mrs/
+    |       |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_scans.tsv
+    |       |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_scans.json
+    |
+    |__ dataset_description.json
+    |__ participants.tsv
+    |__ participants.json 
 </pre>
 <br>
