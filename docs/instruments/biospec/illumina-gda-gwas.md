@@ -51,13 +51,13 @@ The use of population descriptors in genetic research can often be varied and in
 <td style="word-wrap: break-word; white-space: normal;">Samples are assayed from one sample, but may come from any session (V01-V06) based on DNA Yields.</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
 <td style="word-wrap: break-word; white-space: normal;">
-<ol>
-  <li>Check that sampled ID matches from Sampled File and Lasso database</li>
+<ul>
+  <li>Check that sampled ID matches from Sampled File and Lasso Database.</li>
   <li>Check that sample specific barcode matches between Sampled file and Lasso Database.</li>
   <li>Check that genomic sex matches with sex at birth.</li>
-  <li>Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is ~.50 between the birth parent and child as well as siblings; evaluate potential twins)</li>
+  <li>Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is ~.50 between the birth parent and child as well as siblings; evaluate potential twins).</li>
   <li>Use FHET estimates to check for plate contamination.</li>
-</ol>
+</ul>
 </td></tr>      
 </tbody>
 </table>
