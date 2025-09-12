@@ -19,7 +19,7 @@
 <li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
 <li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
 </ul>
-<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. See <a href="../../access/metadata/#exceptions-mri" target="_blank">here</a> for details.</p>
+<p>Tabulated file names closely mirror their source derivative file names for easy cross-reference. See <a href="../../access/metadata/#exceptions-mri" target="_blank">here</a> for details.</p>
 </div>
 </p>
 
@@ -35,28 +35,28 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
 </thead>
 <tbody>
 <tr style="background-color: #f9f9f9;">
-  <td><strong><a href="../phenotypes" target="_blank">Tabulated Data</a></strong></td>
+  <td><i class="fa-solid fa-table" style="margin-right:6px; color:#666;"></i><strong><a href="../phenotypes" target="_blank">Tabulated Data</a></strong></td>
   <td><code style="background:#f5f5f5;">rawdata/phenotype/</code></td>
   <td style="word-wrap: break-word; white-space: normal;">
     Tabulated instrument data, one row per participant. Includes demographics, visit information, toxicology, behavior, and tables derived from file-based data (e.g., MRI, spectroscopy, EEG, and <a href="../../instruments/sensors/wearsensors">wearable sensors</a>).
   </td>
 </tr>
 <tr>
-  <td><strong><a href="../rawbids" target="_blank">Raw Data (File-based)</a></strong></td>
+  <td><i class="fa-solid fa-folder-open" style="margin-right:6px; color:#666;"></i><strong><a href="../rawbids" target="_blank">Raw Data (File-based)</a></strong></td>
   <td><code style="background:#f5f5f5;">rawdata/sub-&lt;ID&gt;/</code></td>
   <td style="word-wrap: break-word; white-space: normal;">
     Raw participant-level files in <a href="https://bids.neuroimaging.io/">BIDS</a> format, organized by subject/session. Includes MRI, MRS, EEG, and motion/accelerometry.
   </td>
 </tr>
 <tr style="background-color: #f9f9f9;">
-  <td><strong><a href="../derivatives" target="_blank">Processed Data (File-based)</a></strong></td>
+  <td><i class="fa-solid fa-folder-open" style="margin-right:6px; color:#666;"></i><strong><a href="../derivatives" target="_blank">Processed Data (File-based)</a></strong></td>
   <td><code style="background:#f5f5f5;">derivatives/</code></td>
   <td style="word-wrap: break-word; white-space: normal;">
     Processed derivatives of MRI, MRS, EEG, and motion/accelerometry data. Organized by subject/session following BIDS <code>derivatives/</code> conventions.
   </td>
 </tr>
 <tr>
-  <td><strong><a href="../concat" target="_blank">Concatenated Data</a></strong></td>
+  <td><i class="fa-solid fa-folder-open" style="margin-right:6px; color:#666;"></i><strong><a href="../concat" target="_blank">Concatenated Data</a></strong></td>
   <td><code style="background:#f5f5f5;">concatenated/</code></td>
   <td style="word-wrap: break-word; white-space: normal;">
     Concatenated files combining participant data for certain modalities (currently genetics only). Each file contains data for all participants.
