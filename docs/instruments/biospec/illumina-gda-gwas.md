@@ -6,19 +6,19 @@
     - **Table Name**: `bio_bm_biosample_saliva` (Maternal), `bio_ch_biosample_saliva` (Child)              
     - **Construct:** Genomics
 - Fix [overview page](../index.md#biospec) that links to this page accordingly
-- Update [Data Structure Overview](../../datacuration/overview.md) page to add `concat/`, potentially have separate page for concat as with other data types? 
+- Update [Data Structure Overview](../../datacuration/overview.md) page to add `concatenated/`, potentially have separate page for concatenated as with other data types? 
 
 
 ---------------------------------------
 
 # Illumina Global Diversity GWAS Array 
 
-Genomic data generated from the Illumina Global Diversity Array (*GDA GWAS*) are provided as <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data under the `concat/` BIDS folder (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details):
+Genomic data generated from the Illumina Global Diversity Array (*GDA GWAS*) are provided as <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data under the `concatenated/` BIDS folder (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details):
 
 <p>
 <pre class="folder-tree">
 hbcd/
-|__ concat/ 
+|__ concatenated/ 
     |__ genetics/
         |__ .bed
         |__ .bim
