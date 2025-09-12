@@ -574,7 +574,7 @@ Expand the sections below to see a list of measures associated with each domain 
       <td><code>sed_cg_employ</code></td>
     </tr>  
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="sed/geocoded-linkage" target="_blank">Geocoded Linkage from Home & Work Addresses</a></td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage from Home & Work Addresses</a></td>
       <td></td>
       <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure & Other Neighborhood Measures</td>
       <td><code>????</code></td>
