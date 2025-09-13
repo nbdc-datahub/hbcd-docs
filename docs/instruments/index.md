@@ -12,8 +12,9 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 
-- <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
-- File-based data include <a href="../datacuration/rawbids" target="_blank"><b>raw</b></a> and <a href="../datacuration/derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
+<i class="fa-solid fa-table" style="margin-right:6px; color:#666;"></i><a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
+
+<i class="fa-solid fa-folder-open" style="margin-right:6px; color:#666;"></i><b>File-based data</b> include <a href="../datacuration/rawbids" target="_blank"><b>raw</b></a> and <a href="../datacuration/derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders as well as <a href="../datacuration/concat" target="_blank"><b>concatenated</b></a> data with information for all participants contained in each file. File-based data are in varied modality-specific formats (***includes MRI/MRS, EEG, Wearable Sensor recordings, etc.***).
 
 Expand the sections below to see a list of measures associated with each domain included in Release 1.0.
 
@@ -49,13 +50,15 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<br>
+<span style="font-size: 16px; color:#666; font-weight: bold; margin-bottom: 0;"><i class="fa-solid fa-table" style="margin-right:6px;"></i>Tabulated Data</span>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version</th>
-      <th style="width: 50%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
+      <th style="width: 30%;">Instrument</th>
+      <th>Version</th>
+      <th style="width: 50%;">Construct</th>
+      <th style="width: 10%;"><i class="fa-solid fa-table" style="margin-right:6px; color:#666;"></i>Table Name</th>
     </tr>
   </thead>
   <tbody>
@@ -142,14 +145,15 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b>Tabulated Data</b></p>
+<br>
+<span style="font-size: 16px; color:#666; font-weight: bold; margin-bottom: 0;"><i class="fa-solid fa-table" style="margin-right:6px;"></i>Tabulated Data</span>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 10%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 30%; text-align: center;">Table Name</th>
+      <th style="width: 10%;">Instrument</th>
+      <th>Version</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;"><i class="fa-solid fa-table" style="margin-right:6px; color:#666;"></i>Table Name</th>
     </tr>
   </thead>
   <tbody>
@@ -163,17 +167,17 @@ Expand the sections below to see a list of measures associated with each domain 
       <td rowspan="2" style="text-align: left;"><a href="biospec/urine" target="_blank">Urine</a></td>
       <td style="text-align: left;">Maternal</td>
       <td style="text-align: left;">Drug Panel, Toxins</td>
-      <td style="text-align: left;"><code>bio_bm_biosample_urine</code></td>
+      <td><code>bio_bm_biosample_urine</code></td>
   </tr>
   </tbody>
   </table>
-<p><b>Concatenated Data</b></p>
+<span style="font-size: 16px; color:#666; font-weight: bold; margin-bottom: 0;"><i class="fas fa-layer-group" style="margin-right:6px;"></i>Concatenated Data</span>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
       <th style="width: 30%;">Instrument</th>
       <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;"><i class="fas fa-layer-group"></i> Concatenated Data</th>
+      <th style="width: 30%;"><i class="fas fa-layer-group" style="margin-right:6px; color:#666;"></i>Concatenated Data</th>
     </tr>
   </thead>
   <tbody>
@@ -195,6 +199,8 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<br>
+<span style="font-size: 16px; color:#666; font-weight: bold; margin-bottom: 0;"><i class="fa-solid fa-table" style="margin-right:6px;"></i>Tabulated Data</span>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
