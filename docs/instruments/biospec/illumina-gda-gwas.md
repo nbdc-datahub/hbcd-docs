@@ -75,7 +75,7 @@ The use of population descriptors in genetic research can often be varied and in
 
 ## Instrument Details
 
-Genomic data generated from the Illumina Global Diversity Array are provided as 3 interlinked `.bed`, `.bim`, and `.fam` plink files on the hg19 genome build. A `batch.info` file contains which batch each participant was run on. The README file contains details of initial QC to ensure sample matches (e.g., ID checks, sex checks, etc.). 
+Genomic data generated from the Illumina Global Diversity Array are provided as 3 interlinked PLINK files (`.bed`, `.bim`, and `.fam`) on the hg19 genome build. A `batch.info` file contains which batch each participant was run on. The README file contains details of initial QC to ensure sample matches (e.g., ID checks, sex checks, etc.). 
 
 #### File Type Details
 
