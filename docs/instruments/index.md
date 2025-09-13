@@ -167,25 +167,22 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
   </tbody>
   </table>
-<p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>for Genomics</b></p>
+<p><b>Concatenated Data</b></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th>Instrument</th>
-      <th>Construct</th>
-      <th style="width: 20%;"><i class="fas fa-layer-group"></i> Concatenated Data</th>
-      <th style="width: 20%;"><i class="fas fa-hammer"></i> Raw Data/<br><i class="fas fa-cog"></i> Derivatives</th>
+      <th style="width: 30%;">Instrument</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;"><i class="fas fa-layer-group"></i> Concatenated Data</th>
     </tr>
   </thead>
   <tbody>
       <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
       <td>GWAS, EWAS, Transcriptome (Maternal & Child)</td>
       <td><a href="../datacuration/concat" target="_blank"><code>genetics/</code></a></td>
-      <td>NA</td>
   </tbody>
   </table>
 </div>
-
 
 <div id="neurocog" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
@@ -501,6 +498,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><b>Tabulated Data</b></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
@@ -574,12 +572,6 @@ Expand the sections below to see a list of measures associated with each domain 
       <td><code>sed_cg_employ</code></td>
     </tr>  
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage from Home & Work Addresses</a></td>
-      <td></td>
-      <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure & Other Neighborhood Measures</td>
-      <td><code>????</code></td>
-    </tr>
-    <tr>
       <td><a href="SED/household-chemical-exposures" target="_blank">Household Chemical Exposures</a></td>
       <td></td>
       <td>Household Chemical Exposures</td>
@@ -632,6 +624,23 @@ Expand the sections below to see a list of measures associated with each domain 
       <td>Acculturation</td>
       <td><code>sed_cg_via</code></td>
     </tr>           
+  </tbody>
+  </table>
+<p><b>Concatenated Data</b></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th>Instrument</th>
+      <th>Construct</th>
+      <th style="width: 20%;"><i class="fas fa-layer-group"></i> Concatenated Data</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;"><a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage from Home & Work Addresses</a></td>
+        <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure & Other Neighborhood Measures</td>
+        <td><code>geocoded_linkage/</code><br>(UPDATE)</td>
+      </tr>
   </tbody>
   </table>
   </div>
