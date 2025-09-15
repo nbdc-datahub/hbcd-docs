@@ -1,6 +1,5 @@
 # Personal and Family Psychiatric History
-
-**Full Name**: Personal and family psychiatric history           
+        
 **Acronym**: FAM MH     
 **Table Name**: `pex_bm_psych`       
 **Construct**: Personal and family mental health

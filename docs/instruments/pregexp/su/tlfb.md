@@ -1,6 +1,5 @@
 # Timeline Follow Back
-
-**Full Name**: Timeline Follow Back                                   
+                              
 **Acronym**: TLFB                           
 **Table Name**: `pex_ch_tlfb`       
 **Construct**: Substance use before and during pregnancy
@@ -33,6 +32,11 @@
 <div class="warning-collapsible-content">
 <p>The sampling covers specific weeks before pregnancy (Weeks 1-2) and during pregnancy (Weeks 3-9). Consequently, substance use reported outside these weeks may not appear in the TLFB, and a positive biospecimen may lack corresponding TLFB data for the same reason. This sampling approach balances participant burden (avoiding a full 40-week TLFB) with capturing key pregnancy phases when behaviors often shift, such as before and after pregnancy recognition and in late pregnancy.</p>
 <p>Also, of note- participants were asked to report occasions (except cigarettes/cigarillos and drinks, reported as number), but some substances (e.g. electronic cigarette devices) are difficult to report in occasions and have outliers.</p>
+</div>
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../../changelog/knownissues/#substance-use" target="_blank">see details</a>.</span>
 </div>
 
 ## Administration & Quality Control

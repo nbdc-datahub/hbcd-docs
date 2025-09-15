@@ -36,14 +36,9 @@ The Video Resting State (RS) (v.11.29.23) task provides assessment of the develo
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<br>
-<b>HBCD EEG Utilities</b>
-<p>The EEG Core of the HBCD Data Coordinating Center (HDCC) has developed some helpful tools for extracting summary statistics and trial measures from HBCD EEG release data. We encourage all users to explore these resources at the <a href="https://hbcd-eeg-utilities.readthedocs.io/">HBCD EEG Utilities</a> website.</p>
-<br>
-<b>Task Updates Between V03 and V04/V06</b>
-<p>Researchers should be aware that the video content was modified between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details. Also note that RS is not a true resting state as there is a visual stimulus present.</p>
+<p><b>Task Updates Between V03 and V04/V06</b><br>
+Researchers should be aware that the video content was modified between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details. Also note that RS is not a true resting state as there is a visual stimulus present.</p>
 </div>
-
 
 ### Task Details
 

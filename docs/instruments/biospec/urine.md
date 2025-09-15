@@ -24,7 +24,7 @@ Urine concentrations vary by participant. Urinary concentration corrections can 
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This instrument has known issues - <a href="../../../changelog/knownissues/#biospecimens" target="_blank">see details</a>.</span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#biospecimens" target="_blank">see details</a>.</span>
 </div>
 
 ## Administration & Quality Control

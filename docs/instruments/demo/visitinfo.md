@@ -2,7 +2,6 @@
       
 **Table Name**: `par_visit_data`       
 
-<p>
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
@@ -16,7 +15,12 @@
 <div class="warning-collapsible-content">
 <p>Please note that participants who did not withdraw from the study (and so have a value of "no" for <code>par_visit_data_participant_withdrawal</code>) have a sentinel value of <code>12/26/1999</code>, <i>meaning no withdrawal</i>, for participant withdrawal date (<code>par_visit_data_participant_withdrawal_date</code>).</p>
 </div>
-</p>
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#visit-information" target="_blank">see details</a>.</span>
+</div>
+<p></p>
 
 Visit information contains all participant visit data, including:
 
@@ -24,7 +28,7 @@ Visit information contains all participant visit data, including:
 *   Project, Cohort (see details below), and Site
 *   Withdrawal information: if the participant withdrew from the study, the reason, and date
 *   Protocol violation information: if there was a protocol exception and the date
-*   Substance use flags raised by <a href="../../pregexp/su/tlfb" target="_blank">TLFB</a> (Self-reported use), toxicology (<a href="../../biospec/nails" target="_blank">maternal nails</a> and/or <a href="../../biospec/urine" target="_blank">urine</a>), and/or <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> Field `007` when option 1 (*Neonatal Opioid Withdrawal Syndrome*) or 5 (*Fetal Alcohol Syndrome*) was selected
+*   Substance use flags raised by <a href="../../pregexp/su/tlfb" target="_blank">TLFB</a> (Self-reported use), <a href="../../biospec/urine" target="_blank">USDTL urine toxicology results</a>, and/or <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> Field `007` when option 1 (*Neonatal Opioid Withdrawal Syndrome*) or 5 (*Fetal Alcohol Syndrome*) was selected
 
 ### Cohort & Caregiver Types
 
