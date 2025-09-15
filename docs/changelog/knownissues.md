@@ -93,6 +93,10 @@ Users should be aware that each item for the EPDS is duplicated (for example, `e
 The TLFB Substance Use Flags are intended to indicate whether a participant had **ever met the substance-specific use criteria** during or after pregnancy across visits V01 and V02 at the time of survey administration. Currently, **only the alcohol use flag** correctly follows this logic. All other substance use flags are incorrect and will be corrected in a future release. In the meantime, use the R code provided [here](https://github.com/nbdc-datahub/hbcd-tlfb-su-flags) to derive your own substance use flag variables.         
 ***Expected Fix: R1.1***
 
+###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> TLFB Incorrect Age Variables
+The following age variables are incorrect: `pex_ch_tlfb_adjusted_age`, `pex_ch_tlfb_gestational_age`, and `pex_ch_tlfb_candidate_age`. Please do not use these age variables in your analyses until they are corrected.         
+***Expected Fix: R1.1***
+
 ## Social & Environmental Determinants
 ###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> Blank Cells in PhenX Discrimination Survey
 For the PhenX+ Discrimination survey, one of the multi-select questions (column `sed_bm_phx__discr.006`: *"What do you think is the main reason for these experiences? If more than one main reason, check all that apply."*) is blank for some participants.       
