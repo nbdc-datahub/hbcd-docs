@@ -1,10 +1,7 @@
-# Visit Level Data
-
-**Full Name**: Visit Level Data          
-**Alternative/Short Name**: Visit Information          
+# Visit Information
+      
 **Table Name**: `par_visit_data`       
 
-<p>
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
@@ -18,34 +15,31 @@
 <div class="warning-collapsible-content">
 <p>Please note that participants who did not withdraw from the study (and so have a value of "no" for <code>par_visit_data_participant_withdrawal</code>) have a sentinel value of <code>12/26/1999</code>, <i>meaning no withdrawal</i>, for participant withdrawal date (<code>par_visit_data_participant_withdrawal_date</code>).</p>
 </div>
-</p>
 
-**Visit information contains all participant visit data, including:**
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#visit-information" target="_blank">see details</a>.</span>
+</div>
+<p></p>
 
-*   Visit information: Label, Stage, Date, if the visit was missed, and the reason if visit was missed
+Visit information contains all participant visit data, including:
+
+*   Label, Stage, Date, if the visit was missed, and the reason if visit was missed
 *   Project, Cohort (see details below), and Site
 *   Withdrawal information: if the participant withdrew from the study, the reason, and date
 *   Protocol violation information: if there was a protocol exception and the date
-*   Substance use flags raised by any of the following:
-    *   [TLFB](../pregexp/su/tlfb.md) (Self-reported use)
-    *   [Biospecimen results](../index.md/#biospec)
-    *   [Infant health- V2](../pregexp/preghealth/infanthealth.md) Field `007` when option 1 (<span class="tooltip">NOWS<span class="tooltiptext">Neonatal Opioid Withdrawal Syndrome</span></span>) or 5 (<span class="tooltip">FAS<span class="tooltiptext">Fetal Alcohol Syndrome</span></span>) was selected
+*   Substance use flags raised by <a href="../../pregexp/su/tlfb" target="_blank">TLFB</a> (Self-reported use), <a href="../../biospec/urine" target="_blank">USDTL urine toxicology results</a>, and/or <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> Field `007` when option 1 (*Neonatal Opioid Withdrawal Syndrome*) or 5 (*Fetal Alcohol Syndrome*) was selected
 
+### Cohort & Caregiver Types
 
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    Cohort & Caregiver Types
-  </span>
-</div>
-<div class="notification-static-content">
 <p>Cohort types included in the data release are as follows, with each listed item indicating a specific subtype or Caregiver Type (e.g., "HBCD Main Child - Postnatal Recruitment"):</p>
 <ul>
     <li><strong>HBCD Main Child -</strong> <em>Postnatal Recruitment</em>, <em>Type A-F</em></li>
     <li><strong>HBCD Multiple Birth -</strong> <em>Main Child</em>, <em>Postnatal Recruitment</em>, <em>Postnatal Recruitment - Sibling</em>, <em>Type A-F</em></li>
 </ul>
-<p><b>Caregiver Type A-F Definitions</b></p>
+
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<caption>Caregiver Type A-F Definitions</caption>
 <tbody>
     <tr>
         <td>Type A</td>
@@ -69,4 +63,3 @@
     </tr>            
 </tbody>
 </table>
-</div>

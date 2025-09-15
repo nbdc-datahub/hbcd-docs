@@ -16,12 +16,13 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>Consideration of Mental Health Symptoms Experienced During Pregnancy</b><br>
-
+<p><strong>Consideration of Mental Health Symptoms Experienced During Pregnancy</strong><br>
 The co-occurrence of psychiatric symptoms and substance use during pregnancy is well-documented (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2011</a>, <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">Massey et al., 2012</a>). Phenotypic risk in birthing parents may affect offspring neurodevelopment through both prenatal and postnatal mechanisms, beyond direct exposure alone (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2015.11.010">Massey et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2018.02.003">Massey et al., 2018</a>). These factors may confound associations between exposures and neuroimaging or neurodevelopmental outcomes, but they also represent malleable targets for prevention and early intervention. When possible, incorporating parental mental health symptoms as covariates offers a robust strategy to account for these confounding influences.</p> 
+</div>
 
-<p><b>Level 2 Scoring Not Available in Current Release (1.0)</b><br>
-Note that calculated scores for Level 2 measures will be included in a future release - see the relevant <a href="../../../../changelog/knownissues/#apa-12">Known Issue</a> for details. In the interim, users are encouraged to score individual scales themselves according to the provided <a href="#scoring">scoring procedures</a>.</p>
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../../changelog/knownissues/#mental-health" target="_blank">see details</a>.</span>
 </div>
 
 ## Administration & Quality Control

@@ -7,7 +7,7 @@
 <p>
 <div id="faq-access" class="notification-banner static-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-    <span class="text">Basic Demographics is a <i>derived measure</i> computed from multiple sources. For more extensive demographics information, please see <a href="../../SED/v01-demo">V01 Demographics</a>.</span>
+    <span class="text">Basic Demographics is a <i>derived measure</i> computed from multiple sources. See <a href="../../SED/v01-demo">V01 Demographics</a> for full information.</span>
 </div>
 </p>
 
@@ -18,7 +18,6 @@ Basic Demographics is derived information computed from:
 - **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
 
 Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.). *However*, if only V01 data for a given participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about the child will be missing, as the child is not born until after the V01 visit (all variables about the child are available beginning with V02).
-
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -46,12 +45,12 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>⚠️ <a href="../../../changelog/knownissues"><u>Known Issues</u></a> To Be Resolved in Release 1.1</b><br>
-<p><strong>Mother Race (<code>screen_mother_race</code>)</strong>: contains duplicate options for the selection of 'Black African American' (option #3). This option is not used for data entry, and instead the 'Black_or African American' option (option #5) should be used. No other variables are affected by this.</p>
-<p><strong>Mother Ethnicity (<code>screen_mother_ethnicity</code>)</strong>: should be a 2-level variable, but is currently noted as a 4-level variable in the data dictionary. Levels of 0 and 1 (in the data dictionary) are included in error, they do not appear in the dataset; all participants with valid data have a value of 2 (Hispanic) or 3 (non-Hispanic).</p>
-<p><strong>Mother Race and Ethnicity (<code>rc_mother_ethnoracial_aou_race_ethnicity</code>)</strong>: the “None of these fully describe me/Other” response option is not currently a separate category for this variable and will be added in release 1.1.</p>
-<p><b>Participant-Reported Challenges</b><br>
-Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e. imperfect option for job type and number of hours).</p> 
+<p>Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e. imperfect option for job type and number of hours).</p> 
+</div>
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#basic-demographics" target="_blank">see details</a>.</span>
 </div>
 
 ## Variable Logic & Definitions

@@ -19,6 +19,11 @@
 <p>The response option "Decline to answer" was added on November 8, 2024 to allow participants to not answer any questions they choose. However, "Decline to answer" is not a response option on the published form and was not used in the reference sample from which the standard scores were derived. It is possible that participants chose “Decline to Answer” rather than “never” for behaviors that have never been seen (for example items related to reacting to food texture for an infant who has not been exposed to solids).</p> 
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#neurocognition-language" target="_blank">see details</a>.</span>
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

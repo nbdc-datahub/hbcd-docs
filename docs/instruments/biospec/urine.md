@@ -16,11 +16,15 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<br>
-<b>Continuous Variables</b>
-<p>For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#urine-table1">Table 1. Urine Assay Thresholds for Analytes</a>.</p> 
-<b>Urinary Concentration Corrections</b>
-<p>Urine concentrations vary by participant. Urinary concentration corrections can be made by creatine or specific gravity. There is a <a href="../../../changelog/knownissues/#urine-incorrect-specific-gravity-variable">known issue</a> with the specific gravity values and they are not meaningful in the current data release; therefore, only the initial creatinine results from sample validation should be used for urinary concentration corrections. Creatinine values are provided for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds.</p>
+<p><b>Continuous Variables</b><br>
+For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#urine-table1">Table 1. Urine Assay Thresholds for Analytes</a>.</p> 
+<p><b>Urinary Concentration Corrections</b><br>
+Urine concentrations vary by participant. Urinary concentration corrections can be made using creatinine results from sample validation or specific gravity. Creatinine values are provided for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds.</p>
+</div>
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#biospecimens" target="_blank">see details</a>.</span>
 </div>
 
 ## Administration & Quality Control
@@ -733,7 +737,7 @@ These data are the results of urine toxicology assays. **Screening** results for
 </tr>
 </tbody>
 </table>
-⁠<span class="blue-text">**</span> <small>Note: the categorical confirmatory test variable for nicotine follows the convention: <code>c_nicotine_u</code>.</small>
+⁠<span class="blue-text">**</span><small>Note: the categorical confirmatory test variable for nicotine follows the convention: <code>c_nicotine_u</code>.</small>
 <br>
 </div>
 
