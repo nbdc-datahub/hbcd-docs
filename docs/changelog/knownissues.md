@@ -55,16 +55,17 @@ Collection dates and analysis dates for Nails and Urine are not provided in the 
 **Expected Fix:** Release 1.1
 
 ##### ⚠️ Urine: Incorrect Specific Gravity Variable
-The urine specific gravity variable is incorrect (`bio_bm_biosample_urine_bio_spg_u`); do not analyze this variable. There are several participants with “1”. This variable should be expressed in the thousands and will be corrected in the next release.     
+
+Urine concentrations vary by participant and concentration corrections can be made by creatine or specific gravity. However, the urine specific gravity variable is incorrect (`bio_bm_biosample_urine_bio_spg_u`) (there are several participants with “1” when the variable should be expressed in the thousands) and should therefore not be analyzed. Only the initial creatinine results from sample validation should be used for urinary concentration corrections. 
 
 **Expected Fix:** Release 1.1
 
-##### ⚠️ Urine Toxicology (Cotinine)
+##### ⚠️ Urine: Toxicology (Cotinine)
 There may be negative values for urinary toxicology results (e.g. `bio_bm_biosample_urine_bio_bm_biosample_urine_bio_c_cot_u`). Please note that negative values for these variables are not biologically plausible. We recommend users convert these values to 0 prior to analyzing their data.        
 
 **Expected Fix:** Release 1.1
 
-##### ⚠️ Negative Gestational Ages 
+##### ⚠️ Urine: Negative Gestational Ages 
 There are two participants with negative gestational ages in the urine biosample dataset due to inaccurate collection dates of the biosample. Please do not include these two observations in your analysis.       
 
 **Expected Fix:** Release 1.1
