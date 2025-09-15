@@ -2,20 +2,6 @@
       
 **Table Name**: `par_visit_data`       
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</i></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>Please note that participants who did not withdraw from the study (and so have a value of "no" for <code>par_visit_data_participant_withdrawal</code>) have a sentinel value of <code>12/26/1999</code>, <i>meaning no withdrawal</i>, for participant withdrawal date (<code>par_visit_data_participant_withdrawal_date</code>).</p>
-</div>
-
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#visit-information" target="_blank">see details</a>.</span>
