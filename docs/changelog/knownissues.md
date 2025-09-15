@@ -9,7 +9,7 @@ Instruction text in the form's metadata is extracted programmatically from the m
 *   Because the instruction is provided for all fields up to the next set of instructions, some fields may display text intended for a previous section.
 *   Manual curation of instruction metadata is planned for future releases. For the most accurate information, always refer to the original form.       
 
-***Expected Date of Fix TBD***
+***Expected Fix: TBD***
 
 ## Basic Demographics
 ###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> Income Not Displayed For All Participants     
@@ -102,11 +102,11 @@ The following age variables are incorrect: `pex_ch_tlfb_adjusted_age`, `pex_ch_t
 For the PhenX+ Discrimination survey, one of the multi-select questions (column `sed_bm_phx__discr.006`: *"What do you think is the main reason for these experiences? If more than one main reason, check all that apply."*) is blank for some participants.       
 ***Expected Fix: R2.0***
 
-## Visit Information
-###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> Invalid Participant Withdrawal Dates for Participants Who Did Not Withdraw
-Participants who did not withdraw from the study (and so have a value of "no" for `par_visit_data_participant_withdrawal`) have a sentinel value of `12/26/1999`, <i>meaning no withdrawal</i>, for participant withdrawal date (`par_visit_data_participant_withdrawal_date`). This can be safely ignored. Participants who did withdraw (and so have a value of “yes” for `par_visit_data_participant_withdrawal`) have a valid date and are unimpacted.          
-***Expected Fix: R2.0***           
-
+## Visit Information       
 ###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> Missing Substance Use Flags 
 The substance use flags found in the Visit Information data are single summary variables to reflect substance use status (yes/no) based on any positive reports from the (1) Timeline Follow Back (self-report), (2) Healthy History (V02) (self-report), or (3) USDTL urine toxicology results. Nail toxicology results were not used in the creation of these substance use flags. Further, the substance use flag variable is missing for alcohol, opioid, cannabis, and nicotine, and will be integrated in future data releases. In the meantime, users can generate their own substance use flag summary variables using the individual components found in the “pregnancy exposures, including substances” and “biospecimens” domains.       
 ***Expected Fix: R1.1***
+
+###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> Invalid Participant Withdrawal Dates for Participants Who Did Not Withdraw
+Participants who did not withdraw from the study (and so have a value of "no" for `par_visit_data_participant_withdrawal`) have a sentinel value of `12/26/1999`, <i>meaning no withdrawal</i>, for participant withdrawal date (`par_visit_data_participant_withdrawal_date`). This can be safely ignored. Participants who did withdraw (and so have a value of “yes” for `par_visit_data_participant_withdrawal`) have a valid date and are unimpacted.          
+***Expected Fix: TBD***    
