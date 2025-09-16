@@ -63,11 +63,11 @@
 </tbody>
 </table>
 
-<div id="alert-healthhx" class="alert-banner" onclick="toggleCollapse(this)">
+<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
   <span class="text-with-link">
-  <span class="text">Responsible Use Warning: Healthhx</span>
-  <a class="anchor-link" href="#alert-healthhx" title="Copy link">
+  <span class="text">Responsible Use Warning (<i>Health V1- Health History</i>)</span>
+  <a class="anchor-link" href="#alert" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -77,18 +77,19 @@
 <p>Amidst powerful societal expectations to ‘do what’s best for the baby’ during pregnancy (i.e. by stopping substance use), up to half of pregnancies in the United States are unintended with 1 in 5 unwanted (<a href="https://doi.org/10.1016/S2214-109X(20)30315-6">Bearak et al. 2020</a>). This discrepancy contributes to implicit bias against pregnant individuals who use substances as ‘not caring about their babies’ which is neither humane, nor evidence based (<a href="https://doi.org/10.1016/j.socscimed.2022.115071">Massey et al., 2022</a>). While cessation of substance use during pregnancy is universally recognized as optimal, the ability to make this “parental” sacrifice varies substantially between birthing individuals and within individuals between their different pregnancies (<a href="https://doi.org/10.1007/s00737-023-01396-z">Level et al., 2024</a>). Failure to recognize this inherent heterogeneity in pregnancy intention stigmatizes substance users who did not intend to want to become pregnant. Summarily, inclusion of pregnancy intention as a covariate in all studies that characterize prenatal substance exposure (in the absence of a strong justification otherwise) is thus strongly recommended to acknowledge myriad experiences of birthing parents who participated in HBCD who made this research possible.</p>
 </div>
 
-<div id="warning-coding" class="warning-banner" onclick="toggleCollapse(this)">
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
-  <span class="text">Data Warning: Coding Issues (ICD, WHO, RxNORM)</i></span>
-  <a class="anchor-link" href="#warning-coding" title="Copy link">
+  <span class="text">Data Warnings (<i>Illness, ERhosp, Meds, Healthv2 Preg & Inf</i>)</span>
+  <a class="anchor-link" href="#warning" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-  <p>Coding challenges were identified for the following systems:</p>
+<p><b>Coding Issues (ICD, WHO, RxNORM)</b><br>
+Coding challenges were identified for the following systems:</p>
   <ul>
     <li>ICD codes (via BioPortal) – reasons for medication use, ER visits, and hospitalizations</li>
     <li>WHO symptom codes – symptom reporting</li>
@@ -137,20 +138,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-
-<div id="warning-v2inf" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning: Healthv2 Inf</i></span>
-  <a class="anchor-link" href="#warning-v2inf" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>Note that out-of-range values were filtered (i.e. changed to "n/a") for Healthv2 Inf (<code>pex_bm_healthv2_inf</code>). Valid field values are documented <a href="../../../../changelog/versions/R1/#filtered-field-values">here</a> under Exclusion Criteria for the current release.</p>
+<p><b>Health V2- Infancy: Out-of-Range Values Filtered</b><br>
+Note that out-of-range values were filtered (i.e. changed to "n/a") for Healthv2 Inf (<code>pex_bm_healthv2_inf</code>). Valid field values are documented <a href="../../../../changelog/versions/R1/#filtered-field-values">here</a> under Exclusion Criteria for the current release.</p>
 </div>
 
 <div id="issues" class="issues-banner">
