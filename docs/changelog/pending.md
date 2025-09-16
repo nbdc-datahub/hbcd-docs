@@ -26,7 +26,7 @@
     <tr>
       <td style="text-align: center; vertical-align: top; white-space: nowrap;"><b>[1]</b></td>
       <td style="word-wrap: break-word; white-space: normal;">
-        <b>Inclusion of Birth Parent Sexual Orientation</b>
+        <b>Inclusion of Birth Parent Sexual Orientation in <a href="../../instruments/SED/v01-demo">V01 Demographics</a></b>
         <p>
           The interim release will include birth parent sexual orientation information (<i>"Which of the following best represents how you think of yourself?"</i>), collected with the following response options:<br>
           • Gay/Lesbian<br>
