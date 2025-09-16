@@ -53,9 +53,9 @@
 <td style="word-wrap: break-word; white-space: normal;">
 <ul>
     <li>The caregiver is instructed to follow instructions as presented in Pearson Q-Global.</li>
-    <li>Each HBCD site has an API license agreement with Pearson Education, Inc.</li>
+    <li>HBCD has an API license agreement with Pearson Education, Inc.</li>
     <li>All data collection (item-level responses) and tabulation of scores were done within the Pearson Q-Global system.</li>
-    <li>All item-level responses and scores were electronically transferred from Q-Global imported into the HBCD database.</li>
+    <li>All item-level responses and scores were electronically transferred from Q-Global and imported into the HBCD database.</li>
     <li>Data was reviewed to verify that fields are appropriately labeled upon import, and range checks of all summary variables were completed.</li>
     <li>Completion rates were monitored for the overall consortium and at the site level to address any concerns.</li>
 </ul>
