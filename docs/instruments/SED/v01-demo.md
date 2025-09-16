@@ -37,23 +37,19 @@ Some variables with small cell sizes were withheld from the data release to mini
 <p><b>Branching Logic</b><br>
 There are several items with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include: 
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <tbody>
 <tr><td><strong>Household roster</strong></td>
 <td><a href="../images/household-relationships.png" target="_blank"><i>Click to view</i></a></td></tr>
 <tr><td><strong>Nativity</strong></td>
 <td><a href="https://www.phenxtoolkit.org/protocols/view/10201">PhenX Toolkit</a></td></tr>
 <tr><td><strong>Jobs / work environment</strong></td>
-<td style="word-wrap: break-word; white-space: normal;"><a href="https://doi.org/10.1093/occmed/kqz094">Zachek et al., 2019</a> <span class="tooltip"><span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext" style="font-size: 0.9em;">Original instrument for the workplace hazard</span></span><br>
-<a href="https://www.phenxtoolkit.org/protocols/view/60501">PhenX Occupation/Occupational History Toolkit</a>
+<td style="word-wrap: break-word; white-space: normal;">• <a href="https://doi.org/10.1093/occmed/kqz094">Zachek et al., 2019</a> (original workplace hazard instrument)<br>• <a href="https://www.phenxtoolkit.org/protocols/view/60501">PhenX Occupation/Occupational History Toolkit</a>
 </td></tr>
 <tr><td style="word-wrap: break-word; white-space: normal;"><strong>Items on other biological parent with opt in responses</strong></td>
 <td><a href="../images/other-parent.png" target="_blank"><i>Click to view</i></a></td></tr>
 </tbody>
 </table>
-
-<p><b>Birth Parent Sexual Orientation Excluded From Current Release</b><br>
-This item will be available in the interim Release 1.1 - <a href="../../../changelog/pending/#inclusion-of-birth-parent-sexual-orientation">see details</a>.</p>
 </div>
 
 ## Administration & Quality Control
