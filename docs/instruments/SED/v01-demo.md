@@ -75,8 +75,7 @@ There are several items with branching logic; please consult the following resou
 
 Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. The HBCD Study demographics survey is designed to gather comprehensive information on socioeconomic status and various demographic factors. Its primary purpose is to capture data on race, ethnicity, nativity, income, education, and occupation, as well as relationship status, primary residence, and household composition of the parent carrying the child, and some basic information on the other biological parent. Please see [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the HBCD Demographics survey.
 
-Please see the section on <a href="../demographics/#basic-demographics">Basic Demographics</a>, which includes variables derived from the HBCD Demographics V01 instrument and data collected during study enrolment/screening.
-
+Also see <a href="../../demo/basicdemo" target="_blank">Basic Demographics</a>, which includes variables derived from the HBCD Demographics V01 instrument and data collected during study enrolment/screening.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
