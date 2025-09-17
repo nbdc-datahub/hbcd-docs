@@ -267,7 +267,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Unprocessed raw imaging DICOM files will be made publicly available in the interim <a href="../../changelog/pending/#release-11-release-date-tba">Release 1.1</a>. However, raw data converted to the Brain Imaging Data Structure (BIDS) standard is included in HBCD Release 1.0 (<a href="../../datacuration/rawbids">see details</a>).</p>
+<p>Unprocessed raw imaging DICOM files will be made publicly available in <a href="../../changelog/pending/#release-20-release-date-tba">Release 2.0</a>. However, raw data converted to the Brain Imaging Data Structure (BIDS) standard is included in HBCD Release 1.0 (<a href="../../datacuration/rawbids">see details</a>).</p>
 </div>
 
 
