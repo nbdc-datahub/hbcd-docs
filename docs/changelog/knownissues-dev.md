@@ -1,7 +1,7 @@
 ***🚧 To replace [Known Issues](knownissues.md) page content once patch release 1.1 is live - users please ignore!! 🚧***
 
 # Known Issues (DEV for R1.1)
-The following issues have been identified in the current HBCD data release. **We are actively working to address them and will include fixes in a future release**. This page will be updated as new issues are discovered. If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
+The following issues have been identified in the current HBCD data release. **We are actively working to address them and will implement most fixes for Release 2.0 unless stated otherwise**. This page will be updated as new issues are discovered. If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
 
 ## General
 ###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> Instruction Metadata - Caution, Please Read Carefully
@@ -31,7 +31,7 @@ For HBCD BIDS data with multiple runs, the run number displayed in the `run-<lab
 ## Neurocognition & Language
 ###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> SPM-2 Age Fields Missing
 Age fields are not available for the SPM-2. Please refer to corresponding age fields available from related datasets for the same time point.    
-***Expected Fix: R3.0***   
+***Expected Fix: R2.0***   
 --------------------------    
 
 ## Pregnancy & Exposure, Including Substance Use
