@@ -2,100 +2,134 @@
 
 ## Release 2.0 (Release Date TBA)
 
-### Additional Data & Information Expected in 2.0
+### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 Participant Data Updates
 
-#### Documentation/Resources:
-
-*   Study Navigator Contact Form <p>&nbsp;</p>
-
-#### Participant Data:
-
-1. Multiple birth participants (i.e. twins or other cases where multiple participants from the same birth are enrolled in the study)
-1. Postnatal Recruits (PNR): participants allowed to join the study in the postnatal period, completing a modified V01 and V02 after the child is born <p>&nbsp;</p>
-
-
-#### Brain Imaging Data & Metadata:
-
-Release 2.0 will include the following imaging data and metadata:
-
-- **Source DICOMs** for [raw BIDS](../datacuration/rawbids.md) for all imaging modalities
-- **Processed V03+ structural and functional MRI derivatives** from [Infant fMRIPrep](../datacuration/derivatives.md/#infant-fmriprep-nibabies) and [XCP-D](../datacuration/derivatives.md/#xcp-d-xcp_d) 
-
-**MRI Scanner Information**   
-In addition, Release 2.0 will include MRI scanner information for all scanners used at each site in the [`scans.tsv`](../datacuration/rawbids.md#participant-session-scan-level-data) file, including: 
-
-  * `ScannerManufacturer`
-  * `ScannerModel`
-  * `ScannerSofwareVersion`
-  * `ScannerSerialNumber` (Used to differentiate different scanners at the same site)
-
-Until then, complete scanner metadata is available in the sidecar `.json` files that accompany the raw <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> image data ([see details](../datacuration/rawbids.md)). For example, metadata for a T1-weighted scan is located here:
-
-<pre class="folder-tree">
-hbcd/
-|__ rawdata/ 
-    |__ sub-<span class="label">&lt;label&gt;</span>/
-        |__ ses-<span class="label">&lt;label&gt;</span>/
-            |__ anat/
-                |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_run-<span class="label">&lt;label&gt;</span>_T1w.json
-
-</pre>
-<br>
-
-#### Tabulated study instrument data:
-
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
   <thead>
     <tr>
-      <th style="width: 25%; border: 1px solid #ddd; padding: 10px; text-align: left; word-wrap: break-word; white-space: normal; font-size: 14px;">HBCD Workgroup</th>
-      <th style="width: 30%; border: 1px solid #ddd; padding: 10px; text-align: left; word-wrap: break-word; white-space: normal; font-size: 14px;">Name of Instrument</th>
-      <th style="width: 15%; border: 1px solid #ddd; padding: 10px; text-align: left; word-wrap: break-word; white-space: normal; font-size: 14px;">Acronym</th>
-      <th style="width: 30%; border: 1px solid #ddd; padding: 10px; text-align: left; word-wrap: break-word; white-space: normal; font-size: 14px;">Construct</th>
+      <th>#</th>
+      <th>Update</th>
+      <th>Details</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Neurocognition & Language</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">National Institutes of Health (NIH) Baby Toolbox</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">NBTB</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Cognitive and executive function (gaze-based and touch-based tasks) and memory</td>
+      <td>1</td>
+      <td style="word-wrap: break-word; white-space: normal;">Inclusion of Multiple Birth Participants</td>
+      <td style="word-wrap: break-word; white-space: normal;">MBPs includes twins or other cases where multiple participants from the same birth are enrolled in the study</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Behavior & Caregiver-Child Interaction</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Early Regulation in Context Assessment</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">ERICA</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Affect and self-regulation behavior in children and families</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Biospecimens & Omics</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Maternal Blood</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Blood</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Metals, nutrition, toxins, proteins</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Geocoding</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Geocoding & Linking External Data</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">GLED</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Toxin exposure and other neighbourhood measures</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Transitions in Care</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Transitions in Care Screener</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">TIC Screener</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Survey to ssess whether there were changes in child’s main caregiver since the last visit</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Magnetic Resonance Imaging (MRI)</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Pre-Scan Survey</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Pre-Scan Survey</td>
-      <td style="border: 1px solid #ddd; padding: 10px; word-wrap: break-word; white-space: normal;">Sleep information, social behavior, transportation, scheduling, etc.</td>
+      <td>2</td>
+      <td style="word-wrap: break-word; white-space: normal;">Inclusion of Postnatal Recruits</td>
+      <td style="word-wrap: break-word; white-space: normal;">PNRs are participants allowed to join the study in the postnatal period, completing a modified V01 and V02 after the child is born</td>
     </tr>
   </tbody>
 </table>
 
+### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 Brain Imaging Data & Metadata Updates
 
-### Improvements to Existing Data
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Update</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>DICOMs</td>
+      <td style="word-wrap: break-word; white-space: normal;">Addition of source DICOMs to file-based data for <a href="../../datacuration/rawbids" target="_blank">raw BIDS</a> for all imaging modalities</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td style="word-wrap: break-word; white-space: normal;">V03+ structural and functional MRI derivatives</td>
+      <td style="word-wrap: break-word; white-space: normal;">Processed <a href="../../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank" rel="noopener noreferrer">Infant fMRIPrep</a> and <a href="../../datacuration/derivatives/#xcp-d-xcp_d" target="_blank" rel="noopener noreferrer">XCP-D</a> derivatives for visits V03+</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td style="word-wrap: break-word; white-space: normal;">MRI Scanner Information</td>
+      <td style="word-wrap: break-word; white-space: normal;">MRI Scanner Information for all scanners used at each site will be added to the <code>sub-&lt;label&gt;_ses-&lt;label&gt;_scans.tsv</code> file (<a href="../../datacuration/rawbids/#participant-session-scan-level-data" target="_blank" rel="noopener noreferrer">see details</a>), including ScannerManufacturer, ScannerModel, ScannerSoftwareVersion, and ScannerSerialNumber (used to differentiate different scanners at the same site). Note that this information is currently available in the sidecar <code>.json</code> files that accompany the raw image data, e.g.:
+        <pre style="font-size: 12px;">
+        hbcd/
+        |__ rawdata/ 
+            |__ sub-<span class="label">&lt;label&gt;</span>/
+                |__ ses-<span class="label">&lt;label&gt;</span>/
+                    |__ anat/
+                        |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_run-<span class="label">&lt;label&gt;</span>_T1w.json
+        </pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-#### Physical Health 
+### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 New Tabulated Data
 
-Age-based height/weight/head z-scores calculated based on (non-jittered) date of birth.
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+  <thead>
+    <tr>
+      <th style="width: 25%;">Domain</th>
+      <th style="width: 30%;">Name of Instrument</th>
+      <th style="width: 30%;">Construct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i> Behavior & CG-Child Interaction</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Early Regulation in Context Assessment (<strong>ERICA</strong>)</td>
+      <td style="word-wrap: break-word; white-space: normal;">Co-regulation, Child Regulation/Dysregulation, Parenting</td>
+    </tr>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i> Biospec & Omics</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Maternal Blood</td>
+      <td style="word-wrap: break-word; white-space: normal;">Metals, nutrition, toxins, proteins</td>
+    </tr>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#neurocog" target="_blank"><i class="fa fa-brain"></i> Neurocog & Language</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">NIH Baby Toolbox</td>
+      <td style="word-wrap: break-word; white-space: normal;">Cognitive/Executive Function/Memory & Language</td>
+    </tr>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i> Social & Env Determinants</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Geocoding & Linking External Data (<strong>GLED</strong>)</td>
+      <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure and Other Neighborhood Measures</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><i class="fas fa-clipboard"></i> Recruitment/Retention</td>
+      <td style="word-wrap: break-word; white-space: normal;">Study Navigators Contact Form</td>
+      <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
+    </tr>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;">Transitions in Care (<strong>TIC</strong>) Screener</td>
+      <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
+    </tr>
+    <tr>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#mri" target="_blank"><i class="fas fa-magnet"></i> MRI</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Pre-Scan Survey</td>
+      <td style="word-wrap: break-word; white-space: normal;">Sleep information, social behavior, transportation, scheduling, etc.</td>
+    </tr>
+  </tbody>
+</table>
+
+### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 Improvements to Existing Data
+
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Domain</th>
+      <th>Instrument</th>
+      <th>Update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Physical Health</td>
+      <td>Growth</td>
+      <td style="word-wrap: break-word; white-space: normal;">Inclusion of age-based height/weight/head z-scores calculated based on (non-jittered) date of birth</td>
+    </tr>
+  </tbody>
+</table>
+
