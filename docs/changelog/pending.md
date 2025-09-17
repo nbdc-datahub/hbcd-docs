@@ -21,12 +21,12 @@
     <tr>
       <td>2</td>
       <td style="word-wrap: break-word; white-space: normal;">Inclusion of Postnatal Recruits</td>
-      <td style="word-wrap: break-word; white-space: normal;">PNRs are participants allowed to join the study in the postnatal period, completing a modified V01 and V02 after the child is born</td>
+      <td style="word-wrap: break-word; white-space: normal;">PNRs, participants who joined the study in the postnatal period, complete a modified V01 and V02 after the child is born</td>
     </tr>
   </tbody>
 </table>
 
-### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 Brain Imaging Data & Metadata Updates
+### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 Brain Imaging File-Based Data Updates
 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
   <thead>
@@ -75,39 +75,54 @@
     </tr>
   </thead>
   <tbody>
+  <tr>
+    <td colspan="3"><strong>Behavior, Biology, & Environment</strong></td>
+  </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i> Behavior & CG-Child Interaction</a></td>
+      <td style="word-wrap: break-word; white-space: normal; padding-left: 25px;"><a href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i> Behavior & CG-Child Interaction</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Early Regulation in Context Assessment (<strong>ERICA</strong>)</td>
       <td style="word-wrap: break-word; white-space: normal;">Co-regulation, Child Regulation/Dysregulation, Parenting</td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i> Biospec & Omics</a></td>
+      <td style="word-wrap: break-word; white-space: normal; padding-left: 25px;"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i> Biospec & Omics</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Maternal Blood</td>
       <td style="word-wrap: break-word; white-space: normal;">Metals, nutrition, toxins, proteins</td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#neurocog" target="_blank"><i class="fa fa-brain"></i> Neurocog & Language</a></td>
+      <td style="word-wrap: break-word; white-space: normal; padding-left: 25px;"><a href="../../instruments/#neurocog" target="_blank"><i class="fa fa-brain"></i> Neurocog & Language</a></td>
       <td style="word-wrap: break-word; white-space: normal;">NIH Baby Toolbox</td>
       <td style="word-wrap: break-word; white-space: normal;">Cognitive/Executive Function/Memory & Language</td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i> Social & Env Determinants</a></td>
+      <td style="word-wrap: break-word; white-space: normal; padding-left: 25px;"><a href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i> Social & Env Determinants</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Geocoding & Linking External Data (<strong>GLED</strong>)</td>
       <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure and Other Neighborhood Measures</td>
     </tr>
+  <tr>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="3"><strong>Brain Activity - MRI & EEG</strong></td>
+  </tr>
+  <tr>
+      <td style="word-wrap: break-word; white-space: normal; padding-left: 25px;"><a href="../../instruments/#mri" target="_blank"><i class="fas fa-magnet"></i> MRI</a></td>
+      <td style="word-wrap: break-word; white-space: normal;">Pre-Scan Survey</td>
+      <td style="word-wrap: break-word; white-space: normal;">Sleeping Scan Prep</td>
+  </tr>
+  <tr>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="3"><strong>Recruitment & Retention</strong></td>
+  </tr>
     <tr>
-      <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><i class="fas fa-clipboard"></i> Recruitment/Retention</td>
+      <td rowspan="2" style="word-wrap: break-word; white-space: normal; padding-left: 25px;"><a href="../../instruments/#admin" target="_blank"><i class="fas fa-clipboard"></i> Recruitment/Retention</a></td>
       <td style="word-wrap: break-word; white-space: normal;">Study Navigators Contact Form</td>
       <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
     </tr>
     <tr>
       <td style="word-wrap: break-word; white-space: normal;">Transitions in Care (<strong>TIC</strong>) Screener</td>
       <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/#mri" target="_blank"><i class="fas fa-magnet"></i> MRI</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">Pre-Scan Survey</td>
-      <td style="word-wrap: break-word; white-space: normal;">Sleep information, social behavior, transportation, scheduling, etc.</td>
     </tr>
   </tbody>
 </table>
