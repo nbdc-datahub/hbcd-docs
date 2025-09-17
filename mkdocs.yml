@@ -137,6 +137,7 @@ nav:
     - Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
     - Version History:    
+        - Release 1.1: changelog/versions/R1.1.md
         - Release 1.0: changelog/versions/R1.md
   - Help & Support:
     - FAQs: help/faq.md
