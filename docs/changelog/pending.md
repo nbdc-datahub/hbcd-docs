@@ -8,10 +8,6 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <tbody>
     <tr>
-      <td style="text-align: center; vertical-align: top; white-space: nowrap;"><b>[1]</b></td>
-      <td style="word-wrap: break-word; white-space: normal;"><b>Known Issues</b>: Resolution of <a href="../knownissues">Known Issues</a> noted with <strong>Expected Fix</strong>: Release 1.1</td>
-    </tr>
-    <tr>
       <td style="text-align: center; vertical-align: top; white-space: nowrap;"><b>[2]</b></td>
       <td style="word-wrap: break-word; white-space: normal;"><b>BrainSwipes QC results</b> (<a href="../../instruments/mri/qc/#brainswipes">see details</a>) for remaining participants with XCP-D derivatives available, but no corresponding BrainSwipes results, in Release 1.0 (N=8)</p>
       </td>
