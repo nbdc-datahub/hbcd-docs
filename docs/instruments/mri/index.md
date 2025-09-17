@@ -1,8 +1,15 @@
-# Overview: Magnetic Resonance Imaging & Spectroscopy
+# Magnetic Resonance Imaging & Spectroscopy
+
+<p>
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../changelog/knownissues/#imaging-data" target="_blank">see details</a>.</span>
+</div>
+</p>
 
 HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy (MRS)** data measures acquired as part of a comprehensive pediatric neuroimaging protocol, meticulously designed to overcome technical challenges of imaging early in life. 
 
-MR data are acquired during visits V02, V03, V04, and V06 across all 27 Study recruitment sites. The current release includes data from V02 and V03 - with the exception of processed structural/functional outputs from [Infant fMRIPrep (Nibabies)](../../datacuration/derivatives.md/#infant-fmriprep-nibabies) and [XCP-D](../../datacuration/derivatives.md/#xcp-d-xcp_d), for which only data from V02 are currently provided. Please see [Quality Control Procedures](qc.md) for a detailed information on MR QC and the following sections for a summary of each modality:
+MR data are acquired during visits V02, V03, V04, and V06 across all 27 Study recruitment sites. The current release includes data from V02, V03, and V04. Please see [Quality Control Procedures](qc.md) for a detailed information on MR QC and the following sections for a summary of each modality:
 
 <ul>
 <li><a href="smri" target="_blank">Structural MRI (sMRI)</a></li>
