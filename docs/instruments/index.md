@@ -710,7 +710,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <tr>
       <th></th>
       <th style="width: 40%;">EEG Task</th>
-      <th style="width: 60%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-bottom"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder</th>
+      <th style="width: 60%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-left"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder</th>
     </tr>
   </thead>
   <tbody>
@@ -892,57 +892,40 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
+      <th style="width: 1%;">Sensor</th>
       <th style="width: 1%;"></th>
-      <th style="width: 30%;">Instrument or Sensor</th>
+      <th style="width: 30%;">Data Type</th>
       <th style="width: 30%;">Construct</th>
-      <th><span class="tooltip tooltip-left"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table or <span class="tooltip tooltip-left"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder Name</th>
+      <th style="width: 30%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-left"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder</th>
     </tr>
   </thead>
   <tbody>
   <tr>
+    <td rowspan="3">Infant Leg Motion</td>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
+    <td><a href="sensors/questionnaire" target="_blank">Questionnaire 1/2/3</a></td>
     <td rowspan="3">Motor Development,<br>Regulation (Sleep/Wake)</td>
     <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td>Infant Leg Motion Sensors (<a href="../datacuration/rawbids/#motion" target="_blank">Raw BIDS</a>)</td>
+    <td><a href="../datacuration/rawbids/#motion" target="_blank">Raw BIDS</a></td>
     <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/motion/</i></td>
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td>Infant Leg Motion Sensors (<a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion" target="_blank">Derivatives</a>)</td>
+    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion" target="_blank">Derivatives</a></td>
     <td><i>derivatives/hbcd-motion/</i></td>
   </tr>
   <tr>
+    <td>Infant Heart Rate</td>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td>Infant Heart Rate Sensor (<a href="sensors/gabi" target="_blank">Raw BIDS</a>)</td>
-    <td>Regulation/<br>Autonomic Function</td>
+    <td><a href="sensors/gabi" target="_blank">Raw BIDS</a></td>
+    <td>Regulation (Sleep/Wake)/<br>Autonomic Function</td>
     <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/gabi/</i></td>
   </tr>
   </tbody>
   </table>
-
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th>Sensor</th>
-      <th>Construct</th>
-      <th style="width: 20%;"><i class="fas fa-hammer"></i> Raw Data</th>
-      <th style="width: 20%;"><i class="fas fa-cog"></i> Derivatives</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="sensors/wearsensors" target="_blank">Infant Leg Motion Sensors</a></td>
-    <td>Motor Development, Regulation (Sleep/Wake)</td>
-    <td><a href="../datacuration/rawbids/#motion"><code>motion/</code></a></td>
-    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a></td>
-  </tr>
-  </tbody>
-  </thead>
-</table>
 </div>
 
 ### Demographics & Visit Information
@@ -961,22 +944,22 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 20%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 30%; text-align: center;">Table Name</th>
+      <th style="width: 5%;"></th>
+      <th style="width: 30%;">Instrument</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;"><span class="tooltip tooltip-left"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
-    <td><i>NA</i></td>
     <td>Demographics data derived from multiple sources</td>
     <td><code>sed_basic_demographics</code></td>
   </tr>
     <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
-    <td><i>NA</i></td>
     <td>Participant visit information</td>
     <td><code>par_visit_data</code></td>
   </tr>
@@ -1000,22 +983,22 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center;">Instrument</th>
-      <th style="text-align: center;">Version</th>
-      <th style="width: 30%; text-align: center;">Construct</th>
-      <th style="width: 10%; text-align: center;">Table Name</th>
+      <th></th>
+      <th style="width: 40%;">Instrument</th>
+      <th style="width: 40%;">Construct</th>
+      <th style="width: 30%;"><span class="tooltip tooltip-left"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
-    <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
     <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
     <td><code>TBD</code></td>
   </tr>
-    <tr>
+  <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
-    <td style="word-wrap: break-word; white-space: normal;"><i>NA</i></td>
     <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
     <td><code>TBD</code></td>
   </tr>
