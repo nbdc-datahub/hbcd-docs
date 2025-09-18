@@ -161,7 +161,7 @@ Expand the sections below to see a list of measures associated with each domain 
       <th style="width: 10%;">Instrument</th>
       <th>Version</th>
       <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table or <span class="tooltip tooltip-bottom"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span> Folder Name</th>
+      <th style="width: 30%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-bottom"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span> Folder</th>
     </tr>
   </thead>
   <tbody>
@@ -545,7 +545,7 @@ Expand the sections below to see a list of measures associated with each domain 
       <th style="width: 15%;">Instrument</th>
       <th>Version</th>
       <th style="width: 60%;">Construct</th>
-      <th><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table or <span class="tooltip tooltip-bottom"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span> Folder Name</th>
+      <th style="width: 30%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-bottom"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span> Folder</th>
     </tr>
   </thead>
   <tbody>
@@ -684,27 +684,12 @@ Expand the sections below to see a list of measures associated with each domain 
       <td style="word-wrap: break-word; white-space: normal;"><a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage</a></td>
       <td></td>
       <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure & Other Neighborhood Measures</td>
-      <td>concatenated/geocoded_linkage/</td>
+      <td><i>concatenated/geocoded_linkage/</i><br>
+      CONFIRM FOLDER NAME</td>
     </tr>        
   </tbody>
   </table>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th>Instrument</th>
-      <th>Construct</th>
-      <th style="width: 20%;"><i class="fas fa-layer-group"></i> Concatenated Data</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr>
-        <td style="word-wrap: break-word; white-space: normal;"><a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage from Home & Work Addresses</a></td>
-        <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure & Other Neighborhood Measures</td>
-        <td><code>geocoded_linkage/</code><br>(UPDATE)</td>
-      </tr>
-  </tbody>
-  </table>
-  </div>
+</div>
 
 ### Brain Activity & Wearable Sensors
 
@@ -719,13 +704,13 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see <a href="eeg">EEG Overview page</a></strong></p>
+<p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> See <a href="eeg"><strong>EEG Overview page</strong></a></strong></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th>Data Type</th>
-      <th>EEG Task</th>
-      <th><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table or <span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder Name</th>
+      <th></th>
+      <th style="width: 40%;">EEG Task</th>
+      <th style="width: 60%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-bottom"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder</th>
     </tr>
   </thead>
   <tbody>
@@ -750,13 +735,13 @@ Expand the sections below to see a list of measures associated with each domain 
       <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-VEP</code></td>
     </tr>
     <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Raw BIDS</i></strong></td>
-      <td><a href="../datacuration/rawbids/#eeg" target="_blank">All Tasks</a></td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank">All Tasks - <strong><i>Raw BIDS</i></strong></a></td>
       <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/eeg/</i></td>
     </tr>
     <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>HBCD-MADE Derivatives</i></strong></td>
-      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">All Tasks</a></td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">All Tasks - <strong><i>HBCD-MADE Derivatives</i></strong></a></td>
       <td><i>derivatives/made/</i></td>
     </tr>
   </tbody>
@@ -904,24 +889,41 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b>Tabulated Data</b></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%;">Instrument</th>
+      <th style="width: 1%;"></th>
+      <th style="width: 30%;">Instrument or Sensor</th>
       <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Names</th>
+      <th><span class="tooltip tooltip-left"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table or <span class="tooltip tooltip-left"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
-    <td>Motor behavior, physical activity, sleep</td>
+    <td rowspan="3">Motor Development,<br>Regulation (Sleep/Wake)</td>
     <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
+  </tr>
+  <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
+    <td>Infant Leg Motion Sensors (<a href="../datacuration/rawbids/#motion" target="_blank">Raw BIDS</a>)</td>
+    <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/motion/</i></td>
+  </tr>
+  <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
+    <td>Infant Leg Motion Sensors (<a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion" target="_blank">Derivatives</a>)</td>
+    <td><i>derivatives/hbcd-motion/</i></td>
+  </tr>
+  <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
+    <td>Infant Heart Rate Sensor (<a href="sensors/gabi" target="_blank">Raw BIDS</a>)</td>
+    <td>Regulation/<br>Autonomic Function</td>
+    <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/gabi/</i></td>
   </tr>
   </tbody>
   </table>
-<p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>From Wearable Sensors</b></p>
+
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
@@ -932,12 +934,6 @@ Expand the sections below to see a list of measures associated with each domain 
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td><a href="sensors/gabi" target="_blank">Infant Heart Rate Sensor</a></td>
-    <td>Regulation (Sleep State Sycles)/Autonomic Function</td>
-    <td><code>gabi/</code></td>
-    <td>NA</td>
-  </tr>
   <tr>
     <td><a href="sensors/wearsensors" target="_blank">Infant Leg Motion Sensors</a></td>
     <td>Motor Development, Regulation (Sleep/Wake)</td>
