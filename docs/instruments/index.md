@@ -186,18 +186,6 @@ Expand the sections below to see a list of measures associated with each domain 
     <td style="word-wrap: break-word; white-space: normal;">GWAS, EWAS, Transcriptome</td>
     <td><i>concatenated/genetics/</i></td>
   </tr>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span></td>
-    <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
-    <td>Maternal & Child</td>
-    <td style="word-wrap: break-word; white-space: normal;">GWAS, EWAS, Transcriptome</td>
-    <td><pre style="font-size: 12px;">
-hbcd/
-|__ concatenated/ 
-    |__ genetics/
-</pre>
-    </td>
-  </tr>
   </tbody>
   </table>
 </div>
@@ -771,27 +759,6 @@ hbcd/
       <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">All Tasks</a></td>
       <td><i>derivatives/made/</i></td>
     </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Raw BIDS</i></strong></td>
-      <td><a href="../datacuration/rawbids/#eeg" target="_blank">All Tasks</a></td>
-      <td>
-      <pre style="font-size: 12px;">
-hbcd/
-|__ rawdata/ 
-    |__ sub-<span class="label">&lt;label&gt;</span>/
-        |__ ses-<span class="label">&lt;label&gt;</span>/
-            |__ eeg/
-      </pre></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>HBCD-MADE Derivatives</i></strong></td>
-      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">All Tasks</a></td>
-      <td><pre style="font-size: 12px;">
-hbcd/
-|__ derivatives/ 
-    |__ made/
-      </pre></td>
-    </tr>
   </tbody>
   </table>
 </div>
@@ -1062,3 +1029,4 @@ hbcd/
 
 
 <br>
+
