@@ -53,104 +53,104 @@ Below are the definitions for the columns in the data dictionary and levels tabl
     </thead>
     <tbody>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>study</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Study</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Indicates whether table/measure is a core components of the study or belongs to a substudy / anxiliary study</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b> Core; Substudy <b>}</b></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>study</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Study</td>
+        <td style="word-wrap: break-word; white-space: normal;">Indicates whether table/measure is a core components of the study or belongs to a substudy / anxiliary study</td>
+        <td style="word-wrap: break-word; white-space: normal;"><b>{</b> Core; Substudy <b>}</b></td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>domain</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Domain</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Domain/<a href="https://hbcdstudy.org/workgroups-and-committees/">HBCD Workgroup</a></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">
+        <td style="word-wrap: break-word; white-space: normal;"><code>domain</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Domain</td>
+        <td style="word-wrap: break-word; white-space: normal;">Domain/<a href="https://hbcdstudy.org/workgroups-and-committees/">HBCD Workgroup</a></td>
+        <td style="word-wrap: break-word; white-space: normal;">
         <b>{</b> Behavior/Child-Caregiver Interaction;<br>Biospecimens;<br>Demographics;<br>Neurocognition & Language;<br>Novel Tech;<br>Physical Health;<br>Pregnancy/Exposure Including Substance;<br>Social & Environmental Determinants;<br>Tabular EEG;<br>Tabular imaging <b>}</b>
         </td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>source</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Source</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Source of information for this table/measure</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b> Biological Mother;<br>Caregiver (Responsible Adult);<br>Child;<br>General <b>}</b></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>source</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Source</td>
+        <td style="word-wrap: break-word; white-space: normal;">Source of information for this table/measure</td>
+        <td style="word-wrap: break-word; white-space: normal;"><b>{</b> Biological Mother;<br>Caregiver (Responsible Adult);<br>Child;<br>General <b>}</b></td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>table_name</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Table name</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Name of table/measure</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>mh_p_cbcl</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">NO</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>table_name</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Table name</td>
+        <td style="word-wrap: break-word; white-space: normal;">Name of table/measure</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>mh_p_cbcl</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">NO</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>table_label</code>&nbsp;
+        <td style="word-wrap: break-word; white-space: normal;"><code>table_label</code>&nbsp;
             <span class="tooltip tooltip-right"><i class="bi bi-filetype-json" style="font-size:18px;"></i>
             <span class="tooltiptext">Corresponds to <i>MeasurementToolMetadata</i> > <i>Description</i> in BIDS JSON</span></span>
         </td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Table label</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Label for table/measure</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Child Behavior Checklist [Parent]</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;">Table label</td>
+        <td style="word-wrap: break-word; white-space: normal;">Label for table/measure</td>
+        <td style="word-wrap: break-word; white-space: normal;">Child Behavior Checklist [Parent]</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>name</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Variable name</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Name of column/variable/question</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>mh_p_cbcl__aggr_001</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">NO</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>name</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Variable name</td>
+        <td style="word-wrap: break-word; white-space: normal;">Name of column/variable/question</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>mh_p_cbcl__aggr_001</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">NO</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>label</code>&nbsp;
+        <td style="word-wrap: break-word; white-space: normal;"><code>label</code>&nbsp;
           <span class="tooltip tooltip-right"><i class="bi bi-filetype-json" style="font-size:18px;"></i>
           <span class="tooltiptext">Corresponds to <i>Description</i> in BIDS JSON</span></span>
         </td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Variable label</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Label for column/variable/question</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">"Demands a lot of attention"</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;">Variable label</td>
+        <td style="word-wrap: break-word; white-space: normal;">Label for column/variable/question</td>
+        <td style="word-wrap: break-word; white-space: normal;">"Demands a lot of attention"</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>instruction</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Instruction</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Instructions preceding table/measure questions</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">"The next set of questions is about your child's behavior in different situations and contexts. Please fill in a response to all questions."</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>instruction</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Instruction</td>
+        <td style="word-wrap: break-word; white-space: normal;">Instructions preceding table/measure questions</td>
+        <td style="word-wrap: break-word; white-space: normal;">"The next set of questions is about your child's behavior in different situations and contexts. Please fill in a response to all questions."</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>header</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Header</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Header/instructions for a set of questions</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">"Below is a list of items that describe children and youths. For each item that describes your child <span class="tooltip"><strong>...</strong>
+        <td style="word-wrap: break-word; white-space: normal;"><code>header</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Header</td>
+        <td style="word-wrap: break-word; white-space: normal;">Header/instructions for a set of questions</td>
+        <td style="word-wrap: break-word; white-space: normal;">"Below is a list of items that describe children and youths. For each item that describes your child <span class="tooltip"><strong>...</strong>
         <span class="tooltiptext">... now or within the past 6 months, please choose whether the item is very true or often true of your child, somewhat or sometimes true of your child, or not true of your child. Please answer all items as well as you can, even if some do not seem to apply to your child."</span>
       </span>
      </td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>note</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Note</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Note displayed to participants</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">"Enter weight in pounds."</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>note</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Note</td>
+        <td style="word-wrap: break-word; white-space: normal;">Note displayed to participants</td>
+        <td style="word-wrap: break-word; white-space: normal;">"Enter weight in pounds."</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>unit</code>&nbsp;
+        <td style="word-wrap: break-word; white-space: normal;"><code>unit</code>&nbsp;
           <span class="tooltip tooltip-right"><i class="bi bi-filetype-json" style="font-size:18px;"></i>
           <span class="tooltiptext">Corresponds to <i>Units</i> in BIDS JSON</span></span>
         </td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Unit</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Unit of measurement</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">m, cm2, lbs</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;">Unit</td>
+        <td style="word-wrap: break-word; white-space: normal;">Unit of measurement</td>
+        <td style="word-wrap: break-word; white-space: normal;">m, cm2, lbs</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>type_var</code>&nbsp;
+        <td style="word-wrap: break-word; white-space: normal;"><code>type_var</code>&nbsp;
           <span class="tooltip tooltip-right"><i class="bi bi-filetype-json" style="font-size:18px;"></i>
           <span class="tooltiptext">Derivative element in BIDS JSON set to <i>true</i> if <i>type_var</i> = <i>summary score</i> or <i>derived item</i></span></span>
         </td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Variable type</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Type of column/variable/question</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b>
+        <td style="word-wrap: break-word; white-space: normal;">Variable type</td>
+        <td style="word-wrap: break-word; white-space: normal;">Type of column/variable/question</td>
+        <td style="word-wrap: break-word; white-space: normal;"><b>{</b>
             <span class="tooltip">administrative
             <span class="tooltiptext">Data that gives context to the assessments, e.g. date of assessment, language, quality control, etc.</span>
           </span>;
@@ -163,124 +163,124 @@ Below are the definitions for the columns in the data dictionary and levels tabl
             <span class="tooltiptext">Summary and/or score output based on algorithmic conversions of items/raw data</span>
           </span><b> }</b>
       </td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>type_data</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Data type</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Data type (in database)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b> date; timestamp; time;
+        <td style="word-wrap: break-word; white-space: normal;"><code>type_data</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Data type</td>
+        <td style="word-wrap: break-word; white-space: normal;">Data type (in database)</td>
+        <td style="word-wrap: break-word; white-space: normal;"><b>{</b> date; timestamp; time;
       <span class="tooltip">character
         <span class="tooltiptext">Character only used for categorical columns</span>
       </span>;
       text; integer; double <b>}</b></td>
     </td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">NO</td>
+        <td style="word-wrap: break-word; white-space: normal;">NO</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>type_level</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Level of measurement</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Measurement level/scale type</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><b>{</b> nominal; ordinal; interval; ratio <b>}</b></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>type_level</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Level of measurement</td>
+        <td style="word-wrap: break-word; white-space: normal;">Measurement level/scale type</td>
+        <td style="word-wrap: break-word; white-space: normal;"><b>{</b> nominal; ordinal; interval; ratio <b>}</b></td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>type_field</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Field type</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Field type in data capture system as presented to participant</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">dropdown; radio; checkbox</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>type_field</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Field type</td>
+        <td style="word-wrap: break-word; white-space: normal;">Field type in data capture system as presented to participant</td>
+        <td style="word-wrap: break-word; white-space: normal;">dropdown; radio; checkbox</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>order_display</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Display order</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Display order of item within measure</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>order_display</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Display order</td>
+        <td style="word-wrap: break-word; white-space: normal;">Display order of item within measure</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>branching_logic</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Branching logic</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Branching logic applied to column/variable/question</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>branching_logic</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Branching logic</td>
+        <td style="word-wrap: break-word; white-space: normal;">Branching logic applied to column/variable/question</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>label_es</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Label (Spanish)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Label (Spanish)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>label_es</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Label (Spanish)</td>
+        <td style="word-wrap: break-word; white-space: normal;">Label (Spanish)</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>instruction_es</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Instruction (Spanish)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Instruction (Spanish)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>instruction_es</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Instruction (Spanish)</td>
+        <td style="word-wrap: break-word; white-space: normal;">Instruction (Spanish)</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>header_es</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Header (Spanish)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Header (Spanish)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>header_es</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Header (Spanish)</td>
+        <td style="word-wrap: break-word; white-space: normal;">Header (Spanish)</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>note_es</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Note (Spanish)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Note (Spanish)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>note_es</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Note (Spanish)</td>
+        <td style="word-wrap: break-word; white-space: normal;">Note (Spanish)</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>unique_identifiers</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Identifier column(s)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Unique identifier column names (variable/table)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">NO</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>unique_identifiers</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Identifier column(s)</td>
+        <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names (variable/table)</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">NO</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>url_table</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Documentation for table</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Link to <a href="../../instruments" target="_blank">study instrument documentation</a></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>url_table</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Documentation for table</td>
+        <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../../instruments" target="_blank">study instrument documentation</a></td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>url_table_warn_use</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Responsible Use Warning (table)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">responsible use warning</a> (table)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>url_table_warn_use</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Responsible Use Warning (table)</td>
+        <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">responsible use warning</a> (table)</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>url_table_warn_data</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Data Warning (table)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">data warning</a> (table)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>url_table_warn_data</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Data Warning (table)</td>
+        <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">data warning</a> (table)</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>url_warn_use</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Responsible Use Warning (variable)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">responsible use warning</a> (variable)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>url_warn_use</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Responsible Use Warning (variable)</td>
+        <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">responsible use warning</a> (variable)</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>url_warn_data</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Data Warning (variable)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">data warning</a> (variable)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>url_warn_data</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Data Warning (variable)</td>
+        <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">data warning</a> (variable)</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>order_sort</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Sort order</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Standard sort order in table/measure (and ⇒ column order in data/database)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>order_sort</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">Sort order</td>
+        <td style="word-wrap: break-word; white-space: normal;">Standard sort order in table/measure (and ⇒ column order in data/database)</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
     </tr>
 </tbody>
 </table>
@@ -312,42 +312,42 @@ Below are the definitions for the columns in the data dictionary and levels tabl
     </thead>
     <tbody>
       <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>name</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Name of the categorical column/variable/question for which value/label pairs are reported</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">&nbsp;</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">NO</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>name</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">Name of the categorical column/variable/question for which value/label pairs are reported</td>
+        <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+        <td style="word-wrap: break-word; white-space: normal;">NO</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>value</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">left hand side</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Value of the level</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">1</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">NO</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>value</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">left hand side</td>
+        <td style="word-wrap: break-word; white-space: normal;">Value of the level</td>
+        <td style="word-wrap: break-word; white-space: normal;">1</td>
+        <td style="word-wrap: break-word; white-space: normal;">NO</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>order_level</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">
+        <td style="word-wrap: break-word; white-space: normal;"><code>order_level</code></td>
+        <td style="word-wrap: break-word; white-space: normal;"></td>
+        <td style="word-wrap: break-word; white-space: normal;">
           <span class="tooltip">Position of the level
             <span class="tooltiptext">The order is used both to indicate in which order the response options were displayed to the participant and how they should be ordered in the data/visualizations</span>
           </span></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">2</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">NO</td>
+        <td style="word-wrap: break-word; white-space: normal;">2</td>
+        <td style="word-wrap: break-word; white-space: normal;">NO</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>label</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">right hand side</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Label of the level</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Yes</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>label</code></td>
+        <td style="word-wrap: break-word; white-space: normal;">right hand side</td>
+        <td style="word-wrap: break-word; white-space: normal;">Label of the level</td>
+        <td style="word-wrap: break-word; white-space: normal;">Yes</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"><code>label_es</code></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;"></td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Label of the level (Spanish)</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">Si</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">YES</td>
+        <td style="word-wrap: break-word; white-space: normal;"><code>label_es</code></td>
+        <td style="word-wrap: break-word; white-space: normal;"></td>
+        <td style="word-wrap: break-word; white-space: normal;">Label of the level (Spanish)</td>
+        <td style="word-wrap: break-word; white-space: normal;">Si</td>
+        <td style="word-wrap: break-word; white-space: normal;">YES</td>
       </tr>
 </table>
 </div>
