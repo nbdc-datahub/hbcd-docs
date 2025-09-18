@@ -29,6 +29,7 @@ hbcd/
 |           |__ dwi/
 |           |__ fmap/
 |           |__ func/
+|           |__ mrs/
 |
 |__ derivatives/       <span class="hashtag"># Derivatives (file-based data)</span>
     |__ bibsnet/
