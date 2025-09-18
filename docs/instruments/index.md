@@ -1030,3 +1030,102 @@ Expand the sections below to see a list of measures associated with each domain 
 
 <br>
 
+## MRI ALT
+
+<p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see <a href="eeg">EEG Overview page</a></strong></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Modality</th>
+      <th>Name</th>
+      <th><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table or <span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td rowspan="4"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Raw BIDS</i></strong></td>
+        <td><a href="../datacuration/rawbids/#anatomical-anat" target="_blank">sMRI & qMRI</a></td>
+        <td></td>
+        <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/anat/</i></td>
+    </tr>
+    <tr>
+        <td><a href="../datacuration/rawbids/#functional-func-and-fieldmaps-fmap" target="_blank">fMRI</a></td>
+        <td></td>
+        <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/{func|fmap}/</i></td>
+    </tr>
+    <tr>
+        <td><a href="../datacuration/rawbids/#diffusion-dwi" target="_blank">dMRI</a></td>
+        <td></td>
+        <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/dwi</i></td>
+    </tr>
+    <tr>
+      <td><a href="../datacuration/rawbids/#mr-spectroscopy-mrs" target="_blank">MRS</a></td>
+      <td></td>
+      <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/mrs</i></td>
+    </tr>
+    <tr>
+        <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Derivatives</i></strong></td>
+        <td>MRI (all modalities)</td>
+        <td></td>
+        <td><i>derivatives/</i></td>
+    </tr>
+    <tr>
+        <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Derivatives</i></strong></td>
+        <td><a href="../datacuration/derivatives/#osprey-bids-osprey" target="_blank">MRS</a></td>
+        <td>OSPREY-BIDS</td>
+        <td><i>derivatives/osprey/</i></td>
+    </tr>
+    <tr>
+        <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+        <td>All</td>
+        <td style="word-wrap: break-word; white-space: normal;"><a href="mri/questionnaire" target="_blank">Pre-Scan Questionnaire</a></td>
+        <td><code>img_ra_prep</code></td>
+    </tr>
+  </tbody>
+  </table>
+
+
+## MRI ALT 2
+
+<p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see <a href="eeg">EEG Overview page</a></strong></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Modality</th>
+      <th>Name</th>
+      <th><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table or <span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Raw BIDS</i></strong></td>
+        <td>MR Imaging</td>
+        <td><a href="../datacuration/rawbids/#imaging" target="_blank">MRI BIDS</a></td>
+        <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/</i></td>
+    </tr>
+    <tr>
+        <td>MR Spectroscopy</td>
+        <td><a href="../datacuration/rawbids/#mr-spectroscopy-mrs" target="_blank">MRS BIDS</a></td>
+        <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/mrs/</i></td>
+    </tr>
+    <tr>
+        <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Derivatives</i></strong></td>
+        <td>MR Imaging</td>
+        <td><a href="../datacuration/derivatives" target="_blank">MRI Derivatives</a></td>
+        <td><i>derivatives/</i></td>
+    </tr>
+    <tr>
+        <td>MR Spectroscopy</td>
+        <td><a href="../datacuration/derivatives/#osprey-bids-osprey" target="_blank">OSPREY-BIDS</a></td>
+        <td><i>derivatives/osprey/</i></td>
+    </tr>
+    <tr>
+        <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+        <td>All</td>
+        <td style="word-wrap: break-word; white-space: normal;"><a href="mri/questionnaire" target="_blank">Pre-Scan Questionnaire</a></td>
+        <td><code>img_ra_prep</code></td>
+    </tr>
+  </tbody>
+  </table>
