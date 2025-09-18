@@ -1,8 +1,7 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
 # Household Chemical Exposures
-
-**Full Name**: Household Chemical Exposures       
+     
 **Table Name**: `sed_cg_hce`    
 **Construct:** Household Chemical Exposures   
 

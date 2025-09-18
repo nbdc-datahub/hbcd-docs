@@ -24,7 +24,7 @@ hbcd/
 |       |__ ses-<span class="label">&lt;label&gt;</span>/
 |           |__ eeg/*
 |
-|__ derivatives/        <span class="hashtag"># Derivatives (file-based data)</span>
+|__ derivatives/       <span class="hashtag"># Derivatives (file-based data)</span>
     |__ made/
 </pre>
 
