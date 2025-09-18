@@ -184,18 +184,18 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
     <td>Maternal & Child</td>
     <td style="word-wrap: break-word; white-space: normal;">GWAS, EWAS, Transcriptome</td>
-    <td><a href="../datacuration/concat" target="_blank">concatenated/genetics/</a></td>
+    <td><i>concatenated/genetics/</i></td>
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span></td>
-    <td>folder name alt style<br><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
+    <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
     <td>Maternal & Child</td>
     <td style="word-wrap: break-word; white-space: normal;">GWAS, EWAS, Transcriptome</td>
     <td><pre style="font-size: 12px;">
 hbcd/
 |__ concatenated/ 
-  |__ genetics/
-</pre>(<a href="../datacuration/concat" target="_blank"><i>see details</i>)</a>
+    |__ genetics/
+</pre>
     </td>
   </tr>
   </tbody>
@@ -731,77 +731,69 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><i class="fa-regular fa-lightbulb" style="margin-right:6px; color:#666;"></i> See <a href="eeg">EEG Overview</a> for additional details</p><br>
-<p><i class="fa-solid fa-folder-open" style="margin-right:6px; color:#666;"></i> File-Based Data</p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-<thead>
-  <tr>
-    <th style="width: 10%;">File-Based Data Type</th>
-    <th style="width: 40%;">Folder Name/Location</th>
-    <th style="width: 50%;">Link to Documentation</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td>Raw BIDS (All Tasks)</td>
-  <td><code>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/eeg/</code></td>
-  <td><a href="../datacuration/rawbids/#eeg" target="_blank">Raw File-Based BIDS Data → EEG</a></td>
-</tr>
-<tr>
-  <td>Derivatives (All Tasks)</td>
-  <td><code>derivatives/made/</code></td>
-  <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">Processed File-Based Derivative Data → HBCD-MADE</a></td>
-</tr>
-</tbody>
-</table>
-<p><i class="fa-solid fa-table" style="margin-right:6px; color:#666;"></i> Tabulated Data</p>
+<p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see <a href="eeg">EEG Overview page</a></strong></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 10%;">Task</th>
-      <th style="width: 40%;">Table Name</th>
-      <th style="width: 40%;">Description</th>
+      <th>Data Type</th>
+      <th>EEG Task</th>
+      <th><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table or <span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder Name</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2"><span class="tooltip tooltip-right"><a href="eeg/mmn" target="_blank">MMN</a><span class="tooltiptext">Auditory Mismatch Negativity</span></span></td>
-      <td><code>eeg_made_task-MMN_acq-eeg_preprocessingReport</code></td>
-      <td>MADE Preproc Report for MMN task</td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+      <td><a href="eeg/mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></td>
+      <td><code>eeg_made_task-MMN_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-MMN</code></td>
     </tr>
     <tr>
-      <td><code>eeg_qc_task-MMN</code></td>
-      <td>EEG QC for MMN task</td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+      <td><a href="eeg/faces" target="_blank">Faces (Face)</a></td>
+      <td><code>eeg_made_task-FACE_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-FACE</code></td>
     </tr>
     <tr>
-      <td rowspan="2"><a href="eeg/faces" target="_blank">Faces</a></td>
-      <td><code>eeg_made_task-FACE_acq-eeg_preprocessingReport</code></td>
-      <td>MADE Preproc Report for FACE task</td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+      <td><a href="eeg/videors" target="_blank">Video Resting State (RS)</a></td>
+      <td><code>eeg_made_task-RS_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-RS</code></td>
     </tr>
     <tr>
-      <td><code>eeg_qc_task-FACE</code></td>
-      <td>EEG QC for FACE task</td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+      <td><a href="eeg/vep" target="_blank">Visual Evoked Potential (VEP)</a></td>
+      <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-VEP</code></td>
     </tr>
     <tr>
-      <td rowspan="2"><span class="tooltip tooltip-right"><a href="eeg/videors" target="_blank">RS</a><span class="tooltiptext">Video Resting State</span></span></td>
-      <td><code>eeg_made_task-RS_acq-eeg_preprocessingReport</code></td>
-      <td>MADE Preproc Report for RS task</td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Raw BIDS</i></strong></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank">All Tasks</a></td>
+      <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/eeg/</i></td>
     </tr>
     <tr>
-      <td><code>eeg_qc_task-RS</code></td>
-      <td>EEG QC for RS task</td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>HBCD-MADE Derivatives</i></strong></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">All Tasks</a></td>
+      <td><i>derivatives/made/</i></td>
     </tr>
     <tr>
-      <td rowspan="2"><span class="tooltip tooltip-right"><a href="eeg/vep" target="_blank">VEP</a><span class="tooltiptext">Visual Evoked Potential</span></span></td>
-      <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code></td>
-      <td>MADE Preproc Report for VEP task</td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Raw BIDS</i></strong></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank">All Tasks</a></td>
+      <td>
+      <pre style="font-size: 12px;">
+hbcd/
+|__ rawdata/ 
+    |__ sub-<span class="label">&lt;label&gt;</span>/
+        |__ ses-<span class="label">&lt;label&gt;</span>/
+            |__ eeg/
+      </pre></td>
     </tr>
     <tr>
-      <td><code>eeg_qc_task-VEP</code></td>
-      <td>EEG QC for VEP task</td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>HBCD-MADE Derivatives</i></strong></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">All Tasks</a></td>
+      <td><pre style="font-size: 12px;">
+hbcd/
+|__ derivatives/ 
+    |__ made/
+      </pre></td>
     </tr>
   </tbody>
-</table>
+  </table>
 </div>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
