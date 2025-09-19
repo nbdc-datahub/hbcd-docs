@@ -40,6 +40,45 @@ Expand the sections below to see a list of measures associated with each domain 
   Expand All Sections ↕️
 </button>
 
+### Demographics & Visit Information
+
+<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-id-card"></i></span>
+  <span class="text-with-link">
+  <span class="text">Basic Demographics & Visit Info</span>
+  <a class="anchor-link" href="#demo" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th style="width: 5%;"></th>
+      <th style="width: 30%;">Instrument</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;"><span class="tooltip tooltip-left"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+    <td><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
+    <td>Demographics data derived from multiple sources</td>
+    <td><code>sed_basic_demographics</code></td>
+  </tr>
+    <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+    <td><a href="demo/visitinfo" target="_blank">Visit Information</a></td>
+    <td>Participant visit information</td>
+    <td><code>par_visit_data</code></td>
+  </tr>
+</tbody>
+</table>
+</div>
+
 ### Behavior, Biology, & Environment
 
 <div id="bcgi" class="table-banner" onclick="toggleCollapse(this)">
@@ -56,25 +95,30 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 20%;">Instrument</th>
+      <th style="width: 1%;"></th>
+      <th style="width: 30%;">Instrument</th>
       <th>Version</th>
       <th style="width: 50%;">Construct</th>
-      <th style="width: 10%;">Table Name</th>
+      <th style="width: 10%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td><a href="bcgi/ecpromis" target="_blank">ecPROMIS-Ch/CG Interaction</a></td>
     <td>&lt;1 year</td>
     <td>Child/Caregiver Relationship</td>
     <td><code>mh_cg_pms__cc__inf</code></td>
   </tr>
   <tr>
-    <td><a href="bcgi/ibqr" target="_blank">BQ (VSF)+BI</a></td>
-    <td>IBQ-R (VSF)+BI (<i>Infant</i>)</td>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">BQ (VSF)+BI</a></td>
+    <td>IBQ-R (VSF)+BI<br>(<i>Infant</i>)</td>
     <td style="word-wrap: break-word; white-space: normal;">Surgency/Extraversion, Negative Affectivity, Effortful Control, Behavioral Inhibition</td>
     <td><code>mh_cg_ibqr</code></td>
+  </tr>
   <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">MAPS-TL</a></td>
     <td>Infancy (< 1 year)</td>
     <td>Irritability</td>
@@ -98,24 +142,27 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
+      <th style="width: 1%;"></th>
       <th style="width: 10%;">Instrument</th>
       <th>Version</th>
-      <th style="width: 40%;">Construct</th>
-      <th style="width: 20%;">Table Name</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td style="text-align: left;"><a href="biospec/nails" target="_blank">Nails</a></td>
     <td style="text-align: left;">Maternal</td>
     <td style="text-align: left;">Drug, Environmental Exposure</td>
     <td style="text-align: left;"><code>bio_bm_biosample_nails_results</code><br><code>bio_bm_biosample_nails_type</code></td>
   </tr>
   <tr>
-      <td style="text-align: left;"><a href="biospec/urine" target="_blank">Urine</a></td>
-      <td style="text-align: left;">Maternal</td>
-      <td style="text-align: left;">Drug Panel, Toxins</td>
-      <td style="text-align: left;"><code>bio_bm_biosample_urine</code></td>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+    <td style="text-align: left;"><a href="biospec/urine" target="_blank">Urine</a></td>
+    <td style="text-align: left;">Maternal</td>
+    <td style="text-align: left;">Drug Panel, Toxins</td>
+    <td><code>bio_bm_biosample_urine</code></td>
   </tr>
   </tbody>
   </table>
@@ -135,77 +182,30 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
+       <th style="width: 1%;"></th>
       <th style="width: 10%;">Instrument</th>
       <th style="width: 10%;">Version</th>
-      <th style="width: 40%;">Construct</th>
-      <th style="width: 10%;">Table Name</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 20%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
     </tr>
   </thead>
   <tbody>
    <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="neurocog/mlds" target="_blank">MLDS</a></td>
       <td></td>
       <td>Multilingual exposure</td>
       <td><code>ncl_ch_mlds</code></td>
     </tr>
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="neurocog/spm2" target="_blank">SPM-2</a></td>
-      <td>Infant/Toddler</td>
-      <td>Sensory processing</td>
+      <td>Infant</td>
+      <td>Sensory Processing/Integration</td>
       <td><code>ncl_cg_spm2__inf</code></td>
     </tr>
   </tbody>
   </table>
-</div>
-
-<div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-microchip"></i></span>
-  <span class="text-with-link">
-  <span class="text">Novel Technologies & Wearable Sensors <span class="hint">(Primarily file-based data)</span></span>
-  <a class="anchor-link" href="#sensors" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><b>Tabulated Data</b></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 30%;">Instrument</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Names</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
-    <td>Motor behavior, physical activity, sleep</td>
-    <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
-  </tr>
-  </tbody>
-  </table>
-<p><span class="tooltip tooltip-right"><b>File-Based Data</b><span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> <b>From Wearable Sensors</b></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th>Sensor</th>
-      <th>Description</th>
-      <th><i class="fas fa-hammer"></i> Raw Data</th>
-      <th><i class="fas fa-cog"></i> Derivatives</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="sensors/wearsensors" target="_blank">Infant Leg Sensors</a></td>
-    <td>Motion/accelerometry data collected from wearable infant leg sensors</td>
-    <td><a href="../datacuration/rawbids/#motion"><code>motion/</code></a></td>
-    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion">HBCD-Motion</a></td>
-  </tr>
-  </tbody>
-  </thead>
-</table>
 </div>
 
 <div id="physhealth" class="table-banner" onclick="toggleCollapse(this)">
@@ -219,30 +219,38 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 30%;">Instrument</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Name</th>
+      <th style="width: 1%;"></th>
+      <th style="width: 25%;">Instrument</th>
+      <th style="width: 10%;">Version</th>
+      <th style="width: 25%;">Construct</th>
+      <th style="width: 25%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
-      <td>Nutrition</td>
-      <td><code>ph_cg_phx__bfh</code></td>
-    </tr>
-    <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
+      <td></td>
       <td>Food insecurity</td>
       <td><code>sed_cg_foodins</code></td>
     </tr>
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+      <td><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
+      <td></td>
+      <td>Nutrition</td>
+      <td><code>ph_cg_phx__bfh</code></td>
+    </tr>
+    <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
+      <td></td>
       <td>Growth</td>
       <td><code>ph_ch_anthro</code></td>
-  </tr> 
+    </tr> 
   </tbody>
   </table>
 </div>
@@ -261,104 +269,118 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
 <thead>
 <tr>
-    <th style="width: 5%;">Instrument</th>
-    <th style="width: 5%;">Version</th>
-    <th style="width: 30%;">Construct</th>
-    <th style="width: 10%;">Table Name</th>
+  <th style="width: 1%;"></th>
+  <th style="width: 5%;">Instrument</th>
+  <th style="width: 1%;">Ver</th>
+  <th style="width: 20%;">Construct</th>
+  <th style="width: 10%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
 </tr>
 </thead>
 <tbody>
 <!-- Pregnancy & Infant Health -->
 <tr class="section-health">
-  <td colspan="4" class="subsection-header">
+  <td colspan="5" class="subsection-header">
     <i style="color: #3e3e3e;" class="fa-solid fa-baby"></i> <strong>&nbsp;&nbsp;Pregnancy & Infant Health</strong>
   </td>
 </tr>
 <tr class="section-health">
-    <td><a href="pregexp/pex" target="_blank">Health V1- Health History</a></td>
-    <td></td>
-    <td>Pre-pregnancy and pregnancy health</td>
-    <td><code>pex_bm_health_preg__healthhx</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/preghealth/healthhx" target="_blank">Health V1-Health History</a></td>
+  <td></td>
+  <td>Pre-pregnancy and pregnancy health</td>
+  <td><code>pex_bm_health_preg__healthhx</code></td>
 </tr>
 <tr class="section-health">
-    <td><a href="pregexp/pex" target="_blank">Health V1- Exposures & Vaccines</a></td>
-    <td></td>
-    <td>Vaccines in pregnancy</td>
-    <td><code>pex_bm_health_preg__exp__vacc</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/preghealth/vacc" target="_blank">Health V1-Exp & Vaccines</a></td>
+  <td></td>
+  <td>Vaccines in pregnancy</td>
+  <td><code>pex_bm_health_preg__exp__vacc</code></td>
 </tr>
 <tr class="section-health">
-    <td><a href="pregexp/pex" target="_blank">Health V1- Chronic Conditions</a></td>
-    <td></td>
-    <td>Chronic conditions/STIs in pregnancy</td>
-    <td><code>pex_bm_health_preg__chroncond</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/preghealth/chronconditions" target="_blank">Health V1-Chronic Conditions</a></td>
+  <td></td>
+  <td>Chronic conditions/STIs in pregnancy</td>
+  <td><code>pex_bm_health_preg__chroncond</code></td>
 </tr>
 <tr class="section-health">
-    <td><a href="pregexp/pex" target="_blank">Health V1- Illness</a></td>
-    <td></td>
-    <td>Illness in pregnancy</td>
-    <td><code>pex_bm_health_preg__illness</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/preghealth/illness" target="_blank">Health V1-Illness</a></td>
+  <td></td>
+  <td>Illness in pregnancy</td>
+  <td><code>pex_bm_health_preg__illness</code></td>
 </tr>
 <tr class="section-health">
-    <td><a href="pregexp/pex" target="_blank">Health V1- ER Admissions</a></td>
-    <td></td>
-    <td>ER visit or hospitalization in pregnancy</td>
-    <td><code>pex_bm_health_preg__erhosp</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/preghealth/er-hosp" target="_blank">Health V1-ER Admissions</a></td>
+  <td></td>
+  <td>ER visit or hospitalization in pregnancy</td>
+  <td><code>pex_bm_health_preg__erhosp</code></td>
 </tr>
 <tr class="section-health">
-    <td><a href="pregexp/pex" target="_blank">Health V1- Medications</a></td>
-    <td></td>
-    <td>Medications in pregnancy</td>
-    <td><code>pex_bm_health_preg__meds</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/preghealth/medications" target="_blank">Health V1-Medications</a></td>
+  <td></td>
+  <td>Medications in pregnancy</td>
+  <td><code>pex_bm_health_preg__meds</code></td>
 </tr>
 <tr class="section-health">
-    <td><a href="pregexp/pex" target="_blank">Health V2- Pregnancy</a></td>
-    <td></td>
-    <td>Health updates up to delivery</td>
-    <td><code>pex_bm_healthv2_preg</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/preghealth/end-preg" target="_blank">Health V2-Pregnancy</a></td>
+  <td></td>
+  <td>Health updates up to delivery</td>
+  <td><code>pex_bm_healthv2_preg</code></td>
 </tr>
 <tr class="section-health">
-    <td><a href="pregexp/pex" target="_blank">Health V2- Infancy</a></td>
-    <td></td>
-    <td>Delivery and birth outcomes</td>
-    <td><code>pex_bm_healthv2_inf</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/preghealth/infanthealth" target="_blank">Health V2-Infancy</a></td>
+  <td></td>
+  <td>Delivery and birth outcomes</td>
+  <td><code>pex_bm_healthv2_inf</code></td>
 </tr>
 <!-- Mental Health -->
 <tr class="section-mh">
-  <td colspan="4" class="subsection-header">
+  <td colspan="5" class="subsection-header">
     <i style="color: #3e3e3e;" class="fas fa-brain"></i> <strong style="color: #3e3e3e;">&nbsp;&nbsp;Mental Health</strong>
   </td>
 </tr>
 <tr class="section-mh">
-    <td><a href="pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
-    <td></td>
-    <td>Personal and family mental health</td>
-    <td><code>pex_bm_psych</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
+  <td></td>
+  <td>Personal and family mental health</td>
+  <td><code>pex_bm_psych</code></td>
 </tr>
 <tr class="section-mh">
-    <td><a href="pregexp/mh/apa12" target="_blank">APA 1/2</a></td>
-    <td></td>
-    <td>Mental Health</td>
-    <td><code>pex_bm_apa</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/mh/apa12" target="_blank">APA 1/2</a></td>
+  <td></td>
+  <td>Mental Health</td>
+  <td><code>pex_bm_apa</code></td>
 </tr>
 <tr class="section-mh">
-    <td><a href="pregexp/mh/ptsd" target="_blank">DSM5 Acute Stress or PTSD</a></td>
-    <td></td>
-    <td>PTSD/acute stress symptom severity</td>
-    <td><code>pex_bm_str__ptsd</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/mh/ptsd" target="_blank">DSM5 Acute Stress or PTSD</a></td>
+  <td></td>
+  <td>PTSD/acute stress symptom severity</td>
+  <td><code>pex_bm_str__ptsd</code></td>
 </tr>
 <tr class="section-mh">
-    <td><a href="pregexp/mh/epds" target="_blank">EPDS</a></td>
-    <td></td>
-    <td>Postnatal depression</td>
-    <td><code>pex_bm_epds</code></td>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td><a href="pregexp/mh/epds" target="_blank">EPDS</a></td>
+  <td></td>
+  <td>Postnatal depression</td>
+  <td><code>pex_bm_epds</code></td>
 </tr>
 <!-- Substance Use -->
 <tr class="section-su">
-  <td colspan="4" class="subsection-header">
+  <td colspan="5" class="subsection-header">
     <i style="color: #3e3e3e;" class="fa-solid fa-prescription-bottle"></i> <strong style="color: #3e3e3e;">&nbsp;&nbsp;Substance Use</strong>
   </td>
 </tr>
 <tr class="section-su">
+  <td rowspan="3"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td rowspan="3"><a href="pregexp/su/assist" target="_blank">ASSIST</a></td>
   <td>V1</td>
   <td>Substance use before & during pregnancy</td>
@@ -371,13 +393,14 @@ Expand the sections below to see a list of measures associated with each domain 
 </tr>
 <tr class="section-su">
   <td>V3</td>
-  <td>Substance use post-pregnancy</td>
+  <td>SU after pregnancy (3 mo anchors)</td>
   <td><code>pex_bm_assistv3</code></td>
 </tr>
 <tr class="section-su">
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/su/tlfb" target="_blank">TLFB</a></td>
   <td></td>
-  <td>Substance use before and during pregnancy</td>
+  <td>Substance use before & during pregnancy</td>
   <td><code>pex_ch_tlfb</code></td>
 </tr>
 </tbody>
@@ -398,186 +421,68 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th>Instrument</th>
+      <th style="width: 1%;"></th>
+      <th style="width: 15%;">Instrument</th>
       <th>Version</th>
       <th style="width: 60%;">Construct</th>
-      <th>Table Name</th>
+      <th style="width: 30%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
     </tr>
   </thead>
-  <tbody> 
+  <tbody>
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="SED/bfy" target="_blank">BFY</a></td>
       <td></td>
       <td>Benefits/Services/Economic Stress</td>
       <td><code>sed_bm_bfy</code></td>
     </tr>
     <tr>
-      <td><a href="SED/v01-demo" target="_blank">HBCD Demographics</a></td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+      <td><a href="SED/demo-cg" target="_blank">HBCD Demographics</a></td>
       <td>V1</td>
       <td>Demographics (Adult Visit 1)</td>
       <td><code>sed_bm_demo</code></td>
-    </tr>  
+    </tr> 
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="SED/ehits" target="_blank">eHITS</a></td>
       <td></td>
       <td>Intimate Partner Violence</td>
       <td><code>sed_bm_ehits</code></td>
-    </tr>    
+    </tr>  
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="SED/safety" target="_blank">Neighborhood Safety</a></td>
       <td></td>
       <td>Neighborhood Safety</td>
       <td><code>sed_bm_nbhsaf</code></td>
     </tr> 
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="SED/paces" target="_blank">PACES</a></td>
-      <td></td>
+      <td>&lt;18</td>
       <td>Protective Factors</td>
       <td><code>sed_bm_paces</code></td>
     </tr>
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="SED/promis" target="_blank">PROMIS</a></td>
       <td></td>
       <td>Perceived Stress/Social Support</td>
       <td><code>sed_bm_strsup</code></td>
     </tr>      
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="SED/discr" target="_blank">Unfair Treatment</a></td>
       <td></td>
       <td>Experiences of Unfair Treatment</td>
       <td><code>sed_bm_phx__discr</code></td>
-    </tr>           
+    </tr>       
   </tbody>
   </table>
-  </div>
-
-### Brain Activity - MRI & EEG
-
-<div id="mri" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-magnet"></i></span>
-  <span class="text-with-link">
-    <span class="text">MRI & MRS</span>
-    <a class="anchor-link" href="#mri" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-  <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-  <p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see 
-    <a href="mri">Overview & MRI Protocols</a> and 
-    <a href="mri/qc"> HBCD MR Quality Control Procedures</a></strong>
-  </p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <!-- First header row -->
-    <tr>
-      <th style="width: 15%;" rowspan="2">Name</th>
-      <th style="width: 20%; text-align: center;" colspan="2"><span class="tooltip tooltip-right">File-Based Data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span></th>
-      <th style="width: 60%;" rowspan="2">Table Name(s)</th>
-    </tr>
-    <!-- Second header row -->
-    <tr>
-      <th style="width: 20%;">
-        <i class="fas fa-hammer"></i> Raw Data
-      </th>
-      <th style="width: 20%;">
-        <i class="fas fa-cog"></i> Derivatives
-      </th>
-    </tr>
-  </thead>
-    <tbody>
-    <!-- sMRI -->
-    <tr>
-    <td><span class="tooltip tooltip-right"><a href="mri/smri" target="_blank">sMRI</a><span class="tooltiptext">Structural MRI</span></span></td>
-    <td><a href="../datacuration/rawbids/#anatomical-anat" target="_blank"><code>anat/</code></a></td>
-    <td>
-        • <a href="../datacuration/derivatives/#bibsnet-bibsnet" target="_blank">BIBSNet</a><br>
-        • <a href="../datacuration/derivatives/#mriqc-mriqc" target="_blank">MRIQC</a><br>
-        • <a href="../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank">Infant-fMRIPrep</a><br>
-        • <a href="../datacuration/derivatives/#xcp-d-xcp_d" target="_blank">XCP-D</a>
-    </td>
-    <td><code>img_brainswipes_xcpd-T2w</code><br>
-        <code>img_mriqc_<span class="blue-text">&lt;T1w|T2w&gt;</span></code><br>
-        <code>img_bibsnet_space-<span class="blue-text">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes</code><br>
-        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-A&gt;</span>_stat-mean_desc-curv_morph</code><br>
-        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-A&gt;</span>_stat-mean_desc-sulc_morph</code><br>
-        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-A&gt;</span>_stat-mean_desc-thickness_morph</code>
-    </td>
-    </tr>
-    <!-- fMRI -->
-    <tr>
-    <td><span class="tooltip tooltip-right"><a href="mri/fmri" target="_blank">fMRI</a>
-    <span class="tooltiptext">Functional MRI</span>
-    </span>
-    </td>
-    <td>
-        • <a href="../datacuration/rawbids/#functional-func-and-fieldmaps-fmap" target="_blank"><code>func/</code></a><br>
-        • <a href="../datacuration/rawbids/#functional-func-and-fieldmaps-fmap" target="_blank"><code>fmap/</code></a>
-    </td>
-    <td>
-        • <a href="../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank">Infant-fMRIPrep</a><br>
-        • <a href="../datacuration/derivatives/#xcp-d-xcp_d" target="_blank">XCP-D</a>
-    </td>
-    <td><code>img_brainswipes_xcpd-bold</code><br>
-        <code>img_mriqc_bold</code><br>
-        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-F&gt;</span>_stat-alff_bold</code><br>
-        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-F&gt;</span>_stat-coverage_bold</code><br>
-        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;SEG-F&gt;</span>_stat-reho_bold</code>
-    </td></tr>
-    <!-- dMRI -->
-    <tr>
-    <td>
-        <a href="mri/dmri" target="_blank">dMRI</a>
-    </td>
-    <td><a href="../datacuration/rawbids/#diffusion-dwi" target="_blank"><code>dwi/</code></a></td>
-    <td>
-        • <a href="../datacuration/derivatives/#qsiprep-qsiprep" target="_blank">QSIPrep</a><br>
-        • <a href="../datacuration/derivatives/#qsirecon" target="_blank">QSIRecon</a>
-    </td>
-    <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
-    </tr>
-    <!-- qMRI -->
-    <tr>
-    <td>
-        <a href="mri/qmri" target="_blank">qMRI</a>
-    </td>
-    <td><code>anat/</code></td>
-    <td>
-        • <a href="../datacuration/derivatives/#symri-symri" target="_blank">SyMRI</a><br>
-        • <a href="../datacuration/derivatives/#qmri-postproc-qmri_postproc" target="_blank">qMRI Postproc</a>
-    </td>
-    <td>N/A</td>
-    </tr>
-    <!-- MRS -->
-    <tr>
-    <td><a href="mri/mrs" target="_blank">MRS</a></td>
-    <td><code>mrs/</code></td>
-    <td><a href="../datacuration/derivatives/#osprey-bids-osprey" target="_blank">OSPREY-BIDS</a></td>
-    <td>
-        <code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code>
-        <code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
-        <code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
-        <code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_CSFWaterScaled_Voxel_1_Basis_1</code><br>
-        <code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_TissCorrWaterScaled_Voxel_1_Basis_1</code><br>
-        <code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_rawWaterScaled_Voxel_1_Basis_1</code><br>
-        <code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_amplMets_Voxel_1_Basis_1</code><br>
-        <code>img_osprey_<span class="blue-text">&lt;PROC&gt;</span>_tCr_Voxel_1_Basis_1</code><br>
-        <code>img_osprey_HERCULES_qm_processed_spectra</code><br>
-        <code>img_osprey_unedited_qm_processed_spectra</code>
-    </td>
-    </tr>
-</tbody>
-</table>
-<details open>
-<summary>Label Values Legend</summary>
-<p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
-  <b style="color: #0077cc;">SEG-A</b>: 4S{1-10}00Parcels, Glasser, Gordon, MIDB, MyersLabonte<br>
-  <b style="color: #0077cc;">SEG-F</b>: 4S{1-10}00Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian<br>
-  <b style="color: #0077cc;">PROC</b>: HERCULES_diff1, HERCULES_diff2, HERCULES_sum, unedited_A
-</p>
-</details>
-</div>
+
+### Brain Activity & Biosensors
 
 <div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-bolt"></i></span>
@@ -590,67 +495,191 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see <a href="eeg">Overview & Quality Control</a></strong></p>
+<p><span class="emoji"><i class="fa-regular fa-lightbulb"  style="font-size: 16px;"></i></span> <strong style="font-size: 16px;"> See <a href="eeg">EEG Overview page</strong></a></p>
+<br>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
-    <!-- First header row -->
     <tr>
-      <th style="width: 30%;" rowspan="2">Task</th>
-      <th style="width: 40%; text-align: center;" colspan="2">
-        <span class="tooltip tooltip-right">
-          File-Based Data
-          <span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span>
-        </span>
-      </th>
-      <th style="width: 40%;" rowspan="2">Table Names</th>
-    </tr>
-    <!-- Second header row -->
-    <tr>
-      <th style="width: 10%;">
-        <i class="fas fa-hammer"></i> Raw BIDS
-      </th>
-      <th style="width: 10%;">
-        <i class="fas fa-cog"></i> Derivatives
-      </th>
+      <th></th>
+      <th style="width: 40%;">EEG Task</th>
+      <th style="width: 60%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-left"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="eeg/mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></td>
-      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
-      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
       <td><code>eeg_made_task-MMN_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-MMN</code></td>
     </tr>
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="eeg/faces" target="_blank">Faces (Face)</a></td>
-      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
-      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
       <td><code>eeg_made_task-FACE_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-FACE</code></td>
     </tr>
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="eeg/videors" target="_blank">Video Resting State (RS)</a></td>
-      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
-      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
       <td><code>eeg_made_task-RS_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-RS</code></td>
     </tr>
     <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="eeg/vep" target="_blank">Visual Evoked Potential (VEP)</a></td>
-      <td><a href="../datacuration/rawbids/#eeg" target="_blank"><code>eeg/</code></a></td>
-      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">HBCD-MADE</a></td>
-      <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code><br>
-          <code>eeg_qc_task-VEP</code></td>
+      <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-VEP</code></td>
+    </tr>
+    <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
+      <td><a href="../datacuration/rawbids/#eeg" target="_blank">All Tasks - <strong><i>Raw BIDS</i></strong></a></td>
+      <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/eeg/</i></td>
+    </tr>
+    <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
+      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">All Tasks - <strong><i>HBCD-MADE Derivatives</i></strong></a></td>
+      <td><i>derivatives/made/</i></td>
     </tr>
   </tbody>
 </table>
-  </div>
+</div>
 
-### Demographics & Visit Information
-
-<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-id-card"></i></span>
+<div id="mri" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-magnet"></i></span>
   <span class="text-with-link">
-  <span class="text">Basic Demographics & Visit Info</span>
-  <a class="anchor-link" href="#demo" title="Copy link">
+    <span class="text">MRI & MRS</span>
+    <a class="anchor-link" href="#mri" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><span class="emoji"><i class="fa-regular fa-lightbulb"  style="font-size: 16px;"></i></span> <strong style="font-size: 16px;">See MR <a href="mri">Overview</a> and <a href="mri/qc">Quality Control Procedures</a></strong></p>
+<br><br>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+    <th colspan="5" style="font-size: 16px;">Tabulated Data Only</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th style="width: 10%;">Modality</th>
+      <th style="width: 30%;">Name</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;">Table Name</th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+      <td>sMRI</td>
+      <td><a href="mri/qc/#brainswipes" target="_blank">BrainSwipes Quality Control</a></td>
+      <td>Manual QC of XCP-D Outputs</td>
+      <td><code>img_brainswipes_xcpd-T2w</code><br>
+    </tr>
+        <tr>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+      <td>fMRI</td>
+      <td><a href="mri/qc/#brainswipes" target="_blank">BrainSwipes Quality Control</a></td>
+      <td>Manual QC of XCP-D Outputs</td>
+      <td><code>img_brainswipes_xcpd-bold</code><br>
+    </tr>
+</tbody>
+</table>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
+  <thead>
+  <tr>
+    <th colspan="4" style="font-size: 16px;">File-Based and Derived Tabulated Data</th>
+  </tr>
+    <tr>
+      <th style="width: 10%;">Modality</th>
+      <th style="width: 10%;"><a href="../datacuration/rawbids" target="_blank"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Raw BIDS</a></th>
+      <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> <a href="../datacuration/derivatives" target="_blank">Derivatives</a> [Source <a href="processing" target="_blank">Pipeline</a>]</th>
+      <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Tables Derived from Pipeline Derivatives</th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr>
+      <td rowspan="4"><span class="tooltip tooltip-right"><a href="mri/smri" target="_blank">sMRI</a><span class="tooltiptext">Structural MRI</span></span></td>
+      <td rowspan="4"><i>anat/</i></td>
+      <td><i>bibsnet/</i> [<a href="../datacuration/derivatives/#bibsnet-bibsnet" target="_blank">BIBSNet</a>]</td>
+      <td><code>img_bibsnet_space-<span class="blue-text">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes</code></td>
+    </tr>
+    <tr>
+      <td><i>mriqc/</i> [<a href="../datacuration/derivatives/#mriqc-mriqc" target="_blank">MRIQC</a>]</td>
+      <td><code>img_mriqc_<span class="blue-text">&lt;T1w|T2w&gt;</span></code></td>
+    </tr>
+    <tr>
+      <td><i>nibabies/</i> [<a href="../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank">Infant-fMRIPrep</a>]</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><i>xcp_d/</i> [<a href="../datacuration/derivatives/#xcp-d-xcp_d" target="_blank">XCP-D</a>]</td>
+      <td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph</code><br>
+        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-sulc_morph</code><br>
+        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-thickness_morph</code>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="3"><span class="tooltip tooltip-right"><a href="mri/fmri" target="_blank">fMRI</a><span class="tooltiptext">Functional MRI</span></span></td>
+      <td rowspan="3"><i>func/</i></td>
+      <td><i>mriqc/</i> [<a href="../datacuration/derivatives/#mriqc-mriqc" target="_blank">MRIQC</a>]</td>
+      <td><code>img_mriqc_bold</code></td>
+    </tr>
+    <tr>
+      <td><i>nibabies/</i> [<a href="../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank">Infant-fMRIPrep</a>]</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><i>xcp_d/</i> [<a href="../datacuration/derivatives/#xcp-d-xcp_d" target="_blank">XCP-D</a>]</td>
+      <td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-alff_bold</code><br>
+        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-coverage_bold</code><br>
+        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-reho_bold</code>
+      </td>
+    </tr>
+    <tr>
+      <td><span class="tooltip tooltip-right"><a href="mri/qmri" target="_blank">qMRI</a><span class="tooltiptext">Quantitative MRI</span></span></td>      <td><i>anat/</i></td>
+      <td><i>qmri_postproc/</i> [<a href="../datacuration/derivatives/#qmri-postproc-qmri_postproc" target="_blank">qMRI Postproc</a>]</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><span class="tooltip tooltip-right"><a href="mri/dmri" target="_blank">dMRI</a><span class="tooltiptext">Diffusion MRI</span></span></td>
+      <td rowspan="2"><i>dwi/</i></td>
+      <td><i>qsiprep/</i> [<a href="../datacuration/derivatives/#qsiprep-qsiprep" target="_blank">QSIPrep</a>]</td>
+      <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
+    </tr>
+    <tr>
+      <td><i>qsirecon*/</i> [<a href="../datacuration/derivatives/#qsirecon" target="_blank">QSIRecon</a>]</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><span class="tooltip tooltip-right"><a href="mri/mrs" target="_blank">MRS</a><span class="tooltiptext">MR Spectroscopy</span></span></td>      <td><i>mrs/</i></td>
+      <td><i>osprey/</i> [<a href="../datacuration/derivatives/#osprey-bids-osprey" target="_blank">OSPREY-BIDS</a>]</td>
+      <td>
+        <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
+        <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
+        <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_CSFWaterScaled_Voxel_1_Basis_1</code><br>
+        <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_TissCorrWaterScaled_Voxel_1_Basis_1</code><br>
+        <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_rawWaterScaled_Voxel_1_Basis_1</code><br>
+        <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_amplMets_Voxel_1_Basis_1</code><br>
+        <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_tCr_Voxel_1_Basis_1</code><br>
+        <code>img_osprey_HERCULES_qm_processed_spectra</code><br>
+        <code>img_osprey_unedited_qm_processed_spectra</code>
+      </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <strong>Label Values Legend</strong><br>
+      <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations): 4S-{1-10}56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)<br>
+      <b style="color: #0077cc;">&lt;Q&gt;</b> (quantification method): HERCULES_diff1, HERCULES_diff2, HERCULES_sum, unedited_A
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-microchip"></i></span>
+  <span class="text-with-link">
+  <span class="text">Novel Technologies & Wearable Sensors</span>
+  <a class="anchor-link" href="#sensors" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -660,24 +689,30 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 20%;">Instrument</th>
-      <th>Version</th>
+      <th style="width: 1%;">Sensor</th>
+      <th style="width: 1%;"></th>
+      <th style="width: 30%;">Data Type</th>
       <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Name</th>
+      <th style="width: 30%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-left"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-    <td><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
-    <td><i>NA</i></td>
-    <td>Demographics data derived from multiple sources</td>
-    <td><code>sed_basic_demographics</code></td>
+    <td rowspan="3">Infant Leg Motion</td>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+    <td><a href="sensors/questionnaire" target="_blank">Questionnaire 1/2/3</a></td>
+    <td rowspan="3">Motor Development,<br>Regulation (Sleep/Wake)</td>
+    <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
   </tr>
-    <tr>
-    <td><a href="demo/visitinfo" target="_blank">Visit Information</a></td>
-    <td><i>NA</i></td>
-    <td>Participant visit information</td>
-    <td><code>par_visit_data</code></td>
+  <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
+    <td><a href="../datacuration/rawbids/#motion" target="_blank">Raw BIDS</a></td>
+    <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/motion/</i></td>
+  </tr>
+  <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
+    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion" target="_blank">Derivatives</a></td>
+    <td><i>derivatives/hbcd-motion/</i></td>
   </tr>
   </tbody>
   </table>
