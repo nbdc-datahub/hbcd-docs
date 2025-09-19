@@ -1,23 +1,9 @@
-# Basic Demographics Information
+# Basic Demographics Information 
 
-**Full Name**: Basic Demographics Information     
-**Alternative/Short Name**: Basic Demographics             
-**Table Name**: `sed_basic_demographics`    
-
-<p>
-<div id="faq-access" class="notification-banner static-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-    <span class="text">Basic Demographics is a <i>derived measure</i> computed from multiple sources. See <a href="../../SED/v01-demo">V01 Demographics</a> for full information.</span>
-</div>
-</p>
+> <span><i class="fa fa-table"></i></span> **Table Name:** `sed_basic_demographics`
 
 
-Basic Demographics is derived information computed from: 
 
-- A subset of **V01 Demographics** (`sed_bm_demo`) Social & Environmental Determinants domain instrument variables 
-- **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
-
-Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.). *However*, if only V01 data for a given participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about the child will be missing, as the child is not born until after the V01 visit (all variables about the child are available beginning with V02).
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -52,6 +38,23 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#basic-demographics" target="_blank">see details</a>.</span>
 </div>
+
+## Details
+
+<p>
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">Basic Demographics is a <a href="../../../access/metadata/#exceptions-derived" target="_blank">derived table</a>. See <a href="../../SED/v01-demo" target="_blank">V01 Demographics</a> for full demographics information.</span>
+</div>
+</p>
+
+Basic Demographics is a **derived measure** with information computed from: 
+
+- A subset of **V01 Demographics** (`sed_bm_demo`) Social & Environmental Determinants domain instrument variables 
+- **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
+
+Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.). *However*, if only V01 data for a given participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about the child will be missing, as the child is not born until after the V01 visit (all variables about the child are available beginning with V02).
+
 
 ## Variable Logic & Definitions
 

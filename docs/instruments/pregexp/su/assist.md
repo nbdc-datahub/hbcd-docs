@@ -1,14 +1,20 @@
-# ASSIST
+# ASSIST 
 
-**Full Name**: Alcohol, Smoking and Substance Involvement Screening Test V1.0, V2.0, and V3.0                            
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
+</div>
+<p></p>
+
+**Full Name**: Alcohol, Smoking and Substance Involvement Screening Test                            
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-<tr>
-<td>&nbsp;</td>
-<td style="text-align: center;"><b>Construct</b></td>
-<td style="text-align: center;"><b>Table Name</b></td>
-</tr>
+  <tr>
+    <th>Version</th>
+    <th>Construct</th>
+    <th>Table Name</th>
+  </tr>
 </thead>
 <tbody>
 <tr><td><strong>ASSIST V1</strong></td>
@@ -75,7 +81,7 @@
 
 ## Instrument Details
 
-The HBCD ASSIST V1, V2, and V3 measures were modified from the [NIDA Quick Screen (Modified ASSIST)](https://nida.nih.gov/sites/default/files/pdf/nmassist.pdf) and included questions from the Family History Assessment Module (FHAM) and the All of Us Personal and Family Health History. The original NIDA quick screen was scored; however, our version is not scored. To acknowledge these changes in future publications, authors can note that questions were motivated from the NIDA Modified ASSIST.
+The **HBCD ASSIST V1, V2, and V3** were modified from the [NIDA Quick Screen (Modified ASSIST)](https://nida.nih.gov/sites/default/files/pdf/nmassist.pdf) and included questions from the Family History Assessment Module (FHAM) and the All of Us Personal and Family Health History. The original NIDA quick screen was scored; however, our version is not scored. To acknowledge these changes in future publications, authors can note that questions were motivated from the NIDA Modified ASSIST.
 
 The NIDA quick screen tool (*have you used alcohol, tobacco, prescription drugs, or illegal drugs in the last year*) was modified to assess more details regarding types of substances used and the timeline of use before and during pregnancy - see [HBCD Modification Details](#hbcd-mod) for modifications made to each instrument version. In addition, for lifetime and problematic use, and use pre-pregnancy, pregnancy, end-pregnancy, post-pregnancy, and past 3 months, use was greatly expanded - see [Expanded ASSIST Substance Type Options](#substance-options).
 

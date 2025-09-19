@@ -1,12 +1,14 @@
 # Visit Information
-      
-**Table Name**: `par_visit_data`       
+
+> <span><i class="fa fa-table"></i></span> **Table Name:** `par_visit_data`
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#visit-information" target="_blank">see details</a>.</span>
 </div>
 <p></p>
+
+## Details
 
 Visit information contains all participant visit data, including:
 
