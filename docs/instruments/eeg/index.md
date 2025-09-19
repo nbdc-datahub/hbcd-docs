@@ -1,9 +1,13 @@
-# Electroencephalography (EEG)
+# Electroencephalography 
 
-EEG tasks are acquired during visits V03, V04, and V06. For full details on the HBCD EEG protocol, please refer to [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) published in the Developmental Cognitive Neuroscience special issue on HBCD. 
+HBCD includes four electroencephalography (EEG) tasks acquired during visits V03, V04, and V06 - click to be directed to task documentation pages:
 
-![](images/EEG-Parameters.png)
-*Source: [HBCD Study Protocols - EEG](https://hbcdstudy.org/wp-content/uploads/2023/06/EEG-Parameters.pdf)*
+<ul>
+<li><a href="mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></li>
+<li><a href="faces" target="_blank">Faces (FACE)</a></li>
+<li><a href="dmri" target="_blank">Video Resting State (RS)</a></li>
+<li><a href="vep" target="_blank">Visual Evoked Potential (VEP)</a></li>
+</ul>
 
 ## Release Data
 
@@ -59,35 +63,38 @@ The video content for the Resting State task and interstimulus interval (ISI) fo
 
 <p></p>
 
-EEG data in the release includes <span class="tooltip">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> (see table names listed [here](../index.md#eeg)) and the following <span class="tooltip">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span>:
+EEG data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data:
 
-- <i class="fa fa-hammer"></i><strong> Raw BIDS</strong> under subject- and session-specific <code>eeg/</code> folders - <a href="../../../datacuration/rawbids/#eeg">see details</a>
-- <i class="fas fa-cog"></i><strong> Derivatives</strong> produced by the HBCD-MADE pipeline under <code>made/</code> - <a href="../../../datacuration/derivatives/#hbcd-made-made">see details</a>
+- <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#eeg" target="_blank">Raw BIDS</a> under subject- and session-specific <code>eeg/</code> folders (*file-based data*)
+- <i class="fas fa-cog"></i> <a href="../../../datacuration/derivatives/#hbcd-made-made" target="_blank">Derivatives</a> processed through the HBCD-MADE pipeline under <code>made/</code> (*file-based data*)
+- <i class="fas fa-table"></i> <a href="../../../datacuration/phenotypes" target="_blank">Tabulated</a> data tables derived from the HBCD-MADE pipeline derivatives
 
-*HBCD data structure summary with only EEG data included:*
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
-|   |__ phenotype/     <span class="hashtag"># Tabulated Data</span>
-|   |   |__ eeg_made_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_preprocessingReport.*
-|   |   |__ eeg_qc_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>.*
 |   |
-|   |__ sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw BIDS (file-based data)</span>
+| <span class="hashtag"># Tabulated Data</span>
+|   |__ phenotype/    
+|   |   |__ eeg_made_task-<span class="placeholder">&lt;TASK&gt;</span>_acq-eeg_preprocessingReport.*
+|   |   |__ eeg_qc_task-<span class="placeholder">&lt;TASK&gt;</span>.*
+|   |
+| <span class="hashtag"># Raw BIDS (file-based data)</span>
+|   |__ sub-<span class="label">&lt;label&gt;</span>/   
 |       |__ ses-<span class="label">&lt;label&gt;</span>/
-|           |__ eeg/*
+|           |__ eeg/
 |
-|__ derivatives/        <span class="hashtag"># Derivatives (file-based data)</span>
+| <span class="hashtag"># Derivatives (file-based data)</span>
+|__ derivatives/       
     |__ made/
-</pre>
+</pre> 
+<small><b style="color: #0077cc;">&lt;TASK&gt;</b> label values: FACE, MMN, RS, VEP</small>
 
-<p>
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    See <a href="../../../datacuration/overview/">here</a> for overview of tabulated vs file-based data.
-  </span>
-</div>
-</p>
+## EEG Protocols
+
+For full details on the HBCD EEG protocol, please refer to [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) published in the Developmental Cognitive Neuroscience special issue on HBCD.
+
+![](images/EEG-Parameters.png)
+*Source: [HBCD Study Protocols - EEG](https://hbcdstudy.org/wp-content/uploads/2023/06/EEG-Parameters.pdf)*
 
 ## Quality Control    
 After EEG acquisition, quality control checks are performed using [EEG2BIDS Wizard](https://github.com/aces/eeg2bids), a custom MATLAB application installed at all HBCD sites. These checks are immediately provided to the user to ensure the data's integrity and usability. The process includes:

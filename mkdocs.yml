@@ -115,8 +115,8 @@ nav:
     - Brain Activity & Biosensors:
         - Electroencephalography:
             - Overview & Quality Control: instruments/eeg/index.md
-            - Faces Task: instruments/eeg/faces.md
             - Auditory Mismatch Negativity Task: instruments/eeg/mmn.md
+            - Faces Task: instruments/eeg/faces.md
             - Video Resting State Task: instruments/eeg/videors.md
             - Visual Evoked Potential Task: instruments/eeg/vep.md
         - Magnetic Resonance Imaging:

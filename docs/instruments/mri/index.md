@@ -1,6 +1,6 @@
 # Magnetic Resonance Imaging & Spectroscopy
 
-HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy (MRS)** data measures acquired as part of a comprehensive pediatric neuroimaging protocol, meticulously designed to overcome technical challenges of imaging early in life. MR data are acquired during visits V02, V03, V04, and V06 across all 27 Study recruitment sites. Please see [Quality Control Procedures](qc.md) for a detailed information on MR QC and the following sections for a summary of each modality:
+HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy (MRS)** data measures acquired as part of a comprehensive pediatric neuroimaging protocol, meticulously designed to overcome technical challenges of imaging early in life. MR data are acquired during visits V02, V03, V04, and V06 across all 27 Study recruitment sites. MR modalities include the following - click to be directed to modality documentation pages:
 
 <ul>
 <li><a href="smri" target="_blank">Structural MRI (sMRI)</a></li>
@@ -11,27 +11,31 @@ HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy
 </ul>
 
 ## Release Data
-MRI and MRS data in the release includes <span class="tooltip">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> (see table names listed [here](../index.md#mri)) and the following <span class="tooltip">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span>:
 
-- <i class="fa fa-hammer"></i><strong> Raw BIDS</strong> under subject- and session-specific folders - <a href="../../../datacuration/rawbids/#imaging">see details</a>
-- <i class="fas fa-cog"></i><strong> Derivatives</strong> produced by various pipelines - <a href="../../../datacuration/derivatives">see details</a>
+MRI and MRS data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data:
 
-*HBCD data structure summary with only MRI & MRS data included:*
+- <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#imaging" target="_blank">Raw BIDS</a> under subject- and session-specific <code>eeg/</code> folders (*file-based data*)
+- <i class="fas fa-cog"></i> <a href="../../../datacuration/derivatives" target="_blank">Derivatives</a> processed through various pipelines - see MRI and MRS processing pipelines <a href="../processing/#overview" target="_blank">here</a> (*file-based data*)
+- <i class="fas fa-table"></i> <a href="../../../datacuration/phenotypes" target="_blank">Tabulated</a> data tables derived from pipeline derivatives - see full list of tables <a href="../#mri" target="_blank">here</a>
+
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
-|   |__ phenotype/     <span class="hashtag"># Tabulated Data</span>
+|   |
+| <span class="hashtag"># Tabulated Data</span>
+|   |__ phenotype/     
 |   |   |__ img_*
 |   |
-|   |__ sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw BIDS (file-based data)</span>
+| <span class="hashtag"># Raw BIDS (file-based data)</span>
+|   |__ sub-<span class="label">&lt;label&gt;</span>/
 |       |__ ses-<span class="label">&lt;label&gt;</span>/
 |           |__ anat/
 |           |__ dwi/
 |           |__ fmap/
 |           |__ func/
 |           |__ mrs/
-|
-|__ derivatives/       <span class="hashtag"># Derivatives (file-based data)</span>
+| <span class="hashtag"># Derivatives (file-based data)</span>
+|__ derivatives/       
     |__ bibsnet/
     |__ freesurfer/
     |__ mcribs/
@@ -47,3 +51,6 @@ hbcd/
 
 ## MRI Protocols & Sequence Installation
 For full MRI protocols for sequence installation and operation instructions, please visit <a href="https://hbcdsequences.readthedocs.io"><b>HBCD Study MRI Protocols</b></a>.
+
+## Quality Control 
+See [HBCD MR Quality Control Procedures](qc.md) for a detailed information on MR QC.
