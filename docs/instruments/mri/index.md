@@ -1,4 +1,4 @@
-# Overview: Magnetic Resonance Imaging & Spectroscopy
+# Magnetic Resonance Imaging & Spectroscopy
 
 HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy (MRS)** data measures acquired as part of a comprehensive pediatric neuroimaging protocol, meticulously designed to overcome technical challenges of imaging early in life. MR data are acquired during visits V02, V03, V04, and V06 across all 27 Study recruitment sites. Please see [Quality Control Procedures](qc.md) for a detailed information on MR QC and the following sections for a summary of each modality:
 

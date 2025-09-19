@@ -25,7 +25,6 @@ hbcd/
     |__ xcp_d/
 </pre>
 
-
 <p>
 <div id="visformat" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>

@@ -759,7 +759,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-  <p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see 
+  <p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> See 
     <a href="mri">Overview & MRI Protocols</a> and 
     <a href="mri/qc"> HBCD MR Quality Control Procedures</a></strong>
   </p>
@@ -1009,103 +1009,120 @@ Expand the sections below to see a list of measures associated with each domain 
 
 <br>
 
-## MRI ALT
 
-<p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see <a href="eeg">EEG Overview page</a></strong></p>
+
+
+
+
+## temp
+
+### Tabulated Data
+
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
       <th></th>
       <th>Modality</th>
       <th>Name</th>
-      <th><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table or <span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder Name</th>
+      <th>Table Name</th>
     </tr>
   </thead>
-  <tbody>
+    <tbody>
     <tr>
-        <td rowspan="4"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Raw BIDS</i></strong></td>
-        <td><a href="../datacuration/rawbids/#anatomical-anat" target="_blank">sMRI & qMRI</a></td>
-        <td></td>
-        <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/anat/</i></td>
+      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+      <td>MRI (All Modalities)</td>
+      <td><a href="mri/questionnaire" target="_blank">Pre-Scan Questionnaire</a></td>
+      <td><code>img_ra_prep</code></td>
+      <td>NA</td>
     </tr>
-    <tr>
-        <td><a href="../datacuration/rawbids/#functional-func-and-fieldmaps-fmap" target="_blank">fMRI</a></td>
-        <td></td>
-        <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/{func|fmap}/</i></td>
-    </tr>
-    <tr>
-        <td><a href="../datacuration/rawbids/#diffusion-dwi" target="_blank">dMRI</a></td>
-        <td></td>
-        <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/dwi</i></td>
-    </tr>
-    <tr>
-      <td><a href="../datacuration/rawbids/#mr-spectroscopy-mrs" target="_blank">MRS</a></td>
-      <td></td>
-      <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/mrs</i></td>
-    </tr>
-    <tr>
-        <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Derivatives</i></strong></td>
-        <td>MRI (all modalities)</td>
-        <td></td>
-        <td><i>derivatives/</i></td>
-    </tr>
-    <tr>
-        <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Derivatives</i></strong></td>
-        <td><a href="../datacuration/derivatives/#osprey-bids-osprey" target="_blank">MRS</a></td>
-        <td>OSPREY-BIDS</td>
-        <td><i>derivatives/osprey/</i></td>
-    </tr>
-    <tr>
-        <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-        <td>All</td>
-        <td style="word-wrap: break-word; white-space: normal;"><a href="mri/questionnaire" target="_blank">Pre-Scan Questionnaire</a></td>
-        <td><code>img_ra_prep</code></td>
-    </tr>
-  </tbody>
-  </table>
+    </tbody>
+    </table>
 
+ADD BRAINSWIPES
 
-## MRI ALT 2
-
-<p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> Also see <a href="eeg">EEG Overview page</a></strong></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+### File-Based Data
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
   <thead>
     <tr>
-      <th>Data Type</th>
-      <th>Modality</th>
-      <th>Name</th>
-      <th><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table or <span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder Name</th>
+      <th></th>
+      <th><a href="../datacuration/rawbids" target="_blank"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Raw BIDS</a></th>
+      <th><a href="processing" target="_blank">Pipeline(s)</a></th>
+      <th><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> <a href="../datacuration/derivatives" target="_blank">Derivatives</a></th>
+      <th><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Tables Derived from Pipeline Derivatives</th>
     </tr>
   </thead>
-  <tbody>
+    <tbody>
     <tr>
-        <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Raw BIDS</i></strong></td>
-        <td>MR Imaging</td>
-        <td><a href="../datacuration/rawbids/#imaging" target="_blank">MRI BIDS</a></td>
-        <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/</i></td>
+      <td rowspan="4"><span class="tooltip tooltip-right"><a href="mri/smri" target="_blank">sMRI</a><span class="tooltiptext">Structural MRI</span></span></td>
+      <td rowspan="4"><i>anat/</i></td>
+      <td><a href="../datacuration/derivatives/#bibsnet-bibsnet" target="_blank">BIBSNet</a></td>
+      <td><i>bibsnet/</i></td>
+      <td><code>img_bibsnet_space-<span class="blue-text">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes</code></td>
     </tr>
     <tr>
-        <td>MR Spectroscopy</td>
-        <td><a href="../datacuration/rawbids/#mr-spectroscopy-mrs" target="_blank">MRS BIDS</a></td>
-        <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/mrs/</i></td>
+      <td><a href="../datacuration/derivatives/#mriqc-mriqc" target="_blank">MRIQC</a></td>
+      <td><i>mriqc/</i></td>
+      <td><code>img_mriqc_<span class="blue-text">&lt;T1w|T2w&gt;</span></code></td>
     </tr>
     <tr>
-        <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> - <strong><i>Derivatives</i></strong></td>
-        <td>MR Imaging</td>
-        <td><a href="../datacuration/derivatives" target="_blank">MRI Derivatives</a></td>
-        <td><i>derivatives/</i></td>
+      <td><a href="../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank">Infant-fMRIPrep</a></td>
+      <td><i>nibabies/</i></td>
+      <td>None</td>
     </tr>
     <tr>
-        <td>MR Spectroscopy</td>
-        <td><a href="../datacuration/derivatives/#osprey-bids-osprey" target="_blank">OSPREY-BIDS</a></td>
-        <td><i>derivatives/osprey/</i></td>
+      <td><a href="../datacuration/derivatives/#xcp-d-xcp_d" target="_blank">XCP-D</a></td>
+      <td><i>xcp_d/</i></td>
+      <td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph</code><br>
+        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-sulc_morph</code><br>
+        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-thickness_morph</code>
+      </td>
     </tr>
     <tr>
-        <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-        <td>All</td>
-        <td style="word-wrap: break-word; white-space: normal;"><a href="mri/questionnaire" target="_blank">Pre-Scan Questionnaire</a></td>
-        <td><code>img_ra_prep</code></td>
+      <td rowspan="3"><span class="tooltip tooltip-right"><a href="mri/fmri" target="_blank">fMRI</a><span class="tooltiptext">Functional MRI</span></span></td>
+      <td rowspan="3"><i>func/</i></td>
+      <td><a href="../datacuration/derivatives/#mriqc-mriqc" target="_blank">MRIQC</a></td>
+      <td><i>mriqc/</i></td>
+      <td><code>img_mriqc_bold</code></td>
     </tr>
+    <tr>
+      <td><a href="../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank">Infant-fMRIPrep</a></td>
+      <td><i>nibabies/</i></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><a href="../datacuration/derivatives/#xcp-d-xcp_d" target="_blank">XCP-D</a></td>
+      <td><i>xcp_d/</i></td>
+      <td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-alff_bold</code><br>
+        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-coverage_bold</code><br>
+        <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-reho_bold</code>
+      </td>
+    </tr>
+    <tr>
+      <td><span class="tooltip tooltip-right"><a href="mri/qmri" target="_blank">qMRI</a><span class="tooltiptext">Quantitative MRI</span></span></td>      <td><i>anat/</i></td>
+      <td><a href="../datacuration/derivatives/#qmri-postproc-qmri_postproc" target="_blank">qMRI Postproc</a></td>
+      <td><i>qmri_postproc/</i></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><span class="tooltip tooltip-right"><a href="mri/dmri" target="_blank">dMRI</a><span class="tooltiptext">Diffusion MRI</span></span></td>
+      <td rowspan="2"><i>dwi/</i></td>
+      <td><a href="../datacuration/derivatives/#qsiprep-qsiprep" target="_blank">QSIPrep</a></td>
+      <td><i>qsiprep/</i></td>
+      <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
+    </tr>
+    <tr>
+      <td><a href="../datacuration/derivatives/#qsirecon" target="_blank">QSIRecon</a></td>
+      <td><i>qsirecon*/</i></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><span class="tooltip tooltip-right"><a href="mri/mrs" target="_blank">MRS</a><span class="tooltiptext">MR Spectroscopy</span></span></td>      <td><i>mrs/</i></td>
+      <td><a href="../datacuration/derivatives/#osprey-bids-osprey" target="_blank">OSPREY-BIDS</a></td>
+      <td><i>osprey/</i></td>
+      <td><code>img_osprey_*</code>
+      </td>
+  </tr>
   </tbody>
   </table>
 
+<small><b>Values for <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations) include</b>: 4S-{1-10}56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)</small>
