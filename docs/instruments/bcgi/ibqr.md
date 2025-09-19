@@ -1,9 +1,23 @@
-# IBQ-R Very Short Form + Behavior Inhibition
+# Infant Behavior Questionnaire-R (VSF)+BI
 
-**Full Name**: Infant Behavior Questionnaire – Revised Very Short Form + Behavior Inhibition           
-**Acronym**: IBQ-R (VSF)+BI                
-**Table Name**: `mh_cg_ibqr`       
-**Construct**: Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>mh_cg_ibqr</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Infant Behavior Questionnaire – Revised Very Short Form + Behavior Inhibition (<i>IBQ-R (VSF)+BI</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

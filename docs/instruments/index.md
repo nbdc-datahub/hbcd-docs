@@ -194,7 +194,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="neurocog/mlds" target="_blank">MLDS</a></td>
       <td></td>
-      <td>Multilingual exposure</td>
+      <td>Multilingual Exposure</td>
       <td><code>ncl_ch_mlds</code></td>
     </tr>
     <tr>
@@ -234,7 +234,7 @@ Expand the sections below to see a list of measures associated with each domain 
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
       <td></td>
-      <td>Food insecurity</td>
+      <td>Food Insecurity</td>
       <td><code>sed_cg_foodins</code></td>
     </tr>
     <tr>
@@ -349,7 +349,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
   <td></td>
-  <td>Personal and family mental health</td>
+  <td>Personal and Family Mental Health</td>
   <td><code>pex_bm_psych</code></td>
 </tr>
 <tr class="section-mh">
@@ -363,14 +363,14 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/mh/ptsd" target="_blank">DSM5 Acute Stress or PTSD</a></td>
   <td></td>
-  <td>PTSD/acute stress symptom severity</td>
+  <td>PTSD/Acute Stress Symptom Severity</td>
   <td><code>pex_bm_str__ptsd</code></td>
 </tr>
 <tr class="section-mh">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/mh/epds" target="_blank">EPDS</a></td>
   <td></td>
-  <td>Postnatal depression</td>
+  <td>Postnatal Depression</td>
   <td><code>pex_bm_epds</code></td>
 </tr>
 <!-- Substance Use -->

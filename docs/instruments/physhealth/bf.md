@@ -1,8 +1,17 @@
-# Breast Feeding History
+# Breast Feeding History (PHENX BF)
 
-**Full Name**: Breast Feeding History                     
-**Acronym**: PHENX BF                                 
-**Table Name**: `ph_cg_phx__bfh`       
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>ph_cg_phx__bfh</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Nutrition</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

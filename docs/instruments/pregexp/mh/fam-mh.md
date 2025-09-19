@@ -1,8 +1,17 @@
-# Personal and Family Psychiatric History
-        
-**Acronym**: FAM MH     
-**Table Name**: `pex_bm_psych`       
-**Construct**: Personal and family mental health
+# Personal and Family Psychiatric History (FAM MH)
+
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>pex_bm_psych</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Personal and Family Mental Health</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 

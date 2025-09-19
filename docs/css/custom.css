@@ -181,3 +181,29 @@ pre.helper-code code {
 .button-link:hover {
   background-color: #25ae70; /* background color on hover */
 }
+
+
+/* Instrument pages overview info (table name, construct, full name) */
+.info-block {
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+.info-row {
+  display: grid;
+  grid-template-columns: 110px 1fr; /* adjust 160px as needed */
+  align-items: start;
+  font-size: 90%;
+  margin: 2px 0;
+}
+.info-label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4px; /* space between icon and text */
+}
+.info-value {
+  margin: 0;
+}
+
+

@@ -1,6 +1,17 @@
 # Visit Information
 
-> <span><i class="fa fa-table"></i></span> **Table Name:** `par_visit_data`
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>par_visit_data</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Derived Visit Information</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>

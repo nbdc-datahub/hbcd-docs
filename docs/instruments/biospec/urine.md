@@ -1,9 +1,17 @@
-# USDTL Urine Toxicology Results
+# USDTL Urine Toxicology (Maternal)
 
-**Full Name**: USDTL Urine Toxicology results       
-**Short/Alternative Names**: Urine; Maternal Urine         
-**Table Name**: `bio_bm_biosample_urine`       
-**Construct**: Toxicology screen for substances & environmental exposures
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>bio_bm_biosample_urine</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Drug Panel, Toxins</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

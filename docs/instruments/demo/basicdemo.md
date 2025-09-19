@@ -1,9 +1,17 @@
 # Basic Demographics Information 
 
-> <span><i class="fa fa-table"></i></span> **Table Name:** `sed_basic_demographics`
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_basic_demographics</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Derived Demographics</div>
+  </div>
+</div>
 
-
-
+---------------------------------------------
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>

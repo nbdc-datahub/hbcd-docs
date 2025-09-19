@@ -1,9 +1,23 @@
 # MAPS-TL, Version: Infancy (< 1 year)
 
-**Full Name**: Multidimensional Assessment Profiles - Temper Loss scale, Version: Infancy (< 1 year)       
-**Acronym**: MAPS-TL                  
-**Table Name**: `mh_cg_mapdb__inf`       
-**Construct**: Irritability
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>mh_cg_mapdb__inf</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Multidimensional Assessment Profiles - Temper Loss (<i>MAPS-TL</i>) scale, Version: Infancy (< 1 year)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Irritability</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
