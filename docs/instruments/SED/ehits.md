@@ -1,9 +1,23 @@
 # Partner Dynamics (eHITS)
 
-**Full Name**: Partner Dynamics Extended – Hurt, Insult, Threaten, Scream (eHITS)      
-**Acronym**: eHITS                  
-**Table Name**: `sed_bm_ehits`       
-**Construct**: Intimate Partner Violence
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_bm_ehits</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Partner Dynamics Extended – Hurt, Insult, Threaten, Scream (<i>eHITS</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Intimate Partner Violence</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 

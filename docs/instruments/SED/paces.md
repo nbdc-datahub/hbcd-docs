@@ -1,9 +1,23 @@
 # Protective and Compensatory Experience
-              
-**Acronym**: PACES                                
-**Table Name**: `sed_bm_paces`             
-**Construct**: Protective Factors        
 
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_bm_paces</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+       Protective and Compensatory Experience (<i>PACES</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Protective Factors</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 

@@ -1,9 +1,23 @@
 # PROMIS Perceived Stress/Social Support
 
-**Full Name**: Patient-Reported Outcome Measurement Information System (PROMIS) Perceived Stress/Social Support                 
-**Acronym**: PROMIS                  
-**Table Name**: `sed_bm_strsup`       
-**Construct**: Perceived Stress/Social Support
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_bm_strsup</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+       Patient-Reported Outcome Measurement Information System (<i>PROMIS</i>) Perceived Stress/Social Support
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Perceived Stress/Social Support</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 

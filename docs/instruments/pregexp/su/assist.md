@@ -1,15 +1,32 @@
-# ASSIST 
-
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
+# ASSIST      
+<p>
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>pex_bm_assistv&lt;1|2|3&gt;</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+     Alcohol, Smoking and Substance Involvement Screening Test (<i>ASSIST</i>)
+    </div>
+  </div>
+    <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
+    <div class="info-value">V1, V2, V3</div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Substance Use Pre-, During, and Post-Pregnancy</div>
+  </div>
 </div>
-<p></p>
-
-**Full Name**: Alcohol, Smoking and Substance Involvement Screening Test                            
+</p>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
+  <tr>
+    <th colspan="3"><i><i class="fa-solid fa-clone"></i> Version-Specific Information</i></th>
+  </tr>
   <tr>
     <th>Version</th>
     <th>Construct</th>
