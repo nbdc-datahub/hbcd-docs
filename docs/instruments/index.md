@@ -759,18 +759,17 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-  <p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> See 
-    <a href="mri">Overview & MRI Protocols</a> and 
-    <a href="mri/qc"> HBCD MR Quality Control Procedures</a></strong>
-  </p>
-
+<p><strong><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> See MR <a href="mri">Overview</a> and <a href="mri/qc">Quality Control Procedures</a></strong></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
   <thead>
+  <tr>
+    <th colspan="4" style="font-size: 16px;">File-Based and Derived Tabulated Data</th>
+  </tr>
     <tr>
-      <th>Modality</th>
-      <th><a href="../datacuration/rawbids" target="_blank"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Raw BIDS</a></th>
-      <th><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> <a href="../datacuration/derivatives" target="_blank">Derivatives</a> [Source <a href="processing" target="_blank">Pipeline</a>]</th>
-      <th><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Tables Derived from Pipeline Derivatives</th>
+      <th style="width: 10%;">Modality</th>
+      <th style="width: 10%;"><a href="../datacuration/rawbids" target="_blank"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Raw BIDS</a></th>
+      <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> <a href="../datacuration/derivatives" target="_blank">Derivatives</a> [Source <a href="processing" target="_blank">Pipeline</a>]</th>
+      <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Tables Derived from Pipeline Derivatives</th>
     </tr>
   </thead>
     <tbody>
@@ -842,24 +841,27 @@ Expand the sections below to see a list of measures associated with each domain 
         <code>img_osprey_unedited_qm_processed_spectra</code>
       </td>
   </tr>
+  <tr>
+    <td colspan="4">
+      <strong>Label Values Legend</strong><br>
+      <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations): 4S-{1-10}56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)<br>
+      <b style="color: #0077cc;">&lt;Q&gt;</b> (quantification method): HERCULES_diff1, HERCULES_diff2, HERCULES_sum, unedited_A
+    </td>
+  </tr>
   </tbody>
-  </table>
-  <small>
-    <strong>Label Values Legend</strong><br>
-    <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations): 4S-{1-10}56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)<br>
-    <b style="color: #0077cc;">&lt;Q&gt;</b> (quantification method): HERCULES_diff1, HERCULES_diff2, HERCULES_sum, unedited_A
-</small>
-<br>
-<br>
-<p><strong>Tabulated Data Only</strong></p>
+</table>
+
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
+    <th colspan="5" style="font-size: 16px;">Tabulated Data Only</th>
+    </tr>
+    <tr>
       <th></th>
-      <th>Relevant Modality</th>
-      <th>Name</th>
-      <th>Construct</th>
-      <th>Table Name</th>
+      <th style="width: 10%;">Relevant Modality</th>
+      <th style="width: 30%;">Name</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;">Table Name</th>
     </tr>
   </thead>
     <tbody>
