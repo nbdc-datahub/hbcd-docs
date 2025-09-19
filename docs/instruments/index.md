@@ -194,7 +194,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="neurocog/mlds" target="_blank">MLDS</a></td>
       <td></td>
-      <td>Multilingual exposure</td>
+      <td>Multilingual Exposure</td>
       <td><code>ncl_ch_mlds</code></td>
     </tr>
     <tr>
@@ -234,7 +234,7 @@ Expand the sections below to see a list of measures associated with each domain 
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
       <td></td>
-      <td>Food insecurity</td>
+      <td>Food Insecurity</td>
       <td><code>sed_cg_foodins</code></td>
     </tr>
     <tr>
@@ -349,7 +349,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
   <td></td>
-  <td>Personal and family mental health</td>
+  <td>Personal and Family Mental Health</td>
   <td><code>pex_bm_psych</code></td>
 </tr>
 <tr class="section-mh">
@@ -363,14 +363,14 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/mh/ptsd" target="_blank">DSM5 Acute Stress or PTSD</a></td>
   <td></td>
-  <td>PTSD/acute stress symptom severity</td>
+  <td>PTSD/Acute Stress Symptom Severity</td>
   <td><code>pex_bm_str__ptsd</code></td>
 </tr>
 <tr class="section-mh">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/mh/epds" target="_blank">EPDS</a></td>
   <td></td>
-  <td>Postnatal depression</td>
+  <td>Postnatal Depression</td>
   <td><code>pex_bm_epds</code></td>
 </tr>
 <!-- Substance Use -->
@@ -383,24 +383,24 @@ Expand the sections below to see a list of measures associated with each domain 
   <td rowspan="3"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td rowspan="3"><a href="pregexp/su/assist" target="_blank">ASSIST</a></td>
   <td>V1</td>
-  <td>Substance use before & during pregnancy</td>
+  <td>SU Before and During Pregnancy</td>
   <td><code>pex_bm_assistv1</code></td>
 </tr>
 <tr class="section-su">
   <td>V2</td>
-  <td>Substance use, pregnancy end & postnatal</td>
+  <td>SU, Pregnancy End & Postnatal</td>
   <td><code>pex_bm_assistv2</code></td>
 </tr>
 <tr class="section-su">
   <td>V3</td>
-  <td>SU after pregnancy (3 mo anchors)</td>
+  <td>SU After Pregnancy (3 mo anchors)</td>
   <td><code>pex_bm_assistv3</code></td>
 </tr>
 <tr class="section-su">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/su/tlfb" target="_blank">TLFB</a></td>
   <td></td>
-  <td>Substance use before & during pregnancy</td>
+  <td>SU Before and During Pregnancy</td>
   <td><code>pex_ch_tlfb</code></td>
 </tr>
 </tbody>
@@ -433,7 +433,7 @@ Expand the sections below to see a list of measures associated with each domain 
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="SED/bfy" target="_blank">BFY</a></td>
       <td></td>
-      <td>Benefits/Services/Economic Stress</td>
+      <td>Benefits/Services, Economic Stress</td>
       <td><code>sed_bm_bfy</code></td>
     </tr>
     <tr>
@@ -698,7 +698,7 @@ Expand the sections below to see a list of measures associated with each domain 
   </thead>
   <tbody>
   <tr>
-    <td rowspan="3">Infant Leg Motion</td>
+    <td rowspan="3"><a href="sensors/wearsensors" target="_blank">Infant Leg Motion</a></td>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td><a href="sensors/questionnaire" target="_blank">Questionnaire 1/2/3</a></td>
     <td rowspan="3">Motor Development,<br>Regulation (Sleep/Wake)</td>

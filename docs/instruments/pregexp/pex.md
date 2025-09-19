@@ -5,10 +5,10 @@
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
 <thead>
 <tr>
-    <th>Instrument</th>
-    <th>Acronym</th>
-    <th>Construct</th>
-    <th>Table Name</th>
+    <th><i class="fa-solid fa-maximize"></i> Instrument</th>
+    <th><i class="fa-solid fa-compress"></i> Acronym</th>
+    <th><i class="fa-solid fa-tape"></i> Construct</th>
+    <th><i class="fa fa-table"></i> Table Name</th>
 </tr>
 </thead>
 <tbody>

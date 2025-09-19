@@ -1,9 +1,23 @@
 # DSM5 Severity Acute Stress or PTSD
 
-**Full Name**: National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder                
-**Acronym**: DSM5 Severity Acute Stress or PTSD     
-**Table Name**: `pex_bm_str__ptsd`       
-**Construct**: PTSD/acute stress disorder symptom severity
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>pex_bm_str__ptsd</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">PTSD/Acute Stress Disorder Symptom Severity</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
