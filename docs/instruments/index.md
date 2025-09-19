@@ -40,6 +40,45 @@ Expand the sections below to see a list of measures associated with each domain 
   Expand All Sections ↕️
 </button>
 
+### Demographics & Visit Information
+
+<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-id-card"></i></span>
+  <span class="text-with-link">
+  <span class="text">Basic Demographics & Visit Info</span>
+  <a class="anchor-link" href="#demo" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th style="width: 5%;"></th>
+      <th style="width: 30%;">Instrument</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;"><span class="tooltip tooltip-left"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+    <td><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
+    <td>Demographics data derived from multiple sources</td>
+    <td><code>sed_basic_demographics</code></td>
+  </tr>
+    <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+    <td><a href="demo/visitinfo" target="_blank">Visit Information</a></td>
+    <td>Participant visit information</td>
+    <td><code>par_visit_data</code></td>
+  </tr>
+</tbody>
+</table>
+</div>
+
 ### Behavior, Biology, & Environment
 
 <div id="bcgi" class="table-banner" onclick="toggleCollapse(this)">
@@ -677,45 +716,6 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
   </tbody>
   </table>
-</div>
-
-### Demographics & Visit Information
-
-<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-id-card"></i></span>
-  <span class="text-with-link">
-  <span class="text">Basic Demographics & Visit Info</span>
-  <a class="anchor-link" href="#demo" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 5%;"></th>
-      <th style="width: 30%;">Instrument</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;"><span class="tooltip tooltip-left"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
-    <td>Demographics data derived from multiple sources</td>
-    <td><code>sed_basic_demographics</code></td>
-  </tr>
-    <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td><a href="demo/visitinfo" target="_blank">Visit Information</a></td>
-    <td>Participant visit information</td>
-    <td><code>par_visit_data</code></td>
-  </tr>
-</tbody>
-</table>
 </div>
 
 <br>
