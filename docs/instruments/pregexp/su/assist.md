@@ -1,20 +1,37 @@
-# ASSIST
-
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
+# ASSIST      
+<p>
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>pex_bm_assistv&lt;1|2|3|4&gt;</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+     Alcohol, Smoking and Substance Involvement Screening Test (<i>ASSIST</i>)
+    </div>
+  </div>
+    <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
+    <div class="info-value">V1, V2, V3, V4</div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Substance Use Pre-, During, and Post-Pregnancy</div>
+  </div>
 </div>
-<p></p>
-
-**Full Name**: Alcohol, Smoking and Substance Involvement Screening Test 
+</p>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-<tr>
-<td><strong>Version</strong></td>
-<td><strong>Construct</strong></td>
-<td><strong>Table Name</strong></td>
-</tr>
+  <tr>
+    <th colspan="3"><i><i class="fa-solid fa-clone"></i> Version-Specific Information</i></th>
+  </tr>
+  <tr>
+    <th>Version</th>
+    <th>Construct</th>
+    <th>Table Name</th>
+  </tr>
 </thead>
 <tbody>
 <tr><td><strong>ASSIST V1</strong></td>
@@ -89,6 +106,8 @@ The NIDA quick screen tool (*have you used alcohol, tobacco, prescription drugs,
 
 Finally, the Time Line Follow Back (TLFB) was triggered when substance use was reported before [`pre-use`] or during pregnancy [`during_use`] on the ASSIST V1 or at the end of pregnancy [`end_use`] on the ASSIST V2 (see [documentation on TLFB](tlfb.md)). 
 
+
+
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
@@ -133,7 +152,6 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
     <li>[problem] DURING THE PAST THREE MONTHS, has your use of this substance led to physical or mental health, social, or financial problems?</li>
     <li>[perform] DURING THE PAST THREE MONTHS, have you ever failed to do what was normally expected of you (like work, go to school, be a parent, or household tasks) because of your use of this substance?</li>
 </ul>
-
 <b>ASSIST V4</b><br>
 <strong>Assess use and impact of substance use after pregnancy in past 12 months (12m):</strong>
 <ul>
