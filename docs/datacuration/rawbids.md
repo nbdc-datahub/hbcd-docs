@@ -210,19 +210,43 @@ eeg/
     |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eventlogs.txt
 </pre>
 
-#### Task Acquisition Files
-The `SET` files contain metadata and parameters for the EEG dataset, such as channel locations, sampling rate, and event information. The `FDT` files are field data table files containing EEG data.
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+    <th></th>
+    <th>File</th>
+    <th>Description</th>
+</thead>
+<tbody>
+<tr>
+    <td rowspan="2">Task Acquisition Files</td>
+    <td><code>SET</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Metadata and parameters for the EEG dataset, such as channel locations, sampling rate, and event information.</td>
+</tr>
+<tr>
+    <td><code>FDT</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Field data table files containing EEG data</td>
+</tr>
 
-#### Location of Electrodes
-The location of electrodes, placed on either the head (`acq-eeg`) or chest (`acq-ecg`), is specified in the `*_electrodes.tsv` files following cartesian coordinates provided by the accompanying `*_coordsystem.json` file. For **task acquisitions**, the task is specified by `task-<label>`, with task options of `FACE`, `MMN`, `RS`, and `VEP` (see task details [here](../instruments/eeg/index.md)).
-
-#### Sourcedata
-<ul>
-The accompanying <code>sourcedata/</code> files include:
-<li>Impedance values used to ensure good electrode contact (<code>*_impedence.json</code>)</li>
-<li>Task stimuli presentations (<code>*_eventlogs.txt</code>)</li>
-</ul>
-
+<tr>
+    <td rowspan="2">Location of Electrodes</td>
+    <td><code>*_electrodes.tsv</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Specifies the location of electrodes, placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>)</td>
+</tr>
+<tr>
+    <td><code>*_coordsystem.json</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Cartesian coordinates followed by <code>*_electrodes.tsv</code> files</td>
+</tr>
+<tr>
+    <td rowspan="2">Sourcedata</td>
+    <td><code>*_impedence.json</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Impedance values used to ensure good electrode contact</td>
+</tr>
+<tr>
+    <td><code>*_eventlogs.txt</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Task stimuli presentations</td>
+</tr>
+</tbody>
+</table>
 
 ## Motion
 Axivity AX6 sensor data provided in the data release include `_motion.tsv` sensor recordings with corresponding `*_channels.tsv` files that describe each column of of the motion file. The acquisition (`acq-`) label for the calibration files is `calibration` while the label for the 72-hr data files is `primary`. The `task` label will be either `LeftLegMovement` or `RightLegMovement` for sensors placed on the left or right leg. Each `.tsv` file is accompanied by a JSON sidecar containing recording-related metadata: 
