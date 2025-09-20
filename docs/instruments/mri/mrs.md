@@ -27,7 +27,7 @@ One limitation to the incorporation of MRS into human connectome studies is prop
 
 ### MRS Data Processing
 
-For HBCD MRS data processing has been carried out using a customized automated pipeline, adapted from OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)). The derivatives ([see details](../../datacuration/derivatives.md#osprey-bids-osprey)) include quality control metrics and metabolite estimates as a ratio to creatine and water, with and without tissue correction. For further details, please see the [OSPREY-BIDS documentation site](https://osprey-bids.readthedocs.io/en/latest/index.html) as well as the [Processing Pipelines](../processing/index.md) section, which contains an overview of pipelines used for HBCD data processing and links to relevant documentation.
+For HBCD MRS data processing has been carried out using a customized automated pipeline, adapted from OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)). The derivatives ([see details](../../datacuration/derivatives.md#mr-spectroscopy-osprey-bids)) include quality control metrics and metabolite estimates as a ratio to creatine and water, with and without tissue correction. For further details, please see the [OSPREY-BIDS documentation site](https://osprey-bids.readthedocs.io/en/latest/index.html) as well as the [Processing Pipelines](../processing/index.md) section, which contains an overview of pipelines used for HBCD data processing and links to relevant documentation.
 
 ## References
 <div class="references">

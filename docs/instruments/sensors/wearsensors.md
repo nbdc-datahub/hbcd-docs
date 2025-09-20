@@ -3,7 +3,7 @@
 Motion/accelerometry data collected from wearable infant leg sensors is available as <a href="../../../datacuration/overview" target="_blank">file-based data</a>: 
 
 - <span><i class="fas fa-hammer"></i> <a href="../../../datacuration/rawbids/#motion" target="_blank">Raw sensor data</a> can be found in the subject-/session-level <code>motion/</code> folders
-- <span><i class="fas fa-cog"></i> <a href="../../../datacuration/derivatives/#hbcd-motion-hbcd_motion" target="_blank">Processed derivatives</a> produced by the HBCD-Motion pipeline are available under `hbcd_motion/`
+- <span><i class="fas fa-cog"></i> <a href="../../../datacuration/derivatives/#biosensors-hbcd-motion" target="_blank">Processed derivatives</a> produced by the HBCD-Motion pipeline are available under `hbcd_motion/`
 
 <pre class="folder-tree">
 hbcd/

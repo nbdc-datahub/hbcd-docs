@@ -1,47 +1,43 @@
-# Processed File-Based Derivative Data
 
-The `derivatives/` folder contains minimally preprocessed outputs from the <a href="../../instruments/processing/" target="_blank">processing pipelines</a>. A description of HBCD-specific processing parameters used for each pipeline is available on the [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/latest/) webpage. The following sections outline the session-level file and folder contents for each pipeline. 
+# Processed Derivatives
+
+The `derivatives/` folder contains derivatives, which are file outputs from <a href="../../instruments/processing/" target="_blank">processing pipelines</a>. 
 
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
+    <span class="hashtag"># Structural & Functional MRI</span>             
+    |__ mriqc/      
+    |__ bibsnet/    
+    |__ nibabies/   
+    |__ freesurfer/ 
+    |__ mcribs/     
+    |__ xcp_d/      
+    |               
+    <span class="hashtag"># Quantitative MRI</span>    
+    |__ symri/           
+    |__ qmri_postproc/  
+    | 
+    <span class="hashtag"># Diffusion MRI</span>                                  
+    |__ qsiprep/                         
+    |__ qsirecon/                        
+    |__ qsirecon-DIPYDKI/                
+    |__ qsirecon-DSIStudio/               
+    |__ qsirecon-NODDI/                  
+    |__ qsirecon-TORTOISE_model-MAPMRI/  
+    |__ qsirecon-TORTOISE_model-tensor/  
     |
-  <span class="hashtag"># Structural & Functional MRI:</span>
-    |__ mriqc/
-    |__ symri/  
-    |__ qmri_postproc/
-    |__ bibsnet/
-    |__ nibabies/
-    |__ freesurfer/ <span class="hashtag"># Derived from Infant fMRIPrep (nibabies/) sourcedata/ folder</span>
-    |__ mcribs/     <span class="hashtag"># Derived from Infant fMRIPrep (nibabies/) sourcedata/ folder</span>
-    |__ xcp_d/
-    |
-  <span class="hashtag"># Diffusion MRI:</span>
-    |__ qsiprep/
-    |__ qsirecon/
-    |__ qsirecon-DIPYDKI/
-    |__ qsirecon-DSIStudio/
-    |__ qsirecon-NODDI/
-    |__ qsirecon-TORTOISE_model-MAPMRI/
-    |__ qsirecon-TORTOISE_model-tensor/
-    |
-  <span class="hashtag"># MRS:</span>
-    |__ osprey/
-    |
-  <span class="hashtag"># EEG:</span>
-    |__ made/
-    |
-  <span class="hashtag"># Biosensors:</span>
-    |__ hbcd_motion/
+    |__ osprey/       <span class="hashtag"># MRS</span>
+    |__ made/         <span class="hashtag"># EEG</span>
+    |__ hbcd_motion/  <span class="hashtag"># Biosensors Recordings</span>
 </pre>
 
 <p>
-<div id="visformat" class="table-banner" onclick="toggleCollapse(this)">
+<div id="visformat"  class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">Format of File Structure Visuals</span>
-  <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="notification-static-content">
 <p><strong>The following formatting was employed to enhance readability of the file structure visuals:</strong></p>
 <ul>
 <li>The BIDS entities <code>sub-&lt;label&gt;_ses-&lt;label&gt;</code> are replaced with the string <code>SUBSES</code></li>
@@ -52,120 +48,62 @@ hbcd/
 </div>
 </p>
 
-## BIBSNet (`bibsnet/`)
-BIBSNet outputs brain segmentations and masks in native T1w and T2w space as well as `volumes.tsv` files with ROI volume statistics. Additional details can be found [here](https://bibsnet.readthedocs.io/en/latest/outputs/).
+## Structural & Functional MRI
 
 <pre class="folder-tree">
-bibsnet/
-|__ sub-<span class="label">&lt;label&gt;</span>/
-    |__ ses-<span class="label">&lt;label&gt;</span>/
-        |__ anat/
-            |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_dseg.nii.gz
-            |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_dseg.json
-            |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv
-            |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.json            
-            |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.nii.gz
-            |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.json
+<span class="hashtag"># Structural & Functional MRI Pipeline Derivatives:</span>
+hbcd/
+|__ derivatives/ 
+    |__ mriqc/
+    |__ bibsnet/
+    |__ nibabies/
+    |__ freesurfer/ <span class="hashtag"># Derived from Infant fMRIPrep (nibabies/) sourcedata/ folder</span>
+    |__ mcribs/     <span class="hashtag"># Derived from Infant fMRIPrep (nibabies/) sourcedata/ folder</span>
+    |__ xcp_d/
 </pre>
 
-
-*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
-
-## HBCD-Motion (`hbcd_motion/`)
-The HBCD-Motion pipeline is used to process the HBCD Axivity Ax6 sensor recordings of infant leg movements across 72 continuous hours. Please see a full description of the output files on their webpage [here](https://hbcd-motion-postproc.readthedocs.io/en/latest/outputs.html#outputs).
-
-<pre class="folder-tree">
-hbcd_motion/
-|__ sub-<span class="label">&lt;label&gt;</span>/
-    |__ ses-<span class="label">&lt;label&gt;</span>/
-        |__ motion/
-            |__ Kinematics/
-            |   |__ <span class="subses">SUBSES</span>_desc-kinematics_recording-20_motion.json
-            |   |__ <span class="subses">SUBSES</span>_desc-kinematics_recording-25_motion.json
-            |
-            |__ PA/
-            |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_BOUTS.tsv
-            |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_LOG.txt
-            |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_RAW.tsv
-            |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_SUMMARY.json
-            |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_BOUTS.tsv
-            |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_LOG.txt
-            |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_RAW.tsv
-            |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_SUMMARY.json
-            |
-            |__ PARAMETERS.json
-            |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-calibrated_recording-20_motion.tsv
-</pre>
-*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder structure visual.*
-
-## HBCD-MADE (`made/`)
-HBCD-MADE produces preprocessed EEG derivatives. Please see the [HBCD-MADE webpage](https://docs-hbcd-made.readthedocs.io/en/latest) for a full explanation of the derivative files displayed below.
-
-<pre class="folder-tree">
-made/
-|__ sub-<span class="label">&lt;label&gt;</span>/
-    |__ ses-<span class="label">&lt;label&gt;</span>/
-        |__ eeg/
-            |__ filtered_data/
-            |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.fdt
-            |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.set
-            |
-            |__ ica_data/
-            |   |__ <span class="subses">SUBSES</span>_adjustReport.txt
-            |   |__ <span class="subses">SUBSES</span>_desc-mergedICA_eeg.fdt
-            |   |__ <span class="subses">SUBSES</span>_desc-mergedICA_eeg.set
-            | 
-            |__ merged_data/
-            |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.fdt
-            |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.json
-            |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.set
-            | 
-            |__ processed_data/
-            |   |__ sub-<span class="label">&lt;label&gt;</span>_task-FACE_desc-<span class="placeholder">&lt;FACE-JPG&gt;</span>.jpg
-            |   |__ sub-<span class="label">&lt;label&gt;</span>_task-MMN_desc-<span class="placeholder">&lt;MMN-JPG&gt;</span>.jpg
-            |   |__ <span class="subses">SUBSES</span>_task-RS_powerSummaryStats.csv
-            |   |__ sub-<span class="label">&lt;label&gt;</span>_task-VEP_<span class="placeholder">&lt;desc-oz_ERP|topo&gt;</span>.jpg
-            |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_acq-eeg_ERP.mat
-            |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.fdt
-            |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.set
-            | 
-            |__ <span class="subses">SUBSES</span>_acq-eeg_preprocessingReport.csv
-            |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_MADEspecification.json
-</pre>
-
-<details open>
-<summary>Label Values Legend</summary>
-<p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
-  <b style="color: #0077cc;">FACE-JPG</b>: Oz_diffERP, diffInvVsUpr_topo, diffObjVsUp2_topo, inverted_topo, object_topo, oz_ERP, upright_topo, upright2_topo
-</p>
-<p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
-  <b style="color: #0077cc;">MMN-JPG</b>: deviant_topo, diffDevVsSta_topo, diffDevVsPre_topo, preDeviant_topo, standard_topo, t7t8_diffERP, t7t8_ERP
-</p>
-</details>
-
-*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
-
-## MRIQC (`mriqc/`)
+### MRIQC (`mriqc/`)
 MRIQC extracts no-reference IQMs (image quality metrics) from structural (T1w and T2w) and functional MRI (magnetic resonance imaging) data (contained in the JSON files under `anat/` and `func/`) and also generates visual `.html` report files in the root pipeline folder. Please refer to the [MRIQC webpage](https://mriqc.readthedocs.io/en/latest/about.html) to read details about the outputs displayed below.
 
 <pre class="folder-tree">
-mriqc/
-|__ sub-<span class="label">&lt;label&gt;</span>/
-|   |__ ses-<span class="label">&lt;label&gt;</span>/
-|       |__ anat/
-|       |   |__ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_T1w.json
-|       |   |__ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_T2w.json
-|       |
-|       |__ func/
-|           |__ <span class="subses">SUBSES</span>_task-rest_dir-PA_run-<span class="label">#</span>_bold.json
-|        
-|__ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_T1w.html
-|__ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_T2w.html
-|__ <span class="subses">SUBSES</span>_task-rest_dir-PA_run-<span class="label">#</span>_bold.html
+hbcd/
+|__ derivatives/ 
+    |__ mriqc/
+        |__ sub-<span class="label">&lt;label&gt;</span>/
+        |   |__ ses-<span class="label">&lt;label&gt;</span>/
+        |       |__ anat/
+        |       |   |__ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_T1w.json
+        |       |   |__ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_T2w.json
+        |       |
+        |       |__ func/
+        |           |__ <span class="subses">SUBSES</span>_task-rest_dir-PA_run-<span class="label">#</span>_bold.json
+        |        
+        |__ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_T1w.html
+        |__ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_T2w.html
+        |__ <span class="subses">SUBSES</span>_task-rest_dir-PA_run-<span class="label">#</span>_bold.html
 </pre>
 *See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
 
-## Infant-fMRIPrep (`nibabies/`)
+### BIBSNet (`bibsnet/`)
+BIBSNet outputs brain segmentations and masks in native T1w and T2w space as well as `volumes.tsv` files with ROI volume statistics. Additional details can be found [here](https://bibsnet.readthedocs.io/en/latest/outputs/).
+
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
+    |__ bibsnet/
+        |__ sub-<span class="label">&lt;label&gt;</span>/
+            |__ ses-<span class="label">&lt;label&gt;</span>/
+                |__ anat/
+                    |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_dseg.nii.gz
+                    |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_dseg.json
+                    |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv
+                    |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.json            
+                    |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.nii.gz
+                    |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.json
+</pre>
+*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
+
+### Infant-fMRIPrep (`nibabies/`)
 Infant-fMRIPrep (also known as NiBabies) outputs from minimal structural and functional MRI processing include visual quality assessment reports, preprocessed derivatives, and confounds to be used for denoising in subsequent processing procedures. Please see their webpage [here](https://nibabies.readthedocs.io/en/latest/outputs.html) for a detailed description of the file outputs.
 
 <p>
@@ -177,57 +115,59 @@ Infant-fMRIPrep (also known as NiBabies) outputs from minimal structural and fun
 </p>
 
 <pre class="folder-tree">
-nibabies/
-sub-<span class="label">&lt;label&gt;</span>/
-|_ figures/
-|_ ses-<span class="label">&lt;label&gt;</span>/
-|  |_ log/
-|  |
-|  |_ anat/
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_from-<span class="placeholder">&lt;MNI152NLin6Asym_res-2|MNIInfant+1&gt;</span>_to-T2w_mode-image_xfm.h5
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_from-T2w_to-<span class="placeholder">&lt;MNI152NLin6Asym_res-2|MNIInfant+1&gt;</span>_mode-image_xfm.h5
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_from-T2w_to-fsnative_mode-image_xfm.txt
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_from-fsnative_to-T2w_mode-image_xfm.txt
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>.shape.gii
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_<span class="placeholder">&lt;inflated|midthickness|pial|sphere|white&gt;</span>.surf.gii
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-dhcpAsym_den-32k_midthickness.surf.gii
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-dhcpAsym_den-32k_pial.surf.gii
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-dhcpAsym_den-32k_white.surf.gii
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-<span class="placeholder">&lt;dhcpAsym|fsaverage&gt;</span>_den-32k_sphere.surf.gii
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_desc-brain_mask.nii.gz <span class="hashtag">(+JSON)</span>
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_dseg.nii.gz <span class="hashtag">(+JSON)</span>
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-<span class="placeholder">&lt;MNI152NLin6Asym_res-2|T2w&gt;</span>_label-<span class="placeholder">&lt;CSF|GM|WM&gt;</span>_probseg.nii.gz
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-T2w_desc-<span class="placeholder">&lt;aparcaseg|aseg&gt;</span>_dseg.nii.gz
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-T2w_dseg.nii.gz
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-T2w_desc-ribbon_mask.nii.gz <span class="hashtag">(+JSON)</span>
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-fsLR_den-91k_<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>.dscalar.nii <span class="hashtag">(+JSON)</span>
-|  |
-|  |_ fmap/
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_fmapid-auto00000<span class="label">#</span>_desc-coeff_fieldmap.nii.gz
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_fmapid-auto00000<span class="label">#</span>_desc-epi_fieldmap.nii.gz
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_fmapid-auto00000<span class="label">#</span>_desc-preproc_fieldmap.nii.gz <span class="hashtag">(+JSON)</span>
-|  |
-|  |_ func/ <span class="hashtag">(ALL +JSON)</span>
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-brain_mask.nii.gz
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-confounds_timeseries.tsv
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-coreg_boldref.nii.gz
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-hmc_boldref.nii.gz 
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-preproc_bold.nii.gz
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_from-boldref_to-T2w_mode-image_desc-coreg_xfm.txt
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_from-boldref_to-auto00000_mode-image_xfm.txt
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_from-orig_to-boldref_mode-image_desc-hmc_xfm.txt
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsnative_bold.func.gii
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_boldref.nii.gz
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_desc-brain_mask.nii.gz
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_desc-preproc_bold.nii.gz
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-T2w_boldref.nii.gz
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-T2w_desc-brain_mask.nii.gz
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-T2w_desc-preproc_bold.nii.gz
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_bold.dtseries.nii
-|
-<span class="subses">SUBSES</span>.html
+hbcd/
+|__ derivatives/ 
+    |__ nibabies/
+        |__ sub-<span class="label">&lt;label&gt;</span>/
+        |   |_ figures/
+        |   |_ ses-<span class="label">&lt;label&gt;</span>/
+        |      |_ log/
+        |      |
+        |      |_ anat/
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_from-<span class="placeholder">&lt;MNI152NLin6Asym_res-2|MNIInfant+1&gt;</span>_to-T2w_mode-image_xfm.h5
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_from-T2w_to-<span class="placeholder">&lt;MNI152NLin6Asym_res-2|MNIInfant+1&gt;</span>_mode-image_xfm.h5
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_from-T2w_to-fsnative_mode-image_xfm.txt
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_from-fsnative_to-T2w_mode-image_xfm.txt
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>.shape.gii
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_<span class="placeholder">&lt;inflated|midthickness|pial|sphere|white&gt;</span>.surf.gii
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-dhcpAsym_den-32k_midthickness.surf.gii
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-dhcpAsym_den-32k_pial.surf.gii
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-dhcpAsym_den-32k_white.surf.gii
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-<span class="placeholder">&lt;dhcpAsym|fsaverage&gt;</span>_den-32k_sphere.surf.gii
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_desc-brain_mask.nii.gz <span class="hashtag">(+JSON)</span>
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_dseg.nii.gz <span class="hashtag">(+JSON)</span>
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-<span class="placeholder">&lt;MNI152NLin6Asym_res-2|T2w&gt;</span>_label-<span class="placeholder">&lt;CSF|GM|WM&gt;</span>_probseg.nii.gz
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-T2w_desc-<span class="placeholder">&lt;aparcaseg|aseg&gt;</span>_dseg.nii.gz
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-T2w_dseg.nii.gz
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-T2w_desc-ribbon_mask.nii.gz <span class="hashtag">(+JSON)</span>
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-fsLR_den-91k_<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>.dscalar.nii <span class="hashtag">(+JSON)</span>
+        |      |
+        |      |_ fmap/
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_fmapid-auto00000<span class="label">#</span>_desc-coeff_fieldmap.nii.gz
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_fmapid-auto00000<span class="label">#</span>_desc-epi_fieldmap.nii.gz
+        |      |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_fmapid-auto00000<span class="label">#</span>_desc-preproc_fieldmap.nii.gz <span class="hashtag">(+JSON)</span>
+        |      |
+        |      |_ func/ <span class="hashtag">(ALL +JSON)</span>
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-brain_mask.nii.gz
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-confounds_timeseries.tsv
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-coreg_boldref.nii.gz
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-hmc_boldref.nii.gz 
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-preproc_bold.nii.gz
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_from-boldref_to-T2w_mode-image_desc-coreg_xfm.txt
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_from-boldref_to-auto00000_mode-image_xfm.txt
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_from-orig_to-boldref_mode-image_desc-hmc_xfm.txt
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsnative_bold.func.gii
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_boldref.nii.gz
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_desc-brain_mask.nii.gz
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-MNI152NLin6Asym_res-2_desc-preproc_bold.nii.gz
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-T2w_boldref.nii.gz
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-T2w_desc-brain_mask.nii.gz
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-T2w_desc-preproc_bold.nii.gz
+        |         |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_bold.dtseries.nii
+        |    
+        |__ <span class="subses">SUBSES</span>.html
 </pre>
 
 *See [Format of File Structure Visuals](#visformat) for further guidance on interpreting the folder tree above.*
@@ -288,51 +228,53 @@ The current HBCD release includes Infant-fMRIPrep derivatives for **visit V02 (0
 #### FreeSurfer
 
 <pre class="folder-tree">
-freesurfer/
-sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>/
-|__ label/
-|   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc+DKTatlas.annot
-|   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc+DKTatlas.auto.nomask.annot
-|   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc.annot
-|   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc.auto.nomask.annot
-|   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.cortex.label
-|
-|__ mri/
-|   |__ T2.mgz
-|   |__ aparc+<span class="placeholder">&lt;DKTatlas&gt;</span>+aseg.mgz
-|   |__ aseg.mgz
-|   |__ aseg.<span class="placeholder">&lt;internal|presurf|presurf.preunwmfix&gt;</span>.mgz
-|   |__ brain.mgz
-|   |__ brainmask.mgz
-|   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.ribbon.mgz
-|   |__ norm.mgz
-|   |__ orig.mgz
-|   |__ ribbon.mgz
-|
-|__ scripts/
-|   |__ mcribs.log
-|
-|__ stats/
-|   |__aseg.stats
-|   |__brainvol.stats
-|   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc+DKTatlas.stats
-|   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc.stats
-|   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.curv.stats
-|
-|__ surf/
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;area|area.mid|area.pial&gt;</span>
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.curv
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.inflated
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.inflated.<span class="placeholder">&lt;H|K&gt;</span>
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.midthickness
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.orig
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.pial
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.smoothwm
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.smoothwm.<span class="placeholder">&lt;BE|C|FI|H|K|K1|K2|S&gt;</span>.crv
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.smoothwm.<span class="placeholder">&lt;H|K&gt;</span>
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.sphere
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.sphere.<span class="placeholder">&lt;reg|reg2&gt;</span>
-    |__ <span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;sulc|thickness|volume|white&gt;</span>
+hbcd/
+|__ derivatives/ 
+    |__ freesurfer/
+        |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>/
+            |__ label/
+            |   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc+DKTatlas.annot
+            |   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc+DKTatlas.auto.nomask.annot
+            |   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc.annot
+            |   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc.auto.nomask.annot
+            |   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.cortex.label
+            |
+            |__ mri/
+            |   |__ T2.mgz
+            |   |__ aparc+<span class="placeholder">&lt;DKTatlas&gt;</span>+aseg.mgz
+            |   |__ aseg.mgz
+            |   |__ aseg.<span class="placeholder">&lt;internal|presurf|presurf.preunwmfix&gt;</span>.mgz
+            |   |__ brain.mgz
+            |   |__ brainmask.mgz
+            |   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.ribbon.mgz
+            |   |__ norm.mgz
+            |   |__ orig.mgz
+            |   |__ ribbon.mgz
+            |
+            |__ scripts/
+            |   |__ mcribs.log
+            |
+            |__ stats/
+            |   |__aseg.stats
+            |   |__brainvol.stats
+            |   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc+DKTatlas.stats
+            |   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.aparc.stats
+            |   |__ <span class="placeholder">&lt;lh|rh&gt;</span>.curv.stats
+            |
+            |__ surf/
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;area|area.mid|area.pial&gt;</span>
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.curv
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.inflated
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.inflated.<span class="placeholder">&lt;H|K&gt;</span>
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.midthickness
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.orig
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.pial
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.smoothwm
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.smoothwm.<span class="placeholder">&lt;BE|C|FI|H|K|K1|K2|S&gt;</span>.crv
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.smoothwm.<span class="placeholder">&lt;H|K&gt;</span>
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.sphere
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.sphere.<span class="placeholder">&lt;reg|reg2&gt;</span>
+                |__ <span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;sulc|thickness|volume|white&gt;</span>
 </pre>
 *See [Format of File Structure Visuals](#visformat) for further guidance on interpreting the folder tree above.*
 
@@ -378,221 +320,260 @@ done</span>
 </div>
 
 <pre class="folder-tree">
-mcribs/
-sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>/
-|__ RawT2/
-|   |__ <span class="subses">SUBSES</span>.nii.gz
-|
-|__ RawT2RadiologicalIsotropic/
-|   |__ <span class="subses">SUBSES</span>.nii.gz_symlink_s3_object
-|
-|__ SurfReconDeformable/
-|   |__ <span class="subses">SUBSES</span>/
-|       |__ meshes/
-|       |   |__ <span class="placeholder">&lt;internal|pial+internal|pial|white+internal|white&gt;</span>.vtp
-|       |   |__ pial-<span class="placeholder">&lt;lh|rh&gt;</span>-reordered.vtp
-|       |   |__ pial-<span class="placeholder">&lt;lh|rh&gt;</span>.vtp
-|       |   |__ white-<span class="placeholder">&lt;lh|rh&gt;</span>.CortexMask.curv
-|       |   |__ white-<span class="placeholder">&lt;lh|rh&gt;</span>.Normals.surf
-|       |   |__ white-<span class="placeholder">&lt;lh|rh&gt;</span>.RegionId.curv
-|       |   |__ white-<span class="placeholder">&lt;lh|rh&gt;</span>.vtp
-|       |
-|       |__ recon/
-|       |   |__ cortical-hull-dmap.nii.gz
-|       |   |__ regions.nii.gz 
-|       |
-|       |__ temp/
-|           |__ <span class="placeholder">&lt;brain|cortex&gt;</span>-mask.nii.gz
-|           |__ cerebrum-<span class="placeholder">&lt;1|2|3&gt;</span>.vtp
-|           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-<span class="placeholder">&lt;1|2|3&gt;</span>.vtp
-|           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-2-output_<span class="placeholder">#</span>.vtp
-|           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-dmap.nii.gz
-|           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-hull-<span class="placeholder">#</span>.vtp
-|           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-iso.vtp
-|           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-mask.nii.gz
-|           |__ corpus-callosum-mask-<span class="placeholder">&lt;1|2|3&gt;</span>.nii.gz
-|           |__ deep-gray-matter-mask-<span class="placeholder">&lt;1|2&gt;</span>.nii.gz
-|           |__ gray-matter-mask-<span class="placeholder">&lt;1|2&gt;</span>.nii.gz
-|           |__ pial-<span class="placeholder">&lt;#|#-output_#&gt;</span>.vtp
-|           |__ pial-foreground.nii.gz
-|           |__ t2w-image.nii.gz_symlink_s3_object
-|           |__ ventricles-dmap.nii.gz
-|           |__ ventricles-mask-<span class="placeholder">&lt;1|2&gt;</span>.nii.gz
-|           |__ white-<span class="placeholder">&lt;#|#-output_#&gt;</span>.vtp
-|           |__ white-foreground.nii.gz
-|           |__ white-matter-mask-<span class="placeholder">&lt;1|2&gt;</span>.nii.gz
-|
-|__ TissueSeg/
-|   |__ <span class="subses">SUBSES</span>_all_labels.nii.gz
-|   |__ <span class="subses">SUBSES</span>_all_labels_manedit.nii.gz_symlink_s3_object
-|   |__ <span class="subses">SUBSES</span>_brain_mask.nii.gz
-|   |__ <span class="subses">SUBSES</span>_t2w_restore.nii.gz_symlink_s3_object
-|
-|__ TissueSegDrawEM/
-|   |__ <span class="subses">SUBSES</span>/
-|       |__ N4/
-|           |__ <span class="subses">SUBSES</span>.nii.gz_symlink_s3_object
-|
-|__ freesurfer/
-<span class="hashtag"># Only files unique to M-CRIB-S subfolder displayed below- see remaining files in derivatives/freesurfer visual</span>
-|   |__ <span class="subses">SUBSES</span>/
-|       |__ label/
-|       |__ mri/
-|       |   |__ brain.mgz_symlink_s3_object
-|       |   |__ orig.mgz_symlink_s3_object
-|       |__ stats/
-|       |__ surf/
-|
-|__ logs/
-|   |__ <span class="subses">SUBSES</span>.log
-|
-|__ command.txt
+hbcd/
+|__ derivatives/ 
+    |__ mcribs/
+        |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>/
+            |__ RawT2/
+            |   |__ <span class="subses">SUBSES</span>.nii.gz
+            |
+            |__ RawT2RadiologicalIsotropic/
+            |   |__ <span class="subses">SUBSES</span>.nii.gz_symlink_s3_object
+            |
+            |__ SurfReconDeformable/
+            |   |__ <span class="subses">SUBSES</span>/
+            |       |__ meshes/
+            |       |   |__ <span class="placeholder">&lt;internal|pial+internal|pial|white+internal|white&gt;</span>.vtp
+            |       |   |__ pial-<span class="placeholder">&lt;lh|rh&gt;</span>-reordered.vtp
+            |       |   |__ pial-<span class="placeholder">&lt;lh|rh&gt;</span>.vtp
+            |       |   |__ white-<span class="placeholder">&lt;lh|rh&gt;</span>.CortexMask.curv
+            |       |   |__ white-<span class="placeholder">&lt;lh|rh&gt;</span>.Normals.surf
+            |       |   |__ white-<span class="placeholder">&lt;lh|rh&gt;</span>.RegionId.curv
+            |       |   |__ white-<span class="placeholder">&lt;lh|rh&gt;</span>.vtp
+            |       |
+            |       |__ recon/
+            |       |   |__ cortical-hull-dmap.nii.gz
+            |       |   |__ regions.nii.gz 
+            |       |
+            |       |__ temp/
+            |           |__ <span class="placeholder">&lt;brain|cortex&gt;</span>-mask.nii.gz
+            |           |__ cerebrum-<span class="placeholder">&lt;1|2|3&gt;</span>.vtp
+            |           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-<span class="placeholder">&lt;1|2|3&gt;</span>.vtp
+            |           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-2-output_<span class="placeholder">#</span>.vtp
+            |           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-dmap.nii.gz
+            |           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-hull-<span class="placeholder">#</span>.vtp
+            |           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-iso.vtp
+            |           |__ cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-mask.nii.gz
+            |           |__ corpus-callosum-mask-<span class="placeholder">&lt;1|2|3&gt;</span>.nii.gz
+            |           |__ deep-gray-matter-mask-<span class="placeholder">&lt;1|2&gt;</span>.nii.gz
+            |           |__ gray-matter-mask-<span class="placeholder">&lt;1|2&gt;</span>.nii.gz
+            |           |__ pial-<span class="placeholder">&lt;#|#-output_#&gt;</span>.vtp
+            |           |__ pial-foreground.nii.gz
+            |           |__ t2w-image.nii.gz_symlink_s3_object
+            |           |__ ventricles-dmap.nii.gz
+            |           |__ ventricles-mask-<span class="placeholder">&lt;1|2&gt;</span>.nii.gz
+            |           |__ white-<span class="placeholder">&lt;#|#-output_#&gt;</span>.vtp
+            |           |__ white-foreground.nii.gz
+            |           |__ white-matter-mask-<span class="placeholder">&lt;1|2&gt;</span>.nii.gz
+            |
+            |__ TissueSeg/
+            |   |__ <span class="subses">SUBSES</span>_all_labels.nii.gz
+            |   |__ <span class="subses">SUBSES</span>_all_labels_manedit.nii.gz_symlink_s3_object
+            |   |__ <span class="subses">SUBSES</span>_brain_mask.nii.gz
+            |   |__ <span class="subses">SUBSES</span>_t2w_restore.nii.gz_symlink_s3_object
+            |
+            |__ TissueSegDrawEM/
+            |   |__ <span class="subses">SUBSES</span>/
+            |       |__ N4/
+            |           |__ <span class="subses">SUBSES</span>.nii.gz_symlink_s3_object
+            |
+            |__ freesurfer/ <span class="hashtag"># Only files unique to M-CRIB-S FreeSurfer subfolder displayed</span>
+            |   |__ <span class="subses">SUBSES</span>/
+            |       |__ label/
+            |       |__ mri/
+            |       |   |__ brain.mgz_symlink_s3_object
+            |       |   |__ orig.mgz_symlink_s3_object
+            |       |__ stats/
+            |       |__ surf/
+            |
+            |__ logs/
+            |   |__ <span class="subses">SUBSES</span>.log
+            |
+            |__ command.txt
 </pre>
 *See [Format of File Structure Visuals](#visformat) for further guidance on interpreting the folder tree above.*
 
-## OSPREY-BIDS (`osprey/`)
-OSPREY-BIDS is the BIDS extension to the OSPREY pipeline used to process HBCD magnetic resonance spectroscopy (MRS) data. Only the `HERCULES/` file tree is displayed below. The `unedited/` files generally follow similar naming conventions, with some exceptions (e.g., the BIDS field `acq-shortTE` is used instead of `acq-hercules`). Please see the [OSPREY-BIDS documentation](https://osprey-bids.readthedocs.io/en/latest/index.html) for a detailed explanation of these outputs.
+### XCP-D (`xcp_d/`)
+XCP-D performs functional MRI post-processing and noise regression from Infant-fMRIPrep derivatives. Please see the [XCP-D webpage](https://xcp-d.readthedocs.io/en/latest/) to learn more and read details about the output file types.
+<p>
+<div id="fyi-xcpd" class="notification-banner">
+    <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+    <span class="text">NOTE: The current release includes XCP-D derivatives for V02 only.
+	</span>
+</div>
+</p>
 
-<pre class="folder-tree">
-osprey/
-|__ sub-<span class="label">&lt;label&gt;</span>/
-    |__ ses-<span class="label">&lt;label&gt;</span>/
-        |__ HERCULES/
-        |   |__ PreOspreyLocalizerReg/
-        |   |   |__ figures/
-        |   |   |__ <span class="placeholder">&lt;aal|c1|c2|c3&gt;</span>reference_seg_aligned_to_localizer.nii.gz
-        |   |   |__ reference_<span class="placeholder">&lt;img|seg&gt;</span>_aligned_to_localizer.nii.gz
-        |   |   |__ registration_summary.json
-        |   |   |__ transform_mat.npy
-        |   |   |__ readme.txt
-        |   |
-        |   |__ QuantifyResults/ <span class="hashtag">(ALL +JSON)</span>
-        |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1.tsv
-        |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1.tsv
-        |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_CSFWaterScaled_Voxel_1_Basis_1.tsv 
-        |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_TissCorrWaterScaled_Voxel_1_Basis_1.tsv
-        |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_amplMets_Voxel_1_Basis_1.tsv
-        |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_rawWaterScaled_Voxel_1_Basis_1.tsv
-        |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_tCr_Voxel_1_Basis_1.tsv
-        |   |
-        |   |__ Reports/
-        |   |   |__ reportFigures/
-        |   |   |__ sub-<span class="label">&lt;label&gt;</span>-report.html
-        |   |
-        |   |__ SegMaps/
-        |   |   |__ TissueFractions_Voxel_1.tsv <span class="hashtag">(+JSON)</span>
-        |   |   |__ <span class="subses">SUBSES</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-CSF.nii.gz
-        |   |   |__ <span class="subses">SUBSES</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-GM.nii.gz
-        |   |   |__ <span class="subses">SUBSES</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-Tha.nii.gz
-        |   |   |__ <span class="subses">SUBSES</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-WM.nii.gz
-        |   |
-        |   |__ VoxelMasks/
-        |   |   |__ <span class="subses">SUBSES</span>_acq-hercules_svs_space-scanner_mask.nii.gz
-        |   |
-        |   |__ LogFile.txt
-        |   |__ QM_processed_spectra.tsv <span class="hashtag">(+JSON)</span>
-        |   |__ SummaryMRSinMRS.md
-        |   |__ subject_names_and_excluded.tsv <span class="hashtag">(+JSON)</span>
-        |   |__ wrapper_settings.mat <span class="hashtag">(+JSON)</span>
-        |
-        |__ unedited/
+<pre style="font-size: 11px;" class="folder-tree">
+hbcd/
+|_ derivatives/ 
+   |_ xcp_d/
+      |_ sub-<span class="label">&lt;label&gt;</span>/
+         |_ ses-<span class="label">&lt;label&gt;</span>/
+         |  |_ anat/
+         |  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-MNI152NLin6Asym_desc-preproc_T2w.nii.gz
+         |  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph.tsv
+         |  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_desc-sulc_morph.tsv
+         |  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_desc-thickness_morph.tsv
+         |  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;inflated|vinflated&gt;</span>.surf.gii
+         |  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;midthickness|pial|white&gt;</span>.surf.gii
+         |  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-fsLR_den-91k_<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>.dscalar.nii
+         |  |
+         |  |_ func/ <span class="hashtag"># All func files have JSONs with exception of .hdf5 & *linc_qc.tsv</span>
+         |     |_ <span class="subses">SUBSES</span>_task-rest_desc-abcc_qc.hdf5 <span class="hashtag">(No JSON)</span>
+         |     |_ <span class="subses">SUBSES</span>_task-rest_<span class="placeholder">&lt;motion|outliers&gt;</span>.tsv
+         |     |_ <span class="subses">SUBSES</span>_task-rest_space-fsLR_den-91k_desc-denoisedSmoothed_bold.dtseries.nii
+         |     |_ <span class="subses">SUBSES</span>_task-rest_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii
+         |     |_ <span class="subses">SUBSES</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
+         |     |_ <span class="subses">SUBSES</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
+         |     |_ <span class="subses">SUBSES</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-abcc_qc.hdf5 <span class="hashtag">(No JSON)</span>
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_desc-linc_qc.tsv <span class="hashtag">(No JSON)</span>
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_<span class="placeholder">&lt;design|motion|outliers&gt;</span>.tsv
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_desc-denoisedSmoothed_bold.dtseries.nii
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_stat-alff_boldmap.dscalar.nii
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_stat-alff_desc-smooth_boldmap.dscalar.nii
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_stat-reho_boldmap.dscalar.nii
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-coverage_boldmap.pscalar.nii
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-pearsoncorrelation_boldmap.pconn.nii
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-alff_bold.tsv
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-coverage_bold.tsv
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
+         |     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-reho_bold.tsv
+         |  
+         |_ figures/
+         |_ <span class="subses">SUBSES</span>_executive_summary.html
+         |_ sub-<span class="label">&lt;label&gt;</span>.html
 </pre>
-*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
-
-## qMRI Postproc (`qmri_postproc/`)
-This pipeline performs minimal post-processing for SyMRI synthetic images derived from QALAS acquisition. Please visit the [qMRI PostProc webpage](https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html) for a description of the file outputs below.
-
-<pre class="folder-tree">
-qmri_postproc/
-|__ sub-<span class="label">&lt;label&gt;</span>/
-    |__ ses-<span class="label">&lt;label&gt;</span>/
-        |__ anat/  
-            |__ <span class="subses">SUBSES</span>_desc-AsegROIs_scalarstats.json
-            |__ <span class="subses">SUBSES</span>_desc-AsegROIs_scalarstats.tsv
-            |__ <span class="subses">SUBSES</span>_desc-BilateralAsegROIs_scalarstats.json
-            |__ <span class="subses">SUBSES</span>_desc-BilateralAsegROIs_scalarstats.tsv
-            |__ <span class="subses">SUBSES</span>_desc-RegistrationQCAid.json
-            |__ <span class="subses">SUBSES</span>_desc-RegistrationQCAid.png
-            |__ <span class="subses">SUBSES</span>_space-QALAS_desc-aseg_dseg.nii.gz
-            |__ <span class="subses">SUBSES</span>_space-T2w_desc-QALAS_T2map.json
-            |__ <span class="subses">SUBSES</span>_space-T2w_desc-QALAS_T2map.nii.gz
-</pre>
-*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
-
-## QSIPrep (`qsiprep/`) 
-The QSIPrep pipeline is used for preprocessing the HBCD diffusion-weighted MRI (dMRI) data. Preprocessing includes head motion correction, susceptibility distortion correction, MP-PCA denoising, coregistration to T1w images, ANTS spatial normalization, and tissue segmentation. The QSIPrep derivatives are then passed to [QSIRecon](#qsirecon) for reconstruction. Please see a full description of this pipeline on their [webpage](https://qsiprep.readthedocs.io/en/latest/). 
-
-<pre class="folder-tree">
-qsiprep/
-|__ sub-<span class="label">&lt;label&gt;</span>/
-    |__ log/
-    |__ ses-<span class="label">&lt;label&gt;</span>/
-        |__ anat/
-        |   |__ <span class="subses">SUBSES</span>_from-ACPC_to-anat_mode-image_xfm.mat        
-        |   |__ <span class="subses">SUBSES</span>_from-ACPC_to-MNIInfant+1_mode-image_xfm.h5
-        |   |__ <span class="subses">SUBSES</span>_from-anat_to-ACPC_mode-image_xfm.mat
-        |   |__ <span class="subses">SUBSES</span>_from-MNIInfant+1_to-ACPC_mode-image_xfm.h5
-        |   |__ <span class="subses">SUBSES</span>_from-orig_to-anat_mode-image_xfm.txt
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-aseg_dseg.nii.gz
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-brain_mask.nii.gz
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_T2w.json
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_T2w.nii.gz
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_dseg.nii.gz
-        |
-        |__ dwi/
-        |   |__ <span class="subses">SUBSES</span>_desc-confounds_timeseries.tsv
-        |   |__ <span class="subses">SUBSES</span>_desc-desc-pepolar_qc.tsv
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-brain_mask.nii.gz
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-image_qc.tsv
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.b
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.b_table.txt
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.bval
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.bvec
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.json
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.nii.gz
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-slice_qc.json
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_dwiref.nii.gz
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_model-eddy_stat-cnr_dwimap.json
-        |   |__ <span class="subses">SUBSES</span>_space-ACPC_model-eddy_stat-cnr_dwimap.nii.gz
-        |
-        |__ figures/
-        |__ <span class="subses">SUBSES</span>.html
-</pre>
-*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder structure visual.*
-
-## QSIRecon 
-QSIPrep derivatives are passed to QSIRecon for reconstruction, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. The data are processed using a variety of methods and models (e.g. [Dipy](https://dipy.org/), [MRTrix](https://www.mrtrix.org/), [DSI Studio](https://dsi-studio.labsolver.org/), etc). Please see the [QSIRecon webpage](https://qsirecon.readthedocs.io/en/latest/) for a details.
-
-<pre class="folder-tree">
-derivatives/ 
-|__ qsirecon/
-|  |__ log/
-|
-|__ qsirecon-*/
-    |__ sub-<span class="label">&lt;label&gt;</span>/
-        |__ ses-<span class="label">&lt;label&gt;</span>/
-            |__ dwi/
-            |__ figures/
-            |__ <span class="subses">SUBSES</span>.html    
-</pre>  
-*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder trees*.
-
-### Dipy (`qsirecon-DIPYDKI/`)
-<pre class="folder-tree">
-dwi/
- |__ <span class="subses">SUBSES</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
- |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">&lt;PARAM&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
- |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
-</pre>
-
 <details open>
 <summary>Label Values Legend</summary>
 <p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
-  <b style="color: #0077cc;">PARAM</b>: ad, ak, kfa, md, mk, mkt, rd, rk
+    <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations): 4S-{1-10}56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)
 </p>
 </details>
 
-### DSI Studio (`qsirecon-DSIStudio/`)
+## Quantitative MRI: SyMRI & qMRI Postproc
+
+[SyMRI](https://syntheticmr.com/products/symri-neuro/), a proprietary software for quantitative MRI, is used to generate T1w and T2w images and derived relaxometry maps from [QALAS](https://pubmed.ncbi.nlm.nih.gov/25526880/) brain images. These outputs are then minimally preprocessed by [qMRI PostProc](https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html).
+
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
+    |__ symri/  <span class="hashtag"># SyMRI Derivatives</span>
+    |   |__ sub-<span class="label">&lt;label&gt;</span>/
+    |       |__ ses-<span class="label">&lt;label&gt;</span>/
+    |           |__ anat/
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T1w.nii.gz
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T1w.json
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T2map.nii.gz
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T2map.json
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T2w.nii.gz
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T2w.json
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_desc-SymriContainer.log
+    |
+    |__ qmri_postproc/ <span class="hashtag"># qMRI Post-Proc Derivatives</span>
+        |__ sub-<span class="label">&lt;label&gt;</span>/
+            |__ ses-<span class="label">&lt;label&gt;</span>/
+                |__ anat/  
+                    |__ <span class="subses">SUBSES</span>_desc-AsegROIs_scalarstats.json
+                    |__ <span class="subses">SUBSES</span>_desc-AsegROIs_scalarstats.tsv
+                    |__ <span class="subses">SUBSES</span>_desc-BilateralAsegROIs_scalarstats.json
+                    |__ <span class="subses">SUBSES</span>_desc-BilateralAsegROIs_scalarstats.tsv
+                    |__ <span class="subses">SUBSES</span>_desc-RegistrationQCAid.json
+                    |__ <span class="subses">SUBSES</span>_desc-RegistrationQCAid.png
+                    |__ <span class="subses">SUBSES</span>_space-QALAS_desc-aseg_dseg.nii.gz
+                    |__ <span class="subses">SUBSES</span>_space-T2w_desc-QALAS_T2map.json
+                    |__ <span class="subses">SUBSES</span>_space-T2w_desc-QALAS_T2map.nii.gz
+</pre>
+*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
+
+## Diffusion MRI
+
+<pre class="folder-tree">
+<span class="hashtag"># Diffusion MRI Pipeline Derivatives:</span>
+hbcd/
+|__ derivatives/ 
+    |__ qsiprep/
+    |__ qsirecon/
+    |__ qsirecon-DIPYDKI/
+    |__ qsirecon-DSIStudio/
+    |__ qsirecon-NODDI/
+    |__ qsirecon-TORTOISE_model-MAPMRI/
+    |__ qsirecon-TORTOISE_model-tensor/
+</pre>
+
+### QSIPrep (`qsiprep/`) 
+The QSIPrep pipeline is used for preprocessing the HBCD diffusion-weighted MRI (dMRI) data. Preprocessing includes head motion correction, susceptibility distortion correction, MP-PCA denoising, coregistration to T1w images, ANTS spatial normalization, and tissue segmentation. The QSIPrep derivatives are then passed to [QSIRecon](#qsirecon) for reconstruction. Please see a full description of this pipeline on their [webpage](https://qsiprep.readthedocs.io/en/latest/). 
+
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
+    |__ qsiprep/
+        |__ sub-<span class="label">&lt;label&gt;</span>/
+            |__ log/
+            |__ ses-<span class="label">&lt;label&gt;</span>/
+                |__ anat/
+                |   |__ <span class="subses">SUBSES</span>_from-ACPC_to-anat_mode-image_xfm.mat        
+                |   |__ <span class="subses">SUBSES</span>_from-ACPC_to-MNIInfant+1_mode-image_xfm.h5
+                |   |__ <span class="subses">SUBSES</span>_from-anat_to-ACPC_mode-image_xfm.mat
+                |   |__ <span class="subses">SUBSES</span>_from-MNIInfant+1_to-ACPC_mode-image_xfm.h5
+                |   |__ <span class="subses">SUBSES</span>_from-orig_to-anat_mode-image_xfm.txt
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-aseg_dseg.nii.gz
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-brain_mask.nii.gz
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_T2w.json
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_T2w.nii.gz
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_dseg.nii.gz
+                |
+                |__ dwi/
+                |   |__ <span class="subses">SUBSES</span>_desc-confounds_timeseries.tsv
+                |   |__ <span class="subses">SUBSES</span>_desc-desc-pepolar_qc.tsv
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-brain_mask.nii.gz
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-image_qc.tsv
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.b
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.b_table.txt
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.bval
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.bvec
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.json
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-preproc_dwi.nii.gz
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_desc-slice_qc.json
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_dwiref.nii.gz
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_model-eddy_stat-cnr_dwimap.json
+                |   |__ <span class="subses">SUBSES</span>_space-ACPC_model-eddy_stat-cnr_dwimap.nii.gz
+                |
+                |__ figures/
+                |__ <span class="subses">SUBSES</span>.html
+</pre>
+*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder structure visual.*
+
+### QSIRecon 
+QSIPrep derivatives are passed to QSIRecon for reconstruction, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. The data are processed using a variety of methods and models (e.g. [Dipy](https://dipy.org/), [MRTrix](https://www.mrtrix.org/), [DSI Studio](https://dsi-studio.labsolver.org/), etc). Please see the [QSIRecon webpage](https://qsirecon.readthedocs.io/en/latest/) for a details.
+
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
+    |__ qsirecon/
+    |  |__ log/
+    |
+    |__ qsirecon-*/
+        |__ sub-<span class="label">&lt;label&gt;</span>/
+            |__ ses-<span class="label">&lt;label&gt;</span>/
+                |__ dwi/
+                |__ figures/
+                |__ <span class="subses">SUBSES</span>.html    
+</pre>  
+*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder trees*.
+
+#### Dipy (`qsirecon-DIPYDKI/`)
+<pre class="folder-tree">
+dwi/
+ |__ <span class="subses">SUBSES</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+ |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">ad|ak|kfa|md|mk|mkt|rd|rk</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+ |__ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+</pre>
+
+#### DSI Studio (`qsirecon-DSIStudio/`)
 <pre class="folder-tree">
 dwi/
 |__ <span class="subses">SUBSES</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
@@ -630,109 +611,148 @@ dwi/
 </p>
 </details>
 
-### TORTOISE (`qsirecon-TORTOISE_model-<MAPMRI|tensor>/`)
+#### TORTOISE (`qsirecon-TORTOISE_model-<MAPMRI|tensor>/`)
 The [TORTOISE](https://github.com/QMICodeBase/TORTOISEV4) software calculates MAPMRI and Tensor fits and scalar maps, output to derivative folders `qsirecon-TORTOISE_model-MAPMRI/` and `qsirecon-TORTOISE_model-tensor/`, respectively:
 
-<pre class="folder-tree">
+<pre style="font-size: 11px;" class="folder-tree">
 qsirecon-TORTOISE_model-MAPMRI/
  |_ dwi/ 
    |_ <span class="subses">SUBSES</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-   |_ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="placeholder">&lt;MAP-PARAM&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+   |_ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="placeholder">ng|ngpar|ngperp|pa|path|rtap|rtop|rtpp</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
    |_ <span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;TENSOR-PARAM&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
 
 qsirecon-TORTOISE_model-tensor/
  |_ dwi/ 
     |_ <span class="subses">SUBSES</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-    |_ <span class="subses">SUBSES</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">&lt;TENSOR-PARAM&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+    |_ <span class="subses">SUBSES</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">ad|am|fa|li|rd</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
 </pre>
 
-<details open>
-<summary>Label Values Legend</summary>
-<p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
-  <b style="color: #0077cc;">MAP-PARAM</b>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
-</p>
-<p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
-  <b style="color: #0077cc;">TENSOR-PARAM</b>: ad, am, fa, li, rd
-</p>
-</details>
+## MR Spectroscopy: OSPREY-BIDS
 
-## SyMRI (`symri/`)
-[SyMRI](https://syntheticmr.com/products/symri-neuro/) is proprietary software for quantitative MRI. For HBCD it is used to generate synthetic contrast weighted images derived from measures of the absolute properties of [QALAS](https://pubmed.ncbi.nlm.nih.gov/25526880/) brain images. These outputs are then minimally preprocessed by [qMRI Postproc](#qmri-postproc-qmri_postproc). Files include synthetic T1w and T2w images (`SUBSES_acq-QALAS_<T1w|T2w>.nii.gz`) and derived relaxometry maps (`SUBSES_acq-QALAS_T2map.nii.gz`).
+OSPREY-BIDS is the BIDS extension to the OSPREY pipeline used to process HBCD magnetic resonance spectroscopy (MRS) data. Only the `HERCULES/` file tree is displayed below. The `unedited/` files generally follow similar naming conventions, with some exceptions (e.g., the BIDS field `acq-shortTE` is used instead of `acq-hercules`). Please see the [OSPREY-BIDS documentation](https://osprey-bids.readthedocs.io/en/latest/index.html) for a detailed explanation of these outputs.
+
 <pre class="folder-tree">
-symri/
-|__ sub-<span class="label">&lt;label&gt;</span>/
-    |__ ses-<span class="label">&lt;label&gt;</span>/
-        |__ anat/
-            |__ <span class="subses">SUBSES</span>_acq-QALAS_T1w.nii.gz
-            |__ <span class="subses">SUBSES</span>_acq-QALAS_T1w.json
-            |__ <span class="subses">SUBSES</span>_acq-QALAS_T2map.nii.gz
-            |__ <span class="subses">SUBSES</span>_acq-QALAS_T2map.json
-            |__ <span class="subses">SUBSES</span>_acq-QALAS_T2w.nii.gz
-            |__ <span class="subses">SUBSES</span>_acq-QALAS_T2w.json
-            |__ <span class="subses">SUBSES</span>_acq-QALAS_desc-SymriContainer.log
+hbcd/
+|__ derivatives/ 
+    |__ osprey/
+        |__ sub-<span class="label">&lt;label&gt;</span>/
+            |__ ses-<span class="label">&lt;label&gt;</span>/
+                |__ HERCULES/
+                |   |__ PreOspreyLocalizerReg/
+                |   |   |__ figures/
+                |   |   |__ <span class="placeholder">&lt;aal|c1|c2|c3&gt;</span>reference_seg_aligned_to_localizer.nii.gz
+                |   |   |__ reference_<span class="placeholder">&lt;img|seg&gt;</span>_aligned_to_localizer.nii.gz
+                |   |   |__ registration_summary.json
+                |   |   |__ transform_mat.npy
+                |   |   |__ readme.txt
+                |   |
+                |   |__ QuantifyResults/ <span class="hashtag">(ALL +JSON)</span>
+                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1.tsv
+                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1.tsv
+                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_CSFWaterScaled_Voxel_1_Basis_1.tsv 
+                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_TissCorrWaterScaled_Voxel_1_Basis_1.tsv
+                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_amplMets_Voxel_1_Basis_1.tsv
+                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_rawWaterScaled_Voxel_1_Basis_1.tsv
+                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_tCr_Voxel_1_Basis_1.tsv
+                |   |
+                |   |__ Reports/
+                |   |   |__ reportFigures/
+                |   |   |__ sub-<span class="label">&lt;label&gt;</span>-report.html
+                |   |
+                |   |__ SegMaps/
+                |   |   |__ TissueFractions_Voxel_1.tsv <span class="hashtag">(+JSON)</span>
+                |   |   |__ <span class="subses">SUBSES</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-CSF.nii.gz
+                |   |   |__ <span class="subses">SUBSES</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-GM.nii.gz
+                |   |   |__ <span class="subses">SUBSES</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-Tha.nii.gz
+                |   |   |__ <span class="subses">SUBSES</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-WM.nii.gz
+                |   |
+                |   |__ VoxelMasks/
+                |   |   |__ <span class="subses">SUBSES</span>_acq-hercules_svs_space-scanner_mask.nii.gz
+                |   |
+                |   |__ LogFile.txt
+                |   |__ QM_processed_spectra.tsv <span class="hashtag">(+JSON)</span>
+                |   |__ SummaryMRSinMRS.md
+                |   |__ subject_names_and_excluded.tsv <span class="hashtag">(+JSON)</span>
+                |   |__ wrapper_settings.mat <span class="hashtag">(+JSON)</span>
+                |
+                |__ unedited/
 </pre>
 *See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
 
-
-## XCP-D (`xcp_d/`)
-XCP-D performs functional MRI post-processing and noise regression from Infant-fMRIPrep derivatives. Please see the [XCP-D webpage](https://xcp-d.readthedocs.io/en/latest/) to learn more and read details about the output file types.
-
-<p>
-<div id="fyi-xcpd" class="notification-banner">
-    <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text">NOTE: The current release includes XCP-D derivatives for V02 only.
-	</span>
-</div>
-</p>
+## EEG: HBCD-MADE
+HBCD-MADE produces preprocessed EEG derivatives. Please see the [HBCD-MADE webpage](https://docs-hbcd-made.readthedocs.io/en/latest) for a full explanation of the derivative files displayed below.
 
 <pre class="folder-tree">
-xcp_d/
-sub-<span class="label">&lt;label&gt;</span>/
-|_ ses-<span class="label">&lt;label&gt;</span>/
-|  |_ anat/
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-MNI152NLin6Asym_desc-preproc_T2w.nii.gz
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;SEG-A&gt;</span>_stat-mean_desc-curv_morph.tsv
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;SEG-A&gt;</span>_stat-mean_desc-sulc_morph.tsv
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;SEG-A&gt;</span>_stat-mean_desc-thickness_morph.tsv
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;inflated|vinflated&gt;</span>.surf.gii
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;midthickness|pial|white&gt;</span>.surf.gii
-|  |  |_ <span class="subses">SUBSES</span>_run-<span class="label">#</span>_space-fsLR_den-91k_<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>.dscalar.nii
-|  |
-|  |_ func/ <span class="hashtag"># All func files have JSONs with exception of .hdf5 & *linc_qc.tsv</span>
-|     |_ <span class="subses">SUBSES</span>_task-rest_desc-abcc_qc.hdf5 <span class="hashtag">(No JSON)</span>
-|     |_ <span class="subses">SUBSES</span>_task-rest_<span class="placeholder">&lt;motion|outliers&gt;</span>.tsv
-|     |_ <span class="subses">SUBSES</span>_task-rest_space-fsLR_den-91k_desc-denoisedSmoothed_bold.dtseries.nii
-|     |_ <span class="subses">SUBSES</span>_task-rest_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii
-|     |_ <span class="subses">SUBSES</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;SEG-F&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
-|     |_ <span class="subses">SUBSES</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;SEG-F&gt;</span>_stat-mean_timeseries.tsv
-|     |_ <span class="subses">SUBSES</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;SEG-F&gt;</span>_stat-pearsoncorrelation_relmat.tsv
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_desc-abcc_qc.hdf5 <span class="hashtag">(No JSON)</span>
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_desc-linc_qc.tsv <span class="hashtag">(No JSON)</span>
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_<span class="placeholder">&lt;design|motion|outliers&gt;</span>.tsv
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_desc-denoisedSmoothed_bold.dtseries.nii
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_stat-alff_boldmap.dscalar.nii
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_stat-alff_desc-smooth_boldmap.dscalar.nii
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_den-91k_stat-reho_boldmap.dscalar.nii
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;SEG-F&gt;</span>_den-91k_stat-coverage_boldmap.pscalar.nii
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;SEG-F&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;SEG-F&gt;</span>_den-91k_stat-pearsoncorrelation_boldmap.pconn.nii
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;SEG-F&gt;</span>_stat-alff_bold.tsv
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;SEG-F&gt;</span>_stat-coverage_bold.tsv
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;SEG-F&gt;</span>_stat-mean_timeseries.tsv
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;SEG-F&gt;</span>_stat-pearsoncorrelation_relmat.tsv
-|     |_ <span class="subses">SUBSES</span>-task-rest_dir-PA_run-<span class="label">#</span>_space-fsLR_seg-<span class="placeholder">&lt;SEG-F&gt;</span>_stat-reho_bold.tsv
-|  
-|_ figures/
-|
-<span class="subses">SUBSES</span>_executive_summary.html
-sub-<span class="label">&lt;label&gt;</span>.html
+hbcd/
+|__ derivatives/ 
+    |__ made/
+        |__ sub-<span class="label">&lt;label&gt;</span>/
+            |__ ses-<span class="label">&lt;label&gt;</span>/
+                |__ eeg/
+                    |__ filtered_data/
+                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.fdt
+                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.set
+                    |
+                    |__ ica_data/
+                    |   |__ <span class="subses">SUBSES</span>_adjustReport.txt
+                    |   |__ <span class="subses">SUBSES</span>_desc-mergedICA_eeg.fdt
+                    |   |__ <span class="subses">SUBSES</span>_desc-mergedICA_eeg.set
+                    | 
+                    |__ merged_data/
+                    |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.fdt
+                    |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.json
+                    |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.set
+                    | 
+                    |__ processed_data/
+                    |   |__ sub-<span class="label">&lt;label&gt;</span>_task-FACE_desc-<span class="placeholder">&lt;FACE-JPG&gt;</span>.jpg
+                    |   |__ sub-<span class="label">&lt;label&gt;</span>_task-MMN_desc-<span class="placeholder">&lt;MMN-JPG&gt;</span>.jpg
+                    |   |__ <span class="subses">SUBSES</span>_task-RS_powerSummaryStats.csv
+                    |   |__ sub-<span class="label">&lt;label&gt;</span>_task-VEP_<span class="placeholder">&lt;desc-oz_ERP|topo&gt;</span>.jpg
+                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_acq-eeg_ERP.mat
+                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.fdt
+                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.set
+                    | 
+                    |__ <span class="subses">SUBSES</span>_acq-eeg_preprocessingReport.csv
+                    |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_MADEspecification.json
 </pre>
 
 <details open>
 <summary>Label Values Legend</summary>
 <p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
-  <b style="color: #0077cc;">SEG-A</b>: 4S&lt;1-10&gt;00Parcels, Glasser, Gordon, MIDB, MyersLabonte <br>
-  <b style="color: #0077cc;">SEG-F</b>: 4S&lt;1-10&gt;00Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian
+  <b style="color: #0077cc;">FACE-JPG</b>: Oz_diffERP, diffInvVsUpr_topo, diffObjVsUp2_topo, inverted_topo, object_topo, oz_ERP, upright_topo, upright2_topo
+</p>
+<p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
+  <b style="color: #0077cc;">MMN-JPG</b>: deviant_topo, diffDevVsSta_topo, diffDevVsPre_topo, preDeviant_topo, standard_topo, t7t8_diffERP, t7t8_ERP
 </p>
 </details>
+
+*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
+
+## Biosensors: HBCD-Motion
+The HBCD-Motion pipeline is used to process the HBCD Axivity Ax6 sensor recordings of infant leg movements across 72 continuous hours. Please see a full description of the output files on their webpage [here](https://hbcd-motion-postproc.readthedocs.io/en/latest/outputs.html#outputs).
+
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
+    |__ hbcd_motion/
+        |__ sub-<span class="label">&lt;label&gt;</span>/
+            |__ ses-<span class="label">&lt;label&gt;</span>/
+                |__ motion/
+                    |__ Kinematics/
+                    |   |__ <span class="subses">SUBSES</span>_desc-kinematics_recording-20_motion.json
+                    |   |__ <span class="subses">SUBSES</span>_desc-kinematics_recording-25_motion.json
+                    |
+                    |__ PA/
+                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_BOUTS.tsv
+                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_LOG.txt
+                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_RAW.tsv
+                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_SUMMARY.json
+                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_BOUTS.tsv
+                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_LOG.txt
+                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_RAW.tsv
+                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_SUMMARY.json
+                    |
+                    |__ PARAMETERS.json
+                    |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-calibrated_recording-20_motion.tsv
+</pre>
+*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder structure visual.*
