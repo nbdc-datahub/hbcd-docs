@@ -1,6 +1,6 @@
 # Infant Leg Motion Wearable Sensor
 
-The HBCD data release includes Infant Leg Motion Wearable Sensor data acquired during visits V02 and V03, V04.
+The HBCD data release includes Infant Leg Motion Wearable Sensor data acquired during visits V02, V03, and V04.
 
 ## Release Data
 
@@ -21,8 +21,8 @@ The HBCD data release includes Infant Leg Motion Wearable Sensor data acquired d
 
 Motion/accelerometry data collected from wearable infant leg sensors includes raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data:
 
-- <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#motion" target="_blank">Raw BIDS</a> under subject- and session-specific <code>motion/</code> folders (*file-based data*)
-- <i class="fas fa-cog"></i> <a href="../../datacuration/derivatives/#biosensors-hbcd-motion" target="_blank">Derivatives</a> processed through the HBCD-Motion pipeline under <code>hbcd_motion/</code> (*file-based data*)
+- <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#motion" target="_blank">Raw BIDS</a> under subject- and session-specific <code>motion/</code> folders
+- <i class="fas fa-cog"></i> <a href="../../datacuration/derivatives/#biosensors-hbcd-motion" target="_blank">Derivatives</a> processed through the HBCD-Motion pipeline under <code>hbcd_motion/</code>
 
 <pre class="folder-tree">
 hbcd/
