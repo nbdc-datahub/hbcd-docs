@@ -3,12 +3,6 @@
 
 # NIH Baby Toolbox
 
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">The NIH Baby Toolbox contains several assessments. Each included in the release data are described below.</span>
-</div>
-<p></p>
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
