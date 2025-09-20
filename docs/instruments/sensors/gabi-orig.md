@@ -13,9 +13,19 @@
 
 # Infant Heart Rate Wearable Sensor
 
-The HBCD data release includes Infant Heart Rate Wearable Sensor data acquired during visits V02 and V03.
+The HBCD data release includes Infant Heart Rate Wearable Sensor data acquired during visits V02 and V03, V04.
 
 ## Release Data
+
+Infant heart rate data collected from wearable sensors is available as <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. The current release includes only <a href="../../../datacuration/rawbids/#gabi" target="_blank">raw sensor data</a> located in the subject- and session-level <code>gabi/</code> folders. Future releases will include <a href="../../../datacuration/derivatives" target="_blank">processed derivatives</a> as well. 
+
+<pre class="folder-tree">
+hbcd/
+|__ rawdata/ 
+    |__ sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw sensor data</span>
+        |__ ses-<span class="label">&lt;label&gt;</span>/
+            |__ gabi/
+</pre>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -47,22 +57,29 @@ The HBCD data release includes Infant Heart Rate Wearable Sensor data acquired d
 <p>Note that infant heart rate sensor data may contain non-consecutive samples. The most likely reason is an inconsistent connection between the sensor and the receiver tablet, which can result in missing samples. Always refer to the timestamps embedded in the files to reconstruct the temporal sequence of the data. Infant heart rate sensor recordings may also be shorter than the planned 72 hours, which can occur due to human error, technical issues, or a parent/legal guardian deciding to discontinue data collection.</p> 
 </div>
 
-Infant heart rate data collected from wearable sensors includes raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data:
+## Administration & Quality Control
 
-- <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#gabi" target="_blank">Raw BIDS</a> under subject- and session-specific <code>gabi/</code> folders
-- <i class="fas fa-cog"></i> Derivatives, or processed data, will be available in a future release 
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr><td><b>Child Specific</b></td>
+<td>Yes </td></tr>
+<tr><td><b>Respondent</b></td>
+<td>Child</td></tr>
+<tr><td><b>Administration</b></td>
+<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff in person: the infant heart rate wearable sensor is placed on the participating child by an HBCD Study team member during a visit (V2 or V3) and is then worn for 72 hours, during which time data is collected across the child's typical activities in their natural environment.</td></tr>
+<tr><td><b>Visits</b></td>
+<td>V02, V03</td></tr>
+<tr><td><b>Completion Time</b></td>
+<td>72 hours/4,320 minutes</td></tr>
+<tr><td><b>Quality Control Procedures</b></td>
+<td style="word-wrap: break-word; white-space: normal;">For the infant heart rate wearable sensor (the 72-hour sensor data files), a random selection of files was manually reviewed on a weekly basis for the presence of data, adequate file duration, and discrepancies with the set-up/return forms. Note that only a small percentage of the total infant heart rate wearable sensor data files were reviewed because the procedure was manual.</p>
+<p>Issues with the sensor data were generally rare, and most data were deemed present and accurately collected (when captured correctly). Errors that did arise were corrected, when possible, though this was typically not feasible. Common errors noted included inadequate or missing data (due to human error, technical issues, or a parent/legal guardian declining participation in this aspect of the study), sensors being removed for extended periods during the 72-hour collection, or unavailability of devices to conduct the data collection.</td></tr>      
+</tbody>
+</table>
 
-<pre class="folder-tree">
-hbcd/
-|__ rawdata/ 
-    |__ sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw sensor data</span>
-        |__ ses-<span class="label">&lt;label&gt;</span>/
-            |__ gabi/
-</pre>
+## Instrument Details
 
-## Details
-
-**Infant heart rate sensor data** collected by the infant heart rate wearable sensor for HBCD captures information related to the infant's physiology and sleep. The device is fastened to the infant's upper arm with a soft-textile band by HBCD Study staff and worn for 72 hours, during which time data is collected across the child's typical activities in their natural environment. The photoplethysmography (PPG) sensors (one emitting green light PPG and one emitting red light PPG) embedded in the device allow for the collection of three biosignal estimates sampled at 1 Hz: 
+**Infant heart rate sensor data** collected by the infant heart rate wearable sensor for HBCD captures information related to the infant's physiology and sleep. The device is fastened to the infant's upper arm with a soft-textile band. The photoplethysmography (PPG) sensors (one emitting green light PPG and one emitting red light PPG) embedded in the device allow for the collection of three biosignal estimates sampled at 1 Hz: 
 
  - **Rulse rate** (beats per minute)
  - **Blood oxygen saturation** (SpO<sub>2</sub>, percentage)
@@ -70,11 +87,6 @@ hbcd/
 
 In addition, sleep states are derived from these vital sign data. Data collection is planned for 72 continuous hours. Caregivers followed typical routines, removing the sensor only for water exposure (e.g., baths) and repositioning it afterward. See [Pini et al. 2024](https://www.sciencedirect.com/science/article/pii/S1878929324001075?via%3Dihub) for a full measure description.
 
-## Quality Control
-
-For the infant heart rate wearable sensor (the 72-hour sensor data files), a random selection of files was manually reviewed on a weekly basis for the presence of data, adequate file duration, and discrepancies with the set-up/return forms. Note that only a small percentage of the total infant heart rate wearable sensor data files were reviewed because the procedure was manual.
-
-Issues with the sensor data were generally rare, and most data were deemed present and accurately collected (when captured correctly). Errors that did arise were corrected, when possible, though this was typically not feasible. Common errors noted included inadequate or missing data (due to human error, technical issues, or a parent/legal guardian declining participation in this aspect of the study), sensors being removed for extended periods during the 72-hour collection, or unavailability of devices to conduct the data collection.
 
 ## References
 
