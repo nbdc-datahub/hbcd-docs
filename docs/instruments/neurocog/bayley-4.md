@@ -1,10 +1,25 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-# Bayley Scales of Infant and Toddler Development, Fourth Edition
-    
-**Acronym:** BSID-4, Bayley           
-**Table Name**: `nc_ch_bayley`    
-**Construct:** Child Development (Cognitive, Language, and Motor)
+# Bayley Scales of Infant and Toddler Development
+
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>nc_ch_bayley</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Bayley Scales of Infant and Toddler Development, Fourth Edition (<i>BSID-4</i>, <i>Bayley</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Child Development (Cognitive, Language, and Motor)</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>

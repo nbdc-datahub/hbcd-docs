@@ -2,11 +2,24 @@
 
 # Physical Activity
 
-**Full Name**: Early Childhood Patient-Reported Outcome Measurement Information System Parent Proxy Physical Activity Short Form and Greenspace questions       
-**Acronym:** Activity           
-**Table Name**: `ph_cg_pms__pags`    
-**Construct:** Physical Activity
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>ph_cg_pms__pags</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Early Childhood Patient-Reported Outcome Measurement Information System Parent Proxy Physical Activity Short Form and Greenspace questions
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Physical Activity</div>
+  </div>
+</div>
 
+---------------------------------------------
 
 ## Administration & Quality Control
 

@@ -2,10 +2,24 @@
 
 # Vineland Adaptive Behavior Scales Third Edition
 
-**Full Name**: Vineland Adaptive Behavior Scales Third Edition (Comprehensive Level Parent/Caregiver Q-global Form)               
-**Acronym:** Vineland-3, VABS      
-**Table Name**: `nc_cg_vabs`       
-**Construct**: Adaptive Behavior
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>nc_cg_vabs</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Vineland Adaptive Behavior Scales Third Edition (Comprehensive Level Parent/Caregiver Q-global Form) (<i>Vineland-3</i>, <i>VABS</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Adaptive Behavior</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

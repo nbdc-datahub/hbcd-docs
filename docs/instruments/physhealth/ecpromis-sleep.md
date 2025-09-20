@@ -1,11 +1,25 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
 
-# PROMIS Early Childhood Parent Report Sleep Problems
+# ecPROMIS Parent Report Sleep Problems
 
-**Full Name**: Early Childhood Patient-Reported Outcome Measurement Information System - Childhood Parent Report Sleep Problems - Short Form 8a       
-**Acronym:** PROMIS Sleep           
-**Table Name**: `ph_cg_pms__sleep`    
-**Construct:** Sleep
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>ph_cg_pms__sleep</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Early Childhood Patient-Reported Outcome Measurement Information System - Childhood Parent Report Sleep Problems - Short Form 8a (<i>PROMIS Sleep</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Sleep</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 

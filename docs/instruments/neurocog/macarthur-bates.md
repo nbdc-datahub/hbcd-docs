@@ -2,10 +2,24 @@
 
 # MacArthur-Bates Communicative Development Inventories
 
-**Full Name**: MacArthur-Bates Communicative Development Inventories, Words and Gestures, Web Version, English and Spanish       
-**Acronym:** CDI-WG, Web-CDI-WG           
-**Table Names**: `nc_ch_cdiws` (**Words**) and `nc_ch_cdiwg` (**Gestures**)             
-**Construct**: Language Development in Child
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>nc_ch_cdiws</code> (<i>Words</i>); <code>nc_ch_cdiwg</code> (<i>Gestures</i>)</div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      MacArthur-Bates Communicative Development Inventories, Words and Gestures, Web Version, English and Spanish (<i>CDI-WG</i>, <i>Web-CDI-WG</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Language Development in Child</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

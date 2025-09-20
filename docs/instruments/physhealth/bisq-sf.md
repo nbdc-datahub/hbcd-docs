@@ -2,10 +2,26 @@
 <p style="font-size: 1.5em;">⚠️ <i>NEW README NOT YET SUBMITTED</i></p>
 
 # Brief Infant Sleep Questionnaire (BISQ-SF)
-                    
-**Table Name**: `ph_cg_bisq`                   
-**Construct**: Sleep
 
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>ph_cg_bisq</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Brief Infant Sleep Questionnaire (<i>BISQ-SF</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Sleep</div>
+  </div>
+</div>
+
+---------------------------------------------
+    
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

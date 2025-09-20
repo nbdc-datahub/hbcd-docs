@@ -3,9 +3,24 @@
 
 # Vision Screener
 
-**Full Name:** VS100 Spot Vision Screener       
-**Table Name**: `ph_ch_vs`                   
-**Construct**: Vision
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>ph_ch_vs</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      VS100 Spot Vision Screener 
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Vision</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 

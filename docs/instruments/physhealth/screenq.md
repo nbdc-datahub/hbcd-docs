@@ -2,10 +2,24 @@
 
 # Screen-Based Media Use
 
-**Full Name**: ScreenQ Screen-Based Media Use Measure       
-**Acronym:** ScreenQ           
-**Table Name**: `ph_cg_screenq`    
-**Construct:** Media Use
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>ph_cg_screenq</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      ScreenQ Screen-Based Media Use Measure (<i>ScreenQ</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Media Use</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 

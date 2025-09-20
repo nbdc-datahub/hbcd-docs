@@ -1,9 +1,25 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
 
-# Medical History Questionnaire
-                    
-**Table Name**: `ph_cg_ecls__medhist`                   
-**Construct**: Medical History
+# Medical History
+
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>ph_cg_ecls__medhist</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Medical History Questionnaire
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Medical History</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 
