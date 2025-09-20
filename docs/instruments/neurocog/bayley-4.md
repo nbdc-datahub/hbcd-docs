@@ -1,4 +1,6 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
+
+<p style="color: red;">Workgroup - see suggested edits to <a href="#administration-quality-control">QC section</a> below</p>
 
 # Bayley Scales of Infant and Toddler Development
 
