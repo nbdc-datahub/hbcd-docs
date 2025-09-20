@@ -9,12 +9,7 @@ Geocoded linkage data are provided as <span class="tooltip">file-based<span clas
 <pre class="folder-tree">
 hbcd/
 |__ concatenated/ 
-    |__ genetics/
-        |__ .bed
-        |__ .bim
-        |__ .fam
-        |__ batch.info
-        |__ README
+    |__ geocoded-linkage/
 </pre>
 </p>
 

@@ -2,9 +2,23 @@
 <p style="font-size: 1.5em;">⚠️ <i>NEW README NOT YET SUBMITTED</i>  </p>
 
 # Pre-Scan Questionnaire
-                     
-**Table Name**: `img_ra_prep`           
-**Construct**: Sleeping Scan Prep
+
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>img_ra_prep</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">Pre-Scan Questionnaire</div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Sleeping Scan Prep</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 

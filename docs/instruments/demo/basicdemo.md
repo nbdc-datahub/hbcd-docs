@@ -1,25 +1,19 @@
 <p style="font-size: 1.2em;">🚧 UNDER CONSTRUCTION TO BE UPDATED FOR R2.0 - <i style="color: red;">per Natalie: Basic Demo will be transitioned into "Static" and "Dynamic" tables (effort potentially led by Wes)</i></p>
 
-
 # Basic Demographics Information
 
-**Full Name**: Basic Demographics Information     
-**Alternative/Short Name**: Basic Demographics             
-**Table Name**: `sed_basic_demographics`    
-
-<p>
-<div id="faq-access" class="notification-banner static-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-    <span class="text">Basic Demographics is a <i>derived measure</i> computed from multiple sources. For more extensive demographics information, please see <a href="../../SED/v01-demo">V01 Demographics</a>.</span>
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_basic_demographics</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Derived Demographics</div>
+  </div>
 </div>
-</p>
 
-Basic Demographics is derived information computed from: 
-
-- A subset of **V01 Demographics** (`sed_bm_demo`) Social & Environmental Determinants domain instrument variables 
-- **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
-
-Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.). *However*, if only V01 data for a given participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about the child will be missing, as the child is not born until after the V01 visit (all variables about the child are available beginning with V02).
+---------------------------------------------
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -47,13 +41,24 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>⚠️ <a href="../../../changelog/knownissues"><u>Known Issues</u></a> To Be Resolved in Release 1.1</b><br>
-<p><strong>Mother Race (<code>screen_mother_race</code>)</strong>: contains duplicate options for the selection of 'Black African American' (option #3). This option is not used for data entry, and instead the 'Black_or African American' option (option #5) should be used. No other variables are affected by this.</p>
-<p><strong>Mother Ethnicity (<code>screen_mother_ethnicity</code>)</strong>: should be a 2-level variable, but is currently noted as a 4-level variable in the data dictionary. Levels of 0 and 1 (in the data dictionary) are included in error, they do not appear in the dataset; all participants with valid data have a value of 2 (Hispanic) or 3 (non-Hispanic).</p>
-<p><strong>Mother Race and Ethnicity (<code>rc_mother_ethnoracial_aou_race_ethnicity</code>)</strong>: the “None of these fully describe me/Other” response option is not currently a separate category for this variable and will be added in release 1.1.</p>
-<p><b>Participant-Reported Challenges</b><br>
-Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e. imperfect option for job type and number of hours).</p> 
+<p>Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e. imperfect option for job type and number of hours).</p> 
 </div>
+
+## Details
+
+<p>
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">Basic Demographics is a <a href="../../../access/metadata/#exceptions-derived" target="_blank">derived table</a>. See <a href="../../SED/v01-demo" target="_blank">V01 Demographics</a> for full demographics information.</span>
+</div>
+</p>
+
+Basic Demographics is a **derived measure** with information computed from: 
+
+- A subset of **V01 Demographics** (`sed_bm_demo`) Social & Environmental Determinants domain instrument variables 
+- **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
+
+Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.). *However*, if only V01 data for a given participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about the child will be missing, as the child is not born until after the V01 visit (all variables about the child are available beginning with V02).
 
 ## Variable Logic & Definitions
 
@@ -156,13 +161,13 @@ There are two combined race and ethnicity variables that aggregate multiracial i
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother ethnicity</td>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>screen_mother_ethnicity</code></td>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item about ethnic identity collected during screening. <i>See <a href="../../../changelog/knownissues/#mother-ethnicity">Known Issue</a>.</i></td>
+<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item about ethnic identity collected during screening.</td>
 </tr>
 <tr>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother race, multi-categorical</td>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>screen_mother_race</code></td>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item/question about racial identity collected during screening.  <i>See <a href="../../../changelog/knownissues/#duplicate-options-for-mother-race-variable">Known Issue</a>.</i></td>
+<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item/question about racial identity collected during screening.</td>
 </tr>
 <tr>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother race, indicator variables from screening</td>
