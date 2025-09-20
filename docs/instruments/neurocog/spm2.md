@@ -3,15 +3,15 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <td style="width: 30%;"><strong>Instrument</strong></td>
-  <td style="width: 20%"><strong>Version</strong></td>
-  <td style="width: 20%"><strong>Construct</strong></td>
-  <td style="width: 20%"><strong>Table Name</strong></td>
+  <th style="width: 30%;"><i class="fa-solid fa-maximize"></i> Instrument</th>
+  <th style="width: 20%;"><i class="fa-solid fa-clone"></i> Version</th>
+  <th style="width: 20%;"><i class="fa-solid fa-tape"></i> Construct</th>
+  <th style="width: 20%;"><i class="fa fa-table"></i> Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Sensory Processing Measure-2</td>
+  <td rowspan="2">Sensory Processing Measure-2</td>
   <td><strong>Infant</strong></td>
   <td>Sensory Processing/Integration</td>
   <td><code>ncl_cg_spm2__inf</code></td>
@@ -23,7 +23,6 @@
 </tr>
 </tbody>
 </table>
-
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

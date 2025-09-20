@@ -2,24 +2,30 @@
 
 # MacArthur-Bates Communicative Development Inventories
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>nc_ch_cdiws</code> (<i>Words</i>); <code>nc_ch_cdiwg</code> (<i>Gestures</i>)</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      MacArthur-Bates Communicative Development Inventories, Words and Gestures, Web Version, English and Spanish (<i>CDI-WG</i>, <i>Web-CDI-WG</i>)
-    </div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Language Development in Child</div>
-  </div>
-</div>
 
----------------------------------------------
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th><i class="fa-solid fa-maximize"></i> Instrument</th>
+  <th>Table</th>
+  <th><i class="fa-solid fa-tape"></i> Construct</th>
+  <th><i class="fa fa-table"></i> Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">MacArthur-Bates Communicative Development Inventories, Words and Gestures, Web Version, English and Spanish (<i>CDI-WG</i>, <i>Web-CDI-WG</i>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Words</td>
+  <td>Language Development in Child</td>
+  <td><code>nc_ch_cdiws</code></td>
+</tr>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;">Gestures</td>
+  <td>Language Development in Child</td>
+  <td><code>nc_ch_cdiwg</code></td>
+</tr>
+</tbody>
+</table>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

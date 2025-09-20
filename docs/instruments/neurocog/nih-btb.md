@@ -6,20 +6,20 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <td style="width: 30%;"><strong>NIH Baby Toolbox Instrument</strong></td>
-  <td style="width: 20%"><strong>Construct</strong></td>
-  <td style="width: 20%"><strong>Table Name</strong></td>
+  <th><i class="fa-solid fa-maximize"></i> NIH BTB Instrument</th>
+  <th><i class="fa-solid fa-tape"></i> Construct</th>
+  <th><i class="fa fa-table"></i> Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>EF Gazed-Based Tasks <i>(switch to Touch-Based around 24m)</i></td>
-   <td>Cognitive/Executive Function/Memory</td>
+  <td style="word-wrap: break-word; white-space: normal;">EF Gazed-Based Tasks <i>(switch to Touch-Based around 24m)</i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Cognitive/Executive Function/Memory</td>
   <td rowspan="2"><code>nc_ch_nbtb</code></td>
 </tr>
 <tr>
-  <td>Mullen Receptive and Mullen Expressive + Observation</td>
-  <td>Language</td>
+  <td style="word-wrap: break-word; white-space: normal;">Mullen Receptive and Mullen Expressive + Observation</td>
+  <td style="word-wrap: break-word; white-space: normal;">Language</td>
 </tr>
 </tbody>
 </table>

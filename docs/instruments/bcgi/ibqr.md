@@ -2,28 +2,29 @@
 
 # Behavior Questionnaire + Inhibition
 
-<p>
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
-    <div class="info-value"><i>Infant</i>, <i>Early Childhood</i></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Names:</div>
-    <div class="info-value"><code>mh_cg_ibqr</code> (<i>Infant</i>); <code>mh_cg_ecbg</code> (<i>Early Childhood</i>)</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">Behavior Questionnaire – Revised Very Short Form + Behavior Inhibition (<i>IBQ-R (VSF)+BI</i> & <i>ECBQ-R (VSF)+BI</i>)</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</div>
-  </div>
-</div>
-</p>
-
-------------------------------
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th><i class="fa-solid fa-maximize"></i> Instrument</th>
+  <th><i class="fa-solid fa-clone"></i> Version</th>
+  <th><i class="fa-solid fa-tape"></i> Construct</th>
+  <th><i class="fa fa-table"></i> Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Behavior Questionnaire – Revised Very Short Form + Behavior Inhibition</td>
+  <td><strong>Infant</strong><br>(<i>IBQ-R (VSF)+BI</i>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
+  <td><code>mh_cg_ibqr</code></td>
+</tr>
+<tr>
+  <td><strong>Early Childhood</strong><br>(<i>ECBQ-R (VSF)+BI</i>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
+  <td><code>mh_cg_ecbq</code></td>
+</tr>
+</tbody>
+</table>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

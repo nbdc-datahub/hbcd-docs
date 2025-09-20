@@ -2,28 +2,29 @@
 
 # MAPS-TL
 
-<p>
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
-    <div class="info-value"><i>Infancy (&lt;1 year)</i>, <i>Toddlerhood and Preschool</i></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Names:</div>
-    <div class="info-value"><code>mh_cg_mapdb__inf</code> (<i>Infant</i>); <code>mh_cg_mapdb__tod</code> (<i>Toddlerhood and Preschool</i>)</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">Multidimensional Assessment Profiles - Temper Loss Scale (<i>MAPS-TL</i>)</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Irritability</div>
-  </div>
-</div>
-</p>
-
-------------------------------
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th><i class="fa-solid fa-maximize"></i> Instrument</th>
+  <th><i class="fa-solid fa-clone"></i> Version</th>
+  <th><i class="fa-solid fa-tape"></i> Construct</th>
+  <th><i class="fa fa-table"></i> Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Multidimensional Assessment Profiles - Temper Loss Scale (<i>MAPS-TL</i>)</td>
+  <td><strong>Infancy (&lt;1 year)</strong></td>
+  <td>Irritability</td>
+  <td><code>mh_cg_mapdb__inf</code></td>
+</tr>
+<tr>
+  <td><strong>Toddlerhood and Preschool</strong></td>
+  <td>Irritability</td>
+  <td><code>mh_cg_mapdb__tod</code></td>
+</tr>
+</tbody>
+</table>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
