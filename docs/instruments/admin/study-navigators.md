@@ -6,9 +6,21 @@
 </p>
 
 # Study Navigator Contact Form
-      
-**Table Name**: `TBD`         
-**Construct**: Study Navigation
+
+<p>
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>TBD</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Study Navigation</div>
+  </div>
+</div>
+</p>
+
+---------------------------------------------
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>

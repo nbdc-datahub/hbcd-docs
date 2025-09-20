@@ -1,11 +1,25 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-# ecPROMIS - Self-Reegulation-Flexibility Scale
+# ecPROMIS - Self-Regulation-Flexibility Scale
 
-**Full Name**: Early Childhood Patient-Reported Outcome Measurement Information System - Self-regulation-Flexibility       
-**Acronym**: ecPROMIS Self Regulation                   
-**Table Name**: `mh_cg_pms__selfreg`       
-**Construct**: Self-Regulation and Flexibility
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>mh_cg_pms__selfreg</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Early Childhood Patient-Reported Outcome Measurement Information System - Self-regulation-Flexibility 
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Self-Regulation and Flexibility</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 
@@ -22,7 +36,14 @@
 <tr><td><b>Completion Time</b></td>
 <td>1-2 min</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within an expected range of 3-9 months. Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">
+  <ul>
+    <li>Examination of missingness (by counting the number of items answered for each participant).</li>
+    <li>Check age to ensure that it falls within expected range of 3-9 months.</li>
+    <li>Summary statistics and visualizations generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data).</li>
+    <li>Cronbach's Alpha was calculated to assess reliability.</li>
+  </ul>
+</td></tr>
 </tbody>
 </table>
 

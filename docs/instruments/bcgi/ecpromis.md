@@ -2,24 +2,40 @@
 
 # ecPROMIS Child/Caregiver Relationship Scale
 
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
+<p>
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>mh_cg_pms__cc__inf</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">Early Childhood Patient-Reported Outcome Measurement Information System Child/Caregiver Relationship Scale</div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
+    <div class="info-value">&lt;1 year, 1-5 years</div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Relationships</div>
+  </div>
 </div>
-<p></p>
+</p>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-<tr>
-  <td style="width: 30%;"><strong>Instrument</strong></td>
-  <td style="width: 20%"><strong>Version</strong></td>
-  <td style="width: 20%"><strong>Construct</strong></td>
-  <td style="width: 20%"><strong>Table Name</strong></td>
-</tr>
+  <tr>
+    <th colspan="3"><i><i class="fa-solid fa-clone"></i> Version-Specific Information</i></th>
+  </tr>
+  <tr>
+    <th style="width: 30%;">Version</th>
+    <th style="width: 30%;">Construct</th>
+    <th style="width: 30%;">Table Name</th>
+  </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;"> <span class="tooltip tooltip-right">ecPROMIS<span class="tooltiptext">Early Childhood Patient-Reported Outcome Measurement Information System</span></span> Child/Caregiver Relationship Scale</td>
   <td><strong>ecPROMIS &lt;1 year</strong></td>
   <td>Relationships (&lt;1 year)</td>
   <td><code>mh_cg_pms__cc__inf</code></td>
@@ -61,10 +77,16 @@
 <tr><td><b>Completion Time</b></td>
 <td>1-2 min</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within an expected range of 3-9 months. Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">
+  <ul>
+    <li>Examination of missingness (by counting the number of items answered for each participant).</li>
+    <li>Check age to ensure that it falls within expected range of 3-9 months and 1-5 years for respective versions.</li>
+    <li>Summary statistics and visualizations generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data).</li>
+    <li>Cronbach's Alpha was calculated to assess reliability.</li>
+  </ul>
+</td></tr>
 </tbody>
 </table>
-
 
 ## Instrument Details
 

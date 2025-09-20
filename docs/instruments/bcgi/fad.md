@@ -1,11 +1,24 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> </p>
 
 # FAD (GF6+)
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>mh_cg_fad</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Family Assessment Device (General Functioning 6+) (<i>FAD (GF6+)</i>) 
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Global Functioning of the Family Unit</div>
+  </div>
+</div>
 
-**Full Name**: Family Assessment Device (General Functioning 6+)       
-**Acronym:** FAD (GF6+)           
-**Table Name**: `mh_cg_fad`         
-**Construct**: Global Functioning of the Family Unit
+---------------------------------------------
 
 ## Administration & Quality Control
 

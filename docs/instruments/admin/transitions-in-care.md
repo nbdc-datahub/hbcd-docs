@@ -2,9 +2,26 @@
 
 # Transitions in Care Screener
 
-**Acronym**: TIC Screener                         
-**Table Name**: `TBD`           
-**Construct**: Recruitment/Retention
+<p>
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>TBD</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+     Transitions in Care (<i>TIC</i>) Screener
+   </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Recruitment/Retention</div>
+  </div>
+</div>
+</p>
+
+---------------------------------------------
   
 ## Administration & Quality Control
 

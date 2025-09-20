@@ -2,9 +2,26 @@
 
 # CHAOS
 
-**Full Name**: Confusion, Hubbub and Order scale                           
-**Table Name**: `mh_cg_chaos`           
-**Construct**: Family Organization
+<p>
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>mh_cg_chaos</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+     Confusion, Hubbub and Order Scale (<i>CHAOS</i>)
+   </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Family Organization</div>
+  </div>
+</div>
+</p>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 

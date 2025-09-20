@@ -2,10 +2,24 @@
 
 # HOME-21 Infant-Toddler
 
-**Full Name**: Home Observation for Measurement of the Environment (HOME)-21. Infant-Toddler Version                    
-**Acronym**: HOME-21 IT          
-**Table Name**: `sed_cg_home_it`           
-**Construct**: Child’s Home Environment: Cognitive Stimulation and Emotional Support in the home
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_cg_home_it</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Home Observation for Measurement of the Environment Infant-Toddler Version (<i>HOME-21 IT</i>) 
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Child’s Home Environment: Cognitive Stimulation and Emotional Support in the Home</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 
