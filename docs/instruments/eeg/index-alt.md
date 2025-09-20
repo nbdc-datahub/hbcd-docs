@@ -65,8 +65,8 @@ The video content for the Resting State task and interstimulus interval (ISI) fo
 
 EEG data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data:
 
-- <i class="fa fa-hammer"></i> <a href="#raw-bids" target="_blank">Raw BIDS</a> under subject- and session-specific <code>eeg/</code> folders (*file-based data*)
-- <i class="fas fa-cog"></i> <a href="#derivatives" target="_blank">Derivatives</a> processed through the HBCD-MADE pipeline under <code>made/</code> (*file-based data*)
+- <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids" target="_blank">Raw BIDS</a> under subject- and session-specific <code>eeg/</code> folders (*file-based data*)
+- <i class="fas fa-cog"></i> <a href="../../../datacuration/derivatives" target="_blank">Derivatives</a> processed through the HBCD-MADE pipeline under <code>made/</code> (*file-based data*)
 - <i class="fas fa-table"></i> <a href="../../../datacuration/phenotypes" target="_blank">Tabulated</a> data tables derived from the HBCD-MADE pipeline derivatives - see full list of tables <a href="../../#eeg" target="_blank">here</a>
 
 ### Raw BIDS
@@ -85,7 +85,7 @@ EEG data in the release includes <span class="tooltip">file-based<span class="to
 <p>EEG BIDS conversion was handled by <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application developed for HBCD EEG data management and BIDS formatting installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which, among other things, converts this data to the BIDS standard data structure.</p>
 </div>
 
-The `eeg/` BIDS data folder contains several filetypes in BIDS format providing information about the recording system, location of electrodes, events for each task, and raw data:
+The `eeg/` folder contains raw EEG data in BIDS format including information about the recording system, location of electrodes, and events for each task:
 
 <pre class="folder-tree">
 hbcd/
@@ -150,7 +150,7 @@ hbcd/
 
 ### Derivatives
 
-HBCD-MADE produces preprocessed EEG derivatives. Please see the [HBCD-MADE webpage](https://docs-hbcd-made.readthedocs.io/en/latest) for a full explanation of the derivative files displayed below.
+HBCD-MADE produces preprocessed EEG derivatives. See the [HBCD-MADE documentation](https://docs-hbcd-made.readthedocs.io/en/latest) for a full explanation of the derivative files displayed below.
 
 <pre class="folder-tree">
 hbcd/
