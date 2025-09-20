@@ -1,22 +1,9 @@
 # Infant Leg Motion Wearable Sensor
 
-Motion/accelerometry data collected from wearable infant leg sensors is available as <a href="../../../datacuration/overview" target="_blank">file-based data</a>: 
+The HBCD data release includes Infant Leg Motion Wearable Sensor data acquired during visits V02 and V03, V04.
 
-- <span><i class="fas fa-hammer"></i> <a href="../../../datacuration/rawbids/#motion" target="_blank">Raw sensor data</a> can be found in the subject-/session-level <code>motion/</code> folders
-- <span><i class="fas fa-cog"></i> <a href="../../../datacuration/derivatives/#biosensors-hbcd-motion" target="_blank">Processed derivatives</a> produced by the HBCD-Motion pipeline are available under `hbcd_motion/`
+## Release Data
 
-<pre class="folder-tree">
-hbcd/
-|__ rawdata/ 
-|   |__ sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw sensor data</span>
-|       |__ ses-<span class="label">&lt;label&gt;</span>/
-|           |__ motion/
-|
-|__ derivatives/        <span class="hashtag"># HBCD-Motion pipeline derivatives</span>
-    |__ hbcd_motion/
-</pre>
-
-<p>
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
@@ -31,29 +18,32 @@ hbcd/
 <p>Note that accelerometer sensor timestamps can drift over time. Although right and left leg sensors start recording simultaneously with the same sampling rate and duration, exact time alignment cannot be assumed. By our estimates, Axivity AX6 sensors recording at 25 samples/sec diverge from one another by a couple of seconds over 72 hours, with the magnitude of this discrepancy increasing over time. Furthermore, offsets differed between sensors, necessitating a calibration procedure to correct for these differences (<a href="https://doi.org/10.3390/s24175736">Oh et al. 2024</a>).</p>
 <p>In addition, for raw data downloads, when calibration files are missing or not collected correctly, it is technically possible to use a different set of calibration files from the same 2 sensors that were collected from a different data collection session close in time. It is also possible to manually adjust (downsample) an incorrect sampling rate if it was set too high. For processed data downloads, when calibration files are missing or not collected correctly, or the sampling rate is incorrect, data are not processed. In analysis, users are advised to use caution in analyzing datasets with missing data as missing data may not be randomly distributed across the sample.</p> 
 </div>
-</p>
 
-## Administration & Quality Control
+Motion/accelerometry data collected from wearable infant leg sensors includes raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data:
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Child</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Sensors are placed on the child by an HBCD Study team member during a visit and then worn for 72 hours, during which data were collected across typical activities in the natural environment.</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V02, V03</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">For the calibration files, the 72-hour sensor data files, and the survey data, a random selection of files were manually reviewed on a weekly basis. Raw calibration files were checked to verify the presence of sufficient data for each of the six axes. Seventy-two hour sensor data files were checked for presence of data, labeling of right and left leg, and sampling rate used. Surveys were checked to confirm presence of responses. Note that only a small percentage of total files were reviewed due to the procedure being manual.<br>
-Issues were generally rare for sensor data and most data were deemed to be present and accurately collected. Errors that did arise were corrected when possible (though this was typically not feasible). Common errors noted include inadequate or missing data (due to human error, technical issues, or a parent/legal guardian declining to participate in this aspect of the study), sensors being removed for extended periods during the 72-hour collection, and incorrect sampling rate.</td></tr>
-</tbody>
-</table>
+- <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#motion" target="_blank">Raw BIDS</a> under subject- and session-specific <code>motion/</code> folders (*file-based data*)
+- <i class="fas fa-cog"></i> <a href="../../datacuration/derivatives/#biosensors-hbcd-motion" target="_blank">Derivatives</a> processed through the HBCD-Motion pipeline under <code>hbcd_motion/</code> (*file-based data*)
 
-## Instrument Details
+<pre class="folder-tree">
+hbcd/
+|__ rawdata/ 
+|   |__ sub-<span class="label">&lt;label&gt;</span>/   
+|       |__ ses-<span class="label">&lt;label&gt;</span>/
+|           |__ motion/  <span class="hashtag"># Raw sensor data</span>
+|
+|__ derivatives/        
+    |__ hbcd_motion/     <span class="hashtag"># HBCD-Motion pipeline derivatives</span>
+</pre>
 
-Infant leg movement data collected by wearable sensors for HBCD, which captures information related to motor behavior, physical activity, sleep. Wearable sensor data (accelerometer and gyroscope) were collected continuously over 72 hours from sensors placed on infants’ right and left ankles to estimate movement frequency, intensity, and sleep periods. Caregivers followed typical routines, removing sensors only for water exposure (e.g., baths) and replacing them afterward. Each sensor (Axivity AX6) was calibrated by recording 10 seconds on each of its six flat surfaces before data collection. Sensors recorded accelerometer (±16 g) and gyroscope (±2000 dps) data at 25 Hz, enabling estimates of sedentary, light, moderate-to-vigorous activity, and sleep. See [Pini et al. 2024](https://doi.org/10.1016/j.dcn.2024.101446) for a full measure description.
+## Details
+
+Infant leg movement data collected by wearable sensors for HBCD captures information related to motor behavior, physical activity, sleep. Wearable sensors are placed on the child's right and left ankles by an HBCD Study team member during a visit. Sensor data (accelerometer and gyroscope) was collected continuously over 72 hours to estimate movement frequency, intensity, and sleep periods. Caregivers followed typical routines, removing sensors only for water exposure (e.g., baths) and replacing them afterward. Each sensor (Axivity AX6) was calibrated by recording 10 seconds on each of its six flat surfaces before data collection. Sensors recorded accelerometer (±16 g) and gyroscope (±2000 dps) data at 25 Hz, enabling estimates of sedentary, light, moderate-to-vigorous activity, and sleep. See [Pini et al. 2024](https://doi.org/10.1016/j.dcn.2024.101446) for a full measure description.
+
+## Quality Control
+
+For the calibration files, the 72-hour sensor data files, and the survey data, a random selection of files were manually reviewed on a weekly basis. Raw calibration files were checked to verify the presence of sufficient data for each of the six axes. Seventy-two hour sensor data files were checked for presence of data, labeling of right and left leg, and sampling rate used. Surveys were checked to confirm presence of responses. Note that only a small percentage of total files were reviewed due to the procedure being manual.
+
+Issues were generally rare for sensor data and most data were deemed to be present and accurately collected. Errors that did arise were corrected when possible (though this was typically not feasible). Common errors noted include inadequate or missing data (due to human error, technical issues, or a parent/legal guardian declining to participate in this aspect of the study), sensors being removed for extended periods during the 72-hour collection, and incorrect sampling rate.
 
 ## References
 
