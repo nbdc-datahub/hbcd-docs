@@ -533,7 +533,7 @@ Expand the sections below to see a list of measures associated with each domain 
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-      <td><a href="../datacuration/derivatives/#hbcd-made-made" target="_blank">All Tasks - <strong><i>HBCD-MADE Derivatives</i></strong></a></td>
+      <td><a href="../datacuration/derivatives/#eeg-hbcd-made" target="_blank">All Tasks - <strong><i>HBCD-MADE Derivatives</i></strong></a></td>
       <td><i>derivatives/made/</i></td>
     </tr>
   </tbody>
@@ -636,7 +636,7 @@ Expand the sections below to see a list of measures associated with each domain 
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><a href="mri/qmri" target="_blank">qMRI</a><span class="tooltiptext">Quantitative MRI</span></span></td>      <td><i>anat/</i></td>
-      <td><i>qmri_postproc/</i> [<a href="../datacuration/derivatives/#qmri-postproc-qmri_postproc" target="_blank">qMRI Postproc</a>]</td>
+      <td><i>qmri_postproc/</i> [<a href="../datacuration/derivatives//#quantitative-mri-symri-qmri-postproc" target="_blank">qMRI Postproc</a>]</td>
       <td>None</td>
     </tr>
     <tr>
@@ -651,7 +651,7 @@ Expand the sections below to see a list of measures associated with each domain 
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><a href="mri/mrs" target="_blank">MRS</a><span class="tooltiptext">MR Spectroscopy</span></span></td>      <td><i>mrs/</i></td>
-      <td><i>osprey/</i> [<a href="../datacuration/derivatives/#osprey-bids-osprey" target="_blank">OSPREY-BIDS</a>]</td>
+      <td><i>osprey/</i> [<a href="../datacuration/derivatives/#mr-spectroscopy-osprey-bids" target="_blank">OSPREY-BIDS</a>]</td>
       <td>
         <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
         <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
@@ -711,7 +711,7 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion" target="_blank">Derivatives</a></td>
+    <td><a href="../datacuration/derivatives/#biosensors-hbcd-motion" target="_blank">Derivatives</a></td>
     <td><i>derivatives/hbcd-motion/</i></td>
   </tr>
   </tbody>

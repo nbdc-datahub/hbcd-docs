@@ -67,8 +67,8 @@ nav:
     - Data Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md
     - File-Based Data: 
-        - Raw File-Based Data: datacuration/rawbids.md
-        - Processed File-Based Data: datacuration/derivatives.md
+        - Raw BIDS: datacuration/rawbids.md
+        - Processed Derivatives: datacuration/derivatives.md
     - Tools: 
         - Useful Utilities: datacuration/recprograms.md
         - NMIND: datacuration/nmind.md

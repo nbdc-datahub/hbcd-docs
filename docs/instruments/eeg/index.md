@@ -66,7 +66,7 @@ The video content for the Resting State task and interstimulus interval (ISI) fo
 EEG data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data:
 
 - <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#eeg" target="_blank">Raw BIDS</a> under subject- and session-specific <code>eeg/</code> folders (*file-based data*)
-- <i class="fas fa-cog"></i> <a href="../../../datacuration/derivatives/#hbcd-made-made" target="_blank">Derivatives</a> processed through the HBCD-MADE pipeline under <code>made/</code> (*file-based data*)
+- <i class="fas fa-cog"></i> <a href="../../../datacuration/derivatives/#eeg-hbcd-made" target="_blank">Derivatives</a> processed through the HBCD-MADE pipeline under <code>made/</code> (*file-based data*)
 - <i class="fas fa-table"></i> <a href="../../../datacuration/phenotypes" target="_blank">Tabulated</a> data tables derived from the HBCD-MADE pipeline derivatives
 
 <pre class="folder-tree">
