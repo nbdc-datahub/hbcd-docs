@@ -2,10 +2,24 @@
 
 # Second Hand Smoke Exposure
 
-**Full Name**: Second Hand Smoke Exposure       
-**Acronym:** Second Hand Smoke            
-**Table Name**: `sed_cg_shs`    
-**Construct:** Second Hand Smoke   
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_cg_shs</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Second Hand Smoke Exposure
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Second Hand Smoke</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 

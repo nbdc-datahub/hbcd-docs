@@ -5,15 +5,15 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <td style="width: 30%;"><strong>Instrument</strong></td>
-  <td style="width: 30%"><strong>Version</strong></td>
-  <td style="width: 30%"><strong>Construct</strong></td>
-  <td style="width: 30%"><strong>Table Name</strong></td>
+  <th style="width: 20%;"><i class="fa-solid fa-maximize"></i> Instrument</th>
+  <th style="width: 20%;"><i class="fa-solid fa-clone"></i> Version</th>
+  <th style="width: 20%;"><i class="fa-solid fa-tape"></i> Construct</th>
+  <th style="width: 20%;"><i class="fa fa-table"></i> Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;"> <span class="tooltip tooltip-right">PACES<span class="tooltiptext">Protective and Compensatory Experience</span></span></td>
+  <td rowspan="2">Protective and Compensatory Experience (<i>PACES</i>)</td>
   <td><strong>PACES (Current)</strong></td>
   <td>Protective Factors</td>
   <td><code>sed_bm_paces</code></td>

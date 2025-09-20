@@ -2,10 +2,25 @@
 
 # Vancouver Index of Acculturation (VIA)
 
-**Full Name**: Vancouver Index of Acculturation       
-**Acronym:** VIA           
-**Table Name**: `sed_cg_via`    
-**Construct:** Acculturation
+
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_cg_via</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Vancouver Index of Acculturation (<i>VIA</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Acculturation</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
