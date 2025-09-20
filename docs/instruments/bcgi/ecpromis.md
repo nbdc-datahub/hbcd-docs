@@ -1,20 +1,20 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 (addition of 1-5 year version)</i> 🚧 </p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 (addition of 1-5 year version)</i> 🚧 </p>
 
 # ecPROMIS Child/Caregiver Relationship Scale
 
 <p>
 <div class="info-block">
   <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>mh_cg_pms__cc__inf</code></div>
+    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
+    <div class="info-value"><i>&lt;1 year</i>, <i>1-5 years</i></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Names:</div>
+    <div class="info-value"><code>mh_cg_pms__cc__inf</code> (<i>&lt;1 year</i>); <code>mh_cg_pms__cc__1to5</code> (<i>1-5 years</i>)</div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
     <div class="info-value">Early Childhood Patient-Reported Outcome Measurement Information System Child/Caregiver Relationship Scale</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
-    <div class="info-value">&lt;1 year, 1-5 years</div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
@@ -23,30 +23,7 @@
 </div>
 </p>
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-    <th colspan="3"><i><i class="fa-solid fa-clone"></i> Version-Specific Information</i></th>
-  </tr>
-  <tr>
-    <th style="width: 30%;">Version</th>
-    <th style="width: 30%;">Construct</th>
-    <th style="width: 30%;">Table Name</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td><strong>ecPROMIS &lt;1 year</strong></td>
-  <td>Relationships (&lt;1 year)</td>
-  <td><code>mh_cg_pms__cc__inf</code></td>
-</tr>
-<tr>
-  <td><strong>ecPROMIS (1-5 years)</strong></td>
-  <td>Relationships (1-5 years)</td>
-  <td><code>mh_cg_pms__cc__1to5</code></td>
-</tr>
-</tbody>
-</table>
+---------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -73,7 +50,7 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V03 <strong>[&lt;1 year]</strong>; V05 <strong>[&lt;1 year</strong> & <strong>1-5 years]</strong>; V07, V09 <strong>[1-5 years]</strong></td></tr>
+<td>V03 (<i>&lt;1 year</i>); V05 (<i>&lt;1 year</i> & <i>1-5 years</i>); V07, V09 (<i>1-5 years</i>)</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>1-2 min</td></tr>
 <tr><td><b>Quality Control</b></td>

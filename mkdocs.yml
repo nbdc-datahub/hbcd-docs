@@ -78,7 +78,7 @@ nav:
             - ⚠️ ERICA: instruments/bcgi/erica.md
             - 🚧 FAD: instruments/bcgi/fad.md
             - 🚧 HOME-21: instruments/bcgi/home21.md
-            - 🚧 IBQ-R/ECBQ: instruments/bcgi/ibqr.md
+            - 🚧 IBQ/ECBQ-R (VSF)+BI: instruments/bcgi/ibqr.md
             - 🚧 MAPS-TL: instruments/bcgi/maps-tl.md
         - Biospecimens & Omics:
             - 🚧 Illumina GDA GWAS: instruments/biospec/illumina-gda-gwas.md

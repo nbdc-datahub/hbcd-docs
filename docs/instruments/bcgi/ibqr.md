@@ -5,16 +5,16 @@
 <p>
 <div class="info-block">
   <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>mh_cg_{ibqr|ecbg}</code></div>
+    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
+    <div class="info-value"><i>Infant</i>, <i>Early Childhood</i></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Names:</div>
+    <div class="info-value"><code>mh_cg_ibqr</code> (<i>Infant</i>); <code>mh_cg_ecbg</code> (<i>Early Childhood</i>)</div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">{Version} Behavior Questionnaire – Revised Very Short Form + Behavior Inhibition (<i>{I/EC}BQ-R (VSF)+BI</i>)</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
-    <div class="info-value">Infant, Early Childhood</div>
+    <div class="info-value">Behavior Questionnaire – Revised Very Short Form + Behavior Inhibition (<i>IBQ-R (VSF)+BI</i> & <i>ECBQ-R (VSF)+BI</i>)</div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
@@ -23,30 +23,7 @@
 </div>
 </p>
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-    <th colspan="3"><i><i class="fa-solid fa-clone"></i> Version-Specific Information</i></th>
-  </tr>
-  <tr>
-    <th>Version</th>
-    <th>Construct</th>
-    <th>Table Name</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td><span class="tooltip tooltip-right"><strong>IBQ-R</strong><span class="tooltiptext">Infant Behavior Questionnaire – Revised</span></span> <strong>(VSF)+BI</strong></td>
-  <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, Behavioral Inhibition</td>
-  <td><code>mh_cg_ibqr</code></td>
-</tr>
-<tr>
-  <td><span class="tooltip tooltip-right"><strong>ECBQ</strong><span class="tooltiptext">Early Childhood Behavior Questionnaire</span></span> <strong>(VSF)+BI</strong></td>
-  <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency, Negative Affect, Effortful Control, Behavioral Inhibition</td>
-  <td><code>mh_cg_ecbq</code></td>
-</tr>
-</tbody>
-</table>
+------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

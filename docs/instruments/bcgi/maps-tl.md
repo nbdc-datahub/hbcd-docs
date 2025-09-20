@@ -5,18 +5,16 @@
 <p>
 <div class="info-block">
   <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>mh_cg_mapdb__{inf|tod}</code></div>
+    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
+    <div class="info-value"><i>Infancy (&lt;1 year)</i>, <i>Toddlerhood and Preschool</i></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Names:</div>
+    <div class="info-value"><code>mh_cg_mapdb__inf</code> (<i>Infant</i>); <code>mh_cg_mapdb__tod</code> (<i>Toddlerhood and Preschool</i>)</div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Multidimensional Assessment Profiles - Temper Loss Scale (<i>MAPS-TL</i>)
-    </div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
-    <div class="info-value">Infancy (&lt;1 year), Toddlerhood and Preschool</div>
+    <div class="info-value">Multidimensional Assessment Profiles - Temper Loss Scale (<i>MAPS-TL</i>)</div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
@@ -25,30 +23,7 @@
 </div>
 </p>
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-    <th colspan="3"><i><i class="fa-solid fa-clone"></i> Version-Specific Information</i></th>
-  </tr>
-  <tr>
-    <th style="width: 30%;">Version</th>
-    <th style="width: 30%;">Construct</th>
-    <th style="width: 30%;">Table Name</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td><strong>MAPS-TL Infancy (&lt;1 year)</strong></td>
-  <td>Irritability</td>
-  <td><code>mh_cg_mapdb__inf</code></td>
-</tr>
-<tr>
-  <td><strong>MAPS-TL Toddlerhood and Preschool</strong></td>
-  <td>Irritability</td>
-  <td><code>mh_cg_mapdb__tod</code></td>
-</tr>
-</tbody>
-</table>
+------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
