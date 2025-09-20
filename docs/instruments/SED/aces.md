@@ -2,13 +2,6 @@
 
 # ACEs
 
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
-</div>
-<p></p>
-
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
@@ -21,12 +14,12 @@
 <tbody>
 <tr>
   <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Adverse Childhood Experiences (ACEs)</td>
-  <td><span class="tooltip tooltip-right"><strong>ACEs</strong></td>
+  <td><strong>ACEs</strong></td>
   <td>Maternal/caregiver adverse childhood experiences</td>
   <td><code>sed_cg_ace</code></td>
 </tr>
 <tr>
-  <td><span class="tooltip tooltip-right"><strong>Pediatric ACEs</strong></td>
+  <td><strong>Pediatric ACEs</strong></td>
   <td style="word-wrap: break-word; white-space: normal;">Adverse Childhood Experiences (Child)</td>
   <td><code>sed_cg_pedaces</code></td>
 </tr>

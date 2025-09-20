@@ -2,28 +2,29 @@
 
 # ecPROMIS Child/Caregiver Relationship Scale
 
-<p>
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
-    <div class="info-value"><i>&lt;1 year</i>, <i>1-5 years</i></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Names:</div>
-    <div class="info-value"><code>mh_cg_pms__cc__inf</code> (<i>&lt;1 year</i>); <code>mh_cg_pms__cc__1to5</code> (<i>1-5 years</i>)</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">Early Childhood Patient-Reported Outcome Measurement Information System Child/Caregiver Relationship Scale</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Relationships</div>
-  </div>
-</div>
-</p>
-
----------------------------------
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th><i class="fa-solid fa-maximize"></i> Instrument</th>
+  <th><i class="fa-solid fa-clone"></i> Version</th>
+  <th><i class="fa-solid fa-tape"></i> Construct</th>
+  <th><i class="fa fa-table"></i> Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Early Childhood Patient-Reported Outcome Measurement Information System Child/Caregiver Relationship Scale</td>
+  <td><strong>&lt;1 year</strong></td>
+  <td>Relationships</td>
+  <td><code>mh_cg_pms__cc__inf</code></td>
+</tr>
+<tr>
+  <td><strong>1-5 years</strong></td>
+  <td>Relationships</td>
+  <td><code>mh_cg_pms__cc__1to5</code></td>
+</tr>
+</tbody>
+</table>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
