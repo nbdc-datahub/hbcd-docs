@@ -2,20 +2,9 @@
 
 # Illumina Global Diversity GWAS Array 
 
-Genomic data generated from the Illumina Global Diversity Array (*GDA GWAS*) are provided as <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data under the `concatenated/` BIDS folder (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details):
+Genomic data generated from the Illumina Global Diversity Array (*GDA GWAS*) is provided for both the birth parent and child. Samples are assayed from one sample, but may come from any visit (V01-V06) based on DNA yields.
 
-<p>
-<pre class="folder-tree">
-hbcd/
-|__ concatenated/ 
-    |__ genetics/
-        |__ .bed
-        |__ .bim
-        |__ .fam
-        |__ batch.info
-        |__ README
-</pre>
-</p>
+## Release Data
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -48,36 +37,24 @@ The use of population descriptors in genetic research can often be varied and in
 <p>Any removal of data during QC will be described in the README file accompanying the data.</p> 
 </div>
 
-## Administration & Quality Control
+GDA GWAS data include <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data under the `concatenated/` BIDS folder (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details):
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Data will be included from the birth parent and child in the same files.</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff in person, Self-administered remote</td></tr>
-<tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Samples are assayed from one sample, but may come from any session (V01-V06) based on DNA Yields.</td></tr>
-<tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
-<ul>
-  <li>Check that sampled ID matches from Sampled File and Lasso Database.</li>
-  <li>Check that sample specific barcode matches between Sampled file and Lasso Database.</li>
-  <li>Check that genomic sex matches with sex at birth.</li>
-  <li>Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is ~.50 between the birth parent and child as well as siblings; evaluate potential twins).</li>
-  <li>Use FHET estimates to check for plate contamination.</li>
-</ul>
-</td></tr>      
-</tbody>
-</table>
+<p>
+<pre class="folder-tree">
+hbcd/
+|__ concatenated/ 
+    |__ genetics/
+        |__ .bed
+        |__ .bim
+        |__ .fam
+        |__ batch.info
+        |__ README
+</pre>
+</p>
 
-## Instrument Details
+## Details
 
-Genomic data generated from the Illumina Global Diversity Array are provided as 3 interlinked PLINK files (`.bed`, `.bim`, and `.fam`) on the hg19 genome build. A `batch.info` file contains which batch each participant was run on. The README file contains details of initial QC to ensure sample matches (e.g., ID checks, sex checks, etc.). 
-
-#### File Type Details
+GDA GWAS data are provided as 3 interlinked PLINK files (`.bed`, `.bim`, and `.fam`) on the hg19 genome build, a `batch.info` file contains which batch each participant was run on, and a README containing details of initial QC to ensure sample matches: 
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -105,10 +82,22 @@ Genomic data generated from the Illumina Global Diversity Array are provided as 
 </tr>
 <tr>
 <td><code>README</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Describes the sample QC steps that were taken.</td>
+<td style="word-wrap: break-word; white-space: normal;">Describes the sample QC steps that were taken to ensure sample matches (e.g., ID checks, sex checks, etc.).</td>
 </tr>
 </tbody>
 </table>
+
+## Quality Control
+
+Quality control procedures involved the following:
+
+<ul>
+  <li>Check that sampled ID matches from Sampled File and Lasso Database.</li>
+  <li>Check that sample specific barcode matches between Sampled file and Lasso Database.</li>
+  <li>Check that genomic sex matches with sex at birth.</li>
+  <li>Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is ~.50 between the birth parent and child as well as siblings; evaluate potential twins).</li>
+  <li>Use FHET estimates to check for plate contamination.</li>
+</ul>
 
 ## References
 
