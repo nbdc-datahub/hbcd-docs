@@ -1,20 +1,14 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: add additional versions for later visits to this same page</i></p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: add additional versions for later visits to this same page</i></p>
 
 # Demographics Adult
-
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
-</div>
-<p></p>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th style="width: 25%;">Instrument</th>
-  <th style="width: 15%;">Version</th>
-  <th style="width: 25%;">Construct</th>
-  <th style="width: 25%;">Table Name</th>
+  <th style="width: 25%;"><i class="fa-solid fa-maximize"></i> Instrument</th>
+  <th style="width: 15%;"><i class="fa-solid fa-clone"></i> Version</th>
+  <th style="width: 25%;"><i class="fa-solid fa-tape"></i> Construct</th>
+  <th style="width: 25%;"><i class="fa fa-table"></i> Table Name</th>
 </tr>
 </thead>
 <tbody>

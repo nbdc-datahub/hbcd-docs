@@ -1,11 +1,25 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
 
-
 # Composite Abuse Scale Revised - Short Form
- 
-**Acronym:** CASR-SF                              
-**Table Name**: `sed_cg_cabr_sf`              
-**Construct**: Intimate Partner Violence
+
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_cg_cabr_sf</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Composite Abuse Scale Revised - Short Form (<i>CASR-SF </i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Intimate Partner Violence</div>
+  </div>
+</div>
+
+---------------------------------------------                      
 
 ## Administration & Quality Control
 

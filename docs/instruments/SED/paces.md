@@ -2,12 +2,6 @@
 
 # Protective and Compensatory Experience
 
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">This instrument has several versions. Below you’ll find details for each version included in release data.</span>
-</div>
-<p></p>
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
