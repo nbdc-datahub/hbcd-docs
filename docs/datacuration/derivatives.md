@@ -6,34 +6,30 @@ The `derivatives/` folder contains derivatives, which are file outputs from <a h
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
+    <span class="hashtag"># Structural & Functional MRI</span>             
+    |__ mriqc/      
+    |__ bibsnet/    
+    |__ nibabies/   
+    |__ freesurfer/ 
+    |__ mcribs/     
+    |__ xcp_d/      
+    |               
+    <span class="hashtag"># Quantitative MRI</span>    
+    |__ symri/           
+    |__ qmri_postproc/  
+    | 
+    <span class="hashtag"># Diffusion MRI</span>                                  
+    |__ qsiprep/                         
+    |__ qsirecon/                        
+    |__ qsirecon-DIPYDKI/                
+    |__ qsirecon-DSIStudio/               
+    |__ qsirecon-NODDI/                  
+    |__ qsirecon-TORTOISE_model-MAPMRI/  
+    |__ qsirecon-TORTOISE_model-tensor/  
     |
-  <span class="hashtag"># Structural & Functional MRI:</span>
-    |__ mriqc/
-    |__ symri/  
-    |__ qmri_postproc/
-    |__ bibsnet/
-    |__ nibabies/
-    |__ freesurfer/ <span class="hashtag"># Derived from Infant fMRIPrep (nibabies/) sourcedata/ folder</span>
-    |__ mcribs/     <span class="hashtag"># Derived from Infant fMRIPrep (nibabies/) sourcedata/ folder</span>
-    |__ xcp_d/
-    |
-  <span class="hashtag"># Diffusion MRI:</span>
-    |__ qsiprep/
-    |__ qsirecon/
-    |__ qsirecon-DIPYDKI/
-    |__ qsirecon-DSIStudio/
-    |__ qsirecon-NODDI/
-    |__ qsirecon-TORTOISE_model-MAPMRI/
-    |__ qsirecon-TORTOISE_model-tensor/
-    |
-  <span class="hashtag"># MRS:</span>
-    |__ osprey/
-    |
-  <span class="hashtag"># EEG:</span>
-    |__ made/
-    |
-  <span class="hashtag"># Biosensors:</span>
-    |__ hbcd_motion/
+    |__ osprey/       <span class="hashtag"># MRS</span>
+    |__ made/         <span class="hashtag"># EEG</span>
+    |__ hbcd_motion/  <span class="hashtag"># Biosensors Recordings</span>
 </pre>
 
 <p>
@@ -465,23 +461,19 @@ hbcd/
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
-    |__ symri/
-        |__ sub-<span class="label">&lt;label&gt;</span>/
-            |__ ses-<span class="label">&lt;label&gt;</span>/
-                |__ anat/
-                    |__ <span class="subses">SUBSES</span>_acq-QALAS_T1w.nii.gz
-                    |__ <span class="subses">SUBSES</span>_acq-QALAS_T1w.json
-                    |__ <span class="subses">SUBSES</span>_acq-QALAS_T2map.nii.gz
-                    |__ <span class="subses">SUBSES</span>_acq-QALAS_T2map.json
-                    |__ <span class="subses">SUBSES</span>_acq-QALAS_T2w.nii.gz
-                    |__ <span class="subses">SUBSES</span>_acq-QALAS_T2w.json
-                    |__ <span class="subses">SUBSES</span>_acq-QALAS_desc-SymriContainer.log
-</pre>
-
-<pre class="folder-tree">
-hbcd/
-|__ derivatives/ 
-    |__ qmri_postproc/
+    |__ symri/  <span class="hashtag"># SyMRI Derivatives</span>
+    |   |__ sub-<span class="label">&lt;label&gt;</span>/
+    |       |__ ses-<span class="label">&lt;label&gt;</span>/
+    |           |__ anat/
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T1w.nii.gz
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T1w.json
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T2map.nii.gz
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T2map.json
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T2w.nii.gz
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_T2w.json
+    |               |__ <span class="subses">SUBSES</span>_acq-QALAS_desc-SymriContainer.log
+    |
+    |__ qmri_postproc/ <span class="hashtag"># qMRI Post-Proc Derivatives</span>
         |__ sub-<span class="label">&lt;label&gt;</span>/
             |__ ses-<span class="label">&lt;label&gt;</span>/
                 |__ anat/  
@@ -498,6 +490,19 @@ hbcd/
 *See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
 
 ## Diffusion MRI
+
+<pre class="folder-tree">
+<span class="hashtag"># Diffusion MRI Pipeline Derivatives:</span>
+hbcd/
+|__ derivatives/ 
+    |__ qsiprep/
+    |__ qsirecon/
+    |__ qsirecon-DIPYDKI/
+    |__ qsirecon-DSIStudio/
+    |__ qsirecon-NODDI/
+    |__ qsirecon-TORTOISE_model-MAPMRI/
+    |__ qsirecon-TORTOISE_model-tensor/
+</pre>
 
 ### QSIPrep (`qsiprep/`) 
 The QSIPrep pipeline is used for preprocessing the HBCD diffusion-weighted MRI (dMRI) data. Preprocessing includes head motion correction, susceptibility distortion correction, MP-PCA denoising, coregistration to T1w images, ANTS spatial normalization, and tissue segmentation. The QSIPrep derivatives are then passed to [QSIRecon](#qsirecon) for reconstruction. Please see a full description of this pipeline on their [webpage](https://qsiprep.readthedocs.io/en/latest/). 

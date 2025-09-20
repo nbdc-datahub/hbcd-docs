@@ -15,7 +15,7 @@ HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy
 MRI and MRS data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data:
 
 - <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#imaging" target="_blank">Raw BIDS</a> under subject- and session-specific <code>eeg/</code> folders (*file-based data*)
-- <i class="fas fa-cog"></i> <a href="../../../datacuration/derivatives" target="_blank">Derivatives</a> processed through pipelines designed for <a href="../../../datacuration/derivatives/#structural-functional-mri" target="_blank">sMRI & fMRI</a>, <a href="../../../datacuration/derivatives/#diffusion-mri" target="_blank">dMRI</a>, and <a href="../../../datacuration/derivatives/#mr-spectroscopy" target="_blank">MRS</a> (*file-based data*)
+- <i class="fas fa-cog"></i> <a href="../../../datacuration/derivatives" target="_blank">Derivatives</a> processed through pipelines designed for <a href="../../../datacuration/derivatives/#structural-functional-mri" target="_blank">sMRI & fMRI</a>, <a href="../../../datacuration/derivatives/#diffusion-mri" target="_blank">dMRI</a>, and <a href="../../../datacuration/derivatives/#mr-spectroscopy-osprey-bids" target="_blank">MRS</a> (*file-based data*)
 - <i class="fas fa-table"></i> <a href="../../../datacuration/phenotypes" target="_blank">Tabulated</a> data tables derived from pipeline derivatives - see full list of tables <a href="../#mri" target="_blank">here</a>
 
 <pre class="folder-tree">
