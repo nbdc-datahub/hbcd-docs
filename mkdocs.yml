@@ -66,9 +66,7 @@ nav:
   - Data Structure & File Types:
     - Data Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md
-    - File-Based Data: 
-        - Raw BIDS: datacuration/rawbids.md
-        - Processed Derivatives: datacuration/derivatives.md
+    - File-Based Data: datacuration/file-based-data.md
     - Tools: 
         - Useful Utilities: datacuration/recprograms.md
         - NMIND: datacuration/nmind.md
@@ -121,6 +119,8 @@ nav:
             - Visual Evoked Potential Task: instruments/eeg/vep.md
         - Magnetic Resonance Imaging:
             - Overview & MRI Protocols: instruments/mri/index.md
+            - MR Raw BIDS: instruments/mri/mr-rawbids.md
+            - MR Derivatives: instruments/mri/mr-derivatives.md
             - Quality Control Procedures: instruments/mri/qc.md
             - Structural MRI: instruments/mri/smri.md
             - Functional MRI: instruments/mri/fmri.md

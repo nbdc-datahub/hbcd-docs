@@ -65,29 +65,140 @@ The video content for the Resting State task and interstimulus interval (ISI) fo
 
 EEG data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data:
 
-- <i class="fa fa-hammer"></i> <a href="../../datacuration/rawbids/#eeg" target="_blank">Raw BIDS</a> under subject- and session-specific <code>eeg/</code> folders (*file-based data*)
-- <i class="fas fa-cog"></i> <a href="../../datacuration/derivatives/#eeg-hbcd-made" target="_blank">Derivatives</a> processed through the HBCD-MADE pipeline under <code>made/</code> (*file-based data*)
-- <i class="fas fa-table"></i> <a href="../../datacuration/phenotypes" target="_blank">Tabulated</a> data tables derived from the HBCD-MADE pipeline derivatives
+- <i class="fa fa-hammer"></i> <a href="../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> under subject- and session-specific <code>eeg/</code> folders (*file-based data*)
+- <i class="fas fa-cog"></i> <a href="../../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> processed through the HBCD-MADE pipeline under <code>made/</code> (*file-based data*)
+- <i class="fas fa-table"></i> <a href="../../datacuration/phenotypes" target="_blank">Tabulated</a> data tables derived from the HBCD-MADE pipeline derivatives - see full list of tables <a href="../../#eeg" target="_blank">here</a>
+
+### Raw BIDS
+
+<div id="bids-eeg" class="table-banner" onclick="toggleCollapse(this)">
+  <img src="../../../datacuration/images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
+  <span class="text-with-link">
+  <span>BIDS Conversion Procedures: EEG</span>
+  <a class="anchor-link" href="#bids-eeg" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>EEG BIDS conversion was handled by <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application developed for HBCD EEG data management and BIDS formatting installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which, among other things, converts this data to the BIDS standard data structure.</p>
+</div>
+
+The `eeg/` folder contains raw EEG data in BIDS format including information about the recording system, location of electrodes, and events for each task:
 
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
-|   |
-| <span class="hashtag"># Tabulated Data</span>
-|   |__ phenotype/    
-|   |   |__ eeg_made_task-<span class="placeholder">&lt;TASK&gt;</span>_acq-eeg_preprocessingReport.*
-|   |   |__ eeg_qc_task-<span class="placeholder">&lt;TASK&gt;</span>.*
-|   |
-| <span class="hashtag"># Raw BIDS (file-based data)</span>
-|   |__ sub-<span class="label">&lt;label&gt;</span>/   
-|       |__ ses-<span class="label">&lt;label&gt;</span>/
-|           |__ eeg/
-|
-| <span class="hashtag"># Derivatives (file-based data)</span>
-|__ derivatives/       
+    |__ sub-<span class="label">&lt;label&gt;</span>/   
+        |__ ses-<span class="label">&lt;label&gt;</span>/
+            |__ eeg/
+                | <span class="hashtag"># TASK ACQUISITIONS:</span>
+                |__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_channels.tsv
+                |__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.json
+                |__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.set
+                |__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.tsv
+                |__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.json
+                |__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eeg.fdt
+                |
+                | <span class="hashtag"># LOCATION OF ELECTRODES:</span>
+                |__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_electrodes.tsv
+                |__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_coordsystem.json
+                |
+                |__ sourcedata/
+                    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-eeg_impedances.json
+                    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eventlogs.txt
+</pre>
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+    <th></th>
+    <th>File</th>
+    <th>Description</th>
+</thead>
+<tbody>
+<tr>
+    <td rowspan="2">Task Acquisition Files</td>
+    <td><code>SET</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Metadata and parameters for the EEG dataset, such as channel locations, sampling rate, and event information.</td>
+</tr>
+<tr>
+    <td><code>FDT</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Field data table files containing EEG data</td>
+</tr>
+
+<tr>
+    <td rowspan="2">Location of Electrodes</td>
+    <td><code>*_electrodes.tsv</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Specifies the location of electrodes, placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>)</td>
+</tr>
+<tr>
+    <td><code>*_coordsystem.json</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Cartesian coordinates followed by <code>*_electrodes.tsv</code> files</td>
+</tr>
+<tr>
+    <td rowspan="2">Sourcedata</td>
+    <td><code>*_impedence.json</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Impedance values used to ensure good electrode contact</td>
+</tr>
+<tr>
+    <td><code>*_eventlogs.txt</code></td>
+    <td style="word-wrap: break-word; white-space: normal;">Task stimuli presentations</td>
+</tr>
+</tbody>
+</table>
+
+### Derivatives
+
+HBCD-MADE produces preprocessed EEG derivatives. See the [HBCD-MADE documentation](https://docs-hbcd-made.readthedocs.io/en/latest) for a full explanation of the derivative files displayed below.
+
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
     |__ made/
-</pre> 
-<small><b style="color: #0077cc;">&lt;TASK&gt;</b> label values: FACE, MMN, RS, VEP</small>
+        |__ sub-<span class="label">&lt;label&gt;</span>/
+            |__ ses-<span class="label">&lt;label&gt;</span>/
+                |__ eeg/
+                    |__ filtered_data/
+                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.fdt
+                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.set
+                    |
+                    |__ ica_data/
+                    |   |__ <span class="subses">SUBSES</span>_adjustReport.txt
+                    |   |__ <span class="subses">SUBSES</span>_desc-mergedICA_eeg.fdt
+                    |   |__ <span class="subses">SUBSES</span>_desc-mergedICA_eeg.set
+                    | 
+                    |__ merged_data/
+                    |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.fdt
+                    |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.json
+                    |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.set
+                    | 
+                    |__ processed_data/
+                    |   |__ sub-<span class="label">&lt;label&gt;</span>_task-FACE_desc-<span class="placeholder">&lt;FACE-JPG&gt;</span>.jpg
+                    |   |__ sub-<span class="label">&lt;label&gt;</span>_task-MMN_desc-<span class="placeholder">&lt;MMN-JPG&gt;</span>.jpg
+                    |   |__ <span class="subses">SUBSES</span>_task-RS_powerSummaryStats.csv
+                    |   |__ sub-<span class="label">&lt;label&gt;</span>_task-VEP_<span class="placeholder">&lt;desc-oz_ERP|topo&gt;</span>.jpg
+                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_acq-eeg_ERP.mat
+                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.fdt
+                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.set
+                    | 
+                    |__ <span class="subses">SUBSES</span>_acq-eeg_preprocessingReport.csv
+                    |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_MADEspecification.json
+</pre>
+
+<details open>
+<summary>Label Values Legend</summary>
+<p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
+  <b style="color: #0077cc;">FACE-JPG</b>: Oz_diffERP, diffInvVsUpr_topo, diffObjVsUp2_topo, inverted_topo, object_topo, oz_ERP, upright_topo, upright2_topo
+</p>
+<p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
+  <b style="color: #0077cc;">MMN-JPG</b>: deviant_topo, diffDevVsSta_topo, diffDevVsPre_topo, preDeviant_topo, standard_topo, t7t8_diffERP, t7t8_ERP
+</p>
+</details>
+
+*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
+
+
 
 ## EEG Protocols
 
@@ -143,3 +254,27 @@ Please refer to the [HBCD EEG Acquisition Protocol](https://zenodo.org/records/1
 <br>
 
 
+## Extra
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+    <td>Task Acquisition Files</td>
+    <td style="word-wrap: break-word; white-space: normal;">The <code>SET</code> files contain metadata and parameters for the EEG dataset, such as channel locations, sampling rate, and event information. The <code>FDT</code> files are field data table files containing EEG data</td>
+</tr>
+<tr>
+    <td>Location of Electrodes</td>
+    <td style="word-wrap: break-word; white-space: normal;">The location of electrodes, placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>), is specified in the <code>*_electrodes.tsv</code> files following cartesian coordinates provided in the <code>*_coordsystem.json</code> file. For **task acquisitions**, the task is specified by <code>task-<label></code>, with task options of `FACE`, `MMN`, `RS`, and `VEP`</td>
+</tr>
+<tr>
+    <td>Sourcedata</td>
+    <td style="word-wrap: break-word; white-space: normal;">
+    <ul>
+    The accompanying <code>sourcedata/</code> files include:
+    <li>Impedance values used to ensure good electrode contact (<code>*_impedence.json</code>)</li>
+    <li>Task stimuli presentations (<code>*_eventlogs.txt</code>)</li>
+    </ul>
+    </td>
+</tr>
+</tbody>
+</table>

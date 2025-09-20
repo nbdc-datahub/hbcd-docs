@@ -1,41 +1,6 @@
 # Raw BIDS
 
-The `rawdata/` folder includes raw <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> magnetic resonance imaging (MRI), spectroscopy (MRS), electroencephalography (EEG), and motion/accelerometry (i.e. [wearable sensor](../instruments/sensors/wearsensors.md) recordings for leg motion) data, converted to BIDS and organized under subject and session-specific directories for processing through BIDS App pipelines ([see details](../instruments/processing/index.md)). *Note that the folder and file counts may vary across subjects and sessions, which is expected in a large-scale infant MRI study.*
-
-<pre class="folder-tree">
-hbcd/
-|__ rawdata/ 
-    |__ sub-<span class="label">&lt;label&gt;</span>/
-    |   |__ sub-<span class="label">&lt;label&gt;</span>_sessions.tsv
-    |   |__ sub-<span class="label">&lt;label&gt;</span>_sessions.json
-    |   |__ ses-<span class="label">&lt;label&gt;</span>/
-    |       |__ anat/
-    |       |__ dwi/
-    |       |__ eeg/
-    |       |__ fmap/
-    |       |__ func/
-    |       |__ motion/
-    |       |__ mrs/
-    |       |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_scans.tsv
-    |       |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_scans.json
-    |
-    |__ dataset_description.json
-    |__ participants.tsv
-    |__ participants.json 
-</pre>
-
-## Participant-, Session-, & Scan-Level Data
-Participant-, session-, and scan-level data are stored in standardized `.tsv` files, accompanied by a `.json` sidecar file that defines the columns and describes the data fields, located in the `rawdata/` directory and its subdirectories:
-
-- **Participant-level**: Stored in `rawdata/participants.tsv`, this file includes basic demographic and participant information (e.g., sex).
-- **Session-level**: Stored in `sub-<label>_sessions.tsv` within each subject folder, this file includes session information such as collection site, the participant’s age at each session, and head size.
-- **Scan-level**:  Each session folder includes a `sub-<label>_ses-<label>_scans.tsv` file with per-scan information including participant age at scan as well as all raw data QC scores (see [HBCD MR Quality Control Procedures](../instruments/mri/qc.md#location-of-raw-data-qc-results-in-data-release)).
-
-### Fields Reporting Age
-
-See description of fields reporting age under Age Variable Definitions > <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Raw File-Based Data</a>.
-
-## Imaging
+## MR Imaging
 
 <div id="bids-imaging" class="table-banner" onclick="toggleCollapse(this)">
   <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
@@ -129,14 +94,14 @@ Functional files include BOLD functional resting state images under `func/`. Eac
     |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-AP_run-<span class="label">&lt;label&gt;</span>_epi.json
     |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-PA_run-<span class="label">&lt;label&gt;</span>_epi.nii.gz
     |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-PA_run-<span class="label">&lt;label&gt;</span>_epi.json
-	|
-	| <span class="hashtag"># SIEMENS ONLY:</span>
+    |
+    | <span class="hashtag"># SIEMENS ONLY:</span>
     |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-anat_run-<span class="label">&lt;label&gt;</span>_TB1TFL.nii.gz
     |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-anat_run-<span class="label">&lt;label&gt;</span>_TB1TFL.json
     |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-fmap_run-<span class="label">&lt;label&gt;</span>_TB1TFL.nii.gz
     |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-fmap_run-<span class="label">&lt;label&gt;</span>_TB1TFL.json
-	|
-	| <span class="hashtag"># GE AND PHILIPS ONLY:</span>
+    |
+    | <span class="hashtag"># GE AND PHILIPS ONLY:</span>
     |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-tr1_run-<span class="label">&lt;label&gt;</span>_TB1AFI.nii.gz 
     |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-tr1_run-<span class="label">&lt;label&gt;</span>_TB1AFI.json 
     |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-tr2_run-<span class="label">&lt;label&gt;</span>_TB1AFI.nii.gz
@@ -173,88 +138,3 @@ mrs/
 |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-hercules_run-<span class="label">&lt;label&gt;</span>_ref.json
 </pre>
 
-## EEG
-
-<div id="bids-eeg" class="table-banner" onclick="toggleCollapse(this)">
-  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
-  <span class="text-with-link">
-  <span>BIDS Conversion Procedures: EEG</span>
-  <a class="anchor-link" href="#bids-eeg" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>EEG BIDS conversion was handled by <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application developed for HBCD EEG data management and BIDS formatting installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which, among other things, converts this data to the BIDS standard data structure.</p>
-</div>
-
-The `eeg/` BIDS data folder contains several filetypes in BIDS format providing information about the recording system, location of electrodes, events for each task, and raw data:
-
-<pre class="folder-tree">
-eeg/
-| <span class="hashtag"># TASK ACQUISITIONS:</span>
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_channels.tsv
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.json
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.set
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.tsv
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.json
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eeg.fdt
-|
-| <span class="hashtag"># LOCATION OF ELECTRODES:</span>
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_electrodes.tsv
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_coordsystem.json
-|
-|__ sourcedata/
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-eeg_impedances.json
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eventlogs.txt
-</pre>
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-    <th></th>
-    <th>File</th>
-    <th>Description</th>
-</thead>
-<tbody>
-<tr>
-    <td rowspan="2">Task Acquisition Files</td>
-    <td><code>SET</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Metadata and parameters for the EEG dataset, such as channel locations, sampling rate, and event information.</td>
-</tr>
-<tr>
-    <td><code>FDT</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Field data table files containing EEG data</td>
-</tr>
-
-<tr>
-    <td rowspan="2">Location of Electrodes</td>
-    <td><code>*_electrodes.tsv</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Specifies the location of electrodes, placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>)</td>
-</tr>
-<tr>
-    <td><code>*_coordsystem.json</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Cartesian coordinates followed by <code>*_electrodes.tsv</code> files</td>
-</tr>
-<tr>
-    <td rowspan="2">Sourcedata</td>
-    <td><code>*_impedence.json</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Impedance values used to ensure good electrode contact</td>
-</tr>
-<tr>
-    <td><code>*_eventlogs.txt</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Task stimuli presentations</td>
-</tr>
-</tbody>
-</table>
-
-## Motion
-Axivity AX6 sensor data provided in the data release include `_motion.tsv` sensor recordings with corresponding `*_channels.tsv` files that describe each column of of the motion file. The acquisition (`acq-`) label for the calibration files is `calibration` while the label for the 72-hr data files is `primary`. The `task` label will be either `LeftLegMovement` or `RightLegMovement` for sensors placed on the left or right leg. Each `.tsv` file is accompanied by a JSON sidecar containing recording-related metadata: 
-
-<pre class="folder-tree">
-motion/  
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="label">&lt;label&gt;</span>_tracksys-imu_acq-<span class="label">&lt;label&gt;</span>_motion.tsv  
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="label">&lt;label&gt;</span>_tracksys-imu_acq-<span class="label">&lt;label&gt;</span>_motion.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="label">&lt;label&gt;</span>_tracksys-imu_acq-<span class="label">&lt;label&gt;</span>_channels.tsv  
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="label">&lt;label&gt;</span>_tracksys-imu_acq-<span class="label">&lt;label&gt;</span>_channels.json
-</pre>

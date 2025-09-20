@@ -52,7 +52,6 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
 </tbody>
 </table>
 
-
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 

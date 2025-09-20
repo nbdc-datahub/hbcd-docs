@@ -1,4 +1,4 @@
-# Raw BIDS & Processed Derivative File-Based Data
+# File-Based Data: Raw BIDS & Processed Derivatives
 
 ## Raw BIDS
 
@@ -38,7 +38,6 @@ Participant-, session-, and scan-level data are stored in standardized `.tsv` fi
 See description of fields reporting age under Age Variable Definitions > <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Raw File-Based Data</a>.
 
 
-
 ## Processed Derivatives
 
 The `derivatives/` folder contains derivatives, which are file outputs from <a href="../../instruments/processing/" target="_blank">processing pipelines</a>. 
@@ -71,3 +70,20 @@ hbcd/
     |__ made/         <span class="hashtag"># EEG</span>
     |__ hbcd_motion/  <span class="hashtag"># Biosensors Recordings</span>
 </pre>
+
+<p>
+<div id="visformat"  class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">Format of File Structure Visuals</span>
+</div>
+<div class="notification-static-content">
+<p><strong>The following formatting was employed to enhance readability of the file structure visuals:</strong></p>
+<ul>
+<li>The BIDS entities <code>sub-&lt;label&gt;_ses-&lt;label&gt;</code> are replaced with the string <code>SUBSES</code></li>
+<li>Some entities include a set of specific values, each of which is associated with a separate file: these values are either enclosed within <code>&lt;&gt;</code> as a list, separated by <code>|</code>, or listed in a <strong>Label Values Legend</strong></li>
+<li>For brevity, sidecar JSON files may not be displayed, in which case files with corresponding JSONs are labeled with <code>(+JSON)</code> after the filename</li>
+<li>Several pipelines produce an <code>.html</code> visual summary report intended to be used for quality assessment of processed outputs. These files, typically located at either the pipeline folder or session-level, source their images from a <code>figures/</code> folder found in the derivatives. For readability, the contents of the <code>figures/</code> folders are not listed</li>
+</ul>
+</div>
+</p>
+

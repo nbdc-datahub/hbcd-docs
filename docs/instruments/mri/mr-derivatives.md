@@ -1,52 +1,4 @@
-
-# Processed Derivatives
-
-The `derivatives/` folder contains derivatives, which are file outputs from <a href="../../instruments/processing/" target="_blank">processing pipelines</a>. 
-
-<pre class="folder-tree">
-hbcd/
-|__ derivatives/ 
-    <span class="hashtag"># Structural & Functional MRI</span>             
-    |__ mriqc/      
-    |__ bibsnet/    
-    |__ nibabies/   
-    |__ freesurfer/ 
-    |__ mcribs/     
-    |__ xcp_d/      
-    |               
-    <span class="hashtag"># Quantitative MRI</span>    
-    |__ symri/           
-    |__ qmri_postproc/  
-    | 
-    <span class="hashtag"># Diffusion MRI</span>                                  
-    |__ qsiprep/                         
-    |__ qsirecon/                        
-    |__ qsirecon-DIPYDKI/                
-    |__ qsirecon-DSIStudio/               
-    |__ qsirecon-NODDI/                  
-    |__ qsirecon-TORTOISE_model-MAPMRI/  
-    |__ qsirecon-TORTOISE_model-tensor/  
-    |
-    |__ osprey/       <span class="hashtag"># MRS</span>
-    |__ made/         <span class="hashtag"># EEG</span>
-    |__ hbcd_motion/  <span class="hashtag"># Biosensors Recordings</span>
-</pre>
-
-<p>
-<div id="visformat"  class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Format of File Structure Visuals</span>
-</div>
-<div class="notification-static-content">
-<p><strong>The following formatting was employed to enhance readability of the file structure visuals:</strong></p>
-<ul>
-<li>The BIDS entities <code>sub-&lt;label&gt;_ses-&lt;label&gt;</code> are replaced with the string <code>SUBSES</code></li>
-<li>Some entities include a set of specific values, each of which is associated with a separate file: these values are either enclosed within <code>&lt;&gt;</code> as a list, separated by <code>|</code>, or listed in a <strong>Label Values Legend</strong></li>
-<li>For brevity, sidecar JSON files may not be displayed, in which case files with corresponding JSONs are labeled with <code>(+JSON)</code> after the filename</li>
-<li>Several pipelines produce an <code>.html</code> visual summary report intended to be used for quality assessment of processed outputs. These files, typically located at either the pipeline folder or session-level, source their images from a <code>figures/</code> folder found in the derivatives. For readability, the contents of the <code>figures/</code> folders are not listed</li>
-</ul>
-</div>
-</p>
+# MR Derivatives
 
 ## Structural & Functional MRI
 
@@ -110,7 +62,7 @@ Infant-fMRIPrep (also known as NiBabies) outputs from minimal structural and fun
 <div id="fyi-nibabies" class="table-banner">
     <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text">NOTE: The current release includes Infant fMRIPrep (and consequently XCP-D) derivatives for V02 only.
-	</span>
+    </span>
 </div>
 </p>
 
@@ -399,7 +351,7 @@ XCP-D performs functional MRI post-processing and noise regression from Infant-f
 <div id="fyi-xcpd" class="notification-banner">
     <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text">NOTE: The current release includes XCP-D derivatives for V02 only.
-	</span>
+    </span>
 </div>
 </p>
 
@@ -678,81 +630,3 @@ hbcd/
                 |__ unedited/
 </pre>
 *See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
-
-## EEG: HBCD-MADE
-HBCD-MADE produces preprocessed EEG derivatives. Please see the [HBCD-MADE webpage](https://docs-hbcd-made.readthedocs.io/en/latest) for a full explanation of the derivative files displayed below.
-
-<pre class="folder-tree">
-hbcd/
-|__ derivatives/ 
-    |__ made/
-        |__ sub-<span class="label">&lt;label&gt;</span>/
-            |__ ses-<span class="label">&lt;label&gt;</span>/
-                |__ eeg/
-                    |__ filtered_data/
-                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.fdt
-                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.set
-                    |
-                    |__ ica_data/
-                    |   |__ <span class="subses">SUBSES</span>_adjustReport.txt
-                    |   |__ <span class="subses">SUBSES</span>_desc-mergedICA_eeg.fdt
-                    |   |__ <span class="subses">SUBSES</span>_desc-mergedICA_eeg.set
-                    | 
-                    |__ merged_data/
-                    |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.fdt
-                    |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.json
-                    |   |__ <span class="subses">SUBSES</span>_desc-merged_eeg.set
-                    | 
-                    |__ processed_data/
-                    |   |__ sub-<span class="label">&lt;label&gt;</span>_task-FACE_desc-<span class="placeholder">&lt;FACE-JPG&gt;</span>.jpg
-                    |   |__ sub-<span class="label">&lt;label&gt;</span>_task-MMN_desc-<span class="placeholder">&lt;MMN-JPG&gt;</span>.jpg
-                    |   |__ <span class="subses">SUBSES</span>_task-RS_powerSummaryStats.csv
-                    |   |__ sub-<span class="label">&lt;label&gt;</span>_task-VEP_<span class="placeholder">&lt;desc-oz_ERP|topo&gt;</span>.jpg
-                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_acq-eeg_ERP.mat
-                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.fdt
-                    |   |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.set
-                    | 
-                    |__ <span class="subses">SUBSES</span>_acq-eeg_preprocessingReport.csv
-                    |__ <span class="subses">SUBSES</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_MADEspecification.json
-</pre>
-
-<details open>
-<summary>Label Values Legend</summary>
-<p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
-  <b style="color: #0077cc;">FACE-JPG</b>: Oz_diffERP, diffInvVsUpr_topo, diffObjVsUp2_topo, inverted_topo, object_topo, oz_ERP, upright_topo, upright2_topo
-</p>
-<p style="margin-bottom: 0; padding-bottom: 0; font-size: smaller;">
-  <b style="color: #0077cc;">MMN-JPG</b>: deviant_topo, diffDevVsSta_topo, diffDevVsPre_topo, preDeviant_topo, standard_topo, t7t8_diffERP, t7t8_ERP
-</p>
-</details>
-
-*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder tree above.*
-
-## Biosensors: HBCD-Motion
-The HBCD-Motion pipeline is used to process the HBCD Axivity Ax6 sensor recordings of infant leg movements across 72 continuous hours. Please see a full description of the output files on their webpage [here](https://hbcd-motion-postproc.readthedocs.io/en/latest/outputs.html#outputs).
-
-<pre class="folder-tree">
-hbcd/
-|__ derivatives/ 
-    |__ hbcd_motion/
-        |__ sub-<span class="label">&lt;label&gt;</span>/
-            |__ ses-<span class="label">&lt;label&gt;</span>/
-                |__ motion/
-                    |__ Kinematics/
-                    |   |__ <span class="subses">SUBSES</span>_desc-kinematics_recording-20_motion.json
-                    |   |__ <span class="subses">SUBSES</span>_desc-kinematics_recording-25_motion.json
-                    |
-                    |__ PA/
-                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_BOUTS.tsv
-                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_LOG.txt
-                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_RAW.tsv
-                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_SUMMARY.json
-                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_BOUTS.tsv
-                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_LOG.txt
-                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_RAW.tsv
-                    |   |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_SUMMARY.json
-                    |
-                    |__ PARAMETERS.json
-                    |__ <span class="subses">SUBSES</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-calibrated_recording-20_motion.tsv
-</pre>
-*See [Format of File Structure Visuals](#visformat) for guidance on interpreting the folder structure visual.*
