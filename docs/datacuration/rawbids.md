@@ -5,10 +5,10 @@ The `rawdata/` folder includes raw <span class="tooltip">file-based<span class="
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
-    |__ sub-<span class="label">&lt;label&gt;</span>/
-    |   |__ sub-<span class="label">&lt;label&gt;</span>_sessions.tsv
-    |   |__ sub-<span class="label">&lt;label&gt;</span>_sessions.json
-    |   |__ ses-<span class="label">&lt;label&gt;</span>/
+    |__ sub-<span class="label">{ID}</span>/
+    |   |__ sub-<span class="label">{ID}</span>_sessions.tsv
+    |   |__ sub-<span class="label">{ID}</span>_sessions.json
+    |   |__ ses-<span class="label">{V0X}</span>/
     |       |__ anat/
     |       |__ dwi/
     |       |__ eeg/
@@ -16,8 +16,8 @@ hbcd/
     |       |__ func/
     |       |__ motion/
     |       |__ mrs/
-    |       |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_scans.tsv
-    |       |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_scans.json
+    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_scans.tsv
+    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_scans.json
     |
     |__ dataset_description.json
     |__ participants.tsv
@@ -90,14 +90,14 @@ Depending on the scanner manufacturer, <code>dcm2niix</code> conversion for QALA
 Anatomical files include T1- and T2-weighted MRI images, MRS localizer files (`acq-mrsLocAx` and `acq-mrsLocCor` indicate axial and coronal localizers, respectively), and Quantitative MRI QALAS files. 
 <pre class="folder-tree">
 anat/
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_run-<span class="label">&lt;label&gt;</span>_T1w.nii.gz 
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_run-<span class="label">&lt;label&gt;</span>_T1w.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_run-<span class="label">&lt;label&gt;</span>_T2w.nii.gz
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_run-<span class="label">&lt;label&gt;</span>_T2w.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-sub-<span class="placeholder">&lt;mrsLocAx|mrsLocCor&gt;</span>_run-<span class="label">&lt;label&gt;</span>_T2w.nii.gz 
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-sub-<span class="placeholder">&lt;mrsLocAx|mrsLocCor&gt;</span>_run-<span class="label">&lt;label&gt;</span>_T2w.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_run-<span class="label">&lt;label&gt;</span>_inv-sub-<span class="placeholder">&lt;0|1|2|3|4&gt;</span>_QALAS.nii.gz
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_run-<span class="label">&lt;label&gt;</span>_inv-sub-<span class="placeholder">&lt;0|1|2|3|4&gt;</span>_QALAS.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T1w.nii.gz 
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T1w.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.nii.gz
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-sub-<span class="placeholder">&lt;mrsLocAx|mrsLocCor&gt;</span>_run-<span class="label">{X}</span>_T2w.nii.gz 
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-sub-<span class="placeholder">&lt;mrsLocAx|mrsLocCor&gt;</span>_run-<span class="label">{X}</span>_T2w.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_inv-sub-<span class="placeholder">&lt;0|1|2|3|4&gt;</span>_QALAS.nii.gz
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_inv-sub-<span class="placeholder">&lt;0|1|2|3|4&gt;</span>_QALAS.json
 </pre>
 *NOTE: See information about hardcoded fields for Philips and GE T1ws and post-BIDS conversion modifications for QALAS [here](#bids-imaging).*
 
@@ -105,12 +105,12 @@ anat/
 Diffusion files include DWI runs (`*_dwi.nii.gz`) along with `bval` and `bvec` files, which provide the magnitudes and orientations of the diffusion gradients for each volume, respectively. Single-band reference files (`*_sbref.nii.gz`) are also included in the release. All images were acquired in both AP (`dir-AP`) and PA (`dir-PA`) phase encoding directions.
 <pre class="folder-tree">
 dwi/
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">&lt;label&gt;</span>_dwi.bval
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">&lt;label&gt;</span>_dwi.bvec
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">&lt;label&gt;</span>_dwi.nii.gz
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">&lt;label&gt;</span>_dwi.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">&lt;label&gt;</span>_sbref.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">&lt;label&gt;</span>_sbref.nii.gz
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.bval
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.bvec
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.nii.gz
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_sbref.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_sbref.nii.gz
 </pre>
 *NOTE: See information about hardcoded fields for Philips and GE DWI data [here](#bids-imaging).*
 
@@ -121,26 +121,26 @@ Functional files include BOLD functional resting state images under `func/`. Eac
 
 <pre class="folder-tree">
 |__ func/
-|   |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-rest_dir-PA_run-<span class="label">&lt;label&gt;</span>_bold.nii.gz
-|   |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-rest_dir-PA_run-<span class="label">&lt;label&gt;</span>_bold.json
+|   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_bold.nii.gz
+|   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_bold.json
 |
 |__ fmap/
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-AP_run-<span class="label">&lt;label&gt;</span>_epi.nii.gz
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-AP_run-<span class="label">&lt;label&gt;</span>_epi.json
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-PA_run-<span class="label">&lt;label&gt;</span>_epi.nii.gz
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_dir-PA_run-<span class="label">&lt;label&gt;</span>_epi.json
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-AP_run-<span class="label">{X}</span>_epi.nii.gz
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-AP_run-<span class="label">{X}</span>_epi.json
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-PA_run-<span class="label">{X}</span>_epi.nii.gz
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-PA_run-<span class="label">{X}</span>_epi.json
 	|
 	| <span class="hashtag"># SIEMENS ONLY:</span>
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-anat_run-<span class="label">&lt;label&gt;</span>_TB1TFL.nii.gz
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-anat_run-<span class="label">&lt;label&gt;</span>_TB1TFL.json
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-fmap_run-<span class="label">&lt;label&gt;</span>_TB1TFL.nii.gz
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-fmap_run-<span class="label">&lt;label&gt;</span>_TB1TFL.json
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-anat_run-<span class="label">{X}</span>_TB1TFL.nii.gz
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-anat_run-<span class="label">{X}</span>_TB1TFL.json
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-fmap_run-<span class="label">{X}</span>_TB1TFL.nii.gz
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-fmap_run-<span class="label">{X}</span>_TB1TFL.json
 	|
 	| <span class="hashtag"># GE AND PHILIPS ONLY:</span>
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-tr1_run-<span class="label">&lt;label&gt;</span>_TB1AFI.nii.gz 
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-tr1_run-<span class="label">&lt;label&gt;</span>_TB1AFI.json 
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-tr2_run-<span class="label">&lt;label&gt;</span>_TB1AFI.nii.gz
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-tr2_run-<span class="label">&lt;label&gt;</span>_TB1AFI.json
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-tr1_run-<span class="label">{X}</span>_TB1AFI.nii.gz 
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-tr1_run-<span class="label">{X}</span>_TB1AFI.json 
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-tr2_run-<span class="label">{X}</span>_TB1AFI.nii.gz
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-tr2_run-<span class="label">{X}</span>_TB1AFI.json
 </pre>
 *NOTE: See information about hardcoded fields for Philips and GE BOLD data [here](#bids-imaging).*
 
@@ -163,14 +163,14 @@ Functional files include BOLD functional resting state images under `func/`. Eac
 MRS files include metabolite and water reference (`*_<svs|ref>.nii.gz`) data aqcuired via short-echo-time (TE = 35 ms) and HERCULES (spectral-edited, TE = 80 ms) (`acq-<shortTE|hercules>`). The JSON sidecar files include the dimensions of the NIfTI-MRS data array, holding different coil elements in dimension 5 and different transients in dimension 6.
 <pre class="folder-tree">
 mrs/
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-shortTE_run-<span class="label">&lt;label&gt;</span>_svs.nii.gz
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-shortTE_run-<span class="label">&lt;label&gt;</span>_svs.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-shortTE_run-<span class="label">&lt;label&gt;</span>_ref.nii.gz
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-shortTE_run-<span class="label">&lt;label&gt;</span>_ref.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-hercules_run-<span class="label">&lt;label&gt;</span>_svs.nii.gz
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-hercules_run-<span class="label">&lt;label&gt;</span>_svs.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-hercules_run-<span class="label">&lt;label&gt;</span>_ref.nii.gz
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-hercules_run-<span class="label">&lt;label&gt;</span>_ref.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_svs.nii.gz
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_svs.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_ref.nii.gz
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_ref.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_svs.nii.gz
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_svs.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_ref.nii.gz
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_ref.json
 </pre>
 
 ## EEG
@@ -194,20 +194,20 @@ The `eeg/` BIDS data folder contains several filetypes in BIDS format providing 
 <pre class="folder-tree">
 eeg/
 | <span class="hashtag"># TASK ACQUISITIONS:</span>
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_channels.tsv
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.json
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.set
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.tsv
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.json
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eeg.fdt
+|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_channels.tsv
+|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.json
+|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.set
+|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.tsv
+|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.json
+|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eeg.fdt
 |
 | <span class="hashtag"># LOCATION OF ELECTRODES:</span>
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_electrodes.tsv
-|__sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_coordsystem.json
+|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_electrodes.tsv
+|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_coordsystem.json
 |
 |__ sourcedata/
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-eeg_impedances.json
-    |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eventlogs.txt
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_impedances.json
+    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eventlogs.txt
 </pre>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -251,10 +251,12 @@ eeg/
 ## Motion
 Axivity AX6 sensor data provided in the data release include `_motion.tsv` sensor recordings with corresponding `*_channels.tsv` files that describe each column of of the motion file. The acquisition (`acq-`) label for the calibration files is `calibration` while the label for the 72-hr data files is `primary`. The `task` label will be either `LeftLegMovement` or `RightLegMovement` for sensors placed on the left or right leg. Each `.tsv` file is accompanied by a JSON sidecar containing recording-related metadata: 
 
-<pre class="folder-tree">
+<pre class="folder-tree" style="font-size: 11px;">
 motion/  
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="label">&lt;label&gt;</span>_tracksys-imu_acq-<span class="label">&lt;label&gt;</span>_motion.tsv  
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="label">&lt;label&gt;</span>_tracksys-imu_acq-<span class="label">&lt;label&gt;</span>_motion.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="label">&lt;label&gt;</span>_tracksys-imu_acq-<span class="label">&lt;label&gt;</span>_channels.tsv  
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_task-<span class="label">&lt;label&gt;</span>_tracksys-imu_acq-<span class="label">&lt;label&gt;</span>_channels.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;LeftLegMovement|RightLegMovement&gt;</span>_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_motion.tsv  
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;LeftLegMovement|RightLegMovement&gt;</span>_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_motion.json
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;LeftLegMovement|RightLegMovement&gt;</span>_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_channels.tsv  
+|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;LeftLegMovement|RightLegMovement&gt;</span>_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_channels.json
 </pre>
+
+<br>
