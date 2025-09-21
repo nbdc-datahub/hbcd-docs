@@ -102,7 +102,7 @@ anat/
 *NOTE: See information about hardcoded fields for Philips and GE T1ws and post-BIDS conversion modifications for QALAS [here](#bids-imaging).*
 
 ### Diffusion (dwi/)
-Diffusion files include DWI runs (`*_dwi.nii.gz`) along with `bval` and `bvec` files, which provide the magnitudes and orientations of the diffusion gradients for each volume, respectively. Single-band reference files (`*_sbref.nii.gz`) are also included in the release. All images were acquired in both AP (`dir-AP`) and PA (`dir-PA`) phase encoding directions.
+Diffusion files include DWI runs (`*_dwi.nii.gz`) along with `bval` and `bvec` (magnitudes and orientations of the diffusion gradients for each volume, respectively), and single-band reference files (`*_sbref.nii.gz`). All images were acquired in both AP (`dir-AP`) and PA (`dir-PA`) phase encoding directions.
 <pre class="folder-tree">
 dwi/
 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.bval
@@ -160,7 +160,7 @@ Functional files include BOLD functional resting state images under `func/`. Eac
 <p>For MRS, vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.</p>
 </div>
 
-MRS files include metabolite and water reference (`*_<svs|ref>.nii.gz`) data aqcuired via short-echo-time (TE = 35 ms) and HERCULES (spectral-edited, TE = 80 ms) (`acq-<shortTE|hercules>`). The JSON sidecar files include the dimensions of the NIfTI-MRS data array, holding different coil elements in dimension 5 and different transients in dimension 6.
+MRS files include metabolite (`*_svs.nii.gz`) and water reference (`*_ref.nii.gz`) data acquired via short-echo-time (TE = 35 ms; `acq-shortTE`) and HERCULES (spectral-edited, TE = 80 ms; `acq-hercules`). The JSON sidecar files include the dimensions of the NIfTI-MRS data array, holding different coil elements in dimension 5 and different transients in dimension 6.
 <pre class="folder-tree">
 mrs/
 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_svs.nii.gz
