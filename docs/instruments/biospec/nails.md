@@ -1,9 +1,17 @@
-# USDTL Nails Toxicology Results
+# USDTL Nails Toxicology (Maternal)
 
-**Full Name**: USDTL Nails Toxicology results        
-**Short/Alternative Names**: Nails; Maternal Nails        
-**Table Names**: `bio_bm_biosample_nails_results` (toxicology screen), `bio_bm_biosample_nails_type` (specimen type)      
-**Construct**: Toxicology screen for substances & environmental exposures conducted on fingernails and toenails
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>bio_bm_biosample_nails_results</code> (toxicology screen), <code>bio_bm_biosample_nails_type</code> (specimen type)</div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Drug, Environmental Exposure</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

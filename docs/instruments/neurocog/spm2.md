@@ -1,9 +1,24 @@
 # SPM-2
 
-**Full Name**: Sensory Processing Measure – Infant/Toddler	            
-**Acronym**: SPM-2       
-**Table Name**: `ncl_cg_spm2__inf`       
-**Construct**: Sensory processing
+
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>ncl_cg_spm2__inf</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Sensory Processing Measure – Infant/Toddler (<i>SPM-2</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Sensory Processing/Integration</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

@@ -1,9 +1,23 @@
 # APA Level 1 / Level 2
 
-**Full Name**: DSM-5 Self-Rated Level 1 and Level 2 Cross-Cutting Symptom Measure—Adult           
-**Acronym**: APA Level 1 / Level 2         
-**Table Name**: `pex_bm_apa`       
-**Construct**: Mental health
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>pex_bm_apa</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      DSM-5 Self-Rated Level 1 and Level 2 Cross-Cutting Symptom Measure—Adult (<i>APA Level 1 / Level 2</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Mental Health</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

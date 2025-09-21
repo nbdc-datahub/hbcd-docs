@@ -1,8 +1,23 @@
 # V01 Demographics
 
-**Full Name**: HBCD V01 Demographics            
-**Table Name**: `sed_bm_demo`       
-**Construct**: Basic social characteristics related to the birthing parent, the other biological parent, and their household
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_bm_demo</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      HBCD V01 Demographics
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Demographics (Adult Visit 1)</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -77,7 +92,6 @@ Demographic information is crucial for understanding the child’s environment a
 
 Also see <a href="../../demo/basicdemo" target="_blank">Basic Demographics</a>, which includes variables derived from the HBCD Demographics V01 instrument and data collected during study enrolment/screening.
 
-
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
@@ -102,7 +116,7 @@ Also see <a href="../../demo/basicdemo" target="_blank">Basic Demographics</a>, 
     <li><b>Household Roster</b> alteration to reduce nuclear family assumptions: expansion of family/caregiver roles</li>
     </li>
     <li><b>Race/Ethnicity</b> and <b>Others Describe You</b>: Inclusion of racial and ethnic categories aligned with proposed OMB recommendations using a combined race and ethnicity variable with 7 response options (<a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards 
-    ">Federal Register 2023</a>). Participant select all options that apply.</li>
+    ">Federal Register 2023</a>). Participant can select all that apply.</li>
     <li><b>Income</b>: Alteration of household income brackets.</li>
   </ul>
 </div>

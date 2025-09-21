@@ -67,8 +67,8 @@ nav:
     - Data Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md
     - File-Based Data: 
-        - Raw File-Based Data: datacuration/rawbids.md
-        - Processed File-Based Data: datacuration/derivatives.md
+        - Raw BIDS: datacuration/rawbids.md
+        - Processed Derivatives: datacuration/derivatives.md
     - Tools: 
         - Useful Utilities: datacuration/recprograms.md
         - NMIND: datacuration/nmind.md
@@ -90,9 +90,6 @@ nav:
         - Neurocognition & Language:
             - MLDS: instruments/neurocog/mlds.md
             - SPM-2: instruments/neurocog/spm2.md
-        - Novel Tech & Wearable Sensors:
-            - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
-            - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
         - Physical Health:
             - Breastfeeding: instruments/physhealth/bf.md
             - Food Insecurity: instruments/physhealth/foodinsecurity.md
@@ -115,11 +112,11 @@ nav:
             - Perceived Stress/Social Support: instruments/SED/promis.md
             - Neighborhood Safety: instruments/SED/safety.md
             - Protective Factors: instruments/SED/paces.md
-    - Brain Activity - MRI & EEG:
+    - Brain Activity & Biosensors:
         - Electroencephalography:
             - Overview & Quality Control: instruments/eeg/index.md
-            - Faces Task: instruments/eeg/faces.md
             - Auditory Mismatch Negativity Task: instruments/eeg/mmn.md
+            - Faces Task: instruments/eeg/faces.md
             - Video Resting State Task: instruments/eeg/videors.md
             - Visual Evoked Potential Task: instruments/eeg/vep.md
         - Magnetic Resonance Imaging:
@@ -130,6 +127,9 @@ nav:
             - Diffusion MRI: instruments/mri/dmri.md
             - Quantitative MRI: instruments/mri/qmri.md
             - Magnetic Resonance Spectroscopy: instruments/mri/mrs.md 
+        - Novel Tech & Wearable Sensors:
+            - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
+            - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
         - Processing & Analytic Standards: 
             - Processing Pipelines: instruments/processing/index.md
             - Pipeline Software Standards: instruments/processing/standards.md

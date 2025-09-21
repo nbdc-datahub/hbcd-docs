@@ -1,8 +1,23 @@
-# Edinburgh Postnatal Depression Scale
-                 
-**Acronym**: EPDS            
-**Table Name**: `pex_bm_epds`       
-**Construct**: Postnatal depression
+# Postnatal Depression
+
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>pex_bm_epds</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Edinburgh Postnatal Depression Scale (<i>EPDS</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Postnatal Depression</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 

@@ -1,9 +1,23 @@
 # MLDS
 
-**Full Name**: Multilingual Language Development Screener    
-**Acronym**: MLDS         
-**Table Name**: `ncl_ch_mlds`       
-**Construct**: Multilingual exposure
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>ncl_ch_mlds</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Multilingual Language Development Screener (<i>MLDS</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Multilingual Exposure</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>

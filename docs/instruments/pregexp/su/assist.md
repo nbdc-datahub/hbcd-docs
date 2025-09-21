@@ -1,14 +1,37 @@
-# ASSIST
-
-**Full Name**: Alcohol, Smoking and Substance Involvement Screening Test V1.0, V2.0, and V3.0                            
+# ASSIST      
+<p>
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>pex_bm_assistv&lt;1|2|3&gt;</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+     Alcohol, Smoking and Substance Involvement Screening Test (<i>ASSIST</i>)
+    </div>
+  </div>
+    <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
+    <div class="info-value">V1, V2, V3</div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Substance Use Pre-, During, and Post-Pregnancy</div>
+  </div>
+</div>
+</p>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-<tr>
-<td>&nbsp;</td>
-<td style="text-align: center;"><b>Construct</b></td>
-<td style="text-align: center;"><b>Table Name</b></td>
-</tr>
+  <tr>
+    <th colspan="3"><i><i class="fa-solid fa-clone"></i> Version-Specific Information</i></th>
+  </tr>
+  <tr>
+    <th>Version</th>
+    <th>Construct</th>
+    <th>Table Name</th>
+  </tr>
 </thead>
 <tbody>
 <tr><td><strong>ASSIST V1</strong></td>
@@ -75,7 +98,7 @@
 
 ## Instrument Details
 
-The HBCD ASSIST V1, V2, and V3 measures were modified from the [NIDA Quick Screen (Modified ASSIST)](https://nida.nih.gov/sites/default/files/pdf/nmassist.pdf) and included questions from the Family History Assessment Module (FHAM) and the All of Us Personal and Family Health History. The original NIDA quick screen was scored; however, our version is not scored. To acknowledge these changes in future publications, authors can note that questions were motivated from the NIDA Modified ASSIST.
+The **HBCD ASSIST V1, V2, and V3** were modified from the [NIDA Quick Screen (Modified ASSIST)](https://nida.nih.gov/sites/default/files/pdf/nmassist.pdf) and included questions from the Family History Assessment Module (FHAM) and the All of Us Personal and Family Health History. The original NIDA quick screen was scored; however, our version is not scored. To acknowledge these changes in future publications, authors can note that questions were motivated from the NIDA Modified ASSIST.
 
 The NIDA quick screen tool (*have you used alcohol, tobacco, prescription drugs, or illegal drugs in the last year*) was modified to assess more details regarding types of substances used and the timeline of use before and during pregnancy - see [HBCD Modification Details](#hbcd-mod) for modifications made to each instrument version. In addition, for lifetime and problematic use, and use pre-pregnancy, pregnancy, end-pregnancy, post-pregnancy, and past 3 months, use was greatly expanded - see [Expanded ASSIST Substance Type Options](#substance-options).
 
