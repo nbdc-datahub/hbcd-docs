@@ -109,32 +109,4 @@ Functional files include BOLD functional resting state images under `func/`. Eac
 </pre>
 *NOTE: See information about hardcoded fields for Philips and GE BOLD data [here](#bids-imaging).*
 
-## MR Spectroscopy (mrs/)
-
-<div id="bids-mrs" class="table-banner" onclick="toggleCollapse(this)">
-  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
-  <span class="text-with-link">
-  <span>BIDS Conversion Procedures: MRS</span>
-  <a class="anchor-link" href="#bids-mrs" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>For MRS, vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.</p>
-</div>
-
-MRS files include metabolite and water reference (`*_<svs|ref>.nii.gz`) data aqcuired via short-echo-time (TE = 35 ms) and HERCULES (spectral-edited, TE = 80 ms) (`acq-<shortTE|hercules>`). The JSON sidecar files include the dimensions of the NIfTI-MRS data array, holding different coil elements in dimension 5 and different transients in dimension 6.
-<pre class="folder-tree">
-mrs/
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-shortTE_run-<span class="label">&lt;label&gt;</span>_svs.nii.gz
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-shortTE_run-<span class="label">&lt;label&gt;</span>_svs.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-shortTE_run-<span class="label">&lt;label&gt;</span>_ref.nii.gz
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-shortTE_run-<span class="label">&lt;label&gt;</span>_ref.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-hercules_run-<span class="label">&lt;label&gt;</span>_svs.nii.gz
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-hercules_run-<span class="label">&lt;label&gt;</span>_svs.json
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-hercules_run-<span class="label">&lt;label&gt;</span>_ref.nii.gz
-|__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_acq-hercules_run-<span class="label">&lt;label&gt;</span>_ref.json
-</pre>
 
