@@ -113,7 +113,7 @@ Based on the automated metrics above, a subset of series are selected for manual
 </table>
 
 ### Location of Raw Data QC Results in Data Release
-All quality control metrics are available in the `*_scans.tsv` file provided per participant session ([see details](../../datacuration/rawbids.md/#participant-session-scan-level-data)). The main QC score field, `QC`, is the overall manual QC score and will be a value of either 1 (pass) or 0 (fail). If the scan was not flagged for manual review and only has automated QC data, the `QC` field automatically has value of 1. 
+All quality control metrics are available in the `*_scans.tsv` file provided per participant session ([see details](../../datacuration/file-based-data.md#participant-session-scan-level-data)). The main QC score field, `QC`, is the overall manual QC score and will be a value of either 1 (pass) or 0 (fail). If the scan was not flagged for manual review and only has automated QC data, the `QC` field automatically has value of 1. 
 
 <div id="scanstsv" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
