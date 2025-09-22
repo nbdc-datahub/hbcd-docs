@@ -42,8 +42,18 @@ Structural MRI data in the release includes <span class="tooltip">file-based<spa
 In some cases, <code>dcm2niix</code> conversion led to missing or incorrectly configured NIfTI/JSON metadata. To address these issues, the headers for the file types listed below were hard-coded after conversion. These hard-coded values are also documented in the <code>HardCodedValues</code> field of the corresponding JSON sidecar file. For both Philips and GE, the <code>RepetitionTime</code> field for T1w images was hardcoded to ensure consistency across vendors.
 </div>
 
-Anatomical files include T1- and T2-weighted MRI images:
-
+<div id="rawbids" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">Raw BIDS Files (<code>anat/</code>)</span>
+  <a class="anchor-link" href="#rawbids" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Anatomical files include T1- and T2-weighted MRI images:</p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -55,15 +65,24 @@ hbcd/
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.nii.gz
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.json
 </pre>
+</div>
 
 ### Derivatives
 
 Structural MRI data are utilized in several processing pipelines, including .....
 
-### BIBSNet (`bibsnet/`)
-BIBSNet outputs brain segmentations and masks in native T1w and T2w space as well as `volumes.tsv` files with ROI volume statistics.      
-[<i class="fa-solid fa-book"></i> Go to pipeline documentation](https://bibsnet.readthedocs.io/en/latest/)
-
+<div id="bibsnet" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">BIBSNet Derivatives (<code>bibsnet/</code>)</span>
+  <a class="anchor-link" href="#bibsnet" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>BIBSNet outputs brain segmentations and masks in native T1w and T2w space as well as <code>volumes.tsv</code> files with ROI volume statistics.<br><a href="https://bibsnet.readthedocs.io/en/latest/"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -75,6 +94,7 @@ hbcd/
                     |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv <span class="hashtag">(+JSON)</span>         
                     |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.nii.gz <span class="hashtag">(+JSON)</span>
 </pre>
+</div>
 
 <div id="mriqc" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>

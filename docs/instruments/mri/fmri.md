@@ -95,8 +95,18 @@ In some cases, <code>dcm2niix</code> conversion led to missing or incorrectly co
 </table>
 </div>
 
-BOLD functional resting state data are located under `func/`. Each BOLD run has an associated pair of EPI fieldmaps acquired for distortion correction under `fmap/` in AP (`dir-AP`) and PA (`dir-PA`) phase encoding directions. **Siemens, GE, and Philips additionally include B1 fieldmaps**: For Siemens, `acq-<anat|fmap>` denotes the anatomical (like) image and scaled flip angle map whereas for GE and Philips, `acq-tr<1|2>` denotes the first and second TR image (see BIDS specification for quantitative MRI: [TB1TFL and TB1RFM](https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html#tb1tfl-and-tb1rfm-specific-notes) and [TB1AFI](https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html#tb1afi-specific-notes)):
-
+<div id="rawbids" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">Raw BIDS Files (<code>func/</code> & <code>fmap/</code>)</span>
+  <a class="anchor-link" href="#rawbids" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>BOLD functional resting state data are located under <code>func/</code>. Each BOLD run has an associated pair of EPI fieldmaps acquired for distortion correction under <code>fmap/</code> in AP (<code>dir-AP</code>) and PA (<code>dir-PA</code>) phase encoding directions. <strong>Siemens, GE, and Philips additionally include B1 fieldmaps</strong>: For Siemens, <code>acq-&lt;anat|fmap&gt;</code> denotes the anatomical (like) image and scaled flip angle map whereas for GE and Philips, <code>acq-tr&lt;1|2&gt;</code> denotes the first and second TR image (see BIDS specification for quantitative MRI: <a href="https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html#tb1tfl-and-tb1rfm-specific-notes">TB1TFL and TB1RFM</a> and <a href="https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html#tb1afi-specific-notes">TB1AFI</a>):</p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -124,6 +134,7 @@ hbcd/
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-tr2_run-<span class="label">{X}</span>_TB1AFI.nii.gz
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-tr2_run-<span class="label">{X}</span>_TB1AFI.json
 </pre>
+</div>
 
 ### Derivatives
 
