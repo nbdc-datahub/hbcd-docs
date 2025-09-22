@@ -92,7 +92,7 @@ In cases where ICD codes are provided, corresponding names/labels are sometimes 
 --------------------------
 
 ###### <span class="emoji" style="color: #f97316;"><i class="fas fa-bug"></i></span> Infant Health Check 
-The fields `pex_bm_healthv2_inf_00<1|2|3|4|5>__00` are 'Descriptive' fields that were erroneously inclduded and will be removed in a future release. They can be safely ignored.        
+The fields `pex_bm_healthv2_inf_00<1|2|3|4|5>__00` are 'Descriptive' fields that were erroneously included and will be removed in a future release. They can be safely ignored.        
 ***Expected Fix: R1.1***
 --------------------------
 
