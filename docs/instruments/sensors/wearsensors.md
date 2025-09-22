@@ -21,18 +21,52 @@ The HBCD data release includes Infant Leg Motion Wearable Sensor data acquired d
 
 Motion/accelerometry data collected from wearable infant leg sensors includes raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data:
 
-- <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#motion" target="_blank">Raw BIDS</a> under subject- and session-specific <code>motion/</code> folders (*file-based data*)
-- <i class="fas fa-cog"></i> <a href="../../datacuration/derivatives/#biosensors-hbcd-motion" target="_blank">Derivatives</a> processed through the HBCD-Motion pipeline under <code>hbcd_motion/</code> (*file-based data*)
+- <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> under subject- and session-specific <code>motion/</code> folders
+- <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> processed through the HBCD-Motion pipeline under <code>hbcd_motion/</code>
+
+### Raw BIDS
+Axivity AX6 sensor data provided in the data release include `_motion.tsv` sensor recordings with corresponding `*_channels.tsv` files that describe each column of of the motion file. The acquisition (`acq-`) label for the calibration files is `calibration` while the label for the 72-hr data files is `primary`. The `task` label will be either `LeftLegMovement` or `RightLegMovement` for sensors placed on the left or right leg. Each `.tsv` file is accompanied by a JSON sidecar containing recording-related metadata: 
+
+<pre class="folder-tree" style="font-size: 11px;">
+hbcd/
+|_ rawdata/ 
+   |_ sub-<span class="label">&lt;label&gt;</span>/   
+      |_ ses-<span class="label">&lt;label&gt;</span>/
+         |_ motion/  
+         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_motion.tsv  
+         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_motion.json
+         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_channels.tsv  
+         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_channels.json
+</pre>
+
+### Derivatives
+
+The HBCD-Motion pipeline is used to process the HBCD Axivity Ax6 sensor recordings of infant leg movements across 72 continuous hours.      
+[<i class="fa-solid fa-book"></i> Go to pipeline documentation](https://hbcd-motion-postproc.readthedocs.io/)
 
 <pre class="folder-tree">
 hbcd/
-|__ rawdata/ 
-|   |__ sub-<span class="label">&lt;label&gt;</span>/   
-|       |__ ses-<span class="label">&lt;label&gt;</span>/
-|           |__ motion/  <span class="hashtag"># Raw sensor data</span>
-|
-|__ derivatives/        
-    |__ hbcd_motion/     <span class="hashtag"># HBCD-Motion pipeline derivatives</span>
+|__ derivatives/ 
+    |__ hbcd_motion/
+        |__ sub-<span class="label">{ID}</span>/
+            |__ ses-<span class="label">{V0X}</span>/
+                |__ motion/
+                    |__ Kinematics/
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-kinematics_recording-20_motion.json
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-kinematics_recording-25_motion.json
+                    |
+                    |__ PA/
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_BOUTS.tsv
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_LOG.txt
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_RAW.tsv
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_SUMMARY.json
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_BOUTS.tsv
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_LOG.txt
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_RAW.tsv
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_SUMMARY.json
+                    |
+                    |__ PARAMETERS.json
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-calibrated_recording-20_motion.tsv
 </pre>
 
 ## Details

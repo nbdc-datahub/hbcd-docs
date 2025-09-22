@@ -34,6 +34,19 @@ As described above, MAP-MRI, in essence, describes a probability distribution fu
 
 Similar to RTOP, **RTAP** describes the probability of the water molecule to return to the axis of principal diffusion direction (primary eigenvector) and RTPP is equal to the reciprocal of the mean length of the cylinders, therefore inversely proportional to axial diffusivity, for diffusion taking place within coherently oriented cylinders.
 
+## Release Data
+
+Diffusion data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data:
+
+- <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> under subject- and session-specific <code>dwi/</code> folders
+- <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> processed through the QSIPrep and QSIRecon pipelines under <code>qsiprep/</code> and <code>qsirecon*/</code>
+- <i class="fas fa-table"></i> <a href="../../datacuration/phenotypes" target="_blank">Tabulated</a> `img_qsiprep_space-ACPC_desc-image_qc` data table derived from the QSIPrep pipeline derivatives
+
+### Raw BIDS
+
+
+
+
 
 ## References
 <div class="references">

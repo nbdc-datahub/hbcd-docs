@@ -86,6 +86,18 @@ Depending on the scanner manufacturer, <code>dcm2niix</code> conversion for QALA
 </table>
 </div>
 
+
+## Modality-Level Descriptions
+
+- [EEG](../instruments/eeg/index.md#raw-bids)
+- [Motion](../instruments/sensors/wearsensors.md#raw-bids)
+- [MRS](../instruments/mrs/index.md#raw-bids)
+
+
+
+
+
+
 ### Anatomical (anat/)
 Anatomical files include T1- and T2-weighted MRI images, MRS localizer files (`acq-mrsLocAx` and `acq-mrsLocCor` indicate axial and coronal localizers, respectively), and Quantitative MRI QALAS files. 
 <pre class="folder-tree">
@@ -144,119 +156,8 @@ Functional files include BOLD functional resting state images under `func/`. Eac
 </pre>
 *NOTE: See information about hardcoded fields for Philips and GE BOLD data [here](#bids-imaging).*
 
-## MR Spectroscopy (mrs/)
 
-<div id="bids-mrs" class="table-banner" onclick="toggleCollapse(this)">
-  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
-  <span class="text-with-link">
-  <span>BIDS Conversion Procedures: MRS</span>
-  <a class="anchor-link" href="#bids-mrs" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>For MRS, vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.</p>
-</div>
 
-MRS files include metabolite (`*_svs.nii.gz`) and water reference (`*_ref.nii.gz`) data acquired via short-echo-time (TE = 35 ms; `acq-shortTE`) and HERCULES (spectral-edited, TE = 80 ms; `acq-hercules`). The JSON sidecar files include the dimensions of the NIfTI-MRS data array, holding different coil elements in dimension 5 and different transients in dimension 6.
-<pre class="folder-tree">
-mrs/
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_svs.nii.gz
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_svs.json
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_ref.nii.gz
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_ref.json
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_svs.nii.gz
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_svs.json
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_ref.nii.gz
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_ref.json
-</pre>
 
-## EEG
-
-<div id="bids-eeg" class="table-banner" onclick="toggleCollapse(this)">
-  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
-  <span class="text-with-link">
-  <span>BIDS Conversion Procedures: EEG</span>
-  <a class="anchor-link" href="#bids-eeg" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>EEG BIDS conversion was handled by <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application developed for HBCD EEG data management and BIDS formatting installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which, among other things, converts this data to the BIDS standard data structure.</p>
-</div>
-
-The `eeg/` BIDS data folder contains several filetypes in BIDS format providing information about the recording system, location of electrodes, events for each task, and raw data:
-
-<pre class="folder-tree">
-eeg/
-| <span class="hashtag"># TASK ACQUISITIONS:</span>
-|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_channels.tsv
-|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.json
-|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.set
-|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.tsv
-|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.json
-|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eeg.fdt
-|
-| <span class="hashtag"># LOCATION OF ELECTRODES:</span>
-|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_electrodes.tsv
-|__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_coordsystem.json
-|
-|__ sourcedata/
-    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_impedances.json
-    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eventlogs.txt
-</pre>
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-    <th></th>
-    <th>File</th>
-    <th>Description</th>
-</thead>
-<tbody>
-<tr>
-    <td rowspan="2">Task Acquisition Files</td>
-    <td><code>SET</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Metadata and parameters for the EEG dataset, such as channel locations, sampling rate, and event information.</td>
-</tr>
-<tr>
-    <td><code>FDT</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Field data table files containing EEG data</td>
-</tr>
-
-<tr>
-    <td rowspan="2">Location of Electrodes</td>
-    <td><code>*_electrodes.tsv</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Specifies the location of electrodes, placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>)</td>
-</tr>
-<tr>
-    <td><code>*_coordsystem.json</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Cartesian coordinates followed by <code>*_electrodes.tsv</code> files</td>
-</tr>
-<tr>
-    <td rowspan="2">Sourcedata</td>
-    <td><code>*_impedence.json</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Impedance values used to ensure good electrode contact</td>
-</tr>
-<tr>
-    <td><code>*_eventlogs.txt</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Task stimuli presentations</td>
-</tr>
-</tbody>
-</table>
-
-## Motion
-Axivity AX6 sensor data provided in the data release include `_motion.tsv` sensor recordings with corresponding `*_channels.tsv` files that describe each column of of the motion file. The acquisition (`acq-`) label for the calibration files is `calibration` while the label for the 72-hr data files is `primary`. The `task` label will be either `LeftLegMovement` or `RightLegMovement` for sensors placed on the left or right leg. Each `.tsv` file is accompanied by a JSON sidecar containing recording-related metadata: 
-
-<pre class="folder-tree" style="font-size: 11px;">
-motion/  
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;LeftLegMovement|RightLegMovement&gt;</span>_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_motion.tsv  
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;LeftLegMovement|RightLegMovement&gt;</span>_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_motion.json
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;LeftLegMovement|RightLegMovement&gt;</span>_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_channels.tsv  
-|__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;LeftLegMovement|RightLegMovement&gt;</span>_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_channels.json
-</pre>
 
 <br>

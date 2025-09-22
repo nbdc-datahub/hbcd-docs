@@ -42,6 +42,19 @@ hbcd/
 
 **Below we provide a brief summary of the derivatives included in the release. To see detailed documentation, visit the pipeline websites by clicking on the links provided.**
 
+
+## Modality-Level Descriptions
+
+- [EEG](../instruments/eeg/index.md#derivatives)
+- [Motion](../instruments/sensors/wearsensors.md#derivatives)
+- [MRS](../instruments/mri/mrs.md#derivatives)
+
+
+
+
+
+
+
 ## Structural & Functional MRI
 
 <pre class="folder-tree">
@@ -642,149 +655,7 @@ hbcd/
 </table>
 </div>
 
-## MR Spectroscopy: OSPREY-BIDS
 
-OSPREY-BIDS is the BIDS extension to the OSPREY pipeline used to process HBCD magnetic resonance spectroscopy (MRS) data. Only the `HERCULES/` file tree is displayed below. The `unedited/` files generally follow similar naming conventions, with some exceptions (e.g., the BIDS field `acq-shortTE` is used instead of `acq-hercules`).      
-[<i class="fa-solid fa-book"></i> Go to pipeline documentation](https://osprey-bids.readthedocs.io/)
 
-<pre class="folder-tree">
-hbcd/
-|__ derivatives/ 
-    |__ osprey/
-        |__ sub-<span class="label">{ID}</span>/
-            |__ ses-<span class="label">{V0X}</span>/
-                |__ HERCULES/
-                |   |__ PreOspreyLocalizerReg/
-                |   |   |__ figures/
-                |   |   |__ <span class="placeholder">&lt;aal|c1|c2|c3&gt;</span>reference_seg_aligned_to_localizer.nii.gz
-                |   |   |__ reference_<span class="placeholder">&lt;img|seg&gt;</span>_aligned_to_localizer.nii.gz
-                |   |   |__ registration_summary.json
-                |   |   |__ transform_mat.npy
-                |   |   |__ readme.txt
-                |   |
-                |   |__ QuantifyResults/ <span class="hashtag">(ALL +JSON)</span>
-                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1.tsv
-                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1.tsv
-                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_CSFWaterScaled_Voxel_1_Basis_1.tsv 
-                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_TissCorrWaterScaled_Voxel_1_Basis_1.tsv
-                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_amplMets_Voxel_1_Basis_1.tsv
-                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_rawWaterScaled_Voxel_1_Basis_1.tsv
-                |   |   |__ <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_tCr_Voxel_1_Basis_1.tsv
-                |   |
-                |   |__ Reports/
-                |   |   |__ reportFigures/
-                |   |   |__ sub-<span class="label">{ID}</span>-report.html
-                |   |
-                |   |__ SegMaps/
-                |   |   |__ TissueFractions_Voxel_1.tsv <span class="hashtag">(+JSON)</span>
-                |   |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-CSF.nii.gz
-                |   |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-GM.nii.gz
-                |   |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-Tha.nii.gz
-                |   |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-WM.nii.gz
-                |   |
-                |   |__ VoxelMasks/
-                |   |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_svs_space-scanner_mask.nii.gz
-                |   |
-                |   |__ LogFile.txt
-                |   |__ QM_processed_spectra.tsv <span class="hashtag">(+JSON)</span>
-                |   |__ SummaryMRSinMRS.md
-                |   |__ subject_names_and_excluded.tsv <span class="hashtag">(+JSON)</span>
-                |   |__ wrapper_settings.mat <span class="hashtag">(+JSON)</span>
-                |
-                |__ unedited/
-</pre>
-
-## EEG: HBCD-MADE
-HBCD-MADE produces preprocessed EEG derivatives.      
-[<i class="fa-solid fa-book"></i> Go to pipeline documentation](https://docs-hbcd-made.readthedocs.io/)
-
-<pre class="folder-tree">
-hbcd/
-|__ derivatives/ 
-    |__ made/
-        |__ sub-<span class="label">{ID}</span>/
-            |__ ses-<span class="label">{V0X}</span>/
-                |__ eeg/
-                    |__ filtered_data/
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.fdt
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.set
-                    |
-                    |__ ica_data/
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_adjustReport.txt
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-mergedICA_eeg.fdt
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-mergedICA_eeg.set
-                    | 
-                    |__ merged_data/
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-merged_eeg.fdt
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-merged_eeg.json
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-merged_eeg.set
-                    | 
-                    |__ processed_data/
-                    |   |__ sub-<span class="label">{ID}</span>_task-FACE_desc-<span class="placeholder">&lt;FACE-JPG&gt;</span>.jpg
-                    |   |__ sub-<span class="label">{ID}</span>_task-MMN_desc-<span class="placeholder">&lt;MMN-JPG&gt;</span>.jpg
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-RS_powerSummaryStats.csv
-                    |   |__ sub-<span class="label">{ID}</span>_task-VEP_<span class="placeholder">&lt;desc-oz_ERP|topo&gt;</span>.jpg
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_acq-eeg_ERP.mat
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.fdt
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.set
-                    | 
-                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_preprocessingReport.csv
-                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_MADEspecification.json
-</pre>
-
-<div id="legend" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-tag"></i></span>
-  <span class="text">Label Values Legend</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-<thead>
-<tr>
-    <th style="width: 10%;">BIDS Entity Label</th>
-    <th style="width: 90%;">Values</th>
-</tr>
-</thead>
-<tbody>
-    <tr>
-        <td><strong>&lt;FACE-JPG&gt;</strong></td>
-        <td>Oz_diffERP, diffInvVsUpr_topo, diffObjVsUp2_topo, inverted_topo, object_topo, oz_ERP, upright_topo, upright2_topo</td>
-    </tr>
-    <tr>
-        <td><strong>&lt;MMN-JPG&gt;</strong></td>
-        <td>deviant_topo, diffDevVsSta_topo, diffDevVsPre_topo, preDeviant_topo, standard_topo, t7t8_diffERP, t7t8_ERP</td>
-    </tr>
-</tbody>
-</table>
-</div>
-
-## Biosensors: HBCD-Motion
-The HBCD-Motion pipeline is used to process the HBCD Axivity Ax6 sensor recordings of infant leg movements across 72 continuous hours.      
-[<i class="fa-solid fa-book"></i> Go to pipeline documentation](https://hbcd-motion-postproc.readthedocs.io/)
-
-<pre class="folder-tree">
-hbcd/
-|__ derivatives/ 
-    |__ hbcd_motion/
-        |__ sub-<span class="label">{ID}</span>/
-            |__ ses-<span class="label">{V0X}</span>/
-                |__ motion/
-                    |__ Kinematics/
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-kinematics_recording-20_motion.json
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-kinematics_recording-25_motion.json
-                    |
-                    |__ PA/
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_BOUTS.tsv
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_LOG.txt
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_RAW.tsv
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_SUMMARY.json
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_BOUTS.tsv
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_LOG.txt
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_RAW.tsv
-                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_SUMMARY.json
-                    |
-                    |__ PARAMETERS.json
-                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-calibrated_recording-20_motion.tsv
-</pre>
 
 <br>
