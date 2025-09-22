@@ -16,6 +16,93 @@ HBCD protocols for structural MRI were informed by recent large-scale developmen
 - As with the [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study), the contrast-relevant parameters are matched as closely as possible across vendors for the T1w scans.
 - Also similar to the [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study), for the T2w scans, vendor-specific parameters were chosen to achieve similar contrast and SNR, accounting for the fact that each vendor implements their 3D T2w pulse sequences differently.
 
+## Release Data
+
+Structural MRI data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data:
+
+- <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> under subject- and session-specific <code>anat/</code> folders
+- <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> processed through various pipelines
+- <i class="fas fa-table"></i> <a href="../../../datacuration/phenotypes" target="_blank">Tabulated</a> data tables derived from various pipeline derivatives - see full list of tables <a href="../../#mri" target="_blank">here</a>
+
+### Raw BIDS
+
+<div id="bids-conversion" class="table-banner" onclick="toggleCollapse(this)">
+  <img src="../../../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
+  <span class="text-with-link">
+  <span>BIDS Conversion Procedures</span>
+  <a class="anchor-link" href="#bids-conversion" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>To convert imaging data to BIDS standard formatting, the DICOM image files are processed through an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized version</a> of the <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a> tool.</p>
+<p><b>Hardcoded Fields for Philips &amp; GE</b><br>
+In some cases, <code>dcm2niix</code> conversion led to missing or incorrectly configured NIfTI/JSON metadata. To address these issues, the headers for the file types listed below were hard-coded after conversion. These hard-coded values are also documented in the <code>HardCodedValues</code> field of the corresponding JSON sidecar file. For both Philips and GE, the <code>RepetitionTime</code> field for T1w images was hardcoded to ensure consistency across vendors.
+</div>
+
+Anatomical files include T1- and T2-weighted MRI images:
+
+<pre class="folder-tree">
+hbcd/
+|__ rawdata/ 
+    |__ sub-<span class="label">{ID}</span>/
+        |__ ses-<span class="label">{V0X}</span>/
+            |__ anat/
+                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T1w.nii.gz 
+                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T1w.json
+                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.nii.gz
+                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.json
+</pre>
+
+### Derivatives
+
+Structural MRI data are utilized in several processing pipelines, including .....
+
+### BIBSNet (`bibsnet/`)
+BIBSNet outputs brain segmentations and masks in native T1w and T2w space as well as `volumes.tsv` files with ROI volume statistics.      
+[<i class="fa-solid fa-book"></i> Go to pipeline documentation](https://bibsnet.readthedocs.io/en/latest/)
+
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
+    |__ bibsnet/
+        |__ sub-<span class="label">{ID}</span>/
+            |__ ses-<span class="label">{V0X}</span>/
+                |__ anat/
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_dseg.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv <span class="hashtag">(+JSON)</span>         
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.nii.gz <span class="hashtag">(+JSON)</span>
+</pre>
+
+<div id="mriqc" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">MRIQC Derivatives (<code>mriqc/</code>)</span>
+  <a class="anchor-link" href="#mriqc" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>MRIQC extracts image quality metrics (IQMs) from structural data (T1w and T2w) and also generates visual <code>.html</code> reports.<br><a href="https://mriqc.readthedocs.io/en/latest/about.html"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
+    |__ mriqc/
+        |__ sub-<span class="label">{ID}</span>/
+        |   |__ ses-<span class="label">{V0X}</span>/
+        |       |__ anat/
+        |       |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T1w.json
+        |       |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.json
+        |        
+        |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T1w.html
+        |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.html
+</pre>
+</div>
+
 ## References
 <div class="references">
     <p>Andersen, M., Björkman-Burtscher, I. M., Marsman, A., Petersen, E. T., & Boer, V. O. (2019). Improvement in diagnostic quality of structural and angiographic MRI of the brain using motion correction with interleaved, volumetric navigators.

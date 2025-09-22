@@ -9,22 +9,6 @@
 
 Magnetic Resonance Spectroscopy (MRS) provides measures of biochemicals involved in neuronal metabolism, neurotransmission, and oxidative stress. These measures enable researchers to interrogate biochemical mechanisms underlying the structural, functional, and behavioral trajectories. HBCD is the first study of this magnitude to include MRS in a comprehensive pediatric neuroimaging protocol through the development of Integrated Short-TE and Hadamard Multi-Sequence, or ISTHMUS ([Hui et al., 2024](https://doi.org/10.1016/j.jneumeth.2024.110206)).
 
-## MRS Protocol
-
-The MRS acquisition protocol was optimized to maximize signal-to-noise across multiple low-concentration metabolites while maintaining an acquisition time (TA) under 9 minutes. The MRS acquisition centers on a single voxel Point-RESolved Spectroscopy (PRESS) ([Bottomley, 1987](https://doi.org/10.1111/j.1749-6632.1987.tb32915.x)) localization (30×23×23 mm^3) in the bilateral thalamus, with SVS localizer acquisitions to define the ROI. The ISTHMUS sequence incorporates a short TE (35 ms) unedited block at the beginning of the sequence for optimal measurement of high concentration metabolites, including N-acetylasparte, followed by an advanced Hadamard encoded spectral editing scheme ([Oeltzschner et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.10.002)) to derive reliable and reproducible measures of the low-concentration metabolites. 
-
-The primary metabolites measured for HBCD include: 
-
-- **N-acetylaspartate (NAA)**: a marker of neuronal mitochondrial metabolism
-- **Glutamate** and **γ-aminobutyric acid (GABA)**: the principal excitatory and inhibitory neurotransmitters
-- **Glutathione (GSH)**: the most abundant antioxidant involved in protection against reactive oxygen species in the human brain
-
-Additional metabolites measured include NAA, lactate, ascorbate, creatine, myo-inositol, glutamine, and total choline ([Oeltzschner et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.10.002)).
-
-## Innovations
-
-One limitation to the incorporation of MRS into human connectome studies is proper control for scanner drift. Because MRS relies on the frequency of the measured signals, uncorrected frequency drift during data acquisition is very detrimental to data quality, as it changes the contribution of coedited signals as well as editing efficiency ([Harris et al., 2014](https://doi.org/10.1002/mrm.25009)). To mitigate drift, an innovative approach was taken to incorporate interleaved water referencing ([Edden et al., 2016](https://doi.org/10.1002/jmri.25304)) for real-time frequency correction, implemented on the Philips platform at the outset of HBCD, and in Y3 for Siemens and GE.
-
 ## Release Data
 
 MRS data in the release includes raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data:
@@ -68,7 +52,7 @@ hbcd/
 
 ### Derivatives
 
-For HBCD MRS data processing has been carried out using a customized automated pipeline, adapted from OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)). The derivatives include quality control metrics and metabolite estimates as a ratio to creatine and water, with and without tissue correction. For further details, please see the [OSPREY-BIDS documentation site](https://osprey-bids.readthedocs.io/en/latest/index.html) as well as the [Processing Pipelines](../processing/index.md) section, which contains an overview of pipelines used for HBCD data processing and links to relevant documentation.
+For HBCD MRS data processing has been carried out using a customized automated pipeline, adapted from OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)). The derivatives include quality control metrics and metabolite estimates as a ratio to creatine and water, with and without tissue correction. For further details, please see the [OSPREY-BIDS documentation site](https://osprey-bids.readthedocs.io/en/latest/index.html) as well as the [Processing Pipelines](../processing/index.md) page, which contains an overview of pipelines used for HBCD data processing and links to relevant documentation.
 
 Only the `HERCULES/` file tree is displayed below. The `unedited/` files generally follow similar naming conventions, with some exceptions (e.g., the BIDS field `acq-shortTE` is used instead of `acq-hercules`).
 
@@ -118,6 +102,22 @@ hbcd/
                 |
                 |__ unedited/
 </pre>
+
+## MRS Protocol
+
+The MRS acquisition protocol was optimized to maximize signal-to-noise across multiple low-concentration metabolites while maintaining an acquisition time (TA) under 9 minutes. The MRS acquisition centers on a single voxel Point-RESolved Spectroscopy (PRESS) ([Bottomley, 1987](https://doi.org/10.1111/j.1749-6632.1987.tb32915.x)) localization (30×23×23 mm^3) in the bilateral thalamus, with SVS localizer acquisitions to define the ROI. The ISTHMUS sequence incorporates a short TE (35 ms) unedited block at the beginning of the sequence for optimal measurement of high concentration metabolites, including N-acetylasparte, followed by an advanced Hadamard encoded spectral editing scheme ([Oeltzschner et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.10.002)) to derive reliable and reproducible measures of the low-concentration metabolites. 
+
+The primary metabolites measured for HBCD include: 
+
+- **N-acetylaspartate (NAA)**: a marker of neuronal mitochondrial metabolism
+- **Glutamate** and **γ-aminobutyric acid (GABA)**: the principal excitatory and inhibitory neurotransmitters
+- **Glutathione (GSH)**: the most abundant antioxidant involved in protection against reactive oxygen species in the human brain
+
+Additional metabolites measured include NAA, lactate, ascorbate, creatine, myo-inositol, glutamine, and total choline ([Oeltzschner et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.10.002)).
+
+## Innovations
+
+One limitation to the incorporation of MRS into human connectome studies is proper control for scanner drift. Because MRS relies on the frequency of the measured signals, uncorrected frequency drift during data acquisition is very detrimental to data quality, as it changes the contribution of coedited signals as well as editing efficiency ([Harris et al., 2014](https://doi.org/10.1002/mrm.25009)). To mitigate drift, an innovative approach was taken to incorporate interleaved water referencing ([Edden et al., 2016](https://doi.org/10.1002/jmri.25304)) for real-time frequency correction, implemented on the Philips platform at the outset of HBCD, and in Y3 for Siemens and GE.
 
 ## References
 <div class="references">

@@ -7,10 +7,10 @@ The `rawdata/` folder includes raw <span class="tooltip">file-based<span class="
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
-    |__ sub-<span class="label">&lt;label&gt;</span>/
-    |   |__ sub-<span class="label">&lt;label&gt;</span>_sessions.tsv
-    |   |__ sub-<span class="label">&lt;label&gt;</span>_sessions.json
-    |   |__ ses-<span class="label">&lt;label&gt;</span>/
+    |__ sub-<span class="label">{ID}</span>/
+    |   |__ sub-<span class="label">{ID}</span>_sessions.tsv
+    |   |__ sub-<span class="label">{ID}</span>_sessions.json
+    |   |__ ses-<span class="label">{V0X}</span>/
     |       |__ anat/
     |       |__ dwi/
     |       |__ eeg/
@@ -18,15 +18,15 @@ hbcd/
     |       |__ func/
     |       |__ motion/
     |       |__ mrs/
-    |       |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_scans.tsv
-    |       |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_scans.json
+    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_scans.tsv
+    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_scans.json
     |
     |__ dataset_description.json
     |__ participants.tsv
     |__ participants.json 
 </pre>
 
-## Participant-, Session-, & Scan-Level Data
+### Participant-, Session-, & Scan-Level Data
 Participant-, session-, and scan-level data are stored in standardized `.tsv` files, accompanied by a `.json` sidecar file that defines the columns and describes the data fields, located in the `rawdata/` directory and its subdirectories:
 
 - **Participant-level**: Stored in `rawdata/participants.tsv`, this file includes basic demographic and participant information (e.g., sex).
@@ -36,6 +36,16 @@ Participant-, session-, and scan-level data are stored in standardized `.tsv` fi
 ### Fields Reporting Age
 
 See description of fields reporting age under Age Variable Definitions > <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Raw File-Based Data</a>.
+
+### Modality-Level Descriptions
+
+- [EEG](../instruments/eeg/index.md#raw-bids)
+- [Motion](../instruments/sensors/wearsensors.md#raw-bids)
+- [MRS](../instruments/mrs/index.md#raw-bids)
+- [dMRI](../instruments/mri/dmri.md#raw-bids)
+- [qMRI](../instruments/mri/qmri.md#release-data)
+- [sMRI](../instruments/mri/smri.md#raw-bids)
+- [fMRI](../instruments/mri/fmri.md#raw-bids)
 
 
 ## Processed Derivatives
@@ -71,18 +81,19 @@ hbcd/
     |__ hbcd_motion/  <span class="hashtag"># Biosensors Recordings</span>
 </pre>
 
-<p>
-<div id="visformat"  class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Format of File Structure Visuals</span>
-</div>
-<div class="notification-static-content">
-<p><strong>The following formatting was employed to enhance readability of the file structure visuals:</strong></p>
-<ul>
-<li>The BIDS entities <code>sub-&lt;label&gt;_ses-&lt;label&gt;</code> are replaced with the string <code>SUBSES</code></li>
-<li>Some entities include a set of specific values, each of which is associated with a separate file: these values are either enclosed within <code>&lt;&gt;</code> as a list, separated by <code>|</code>, or listed in a <strong>Label Values Legend</strong></li>
-<li>For brevity, sidecar JSON files may not be displayed, in which case files with corresponding JSONs are labeled with <code>(+JSON)</code> after the filename</li>
-<li>Several pipelines produce an <code>.html</code> visual summary report intended to be used for quality assessment of processed outputs. These files, typically located at either the pipeline folder or session-level, source their images from a <code>figures/</code> folder found in the derivatives. For readability, the contents of the <code>figures/</code> folders are not listed</li>
-</ul>
-</div>
-</p>
+### Guide To File Tree Visuals
+
+**The following formatting was employed to enhance readability of the file structure visuals:**
+
+*   Some entities include a set of specific values, each of which is associated with a separate file: these values are either enclosed within `<>` as a list, separated by `|`, or listed in a **Label Values Legend**
+*   For brevity, sidecar JSON files containing metadata for the corresponding data file may not be displayed, in which case files with corresponding JSONs are labeled with `(+JSON)` after the filename
+*   Several pipelines produce an `.html` visual summary report intended to be used for quality assessment of processed outputs. These files, typically located at either the pipeline folder or session-level, source their images from a `figures/` folder found in the derivatives. For readability, the contents of the `figures/` folders are not listed
+
+
+### Modality-Level Descriptions
+
+- [EEG](../instruments/eeg/index.md#derivatives)
+- [Motion](../instruments/sensors/wearsensors.md#derivatives)
+- [MRS](../instruments/mri/mrs.md#derivatives)
+- [dMRI](../instruments/mri/dmri.md#derivatives)
+- [qMRI](../instruments/mri/qmri.md#derivatives)
