@@ -117,8 +117,18 @@ hbcd/
 
 ## Derivatives
 
-Quantitative MRI data was processed through two pipelines, SyMRI and qMRI PostProc. [SyMRI](https://syntheticmr.com/products/symri-neuro/), a proprietary software for quantitative MRI, is used to generate T1w and T2w images and derived relaxometry maps from [QALAS](https://pubmed.ncbi.nlm.nih.gov/25526880/) brain images. These outputs are then minimally preprocessed by [qMRI PostProc](https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html).
-
+<div id="derivatives" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">SyMRI (<code>symri/</code>) & qMRI PostProc (<code>qmri_postproc/</code>) Derivatives</span>
+  <a class="anchor-link" href="#derivatives" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Quantitative MRI data was processed through two pipelines, SyMRI and qMRI PostProc. <a href="https://syntheticmr.com/products/symri-neuro/">SyMRI</a>, a proprietary software for quantitative MRI, is used to generate T1w and T2w images and derived relaxometry maps from <a href="https://pubmed.ncbi.nlm.nih.gov/25526880/">QALAS</a> brain images. These outputs are then minimally preprocessed by <a href="https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html">qMRI PostProc</a>.</p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -141,6 +151,7 @@ hbcd/
                     |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-QALAS_desc-aseg_dseg.nii.gz
                     |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-T2w_desc-QALAS_T2map.nii.gz <span class="hashtag">(+JSON)</span>
 </pre>
+</div>
 
 ## References
 <div class="references">

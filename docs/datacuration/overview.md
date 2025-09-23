@@ -1,28 +1,6 @@
 
 # Data Structure Overview
 
-<p>
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Which file-based data are also available as tabulated data? <span class="hint">(Click to expand)</span></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p><strong>When possible</strong>, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
-<p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are included. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
-<ul>
-<li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
-<li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
-</ul>
-<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. See <a href="../../access/metadata/#exceptions-mri" target="_blank">here</a> for details.</p>
-</div>
-</p>
-
 HBCD is organized following [Brain Imaging Data Structure](https://bids-specification.readthedocs.io/en/stable/) (BIDS) standards. At a high level, HBCD BIDS data has the folder structure displayed below, with all data nested under `hbcd/`. The three main folders of interest are as follows: see linked sections for further details on the contents and folder structure of each.
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
@@ -35,24 +13,24 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
 </thead>
 <tbody>
 <tr>
-<td><a href="../phenotypes"><strong>Tabulated Data</strong></a></td>
+<td><a href="#tabulated-data"><strong>Tabulated Data</strong></a></td>
 <td><code>rawdata/phenotype/</code></td>
 <td style="word-wrap: break-word; white-space: normal;">Instrument data in tabulated format, containing all participant data per table. Includes demographics and visit information, toxicology, behavior, and tabulated data derived from file-based data (MRI, spectroscopy, EEG, and <a href="../../instruments/sensors/wearsensors">wearable sensors</a>).</td>
 </tr>
 <tr>
-<td><a href="../rawbids"><strong>Raw BIDS (File-Based)</strong></a></td>
+<td><a href="#raw-bids"><strong>Raw BIDS (File-Based)</strong></a></td>
 <td><code>rawdata/sub-&lt;ID&gt;/</code></td>
 <td style="word-wrap: break-word; white-space: normal;">BIDS-formatted raw data of varied formats for MRI, MRS, EEG, and Biosensors. Participant data is included in separate subject/session-level folders.</td>
 </tr>
 <tr>
-<td><a href="../derivatives"><strong>Processed Derivatives (File-Based)</strong></a></td>
+<td><a href="#processed-derivatives"><strong>Processed Derivatives (File-Based)</strong></a></td>
 <td><code>derivatives/</code></td>
 <td style="word-wrap: break-word; white-space: normal;">Processed MRI, MRS, EEG, and Biosensor data of varied formats derived from processing pipelines. Participant data is included in separate subject/session-level folders.</td>
 </tr>
 </tbody>
 </table>
 
-<pre class="folder-tree">
+<pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |__ rawdata/ 
 |   |__ phenotype/     <span class="hashtag"># Tabulated Data (demographics, visit info, behavior, etc.)</span>
@@ -94,6 +72,28 @@ hbcd/
 
 ## Tabulated Data
 
+<p>
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Which file-based data are also available as tabulated data? <span class="hint">(Click to expand)</span></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p><strong>When possible</strong>, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
+<p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are included. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
+<ul>
+<li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
+<li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
+</ul>
+<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. See <a href="../../access/metadata/#exceptions-mri" target="_blank">here</a> for details.</p>
+</div>
+</p>
+
 Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**. This includes behavior, demographics, toxicology results, and data derived from brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. See full list of tables included in the release under <a href="../../instruments/#instruments-by-domain" target="_blank">Instruments by Domain</a>.
 
 Key features of tabulated data include:
@@ -101,7 +101,7 @@ Key features of tabulated data include:
 - Data are curated to follow the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files.html#phenotypic-and-assessment-data) standard linked by participant ID and visit number. See [Table Organization](#table-organization) below for details.
 - Tabulated data is available in both plain text (`.tsv`) and Parquet (`.parquet`) formats, with accompanying metadata explaining the contents of each table. See [File Types](#file-types) below for details.
 
-<pre class="folder-tree">
+<pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |__ rawdata/ 
     |__ phenotype/ 
@@ -138,13 +138,37 @@ hbcd/
     |__ participants.tsv
     |__ participants.json 
 </pre>
+<p></p>
 
 #### Participant-, Session-, & Scan-Level Data
-Participant-, session-, and scan-level data are stored in standardized `.tsv` files, accompanied by a `.json` sidecar file that defines the columns and describes the data fields, located in the `rawdata/` directory and its subdirectories:
+Participant-, session-, and scan-level data are stored in the following `.tsv` files, accompanied by `.json` sidecar files containing metadata:
 
-- **Participant-level**: Stored in `rawdata/participants.tsv`, this file includes basic demographic and participant information (e.g., sex).
-- **Session-level**: Stored in `sub-<label>_sessions.tsv` within each subject folder, this file includes session information such as collection site, the participant’s age at each session, and head size.
-- **Scan-level**:  Each session folder includes a `sub-<label>_ses-<label>_scans.tsv` file with per-scan information including participant age at scan as well as all raw data QC scores (see [HBCD MR Quality Control Procedures](../instruments/mri/qc.md#location-of-raw-data-qc-results-in-data-release)).
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th></th>
+  <th>File Name</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Participant-level</td>
+  <td><code>participants.tsv</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Basic demographic and participant information (e.g., sex)</td>
+</tr>
+<tr>
+  <td>Session-level</td>
+  <td><code>sub-&lt;ID&gt;_sessions.tsv</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Session information (e.g., collection site, participant’s age at each session, head size)</td>
+</tr>
+<tr>
+  <td>Scan-level</td>
+  <td><code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Per-scan information (age at scan and raw data QC scores - see <a href="../../instruments/mri/qc.md#location-of-raw-data-qc-results-in-data-release" target="_blank">HBCD MR Quality Control Procedures</a>)</td>
+</tr>
+</tbody>
+</table>
 
 #### Modality-Specific Data
 <i>Expand the section below for links to detailed descriptions of each raw BIDS folder and its contents.</i>
@@ -203,7 +227,7 @@ Participant-, session-, and scan-level data are stored in standardized `.tsv` fi
 
 The `derivatives/` folder contains derivatives, which are file outputs from <a href="../../instruments/processing/" target="_blank">processing pipelines</a>. 
 
-<pre class="folder-tree">
+<pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |__ derivatives/ 
     <span class="hashtag"># Structural & Functional MRI</span>             
@@ -231,23 +255,16 @@ hbcd/
     |__ made/         <span class="hashtag"># EEG</span>
     |__ hbcd_motion/  <span class="hashtag"># Biosensors Recordings</span>
 </pre>
-
-### Guide To File Tree Visuals
-
-**The following formatting was employed to enhance readability of the file structure visuals:**
-
-*   Some entities include a set of specific values, each of which is associated with a separate file: these values are either enclosed within `<>` as a list, separated by `|`, or listed in a **Label Values Legend**
-*   For brevity, sidecar JSON files containing metadata for the corresponding data file may not be displayed, in which case files with corresponding JSONs are labeled with `(+JSON)` after the filename
-*   Several pipelines produce an `.html` visual summary report intended to be used for quality assessment of processed outputs. These files, typically located at either the pipeline folder or session-level, source their images from a `figures/` folder found in the derivatives. For readability, the contents of the `figures/` folders are not listed
+<p></p>
 
 #### Modality-Specific Data
 <i>Expand the section below for links to detailed descriptions of each pipeline derivatives folder and its contents.</i>
 
-<div id="rawbids-links" class="table-banner" onclick="toggleCollapse(this)">
+<div id="derivatives-links" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-link"></i></span>
   <span class="text-with-link">
 <span class="text">Links to Detailed Folder Descriptions</span>
-  <a class="anchor-link" href="#rawbids-links" title="Copy link">
+  <a class="anchor-link" href="#derivatives-links" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -257,27 +274,68 @@ hbcd/
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
+  <th>Modalities</th>
   <th>Derivatives Folder</th>
-  <th>Name of Pipeline</th>
-  <th>Relevant Modalities With Link to Documentation</th>
+  <th>Name of Pipeline With Link to Derivatives Documentation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2"><code>mriqc/</code></td>
-  <td><a href="../../instruments/mri/smri/#mriqc" target="_blank">Structural MRI</a></td>
+  <td rowspan="5">Structural & Functional MRI</td>
+  <td><code>mriqc/</code></td>
+  <td>MRIQC - <a href="../../instruments/mri/smri/#mriqc" target="_blank">sMRI</a> & <a href="../../instruments/mri/fmri/#mriqc" target="_blank">fMRI</a></td>
 </tr>
 <tr>
-  <td><a href="../../instruments/mri/fmri/#mriqc" target="_blank">Functional MRI</a></td>
+  <td><code>bibsnet/</code></td>
+  <td><a href="../../instruments/mri/smri/#bibsnet" target="_blank">BIBSNet</a></td>
+</tr>
+<tr>
+  <td><code>nibabies/</code></td>
+  <td><a href="../../instruments/mri/fmri/#bibsnet" target="_blank">Infant fMRIPrep (or Nibabies)</a></td>
+</tr>
+<tr>
+  <td><code>freesurfer/</code> & <code>mcribs/</code></td>
+  <td><a href="../../instruments/mri/fmri/#fs-mcribs" target="_blank">FreeSurfer & M-CRIB-S</a></td>
+</tr>
+<tr>
+  <td><code>xcp_d/</code></td>
+  <td><a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a></td>
+</tr>
+<tr>
+  <td rowspan="2">Quantitative MRI</td>
+  <td><code>symri/</code></td>
+  <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI</a></td>
+</tr>
+<tr>
+  <td><code>qmri_postproc/</code></td>
+  <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">qMRI PostProc</a></td>
+</tr>
+<tr>
+  <td rowspan="2">Diffusion MRI</td>
+  <td><code>qsiprep/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
+</tr>
+<tr>
+  <td><code>qsirecon*/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon" target="_blank">QSIRecon</a></td>
+</tr>
+<tr>
+  <td>MR Spectroscopy</td>
+  <td><code>osprey/</code></td>
+  <td><a href="../../instruments/mri/mrs/#osprey" target="_blank">OSPREY-BIDS</a></td>
+</tr>
+<tr>
+  <td>EEG</td>
+  <td><code>made/</code></td>
+  <td><a href="../../instruments/eeg/#derivatives" target="_blank">HBCD-MADE</a></td>
+</tr>
+<tr>
+  <td>Wearable Sensors</td>
+  <td><code>motion/</code></td>
+  <td><a href="../../instruments/sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a></td>
 </tr>
 </tbody>
 </table>
-
-- [EEG](../instruments/eeg/index.md#derivatives)
-- [Motion](../instruments/sensors/wearsensors.md#derivatives)
-- [MRS](../instruments/mri/mrs.md#derivatives)
-- [dMRI](../instruments/mri/dmri.md#derivatives)
-- [qMRI](../instruments/mri/qmri.md#derivatives)
 </div>
 
 

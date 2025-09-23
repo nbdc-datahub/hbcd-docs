@@ -235,11 +235,11 @@ hbcd/
 </pre>
 </div>
 
-<div id="mriqc" class="table-banner" onclick="toggleCollapse(this)">
+<div id="fs-mcribs" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
 <span class="text">M-CRIB-S (<code>mcribs/</code>) & FreeSurfer (<code>freesurfer/</code>) Source Directories</span>
-  <a class="anchor-link" href="#mriqc" title="Copy link">
+  <a class="anchor-link" href="#fs-mcribs" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
