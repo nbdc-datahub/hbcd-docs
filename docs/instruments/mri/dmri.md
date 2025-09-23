@@ -265,7 +265,11 @@ Key MAP-MRI metrics include:</p>
 </tr>
 <tr>
   <td><span class="tooltip">RTAP<span class="tooltiptext">Return To Axis Probability</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to the principal diffusion axis (primary eigenvector). Related to diffusion taking place within coherently oriented cylinders; reciprocal of mean cylinder length and inversely proportional to axial diffusivity.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to the principal diffusion axis (primary eigenvector).</td>
+</tr>
+<tr>
+  <td><span class="tooltip">RTPP<span class="tooltiptext">Return To Plane Probability</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Reciprocal of mean cylinder length and inversely proportional to axial diffusivity; Related to diffusion taking place within coherently oriented cylinders.</td>
 </tr>
 </tbody>
 </table>
@@ -314,23 +318,38 @@ hbcd/
 </pre>
 </div>
 
-
 ## Details
 
-### Raw BIDS Data
+Diffusion-Weighted Imaging (DWI) refers to the raw image data acquired during scanning, provided in BIDS format as outlined in the [raw BIDS file tree above](#rawbids). The DWI protocol provides diffusion-weighted images that may be used to estimate multiple models of diffusion behavior in the central nervous system. The protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm^2 (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful.
 
-Diffusion-Weighted Imaging (DWI) refers to the raw image data acquired during scanning. The DWI protocol provides diffusion-weighted images that may be used to estimate multiple models of diffusion behavior in the central nervous system. The protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm^2 (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful. 
+The diffusion-weighted images are processed with denoising and Gibbs artifact reduction, and corrected for eddy current distortion, head motion and echo planar susceptibility distortion ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). The diffusion encoding enables the estimation of multiple diffusion MRI models, including:
 
-The diffusion-weighted images are processed with denoising and Gibbs artifact reduction, and corrected for eddy current distortion, head motion and echo planar susceptibility distortion ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). The diffusion encoding enables the estimation of multiple diffusion MRI models including diffusion tensor imaging (DTI) (Basser et al. 1994), diffusion kurtosis imaging (DKI) ([Jensen et al., 2005](https://doi.org/10.1002/mrm.20508)), and mean apparent propagator (MAP) ([Özarslan et al. 2013](https://doi.org/10.1016/j.neuroimage.2013.04.016)). Each of these is described in greater detail under ADD LINKS TO SECTIONS ABOVE
-
-#### add links to sections above and mentioned rawbids section too
-See [raw BIDS](#rawbids) folder contents above  
-
-### Derived Data
-
-**Diffusion Tensor Imaging (DTI) Maps** include **Fractional Anisotropy (FA)** and **Mean Diffusivity (MD)**, commonly used measures that represent the DWI signal using a 3D multivariate normal (Gaussian) distribution of water diffusion displacements. The FA of the diffusion tensor represents the degree of anisotropic diffusion. In neural tissues, FA is increased in white matter bundles with dense, parallel fiber orientations. The MD corresponds the directionally-averaged apparent diffusion coefficient of water in the tissue and is inversely related to the density of cellular membranes. **See DTI maps in [QSIRecon-DSI Studio](#qsirecon-dsistudio) (`qsirecon-DSIStudio/`) derivatives above.**
-
-
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr>
+    <th>Model</th>
+    <th>Pipeline Derivatives Location (+Link to documentation)</th>
+    <th>Reference</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="tooltip tooltip-right">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
+  <td><a href="#qsirecon-dsistudio">QSIRecon-DSI Studio</a> (<code>qsirecon-DSIStudio/</code>)</td>
+  <td><a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser et al. 1994</a></td>
+</tr>
+<tr>
+  <td><span class="tooltip tooltip-right">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
+  <td><a href="#qsirecon-DIPY">QSIRecon- DIPY DKI</a> (<code>qsirecon-DIPYDKI/</code>)</td>
+  <td><a href="https://doi.org/10.1002/mrm.20508">Jensen et al., 2005</a></td>
+</tr>
+<tr>
+  <td><span class="tooltip tooltip-right">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator</span></span></td>
+  <td><a href="#qsirecon-TORTOISE-MAPMRI">QSIRecon-TORTOISE Model MAP-MRI</a> (<code>qsirecon-TORTOISE_model-MAPMRI/</code>)</td>
+  <td><a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan et al. 2013</a></td>
+</tr>
+</tbody>
+</table>
 
 ## References
 <div class="references">
