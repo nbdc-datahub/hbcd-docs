@@ -6,14 +6,11 @@
 </div>
 <p></p>
 
-
 ## Release Data
 
-Diffusion data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data:
+Diffusion data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data - see [Data Structure Overview](../../datacuration/overview.md) for details on these different data types.
 
-- <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> under subject- and session-specific <code>dwi/</code> folders
-- <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> processed through the QSIPrep and QSIRecon pipelines under <code>qsiprep/</code> and <code>qsirecon*/</code>
-- <i class="fas fa-table"></i> <a href="../../../datacuration/phenotypes" target="_blank">Tabulated</a> `img_qsiprep_space-ACPC_desc-image_qc` data table derived from the QSIPrep pipeline file `sub-{ID}_ses-{V0X}_space-ACPC_desc-image_qc.tsv`
+#### <i class="fa fa-hammer"></i> Raw BIDS
 
 <div id="rawbids" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
@@ -45,6 +42,10 @@ dwi/
 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_sbref.nii.gz
 </pre>
 </div>
+
+------------------------------------
+
+#### <i class="fas fa-cog"></i> Derivatives processed through the QSIPrep and QSIRecon
 
 <div id="qsiprep" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
@@ -170,31 +171,75 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-<thead>
-<tr>
-    <th style="width: 10%;">BIDS Entity Label</th>
-    <th style="width: 90%;">Values</th>
-</tr>
-</thead>
-<tbody>
-  <tr>
+<table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+  <thead>
+    <tr>
+      <th style="width: 15%; text-align: left;">BIDS Entity</th>
+      <th style="width: 85%; text-align: left;">Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
       <td><strong>&lt;ASSOC&gt;</strong></td>
-      <td style="word-wrap: break-word; white-space: normal;">ArcuateFasciculus, Cingulum, ExtremeCapsule, FrontalAslantTract, HippocampusAlveus, InferiorFrontoOccipitalFasciculus, InferiorLongitudinalFasciculus, MiddleLongitudinalFasciculus, ParietalAslantTract, SuperiorLongitudinalFasciculus, AssociationUncinateFasciculus, VerticalOccipitalFasciculus</td>
-  </tr>
-  <tr>
+      <td>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span>ArcuateFasciculus</span>
+          <span>Cingulum</span>
+          <span>ExtremeCapsule</span>
+          <span>FrontalAslantTract</span>
+          <span>HippocampusAlveus</span>
+          <span>InferiorFrontoOccipitalFasciculus</span>
+          <span>&lt;Inferior|Middle|Superior&gt;LongitudinalFasciculus</span>
+          <span>ParietalAslantTract</span>
+          <span>AssociationUncinateFasciculus</span>
+          <span>VerticalOccipitalFasciculus</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
       <td><strong>&lt;CEREB&gt;</strong></td>
-      <td style="word-wrap: break-word; white-space: normal;">Cerebellum(L/R), InferiorCerebellarPeduncle (L/R), MiddleCerebellarPeduncle, SuperiorCerebellarPeduncle, Vermis</td>
-  </tr>
-  <tr>
+      <td>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span>Cerebellum (L/R)</span>
+          <span>InferiorCerebellarPeduncle (L/R)</span>
+          <span>MiddleCerebellarPeduncle</span>
+          <span>SuperiorCerebellarPeduncle</span>
+          <span>Vermis</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
       <td><strong>&lt;BG&gt;</strong></td>
-      <td style="word-wrap: break-word; white-space: normal;">AcousticRadiation, AnsaLenticularis, AnsaSubthalamica, CorticostriatalTract, FasciculusLenticularis, FasciculusSubthalamicus, Fornix, OpticRadiation, ThalamicRadiation</td>
-  </tr>
-  <tr>
+      <td>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span>AcousticRadiation</span>
+          <span>AnsaLenticularis</span>
+          <span>AnsaSubthalamica</span>
+          <span>CorticostriatalTract</span>
+          <span>FasciculusLenticularis</span>
+          <span>FasciculusSubthalamicus</span>
+          <span>Fornix</span>
+          <span>OpticRadiation</span>
+          <span>ThalamicRadiation</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
       <td><strong>&lt;BRAINSTEM&gt;</strong></td>
-      <td style="word-wrap: break-word; white-space: normal;">CorticobulbarTract(L\R), CorticopontineTract(L/R), CorticospinalTract(L/R), DentatorubrothalamicTractrl, MedialForebrainBundle(L/R), MedialLemniscus(L/R), NonDecussatingDentatorubrothalamicTract(L/R), ReticularTract(L/R)</td>
-  </tr>
-</tbody>
+      <td>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span>CorticobulbarTract (L/R)</span>
+          <span>CorticopontineTract (L/R)</span>
+          <span>CorticospinalTract (L/R)</span>
+          <span>DentatorubrothalamicTractrl</span>
+          <span>MedialForebrainBundle (L/R)</span>
+          <span>MedialLemniscus (L/R)</span>
+          <span>NonDecussatingDentatorubrothalamicTract (L/R)</span>
+          <span>ReticularTract (L/R)</span>
+        </div>
+      </td>
+    </tr>
+  </tbody>
 </table>
 </div>
 </div>
@@ -318,11 +363,18 @@ hbcd/
 </pre>
 </div>
 
+------------------------------------
+
+#### <i class="fas fa-table"></i> Tabulated Data
+
+Includes the `img_qsiprep_space-ACPC_desc-image_qc` data table, derived from the QSIPrep pipeline file `sub-{ID}_ses-{V0X}_space-ACPC_desc-image_qc.tsv`.
+
+
 ## Details
 
 Diffusion-Weighted Imaging (DWI) refers to the raw image data acquired during scanning, provided in BIDS format as outlined in the [raw BIDS file tree above](#rawbids). The DWI protocol provides diffusion-weighted images that may be used to estimate multiple models of diffusion behavior in the central nervous system. The protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm^2 (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful.
 
-The diffusion-weighted images are processed with denoising and Gibbs artifact reduction, and corrected for eddy current distortion, head motion and echo planar susceptibility distortion ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). The diffusion encoding enables the estimation of multiple diffusion MRI models, including:
+The diffusion-weighted images are processed with denoising and Gibbs artifact reduction, and corrected for eddy current distortion, head motion and echo planar susceptibility distortion ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). The diffusion encoding enables the estimation of multiple diffusion MRI models to create the derived data, including:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
