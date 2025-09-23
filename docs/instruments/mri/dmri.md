@@ -47,10 +47,11 @@ dwi/
 
 #### <i class="fas fa-cog"></i> Derivatives processed through the QSIPrep and QSIRecon
 
+**QSIPrep** (see [pipeline documentation](https://qsiprep.readthedocs.io/)) preprocessing includes head motion correction, susceptibility distortion correction, MP-PCA denoising, co-registration to T1w images, ANTS spatial normalization, and tissue segmentation.
 <div id="qsiprep" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIPrep (<code>qsiprep/</code>)</span>
+  <span class="text">QSIPrep Derivatives (<code>qsiprep/</code>)</span>
   <a class="anchor-link" href="#qsiprep" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -58,7 +59,6 @@ dwi/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The QSIPrep pipeline is used for preprocessing the HBCD diffusion-weighted MRI (dMRI) data. Preprocessing includes head motion correction, susceptibility distortion correction, MP-PCA denoising, coregistration to T1w images, ANTS spatial normalization, and tissue segmentation. The QSIPrep derivatives are then passed to <a href="#qsirecon">QSIRecon</a> for reconstruction.<br><a href="https://qsiprep.readthedocs.io/"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -97,37 +97,14 @@ hbcd/
 </pre>
 </div>
 
-<div id="qsirecon" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-  <span class="text">QSIRecon (<code>qsirecon/</code>)</span>
-  <a class="anchor-link" href="#qsirecon" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>QSIPrep derivatives are passed to QSIRecon for reconstruction, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. The data are processed using a variety of methods and models (e.g. <a href="https://dipy.org/">Dipy</a>, <a href="https://www.mrtrix.org/">MRTrix</a>, <a href="https://dsi-studio.labsolver.org/">DSI Studio</a>, etc). The contents of each QSIRecon derivative folder are described in individual sections below.<br><a href="https://qsirecon.readthedocs.io/"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
-<pre class="folder-tree">
-hbcd/
-|__ derivatives/ 
-    |__ qsirecon/
-    |   |__ log/
-    |
-    |__ qsirecon-*/
-        |__ sub-<span class="label">{ID}</span>/
-        |__ ses-<span class="label">{V0X}</span>/
-            |__ dwi/
-            |__ figures/
-            |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html    
-</pre>
-</div>
+<p></p>
+
+QSIPrep derivatives are then passed to **QSIRecon** (see [pipeline documentation](https://qsirecon.readthedocs.io/)), which executes a curated set of reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. Multiple QSIRecon derivative folders are provided, each corresponding to a different reconstruction method or model. Click to expand the sections below for details on each QSIRecon derivative folder.
 
 <div id="qsirecon-dsistudio" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon-DSI Studio (<code>qsirecon-DSIStudio/</code>)</span>
+  <span class="text">QSIRecon-DSI Studio Derivatives (<code>qsirecon-DSIStudio/</code>)</span>
   <a class="anchor-link" href="#qsirecon-dsistudio" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -247,7 +224,7 @@ hbcd/
 <div id="qsirecon-DIPY" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon- DIPY DKI (<code>qsirecon-DIPYDKI</code>)</span>
+  <span class="text">QSIRecon- DIPY DKI Derivatives (<code>qsirecon-DIPYDKI</code>)</span>
   <a class="anchor-link" href="#qsirecon-DIPY" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -277,7 +254,7 @@ hbcd/
 <div id="qsirecon-TORTOISE-MAPMRI" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon-TORTOISE Model MAP-MRI (<code>qsirecon-TORTOISE_model-MAPMRI/</code>)</span>
+  <span class="text">QSIRecon-TORTOISE Model MAP-MRI Derivatives (<code>qsirecon-TORTOISE_model-MAPMRI/</code>)</span>
   <a class="anchor-link" href="#qsirecon-TORTOISE-MAPMRI" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -341,7 +318,7 @@ hbcd/
 <div id="qsirecon-TORTOISE-tensor" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon-TORTOISE Model Tensor (<code>qsirecon-TORTOISE_model-tensor/</code>)</span>
+  <span class="text">QSIRecon-TORTOISE Model Tensor Derivatives (<code>qsirecon-TORTOISE_model-tensor/</code>)</span>
   <a class="anchor-link" href="#qsirecon-TORTOISE-tensor" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
