@@ -380,7 +380,7 @@ The diffusion-weighted images are processed with denoising and Gibbs artifact re
 <thead>
   <tr>
     <th>Model</th>
-    <th>Pipeline Derivatives Location (+Link to documentation)</th>
+    <th>Pipeline Derivatives (+Link to documentation)</th>
     <th>Reference</th>
   </tr>
 </thead>
