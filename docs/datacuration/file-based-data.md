@@ -2,7 +2,7 @@
 
 ## Raw BIDS
 
-The `rawdata/` folder includes raw <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> MR Imaging, MR Spectroscopy, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings, converted to BIDS and organized under subject and session-specific directories for processing through BIDS App pipelines ([see details](../instruments/processing/index.md)). 
+The `rawdata/` folder includes raw <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> MR Imaging, MR Spectroscopy, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings. The raw data has been converted to BIDS format, organized under subject and session-specific directories for processing through BIDS App pipelines ([see details](../instruments/processing/index.md)). 
 
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/

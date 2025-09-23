@@ -24,9 +24,19 @@ Motion/accelerometry data collected from wearable infant leg sensors includes ra
 - <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> under subject- and session-specific <code>motion/</code> folders
 - <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> processed through the HBCD-Motion pipeline under <code>hbcd_motion/</code>
 
-### Raw BIDS
-Axivity AX6 sensor data provided in the data release include `_motion.tsv` sensor recordings with corresponding `*_channels.tsv` files that describe each column of of the motion file. The acquisition (`acq-`) label for the calibration files is `calibration` while the label for the 72-hr data files is `primary`. The `task` label will be either `LeftLegMovement` or `RightLegMovement` for sensors placed on the left or right leg. Each `.tsv` file is accompanied by a JSON sidecar containing recording-related metadata: 
 
+<div id="rawbids" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+  <span class="text">Raw BIDS Files (<code>motion/</code>)</span>
+  <a class="anchor-link" href="#rawbids" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Axivity AX6 sensor data in the release include <code>_motion.tsv</code> files containing sensor recordings, with accompanying <code>*_channels.tsv</code> files that describe each column. Calibration files use the acquisition label <code>acq-calibration</code>, while 72-hr recordings use <code>acq-primary</code>. The <code>task</code> label indicates sensor placement: <code>LeftLegMovement</code> for the left leg or <code>RightLegMovement</code> for the right. Each <code>.tsv</code> file is paired with a JSON sidecar containing recording metadata. See <a href="https://doi.org/10.1038/s41597-024-03559-8" target="_blank">Jeung et al., 2024</a> for details.</p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ rawdata/ 
@@ -38,12 +48,20 @@ hbcd/
          |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_channels.tsv  
          |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_channels.json
 </pre>
+</div>
 
-### Derivatives
-
-The HBCD-Motion pipeline is used to process the HBCD Axivity Ax6 sensor recordings of infant leg movements across 72 continuous hours.      
-[<i class="fa-solid fa-book"></i> Go to pipeline documentation](https://hbcd-motion-postproc.readthedocs.io/)
-
+<div id="derivatives" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+    <span class="text">HBCD-Motion (<code>hbcd_motion/</code>) Derivatives</span>
+  <a class="anchor-link" href="#derivatives" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>The HBCD-Motion pipeline is used to process the HBCD Axivity Ax6 sensor recordings of infant leg movements across 72 continuous hours. See a full description of the pipeline and its outputs in the <a href="https://hbcd-motion-postproc.readthedocs.io/" target="_blank">HBCD-Motion documentation</a>.</p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -68,6 +86,7 @@ hbcd/
                     |__ PARAMETERS.json
                     |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-calibrated_recording-20_motion.tsv
 </pre>
+</div>
 
 ## Details
 

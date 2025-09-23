@@ -55,7 +55,7 @@ Quantitative MRI data in the release includes raw and processed <span class="too
 <div id="rawbids" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-<span class="text">Raw BIDS Files (<code>anat/</code>)</span>
+  <span class="text">Raw BIDS Files (<code>anat/</code>)</span>
   <a class="anchor-link" href="#rawbids" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
