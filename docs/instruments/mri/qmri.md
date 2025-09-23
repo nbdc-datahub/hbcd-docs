@@ -1,11 +1,12 @@
 # Quantitative MRI (qMRI)
 
-<p>
-<div id="fyi" class="notification-banner" onclick="toggleCollapse(this)">
+<div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text">Please see <a href="../#mri-protocols-sequence-installation">MRI Protocols</a> and <a href="../qc">MR Quality Control Procedures</a> for additional details.</span>
+  <span class="text">See <a href="..">Overview</a> for MR protocols and <a href="../qc">MR Quality Control Procedures</a> for additional details.</span>
 </div>
-</p>
+<p></p>
+
+## Release Data
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -21,31 +22,6 @@
 <p>Note that different sites may apply varying criteria for identifying motion-degraded QALAS and B1⁺ mapping scans. For 3D-QALAS, the SyMRI toolbox does <strong>not</strong> incorporate externally acquired B1⁺ field maps when estimating quantitative T1, T2, and proton density (PD) values.</p>
 <p>Additionally, estimated quantitative T1 values show variability across MRI vendors and participant age. Current estimates do not align well with values reported in the literature, likely due to assumptions made in the modeling procedures. Work is ongoing to address these issues. As a result, quantitative T1 values (and by extension, PD values) will not be included in the initial data release.</p> 
 </div>
-
-## MRI Acquisitions
-### QALAS
-The QALAS sequence generates five brain volumes using turbo-flash readouts with varying T2 and T1 weightings. These volumes are used to estimate T1, T2, and proton density (PD) maps. The process begins with a T2-preparation pulse that introduces T2 weighting in the first readout/echo train. After this, an inversion pulse is applied, imparting T1 weighting to the subsequent four echo trains. A schematic of the pulse sequence diagram is shown below with representative images from each of the five acquired volumes ([Figure 1](#figure-1-qalas-pulse-sequence-diagram-courtesy-of-fujita-et-al-2024)). This combination of magnetization preparations allows for the estimation of quantitative T1, T2, and PD maps from the five acquired volumes. The sequence takes approximately 5 and 4 minutes to acquire on Siemens and GE/Philips scanners, respectively.
-
-##### Figure 1. QALAS Pulse Sequence Diagram (courtesy of [Fujita et al, 2024](https://onlinelibrary.wiley.com/doi/10.1002/mrm.29939))
-![](qalas_Fig1.png)
-
-### B1+ Fieldmap
-The HBCD MRI protocol includes a brief acquisition (<1 minute) to measure the transmit radiofrequency field map, or B1+ fieldmap. B1+ maps are used to calibrate the flip angle measurements required for accurate and reliable estimation of the T1, T2 and proton density (PD) maps from QALAS images. Ideally, the flip angle prescribed on the MRI scanner would be uniform across the entire imaging volume. However, due to variations and inhomogeneities in the B1+ field, the actual flip angle can vary spatially. The B1+ map represents this spatially varying field and is used to correct flip angle measurements. Because the transmit B1+ field is spatially smooth and changes gradually, coarse resolutions are sufficient for these scans, allowing for fast acquisition times. 
-
-Various methods exist for measuring B1+ fields, and MRI vendors provide different implementations on their platforms. For the HBCD protocol, GE and Philips scanners use the Actual Flip Angle Imaging (AFI) method ([Yarnykh 2007](https://doi.org/10.1002/mrm.21120)) while Siemens scanners use the pre-saturation turbo-flash-readout sequence. Acquisition times are approximately 30–45 seconds across all three scanner types (Siemens, GE, and Philips).
-
-## Derived Images
-### Relaxation (T1/T2) & Proton Density (PD) Maps 
-For the HBCD study, the MRI working group adopted 3D-QALAS ([Kvernby et al. 2014](https://doi.org/10.1186/s12968-014-0102-0)), a time-efficient, three-dimensional method that combines interleaved Look-Locker acquisition with a T2 preparation pulse. This approach enables simultaneous estimation of longitudinal (T1) and transverse (T2) relaxation times, and proton density (PD) maps from a single scan and is validated across all major MRI vendors ([Fujita et al. 2019](https://doi.org/10.1016/j.mri.2019.08.031)).
-
-MRI tissue contrast primarily arises from differences in T1 and T2 relaxation times. Traditional neuroimaging techniques rely on qualitative relaxation time-weighted images (e.g., T1w, T2w scans), which are influenced by various factors, including pulse sequence parameters, participant positioning, and hardware effects. While we include these traditional structural scans in the HBCD protocol, these dependencies complicate interpretation, limiting the ability to associate signal changes with biological mechanisms and making quantitative comparisons across participants, longitudinal sessions, and sites challenging.
-
-This limitation is particularly significant in pediatric neuroimaging, where rapid brain development alters free water distribution, iron content, and myelination. As a result, conventional MRI contrast varies as a function of age, making it difficult to study pediatric populations across diverse age ranges. By directly measuring relaxation properties, quantitative imaging provide insights into these neurobiological mechanisms and overcomes many of the limitations of conventional MRI, offering improved characterization of brain tissue microstructure ([Deoni 2010](https://doi.org/10.1097/RMR.0b013e31821e56d8); [Does 2018](https://doi.org/10.1016/j.neuroimage.2017.12.087)).
-
-### Synthetic T1w/T2w Images
-The 3D-QALAS technique in conjunction with the Synthetic MRI (SyMRI) toolbox provides synthetically generated T1-weighted (Sy-T1w) and T2-weighted (Sy-T2w) volumes. Synthetic images are generated by substituting quantitative estimates of T1 and T2 relaxation times back into the governing MR signal equation (or the Bloch equations) for each sequence. This provides the flexibility to produce images of various contrasts without needing to acquire these data at a given set of imaging parameters. 
-
-## Release Data
 
 Quantitative MRI data in the release includes raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data:
 
@@ -91,11 +67,11 @@ hbcd/
 </pre>
 </div>
 
-<div id="derivatives" class="table-banner" onclick="toggleCollapse(this)">
+<div id="symri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-<span class="text">SyMRI (<code>symri/</code>) & qMRI PostProc (<code>qmri_postproc/</code>) Derivatives</span>
-  <a class="anchor-link" href="#derivatives" title="Copy link">
+<span class="text">SyMRI Derivatives (<code>symri/</code>)</span>
+  <a class="anchor-link" href="#symri" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -107,14 +83,31 @@ hbcd/
 hbcd/
 |__ derivatives/ 
     |__ symri/  <span class="hashtag"># SyMRI Derivatives</span>
-    |   |__ sub-<span class="label">{ID}</span>/
-    |       |__ ses-<span class="label">{V0X}</span>/
-    |           |__ anat/
-    |               |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-QALAS_T1w.nii.gz <span class="hashtag">(+JSON)</span>
-    |               |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-QALAS_T2map.nii.gz <span class="hashtag">(+JSON)</span>
-    |               |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-QALAS_T2w.nii.gz <span class="hashtag">(+JSON)</span>
-    |               |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-QALAS_desc-SymriContainer.log
-    |
+        |__ sub-<span class="label">{ID}</span>/
+            |__ ses-<span class="label">{V0X}</span>/
+                |__ anat/
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-QALAS_T1w.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-QALAS_T2map.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-QALAS_T2w.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-QALAS_desc-SymriContainer.log
+</pre>
+</div>
+
+<div id="qmri_postproc" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">qMRI PostProc Derivatives (<code>qmri_postproc/</code>)</span>
+  <a class="anchor-link" href="#qmri_postproc" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Quantitative MRI data was processed through two pipelines, SyMRI and qMRI PostProc. SyMRI produces T1w and T2w images and derived relaxometry maps from <a href="https://pubmed.ncbi.nlm.nih.gov/25526880/">QALAS</a> brain images, which are then minimally preprocessed by <a href="https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html">qMRI PostProc</a>.</p>
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
     |__ qmri_postproc/ <span class="hashtag"># qMRI Post-Proc Derivatives</span>
         |__ sub-<span class="label">{ID}</span>/
             |__ ses-<span class="label">{V0X}</span>/
@@ -126,6 +119,29 @@ hbcd/
                     |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-T2w_desc-QALAS_T2map.nii.gz <span class="hashtag">(+JSON)</span>
 </pre>
 </div>
+
+## MRI Acquisitions
+### QALAS
+The QALAS sequence generates five brain volumes using turbo-flash readouts with varying T2 and T1 weightings. These volumes are used to estimate T1, T2, and proton density (PD) maps. The process begins with a T2-preparation pulse that introduces T2 weighting in the first readout/echo train. After this, an inversion pulse is applied, imparting T1 weighting to the subsequent four echo trains. A schematic of the pulse sequence diagram is shown below with representative images from each of the five acquired volumes ([Figure 1](#figure-1-qalas-pulse-sequence-diagram-courtesy-of-fujita-et-al-2024)). This combination of magnetization preparations allows for the estimation of quantitative T1, T2, and PD maps from the five acquired volumes. The sequence takes approximately 5 and 4 minutes to acquire on Siemens and GE/Philips scanners, respectively.
+
+##### Figure 1. QALAS Pulse Sequence Diagram (courtesy of [Fujita et al, 2024](https://onlinelibrary.wiley.com/doi/10.1002/mrm.29939))
+![](qalas_Fig1.png)
+
+### B1+ Fieldmap
+The HBCD MRI protocol includes a brief acquisition (<1 minute) to measure the transmit radiofrequency field map, or B1+ fieldmap. B1+ maps are used to calibrate the flip angle measurements required for accurate and reliable estimation of the T1, T2 and proton density (PD) maps from QALAS images. Ideally, the flip angle prescribed on the MRI scanner would be uniform across the entire imaging volume. However, due to variations and inhomogeneities in the B1+ field, the actual flip angle can vary spatially. The B1+ map represents this spatially varying field and is used to correct flip angle measurements. Because the transmit B1+ field is spatially smooth and changes gradually, coarse resolutions are sufficient for these scans, allowing for fast acquisition times. 
+
+Various methods exist for measuring B1+ fields, and MRI vendors provide different implementations on their platforms. For the HBCD protocol, GE and Philips scanners use the Actual Flip Angle Imaging (AFI) method ([Yarnykh 2007](https://doi.org/10.1002/mrm.21120)) while Siemens scanners use the pre-saturation turbo-flash-readout sequence. Acquisition times are approximately 30–45 seconds across all three scanner types (Siemens, GE, and Philips).
+
+## Derived Images
+### Relaxation (T1/T2) & Proton Density (PD) Maps 
+For the HBCD study, the MRI working group adopted 3D-QALAS ([Kvernby et al. 2014](https://doi.org/10.1186/s12968-014-0102-0)), a time-efficient, three-dimensional method that combines interleaved Look-Locker acquisition with a T2 preparation pulse. This approach enables simultaneous estimation of longitudinal (T1) and transverse (T2) relaxation times, and proton density (PD) maps from a single scan and is validated across all major MRI vendors ([Fujita et al. 2019](https://doi.org/10.1016/j.mri.2019.08.031)).
+
+MRI tissue contrast primarily arises from differences in T1 and T2 relaxation times. Traditional neuroimaging techniques rely on qualitative relaxation time-weighted images (e.g., T1w, T2w scans), which are influenced by various factors, including pulse sequence parameters, participant positioning, and hardware effects. While we include these traditional structural scans in the HBCD protocol, these dependencies complicate interpretation, limiting the ability to associate signal changes with biological mechanisms and making quantitative comparisons across participants, longitudinal sessions, and sites challenging.
+
+This limitation is particularly significant in pediatric neuroimaging, where rapid brain development alters free water distribution, iron content, and myelination. As a result, conventional MRI contrast varies as a function of age, making it difficult to study pediatric populations across diverse age ranges. By directly measuring relaxation properties, quantitative imaging provide insights into these neurobiological mechanisms and overcomes many of the limitations of conventional MRI, offering improved characterization of brain tissue microstructure ([Deoni 2010](https://doi.org/10.1097/RMR.0b013e31821e56d8); [Does 2018](https://doi.org/10.1016/j.neuroimage.2017.12.087)).
+
+### Synthetic T1w/T2w Images
+The 3D-QALAS technique in conjunction with the Synthetic MRI (SyMRI) toolbox provides synthetically generated T1-weighted (Sy-T1w) and T2-weighted (Sy-T2w) volumes. Synthetic images are generated by substituting quantitative estimates of T1 and T2 relaxation times back into the governing MR signal equation (or the Bloch equations) for each sequence. This provides the flexibility to produce images of various contrasts without needing to acquire these data at a given set of imaging parameters. 
 
 ## References
 <div class="references">

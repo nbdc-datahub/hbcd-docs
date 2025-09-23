@@ -112,7 +112,7 @@ QSIPrep derivatives are then passed to **QSIRecon** (see [pipeline documentation
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Diffusion Tensor Imaging (DTI) Maps include Fractional Anisotropy (FA) and Mean Diffusivity (MD), commonly used measures that represent the DWI signal using a 3D multivariate normal (Gaussian) distribution of water diffusion displacements. The FA of the diffusion tensor represents the degree of anisotropic diffusion. In neural tissues, FA is increased in white matter bundles with dense, parallel fiber orientations. The MD corresponds the directionally-averaged apparent diffusion coefficient of water in the tissue and is inversely related to the density of cellular membranes.</p>
+<p>Diffusion Tensor Imaging (DTI) maps generated with <a href="https://dsi-studio.labsolver.org/">DSI Studio</a>, such as Fractional Anisotropy (FA) and Mean Diffusivity (MD), model diffusion-weighted signals using a 3D Gaussian distribution of water displacements. FA reflects the degree of anisotropic diffusion and is typically higher in white matter bundles with dense, parallel fibers. MD is the directionally averaged apparent diffusion coefficient and is inversely related to cellular membrane density.</p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
@@ -232,7 +232,9 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Diffusion Kurtosis Imaging (DKI) Maps, including <span class="tooltip">MK<span class="tooltiptext">Mean Kurtosis</span></span>, provide commonly used measures that expand the DTI signal model to estimate non-Gaussian diffusion kurtosis behavior in the brain. DKI maps may be used to better represent more complex diffusion-weighted signals phenomena that may be associated with more restricted diffusion. The MK is the directionally averaged kurtosis measure, which is increased in regions of dense white matter.</p>
+<p>
+Diffusion Kurtosis Imaging (DKI) maps generated with <a href="https://dipy.org/">Dipy</a> extend the DTI model to capture non-Gaussian diffusion. Mean Kurtosis (MK), the directionally averaged kurtosis, is often higher in dense white matter and can better reflect complex or restricted diffusion compared to standard DTI measures.
+</p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
