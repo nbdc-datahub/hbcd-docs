@@ -90,8 +90,18 @@ Depending on the scanner manufacturer, <code>dcm2niix</code> conversion for QALA
 </table>
 </div>
 
-MRS files are located under the `anat/` directory along with anatomical MRI files, including QALAS and localizer files (`acq-mrsLocAx` and `acq-mrsLocCor` indicate axial and coronal localizers, respectively):
-
+<div id="rawbids" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">Raw BIDS Files (<code>anat/</code>)</span>
+  <a class="anchor-link" href="#rawbids" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>qMRI files are located under the <code>anat/</code> directory along with anatomical MRI files, including QALAS and localizer files (<code>acq-mrsLocAx</code> and <code>acq-mrsLocCor</code> indicate axial and coronal localizers, respectively):</p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -103,6 +113,7 @@ hbcd/
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_inv-sub-<span class="placeholder">&lt;0|1|2|3|4&gt;</span>_QALAS.nii.gz
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_inv-sub-<span class="placeholder">&lt;0|1|2|3|4&gt;</span>_QALAS.json
 </pre>
+</div>
 
 ## Derivatives
 
