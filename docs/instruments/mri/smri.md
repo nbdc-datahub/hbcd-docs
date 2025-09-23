@@ -24,24 +24,6 @@ Structural MRI data in the release includes <span class="tooltip">file-based<spa
 - <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> processed through various pipelines
 - <i class="fas fa-table"></i> <a href="../../../datacuration/phenotypes" target="_blank">Tabulated</a> data tables derived from various pipeline derivatives - see full list of tables <a href="../../#mri" target="_blank">here</a>
 
-### Raw BIDS
-
-<div id="bids-conversion" class="table-banner" onclick="toggleCollapse(this)">
-  <img src="../../../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
-  <span class="text-with-link">
-  <span>BIDS Conversion Procedures</span>
-  <a class="anchor-link" href="#bids-conversion" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>To convert imaging data to BIDS standard formatting, the DICOM image files are processed through an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized version</a> of the <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a> tool.</p>
-<p><b>Hardcoded Fields for Philips &amp; GE</b><br>
-In some cases, <code>dcm2niix</code> conversion led to missing or incorrectly configured NIfTI/JSON metadata. To address these issues, the headers for the file types listed below were hard-coded after conversion. These hard-coded values are also documented in the <code>HardCodedValues</code> field of the corresponding JSON sidecar file. For both Philips and GE, the <code>RepetitionTime</code> field for T1w images was hardcoded to ensure consistency across vendors.
-</div>
-
 <div id="rawbids" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
@@ -53,6 +35,13 @@ In some cases, <code>dcm2niix</code> conversion led to missing or incorrectly co
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<div style="display: flex; align-items: center;">
+  <img src="../../../images/BIDS-logo.png" style="width: 40px; margin-right: 10px;" alt="BIDS-logo">
+  <p style="margin: 0;">
+  <strong><i>BIDS Conversion</i></strong>: DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>. 
+  Because <code>dcm2niix</code> sometimes omits or misconfigures NIfTI/JSON metadata, the <code>RepetitionTime</code> field for Philips and GE T1w images was hardcoded to ensure consistency across vendors. All hard-coded values are also recorded in the <code>HardCodedValues</code> field of each JSON sidecar. 
+  </p>
+</div>
 <p>Anatomical files include T1- and T2-weighted MRI images:</p>
 <pre class="folder-tree">
 hbcd/
@@ -66,10 +55,6 @@ hbcd/
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.json
 </pre>
 </div>
-
-### Derivatives
-
-Structural MRI data are utilized in several processing pipelines, including .....
 
 <div id="bibsnet" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>

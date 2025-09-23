@@ -68,24 +68,28 @@ EEG data in the release includes <span class="tooltip">file-based<span class="to
 - <i class="fas fa-cog"></i> <a href="../../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> processed through the HBCD-MADE pipeline under <code>made/</code> (*file-based data*)
 - <i class="fas fa-table"></i> <a href="../../datacuration/phenotypes" target="_blank">Tabulated</a> data tables derived from the HBCD-MADE pipeline derivatives - see full list of tables <a href="../#eeg" target="_blank">here</a>
 
-### Raw BIDS
-
-<div id="bids-eeg" class="table-banner" onclick="toggleCollapse(this)">
-  <img src="../../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
+<div id="rawbids" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span>BIDS Conversion Procedures: EEG</span>
-  <a class="anchor-link" href="#bids-eeg" title="Copy link">
+<span class="text">Raw BIDS Files (<code>eeg/</code>)</span>
+  <a class="anchor-link" href="#rawbids" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
-<p>EEG BIDS conversion was handled by <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application developed for HBCD EEG data management and BIDS formatting installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which, among other things, converts this data to the BIDS standard data structure.</p>
+<div class="table-collapsible-content">
+<div style="display: flex; align-items: center;">
+  <img src="../../images/BIDS-logo.png" style="width: 40px; margin-right: 10px;" alt="BIDS-logo">
+  <p style="margin: 0;">
+    <strong>BIDS Conversion</strong><br>
+    EEG BIDS conversion was handled by <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, 
+    a custom MATLAB application developed for HBCD EEG data management and BIDS formatting installed 
+    at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which, among 
+    other things, converts this data to the BIDS standard data structure.
+  </p>
 </div>
-
-The `eeg/` folder contains raw EEG data in BIDS format including information about the recording system, location of electrodes, and events for each task:
-
+<p>The BIDS <code>eeg/</code> folder contains EEG task recordings, recording system and electrode location metadata, and events for each task:</p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -145,12 +149,21 @@ hbcd/
 </tr>
 </tbody>
 </table>
+</div>
 
-### Derivatives
 
-HBCD-MADE produces preprocessed EEG derivatives.      
-[<i class="fa-solid fa-book"></i> Go to pipeline documentation](https://docs-hbcd-made.readthedocs.io/)
-
+<div id="made" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">HBCD MADE Derivatives (<code>made/</code>)</span>
+  <a class="anchor-link" href="#made" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>HBCD-MADE produces preprocessed EEG derivatives. See details of the pipeline and outputs in the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE documentation</a>. Below is an overview of the HBCD-MADE derivative file structure and key outputs:</p>      
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -184,14 +197,7 @@ hbcd/
                     |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_preprocessingReport.csv
                     |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_MADEspecification.json
 </pre>
-
-
-<div id="legend" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-tag"></i></span>
-  <span class="text">Label Values Legend</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+<i>Label Values Legend</i>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
 <thead>
 <tr>

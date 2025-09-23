@@ -211,9 +211,9 @@ hbcd/
 |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">ad|am|fa|li|rd</span>_dwimap.json
 </pre>
 
-<div id="legend" class="table-banner" onclick="toggleCollapse(this)">
+<div id="legend" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe7e;">
   <span class="emoji"><i class="fa-solid fa-tag"></i></span>
-  <span class="text">Label Values Legend (<i>DSI Studio</i>)</span>
+  <span class="text" style="font-size: 14px;">Label Values Legend (<i>DSI Studio</i>)</span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">

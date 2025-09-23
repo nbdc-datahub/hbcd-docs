@@ -1,6 +1,43 @@
 # Tabulated Data
 
+<p>
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Which file-based data are also available as tabulated data? <span class="hint">(Click to expand)</span></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p><strong>When possible</strong>, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
+<p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are included. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
+<ul>
+<li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
+<li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
+</ul>
+<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. See <a href="../../access/metadata/#exceptions-mri" target="_blank">here</a> for details.</p>
+</div>
+</p>
 
+Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**. This includes behavior, demographics, toxicology results, and data derived from brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. See full list of tables included in the release under <a href="../../instruments/#instruments-by-domain" target="_blank">Instruments by Domain</a>.
+
+Key features of tabulated data include:
+
+- Data are curated to follow the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files.html#phenotypic-and-assessment-data) standard linked by participant ID and visit number. See [Table Organization](#table-organization) below for details.
+- Tabulated data is available in both plain text (`.tsv`) and Parquet (`.parquet`) formats, with accompanying metadata explaining the contents of each table. See [File Types](#file-types) below for details.
+
+<pre class="folder-tree" style="font-size: 11px;">
+hbcd/
+|__ rawdata/ 
+    |__ phenotype/ 
+        |__ sed_basic_demographics.*        <span class="hashtag"># Basic Demographics</span>
+        |__ par_visit_data.*                <span class="hashtag"># Visit Information</span>
+        |__ bio_biosample_<span class="placeholder">&lt;nails|urine&gt;</span>.*   <span class="hashtag"># Toxicology</span>
+        |__ <span class="placeholder">&lt;instrument_name&gt;</span>.*             <span class="hashtag"># Instrument Data</span>
+</pre>
 
 ## Table Organization
 
