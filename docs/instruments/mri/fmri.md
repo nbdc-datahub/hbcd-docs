@@ -1,11 +1,14 @@
 # Functional MRI (fMRI)
 
-<p>
-<div id="fyi" class="notification-banner" onclick="toggleCollapse(this)">
+<div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text">Please see <a href="../#mri-protocols-sequence-installation">MRI Protocols</a> and <a href="../qc">MR Quality Control Procedures</a> for additional details.</span>
+  <span class="text">See <a href="..">Overview</a> for MR protocols and <a href="../qc">MR Quality Control Procedures</a> for additional details.</span>
 </div>
-</p>
+<p></p>
+
+
+## Release Data
+
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -44,26 +47,6 @@ Clipping severity can be estimated using the ratio of median to maximum image in
 <li><i>Potential clipping</i>: (brain_median / brain_max) > 0.5 AND brain_fvox_max > 0.001</li> 
 </ul>
 </div>
-
-Whole-brain functional activity as measured by functional magnetic resonance imaging (fMRI). The blood oxygen level dependent (BOLD) signal is measured at each voxel in 2mm isotropic space with a repetition time (TR) of 1725 ms and multi-band (MB) factor of 4. 
-
-A minimum of two resting state (rs) fMRI runs are acquired during sleep (for infants <30 months old) lasting 7.5 minutes each (**Figure 1A**). [FIRMM software](https://firmm.readthedocs.io/) (Dosenbach et al. 2017) is used to monitor motion, as quantified by framewise displacement (FD), in real time and additional runs are acquired as needed to obtain a minimum total of 7.5 minutes of low-motion (FD <0.3 mm) data across runs (**Figure 1B**). 
-
-Each rsfMRI run is additionally preceded by acquisition of single shot spin-echo (SE) EPI images with same and reversed polarity phase encoding gradients with which to perform distortion correction (**Figure 1C**). Additional details are available at [Dean et al. 2024](https://doi.org/10.1016/j.dcn.2024.101452). 
-
-<div style="text-align: center;">
-  <p style="font-size: 1.1em; margin-bottom: 0px;"><strong>Figure 1.</strong> HBCD fMRI Acquisition Protocol (<i><a href="https://doi.org/10.1016/j.dcn.2024.101452">Dean et al., 2024</a></i>)</p>
-  <img src="../images/Deanetal2024_fMRI.jpg" width="60%" height="auto">
-</div>
-
-<br>
-
-Functional MRI data is processed through [infant-fMRIPrep](https://nibabies.readthedocs.io/en/latest/) and subsequently [XCP-D](https://xcp-d.readthedocs.io/en/latest/usage.html) as described in detail on the [HBCD Processing webpage](https://hbcd-cbrain-processing.readthedocs.io/latest/tool_details.html#tool-names). In brief, infant-fMRIPrep produces minimally pre-processed outputs including confound files (with motion parameters, average signals for ROIs like CSF, etc.) and motion-corrected data in age-specific MNI volumetric atlas as well as fs_LR32k surface space. From these outputs, the XCP-D pipeline runs nuisance regression/denoising, parcellates the fMRI data, and computes summary measures.
-
-Volumetric and surface-based time series will be made available for each subject. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. All parcellated derivatives are generated from a variety of parcellation schemes. 
-
-
-## Release Data
 
 Functional MRI data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data:
 
@@ -490,6 +473,47 @@ hbcd/
 </tbody>
 </table>
 </div>
+
+## Details
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <!-- Text on the left -->
+  <div style="flex: 1;">
+    <p>
+      Whole-brain functional activity as measured by functional magnetic resonance imaging (fMRI). 
+      The blood oxygen level dependent (BOLD) signal is measured at each voxel in 2mm isotropic space 
+      with a repetition time (TR) of 1725 ms and multi-band (MB) factor of 4. 
+    </p>
+    <p>
+      A minimum of two resting state (rs) fMRI runs are acquired during sleep (for infants &lt;30 months old) lasting 
+      7.5 minutes each (<b>Figure 1A</b>). <a href="https://firmm.readthedocs.io/">FIRMM software</a> 
+      (Dosenbach et al. 2017) is used to monitor motion, as quantified by framewise displacement (FD), 
+      in real time, and additional runs are acquired as needed to obtain a minimum total of 7.5 minutes of 
+      low-motion (FD &lt;0.3 mm) data across runs (<b>Figure 1B</b>).
+    </p>
+    <p>
+      Each rsfMRI run is additionally preceded by acquisition of single shot spin-echo (SE) EPI images with same 
+      and reversed polarity phase encoding gradients with which to perform distortion correction (<b>Figure 1C</b>). 
+      Additional details are available at <a href="https://doi.org/10.1016/j.dcn.2024.101452">Dean et al. 2024</a>.
+    </p>
+  </div>
+
+  <!-- Image on the right -->
+  <div style="flex: 1; text-align: center;">
+    <img src="../images/Deanetal2024_fMRI.jpg" style="max-width:100%; height:auto;">
+    <p style="font-size: 0.9em; margin-top: 5px;">
+      <b>Figure 1.</b> HBCD fMRI Acquisition Protocol 
+      (<i><a href="https://doi.org/10.1016/j.dcn.2024.101452">Dean et al., 2024</a></i>)
+    </p>
+  </div>
+</div>
+
+## Processing
+
+Functional MRI data is processed through [infant-fMRIPrep](https://nibabies.readthedocs.io/en/latest/) and subsequently [XCP-D](https://xcp-d.readthedocs.io/en/latest/usage.html) as described in detail on the [HBCD Processing webpage](https://hbcd-cbrain-processing.readthedocs.io/latest/tool_details.html#tool-names). In brief, infant-fMRIPrep produces minimally pre-processed outputs including confound files (with motion parameters, average signals for ROIs like CSF, etc.) and motion-corrected data in age-specific MNI volumetric atlas as well as fs_LR32k surface space. From these outputs, the XCP-D pipeline runs nuisance regression/denoising, parcellates the fMRI data, and computes summary measures.
+
+Volumetric and surface-based time series will be made available for each subject. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. All parcellated derivatives are generated from a variety of parcellation schemes. 
 
 ## References
 <div class="references">

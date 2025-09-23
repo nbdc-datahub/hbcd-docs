@@ -151,7 +151,6 @@ hbcd/
 </table>
 </div>
 
-
 <div id="made" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">

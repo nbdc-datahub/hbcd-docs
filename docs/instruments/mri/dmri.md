@@ -1,37 +1,11 @@
 # Diffusion MRI (dMRI)
 
-<p>
-<div id="fyi" class="notification-banner" onclick="toggleCollapse(this)">
+<div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text">Please see <a href="../#mri-protocols-sequence-installation">MRI Protocols</a> and <a href="../qc">MR Quality Control Procedures</a> for additional details.</span>
+  <span class="text">See <a href="..">Overview</a> for MR protocols and <a href="../qc">MR Quality Control Procedures</a> for additional details.</span>
 </div>
-</p>
+<p></p>
 
-## Diffusion-Weighted Acquisitions
-Diffusion-Weighted Imaging (DWI) refers to the raw image data acquired during scanning. The DWI protocol provides diffusion-weighted images that may be used to estimate multiple models of diffusion behavior in the central nervous system. The protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm^2 (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful. 
-
-The diffusion-weighted images are processed with denoising and Gibbs artifact reduction, and corrected for eddy current distortion, head motion and echo planar susceptibility distortion ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). The diffusion encoding enables the estimation of multiple diffusion MRI models including diffusion tensor imaging (DTI) (Basser et al. 1994), diffusion kurtosis imaging (DKI) ([Jensen et al., 2005](https://doi.org/10.1002/mrm.20508)), and mean apparent propagator (MAP) ([Özarslan et al. 2013](https://doi.org/10.1016/j.neuroimage.2013.04.016)). Each of these is described in greater detail below.
-
-## Derived Images
-### Diffusion Tensor Imaging (DTI) Maps
-DTI maps, including **fractional anisotropy (FA)** and **mean diffusivity (MD)**, are commonly used measures that represent the DWI signal using a 3D multivariate normal (Gaussian) distribution of water diffusion displacements. The FA of the diffusion tensor represents the degree of anisotropic diffusion. In neural tissues, FA is increased in white matter bundles with dense, parallel fiber orientations. The MD corresponds the directionally-averaged apparent diffusion coefficient of water in the tissue and is inversely related to the density of cellular membranes. 
-
-### Diffusion Kurtosis Imaging (DKI) Maps
-DKI maps, including mean kurtosis (MK), provide commonly used measures that expand the DTI signal model to estimate non-Gaussian diffusion kurtosis behavior in the brain. DKI maps may be used to better represent more complex diffusion-weighted signals phenomena that may be associated with more restricted diffusion. The mean kurtosis (MK) is the directionally averaged kurtosis measure, which is increased in regions of dense white matter.  
-
-### Mean Apparent Propagator (MAP-MRI)
-The Mean Apparent Propagator (MAP-MRI) extends DTI to generate a true and proper propagator, i.e. a spatial probability distribution function that indicates the likelihood a water molecule will end up at a given position for a specified diffusion time. Because of its non-parametric nature and lack of any assumptions on this distribution, MAP-MRI can quantify the non-Gaussian character of the diffusion process, therefore, more accurately characterizes diffusion directionality and anisotropy (please refer to [Özarslan et al. 2013](https://doi.org/10.1016/j.neuroimage.2013.04.016) for details). MAP-MRI includes the following metrics:
-
-<p style="font-size: 1.1em; margin: 0 0 5px;"><u>Propagator Anisotropy (PA)</u></p>
-**PA** computed with MAP-MRI provides a more accurate metric of anisotropy compared to FA (described above) by relating the entire three-dimensional apparent propagator to a measure of anisotropy. This is accomplished by computing the dissimilarity of a MAP-MRI propagator from its fully isotropic counterpart.  
-
-<p style="font-size: 1.1em; margin: 0 0 5px;"><u>Non-Gaussianity (NG)</u></p>
-MAP-MRI propagators are described as a summation of basis functions, where the first term is the diffusion tensor. The additional terms describe how the diffusion process deviates from pure Gaussian. The **NG** index provides a normalized magnitude of these terms. NG measures the overall 3D deviation from a tensor, whereas **NGpar** describes the non-Gaussianity along the primary axis of the diffusion (fiber direction in white matter), and **NGperp** defines it along the perpendicular cross-section (more related to restriction).
-
-<p style="font-size: 1.1em; margin: 0 0 5px;"><u>Return To Origin/Axis Probability (RTOP & RTAP)</u></p>
-As described above, MAP-MRI, in essence, describes a probability distribution function of where a water molecule could travel to within a specified amount of time. **RTOP** measures the probability that the water molecule would return to its original location. For a large cell with no barriers, this probability would be quite low, whereas for a very small cell with impermeable cell membranes, this probably would be significantly larger as the molecule does not have freedom to move farther. Therefore, RTOP is inversely proportional to pore volume. The mean diffusivity metric from the DTI model is known to be directly proportional to the pore volume, therefore, RTOP is a measure of (inverse) diffusivity for more complex diffusion profiles. 
-
-Similar to RTOP, **RTAP** describes the probability of the water molecule to return to the axis of principal diffusion direction (primary eigenvector) and RTPP is equal to the reciprocal of the mean length of the cylinders, therefore inversely proportional to axial diffusivity, for diffusion taking place within coherently oriented cylinders.
 
 ## Release Data
 
@@ -122,7 +96,6 @@ hbcd/
 </pre>
 </div>
 
-
 <div id="qsirecon" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
@@ -134,70 +107,66 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>QSIPrep derivatives are passed to QSIRecon for reconstruction, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. The data are processed using a variety of methods and models (e.g. <a href="https://dipy.org/">Dipy</a>, <a href="https://www.mrtrix.org/">MRTrix</a>, <a href="https://dsi-studio.labsolver.org/">DSI Studio</a>, etc).The <a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> software calculates MAPMRI and Tensor fits and scalar maps.<br><a href="https://qsirecon.readthedocs.io/"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
+<p>QSIPrep derivatives are passed to QSIRecon for reconstruction, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. The data are processed using a variety of methods and models (e.g. <a href="https://dipy.org/">Dipy</a>, <a href="https://www.mrtrix.org/">MRTrix</a>, <a href="https://dsi-studio.labsolver.org/">DSI Studio</a>, etc). The contents of each QSIRecon derivative folder are described in individual sections below.<br><a href="https://qsirecon.readthedocs.io/"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
 <pre class="folder-tree">
-<span class="hashtag"># Diffusion MRI Pipeline Derivatives:</span>
 hbcd/
 |__ derivatives/ 
     |__ qsirecon/
     |   |__ log/
     |
-    |__ qsirecon-DIPYDKI/
-    |   |__ sub-<span class="label">{ID}</span>/
-    |   |__ ses-<span class="label">{V0X}</span>/
-    |       |__ dwi/
-    |       |__ figures/
-    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html    
-    |
-    |__ qsirecon-DSIStudio/
-    |__ qsirecon-NODDI/
-    |__ qsirecon-TORTOISE_model-MAPMRI/
-    |__ qsirecon-TORTOISE_model-tensor/
+    |__ qsirecon-*/
+        |__ sub-<span class="label">{ID}</span>/
+        |__ ses-<span class="label">{V0X}</span>/
+            |__ dwi/
+            |__ figures/
+            |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html    
 </pre>
+</div>
+
+<div id="qsirecon-dsistudio" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+  <span class="text">QSIRecon-DSI Studio (<code>qsirecon-DSIStudio/</code>)</span>
+  <a class="anchor-link" href="#qsirecon-dsistudio" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Diffusion Tensor Imaging (DTI) Maps include Fractional Anisotropy (FA) and Mean Diffusivity (MD), commonly used measures that represent the DWI signal using a 3D multivariate normal (Gaussian) distribution of water diffusion displacements. The FA of the diffusion tensor represents the degree of anisotropic diffusion. In neural tissues, FA is increased in white matter bundles with dense, parallel fiber orientations. The MD corresponds the directionally-averaged apparent diffusion coefficient of water in the tissue and is inversely related to the density of cellular membranes.</p>
 <pre class="folder-tree" style="font-size: 11px;">
-<span class="subses">qsirecon-DIPYDKI/</span>...dwi/
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">ad|ak|kfa|md|mk|mkt|rd|rk</span>_dwimap.nii.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">ad|ak|kfa|md|mk|mkt|rd|rk</span>_dwimap.json
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.json
-
-<span class="subses">qsirecon-DSIStudio/</span>...dwi/
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_tdistats.tsv
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-Association<span class="placeholder">&lt;ASSOC&gt;</span><span class="placeholder">&lt;L|R&gt;</span>_streamlines.tck.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-Cerebellum<span class="placeholder">&lt;CEREB&gt;</span>_streamlines.tck.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-CommissureAnteriorCommissure_streamlines.tck.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-CommissureCorpusCallosum_streamlines.tck.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-ProjectionBasalGanglia<span class="placeholder">&lt;BG&gt;</span><span class="placeholder">&lt;L|R&gt;</span>_streamlines.tck.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-ProjectionBrainstem<span class="placeholder">&lt;BRAINSTEM&gt;</span>_streamlines.tck.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundlestats.csv
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_dwimap.fib.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_dwimap.fib.gz.icbm152_adult.map.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-<span class="placeholder">&lt;gfa|iso&gt;</span>_dwimap.nii.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-qa_dwimap.nii.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-qa_dwimap.json
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-rdi_param-<span class="placeholder">&lt;rd1|rd2&gt;</span>_dwimap.nii.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;ad|fa|ha|md|rd&gt;</span>_dwimap.nii.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-t<span class="placeholder">&lt;xx|xy|xz|yy|yz|zz&gt;</span>_dwimap.nii.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-gqi_param-<span class="placeholder">&lt;gfa|iso|qa&gt;</span>_dwimap.nii.gz
-
-<span class="subses">qsirecon-TORTOISE_model-MAPMRI/</span>...dwi/
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="placeholder">ng|ngpar|ngperp|pa|path|rtap|rtop|rtpp</span>_dwimap.nii.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="placeholder">ng|ngpar|ngperp|pa|path|rtap|rtop|rtpp</span>_dwimap.json
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;TENSOR-PARAM&gt;</span>_dwimap.nii.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;TENSOR-PARAM&gt;</span>_dwimap.json
-
-<span class="subses">qsirecon-TORTOISE_model-tensor/</span>...dwi/
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">ad|am|fa|li|rd</span>_dwimap.nii.gz
-|_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">ad|am|fa|li|rd</span>_dwimap.json
+hbcd/
+|_ derivatives/ 
+   |_ qsirecon-DSIStudio/
+      |_ sub-<span class="label">{ID}</span>/
+         |_ ses-<span class="label">{V0X}</span>/
+            |_ dwi/
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_tdistats.tsv
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-Association<span class="placeholder">&lt;ASSOC&gt;</span><span class="placeholder">&lt;L|R&gt;</span>_streamlines.tck.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-Cerebellum<span class="placeholder">&lt;CEREB&gt;</span>_streamlines.tck.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-CommissureAnteriorCommissure_streamlines.tck.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-CommissureCorpusCallosum_streamlines.tck.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-ProjectionBasalGanglia<span class="placeholder">&lt;BG&gt;</span><span class="placeholder">&lt;L|R&gt;</span>_streamlines.tck.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-ProjectionBrainstem<span class="placeholder">&lt;BRAINSTEM&gt;</span>_streamlines.tck.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundlestats.csv
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_dwimap.fib.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_dwimap.fib.gz.icbm152_adult.map.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-<span class="placeholder">&lt;gfa|iso&gt;</span>_dwimap.nii.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-qa_dwimap.nii.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-qa_dwimap.json
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-rdi_param-<span class="placeholder">&lt;rd1|rd2&gt;</span>_dwimap.nii.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;ad|fa|ha|md|rd&gt;</span>_dwimap.nii.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-t<span class="placeholder">&lt;xx|xy|xz|yy|yz|zz&gt;</span>_dwimap.nii.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-gqi_param-<span class="placeholder">&lt;gfa|iso|qa&gt;</span>_dwimap.nii.gz
+            |
+            |_ figures/
+            |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
 </pre>
-
-<div id="legend" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe7e;">
+<div id="legend" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe31;">
   <span class="emoji"><i class="fa-solid fa-tag"></i></span>
-  <span class="text" style="font-size: 14px;">Label Values Legend (<i>DSI Studio</i>)</span>
+  <span class="text" style="font-size: 14px;">Label Values Legend</span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
@@ -229,6 +198,139 @@ hbcd/
 </table>
 </div>
 </div>
+
+<div id="qsirecon-DIPY" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+  <span class="text">QSIRecon- DIPY DKI (<code>qsirecon-DIPYDKI</code>)</span>
+  <a class="anchor-link" href="#qsirecon-DIPY" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Diffusion Kurtosis Imaging (DKI) Maps, including <span class="tooltip">MK<span class="tooltiptext">Mean Kurtosis</span></span>, provide commonly used measures that expand the DTI signal model to estimate non-Gaussian diffusion kurtosis behavior in the brain. DKI maps may be used to better represent more complex diffusion-weighted signals phenomena that may be associated with more restricted diffusion. The MK is the directionally averaged kurtosis measure, which is increased in regions of dense white matter.</p>
+<pre class="folder-tree" style="font-size: 11px;">
+hbcd/
+|_ derivatives/ 
+   |_ qsirecon-DIPYDKI/
+      |_ sub-<span class="label">{ID}</span>/
+         |_ ses-<span class="label">{V0X}</span>/
+            |_ dwi/
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">ad|ak|kfa|md|mk|mkt|rd|rk</span>_dwimap.nii.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">ad|ak|kfa|md|mk|mkt|rd|rk</span>_dwimap.json
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.json
+            |
+            |_ figures/
+            |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
+</pre>
+</div>
+
+<div id="qsirecon-TORTOISE-MAPMRI" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+  <span class="text">QSIRecon-TORTOISE Model MAP-MRI (<code>qsirecon-TORTOISE_model-MAPMRI/</code>)</span>
+  <a class="anchor-link" href="#qsirecon-TORTOISE-MAPMRI" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>The <a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> software computes MAP-MRI and tensor fits along with derived scalar maps. 
+Mean Apparent Propagator MRI (MAP-MRI) extends DTI by estimating a full spatial probability distribution (propagator) of water diffusion. In essence, MAP-MRI describes a probability distribution function of where a water molecule could travel to within a specified amount of time. Unlike DTI, MAP-MRI makes no assumptions about the diffusion profile, enabling quantification of non-Gaussian diffusion and providing more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan et al., 2013</a>). 
+Key MAP-MRI metrics include:</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr>
+    <th>Metric</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="tooltip">PA<span class="tooltiptext">Propagator Anisotropy</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">More accurate than FA, PA quantifies anisotropy by computing the dissimilarity of the full MAP-MRI propagator from its fully isotropic counterpart.</td>
+</tr>
+<tr>
+  <td><span class="tooltip">NG<span class="tooltiptext">Non-Gaussianity</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">The NG index quantifies deviation from Gaussian diffusion. <strong>NG</strong> measures overall deviation, <strong>NGpar</strong> along the primary diffusion axis (fiber direction in white matter), and <strong>NGperp</strong> perpendicular to it (often related to restriction).</td>
+</tr>
+<tr>
+  <td><span class="tooltip">RTOP<span class="tooltiptext">Return To Origin Probability</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to its starting point. Low in unrestricted diffusion (large cells), high in restricted diffusion (small or impermeable cells). Inversely related to pore volume.</td>
+</tr>
+<tr>
+  <td><span class="tooltip">RTAP<span class="tooltiptext">Return To Axis Probability</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to the principal diffusion axis (primary eigenvector). Related to diffusion taking place within coherently oriented cylinders; reciprocal of mean cylinder length and inversely proportional to axial diffusivity.</td>
+</tr>
+</tbody>
+</table>
+<pre class="folder-tree" style="font-size: 11px;">
+hbcd/
+|_ derivatives/ 
+   |_ qsirecon-TORTOISE_model-MAPMRI/
+      |_ sub-<span class="label">{ID}</span>/
+         |_ ses-<span class="label">{V0X}</span>/
+            |_ dwi/
+            | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+            | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="placeholder">&lt;MAPMRI&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+            | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;TENSOR&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+            |
+            |_ figures/
+            |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
+
+<span class="hashtag"># Label Values Legend</span>
+<span class="placeholder">&lt;MAPMRI&gt;</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
+<span class="placeholder">&lt;TENSOR&gt;</span>: ad, am, fa, li, rd
+</pre>
+</div>
+
+<div id="qsirecon-TORTOISE-tensor" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+  <span class="text">QSIRecon-TORTOISE Model Tensor (<code>qsirecon-TORTOISE_model-tensor/</code>)</span>
+  <a class="anchor-link" href="#qsirecon-TORTOISE-tensor" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>In addition to MAPMRI, the <a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> software also calculates Tensor fits and scalar maps:</p>
+<pre class="folder-tree" style="font-size: 11px;">
+hbcd/
+|_ derivatives/ 
+   |_ qsirecon-TORTOISE_model-tensor/
+      |_ sub-<span class="label">{ID}</span>/
+         |_ ses-<span class="label">{V0X}</span>/
+            |_ dwi/
+               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">ad|am|fa|li|rd</span>_dwimap.nii.gz
+               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">ad|am|fa|li|rd</span>_dwimap.json
+</pre>
+</div>
+
+
+## Details
+
+### Raw BIDS Data
+
+Diffusion-Weighted Imaging (DWI) refers to the raw image data acquired during scanning. The DWI protocol provides diffusion-weighted images that may be used to estimate multiple models of diffusion behavior in the central nervous system. The protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm^2 (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful. 
+
+The diffusion-weighted images are processed with denoising and Gibbs artifact reduction, and corrected for eddy current distortion, head motion and echo planar susceptibility distortion ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). The diffusion encoding enables the estimation of multiple diffusion MRI models including diffusion tensor imaging (DTI) (Basser et al. 1994), diffusion kurtosis imaging (DKI) ([Jensen et al., 2005](https://doi.org/10.1002/mrm.20508)), and mean apparent propagator (MAP) ([Özarslan et al. 2013](https://doi.org/10.1016/j.neuroimage.2013.04.016)). Each of these is described in greater detail under ADD LINKS TO SECTIONS ABOVE
+
+#### add links to sections above and mentioned rawbids section too
+See [raw BIDS](#rawbids) folder contents above  
+
+### Derived Data
+
+**Diffusion Tensor Imaging (DTI) Maps** include **Fractional Anisotropy (FA)** and **Mean Diffusivity (MD)**, commonly used measures that represent the DWI signal using a 3D multivariate normal (Gaussian) distribution of water diffusion displacements. The FA of the diffusion tensor represents the degree of anisotropic diffusion. In neural tissues, FA is increased in white matter bundles with dense, parallel fiber orientations. The MD corresponds the directionally-averaged apparent diffusion coefficient of water in the tissue and is inversely related to the density of cellular membranes. **See DTI maps in [QSIRecon-DSI Studio](#qsirecon-dsistudio) (`qsirecon-DSIStudio/`) derivatives above.**
+
+
 
 ## References
 <div class="references">
