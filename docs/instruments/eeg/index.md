@@ -162,7 +162,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>HBCD-MADE produces preprocessed EEG derivatives. See details of the pipeline and outputs in the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE documentation</a>. Below is an overview of the HBCD-MADE derivative file structure and key outputs:</p>      
+<p>See details of the HBCD-MADE pipeline and outputs in the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE documentation</a>. Below is an overview of the HBCD-MADE derivative file structure and key outputs. See a full list and description of JPG file outputs (<code>sub-<ID>_task-&lt;FACE|MMN&gt;_desc-{IMG}.jpg</code> below) <a href="https://docs-hbcd-made.readthedocs.io/en/latest/expected_outputs.html#d-figures-jpg">here</a>.</p>      
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -185,8 +185,7 @@ hbcd/
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_desc-merged_eeg.set
                     | 
                     |__ processed_data/
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_task-FACE_desc-<span class="placeholder">&lt;FACE-JPG&gt;</span>.jpg
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_task-MMN_desc-<span class="placeholder">&lt;MMN-JPG&gt;</span>.jpg
+                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN&gt;</span>_desc-<span class="placeholder">{IMG}</span>.jpg
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-RS_powerSummaryStats.csv
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_task-VEP_<span class="placeholder">&lt;desc-oz_ERP|topo&gt;</span>.jpg
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_acq-eeg_ERP.mat
@@ -196,25 +195,6 @@ hbcd/
                     |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_preprocessingReport.csv
                     |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_MADEspecification.json
 </pre>
-<i>Label Values Legend</i>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-<thead>
-<tr>
-    <th style="width: 10%;">BIDS Entity Label</th>
-    <th style="width: 90%;">Values</th>
-</tr>
-</thead>
-<tbody>
-    <tr>
-        <td><strong>&lt;FACE-JPG&gt;</strong></td>
-        <td>Oz_diffERP, diffInvVsUpr_topo, diffObjVsUp2_topo, inverted_topo, object_topo, oz_ERP, upright_topo, upright2_topo</td>
-    </tr>
-    <tr>
-        <td><strong>&lt;MMN-JPG&gt;</strong></td>
-        <td>deviant_topo, diffDevVsSta_topo, diffDevVsPre_topo, preDeviant_topo, standard_topo, t7t8_diffERP, t7t8_ERP</td>
-    </tr>
-</tbody>
-</table>
 </div>
 
 ## EEG Protocols
