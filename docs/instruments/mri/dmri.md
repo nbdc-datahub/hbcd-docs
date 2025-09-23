@@ -41,31 +41,26 @@ Diffusion data in the release includes <span class="tooltip">file-based<span cla
 - <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> processed through the QSIPrep and QSIRecon pipelines under <code>qsiprep/</code> and <code>qsirecon*/</code>
 - <i class="fas fa-table"></i> <a href="../../../datacuration/phenotypes" target="_blank">Tabulated</a> `img_qsiprep_space-ACPC_desc-image_qc` data table derived from the QSIPrep pipeline file `sub-{ID}_ses-{V0X}_space-ACPC_desc-image_qc.tsv`
 
-### Raw BIDS
-
-<div id="bids-conversion" class="table-banner" onclick="toggleCollapse(this)">
-  <img src="../../../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
+<div id="rawbids" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span>BIDS Conversion Procedures</span>
-  <a class="anchor-link" href="#bids-conversion" title="Copy link">
+<span class="text">Raw BIDS Files (<code>dwi/</code>)</span>
+  <a class="anchor-link" href="#rawbids" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
-<p>To convert imaging data to BIDS standard formatting, the DICOM image files are processed through an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized version</a> of the <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a> tool.</p>
-<p><b>Hardcoded Fields for Philips</b><br>
-In some cases, <code>dcm2niix</code> conversion led to missing or incorrectly configured NIfTI/JSON metadata. To address these issues, certain headers were hard-coded after conversion. These hard-coded values are also documented in the <code>HardCodedValues</code> field of the corresponding JSON sidecar file. The following fields were hard-coded for Philips DWI data:</p>
-<ul>
-  <li><code>PhaseEncodingDirection</code></li>
-  <li><code>TotalReadoutTime</code></li>
-  <li><code>SliceTiming</code></li>
-  <li>Addition of fields <code>SmallDelta</code> & <code>LargeDelta</code></li>
-</ul>
+<div class="table-collapsible-content">
+<div style="display: flex; align-items: center;">
+  <img src="../../../images/BIDS-logo.png" style="width: 40px; margin-right: 10px;" alt="BIDS-logo">
+  <p style="margin: 0;">
+  <strong><i>BIDS Conversion</i></strong>: DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>. 
+  Because <code>dcm2niix</code> sometimes omits or misconfigures NIfTI/JSON metadata, key fields for Philips data are hard-coded to ensure consistency across vendors. 
+  These include <code>PhaseEncodingDirection</code>, <code>TotalReadoutTime</code>, <code>SliceTiming</code>, and the addition of <code>SmallDelta</code> and <code>LargeDelta</code> for Philips DWI data. All hard-coded values are also recorded in the <code>HardCodedValues</code> field of each JSON sidecar. 
+  </p>
 </div>
-
-Diffusion files include DWI runs (`*_dwi.nii.gz`) along with `bval` and `bvec` (magnitudes and orientations of the diffusion gradients for each volume, respectively), and single-band reference files (`*_sbref.nii.gz`). All images were acquired in both AP (`dir-AP`) and PA (`dir-PA`) phase encoding directions.
+<p>Raw diffusion files include DWI runs (<code>*_dwi.nii.gz</code>), magnitude and orientation of the diffusion gradients for each volume (<code>bval</code> and <code>bvec</code>, respectively), and single-band reference files (<code>*_sbref.nii.gz</code>). All images were acquired in both AP (<code>dir-AP</code>) and PA (<code>dir-PA</code>) phase encoding directions.</p>
 <pre class="folder-tree">
 dwi/
 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.bval
@@ -75,23 +70,7 @@ dwi/
 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_sbref.json
 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_sbref.nii.gz
 </pre>
-
-### Derivatives
-
-Diffusion MRI data was processed through [QSIPrep](#qsiprep-qsiprep) and [QSIRecon](#qsirecon) pipelines, with the following folders included in the release:
-
-<pre class="folder-tree">
-<span class="hashtag"># Diffusion MRI Pipeline Derivatives:</span>
-hbcd/
-|__ derivatives/ 
-    |__ qsiprep/
-    |__ qsirecon/
-    |__ qsirecon-DIPYDKI/
-    |__ qsirecon-DSIStudio/
-    |__ qsirecon-NODDI/
-    |__ qsirecon-TORTOISE_model-MAPMRI/
-    |__ qsirecon-TORTOISE_model-tensor/
-</pre>
+</div>
 
 <div id="qsiprep" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
@@ -157,19 +136,24 @@ hbcd/
 <div class="table-collapsible-content">
 <p>QSIPrep derivatives are passed to QSIRecon for reconstruction, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. The data are processed using a variety of methods and models (e.g. <a href="https://dipy.org/">Dipy</a>, <a href="https://www.mrtrix.org/">MRTrix</a>, <a href="https://dsi-studio.labsolver.org/">DSI Studio</a>, etc).The <a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> software calculates MAPMRI and Tensor fits and scalar maps.<br><a href="https://qsirecon.readthedocs.io/"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
 <pre class="folder-tree">
+<span class="hashtag"># Diffusion MRI Pipeline Derivatives:</span>
 hbcd/
 |__ derivatives/ 
     |__ qsirecon/
-    |  |__ log/
+    |   |__ log/
     |
-    |__ qsirecon-*/
-        |__ sub-<span class="label">{ID}</span>/
-            |__ ses-<span class="label">{V0X}</span>/
-                |__ dwi/
-                |__ figures/
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html    
-</pre>  
-
+    |__ qsirecon-DIPYDKI/
+    |   |__ sub-<span class="label">{ID}</span>/
+    |   |__ ses-<span class="label">{V0X}</span>/
+    |       |__ dwi/
+    |       |__ figures/
+    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html    
+    |
+    |__ qsirecon-DSIStudio/
+    |__ qsirecon-NODDI/
+    |__ qsirecon-TORTOISE_model-MAPMRI/
+    |__ qsirecon-TORTOISE_model-tensor/
+</pre>
 <pre class="folder-tree" style="font-size: 11px;">
 <span class="subses">qsirecon-DIPYDKI/</span>...dwi/
 |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
