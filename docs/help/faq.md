@@ -148,7 +148,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>HBCD Study data includes data in both tabulated and file-based formats. <b>Tabulated data</b> is in a standardized table format, with one table provided for all participant data per measure, and includes instrument data (e.g., demographics, behavior, environmental determinants, etc.) as well as data derived from the file-based data. <b>File-based data</b> are imaging and biosignal data provided in varied formats depending on the modality. This includes MRI & MRS, EEG, and wearable sensor recordings. See the section on <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a further details, including the section: <a href="../../datacuration/overview/#warning" target="_blank">Which file-based data are also available as tabulated data?</a>.</p>
+<p>HBCD Study data includes data in both tabulated and file-based formats. <b>Tabulated data</b> is in a standardized table format, with one table provided for all participant data per measure, and includes instrument data (e.g., demographics, behavior, environmental determinants, etc.) as well as data derived from the file-based data. <b>File-based data</b> are imaging and biosignal data provided in varied formats depending on the modality. This includes MRI & MRS, EEG, and wearable sensor recordings. See the section on <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a further details, including the section: <a href="../../datacuration/phenotypes/#warning" target="_blank">Which file-based data are also available as tabulated data?</a>.</p>
 </div>
 
 <div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">
@@ -162,7 +162,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>The <b>source</b> element in the <a href="../../access/metadata/#nbdc-data-dictionary">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../access/metadata/#table-naming-conventions">Table Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../access/metadata/#study-design-logic-child-centric-data-structure">here</a>.</p>
+<p>The <b>source</b> element in the <a href="../../access/metadata/#nbdc-data-dictionary">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../access/metadata/#naming-conventions">Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../access/metadata/#study-design-logic-child-centric-data-structure">here</a>.</p>
 </div>
 
 <div id="faq-age" class="notification-banner" onclick="toggleCollapse(this)">
@@ -225,22 +225,20 @@
 <p>Please refer to the <a href="../../instruments/processing">HBCD Processing Pipelines</a> for an overview of the pipelines and software standards. For full documentation on how each pipeline was used for HBCD processing, please visit the external <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/">HBCD Processing</a> page.</p>
 </div>
 
-
-<div id="faq-no-v03" class="notification-banner" onclick="toggleCollapse(this)">
+<div id="faq-noV03" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
-    <span class="text">Why is only V02 data available for some of the imaging pipelines?</span>
-    <a class="anchor-link" href="#faq-no-V03" title="Copy link">
+    <span class="text">Why is only V02 data available for some of the MRI processing pipelines?</span>
+    <a class="anchor-link" href="#faq-noV03" title="Copy link">
     <i class="fa-solid fa-link"></i>
     </a>
     </span>
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>The full MRI processing workflow includes <a href="../../datacuration/derivatives/#bibsnet-bibsnet" target="_blank">BIBSNet</a> (deep learning model-derived brain segmentation), <a href="../../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank">Infant fMRIPrep/Nibabies</a> (structural and functional preprocessing), and <a href="../../datacuration/derivatives/#xcp-d-xcp_d" target="_blank">XCP-D</a> (functional post-processing and noise regression). The current release includes V02 and V03 BIBSNet derivatives, but only V02 derivatives for the remaining pipelines.</p> 
+<p>The full MRI processing workflow includes <a href="../../instruments/mri/smri/#bibsnet" target="_blank">BIBSNet</a> (deep learning model-derived brain segmentation), <a href="../../instruments/mri/fmri/#nibabies" target="_blank">Infant fMRIPrep/Nibabies</a> (structural and functional preprocessing), and <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a> (functional post-processing and noise regression). The current release includes V02 and V03 BIBSNet derivatives, but only V02 derivatives for the remaining pipelines.</p> 
 <p><a href="../../instruments/mri/qc/#brainswipes" target="_blank">BrainSwipes</a> quality control results generated from XCP-D visual reports also only include V02 as a result. Also note that at this age range, Infant fMRIPrep performs T2w-based surface reconstruction using M-CRIB-S, so T1w surface delineation and atlas registration QC is missing from BrainSwipes. However, the T1w, if present, was still used to inform the brain segmentation generated in BIBSNet, which is provided as an external input to Infant fMRIPrep processing.</p>
 </div>
-
 
 <div id="faq-FS" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -253,7 +251,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>FreeSurfer outputs, generated as part of Infant-fMRIPrep pipeline processing, are included in the data release within the <code>freesurfer/</code> folder of the derivatives. See <a href="../../datacuration/derivatives/#m-crib-s-freesurfer-source-directories">M-CRIB-S & FreeSurfer Source Directories</a> for details. M-CRIB-S, a surface reconstruction method optimized for neonates, is used in place of FreeSurfer for processing. The FreeSurfer files are derived from the M-CRIB-S outputs, which are converted and remapped into FreeSurfer-compatible format.</p>
+<p>FreeSurfer outputs, generated as part of Infant-fMRIPrep pipeline processing, are included in the data release within the <code>freesurfer/</code> folder of the derivatives. See <a href="../../instruments/mri/fmri/#fs-mcribs">M-CRIB-S & FreeSurfer Source Directories</a> for details. M-CRIB-S, a surface reconstruction method optimized for neonates, is used in place of FreeSurfer for processing. The FreeSurfer files are derived from the M-CRIB-S outputs, which are converted and remapped into FreeSurfer-compatible format.</p>
 </div>
 
 <div id="faq-raw" class="notification-banner" onclick="toggleCollapse(this)">
@@ -267,9 +265,8 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Unprocessed raw imaging DICOM files will be made publicly available in the interim <a href="../../changelog/pending/#release-11-release-date-tba">Release 1.1</a>. However, raw data converted to the Brain Imaging Data Structure (BIDS) standard is included in HBCD Release 1.0 (<a href="../../datacuration/rawbids">see details</a>).</p>
+<p>Unprocessed raw imaging DICOM files will be made publicly available in the interim <a href="../../changelog/pending/#release-11-release-date-tba">Release 1.1</a>. However, raw data converted to the Brain Imaging Data Structure (BIDS) standard is included in HBCD Release 1.0 (<a href="../../datacuration/file-based-data/#raw-bids">see details</a>).</p>
 </div>
-
 
 <div id="faq-dmri" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -282,7 +279,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Raw dMRI gradient tables can be found in the <code>raw/</code> folder containing raw data standardized to the Brain Imaging Data Structure (BIDS). See <a href="../../datacuration/overview">here</a> for an overview of BIDS and <a href="../../datacuration/rawbids/#diffusion-dwi">here</a> for details of raw dMRI data. Processed gradient tables, adjusted for head rotation, are additionally provided in the QSIPrep derivatives (<a href="../../datacuration/derivatives/#qsiprep-qsiprep">see details</a>).</p>
+<p>Raw dMRI gradient tables can be found in the <code>raw/</code> folder containing raw data standardized to the Brain Imaging Data Structure (BIDS). See <a href="../../datacuration/overview">here</a> for an overview of BIDS and <a href="../../instruments/mri/dmri/#rawbids">here</a> for details of raw dMRI data. Processed gradient tables, adjusted for head rotation, are additionally provided in the <a href="../../instruments/mri/dmri/#qsiprep">QSIPrep derivatives</a>.</p>
 </div>
 
 <div id="faq-fmap" class="notification-banner" onclick="toggleCollapse(this)">
@@ -296,7 +293,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>HBCD image processing pipelines use field maps to perform distortion correction for structural and functional MRI data. Most researchers will likely use the processed data for their analyses and therefore do not need to use the fieldmaps for anything, as all pipeline output derivatives are already distortion corrected. However, if using the <a href="../../datacuration/rawbids">raw BIDS data</a> for your research, note that each fMRI acquisition will have a specific pair of fieldmaps associated with it, acquired in AP and PA phase encoding directions, located under <code>fmap/</code>. The matching EPI fieldmaps can easily be identified by the run number, specified by <code>run-&lt;label&gt;</code> in the filename (<a href="../../datacuration/rawbids/#functional-func-and-fieldmaps-fmap">see details</a>).</p>
+<p>HBCD image processing pipelines use field maps to perform distortion correction for structural and functional MRI data. Most researchers will likely use the processed data for their analyses and therefore do not need to use the fieldmaps for anything, as all pipeline output derivatives are already distortion corrected. However, if using the <a href="../../datacuration/file-based-data/#raw-bids">raw BIDS data</a> for your research, note that each fMRI acquisition will have a specific pair of fieldmaps associated with it, acquired in AP and PA phase encoding directions, located under <code>fmap/</code>. The matching EPI fieldmaps can easily be identified by the run number, specified by <code>run-&lt;label&gt;</code> in the filename (<a href="../../instruments/mri/fmri/#rawbids">see details</a>).</p>
 </div>
 
 <div id="faq-qc" class="notification-banner" onclick="toggleCollapse(this)">
@@ -330,12 +327,12 @@
 <li>Only data that meet QC standards, as described in <a href="../../instruments/mri/qc/#raw-mr-data-qc">Raw MR Data QC</a>, are included.</li>
 <li>QC metrics for raw data are available in the <code>sub-&lt;label&gt;_ses-&lt;label&gt;_scans.tsv</code> file within each subject session folder under <code>rawdata/</code> (<a href="../../instruments/mri/qc/#location-of-raw-data-qc-results-in-data-release">see details</a>).</li>
 <li>Additional exclusion criteria include <a href="../../instruments/mri/qc/#data-release-eligibility-criteria">acquisition parameter checks</a> and <a href="../../instruments/processing/#file-selection-for-processing">processing pipeline requirements</a>.</li>
-<li>Structural and functional MRI data undergo MRIQC processing to generate image quality metrics. See <a href="../../datacuration/derivatives/#mriqc-mriqc">MRIQC derivatives</a> overview for more information. Researchers may use these outputs for further curation if needed.</li>
+<li>Structural and functional MRI data undergo MRIQC processing to generate image quality metrics. See the <a href="../../instruments/mri/smri/#mriqc">sMRI</a> and <a href="../../instruments/mri/fmri/#mriqc">sMRI</a> MRIQC derivatives</a> for more information. Researchers may use these outputs for further curation if needed.</li>
 </ul>
 <b>Processed ("Derivative") Imaging Data:</b> 
 <ul>
 <li>Included raw data are processed through pipelines that generate analysis-ready derivatives.</li>
-<li>Processing pipelines, such as <a href="../../datacuration/derivatives/#xcp-d-xcp_d">XCP-D</a> (for structural and functional MRI) and <a href="../../datacuration/derivatives/#qsiprep-qsiprep">QSIPrep</a> (for diffusion MRI), produce visual reports that can help guide data selection.</li>
+<li>Processing pipelines, such as <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a> (for structural and functional MRI) and <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> (for diffusion MRI), produce visual reports that can help guide data selection.</li>
 <li>Visual QC is performed on these reports using <a href="../../instruments/mri/qc/#brainswipes">BrainSwipes</a>, and the results are available in the BIDS <a href="../../datacuration/phenotypes">phenotype/</a> folder.</li>
 </ul>
 </div>
