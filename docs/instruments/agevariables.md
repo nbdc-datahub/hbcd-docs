@@ -88,7 +88,7 @@ All [tabulated data](../datacuration/phenotypes.md) include the following fields
 
 ## Raw File-Based Data
 
-Raw <span class="tooltip">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> includes MRI, MRS, EEG, and motion/accelerometry data acquired from the child participants ([see details](../datacuration/rawbids.md)). For visits V02 onward (*data unavailable for prenatal visit V01*), the age of the child at the time of data acquisition is reported in the session- and scan-level `.tsv` files that accompany these data ([see details](../datacuration/rawbids.md#participant-session-scan-level-data)).
+Raw <span class="tooltip">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> includes MRI, MRS, EEG, and motion/accelerometry data acquired from the child participants ([see details](../datacuration/file-based-data.md#raw-bids)). For visits V02 onward (*data unavailable for prenatal visit V01*), the age of the child at the time of data acquisition is reported in the session- and scan-level `.tsv` files that accompany these data ([see details](../datacuration/file-based-data.md#participant-session-scan-level-data)).
 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
     <thead>
@@ -120,8 +120,3 @@ Raw <span class="tooltip">file-based data<span class="tooltiptext">imaging and b
 </tr>
 </tbody>
 </table>
-
-
-
-
-
