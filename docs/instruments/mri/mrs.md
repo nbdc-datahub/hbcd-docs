@@ -1,12 +1,21 @@
 # Magnetic Resonance Spectroscopy (MRS)
 
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See <a href="..">Overview</a> for MR protocols and <a href="../qc">MR Quality Control Procedures</a> for additional details.</span>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">
+    Additional Resources
+  </span>
+</div>
+<div class="notification-static-content">
+<p> 
+• <a href="..">MR Imaging & Spectroscopy Overview</a><br>
+• <a href="../qc">MR Quality Control Procedures</a><br>
+• <a href="../protocols">MRI protocols</a> for sequence installation and operation instructions
+</p>
 </div>
 <p></p>
 
-Magnetic Resonance Spectroscopy (MRS) provides measures of biochemicals involved in neuronal metabolism, neurotransmission, and oxidative stress. These measures enable researchers to interrogate biochemical mechanisms underlying the structural, functional, and behavioral trajectories. HBCD is the first study of this magnitude to include MRS in a comprehensive pediatric neuroimaging protocol through the development of Integrated Short-TE and Hadamard Multi-Sequence, or ISTHMUS ([Hui et al., 2024](https://doi.org/10.1016/j.jneumeth.2024.110206)).
+**Magnetic Resonance Spectroscopy (MRS)** provides measures of biochemicals involved in neuronal metabolism, neurotransmission, and oxidative stress. These measures enable researchers to interrogate biochemical mechanisms underlying the structural, functional, and behavioral trajectories. HBCD is the first study of this magnitude to include MRS in a comprehensive pediatric neuroimaging protocol through the development of Integrated Short-TE and Hadamard Multi-Sequence, or ISTHMUS ([Hui et al., 2024](https://doi.org/10.1016/j.jneumeth.2024.110206)).
 
 ## Release Data
 
@@ -15,46 +24,48 @@ MRS data in the release includes raw and processed <span class="tooltip">file-ba
 - <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> under subject- and session-specific <code>mrs/</code> folders
 - <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> processed through the OSPREY-BIDS pipeline under <code>osprey/</code>
 
-### Raw BIDS
-
-<div id="bids-mrs" class="table-banner" onclick="toggleCollapse(this)">
-  <img src="../../../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
+<div id="rawbids" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span>BIDS Conversion Procedures: MRS</span>
-  <a class="anchor-link" href="#bids-mrs" title="Copy link">
+<span class="text">Raw BIDS Files (<code>func/</code> & <code>fmap/</code>)</span>
+  <a class="anchor-link" href="#rawbids" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
-<p>For MRS, vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.</p>
+<div class="table-collapsible-content">
+<div style="display: flex; align-items: center;">
+  <img src="../../../images/BIDS-logo.png" style="width: 40px; margin-right: 10px;" alt="BIDS-logo">
+  <p style="margin: 0;">
+  <strong><i>BIDS Conversion</i></strong>: Vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.</p>
 </div>
-
-MRS files include metabolite (`*_svs.nii.gz`) and water reference (`*_ref.nii.gz`) data acquired via short-echo-time (TE = 35 ms; `acq-shortTE`) and HERCULES (spectral-edited, TE = 80 ms; `acq-hercules`). The JSON sidecar files include the dimensions of the NIfTI-MRS data array, holding different coil elements in dimension 5 and different transients in dimension 6.
-
+<p>MRS files include metabolite (<code>*_svs.nii.gz</code>) and water reference (<code>*_ref.nii.gz</code>) data acquired via short-echo-time (TE = 35 ms; <code>acq-shortTE</code>) and HERCULES (spectral-edited, TE = 80 ms; <code>acq-hercules</code>). The JSON sidecar files include the dimensions of the NIfTI-MRS data array, holding different coil elements in dimension 5 and different transients in dimension 6.</p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
     |__ sub-<span class="label">{ID}</span>/
         |__ ses-<span class="label">{V0X}</span>/
             |__ mrs/
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_svs.nii.gz
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_svs.json
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_ref.nii.gz
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_ref.json
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_svs.nii.gz
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_svs.json
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_ref.nii.gz
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_ref.json
+                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_svs.nii.gz <span class="hashtag">(+JSON)</span>
+                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_run-<span class="label">{X}</span>_ref.nii.gz <span class="hashtag">(+JSON)</span>
+                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_svs.nii.gz <span class="hashtag">(+JSON)</span>
+                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_run-<span class="label">{X}</span>_ref.nii.gz <span class="hashtag">(+JSON)</span>
 </pre>
+</div>
 
-### Derivatives
-
-For HBCD MRS data processing has been carried out using a customized automated pipeline, adapted from OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)). The derivatives include quality control metrics and metabolite estimates as a ratio to creatine and water, with and without tissue correction. For further details, please see the [OSPREY-BIDS documentation site](https://osprey-bids.readthedocs.io/en/latest/index.html) as well as the [Processing Pipelines](../processing/index.md) page, which contains an overview of pipelines used for HBCD data processing and links to relevant documentation.
-
-Only the `HERCULES/` file tree is displayed below. The `unedited/` files generally follow similar naming conventions, with some exceptions (e.g., the BIDS field `acq-shortTE` is used instead of `acq-hercules`).
-
+<div id="derivatives" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">OSPREY-BIDS (<code>osprey/</code>) Derivatives</span>
+  <a class="anchor-link" href="#derivatives" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Only the <code>HERCULES/</code> file tree is displayed below. The <code>unedited/</code> files generally follow similar naming conventions, with some exceptions (e.g., the BIDS field <code>acq-shortTE</code> is used instead of <code>acq-hercules</code>).</p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -101,8 +112,9 @@ hbcd/
                 |
                 |__ unedited/
 </pre>
+</div>
 
-## MRS Protocol
+## Data Acquisition
 
 The MRS acquisition protocol was optimized to maximize signal-to-noise across multiple low-concentration metabolites while maintaining an acquisition time (TA) under 9 minutes. The MRS acquisition centers on a single voxel Point-RESolved Spectroscopy (PRESS) ([Bottomley, 1987](https://doi.org/10.1111/j.1749-6632.1987.tb32915.x)) localization (30×23×23 mm^3) in the bilateral thalamus, with SVS localizer acquisitions to define the ROI. The ISTHMUS sequence incorporates a short TE (35 ms) unedited block at the beginning of the sequence for optimal measurement of high concentration metabolites, including N-acetylasparte, followed by an advanced Hadamard encoded spectral editing scheme ([Oeltzschner et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.10.002)) to derive reliable and reproducible measures of the low-concentration metabolites. 
 
@@ -114,9 +126,12 @@ The primary metabolites measured for HBCD include:
 
 Additional metabolites measured include NAA, lactate, ascorbate, creatine, myo-inositol, glutamine, and total choline ([Oeltzschner et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.10.002)).
 
-## Innovations
-
+***Innovations***       
 One limitation to the incorporation of MRS into human connectome studies is proper control for scanner drift. Because MRS relies on the frequency of the measured signals, uncorrected frequency drift during data acquisition is very detrimental to data quality, as it changes the contribution of coedited signals as well as editing efficiency ([Harris et al., 2014](https://doi.org/10.1002/mrm.25009)). To mitigate drift, an innovative approach was taken to incorporate interleaved water referencing ([Edden et al., 2016](https://doi.org/10.1002/jmri.25304)) for real-time frequency correction, implemented on the Philips platform at the outset of HBCD, and in Y3 for Siemens and GE.
+
+## Data Processing
+
+HBCD MRS data are processed with a customized automated pipeline based on OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)) - see the [OSPREY-BIDS documentation](https://osprey-bids.readthedocs.io/en/latest/index.html). Derivatives include quality control metrics and metabolite estimates (ratios to creatine and water, with and without tissue correction). See the list of [OSPREY derivatives](#derivatives) included in the release above.
 
 ## References
 <div class="references">

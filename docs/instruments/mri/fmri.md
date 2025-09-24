@@ -1,14 +1,20 @@
 # Functional MRI (fMRI)
 
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See <a href="..">Overview</a> for MR protocols and <a href="../qc">MR Quality Control Procedures</a> for additional details.</span>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">
+    Additional Resources
+  </span>
 </div>
-<p></p>
-
+<div class="notification-static-content">
+<p> 
+• <a href="..">MR Imaging & Spectroscopy Overview</a><br>
+• <a href="../qc">MR Quality Control Procedures</a><br>
+• <a href="../protocols">MRI protocols</a> for sequence installation and operation instructions
+</p>
+</div>
 
 ## Release Data
-
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -474,14 +480,13 @@ hbcd/
 </table>
 </div>
 
-## Details
+## Data Acquisition
 
 <div style="display: flex; align-items: center; gap: 20px;">
-
   <!-- Text on the left -->
   <div style="flex: 1;">
     <p>
-      Whole-brain functional activity as measured by functional magnetic resonance imaging (fMRI). 
+      Whole-brain functional activity is measured by functional magnetic resonance imaging (fMRI). 
       The blood oxygen level dependent (BOLD) signal is measured at each voxel in 2mm isotropic space 
       with a repetition time (TR) of 1725 ms and multi-band (MB) factor of 4. 
     </p>
@@ -509,11 +514,11 @@ hbcd/
   </div>
 </div>
 
-## Processing
+## Data Processing
 
 Functional MRI data is processed through [infant-fMRIPrep](https://nibabies.readthedocs.io/en/latest/) and subsequently [XCP-D](https://xcp-d.readthedocs.io/en/latest/usage.html) as described in detail on the [HBCD Processing webpage](https://hbcd-cbrain-processing.readthedocs.io/latest/tool_details.html#tool-names). In brief, infant-fMRIPrep produces minimally pre-processed outputs including confound files (with motion parameters, average signals for ROIs like CSF, etc.) and motion-corrected data in age-specific MNI volumetric atlas as well as fs_LR32k surface space. From these outputs, the XCP-D pipeline runs nuisance regression/denoising, parcellates the fMRI data, and computes summary measures.
 
-Volumetric and surface-based time series will be made available for each subject. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. All parcellated derivatives are generated from a variety of parcellation schemes. 
+Volumetric and surface-based time series will be made available for each subject. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. All parcellated derivatives are generated from a variety of parcellation schemes. See the folder trees above for a full list of [XCP-D](#xcpd) and [Infant fMRIPrep](#nibabies) included in the release.
 
 ## References
 <div class="references">

@@ -1,19 +1,18 @@
 # Structural MRI (sMRI)
 
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See <a href="..">Overview</a> for MR protocols and <a href="../qc">MR Quality Control Procedures</a> for additional details.</span>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">
+    Additional Resources
+  </span>
 </div>
-<p></p>
-
-HBCD protocols for structural MRI were informed by recent large-scale developmental neuroimaging studies including [ABCD](https://abcdstudy.org/), HCP Lifespan, and BCP ([Howell et al., 2019](https://pubmed.ncbi.nlm.nih.gov/29578031/)). These studies laid critical foundation for the development of well-validated, high-resolution protocols harmonized across all three major scanner vendors ([Casey et al., 2018](https://doi.org/10.1016/j.dcn.2018.03.001)). In addition, the findings emphasized the importance of T2w acquisition in infants due to suboptimal grey/white T1w contrast resulting from incomplete myelination ([Howell et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.03.049), [Myers et al., 2023](https://doi.org/10.1016/j.neuroimage.2018.03.049)).
-
-<p style="font-size: 1.1em; margin-bottom: 0px"><strong>Key features of the HBCD T1w and T2w structural imaging protocols include:</strong></p>
-- 0.8 mm isotropic resolution
-- The use of compressed SENSE reconstructions to allow high acceleration factors and thus much shorter acquisition times (under 9 minutes total for T1w and T2w – see vendor specific pages for details)
-- The use of embedded navigators to track motion during structural imaging ([White et al., 2010](https://doi.org/10.1002/mrm.22176), [Tisdall et al., 2016](https://doi.org/10.1016/j.neuroimage.2015.11.054), [Andersen et al., 2019](https://doi.org/10.1371/journal.pone.0217145)). In the current release, scans were not prospectively corrected for motion, although this is intended to come online in later releases.
-- As with the [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study), the contrast-relevant parameters are matched as closely as possible across vendors for the T1w scans.
-- Also similar to the [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study), for the T2w scans, vendor-specific parameters were chosen to achieve similar contrast and SNR, accounting for the fact that each vendor implements their 3D T2w pulse sequences differently.
+<div class="notification-static-content">
+<p> 
+• <a href="..">MR Imaging & Spectroscopy Overview</a><br>
+• <a href="../qc">MR Quality Control Procedures</a><br>
+• <a href="../protocols">MRI protocols</a> for sequence installation and operation instructions
+</p>
+</div>
 
 ## Release Data
 
@@ -66,7 +65,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>BIBSNet outputs brain segmentations and masks in native T1w and T2w space as well as <code>volumes.tsv</code> files with ROI volume statistics.<br><a href="https://bibsnet.readthedocs.io/en/latest/"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
+<p>BIBSNet outputs brain segmentations and masks in native T1w and T2w space as well as <code>volumes.tsv</code> files with ROI volume statistics. See the <a href="https://bibsnet.readthedocs.io/en/latest/">pipeline documentation</a> for a full explanation of derivatives.</p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -91,7 +90,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>MRIQC extracts image quality metrics (IQMs) from structural data (T1w and T2w) and also generates visual <code>.html</code> reports.<br><a href="https://mriqc.readthedocs.io/en/latest/about.html"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
+<p>MRIQC extracts image quality metrics (IQMs) from structural data (T1w and T2w) and also generates visual <code>.html</code> reports. See the <a href="https://mriqc.readthedocs.io/">pipeline documentation</a> for a full explanation of derivatives.</p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -106,6 +105,32 @@ hbcd/
         |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.html
 </pre>
 </div>
+
+<div id="nibabies-xcpd" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">Infant fMRIPrep (<code>nibabies/</code>) & XCP-D (<code>xcp_d/</code>) Derivatives</span>
+  <a class="anchor-link" href="#nibabies-xcpd" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>See the <code>anat/</code> subfolders of Infant fMRIPrep (<a href="../fmri/#nibabies" target="_blank">here</a>) and XCP-D (<a href="../fmri/#xcpd" target="_blank">here</a>) derivatives documented on the Functional MRI page, including T1w/T2w images processed to correct for motion and distortions and surface reconstructions.</p>
+</div>
+
+## Data Acquisition
+
+HBCD protocols for structural MRI were informed by recent large-scale developmental neuroimaging studies including [ABCD](https://abcdstudy.org/), HCP Lifespan, and BCP ([Howell et al., 2019](https://pubmed.ncbi.nlm.nih.gov/29578031/)). These studies laid critical foundation for the development of well-validated, high-resolution protocols harmonized across all three major scanner vendors ([Casey et al., 2018](https://doi.org/10.1016/j.dcn.2018.03.001)). In addition, the findings emphasized the importance of T2w acquisition in infants due to suboptimal grey/white T1w contrast resulting from incomplete myelination ([Howell et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.03.049), [Myers et al., 2023](https://doi.org/10.1016/j.neuroimage.2018.03.049)).
+
+*Key features of the HBCD T1w and T2w structural imaging protocols include:*
+
+- 0.8 mm isotropic resolution
+- The use of compressed SENSE reconstructions to allow high acceleration factors and thus much shorter acquisition times (under 9 minutes total for T1w and T2w – see vendor specific pages for details)
+- The use of embedded navigators to track motion during structural imaging ([White et al., 2010](https://doi.org/10.1002/mrm.22176), [Tisdall et al., 2016](https://doi.org/10.1016/j.neuroimage.2015.11.054), [Andersen et al., 2019](https://doi.org/10.1371/journal.pone.0217145)). In the current release, scans were not prospectively corrected for motion, although this is intended to come online in later releases.
+- As with the [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study), the contrast-relevant parameters are matched as closely as possible across vendors for the T1w scans.
+- Also similar to the [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study), for the T2w scans, vendor-specific parameters were chosen to achieve similar contrast and SNR, accounting for the fact that each vendor implements their 3D T2w pulse sequences differently.
 
 ## References
 <div class="references">

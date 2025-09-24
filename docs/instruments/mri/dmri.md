@@ -1,16 +1,26 @@
 # Diffusion MRI (dMRI)
 
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See <a href="..">Overview</a> for MR protocols and <a href="../qc">MR Quality Control Procedures</a> for additional details.</span>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">
+    Additional Resources
+  </span>
 </div>
-<p></p>
+<div class="notification-static-content">
+<p> 
+• <a href="..">MR Imaging & Spectroscopy Overview</a><br>
+• <a href="../qc">MR Quality Control Procedures</a><br>
+• <a href="../protocols">MRI protocols</a> for sequence installation and operation instructions
+</p>
+</div>
 
 ## Release Data
 
 Diffusion data in the release includes <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> and <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data - see [Data Structure Overview](../../datacuration/overview.md) for details on these different data types.
 
-#### <i class="fa fa-hammer"></i> Raw BIDS
+- <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> under subject- and session-specific <code>dwi/</code> folder
+- <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> processed through QSIPrep and QSIRecon 
+- <i class="fas fa-table"></i> <a href="../../../datacuration/phenotypes" target="_blank">Tabulated</a> data derived QSIPrep - see list of derived tables <a href="../../#mri" target="_blank">here</a>
 
 <div id="rawbids" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
@@ -43,11 +53,6 @@ dwi/
 </pre>
 </div>
 
-------------------------------------
-
-#### <i class="fas fa-cog"></i> Derivatives processed through the QSIPrep and QSIRecon
-
-**QSIPrep** (see [pipeline documentation](https://qsiprep.readthedocs.io/)) preprocessing includes head motion correction, susceptibility distortion correction, MP-PCA denoising, co-registration to T1w images, ANTS spatial normalization, and tissue segmentation.
 <div id="qsiprep" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
@@ -59,6 +64,7 @@ dwi/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><strong>QSIPrep</strong> (see <a href="https://qsiprep.readthedocs.io/">pipeline documentation</a>) preprocessing includes head motion correction, susceptibility distortion correction, MP-PCA denoising, co-registration to T1w images, ANTS spatial normalization, and tissue segmentation.</p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -96,10 +102,6 @@ hbcd/
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
 </pre>
 </div>
-
-<p></p>
-
-QSIPrep derivatives are then passed to **QSIRecon** (see [pipeline documentation](https://qsirecon.readthedocs.io/)), which executes a curated set of reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. Multiple QSIRecon derivative folders are provided, each corresponding to a different reconstruction method or model. Click to expand the sections below for details on each QSIRecon derivative folder.
 
 <div id="qsirecon-dsistudio" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
@@ -224,7 +226,7 @@ hbcd/
 <div id="qsirecon-DIPY" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon- DIPY DKI Derivatives (<code>qsirecon-DIPYDKI</code>)</span>
+  <span class="text">QSIRecon-DIPY DKI Derivatives (<code>qsirecon-DIPYDKI</code>)</span>
   <a class="anchor-link" href="#qsirecon-DIPY" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -253,20 +255,18 @@ hbcd/
 </pre>
 </div>
 
-<div id="qsirecon-TORTOISE-MAPMRI" class="table-banner" onclick="toggleCollapse(this)">
+<div id="qsirecon-TORTOISE" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon-TORTOISE Model MAP-MRI Derivatives (<code>qsirecon-TORTOISE_model-MAPMRI/</code>)</span>
-  <a class="anchor-link" href="#qsirecon-TORTOISE-MAPMRI" title="Copy link">
+  <span class="text">QSIRecon-TORTOISE MAP-MRI & Tensor Derivatives (<code>qsirecon-TORTOISE_model-&lt;MAPMRI|tensor&gt;/</code>)</span>
+  <a class="anchor-link" href="#qsirecon-TORTOISE" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The <a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> software computes MAP-MRI and tensor fits along with derived scalar maps. 
-Mean Apparent Propagator MRI (MAP-MRI) extends DTI by estimating a full spatial probability distribution (propagator) of water diffusion. In essence, MAP-MRI describes a probability distribution function of where a water molecule could travel to within a specified amount of time. Unlike DTI, MAP-MRI makes no assumptions about the diffusion profile, enabling quantification of non-Gaussian diffusion and providing more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan et al., 2013</a>). 
-Key MAP-MRI metrics include:</p>
+<p>Mean Apparent Propagator MRI (MAP-MRI) extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion. Unlike DTI, MAP-MRI does not assume a Gaussian diffusion profile, enabling quantification of non-Gaussian diffusion and providing more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan et al., 2013</a>). Key MAP-MRI metrics include:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <tr>
@@ -297,41 +297,21 @@ Key MAP-MRI metrics include:</p>
 </tr>
 </tbody>
 </table>
+<p><a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> calculates MAP-MRI and Tensor fits and scalar maps:</p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
    |_ qsirecon-TORTOISE_model-MAPMRI/
-      |_ sub-<span class="label">{ID}</span>/
-         |_ ses-<span class="label">{V0X}</span>/
-            |_ dwi/
-            | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-            | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="placeholder">&lt;MAPMRI&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
-            | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;TENSOR&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
-            |
-            |_ figures/
-            |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
-
-<span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">&lt;MAPMRI&gt;</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
-<span class="placeholder">&lt;TENSOR&gt;</span>: ad, am, fa, li, rd
-</pre>
-</div>
-
-<div id="qsirecon-TORTOISE-tensor" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-  <span class="text">QSIRecon-TORTOISE Model Tensor Derivatives (<code>qsirecon-TORTOISE_model-tensor/</code>)</span>
-  <a class="anchor-link" href="#qsirecon-TORTOISE-tensor" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>In addition to MAPMRI, the <a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> software also calculates Tensor fits and scalar maps:</p>
-<pre class="folder-tree" style="font-size: 11px;">
-hbcd/
-|_ derivatives/ 
+   |  |_ sub-<span class="label">{ID}</span>/
+   |     |_ ses-<span class="label">{V0X}</span>/
+   |        |_ dwi/
+   |        | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+   |        | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="placeholder">&lt;MAPMRI&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+   |        | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;TENSOR&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+   |        |
+   |        |_ figures/
+   |        |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
+   |
    |_ qsirecon-TORTOISE_model-tensor/
       |_ sub-<span class="label">{ID}</span>/
          |_ ses-<span class="label">{V0X}</span>/
@@ -339,21 +319,20 @@ hbcd/
                |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
                |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">ad|am|fa|li|rd</span>_dwimap.nii.gz
                |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">ad|am|fa|li|rd</span>_dwimap.json
+
+<span class="hashtag"># Label Values Legend</span>
+<span class="placeholder">&lt;MAPMRI&gt;</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
+<span class="placeholder">&lt;TENSOR&gt;</span>: ad, am, fa, li, rd
 </pre>
 </div>
 
-------------------------------------
+## Data Acquisition
 
-#### <i class="fas fa-table"></i> Tabulated Data
+Diffusion-Weighted Imaging (DWI) data is provied in raw BIDS format as outlined in the [raw BIDS file tree above](#rawbids). The DWI protocol provides diffusion-weighted images that may be used to estimate multiple models of diffusion behavior in the central nervous system. The protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm^2 (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful.
 
-Includes the `img_qsiprep_space-ACPC_desc-image_qc` data table, derived from the QSIPrep pipeline file `sub-{ID}_ses-{V0X}_space-ACPC_desc-image_qc.tsv`.
+## Data Processing
 
-
-## Details
-
-Diffusion-Weighted Imaging (DWI) refers to the raw image data acquired during scanning, provided in BIDS format as outlined in the [raw BIDS file tree above](#rawbids). The DWI protocol provides diffusion-weighted images that may be used to estimate multiple models of diffusion behavior in the central nervous system. The protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm^2 (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful.
-
-The diffusion-weighted images are processed with denoising and Gibbs artifact reduction, and corrected for eddy current distortion, head motion and echo planar susceptibility distortion ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). The diffusion encoding enables the estimation of multiple diffusion MRI models to create the derived data, including:
+Diffusion data are processed through **[QSIPrep](https://qsiprep.readthedocs.io/)**, which includes denoising and Gibbs artifact reduction, eddy current distortion correction, and head motion and echo planar susceptibility distortion correction ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). QSIPrep derivatives are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which executes a curated set of reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. Multiple QSIRecon derivative folders are provided, each corresponding to a different reconstruction method or model. The diffusion encoding enables the estimation of multiple diffusion MRI models to create the derived data, including:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -371,12 +350,12 @@ The diffusion-weighted images are processed with denoising and Gibbs artifact re
 </tr>
 <tr>
   <td><span class="tooltip tooltip-right">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
-  <td><a href="#qsirecon-DIPY">QSIRecon- DIPY DKI</a> (<code>qsirecon-DIPYDKI/</code>)</td>
+  <td><a href="#qsirecon-DIPY">QSIRecon-DIPY DKI</a> (<code>qsirecon-DIPYDKI/</code>)</td>
   <td><a href="https://doi.org/10.1002/mrm.20508">Jensen et al., 2005</a></td>
 </tr>
 <tr>
   <td><span class="tooltip tooltip-right">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator</span></span></td>
-  <td><a href="#qsirecon-TORTOISE-MAPMRI">QSIRecon-TORTOISE Model MAP-MRI</a> (<code>qsirecon-TORTOISE_model-MAPMRI/</code>)</td>
+  <td><a href="#qsirecon-TORTOISE">QSIRecon-TORTOISE Model MAP-MRI</a> (<code>qsirecon-TORTOISE_model-MAPMRI/</code>)</td>
   <td><a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan et al. 2013</a></td>
 </tr>
 </tbody>
