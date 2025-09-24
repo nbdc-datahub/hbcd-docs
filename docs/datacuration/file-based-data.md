@@ -56,7 +56,7 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 <tr>
   <td>Scan</td>
   <td><code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Per-scan information (age at scan and raw data QC scores - see <a href="../../instruments/mri/qc.md#location-of-raw-data-qc-results-in-data-release" target="_blank">HBCD MR Quality Control Procedures</a>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Per-scan information (age at scan and raw data QC scores - see <a href="../../../instruments/mri/qc/#location-of-raw-data-qc-results-in-data-release" target="_blank">HBCD MR Quality Control Procedures</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -166,7 +166,7 @@ hbcd/
 <tr>
   <th>Modalities</th>
   <th>Derivatives Folder</th>
-  <th>Name of Pipeline With Link to Derivatives Documentation</th>
+  <th>Pipeline Name & Link to Derivatives Documentation</th>
 </tr>
 </thead>
 <tbody>
@@ -181,7 +181,7 @@ hbcd/
 </tr>
 <tr>
   <td><code>nibabies/</code></td>
-  <td><a href="../../instruments/mri/fmri/#bibsnet" target="_blank">Infant fMRIPrep (or Nibabies)</a></td>
+  <td><a href="../../instruments/mri/fmri/#nibabies" target="_blank">Infant fMRIPrep (or Nibabies)</a></td>
 </tr>
 <tr>
   <td><code>freesurfer/</code> & <code>mcribs/</code></td>
@@ -201,23 +201,35 @@ hbcd/
   <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">qMRI PostProc</a></td>
 </tr>
 <tr>
-  <td rowspan="2">Diffusion MRI</td>
+  <td rowspan="5">Diffusion MRI</td>
   <td><code>qsiprep/</code></td>
   <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
 </tr>
 <tr>
-  <td><code>qsirecon*/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon" target="_blank">QSIRecon</a></td>
+  <td><code>qsirecon-DSIStudio/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon-dsistudio" target="_blank">QSIRecon-DSI Studio</a></td>
+</tr>
+<tr>
+  <td><code>qsirecon-DIPYDKI/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon-DIPY" target="_blank">QSIRecon-DIPY DKI</a></td>
+</tr>
+<tr>
+  <td><code>qsirecon-TORTOISE_model-MAPMRI/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">QSIRecon-TORTOISE MAP-MRI</a></td>
+</tr>
+<tr>
+  <td><code>qsirecon-TORTOISE_model-tensor/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">QSIRecon-TORTOISE Tensor</a></td>
 </tr>
 <tr>
   <td>MR Spectroscopy</td>
   <td><code>osprey/</code></td>
-  <td><a href="../../instruments/mri/mrs/#osprey" target="_blank">OSPREY-BIDS</a></td>
+  <td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a></td>
 </tr>
 <tr>
   <td>EEG</td>
   <td><code>made/</code></td>
-  <td><a href="../../instruments/eeg/#derivatives" target="_blank">HBCD-MADE</a></td>
+  <td><a href="../../instruments/eeg/#made" target="_blank">HBCD-MADE</a></td>
 </tr>
 <tr>
   <td>Wearable Sensors</td>

@@ -148,7 +148,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>HBCD Study data includes data in both tabulated and file-based formats. <b>Tabulated data</b> is in a standardized table format, with one table provided for all participant data per measure, and includes instrument data (e.g., demographics, behavior, environmental determinants, etc.) as well as data derived from the file-based data. <b>File-based data</b> are imaging and biosignal data provided in varied formats depending on the modality. This includes MRI & MRS, EEG, and wearable sensor recordings. See the section on <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a further details, including the section: <a href="../../datacuration/overview/#warning" target="_blank">Which file-based data are also available as tabulated data?</a>.</p>
+<p>HBCD Study data includes data in both tabulated and file-based formats. <b>Tabulated data</b> is in a standardized table format, with one table provided for all participant data per measure, and includes instrument data (e.g., demographics, behavior, environmental determinants, etc.) as well as data derived from the file-based data. <b>File-based data</b> are imaging and biosignal data provided in varied formats depending on the modality. This includes MRI & MRS, EEG, and wearable sensor recordings. See the section on <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a further details, including the section: <a href="../../datacuration/phenotypes/#warning" target="_blank">Which file-based data are also available as tabulated data?</a>.</p>
 </div>
 
 <div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">
@@ -162,7 +162,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>The <b>source</b> element in the <a href="../../access/metadata/#nbdc-data-dictionary">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../access/metadata/#table-naming-conventions">Table Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../access/metadata/#study-design-logic-child-centric-data-structure">here</a>.</p>
+<p>The <b>source</b> element in the <a href="../../access/metadata/#nbdc-data-dictionary">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../access/metadata/#naming-conventions">Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../access/metadata/#study-design-logic-child-centric-data-structure">here</a>.</p>
 </div>
 
 <div id="faq-age" class="notification-banner" onclick="toggleCollapse(this)">

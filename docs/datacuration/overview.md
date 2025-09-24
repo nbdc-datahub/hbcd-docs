@@ -13,17 +13,17 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
 </thead>
 <tbody>
 <tr>
-<td><a href="../phenotypes"><strong>Tabulated Data</strong></a></td>
+<td><a href="../phenotypes" target="_blank"><strong>Tabulated Data</strong></a></td>
 <td><code>rawdata/phenotype/</code></td>
 <td style="word-wrap: break-word; white-space: normal;">Instrument data in tabulated format, containing all participant data per table. Includes demographics and visit information, toxicology, behavior, and tabulated data derived from file-based data (MRI, spectroscopy, EEG, and <a href="../../instruments/sensors/wearsensors">wearable sensors</a>).</td>
 </tr>
 <tr>
-<td><a href="../file-based-data/raw-bids"><strong>Raw BIDS (File-Based)</strong></a></td>
+<td><a href="../file-based-data/#raw-bids" target="_blank"><strong>Raw BIDS (File-Based)</strong></a></td>
 <td><code>rawdata/sub-&lt;ID&gt;/</code></td>
 <td style="word-wrap: break-word; white-space: normal;">BIDS-formatted raw data of varied formats for MRI, MRS, EEG, and Biosensors. Participant data is included in separate subject/session-level folders.</td>
 </tr>
 <tr>
-<td><a href="../file-based-data/#processed-derivatives"><strong>Processed Derivatives (File-Based)</strong></a></td>
+<td><a href="../file-based-data/#processed-derivatives" target="_blank"><strong>Processed Derivatives (File-Based)</strong></a></td>
 <td><code>derivatives/</code></td>
 <td style="word-wrap: break-word; white-space: normal;">Processed MRI, MRS, EEG, and Biosensor data of varied formats derived from processing pipelines. Participant data is included in separate subject/session-level folders.</td>
 </tr>
