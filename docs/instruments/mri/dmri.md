@@ -362,6 +362,26 @@ Diffusion data are processed through **[QSIPrep](https://qsiprep.readthedocs.io/
 </tbody>
 </table>
 
+
+##### Alt table with description of model included (currently included in expandible pipeline sections)
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr>
+    <th>Model</th>
+    <th>Description</th>
+    <th>Derivatives:<br>QSIRecon-</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="tooltip tooltip-right">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">DTI maps, including Fractional Anisotropy (FA) and Mean Diffusivity (MD), model diffusion-weighted signals using a 3D Gaussian distribution of water displacements. FA reflects the degree of anisotropic diffusion and is typically higher in white matter bundles with dense, parallel fibers. MD is the directionally averaged apparent diffusion coefficient and is inversely related to cellular membrane density (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser et al. 1994</a>).</td>
+  <td><a href="#qsirecon-dsistudio">DSI Studio</a></td>
+</tr>
+</tbody>
+</table>
+
 ## References
 <div class="references">
     <p>Alexander AL, Lee JE, Lazar M, Field AS. (2007). Diffusion tensor imaging of the brain. <em>Neurotherapeutics</em>, 4(3):316-29. <a href="https://doi.org/10.1016/j.nurt.2007.05.011">10.1016/j.nurt.2007.05.011</a></p>
