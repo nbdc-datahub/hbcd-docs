@@ -735,38 +735,6 @@ Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.
 </table>
 </div>
 
-## EXTRA/DELETE
-
-Another version of the data proc model summary table where descriptions are left out and instead included in expandible pipeline sections:
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-    <th>Model</th>
-    <th>Pipeline Derivatives (+Link to documentation)</th>
-    <th>Reference</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td><span class="tooltip tooltip-right">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
-  <td><a href="#qsirecon-DSIStudio">QSIRecon-DSI Studio</a> (<code>qsirecon-DSIStudio/</code>)</td>
-  <td><a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser et al. 1994</a></td>
-</tr>
-<tr>
-  <td><span class="tooltip tooltip-right">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
-  <td><a href="#qsirecon-DIPYDKI">QSIRecon-DIPY DKI</a> (<code>qsirecon-DIPYDKI/</code>)</td>
-  <td><a href="https://doi.org/10.1002/mrm.20508">Jensen et al., 2005</a></td>
-</tr>
-<tr>
-  <td><span class="tooltip tooltip-right">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator</span></span></td>
-  <td><a href="#qsirecon-TORTOISE">QSIRecon-TORTOISE Model MAP-MRI</a> (<code>qsirecon-TORTOISE_model-MAPMRI/</code>)</td>
-  <td><a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan et al. 2013</a></td>
-</tr>
-</tbody>
-</table>
-
-
 ## References
 <div class="references">
     <p>Alexander AL, Lee JE, Lazar M, Field AS. (2007). Diffusion tensor imaging of the brain. <em>Neurotherapeutics</em>, 4(3):316-29. <a href="https://doi.org/10.1016/j.nurt.2007.05.011">10.1016/j.nurt.2007.05.011</a></p>
