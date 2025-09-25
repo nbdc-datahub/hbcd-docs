@@ -107,7 +107,7 @@ hbcd/
 <div id="qsirecon-dsistudio" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon-DSI Studio Derivatives (<code>qsirecon-DSIStudio/</code>)</span>
+  <span class="text">QSIRecon-DSIStudio Derivatives (<code>qsirecon-DSIStudio/</code>)</span>
   <a class="anchor-link" href="#qsirecon-dsistudio" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -115,7 +115,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Diffusion Tensor Imaging (DTI) maps generated with <a href="https://dsi-studio.labsolver.org/">DSI Studio</a>, such as Fractional Anisotropy (FA) and Mean Diffusivity (MD), model diffusion-weighted signals using a 3D Gaussian distribution of water displacements. FA reflects the degree of anisotropic diffusion and is typically higher in white matter bundles with dense, parallel fibers. MD is the directionally averaged apparent diffusion coefficient and is inversely related to cellular membrane density.</p>
+<p>QSIRecon-DSIStudio runs <a href="https://dsi-studio.labsolver.org/">DSI Studio</a> to generate DTI maps. See <a href="#data-processing">Data Processing</a> for details.</p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
@@ -227,7 +227,7 @@ hbcd/
 <div id="qsirecon-DIPY" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon-DIPY DKI Derivatives (<code>qsirecon-DIPYDKI</code>)</span>
+  <span class="text">QSIRecon-DIPYDKI Derivatives (<code>qsirecon-DIPYDKI</code>)</span>
   <a class="anchor-link" href="#qsirecon-DIPY" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -235,9 +235,6 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>
-Diffusion Kurtosis Imaging (DKI) maps generated with <a href="https://dipy.org/">Dipy</a> extend the DTI model to capture non-Gaussian diffusion. Mean Kurtosis (MK), the directionally averaged kurtosis, is often higher in dense white matter and can better reflect complex or restricted diffusion compared to standard DTI measures.
-</p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
@@ -267,7 +264,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Mean Apparent Propagator MRI (MAP-MRI) extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion. Unlike DTI, MAP-MRI does not assume a Gaussian diffusion profile, enabling quantification of non-Gaussian diffusion and providing more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan et al., 2013</a>). Key MAP-MRI metrics include:</p>
+<p>Key MAP-MRI metrics include:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <tr>
@@ -339,6 +336,376 @@ Diffusion data are processed through **[QSIPrep](https://qsiprep.readthedocs.io/
 <thead>
   <tr>
     <th>Model</th>
+    <th>Description</th>
+    <th>Derivatives</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="tooltip tooltip-right">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">DTI maps generated with <a href="https://dsi-studio.labsolver.org/">DSI Studio</a>, including Fractional Anisotropy (FA) and Mean Diffusivity (MD), model diffusion-weighted signals using a 3D Gaussian distribution of water displacements. FA reflects the degree of anisotropic diffusion and is typically higher in white matter bundles with dense, parallel fibers. MD is the directionally averaged apparent diffusion coefficient and is inversely related to cellular membrane density (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser et al. 1994</a>).</td>
+  <td><a href="#qsirecon-dsistudio">qsirecon-<br>DSIStudio</a></td>
+</tr>
+<tr>
+  <td><span class="tooltip tooltip-right">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">DKI maps generated with <a href="https://dipy.org/">Dipy</a> extend the DTI model to capture non-Gaussian diffusion. Mean Kurtosis (MK), the directionally averaged kurtosis, is often higher in dense white matter and can better reflect complex or restricted diffusion compared to standard DTI measures (<a href="https://doi.org/10.1002/mrm.20508">Jensen et al., 2005</a>).</td>
+  <td><a href="#qsirecon-DIPY">qsirecon-<br>DIPYDKI</a></td>
+</tr>
+<tr>
+  <td><span class="tooltip tooltip-right">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator MRI</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">MAP-MRI extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion. Unlike DTI, MAP-MRI does not assume a Gaussian diffusion profile, enabling quantification of non-Gaussian diffusion and providing more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan et al. 2013</a>).</td>
+  <td><a href="#qsirecon-TORTOISE">qsirecon-<br>TORTOISE_model-<br>MAPMRI</a></td>
+</tr>
+</tbody>
+</table>
+
+<div id="model-param-details" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-atom"></i></span>
+  <span class="text-with-link">
+  <span class="text">QSIRecon Parametric Microstructure Maps Generated for HBCD</span>
+  <a class="anchor-link" href="#model-param-details" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+    <tr>
+    <th>Model</th>
+    <th>Parameter</th>
+    <th>Description</th>
+    <th>Shells</th>
+    <th>Category</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5" rowspan="1">qsirecon-DIPYDKI</td>
+</tr>
+<tr>
+<td>dki</td>
+<td>ad</td>
+<td>Axial diffusivity</td>
+<td>Full</td>
+<td>Complex Diffusivity</td>
+</tr>
+<tr>
+<td>dki</td>
+<td>ak</td>
+<td>Axial kurtosis</td>
+<td>Full</td>
+<td>Diffusion Kurtosis</td>
+</tr>
+<tr>
+<td>dki</td>
+<td>fa</td>
+<td>Fractional anisotropy</td>
+<td>Full</td>
+<td>Diffusion Anisotropy</td>
+</tr>
+<tr>
+<td>dki</td>
+<td>kfa</td>
+<td>Kurtosis fractional anisotropy</td>
+<td>Full</td>
+<td>Diffusion Kurtosis</td>
+</tr>
+<tr>
+<td>dki</td>
+<td>md</td>
+<td>Mean diffusivity</td>
+<td>Full</td>
+<td>Complex Diffusivity</td>
+</tr>
+<tr>
+<td>dki</td>
+<td>mk</td>
+<td>Mean kurtosis</td>
+<td>Full</td>
+<td>Diffusion Kurtosis</td>
+</tr>
+<tr>
+<td>dki</td>
+<td>mkt</td>
+<td>Mean kurtosis tensor</td>
+<td>Full</td>
+<td>Diffusion Kurtosis</td>
+</tr>
+<tr>
+<td>dki</td>
+<td>rd</td>
+<td>Radial diffusivity</td>
+<td>Full</td>
+<td>Complex Diffusivity</td>
+</tr>
+<tr>
+<td>dki</td>
+<td>rk</td>
+<td>Radial kurtosis</td>
+<td>Full</td>
+<td>Diffusion Kurtosis</td>
+</tr>
+<tr>
+<td colspan="5" rowspan="1">qsirecon-DSIStudio</td>
+</tr>
+<tr>
+<td>gqi</td>
+<td>gfa</td>
+<td>Generalized fractional anisotropy</td>
+<td>Full</td>
+<td>Diffusion Anisotropy</td>
+</tr>
+<tr>
+<td>gqi</td>
+<td>iso</td>
+<td>Isotropic diffusion</td>
+<td>Full</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>gqi</td>
+<td>qa</td>
+<td>Quantitative anisotropy</td>
+<td>Full</td>
+<td>Diffusion Anisotropy</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>ad</td>
+<td>Axial diffusivity (first eigenvalue) from a tensor fit</td>
+<td>Inner</td>
+<td>Mean Diffusivity</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>fa</td>
+<td>Fractional anisotropy from a tensor fit</td>
+<td>Inner</td>
+<td>Diffusion Anisotropy</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>ha</td>
+<td>Helix angle from tensor fit</td>
+<td>Inner</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>md</td>
+<td>Mean diffusivity from a tensor fit</td>
+<td>Inner</td>
+<td>Mean Diffusivity</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>rd</td>
+<td>Radial diffusivity from a tensor fit</td>
+<td>Inner</td>
+<td>Mean Diffusivity</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>rd1</td>
+<td>Lambda 2 (second eigenvalue) from a tensor fit</td>
+<td>Inner</td>
+<td>Mean Diffusivity</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>rd2</td>
+<td>Lambda 3 (third eigenvalue) from a tensor fit</td>
+<td>Inner</td>
+<td>Mean Diffusivity</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>txx</td>
+<td>Tensor fit txx</td>
+<td>Inner</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>txy</td>
+<td>Tensor fit txy</td>
+<td>Inner</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>txz</td>
+<td>Tensor fit txz</td>
+<td>Inner</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>tyy</td>
+<td>Tensor fit tyy</td>
+<td>Inner</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>tyz</td>
+<td>Tensor fit tyz</td>
+<td>Inner</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>tzz</td>
+<td>Tensor fit tzz</td>
+<td>Inner</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td colspan="5" rowspan="1">qsirecon-TORTOISE_model-MAPMRI</td>
+</tr>
+<tr>
+<td>mapmri</td>
+<td>ng</td>
+<td>Non-Gaussianity</td>
+<td>Full</td>
+<td>Diffusion Kurtosis</td>
+</tr>
+<tr>
+<td>mapmri</td>
+<td>ngpar</td>
+<td>Non-Gaussianity parallel</td>
+<td>Full</td>
+<td>Diffusion Kurtosis</td>
+</tr>
+<tr>
+<td>mapmri</td>
+<td>ngperp</td>
+<td>Non-Gaussianity perpendicular</td>
+<td>Full</td>
+<td>Diffusion Kurtosis</td>
+</tr>
+<tr>
+<td>mapmri</td>
+<td>pa</td>
+<td>Propagator anisotropy</td>
+<td>Full</td>
+<td>Diffusion Kurtosis</td>
+</tr>
+<tr>
+<td>mapmri</td>
+<td>path</td>
+<td>Thresholded propagator anisotropy</td>
+<td>Full</td>
+<td>Diffusion Kurtosis</td>
+</tr>
+<tr>
+<td>mapmri</td>
+<td>rtap</td>
+<td>Return to axis probability</td>
+<td>Full</td>
+<td>Mean Diffusivity</td>
+</tr>
+<tr>
+<td>mapmri</td>
+<td>rtop</td>
+<td>Return to origin probability</td>
+<td>Full</td>
+<td>Mean Diffusivity</td>
+</tr>
+<tr>
+<td>mapmri</td>
+<td>rtpp</td>
+<td>Return to plane probability</td>
+<td>Full</td>
+<td>Mean Diffusivity</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>ad</td>
+<td>Axial diffusivity</td>
+<td>Inner</td>
+<td>Mean Diffusivity</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>am</td>
+<td>A0 from a tensor fit</td>
+<td>Inner</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>fa</td>
+<td>Fractional anisotropy from a tensor fit</td>
+<td>Inner</td>
+<td>Diffusion Anisotropy</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>li</td>
+<td>Lattice index</td>
+<td>Inner</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>rd</td>
+<td>Radial diffusivity from a tensor fit</td>
+<td>Inner</td>
+<td>Mean Diffusivity</td>
+</tr>
+<tr>
+<td colspan="5" rowspan="1">qsirecon-TORTOISE_model-tensor</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>ad</td>
+<td>Axial diffusivity</td>
+<td>Full</td>
+<td>Mean Diffusivity</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>am</td>
+<td>A0 from a tensor fit</td>
+<td>Full</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>fa</td>
+<td>Fractional anisotropy from a tensor fit</td>
+<td>Full</td>
+<td>Diffusion Anisotropy</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>li</td>
+<td>Lattice index</td>
+<td>Full</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>tensor</td>
+<td>rd</td>
+<td>Radial diffusivity from a tensor fit</td>
+<td>Full</td>
+<td>Mean Diffusivity</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## EXTRA/DELETE
+
+Another version of the data proc model summary table where descriptions are left out and instead included in expandible pipeline sections:
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr>
+    <th>Model</th>
     <th>Pipeline Derivatives (+Link to documentation)</th>
     <th>Reference</th>
   </tr>
@@ -362,25 +729,6 @@ Diffusion data are processed through **[QSIPrep](https://qsiprep.readthedocs.io/
 </tbody>
 </table>
 
-
-##### Alt table with description of model included (currently included in expandible pipeline sections)
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-    <th>Model</th>
-    <th>Description</th>
-    <th>Derivatives:<br>QSIRecon-</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td><span class="tooltip tooltip-right">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">DTI maps, including Fractional Anisotropy (FA) and Mean Diffusivity (MD), model diffusion-weighted signals using a 3D Gaussian distribution of water displacements. FA reflects the degree of anisotropic diffusion and is typically higher in white matter bundles with dense, parallel fibers. MD is the directionally averaged apparent diffusion coefficient and is inversely related to cellular membrane density (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser et al. 1994</a>).</td>
-  <td><a href="#qsirecon-dsistudio">DSI Studio</a></td>
-</tr>
-</tbody>
-</table>
 
 ## References
 <div class="references">

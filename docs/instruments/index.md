@@ -14,7 +14,7 @@ HBCD Study data includes both tabulated and file-based data - see <a href="../da
 - <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
 - File-based data include <a href="../datacuration/rawbids" target="_blank"><b>raw</b></a> and <a href="../datacuration/derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
 
-Expand the sections below to see a list of measures associated with each domain included in the latest release.
+Expand the sections below to see a list of measures associated with each domain included in Release 1.0.
 
 ## Instruments by Domain
 
