@@ -104,11 +104,35 @@ hbcd/
 </pre>
 </div>
 
-<div id="qsirecon-dsistudio" class="table-banner" onclick="toggleCollapse(this)">
+<div id="qsirecon" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+  <span class="text">QSIRecon Derivatives (<code>qsirecon/</code>)</span>
+  <a class="anchor-link" href="#qsirecon" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><a href="https://qsirecon.readthedocs.io/">QSIRecon</a> has separate derivative folders for each reconstruction workflow. The <code>qsirecon/</code> folder itself contains only a log folder with metadata for the reconstruction workflows executed. See the following sections for workflow-specific outputs stored in self-contained derivatives folders and <a href="#data-processing">Data Processing</a> for details.</p>
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
+    |__ qsirecon/
+        |__ sub-<span class="label">{ID}</span>
+            |__ log/
+                |__ <span class="label">{YYYYMMDD-HHMMSS_UUID}</span>/
+                    |__ qsirecon.toml
+                    |__ recon_spec.yaml
+</pre>  
+</div>
+
+<div id="qsirecon-DSIStudio" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
   <span class="text">QSIRecon-DSIStudio Derivatives (<code>qsirecon-DSIStudio/</code>)</span>
-  <a class="anchor-link" href="#qsirecon-dsistudio" title="Copy link">
+  <a class="anchor-link" href="#qsirecon-DSIStudio" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -224,11 +248,11 @@ hbcd/
 </div>
 </div>
 
-<div id="qsirecon-DIPY" class="table-banner" onclick="toggleCollapse(this)">
+<div id="qsirecon-DIPYDKI" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
   <span class="text">QSIRecon-DIPYDKI Derivatives (<code>qsirecon-DIPYDKI</code>)</span>
-  <a class="anchor-link" href="#qsirecon-DIPY" title="Copy link">
+  <a class="anchor-link" href="#qsirecon-DIPYDKI" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -344,12 +368,12 @@ Diffusion data are processed through **[QSIPrep](https://qsiprep.readthedocs.io/
 <tr>
   <td><span class="tooltip tooltip-right">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
   <td style="word-wrap: break-word; white-space: normal;">DTI maps generated with <a href="https://dsi-studio.labsolver.org/">DSI Studio</a>, including Fractional Anisotropy (FA) and Mean Diffusivity (MD), model diffusion-weighted signals using a 3D Gaussian distribution of water displacements. FA reflects the degree of anisotropic diffusion and is typically higher in white matter bundles with dense, parallel fibers. MD is the directionally averaged apparent diffusion coefficient and is inversely related to cellular membrane density (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser et al. 1994</a>).</td>
-  <td><a href="#qsirecon-dsistudio">qsirecon-<br>DSIStudio</a></td>
+  <td><a href="#qsirecon-DSIStudio">qsirecon-<br>DSIStudio</a></td>
 </tr>
 <tr>
   <td><span class="tooltip tooltip-right">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
   <td style="word-wrap: break-word; white-space: normal;">DKI maps generated with <a href="https://dipy.org/">Dipy</a> extend the DTI model to capture non-Gaussian diffusion. Mean Kurtosis (MK), the directionally averaged kurtosis, is often higher in dense white matter and can better reflect complex or restricted diffusion compared to standard DTI measures (<a href="https://doi.org/10.1002/mrm.20508">Jensen et al., 2005</a>).</td>
-  <td><a href="#qsirecon-DIPY">qsirecon-<br>DIPYDKI</a></td>
+  <td><a href="#qsirecon-DIPYDKI">qsirecon-<br>DIPYDKI</a></td>
 </tr>
 <tr>
   <td><span class="tooltip tooltip-right">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator MRI</span></span></td>
@@ -713,12 +737,12 @@ Another version of the data proc model summary table where descriptions are left
 <tbody>
 <tr>
   <td><span class="tooltip tooltip-right">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
-  <td><a href="#qsirecon-dsistudio">QSIRecon-DSI Studio</a> (<code>qsirecon-DSIStudio/</code>)</td>
+  <td><a href="#qsirecon-DSIStudio">QSIRecon-DSI Studio</a> (<code>qsirecon-DSIStudio/</code>)</td>
   <td><a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser et al. 1994</a></td>
 </tr>
 <tr>
   <td><span class="tooltip tooltip-right">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
-  <td><a href="#qsirecon-DIPY">QSIRecon-DIPY DKI</a> (<code>qsirecon-DIPYDKI/</code>)</td>
+  <td><a href="#qsirecon-DIPYDKI">QSIRecon-DIPY DKI</a> (<code>qsirecon-DIPYDKI/</code>)</td>
   <td><a href="https://doi.org/10.1002/mrm.20508">Jensen et al., 2005</a></td>
 </tr>
 <tr>
