@@ -65,7 +65,7 @@ dwi/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>QSIPrep</strong> (see <a href="https://qsiprep.readthedocs.io/">pipeline documentation</a>) preprocessing includes head motion correction, susceptibility distortion correction, MP-PCA denoising, co-registration to T1w images, ANTS spatial normalization, and tissue segmentation.</p>
+<p><a href="https://qsiprep.readthedocs.io/">QSIPrep</a> preprocesses data to feed into QSIRecon reconstruction workflows. See <a href="#data-processing">Data Processing</a> for details.</p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -259,6 +259,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p>QSIRecon-DIPYDKI runs <a href="https://dipy.org/">DIPY</a> to generate DKI maps. See <a href="#data-processing">Data Processing</a> for details.</p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
@@ -288,38 +289,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Key MAP-MRI metrics include:</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-    <th>Metric</th>
-    <th>Description</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td><span class="tooltip">PA<span class="tooltiptext">Propagator Anisotropy</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">More accurate than FA, PA quantifies anisotropy by computing the dissimilarity of the full MAP-MRI propagator from its fully isotropic counterpart.</td>
-</tr>
-<tr>
-  <td><span class="tooltip">NG<span class="tooltiptext">Non-Gaussianity</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">The NG index quantifies deviation from Gaussian diffusion. <strong>NG</strong> measures overall deviation, <strong>NGpar</strong> along the primary diffusion axis (fiber direction in white matter), and <strong>NGperp</strong> perpendicular to it (often related to restriction).</td>
-</tr>
-<tr>
-  <td><span class="tooltip">RTOP<span class="tooltiptext">Return To Origin Probability</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to its starting point. Low in unrestricted diffusion (large cells), high in restricted diffusion (small or impermeable cells). Inversely related to pore volume.</td>
-</tr>
-<tr>
-  <td><span class="tooltip">RTAP<span class="tooltiptext">Return To Axis Probability</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to the principal diffusion axis (primary eigenvector).</td>
-</tr>
-<tr>
-  <td><span class="tooltip">RTPP<span class="tooltiptext">Return To Plane Probability</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Reciprocal of mean cylinder length and inversely proportional to axial diffusivity; Related to diffusion taking place within coherently oriented cylinders.</td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> calculates MAP-MRI and Tensor fits and scalar maps:</p>
+<p><a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> calculates MAP-MRI and Tensor fits and scalar maps. See <a href="#data-processing">Data Processing</a> for details.</p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
@@ -350,11 +320,11 @@ hbcd/
 
 ## Data Acquisition
 
-Diffusion-Weighted Imaging (DWI) data is provied in raw BIDS format as outlined in the [raw BIDS file tree above](#rawbids). The DWI protocol provides diffusion-weighted images that may be used to estimate multiple models of diffusion behavior in the central nervous system. The protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm^2 (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful.
+Diffusion-Weighted Imaging (DWI) data is provided in raw BIDS format as outlined in the [raw BIDS file tree above](#rawbids). The DWI protocol provides diffusion-weighted images that may be used to estimate multiple models of diffusion behavior in the central nervous system. The protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm^2 (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful.
 
 ## Data Processing
 
-Diffusion data are processed through **[QSIPrep](https://qsiprep.readthedocs.io/)**, which includes denoising and Gibbs artifact reduction, eddy current distortion correction, and head motion and echo planar susceptibility distortion correction ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). QSIPrep derivatives are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which executes a curated set of reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. Multiple QSIRecon derivative folders are provided, each corresponding to a different reconstruction method or model. The diffusion encoding enables the estimation of multiple diffusion MRI models to create the derived data, including:
+Diffusion data are prerocessed through **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs head motion correction, susceptibility distortion correction, MP-PCA denoising, co-registration to T1w images, ANTS spatial normalization, and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). QSIPrep derivatives are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which executes a curated set of reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. Multiple QSIRecon derivative folders are provided, each corresponding to a different reconstruction method or model. The diffusion encoding enables the estimation of multiple diffusion MRI models to create the derived data, including:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -377,11 +347,54 @@ Diffusion data are processed through **[QSIPrep](https://qsiprep.readthedocs.io/
 </tr>
 <tr>
   <td><span class="tooltip tooltip-right">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator MRI</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">MAP-MRI extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion. Unlike DTI, MAP-MRI does not assume a Gaussian diffusion profile, enabling quantification of non-Gaussian diffusion and providing more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan et al. 2013</a>).</td>
+  <td style="word-wrap: break-word; white-space: normal;">MAP-MRI extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion. Unlike DTI, MAP-MRI does not assume a Gaussian diffusion profile, enabling quantification of non-Gaussian diffusion and providing more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan et al. 2013</a>). See table of <a href="#mapmri-metrics">MAP-MRI metrics</a> below.</td>
   <td><a href="#qsirecon-TORTOISE">qsirecon-<br>TORTOISE_model-<br>MAPMRI</a></td>
 </tr>
 </tbody>
 </table>
+
+<div id="mapmri-metrics" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-atom"></i></span>
+  <span class="text-with-link">
+  <span class="text">MAP-MRI Metrics</span>
+  <a class="anchor-link" href="#mapmri-metrics" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr>
+    <th>Metric</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="tooltip">PA<span class="tooltiptext">Propagator Anisotropy</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">More accurate than FA, PA quantifies anisotropy by computing the dissimilarity of the full MAP-MRI propagator from its fully isotropic counterpart.</td>
+</tr>
+<tr>
+  <td><span class="tooltip">NG<span class="tooltiptext">Non-Gaussianity</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">The NG index quantifies deviation from Gaussian diffusion. <strong>NG</strong> measures overall deviation, <strong>NGpar</strong> along the primary diffusion axis (fiber direction in white matter), and <strong>NGperp</strong> perpendicular to it (often related to restriction).</td>
+</tr>
+<tr>
+  <td><span class="tooltip">RTOP<span class="tooltiptext">Return To Origin Probability</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to its starting point. Low in unrestricted diffusion (large cells), high in restricted diffusion (small or impermeable cells). Inversely related to pore volume.</td>
+</tr>
+<tr>
+  <td><span class="tooltip">RTAP<span class="tooltiptext">Return To Axis Probability</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to the principal diffusion axis (primary eigenvector).</td>
+</tr>
+<tr>
+  <td><span class="tooltip">RTPP<span class="tooltiptext">Return To Plane Probability</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Reciprocal of mean cylinder length and inversely proportional to axial diffusivity; Related to diffusion taking place within coherently oriented cylinders.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 <div id="model-param-details" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-atom"></i></span>
@@ -406,7 +419,7 @@ Diffusion data are processed through **[QSIPrep](https://qsiprep.readthedocs.io/
 </thead>
 <tbody>
 <tr>
-<td colspan="5" rowspan="1">qsirecon-DIPYDKI</td>
+<td colspan="5" rowspan="1"><strong>qsirecon-DIPYDKI</strong></td>
 </tr>
 <tr>
 <td>dki</td>
@@ -472,7 +485,7 @@ Diffusion data are processed through **[QSIPrep](https://qsiprep.readthedocs.io/
 <td>Diffusion Kurtosis</td>
 </tr>
 <tr>
-<td colspan="5" rowspan="1">qsirecon-DSIStudio</td>
+<td colspan="5" rowspan="1"><strong>qsirecon-DSIStudio</strong></td>
 </tr>
 <tr>
 <td>gqi</td>
@@ -587,7 +600,7 @@ Diffusion data are processed through **[QSIPrep](https://qsiprep.readthedocs.io/
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td colspan="5" rowspan="1">qsirecon-TORTOISE_model-MAPMRI</td>
+<td colspan="5" rowspan="1"><strong>qsirecon-TORTOISE_model-MAPMRI</strong></td>
 </tr>
 <tr>
 <td>mapmri</td>
@@ -681,7 +694,7 @@ Diffusion data are processed through **[QSIPrep](https://qsiprep.readthedocs.io/
 <td>Mean Diffusivity</td>
 </tr>
 <tr>
-<td colspan="5" rowspan="1">qsirecon-TORTOISE_model-tensor</td>
+<td colspan="5" rowspan="1"><strong>qsirecon-TORTOISE_model-tensor</strong></td>
 </tr>
 <tr>
 <td>tensor</td>
