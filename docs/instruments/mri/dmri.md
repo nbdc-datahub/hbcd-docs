@@ -324,7 +324,7 @@ Diffusion-Weighted Imaging (DWI) data is provided in raw BIDS format as outlined
 
 ## Data Processing
 
-Diffusion data are prerocessed through **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs head motion correction, susceptibility distortion correction, MP-PCA denoising, co-registration to T1w images, ANTS spatial normalization, and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). QSIPrep derivatives are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which executes a curated set of reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. Multiple QSIRecon derivative folders are provided, each corresponding to a different reconstruction method or model. The diffusion encoding enables the estimation of multiple diffusion MRI models to create the derived data, including:
+Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs head motion correction, susceptibility distortion correction, MP-PCA denoising, co-registration to T1w images, ANTS spatial normalization, and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). QSIPrep derivatives are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which executes a curated set of reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. Multiple QSIRecon derivative folders are provided, each corresponding to a different reconstruction method or model. The diffusion encoding enables the estimation of multiple diffusion MRI models to create the derived data, including:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -337,12 +337,12 @@ Diffusion data are prerocessed through **[QSIPrep](https://qsiprep.readthedocs.i
 <tbody>
 <tr>
   <td><span class="tooltip tooltip-right">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">DTI maps generated with <a href="https://dsi-studio.labsolver.org/">DSI Studio</a>, including Fractional Anisotropy (FA) and Mean Diffusivity (MD), model diffusion-weighted signals using a 3D Gaussian distribution of water displacements. FA reflects the degree of anisotropic diffusion and is typically higher in white matter bundles with dense, parallel fibers. MD is the directionally averaged apparent diffusion coefficient and is inversely related to cellular membrane density (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser et al. 1994</a>).</td>
+  <td style="word-wrap: break-word; white-space: normal;">DTI maps, including Fractional Anisotropy (FA) and Mean Diffusivity (MD), model diffusion-weighted signals using a 3D Gaussian distribution of water displacements. FA reflects the degree of anisotropic diffusion and is typically higher in white matter bundles with dense, parallel fibers. MD is the directionally averaged apparent diffusion coefficient and is inversely related to cellular membrane density (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser et al. 1994</a>).</td>
   <td><a href="#qsirecon-DSIStudio">qsirecon-<br>DSIStudio</a></td>
 </tr>
 <tr>
   <td><span class="tooltip tooltip-right">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">DKI maps generated with <a href="https://dipy.org/">Dipy</a> extend the DTI model to capture non-Gaussian diffusion. Mean Kurtosis (MK), the directionally averaged kurtosis, is often higher in dense white matter and can better reflect complex or restricted diffusion compared to standard DTI measures (<a href="https://doi.org/10.1002/mrm.20508">Jensen et al., 2005</a>).</td>
+  <td style="word-wrap: break-word; white-space: normal;">DKI maps extend the DTI model to capture non-Gaussian diffusion. Mean Kurtosis (MK), the directionally averaged kurtosis, is often higher in dense white matter and can better reflect complex or restricted diffusion compared to standard DTI measures (<a href="https://doi.org/10.1002/mrm.20508">Jensen et al., 2005</a>).</td>
   <td><a href="#qsirecon-DIPYDKI">qsirecon-<br>DIPYDKI</a></td>
 </tr>
 <tr>
