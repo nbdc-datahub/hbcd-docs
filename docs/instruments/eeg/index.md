@@ -93,10 +93,8 @@ hbcd/
             |__ eeg/
                 | <span class="hashtag"># TASK ACQUISITIONS:</span>
                 |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_channels.tsv
-                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.json
-                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.set
-                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.tsv
-                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.json
+                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.set <span class="hashtag">(+JSON)</span>
+                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.tsv <span class="hashtag">(+JSON)</span>
                 |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eeg.fdt
                 |
                 | <span class="hashtag"># LOCATION OF ELECTRODES:</span>
@@ -107,40 +105,41 @@ hbcd/
                     |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_impedances.json
                     |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eventlogs.txt
 </pre>
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-    <th></th>
-    <th>File</th>
-    <th>Description</th>
-</thead>
+<i>File Descriptions</i>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
-    <td rowspan="2">Task Acquisition Files</td>
-    <td><code>SET</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Metadata and parameters for the EEG dataset, such as channel locations, sampling rate, and event information.</td>
+  <td colspan="2"><strong>Task Acquisition Files</strong></td>
 </tr>
 <tr>
-    <td><code>FDT</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Field data table files containing EEG data</td>
+  <td><code style="margin-left: 15px;">SET</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Metadata and parameters for the EEG dataset, such as channel locations, sampling rate, and event information.</td>
 </tr>
 <tr>
-    <td rowspan="2">Location of Electrodes</td>
-    <td><code>*_electrodes.tsv</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Specifies the location of electrodes, placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>)</td>
+  <td><code style="margin-left: 15px;">FDT</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Field data table files containing EEG data</td>
 </tr>
 <tr>
-    <td><code>*_coordsystem.json</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Cartesian coordinates followed by <code>*_electrodes.tsv</code> files</td>
+  <td colspan="2"><strong>Location of Electrodes</strong></td>
 </tr>
 <tr>
-    <td rowspan="2">Sourcedata</td>
-    <td><code>*_impedence.json</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Impedance values used to ensure good electrode contact</td>
+  <td><code style="margin-left: 15px;">*_electrodes.tsv</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Specifies the location of electrodes, placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>)</td>
 </tr>
 <tr>
-    <td><code>*_eventlogs.txt</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Task stimuli presentations</td>
+  <td><code style="margin-left: 15px;">*_coordsystem.json</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Cartesian coordinates followed by <code>*_electrodes.tsv</code> files</td>
+</tr>
+<tr>
+  <td colspan="2"><strong>Sourcedata</strong></td>
+</tr>
+<tr>
+  <td><code style="margin-left: 15px;">*_impedence.json</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Impedance values used to ensure good electrode contact</td>
+</tr>
+<tr>
+  <td><code style="margin-left: 15px;">*_eventlogs.txt</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Task stimuli presentations</td>
 </tr>
 </tbody>
 </table>
