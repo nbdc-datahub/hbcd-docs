@@ -61,21 +61,9 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 </tbody>
 </table>
 
-### Modality-Specific Data
-<i>Expand the section below for links to detailed descriptions of each raw BIDS folder and its contents.</i>
+### Links to Raw BIDS Folders
 
-<div id="rawbids-links" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-link"></i></span>
-  <span class="text-with-link">
-<span class="text">Links to Detailed Folder Descriptions</span>
-  <a class="anchor-link" href="#rawbids-links" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
   <th>Raw BIDS Folder</th>
@@ -112,7 +100,6 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 </tr>
 </tbody>
 </table>
-</div>
 
 ## Processed Derivatives
 

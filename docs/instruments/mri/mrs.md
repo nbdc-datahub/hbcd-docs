@@ -28,7 +28,7 @@ MRS release data include **file-based** (raw and processed data files in modalit
 <div id="rawbids" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-<span class="text">Raw BIDS Files (<code>func/</code> & <code>fmap/</code>)</span>
+<span class="text">Raw BIDS Files (<code>mrs/</code>)</span>
   <a class="anchor-link" href="#rawbids" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
