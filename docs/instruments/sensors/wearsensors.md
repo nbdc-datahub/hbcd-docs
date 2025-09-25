@@ -40,8 +40,8 @@ Motion/accelerometry data collected from wearable infant leg sensors includes **
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ rawdata/ 
-   |_ sub-<span class="label">&lt;label&gt;</span>/   
-      |_ ses-<span class="label">&lt;label&gt;</span>/
+   |_ sub-<span class="label">{ID}</span>/   
+      |_ ses-<span class="label">{V0X}</span>/
          |_ motion/  
          |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_motion.tsv  
          |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_motion.json

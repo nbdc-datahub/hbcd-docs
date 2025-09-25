@@ -8,26 +8,36 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
 
 Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload. It consists of three main steps:
 
-#### Protocol Compliance
-
- - Extract imaging parameters from DICOM headers
- - Confirm key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner
- - Flag out-of-compliance series for review; sites are contacted if corrective action is needed
-
-#### Completeness Checks      
-Completeness checks verify that all expected series are present in each imaging session. For example, dMRI and fMRI require paired EPI field maps for distortion correction. Missing data usually indicate an aborted scan or incomplete data transfer (often resolved by re-sending files). 
-
-<div id="valid-series" class="table-banner" onclick="toggleCollapse(this)">
+<div id="protocol-compliance" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
-<span class="text">Series Included in a Valid Session</span>
-  <a class="anchor-link" href="#valid-series" title="Copy link">
+<span class="text">Protocol Compliance</span>
+  <a class="anchor-link" href="#protocol-compliance" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<ul>
+    <li>Extract imaging parameters from DICOM headers</li>
+    <li>Confirm key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner</li>
+    <li>Flag out-of-compliance series for review; sites are contacted if corrective action is needed</li>
+</ul>
+</div>
+
+<div id="completeness" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+  <span class="text">Completeness Checks</span>
+  <a class="anchor-link" href="#completeness" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Completeness checks verify that all expected series are present in each imaging session. For example, dMRI and fMRI require paired EPI field maps for distortion correction. Missing data usually indicate an aborted scan or incomplete data transfer (often resolved by re-sending files). Series included in a valid session include the following:</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
@@ -59,10 +69,18 @@ Completeness checks verify that all expected series are present in each imaging 
 </tbody>
 </table>
 </div>
-<p></p>
 
-#### Automated QC Metrics
-
+<div id="autoQC-metrics" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+<span class="text">Automated QC Metrics</span>
+  <a class="anchor-link" href="#autoQC-metrics" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
@@ -72,7 +90,7 @@ Completeness checks verify that all expected series are present in each imaging 
 </thead>
 <tbody>
 <tr>
-    <td>s/qMRI</td>
+    <td>sMRI & qMRI</td>
     <td>• Estimate motion artifacts using a deep learning model<br>
      • Compute signal-to-noise ratio (SNR)</td>
 </tr>
@@ -100,44 +118,44 @@ Completeness checks verify that all expected series are present in each imaging 
 <td>Detect line artifacts and field-of-view (FOV) cutoff</td>
 </tr>
 <tr>
-<td>All Modalities</td>
+<td>All</td>
 <td>Compute SNR where applicable</td>
 </tr>
 </tbody>
 </table>
+</div>
 
 ### Manual Review
-Based on the automated metrics above, a subset of series are selected for manual review using multivariate prediction and Bayesian classifiers to identify scans that are more likely to have issues. Trained technicians score data quality according to the severity of specific artifacts, rated on a scale of 0 to 3, where 0 indicates no artifact, 1 indicates mild, 2 moderate, and 3 severe. Series with severe artifacts that compromise data usability are rejected (QC = 0) and excluded from subsequent processing and analysis. The post-processing team selects from remaining series based on manual ratings, notes, and automated scores (e.g., minimum of 60% diffusion encoding volumes without significant artifacts).
 
-##### Manual QC metrics for various modalities are as follows:
-
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
+Automated metrics flag series for manual review using multivariate prediction and Bayesian classifiers. Trained technicians then score artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected** (QC = 0) and excluded from processing. Data are selected from the remaining series based on manual ratings, notes, and automated scores (e.g., ≥60% usable diffusion encoding volumes). Manual QC metrics include the following:
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-    <th style="width: 20%; text-align: center;">Modality</th>
-    <th style="width: 80%; text-align: center;">QC Procedures</th>
+    <th>Modality</th>
+    <th>QC Procedures & Scoring</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>T1w, T2w</td>
-<td style="word-wrap: break-word; white-space: normal;"> - Scored for <strong>motion artifacts</strong> (e.g., ripples, blurring) on a 0-3 scale (0 = none, 3 = severe)<br> - Other documented issues include intensity inhomogeneity and <span class="tooltip">ghosting<span class="tooltiptext">faint displaced copy of anatomy due to slices outside FOV</span></span></td>
+    <td>sMRI</td>
+    <td>• Motion artifacts (ripples, blurring), scored 0–3<br>
+        • Document additional issues (e.g., intensity inhomogeneity, <span class="tooltip">ghosting<span class="tooltiptext">faint displaced copy of anatomy due to slices outside FOV</span></span>)</td>
 </tr>
 <tr>
-<td>qMRI</td>
-<td style="word-wrap: break-word; white-space: normal;"> - Same artifact scoring as above (0 - 3)<br> - Inspection of derived data (parametric maps, ROI analysis, and quantitative comparisons for 3D-QALAS)</td>
+    <td>qMRI</td>
+    <td>• Same artifact scoring (0–3)<br>
+        • Inspect derived data (parametric maps, ROI analysis, quantitative checks for 3D-QALAS)
+    </td>
 </tr>
 <tr>
-<td>B1 field maps</td>
-<td style="word-wrap: break-word; white-space: normal;"> - Visual inspection and overall QC only; used for bias field correction of qMRI scans.</td>
-</tr>
+    <td>dMRI & fMRI, & field maps</td>
+    <td style="word-wrap: break-word; white-space: normal;">
+    • Score susceptibility artifacts, FOV cutoff, and horizontal line artifacts (present in the sagittal view)<br>
+    • Note susceptibility artifacts, including <span class="tooltip">signal dropout<span class="tooltiptext">common in posterior occipital cortex of infant fMRI data acquired in PA phase encoding direction</span></span>, signal bunching, and warping</td>
+</tr> 
 <tr>
-<td>SVS localizer scans (MRS)</td>
-<td style="word-wrap: break-word; white-space: normal;"> - Visual inspection and overall QC only; used to define ROI for spectroscopy.</td>
-</tr>
-<tr>
-<td>dMRI, fMRI, field maps</td>
-<td style="word-wrap: break-word; white-space: normal;">- Scored for susceptibility artifacts, FOV cutoff, and <span class="tooltip">line artifacts<span class="tooltiptext">horizontal lines present in the sagittal view, including dark slice-frame and interleaved sliced offset</span></span>.<br> - Susceptibility issues include <span class="tooltip">signal dropout<span class="tooltiptext">Consistent with prior infant fMRI using posterior-anterior (PA) acquisitions, signal dropout is commonly noted in the posterior occipital cortex</span></span>, signal bunching, and warping.</td>
+    <td>MRS</td>
+    <td>Visual inspection and overall QC only of SVS localizer (used to define spectroscopy ROI)</td>
 </tr>
 </tbody>
 </table>
@@ -146,6 +164,7 @@ Based on the automated metrics above, a subset of series are selected for manual
 All quality control metrics are available in the `*_scans.tsv` file provided per participant session ([see details](../../datacuration/file-based-data.md#participant-session-scan-level-data)). The main QC score field, `QC`, is the overall manual QC score and will be a value of either 1 (pass) or 0 (fail). If the scan was not flagged for manual review and only has automated QC data, the `QC` field automatically has value of 1. 
 
 <div id="scanstsv" class="table-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
   <span class="text">Full list of fields included in <code>scans.tsv</code> files</span>
   <a class="anchor-link" href="#scanstsv" title="Copy link">
@@ -155,379 +174,379 @@ All quality control metrics are available in the `*_scans.tsv` file provided per
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <thead>
     <tr>
-    <th style="width: 10%;">Field</th>
-    <th style="width: 60%;">Description</th>
-    <th style="width: 20%; word-wrap: break-word; white-space: normal;">Relevant Scan Types if Specific to Manual QC</th>
+    <th>Field</th>
+    <th style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa-solid fa-eye"></i><span class="tooltiptext">Manual QC</span></span> / <span class="tooltip tooltip-right"><i class="fa-solid fa-desktop"></i><span class="tooltiptext">Automated QC</span></span></th>
+    <th>Description</th>
     </tr>
     </thead>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">filename</td>
-        <td style="word-wrap: break-word; white-space: normal;">Relative paths to files</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>filename</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td>Relative paths to files</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">acq_time</td>
-        <td style="word-wrap: break-word; white-space: normal;">Acquisition time</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>acq_time</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td>Acquisition time</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">loris_qc_status</td>
-        <td style="word-wrap: break-word; white-space: normal;">Pass Fail mapping from UCSD QC JSON file</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>loris_qc_status</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td>Pass Fail mapping from UCSD QC JSON file</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">loris_selected</td>
+        <td>loris_selected</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Whether the file is selected for further processing</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">site</td>
+        <td>site</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Site where the session data was collected</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">age</td>
+        <td>age</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Age (in years) of the candidate at the time of the scan</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">age_adjusted</td>
+        <td>age_adjusted</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Adjusted age (in days) based on the EDD</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">head_size</td>
+        <td>head_size</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Head size at the time of the scan</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">nrev</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of reviewers for manual QC</td>
-        <td style="word-wrap: break-word; white-space: normal;">All</td>
+        <td>nrev</td>
+        <td><i class="fa-solid fa-eye"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of manual QC reviewers</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">revdisp</td>
-        <td style="word-wrap: break-word; white-space: normal;">Whether there was disparity / disagreement between reviewers</td>
-        <td style="word-wrap: break-word; white-space: normal;">All</td>
+        <td>revdisp</td>
+        <td><i class="fa-solid fa-eye"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;">If there was disparity/disagreement between reviewers</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">QC</td>
-        <td style="word-wrap: break-word; white-space: normal;">Overall manual QC score of 1 (pass) or 0 (fail)</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>QC</td>
+        <td><i class="fa-solid fa-eye"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;">Overall manual QC score: 1 (pass), 0 (fail)</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">notes</td>
-        <td style="word-wrap: break-word; white-space: normal;">Optional notes associated with manual quality control review</td>
-        <td style="word-wrap: break-word; white-space: normal;">All</td>
+        <td>notes</td>
+        <td><i class="fa-solid fa-eye"></td>
+        <td style="word-wrap: break-word; white-space: normal;">Optional notes from manual QC review</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">QU_motion</td>
-        <td style="word-wrap: break-word; white-space: normal;">Qualitative manual QC score for motion</td>
-        <td style="word-wrap: break-word; white-space: normal;">T1w, T2w, qMRI</td>
+        <td>QU_motion</td>
+        <td><i class="fa-solid fa-eye"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;">Qualitative manual QC score for motion (<i>sMRI & qMRI</i>)</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">QU_sus</td>
-        <td style="word-wrap: break-word; white-space: normal;">Qualitative manual QC score for susceptibility artifact</td>
-        <td style="word-wrap: break-word; white-space: normal;">dMRI, fMRI, field maps</td>
+        <td>QU_sus</td>
+        <td><i class="fa-solid fa-eye"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;">Qualitative manual QC score for susceptibility artifact (<i>dMRI, fMRI, & field maps</i>)</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">QU_cutoff</td>
-        <td style="word-wrap: break-word; white-space: normal;">Qualitative manual QC score for FOV cutoff artifact</td>
-        <td style="word-wrap: break-word; white-space: normal;">dMRI, fMRI, field maps</td>
+        <td><i class="fa-solid fa-eye"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;">Qualitative manual QC score for FOV cutoff artifact (<i>dMRI, fMRI, & field maps</i>)</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">QU_line</td>
-        <td style="word-wrap: break-word; white-space: normal;">Qualitative manual QC score for line artifact</td>
-        <td style="word-wrap: break-word; white-space: normal;">dMRI, fMRI, field maps</td>
+        <td><i class="fa-solid fa-eye"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;">Qualitative manual QC score for line artifact (<i>dMRI, fMRI, & field maps</i>)</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">line_nframes</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of frames with line artifacts</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of frames with line artifacts</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">line_&ltmax|mean&gt_score</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">&ltMaximum|Average&gt line artifact score across frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">line_&ltmax|mean&gt_count</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">&ltMaximum|Average&gt line artifact count across frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">cutoff</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Sum of dorsal and ventral cutoff scores</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">&ltdorsal|ventral&gt_cutoff</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">&ltDorsal|Ventral&gt cutoff score</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">brain_&ltmean|std&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">&ltAverage|Standard deviation&gt image intensity within brain mask</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">brain_SNR</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Signal-to-noise ratio (mean/stdev) of image intensity within brain mask</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">brain_&ltmin|max|median&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">&ltMinimum|Maximum|Median&gt image intensity within brain mask</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">brain_tSNR_&ltmean|median|std&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">&ltAverage|Median|Standard deviation&gt temporal SNR in brain mask</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">mean_&ltmotion|trans|rot&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Average framewise &ltdisplacement|translation|rotation&gt (mm)</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">max_d&ltx|y|z&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Maximum absolute &ltx|y|z&gt translation (mm)</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">max_r&ltx|y|z&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Maximum absolute &ltx|y|z&gt rotation (mm)</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">subthresh_&lt02|03|04&gt</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of seconds with framewise displacement less than &lt0.2|0.3|0.4&gt mm</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of seconds with framewise displacement less than &lt0.2|0.3|0.4&gt mm</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">aqc_motion</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Automated QC motion score for sMRI</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">nreps</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of repetitions / frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of repetitions / frames</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">brainvol</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Volume of brain mask (mm^3)</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">fwhm_x</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Full width half max spatial smoothness in x-axis (left-right)</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">b0_&ltmedian|std&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">&ltMedian|Standard Deviation&gt b=0 intensity in brain mask</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">DTerr_&ltmean|median|std&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">&ltAverage|Median|Standard deviation&gt across frames of RMS residual error relative to RMS signal in brain voxels</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Completed</td>
-        <td style="word-wrap: break-word; white-space: normal;">Whether the series has the expected number of files</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>Completed</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;">Whether the series has the expected # of files</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">NumberOfFiles</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of DICOM files</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>NumberOfFiles</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of DICOM files</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">HBCD_compliant</td>
+        <td>HBCD_compliant</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Whether the series passes a minimal protocol compliance check</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">AdditionalInfo</td>
+        <td>AdditionalInfo</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Notes related to classification and protocol compliance</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">MD_std</td>
+        <td>MD_std</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Standard deviation of mean diffusivity in brain mask</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">b0_mean</td>
+        <td>b0_mean</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Average b=0 intensity in brain mask</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">FA_std</td>
+        <td>FA_std</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Standard deviation of fractional anisotropy in brain mask</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">MD_&ltmean|median&gt</td>
+        <td>MD_&ltmean|median&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">&ltAverage|Median&gt mean diffusivity in brain mask</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">max_nbad_frames_per_&ltslice|frame&gt</td>
-        <td style="word-wrap: break-word; white-space: normal;">Maximum number of outlier frames per &ltslice|frame&gt</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>max_nbad_frames_per_&ltslice|frame&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;">Maximum # of outlier frames per &ltslice|frame&gt</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">FA_&ltmean|median&gt</td>
+        <td>FA_&ltmean|median&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">&ltAverage|Median&gt fractional anisotropy in brain mask</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">fwhm_z</td>
+        <td>fwhm_z</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Full width half max spatial smoothness in z-axis (inferior-superior)</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">nbad_frame_slices</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of outlier frame-slices for dMRI</td>
-		<td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>nbad_frame_slices</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of outlier frame-slices for dMRI</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">nbad_frames</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of frames with outlier slices for dMRI</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>nbad_frames</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of frames with outlier slices for dMRI</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">nbad_slices</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of slices with outlier frames for dMRI</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>nbad_slices</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of slices with outlier frames for dMRI</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">fwhm_y</td>
+        <td>fwhm_y</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Full width half max spatial smoothness in y-axis (anterior-posterior)</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">qc_status</td>
+        <td>qc_status</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Whether review is pending, complete, or has other status</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">ngood_frames</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of frames without outlier slices for dMRI</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>ngood_frames</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of frames without outlier slices for dMRI</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">censor_thresh</td>
+        <td>censor_thresh</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Threshold used for censoring outlier slices for dMRI</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">nframes_b&lt0|500|1000|2000|3000&gt</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of b=&lt0|500|1000|2000|3000&gt frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>nframes_b&ltN&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of b=&lt0|500|1000|2000|3000&gt frames</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">nbad_frame_slices_b&lt0|500|1000|2000|3000&gt</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of outlier frame-slices for dMRI b=&lt0|500|1000|2000|3000&gt frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>nbad_frame_slices_b&ltN&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of outlier frame-slices for dMRI b=&lt0|500|1000|2000|3000&gt frames</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">nbad_frames_b&lt0|500|1000|2000|3000&gt</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of frames with outlier slices for dMRI b=&lt0|500|1000|2000|3000&gt frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>nbad_frames_b&ltN&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of frames with outlier slices for dMRI b=&lt0|500|1000|2000|3000&gt frames</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">nbad_slices_b&lt0|500|1000|2000|3000&gt</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of slices with outlier frames for dMRI b=&lt0|500|1000|2000|3000&gt frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>nbad_slices_b&ltN&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of slices with outlier frames for dMRI b=&lt0|500|1000|2000|3000&gt frames</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">ngood_frames_b&lt0|500|1000|2000|3000&gt</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of frames without outlier slices for dMRI b=&lt0|500|1000|2000|3000&gt frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>ngood_frames_b&ltN&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of frames without outlier slices for dMRI b=&lt0|500|1000|2000|3000&gt frames</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">FWHMx_b&lt0|500|1000|2000|3000&gt</td>
+        <td>FWHMx_b&ltN&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Full width half max spatial smoothness in x-axis (left-right) for b=&lt0|500|1000|2000|3000&gt frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">FWHMy_b&lt0|500|1000|2000|3000&gt</td>
+        <td>FWHMy_b&ltN&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Full width half max spatial smoothness in y-axis (anterior-posterior) for b=&lt0|500|1000|2000|3000&gt frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">FWHMz_b&lt0|500|1000|2000|3000&gt</td>
+        <td>FWHMz_b&ltN&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Full width half max spatial smoothness in z-axis (inferior-superior) for b=&lt0|500|1000|2000|3000&gt frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">tSNR_b&lt0|500|1000|2000|3000&gt</td>
+        <td>tSNR_b&ltN&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Median temporal SNR in brain mask for b=&lt0|500|1000|2000|3000&gt frames</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">DTerr_rel_b&lt0|500|1000|2000|3000&gt</td>
+        <td>DTerr_rel_b&ltN&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Median across brain voxels of DTI RMS residual error for b=&lt0|500|1000|2000|3000&gt frames relative to within-voxel RMS b=0 signal</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">RSIerr_rel_b&lt0|500|1000|2000|3000&gt</td>
+        <td>RSIerr_rel_b&N&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Median across brain voxels of RSI RMS residual error for b=&lt0|500|1000|2000|3000&gt frames relative to within-voxel RMS b=0 signal</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">DTerr_rel</td>
+        <td>DTerr_rel</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Median across brain voxels of DTI RMS residual error for all frames relative to within-voxel RMS signal</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">RSIerr_rel</td>
+        <td>RSIerr_rel</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Median across brain voxels of RSI RMS residual error for all frames relative to within-voxel RMS signal</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">NumberOfFilesMissing</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of DICOM files apparently missing (based on gaps in InstanceNumbers)</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>NumberOfFilesMissing</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of DICOM files apparently missing (based on gaps in InstanceNumbers)</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Num&ltHead|Neck|Spine&gtCoilElem</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of &lthead|neck|spine&gt coil elements</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>Num&ltHead|Neck|Spine&gtCoilElem</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of &lthead|neck|spine&gt coil elements</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">brain_nvox_max</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of voxels within brain mask at maximum image intensity</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>brain_nvox_max</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># of voxels within brain mask at maximum image intensity</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">brain_fvox_max</td>
+        <td>brain_fvox_max</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">Fraction of voxels within brain mask at maximum image intensity</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">nonbrain_&ltmean|std|snr&gt</td>
+        <td>nonbrain_&ltmean|std|snr&gt</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
         <td style="word-wrap: break-word; white-space: normal;">&ltAverage|Standard deviation|Signal-to-noise ratio (mean/stdev)&gt image intensity outside brain mask</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">NumberOfFilesOrig</td>
-        <td style="word-wrap: break-word; white-space: normal;">umber of DICOM files received (before excluding non-image, corrupt, or extra files)</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>NumberOfFilesOrig</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># DICOM files received (before excluding non-image, corrupt, or extra files)</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">NumberOfFilesExtra</td>
-        <td style="word-wrap: break-word; white-space: normal;">Number of extra DICOM files received (non-image, corrupt, or extra files)</td>
-        <td style="word-wrap: break-word; white-space: normal;"> </td>
+        <td>NumberOfFilesExtra</td>
+        <td><i class="fa-solid fa-desktop"></i></td>
+        <td style="word-wrap: break-word; white-space: normal;"># Extra DICOM files received (non-image, corrupt, or extra files)</td>
     </tr>
 </tbody>
 </table>

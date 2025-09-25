@@ -119,10 +119,10 @@
         <pre style="font-size: 12px;">
         hbcd/
         |__ rawdata/ 
-            |__ sub-<span class="label">&lt;label&gt;</span>/
-                |__ ses-<span class="label">&lt;label&gt;</span>/
+            |__ sub-<span class="label">{ID}</span>/
+                |__ ses-<span class="label">{V0X}</span>/
                     |__ anat/
-                        |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_run-<span class="label">&lt;label&gt;</span>_T1w.json
+                        |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T1w.json
         </pre>
       </td>
     </tr>
