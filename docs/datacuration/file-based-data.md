@@ -148,20 +148,9 @@ hbcd/
 </pre>
 <p></p>
 
-<i>Expand the section below for links to detailed descriptions of each pipeline derivatives folder and its contents.</i>
+### Links to Pipeline Derivatives
 
-<div id="derivatives-links" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-link"></i></span>
-  <span class="text-with-link">
-<span class="text">Links to Detailed Folder Descriptions</span>
-  <a class="anchor-link" href="#derivatives-links" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
   <th>Modalities</th>
@@ -201,17 +190,21 @@ hbcd/
   <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">qMRI PostProc</a></td>
 </tr>
 <tr>
-  <td rowspan="5">Diffusion MRI</td>
+  <td rowspan="6">Diffusion MRI</td>
   <td><code>qsiprep/</code></td>
   <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
 </tr>
 <tr>
+  <td><code>qsirecon/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon" target="_blank">QSIRecon</a></td>
+</tr>
+<tr>
   <td><code>qsirecon-DSIStudio/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon-dsistudio" target="_blank">QSIRecon-DSI Studio</a></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon-DSIStudio" target="_blank">QSIRecon-DSI Studio</a></td>
 </tr>
 <tr>
   <td><code>qsirecon-DIPYDKI/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon-DIPY" target="_blank">QSIRecon-DIPY DKI</a></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon-DIPYDKI" target="_blank">QSIRecon-DIPY DKI</a></td>
 </tr>
 <tr>
   <td><code>qsirecon-TORTOISE_model-MAPMRI/</code></td>
@@ -238,7 +231,5 @@ hbcd/
 </tr>
 </tbody>
 </table>
-</div>
-
 
 <br>
