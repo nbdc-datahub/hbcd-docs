@@ -336,18 +336,18 @@ Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.
 </thead>
 <tbody>
 <tr>
-  <td><span class="tooltip tooltip-right">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">DTI maps, including Fractional Anisotropy (FA) and Mean Diffusivity (MD), model diffusion-weighted signals using a 3D Gaussian distribution of water displacements. FA reflects the degree of anisotropic diffusion and is typically higher in white matter bundles with dense, parallel fibers. MD is the directionally averaged apparent diffusion coefficient and is inversely related to cellular membrane density (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser et al. 1994</a>).</td>
+  <td><span class="tooltip">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Models diffusion with a 3D Gaussian distribution of water displacements. Key outputs include Fractional Anisotropy (FA: anisotropic diffusion, typically higher in white matter bundles with dense, parallel fibers) and Mean Diffusivity (MD: the directionally averaged apparent diffusion coefficient, inversely related to cellular membrane density) (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser 1994</a>).</td>
   <td><a href="#qsirecon-DSIStudio">qsirecon-<br>DSIStudio</a></td>
 </tr>
 <tr>
-  <td><span class="tooltip tooltip-right">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">DKI maps extend the DTI model to capture non-Gaussian diffusion. Mean Kurtosis (MK), the directionally averaged kurtosis, is often higher in dense white matter and can better reflect complex or restricted diffusion compared to standard DTI measures (<a href="https://doi.org/10.1002/mrm.20508">Jensen et al., 2005</a>).</td>
+  <td><span class="tooltip">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Extends DTI to capture non-Gaussian diffusion. Main metric: MK (mean kurtosis), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).</td>
   <td><a href="#qsirecon-DIPYDKI">qsirecon-<br>DIPYDKI</a></td>
 </tr>
 <tr>
-  <td><span class="tooltip tooltip-right">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator MRI</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">MAP-MRI extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion. Unlike DTI, MAP-MRI does not assume a Gaussian diffusion profile, enabling quantification of non-Gaussian diffusion and providing more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan et al. 2013</a>). See table of <a href="#mapmri-metrics">MAP-MRI metrics</a> below.</td>
+  <td><span class="tooltip">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator MRI</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution, enabling quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>). See <a href="#mapmri-metrics">MAP-MRI metrics</a>.</td>
   <td><a href="#qsirecon-TORTOISE">qsirecon-<br>TORTOISE_model-<br>MAPMRI</a></td>
 </tr>
 </tbody>
