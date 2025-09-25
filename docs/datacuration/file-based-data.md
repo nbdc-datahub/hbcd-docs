@@ -56,7 +56,7 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 <tr>
   <td>Scan</td>
   <td><code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Per-scan information (age at scan and raw data QC scores - see <a href="../../../instruments/mri/qc/#location-of-raw-data-qc-results-in-data-release" target="_blank">HBCD MR Quality Control Procedures</a>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Per-scan information (age at scan and raw data QC scores - see <a href="../../instruments/mri/qc/#location-of-raw-data-qc-results-in-data-release" target="_blank">HBCD MR Quality Control Procedures</a>)</td>
 </tr>
 </tbody>
 </table>

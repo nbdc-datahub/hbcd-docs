@@ -10,11 +10,9 @@
 Below are the definitions for the columns in the data dictionary and levels table. Note that some columns also correspond to elements in the BIDS JSON files that accompany all <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data (hover over <i class="bi bi-filetype-json" style="font-size:18px; color: teal;"></i> icon for details in table below).
 
 <p>
-<div class="notification-banner static-banner">
+<div class="table-banner" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    See <a href="../../../datacuration/overview/" target="_blank">here</a> for overview of tabulated vs file-based data.
-  </span>
+<span class="text"> See <a href="../../datacuration/overview/" target="_blank">here</a> for overview of tabulated vs file-based data.</span>
 </div>
 </p>
 
