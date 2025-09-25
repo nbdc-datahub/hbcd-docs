@@ -184,6 +184,7 @@ th, td {
   padding: 0.1em 0.1em;
   padding-left: 1px;
   padding-right: 1px;
+  line-height: 1.0; 
 }
 .compact-table-no-vertical-lines ul {
   margin-top: 1rem;

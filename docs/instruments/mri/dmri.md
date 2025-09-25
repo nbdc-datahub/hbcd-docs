@@ -409,328 +409,90 @@ Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.
 <div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
+<tr><td colspan="5"></td></tr>
     <tr>
+    <th style="text-align: center;"><a href="#qsirecon-DSIStudio">qsirecon-DSIStudio</a></th>
     <th>Model</th>
     <th>Parameter</th>
     <th>Description</th>
     <th>Shells</th>
-    <th>Category</th>
+    </tr>
+</thead>
+<tr><td></td><td>gqi</td><td>gfa</td><td>Generalized fractional anisotropy</td><td>Full</td></tr>
+<tr><td></td><td>gqi</td><td>iso</td><td>Isotropic diffusion</td><td>Full</td></tr>
+<tr><td></td><td>gqi</td><td>qa</td><td>Quantitative anisotropy</td><td>Full</td></tr>
+<tr><td></td><td>tensor</td><td>ad</td><td>Axial diffusivity (first eigenvalue) from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>fa</td><td>Fractional anisotropy from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>ha</td><td>Helix angle from tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>md</td><td>Mean diffusivity from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>rd</td><td>Radial diffusivity from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>rd1</td><td>Lambda 2 (second eigenvalue) from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>rd2</td><td>Lambda 3 (third eigenvalue) from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>txx</td><td>Tensor fit txx</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>txy</td><td>Tensor fit txy</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>txz</td><td>Tensor fit txz</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>tyy</td><td>Tensor fit tyy</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>tyz</td><td>Tensor fit tyz</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>tzz</td><td>Tensor fit tzz</td><td>Inner</td></tr>
+<thead>
+    <tr>
+    <th style="text-align: center;"><a href="#qsirecon-DIPYDKI">qsirecon-DIPYDKI</a></th>
+    <th>Model</th>
+    <th>Parameter</th>
+    <th>Description</th>
+    <th>Shells</th>
     </tr>
 </thead>
 <tbody>
+<tr><td></td><td>dki</td><td>ad</td><td>Axial diffusivity</td><td>Full</td></tr>
+<tr><td></td><td>dki</td><td>ak</td><td>Axial kurtosis</td><td>Full</td></tr>
+<tr><td></td><td>dki</td><td>fa</td><td>Fractional anisotropy</td><td>Full</td></tr>
+<tr><td></td><td>dki</td><td>kfa</td><td>Kurtosis fractional anisotropy</td><td>Full</td></tr>
+<tr><td></td><td>dki</td><td>md</td><td>Mean diffusivity</td><td>Full</td></tr>
+<tr><td></td><td>dki</td><td>mk</td><td>Mean kurtosis</td><td>Full</td></tr>
+<tr><td></td><td>dki</td><td>mkt</td><td>Mean kurtosis tensor</td><td>Full</td></tr>
+<tr><td></td><td>dki</td><td>rd</td><td>Radial diffusivity</td><td>Full</td></tr>
+<tr><td></td><td>dki</td><td>rk</td><td>Radial kurtosis</td><td>Full</td></tr>
+<thead>
+<tr><td colspan="5"></td></tr>
+    <tr>
+    <th style="text-align: center;"><a href="#qsirecon-TORTOISE">qsirecon-TORTOISE_model-MAPMRI</a></th>
+    <th>Model</th>
+    <th>Parameter</th>
+    <th>Description</th>
+    <th>Shells</th>
+    </tr>
+</thead>
 <tr>
-<td colspan="5" rowspan="1"><strong>qsirecon-DIPYDKI</strong></td>
-</tr>
+<tr><td></td><td>mapmri</td><td>ng</td><td>Non-Gaussianity</td><td>Full</td></tr>
+<tr><td></td><td>mapmri</td><td>ngpar</td><td>Non-Gaussianity parallel</td><td>Full</td></tr>
+<tr><td></td><td>mapmri</td><td>ngperp</td><td>Non-Gaussianity perpendicular</td><td>Full</td></tr>
+<tr><td></td><td>mapmri</td><td>pa</td><td>Propagator anisotropy</td><td>Full</td></tr>
+<tr><td></td><td>mapmri</td><td>path</td><td>Thresholded propagator anisotropy</td><td>Full</td></tr>
+<tr><td></td><td>mapmri</td><td>rtap</td><td>Return to axis probability</td><td>Full</td></tr>
+<tr><td></td><td>mapmri</td><td>rtop</td><td>Return to origin probability</td><td>Full</td></tr>
+<tr><td></td><td>mapmri</td><td>rtpp</td><td>Return to plane probability</td><td>Full</td></tr>
+<tr><td></td><td>tensor</td><td>ad</td><td>Axial diffusivity</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>am</td><td>A0 from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>fa</td><td>Fractional anisotropy from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>li</td><td>Lattice index</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>rd</td><td>Radial diffusivity from a tensor fit</td><td>Inner</td></tr>
+<thead>
+<tr><td colspan="5"></td></tr>
+    <tr>
+    <th style="text-align: center;"><a href="#qsirecon-TORTOISE">qsirecon-TORTOISE_model-tensor</a></th>
+    <th>Model</th>
+    <th>Parameter</th>
+    <th>Description</th>
+    <th>Shells</th>
+    </tr>
+</thead>
 <tr>
-<td>dki</td>
-<td>ad</td>
-<td>Axial diffusivity</td>
-<td>Full</td>
-<td>Complex Diffusivity</td>
-</tr>
-<tr>
-<td>dki</td>
-<td>ak</td>
-<td>Axial kurtosis</td>
-<td>Full</td>
-<td>Diffusion Kurtosis</td>
-</tr>
-<tr>
-<td>dki</td>
-<td>fa</td>
-<td>Fractional anisotropy</td>
-<td>Full</td>
-<td>Diffusion Anisotropy</td>
-</tr>
-<tr>
-<td>dki</td>
-<td>kfa</td>
-<td>Kurtosis fractional anisotropy</td>
-<td>Full</td>
-<td>Diffusion Kurtosis</td>
-</tr>
-<tr>
-<td>dki</td>
-<td>md</td>
-<td>Mean diffusivity</td>
-<td>Full</td>
-<td>Complex Diffusivity</td>
-</tr>
-<tr>
-<td>dki</td>
-<td>mk</td>
-<td>Mean kurtosis</td>
-<td>Full</td>
-<td>Diffusion Kurtosis</td>
-</tr>
-<tr>
-<td>dki</td>
-<td>mkt</td>
-<td>Mean kurtosis tensor</td>
-<td>Full</td>
-<td>Diffusion Kurtosis</td>
-</tr>
-<tr>
-<td>dki</td>
-<td>rd</td>
-<td>Radial diffusivity</td>
-<td>Full</td>
-<td>Complex Diffusivity</td>
-</tr>
-<tr>
-<td>dki</td>
-<td>rk</td>
-<td>Radial kurtosis</td>
-<td>Full</td>
-<td>Diffusion Kurtosis</td>
-</tr>
-<tr>
-<td colspan="5" rowspan="1"><strong>qsirecon-DSIStudio</strong></td>
-</tr>
-<tr>
-<td>gqi</td>
-<td>gfa</td>
-<td>Generalized fractional anisotropy</td>
-<td>Full</td>
-<td>Diffusion Anisotropy</td>
-</tr>
-<tr>
-<td>gqi</td>
-<td>iso</td>
-<td>Isotropic diffusion</td>
-<td>Full</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>gqi</td>
-<td>qa</td>
-<td>Quantitative anisotropy</td>
-<td>Full</td>
-<td>Diffusion Anisotropy</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>ad</td>
-<td>Axial diffusivity (first eigenvalue) from a tensor fit</td>
-<td>Inner</td>
-<td>Mean Diffusivity</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>fa</td>
-<td>Fractional anisotropy from a tensor fit</td>
-<td>Inner</td>
-<td>Diffusion Anisotropy</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>ha</td>
-<td>Helix angle from tensor fit</td>
-<td>Inner</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>md</td>
-<td>Mean diffusivity from a tensor fit</td>
-<td>Inner</td>
-<td>Mean Diffusivity</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>rd</td>
-<td>Radial diffusivity from a tensor fit</td>
-<td>Inner</td>
-<td>Mean Diffusivity</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>rd1</td>
-<td>Lambda 2 (second eigenvalue) from a tensor fit</td>
-<td>Inner</td>
-<td>Mean Diffusivity</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>rd2</td>
-<td>Lambda 3 (third eigenvalue) from a tensor fit</td>
-<td>Inner</td>
-<td>Mean Diffusivity</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>txx</td>
-<td>Tensor fit txx</td>
-<td>Inner</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>txy</td>
-<td>Tensor fit txy</td>
-<td>Inner</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>txz</td>
-<td>Tensor fit txz</td>
-<td>Inner</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>tyy</td>
-<td>Tensor fit tyy</td>
-<td>Inner</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>tyz</td>
-<td>Tensor fit tyz</td>
-<td>Inner</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>tzz</td>
-<td>Tensor fit tzz</td>
-<td>Inner</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td colspan="5" rowspan="1"><strong>qsirecon-TORTOISE_model-MAPMRI</strong></td>
-</tr>
-<tr>
-<td>mapmri</td>
-<td>ng</td>
-<td>Non-Gaussianity</td>
-<td>Full</td>
-<td>Diffusion Kurtosis</td>
-</tr>
-<tr>
-<td>mapmri</td>
-<td>ngpar</td>
-<td>Non-Gaussianity parallel</td>
-<td>Full</td>
-<td>Diffusion Kurtosis</td>
-</tr>
-<tr>
-<td>mapmri</td>
-<td>ngperp</td>
-<td>Non-Gaussianity perpendicular</td>
-<td>Full</td>
-<td>Diffusion Kurtosis</td>
-</tr>
-<tr>
-<td>mapmri</td>
-<td>pa</td>
-<td>Propagator anisotropy</td>
-<td>Full</td>
-<td>Diffusion Kurtosis</td>
-</tr>
-<tr>
-<td>mapmri</td>
-<td>path</td>
-<td>Thresholded propagator anisotropy</td>
-<td>Full</td>
-<td>Diffusion Kurtosis</td>
-</tr>
-<tr>
-<td>mapmri</td>
-<td>rtap</td>
-<td>Return to axis probability</td>
-<td>Full</td>
-<td>Mean Diffusivity</td>
-</tr>
-<tr>
-<td>mapmri</td>
-<td>rtop</td>
-<td>Return to origin probability</td>
-<td>Full</td>
-<td>Mean Diffusivity</td>
-</tr>
-<tr>
-<td>mapmri</td>
-<td>rtpp</td>
-<td>Return to plane probability</td>
-<td>Full</td>
-<td>Mean Diffusivity</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>ad</td>
-<td>Axial diffusivity</td>
-<td>Inner</td>
-<td>Mean Diffusivity</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>am</td>
-<td>A0 from a tensor fit</td>
-<td>Inner</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>fa</td>
-<td>Fractional anisotropy from a tensor fit</td>
-<td>Inner</td>
-<td>Diffusion Anisotropy</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>li</td>
-<td>Lattice index</td>
-<td>Inner</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>rd</td>
-<td>Radial diffusivity from a tensor fit</td>
-<td>Inner</td>
-<td>Mean Diffusivity</td>
-</tr>
-<tr>
-<td colspan="5" rowspan="1"><strong>qsirecon-TORTOISE_model-tensor</strong></td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>ad</td>
-<td>Axial diffusivity</td>
-<td>Full</td>
-<td>Mean Diffusivity</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>am</td>
-<td>A0 from a tensor fit</td>
-<td>Full</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>fa</td>
-<td>Fractional anisotropy from a tensor fit</td>
-<td>Full</td>
-<td>Diffusion Anisotropy</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>li</td>
-<td>Lattice index</td>
-<td>Full</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>tensor</td>
-<td>rd</td>
-<td>Radial diffusivity from a tensor fit</td>
-<td>Full</td>
-<td>Mean Diffusivity</td>
-</tr>
+<tr><td></td><td>tensor</td><td>ad</td><td>Axial diffusivity</td><td>Full</td></tr>
+<tr><td></td><td>tensor</td><td>am</td><td>A0 from a tensor fit</td><td>Full</td></tr>
+<tr><td></td><td>tensor</td><td>fa</td><td>Fractional anisotropy from a tensor fit</td><td>Full</td></tr>
+<tr><td></td><td>tensor</td><td>li</td><td>Lattice index</td><td>Full</td></tr>
+<tr><td></td><td>tensor</td><td>rd</td><td>Radial diffusivity from a tensor fit</td><td>Full</td></tr>
 </tbody>
 </table>
 </div>
