@@ -1,77 +1,107 @@
 # HBCD MR Quality Control Procedures
 
 ## Raw MR Data QC
-Quality control (QC) procedures involve automated and manual methods to evaluate unprocessed or minimally processed MRI data for issues such as incorrect acquisition parameters, imaging artifacts, or corrupted files. The purpose of raw data QC is to identify and exclude data with significant artifacts, preventing their inclusion in the released raw BIDS data as well as subsequent image processing ([see details](../processing/index.md#file-selection-for-processing)). 
+
+Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. The purpose is to detect acquisition errors, artifacts, or corrupted files early so that problematic scans are excluded from the released raw BIDS dataset and downstream processing ([see details](../processing/index.md#file-selection-for-processing)). 
 
 ### Automated QC
-After acquisition, data are sent to the HBCD Data Coordinating Center (HDCC), where automated QC is performed by first extracting information from DICOM headers to identify common issues and protocol deviations, such as missing files or incorrect patient orientation. Protocol compliance criteria include whether key imaging parameters, such as voxel size or repetition time, match the expected values for a given scanner. Out-of-compliance series are reviewed and sites are contacted if corrective action is required. In addition to protocol adherence, each imaging series is also automatically checked for completeness - expand the infobox below for details:
-<p>
-<div id="complete-session" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text">Completeness Checks</span>
+
+Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload. It consists of three main steps:
+
+#### Protocol Compliance
+
+ - Extract imaging parameters from DICOM headers
+ - Confirm key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner
+ - Flag out-of-compliance series for review; sites are contacted if corrective action is needed
+
+#### Completeness Checks      
+Completeness checks verify that all expected series are present in each imaging session. For example, dMRI and fMRI require paired EPI field maps for distortion correction. Missing data usually indicate an aborted scan or incomplete data transfer (often resolved by re-sending files). 
+
+<div id="valid-series" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+<span class="text">Series Included in a Valid Session</span>
+  <a class="anchor-link" href="#valid-series" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
   <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
-<p>Completeness checks are run to confirm that the number of files matches what was expected for each series on each scanner. For instance, for dMRI and fMRI series, the presence or absence of corresponding echo-planar imaging (EPI) sequences (often referred to as a “field map” or “B0 map”) used for distortion correction is checked. Missing files are typically indicative of either an aborted scan or incomplete data transfer, the latter of which can usually be resolved through re-initiating the data transfer. A complete imaging session consists of the following valid series:</p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-    <tbody>
-    <tr>
-        <td>Structural T1 Block:</td>
-        <td>T1</td>
-    </tr>
-    <tr>
-        <td>Structural T2 Block:</td>
-        <td>T2</td>
-    </tr>
-    <tr>
-        <td>Diffusion (dMRI) Block:</td>
-        <td>dMRI AP <br /> dMRI PA</td>
-    </tr>
-    <tr>
-        <td>Resting state (rsfMRI) Block:</td>
-        <td>fMRI field map AP<br /> fMRI field map PA<br /> rsfMRI (run 1)<br /> rsfMRI (run 2)</td>
-    </tr>
-    <tr>
-        <td>MRS Block</td>
-        <td>SVS localizer<br /> MRS</td>
-    </tr>
-    <tr>
-        <td>Quantitative (qMRI) Block</td>
-        <td>B1 Map<br /> 3DMagic/QALAS</td>
-    </tr>
-</tbody>
-</table>
-</div>
-</p>
-
-##### Automated QC metrics for various modalities are as follows:
-
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
+<div class="table-collapsible-content">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-    <th style="width: 20%; text-align: center;">Modality</th>
-    <th style="width: 80%; text-align: center;">QC Procedures</th>
+  <th>Modality</th>
+  <th>Required Series</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Structural (T1w, T2w, qMRI)</td>
-<td style="word-wrap: break-word; white-space: normal;">- Deep learning model estimates motion artifacts<br />- Signal-to-noise ratio (SNR) computed</td>
+    <td>Structural MRI (sMRI)</td>
+    <td>T1w & T2w</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">dMRI</td>
-<td style="word-wrap: break-word; white-space: normal;">- Framewise displacement (FD) for head motion<br />- Head motion estimated via <span class="tooltip">registration to tensor-synthesized images<span class="tooltiptext">accounts for contrast differences across orientations</span></span> (<a href="https://doi.org/10.1002/hbm.20619">Hagler et al. 2009</a>)<br />- Identification of <span class="tooltip">dark slices<span class="tooltiptext">artifacts caused by abrupt head movements</span></span> via RMS difference between raw and tensor-fitted data<br />- Total slices and frames with motion artifacts calculated<br />- Metrics for line artifacts and field-of-view (FOV) cutoff</td>
+    <td>Functional MRI (fMRI)</td>
+    <td>Resting state (rs) runs 1 & 2, each accompanied by fieldmaps acquired in AP and PA phase encoding directions</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">fMRI</td>
-<td style="word-wrap: break-word; white-space: normal;">- FD for head motion (average FD and seconds with FD &lt; 0.2 mm, 0.3 mm, 0.4 mm) (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al., 2012</a>)<br />- Metrics for line artifacts and FOV cutoff<br />- <span class="tooltip">FWHM<span class="tooltiptext">Full width half max () spatial smoothness</span></span> and <span class="tooltip">tSNR<span class="tooltiptext">temporal SNR</span></span> computed after motion correction (<a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">Triantafyllou et al. 2005</a>)</td>
+    <td>Diffusion MRI (dMRI)</td>
+    <td>Diffusion scans acquired in AP and PA phase encoding directions</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Field Maps</td>
-<td style="word-wrap: break-word; white-space: normal;">- Metrics for line artifacts and FOV cutoff</td>
+    <td>Quantitative MRI (qMRI)</td>
+    <td>3DMagic/QALAS and B1 Map</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">All Modalities</td>
-<td style="word-wrap: break-word; white-space: normal;">- SNR computed where applicable</td>
+    <td>MR Spectroscopy (MRS)</td>
+    <td> MRS scan and SVS localizer</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+
+#### Automated QC Metrics
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+    <th>Modality</th>
+    <th>QC Procedures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>s/qMRI</td>
+    <td>• Estimate motion artifacts using a deep learning model<br>
+     • Compute signal-to-noise ratio (SNR)</td>
+</tr>
+<tr>
+<td>fMRI</td>
+<td style="word-wrap: break-word; white-space: normal;">
+    • Estimate head motion with average <span class="tooltip">FD<span class="tooltiptext">framewise displacement</span></span> and data (sec) at FD thresholds of 0.2/0.3/0.4 mm (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al., 2012</a>)<br>
+    • Detect line artifacts and FOV cutoff<br>
+    • Compute spatial smoothness (FWHM) and temporal SNR (tSNR) after motion correction (<a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">Triantafyllou et al., 2005</a>)
+</td>
+</tr>
+<tr>
+    <td>dMRI</td>
+    <td style="word-wrap: break-word; white-space: normal;">
+    • Estimate head motion (framewise displacement, FD)<br>
+    • Refine motion estimates via registration to tensor-synthesized images (<a href="https://doi.org/10.1002/hbm.20619">Hagler et al., 2009</a>)<br>
+    • Identify dark slices (caused by abrupt head movements) using RMS difference between raw and tensor-fitted data<br>
+    • Calculate total slices and frames with motion artifacts<br>
+    • Detect line artifacts and field-of-view (FOV) cutoff
+  </ul>
+</td>
+</tr>
+<tr>
+<td>Field Maps</td>
+<td>Detect line artifacts and field-of-view (FOV) cutoff</td>
+</tr>
+<tr>
+<td>All Modalities</td>
+<td>Compute SNR where applicable</td>
 </tr>
 </tbody>
 </table>
