@@ -82,229 +82,12 @@ Acquisition parameters vary by scanner vendor, so inclusion criteria are typical
 
 ## Raw MR Data QC
 
-Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. The purpose is to detect acquisition errors, artifacts, or corrupted files early so that problematic scans are excluded from the released raw BIDS dataset and downstream processing ([see details](../processing/index.md#file-selection-for-processing)). 
+Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. Raw data QC is performed to detect acquisition errors, image artifacts, or corrupted files early so that problematic scans are excluded from the released raw BIDS dataset and [downstream processing](../processing/index.md#file-selection-for-processing). **Raw data QC metrics are included in the raw BIDS `sub-<ID>_ses-<V0X>_scans.tsv` files - [see details](../../datacuration/file-based-data.md#participant-session-scan-level-data).**
 
-#### Automated QC
-
-Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload. It consists of three main steps:
-
-<div id="protocol-compliance" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-circle-check"></i></span>
-  <span class="text-with-link">
-<span class="text">Protocol Compliance</span>
-  <a class="anchor-link" href="#protocol-compliance" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<ul>
-    <li>Extract imaging parameters from DICOM headers</li>
-    <li>Confirm key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner</li>
-    <li>Flag out-of-compliance series for review; sites are contacted if corrective action is needed</li>
-</ul>
-</div>
-
-<div id="completeness" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-circle-check"></i></span>
-  <span class="text-with-link">
-  <span class="text">Completeness Checks</span>
-  <a class="anchor-link" href="#completeness" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>Completeness checks verify that all expected series are present in each imaging session. For example, dMRI and fMRI require paired EPI field maps for distortion correction. Missing data usually indicate an aborted scan or incomplete data transfer (often resolved by re-sending files). Series included in a valid session include the following:</p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Modality</th>
-  <th>Required Series</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>Structural MRI (sMRI)</td>
-    <td>T1w & T2w</td>
-</tr>
-<tr>
-    <td>Functional MRI (fMRI)</td>
-    <td>Resting state (rs) runs 1 & 2, each accompanied by fieldmaps acquired in AP and PA phase encoding directions</td>
-</tr>
-<tr>
-    <td>Diffusion MRI (dMRI)</td>
-    <td>Diffusion scans acquired in AP and PA phase encoding directions</td>
-</tr>
-<tr>
-    <td>Quantitative MRI (qMRI)</td>
-    <td>3DMagic/QALAS and B1 Map</td>
-</tr>
-<tr>
-    <td>MR Spectroscopy (MRS)</td>
-    <td> MRS scan and SVS localizer</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<div id="autoQC-metrics" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-desktop"></i></span>
-  <span class="text-with-link">
-<span class="text">Automated QC Metrics</span>
-  <a class="anchor-link" href="#autoQC-metrics" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-    <th>Modality</th>
-    <th>QC Procedures</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>sMRI & qMRI</td>
-    <td>• Estimate motion artifacts using a deep learning model<br>
-     • Compute signal-to-noise ratio (SNR)</td>
-</tr>
-<tr>
-<td>fMRI</td>
-<td style="word-wrap: break-word; white-space: normal;">
-    • Estimate head motion with average <span class="tooltip">FD<span class="tooltiptext">framewise displacement</span></span> and data (sec) at FD thresholds of 0.2/0.3/0.4 mm (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al., 2012</a>)<br>
-    • Detect line artifacts and FOV cutoff<br>
-    • Compute spatial smoothness (FWHM) and temporal SNR (tSNR) after motion correction (<a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">Triantafyllou et al., 2005</a>)
-</td>
-</tr>
-<tr>
-    <td>dMRI</td>
-    <td style="word-wrap: break-word; white-space: normal;">
-    • Estimate head motion (framewise displacement, FD)<br>
-    • Refine motion estimates via registration to tensor-synthesized images (<a href="https://doi.org/10.1002/hbm.20619">Hagler et al., 2009</a>)<br>
-    • Identify dark slices (caused by abrupt head movements) using RMS difference between raw and tensor-fitted data<br>
-    • Calculate total slices and frames with motion artifacts<br>
-    • Detect line artifacts and field-of-view (FOV) cutoff
-  </ul>
-</td>
-</tr>
-<tr>
-<td>Field Maps</td>
-<td>Detect line artifacts and field-of-view (FOV) cutoff</td>
-</tr>
-<tr>
-<td>All</td>
-<td>Compute SNR where applicable</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<p></p>
-
-#### Manual Review
-
-Automated metrics flag series for manual review using multivariate prediction and Bayesian classifiers. Trained technicians then score artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected** (QC = 0) and excluded from processing. Data are selected from the remaining series based on manual ratings, notes, and automated scores.
-
-<div id="autoQC-metrics" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-eye"></i></span>
-  <span class="text-with-link">
-<span class="text">Manual QC Metrics</span>
-  <a class="anchor-link" href="#manualQC-metrics" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-    <th>Modality</th>
-    <th>QC Procedures & Scoring</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>sMRI</td>
-    <td>• Motion artifacts (ripples, blurring), scored 0–3<br>
-        • Document additional issues (e.g., intensity inhomogeneity, <span class="tooltip">ghosting<span class="tooltiptext">faint displaced copy of anatomy due to slices outside FOV</span></span>)</td>
-</tr>
-<tr>
-    <td>qMRI</td>
-    <td>• Same artifact scoring (0–3)<br>
-        • Inspect derived data (parametric maps, ROI analysis, quantitative checks for 3D-QALAS)
-    </td>
-</tr>
-<tr>
-    <td>dMRI & fMRI, & field maps</td>
-    <td style="word-wrap: break-word; white-space: normal;">
-    • Score susceptibility artifacts, FOV cutoff, and horizontal line artifacts (present in the sagittal view)<br>
-    • Note susceptibility artifacts, including <span class="tooltip">signal dropout<span class="tooltiptext">common in posterior occipital cortex of infant fMRI data acquired in PA phase encoding direction</span></span>, signal bunching, and warping</td>
-</tr> 
-<tr>
-    <td>MRS</td>
-    <td>Visual inspection and overall QC only of SVS localizer (used to define spectroscopy ROI)</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-
-
-## BrainSwipes
-
-Manual visual inspection remains the gold standard for detecting artifacts in structural, functional (e.g., XCP-D), and diffusion (e.g., QSIPrep) derivatives. To support this, derivative visual reports are integrated into [BrainSwipes](https://brainswipes.us/about), a gamified, crowdsourced QC platform built on the open-source [Swipes For Science](https://swipesforscience.org/) framework. BrainSwipes provides an intuitive interface for large-scale studies, guiding users through a short [tutorial](https://brainswipes.us/tutorial-select) before they evaluate images and classify them as pass or fail.
-
-<p>
-<div id="swipes-procedures" class="table-banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fa fa-brain"></i></span>
-<span class="text-with-link">
-  <span class="text">BrainSwipes QC Procedures</span>
-	<a class="anchor-link" href="#swipes-procedures" title="Copy link">
-  	<i class="fa-solid fa-link"></i>
-  	</a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<br>
-<div class="img-with-text" style="width: 60%; margin: 0 auto; text-align: center;">
-    <img src="../images/brainswipes.png" alt="Example quality assessment of surface delineation in BrainSwipes" style="width: 100%; height: auto;">
-    <p><i>Example quality assessment of surface delineation on BrainSwipes platform (displaying brain in axial plane at level of basal ganglia/putamen).</i></p>
-</div>
-<p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Surface Delineation:</b></p>
-For structural QA, swipers are presented with image slices in coronal, axial, and sagittal planes to assess the accuracy of T1w and T2w surface delineations in differentiating gray and white matter. Images are derived from XCP-D visual reports.
-</p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Atlas Registration:</b></p>
-In addition to surface delineation, structural QA also includes atlas registration quality, evaluated by overlaying delineations of the subject’s image onto the atlas, and vice versa. Swipes display nine T1w slices for visual inspection, with three slices per anatomical plane. Quality is assessed based on the alignment of the outer boundaries of the overlaid contours with those of the underlying image, ensuring minimal gaps or misalignments. Images are derived from XCP-D visual reports.
-<p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Functional Registration:</b></p>
-Functional registration is evaluated by overlaying outlines of functional images onto structural images and vice versa. Swipes display nine slices of the same functional image for visual inspection, with three slices per anatomical plane. Quality is assessed similarly to structural atlas registration, focusing on the alignment of the overlaid contours. Additional evaluation includes checking for artifacts such as signal dropout. Images are derived from XCP-D visual reports.
-</p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Diffusion Direction Encoding (<i>to be included in future release</i>):</b></p>
-Swipes display GIFs of full-resolution T2w images as a grayscale background, with the "Direction Encoded Color" (DEC) map overlaid. These GIFs sweep through a portion of the brain across the three anatomical planes. High-quality processed DWI images exhibit bands of color that closely follow the folds and contours of the grayscale background. These visuals are derived from the QSIPrep report.
-<p>
-<strong>Each visual report for a given modality is independently reviewed and rated as a pass or fail, which in the outputs are scored as values of 1 and 0 respectively. BrainSwipes generates a summary of these results that includes the average score as well as number of reviewers for each visual report of each modality.</strong>
-</div>
-</p>
-
-
-## Location of QC Results in Data Release
-
-#### Raw Data QC Metrics
-
-Raw data QC metrics are included in the <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code> files provided per [participant session](../../datacuration/file-based-data.md#participant-session-scan-level-data).
 <div id="scanstsv" class="table-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fa fa-info-circle"></i></span>
   <span class="text-with-link">
-  <span class="text">QC fields included in <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code> files</span>
+  <span class="text">Raw MR QC metrics included in the release (<code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code>)</span>
   <a class="anchor-link" href="#scanstsv" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -619,10 +402,218 @@ Raw data QC metrics are included in the <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_sca
 
 <p></p>
 
-#### BrainSwipes QC Metrics
+#### Automated QC
 
-BrainSwipes QC results are provided as tabulated data
-The [tabulated](../../datacuration/phenotypes.md) BrainSwipes QC data includes two files: `img_brainswipes_xcpd-T2w` and `img_brainswipes_xcpd-bold`. QC scores range from 0 (Fail) to 1 (Pass), averaged across reviewers. For example, a score of 0.6 indicates that 60% of reviewers rated the image as a pass. The data includes overall average QC scores and average number of reviewers for each session-level T2w and BOLD run (summarizing across all visual reports for a given run) as well as the average QC and number of reviewers for each visual report. A Python helper function is provided below to load a BrainSwipes TSV file into a Pandas DataFrame and filter runs with average QC scores above a user-specified threshold:
+Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload. It consists of three main steps:
+
+<div id="protocol-compliance" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+<span class="text">Protocol Compliance</span>
+  <a class="anchor-link" href="#protocol-compliance" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<ul>
+    <li>Extract imaging parameters from DICOM headers</li>
+    <li>Confirm key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner</li>
+    <li>Flag out-of-compliance series for review; sites are contacted if corrective action is needed</li>
+</ul>
+</div>
+
+<div id="completeness" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+  <span class="text">Completeness Checks</span>
+  <a class="anchor-link" href="#completeness" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Completeness checks verify that all expected series are present in each imaging session. For example, dMRI and fMRI require paired EPI field maps for distortion correction. Missing data usually indicate an aborted scan or incomplete data transfer (often resolved by re-sending files). Series included in a valid session include the following:</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th>Modality</th>
+  <th>Required Series</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Structural MRI (sMRI)</td>
+    <td>T1w & T2w</td>
+</tr>
+<tr>
+    <td>Functional MRI (fMRI)</td>
+    <td>Resting state (rs) runs 1 & 2, each accompanied by fieldmaps acquired in AP and PA phase encoding directions</td>
+</tr>
+<tr>
+    <td>Diffusion MRI (dMRI)</td>
+    <td>Diffusion scans acquired in AP and PA phase encoding directions</td>
+</tr>
+<tr>
+    <td>Quantitative MRI (qMRI)</td>
+    <td>3DMagic/QALAS and B1 Map</td>
+</tr>
+<tr>
+    <td>MR Spectroscopy (MRS)</td>
+    <td> MRS scan and SVS localizer</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="autoQC-metrics" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-desktop"></i></span>
+  <span class="text-with-link">
+<span class="text">Automated QC Metrics</span>
+  <a class="anchor-link" href="#autoQC-metrics" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+    <th>Modality</th>
+    <th>QC Procedures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>sMRI & qMRI</td>
+    <td>• Estimate motion artifacts using a deep learning model<br>
+     • Compute signal-to-noise ratio (SNR)</td>
+</tr>
+<tr>
+<td>fMRI</td>
+<td style="word-wrap: break-word; white-space: normal;">
+    • Estimate head motion with average <span class="tooltip">FD<span class="tooltiptext">framewise displacement</span></span> and data (sec) at FD thresholds of 0.2/0.3/0.4 mm (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al., 2012</a>)<br>
+    • Detect line artifacts and FOV cutoff<br>
+    • Compute spatial smoothness (FWHM) and temporal SNR (tSNR) after motion correction (<a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">Triantafyllou et al., 2005</a>)
+</td>
+</tr>
+<tr>
+    <td>dMRI</td>
+    <td style="word-wrap: break-word; white-space: normal;">
+    • Estimate head motion (framewise displacement, FD)<br>
+    • Refine motion estimates via registration to tensor-synthesized images (<a href="https://doi.org/10.1002/hbm.20619">Hagler et al., 2009</a>)<br>
+    • Identify dark slices (caused by abrupt head movements) using RMS difference between raw and tensor-fitted data<br>
+    • Calculate total slices and frames with motion artifacts<br>
+    • Detect line artifacts and field-of-view (FOV) cutoff
+  </ul>
+</td>
+</tr>
+<tr>
+<td>Field Maps</td>
+<td>Detect line artifacts and field-of-view (FOV) cutoff</td>
+</tr>
+<tr>
+<td>All</td>
+<td>Compute SNR where applicable</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p></p>
+
+#### Manual Review
+
+Automated metrics flag series for manual review using multivariate prediction and Bayesian classifiers. Trained technicians then score artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected** (QC = 0) and excluded from processing. Data are selected from the remaining series based on manual ratings, notes, and automated scores.
+
+<div id="autoQC-metrics" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-eye"></i></span>
+  <span class="text-with-link">
+<span class="text">Manual QC Metrics</span>
+  <a class="anchor-link" href="#manualQC-metrics" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+    <th>Modality</th>
+    <th>QC Procedures & Scoring</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>sMRI</td>
+    <td>• Motion artifacts (ripples, blurring), scored 0–3<br>
+        • Document additional issues (e.g., intensity inhomogeneity, <span class="tooltip">ghosting<span class="tooltiptext">faint displaced copy of anatomy due to slices outside FOV</span></span>)</td>
+</tr>
+<tr>
+    <td>qMRI</td>
+    <td>• Same artifact scoring (0–3)<br>
+        • Inspect derived data (parametric maps, ROI analysis, quantitative checks for 3D-QALAS)
+    </td>
+</tr>
+<tr>
+    <td>dMRI & fMRI, & field maps</td>
+    <td style="word-wrap: break-word; white-space: normal;">
+    • Score susceptibility artifacts, FOV cutoff, and horizontal line artifacts (present in the sagittal view)<br>
+    • Note susceptibility artifacts, including <span class="tooltip">signal dropout<span class="tooltiptext">common in posterior occipital cortex of infant fMRI data acquired in PA phase encoding direction</span></span>, signal bunching, and warping</td>
+</tr> 
+<tr>
+    <td>MRS</td>
+    <td>Visual inspection and overall QC only of SVS localizer (used to define spectroscopy ROI)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+## BrainSwipes
+
+Manual visual inspection remains the gold standard for detecting artifacts in structural, functional (e.g., XCP-D), and diffusion (e.g., QSIPrep) derivatives. To support this, derivative visual reports are integrated into [BrainSwipes](https://brainswipes.us/about), a gamified, crowdsourced QC platform built on the open-source [Swipes For Science](https://swipesforscience.org/) framework. BrainSwipes provides an intuitive interface for large-scale studies, guiding users through a short [tutorial](https://brainswipes.us/tutorial-select) before they evaluate images and classify them as pass or fail.
+
+<p>
+<div id="swipes-procedures" class="table-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa fa-brain"></i></span>
+<span class="text-with-link">
+  <span class="text">BrainSwipes QC Procedures</span>
+	<a class="anchor-link" href="#swipes-procedures" title="Copy link">
+  	<i class="fa-solid fa-link"></i>
+  	</a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<br>
+<div class="img-with-text" style="width: 60%; margin: 0 auto; text-align: center;">
+    <img src="../images/brainswipes.png" alt="Example quality assessment of surface delineation in BrainSwipes" style="width: 100%; height: auto;">
+    <p><i>Example quality assessment of surface delineation on BrainSwipes platform (displaying brain in axial plane at level of basal ganglia/putamen).</i></p>
+</div>
+<p>
+<p style="font-size: 1em; margin: 0 0 5px;"><b>Surface Delineation:</b></p>
+For structural QA, swipers are presented with image slices in coronal, axial, and sagittal planes to assess the accuracy of T1w and T2w surface delineations in differentiating gray and white matter. Images are derived from XCP-D visual reports.
+</p>
+<p style="font-size: 1em; margin: 0 0 5px;"><b>Atlas Registration:</b></p>
+In addition to surface delineation, structural QA also includes atlas registration quality, evaluated by overlaying delineations of the subject’s image onto the atlas, and vice versa. Swipes display nine T1w slices for visual inspection, with three slices per anatomical plane. Quality is assessed based on the alignment of the outer boundaries of the overlaid contours with those of the underlying image, ensuring minimal gaps or misalignments. Images are derived from XCP-D visual reports.
+<p>
+<p style="font-size: 1em; margin: 0 0 5px;"><b>Functional Registration:</b></p>
+Functional registration is evaluated by overlaying outlines of functional images onto structural images and vice versa. Swipes display nine slices of the same functional image for visual inspection, with three slices per anatomical plane. Quality is assessed similarly to structural atlas registration, focusing on the alignment of the overlaid contours. Additional evaluation includes checking for artifacts such as signal dropout. Images are derived from XCP-D visual reports.
+</p>
+<p style="font-size: 1em; margin: 0 0 5px;"><b>Diffusion Direction Encoding (<i>to be included in future release</i>):</b></p>
+Swipes display GIFs of full-resolution T2w images as a grayscale background, with the "Direction Encoded Color" (DEC) map overlaid. These GIFs sweep through a portion of the brain across the three anatomical planes. High-quality processed DWI images exhibit bands of color that closely follow the folds and contours of the grayscale background. These visuals are derived from the QSIPrep report.
+<p>
+<strong>Each visual report for a given modality is independently reviewed and rated as a pass or fail, which in the outputs are scored as values of 1 and 0 respectively. BrainSwipes generates a summary of these results that includes the average score as well as number of reviewers for each visual report of each modality.</strong>
+</div>
+</p>
+
+**BrainSwipes QC results are provided as [tabulated](../../datacuration/phenotypes.md) data**: `img_brainswipes_xcpd-T2w` and `img_brainswipes_xcpd-bold`. QC scores range from 0 (Fail) to 1 (Pass), averaged across reviewers. For example, a score of 0.6 indicates that 60% of reviewers rated the image as a pass. The data includes overall average QC scores and average number of reviewers for each session-level T2w and BOLD run (summarizing across all visual reports for a given run) as well as the average QC and number of reviewers for each visual report. A Python helper function is provided below to load a BrainSwipes TSV file into a Pandas DataFrame and filter runs with average QC scores above a user-specified threshold:
 
 <div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-brands fa-python"></i></span>
