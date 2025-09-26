@@ -36,11 +36,6 @@ MRS release data include **file-based** (raw and processed data files in modalit
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<div style="display: flex; align-items: center;">
-  <img src="../../../images/BIDS-logo.png" style="width: 40px; margin-right: 10px;" alt="BIDS-logo">
-  <p style="margin: 0;">
-  <strong><i>BIDS Conversion</i></strong>: Vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.</p>
-</div>
 <p>MRS files include metabolite (<code>*_svs.nii.gz</code>) and water reference (<code>*_ref.nii.gz</code>) data acquired via short-echo-time (TE = 35 ms; <code>acq-shortTE</code>) and HERCULES (spectral-edited, TE = 80 ms; <code>acq-hercules</code>). The JSON sidecar files include the dimensions of the NIfTI-MRS data array, holding different coil elements in dimension 5 and different transients in dimension 6.</p>
 <pre class="folder-tree">
 hbcd/

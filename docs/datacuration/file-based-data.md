@@ -29,10 +29,49 @@ hbcd/
 
 ### BIDS Conversion Procedures
 
-#### MRI
+BIDS conversion software and procedures by modality:
 
-For MRI modalities, DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>. Key fields for Philips and GE data are hard-coded to ensure consistency across vendors, as NIfTI/JSON metadata can be omitted or misconfigured during conversion. Hardcoded fields for different modalities/scan types are outlined in the following table and also documented in the JSON sidecars under `HardCodedValues`.
+<table class="compact-table-no-vertical-lines" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
+  <thead>
+    <tr>
+      <th>Modality</th>
+      <th>BIDS Conversion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MRI</td>
+      <td style="word-wrap: break-word; white-space: normal;">DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>, with post-conversion modifications required for certain scan types to maintain consistency across vendors - see <a href="#bids-conversion-mri">MRI Hardcoded Fields & Post-Conversion Modifications</a> below for details.</td>
+    </tr>
+    <tr>
+      <td>MRS</td>
+      <td style="word-wrap: break-word; white-space: normal;">Vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.</td>
+    </tr>
+    <tr>
+      <td>EEG</td>
+      <td style="word-wrap: break-word; white-space: normal;">BIDS conversion performed with <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application developed for HBCD EEG data management and BIDS formatting installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which, among other things, converts this data to the BIDS standard data structure.</td>
+    </tr>
+      <tr>
+      <td>Wearable Sensors</td>
+      <td style="word-wrap: break-word; white-space: normal;"></td>
+    </tr>
+  </tbody>
+</table>
 
+
+<div id="bids-conversion-mri" class="table-banner" onclick="toggleCollapse(this)">
+  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
+  <span class="text-with-link">
+  <span class="text">MRI Hardcoded Fields & Post-Conversion Modifications</span>
+  <a class="anchor-link" href="#bids-conversion-mri" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p><strong>Hardcoded Fields</strong><br>
+Key fields for Philips (<i>and GE for T1w scans</i>) are hard-coded to ensure consistency across vendors, as NIfTI/JSON metadata can be omitted or misconfigured during conversion. Hardcoded fields for different modalities/scan types are outlined in the following table and also documented in the JSON sidecars under <code>HardCodedValues</code>. <strong>All of the following were modified for Philips only with the exception of T1w scans, modified for both Philips and GE.</strong></p>
 <table class="compact-table-no-vertical-lines" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
   <thead>
     <tr>
@@ -40,33 +79,19 @@ For MRI modalities, DICOM images are converted using an <a href="https://github.
       <th><code>PhaseEncodingDirection</code></th>
       <th><code>TotalReadoutTime</code></th>
       <th><code>SliceTiming</code></th>
-      <th><code>SmallDelta</code></th>
-      <th><code>LargeDelta</code></th>
+      <th><code>&lt;Small|Large&gt;Delta</code></th>
       <th><code>RepetitionTime</code></th>
     </tr>
   </thead>
   <tbody>
-    <tr><td style="text-align:left;">DWI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td></tr>
-    <tr><td style="text-align:left;">EPI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td style="text-align:left;">BOLD</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td><td></td></tr>
-    <tr><td style="text-align:left;">T1w**</td><td></td><td></td><td></td><td></td><td></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td></tr>
+    <tr><td>DWI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td></tr>
+    <tr><td>EPI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td><td></td></tr>
+    <tr><td>BOLD</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td></tr>
+    <tr><td>T1w <i>(both Philips & GE)</i></td><td></td><td></td><td></td><td></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td></tr>
   </tbody>
 </table>
-<small>**All fields indicated were hardcoded for Philips data except for <code>T1w</code>, which was also hardcoded for GE.</small>
-
-
-<div id="bids-imaging" class="table-banner" onclick="toggleCollapse(this)">
-  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
-  <span class="text-with-link">
-  <span>QALAS Post-Conversion Modifications</span>
-  <a class="anchor-link" href="#bids-imaging" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>QALAS conversion yielded either five 3D NIfTI files or one 4D file with five volumes and missing JSON headers. To standardize outputs, all series were split into five NIfTI files, each labeled by inversion time (<code>inv-&lt;label&gt;</code>). The JSON sidecars were updated as follows: <code>T2Prep</code> for QALAS file <code>inv-0</code> is set to 0.10 for Siemens/Philips and 0.09  for GE. <code>InversionTime</code> (s) is hard-coded per manufacturer as follows:</p>
+<p><strong>QALAS</strong><br>
+QALAS conversion yielded either five 3D NIfTI files or one 4D file with five volumes and missing JSON headers. To standardize outputs, all series were split into five NIfTI files, each labeled by inversion time (<code>inv-&lt;label&gt;</code>). The JSON sidecars were updated as follows: <code>T2Prep</code> for QALAS file <code>inv-0</code> is set to 0.10 for Siemens/Philips and 0.09  for GE. <code>InversionTime</code> (s) is hard-coded per manufacturer as follows:</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 90%;">
     <tr>
       <th></th><th>inv-0</th><th>inv-1</th><th>inv-2</th><th>inv-3</th><th>inv-4</th>
@@ -80,7 +105,7 @@ For MRI modalities, DICOM images are converted using an <a href="https://github.
 <div id="acq-param-table" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
-  <span class="text">Acquisition Parameter Ranges for Data Release Eligibility</span>
+  <span class="text">MRI & MRS Acquisition Parameter Ranges for Data Release Eligibility</span>
   <a class="anchor-link" href="#acq-param-table" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>

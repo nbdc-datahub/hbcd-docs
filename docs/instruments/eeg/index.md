@@ -74,16 +74,6 @@ EEG release data include both **file-based** (raw and processed data files in mo
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<div style="display: flex; align-items: center;">
-  <img src="../../images/BIDS-logo.png" style="width: 40px; margin-right: 10px;" alt="BIDS-logo">
-  <p style="margin: 0;">
-    <strong>BIDS Conversion</strong><br>
-    EEG BIDS conversion was handled by <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, 
-    a custom MATLAB application developed for HBCD EEG data management and BIDS formatting installed 
-    at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which, among 
-    other things, converts this data to the BIDS standard data structure.
-  </p>
-</div>
 <p>The BIDS <code>eeg/</code> folder contains EEG task recordings, recording system and electrode location metadata, and events for each task:</p>
 <pre class="folder-tree">
 hbcd/
