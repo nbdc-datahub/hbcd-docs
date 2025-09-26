@@ -27,6 +27,132 @@ hbcd/
 </pre>
 <p></p>
 
+### BIDS Conversion Procedures
+
+#### MRI
+
+For MRI modalities, DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>. Key fields for Philips and GE data are hard-coded to ensure consistency across vendors, as NIfTI/JSON metadata can be omitted or misconfigured during conversion. Hardcoded fields for different modalities/scan types are outlined in the following table and also documented in the JSON sidecars under `HardCodedValues`.
+
+<table class="compact-table-no-vertical-lines" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
+  <thead>
+    <tr>
+      <th>Modality</th>
+      <th><code>PhaseEncodingDirection</code></th>
+      <th><code>TotalReadoutTime</code></th>
+      <th><code>SliceTiming</code></th>
+      <th><code>SmallDelta</code></th>
+      <th><code>LargeDelta</code></th>
+      <th><code>RepetitionTime</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align:left;">DWI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td></tr>
+    <tr><td style="text-align:left;">EPI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td style="text-align:left;">BOLD</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td><td></td></tr>
+    <tr><td style="text-align:left;">T1w**</td><td></td><td></td><td></td><td></td><td></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td></tr>
+  </tbody>
+</table>
+<small>**All fields indicated were hardcoded for Philips data except for <code>T1w</code>, which was also hardcoded for GE.</small>
+
+
+<div id="bids-imaging" class="table-banner" onclick="toggleCollapse(this)">
+  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
+  <span class="text-with-link">
+  <span>QALAS Post-Conversion Modifications</span>
+  <a class="anchor-link" href="#bids-imaging" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>QALAS conversion yielded either five 3D NIfTI files or one 4D file with five volumes and missing JSON headers. To standardize outputs, all series were split into five NIfTI files, each labeled by inversion time (<code>inv-&lt;label&gt;</code>). The JSON sidecars were updated as follows: <code>T2Prep</code> for QALAS file <code>inv-0</code> is set to 0.10 for Siemens/Philips and 0.09  for GE. <code>InversionTime</code> (s) is hard-coded per manufacturer as follows:</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 90%;">
+    <tr>
+      <th></th><th>inv-0</th><th>inv-1</th><th>inv-2</th><th>inv-3</th><th>inv-4</th>
+    </tr>
+    <tr><th>Siemens</th><td>0</td><td>0.1</td><td>1</td><td>1.9</td><td>2.8</td></tr>
+    <tr><th>GE</th><td>0</td><td>0.1193</td><td>1.0192</td><td>1.9191</td><td>2.8190</td></tr>
+    <tr><th>Philips</th><td>0</td><td>0.115</td><td>1.0105</td><td>1.9060</td><td>2.8016</td></tr>
+  </table>
+</div>
+
+<div id="acq-param-table" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+  <span class="text">Acquisition Parameter Ranges for Data Release Eligibility</span>
+  <a class="anchor-link" href="#acq-param-table" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Acquisition parameters vary by scanner vendor, so inclusion criteria are typically defined as acceptable <strong>ranges</strong> rather than fixed values. Modality-specific criteria are extracted from BIDS sidecar JSON files and evaluated accordingly. All images are additionally checked to confirm they were acquired using a head coil.</p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+  <thead>
+    <tr>
+      <th>Scan Type</th>
+      <th>Repetition Time (TR)</th>   
+      <th>Echo Time (TE)</th>        
+      <th>Inversion Time (TI)</th>    
+      <th>Slice Thickness</th>  
+      <th>Number of Volumes</th>  
+    </tr>
+  </thead>
+<tbody>
+<tr>
+  <td>T1w</td>
+  <td>2.3 - 2.41</td>
+    <td>0.002 - 0.0035</td>
+  <td>1.06 - 1.1</td>    
+    <td>0.8</td>    
+    <td>NA</td>    
+  </tr>
+  <tr>
+    <td>T2w</td>
+    <td>2.5 - 4.5</td>
+    <td>0.09 - 0.15</td>
+    <td>0.29 - 0.33</td>    
+    <td>0.563 - 0.565</td>    
+    <td>NA</td>
+  </tr>  
+  <tr>
+    <td>MRS Localizer</td>
+    <td>2.5 - 4.5</td>
+    <td>0.09 - 0.15</td>
+    <td>0.29 - 0.33</td>    
+    <td>0.563 - 0.565</td>    
+    <td>NA</td>
+  </tr>   
+  <tr>
+    <td>Diffusion</td>
+    <td>4.8</td>
+    <td>0.0880 - 0.0980</td>
+    <td>NA</td>    
+    <td>1.7</td>    
+    <td>≥ 90 (AP + PA)</td>  
+  </tr>  
+  <tr>
+    <td>EPI Fieldmap</td>
+    <td>8.4 - 9.2</td>
+    <td>0.064 - 0.0661</td>
+    <td>2</td>    
+    <td>0.563 - 0.565</td>    
+    <td>NA</td>
+  </tr>  
+  <tr>
+    <td>Functional</td>
+    <td>1.725</td>
+    <td>0.0369 - 0.0371</td>
+    <td>NA</td>    
+    <td>2</td>  
+    <td>≥ 87 (~2.5 min)</td>   
+  </tr>  
+</tbody>
+</table>
+</div>
+
 ### Fields Reporting Age
 
 See description of fields reporting age under Age Variable Definitions > <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Raw File-Based Data</a>.

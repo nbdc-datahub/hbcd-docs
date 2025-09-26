@@ -48,20 +48,6 @@ Quantitative MRI release data include **file-based** (raw and processed data fil
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<div style="display: flex; align-items: center;">
-  <img src="../../../images/BIDS-logo.png" style="width: 40px; margin-right: 10px;" alt="BIDS-logo">
-  <p style="margin: 0;">
-  <strong><i>BIDS Conversion</i></strong>: DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>. QALAS conversion yielded either five 3D NIfTI files or one 4D file with five volumes and missing JSON headers. To standardize outputs, all series were split into five NIfTI files, each labeled by inversion time (<code>inv-&lt;label&gt;</code>). The JSON sidecars were updated as follows: <code>T2Prep</code> for QALAS file <code>inv-0</code> is set to 0.10 for Siemens/Philips and 0.09  for GE. <code>InversionTime</code> (s) is hard-coded per manufacturer as follows:
-  </p>
-</div>
-  <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 90%;">
-    <tr>
-      <th></th><th>inv-0</th><th>inv-1</th><th>inv-2</th><th>inv-3</th><th>inv-4</th>
-    </tr>
-    <tr><th>Siemens</th><td>0</td><td>0.1</td><td>1</td><td>1.9</td><td>2.8</td></tr>
-    <tr><th>GE</th><td>0</td><td>0.1193</td><td>1.0192</td><td>1.9191</td><td>2.8190</td></tr>
-    <tr><th>Philips</th><td>0</td><td>0.115</td><td>1.0105</td><td>1.9060</td><td>2.8016</td></tr>
-  </table>
 <p>qMRI files are located under the <code>anat/</code> directory along with anatomical MRI files, including QALAS and localizer files (<code>acq-mrsLocAx</code> and <code>acq-mrsLocCor</code> indicate axial and coronal localizers, respectively):</p>
 <pre class="folder-tree">
 hbcd/

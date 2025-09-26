@@ -72,14 +72,6 @@ Functional MRI release data include both **file-based** (raw and processed data 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<div style="display: flex; align-items: center;">
-  <img src="../../../images/BIDS-logo.png" style="width: 40px; margin-right: 10px;" alt="BIDS-logo">
-  <p style="margin: 0;">
-  <strong><i>BIDS Conversion</i></strong>: DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>. 
-  Because <code>dcm2niix</code> sometimes omits or misconfigures NIfTI/JSON metadata, key fields for Philips data are hard-coded to ensure consistency across vendors. 
-  These include <code>PhaseEncodingDirection</code> and <code>TotalReadoutTime</code> for Philips EPI and BOLD images, and <code>SliceTiming</code> for BOLD. All hard-coded values are also recorded in the <code>HardCodedValues</code> field of each JSON sidecar. 
-  </p>
-</div>
 <p>BOLD functional resting state data are located under <code>func/</code>. Each BOLD run has an associated pair of EPI fieldmaps acquired for distortion correction under <code>fmap/</code> in AP (<code>dir-AP</code>) and PA (<code>dir-PA</code>) phase encoding directions. <strong>Siemens, GE, and Philips additionally include B1 fieldmaps</strong>: For Siemens, <code>acq-&lt;anat|fmap&gt;</code> denotes the anatomical (like) image and scaled flip angle map whereas for GE and Philips, <code>acq-tr&lt;1|2&gt;</code> denotes the first and second TR image (see BIDS specification for quantitative MRI: <a href="https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html#tb1tfl-and-tb1rfm-specific-notes">TB1TFL and TB1RFM</a> and <a href="https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html#tb1afi-specific-notes">TB1AFI</a>):</p>
 <pre class="folder-tree">
 hbcd/

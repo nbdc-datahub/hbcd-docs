@@ -34,13 +34,6 @@ Structural MRI release data include both **file-based** (raw and processed data 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<div style="display: flex; align-items: center;">
-  <img src="../../../images/BIDS-logo.png" style="width: 40px; margin-right: 10px;" alt="BIDS-logo">
-  <p style="margin: 0;">
-  <strong><i>BIDS Conversion</i></strong>: DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>. 
-  Because <code>dcm2niix</code> sometimes omits or misconfigures NIfTI/JSON metadata, the <code>RepetitionTime</code> field for Philips and GE T1w images was hardcoded to ensure consistency across vendors. All hard-coded values are also recorded in the <code>HardCodedValues</code> field of each JSON sidecar. 
-  </p>
-</div>
 <p>Anatomical files include T1- and T2-weighted MRI images:</p>
 <pre class="folder-tree">
 hbcd/

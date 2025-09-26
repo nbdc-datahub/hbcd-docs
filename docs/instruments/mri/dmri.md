@@ -34,14 +34,6 @@ Diffusion MRI release data include both **file-based** (raw and processed data f
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<div style="display: flex; align-items: center;">
-  <img src="../../../images/BIDS-logo.png" style="width: 40px; margin-right: 10px;" alt="BIDS-logo">
-  <p style="margin: 0;">
-  <strong><i>BIDS Conversion</i></strong>: DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>. 
-  Because <code>dcm2niix</code> sometimes omits or misconfigures NIfTI/JSON metadata, key fields for Philips data are hard-coded to ensure consistency across vendors. 
-  These include <code>PhaseEncodingDirection</code>, <code>TotalReadoutTime</code>, <code>SliceTiming</code>, and the addition of <code>SmallDelta</code> and <code>LargeDelta</code> for Philips DWI data. All hard-coded values are also recorded in the <code>HardCodedValues</code> field of each JSON sidecar. 
-  </p>
-</div>
 <p>Raw diffusion files include DWI runs (<code>*_dwi.nii.gz</code>), magnitude and orientation of the diffusion gradients for each volume (<code>bval</code> and <code>bvec</code>, respectively), and single-band reference files (<code>*_sbref.nii.gz</code>). All images were acquired in both AP (<code>dir-AP</code>) and PA (<code>dir-PA</code>) phase encoding directions.</p>
 <pre class="folder-tree">
 dwi/
