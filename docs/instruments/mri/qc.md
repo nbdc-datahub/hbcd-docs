@@ -1,10 +1,90 @@
 # HBCD MR Quality Control Procedures
 
+## Data Release Eligibility Criteria
+
+Acquisition parameters vary by scanner vendor, so inclusion criteria are typically defined as acceptable **ranges** rather than fixed values. Modality-specific criteria are extracted from BIDS sidecar JSON files and evaluated accordingly.
+
+<div id="acq-param-table" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Release Eligibility: Acquisition Parameter Ranges</span>
+  <a class="anchor-link" href="#acq-param-table" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><i>NOTE: All images are additionally checked to confirm they were acquired using a head coil.</i></p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+  <thead>
+    <tr>
+      <th>Scan Type</th>
+      <th>Repetition Time (TR)</th>   
+      <th>Echo Time (TE)</th>        
+      <th>Inversion Time (TI)</th>    
+      <th>Slice Thickness</th>  
+      <th>Number of Volumes</th>  
+    </tr>
+  </thead>
+<tbody>
+<tr>
+	<td>T1w</td>
+	<td>2.3 - 2.41</td>
+    <td>0.002 - 0.0035</td>
+	<td>1.06 - 1.1</td>    
+    <td>0.8</td>    
+    <td>NA</td>    
+	</tr>
+	<tr>
+		<td>T2w</td>
+		<td>2.5 - 4.5</td>
+    <td>0.09 - 0.15</td>
+		<td>0.29 - 0.33</td>    
+    <td>0.563 - 0.565</td>    
+    <td>NA</td>
+	</tr>  
+	<tr>
+		<td>MRS Localizer</td>
+		<td>2.5 - 4.5</td>
+    <td>0.09 - 0.15</td>
+		<td>0.29 - 0.33</td>    
+    <td>0.563 - 0.565</td>    
+    <td>NA</td>
+	</tr>   
+	<tr>
+		<td>Diffusion</td>
+		<td>4.8</td>
+    <td>0.0880 - 0.0980</td>
+		<td>NA</td>    
+    <td>1.7</td>    
+    <td>≥ 90 (AP + PA)</td>  
+	</tr>  
+	<tr>
+		<td>EPI Fieldmap</td>
+		<td>8.4 - 9.2</td>
+    <td>0.064 - 0.0661</td>
+		<td>2</td>    
+    <td>0.563 - 0.565</td>    
+    <td>NA</td>
+	</tr>  
+	<tr>
+		<td>Functional</td>
+		<td>1.725</td>
+    <td>0.0369 - 0.0371</td>
+		<td>NA</td>    
+    <td>2</td>  
+    <td>≥ 87 (~2.5 min)</td>   
+	</tr>  
+</tbody>
+</table>
+</div>
+
 ## Raw MR Data QC
 
 Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. The purpose is to detect acquisition errors, artifacts, or corrupted files early so that problematic scans are excluded from the released raw BIDS dataset and downstream processing ([see details](../processing/index.md#file-selection-for-processing)). 
 
-### Automated QC
+#### Automated QC
 
 Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload. It consists of three main steps:
 
@@ -71,7 +151,7 @@ Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediatel
 </div>
 
 <div id="autoQC-metrics" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="emoji"><i class="fa fa-desktop"></i></span>
   <span class="text-with-link">
 <span class="text">Automated QC Metrics</span>
   <a class="anchor-link" href="#autoQC-metrics" title="Copy link">
@@ -125,9 +205,23 @@ Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediatel
 </table>
 </div>
 
-### Manual Review
+<p></p>
 
-Automated metrics flag series for manual review using multivariate prediction and Bayesian classifiers. Trained technicians then score artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected** (QC = 0) and excluded from processing. Data are selected from the remaining series based on manual ratings, notes, and automated scores (e.g., ≥60% usable diffusion encoding volumes). Manual QC metrics include the following:
+#### Manual Review
+
+Automated metrics flag series for manual review using multivariate prediction and Bayesian classifiers. Trained technicians then score artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected** (QC = 0) and excluded from processing. Data are selected from the remaining series based on manual ratings, notes, and automated scores. Manual QC metrics include the following (click to expand):
+
+<div id="autoQC-metrics" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-eye"></i></span>
+  <span class="text-with-link">
+<span class="text">Manual QC Metrics</span>
+  <a class="anchor-link" href="#manualQC-metrics" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -159,14 +253,58 @@ Automated metrics flag series for manual review using multivariate prediction an
 </tr>
 </tbody>
 </table>
+</div>
 
-### Location of Raw Data QC Results in Data Release
-All quality control metrics are available in the `*_scans.tsv` file provided per participant session ([see details](../../datacuration/file-based-data.md#participant-session-scan-level-data)). The main QC score field, `QC`, is the overall manual QC score and will be a value of either 1 (pass) or 0 (fail). If the scan was not flagged for manual review and only has automated QC data, the `QC` field automatically has value of 1. 
+
+
+## BrainSwipes
+
+Manual visual inspection remains the gold standard for identifying artifacts in structural and functional derivatives (e.g., from XCP-D) and diffusion derivatives (e.g., from QSIPrep). To streamline this process, derivative visual reports are integrated into [BrainSwipes](https://brainswipes.us/about), a gamified, crowdsourced QC platform built on the open-source [Swipes For Science](https://swipesforscience.org/) framework. BrainSwipes engages users in evaluating brain image quality through an intuitive interface designed for large-scale studies. After creating an account, users are guided through a brief [tutorial](https://brainswipes.us/tutorial-select) that teaches them how to assess derivative images and classify them as pass or fail.
+
+<p>
+<div id="swipes-procedures" class="table-banner" onclick="toggleCollapse(this)">
+<span class="text-with-link">
+  <span class="text">BrainSwipes QC Procedures</span>
+	<a class="anchor-link" href="#swipes-procedures" title="Copy link">
+  	<i class="fa-solid fa-link"></i>
+  	</a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<br>
+<div class="img-with-text" style="width: 60%; margin: 0 auto; text-align: center;">
+    <img src="../images/brainswipes.png" alt="Example quality assessment of surface delineation in BrainSwipes" style="width: 100%; height: auto;">
+    <p><i>Example quality assessment of surface delineation on BrainSwipes platform (displaying brain in axial plane at level of basal ganglia/putamen).</i></p>
+</div>
+<p>
+<p style="font-size: 1em; margin: 0 0 5px;"><b>Surface Delineation:</b></p>
+For structural QA, swipers are presented with image slices in coronal, axial, and sagittal planes to assess the accuracy of T1w and T2w surface delineations in differentiating gray and white matter. Images are derived from XCP-D visual reports.
+</p>
+<p style="font-size: 1em; margin: 0 0 5px;"><b>Atlas Registration:</b></p>
+In addition to surface delineation, structural QA also includes atlas registration quality, evaluated by overlaying delineations of the subject’s image onto the atlas, and vice versa. Swipes display nine T1w slices for visual inspection, with three slices per anatomical plane. Quality is assessed based on the alignment of the outer boundaries of the overlaid contours with those of the underlying image, ensuring minimal gaps or misalignments. Images are derived from XCP-D visual reports.
+<p>
+<p style="font-size: 1em; margin: 0 0 5px;"><b>Functional Registration:</b></p>
+Functional registration is evaluated by overlaying outlines of functional images onto structural images and vice versa. Swipes display nine slices of the same functional image for visual inspection, with three slices per anatomical plane. Quality is assessed similarly to structural atlas registration, focusing on the alignment of the overlaid contours. Additional evaluation includes checking for artifacts such as signal dropout. Images are derived from XCP-D visual reports.
+</p>
+<p style="font-size: 1em; margin: 0 0 5px;"><b>Diffusion Direction Encoding (<i>to be included in future release</i>):</b></p>
+Swipes display GIFs of full-resolution T2w images as a grayscale background, with the "Direction Encoded Color" (DEC) map overlaid. These GIFs sweep through a portion of the brain across the three anatomical planes. High-quality processed DWI images exhibit bands of color that closely follow the folds and contours of the grayscale background. These visuals are derived from the QSIPrep report.
+<p>
+<strong>Each visual report for a given modality is independently reviewed and rated as a pass or fail, which in the outputs are scored as values of 1 and 0 respectively. BrainSwipes generates a summary of these results that includes the average score as well as number of reviewers for each visual report of each modality.</strong>
+</div>
+</p>
+
+
+## Location of QC Results in Data Release
+
+#### Raw Data QC Metrics
+
+Raw data QC metrics are included in the <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code> files provided per participant session (<a href="../../../datacuration/file-based-data/#participant-session-scan-level-data">details</a>). Click to expand the following section for a list of included metrics:
 
 <div id="scanstsv" class="table-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fa fa-table"></i></span>
+    <span class="emoji"><i class="fa fa-info-circle"></i></span>
   <span class="text-with-link">
-  <span class="text">Full list of fields included in <code>scans.tsv</code> files</span>
+  <span class="text">QC fields included in <i>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</i> files</span>
   <a class="anchor-link" href="#scanstsv" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -221,7 +359,8 @@ All quality control metrics are available in the `*_scans.tsv` file provided per
     <tr><td>revdisp</td><td><span class="tooltip tooltip-right"><i class="fa-solid fa-eye"></i><span class="tooltiptext">Manual QC Metric</span></span> If there was disparity/disagreement between reviewers</td>
     </tr>
     <tr>
-        <td>QC</td><td><span class="tooltip tooltip-right"><i class="fa-solid fa-eye"></i><span class="tooltiptext">Manual QC Metric</span></span> Overall manual QC score: 1 (pass), 0 (fail)</td>
+        <td>QC</td><td><span class="tooltip tooltip-right"><i class="fa-solid fa-eye"></i><span class="tooltiptext">Manual QC Metric</span></span> Overall manual QC score: 1 (pass), 0 (fail)<br>
+        <strong>Note: scans with only automated, and not manual, QC performed have a QC field value of 1</strong></td>
     </tr>
     <tr>
         <td>notes</td><td><span class="tooltip tooltip-right"><i class="fa-solid fa-eye"></i><span class="tooltiptext">Manual QC Metric</span></span> Optional notes from manual QC review</td>
@@ -478,120 +617,9 @@ All quality control metrics are available in the `*_scans.tsv` file provided per
 </table>
 </div>
 
-## Data Release Eligibility Criteria
+<p></p>
 
-After converting MRI data to BIDS format, both the NIfTI and JSON files undergo additional verification to ensure data integrity. Acquisition parameters can vary depending on the scanner vendor. For example, while the GE protocol acquires structural data at **0.8 mm isotropic resolution**, the current protocol/software version upsamples the data during reconstruction and DICOM creation, resulting in an **in-plane resolution of 0.5 × 0.5 × 0.8 mm³**. This will be adjusted in a future software upgrade. To account for such variations, most inclusion criteria are defined as acceptable **ranges** rather than fixed values. The specific modality-based inclusion criteria are extracted directly from the image JSON files and evaluated accordingly.
-
-<p>
-<div id="acq-param-table" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text">Acquisition Parameter Ranges for Data Release Eligibility</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><i>NOTE: All images are additionally checked to confirm they were acquired using a head coil.</i></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-  <thead>
-    <tr>
-      <th style="width: 100%; border-collapse: collapse; table-layout: fixed;">File</th>
-      <th style="width: 100%; border-collapse: collapse; table-layout: fixed;">TR</th>   
-      <th style="width: 100%; border-collapse: collapse; table-layout: fixed;">TE</th>        
-      <th style="width: 100%; border-collapse: collapse; table-layout: fixed;">TI</th>    
-      <th style="width: 100%; border-collapse: collapse; table-layout: fixed;">Slice Thickness</th>  
-      <th style="width: 100%; border-collapse: collapse; table-layout: fixed;">Volume #</th>  
-    </tr>
-  </thead>
-<tbody>
-	<tr>
-		<td>T1w</td>
-		<td>2.3-2.41</td>
-    <td>0.002-0.0035</td>
-		<td>1.06-1.1</td>    
-    <td>0.8</td>    
-    <td>NA</td>    
-	</tr>
-	<tr>
-		<td>T2w</td>
-		<td>2.5-4.5</td>
-    <td>0.09-0.15</td>
-		<td>0.29-0.33</td>    
-    <td>0.563-0.565</td>    
-    <td>NA</td>
-	</tr>  
-	<tr>
-		<td>MRS Localizer</td>
-		<td>2.5-4.5</td>
-    <td>0.09-0.15</td>
-		<td>0.29-0.33</td>    
-    <td>0.563-0.565</td>    
-    <td>NA</td>
-	</tr>   
-	<tr>
-		<td>Diffusion</td>
-		<td>4.8</td>
-    <td>0.0880-0.0980</td>
-		<td>NA</td>    
-    <td>1.7</td>    
-    <td style="word-wrap: break-word; white-space: normal;">≥ 90 (AP + PA)</td>  
-	</tr>  
-	<tr>
-		<td>EPI Fieldmap</td>
-		<td>8.4-9.2</td>
-    <td>0.064-0.0661</td>
-		<td>2</td>    
-    <td>0.563-0.565</td>    
-    <td>NA</td>
-	</tr>  
-	<tr>
-		<td>Functional</td>
-		<td>1.725</td>
-    <td>0.0369-0.0371</td>
-		<td>NA</td>    
-    <td>2</td>  
-    <td>≥ 87 (~2.5 min)</td>   
-	</tr>  
-</tbody>
-</table>
-</div>
-</p>
-
-## BrainSwipes
-
-Manual visual inspection remains the gold standard for identifying artifacts in structural and functional derivatives (e.g., from XCP-D) and diffusion derivatives (e.g., from QSIPrep). To streamline this process, derivative visual reports are integrated into [BrainSwipes](https://brainswipes.us/about), a gamified, crowdsourced QC platform built on the open-source [Swipes For Science](https://swipesforscience.org/) framework. BrainSwipes engages users in evaluating brain image quality through an intuitive interface designed for large-scale studies. After creating an account, users are guided through a brief [tutorial](https://brainswipes.us/tutorial-select) that teaches them how to assess derivative images and classify them as pass or fail.
-
-<p>
-<div id="swipes-procedures" class="table-banner" onclick="toggleCollapse(this)">
-<span class="text-with-link">
-  <span class="text">BrainSwipes QC Procedures</span>
-	<a class="anchor-link" href="#swipes-procedures" title="Copy link">
-  	<i class="fa-solid fa-link"></i>
-  	</a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Surface Delineation:</b></p>
-For structural QA, swipers are presented with image slices in coronal, axial, and sagittal planes to assess the accuracy of T1w and T2w surface delineations in differentiating gray and white matter. Images are derived from XCP-D visual reports.
-</p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Atlas Registration:</b></p>
-In addition to surface delineation, structural QA also includes atlas registration quality, evaluated by overlaying delineations of the subject’s image onto the atlas, and vice versa. Swipes display nine T1w slices for visual inspection, with three slices per anatomical plane. Quality is assessed based on the alignment of the outer boundaries of the overlaid contours with those of the underlying image, ensuring minimal gaps or misalignments. Images are derived from XCP-D visual reports.
-<p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Functional Registration:</b></p>
-Functional registration is evaluated by overlaying outlines of functional images onto structural images and vice versa. Swipes display nine slices of the same functional image for visual inspection, with three slices per anatomical plane. Quality is assessed similarly to structural atlas registration, focusing on the alignment of the overlaid contours. Additional evaluation includes checking for artifacts such as signal dropout. Images are derived from XCP-D visual reports.
-</p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Diffusion Direction Encoding (<i>to be included in future release</i>):</b></p>
-Swipes display GIFs of full-resolution T2w images as a grayscale background, with the "Direction Encoded Color" (DEC) map overlaid. These GIFs sweep through a portion of the brain across the three anatomical planes. High-quality processed DWI images exhibit bands of color that closely follow the folds and contours of the grayscale background. These visuals are derived from the QSIPrep report.
-<p>
-<strong>Each visual report for a given modality is independently reviewed and rated as a pass or fail, which in the outputs are scored as values of 1 and 0 respectively. BrainSwipes generates a summary of these results that includes the average score as well as number of reviewers for each visual report of each modality.</strong>
-</div>
-</p>
-
-<div class="img-with-text" style="width: 60%; margin: 0 auto; text-align: center;">
-    <img src="../images/brainswipes.png" alt="Example quality assessment of surface delineation in BrainSwipes" style="width: 100%; height: auto;">
-    <p><i>Example quality assessment of surface delineation on BrainSwipes platform (displaying brain in axial plane at level of basal ganglia/putamen).</i></p>
-</div>
-
-### BrainSwipes Release Data
+#### BrainSwipes QC Metrics
 
 The [tabulated](../../datacuration/phenotypes.md) BrainSwipes QC data includes two files: `img_brainswipes_xcpd-T2w` and `img_brainswipes_xcpd-bold`. QC scores range from 0 (Fail) to 1 (Pass), averaged across reviewers. For example, a score of 0.6 indicates that 60% of reviewers rated the image as a pass. The data includes overall average QC scores and average number of reviewers for each session-level T2w and BOLD run (summarizing across all visual reports for a given run) as well as the average QC and number of reviewers for each visual report. A Python helper function is provided below to load a BrainSwipes TSV file into a Pandas DataFrame and filter runs with average QC scores above a user-specified threshold:
 
@@ -635,45 +663,40 @@ print(filtered_df.head())
 
 ## QC Summary Statistics
 
-<div id="dwi-qc" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+<div id="dwi-qc" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
   <span class="text">Automated QC for Processed Diffusion Data</span>
   <a class="anchor-link" href="#dwi-qc" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-    </a>
+  <i class="fa-solid fa-link"></i>
+  </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="notification-collapsible-content">
-<p>The release currently includes BrainSwipes results for only structural and functional MRI. Diffusion results will be included in a later release. However, existing automated QC procedures for processed diffusion data are fairly robust compared to sMRI and fMRI. The automated QC metrics are provided within <code>SUBSES_space-ACPC_desc-image_qc.tsv</code> in the <a href="../../../datacuration/derivatives/#qsiprep-qsiprep">QSIPrep derivatives</a> - please see more information about automated QC on the <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep website</a>.</p>
-<p>Below are automated QC metric distributions for HBCD data from visits V02 and V03. Higher NDC (closer to 1) and CNR indicate better quality images. <strong>NDC can be used as a covariate in analyses to account for variation in QC.</strong></p>
-<p><b>Left</b>: Neighboring DWI Correlation (NDC) calculated pre and post processing for each vendor on the combined AP/PA scans. Processed data is represented by a solid line, while raw data is dashed.</p>
-<p><b>Right</b>: Contrast to Noise Ratio (CNR) per shell per vendor as calculated by Eddy. Distributions are likewise colored by vendor. As data included in these plots and in the beta release have already passed a preliminary QC check we do not have specific values recommended for exclusion. However, NDC and CNR are useful covariates to include when analyzing other derivatives.</p>
+<div class="table-collapsible-content">
+<p>The current release includes BrainSwipes results for structural and functional MRI only; diffusion results will be added in a future release. However, automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_space-ACPC_desc-image_qc.tsv</code> within the <a href="../dmri/#qsiprep">QSIPrep derivatives</a>. See the <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details.</p>  
+<p>Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. <strong>NDC can also be used as a covariate in analyses to account for QC variation.</strong></p>  
+<p><strong>Left</strong>: NDC calculated pre- and post-processing for each vendor using combined AP/PA scans (solid = processed, dashed = raw).<br>  
+<strong>Right</strong>: Shell-wise CNR per vendor, calculated by Eddy. Because all data shown passed preliminary QC, we do not provide exclusion threshold recommendations. However, NDC and CNR are useful covariates when analyzing other derivatives.</p>
 <img src="../images/ndc_cnr_comparison.svg" width="95%" height="auto" class="center">
 </div>
 
-
-<div id="fconn" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+<div id="fconn" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
   <span class="text">Functional Connectivity as Data Quality Improves</span>
   <a class="anchor-link" href="#fconn" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-    </a>
+  <i class="fa-solid fa-link"></i>
+  </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="notification-collapsible-content">
-<p><b>Average Gordon Connectivity Matrices for V02 at Varying QC Thresholds</b><br>
-Average functional connectivity matrices were computed using the Gordon parcellation from <a href="../../../datacuration/derivatives/#xcp-d-xcp_d">XCP-D derivatives</a> for V02 sessions with data inclusion based on various thresholds of BrainSwipes QC results (<code>img_brainswipes_xcpd-bold</code>; <a href="../qc/#brainswipes">see details</a>). Functional connectivity patterns remained consistent even when incorporating data with lower QC scores, suggesting robustness to mild quality variations.</p>
-<p><strong>The following figures display connectivity matrices as data quality improves (Left -> Right) based on QC thresholds of 0.1, 0.5, and 0.9:</strong></p>
+<div class="table-collapsible-content">
+<p>Average functional connectivity matrices were computed using the Gordon parcellation from <a href="../fmri/#xcpd">XCP-D derivatives</a> for V02 sessions with data inclusion based on various thresholds of BrainSwipes QC results (<code>img_brainswipes_xcpd-bold</code>; <a href="../qc/#brainswipes">see details</a>). Functional connectivity patterns remained consistent even when incorporating data with lower QC scores, suggesting robustness to mild quality variations.</p>
+<p><strong>Connectivity matrices as data quality improves (Left -> Right) based on QC thresholds of 0.1, 0.5, and 0.9:</strong></p>
 <img src="../images/fconn_qc.png" style="width: 100%;" class="center">
 <br>
 </div>
-
-
-
 
 ## References
 <div class="references">
