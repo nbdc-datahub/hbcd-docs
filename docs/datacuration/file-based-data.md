@@ -27,37 +27,102 @@ hbcd/
 </pre>
 <p></p>
 
+*Click the following links to see the full file contents of each raw BIDS folder documented in the measure documentation pages:*
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th><a href="../../instruments/mri/smri/#rawbids" target="_blank">Structural MRI</a></th>
+      <th><a href="../../instruments/mri/qmri/#rawbids" target="_blank">Quantitative MRI</a></th>
+      <th><a href="../../instruments/mri/fmri/#rawbids" target="_blank">Functional MRI</a></th>
+      <th><a href="../../instruments/mri/dmri/#rawbids" target="_blank">Diffusion MRI</a></th>
+      <th><a href="../../instruments/mri/mrs/#rawbids" target="_blank">MR Spectroscopy</a></th>
+      <th><a href="../../instruments/eeg/#rawbids" target="_blank">EEG</a></th>
+      <th><a href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">Wearable Sensors</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>anat/</code>
+      </td>
+      <td>
+        <code>anat/</code>
+      </td>
+      <td>
+        <code>func/</code>, <code>fmap/</code></td>
+      <td>
+        <code>dwi/</code>      </td>
+      <td>
+        <code>mrs/</code>      </td>
+      <td>
+        <code>eeg/</code>      </td>
+      <td>
+        <code>motion/</code>      </td>
+    </tr>
+  </tbody>
+</table>
+
+### Participant-, Session-, & Scan-Level Data
+Participant-, session-, and scan-level data are stored in the following `.tsv` files, accompanied by `.json` sidecar files containing metadata:
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<thead>
+<tr>
+  <th>Level</th>
+  <th>File Name</th>
+  <th style="width: 60%;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Participant</td>
+  <td><code>participants.tsv</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Basic demographic and participant information (e.g., sex)</td>
+</tr>
+<tr>
+  <td>Session</td>
+  <td><code>sub-&lt;ID&gt;_sessions.tsv</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Session information (e.g., collection site, participant’s age at each session, head size)</td>
+</tr>
+<tr>
+  <td>Scan</td>
+  <td><code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Per-scan information (age at scan and raw data QC scores - see <a href="../../instruments/mri/qc/#location-of-raw-data-qc-results-in-data-release" target="_blank">HBCD MR Quality Control Procedures</a>)</td>
+</tr>
+</tbody>
+</table>
+
 ### BIDS Conversion Procedures
 
-BIDS conversion software and procedures by modality:
+Raw data for each modality are converted to the BIDS standard via the following software and procedures:
 
 <table class="compact-table-no-vertical-lines" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
   <thead>
     <tr>
-      <th>Modality</th>
+      <th></th>
       <th>BIDS Conversion</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>MRI</td>
+      <td><strong>MRI</strong></td>
       <td style="word-wrap: break-word; white-space: normal;">DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>, with post-conversion modifications required for certain scan types to maintain consistency across vendors - see <a href="#bids-conversion-mri">MRI Hardcoded Fields & Post-Conversion Modifications</a> below for details.</td>
     </tr>
     <tr>
-      <td>MRS</td>
+      <td><strong>MRS</strong></td>
       <td style="word-wrap: break-word; white-space: normal;">Vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.</td>
     </tr>
     <tr>
-      <td>EEG</td>
-      <td style="word-wrap: break-word; white-space: normal;">BIDS conversion performed with <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application developed for HBCD EEG data management and BIDS formatting installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which, among other things, converts this data to the BIDS standard data structure.</td>
+      <td><strong>EEG</strong></td>
+      <td style="word-wrap: break-word; white-space: normal;">BIDS conversion was performed with the <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application for HBCD EEG data management and formatting, installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which converts them to the BIDS standard.</td>
     </tr>
-      <tr>
-      <td>Wearable Sensors</td>
-      <td style="word-wrap: break-word; white-space: normal;"></td>
+    <tr>
+      <td><strong>Sensors</strong></td>
+      <td style="word-wrap: break-word; white-space: normal;">???</td>
     </tr>
   </tbody>
 </table>
-
 
 <div id="bids-conversion-mri" class="table-banner" onclick="toggleCollapse(this)">
   <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
@@ -182,75 +247,6 @@ QALAS conversion yielded either five 3D NIfTI files or one 4D file with five vol
 
 See description of fields reporting age under Age Variable Definitions > <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Raw File-Based Data</a>.
 
-### Participant-, Session-, & Scan-Level Data
-Participant-, session-, and scan-level data are stored in the following `.tsv` files, accompanied by `.json` sidecar files containing metadata:
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-<thead>
-<tr>
-  <th>Level</th>
-  <th>File Name</th>
-  <th style="width: 60%;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Participant</td>
-  <td><code>participants.tsv</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Basic demographic and participant information (e.g., sex)</td>
-</tr>
-<tr>
-  <td>Session</td>
-  <td><code>sub-&lt;ID&gt;_sessions.tsv</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Session information (e.g., collection site, participant’s age at each session, head size)</td>
-</tr>
-<tr>
-  <td>Scan</td>
-  <td><code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Per-scan information (age at scan and raw data QC scores - see <a href="../../instruments/mri/qc/#location-of-raw-data-qc-results-in-data-release" target="_blank">HBCD MR Quality Control Procedures</a>)</td>
-</tr>
-</tbody>
-</table>
-
-### Links to Raw BIDS Folders
-
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Raw BIDS Folder</th>
-  <th>Relevant Modalities With Link to Documentation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td rowspan="2"><code>anat/</code></td>
-  <td><a href="../../instruments/mri/smri/#rawbids" target="_blank">Structural MRI</a></td>
-</tr>
-<tr>
-  <td><a href="../../instruments/mri/qmri/#rawbids" target="_blank">Quantitative MRI</a></td>
-</tr>
-<tr>
-  <td><code>func/</code> & <code>fmap/</code></td>
-  <td><a href="../../instruments/mri/fmri/#rawbids" target="_blank">Functional MRI</a></td>
-</tr>
-<tr>
-  <td><code>dwi/</code></td>
-  <td><a href="../../instruments/mri/dmri/#rawbids" target="_blank">Diffusion MRI</a></td>
-</tr>
-<tr>
-  <td><code>mrs/</code></td>
-  <td><a href="../../instruments/mri/mrs/#rawbids" target="_blank">MR Spectroscopy</a></td>
-</tr>
-<tr>
-  <td><code>eeg/</code></td>
-  <td><a href="../../instruments/eeg/#rawbids" target="_blank">EEG</a></td>
-</tr>
-<tr>
-  <td><code>motion/</code></td>
-  <td><a href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">Wearable Sensors</a></td>
-</tr>
-</tbody>
-</table>
 
 ## Processed Derivatives
 
@@ -293,7 +289,7 @@ hbcd/
 <tr>
   <th>Modalities</th>
   <th>Derivatives Folder</th>
-  <th>Pipeline Name & Link to Derivatives Documentation</th>
+  <th>Pipeline Name & Link to Derivatives Link</th>
 </tr>
 </thead>
 <tbody>
