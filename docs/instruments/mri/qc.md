@@ -209,7 +209,7 @@ Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediatel
 
 #### Manual Review
 
-Automated metrics flag series for manual review using multivariate prediction and Bayesian classifiers. Trained technicians then score artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected** (QC = 0) and excluded from processing. Data are selected from the remaining series based on manual ratings, notes, and automated scores. Manual QC metrics include the following (click to expand):
+Automated metrics flag series for manual review using multivariate prediction and Bayesian classifiers. Trained technicians then score artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected** (QC = 0) and excluded from processing. Data are selected from the remaining series based on manual ratings, notes, and automated scores.
 
 <div id="autoQC-metrics" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-eye"></i></span>
@@ -259,10 +259,11 @@ Automated metrics flag series for manual review using multivariate prediction an
 
 ## BrainSwipes
 
-Manual visual inspection remains the gold standard for identifying artifacts in structural and functional derivatives (e.g., from XCP-D) and diffusion derivatives (e.g., from QSIPrep). To streamline this process, derivative visual reports are integrated into [BrainSwipes](https://brainswipes.us/about), a gamified, crowdsourced QC platform built on the open-source [Swipes For Science](https://swipesforscience.org/) framework. BrainSwipes engages users in evaluating brain image quality through an intuitive interface designed for large-scale studies. After creating an account, users are guided through a brief [tutorial](https://brainswipes.us/tutorial-select) that teaches them how to assess derivative images and classify them as pass or fail.
+Manual visual inspection remains the gold standard for detecting artifacts in structural, functional (e.g., XCP-D), and diffusion (e.g., QSIPrep) derivatives. To support this, derivative visual reports are integrated into [BrainSwipes](https://brainswipes.us/about), a gamified, crowdsourced QC platform built on the open-source [Swipes For Science](https://swipesforscience.org/) framework. BrainSwipes provides an intuitive interface for large-scale studies, guiding users through a short [tutorial](https://brainswipes.us/tutorial-select) before they evaluate images and classify them as pass or fail.
 
 <p>
 <div id="swipes-procedures" class="table-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa fa-brain"></i></span>
 <span class="text-with-link">
   <span class="text">BrainSwipes QC Procedures</span>
 	<a class="anchor-link" href="#swipes-procedures" title="Copy link">
@@ -299,12 +300,11 @@ Swipes display GIFs of full-resolution T2w images as a grayscale background, wit
 
 #### Raw Data QC Metrics
 
-Raw data QC metrics are included in the <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code> files provided per participant session (<a href="../../../datacuration/file-based-data/#participant-session-scan-level-data">details</a>). Click to expand the following section for a list of included metrics:
-
+Raw data QC metrics are included in the <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code> files provided per [participant session](../../datacuration/file-based-data.md#participant-session-scan-level-data).
 <div id="scanstsv" class="table-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fa fa-info-circle"></i></span>
   <span class="text-with-link">
-  <span class="text">QC fields included in <i>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</i> files</span>
+  <span class="text">QC fields included in <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code> files</span>
   <a class="anchor-link" href="#scanstsv" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -621,6 +621,7 @@ Raw data QC metrics are included in the <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_sca
 
 #### BrainSwipes QC Metrics
 
+BrainSwipes QC results are provided as tabulated data
 The [tabulated](../../datacuration/phenotypes.md) BrainSwipes QC data includes two files: `img_brainswipes_xcpd-T2w` and `img_brainswipes_xcpd-bold`. QC scores range from 0 (Fail) to 1 (Pass), averaged across reviewers. For example, a score of 0.6 indicates that 60% of reviewers rated the image as a pass. The data includes overall average QC scores and average number of reviewers for each session-level T2w and BOLD run (summarizing across all visual reports for a given run) as well as the average QC and number of reviewers for each visual report. A Python helper function is provided below to load a BrainSwipes TSV file into a Pandas DataFrame and filter runs with average QC scores above a user-specified threshold:
 
 <div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">

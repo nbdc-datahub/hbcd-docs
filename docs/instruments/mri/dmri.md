@@ -374,11 +374,11 @@ Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.
 <tbody>
 <tr>
   <td><span class="tooltip">PA<span class="tooltiptext">Propagator Anisotropy</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">More accurate than FA, PA quantifies anisotropy by computing the dissimilarity of the full MAP-MRI propagator from its fully isotropic counterpart.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Quantifies anisotropy by computing the dissimilarity of the full MAP-MRI propagator from its fully isotropic counterpart. More accurate than FA.</td>
 </tr>
 <tr>
   <td><span class="tooltip">NG<span class="tooltiptext">Non-Gaussianity</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">The NG index quantifies deviation from Gaussian diffusion. <strong>NG</strong> measures overall deviation, <strong>NGpar</strong> along the primary diffusion axis (fiber direction in white matter), and <strong>NGperp</strong> perpendicular to it (often related to restriction).</td>
+  <td style="word-wrap: break-word; white-space: normal;">Quantifies deviation from Gaussian diffusion. <strong>NG</strong> measures overall deviation, <strong>NGpar</strong> along the primary diffusion axis (fiber direction in white matter), and <strong>NGperp</strong> perpendicular to it (often related to restriction).</td>
 </tr>
 <tr>
   <td><span class="tooltip">RTOP<span class="tooltiptext">Return To Origin Probability</span></span></td>

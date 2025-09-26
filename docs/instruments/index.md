@@ -550,43 +550,8 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><span class="emoji"><i class="fa-regular fa-lightbulb"  style="font-size: 16px;"></i></span> <strong style="font-size: 16px;">See MR <a href="mri">Overview</a> and <a href="mri/qc">Quality Control Procedures</a></strong></p>
-<br><br>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-    <th colspan="5" style="font-size: 16px;">Tabulated Data Only</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th style="width: 10%;">Modality</th>
-      <th style="width: 30%;">Name</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Name</th>
-    </tr>
-  </thead>
-    <tbody>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td>sMRI</td>
-      <td><a href="mri/qc/#brainswipes" target="_blank">BrainSwipes Quality Control</a></td>
-      <td>Manual QC of XCP-D Outputs</td>
-      <td><code>img_brainswipes_xcpd-T2w</code><br>
-    </tr>
-        <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td>fMRI</td>
-      <td><a href="mri/qc/#brainswipes" target="_blank">BrainSwipes Quality Control</a></td>
-      <td>Manual QC of XCP-D Outputs</td>
-      <td><code>img_brainswipes_xcpd-bold</code><br>
-    </tr>
-</tbody>
-</table>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
   <thead>
-  <tr>
-    <th colspan="4" style="font-size: 16px;">File-Based and Derived Tabulated Data</th>
-  </tr>
     <tr>
       <th style="width: 1%;"></th>
       <th style="width: 10%;"><a href="../datacuration/file-based-data/#raw-bids" target="_blank"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Raw BIDS</a></th>
@@ -596,8 +561,8 @@ Expand the sections below to see a list of measures associated with each domain 
   </thead>
     <tbody>
     <tr>
-      <td rowspan="4"><span class="tooltip tooltip-right"><a href="mri/smri" target="_blank">sMRI</a><span class="tooltiptext">Structural MRI</span></span></td>
-      <td rowspan="4"><i>anat/</i></td>
+      <td rowspan="5"><span class="tooltip tooltip-right"><a href="mri/smri" target="_blank">sMRI</a><span class="tooltiptext">Structural MRI</span></span></td>
+      <td rowspan="5"><i>anat/</i></td>
       <td><i>bibsnet/</i> [<a href="mri/smri/#bibsnet" target="_blank">BIBSNet</a>]</td>
       <td><code>img_bibsnet_space-<span class="blue-text">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes</code></td>
     </tr>
@@ -617,8 +582,12 @@ Expand the sections below to see a list of measures associated with each domain 
       </td>
     </tr>
     <tr>
-      <td rowspan="3"><span class="tooltip tooltip-right"><a href="mri/fmri" target="_blank">fMRI</a><span class="tooltiptext">Functional MRI</span></span></td>
-      <td rowspan="3"><i>func/</i></td>
+      <td><i>NA</i> - <a href="mri/qc/#brainswipes" target="_blank">BrainSwipes</a> QC results</td>
+      <td><code>img_brainswipes_xcpd-T2w</code></td>
+    </tr>
+    <tr>
+      <td rowspan="4"><span class="tooltip tooltip-right"><a href="mri/fmri" target="_blank">fMRI</a><span class="tooltiptext">Functional MRI</span></span></td>
+      <td rowspan="4"><i>func/</i></td>
       <td><i>mriqc/</i> [<a href="mri/fmri/#mriqc" target="_blank">MRIQC</a>]</td>
       <td><code>img_mriqc_bold</code></td>
     </tr>
@@ -632,6 +601,10 @@ Expand the sections below to see a list of measures associated with each domain 
         <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-coverage_bold</code><br>
         <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-reho_bold</code>
       </td>
+    </tr>
+    <tr>
+      <td><i>NA</i> - <a href="mri/qc/#brainswipes" target="_blank">BrainSwipes</a> QC results</td>
+      <td><code>img_brainswipes_xcpd-bold</code></td>
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><a href="mri/qmri" target="_blank">qMRI</a><span class="tooltiptext">Quantitative MRI</span></span></td>      <td><i>anat/</i></td>
