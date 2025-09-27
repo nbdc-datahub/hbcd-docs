@@ -2,7 +2,7 @@
 
 ## Raw BIDS
 
-The `rawdata/` folder includes raw <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> MR Imaging, MR Spectroscopy, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings. The raw data has been converted to BIDS format, organized under subject and session-specific directories for processing through BIDS App pipelines ([see details](../instruments/processing/index.md)). 
+The `rawdata/` folder includes raw file-based data in [BIDS](https://bids-specification.readthedocs.io/en/stable/) format for MR Imaging, MR Spectroscopy, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings. Unlike [tabulated](phenotypes.md) data (tables organized in a uniform way across study instruments), file-based data comes in a variety of formats, some of which are highly specific to a given modality such as MRI.
 
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
@@ -27,7 +27,7 @@ hbcd/
 </pre>
 <p></p>
 
-*Click the following links to see the full file contents of each raw BIDS folder documented in the measure documentation pages:*
+*Click the following links to see the full file contents of each raw BIDS folder in the measure documentation pages:*
 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
@@ -92,6 +92,10 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 </tr>
 </tbody>
 </table>
+
+### Fields Reporting Age
+
+See description of fields reporting age under Age Variable Definitions > <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Raw File-Based Data</a>.
 
 ### BIDS Conversion Procedures
 
@@ -242,11 +246,6 @@ QALAS conversion yielded either five 3D NIfTI files or one 4D file with five vol
 </tbody>
 </table>
 </div>
-
-### Fields Reporting Age
-
-See description of fields reporting age under Age Variable Definitions > <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Raw File-Based Data</a>.
-
 
 ## Processed Derivatives
 
