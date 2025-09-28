@@ -74,7 +74,7 @@ EEG release data include both **file-based** (raw and processed data files in mo
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The BIDS <code>eeg/</code> folder contains EEG task recordings, recording system and electrode location metadata, and events for each task:</p>
+<p>The BIDS <code>eeg/</code> folder contains EEG task recordings, recording system and electrode location metadata, and events for each task. <i>See <a href="../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
