@@ -34,7 +34,7 @@ Diffusion MRI release data include both **file-based** (raw and processed data f
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Raw diffusion files include DWI runs (<code>*_dwi.nii.gz</code>), magnitude and orientation of the diffusion gradients for each volume (<code>bval</code> and <code>bvec</code>, respectively), and single-band reference files (<code>*_sbref.nii.gz</code>). All images were acquired in both AP (<code>dir-AP</code>) and PA (<code>dir-PA</code>) phase encoding directions.</p>
+<p>Raw diffusion files include DWI runs (<code>*_dwi.nii.gz</code>), magnitude and orientation of the diffusion gradients for each volume (<code>bval</code> and <code>bvec</code>, respectively), and single-band reference files (<code>*_sbref.nii.gz</code>). All images were acquired in both AP (<code>dir-AP</code>) and PA (<code>dir-PA</code>) phase encoding directions. <i>See <a href="../../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
 <pre class="folder-tree">
 dwi/
 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.bval

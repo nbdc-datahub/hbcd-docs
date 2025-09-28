@@ -36,7 +36,7 @@ MRS release data include **file-based** (raw and processed data files in modalit
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>MRS files include metabolite (<code>*_svs.nii.gz</code>) and water reference (<code>*_ref.nii.gz</code>) data acquired via short-echo-time (TE = 35 ms; <code>acq-shortTE</code>) and HERCULES (spectral-edited, TE = 80 ms; <code>acq-hercules</code>). The JSON sidecar files include the dimensions of the NIfTI-MRS data array, holding different coil elements in dimension 5 and different transients in dimension 6.</p>
+<p>MRS files include metabolite (<code>*_svs.nii.gz</code>) and water reference (<code>*_ref.nii.gz</code>) data acquired via short-echo-time (TE = 35 ms; <code>acq-shortTE</code>) and HERCULES (spectral-edited, TE = 80 ms; <code>acq-hercules</code>). The JSON sidecar files include the dimensions of the NIfTI-MRS data array, holding different coil elements in dimension 5 and different transients in dimension 6. <i>See <a href="../../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 

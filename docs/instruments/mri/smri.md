@@ -34,7 +34,7 @@ Structural MRI release data include both **file-based** (raw and processed data 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Anatomical files include T1- and T2-weighted MRI images:</p>
+<p>Anatomical files include T1- and T2-weighted MRI images with accompanying sidecar JSONS for metadata. <i>See <a href="../../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 

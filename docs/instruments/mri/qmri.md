@@ -48,7 +48,7 @@ Quantitative MRI release data include **file-based** (raw and processed data fil
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>qMRI files are located under the <code>anat/</code> directory along with anatomical MRI files, including QALAS and localizer files (<code>acq-mrsLocAx</code> and <code>acq-mrsLocCor</code> indicate axial and coronal localizers, respectively):</p>
+<p>qMRI files are located under the <code>anat/</code> directory along with anatomical MRI files, including QALAS and localizer files (<code>acq-mrsLocAx</code> and <code>acq-mrsLocCor</code> indicate axial and coronal localizers, respectively). <i>See <a href="../../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 

@@ -1,14 +1,13 @@
 # Tabulated Data
 
-Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**. This includes behavior, demographics, toxicology results, and data derived from brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. 
-
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-     See full list of tables included in the release under <a href="../../instruments/#instruments-by-domain" target="_blank">Instruments by Domain</a>.
-  </span>
+<p>
+<div id="agefields" class="table-banner">
+  <span class="emoji"><i class="fa fa-hourglass-half"></i><i class="fa fa-person-cane"></i></span>
+<span class="text">See <a href="../../instruments/agevariables/#tabulated-instrument-data" target="_blank">Age Variable Definitions</a> for documentation on fields reporting age in tabulated instrument data.</span>
 </div>
-<p></p>
+</p>
+
+Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**. This includes <a href="../../instruments/#behavior-biology-environment" target="_blank">Behavior, Biology, & Environment</a> instruments, <a href="../../instruments/#demographics-visit-information" target="_blank">Demographics & Visit</a> data, and tabulated derivatives, i.e. file-based derivatives of varied, often modality-specific format, organized as tabulated data for usability ([see details](overview.md#warning)).
 
 Key features of tabulated data include:
 
@@ -53,10 +52,6 @@ Each table includes “identifier columns” for participant ID, visit number, a
 </tr>
 </tbody>
 </table>
-
-## Fields Reporting Age
-
-See description of fields reporting age in the tabulated data under Age Variable Definitions > <a href="../../instruments/agevariables/#tabulated-instrument-data" target="_blank">Tabulated Instrument Data</a>.
 
 ## File Types
 

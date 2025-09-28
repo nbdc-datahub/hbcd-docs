@@ -2,6 +2,13 @@
 
 ## Raw BIDS
 
+<p>
+<div id="agefields" class="table-banner">
+  <span class="emoji"><i class="fa fa-hourglass-half"></i><i class="fa fa-person-cane"></i></span>
+<span class="text">See <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Age Variable Definitions</a> for documentation on fields reporting age in raw BIDS data.</span>
+</div>
+</p>
+
 The `rawdata/` folder includes raw file-based data in [BIDS](https://bids-specification.readthedocs.io/en/stable/) format for MR Imaging, MR Spectroscopy, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings. Unlike [tabulated](phenotypes.md) data (tables organized in a uniform way across study instruments), file-based data comes in a variety of formats, some of which are highly specific to a given modality such as MRI.
 
 <pre class="folder-tree" style="font-size: 11px;">
@@ -93,9 +100,7 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 </tbody>
 </table>
 
-### Fields Reporting Age
 
-See description of fields reporting age under Age Variable Definitions > <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Raw File-Based Data</a>.
 
 ### BIDS Conversion Procedures
 

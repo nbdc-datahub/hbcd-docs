@@ -72,33 +72,26 @@ Functional MRI release data include both **file-based** (raw and processed data 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>BOLD functional resting state data are located under <code>func/</code>. Each BOLD run has an associated pair of EPI fieldmaps acquired for distortion correction under <code>fmap/</code> in AP (<code>dir-AP</code>) and PA (<code>dir-PA</code>) phase encoding directions. <strong>Siemens, GE, and Philips additionally include B1 fieldmaps</strong>: For Siemens, <code>acq-&lt;anat|fmap&gt;</code> denotes the anatomical (like) image and scaled flip angle map whereas for GE and Philips, <code>acq-tr&lt;1|2&gt;</code> denotes the first and second TR image (see BIDS specification for quantitative MRI: <a href="https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html#tb1tfl-and-tb1rfm-specific-notes">TB1TFL and TB1RFM</a> and <a href="https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html#tb1afi-specific-notes">TB1AFI</a>):</p>
+<p>BOLD functional resting state data are located under <code>func/</code>. Each BOLD run has an associated pair of EPI fieldmaps acquired for distortion correction under <code>fmap/</code> in AP and PA (<code>dir-&lt;AP|PA&gt;</code>) phase encoding directions. <strong>Siemens, GE, and Philips additionally include B1 fieldmaps</strong>: For Siemens, <code>acq-&lt;anat|fmap&gt;</code> denotes the anatomical (like) image and scaled flip angle map whereas for GE and Philips, <code>acq-tr&lt;1|2&gt;</code> denotes the first and second TR image (see <a href="https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html">qMRI BIDS specifications</a> for details). <i>See <a href="../../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
     |__ sub-<span class="label">{ID}</span>/
-        |__ ses-<span class="label">{V0X}</span>/
+        |__ ses-<span class="label">{V0X}</span>/ # <span class="hashtag">All image files include side JSONs</span>
             |__ func/
             |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_bold.nii.gz
-            |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_bold.json
             |
             |__ fmap/
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-AP_run-<span class="label">{X}</span>_epi.nii.gz
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-AP_run-<span class="label">{X}</span>_epi.json
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-PA_run-<span class="label">{X}</span>_epi.nii.gz
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-PA_run-<span class="label">{X}</span>_epi.json
                 |
                 | <span class="hashtag"># SIEMENS ONLY:</span>
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-anat_run-<span class="label">{X}</span>_TB1TFL.nii.gz
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-anat_run-<span class="label">{X}</span>_TB1TFL.json
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-fmap_run-<span class="label">{X}</span>_TB1TFL.nii.gz
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-fmap_run-<span class="label">{X}</span>_TB1TFL.json
                 |
                 | <span class="hashtag"># GE AND PHILIPS ONLY:</span>
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-tr1_run-<span class="label">{X}</span>_TB1AFI.nii.gz 
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-tr1_run-<span class="label">{X}</span>_TB1AFI.json 
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-tr2_run-<span class="label">{X}</span>_TB1AFI.nii.gz
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-tr2_run-<span class="label">{X}</span>_TB1AFI.json
 </pre>
 </div>
 
