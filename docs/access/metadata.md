@@ -609,7 +609,7 @@ Some variables do not fully follow the standard naming convention, which will be
 <p style="font-size: 1.4em; font-weight: bold; padding: 10px;" align="center">
 <code>domain_pipeline_derivative</code>
 </p>
-<p>For example, the following subject/session-level <a href="../derivatives/#xcp-d-xcp_d" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
+<p>For example, the following subject/session-level <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <tr>
 <td><b>File-based derivatives</b></td>

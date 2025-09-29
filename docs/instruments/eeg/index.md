@@ -5,7 +5,7 @@ HBCD includes four electroencephalography (EEG) tasks acquired during visits V03
 <ul>
 <li><a href="mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></li>
 <li><a href="faces" target="_blank">Faces (FACE)</a></li>
-<li><a href="dmri" target="_blank">Video Resting State (RS)</a></li>
+<li><a href="videors" target="_blank">Video Resting State (RS)</a></li>
 <li><a href="vep" target="_blank">Visual Evoked Potential (VEP)</a></li>
 </ul>
 

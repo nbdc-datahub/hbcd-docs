@@ -110,7 +110,7 @@
     <tr>
       <td>2</td>
       <td style="word-wrap: break-word; white-space: normal;">V03+ structural and functional MRI derivatives</td>
-      <td style="word-wrap: break-word; white-space: normal;">Processed <a href="../../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank" rel="noopener noreferrer">Infant fMRIPrep</a> and <a href="../../datacuration/derivatives/#xcp-d-xcp_d" target="_blank" rel="noopener noreferrer">XCP-D</a> derivatives for visits V03+</td>
+      <td style="word-wrap: break-word; white-space: normal;">Processed <a href="../../instruments/mri/fmri/#nibabies" target="_blank" rel="noopener noreferrer">Infant fMRIPrep</a> and <a href="../../datacuration/derivatives/#xcp-d-xcp_d" target="_blank" rel="noopener noreferrer">XCP-D</a> derivatives for visits V03+</td>
     </tr>
     <tr>
       <td>3</td>
