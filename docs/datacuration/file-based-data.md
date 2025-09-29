@@ -275,8 +275,7 @@ hbcd/
     |__ qsiprep/                         
     |__ qsirecon/                        
     |__ qsirecon-DIPYDKI/                
-    |__ qsirecon-DSIStudio/               
-    |__ qsirecon-NODDI/                  
+    |__ qsirecon-DSIStudio/                         
     |__ qsirecon-TORTOISE_model-MAPMRI/  
     |__ qsirecon-TORTOISE_model-tensor/  
     |
