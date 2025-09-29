@@ -30,6 +30,11 @@ For all toxicology screens, continuous variables should be interpreted with caut
 Urine concentrations vary by participant. Urinary concentration corrections can be made using creatinine results from sample validation or specific gravity. Creatinine values are provided for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds.</p>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#biospecimens" target="_blank">see details</a>.</span>
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

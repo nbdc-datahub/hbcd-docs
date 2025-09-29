@@ -56,6 +56,12 @@ The MMN, VEP, and FACE task data for one participant included in the data releas
 The video content for the Resting State task and interstimulus interval (ISI) for the Auditory Mismatch Negativity task both changed between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details. Also note that RS is not a true resting state as there is a visual stimulus present.</p>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../changelog/knownissues/#eeg" target="_blank">see details</a>.</span>
+</div>
+<p></p>
+
 EEG release data include both **file-based** (raw and processed data files in modality-specific formats) and **tabulated** (instrument and derived data in a standardized table format) data.      
 <i>See the <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a full explanation of these data types.</i>
 

@@ -34,6 +34,11 @@
 The co-occurrence of psychiatric symptoms and substance use during pregnancy is well-documented (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2011</a>, <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">Massey et al., 2012</a>). Phenotypic risk in birthing parents may affect offspring neurodevelopment through both prenatal and postnatal mechanisms, beyond direct exposure alone (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2015.11.010">Massey et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2018.02.003">Massey et al., 2018</a>). These factors may confound associations between exposures and neuroimaging or neurodevelopmental outcomes, but they also represent malleable targets for prevention and early intervention. When possible, incorporating parental mental health symptoms as covariates offers a robust strategy to account for these confounding influences.</p> 
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../../changelog/knownissues/#mental-health" target="_blank">see details</a>.</span>
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
