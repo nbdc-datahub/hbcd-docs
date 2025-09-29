@@ -36,17 +36,19 @@ Motion/accelerometry data collected from wearable infant leg sensors includes **
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Axivity AX6 sensor data in the release include <code>_motion.tsv</code> files containing sensor recordings, with accompanying <code>*_channels.tsv</code> files that describe each column. Calibration files use the acquisition label <code>acq-calibration</code>, while 72-hr recordings use <code>acq-primary</code>. The <code>task</code> label indicates sensor placement: <code>LeftLegMovement</code> for the left leg or <code>RightLegMovement</code> for the right. Each <code>.tsv</code> file is paired with a JSON sidecar containing recording metadata. See <a href="https://doi.org/10.1038/s41597-024-03559-8" target="_blank">Jeung et al., 2024</a> for details.</p>
+<p>Axivity AX6 sensor data in the release include <code>_motion.tsv</code> files containing left and right leg sensor recordings, <code>*_channels.tsv</code> files that describe each column, and sidecar JSON files with recording metadata. See <a href="https://doi.org/10.1038/s41597-024-03559-8" target="_blank">Jeung et al., 2024</a> for BIDS conversion details for motion data.</p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ rawdata/ 
    |_ sub-<span class="label">{ID}</span>/   
       |_ ses-<span class="label">{V0X}</span>/
          |_ motion/  
-         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_motion.tsv  
-         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_motion.json
-         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_channels.tsv  
-         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="label">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="label">&lt;calibration|primary&gt;</span>_channels.json
+         <span class="hashtag"># Calibration files</span>
+         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="placeholder">calibration</span>_motion.tsv  <span class="hashtag">(+JSON)</span>
+         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="placeholder">calibration</span>_channels.tsv  <span class="hashtag">(+JSON)</span>
+         <span class="hashtag"># 72-hr recordings</span>
+         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="placeholder">primary</span>_motion.tsv  <span class="hashtag">(+JSON)</span>
+         |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-<span class="placeholder">primary</span>_channels.tsv  <span class="hashtag">(+JSON)</span>
 </pre>
 </div>
 

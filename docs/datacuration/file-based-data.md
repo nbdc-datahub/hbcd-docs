@@ -128,7 +128,7 @@ Raw data for each modality are converted to the BIDS standard via the following 
     </tr>
     <tr>
       <td><strong>Sensors</strong></td>
-      <td style="word-wrap: break-word; white-space: normal;">???</td>
+      <td style="word-wrap: break-word; white-space: normal;">See <a href="https://www.nature.com/articles/s41597-024-03559-8">Jeung et al., 2024</a> <i>Motion-BIDS: an extension to the brain imaging data structure to organize motion data for reproducible research</i></td>
     </tr>
   </tbody>
 </table>
