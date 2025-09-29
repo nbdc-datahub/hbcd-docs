@@ -36,7 +36,13 @@ Motion/accelerometry data collected from wearable infant leg sensors includes **
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Axivity AX6 sensor data in the release include <code>_motion.tsv</code> files containing left and right leg sensor recordings, <code>*_channels.tsv</code> files that describe each column, and sidecar JSON files with recording metadata. See <a href="https://doi.org/10.1038/s41597-024-03559-8" target="_blank">Jeung et al., 2024</a> for BIDS conversion details for motion data.</p>
+<p>
+The release includes Axivity AX6 wearable sensor data organized in BIDS format. 
+For each session, <code>_motion.tsv</code> files contain recordings from the left and right leg sensors, 
+with corresponding <code>*_channels.tsv</code> files describing each column (and sidecar JSON files providing recording metadata). 
+See Further details on the BIDS conversion of motion data are available in 
+<a href="https://doi.org/10.1038/s41597-024-03559-8" target="_blank">Jeung et al., 2024</a>.
+</p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ rawdata/ 
