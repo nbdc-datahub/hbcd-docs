@@ -282,7 +282,7 @@ hbcd/
     |
     |__ osprey/       <span class="hashtag"># MRS</span>
     |__ made/         <span class="hashtag"># EEG</span>
-    |__ hbcd_motion/  <span class="hashtag"># Biosensors Recordings</span>
+    |__ hbcd_motion/  <span class="hashtag"># Biosensor Recordings</span>
 </pre>
 <p></p>
 

@@ -8,7 +8,7 @@
 
 The **HBCD processing pipelines** are a collection of modular tools used to process data from the HBCD study. These pipelines are not exclusive to HBCD, but are general-purpose tools for analyzing a variety of data modalities, including magnetic resonance imaging (**MRI**), electroencephalography (**EEG**), magnetic resonance spectroscopy (**MRS**), and **biosensor data**. The pipelines are designed to be modular and flexible, allowing for customization to meet the specific needs of the HBCD study.
 
-**The following processing pipelines were used for the HBCD study:**
+**The following processing pipelines were used for the HBCD study. Also see a more detailed breakdown by modality with links to derivative folder documentation for HBCD [here](../../datacuration/file-based-data.md#links-to-pipeline-derivatives).**
 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
@@ -72,8 +72,6 @@ The **HBCD processing pipelines** are a collection of modular tools used to proc
 </tr>
 </tbody>
 </table>
-
-
 
 ## Pipeline Standards & Design
 All pipelines used for HBCD data processing must adhere to [HBCD Processing & Analytic Software Standards](standards.md), which require, among other things:
