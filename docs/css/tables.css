@@ -184,6 +184,7 @@ th, td {
   padding: 0.1em 0.1em;
   padding-left: 1px;
   padding-right: 1px;
+  line-height: 1.1; 
 }
 .compact-table-no-vertical-lines ul {
   margin-top: 1rem;
@@ -195,4 +196,3 @@ th, td {
   line-height: 1;
   font-size: 1em !important;
 }
-

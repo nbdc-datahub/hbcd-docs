@@ -1,6 +1,5 @@
 # Study Instruments
-The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)** for the majority of measures. In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, known issues, and references. Full study protocols are available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). See [Upcoming Updates](../changelog/pending.md) for details on what to expect in future releases.
-
+The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)** for the majority of measures. In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Full study protocols are available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). See [Upcoming Updates](../changelog/pending.md) for details on what to expect in future releases.
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
@@ -13,7 +12,7 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 
 - <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
-- File-based data include <a href="../datacuration/rawbids" target="_blank"><b>raw</b></a> and <a href="../datacuration/derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
+- File-based data include <a href="../datacuration/file-based-data/#raw-bids" target="_blank"><b>raw</b></a> and <a href="../datacuration/file-based-data/#processed-derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
 
 Expand the sections below to see a list of measures associated with each domain included in Release 1.0.
 
@@ -285,56 +284,56 @@ Expand the sections below to see a list of measures associated with each domain 
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/healthhx" target="_blank">Health V1-Health History</a></td>
+  <td><a href="pregexp/pex" target="_blank">Health V1-Health History</a></td>
   <td></td>
   <td>Pre-pregnancy and pregnancy health</td>
   <td><code>pex_bm_health_preg__healthhx</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/vacc" target="_blank">Health V1-Exp & Vaccines</a></td>
+  <td><a href="pregexp/pex" target="_blank">Health V1-Exp & Vaccines</a></td>
   <td></td>
   <td>Vaccines in pregnancy</td>
   <td><code>pex_bm_health_preg__exp__vacc</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/chronconditions" target="_blank">Health V1-Chronic Conditions</a></td>
+  <td><a href="pregexp/pex" target="_blank">Health V1-Chronic Conditions</a></td>
   <td></td>
   <td>Chronic conditions/STIs in pregnancy</td>
   <td><code>pex_bm_health_preg__chroncond</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/illness" target="_blank">Health V1-Illness</a></td>
+  <td><a href="pregexp/pex" target="_blank">Health V1-Illness</a></td>
   <td></td>
   <td>Illness in pregnancy</td>
   <td><code>pex_bm_health_preg__illness</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/er-hosp" target="_blank">Health V1-ER Admissions</a></td>
+  <td><a href="pregexp/pex" target="_blank">Health V1-ER Admissions</a></td>
   <td></td>
   <td>ER visit or hospitalization in pregnancy</td>
   <td><code>pex_bm_health_preg__erhosp</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/medications" target="_blank">Health V1-Medications</a></td>
+  <td><a href="pregexp/pex" target="_blank">Health V1-Medications</a></td>
   <td></td>
   <td>Medications in pregnancy</td>
   <td><code>pex_bm_health_preg__meds</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/end-preg" target="_blank">Health V2-Pregnancy</a></td>
+  <td><a href="pregexp/pex" target="_blank">Health V2-Pregnancy</a></td>
   <td></td>
   <td>Health updates up to delivery</td>
   <td><code>pex_bm_healthv2_preg</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/infanthealth" target="_blank">Health V2-Infancy</a></td>
+  <td><a href="pregexp/pex" target="_blank">Health V2-Infancy</a></td>
   <td></td>
   <td>Delivery and birth outcomes</td>
   <td><code>pex_bm_healthv2_inf</code></td>
@@ -438,7 +437,7 @@ Expand the sections below to see a list of measures associated with each domain 
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="SED/demo-cg" target="_blank">HBCD Demographics</a></td>
+      <td><a href="SED/v01-demo/" target="_blank">HBCD Demographics</a></td>
       <td>V1</td>
       <td>Demographics (Adult Visit 1)</td>
       <td><code>sed_bm_demo</code></td>
@@ -495,8 +494,6 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><span class="emoji"><i class="fa-regular fa-lightbulb"  style="font-size: 16px;"></i></span> <strong style="font-size: 16px;"> See <a href="eeg">EEG Overview page</strong></a></p>
-<br>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
@@ -528,12 +525,12 @@ Expand the sections below to see a list of measures associated with each domain 
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-      <td><a href="../datacuration/rawbids/#eeg" target="_blank">All Tasks - <strong><i>Raw BIDS</i></strong></a></td>
-      <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/eeg/</i></td>
+      <td><a href="eeg/#rawbids" target="_blank">All Tasks - <strong><i>Raw BIDS</i></strong></a></td>
+      <td><i>rawdata/sub-{ID}/ses-{V0X}/eeg/</i></td>
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-      <td><a href="../datacuration/derivatives/#eeg-hbcd-made" target="_blank">All Tasks - <strong><i>HBCD-MADE Derivatives</i></strong></a></td>
+      <td><a href="eeg/#made" target="_blank">All Tasks - <strong><i>HBCD-MADE Derivatives</i></strong></a></td>
       <td><i>derivatives/made/</i></td>
     </tr>
   </tbody>
@@ -551,107 +548,96 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><span class="emoji"><i class="fa-regular fa-lightbulb"  style="font-size: 16px;"></i></span> <strong style="font-size: 16px;">See MR <a href="mri">Overview</a> and <a href="mri/qc">Quality Control Procedures</a></strong></p>
-<br><br>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-    <th colspan="5" style="font-size: 16px;">Tabulated Data Only</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th style="width: 10%;">Modality</th>
-      <th style="width: 30%;">Name</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Name</th>
-    </tr>
-  </thead>
-    <tbody>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td>sMRI</td>
-      <td><a href="mri/qc/#brainswipes" target="_blank">BrainSwipes Quality Control</a></td>
-      <td>Manual QC of XCP-D Outputs</td>
-      <td><code>img_brainswipes_xcpd-T2w</code><br>
-    </tr>
-        <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td>fMRI</td>
-      <td><a href="mri/qc/#brainswipes" target="_blank">BrainSwipes Quality Control</a></td>
-      <td>Manual QC of XCP-D Outputs</td>
-      <td><code>img_brainswipes_xcpd-bold</code><br>
-    </tr>
-</tbody>
-</table>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
   <thead>
-  <tr>
-    <th colspan="4" style="font-size: 16px;">File-Based and Derived Tabulated Data</th>
-  </tr>
     <tr>
-      <th style="width: 10%;">Modality</th>
-      <th style="width: 10%;"><a href="../datacuration/rawbids" target="_blank"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Raw BIDS</a></th>
-      <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> <a href="../datacuration/derivatives" target="_blank">Derivatives</a> [Source <a href="processing" target="_blank">Pipeline</a>]</th>
+      <th style="width: 1%;"></th>
+      <th style="width: 10%;"><a href="../datacuration/file-based-data/#raw-bids" target="_blank"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Raw BIDS</a></th>
+      <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> <a href="../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> [Source <a href="processing" target="_blank">Pipeline</a>]</th>
       <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Tables Derived from Pipeline Derivatives</th>
     </tr>
   </thead>
     <tbody>
     <tr>
-      <td rowspan="4"><span class="tooltip tooltip-right"><a href="mri/smri" target="_blank">sMRI</a><span class="tooltiptext">Structural MRI</span></span></td>
-      <td rowspan="4"><i>anat/</i></td>
-      <td><i>bibsnet/</i> [<a href="../datacuration/derivatives/#bibsnet-bibsnet" target="_blank">BIBSNet</a>]</td>
+      <td rowspan="5"><span class="tooltip tooltip-right"><a href="mri/smri" target="_blank">sMRI</a><span class="tooltiptext">Structural MRI</span></span></td>
+      <td rowspan="5"><i>anat/</i></td>
+      <td><i>bibsnet/</i> [<a href="mri/smri/#bibsnet" target="_blank">BIBSNet</a>]</td>
       <td><code>img_bibsnet_space-<span class="blue-text">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes</code></td>
     </tr>
     <tr>
-      <td><i>mriqc/</i> [<a href="../datacuration/derivatives/#mriqc-mriqc" target="_blank">MRIQC</a>]</td>
+      <td><i>mriqc/</i> [<a href="mri/smri/#mriqc" target="_blank">MRIQC</a>]</td>
       <td><code>img_mriqc_<span class="blue-text">&lt;T1w|T2w&gt;</span></code></td>
     </tr>
     <tr>
-      <td><i>nibabies/</i> [<a href="../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank">Infant-fMRIPrep</a>]</td>
+      <td><i>nibabies/</i> [<a href="mri/fmri/#nibabies" target="_blank">Infant-fMRIPrep</a>]</td>
       <td>None</td>
     </tr>
     <tr>
-      <td><i>xcp_d/</i> [<a href="../datacuration/derivatives/#xcp-d-xcp_d" target="_blank">XCP-D</a>]</td>
+      <td><i>xcp_d/</i> [<a href="mri/fmri/#xcpd" target="_blank">XCP-D</a>]</td>
       <td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph</code><br>
         <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-sulc_morph</code><br>
         <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-thickness_morph</code>
       </td>
     </tr>
     <tr>
-      <td rowspan="3"><span class="tooltip tooltip-right"><a href="mri/fmri" target="_blank">fMRI</a><span class="tooltiptext">Functional MRI</span></span></td>
-      <td rowspan="3"><i>func/</i></td>
-      <td><i>mriqc/</i> [<a href="../datacuration/derivatives/#mriqc-mriqc" target="_blank">MRIQC</a>]</td>
+      <td><i>NA</i> - <a href="mri/qc/#brainswipes" target="_blank">BrainSwipes</a> QC results</td>
+      <td><code>img_brainswipes_xcpd-T2w</code></td>
+    </tr>
+    <tr>
+      <td rowspan="4"><span class="tooltip tooltip-right"><a href="mri/fmri" target="_blank">fMRI</a><span class="tooltiptext">Functional MRI</span></span></td>
+      <td rowspan="4"><i>func/</i></td>
+      <td><i>mriqc/</i> [<a href="mri/fmri/#mriqc" target="_blank">MRIQC</a>]</td>
       <td><code>img_mriqc_bold</code></td>
     </tr>
     <tr>
-      <td><i>nibabies/</i> [<a href="../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank">Infant-fMRIPrep</a>]</td>
+      <td><i>nibabies/</i> [<a href="mri/fmri/#nibabies" target="_blank">Infant-fMRIPrep</a>]</td>
       <td>None</td>
     </tr>
     <tr>
-      <td><i>xcp_d/</i> [<a href="../datacuration/derivatives/#xcp-d-xcp_d" target="_blank">XCP-D</a>]</td>
+      <td><i>xcp_d/</i> [<a href="mri/fmri/#xcpd" target="_blank">XCP-D</a>]</td>
       <td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-alff_bold</code><br>
         <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-coverage_bold</code><br>
         <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-reho_bold</code>
       </td>
     </tr>
     <tr>
+      <td><i>NA</i> - <a href="mri/qc/#brainswipes" target="_blank">BrainSwipes</a> QC results</td>
+      <td><code>img_brainswipes_xcpd-bold</code></td>
+    </tr>
+    <tr>
       <td><span class="tooltip tooltip-right"><a href="mri/qmri" target="_blank">qMRI</a><span class="tooltiptext">Quantitative MRI</span></span></td>      <td><i>anat/</i></td>
-      <td><i>qmri_postproc/</i> [<a href="../datacuration/derivatives//#quantitative-mri-symri-qmri-postproc" target="_blank">qMRI Postproc</a>]</td>
+      <td><i>qmri_postproc/</i> [<a href="mri/qmri/#derivatives" target="_blank">qMRI Postproc</a>]</td>
       <td>None</td>
     </tr>
     <tr>
-      <td rowspan="2"><span class="tooltip tooltip-right"><a href="mri/dmri" target="_blank">dMRI</a><span class="tooltiptext">Diffusion MRI</span></span></td>
-      <td rowspan="2"><i>dwi/</i></td>
-      <td><i>qsiprep/</i> [<a href="../datacuration/derivatives/#qsiprep-qsiprep" target="_blank">QSIPrep</a>]</td>
+      <td rowspan="6"><span class="tooltip tooltip-right"><a href="mri/dmri" target="_blank">dMRI</a><span class="tooltiptext">Diffusion MRI</span></span></td>
+      <td rowspan="6"><i>dwi/</i></td>
+      <td><i>qsiprep/</i> [<a href="mri/dmri/#qsiprep" target="_blank">QSIPrep</a>]</td>
       <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
     </tr>
     <tr>
-      <td><i>qsirecon*/</i> [<a href="../datacuration/derivatives/#qsirecon" target="_blank">QSIRecon</a>]</td>
+      <td><i>qsirecon/</i> [<a href="mri/dmri/#qsirecon" target="_blank">QSIRecon</a>]</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><a href="mri/dmri/#qsirecon-DSIStudio" target="_blank"><i>qsirecon-DSIStudio/</i></a></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><a href="mri/dmri/#qsirecon-DIPYDKI" target="_blank"><i>qsirecon-DIPYDKI/</i></a></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><a href="mri/dmri/#qsirecon-TORTOISE" target="_blank"><i>qsirecon-TORTOISE_model-MAPMRI/</i></a></td>
+      <td>None</td>
+    </tr>
+      <tr>
+      <td><a href="mri/dmri/#qsirecon-TORTOISE" target="_blank"><i>qsirecon-TORTOISE_model-tensor/</i></a></td>
       <td>None</td>
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><a href="mri/mrs" target="_blank">MRS</a><span class="tooltiptext">MR Spectroscopy</span></span></td>      <td><i>mrs/</i></td>
-      <td><i>osprey/</i> [<a href="../datacuration/derivatives/#mr-spectroscopy-osprey-bids" target="_blank">OSPREY-BIDS</a>]</td>
+      <td><i>osprey/</i> [<a href="mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a>]</td>
       <td>
         <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
         <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
@@ -666,7 +652,7 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
   <tr>
     <td colspan="4">
-      <strong>Label Values Legend</strong><br>
+      <strong>end</strong><br>
       <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations): 4S-{1-10}56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)<br>
       <b style="color: #0077cc;">&lt;Q&gt;</b> (quantification method): HERCULES_diff1, HERCULES_diff2, HERCULES_sum, unedited_A
     </td>
@@ -706,12 +692,12 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td><a href="../datacuration/rawbids/#motion" target="_blank">Raw BIDS</a></td>
-    <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/motion/</i></td>
+    <td><a href="sensors/wearsensors/#rawbids" target="_blank">Raw BIDS</a></td>
+    <td><i>rawdata/sub-{ID}/ses-{V0X}/motion/</i></td>
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td><a href="../datacuration/derivatives/#biosensors-hbcd-motion" target="_blank">Derivatives</a></td>
+    <td><a href="sensors/wearsensors/#derivatives" target="_blank">Derivatives</a></td>
     <td><i>derivatives/hbcd-motion/</i></td>
   </tr>
   </tbody>

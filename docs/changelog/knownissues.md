@@ -1,5 +1,6 @@
+
 # Known Issues
-The following issues have been identified in the current HBCD data release. **We are actively working to address them and will include fixes in either the patch (Release 1.1) or next Release 2.0 unless stated otherwise**. This page will be updated as new issues are discovered. If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
+The following issues have been identified in the current HBCD data release. **We are actively working to address them and will include fixes in either the patch Release 1.1 or Release 2.0 unless stated otherwise**. This page will be updated as new issues are discovered. If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
 
 ## General
 ###### <span class="emoji" style="color: #f97316;"><i class="fas fa-bug"></i></span> Instruction Metadata - Caution, Please Read Carefully
@@ -68,13 +69,13 @@ There are two participants with negative gestational ages in the urine biosample
 
 ## EEG
 ###### <span class="emoji" style="color: #f97316;"><i class="fas fa-bug"></i></span> HBCD-MADE Resting-State Derivatives
-The HBCD-MADE summary statistics for resting-state EEG data contained in the derivative file `processed_data/*_task-RS_powerSummaryStats.csv` (see HBCD-MADE derivatives structure [here](../datacuration/derivatives.md#eeg-hbcd-made) for details) are incorrect due to a former bug in the pipeline and should not be used for analysis. Users should instead generate these files themselves using scripts provided via [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/en/stable/) for extracting summary statistics.          
+The HBCD-MADE summary statistics for resting-state EEG data contained in the derivative file `processed_data/*_task-RS_powerSummaryStats.csv` (see [HBCD-MADE derivatives structure](../instruments/eeg/index.md#made) for details) are incorrect due to a former bug in the pipeline and should not be used for analysis. Users should instead generate these files themselves using scripts provided via [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/en/stable/) for extracting summary statistics.          
 ***Expected Fix: R1.1***
 --------------------------  
 
 ## Imaging Data
 ###### <span class="emoji" style="color: #f97316;"><i class="fas fa-bug"></i></span> Run ID Order May Be Incorrect
-For HBCD BIDS data with multiple runs, the run number displayed in the `run-<label>` field is not guaranteed to reflect the chronological acquisition order. This applies to both raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data, as well as derived <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data. Despite this, the data remain internally consistent — for example, the run IDs in the raw BIDS data match the corresponding runs in the processed BIDS data.               
+For HBCD BIDS data with multiple runs, the run number displayed in the `run-{X}` field is not guaranteed to reflect the chronological acquisition order. This applies to both raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data, as well as derived <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data. Despite this, the data remain internally consistent — for example, the run IDs in the raw BIDS data match the corresponding runs in the processed BIDS data.               
 ***Expected Fix: R2.0***
 --------------------------  
 

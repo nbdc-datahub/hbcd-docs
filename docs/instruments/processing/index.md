@@ -8,7 +8,7 @@
 
 The **HBCD processing pipelines** are a collection of modular tools used to process data from the HBCD study. These pipelines are not exclusive to HBCD, but are general-purpose tools for analyzing a variety of data modalities, including magnetic resonance imaging (**MRI**), electroencephalography (**EEG**), magnetic resonance spectroscopy (**MRS**), and **biosensor data**. The pipelines are designed to be modular and flexible, allowing for customization to meet the specific needs of the HBCD study.
 
-**The following processing pipelines were used for the HBCD study:**
+**The following processing pipelines were used for the HBCD study. Also see a more detailed breakdown by modality with links to derivative folder documentation for HBCD [here](../../datacuration/file-based-data.md#links-to-pipeline-derivatives).**
 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
@@ -73,8 +73,6 @@ The **HBCD processing pipelines** are a collection of modular tools used to proc
 </tbody>
 </table>
 
-
-
 ## Pipeline Standards & Design
 All pipelines used for HBCD data processing must adhere to [HBCD Processing & Analytic Software Standards](standards.md), which require, among other things:
 
@@ -103,7 +101,7 @@ All processing containers are available on [Docker Hub](https://hub.docker.com/)
 
 With the exception of TB1 MRI and electrocardiogram (ECG) data, raw BIDS files are included in the release only if they were used in at least one processing pipeline, ensuring alignment with derived pipeline outputs. Since HBCD employs multiple pipelines — each with its own requirements — the released data represent the union of all files that meet at least one pipeline’s criteria. 
 
-For some data categories, files are selected for processing based on pipeline-specific criteria detailed under *Quality Control Selection Information* in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/latest/tool_details.html#tool-names) section of the HBCD Processing website. For imaging data that underwent [raw data quality control](../mri/qc.md#raw-mr-data-qc), only files that pass are included in the data release and utilized for data processing. All quality control information is stored in the `sub-<label>_ses-<label>_scans.tsv` file located in each BIDS session folder. This file is queried prior to processing to determine which files to include/exclude (e.g. based on thresholds for `QU_motion`, `acq_motion`, `brain_SNR`, etc.). 
+For some data categories, files are selected for processing based on pipeline-specific criteria detailed under *Quality Control Selection Information* in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/latest/tool_details.html#tool-names) section of the HBCD Processing website. For imaging data that underwent [raw data quality control](../mri/qc.md#raw-mr-data-qc), only files that pass are included in the data release and utilized for data processing. All quality control information is stored in the `sub-{ID}_ses-{V0X}_scans.tsv` file located in each BIDS session folder. This file is queried prior to processing to determine which files to include/exclude (e.g. based on thresholds for `QU_motion`, `acq_motion`, `brain_SNR`, etc.). 
 
 There are some exceptions: for instance, MRS localizers are not excluded from processing based on QC alone. Data curation is instead performed during OSPREY-BIDS processing, which prioritizes localizer timing over QC (see details [here](https://osprey-bids.readthedocs.io/en/2.4.3/processing_pipeline_details.html)). 
 

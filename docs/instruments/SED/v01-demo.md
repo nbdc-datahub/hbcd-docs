@@ -149,7 +149,7 @@ Also see <a href="../../demo/basicdemo" target="_blank">Basic Demographics</a>, 
     <td>Hamilton, et al. (2011)</td>
     </tr>
     <tr>
-		<td>Sexual Orientation (<i>available Release 1.1 - <a href="../../../changelog/pending/#inclusion-of-birth-parent-sexual-orientation">see details</a></i>)</td>
+    <td>Sexual Orientation (<i>available Release 1.1 - <a href="../../../changelog/pending/#inclusion-of-birth-parent-sexual-orientation">see details</a></i>)</td>
 		<td><a href="https://www.phenxtoolkit.org/protocols/view/11701">PhenX</a></td>
 		<td>Hamilton, et al. (2011)</td>
 	</tr>

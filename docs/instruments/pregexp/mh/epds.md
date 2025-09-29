@@ -24,7 +24,6 @@
   <span class="text">This data has known issues - <a href="../../../../changelog/knownissues/#mental-health" target="_blank">see details</a>.</span>
 </div>
 
-
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
