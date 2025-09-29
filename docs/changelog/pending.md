@@ -154,24 +154,24 @@
     <tr>
       <td>1</td>
       <td>DICOMs</td>
-      <td style="word-wrap: break-word; white-space: normal;">Addition of source DICOMs to file-based data for <a href="../../datacuration/rawbids" target="_blank">raw BIDS</a> for all imaging modalities</td>
+      <td style="word-wrap: break-word; white-space: normal;">Addition of source DICOMs to file-based data for <a href="../../datacuration/file-based-data/#raw-bids" target="_blank">raw BIDS</a> for all imaging modalities</td>
     </tr>
     <tr>
       <td>2</td>
       <td style="word-wrap: break-word; white-space: normal;">V03+ structural and functional MRI derivatives</td>
-      <td style="word-wrap: break-word; white-space: normal;">Processed <a href="../../datacuration/derivatives/#infant-fmriprep-nibabies" target="_blank" rel="noopener noreferrer">Infant fMRIPrep</a> and <a href="../../datacuration/derivatives/#xcp-d-xcp_d" target="_blank" rel="noopener noreferrer">XCP-D</a> derivatives for visits V03+</td>
+      <td style="word-wrap: break-word; white-space: normal;">Processed <a href="../../instruments/mri/fmri/#nibabies" target="_blank" rel="noopener noreferrer">Infant fMRIPrep</a> and <a href="../../instruments/mri/fmri/#xcpd" target="_blank" rel="noopener noreferrer">XCP-D</a> derivatives for visits V03+</td>
     </tr>
     <tr>
       <td>3</td>
       <td style="word-wrap: break-word; white-space: normal;">MRI Scanner Information</td>
-      <td style="word-wrap: break-word; white-space: normal;">MRI Scanner Information for all scanners used at each site will be added to the <code>sub-&lt;label&gt;_ses-&lt;label&gt;_scans.tsv</code> file (<a href="../../datacuration/rawbids/#participant-session-scan-level-data" target="_blank" rel="noopener noreferrer">see details</a>), including ScannerManufacturer, ScannerModel, ScannerSoftwareVersion, and ScannerSerialNumber (used to differentiate different scanners at the same site). Note that this information is currently available in the sidecar <code>.json</code> files that accompany the raw image data, e.g.:
+      <td style="word-wrap: break-word; white-space: normal;">MRI Scanner Information for all scanners used at each site will be added to the <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code> file (<a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank" rel="noopener noreferrer">see details</a>), including ScannerManufacturer, ScannerModel, ScannerSoftwareVersion, and ScannerSerialNumber (used to differentiate different scanners at the same site). Note that this information is currently available in the sidecar JSON files that accompany the raw image data, e.g.:
         <pre style="font-size: 12px;">
         hbcd/
         |__ rawdata/ 
-            |__ sub-<span class="label">&lt;label&gt;</span>/
-                |__ ses-<span class="label">&lt;label&gt;</span>/
+            |__ sub-<span class="label">&lt;ID&gt;</span>/
+                |__ ses-<span class="label">&lt;V0X&gt;</span>/
                     |__ anat/
-                        |__ sub-<span class="label">&lt;label&gt;</span>_ses-<span class="label">&lt;label&gt;</span>_run-<span class="label">&lt;label&gt;</span>_T1w.json
+                        |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_run-<span class="label">&lt;X&gt;</span>_T1w.json
         </pre>
       </td>
     </tr>
