@@ -13,7 +13,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Please see instructions for data access <a href="../../access/download">here</a>.</p>
+<p>Please see instructions for data access <a href="../../access/download/">here</a>.</p>
 </div>
 
 <div id="faq-nonus" class="notification-banner" onclick="toggleCollapse(this)">
