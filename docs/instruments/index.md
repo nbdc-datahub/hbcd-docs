@@ -471,56 +471,56 @@ Expand the sections below to see a list of measures associated with each domain 
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/healthhx" target="_blank">Health V1-Health History</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-Health History</a></td>
   <td></td>
   <td>Pre-pregnancy and pregnancy health</td>
   <td><code>pex_bm_health_preg__healthhx</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/vacc" target="_blank">Health V1-Exp & Vaccines</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-Exp & Vaccines</a></td>
   <td></td>
   <td>Vaccines in pregnancy</td>
   <td><code>pex_bm_health_preg__exp__vacc</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/chronconditions" target="_blank">Health V1-Chronic Conditions</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-Chronic Conditions</a></td>
   <td></td>
   <td>Chronic conditions/STIs in pregnancy</td>
   <td><code>pex_bm_health_preg__chroncond</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/illness" target="_blank">Health V1-Illness</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-Illness</a></td>
   <td></td>
   <td>Illness in pregnancy</td>
   <td><code>pex_bm_health_preg__illness</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/er-hosp" target="_blank">Health V1-ER Admissions</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-ER Admissions</a></td>
   <td></td>
   <td>ER visit or hospitalization in pregnancy</td>
   <td><code>pex_bm_health_preg__erhosp</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/medications" target="_blank">Health V1-Medications</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-Medications</a></td>
   <td></td>
   <td>Medications in pregnancy</td>
   <td><code>pex_bm_health_preg__meds</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/end-preg" target="_blank">Health V2-Pregnancy</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V2-Pregnancy</a></td>
   <td></td>
   <td>Health updates up to delivery</td>
   <td><code>pex_bm_healthv2_preg</code></td>
 </tr>
 <tr class="section-health">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="pregexp/preghealth/infanthealth" target="_blank">Health V2-Infancy</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V2-Infancy</a></td>
   <td></td>
   <td>Delivery and birth outcomes</td>
   <td><code>pex_bm_healthv2_inf</code></td>
