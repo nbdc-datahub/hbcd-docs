@@ -37,26 +37,19 @@ The use of population descriptors in genetic research can often be varied and in
 <p>Any removal of data during QC will be described in the README file accompanying the data.</p> 
 </div>
 
-The GDA GWAS dataset is provided in [BIDS](https://bids-specification.readthedocs.io/) format under `hbcd/concatenated/`.     
-<i>See the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> to learn more about BIDS and data types.</i>
-
-<p>
+The GDA GWAS dataset is provided as [concatenated BIDS data](../../datacuration/file-based-data.md#concatenated-data) under `genetics/`:
 <pre class="folder-tree">
 hbcd/
 |__ concatenated/ 
     |__ genetics/
-        |__ .bed
+        |__ .bed 
         |__ .bim
         |__ .fam
         |__ batch.info
         |__ README
 </pre>
-</p>
-
-## Details
-
-The dataset includes three interlinked PLINK files (`.bed`, `.bim`, and `.fam`) aligned to the **hg19 genome build**, along with a `batch.info` file specifying genotyping batches and a `README` describing initial QC procedures:
-
+<i>See the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> to learn more about BIDS and data types.</i>
+<p>The dataset includes three interlinked PLINK files (<code>.bed</code>, <code>.bim</code>, and <code>.fam</code>) aligned to the <strong>hg19 genome build</strong>, along with a <code>batch.info</code> file specifying genotyping batches and a <code>README</code> describing initial QC procedures:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <tr>
@@ -87,6 +80,10 @@ The dataset includes three interlinked PLINK files (`.bed`, `.bim`, and `.fam`) 
 </tr>
 </tbody>
 </table>
+
+## Details
+
+Add more info?
 
 ## Quality Control
 

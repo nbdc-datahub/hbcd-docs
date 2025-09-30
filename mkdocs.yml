@@ -100,15 +100,7 @@ nav:
             - 🚧 ScreenQ: instruments/physhealth/screenq.md
             - ⚠️ Vision: instruments/physhealth/vision.md
         - Pregnancy & Exposures:
-            - Pregnancy & Infant Health:
-                - Pregnancy Health: instruments/pregexp/preghealth/healthhx.md
-                - Exposures & Vaccines: instruments/pregexp/preghealth/vacc.md
-                - Chronic Conditions: instruments/pregexp/preghealth/chronconditions.md
-                - Illness: instruments/pregexp/preghealth/illness.md
-                - ER/Hospitalizations: instruments/pregexp/preghealth/er-hosp.md
-                - Medications: instruments/pregexp/preghealth/medications.md
-                - End of Pregnancy: instruments/pregexp/preghealth/end-preg.md
-                - Infant Health: instruments/pregexp/preghealth/infanthealth.md
+            - Pregnancy & Infant Health: instruments/pregexp/pex.md
             - Mental Health:
                 - Personal & Family Psychiatric History: instruments/pregexp/mh/fam-mh.md
                 - APA Level 1 / Level 2: instruments/pregexp/mh/apa12.md
