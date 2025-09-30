@@ -9,7 +9,7 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 <img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="90%" height="auto" class="center">
 
-HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
+HBCD Study data includes both **tabulated** and **file-based** data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 
 - <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
 - File-based data include <a href="../datacuration/file-based-data/#raw-bids" target="_blank"><b>raw</b></a> and <a href="../datacuration/file-based-data/#processed-derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
