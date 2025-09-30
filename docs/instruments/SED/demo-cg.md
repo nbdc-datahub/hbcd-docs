@@ -108,7 +108,7 @@ Demographic information is crucial for understanding the child’s environment a
 
 **At subsequent times of assessment (i.e., V04+)**, a selected set of variables that can change over time were re-administered, and several new topics were added (i.e., disability status and access to reliable transportation). Of note, from V04 onward, there is a separate <a href="../demo-ch" target="_blank">Child Demographics</a> form that includes child-focused information including child race and ethnicity, relationship to the child/custody, household roster, type of residence, and household income. In addition, from V04 onward, data on caregiver work/employment characteristics are in a separate form (see <a href="../current-employment" target="_blank">Current Employment</a>).
 
-Please see the section on <a href="../demographics/#basic-demographics">Basic Demographics</a>, which includes variables derived from the HBCD Demographics V01 instrument and data collected during screening/enrollment.
+Also see [Basic Demographics](../demo/basicdemo.md), which includes variables derived from the HBCD Demographics instruments and data collected during study enrolment/screening.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>

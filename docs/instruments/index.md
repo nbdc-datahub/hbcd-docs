@@ -985,18 +985,18 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td><a href="../datacuration/rawbids/#motion" target="_blank">Raw BIDS</a></td>
+    <td><a href="sensors/wearsensors/#rawbids" target="_blank">Raw BIDS</a></td>
     <td><i>rawdata/sub-{ID}/ses-{V0X}/motion/</i></td>
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td><a href="../datacuration/derivatives/#hbcd-motion-hbcd_motion" target="_blank">Derivatives</a></td>
+    <td><a href="sensors/wearsensors/#derivatives" target="_blank">Derivatives</a></td>
     <td><i>derivatives/hbcd-motion/</i></td>
   </tr>
   <tr>
     <td>Infant Heart Rate</td>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td><a href="sensors/gabi" target="_blank">Raw BIDS</a></td>
+    <td><a href="sensors/gabi/#rawbids" target="_blank">Raw BIDS</a></td>
     <td>Regulation (Sleep/Wake)/<br>Autonomic Function</td>
     <td><i>rawdata/sub-{ID}/ses-{V0X}/gabi/</i></td>
   </tr>
