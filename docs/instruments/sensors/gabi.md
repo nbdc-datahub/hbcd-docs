@@ -47,11 +47,23 @@ The HBCD data release includes Infant Heart Rate Wearable Sensor data acquired d
 <p>Note that infant heart rate sensor data may contain non-consecutive samples. The most likely reason is an inconsistent connection between the sensor and the receiver tablet, which can result in missing samples. Always refer to the timestamps embedded in the files to reconstruct the temporal sequence of the data. Infant heart rate sensor recordings may also be shorter than the planned 72 hours, which can occur due to human error, technical issues, or a parent/legal guardian deciding to discontinue data collection.</p> 
 </div>
 
-Infant heart rate data collected from wearable sensors includes raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data:
+Infant heart rate data collected from wearable sensors includes **file-based** data (raw and processed data files in modality-specific formats).      
+<i>See the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for a full explanation of these data types.</i>
 
-- <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#gabi" target="_blank">Raw BIDS</a> under subject- and session-specific <code>gabi/</code> folders
-- <i class="fas fa-cog"></i> Derivatives, or processed data, will be available in a future release 
+- <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#gabi" target="_blank">Raw BIDS</a> stored under subject- and session-specific <code>gabi/</code> folders
+ - <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Processed derivatives</a> will be available in a future release 
 
+<div id="rawbids" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+  <span class="text">Raw BIDS Files (<code>gabi/</code>)</span>
+  <a class="anchor-link" href="#rawbids" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -59,8 +71,19 @@ hbcd/
         |__ ses-<span class="label">&lt;label&gt;</span>/
             |__ gabi/
 </pre>
+</div>
 
-## Details
+<div id="derivatives" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+    <span class="text">Derivatives - <i>not currently available, but will be included in a future release</i></span>
+  <a class="anchor-link" href="#derivatives" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+</div>
+
+## Data Acquisition
 
 **Infant heart rate sensor data** collected by the infant heart rate wearable sensor for HBCD captures information related to the infant's physiology and sleep. The device is fastened to the infant's upper arm with a soft-textile band by HBCD Study staff and worn for 72 hours, during which time data is collected across the child's typical activities in their natural environment. The photoplethysmography (PPG) sensors (one emitting green light PPG and one emitting red light PPG) embedded in the device allow for the collection of three biosignal estimates sampled at 1 Hz: 
 

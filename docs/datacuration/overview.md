@@ -35,9 +35,9 @@ HBCD is organized following [Brain Imaging Data Structure](https://bids-specific
     </tr>
     <tr>
       <td><i class="fa-solid fa-folder-open"></i> <a href="../file-based-data/#concatenated-data" target="_blank"><strong>Concatenated Data</strong></a><br><code>concatenated/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">Concatenated files combining participant data for a subset of modalities, each organized under separate subfolders.</td>
+      <td style="word-wrap: break-word; white-space: normal;">Participant-level files aggregated across all subjects for certain modalities, organized in modality-specific subfolders.</td>
       <td>
-        • <a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Genomics</a><br>
+        • Genomics (<a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a>)<br>
         • <a href="../../instruments/SED/geocoded-linkage" target="_blank">Geocoded Linkage</a><br>
         • <a href="../../instruments/admin/transitions-in-care" target="_blank">Transitions in Care</a>
         </td>

@@ -37,7 +37,8 @@ The use of population descriptors in genetic research can often be varied and in
 <p>Any removal of data during QC will be described in the README file accompanying the data.</p> 
 </div>
 
-The GDA GWAS dataset is provided in [BIDS format](https://bids-specification.readthedocs.io/) under `hbcd/concatenated/` (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for a general overview of BIDS and release data structure):
+The GDA GWAS dataset is provided in [BIDS](https://bids-specification.readthedocs.io/) format under `hbcd/concatenated/`.     
+<i>See the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> to learn more about BIDS and data types.</i>
 
 <p>
 <pre class="folder-tree">

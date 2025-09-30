@@ -19,7 +19,7 @@ The HBCD data release includes Infant Leg Motion Wearable Sensor data acquired d
 <p>In addition, for raw data downloads, when calibration files are missing or not collected correctly, it is technically possible to use a different set of calibration files from the same 2 sensors that were collected from a different data collection session close in time. It is also possible to manually adjust (downsample) an incorrect sampling rate if it was set too high. For processed data downloads, when calibration files are missing or not collected correctly, or the sampling rate is incorrect, data are not processed. In analysis, users are advised to use caution in analyzing datasets with missing data as missing data may not be randomly distributed across the sample.</p> 
 </div>
 
-Motion/accelerometry data collected from wearable infant leg sensors includes **file-based** (raw and processed data files in modality-specific formats).      
+Motion/accelerometry data collected from wearable infant leg sensors includes **file-based** data (raw and processed data files in modality-specific formats).      
 <i>See the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for a full explanation of these data types.</i>
 
  - <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> stored under subject- and session-specific <code>motion/</code> folders      

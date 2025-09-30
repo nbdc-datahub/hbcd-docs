@@ -135,7 +135,7 @@ nav:
             - 🚧 Second Hand Smoke: instruments/SED/second-hand-smoke-exposure.md
             - Unfair Treatment: instruments/SED/discr.md            
             - 🚧 Vancouver Index: instruments/SED/vi.md
-    - Brain Activity & Wearable Sensors:
+    - Brain Activity & Biosensors:
         - Electroencephalography:
             - Overview & Quality Control: instruments/eeg/index.md
             - Faces Task: instruments/eeg/faces.md

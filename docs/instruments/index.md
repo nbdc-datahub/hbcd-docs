@@ -691,7 +691,7 @@ Expand the sections below to see a list of measures associated with each domain 
   </table>
 </div>
 
-### Brain Activity & Wearable Sensors
+### Brain Activity & Biosensors
 
 <div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-bolt"></i></span>
