@@ -381,6 +381,7 @@ hbcd/
     |__ genetics/
     |__ geocoded_linkage/
     |__ tic/
+NOTE: need to confirm folder names, these are placeholders
 </pre>
 
 Visit the instrument documentation pages for information on the unique file contents of each subfolder:
