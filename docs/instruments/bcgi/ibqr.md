@@ -1,3 +1,4 @@
+
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 (addition of ECBQ)</i> 🚧 </p>
 
 # Behavior Questionnaire + Inhibition
@@ -146,8 +147,3 @@ Each domain score is calculated as the mean of all applicable scale items:</p>
     <p>Rothbart, M. K. (1981). Measurement of temperament in infancy. <i>Child Development</i>, 52(2), 569–578. <a href="https://doi.org/10.1111/j.1467-8624.1981.tb03082.x" target="_blank">https://doi.org/10.1111/j.1467-8624.1981.tb03082.x</a></p>  
 </div>
 <br>
-
-
-
-
-

@@ -125,5 +125,3 @@ Cella, D., Blackwell, C. K., & Wakschlag, L. S. (2022). Bringing PROMIS to Early
 Lai, J.-S., Kallen, M. A., Blackwell, C. K., Wakschlag, L. S., & Cella, D. (2022). Psychometric considerations in developing PROMIS® measures for early childhood. <i>Journal of Pediatric Psychology</i>, 47(5), 510–522. <a href="https://doi.org/10.1093/jpepsy/jsac025" target="_blank">https://doi.org/10.1093/jpepsy/jsac025</a></p>  
 </div>
 <br>
-
-

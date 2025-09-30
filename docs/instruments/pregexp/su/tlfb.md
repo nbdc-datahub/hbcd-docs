@@ -1,9 +1,23 @@
 # Timeline Follow Back
 
-**Full Name**: Timeline Follow Back                                   
-**Acronym**: TLFB                           
-**Table Name**: `pex_ch_tlfb`       
-**Construct**: Substance use before and during pregnancy
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>pex_ch_tlfb</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Timeline Follow Back (<i>TLFB</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Substance Use Before and During Pregnancy</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>

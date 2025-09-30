@@ -1,3 +1,6 @@
+
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION: update for 2.0</i></p>
+
 # Known Issues
 The following issues have been identified in the current HBCD data release. **We are actively working to address them and will implement most fixes for Release 2.0 unless stated otherwise**. This page will be updated as new issues are discovered. If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
 

@@ -1,3 +1,6 @@
+
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION: update for 2.0</i></p>
+
 # Upcoming Updates
 
 ## Release 2.0 (Release Date TBA)
