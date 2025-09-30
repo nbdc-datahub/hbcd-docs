@@ -17,30 +17,38 @@ markdown_extensions:
   - toc:
       permalink: '🔗'  
   - pymdownx.arithmatex
-  
+
 extra_javascript:
   - js/extra.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://www.googletagmanager.com/gtag/js?id=G-BY0EH2K1YQ
+  - js/ga.js
+
+extra:
+  analytics:
+    provider: google
+    property: G-BY0EH2K1YQ
 
 extra_css:
-  - css/custom.css
+  - css/alerts.css
+  - css/banners.css
   - css/collapsible.css
   - css/copybox.css
-  - css/banners.css
+  - css/custom.css
+  - css/headers.css
   - css/hide-sidebar.css
   - css/hoverable_elements.css
+  - css/issues.css
   - css/legends.css
   - css/logos.css
   - css/notifications.css
-  - css/headers.css
+  - css/reduce-righthand-whitespace.css
   - css/tables.css
+  - css/warnings.css
   - overrides/styles.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
   - https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css
-  - css/reduce-righthand-whitespace.css
-  - css/warnings.css
-  - css/alerts.css
 
 plugins:
   - search
@@ -66,6 +74,9 @@ nav:
   - Study Instruments:
     - Instruments Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
+    - Demographics & Visit Information:
+        - ⚠️ Basic Demographics: instruments/demo/basicdemo.md
+        - Visit Information: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 
             - 🚧 CHAOS: instruments/bcgi/chaos.md
@@ -130,8 +141,8 @@ nav:
     - Brain Activity & Biosensors:
         - Electroencephalography:
             - Overview & Quality Control: instruments/eeg/index.md
-            - Faces Task: instruments/eeg/faces.md
             - Auditory Mismatch Negativity Task: instruments/eeg/mmn.md
+            - Faces Task: instruments/eeg/faces.md
             - Video Resting State Task: instruments/eeg/videors.md
             - Visual Evoked Potential Task: instruments/eeg/vep.md
         - Magnetic Resonance Imaging:
@@ -150,9 +161,6 @@ nav:
         - Processing & Analytic Standards: 
             - Processing Pipelines: instruments/processing/index.md
             - Pipeline Software Standards: instruments/processing/standards.md
-    - Demographics & Visit Information:
-        - ⚠️ Basic Demographics: instruments/demo/basicdemo.md
-        - Visit Information: instruments/demo/visitinfo.md
     - Recruitment & Retention:
         - 🚧 Study Navigators Contact Form: instruments/admin/study-navigators.md
         - 🚧 Transition in Care Screener: instruments/admin/transitions-in-care.md
@@ -160,6 +168,7 @@ nav:
     - Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
     - Version History:    
+        - Release 1.1: changelog/versions/R1.1.md
         - Release 1.0: changelog/versions/R1.md
   - Help & Support:
     - FAQs: help/faq.md
