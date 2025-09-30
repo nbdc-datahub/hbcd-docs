@@ -50,7 +50,7 @@ The HBCD data release includes Infant Heart Rate Wearable Sensor data acquired d
 Infant heart rate data collected from wearable sensors includes **file-based** data (raw and processed data files in modality-specific formats).      
 <i>See the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for a full explanation of these data types.</i>
 
-- <i class="fa fa-hammer"></i> <a href="../../../datacuration/rawbids/#gabi" target="_blank">Raw BIDS</a> stored under subject- and session-specific <code>gabi/</code> folders
+- <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> stored under subject- and session-specific <code>gabi/</code> folders
  - <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Processed derivatives</a> will be available in a future release 
 
 <div id="rawbids" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
