@@ -86,7 +86,7 @@ Demographic information is crucial for understanding the child’s environment a
 
 The form also documents the respondent’s relationship to the child, legal guardianship status, and whether the respondent lives with the child, including the number of days per month in shared residence. Additional sections capture detailed household composition, such as the number of adults and children, and request a table listing all individuals who live with the child at least two nights per week, including their age and sex. Additionally, the child form requires the respondent to report the total household income for the past year (note: if the child resides in more than one household, they are asked to provide the average of the household incomes). These data are designed to support a nuanced analysis of the child’s social and family context within the study. See [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the HBCD Demographics survey.
 
-Please see the section on <a href="../../demo/basicdemo/">Basic Demographics</a>, which includes variables derived from the HBCD Demographics V01 instrument and data collected during screening/enrollment.
+Also see [Basic Demographics](../demo/basicdemo.md), which includes variables derived from the HBCD Demographics instruments and data collected during study enrolment/screening.
 
 <div id="demo-tables" class="table-banner" onclick="toggleCollapse(this)">
  <span class="emoji"><i class="fa fa-magnifying-glass"></i></span>
