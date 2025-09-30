@@ -78,7 +78,7 @@ Incidents of pediatric lead poisoning have previously been linked to consumption
 
 <div class="references"> 
 <p>Cantor AG, Hendrickson R, Blanzina I, Griffin J, Grusing S, McDonagh MS. “Screening for Elevated Blood Lead Levels in Childhood and Pregnancy: Updated Evidence Report and Systematic Review for the US Preventive Services Task Force.” JAMA 2019; 321 (15):1510-1526. <a href="https://jamanetwork.com/journals/jama/fullarticle/2730620">https://jamanetwork.com/journals/jama/fullarticle/2730620</a><p>
-<p>CDC. (2025, March 13). Testing for lead poisoning in children. Childhood Lead Poisoning Prevention. <a href="hhttps://www.cdc.gov/lead-prevention/testing/index.html">https://www.cdc.gov/lead-prevention/testing/index.html</a></p> 
+<p>CDC. (2025, March 13). Testing for lead poisoning in children. Childhood Lead Poisoning Prevention. <a href="https://www.cdc.gov/lead-prevention/testing/index.html">https://www.cdc.gov/lead-prevention/testing/index.html</a></p> 
 <p>CDC. (2025, August 21). Risk factors and children. Childhood Lead Poisoning Prevention. <a href="https://www.cdc.gov/lead-prevention/risk-factors/children.html">https://www.cdc.gov/lead-prevention/risk-factors/children.html</a></p> 
 <p>CDC. (2025, August 22). About lead in foods, cosmetics, and medicines. Childhood Lead Poisoning Prevention. <a href="https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html">https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html</a></p> 
 <p>CDC. Lead poisoning associated with imported candy and powdered food coloring -- California and Michigan. MMWR 1998;47(48);1041-1043. <a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm">https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm</a></p>  
