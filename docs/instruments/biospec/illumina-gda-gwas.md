@@ -37,7 +37,17 @@ The use of population descriptors in genetic research can often be varied and in
 <p>Any removal of data during QC will be described in the README file accompanying the data.</p> 
 </div>
 
-The GDA GWAS dataset is provided as [concatenated BIDS data](../../datacuration/file-based-data.md#concatenated-data) under `genetics/`:
+<div id="concat" class="static-banner" style="background-color: #dcd8fb; border-left: 5px solid #dcd8fb;">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+  <span class="text">Concatenated Data (<code>genetics/</code>)</span>
+  <a class="anchor-link" href="#concat" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+</div>
+<div class="notification-static-content" style="border-left: 5px solid #dcd8fb;">
+<p>The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>genetics/</code> (<i>see the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> to learn more about BIDS and data types</i>):</p>
 <pre class="folder-tree">
 hbcd/
 |__ concatenated/ 
@@ -48,7 +58,6 @@ hbcd/
         |__ batch.info
         |__ README
 </pre>
-<i>See the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> to learn more about BIDS and data types.</i>
 <p>The dataset includes three interlinked PLINK files (<code>.bed</code>, <code>.bim</code>, and <code>.fam</code>) aligned to the <strong>hg19 genome build</strong>, along with a <code>batch.info</code> file specifying genotyping batches and a <code>README</code> describing initial QC procedures:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -80,6 +89,7 @@ hbcd/
 </tr>
 </tbody>
 </table>
+</div>
 
 ## Details
 
