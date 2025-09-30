@@ -49,7 +49,7 @@
 <p>
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">Basic Demographics is a <a href="../../../access/metadata/#exceptions-derived" target="_blank">derived table</a>. See <a href="../../SED/v01-demo" target="_blank">V01 Demographics</a> for full demographics information.</span>
+  <span class="text">Basic Demographics is a <a href="../../../access/metadata/#exceptions-derived" target="_blank">derived table</a>. See HBCD <a href="../../SED/demo-cg.md" target="_blank">Adult</a> and <a href="../../SED/demo-ch.md" target="_blank">Child</a> Demographics for full demographics information.</span>
 </div>
 </p>
 
