@@ -373,7 +373,7 @@ hbcd/
 ## Concatenated Data
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION: update entire contents of page for accuracy</i></p>
 
-The `concatenated/` BIDS folder can contain concatenated data files for various instruments and modalities, organized into subdirectories based on the type of data. Each file contains information for all participants. 
+The `concatenated/` folder contains participant-level files aggregated across all subjects for certain modalities, organized in modality-specific subfolders.
 
 <pre class="folder-tree">
 hbcd/
