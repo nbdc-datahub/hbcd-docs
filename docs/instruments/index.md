@@ -9,7 +9,7 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 <img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="90%" height="auto" class="center">
 
-HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
+HBCD Study data includes **tabulated** and **file-based** data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 
 - <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
 - File-based data include <a href="../datacuration/file-based-data/#raw-bids" target="_blank"><b>raw</b></a> and <a href="../datacuration/file-based-data/#processed-derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
@@ -39,7 +39,7 @@ Expand the sections below to see a list of measures associated with each domain 
   Expand All Sections ↕️
 </button>
 
-### Demographics & Visit Information
+### Administrative
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
@@ -76,6 +76,43 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
 </tbody>
 </table>
+</div>
+
+<div id="admin" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-clipboard"></i></span>
+  <span class="text-with-link">
+  <span class="text">Recruitment & Retention</span>
+  <a class="anchor-link" href="#admin" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+  <thead>
+    <tr>
+      <th></th>
+      <th style="width: 40%;">Instrument</th>
+      <th style="width: 40%;">Construct</th>
+      <th style="width: 30%;"><span class="tooltip tooltip-left"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
+    <td><code>TBD</code></td>
+  </tr>
+  <tr>
+    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
+    <td><code>TBD</code></td>
+  </tr>
+  </tbody>
+  </table>
 </div>
 
 ### Behavior, Biology, & Environment
@@ -968,43 +1005,6 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 
 
-### Recruitment & Retention
 
-<div id="admin" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-clipboard"></i></span>
-  <span class="text-with-link">
-  <span class="text">Recruitment & Retention</span>
-  <a class="anchor-link" href="#admin" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th></th>
-      <th style="width: 40%;">Instrument</th>
-      <th style="width: 40%;">Construct</th>
-      <th style="width: 30%;"><span class="tooltip tooltip-left"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
-    <td><code>TBD</code></td>
-  </tr>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
-    <td><code>TBD</code></td>
-  </tr>
-  </tbody>
-  </table>
-</div>
 <br>
 
