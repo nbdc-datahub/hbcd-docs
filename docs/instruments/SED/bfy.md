@@ -1,9 +1,23 @@
 # Baby's First Years
 
-**Full Name**: Baby’s First Years - Benefits/Services, Economic Stress   
-**Acronym**: BFY             
-**Table Name**: `sed_bm_bfy`       
-**Construct**: Benefits/Services, Economic Stress
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_bm_bfy</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Baby’s First Years (<i>BFY</i>)
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Benefits/Services, Economic Stress</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 
@@ -28,8 +42,8 @@
 The HBCD BFY includes a selection of questions from the [BFY Age 1 Survey Instrument](https://www.babysfirstyears.com/_files/ugd/88a466_5a28f2b284e74fa4b61b2c483008416e.docx?dn=BFY_Age%201%20Survey.docx). [Baby’s First Years](https://www.babysfirstyears.com/) is an NIH-funded study of infant and child development and assesses economic stress (originally sourced from the Moving to Opportunity (MTO) study), financial instability, ability to meet basic needs, and benefits/services received over the past 12 months on a 10-point Likert Scale ([Noble et al. 2021](https://doi.org/10.1542/peds.2020-049702)). 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fa fa-gear"></i></span>
-<span class="text-with-link">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
+  <span class="text-with-link">
   <span class="text">HBCD Modification Details</i></span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
   <i class="fa-solid fa-link"></i>

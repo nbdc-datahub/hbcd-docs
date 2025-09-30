@@ -1,9 +1,23 @@
 # Experiences of Unfair Treatment
 
-**Full Name**: PhenX+ Toolkit Discrimination     
-**Acronym**: PhenX+ Discrimination             
-**Table Name**: `sed_bm_phx__discr`       
-**Construct**: Experiences of Unfair Treatment
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_bm_phx__discr</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      PhenX+ Toolkit Discrimination
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Experiences of Unfair Treatment</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 
@@ -29,8 +43,8 @@
 This [PhenX+ Toolkit Discrimination](https://www.phenxtoolkit.org/protocols/view/210302) measure is a questionnaire to assess perceived experiences of being treated unfairly. This is an important factor in an individual’s health because it affects access to employment, housing, and education opportunities and can affect self-esteem and cause stress.
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fa fa-gear"></i></span>
-<span class="text-with-link">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
+  <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
   <a class="anchor-link" href="#hbcd-mod" title="Copy link">
   <i class="fa-solid fa-link"></i>

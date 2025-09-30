@@ -1,11 +1,23 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
-
 # PhenX+ Neighborhood Safety 
 
-**Full Name**: PhenX+ Toolkit Neighborhood Safety             
-**Acronym**: Neighborhood Safety                          
-**Table Name**: `sed_bm_nbhsaf`       
-**Construct**: Neighborhood Safety
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_bm_nbhsaf</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+       PhenX+ Toolkit Neighborhood Safety
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Neighborhood Safety</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 ## Administration & Quality Control
 
