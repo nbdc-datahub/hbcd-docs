@@ -1,0 +1,413 @@
+# File-Based Data: Raw BIDS & Processed Derivatives
+
+## Raw BIDS
+
+<p>
+<div id="agefields" class="table-banner">
+  <span class="emoji"><i class="fa fa-hourglass-half"></i><i class="fa fa-person-cane"></i></span>
+<span class="text">See <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Age Variable Definitions</a> for documentation on fields reporting age in raw BIDS data.</span>
+</div>
+</p>
+
+The `rawdata/` folder includes raw file-based data in [BIDS](https://bids-specification.readthedocs.io/en/stable/) format for MR Imaging, MR Spectroscopy, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings. Unlike [tabulated](phenotypes.md) data (tables organized in a uniform way across study instruments), file-based data comes in a variety of formats, some of which are highly specific to a given modality such as MRI.
+
+<pre class="folder-tree" style="font-size: 11px;">
+hbcd/
+|__ rawdata/ 
+    |__ sub-<span class="label">{ID}</span>/
+    |   |__ sub-<span class="label">{ID}</span>_sessions.tsv
+    |   |__ sub-<span class="label">{ID}</span>_sessions.json
+    |   |__ ses-<span class="label">{V0X}</span>/
+    |       |__ anat/
+    |       |__ dwi/
+    |       |__ eeg/
+    |       |__ fmap/
+    |       |__ func/
+    |       |__ motion/
+    |       |__ mrs/
+    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_scans.tsv
+    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_scans.json
+    |
+    |__ dataset_description.json
+    |__ participants.tsv
+    |__ participants.json 
+</pre>
+<p></p>
+
+*Click the following links to see the full file contents of each raw BIDS folder in the measure documentation pages:*
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th><a href="../../instruments/mri/smri/#rawbids" target="_blank">Structural MRI</a></th>
+      <th><a href="../../instruments/mri/qmri/#rawbids" target="_blank">Quantitative MRI</a></th>
+      <th><a href="../../instruments/mri/fmri/#rawbids" target="_blank">Functional MRI</a></th>
+      <th><a href="../../instruments/mri/dmri/#rawbids" target="_blank">Diffusion MRI</a></th>
+      <th><a href="../../instruments/mri/mrs/#rawbids" target="_blank">MR Spectroscopy</a></th>
+      <th><a href="../../instruments/eeg/#rawbids" target="_blank">EEG</a></th>
+      <th><a href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">Wearable Sensors</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>anat/</code>
+      </td>
+      <td>
+        <code>anat/</code>
+      </td>
+      <td>
+        <code>func/</code>, <code>fmap/</code></td>
+      <td>
+        <code>dwi/</code>      </td>
+      <td>
+        <code>mrs/</code>      </td>
+      <td>
+        <code>eeg/</code>      </td>
+      <td>
+        <code>motion/</code>      </td>
+    </tr>
+  </tbody>
+</table>
+
+### Participant-, Session-, & Scan-Level Data
+Participant-, session-, and scan-level data are stored in the following `.tsv` files, accompanied by `.json` sidecar files containing metadata:
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<thead>
+<tr>
+  <th>Level</th>
+  <th>File Name</th>
+  <th style="width: 60%;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Participant</td>
+  <td><code>participants.tsv</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Basic demographic and participant information (e.g., sex)</td>
+</tr>
+<tr>
+  <td>Session</td>
+  <td><code>sub-&lt;ID&gt;_sessions.tsv</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Session information (e.g., collection site, participant’s age at each session, head size)</td>
+</tr>
+<tr>
+  <td>Scan</td>
+  <td><code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Per-scan information (age at scan and raw data QC scores - see <a href="../../instruments/mri/qc/#location-of-raw-data-qc-results-in-data-release" target="_blank">HBCD MR Quality Control Procedures</a>)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+### BIDS Conversion Procedures
+
+Raw data for each modality are converted to the BIDS standard via the following software and procedures:
+
+<table class="compact-table-no-vertical-lines" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
+  <thead>
+    <tr>
+      <th></th>
+      <th>BIDS Conversion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>MRI</strong></td>
+      <td style="word-wrap: break-word; white-space: normal;">DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>, with post-conversion modifications required for certain scan types to maintain consistency across vendors - see <a href="#bids-conversion-mri">MRI Hardcoded Fields & Post-Conversion Modifications</a> below for details.</td>
+    </tr>
+    <tr>
+      <td><strong>MRS</strong></td>
+      <td style="word-wrap: break-word; white-space: normal;">Vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.</td>
+    </tr>
+    <tr>
+      <td><strong>EEG</strong></td>
+      <td style="word-wrap: break-word; white-space: normal;">BIDS conversion was performed with the <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application for HBCD EEG data management and formatting, installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which converts them to the BIDS standard.</td>
+    </tr>
+    <tr>
+      <td><strong>Sensors</strong></td>
+      <td style="word-wrap: break-word; white-space: normal;">See <a href="https://www.nature.com/articles/s41597-024-03559-8">Jeung et al., 2024</a> <i>Motion-BIDS: an extension to the brain imaging data structure to organize motion data for reproducible research</i></td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="bids-conversion-mri" class="table-banner" onclick="toggleCollapse(this)">
+  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
+  <span class="text-with-link">
+  <span class="text">MRI Hardcoded Fields & Post-Conversion Modifications</span>
+  <a class="anchor-link" href="#bids-conversion-mri" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p><strong>Hardcoded Fields</strong><br>
+Key fields for Philips (<i>and GE for T1w scans</i>) are hard-coded to ensure consistency across vendors, as NIfTI/JSON metadata can be omitted or misconfigured during conversion. Hardcoded fields for different modalities/scan types are outlined in the following table and also documented in the JSON sidecars under <code>HardCodedValues</code>. <strong>All of the following were modified for Philips only with the exception of T1w scans, modified for both Philips and GE.</strong></p>
+<table class="compact-table-no-vertical-lines" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
+  <thead>
+    <tr>
+      <th>Modality</th>
+      <th><code>PhaseEncodingDirection</code></th>
+      <th><code>TotalReadoutTime</code></th>
+      <th><code>SliceTiming</code></th>
+      <th><code>&lt;Small|Large&gt;Delta</code></th>
+      <th><code>RepetitionTime</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>DWI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td></tr>
+    <tr><td>EPI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td><td></td></tr>
+    <tr><td>BOLD</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td></tr>
+    <tr><td>T1w <i>(both Philips & GE)</i></td><td></td><td></td><td></td><td></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td></tr>
+  </tbody>
+</table>
+<p><strong>QALAS</strong><br>
+QALAS conversion yielded either five 3D NIfTI files or one 4D file with five volumes and missing JSON headers. To standardize outputs, all series were split into five NIfTI files, each labeled by inversion time (<code>inv-&lt;label&gt;</code>). The JSON sidecars were updated as follows: <code>T2Prep</code> for QALAS file <code>inv-0</code> is set to 0.10 for Siemens/Philips and 0.09  for GE. <code>InversionTime</code> (s) is hard-coded per manufacturer as follows:</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 90%;">
+    <tr>
+      <th></th><th>inv-0</th><th>inv-1</th><th>inv-2</th><th>inv-3</th><th>inv-4</th>
+    </tr>
+    <tr><th>Siemens</th><td>0</td><td>0.1</td><td>1</td><td>1.9</td><td>2.8</td></tr>
+    <tr><th>GE</th><td>0</td><td>0.1193</td><td>1.0192</td><td>1.9191</td><td>2.8190</td></tr>
+    <tr><th>Philips</th><td>0</td><td>0.115</td><td>1.0105</td><td>1.9060</td><td>2.8016</td></tr>
+  </table>
+</div>
+
+<div id="acq-param-table" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+  <span class="text">MRI & MRS Acquisition Parameter Ranges for Data Release Eligibility</span>
+  <a class="anchor-link" href="#acq-param-table" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Acquisition parameters vary by scanner vendor, so inclusion criteria are typically defined as acceptable <strong>ranges</strong> rather than fixed values. Modality-specific criteria are extracted from BIDS sidecar JSON files and evaluated accordingly. All images are additionally checked to confirm they were acquired using a head coil.</p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+  <thead>
+    <tr>
+      <th>Scan Type</th>
+      <th>Repetition Time (TR)</th>   
+      <th>Echo Time (TE)</th>        
+      <th>Inversion Time (TI)</th>    
+      <th>Slice Thickness</th>  
+      <th>Number of Volumes</th>  
+    </tr>
+  </thead>
+<tbody>
+<tr>
+  <td>T1w</td>
+  <td>2.3 - 2.41</td>
+    <td>0.002 - 0.0035</td>
+  <td>1.06 - 1.1</td>    
+    <td>0.8</td>    
+    <td>NA</td>    
+  </tr>
+  <tr>
+    <td>T2w</td>
+    <td>2.5 - 4.5</td>
+    <td>0.09 - 0.15</td>
+    <td>0.29 - 0.33</td>    
+    <td>0.563 - 0.565</td>    
+    <td>NA</td>
+  </tr>  
+  <tr>
+    <td>MRS Localizer</td>
+    <td>2.5 - 4.5</td>
+    <td>0.09 - 0.15</td>
+    <td>0.29 - 0.33</td>    
+    <td>0.563 - 0.565</td>    
+    <td>NA</td>
+  </tr>   
+  <tr>
+    <td>Diffusion</td>
+    <td>4.8</td>
+    <td>0.0880 - 0.0980</td>
+    <td>NA</td>    
+    <td>1.7</td>    
+    <td>≥ 90 (AP + PA)</td>  
+  </tr>  
+  <tr>
+    <td>EPI Fieldmap</td>
+    <td>8.4 - 9.2</td>
+    <td>0.064 - 0.0661</td>
+    <td>2</td>    
+    <td>0.563 - 0.565</td>    
+    <td>NA</td>
+  </tr>  
+  <tr>
+    <td>Functional</td>
+    <td>1.725</td>
+    <td>0.0369 - 0.0371</td>
+    <td>NA</td>    
+    <td>2</td>  
+    <td>≥ 87 (~2.5 min)</td>   
+  </tr>  
+</tbody>
+</table>
+</div>
+
+## Processed Derivatives
+
+The `derivatives/` folder contains derivatives, which are file outputs from <a href="../../instruments/processing/" target="_blank">processing pipelines</a>. 
+
+<pre class="folder-tree" style="font-size: 11px;">
+hbcd/
+|__ derivatives/ 
+    <span class="hashtag"># Structural & Functional MRI</span>             
+    |__ mriqc/      
+    |__ bibsnet/    
+    |__ nibabies/   
+    |__ freesurfer/ 
+    |__ mcribs/     
+    |__ xcp_d/      
+    |               
+    <span class="hashtag"># Quantitative MRI</span>    
+    |__ symri/           
+    |__ qmri_postproc/  
+    | 
+    <span class="hashtag"># Diffusion MRI</span>                                  
+    |__ qsiprep/                         
+    |__ qsirecon/                        
+    |__ qsirecon-DIPYDKI/                
+    |__ qsirecon-DSIStudio/               
+    |__ qsirecon-NODDI/                  
+    |__ qsirecon-TORTOISE_model-MAPMRI/  
+    |__ qsirecon-TORTOISE_model-tensor/  
+    |
+    |__ osprey/       <span class="hashtag"># MRS</span>
+    |__ made/         <span class="hashtag"># EEG</span>
+    |__ hbcd_motion/  <span class="hashtag"># Biosensor Recordings</span>
+</pre>
+<p></p>
+
+### Links to Pipeline Derivatives
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th>Modalities</th>
+  <th>Derivatives Folder</th>
+  <th>Pipeline Name & Link to Derivatives Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="5">Structural & Functional MRI</td>
+  <td><code>mriqc/</code></td>
+  <td>MRIQC - <a href="../../instruments/mri/smri/#mriqc" target="_blank">sMRI</a> & <a href="../../instruments/mri/fmri/#mriqc" target="_blank">fMRI</a></td>
+</tr>
+<tr>
+  <td><code>bibsnet/</code></td>
+  <td><a href="../../instruments/mri/smri/#bibsnet" target="_blank">BIBSNet</a></td>
+</tr>
+<tr>
+  <td><code>nibabies/</code></td>
+  <td><a href="../../instruments/mri/fmri/#nibabies" target="_blank">Infant fMRIPrep (or Nibabies)</a></td>
+</tr>
+<tr>
+  <td><code>freesurfer/</code> & <code>mcribs/</code></td>
+  <td><a href="../../instruments/mri/fmri/#fs-mcribs" target="_blank">FreeSurfer & M-CRIB-S</a></td>
+</tr>
+<tr>
+  <td><code>xcp_d/</code></td>
+  <td><a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a></td>
+</tr>
+<tr>
+  <td rowspan="2">Quantitative MRI</td>
+  <td><code>symri/</code></td>
+  <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI</a></td>
+</tr>
+<tr>
+  <td><code>qmri_postproc/</code></td>
+  <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">qMRI PostProc</a></td>
+</tr>
+<tr>
+  <td rowspan="6">Diffusion MRI</td>
+  <td><code>qsiprep/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
+</tr>
+<tr>
+  <td><code>qsirecon/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon" target="_blank">QSIRecon</a></td>
+</tr>
+<tr>
+  <td><code>qsirecon-DSIStudio/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon-DSIStudio" target="_blank">QSIRecon-DSI Studio</a></td>
+</tr>
+<tr>
+  <td><code>qsirecon-DIPYDKI/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon-DIPYDKI" target="_blank">QSIRecon-DIPY DKI</a></td>
+</tr>
+<tr>
+  <td><code>qsirecon-TORTOISE_model-MAPMRI/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">QSIRecon-TORTOISE MAP-MRI</a></td>
+</tr>
+<tr>
+  <td><code>qsirecon-TORTOISE_model-tensor/</code></td>
+  <td><a href="../../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">QSIRecon-TORTOISE Tensor</a></td>
+</tr>
+<tr>
+  <td>MR Spectroscopy</td>
+  <td><code>osprey/</code></td>
+  <td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a></td>
+</tr>
+<tr>
+  <td>EEG</td>
+  <td><code>made/</code></td>
+  <td><a href="../../instruments/eeg/#made" target="_blank">HBCD-MADE</a></td>
+</tr>
+<tr>
+  <td>Wearable Sensors</td>
+  <td><code>motion/</code></td>
+  <td><a href="../../instruments/sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a></td>
+</tr>
+</tbody>
+</table>
+
+## Concatenated Data
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION: update entire contents of page for accuracy</i></p>
+
+The `concatenated/` BIDS folder can contain concatenated data files for various instruments and modalities, organized into subdirectories based on the type of data. Each file contains information for all participants. 
+
+<pre class="folder-tree">
+hbcd/
+|__ concatenated/ 
+    |__ genetics/
+    |__ geocoded_linkage/
+    |__ tic/
+</pre>
+
+Visit the instrument documentation pages for information on the unique file contents of each subfolder:
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 17px;">
+<thead>
+  <tr>
+  <th></th>
+  <th>Study Instrument (<i>Click to Visit Documentation</i>)</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+<td><code>genetics/</code></td>
+<td><a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Illumina Global Diversity GWAS Array</a></td>
+</tr>
+<tr>
+<td><code>geocoded_linkage/</code></td>
+<td><a href="../../instruments/SED/geocoded-linkage" target="_blank">Geocoded Linkage from Home and Work Addresses</a></td>
+</tr>
+<tr>
+<td><code>tic/</code></td>
+<td><a href="../../instruments/admin/transitions-in-care" target="_blank">Transitions in Care</a></td>
+</tr>
+</tbody>
+</table>
+<br>
+
+
+<br>

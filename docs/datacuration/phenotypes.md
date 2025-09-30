@@ -1,14 +1,13 @@
 # Tabulated Data
 
-Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**. This includes behavior, demographics, toxicology results, and data derived from brain imaging and other <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data. 
-
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-     See full list of tables included in the release under <a href="../../instruments/#instruments-by-domain" target="_blank">Instruments by Domain</a>.
-  </span>
+<p>
+<div id="agefields" class="table-banner">
+  <span class="emoji"><i class="fa fa-hourglass-half"></i><i class="fa fa-person-cane"></i></span>
+<span class="text">See <a href="../../instruments/agevariables/#tabulated-instrument-data" target="_blank">Age Variable Definitions</a> for documentation on fields reporting age in tabulated instrument data.</span>
 </div>
-<p></p>
+</p>
+
+Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**. This includes <a href="../../instruments/#behavior-biology-environment" target="_blank">Behavior, Biology, & Environment</a> instruments, <a href="../../instruments/#demographics-visit-information" target="_blank">Demographics & Visit</a> data, and tabulated derivatives, i.e. file-based derivatives of varied, often modality-specific format, organized as tabulated data for usability ([see details](overview.md#warning)).
 
 Key features of tabulated data include:
 
@@ -49,17 +48,10 @@ Each table includes “identifier columns” for participant ID, visit number, a
 <tr>
   <td><b><code>run_id</code></b></td>
   <td style="word-wrap: break-word; white-space: normal;">Unique identifier for run number - <i>only present in tables derived from file-based data with multiple runs, e.g. for MRI acquisition</i></td>
-  <td><code>run-01</code></td>
+  <td><code>1</code></td>
 </tr>
 </tbody>
 </table>
-
- - **Static tables** (one record per person) use only `participant_id`.
- - **Longitudinal tables** (multiple records per person over time) use both `participant_id` and `session_id`.
-
-## Fields Reporting Age
-
-See description of fields reporting age in the tabulated data under Age Variable Definitions > <a href="../../instruments/agevariables/#tabulated-instrument-data" target="_blank">Tabulated Instrument Data</a>.
 
 ## File Types
 
@@ -124,8 +116,8 @@ Plain text formats like TSV/CSV can cause problems in large-scale analyses due t
 #### Working with Parquet in Python and R
 <p>
 <div id="load-parquet" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
   <span class="emoji"><i class="fa-brands fa-python"></i> / <i class="fa-brands fa-r-project"></i></span>
+  <span class="text-with-link">
   <span class="text">Loading Parquet Files</span>
   <a class="anchor-link" href="#load-parquet" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -182,8 +174,8 @@ Shadow matrices make analyses cleaner and more reliable by:
 While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, **there are situations where non-responses are themselves meaningful.** For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables. To understand patterns of missing data, users can re-integrate the non-responses from the shadow matrix back into the data using the following helper functions (*click to expand*):
 
 <div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
   <span class="emoji"><i class="fa-brands fa-python"></i></span>
+  <span class="text-with-link">
   <span class="text">Python</span>
   <a class="anchor-link" href="#python-helper-function" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -228,8 +220,8 @@ df[df["&lt;COLUMN NAME&gt;"].isna()][["&lt;COLUMN NAME&gt;_missing_reason"]]
 </div>
 
 <div id="r-helper-function" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
   <span class="emoji"><i class="fa-brands fa-r-project"></i></span>
+  <span class="text-with-link">
   <span class="text">R (using <a href="../recprograms/#tabulated-data">NBDCtools</a>)</span>
   <a class="anchor-link" href="#r-helper-function" title="Copy link">
   <i class="fa-solid fa-link"></i>

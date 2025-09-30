@@ -58,10 +58,7 @@ nav:
   - Data Structure & File Types:
     - Data Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md
-    - File-Based Data: 
-        - Raw BIDS Data: datacuration/rawbids.md
-        - Processed Pipeline Derivatives: datacuration/derivatives.md
-        - Concatenated Data: datacuration/concat.md
+    - File-Based Data: datacuration/file-based-data.md
     - Tools: 
         - Useful Utilities: datacuration/recprograms.md
         - NMIND: datacuration/nmind.md
