@@ -26,6 +26,22 @@ th, td {
   border-radius: 6px; /* round edges */
   width: 100%;
 }
+.static-table-banner {
+  display: flex;
+  align-items: center;
+  background-color: #d9dce2;
+  padding: 4px 8px;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: Lato; 
+  color: #474646;
+  font-weight: bold;
+  gap: 8px;  
+  font-size: 0.9em;
+  line-height: 1.1;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 10px; /* Only difference is that it has space below section */
+}
 .table-banner .emoji {
   flex-shrink: 0;
   display: flex;
@@ -34,10 +50,17 @@ th, td {
   font-size: 1.4em;   /* increase this for larger icon */
   color: #199bd6;
 }
+.static-table-banner .emoji {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;   /* increase this for larger icon */
+  color: #4d5052;
+}
 .table-banner .text {
   flex: 1;                  /* text takes remaining space */
 }
-
 .table-collapsible-content {
   max-height: 0;
   overflow: hidden;
@@ -110,6 +133,7 @@ th, td {
   padding: 8px;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.6) !important; 
+
 }
 .table-no-vertical-lines th {
   background-color: rgba(255, 255, 255, 0.6) !important;
@@ -127,26 +151,19 @@ th, td {
 }
 .compact-table th,
 .compact-table td {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  text-align: left;
-  background-color: rgba(255, 255, 255, 0.6) !important; 
   vertical-align: top;
-  padding: 0.1em 0.1em;
-  padding-left: 1px;
-  padding-right: 1px;
+  text-align: left;
+  padding: 0.3em 0.6em;
+  border: 1px solid #ddd;
 }
 .compact-table th {
-  background-color: #87cafa;
+  background-color: #e3f2fd;
   width: 20%;
 }
 .compact-table td {
   background-color: #f9f9f9;
 }
-.compact-table thead {
-  background-color: #e8dbff;
-  width: 20%;
-}
+
 
 /* Compact table with no vertical lines */
 .compact-table-no-vertical-lines {
@@ -167,6 +184,7 @@ th, td {
   padding: 0.1em 0.1em;
   padding-left: 1px;
   padding-right: 1px;
+  line-height: 1.1; 
 }
 .compact-table-no-vertical-lines ul {
   margin-top: 1rem;

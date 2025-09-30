@@ -182,6 +182,7 @@ pre.helper-code code {
   background-color: #25ae70; /* background color on hover */
 }
 
+
 /* Instrument pages overview info (table name, construct, full name) */
 .info-block {
   line-height: 1.4;
@@ -204,3 +205,5 @@ pre.helper-code code {
 .info-value {
   margin: 0;
 }
+
+
