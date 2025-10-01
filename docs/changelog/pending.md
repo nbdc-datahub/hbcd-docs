@@ -18,20 +18,20 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="../../../instruments/#mri" target="_blank"><i class="fas fa-magnet"></i> MRI</a></td>
-      <td><a href="../../../instruments/mri/qc/#brainswipes" target="_blank">BrainSwipes QC</a></td>
+      <td><a href="../../instruments/#mri" target="_blank"><i class="fas fa-magnet"></i> MRI</a></td>
+      <td><a href="../../instruments/mri/qc/#brainswipes" target="_blank">BrainSwipes QC</a></td>
       <td><code>img_brainswipes*</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Addition of QC scores for participants with missing QC results (N=8).</td>
     </tr>
     <tr>
-      <td><a href="../../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i> PEX</a></td>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="../../../instruments/pregexp/pex" target="_blank">Pregnancy & Infant Health</a></td>
+      <td><a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i> PEX</a></td>
+      <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments/pregexp/pex" target="_blank">Pregnancy & Infant Health</a></td>
       <td><code>pex_bm_health*</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Medications will be categorized using RxNorm IDs, with added columns for Brand Name, Ingredient, Precise Ingredient, and Multiple Active Ingredients, to support more clear and granular analyses.</td>
     </tr>
     <tr>
-      <td><a href="../../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i> SED</a></td>
-      <td><a href="../../../instruments/SED/v01-demo" target="_blank">V01 Demographics</a></td>
+      <td><a href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i> SED</a></td>
+      <td><a href="../../instruments/SED/v01-demo" target="_blank">V01 Demographics</a></td>
       <td><code>sed_bm_demo</code></td>
       <td style="word-wrap: break-word; white-space: normal;">
         Inclusion of Birth Parent Sexual Orientation - <i>"Which of the following best represents how you think of yourself?"</i><br>
@@ -191,8 +191,8 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="../../../instruments/#physhealth" target="_blank"><i class="fa fa-heart-pulse"></i> Physical Health</a></td>
-      <td><a href="../../../instruments/physhealth/growth" target="_blank">Growth</a></td>
+      <td><a href="../../instruments/#physhealth" target="_blank"><i class="fa fa-heart-pulse"></i> Physical Health</a></td>
+      <td><a href="../../instruments/physhealth/growth" target="_blank">Growth</a></td>
       <td><code>ph_ch_anthro</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Inclusion of age-based height/weight/head z-scores calculated based on (non-jittered) date of birth</td>
     </tr>
