@@ -258,7 +258,7 @@ QALAS conversion yielded either five 3D NIfTI files or one 4D file with five vol
 </table>
 </div>
 
-## Processed Derivatives
+## Derivatives
 
 The `derivatives/` folder contains derivatives, which are file outputs from <a href="../../instruments/processing/" target="_blank">processing pipelines</a>. 
 
