@@ -1,8 +1,6 @@
-
 # Data Structure Overview
 
-The HBCD dataset follows NBDC data structure standards established as part of the ABCD Study (<a href="https://docs.abcdstudy.org/latest/documentation/curation/structure.html">see details</a>), which incorporate the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. At a high level, data are organized into two categories:
-
+The HBCD dataset follows NBDC data structure standards established as part of the ABCD Study (<a href="https://docs.abcdstudy.org/latest/documentation/curation/structure.html">see details</a>), which incorporates the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. At a high level, data are organized into two categories:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
   <tbody>
@@ -47,7 +45,7 @@ The HBCD dataset follows NBDC data structure standards established as part of th
 </div>
 </p>
 
-Tabulated and file-based data are all organized under the root `hbcd/` folder as follows:
+Tabulated and file-based data are organized under the root `hbcd/` folder as follows:
 
 <pre class="folder-tree">
 hbcd/
