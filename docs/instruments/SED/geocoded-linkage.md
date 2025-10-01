@@ -51,7 +51,7 @@ hbcd/
 
 ## Details
 
-Brain development is shaped not only by biological factors, but also by the environments in which children live and grow. To capture these influences, the HBCD Study uses **Geocoded Linked External Data (GLED)**, which links participants’ residential and care place addresses to external datasets. This approach provides measures of cumulative social, economic, and environmental context that may help explain individual differences in development ([Fan et al. 2021](https://doi.org/10.1016/j.dcn.2021.101030)). At each study visit, the Birth Parent or Primary Caregiver provides the child’s residential address history to HBCD Study staff (in person or remotely; completion time 5-15 minutes).
+**Geocoded Linked External Data (GLED)** are external datasets linked to participants’ residential addresses. They serve as proxy measures of cumulative social, economic, and environmental contexts that may help explain individual differences in development ([Fan et al. 2021](https://doi.org/10.1016/j.dcn.2021.101030)). At each study visit, the Birth Parent or Primary Caregiver reports the child’s residential address history. Study staff collect this information in person or remotely (completion time: 5–15 minutes).
 
 <table class="expandable-table">
   <colgroup>
