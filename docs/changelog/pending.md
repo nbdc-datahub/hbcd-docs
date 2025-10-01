@@ -30,7 +30,7 @@
       <td style="word-wrap: break-word; white-space: normal;">Medications will be categorized using RxNorm IDs, with added columns for Brand Name, Ingredient, Precise Ingredient, and Multiple Active Ingredients, to support more clear and granular analyses.</td>
     </tr>
     <tr>
-      <td><a href="../../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i> SED</a></td>
+      <td><a href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i> SED</a></td>
       <td><a href="../../instruments/SED/v01-demo" target="_blank">V01 Demographics</a></td>
       <td><code>sed_bm_demo</code></td>
       <td style="word-wrap: break-word; white-space: normal;">
