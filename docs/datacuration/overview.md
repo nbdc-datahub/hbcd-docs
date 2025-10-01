@@ -3,11 +3,11 @@
 The HBCD dataset follows NBDC data structure standards established as part of the ABCD Study (<a href="https://docs.abcdstudy.org/latest/documentation/curation/structure.html">see details</a>), which incorporates the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. At a high level, data are organized into two categories:
 
 <p style="font-size: 1.1em; margin-bottom: 0;"><i class="fa-solid fa-table"></i> <b>Tabulated Data</b></p>
-Study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), administrative (<a href="../../instruments/#demographics-visit-information" target="_blank">demographics & visit info</a>), and select <a href="#warning" target="_blank">file-based</a> data organized in a standardized tabular format that includes all participant responses per table.<br>
+Study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), administrative (<a href="../../instruments/#demographics-visit-information" target="_blank">demographics & visit info</a>), and select <a href="#warning">file-based</a> data organized in a standardized tabular format that includes all participant data per table.<br>
 <a href="../phenotypes" target="_blank"><i>Go to Tabulated Data documentation</i> <i style="font-size: 0.8em;" class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
 <p style="font-size: 1.1em; margin-bottom: 0;"><i class="fa-solid fa-folder-open"></i> <b>File-Based Data</b></p>
-File-based data is any data that cannot be converted to the HBCD tabulated format. This includes:
+Unlike tabulated data, file-based data comes in a variety of formats, often modality-specific. File-based data includes:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
   <tbody>
@@ -23,6 +23,28 @@ File-based data is any data that cannot be converted to the HBCD tabulated forma
 </table>
 
 <a href="../file-based-data" target="_blank"><i>Go to File-Based Data documentation</i> <i style="font-size: 0.9em;" class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+<p>
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Which file-based data are also available as HBCD tabulated data? <span class="hint">(Click to expand)</span></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p><strong>When possible</strong>, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
+<p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are included. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
+<ul>
+<li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
+<li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
+</ul>
+<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. See <a href="../../access/metadata/#exceptions-mri" target="_blank">here</a> for details.</p>
+</div>
+</p>
 
 <pre class="folder-tree">
 hbcd/
