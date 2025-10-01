@@ -13,7 +13,7 @@ Unlike [tabulated](phenotypes.md) data (tables organized in a uniform way across
 </div>
 </p>
 
-The `rawdata/` folder includes raw file-based data in [BIDS](https://bids-specification.readthedocs.io/en/stable/) format for MR Imaging, MR Spectroscopy, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings. 
+The `rawdata/` folder includes raw file-based data in [BIDS](https://bids-specification.readthedocs.io/en/stable/) format for MRI, MRS, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings. 
 
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
@@ -37,42 +37,6 @@ hbcd/
     |__ participants.json 
 </pre>
 <p></p>
-
-*Click the following links to see the full file contents of each raw BIDS folder in the measure documentation pages:*
-
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-  <thead>
-    <tr>
-      <th><a href="../../instruments/mri/smri/#rawbids" target="_blank">Structural MRI</a></th>
-      <th><a href="../../instruments/mri/qmri/#rawbids" target="_blank">Quantitative MRI</a></th>
-      <th><a href="../../instruments/mri/fmri/#rawbids" target="_blank">Functional MRI</a></th>
-      <th><a href="../../instruments/mri/dmri/#rawbids" target="_blank">Diffusion MRI</a></th>
-      <th><a href="../../instruments/mri/mrs/#rawbids" target="_blank">MR Spectroscopy</a></th>
-      <th><a href="../../instruments/eeg/#rawbids" target="_blank">EEG</a></th>
-      <th><a href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">Wearable Sensors</a></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <code>anat/</code>
-      </td>
-      <td>
-        <code>anat/</code>
-      </td>
-      <td>
-        <code>func/</code>, <code>fmap/</code></td>
-      <td>
-        <code>dwi/</code>      </td>
-      <td>
-        <code>mrs/</code>      </td>
-      <td>
-        <code>eeg/</code>      </td>
-      <td>
-        <code>motion/</code>      </td>
-    </tr>
-  </tbody>
-</table>
 
 ### Participant-, Session-, & Scan-Level Data
 Participant-, session-, and scan-level data are stored in the following `.tsv` files, accompanied by `.json` sidecar files containing metadata:
@@ -104,7 +68,34 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 </tbody>
 </table>
 
+### Modality-Specific Subfolders
 
+*Click the following links to see the full file contents of each raw BIDS folder in the measure documentation pages:*
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th><a href="../../instruments/mri/smri/#rawbids" target="_blank">Structural MRI</a></th>
+      <th><a href="../../instruments/mri/qmri/#rawbids" target="_blank">Quantitative MRI</a></th>
+      <th><a href="../../instruments/mri/fmri/#rawbids" target="_blank">Functional MRI</a></th>
+      <th><a href="../../instruments/mri/dmri/#rawbids" target="_blank">Diffusion MRI</a></th>
+      <th><a href="../../instruments/mri/mrs/#rawbids" target="_blank">MR Spectroscopy</a></th>
+      <th><a href="../../instruments/eeg/#rawbids" target="_blank">EEG</a></th>
+      <th><a href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">Wearable Sensors</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>anat/</code></td>
+      <td><code>anat/</code></td>
+      <td><code>func/</code>, <code>fmap/</code></td>
+      <td><code>dwi/</code></td>
+      <td><code>mrs/</code></td>
+      <td><code>eeg/</code></td>
+      <td><code>motion/</code></td>
+    </tr>
+  </tbody>
+</table>
 
 ### BIDS Conversion Procedures
 
