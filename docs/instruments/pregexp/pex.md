@@ -153,11 +153,6 @@
 <p>Out-of-range values were filtered (i.e. changed to "n/a") for Health V2- Infancy (<code>pex_bm_healthv2_inf</code>). Valid field values are documented <a href="../../../changelog/versions/R1/#filtered-field-values" target="_blank">here</a> under Exclusion Criteria for the current release.</p>
 </div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">The data for one or more of these instruments has known issues - <a href="../../../changelog/knownissues/#pregnancy-infant-health" target="_blank">see details</a>.</span>
-</div>
-
 ## Administration & Quality Control
 
 #### Administration
