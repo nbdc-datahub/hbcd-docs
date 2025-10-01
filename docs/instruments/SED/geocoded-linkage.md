@@ -195,12 +195,9 @@ function toggleRows(group) {
 
 ## Quality Control
 
-Quality control procedures includes the following:
-<ul>
-  <li>The input addresses from the address history form are first checked to see if they fall into correct geographical boundaries of the catchment area.</li>
-  <li>The address history completedness is check if the recorded address for a given participant can gaplessly tracing back to one year before child's EDD.</li>
-  <li>The addresses are geocoded and checked if the conversions are success or not</li>
-</ul>
+Quality control procedures include the following:
+
+<ul> <li>Verifying that input addresses from the address history form fall within the correct geographical boundaries of the catchment area.</li> <li>Checking address history completeness to ensure the recorded addresses trace back continuously to at least one year before the child’s estimated due date (EDD).</li> <li>Geocoding addresses and confirming that the conversions are successful.</li> </ul>
 
 ## References
 
