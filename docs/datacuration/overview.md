@@ -1,6 +1,3 @@
-
-<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION: update page to add concatenated file type overview for 2.0</i></p>
-
 # Data Structure Overview
 
 The HBCD dataset follows NBDC data structure standards established as part of the ABCD Study (<a href="https://docs.abcdstudy.org/latest/documentation/curation/structure.html">see details</a>), which incorporates the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. At a high level, data are organized into two categories:
