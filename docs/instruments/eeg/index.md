@@ -203,16 +203,35 @@ During quality control, a frequently observed issue across all tasks was the irr
 
 ### EEG Net Placement ("Capping Quality") Ratings
 
-EEG capping quality ratings are used to determine inclusion in the data release pool and subsequent processing: EEG data with a capping quality rating of "Not usable" are not included in the current release. Capping ratings are included in the tabulated QC files for each task (`eeg_qc_task-<TASK>`).
+EEG capping quality ratings are used to determine inclusion in data processing. Capping ratings are included in the tabulated QC files for each task (`eeg_qc_task-<TASK>`).
 
 Photos used to assess EEG capping quality are taken for each acquisition from the front, back, top, left, and right angles of the participant's head and uploaded via the BIDS Wizard application to a secure computing environment. They are then reviewed by the EEG Core at the University of Maryland to rate the quality of EEG net placement, or "capping quality," for each acquisition.
 
-“Average”, "Poor," and "Not usable" ratings correspond to net placement shifted 1-2 cm, 2-3 cm, and >3 cm from proper placement, respectively. To be rated as "Excellent," acquisitions must meet the following criteria:
-
-1.	Net placement is symmetrical with midline electrodes centered on the scalp
-2.	Ears are within the ear holes and not covered by sensors 
-3.	Reference electrode is placed on the vertex of the scalp
-4.	Electrode E17 is placed on the nasion
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+  <td><strong>Markers of Proper Net Placement</strong></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+    <ol>
+    <li>Reference electrode <strong>(REF)</strong> is on the vertex </li>
+    <li>Nasion electrode <strong>(#17)</strong> is between the eyebrows</li>
+    <li>Ear electrodes <strong>(#44, #114)</strong> are on the preauricular point</li>
+    </ol>
+  </td>
+</tr>
+<tr>
+<td><strong>Net Placement Rubric</strong></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+    <ul>
+    <li><strong>Excellent</strong> - all markers are <strong>0 - 0.5 cm</strong> from proper net placement </li>
+    <li><strong>Average</strong> - any marker is <strong>0.5 - 2 cm</strong> from proper placement</li>
+    <li><strong>Poor</strong> - any marker is <strong>2 - 3 cm</strong> from proper placement</li>
+    <li><strong>Very Poor</strong> - any marker is  <strong>&gt; 3 cm</strong> from proper placement</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
 
 Please refer to the [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030) for additional information about capping requirements.
 
