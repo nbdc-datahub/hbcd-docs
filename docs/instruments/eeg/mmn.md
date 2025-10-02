@@ -4,7 +4,21 @@
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
   <span class="text">See <a href="..">Overview</a> for EEG protocols, quality control procedures, and data warnings.</span>
 </div>
-<p></p>
+<p>
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>The interstimulus interval (ISI) for the Auditory Mismatch Negativity task changed between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details.</p>
+</div>
+</p>
  
 The Auditory mismatch negativity (**MMN**) Task (v.11.29.23) facilitates examining auditory evoked potentials and habituation/dishabituation to auditory stimuli. The MMN captures differences in neural responses to standard (“ba”) and deviant (“da”) stimuli. From this task the MMN difference wave is computed, which is also known as the Mismatch Response (MMR). The amplitude/latency of this difference wave has been linked to language ([Choudhury & Benasich, 2011](https://doi.org/10.1016/j.clinph.2010.05.035)), temperament/personality ([Gurrera et al., 2001](https://doi.org/10.1016/S0006-3223(00)01067-2); [Marshall et al., 2009](https://doi.org/10.1111/j.1467-7687.2008.00808.x)), internalizing problems ([Reeb-Sutherland et al., 2009](https://doi.org/10.1111/j.1469-7610.2009.02170.x)), externalizing/attention problems ([Gumenyuk et al., 2005](https://doi.org/10.1016/j.neulet.2004.10.081)), and disorders including autism ([Lepistö et al., 2005](https://doi.org/10.1016/j.brainres.2005.10.052); [Schwartz et al., 2018](https://doi.org/10.1016/j.neubiorev.2018.01.008)) and reading ability/dyslexia ([Leppänen et al., 2010](https://doi.org/10.1016/j.cortex.2010.06.003); [Norton, Beach, et al., 2021](https://doi.org/10.3389/fnhum.2021.624617)). See [Fox et al. (2024)](https://doi.org/10.1016/j.dcn.2024.101447) for more information about the MMN task.
 
