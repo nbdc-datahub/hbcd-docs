@@ -7,7 +7,7 @@
 </div>
 </p>
 
-Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**. This includes <a href="../../instruments/#behavior-biology-environment" target="_blank">Behavior, Biology, & Environment</a> instruments, <a href="../../instruments/#demographics-visit-information" target="_blank">Demographics & Visit</a> data, and tabulated derivatives, i.e. file-based derivatives of varied, often modality-specific format, organized as tabulated data for usability ([see details](overview.md#warning)).
+Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**. This includes <a href="../../instruments/#behavior-biology-environment" target="_blank">Behavior, Biology, & Environment</a> instruments, <a href="../../instruments/#demographics-visit-information" target="_blank">Demographics & Visit</a> data, and tabulated derivatives, i.e. file-based derivatives of varied, often modality-specific format, organized as tabulated data for usability ([see details](#warning)).
 
 Key features of tabulated data include:
 

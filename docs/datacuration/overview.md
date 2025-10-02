@@ -6,7 +6,7 @@
 The HBCD dataset follows NBDC data structure standards established as part of the ABCD Study (<a href="https://docs.abcdstudy.org/latest/documentation/curation/structure.html">see details</a>), which incorporates the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. At a high level, data are organized into two categories:
 
 <p style="font-size: 1.1em; margin-bottom: 0;"><i class="fa-solid fa-table"></i> <b>Tabulated Data</b></p>
-Study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), administrative (<a href="../../instruments/#demographics-visit-information" target="_blank">demographics & visit info</a>), and select <a href="#warning" target="_blank">file-based</a> data organized in a standardized tabular format that includes all participant responses per table.<br>
+Study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), administrative (<a href="../../instruments/#demographics-visit-information" target="_blank">demographics & visit info</a>), and select <a href="../phenotypes/#warning" target="_blank">file-based</a> data organized in a standardized tabular format that includes all participant responses per table.<br>
 <a href="../phenotypes" target="_blank"><i>Go to Tabulated Data documentation</i> <i style="font-size: 0.8em;" class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
 <p style="font-size: 1.1em; margin-bottom: 0;"><i class="fa-solid fa-folder-open"></i> <b>File-Based Data</b></p>
