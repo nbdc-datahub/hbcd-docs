@@ -146,7 +146,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>See details of the HBCD-MADE pipeline and outputs in the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE documentation</a>. Below is an overview of the HBCD-MADE derivative file structure and key outputs. See a full list and description of JPG file outputs (<code>sub-<ID>_task-&lt;FACE|MMN|RS&gt;_desc-{IMG}.jpg</code> below) <a href="https://docs-hbcd-made.readthedocs.io/en/latest/expected_outputs.html#d-figures-jpg">here</a>.</p>      
+<p>See details of the HBCD-MADE pipeline and outputs in the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE documentation</a>. Below is an overview of the HBCD-MADE derivative file structure and key outputs. See a full list and description of JPG file outputs (<code>sub-<ID>_task-&lt;FACE|MMN&gt;_desc-{IMG}.jpg</code> below) <a href="https://docs-hbcd-made.readthedocs.io/en/latest/expected_outputs.html#d-figures-jpg">here</a>.</p>      
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -169,7 +169,7 @@ hbcd/
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_desc-merged_eeg.set
                     | 
                     |__ processed_data/
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS&gt;</span>_desc-<span class="placeholder">{IMG}</span>.jpg
+                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN&gt;</span>_desc-<span class="placeholder">{IMG}</span>.jpg
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-VEP_<span class="placeholder">&lt;desc-oz_ERP|topo&gt;</span>.jpg
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_acq-eeg_ERP.mat
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.fdt
