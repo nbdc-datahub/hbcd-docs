@@ -1,16 +1,8 @@
 # Auditory Mismatch Negativity Task 
 
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    Additional Resources
-  </span>
-</div>
-<div class="notification-static-content">
-<p> 
-• <a href="..">Overview & EEG Protocols</a><br>
-• <a href="../qc">Quality Control Procedures</a><br>
-</p>
+<div class="warning-banner static-banner" style="background-color:#fff3cd; border-left: 5px solid #ffa500;">
+<span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
+<span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
 </div>
 <p></p>
  
@@ -18,30 +10,33 @@ The Auditory mismatch negativity (**MMN**) Task (v.11.29.23) facilitates examini
 
 ## Task Details
 
-Standard ("ba") and deviant ("da") auditory stimuli are presented while a video is played on an iPad to serve as a visual distractor (brightness set to maximum, in airplane mode, and unplugged). The task may be paused if breaks are needed. The `.wav` files for the auditory stimuli are 196 ms long for the “ba” stimulus and 198 ms long for the “da” stimulus.
+Auditory stimuli (“ba” = 196 ms; “da” = 198 ms) are presented while a video plays on an iPad (brightness at maximum, in airplane mode, and unplugged) to serve as a visual distractor. The task is paused for breaks as needed.
 
+*Visit 3 trial progression schematic:*
+
+<img src="../images/mmn-trial.jpg" width="90%" height="auto" class="center">
+<div style="margin-left: 10%; margin-right: 10%;">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+<td style="width: 50%;"><strong>Trial Count</strong><br>
 <ul>
-<strong>Trial Count:</strong>
 <li>Standard condition: 569</li>
 <li>Deviant condition: 98 </li>
 <li>Total: 667</li>
 </ul>
-
+</td>
+<td style="width: 50%;"><strong>Timing Details</strong><br>
 <ul>
-<strong>Timing Details:</strong>
 <li>Stimulus duration: 200 ms</li>
 <li>InterStimulus interval: 820 ms (V03), 600 ms (V04/V06)</li>
 <li>Total trial length: 1020 ms (V03), 800 ms (V04/V06)</li>
 </ul>
-
-A schematic of the trial progression for Visit 3 is below. See [HBCD Study Protocols - EEG](https://hbcdstudy.org/wp-content/uploads/2023/06/EEG-Parameters.pdf) for additional details.
-<img src="../images/MMN.png" width="100%" height="auto" class="center">
-
-## Resources
-- [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/)
-- [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
-- [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030)
-
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ### References
 

@@ -1,16 +1,8 @@
 # Video Resting State Task
 
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    Additional Resources
-  </span>
-</div>
-<div class="notification-static-content">
-<p> 
-• <a href="..">Overview & EEG Protocols</a><br>
-• <a href="../qc">Quality Control Procedures</a><br>
-</p>
+<div class="warning-banner static-banner" style="background-color:#fff3cd; border-left: 5px solid #ffa500;">
+<span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
+<span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
 </div>
 <p></p>
 
@@ -22,11 +14,6 @@ The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the de
 Participants watch a silent video for the duration of the RS task. In **V03** (*left set of images below*), the video displays a variety of colorful and abstract toys and other visuals. In **V04 & V06** (*right set of images below*), the video includes a variety of marble run and construction visuals. See [HBCD Study Protocols - EEG](https://hbcdstudy.org/wp-content/uploads/2023/06/EEG-Parameters.pdf) for additional details.
 
 <img src="../images/eeg-RS.png" width="100%" height="auto">
-
-## Resources
-- [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/)
-- [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
-- [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030)
 
 ## References
 <div class="references">
