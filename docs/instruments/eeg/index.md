@@ -1,4 +1,4 @@
-# Electroencephalography 
+# Overview & EEG Protocols
 
 HBCD includes four electroencephalography (EEG) tasks acquired during visits V03, V04, and V06 - click to be directed to task documentation pages:
 

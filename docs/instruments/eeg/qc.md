@@ -1,6 +1,6 @@
-# Quality Control    
+# Quality Control Procedures   
 
-## QC Procedures
+## QC Dashboard
 
 After EEG acquisition, quality control checks are performed using [EEG2BIDS Wizard](https://github.com/aces/eeg2bids), a custom MATLAB application installed at all HBCD sites. These checks are immediately provided to the user to ensure the data's integrity and usability. The process includes:
 

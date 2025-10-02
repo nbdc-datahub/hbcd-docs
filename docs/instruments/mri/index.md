@@ -1,13 +1,15 @@
 
-# Magnetic Resonance Imaging & Spectroscopy
+# Overview & MR Protocols
 
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See <a href="https://hbcdsequences.readthedocs.io"><b>HBCD Study MRI Protocols</b></a> for full MRI protocols, sequence installation, and operation instructions.</span>
-</div>
-<p></p>
+HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy (MRS)** data measures acquired as part of a comprehensive pediatric neuroimaging protocol, meticulously designed to overcome technical challenges of imaging early in life. MR data are acquired during visits V02, V03, V04, and V06 across all 27 Study recruitment sites. MR modalities include the following - click to be directed to modality documentation pages:
 
-HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy (MRS)** data measures acquired as part of a comprehensive pediatric neuroimaging protocol, meticulously designed to overcome technical challenges of imaging early in life. MR data are acquired during visits V02, V03, V04, and V06 across all 27 Study recruitment sites. MRI modalities include **structural**, **functional**, **diffusion**, and **quantitative MRI** - select a modality in the left-hand table of contents to be directed to detailed measure descriptions.
+<ul>
+<li><a href="smri" target="_blank">Structural MRI (sMRI)</a></li>
+<li><a href="fmri" target="_blank">Functional MRI (fMRI)</a></li>
+<li><a href="dmri" target="_blank">Diffusion MRI (dMRI)</a></li>
+<li><a href="qmri" target="_blank">Quantitative MRI (qMRI)</a></li>
+<li><a href="mrs" target="_blank">Magnetic Resonance Spectroscopy (MRS)</a></li>
+</ul>
 
 ## Release Data
 
@@ -45,5 +47,9 @@ hbcd/
     |__ symri/
     |__ xcp_d/
 </pre>
+
+## MRI & MRS Protocols
+
+See <a href="https://hbcdsequences.readthedocs.io"><b>HBCD Study MRI Protocols</b></a> for full MRI protocols, sequence installation, and operation instructions.
 
 <br>
