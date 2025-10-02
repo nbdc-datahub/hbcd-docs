@@ -1,3 +1,4 @@
+
 # Tabulated Data
 
 <p>
@@ -7,13 +8,7 @@
 </div>
 </p>
 
-Tabulated data, located under `rawdata/phenotype/`, refers to **instrument or derived data in tabulated format**. This includes <a href="../../instruments/#behavior-biology-environment" target="_blank">Behavior, Biology, & Environment</a> instruments, <a href="../../instruments/#demographics-visit-information" target="_blank">Demographics & Visit</a> data, and tabulated derivatives, i.e. file-based derivatives of varied, often modality-specific format, organized as tabulated data for usability ([see details](overview.md#warning)).
-
-Key features of tabulated data include:
-
-- Data are curated to follow the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files.html#phenotypic-and-assessment-data) standard linked by participant ID and visit number. See [Table Organization](#table-organization) below for details.
-- Tabulated data is available in both plain text (`.tsv`) and Parquet (`.parquet`) formats, with accompanying metadata explaining the contents of each table. See [File Types](#file-types) below for details.
-
+Tabulated data are participant-level summaries of study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), administrative (<a href="../../instruments/#demographics-visit-information" target="_blank">demographics & visit info</a>), and select <a href="../overview/#warning" target="_blank">file-based</a> data. Files are stored under `rawdata/phenotype/`:
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -24,9 +19,15 @@ hbcd/
         |__ <span class="placeholder">&lt;instrument_name&gt;</span>.*             <span class="hashtag"># Instrument Data</span>
 </pre>
 
+Key features of tabulated data include:
+
+ - [Table Organization](#table-organization): tables are organized following the BIDS standard so that data from different sources can be linked together by participant ID and visit number
+ - [File Types](#file-types): tables are available in both plain text (`.tsv`) and Parquet (`.parquet`) format, with accompanying metadata that explains the contents of each table
+ 
+
 ## Table Organization
 
-Each table includes “identifier columns” for participant ID, visit number, and run number (when applicable) that allow you to link information between tables:
+Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files/phenotypic-and-assessment-data.html) standard, each table includes “identifier columns” for participant ID, visit number, and run number (when applicable) that allow you to link information between tables:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -247,4 +248,5 @@ df[df["&lt;COLUMN NAME&gt;"].isna()][["&lt;COLUMN NAME&gt;_missing_reason"]]
       count(&lt;column_name&gt;)
   </code></pre>
 </div>
+
 <br>
