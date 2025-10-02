@@ -119,7 +119,7 @@ nav:
             - Video Resting State Task: instruments/eeg/videors.md
             - Visual Evoked Potential Task: instruments/eeg/vep.md
         - Magnetic Resonance Imaging:
-            - Overview & MRI Protocols: instruments/mri/index.md
+            - Overview & MR Protocols: instruments/mri/index.md
             - Quality Control Procedures: instruments/mri/qc.md
             - Structural MRI: instruments/mri/smri.md
             - Functional MRI: instruments/mri/fmri.md
