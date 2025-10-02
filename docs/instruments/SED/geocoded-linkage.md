@@ -32,7 +32,7 @@
 <div id="concat" class="static-banner" style="background-color: #dcd8fb; border-left: 5px solid #b5aef2;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-    <span class="text">Concatenated Data (<code>genetics/</code>)</span>
+    <span class="text">Concatenated Data (<code>geocoded-linkage/</code>)</span>
     <a class="anchor-link" href="#concat" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>
