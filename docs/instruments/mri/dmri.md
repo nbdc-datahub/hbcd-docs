@@ -8,9 +8,8 @@
 </div>
 <div class="notification-static-content">
 <p> 
-• <a href="..">MR Imaging & Spectroscopy Overview</a><br>
-• <a href="../qc">MR Quality Control Procedures</a><br>
-• <a href="../protocols">MRI protocols</a> for sequence installation and operation instructions
+• <a href="..">Overview & MR Protocols</a><br>
+• <a href="../qc">Quality Control Procedures</a><br>
 </p>
 </div>
 

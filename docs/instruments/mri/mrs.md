@@ -8,12 +8,10 @@
 </div>
 <div class="notification-static-content">
 <p> 
-• <a href="..">MR Imaging & Spectroscopy Overview</a><br>
-• <a href="../qc">MR Quality Control Procedures</a><br>
-• <a href="../protocols">MRI protocols</a> for sequence installation and operation instructions
+• <a href="..">Overview & MR Protocols</a><br>
+• <a href="../qc">Quality Control Procedures</a><br>
 </p>
 </div>
-<p></p>
 
 **Magnetic Resonance Spectroscopy (MRS)** provides measures of biochemicals involved in neuronal metabolism, neurotransmission, and oxidative stress. These measures enable researchers to interrogate biochemical mechanisms underlying the structural, functional, and behavioral trajectories. HBCD is the first study of this magnitude to include MRS in a comprehensive pediatric neuroimaging protocol through the development of Integrated Short-TE and Hadamard Multi-Sequence, or ISTHMUS ([Hui et al., 2024](https://doi.org/10.1016/j.jneumeth.2024.110206)).
 

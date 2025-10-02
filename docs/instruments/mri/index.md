@@ -1,12 +1,6 @@
 
 
-# Magnetic Resonance Imaging & Spectroscopy
-
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See <a href="https://hbcdsequences.readthedocs.io"><b>HBCD Study MRI Protocols</b></a> for full MRI protocols, sequence installation, and operation instructions.</span>
-</div>
-<p></p>
+# Overview & MR Protocols
 
 HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy (MRS)** data measures acquired as part of a comprehensive pediatric neuroimaging protocol, meticulously designed to overcome technical challenges of imaging early in life. MR data are acquired during visits V02, V03, V04, and V06 across all 27 Study recruitment sites. MR modalities include the following - click to be directed to modality documentation pages:
 
@@ -61,7 +55,9 @@ hbcd/
     |__ xcp_d/
 </pre>
 
-## Quality Control 
-See [HBCD MR Quality Control Procedures](qc.md) for a detailed information on MR QC.
+## MRI & MRS Protocols
+
+See <a href="https://hbcdsequences.readthedocs.io"><b>HBCD Study MRI Protocols</b></a> for full MRI protocols, sequence installation, and operation instructions.
+
 
 <br>

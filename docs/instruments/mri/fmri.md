@@ -1,5 +1,6 @@
 # Functional MRI (fMRI)
 
+
 <div class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">
@@ -8,9 +9,8 @@
 </div>
 <div class="notification-static-content">
 <p> 
-• <a href="..">MR Imaging & Spectroscopy Overview</a><br>
-• <a href="../qc">MR Quality Control Procedures</a><br>
-• <a href="../protocols">MRI protocols</a> for sequence installation and operation instructions
+• <a href="..">Overview & MR Protocols</a><br>
+• <a href="../qc">Quality Control Procedures</a><br>
 </p>
 </div>
 
