@@ -1,16 +1,8 @@
 # Visual Evoked Potential Task
 
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    Additional Resources
-  </span>
-</div>
-<div class="notification-static-content">
-<p> 
-• <a href="..">Overview & EEG Protocols</a><br>
-• <a href="../qc">Quality Control Procedures</a><br>
-</p>
+<div class="warning-banner static-banner" style="background-color:#fff3cd; border-left: 5px solid #ffa500;">
+  <span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
+  <span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
 </div>
 <p></p>
  
@@ -21,16 +13,10 @@ The Visual Evoked Potential Task (**VEP**) (v.11.29.23) measures development of 
 <p>
 <div style="display: flex; align-items: center;">
   <div style="padding-right: 15px;">
-<p>A flashing black and white 20x20 checkerboard with a red circle in the center is shown for the duration of the task (trial counts of 60 Checkerboard A and 60 Checkerboard B for a total of 120). The task elicits a VEP response in the occipital area (Oz), consisting of N1 (first negative peak), P1 (first positive peak), and N2 (second negative peak) components. See <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> for more information about the VEP task the <a href="https://hbcdstudy.org/wp-content/uploads/2023/06/EEG-Parameters.pdf">HBCD Study Protocols - EEG</a> for additional details.</p>
+<p>A flashing black and white 20x20 checkerboard with a red circle in the center is shown for the duration of the task (trial counts of 60 Checkerboard A and 60 Checkerboard B for a total of 120). The task elicits a VEP response in the occipital area (Oz), consisting of N1 (first negative peak), P1 (first positive peak), and N2 (second negative peak) components.</p>
   </div>
     <img src="../images/eeg-vep-checkerboard.png" alt="EEG Face Task" width="25%" height="auto">
 </div></p>
-
-
-## Resources
-- [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/)
-- [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
-- [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030)
 
 ## References
 <div class="references">

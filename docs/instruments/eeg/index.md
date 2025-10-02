@@ -195,15 +195,14 @@ hbcd/
 
 ## EEG Protocols
 
-For full details on the HBCD EEG protocol, please refer to [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) published in the Developmental Cognitive Neuroscience special issue on HBCD.
+EEG protocols are described in [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and fully documented in [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030).
 
-![](images/EEG-Parameters.png)
-*Source: [HBCD Study Protocols - EEG](https://hbcdstudy.org/wp-content/uploads/2023/06/EEG-Parameters.pdf)*
+![](images/EEGParams.png)
 
 ## Resources
 - [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/)
-- [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
 - [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030)
+- [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
 
 ## References
 

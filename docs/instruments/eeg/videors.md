@@ -1,32 +1,18 @@
 # Video Resting State Task
 
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    Additional Resources
-  </span>
-</div>
-<div class="notification-static-content">
-<p> 
-• <a href="..">Overview & EEG Protocols</a><br>
-• <a href="../qc">Quality Control Procedures</a><br>
-</p>
+<div class="warning-banner static-banner" style="background-color:#fff3cd; border-left: 5px solid #ffa500;">
+  <span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
+  <span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
 </div>
 <p></p>
 
-The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the development of large-scale neural networks during infancy and early childhood via information about neural oscillations measured in EEG power across the scalp. Developmental changes in oscillatory activity reflect underlying developing large-scale neural networks associated with early self-regulatory, cognitive, and affective processes and developmental outcomes ([Gabard-Durnam et al., 2019](https://doi.org/10.1038/s41467-019-12202-9); [Jones et al., 2020](https://doi.org/10.1038/s41598-020-67687-y); [Whedon et al., 2020](https://doi.org/10.1016/j.bandc.2020.105636)). The metrics derived from the resting EEG signal include power across the frequency spectrum ([Gabard-Durnam et al., 2019](https://doi.org/10.1038/s41467-019-12202-9)) and relative power between different scalp locations ([Davidson & Fox, 1982](https://doi.org/10.1126/science.7146906)). See [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) for more information about the RS.       
-
+The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the development of large-scale neural networks during infancy and early childhood via information about neural oscillations measured in EEG power across the scalp. Developmental changes in oscillatory activity reflect underlying developing large-scale neural networks associated with early self-regulatory, cognitive, and affective processes and developmental outcomes ([Gabard-Durnam et al., 2019](https://doi.org/10.1038/s41467-019-12202-9); [Jones et al., 2020](https://doi.org/10.1038/s41598-020-67687-y); [Whedon et al., 2020](https://doi.org/10.1016/j.bandc.2020.105636)). The metrics derived from the resting EEG signal include power across the frequency spectrum ([Gabard-Durnam et al., 2019](https://doi.org/10.1038/s41467-019-12202-9)) and relative power between different scalp locations ([Davidson & Fox, 1982](https://doi.org/10.1126/science.7146906)).
 
 ### Task Details
 
-Participants watch a silent video for the duration of the RS task. In **V03** (*left set of images below*), the video displays a variety of colorful and abstract toys and other visuals. In **V04 & V06** (*right set of images below*), the video includes a variety of marble run and construction visuals. See [HBCD Study Protocols - EEG](https://hbcdstudy.org/wp-content/uploads/2023/06/EEG-Parameters.pdf) for additional details.
+Participants watch a silent video for the duration of the RS task. In **V03** (*left set of images below*), the video displays a variety of colorful and abstract toys and other visuals. In **V04 & V06** (*right set of images below*), the video includes a variety of marble run and construction visuals.
 
 <img src="../images/eeg-RS.png" width="100%" height="auto">
-
-## Resources
-- [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/)
-- [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
-- [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030)
 
 ## References
 <div class="references">
