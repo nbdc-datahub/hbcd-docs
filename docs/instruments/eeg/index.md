@@ -166,6 +166,7 @@ hbcd/
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_desc-merged_eeg.fdt
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_desc-merged_eeg.json
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_desc-merged_eeg.set
+                    |
                     |__ processed_data/
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-FACE_desc-<span class="placeholder">&lt;F-TOPO&gt;</span>_topo.jpg
                     |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-FACE_desc-oz_<span class="placeholder">&lt;diffERP|ERP&gt;</span>.jpg
