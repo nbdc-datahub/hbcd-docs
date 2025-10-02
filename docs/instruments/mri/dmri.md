@@ -163,7 +163,7 @@ hbcd/
 </pre>
 <div id="legend" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe31;">
   <span class="emoji"><i class="fa-solid fa-tag"></i></span>
-  <span class="text" style="font-size: 14px;">end</span>
+  <span class="text" style="font-size: 14px;">Label Values Legend</span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
