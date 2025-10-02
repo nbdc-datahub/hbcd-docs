@@ -794,12 +794,12 @@ Expand the sections below to see a list of measures associated with each domain 
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="eeg/mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></td>
-      <td><code>eeg_made_task-MMN_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-MMN</code></td>
+      <td><code>eeg_made_task-MMN_acq-eeg_preprocessingReport</code><br><code>eeg_made_task-MMN_acq-eeg_ERPSummaryStats</code><br><code>eeg_qc_task-MMN</code></td>
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="eeg/faces" target="_blank">Faces (Face)</a></td>
-      <td><code>eeg_made_task-FACE_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-FACE</code></td>
+      <td><code>eeg_made_task-FACE_acq-eeg_preprocessingReport</code><br><code>eeg_made_task-FACE_acq-eeg_ERPSummaryStats</code><br><code>eeg_qc_task-FACE</code></td>
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
@@ -809,7 +809,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="eeg/vep" target="_blank">Visual Evoked Potential (VEP)</a></td>
-      <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-VEP</code></td>
+      <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code><br><code>eeg_made_task-VEP_acq-eeg_ERPSummaryStats</code><br><code>eeg_qc_task-VEP</code></td>
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
