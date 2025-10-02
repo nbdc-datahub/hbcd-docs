@@ -1,8 +1,16 @@
 # Auditory Mismatch Negativity Task 
 
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See <a href="..">Overview</a> for EEG protocols, quality control procedures, and data warnings.</span>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">
+    Additional Resources
+  </span>
+</div>
+<div class="notification-static-content">
+<p> 
+• <a href="..">Overview & EEG Protocols</a><br>
+• <a href="../qc">Quality Control Procedures</a><br>
+</p>
 </div>
 <p></p>
  
