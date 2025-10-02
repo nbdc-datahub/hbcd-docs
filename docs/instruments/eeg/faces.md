@@ -1,16 +1,8 @@
 # Faces Task
 
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    Additional Resources
-  </span>
-</div>
-<div class="notification-static-content">
-<p> 
-• <a href="..">Overview & EEG Protocols</a><br>
-• <a href="../qc">Quality Control Procedures</a><br>
-</p>
+<div class="warning-banner static-banner" style="background-color:#fff3cd; border-left: 5px solid #ffa500;">
+  <span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
+  <span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
 </div>
 <p></p>
 
@@ -18,7 +10,7 @@ The Faces task (**FACE**) (v.11.29.23) assesses child and infant face processing
 
 ## Task Details   
 
-ERPs that index different stages of processing are computed as a function of repeated presentation of faces and objects. The ERP components elicited by the Faces task include P1, N290, and P400. 
+ERPs indexing different stages of processing are computed from repeated presentations of faces and objects. In the Faces task, the ERP components include P1, N290, and P400. If the child loses attention, an attention getter may be used. The stimulus set includes 36 unique images, with women with neutral expressions, spanning the following self-identified demographics: Indigenous, Black, White, Asian, Hispanic/Latino, and South Asian.
 
 <p>
 <u><b>Face task schematic (Face vs. Object) & Task Details:</b></u>
@@ -30,7 +22,6 @@ The task consists of 2 blocks:
   <p><strong>Block 1</strong>: 50 trials of upright faces and 50 trials of inverted faces <br />
   <strong>Block 2</strong>: 50 trials of upright faces and 50 trials of objects</p>
 </blockquote>
-
 Timing Details:
 <blockquote>
   <p><strong>Stimulus duration</strong>: 500 ms <br />
@@ -39,16 +30,6 @@ Timing Details:
 </blockquote>
   </div>
 </div></p>
-
-If the child loses attention, an attention getter may be played to bring the child’s focus back to the task. There are a total of 36 unique images in the set, with women all displaying neutral expressions, included from each of the following self-identifying demographics: Indigenous, Black, White, Asian, Hispanic/Latino, and South Asian.  
-
-See [HBCD Study Protocols - EEG](https://hbcdstudy.org/wp-content/uploads/2023/06/EEG-Parameters.pdf) for details and [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) for additional information on the rationale for task/stimulus development and ERP findings from pilot data.
-
-
-## Resources
-- [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/)
-- [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
-- [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030)
 
 ## References
 
