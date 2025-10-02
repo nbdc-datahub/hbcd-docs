@@ -164,68 +164,8 @@ For full details on the HBCD EEG protocol, please refer to [Fox et al. 2024](htt
 ![](images/EEG-Parameters.png)
 *Source: [HBCD Study Protocols - EEG](https://hbcdstudy.org/wp-content/uploads/2023/06/EEG-Parameters.pdf)*
 
-## Quality Control    
-
-After EEG acquisition, quality control checks are performed using [EEG2BIDS Wizard](https://github.com/aces/eeg2bids), a custom MATLAB application installed at all HBCD sites. These checks are immediately provided to the user to ensure the data's integrity and usability. The process includes:
-
-- Verifying event markers in the EEG data to confirm all required events are accurately recorded.
-- Ensuring the setup for stimulus presentation and EEG data acquisition adheres to the study protocol.
-- Inspecting electrode impedances to ensure they are within acceptable limits.
-- Detecting multiple task runs and incomplete recordings.
-- Confirming the use of correct E-Prime task versions.
-
-Both study sites and the EEG Core team use an EEG Quality Control dashboard developed by LORIS to access and monitor incoming EEG data and QC metrics, such as retained epochs and line noise levels. Outputs from the HBCD-Maryland Analysis of Developmental EEG ([HBCD-MADE](https://hbcd-made.readthedocs.io/en/latest/)) pipeline, which handles preprocessing and data cleaning, are also integrated into the dashboard. These outputs include key metrics like outlier statistics for specific task epochs ([Debnath et al., 2020](https://doi.org/10.1111/psyp.13580)). Regular site-specific check-ins and troubleshooting are conducted to ensure consistent protocol adherence and data quality across sites. For a detailed description of QC procedures in the HBCD Study EEG protocol, refer to [Fox et al., 2024](https://doi.org/10.1016/j.dcn.2024.101447).
-
-During quality control, a frequently observed issue across all tasks was the irregular application of EEG sensors. Additionally, partial task completion due to infant fussing and missing stimulus flags were commonly noted for the faces and auditory mismatch negativity tasks.
-
-### EEG Net Placement ("Capping Quality") Ratings
-
-EEG capping quality ratings are used to determine inclusion in data processing. Capping ratings are included in the tabulated QC files for each task (`eeg_qc_task-<TASK>`).
-
-Photos used to assess EEG capping quality are taken for each acquisition from the front, back, top, left, and right angles of the participant's head and uploaded via the BIDS Wizard application to a secure computing environment. They are then reviewed by the EEG Core at the University of Maryland to rate the quality of EEG net placement, or "capping quality," for each acquisition.
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr>
-  <td><strong>Markers of Proper Net Placement</strong></td>
-  <td style="word-wrap: break-word; white-space: normal;">
-    <ol>
-    <li>Reference electrode <strong>(REF)</strong> is on the vertex </li>
-    <li>Nasion electrode <strong>(#17)</strong> is between the eyebrows</li>
-    <li>Ear electrodes <strong>(#44, #114)</strong> are on the preauricular point</li>
-    </ol>
-  </td>
-</tr>
-<tr>
-<td><strong>Net Placement Rubric</strong></td>
-  <td style="word-wrap: break-word; white-space: normal;">
-    <ul>
-    <li><strong>Excellent</strong> - all markers are <strong>0 - 0.5 cm</strong> from proper net placement </li>
-    <li><strong>Average</strong> - any marker is <strong>0.5 - 2 cm</strong> from proper placement</li>
-    <li><strong>Poor</strong> - any marker is <strong>2 - 3 cm</strong> from proper placement</li>
-    <li><strong>Very Poor</strong> - any marker is  <strong>&gt; 3 cm</strong> from proper placement</li>
-    </ul>
-  </td>
-</tr>
-</tbody>
-</table>
-
-Please refer to the [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030) for additional information about capping requirements.
-
-### Stimtracker Artifact Detection - TO DO
-
-orig text:
-
-<p><b>Stimtracker Artifact</b><br>
-The MMN, VEP, and FACE task data for one participant included in the data release was found to contain an electrical noise artifact originating from the stimtracker device used for stimulus timing. All other participants' data were checked and confirmed to be artifact-free.</p> 
-<p>This artifact is most prominent in electrode E55 between the REF and COM electrodes, but is also visible in surrounding channels. It is time-locked to both stimulus onset and offset: as highlighted in the following EEG trace (MMN auditory oddball task in E55), the artifact presents as a negative deflection at onset and a positive deflection at offset.</p>
-<p><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> <i><a href="artifacts" target="_blank">Click here</a> for information on how this artifact appears in time-frequency plots and ERP derivatives.</i></p>
-<img src="images/Fig1.png" width="70%" height="auto" class="center"><br>
-<p>The EEG workgroup is currently developing a method of ICA correction to remove this artifact. In the meantime, <strong>it is recommended to exclude the MMN, VEP, and FACE tasks for this participant from analyses</strong>. The ID of the impacted participant along with this documentation is available to DUC users in the <a href="http://docs-private.hbcdstudy.org/">HBCD Private Release Notes</a> accessible via the <a href="https://nbdc-datashare.lassoinformatics.com/help-center">Lasso Help Center</a>.</p>
-
 
 ## Resources
-- [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/)
 - [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
 - [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030)
 

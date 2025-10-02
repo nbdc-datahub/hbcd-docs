@@ -46,7 +46,4 @@ hbcd/
     |__ xcp_d/
 </pre>
 
-## Quality Control 
-See [HBCD MR Quality Control Procedures](qc.md) for a detailed information on MR QC.
-
 <br>
