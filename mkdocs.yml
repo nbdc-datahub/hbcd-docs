@@ -112,7 +112,8 @@ nav:
             - Protective Factors: instruments/SED/paces.md
     - Brain Activity & Biosensors:
         - Electroencephalography:
-            - Overview & Quality Control: instruments/eeg/index.md
+            - Overview & EEG Protocols: instruments/eeg/index.md
+            - Quality Control Procedures: instruments/eeg/qc.md
             - Auditory Mismatch Negativity Task: instruments/eeg/mmn.md
             - Faces Task: instruments/eeg/faces.md
             - Video Resting State Task: instruments/eeg/videors.md
