@@ -1,7 +1,7 @@
 
 # Upcoming Updates
 
-## Release 1.1 (Release Date TBA)
+## Release 1.1 (Expected Release Date: 2025-10-10)
 
 #### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 1.1 Resolution of <a href="../knownissues" target="_blank">Known Issues</a> Labeled *Expected Fix: R1.1*
 
