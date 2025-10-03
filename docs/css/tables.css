@@ -164,7 +164,6 @@ th, td {
   background-color: #f9f9f9;
 }
 
-
 /* Compact table with no vertical lines */
 .compact-table-no-vertical-lines {
   border-collapse: collapse;
@@ -195,4 +194,42 @@ th, td {
   margin-bottom: 0.4rem;
   line-height: 1;
   font-size: 1em !important;
+}
+
+/* Table with expandable sections */
+.expandable-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 15px;
+  background-color: #fafafa; /* base color */
+}
+
+.expandable-table th,
+.expandable-table td {
+  padding: 6px 8px;
+  vertical-align: top;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/* Default row background */
+.expandable-table tr {
+  background-color: #fafafa;
+}
+
+/* Group header rows */
+.group-header td {
+  font-weight: bold;
+  cursor: pointer;
+  border-top: 2px solid #ccc;
+}
+
+.group-header:hover td {
+  background-color: #dde6fe !important;
+}
+
+/* Indented child rows */
+.child-row td {
+  padding-left: 20px;
 }
