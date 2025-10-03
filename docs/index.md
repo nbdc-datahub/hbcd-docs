@@ -15,10 +15,19 @@ Annual data releases, hosted by the <a href="https://nbdc-splash-beta.lassoinfor
 
 Please refer to the central HBCD Study page (<a href="https://hbcdstudy.org/">hbcdstudy.org</a>) for comprehensive information about the study and complete <a href="https://hbcdstudy.org/study-protocols/">Study Protocols</a>.</p> 
 
-<p style="text-align: center;">
-  <a class="button-link" href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study">HBCD Study on NBDC Data Hub &nbsp; ↗️</a>
+<p style="text-align: center; font-size: 1.3em;">
+  <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study" 
+     style="display: inline-block; 
+            background-color: #e3f2fd;
+            font-weight: 400; 
+            font-size: 1em; 
+            padding: 10px 18px; 
+            border-radius: 6px; 
+            transition: background-color 0.3s, transform 0.2s;">
+      HBCD Study on NBDC Data Hub
+    <i class="fa-solid fa-up-right-from-square"></i>
+  </a>
 </p>
-
 
 --------------
 
