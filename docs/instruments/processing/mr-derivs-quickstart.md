@@ -48,7 +48,7 @@ specify location under func/ for xcpd derivs
 
 
 <p style="font-size: 15px;">
-    <strong>Denoised Timeseries</strong> (<code>*_space-fsLR_den-91k_desc-denoisedSmoothed_bold.dtseries.nii</code>)<br>
+    <strong>Denoised Timeseries</strong> (<code>*_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii</code>; <code>*_space-fsLR_den-91k_desc-denoisedSmoothed_bold.dtseries.nii</code>)<br>
     CIFTI dense time series containing fully preprocessed, temporally filtered, and nuisance-regressed BOLD data. Aligned to the standard <code>fsLR</code> surface template, these files are suitable for voxelwise FC analyses, seed-based correlation maps, or other data-driven connectivity methods.
 <br>
 <br>
