@@ -49,7 +49,7 @@
 
 <br>
 
-## Release 2.0 (Release Date TBA)
+## Release 2.0 (Expected Release Date: December 2025)
 
 #### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 Resolution of <a href="../knownissues" target="_blank">Known Issues</a> Labeled *Expected Fix: R2.0*
 
