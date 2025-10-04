@@ -16,30 +16,36 @@ The sections below highlight the XCP-D output files most relevant for functional
 
 XCP-D provides several structural morphology measures derived from the fMRIPrep anatomical outputs. These surface-based derivatives are commonly used to assess cortical features such as **thickness**, **curvature**, and **sulcal depth**, often summarized within atlas-defined regions or compared across subjects to study cortical development and brain morphology.
 
+specify location under anat/
+
 <p style="font-size: 15px;">
-    <strong>Cortical Thickness</strong> (<code>anat/*_space-fsLR_den-91k_thickness.dscalar.nii</code>)<br>
+    <strong>Cortical Thickness</strong> (<code>*_space-fsLR_den-91k_thickness.dscalar.nii</code>)<br>
     CIFTI scalar files containing surface-based maps of cortical thickness (in millimeters) for each hemisphere. Generated from reconstructed cortical surfaces and aligned to the standard <code>fsLR</code> template. Commonly averaged within ROIs or compared across subjects to assess cortical development, aging, or group differences.
 <br>
 <br>
-    <strong>Curvature</strong> (<code>anat/*_space-fsLR_den-91k_curv.dscalar.nii</code>)<br>
+    <strong>Curvature</strong> (<code>*_space-fsLR_den-91k_curv.dscalar.nii</code>)<br>
     Provides mean surface curvature values representing local cortical folding patterns of the cortex. Positive values correspond to sulci (inward folds) and negative values to gyri (outward folds). Useful for characterizing cortical folding or as a covariate in morphometric analyses.
 <br>
 <br>
-    <strong>Sulcal Depth</strong> (<code>anat/*_space-fsLR_den-91k_sulc.dscalar.nii</code>)<br>
+    <strong>Sulcal Depth</strong> (<code>*_space-fsLR_den-91k_sulc.dscalar.nii</code>)<br>
     Measures the relative depth of cortical sulci compared to adjacent gyri. Often used alongside curvature to describe cortical shape and folding complexity.
 <br>
 <br>
-    <strong>Parcellated Structural Measures</strong> (<code>anat/*_space-fsLR_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph.tsv</code>)<br>
+    <strong>Parcellated Structural Measures</strong> (<code>*_space-fsLR_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph.tsv</code>)<br>
     Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical or functional regions defined by an atlas. Ideal for region-based statistical analysis and group comparisons.
 <br>
 <br>
-    <strong>Pial and White Matter Surfaces</strong> (<code>anat/*_hemi-&lt;L|R&gt;_space-fsLR_den-32k_&lt;pial|white&gt;.surf.gii</code>)<br>
+    <strong>Pial and White Matter Surfaces</strong> (<code>*_hemi-&lt;L|R&gt;_space-fsLR_den-32k_&lt;pial|white&gt;.surf.gii</code>)<br>
     3D surface models representing the gray–white matter boundary and the pial surface for each hemisphere. Commonly used for visualizing cortical anatomy, computing surface-based metrics, or mapping functional data to anatomical space.
 </p>
 
 ## Functional Connectivity (XCP-D)
 
 XCP-D produces several derivative outputs designed for functional connectivity (FC) and time series analyses. These include **denoised BOLD data**, **parcellated time series**, and **derived connectivity matrices**, along with **frame displacement and confound files** to support motion correction and data quality assessment. Together, these provide clean and standardized measures of brain activity for both voxelwise and region-based network analyses.
+
+
+specify location under func/ for xcpd derivs
+
 
 <p style="font-size: 15px;">
     <strong>Denoised Timeseries</strong> (<code>*_space-fsLR_den-91k_desc-denoisedSmoothed_bold.dtseries.nii</code>)<br>
