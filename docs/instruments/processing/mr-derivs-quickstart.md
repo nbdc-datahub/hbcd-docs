@@ -2,9 +2,9 @@
 
 # MRI Derivatives Quick Start Guide
 
-## XCP-D Structural Derivatives
+## Structural Derivatives (XCP-D)
 
-Most structural analyses focus on **cortical thickness**, **curvature**, and **sulcal depth** files, often summarized within atlas-defined regions or compared across subjects to study cortical morphology and brain development.
+The **XCP-D** pipeline produces a wide range of outputs derived from fMRIPrep-preprocessed data. Most structural analyses focus on **cortical thickness**, **curvature**, and **sulcal depth** files, often summarized within atlas-defined regions or compared across subjects to study cortical morphology and brain development.
 
 <p style="font-size: 15px;">
     <strong>Cortical Thickness</strong> (<code>*hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_midthickness.surf.gii</code>)<br>
@@ -32,9 +32,9 @@ Most structural analyses focus on **cortical thickness**, **curvature**, and **s
 </p>
 
 
-## XCP-D Functional Connectivity 
+## Functional Connectivity (XCP-D)
 
-The **XCP-D** pipeline produces a wide range of outputs derived from fMRIPrep-preprocessed data. For most functional connectivity (FC) analyses, users will primarily work with the **denoised timeseries**, **parcellated timeseries**, and **quality assessment metrics**. See full HBCD derivative file outputs [here](../mri//fmri.md#xcpd).
+For most functional connectivity (FC) analyses, users will primarily work with the **denoised timeseries**, **parcellated timeseries**, and **quality assessment metrics**. See full HBCD derivative file outputs [here](../mri//fmri.md#xcpd).
 
 <p style="font-size: 15px;">
     <strong>Denoised Timeseries</strong> (<code>*space-fsLR_den-91k_desc-denoisedSmoothed_bold.dtseries.nii</code>)<br>
@@ -57,7 +57,9 @@ The **XCP-D** pipeline produces a wide range of outputs derived from fMRIPrep-pr
 </p>
 
 
-## BIBSNet: Brain Volume and Segmentation ROIs
+## Other Useful Derivatives
+
+### Brain Volume and Segmentation ROIs (BIBSNet)
 
 <p style="font-size: 15px;">
     <strong>Brain Segmentations</strong> (<code>sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv</code>)<br>
