@@ -46,16 +46,16 @@ XCP-D produces several derivative outputs designed for functional connectivity (
     CIFTI dense time series containing fully preprocessed, temporally filtered, and nuisance-regressed BOLD data. Aligned to the standard <code>fsLR</code> surface template, these files are suitable for voxelwise FC analyses, seed-based correlation maps, or other data-driven connectivity methods.
 <br>
 <br>
-    <strong>Parcellated Timeseries</strong> (<code>*_space-fsLR_seg-&lt;PARC&gt;_den-91k_stat-mean_timeseries.ptseries.nii</code>)<br>
-    CIFTI parcellated time series representing the mean BOLD signal for each region in a specified atlas (e.g., 4S-X-56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian). Each column corresponds to a brain region, and each row to a timepoint. Ideal for computing ROI-to-ROI connectivity matrices or performing graph and network analyses.
+    <strong>Parcellated Timeseries</strong> (<code>*_space-fsLR_seg-&lt;PARC&gt;_stat-mean_timeseries.tsv</code>)<br>
+    Tabulated mean BOLD time series for each region in a the following atlases: <a href="https://github.com/PennLINC/AtlasPack">4S-X-56Parcels</a> (nodes 156-1056), Glasser, Gordon, MIDB, MyersLabonte, HCP, and Tian. Also available as CIFTI files (<code>*_stat-mean_timeseries.ptseries.nii</code>), where each column corresponds to a brain region, and each row to a timepoint. Ideal for computing ROI-to-ROI connectivity matrices or performing graph and network analyses.
 <br>
 <br>
     <strong>Connectivity Matrices</strong> (<code>*_space-fsLR_seg-&lt;PARC&gt;_stat-pearsoncorrelation_relmat.tsv</code>)<br>
     Tab-delimited matrices of pairwise Pearson correlations between atlas regions, computed from the parcellated time series. Useful for quick inspection, validation, or as input for group-level analyses when region-level connectivity is sufficient.
 <br>
 <br>
-    <strong>Quality Control and Confound Files</strong> (<code>*_&lt;motion|outliers&gt;.tsv</code>; <code>*_design.tsv</code>)<br>
-    Include framewise displacement values and nuisance regressor design files. The design files (<code>*_design.tsv</code>) contain one column per regressor (e.g., motion parameters and one-hot indicators for high-motion outlier volumes). Recommended for identifying and filtering low-quality data before group analyses.
+    <strong>Motion Detection and Confound Files</strong> (<code>*_&lt;motion|outliers|design&gt;.tsv</code>)<br>
+    Include framewise displacement values and nuisance regressor design files. The design files (<code>*_design.tsv</code>) contain one column per regressor (e.g., motion parameters and one-hot indicators for high-motion outlier volumes). Recommended for identifying and filtering low-quality data before group analyses.<br>    
 </p>
 
 ## Other Useful Derivatives
