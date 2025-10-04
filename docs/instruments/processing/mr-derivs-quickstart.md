@@ -11,20 +11,16 @@ The **XCP-D** pipeline produces a wide range of outputs derived from fMRIPrep-pr
     Fully preprocessed, temporally filtered, and nuisance-regressed BOLD time series in standard or native space. Suitable for voxelwise FC analyses, seed-based correlation maps, or other data-driven connectivity methods.
 <br>
 <br>
-    <strong>Parcellated Timeseries</strong> (<code>*atlas-*_timeseries.tsv</code>)<br>
-    Contain mean time series extracted from brain regions defined by a parcellation atlas (Gordon, Glasser, etc.). Columns correspond to regions (nodes), and rows correspond to timepoints. Ideal for computing region-to-region (ROI-to-ROI) connectivity matrices or performing graph/network analyses.
+    <strong>Parcellated Timeseries</strong> (<code>*space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii</code>)<br>
+    Mean time series extracted from brain regions defined by a parcellation atlas (including 4S{X}56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, and Tian). Columns correspond to regions (nodes), and rows correspond to timepoints. Ideal for computing region-to-region (ROI-to-ROI) connectivity matrices or performing graph/network analyses.
 <br>
 <br>
-    <strong>Connectivity Matrices</strong> (<code>*atlas-*_correlation.tsv</code>)<br>
+    <strong>Connectivity Matrices</strong> (<code>*space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv</code>)<br>
     Precomputed correlation matrices derived from the parcellated time series. Useful for quick inspection, validation, or as input to group-level analyses when region-level connectivity is sufficient.
 <br>
 <br>
-    <strong>Quality Control and Confound Files</strong> (<code>*desc-confounds_timeseries.tsv</code>, <code>*desc-qcvars.tsv</code>)<br>
-    Contain nuisance regressors (e.g., motion parameters, aCompCor components, global signal) and quality control metrics (e.g., framewise displacement, DVARS, tSNR). Recommended for identifying and filtering low-quality scans or participants before group analyses.
-<br>
-<br>
-    <strong>Standard-Space Derivatives</strong> (<code>space-MNI152NLin6Asym_desc-denoised_bold.nii.gz</code>)<br>
-    Denoised BOLD data transformed to MNI standard space for cross-subject alignment. Recommended for group-level and atlas-based connectivity analyses where spatial correspondence is required.
+    <strong>Quality Control and Confound Files</strong> (<code>*_<span class="placeholder">&lt;motion|outliers&gt;</span>.tsv</code>; <code>*_design.tsv</code>)<br>
+    Contains framewise displacement for motion correction (<code>*<span class="placeholder">&lt;motion|outliers&gt;</span>.tsv</code>) and nuisance regressor (<code>*_design.tsv</code>) files with one column for each nuisance regressor, including one-hot encoded regressors indicating each of the high-motion outlier volumes. Recommended for identifying and filtering low-quality scans or participants before group analyses.
 </p>
 
 
