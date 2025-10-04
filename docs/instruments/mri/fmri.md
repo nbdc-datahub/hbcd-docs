@@ -392,7 +392,8 @@ done</span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>XCP-D performs functional MRI post-processing and noise regression from Infant-fMRIPrep derivatives.<br><a href="https://xcp-d.readthedocs.io/en/latest/"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
+<p>XCP-D performs functional MRI post-processing and noise regression from Infant-fMRIPrep derivatives. See the XCP-D documentation on <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#functional-timeseries-and-connectivity-matrices">"HBCD mode" functional outputs</a>.<br>
+<a href="https://xcp-d.readthedocs.io/en/latest/"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
 <pre style="font-size: 10px;" class="folder-tree">
 hbcd/
 |_ derivatives/ 
