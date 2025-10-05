@@ -233,3 +233,20 @@ th, td {
 .child-row td {
   padding-left: 20px;
 }
+
+
+.table-compact-banner {
+  display: flex;
+  align-items: center;      /* centers emoji relative to text block */
+  background-color: #dde6fe;
+  padding: 2px 8px;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: Lato; 
+  color: #474646;
+  font-weight: bold;
+  gap: 8px;                 /* space between emoji and text */
+  font-size: 0.8em;
+  line-height: 1.0;
+  border-radius: 4px; /* round edges */
+  width: 100%;
+}
