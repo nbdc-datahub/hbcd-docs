@@ -12,7 +12,7 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 
 - <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
-- File-based data include <a href="../datacuration/file-based-data/#raw-bids" target="_blank"><b>raw</b></a> and <a href="../datacuration/file-based-data/#processed-derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
+- File-based data include <a href="../datacuration/file-based-data/#raw-bids" target="_blank"><b>raw</b></a> and <a href="../datacuration/file-based-data/#derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
 
 Expand the sections below to see a list of measures associated with each domain included in Release 1.0.
 
@@ -553,7 +553,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <tr>
       <th style="width: 1%;"></th>
       <th style="width: 10%;"><a href="../datacuration/file-based-data/#raw-bids" target="_blank"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Raw BIDS</a></th>
-      <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> <a href="../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> [Source <a href="processing" target="_blank">Pipeline</a>]</th>
+      <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> <a href="../datacuration/file-based-data/#derivatives" target="_blank">Derivatives</a> [Source <a href="processing" target="_blank">Pipeline</a>]</th>
       <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Tables Derived from Pipeline Derivatives</th>
     </tr>
   </thead>
