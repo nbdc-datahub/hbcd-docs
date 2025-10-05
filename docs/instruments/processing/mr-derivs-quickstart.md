@@ -38,71 +38,86 @@ hbcd/
 <div id="s1" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#1 Cortical Thickness</strong> (<code>*_den-91k_thickness.dscalar.nii</code>)</span>
+  <span class="text"><strong>#1 Cortical Thickness</strong></span>
   <a class="anchor-link" href="#s1" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-  <p>CIFTI scalar files containing surface-based maps of cortical thickness (in millimeters) for each hemisphere. Generated from reconstructed cortical surfaces and aligned to the standard <code>fsLR</code> template. Commonly averaged within ROIs or compared across subjects to assess cortical development, aging, or group differences.</p>
+<div class="table-collapsible-content" style="margin-bottom: 3px;">
+  <p>CIFTI scalar files containing surface-based maps of cortical thickness (in millimeters) for each hemisphere. Generated from reconstructed cortical surfaces and aligned to the standard <code>fsLR</code> template. Commonly averaged within ROIs or compared across subjects to assess cortical development, aging, or group differences.
+  <br>
+  <i>Derivative:</i> <code>*_den-91k_thickness.dscalar.nii</code>
+  </p>
 </div>
 
 <div id="s2" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#2 Curvature</strong> (<code>*_den-91k_curv.dscalar.nii</code>)</span>
+  <span class="text"><strong>#2 Curvature</strong></span>
   <a class="anchor-link" href="#s2" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-  <p>Provides mean surface curvature values representing local cortical folding patterns of the cortex. Positive values correspond to sulci (inward folds) and negative values to gyri (outward folds). Useful for characterizing cortical folding or as a covariate in morphometric analyses.</p>
+<div class="table-collapsible-content" style="margin-bottom: 3px;">
+  <p>Provides mean surface curvature values representing local cortical folding patterns of the cortex. Positive values correspond to sulci (inward folds) and negative values to gyri (outward folds). Useful for characterizing cortical folding or as a covariate in morphometric analyses.
+  <br>
+  <i>Derivative:</i> <code>*_den-91k_curv.dscalar.nii</code>
+  </p>
 </div>
 
 <div id="s3" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#3 Sulcal Depth</strong> (<code>*_den-91k_sulc.dscalar.nii</code>)</span>
+  <span class="text"><strong>#3 Sulcal Depth</strong></span>
   <a class="anchor-link" href="#s3" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-  <p>Measures the relative depth of cortical sulci compared to adjacent gyri. Often used alongside curvature to describe cortical shape and folding complexity.</p>
+<div class="table-collapsible-content" style="margin-bottom: 3px;">
+  <p>Measures the relative depth of cortical sulci compared to adjacent gyri. Often used alongside curvature to describe cortical shape and folding complexity.
+  <br>
+  <i>Derivative:</i> <code>*_den-91k_sulc.dscalar.nii</code>
+  </p>
 </div>
 
 <div id="s4" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#4 Parcellated Structural Measures</strong> (<code>*_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph.tsv</code>)</span>
+  <span class="text"><strong>#4 Parcellated Structural Measures</strong></span>
   <a class="anchor-link" href="#s4" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-  <p>Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical or functional regions defined by an atlas. Ideal for region-based statistical analysis and group comparisons.</p>
+<div class="table-collapsible-content" style="margin-bottom: 3px;">
+  <p>Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical or functional regions defined by an atlas. Ideal for region-based statistical analysis and group comparisons.<br>
+  <i>Derivative:</i> <code>*_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph.tsv</code><br>
+  <i>Also available as <a href="../../#mri" target="_blank">tabulated data</a></i>: <code>img_xcpd_space-fsLR_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph</code>
+  </p>
 </div>
 
 <div id="s5" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#5 Pial and White Matter Surfaces</strong> (<code>*_hemi-&lt;L|R&gt;_space-fsLR_den-32k_&lt;pial|white&gt;.surf.gii</code>)</span>
+  <span class="text"><strong>#5 Pial and White Matter Surfaces</strong></span>
   <a class="anchor-link" href="#s5" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-  <p>3D surface models representing the gray–white matter boundary and the pial surface for each hemisphere. Commonly used for visualizing cortical anatomy, computing surface-based metrics, or mapping functional data to anatomical space.</p>
+<div class="table-collapsible-content" style="margin-bottom: 3px;">
+  <p>3D surface models representing the gray–white matter boundary and the pial surface for each hemisphere. Commonly used for visualizing cortical anatomy, computing surface-based metrics, or mapping functional data to anatomical space.
+  <br>
+  <i>Derivative:</i> <code>*_hemi-&lt;L|R&gt;_space-fsLR_den-32k_&lt;pial|white&gt;.surf.gii</code>
+  </p>
 </div>
 
 ## Functional Connectivity (XCP-D)
@@ -130,66 +145,77 @@ hbcd/
 <div id="f1" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#1 Denoised Timeseries</strong> (<code>*_den-91k_desc-denoised{Smoothed}_bold.dtseries.nii</code>)</span>
+  <span class="text"><strong>#1 Denoised Timeseries</strong></span>
   <a class="anchor-link" href="#f1" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-  <p>CIFTI dense time series containing fully preprocessed, temporally filtered, and nuisance-regressed BOLD data. Aligned to the standard <code>fsLR</code> surface template, these files are suitable for voxelwise FC analyses, seed-based correlation maps, or other data-driven connectivity methods.</p>
+<div class="table-collapsible-content" style="margin-bottom: 3px;">
+  <p>CIFTI dense time series containing fully preprocessed, temporally filtered, and nuisance-regressed BOLD data. Aligned to the standard <code>fsLR</code> surface template, these files are suitable for voxelwise FC analyses, seed-based correlation maps, or other data-driven connectivity methods.
+  <br>
+  <i>Derivative:</i> <code>*_den-91k_desc-denoised{Smoothed}_bold.dtseries.nii</code>
+  </p>
 </div>
 
 <div id="f2" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#2 Parcellated Timeseries</strong> (<code>*_seg-&lt;PARC&gt;_stat-mean_timeseries.tsv</code>)</span>
+  <span class="text"><strong>#2 Parcellated Timeseries</strong></span>
   <a class="anchor-link" href="#f2" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-  <p>Tabulated mean BOLD time series for each region in a the following atlases: <a href="https://github.com/PennLINC/AtlasPack">4S-{X}-Region Parcels</a>, Glasser, Gordon, MIDB, MyersLabonte, HCP, and Tian. Also available as CIFTI files (<code>*_stat-mean_timeseries.ptseries.nii</code>), where each column corresponds to a brain region, and each row to a timepoint. Ideal for computing ROI-to-ROI connectivity matrices or performing graph and network analyses.</p>
+<div class="table-collapsible-content" style="margin-bottom: 3px;">
+  <p>Tabulated mean BOLD time series for each region in a the following atlases: <a href="https://github.com/PennLINC/AtlasPack">4S-{X}-Region Parcels</a>, Glasser, Gordon, MIDB, MyersLabonte, HCP, and Tian. Also available as CIFTI files (<code>*_stat-mean_timeseries.ptseries.nii</code>), where each column corresponds to a brain region, and each row to a timepoint. Ideal for computing ROI-to-ROI connectivity matrices or performing graph and network analyses.  
+  <br>
+  <i>Derivative:</i> <code>*_seg-&lt;PARC&gt;_stat-mean_timeseries.tsv</code>
+  </p>
 </div>
 
 <div id="f3" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#3 Connectivity Matrices</strong> (<code>*_seg-&lt;PARC&gt;_stat-pearsoncorrelation_relmat.tsv</code>)</span>
+  <span class="text"><strong>#3 Connectivity Matrices</strong></span>
   <a class="anchor-link" href="#f3" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-  <p>Tab-delimited matrices of pairwise Pearson correlations between atlas regions, computed from the parcellated time series. Useful for quick inspection, validation, or as input for group-level analyses when region-level connectivity is sufficient.</p>
+<div class="table-collapsible-content" style="margin-bottom: 3px;">
+  <p>Tab-delimited matrices of pairwise Pearson correlations between atlas regions, computed from the parcellated time series. Useful for quick inspection, validation, or as input for group-level analyses when region-level connectivity is sufficient.
+  <br>
+  <i>Derivative:</i> <code>*_seg-&lt;PARC&gt;_stat-pearsoncorrelation_relmat.tsv</code>
+  </p>
 </div>
 
 <div id="f4" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#4 Motion Detection and Confound Files</strong> (<code>*_&lt;design|motion|outliers&gt;.tsv</code>)</span>
+  <span class="text"><strong>#4 Motion Detection and Confound Files</strong></span>
   <a class="anchor-link" href="#f4" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-  <p>Include framewise displacement values and nuisance regressor design files. The design files (<code>*_design.tsv</code>) contain one column per regressor (e.g., motion parameters and one-hot indicators for high-motion outlier volumes). Recommended for identifying and filtering low-quality data before group analyses.</p>
+<div class="table-collapsible-content" style="margin-bottom: 3px;">
+  <p>Include framewise displacement values and nuisance regressor design files. The design files (<code>*_design.tsv</code>) contain one column per regressor (e.g., motion parameters and one-hot indicators for high-motion outlier volumes). Recommended for identifying and filtering low-quality data before group analyses.
+  <br>
+  <i>Derivative:</i> <code>*_&lt;design|motion|outliers&gt;.tsv</code>
+  </p>
 </div>
 
 ## Other Useful Derivatives
 
-### Brain Volume and Segmentation ROIs (BIBSNet)
+**Brain Volume and Segmentation ROIs (BIBSNet)**<br>
+Brain volumes computed for segmented ROIs in native T1w/T2w space:
 
-<p style="font-size: 15px;">
-    <strong>Brain Segmentations</strong> (<code>sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv</code>)<br>
-    Brain volumes computed for segmented ROIs in native T1w/T2w space.
-</p>
+> <i class="fa-solid fa-folder-open"></i> [BIBSNet](../mri/smri.md#bibsnet) Derivatives: `*_space-<T1w|T2w>_desc-aseg_volumes.tsv`<br>
+<i class="fa-solid fa-table"></i> [Tabulated Data](../index.md#mri): `img_bibsnet_space-<T1w|T2w>_desc-aseg_volumes`
 
 <br>
