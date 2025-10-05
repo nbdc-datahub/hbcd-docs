@@ -402,9 +402,7 @@ hbcd/
          |_ ses-<span class="label">{V0X}</span>/
          |  |_ anat/
          |  |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-MNI152NLin6Asym_desc-preproc_T2w.nii.gz
-         |  |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-curv_morph.tsv
-         |  |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-sulc_morph.tsv
-         |  |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-thickness_morph.tsv
+         |  |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>_morph.tsv
          |  |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;inflated|vinflated&gt;</span>.surf.gii
          |  |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;midthickness|pial|white&gt;</span>.surf.gii
          |  |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>.dscalar.nii
@@ -439,8 +437,8 @@ hbcd/
          |_ sub-<span class="label">{ID}</span>.html
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">&lt;APARC&gt; (anat/ parcellations)</span>: 4S-&lt;1|2|3|4|5|6|7|8|9|10&gt;56Parcels, Glasser, Gordon, MIDB, MyersLabonte
-<span class="placeholder">&lt;PARC&gt; (func/ parcellations)</span>: 4S-&lt;1|2|3|4|5|6|7|8|9|10&gt;56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian
+<span class="placeholder">&lt;APARC&gt; (anat/ parcellations)</span>: 4S-&lt;156|256|...|1056&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte
+<span class="placeholder">&lt;PARC&gt; (func/ parcellations)</span>: 4S-&lt;156|256|...|1056&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian
 </pre>
 </div>
 

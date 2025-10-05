@@ -653,7 +653,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <tr>
     <td colspan="4">
       <strong>end</strong><br>
-      <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations): 4S-{1-10}56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)<br>
+      <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations): 4S-&lt;156|256|...|1056&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)<br>
       <b style="color: #0077cc;">&lt;Q&gt;</b> (quantification method): HERCULES_diff1, HERCULES_diff2, HERCULES_sum, unedited_A
     </td>
   </tr>
