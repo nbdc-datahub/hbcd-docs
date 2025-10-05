@@ -24,37 +24,41 @@ hbcd/
       |_ sub-<span class="label">{ID}</span>/
          |_ ses-<span class="label">{V0X}</span>/
             |_ anat/
-               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_thickness.dscalar.nii
-               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_curv.dscalar.nii
-               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_sulc.dscalar.nii
-               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>_morph.tsv
-               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;pial|white&gt;</span>.surf.gii
+            <span class="hashtag">#1</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_thickness.dscalar.nii
+            <span class="hashtag">#2</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_curv.dscalar.nii
+            <span class="hashtag">#3</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_sulc.dscalar.nii
+            <span class="hashtag">#4</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>_morph.tsv
+            <span class="hashtag">#5</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;pial|white&gt;</span>.surf.gii
 
 <span class="hashtag"># Label Values Legend</span>
 <span class="placeholder">&lt;APARC&gt; (anat/ parcellations)</span>: 4S-&lt;156|256|356|...|1056&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte
 </pre>
 <p></p>
 
-<p style="font-size: 15px;">
-    <strong>Cortical Thickness</strong> (<code>*_den-91k_thickness.dscalar.nii</code>)<br>
-    CIFTI scalar files containing surface-based maps of cortical thickness (in millimeters) for each hemisphere. Generated from reconstructed cortical surfaces and aligned to the standard <code>fsLR</code> template. Commonly averaged within ROIs or compared across subjects to assess cortical development, aging, or group differences.
-<br>
-<br>
-    <strong>Curvature</strong> (<code>*_den-91k_curv.dscalar.nii</code>)<br>
-    Provides mean surface curvature values representing local cortical folding patterns of the cortex. Positive values correspond to sulci (inward folds) and negative values to gyri (outward folds). Useful for characterizing cortical folding or as a covariate in morphometric analyses.
-<br>
-<br>
-    <strong>Sulcal Depth</strong> (<code>*_den-91k_sulc.dscalar.nii</code>)<br>
-    Measures the relative depth of cortical sulci compared to adjacent gyri. Often used alongside curvature to describe cortical shape and folding complexity.
-<br>
-<br>
-    <strong>Parcellated Structural Measures</strong> (<code>*_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph.tsv</code>)<br>
-    Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical or functional regions defined by an atlas. Ideal for region-based statistical analysis and group comparisons.
-<br>
-<br>
-    <strong>Pial and White Matter Surfaces</strong> (<code>*_hemi-&lt;L|R&gt;_space-fsLR_den-32k_&lt;pial|white&gt;.surf.gii</code>)<br>
-    3D surface models representing the gray–white matter boundary and the pial surface for each hemisphere. Commonly used for visualizing cortical anatomy, computing surface-based metrics, or mapping functional data to anatomical space.
-</p>
+<details>
+  <summary><strong>#1 Cortical Thickness</strong> (<code>*_den-91k_thickness.dscalar.nii</code>)</summary>
+  <p>CIFTI scalar files containing surface-based maps of cortical thickness (in millimeters) for each hemisphere. Generated from reconstructed cortical surfaces and aligned to the standard <code>fsLR</code> template. Commonly averaged within ROIs or compared across subjects to assess cortical development, aging, or group differences.</p>
+</details>
+
+<details>
+  <summary><strong>#2 Curvature</strong> (<code>*_den-91k_curv.dscalar.nii</code>)</summary>
+  <p>Provides mean surface curvature values representing local cortical folding patterns of the cortex. Positive values correspond to sulci (inward folds) and negative values to gyri (outward folds). Useful for characterizing cortical folding or as a covariate in morphometric analyses.</p>
+</details>
+
+<details>
+  <summary><strong>#3 Sulcal Depth</strong> (<code>*_den-91k_sulc.dscalar.nii</code>)</summary>
+  <p>Measures the relative depth of cortical sulci compared to adjacent gyri. Often used alongside curvature to describe cortical shape and folding complexity.</p>
+</details>
+
+<details>
+  <summary><strong>#4 Parcellated Structural Measures</strong> (<code>*_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph.tsv</code>)</summary>
+  <p>Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical or functional regions defined by an atlas. Ideal for region-based statistical analysis and group comparisons.</p>
+</details>
+
+<details>
+  <summary><strong>#5 Pial and White Matter Surfaces</strong> (<code>*_hemi-&lt;L|R&gt;_space-fsLR_den-32k_&lt;pial|white&gt;.surf.gii</code>)</summary>
+  <p>3D surface models representing the gray–white matter boundary and the pial surface for each hemisphere. Commonly used for visualizing cortical anatomy, computing surface-based metrics, or mapping functional data to anatomical space.</p>
+</details>
 
 ## Functional Connectivity (XCP-D)
 
@@ -67,33 +71,43 @@ hbcd/
       |_ sub-<span class="label">{ID}</span>/
          |_ ses-<span class="label">{V0X}</span>/
             |_ func/
-                |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_space-fsLR_den-91k_desc-denoisedSmoothed_bold.dtseries.nii
-                |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii
-                |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
-                |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
-                |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>-task-rest_dir-PA_run-<span class="label">{X}</span>_<span class="placeholder">&lt;design|motion|outliers&gt;</span>.tsv
+            <span class="hashtag">#1</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_space-fsLR_den-91k_desc-<span class="placeholder">&lt;denoised|denoisedSmoothed&gt;</span>_bold.dtseries.nii  
+            <span class="hashtag">#2</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
+            <span class="hashtag">#3</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
+            <span class="hashtag">#4</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>-task-rest_dir-PA_run-<span class="label">{X}</span>_<span class="placeholder">&lt;design|motion|outliers&gt;</span>.tsv
 
 <span class="hashtag"># Label Values Legend</span>
 <span class="placeholder">&lt;PARC&gt; (func/ parcellations)</span>: 4S-&lt;156|256|...|1056&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian
 </pre>
 <p></p>
 
-<p style="font-size: 15px;">
-    <strong>Denoised Timeseries</strong> (<code>*_den-91k_desc-denoised{Smoothed}_bold.dtseries.nii</code>)<br>
-    CIFTI dense time series containing fully preprocessed, temporally filtered, and nuisance-regressed BOLD data. Aligned to the standard <code>fsLR</code> surface template, these files are suitable for voxelwise FC analyses, seed-based correlation maps, or other data-driven connectivity methods.
-<br>
-<br>
-    <strong>Parcellated Timeseries</strong> (<code>*_seg-&lt;PARC&gt;_stat-mean_timeseries.tsv</code>)<br>
-    Tabulated mean BOLD time series for each region in a the following atlases: <a href="https://github.com/PennLINC/AtlasPack">4S-{X}-Region Parcels</a>, Glasser, Gordon, MIDB, MyersLabonte, HCP, and Tian. Also available as CIFTI files (<code>*_stat-mean_timeseries.ptseries.nii</code>), where each column corresponds to a brain region, and each row to a timepoint. Ideal for computing ROI-to-ROI connectivity matrices or performing graph and network analyses.
-<br>
-<br>
-    <strong>Connectivity Matrices</strong> (<code>*_seg-&lt;PARC&gt;_stat-pearsoncorrelation_relmat.tsv</code>)<br>
-    Tab-delimited matrices of pairwise Pearson correlations between atlas regions, computed from the parcellated time series. Useful for quick inspection, validation, or as input for group-level analyses when region-level connectivity is sufficient.
-<br>
-<br>
-    <strong>Motion Detection and Confound Files</strong> (<code>*_&lt;design|motion|outliers&gt;.tsv</code>)<br>
-    Include framewise displacement values and nuisance regressor design files. The design files (<code>*_design.tsv</code>) contain one column per regressor (e.g., motion parameters and one-hot indicators for high-motion outlier volumes). Recommended for identifying and filtering low-quality data before group analyses.<br>    
-</p>
+<details>
+  <summary><strong>#1 Denoised Timeseries</strong> (<code>*_den-91k_desc-denoised{Smoothed}_bold.dtseries.nii</code>)</summary>
+  <p>
+  CIFTI dense time series containing fully preprocessed, temporally filtered, and nuisance-regressed BOLD data. Aligned to the standard <code>fsLR</code> surface template, these files are suitable for voxelwise FC analyses, seed-based correlation maps, or other data-driven connectivity methods.
+  </p>
+</details>
+
+<details>
+  <summary><strong>#2 Parcellated Timeseries</strong> (<code>*_seg-&lt;PARC&gt;_stat-mean_timeseries.tsv</code>)</summary>
+  <p>
+  Tabulated mean BOLD time series for each region in a the following atlases: <a href="https://github.com/PennLINC/AtlasPack">4S-{X}-Region Parcels</a>, Glasser, Gordon, MIDB, MyersLabonte, HCP, and Tian. Also available as CIFTI files (<code>*_stat-mean_timeseries.ptseries.nii</code>), where each column corresponds to a brain region, and each row to a timepoint. Ideal for computing ROI-to-ROI connectivity matrices or performing graph and network analyses.
+  </p>
+</details>
+
+<details>
+  <summary><strong>#3 Connectivity Matrices</strong> (<code>*_seg-&lt;PARC&gt;_stat-pearsoncorrelation_relmat.tsv</code>)</summary>
+  <p>
+  Tab-delimited matrices of pairwise Pearson correlations between atlas regions, computed from the parcellated time series. Useful for quick inspection, validation, or as input for group-level analyses when region-level connectivity is sufficient.
+  </p>
+</details>
+
+<details>
+  <summary><strong>#4 Motion Detection and Confound Files</strong> (<code>*_&lt;design|motion|outliers&gt;.tsv</code>)</summary>
+  <p>
+  Include framewise displacement values and nuisance regressor design files. The design files (<code>*_design.tsv</code>) contain one column per regressor (e.g., motion parameters and one-hot indicators for high-motion outlier volumes). Recommended for identifying and filtering low-quality data before group analyses.
+  </p>
+</details>
 
 ## Other Useful Derivatives
 
