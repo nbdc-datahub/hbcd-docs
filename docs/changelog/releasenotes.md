@@ -296,8 +296,7 @@
 <tbody>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>SPM-2 (<code>ncl_cg_spm2__inf</code>) T-Scores</strong><br>
-      Now includes verified t-scores, which were originally excluded due to errors in conversion from raw scores.</td>
+      The <strong>SPM-2 (<code>ncl_cg_spm2__inf</code>)</strong> now includes <strong>verified t-scores</strong>, originally excluded due to errors in conversion from raw scores.</td>
   </tr>  
 </tbody>
 </table>
@@ -318,16 +317,19 @@
 <tbody>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>Health V2- Infancy</strong> (<code>pex_bm_healthv2_inf</code>): Erroneously included descriptive fields <code>001__00</code> - <code>005__00</code> now removed.</td>
+      <strong>Health V2- Infancy</strong> (<code>pex_bm_healthv2_inf</code>)<br>
+      Erroneously included descriptive fields <code>001__00</code> - <code>005__00</code> now removed.</td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>APA 1/2 (<code>pex_bm_apa</code>)</strong>: Summary scores and corresponding T-scores are now provided, where appropriate, for Level 2 domains.
+      <strong>APA 1/2 (<code>pex_bm_apa</code>)</strong><br>
+      Summary scores and corresponding T-scores are now provided, where appropriate, for Level 2 domains.
     </td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>EPDS (<code>pex_bm_epds</code>)</strong>: Duplicate data for each item (e.g., <code>epds_001</code> and <code>epds_001_01</code>) now removed.</td>
+      <strong>EPDS (<code>pex_bm_epds</code>)</strong><br>
+      Duplicate data for each item (e.g., <code>epds_001</code> and <code>epds_001_01</code>) now removed.</td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
