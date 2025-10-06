@@ -320,27 +320,28 @@
 <tbody>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>Health V2- Infancy</strong> (<code>pex_bm_healthv2_inf_00&lt;1|2|3|4|5&gt;__00</code>)<br>
-      These fields, which are descriptive and were erroneously included in the prior release, have been removed.</td>
+      <strong>Health V2- Infancy</strong> (<code>pex_bm_healthv2_inf</code>)<br>
+      Removal of fields <code>001__00</code> - <code>005__00</code>, purely descriptive fields erroneously included in the prior release.</td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>APA 1/2</strong><br>
+      <strong>APA 1/2 (<code>pex_bm_apa</code>)</strong><br>
       Summary scores and corresponding T-scores are now provided, where appropriate, for Level 2 domains.</td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>Edinburgh Postnatal Depression Scale (EPDS)</strong><br>
-      Duplicate data for each of the EPDS items (e.g., <code>epds_001</code> and <code>epds_001_01</code>) is now removed.</td>
+      <strong>EPDS (<code>pex_bm_epds</code>)</strong><br>
+      Duplicate data for each item (e.g., <code>epds_001</code> and <code>epds_001_01</code>) now removed.</td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>TLFB Substance Use Flags</strong><br>
+      <strong>TLFB (<code>pex_ch_tlfb</code>)</strong><br>
+      <strong>#1 Substance Use Flags</strong><br>
       The TLFB Substance Use Flags are intended to indicate whether a participant had <strong>ever met the substance-specific use criteria</strong> during or after pregnancy across visits V01 and V02 at the time of survey administration. In the prior release, <strong>only the alcohol use flag</strong> correctly follows this logic. All substance use flags are now corrected to follow this logic.</td>
   </tr>    
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>TLFB Age Variables</strong> (<code>pex_ch_tlfb_&lt;adjusted|gestational|candidate&gt;_age</code>)<br>
+      <strong>#2 Age Variables</strong><br>
       TLFB age variable fields (<i>gestational_age</i>, <i>adjusted_age</i>, and <i>candidate_age</i>) were incorrect in the prior release data and have been removed.</td>
   </tr>  
 </tbody>
