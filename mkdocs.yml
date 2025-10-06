@@ -74,7 +74,7 @@ nav:
   - Study Instruments:
     - Instruments Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
-    - Demographics & Visit Information:
+    - Demographics:
         - Basic Demographics: instruments/demo/basicdemo.md
         - Visit Information: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:

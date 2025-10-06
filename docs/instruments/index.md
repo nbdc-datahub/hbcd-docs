@@ -39,12 +39,12 @@ Expand the sections below to see a list of measures associated with each domain 
   Expand All Sections ↕️
 </button>
 
-### Demographics & Visit Information
+### Demographics
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
   <span class="text-with-link">
-  <span class="text">Basic Demographics & Visit Info</span>
+  <span class="text">Demographics</span>
   <a class="anchor-link" href="#demo" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>

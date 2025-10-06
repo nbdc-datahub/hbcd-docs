@@ -141,6 +141,17 @@ th, td {
 .table-no-vertical-lines b {
   color: #6300d3;
 }
+.table-no-vertical-lines ul {
+  margin-top: 1rem;
+  padding-left: 0.4rem;
+  line-height: 1;
+  font-size: 0.9em !important;
+}
+.table-no-vertical-lines li {
+  margin-bottom: 0.2rem;
+  line-height: 1;
+  font-size: 1em !important;
+}
 
 /* Compact Table Style */
 .compact-table {

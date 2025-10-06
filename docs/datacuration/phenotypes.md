@@ -8,7 +8,7 @@
 </div>
 </p>
 
-Tabulated data are participant-level summaries of study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), administrative (<a href="../../instruments/#demographics-visit-information" target="_blank">demographics & visit info</a>), and select <a href="../overview/#warning" target="_blank">file-based</a> data. Files are stored under `rawdata/phenotype/`:
+Tabulated data are participant-level summaries of study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), administrative (<a href="../../instruments/#demo" target="_blank">demographics</a>), and select <a href="../overview/#warning" target="_blank">file-based</a> data. Files are stored under `rawdata/phenotype/`:
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
