@@ -80,17 +80,18 @@
 </table>
 </div>
 
-<div id="instruments" class="table-banner" onclick="toggleCollapse(this)">
+<div id="r1-exclusions" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-filter"></i></span>
   <span class="text-with-link">
-  <span class="text">Instrument Exclusions</span>
-  <a class="anchor-link" href="#instruments" title="Copy link">
+  <span class="text">Instrument & Field Exclusions</span>
+  <a class="anchor-link" href="#r1-exclusions" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p style="font-size: 1.0em;"><strong>Instrument Exclusions</strong></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <th>Instrument(s)</th>
@@ -109,19 +110,7 @@
 <tr><td>Visit Start / Visit Level Data</td><td><code>visit_start</code> / <code>adm_fd_visitdata</code></td></tr>
 </tbody>
 </table>
-</div>
-
-<div id="fields" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-filter"></i></span>
-  <span class="text-with-link">
-  <span class="text">Instrument Field Exclusions</span>
-  <a class="anchor-link" href="#fields" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+<p style="font-size: 1.0em;"><strong>Instrument Field Exclusions</strong></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <th>Table Field(s)</th>
