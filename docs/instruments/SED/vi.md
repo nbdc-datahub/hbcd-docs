@@ -2,7 +2,6 @@
 
 # Vancouver Index of Acculturation (VIA)
 
-
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
@@ -33,11 +32,15 @@
   <span class="arrow">▸</span>
 </div>
 <div class="alert-collapsible-content">
-<p>Please do not mention or ask participants about immigration or documentation status. They should only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided.</p>
-
-<p style="color: red;">Luci note: this is great, but the way it is currently phrased looks like internal documentation that is not relevant to the end user/researchers using the data (who do not interact with study participants). I would perhaps move this to the Instrument Details section and rephrase like so:<br>
-"Participants are not asked about immigration or documentation status. The intent is that they only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided."</p>
+<p>Acculturation surveys may make some individuals feel excluded or othered. However, this measure aims to capture the process and understand an individual's personal preferences for taking part in their personal family cultural values as well as those of "American" culture.</p>
+<p>This measure does not specifically define what "American" should mean, but allows the participant to decide what it means to them.</p>
 </div>
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#social-environmental-determinants" target="_blank">see details</a>.</span>
+</div>
+<p></p>
 
 ## Administration & Quality Control
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -54,15 +57,7 @@
 <td>5 min</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
 <td style="word-wrap: break-word; white-space: normal;">
-<ul>
-  <li>Only individuals who themselves, their spouses/partners or any of the child's grandparents are identified as having been born outside the US should be filling out this survey. REDCap should end after those screening questions for those who identify themselves, their spouse/caregiver, and all grandparents as all being born in the US.<br>
-  <p style="color: red;">Luci suggested rewrite to emphasize QC relevance and process: "The VIA is administered only if the caregiver, spouse/partner, or any of the child's grandparents were born outside the U.S. If all are U.S.-born, the survey platform (REDCap) automatically ends the questionnaire after the screening questions."
-  </p></li>
-  <li>This measure does not specifically define what "American" should mean, but allows the participant to decide what it means to them.</li>
-  <li>Acculturation surveys may make some individuals feel excluded or othered. However, this measure aims to capture the process and understand an individual's personal preferences for taking part in their personal family cultural values as well as those of "American" culture.</li>
-  <li>Participants are allowed to choose more than one culture to account for individuals who may live in multicultural households.</li>
-</ul>
-<p style="color: red;">Luci note: I would recommend moving the documentation above to the Instrument Details section, or perhaps some or all of it would be relevant to the Responsible Use section? Quality Control Procedures should describe checks made to make sure the data isn't incorrect/corrupted somehow, such as checking for missingness</p>
+The VIA is administered only if the caregiver, spouse/partner, or any of the child's grandparents were born outside the U.S. If all are U.S.-born, the survey platform (REDCap) automatically ends the questionnaire after the screening questions. Participants are allowed to choose more than one culture to account for individuals who may live in multicultural households.
 </td></tr>      
 </tbody>
 </table>
@@ -75,20 +70,7 @@ The **Vancouver Index of Acculturation (VIA)** measures acculturation orientatio
 
 Some immigrants may consider American culture as their family culture. They can select “none” to indicate they do not identify with a culture other than American. We attempted to capture many different countries, ethnicities, and religions for participants to select. However, if a participant’s family culture is not listed, they can select “None of these apply/My family culture is not listed”.
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>The order of questions is flipped in the HBCD English and Spanish version. This will affect scoring as the scoring instructions lump all the odd (heritage culture answers) and even (American culture) questions. This needs to be fixed so that the second-to-last and last questions on the HBCD survey are reversed.</p>
-<p style="color: red;">Luci note: is this an internal fix needed, or recommendations to the user? should it be added as a known issue?</p> 
-</div>
+Participants are not to be asked about immigration or documentation status. The intent is that they only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided.
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
@@ -114,8 +96,3 @@ Some immigrants may consider American culture as their family culture. They can 
   <p>Testa, S., Doucerain, M. M., Miglietta, A., Jurcik, T., Ryder, A. G., & Gattino, S. (2019). The Vancouver Index of Acculturation (VIA): New evidence on dimensionality and measurement invariance across two cultural settings. <i>JInternational Journal of Intercultural Relations</i>, 71, 60–71. <a href="https://doi.org/10.1016/j.ijintrel.2019.04.001">https://doi.org/10.1016/j.ijintrel.2019.04.001</a></p>
 </div>
 <br>
-<br>
-
-
-
-

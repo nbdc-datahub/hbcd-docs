@@ -28,3 +28,10 @@ For HBCD BIDS data with multiple runs, the run number displayed in the `run-<lab
 Participants who did not withdraw from the study (and so have a value of "no" for `par_visit_data_participant_withdrawal`) have a sentinel value of `12/26/1999`, <i>meaning no withdrawal</i>, for participant withdrawal date (`par_visit_data_participant_withdrawal_date`). This can be safely ignored. Participants who did withdraw (and so have a value of “yes” for `par_visit_data_participant_withdrawal`) have a valid date and are unimpacted.          
 ***Expected Fix: TBD*** 
 --------------------------   
+
+## Social & Environmental Determinants
+
+###### <span class="emoji" style="color: #f97316;"><i class="fas fa-bug"></i></span> Flipped Question Order in English & Spanish Versions of the VIA (<code>sed_cg_via</code>)
+The order of questions is flipped in the HBCD English and Spanish version. This will affect scoring as the scoring instructions lump all the odd (heritage culture answers) and even (American culture) questions. This will be fixed so that the second-to-last and last questions on the HBCD survey are reversed.       
+***Expected Fix: TBD*** 
+--------------------------   
