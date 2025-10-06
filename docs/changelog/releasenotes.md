@@ -233,8 +233,7 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
-    <td>
-      <strong>Collection & Analysis Dates</strong>: Addition of formerly missing collection and analysis (<i>Collection/Received/Report</i>) dates.</td>
+  <td>Addition of formerly missing <strong>collection and analysis dates</strong> (<i>Collection/Received/Report</i>).</td>
   </tr>  
 </tbody>
 </table>
