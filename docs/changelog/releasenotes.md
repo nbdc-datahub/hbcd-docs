@@ -60,14 +60,14 @@
       </td>
       <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
         <strong>Basic Demographics</strong> 
-        (<a href="../../../instruments/demo/basicdemo" target="_blank"><code>sed_basic_demographics</code></a>)<br>
+        (<a href="../../instruments/demo/basicdemo" target="_blank"><code>sed_basic_demographics</code></a>)<br>
         <span class="update-text">Reviewed scoring for AOU and ACS EthnoRacial fields. The multiracial options for <strong>ACS – Child – Multi Race</strong> (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.
       </td>
     </tr>
     <!-- Biospec-->
     <tr style="border-bottom: 1px solid #e0e0e0;">
       <td style="width: 40px; text-align: center;">
-        <a href="../../../instruments/#biospec" title="Biospec" target="_blank"><i class="fas fa-vial"></i></a>
+        <a href="../../instruments/#biospec" title="Biospec" target="_blank"><i class="fas fa-vial"></i></a>
       </td>
       <td style="padding: 8px 4px; vertical-align: top;">
         <strong>Biospecimens Nails & Urine</strong> 
@@ -78,22 +78,22 @@
     <!-- BrainSwipes QC -->
     <tr style="border-bottom: 1px solid #e0e0e0;">
       <td style="width: 40px; text-align: center;">
-        <a href="../../../instruments/#mri" title="MRI Data" target="_blank"><i class="fas fa-magnet"></i></a>
+        <a href="../../instruments/#mri" title="MRI Data" target="_blank"><i class="fas fa-magnet"></i></a>
       </td>
       <td style="padding: 8px 4px; vertical-align: top;">
         <strong>BrainSwipes QC</strong> 
-        (<a href="../../../instruments/mri/qc/#brainswipes" target="_blank"><code>img_brainswipes*</code></a>)<br>
+        (<a href="../../instruments/mri/qc/#brainswipes" target="_blank"><code>img_brainswipes*</code></a>)<br>
         <span class="update-text">Added QC results missing from R1.0 (<strong>N=8</strong>).</span>
       </td>
     </tr>
     <!-- Pregnancy & Infant Health -->
     <tr style="border-bottom: 1px solid #e0e0e0;">
       <td style="width: 40px; text-align: center;">
-        <a href="../../../instruments/#pex" title="Pregnancy & Infant Health" target="_blank"><i class="fa-solid fa-baby"></i></a>
+        <a href="../../instruments/#pex" title="Pregnancy & Infant Health" target="_blank"><i class="fa-solid fa-baby"></i></a>
       </td>
       <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
         <strong>Pregnancy & Infant Health</strong> 
-        (<a href="../../../instruments/pregexp/pex" target="_blank"><code>pex_bm_health*</code></a>)<br>
+        (<a href="../../instruments/pregexp/pex" target="_blank"><code>pex_bm_health*</code></a>)<br>
         <span class="update-text">Medications are now categorized into more detailed components based on <strong>RxNorm IDs</strong> to improve clarity and enable more granular analyses.  
         Additional columns specify: <em>Brand Name</em>, <em>Ingredient</em>, <em>Precise Ingredient</em>, and <em>Multiple Active Ingredients</em>.</span>
       </td>
@@ -101,11 +101,11 @@
     <!-- V01 Demographics -->
     <tr style="border-bottom: 1px solid #e0e0e0;">
       <td style="width: 40px; text-align: center;">
-        <a href="../../../instruments/#socenvdet" title="Demographics" target="_blank"><i class="fas fa-city"></i></a>
+        <a href="../../instruments/#socenvdet" title="Demographics" target="_blank"><i class="fas fa-city"></i></a>
       </td>
       <td style="padding: 8px 4px; vertical-align: top;">
         <strong>V01 Demographics</strong> 
-        (<a href="../../../instruments/SED/v01-demo" target="_blank"><code>sed_bm_demo</code></a>)<br>
+        (<a href="../../instruments/SED/v01-demo" target="_blank"><code>sed_bm_demo</code></a>)<br>
         <span class="update-text">Added <strong>Birth Parent Sexual Orientation</strong> variable.</span>
       </td>
     </tr>
