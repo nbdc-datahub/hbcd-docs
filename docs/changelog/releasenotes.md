@@ -167,7 +167,7 @@
 ### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 1.1 Resolved Known Issues By Domain
 
 <div id="r1.1demo" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></span>
+  <span class="emoji"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></span>
   <span class="text-with-link">
   <span class="text">Demographics</span>
   <a class="anchor-link" href="#r1.1demo" title="Copy link">
@@ -219,7 +219,7 @@
 </div>
 
 <div id="r1.1biospec" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></span>
+  <span class="emoji"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></span>
   <span class="text-with-link">
   <span class="text">Biospecimens</span>
   <a class="anchor-link" href="#r1.1biospec" title="Copy link">
@@ -260,7 +260,7 @@
 </div>
 
 <div id="r1.1eeg" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../../instruments/#eeg" target="_blank"><i class="fa fa-bolt"></i></a></span>
+  <span class="emoji"><a href="../../instruments/#eeg" target="_blank"><i class="fa fa-bolt"></i></a></span>
   <span class="text-with-link">
   <span class="text">EEG</span>
   <a class="anchor-link" href="#r1.1eeg" title="Copy link">
@@ -282,7 +282,7 @@
 </div>
 
 <div id="r1.1ngl" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../../instruments/#neurocog" target="_blank"><i class="fa fa-brain"></i></a></span>
+  <span class="emoji"><a href="../../instruments/#neurocog" target="_blank"><i class="fa fa-brain"></i></a></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
   <a class="anchor-link" href="#r1.1ngl" title="Copy link">
@@ -304,7 +304,7 @@
 </div>
 
 <div id="r1.1pex" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a></span>
+  <span class="emoji"><a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a></span>
   <span class="text-with-link">
   <span class="text">Pregnancy & Exposure, Including Substance Use</span>
   <a class="anchor-link" href="#r1.1pex" title="Copy link">
@@ -318,29 +318,28 @@
 <tbody>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>Health V2- Infancy</strong> (<code>pex_bm_healthv2_inf</code>)<br>
-      Removal of fields <code>001__00</code> - <code>005__00</code>, purely descriptive fields erroneously included in the prior release.</td>
+      <strong>Health V2- Infancy</strong> (<code>pex_bm_healthv2_inf</code>): Erroneously included descriptive fields <code>001__00</code> - <code>005__00</code> now removed.</td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>APA 1/2 (<code>pex_bm_apa</code>)</strong><br>
-      Summary scores and corresponding T-scores are now provided, where appropriate, for Level 2 domains.</td>
+      <strong>APA 1/2 (<code>pex_bm_apa</code>)</strong>: Summary scores and corresponding T-scores are now provided, where appropriate, for Level 2 domains.
+    </td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>EPDS (<code>pex_bm_epds</code>)</strong><br>
-      Duplicate data for each item (e.g., <code>epds_001</code> and <code>epds_001_01</code>) now removed.</td>
+      <strong>EPDS (<code>pex_bm_epds</code>)</strong>: Duplicate data for each item (e.g., <code>epds_001</code> and <code>epds_001_01</code>) now removed.</td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
       <strong>TLFB (<code>pex_ch_tlfb</code>)</strong><br>
-      <strong>#1 Substance Use Flags</strong><br>
-      The TLFB Substance Use Flags are intended to indicate whether a participant had <strong>ever met the substance-specific use criteria</strong> during or after pregnancy across visits V01 and V02 at the time of survey administration. In the prior release, <strong>only the alcohol use flag</strong> correctly follows this logic. All substance use flags are now corrected to follow this logic.</td>
+      <strong>#1 Corrected logic for TLFB substance use flags</strong><br>
+      Previously, only the alcohol use flag applied the intended criteria (use during or after pregnancy across V01–V02). All substance use flags now follow this logic.
+      </td>
   </tr>    
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>#2 Age Variables</strong><br>
-      TLFB age variable fields (<i>gestational_age</i>, <i>adjusted_age</i>, and <i>candidate_age</i>) were incorrect in the prior release data and have been removed.</td>
+      <strong>#2 Age Variables Removed</strong><br>
+      TLFB age variable fields (<i>gestational_age</i>, <i>adjusted_age</i>, and <i>candidate_age</i>) are now removed due to incorrect values.</td>
   </tr>  
 </tbody>
 </table>
