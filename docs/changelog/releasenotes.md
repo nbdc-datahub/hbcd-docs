@@ -276,8 +276,8 @@
 <tbody>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>HBCD-MADE Resting-State Derivatives</strong> (<code>processed_data/*_task-RS_powerSummaryStats.csv</code>)<br>
-      The HBCD-MADE derivative files containing summary statistics for resting-state data have been removed as they are incorrect (due to a former bug in the pipeline) and should not be used for analysis. Users should instead generate these files themselves using scripts provided via <a href="https://hbcd-eeg-utilities.readthedocs.io/en/stable/">HBCD EEG Utilities</a> for extracting summary statistics.</td>
+    The <strong>HBCD-MADE</strong> resting-state derivative files (<code>processed_data/*_task-RS_powerSummaryStats.csv</code>) have been removed due to errors caused by a previous pipeline bug. These files should not be used for analysis. Users can regenerate the corresponding summary statistics using the scripts provided in  <a href="https://hbcd-eeg-utilities.readthedocs.io/en/stable/">HBCD EEG Utilities</a>.
+    </td>
   </tr>  
 </tbody>
 </table>
