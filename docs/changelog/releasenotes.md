@@ -230,7 +230,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><strong>Nails & Urine (<code>bio_bm_biosample_*</code>)</strong></p>
+<p style="font-size: 1.0em;"><strong>Nails & Urine (<code>bio_bm_biosample_&lt;nails|urine&gt;</code>)</strong></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
