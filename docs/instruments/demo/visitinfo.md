@@ -40,14 +40,25 @@ Visit information also includes **substance use flags**, which are single summar
 
 #### Cohort & Caregiver Types
 
-<p>Cohort types included in the data release are as follows, with each listed item indicating a specific subtype or Caregiver Type (e.g., "HBCD Main Child - Postnatal Recruitment"):</p>
-<ul>
-    <li><strong>HBCD Main Child -</strong> <em>Postnatal Recruitment</em>, <em>Type A-F</em></li>
-    <li><strong>HBCD Multiple Birth -</strong> <em>Main Child</em>, <em>Postnatal Recruitment</em>, <em>Postnatal Recruitment - Sibling</em>, <em>Type A-F</em></li>
-</ul>
+**Cohort** information includes cohort subtype and caregiver type for each participant. Possible values include:
 
+ - HBCD Main Child - Postnatal Recruitment
+ - HBCD Main Child - Type {*A-F*}
+ - HBCD Multiple Birth - {*Main Child | Postnatal Recruitment | Sibling*}
+ - HBCD Multiple Birth - Type {*A-F*}
+
+<div id="cg-types" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Caregiver Type A-F Definitions</span>
+  <a class="anchor-link" href="#cg-types" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<caption>Caregiver Type A-F Definitions</caption>
 <tbody>
     <tr>
         <td>Type A</td>
@@ -71,3 +82,6 @@ Visit information also includes **substance use flags**, which are single summar
     </tr>            
 </tbody>
 </table>
+</div>
+
+<br>
