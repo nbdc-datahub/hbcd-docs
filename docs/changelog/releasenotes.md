@@ -244,7 +244,7 @@
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
       <strong>Corrected Specific Gravity Variable</strong><br>
-      The urine specific gravity variable (<code>bio_spg_u</code>) has been corrected. Values previously recorded as “1” were adjusted to the appropriate thousandths format. The corrected variable can now be used for urinary concentration corrections.</td>
+      Values for the 'Urine Specific Gravity' field (<code>bio_spg_u</code>) have been set to the correct floating point value for the appropriate thousandths format (were previously set to '1' and data type to 'integer'). The corrected variable can now be used for urinary concentration corrections.</td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
