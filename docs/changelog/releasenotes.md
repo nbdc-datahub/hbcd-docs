@@ -72,7 +72,7 @@
       <td style="padding: 8px 4px; vertical-align: top;">
         <strong>Biospecimens Nails & Urine</strong> 
         (<code>bio_bm_biosample_*</code>)<br>
-        <span class="update-text">Removed 'Specimen ID’ fields from Biospecimen tables.</span>
+        <span class="update-text">Removed 'Specimen ID’ fields from all Biospecimen tables and time from dates in 'Nails Results.'</span>
       </td>
     </tr>
     <!-- BrainSwipes QC -->
@@ -234,7 +234,7 @@
 <tbody>
   <tr>
     <td>
-      <strong>Collection & Analysis Dates</strong>: Missing collection and analysis dates now included.</td>
+      <strong>Collection & Analysis Dates</strong>: Addition of formerly missing collection and analysis (<i>Collection/Received/Report</i>) dates.</td>
   </tr>  
 </tbody>
 </table>
