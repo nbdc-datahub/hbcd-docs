@@ -201,6 +201,58 @@
   </tbody>
 </table>
 
+<div id="updatedfiles" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-screwdriver-wrench"></i></span>
+  <span class="text-with-link">
+  <span class="text">Fill List of Updated Files</span>
+  <a class="anchor-link" href="#visitinfo" title="updatedfiles">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><strong>Basic Demographics</strong></p>
+<ul>
+<li><code>sed_basic_demographics.json</code></li>
+<li><code>sed_basic_demographics.parquet</code></li>
+<li><code>sed_basic_demographics.tsv</code></li>
+</ul>
+<p><strong>BioSpecimens</strong></p>
+<ul>
+<li><code>bio_bm_biosample_nails_results.json</code></li>
+<li><code>bio_bm_biosample_nails_results.parquet</code></li>
+<li><code>bio_bm_biosample_nails_results.tsv</code></li>
+<li><code>bio_bm_biosample_nails_results_shadow.parquet</code></li>
+<li><code>bio_bm_biosample_nails_results_shadow.tsv</code></li>
+<li><code>bio_bm_biosample_urine.json</code></li>
+<li><code>bio_bm_biosample_urine.parquet</code></li>
+<li><code>bio_bm_biosample_urine.tsv</code></li>
+<li><code>bio_bm_biosample_urine_shadow.parquet</code></li>
+<li><code>bio_bm_biosample_urine_shadow.tsv</code></li>
+</ul>
+<p><strong>SPM-2</strong></p>
+<ul>
+<li><code>ncl_cg_spm2__inf.json</code></li>
+<li><code>ncl_cg_spm2__inf.parquet</code></li>
+<li><code>ncl_cg_spm2__inf.tsv</code></li>
+<li><code>ncl_cg_spm2__inf_shadow.parquet</code></li>
+<li><code>ncl_cg_spm2__inf_shadow.tsv</code></li>
+</ul>
+<p><strong>TLFB</strong></p>
+<ul>
+<li><code>pex_ch_tlfb.json</code></li>
+<li><code>pex_ch_tlfb.parquet</code></li>
+<li><code>pex_ch_tlfb.tsv</code></li>
+<li><code>pex_ch_tlfb_shadow.parquet</code></li>
+<li><code>pex_ch_tlfb_shadow.tsv</code></li>
+</ul>
+<p><strong>PEX Health V2 Preg</strong></p>
+<ul>
+<li><code>pex_bm_healthv2_preg.json</code></li>
+</ul>
+</div>
+
 ### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 1.1 Resolved Known Issues By Domain
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
@@ -383,60 +435,6 @@
   </tr>  
 </tbody>
 </table>
-</div>
-
-### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 1.1 Updated Files List
-
-<div id="updatedfiles" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-check"></i><i class="fa fa-screwdriver-wrench"></i></span>
-  <span class="text-with-link">
-  <span class="text">Updated Files</span>
-  <a class="anchor-link" href="#visitinfo" title="updatedfiles">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><strong>Basic Demographics</strong></p>
-<ul>
-<li><code>sed_basic_demographics.json</code></li>
-<li><code>sed_basic_demographics.parquet</code></li>
-<li><code>sed_basic_demographics.tsv</code></li>
-</ul>
-<p><strong>BioSpecimens</strong></p>
-<ul>
-<li><code>bio_bm_biosample_nails_results.json</code></li>
-<li><code>bio_bm_biosample_nails_results.parquet</code></li>
-<li><code>bio_bm_biosample_nails_results.tsv</code></li>
-<li><code>bio_bm_biosample_nails_results_shadow.parquet</code></li>
-<li><code>bio_bm_biosample_nails_results_shadow.tsv</code></li>
-<li><code>bio_bm_biosample_urine.json</code></li>
-<li><code>bio_bm_biosample_urine.parquet</code></li>
-<li><code>bio_bm_biosample_urine.tsv</code></li>
-<li><code>bio_bm_biosample_urine_shadow.parquet</code></li>
-<li><code>bio_bm_biosample_urine_shadow.tsv</code></li>
-</ul>
-<p><strong>SPM-2</strong></p>
-<ul>
-<li><code>ncl_cg_spm2__inf.json</code></li>
-<li><code>ncl_cg_spm2__inf.parquet</code></li>
-<li><code>ncl_cg_spm2__inf.tsv</code></li>
-<li><code>ncl_cg_spm2__inf_shadow.parquet</code></li>
-<li><code>ncl_cg_spm2__inf_shadow.tsv</code></li>
-</ul>
-<p><strong>TLFB</strong></p>
-<ul>
-<li><code>pex_ch_tlfb.json</code></li>
-<li><code>pex_ch_tlfb.parquet</code></li>
-<li><code>pex_ch_tlfb.tsv</code></li>
-<li><code>pex_ch_tlfb_shadow.parquet</code></li>
-<li><code>pex_ch_tlfb_shadow.tsv</code></li>
-</ul>
-<p><strong>PEX Health V2 Preg</strong></p>
-<ul>
-<li><code>pex_bm_healthv2_preg.json</code></li>
-</ul>
 </div>
 
 <br>
