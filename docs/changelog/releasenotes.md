@@ -166,11 +166,11 @@
 
 ### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 1.1 Resolved Known Issues By Domain
 
-<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
+<div id="r1.1demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><a href="../../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></span>
   <span class="text-with-link">
   <span class="text">Demographics</span>
-  <a class="anchor-link" href="#demo" title="Copy link">
+  <a class="anchor-link" href="#r1.1demo" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -212,18 +212,17 @@
 <tbody>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>Addition of Missing Substance Use Flags</strong><br>
-      The substance use flags found in the Visit Information data are single summary variables to reflect substance use status (yes/no) based on any positive reports from the (1) Timeline Follow Back (self-report), (2) Healthy History (V02) (self-report), or (3) USDTL urine toxicology results. Nail toxicology results were not used in the creation of these substance use flags. The SU flag variable for alcohol, opioid, cannabis, and nicotine is now included in the latest release.</td>
+      Addition of missing <strong>Substance Use flags</strong> (<i><a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a></i>) for alcohol, opioid, cannabis, and nicotine.</td>
   </tr>  
 </tbody>
 </table>
 </div>
 
-<div id="biospec" class="table-banner" onclick="toggleCollapse(this)">
+<div id="r1.1biospec" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><a href="../../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></span>
   <span class="text-with-link">
   <span class="text">Biospecimens</span>
-  <a class="anchor-link" href="#biospec" title="Copy link">
+  <a class="anchor-link" href="#r1.1biospec" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -261,11 +260,11 @@
 </table>
 </div>
 
-<div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
+<div id="r1.1eeg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><a href="../../../instruments/#eeg" target="_blank"><i class="fa fa-bolt"></i></a></span>
   <span class="text-with-link">
   <span class="text">EEG</span>
-  <a class="anchor-link" href="#eeg" title="Copy link">
+  <a class="anchor-link" href="#r1.1eeg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -283,11 +282,11 @@
 </table>
 </div>
 
-<div id="ngl" class="table-banner" onclick="toggleCollapse(this)">
+<div id="r1.1ngl" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><a href="../../../instruments/#neurocog" target="_blank"><i class="fa fa-brain"></i></a></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
-  <a class="anchor-link" href="#ngl" title="Copy link">
+  <a class="anchor-link" href="#r1.1ngl" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -305,11 +304,11 @@
 </table>
 </div>
 
-<div id="pex" class="table-banner" onclick="toggleCollapse(this)">
+<div id="r1.1pex" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><a href="../../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a></span>
   <span class="text-with-link">
   <span class="text">Pregnancy & Exposure, Including Substance Use</span>
-  <a class="anchor-link" href="#pex" title="Copy link">
+  <a class="anchor-link" href="#r1.1pex" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
