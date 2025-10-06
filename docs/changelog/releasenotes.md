@@ -204,7 +204,7 @@
 ### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 1.1 Resolved Known Issues By Domain
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-check"></i><i class="fa fa-screwdriver-wrench"></i></span>
+  <span class="emoji"><i class="fas fa-id-card"></i></span>
   <span class="text-with-link">
   <span class="text">Demographics</span>
   <a class="anchor-link" href="#demo" title="Copy link">
@@ -257,7 +257,7 @@
 </div>
 
 <div id="biospec" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-check"></i><i class="fa fa-screwdriver-wrench"></i></span>
+  <span class="emoji"><i class="fa fa-vial"></i></span>
   <span class="text-with-link">
   <span class="text">Biospecimens</span>
   <a class="anchor-link" href="#biospec" title="Copy link">
@@ -300,7 +300,7 @@
 </div>
 
 <div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-check"></i><i class="fa fa-screwdriver-wrench"></i></span>
+  <span class="emoji"><i class="fa fa-bolt"></i></span>
   <span class="text-with-link">
   <span class="text">EEG</span>
   <a class="anchor-link" href="#eeg" title="Copy link">
@@ -322,7 +322,7 @@
 </div>
 
 <div id="ngl" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-check"></i><i class="fa fa-screwdriver-wrench"></i></span>
+  <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
   <a class="anchor-link" href="#ngl" title="Copy link">
@@ -344,7 +344,7 @@
 </div>
 
 <div id="pex" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-check"></i><i class="fa fa-screwdriver-wrench"></i></span>
+  <span class="emoji"><i class="fa-solid fa-baby"></i></span>
   <span class="text-with-link">
   <span class="text">Pregnancy & Exposure, Including Substance Use</span>
   <a class="anchor-link" href="#pex" title="Copy link">
