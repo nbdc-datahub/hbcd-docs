@@ -33,7 +33,7 @@ Age fields are not available for the SPM-2. Please refer to corresponding age fi
 --------------------------    
 
 ###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> SPM-2 T-Scores
-T-scores are now provided (see [1.1 Resolved Known Issues](../changelog/versions/R1.1.md#resolved-known-issues)), but **STATUS SCORE** is still missing for all but one subscale. To be provided in the next release.                  
+T-scores are now provided (see [1.1 Resolved Known Issues](../changelog/releasenotes.md#r1.1ngl)), but **STATUS SCORE** is still missing for all but one subscale. To be provided in the next release.                  
 ***Expected Fix: R2.0***   
 --------------------------   
 
