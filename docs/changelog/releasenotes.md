@@ -11,8 +11,8 @@
 <tr>
   <td><strong>Field Conversions</strong></td>
   <td>• Empty fields are replaced with 'n/a'<br>
-      • Sex is set to “Other” for participants with only one active Visit 1 (V01) visit<br>
-      • “Candidate_Age” values are replaced with 'n/a' for Visit 1 (V01)
+      • Sex is set to 'Other' for participants with only one active Visit 1 (V01) visit<br>
+      • 'Candidate_Age' values are replaced with 'n/a' for Visit 1 (V01)
   </td>
 </tr>
 </tbody>
