@@ -92,9 +92,9 @@ The **Vineland-3** is a measure of adaptive behavior and the things that people 
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>NEW text example/draft:<br>
+<p>SUGGESTED REWRITE:<br>
 Each item in the Vineland-3 is scored on a scale of 0 to 3, with higher scores indicating higher levels of adaptive behavior. Summary scores are automatically computed within the Pearson Q-Global system, which generates a standard score, percentile rank, base rate score, confidence intervals (high/low), and standard score minus the mean score. Full scoring details are described in Sparrow et al. 2026.</p>
-<p>ORIG:<br>
+<p>ORIGINAL:<br>
 All data are provided in the same format as the CSV files that are exported when the Vineland has been administered online using Q-Global. The variable names are those provided directly from Q-Global. These variable names should be self-explanatory for users familiar with this third-party instrument.</p>
 </div>
 
