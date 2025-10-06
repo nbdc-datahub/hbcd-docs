@@ -249,7 +249,7 @@
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
       <strong>Toxicology (Cotinine)</strong><br>
-      Erroneous negative values for urinary toxicology results (field <code>bio_c_cot_u</code>), which is not biologically plausible, have been corrected.</td>
+      All negative values for urinary toxicology results field <code>bio_c_cot_u</code> are now set to ‘0’ (as negative values are not biologically plausible).</td>
   </tr> 
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
