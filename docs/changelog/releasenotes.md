@@ -1,4 +1,4 @@
-# Release Notes
+# Release Notes & History
 
 ## General Rules Applied to All Data
 
