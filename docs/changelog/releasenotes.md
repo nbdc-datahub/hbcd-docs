@@ -56,7 +56,7 @@
     <!-- Basic Demographics -->
     <tr>
       <td style="width: 40px; text-align: center;">
-        <a href="../../../instruments/#demo" title="Basic Demographics" target="_blank"><i class="fas fa-id-card"></i></a>
+        <a href="../../instruments/#demo" title="Basic Demographics" target="_blank"><i class="fas fa-id-card"></i></a>
       </td>
       <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
         <strong>Basic Demographics</strong> 
