@@ -231,17 +231,16 @@
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<strong>Nails & Urine (<code>bio_bm_biosample_*</code>)</strong>
+<p style="font-size: 1.0em;"><strong>Nails & Urine (<code>bio_bm_biosample_*</code>)</strong></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
-      <strong>Collection & Analysis Dates</strong><br>
-      Missing collection and analysis dates now included.</td>
+    <td>
+      <strong>Collection & Analysis Dates</strong>: Missing collection and analysis dates now included.</td>
   </tr>  
 </tbody>
 </table>
-<strong>Urine (<code>bio_bm_biosample_urine</code>)</strong>
+<p style="font-size: 1.0em;"><strong>Urine (<code>bio_bm_biosample_urine</code>)</strong></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
