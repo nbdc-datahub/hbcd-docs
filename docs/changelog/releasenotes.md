@@ -244,13 +244,13 @@
 <tbody>
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>Corrected Specific Gravity Variable</strong> (<code>bio_bm_biosample_urine_bio_spg_u</code>)<br>
-      The urine specific gravity variable is corrected (there were several participants with “1” when the variable should be expressed in the thousands) and can now be used for urinary concentration corrections.</td>
+      <strong>Corrected Specific Gravity Variable</strong><br>
+      The urine specific gravity variable (<code>bio_spg_u</code>) has been corrected. Values previously recorded as “1” were adjusted to the appropriate thousandths format. The corrected variable can now be used for urinary concentration corrections.</td>
   </tr>  
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>Toxicology (Cotinine)</strong> (<code>bio_bm_biosample_urine_bio_c_cot_u</code>)<br>
-      Erroneous negative values for urinary toxicology results (which is not biologically plausible) have been corrected.</td>
+      <strong>Toxicology (Cotinine)</strong><br>
+      Erroneous negative values for urinary toxicology results (field <code>bio_c_cot_u</code>), which is not biologically plausible, have been corrected.</td>
   </tr> 
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
