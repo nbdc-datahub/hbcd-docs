@@ -238,6 +238,15 @@
   </tr>  
 </tbody>
 </table>
+<p style="font-size: 1.0em;"><strong>Nails (<code>bio_bm_biosample_nails_results</code>)</strong></p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+  <tr><td>
+  Values for the 'Nail Weight' field (<code>bio_nail_weight</code>), previously incorrectly set to 'integer,' are now set to 'double.'
+ </td>
+  </tr>  
+</tbody>
+</table>
 <p style="font-size: 1.0em;"><strong>Urine (<code>bio_bm_biosample_urine</code>)</strong></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
