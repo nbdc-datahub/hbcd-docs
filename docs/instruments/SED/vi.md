@@ -32,8 +32,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="alert-collapsible-content">
-<p>Acculturation surveys may make some individuals feel excluded or othered. However, this measure aims to capture the process and understand an individual's personal preferences for taking part in their personal family cultural values as well as those of "American" culture.</p>
-<p>This measure does not specifically define what "American" should mean, but allows the participant to decide what it means to them.</p>
+<p>Acculturation surveys may make some individuals feel excluded or othered. However, this measure aims to capture the process and understand an individual's personal preferences for taking part in their personal family cultural values as well as those of "American" culture. This measure does not specifically define what "American" should mean, but allows the participant to decide what it means to them.</p>
 </div>
 
 <div id="issues" class="issues-banner">
