@@ -27,7 +27,6 @@
   </span>
 </div>
 
-
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0;">
   <!-- Participants -->
   <div style="background:#f9f9f9; flex:1; min-width:180px; padding:20px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center;">
@@ -54,6 +53,17 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
   <tbody>
 <tr><td colspan="2"><strong><i>Instrument/Measure (<code>Table Name</code>) Updates:</i></strong></td></tr>
+    <!-- Basic Demographics -->
+    <tr>
+      <td style="width: 40px; text-align: center;">
+        <a href="../../../instruments/#demo" title="Basic Demographics" target="_blank"><i class="fas fa-id-card"></i></a>
+      </td>
+      <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
+        <strong>Basic Demographics</strong> 
+        (<a href="../../../instruments/demo/basicdemo" target="_blank"><code>sed_basic_demographics</code></a>)<br>
+        <span class="update-text">Reviewed scoring for AOU and ACS EthnoRacial fields. The multiracial options for <strong>ACS – Child – Multi Race</strong> (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.
+      </td>
+    </tr>
     <!-- Biospec-->
     <tr style="border-bottom: 1px solid #e0e0e0;">
       <td style="width: 40px; text-align: center;">
@@ -97,17 +107,6 @@
         <strong>V01 Demographics</strong> 
         (<a href="../../../instruments/SED/v01-demo" target="_blank"><code>sed_bm_demo</code></a>)<br>
         <span class="update-text">Added <strong>Birth Parent Sexual Orientation</strong> variable.</span>
-      </td>
-    </tr>
-    <!-- Basic Demographics -->
-    <tr>
-      <td style="width: 40px; text-align: center;">
-        <a href="../../../instruments/#demo" title="Basic Demographics" target="_blank"><i class="fas fa-id-card"></i></a>
-      </td>
-      <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
-        <strong>Basic Demographics</strong> 
-        (<a href="../../../instruments/demo/basicdemo" target="_blank"><code>sed_basic_demographics</code></a>)<br>
-        <span class="update-text">Reviewed scoring for AOU and ACS EthnoRacial fields. The multiracial options for <strong>ACS – Child – Multi Race</strong> (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.
       </td>
     </tr>
   </tbody>
@@ -168,7 +167,7 @@
 ### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 1.1 Resolved Known Issues By Domain
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-id-card"></i></span>
+  <span class="emoji"><a href="../../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></span>
   <span class="text-with-link">
   <span class="text">Demographics</span>
   <a class="anchor-link" href="#demo" title="Copy link">
@@ -221,7 +220,7 @@
 </div>
 
 <div id="biospec" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-vial"></i></span>
+  <span class="emoji"><a href="../../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></span>
   <span class="text-with-link">
   <span class="text">Biospecimens</span>
   <a class="anchor-link" href="#biospec" title="Copy link">
@@ -263,7 +262,7 @@
 </div>
 
 <div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-bolt"></i></span>
+  <span class="emoji"><a href="../../../instruments/#eeg" target="_blank"><i class="fa fa-bolt"></i></a></span>
   <span class="text-with-link">
   <span class="text">EEG</span>
   <a class="anchor-link" href="#eeg" title="Copy link">
@@ -285,7 +284,7 @@
 </div>
 
 <div id="ngl" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-brain"></i></span>
+  <span class="emoji"><a href="../../../instruments/#neurocog" target="_blank"><i class="fa fa-brain"></i></a></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
   <a class="anchor-link" href="#ngl" title="Copy link">
@@ -307,7 +306,7 @@
 </div>
 
 <div id="pex" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-baby"></i></span>
+  <span class="emoji"><a href="../../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a></span>
   <span class="text-with-link">
   <span class="text">Pregnancy & Exposure, Including Substance Use</span>
   <a class="anchor-link" href="#pex" title="Copy link">
