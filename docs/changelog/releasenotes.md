@@ -389,21 +389,17 @@
 </div>
 <div class="table-collapsible-content">
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <th>Filter Category</th>
-  <th>Excluded Data</th>
-</thead>
 <tbody>
 <tr>
-  <td><strong>Participant</strong></td>
-  <td>• Participants with no brain rating or brain rating noted as "atypical"<br>
-      • Postnatal Recruitment participants<br>
-      • Multiple Birth participants
+  <td><strong>Excluded Participants</strong></td>
+  <td> • Participants with no brain rating or brain rating noted as "atypical"<br>
+       • Postnatal Recruitment participants<br>
+       • Multiple Birth participants
   </td>
 </tr>
 <tr>
-    <td><strong>Visit</strong></td>
-    <td>Visits with 'LaunchPad Complete' Status set to 'Complete' after 2024-07-01</td>
+    <td><strong>Excluded Visit Data</strong></td>
+    <td> • Visits with 'LaunchPad Complete' Status set to 'Complete' after 2024-07-01.</td>
 </tr>
 </tbody>
 </table>
