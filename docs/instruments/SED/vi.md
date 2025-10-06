@@ -82,7 +82,10 @@ Participants are not to be asked about immigration or documentation status. The 
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The family culture subscore is the mean of the items asking about family culture, whereas the mainstream subscore is the mean of the items asking about American culture. Non-responses ("Decline to answer" or "Don't know") are not included in the subscores.</p>
+<p>The family culture subscore is the mean of the items asking about family culture, whereas the mainstream subscore is the mean of the items asking about American culture.</p>
+<p>If a participant chooses 777 (Decline to answer), or 999 (Don't know), please do not include those values in the score.</p>
+
+<p style="color: red;">Luci suggested modified text: The Heritage/family culture subscore (<code>sed_cg_via_total_score_odd</code>) is the mean of the items asking about family culture, whereas the Mainstream subscore (<code>sed_cg_via_total_score_even</code>) is the mean of the items asking about American culture. Non-responses ("Decline to answer" or "Don't know") are not included in the subscores.</p>
 </div>
 
 ## References
