@@ -177,7 +177,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<strong>Basic Demographics (<code>sed_basic_demographics</code>)</strong>
+<p style="font-size: 1.0em;"><strong>Basic Demographics (<code>sed_basic_demographics</code>)</strong></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
@@ -207,7 +207,7 @@
   </tr>
 </tbody>
 </table>
-<strong>Visit Information (<code>par_visit_data</code>)</strong>
+<p style="font-size: 1.0em;"><strong>Visit Information (<code>par_visit_data</code>)</strong></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
