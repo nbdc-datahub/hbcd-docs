@@ -23,7 +23,6 @@ Key features of tabulated data include:
 
  - [Table Organization](#table-organization): tables are organized following the BIDS standard so that data from different sources can be linked together by participant ID and visit number
  - [File Types](#file-types): tables are available in both plain text (`.tsv`) and Parquet (`.parquet`) format, with accompanying metadata that explains the contents of each table
- 
 
 ## Table Organization
 
