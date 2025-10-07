@@ -111,7 +111,7 @@ hbcd/
 
 ### XCP-D
 
-XCP-D produces several derivative outputs designed for resting state functional MRI functional connectivity (FC) and time series analyses, available within the `func/` subfolder. These include **denoised BOLD data**, **parcellated time series**, and **derived connectivity matrices**, along with **frame displacement and confound files** to support motion correction and data quality assessment. Together, these provide clean and standardized measures of resting state brain measuresfor both voxelwise and region-based network analyses. The following files are highlighted below (<i>see <a href="../../mri/fmri/#xcpd" target="_blank">full outputs</a></i>):
+XCP-D produces several derivative outputs designed for resting state functional MRI functional connectivity (FC) and time series analyses, available within the `func/` subfolder. These include **denoised BOLD data**, **parcellated time series**, and **derived connectivity matrices**, along with **frame displacement and confound files** to support motion correction and data quality assessment. Together, these provide clean and standardized measures of resting state brain measures for both voxelwise and region-based network analyses. The following files are highlighted below (<i>see <a href="../../mri/fmri/#xcpd" target="_blank">full outputs</a></i>):
 
 <pre style="font-size: 11px;" class="folder-tree">
 hbcd/
@@ -141,10 +141,8 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content" style="margin-bottom: 3px;">
-  <p>CIFTI dense time series containing fully preprocessed, temporally filtered, and nuisance-regressed BOLD data. Aligned to the standard <code>fsLR</code> surface template, these files are suitable for voxelwise FC analyses, seed-based correlation maps, or other data-driven connectivity methods.
-  <br>
-  <i>Derivative:</i> <code>*_den-91k_desc-denoised{Smoothed}_bold.dtseries.nii</code>
-  </p>
+<p><code>*_den-91k_desc-denoised{Smoothed}_bold.dtseries.nii</code></p>
+<p>CIFTI dense time series containing fully preprocessed, temporally filtered, and nuisance-regressed BOLD data. These files combine the left and right surfaces, aligned to the standard fsLR surface template, with the subcortical volume annotated by subcortical structure. Each “greyordinate (vertex/voxel)” within these files contains a pre-processed resting-state functional MRI time-series for a total of approximately 96 thousand greyordinates. Denoised timeseries files are suitable for computing voxelwise FC analyses, seed-based correlation maps, other data-driven connectivity methods, or for timeseries analysis via sliding windows or markov chains.</p>
 </div>
 
 <div id="f2" class="table-compact-banner" onclick="toggleCollapse(this)">
@@ -158,10 +156,8 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content" style="margin-bottom: 3px;">
-  <p>Tabulated mean BOLD time series for each region in a the following atlases: <a href="https://github.com/PennLINC/AtlasPack">4S-{X}-Region Parcels</a>, Glasser, Gordon, MIDB, MyersLabonte, HCP, and Tian. Also available as CIFTI files (<code>*_stat-mean_timeseries.ptseries.nii</code>), where each column corresponds to a brain region, and each row to a timepoint. Ideal for computing ROI-to-ROI connectivity matrices or performing graph and network analyses.  
-  <br>
-  <i>Derivative:</i> <code>*_seg-&lt;PARC&gt;_stat-mean_timeseries.tsv</code>
-  </p>
+<p><code>*_seg-&lt;PARC&gt;_stat-mean_timeseries.tsv</code></p>
+<p>Tabulated mean BOLD time series – organized as tab seperated values – for each region in the following atlases: <a href="https://github.com/PennLINC/AtlasPack">4S</a> (nodes 156-1056), Glasser, Gordon, MIDB, MyersLabonte, HCP, and Tian. Also available as CIFTI files (<code>*_stat-mean_timeseries.ptseries.nii</code>), where each column corresponds to a brain region, and each row to a timepoint. Ideal for computing ROI-to-ROI connectivity matrices or for timeseries analysis via sliding windows or markov chains.</p>
 </div>
 
 <div id="f3" class="table-compact-banner" onclick="toggleCollapse(this)">
@@ -175,10 +171,8 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content" style="margin-bottom: 3px;">
-  <p>Tab-delimited matrices of pairwise Pearson correlations between atlas regions, computed from the parcellated time series. Useful for quick inspection, validation, or as input for group-level analyses when region-level connectivity is sufficient.
-  <br>
-  <i>Derivative:</i> <code>*_seg-&lt;PARC&gt;_stat-pearsoncorrelation_relmat.tsv</code>
-  </p>
+<p><code>*_seg-&lt;PARC&gt;_stat-pearsoncorrelation_relmat.tsv</code></p>
+<p>Tab-delimited matrices of pairwise Pearson correlations between atlas regions, computed from the parcellated time series. Useful for quick inspection, validation, as input for group-level analyses, or performing network and graph analyses.</p>
 </div>
 
 <div id="f4" class="table-compact-banner" onclick="toggleCollapse(this)">
@@ -192,10 +186,8 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content" style="margin-bottom: 3px;">
-  <p>Include framewise displacement values and nuisance regressor design files. The design files (<code>*_design.tsv</code>) contain one column per regressor (e.g., motion parameters and one-hot indicators for high-motion outlier volumes). Recommended for identifying and filtering low-quality data before group analyses.
-  <br>
-  <i>Derivative:</i> <code>*_&lt;design|motion|outliers&gt;.tsv</code>
-  </p>
+<p><code>*_&lt;design|motion|outliers&gt;.tsv</code></p>
+<p>Include framewise displacement values and nuisance regressor design files. The design files (<code>*_design.tsv</code>) contain one column per regressor (e.g., motion parameters and one-hot indicators for high-motion outlier volumes). Recommended for identifying and filtering low-quality data before group analyses. See <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outputs-include-quality-control-framewise-displacement-and-confounds-files">this section</a> of the XCP-D documentation for details.</p>
 </div>
 
 
