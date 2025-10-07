@@ -157,7 +157,7 @@ hbcd/
 </div>
 <div class="table-collapsible-content" style="margin-bottom: 3px;">
 <p><code>*_seg-&lt;PARC&gt;_stat-mean_timeseries.tsv</code></p>
-<p>Tabulated mean BOLD time series – organized as tab seperated values – for each region in the following atlases: <a href="https://github.com/PennLINC/AtlasPack">4S</a> (nodes 156-1056), Glasser, Gordon, MIDB, MyersLabonte, HCP, and Tian. Also available as CIFTI files (<code>*_stat-mean_timeseries.ptseries.nii</code>), where each column corresponds to a brain region, and each row to a timepoint. Ideal for computing ROI-to-ROI connectivity matrices or for timeseries analysis via sliding windows or markov chains.</p>
+<p>Tabulated mean BOLD time series – organized as tab separated values – for each region in the following atlases: <a href="https://github.com/PennLINC/AtlasPack">4S</a> (nodes 156-1056), Glasser, Gordon, MIDB, MyersLabonte, HCP, and Tian (see <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#parcellations-and-atlases">Parcellations & Atlases</a> in the XCP-D documentation for details). Also available as CIFTI files (<code>*_stat-mean_timeseries.ptseries.nii</code>), where each column corresponds to a brain region, and each row to a timepoint. Ideal for computing ROI-to-ROI connectivity matrices or for timeseries analysis via sliding windows or markov chains.</p>
 </div>
 
 <div id="f3" class="table-compact-banner" onclick="toggleCollapse(this)">
