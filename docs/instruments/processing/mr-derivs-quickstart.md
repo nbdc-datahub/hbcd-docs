@@ -1,8 +1,6 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
-
 # MRI Derivatives Quick Start Guide
 
-Most MRI-derived measures commonly used for analysis are provided by the **XCP-D** pipeline. XCP-D builds upon **Infant-fMRIPrep** outputs to generate fully preprocessed, denoised, and quality-assessed data suitable for both **functional** and **structural** analyses.
+Most MRI-derived measures commonly used for analysis are provided by the **BIBSNet** and **XCP-D** pipelines. XCP-D builds upon **Infant-fMRIPrep** outputs to generate fully preprocessed, denoised, and quality-assessed data suitable for both **functional** and **structural** analyses.
 
 For more details on specific outputs and processing configurations, see:
 
@@ -15,9 +13,13 @@ The sections below highlight the XCP-D output files most relevant for functional
 
 ## Structural Derivatives 
 
-### XCP-D `anat/`
+### BIBSNet
 
-XCP-D provides several structural morphology measures derived from the fMRIPrep anatomical outputs. These surface-based derivatives are commonly used to assess cortical features such as **thickness**, **curvature**, and **sulcal depth**, often summarized within atlas-defined regions or compared across subjects to study cortical development and brain morphology. The following files are highlighted below (<i>see <a href="../../mri/fmri/#xcpd" target="_blank">full outputs</a></i>):
+BIBSNet ([see full list of HBCD derivative outputs](../mri/smri.md#bibsnet)) provides brain volumes computed for segmented ROIs in native T1w/T2w space in `*_space-<T1w|T2w>_desc-aseg_volumes.tsv`, with each tab-delimited column representing volumes for each BIBSnet structure. BIBSnet is an automated segmentation pipeline that creates Freesurfer segmentation labels, so each BIBSnet structure reflects a Freesurfer label – see the [BIBSNet documentation](https://bibsnet.readthedocs.io/en/latest/) for more details.
+
+### XCP-D 
+
+XCP-D provides several structural morphology measures derived from the fMRIPrep anatomical outputs within the `anat/` folder. These surface-based derivatives are commonly used to assess cortical features such as **thickness**, **curvature**, and **sulcal depth**, often summarized within atlas-defined regions or compared across subjects to study cortical development and brain morphology. The following files are highlighted below (<i>see <a href="../../mri/fmri/#xcpd" target="_blank">full outputs</a></i>):
 
 <pre style="font-size: 11px;" class="folder-tree">
 hbcd/
@@ -245,13 +247,5 @@ hbcd/
   </p>
 </div>
 
-
-## Other Useful Derivatives
-
-**Brain Volume and Segmentation ROIs (BIBSNet)**<br>
-Brain volumes computed for segmented ROIs in native T1w/T2w space:
-
-> <i class="fa-solid fa-folder-open"></i> [BIBSNet](../mri/smri.md#bibsnet) Derivatives: `*_space-<T1w|T2w>_desc-aseg_volumes.tsv`<br>
-<i class="fa-solid fa-table"></i> [Tabulated Data](../index.md#mri): `img_bibsnet_space-<T1w|T2w>_desc-aseg_volumes`
 
 <br>
