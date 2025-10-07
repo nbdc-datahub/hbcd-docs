@@ -61,7 +61,7 @@
       <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
         <strong>Basic Demographics</strong> 
         (<a href="../../instruments/demo/basicdemo" target="_blank"><code>sed_basic_demographics</code></a>)<br>
-        <span class="update-text">Reviewed scoring for AOU and ACS EthnoRacial fields. The multiracial options for <strong>ACS – Child – Multi Race</strong> (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.
+        <span class="update-text">Reviewed scoring for AOU and ACS EthnoRacial fields. The multiracial options for <strong>ACS – Child – Multi Race</strong> (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.</span>
       </td>
     </tr>
     <!-- Biospec-->
