@@ -13,7 +13,9 @@ For more details on specific outputs and processing configurations, see:
 
 The sections below highlight the XCP-D output files most relevant for functional connectivity and structural morphology analyses.
 
-## Structural Derivatives (XCP-D)
+## Structural Derivatives 
+
+### XCP-D `anat/`
 
 XCP-D provides several structural morphology measures derived from the fMRIPrep anatomical outputs. These surface-based derivatives are commonly used to assess cortical features such as **thickness**, **curvature**, and **sulcal depth**, often summarized within atlas-defined regions or compared across subjects to study cortical development and brain morphology. The following files are highlighted below (<i>see <a href="../../mri/fmri/#xcpd" target="_blank">full outputs</a></i>):
 
@@ -24,38 +26,59 @@ hbcd/
       |_ sub-<span class="label">{ID}</span>/
          |_ ses-<span class="label">{V0X}</span>/
             |_ anat/
-            <span class="hashtag">#1</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_thickness.dscalar.nii
-            <span class="hashtag">#2</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_curv.dscalar.nii
-            <span class="hashtag">#3</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_sulc.dscalar.nii
-            <span class="hashtag">#4</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>_morph.tsv
-            <span class="hashtag">#5</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;pial|white&gt;</span>.surf.gii
+            <span class="hashtag">#1</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>.dscalar.nii
+            <span class="hashtag">#2</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_desc-<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>_morph.tsv
+            <span class="hashtag">#3</span> |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;midthickness|pial|white&gt;</span>.surf.gii
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">&lt;APARC&gt; (anat/ parcellations)</span>: 4S-&lt;156|256|356|...|1056&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte
+<span class="placeholder">&lt;PARC&gt; (anat/ parcellations)</span>: 4S-&lt;156|256|356|...|1056&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte
 </pre>
 <p></p>
 
 <div id="s1" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#1 Cortical Thickness</strong></span>
-  <a class="anchor-link" href="#s1" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
+    <span class="text">#1 Curvature, Sulcal Depth, & Cortical Thickness</span>
+    <a class="anchor-link" href="#s1" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content" style="margin-bottom: 3px;">
-  <p>CIFTI scalar files containing surface-based maps of cortical thickness (in millimeters) for each hemisphere. Generated from reconstructed cortical surfaces and aligned to the standard <code>fsLR</code> template. Commonly averaged within ROIs or compared across subjects to assess cortical development, aging, or group differences.
-  <br>
-  <i>Derivative:</i> <code>*_den-91k_thickness.dscalar.nii</code>
+  <p>
+    These three <strong>surface-based structural metrics</strong> are provided as CIFTI scalar files derived from reconstructed left and right cortical surfaces and aligned to the standard fsLR template (~64k vertices per hemisphere). 
+    Each vertex encodes <i>curvature</i>, <i>sulcal depth</i>, and <i>cortical thickness</i>, respectively. 
+    Average ROI values for standard parcellations are available in the parcellated structural measures.
   </p>
+  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+    <tbody>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">
+          <strong>Curvature</strong> (<code>*_space-fsLR_den-91k_curv.dscalar.nii</code>)<br>
+          Represents local cortical folding. Positive values correspond to sulci (inward folds) and negative values to gyri (outward folds). Useful for characterizing cortical morphology or as a covariate in morphometric analyses.
+        </td>
+      </tr> 
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">
+          <strong>Sulcal Depth</strong> (<code>*_space-fsLR_den-91k_sulc.dscalar.nii</code>)<br>
+          Measures the relative depth of sulci compared to adjacent gyri. Positive values indicate deeper sulci; negative values indicate more prominent gyri. Often used with curvature to describe cortical shape and folding complexity.
+        </td>
+      </tr> 
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">
+          <strong>Cortical Thickness</strong> (<code>*_space-fsLR_den-91k_thickness.dscalar.nii</code>)<br>
+          Reflects the distance (mm) between corresponding vertices on the pial and white matter surfaces. Commonly averaged within ROIs or compared across subjects to study cortical development, aging, or group differences.          
+        </td>
+      </tr>  
+    </tbody>
+  </table>
 </div>
 
 <div id="s2" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#2 Curvature</strong></span>
+  <span class="text">#2 Parcellated Structural Measures</span>
   <a class="anchor-link" href="#s2" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -63,16 +86,13 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content" style="margin-bottom: 3px;">
-  <p>Provides mean surface curvature values representing local cortical folding patterns of the cortex. Positive values correspond to sulci (inward folds) and negative values to gyri (outward folds). Useful for characterizing cortical folding or as a covariate in morphometric analyses.
-  <br>
-  <i>Derivative:</i> <code>*_den-91k_curv.dscalar.nii</code>
-  </p>
+  <p>The <code>*_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph.tsv</code> files are tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical or functional regions defined by an atlas. Ideal for region-based statistical analysis and group comparisons.</p>
 </div>
 
 <div id="s3" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#3 Sulcal Depth</strong></span>
+  <span class="text"><strong>#3 Midthickness, Pial, and White Matter Surfaces</strong></span>
   <a class="anchor-link" href="#s3" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -80,44 +100,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content" style="margin-bottom: 3px;">
-  <p>Measures the relative depth of cortical sulci compared to adjacent gyri. Often used alongside curvature to describe cortical shape and folding complexity.
-  <br>
-  <i>Derivative:</i> <code>*_den-91k_sulc.dscalar.nii</code>
-  </p>
-</div>
-
-<div id="s4" class="table-compact-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
-  <span class="text-with-link">
-  <span class="text"><strong>#4 Parcellated Structural Measures</strong></span>
-  <a class="anchor-link" href="#s4" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content" style="margin-bottom: 3px;">
-  <p>Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical or functional regions defined by an atlas. Ideal for region-based statistical analysis and group comparisons.<br>
-  <i>Derivative:</i> <code>*_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph.tsv</code><br>
-  <i>Also available as <a href="../../#mri" target="_blank">tabulated data</a></i>: <code>img_xcpd_space-fsLR_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph</code>
-  </p>
-</div>
-
-<div id="s5" class="table-compact-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
-  <span class="text-with-link">
-  <span class="text"><strong>#5 Pial and White Matter Surfaces</strong></span>
-  <a class="anchor-link" href="#s5" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content" style="margin-bottom: 3px;">
-  <p>3D surface models representing the gray–white matter boundary and the pial surface for each hemisphere. Commonly used for visualizing cortical anatomy, computing surface-based metrics, or mapping functional data to anatomical space.
-  <br>
-  <i>Derivative:</i> <code>*_hemi-&lt;L|R&gt;_space-fsLR_den-32k_&lt;pial|white&gt;.surf.gii</code>
-  </p>
+  <p>The <code>*_hemi-&lt;L|R&gt;_space-fsLR_den-32k_&lt;midthickness|pial|white&gt;.surf.gii</code> files are 3D surface models representing the midthickness, gray–white matter boundary, and the pial surface for each hemisphere. Commonly used for visualizing cortical anatomy, computing surface-based metrics, or mapping functional data to anatomical space.</p>
 </div>
 
 ## Functional Connectivity (XCP-D)
