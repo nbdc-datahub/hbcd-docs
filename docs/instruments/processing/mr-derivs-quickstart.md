@@ -88,13 +88,14 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content" style="margin-bottom: 3px;">
-  <p>The <code>*_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph.tsv</code> files are tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical or functional regions defined by an atlas. Ideal for region-based statistical analysis and group comparisons.</p>
+<p><code>sub-{ID}_ses-{V0X}_run-{X}_space-fsLR_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph.tsv</code></p>
+<p>Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical or functional regions defined by an atlas. Ideal for region-based statistical analysis and group comparisons.</p>
 </div>
 
 <div id="s3" class="table-compact-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-folder-open"></i></span>
   <span class="text-with-link">
-  <span class="text"><strong>#3 Midthickness, Pial, and White Matter Surfaces</strong></span>
+  <span class="text">#3 Midthickness, Pial, and White Matter Surfaces</span>
   <a class="anchor-link" href="#s3" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -102,7 +103,8 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content" style="margin-bottom: 3px;">
-  <p>The <code>*_hemi-&lt;L|R&gt;_space-fsLR_den-32k_&lt;midthickness|pial|white&gt;.surf.gii</code> files are 3D surface models representing the midthickness, gray–white matter boundary, and the pial surface for each hemisphere. Commonly used for visualizing cortical anatomy, computing surface-based metrics, or mapping functional data to anatomical space.</p>
+<p><code>sub-{ID}_ses-{V0X}_run-{X}_hemi-&lt;L|R&gt;_space-fsLR_den-32k_&lt;midthickness|pial|white&gt;.surf.gii</code><p>
+<p>3D surface models representing the midthickness, gray–white matter boundary, and the pial surface for each hemisphere. Commonly used for visualizing cortical anatomy, computing surface-based metrics, or mapping functional data to anatomical space.</p>
 </div>
 
 ## Functional Connectivity (XCP-D)
