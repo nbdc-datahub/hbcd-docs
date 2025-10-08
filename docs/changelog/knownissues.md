@@ -235,6 +235,22 @@ If you have questions or would like to report an issue, please submit a ticket t
 <p>TLFB age variable fields (<code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>) were removed for R1.1 due to incorrect values and will be added in the next release with corrected values.</p>
 </div>
     
+## <a href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
+
+<div id="discr" class="issues-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text-with-link">
+  <span class="text">PhenX+ Discrimination (<code>sed_bm_phx__discr.006</code>): Blank Cells</span>
+  <span class="badge">Fix: 2.0</span>
+  <a class="anchor-link" href="#discr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>For the PhenX+ Discrimination survey, one of the multi-select questions (column <code>sed_bm_phx__discr.006</code>: <i>"What do you think is the main reason for these experiences? If more than one main reason, check all that apply."</i>) is blank for some participants.</p>
+</div>
 
 ## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-magnet"></i></a> Imaging Data
 
@@ -252,20 +268,6 @@ If you have questions or would like to report an issue, please submit a ticket t
 <div class="table-collapsible-content">
 <p>For HBCD BIDS data with multiple runs, the run number displayed in the `run-{X}` field is not guaranteed to reflect the chronological acquisition order. This applies to raw BIDS, derivatives, and derivative files converted to HBCD tabulated data (<a href="../../datacuration/overview" target="_blank">see details</a>). However, the data remain internally consistent — for example, the run IDs in the raw BIDS data match the corresponding runs in the processed BIDS data.</p>
 </div>
-
-    
-<br>
-<br>
-
-# UNDER CONSTRUCTION
-
-
-
-## Social & Environmental Determinants
-###### <span class="emoji" style="color: #f97316;"><i class="fas fa-bug"></i></span> Blank Cells in PhenX Discrimination Survey
-For the PhenX+ Discrimination survey, one of the multi-select questions (column `sed_bm_phx__discr.006`: *"What do you think is the main reason for these experiences? If more than one main reason, check all that apply."*) is blank for some participants.       
-***Expected Fix: R2.0***
---------------------------
 
 
 
