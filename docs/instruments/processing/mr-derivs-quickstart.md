@@ -25,7 +25,7 @@ Below is a summary of key MRI derivatives used for analysis. Most are generated 
 
 ### XCP-D 
 
-XCP-D provides several structural morphology measures derived from the fMRIPrep anatomical outputs within the `anat/` folder. These surface-based derivatives are commonly used to assess cortical features such as **thickness**, **curvature**, and **sulcal depth**, often summarized within atlas-defined regions or compared across subjects to study cortical development and brain morphology. The following files are highlighted below (<i>see <a href="../../mri/fmri/#xcpd" target="_blank">full outputs</a></i>):
+XCP-D surface-based derivatives are commonly used to assess cortical features such as **thickness**, **curvature**, and **sulcal depth**, often summarized within atlas-defined regions or compared across subjects to study cortical development and brain morphology. The following files are highlighted below (<i>see <a href="../../mri/fmri/#xcpd" target="_blank">full outputs</a></i>):
 
 <pre style="font-size: 11px;" class="folder-tree">
 hbcd/
