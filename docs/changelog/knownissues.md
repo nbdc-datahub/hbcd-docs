@@ -108,13 +108,13 @@ Participants who <b>did withdraw</b> (value = “yes”) have valid withdrawal d
   <span class="arrow">▸</span>
 </div>
 <div class="issues-collapsible-content">
-<p>The following Biospecimen Urine substance use flag fields should be excluded from the Visit Information: <code>par_visit_data_su_flag_bio_barb</code>, <code>par_visit_data_su_flag_bio_benzo</code>, and <code>par_visit_data_su_flag_bio_mscrlx</code>. Please do not use these variables.</p>
+<p>The following Biospecimen Urine substance use flag fields should be excluded from the Visit Information: <code>par_visit_data_su_flag_bio_&lt;benzo|barb|mscrlx&gt;</code>. Please do not use these variables.</p>
 </div>
 
 <div id="visit-su2" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text-with-link">
-  <span class="text">Biospec Substance Use Flags (<code>su_flag_bio_*</code>): Erroneous Inclusion of V02</span>
+  <span class="text">Biospec Substance Use Flags (<code>su_flag_bio_*</code>): Erroneous Inclusion for V02</span>
   <span class="badge">Fix: 2.0</span>
   <a class="anchor-link" href="#visit-su2" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -123,7 +123,7 @@ Participants who <b>did withdraw</b> (value = “yes”) have valid withdrawal d
   <span class="arrow">▸</span>
 </div>
 <div class="issues-collapsible-content">
-<p>Visit 2 flags for substance use based on USDTL Urine toxicology results (<a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a>) will be removed: Urine is not collected at Visit 2. These fields can safely be ignored.</p>
+<p>Substance use based on USDTL Urine toxicology results (<a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a>) are erroneously included for Visit 2 data: urine is not collected at Visit 2, so these will be removed and can safely be ignored.</p>
 </div>
 
 <div id="visit-su3" class="issues-banner" onclick="toggleCollapse(this)">
