@@ -234,25 +234,30 @@ If you have questions or would like to report an issue, please submit a ticket t
 <div class="table-collapsible-content">
 <p>TLFB age variable fields (<code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>) were removed for R1.1 due to incorrect values and will be added in the next release with corrected values.</p>
 </div>
+    
 
-       
+## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-magnet"></i></a> Imaging Data
 
+<div id="mr-runid" class="issues-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text-with-link">
+  <span class="text">MR Data: Incorrect Run ID Order</span>
+  <span class="badge">Fix: TBD</span>
+  <a class="anchor-link" href="#mr-runid" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>For HBCD BIDS data with multiple runs, the run number displayed in the `run-{X}` field is not guaranteed to reflect the chronological acquisition order. This applies to raw BIDS, derivatives, and derivative files converted to HBCD tabulated data (<a href="../../datacuration/overview" target="_blank">see details</a>). However, the data remain internally consistent — for example, the run IDs in the raw BIDS data match the corresponding runs in the processed BIDS data.</p>
+</div>
+
+    
 <br>
 <br>
 
 # UNDER CONSTRUCTION
-
-
-
-
-
-
-
-## Imaging Data
-###### <span class="emoji" style="color: #be7215ff;"><i class="fas fa-bug"></i></span> Run ID Order May Be Incorrect
-For HBCD BIDS data with multiple runs, the run number displayed in the `run-<label>` field is not guaranteed to reflect the chronological acquisition order. This applies to both raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data, as well as derived <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data. Despite this, the data remain internally consistent — for example, the run IDs in the raw BIDS data match the corresponding runs in the processed BIDS data.               
-***Expected Fix: R2.0***
---------------------------  
 
 
 
