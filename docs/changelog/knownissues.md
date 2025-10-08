@@ -93,20 +93,36 @@ If you have questions or would like to report an issue, please submit a ticket t
 <p>Participants who did not withdraw from the study (and so have a value of "no" for <code>par_visit_data_participant_withdrawal</code>) have a sentinel value of <code>12/26/1999</code>, <i>meaning no withdrawal</i>, for participant withdrawal date (<code>par_visit_data_participant_withdrawal_date</code>). This is caused by participants missing a visit and will be replaced with blank values to fix, but in the meantime can be safely ignored. Participants who did withdraw (and so have a value of “yes” for <code>par_visit_data_participant_withdrawal</code>) have a valid date and are unimpacted.</p>
 </div>
 
-<div id="visit2" class="issues-banner" onclick="toggleCollapse(this)">
+<div id="visit-su1" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text-with-link">
-  <span class="text">TLFB Substance Use Flags (<code>su_flag_bio_*</code>): Erroneous Inclusion of <code>&lt;benzo|barb|mscrlx&gt;</code></span>
+  <span class="text">Biospec Substance Use Flags (<code>su_flag_bio_*</code>): Erroneous Inclusion of <code>&lt;benzo|barb|mscrlx&gt;</code></span>
   <span class="badge">Fix: 2.0</span>
-  <a class="anchor-link" href="#visit2" title="Copy link">
+  <a class="anchor-link" href="#visit-su1" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The following TLFB substance use flag fields should be excluded from the Visit Information: <code>par_visit_data_su_flag_bio_barb</code>, <code>par_visit_data_su_flag_bio_benzo</code>, and <code>par_visit_data_su_flag_bio_mscrlx</code>. Please do not use these variables.</p>
+<p>The following Biospecimen Urine substance use flag fields should be excluded from the Visit Information: <code>par_visit_data_su_flag_bio_barb</code>, <code>par_visit_data_su_flag_bio_benzo</code>, and <code>par_visit_data_su_flag_bio_mscrlx</code>. Please do not use these variables.</p>
 </div>
+
+<div id="visit-su2" class="issues-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text-with-link">
+  <span class="text">Biospec Substance Use Flags (<code>su_flag_bio_*</code>): Erroneous Inclusion of V02</span>
+  <span class="badge">Fix: 2.0</span>
+  <a class="anchor-link" href="#visit-su2" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Visit 2 flags for substance use based on USDTL Urine toxicology results (<a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a>) will be removed: Urine is not collected at Visit 2. These fields can safely be ignored.</p>
+</div>
+
 
 ## <a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
 
