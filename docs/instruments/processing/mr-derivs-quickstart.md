@@ -21,7 +21,7 @@ Below is a summary of key MRI derivatives used for analysis. Most are generated 
 
 ### BIBSNet
 
-BIBSNet ([see full list of HBCD derivative outputs](../mri/smri.md#bibsnet)) provides brain volumes computed for segmented ROIs in native T1w/T2w space in `*_space-<T1w|T2w>_desc-aseg_volumes.tsv`, with each tab-delimited column representing volumes for each BIBSnet structure. BIBSnet is an automated segmentation pipeline that creates Freesurfer segmentation labels, so each BIBSnet structure reflects a Freesurfer label – see the [BIBSNet documentation](https://bibsnet.readthedocs.io/en/latest/) for more details.
+[BIBSNet](https://bibsnet.readthedocs.io/en/latest/) is an automated brain segmentation pipeline that generates Freesurfer-compatible labels. Brain volume estimates for segmented regions of interest (ROIs) (in native T1w/T2w space) is available in `*_space-<T1w|T2w>_desc-aseg_volumes.tsv`. For a complete list of HBCD derivative outputs, see the ([sMRI derivatives summary](../mri/smri.md#bibsnet)).
 
 ### XCP-D 
 
