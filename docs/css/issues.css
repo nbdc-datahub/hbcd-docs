@@ -26,14 +26,13 @@
   flex: 1;                  /* text takes remaining space */
 }
 .issues-banner .badge {
-  background-color: #fff4ed;   /* soft tint of orange */
-  color: #b45309;              /* dark amber text */
-  border: 1px solid #f97316;   /* thin border to match icon color */
+  background-color: #fff4ed; 
+  color: #b45309; 
+  border: 1px solid #f97316; 
   border-radius: 9999px;       /* pill shape */
   font-size: 1em;
   font-weight: 600;
   padding: 2px 8px;
-  margin-left: 8px;
   white-space: nowrap;
 }
 
