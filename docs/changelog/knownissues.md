@@ -145,7 +145,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <div id="cot-u" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text-with-link">
-  <span class="text">Urine (<code>bio_bm_biosample_urine_bio_c_cot_u</code>): Missing Values Incorrectly Set to 0</span>
+  <span class="text">Urine Toxicology - Cotinine (<code>bio_c_cot_u</code>): Missing Values Incorrectly Set to 0</span>
   <span class="badge">Fix: 2.0</span>
   <a class="anchor-link" href="#cot-u" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -154,7 +154,7 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="issues-collapsible-content">
-<p>Missing values in the Urine field <code>bio_bm_biosample_urine_bio_c_nicotine_u</code> were incorrectly set to '0' in the process of employing a prior fix to set all negative values to '0' (N=18). These will be set back to missing. Users can check whether values were missing by checking <code>bio_bm_biosample_urine_bio_c_nicotine_u</code> for values of '3' (--invalid).</p>
+<p>In the Urine toxicology results (<code>bio_bm_biosample_urine</code>), all negative values for urinary cotinine (<code>bio_c_cot_u</code>) were previously set to <code>0</code>, as negative values are not biologically plausible. During this correction, <b>missing values</b> were inadvertently also set to <code>0</code> (N = 18). These values will be restored to missing in a future release. In the meantime, users can identify affected records by checking <code>bio_c_nicotine_u</code> for values of <code>3</code> (<code>--invalid</code>).</p>
 </div>
 
 ## <a href="../../instruments/#neurocog" target="_blank"><i class="fa fa-brain"></i></a> Neurocognition & Language
