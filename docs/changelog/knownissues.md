@@ -135,7 +135,7 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The TLFB substance use flags (<a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a>) for participants who do not have a Visit 2 have an incorrect value of 'no' instead of 'null.' These will be reverted to the correct values.</p>
+<p>The TLFB substance use flags (<a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a>) for participants who do not have a Visit 2 have an incorrect value of 'no' instead of 'null.' These values will be corrected to 'null.'</p>
 </div>
 
 
