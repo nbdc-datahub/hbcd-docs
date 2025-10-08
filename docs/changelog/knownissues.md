@@ -20,12 +20,11 @@ If you have questions or would like to report an issue, please submit a ticket t
 </div>
 <div class="issues-collapsible-content">
 <p>Instruction text in the form's metadata is extracted programmatically from the most recent instruction field in the REDCap Data Dictionary for each form, based on field order. <b>As a result:</b></p>
-<ul>
-    <li>If an instruction spans multiple fields, only the <b>last portion</b> will be captured.</li>
-    <li>Some fields may display text intended for a <b>previous section</b>.</li>
+<ul style="margin-top: 0.2em; margin-bottom: 0.2em;">
+  <li>If an instruction spans multiple fields, only the <b>last portion</b> will be captured.</li>
+  <li>Some fields may display text intended for a <b>previous section</b>.</li>
 </ul>
-<p>Manual curation of instruction metadata is planned for future releases. For the most accurate information, always refer to the original form.</p>
-</p>
+<p style="margin-top: 0; padding-top: 0;">Manual curation of instruction metadata is planned for future releases. For the most accurate information, always refer to the original form.</p>
 </div>
 
 ## <a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics
