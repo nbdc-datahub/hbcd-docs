@@ -96,7 +96,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <div id="visit2" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text-with-link">
-  <span class="text">Erroneous TLFB Substance Use Flags (<code>su_flag_bio_&lt;benzo|barb|mscrlx&gt;</code>)</span>
+  <span class="text">TLFB Substance Use Flags (<code>su_flag_bio_*</code>): Erroneous Inclusion of <code>&lt;benzo|barb|mscrlx&gt;</code></span>
   <span class="badge">Fix: 2.0</span>
   <a class="anchor-link" href="#visit2" title="Copy link">
   <i class="fa-solid fa-link"></i>
