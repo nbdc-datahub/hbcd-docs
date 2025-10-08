@@ -91,10 +91,7 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="issues-collapsible-content">
-<p>Participants who did <b>not</b> withdraw from the study (value = “no” for <code>par_visit_data_participant_withdrawal</code>) have a sentinel value of <code>12/26/1999</code> for withdrawal date (<code>par_visit_data_participant_withdrawal_date</code>).<br>
-This indicates <b>no withdrawal</b> and can be safely ignored, but will be removed in the future for clarity.<br>
-Participants who <b>did withdraw</b> (value = “yes”) have valid withdrawal dates and are unaffected.
-</p>
+<p>Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) are assigned a sentinel withdrawal date (<code>participant_withdrawal_date</code>) of <code>12/26/1999</code>. This date simply indicates <b>no withdrawal</b> and can be ignored. It will be removed in a future release for clarity. Participants who <b>did</b> withdraw (“yes”) have valid withdrawal dates and are unaffected.</p>
 </div>
 
 <div id="visit-su1" class="issues-banner" onclick="toggleCollapse(this)">
