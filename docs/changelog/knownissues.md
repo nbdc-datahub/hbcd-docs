@@ -203,10 +203,7 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="issues-collapsible-content">
-<p>In cases where ICD codes are provided, corresponding names/labels are sometimes missing. Until resolved, users can use external packages to merge ICD labels if needed:<br>
-<a href="https://www.stata.com/features/overview/icd/">Stata</a><br>
-<a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a><br>
-<a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>.</p>
+<p>In cases where ICD codes are provided, corresponding names/labels are sometimes missing. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>.</p>
 </div>
 
 <div id="apa" class="issues-banner" onclick="toggleCollapse(this)">
@@ -221,7 +218,7 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="issues-collapsible-content">
-<p>T-scores and total scores are missing in the APA 1/2 for only the Anger subscale. -ADD FIELD NAME TO THIS TEXT AS WELL</p>
+<p>T-scores and total scores are missing in the APA 1/2 for only the Anger subscale.</p>
 </div>
 
 <div id="tlfb" class="issues-banner" onclick="toggleCollapse(this)">
