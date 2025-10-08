@@ -209,7 +209,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <div id="apa" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text-with-link">
-  <span class="text">APA 1/2 (<code>pex_bm_apa</code>): Anger Subscores Missing</span>
+  <span class="text">APA 1/2 (<code>pex_bm_apa_anger_*</code>): Anger Subscores Missing</span>
   <span class="badge">Fix: 2.0</span>
   <a class="anchor-link" href="#apa" title="Copy link">
   <i class="fa-solid fa-link"></i>
