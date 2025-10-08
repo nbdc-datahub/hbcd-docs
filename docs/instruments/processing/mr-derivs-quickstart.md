@@ -10,10 +10,10 @@ Below is a summary of key MRI derivatives used for analysis. Most are generated 
 </div>
 <div class="notification-static-content">
 <p> 
-• <a href="../../../datacuration/file-based-data/#derivatives" target="_blank"><i style="font-size: 0.9em;" class="fa-solid fa-up-right-from-square"></i> HBCD Derivatives</a>: List of MRI pipeline derivatives with links to documentation<br>
-• <a href="../../mri/fmri/#xcpd" target="_blank"><i style="font-size: 0.9em;" class="fa-solid fa-up-right-from-square"></i> fMRI Release Data (XCP-D)</a>: Overview of XCP-D derivatives included in the HBCD release<br>
-• <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/tools/xcp_d.html"><i style="font-size: 0.9em;" class="fa-solid fa-up-right-from-square"></i> HBCD Processing Documentation (XCP-D)</a>: Pipeline parameters and configurations used for HBCD processing<br>
-• <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#outputs-of-xcp-d"><i style="font-size: 0.9em;" class="fa-solid fa-up-right-from-square"></i> Official XCP-D Documentation</a>: Comprehensive documentation of all XCP-D outputs
+<a href="../../../datacuration/file-based-data/#derivatives" target="_blank"><i style="font-size: 0.9em;" class="fa-solid fa-up-right-from-square"></i> HBCD Derivatives</a>: List of MRI pipeline derivatives with links to documentation<br>
+<a href="../../mri/fmri/#xcpd" target="_blank"><i style="font-size: 0.9em;" class="fa-solid fa-up-right-from-square"></i> fMRI Release Data (XCP-D)</a>: Overview of XCP-D derivatives included in the HBCD release<br>
+<a href="https://hbcd-cbrain-processing.readthedocs.io/latest/tools/xcp_d.html"><i style="font-size: 0.9em;" class="fa-solid fa-up-right-from-square"></i> HBCD Processing Documentation (XCP-D)</a>: Pipeline parameters and configurations used for HBCD processing<br>
+<a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#outputs-of-xcp-d"><i style="font-size: 0.9em;" class="fa-solid fa-up-right-from-square"></i> Official XCP-D Documentation</a>: Comprehensive documentation of all XCP-D outputs
 </p>
 </div>
 
