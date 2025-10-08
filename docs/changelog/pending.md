@@ -65,18 +65,38 @@
     <td></td>
     <td>Recruitment/Retention</td>
   </tr>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td>Transition in Care Screener</td>
-    <td></td>
-    <td>Recruitment/Retention</td>
-  </tr>
   </tbody>
   </table>
 </div>
-<p></p>
-
-##### Behavior, Biology, & Environment
+<div id="mri" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><a href="../../instruments/#mri" target="_blank"><i class="fa fa-magnet"></i></a></span>
+  <span class="text-with-link">
+    <span class="text">Brain Imaging</span>
+    <a class="anchor-link" href="#mri" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
+<thead>
+<tr>
+  <th style="width: 1%;"></th>
+  <th style="width: 30%;">Instrument</th>
+  <th>Version</th>
+  <th style="width: 50%;">Construct</th>
+</tr>
+</thead>
+<tr>
+  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
+  <td>Pre-Scan Questionnaire</td>
+  <td></td>
+  <td>Sleeping Scan Prep</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 <div id="bcgi" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><a href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i></a></span>
@@ -122,12 +142,6 @@
     <td>ecPROMIS-Self-regulation</td>
     <td></td>
     <td>Self-Regulation and Flexibility</td>
-  </tr>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td>ERICA-FCM</td>
-    <td></td>
-    <td>Co-regulation, Child Regulation/Dysregulation, Parenting</td>
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
@@ -211,25 +225,9 @@
 <tbody>
 <tr>
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td>Bayley-4</td>
-  <td></td>
-  <td style="word-wrap: break-word; white-space: normal;">Child Development (Cognitive, Language, and Motor)</td>
-</tr>
-<tr>
-  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td>MacArthur-Bates CDI-I</td>
   <td>Infant Form</td>
   <td>Language Development in Child</td>
-</tr>
-<tr>
-  <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td rowspan="2">NIH Baby Toolbox</td>
-  <td>EF Gazed-Based Task</td>
-  <td>Cognitive/Executive Function/Memory</td>
-</tr>
-<tr>      
-  <td style="word-wrap: break-word; white-space: normal;">Mullen Receptive & Expressive + Observation</td>
-  <td>Language</td>
 </tr>
 <tr>
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
@@ -436,79 +434,10 @@
       <td>Vancouver Index</td>
       <td></td>
       <td>Acculturation</td>
-    </tr>        
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span></td>
-      <td>Geocoded Linkage</td>
-      <td></td>
-      <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure & Other Neighborhood Measures</td>
-    </tr>        
+    </tr>             
   </tbody>
   </table>
 </div>
-<p></p>
-
-##### Brain Activity & Biosensors
-
-<div id="mri" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#mri" target="_blank"><i class="fa fa-magnet"></i></a></span>
-  <span class="text-with-link">
-    <span class="text">MRI & MRS</span>
-    <a class="anchor-link" href="#mri" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
-<thead>
-<tr>
-  <th style="width: 1%;"></th>
-  <th style="width: 30%;">Instrument</th>
-  <th>Version</th>
-  <th style="width: 50%;">Construct</th>
-</tr>
-</thead>
-<tr>
-  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td>Pre-Scan Questionnaire</td>
-  <td></td>
-  <td>Sleeping Scan Prep</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#sensors" target="_blank"><i class="fa fa-microchip"></i></a></span>
-  <span class="text-with-link">
-  <span class="text">Novel Technologies & Wearable Sensors</span>
-  <a class="anchor-link" href="#sensors" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
-<thead>
-<tr>
-    <th style="width: 1%;"></th>
-    <th style="width: 30%;">Sensor</th>
-    <th>Data Type</th>
-    <th style="width: 50%;">Construct</th>
-</tr>
-</thead>
-<tr>
-<td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-<td>Infant Heart Rate</td>
-<td><a href="../../datacuration/file-based-data" target="_blank">Raw BIDS</a></td>
-<td>Regulation (Sleep/Wake)/Autonomic Function</td>
-</tr>
-</tbody>
-</table>
-</div>
-
 <br>
 
 ### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 Brain Imaging File-Based Data Updates
