@@ -233,7 +233,7 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Age fields are not available for the SPM-2. Please refer to corresponding age fields available from related datasets for the same time point.</p>
+<p>Age fields are not currently included for the SPM-2. Until added in a future release, users can refer to corresponding age variables in related datasets for the same time point.</p>
 </div>
 
 <div id="spm2-2" class="issues-banner" onclick="toggleCollapse(this)">

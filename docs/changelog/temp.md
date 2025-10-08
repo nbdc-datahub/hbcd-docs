@@ -1,15 +1,4 @@
 
-## 🗣️ Neurocognition & Language
-
-<details>
-<summary><span style="color:#f97316;"><i class="fas fa-bug"></i></span> <b>SPM-2 Age (<code>ncl_cg_spm2__inf</code>)</b> <span class="badge" style="background-color:#f59e0b; color:white;">Fix: R2.0</span></summary>
-
-**(#1)** Age fields not currently included — refer to corresponding age variables in related datasets for the same time point.  
-**(#2)** *T-scores* are now provided (see [1.1 Resolved Known Issues](../../changelog/releasenotes/#r1.1ngl)), but **STATUS SCORE** remains missing for all but one subscale. This will be added in R2.0.
-
-</details>
-
----
 
 ## 🤰 Pregnancy & Exposure (Including Substance Use)
 
