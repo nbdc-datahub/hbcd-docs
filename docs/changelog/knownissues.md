@@ -4,69 +4,6 @@ The following issues have been identified in the current HBCD data release. **We
 
 If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
 
-## Issue Summary
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-<th>Domain</th>
-<th>Issue</th>
-<th>Fix Version</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>General</td>
-<td>Instruction Metadata</td>
-<td>TBD</td>
-<td>🟡</td>
-</tr>
-<tr>
-<td>Demographics</td>
-<td>Mother Race Levels</td>
-<td>R2.0</td>
-<td>🟢</td>
-</tr>
-<tr>
-<td>Demographics</td>
-<td>Child Multi-Race / Multi-Ethnicity (ACS)</td>
-<td>R2.0</td>
-<td>🟢</td>
-</tr>
-<tr>
-<td>Imaging Data</td>
-<td>Run ID Order May Be Incorrect</td>
-<td>R2.0</td>
-<td>🟢</td>
-</tr>
-<tr>
-<td>Neurocognition &amp; Language</td>
-<td>SPM-2 Age Fields / Scores</td>
-<td>R2.0</td>
-<td>🟢</td>
-</tr>
-<tr>
-<td>Pregnancy &amp; Exposure</td>
-<td>ICD Labels Missing</td>
-<td>R2.0</td>
-<td>🟢</td>
-</tr>
-<tr>
-<td>Social &amp; Environmental</td>
-<td>PhenX Discrimination Survey Missing Data</td>
-<td>R2.0</td>
-<td>🟢</td>
-</tr>
-<tr>
-<td>Visit Information</td>
-<td>Invalid Withdrawal Dates</td>
-<td>TBD</td>
-<td>🟡</td>
-</tr>
-</tbody>
-</table>
-
 ## General: Instruction Metadata — Read Carefully
 
 <div id="instr-metadata" class="issues-banner" onclick="toggleCollapse(this)">
@@ -265,7 +202,10 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>In cases where ICD codes are provided, corresponding names/labels are sometimes not provided. These will be added in a future release. In the meantime, users can consider existing packages to merge ICD labels in <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, or <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>.</p>
+<p>In cases where ICD codes are provided, corresponding names/labels are sometimes missing. Until resolved, users can use external packages to merge ICD labels if needed:<br>
+<a href="https://www.stata.com/features/overview/icd/">Stata</a><br>
+<a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a><br>
+<a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>.</p>
 </div>
 
 <div id="apa" class="issues-banner" onclick="toggleCollapse(this)">
@@ -334,3 +274,68 @@ This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files
 </div>
 
 <br>
+
+
+
+## Issue Summary - potentially add if time to udpate it 
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<th>Domain</th>
+<th>Issue</th>
+<th>Fix Version</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td>Instruction Metadata</td>
+<td>TBD</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Demographics</td>
+<td>Mother Race Levels</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Demographics</td>
+<td>Child Multi-Race / Multi-Ethnicity (ACS)</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Imaging Data</td>
+<td>Run ID Order May Be Incorrect</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Neurocognition &amp; Language</td>
+<td>SPM-2 Age Fields / Scores</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Pregnancy &amp; Exposure</td>
+<td>ICD Labels Missing</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Social &amp; Environmental</td>
+<td>PhenX Discrimination Survey Missing Data</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Visit Information</td>
+<td>Invalid Withdrawal Dates</td>
+<td>TBD</td>
+<td>🟡</td>
+</tr>
+</tbody>
+</table>

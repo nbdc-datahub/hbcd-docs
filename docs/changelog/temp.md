@@ -1,19 +1,7 @@
 
 
-## 🤰 Pregnancy & Exposure (Including Substance Use)
 
-<details>
-<summary><span style="color:#f97316;"><i class="fas fa-bug"></i></span> <b>ICD Code Names / Labels Inconsistently Provided</b> <span class="badge" style="background-color:#f59e0b; color:white;">Fix: R2.0</span></summary>
 
-In cases where ICD codes are provided, corresponding names/labels are sometimes missing.  
-Users can use external packages to merge ICD labels if needed:
-- [Stata](https://www.stata.com/features/overview/icd/)
-- [SAS](https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp)
-- [R](https://www.rdocumentation.org/packages/icd/versions/3.3)
-
-</details>
-
----
 
 ## 🌍 Social & Environmental Determinants
 
