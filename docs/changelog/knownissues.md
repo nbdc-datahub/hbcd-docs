@@ -90,7 +90,10 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Participants who did not withdraw from the study (and so have a value of "no" for <code>par_visit_data_participant_withdrawal</code>) have a sentinel value of <code>12/26/1999</code>, <i>meaning no withdrawal</i>, for participant withdrawal date (<code>par_visit_data_participant_withdrawal_date</code>). This is caused by participants missing a visit and will be replaced with blank values to fix, but in the meantime can be safely ignored. Participants who did withdraw (and so have a value of “yes” for <code>par_visit_data_participant_withdrawal</code>) have a valid date and are unimpacted.</p>
+<p>Participants who did <b>not</b> withdraw from the study (value = “no” for <code>par_visit_data_participant_withdrawal</code>) have a sentinel value of <code>12/26/1999</code> for withdrawal date (<code>par_visit_data_participant_withdrawal_date</code>).<br>
+This indicates <b>no withdrawal</b> and can be safely ignored.<br>
+Participants who did withdraw (value = “yes”) have valid withdrawal dates and are unaffected.
+</p>
 </div>
 
 <div id="visit-su1" class="issues-banner" onclick="toggleCollapse(this)">
@@ -252,7 +255,9 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>For the PhenX+ Discrimination survey, one of the multi-select questions (column <code>sed_bm_phx__discr.006</code>: <i>"What do you think is the main reason for these experiences? If more than one main reason, check all that apply."</i>) is blank for some participants.</p>
+<p>For the PhenX+ Discrimination survey, the <code>sed_bm_phx__discr.006</code> multi-select question:<br>
+<i>"What do you think is the main reason for these experiences? If more than one main reason, check all that apply."</i><br>
+is blank for some participants. This will be corrected in R2.0.</p>
 </div>
 
 ## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-magnet"></i></a> Imaging Data
