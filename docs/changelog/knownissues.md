@@ -78,12 +78,12 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 ### Visit Information (`par_visit_data`)
 
-<div id="visit" class="issues-banner" onclick="toggleCollapse(this)">
+<div id="visit1" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text-with-link">
   <span class="text">Invalid Participant Withdrawal Dates for Participants Who Did Not Withdraw</span>
   <span class="badge">Fix: 2.0</span>
-  <a class="anchor-link" href="#visit" title="Copy link">
+  <a class="anchor-link" href="#visit1" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -91,6 +91,21 @@ If you have questions or would like to report an issue, please submit a ticket t
 </div>
 <div class="table-collapsible-content">
 <p>Participants who did not withdraw from the study (and so have a value of "no" for <code>par_visit_data_participant_withdrawal</code>) have a sentinel value of <code>12/26/1999</code>, <i>meaning no withdrawal</i>, for participant withdrawal date (<code>par_visit_data_participant_withdrawal_date</code>). This is caused by participants missing a visit and will be replaced with blank values to fix, but in the meantime can be safely ignored. Participants who did withdraw (and so have a value of “yes” for <code>par_visit_data_participant_withdrawal</code>) have a valid date and are unimpacted.</p>
+</div>
+
+<div id="visit2" class="issues-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text-with-link">
+  <span class="text">Erroneous TLFB Substance Use Flags (<code>su_flag_bio_&lt;benzo|barb|mscrlx&gt;</code>)</span>
+  <span class="badge">Fix: 2.0</span>
+  <a class="anchor-link" href="#visit2" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>The following TLFB substance use flag fields should be excluded from the Visit Information: <code>par_visit_data_su_flag_bio_barb</code>, <code>par_visit_data_su_flag_bio_benzo</code>, and <code>par_visit_data_su_flag_bio_mscrlx</code>. Please do not use these variables.</p>
 </div>
 
 ## <a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
