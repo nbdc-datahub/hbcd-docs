@@ -252,8 +252,8 @@
   </tr> 
   <tr>
     <td style="word-wrap: break-word; white-space: normal;">
-      <strong>Negative Gestational Ages</strong><br>
-      The two participants with negative gestational ages in the urine biosample dataset (caused by inaccurate collection dates of the biosample) have been removed. - IS THIS RIGHT OR WERE THEY CORRECTED SOMEHOW?</td>
+      <strong>Corrected Negative Gestational Ages</strong><br>
+      The negative gestational ages for 2 participants in the Urine dataset have been corrected.</td>
   </tr>  
 </tbody>
 </table>
