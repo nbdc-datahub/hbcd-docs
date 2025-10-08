@@ -4,6 +4,69 @@ The following issues have been identified in the current HBCD data release. **We
 
 If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
 
+## Issue Summary
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<th>Domain</th>
+<th>Issue</th>
+<th>Fix Version</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td>Instruction Metadata</td>
+<td>TBD</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Demographics</td>
+<td>Mother Race Levels</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Demographics</td>
+<td>Child Multi-Race / Multi-Ethnicity (ACS)</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Imaging Data</td>
+<td>Run ID Order May Be Incorrect</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Neurocognition &amp; Language</td>
+<td>SPM-2 Age Fields / Scores</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Pregnancy &amp; Exposure</td>
+<td>ICD Labels Missing</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Social &amp; Environmental</td>
+<td>PhenX Discrimination Survey Missing Data</td>
+<td>R2.0</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Visit Information</td>
+<td>Invalid Withdrawal Dates</td>
+<td>TBD</td>
+<td>🟡</td>
+</tr>
+</tbody>
+</table>
+
 ## General: Instruction Metadata — Read Carefully
 
 <div id="instr-metadata" class="issues-banner" onclick="toggleCollapse(this)">
@@ -58,7 +121,7 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Child Multi-Race (<code>child_ethnoracial_acs_by_multi_race</code>) and Multi-Ethnicity (<code>child_ethnoracial_acs_by_multi_ethnicity</code>) variables have the same data and levels. Child Multi-Race to be removed to resolve.</p>
+<p>Child Multi-Race (<code>child_ethnoracial_acs_by_multi_race</code>) and Multi-Ethnicity (<code>child_ethnoracial_acs_by_multi_ethnicity</code>) variables have the same data and levels. Child Multi-Race to be removed to resolve duplication.</p>
 </div>
 
 <div id="child-acs-2" class="issues-banner" onclick="toggleCollapse(this)">
@@ -266,7 +329,8 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>For HBCD BIDS data with multiple runs, the run number displayed in the `run-{X}` field is not guaranteed to reflect the chronological acquisition order. This applies to raw BIDS, derivatives, and derivative files converted to HBCD tabulated data (<a href="../../datacuration/overview" target="_blank">see details</a>). However, the data remain internally consistent — for example, the run IDs in the raw BIDS data match the corresponding runs in the processed BIDS data.</p>
+<p>For HBCD imaging data with multiple runs, the <code>run-{X}</code> field may not reflect chronological acquisition order.  
+This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files converted to HBCD tabulated data</b> (<a href="../../datacuration/overview" target="_blank">see file type details</a>). Despite this, data remain internally consistent — e.g., run IDs match between raw and processed datasets.</p>
 </div>
 
 <br>
