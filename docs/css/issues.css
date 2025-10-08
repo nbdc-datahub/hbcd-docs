@@ -9,7 +9,7 @@
   color: #474646;
   font-weight: bold;
   gap: 8px;                 /* space between emoji and text */
-  font-size: 0.9em;
+  font-size: 0.7em;
   line-height: 1.1;
   border-radius: 6px; /* round edges */
   width: 100%;
@@ -25,6 +25,19 @@
 .issues-banner .text {
   flex: 1;                  /* text takes remaining space */
 }
+.issues-banner .badge {
+  background-color: #fff4ed;   /* soft tint of orange */
+  color: #b45309;              /* dark amber text */
+  border: 1px solid #f97316;   /* thin border to match icon color */
+  border-radius: 9999px;       /* pill shape */
+  font-size: 1em;
+  font-weight: 600;
+  padding: 2px 8px;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+
 
 /* Pill base */
 .pill {
@@ -41,3 +54,5 @@
   background: #c084fc66;
   color: #6a6a6a;
 }
+
+
