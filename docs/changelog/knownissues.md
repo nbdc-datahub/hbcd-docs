@@ -232,7 +232,7 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="issues-collapsible-content">
-<p>TLFB age variable fields (<code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>) were removed for R1.1 due to incorrect values and will be added in the next release with corrected values.</p>
+<p>TLFB age variable fields (<code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>) were removed for R1.1 due to incorrect values. These fields, with corrected values, will be added in the next release.</p>
 </div>
     
 ## <a href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
