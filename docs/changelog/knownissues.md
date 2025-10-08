@@ -13,20 +13,52 @@ Instruction text in the form's metadata is extracted programmatically from the m
 
 -------------------------
 
-## Basic Demographics
+## Basic Demographics (`sed_basic_demographics`)
 
 ###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> Erroneous Inclusion of Response Option (2=Hawaiian) in 'Mother Race' Variable
 The variable `sed_basic_demographics_screen_mother_race` has two levels to reflect Hawaiian race (`2` = `Hawaiian`; `7` = `Native Hawaiian or Other Pacific Islander`). `2` = `Hawaiian` was not a response option to this question and can be ignored; no participants selected this option.       
 ***Expected Fix: R2.0***
 --------------------------
 
+**ALT FORMAT - LIST IN TABLE FORMAT?**
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+    <th>Variable(s) & Issue Description</th>
+    <th>Fix</th>
+</thead>
+<tbody>
+<tr>
+    <td style="word-wrap: break-word; white-space: normal;">
+    <i style="color: #f97316;" class="fas fa-bug"></i> <b>Mother race (<code>screen_mother_race</code>)</b><br>
+    Erroneous inclusion of two levels for Hawaiian race (2 = <i>Hawaiian</i>; 7 = <i>Native Hawaiian or Other Pacific Islander</i>). The 2 = <i>Hawaiian</i> code was not a valid response option and can be ignored; no participants selected it.</td>
+    <td>R2.0</td>
+</tr>
+<tr>
+    <td style="word-wrap: break-word; white-space: normal;">
+    <i style="color: #f97316;" class="fas fa-bug"></i> <b>Child Multi-Race and Multi-Ethnicity (ACS) (<code>child_ethnoracial_acs_by_multi_&lt;race|ethnicity&gt;</code>)</b><br>
+    (#1) Variables have the same data and levels. Child Multi-Race to be removed to resolve.
+    </td>
+    <td>R2.0</td>
+</tr>
+<tr>
+    <td style="word-wrap: break-word; white-space: normal;">
+    <i style="color: #f97316;" class="fas fa-bug"></i> <b>Child Multi-Race and Multi-Ethnicity (ACS) (<code>child_ethnoracial_acs_by_multi_&lt;race|ethnicity&gt;</code>)</b><br>
+    (#2) Variables populated at V01, prior to the child being born. V01 data will be removed.
+    </td>
+    <td>R2.0</td>
+</tr>
+</tbody>
+</table>
+
 ## Imaging Data
-###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> Run ID Order May Be Incorrect
+###### <span class="emoji" style="color: #be7215ff;"><i class="fas fa-bug"></i></span> Run ID Order May Be Incorrect
 For HBCD BIDS data with multiple runs, the run number displayed in the `run-<label>` field is not guaranteed to reflect the chronological acquisition order. This applies to both raw and processed <span class="tooltip">file-based<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> data, as well as derived <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data. Despite this, the data remain internally consistent — for example, the run IDs in the raw BIDS data match the corresponding runs in the processed BIDS data.               
 ***Expected Fix: R2.0***
 --------------------------  
 
 ## Neurocognition & Language
+
 ###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> SPM-2 Age Fields Missing
 Age fields are not available for the SPM-2. Please refer to corresponding age fields available from related datasets for the same time point.    
 ***Expected Fix: R2.0***   
@@ -36,6 +68,29 @@ Age fields are not available for the SPM-2. Please refer to corresponding age fi
 T-scores are now provided (see [1.1 Resolved Known Issues](../changelog/releasenotes.md#r1.1ngl)), but **STATUS SCORE** is still missing for all but one subscale. To be provided in the next release.                  
 ***Expected Fix: R2.0***   
 --------------------------   
+
+**ALT TABLE FORMAT**
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+    <th>Variable(s) & Issue Description</th>
+    <th>Fix</th>
+</thead>
+<tbody>
+<tr>
+    <td style="word-wrap: break-word; white-space: normal;">
+    <i style="color: #f97316;" class="fas fa-bug"></i> <b>SPM-2 Age (<code>ncl_cg_spm2__inf</code>)</b><br>
+    (#1) Age fields not included - refer to corresponding age fields from related datasets for the same time point.</td>
+    <td>R2.0</td>
+</tr>
+<tr>
+    <td style="word-wrap: break-word; white-space: normal;">
+    <i style="color: #f97316;" class="fas fa-bug"></i> <b>SPM-2 Age (<code>ncl_cg_spm2__inf</code>)</b><br>
+    (#2) T-scores are now provided (see <a href="../../changelog/releasenotes/#r1.1ngl" target="_blank">1.1 Resolved Known Issues</a>), but <b>STATUS SCORE</b> is still missing for all but one subscale. To be provided in the next release.</td>
+    <td>R2.0</td>
+</tr>
+</tbody>
+</table>
 
 ## Pregnancy & Exposure, Including Substance Use
 ### Pregnancy & Infant Health
