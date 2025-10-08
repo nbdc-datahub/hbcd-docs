@@ -81,7 +81,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <div id="visit1" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text-with-link">
-  <span class="text">Invalid Participant Withdrawal Dates for Participants Who Did Not Withdraw</span>
+  <span class="text">Withdrawal Date (<code>participant_withdrawal_date</code>): Value of <code>12/26/1999</code> if No Withdrawal</span>
   <span class="badge">Fix: 2.0</span>
   <a class="anchor-link" href="#visit1" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -92,7 +92,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <div class="issues-collapsible-content">
 <p>Participants who did <b>not</b> withdraw from the study (value = “no” for <code>par_visit_data_participant_withdrawal</code>) have a sentinel value of <code>12/26/1999</code> for withdrawal date (<code>par_visit_data_participant_withdrawal_date</code>).<br>
 This indicates <b>no withdrawal</b> and can be safely ignored, but will be removed in the future for clarity.<br>
-Participants who did withdraw (value = “yes”) have valid withdrawal dates and are unaffected.
+Participants who <b>did withdraw</b> (value = “yes”) have valid withdrawal dates and are unaffected.
 </p>
 </div>
 
