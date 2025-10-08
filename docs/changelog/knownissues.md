@@ -123,6 +123,21 @@ If you have questions or would like to report an issue, please submit a ticket t
 <p>Visit 2 flags for substance use based on USDTL Urine toxicology results (<a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a>) will be removed: Urine is not collected at Visit 2. These fields can safely be ignored.</p>
 </div>
 
+<div id="visit-su3" class="issues-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text-with-link">
+  <span class="text">TLFB Substance Use Flags (<code>su_flag_tlfb_*</code>): Incorrect Values for Participants Missing V02</span>
+  <span class="badge">Fix: 2.0</span>
+  <a class="anchor-link" href="#visit-su3" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>The TLFB substance use flags (<a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a>) for participants who do not have a Visit 2 have an incorrect value of 'no' instead of 'null.' These will be reverted to the correct values.</p>
+</div>
+
 
 ## <a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
 
