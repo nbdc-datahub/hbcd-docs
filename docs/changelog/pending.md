@@ -68,6 +68,7 @@
   </tbody>
   </table>
 </div>
+
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><a href="../../instruments/#mri" target="_blank"><i class="fa fa-magnet"></i></a></span>
   <span class="text-with-link">
