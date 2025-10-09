@@ -93,21 +93,6 @@ If you have questions or would like to report an issue, please submit a ticket t
 <p>Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) are assigned a sentinel withdrawal date (<code>participant_withdrawal_date</code>) of <code>12/26/1999</code>. This date simply indicates <b>no withdrawal</b> and can be ignored. It will be removed in a future release for clarity. Participants who <b>did</b> withdraw (“yes”) have valid withdrawal dates and are unaffected.</p>
 </div>
 
-<div id="visit-su1" class="issues-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text-with-link">
-  <span class="text">Biospec Substance Use Flags (<code>su_flag_bio_*</code>): Erroneous Inclusion of <code>&lt;benzo|barb|mscrlx&gt;</code></span>
-  <span class="badge">Fix: 2.0</span>
-  <a class="anchor-link" href="#visit-su1" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="issues-collapsible-content">
-<p>The following Biospecimen Urine substance use flag fields should be excluded from the Visit Information: <code>par_visit_data_su_flag_bio_&lt;benzo|barb|mscrlx&gt;</code>. Please do not use these variables.</p>
-</div>
-
 <div id="visit-su2" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text-with-link">
