@@ -13,7 +13,7 @@ Annual data releases, hosted by the <a href="https://nbdc-splash-beta.lassoinfor
 <br>
 <br>
 
-Please refer to the central HBCD Study page (<a href="https://hbcdstudy.org/">hbcdstudy.org</a>) for comprehensive information about the study and complete <a href="https://hbcdstudy.org/study-protocols/">Study Protocols</a>.</p> 
+Refer to the central HBCD Study page (<a href="https://hbcdstudy.org/">hbcdstudy.org</a>) for comprehensive information about the study and complete <a href="https://hbcdstudy.org/study-protocols/">Study Protocols</a>.</p> 
 
 <p style="text-align: center; font-size: 1.3em;">
   <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study" 
@@ -29,14 +29,20 @@ Please refer to the central HBCD Study page (<a href="https://hbcdstudy.org/">hb
   </a>
 </p>
 
-
-
 --------------
 
-<i>The information below is sourced directly from the central HBCD Study page. For additional details, please visit <a href="https://hbcdstudy.org/about/">https://hbcdstudy.org/about/</a></i>
+<i>The information below is sourced directly from the central HBCD Study site <a href="https://hbcdstudy.org/about/">https://hbcdstudy.org/about/</a></i>
 
-
-![](images/about-header-hbcd-text.png)
-
-[![](images/who-we-are-hbcd-text.png)](https://hbcdstudy.org/federal-partners/)
-![](images/who-we-are-map-hbcd.png)
+<div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px;">
+  <img src="https://hbcdstudy.org/wp-content/uploads/2025/09/HBCD-Map.png" style="width: 70%; height: auto; border-radius: 8px;">
+  <div style="max-width: 600px;">
+    <p style="color: #165278; font-weight: 600; line-height: 1.2; margin: 0 0 10px; font-size: 20px;">WHO WE ARE</p>
+    <p style="margin: 0; line-height: 1.4; font-size: 0.9em;">
+      This ambitious project, funded through a partnership of a 
+      <a href="https://hbcdstudy.org/federal-partners/">dozen Institutes, Centers, and Offices of the National Institutes of Health</a>, 
+      will enroll over 7,000 participating families from across the United States and follow them from pregnancy through early childhood. 
+      The HBCD Research Consortium consists of an Administrative Core, a Data Coordinating Center, and 27 research sites across the country.
+    </p>
+  </div>
+</div>
+<br>
