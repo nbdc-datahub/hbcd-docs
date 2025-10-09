@@ -7,23 +7,14 @@
   HEALthy Brain and Child Development (<b>HBCD</b>) Study!
 </p>
 
-<p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 0 auto;">
-  Explore detailed information about HBCD Study data releases, including 
-  <a href="access/resp_data_use" target="_blank">Responsible Data Use</a>, 
-  <a href="instruments/" target="_blank">Data Structures</a>, 
-  <a href="instruments/" target="_blank">Instrument & Measure Documentation</a>, and 
-  <a href="instruments/processing/standards/" target="_blank">Processing &amp; Analytic Standards</a>.
+<p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 2 auto;">
+  Explore detailed information about annual HBCD Study data releases hosted by the 
+  <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study" target="_blank">NBDC Data Hub</a>.<br>
+  See the <a href="changelog/releasenotes" target="_blank">Release Notes</a> for information on the latest release.
 </p>
 
-<p></p>
-
-<p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 0 auto;">
-  Annual data releases are hosted by the 
-  <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study" target="_blank">
-    NBDC Data Hub</a>. 
-  See the <a href="changelog/releasenotes" target="_blank">Release Notes</a> 
-  for details on the latest release and 
-  <a href="access/download" target="_blank">Access &amp; Download</a> instructions.
+<p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 2 auto;">
+  Key resources provided in the HBCD Data Release Docs include: <a href="access/download" target="_blank">Access & Download</a>, <a href="access/resp_data_use">Responsible Use</a>, <a href="instruments/">Data Structures</a>, <a href="instruments/">Instrument/Measure Documentation</a>, and <a href="instruments/processing/standards/">Processing Standards</a>.
 </p>
 
 <p></p>
@@ -32,6 +23,8 @@
   Visit the central HBCD Study website 
   (<a href="https://hbcdstudy.org/">hbcdstudy.org</a>) for comprehensive information about the study.
 </p>
+
+<p></p>
 
 <p style="text-align: center; font-size: 1.3em; margin-top: 25px;">
   <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study"
