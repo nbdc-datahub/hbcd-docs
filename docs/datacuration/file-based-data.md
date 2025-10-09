@@ -64,7 +64,7 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 <tr>
   <td>Scan</td>
   <td><code>sub-{ID}_ses-{V0X}_scans.tsv</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Per-scan information (age at scan and raw data QC scores - see <a href="../../instruments/mri/qc/#location-of-raw-data-qc-results-in-data-release" target="_blank">HBCD MR Quality Control Procedures</a>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Per-scan information (age at scan and raw data QC scores - see <a href="../../instruments/mri/qc/#raw-mr-data-qc" target="_blank">HBCD MR Quality Control Procedures</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -172,10 +172,14 @@ QALAS conversion yielded either five 3D NIfTI files or one 4D file with five vol
   </table>
 </div>
 
+### Data Release Eligibility Criteria
+
+Acquisition parameters vary by scanner vendor, so inclusion criteria are typically defined as acceptable <b>ranges</b> rather than fixed values. Following BIDS conversion, modality-specific criteria are extracted from BIDS sidecar JSON files and evaluated accordingly. 
+
 <div id="acq-param-table" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
-  <span class="text">MRI & MRS Acquisition Parameter Ranges for Data Release Eligibility</span>
+  <span class="text">Acquisition Parameter Ranges for Data Release Eligibility</span>
   <a class="anchor-link" href="#acq-param-table" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -183,7 +187,7 @@ QALAS conversion yielded either five 3D NIfTI files or one 4D file with five vol
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Acquisition parameters vary by scanner vendor, so inclusion criteria are typically defined as acceptable <strong>ranges</strong> rather than fixed values. Modality-specific criteria are extracted from BIDS sidecar JSON files and evaluated accordingly. All images are additionally checked to confirm they were acquired using a head coil.</p>
+<p><i>NOTE: All images are additionally checked to confirm they were acquired using a head coil.</i></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
   <thead>
     <tr>
