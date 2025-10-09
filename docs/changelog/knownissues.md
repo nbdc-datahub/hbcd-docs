@@ -96,7 +96,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <div id="visit-su2" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text-with-link">
-  <span class="text">Biospec Substance Use Flags (<code>su_flag_bio_*</code>): Erroneous Inclusion for V02</span>
+  <span class="text">Biospec Substance Use Flags (<code>su_flag_bio_*</code>): Erroneous Inclusion for Visit 2</span>
   <span class="badge">Fix: 2.0</span>
   <a class="anchor-link" href="#visit-su2" title="Copy link">
   <i class="fa-solid fa-link"></i>
@@ -105,7 +105,7 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="issues-collapsible-content">
-<p>Substance use based on USDTL Urine toxicology results (<a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a>) are erroneously included for Visit 2 data: urine is not collected at Visit 2, so these will be removed and can safely be ignored.</p>
+<p>Substance use flags derived from USDTL urine toxicology results (<a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a>) are erroneously included for Visit 2. Urine samples are not collected at Visit 2, and these values are duplicates of Visit 1 data. They will be removed in the next release and can be safely ignored.</p>
 </div>
 
 <div id="visit-su3" class="issues-banner" onclick="toggleCollapse(this)">
