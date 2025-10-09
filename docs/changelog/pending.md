@@ -60,11 +60,6 @@
       <td style="word-wrap: break-word; white-space: normal;">NIH Baby Toolbox</td>
       <td style="word-wrap: break-word; white-space: normal;">Cognitive/Executive Function/Memory & Language</td>
     </tr>
-    <tr>
-      <td style="word-wrap: break-word; white-space: normal; padding-left: 25px;"><a href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i> Social & Env Determinants</a></td>
-      <td style="word-wrap: break-word; white-space: normal;">Geocoding & Linking External Data (<strong>GLED</strong>)</td>
-      <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure and Other Neighborhood Measures</td>
-    </tr>
   <tr>
     <td colspan="3"></td>
   </tr>

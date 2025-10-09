@@ -24,7 +24,7 @@ File-based data is any data that cannot be converted to the HBCD tabulated forma
   </tr>
   <tr>
     <td><a href="../file-based-data/#concatenated-data"><strong>Concatenated Data</strong></a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Participant-level files aggregated across all subjects for select measures, including: <a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a>, <a href="../../instruments/SED/geocoded-linkage" target="_blank">Geocoded Linkage</a>, and <a href="../../instruments/admin/transitions-in-care" target="_blank">Transitions in Care</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Participant-level files aggregated across all subjects for select measures, including, for the current release, <a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
   </tr>
   </tbody>
 </table>
@@ -56,8 +56,6 @@ hbcd/
 hbcd/
 |__ concatenated/      <span class="hashtag"># Concatenated Data</span>
 |   |__ genetics/
-|   |__ geocoded_linkage/
-|   |__ tic/
 |
 |__ derivatives/        <span class="hashtag"># Processed pipeline derivatives</span>
 |   |__ bibsnet/

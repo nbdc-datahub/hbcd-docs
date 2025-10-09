@@ -385,8 +385,6 @@ The `concatenated/` folder contains participant-level files aggregated across al
 hbcd/
 |__ concatenated/ 
     |__ genetics/
-    |__ geocoded_linkage/
-    |__ tic/
 NOTE: need to confirm folder names, these are placeholders
 </pre>
 
@@ -403,14 +401,6 @@ Visit the instrument documentation pages for information on the unique file cont
 <tr>
 <td><code>genetics/</code></td>
 <td><a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Illumina Global Diversity GWAS Array</a></td>
-</tr>
-<tr>
-<td><code>geocoded_linkage/</code></td>
-<td><a href="../../instruments/SED/geocoded-linkage" target="_blank">Geocoded Linkage from Home and Work Addresses</a></td>
-</tr>
-<tr>
-<td><code>tic/</code></td>
-<td><a href="../../instruments/admin/transitions-in-care" target="_blank">Transitions in Care</a></td>
 </tr>
 </tbody>
 </table>
