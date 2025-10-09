@@ -95,7 +95,10 @@ hbcd/
 </div>
 <div class="table-collapsible-content" style="margin-bottom: 3px;">
 <p><code>sub-{ID}_ses-{V0X}_run-{X}_space-fsLR_seg-&lt;PARC&gt;_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph.tsv</code></p>
-<p>Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical or functional regions defined by an atlas. Ideal for region-based statistical analysis and group comparisons.</p>
+<p>Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical or functional regions defined for each of the following atlases: <a href="https://github.com/PennLINC/AtlasPack">4S</a> (nodes 156-1056), Glasser, Gordon, MIDB, and MyersLabonte (see <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#parcellations-and-atlases">Parcellations & Atlases</a> in the XCP-D documentation for details).
+
+
+Ideal for region-based statistical analysis and group comparisons.</p>
 </div>
 
 <div id="s3" class="table-compact-banner" onclick="toggleCollapse(this)">
