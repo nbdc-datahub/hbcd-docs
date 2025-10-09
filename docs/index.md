@@ -20,9 +20,8 @@
 <p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 0 auto;">
   Annual data releases are hosted by the 
   <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study" target="_blank">
-    NIH Brain Development Cohorts (NBDC) Data Hub
-  </a>. 
-  See the <a href="changelog/releasenotes" target="_blank">Release Notes &amp; History</a> 
+    NBDC Data Hub</a>. 
+  See the <a href="changelog/releasenotes" target="_blank">Release Notes</a> 
   for details on the latest release and 
   <a href="access/download" target="_blank">Access &amp; Download</a> instructions.
 </p>
@@ -31,8 +30,7 @@
 
 <p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 0 auto;">
   Visit the central HBCD Study website 
-  (<a href="https://hbcdstudy.org/">hbcdstudy.org</a>) for comprehensive information about the study, 
-  including complete <a href="https://hbcdstudy.org/study-protocols/">Study Protocols</a>.
+  (<a href="https://hbcdstudy.org/">hbcdstudy.org</a>) for comprehensive information about the study.
 </p>
 
 <p style="text-align: center; font-size: 1.3em; margin-top: 25px;">
@@ -47,7 +45,7 @@
             text-decoration: none; 
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             transition: background-color 0.3s, transform 0.2s;">
-    Visit HBCD Study on NBDC Data Hub 
+    NBDC Data Hub 
     <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px;"></i>
   </a>
 </p>
