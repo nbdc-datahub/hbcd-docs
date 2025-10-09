@@ -168,7 +168,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 
 <div id="neurocog" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-brain"></i></span>
+  <span class="emoji"><i class="fa-solid fa-puzzle-piece"></i></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
   <a class="anchor-link" href="#neurocog" title="Copy link">
@@ -538,7 +538,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-magnet"></i></span>
+  <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
     <span class="text">MRI & MRS</span>
     <a class="anchor-link" href="#mri" title="Copy link">

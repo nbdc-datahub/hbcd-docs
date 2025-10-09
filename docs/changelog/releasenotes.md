@@ -78,7 +78,7 @@
     <!-- BrainSwipes QC -->
     <tr style="border-bottom: 1px solid #e0e0e0;">
       <td style="width: 40px; text-align: center;">
-        <a href="../../instruments/#mri" title="MRI Data" target="_blank"><i class="fas fa-magnet"></i></a>
+        <a href="../../instruments/#mri" title="MRI Data" target="_blank"><i class="fas fa-brain"></i></a>
       </td>
       <td style="padding: 8px 4px; vertical-align: top;">
         <strong>BrainSwipes QC</strong> 
@@ -282,7 +282,7 @@
 </div>
 
 <div id="r1.1ngl" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#neurocog" target="_blank"><i class="fa fa-brain"></i></a></span>
+  <span class="emoji"><a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
   <a class="anchor-link" href="#r1.1ngl" title="Copy link">

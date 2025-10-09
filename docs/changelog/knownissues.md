@@ -141,7 +141,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <p>In the Urine toxicology results (<code>bio_bm_biosample_urine</code>), all negative values for urinary cotinine (<code>bio_c_cot_u</code>) were previously set to <code>0</code>, as negative values are not biologically plausible. During this correction, <b>missing values</b> were inadvertently also set to <code>0</code> (N = 18). These values will be restored to missing in a future release. In the meantime, users can identify affected records by checking <code>bio_c_nicotine_u</code> for values of <code>3</code> (<code>--invalid</code>).</p>
 </div>
 
-## <a href="../../instruments/#neurocog" target="_blank"><i class="fa fa-brain"></i></a> Neurocognition & Language
+## <a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
 
 <div id="spm2-1" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
@@ -220,7 +220,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <p>TLFB age variable fields (<code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>) were removed for R1.1 due to incorrect values. Until added in a future release, users can refer to corresponding age variables in related datasets for the same time point.</p>
 </div>
 
-## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-magnet"></i></a> Imaging Data
+## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
 
 <div id="mr-runid" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>

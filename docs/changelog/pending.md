@@ -70,7 +70,7 @@
 </div>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#mri" target="_blank"><i class="fa fa-magnet"></i></a></span>
+  <span class="emoji"><a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a></span>
   <span class="text-with-link">
     <span class="text">Brain Imaging</span>
     <a class="anchor-link" href="#mri" title="Copy link">
@@ -204,7 +204,7 @@
 </div>
 
 <div id="neurocog" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#neurocog" target="_blank"><i class="fa fa-brain"></i></a></span>
+  <span class="emoji"><a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
   <a class="anchor-link" href="#neurocog" title="Copy link">
