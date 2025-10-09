@@ -1,4 +1,4 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW (CURRENTLY REMOVED FROM INCLUSION IN 2.0 HOWEVER)</i></p>
 
 
 <i style="color: red;">Administrative notes:<br>
