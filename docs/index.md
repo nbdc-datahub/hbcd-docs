@@ -9,7 +9,7 @@
 
 <p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 2 auto;">
   Explore detailed information about annual HBCD Study data releases hosted by the 
-  <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study" target="_blank">NBDC Data Hub</a>.<br>
+  <a href="https://nbdc-splash-beta.lassoinformatics.com" target="_blank">NBDC Data Hub</a>.<br>
   See the <a href="changelog/releasenotes" target="_blank">Release Notes</a> for information on the latest release.
 </p>
 
@@ -38,7 +38,7 @@
             text-decoration: none; 
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             transition: background-color 0.3s, transform 0.2s;">
-    NBDC Data Hub 
+    HBCD Study on NBDC Data Hub 
     <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px;"></i>
   </a>
 </p>
