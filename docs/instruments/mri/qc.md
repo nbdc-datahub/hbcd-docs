@@ -83,12 +83,12 @@ Acquisition parameters vary by scanner vendor, so inclusion criteria are typical
 
 ## Raw MR Data QC
 
-Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. Raw data QC is performed to detect acquisition errors, image artifacts, or corrupted files early so that problematic scans are excluded from the released raw BIDS dataset and [downstream processing](../processing/index.md#file-selection-for-processing). **Raw data QC metrics are included in the raw BIDS `sub-<ID>_ses-<V0X>_scans.tsv` files - [see details](../../datacuration/file-based-data.md#participant-session-scan-level-data).**
+Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. Raw data QC is performed to detect acquisition errors, image artifacts, or corrupted files early so that problematic scans are excluded from the released raw BIDS dataset and [downstream processing](../processing/index.md#file-selection-for-processing). **Raw data QC metrics are included in the raw BIDS `sub-{ID}_ses-{V0X}_scans.tsv` files - [see details](../../datacuration/file-based-data.md#participant-session-scan-level-data).**
 
 <div id="scanstsv" class="table-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fa fa-info-circle"></i></span>
   <span class="text-with-link">
-  <span class="text">Raw MR QC metrics included in the release (<code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code>)</span>
+  <span class="text">Raw MR QC metrics included in the release (<code>sub-{ID}_ses-{V0X}_scans.tsv</code>)</span>
   <a class="anchor-link" href="#scanstsv" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -667,7 +667,7 @@ print(filtered_df.head())
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The current release includes BrainSwipes results for structural and functional MRI only; diffusion results will be added in a future release. However, automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_space-ACPC_desc-image_qc.tsv</code> within the <a href="../dmri/#qsiprep">QSIPrep derivatives</a>. See the <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details.</p>  
+<p>The current release includes BrainSwipes results for structural and functional MRI only; diffusion results will be added in a future release. However, automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-{ID}_ses-{V0X}_space-ACPC_desc-image_qc.tsv</code> within the <a href="../dmri/#qsiprep">QSIPrep derivatives</a>. See the <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details.</p>  
 <p>Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. <strong>NDC can also be used as a covariate in analyses to account for QC variation.</strong></p>  
 <p><strong>Left</strong>: NDC calculated pre- and post-processing for each vendor using combined AP/PA scans (solid = processed, dashed = raw).<br>  
 <strong>Right</strong>: Shell-wise CNR per vendor, calculated by Eddy. Because all data shown passed preliminary QC, we do not provide exclusion threshold recommendations. However, NDC and CNR are useful covariates when analyzing other derivatives.</p>

@@ -526,7 +526,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
       <td><a href="eeg/#rawbids" target="_blank">All Tasks - <strong><i>Raw BIDS</i></strong></a></td>
-      <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/eeg/</i></td>
+      <td><i>rawdata/sub-{ID}/ses-{V0X}/eeg/</i></td>
     </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
@@ -693,7 +693,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
     <td><a href="sensors/wearsensors/#rawbids" target="_blank">Raw BIDS</a></td>
-    <td><i>rawdata/sub-&lt;label&gt;/ses-&lt;label&gt;/motion/</i></td>
+    <td><i>rawdata/sub-{ID}/ses-{V0X}/motion/</i></td>
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>

@@ -58,12 +58,12 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 </tr>
 <tr>
   <td>Session</td>
-  <td><code>sub-&lt;ID&gt;_sessions.tsv</code></td>
+  <td><code>sub-{ID}_sessions.tsv</code></td>
   <td style="word-wrap: break-word; white-space: normal;">Session information (e.g., collection site, participant’s age at each session, head size)</td>
 </tr>
 <tr>
   <td>Scan</td>
-  <td><code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code></td>
+  <td><code>sub-{ID}_ses-{V0X}_scans.tsv</code></td>
   <td style="word-wrap: break-word; white-space: normal;">Per-scan information (age at scan and raw data QC scores - see <a href="../../instruments/mri/qc/#location-of-raw-data-qc-results-in-data-release" target="_blank">HBCD MR Quality Control Procedures</a>)</td>
 </tr>
 </tbody>
@@ -161,7 +161,7 @@ Key fields for Philips (<i>and GE for T1w scans</i>) are hard-coded to ensure co
   </tbody>
 </table>
 <p><strong>QALAS</strong><br>
-QALAS conversion yielded either five 3D NIfTI files or one 4D file with five volumes and missing JSON headers. To standardize outputs, all series were split into five NIfTI files, each labeled by inversion time (<code>inv-&lt;label&gt;</code>). The JSON sidecars were updated as follows: <code>T2Prep</code> for QALAS file <code>inv-0</code> is set to 0.10 for Siemens/Philips and 0.09  for GE. <code>InversionTime</code> (s) is hard-coded per manufacturer as follows:</p>
+QALAS conversion yielded either five 3D NIfTI files or one 4D file with five volumes and missing JSON headers. To standardize outputs, all series were split into five NIfTI files, each labeled by inversion time (<code>inv-{X}</code>). The JSON sidecars were updated as follows: <code>T2Prep</code> for QALAS file <code>inv-0</code> is set to 0.10 for Siemens/Philips and 0.09  for GE. <code>InversionTime</code> (s) is hard-coded per manufacturer as follows:</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 90%;">
     <tr>
       <th></th><th>inv-0</th><th>inv-1</th><th>inv-2</th><th>inv-3</th><th>inv-4</th>
