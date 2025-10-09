@@ -105,12 +105,6 @@ Expand the sections below to see a list of measures associated with each domain 
     <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
     <td><code>TBD</code></td>
   </tr>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
-    <td><code>TBD</code></td>
-  </tr>
   </tbody>
   </table>
 </div>
@@ -171,13 +165,6 @@ Expand the sections below to see a list of measures associated with each domain 
     <td></td>
     <td>Self-Regulation and Flexibility</td>
     <td><code>mh_cg_pms__selfreg</code></td>
-  </tr>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td><a href="bcgi/erica" target="_blank">ERICA-FCM</a></td>
-    <td></td>
-    <td style="word-wrap: break-word; white-space: normal;">Co-regulation, Child Regulation/Dysregulation, Parenting</td>
-    <td><code>mh_pa_erica</code></td>
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
@@ -284,19 +271,12 @@ Expand the sections below to see a list of measures associated with each domain 
     <tr>
        <th style="width: 1%;"></th>
       <th style="width: 10%;">Instrument</th>
-      <th style="width: 30%;">Version</th>
+      <th style="width: 20%;">Version</th>
       <th style="width: 30%;">Construct</th>
       <th style="width: 10%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="neurocog/bayley-4" target="_blank">Bayley-4</a></td>
-      <td></td>
-      <td style="word-wrap: break-word; white-space: normal;">Child Development (Cognitive, Language, and Motor)</td>
-      <td><code>nc_ch_bayley</code></td>
-    </tr>
     <tr>
       <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
       <td><a href="neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a></td>
@@ -310,17 +290,6 @@ Expand the sections below to see a list of measures associated with each domain 
       <td></td>
       <td>Multilingual exposure</td>
       <td><code>ncl_ch_mlds</code></td>
-    </tr>
-    <tr>
-      <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td rowspan="2"><a href="neurocog/nih-btb" target="_blank">NIH Baby Toolbox</a></td>
-      <td>EF Gazed-Based Task</td>
-      <td>Cognitive/Executive Function/Memory</td>
-      <td rowspan="2"><code>nc_ch_nbtb</code></td>
-    </tr>
-    <tr>      
-      <td style="word-wrap: break-word; white-space: normal;">Mullen Receptive & Expressive + Observation</td>
-      <td>Language</td>
     </tr>
     <tr>
       <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
@@ -756,15 +725,7 @@ Expand the sections below to see a list of measures associated with each domain 
       <td></td>
       <td>Acculturation</td>
       <td><code>sed_cg_via</code></td>
-    </tr>        
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span></td>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage</a></td>
-      <td></td>
-      <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure & Other Neighborhood Measures</td>
-      <td><i>concatenated/geocoded_linkage/</i><br>
-      CONFIRM FOLDER NAME</td>
-    </tr>        
+    </tr>      
   </tbody>
   </table>
 </div>
@@ -992,13 +953,6 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
     <td><a href="sensors/wearsensors/#derivatives" target="_blank">Derivatives</a></td>
     <td><i>derivatives/hbcd-motion/</i></td>
-  </tr>
-  <tr>
-    <td>Infant Heart Rate</td>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td><a href="sensors/gabi/#rawbids" target="_blank">Raw BIDS</a></td>
-    <td>Regulation (Sleep/Wake)/<br>Autonomic Function</td>
-    <td><i>rawdata/sub-{ID}/ses-{V0X}/gabi/</i></td>
   </tr>
   </tbody>
   </table>

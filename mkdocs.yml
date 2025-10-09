@@ -83,7 +83,6 @@ nav:
             - 🚧 ecPROMIS Child/CG Relationship: instruments/bcgi/ecpromis.md
             - 🚧 ecPROMIS - Peer Relation: instruments/bcgi/ecpromis-pr.md
             - 🚧 ecPROMIS - Self-regulation: instruments/bcgi/ecpromis-selfreg.md
-            - ⚠️ ERICA: instruments/bcgi/erica.md
             - 🚧 FAD: instruments/bcgi/fad.md
             - 🚧 HOME-21: instruments/bcgi/home21.md
             - 🚧 IBQ/ECBQ-R (VSF)+BI: instruments/bcgi/ibqr.md
@@ -93,10 +92,8 @@ nav:
             - Nails: instruments/biospec/nails.md
             - Urine: instruments/biospec/urine.md
         - Neurocognition & Language:
-            - 🚧 Bayley-4: instruments/neurocog/bayley-4.md
             - 🚧 MacArthur-Bates CDI: instruments/neurocog/macarthur-bates.md
             - MLDS: instruments/neurocog/mlds.md
-            - ⚠️ NIH Baby Toolbox: instruments/neurocog/nih-btb.md
             - 🚧 SPM-2: instruments/neurocog/spm2.md
             - 🚧 Vineland: instruments/neurocog/vineland.md
         - Physical Health:
@@ -129,7 +126,6 @@ nav:
             - 🚧 Demographics Child: instruments/SED/demo-ch.md
             - Intimate Partner Violence: instruments/SED/ehits.md
             - 🚧 Employment: instruments/SED/current-employment.md
-            - 🚧 Geocoded Linkage: instruments/SED/geocoded-linkage.md
             - 🚧 Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
             - 🚧 Lead Exposures: instruments/SED/lead-exposures.md
             - Neighborhood Safety: instruments/SED/safety.md
@@ -157,7 +153,6 @@ nav:
             - Quantitative MRI: instruments/mri/qmri.md
             - Magnetic Resonance Spectroscopy: instruments/mri/mrs.md 
         - Novel Tech & Wearable Sensors:
-            - 🚧 Infant Heart Rate Sensor: instruments/sensors/gabi.md
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
         - Processing & Analytic Standards: 
@@ -165,7 +160,6 @@ nav:
             - Pipeline Software Standards: instruments/processing/standards.md
     - Recruitment & Retention:
         - 🚧 Study Navigators Contact Form: instruments/admin/study-navigators.md
-        - 🚧 Transition in Care Screener: instruments/admin/transitions-in-care.md
   - Release Notes: 
     - Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md

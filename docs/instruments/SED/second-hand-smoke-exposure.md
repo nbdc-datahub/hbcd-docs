@@ -21,6 +21,20 @@
 
 ---------------------------------------------
 
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</i></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>Participants report information for the child’s primary residence. If a child spends at least 2-days per week in multiple homes, reporters are asked to provide information for the home they are most familiar with. As a result, exposures to secondhand smoke or chemicals in those additional environments is not captured, which may result in incomplete exposure data.</p> 
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
