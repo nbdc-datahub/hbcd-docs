@@ -11,6 +11,7 @@
 <p> 
 • <a href="..">Overview & MR Protocols</a><br>
 • <a href="../qc">Quality Control Procedures</a><br>
+• <a href="../../processing/mr-derivs-quickstart">MRI Derivatives Quick Start Guide </a>
 </p>
 </div>
 

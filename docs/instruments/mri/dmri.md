@@ -9,7 +9,7 @@
 <div class="notification-static-content">
 <p> 
 • <a href="..">Overview & MR Protocols</a><br>
-• <a href="../qc">Quality Control Procedures</a><br>
+• <a href="../qc">Quality Control Procedures</a>
 </p>
 </div>
 
