@@ -73,7 +73,7 @@ If you have questions or would like to report an issue, please submit a ticket t
   <span class="arrow">▸</span>
 </div>
 <div class="issues-collapsible-content">
-<p>Child Multi-Race & Ethnicity (<code>child_ethnoracial_acs_by_multi_&lt;race|ethnicity&gt;</code>) variables are populated at V01, prior to the child being born. V01 data will be removed.</p>
+<p>Child Multi-Race & Ethnicity (<code>child_ethnoracial_acs_by_multi_&lt;race|ethnicity&gt;</code>) V01 data will be removed and in the meantime, we do not recommend using V01 data for this variable in analyses.</p>
 </div>
 
 ### Visit Information (`par_visit_data`)
