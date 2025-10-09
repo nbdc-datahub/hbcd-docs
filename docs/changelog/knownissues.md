@@ -219,25 +219,6 @@ If you have questions or would like to report an issue, please submit a ticket t
 <div class="issues-collapsible-content">
 <p>TLFB age variable fields (<code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>) were removed for R1.1 due to incorrect values. Until added in a future release, users can refer to corresponding age variables in related datasets for the same time point.</p>
 </div>
-    
-## <a href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
-
-<div id="discr" class="issues-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text-with-link">
-  <span class="text">PhenX+ Discrimination (<code>sed_bm_phx__discr.006</code>): Blank Cells</span>
-  <span class="badge">Fix: 2.0</span>
-  <a class="anchor-link" href="#discr" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="issues-collapsible-content">
-<p>For the PhenX+ Discrimination survey, the <code>sed_bm_phx__discr.006</code> multi-select question:<br>
-<i>"What do you think is the main reason for these experiences? If more than one main reason, check all that apply."</i><br>
-is blank for some participants. This will be corrected in R2.0.</p>
-</div>
 
 ## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-magnet"></i></a> Imaging Data
 
