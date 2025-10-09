@@ -134,7 +134,7 @@ nav:
             - Processing Pipelines: instruments/processing/index.md
             - Pipeline Software Standards: instruments/processing/standards.md
   - Release Notes: 
-    - Upcoming Updates: changelog/pending.md
+    - Pending Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
     - Release Notes & History: changelog/releasenotes.md
   - Help & Support:

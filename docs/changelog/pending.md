@@ -1,4 +1,4 @@
-# Upcoming Updates
+# Pending Updates
 
 ## Release 2.0 (Release Date TBA)
 
@@ -447,14 +447,10 @@
 <tbody>
 <tr>
   <td>#1</td>
-  <td>Addition of <strong>source DICOMs</strong> for <a href="../../datacuration/file-based-data/#raw-bids" target="_blank">raw BIDS</a> for all imaging modalities.</td>
-</tr>
-<tr>
-  <td>#2</td>
   <td>Processed <a href="../../instruments/mri/fmri/#nibabies" target="_blank" rel="noopener noreferrer">Infant fMRIPrep</a> and <a href="../../instruments/mri/fmri/#xcpd" target="_blank" rel="noopener noreferrer">XCP-D</a> derivatives for <strong>visits V03+</strong>.</td>
 </tr>
 <tr>
-  <td>#3</td>
+  <td>#2</td>
   <td style="word-wrap: break-word; white-space: normal;">Addition of <strong>MRI Scanner Information</strong> for all scanners used at each site to <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank"><code>sub-{ID}_ses-{V0X}_scans.tsv</code></a>, including ScannerManufacturer, ScannerModel, ScannerSoftwareVersion, and ScannerSerialNumber (used to differentiate different scanners at the same site). Note that this information is currently available in the sidecar JSON files for raw imaging data, e.g.:
   <pre style="font-size: 12px;">
         hbcd/
@@ -465,6 +461,19 @@
                         |__ sub-{ID}_ses-{V0X}_run-{X}_T1w.json
         </pre>
   </td>
+</tr>
+</tbody>
+</table>
+
+## Release 2.1 (Release Date TBA)
+
+### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 Brain Imaging File-Based Data Updates
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
+<tbody>
+<tr>
+  <td>#1</td>
+  <td>Addition of <strong>source DICOMs</strong> for <a href="../../datacuration/file-based-data/#raw-bids" target="_blank">raw BIDS</a> for all imaging modalities.</td>
 </tr>
 </tbody>
 </table>
