@@ -99,7 +99,7 @@ Also available as CIFTI <code>.ptseries.nii</code> files, where columns = region
 <i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_space-fsLR_seg-<span style="color: teal;">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv</code></i><br>
 <i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> Quick inspection, validation, or as input to network and graph analyses.</p>
 <p class="details">
-Tab-delimited matrices of pairwise Pearson correlations between atlas regions, computed from parcellated time series.  
+Tab-delimited matrices of pairwise Pearson correlations between atlas regions, computed from interpolated and censored parcellated time series.
 These matrices form the foundation for ROI-to-ROI connectivity analyses.
 </p>
 
