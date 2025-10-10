@@ -1,4 +1,3 @@
-
 /* Table styling */
 table {
     border-collapse: collapse;
@@ -143,9 +142,6 @@ th, td {
 .table-static-content li {
   margin: 0; /* override even the slight spacing */
   padding: 0;
-}
-.table-static-content b {
-  color: #6300d3;
 }
 
 /* Table with no vertical lines */
