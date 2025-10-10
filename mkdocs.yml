@@ -121,6 +121,7 @@ nav:
         - Magnetic Resonance Imaging:
             - Overview & MR Protocols: instruments/mri/index.md
             - Quality Control Procedures: instruments/mri/qc.md
+            - MRI Derivatives Quick Start Guide: instruments/mri/derivs-quickstart.md
             - Structural MRI: instruments/mri/smri.md
             - Functional MRI: instruments/mri/fmri.md
             - Diffusion MRI: instruments/mri/dmri.md
