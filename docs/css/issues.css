@@ -73,6 +73,9 @@
 .issues-collapsible-content.open {
   max-height: none;
 }
+
+
+
 /* Pill base */
 .pill {
   display: inline-block;
