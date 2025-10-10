@@ -1,11 +1,11 @@
 # Visual Evoked Potential Task
 
-<div class="warning-banner static-banner" style="background-color:#fff3cd; border-left: 5px solid #ffa500;">
+<div class="warning-banner">
 <span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
 <span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
 </div>
 <p></p>
- 
+
 The Visual Evoked Potential Task (**VEP**) (v.11.29.23) measures development of visual cortex and response to stimuli, reflecting underlying cortical development. VEP amplitude and latency decreases with age during the first three years of life. The VEP has been associated with concurrent and later developmental outcomes as a function of prenatal substance exposures ([Margolis et al., 2024](https://psycnet.apa.org/record/2024-66755-001)), early visual enrichment or deprivation ([Jensen et al., 2019](https://doi.org/10.1038/s41598-019-39242-x)), vision system maturation ([Lippé et al., 2009](https://doi.org/10.3389/neuro.09.048.2009)), neurodevelopmental disorders (e.g., ASD and ADHD; [Cremone-Caira et al., 2023](https://doi.org/10.1007/s10803-023-06005-7); [Nazhvani et al., 2013](https://doi.org/10.1016/j.clineuro.2013.08.009)), and reading and learning disabilities ([Shandiz et al., 2017](https://doi.org/10.4103/jovr.jovr_106_16)). The morphology of the VEP likely reflects varying degrees of synaptic efficiency and as such, can be used as a readout of general cortical function. 
 
 ## Task Details
