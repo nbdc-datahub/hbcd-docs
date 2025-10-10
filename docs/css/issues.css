@@ -9,7 +9,7 @@
   color: #474646;
   font-weight: bold;
   gap: 8px;                 /* space between emoji and text */
-  font-size: 0.9em;
+  font-size: 0.7em;
   line-height: 1.1;
   border-radius: 6px; /* round edges */
   width: 100%;
@@ -25,6 +25,56 @@
 .issues-banner .text {
   flex: 1;                  /* text takes remaining space */
 }
+.issues-banner .badge {
+  background-color: #fff4ed;   /* soft tint of orange */
+  color: #b45309;              /* dark amber text */
+  border: 1px solid #f97316;   /* thin border to match icon color */
+  border-radius: 9999px;       /* pill shape */
+  font-size: 1em;
+  font-weight: 600;
+  padding: 2px 8px;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+.issues-collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f96f0d13;
+  border-top: none;
+  padding: 0 0;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 10px; /* Adds spacing below the section */
+  width: 100%;
+  display: block;
+  overflow-x: auto; 
+}
+.issues-collapsible-content p {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  line-height: 1.3;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+.issues-collapsible-content ul {
+  display: inline-block;
+  padding: 0 10px;          /* remove default left indentation */
+  margin: 0.2em 0;          /* small top/bottom spacing only */
+  font-size: 0.9em;
+  line-height: 1.2;
+  list-style-position: inside;
+}
+
+.issues-collapsible-content li {
+  margin: 0;                /* removes extra space between list items */
+  padding: 0;               /* keep list tight */
+}
+.issues-collapsible-content.open {
+  max-height: none;
+}
+
+
 
 /* Pill base */
 .pill {

@@ -150,12 +150,27 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Out-of-range values were filtered (i.e. changed to "n/a") for Health V2- Infancy (<code>pex_bm_healthv2_inf</code>). Valid field values are documented <a href="../../../changelog/versions/R1/#filtered-field-values" target="_blank">here</a> under Exclusion Criteria for the current release.</p>
+<p>Out-of-range values were filtered (i.e. changed to "n/a") for the following Health V2- Infancy (<code>pex_bm_healthv2_inf</code>) fields:</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr> 
+  <th>Field Name</th>    
+  <th>Field Description</th> 
+  <th>Valid Range</th>
+  </tr>
+</thead>
+<tbody>               
+  <tr><td><code>pex_bm_healthv2_inf_001__01</code></td><td>Weight at birth (oz)</td><td>≤ 16</td></tr>     
+  <tr><td><code>pex_bm_healthv2_inf_001__02</code></td><td>Weight at birth (lbs)</td><td>≤ 66</td></tr>     
+  <tr><td><code>pex_bm_healthv2_inf_002</code></td><td>Length at birth (inches)</td><td>12 - 51</td></tr>     
+  <tr><td><code>pex_bm_healthv2_inf_002__01</code></td><td>Calculated length at birth (cm)</td><td>30 - 130</td></tr>   
+</tbody>
+</table>
 </div>
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">The data for one or more of these instruments has known issues - <a href="../../../changelog/knownissues/#pregnancy-infant-health" target="_blank">see details</a>.</span>
+  <span class="text">The data for one or more of these instruments has known issues - <a href="../../../changelog/knownissues/#pex" target="_blank">see details</a>.</span>
 </div>
 
 ## Administration & Quality Control
