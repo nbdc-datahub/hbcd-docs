@@ -1,8 +1,8 @@
 # Auditory Mismatch Negativity Task 
 
 <div class="warning-banner static-banner" style="background-color:#fff3cd; border-left: 5px solid #ffa500;">
-  <span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
-  <span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
+<span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
+<span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
 </div>
 <p></p>
  
@@ -16,28 +16,27 @@ Auditory stimuli (“ba” = 196 ms; “da” = 198 ms) are presented while a vi
 
 <img src="../images/mmn-trial.jpg" width="90%" height="auto" class="center">
 <div style="margin-left: 10%; margin-right: 10%;">
-  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-    <tbody>
-      <tr>
-        <td style="width: 50%;"><strong>Trial Count</strong><br>
-          <ul>
-            <li>Standard condition: 569</li>
-            <li>Deviant condition: 98 </li>
-            <li>Total: 667</li>
-          </ul>
-        </td>
-        <td style="width: 50%;"><strong>Timing Details</strong><br>
-          <ul>
-            <li>Stimulus duration: 200 ms</li>
-            <li>InterStimulus interval: 820 ms (V03), 600 ms (V04/V06)</li>
-            <li>Total trial length: 1020 ms (V03), 800 ms (V04/V06)</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+<td style="width: 50%;"><strong>Trial Count</strong><br>
+<ul>
+<li>Standard condition: 569</li>
+<li>Deviant condition: 98 </li>
+<li>Total: 667</li>
+</ul>
+</td>
+<td style="width: 50%;"><strong>Timing Details</strong><br>
+<ul>
+<li>Stimulus duration: 200 ms</li>
+<li>InterStimulus interval: 820 ms (V03), 600 ms (V04/V06)</li>
+<li>Total trial length: 1020 ms (V03), 800 ms (V04/V06)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
-
 
 ### References
 
@@ -56,4 +55,3 @@ Auditory stimuli (“ba” = 196 ms; “da” = 198 ms) are presented while a vi
   <p>Schwartz, S., Shinn-Cunningham, B., & Tager-Flusberg, H. (2018). Meta-analysis and systematic review of the literature characterizing auditory mismatch negativity in individuals with autism. <i>Neuroscience & Biobehavioral Reviews</i>, 87, 106–117. <a href="https://doi.org/10.1016/j.neubiorev.2018.01.008" target="_blank">https://doi.org/10.1016/j.neubiorev.2018.01.008</a></p>
 </div>
 <br>
-

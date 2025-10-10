@@ -1,8 +1,8 @@
 # Visual Evoked Potential Task
 
 <div class="warning-banner static-banner" style="background-color:#fff3cd; border-left: 5px solid #ffa500;">
-  <span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
-  <span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
+<span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
+<span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
 </div>
 <p></p>
  
@@ -29,4 +29,3 @@ The Visual Evoked Potential Task (**VEP**) (v.11.29.23) measures development of 
     <p>Shandiz, J. H., Heyrani, M., Sobhani-Rad, D., Salehinejad, Z., Shojaei, S., Khoshsima, M. J., Azimi, A., Yekta, A. A., & Yazdi, S. H. H. (2017). Pattern Visual Evoked Potentials in Dyslexic Children. <em>Journal of Ophthalmic & Vision Research</em>, 12(4), 402–406. <a href="https://doi.org/10.4103/jovr.jovr_106_16" target="_blank">https://doi.org/10.4103/jovr.jovr_106_16</a></p>
 </div>
 <br>
-
