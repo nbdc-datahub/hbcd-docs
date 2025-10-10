@@ -1,6 +1,6 @@
 # Auditory Mismatch Negativity Task 
 
-<div class="warning-banner static-banner" style="background-color:#fff3cd; border-left: 5px solid #ffa500;">
+<div class="warning-banner">
 <span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
 <span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
 </div>
