@@ -1,4 +1,4 @@
-# Quality Control Procedures   
+# Quality Control Procedures
 
 ## QC Dashboard
 
