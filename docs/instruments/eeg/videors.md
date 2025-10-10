@@ -1,12 +1,13 @@
 # Video Resting State Task
 
 <div class="warning-banner static-banner" style="background-color:#fff3cd; border-left: 5px solid #ffa500;">
-  <span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
-  <span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
+<span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
+<span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
 </div>
 <p></p>
 
-The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the development of large-scale neural networks during infancy and early childhood via information about neural oscillations measured in EEG power across the scalp. Developmental changes in oscillatory activity reflect underlying developing large-scale neural networks associated with early self-regulatory, cognitive, and affective processes and developmental outcomes ([Gabard-Durnam et al., 2019](https://doi.org/10.1038/s41467-019-12202-9); [Jones et al., 2020](https://doi.org/10.1038/s41598-020-67687-y); [Whedon et al., 2020](https://doi.org/10.1016/j.bandc.2020.105636)). The metrics derived from the resting EEG signal include power across the frequency spectrum ([Gabard-Durnam et al., 2019](https://doi.org/10.1038/s41467-019-12202-9)) and relative power between different scalp locations ([Davidson & Fox, 1982](https://doi.org/10.1126/science.7146906)).
+The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the development of large-scale neural networks during infancy and early childhood via information about neural oscillations measured in EEG power across the scalp. Developmental changes in oscillatory activity reflect underlying developing large-scale neural networks associated with early self-regulatory, cognitive, and affective processes and developmental outcomes ([Gabard-Durnam et al., 2019](https://doi.org/10.1038/s41467-019-12202-9); [Jones et al., 2020](https://doi.org/10.1038/s41598-020-67687-y); [Whedon et al., 2020](https://doi.org/10.1016/j.bandc.2020.105636)). The metrics derived from the resting EEG signal include power across the frequency spectrum ([Gabard-Durnam et al., 2019](https://doi.org/10.1038/s41467-019-12202-9)) and relative power between different scalp locations ([Davidson & Fox, 1982](https://doi.org/10.1126/science.7146906)).     
+
 
 ### Task Details
 
@@ -23,4 +24,3 @@ Participants watch a silent video for the duration of the RS task. In **V03** (*
     <p>Whedon, M., Perry, N. B., & Bell, M. A. (2020). Relations between frontal EEG maturation and inhibitory control in preschool in the prediction of children’s early academic skills. <em>Brain and Cognition</em>, 145, 105636. <a href="https://doi.org/10.1016/j.bandc.2020.105636" target="_blank">https://doi.org/10.1016/j.bandc.2020.105636</a></p>
 </div>
 <br>
-

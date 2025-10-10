@@ -1,8 +1,8 @@
 # Faces Task
 
 <div class="warning-banner static-banner" style="background-color:#fff3cd; border-left: 5px solid #ffa500;">
-  <span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
-  <span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
+<span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
+<span class="text">Required Reading: <a href="..">Overview & EEG Protocols</a> & <a href="../qc">Quality Control Procedures</a></span>
 </div>
 <p></p>
 
@@ -15,20 +15,20 @@ ERPs indexing different stages of processing are computed from repeated presenta
 <p>
 <u><b>Face task schematic (Face vs. Object) & Task Details:</b></u>
 <div style="display: flex; align-items: center;">
-  <img src="../images/eeg-facetask.png" alt="EEG Face Task" width="45%" height="auto">
-  <div style="padding-left: 15px;">
+<img src="../images/eeg-facetask.png" alt="EEG Face Task" width="45%" height="auto">
+<div style="padding-left: 15px;">
 The task consists of 2 blocks:
 <blockquote>
-  <p><strong>Block 1</strong>: 50 trials of upright faces and 50 trials of inverted faces <br />
-  <strong>Block 2</strong>: 50 trials of upright faces and 50 trials of objects</p>
+<p><strong>Block 1</strong>: 50 trials of upright faces and 50 trials of inverted faces <br />
+<strong>Block 2</strong>: 50 trials of upright faces and 50 trials of objects</p>
 </blockquote>
 Timing Details:
 <blockquote>
-  <p><strong>Stimulus duration</strong>: 500 ms <br />
-  <strong>Interstimulus interval</strong>: 600-700 ms <br />
-  <strong>Total trial length</strong>: 110-1200 ms</p>
+<p><strong>Stimulus duration</strong>: 500 ms <br />
+<strong>Interstimulus interval</strong>: 600-700 ms <br />
+<strong>Total trial length</strong>: 110-1200 ms</p>
 </blockquote>
-  </div>
+</div>
 </div></p>
 
 ## References
@@ -40,4 +40,3 @@ Timing Details:
   <p>Scherf, K. S., & Scott, L. S. (2012). Connecting developmental trajectories: Biases in face processing from infancy to adulthood. <i>Developmental Psychobiology</i>, 54(6), 643–663. <a href="https://doi.org/10.1002/dev.21013" target="_blank">https://doi.org/10.1002/dev.21013</a></p>
 </div>
 <br>
-
