@@ -1,3 +1,4 @@
+
 # Tabulated Data
 
 <p>
@@ -7,7 +8,7 @@
 </div>
 </p>
 
-Tabulated data are participant-level summaries of study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), administrative (<a href="../../instruments/#demographics-visit-information" target="_blank">demographics & visit info</a>), and select <a href="../overview/#warning" target="_blank">file-based</a> data. Files are stored under `rawdata/phenotype/`:
+Tabulated data are participant-level summaries of study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), <a href="../../instruments/#demo" target="_blank">Demographics</a>, and select <a href="../overview/#warning" target="_blank">file-based</a> data. Files are stored under `rawdata/phenotype/`:
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -15,14 +16,13 @@ hbcd/
         |__ sed_basic_demographics.*        <span class="hashtag"># Basic Demographics</span>
         |__ par_visit_data.*                <span class="hashtag"># Visit Information</span>
         |__ bio_biosample_<span class="placeholder">&lt;nails|urine&gt;</span>.*   <span class="hashtag"># Toxicology</span>
-        |__ <span class="placeholder">&lt;instrument_name&gt;</span>.*             <span class="hashtag"># Instrument Data</span>
+        |__ <span class="placeholder">{instrument_name}</span>.*               <span class="hashtag"># Instrument Data</span>
 </pre>
 
 Key features of tabulated data include:
 
  - [Table Organization](#table-organization): tables are organized following the BIDS standard so that data from different sources can be linked together by participant ID and visit number
  - [File Types](#file-types): tables are available in both plain text (`.tsv`) and Parquet (`.parquet`) format, with accompanying metadata that explains the contents of each table
- 
 
 ## Table Organization
 

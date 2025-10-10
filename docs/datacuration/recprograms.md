@@ -46,5 +46,5 @@ A command-line tool that provides a variety of functions for processing and anal
   [Download page for R/RStudio <i class="fa fa-download"></i>](https://posit.co/download/rstudio-desktop/)
 
 
-## Electroencaphalography (EEG) Data
+## Electroencephalography Data
 The EEG Core of the HBCD Data Coordinating Center (HDCC) has developed some helpful tools for extracting summary statistics and trial measures from HBCD EEG release data. We encourage all users to explore these resources at the [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/en/latest/) website.

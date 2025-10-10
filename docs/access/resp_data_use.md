@@ -114,6 +114,3 @@ The HBCD Responsible Use of Data Committee (RUDC) provides the following guidanc
   <p>Writing respectfully: Person-first and identity-first language. (n.d.). National Institutes of Health (NIH). Retrieved June 5, 2025, from <a href="https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language">https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language</a></p>
 </div>
 <br>
-
-
-
