@@ -19,7 +19,7 @@ Below is a summary of key MRI derivatives used for **structural morphology** and
 
 ## <i class="fas fa-cubes"></i> Structural Morphology
 
-XCP-D produces several surface-based derivatives commonly used to assess cortical features, available within each participant’s `anat/` subfolder ([see full file tree](../mri/smri.md#xcpd)). These include **thickness**, **curvature**, and **sulcal depth**, often summarized within atlas-defined regions or compared across subjects to study cortical development and brain morphology.  
+XCP-D produces several surface-based derivatives commonly used to assess cortical features, available within each participant’s `anat/` subfolder ([see full file tree](../mri/fmri.md#xcpd)). These include **thickness**, **curvature**, and **sulcal depth**, often summarized within atlas-defined regions or compared across subjects to study cortical development and brain morphology.  
 Below are the key files and their **recommended use**.
 
 -----------

@@ -55,7 +55,7 @@ hbcd/
 
 ## MRI Derivatives: Quick Start Guide
 
-Below is a summary of key MRI derivatives used for **structural morphology** and resting-state functional MRI (rsfMRI) **functional connectivity** analyses. Key derivatives are produced by the **XCP-D** pipeline, which builds on BIBSNet and Infant-fMRIPrep outputs to produce fully preprocessed, denoised, and quality-assessed data. The full list of available XCP-D outputs are documented [here](../mri/smri.md#xcpd). **Click to expand** sections below for details.
+Below is a summary of key MRI derivatives used for **structural morphology** and resting-state functional MRI (rsfMRI) **functional connectivity** analyses. Key derivatives are produced by the **XCP-D** pipeline, which builds on BIBSNet and Infant-fMRIPrep outputs to produce fully preprocessed, denoised, and quality-assessed data. The full list of available XCP-D outputs are documented [here](../mri/fmri.md#xcpd). **Click to expand** sections below for details.
 
 <div id="struc" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-cubes"></i></span>
