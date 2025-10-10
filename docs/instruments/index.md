@@ -1,5 +1,5 @@
 # Study Instruments
-The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)** for the majority of measures. In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Full study protocols are available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). See [Upcoming Updates](../changelog/pending.md) for details on what to expect in future releases.
+The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)** for the majority of measures. In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Full study protocols are available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). See [Pending Updates](../changelog/pending.md) for details on what to expect in future releases.
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
@@ -9,12 +9,12 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 <img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="90%" height="auto" class="center">
 
-HBCD Study data includes both **tabulated** and **file-based** data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
+HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 
 - <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
-- File-based data include <a href="../datacuration/file-based-data/#raw-bids" target="_blank"><b>raw</b></a> and <a href="../datacuration/file-based-data/#processed-derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
+- File-based data include <a href="../datacuration/file-based-data/#raw-bids" target="_blank"><b>raw</b></a> and <a href="../datacuration/file-based-data/#derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
 
-Expand the sections below to see a list of measures associated with each domain included in Release 1.0.
+Expand the sections below to see a list of measures associated with each domain included in the latest release data.
 
 ## Instruments by Domain
 
@@ -39,12 +39,12 @@ Expand the sections below to see a list of measures associated with each domain 
   Expand All Sections ↕️
 </button>
 
-### Demographics & Visit Information
+### Demographics
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
   <span class="text-with-link">
-  <span class="text">Basic Demographics & Visit Info</span>
+  <span class="text">Demographics</span>
   <a class="anchor-link" href="#demo" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -168,7 +168,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 
 <div id="neurocog" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-brain"></i></span>
+  <span class="emoji"><i class="fa-solid fa-puzzle-piece"></i></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
   <a class="anchor-link" href="#neurocog" title="Copy link">
@@ -538,7 +538,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-magnet"></i></span>
+  <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
     <span class="text">MRI & MRS</span>
     <a class="anchor-link" href="#mri" title="Copy link">
@@ -553,7 +553,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <tr>
       <th style="width: 1%;"></th>
       <th style="width: 10%;"><a href="../datacuration/file-based-data/#raw-bids" target="_blank"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Raw BIDS</a></th>
-      <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> <a href="../datacuration/file-based-data/#processed-derivatives" target="_blank">Derivatives</a> [Source <a href="processing" target="_blank">Pipeline</a>]</th>
+      <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> <a href="../datacuration/file-based-data/#derivatives" target="_blank">Derivatives</a> [Source <a href="processing" target="_blank">Pipeline</a>]</th>
       <th style="width: 40%;"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Tables Derived from Pipeline Derivatives</th>
     </tr>
   </thead>
@@ -653,7 +653,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <tr>
     <td colspan="4">
       <strong>Label Values Legend</strong><br>
-      <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations): 4S-{1-10}56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)<br>
+      <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations): 4S-&lt;156|256|...|1056&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)<br>
       <b style="color: #0077cc;">&lt;Q&gt;</b> (quantification method): HERCULES_diff1, HERCULES_diff2, HERCULES_sum, unedited_A
     </td>
   </tr>

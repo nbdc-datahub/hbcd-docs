@@ -55,7 +55,7 @@ All [tabulated data](../datacuration/phenotypes.md) include the following fields
     <tbody>
 <tr>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Gestational Age at Administration (GAA)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>&lt;instrument&gt;_gestational_age</code></td>
+<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>{instrument}_gestational_age</code></td>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Time from the first day of the birth parent's <span class="tooltip">LMP
 		<span class="tooltiptext">Last menstrual period, estimated as EDD minus 280 days</span>
 	  </span> to the instrument administration date.
@@ -68,7 +68,7 @@ All [tabulated data](../datacuration/phenotypes.md) include the following fields
 </tr>
 <tr>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Chronological Age at Administration</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>&lt;instrument&gt;_candidate_age</code></td>
+<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>{instrument}_candidate_age</code></td>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Time from birth (with the birthdate jittered up to 7 days to mitigate identification risks) to the date of instrument administration</td>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;"><span class="tooltip">Years
 		<span class="tooltiptext">Reporting in years, rather than months, ensures consistency across developmental stages (e.g., toddlerhood, childhood), while three-decimal precision compensates for birthdate adjustments, yielding values closer to actual age.</span></span> (to 3 decimal places), calculated by dividing the total days elapsed (rounded down) by 365.25</td>
@@ -76,7 +76,7 @@ All [tabulated data](../datacuration/phenotypes.md) include the following fields
 </tr>
 <tr>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Adjusted Chronological Age at Administration (ACAA)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>&lt;instrument&gt;_adjusted_age</code></td>
+<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>{instrument}_adjusted_age</code></td>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Time elapsed between the <span class="tooltip">EDD
 		<span class="tooltiptext">estimated date of delivery</span>
 	  </span> and date of instrument administration</td>

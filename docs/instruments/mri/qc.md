@@ -1,93 +1,13 @@
 # HBCD MR Quality Control Procedures
 
-## Data Release Eligibility Criteria
-
-Acquisition parameters vary by scanner vendor, so inclusion criteria are typically defined as acceptable **ranges** rather than fixed values. Modality-specific criteria are extracted from BIDS sidecar JSON files and evaluated accordingly.
-
-<div id="acq-param-table" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-circle-check"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Release Eligibility: Acquisition Parameter Ranges</span>
-  <a class="anchor-link" href="#acq-param-table" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><i>NOTE: All images are additionally checked to confirm they were acquired using a head coil.</i></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-  <thead>
-    <tr>
-      <th>Scan Type</th>
-      <th>Repetition Time (TR)</th>   
-      <th>Echo Time (TE)</th>        
-      <th>Inversion Time (TI)</th>    
-      <th>Slice Thickness</th>  
-      <th>Number of Volumes</th>  
-    </tr>
-  </thead>
-<tbody>
-<tr>
-	<td>T1w</td>
-	<td>2.3 - 2.41</td>
-    <td>0.002 - 0.0035</td>
-	<td>1.06 - 1.1</td>    
-    <td>0.8</td>    
-    <td>NA</td>    
-	</tr>
-	<tr>
-		<td>T2w</td>
-		<td>2.5 - 4.5</td>
-    <td>0.09 - 0.15</td>
-		<td>0.29 - 0.33</td>    
-    <td>0.563 - 0.565</td>    
-    <td>NA</td>
-	</tr>  
-	<tr>
-		<td>MRS Localizer</td>
-		<td>2.5 - 4.5</td>
-    <td>0.09 - 0.15</td>
-		<td>0.29 - 0.33</td>    
-    <td>0.563 - 0.565</td>    
-    <td>NA</td>
-	</tr>   
-	<tr>
-		<td>Diffusion</td>
-		<td>4.8</td>
-    <td>0.0880 - 0.0980</td>
-		<td>NA</td>    
-    <td>1.7</td>    
-    <td>≥ 90 (AP + PA)</td>  
-	</tr>  
-	<tr>
-		<td>EPI Fieldmap</td>
-		<td>8.4 - 9.2</td>
-    <td>0.064 - 0.0661</td>
-		<td>2</td>    
-    <td>0.563 - 0.565</td>    
-    <td>NA</td>
-	</tr>  
-	<tr>
-		<td>Functional</td>
-		<td>1.725</td>
-    <td>0.0369 - 0.0371</td>
-		<td>NA</td>    
-    <td>2</td>  
-    <td>≥ 87 (~2.5 min)</td>   
-	</tr>  
-</tbody>
-</table>
-</div>
-
 ## Raw MR Data QC
 
-Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. Raw data QC is performed to detect acquisition errors, image artifacts, or corrupted files early so that problematic scans are excluded from the released raw BIDS dataset and [downstream processing](../processing/index.md#file-selection-for-processing). **Raw data QC metrics are included in the raw BIDS `sub-<ID>_ses-<V0X>_scans.tsv` files - [see details](../../datacuration/file-based-data.md#participant-session-scan-level-data).**
+Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. Raw data QC is performed to detect acquisition errors, image artifacts, or corrupted files early so that problematic scans are excluded from the released raw BIDS dataset and [downstream processing](../processing/index.md#file-selection-for-processing).
 
-<div id="scanstsv" class="table-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fa fa-info-circle"></i></span>
+<div id="scanstsv" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fa-solid fa-location-dot"></i></span>
   <span class="text-with-link">
-  <span class="text">Raw MR QC metrics included in the release (<code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_scans.tsv</code>)</span>
+  <span class="text">Location of Raw MR QC metrics in Release Data: <a href="../../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV Files (<code>*_scans.tsv</code>)</a></span>
   <a class="anchor-link" href="#scanstsv" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -95,7 +15,7 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><i>Note: <b>x</b> values for b<b>x</b> below include 0, 500, 1000, 2000, and 3000</i></p>
+<p>The session folder <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files include the following QC metrics. <i>Note: <b>x</b> values for b<b>x</b> below include 0, 500, 1000, 2000, and 3000</i></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <thead>
@@ -402,84 +322,12 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
 
 <p></p>
 
-#### Automated QC
+#### <i class="fa fa-desktop"></i> Automated QC
 
-Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload. It consists of three main steps:
+Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload. Following [protocol compliance and completeness checks](#compliance), the following automated QC metrics available in the release are calculated:
 
-<div id="protocol-compliance" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-circle-check"></i></span>
-  <span class="text-with-link">
-<span class="text">Protocol Compliance</span>
-  <a class="anchor-link" href="#protocol-compliance" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<ul>
-    <li>Extract imaging parameters from DICOM headers</li>
-    <li>Confirm key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner</li>
-    <li>Flag out-of-compliance series for review; sites are contacted if corrective action is needed</li>
-</ul>
-</div>
-
-<div id="completeness" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-circle-check"></i></span>
-  <span class="text-with-link">
-  <span class="text">Completeness Checks</span>
-  <a class="anchor-link" href="#completeness" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>Completeness checks verify that all expected series are present in each imaging session. For example, dMRI and fMRI require paired EPI field maps for distortion correction. Missing data usually indicate an aborted scan or incomplete data transfer (often resolved by re-sending files). Series included in a valid session include the following:</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Modality</th>
-  <th>Required Series</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>Structural MRI (sMRI)</td>
-    <td>T1w & T2w</td>
-</tr>
-<tr>
-    <td>Functional MRI (fMRI)</td>
-    <td>Resting state (rs) runs 1 & 2, each accompanied by fieldmaps acquired in AP and PA phase encoding directions</td>
-</tr>
-<tr>
-    <td>Diffusion MRI (dMRI)</td>
-    <td>Diffusion scans acquired in AP and PA phase encoding directions</td>
-</tr>
-<tr>
-    <td>Quantitative MRI (qMRI)</td>
-    <td>3DMagic/QALAS and B1 Map</td>
-</tr>
-<tr>
-    <td>MR Spectroscopy (MRS)</td>
-    <td> MRS scan and SVS localizer</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<div id="autoQC-metrics" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-desktop"></i></span>
-  <span class="text-with-link">
-<span class="text">Automated QC Metrics</span>
-  <a class="anchor-link" href="#autoQC-metrics" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<i>Automated QC Metrics</i>
 <thead>
 <tr>
     <th>Modality</th>
@@ -521,26 +369,65 @@ Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediatel
 </tr>
 </tbody>
 </table>
-</div>
 
-<p></p>
-
-#### Manual Review
-
-Automated metrics flag series for manual review using multivariate prediction and Bayesian classifiers. Trained technicians then score artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected** (QC = 0) and excluded from processing. Data are selected from the remaining series based on manual ratings, notes, and automated scores.
-
-<div id="autoQC-metrics" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-eye"></i></span>
+<div id="compliance" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
-<span class="text">Manual QC Metrics</span>
-  <a class="anchor-link" href="#manualQC-metrics" title="Copy link">
+<span class="text">Protocol Compliance & Completeness Checks</span>
+  <a class="anchor-link" href="#compliance" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><strong>Protocol Compliance</strong></p>
+<ul>
+    <li>Extract imaging parameters from DICOM headers</li>
+    <li>Confirm key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner</li>
+    <li>Flag out-of-compliance series for review; sites are contacted if corrective action is needed</li>
+</ul>
+<p><b>Completeness Checks</b><br>
+Completeness checks verify that all expected series are present in each imaging session. For example, dMRI and fMRI require paired EPI field maps for distortion correction. Missing data usually indicate an aborted scan or incomplete data transfer (often resolved by re-sending files). Series included in a valid session include the following:</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th>Modality</th>
+  <th>Required Series</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Structural MRI (sMRI)</td>
+    <td>T1w & T2w</td>
+</tr>
+<tr>
+    <td>Functional MRI (fMRI)</td>
+    <td>Resting state (rs) runs 1 & 2, each accompanied by fieldmaps acquired in AP and PA phase encoding directions</td>
+</tr>
+<tr>
+    <td>Diffusion MRI (dMRI)</td>
+    <td>Diffusion scans acquired in AP and PA phase encoding directions</td>
+</tr>
+<tr>
+    <td>Quantitative MRI (qMRI)</td>
+    <td>3DMagic/QALAS and B1 Map</td>
+</tr>
+<tr>
+    <td>MR Spectroscopy (MRS)</td>
+    <td> MRS scan and SVS localizer</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+
+#### <i class="fa-solid fa-eye"></i> Manual Review
+
+Automated metrics flag series for manual review using multivariate prediction and Bayesian classifiers. Trained technicians then score artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected** (QC = 0) and excluded from processing. Data are selected from the remaining series based on manual ratings, notes, and automated scores.
+
 <table class="compact-table-no-vertical-lines">
+<i>Manual QC Metrics</i>
 <thead>
 <tr>
     <th>Modality</th>
@@ -571,9 +458,6 @@ Automated metrics flag series for manual review using multivariate prediction an
 </tr>
 </tbody>
 </table>
-</div>
-
-
 
 ## BrainSwipes
 
@@ -655,40 +539,41 @@ print(filtered_df.head())
 
 ## QC Summary Statistics
 
-<div id="dwi-qc" class="table-banner" onclick="toggleCollapse(this)">
+<div id="fconn" class="static-banner" style="border-left: 5px solid #199bd6;">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
-  <span class="text">Automated QC for Processed Diffusion Data</span>
-  <a class="anchor-link" href="#dwi-qc" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
+    <span class="text">Functional Connectivity as Data Quality Improves</span>
+    <a class="anchor-link" href="#fconn" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
   </span>
-  <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-<p>The current release includes BrainSwipes results for structural and functional MRI only; diffusion results will be added in a future release. However, automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-&lt;ID&gt;_ses-&lt;V0X&gt;_space-ACPC_desc-image_qc.tsv</code> within the <a href="../dmri/#qsiprep">QSIPrep derivatives</a>. See the <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details.</p>  
+<div class="table-static-content">
+<p>Average functional connectivity matrices were computed using the Gordon parcellation from <a href="../fmri/#xcpd">XCP-D derivatives</a> for V02 sessions with data inclusion based on various thresholds of BrainSwipes QC results (<code>img_brainswipes_xcpd-bold</code>; <a href="../qc/#brainswipes">see details</a>). Functional connectivity patterns remained consistent even when incorporating data with lower QC scores, suggesting robustness to mild quality variations.</p>
+<p><strong>Connectivity matrices as data quality improves (Left -> Right) based on QC thresholds of 0.1, 0.5, and 0.9:</strong></p>
+<img src="../images/fconn_qc.png" style="width: 90%;" class="center">
+<br>
+</div>
+<p></p>
+
+<div id="dwi-qc" class="static-banner" style="border-left: 5px solid #199bd6;">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+    <span class="text">Automated QC for Processed Diffusion Data</span>
+    <a class="anchor-link" href="#dwi-qc" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+</div>
+<div class="table-static-content">
+<p>The current release includes BrainSwipes results for structural and functional MRI only; diffusion results will be added in a future release. However, automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-{ID}_ses-{V0X}_space-ACPC_desc-image_qc.tsv</code> within the <a href="../dmri/#qsiprep">QSIPrep derivatives</a>. See the <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details.</p>  
 <p>Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. <strong>NDC can also be used as a covariate in analyses to account for QC variation.</strong></p>  
 <p><strong>Left</strong>: NDC calculated pre- and post-processing for each vendor using combined AP/PA scans (solid = processed, dashed = raw).<br>  
 <strong>Right</strong>: Shell-wise CNR per vendor, calculated by Eddy. Because all data shown passed preliminary QC, we do not provide exclusion threshold recommendations. However, NDC and CNR are useful covariates when analyzing other derivatives.</p>
 <img src="../images/ndc_cnr_comparison.svg" width="95%" height="auto" class="center">
-</div>
-
-<div id="fconn" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-circle-check"></i></span>
-  <span class="text-with-link">
-  <span class="text">Functional Connectivity as Data Quality Improves</span>
-  <a class="anchor-link" href="#fconn" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>Average functional connectivity matrices were computed using the Gordon parcellation from <a href="../fmri/#xcpd">XCP-D derivatives</a> for V02 sessions with data inclusion based on various thresholds of BrainSwipes QC results (<code>img_brainswipes_xcpd-bold</code>; <a href="../qc/#brainswipes">see details</a>). Functional connectivity patterns remained consistent even when incorporating data with lower QC scores, suggesting robustness to mild quality variations.</p>
-<p><strong>Connectivity matrices as data quality improves (Left -> Right) based on QC thresholds of 0.1, 0.5, and 0.9:</strong></p>
-<img src="../images/fconn_qc.png" style="width: 100%;" class="center">
 <br>
 </div>
+
 
 ## References
 <div class="references">
