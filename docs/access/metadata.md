@@ -381,7 +381,7 @@ A standardized naming convention is used across most tables and fields in the <s
 
 The standard variable naming format is comprised of 4 or 5 main components: 
 
- <p style="font-size: 1.8em; font-weight: bold; padding: 10px;" align="center">
+<p style="font-size: 1.8em; font-weight: bold; padding: 10px;" align="center">
 <code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
 </p>
 
