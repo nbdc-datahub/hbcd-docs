@@ -149,7 +149,7 @@ Also see <a href="../../demo/basicdemo" target="_blank">Basic Demographics</a>, 
     <td>Hamilton, et al. (2011)</td>
     </tr>
     <tr>
-		<td>Sexual Orientation</td>
+    <td>Sexual Orientation (<i>available Release 1.1 - <a href="../../../changelog/pending/#inclusion-of-birth-parent-sexual-orientation">see details</a></i>)</td>
 		<td><a href="https://www.phenxtoolkit.org/protocols/view/11701">PhenX</a></td>
 		<td>Hamilton, et al. (2011)</td>
 	</tr>
@@ -330,3 +330,4 @@ Also see <a href="../../demo/basicdemo" target="_blank">Basic Demographics</a>, 
   <p>Zachek, C. M., Schwartz, J. M., Glasser, M., DeMicco, E., & Woodruff, T. J. (2019). A screening questionnaire for occupational and hobby exposures during pregnancy. Occupational Medicine (Oxford, England), 69(6), 428–435. <a href="https://doi.org/10.1093/occmed/kqz094">https://doi.org/10.1093/occmed/kqz094</a></p>
 </div>
 <br>
+

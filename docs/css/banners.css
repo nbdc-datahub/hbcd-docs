@@ -74,6 +74,7 @@
   margin-bottom: 0.8em;
 }
 .collapsible-content b {
+  color: #6300d3;;
   line-height: 1.3;
 }
 .collapsible-content ul {
@@ -94,6 +95,7 @@
   line-height: 1;
 }
 .collapsible-content li b {
+  color: #6300d3;
   line-height: 1;
 }
 
@@ -106,3 +108,4 @@
   margin-right: 10px; /* Adds space between text and the arrow */
   word-wrap: break-word; /* Ensures text wraps if too long */
 }
+

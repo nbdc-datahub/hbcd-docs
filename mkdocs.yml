@@ -74,7 +74,7 @@ nav:
   - Study Instruments:
     - Instruments Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
-    - Demographics:
+    - Demographics & Visit Information:
         - Basic Demographics: instruments/demo/basicdemo.md
         - Visit Information: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
@@ -100,7 +100,7 @@ nav:
                 - PTSD & Acute Stress: instruments/pregexp/mh/ptsd.md
                 - Postnatal Depression: instruments/pregexp/mh/epds.md
             - Substance Use:
-                - ASSIST: instruments/pregexp/su/assist.md
+                - ASSIST V1, V2, & V3: instruments/pregexp/su/assist.md
                 - TLFB: instruments/pregexp/su/tlfb.md
         - Social & Environmental Determinants:
             - V01 Demographics: instruments/SED/v01-demo.md
@@ -133,9 +133,10 @@ nav:
             - Processing Pipelines: instruments/processing/index.md
             - Pipeline Software Standards: instruments/processing/standards.md
   - Release Notes: 
-    - Pending Updates: changelog/pending.md
+    - Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
-    - Release Notes & History: changelog/releasenotes.md
+    - Version History:    
+        - Release 1.0: changelog/versions/R1.md
   - Help & Support:
     - FAQs: help/faq.md
     - Report Issues: help/reportissue.md

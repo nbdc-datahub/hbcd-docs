@@ -51,7 +51,7 @@
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">The data for one or more of these instruments has known issues - <a href="../../../../changelog/knownissues/#tlfb" target="_blank">see details</a>.</span>
+  <span class="text">This data has known issues - <a href="../../../../changelog/knownissues/#substance-use" target="_blank">see details</a>.</span>
 </div>
 
 ## Administration & Quality Control
