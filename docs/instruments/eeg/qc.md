@@ -18,7 +18,7 @@ During quality control, a frequently observed issue across all tasks was the irr
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">Presence of the StimTracker artifact is listed in the tabulated QC file for each task (<code>eeg_qc_task-&lt;task&gt;</code>).</span>
+  <span class="text">Presence of the StimTracker artifact is listed in the tabulated QC file for each task (<code>eeg_qc_task-&lt;TASK&gt;</code>).</span>
 </div>
 <p></p>
 
@@ -48,11 +48,15 @@ Event-related potentials (ERPs) have been generated for the regions of interest 
 
 ## EEG Net Placement ("Capping Quality") Ratings
 
-EEG capping quality ratings are used to determine inclusion in data processing. Capping ratings are included in the tabulated QC files for each task (`eeg_qc_task-<TASK>`).
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">Capping ratings are included in the tabulated QC files for each task (<code>eeg_qc_task-&lt;TASK&gt;</code>).</span>
+</div>
+<p></p>
 
-Photos used to assess EEG capping quality are taken for each acquisition from the front, back, top, left, and right angles of the participant's head and uploaded via the BIDS Wizard application to a secure computing environment. They are then reviewed by the EEG Core at the University of Maryland to rate the quality of EEG net placement, or "capping quality," for each acquisition.
+EEG capping quality ratings are used to determine inclusion in data processing. Photos used to assess EEG capping quality are taken for each acquisition from the front, back, top, left, and right angles of the participant's head and uploaded via the BIDS Wizard application to a secure computing environment. They are then reviewed by the EEG Core at the University of Maryland to rate the quality of EEG net placement, or "capping quality," for each acquisition.
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 18px;">
   <tbody>
     <tr>
       <td style="width: 30%;"><strong>Markers of Proper Net Placement</strong></td>
