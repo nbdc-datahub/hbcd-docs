@@ -1,4 +1,3 @@
-
 # File-Based Data
 
 Unlike [tabulated](phenotypes.md) data (tables organized in a uniform way across study instruments), file-based data comes in a variety of formats, often modality-specific. File-based data includes:
@@ -20,8 +19,7 @@ The `rawdata/` folder includes raw file-based data in [BIDS](https://bids-specif
 hbcd/
 |__ rawdata/ 
     |__ sub-<span class="label">{ID}</span>/
-    |   |__ sub-<span class="label">{ID}</span>_sessions.tsv
-    |   |__ sub-<span class="label">{ID}</span>_sessions.json
+    |   |__ sub-<span class="label">{ID}</span>_sessions.tsv <span class="hashtag">(+JSON)</span>
     |   |__ ses-<span class="label">{V0X}</span>/
     |       |__ anat/
     |       |__ dwi/
@@ -30,12 +28,10 @@ hbcd/
     |       |__ func/
     |       |__ motion/
     |       |__ mrs/
-    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_scans.tsv
-    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_scans.json
+    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_scans.tsv <span class="hashtag">(+JSON)</span>
     |
     |__ dataset_description.json
-    |__ participants.tsv
-    |__ participants.json 
+    |__ participants.tsv <span class="hashtag">(+JSON)</span>
 </pre>
 <p></p>
 
