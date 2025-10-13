@@ -1,4 +1,3 @@
-
 # File-Based Data
 
 Unlike [tabulated](phenotypes.md) data (tables organized in a uniform way across study instruments), file-based data comes in a variety of formats, often modality-specific. File-based data includes:
