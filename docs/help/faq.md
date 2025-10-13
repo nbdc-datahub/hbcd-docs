@@ -293,7 +293,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>HBCD image processing pipelines use field maps to perform distortion correction for structural and functional MRI data. Most researchers will likely use the processed data for their analyses and therefore do not need to use the fieldmaps for anything, as all pipeline output derivatives are already distortion corrected. However, if using the <a href="../../datacuration/file-based-data/#raw-bids">raw BIDS data</a> for your research, note that each fMRI acquisition will have a specific pair of fieldmaps associated with it, acquired in AP and PA phase encoding directions, located under <code>fmap/</code>. The matching EPI fieldmaps can easily be identified by the run number, specified by <code>run-&lt;label&gt;</code> in the filename (<a href="../../instruments/mri/fmri/#rawbids">see details</a>).</p>
+<p>HBCD image processing pipelines use field maps to perform distortion correction for structural and functional MRI data. Most researchers will likely use the processed data for their analyses and therefore do not need to use the fieldmaps for anything, as all pipeline output derivatives are already distortion corrected. However, if using the <a href="../../datacuration/file-based-data/#raw-bids">raw BIDS data</a> for your research, note that each fMRI acquisition will have a specific pair of fieldmaps associated with it, acquired in AP and PA phase encoding directions, located under <code>fmap/</code>. The matching EPI fieldmaps can easily be identified by the run number, specified by <code>run-{X}</code> in the filename (<a href="../../instruments/mri/fmri/#rawbids">see details</a>).</p>
 </div>
 
 <div id="faq-qc" class="notification-banner" onclick="toggleCollapse(this)">
@@ -307,7 +307,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Quality control (QC) metrics derived from automated and manual raw data QC procedures (described in the section <a href="../../instruments/mri/qc/#raw-mr-data-qc">Raw MR Data QC</a>) are provided for each scan in the session-level <code>sub-&lt;label&gt;_ses-&lt;label&gt;_scans.tsv</code> file (<a href="../../instruments/mri/qc/#location-of-raw-data-qc-results-in-data-release">see details</a>). A sampling approach was used to select a subset of data for manual review based on the automated QC metrics. Therefore, while automated QC metrics are available for all scans, not all will include manual QC metrics in the <code>scans.tsv</code> file. Also note that although the <code>QC</code> field is the overall manual QC score of 1 (pass) or 0 (fail), this field will automatically have a score of 1 if only automated QC was performed.</p>
+<p>Quality control (QC) metrics derived from automated and manual raw data QC procedures (described in the section <a href="../../instruments/mri/qc/#raw-mr-data-qc">Raw MR Data QC</a>) are provided for each scan in the session-level <code>sub-{ID}_ses-{V0X}_scans.tsv</code> file. A sampling approach was used to select a subset of data for manual review based on the automated QC metrics. Therefore, while automated QC metrics are available for all scans, not all will include manual QC metrics in the <code>scans.tsv</code> file. Also note that although the <code>QC</code> field is the overall manual QC score of 1 (pass) or 0 (fail), this field will automatically have a score of 1 if only automated QC was performed.</p>
 </div>
 
 <div id="faq-qcrec" class="notification-banner" onclick="toggleCollapse(this)">
@@ -325,7 +325,7 @@
 <b>Raw Imaging Data:</b> 
 <ul>
 <li>Only data that meet QC standards, as described in <a href="../../instruments/mri/qc/#raw-mr-data-qc">Raw MR Data QC</a>, are included.</li>
-<li>QC metrics for raw data are available in the <code>sub-&lt;label&gt;_ses-&lt;label&gt;_scans.tsv</code> file within each subject session folder under <code>rawdata/</code> (<a href="../../instruments/mri/qc/#location-of-raw-data-qc-results-in-data-release">see details</a>).</li>
+<li>QC metrics for raw data are available in the <code>sub-{ID}_ses-{V0X}_scans.tsv</code> file within each subject session folder under <code>rawdata/</code>.</li>
 <li>Additional exclusion criteria include <a href="../../instruments/mri/qc/#data-release-eligibility-criteria">acquisition parameter checks</a> and <a href="../../instruments/processing/#file-selection-for-processing">processing pipeline requirements</a>.</li>
 <li>Structural and functional MRI data undergo MRIQC processing to generate image quality metrics. See the <a href="../../instruments/mri/smri/#mriqc">sMRI</a> and <a href="../../instruments/mri/fmri/#mriqc">sMRI</a> MRIQC derivatives</a> for more information. Researchers may use these outputs for further curation if needed.</li>
 </ul>
