@@ -33,13 +33,21 @@
 <p><b>Z-Scores Excluded From Current Release</b><br>
 Because dates of birth are jittered and calculated chronologic and adjusted ages are ±6 days, we do not provide z-scores in the current data release. Further, <strong>we do NOT recommend calculating z-scores using V02 data</strong>. Caution is recommended when calculating Z-scores using data from subsequent visits. Future data releases will have z-scores calculated with age in days for investigators wanting to compare to normative growth metrics.</p>
 <p><b>Range Checks for Growth</b><br>
-Please note that range checks for Growth (<code>ph_ch_anthro</code>) were implemented in the database on 7/1/2024 and so are not reflected in data included in the first data release. Extreme out-of-range values were excluded (converted to 'n/a'), but some outliers are possible. Valid values for Growth fields are documented <a href="../../../changelog/versions/R1/#filtered-field-values">here</a> under Exclusion Criteria for the current release and provided below for quick reference:</p>
-<ul>
-  <li>Length (<code>len_001_i_03</code>): min 30 / max 130 (cm) </li>
-  <li>Weight (<code>wei_001_i_03</code>): min 0.5 / max 30  (kg)</li>
-  <li>Head Circumference (<code>head_001_i_03</code>): min 25 / max 55 (cm)</li>
-</ul>
-</p>
+Range checks for Growth (<code>ph_ch_anthro</code>) were implemented in the database on 7/1/2024 and so are not reflected in data included in the first data release. Extreme out-of-range values outside of the following valid ranges were excluded (converted to 'n/a') (though some outliers are still possible):</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr> 
+  <th>Field Name</th>    
+  <th>Field Description</th> 
+  <th>Valid Range</th>
+  </tr>
+</thead>
+<tbody>        
+<tr><td><code>ph_ch_anthro_len_001__03</code></td><td>Length</td><td>30 to 130 cm</td></tr>     
+<tr><td><code>ph_ch_anthro_head_001__03</code></td><td>Head circumference</td><td>25 to 55 cm</td></tr>          
+<tr><td><code>ph_ch_anthro_wei_001__03</code></td><td>Weight</td><td>0.5 to 30 kg</td></tr>          
+</tbody>
+</table>
 </div>
 
 ## Administration & Quality Control
