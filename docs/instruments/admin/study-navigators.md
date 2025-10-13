@@ -1,10 +1,5 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
 
-<p style="color: red;">ADMINISTRATIVE NOTES<br>
-<b>Additional comments/questions you have about this form</b>:
-"This form is different from the other validated/standardized assessments in HBCD. I have no idea what kind of detail is required for the QC (or if it is needed at all). I am not sure the data warnings or the RUD are appropriate or detailed enough. Please advise." 
-</p>
-
 # Study Navigator Contact Form
 
 <p>
@@ -33,7 +28,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="alert-collapsible-content">
-<p>The Study Navigator Contact Form was voluntarily completed. Guidance was provided to complete the form as soon as possible (within 24 hours after a contact), but this was not reinforced. The data is subject to recall bias.</p> 
+<p>Study Navigators were strongly encouraged but not required to fill out the Study Navigator Contact Form. Guidance was provided to complete the contact form as soon as possible (within 24 hours) after a contact with a participant. Study Navigators were also provided with the option to complete the form to document multiple contacts within a specific time or for a specific participant (text messages, phone calls, etc.). The data is subject to recall bias.</p> 
 </div>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
@@ -47,7 +42,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>The Study Navigator Contact Form was created for the HBCD Study and is being tested as a valuable document for characterizing participant contacts and support. The form was developed by integrating valuable metrics from documents used in similar support professions such as certified peer support specialists. Use of the form was strongly encouraged, but not mandatory, for the HBCD sites to complete.</p> 
+<p>The Study Navigator Contact Form was created for the HBCD Study as a document for characterizing participant contacts and support. The form was developed by integrating metrics from documents used in similar support professions (e.g. certified peer support, case managers, doulas, social workers, etc.). Use of the form was strongly encouraged but not mandatory for Study Navigators to complete. There is wide variation across HBCD sites and Study Navigators in use of the forms, which should be considered in any analyses conducted and conclusions drawn using contact form data. Additionally, some HBCD sites provided study navigator support to all participants, and some sites focused support on participants with substance use and/or participants experiencing significant adversities.</p> 
 </div>
 
 ## Administration & Quality Control
@@ -61,19 +56,22 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff in person</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V01, V03, V04, V05, V06, and contacts/touch points between visits</td></tr>
+<td>V01, V02, V03, V04, V05, V06, and contacts/touch points between visits</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>5-10 min</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">This form is under development for HBCD. Data was collected with guidance using the <a href="../SNContactFormCompanionGuideOutline_Pilot_V4-HH.pdf" target="_blank">HBCD Study Navigation Contact Form Guide</a>.</td></tr>      
+<td style="word-wrap: break-word; white-space: normal;">
+  This form is under development for HBCD. Data was collected with guidance using the <a href="../SNContactFormCompanionGuideOutline_Pilot_V4-HH.pdf" target="_blank">HBCD Study Navigation Contact Form Guide</a>.<br>
+  Data review and cleaning has occurred 3 times: September 2024, February 2025, and November 2025. Minor updates to the form and the form guide were completed in September 2024 and October 2025.</td>
+</tr>      
 </tbody>
 </table>
 
 ## Instrument Details
 
-Recruitment and retention in studies involving pregnant individuals who use substances can be challenged by mistrust due to SUD-related stigma. To address this, the HBCD Study integrates **certified [peer support](https://www.sciencedirect.com/topics/nursing-and-health-professions/peer-group) specialists, i.e. Study Navigators**, who provide participant-centered support throughout the study. For details on the conceptual framework, core skills, training, and team integration of support professionals, see [Hilliard et al. 2025](https://doi.org/10.1016/j.dcn.2024.101495).
+Recruitment and retention in studies involving pregnant individuals who use substances can be challenged by mistrust due to SUD-related stigma. To address this, the HBCD Study integrates **certified [peer support](https://www.sciencedirect.com/topics/nursing-and-health-professions/peer-group) specialists and/or other support professionals (case managers, doulas, social workers, etc., i.e., Study Navigators**, at each site’s research team to provide participant-centered support throughout the study. Study Navigators may provide support specifically to families that are substance-involved or to a wider range of participants. The breadth of the provision of Study Navigator support is determined based on the needs and capacity of each HBCD site. For details on the conceptual framework, core skills, training, and team integration of support professionals, see [Hilliard et al. 2025](https://doi.org/10.1016/j.dcn.2024.101495).
 
-The **Study Navigator Contact Form** included in the data release captures visit-specific information when participant support is provided. This data is purely descriptive and thus not scored. It documents:
+The **Study Navigator Contact Form** included in the data release captures visit-specific information when participant support is provided. This form was created in 2022 by integrating contact form information from other behavioral health practices from some Study Navigator Workgroup members. The “Support Services Offered” section of the form is original and was created specifically for the HBCD study. This data is purely descriptive and thus not scored. It documents:
 
 - Visit details (date, time, location, scheduling, etc.)
 - Support topics discussed
