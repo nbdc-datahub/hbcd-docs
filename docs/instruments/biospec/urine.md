@@ -28,6 +28,7 @@
 For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#urine-table1">Table 1. Urine Assay Thresholds for Analytes</a>.</p> 
 <p><b>Urinary Concentration Corrections</b><br>
 Urine concentrations vary by participant. Urinary concentration corrections can be made using creatinine results from sample validation or specific gravity. Creatinine values are provided for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds.</p>
+<p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
 </div>
 
 <div id="issues" class="issues-banner">
