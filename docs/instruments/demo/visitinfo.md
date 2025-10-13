@@ -1,3 +1,4 @@
+
 # Visit Information
 
 <div class="info-block">
@@ -15,7 +16,7 @@
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#visit-information" target="_blank">see details</a>.</span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#visit-information-par_visit_data" target="_blank">see details</a>.</span>
 </div>
 <p></p>
 
@@ -23,22 +24,42 @@
 
 Visit information contains all participant visit data, including:
 
-*   Label, Stage, Date, if the visit was missed, and the reason if visit was missed
-*   Project, Cohort (see details below), and Site
-*   Withdrawal information: if the participant withdrew from the study, the reason, and date
-*   Protocol violation information: if there was a protocol exception and the date
-*   Substance use flags raised by <a href="../../pregexp/su/tlfb" target="_blank">TLFB</a> (Self-reported use), <a href="../../biospec/urine" target="_blank">USDTL urine toxicology results</a>, and/or <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> Field `007` when option 1 (*Neonatal Opioid Withdrawal Syndrome*) or 5 (*Fetal Alcohol Syndrome*) was selected
+#### General Visit Information
+ - Label, Stage, Date, Project, and Site
+ - If the visit was missed and reason 
+ - Withdrawal information (if the participant withdrew from the study, the reason, and date)
+ - Protocol violation information (if there was a protocol exception and the date)
 
-### Cohort & Caregiver Types
+#### Substance Use Flags
 
-<p>Cohort types included in the data release are as follows, with each listed item indicating a specific subtype or Caregiver Type (e.g., "HBCD Main Child - Postnatal Recruitment"):</p>
-<ul>
-    <li><strong>HBCD Main Child -</strong> <em>Postnatal Recruitment</em>, <em>Type A-F</em></li>
-    <li><strong>HBCD Multiple Birth -</strong> <em>Main Child</em>, <em>Postnatal Recruitment</em>, <em>Postnatal Recruitment - Sibling</em>, <em>Type A-F</em></li>
-</ul>
+Visit information also includes **substance use flags**, which are single summary variables that indicate substance use status (yes/no) based on any positive reports from the following instruments:
 
+ - The Timeline Follow Back (<a href="../../pregexp/su/tlfb" target="_blank">TLFB</a>) (self-reported use)
+ - <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> when options 1 (*Neonatal Opioid Withdrawal Syndrome*) and/or 5 (*Fetal Alcohol Syndrome*) were selected for field `007` (self-reported use)
+ - <a href="../../biospec/urine" target="_blank">USDTL urine toxicology results</a> (<i>note: <a href="../../biospec/nails" target="_blank">Nail toxicology results</a> were not used in the creation of the substance use flags</i>)
+ 
+
+#### Cohort & Caregiver Types
+
+**Cohort** information includes cohort subtype and caregiver type for each participant. Possible values include:
+
+ - HBCD Main Child - Postnatal Recruitment
+ - HBCD Main Child - Type {*A-F*}
+ - HBCD Multiple Birth - {*Main Child | Postnatal Recruitment | Sibling*}
+ - HBCD Multiple Birth - Type {*A-F*}
+
+<div id="cg-types" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Caregiver Type A-F Definitions</span>
+  <a class="anchor-link" href="#cg-types" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<caption>Caregiver Type A-F Definitions</caption>
 <tbody>
     <tr>
         <td>Type A</td>
@@ -62,3 +83,6 @@ Visit information contains all participant visit data, including:
     </tr>            
 </tbody>
 </table>
+</div>
+
+<br>
