@@ -37,6 +37,8 @@ function expandCollapsibleById(id) {
   
   if (element && (element.classList.contains('notification-banner') || 
                   element.classList.contains('table-banner') ||
+                  element.classList.contains('table-compact-banner') ||
+                  element.classList.contains('issues-banner') ||
                   element.classList.contains('warning-banner') ||
                   element.classList.contains('alert-banner'))) {
     const collapsibleContent = element.nextElementSibling;
@@ -134,4 +136,3 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleAllBtn.textContent = allExpanded ? "Expand All Sections  ↕️" : "Collapse All Sections ↕️";
   });
 });
-
