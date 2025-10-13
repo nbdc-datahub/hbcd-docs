@@ -78,9 +78,6 @@ th, td {
   background-color: #ffffff;
 }
 
-.table-collapsible-content b {
-  color: #6300d3;
-}
 .table-collapsible-content.open {
   max-height: none;
 }
@@ -113,11 +110,6 @@ th, td {
   line-height: 1;
   font-size: 1em !important;
 }
-.table-collapsible-content li b {
-  color: #6300d3;
-  line-height: 1;
-  font-size: 1em !important;
-}
 
 /* Table with no vertical lines */
 .table-no-vertical-lines {
@@ -137,9 +129,6 @@ th, td {
 }
 .table-no-vertical-lines th {
   background-color: rgba(255, 255, 255, 0.6) !important;
-}
-.table-no-vertical-lines b {
-  color: #6300d3;
 }
 
 /* Compact Table Style */

@@ -59,10 +59,11 @@
 <div class="warning-collapsible-content">
 <p><b>Participant-Reported Challenges</b><br>
 Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e., imperfect option for job type and number of hours).</p> 
+<hr>
 <p><b>Withheld Variables/Variable Data With Small Cell Sizes</b><br>
-Some variables with small cell sizes were withheld from the data release to minimize the risk of disclosing identifying information 
-
-<i style="color: red;">[INTERNAL NOTE from Natalie: this may need to be updated based on decisions being discussed with the RUDC and others in HCAC/HDCC]</i>. In addition, there are some variables that do not contain any data in the current data release (e.g., response options allowed for more household members and more jobs during pregnancy than were reported by respondents who have completed V01 to date). These variables are currently being retained, as their relevance may change as data collection proceeds.</p> 
+Some variables do not contain any data in the current data release (e.g., household roster response options allowed for more household members than were reported by the respondents who completed V04 or V06  to date). These variables are currently being retained, as their relevance may change as data collection proceeds.</p> 
+<p>Some variables in this release have small cell sizes (between 1 and ten people per cell).  As a condition of using these data, specified in the DUC, you agree not to identify any individual from whom data was obtained and not to identify their relatives. You agree to a minimum cell threshold of 10 in any public reporting of the data (publications or presentations).</p> 
+<hr>
 <p><b>Branching Logic</b><br>
 There are several items that Alternate Caregivers receive with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include: 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -79,6 +80,7 @@ There are several items that Alternate Caregivers receive with branching logic; 
 <td><a href="../images/other-parent.png" target="_blank"><i>Click to view</i></a></td></tr>
 </tbody>
 </table>
+<hr>
 <p><b>Introduction of Child Demographic Form Beginning at V04</b><br>
 Beginning at V04, some information that was collected in the V01 Adult Demographic form has moved to the child form (i.e., household roster, and total household income). Please see <a href="../demo-ch" target="_blank">Child Demographics</a> for more information.</p>
 </div>

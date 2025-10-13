@@ -54,9 +54,11 @@
 <div class="warning-collapsible-content">
 <p><b>Participant-Reported Challenges</b><br>
 Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture how they choose to identify their child).</p> 
+<hr>
 <p><b>Withheld Variables/Variable Data With Small Cell Sizes</b><br>
-<i style="color: red;">[INTERNAL NOTE from Natalie: this may need to be updated. There is an ongoing discussion re: a principled approached to deciding if we will withhold small cell sizes or release all and rely on the DUC. I can update you as soon as I know more]</i><br>
-Some variables with small cell sizes were withheld from the data release to minimize the risk of disclosing identifying information. In addition, there are some variables that do not contain any data in the current data release (e.g., household roster response options allowed for more household members than were reported by the respondents who completed V04 or V06  to date). These variables are currently being retained, as their relevance may change as data collection proceeds.</p> 
+Some variables do not contain any data in the current data release (e.g., household roster response options allowed for more household members than were reported by the respondents who completed V04 or V06  to date). These variables are currently being retained, as their relevance may change as data collection proceeds.</p> 
+<p>Some variables in this release have small cell sizes (between 1 and ten people per cell).  As a condition of using these data, specified in the DUC, you agree not to identify any individual from whom data was obtained and not to identify their relatives. You agree to a minimum cell threshold of 10 in any public reporting of the data (publications or presentations).</p> 
+<hr>
 <p><b>Branching Logic</b><br>
 There are several items with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include <a href="../images/household-relationships.png" target="_blank">Household Roster</a> and Child Custody/Guardianship (see <a href="../images/child-custody-branching-logic.png" target="_blank">items 15 and 16</a>). See <a href="../demo-ch-table" target="_blank">Child Demographics Branching Logic</a> for full branching logic details.</p>
 </div>

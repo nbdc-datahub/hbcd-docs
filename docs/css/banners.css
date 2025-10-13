@@ -73,10 +73,6 @@
   margin-top: 0.8em;
   margin-bottom: 0.8em;
 }
-.collapsible-content b {
-  color: #6300d3;;
-  line-height: 1.3;
-}
 .collapsible-content ul {
   margin-top: 1rem;
   padding-left: 0.4rem;
@@ -92,10 +88,6 @@
 }
 .collapsible-content ul ul li {
   margin-bottom: 0.1rem;
-  line-height: 1;
-}
-.collapsible-content li b {
-  color: #6300d3;
   line-height: 1;
 }
 
