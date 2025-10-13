@@ -1,5 +1,5 @@
 # Study Instruments
-The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)** for the majority of measures. In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Full study protocols are available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). See [Upcoming Updates](../changelog/pending.md) for details on what to expect in future releases.
+The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)** for the majority of measures. In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Full study protocols are available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). See [Pending Updates](../changelog/pending.md) for details on what to expect in future releases.
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
@@ -9,12 +9,12 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 <img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="90%" height="auto" class="center">
 
-HBCD Study data includes **tabulated** and **file-based** data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
+HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 
 - <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
-- File-based data include <a href="../datacuration/file-based-data/#raw-bids" target="_blank"><b>raw</b></a> and <a href="../datacuration/file-based-data/#processed-derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
+- File-based data include <a href="../datacuration/file-based-data/#raw-bids" target="_blank"><b>raw</b></a> and <a href="../datacuration/file-based-data/#derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
 
-Expand the sections below to see a list of measures associated with each domain included in Release 1.0.
+Expand the sections below to see a list of measures associated with each domain included in the latest release data.
 
 ## Instruments by Domain
 
@@ -39,7 +39,7 @@ Expand the sections below to see a list of measures associated with each domain 
   Expand All Sections ↕️
 </button>
 
-### Administrative
+### Demographics & Administrative
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
@@ -81,7 +81,7 @@ Expand the sections below to see a list of measures associated with each domain 
 <div id="admin" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-clipboard"></i></span>
   <span class="text-with-link">
-  <span class="text">Recruitment & Retention</span>
+  <span class="text">Administrative</span>
   <a class="anchor-link" href="#admin" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -102,7 +102,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
+    <td style="word-wrap: break-word; white-space: normal;">Study Navigation</td>
     <td><code>TBD</code></td>
   </tr>
   </tbody>
@@ -256,7 +256,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 
 <div id="neurocog" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-brain"></i></span>
+  <span class="emoji"><i class="fa-solid fa-puzzle-piece"></i></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
   <a class="anchor-link" href="#neurocog" title="Copy link">
@@ -504,7 +504,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
   <td></td>
-  <td>Personal and family mental health</td>
+  <td>Personal and Family Mental Health</td>
   <td><code>pex_bm_psych</code></td>
 </tr>
 <tr class="section-mh">
@@ -518,14 +518,14 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/mh/ptsd" target="_blank">DSM5 Acute Stress or PTSD</a></td>
   <td></td>
-  <td>PTSD/acute stress symptom severity</td>
+  <td>PTSD/Acute Stress Symptom Severity</td>
   <td><code>pex_bm_str__ptsd</code></td>
 </tr>
 <tr class="section-mh">
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/mh/epds" target="_blank">EPDS</a></td>
   <td></td>
-  <td>Postnatal depression</td>
+  <td>Postnatal Depression</td>
   <td><code>pex_bm_epds</code></td>
 </tr>
 <!-- Substance Use -->
@@ -538,22 +538,22 @@ Expand the sections below to see a list of measures associated with each domain 
   <td rowspan="4"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td rowspan="4"><a href="pregexp/su/assist" target="_blank">ASSIST</a></td>
   <td>V1</td>
-  <td>Substance use before & during pregnancy</td>
+  <td>SU Before and During Pregnancy</td>
   <td><code>pex_bm_assistv1</code></td>
 </tr>
 <tr class="section-su">
   <td>V2</td>
-  <td>Substance use, pregnancy end & postnatal</td>
+  <td>SU, Pregnancy End & Postnatal</td>
   <td><code>pex_bm_assistv2</code></td>
 </tr>
 <tr class="section-su">
   <td>V3</td>
-  <td>SU after pregnancy (3 mo anchors)</td>
+  <td>SU After Pregnancy (3 mo anchors)</td>
   <td><code>pex_bm_assistv3</code></td>
 </tr>
 <tr class="section-su">
   <td>V4</td>
-  <td>SU after pregnancy (12 mo anchors)</td>
+  <td>SU After Pregnancy (12 mo anchors)</td>
   <td><code>pex_bm_assistv4</code></td>
 </tr>
 <tr class="section-su">
@@ -567,7 +567,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
   <td><a href="pregexp/su/tlfb" target="_blank">TLFB</a></td>
   <td></td>
-  <td>Substance use before & during pregnancy</td>
+  <td>SU Before and During Pregnancy</td>
   <td><code>pex_ch_tlfb</code></td>
 </tr>
 </tbody>
@@ -787,7 +787,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-magnet"></i></span>
+  <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
     <span class="text">MRI & MRS</span>
     <a class="anchor-link" href="#mri" title="Copy link">
