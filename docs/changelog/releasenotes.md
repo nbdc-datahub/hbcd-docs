@@ -1,44 +1,24 @@
 # Release Notes & History
 
-<p id="domain-legend" style="margin-bottom: 0; padding-bottom: 0; font-size: 1.1em;">Release Notes Study Domain Key</p>
-<table class="study-legend">
-<tbody>
-<tr>
-<td>
-<b>General</b><br>
-<a style="margin-left: 4px;" href="../../instruments/" target="_blank"><i class="fas fa-clipboard"></i></a> Administrative<br>
-<a style="margin-left: 4px;" href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics<br>
-<b>Brain Activity & Biosensors</b><br>
-<a style="margin-left: 4px;" href="../../instruments/#eeg" target="_blank"><i class="fa fa-bolt"></i></a> EEG<br>
-<a style="margin-left: 4px;" href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> MRI & MRS<br>
-<a style="margin-left: 4px;" href="../../instruments/#sensors" target="_blank"><i class="fa fa-microchip"></i></a> Novel Technologies & Wearable Sensors
-</td>
-<td>
-<b>Behavior, Biology, & Environment</b><br>
-<a style="margin-left: 4px;" href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver–Child Interaction<br>
-<a style="margin-left: 4px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics<br>
-<a style="margin-left: 4px;" href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language<br>
-<a style="margin-left: 4px;" href="../../instruments/#physhealth" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health<br>
-<a style="margin-left: 4px;" href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use<br>
-<a style="margin-left: 4px;" href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
-</td>
-</tr>
-</tbody>
-</table>
-
 ## General Rules Applied to All Data
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
     <td><strong>Exclusions applied to all data</strong></td>
-    <td>Inactive participants/sessions excluded</td>
+    <td>
+    <ul>
+      <li>Inactive participants/sessions excluded</li>
+    </ul></td>
 </tr>
 <tr>
   <td><strong>Field Conversions</strong></td>
-  <td>• Empty fields are replaced with 'n/a'<br>
-      • Sex is set to 'Other' for participants with only one active Visit 1 (V01) visit<br>
-      • 'Candidate_Age' values are replaced with 'n/a' for Visit 1 (V01)
+  <td>
+    <ul>
+      <li>Empty fields are replaced with 'n/a'</li>
+      <li>Sex is set to 'Other' for participants with only one active Visit 1 (V01) visit</li>
+      <li>'Candidate_Age' values are replaced with 'n/a' for Visit 1 (V01)</li>
+    </ul>
   </td>
 </tr>
 </tbody>
@@ -74,19 +54,38 @@
   </div>
 </div>
 
-### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 New Participant Data & Study Instruments
+### 2.0 New Participant Data & Study Instruments
 
 ##### Additional Participant Data
 
-- **Multiple Birth Participants (MBP)**: multiple participants from the same birth (e.g. twins)
-- **Postnatal Recruits (PNRs)** who joined the study after the child is born (complete a modified V01 and V02)
+1. Multiple Birth Participants (MBP): multiple participants from the same birth (e.g. twins)
+1. Postnatal Recruits (PNRs) who joined the study after the child is born (complete a modified V01 and V02)
 
 ##### New Study Instruments/Measures
 
-Click to expand to view the list of new study instruments/measures included for 2.0. Note that all are <b>tabulated data</b> unless otherwise indicated See [Study Domain Key](#domain-legend) at the top of the page for domain labels.</p>
+Approximately **30 new study instruments/measures** have been added across the following domains. Click to expand the section below to view the full list.
+
+<table class="study-legend">
+<tbody>
+<tr>
+<td>
+<a style="margin-left: 2px;" href="../../instruments/" target="_blank"><i class="fas fa-clipboard"></i></a> Administrative<br>
+<a style="margin-left: 2px;" href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> MRI & MRS<br>
+<a style="margin-left: 2px;" href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver–Child Interaction<br>
+<a style="margin-left: 2px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
+</td>
+<td>
+<a style="margin-left: 2px;" href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language<br>
+<a style="margin-left: 2px;" href="../../instruments/#physhealth" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health<br>
+<a style="margin-left: 2px;" href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use<br>
+<a style="margin-left: 2px;" href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
+</td>
+</tr>
+</tbody>
+</table>
 
 <div id="2.0-new-tables" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
+  <span class="emoji"><i class="fa-solid fa-plus"></i></span>
   <span class="text-with-link">
   <span class="text">New Study Instruments/Measures By Domain</span>
   <a class="anchor-link" href="#2.0-new-tables" title="Copy link">
@@ -96,69 +95,72 @@ Click to expand to view the list of new study instruments/measures included for 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
+<p><i>Unless indicated otherwise, all of the following are <b>tabulated data</b>.</i></p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
 <thead>
 <tr>
-    <th></th>
-    <th style="width: 30%;">Instrument</th>
+    <th>Domain</th>
+    <th style="width: 25%;">Instrument</th>
     <th>Version</th>
-    <th style="width: 50%;">Construct</th>
+    <th style="width: 40%;">Construct</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align: center;"><a href="../../instruments/" target="_blank"><i class="fas fa-clipboard"></i></a></td>
-  <td>Study Navigator Contact Form</td><td></td><td>Recruitment/Retention</td>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-clipboard" style="font-size:1.1em; margin-right: 2px;"></i> ADM
+  <span class="tooltiptext">Administrative</span></span></td>
+  <td>Study Navigator Contact</td><td></td><td>Study Navigation</td>
 </tr>
 <tr>
-  <td style="text-align: center;"><a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a></td>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i> IMG
+  <span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
   <td>Pre-Scan Questionnaire</td><td></td><td>Sleeping Scan Prep</td>
 </tr>
 <tr>
-  <td rowspan="8" style="text-align: center;"><a href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i></a></td>
+  <td rowspan="8" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-people-arrows" style="font-size:1.1em; margin-right: 2px;"></i> MH<span class="tooltiptext">Behavior & Caregiver-Child Interaction</span></span></td>
   <td>CHAOS</td><td></td><td>Family Organization</td>
 </tr>
-<tr><td>ecPROMIS-Ch/CG Interaction</td><td>1-5 year</td><td>Child/Caregiver Relationship</td></tr>
+<tr><td>ecPROMIS-Ch/CG</td><td>1-5 year</td><td>Child/Caregiver Relationship</td></tr>
 <tr><td>ecPROMIS-Peer Relation</td><td></td><td>Peer Relationships</td></tr>
-<tr><td>ecPROMIS-Self-regulation</td><td></td><td>Self-Regulation and Flexibility</td></tr>
+<tr><td>ecPROMIS-Self Regulation</td><td></td><td>Self-Regulation and Flexibility</td></tr>
 <tr><td>FAD (GF6+)</td><td></td><td>Global Functioning of the Family Unit</td></tr>
 <tr><td>HOME-21</td><td>Infant-Toddler</td><td>Child’s Home Environment</td></tr>
 <tr><td>ECBQ (VSF)+BI</td><td>Early Childhood</td><td>Surgency/Extraversion, Negative Affectivity,<br> Effortful Control, Behavioral Inhibition</td></tr>
 <tr><td>MAPS-TL</td><td>Toddlerhood & Preschool</td><td>Irritability</td></tr>
 <tr>
-<td style="text-align: center;"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></td>
-<td><span class="tooltip tooltip-right"><i style="margin-right: 5px;" class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span> Illumina GDA GWAS</td><td>Maternal & Child</td><td>GWAS, EWAS, Transcriptome</td>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-vial" style="font-size:1.1em; margin-right: 2px;"></i> BIO<span class="tooltiptext">Biospecimen & Omics</span></span></td>
+<td>Illumina GDA GWAS<br><i class="fas fa-layer-group"></i> <b>Concatenated Data</b></td><td>Maternal & Child</td><td>GWAS, EWAS, Transcriptome</td>
 </tr>
 <tr>
-<td rowspan="3" style="text-align: center;"><a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></td>
+  <td rowspan="3" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa-solid fa-puzzle-piece" style="font-size:1.1em; margin-right: 2px;"></i> NCL<span class="tooltiptext">Neurocognition & Language</span></span></td>
 <td>MacArthur-Bates CDI-I</td><td>Infant Form</td><td>Language Development in Child</td></tr>
 <tr><td>SPM-2</td><td>Toddler</td><td>Sensory Processing/Integration</td></tr>
 <tr><td>Vineland</td><td></td><td>Adaptive Behavior</td></tr>
 <tr>
-<td rowspan="7" style="text-align: center;"><a href="../../instruments/#physhealth" target="_blank"><i class="fa fa-heart-pulse"></i></a>
-<td>Brief Infant Sleep Questionnaire</td><td></td><td>Sleep</td>
+  <td rowspan="7" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i> PH<span class="tooltiptext">Physical Health</span></span></td>
+<td><span class="tooltip">BISQ-SF<span class="tooltiptext">Brief Infant Sleep Questionnaire</span></span></td><td></td><td>Sleep</td>
 </tr>
-<tr><td>ecPROMIS- Physical Activity/Greenspace</td><td>Early Childhood</td><td>Physical Activity</td></tr>
+<tr><td>ecPROMIS- PAG</td><td>Early Childhood</td><td>Physical Activity</td></tr>
 <tr><td>ecPROMIS- Sleep</td><td>Early Childhood</td><td>Sleep</td></tr>
 <tr><td>Medical History</td><td></td><td>Medical History</td></tr>
-<tr><td>Nutrition Questionnaire</td><td>Infant</td><td>Nutrition</td></tr>
+<tr><td>Nutrition Form</td><td>Infant</td><td>Nutrition</td></tr>
 <tr><td>ScreenQ</td><td></td><td>Media Use</td></tr>
 <tr><td>Vision Screener</td><td></td><td>Vision</td></tr>
 <tr>
-  <td rowspan="2" style="text-align: center;"><a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a>
+  <td rowspan="2" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa-solid fa-baby" style="font-size:1.1em; margin-right: 2px;"></i> PEX<span class="tooltiptext">Pregnancy Exposure, Including Substance Use</span></span></td>
   <td>ASSIST</td><td>V4</td><td>SU after pregnancy (12 mo anchors)</td></tr>
 <tr><td>Substance Use Patterns</td><td></td><td>Substance Use in Pregnancy</td></tr>
 <tr>
-  <td rowspan="12" style="text-align: center;"><a href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i></a>
-  <td rowspan="2">ACEs</td><td></td><td>Adverse Childhood Experiences (Caregiver)</td>
+  <td rowspan="12" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-city" style="font-size:1.1em; margin-right: 2px;"></i> SED<span class="tooltiptext">Social & Environmental Determinants</span></span></td>
+  <td rowspan="2">ACEs</td><td></td><td>Adverse Childhood Experiences (CG)</td>
 </tr>  
-<tr><td>Pediatric</td><td>Adverse Childhood Experiences (Child)</td></tr>  
-<tr><td rowspan="2">Demographics Adult</td><td>V4</td><td>Demographics (Birth Parent Visit 4)</td></tr> 
-<tr><td>V6</td><td>Demographics (Adult Visit 6)</td></tr> 
-<tr><td rowspan="2">Demographics Child</td><td>V4</td><td>Demographics (Child Visit 4)</td></tr> 
-<tr><td>V6</td><td>Demographics (Child Visit 6)</td></tr>  
+<tr><td>Pediatric</td><td>Adverse Childhood Experiences (CH)</td></tr>  
+<tr><td rowspan="2">Demographics Adult</td><td>V4 (Birth Parent)</td><td>Demographics</td></tr> 
+<tr><td>V6 (Adult)</td><td>Demographics</td></tr> 
+<tr><td rowspan="2">Demographics Child</td><td>V4 (Child)</td><td>Demographics</td></tr> 
+<tr><td>V6 (Child)</td><td>Demographics</td></tr>  
 <tr><td>Employment</td><td></td><td>Current Employment</td></tr>  
-<tr><td>Household Chemical Exposures</td><td></td><td>Household Chemical Exposures</td></tr>   
+<tr><td>Chemical Exposures</td><td></td><td>Household Chemical Exposures</td></tr>   
 <tr><td>Lead Exposures</td><td></td><td>Lead Exposures</td></tr> 
 <tr><td>PACES</td><td>&lt;18</td><td>Protective Factors</td></tr>  
 <tr><td>Second Hand Smoke</td><td></td><td>Second Hand Smoke Exposure</td></tr>     
@@ -168,37 +170,38 @@ Click to expand to view the list of new study instruments/measures included for 
 </div>
 <p></p>
 
-### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 Updates & Improvements to Existing Data
+### 2.0 Existing Study Data Updates
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
-  <tbody>
-<tr><td colspan="2"><strong><i>Instrument/Measure Updates:</i></strong></td></tr>
-  <tr>
-    <td style="width: 40px; text-align: center;">
-    <a href="../../../instruments/#physhealth" target="_blank"><i class="fa fa-heart-pulse"></i></a>
-    </td>
-    <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
-    <strong>Growth</strong> (<code>ph_ch_anthro</code>)<br>
-      <span class="update-text">Inclusion of age-based height/weight/head z-scores calculated based on (non-jittered) date of birth.</span>
-    </td>
-  </tr>
-  <tr>
-    <td rowspan="2" style="width: 40px; text-align: center;">
-    <a href="../../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a>
-    </td>
-    <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
-    <strong>MRI</strong>: <span class="update-text">Addition of processed <a href="../../instruments/mri/fmri/#nibabies" target="_blank" rel="noopener noreferrer">Infant fMRIPrep</a> and <a href="../../instruments/mri/fmri/#xcpd" target="_blank" rel="noopener noreferrer">XCP-D</a> derivatives for <strong>visits V03+</strong>.</span>
-    </td>
-  </tr>
-    <tr>
-    <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
-    <strong>MRI</strong>: <span class="update-text">Addition of <strong>MRI Scanner Information</strong> for all scanners used at each site to <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank"><code>sub-{ID}_ses-{V0X}_scans.tsv</code></a>, including ScannerManufacturer, ScannerModel, ScannerSoftwareVersion, and ScannerSerialNumber (used to differentiate different scanners at the same site).</span>
-    </td>
-  </tr>
+<thead>
+<th style="width: 2%;">Domain</th>
+<th>Table/Data</th>
+<th>Update/Improvement</th>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Physical Health</span></span></td>
+  <td>Growth<br><code>ph_ch_anthro</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Added age-based z-scores calculated based on (non-jittered) date of birth.</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
+  <td>MR Derivatives</td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Added processed <a href="../../instruments/mri/fmri/#nibabies" target="_blank" rel="noopener noreferrer">Infant fMRIPrep</a> and <a href="../../instruments/mri/fmri/#xcpd" target="_blank" rel="noopener noreferrer">XCP-D</a> derivatives for <strong>visits V03+</strong>.</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
+  <td>MR Scans TSV</td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Addition of <strong>MRI Scanner Information</strong> to <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV files</a> (<code>sub-{ID}_ses-{V0X}_scans.tsv</code>), including <i>ScannerManufacturer</i>, <i>ScannerModel</i>, <i>ScannerSoftwareVersion</i>, as well as <i>ScannerSerialNumber</i>, used to differentiate different scanners at the same site.</td>
+</tr>
 </tbody>
 </table>
+<p></p><p></p>
 
-### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 2.0 Resolved Known Issues By Domain
+### 2.0 Resolved Known Issues By Domain
 
 <div id="r2.0demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></span>
@@ -367,74 +370,58 @@ Click to expand to view the list of new study instruments/measures included for 
   </div>
 </div>
 
-### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 1.1 Updates & Improvements to Existing Data
+### 1.1 Existing Study Data Updates
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
-  <tbody>
-<tr><td colspan="2"><strong><i>Instrument/Measure (<code>Table Name</code>) Updates:</i></strong></td></tr>
-    <!-- Basic Demographics -->
-    <tr>
-      <td style="width: 40px; text-align: center;">
-        <a href="../../instruments/#demo" title="Basic Demographics" target="_blank"><i class="fas fa-id-card"></i></a>
-      </td>
-      <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
-        <strong>Basic Demographics</strong> 
-        (<a href="../../instruments/demo/basicdemo" target="_blank"><code>sed_basic_demographics</code></a>)<br>
-        <span class="update-text">Reviewed scoring for AOU and ACS EthnoRacial fields. The multiracial options for <strong>ACS – Child – Multi Race</strong> (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.</span>
-      </td>
-    </tr>
-    <!-- Biospec-->
-    <tr style="border-bottom: 1px solid #e0e0e0;">
-      <td style="width: 40px; text-align: center;">
-        <a href="../../instruments/#biospec" title="Biospec" target="_blank"><i class="fas fa-vial"></i></a>
-      </td>
-      <td style="padding: 8px 4px; vertical-align: top;">
-        <strong>Biospecimens Nails & Urine</strong> 
-        (<code>bio_bm_biosample_*</code>)<br>
-        <span class="update-text">Removed 'Specimen ID’ fields from all Biospecimen tables and time from dates in 'Nails Results.'</span>
-      </td>
-    </tr>
-    <!-- BrainSwipes QC -->
-    <tr style="border-bottom: 1px solid #e0e0e0;">
-      <td style="width: 40px; text-align: center;">
-        <a href="../../instruments/#mri" title="MRI Data" target="_blank"><i class="fas fa-brain"></i></a>
-      </td>
-      <td style="padding: 8px 4px; vertical-align: top;">
-        <strong>BrainSwipes QC</strong> 
-        (<a href="../../instruments/mri/qc/#brainswipes" target="_blank"><code>img_brainswipes*</code></a>)<br>
-        <span class="update-text">Added QC results missing from R1.0 (<strong>N=8</strong>).</span>
-      </td>
-    </tr>
-    <!-- Pregnancy & Infant Health -->
-    <tr style="border-bottom: 1px solid #e0e0e0;">
-      <td style="width: 40px; text-align: center;">
-        <a href="../../instruments/#pex" title="Pregnancy & Infant Health" target="_blank"><i class="fa-solid fa-baby"></i></a>
-      </td>
-      <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
-        <strong>Pregnancy & Infant Health</strong> 
-        (<a href="../../instruments/pregexp/pex" target="_blank"><code>pex_bm_health*</code></a>)<br>
-        <span class="update-text">Medications are now categorized into more detailed components based on <strong>RxNorm IDs</strong> to improve clarity and enable more granular analyses.  
-        Additional columns specify: <em>Brand Name</em>, <em>Ingredient</em>, <em>Precise Ingredient</em>, and <em>Multiple Active Ingredients</em>.</span>
-      </td>
-    </tr>
-    <!-- V01 Demographics -->
-    <tr style="border-bottom: 1px solid #e0e0e0;">
-      <td style="width: 40px; text-align: center;">
-        <a href="../../instruments/#socenvdet" title="Demographics" target="_blank"><i class="fas fa-city"></i></a>
-      </td>
-      <td style="padding: 8px 4px; vertical-align: top;">
-        <strong>V01 Demographics</strong> 
-        (<a href="../../instruments/SED/v01-demo" target="_blank"><code>sed_bm_demo</code></a>)<br>
-        <span class="update-text">Added <strong>Birth Parent Sexual Orientation</strong> variable.</span>
-      </td>
-    </tr>
-  </tbody>
+<thead>
+<th>Domain</th>
+<th>Table/Data</th>
+<th>Update/Improvement</th>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-id-card" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Demographics</span></span></td>
+  <td>Basic Demographics<br><code>sed_basic_demographics</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Reviewed scoring for AOU and ACS EthnoRacial fields. The multiracial options for <strong>ACS – Child – Multi Race</strong> (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-vial" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Biospecimen & Omics</span></span></td>
+  <td>Nails & Urine Toxicology<br><code>bio_bm_biosample_*</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Removed 'Specimen ID’ fields from all Biospecimen tables and time from dates in 'Nails Results.'
+</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa-solid fa-baby" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Pregnancy Exposure, Including Substance Use</span></span></td>
+  <td>Pregnancy & Infant Health<br><code>pex_bm_health*</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Medications are now categorized into more detailed components based on <strong>RxNorm IDs</strong> to improve clarity and enable more granular analyses.
+  Additional columns specify: <em>Brand Name</em>, <em>Ingredient</em>, <em>Precise Ingredient</em>, and <em>Multiple Active Ingredients</em>.
+</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-city" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Social & Environmental Determinants</span></span></td>
+  <td>V01 Demographics<br><code>sed_bm_demo</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Added <strong>Birth Parent Sexual Orientation</strong> variable.
+</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
+  <td>BrainSwipes QC<br><code>img_brainswipes*</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Added QC results missing from R1.0 (N=8).
+</td>
+</tr>
+</tbody>
 </table>
+<p></p><p></p>
 
 <div id="updatedfiles" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-screwdriver-wrench"></i></span>
+  <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
   <span class="text-with-link">
-  <span class="text">Fill List of Updated Files</span>
+  <span class="text">Full Updated File List</span>
   <a class="anchor-link" href="#visitinfo" title="updatedfiles">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -483,7 +470,7 @@ Click to expand to view the list of new study instruments/measures included for 
 </ul>
 </div>
 
-### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 1.1 Resolved Known Issues By Domain
+### 1.1 Resolved Known Issues By Domain
 
 <div id="r1.1demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></span>
@@ -696,38 +683,37 @@ Click to expand to view the list of new study instruments/measures included for 
   </div>
 </div>
 
-<div id="participant-visits" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-filter"></i></span>
-  <span class="text-with-link">
-  <span class="text">Participant & Visit Exclusions</span>
-  <a class="anchor-link" href="#participant-visits" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+#### Participant & Visit Exclusions
+
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
   <td><strong>Excluded Participants</strong></td>
-  <td> • Participants with no brain rating or brain rating noted as "atypical"<br>
-       • Postnatal Recruitment participants<br>
-       • Multiple Birth participants
+  <td>
+    <ul>
+      <li>Participants with no brain rating or brain rating noted as "atypical"</li>
+      <li>Postnatal Recruitment participants</li>
+      <li>Multiple Birth participants</li>
+    </ul>
   </td>
 </tr>
 <tr>
     <td><strong>Excluded Visit Data</strong></td>
-    <td> • Visits with 'LaunchPad Complete' Status set to 'Complete' after 2024-07-01.</td>
+    <td>
+    <ul>
+      <li>Visits with 'LaunchPad Complete' Status set to 'Complete' after 2024-07-01.</li>
+    </ul>
 </tr>
 </tbody>
 </table>
-</div>
+
+#### Instrument & Field Exclusions
+
 
 <div id="r1-exclusions" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-filter"></i></span>
   <span class="text-with-link">
-  <span class="text">Instrument & Field Exclusions</span>
+  <span class="text"><i>Click to Expand</i></span>
   <a class="anchor-link" href="#r1-exclusions" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -738,8 +724,8 @@ Click to expand to view the list of new study instruments/measures included for 
 <p style="font-size: 1.0em;"><strong>Instrument Exclusions</strong></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-  <th>Instrument(s)</th>
-  <th>Table Name(s)</th>
+  <th>Instrument</th>
+  <th>Table Name</th>
 </thead>
 <tbody>
 <tr><td>Biosensor Receipt Form</td><td><code>sens_ch_rcpt</code></td></tr>
