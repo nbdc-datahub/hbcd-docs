@@ -5,22 +5,22 @@
 <tbody>
 <tr>
 <td>
-<b>Behavior, Biology, & Environment</b><br>
-<a style="margin-left: 6px;" href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver–Child Interaction<br>
-<a style="margin-left: 6px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics<br>
-<a style="margin-left: 6px;" href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language<br>
-<a style="margin-left: 6px;" href="../../instruments/#physhealth" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health<br>
-<a style="margin-left: 6px;" href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use<br>
-<a style="margin-left: 6px;" href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
+<b>General</b><br>
+<a style="margin-left: 4px;" href="../../instruments/" target="_blank"><i class="fas fa-clipboard"></i></a> Administrative<br>
+<a style="margin-left: 4px;" href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics<br>
+<b>Brain Activity & Biosensors</b><br>
+<a style="margin-left: 4px;" href="../../instruments/#eeg" target="_blank"><i class="fa fa-bolt"></i></a> EEG<br>
+<a style="margin-left: 4px;" href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> MRI & MRS<br>
+<a style="margin-left: 4px;" href="../../instruments/#sensors" target="_blank"><i class="fa fa-microchip"></i></a> Novel Technologies & Wearable Sensors
 </td>
 <td>
-<b>General</b><br>
-<a style="margin-left: 6px;" href="../../instruments/" target="_blank"><i class="fas fa-clipboard"></i></a> Administrative<br>
-<a style="margin-left: 6px;" href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics<br>
-<b>Brain Activity & Biosensors</b><br>
-<a style="margin-left: 6px;" href="../../instruments/#eeg" target="_blank"><i class="fa fa-bolt"></i></a> EEG<br>
-<a style="margin-left: 6px;" href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> MRI & MRS<br>
-<a style="margin-left: 6px;" href="../../instruments/#sensors" target="_blank"><i class="fa fa-microchip"></i></a> Novel Technologies & Wearable Sensors
+<b>Behavior, Biology, & Environment</b><br>
+<a style="margin-left: 4px;" href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver–Child Interaction<br>
+<a style="margin-left: 4px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics<br>
+<a style="margin-left: 4px;" href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language<br>
+<a style="margin-left: 4px;" href="../../instruments/#physhealth" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health<br>
+<a style="margin-left: 4px;" href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use<br>
+<a style="margin-left: 4px;" href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
 </td>
 </tr>
 </tbody>
@@ -88,7 +88,7 @@ Click to expand to view the list of new study instruments/measures included for 
 <div id="2.0-new-tables" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
   <span class="text-with-link">
-  <span class="text">New Study Instruments/Measures By Domain - <i>Click to Expand</i></span>
+  <span class="text">New Study Instruments/Measures By Domain</span>
   <a class="anchor-link" href="#2.0-new-tables" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
