@@ -1,5 +1,31 @@
 # Release Notes & History
 
+<p id="domain-legend" style="margin-bottom: 0; padding-bottom: 0; font-size: 1.1em;">Release Notes Study Domain Key</p>
+<table class="study-legend">
+<tbody>
+<tr>
+<td>
+<b>Behavior, Biology, & Environment</b><br>
+<a style="margin-left: 6px;" href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver–Child Interaction<br>
+<a style="margin-left: 6px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics<br>
+<a style="margin-left: 6px;" href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language<br>
+<a style="margin-left: 6px;" href="../../instruments/#physhealth" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health<br>
+<a style="margin-left: 6px;" href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use<br>
+<a style="margin-left: 6px;" href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
+</td>
+<td>
+<b>General</b><br>
+<a style="margin-left: 6px;" href="../../instruments/" target="_blank"><i class="fas fa-clipboard"></i></a> Administrative<br>
+<a style="margin-left: 6px;" href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics<br>
+<b>Brain Activity & Biosensors</b><br>
+<a style="margin-left: 6px;" href="../../instruments/#eeg" target="_blank"><i class="fa fa-bolt"></i></a> EEG<br>
+<a style="margin-left: 6px;" href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> MRI & MRS<br>
+<a style="margin-left: 6px;" href="../../instruments/#sensors" target="_blank"><i class="fa fa-microchip"></i></a> Novel Technologies & Wearable Sensors
+</td>
+</tr>
+</tbody>
+</table>
+
 ## General Rules Applied to All Data
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -57,6 +83,8 @@
 
 ##### New Study Instruments/Measures
 
+Click to expand to view the list of new study instruments/measures included for 2.0. Note that all are <b>tabulated data</b> unless otherwise indicated See [Study Domain Key](#domain-legend) at the top of the page for domain labels.</p>
+
 <div id="2.0-new-tables" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
   <span class="text-with-link">
@@ -68,10 +96,10 @@
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>NOTE: All of the following are <b>tabulated data</b> unless otherwise indicated.</p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
 <thead>
 <tr>
+    <th></th>
     <th style="width: 30%;">Instrument</th>
     <th>Version</th>
     <th style="width: 50%;">Construct</th>
@@ -79,71 +107,37 @@
 </thead>
 <tbody>
 <tr>
-  <td colspan="3" style="margin-left: 0;"><i style="margin-right: 5px;" class="fas fa-clipboard"></i> Administrative</td>
-</tr>
-<tr>
+  <td style="text-align: center;"><a href="../../instruments/" target="_blank"><i class="fas fa-clipboard"></i></a></td>
   <td>Study Navigator Contact Form</td><td></td><td>Recruitment/Retention</td>
 </tr>
 <tr>
-  <td colspan="3" style="margin-left: 0;"><a href="../../instruments/#mri" target="_blank"><i style="margin-right: 5px;" class="fa fa-brain"></i> Imaging</a></td>
-</tr>
-<tr>
+  <td style="text-align: center;"><a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a></td>
   <td>Pre-Scan Questionnaire</td><td></td><td>Sleeping Scan Prep</td>
 </tr>
 <tr>
-  <td colspan="3" style="margin-left: 0;"><a href="../../instruments/#bcgi" target="_blank"><i style="margin-right: 5px;" class="fa fa-people-arrows"></i> Behavior & Caregiver-Child Interaction</a></td>
+  <td rowspan="8" style="text-align: center;"><a href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i></a></td>
+  <td>CHAOS</td><td></td><td>Family Organization</td>
+</tr>
+<tr><td>ecPROMIS-Ch/CG Interaction</td><td>1-5 year</td><td>Child/Caregiver Relationship</td></tr>
+<tr><td>ecPROMIS-Peer Relation</td><td></td><td>Peer Relationships</td></tr>
+<tr><td>ecPROMIS-Self-regulation</td><td></td><td>Self-Regulation and Flexibility</td></tr>
+<tr><td>FAD (GF6+)</td><td></td><td>Global Functioning of the Family Unit</td></tr>
+<tr><td>HOME-21</td><td>Infant-Toddler</td><td>Child’s Home Environment</td></tr>
+<tr><td>ECBQ (VSF)+BI</td><td>Early Childhood</td><td>Surgency/Extraversion, Negative Affectivity,<br> Effortful Control, Behavioral Inhibition</td></tr>
+<tr><td>MAPS-TL</td><td>Toddlerhood & Preschool</td><td>Irritability</td></tr>
+<tr>
+<td style="text-align: center;"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></td>
+<td><span class="tooltip tooltip-right"><i style="margin-right: 5px;" class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span> Illumina GDA GWAS</td><td>Maternal & Child</td><td>GWAS, EWAS, Transcriptome</td>
 </tr>
 <tr>
-    <td>CHAOS</td><td></td><td>Family Organization</td>
-</tr>
-<tr>
-    <td>ecPROMIS-Ch/CG Interaction</td>
-    <td>1-5 year</td>
-    <td>Child/Caregiver Relationship</td>
-</tr>
-<tr>
-<td>ecPROMIS-Peer Relation</td>
-<td></td>
-<td>Peer Relationships</td>
-</tr>
-<tr>
-<td>ecPROMIS-Self-regulation</td>
-<td></td>
-<td>Self-Regulation and Flexibility</td>
-</tr>
-<tr>
-<td>FAD (GF6+)</td>
-<td></td>
-<td>Global Functioning of the Family Unit</td>
-</tr>
-<tr>
-<td>HOME-21</td><td>Infant-Toddler</td><td>Child’s Home Environment</td>
-</tr>
-<tr>
-<td>ECBQ (VSF)+BI</td><td>Early Childhood</td>
-<td style="word-wrap: break-word; white-space: normal;">Surgency/Extraversion, Negative Affectivity, Effortful Control, Behavioral Inhibition</td>
-</tr>
-<tr>
-<td>MAPS-TL</td><td>Toddlerhood & Preschool</td><td>Irritability</td>
-</tr>
-<tr>
-  <td colspan="3" style="margin-left: 0;"><a href="../../instruments/#biospec" target="_blank"><i style="margin-right: 5px;" class="fa fa-vial"></i> Biospecimen & Omics</a></td>
-</tr>
-<tr>
-<td>
-  <span class="tooltip tooltip-right"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span> Illumina GDA GWAS</td>
-  <td>Maternal & Child</td><td>GWAS, EWAS, Transcriptome</td>
-</tr>
-<tr>
-  <td colspan="3" style="margin-left: 0;"><a href="../../instruments/#neurocog" target="_blank"><i style="margin-right: 5px;" class="fa-solid fa-puzzle-piece"></i> Neurocognition & Language</a></td>
-</tr>
-<tr><td>MacArthur-Bates CDI-I</td><td>Infant Form</td><td>Language Development in Child</td></tr>
+<td rowspan="3" style="text-align: center;"><a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></td>
+<td>MacArthur-Bates CDI-I</td><td>Infant Form</td><td>Language Development in Child</td></tr>
 <tr><td>SPM-2</td><td>Toddler</td><td>Sensory Processing/Integration</td></tr>
 <tr><td>Vineland</td><td></td><td>Adaptive Behavior</td></tr>
 <tr>
-  <td colspan="3" style="margin-left: 0;"><a href="../../instruments/#physhealth" target="_blank"><i style="margin-right: 5px;" class="fa fa-heart-pulse"></i> Physical Health</a></td>
+<td rowspan="7" style="text-align: center;"><a href="../../instruments/#physhealth" target="_blank"><i class="fa fa-heart-pulse"></i></a>
+<td>Brief Infant Sleep Questionnaire</td><td></td><td>Sleep</td>
 </tr>
-<tr><td>Brief Infant Sleep Questionnaire</td><td></td><td>Sleep</td></tr>
 <tr><td>ecPROMIS- Physical Activity/Greenspace</td><td>Early Childhood</td><td>Physical Activity</td></tr>
 <tr><td>ecPROMIS- Sleep</td><td>Early Childhood</td><td>Sleep</td></tr>
 <tr><td>Medical History</td><td></td><td>Medical History</td></tr>
@@ -151,30 +145,17 @@
 <tr><td>ScreenQ</td><td></td><td>Media Use</td></tr>
 <tr><td>Vision Screener</td><td></td><td>Vision</td></tr>
 <tr>
-  <td colspan="3" style="margin-left: 0;"><a href="../../instruments/#pex" target="_blank"><i style="margin-right: 5px;" class="fa-solid fa-baby"></i> Pregnancy & Exposure, Including Substance Use</a></td>
-</tr>
-<tr><td>ASSIST</td><td>V4</td><td>SU after pregnancy (12 mo anchors)</td></tr>
-<tr><td>Substance Use Patterns</td><td></td><td>Substance Use in Pregnancy</td>
-</tr>
+  <td rowspan="2" style="text-align: center;"><a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a>
+  <td>ASSIST</td><td>V4</td><td>SU after pregnancy (12 mo anchors)</td></tr>
+<tr><td>Substance Use Patterns</td><td></td><td>Substance Use in Pregnancy</td></tr>
 <tr>
-  <td colspan="3" style="margin-left: 0;"><a href="../../instruments/#socenvdet" target="_blank"><i style="margin-right: 5px;" class="fas fa-city"></i> Social & Environmental Determinants</a></td>
-</tr>
-<tr>
-<td rowspan="2">ACEs</td>
-<td></td>
-<td>Adverse Childhood Experiences (Caregiver)</td>
+  <td rowspan="12" style="text-align: center;"><a href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i></a>
+  <td rowspan="2">ACEs</td><td></td><td>Adverse Childhood Experiences (Caregiver)</td>
 </tr>  
 <tr><td>Pediatric</td><td>Adverse Childhood Experiences (Child)</td></tr>  
-<tr>
-<td rowspan="2">Demographics Adult</td>
-<td>V4</td>
-<td>Demographics (Birth Parent Visit 4)</td>
-</tr> 
+<tr><td rowspan="2">Demographics Adult</td><td>V4</td><td>Demographics (Birth Parent Visit 4)</td></tr> 
 <tr><td>V6</td><td>Demographics (Adult Visit 6)</td></tr> 
-<tr>
-<td rowspan="2">Demographics Child</td>
-<td>V4</td><td>Demographics (Child Visit 4)</td>
-</tr> 
+<tr><td rowspan="2">Demographics Child</td><td>V4</td><td>Demographics (Child Visit 4)</td></tr> 
 <tr><td>V6</td><td>Demographics (Child Visit 6)</td></tr>  
 <tr><td>Employment</td><td></td><td>Current Employment</td></tr>  
 <tr><td>Household Chemical Exposures</td><td></td><td>Household Chemical Exposures</td></tr>   

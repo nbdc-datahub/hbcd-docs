@@ -282,3 +282,33 @@ th, td {
   border-radius: 4px; /* round edges */
   width: 100%;
 }
+
+/* Study Legend tables */
+.study-legend {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 1.0em;
+}
+.study-legend td {
+  vertical-align: top;
+  padding-top: 0;
+  line-height: 1.5;
+  border-left: 3px solid transparent;
+}
+.study-legend i {
+  margin-right: 6px;
+  color: #0077ff; /* soft blue accent */
+  width: 18px;
+  text-align: center;
+}
+.study-legend a {
+  color: inherit;
+  text-decoration: none;
+}
+.study-legend a:hover i {
+  color: #1a4f8b;
+}
+.study-legend td:first-child {
+  border-right: 1px solid #e0e0e0;
+}
