@@ -10,47 +10,16 @@
   </span>
 </div>
 
-### 2.0 Current Study Instrument/Measure Updates
+### 2.0 New Participant Data & Study Instruments
 
-<p style="margin-bottom: 2px;"><i class="fa-solid fa-arrows-rotate" style="font-size: 0.8em;"></i> <b>Additional Participant data</b>, including <i>Multiple Birth Participants</i> & <i>Postnatal Recruits</i></p>
-<p style="margin-bottom: 2px;"><i class="fa-solid fa-arrows-rotate" style="font-size: 0.8em;"></i> <b>Resolution of <a href="../knownissues" target="_blank">Known Issues</a></b> Labeled <i>Expected Fix: R2.0</i></p>
-<p style="margin-bottom: 0;"><i class="fa-solid fa-arrows-rotate" style="font-size: 0.8em;"></i> <b>Domain-Specific:</b></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
-<thead>
-<th>Domain</th>
-<th>Instrument/Measure</th>
-<th>Pending Update</th>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i> PH<span class="tooltiptext">Physical Health</span></span></td>
-  <td>Growth (<code>ph_ch_anthro</code>)</td>
-  <td style="word-wrap: break-word; white-space: normal;">
-  Inclusion of age-based height/weight/head z-scores calculated based on (non-jittered) date of birth.</td>
-</tr>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i> IMG
-  <span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
-  <td>MR Derivatives</td>
-  <td style="word-wrap: break-word; white-space: normal;">
-  Processed <a href="../../instruments/mri/fmri/#nibabies" target="_blank" rel="noopener noreferrer">Infant fMRIPrep</a> and <a href="../../instruments/mri/fmri/#xcpd" target="_blank" rel="noopener noreferrer">XCP-D</a> derivatives for <strong>visits V03+</strong>.</td>
-</tr>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i> IMG
-  <span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
-  <td>MR Scans TSV</td>
-  <td style="word-wrap: break-word; white-space: normal;">
-  Addition of <strong>MRI Scanner Information</strong> for all scanners at each site to <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV files</a> (<code>sub-{ID}_ses-{V0X}_scans.tsv</code>), including ScannerManufacturer, ScannerModel, ScannerSoftwareVersion, and ScannerSerialNumber (used to differentiate different scanners at the same site). Note that this information is currently available in the sidecar JSON files for raw imaging data, e.g.:
-  <pre style="font-size: 12px;"><i>hbcd/rawdata/sub-{ID}/ses-{V0X}/anat/sub-{ID}_ses-{V0X}_run-{X}_T1w.json</i></pre>
-  </td>
-</tr>
-</tbody>
-</table>
-<p></p><p></p>
+##### Additional Participant Data
 
-### 2.0 New Study Instruments/Measures
+1. Multiple Birth Participants (MBP): multiple participants from the same birth (e.g. twins)
+1. Postnatal Recruits (PNRs) who joined the study after the child is born (complete a modified V01 and V02)
 
-**Approximately 30 new study instruments/measures will be added in 2.0** across the following domains. Click to expand the section below to view the full list.
+##### New Study Instruments/Measures
+
+Approximately **30 new study instruments/measures** will be added across the following domains. Click to expand the section below to view the full list.
 
 <table class="study-legend">
 <tbody>
@@ -155,9 +124,40 @@
 </tbody>
 </table>
 </div>
-<br>
 
------------------
+### 2.0 Existing Study Data Updates
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
+<thead>
+<th>Domain</th>
+<th>Table/Data</th>
+<th>Pending Update</th>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Physical Health</span></span></td>
+  <td>Growth (<code>ph_ch_anthro</code>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Inclusion of age-based height/weight/head z-scores calculated based on (non-jittered) date of birth.</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
+  <td>MR Derivatives</td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Processed <a href="../../instruments/mri/fmri/#nibabies" target="_blank" rel="noopener noreferrer">Infant fMRIPrep</a> and <a href="../../instruments/mri/fmri/#xcpd" target="_blank" rel="noopener noreferrer">XCP-D</a> derivatives for <strong>visits V03+</strong>.</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
+  <td>MR Scans TSV</td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Addition of <strong>MRI Scanner Information</strong> for all scanners at each site to <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV files</a> (<code>sub-{ID}_ses-{V0X}_scans.tsv</code>), including ScannerManufacturer, ScannerModel, ScannerSoftwareVersion, and ScannerSerialNumber (used to differentiate different scanners at the same site). Note that this information is currently available in the sidecar JSON files for raw imaging data, e.g.:
+  <pre style="font-size: 12px;"><i>hbcd/rawdata/sub-{ID}/ses-{V0X}/anat/sub-{ID}_ses-{V0X}_run-{X}_T1w.json</i></pre>
+  </td>
+</tr>
+</tbody>
+</table>
+<p></p><p></p>
+
 
 ## Release 2.1
 
@@ -168,19 +168,17 @@
   </span>
 </div>
 
-### 2.1 Current Study Instrument/Measure Updates
+### 2.1 Existing Study Data Updates
 
-<p style="margin-bottom: 0;"><i class="fa-solid fa-arrows-rotate" style="font-size: 0.8em;"></i> <b>Domain-Specific:</b></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
 <thead>
 <th>Domain</th>
-<th>Instrument/Measure</th>
+<th>Table/Data</th>
 <th>Pending Update</th>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i> IMG
-  <span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
   <td>DICOMs</td>
   <td style="word-wrap: break-word; white-space: normal;">
   Addition of <strong>source DICOMs</strong> for <a href="../../datacuration/file-based-data/#raw-bids" target="_blank">raw BIDS</a> for all imaging modalities.</td>

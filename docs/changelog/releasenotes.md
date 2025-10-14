@@ -6,13 +6,19 @@
 <tbody>
 <tr>
     <td><strong>Exclusions applied to all data</strong></td>
-    <td>Inactive participants/sessions excluded</td>
+    <td>
+    <ul>
+      <li>Inactive participants/sessions excluded</li>
+    </ul></td>
 </tr>
 <tr>
   <td><strong>Field Conversions</strong></td>
-  <td>• Empty fields are replaced with 'n/a'<br>
-      • Sex is set to 'Other' for participants with only one active Visit 1 (V01) visit<br>
-      • 'Candidate_Age' values are replaced with 'n/a' for Visit 1 (V01)
+  <td>
+    <ul>
+      <li>Empty fields are replaced with 'n/a'</li>
+      <li>Sex is set to 'Other' for participants with only one active Visit 1 (V01) visit</li>
+      <li>'Candidate_Age' values are replaced with 'n/a' for Visit 1 (V01)</li>
+    </ul>
   </td>
 </tr>
 </tbody>
@@ -48,74 +54,58 @@
   </div>
 </div>
 
-### 1.1 Updates & Improvements to Existing Data
+### 1.1 Existing Study Data Updates
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
-  <tbody>
-<tr><td colspan="2"><i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> <strong><i>Instrument/Measure (<code>Table Name</code>) Updates:</i></strong></td></tr>
-    <!-- Basic Demographics -->
-    <tr>
-      <td style="width: 40px; text-align: center;">
-        <a href="../../instruments/#demo" title="Basic Demographics" target="_blank"><i class="fas fa-id-card"></i></a>
-      </td>
-      <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
-        <strong>Basic Demographics</strong> 
-        (<a href="../../instruments/demo/basicdemo" target="_blank"><code>sed_basic_demographics</code></a>)<br>
-        <span class="update-text">Reviewed scoring for AOU and ACS EthnoRacial fields. The multiracial options for <strong>ACS – Child – Multi Race</strong> (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.</span>
-      </td>
-    </tr>
-    <!-- Biospec-->
-    <tr style="border-bottom: 1px solid #e0e0e0;">
-      <td style="width: 40px; text-align: center;">
-        <a href="../../instruments/#biospec" title="Biospec" target="_blank"><i class="fas fa-vial"></i></a>
-      </td>
-      <td style="padding: 8px 4px; vertical-align: top;">
-        <strong>Biospecimens Nails & Urine</strong> 
-        (<code>bio_bm_biosample_*</code>)<br>
-        <span class="update-text">Removed 'Specimen ID’ fields from all Biospecimen tables and time from dates in 'Nails Results.'</span>
-      </td>
-    </tr>
-    <!-- BrainSwipes QC -->
-    <tr style="border-bottom: 1px solid #e0e0e0;">
-      <td style="width: 40px; text-align: center;">
-        <a href="../../instruments/#mri" title="MRI Data" target="_blank"><i class="fas fa-brain"></i></a>
-      </td>
-      <td style="padding: 8px 4px; vertical-align: top;">
-        <strong>BrainSwipes QC</strong> 
-        (<a href="../../instruments/mri/qc/#brainswipes" target="_blank"><code>img_brainswipes*</code></a>)<br>
-        <span class="update-text">Added QC results missing from R1.0 (<strong>N=8</strong>).</span>
-      </td>
-    </tr>
-    <!-- Pregnancy & Infant Health -->
-    <tr style="border-bottom: 1px solid #e0e0e0;">
-      <td style="width: 40px; text-align: center;">
-        <a href="../../instruments/#pex" title="Pregnancy & Infant Health" target="_blank"><i class="fa-solid fa-baby"></i></a>
-      </td>
-      <td style="padding: 8px 4px; vertical-align: top; word-wrap: break-word; white-space: normal;">
-        <strong>Pregnancy & Infant Health</strong> 
-        (<a href="../../instruments/pregexp/pex" target="_blank"><code>pex_bm_health*</code></a>)<br>
-        <span class="update-text">Medications are now categorized into more detailed components based on <strong>RxNorm IDs</strong> to improve clarity and enable more granular analyses.  
-        Additional columns specify: <em>Brand Name</em>, <em>Ingredient</em>, <em>Precise Ingredient</em>, and <em>Multiple Active Ingredients</em>.</span>
-      </td>
-    </tr>
-    <!-- V01 Demographics -->
-    <tr style="border-bottom: 1px solid #e0e0e0;">
-      <td style="width: 40px; text-align: center;">
-        <a href="../../instruments/#socenvdet" title="Demographics" target="_blank"><i class="fas fa-city"></i></a>
-      </td>
-      <td style="padding: 8px 4px; vertical-align: top;">
-        <strong>V01 Demographics</strong> 
-        (<a href="../../instruments/SED/v01-demo" target="_blank"><code>sed_bm_demo</code></a>)<br>
-        <span class="update-text">Added <strong>Birth Parent Sexual Orientation</strong> variable.</span>
-      </td>
-    </tr>
-  </tbody>
+<thead>
+<th>Domain</th>
+<th>Table/Data</th>
+<th>Update/Improvement</th>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-id-card" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Demographics</span></span></td>
+  <td>Basic Demographics<br><code>sed_basic_demographics</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Reviewed scoring for AOU and ACS EthnoRacial fields. The multiracial options for <strong>ACS – Child – Multi Race</strong> (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-vial" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Biospecimen & Omics</span></span></td>
+  <td>Nails & Urine Toxicology<br><code>bio_bm_biosample_*</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Removed 'Specimen ID’ fields from all Biospecimen tables and time from dates in 'Nails Results.'
+</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa-solid fa-baby" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Pregnancy Exposure, Including Substance Use</span></span></td>
+  <td>Pregnancy & Infant Health<br><code>pex_bm_health*</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Medications are now categorized into more detailed components based on <strong>RxNorm IDs</strong> to improve clarity and enable more granular analyses.
+  Additional columns specify: <em>Brand Name</em>, <em>Ingredient</em>, <em>Precise Ingredient</em>, and <em>Multiple Active Ingredients</em>.
+</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-city" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Social & Environmental Determinants</span></span></td>
+  <td>V01 Demographics<br><code>sed_bm_demo</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Added <strong>Birth Parent Sexual Orientation</strong> variable.
+</td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
+  <td>BrainSwipes QC<br><code>img_brainswipes*</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Added QC results missing from R1.0 (N=8).
+</td>
+</tr>
+</tbody>
 </table>
+<p></p><p></p>
 
 <div id="updatedfiles" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
   <span class="text-with-link">
-  <span class="text">Fill List of Updated Files</span>
+  <span class="text">Full Updated Files List</span>
   <a class="anchor-link" href="#visitinfo" title="updatedfiles">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -377,38 +367,36 @@
   </div>
 </div>
 
-<div id="participant-visits" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-filter"></i></span>
-  <span class="text-with-link">
-  <span class="text">Participant & Visit Exclusions</span>
-  <a class="anchor-link" href="#participant-visits" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+#### Participant & Visit Exclusions
+
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
   <td><strong>Excluded Participants</strong></td>
-  <td> • Participants with no brain rating or brain rating noted as "atypical"<br>
-       • Postnatal Recruitment participants<br>
-       • Multiple Birth participants
+  <td>
+    <ul>
+      <li>Participants with no brain rating or brain rating noted as "atypical"</li>
+      <li>Postnatal Recruitment participants</li>
+      <li>Multiple Birth participants</li>
+    </ul>
   </td>
 </tr>
 <tr>
     <td><strong>Excluded Visit Data</strong></td>
-    <td> • Visits with 'LaunchPad Complete' Status set to 'Complete' after 2024-07-01.</td>
+    <td>
+    <ul>
+      <li>Visits with 'LaunchPad Complete' Status set to 'Complete' after 2024-07-01.</li>
+    </ul>
 </tr>
 </tbody>
 </table>
-</div>
+
+#### Instrument & Field Exclusions
 
 <div id="r1-exclusions" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-filter"></i></span>
   <span class="text-with-link">
-  <span class="text">Instrument & Field Exclusions</span>
+  <span class="text"><i>Click to Expand</i></span>
   <a class="anchor-link" href="#r1-exclusions" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
