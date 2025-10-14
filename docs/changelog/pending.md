@@ -50,6 +50,8 @@
 
 ### 2.0 New Study Instruments/Measures
 
+**Approximately 30 new study instruments/measures will be added in 2.0** across the following domains. Click to expand the section below to view the full list.
+
 <table class="study-legend">
 <tbody>
 <tr>
@@ -68,8 +70,6 @@
 </tr>
 </tbody>
 </table>
-
-New study instruments/measures will be added in 2.0 in each of the domains above. Click to expand the section below to view the full list.
 
 <div id="2.0-new-tables" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-plus"></i></span>
