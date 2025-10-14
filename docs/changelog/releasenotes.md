@@ -48,11 +48,11 @@
   </div>
 </div>
 
-### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 1.1 Updates & Improvements to Existing Data
+### 1.1 Updates & Improvements to Existing Data
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
   <tbody>
-<tr><td colspan="2"><strong><i>Instrument/Measure (<code>Table Name</code>) Updates:</i></strong></td></tr>
+<tr><td colspan="2"><i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> <strong><i>Instrument/Measure (<code>Table Name</code>) Updates:</i></strong></td></tr>
     <!-- Basic Demographics -->
     <tr>
       <td style="width: 40px; text-align: center;">
@@ -113,7 +113,7 @@
 </table>
 
 <div id="updatedfiles" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-screwdriver-wrench"></i></span>
+  <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
   <span class="text-with-link">
   <span class="text">Fill List of Updated Files</span>
   <a class="anchor-link" href="#visitinfo" title="updatedfiles">
@@ -164,7 +164,7 @@
 </ul>
 </div>
 
-### <i class="fa-solid fa-arrows-rotate" style="margin-right: 8px;"></i> 1.1 Resolved Known Issues By Domain
+### 1.1 Resolved Known Issues By Domain
 
 <div id="r1.1demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></span>
