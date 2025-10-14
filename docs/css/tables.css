@@ -158,43 +158,57 @@ th, td {
   padding: 8px;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.6) !important; 
-
+  vertical-align: top; /* aligns all cell content at the top */
 }
 .table-no-vertical-lines th {
   background-color: rgba(255, 255, 255, 0.6) !important;
 }
+/* Make lists behave more like normal text blocks */
 .table-no-vertical-lines ul {
-  margin-top: 1rem;
-  padding-left: 0.4rem;
-  line-height: 1;
-  font-size: 0.9em !important;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0;
+  padding-left: 1.2em;
+  display: block;
 }
+/* Reduce bottom space between last list item and table border */
+.table-no-vertical-lines ul:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* Optional: normalize list item alignment */
 .table-no-vertical-lines li {
-  margin-bottom: 0.2rem;
-  line-height: 1;
-  font-size: 1em !important;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
 }
 
 /* Compact Table Style */
-.compact-table {
-  font-size: 0.8em;
-  line-height: 1.2;
-  width: 100%;
-  border-collapse: collapse;
-}
 .compact-table th,
 .compact-table td {
-  vertical-align: top;
   text-align: left;
-  padding: 0.3em 0.6em;
+  padding: 0.2em 0.4em;
   border: 1px solid #ddd;
+  vertical-align: top; /* aligns all cell content at the top */
 }
-.compact-table th {
-  background-color: #e3f2fd;
-  width: 20%;
+/* Make lists behave more like normal text blocks */
+.compact-table ul {
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0;
+  padding-left: 1.2em;
+  display: block;
 }
-.compact-table td {
-  background-color: #f9f9f9;
+/* Reduce bottom space between last list item and table border */
+.compact-table ul:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* Optional: normalize list item alignment */
+.compact-table li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
 }
 
 /* Compact table with no vertical lines */
