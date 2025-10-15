@@ -177,7 +177,7 @@ This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files
 
 ### <a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics
 
-#### Basic Demographics (`sed_basic_demographics`)
+##### Basic Demographics (`sed_basic_demographics`)
 
 <div id="mother-race" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
@@ -225,7 +225,7 @@ This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files
 </div>
 <p></p>
 
-#### Visit Information (`par_visit_data`)
+##### Visit Information (`par_visit_data`)
 
 <div id="visit1" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
