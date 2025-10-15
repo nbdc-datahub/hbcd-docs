@@ -326,3 +326,35 @@ th, td {
 .study-legend td:first-child {
   border-right: 1px solid #e0e0e0;
 }
+
+/* Resolved Known Issues table */
+.icon-text-block {
+  display: flex;
+  align-items: center;      /* centers icon vertically with both text lines */
+  gap: 8px;                 /* space between icon and text */
+}
+.icon-link i {
+  font-size: 1.1em;
+  color: #444;
+  vertical-align: middle;
+  min-width: 20px;
+}
+.text-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+.compact-table-no-vertical-lines {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.compact-table-no-vertical-lines th,
+.compact-table-no-vertical-lines td {
+  padding: 6px;
+  vertical-align: top;
+}
+.compact-table-no-vertical-lines th {
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
