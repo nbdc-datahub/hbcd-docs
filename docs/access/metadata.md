@@ -21,7 +21,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 <p>
 <div id="metadata" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text">CAUTION: Instruction text may be incomplete or misaligned! Review the <a href="../../changelog/knownissues/#instruction-metadata-caution-please-read-carefully">known issue</a> before use.
+  <span class="text">CAUTION: Instruction text may be incomplete or misaligned! Review the <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a> before use.
  </span>
 </div>
 </p>

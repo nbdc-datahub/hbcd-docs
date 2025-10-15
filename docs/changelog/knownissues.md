@@ -1,19 +1,16 @@
 # Known Issues
 
-The following issues have been identified in the current HBCD data release. **We are actively working to address them and expect most fixes to be implemented in Release 2.0 unless otherwise noted.** This page will be updated as new issues are discovered.  
-
+The following issues have been identified in the current HBCD data release. **We are actively working to address them and expect most fixes to be implemented in Release 2.0 unless otherwise noted.** This page will be updated as new issues are discovered.    
 If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
 
-## General
+## Instruction Metadata — Read Carefully
+  
+Instruction text in each form’s metadata is automatically extracted from the most recent `instruction` field in the REDCap Data Dictionary (based on field order). Because this process is automated, it may produce the following issues:
 
-### Instruction Metadata — READ CAREFULLY (*Expected Fix: TBD*)
+ - If an instruction spans multiple fields, only the **last portion** will be captured.
+ - Some fields may display text intended for a **previous section**
 
-Instruction text in the form's metadata is extracted programmatically from the most recent instruction field in the REDCap Data Dictionary for each form, based on field order. **As a result:**
-
-*   If an instruction spans multiple fields, only the **last portion** will be captured.
-*   Some fields may display text intended for a **previous section**.
-
-Manual curation of instruction metadata is planned for future releases. For the most accurate information, always refer to the original form.
+Manual review and correction of instruction metadata are planned for a future release (**expected fix date TBD**). For the most accurate and complete information, please refer to the original form.
 
 ## HBCD Study Data
 
