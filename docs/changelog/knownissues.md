@@ -15,7 +15,6 @@ If you have questions or would like to report an issue, please submit a ticket t
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
-
   <span class="arrow">▸</span>
 </div>
 <div class="issues-collapsible-content">
