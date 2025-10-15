@@ -14,7 +14,7 @@ th, td {
   display: flex;
   align-items: center;      /* centers emoji relative to text block */
   background-color: #dde6fe;
-  padding: 4px 8px;
+  padding: 3px 10px;
   border-bottom: 1px solid #e0e0e0;
   font-family: Lato; 
   color: #474646;
@@ -36,7 +36,7 @@ th, td {
   border-top: none;
   padding: 0 0;
   border-radius: 0 0 5px 5px;
-  margin-bottom: 10px; /* Adds spacing below the section */
+  margin-bottom: 8px; /* Adds spacing below the section */
   width: 100%;
   display: block;
   overflow-x: auto; 
