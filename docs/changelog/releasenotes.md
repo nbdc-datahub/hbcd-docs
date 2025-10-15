@@ -201,136 +201,92 @@ Approximately **30 new study instruments/measures** have been added across the f
 </table>
 <p></p><p></p>
 
-### 2.0 Resolved Known Issues By Domain
+### 2.0 Resolved Known Issues
 
-<div id="r2.0demo" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></span>
+<div id="r2.0res-KI" class="table-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
   <span class="text-with-link">
-  <span class="text">Demographics</span>
-  <a class="anchor-link" href="#r2.0demo" title="Copy link">
+  <span class="text"><i>Click to Expand</i></span>
+  <a class="anchor-link" href="#r2.0res-KI" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><strong>Basic Demographics (<code>sed_basic_demographics</code>)</strong></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8c4266; color: #6e6256ff;">
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
-      <strong>Mother Race (<code>screen_mother_race</code>)</strong><br>
-      Removal of invalid response option 2 = <i>Hawaiian</i>.</td>
-  </tr>  
-  <tr>
-    <td>
-      <strong>Child Multi-Race & -Ethnicity (<code>child_ethnoracial_acs_by_multi_&lt;race|ethnicity&gt;</code>)</strong><br>
-      Removal of Child Multi-Race (duplicated coding to Child Multi-Ethnicity).</td>
-  </tr>  
-  <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
-    <strong>Child Multi-Race & -Ethnicity (<code>child_ethnoracial_acs_by_multi_&lt;race|ethnicity&gt;</code>)</strong><br>
-    V01 data removed.
-    </td>
+    <th>DOMAIN</th>
+    <th>TABLE/DATA</th>
+    <th>RESOLVED KNOWN ISSUE</th>
   </tr>
-</tbody>
-</table>
-<p style="font-size: 1.0em;"><strong>Visit Information (<code>par_visit_data</code>)</strong></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+</thead>
 <tbody>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">
-  <strong>Withdrawal Date (<code>participant_withdrawal_date</code>)</strong><br>
-  Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) were assigned a sentinel withdrawal date (<code>participant_withdrawal_date</code>) of <code>12/26/1999</code>. These values are now updated to null for clarity and consistency.
-</td>
-</tr>  
+  <td rowspan="3" style="text-align: center;"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></td>
+  <td rowspan="3">Basic Demographics<br><code>sed_basic_demographics</code></td>
+  <td><b>[1]</b> Removal of invalid response option 2 = <i>Hawaiian</i> from Mother Race (<code>screen_mother_race</code>).</td>
+</tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">
-  <strong>Biospec Substance Use Flags (<code>su_flag_bio_*</code>)</strong><br>
-  Substance use flags derived from USDTL urine toxicology results (<a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a>) are now removed for Visit 2 (urine samples are not collected at Visit 2).
-</td>
-</tr>  
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">
-  <strong>TLFB Substance Use Flags (<code>su_flag_tlfb_*</code>)</strong><br>
-  The TLFB substance use flags (<a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a>) for participants who do not have a Visit 2 previously had an incorrect value of 'no:' these have been corrected to 'null.'
-</td>
-</tr> 
-</tbody>
-</table>
-</div>
-
-<div id="r2.0biospec" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></span>
-  <span class="text-with-link">
-  <span class="text">Biospecimens</span>
-  <a class="anchor-link" href="#r2.0biospec" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><strong>Urine Toxicology - Cotinine (<code>bio_c_cot_u</code>)</strong></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-  <tr>
   <td style="word-wrap: break-word; white-space: normal;">
-  Missing values in the Urine toxicology results (<code>bio_bm_biosample_urine</code>) that were inadvertently set to <code>0</code> (N=18) are now restored back to "missing."
+  <b>[2]</b> Removed Child Multi-Race (<code>child_ethnoracial_acs_by_multi_race</code>) variable due to duplicated coding to Child Multi-Ethnicity (<code>child_ethnoracial_acs_by_multi_ethnicity</code>).
   </td>
-  </tr>  
-</tbody>
-</table>
-</div>
-
-<div id="r2.0neurocog" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></span>
-  <span class="text-with-link">
-  <span class="text">Neurocognition & Language</span>
-  <a class="anchor-link" href="#r2.0neurocog" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
+</tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">
-  <strong>SPM2 (<code>ncl_cg_spm2__inf</code>)</strong><br>
-  Addition of (1) age fields and (2) <b>STATUS SCORE</b> that was missing for one subscale.
+<b>[3]</b> Removed Child Multi-Ethnicity V01 data.
 </td>
-</tr>   
-</tbody>
-</table>
-</div>
-
-<div id="r2.0pex" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a></span>
-  <span class="text-with-link">
-  <span class="text">Pregnancy & Exposure, Including Substance Use</span>
-  <a class="anchor-link" href="#r2.0pex" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
+</tr>
+<tr>
+<td rowspan="3" style="text-align: center;"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></td>
+<td rowspan="3">Visit Information<br><code>par_visit_data</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+  <b>[1]</b> Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) were assigned a sentinel withdrawal date (<code>participant_withdrawal_date</code>) of <code>12/26/1999</code>. These values were updated to null for clarity and consistency.
+</td>
+</tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">
-  <strong>APA 1/2 (<code>pex_bm_apa_anger_*</code>)</strong><br>
-  T-scores and total scores missing in the APA 1/2 for only the Anger subscale are now included.
+<b>[2]</b> Removed V02 Biospec substance use flags <a href="../../instruments/demo/visitinfo/#substance-use-flags">derived from USDTL urine toxicology</a> (<code>su_flag_bio_*</code>) (urine samples not collected at V02).
 </td>
-</tr>   
+</tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">
-  <strong>TLFB (<code>pex_ch_tlfb</code>)</strong><br>
-  TLFB age variable fields (<code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>) are now included.
+<b>[3]</b> Corrected values (replaced 'no' with 'null') of the TLFB substance use flags (<code>su_flag_tlfb_*</code>) for participants without a V02 visit.
 </td>
-</tr>   
+</tr>
+<tr>
+<td style="text-align: center;"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></td>
+<td>Urine toxicology<br><code>bio_bm_biosample_urine</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Restored 'missing' values for urinary cotinine (<code>bio_c_cot_u</code>) erroneously set to <code>0</code> (N = 18).
+</td>
+</tr>
+<tr>
+  <td rowspan="2" style="text-align: center;"><a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></td>
+  <td rowspan="2">SPM-2<br><code>ncl_cg_spm2__inf</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  <b>[1]</b> Added age fields - <code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>.
+</td>
+</tr>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;">
+  <b>[2]</b> Added Status Scores that were missing for all but one subscale.
+</td>
+</tr>
+<tr>
+  <td rowspan="2" style="text-align: center;"><a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a></td>
+  <td>APA 1/2<br><code>pex_bm_apa_anger_*</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Added missing T-scores and total scores to Anger subscale (remaining subscales intact).
+</td>
+</tr>
+<tr>
+  <td>TLFB<br><code>pex_ch_tlfb</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Added age variable fields - <code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>.
+</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -470,7 +426,7 @@ Approximately **30 new study instruments/measures** have been added across the f
 </ul>
 </div>
 
-### 1.1 Resolved Known Issues By Domain
+### 1.1 Resolved Known Issues
 
 <div id="r1.1demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></span>
@@ -708,7 +664,6 @@ Approximately **30 new study instruments/measures** have been added across the f
 </table>
 
 #### Instrument & Field Exclusions
-
 
 <div id="r1-exclusions" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-filter"></i></span>
