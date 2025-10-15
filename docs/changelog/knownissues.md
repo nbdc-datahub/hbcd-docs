@@ -6,29 +6,178 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 ## General
 
-<div id="instr-metadata" class="issues-banner" onclick="toggleCollapse(this)">
+### Instruction Metadata — READ CAREFULLY (*Expected Fix: TBD*)
+
+Instruction text in the form's metadata is extracted programmatically from the most recent instruction field in the REDCap Data Dictionary for each form, based on field order. **As a result:**
+
+*   If an instruction spans multiple fields, only the **last portion** will be captured.
+*   Some fields may display text intended for a **previous section**.
+
+Manual curation of instruction metadata is planned for future releases. For the most accurate information, always refer to the original form.
+
+## HBCD Study Data
+
+<div id="knownissues-all" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text-with-link">
-  <span class="text">Instruction Metadata — Read Carefully</span>
-  <span class="badge">Fix: TBD</span>
-  <a class="anchor-link" href="#instr-metadata" title="Copy link">
+  <span class="text">Combined List of Known Issues Across Domains</span>
+  <a class="anchor-link" href="#knownissues-all" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="issues-collapsible-content">
-<p>Instruction text in the form's metadata is extracted programmatically from the most recent instruction field in the REDCap Data Dictionary for each form, based on field order. <b>As a result:</b></p>
-<ul style="margin-top: 0.2em; margin-bottom: 0.2em;">
-  <li>If an instruction spans multiple fields, only the <b>last portion</b> will be captured.</li>
-  <li>Some fields may display text intended for a <b>previous section</b>.</li>
-</ul>
-<p style="margin-top: 0; padding-top: 0;">Manual curation of instruction metadata is planned for future releases. For the most accurate information, always refer to the original form.</p>
+<div class="table-collapsible-content">
+<table class="compact-table-no-vertical-lines">
+<thead>
+  <tr>
+    <th style="width: 20%;">TABLE/DATA</th>
+    <th style="width: 1%; text-align: center;">#</th>
+    <th>Known Issue</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="3">
+    <div class="icon-text-block">
+      <a href="../../instruments/#demo" target="_blank">
+        <i class="fas fa-id-card" style="font-size: 1.3em;"></i>
+      </a>
+      <div class="text-block">
+        Basic Demographics<br>
+        <code>sed_basic_demographics</code>
+      </div>
+    </div>
+  </td>
+  <td><b>(1)</b></td> 
+  <td>Mother Race (<code>screen_mother_race</code>) contains invalid response option 2 = <i>Hawaiian</i>.</td>
+</tr>
+<tr>
+    <td><b>(2)</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  Child Multi-Race (<code>child_ethnoracial_acs_by_multi_race</code>) coding is a duplicate of Child Multi-Ethnicity (<code>child_ethnoracial_acs_by_multi_ethnicity</code>) and will be removed.
+  </td>
+</tr>
+<tr>
+<td><b>(3)</b></td> 
+<td style="word-wrap: break-word; white-space: normal;">
+Child Multi-Race/Ethnicity V01 data will be removed. In the meantime, we do not recommend using V01 data for this variable in analyses.
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+  <div class="icon-text-block"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card" style="font-size: 1.3em;"></i></a>
+  <div class="text-block">Visit Information<br><code>par_visit_data</code></div>
+</div>
+</td>
+<td><b>(1)</b></td> 
+<td style="word-wrap: break-word; white-space: normal;">
+  Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) are assigned a sentinel withdrawal date (<code>participant_withdrawal_date</code>) of <code>12/26/1999</code>. These values will be updated to null for clarity and consistency.
+</td>
+</tr>
+<tr>
+<td><b>(2)</b></td> 
+<td style="word-wrap: break-word; white-space: normal;">
+Erroneous inclusion of Biospec substance use flags <a href="../../instruments/demo/visitinfo/#substance-use-flags">derived from USDTL urine toxicology</a> (<code>su_flag_bio_*</code>) for V02 (urine samples not collected at V02) - will be removed to FIX.
+</td>
+</tr>
+<tr>
+<td><b>(3)</b></td> 
+<td style="word-wrap: break-word; white-space: normal;">
+The TLFB substance use flags (<code>su_flag_tlfb_*</code>) for participants who do not have a Visit 2 have incorrect values of 'no:' these will be corrected to 'null.'
+</td>
+</tr>
+<tr>
+<td>
+<div class="icon-text-block"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial" style="font-size: 1.3em;"></i></a>
+<div class="text-block">Urine toxicology<br><code>bio_bm_biosample_urine</code>
+</div>
+</div>
+</td>
+  <td><b>(1)</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  Missing values for urinary cotinine (<code>bio_c_cot_u</code>) were erroneously set to <code>0</code> (N = 18) and will be restored in a future release. In the meantime, users can identify affected records by checking <code>bio_c_nicotine_u</code> for values of <code>3</code> (<code>--invalid</code>).
+</td>
+</tr>
+<tr>
+  <td rowspan="2">
+    <div class="icon-text-block">
+      <a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece" style="font-size: 1.3em;"></i></a>
+      <div class="text-block">SPM-2<br><code>ncl_cg_spm2__inf</code>
+      </div>
+    </div>
+  </td>
+  <td><b>(1)</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  Age fields are not currently included for the SPM-2. Until added, users can refer to corresponding age variables in related datasets for the same time point.
+</td>
+</tr>
+<tr>
+  <td><b>(2)</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  Status Scores are missing for all but one subscale. To be provided in the next release.
+</td>
+</tr>
+<tr>
+  <td>
+    <div class="icon-text-block">
+      <a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby" style="font-size: 1.3em;"></i></a>
+      <div class="text-block">Pregnancy & Infant Health<br><code>pex_bm_health*</code>
+      </div>
+    </div>
+  </td>
+  <td><b>(1)</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  ICD codes are inconsistently provided, sometimes missing corresponding names/labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>
+</td>
+</tr>
+<tr>
+  <td>
+    <div class="icon-text-block">
+      <a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby" style="font-size: 1.3em;"></i></a>
+      <div class="text-block">APA 1/2<br><code>pex_bm_apa_anger_*</code>
+      </div>
+    </div>
+  </td>
+  <td><b>(1)</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  T-scores and total scores are missing in the APA 1/2 for only the Anger subscale.
+</td>
+</tr>
+<tr>
+  <td>
+    <div class="icon-text-block">
+      <a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby" style="font-size: 1.3em;"></i></a>
+      <div class="text-block">TLFB<br><code>pex_ch_tlfb</code>
+      </div>
+    </div>
+  </td>
+  <td><b>(1)</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  Missing age variable fields (<code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>). Until added, users can refer to corresponding age variables in related datasets for the same time point.
+</td>
+</tr>
+<tr>
+  <td>
+    <div class="icon-text-block">
+      <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain" style="font-size: 1.3em;"></i></a>
+      <div class="text-block">Imaging Data
+      </div>
+    </div>
+  </td>
+  <td><b>(1)</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  For HBCD imaging data with multiple runs, the <code>run-{X}</code> field may not reflect chronological acquisition order.  
+This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files converted to HBCD tabulated data</b> (<a href="../../datacuration/overview" target="_blank">see file type details</a>). Despite this, data remain internally consistent — e.g., run IDs match between raw and processed datasets.
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 
-## <a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics
+### <a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics
 
-### Basic Demographics (`sed_basic_demographics`)
+#### Basic Demographics (`sed_basic_demographics`)
 
 <div id="mother-race" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
@@ -74,8 +223,9 @@ If you have questions or would like to report an issue, please submit a ticket t
 <div class="issues-collapsible-content">
 <p>Child Multi-Race & Ethnicity (<code>child_ethnoracial_acs_by_multi_&lt;race|ethnicity&gt;</code>) V01 data will be removed and in the meantime, we do not recommend using V01 data for this variable in analyses.</p>
 </div>
+<p></p>
 
-### Visit Information (`par_visit_data`)
+#### Visit Information (`par_visit_data`)
 
 <div id="visit1" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
@@ -123,7 +273,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 </div>
 
 
-## <a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
+### <a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
 
 <div id="cot-u" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
@@ -140,7 +290,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <p>In the Urine toxicology results (<code>bio_bm_biosample_urine</code>), all negative values for urinary cotinine (<code>bio_c_cot_u</code>) were previously set to <code>0</code>, as negative values are not biologically plausible. During this correction, <b>missing values</b> were inadvertently also set to <code>0</code> (N = 18). These values will be restored to missing in a future release. In the meantime, users can identify affected records by checking <code>bio_c_nicotine_u</code> for values of <code>3</code> (<code>--invalid</code>).</p>
 </div>
 
-## <a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
+### <a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
 
 <div id="spm2-1" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
@@ -172,7 +322,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <p>T-scores are now provided (see <a href="../../changelog/releasenotes/#r1.1ngl">1.1 Resolved Known Issues</a>), but <b>STATUS SCORE</b> is still missing for all but one subscale. To be provided in the next release.</p>
 </div>
 
-## <a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use
+### <a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use
 
 <div id="pex" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
@@ -219,7 +369,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <p>TLFB age variable fields (<code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>) were removed for R1.1 due to incorrect values. Until added in a future release, users can refer to corresponding age variables in related datasets for the same time point.</p>
 </div>
 
-## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
+### <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
 
 <div id="mr-runid" class="issues-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-bug"></i></span>
