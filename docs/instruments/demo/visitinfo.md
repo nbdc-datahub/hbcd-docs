@@ -25,40 +25,68 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>KNOWN ISSUES - Expected Fix Release 2.0</b></p>
-<table class="table-no-vertical-lines">
-<thead>
-<th>Field</th>
-<th>Known Issue Description</th>
-</thead>
-<tbody>
-<tr>
-<td><b>Withdrawal Date<br><code>participant_withdrawal_date</code></b></td> 
-<td style="word-wrap: break-word; white-space: normal;">
-  Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) are assigned a sentinel withdrawal date of <code>12/26/1999</code>. These values will be updated to null for clarity.
-</td>
-</tr>
-<tr>
-<td><b>Biospec-Derived SU Flags<br><code><code>su_flag_bio_*</code></code></b></td> 
-<td style="word-wrap: break-word; white-space: normal;">
-Erroneous inclusion of Biospec substance use flags <a href="../../instruments/demo/visitinfo/#substance-use-flags">derived from USDTL urine toxicology</a> for V02 (urine samples not collected at V02) - will be removed to fix.
-</td>
-</tr>
-<tr>
-<td><b>TLFB-Derived SU Flags<br><code><code>su_flag_tlfb_*</code></code></b></td> 
-<td style="word-wrap: break-word; white-space: normal;">
-The TLFB substance use flags for participants who do not have a Visit 2 have incorrect values of 'no:' these will be corrected to 'null.'
-</td>
-</tr>
-</tbody>
+<table class="table-no-vertical-lines" style="
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 2px solid #f0b429;
+  border-radius: 8px;
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: normal;
+  margin-top: 1em;
+">
+  <thead>
+    <tr style="background-color: #fff3e0;">
+      <th colspan="2" style="
+        text-align: left;
+        font-size: 1.1em;
+        padding: 4px;
+        border-bottom: 2px solid #f0b429;
+        word-wrap: break-word;
+        white-space: normal;
+      ">
+        <i class="fas fa-bug" style="margin-right: 6px; color: orange;"></i>
+        <b style="color: #6e6256ff;">KNOWN ISSUES – Expected Fix Release 2.0</b>
+      </th>
+    </tr>
+    <tr style="background-color: #fdfaf5;">
+      <th style="width: 25%; text-align: left; padding: 8px; color: #6e6256ff;">VARIABLE/FIELD</th>
+      <th style="text-align: left; padding: 8px; color: #6e6256ff;">KNOWN ISSUE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+        <b>Withdrawal Date<br><code>participant_withdrawal_date</code></b>
+      </td>
+      <td style="vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+        Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) are assigned a sentinel withdrawal date of <code>12/26/1999</code>. 
+        These values will be updated to <code>null</code> for clarity.
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+        <b>Biospec-Derived SU Flags<br><code>su_flag_bio_*</code></b>
+      </td>
+      <td style="vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+        Erroneous inclusion of Biospec substance use flags 
+        <a href="../../instruments/demo/visitinfo/#substance-use-flags">derived from USDTL urine toxicology</a> 
+        for V02 (urine samples not collected at V02) — will be removed to fix.
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+        <b>TLFB-Derived SU Flags<br><code>su_flag_tlfb_*</code></b>
+      </td>
+      <td style="vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+        The TLFB substance use flags for participants who do not have a Visit 2 have incorrect values of “no;” these will be corrected to “null.”
+      </td>
+    </tr>
+  </tbody>
 </table>
 </div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#visit-information-par_visit_data" target="_blank">see details</a>.</span>
-</div>
-<p></p>
 
 ## Details
 

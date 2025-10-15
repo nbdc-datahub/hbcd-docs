@@ -91,3 +91,59 @@
   background: #c084fc66;
   color: #6a6a6a;
 }
+
+
+
+
+/* --- Known Issues Table Styling --- */
+.known-issues-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 2px solid #f0b429;
+  border-radius: 8px;
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: normal;
+  font-size: 0.95em;
+}
+
+/* Header banner row */
+.known-issues-table thead tr:first-child {
+  background-color: #fff3e0;
+}
+
+.known-issues-table thead th[colspan="2"] {
+  text-align: left;
+  font-size: 1.1em;
+  padding: 10px;
+  border-bottom: 2px solid #f0b429;
+}
+
+/* Column header row */
+.known-issues-table thead tr:nth-child(2) {
+  background-color: #fdfaf5;
+}
+
+.known-issues-table thead th {
+  text-align: left;
+  padding: 8px;
+}
+
+/* Table body */
+.known-issues-table td {
+  vertical-align: top;
+  padding: 8px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Optional link styling */
+.known-issues-table a {
+  color: #0078a3;
+  text-decoration: none;
+}
+
+.known-issues-table a:hover {
+  text-decoration: underline;
+}
