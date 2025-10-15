@@ -14,6 +14,46 @@
 
 ---------------------------------------------
 
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</i></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p><b>KNOWN ISSUES - Expected Fix Release 2.0</b></p>
+<table class="table-no-vertical-lines">
+<thead>
+<th>Field</th>
+<th>Known Issue Description</th>
+</thead>
+<tbody>
+<tr>
+<td><b>Withdrawal Date<br><code>participant_withdrawal_date</code></b></td> 
+<td style="word-wrap: break-word; white-space: normal;">
+  Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) are assigned a sentinel withdrawal date of <code>12/26/1999</code>. These values will be updated to null for clarity.
+</td>
+</tr>
+<tr>
+<td><b>Biospec-Derived SU Flags<br><code><code>su_flag_bio_*</code></code></b></td> 
+<td style="word-wrap: break-word; white-space: normal;">
+Erroneous inclusion of Biospec substance use flags <a href="../../instruments/demo/visitinfo/#substance-use-flags">derived from USDTL urine toxicology</a> for V02 (urine samples not collected at V02) - will be removed to fix.
+</td>
+</tr>
+<tr>
+<td><b>TLFB-Derived SU Flags<br><code><code>su_flag_tlfb_*</code></code></b></td> 
+<td style="word-wrap: break-word; white-space: normal;">
+The TLFB substance use flags for participants who do not have a Visit 2 have incorrect values of 'no:' these will be corrected to 'null.'
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#visit-information-par_visit_data" target="_blank">see details</a>.</span>
