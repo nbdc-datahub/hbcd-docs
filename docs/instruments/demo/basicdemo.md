@@ -40,32 +40,6 @@
 </div>
 <div class="warning-collapsible-content">
 <p>Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e. imperfect option for job type and number of hours).</p> 
-<p><b>KNOWN ISSUES - Expected Fix Release 2.0</b></p>
-<table class="table-no-vertical-lines">
-<thead>
-<th>Field</th>
-<th>Known Issue Description</th>
-</thead>
-<tbody>
-<tr>
-  <td><b>Mother Race<br><code>screen_mother_race</code></b></td> 
-  <td>Contains invalid response option 2 = <i>Hawaiian</i>.</td>
-</tr>
-<tr>
-  <td rowspan="2"><b>Child Multi-Race/Ethnicity<br>
-  <code>child_ethnoracial_acs_by_multi_race</code><br>
-  <code>child_ethnoracial_acs_by_multi_ethnicity</code></b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">
-   Child Multi-Race coding is a duplicate of Child Multi-Ethnicity and will be removed.
-  </td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">
-V01 data will be removed. In the meantime, we do not recommend using V01 data for this variable in analyses.
-</td>
-</tr>
-</tbody>
-</table>
 </div>
 
 <div id="issues" class="issues-banner">
