@@ -206,7 +206,7 @@ Approximately **30 new study instruments/measures** have been added across the f
 <div id="r2.0res-KI" class="table-banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
   <span class="text-with-link">
-  <span class="text"><i>Click to Expand</i></span>
+  <span class="text">2.0 Resolved Known Issues - <i>Click to Expand</i></span>
   <a class="anchor-link" href="#r2.0res-KI" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
