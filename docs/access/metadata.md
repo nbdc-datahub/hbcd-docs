@@ -5,9 +5,9 @@ Tabulated HBCD data is organized into a **standardized table format** per study 
  - **Data dictionary**: Provides detailed information about table variables, including variable name, label, description, data type, etc. 
  - **Levels table**: Provides information about the levels for categorical variables (label, order, etc.)
 
-See the following sections for detailed descriptions for each column in the [data dictionary](#data-dictionary-columns) and [levels tables](#levels-definitions).
+See the following sections for detailed descriptions for each column in the [data dictionary](#data-dictionary-columns) and [levels table](#levels-table).
 
-### Data Dictionary Columns
+## Data Dictionary Columns
 <!-- LEGEND -->
 <table id="legend" class="compact-table-no-vertical-lines" style="border: 2px solid #4fe2ffff; border-radius: 8px; border-collapse: collapse; line-height: 1.0;">
 <tbody>
@@ -271,7 +271,7 @@ Some columns are currently blank in the Lasso Dictionary Query Tool and will be 
 Dataset downloads contain 2 additional columns not described in the data dictionary. This includes <b>cohort</b> and <b>site</b>, identical to <a href="../../instruments/demo/visitinfo">Visit Information</a> variables <b>par_visit_data_&lt;<i>cohort|site</i>&gt;</b>.</p>
 </div>
 
-### Levels 
+## Levels Table
 
 <table class="compact-table" style="font-size: 14px;">
 <thead>
