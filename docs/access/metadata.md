@@ -37,9 +37,6 @@ Below are the definitions for the columns in the data dictionary and levels tabl
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-
-
-
 <table class="compact-table">
 <thead>
 <tr>
@@ -59,15 +56,14 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 <tr>
     <td><code>domain</code></td>
     <td>Domain</td>
-    <td style="word-wrap: break-word; white-space: normal;">Domain/<a href="https://hbcdstudy.org/workgroups-and-committees/">HBCD Workgroup</a> (e.g <i>Demographics; Behavior/Child-Caregiver Interaction; Biospecimens; Tabular imaging, etc.</i>)
+    <td style="word-wrap: break-word; white-space: normal;">Domain/<a href="https://hbcdstudy.org/workgroups-and-committees/">HBCD Workgroup</a> (e.g <i>Demographics, Biospecimens, etc. - <a href="#domain-source-values">see full list</a></i>)
     </td>
     <td></td>
 </tr>
 <tr>
     <td><code>source</code></td>
     <td>Source</td>
-    <td style="word-wrap: break-word; white-space: normal;">Source of information.<br>
-    Includes: {<i>Biological Mother; Caregiver (Responsible Adult); Child; General</i>}</td>
+    <td style="word-wrap: break-word; white-space: normal;">Source of information. Includes: {<i>Biological Mother; Caregiver (Responsible Adult); Child; General</i>}</td>
     <td></td>
 </tr>
 <tr>
@@ -143,7 +139,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 <tr>
     <td><code>type_level</code></td>
     <td>Level of measurement</td>
-    <td style="word-wrap: break-word; white-space: normal;">Possible values include: nominal; ordinal; interval; ratio</td>
+    <td style="word-wrap: break-word; white-space: normal;">Possible values include: {<i>nominal; ordinal; interval; ratio</i>}</td>
     <td></td>
 </tr>
 <tr>
@@ -196,13 +192,13 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 </tr>
 <tr>
     <td><code>url_table</code></td>
-    <td>Documentation for table</td>
+    <td>Documentation<br>for table</td>
     <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../../instruments" target="_blank">study instrument documentation</a></td>
     <td></td>
 </tr>
 <tr>
     <td><code>url_table_warn_use</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Responsible Use Warning (table)</td>
+    <td style="word-wrap: break-word; white-space: normal;">Responsible Use<br>Warning (table)</td>
     <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">responsible use warning</a> (table)</td>
     <td></td>
 </tr>
@@ -214,7 +210,7 @@ Below are the definitions for the columns in the data dictionary and levels tabl
 </tr>
 <tr>
 <td><code>url_warn_use</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Responsible Use Warning (variable)</td>
+<td style="word-wrap: break-word; white-space: normal;">Responsible Use<br>Warning (variable)</td>
 <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">responsible use warning</a> (variable)</td>
 <td></td>
 </tr>
