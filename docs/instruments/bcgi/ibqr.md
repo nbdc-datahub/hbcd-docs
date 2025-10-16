@@ -52,12 +52,36 @@
 </tbody>
 </table>
 
-
 ## Instrument Details
 
-The IBQ-R (VSF)+BI is a caregiver report form used to assess temperamental reactivity and regulation in infancy, focusing on key traits that influence development and behavior during the early years. It is adapted from the well-validated IBQ-R Very Short Form with additional items reflecting Behavioral Inhibition from the long form of the IBQ-R.
+The **IBQ-R (VSF)+BI** (for infancy) is caregiver-report questionnaires used to evaluate temperamental reactivity and self-regulation during the early years of development. These instruments are adapted from the validated IBQ-R Very Short Form, with additional items drawn from the long forms to capture **Behavioral Inhibition (Social Fear)**. The HBCD measure therefore consists of 4 scale domains: 
 
-In addition to the overall Surgency, Negative Affect and Effortful Control scales derived from the validated IBQ-R-VSF, the HBCD Workgroup and measure experts added a Behavior Inhibition (or Social Fear) scale using items from the long form of the IBQ-R (IBQ-R-LF). The HBCD measure therefore consists of 4 scale domains: surgency/extraversion (13 items), negative affectivity (12 items), effortful control (12 items), and behavioral inhibition (13 items).
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 16px; line-height: 1.4; text-align: center;">
+  <thead>
+    <tr>
+      <th style="text-align: left;">Scale Domain</th>
+      <th>Number of Items</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left;"><strong>Surgency / Extraversion</strong></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;"><strong>Negative Affectivity</strong></td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;"><strong>Effortful Control</strong></td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;"><strong>Behavioral Inhibition (Social Fear)</strong></td>
+      <td>13 <span style="font-size: 0.9em; color: #666;">(3 overlap with Negative Affectivity)</span></td>
+    </tr>
+  </tbody>
+</table>
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
