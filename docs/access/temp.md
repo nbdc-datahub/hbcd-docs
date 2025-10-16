@@ -1,20 +1,33 @@
 variables refer to fields, column headers within tables
 
+add separate section/table showing correspondance to JSON metadata
+
 add separate section explaining type_var
 
-```
-<td><code>type_var</code></td>
-    <td>Variable type</td>
-    <td style="word-wrap: break-word; white-space: normal;">Possible values include: 
-    <span class="tooltip">administrative<span class="tooltiptext">
-    Data that gives context to the assessments, e.g. date of assessment, language, quality control, etc.</span></span>;
-    <span class="tooltip">item<span class="tooltiptext">Original data provided by the participant, e.g. questions in a questionnaire</span></span>; 
-    <span class="tooltip">derived item<span class="tooltiptext">Derived from original data provided by the participant - e.g. if the participant filled in two fields to enter their height in feet and inches, a derived item could integrate this information into one field that provides the height in inches</span></span>; 
-    <span class="tooltip">summary score<span class="tooltiptext">Summary and/or score output based on algorithmic conversions of items/raw data</span></span></td>
-    <td style="text-align: center;"><span class="tooltip tooltip-left"><i class="bi bi-filetype-json" style="font-size:17px;"></i>
-    <span class="tooltiptext">Derivative element in BIDS JSON set to <i>true</i> if <i>type_var</i> = <i>summary score</i> or <i>derived item</i></span></span></td>
-</tr>
-```
+Possible values include: 
+
+administrative: Data that gives context to the assessments, e.g. date of assessment, language, quality control, etc.
+
+item - Original data provided by the participant, e.g. questions in a questionnaire
+
+derived item - Derived from original data provided by the participant - e.g. if the participant filled in two fields to enter their height in feet and inches, a derived item could integrate this information into one field that provides the height in inches
+
+summary score> - ummary and/or score output based on algorithmic conversions of items/raw data
+
+
+Derivative element in BIDS JSON set to <i>true</i> if <i>type_var</i> = <i>summary score</i> or <i>derived item</i>
+
+
+<!-- LEGEND -->
+<div class="table-legend">
+  <p><strong>Legend:</strong></p>
+  <ul>
+    <li><i class="fa-solid fa-lock"></i> Values do not vary across releases</li>
+    <li><i class="bi bi-filetype-json"></i> Defined or corresponds to field in BIDS JSON</li>
+    <li><i class="fas fa-exclamation-triangle" style="color:orange;"></i> Known issue — see <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">details</a></li>
+  </ul>
+</div>
+
 
 
 <table class="compact-table" style="font-size: 14px;">
@@ -204,15 +217,5 @@ add separate section explaining type_var
 </tr>
 </tbody>
 </table>
-
-<!-- LEGEND -->
-<div class="table-legend">
-  <p><strong>Legend:</strong></p>
-  <ul>
-    <li><i class="fa-solid fa-lock"></i> Values do not vary across releases</li>
-    <li><i class="bi bi-filetype-json"></i> Defined or corresponds to field in BIDS JSON</li>
-    <li><i class="fas fa-exclamation-triangle" style="color:orange;"></i> Known issue — see <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">details</a></li>
-  </ul>
-</div>
 
 
