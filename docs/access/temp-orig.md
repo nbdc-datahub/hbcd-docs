@@ -9,18 +9,6 @@
 </thead>
 <tbody>
 <tr>
-    <td><code>unique_identifiers</code></td>
-    <td>Identifier column(s)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names (variable/table)</td>
-    <td style="text-align: center;"><span class="tooltip tooltip-left"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
-</tr>
-<tr>
-    <td><code>url_table</code></td>
-    <td>Documentation<br>for table</td>
-    <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../../instruments" target="_blank">study instrument documentation</a></td>
-    <td></td>
-</tr>
-<tr>
     <td><code>url_table_warn_use</code></td>
     <td style="word-wrap: break-word; white-space: normal;">Responsible Use<br>Warning (table)</td>
     <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">responsible use warning</a> (table)</td>

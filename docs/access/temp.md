@@ -159,36 +159,47 @@ add separate section explaining type_var
   <td>Note text in Spanish</td>
   <td></td>
 </tr>
-
 <!-- IDENTIFIERS & LINKS -->
 <tr>
   <td><code>unique_identifiers</code></td>
   <td>Identifier column(s)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names (variable/table)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names for table or variable within table</td>
   <td style="text-align:center;"><i class="fa-solid fa-lock"></i></td>
 </tr>
 <tr>
   <td><code>url_table</code></td>
   <td>Documentation (table)</td>
-  <td style="word-wrap: break-word; white-space: normal;"><a href="../../instruments" target="_blank">Study instrument documentation</a>.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Link to documentation page</td>
   <td></td>
 </tr>
 <tr>
   <td><code>url_table_warn_use</code></td>
   <td>Responsible Use Warning (table)</td>
-  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Responsible use warning</a>.</td>
+  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Responsible use warning</a></td>
   <td></td>
 </tr>
 <tr>
   <td><code>url_warn_use</code></td>
   <td>Responsible Use Warning (variable)</td>
-  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Responsible use warning</a>.</td>
+  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Responsible use warning</a> specific to variable within a table</td>
+  <td></td>
+</tr>
+<tr>
+  <td><code>url_table_warn_data</code></td>
+  <td>Data Warning (table)</td>
+  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Data warning</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td><code>url_warn_data</code></td>
+  <td>Data Warning (variable)</td>
+  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Data warning</a> specific to variable within a table</td>
   <td></td>
 </tr>
 <tr>
   <td><code>order_sort</code></td>
   <td>Sort order</td>
-  <td style="word-wrap: break-word; white-space: normal;">Standard sort order in table/measure (and column order in database).</td>
+  <td style="word-wrap: break-word; white-space: normal;">Standard sort order in table/measure (and column order in database)</td>
   <td></td>
 </tr>
 </tbody>
