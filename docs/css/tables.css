@@ -184,10 +184,19 @@ th, td {
 }
 
 /* Compact Table Style */
+/* Compact table with no vertical lines */
+.compact-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.9em; /* slightly smaller text */
+  line-height: 1.2;
+  font-size: 0.9em;
+}
 .compact-table th,
 .compact-table td {
   text-align: left;
-  padding: 0.2em 0.4em;
+  padding: 0.1em 0.2em;
   border: 1px solid #ddd;
   vertical-align: top; /* aligns all cell content at the top */
 }

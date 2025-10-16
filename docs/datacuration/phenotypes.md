@@ -26,7 +26,7 @@ Key features of tabulated data include:
 
 ## Table Organization
 
-Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files/phenotypic-and-assessment-data.html) standard, each table includes “identifier columns” for participant ID, visit number, and run number (when applicable) that allow you to link information between tables:
+Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files/phenotypic-and-assessment-data.html) standard, each table includes **identifier columns** for participant ID, visit number, and run number (when applicable) that allow you to link information between tables:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
