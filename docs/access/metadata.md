@@ -273,7 +273,7 @@ Dataset downloads contain 2 additional columns not described in the data diction
 
 ## Levels Table
 
-<table class="compact-table" style="font-size: 14px;">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
   <tr>
     <th>Name</th>
