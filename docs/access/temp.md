@@ -1,5 +1,21 @@
 variables refer to fields, column headers within tables
 
+add separate section explaining type_var
+
+```
+<td><code>type_var</code></td>
+    <td>Variable type</td>
+    <td style="word-wrap: break-word; white-space: normal;">Possible values include: 
+    <span class="tooltip">administrative<span class="tooltiptext">
+    Data that gives context to the assessments, e.g. date of assessment, language, quality control, etc.</span></span>;
+    <span class="tooltip">item<span class="tooltiptext">Original data provided by the participant, e.g. questions in a questionnaire</span></span>; 
+    <span class="tooltip">derived item<span class="tooltiptext">Derived from original data provided by the participant - e.g. if the participant filled in two fields to enter their height in feet and inches, a derived item could integrate this information into one field that provides the height in inches</span></span>; 
+    <span class="tooltip">summary score<span class="tooltiptext">Summary and/or score output based on algorithmic conversions of items/raw data</span></span></td>
+    <td style="text-align: center;"><span class="tooltip tooltip-left"><i class="bi bi-filetype-json" style="font-size:17px;"></i>
+    <span class="tooltiptext">Derivative element in BIDS JSON set to <i>true</i> if <i>type_var</i> = <i>summary score</i> or <i>derived item</i></span></span></td>
+</tr>
+```
+
 
 <table class="compact-table" style="font-size: 14px;">
 <thead>
@@ -43,7 +59,6 @@ variables refer to fields, column headers within tables
   <td style="word-wrap: break-word; white-space: normal;">Label for coded table name, e.g. <i>Demographics</i></td>
   <td style="text-align:center;"><i class="bi bi-filetype-json"></i></td>
 </tr>
-
 <!-- VARIABLE METADATA -->
 <tr>
   <td><code>name</code></td>
@@ -86,73 +101,70 @@ variables refer to fields, column headers within tables
 <tr>
   <td><code>type_var</code></td>
   <td>Variable type</td>
-  <td style="word-wrap: break-word; white-space: normal;">Possible values: <i>administrative</i>; <i>item</i>; <i>derived item</i>; <i>summary score</i>.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Possible values include: <i>administrative</i>; <i>item</i>; <i>derived item</i>; <i>summary score</i> - <a href="">see details</a></td>
   <td style="text-align:center;"><i class="bi bi-filetype-json"></i></td>
 </tr>
 <tr>
   <td><code>type_data</code></td>
   <td>Data type</td>
-  <td style="word-wrap: break-word; white-space: normal;">Possible values: <i>date; timestamp; time; character; text; integer; double</i>.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Possible values include: <i>date; timestamp; time; character; text; integer; double</i> (character only used for categorical columns)</td>
   <td style="text-align:center;"><i class="fa-solid fa-lock"></i></td>
 </tr>
 <tr>
   <td><code>type_level</code></td>
   <td style="word-wrap: break-word; white-space: normal;">Level of measurement</td>
-  <td style="word-wrap: break-word; white-space: normal;">Possible values: <i>nominal; ordinal; interval; ratio</i>.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Possible values: <i>nominal; ordinal; interval; ratio</i></td>
   <td></td>
 </tr>
 <tr>
   <td><code>type_field</code></td>
   <td>Field type</td>
-  <td style="word-wrap: break-word; white-space: normal;">Field type in data capture system (e.g. <i>dropdown; radio; checkbox</i>).</td>
+  <td style="word-wrap: break-word; white-space: normal;">Field type in data capture system as presented to participant (e.g. <i>dropdown; radio; checkbox</i>)</td>
   <td></td>
 </tr>
-
 <!-- DISPLAY PROPERTIES -->
-<tr class="group-header"><td colspan="4">Display & Language</td></tr>
 <tr>
   <td><code>order_display</code></td>
   <td>Display order</td>
-  <td style="word-wrap: break-word; white-space: normal;">Display order of item within measure.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Display order of item within measure</td>
   <td></td>
 </tr>
 <tr>
   <td><code>branching_logic</code></td>
   <td>Branching logic</td>
-  <td style="word-wrap: break-word; white-space: normal;">Branching logic applied to variable/question.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Branching logic applied to variable/question</td>
   <td></td>
 </tr>
 <tr>
   <td><code>label_es</code></td>
   <td>Label (Spanish)</td>
-  <td>Label in Spanish.</td>
+  <td>Label in Spanish</td>
   <td></td>
 </tr>
 <tr>
   <td><code>instruction_es</code></td>
   <td>Instruction (Spanish)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Instruction text in Spanish.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Instruction text in Spanish</td>
   <td></td>
 </tr>
 <tr>
   <td><code>header_es</code></td>
   <td>Header (Spanish)</td>
-  <td>Header text in Spanish.</td>
+  <td>Header text in Spanish</td>
   <td></td>
 </tr>
 <tr>
   <td><code>note_es</code></td>
   <td>Note (Spanish)</td>
-  <td>Note text in Spanish.</td>
+  <td>Note text in Spanish</td>
   <td></td>
 </tr>
 
 <!-- IDENTIFIERS & LINKS -->
-<tr class="group-header"><td colspan="4">Identifiers & Links</td></tr>
 <tr>
   <td><code>unique_identifiers</code></td>
   <td>Identifier column(s)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names (variable/table).</td>
+  <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names (variable/table)</td>
   <td style="text-align:center;"><i class="fa-solid fa-lock"></i></td>
 </tr>
 <tr>
@@ -191,3 +203,5 @@ variables refer to fields, column headers within tables
     <li><i class="fas fa-exclamation-triangle" style="color:orange;"></i> Known issue — see <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">details</a></li>
   </ul>
 </div>
+
+
