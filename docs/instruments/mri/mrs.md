@@ -139,25 +139,20 @@ Additional metabolites measured include NAA, lactate, ascorbate, creatine, myo-i
 
 HBCD MRS data are processed with a customized automated pipeline based on OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)) - see the [OSPREY-BIDS documentation](https://osprey-bids.readthedocs.io/en/latest/index.html). Derivatives include quality control metrics and metabolite estimates (ratios to creatine and water, with and without tissue correction). See the list of [OSPREY derivatives](#derivatives) included in the release above.
 
-## MRS Output Usage Guide (for Non-Expert Users)
+## Osprey MRS Output User Guide
 
-Osprey produces a range of output files that quantify different MRS metrics in a variety of ways. This guide provides a concise overview for non-expert users.
-
-### Overview
-
-The primary outcome variables from MRS are metabolite concentrations. The **ISTHMUS** acquisition used in HBCD generates four spectra, each modeled separately:
+As described in the prior section, the primary outcome variables from MRS are metabolite concentrations. The **ISTHMUS** acquisition used in HBCD generates four spectra, each modeled separately:
 
 * Short-TE unedited spectrum  
 * HERCULES sum spectrum  
 * HERCULES diff1 spectrum  
 * HERCULES diff2 spectrum
 
-Each spectrum is analyzed using *linear combination modeling* with inclusive basis sets, since most if not all metabolites may contribute on some level to all spectra. However, specific metabolites are best measured from particular spectra (see below).
+Each spectrum is analyzed using *linear combination modeling* with inclusive basis sets, since most if not all metabolites may contribute on some level to all spectra. However, specific metabolites are best measured from [particular spectra](#which-metabolite-values-to-use).
 
 #### Quantification Approaches
 
-While MRS is a quantitative approach, the values are relative and depend on an internal reference signal for quantification. Because the optimal reference for HBCD study data has not yet been established, several quantification methods are provided:
-
+While MRS is a quantitative approach, the values are relative and depend on an internal reference signal for quantification. Because the optimal reference for HBCD study data has not yet been established, several quantification methods are provided (see [Harris et al., 2015](https://doi.org/10.1002/jmri.24903) for details):
 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -190,12 +185,9 @@ While MRS is a quantitative approach, the values are relative and depend on an i
 </tbody>
 </table>
 
-For details on these quantification approaches, see [Harris et al., 2015](https://doi.org/10.1002/jmri.24903).
-
 #### Which Metabolite Values to Use 
 
 Each metabolite is best quantified from a specific spectrum:
-
 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
