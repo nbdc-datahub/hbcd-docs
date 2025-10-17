@@ -189,16 +189,16 @@ th, td {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  font-size: 0.9em; /* slightly smaller text */
-  line-height: 1.2;
   font-size: 0.9em;
+  line-height: 1.2;
 }
 .compact-table th,
 .compact-table td {
   text-align: left;
-  padding: 0.1em 0.2em;
-  border: 1px solid #ddd;
-  vertical-align: top; /* aligns all cell content at the top */
+  padding: 6px 8px;
+  word-wrap: break-word;
+  white-space: normal;
+  vertical-align: top; 
 }
 /* Make lists behave more like normal text blocks */
 .compact-table ul {

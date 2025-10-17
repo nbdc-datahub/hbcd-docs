@@ -1,301 +1,264 @@
-# Metadata & Naming Conventions
+# NBDC Data Dictionary
 
-## NBDC Data Dictionary
+<a href="../../datacuration/phenotypes/" target="_blank">Tabulated HBCD study data</a> is organized into a **standardized table format** per study instrument/measure, with each table containing a set of **variables** (see [Data Structure Overview](../datacuration/overview.md) for details). The metadata for studies released via the NBDC Data Hub consists of:
 
-<span class="tooltip">Tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> HBCD data is organized into a standardized table format, each of which contains a set of variables. The metadata for studies released via the NBDC Data Hub consists of:
+ - **Data dictionary**: Provides detailed information about table variables, including variable name, label, description, data type, etc. 
+ - **Levels table**: Provides information about the levels for categorical variables (label, order, etc.)
 
- - **Data dictionary**: Provides detailed information about the variables in the tabulated data resource, including the variable name, label, description, data type, and other relevant information. 
- - **Levels table**: Provides information about the levels of categorical variables in the tabulated format data (label, order, etc.)
+See the following sections for detailed descriptions for each column in the [data dictionary](#data-dictionary-columns) and [levels table](#levels-table).
 
-Below are the definitions for the columns in the data dictionary and levels table. Note that some columns also correspond to elements in the BIDS JSON files that accompany all <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> data (hover over <i class="bi bi-filetype-json" style="font-size:18px; color: teal;"></i> icon for details in table below).
+## Data Dictionary Columns
+<!-- LEGEND -->
+<table id="legend" class="compact-table-no-vertical-lines" style="border: 2px solid #4fe2ffff; border-radius: 8px; border-collapse: collapse; line-height: 1.0;">
+<tbody>
+<tr>
+<td><b>LEGEND</b></td>
+<td style="text-align: center; padding-left: 30px"><i style="font-size: 1.2em;" class="fa-solid fa-lock"></i></td>
+<td style="padding-left: 5px">Values do not vary across releases</td></tr>
+<tr>
+<td></td>
+<td style="text-align: center; padding-left: 30px"><i style="font-size: 1.4em;" class="bi bi-filetype-json"></i></td>
+<td style="padding-left: 5px">Table/variable element corresponds to field in BIDS JSON - see <a href="#json">Corresponding Data Dictionary Elements in JSONs</a></td></tr>
+</tbody>
+</table>
 
-<p>
-<div class="table-banner" style="background-color: #dde6fe;">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-<span class="text"> See <a href="../../datacuration/overview/" target="_blank">here</a> for overview of tabulated vs file-based data.</span>
-</div>
-</p>
+<!-- DD -->
+<table class="compact-table" style="font-size: 14px;">
+<thead>
+<tr>
+  <th style="width: 20%;">NAME</th>
+  <th style="width: 20%;">LABEL</th>
+  <th>DESCRIPTION & POSSIBLE/EXAMPLE VALUES</th>
+</tr>
+</thead>
+<tbody>
+<!-- CORE METADATA -->
+<tr>
+  <td><code>study</code></td>
+  <td>Study</td>
+  <td style="word-wrap: break-word; white-space: normal;">Part of core (<code>Core</code>) or substudy (<code>Substudy</code>)</td>
+</tr>
+<tr>
+  <td><code>domain</code></td>
+  <td>Domain</td>
+  <td style="word-wrap: break-word; white-space: normal;">Domains include: <i>Behavior/Child-Caregiver Interaction; BioSpecimens; Neurocognition & Language; Novel Tech; Physical Health; Pregnancy/Exposure Including Substance; Social and Environmental Determinants; Tabular EEG; Tabular Imaging</i></td>
+</tr>
+<tr>
+  <td><code>source</code></td>
+  <td>Source</td>
+  <td style="word-wrap: break-word; white-space: normal;">Source of information.<br>
+  Possible values: <i>Biological Mother, Caregiver (Responsible Adult), Child, General</i></td>
+</tr>
+<!-- TABLE STRUCTURE -->
+<tr>
+  <td><code>table_name</code><i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i>
+  </td>
+  <td>Table name</td>
+  <td style="word-wrap: break-word; white-space: normal;">Coded table name, e.g. <code>sed_bm_demo</code></td>
+</tr>
+<tr>
+  <td><code>table_label</code>
+  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td>Table label</td>
+  <td style="word-wrap: break-word; white-space: normal;">Label for coded table name, e.g. <i>Demographics</i></td>
+</tr>
+<!-- VARIABLE METADATA -->
+<tr>
+  <td><code>name</code>
+  <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+  <td>Variable name</td>
+  <td style="word-wrap: break-word; white-space: normal;">Coded variable name within a table, e.g. <code>sed_bm_demo_edu_001</code></td>
+</tr>
+<tr>
+  <td><code>label</code>
+  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td>Variable label</td>
+  <td style="word-wrap: break-word; white-space: normal;">Label for coded variable name, e.g. <i>Highest grade completed</i></td>
+</tr>
+<tr>
+  <td><code>instruction</code>
+  <i class="fas fa-exclamation-triangle" style="font-size: 1em; margin-left: 6px; color: orange;"></i></td>
+  <td>Instruction</td>
+  <td style="word-wrap: break-word; white-space: normal;">Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>)<br>
+  <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> CAUTION: Instruction text may be incomplete or misaligned! See <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a></td>
+</tr>
+<tr>
+  <td><code>header</code></td>
+  <td>Header</td>
+  <td style="word-wrap: break-word; white-space: normal;">Header/instructions for a set of questions (e.g. <i>For each item that describes your child...</i>)</td>
+</tr>
+<tr>
+  <td><code>note</code></td>
+  <td>Note</td>
+  <td style="word-wrap: break-word; white-space: normal;">Note displayed to participants (e.g. <i>Enter weight in pounds.</i>)</td>
+</tr>
+<tr>
+  <td><code>unit</code>
+  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td>Unit</td>
+  <td style="word-wrap: break-word; white-space: normal;">Unit of measurement (e.g. <i>m, cm², lbs</i>)</td>
+</tr>
+<!-- VARIABLE TYPES -->
+<tr>
+  <td><code>type_var</code>
+  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td>Variable type</td>
+  <td style="word-wrap: break-word; white-space: normal;">Possible values include: <i>administrative</i>; <i>item</i>; <i>derived item</i>; <i>summary score</i> (<a href="../naming-conventions/#administrative-summary-score-variables"><i>details</i></a>)</td>
+</tr>
+<tr>
+  <td><code>type_data</code>
+  <i class="fa-solid fa-lock" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+  <td>Data type</td>
+  <td style="word-wrap: break-word; white-space: normal;">Possible values include: <i>date; timestamp; time; character; text; integer; double</i> (character only used for categorical columns)</td>
+</tr>
+<tr>
+  <td><code>type_level</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Level of measurement</td>
+  <td style="word-wrap: break-word; white-space: normal;">Possible values: <i>nominal; ordinal; interval; ratio</i></td>
+</tr>
+<tr>
+  <td><code>type_field</code></td>
+  <td>Field type</td>
+  <td style="word-wrap: break-word; white-space: normal;">Field type in data capture system as presented to participant (e.g. <i>dropdown; radio; checkbox</i>)</td>
+</tr>
+<!-- DISPLAY PROPERTIES -->
+<tr>
+  <td><code>order_display</code></td>
+  <td>Display order</td>
+  <td style="word-wrap: break-word; white-space: normal;">Display order of item within measure</td>
+</tr>
+<tr>
+  <td><code>branching_logic</code></td>
+  <td>Branching logic</td>
+  <td style="word-wrap: break-word; white-space: normal;">Branching logic applied to variable/question</td>
+</tr>
+<tr>
+  <td><code>label_es</code></td>
+  <td>Label (Spanish)</td>
+  <td>Label in Spanish</td>
+</tr>
+<tr>
+  <td><code>instruction_es</code></td>
+  <td>Instruction (Spanish)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Instruction text in Spanish</td>
+</tr>
+<tr>
+  <td><code>header_es</code></td>
+  <td>Header (Spanish)</td>
+  <td>Header text in Spanish</td>
+</tr>
+<tr>
+  <td><code>note_es</code></td>
+  <td>Note (Spanish)</td>
+  <td>Note text in Spanish</td>
+</tr>
+<!-- IDENTIFIERS & LINKS -->
+<tr>
+  <td><code>unique_identifiers</code>
+  <i class="fa-solid fa-lock" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+  <td>Identifier column(s)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names for table or variable within table</td>
+</tr>
+<tr>
+  <td><code>url_table</code></td>
+  <td>Documentation (table)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Link to documentation page</td>
+</tr>
+<tr>
+  <td><code>url_table_warn_use</code></td>
+  <td>Responsible Use<br>Warning (table)</td>
+  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Responsible use warning</a></td>
+</tr>
+<tr>
+  <td><code>url_warn_use</code></td>
+  <td>Responsible Use<br>Warning (variable)</td>
+  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Responsible use warning</a> specific to variable within a table</td>
+</tr>
+<tr>
+  <td><code>url_table_warn_data</code></td>
+  <td>Data Warning (table)</td>
+  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Data warning</a></td>
+</tr>
+<tr>
+  <td><code>url_warn_data</code></td>
+  <td>Data Warning (variable)</td>
+  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Data warning</a> specific to variable within a table</td>
+</tr>
+<tr>
+  <td><code>order_sort</code></td>
+  <td>Sort order</td>
+  <td style="word-wrap: break-word; white-space: normal;">Standard sort order in table/measure (and column order in database)</td>
+</tr>
+</tbody>
+</table>
 
-### Data Dictionary & Levels Column Definitions
+#### Additional Information
 
-<p>
-<div id="metadata" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text">CAUTION: Instruction text may be incomplete or misaligned! Review the <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a> before use.
- </span>
-</div>
-</p>
-
-<div id="nbdc-dd" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-book"></i></span>
+<!-- JSON -->
+<div id="json" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i style="font-size: 1.1em;" class="bi bi-filetype-json"></i></span>
   <span class="text-with-link">
-  <span class="text">Data Dictionary Column Definitions</span>
-  <a class="anchor-link" href="#nbdc-dd" title="Copy link">
+  <span class="text">Corresponding Data Dictionary Elements in JSONs</span>
+  <a class="anchor-link" href="#json" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="compact-table">
+<table class="table-no-vertical-lines">
+<thead>
+  <tr><th>Data Dictionary Element</th><th>Corresponding Element in BIDS JSON</th>
+  </tr>
+</thead>
+<tbody>
+<tr><td><code>table_label</code></td><td><i>MeasurementToolMetadata > Description</i></td></tr>
+<tr><td><code>label</code></td><td><i>Description</i></td></tr>
+<tr><td><code>unit</code></td><td><i>Units</i></td></tr>
+<tr><td><code>type_var</code></td><td><i>Derivative</i> set to <i>True</i> in JSON if <code>type_var</code> = <i>summary score</i> or <i>derived item</i></td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- Type variable values -->
+<div id="type_var" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i style="margin-right: 4px;" class="fa fa-book"></i></span>
+  <span class="text-with-link">
+  <span class="text">Variable Type (<code>type_var</code>): Possible Values Explained</span>
+  <a class="anchor-link" href="#type_var" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="table-no-vertical-lines">
 <thead>
 <tr>
-<th>Name</th>
-<th>Label</th>
-<th>Description & Possible/Example Values</th>
-<th style="width: 1%;"><span class="tooltip tooltip-left">Note<span class="tooltiptext">Hover over icon to see more info</span></span></th>
+<th>Variable Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-    <td><code>study</code></td>
-    <td>Study</td>
-    <td style="word-wrap: break-word; white-space: normal;">Part of core (<code>Core</code>) or substudy (<code>Substudy</code>)</td>
-    <td></td>
+<td>administrative</td>
+<td style="word-wrap: break-word; white-space: normal;">Data that gives context to the assessments, e.g. date, language, quality control, etc.</td>
 </tr>
+<tr><td>derived item</td><td style="word-wrap: break-word; white-space: normal;">Derived from original data provided by the participant - e.g. if the participant filled in two fields to enter their height in feet and inches, a derived item could integrate this information into one field that provides the height in inches</td></tr>
 <tr>
-    <td><code>domain</code></td>
-    <td>Domain</td>
-    <td style="word-wrap: break-word; white-space: normal;">Domain/<a href="https://hbcdstudy.org/workgroups-and-committees/">HBCD Workgroup</a> (e.g <i>Demographics, Biospecimens, etc. - <a href="#domain-source-values">see full list</a></i>)
-    </td>
-    <td></td>
+<td>item</td><td style="word-wrap: break-word; white-space: normal;">Original data provided by the participant, e.g. questions in a questionnaire</td>
 </tr>
-<tr>
-    <td><code>source</code></td>
-    <td>Source</td>
-    <td style="word-wrap: break-word; white-space: normal;">Source of information. Includes: {<i>Biological Mother; Caregiver (Responsible Adult); Child; General</i>}</td>
-    <td></td>
-</tr>
-<tr>
-    <td><code>table_name</code></td>
-    <td>Table name</td>
-    <td>Name of table/measure (e.g. <code>sed_bm_demo</code>)</td>
-    <td style="text-align: center;"><span class="tooltip tooltip-left"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
-</tr>
-<tr>
-    <td><code>table_label</code></td>
-    <td>Table label</td>
-    <td style="word-wrap: break-word; white-space: normal;">Label for table (e.g. <i>Demographics</i> for table <code>sed_bm_demo</code>)</td>
-    <td style="text-align: center;"><span class="tooltip tooltip-left"><i class="bi bi-filetype-json" style="font-size:17px;"></i><span class="tooltiptext">Corresponds to <i>MeasurementToolMetadata</i> > <i>Description</i> in BIDS JSON</span></span></td>
-</tr>
-<tr>
-    <td><code>name</code></td>
-    <td>Variable name</td>
-    <td style="word-wrap: break-word; white-space: normal;">Name of column/variable/question (e.g. <code>sed_bm_demo_edu_001</code>)</td>
-    <td style="text-align: center;"><span class="tooltip tooltip-left"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
-</tr>
-<tr>
-    <td style="word-wrap: break-word; white-space: normal;"><code>label</code></td>
-    <td>Variable label</td>
-    <td style="word-wrap: break-word; white-space: normal;">Label for column/variable/question (e.g. <i>What is the highest grade or level of school you have completed or the highest degree you have received?</i>)</td>
-    <td style="text-align: center;"><span class="tooltip tooltip-left"><i class="bi bi-filetype-json" style="font-size:17px;"></i>
-    <span class="tooltiptext">Corresponds to <i>Description</i> in BIDS JSON</span></span></td>
-</tr>
-<tr>
-    <td><code>instruction</code></td>
-    <td>Instruction</td>
-    <td style="word-wrap: break-word; white-space: normal;">Instructions preceding table/measure questions (e.g. <i>The next set of questions is about your child's behavior in different situations and contexts. Please fill in a response to all questions.</i>)</td>
-    <td style="text-align: center;"><span class="tooltip tooltip-left"><i style="color: orange; font-size: 1.2em;" class="fas fa-exclamation-triangle"></i><span class="tooltiptext">See <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a></span></span></td>
-</tr>
-<tr>
-    <td><code>header</code></td>
-    <td>Header</td>
-    <td style="word-wrap: break-word; white-space: normal;">Header/instructions for a set of questions (e.g. <i>Below is a list of items that describe children and youths. For each item that describes your child...</i>)</td>
-    <td></td>
-</tr>
-<tr>
-    <td><code>note</code></td>
-    <td>Note</td>
-    <td style="word-wrap: break-word; white-space: normal;">Note displayed to participants (e.g. <i>Enter weight in pounds.</i>)</td>
-    <td></td>
-</tr>
-<tr>
-    <td style="word-wrap: break-word; white-space: normal;"><code>unit</code></td>
-    <td>Unit</td>
-    <td style="word-wrap: break-word; white-space: normal;">Unit of measurement (e.g. <i>m, cm2, lbs</i>)</td>
-    <td style="text-align: center;"><span class="tooltip tooltip-left"><i class="bi bi-filetype-json" style="font-size:17px;"></i>
-        <span class="tooltiptext">Corresponds to <i>Units</i> in BIDS JSON</span></span></td>
-</tr>
-<tr>
-<td><code>type_var</code></td>
-    <td>Variable type</td>
-    <td style="word-wrap: break-word; white-space: normal;">Possible values include: 
-    <span class="tooltip">administrative<span class="tooltiptext">
-    Data that gives context to the assessments, e.g. date of assessment, language, quality control, etc.</span></span>;
-    <span class="tooltip">item<span class="tooltiptext">Original data provided by the participant, e.g. questions in a questionnaire</span></span>; 
-    <span class="tooltip">derived item<span class="tooltiptext">Derived from original data provided by the participant - e.g. if the participant filled in two fields to enter their height in feet and inches, a derived item could integrate this information into one field that provides the height in inches</span></span>; 
-    <span class="tooltip">summary score<span class="tooltiptext">Summary and/or score output based on algorithmic conversions of items/raw data</span></span></td>
-    <td style="text-align: center;"><span class="tooltip tooltip-left"><i class="bi bi-filetype-json" style="font-size:17px;"></i>
-    <span class="tooltiptext">Derivative element in BIDS JSON set to <i>true</i> if <i>type_var</i> = <i>summary score</i> or <i>derived item</i></span></span></td>
-</tr>
-<tr>
-    <td><code>type_data</code></td>
-    <td>Data type</td>
-    <td style="word-wrap: break-word; white-space: normal;">
-    Possible values include: date; timestamp; time; <span class="tooltip">character<span class="tooltiptext">Character only used for categorical columns</span></span>; text; integer; double</td>
-    </td>
-    <td style="text-align: center;"><span class="tooltip tooltip-left"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
-</tr>
-<tr>
-    <td><code>type_level</code></td>
-    <td>Level of measurement</td>
-    <td style="word-wrap: break-word; white-space: normal;">Possible values include: {<i>nominal; ordinal; interval; ratio</i>}</td>
-    <td></td>
-</tr>
-<tr>
-    <td><code>type_field</code></td>
-    <td>Field type</td>
-    <td style="word-wrap: break-word; white-space: normal;">Field type in data capture system as presented to participant (e.g. <i>dropdown; radio; checkbox</i></td>
-    <td></td>
-</tr>
-<tr>
-    <td><code>order_display</code></td>
-    <td>Display order</td>
-    <td>Display order of item within measure</td>
-    <td></td>
-</tr>
-<tr>
-    <td><code>branching_logic</code></td>
-    <td>Branching logic</td>
-    <td style="word-wrap: break-word; white-space: normal;">Branching logic applied to column/variable/question</td>
-    <td></td>    
-</tr>
-<tr>
-    <td><code>label_es</code></td>
-    <td>Label (Spanish)</td>
-    <td>Label (Spanish)</td>
-    <td></td>
-</tr>
-<tr>
-    <td><code>instruction_es</code></td>
-    <td>Instruction (Spanish)</td>
-    <td>Instruction (Spanish)</td>
-    <td></td>
-</tr>
-<tr>
-    <td><code>header_es</code></td>
-    <td>Header (Spanish)</td>
-    <td>Header (Spanish)</td>
-    <td></td>
-</tr>
-<tr>
-    <td><code>note_es</code></td>
-    <td>Note (Spanish)</td>
-    <td>Note (Spanish)</td>
-    <td></td>
-</tr>
-<tr>
-    <td><code>unique_identifiers</code></td>
-    <td>Identifier column(s)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names (variable/table)</td>
-    <td style="text-align: center;"><span class="tooltip tooltip-left"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
-</tr>
-<tr>
-    <td><code>url_table</code></td>
-    <td>Documentation<br>for table</td>
-    <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../../instruments" target="_blank">study instrument documentation</a></td>
-    <td></td>
-</tr>
-<tr>
-    <td><code>url_table_warn_use</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Responsible Use<br>Warning (table)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">responsible use warning</a> (table)</td>
-    <td></td>
-</tr>
-<tr>
-    <td><code>url_table_warn_data</code></td>
-    <td>Data Warning (table)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">data warning</a> (table)</td>
-    <td></td>
-</tr>
-<tr>
-<td><code>url_warn_use</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Responsible Use<br>Warning (variable)</td>
-<td style="word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">responsible use warning</a> (variable)</td>
-<td></td>
-</tr>
-<tr>
-<td><code>url_warn_data</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Data Warning (variable)</td>
-<td style="word-wrap: break-word; white-space: normal;">Link to <a href="../resp_data_use/#warnings" target="_blank">data warning</a> (variable)</td>
-<td></td>
-</tr>
-<tr>
-<td><code>order_sort</code></td>
-<td>Sort order</td>
-<td style="word-wrap: break-word; white-space: normal;">Standard sort order in table/measure (and ⇒ column order in database)</td>
-<td></td>
+<tr><td>summary score</td><td style="word-wrap: break-word; white-space: normal;">Summary and/or score output based on algorithmic conversions of items/raw data</td>
 </tr>
 </tbody>
 </table>
 </div>
 
-<div id="levels" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-book"></i></span>
-  <span class="text-with-link">
-  <span class="text">Levels Definitions</span>
-  <a class="anchor-link" href="#levels" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>JSON Element</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th><span class="tooltip tooltip-left">Mutable<span class="tooltiptext">Values may vary across releases</span></span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>name</code></td>
-        <td>&nbsp;</td>
-        <td style="word-wrap: break-word; white-space: normal;">Name of the categorical column/variable/question for which value/label pairs are reported</td>
-        <td>&nbsp;</td>
-        <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
-      </tr>
-      <tr>
-        <td><code>value</code></td>
-        <td>left hand side</td>
-        <td>Value of the level</td>
-        <td>1</td>
-        <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
-      </tr>
-      <tr>
-        <td><code>order_level</code></td>
-        <td></td>
-        <td style="word-wrap: break-word; white-space: normal;">Order of response option (in data and how they were displayed to participants)</td>
-        <td>2</td>
-        <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
-      </tr>
-      <tr>
-        <td><code>label</code></td>
-        <td>right hand side</td>
-        <td>Label of the level</td>
-        <td>Yes</td>
-        <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
-      </tr>
-      <tr>
-        <td><code>label_es</code></td>
-        <td></td>
-        <td>Label of the level (Spanish)</td>
-        <td>Si</td>
-        <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
-      </tr>
-</table>
-</div>
-
-### Lasso User Warnings - HBCD
-
+<!-- Lasso User warnings -->
 <div id="add-columns" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
-  <span class="text">Additional Columns ('cohort' & 'site') Not Defined in Data Dictionary</span>
+  <span class="text">Lasso User Warnings - Blank Columns & Additional Columns with Download</span>
   <a class="anchor-link" href="#add-columns" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -303,283 +266,53 @@ Below are the definitions for the columns in the data dictionary and levels tabl
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<ul>
-<p>Dataset downloads contain 2 additional columns not described in the data dictionary. This includes <b>cohort</b> and <b>site</b>, identical to <a href="../../instruments/demo/visitinfo">Visit Information</a> variables <b>par_visit_data_&lt;<i>cohort|site</i>&gt;</b>.</p>
+<p><b>Blank Columns in Lasso Query Tool</b><br>
+Some columns are currently blank in the Lasso Dictionary Query Tool and will be populated in the future. This includes <b>atlas</b>, <b>metric</b>, <b>sub_domain</b>, and column names appended with <b>*_es</b>. Other columns are blank because they are not applicable to the HBCD study data (e.g. <b>nda/deap/redcap</b>). Inapplicable columns will be removed in the future and can safely be ignored, but in the meantime still appear in Lasso Portal queries. <b>Only populated/applicable columns are included in the Data Dictionary overview above.</b></p>
+<p><b>Additional Columns ('cohort' & 'site') Not Defined in Data Dictionary</b><br>
+Dataset downloads contain 2 additional columns not described in the data dictionary. This includes <b>cohort</b> and <b>site</b>, identical to <a href="../../instruments/demo/visitinfo">Visit Information</a> variables <b>par_visit_data_&lt;<i>cohort|site</i>&gt;</b>.</p>
 </div>
 
-<div id="blank-columns" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Blank Columns in Lasso Query Tool</span>
-  <a class="anchor-link" href="#blank-columns" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>Column names appended with <b>*_es</b> are currently blank in the Lasso Dictionary Query Tool and will become available in a future release. Some columns in the data dictionary are not applicable to HBCD study data. These columns will appear in Lasso Portal queries, but will have blank values. Examples include <b>atlas</b>, <b>metric</b>, <b>sub_domain</b>, columns including <b>nda/deap/redcap</b>, etc. These columns can be safely ignored.</p>
-</div>
+## Levels Table
 
-## Naming Conventions
-
-A standardized naming convention is used across most tables and fields in the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> release data. These conventions are adapted from the [ABCD Study](https://docs.abcdstudy.org/latest/documentation/curation/naming.html) and ensure consistency across instruments and derived datasets, allowing for intuitive parsing of variable meaning and structure.
-
-### Convention Logic & Rules
-
-The standard variable naming format is comprised of 4 or 5 main components: 
-
-<p style="font-size: 1.8em; font-weight: bold; padding: 10px;" align="center">
-<code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
-</p>
-
- - **Main components** are generally separated by a single underscore ( `_` ). Most instruments with multiple scales will additionally include the <code><span style="color: teal;">scale</span></code> component (this component is otherwise optional and not included in all variable names).   
- - **Subcomponents** are separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*. Multiselect fields are preceded by triple underscores ( `___` ), mainly relevant for [V01 Demographics](../instruments/SED/v01-demo.md) (`sed_bm_demo`) variables.
- 
-### Naming Component Definitions
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
-  <th style="width: 10%;">Component</th>
-  <th style="width: 45%;">Definition</th>
-  <th style="width: 35%;">Example Values</th>
+  <tr>
+    <th>Name</th>
+    <th>JSON Element</th>
+    <th>Description</th>
+  </tr>
 </thead>
 <tbody>
-<tr>
-  <td><b><code>domain</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Data domain (e.g. biospecimens, imaging)</td>
-  <td><span class="tooltip"><code>bio</code><span class="tooltiptext">Biospecimens</span></span>;
-  <span class="tooltip"><code>img</code><span class="tooltiptext">Imaging/MRI</span></span>;
-  <span class="tooltip"><code>sed</code><span class="tooltiptext">Social & Environmental Determinants</span></span>;
-  <span class="tooltip"><code>pex</code><span class="tooltiptext">Pregnancy & Exposures, Including Substance Use</span></span>;
-  <i><a href="#domain-source-values">see full list</a></i></td>
-</tr>
-<tr>
-  <td><b><code>source</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;"><span class="tooltip">Subject<span class="tooltiptext">who the protocol element is about</span></span>/<span class="tooltip">respondent<span class="tooltiptext">who completed the assessment</span></span> (e.g., child, birth parent)</td>
-  <td><span class="tooltip"><code>bm</code><span class="tooltiptext">Biological Mother</span></span>;
-    <span class="tooltip"><code>ch</code><span class="tooltiptext">Child</span></span>; <i><a href="#domain-source-values">see full list</a></i>
-  </td>
-</tr>
-<tr>
-<td><b><code>table</code></b></td>
-<td>Instrument/protocol element name</td>
-<td>Varies by instrument</td></tr>
-</tr>
-<tr>
-<td><b><code><span style="color: teal;">{scale}</span></code></b></td>
-<td style="word-wrap: break-word; white-space: normal;">Name of scale within instrument/protocol element - <i>only if instrument contains multiple scales</i></td>
-<td style="word-wrap: break-word; white-space: normal;">Varies by instrument - <i><a href="#scale">see details</a></i></td></tr>
-</tr>
-<tr>
-  <td><b><code>item</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Will either be an item number corresponding to individual questions in a scale <b>or</b> admin field/score label for administrative/summary score variables - <a href="#exceptions-admin"><i>see details</i></a></td>
-  <td style="word-wrap: break-word; white-space: normal;"><code>001</code>; <code>001__01</code>; etc.<br>
-    <b>or</b> <a href="#exceptions-admin">admin field/score label</a>
-</tr>
-</tbody>
+  <tr>
+    <td><code>name</code>
+    <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+    <td>&nbsp;</td>
+    <td>Name of the categorical column/variable/question for which value/label pairs are reported</td>
+  </tr>
+  <tr>
+    <td><code>value</code>
+    <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+    <td>left hand side</td>
+    <td>Value of the level (<b>e.g. "1"</b>)</td>
+  </tr>
+  <tr>
+    <td><code>order_level</code>
+    <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+    <td></td>
+    <td>Order of response option as displayed to participants (and in data) (<b>e.g. "2"</b>)</td>
+  </tr>
+  <tr>
+    <td><code>label</code></td>
+    <td>right hand side</td>
+    <td>Label of the level (<b>e.g. "Yes"</b>)</td>
+  </tr>
+  <tr>
+    <td><code>label_es</code></td>
+    <td></td>
+    <td>Label of the level (Spanish) (<b>e.g. "Si"</b>)</td>
+  </tr>
 </table>
 
-#### Details<span class="hint">(Click sections to expand)</span>
-
-<div id="domain-source-values" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text-with-link">
-  <span class="text">Domain & Source: Possible Values</span>
-  <a class="anchor-link" href="#domain-source-values" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<div style="display: flex; gap: 30px; align-items: flex-start;">
-  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-    <caption style="caption-side: top; font-weight: bold; padding-bottom: 8px;">
-    Possible Values:  <code>domain</code>
-    </caption>
-    <tbody>
-      <tr><td><code>bio</code></td><td>BioSpecimens</td></tr>
-      <tr><td><code>eeg</code></td><td>Tabular EEG</td></tr>
-      <tr><td><code>mh</code></td><td>Behavior/Child-Caregiver Interaction</td></tr>
-      <tr><td><code>img</code></td><td>Tabular Imaging</td></tr>
-      <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
-      <tr><td><code>nt</code></td><td>Novel Tech (<i>Novel Technology & Wearable Sensors</i>)</td></tr>
-      <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
-      <tr><td><code>ph</code></td><td>Physical Health</td></tr>
-      <tr><td><code>sed</code></td><td>Social and Environmental Determinants</td></tr>
-    </tbody>
-  </table>
-  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-    <caption style="caption-side: top; font-weight: bold; padding-bottom: 8px;">
-    Possible Values:  <code>source</code>
-    </caption>
-    <tbody>
-      <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
-      <tr><td><code>cg</code></td><td>Caregiver (Responsible Adult)</td></tr>
-      <tr><td><code>ch</code></td><td>Child</td></tr>
-      <tr><td><code>ld</code></td><td>Linked Data</td></tr>
-      <tr><td><code>ra</code></td><td>RA (research assistant)</td></tr>
-    </tbody>
-  </table>
-</div>
-</div>
-
-<div id="scale" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scale Details</span>
-  <a class="anchor-link" href="#scale" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>Most variables of instruments/tables composed of multiple scales include an additional naming component for <code><span style="color: teal;">scale</span></code> (with the exception of administrative/summary score variables - <a href="#exceptions-admin"><i>see details</i></a>). The following instruments in the current release are examples of tables that include the scale component in their variable names. Note that this is not a comprehensive list.</p>
 <br>
-<br>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th>Domain</th>
-      <th>Instrument</th>
-      <th>Table Name</th>
-      <th>Example Variable</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="tooltip tooltip-right">BCGI<span class="tooltiptext">Behavior & Child-Caregiver Interaction</span></span></td>
-      <td><a href="../../instruments/bcgi/ibqr" target="_blank">IBQ-R (VSF)+BI</a></td>
-      <td><code>mh_cg_ibqr</code></td>
-      <td><code>mh_cg_ibqr_<span style="color: teal;">beh</span>_001</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right">PEX<span class="tooltiptext">Pregnancy & Exposure, Including Substance Use</span></span></td>
-      <td><a href="../../instruments/pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
-      <td><code>pex_bm_psych</code></td>
-      <td><code>pex_bm_psych_<span style="color: teal;">bf</span>_001</code></td>
-    </tr>
-    <tr>
-      <td rowspan="2"><span class="tooltip tooltip-right">SED<span class="tooltiptext">Social & Environmental Determinants</span></span></td>
-      <td><a href="../../instruments/SED/bfy" target="_blank">BFY</a></td>
-      <td><code>sed_bm_bfy</code></td>
-      <td><code>sed_bm_bfy_<span style="color: teal;">econstr</span>_001</code></td>
-    </tr>
-     <tr>
-      <td><a href="../../instruments/SED/promis" target="_blank">PROMIS</a></td>
-      <td><code>sed_bm_strsup</code></td>
-      <td><code>sed_bm_strsup_<span style="color: teal;">socspprt</span>_001</code></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-### Exceptions<span class="hint">(Click sections to expand)</span>
-
-Some variables do not fully follow the standard naming convention, which will be improved in future releases. Notable exceptions are as follows (*click to expand*):
-
-<div id="exceptions-admin" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Administrative & Summary Score Variables</span>
-  <a class="anchor-link" href="#exceptions-admin" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>Administrative (e.g., language or date of administration) and summary score (e.g., sums or means of individual items in a table) variables include <strong>administrative fields</strong> and <strong>score labels</strong> in place of <code>item</code> (or <code><span style="color: teal;">{scale}</span>_item</code> where relevant). Admin and score labels often include single underscores, but represent single main components. For example, possible values include:</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr>
-  <td><b>Admin fields</b></td>
-  <td  style="word-wrap: break-word; white-space: normal;"><code>administration</code>; <code>location</code>; <code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></td>
-</tr>
-<tr>
-  <td><b>Score labels</b></td>
-  <td><code>score</code>; <code>summary_score</code>; <code>total_score</code>; etc.</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<div id="exceptions-derived" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Derived Variables</span>
-  <a class="anchor-link" href="#exceptions-derived" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Derived tables, including Basic Demographics (<code>sed_basic_demographics</code>), containing global, static variables, and Visit Information (<code>par_visit_data</code>), containing dynamic/longitudinal visit-level data, do not follow the naming conventions outlined above. For example, both fall under the domain <code>Demographics</code> and source <code>General</code> in the <a href="#nbdc-data-dictionary">NBDC Data Dictionary</a>, but use <code>sed_basic</code> (in reference to Social &amp; Environmental Determinants from which the Basic Demographics information is derived) and <code>par_visit</code> (for participant information from visit-level data) in place of the <code>domain_source</code> naming components. </p>
-</div>
-
-<div id="exceptions-biospec" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Biospecimens</span>
-  <a class="anchor-link" href="#exceptions-biospec" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Biospecimen names are largely descriptive, e.g. <code>bio_bm_biosample_nails_results</code> and <code>bio_bm_biosample_urine</code> table names.</p>
-</div>
-
-<div id="exceptions-mri" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Tabulated MRI, MRS, & EEG Data</span>
-  <a class="anchor-link" href="#exceptions-mri" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Tabulated data derived from <a href="../../instruments/#mri" target="_blank">MRI & MRS</a> and <a href="../../instruments/#eeg" target="_blank">EEG</a> file-based data follow a unique naming convention. All files begin with the <strong>domain</strong> (<code>img</code> or <code>eeg</code>) in accordance with the conventions described above, but the following elements are the pipeline name (<code>pipeline</code>) and basename of the derivative output by that pipeline (<code>derivative</code>):</p> 
-<p style="font-size: 1.4em; font-weight: bold; padding: 10px;" align="center">
-<code>domain_pipeline_derivative</code>
-</p>
-<p>For example, the following subject/session-level <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-<tr>
-<td><b>File-based derivatives</b></td>
-<td><code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
-</tr>
-<tbody>
-<tr>
-<td><b>Tabulated file</b></td>
-<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
-</tbody>
-</table>
-</ul>
-</div>
-
-### Example
-
-Let's break down the following example: `ncl_cg_spm2__inf_soc_001`
-
-- `ncl`: [Neurocognition & Language](../instruments/index.md#neurocog) (*domain*)
-- `cg`: Caregiver (*source*)
-- `spm2__inf`: nested table name
-    - `spm2`: the [SPM-2](../instruments/neurocog/spm2.md) instrument (*table*)
-    - `inf`: Infant version of SPM-2 (*table subcomponent*)
-- `soc`: scale for metrics of socialization (*scale*)
-- `001`: item number (*item*)
 
 
-## Study Design Logic: Child-Centric Data Structure
-
-The HBCD Study organizes data around the Child ID as the central key. All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by:
-
-- **Simplifying child-focused analysis**: Researchers can track each child’s data over time without remapping caregiver information.
-- **Handling multi-birth cases cleanly**: When a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.
