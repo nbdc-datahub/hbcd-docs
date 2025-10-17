@@ -23,7 +23,7 @@ See the following sections for detailed descriptions for each column in the [dat
 </table>
 
 <!-- DD -->
-<table class="compact-table" style="font-size: 14px;">
+<table class="compact-table" style="font-size: 14px; border: 1px solid #4fe2ffff; border-radius: 8px;">
 <thead>
 <tr>
   <th style="width: 20%;">NAME</th>
@@ -41,13 +41,14 @@ See the following sections for detailed descriptions for each column in the [dat
 <tr>
   <td><code>domain</code></td>
   <td>Domain</td>
-  <td style="word-wrap: break-word; white-space: normal;">Domains include: <i>Behavior/Child-Caregiver Interaction; BioSpecimens; Neurocognition & Language; Novel Tech; Physical Health; Pregnancy/Exposure Including Substance; Social and Environmental Determinants; Tabular EEG; Tabular Imaging</i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Domains include:<br>
+  <i>Behavior/Child-Caregiver Interaction | BioSpecimens | Neurocognition & Language | Novel Tech | Physical Health | Pregnancy/Exposure Including Substance | Social and Environmental Determinants | Tabular EEG | Tabular Imaging</i></td>
 </tr>
 <tr>
   <td><code>source</code></td>
   <td>Source</td>
-  <td style="word-wrap: break-word; white-space: normal;">Source of information.<br>
-  Possible values: <i>Biological Mother, Caregiver (Responsible Adult), Child, General</i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Source of information. Source values include:<br>
+  <i>Biological Mother | Caregiver (Responsible Adult) | Child | General</i></td>
 </tr>
 <!-- TABLE STRUCTURE -->
 <tr>
@@ -60,27 +61,27 @@ See the following sections for detailed descriptions for each column in the [dat
   <td><code>table_label</code>
   <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
   <td>Table label</td>
-  <td style="word-wrap: break-word; white-space: normal;">Label for coded table name, e.g. <i>Demographics</i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Label for coded table name (e.g. <i>Demographics</i>)</td>
 </tr>
 <!-- VARIABLE METADATA -->
 <tr>
   <td><code>name</code>
   <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
   <td>Variable name</td>
-  <td style="word-wrap: break-word; white-space: normal;">Coded variable name within a table, e.g. <code>sed_bm_demo_edu_001</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Coded variable name within a table (e.g. <code>sed_bm_demo_edu_001</code>)</td>
 </tr>
 <tr>
   <td><code>label</code>
   <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
   <td>Variable label</td>
-  <td style="word-wrap: break-word; white-space: normal;">Label for coded variable name, e.g. <i>Highest grade completed</i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Label for coded variable name (e.g. <i>Highest grade completed</i>)</td>
 </tr>
 <tr>
   <td><code>instruction</code>
   <i class="fas fa-exclamation-triangle" style="font-size: 1em; margin-left: 6px; color: orange;"></i></td>
   <td>Instruction</td>
   <td style="word-wrap: break-word; white-space: normal;">Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>)<br>
-  <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> CAUTION: Instruction text may be incomplete or misaligned! See <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a></td>
+  <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Instruction text may be incomplete or misaligned! See <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a></b></td>
 </tr>
 <tr>
   <td><code>header</code></td>
@@ -103,23 +104,24 @@ See the following sections for detailed descriptions for each column in the [dat
   <td><code>type_var</code>
   <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
   <td>Variable type</td>
-  <td style="word-wrap: break-word; white-space: normal;">Possible values include: <i>administrative</i>; <i>item</i>; <i>derived item</i>; <i>summary score</i> (<a href="../naming-conventions/#administrative-summary-score-variables"><i>details</i></a>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Variable types include: <i>administrative | item | derived item | summary score</i><br>
+  See <a href="#type_var">Variable Type Definitions</a> below</td>
 </tr>
 <tr>
   <td><code>type_data</code>
   <i class="fa-solid fa-lock" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
   <td>Data type</td>
-  <td style="word-wrap: break-word; white-space: normal;">Possible values include: <i>date; timestamp; time; character; text; integer; double</i> (character only used for categorical columns)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Data types include: <i>date | timestamp| time | <span class="tooltip">character<span class="tooltiptext">Only used for categorical columns</span></span> | text | integer | double</i></td>
 </tr>
 <tr>
   <td><code>type_level</code></td>
   <td style="word-wrap: break-word; white-space: normal;">Level of measurement</td>
-  <td style="word-wrap: break-word; white-space: normal;">Possible values: <i>nominal; ordinal; interval; ratio</i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Levels include: <i>nominal | ordinal | interval | ratio</i></td>
 </tr>
 <tr>
   <td><code>type_field</code></td>
   <td>Field type</td>
-  <td style="word-wrap: break-word; white-space: normal;">Field type in data capture system as presented to participant (e.g. <i>dropdown; radio; checkbox</i>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Field type in data capture system as presented to participant (e.g. <i>dropdown, radio, checkbox, etc.</i>)</td>
 </tr>
 <!-- DISPLAY PROPERTIES -->
 <tr>
@@ -154,10 +156,10 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 <!-- IDENTIFIERS & LINKS -->
 <tr>
-  <td><code>unique_identifiers</code>
+  <td><code>identifier_column</code>
   <i class="fa-solid fa-lock" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
   <td>Identifier column(s)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names for table or variable within table</td>
+  <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names for table/variable, including participant and session IDs and sometimes run ID - see <a href="../../datacuration/phenotypes/#table-organization" target="_blank">Table Organization</a> for details</td>
 </tr>
 <tr>
   <td><code>url_table</code></td>
@@ -194,37 +196,11 @@ See the following sections for detailed descriptions for each column in the [dat
 
 #### Additional Information
 
-<!-- JSON -->
-<div id="json" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i style="font-size: 1.1em;" class="bi bi-filetype-json"></i></span>
-  <span class="text-with-link">
-  <span class="text">Corresponding Data Dictionary Elements in JSONs</span>
-  <a class="anchor-link" href="#json" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines">
-<thead>
-  <tr><th>Data Dictionary Element</th><th>Corresponding Element in BIDS JSON</th>
-  </tr>
-</thead>
-<tbody>
-<tr><td><code>table_label</code></td><td><i>MeasurementToolMetadata > Description</i></td></tr>
-<tr><td><code>label</code></td><td><i>Description</i></td></tr>
-<tr><td><code>unit</code></td><td><i>Units</i></td></tr>
-<tr><td><code>type_var</code></td><td><i>Derivative</i> set to <i>True</i> in JSON if <code>type_var</code> = <i>summary score</i> or <i>derived item</i></td></tr>
-</tbody>
-</table>
-</div>
-
 <!-- Type variable values -->
 <div id="type_var" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i style="margin-right: 4px;" class="fa fa-book"></i></span>
   <span class="text-with-link">
-  <span class="text">Variable Type (<code>type_var</code>): Possible Values Explained</span>
+  <span class="text">Variable Type (<code>type_var</code>) Definitions</span>
   <a class="anchor-link" href="#type_var" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -254,6 +230,32 @@ See the following sections for detailed descriptions for each column in the [dat
 </table>
 </div>
 
+<!-- JSON -->
+<div id="json" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i style="font-size: 1.1em;" class="bi bi-filetype-json"></i></span>
+  <span class="text-with-link">
+  <span class="text">Corresponding Data Dictionary Elements in JSONs</span>
+  <a class="anchor-link" href="#json" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="table-no-vertical-lines">
+<thead>
+  <tr><th>Data Dictionary Element</th><th>Corresponding Element in BIDS JSON</th>
+  </tr>
+</thead>
+<tbody>
+<tr><td><code>table_label</code></td><td><i>MeasurementToolMetadata > Description</i></td></tr>
+<tr><td><code>label</code></td><td><i>Description</i></td></tr>
+<tr><td><code>unit</code></td><td><i>Units</i></td></tr>
+<tr><td><code>type_var</code></td><td><i>Derivative</i> set to <i>True</i> in JSON if <code>type_var</code> = <i>summary score</i> or <i>derived item</i></td></tr>
+</tbody>
+</table>
+</div>
+
 <!-- Lasso User warnings -->
 <div id="add-columns" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -274,12 +276,12 @@ Dataset downloads contain 2 additional columns not described in the data diction
 
 ## Levels Table
 
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px; border: 1px solid #4fe2ffff; border-radius: 8px;">
 <thead>
   <tr>
-    <th>Name</th>
-    <th>JSON Element</th>
-    <th>Description</th>
+    <th style="width: 20%;">Name</th>
+    <th style="width: 10%;">JSON Element</th>
+    <th style="width: 70%;">Description</th>
   </tr>
 </thead>
 <tbody>
