@@ -20,6 +20,20 @@
 
 ---------------------------------------------
 
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</i></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
