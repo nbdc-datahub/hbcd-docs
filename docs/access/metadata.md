@@ -243,10 +243,10 @@ See the following sections for detailed descriptions for each column in the [dat
 <td>administrative</td>
 <td style="word-wrap: break-word; white-space: normal;">Data that gives context to the assessments, e.g. date, language, quality control, etc.</td>
 </tr>
+<tr><td>derived item</td><td style="word-wrap: break-word; white-space: normal;">Derived from original data provided by the participant - e.g. if the participant filled in two fields to enter their height in feet and inches, a derived item could integrate this information into one field that provides the height in inches</td></tr>
 <tr>
 <td>item</td><td style="word-wrap: break-word; white-space: normal;">Original data provided by the participant, e.g. questions in a questionnaire</td>
 </tr>
-<tr><td>derived item</td><td style="word-wrap: break-word; white-space: normal;">Derived from original data provided by the participant - e.g. if the participant filled in two fields to enter their height in feet and inches, a derived item could integrate this information into one field that provides the height in inches</td></tr>
 <tr><td>summary score</td><td style="word-wrap: break-word; white-space: normal;">Summary and/or score output based on algorithmic conversions of items/raw data</td>
 </tr>
 </tbody>

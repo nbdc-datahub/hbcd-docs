@@ -111,12 +111,11 @@ Name of scale within instrument/protocol element for instruments with multiple s
 </ul>
 </div>
 
-## Exceptions
+## Special Conventions & Exceptions
 
-Some variables do not fully follow the standard naming convention, which will be improved in future releases. Notable exceptions are as follows (*click to expand*):
+### Administrative & Summary Score Variables
 
-#### Administrative & Summary Score Variables
-<p>Administrative (e.g., language or date of administration) and summary score (e.g., sums or means of individual items in a table) variables include <strong>administrative fields</strong> and <strong>score labels</strong> in place of <code>item</code> (or <code><span style="color: teal;">{scale}</span>_item</code> where relevant). Admin and score labels often include single underscores, but represent single main components. For example, possible values include:</p>
+Administrative and summary score <a href="../metadata/#type_var" target="_blank">variable types</a> include **administrative fields** and **score labels** in place of the `item` naming component, respectively. Admin and score labels often include single underscores (e.g. `date_taken` and `summary_score`), but still represent single main components. Possible values include:
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
@@ -130,71 +129,16 @@ Some variables do not fully follow the standard naming convention, which will be
 </tbody>
 </table>
 
-<div id="exceptions-admin" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Administrative & Summary Score Variables</span>
-  <a class="anchor-link" href="#exceptions-admin" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>Administrative (e.g., language or date of administration) and summary score (e.g., sums or means of individual items in a table) variables include <strong>administrative fields</strong> and <strong>score labels</strong> in place of <code>item</code> (or <code><span style="color: teal;">{scale}</span>_item</code> where relevant). Admin and score labels often include single underscores, but represent single main components. For example, possible values include:</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr>
-  <td><b>Admin fields</b></td>
-  <td  style="word-wrap: break-word; white-space: normal;"><code>administration</code>; <code>location</code>; <code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></td>
-</tr>
-<tr>
-  <td><b>Score labels</b></td>
-  <td><code>score</code>; <code>summary_score</code>; <code>total_score</code>; etc.</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-
-#### Derived Variables
+### Derived Variables
 
 <p>Derived tables, including Basic Demographics (<code>sed_basic_demographics</code>), containing global, static variables, and Visit Information (<code>par_visit_data</code>), containing dynamic/longitudinal visit-level data, do not follow the naming conventions outlined above. For example, both fall under the domain <code>Demographics</code> and source <code>General</code> in the <a href="#nbdc-data-dictionary">NBDC Data Dictionary</a>, but use <code>sed_basic</code> (in reference to Social &amp; Environmental Determinants from which the Basic Demographics information is derived) and <code>par_visit</code> (for participant information from visit-level data) in place of the <code>domain_source</code> naming components. </p>
 
-<div id="exceptions-derived" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Derived Variables</span>
-  <a class="anchor-link" href="#exceptions-derived" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Derived tables, including Basic Demographics (<code>sed_basic_demographics</code>), containing global, static variables, and Visit Information (<code>par_visit_data</code>), containing dynamic/longitudinal visit-level data, do not follow the naming conventions outlined above. For example, both fall under the domain <code>Demographics</code> and source <code>General</code> in the <a href="#nbdc-data-dictionary">NBDC Data Dictionary</a>, but use <code>sed_basic</code> (in reference to Social &amp; Environmental Determinants from which the Basic Demographics information is derived) and <code>par_visit</code> (for participant information from visit-level data) in place of the <code>domain_source</code> naming components. </p>
-</div>
-
-#### Biospecimens
+### Biospecimens
 
 <p>Biospecimen names are largely descriptive, e.g. <code>bio_bm_biosample_nails_results</code> and <code>bio_bm_biosample_urine</code> table names.</p>
 
+### Tabulated MRI, MRS, & EEG Data
 
-
-#### Tabulated MRI, MRS, & EEG Data
-
-
-<div id="exceptions-mri" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Tabulated MRI, MRS, & EEG Data</span>
-  <a class="anchor-link" href="#exceptions-mri" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
 <p>Tabulated data derived from <a href="../../instruments/#mri" target="_blank">MRI & MRS</a> and <a href="../../instruments/#eeg" target="_blank">EEG</a> file-based data follow a unique naming convention. All files begin with the <strong>domain</strong> (<code>img</code> or <code>eeg</code>) in accordance with the conventions described above, but the following elements are the pipeline name (<code>pipeline</code>) and basename of the derivative output by that pipeline (<code>derivative</code>):</p> 
 <p style="font-size: 1.4em; font-weight: bold; padding: 10px;" align="center">
 <code>domain_pipeline_derivative</code>
@@ -212,7 +156,6 @@ Some variables do not fully follow the standard naming convention, which will be
 </tbody>
 </table>
 </ul>
-</div>
 
 ## Study Design Logic: Child-Centric Data Structure
 
