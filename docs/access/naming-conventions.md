@@ -11,6 +11,31 @@ The standard variable naming format is comprised of 4 or 5 **main components** s
 </p>
  
 Variable names may also include **subcomponents**, separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*. Finally, **multiselect fields** are preceded by triple underscores ( `___` ), mainly relevant for [V01 Demographics](../instruments/SED/v01-demo.md) (`sed_bm_demo`) variables.
+
+<div id="example" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Example</span>
+  <a class="anchor-link" href="#example" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Let's break down the following example: <code>ncl_cg_spm2__inf_soc_001</code></p>
+<ul>
+<li><code>ncl</code>: <a href="../../instruments/#neurocog">Neurocognition &amp; Language</a> (<em>domain</em>)</li>
+<li><code>cg</code>: Caregiver (<em>source</em>)</li>
+<li><code>spm2__inf</code>: nested table name<ul>
+<li><code>spm2</code>: the <a href="../../instruments/neurocog/spm2">SPM-2</a> instrument (<em>table</em>)</li>
+<li><code>inf</code>: Infant version of SPM-2 (<em>table subcomponent</em>)</li>
+</ul>
+</li>
+<li><code>soc</code>: scale for metrics of socialization (<em>scale</em>)</li>
+<li><code>001</code>: item number (<em>item</em>)</li>
+</ul>
+</div>
  
 ## Naming Component Definitions
 
@@ -70,7 +95,6 @@ Name of scale within instrument/protocol element for instruments with multiple s
     <tr><td><code>sed</code></td><td>Social and Environmental Determinants</td></tr>
 </tbody>
 </table>
-
 <table class="compact-table-no-vertical-lines" style="flex: 1;">
 <thead>
     <tr><th>Source Values</th><th>Description</th></tr>
@@ -86,29 +110,30 @@ Name of scale within instrument/protocol element for instruments with multiple s
 </div>
 </div>
 
-<div id="example" class="table-banner" onclick="toggleCollapse(this)">
+<div id="administrative-summary-score-variables" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
-  <span class="text">Example</span>
-  <a class="anchor-link" href="#example" title="Copy link">
+  <span class="text">Administrative & Summary Score Variables</span>
+  <a class="anchor-link" href="#administrative-summary-score-variables" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Let's break down the following example: <code>ncl_cg_spm2__inf_soc_001</code></p>
-<ul>
-<li><code>ncl</code>: <a href="../../instruments/#neurocog">Neurocognition &amp; Language</a> (<em>domain</em>)</li>
-<li><code>cg</code>: Caregiver (<em>source</em>)</li>
-<li><code>spm2__inf</code>: nested table name<ul>
-<li><code>spm2</code>: the <a href="../../instruments/neurocog/spm2">SPM-2</a> instrument (<em>table</em>)</li>
-<li><code>inf</code>: Infant version of SPM-2 (<em>table subcomponent</em>)</li>
-</ul>
-</li>
-<li><code>soc</code>: scale for metrics of socialization (<em>scale</em>)</li>
-<li><code>001</code>: item number (<em>item</em>)</li>
-</ul>
+<p>Administrative and summary score <a href="../metadata/#type_var" target="_blank">variable types</a> include <b>administrative fields</b> and <b>score labels</b> in place of the <code>item</code> naming component, respectively. Possible values include:</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+  <td><b>Admin fields</b></td>
+  <td  style="word-wrap: break-word; white-space: normal;"><code>administration</code>; <code>location</code>; <code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></td>
+</tr>
+<tr>
+  <td><b>Score labels</b></td>
+  <td><code>score</code>; <code>summary_score</code>; <code>total_score</code>; etc.</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 ## Exceptions
@@ -122,22 +147,7 @@ Follow the naming convention <code>domain_pipeline_derivative</code>, where:
     - <code>domain</code>: either <code>img</code> or <code>eeg</code>  
     - <code>pipeline</code>: processing pipeline name  
     - <code>derivative</code>: basename of the derivative output files sourced across participants to generate the tabulated data
-
-### Administrative & Summary Score Variables
-
-Administrative and summary score <a href="../metadata/#type_var" target="_blank">variable types</a> include **administrative fields** and **score labels** in place of the `item` naming component, respectively. Admin and score labels often include single underscores (e.g. `date_taken` and `summary_score`), but still represent single main components. Possible values include:
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr>
-  <td><b>Admin fields</b></td>
-  <td  style="word-wrap: break-word; white-space: normal;"><code>administration</code>; <code>location</code>; <code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></td>
-</tr>
-<tr>
-  <td><b>Score labels</b></td>
-  <td><code>score</code>; <code>summary_score</code>; <code>total_score</code>; etc.</td>
-</tr>
-</tbody>
-</table>
+ - **Administrative and summary score** ([see details](#administrative-summary-score-variables)) variables often include additional single underscores (e.g. `date_taken`, `summary_score`), but still represent single main components
 
 ## Study Design Logic: Child-Centric Data Structure
 
