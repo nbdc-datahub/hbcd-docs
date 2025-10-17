@@ -43,7 +43,18 @@ Unlike tabulated data, file-based data comes in a variety of formats, often moda
 <li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
 <li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
 </ul>
-<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. See <a href="../../access/naming-conventions/#tabulated-mri-mrs-eeg-data" target="_blank">here</a> for details.</p>
+<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<tr>
+<td><b>File-based derivatives</b></td>
+<td><code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
+</tr>
+<tbody>
+<tr>
+<td><b>Tabulated file</b></td>
+<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
+</tbody>
+</table>
 </div>
 </p>
 

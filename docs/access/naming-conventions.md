@@ -111,7 +111,17 @@ Name of scale within instrument/protocol element for instruments with multiple s
 </ul>
 </div>
 
-## Special Conventions & Exceptions
+## Exceptions
+
+Some variables deviate from the standard naming conventions. These exceptions are temporary and will be standardized in future releases.
+
+- **Derived data** — variables such as <code>sed_basic_demographics</code> and <code>par_visit_data</code> in the [Demographics domain](../instruments/index.md#demo)
+- **Biospecimen data**, e.g. <code>bio_bm_biosample_nails_results</code> ([see instrument list](../instruments/index.md#biospec))
+- **Tabulated MRI and EEG derivatives** ([see details](../datacuration/overview.md#warning)):  
+Follow the naming convention <code>domain_pipeline_derivative</code>, where:  
+    - <code>domain</code>: either <code>img</code> or <code>eeg</code>  
+    - <code>pipeline</code>: processing pipeline name  
+    - <code>derivative</code>: basename of the derivative output files sourced across participants to generate the tabulated data
 
 ### Administrative & Summary Score Variables
 
@@ -128,34 +138,6 @@ Administrative and summary score <a href="../metadata/#type_var" target="_blank"
 </tr>
 </tbody>
 </table>
-
-### Derived Variables
-
-<p>Derived tables, including Basic Demographics (<code>sed_basic_demographics</code>), containing global, static variables, and Visit Information (<code>par_visit_data</code>), containing dynamic/longitudinal visit-level data, do not follow the naming conventions outlined above. For example, both fall under the domain <code>Demographics</code> and source <code>General</code> in the <a href="../metadata/#data-dictionary-columns">NBDC Data Dictionary</a>, but use <code>sed_basic</code> (in reference to Social &amp; Environmental Determinants from which the Basic Demographics information is derived) and <code>par_visit</code> (for participant information from visit-level data) in place of the <code>domain_source</code> naming components. </p>
-
-### Biospecimens
-
-<p>Biospecimen names are largely descriptive, e.g. <code>bio_bm_biosample_nails_results</code> and <code>bio_bm_biosample_urine</code> table names.</p>
-
-### Tabulated MRI, MRS, & EEG Data
-
-<p>Tabulated data derived from <a href="../../instruments/#mri" target="_blank">MRI & MRS</a> and <a href="../../instruments/#eeg" target="_blank">EEG</a> file-based data follow a unique naming convention. All files begin with the <strong>domain</strong> (<code>img</code> or <code>eeg</code>) in accordance with the conventions described above, but the elements that follow are the pipeline name (<code>pipeline</code>) and basename of the derivative output by that pipeline (<code>derivative</code>):</p> 
-<p style="font-size: 1.4em; font-weight: bold; padding: 10px;" align="center">
-<code>domain_pipeline_derivative</code>
-</p>
-<p>For example, the following subject/session-level <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-<tr>
-<td><b>File-based derivatives</b></td>
-<td><code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
-</tr>
-<tbody>
-<tr>
-<td><b>Tabulated file</b></td>
-<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
-</tbody>
-</table>
-</ul>
 
 ## Study Design Logic: Child-Centric Data Structure
 
