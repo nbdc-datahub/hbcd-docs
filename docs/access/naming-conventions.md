@@ -33,11 +33,11 @@ Details of individual naming components are as follows:
 <tr>
 <td><b><code><span style="color: teal;">{scale}</span></code></b></td>
 <td style="word-wrap: break-word; white-space: normal;">
-Name of scale within instrument/protocol element for instruments with multiple scales (not including <a href="#exceptions-admin">administrative/summary score variables</a>). For example, the IBQ-R (VSF)+BI instrument variables contain the <i>scale</i> component to indicate one of its 4 scales (<a href="../../instruments/bcgi/ibqr/#instrument-details" target="_blank">see details</a>) - e.g. the Behavioral Inhibition scale is indicated by the scale value of <code>beh</code> in <code>mh_cg_ibqr_<span style="color: teal;">beh</span>_001</code>.</td>
+Name of scale within instrument/protocol element for instruments with multiple scales (not including <a href="#administrative-summary-score-variables">administrative/summary score variables</a>). For example, the IBQ-R (VSF)+BI includes <a href="../../instruments/bcgi/ibqr/#instrument-details" target="_blank">4 scales</a>, each indicated by a separate <i>scale</i> component (e.g. Behavioral Inhibition scale annotated by a value of <code><span style="color: teal;">beh</span></code> in variable name <code>mh_cg_ibqr_<span style="color: teal;">beh</span>_001</code>).</td>
 </tr>
 <tr>
 <td><b><code>item</code></b></td>
-<td style="word-wrap: break-word; white-space: normal;">Will either be an item number corresponding to individual questions in a scale (e.g. <code>001</code>) <b>or</b> admin field/score label for administrative/summary score variables - <a href="#exceptions-admin"><i>see details</i></a></td>
+<td style="word-wrap: break-word; white-space: normal;">Will either be an item number corresponding to individual questions in a scale (e.g. <code>001</code>) <b>or</b> admin field/score label for administrative/summary score variables - <a href="#administrative-summary-score-variables"><i>see details</i></a></td>
 </tr>
 </tbody>
 </table>
@@ -56,15 +56,15 @@ Name of scale within instrument/protocol element for instruments with multiple s
 <div style="display: flex; gap: 24px; align-items: flex-start; padding-top: 5px;">
 <table class="compact-table-no-vertical-lines" style="flex: 1; padding-left: 20px;">
 <thead>
-    <tr><th>Domain Value</th><th>Definition</th></tr>
+    <tr><th>Domain Values</th><th>Description</th></tr>
 </thead>
 <tbody>
     <tr><td><code>bio</code></td><td>BioSpecimens</td></tr>
-    <tr><td><code>eeg</code></td><td>Tabular EEG</td></tr>
     <tr><td><code>mh</code></td><td>Behavior/Child-Caregiver Interaction</td></tr>
+    <tr><td><code>eeg</code></td><td>Tabular EEG</td></tr>
     <tr><td><code>img</code></td><td>Tabular Imaging</td></tr>
     <tr><td><code>ncl</code></td><td>Neurocognition and Language</td></tr>
-    <tr><td><code>nt</code></td><td>Novel Tech (<i>Novel Technology & Wearable Sensors</i>)</td></tr>
+    <tr><td><code>nt</code></td><td>Novel Tech</td></tr>
     <tr><td><code>pex</code></td><td>Pregnancy/Exposure Including Substance</td></tr>
     <tr><td><code>ph</code></td><td>Physical Health</td></tr>
     <tr><td><code>sed</code></td><td>Social and Environmental Determinants</td></tr>
@@ -73,7 +73,7 @@ Name of scale within instrument/protocol element for instruments with multiple s
 
 <table class="compact-table-no-vertical-lines" style="flex: 1;">
 <thead>
-    <tr><th>Source Values</th><th>Definition</th></tr>
+    <tr><th>Source Values</th><th>Description</th></tr>
 </thead>
 <tbody>
     <tr><td><code>bm</code></td><td>Biological Mother</td></tr>
@@ -97,12 +97,12 @@ Name of scale within instrument/protocol element for instruments with multiple s
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Let&#39;s break down the following example: <code>ncl_cg_spm2__inf_soc_001</code></p>
+<p>Let's break down the following example: <code>ncl_cg_spm2__inf_soc_001</code></p>
 <ul>
 <li><code>ncl</code>: <a href="../instruments/index.md#neurocog">Neurocognition &amp; Language</a> (<em>domain</em>)</li>
 <li><code>cg</code>: Caregiver (<em>source</em>)</li>
 <li><code>spm2__inf</code>: nested table name<ul>
-<li><code>spm2</code>: the <a href="../instruments/neurocog/spm2.md">SPM-2</a> instrument (<em>table</em>)</li>
+<li><code>spm2</code>: the <a href="../instruments/neurocog/spm2">SPM-2</a> instrument (<em>table</em>)</li>
 <li><code>inf</code>: Infant version of SPM-2 (<em>table subcomponent</em>)</li>
 </ul>
 </li>

@@ -41,12 +41,13 @@ See the following sections for detailed descriptions for each column in the [dat
 <tr>
   <td><code>domain</code></td>
   <td>Domain</td>
-  <td style="word-wrap: break-word; white-space: normal;">e.g. <i>Demographics, Biospecimens</i>, etc. – <a href="#domain-source-values">see full list</a></td>
+  <td style="word-wrap: break-word; white-space: normal;">Domains include: <i>Behavior/Child-Caregiver Interaction; BioSpecimens; Neurocognition & Language; Novel Tech; Physical Health; Pregnancy/Exposure Including Substance; Social and Environmental Determinants; Tabular EEG; Tabular Imaging</i></td>
 </tr>
 <tr>
   <td><code>source</code></td>
   <td>Source</td>
-  <td style="word-wrap: break-word; white-space: normal;">Source of information, e.g.: <i>Biological Mother, Child</i>, etc. - <a href="#domain-source-values">see list</a></td>
+  <td style="word-wrap: break-word; white-space: normal;">Source of information.<br>
+  Possible values: <i>Biological Mother, Caregiver (Responsible Adult), Child, General</i></td>
 </tr>
 <!-- TABLE STRUCTURE -->
 <tr>
@@ -102,7 +103,7 @@ See the following sections for detailed descriptions for each column in the [dat
   <td><code>type_var</code>
   <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
   <td>Variable type</td>
-  <td style="word-wrap: break-word; white-space: normal;">Possible values include: <i>administrative</i>; <i>item</i>; <i>derived item</i>; <i>summary score</i> - <a href="">see details</a></td>
+  <td style="word-wrap: break-word; white-space: normal;">Possible values include: <i>administrative</i>; <i>item</i>; <i>derived item</i>; <i>summary score</i> (<a href="../naming-conventions/#administrative-summary-score-variables"><i>details</i></a>)</td>
 </tr>
 <tr>
   <td><code>type_data</code>
