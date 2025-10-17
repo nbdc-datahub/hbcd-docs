@@ -43,7 +43,7 @@ Unlike tabulated data, file-based data comes in a variety of formats, often moda
 <li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
 <li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
 </ul>
-<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. See <a href="../../access/metadata/#exceptions-mri" target="_blank">here</a> for details.</p>
+<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. See <a href="../../access/naming-conventions/#tabulated-mri-mrs-eeg-data" target="_blank">here</a> for details.</p>
 </div>
 </p>
 

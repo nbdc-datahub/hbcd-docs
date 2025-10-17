@@ -44,7 +44,7 @@
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#basic-demographics-sed_basic_demographics" target="_blank">see details</a>.</span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#demographics" target="_blank">see details</a>.</span>
 </div>
 
 ## Details
@@ -52,7 +52,7 @@
 <p>
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">Basic Demographics is a <a href="../../../access/metadata/#exceptions-derived" target="_blank">derived table</a>. See <a href="../../SED/v01-demo" target="_blank">V01 Demographics</a> for full demographics information.</span>
+  <span class="text">Basic Demographics is a <a href="../../../access/naming-conventions/#derived-variables" target="_blank">derived table</a>. See <a href="../../SED/v01-demo" target="_blank">V01 Demographics</a> for full demographics information.</span>
 </div>
 </p>
 
