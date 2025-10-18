@@ -39,9 +39,7 @@ During quality control, a frequently observed issue across all tasks was the irr
   </div>
 </div>
 
-Flagged files in the raw EEG data (40–50%) were visually inspected after preprocessing with the MADE pipeline by examining all channels averaged across all trials. If the artifact was still visible, the file was labeled as **artifact-present**. If it was no longer visible, the file was labeled as **artifact-free**, indicating adequate artifact removal.
-
-After preprocessing, roughly **10% of V03** files retained the StimTracker artifact.
+Flagged files in the raw EEG data (40–50%) were visually inspected after preprocessing with the MADE pipeline by examining all channels averaged across all trials. If the artifact was still visible, the file was labeled as **artifact-present**. If it was no longer visible, the file was labeled as **artifact-free**, indicating adequate artifact removal. After preprocessing, roughly **10% of V03** files retained the StimTracker artifact.
 
 To assess the artifact’s impact on EEG derivatives, event-related potentials (ERPs) were generated for relevant regions and time windows. Because there were many more artifact-free files, 100 artifact-present and 100 artifact-free files per task were randomly selected for comparison - see [Effects of Artifact on ERP Derivatives by Task](#effects-of-artifact-on-erp-derivatives-by-task) below for figures displaying artifact-free and artifact-present waveforms across tasks and ROIs.
 
