@@ -18,23 +18,18 @@ Expand the sections below to see a list of measures associated with each domain 
 
 ## Instruments by Domain
 
-<div style="margin-bottom: 8px;" class="warning-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Click <i>domain headers</i> (e.g., <i>Biospecimen & Omics</i>) to expand and view domain measures.</span>
-</div>
+Expand the sections below to see a list of measures associated with each domain included in the latest release data.
 
-<div style="margin-bottom: 20px;" class="warning-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Click <i>instrument names</i> (e.g., <i>Nails</i>) to access detailed instrument documentation.</span>
-</div>
+<img src="../images/inst-ex.png" width="90%" height="auto" class="center">
+
+--------------
 
 <button id="toggle-all-btn" style="
-  padding: 6px 12px;
+  padding: 2px 14px;
   font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #ffe10066;;
 ">
   Expand All Sections ↕️
 </button>
