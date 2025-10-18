@@ -54,6 +54,123 @@ Overall, we believe the stimtracker artifact makes a minimal impact on the data.
 
 Click <a href="../artifacts" target="_blank">here</a> for more information about the StimTracker artifact.
 
+### Effects of Artifact on ERP Derivatives by Task
+ERPs were computed for each task and ROI. Because of the uneven number of files with and without the StimTracker artifact 100 files were randomly selected from the group with the artifact and 100 files were selected from the group without the artifact. Waveforms for each ERP are displayed below. Differences were evaluated for each task and ROI and are presented in the tables below.
+
+<div id="vep" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-file-waveform"></i></span>
+  <span class="text-with-link">
+  <span class="text">VEP</span>
+  <a class="anchor-link" href="#vep" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<img src="../images/vep-erp-oz.jpeg" width="50%" height="auto" class="center">
+<p></p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
+<thead>
+<tr>
+    <th style="word-wrap: break-word; white-space: normal;">Measure</th>
+    <th style="word-wrap: break-word; white-space: normal;">N1 (40-79 ms) Mean Difference</th>
+    <th style="word-wrap: break-word; white-space: normal;">N1 (40-79 ms) Significance</th>
+    <th style="word-wrap: break-word; white-space: normal;">P1 (80-140 ms) Mean Difference</th>
+    <th style="word-wrap: break-word; white-space: normal;">P1 (80-140 ms) Significance</th>
+    <th style="word-wrap: break-word; white-space: normal;">N2 (141 - 300 ms) Mean Difference</th>
+    <th style="word-wrap: break-word; white-space: normal;">N2 (141 - 300 ms) Significance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td style="word-wrap: break-word; white-space: normal;">Mean Amplitude</td>
+    <td style="word-wrap: break-word; white-space: normal;">&Delta; = 0.07 &micro;V</td>
+    <td style="word-wrap: break-word; white-space: normal;">p = 0.91</td>
+    <td style="word-wrap: break-word; white-space: normal;">&Delta; = 0.18 &micro;V</td>
+    <td style="word-wrap: break-word; white-space: normal;">p = 0.77</td>
+    <td style="word-wrap: break-word; white-space: normal;">&Delta; = -0.008 &micro;V</td>
+    <td style="word-wrap: break-word; white-space: normal;">p= 0.99</td>
+</tr>
+<tr>
+    <td style="word-wrap: break-word; white-space: normal;">Peak Amplitude</td>
+    <td style="word-wrap: break-word; white-space: normal;">&Delta; = -0.43 &micro;V</td>
+    <td style="word-wrap: break-word; white-space: normal;">p= 0.55</td>
+    <td style="word-wrap: break-word; white-space: normal;">&Delta; = 0.67 &micro;V</td>
+    <td style="word-wrap: break-word; white-space: normal;">p= 0.37</td>
+    <td style="word-wrap: break-word; white-space: normal;">&Delta; = -0.56 &micro;V</td>
+    <td style="word-wrap: break-word; white-space: normal;">p = 0.49</td>
+</tr>
+<tr>
+    <td style="word-wrap: break-word; white-space: normal;">Peak Latency</td>
+    <td style="word-wrap: break-word; white-space: normal;">&Delta; = -0.3 ms</td>
+    <td style="word-wrap: break-word; white-space: normal;">p = 0.85</td>
+    <td style="word-wrap: break-word; white-space: normal;">&Delta; = 0.1 ms</td>
+    <td style="word-wrap: break-word; white-space: normal;">p = 0.98</td>
+    <td style="word-wrap: break-word; white-space: normal;">&Delta; = -1.3 ms</td>
+    <td style="word-wrap: break-word; white-space: normal;">p = 0.86</td>
+</tr>
+<tr>
+<td colspan="7" style="font-size: 1.0em; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 1.</b> Differences in ERPs between the artifact containing (n=100) and artifact-free (n=100) files.  Mean differences for mean amplitude, peak amplitude, and peak latency for the Oz cluster are presented for our time windows of interest.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="mmn" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-file-waveform"></i></span>
+  <span class="text-with-link">
+  <span class="text">MMN</span>
+  <a class="anchor-link" href="#mmn" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<img src="../images/mmn-artifact.jpeg" width="100%" height="auto" class="center">
+<p></p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<thead>
+<tr><th>Condition</th><th>ROI</th><th>Mean Amp Artifact (uV)</th><th>Mean Amp No Artifact (uV)</th><th>Delta (uV)</th><th>p Value</th><th>p Value Adj. (FDR)</th></tr>
+</thead>
+<tbody>
+<tr><td>Standard</td><td>FCz</td><td>1.25</td><td>1.264</td><td>-0.014</td><td>0.946</td><td>0.946</td></tr>
+<tr><td>Standard</td><td>T7T8</td><td>1.482</td><td>0.921</td><td>0.562</td><td>0.013</td><td>0.039</td></tr>
+<tr><td>Predeviant</td><td>FCz</td><td>1.349</td><td>1.437</td><td>-0.089</td><td>0.77</td><td>0.946</td></tr>
+<tr><td>Predeviant</td><td>T7T8</td><td>1.279</td><td>0.641</td><td>0.637</td><td>0.055</td><td>0.11</td></tr>
+<tr><td>Deviant</td><td>FCz</td><td>1.478</td><td>1.444</td><td>0.034</td><td>0.927</td><td>0.946</td></tr>
+<tr><td>Deviant</td><td>T7T8</td><td>3.118</td><td>1.987</td><td>1.132</td><td>0.004</td><td>0.024</td></tr>
+<tr><td colspan="7" style="font-size: 13px; word-wrap: break-word; white-space: normal;"><b>Table 2.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.<br>
+<i>Note:</i> Differences between means are presented for each artifact designation, as well as the difference between them (delta). P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.</td></tr>
+</tbody>
+</table>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<thead>
+<tr><th>Contrast</th><th>ROI</th><th>Mean Amp Artifact (uV)</th><th>Mean Amp No Artifact (uV)</th><th>Delta (uV)</th><th>p Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Deviant-Predeviant</td><td>FCz</td><td>0.24</td><td>-0.10</td><td>0.34</td><td>0.45</td></tr>
+<tr><td>Deviant-Predeviant</td><td>T7T8</td><td>1.70</td><td>1.03</td><td>0.67</td><td>0.10</td></tr>
+<tr><td colspan="6" style="font-size: 13px; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 3.</b> Differences in mean amplitude for the difference wave of files containing the artifact (n = 100) and artifact-free files (n = 100). 
+Contrast</td></tr>
+</tbody>
+</table>
+</div>
+
+<div id="mmn" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-file-waveform"></i></span>
+  <span class="text-with-link">
+  <span class="text">MMN</span>
+  <a class="anchor-link" href="#mmn" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+
+
 ## EEG Net Placement ("Capping Quality") Ratings
 
 <div class="table-banner">

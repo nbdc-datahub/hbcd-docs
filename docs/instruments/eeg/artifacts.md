@@ -1,4 +1,6 @@
-# StimTracker Artifact- Effects on ERP Derivatives by Task
+# StimTracker Artifact
+
+## Effects on ERP Derivatives by Task
 
 ERPs were computed for each task and ROI. Because of the uneven number of files with and without the StimTracker artifact 100 files were randomly selected from the group with the artifact and 100 files were selected from the group without the artifact. Waveforms for each ERP are displayed below. Differences were evaluated for each task and ROI and are presented in the tables below.
 
@@ -9,6 +11,9 @@ ERPs were computed for each task and ROI. Because of the uneven number of files 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px; padding-bottom: 0; margin-bottom: 0;">
 <tbody>
 <thead>
+<tr>
+<td colspan="7" style="font-size: 1.0em; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 1.</b> Differences in ERPs between the artifact containing (n=100) and artifact-free (n=100) files.  Mean differences for mean amplitude, peak amplitude, and peak latency for the Oz cluster are presented for our time windows of interest.</td>
+</tr>
 <tr>
     <th style="word-wrap: break-word; white-space: normal;">Measure</th>
     <th style="word-wrap: break-word; white-space: normal;">N1 (40-79 ms) Mean Difference</th>
@@ -46,9 +51,6 @@ ERPs were computed for each task and ROI. Because of the uneven number of files 
     <td style="word-wrap: break-word; white-space: normal;">&Delta; = -1.3 ms</td>
     <td style="word-wrap: break-word; white-space: normal;">p = 0.86</td>
 </tr>
-<tr>
-<td colspan="7" style="font-size: 1.0em; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 1.</b> Differences in ERPs between the artifact containing (n=100) and artifact-free (n=100) files.  Mean differences for mean amplitude, peak amplitude, and peak latency for the Oz cluster are presented for our time windows of interest.</td>
-</tr>
 </tbody>
 </table>
 
@@ -59,6 +61,9 @@ ERPs were computed for each task and ROI. Because of the uneven number of files 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px; padding-bottom: 0; margin-bottom: 0;">
 <tbody>
 <thead>
+<tr>
+<td colspan="7" style="font-size: 1.0em; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 2.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.</td>
+</tr>
 <tr>
     <th>Condition</th>
     <th>ROI</th>
@@ -123,9 +128,6 @@ ERPs were computed for each task and ROI. Because of the uneven number of files 
 <td>0.004</td>
 <td>0.024</td>
 </tr>
-<tr>
-<td colspan="7" style="font-size: 1.0em; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 2.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.</td>
-</tr>
 </tbody>
 </table>
 
@@ -134,6 +136,10 @@ ERPs were computed for each task and ROI. Because of the uneven number of files 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px; padding-bottom: 0; margin-bottom: 0;">
 <tbody>
 <thead>
+<tr>
+<td colspan="6" style="font-size: 1.0em; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 3.</b> Differences in mean amplitude for the difference wave of files containing the artifact (n = 100) and artifact-free files (n = 100). 
+Contrast</td>
+</tr>
 <tr>
     <th>Contrast</th>
     <th>ROI</th>
@@ -159,30 +165,31 @@ ERPs were computed for each task and ROI. Because of the uneven number of files 
 <td>0.67</td>
 <td>0.10</td>
 </tr>
-<tr>
-<td colspan="6" style="font-size: 1.0em; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 3.</b> Differences in mean amplitude for the difference wave of files containing the artifact (n = 100) and artifact-free files (n = 100). 
-Contrast</td>
-</tr>
 </tbody>
 </table>
 
 ## FACE Task (by ROI)
 
-### P7 & P8
-
+### P7 (*left*) & P8 (*right*)
 <div style="display: flex; justify-content: space-between; align-items: center;">
-  <img src="../images/P7.png" style="width: 50%; margin-right: 20px;">
+  <img src="../images/P7.png" style="width: 50%; margin-right: 10px;">
   <img src="../images/P8.png" style="width: 50%;">
 </div>
 <br>
 
-### Oz
-
-### Fcz
+### Oz (*left*) & Fcz (*right*)
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="../images/oz.png" style="width: 50%; margin-right: 10px;">
+  <img src="../images/fcz.png" style="width: 50%;">
+</div>
+<br>
 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
 <tbody>
 <thead>
+<tr>
+<td colspan="8" style="font-size: 1.0em; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 4.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.</td>
+</tr>
 <tr>
 <th style="word-wrap: break-word; white-space: normal;">Condition</th>
 <th style="word-wrap: break-word; white-space: normal;">ROI</th>
@@ -435,9 +442,6 @@ Contrast</td>
 <td>0.405</td>
 <td>0.648</td>
 </tr>
-<tr>
-<td colspan="8" style="font-size: 1.0em; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 4.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.</td>
-</tr>
 </tbody>
 </table>
 
@@ -447,4 +451,7 @@ Contrast</td>
 **Table 5.** Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude of the difference wave.  
 
 **Note:** These are calculated for each Region of Interest (ROI) and timewindow.  The upright conditions are from the corresponding block.  Differences between means are presented for each artifact designation, as well as the difference between them (delta).  P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.
+
+
+
 
