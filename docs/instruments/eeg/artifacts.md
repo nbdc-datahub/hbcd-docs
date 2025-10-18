@@ -1,10 +1,8 @@
-# StimTracker Artifact- Detailed
-
-## Effects on ERP Derivatives by Task
+# StimTracker Artifact- Effects on ERP Derivatives by Task
 
 ERPs were computed for each task and ROI. Because of the uneven number of files with and without the StimTracker artifact 100 files were randomly selected from the group with the artifact and 100 files were selected from the group without the artifact. Waveforms for each ERP are displayed below. Differences were evaluated for each task and ROI and are presented in the tables below.
 
-### VEP
+## VEP
 
 <img src="../images/vep-erp-oz.jpeg" width="60%" height="auto" class="center">
 
@@ -54,7 +52,7 @@ ERPs were computed for each task and ROI. Because of the uneven number of files 
 </tbody>
 </table>
 
-### MMN
+## MMN
 
 <img src="../images/mmn-artifact.jpeg" width="100%" height="auto" class="center">
 
@@ -168,9 +166,9 @@ Contrast</td>
 </tbody>
 </table>
 
-### FACE Task (by ROI)
+## FACE Task (by ROI)
 
-#### P7 & P8
+### P7 & P8
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="../images/P7.png" style="width: 50%; margin-right: 20px;">
@@ -178,9 +176,9 @@ Contrast</td>
 </div>
 <br>
 
-#### Oz
+### Oz
 
-#### Fcz
+### Fcz
 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
 <tbody>
