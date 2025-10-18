@@ -10,7 +10,7 @@ The standard variable naming format is comprised of 4 or 5 **main components** s
 <code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
 </p>
  
-Variable names may also include **subcomponents**, separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*. Finally, **multiselect fields** are preceded by triple underscores ( `___` ), mainly relevant for [V01 Demographics](../instruments/SED/v01-demo.md) (`sed_bm_demo`) variables.
+Variable names may also include **subcomponents**, separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*. Finally, **multiselect fields** are preceded by triple underscores ( `___` ), mainly relevant for [Adult](../instruments/SED/demo-cg.md) & [Child](../instruments/SED/demo-ch.md) Demographics table variables.
 
 <div id="example" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
