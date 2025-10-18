@@ -62,7 +62,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Only the <code>HERCULES/</code> file tree is displayed below. The <code>unedited/</code> files generally follow similar naming conventions, with some exceptions (e.g., the BIDS field <code>acq-shortTE</code> is used instead of <code>acq-hercules</code>).</p>
+<p>Only the <code>HERCULES/</code> file tree is displayed below. The <code>unedited/</code> files generally follow similar naming conventions, with some exceptions (e.g., the BIDS field <code>acq-shortTE</code> is used instead of <code>acq-hercules</code>). <b>See <a href="#osprey-mrs-output-user-guide">Osprey MRS Output User Guide</a> on this page for usage guidance.</b></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
