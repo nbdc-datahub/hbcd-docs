@@ -442,3 +442,9 @@ Contrast</td>
 </table>
 
 **Note:** The FACE task has 2 blocks: one with upright and inverted faces and the other with upright faces and Sheinbug objects.  The upright condition is seperated into its corresponding block; “Upright (Inv)” are those upright faces during the inverted block while “Upright (Obj)” corresponds to upright faces during the object block. Differences between means are presented for each artifact designation, as well as the difference between them (delta).  P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.
+
+
+**Table 5.** Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude of the difference wave.  
+
+**Note:** These are calculated for each Region of Interest (ROI) and timewindow.  The upright conditions are from the corresponding block.  Differences between means are presented for each artifact designation, as well as the difference between them (delta).  P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.
+
