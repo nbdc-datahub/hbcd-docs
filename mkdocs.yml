@@ -144,7 +144,7 @@ nav:
         - Electroencephalography:
             - Overview & EEG Protocols: instruments/eeg/index.md
             - Quality Control Procedures: instruments/eeg/qc.md
-            - EEG Tasks: instruments/eeg/tasks.md
+            - EEG Task Details: instruments/eeg/tasks.md
         - Magnetic Resonance Imaging:
             - Overview & MR Protocols: instruments/mri/index.md
             - Quality Control Procedures: instruments/mri/qc.md

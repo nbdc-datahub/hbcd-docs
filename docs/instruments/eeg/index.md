@@ -178,7 +178,6 @@ EEG protocols are described in [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2
 
 ![](images/EEGParams.png)
 
-
 ## Resources
 - [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
 - [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030)

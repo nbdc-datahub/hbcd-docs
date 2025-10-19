@@ -1,4 +1,4 @@
-# Quality Control Procedures   
+# EEG Quality Control Procedures   
 
 ## QC Dashboard
 
