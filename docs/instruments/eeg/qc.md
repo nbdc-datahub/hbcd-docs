@@ -41,11 +41,11 @@ Flagged files in the raw EEG data (40–50%) were visually inspected after prepr
 
 To evaluate the impact of the StimTracker artifact on EEG derivatives, event-related potentials (ERPs) were generated for relevant regions and time windows - see [Effects of Artifact on ERP Derivatives by Task](#effects-of-artifact-on-erp-derivatives-by-task) below for details and figures displaying artifact-free and artifact-present waveforms across tasks and ROIs. Statistical comparisons of mean ERP component amplitudes between artifact-free and artifact-present files across tasks revealed only two significant differences, both in the T7T8 cluster for the standard and deviant conditions of the MMN after FDR correction. Difference waves (Predeviant–Deviant) showed no significant effects for the FCz or T7T8 clusters, and no significant differences were found in the VEP or FACEs tasks.
 
-Our analysis indicates that the **StimTracker artifact does not meaningfully affect mean ERP amplitudes** and has minimal impact on the released derivatives. However, we encourage users to assess potential effects in their own analyses. The presence of the artifact is provided in the task-specific `eeg_qc_task-<TASK>` files included as part of the <a href="../../#eeg" target="_blank">tabulated EEG data</a>. <span style="color: red;">The binary `eeg_qc_-<TASK>` variable indicates whether the artifact was present (yes/no) in the processed data. (UPDATE FIELD/VARIABLE NAME ONCE KNOWN)</span>
+In sum, our analysis indicates that the **StimTracker artifact does not meaningfully affect mean ERP amplitudes** and has minimal impact on the released derivatives. However, we encourage users to assess potential effects in their own analyses. The presence of the artifact is provided in the task-specific `eeg_qc_task-<TASK>` files included as part of the <a href="../../#eeg" target="_blank">tabulated EEG data</a>. <span style="color: red;">The binary `eeg_qc_-<TASK>` variable indicates whether the artifact was present (yes/no) in the processed data. (UPDATE FIELD/VARIABLE NAME ONCE KNOWN)</span>
 *Note: Due to limited data containing the artifact, no comparisons were conducted for V04 files.*
 
 ### Effects of Artifact on ERP Derivatives by Task
-To assess the artifact’s impact on EEG derivatives, ERPs were computed for each task and ROI. Because there were many more artifact-free files, 100 artifact-present and 100 artifact-free files per task were randomly selected for comparison to balance the groups. Waveforms for each ERP are shown below, and differences by task and ROI are summarized in the accompanying tables.
+To assess the artifact’s impact on EEG derivatives, ERPs were computed for each task and ROI. Because there were many more artifact-free files, 100 artifact-present and 100 artifact-free files per task were randomly selected for comparison to balance the groups. Waveforms for each ERP are shown below, and differences by task and ROI are summarized in accompanying tables.
 
 <div id="vep" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-file-waveform"></i></span>
@@ -220,19 +220,15 @@ Contrast</td></tr>
 <tr><td>Object</td><td>P8</td><td>350-600</td><td>5.32</td><td>6.283</td><td>-0.963</td><td>0.405</td><td>0.648</td></tr>
 <tr>
 <td colspan="8" style="font-size: 13px; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 4.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.<br>
-<b>Note:</b> The FACE task has 2 blocks: one with upright and inverted faces and the other with upright faces and Sheinbug objects.  The upright condition is separated into its corresponding block; “Upright (Inv)” are those upright faces during the inverted block while “Upright (Obj)” corresponds to upright faces during the object block. Differences between means are presented for each artifact designation, as well as the difference between them (delta).  P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.</td>
+<b>Note:</b> The FACE task has 2 blocks: one with upright and inverted faces and the other with upright faces and Sheinbug objects. The upright condition is separated into its corresponding block; “Upright (Inv)” are those upright faces during the inverted block while “Upright (Obj)” corresponds to upright faces during the object block. Differences between means are presented for each artifact designation, as well as the difference between them (delta).  P-values were calculated for the differences between means, and then FDR corrected. Original and corrected p-values are presented.</td>
+</tr>
+<tr>
+<td colspan="8" style="font-size: 13px; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 5.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude of the difference wave.<br>
+<b>Note:</b> These are calculated for each Region of Interest (ROI) and timewindow. The upright conditions are from the corresponding block. Differences between means are presented for each artifact designation, as well as the difference between them (delta). P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.</td>
 </tr>
 </tbody>
 </table>
 </div>
-
-
-#### EXTRA TEXT
-
-**Table 5.** Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude of the difference wave.  
-
-**Note:** These are calculated for each Region of Interest (ROI) and timewindow.  The upright conditions are from the corresponding block.  Differences between means are presented for each artifact designation, as well as the difference between them (delta).  P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.
-
 
 ## EEG Net Placement ("Capping Quality") Ratings
 
