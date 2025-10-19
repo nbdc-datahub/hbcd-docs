@@ -53,7 +53,9 @@ EEG release data include both **file-based** (raw and processed data files in mo
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The BIDS <code>eeg/</code> folder contains EEG task recordings, recording system and electrode location metadata, and events for each task. <i>See <a href="../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
+<p>Each participant’s BIDS <code>eeg/</code> folder contains task-specific EEG recordings (<code>.set</code> and <code>.fdt</code> files), along with channel metadata (<code>*_channels.tsv</code> and <code>*_events.tsv</code>). Electrodes are placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>). Electrode placement information is stored in <code>*_electrodes.tsv</code> files, accompanied by <code>*_coordsystem.json</code> files that define the Cartesian coordinates.</p>
+</p>The <code>sourcedata/</code> subfolder includes impedance measurements (<code>*_impedances.json</code>) used to ensure good electrode contact and task event logs (<code>*_eventlogs.txt</code>) describing stimulus presentation timing.<br>
+<i>See <a href="../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -66,7 +68,7 @@ hbcd/
                 |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.tsv <span class="hashtag">(+JSON)</span>
                 |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eeg.fdt
                 |
-                | <span class="hashtag"># LOCATION OF ELECTRODES:</span>
+                | <span class="hashtag"># ELECTRODES PLACEMENT:</span>
                 |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_electrodes.tsv
                 |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_coordsystem.json
                 |
@@ -74,44 +76,6 @@ hbcd/
                     |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_impedances.json
                     |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eventlogs.txt
 </pre>
-<i>File Descriptions</i>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr>
-  <td colspan="2"><strong>Task Acquisition Files</strong></td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">SET</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Metadata and parameters for the EEG dataset, such as channel locations, sampling rate, and event information.</td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">FDT</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Field data table files containing EEG data</td>
-</tr>
-<tr>
-  <td colspan="2"><strong>Location of Electrodes</strong></td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">*_electrodes.tsv</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Specifies the location of electrodes, placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>)</td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">*_coordsystem.json</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Cartesian coordinates followed by <code>*_electrodes.tsv</code> files</td>
-</tr>
-<tr>
-  <td colspan="2"><strong>Sourcedata</strong></td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">*_impedence.json</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Impedance values used to ensure good electrode contact</td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">*_eventlogs.txt</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Task stimuli presentations</td>
-</tr>
-</tbody>
-</table>
 </div>
 
 <div id="made" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
