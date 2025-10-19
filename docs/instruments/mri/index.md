@@ -10,6 +10,10 @@ HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy
 <li><a href="mrs" target="_blank">Magnetic Resonance Spectroscopy (MRS)</a></li>
 </ul>
 
+## MRI & MRS Protocols
+
+See <a href="https://hbcdsequences.readthedocs.io"><b>HBCD Study MRI Protocols</b></a> for full MRI protocols, sequence installation, and operation instructions.
+
 ## Release Data
 
 <div id="issues" class="issues-banner">
@@ -244,10 +248,6 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#outputs-of-xcp-d"><i style="font-size: 0.9em;" class="fa-solid fa-up-right-from-square"></i> Official XCP-D Documentation</a>: Comprehensive documentation of all XCP-D outputs
 </p>
 </div>
-
-## MRI & MRS Protocols
-
-See <a href="https://hbcdsequences.readthedocs.io"><b>HBCD Study MRI Protocols</b></a> for full MRI protocols, sequence installation, and operation instructions.
 
 
 <br>

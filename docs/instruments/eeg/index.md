@@ -1,13 +1,12 @@
 # Overview & EEG Protocols
 
-HBCD includes four electroencephalography (EEG) tasks acquired during visits V03, V04, and V06 - click to be directed to task documentation pages:
+HBCD includes four electroencephalography (EEG) tasks acquired during visits V03, V04, and V06: **Auditory Mismatch Negativity** (MMN), **Faces** (FACE), **Video Resting State** (RS), and **Visual Evoked Potential** (VEP) - see [HBCD EEG Tasks](tasks.md) for an introduction to each. 
 
-<ul>
-<li><a href="mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></li>
-<li><a href="faces" target="_blank">Faces (FACE)</a></li>
-<li><a href="videors" target="_blank">Video Resting State (RS)</a></li>
-<li><a href="vep" target="_blank">Visual Evoked Potential (VEP)</a></li>
-</ul>
+## EEG Protocols
+
+**EEG protocols** are described in detail in [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and fully documented in [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030).
+
+![](images/EEGParams.png)
 
 ## Release Data
 
@@ -171,12 +170,6 @@ hbcd/
 <span class="placeholder">&lt;MMN-TOPO&gt;</span>: deviant, diffDevVsSta, diffDevVsPre, preDeviant, standard 
 </pre>
 </div>
-
-## EEG Protocols
-
-EEG protocols are described in [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and fully documented in [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030).
-
-![](images/EEGParams.png)
 
 ## Resources
 - [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)

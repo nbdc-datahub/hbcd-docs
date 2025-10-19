@@ -1,4 +1,4 @@
-# EEG Task Details
+# HBCD EEG Tasks
 
 <div class="warning-banner" style="margin-bottom: 1em;">
 <span class="emoji"><i class="fa-solid fa-triangle-exclamation"></i></span>
