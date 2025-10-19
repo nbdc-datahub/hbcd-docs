@@ -1,6 +1,6 @@
 # Overview & EEG Protocols
 
-HBCD includes four electroencephalography (EEG) tasks acquired during visits V03, V04, and V06: **Auditory Mismatch Negativity** (MMN), **Faces** (FACE), **Video Resting State** (RS), and **Visual Evoked Potential** (VEP) - see [HBCD EEG Tasks](tasks.md) for an introduction to each. 
+The HBCD study includes four electroencephalography (EEG) tasks collected during visits V03, V04, and V06: **Auditory Mismatch Negativity** (MMN), **Faces** (FACE), **Video Resting State** (RS), and **Visual Evoked Potential** (VEP). See [HBCD EEG Tasks](tasks.md) for detailed descriptions of each task.
 
 ## EEG Protocols
 
