@@ -54,7 +54,7 @@ EEG release data include both **file-based** (raw and processed data files in mo
 </div>
 <div class="table-collapsible-content">
 <p>Each participant’s BIDS <code>eeg/</code> folder contains task-specific EEG recordings (<code>.set</code> and <code>.fdt</code> files), along with channel metadata (<code>*_channels.tsv</code> and <code>*_events.tsv</code>). Electrodes are placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>). Electrode placement information is stored in <code>*_electrodes.tsv</code> files, accompanied by <code>*_coordsystem.json</code> files that define the Cartesian coordinates.</p>
-</p>The <code>sourcedata/</code> subfolder includes impedance measurements (<code>*_impedances.json</code>) used to ensure good electrode contact and task event logs (<code>*_eventlogs.txt</code>) describing stimulus presentation timing.<br>
+<p>The <code>sourcedata/</code> subfolder includes impedance measurements (<code>*_impedances.json</code>) used to ensure good electrode contact and task event logs (<code>*_eventlogs.txt</code>) describing stimulus presentation timing.<br>
 <i>See <a href="../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
 <pre class="folder-tree">
 hbcd/
