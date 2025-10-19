@@ -67,6 +67,6 @@ A full list of tools evaluated through the [NMIND Coding Standards Checklist](ht
 - [QSIPrep](https://www.nmind.org/proceedings/qsiprep/) 
 - [QSIRecon](https://www.nmind.org/proceedings/qsirecon/)
 - [qMRI Postproc](https://www.nmind.org/proceedings/hbcd_qmri_postproc/)
-- [HBCD-MADE](https://www.nmind.org/proceedings/hbcdmade/) and [HBCD EEG Utilities](https://www.nmind.org/proceedings/hbcd-eeg-utilities/)
+- [HBCD-MADE](https://www.nmind.org/proceedings/hbcdmade/)
 - [OSPREY-BIDS](https://www.nmind.org/proceedings/osprey_bids/) (as well as base software [OSPREY](https://www.nmind.org/proceedings/osprey/))
 - [HBCD-Motion](https://www.nmind.org/proceedings/hbcd_motion_postproc/)
