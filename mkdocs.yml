@@ -144,11 +144,7 @@ nav:
         - Electroencephalography:
             - Overview & EEG Protocols: instruments/eeg/index.md
             - Quality Control Procedures: instruments/eeg/qc.md
-            - EEG Tasks DRAFT: instruments/eeg/tasks.md
-            - Auditory Mismatch Negativity Task: instruments/eeg/mmn.md
-            - Faces Task: instruments/eeg/faces.md
-            - Video Resting State Task: instruments/eeg/videors.md
-            - Visual Evoked Potential Task: instruments/eeg/vep.md
+            - EEG Tasks: instruments/eeg/tasks.md
         - Magnetic Resonance Imaging:
             - Overview & MR Protocols: instruments/mri/index.md
             - Quality Control Procedures: instruments/mri/qc.md
