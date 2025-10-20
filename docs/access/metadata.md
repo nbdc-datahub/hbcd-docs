@@ -215,12 +215,13 @@ See the following sections for detailed descriptions for each column in the [dat
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+ <tbody>
 <tr>
 <td>administrative</td>
 <td style="word-wrap: break-word; white-space: normal;">Data that gives context to the assessments, e.g. date, language, quality control, etc.</td>
 </tr>
-<tr><td>derived item</td><td style="word-wrap: break-word; white-space: normal;">Derived from original data provided by the participant - e.g. if the participant filled in two fields to enter their height in feet and inches, a derived item could integrate this information into one field that provides the height in inches</td></tr>
+<tr>
+<td>derived item</td><td style="word-wrap: break-word; white-space: normal;">Derived from original participant data — for example, if a participant enters their height in separate fields for feet and inches, a derived variable could combine these into a single value representing total height in inches.</td>
 <tr>
 <td>item</td><td style="word-wrap: break-word; white-space: normal;">Original data provided by the participant, e.g. questions in a questionnaire</td>
 </tr>
