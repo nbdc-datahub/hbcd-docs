@@ -161,6 +161,7 @@ nav:
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
         - Processing & Analytic Standards: 
             - Processing Pipelines: instruments/processing/index.md
+            - 🚧 MRI Processing: instruments/processing/mri-proc.md
             - Pipeline Software Standards: instruments/processing/standards.md
     - Recruitment & Retention:
         - 🚧 Study Navigators Contact Form: instruments/admin/study-navigators.md
