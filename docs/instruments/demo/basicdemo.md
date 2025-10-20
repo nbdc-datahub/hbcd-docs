@@ -52,7 +52,7 @@
 <p>
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">Basic Demographics is a <a href="../../../access/naming-conventions/#derived-variables" target="_blank">derived table</a>. See <a href="../../SED/v01-demo" target="_blank">V01 Demographics</a> for full demographics information.</span>
+  <span class="text">Basic Demographics is a <a href="../../../access/metadata/#type_var" target="_blank">derived table</a>. See <a href="../../SED/v01-demo" target="_blank">V01 Demographics</a> for full demographics information.</span>
 </div>
 </p>
 
