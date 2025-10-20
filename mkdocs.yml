@@ -143,8 +143,8 @@ nav:
     - Brain Activity & Biosensors:
         - Electroencephalography:
             - Overview & EEG Protocols: instruments/eeg/index.md
-            - Quality Control Procedures (PROPOSED): instruments/eeg/qc.md
-            - Quality Control Procedures: instruments/eeg/qc-orig.md
+            - Quality Control Procedures: instruments/eeg/qc.md
+            - PROPOSED EDITS to StimTracker Artifact section: instruments/eeg/qc-alt.md
             - EEG Task Details: instruments/eeg/tasks.md
         - Magnetic Resonance Imaging:
             - Overview & MR Protocols: instruments/mri/index.md

@@ -1,13 +1,53 @@
-# StimTracker Artifact- detailed
+# PROPOSED EDITS to StimTracker Artifact description
 
-## Effects on ERP Derivatives by Task
+<span style="color: red;">Below is a streamlined version of the StimTracker artifact description optimized for webpage documentation. Compare to current section <a href="../qc/#stimtracker-artifact-detection">here</a></span>
 
-ERPs were computed for each task and ROI. Because of the uneven number of files with and without the StimTracker artifact 100 files were randomly selected from the group with the artifact and 100 files were selected from the group without the artifact. Waveforms for each ERP are displayed below. Differences were evaluated for each task and ROI and are presented in the tables below. See: [VEP](#vep), [MMN](#mmn), and [Faces](#face-task-by-roi). 
+## StimTracker Artifact Detection
 
-## VEP
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">Presence of the StimTracker artifact is listed in the tabulated QC file for each task (<code>eeg_qc_task-&lt;TASK&gt;</code>).</span>
+</div>
+<p></p>
 
+<div style="display: flex; align-items: center; gap: 25px;">
+<div style="flex: 1;">
+<p>The <b>StimTracker</b> device, used during EEG acquisition for visits V03, V04, and V06, provides precise timing for auditory and visual stimulus onset and marks task start and end points. The EEG Core identified an <b>electrical artifact</b> in a subset of files caused by intermittent spikes from the device at both stimulus onset and offset.</p>
+<p>To detect the artifact, the EEG Core developed a custom MATLAB script that averages all epochs per task and flags voltage fluctuations >1 µV in two time windows: onset (–10 to 10 ms) and offset (250 to 270 ms) of the voltage spike.<p>
+</div>
+  <!-- Image on the right -->
+  <div style="flex: 1; text-align: center;">
+    <img src="../images/Fig1.png" style="max-width:100%; height:auto; display:block; margin:0 auto;">
+    <p style="font-size: 0.8em; margin-top: 5px; line-height: 1.1; max-width:100%; margin-left:auto; margin-right:auto; text-align:justify;">
+      <b>Figure 1.</b> Example of the electrical artifact detected in the MMN auditory oddball task in E55. 
+      The artifact is characterized by a negative deflection at stimulus onset and a positive deflection at offset.
+    </p>
+  </div>
+</div>
+
+Flagged files in the raw EEG data (40–50%) were visually inspected after preprocessing with the MADE pipeline by examining all channels averaged across all trials. If the artifact was still visible, the file was labeled as artifact-present. If it was no longer visible, the file was labeled as artifact-free, indicating adequate artifact removal. **After preprocessing, roughly 10% of V03 files retained the StimTracker artifact.**
+
+To evaluate the impact of the StimTracker artifact on EEG derivatives, event-related potentials (ERPs) were generated for relevant regions and time windows - see [Effects of Artifact on ERP Derivatives by Task](#effects-of-artifact-on-erp-derivatives-by-task) below for details and figures displaying artifact-free and artifact-present waveforms across tasks and ROIs. Statistical comparisons of mean ERP component amplitudes between artifact-free and artifact-present files across tasks revealed only two significant differences, both in the T7T8 cluster for the standard and deviant conditions of the MMN after FDR correction. Difference waves (Predeviant–Deviant) showed no significant effects for the FCz or T7T8 clusters, and no significant differences were found in the VEP or FACEs tasks.
+
+In sum, our analysis indicates that the **StimTracker artifact does not meaningfully affect mean ERP amplitudes** and has minimal impact on the released derivatives. However, we encourage users to assess potential effects in their own analyses. The presence of the artifact is provided in the task-specific `eeg_qc_task-<TASK>` files included as part of the <a href="../../#eeg" target="_blank">tabulated EEG data</a>. <span style="color: red;">The binary `eeg_qc_-<TASK>` variable indicates whether the artifact was present (yes/no) in the processed data. (UPDATE FIELD/VARIABLE NAME ONCE KNOWN)</span>
+*Note: Due to limited data containing the artifact, no comparisons were conducted for V04 files.*
+
+### Effects of Artifact on ERP Derivatives by Task
+To assess the artifact’s impact on EEG derivatives, ERPs were computed for each task and ROI. Because there were many more artifact-free files, 100 artifact-present and 100 artifact-free files per task were randomly selected for comparison to balance the groups. Waveforms for each ERP are shown below, and differences by task and ROI are summarized in accompanying tables.
+
+<div id="vep" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-file-waveform"></i></span>
+  <span class="text-with-link">
+  <span class="text">VEP</span>
+  <a class="anchor-link" href="#vep" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <img src="../images/vep-erp-oz.jpeg" width="50%" height="auto" class="center">
-
+<p></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
 <thead>
 <tr>
@@ -53,14 +93,23 @@ ERPs were computed for each task and ROI. Because of the uneven number of files 
 </tr>
 </tbody>
 </table>
+</div>
 
-## MMN
-
-<img src="../images/mmn-artifact.jpeg" width="95%" height="auto" class="center">
+<div id="mmn" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-file-waveform"></i></span>
+  <span class="text-with-link">
+  <span class="text">MMN</span>
+  <a class="anchor-link" href="#mmn" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<img src="../images/mmn-artifact.jpeg" width="100%" height="auto" class="center">
 <p></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
 <thead>
-<tr><td colspan="7" style="font-size: 13px; word-wrap: break-word; white-space: normal;"><b>Table 2.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.</td></tr>
 <tr><th>Condition</th><th>ROI</th><th>Mean Amp Artifact (uV)</th><th>Mean Amp No Artifact (uV)</th><th>Delta (uV)</th><th>p Value</th><th>p Value Adj. (FDR)</th></tr>
 </thead>
 <tbody>
@@ -70,26 +119,34 @@ ERPs were computed for each task and ROI. Because of the uneven number of files 
 <tr><td>Predeviant</td><td>T7T8</td><td>1.279</td><td>0.641</td><td>0.637</td><td>0.055</td><td>0.11</td></tr>
 <tr><td>Deviant</td><td>FCz</td><td>1.478</td><td>1.444</td><td>0.034</td><td>0.927</td><td>0.946</td></tr>
 <tr><td>Deviant</td><td>T7T8</td><td>3.118</td><td>1.987</td><td>1.132</td><td>0.004</td><td>0.024</td></tr>
+<tr><td colspan="7" style="font-size: 13px; word-wrap: break-word; white-space: normal;"><b>Table 2.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.<br>
+<i>Note:</i> Differences between means are presented for each artifact designation, as well as the difference between them (delta). P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.</td></tr>
 </tbody>
 </table>
-
-<i>Note:</i> Differences between means are presented for each artifact designation, as well as the difference between them (delta). P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.
-
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
 <thead>
-<tr><td colspan="6" style="font-size: 13px; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 3.</b> Differences in mean amplitude for the difference wave of files containing the artifact (n = 100) and artifact-free files (n = 100). 
-Contrast</td></tr>
 <tr><th>Contrast</th><th>ROI</th><th>Mean Amp Artifact (uV)</th><th>Mean Amp No Artifact (uV)</th><th>Delta (uV)</th><th>p Value</th></tr>
 </thead>
 <tbody>
 <tr><td>Deviant-Predeviant</td><td>FCz</td><td>0.24</td><td>-0.10</td><td>0.34</td><td>0.45</td></tr>
 <tr><td>Deviant-Predeviant</td><td>T7T8</td><td>1.70</td><td>1.03</td><td>0.67</td><td>0.10</td></tr>
+<tr><td colspan="6" style="font-size: 13px; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 3.</b> Differences in mean amplitude for the difference wave of files containing the artifact (n = 100) and artifact-free files (n = 100). 
+Contrast</td></tr>
 </tbody>
 </table>
+</div>
 
-
-## FACE Task (by ROI)
-
+<div id="face" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-file-waveform"></i></span>
+  <span class="text-with-link">
+  <span class="text">FACE Task (by ROI)</span>
+  <a class="anchor-link" href="#face" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <div style="display: flex; justify-content: space-between; align-items: flex-start; text-align: center;">
   <div style="width: 49%;">
     <p style="font-weight: bold; margin-bottom: 4px; font-size: 1.1em;">P7</p>
@@ -111,12 +168,8 @@ Contrast</td></tr>
   </div>
 </div>
 <p></p>
-
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
 <thead>
-<tr>
-<td colspan="8" style="font-size: 13px; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 4.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.</td>
-</tr>
 <tr>
 <th>Condition</th>
 <th>ROI</th>
@@ -153,19 +206,16 @@ Contrast</td></tr>
 <tr><td>Object</td><td>P7</td><td>350-600</td><td>4.001</td><td>6.964</td><td>-2.963</td><td>0.004</td><td>0.096</td></tr>
 <tr><td>Object</td><td>P8</td><td>200-350</td><td>1.532</td><td>1.866</td><td>-0.334</td><td>0.692</td><td>0.836</td></tr>
 <tr><td>Object</td><td>P8</td><td>350-600</td><td>5.32</td><td>6.283</td><td>-0.963</td><td>0.405</td><td>0.648</td></tr>
-</tbody>
-</table>
-
-<b>Note:</b> The FACE task has 2 blocks: one with upright and inverted faces and the other with upright faces and Sheinbug objects. The upright condition is separated into its corresponding block; “Upright (Inv)” are those upright faces during the inverted block while “Upright (Obj)” corresponds to upright faces during the object block. Differences between means are presented for each artifact designation, as well as the difference between them (delta).  P-values were calculated for the differences between means, and then FDR corrected. Original and corrected p-values are presented.
-
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-<thead>
+<tr>
+<td colspan="8" style="font-size: 13px; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 4.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.<br>
+<b>Note:</b> The FACE task has 2 blocks: one with upright and inverted faces and the other with upright faces and Sheinbug objects. The upright condition is separated into its corresponding block; “Upright (Inv)” are those upright faces during the inverted block while “Upright (Obj)” corresponds to upright faces during the object block. Differences between means are presented for each artifact designation, as well as the difference between them (delta).  P-values were calculated for the differences between means, and then FDR corrected. Original and corrected p-values are presented.</td>
+</tr>
 <tr>
 <td colspan="8" style="font-size: 13px; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 5.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude of the difference wave.<br>
+<b>Note:</b> These are calculated for each Region of Interest (ROI) and timewindow. The upright conditions are from the corresponding block. Differences between means are presented for each artifact designation, as well as the difference between them (delta). P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.</td>
 </tr>
-</thead>
-<tbody>
 </tbody>
 </table>
+</div>
 
-<b>Note:</b> These are calculated for each Region of Interest (ROI) and timewindow. The upright conditions are from the corresponding block. Differences between means are presented for each artifact designation, as well as the difference between them (delta). P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.
+<br>
