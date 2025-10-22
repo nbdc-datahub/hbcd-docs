@@ -106,7 +106,7 @@
   <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
   <span class="text-with-link">
   <span class="text">Full Updated Files List</span>
-  <a class="anchor-link" href="#visitinfo" title="updatedfiles">
+  <a class="anchor-link" href="#updatedfiles" title="updatedfiles">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
