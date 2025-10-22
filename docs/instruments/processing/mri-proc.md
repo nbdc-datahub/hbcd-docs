@@ -40,17 +40,10 @@ Components are also calculated separately within the WM and CSF masks. For each 
 
 A “goodvoxels” mask is applied during volume-to-surface sampling in fsLR space, excluding voxels whose time-series have a locally high coefficient of variation. Grayordinates files (Glasser et al. 2013) containing 91k samples are also generated using the highest-resolution fsaverage as intermediate standardized surface space. All resamplings can be performed with a single interpolation step by composing all the pertinent transformations (i.e. head-motion transform matrices, susceptibility distortion correction when available, and co-registrations to anatomical and output spaces). Gridded (volumetric) resamplings are performed using nitransforms, configured with cubic B-spline interpolation. Non-gridded (surface) resamplings are performed using mri_vol2surf (FreeSurfer).
 
-
-
-
-
-
- 
- 
-
-
-
-
 ## References
 
 Andersson, Jesper L. R., Stefan Skare, and John Ashburner. 2003. “How to Correct Susceptibility Distortions in Spin-Echo Echo-Planar Images: Application to Diffusion Tensor Imaging.” NeuroImage 20 (2): 870–88. https://doi.org/10.1016/S1053-8119(03)00336-7.
+
+
+
+
