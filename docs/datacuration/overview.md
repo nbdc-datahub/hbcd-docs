@@ -24,16 +24,48 @@ File-based data is any data that cannot be converted to the HBCD tabulated forma
   </tr>
   <tr>
     <td><a href="../file-based-data/#concatenated-data"><strong>Concatenated Data</strong></a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Participant-level files aggregated across all subjects for select measures, including, for the current release, <a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Participant-level files aggregated across all subjects for select measures, e.g. <a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
   </tr>
   </tbody>
 </table>
-
 <a href="../file-based-data" target="_blank"><i>Go to File-Based Data documentation</i> <i style="font-size: 0.9em;" class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+
+<p>
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Which file-based data are also available as HBCD tabulated data? <span class="hint">(Click to expand)</span></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p><strong>When possible</strong>, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
+<p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are included. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
+<ul>
+<li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
+<li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
+</ul>
+<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<tr>
+<td><b>File-based derivatives</b></td>
+<td><code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
+</tr>
+<tbody>
+<tr>
+<td><b>Tabulated file</b></td>
+<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
+</tbody>
+</table>
+</div>
+</p>
 
 <pre class="folder-tree">
 hbcd/
-|__ concatenated/      <span class="hashtag"># Concatenated Data</span>
 |__ derivatives/       <span class="hashtag"># Derivatives</span>
 |
 |__ rawdata/ 
@@ -41,22 +73,19 @@ hbcd/
     |__ sub-<span class="label">{ID}</span>/      <span class="hashtag"># Raw BIDS</span>
 </pre>
 
-<div id="filetree" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
+<div id="filetree" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #2b2b2bff;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-<span class="text">Detailed Folder Tree Summary</span>
+<span class="text" style="color: white; font-weight: normal;">Detailed Folder Tree Summary</span>
   <a class="anchor-link" href="#filetree" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
-  <span class="arrow">▸</span>
+  <span class="arrow" style="color: white;">▸</span>
 </div>
 <div class="table-collapsible-content">
-<pre class="folder-tree">
+<pre class="folder-tree" style="margin-top: 0;">
 hbcd/
-|__ concatenated/      <span class="hashtag"># Concatenated Data</span>
-|   |__ genetics/
-|
 |__ derivatives/        <span class="hashtag"># Processed pipeline derivatives</span>
 |   |__ bibsnet/
 |   |__ hbcd_motion/
@@ -74,7 +103,7 @@ hbcd/
     |__ phenotype/     <span class="hashtag"># Tabulated data (demographics, visit info, behavior, etc.)</span>
     |   |__ par_visit_data.*
     |   |__ sed_basic_demographics.*
-    |   |__ <span class="placeholder">&lt;instrument_name&gt;</span>.*
+    |   |__ <span class="placeholder">{instrument_name}</span>.*
     |
     |__ sub-<span class="label">{ID}</span>/      <span class="hashtag"># Raw BIDS formatted data (MRI, MRS, EEG, biosensors)</span>
     |   |__ sub-<span class="label">{ID}</span>_sessions.tsv
@@ -97,3 +126,4 @@ hbcd/
 </div>
 
 <br>
+
