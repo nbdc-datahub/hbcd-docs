@@ -38,7 +38,7 @@ code {
   background: none !important;
   border: none !important;
   padding: 0 !important;
-  color: #c900cc !important;
+  color: #af00b1 !important;
   font-size: 0.8em !important;
   font-weight: 500;
 }
@@ -76,7 +76,6 @@ pre.helper-code code {
 
 /* Style for expand all button (measures overview page) */
 #toggle-all-btn {
-  background-color: #d0dff0;
   color: #474646;
   border: none;
   padding: 10px 20px;
@@ -88,7 +87,6 @@ pre.helper-code code {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.592);
   display: block;
   width: fit-content;   /* shrink to its content width */
-  margin: 0 auto;       /* centers it horizontally */
 }
 #toggle-all-btn:hover {
   transform: scale(1.05); /* Slight zoom effect */
@@ -119,6 +117,8 @@ pre.helper-code code {
 .folder-tree .subses {
   color: #ffd000
 }
+
+
 .gray-text {
   color: #505050;
 }

@@ -1,5 +1,5 @@
 # Study Instruments
-The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)** for the majority of measures. In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Full study protocols are available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). See [Pending Updates](../changelog/pending.md) for details on what to expect in future releases.
+In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Full study protocols are available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). See [Pending Updates](../changelog/pending.md) for details on what to expect in future releases.
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
@@ -11,8 +11,8 @@ The current release includes data from **Visits 1, 2, and 3 (V01, V02, and V03)*
 
 HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 
-- <a href="../datacuration/phenotypes" target="_blank"><b>Tabulated data</b></a> contain data across all participants in a standardized [tabulated format](../datacuration/phenotypes.md/#table-organization) for HBCD (***includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.***).
-- File-based data include <a href="../datacuration/file-based-data/#raw-bids" target="_blank"><b>raw</b></a> and <a href="../datacuration/file-based-data/#derivatives" target="_blank"><b>processed derivative</b></a> data organized under subject/session-level folders and are in varied modality-specific formats (***includes MRI/MRS, EEG, and Wearable Sensors data***).
+- <a href="../datacuration/phenotypes" target="_blank">Tabulated data</a> contain data across all participants organized according to a standardized tabulated format for HBCD (*includes Behavior, Biospecimens/Toxicology, Demographics, data derived from MRI and other file-based data, etc.*).
+- File-based data are in varied, modality-specific formats. This includes <a href="../datacuration/file-based-data/#raw-bids" target="_blank">raw BIDS data</a> and <a href="../datacuration/file-based-data/#derivatives" target="_blank">processed derivatives</a> organized under subject/session-level folders (*MRI/MRS, EEG, and Wearable Sensors*) as well as <a href="../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a> aggregated across participants for certain modalities (*including Genomics*).
 
 Expand the sections below to see a list of measures associated with each domain included in the latest release data.
 
