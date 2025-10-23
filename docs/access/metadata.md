@@ -215,7 +215,7 @@ See the following sections for detailed descriptions for each column in the [dat
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+ <tbody>
 <tr>
 <td>administrative</td>
 <td style="word-wrap: break-word; white-space: normal;">Data that gives context to the assessments, e.g. date, language, quality control, etc.</td>
