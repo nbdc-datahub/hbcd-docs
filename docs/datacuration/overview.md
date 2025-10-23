@@ -67,18 +67,18 @@ hbcd/
     |__ sub-<span class="label">{ID}</span>/      <span class="hashtag"># Raw BIDS</span>
 </pre>
 
-<div id="filetree" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
+<div id="filetree" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #2b2b2bff;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-<span class="text">Detailed Folder Tree Summary</span>
+<span class="text" style="color: white; font-weight: normal;">Detailed Folder Tree Summary</span>
   <a class="anchor-link" href="#filetree" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
-  <span class="arrow">▸</span>
+  <span class="arrow" style="color: white;">▸</span>
 </div>
 <div class="table-collapsible-content">
-<pre class="folder-tree">
+<pre class="folder-tree" style="margin-top: 0;">
 hbcd/
 |__ derivatives/        <span class="hashtag"># Processed pipeline derivatives</span>
 |   |__ bibsnet/
@@ -120,3 +120,4 @@ hbcd/
 </div>
 
 <br>
+

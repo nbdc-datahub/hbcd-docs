@@ -1,6 +1,6 @@
 # Overview & EEG Protocols 
 
-HBCD includes four electroencephalography (EEG) tasks acquired during visits V03, V04, and V06 - click to be directed to task documentation pages:
+The HBCD study includes four electroencephalography (EEG) tasks collected during visits V03, V04, and V06:
 
 <ul>
 <li><a href="mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></li>
@@ -8,6 +8,12 @@ HBCD includes four electroencephalography (EEG) tasks acquired during visits V03
 <li><a href="videors" target="_blank">Video Resting State (RS)</a></li>
 <li><a href="vep" target="_blank">Visual Evoked Potential (VEP)</a></li>
 </ul>
+
+## EEG Protocols
+
+**EEG protocols** are described in detail in [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and fully documented in [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030).
+
+![](images/EEGParams.png)
 
 ## Release Data
 
@@ -24,11 +30,14 @@ HBCD includes four electroencephalography (EEG) tasks acquired during visits V03
 <div class="alert-collapsible-content">
 <p>The HBCD EEG data and EEG preprocessing outputs do not contain any personally identifiable information. It is important to consider that potentially stigmatizing conclusions could emerge from the inappropriate use of the EEG data together with available demographic information or questionnaires. Furthermore, all EEG tasks are all passive at the V03 age range and therefore conclusions should not be drawn about behavioral performance.</p> 
 <p>Methodologically, there are a number of best practices for responsible data use that will be included with each file. The first is selecting files that maintain a minimum trial threshold recommendation. For each task, there are three levels of quality control thresholds that can be used: (1) our QC thresholds used to provide feedback to sites on each upload, (2) a 30% trial retention threshold (which we use internally to indicate usability of an EEG recording), and (3) the reliability recommendations for each task.</p>
-<p><li><b>Threshold recommendations by task:</b></li>
+<p><b>Threshold recommendations by task:</b>
+<ul>
 <li>RS - 108 trials</li>
 <li>FACE - 15 trials for each condition of interest</li>
 <li>MMN - 30 trials for each condition of interest</li>
-<li>VEP - 36 trials.</li></p>
+<li>VEP - 36 trials.</li>
+</ul>
+</p>
 <p>An additional consideration for responsible use of the HBCD EEG dataset applies to disproportionate missing data. It is possible that some participant data may be systematically missing from this dataset by virtue of not meeting the QC thresholds. For instance, with infants that are inattentive and prone to fussing out during the EEG recording, more data may be removed from their datasets by our preprocessing scripts. A similar risk holds with participants  who have thick or dense hairstyling and hair texture, which may impact capping success, impedance, and data quality (<a href="https://doi.org/10.1038/s41539-024-00240-y">Adams et al., 2024</a>). The consortium has proactively worked to address this risk by using scheduling procedures that are flexible to participants hairstyling routines and by purchasing 3 long pedestal nets per site in sizes appropriate for the V03, V04, and V06 visits (<a href="https://doi.org/10.1038/s41539-024-00240-y">Adams et al., 2024</a>; <a href="https://doi.org/10.1016/j.dcn.2024.101396">Mlandu et al., 2024</a>). Preliminary analyses indicate that capping quality for visits where the long pedestal net was used have been consistent with capping quality seen for the dataset at large.</p>
 <p>It is important to use these data in a manner which takes into account that physical and neurological differences between groups are not necessarily representative of intrinsic qualities of a given demographic  group. Discussions around data patterns should be sensitive to societal factors. In addition, it is important to note that variation within demographic populations is greater than variation across populations. Demographic markers are categorical proxies that cannot capture or explain the causal mechanisms that may account for evident differences.</p>
 </div>
@@ -73,7 +82,9 @@ EEG release data include both **file-based** (raw and processed data files in mo
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The BIDS <code>eeg/</code> folder contains EEG task recordings, recording system and electrode location metadata, and events for each task. <i>See <a href="../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
+<p>Each participant’s BIDS <code>eeg/</code> folder contains task-specific EEG recordings (<code>.set</code> and <code>.fdt</code> files), along with channel metadata (<code>*_channels.tsv</code> and <code>*_events.tsv</code>). Electrodes are placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>). Electrode placement information is stored in <code>*_electrodes.tsv</code> files, accompanied by <code>*_coordsystem.json</code> files that define the Cartesian coordinates.</p>
+<p>The <code>sourcedata/</code> subfolder includes impedance measurements (<code>*_impedances.json</code>) used to ensure good electrode contact and task event logs (<code>*_eventlogs.txt</code>) describing stimulus presentation timing.<br>
+<i>See <a href="../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -86,7 +97,7 @@ hbcd/
                 |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.tsv <span class="hashtag">(+JSON)</span>
                 |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eeg.fdt
                 |
-                | <span class="hashtag"># LOCATION OF ELECTRODES:</span>
+                | <span class="hashtag"># ELECTRODE PLACEMENT:</span>
                 |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_electrodes.tsv
                 |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_coordsystem.json
                 |
@@ -94,44 +105,6 @@ hbcd/
                     |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_impedances.json
                     |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eventlogs.txt
 </pre>
-<i>File Descriptions</i>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr>
-  <td colspan="2"><strong>Task Acquisition Files</strong></td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">SET</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Metadata and parameters for the EEG dataset, such as channel locations, sampling rate, and event information.</td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">FDT</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Field data table files containing EEG data</td>
-</tr>
-<tr>
-  <td colspan="2"><strong>Location of Electrodes</strong></td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">*_electrodes.tsv</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Specifies the location of electrodes, placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>)</td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">*_coordsystem.json</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Cartesian coordinates followed by <code>*_electrodes.tsv</code> files</td>
-</tr>
-<tr>
-  <td colspan="2"><strong>Sourcedata</strong></td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">*_impedence.json</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Impedance values used to ensure good electrode contact</td>
-</tr>
-<tr>
-  <td><code style="margin-left: 15px;">*_eventlogs.txt</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Task stimuli presentations</td>
-</tr>
-</tbody>
-</table>
 </div>
 
 <div id="made" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
@@ -185,12 +158,6 @@ hbcd/
 <span class="placeholder">&lt;MMN-TOPO&gt;</span>: deviant, diffDevVsSta, diffDevVsPre, preDeviant, standard 
 </pre>
 </div>
-
-## EEG Protocols
-
-EEG protocols are described in [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and fully documented in [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030).
-
-![](images/EEGParams.png)
 
 ## Resources
 - [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/)
