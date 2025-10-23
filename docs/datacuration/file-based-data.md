@@ -69,29 +69,37 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 
 *Click the following links to see the full file contents of each raw BIDS folder in the measure documentation pages:*
 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-  <thead>
-    <tr>
-      <th><a href="../../instruments/mri/smri/#rawbids" target="_blank">Structural MRI</a></th>
-      <th><a href="../../instruments/mri/qmri/#rawbids" target="_blank">Quantitative MRI</a></th>
-      <th><a href="../../instruments/mri/fmri/#rawbids" target="_blank">Functional MRI</a></th>
-      <th><a href="../../instruments/mri/dmri/#rawbids" target="_blank">Diffusion MRI</a></th>
-      <th><a href="../../instruments/mri/mrs/#rawbids" target="_blank">MR Spectroscopy</a></th>
-      <th><a href="../../instruments/eeg/#rawbids" target="_blank">EEG</a></th>
-      <th><a href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">Wearable Sensors</a></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>anat/</code></td>
-      <td><code>anat/</code></td>
-      <td><code>func/</code>, <code>fmap/</code></td>
-      <td><code>dwi/</code></td>
-      <td><code>mrs/</code></td>
-      <td><code>eeg/</code></td>
-      <td><code>motion/</code></td>
-    </tr>
-  </tbody>
+<table class="compact-table-no-vertical-lines" style="line-height: 1.0;">
+<tbody>
+<tr>
+<td><a href="../../instruments/mri/smri/#rawbids" target="_blank">Structural MRI</a></td>
+<td><code>anat/</code></td>
+</tr>
+<tr>
+<td><a href="../../instruments/mri/qmri/#rawbids" target="_blank">Quantitative MRI</a></td>
+<td><code>anat/</code></td>
+</tr>
+<tr>
+<td><a href="../../instruments/mri/fmri/#rawbids" target="_blank">Functional MRI</a></td>
+<td><code>func/</code>, <code>fmap/</code></td>
+</tr>
+<tr>
+<td><a href="../../instruments/mri/dmri/#rawbids" target="_blank">Diffusion MRI</a></td>
+<td><code>dwi/</code></td>
+</tr>
+<tr>
+<td><a href="../../instruments/mri/mrs/#rawbids" target="_blank">MR Spectroscopy</a></td>
+<td><code>mrs/</code></td>
+</tr>
+<tr>
+<td><a href="../../instruments/eeg/#rawbids" target="_blank">EEG</a></td>
+<td><code>eeg/</code></td>
+</tr>
+<tr>
+<td><a href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">Wearable Sensors</a></td>
+<td><code>motion/</code></td>
+</tr>
+</tbody>
 </table>
 
 ### BIDS Conversion Procedures
