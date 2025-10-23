@@ -176,7 +176,7 @@ QALAS conversion yielded either five 3D NIfTI files or one 4D file with five vol
   </table>
 </div>
 
-### Data Release Eligibility Criteria
+### MR Data Release Eligibility Criteria
 
 Acquisition parameters vary by scanner vendor, so inclusion criteria are typically defined as acceptable <b>ranges</b> rather than fixed values. Following BIDS conversion, modality-specific criteria are extracted from BIDS sidecar JSON files and evaluated accordingly. 
 
