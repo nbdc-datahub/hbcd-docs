@@ -1,11 +1,18 @@
-# USDTL Nails Toxicology Results
+# USDTL Nails Toxicology (Maternal)
 
-**Full Name**: USDTL Nails Toxicology results        
-**Short/Alternative Names**: Nails; Maternal Nails        
-**Table Names**: `bio_bm_biosample_nails_results` (toxicology screen), `bio_bm_biosample_nails_type` (specimen type)      
-**Construct**: Toxicology screen for substances & environmental exposures conducted on fingernails and toenails
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>bio_bm_biosample_nails_results</code> (toxicology screen), <code>bio_bm_biosample_nails_type</code> (specimen type)</div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Drug, Environmental Exposure</div>
+  </div>
+</div>
 
-<p>
+---------------------------------------------
+
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
@@ -21,17 +28,13 @@
 For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#nails-table1">Table 1. Nail Assay Thresholds</a>.</p> 
 <p><b>Updated Workflow</b><br>
 As of July 1, 2024, the nail processing workflow was updated to optimize specimen use and allow confirmation testing for low sample quantities. Prior to this update, remnants of ELISA extract were not used for confirmation when specimens had insufficient sample.</p> 
+<p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
 </div>
-</p>
 
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
-<tr>
-    <td><b>Child Specific</b></td>
-    <td>No</td>
-</tr>
 <tr><td><b>Respondent</b></td>
 <td>Pregnant/postpartum person</td></tr>
 <tr><td><b>Administration</b></td>

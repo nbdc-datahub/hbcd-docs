@@ -1,9 +1,17 @@
-# USDTL Urine Toxicology Results
+# USDTL Urine Toxicology (Maternal)
 
-**Full Name**: USDTL Urine Toxicology results       
-**Short/Alternative Names**: Urine; Maternal Urine         
-**Table Name**: `bio_bm_biosample_urine`       
-**Construct**: Toxicology screen for substances & environmental exposures
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>bio_bm_biosample_urine</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Drug Panel, Toxins</div>
+  </div>
+</div>
+
+---------------------------------------------
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -19,17 +27,14 @@
 <p><b>Continuous Variables</b><br>
 For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#urine-table1">Table 1. Urine Assay Thresholds for Analytes</a>.</p> 
 <p><b>Urinary Concentration Corrections</b><br>
-Urine concentrations vary by participant. Urinary concentration corrections can be made by creatine or specific gravity. There is a <a href="../../../changelog/knownissues/#urine-incorrect-specific-gravity-variable">known issue</a> with the specific gravity values and they are not meaningful in the current data release; therefore, only the initial creatinine results from sample validation should be used for urinary concentration corrections. Creatinine values are provided for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds.</p>
+Urine concentrations vary by participant. Urinary concentration corrections can be made using creatinine results from sample validation or specific gravity. Creatinine values are provided for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds.</p>
+<p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
 </div>
 
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
-<tr>
-    <td><b>Child Specific</b></td>
-    <td>No</td>
-</tr>
 <tr><td><b>Respondent</b></td>
 <td>Pregnant/postpartum person</td></tr>
 <tr><td><b>Administration</b></td>
@@ -736,7 +741,7 @@ These data are the results of urine toxicology assays. **Screening** results for
 </tr>
 </tbody>
 </table>
-⁠<span class="blue-text">**</span> <small>Note: the categorical confirmatory test variable for nicotine follows the convention: <code>c_nicotine_u</code>.</small>
+⁠<span class="blue-text">**</span><small>Note: the categorical confirmatory test variable for nicotine follows the convention: <code>c_nicotine_u</code>.</small>
 <br>
 </div>
 

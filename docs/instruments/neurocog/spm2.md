@@ -45,11 +45,11 @@
 <tr><td><b>Child Specific</b></td>
 <td>Yes</td></tr>
 <tr><td><b>Respondent</b></td>
-<td>Primary Caregiver on Child</td></tr>
+<td>Primary Caregiver</td></tr>
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V03 <strong>[Infant]</strong>, V05 <strong>[Toddler]</strong></td></tr>
+<td>V03 (SPM Infant), V05 (SPM Toddler)</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>12 min</td></tr>
 <tr><td><b>Quality Control</b></td>
