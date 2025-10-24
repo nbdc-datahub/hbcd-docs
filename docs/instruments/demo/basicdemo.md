@@ -1,4 +1,4 @@
-<p style="font-size: 1.2em;">🚧 UNDER CONSTRUCTION TO BE UPDATED FOR R2.0 - <i style="color: red;">per Natalie: Basic Demo will be transitioned into "Static" and "Dynamic" tables (effort potentially led by Wes)</i></p>
+<p style="font-size: 1.2em;">🚧 UNDER CONSTRUCTION TO BE UPDATED FOR R2.0 - <i style="color: red;">per Natalie: Basic Demo will be transitioned into "Static" and "Dynamic" tables</i></p>
 
 # Basic Demographics Information
 
@@ -49,7 +49,7 @@
 <p>
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">Basic Demographics is a <a href="../../../access/metadata/#exceptions-derived" target="_blank">derived table</a>. See HBCD <a href="../../SED/demo-cg/" target="_blank">Adult</a> and <a href="../../SED/demo-ch/" target="_blank">Child</a> Demographics for full demographics information.</span>
+  <span class="text">Basic Demographics is a <a href="../../../access/metadata/#exceptions-derived" target="_blank">derived table</a>. See HBCD <a href="../../SED/demo-cg/" target="_blank">Adult</a> and <a href="../../SED/demo-ch/" target="_blank">Child</a> Demographics for full demographics.</span>
 </div>
 </p>
 
@@ -60,120 +60,94 @@ Basic Demographics is a **derived measure** with information computed from:
 
 Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.). *However*, if only V01 data for a given participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about the child will be missing, as the child is not born until after the V01 visit (all variables about the child are available beginning with V02).
 
-## Variable Logic & Definitions
 
-#### Variable Logic
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    <i>Fields Reporting Age & Combined Race/Ethnicity</i>
-  </span>
-</div>
-<div class="notification-static-content">
-<p><b>Fields Reporting Age</b><br>
-Basic Demographics includes a unique set of fields reporting age compared to instrument data, including Maternal Age at V01 (MAV01), Maternal Age at Delivery (MAD), and Gestational Age at Delivery (GAD) of the child (defined in the table below). See the <a href="../../agevariables">Age Variable Definitions</a> section for a summary of all age-related variables across the release.</p>
-
-<p><b>Combined Race and Ethnicity Variable Logic</b><br>
-With the exception of <code>rc_mother_ethnoracial_aou_race_ethnicity</code> (only constructed for the birth parent, following <a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">OMB</a> standards as described in the table below), variables that combine race and ethnicity are constructed from separate race and ethnicity variables following current federal standards: if an individual is identified as Hispanic or Latino based on the response to the ethnicity item, they will be categorized as such, regardless of their race. In addition, individuals who select more than one race are categorized as "multiracial."</p>
-<p><b>Multiracial Individuals: Aggregation By Ethnicity Vs Race</b><br>
-There are two combined race and ethnicity variables that aggregate multiracial individuals into subcategories by ethnicity (<code>*_acs_by_multi_ethnicity</code>) vs race (<code>*_acs_by_multi_race</code>). For aggregation by ethnicity, individuals are subcategorized into those who do and do not select Hispanic as one of their identities. For race, individuals are subcategorized into those who do and do not select Black/African American as one of their identities.</p>
-</div>
-<br>
-
-#### Variable Details
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
     <thead>
       <tr>
-        <th style="width: 25%; text-align: center; word-wrap: break-word; white-space: normal;">Construct</th>
-        <th style="width: 20%; text-align: center; word-wrap: break-word; white-space: normal;">Variable Name</th>
-        <th style="width: 10%; text-align: center; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-bottom">Source<span class="tooltiptext">Administrative Records or V01 Demographics instrument</span></span></th>
-        <th style="width: 40%; text-align: center; word-wrap: break-word; white-space: normal;">Description</th>
+        <th>Construct</th>
+        <th>Variable Name</th>
+        <th>Source</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Maternal Age at V01 (MAV01)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>mother_age_v01</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Birth parent's age, obtained from the scheduled date of the V01 visit. Reported in years to two decimal places, with fractional years calculated by dividing the number of whole months (rounded down) by 12.</td>
+<td style="word-wrap: break-word; white-space: normal;">Maternal Age at V01 (MAV01)</td>
+<td><code>mother_age_v01</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;">Birth parent's age - <a href="../../agevariables/#basic-demographics">see details</a></td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Maternal Age at Delivery (MAD)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>mother_age_delivery</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Birth parent's age at the time of their child's delivery (date of birth). Reported in years to two decimal places, with fractional years calculated by dividing the total whole months (rounded down) by 12.</td>
+<td style="word-wrap: break-word; white-space: normal;">Maternal Age at Delivery (MAD)</td>
+<td><code>mother_age_delivery</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;">Birth parent's age at time of child's delivery - <a href="../../agevariables/#basic-demographics">see details</a></td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Gestational Age at Delivery (GAD)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>gestational_age_delivery</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Age of the child at delivery calculated as the time elapsed between the first day of the birth parent’s <span class="tooltip">LMP<span class="tooltiptext">last menstrual period</span></span> and the child's date of birth. Reported in whole weeks, rounded down to the nearest week.</td>
+<td style="word-wrap: break-word; white-space: normal;">Gestational Age at Delivery (GAD)</td>
+<td><code>gestational_age_delivery</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;">Age of the child at delivery - <a href="../../agevariables/#basic-demographics">see details</a></td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Child sex</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>sex</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-left"><i>Visit V02 onward</i><span class="tooltiptext">Data are not collected prior to birth, i.e. at the prenatal V01 visit, and will be available starting at visit V02</span></span></td>
+<td>Child sex</td>
+<td><code>sex</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-left"><i>Visit V02 onward</i><span class="tooltiptext">Data are not collected prior to birth, i.e. at the prenatal V01 visit, and will be available starting at visit V02</span></span></td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Child ethnicity</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>child_ethnicity</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>-standard ethnicity item. <span class="tooltip tooltip-left"><i>Visit V02 onward</i><span class="tooltiptext">Data are not collected prior to birth, i.e. at the prenatal V01 visit, and will be available starting at visit V02</span></span><i></i></td>
+<td>Child ethnicity</td>
+<td><code>child_ethnicity</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;"><a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>-standard ethnicity item. Available for Visit V02 onward (post-birth)</td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Child race</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>child_race</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>-standard race item. <span class="tooltip"><i>Visit V02 onward</i><span class="tooltiptext">Data are not collected prior to birth, i.e. at the prenatal V01 visit, and will be available starting at visit V02</span></span></td>
+<td>Child race</td>
+<td><code>child_race</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;"><a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>-standard race item. Available for Visit V02 onward (post-birth).</td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Child race and ethnicity combined - multiracial aggregation by Hispanic and non-Hispanic distinction</td>
-<td style="word-break: break-all; white-space: normal;"><code>child_ethnoracial_acs_by_multi_ethnicity</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Individuals are assigned a single category, constructed from <code>child_race</code> and <code>child_ethnicity</code>, with subcategories for multiracial individuals based on ethnicity following the logic described under <a href="#variable-logic">Variable Logic</a>. <span class="tooltip"><i>Visit V02 onward</i><span class="tooltiptext">Data are not collected prior to birth, i.e. at the prenatal V01 visit, and will be available starting at visit V02</span></span><i></i></td>
+<td style="word-wrap: break-word; white-space: normal;">Child race & ethnicity - multiracial aggregation by Hispanic/non-Hispanic</td>
+<td><code>child_ethnoracial_acs_by_multi_ethnicity</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from <code>child_race</code> and <code>child_ethnicity</code> based on <b>current federal standards.*</b> Multiracial individuals are subcategorized based on whether <i>Hispanic</i> is one of their selected identities. Available for Visit V02 onward (post-birth)</td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Child race and ethnicity combined - multiracial aggregation by Black and non-Black distinction</td>
-<td style="word-break: break-all; white-space: normal;"><code>child_ethnoracial_acs_by_multi_race</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Individuals are assigned a single category, constructed from <code>child_race</code> and <code>child_ethnicity</code>, with subcategories for multiracial individuals based on race following the logic described under <a href="#variable-logic">Variable Logic</a>. <span class="tooltip"><i>Visit V02 onward</i><span class="tooltiptext">Data are not collected prior to birth, i.e. at the prenatal V01 visit, and will be available starting at visit V02</span></span><i></i></td>
+<td style="word-wrap: break-word; white-space: normal;">Mother ethnicity</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>screen_mother_ethnicity</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;">Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item about ethnic identity collected during screening.</td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother combined race and ethnicity - multiracial category split into Hispanic and non-Hispanic groups</td>
-<td style="word-break: break-all; white-space: normal"><code>screen_mother_ethnoracial_acs_by_multi_ethnicity</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Individuals are assigned a single category, constructed from screening responses to separate race and ethnicity questions, with subcategories for multiracial individuals based on ethnicity following the logic described under <a href="#variable-logic">Variable Logic</a>.</td>
+<td style="word-wrap: break-word; white-space: normal;">Mother race, multi-categorical</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>screen_mother_race</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;">Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item/question about racial identity collected during screening.</td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother combined race and ethnicity - multiracial category split into Black and non-Black groups</td>
-<td style="word-break: break-all; white-space: normal;"><code>screen_mother_ethnoracial_acs_by_multi_race</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Individuals are assigned a single category, constructed from screening responses to separate race and ethnicity questions, with subcategories for multiracial individuals based on race following the logic described under <a href="#variable-logic">Variable Logic</a>.</td>
+<td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity - multiracial aggregation by Hispanic/non-Hispanic</td>
+<td><code>screen_mother_ethnoracial_acs_by_multi_ethnicity</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses based on <b>current federal standards.*</b> Multiracial individuals are subcategorized based on whether <i>Hispanic</i> is one of their selected identities.</td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother race and ethnicity</td>
+<td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity - multiracial aggregation by Black/non-Black</td>
+<td><code>screen_mother_ethnoracial_acs_by_multi_race</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses based on <b>current federal standards.*</b> Multiracial individuals are subcategorized based on whether <i>Black/African American</i> is one of their selected identities.</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Mother race and ethnicity</td>
 <td style="word-break: break-all; white-space: normal;"><code>rc_mother_ethnoracial_aou_race_ethnicity</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">V01 Demo</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Derived from single <a class="in-cell-link" href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">All of Us</a> race and ethnicity item scored following <a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">OMB</a> standards: Anyone identifying as Hispanic/Latino (alone or with another group) is categorized as Hispanic/Latino; all others as non-Hispanic.</td>
+<td>V01 Demo</td>
+<td style="word-wrap: break-word; white-space: normal;">Derived from single <a class="in-cell-link" href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">All of Us</a> race and ethnicity item scored following <a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">OMB</a> standards: Anyone identifying as Hispanic/Latino (alone or with another group) is categorized as Hispanic/Latino; all others as non-Hispanic.</td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother ethnicity</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>screen_mother_ethnicity</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item about ethnic identity collected during screening.</td>
-</tr>
-<tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother race, multi-categorical</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>screen_mother_race</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item/question about racial identity collected during screening.</td>
-</tr>
-<tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother race, indicator variables from screening</td>
+<td style="word-wrap: break-word; white-space: normal;">Mother race, indicator variables from screening</td>
 <td style="word-break: break-all; white-space: normal;"><code>screen_mother_race_multi___{0 - 5}</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Indicator variables from ACS race question:<br>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;">Indicator variables from ACS race question:<br>
 0 = White<br>
 1 = Black or African American<br>
 2 = American Indian or Alaskan Native<br>
@@ -182,10 +156,10 @@ There are two combined race and ethnicity variables that aggregate multiracial i
 5 = Other race</td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother race, indicator variables from survey item</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>rc_mother_race___{0 - 7}</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">V01 Demo</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Indicator variables for responses to <a class="in-cell-link" href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">All of Us</a> combined race and ethnicity question:<br>
+<td style="word-wrap: break-word; white-space: normal;">Mother race, indicator variables from survey item</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>rc_mother_race___{0 - 7}</code></td>
+<td>V01 Demo</td>
+<td style="word-wrap: break-word; white-space: normal;">Indicator variables for responses to <a class="in-cell-link" href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">All of Us</a> combined race and ethnicity question:<br>
 0 = American Indian or Alaskan Native<br>
 1 = Asian<br>
 2 = Black, African American, or African<br>
@@ -196,25 +170,27 @@ There are two combined race and ethnicity variables that aggregate multiracial i
 7 = None of these fully describe me</td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother education</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>rc_mother_education</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">V01 Demo</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Derived from <code>sed_bm_demo_edu_001</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Mother education</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>rc_mother_education</code></td>
+<td>V01 Demo</td>
+<td style="word-wrap: break-word; white-space: normal;">Derived from <code>sed_bm_demo_edu_001</code></td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Total combined household income</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>rc_mother_income</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">V01 Demo</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Derived from <code>sed_bm_demo_income_002</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Total combined household income</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>rc_mother_income</code></td>
+<td>V01 Demo</td>
+<td style="word-wrap: break-word; white-space: normal;">Derived from <code>sed_bm_demo_income_002</code></td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Recruitment site</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>recruitment_site</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">De-identified value reflecting recruitment sites</td>
+<td style="word-wrap: break-word; white-space: normal;">Recruitment site</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>recruitment_site</code></td>
+<td>Admin</td>
+<td style="word-wrap: break-word; white-space: normal;">De-identified value reflecting recruitment sites</td>
+</tr>
+<tr>
+<td colspan="4" style="word-wrap: break-word; white-space: normal;">
+<b>*Current federal standards:</b> if an individual is identified as Hispanic or Latino based on the response to the ethnicity item, they will be categorized as such, regardless of their race. Individuals who select more than one race are categorized as "multiracial."</td>
 </tr>
 </tbody>
 </table>
-
-
 
