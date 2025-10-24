@@ -254,7 +254,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Unprocessed raw imaging DICOM files will be made publicly available in the interim <a href="../../changelog/pending/#release-11-release-date-tba">Release 1.1</a>. However, raw data converted to the Brain Imaging Data Structure (BIDS) standard is included in HBCD Release 1.0 (<a href="../../datacuration/file-based-data/#raw-bids">see details</a>).</p>
+<p>Unprocessed raw imaging DICOM files will be made publicly available in a <a href="../../changelog/pending/">future release</a>. However, raw data converted to the Brain Imaging Data Structure (BIDS) standard is currently available - see <a href="../../datacuration/file-based-data/#raw-bids">Raw BIDS</a>.</p>
 </div>
 
 <div id="faq-dmri" class="notification-banner" onclick="toggleCollapse(this)">
@@ -268,7 +268,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Raw dMRI gradient tables can be found in the <code>raw/</code> folder containing raw data standardized to the Brain Imaging Data Structure (BIDS). See <a href="../../datacuration/overview">here</a> for an overview of BIDS and <a href="../../instruments/mri/dmri/#rawbids">here</a> for details of raw dMRI data. Processed gradient tables, adjusted for head rotation, are additionally provided in the <a href="../../instruments/mri/dmri/#qsiprep">QSIPrep derivatives</a>.</p>
+<p>Raw dMRI gradient tables are located in the raw BIDS data - see <a href="../../instruments/mri/dmri/#rawbids">Raw BIDS Files (<code>dwi/</code>)</a>. Processed gradient tables, adjusted for head rotation, are additionally provided in the <a href="../../instruments/mri/dmri/#qsiprep">QSIPrep derivatives</a>.</p>
 </div>
 
 <div id="faq-fmap" class="notification-banner" onclick="toggleCollapse(this)">
