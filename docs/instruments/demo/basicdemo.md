@@ -60,137 +60,131 @@ Basic Demographics is a **derived measure** with information computed from:
 
 Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.). *However*, if only V01 data for a given participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about the child will be missing, as the child is not born until after the V01 visit (all variables about the child are available beginning with V02).
 
-
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
-    <thead>
-      <tr>
-        <th>Construct</th>
-        <th>Variable Name</th>
-        <th>Source</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<thead>
+  <tr>
+    <th style="width: 10%;">Variable</th>
+    <th style="width: 80%;">Description</th>
+  </tr>
+</thead>
+<tbody>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Maternal Age at V01 (MAV01)</td>
 <td><code>mother_age_v01</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;">Birth parent's age - <a href="../../agevariables/#basic-demographics">see details</a></td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Maternal Age at V01 (MAV01)</b><br>Birth parent's age - <a href="../../agevariables/#basic-demographics">see details</a>. <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Maternal Age at Delivery (MAD)</td>
 <td><code>mother_age_delivery</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;">Birth parent's age at time of child's delivery - <a href="../../agevariables/#basic-demographics">see details</a></td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Maternal Age at Delivery (MAD)</b><br>Birth parent's age at time of child's delivery - <a href="../../agevariables/#basic-demographics">see details</a>. <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Gestational Age at Delivery (GAD)</td>
 <td><code>gestational_age_delivery</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;">Age of the child at delivery - <a href="../../agevariables/#basic-demographics">see details</a></td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Gestational Age at Delivery (GAD)</b><br>
+    Age of the child at delivery - <a href="../../agevariables/#basic-demographics">see details</a>. <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td>Child sex</td>
 <td><code>sex</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-left"><i>Visit V02 onward</i><span class="tooltiptext">Data are not collected prior to birth, i.e. at the prenatal V01 visit, and will be available starting at visit V02</span></span></td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Child sex</b><br>
+    Available for Visit V02 onward (post-birth). <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td>Child ethnicity</td>
 <td><code>child_ethnicity</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;"><a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>-standard ethnicity item. Available for Visit V02 onward (post-birth)</td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Child ethnicity</b><br>
+    <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>-standard ethnicity item. Available for Visit V02 onward (post-birth). <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td>Child race</td>
 <td><code>child_race</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;"><a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>-standard race item. Available for Visit V02 onward (post-birth).</td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Child race</b><br>
+    <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>-standard race item. Available for Visit V02 onward (post-birth). <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Child race & ethnicity - multiracial aggregation by Hispanic/non-Hispanic</td>
-<td><code>child_ethnoracial_acs_by_multi_ethnicity</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from <code>child_race</code> and <code>child_ethnicity</code> based on <b>current federal standards.*</b> Multiracial individuals are subcategorized based on whether <i>Hispanic</i> is one of their selected identities. Available for Visit V02 onward (post-birth)</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>child_ethnoracial_acs_<br>by_multi_ethnicity</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+     <b>Child race & ethnicity - multiracial aggregation by Hispanic/non-Hispanic</b><br>
+     Constructed from <code>child_race</code> and <code>child_ethnicity</code> based on <b>current federal standards.*</b> Multiracial individuals are subcategorized based on whether <i>Hispanic</i> is one of their selected identities. Available for Visit V02 onward (post-birth). <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Mother ethnicity</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>screen_mother_ethnicity</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;">Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item about ethnic identity collected during screening.</td>
+<td><code>screen_mother_ethnicity</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Mother ethnicity</b><br>
+    Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item about ethnic identity collected during screening. <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Mother race, multi-categorical</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>screen_mother_race</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;">Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item/question about racial identity collected during screening.</td>
+<td><code>screen_mother_race</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Mother race, multi-categorical</b><br>
+    Participant response to <a href="https://www.census.gov/programs-surveys/acs.html">ACS</a> item/question about racial identity collected during screening. <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity - multiracial aggregation by Hispanic/non-Hispanic</td>
-<td><code>screen_mother_ethnoracial_acs_by_multi_ethnicity</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses based on <b>current federal standards.*</b> Multiracial individuals are subcategorized based on whether <i>Hispanic</i> is one of their selected identities.</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>screen_mother_ethnoracial_acs_<br>by_multi_ethnicity</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Mother race & ethnicity - multiracial aggregation by Hispanic/non-Hispanic</b><br>
+    Constructed from screening race/ethnicity responses based on <b>current federal standards.*</b> Multiracial individuals are subcategorized based on whether <i>Hispanic</i> is one of their selected identities. <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity - multiracial aggregation by Black/non-Black</td>
-<td><code>screen_mother_ethnoracial_acs_by_multi_race</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses based on <b>current federal standards.*</b> Multiracial individuals are subcategorized based on whether <i>Black/African American</i> is one of their selected identities.</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>screen_mother_ethnoracial_acs_<br>by_multi_race</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Mother race & ethnicity - multiracial aggregation by Black/non-Black</b><br>
+    Constructed from screening race/ethnicity responses based on <b>current federal standards.*</b> Multiracial individuals are subcategorized based on whether <i>Black/African American</i> is one of their selected identities. <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Mother race and ethnicity</td>
-<td style="word-break: break-all; white-space: normal;"><code>rc_mother_ethnoracial_aou_race_ethnicity</code></td>
-<td>V01 Demo</td>
-<td style="word-wrap: break-word; white-space: normal;">Derived from single <a class="in-cell-link" href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">All of Us</a> race and ethnicity item scored following <a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">OMB</a> standards: Anyone identifying as Hispanic/Latino (alone or with another group) is categorized as Hispanic/Latino; all others as non-Hispanic.</td>
+<td style="word-break: break-all; white-space: normal;"><code>rc_mother_ethnoracial_<br>aou_race_ethnicity</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Mother race & ethnicity</b><br>
+    Derived from single <a class="in-cell-link" href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">All of Us</a> race and ethnicity item scored following <a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">OMB</a> standards: Anyone identifying as Hispanic/Latino (alone or with another group) is categorized as Hispanic/Latino; all others as non-Hispanic. <i>Source: HBCD Demographics</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Mother race, indicator variables from screening</td>
 <td style="word-break: break-all; white-space: normal;"><code>screen_mother_race_multi___{0 - 5}</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;">Indicator variables from ACS race question:<br>
-0 = White<br>
-1 = Black or African American<br>
-2 = American Indian or Alaskan Native<br>
-3 = Asian<br>
-4 = Native Hawaiian or other Pacific Islander<br>
-5 = Other race</td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Mother race, indicator variables from screening</b><br>
+    Indicator variables from ACS race question:<br>
+    0 = White<br>
+    1 = Black or African American<br>
+    2 = American Indian or Alaskan Native<br>
+    3 = Asian<br>
+    4 = Native Hawaiian or other Pacific Islander<br>
+    5 = Other race<br>
+    <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Mother race, indicator variables from survey item</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>rc_mother_race___{0 - 7}</code></td>
-<td>V01 Demo</td>
-<td style="word-wrap: break-word; white-space: normal;">Indicator variables for responses to <a class="in-cell-link" href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">All of Us</a> combined race and ethnicity question:<br>
-0 = American Indian or Alaskan Native<br>
-1 = Asian<br>
-2 = Black, African American, or African<br>
-3 = Hispanic, Latino, or Spanish<br>
-4 = Middle Eastern or North African<br>
-5 = Native Hawaiian or other Pacific Islander<br>
-6 = White<br>
-7 = None of these fully describe me</td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Mother race, indicator variables from survey item</b><br>
+    Indicator variables for responses to <a class="in-cell-link" href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">All of Us</a> combined race and ethnicity question:<br>
+    0 = American Indian or Alaskan Native<br>
+    1 = Asian<br>
+    2 = Black, African American, or African<br>
+    3 = Hispanic, Latino, or Spanish<br>
+    4 = Middle Eastern or North African<br>
+    5 = Native Hawaiian or other Pacific Islander<br>
+    6 = White<br>
+    7 = None of these fully describe me<br>
+    <i>Source: HBCD Demographics</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Mother education</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>rc_mother_education</code></td>
-<td>V01 Demo</td>
-<td style="word-wrap: break-word; white-space: normal;">Derived from <code>sed_bm_demo_edu_001</code></td>
+<td><code>rc_mother_education</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Mother education</b><br>
+    Derived from <code>sed_bm_demo_edu_001</code>. <i>Source: HBCD Demographics</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Total combined household income</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>rc_mother_income</code></td>
-<td>V01 Demo</td>
-<td style="word-wrap: break-word; white-space: normal;">Derived from <code>sed_bm_demo_income_002</code></td>
+<td><code>rc_mother_income</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Total combined household income</b><br>
+    Derived from <code>sed_bm_demo_income_002</code>. <i>Source: HBCD Demographics</i></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Recruitment site</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>recruitment_site</code></td>
-<td>Admin</td>
-<td style="word-wrap: break-word; white-space: normal;">De-identified value reflecting recruitment sites</td>
+<td><code>recruitment_site</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+    <b>Recruitment site</b><br>
+    De-identified value reflecting recruitment sites. <i>Source: Admin</i></td>
 </tr>
 <tr>
-<td colspan="4" style="word-wrap: break-word; white-space: normal;">
+<td colspan="2" style="word-wrap: break-word; white-space: normal;">
 <b>*Current federal standards:</b> if an individual is identified as Hispanic or Latino based on the response to the ethnicity item, they will be categorized as such, regardless of their race. Individuals who select more than one race are categorized as "multiracial."</td>
 </tr>
 </tbody>
 </table>
-
