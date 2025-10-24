@@ -64,7 +64,7 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <thead>
   <tr>
     <th style="width: 10%;">Variable</th>
-    <th style="width: 80%;">Description</th>
+    <th style="width: 80%;">Variable Name & Description</th>
   </tr>
 </thead>
 <tbody>
