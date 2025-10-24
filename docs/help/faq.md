@@ -310,13 +310,12 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Only imaging data that have passed quality control (QC) and compliance checks are included in this release. To help researchers make informed decisions, QC metrics are provided in various formats. Please refer to the following sections in the Release Notes for more details:</p>
+<p>All imaging data are provided in the release data, including data that failed raw data quality control (QC) (and compliance checks?). To help researchers make informed decisions, QC metrics are provided in various formats:</p>
 <b>Raw Imaging Data:</b> 
 <ul>
-<li>Only data that meet QC standards, as described in <a href="../../instruments/mri/qc/#raw-mr-data-qc">Raw MR Data QC</a>, are included.</li>
 <li>QC metrics for raw data are available in the <code>sub-{ID}_ses-{V0X}_scans.tsv</code> file within each subject session folder under <code>rawdata/</code>.</li>
 <li>Additional exclusion criteria include <a href="../../instruments/mri/qc/#data-release-eligibility-criteria">acquisition parameter checks</a> and <a href="../../instruments/processing/#file-selection-for-processing">processing pipeline requirements</a>.</li>
-<li>Structural and functional MRI data undergo MRIQC processing to generate image quality metrics. See the <a href="../../instruments/mri/smri/#mriqc">sMRI</a> and <a href="../../instruments/mri/fmri/#mriqc">sMRI</a> MRIQC derivatives</a> for more information. Researchers may use these outputs for further curation if needed.</li>
+<li>Structural and functional MRI data undergo MRIQC processing to generate image quality metrics. See the <a href="../../instruments/mri/smri/#mriqc">sMRI</a> and <a href="../../instruments/mri/fmri/#mriqc">sMRI</a> MRIQC derivatives</a> for more information. Researchers may use these outputs for further curation if desired.</li>
 </ul>
 <b>Processed ("Derivative") Imaging Data:</b> 
 <ul>
