@@ -78,5 +78,3 @@ Visit information also includes **substance use flags**, which are single summar
 </tbody>
 </table>
 </div>
-
-<br>

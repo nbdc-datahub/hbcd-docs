@@ -4,7 +4,13 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
-/* styling text to make more subtle, e.g. "Click to Expand"*/
+/* Add space above the bottom navigation buttons */
+.rst-footer-buttons {
+  margin-top: 3em; 
+}
+
+
+/* styling text to make more subtle, e.g. "Click to Expand" */
 .hint {
   color: #888;
   font-size: 1rem;

@@ -149,9 +149,3 @@ Follow the naming convention <code>domain_pipeline_derivative</code>, where:
     - <code>derivative</code>: basename of the derivative output files sourced across participants to generate the tabulated data
  - **Administrative and summary score** ([see details](#administrative-summary-score-variables)) variables often include additional single underscores (e.g. `date_taken`, `summary_score`), but still represent single main components
 
-## Study Design Logic: Child-Centric Data Structure
-
-The HBCD Study organizes data around the Child ID as the central key. All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by:
-
-- **Simplifying child-focused analysis**: Researchers can track each child’s data over time without remapping caregiver information.
-- **Handling multi-birth cases cleanly**: When a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.

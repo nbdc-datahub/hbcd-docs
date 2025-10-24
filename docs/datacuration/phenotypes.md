@@ -53,6 +53,13 @@ Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modalit
 </tbody>
 </table>
 
+### Study Design Logic: Child-Centric Data Structure
+
+The HBCD Study organizes data around the Child ID as the central key, **i.e. a caregiver and their child share the same participant ID.** All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by:
+
+- **Simplifying child-focused analysis**: Researchers can track each child’s data over time without remapping caregiver information.
+- **Handling multi-birth cases cleanly**: When a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.
+
 ## File Types
 
 Tabulated data are available in two formats, **plain text files** (`.tsv`/`.csv`) and **Parquet** (`.parquet`) - [see details](#plain-text-vs-parquet-files) below. Each data table also comes with a **shadow matrix file** (`<instrument_name>_shadow.<tsv|parquet>`), which has the same structure of the corresponding data table, but contains codes explaining why values are missing - [see details](#shadow-matrices-for-missing-data) below. 

@@ -100,39 +100,39 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-  <p>Refer to the resources below for protocol information. Note that specific measures for proprietary instruments are generally not available.</p>
-  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-    <thead class="sr-only">
-      <tr>
-        <th scope="col">Resource</th>
-        <th scope="col">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="https://hbcdstudy.org/study-protocols/">HBCD Study Protocols</a></td>
-        <td style="word-wrap: break-word; white-space: normal;">Available on the main HBCD Study site.</td>
-      </tr>
-      <tr>
-        <td><a href="../../access/download/#explore-download-hbcd-study-data">NBDC Data Access Platform and DEAP Data Dictionary Explorers</a></td>
-        <td style="word-wrap: break-word; white-space: normal;">
-          Show survey questions and response options (see related <a href="../../changelog/knownissues/#instruction-metadata-caution-please-read-carefully">known issue</a>).
-        </td>
-      </tr>
-      <tr>
-        <td><a href="../../instruments/#instruments-by-domain">HBCD Study Instrument Documentation</a></td>
-        <td style="word-wrap: break-word; white-space: normal;">
-          Each instrument has a dedicated page on this site with links to source documentation and available surveys. Click instrument names in the domain tables to view their documentation pages.
-        </td>
-      </tr>
-      <tr>
-        <td><a href="https://www.sciencedirect.com/special-issue/10VNSS1BBLV">DCN Special Issue on HBCD</a></td>
-        <td style="word-wrap: break-word; white-space: normal;">
-          A collection of articles describing the HBCD study design and protocol development for specific measures.
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<p>Refer to the resources below for protocol information. Note that specific measures for proprietary instruments are generally not available.</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead class="sr-only">
+  <tr>
+    <th scope="col">Resource</th>
+    <th scope="col">Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><a href="https://hbcdstudy.org/study-protocols/">HBCD Study Protocols</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Available on the main HBCD Study site.</td>
+  </tr>
+  <tr>
+    <td><a href="../../access/download/#explore-download-hbcd-study-data">Data Dictionary Explorers</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">
+      Data dictionary explorers available through the NBDC Data Access Platform and DEAP show survey questions and response options (see related <a href="../../changelog/knownissues/#instruction-metadata-caution-please-read-carefully">known issue</a>).
+    </td>
+  </tr>
+  <tr>
+    <td><a href="../../instruments/#instruments-by-domain">HBCD Docs</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">
+      Each instrument has a dedicated page on this site with links to source documentation and available surveys. Click instrument names in the domain tables to view their documentation pages.
+    </td>
+  </tr>
+  <tr>
+    <td><a href="https://www.sciencedirect.com/special-issue/10VNSS1BBLV">DCN Special Issue on HBCD</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">
+      A collection of articles describing the HBCD study design and protocol development for specific measures.
+    </td>
+  </tr>
+</tbody>
+</table>
 </div>
 
 ## Release Data
@@ -148,7 +148,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>HBCD Study data includes data in both tabulated and file-based formats. <b>Tabulated data</b> is in a standardized table format, with one table provided for all participant data per measure, and includes instrument data (e.g., demographics, behavior, environmental determinants, etc.) as well as data derived from the file-based data. <b>File-based data</b> are imaging and biosignal data provided in varied formats depending on the modality. This includes MRI & MRS, EEG, and wearable sensor recordings. See the section on <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a further details, including the section: <a href="../../datacuration/phenotypes/#warning" target="_blank">Which file-based data are also available as tabulated data?</a>.</p>
+<p>HBCD Study data includes data in both tabulated and file-based formats. <b>Tabulated data</b> is in a standardized table format, with one table provided for all participant data per measure, and includes instrument data (e.g., demographics, behavior, environmental determinants, etc.) as well as data derived from the file-based data. <b>File-based data</b> are imaging and biosignal data provided in varied formats depending on the modality. This includes MRI & MRS, EEG, and wearable sensor recordings. See <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a further details, including <a href="../../datacuration/overview/#warning" target="_blank">Which file-based data are also available as tabulated data?</a>.</p>
 </div>
 
 <div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">
@@ -162,7 +162,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>The <b>source</b> element in the <a href="../../access/metadata/#nbdc-data-dictionary">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../access/metadata/#naming-conventions">Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../access/metadata/#study-design-logic-child-centric-data-structure">here</a>.</p>
+<p>The <b>source</b> element in the <a href="../../access/metadata/">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../access/naming-conventions" target="_blank">Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../datacuration/phenotypes/#study-design-logic-child-centric-data-structure">here</a>.</p>
 </div>
 
 <div id="faq-age" class="notification-banner" onclick="toggleCollapse(this)">
@@ -176,7 +176,13 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Fields reporting age include global, single-point (i.e. static) variables in <b>Basic Demographics</b> (see <a href="../../instruments/demo/basicdemo">here</a>), <b>instrument-specific variables</b> for age in <span class="tooltip tooltip-right">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> that vary depending on the date of administration for a given instrument, and age variables for raw <span class="tooltip tooltip-right">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> that vary based on date of acquisition. See full details under <a href="../../instruments/agevariables">Age Variable Definitions</a>.</p>
+<p>See <a href="../../instruments/agevariables">Age Variable Definitions</a> for full documentation. In brief:
+  <ul>
+  <li><b>Global, single-point variables</b> in <i>Basic Demographics</i> represent static age values.</li>
+  <li><b>Instrument-specific variables</b> represent age at the time of administration and may vary across instruments.</li>
+  <li><b>Raw BIDS metadata</b> (MRI, EEG, and wearable sensor data) age fields report age based on the date of data acquisition.</li>
+  </ul>
+</p>
 </div>
 
 <div id="faq-underscores" class="notification-banner" onclick="toggleCollapse(this)">
@@ -190,9 +196,8 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Instrument table and field names may contain either single or double underscores. Single underscores separate main naming components (e.g. the domain or source of the data) while double underscores separate subcomponents that provide additional details nested within the main naming components. See the section of <a href="../../access/metadata/#naming-conventions">Naming Conventions</a> for full details.
+<p>Instrument table and field names may contain either single or double underscores. Single underscores separate main naming components (e.g. the domain or source of the data) while double underscores separate subcomponents that provide additional details nested within the main naming components. See <a href="../../access/naming-conventions/#convention-logic-rules">Naming Conventions</a> for full details.
 </div>
-
 
 ### Imaging Data
 
@@ -210,7 +215,6 @@
 <p>Please see <a href="https://hbcdsequences.readthedocs.io">HBCD Study MRI Protocols</a>.</p>
 </div>
 
-
 <div id="faq-dataproc" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
@@ -223,21 +227,6 @@
 </div>
 <div class="notification-collapsible-content">
 <p>Please refer to the <a href="../../instruments/processing">HBCD Processing Pipelines</a> for an overview of the pipelines and software standards. For full documentation on how each pipeline was used for HBCD processing, please visit the external <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/">HBCD Processing</a> page.</p>
-</div>
-
-<div id="faq-noV03" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text-with-link">
-    <span class="text">Why is only V02 data available for some of the MRI processing pipelines?</span>
-    <a class="anchor-link" href="#faq-noV03" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-    </a>
-    </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="notification-collapsible-content">
-<p>The full MRI processing workflow includes <a href="../../instruments/mri/smri/#bibsnet" target="_blank">BIBSNet</a> (deep learning model-derived brain segmentation), <a href="../../instruments/mri/fmri/#nibabies" target="_blank">Infant fMRIPrep/Nibabies</a> (structural and functional preprocessing), and <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a> (functional post-processing and noise regression). The current release includes V02 and V03 BIBSNet derivatives, but only V02 derivatives for the remaining pipelines.</p> 
-<p><a href="../../instruments/mri/qc/#brainswipes" target="_blank">BrainSwipes</a> quality control results generated from XCP-D visual reports also only include V02 as a result. Also note that at this age range, Infant fMRIPrep performs T2w-based surface reconstruction using M-CRIB-S, so T1w surface delineation and atlas registration QC is missing from BrainSwipes. However, the T1w, if present, was still used to inform the brain segmentation generated in BIBSNet, which is provided as an external input to Infant fMRIPrep processing.</p>
 </div>
 
 <div id="faq-FS" class="notification-banner" onclick="toggleCollapse(this)">
@@ -337,7 +326,6 @@
 </ul>
 </div>
 
-
 <div id="faq-fov" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
@@ -351,5 +339,3 @@
 <div class="notification-collapsible-content">
 <p>Due to the relatively limited brain coverage in dMRI and fMRI acquisitions, the superior or inferior edges of the brain may occasionally fall outside the slice stack, referred to as field of view (FOV) cutoff. In cases where the cutoff is extreme (>30% of the image), the dMRI and fMRI series fail QC and are therefore excluded from inclusion in the data release. However, mild (&lt;10%) to moderate (10–30%) FOV cutoff does not lead to QC failure. Brain regions outside of the FOV will have missing values in the <span class="tooltip">tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> imaging data, but the remaining areas remain usable. Automated post-processing QC metrics provide measurements of superior and inferior FOV cutoff, which researchers use for the exclusion of participants with significant FOV cutoff from analyses. See <a href="../../instruments/mri/qc/#hbcd-raw-mri-data-qc">HBCD Raw MRI Data QC</a> in the Release Notes for a description of automated and manual quality control procedures for raw imaging data.</p>
 </div>
-
-<br>
