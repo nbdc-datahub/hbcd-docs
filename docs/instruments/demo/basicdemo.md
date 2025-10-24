@@ -60,6 +60,8 @@ Basic Demographics is a **derived measure** with information computed from:
 
 Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.). *However*, if only V01 data for a given participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about the child will be missing, as the child is not born until after the V01 visit (all variables about the child are available beginning with V02).
 
+### Sex & Age
+
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
 <thead>
   <tr>
@@ -88,6 +90,21 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
     <b>Child sex</b><br>
     Available for Visit V02 onward (post-birth). <i>Source: Admin</i></td>
 </tr>
+</tbody>
+</table>
+
+### Race & Ethnicity
+
+**Note:** With the exception of `rc_mother_ethnoracial_aou_race_ethnicity` (only constructed for the birth parent, following OMB standards as described in the table below), variables that combine race and ethnicity are constructed from separate race and ethnicity variables following **current federal standards:** if an individual is identified as Hispanic or Latino based on the response to the ethnicity item, they will be categorized as such, regardless of their race. Individuals who select more than one race are categorized as "multiracial." Multiracial individuals are subcategorized by ethnicity (`*_acs_by_multi_ethnicity`) vs race (`*_acs_by_multi_race`) as described below.
+
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<thead>
+  <tr>
+    <th style="width: 10%;">Variable</th>
+    <th style="width: 80%;">Variable Name & Description</th>
+  </tr>
+</thead>
+<tbody>
 <tr>
 <td><code>child_ethnicity</code></td>
 <td style="word-wrap: break-word; white-space: normal;">
@@ -164,6 +181,19 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
     7 = None of these fully describe me<br>
     <i>Source: HBCD Demographics</i></td>
 </tr>
+</tbody>
+</table>
+
+### Other
+
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<thead>
+  <tr>
+    <th style="width: 10%;">Variable</th>
+    <th style="width: 80%;">Variable Name & Description</th>
+  </tr>
+</thead>
+<tbody>
 <tr>
 <td><code>rc_mother_education</code></td>
 <td style="word-wrap: break-word; white-space: normal;">
@@ -181,10 +211,6 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <td style="word-wrap: break-word; white-space: normal;">
     <b>Recruitment site</b><br>
     De-identified value reflecting recruitment sites. <i>Source: Admin</i></td>
-</tr>
-<tr>
-<td colspan="2" style="word-wrap: break-word; white-space: normal;">
-<b>*Current federal standards:</b> if an individual is identified as Hispanic or Latino based on the response to the ethnicity item, they will be categorized as such, regardless of their race. Individuals who select more than one race are categorized as "multiracial."</td>
 </tr>
 </tbody>
 </table>
