@@ -317,11 +317,11 @@
 <li>Additional exclusion criteria include <a href="../../instruments/mri/qc/#data-release-eligibility-criteria">acquisition parameter checks</a> and <a href="../../instruments/processing/#file-selection-for-processing">processing pipeline requirements</a>.</li>
 <li>Structural and functional MRI data undergo MRIQC processing to generate image quality metrics. See the <a href="../../instruments/mri/smri/#mriqc">sMRI</a> and <a href="../../instruments/mri/fmri/#mriqc">sMRI</a> MRIQC derivatives</a> for more information. Researchers may use these outputs for further curation if desired.</li>
 </ul>
-<b>Processed ("Derivative") Imaging Data:</b> 
+<b>Processed Imaging Data (Derivatives):</b> 
 <ul>
-<li>Included raw data are processed through pipelines that generate analysis-ready derivatives.</li>
+<li>Raw data that pass QC are processed through pipelines that generate analysis-ready derivatives - see <a href="../../instruments/processing/#file-selection-for-processing" target="_blank">File Selection for Processing</a>.</li>
 <li>Processing pipelines, such as <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a> (for structural and functional MRI) and <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> (for diffusion MRI), produce visual reports that can help guide data selection.</li>
-<li>Visual QC is performed on these reports using <a href="../../instruments/mri/qc/#brainswipes">BrainSwipes</a>, and the results are available in the BIDS <a href="../../datacuration/phenotypes">phenotype/</a> folder.</li>
+<li>Visual QC is performed on these reports using <a href="../../instruments/mri/qc/#brainswipes">BrainSwipes</a>, and the results are available as <a href="../../datacuration/phenotypes">tabulated data</a>.</li>
 </ul>
 </div>
 
