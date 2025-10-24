@@ -114,7 +114,7 @@
         <td style="word-wrap: break-word; white-space: normal;">Available on the main HBCD Study site.</td>
       </tr>
       <tr>
-        <td><a href="../../access/download/#explore-download-hbcd-study-data">Lasso and DEAP Data Dictionary Explorers</a></td>
+        <td><a href="../../access/download/#explore-download-hbcd-study-data">NBDC Data Access Platform and DEAP Data Dictionary Explorers</a></td>
         <td style="word-wrap: break-word; white-space: normal;">
           Show survey questions and response options (see related <a href="../../changelog/knownissues/#instruction-metadata-caution-please-read-carefully">known issue</a>).
         </td>
