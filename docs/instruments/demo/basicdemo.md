@@ -108,9 +108,11 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 </tbody>
 </table>
 
-### Race & Ethnicity Variables
+#### ACS Race & Ethnicity Variables 
 
-#### Derived from [ACS](https://www.census.gov/programs-surveys/acs.html) Administrative Records Collected During Screening
+The following variables are derived from administrative records collected during screening via the American Community Survey ([ACS](https://www.census.gov/programs-surveys/acs.html)). Combined race and ethnicity variables are constructed as follows:
+
+<span class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">noted in table below</span></span> **Current federal standards**: If an individual is identified as Hispanic or Latino based on the response to the ethnicity item, they will be categorized as such, regardless of their race. Individuals who select more than one race are categorized as **multiracial**. Multircial participants are subcategorized by **ethnicity** (`*_acs_by_multi_ethnicity`) based on whether <i>Hispanic</i> is one of their selected identities (<i>Hispanic</i>/<i>non-Hispanic</i>) and **race** based on whether <i>Black/African American</i> is one of their selected identities (<i>Black/African American</i>/<i>non-Black/African American</i>).
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -135,7 +137,7 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Child race & ethnicity- multiracial aggregation by ethnicity <i class="fa-solid fa-baby"></i></td>
 <td><code>child_ethnoracial_<br>acs_by_multi_ethnicity</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <a href="#fedstandards">current federal standards</a>, with multiracial individuals subcategorized based on ethnicity.<br>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <b>current federal standards</b> <span class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">Described above</span></span>, with multiracial individuals subcategorized by ethnicity.<br>
 <i>Available V02 onward (post-birth)</i></td>
 </tr>
 <tr>
@@ -151,12 +153,12 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity- multiracial aggregation by ethnicity</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>screen_mother_ethnoracial_<br>acs_by_multi_ethnicity</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <a href="#fedstandards">current federal standards</a>, with multiracial individuals subcategorized based on ethnicity.</td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <b>current federal standards</b> <span class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">Described above</span></span>, with multiracial individuals subcategorized by ethnicity.</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity- multiracial aggregation by race</td>
 <td><code>screen_mother_ethnoracial_<br>acs_by_multi_race</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <a href="#fedstandards">current federal standards</a>, with multiracial individuals subcategorized based on race.</td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <b>current federal standards</b> <span class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">Described above</span></span>, with multiracial individuals subcategorized by race.</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race indicator variables (0-5)</td>
@@ -172,26 +174,10 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 </tbody>
 </table>
 
-<div id="fedstandards" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text-with-link">
-  <span class="text">Current Federal Standards for Combined Race/Ethnicity</span>
-  <a class="anchor-link" href="#fedstandards" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>If an individual is identified as Hispanic or Latino based on the response to the ethnicity item, they will be categorized as such, regardless of their race. Individuals who select more than one race are categorized as <b>multiracial</b> and subcategorized by ethnicity  and race as follows:
-<ul>
-  <li>Ethnicity (<code>*_acs_by_multi_ethnicity</code>): whether <i>Hispanic</i> is one of their selected identities</li>
-  <li>Race (<code>*_acs_by_multi_race</code>): whether <i>Black/African American</i> is one of their selected identities</li>
-</ul>
-</div>
-<p></p>
 
-#### Derived from All of US ([AOU](https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations)) Item Collected as part of HBCD Demographics Instrument
+#### AOU Race & Ethnicity Variables
+
+The following race and ethnicity variables are derived from a single All of US ([AOU](https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations)) race and ethnicity item scored following **[OMB](https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards) standards:** *Anyone identifying as Hispanic/Latino (alone or with another group) is categorized as Hispanic/Latino and all others as non-Hispanic.*
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -206,11 +192,11 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <td>Mother race & ethnicity</td>
 <td><code>rc_mother_ethnoracial_<br>aou_race_ethnicity</code></td>
 <td style="word-wrap: break-word; white-space: normal;">
-Derived from single All of Us race and ethnicity item scored following <a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">OMB</a> standards: Anyone identifying as Hispanic/Latino (alone or with another group) is categorized as Hispanic/Latino; all others as non-Hispanic.</td>
+Derived from single All of Us race and ethnicity item scored following <b>OMB standards <i>(described above)</i></b></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Mother race, indicator variables from survey item</td>
-<td><code>rc_mother_race___{0 - 7}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Mother race, indicator<br>variables from survey item</td>
+<td><code>rc_mother_race___{0-7}</code></td>
 <td style="word-wrap: break-word; white-space: normal;">
 Indicator variables for All of Us combined race/ethnicity question:<br>
     0 = American Indian or Alaskan Native<br>
