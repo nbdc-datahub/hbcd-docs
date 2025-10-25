@@ -112,7 +112,7 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 
 The following variables are derived from administrative records collected during screening via the American Community Survey ([ACS](https://www.census.gov/programs-surveys/acs.html)). Combined race and ethnicity variables are constructed as follows:
 
-<span class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">noted in table below</span></span> **Current federal standards**: If an individual is identified as Hispanic or Latino based on the response to the ethnicity item, they will be categorized as such, regardless of their race. Individuals who select more than one race are categorized as **multiracial**. Multircial participants are subcategorized by **ethnicity** (`*_acs_by_multi_ethnicity`) based on whether <i>Hispanic</i> is one of their selected identities (<i>Hispanic</i>/<i>non-Hispanic</i>) and **race** based on whether <i>Black/African American</i> is one of their selected identities (<i>Black/African American</i>/<i>non-Black/African American</i>).
+**Current federal standards**: If an individual is identified as Hispanic or Latino based on the response to the ethnicity item, they will be categorized as such, regardless of their race. Individuals who select more than one race are categorized as **multiracial**. Multircial participants are subcategorized by **ethnicity** (`*_acs_by_multi_ethnicity`) based on whether <i>Hispanic</i> is one of their selected identities (<i>Hispanic</i>/<i>non-Hispanic</i>) and **race** based on whether <i>Black/African American</i> is one of their selected identities (<i>Black/African American</i>/<i>non-Black/African American</i>).
 
 <table class="compact-table-no-vertical-lines">
 <thead>
