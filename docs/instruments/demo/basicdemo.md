@@ -108,7 +108,7 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 </tbody>
 </table>
 
-#### ACS Race & Ethnicity Variables 
+### ACS Race & Ethnicity Variables 
 
 The following variables are derived from administrative records collected during screening via the American Community Survey ([ACS](https://www.census.gov/programs-surveys/acs.html)). Combined race and ethnicity variables are constructed as follows:
 
@@ -175,7 +175,7 @@ The following variables are derived from administrative records collected during
 </table>
 
 
-#### AOU Race & Ethnicity Variables
+### AOU Race & Ethnicity Variables
 
 The following race and ethnicity variables are derived from a single All of US ([AOU](https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations)) race and ethnicity item scored following **[OMB](https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards) standards:** *Anyone identifying as Hispanic/Latino (alone or with another group) is categorized as Hispanic/Latino and all others as non-Hispanic.*
 
