@@ -109,14 +109,11 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 </table>
 
 ### ACS Race & Ethnicity Variables 
-The following variables are derived from administrative records collected during screening using the American Community Survey ([ACS](https://www.census.gov/programs-surveys/acs.html)).
-<p style="margin-bottom: 0; padding-bottom: 0;">
-<b>Combined race and ethnicity variables follow current federal standards:</b><br>
-Participants who identify as <i>Hispanic or Latino</i> in the ACS are categorized as such regardless of their race. Individuals selecting more than one race are categorized as <b>multiracial</b>, with subcategories defined by:</p>
-<ul style="margin-top: 0; padding-top: 0;">
-<li><strong>Ethnicity</strong> (<code>*_acs_by_multi_ethnicity</code>): <em>Hispanic</em> vs. <em>non-Hispanic</em></li>
-<li><strong>Race</strong> (<code>*_acs_by_multi_race</code>): <em>Black/African American</em> vs. <em>non-Black/African American</em></li>
-</ul>
+
+The following variables are derived from administrative records collected during screening using the [ACS](https://www.census.gov/programs-surveys/acs.html).     
+**Current federal standards** are used to combined race and ethnicity variables derived from administrative records: Participants who identify as *Hispanic or Latino* in the ACS are categorized as such regardless of their race. Individuals selecting more than one race are categorized as **multiracial**, with subcategories defined by **ethnicity** (*Hispanic* vs. *non-Hispanic*) and **race** (*Black/African American* vs. *non-Black/African American*).
+
+<p></p>
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -131,17 +128,17 @@ Participants who identify as <i>Hispanic or Latino</i> in the ACS are categorize
 <tr>
 <td>Child ethnicity <i class="fa-solid fa-baby"></i></td>
 <td><code>child_ethnicity</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Standard ACS ethnicity item. <i>Available V02 onward (post-birth)</i></td>
+<td style="word-wrap: break-word; white-space: normal;">ACS ethnicity item. <i>Available V02 onward (post-birth)</i></td>
 </tr>
 <tr>
 <td>Child race <i class="fa-solid fa-baby"></i></td>
 <td><code>child_race</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Standard ACS race item. <i>Available V02 onward (post-birth)</i></td>
+<td style="word-wrap: break-word; white-space: normal;">ACS race item. <i>Available V02 onward (post-birth)</i></td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Child race & ethnicity- multiracial aggregation by ethnicity <i class="fa-solid fa-baby"></i></td>
 <td><code>child_ethnoracial_<br>acs_by_multi_ethnicity</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <b>current federal standards</b> <span class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">Described above</span></span>, with multiracial individuals subcategorized by ethnicity.<br>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <b>current federal standards</b> (<a href="#acs-race-ethnicity-variables">described above</a>), with multiracial individuals subcategorized by ethnicity.<br>
 <i>Available V02 onward (post-birth)</i></td>
 </tr>
 <tr>
@@ -157,12 +154,12 @@ Participants who identify as <i>Hispanic or Latino</i> in the ACS are categorize
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity- multiracial aggregation by ethnicity</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>screen_mother_ethnoracial_<br>acs_by_multi_ethnicity</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <b>current federal standards</b> <span class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">Described above</span></span>, with multiracial individuals subcategorized by ethnicity.</td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <b>current federal standards</b> (<a href="#acs-race-ethnicity-variables">described above</a>), with multiracial individuals subcategorized by ethnicity.</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity- multiracial aggregation by race</td>
 <td><code>screen_mother_ethnoracial_<br>acs_by_multi_race</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <b>current federal standards</b> <span class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">Described above</span></span>, with multiracial individuals subcategorized by race.</td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <b>current federal standards</b> (<a href="#acs-race-ethnicity-variables">described above</a>), with multiracial individuals subcategorized by race.</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race indicator variables (0-5)</td>
@@ -180,7 +177,7 @@ Participants who identify as <i>Hispanic or Latino</i> in the ACS are categorize
 
 ### AOU Race & Ethnicity Variables
 
-The following race and ethnicity variables are derived from a single All of US ([AOU](https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations)) race and ethnicity item scored following **[OMB](https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards) standards:** *Anyone identifying as Hispanic/Latino (alone or with another group) is categorized as Hispanic/Latino and all others as non-Hispanic.*
+The following race and ethnicity variables are derived from a single All of US ([AOU](https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations)) race and ethnicity item derived from the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics instrument (Adult)</a>.
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -195,7 +192,7 @@ The following race and ethnicity variables are derived from a single All of US (
 <td>Mother race & ethnicity</td>
 <td><code>rc_mother_ethnoracial_<br>aou_race_ethnicity</code></td>
 <td style="word-wrap: break-word; white-space: normal;">
-Derived from single All of Us race and ethnicity item scored following <b>OMB standards <i>(described above)</i></b></td>
+Derived from single All of Us race and ethnicity item scored following <a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">OMB</a> standards: <i>Anyone identifying as Hispanic/Latino (alone or with another group) is categorized as Hispanic/Latino and all others as non-Hispanic.</i></td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race, indicator<br>variables from survey item</td>
