@@ -109,10 +109,14 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 </table>
 
 ### ACS Race & Ethnicity Variables 
-
-The following variables are derived from administrative records collected during screening via the American Community Survey ([ACS](https://www.census.gov/programs-surveys/acs.html)). Combined race and ethnicity variables are constructed as follows:
-
-**Current federal standards**: If an individual is identified as Hispanic or Latino based on the response to the ethnicity item, they will be categorized as such, regardless of their race. Individuals who select more than one race are categorized as **multiracial**. Multircial participants are subcategorized by **ethnicity** (`*_acs_by_multi_ethnicity`) based on whether <i>Hispanic</i> is one of their selected identities (<i>Hispanic</i>/<i>non-Hispanic</i>) and **race** based on whether <i>Black/African American</i> is one of their selected identities (<i>Black/African American</i>/<i>non-Black/African American</i>).
+The following variables are derived from administrative records collected during screening using the American Community Survey ([ACS](https://www.census.gov/programs-surveys/acs.html)).
+<p style="margin-bottom: 0; padding-bottom: 0;">
+<b>Combined race and ethnicity variables follow current federal standards:</b><br>
+Participants who identify as <i>Hispanic or Latino</i> in the ACS are categorized as such regardless of their race. Individuals selecting more than one race are categorized as <b>multiracial</b>, with subcategories defined by:</p>
+<ul style="margin-top: 0; padding-top: 0;">
+<li><strong>Ethnicity</strong> (<code>*_acs_by_multi_ethnicity</code>): <em>Hispanic</em> vs. <em>non-Hispanic</em></li>
+<li><strong>Race</strong> (<code>*_acs_by_multi_race</code>): <em>Black/African American</em> vs. <em>non-Black/African American</em></li>
+</ul>
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -173,7 +177,6 @@ The following variables are derived from administrative records collected during
 </tr>
 </tbody>
 </table>
-
 
 ### AOU Race & Ethnicity Variables
 
