@@ -4,7 +4,7 @@ Fields reporting age in the <span class="tooltip">tabulated data<span class="too
 
 ## Basic Demographics
 
-<span class="tooltip">Tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> [Basic Demographics](demo/basicdemo.md) data (`sed_basic_demographics`) includes variables derived across instruments, with the following set of variables reporting age. **These are single-point, static variables (i.e. they do not change over time) that should be present and consistent across all visits unless data beyond visit V01 is not available.** 
+[Basic Demographics](demo/basicdemo.md) data (`sed_basic_demographics`) includes variables derived across instruments. Fields reporting age are derived from administrative records collected at screening. **These are single-point, static variables (i.e. they do not change over time) that should be present and consistent across all visits unless data beyond visit V01 is not available.** 
 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
     <thead>
