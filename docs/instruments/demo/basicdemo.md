@@ -136,6 +136,8 @@ Race and ethnicity variables are either computed from administrative records col
 </p>
 
 #### ACS-Derived Variables
+*Race and ethnicity variables computed from administrative records collected during screening using the [ACS](https://www.census.gov/programs-surveys/acs.html).*
+
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
   <tr style="background-color: #f8f9f9;">
@@ -218,6 +220,8 @@ Race and ethnicity variables are either computed from administrative records col
 <p></p>
 
 #### AOU-Derived Variables
+*Computed from a single All of Us (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">AOU</a>) race and ethnicity item collected as part of the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics</a> instrument.*
+
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
   <tr style="background-color: #f8f9f9;">
