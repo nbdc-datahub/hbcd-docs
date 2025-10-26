@@ -7,14 +7,21 @@
 
 Race and ethnicity variables are either computed from administrative records collected during screening using the American Community Survey ([ACS](https://www.census.gov/programs-surveys/acs.html)), or a single item from the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics</a> instrument based on the All of Us.
 
-##### <b style="color: teal;">ACS-Derived</b> Race & Ethnicity Variables: computed from administrative records collected during screening using the American Community Survey (<a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>).
+#### ACS-Derived Race & Ethnicity Variables
+These are computed from administrative records collected during screening using the American Community Survey (<a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>).
 
-<span style="margin-bottom: 0; padding-bottom: 0;"><i id="fedstandards" style="color: teal;" class="fa fa-circle-info"></i> <b>Combined race & ethnicity variables</b> are constructed from ACS race/ethnicity item responses following current federal standards:</span>
+<table id="fedstandards" class="compact-table-no-vertical-lines" style="border: 2px solid #006c6c5b; border-radius: 8px; border-collapse: collapse; font-size: 1.0em;">
+<tbody>
+<tr><td style="word-wrap: break-word; white-space: normal;">
+<span style="margin-bottom: 0; padding-bottom: 0;"><i id="fedstandards" style="color: teal;" class="fa fa-circle-info"></i> <b>Combined race & ethnicity variables</b> are constructed from ACS race/ethnicity item following current federal standards:</span>
   <ul style="margin-top: 0; padding-top: 0; font-size: 0.9em;">
   <li>Participants who identify as <em>Hispanic or Latino</em> in the ACS ethnicity item are categorized as such regardless of their race.</li>
   <li>Individuals who select more than one race are categorized as <strong>multiracial</strong>.</li>
   <li>Multiracial participants are subcategorized by <strong>ethnicity</strong> (<em>Hispanic</em> vs. <em>non-Hispanic</em>) and <strong>race</strong> (<em>Black/African American</em> vs. <em>non-Black/African American</em>).</li>
   </ul>
+</td></tr>
+</tbody>
+</table>
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -76,7 +83,8 @@ Race and ethnicity variables are either computed from administrative records col
 <p></p>
 ---------------
 
-##### <b style="color: teal;">AOU-Derived</b> Race & Ethnicity Variables: computed from Single All of US (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations">AOU</a>) race and ethnicity item collected as part of the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics</a> instrument.
+### AOU-Derived Race & Ethnicity Variables
+These are computed from Single All of US (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations">AOU</a>) race and ethnicity item collected as part of the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics</a> instrument.
 
 <table class="compact-table-no-vertical-lines">
 <thead>
