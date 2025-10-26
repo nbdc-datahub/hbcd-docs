@@ -131,7 +131,8 @@ Variables computed from administrative records collected during screening using 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Child race & ethnicity- multiracial aggregation by ethnicity <i class="fa-solid fa-baby"></i></td>
 <td><code>child_ethnoracial_<br>acs_by_multi_ethnicity</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <a href="#fedstandards">current federal standards <i class="fa fa-circle-info"></i></a>, with multiracial individuals subcategorized by ethnicity. <span class="pill-badge">V02+</span></td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses -<br>
+see <a href="#fedstandards"><i class="fa-solid fa-square-plus"></i> ACS Combined Race & Ethnicity Logic</a>. Multiracial individuals subcategorized by ethnicity. <span class="pill-badge">V02+</span></td>
 </tr>
 <tr>
 <td>Mother ethnicity</td>
@@ -146,12 +147,14 @@ Variables computed from administrative records collected during screening using 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity- multiracial aggregation by ethnicity</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>screen_mother_ethnoracial_<br>acs_by_multi_ethnicity</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses as described <a href="#fedstandards">here <i class="fa fa-circle-info"></i></a>. Multiracial individuals subcategorized by ethnicity.</td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses -<br>
+see <a href="#fedstandards"><i class="fa-solid fa-square-plus"></i> ACS Combined Race & Ethnicity Logic</a>. Multiracial individuals subcategorized by ethnicity.</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity- multiracial aggregation by race</td>
 <td><code>screen_mother_ethnoracial_<br>acs_by_multi_race</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses as described <a href="#fedstandards">here <i class="fa fa-circle-info"></i></a>. Multiracial individuals subcategorized by race.</td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses -<br>
+see <a href="#fedstandards"><i class="fa-solid fa-square-plus"></i> ACS Combined Race & Ethnicity Logic</a>. Multiracial individuals subcategorized by race.</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race indicator variables (0-5)</td>
@@ -170,9 +173,7 @@ Variables computed from administrative records collected during screening using 
 <table id="fedstandards" class="compact-table-no-vertical-lines" style="border: 2px solid #006c6c5b; border-radius: 8px; border-collapse: collapse; font-size: 1.0em;">
 <tbody>
 <tr><td style="word-wrap: break-word; white-space: normal;">
-<i id="fedstandards" style="color: teal;" class="fa-solid fa-clone"></i> <b>ACS Combined Race & Ethnicity Logic</b><br><br>
-<i id="fedstandards" style="color: teal;" class="fa-solid fa-object-ungroup"></i> <b>ACS Combined Race & Ethnicity Logic</b><br><br>
-
+<i id="fedstandards" style="color: teal;" class="fa-solid fa-square-plus"></i> <b>ACS Combined Race & Ethnicity Logic</b><br><br>
 ACS combined variables are constructed from ACS race/ethnicity screening items following current federal standards:
   <ul style="margin-bottom: 0; padding-left: 6px;">
   <li>Participants who identify as <em>Hispanic or Latino</em> in the ACS ethnicity item are categorized as such regardless of their race.</li>
