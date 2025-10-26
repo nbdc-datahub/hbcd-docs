@@ -7,31 +7,19 @@
 
 Race and ethnicity variables are either computed from administrative records collected during screening using the American Community Survey ([ACS](https://www.census.gov/programs-surveys/acs.html)), or a single item from the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics</a> instrument based on the All of Us.
 
-For variables that combine race and ethnicity, both the ACC (per current federal standards) and AOU (per OMB standards) variables are computed as follows: anyone identifying as <i>Hispanic/Latino</i> (regardless of their race or other identities selected) is categorized as <i>Hispanic/Latino</i> and all others as <i>non-Hispanic</i>.
+##### <b style="color: teal;">ACS-Derived</b> Race & Ethnicity Variables: computed from administrative records collected during screening using the American Community Survey (<a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>).
 
-<table id="fedstandards" class="compact-table-no-vertical-lines" style="border: 2px solid #006c6c5b; border-radius: 8px; border-collapse: collapse; font-size: 1.0em;">
-<tbody>
-<tr><td style="word-wrap: break-word; white-space: normal;">
-<i class="fa fa-circle-info" style="color: #0066cc;"></i> <span style="font-size: 1.1em;"><b>Current federal standards</b> for combining race and ethnicity variables from screening:</span>
-  <ul style="margin-top: 5px; margin-bottom: 5px;">
-  <li>Participants who identify as <em>Hispanic or Latino</em> in the ACS are categorized as such regardless of their race.</li>
+<i id="fedstandards" style="color: teal;" class="fa fa-circle-info"></i> <b>Combined race & ethnicity variables</b> are constructed from ACS race/ethnicity item responses following current federal standards:
+<span style="margin-top: 0; padding-top: 0; font-size: 0.9em;">
+  <ul style="margin-top: 0; padding-top: 0; font-size: 0.9em;">
+  <li>Participants who identify as <em>Hispanic or Latino</em> in the ACS ethnicity item are categorized as such regardless of their race.</li>
   <li>Individuals who select more than one race are categorized as <strong>multiracial</strong>.</li>
   <li>Multiracial participants are subcategorized by <strong>ethnicity</strong> (<em>Hispanic</em> vs. <em>non-Hispanic</em>) and <strong>race</strong> (<em>Black/African American</em> vs. <em>non-Black/African American</em>).</li>
   </ul>
-</td></tr>
-</tbody>
-</table>
-
-<p></p>
+</span>
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr>
-<td colspan="3" style="font-size: 1.0em; word-wrap: break-word; white-space: normal;">
-<b style="color: teal;">ACS-DERIVED RACE & ETHNICITY VARIABLES</b><br>
-Variables computed from administrative records collected during screening using the American Community Survey (<a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>)
-</td>
-</tr>
   <tr>
     <th style="width: 20%;">Construct</th>
     <th style="width: 20%;">Variable Name</th>
@@ -86,14 +74,14 @@ Variables computed from administrative records collected during screening using 
 5 = Other race</td>
 </tr>
 </tbody>
+</table>
+<p></p>
+---------------
+
+##### <b style="color: teal;">AOU-Derived</b> Race & Ethnicity Variables: computed from Single All of US (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations">AOU</a>) race and ethnicity item collected as part of the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics</a> instrument.
+
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr>
-<td colspan="3" style="font-size: 1.0em; word-wrap: break-word; white-space: normal;">
-<b style="color: teal;">AOU-DERIVED RACE & ETHNICITY VARIABLES</b><br>
-Variables computed from Single All of US (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations">AOU</a>) race and ethnicity item collected as part of the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics</a> instrument.
-</td>
-</tr>
   <tr>
     <th style="width: 20%;">Construct</th>
     <th style="width: 20%;">Variable Name</th>
@@ -124,6 +112,3 @@ Indicator variables for All of Us combined race/ethnicity question:<br>
 </tr>
 </tbody>
 </table>
-<span class="pill-badge" style="font-size: 0.75em;">V02+</span><span> - <i>Variables about the child are available beginning visit V02, post-birth (V01 is prenatal).</i></span>
-
-
