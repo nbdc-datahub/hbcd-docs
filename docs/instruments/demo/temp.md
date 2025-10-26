@@ -9,14 +9,12 @@ Race and ethnicity variables are either computed from administrative records col
 
 ##### <b style="color: teal;">ACS-Derived</b> Race & Ethnicity Variables: computed from administrative records collected during screening using the American Community Survey (<a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>).
 
-<i id="fedstandards" style="color: teal;" class="fa fa-circle-info"></i> <b>Combined race & ethnicity variables</b> are constructed from ACS race/ethnicity item responses following current federal standards:
-<span style="margin-top: 0; padding-top: 0; font-size: 0.9em;">
+<span style="margin-bottom: 0; padding-bottom: 0;"><i id="fedstandards" style="color: teal;" class="fa fa-circle-info"></i> <b>Combined race & ethnicity variables</b> are constructed from ACS race/ethnicity item responses following current federal standards:</span>
   <ul style="margin-top: 0; padding-top: 0; font-size: 0.9em;">
   <li>Participants who identify as <em>Hispanic or Latino</em> in the ACS ethnicity item are categorized as such regardless of their race.</li>
   <li>Individuals who select more than one race are categorized as <strong>multiracial</strong>.</li>
   <li>Multiracial participants are subcategorized by <strong>ethnicity</strong> (<em>Hispanic</em> vs. <em>non-Hispanic</em>) and <strong>race</strong> (<em>Black/African American</em> vs. <em>non-Black/African American</em>).</li>
   </ul>
-</span>
 
 <table class="compact-table-no-vertical-lines">
 <thead>
