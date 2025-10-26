@@ -4,6 +4,18 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
+
+/* Pill badge used for basic demo */
+.pill-badge {
+  background-color: #00aeae;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 1px 8px;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
 /* Add space above the bottom navigation buttons */
 .rst-footer-buttons {
   margin-top: 3em; 
