@@ -101,13 +101,15 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 </table>
 <span class="pill-badge" style="font-size: 0.75em;">V02+</span><span> - <i>Variables about the child are available beginning visit V02, post-birth (V01 is prenatal).</i></span>
 
-### ACS Race & Ethnicity Variables 
-
-The following variables are derived from administrative records collected during screening using the American Community Survey [ACS](https://www.census.gov/programs-surveys/acs.html).     
-<p></p>
+### Race & Ethnicity Variables
 
 <table class="compact-table-no-vertical-lines">
 <thead>
+<tr>
+<td colspan="3" style="font-size: 1.0em; word-wrap: break-word; white-space: normal;">
+<b style="color: teal;">ACS-DERIVED RACE & ETHNICITY VARIABLES</b><br>
+Variables computed from administrative records collected during screening using the American Community Survey (<a href="https://www.census.gov/programs-surveys/acs.html">ACS</a>)
+</td>
 </tr>
   <tr>
     <th style="width: 20%;">Construct</th>
@@ -144,16 +146,16 @@ The following variables are derived from administrative records collected during
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity- multiracial aggregation by ethnicity</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>screen_mother_ethnoracial_<br>acs_by_multi_ethnicity</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <a href="#fedstandards">current federal standards <i class="fa fa-circle-info"></i></a>, with multiracial individuals subcategorized by ethnicity.</td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses as described <a href="#fedstandards">here <i class="fa fa-circle-info"></i></a>. Multiracial individuals subcategorized by ethnicity.</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race & ethnicity- multiracial aggregation by race</td>
 <td><code>screen_mother_ethnoracial_<br>acs_by_multi_race</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses following <a href="#fedstandards">current federal standards <i class="fa fa-circle-info"></i></a>, with multiracial individuals subcategorized by race.</td>
+<td style="word-wrap: break-word; white-space: normal;">Constructed from screening race/ethnicity responses as described <a href="#fedstandards">here <i class="fa fa-circle-info"></i></a>. Multiracial individuals subcategorized by race.</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mother race indicator variables (0-5)</td>
-<td><code>screen_mother_race_multi___{0-5}</code></td>
+<td><code>screen_mother_race_<br>multi___{0-5}</code></td>
 <td>Indicator variables from ACS race question:<br>
 0 = White<br>
 1 = Black or African American<br>
@@ -164,14 +166,16 @@ The following variables are derived from administrative records collected during
 </tr>
 </tbody>
 </table>
-<span class="pill-badge" style="font-size: 0.75em;">V02+</span><span> - <i>Variables about the child are available beginning visit V02, post-birth (V01 is prenatal).</i></span>
 
 <table id="fedstandards" class="compact-table-no-vertical-lines" style="border: 2px solid #006c6c5b; border-radius: 8px; border-collapse: collapse; font-size: 1.0em;">
 <tbody>
 <tr><td style="word-wrap: break-word; white-space: normal;">
-<i class="fa fa-circle-info" style="color: #0066cc;"></i> <span style="font-size: 1.1em;"><b>Current federal standards</b> for combining race and ethnicity variables from screening:</span>
-  <ul style="margin-top: 5px; margin-bottom: 5px;">
-  <li>Participants who identify as <em>Hispanic or Latino</em> in the ACS are categorized as such regardless of their race.</li>
+<i id="fedstandards" style="color: teal;" class="fa-solid fa-clone"></i> <b>ACS Combined Race & Ethnicity Logic</b><br><br>
+<i id="fedstandards" style="color: teal;" class="fa-solid fa-object-ungroup"></i> <b>ACS Combined Race & Ethnicity Logic</b><br><br>
+
+ACS combined variables are constructed from ACS race/ethnicity screening items following current federal standards:
+  <ul style="margin-bottom: 0; padding-left: 6px;">
+  <li>Participants who identify as <em>Hispanic or Latino</em> in the ACS ethnicity item are categorized as such regardless of their race.</li>
   <li>Individuals who select more than one race are categorized as <strong>multiracial</strong>.</li>
   <li>Multiracial participants are subcategorized by <strong>ethnicity</strong> (<em>Hispanic</em> vs. <em>non-Hispanic</em>) and <strong>race</strong> (<em>Black/African American</em> vs. <em>non-Black/African American</em>).</li>
   </ul>
@@ -179,16 +183,18 @@ The following variables are derived from administrative records collected during
 </tbody>
 </table>
 
-### AOU Race & Ethnicity Variables
-
-The following race and ethnicity variables are derived from a single All of US ([AOU](https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations)) race and ethnicity item derived from the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics instrument (Adult)</a>.
-
 <table class="compact-table-no-vertical-lines">
 <thead>
+<tr>
+<td colspan="3" style="font-size: 1.0em; word-wrap: break-word; white-space: normal;">
+<b style="color: teal;">AOU-DERIVED RACE & ETHNICITY VARIABLES</b><br>
+Variables computed from single All of US (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations">AOU</a>) race and ethnicity item collected as part of the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics</a> instrument.
+</td>
+</tr>
   <tr>
-    <th>Construct</th>
-    <th>Variable Name</th>
-    <th>Description/Details</th>
+    <th style="width: 20%;">Construct</th>
+    <th style="width: 20%;">Variable Name</th>
+    <th style="width: 40%;">Description/Details</th>
   </tr>
 </thead>
 <tbody>
@@ -215,3 +221,5 @@ Indicator variables for All of Us combined race/ethnicity question:<br>
 </tr>
 </tbody>
 </table>
+<span class="pill-badge" style="font-size: 0.75em;">V02+</span><span> - <i>Variables about the child are available beginning visit V02, post-birth (V01 is prenatal).</i></span>
+
