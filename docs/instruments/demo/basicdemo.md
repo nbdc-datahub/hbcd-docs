@@ -89,7 +89,6 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
     </a> for full documentation.</i>
   </td>
 </tr>
-
 <tr style="background-color: #f9f9f9;">
   <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery</td>
   <td><code>gestational_age_delivery</code></td>
@@ -159,7 +158,7 @@ Race and ethnicity variables are either computed from administrative records col
 <tr style="background-color: #ffffff;">
   <td><i class="fa-solid fa-baby"></i>&nbsp;Child race &amp; ethnicity<br>– multiracial aggregation by ethnicity</td>
   <td><code>child_ethnoracial_<br>acs_by_multi_ethnicity</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Derived from ACS race/ethnicity screening responses - see <a href="#fedstandards">ACS Combined Logic</a>  - with multiracial individuals subcategorized by <b>ethnicity</b>. <span class="pill-badge">V02+</span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Derived from ACS race/ethnicity screening responses, with multiracial individuals subcategorized by <b>ethnicity</b> - see <a href="#fedstandards">ACS Combined Race & Ethnicity Logic</a>. <span class="pill-badge">V02+</span></td>
 </tr>
 <tr style="background-color: #f9f9f9;">
   <td>Mother ethnicity</td>
@@ -174,12 +173,12 @@ Race and ethnicity variables are either computed from administrative records col
 <tr style="background-color: #f9f9f9;">
   <td>Mother race &amp; ethnicity<br>– multiracial aggregation by ethnicity</td>
   <td><code>screen_mother_ethnoracial_<br>acs_by_multi_ethnicity</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Derived from ACS race/ethnicity screening responses - see <a href="#fedstandards">ACS Combined Logic</a>  - with multiracial individuals subcategorized by <b>ethnicity</b>.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Derived from ACS race/ethnicity screening responses, with multiracial individuals subcategorized by <b>ethnicity</b> - see <a href="#fedstandards">ACS Combined Race & Ethnicity Logic</a>.</td>
 </tr>
 <tr style="background-color: #ffffff;">
   <td>Mother race &amp; ethnicity<br>– multiracial aggregation by race</td>
   <td><code>screen_mother_ethnoracial_<br>acs_by_multi_race</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Derived from ACS race/ethnicity screening responses - see <a href="#fedstandards">ACS Combined Logic</a>  - with multiracial individuals subcategorized by <b>race</b>.</td>
+    <td style="word-wrap: break-word; white-space: normal;">Derived from ACS race/ethnicity screening responses, with multiracial individuals subcategorized by <b>race</b> - see <a href="#fedstandards">ACS Combined Race & Ethnicity Logic</a>.</td>
 </tr>
 <tr style="background-color: #f9f9f9;">
   <td>Mother race indicator<br>variables (0–5)</td>
