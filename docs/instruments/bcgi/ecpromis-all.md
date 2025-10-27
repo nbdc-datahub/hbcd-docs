@@ -132,66 +132,56 @@ The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn'
 </div>
 
 ## Scoring Procedures
-
-<div id="scoring-chcg" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Child-Caregiver Relationship Scale (<i>Scoring Procedures</i>)</span>
-  <a class="anchor-link" href="#scoring-chcg" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Each of the 5 items for ecPROMIS Child-Caregiver Interaction is answered on a scale of 1-5: 1 (Never), 2 (Rarely), 3  (Sometimes), 4 (Often), and 5 (Always). A sum score is generated when the caregiver answers at least 3 out of the 5 items (<i>ecpromis1, ecpromis2, ecpromis3, ecpromis4, ecpromis5</i>). If caregivers answer 3 or 4 items, a prorated sum score is calculated using the formula: 
+For each scale: if all items are answered, their sum is used as the total score. If at least three items are answered but some are missing, a prorated score is calculated as:
 <p style="font-size: 0.9em;">
   \[
-  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{5}
+  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{Total Number of Items}
   \]
 </p>
-If fewer than 3 items are completed, the sum score is marked as missing.</p>
-</div>
+If fewer than three items are completed, the score is set to missing.
 
-<div id="scoring-pr" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Peer Relationships Scale (<i>Scoring Procedures</i>)</span>
-  <a class="anchor-link" href="#scoring-pr" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Each of the 4 items are responded to using the following scale: 1, Never | 2, Almost Never | 3, Sometimes | 4, Often | 5, Almost Always | Decline to Answer, <code>peer_yn</code> is answered on a yes/no 0:1 scale. If all four items are answered, their sum is calculated. If at least three items are answered but some are missing, a prorated sum is computed: 
-<p style="font-size: 0.9em;">
-  \[
-  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{4}
-  \]
-</p>
-If fewer than two items are answered, the sum score is set to missing.</p>
-</div>
+<table class="compact-table-no-vertical-lines" style="width:100%; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="width:25%;">Scale</th>
+      <th style="width:10%;"># Items</th>
+      <th style="width:30%;">Response Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Child–Caregiver Relationship</b></td>
+      <td>5</td>
+      <td rowspan="2">
+        1 = Never<br>
+        2 = Rarely<br>
+        3 = Sometimes<br>
+        4 = Often<br>
+        5 = Always<br>
+        Decline to Answer = missing
+      </td>
+    </tr>
+    <tr>
+      <td><b>Self-Regulation – Flexibility</b></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td><b>Peer Relationships</b></td>
+      <td>4</td>
+      <td>
+        1 = Never<br>
+        2 = Almost Never<br>
+        3 = Sometimes<br>
+        4 = Often<br>
+        5 = Almost Always<br>
+        Decline to Answer = missing<br>
+        <code>peer_yn</code>: 0 = No, 1 = Yes
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-<div id="scoring-selfreg" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Self Regulation - Flexibility Scale (<i>Scoring Procedures</i>)</span>
-  <a class="anchor-link" href="#scoring-selfreg" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Caregivers respond to five items on a 1–5 scale (1 = Never, 5 = Always; “Decline to Answer” is allowed, but “Don’t Know” is not recommended). If all items are answered, the sum of the numerical responses is used. If at least three items are answered but some are missing, a prorated sum is calculated:
-<p style="font-size: 0.9em;">
-  \[
-  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{5}
-  \]
-</p>
-If fewer than three items are answered, the sum score is set to missing.</p>
-</div>
+
 
 ## References
 <div class="references"> 
