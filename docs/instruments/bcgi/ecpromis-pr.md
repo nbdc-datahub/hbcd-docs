@@ -61,8 +61,6 @@
 </table>
 
 ## Instrument Details
-
-
 The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Peer Relationships Scale** assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
