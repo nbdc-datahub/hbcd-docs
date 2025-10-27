@@ -55,14 +55,15 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td><b>&lt;1 year</b>: V03, V05; <b>1-5 years</b>: V05, V07, V09</td></tr>
+<td><b>&lt;1 year</b>: V03, V05<br>
+    <b>1-5 years</b>: V05, V07, V09</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>1-2 min</td></tr>
 <tr><td><b>Quality Control</b></td>
 <td style="word-wrap: break-word; white-space: normal;">
 <ul>
   <li>Examine missingness by counting the number of items answered for each participant.</li>
-  <li>Check age to ensure that it falls within expected ranges (i.e. 3-9 months for V01 and 1-5 years for V05-V09).</li>
+  <li>Check age to ensure that it falls within expected ranges (3-9 months for V03; 1-5 years for V05-V09).</li>
   <li>Generate summary statistics and visualizations to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data).</li>
 </ul>
 </td></tr>
