@@ -1,4 +1,4 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 (addition of 1-5 year version)</i> 🚧 </p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: proposed page that combines all 3 ecPROMIS instruments, preserving all RUD changes</i> 🚧 </p>
 
 # ecPROMIS
 The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. **HBCD includes three ecPROMIS instrument scales:**
