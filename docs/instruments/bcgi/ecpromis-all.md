@@ -80,14 +80,12 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 </tbody>
 </table>
 
-## HBCD Modifications & Scoring Procedures
-
-### ecPROMIS - Child-Caregiver Relationship Scale
+## HBCD Modifications
 
 <div id="hbcd-mod-chcg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
+  <span class="text">Child-Caregiver Relationship Scale (<i>HBCD Modifications</i>)</span>
   <a class="anchor-link" href="#hbcd-mod-chcg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -100,10 +98,45 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 <p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p>
 </div>
 
+<div id="hbcd-mod-pr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
+  <span class="text-with-link">
+    <span class="text">Peer Relationships Scale (<i>HBCD Modifications</i>)</span>
+    <a class="anchor-link" href="#hbcd-mod-pr" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>The item <code>[peer_yn]</code> was added to the beginning of the survey instrument for HBCD to assess whether the child had opportunities to interact with other children during the primary period (past 7 days).</p>
+<blockquote>
+  <strong>Item text</strong>: <i>“My child had opportunities to interact with other children."</i><br>
+  <strong>Response options</strong>: 0 [No]; 1 [Yes]; Decline to Answer
+</blockquote>
+The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn't scored), but can be used as a filter variable for analyses. This item was added with the approval of the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure.</p>
+</div>
+
+<div id="hbcd-mod-selfreg" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
+  <span class="text-with-link">
+  <span class="text">Self Regulation - Flexibility Scale (<i>HBCD Modifications</i>)</span>
+  <a class="anchor-link" href="#hbcd-mod-selfreg" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>The item queue was rearranged per the HBCD DEI Committee’s recommendation to: 2, 3, 4, 5, 1. The item order change is minimal, should have no effect on data, and was approved by the measure creators. While ecPROMIS measures are copyrighted, the content of each item is maintained.</p>
+</div>
+
+## Scoring Procedures
+
 <div id="scoring-chcg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
+  <span class="text">Child-Caregiver Relationship Scale (<i>Scoring Procedures</i>)</span>
   <a class="anchor-link" href="#scoring-chcg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -120,31 +153,10 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 If fewer than 3 items are completed, the sum score is marked as missing.</p>
 </div>
 
-### ecPROMIS - Peer Relationships Scale
-
-<div id="hbcd-mod-pr" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-    <span class="text">HBCD Modification Details</span>
-    <a class="anchor-link" href="#hbcd-mod-pr" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>The item <code>[peer_yn]</code> was added to the beginning of the survey instrument for HBCD to assess whether the child had opportunities to interact with other children during the primary period (past 7 days).</p>
-<blockquote>
-  <strong>Item text</strong>: <i>“My child had opportunities to interact with other children."</i><br>
-  <strong>Response options</strong>: 0 [No]; 1 [Yes]; Decline to Answer
-</blockquote>
-The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn't scored), but can be used as a filter variable for analyses. This item was added with the approval of the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure.</p>
-</div>
-
 <div id="scoring-pr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
+  <span class="text">Peer Relationships Scale (<i>Scoring Procedures</i>)</span>
   <a class="anchor-link" href="#scoring-pr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -161,27 +173,10 @@ The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn'
 If fewer than two items are answered, the sum score is set to missing.</p>
 </div>
 
-### ecPROMIS - Self Regulation - Flexibility Scale
-
-
-<div id="hbcd-mod-selfreg" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod-selfreg" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>The item queue was rearranged per the HBCD DEI Committee’s recommendation to: 2, 3, 4, 5, 1. The item order change is minimal, should have no effect on data, and was approved by the measure creators. While ecPROMIS measures are copyrighted, the content of each item is maintained.</p>
-</div>
-
 <div id="scoring-selfreg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
+  <span class="text">Self Regulation - Flexibility Scale (<i>Scoring Procedures</i>)</span>
   <a class="anchor-link" href="#scoring-selfreg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
