@@ -32,7 +32,9 @@
   <span class="arrow">▸</span>
 </div>
 <div class="alert-collapsible-content">
-<p>Acculturation surveys may make some individuals feel excluded or othered. However, this measure aims to capture the process and understand an individual's personal preferences for taking part in their personal family cultural values as well as those of "American" culture. This measure does not specifically define what "American" should mean, but allows the participant to decide what it means to them.</p>
+<p>When using HBCD data, all data users must agree to responsible use as described in the data use certification (DUC). When conceptualizing studies, analyzing data, and communicating analyses hat address socially sensitive topics, it is critical that data users consider strategies to avoid stigmatization of any groups and avoid perpetuating harmful biases.</p> 
+<p>Immigration status was not collected as part of this measure, and data users should not infer or assume immigration status in their analyses or interpretations.</p> 
+<p>Some variables in this release have small cell sizes. As a condition of using these data, specified in the DUC, you agree not to identify any individual from whom data was obtained and not to identify their relatives. You agree to a minimum cell threshold of 10 in any public reporting of the data (publications, posters, or other presentations). Protecting participants’ anonymity demonstrates respect for them and minimizes their research-related risks.</p>
 </div>
 
 <div id="issues" class="issues-banner">
