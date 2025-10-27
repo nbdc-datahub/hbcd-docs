@@ -19,31 +19,29 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 <td><strong>&lt;1 year</strong></td>
 <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Evaluates the degree to which young children develop close, satisfying relationships with caregivers.</td>
 <td><code>mh_cg_pms__cc__inf</code></td>
-<td>V03, V05</td>
+<td style="font-size: 0.85em;">V03, V05</td>
 </tr>
 <tr>
 <td><strong>1-5 years</strong></td>
 <td><code>mh_cg_pms__cc__1to5</code></td>
-<td>V05, V07, V09</td>
+<td style="font-size: 0.85em;">V05, V07, V09</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Peer Relationships Scale</td>
 <td></td>
 <td style="word-wrap: break-word; white-space: normal;">Assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors.</td>
 <td><code>mh_cg_pms__peer</code></td>
-<td>V05, V07, V09</td>
+<td style="font-size: 0.85em;">V05, V07, V09</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Self Regulation - Flexibility Scale</td>
 <td></td>
 <td style="word-wrap: break-word; white-space: normal;">Assesses young children’s ability to adapt in response to environmental demands, changes, and expectations.</td>
 <td><code>mh_cg_pms__selfreg</code></td>
-<td>V05, V07, V09</td>
+<td style="font-size: 0.85em;">V05, V07, V09</td>
 </tr>
 </tbody>
 </table>
-
-The **Self Regulation - Flexibility Scale** a
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
