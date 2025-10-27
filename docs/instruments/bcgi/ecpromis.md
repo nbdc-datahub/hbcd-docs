@@ -61,7 +61,6 @@
     <li>Examination of missingness (by counting the number of items answered for each participant).</li>
     <li>Check age to ensure that it falls within expected range of 3-9 months and 1-5 years for respective versions.</li>
     <li>Summary statistics and visualizations generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data).</li>
-    <li>Cronbach's Alpha was calculated to assess reliability.</li>
   </ul>
 </td></tr>
 </tbody>
@@ -69,7 +68,7 @@
 
 ## Instrument Details
 
-The **Early Childhood Patient-Reported Outcome Measurement Information System (ecPROMIS)** provides clinicians and researchers with a brief, reliable way to assess young children’s well-being. One of its key components is the Child–Caregiver Relationship Scale, which evaluates the degree to which young children develop close, satisfying relationships with caregivers. 
+The **ecPROMIS (Early Childhood Patient-Reported Outcome Measurement Information System)** is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **child-caregiver ecPROMIS** was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the Health Measures (ecPROMIS) team. One of its key components is the Child–Caregiver Relationship Scale, which evaluates the degree to which young children develop close, satisfying relationships with caregivers. 
 
 For the HBCD study, the **ecPROMIS Child–Caregiver Relationship Form** was developed based on the ecPROMIS Parent-Report Short Form v1.0 – Social Relationships: Child–Caregiver Interactions 5a. Because the original measure was designed for children aged **1–5 years**, an adapted version was created for **infants under 1 year** (i.e. 3-9 month old infants from visit V03), replacing the term ‘my child’ with 'my baby' per the guidance of ecPROMIS developers.
 
