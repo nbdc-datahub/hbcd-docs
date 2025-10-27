@@ -99,13 +99,14 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Each of the 5 items for the Child-Caregiver Relationship Scale is answered on a scale of 1-5: 1 (Never), 2 (Rarely), 3  (Sometimes), 4 (Often), and 5 (Always). A sum score is generated when the caregiver answers at least 3 out of the 5 items (<i>ecpromis1, ecpromis2, ecpromis3, ecpromis4, ecpromis5</i>). If caregivers answer 3 or 4 items, a prorated sum score is calculated using the formula: 
+<p>The Child-Caregiver Relationship Scale includes 5 items answered on a scale of 1-5:<br>
+1 = <b>Never</b> &nbsp; 2 = <b>Rarely</b> &nbsp; 3 = <b>Sometimes</b> &nbsp 4 = <b>Often</b> &nbsp; 5 = <b>Always</b> &nbsp; <b>Decline to Answer = missing</b></p>
+<p>If all items are answered, their sum is used as the total score. If fewer than three items are completed, the score is set to missing. If at least three items are answered but some are missing, a prorated score is calculated as:</p>
 <p style="font-size: 0.9em;">
   \[
   \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{5}
   \]
 </p>
-If fewer than 3 items are completed, the sum score is marked as missing.</p>
 </div>
 
 ## References

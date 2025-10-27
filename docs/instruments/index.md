@@ -137,26 +137,29 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
   <tr>
     <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td rowspan="2"><a href="bcgi/ecpromis" target="_blank">ecPROMIS-Ch/CG Interaction</a></td>
+    <td rowspan="2" style="word-wrap: break-word; white-space: normal;">
+      <a href="bcgi/ecpromis" target="_blank">ecPROMIS Child-Caregiver Relationship</a></td>
     <td>&lt;1 year</td>
-    <td>Child/Caregiver Relationship</td>
+    <td>Child-Caregiver Relationship</td>
     <td><code>mh_cg_pms__cc__inf</code></td>
   </tr>
   <tr>
     <td>1-5 years</td>
-    <td>Child/Caregiver Relationship</td>
+    <td>Child-Caregiver Relationship</td>
     <td><code>mh_cg_pms__cc__1to5</code></td>
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td><a href="bcgi/ecpromis-pr" target="_blank">ecPROMIS-Peer Relation</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">
+      <a href="bcgi/ecpromis-pr" target="_blank">ecPROMIS Peer Relationships</a></td>
     <td></td>
     <td>Peer Relationships</td>
     <td><code>mh_cg_pms__peer</code></td>
   </tr>
   <tr>
     <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ecpromis-selfreg" target="_blank">ecPROMIS-Self-regulation</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">
+      <a href="bcgi/ecpromis-selfreg" target="_blank">ecPROMIS Self-Regulation</a></td>
     <td></td>
     <td>Self-Regulation and Flexibility</td>
     <td><code>mh_cg_pms__selfreg</code></td>

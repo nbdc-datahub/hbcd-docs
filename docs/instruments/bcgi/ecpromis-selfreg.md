@@ -9,7 +9,7 @@
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">ecPROMIS Self-regulation - Flexibility Scale</div>
+    <div class="info-value">ecPROMIS Self-Regulation - Flexibility Scale</div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
