@@ -85,7 +85,7 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 <div id="hbcd-mod-chcg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
-  <span class="text">Child-Caregiver Relationship Scale (<i>HBCD Modifications</i>)</span>
+  <span class="text">Child-Caregiver Relationship Scale</span>
   <a class="anchor-link" href="#hbcd-mod-chcg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -93,7 +93,8 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The <b>Child–Caregiver Relationship Scale</b> was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the Health Measures (ecPROMIS) team.</p>
+<p><b>HBCD Modifications</b><br>
+The <b>Child–Caregiver Relationship Scale</b> was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the Health Measures (ecPROMIS) team.</p>
 <p>Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns or replace with ‘my child.’ In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
 <p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p>
 </div>
@@ -101,7 +102,7 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 <div id="hbcd-mod-pr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
-    <span class="text">Peer Relationships Scale (<i>HBCD Modifications</i>)</span>
+    <span class="text">Peer Relationships Scale</span>
     <a class="anchor-link" href="#hbcd-mod-pr" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>
@@ -109,7 +110,8 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The item <code>[peer_yn]</code> was added to the beginning of the survey instrument for HBCD to assess whether the child had opportunities to interact with other children during the primary period (past 7 days).</p>
+<p><b>HBCD Modifications</b><br>
+The item <code>[peer_yn]</code> was added to the beginning of the survey instrument for HBCD to assess whether the child had opportunities to interact with other children during the primary period (past 7 days).</p>
 <blockquote>
   <strong>Item text</strong>: <i>“My child had opportunities to interact with other children."</i><br>
   <strong>Response options</strong>: 0 [No]; 1 [Yes]; Decline to Answer
@@ -120,7 +122,7 @@ The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn'
 <div id="hbcd-mod-selfreg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
-  <span class="text">Self Regulation - Flexibility Scale (<i>HBCD Modifications</i>)</span>
+  <span class="text">Self Regulation - Flexibility Scale</span>
   <a class="anchor-link" href="#hbcd-mod-selfreg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -128,7 +130,8 @@ The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn'
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The item queue was rearranged per the HBCD DEI Committee’s recommendation to: 2, 3, 4, 5, 1. The item order change is minimal, should have no effect on data, and was approved by the measure creators. While ecPROMIS measures are copyrighted, the content of each item is maintained.</p>
+<p><b>HBCD Modifications</b><br>
+The item queue was rearranged per the HBCD DEI Committee’s recommendation to: 2, 3, 4, 5, 1. The item order change is minimal, should have no effect on data, and was approved by the measure creators. While ecPROMIS measures are copyrighted, the content of each item is maintained.</p>
 </div>
 
 ## Scoring Procedures
