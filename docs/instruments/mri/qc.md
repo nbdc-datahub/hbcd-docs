@@ -2,7 +2,7 @@
 
 ## Raw MR Data QC
 
-Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. Raw data QC is performed to detect acquisition errors, image artifacts, or corrupted files early so that problematic scans are excluded from the released raw BIDS dataset and [downstream processing](../processing/index.md#file-selection-for-processing).
+Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. Raw data QC is performed to detect acquisition errors, image artifacts, or corrupted files early so that problematic scans are excluded from [downstream processing](../processing/index.md#file-selection-for-processing).
 
 <div id="scanstsv" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fa-solid fa-location-dot"></i></span>
@@ -324,51 +324,7 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
 
 #### <i class="fa fa-desktop"></i> Automated QC
 
-Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload. Following [protocol compliance and completeness checks](#compliance), the following automated QC metrics available in the release are calculated:
-
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<i>Automated QC Metrics</i>
-<thead>
-<tr>
-    <th>Modality</th>
-    <th>QC Procedures</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>sMRI & qMRI</td>
-    <td>• Estimate motion artifacts using a deep learning model<br>
-     • Compute signal-to-noise ratio (SNR)</td>
-</tr>
-<tr>
-<td>fMRI</td>
-<td style="word-wrap: break-word; white-space: normal;">
-    • Estimate head motion with average <span class="tooltip">FD<span class="tooltiptext">framewise displacement</span></span> and data (sec) at FD thresholds of 0.2/0.3/0.4 mm (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al., 2012</a>)<br>
-    • Detect line artifacts and FOV cutoff<br>
-    • Compute spatial smoothness (FWHM) and temporal SNR (tSNR) after motion correction (<a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">Triantafyllou et al., 2005</a>)
-</td>
-</tr>
-<tr>
-    <td>dMRI</td>
-    <td style="word-wrap: break-word; white-space: normal;">
-    • Estimate head motion (framewise displacement, FD)<br>
-    • Refine motion estimates via registration to tensor-synthesized images (<a href="https://doi.org/10.1002/hbm.20619">Hagler et al., 2009</a>)<br>
-    • Identify dark slices (caused by abrupt head movements) using RMS difference between raw and tensor-fitted data<br>
-    • Calculate total slices and frames with motion artifacts<br>
-    • Detect line artifacts and field-of-view (FOV) cutoff
-  </ul>
-</td>
-</tr>
-<tr>
-<td>Field Maps</td>
-<td>Detect line artifacts and field-of-view (FOV) cutoff</td>
-</tr>
-<tr>
-<td>All</td>
-<td>Compute SNR where applicable</td>
-</tr>
-</tbody>
-</table>
+Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload, beginning with [protocol compliance and completeness checks](#compliance). Data that fail these checks are flagged for review and are not included in the release until resolved. 
 
 <div id="compliance" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
@@ -420,7 +376,52 @@ Completeness checks verify that all expected series are present in each imaging 
 </tbody>
 </table>
 </div>
-<p></p>
+
+For data that pass compliance checks, the following automated QC metrics available in the release are calculated:
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<i>Automated QC Metrics</i>
+<thead>
+<tr>
+    <th>Modality</th>
+    <th>QC Procedures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>sMRI & qMRI</td>
+    <td>• Estimate motion artifacts using a deep learning model<br>
+     • Compute signal-to-noise ratio (SNR)</td>
+</tr>
+<tr>
+<td>fMRI</td>
+<td style="word-wrap: break-word; white-space: normal;">
+    • Estimate head motion with average <span class="tooltip">FD<span class="tooltiptext">framewise displacement</span></span> and data (sec) at FD thresholds of 0.2/0.3/0.4 mm (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al., 2012</a>)<br>
+    • Detect line artifacts and FOV cutoff<br>
+    • Compute spatial smoothness (FWHM) and temporal SNR (tSNR) after motion correction (<a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">Triantafyllou et al., 2005</a>)
+</td>
+</tr>
+<tr>
+    <td>dMRI</td>
+    <td style="word-wrap: break-word; white-space: normal;">
+    • Estimate head motion (framewise displacement, FD)<br>
+    • Refine motion estimates via registration to tensor-synthesized images (<a href="https://doi.org/10.1002/hbm.20619">Hagler et al., 2009</a>)<br>
+    • Identify dark slices (caused by abrupt head movements) using RMS difference between raw and tensor-fitted data<br>
+    • Calculate total slices and frames with motion artifacts<br>
+    • Detect line artifacts and field-of-view (FOV) cutoff
+  </ul>
+</td>
+</tr>
+<tr>
+<td>Field Maps</td>
+<td>Detect line artifacts and field-of-view (FOV) cutoff</td>
+</tr>
+<tr>
+<td>All</td>
+<td>Compute SNR where applicable</td>
+</tr>
+</tbody>
+</table>
 
 #### <i class="fa-solid fa-eye"></i> Manual Review
 
