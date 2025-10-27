@@ -80,10 +80,9 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 </tbody>
 </table>
 
-## Instrument Details
+## HBCD Modifications & Scoring Procedures
 
 ### ecPROMIS - Child-Caregiver Relationship Scale
-The **Child–Caregiver Relationship Scale** was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the Health Measures (ecPROMIS) team.
 
 <div id="hbcd-mod-chcg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -96,6 +95,7 @@ The **Child–Caregiver Relationship Scale** was originally developed to assess 
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p>The <b>Child–Caregiver Relationship Scale</b> was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the Health Measures (ecPROMIS) team.</p>
 <p>Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns or replace with ‘my child.’ In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
 <p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p>
 </div>
@@ -133,20 +133,19 @@ If fewer than 3 items are completed, the sum score is marked as missing.</p>
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-  <p><b>Addition of New Item</b><br>
-  The item <code>[peer_yn]</code> was added to the beginning of the survey instrument for HBCD to assess whether the child had opportunities to interact with other children during the primary period (past 7 days).</p>
-  <blockquote>
-    <strong>Item text</strong>: <i>“My child had opportunities to interact with other children."</i><br>
-    <strong>Response options</strong>: 0 [No]; 1 [Yes]; Decline to Answer
-  </blockquote>
-  The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn't scored), but can be used as a filter variable for analyses. This item was added with the approval of the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure.</p>
+<p>The item <code>[peer_yn]</code> was added to the beginning of the survey instrument for HBCD to assess whether the child had opportunities to interact with other children during the primary period (past 7 days).</p>
+<blockquote>
+  <strong>Item text</strong>: <i>“My child had opportunities to interact with other children."</i><br>
+  <strong>Response options</strong>: 0 [No]; 1 [Yes]; Decline to Answer
+</blockquote>
+The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn't scored), but can be used as a filter variable for analyses. This item was added with the approval of the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure.</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+<div id="scoring-pr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
+  <a class="anchor-link" href="#scoring-pr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
