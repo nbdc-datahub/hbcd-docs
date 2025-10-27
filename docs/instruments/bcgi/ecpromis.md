@@ -1,26 +1,29 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 (addition of 1-5 year version)</i> 🚧 </p>
 
-# ecPROMIS Child/Caregiver Relationship Scale
+# ecPROMIS Child-Caregiver Relationship Scale
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th><i class="fa-solid fa-maximize"></i> Instrument</th>
-  <th><i class="fa-solid fa-clone"></i> Version</th>
-  <th><i class="fa-solid fa-tape"></i> Construct</th>
-  <th><i class="fa fa-table"></i> Table Name</th>
+  <th>Instrument</th>
+  <th>Version</th>
+  <th>Construct</th>
+  <th>Visits</th>
+  <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Early Childhood Patient-Reported Outcome Measurement Information System Child/Caregiver Relationship Scale</td>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">ecPROMIS Child-Caregiver Relationship Scale</td>
   <td><strong>&lt;1 year</strong></td>
   <td>Relationships</td>
+  <td>V03, V05</td>
   <td><code>mh_cg_pms__cc__inf</code></td>
 </tr>
 <tr>
   <td><strong>1-5 years</strong></td>
   <td>Relationships</td>
+  <td>V05, V07, V09</td>
   <td><code>mh_cg_pms__cc__1to5</code></td>
 </tr>
 </tbody>
@@ -52,16 +55,16 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V03 (<i>&lt;1 year</i>); V05 (<i>&lt;1 year</i> & <i>1-5 years</i>); V07, V09 (<i>1-5 years</i>)</td></tr>
+<td><b>&lt;1 year</b>: V03, V05; <b>1-5 years</b>: V05, V07, V09</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>1-2 min</td></tr>
 <tr><td><b>Quality Control</b></td>
 <td style="word-wrap: break-word; white-space: normal;">
-  <ul>
-    <li>Examination of missingness (by counting the number of items answered for each participant).</li>
-    <li>Check age to ensure that it falls within expected range of 3-9 months and 1-5 years for respective versions.</li>
-    <li>Summary statistics and visualizations generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data).</li>
-  </ul>
+<ul>
+  <li>Examine missingness by counting the number of items answered for each participant.</li>
+  <li>Check age to ensure that it falls within expected ranges (i.e. 3-9 months for V01 and 1-5 years for V05-V09).</li>
+  <li>Generate summary statistics and visualizations to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data).</li>
+</ul>
 </td></tr>
 </tbody>
 </table>
