@@ -132,13 +132,12 @@ The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn'
 </div>
 
 ## Scoring Procedures
-For each scale: if all items are answered, their sum is used as the total score. If at least three items are answered but some are missing, a prorated score is calculated as:
+For each scale: if all items are answered, their sum is used as the total score. If fewer than three items are completed, the score is set to missing. If at least three items are answered but some are missing, a prorated score is calculated as:
 <p style="font-size: 0.9em;">
   \[
   \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{Total Number of Items}
   \]
 </p>
-If fewer than three items are completed, the score is set to missing.
 
 <table class="compact-table-no-vertical-lines" style="width:100%; table-layout: fixed;">
   <thead>
