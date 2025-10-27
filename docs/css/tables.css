@@ -166,21 +166,16 @@ th, td {
 }
 /* Make lists behave more like normal text blocks */
 .table-no-vertical-lines ul {
-  font-size: 1em;
-  line-height: 1.2;
   margin: 0;
-  padding-left: 1.2em;
-  display: block;
+  padding-left: 0;  /* indentation */
 }
 /* Reduce bottom space between last list item and table border */
 .table-no-vertical-lines ul:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin-bottom: 0; /* padding-bottom unnecessary; UL rarely has it */
 }
-/* Optional: normalize list item alignment */
+/* Normalize list item spacing */
 .table-no-vertical-lines li {
   margin: 0;
-  padding: 0;
   line-height: 1.2;
 }
 

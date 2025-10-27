@@ -1,16 +1,16 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: proposed page that combines all 3 ecPROMIS instruments, preserving all RUD changes</i> 🚧 </p>
 
 # ecPROMIS
-The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. **HBCD includes three ecPROMIS instrument scales:**
+The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being.
 
+**HBCD includes the following ecPROMIS scales:**
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th>Instrument Scale</th>
+  <th>ecPROMIS Scale</th>
   <th>Version</th>
   <th>Construct</th>
   <th>Table Name</th>
-  <th>Visits</th>
 </tr>
 </thead>
 <tbody>
@@ -19,26 +19,22 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 <td><strong>&lt;1 year</strong></td>
 <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Evaluates the degree to which young children develop close, satisfying relationships with caregivers.</td>
 <td><code>mh_cg_pms__cc__inf</code></td>
-<td style="font-size: 0.85em;">V03, V05</td>
 </tr>
 <tr>
 <td><strong>1-5 years</strong></td>
 <td><code>mh_cg_pms__cc__1to5</code></td>
-<td style="font-size: 0.85em;">V05, V07, V09</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;"><b>Peer Relationships Scale</b></td>
-<td></td>
+<td style="text-align: center;">-</td>
 <td style="word-wrap: break-word; white-space: normal;">Assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors.</td>
 <td><code>mh_cg_pms__peer</code></td>
-<td style="font-size: 0.85em;">V05, V07, V09</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><b>Self Regulation - Flexibility Scale</b></td>
-<td></td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Self-Regulation - Flexibility Scale</b></td>
+<td style="text-align: center;">-</td>
 <td style="word-wrap: break-word; white-space: normal;">Assesses young children’s ability to adapt in response to environmental demands, changes, and expectations.</td>
 <td><code>mh_cg_pms__selfreg</code></td>
-<td style="font-size: 0.85em;">V05, V07, V09</td>
 </tr>
 </tbody>
 </table>
@@ -67,15 +63,24 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 <td>Primary Caregiver on Child</td></tr>
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
+<tr>
+  <td><b>Visits</b></td>
+  <td>
+  <ul>
+    <li><b>Child-Caregiver Relationship &lt1 year</b> is collected at V03 and V05.</li>
+    <li><b>All other scales</b> are collected at V05, V07, and V09.</li>
+  </ul>
+  </td>
+</tr>
 <tr><td><b>Completion Time</b></td>
 <td>1-2 min</td></tr>
 <tr><td><b>Quality Control</b></td>
 <td style="word-wrap: break-word; white-space: normal;">
-  <ul>
-    <li>Examination of missingness (by counting the number of items answered for each participant).</li>
-    <li>Check age to ensure that it falls within expected ranges (i.e. 3-9 months for V01 and 1-5 years for V05-V07).</li>
-    <li>Summary statistics and visualizations generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data).</li>
-  </ul>
+<ul>
+  <li>Examine missingness by counting the number of items answered for each participant.</li>
+  <li>Check age to ensure that it falls within expected ranges (i.e. 3-9 months for V01 and 1-5 years for V05-V09).</li>
+  <li>Generate summary statistics and visualizations to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data).</li>
+</ul>
 </td></tr>
 </tbody>
 </table>
@@ -122,7 +127,7 @@ The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn'
 <div id="hbcd-mod-selfreg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
-  <span class="text">Self Regulation - Flexibility Scale</span>
+  <span class="text">Self-Regulation - Flexibility Scale</span>
   <a class="anchor-link" href="#hbcd-mod-selfreg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -135,7 +140,7 @@ The item queue was rearranged per the HBCD DEI Committee’s recommendation to: 
 </div>
 
 ## Scoring Procedures
-For each scale: if all items are answered, their sum is used as the total score. If fewer than three items are completed, the score is set to missing. If at least three items are answered but some are missing, a prorated score is calculated as:
+For each scale, if all items are answered, their sum is used as the total score. If fewer than three items are completed, the score is set to missing. If at least three items are answered but some are missing, a prorated score is calculated as:
 <p style="font-size: 0.9em;">
   \[
   \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{Total Number of Items}
