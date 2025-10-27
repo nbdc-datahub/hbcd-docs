@@ -55,7 +55,6 @@
     <li>Examination of missingness (by counting the number of items answered for each participant).</li>
     <li>Check age to ensure that it falls within expected range of 3-9 months.</li>
     <li>Summary statistics and visualizations generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data).</li>
-    <li>Cronbach's Alpha was calculated to assess reliability.</li>
   </ul>
 </td></tr>
 </tbody>
@@ -63,7 +62,7 @@
 
 ## Instrument Details
 
-The Early Childhood Patient-Reported Outcome Measurement Information System (ecPROMIS) offers clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The Self Regulation - Flexibility Scale assesses young children’s ability to adapt in response to environmental demands, changes, and expectations. 
+The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Self Regulation - Flexibility Scale** assesses young children’s ability to adapt in response to environmental demands, changes, and expectations. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -101,7 +100,7 @@ If fewer than three items are answered, the sum score is set to missing.</p>
 
 ## References
 <div class="references"> 
-<p>Blackwell, C. K., Lai, J.-S., Kallen, M., Bevans, K. B., Davis, M. M., Wakschlag, L. S., & Cella, D. (2022). Measuring PROMIS® Social Relationships in early childhood. <i>Journal of Pediatric Psychology</i>, 47(5), 573–584. <a href="https://doi.org/10.1093/jpepsy/jsac031" target="_blank">https://doi.org/10.1093/jpepsy/jsac031</a></p>  
+<p>Blackwell, C. K., Kallen, M. A., Lai, J. S., Bevans, K. B., Wakschlag, L. S., & Cella, D. (2022). Measuring PROMIS® Well-Being in Early Childhood. <i>Journal of Pediatric Psychology</i>, 47(5), 559–572. <a href="https://doi.org/10.1093/jpepsy/jsac030" target="_blank">https://doi.org/10.1093/jpepsy/jsac030</a></p>  
 <p>Cella, D., Blackwell, C. K., & Wakschlag, L. S. (2022). Bringing PROMIS to Early Childhood: Introduction and quaptative methods for the development of Early Childhood Parent Report instruments. <i>Journal of Pediatric Psychology</i>, 47(5), 500–509. <a href="https://doi.org/10.1093/jpepsy/jsac027" target="_blank">https://doi.org/10.1093/jpepsy/jsac027</a></p>  
 <p>Lai, J.-S., Kallen, M. A., Blackwell, C. K., Wakschlag, L. S., & Cella, D. (2022). Psychometric considerations in developing PROMIS® measures for early childhood. <i>Journal of Pediatric Psychology</i>, 47(5), 510–522. <a href="https://doi.org/10.1093/jpepsy/jsac025" target="_blank">https://doi.org/10.1093/jpepsy/jsac025</a></p>  
 <p>Park, C. H., Blaisdell, C. J., & Gillman, M. W. (2022). The NIH ECHO program: An impetus for the development of early childhood PROMIS tools. <i>Journal of Pediatric Psychology</i>, 47(5), 497–499. <a href="https://doi.org/10.1093/jpepsy/jsac010" target="_blank">https://doi.org/10.1093/jpepsy/jsac010</a></p>
