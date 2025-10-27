@@ -1,6 +1,6 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-# ecPROMIS - Self-Regulation-Flexibility Scale
+# ecPROMIS Self-Regulation - Flexibility Scale
 
 <div class="info-block">
   <div class="info-row">
@@ -9,9 +9,7 @@
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Early Childhood Patient-Reported Outcome Measurement Information System - Self-regulation-Flexibility 
-    </div>
+    <div class="info-value">ecPROMIS Self-regulation - Flexibility Scale</div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
@@ -62,7 +60,7 @@
 
 ## Instrument Details
 
-The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Self Regulation - Flexibility Scale** assesses young children’s ability to adapt in response to environmental demands, changes, and expectations. 
+The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Self-Regulation - Flexibility Scale** assesses young children’s ability to adapt in response to environmental demands, changes, and expectations. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>

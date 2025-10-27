@@ -1,6 +1,6 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-# ecPROMIS - Peer Relation
+# ecPROMIS Peer Relationships Scale
 
 <div class="info-block">
   <div class="info-row">
@@ -9,9 +9,7 @@
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Early Childhood Patient-Reported Outcome Measurement Information System - Social Relationship Peer 
-    </div>
+    <div class="info-value">ecPROMIS Peer Relationships Scale</div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
@@ -74,13 +72,12 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-  <p><b>Addition of New Item</b><br>
-  The item <code>[peer_yn]</code> was added to the beginning of the survey instrument for HBCD to assess whether the child had opportunities to interact with other children during the primary period (past 7 days).</p>
-  <blockquote>
-    <strong>Item text</strong>: <i>“My child had opportunities to interact with other children."</i><br>
-    <strong>Response options</strong>: 0 [No]; 1 [Yes]; Decline to Answer
-  </blockquote>
-  The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn't scored), but can be used as a filter variable for analyses. This item was added with the approval of the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure.</p>
+<p>The item <code>[peer_yn]</code> was added to the beginning of the survey instrument for HBCD to assess whether the child had opportunities to interact with other children during the primary period (past 7 days).</p>
+<blockquote>
+<strong>Item text</strong>: <i>“My child had opportunities to interact with other children."</i><br>
+<strong>Response options</strong>: 0 [No]; 1 [Yes]; Decline to Answer
+</blockquote>
+The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn't scored), but can be used as a filter variable for analyses. This item was added with the approval of the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure.</p>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">

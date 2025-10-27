@@ -84,8 +84,7 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>General Language Modifications</b><br>
-Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible. In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
+<p>Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible. In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
 <p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p>
 </div>
 
@@ -100,7 +99,7 @@ Measure instructions and individual items that reference gendered pronouns (‘h
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Each of the 5 items for ecPROMIS Child-Caregiver Interaction is answered on a scale of 1-5: 1 (Never), 2 (Rarely), 3  (Sometimes), 4 (Often), and 5 (Always). A sum score is generated when the caregiver answers at least 3 out of the 5 items (<i>ecpromis1, ecpromis2, ecpromis3, ecpromis4, ecpromis5</i>). If caregivers answer 3 or 4 items, a prorated sum score is calculated using the formula: 
+<p>Each of the 5 items for the Child-Caregiver Relationship Scale is answered on a scale of 1-5: 1 (Never), 2 (Rarely), 3  (Sometimes), 4 (Often), and 5 (Always). A sum score is generated when the caregiver answers at least 3 out of the 5 items (<i>ecpromis1, ecpromis2, ecpromis3, ecpromis4, ecpromis5</i>). If caregivers answer 3 or 4 items, a prorated sum score is calculated using the formula: 
 <p style="font-size: 0.9em;">
   \[
   \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{5}
