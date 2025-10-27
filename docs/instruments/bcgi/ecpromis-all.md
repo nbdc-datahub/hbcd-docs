@@ -1,12 +1,12 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 (addition of 1-5 year version)</i> 🚧 </p>
 
 # ecPROMIS
-The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. HBCD includes three ecPROMIS instruments: the **Child-Caregiver Relationship Scale**, **Peer Relationships Scale**, and **Self Regulation - Flexibility Scale**:
+The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. **HBCD includes three ecPROMIS instruments scales:**
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th>Instrument</th>
+  <th>Instrument Scale</th>
   <th>Version</th>
   <th>Construct</th>
   <th>Table Name</th>
@@ -15,7 +15,7 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 </thead>
 <tbody>
 <tr>
-<td rowspan="2" style="word-wrap: break-word; white-space: normal;">Child-Caregiver Relationship Scale</td>
+<td rowspan="2" style="word-wrap: break-word; white-space: normal;"><b>Child-Caregiver Relationship Scale</b></td>
 <td><strong>&lt;1 year</strong></td>
 <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Evaluates the degree to which young children develop close, satisfying relationships with caregivers.</td>
 <td><code>mh_cg_pms__cc__inf</code></td>
@@ -27,14 +27,14 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 <td style="font-size: 0.85em;">V05, V07, V09</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Peer Relationships Scale</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Peer Relationships Scale</b></td>
 <td></td>
 <td style="word-wrap: break-word; white-space: normal;">Assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors.</td>
 <td><code>mh_cg_pms__peer</code></td>
 <td style="font-size: 0.85em;">V05, V07, V09</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Self Regulation - Flexibility Scale</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Self Regulation - Flexibility Scale</b></td>
 <td></td>
 <td style="word-wrap: break-word; white-space: normal;">Assesses young children’s ability to adapt in response to environmental demands, changes, and expectations.</td>
 <td><code>mh_cg_pms__selfreg</code></td>
