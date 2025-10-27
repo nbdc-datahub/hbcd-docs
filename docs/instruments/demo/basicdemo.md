@@ -40,6 +40,7 @@
 </div>
 <div class="warning-collapsible-content">
 <p>Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e. imperfect option for job type and number of hours).</p> 
+<p>Note that Household Roster derived from the <a href="../../SED/v01-demo">HBCD Demographics survey</a> is currently missing and will be included in release 2.0.</p>
 </div>
 
 <div id="issues" class="issues-banner">
@@ -136,12 +137,6 @@ There are two combined race and ethnicity variables that aggregate multiracial i
 <td style="word-break: break-all; white-space: normal;"><code>child_ethnoracial_acs_by_multi_ethnicity</code></td>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Individuals are assigned a single category, constructed from <code>child_race</code> and <code>child_ethnicity</code>, with subcategories for multiracial individuals based on ethnicity following the logic described under <a href="#variable-logic">Variable Logic</a>. <span class="tooltip"><i>Visit V02 onward</i><span class="tooltiptext">Data are not collected prior to birth, i.e. at the prenatal V01 visit, and will be available starting at visit V02</span></span><i></i></td>
-</tr>
-<tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Child race and ethnicity combined - multiracial aggregation by Black and non-Black distinction</td>
-<td style="word-break: break-all; white-space: normal;"><code>child_ethnoracial_acs_by_multi_race</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Admin</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Individuals are assigned a single category, constructed from <code>child_race</code> and <code>child_ethnicity</code>, with subcategories for multiracial individuals based on race following the logic described under <a href="#variable-logic">Variable Logic</a>. <span class="tooltip"><i>Visit V02 onward</i><span class="tooltiptext">Data are not collected prior to birth, i.e. at the prenatal V01 visit, and will be available starting at visit V02</span></span><i></i></td>
 </tr>
 <tr>
 <td style="padding: 8px; word-wrap: break-word; white-space: normal;">Mother combined race and ethnicity - multiracial category split into Hispanic and non-Hispanic groups</td>
