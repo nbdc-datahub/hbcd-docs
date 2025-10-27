@@ -15,34 +15,35 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Child-Caregiver Relationship Scale</td>
-  <td><strong>&lt;1 year</strong></td>
-  <td>Relationships</td>
-  <td><code>mh_cg_pms__cc__inf</code></td>
-  <td>V03, V05</td>
+<td rowspan="2" style="word-wrap: break-word; white-space: normal;">Child-Caregiver Relationship Scale</td>
+<td><strong>&lt;1 year</strong></td>
+<td rowspan="2" style="word-wrap: break-word; white-space: normal;">Evaluates the degree to which young children develop close, satisfying relationships with caregivers.</td>
+<td><code>mh_cg_pms__cc__inf</code></td>
+<td>V03, V05</td>
 </tr>
 <tr>
-  <td><strong>1-5 years</strong></td>
-  <td>Relationships</td>
-  <td><code>mh_cg_pms__cc__1to5</code></td>
-  <td>V05, V07, V09</td>
-</tr>
-<tr>
-  <td>Peer Relationships Scale</td>
-  <td></td>
-  <td>Peer Relationships</td>
-  <td><code>mh_cg_pms__peer</code></td>
+<td><strong>1-5 years</strong></td>
+<td><code>mh_cg_pms__cc__1to5</code></td>
 <td>V05, V07, V09</td>
 </tr>
 <tr>
-  <td>Self Regulation - Flexibility Scale</td>
-  <td></td>
-  <td>Self-Regulation and Flexibility</td>
-  <td><code>mh_cg_pms__selfreg</code></td>
-  <td>V05, V07, V09</td>
+<td style="word-wrap: break-word; white-space: normal;">Peer Relationships Scale</td>
+<td></td>
+<td style="word-wrap: break-word; white-space: normal;">Assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors.</td>
+<td><code>mh_cg_pms__peer</code></td>
+<td>V05, V07, V09</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Self Regulation - Flexibility Scale</td>
+<td></td>
+<td style="word-wrap: break-word; white-space: normal;">Assesses young children’s ability to adapt in response to environmental demands, changes, and expectations.</td>
+<td><code>mh_cg_pms__selfreg</code></td>
+<td>V05, V07, V09</td>
 </tr>
 </tbody>
 </table>
+
+The **Self Regulation - Flexibility Scale** a
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -60,7 +61,6 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 </div>
 
 ## Administration & Quality Control
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr><td><b>Child Specific</b></td>
@@ -85,29 +85,28 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 ## Instrument Details
 
 ### ecPROMIS - Child-Caregiver Relationship Scale
-The **Child–Caregiver Relationship Scale** evaluates the degree to which young children develop close, satisfying relationships with caregivers. It was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the Health Measures (ecPROMIS) team.
+The **Child–Caregiver Relationship Scale** was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the Health Measures (ecPROMIS) team.
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+<div id="hbcd-mod-chcg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
+  <a class="anchor-link" href="#hbcd-mod-chcg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>General Language Modifications</b><br>
-Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible. In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
+<p>Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns or replace with ‘my child.’ In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
 <p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+<div id="scoring-chcg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
+  <a class="anchor-link" href="#scoring-chcg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -124,13 +123,12 @@ If fewer than 3 items are completed, the sum score is marked as missing.</p>
 </div>
 
 ### ecPROMIS - Peer Relationships Scale
-The **Peer Relationships Scale** assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors. 
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+<div id="hbcd-mod-pr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
     <span class="text">HBCD Modification Details</span>
-    <a class="anchor-link" href="#hbcd-mod" title="Copy link">
+    <a class="anchor-link" href="#hbcd-mod-pr" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>
   </span>
@@ -167,13 +165,13 @@ If fewer than two items are answered, the sum score is set to missing.</p>
 </div>
 
 ### ecPROMIS - Self Regulation - Flexibility Scale
-The **Self Regulation - Flexibility Scale** assesses young children’s ability to adapt in response to environmental demands, changes, and expectations. 
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+
+<div id="hbcd-mod-selfreg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
+  <a class="anchor-link" href="#hbcd-mod-selfreg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -183,11 +181,11 @@ The **Self Regulation - Flexibility Scale** assesses young children’s ability 
 <p>The item queue was rearranged per the HBCD DEI Committee’s recommendation to: 2, 3, 4, 5, 1. The item order change is minimal, should have no effect on data, and was approved by the measure creators. While ecPROMIS measures are copyrighted, the content of each item is maintained.</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+<div id="scoring-selfreg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
+  <a class="anchor-link" href="#scoring-selfreg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -202,8 +200,6 @@ The **Self Regulation - Flexibility Scale** assesses young children’s ability 
 </p>
 If fewer than three items are answered, the sum score is set to missing.</p>
 </div>
-
-
 
 ## References
 <div class="references"> 
