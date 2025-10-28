@@ -51,7 +51,6 @@ Some participants reported challenges in answering certain questions, such as th
 Some variables with small cell sizes were withheld from the data release to minimize any risk of disclosure of identifying information. In addition, there are some variables that do not contain any data in the current data release (e.g., response options allowed for more household members and more jobs during pregnancy than were reported by the respondents who completed V01 to date). These variables are currently being retained because this could change as data collection proceeds.</p> 
 <p><b>Branching Logic</b><br>
 There are several items with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include: 
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <tbody>
 <tr><td><strong>Household roster</strong></td>
@@ -65,6 +64,8 @@ There are several items with branching logic; please consult the following resou
 <td><a href="../images/other-parent.png" target="_blank"><i>Click to view</i></a></td></tr>
 </tbody>
 </table>
+<p><b>Household Roster to be Added Release 2.0</b><br>
+<p>Note that Household Roster is currently missing and will be included in release 2.0.</p>
 </div>
 
 ## Administration & Quality Control
