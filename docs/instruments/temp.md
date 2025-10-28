@@ -1,8 +1,6 @@
 ## Instrument & Measure-Specific
 
-[Tabulated data](../datacuration/phenotypes.md) includes age variables quantifying the age of the child at the time of instrument administration. Similarly, metadata for [raw file-based data](../datacuration/file-based-data.md#raw-bids) (including MR, EEG, and wearable sensor recordings) report the age of the child at the time of data acquisition. With the exception of **Gestational Age at Administration** reported during the prenatal V01 visit, age variables are only available for visits V02 onward, post-birth.
-
-For file-based data, the age of the child at the time of data acquisition is reported in the session- and scan-level `.tsv` files that accompany these data ([see details](../datacuration/file-based-data.md#participant-session-scan-level-data)).
+[Tabulated data](../datacuration/phenotypes.md) includes age variables quantifying the age of the child at the time of instrument administration. Similarly, metadata for [raw file-based data](../datacuration/file-based-data.md#raw-bids) (including MR, EEG, and wearable sensor recordings) report the age of the child at the time of data acquisition (available within session and scan TSV metadata files - [see details](../datacuration/file-based-data.md#participant-session-scan-level-data)). With the exception of **Gestational Age at Administration** reported during the prenatal V01 visit, age variables are only available for visits V02 onward, post-birth.
 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
@@ -17,7 +15,7 @@ For file-based data, the age of the child at the time of data acquisition is rep
 <tr>
 <td>Gestational Age at Administration (GAA)</td>
 <td><code>gestational_age</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between the birth parent's LMP<sup><b>1</b></sup> and date of instrument administration. <span class="tooltip">Max 4 week variation<span class="tooltiptext">Varies no more than 4 weeks across protocol elements except when protocol exceptions were granted</span></span>. <b>V01 only</b>
+<td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between the birth parent's LMP<sup><b>1</b></sup> and date of instrument administration. Varies no more than 4 weeks across protocol elements except when protocol exceptions were granted. <b>V01 only</b>
 </td>
 </tr>
 <tr>
@@ -34,7 +32,7 @@ For file-based data, the age of the child at the time of data acquisition is rep
 <tr>
 <td>Adjusted Age at Time of Scan</td>
 <td><code>age_adjusted</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Time in days (not rounded) from <span class="tooltip">EDD<span class="tooltiptext">estimated date of delivery</span></span> to the date of data acquisition</td>
+<td style="word-wrap: break-word; white-space: normal;">Time in days elapsed between <span class="tooltip">EDD<span class="tooltiptext">estimated date of delivery</span></span> and date of data acquisition</td>
 </tr>
 <tr>
 <td>Chronological Age at Time of Scan</td>
