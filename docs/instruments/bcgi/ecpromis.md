@@ -55,8 +55,7 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td><b>&lt;1 year</b>: V03, V05<br>
-    <b>1-5 years</b>: V05, V07, V09</td></tr>
+<td><b>&lt;1 year</b>: V03, V05; <b>1-5 years</b>: V05, V07, V09</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>1-2 min</td></tr>
 <tr><td><b>Quality Control</b></td>
@@ -84,7 +83,7 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible. In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
+<p>In addition to the language adjustments made for infants, gendered pronouns were edited to either eliminate the pronouns entirely or replace with ‘my child.’ In contrast to other measures, following consultation with the Health Measures (ecPROMIS) team, the term “parent” was not replaced with “parent/caregiver.”</p>
 <p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p>
 </div>
 
@@ -100,7 +99,7 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 </div>
 <div class="collapsible-content">
 <p>The Child-Caregiver Relationship Scale includes 5 items answered on a scale of 1-5:<br>
-1 = <b>Never</b> &nbsp; 2 = <b>Rarely</b> &nbsp; 3 = <b>Sometimes</b> &nbsp 4 = <b>Often</b> &nbsp; 5 = <b>Always</b> &nbsp; <b>Decline to Answer = missing</b></p>
+1 = <b>Never</b> &nbsp; 2 = <b>Rarely</b> &nbsp; 3 = <b>Sometimes</b> &nbsp 4 = <b>Often</b> &nbsp; 5 = <b>Always</b> &nbsp; <i>Decline to Answer = missing</i></p>
 <p>If all items are answered, their sum is used as the total score. If fewer than three items are completed, the score is set to missing. If at least three items are answered but some are missing, a prorated score is calculated as:</p>
 <p style="font-size: 0.9em;">
   \[

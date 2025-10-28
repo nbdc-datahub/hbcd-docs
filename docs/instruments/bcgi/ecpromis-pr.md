@@ -91,13 +91,14 @@ The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn'
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Each of the 4 items are responded to using the following scale: 1, Never | 2, Almost Never | 3, Sometimes | 4, Often | 5, Almost Always | Decline to Answer, <code>peer_yn</code> is answered on a yes/no 0:1 scale. If all four items are answered, their sum is calculated. If at least three items are answered but some are missing, a prorated sum is computed: 
+<p>The Peer Relationship Scale includes the unscored <code>peer_yn</code> item and 4 scored items answered on a scale of 1-5:<br>
+1 = <b>Never</b> &nbsp; 2 = <b>Almost Never</b> &nbsp; 3 = <b>Sometimes</b> &nbsp 4 = <b>Often</b> &nbsp; 5 = <b>Almost Always</b> &nbsp; <i>Decline to Answer = missing</i></p>
+<p>If all items are answered, their sum is used as the total score. If fewer than three items are completed, the score is set to missing. If at least three items are answered but some are missing, a prorated score is calculated as:</p>
 <p style="font-size: 0.9em;">
   \[
   \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{4}
   \]
 </p>
-If fewer than two items are answered, the sum score is set to missing.</p>
 </div>
 
 ## References

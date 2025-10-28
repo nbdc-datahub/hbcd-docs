@@ -87,13 +87,14 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Caregivers respond to five items on a 1–5 scale (1 = Never, 5 = Always; “Decline to Answer” is allowed, but “Don’t Know” is not recommended). If all items are answered, the sum of the numerical responses is used. If at least three items are answered but some are missing, a prorated sum is calculated:
+<p>The Self-Regulation Scale includes 5 items answered on a scale of 1-5:<br>
+1 = <b>Never</b> &nbsp; 2 = <b>Rarely</b> &nbsp; 3 = <b>Sometimes</b> &nbsp 4 = <b>Often</b> &nbsp; 5 = <b>Always</b> &nbsp; <i>Decline to Answer = missing</i></p>
+<p>If all items are answered, their sum is used as the total score. If fewer than three items are completed, the score is set to missing. If at least three items are answered but some are missing, a prorated score is calculated as:</p>
 <p style="font-size: 0.9em;">
   \[
   \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{5}
   \]
 </p>
-If fewer than three items are answered, the sum score is set to missing.</p>
 </div>
 
 ## References
