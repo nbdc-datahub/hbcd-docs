@@ -53,21 +53,23 @@
 </div>
 </p>
 
-Basic Demographics is a **derived measure** with information computed from: 
+Basic Demographics is a **derived measure** with information computed from the following sources: 
 
 - **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
 - A subset of <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics instrument (Adult)</a> (`sed_bm_demo`) Social & Environmental Determinants domain instrument variables 
 
 Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.) for the adult/caregiver and beginning at Visit V02 for the child (post-birth). *However*, if only V01 data for a given participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about their child will be missing, as the child is not born until after the V01 visit.
 
-### Age, Sex, & Other Variables
+### Age, Sec, & Other Variables
 
 <p style="font-size: 0.9em; color: #555;">
 <i class="fa-solid fa-baby"></i>&nbsp;= Variable refers to the child &nbsp;&nbsp;
 <span class="pill-badge">V02+</span>&nbsp;= Available beginning Visit V02 (post-birth)
 </p>
-
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<tfoot><tr><td colspan="3" style="word-wrap: break-word; white-space: normal;">
+  <sup><b>1</b></sup> Years are to 2 decimal places, with fractional years calculated by dividing the number of whole months (rounded down) by 12<br>
+  <sup><b>2</b></sup> LMP: first day of the birth parent's last menstrual period</td></tr></tfoot>
 <thead>
   <tr style="background-color: #f8f9f9;">
     <th style="width: 20%;">Construct</th>
@@ -76,49 +78,41 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
   </tr>
 </thead>
 <tbody>
-<tr style="background-color: #ffffff;">
-  <td>Maternal age at V01 / delivery</td>
-  <td>
-    <code>mother_age_v01</code><br>
-    <code>mother_age_delivery</code>
-  </td>
-  <td>
-    Birth parent’s age at V01 (MAV01) or delivery (MAD).<br>
-    <i>See <a href="../../agevariables/#basic-demographics" target="_blank">
-      Age Variables <i style="font-size: 0.8em;" class="fa-solid fa-arrow-up-right-from-square"></i>
-    </a> for full documentation.</i>
-  </td>
+<tr>
+<td>Maternal Age at V01 (MAV01)</td>
+<td><code>mother_age_v01</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+  Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit</td>
 </tr>
-<tr style="background-color: #f9f9f9;">
-  <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery</td>
+<tr>
+<tr>
+<td>Maternal Age at Delivery (MAD)</td>
+<td><code>mother_age_delivery</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+  Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery</td>
+</tr>
+<tr>
+  <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery (GAD)</td>
   <td><code>gestational_age_delivery</code></td>
-  <td>
-    Child’s gestational age at delivery (GAD). <span class="pill-badge">V02+</span><br>
-    <i>See <a href="../../agevariables/#basic-demographics" target="_blank">
-      Age Variables <i style="font-size: 0.8em;" class="fa-solid fa-arrow-up-right-from-square"></i>
-    </a> for details.</i>
-  </td>
+  <td style="word-wrap: break-word; white-space: normal;">
+    Time elapsed (whole weeks, rounded down) between the birth parent's LMP<sup><b>2</b></sup> and child's DOB <span class="pill-badge">V02+</span></td>
 </tr>
-
-<tr style="background-color: #ffffff;">
+<tr>
   <td><i class="fa-solid fa-baby"></i>&nbsp;Child sex</td>
   <td><code>sex</code></td>
   <td>Derived from administrative records. <span class="pill-badge">V02+</span></td>
 </tr>
-
-<tr style="background-color: #f9f9f9;">
+<tr>
   <td>Mother education</td>
   <td><code>rc_mother_education</code></td>
   <td>Derived from <code>sed_bm_demo_edu_001</code> (HBCD Demographics).</td>
 </tr>
-
-<tr style="background-color: #ffffff;">
+<tr>
   <td>Total household income</td>
   <td><code>rc_mother_income</code></td>
   <td>Derived from <code>sed_bm_demo_income_002</code> (HBCD Demographics).</td>
 </tr>
-
-<tr style="background-color: #f9f9f9;">
+<tr>
   <td>Recruitment site</td>
   <td><code>recruitment_site</code></td>
   <td>De-identified site ID derived from administrative records.</td>

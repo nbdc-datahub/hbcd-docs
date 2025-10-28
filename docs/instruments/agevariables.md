@@ -1,42 +1,10 @@
 # Age Variable Definitions
 
-Fields reporting age in the <span class="tooltip">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> include global, single-point (i.e. static) variables in [Basic Demographics](#basic-demographics) (e.g. Maternal Age at V01), and [instrument-specific variables](#tabulated-instrument-data) for age that vary depending on the date of administration for a given instrument. In the [raw file-based data](#raw-file-based-data) (EEG, magnetic resonance imaging/spectroscropy, and motion sensor data), fields reporting age vary depending on the date of data acquisition, reported in the session- and scan-level `.tsv` files. See details for each below. 
+Separate variables reporting age are included in Basic Demographics (global, single-point variables), tabulated data (age variables at time of instrument administration), and file-based metadata (age variables at time of MR/EEG/wearable sensor data acquisition). See details for each below.
 
 ## Basic Demographics
 
-[Basic Demographics](demo/basicdemo.md) data (`sed_basic_demographics`) includes variables derived across instruments. Fields reporting age are derived from administrative records collected at screening. **These are single-point, static variables (i.e. they do not change over time) that should be present and consistent across all visits unless data beyond visit V01 is not available.** 
-
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
-    <thead>
-      <tr>
-        <th style="width: 20%; padding: 5px; text-align: center;">Name</th>
-        <th style="width: 10%; padding: 5px; text-align: center;">Variable Name</th>
-        <th style="width: 30%; padding: 5px; text-align: center;">Description</th>
-        <th style="width: 30%; padding: 5px; text-align: center;">Unit & Calculation</th>
-      </tr>
-    </thead>
-    <tbody>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Maternal Age at V01 (MAV01)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>mother_age_v01</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Birth parent's age, obtained from the scheduled date of the V01 visit</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Years (to two decimal places), with fractional years calculated by dividing the number of whole months (rounded down) by 12</td>
-</tr>
-<tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Maternal Age at Delivery (MAD)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>mother_age_delivery</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Birth parent's age at the time of their child's delivery (date of birth)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Years (to two decimal places), with fractional years calculated by dividing the total whole months (rounded down) by 12</td>
-</tr>
-<tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Gestational Age at Delivery (GAD)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>gestational_age_delivery</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Time elapsed between the first day of the birth parent's <span class="tooltip">LMP
-		<span class="tooltiptext">last menstrual period, estimated as EDD minus 280 days</span>
-	  </span> and the child's date of birth</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Whole weeks, rounded down to the nearest week</td>
-</tr>
-</tbody>
-</table>
+[Basic Demographics](demo/basicdemo.md) (`sed_basic_demographics`), derived from multiple sources/instruments, includes global, single-point variables that do not vary over time (e.g. gestational age of the child at delivery). Fields reporting age are computed from administrative records collected at screening, including: **Maternal Age at V01 (MAV01)**, **Maternal Age at Delivery (MAD)**, and **Gestational age at delivery (GAD)**. See full details in Basic Demographics - [Age, Sex, & Other Variables](demo/basicdemo.md#age-sec-other-variables).
 
 ## Tabulated Instrument Data
 
