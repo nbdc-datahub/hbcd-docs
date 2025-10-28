@@ -40,7 +40,6 @@
 </div>
 <div class="warning-collapsible-content">
 <p>Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e. imperfect option for job type and number of hours).</p> 
-<p>Note that Household Roster derived from the <a href="../../SED/v01-demo">HBCD Demographics survey</a> is currently missing and will be included in release 2.0.</p>
 </div>
 
 <div id="issues" class="issues-banner">
