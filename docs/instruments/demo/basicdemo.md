@@ -71,31 +71,27 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
   <sup><b>1</b></sup> Years are to 2 decimal places, with fractional years calculated by dividing the number of whole months (rounded down) by 12<br>
   <sup><b>2</b></sup> LMP: first day of the birth parent's last menstrual period</td></tr></tfoot>
 <thead>
-  <tr style="background-color: #f8f9f9;">
-    <th style="width: 20%;">Construct</th>
-    <th style="width: 20%;">Variable Name</th>
-    <th style="width: 60%;">Description / Details</th>
-  </tr>
+<tr style="background-color: #f8f9f9;">
+  <th style="width: 20%;">Construct</th>
+  <th style="width: 20%;">Variable Name</th>
+  <th style="width: 60%;">Description / Details</th>
+</tr>
 </thead>
 <tbody>
 <tr>
-<td>Maternal Age at V01 (MAV01)</td>
-<td><code>mother_age_v01</code></td>
-<td style="word-wrap: break-word; white-space: normal;">
-  Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit</td>
+  <td>Maternal Age at V01 (MAV01)</td>
+  <td><code>mother_age_v01</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit</td>
 </tr>
 <tr>
-<tr>
-<td>Maternal Age at Delivery (MAD)</td>
-<td><code>mother_age_delivery</code></td>
-<td style="word-wrap: break-word; white-space: normal;">
-  Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery</td>
+  <td>Maternal Age at Delivery (MAD)</td>
+  <td><code>mother_age_delivery</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery</td>
 </tr>
 <tr>
   <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery (GAD)</td>
   <td><code>gestational_age_delivery</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
-    Time elapsed (whole weeks, rounded down) between the birth parent's LMP<sup><b>2</b></sup> and child's DOB <span class="pill-badge">V02+</span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between the birth parent's LMP<sup><b>2</b></sup> and child's DOB <span class="pill-badge">V02+</span></td>
 </tr>
 <tr>
   <td><i class="fa-solid fa-baby"></i>&nbsp;Child sex</td>
