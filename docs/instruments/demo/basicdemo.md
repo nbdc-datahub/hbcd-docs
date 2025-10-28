@@ -67,9 +67,8 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <span class="pill-badge">V02+</span>&nbsp;= Available beginning Visit V02 (post-birth)
 </p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-<tfoot><tr><td colspan="3" style="word-wrap: break-word; white-space: normal;">
-  <sup><b>1</b></sup> Years are to 2 decimal places, with fractional years calculated by dividing the number of whole months (rounded down) by 12<br>
-  <sup><b>2</b></sup> LMP: first day of the birth parent's last menstrual period</td></tr></tfoot>
+<tfoot><tr><td colspan="3" style="word-wrap: break-word; white-space: normal; padding: 10px 8px 6px 8px;">
+  <sup><b>1</b></sup> Years are to 2 decimal places, calculated by dividing the number of whole months (rounded down) by 12</td></tr></tfoot>
 <thead>
 <tr style="background-color: #f8f9f9;">
   <th style="width: 20%;">Construct</th>
@@ -81,17 +80,17 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <tr>
   <td>Maternal Age at V01 (MAV01)</td>
   <td><code>mother_age_v01</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit</td>
+  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit. Derived from administrative records.</td>
 </tr>
 <tr>
   <td>Maternal Age at Delivery (MAD)</td>
   <td><code>mother_age_delivery</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery</td>
+  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery. Derived from administrative records.</td>
 </tr>
 <tr>
   <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery (GAD)</td>
   <td><code>gestational_age_delivery</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between the birth parent's LMP<sup><b>2</b></sup> and child's DOB <span class="pill-badge">V02+</span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between the birth parent's <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB. Derived from administrative records. <span class="pill-badge">V02+</span></td>
 </tr>
 <tr>
   <td><i class="fa-solid fa-baby"></i>&nbsp;Child sex</td>
