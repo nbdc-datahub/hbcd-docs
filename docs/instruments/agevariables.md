@@ -8,12 +8,20 @@ Basic Demographics (`sed_basic_demographics`), derived from multiple sources/ins
 See full details in **Basic Demographics - [Age, Sex, & Other Variables](demo/basicdemo.md#age-sec-other-variables)**.
 
 ## Tabulated & File-Based Data
-[Tabulated data](../datacuration/phenotypes.md) includes age variables quantifying the age of the child at the time of instrument administration. Similarly, metadata for [raw file-based data](../datacuration/file-based-data.md#raw-bids) (including MR, EEG, and wearable sensor recordings) report the age of the child at the time of data acquisition (available within session and scan TSV metadata files - [see details](../datacuration/file-based-data.md#participant-session-scan-level-data)). With the exception of **Gestational Age at Administration** reported during the prenatal V01 visit, age variables are available post-birth for visits V02 onward.
+
+Age variables are included across both **[tabulated](../datacuration/phenotypes.md)** and **[raw file-based](../datacuration/file-based-data.md#raw-bids)**  datasets to describe the child’s age at the time of data collection.
+
+<ul style="margin-top: -4px;">
+  <li><i class="fa-solid fa-table"></i> <b>Tabulated data</b>: Age reflects the time of <i>instrument administration</i>.</li>
+  <li><i class="fa-solid fa-folder-open"></i> <b>File-based data</b>: Age reflects the time of <i>data acquisition</i> (e.g., MR, EEG, wearable sensors - available within <a href="../../datacuration/file-based-data/#participant-session-scan-level-data">session/scan TSV metadata files</a>).</li>
+</ul>
+
+Age variables are available for postnatal visits (V02 and later), except for **Gestational Age at Administration**, which applies only to the prenatal V01 visit.
 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <tbody>
 <tr>
-  <td style="color: teal;"><b>Tabulated Data Variables</b></td>
+  <td style="color: teal;"><i class="fa-solid fa-table"></i> <b>Tabulated Data Variables</b></td>
   <td><b>Details</b></td>
 </tr>
 <tr>
@@ -23,14 +31,14 @@ See full details in **Basic Demographics - [Age, Sex, & Other Variables](demo/ba
 </tr>
 <tr>
 <td>Chronological Age at Administration<br><code>candidate_age</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Age in years<sup><b>2</b></sup> at time of instrument administration. Computed with jittered DOB (up to 7 days).</td>
+<td style="word-wrap: break-word; white-space: normal;">Age in years<sup><b>2</b></sup> at time of instrument administration. Computed using a jittered DOB (up to 7 days).</td>
 </tr>
 <tr>
 <td>Adjusted Chronological Age at Administration<br><code>adjusted_age</code></td>
 <td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between <span class="tooltip">EDD<span class="tooltiptext">estimated date of delivery</span></span> and date of instrument administration.</td>
 </tr>
 <tr>
-  <td style="color: teal;"><b>File-Based Data Variables</b></td>
+  <td style="color: teal;"><i class="fa-solid fa-folder-open"></i> <b>File-Based Data Variables</b></td>
   <td><b>Details</b></td>
 </tr>
 <tr>
@@ -39,7 +47,7 @@ See full details in **Basic Demographics - [Age, Sex, & Other Variables](demo/ba
 </tr>
 <tr>
 <td>Chronological Age at Time of Scan<br><code>age</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Age in years<sup><b>2</b></sup> at time of data acquisition. Computed with jittered DOB (up to 7 days).</td>
+<td style="word-wrap: break-word; white-space: normal;">Age in years<sup><b>2</b></sup> at time of data acquisition. Computed using a jittered DOB (up to 7 days).</td>
 </tr>
 </tbody>
 <tfoot><tr><td colspan="2" style="word-wrap: break-word; white-space: normal;">
