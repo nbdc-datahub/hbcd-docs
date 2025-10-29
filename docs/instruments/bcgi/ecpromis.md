@@ -72,6 +72,8 @@
 ## Instrument Details
 The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Child–Caregiver Relationship Scale** evaluates the degree to which young children develop close, satisfying relationships with caregivers. It was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the Health Measures (ecPROMIS) team.
 
+For the HBCD study, the **ecPROMIS Child–Caregiver Relationship Form** was developed based on the ecPROMIS Parent-Report Short Form v1.0 – Social Relationships: Child–Caregiver Interactions 5a. Because the original measure was designed for children aged **1–5 years**, an adapted version was created for **infants under 1 year** (i.e. 3-9 month old infants from visit V03), replacing the term ‘my child’ with 'my baby' per the guidance of ecPROMIS developers.
+
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">

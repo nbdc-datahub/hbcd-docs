@@ -795,19 +795,19 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b>FILE-BASED DATA</b></p>
+<p><i class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
   <th>Modality</th>
   <th>Raw BIDS</th>
   <th>Pipeline Derivatives</th>
-  <th>Tabulated Data</th>
+  <th>Tabulated Derivatives</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="4">Structural & Functional MRI</td>
+  <td rowspan="4">Structural &<br>Functional MRI</td>
   <td rowspan="4"><code>anat/</code><br><code>fmap/</code><br><code>func/</code></td>
   <td>MRIQC (<a href="../../instruments/mri/smri/#mriqc" target="_blank">sMRI</a> & <a href="../../instruments/mri/fmri/#mriqc" target="_blank">fMRI</a>)</td>
   <td style="text-align: center;"><i style="color: green;" class="fa-solid fa-check"></i></td>
@@ -843,7 +843,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td style="text-align: center;"><i style="color: red;" class="fa-solid fa-xmark"></i></td>
 </tr>
 <tr>
-  <td>MRS</td>
+  <td>MR Spectroscopy</td>
   <td><code>mrs/</code></td>
   <td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a></td>
   <td style="text-align: center;"><i style="color: green;" class="fa-solid fa-check"></i></td>
@@ -851,7 +851,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </tbody>
 </table>
 
-<p><i class="fa-solid fa-table"></i> &nbsp; <b>TABULATED DATA</b></p>
+<p><i class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr><td colspan="3" style="color: teal;"><b>Instrument Data</b></td></tr>
