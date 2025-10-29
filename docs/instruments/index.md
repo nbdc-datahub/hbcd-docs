@@ -741,48 +741,108 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th></th>
-      <th style="width: 40%;">EEG Task</th>
-      <th style="width: 60%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-left"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="eeg/mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></td>
-      <td><code>eeg_made_task-MMN_acq-eeg_preprocessingReport</code><br><code>eeg_made_task-MMN_acq-eeg_ERPSummaryStats</code><br><code>eeg_qc_task-MMN</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="eeg/faces" target="_blank">Faces (Face)</a></td>
-      <td><code>eeg_made_task-FACE_acq-eeg_preprocessingReport</code><br><code>eeg_made_task-FACE_acq-eeg_ERPSummaryStats</code><br><code>eeg_qc_task-FACE</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="eeg/videors" target="_blank">Video Resting State (RS)</a></td>
-      <td><code>eeg_made_task-RS_acq-eeg_preprocessingReport</code><br><code>eeg_qc_task-RS</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="eeg/vep" target="_blank">Visual Evoked Potential (VEP)</a></td>
-      <td><code>eeg_made_task-VEP_acq-eeg_preprocessingReport</code><br><code>eeg_made_task-VEP_acq-eeg_ERPSummaryStats</code><br><code>eeg_qc_task-VEP</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-      <td><a href="eeg/#rawbids" target="_blank">All Tasks - <strong><i>Raw BIDS</i></strong></a></td>
-      <td><i>rawdata/sub-{ID}/ses-{V0X}/eeg/</i></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-      <td><a href="eeg/#made" target="_blank">All Tasks - <strong><i>HBCD-MADE Derivatives</i></strong></a></td>
-      <td><i>derivatives/made/</i></td>
-    </tr>
-  </tbody>
+<p><i class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b><br>
+File-based EEG data for all tasks includes <a href="eeg/#rawbids" target="_blank">raw BIDS</a> (<code>eeg/</code> folders) and processed <a href="eeg/#made" target="_blank">HBCD-MADE</a> pipeline derivatives.</p>
+<p><i class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
+<p style="font-size: 0.9em; color: #555;">
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= HBCD-MADE pipeline derivatives in HBCD tabulated format (<i><a href="../datacuration/overview/#warning" target="_blank">see details</a></i>)
+</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<th>EEG Task</th>
+<th>Table</th>
+<th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>All Tasks</b></td>
+<td><a href="eeg/qc" target="_blank">Quality Control Metrics</a></td>
+<td><code>eeg_qc_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span></code></td>
+</tr>
+<tr>
+<td><b>Auditory Mismatch Negativity</b> (<a href="eeg/mmn" target="_blank">MMN</a>)</td>
+<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats</td>
+<td><code>eeg_made_task-<span class="blue-text">MMN</span>_acq-eeg_preprocessingReport</code><br>
+<code>eeg_made_task-<span class="blue-text">MMN</span>_acq-eeg_ERPSummaryStats</code>
+</td>
+</tr>
+<tr>
+<td><b>Faces</b> (<a href="eeg/face" target="_blank">FACE</a>)</td>
+<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats</td>
+<td><code>eeg_made_task-<span class="blue-text">FACE</span>_acq-eeg_preprocessingReport</code><br>
+<code>eeg_made_task-<span class="blue-text">FACE</span>_acq-eeg_ERPSummaryStats</code>
+</td>
+</tr>
+<tr>
+<td><b>Video Resting State</b> (<a href="eeg/rs" target="_blank">RS</a>)</td>
+<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report</td>
+<td><code>eeg_made_task-<span class="blue-text">RS</span>_acq-eeg_preprocessingReport</code>
+</td>
+</tr>
+<tr>
+<td><b>Visual Evoked Potential</b> (<a href="eeg/vep" target="_blank">VEP</a>)</td>
+<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats</td>
+<td><code>eeg_made_task-<span class="blue-text">VEP</span>_acq-eeg_preprocessingReport</code><br>
+<code>eeg_made_task-<span class="blue-text">VEP</span>_acq-eeg_ERPSummaryStats</code>
+</td>
+</tr>
+</tbody>
 </table>
 </div>
+
+<div id="eeg-alt" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-bolt"></i></span>
+  <span class="text-with-link">
+  <span class="text">EEG-ALT</span>
+  <a class="anchor-link" href="#eeg-alt" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><b><a href="eeg/" target="_blank">HBCD EEG data <i style="font-size: 0.9em;" class="fa-solid fa-arrow-up-right-from-square"></i></a></b> includes the following tasks:</p>
+<div style="margin-top: 8px; font-size: 0.9em; background-color: #f9f9f9; padding: 6px 10px; border-radius: 6px;">
+  <code>MMN</code>: Auditory Mismatch Negativity &nbsp;&nbsp;|&nbsp;&nbsp;
+  <code>FACE</code>: Faces &nbsp;&nbsp;|&nbsp;&nbsp;
+  <code>RS</code>: Video Resting State &nbsp;&nbsp;|&nbsp;&nbsp;
+  <code>VEP</code>: Visual Evoked Potential
+</div>
+<p><i class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b><br>
+File-based EEG data for all tasks includes <a href="eeg/#rawbids" target="_blank">raw BIDS</a> (<code>eeg/</code> folders) and processed <a href="eeg/#made" target="_blank">HBCD-MADE</a> pipeline derivatives.</p>
+<p><i class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
+<p style="font-size: 0.9em; color: #555;">
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives in tabulated format (<i><a href="../datacuration/overview/#warning" target="_blank">see details</a></i>)
+</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="eeg/qc" target="_blank">Quality Control Metrics</a> (capping quality, artifacts, etc.)</td>
+  <td><code>eeg_qc_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span></code></td>
+</tr>
+<tr>
+<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Preprocessing Reports (HBCD tabulated format)</td>
+<td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span>_acq-eeg_preprocessingReport</code></td>
+</tr>
+<tr>
+<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE ERP Summary Statistics (HBCD tabulated format)</td>
+<td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|VEP&gt;</span>_acq-eeg_ERPSummaryStats</code></td>
+</tr>
+<tr>
+</tbody>
+</table>
+</div>
+
+
+
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
@@ -797,17 +857,24 @@ Expand the sections below to see a list of measures associated with each domain 
 <div class="table-collapsible-content">
 <p><i class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tfoot>
+<tr>
+  <td colspan="4" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
+    <sup><b>1</b></sup> Whenever possible, pipeline derivatives are also provided in the HBCD tabulated format to match other instruments - <a href="../datacuration/overview/#warning" target="_blank">see details</a>
+  </td>
+</tr>
+</tfoot>
 <thead>
 <tr>
   <th>Modality</th>
   <th>Raw BIDS</th>
   <th>Pipeline Derivatives</th>
-  <th>Tabulated Derivatives</th>
+  <th>Tabulated Derivatives<sup><b>1</b></sup></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="4">Structural &<br>Functional MRI</td>
+  <td rowspan="4"><a href="mri/smri" target="_blank">Structural</a> &<br><a href="mri/fmri" target="_blank">Functional</a> MRI</td>
   <td rowspan="4"><code>anat/</code><br><code>fmap/</code><br><code>func/</code></td>
   <td>MRIQC (<a href="../../instruments/mri/smri/#mriqc" target="_blank">sMRI</a> & <a href="../../instruments/mri/fmri/#mriqc" target="_blank">fMRI</a>)</td>
   <td style="text-align: center;"><i style="color: green;" class="fa-solid fa-check"></i></td>
@@ -825,13 +892,13 @@ Expand the sections below to see a list of measures associated with each domain 
   <td style="text-align: center;"><i style="color: green;" class="fa-solid fa-check"></i></td>
 </tr>
 <tr>
-  <td>Quantitative MRI</td>
+  <td><a href="mri/qmri" target="_blank">Quantitative MRI</a></td>
   <td><code>anat/</code></td>
   <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI</a> & <a href="../../instruments/mri/qmri/#derivatives" target="_blank">qMRI PostProc</a></td>
   <td style="text-align: center;"><i style="color: red;" class="fa-solid fa-xmark"></i></td>
 </tr>
 <tr>
-  <td rowspan="2">Diffusion MRI</td>
+  <td rowspan="2"><a href="mri/dmri" target="_blank">Diffusion MRI</a></td>
   <td rowspan="2"><code>dwi/</code></td>
   <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
   <td style="text-align: center;"><i style="color: green;" class="fa-solid fa-check"></i></td>
@@ -843,7 +910,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td style="text-align: center;"><i style="color: red;" class="fa-solid fa-xmark"></i></td>
 </tr>
 <tr>
-  <td>MR Spectroscopy</td>
+  <td><a href="mri/mrs" target="_blank">MR Spectroscopy</a></td>
   <td><code>mrs/</code></td>
   <td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a></td>
   <td style="text-align: center;"><i style="color: green;" class="fa-solid fa-check"></i></td>
@@ -852,13 +919,15 @@ Expand the sections below to see a list of measures associated with each domain 
 </table>
 
 <p><i class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
+<p style="font-size: 0.9em; color: #555;">
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives in tabulated format
+</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-<tr><td colspan="3" style="color: teal;"><b>Instrument Data</b></td></tr>
 <tr>
-<th style="width: 30%;">Instrument</th>
-<th style="width: 30%;">Construct</th>
-<th style="width: 30%;">Table Name</th>
+<th>Instrument / <i style="color: teal;" class="fa-solid fa-diagram-project"></i> Modality</th>
+<th>Construct / <i style="color: teal;" class="fa-solid fa-diagram-project"></i> Pipeline</th>
+<th>Table Name</th>
 </tr>
 </thead>
 <tbody>
@@ -872,19 +941,8 @@ Expand the sections below to see a list of measures associated with each domain 
   <td>Manual QC</td>
   <td><code>img_brainswipes_xcpd-bold</code></td>
 </tr>
-<tr><td colspan="3" style="border-top: 2px solid #cce7e7;"></td></tr>
-</tbody>
-<tr><td colspan="3" style="color: teal;"><b>Pipeline Derivatives in Tabulated Form</b></td></tr>
-<thead>
-  <tr>
-    <th style="width: 30%;">Modality</th>
-    <th style="width: 30%;">Pipeline</th>
-    <th style="width: 30%;">Table Name</th>
-  </tr>
-</thead>
-<tbody>
 <tr>
-  <td rowspan="3">sMRI & fMRI</td>
+  <td rowspan="3"><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; sMRI & fMRI</td>
   <td>MRIQC</td>
   <td><code>img_mriqc_<span class="blue-text">&lt;T1w|T2w&gt;</span></code><br><code>img_mriqc_bold</code></td>
 </tr>
@@ -893,7 +951,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>img_bibsnet_space-<span class="blue-text">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes</code></td>
 </tr>
 <tr>
-  <td><a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a></td>
+  <td>XCP-D</td>
   <td><code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph</code><br>
     <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-sulc_morph</code><br>
     <code>img_xcpd_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-thickness_morph</code><br>
@@ -903,12 +961,12 @@ Expand the sections below to see a list of measures associated with each domain 
   </td>
 </tr>
 <tr>
-  <td>dMRI</td>
+  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; dMRI</td>
   <td>QSIPrep</td>
   <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
 </tr>
 <tr>
-  <td>MRS</td>
+  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; MRS</td>
   <td>OSPREY-BIDS</td>
   <td>
     <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
@@ -975,5 +1033,4 @@ Expand the sections below to see a list of measures associated with each domain 
   </tbody>
   </table>
 </div>
-
 
