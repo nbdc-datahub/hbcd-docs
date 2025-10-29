@@ -995,7 +995,7 @@ separate out stand-alone tabulated data from derived
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th>Modalities</th>
+  <th>Modality</th>
   <th>Raw</th>
   <th>Derivatives</th>
   <th>Tabulated Data</th>
@@ -1003,7 +1003,7 @@ separate out stand-alone tabulated data from derived
 </thead>
 <tbody>
 <tr>
-  <td rowspan="5">Structural &<br>Functional MRI</td>
+  <td rowspan="5">sMRI & fMRI</td>
   <td rowspan="5"><code>anat/</code><br><code>fmap/</code><br><code>func/</code></td>
   <td>MRIQC - <a href="../../instruments/mri/smri/#mriqc" target="_blank">sMRI</a> & <a href="../../instruments/mri/fmri/#mriqc" target="_blank">fMRI</a></td>
   <td><code>img_mriqc_<span class="blue-text">&lt;T1w|T2w&gt;</span></code><br><code>img_mriqc_bold</code></td>
@@ -1014,11 +1014,11 @@ separate out stand-alone tabulated data from derived
 </tr>
 <tr>
   <td><a href="../../instruments/mri/fmri/#nibabies" target="_blank">Infant fMRIPrep</a></td>
-  <td>-</td>
+  <td></td>
 </tr>
 <tr>
   <td><a href="../../instruments/mri/fmri/#fs-mcribs" target="_blank">FreeSurfer & M-CRIB-S</a></td>
-  <td>-</td>
+  <td></td>
 </tr>
 <tr>
   <td><a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a></td>
@@ -1031,29 +1031,25 @@ separate out stand-alone tabulated data from derived
   </td>
 </tr>
 <tr>
-  <td rowspan="2">Quantitative MRI</td>
+  <td rowspan="2">qMRI</td>
   <td rowspan="2"><code>anat/</code></td>
   <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI</a></td>
-  <td>-</td>
+  <td></td>
 </tr>
 <tr>
   <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">qMRI PostProc</a></td>
-  <td>-</td>
+  <td></td>
 </tr>
 <tr>
-  <td rowspan="2">Diffusion MRI</td>
+  <td rowspan="2">dMRI</td>
   <td rowspan="2"><code>dwi/</code></td>
   <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
   <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
 </tr>
 <tr>
-<td><a href="mri/dmri/#qsirecon" target="_blank">QSIRecon</a><br>
-    <a href="mri/dmri/#qsirecon-DSIStudio" target="_blank">QSIRecon-DSI Studio</a><br>
-    <a href="mri/dmri/#qsirecon-DIPYDKI" target="_blank">QSIRecon-DIPY DKI</a><br>
-    <a href="mri/dmri/#qsirecon-TORTOISE" target="_blank">QSIRecon-TORTOISE MAP-MRI</a><br>
-    <a href="mri/dmri/#qsirecon-TORTOISE" target="_blank">QSIRecon-TORTOISE Tensor</a>
+<td><a href="mri/dmri/#qsirecon" target="_blank">QSIRecon</a>
 </td>
-<td>-</td>
+<td></td>
 <tr>
   <td>MRS</td>
   <td><code>mrs/</code></td>
@@ -1079,95 +1075,3 @@ separate out stand-alone tabulated data from derived
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-<br><br><br>
-
-
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Modalities</th>
-  <th>Raw BIDS</th>
-  <th>Derivatives</th>
-  <th>Pipeline Name & Link to Derivatives</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td rowspan="5">Structural & Functional MRI</td>
-  <td rowspan="5"><code>anat/</code><br><code>fmap/</code><br><code>func/</code></td>
-  <td><code>mriqc/</code></td>
-  <td>MRIQC - <a href="../../instruments/mri/smri/#mriqc" target="_blank">sMRI</a> & <a href="../../instruments/mri/fmri/#mriqc" target="_blank">fMRI</a></td>
-</tr>
-<tr>
-  <td><code>bibsnet/</code></td>
-  <td><a href="../../instruments/mri/smri/#bibsnet" target="_blank">BIBSNet</a></td>
-</tr>
-<tr>
-  <td><code>nibabies/</code></td>
-  <td><a href="../../instruments/mri/fmri/#nibabies" target="_blank">Infant fMRIPrep (or Nibabies)</a></td>
-</tr>
-<tr>
-  <td><code>freesurfer/</code> & <code>mcribs/</code></td>
-  <td><a href="../../instruments/mri/fmri/#fs-mcribs" target="_blank">FreeSurfer & M-CRIB-S</a></td>
-</tr>
-<tr>
-  <td><code>xcp_d/</code></td>
-  <td><a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a></td>
-</tr>
-<tr>
-  <td rowspan="2">Quantitative MRI</td>
-  <td rowspan="2"><code>anat/</code></td>
-  <td><code>symri/</code></td>
-  <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI</a></td>
-</tr>
-<tr>
-  <td><code>qmri_postproc/</code></td>
-  <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">qMRI PostProc</a></td>
-</tr>
-<tr>
-  <td rowspan="6">Diffusion MRI</td>
-  <td rowspan="6"><code>dwi/</code></td>
-  <td><code>qsiprep/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
-</tr>
-<tr>
-  <td><code>qsirecon/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon" target="_blank">QSIRecon</a></td>
-</tr>
-<tr>
-  <td><code>qsirecon-DSIStudio/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon-DSIStudio" target="_blank">QSIRecon-DSI Studio</a></td>
-</tr>
-<tr>
-  <td><code>qsirecon-DIPYDKI/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon-DIPYDKI" target="_blank">QSIRecon-DIPY DKI</a></td>
-</tr>
-<tr>
-  <td><code>qsirecon-TORTOISE_model-MAPMRI/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">QSIRecon-TORTOISE MAP-MRI</a></td>
-</tr>
-<tr>
-  <td><code>qsirecon-TORTOISE_model-tensor/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">QSIRecon-TORTOISE Tensor</a></td>
-</tr>
-<tr>
-  <td>MR Spectroscopy</td>
-  <td><code>mrs/</code></td>
-  <td><code>osprey/</code></td>
-  <td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a></td>
-</tr>
-</tbody>
-</table>
-
-
-
