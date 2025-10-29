@@ -70,9 +70,10 @@
 </table>
 
 ## Instrument Details
-The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Child–Caregiver Relationship Scale** evaluates the degree to which young children develop close, satisfying relationships with caregivers. It was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the Health Measures (ecPROMIS) team.
 
-For the HBCD study, the **ecPROMIS Child–Caregiver Relationship Form** was developed based on the ecPROMIS Parent-Report Short Form v1.0 – Social Relationships: Child–Caregiver Interactions 5a. Because the original measure was designed for children aged **1–5 years**, an adapted version was created for **infants under 1 year** (i.e. 3-9 month old infants from visit V03), replacing the term ‘my child’ with 'my baby' per the guidance of ecPROMIS developers.
+The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. One of its key components is the **Child–Caregiver Relationship Scale**, which evaluates the degree to which young children develop close, satisfying relationships with caregivers. 
+
+For the HBCD study, the ecPROMIS Child–Caregiver Relationship Form was developed based on the ecPROMIS Parent-Report Short Form v1.0 – Social Relationships: Child–Caregiver Interactions 5a. Because the original measure was designed for children aged **1–5 years**, an adapted version was created for **infants under 1 year** (i.e. 3-9 month old infants from visit V03), replacing the term ‘my child’ with 'my baby' per the guidance of ecPROMIS developers. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -85,8 +86,10 @@ For the HBCD study, the **ecPROMIS Child–Caregiver Relationship Form** was dev
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>In addition to the language adjustments made for infants, gendered pronouns were edited to either eliminate the pronouns entirely or replace with ‘my child.’ In contrast to other measures, following consultation with the Health Measures (ecPROMIS) team, the term “parent” was not replaced with “parent/caregiver.”</p>
-<p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p>
+<p><b>General Language Modiﬁcations</b><br> 
+Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible. In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
+<p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p> 
+<p>The child-caregiver ecPROMIS was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the HealthMeasures (ecPROMIS) team.</p>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
