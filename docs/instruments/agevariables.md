@@ -52,7 +52,7 @@ This page defines how age is represented across HBCD datasets. Separate variable
 
 ## <i class="fa-solid fa-table"></i> Tabulated Data
 
-The majority of <a href="../../datacuration/phenotypes/" target="_blank">tabulated datasets</a> include the following age variables describing the child’s age at the time of **instrument administration**/**data acquisition** (including tabulated data computed from imaging/EEG pipeline derivatives <a href="../../datacuration/overview/#warning" target="_blank"><i style="font-size: 0.85em;" class="fa-solid fa-arrow-up-right-from-square"></i></a>). The primary exception is tabulated data within the <a href="../#demo" target="_blank">Demographics domain</a> datasets; see [Basic Demographics](#basic-demographics) below. 
+Most <a href="../../datacuration/phenotypes/" target="_blank">tabulated datasets</a> include the following age variables describing the child’s age at the time of **instrument administration** (or **data acquisition** for tabulated data computed from imaging/EEG pipeline derivatives <a href="../../datacuration/overview/#warning" target="_blank"><i style="font-size: 0.85em;" class="fa-solid fa-arrow-up-right-from-square"></i></a>). The primary exception is tabulated data within the <a href="../#demo" target="_blank">Demographics domain</a> datasets; see [Basic Demographics](#basic-demographics) below. 
 
 <p style="font-size: 0.9em; color: #555;">
 <i class="fa-solid fa-baby"></i>&nbsp;= Variable refers to the child &nbsp;&nbsp;
