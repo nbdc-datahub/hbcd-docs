@@ -52,7 +52,7 @@ This page defines how age is represented across HBCD datasets. Separate variable
 
 ## <i class="fa-solid fa-table"></i> Tabulated Data
 
-Age variables in most [tabulated datasets](../datacuration/phenotypes.md) describe the child’s age at the time of **instrument administration** or **data acquisition** for tabulated brain imaging/EEG pipeline derivatives (<a href="../../datacuration/overview/#warning" target="_blank">see details</a>). Note that the variables listed here are not applicable to the derived <a href="../#demo" target="_blank">Demographics domain</a> datasets; see [Basic Demographics](#basic-demographics) below. 
+The majority of <a href="../../datacuration/phenotypes/" target="_blank">tabulated datasets</a> include the following age variables describing the child’s age at the time of **instrument administration**/**data acquisition** (including tabulated data computed from imaging/EEG pipeline derivatives <a href="../../datacuration/overview/#warning" target="_blank"><i style="font-size: 0.85em;" class="fa-solid fa-arrow-up-right-from-square"></i></a>). The primary exception is tabulated data within the <a href="../#demo" target="_blank">Demographics domain</a> datasets; see [Basic Demographics](#basic-demographics) below. 
 
 <p style="font-size: 0.9em; color: #555;">
 <i class="fa-solid fa-baby"></i>&nbsp;= Variable refers to the child &nbsp;&nbsp;
@@ -131,7 +131,7 @@ Age variables in [raw file-based datasets](../datacuration/file-based-data.md#ra
 
 ## Basic Demographics
 
-Variables within the <a href="../#demo" target="_blank">Demographics domain</a> follow a separate set of rules for fields reporting age. Unlike tabulated instrument data, Visit Information (`par_visit_data`) does not contain age variables. The <a href="../demo/basicdemo/" target="_blank">Basic Demographics</a> dataset (`sed_basic_demographics`), derived from multiple sources and instruments, provides **global, single-point variables** that do not vary over time (for example, gestational age at delivery). Fields reporting age are provided, but the rules for how they are computed differ from what is described above (i.e. quantification of years and LMP). 
+Datasets within the <a href="../#demo" target="_blank">Demographics <i style="font-size: 0.8em;" class="fa-solid fa-arrow-up-right-from-square"></i></a> domain, including Basic Demographics (`sed_basic_demographics`) and Visit Information (`par_visit_data`), combine information from multiple sources, including administrative data and study instruments. <a href="../demo/basicdemo/" target="_blank">Basic Demographics</a> (which provides global, single-point variables that do not vary over time, such as participant race/ethnicity) includes a distinct set of age variables that follow slightly different logic than those used in standard instrument datasets described above (e.g., how years and LMP-based ages are calculated). Visit Information does not include age variables.
 
 <i>From <a href="../demo/basicdemo/#age-sex-other-variables" target="_blank">Basic Demographics – Age, Sex, & Other Variables</a>:</i>
 <table class="compact-table-no-vertical-lines" style="width: 100%; table-layout: fixed; font-size: 15px; border: 2px solid #0086a0ff; border-radius: 8px; border-collapse: collapse;">
