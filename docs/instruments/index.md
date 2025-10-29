@@ -965,7 +965,7 @@ Expand the sections below to see a list of measures associated with each domain 
 separate out stand-alone tabulated data from derived 
 
 **STAND-ALONE TABULATED DATA**
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <tr>
     <th style="width: 5%;"></th>
@@ -1047,8 +1047,7 @@ separate out stand-alone tabulated data from derived
   <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
 </tr>
 <tr>
-<td><a href="mri/dmri/#qsirecon" target="_blank">QSIRecon</a>
-</td>
+<td><a href="mri/dmri/#qsirecon" target="_blank">QSIRecon</a></td>
 <td></td>
 <tr>
   <td>MRS</td>
