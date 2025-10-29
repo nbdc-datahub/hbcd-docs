@@ -296,9 +296,9 @@ hbcd/
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th>Modalities</th>
+  <th>Modality</th>
   <th>Derivatives Folder</th>
-  <th>Pipeline Name & Link to Derivatives Link</th>
+  <th>Pipeline Name & Link to Derivatives</th>
 </tr>
 </thead>
 <tbody>
