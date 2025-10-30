@@ -51,32 +51,15 @@ Participants enrolled postnatally, HBCD Main Child- Postnatal Recruitment or HBC
 <tbody>
 <tr>
 <td><b>V01</b></td>
-<td>
-  <ul>
-  <li>Period 1: Two Weeks Pre-LMP</li>
-  <li>Period 2: Four Weeks Post-LMP</li>
-  <li>Period 3: Last Week</li>
-  </ul>
-</td>
+<td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> Last Week</td>
 </tr>
 <tr>
 <td><b>V02</b></td>
-<td>
-<ul>
-  <li>Period 4: Last Two Weeks Before Delivery</li>
-</ul>
-</td>
+<td><b>Period 4:</b> Last Two Weeks Before Delivery</td>
 </tr>
 <tr>
 <td><b>V03</b></td>
-<td>
-<ul>
-  <li>Period 1: Two Weeks Pre-LMP</li>
-  <li>Period 2: Four Weeks Post-LMP</li>
-  <li>Period 3: LMP + 19 Weeks to LMP + 20 Weeks</li>
-  <li>Period 4: Last Two Weeks Before Delivery</li>
-</ul>
-</td>
+<td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> LMP + 19 Weeks to LMP + 20 Weeks<br><b>Period 4:</b> Last Two Weeks Before Delivery</td>
 </tr>
 </tbody>
 </table>
