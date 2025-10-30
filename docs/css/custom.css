@@ -4,6 +4,28 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
+/* 2-column list */
+.two-column-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem; /* space between columns */
+  line-height: 1.4em;
+}
+.two-column-list .column {
+  flex: 1; /* evenly spaced columns */
+}
+.two-column-list ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+.two-column-list li {
+  list-style-type: disc;
+  margin-bottom: 0.4em;
+}
+.two-column-list a {
+  text-decoration: none;
+}
 
 /* Pill badge used for basic demo */
 .pill-badge {

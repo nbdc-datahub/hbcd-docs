@@ -741,9 +741,49 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><i class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b><br>
-File-based EEG data for all tasks includes <a href="eeg/#rawbids" target="_blank">raw BIDS</a> (<code>eeg/</code> folders) and processed <a href="eeg/#made" target="_blank">HBCD-MADE</a> pipeline derivatives.</p>
-<p><i class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
+<p>The following <b>EEG tasks</b> were acquired for the HBCD Study - see <a href="eeg/" target="_blank">Overview & EEG Protocols</a> for more information.</p>
+<div class="two-column-list">
+  <div class="column">
+    <ul>
+      <li><b>Auditory Mismatch Negativity Task (<a href="eeg/mmn" target="_blank">MMN</a>)</b></li>
+      <li><b>Faces Task (<a href="eeg/faces" target="_blank">FACE</a>)</b></li>
+    </ul>
+  </div>
+  <div class="column">
+    <ul>
+      <li><b>Video Resting State Task (<a href="eeg/videors" target="_blank">RS</a>)</b></li>
+      <li><b>Visual Evoked Potential Task (<a href="eeg/vep" target="_blank">VEP</a>)</b></li>
+    </ul>
+  </div>
+</div>
+<p><i style="color: teal;" class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; margin-bottom: 0; padding-bottom: 0;">
+<tfoot>
+<tr>
+  <td colspan="4" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
+    <sup><b>1</b></sup> Whenever possible, pipeline derivatives are also provided in the HBCD tabulated format to match other instruments - <a href="../datacuration/overview/#warning" target="_blank">see details</a>
+  </td>
+</tr>
+</tfoot>
+<thead>
+<tr>
+  <th>EEG Task</th>
+  <th>Raw BIDS</th>
+  <th>Pipeline Derivatives</th>
+  <th style="text-align: center;">Tabulated Derivatives<sup><b>1</b></sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="eeg/tasks/" target="_blank">ALL</td>
+  <td><code>eeg/</code> <a href="eeg/#rawbids" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></td>
+  <td><a href="eeg/#made" target="_blank">HBCD-MADE</a></td>
+  <td style="text-align: center;"><i style="color: green;" class="fa-solid fa-check"></i></td>
+</tr>
+</tbody>
+</table>
+
+<p><i style="color: teal;" class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
 <p style="font-size: 0.9em; color: #555;">
 <i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= HBCD-MADE pipeline derivatives in HBCD tabulated format (<i><a href="../datacuration/overview/#warning" target="_blank">see details</a></i>)
 </p>
@@ -756,34 +796,16 @@ File-based EEG data for all tasks includes <a href="eeg/#rawbids" target="_blank
 </thead>
 <tbody>
 <tr>
-  <td><a href="eeg/qc" target="_blank">Quality Control Metrics</a> (capping quality, StimTracker artifact, etc.) - All Tasks</td>
+  <td><a href="eeg/qc" target="_blank">Quality Control Metrics</a> (capping quality, StimTracker artifact, etc.)</td>
   <td><code>eeg_qc_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span></code></td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats - Auditory Mismatch Negativity Task (<a href="eeg/mmn" target="_blank">MMN</a>)</td>
-  <td><code>eeg_made_task-<span class="blue-text">MMN</span>_acq-eeg_preprocessingReport</code><br>
-    <code>eeg_made_task-<span class="blue-text">MMN</span>_acq-eeg_ERPSummaryStats</code>
-</td>
+  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Preprocessing Report</td>
+  <td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span>_acq-eeg_preprocessingReport</code></td>
 </tr>
 <tr>
-  <td>
-    <i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats - Faces Task (<a href="eeg/faces" target="_blank">FACE</a>)</td>
-  <td><code>eeg_made_task-<span class="blue-text">FACE</span>_acq-eeg_preprocessingReport</code><br>
-    <code>eeg_made_task-<span class="blue-text">FACE</span>_acq-eeg_ERPSummaryStats</code>
-</td>
-</tr>
-<tr>
-  <td>
-    <i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report - Video Resting State TASK (<a href="eeg/videors" target="_blank">RS</a>)</td>
-  <td><code>eeg_made_task-<span class="blue-text">RS</span>_acq-eeg_preprocessingReport</code>
-</td>
-</tr>
-<tr>
-  <td>
-    <i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats - Visual Evoked Potential Task (<a href="eeg/vep" target="_blank">VEP</a>)</td>
-  <td><code>eeg_made_task-<span class="blue-text">VEP</span>_acq-eeg_preprocessingReport</code><br>
-    <code>eeg_made_task-<span class="blue-text">VEP</span>_acq-eeg_ERPSummaryStats</code>
-</td>
+  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE ERP Summary Stats</td>
+  <td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|VEP&gt;</span>_acq-eeg_ERPSummaryStats</code></td>
 </tr>
 </tbody>
 </table>
@@ -800,7 +822,7 @@ File-based EEG data for all tasks includes <a href="eeg/#rawbids" target="_blank
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><i class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b></p>
+<p><i style="color: teal;" class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tfoot>
 <tr>
@@ -862,8 +884,7 @@ File-based EEG data for all tasks includes <a href="eeg/#rawbids" target="_blank
 </tr>
 </tbody>
 </table>
-
-<p><i class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
+<p><i style="color: teal;" class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
 <p style="font-size: 0.9em; color: #555;">
 <i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives in tabulated format
 </p>
@@ -947,35 +968,57 @@ File-based EEG data for all tasks includes <a href="eeg/#rawbids" target="_blank
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 1%;">Sensor</th>
-      <th style="width: 1%;"></th>
-      <th style="width: 30%;">Data Type</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-left"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span> Folder</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td rowspan="3">Infant Leg Motion</td>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td><a href="sensors/questionnaire" target="_blank">Questionnaire 1/2/3</a></td>
-    <td rowspan="3">Motor Development,<br>Regulation (Sleep/Wake)</td>
-    <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
-  </tr>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td><a href="sensors/wearsensors/#rawbids" target="_blank">Raw BIDS</a></td>
-    <td><i>rawdata/sub-{ID}/ses-{V0X}/motion/</i></td>
-  </tr>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-    <td><a href="sensors/wearsensors/#derivatives" target="_blank">Derivatives</a></td>
-    <td><i>derivatives/hbcd-motion/</i></td>
-  </tr>
-  </tbody>
-  </table>
+<p><i style="color: teal;" class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b></p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; margin-bottom: 0; padding-bottom: 0;">
+<tfoot>
+<tr>
+  <td colspan="4" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
+    <sup><b>1</b></sup> Whenever possible, pipeline derivatives are also provided in the HBCD tabulated format to match other instruments - <a href="../datacuration/overview/#warning" target="_blank">see details</a>
+  </td>
+</tr>
+</tfoot>
+<thead>
+<tr>
+  <th>Sensor</th>
+  <th>Raw BIDS</th>
+  <th>Pipeline Derivatives</th>
+  <th style="text-align: center;">Tabulated Derivatives<sup><b>1</b></sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="sensors/wearsensors/" target="_blank">Infant Leg Motion</td>
+  <td><code>motion/</code> <a href="sensors/wearsensors/#rawbids" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></td>
+  <td><a href="sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a></td>
+  <td style="text-align: center;"><i style="color: red;" class="fa-solid fa-xmark"></i></td>
+</tr>
+</tbody>
+</table>
+<p style="margin-top: 0; padding-top: 0;"><i style="color: teal;" class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<th>Instrument</th>
+<th>Construct</th>
+<th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1</a></td>
+  <td>Day 1 - Motor Development, Regulation (Sleep/Wake)</td>
+  <td><code>nt_ch_sens__qtn_<span class="blue-text">1</span></code></td>
+</tr>
+<tr>
+  <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 2</a></td>
+  <td>Day 2 - Motor Development, Regulation (Sleep/Wake)</td>
+  <td><code>nt_ch_sens__qtn_<span class="blue-text">2</span></code></td>
+</tr>
+  <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 3</a></td>
+  <td>Day 3 - Motor Development, Regulation (Sleep/Wake)</td>
+  <td><code>nt_ch_sens__qtn_<span class="blue-text">3</span></code></td>
+</tr>
+</tbody>
+</table>
 </div>
 
