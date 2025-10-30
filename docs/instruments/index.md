@@ -50,21 +50,18 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th style="width: 5%;"></th>
       <th style="width: 30%;">Instrument</th>
       <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;"><span class="tooltip tooltip-left"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
+      <th style="width: 30%;">Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td><a href="demo/basicdemo" target="_blank">Basic Demographics</a></td>
     <td>Demographics data derived from multiple sources</td>
     <td><code>sed_basic_demographics</code></td>
   </tr>
     <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td><a href="demo/visitinfo" target="_blank">Visit Information</a></td>
     <td>Participant visit information</td>
     <td><code>par_visit_data</code></td>
@@ -87,17 +84,15 @@ Expand the sections below to see a list of measures associated with each domain 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
   <thead>
     <tr>
-      <th></th>
       <th style="width: 40%;">Instrument</th>
       <th style="width: 40%;">Construct</th>
-      <th style="width: 30%;"><span class="tooltip tooltip-left"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
+      <th style="width: 30%;">Table Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td style="word-wrap: break-word; white-space: normal;"><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Study Navigation</td>
+    <td><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
+    <td>Study Navigation</td>
     <td><code>TBD</code></td>
   </tr>
   </tbody>
@@ -117,39 +112,35 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 1%;"></th>
-      <th style="width: 30%;">Instrument</th>
-      <th>Version</th>
-      <th style="width: 50%;">Construct</th>
-      <th style="width: 10%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
-    </tr>
-  </thead>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr>
+    <th>Instrument</th>
+    <th>Version</th>
+    <th>Construct</th>
+    <th>Table Name</th>
+  </tr>
+</thead>
   <tbody>
   <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td><a href="bcgi/chaos" target="_blank">CHAOS</a></td>
     <td></td>
     <td>Family Organization</td>
     <td><code>mh_cg_chaos</code></td>
   </tr>
   <tr>
-    <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td rowspan="2" style="word-wrap: break-word; white-space: normal;">
       <a href="bcgi/ecpromis" target="_blank">ecPROMIS Child-Caregiver Relationship</a></td>
     <td>&lt;1 year</td>
-    <td>Child-Caregiver Relationship</td>
+    <td>Child-Caregiver Interaction</td>
     <td><code>mh_cg_pms__cc__inf</code></td>
   </tr>
   <tr>
     <td>1-5 years</td>
-    <td>Child-Caregiver Relationship</td>
+    <td>Child-Caregiver Interaction</td>
     <td><code>mh_cg_pms__cc__1to5</code></td>
   </tr>
   <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td style="word-wrap: break-word; white-space: normal;">
       <a href="bcgi/ecpromis-pr" target="_blank">ecPROMIS Peer Relationships</a></td>
     <td></td>
@@ -157,7 +148,6 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><code>mh_cg_pms__peer</code></td>
   </tr>
   <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td style="word-wrap: break-word; white-space: normal;">
       <a href="bcgi/ecpromis-selfreg" target="_blank">ecPROMIS Self-Regulation</a></td>
     <td></td>
@@ -165,41 +155,39 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><code>mh_cg_pms__selfreg</code></td>
   </tr>
   <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td><a href="bcgi/fad" target="_blank">FAD (GF6+)</a></td>
     <td></td>
-    <td style="word-wrap: break-word; white-space: normal;">Global Functioning of the Family Unit</td>
+    <td style="word-wrap: break-word; white-space: normal;">Global Functioning of Family Unit</td>
     <td><code>mh_cg_fad</code></td>
   </tr>
   <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
     <td><a href="bcgi/home21" target="_blank">HOME-21</a></td>
     <td>Infant-Toddler</td>
     <td>Child’s Home Environment</td>
     <td><code>sed_cg_home_ec</code></td>
   </tr>
   <tr>
-    <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="bcgi/ibqr" target="_blank">BQ (VSF)+BI</a></td>
-    <td>IBQ-R (VSF)+BI<br>(<i>Infant</i>)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Surgency/Extraversion, Negative Affectivity, Effortful Control, Behavioral Inhibition</td>
+    <td rowspan="2"><a href="bcgi/ibqr" target="_blank">IBQR-R (VSF)+BI / ECBQ-R (VSF)+BI</a></td>
+    <td>Infant (<i>I</i>)</td>
+    <td rowspan="2">
+      Surgency/Extraversion,<br>
+      Negative Affectivity,<br>
+      Effortful Control,<br>
+      Behavioral Inhibition (<i>BI</i>)</td>
     <td><code>mh_cg_ibqr</code></td>
   </tr>
   <tr>
-    <td>ECBQ (VSF)+BI<br>(<i>Early Childhood</i>)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
+    <td>Early Childhood (<i>EC</i>)</td>
     <td><code>mh_cg_ecbq</code></td>
   </tr>
   <tr>
-    <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td rowspan="2" style="word-wrap: break-word; white-space: normal;"><a href="bcgi/maps-tl" target="_blank">MAPS-TL</a></td>
+    <td rowspan="2"><a href="bcgi/maps-tl" target="_blank">MAPS-TL</a></td>
     <td>Infancy (< 1 year)</td>
-    <td>Irritability</td>
+    <td rowspan="2">Irritability</td>
     <td><code>mh_cg_mapdb__inf</code></td>
   </tr>
   <tr>
     <td>Toddlerhood & Preschool</td>
-    <td>Irritability</td>
     <td><code>mh_cg_mapstl__tod</code></td>
   </tr>
   </tbody>
@@ -217,40 +205,42 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 1%;"></th>
-      <th style="width: 10%;">Instrument</th>
-      <th>Version</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-bottom"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span> Folder</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td style="text-align: left;"><a href="biospec/nails" target="_blank">Nails</a></td>
-    <td style="text-align: left;">Maternal</td>
-    <td style="text-align: left;">Drug, Environmental Exposure</td>
-    <td style="text-align: left;"><code>bio_bm_biosample_nails_results</code><br><code>bio_bm_biosample_nails_type</code></td>
-  </tr>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-    <td style="text-align: left;"><a href="biospec/urine" target="_blank">Urine</a></td>
-    <td style="text-align: left;">Maternal</td>
-    <td style="text-align: left;">Drug Panel, Toxins</td>
-    <td><code>bio_bm_biosample_urine</code></td>
-  </tr>
-  <tr>
-    <td><span class="tooltip tooltip-right"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span></td>
+<p style="font-size: 0.9em; color: #555;">
+<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;= Concatenated (File-Based) Data &nbsp;&nbsp;
+<i style="color: teal;" class="fa-solid fa-table"></i>&nbsp;= Tabulated Data
+</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<th></th>
+<th>Instrument</th>
+<th>Version</th>
+<th>Construct</th>
+<th><i style="color: teal;" class="fa-solid fa-table"></i>&nbsp; Table / <i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Folder Name</th>
+</thead>
+<tbody>
+<tr>
+    <td style="text-align: center;"><i style="color: teal;" class="fas fa-layer-group"></i></td>
     <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
     <td>Maternal & Child</td>
-    <td style="word-wrap: break-word; white-space: normal;">GWAS, EWAS, Transcriptome</td>
-    <td><i>concatenated/genetics/</i></td>
-  </tr>
-  </tbody>
-  </table>
+    <td>GWAS, EWAS, Transcriptome</td>
+    <td><i>concatenated/genetics/</i>  <a href="biospec/illumina-gda-gwas/#concat" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></td>
+</tr>
+<tr>
+    <td style="text-align: center;"><i style="color: teal;" class="fa-solid fa-table"></i></td>
+    <td><a href="biospec/nails" target="_blank">Maternal Nails</a></td>
+    <td>Maternal</td>
+    <td>Drug, Environmental Exposure</td>
+    <td><code>bio_bm_biosample_nails_<span class="blue-text">&lt;results|type&gt;</span></code></td>
+</tr>
+<tr>
+    <td style="text-align: center;"><i style="color: teal;" class="fa-solid fa-table"></i></td>
+    <td><a href="biospec/urine" target="_blank">Maternal Urine</a></td>
+    <td>Maternal</td>
+    <td>Drug Panel, Toxins</td>
+    <td><code>bio_bm_biosample_urine</code></td>
+</tr>
+</tbody>
+</table>
 </div>
 
 <div id="neurocog" class="table-banner" onclick="toggleCollapse(this)">
@@ -782,7 +772,6 @@ Expand the sections below to see a list of measures associated with each domain 
 </tr>
 </tbody>
 </table>
-
 <p><i style="color: teal;" class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
 <p style="font-size: 0.9em; color: #555;">
 <i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= HBCD-MADE pipeline derivatives in HBCD tabulated format (<i><a href="../datacuration/overview/#warning" target="_blank">see details</a></i>)
