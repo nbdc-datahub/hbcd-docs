@@ -45,8 +45,45 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>The sampling covers specific weeks before pregnancy (Weeks 1-2) and during pregnancy (Weeks 3-9). Consequently, substance use reported outside these weeks may not appear in the TLFB, and a positive biospecimen may lack corresponding TLFB data for the same reason. This sampling approach balances participant burden (avoiding a full 40-week TLFB) with capturing key pregnancy phases when behaviors often shift, such as before and after pregnancy recognition and in late pregnancy.</p>
-<p>Also, of note- participants were asked to report occasions (except cigarettes/cigarillos and drinks, reported as number), but some substances (e.g. electronic cigarette devices) are difficult to report in occasions and have outliers.</p>
+<p><b>Postnatal Recruits Reported TLFB on Wrong Weeks</b><br>
+Participants enrolled postnatally, HBCD Main Child- Postnatal Recruitment or HBCD Multiple Birth- Postnatal Recruitment cohort, reported TLFB on the wrong weeks. Weeks were either reported in V01 or V02, but should be reported in V03.</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+<td><b>V01</b></td>
+<td>
+  <ul>
+  <li>Period 1: Two Weeks Pre-LMP</li>
+  <li>Period 2: Four Weeks Post-LMP</li>
+  <li>Period 3: Last Week</li>
+  </ul>
+</td>
+</tr>
+<tr>
+<td><b>V02</b></td>
+<td>
+<ul>
+  <li>Period 4: Last Two Weeks Before Delivery</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><b>V03</b></td>
+<td>
+<ul>
+  <li>Period 1: Two Weeks Pre-LMP</li>
+  <li>Period 2: Four Weeks Post-LMP</li>
+  <li>Period 3: LMP + 19 Weeks to LMP + 20 Weeks</li>
+  <li>Period 4: Last Two Weeks Before Delivery</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><b>Sampling Window and Coverage Limitations</b><br>
+The sampling covers specific weeks before pregnancy (Weeks 1-2) and during pregnancy (Weeks 3-9). Consequently, substance use reported outside these weeks may not appear in the TLFB, and a positive biospecimen may lack corresponding TLFB data for the same reason. This sampling approach balances participant burden (avoiding a full 40-week TLFB) with capturing key pregnancy phases when behaviors often shift, such as before and after pregnancy recognition and in late pregnancy.</p>
+<p><b>Notes on Reporting Format and Data Variability</b><br>
+Participants were asked to report occasions (except cigarettes/cigarillos and drinks, reported as number), but some substances (e.g. electronic cigarette devices) are difficult to report in occasions and have outliers.</p>
 </div>
 
 ## Administration & Quality Control
