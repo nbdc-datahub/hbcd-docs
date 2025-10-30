@@ -397,7 +397,6 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-
 <p style="font-size: 0.9em; color: #555;">
 <i style="color: #3e3e3e;" class="fa-solid fa-baby"></i>&nbsp;= Pregnancy & Infant Health&nbsp;&nbsp;&nbsp;
 <i style="color: #3e3e3e;" class="fas fa-brain"></i>&nbsp;= Mental Health&nbsp;&nbsp;&nbsp;
@@ -406,10 +405,10 @@ Expand the sections below to see a list of measures associated with each domain 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th style="width: 5%;">Instrument</th>
-  <th style="width: 1%;">Version</th>
-  <th style="width: 20%;">Construct</th>
-  <th style="width: 10%;">Table Name</th>
+  <th>Instrument</th>
+  <th>Version</th>
+  <th>Construct</th>
+  <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
@@ -521,149 +520,118 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 1%;"></th>
-      <th style="width: 15%;">Instrument</th>
-      <th>Version</th>
-      <th style="width: 60%;">Construct</th>
-      <th style="width: 30%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name / <span class="tooltip tooltip-bottom"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span> Folder</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr>
-      <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td rowspan="2"><a href="SED/aces" target="_blank">ACEs</a></td>
-      <td></td>
-      <td>Adverse Childhood Experiences (Caregiver)</td>
-      <td><code>sed_cg_ace</code></td>
-    </tr>  
-    <tr>
-      <td>Pediatric</td>
-      <td>Adverse Childhood Experiences (Child)</td>
-      <td><code>sed_cg_pedaces</code></td>
-    </tr>  
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="SED/bfy" target="_blank">BFY</a></td>
-      <td></td>
-      <td>Benefits/Services/Economic Stress</td>
-      <td><code>sed_bm_bfy</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="SED/cab" target="_blank">CABr-SF</a></td>
-      <td></td>
-      <td>Intimate Partner Violence</td>
-      <td><code>sed_cg_cabr_sf</code></td>
-    </tr>
-    <tr>
-      <td rowspan="3"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td rowspan="3"><a href="SED/demo-cg" target="_blank">Demographics Adult</a></td>
-      <td>V1</td>
-      <td>Demographics (Adult Visit 1)</td>
-      <td><code>sed_bm_demo</code></td>
-    </tr> 
-    <tr>
-      <td>V4</td>
-      <td>Demographics (Birth Parent Visit 4)</td>
-      <td>ADD<code></code></td>
-    </tr> 
-    <tr>
-      <td>V6</td>
-      <td>Demographics (Adult Visit 6)</td>
-      <td>ADD<code></code></td>
-    </tr> 
-    <tr>
-      <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td rowspan="2"><a href="SED/demo-ch" target="_blank">Demographics Child</a></td>
-      <td>V4</td>
-      <td>Demographics (Child Visit 4)</td>
-      <td><code>sed_bm_demo_child</code></td>
-    </tr> 
-    <tr>
-      <td>V6</td>
-      <td>Demographics (Child Visit 6)</td>
-      <td>ADD<code></code></td>
-    </tr> 
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="SED/ehits" target="_blank">eHITS</a></td>
-      <td></td>
-      <td>Intimate Partner Violence</td>
-      <td><code>sed_bm_ehits</code></td>
-    </tr>  
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="SED/current-employment" target="_blank">Employment</a></td>
-      <td></td>
-      <td>Current Employment</td>
-      <td><code>sed_cg_employ</code></td>
-    </tr>  
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td style="word-wrap: break-word; white-space: normal;"><a href="SED/household-chemical-exposures" target="_blank">Household Chemical Exposures</a></td>
-      <td></td>
-      <td>Household Chemical Exposures</td>
-      <td><code>sed_cg_hce</code></td>
-    </tr>   
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="SED/lead-exposures" target="_blank">Lead Exposures</a></td>
-      <td></td>
-      <td>Lead Exposures</td>
-      <td><code>sed_cg_leadexp</code></td>
-    </tr> 
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="SED/safety" target="_blank">Neighborhood Safety</a></td>
-      <td></td>
-      <td>Neighborhood Safety</td>
-      <td><code>sed_bm_nbhsaf</code></td>
-    </tr> 
-    <tr>
-      <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td rowspan="2"><a href="SED/paces" target="_blank">PACES</a></td>
-      <td>Current</td>
-      <td>Protective Factors</td>
-      <td><code>sed_bm_paces</code></td>
-    </tr>
-     <tr>
-      <td>&lt;18</td>
-      <td>Protective Factors</td>
-      <td><code>sed_cg_paces</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="SED/promis" target="_blank">PROMIS</a></td>
-      <td></td>
-      <td>Perceived Stress/Social Support</td>
-      <td><code>sed_bm_strsup</code></td>
-    </tr>      
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="SED/second-hand-smoke-exposure" target="_blank">Second Hand Smoke</a></td>
-      <td></td>
-      <td>Second Hand Smoke Exposure</td>
-      <td><code>sed_cg_shs</code></td>
-    </tr>    
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="SED/discr" target="_blank">Unfair Treatment</a></td>
-      <td></td>
-      <td>Experiences of Unfair Treatment</td>
-      <td><code>sed_bm_phx__discr</code></td>
-    </tr>  
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="SED/vi" target="_blank">Vancouver Index</a></td>
-      <td></td>
-      <td>Acculturation</td>
-      <td><code>sed_cg_via</code></td>
-    </tr>      
-  </tbody>
-  </table>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th>Instrument</th>
+  <th>Version</th>
+  <th>Construct</th>
+  <th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+  <td rowspan="2"><a href="SED/aces" target="_blank">ACEs</a></td>
+  <td>ACEs</td>
+  <td>Adverse Childhood Experiences (Caregiver)</td>
+  <td><code>sed_cg_ace</code></td>
+</tr>  
+<tr>
+  <td>Pediatric</td>
+  <td>Adverse Childhood Experiences (Child)</td>
+  <td><code>sed_cg_pedaces</code></td>
+</tr>  
+<tr>
+  <td><a href="SED/bfy" target="_blank">Baby's First Years (BFY)</a></td>
+  <td></td>
+  <td>Benefits/Services/Economic Stress</td>
+  <td><code>sed_bm_bfy</code></td>
+</tr>
+<tr>
+  <td><a href="SED/cab" target="_blank">Composite Abuse Scale (CABr-SF)</a></td>
+  <td></td>
+  <td>Intimate Partner Violence</td>
+  <td><code>sed_cg_cabr_sf</code></td>
+</tr>
+<tr>
+  <td><a href="SED/current-employment" target="_blank">Current Employment</a></td>
+  <td></td>
+  <td>Current Employment</td>
+  <td><code>sed_cg_employ</code></td>
+</tr>  
+<tr>
+  <td><a href="SED/demo-cg" target="_blank">Demographics Adult</a></td>
+  <td>V1, V4, V6</td>
+  <td>Demographics (Adult V01, V04, V06)</td>
+  <td><code>sed_bm_demo</code></td>
+</tr> 
+<tr>
+  <td><a href="SED/demo-ch" target="_blank">Demographics Child</a></td>
+  <td>V4, V6</td>
+  <td>Demographics (Child V04, V06)</td>
+  <td><code>sed_bm_demo_child</code></td>
+</tr> 
+<tr>
+  <td><a href="SED/ehits" target="_blank">eHITS</a></td>
+  <td></td>
+  <td>Intimate Partner Violence</td>
+  <td><code>sed_bm_ehits</code></td>
+</tr>  
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;"><a href="SED/household-chemical-exposures" target="_blank">Household Chemical Exposures</a></td>
+  <td></td>
+  <td>Household Chemical Exposures</td>
+  <td><code>sed_cg_hce</code></td>
+</tr>   
+<tr>
+  <td><a href="SED/lead-exposures" target="_blank">Lead Exposures</a></td>
+  <td></td>
+  <td>Lead Exposures</td>
+  <td><code>sed_cg_leadexp</code></td>
+</tr> 
+<tr>
+  <td><a href="SED/safety" target="_blank">Neighborhood Safety</a></td>
+  <td></td>
+  <td>Neighborhood Safety</td>
+  <td><code>sed_bm_nbhsaf</code></td>
+</tr> 
+<tr>
+  <td rowspan="2"><a href="SED/paces" target="_blank">PACES</a></td>
+  <td>Current</td>
+  <td>Protective Factors</td>
+  <td><code>sed_bm_paces</code></td>
+</tr>
+  <tr>
+  <td>&lt;18</td>
+  <td>Protective Factors</td>
+  <td><code>sed_cg_paces</code></td>
+</tr>
+<tr>
+  <td><a href="SED/promis" target="_blank">PROMIS Perceived Stress/Social Support</a></td>
+  <td></td>
+  <td>Perceived Stress/Social Support</td>
+  <td><code>sed_bm_strsup</code></td>
+</tr>      
+<tr>
+  <td><a href="SED/second-hand-smoke-exposure" target="_blank">Second Hand Smoke</a></td>
+  <td></td>
+  <td>Second Hand Smoke Exposure</td>
+  <td><code>sed_cg_shs</code></td>
+</tr>    
+<tr>
+  <td><a href="SED/discr" target="_blank">Unfair Treatment</a></td>
+  <td></td>
+  <td>Experiences of Unfair Treatment</td>
+  <td><code>sed_bm_phx__discr</code></td>
+</tr>  
+<tr>
+  <td><a href="SED/vi" target="_blank">Vancouver Index of Acculturation (VIA)</a></td>
+  <td></td>
+  <td>Acculturation</td>
+  <td><code>sed_cg_via</code></td>
+</tr>      
+</tbody>
+</table>
 </div>
 
 ### Brain Activity & Biosensors
