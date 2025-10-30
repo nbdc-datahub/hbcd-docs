@@ -4,24 +4,25 @@
 # Behavior Questionnaire + Inhibition
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tfoot><tr><td colspan="4" style="font-size: 0.9em;"><i><b>*BQ-R (VSF)+BI</b> = Behavior Questionnaire – Revised Very Short Form + Behavior Inhibition</i></tr></td></tfoot>
 <thead>
 <tr>
-  <th><i class="fa-solid fa-maximize"></i> Instrument</th>
-  <th><i class="fa-solid fa-clone"></i> Version</th>
-  <th><i class="fa-solid fa-tape"></i> Construct</th>
-  <th><i class="fa fa-table"></i> Table Name</th>
+  <th>Instrument</th>
+  <th>Version</th>
+  <th>Construct</th>
+  <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Behavior Questionnaire – Revised Very Short Form + Behavior Inhibition</td>
-  <td><strong>Infant</strong><br>(<i>IBQ-R (VSF)+BI</i>)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
+  <td><b>IBQ-R (VSF)+BI</b></td>
+  <td>Infant (I)</td>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
   <td><code>mh_cg_ibqr</code></td>
 </tr>
 <tr>
-  <td><strong>Early Childhood</strong><br>(<i>ECBQ-R (VSF)+BI</i>)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
+  <td><b>ECBQ-R (VSF)+BI</b></td>
+  <td>Early Childhood (EC)</td>
   <td><code>mh_cg_ecbq</code></td>
 </tr>
 </tbody>
