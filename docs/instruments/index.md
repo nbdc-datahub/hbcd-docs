@@ -750,99 +750,44 @@ File-based EEG data for all tasks includes <a href="eeg/#rawbids" target="_blank
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-<th>EEG Task</th>
 <th>Table</th>
 <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><b>All Tasks</b></td>
-<td><a href="eeg/qc" target="_blank">Quality Control Metrics</a></td>
-<td><code>eeg_qc_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span></code></td>
-</tr>
-<tr>
-<td><b>Auditory Mismatch Negativity</b> (<a href="eeg/mmn" target="_blank">MMN</a>)</td>
-<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats</td>
-<td><code>eeg_made_task-<span class="blue-text">MMN</span>_acq-eeg_preprocessingReport</code><br>
-<code>eeg_made_task-<span class="blue-text">MMN</span>_acq-eeg_ERPSummaryStats</code>
-</td>
-</tr>
-<tr>
-<td><b>Faces</b> (<a href="eeg/face" target="_blank">FACE</a>)</td>
-<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats</td>
-<td><code>eeg_made_task-<span class="blue-text">FACE</span>_acq-eeg_preprocessingReport</code><br>
-<code>eeg_made_task-<span class="blue-text">FACE</span>_acq-eeg_ERPSummaryStats</code>
-</td>
-</tr>
-<tr>
-<td><b>Video Resting State</b> (<a href="eeg/rs" target="_blank">RS</a>)</td>
-<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report</td>
-<td><code>eeg_made_task-<span class="blue-text">RS</span>_acq-eeg_preprocessingReport</code>
-</td>
-</tr>
-<tr>
-<td><b>Visual Evoked Potential</b> (<a href="eeg/vep" target="_blank">VEP</a>)</td>
-<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats</td>
-<td><code>eeg_made_task-<span class="blue-text">VEP</span>_acq-eeg_preprocessingReport</code><br>
-<code>eeg_made_task-<span class="blue-text">VEP</span>_acq-eeg_ERPSummaryStats</code>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<div id="eeg-alt" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-bolt"></i></span>
-  <span class="text-with-link">
-  <span class="text">EEG-ALT</span>
-  <a class="anchor-link" href="#eeg-alt" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><b><a href="eeg/" target="_blank">HBCD EEG data <i style="font-size: 0.9em;" class="fa-solid fa-arrow-up-right-from-square"></i></a></b> includes the following tasks:</p>
-<div style="margin-top: 8px; font-size: 0.9em; background-color: #f9f9f9; padding: 6px 10px; border-radius: 6px;">
-  <code>MMN</code>: Auditory Mismatch Negativity &nbsp;&nbsp;|&nbsp;&nbsp;
-  <code>FACE</code>: Faces &nbsp;&nbsp;|&nbsp;&nbsp;
-  <code>RS</code>: Video Resting State &nbsp;&nbsp;|&nbsp;&nbsp;
-  <code>VEP</code>: Visual Evoked Potential
-</div>
-<p><i class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b><br>
-File-based EEG data for all tasks includes <a href="eeg/#rawbids" target="_blank">raw BIDS</a> (<code>eeg/</code> folders) and processed <a href="eeg/#made" target="_blank">HBCD-MADE</a> pipeline derivatives.</p>
-<p><i class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
-<p style="font-size: 0.9em; color: #555;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives in tabulated format (<i><a href="../datacuration/overview/#warning" target="_blank">see details</a></i>)
-</p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Table</th>
-  <th>Table Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><a href="eeg/qc" target="_blank">Quality Control Metrics</a> (capping quality, artifacts, etc.)</td>
+  <td><a href="eeg/qc" target="_blank">Quality Control Metrics</a> (capping quality, StimTracker artifact, etc.) - All Tasks</td>
   <td><code>eeg_qc_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span></code></td>
 </tr>
 <tr>
-<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Preprocessing Reports (HBCD tabulated format)</td>
-<td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span>_acq-eeg_preprocessingReport</code></td>
+  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats - Auditory Mismatch Negativity Task (<a href="eeg/mmn" target="_blank">MMN</a>)</td>
+  <td><code>eeg_made_task-<span class="blue-text">MMN</span>_acq-eeg_preprocessingReport</code><br>
+    <code>eeg_made_task-<span class="blue-text">MMN</span>_acq-eeg_ERPSummaryStats</code>
+</td>
 </tr>
 <tr>
-<td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE ERP Summary Statistics (HBCD tabulated format)</td>
-<td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|VEP&gt;</span>_acq-eeg_ERPSummaryStats</code></td>
+  <td>
+    <i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats - Faces Task (<a href="eeg/faces" target="_blank">FACE</a>)</td>
+  <td><code>eeg_made_task-<span class="blue-text">FACE</span>_acq-eeg_preprocessingReport</code><br>
+    <code>eeg_made_task-<span class="blue-text">FACE</span>_acq-eeg_ERPSummaryStats</code>
+</td>
 </tr>
 <tr>
+  <td>
+    <i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report - Video Resting State TASK (<a href="eeg/videors" target="_blank">RS</a>)</td>
+  <td><code>eeg_made_task-<span class="blue-text">RS</span>_acq-eeg_preprocessingReport</code>
+</td>
+</tr>
+<tr>
+  <td>
+    <i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Report/Stats - Visual Evoked Potential Task (<a href="eeg/vep" target="_blank">VEP</a>)</td>
+  <td><code>eeg_made_task-<span class="blue-text">VEP</span>_acq-eeg_preprocessingReport</code><br>
+    <code>eeg_made_task-<span class="blue-text">VEP</span>_acq-eeg_ERPSummaryStats</code>
+</td>
+</tr>
 </tbody>
 </table>
 </div>
-
-
-
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
