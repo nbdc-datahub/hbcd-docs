@@ -730,36 +730,26 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The following <b>EEG tasks</b> were acquired for the HBCD Study - see <a href="eeg/" target="_blank">Overview & EEG Protocols</a> for more information.</p>
-<div class="two-column-list">
-  <div class="column">
-    <ul>
-      <li><b>Auditory Mismatch Negativity Task (<a href="eeg/mmn" target="_blank">MMN</a>)</b></li>
-      <li><b>Faces Task (<a href="eeg/faces" target="_blank">FACE</a>)</b></li>
-    </ul>
-  </div>
-  <div class="column">
-    <ul>
-      <li><b>Video Resting State Task (<a href="eeg/videors" target="_blank">RS</a>)</b></li>
-      <li><b>Visual Evoked Potential Task (<a href="eeg/vep" target="_blank">VEP</a>)</b></li>
-    </ul>
-  </div>
-</div>
 <p><i style="color: teal;" class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; margin-bottom: 0; padding-bottom: 0;">
 <tfoot>
 <tr>
   <td colspan="4" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
-    <sup><b>1</b></sup> Whenever possible, pipeline derivatives are also provided in the HBCD tabulated format to match other instruments - <a href="../datacuration/overview/#warning" target="_blank">see details</a>
+    <sup><b>1</b></sup> EEG Tasks include:
+    <a href="eeg/mmn" target="_blank">MMN</a> (<i>Auditory Mismatch Negativity</i>),
+    <a href="eeg/faces" target="_blank">FACE</a> (<i>Faces</i>),
+    <a href="eeg/rs" target="_blank">RS</a> (<i>Video Resting State</i>),
+    & <a href="eeg/vep" target="_blank">VEP</a> (<i>Visual Evoked Potential</i>)<br>
+    <sup><b>2</b></sup> Whenever possible, pipeline derivatives are also provided in the HBCD tabulated format to match other instruments - <a href="../datacuration/overview/#warning" target="_blank">see details</a>
   </td>
 </tr>
 </tfoot>
 <thead>
 <tr>
-  <th>EEG Task</th>
+  <th>EEG Task<sup><b>1</b></sup></th>
   <th>Raw BIDS</th>
   <th>Pipeline Derivatives</th>
-  <th style="text-align: center;">Tabulated Derivatives<sup><b>1</b></sup></th>
+  <th style="text-align: center;">Tabulated Derivatives<sup><b>2</b></sup></th>
 </tr>
 </thead>
 <tbody>
