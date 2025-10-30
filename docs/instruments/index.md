@@ -312,89 +312,78 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 1%;"></th>
-      <th style="width: 25%;">Instrument</th>
-      <th>Version</th>
-      <th style="width: 25%;">Construct</th>
-      <th style="width: 25%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
-      <td></td>
-      <td>Food insecurity</td>
-      <td><code>sed_cg_foodins</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
-      <td></td>
-      <td>Sleep</td>
-      <td><code>ph_cg_bisq</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
-      <td></td>
-      <td>Nutrition</td>
-      <td><code>ph_cg_phx__bfh</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="physhealth/ecpromis-pags" target="_blank">ecPROMIS- Physical Activity/Greenspace</a></td>
-      <td>Early Childhood</td>
-      <td>Physical Activity</td>
-      <td><code>ph_cg_pms__pags</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="physhealth/ecpromis-sleep" target="_blank">ecPROMIS- Sleep</a></td>
-      <td>Early Childhood</td>
-      <td>Sleep</td>
-      <td><code>ph_cg_pms__sleep</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
-      <td></td>
-      <td>Growth</td>
-      <td><code>ph_ch_anthro</code></td>
-    </tr> 
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="physhealth/medical-history" target="_blank">Medical History</a></td>
-      <td></td>
-      <td>Medical History</td>
-      <td><code>ph_cg_ecls__medhist</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="physhealth/nutrition" target="_blank">Nutrition Questionnaire</a></td>
-      <td>Infant</td>
-      <td>Nutrition</td>
-      <td><code>ph_cg_inq</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="physhealth/screenq" target="_blank">ScreenQ</a></td>
-      <td></td>
-      <td>Media Use</td>
-      <td><code>ph_cg_screenq</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="physhealth/vision" target="_blank">Vision Screener</a></td>
-      <td></td>
-      <td>Vision</td>
-      <td><code>ph_ch_vs</code></td>
-    </tr>
-  </tbody>
-  </table>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th style="width: 25%;">Instrument</th>
+  <th>Version</th>
+  <th style="width: 25%;">Construct</th>
+  <th style="width: 25%;">Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
+  <td></td>
+  <td>Food insecurity</td>
+  <td><code>sed_cg_foodins</code></td>
+</tr>
+<tr>
+  <td><a href="physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
+  <td></td>
+  <td>Sleep</td>
+  <td><code>ph_cg_bisq</code></td>
+</tr>
+<tr>
+  <td><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
+  <td></td>
+  <td>Nutrition</td>
+  <td><code>ph_cg_phx__bfh</code></td>
+</tr>
+<tr>
+  <td><a href="physhealth/ecpromis-pags" target="_blank">ecPROMIS Physical Activity/Greenspace</a></td>
+  <td>Early Childhood</td>
+  <td>Physical Activity</td>
+  <td><code>ph_cg_pms__pags</code></td>
+</tr>
+<tr>
+  <td><a href="physhealth/ecpromis-sleep" target="_blank">ecPROMIS Sleep</a></td>
+  <td>Early Childhood</td>
+  <td>Sleep</td>
+  <td><code>ph_cg_pms__sleep</code></td>
+</tr>
+<tr>
+  <td><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
+  <td></td>
+  <td>Growth</td>
+  <td><code>ph_ch_anthro</code></td>
+</tr> 
+<tr>
+  <td><a href="physhealth/medical-history" target="_blank">Medical History</a></td>
+  <td></td>
+  <td>Medical History</td>
+  <td><code>ph_cg_ecls__medhist</code></td>
+</tr>
+<tr>
+  <td><a href="physhealth/nutrition" target="_blank">Nutrition Questionnaire</a></td>
+  <td>Infant</td>
+  <td>Nutrition</td>
+  <td><code>ph_cg_inq</code></td>
+</tr>
+<tr>
+  <td><a href="physhealth/screenq" target="_blank">ScreenQ</a></td>
+  <td></td>
+  <td>Media Use</td>
+  <td><code>ph_cg_screenq</code></td>
+</tr>
+<tr>
+  <td><a href="physhealth/vision" target="_blank">Vision Screener</a></td>
+  <td></td>
+  <td>Vision</td>
+  <td><code>ph_ch_vs</code></td>
+</tr>
+</tbody>
+</table>
 </div>
 
 <div id="pex" class="table-banner" onclick="toggleCollapse(this)">
