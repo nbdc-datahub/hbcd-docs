@@ -47,7 +47,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
     <tr>
       <th style="width: 30%;">Instrument</th>
@@ -81,7 +81,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
     <tr>
       <th style="width: 40%;">Instrument</th>
@@ -254,52 +254,51 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-       <th style="width: 1%;"></th>
-      <th style="width: 10%;">Instrument</th>
-      <th style="width: 20%;">Version</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 10%;"><span class="tooltip tooltip-bottom"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span> Table Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a></td>
-      <td>Infant Form</td>
-      <td>Language Development in Child</td>
-      <td><code>nc_ch_cdiws</code><br><code>nc_ch_cdiwg</code></td>
-    </tr>
-   <tr>
-    <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="neurocog/mlds" target="_blank">MLDS</a></td>
-      <td></td>
-      <td>Multilingual exposure</td>
-      <td><code>ncl_ch_mlds</code></td>
-    </tr>
-    <tr>
-      <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td rowspan="2"><a href="neurocog/spm2" target="_blank">SPM-2</a></td>
-      <td>Infant</td>
-      <td>Sensory Processing/Integration</td>
-      <td><code>ncl_cg_spm2__inf</code></td>
-    </tr>
-    <tr>
-      <td>Toddler</td>
-      <td>Sensory Processing/Integration</td>
-      <td><code>ncl_cg_spm2__tod</code></td>
-    </tr>
-    <tr>
-      <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-      <td><a href="neurocog/vineland" target="_blank">Vineland</a></td>
-      <td></td>
-      <td>Adaptive Behavior</td>
-      <td><code>nc_cg_vabs</code></td>
-    </tr>
-  </tbody>
-  </table>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th>Instrument</th>
+  <th>Version</th>
+  <th>Construct</th>
+  <th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2"><a href="neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a></td>
+  <td rowspan="2">Infant Form</td>
+  <td>Language Development (Words)</td>
+  <td><code>nc_ch_cdiws</code></td>
+</tr>
+<tr>
+  <td>Language Development (Gestures)</td>
+  <td><code>nc_ch_cdiwg</code></td>
+</tr>
+<tr>
+  <td><a href="neurocog/mlds" target="_blank">Multilingual Language Development Screener (MLDS)</a></td>
+  <td></td>
+  <td>Multilingual Exposure</td>
+  <td><code>ncl_ch_mlds</code></td>
+</tr>
+<tr>
+  <td rowspan="2"><a href="neurocog/spm2" target="_blank">Sensory Processing Measure-2 (SPM-2)</a></td>
+  <td>Infant</td>
+  <td>Sensory Processing/Integration</td>
+  <td><code>ncl_cg_spm2__inf</code></td>
+</tr>
+<tr>
+  <td>Toddler</td>
+  <td>Sensory Processing/Integration</td>
+  <td><code>ncl_cg_spm2__tod</code></td>
+</tr>
+<tr>
+  <td><a href="neurocog/vineland" target="_blank">Vineland Adaptive Behavior</a></td>
+  <td></td>
+  <td>Adaptive Behavior</td>
+  <td><code>nc_cg_vabs</code></td>
+</tr>
+</tbody>
+</table>
 </div>
 
 <div id="physhealth" class="table-banner" onclick="toggleCollapse(this)">
