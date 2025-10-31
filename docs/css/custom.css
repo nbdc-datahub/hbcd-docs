@@ -38,6 +38,17 @@
   white-space: nowrap;
 }
 
+/* Pill badge with emoji */
+.pill-badge-emoji {
+  background-color: none;
+  color: teal;
+  border: 1px solid teal;
+  border-radius: 12px;
+  padding: 2px 4px;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
 /* Add space above the bottom navigation buttons */
 .rst-footer-buttons {
   margin-top: 3em; 

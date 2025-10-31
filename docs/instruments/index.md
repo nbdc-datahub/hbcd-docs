@@ -718,20 +718,16 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 <div class="table-collapsible-content">
 <p><i style="color: teal;" class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b></p>
+<p style="font-size: 0.9em; color: #555;">
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in <a href="../datacuration/overview/#warning" target="_blank">HBCD tabulated format <i class="fa-solid fa-up-right-from-square"></i></a>
+</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tfoot>
-<tr>
-  <td colspan="4" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
-    <sup><b>1</b></sup> Whenever possible, pipeline derivatives are also provided in the HBCD tabulated format to match other instruments - <a href="../datacuration/overview/#warning" target="_blank">see details</a>
-  </td>
-</tr>
-</tfoot>
 <thead>
 <tr>
   <th>Modality</th>
   <th>Raw BIDS</th>
   <th>Pipeline Derivatives</th>
-  <th>Tabulated Derivatives<sup><b>1</b></sup></th>
+  <th style="padding-left: 2px;"><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; Tabulated Derivatives</th>
 </tr>
 </thead>
 <tbody>
@@ -781,13 +777,13 @@ Expand the sections below to see a list of measures associated with each domain 
 </table>
 <p><i style="color: teal;" class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
 <p style="font-size: 0.9em; color: #555;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives in tabulated format
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in <a href="../datacuration/overview/#warning" target="_blank">HBCD tabulated format <i class="fa-solid fa-up-right-from-square"></i></a>
 </p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-<th>Instrument / <i style="color: teal;" class="fa-solid fa-diagram-project"></i> Modality</th>
-<th>Construct / <i style="color: teal;" class="fa-solid fa-diagram-project"></i> Pipeline</th>
+<th>Instrument</th>
+<th>Construct</th>
 <th>Table Name</th>
 </tr>
 </thead>
@@ -800,10 +796,18 @@ Expand the sections below to see a list of measures associated with each domain 
 <tr>
   <td><a href="mri/qc/#brainswipes" target="_blank">BrainSwipes</a></td>
   <td>Manual QC</td>
-  <td><code>img_brainswipes_xcpd-bold</code></td>
+  <td><code>img_brainswipes_xcpd-<span class="blue-text">&lt;T1w|T2w|bold&gt;</span></code></td>
 </tr>
+<tr><td colspan="3"></td></tr>
+<thead>
 <tr>
-  <td rowspan="3"><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; sMRI & fMRI</td>
+<th>Modality</th>
+<th>Pipeline</th>
+<th><i style="color: teal;" class="fa-solid fa-diagram-project"></i> Table Name (<i>Tabulated Pipeline Derivatives</i>)</th>
+</tr>
+</thead>
+<tr>
+  <td rowspan="3">sMRI & fMRI</td>
   <td>MRIQC</td>
   <td><code>img_mriqc_<span class="blue-text">&lt;T1w|T2w&gt;</span></code><br><code>img_mriqc_bold</code></td>
 </tr>
@@ -822,12 +826,12 @@ Expand the sections below to see a list of measures associated with each domain 
   </td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; dMRI</td>
+  <td>dMRI</td>
   <td>QSIPrep</td>
   <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; MRS</td>
+  <td>MRS</td>
   <td>OSPREY-BIDS</td>
   <td>
     <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
