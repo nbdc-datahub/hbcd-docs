@@ -46,19 +46,19 @@
 </div>
 <div class="warning-collapsible-content">
 <p><b>Postnatal Recruits Reported TLFB on Wrong Weeks</b><br>
-Participants enrolled postnatally, HBCD Main Child- Postnatal Recruitment or HBCD Multiple Birth- Postnatal Recruitment cohort, reported TLFB on the wrong weeks. Weeks were either reported in V01 or V02, but should be reported in V03.</p>
+Participants enrolled postnatally, HBCD Main Child- Postnatal Recruitment or HBCD Multiple Birth- Postnatal Recruitment cohort, reported TLFB on the wrong weeks. Weeks were either reported in v1 or v2, but should be reported in v3.</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
-<td><b>V01</b></td>
+<td><b>v1</b></td>
 <td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> Last Week</td>
 </tr>
 <tr>
-<td><b>V02</b></td>
+<td><b>v2</b></td>
 <td><b>Period 4:</b> Last Two Weeks Before Delivery</td>
 </tr>
 <tr>
-<td><b>V03</b></td>
+<td><b>v3</b></td>
 <td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> LMP + 19 Weeks to LMP + 20 Weeks<br><b>Period 4:</b> Last Two Weeks Before Delivery</td>
 </tr>
 </tbody>
@@ -93,7 +93,6 @@ Participants were asked to report occasions (except cigarettes/cigarillos and dr
 The original Timeline Follow Back instrument is designed to assess substance use over the 7 days preceding survey administration. For HBCD, the TLFB was adapted, triggered by responses on the ASSIST, to collect information on substance use before and during pregnancy.
 
 Participants who reported any substance use in the three months prior to or during pregnancy completed a TLFB interview for each substance reported on the ASSIST. Use was disaggregated by product type (e.g., edible cannabis products), and participants provided estimates for **nine distinct weeks** of use. For each week, the **number of occasions of use per day** was captured for all products except for cigarettes and cigarillos (number per day) and alcohol (number of single servings per day). The nine sampled weeks were distributed across two study visits:
-
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <tbody>
