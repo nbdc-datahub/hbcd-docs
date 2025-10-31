@@ -648,6 +648,9 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 <div class="table-collapsible-content">
 <p><i style="color: teal;" class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b>
+<p style="font-size: 0.9em; color: #555;">
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in <a href="../datacuration/overview/#warning" target="_blank">HBCD tabulated format <i class="fa-solid fa-up-right-from-square"></i></a>
+</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; margin-bottom: 0; padding-bottom: 0;">
 <tfoot>
 <tr>
@@ -656,8 +659,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <a href="eeg/mmn" target="_blank">MMN</a> (<i>Auditory Mismatch Negativity</i>),
     <a href="eeg/faces" target="_blank">FACE</a> (<i>Faces</i>),
     <a href="eeg/rs" target="_blank">RS</a> (<i>Video Resting State</i>),
-    & <a href="eeg/vep" target="_blank">VEP</a> (<i>Visual Evoked Potential</i>)<br>
-    <sup><b>2</b></sup> Whenever possible, pipeline derivatives are also provided in the HBCD tabulated format to match other instruments - <a href="../datacuration/overview/#warning" target="_blank">see details</a>
+    & <a href="eeg/vep" target="_blank">VEP</a> (<i>Visual Evoked Potential</i>)
   </td>
 </tr>
 </tfoot>
@@ -666,7 +668,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <th>EEG Task<sup><b>1</b></sup></th>
   <th>Raw BIDS</th>
   <th>Pipeline Derivatives</th>
-  <th style="text-align: center;">Tabulated Derivatives<sup><b>2</b></sup></th>
+  <th style="text-align: center;"><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; Tabulated Derivatives</th>
 </tr>
 </thead>
 <tbody>
@@ -680,7 +682,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </table>
 <p><i style="color: teal;" class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
 <p style="font-size: 0.9em; color: #555;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= HBCD-MADE pipeline derivatives in HBCD tabulated format (<i><a href="../datacuration/overview/#warning" target="_blank">see details</a></i>)
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in <a href="../datacuration/overview/#warning" target="_blank">HBCD tabulated format <i class="fa-solid fa-up-right-from-square"></i></a>
 </p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -868,20 +870,16 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 <div class="table-collapsible-content">
 <p><i style="color: teal;" class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b></p>
+<p style="font-size: 0.9em; color: #555;">
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in <a href="../datacuration/overview/#warning" target="_blank">HBCD tabulated format <i class="fa-solid fa-up-right-from-square"></i></a>
+</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; margin-bottom: 0; padding-bottom: 0;">
-<tfoot>
-<tr>
-  <td colspan="4" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
-    <sup><b>1</b></sup> Whenever possible, pipeline derivatives are also provided in the HBCD tabulated format to match other instruments - <a href="../datacuration/overview/#warning" target="_blank">see details</a>
-  </td>
-</tr>
-</tfoot>
 <thead>
 <tr>
   <th>Sensor</th>
   <th>Raw BIDS</th>
   <th>Pipeline Derivatives</th>
-  <th style="text-align: center;">Tabulated Derivatives<sup><b>1</b></sup></th>
+  <th style="text-align: center;"><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; Tabulated Derivatives</th>
 </tr>
 </thead>
 <tbody>
