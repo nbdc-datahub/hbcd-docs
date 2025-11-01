@@ -128,7 +128,8 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 </div>
 <div class="collapsible-content">
 <p><b>Response Scale</b><br>
-Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale: 1 = Never; 2 = Very rarely; 3 = Less than half the time; 4 = About half the time; 5 = More than half the time; 6 = Almost always; 7 = Always.</p>
+Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale: 1=<b>Never</b> &nbsp; 2=<b>Very rarely</b> &nbsp; 3=<b>Less than half the time</b> &nbsp 4=<b>About half the time</b> &nbsp; 5=<b>More than half the time</b> &nbsp; 6=<b>Almost always</b> &nbsp; 7=<b>Always</b> <br> 
+Options also include "Does not apply," which is not scored, but coded as "0" and "8" in the ECBQ and IBQ-R, respectively.</p>
 <p><b>Scale Scores</b><br>
 Each domain score is calculated as the mean of all applicable scale items:</p>
 <ul>
@@ -148,4 +149,3 @@ Each domain score is calculated as the mean of all applicable scale items:</p>
     <p>Putnam, S. P., Jacobs, J., Gartstein, M., & Rothbart, M. K. (2010). <i>Development assessment short very short forms Early Childhood Behavior Questionnaire<i>. In Poster presented International Conference Infant Studies (<a href="http://research.bowdoin.edu/rothbart-temperament-questionnaires/files/2016/09/ICIS_2010_ECBQ_sf_poster.pdf">LINK</a>).</p> 
     <p>Rothbart, M. K. (1981). Measurement of temperament in infancy. <i>Child Development</i>, 52(2), 569–578. <a href="https://doi.org/10.1111/j.1467-8624.1981.tb03082.x" target="_blank">https://doi.org/10.1111/j.1467-8624.1981.tb03082.x</a></p>  
 </div>
-<br>
