@@ -128,8 +128,11 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 </div>
 <div class="collapsible-content">
 <p><b>Response Scale</b><br>
-Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale: 1=<b>Never</b> &nbsp; 2=<b>Very rarely</b> &nbsp; 3=<b>Less than half the time</b> &nbsp 4=<b>About half the time</b> &nbsp; 5=<b>More than half the time</b> &nbsp; 6=<b>Almost always</b> &nbsp; 7=<b>Always</b> <br> 
-Options also include "Does not apply," which is not scored, but coded as "0" and "8" in the ECBQ and IBQ-R, respectively.</p>
+Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale: 
+<table class="compact-table" style="width: 100%; border-collapse: collapse; font-size: 0.9em; line-height: 1.0; text-align: center;">
+<thead><tr><th style="text-align: center;">Never</th><th style="text-align: center;">Very rarely</th><th style="text-align: center;">Less than half the time</th><th style="text-align: center;">About half the time</th><th style="text-align: center;">More than half the time</th><th style="text-align: center;">Almost always</th><th style="text-align: center;">Always</th></tr></thead>
+<tbody><tr><td style="text-align: center;">(1)</td><td style="text-align: center;">(2)</td><td style="text-align: center;">(3)</td><td style="text-align: center;">(4)</td><td style="text-align: center;">(5)</td><td style="text-align: center;">(6)</td><td style="text-align: center;">(7)</td></tr></tbody></table>
+<i>Options also include "Does not apply," which is not scored, but coded as "0" and "8" in the ECBQ and IBQ-R, respectively.</i></p>
 <p><b>Scale Scores</b><br>
 Each domain score is calculated as the mean of all applicable scale items:</p>
 <ul>
