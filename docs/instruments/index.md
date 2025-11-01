@@ -167,7 +167,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><code>sed_cg_home_ec</code></td>
   </tr>
   <tr>
-    <td rowspan="2"><a href="bcgi/ibqr" target="_blank">IBQR-R (VSF)+BI / ECBQ-R (VSF)+BI</a></td>
+    <td rowspan="2"><a href="bcgi/ibqr" target="_blank">IBQ-R (VSF)+BI / ECBQ (VSF)+BI</a></td>
     <td>Infant (<i>I</i>)</td>
     <td rowspan="2">
       Surgency/Extraversion,<br>

@@ -4,7 +4,6 @@
 # Behavior Questionnaire + Inhibition
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tfoot><tr><td colspan="4" style="font-size: 0.9em;"><i><b>*BQ-R (VSF)+BI</b> = Behavior Questionnaire – Revised Very Short Form + Behavior Inhibition</i></tr></td></tfoot>
 <thead>
 <tr>
   <th>Instrument</th>
@@ -21,7 +20,7 @@
   <td><code>mh_cg_ibqr</code></td>
 </tr>
 <tr>
-  <td><b>ECBQ-R (VSF)+BI</b></td>
+  <td><b>ECBQ (VSF)+BI</b></td>
   <td>Early Childhood (EC)</td>
   <td><code>mh_cg_ecbq</code></td>
 </tr>
@@ -55,7 +54,8 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">V03 <strong>[IBQ-R (VSF)+BI]</strong>; V05 <strong>[IBQ-R & ECBQ (VSF)+BI]</strong><br>(<i>Validated for ages 3 months, 0 days to 17 months, 30 days for HBCD</i>)</td></tr>
+<td>
+  <strong>IBQ-R (VSF)+BI</strong>: V03, V05 / <strong>ECBQ (VSF)+BI</strong>: V05 - <i>Validated for ages 3-18 months for HBCD</i></td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>7-10 min</td></tr>
 <tr><td><b>Quality Control</b></td>
@@ -65,7 +65,7 @@
 
 ## Instrument Details
 
-The **IBQ-R (VSF)+BI** (for infancy) and **ECBQ (VSF)+BI** (for early childhood) are caregiver-report questionnaires used to evaluate temperamental reactivity and self-regulation during the early years of development. These instruments are adapted from the validated Very Short Forms (VSF) of the IBQ-R and ECBQ, with additional items (items 38-47) drawn from the long forms to capture **Behavioral Inhibition (Social Fear)**.
+The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibition (**IBQ-R (VSF)+BI**) and Early Childhood Behavior Questionnaire Very Short Form + Behavior Inhibition (**ECBQ (VSF)+BI**) are caregiver-report questionnaires used to evaluate temperamental reactivity and self-regulation during the early years of development. These instruments are adapted from the validated Very Short Forms (VSF) of the IBQ-R and ECBQ, with additional items (items 38-47) drawn from the long forms to capture **Behavioral Inhibition (Social Fear)**.
 
 **The HBCD versions therefore include four scale domains:**
 
