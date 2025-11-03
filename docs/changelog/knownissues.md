@@ -41,6 +41,23 @@ If you have questions or would like to report an issue, please submit a ticket t
   ICD codes are inconsistently provided, sometimes missing corresponding names/labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>
 </td>
 </tr>
+<tr>
+  <td>TLFB<br><code>pex_ch_tlfb</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  Participants enrolled postnatally (<i>HBCD Main Child- Postnatal Recruitment</i> or <i>HBCD Multiple Birth- Postnatal Recruitment</i> cohorts) reported TLFB on the wrong weeks. Weeks were either reported in v1 or v2, but should be reported in v3.<br><br>
+    <table class="table-no-vertical-lines">
+    <tbody>
+    <tr><td><b>v1</b></td>
+    <td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> Last Week</td></tr>
+    <tr><td><b>v2</b></td>
+    <td><b>Period 4:</b> Last Two Weeks Before Delivery</td></tr>
+    <tr><td><b>v3</b></td>
+    <td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> LMP + 19 Weeks to LMP + 20 Weeks<br><b>Period 4:</b> Last Two Weeks Before Delivery</td></tr>
+    </tbody>
+    </table>
+</td>
+</tr>
 </tbody>
 </table>
 
