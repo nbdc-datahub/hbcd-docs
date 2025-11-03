@@ -66,6 +66,3 @@ The **PROMIS Early Childhood Parent Report Sleep Problems** questionnaire is a m
 <p>Lai, J.-S., Blackwell, C. K., Tucker, C. A., Jensen, S. E., & Cella, D. (2022). Measuring PROMIS® physical activity and Sleep Problems in Early Childhood. <i>Journal of Pediatric Psychology</i>, 47(5), 534–546. <a href="https://doi.org/10.1093/jpepsy/jsac028">https://doi.org/10.1093/jpepsy/jsac028</a></p>  
 </div>
 
-
-<br>
-

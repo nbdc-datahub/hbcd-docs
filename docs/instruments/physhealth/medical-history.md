@@ -21,6 +21,20 @@
 
 ---------------------------------------------
 
+<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Responsible Use Warning</span>
+  <a class="anchor-link" href="#alert" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="alert-collapsible-content">
+<p>When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables within the Medical History Form, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.</p>
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

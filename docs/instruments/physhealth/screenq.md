@@ -87,5 +87,3 @@
 <p>Hutton, J.S., Huang, G., Sahay, R.D. et al. A novel, composite measure of screen-based media use in young children (ScreenQ) and associations with parenting practices and cognitive abilities. <i>Pediatr Res</i> 87, 1211–1218 (2020). <a href="https://doi.org/10.1038/s41390-020-0765-1">https://doi.org/10.1038/s41390-020-0765-1</a></p>  
 </div>
 
-<br>
-
