@@ -15,13 +15,13 @@
 <tbody>
 <tr>
   <td><b>IBQ-R (VSF)+BI</b></td>
-  <td>Infant (I)</td>
+  <td>Infant (<b>I</b>)</td>
   <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
   <td><code>mh_cg_ibqr</code></td>
 </tr>
 <tr>
   <td><b>ECBQ (VSF)+BI</b></td>
-  <td>Early Childhood (EC)</td>
+  <td>Early Childhood (<b>EC</b>)</td>
   <td><code>mh_cg_ecbq</code></td>
 </tr>
 </tbody>
@@ -130,14 +130,14 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 <p><b>Response Scale</b><br>
 Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale: 
 <table class="compact-table" style="width: 100%; border-collapse: collapse; font-size: 0.9em; line-height: 1.0; text-align: center;">
-<thead><tr><th style="text-align: center;">Never</th><th style="text-align: center;">Very rarely</th><th style="text-align: center;">Less than half the time</th><th style="text-align: center;">About half the time</th><th style="text-align: center;">More than half the time</th><th style="text-align: center;">Almost always</th><th style="text-align: center;">Always</th></tr></thead>
+<thead style="background-color: white;"><tr><th style="text-align: center;">Never</th><th style="text-align: center;">Very rarely</th><th style="text-align: center;">Less than half the time</th><th style="text-align: center;">About half the time</th><th style="text-align: center;">More than half the time</th><th style="text-align: center;">Almost always</th><th style="text-align: center;">Always</th></tr></thead>
 <tbody><tr><td style="text-align: center;">(1)</td><td style="text-align: center;">(2)</td><td style="text-align: center;">(3)</td><td style="text-align: center;">(4)</td><td style="text-align: center;">(5)</td><td style="text-align: center;">(6)</td><td style="text-align: center;">(7)</td></tr></tbody></table>
 <i>Options also include "Does not apply," which is not scored, but coded as "0" and "8" in the ECBQ and IBQ-R, respectively.</i></p>
 <p><b>Scale Scores</b><br>
 Each domain score is calculated as the mean of all applicable scale items:</p>
 <ul>
   <li>Only items scored 1–7 are included.</li>
-  <li>Responses of “Does not apply” or “Choose not to respond” receive no numerical score and are not included in the total number of items for the scale.</li>
+  <li>Responses of “Does not apply” receives no numerical score and is not included in the total number of scale items.</li>
   <li>Items marked with an “R” are <strong>reverse-scored</strong> and already implemented in the HBCD scoring algorithm.</li>
 </ul>
 <p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
