@@ -20,17 +20,17 @@
 
 ---------------------------------------------
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
   <span class="text-with-link">
-  <span class="text">Data Warning</i></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
+  <span class="text">Responsible Use Warning</span>
+  <a class="anchor-link" href="#alert" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
+<div class="alert-collapsible-content">
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
@@ -78,19 +78,9 @@ The **General Functioning (GF) subscale of the Family Assessment Device (FAD)** 
 <div class="collapsible-content">
 <p><strong>Scores are computed by the following method:</strong></p>
 <ol>
-  <li>
-    Sum all numerical item responses. The items are scored as coded:
-    <ul>
-      <li>Strongly Agree = 1</li>
-      <li>Agree = 2</li>
-      <li>Disagree = 3</li>
-      <li>Strongly Disagree = 4</li>
-    </ul>
-    <p>Note that:</p>
-    <ul type="a">
-      <li>If caregiver omits an item or selects “decline to answer” that item receives no numerical score.</li>
-      <li>The participant must provide a numerical response for 3 or more items in order to receive a total scale/average score.</li>
-    </ul>
+  <li>Sum all numerical item responses. The items are scored as coded:<br><br>
+  1 = <b>Strongly Agree</b> &nbsp; 2 = <b>Agree</b> &nbsp; 3 = <b>Disagree</b> &nbsp 4 = <b>Strongly Disagree</b>
+  <p>If caregiver omits an item or selects “decline to answer,” that item receives no numerical score. The participant must provide a numerical response for 3 or more items in order to receive a total scale/average score.</p>
   </li>
   <li>
     Divide the sum by the number of items receiving a numerical response. Do not include items marked “decline to answer” or items receiving no response in determining the total number of items.

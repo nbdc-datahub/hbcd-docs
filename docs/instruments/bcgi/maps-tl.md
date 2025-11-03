@@ -27,6 +27,20 @@
 </tbody>
 </table>
 
+<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Responsible Use Warning</span>
+  <a class="anchor-link" href="#alert" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="alert-collapsible-content">
+<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
+</div>
+
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
@@ -39,7 +53,6 @@
 </div>
 <div class="warning-collapsible-content">
 <p>The MAPS-TL assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p>  
-<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
 ## Administration & Quality Control
@@ -91,20 +104,51 @@ Alterations were made to replace “parent” with “parent/caregiver” where 
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>V03</b><br>
-Each of the 17 items for MAPS-TL is answered on a scale of 1 to 6: 1 [Never], 2 [Rarely (Less than once per week)], 3 [Some (1-3) days of the week], 4 [Most (4-6) days of the week], 5 [Every day of the week], 6 [Many times each day]. A <strong>summary score</strong> is generated when the caregiver provides a numerical score of 1 to 6 for at least 9 out of the 17 items. If fewer than 9 items are completed, the score is marked as missing. When responses are available for 9 to 16 items, a prorated score is calculated using the formula:
-<p style="font-size: 0.9em;">
+<p>The MAPS-TL includes 17 items at Visit 3 (<strong>V03</strong>) and 40 items at Visit 5 (<strong>V05</strong>). Each item is rated by the caregiver on a 6-point frequency scale:</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
+<thead>
+<tr>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Never</td>
+<td style="text-align: center;">Rarely<br>(Less than once per week)</td>
+<td style="text-align: center;">Some (1-3)<br>days of the week</td>
+<td style="text-align: center;">Most (4-6)<br>days of the week</td>
+<td>Every day of the week</td>
+<td>Many times each day</td>
+</tr>
+</tbody>
+</table>
+<p>
+A <strong>summary score</strong> is generated when the caregiver provides responses for at least:
+</p>
+<ul>
+  <li><strong>9 of 17 items</strong> at V03, or</li>
+  <li><strong>20 of 40 items</strong> at V05.</li>
+</ul>
+<p>
+If fewer than the required number of items are answered, the score is recorded as missing. 
+When some but not all items are completed (9–16 at V03 or 20–39 at V05), a prorated score is computed as:
+</p>
+<p style="font-size: 0.9em; text-align:center;">
   \[
-  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{17}
+  \text{Prorated Score} =
+  \left(
+    \frac{\text{Sum of answered items}}{\text{Number of items answered}}
+  \right)
+  \times
+  \text{Total number of items (17 for V03 or 40 for V05)}
   \]
 </p>
-<p><b>V05</b><br>
-Each of the 40  items for MAPS-TL is answered on a scale of 1 to 6: 1 [Never], 2 [Rarely (Less than once per week)], 3 [Some (1-3) days of the week], 4 [Most (4-6) days of the week], 5 [Every day of the week], 6 [Many times each day]. A <strong>summary score</strong> is generated when the caregiver provides a numerical score of 1 to 6 for at least 20 out of the 40 items. If fewer than 20 items are completed, the score is marked as missing. When responses are available for 20 to 40 items, a prorated score is calculated using the formula:
-<p style="font-size: 0.9em;">
-  \[
-  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{40}
-  \]
-</p>
+<p>Higher scores indicate more frequent occurrence of the measured behaviors.</p>
 </div>
 
 ## References

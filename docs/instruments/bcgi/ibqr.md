@@ -27,6 +27,20 @@
 </tbody>
 </table>
 
+<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Responsible Use Warning</span>
+  <a class="anchor-link" href="#alert" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="alert-collapsible-content">
+<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
+</div>
+
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
@@ -40,7 +54,6 @@
 <div class="warning-collapsible-content">
 <p>The IBQ-R (VSF)+BI and ECBQ (VSF)+BI assess normative variations in infant/child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p> 
 <p>The IBQ-R was administered at V03 and V05. 78 participants were inadvertently given the ECBQ at V05. Thus, there are a limited number of participants who do not have IBQ-R data at V03 and instead this data is in a ECBQ V05 datafile.</p>
-<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
 ## Administration & Quality Control
@@ -128,11 +141,32 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 </div>
 <div class="collapsible-content">
 <p><b>Response Scale</b><br>
-Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale: 
-<table class="compact-table" style="width: 100%; border-collapse: collapse; font-size: 0.9em; line-height: 1.0; text-align: center;">
-<thead style="background-color: white;"><tr><th style="text-align: center;">Never</th><th style="text-align: center;">Very rarely</th><th style="text-align: center;">Less than half the time</th><th style="text-align: center;">About half the time</th><th style="text-align: center;">More than half the time</th><th style="text-align: center;">Almost always</th><th style="text-align: center;">Always</th></tr></thead>
-<tbody><tr><td style="text-align: center;">(1)</td><td style="text-align: center;">(2)</td><td style="text-align: center;">(3)</td><td style="text-align: center;">(4)</td><td style="text-align: center;">(5)</td><td style="text-align: center;">(6)</td><td style="text-align: center;">(7)</td></tr></tbody></table>
-<i>Options also include "Does not apply," which is not scored, but coded as "0" and "8" in the ECBQ and IBQ-R, respectively.</i></p>
+Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale:<br> 
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
+<thead>
+<tr>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+<th style="text-align: center;">7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Never</td>
+<td>Very rarely</td>
+<td>Less than half the time</td>
+<td>About half the time</td>
+<td>More than half the time</td>
+<td>Almost always</td>
+<td>Always</td>
+</tr>
+</tbody>
+</table>
+<p><i>Options also include "Does not apply," which is not scored, but coded as "0" and "8" in the ECBQ and IBQ-R, respectively.</i></p>
 <p><b>Scale Scores</b><br>
 Each domain score is calculated as the mean of all applicable scale items:</p>
 <ul>

@@ -21,17 +21,17 @@
 
 ---------------------------------------------
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
   <span class="text-with-link">
-  <span class="text">Data Warning</i></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
+  <span class="text">Responsible Use Warning</span>
+  <a class="anchor-link" href="#alert" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
+<div class="alert-collapsible-content">
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
@@ -91,26 +91,26 @@ The **Confusion, Hubbub, and Order Scale (CHAOS)** is a 15-item, self-report sca
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-  <p>The CHAOS instrument consists of 15 items, each rated on a 4-point scale to indicate how much each statement describes the participant's home environment:</p>
-  <ul>
-    <li>1 = Very much like your own home</li>
-    <li>2 = Somewhat like your own home</li>
-    <li>3 = A little bit like your own home</li>
-    <li>4 = Not at all like your own home</li>
-  </ul>
-  <p>A non-response option, "<em>Decline to Answer</em>," is available and does not contribute to scoring.</p>
-  <p><b>Total score:</b><br>
-  Calculated as the sum of all numerical item responses, excluding non-responses. Higher scores indicate a higher level of household CHAOS. If fewer than 12 items are completed (or 4 or more items are missing), a total score is not computed. If less than 25% of items are missing (≤3 items), a prorated sum score is calculated using the formula:
-  <p style="font-size: 0.9em;">
-  \[
-  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{15}
-  \]
+<p>The CHAOS instrument consists of 15 items, each rated on a 4-point scale to indicate how much each statement describes the participant's home environment:</p>
+<ul>
+  <li>1 = Very much like your own home</li>
+  <li>2 = Somewhat like your own home</li>
+  <li>3 = A little bit like your own home</li>
+  <li>4 = Not at all like your own home</li>
+</ul>
+<p>A non-response option, "<em>Decline to Answer</em>," is available and does not contribute to scoring.</p>
+<p><b>Total score:</b><br>
+Calculated as the sum of all numerical item responses, excluding non-responses. Higher scores indicate a higher level of household CHAOS. If fewer than 12 items are completed (or 4 or more items are missing), a total score is not computed. If less than 25% of items are missing (≤3 items), a prorated sum score is calculated using the formula:
+<p style="font-size: 0.9em;">
+\[
+\text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{15}
+\]
 </p>   
-  <p><b>Scoring rules:</b></p>
-  <ul>
-    <li>Scored as coded: <code>Chaos_1</code>, <code>Chaos_2</code>, <code>Chaos_4</code>, <code>Chaos_7</code>, <code>Chaos_12</code>, <code>Chaos_14</code>, <code>Chaos_15</code></li>
-    <li>Reverse-scored (1→4, 2→3, 3→2, 4→1): <code>Chaos_3</code>, <code>Chaos_5</code>, <code>Chaos_6</code>, <code>Chaos_8</code>, <code>Chaos_9</code>, <code>Chaos_10</code>, <code>Chaos_11</code>, <code>Chaos_13</code></li>
-  </ul>
+<p><b>Scoring rules:</b></p>
+<ul>
+  <li>Scored as coded: <code>Chaos_1</code>, <code>Chaos_2</code>, <code>Chaos_4</code>, <code>Chaos_7</code>, <code>Chaos_12</code>, <code>Chaos_14</code>, <code>Chaos_15</code></li>
+  <li>Reverse-scored (1→4, 2→3, 3→2, 4→1): <code>Chaos_3</code>, <code>Chaos_5</code>, <code>Chaos_6</code>, <code>Chaos_8</code>, <code>Chaos_9</code>, <code>Chaos_10</code>, <code>Chaos_11</code>, <code>Chaos_13</code></li>
+</ul>
 </div>
 
 ## References
