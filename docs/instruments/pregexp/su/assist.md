@@ -1,33 +1,11 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 - addition of V4</i></p>
 
 # ASSIST      
-<p>
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>pex_bm_assistv&lt;1|2|3|4&gt;</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-     Alcohol, Smoking and Substance Involvement Screening Test (<i>ASSIST</i>)
-    </div>
-  </div>
-    <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
-    <div class="info-value">V1, V2, V3, V4</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Substance Use Pre-, During, and Post-Pregnancy</div>
-  </div>
-</div>
-</p>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <tr>
-    <th colspan="3"><i><i class="fa-solid fa-clone"></i> Version-Specific Information</i></th>
+    <th colspan="3">Alcohol, Smoking and Substance Involvement Screening Test (<i>ASSIST</i>) Versions V1-V4:</th>
   </tr>
   <tr>
     <th>Version</th>
@@ -36,17 +14,17 @@
   </tr>
 </thead>
 <tbody>
-<tr><td><strong>ASSIST V1</strong></td>
+<tr><td>ASSIST V1</td>
 <td>Substance use and problematic use before and during pregnancy</td>
 <td><code>pex_bm_assistv1</code></td>
 </tr>
-<tr><td><strong>ASSIST V2</strong></td>
+<tr><td>ASSIST V2</td>
 <td style="word-wrap: break-word; white-space: normal;">Substance use during end of pregnancy ( between V01 and delivery) and postnatal (weeks 0-4, between delivery and V2)</td>
 <td><code>pex_bm_assistv2</code></td></tr>
-<tr><td><strong>ASSIST V3</strong></td>
+<tr><td>ASSIST V3</td>
 <td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy (3 month anchors)</td>
 <td><code>pex_bm_assistv3</code></td></tr>
-<tr><td><strong>ASSIST V4</strong></td>
+<tr><td>ASSIST V4</td>
 <td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy (12 month anchors)</td>
 <td><code>pex_bm_assistv4</code></td></tr>
 </tbody>
@@ -107,8 +85,6 @@ The HBCD ASSIST measures were modified from the [NIDA Quick Screen (Modified ASS
 The NIDA quick screen tool (*have you used alcohol, tobacco, prescription drugs, or illegal drugs in the last year*) was modified to assess more details regarding types of substances used and the timeline of use before and during pregnancy - see [HBCD Modification Details](#hbcd-mod) for modifications made to each instrument version. In addition, for lifetime and problematic use, and use pre-pregnancy, pregnancy, end-pregnancy, post-pregnancy, and past 3 months, use was greatly expanded - see [Expanded ASSIST Substance Type Options](#substance-options).
 
 Finally, the Time Line Follow Back (TLFB) was triggered when substance use was reported before [`pre-use`] or during pregnancy [`during_use`] on the ASSIST V1 or at the end of pregnancy [`end_use`] on the ASSIST V2 (see [documentation on TLFB](tlfb.md)). 
-
-
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>

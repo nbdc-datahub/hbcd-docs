@@ -6,10 +6,10 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th><i class="fa-solid fa-maximize"></i> Instrument</th>
-  <th><i class="fa-solid fa-clone"></i> Version</th>
-  <th><i class="fa-solid fa-tape"></i> Construct</th>
-  <th><i class="fa fa-table"></i> Table Name</th>
+  <th>Instrument</th>
+  <th>Version</th>
+  <th>Construct</th>
+  <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
@@ -111,4 +111,3 @@ Each of the 40  items for MAPS-TL is answered on a scale of 1 to 6: 1 [Never], 2
 <div class="references">
 <p>Krogh-Jespersen, S., Kaat, A. J., Petitclerc, A., Perlman, S. B., Briggs-Gowan, M. J., Burns, J. L., Adam, H., Nili, A., Gray, L., &amp; Wakschlag, L. S. (2022). Calibrating temper loss severity in the transition to toddlerhood: Implications for developmental science. <em>Applied Developmental Science</em>, 26(4), 785–798. <a href="https://doi.org/10.1080/10888691.2021.1995386">https://doi.org/10.1080/10888691.2021.1995386</a></p>
 </div>
-<br>

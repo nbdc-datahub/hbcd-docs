@@ -75,4 +75,4 @@
 <p>California Surgeon General's Clinical Advisory Committee. Adverse Childhood Experience Questionnaire for Adults. <a href="https://www.acesaware.org/learn-about-screening/screening-tools/">https://www.acesaware.org/learn-about-screening/screening-tools/</a>: United States: ACES Aware, 2020.</p>  
 <p>Koita K, Long D, Hessler D, Benson M, Daley K, Bucci M, et al. (2018) Development and implementation of a pediatric adverse childhood experiences (ACEs) and other determinants of health questionnaire in the pediatric medical home: A pilot study. <i>PLoS ONE</i> 13(12): e0208088. <a href="https://doi.org/10.1371/journal.pone.0208088">https://doi.org/10.1371/journal.pone.0208088</a></p>  
 </div> 
-<br>
+

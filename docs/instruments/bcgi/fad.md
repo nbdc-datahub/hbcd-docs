@@ -105,5 +105,3 @@ The **General Functioning (GF) subscale of the Family Assessment Device (FAD)** 
 <p>Boterhoven de Haan, K. L., Hafekost, J., Lawrence, D., Sawyer, M. G., & Zubrick, S. R. (2015). Reliability and validity of a short version of the general functioning subscale of the McMaster Family Assessment Device. <i>Family Process</i>, 54(1), 116–123. doi: <a href="https://doi.org/10.1111/famp.12113">10.1111/famp.12113</a></p>
 <p>Epstein, N. B., Baldwin, L. M., & Bishop, D. S. (1983). The McMaster Family Assessment Device. <i>Journal of Marital and Family Therapy</i>, 9(2): 171–180. doi: <a href="https://doi.org/10.1111/j.1752-0606.1983.tb01497.x">10.1111/j.1752-0606.1983.tb01497.x</a></p>  
 </div>
-
-<br>

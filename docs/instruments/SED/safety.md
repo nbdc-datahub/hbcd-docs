@@ -48,4 +48,3 @@ This measure is a three-item questionnaire to assess the respondent’s percepti
   <p>Mujahid, M. S., Diez Roux, A. V., Morenoff, J. D., &amp; Raghunathan, T. (2007). Assessing the measurement properties of neighborhood scales: from psychometrics to ecometrics. <em>American Journal of Epidemiology</em>, 165(8), 858–867. <a href="https://doi.org/10.1093/aje/kwm040">https://doi.org/10.1093/aje/kwm040</a></p>
   <p>PhenX Toolkit. (2024 November 01). Neighborhood Safety, PhenX Toolkit. <a href="https://www.phenxtoolkit.org/protocols/view/210901">https://www.phenxtoolkit.org/protocols/view/210901</a></p>
 </div>
-<br>

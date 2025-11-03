@@ -207,7 +207,5 @@ Assessment of children’s home environments is crucial to understanding context
 <p>Lansford, J. E., Odgers, C. L., Bradley, R. H., Godwin, J., Copeland, W. E., Rothenberg, W. A., & Dodge, K. A. (2023). The HOME-21: A revised measure of the home environment for the 21st century tested in two independent samples. <i>Psychological Assessment</i>, 35(1), 1–11. <a href="https://doi.org/10.1037/pas0001183" target="_blank">https://doi.org/10.1037/pas0001183</a></p>  
 <p>Mott, F. L. (2004). The utility of the HOME-SF scale for child development research in a large national longitudinal survey: The national longitudinal survey of youth 1979 cohort. <i>Parenting, Science and Practice</i>, 4(2–3), 259–270. <a href="https://doi.org/10.1080/15295192.2004.9681273" target="_blank">https://doi.org/10.1080/15295192.2004.9681273</a></p>  
 </div>
-<br>
-
 
 

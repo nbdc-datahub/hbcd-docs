@@ -138,5 +138,4 @@ As of 2022, about 1 in 5 US adults report current smoking ([CDC 2022](https://ww
 <p>Ling J and Heffernan T. Front Psychiatry. 2016 Mar 24; 7:46. <a href="https://doi.org/10.3389/fpsyt.2016.00046">https://doi.org/10.3389/fpsyt.2016.00046</a></p>  
 <p>U.S. Environmental Protection Agency. (2024, December 20). What is EPA’s position on children’s exposure to secondhand smoke/aerosol? <a href="https://www.epa.gov/indoor-air-quality-iaq/what-epas-position-childrens-exposure-secondhand-smokeaerosol">https://www.epa.gov/indoor-air-quality-iaq/what-epas-position-childrens-exposure-secondhand-smokeaerosol</a></p>
 </div>
-<br>
 

@@ -5,10 +5,10 @@
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th style="width: 20%;"><i class="fa-solid fa-maximize"></i> Instrument</th>
-  <th style="width: 20%;"><i class="fa-solid fa-clone"></i> Version</th>
-  <th style="width: 20%;"><i class="fa-solid fa-tape"></i> Construct</th>
-  <th style="width: 20%;"><i class="fa fa-table"></i> Table Name</th>
+  <th style="width: 20%;">Instrument</th>
+  <th style="width: 20%;">Version</th>
+  <th style="width: 20%;">Construct</th>
+  <th style="width: 20%;">Table Name</th>
 </tr>
 </thead>
 <tbody>
@@ -71,4 +71,3 @@
   <p>Morris, A. S., Hays-Grudo, J., Zapata, M. I., Treat, A., &amp; Kerr, K. L. (2021). Adverse and protective childhood experiences and parenting attitudes: The role of cumulative protection in understanding resilience. <em>Adversity and Resilience Science</em>, 2(3), 181–192. <a href="https://doi.org/10.1007/s42844-021-00036-8">https://doi.org/10.1007/s42844-021-00036-8</a></p>
   <p>Morris, A. S., Treat, A., Hays-Grudo, J., Chesher, T., Williamson, A. C., &amp; Mendez, J. (2018). Integrating research and theory on early relationships to guide intervention and prevention. In <em>Building Early Social and Emotional Relationships with Infants and Toddlers</em> (pp. 1–25). Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-03110-7_1">https://doi.org/10.1007/978-3-030-03110-7_1</a></p>
 </div>
-<br>

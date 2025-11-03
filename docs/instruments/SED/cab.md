@@ -86,5 +86,3 @@ Language was updated to use gender-neutral terminology in the definition of inti
 <div class="references"> 
 <p>Ford-Gilboe, M., Wathen, C. N., Varcoe, C., MacMillan, H. L., Scott-Storey, K., Mantler, T., Hegarty, K., & Perrin, N. (2016). Development of a brief measure of intimate partner violence experiences: the Composite Abuse Scale (Revised)-Short Form (CASR-SF). <i>BMJ Open</i>, 6(12), e012824. <a href="https://doi.org/10.1136/bmjopen-2016-012824">https://doi.org/10.1136/bmjopen-2016-012824</a></p>  
 </div>
-
-<br>
