@@ -69,6 +69,12 @@ The sampling covers specific weeks before pregnancy (Weeks 1-2) and during pregn
 Participants were asked to report occasions (except cigarettes/cigarillos and drinks, reported as number), but some substances (e.g. electronic cigarette devices) are difficult to report in occasions and have outliers.</p>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#pregnancy-exposure-including-substance-use" target="_blank">see details</a>.</span>
+</div>
+<p></p>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

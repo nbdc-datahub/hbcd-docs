@@ -122,4 +122,3 @@ The **Confusion, Hubbub, and Order Scale (CHAOS)** is a 15-item, self-report sca
 <p>Sánchez-Mondragón, G., &amp; Flores Herrera, L. M. (2019). Adaptation and validation of Confusion, Hubbub, and Order Scale in Mexican parents. <em>Acta Universitaria</em>, 29, 1–13. <a href="https://doi.org/10.15174/au.2019.1971">https://doi.org/10.15174/au.2019.1971</a></p>
 <p>Wilhoit, S. A., Trentacosta, C. J., Beeghly, M., Boeve, J. L., Lewis, T. L., &amp; Thomason, M. E. (2021). Household chaos and early childhood behavior problems: The moderating role of mother-child reciprocity in lower-income families. <em>Family Relations</em>, 70(4), 1040–1054. <a href="https://doi.org/10.1111/fare.12560">https://doi.org/10.1111/fare.12560</a></p>
 </div>
-<br>

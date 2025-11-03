@@ -250,4 +250,3 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
     Wakeman, S. E., Bryant, A., & Harrison, N. (2022). Redefining child protection. <i>Obstetrics and Gynecology</i>, <b>140</b>(2), 167–173. <a href="https://doi.org/10.1097/aog.0000000000004786" target="_blank">https://doi.org/10.1097/aog.0000000000004786</a>
   </p>
 </div>
-<br>

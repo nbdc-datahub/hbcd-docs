@@ -2,13 +2,13 @@
 
 ## Health V1 & V2 Instruments
 
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-    <th><i class="fa-solid fa-maximize"></i> Instrument</th>
-    <th><i class="fa-solid fa-compress"></i> Acronym</th>
-    <th><i class="fa-solid fa-tape"></i> Construct</th>
-    <th><i class="fa fa-table"></i> Table Name</th>
+    <th>Instrument</th>
+    <th>Acronym</th>
+    <th>Construct</th>
+    <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
@@ -77,80 +77,73 @@
 <p>Amidst powerful societal expectations to ‘do what’s best for the baby’ during pregnancy (i.e. by stopping substance use), up to half of pregnancies in the United States are unintended with 1 in 5 unwanted (<a href="https://doi.org/10.1016/S2214-109X(20)30315-6">Bearak et al. 2020</a>). This discrepancy contributes to implicit bias against pregnant individuals who use substances as ‘not caring about their babies’ which is neither humane, nor evidence based (<a href="https://doi.org/10.1016/j.socscimed.2022.115071">Massey et al., 2022</a>). While cessation of substance use during pregnancy is universally recognized as optimal, the ability to make this “parental” sacrifice varies substantially between birthing individuals and within individuals between their different pregnancies (<a href="https://doi.org/10.1007/s00737-023-01396-z">Level et al., 2024</a>). Failure to recognize this inherent heterogeneity in pregnancy intention stigmatizes substance users who did not intend to want to become pregnant. Summarily, inclusion of pregnancy intention as a covariate in all studies that characterize prenatal substance exposure (in the absence of a strong justification otherwise) is thus strongly recommended to acknowledge myriad experiences of birthing parents who participated in HBCD who made this research possible.</p>
 </div>
 
-<div id="warning-coding" class="warning-banner" onclick="toggleCollapse(this)">
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
-  <span class="text">Data Warning: (<i>Coding Issues- ICD, WHO, RxNORM</i>)</span>
-  <a class="anchor-link" href="#warning-coding" title="Copy link">
+  <span class="text">Data Warning</span>
+  <a class="anchor-link" href="#warning" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Coding challenges were identified for the following systems:</p>
-  <ul>
-    <li>ICD codes (via BioPortal) – reasons for medication use, ER visits, and hospitalizations</li>
-    <li>WHO symptom codes – symptom reporting</li>
-    <li>RxNORM – medication names</li>
-  </ul>
-  <p>Difficulties arose both for participants (describing symptoms/medications) and for HBCD staff (locating the correct term in the databases).  
-    The following instruments were impacted by coding issues:</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-    <th>Instrument</th>
-    <th>Coding Issues</th>
-</thead>
-<tbody>
-<tr>
-    <td>Health V1- Illness</td>
-    <td style="word-wrap: break-word; white-space: normal;">
-    • Illnesses captured via BioPortal ICD or WHO symptom codes<br>
-    • Participants had difficulty naming conditions<br>
-    • Staff had difficulty locating correct codes
-    </td>
-</tr>
-<tr>
-    <td>Health V1- ER Admissions</td>
-    <td style="word-wrap: break-word; white-space: normal;">
-    • Reasons captured via BioPortal ICD codes<br>
-    • Coding difficult for use of ER for normal care visits (no diagnosis)<br>
-    • False alarms (e.g., suspected water break) often coded as “don’t know”
-    </td>
-</tr>
-<tr>
-    <td>Health V1- Medications</td>
-    <td style="word-wrap: break-word; white-space: normal;">
-    • Medication names from RxNORM; reasons from BioPortal ICD<br>
-    • No option for preventive use → aspirin (to prevent preeclampsia) moved to prenatal vitamin section a few months into the study<br>
-    • PRN (“as needed”) medications inconsistently reported<br>
-    • Some medications were coded with dose, but this was not asked and should not be used
-    </td>
-</tr>
-<tr>
-    <td>Health V2- Pregnancy</td>
-    <td style="word-wrap: break-word; white-space: normal;">Same ICD (via BioPortal) and RxNORM issues as V1</td>
-</tr>
-<tr>
-    <td>Health V2- Infancy</td>
-    <td style="word-wrap: break-word; white-space: normal;">Same ICD (via BioPortal) and RxNORM issues as V1</td>
-</tr>
-</tbody>
+<p><b>Coding Issues: <i>Health V1 – Illness, ER Admissions, Medications; Health V2 – Pregnancy, Infancy</i></b></p>
+<p>Several coding challenges were identified across these instruments, involving the following systems:</p>
+<ul>
+  <li><b>ICD codes (via BioPortal):</b> reasons for medication use, ER visits, and hospitalizations</li>
+  <li><b>WHO symptom codes:</b> symptom reporting</li>
+  <li><b>RxNORM:</b> medication names</li>
+</ul>
+<p>The table below summarizes the affected instruments and specific coding issues:</p>
+<table class="table-no-vertical-lines">
+  <thead>
+    <tr>
+      <th>Instrument</th>
+      <th>Coding System(s)</th>
+      <th>Issue(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Illness</td>
+      <td>ICD or WHO symptom codes</td>
+      <td style="word-wrap: break-word; white-space: normal;">Participants struggled to describe symptoms and/or HBCD staff had difficulty locating appropriate codes.</td>
+    </tr>
+    <tr>
+      <td>ERhosp</td>
+      <td>ICD codes (reason for visit)</td>
+      <td style="word-wrap: break-word; white-space: normal;">
+        Coding was challenging for ER visits for routine care (no diagnosis). 
+        False alarms (e.g., suspected water break) frequently coded as “don’t know.”
+      </td>
+    </tr>
+    <tr>
+      <td>Meds</td>
+      <td>RxNORM (medication name),<br>ICD (reason for use)</td>
+      <td style="word-wrap: break-word; white-space: normal;">
+        <ul>
+          <li>No option for preventive use (e.g., aspirin for preeclampsia prevention was later moved to the prenatal vitamin section).</li>
+          <li>PRN (“as needed”) medications were inconsistently reported.</li>
+          <li>Some medications were coded with dose, but this was not asked and should not be used.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Healthv2 Preg</td>
+      <td>ICD and RxNORM</td>
+      <td>Same issues as Visit 1.</td>
+    </tr>
+    <tr>
+      <td>Healthv2 Inf</td>
+      <td>ICD and RxNORM</td>
+      <td>Same issues as Visit 1.</td>
+    </tr>
+  </tbody>
 </table>
-</div>
-
-<div id="warning-filt" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning (<i>Health V2- Infancy Filters</i>)</span>
-  <a class="anchor-link" href="#warning-filt" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>Out-of-range values were filtered (i.e. changed to "n/a") for the following Health V2- Infancy (<code>pex_bm_healthv2_inf</code>) fields:</p>
+<hr>
+<p><b>Filtered Out-of-Range Values: <i>Health V2- Infancy</i></b><br>
+Out-of-range values were filtered (i.e. changed to "n/a") for the following Health V2- Infancy (<code>pex_bm_healthv2_inf</code>) fields:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <tr> 
@@ -168,10 +161,19 @@
 </table>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#pregnancy-exposure-including-substance-use" target="_blank">see details</a>.</span>
+</div>
+<p></p>
+
 ## Administration & Quality Control
 
-#### Administration
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+**Quality Control Procedures**: For all pregnancy and infant health instruments listed on this page, quality control was performed by reviewing response distributions for outliers.
+
+**Administration Details**:
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
     <th>Instrument</th>
@@ -249,9 +251,6 @@
 </tr>
 </tbody>
 </table>
-
-#### Quality Control  
-For all pregnancy and infant health instruments listed on this page, quality control was performed by reviewing response distributions for outliers.
 
 ## Instrument Details
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

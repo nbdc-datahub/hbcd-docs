@@ -171,6 +171,7 @@ th, td {
 }
 /* Reduce bottom space between last list item and table border */
 .table-no-vertical-lines ul:last-child {
+  margin-top: 0; /* padding-top unnecessary; UL rarely has it */
   margin-bottom: 0; /* padding-bottom unnecessary; UL rarely has it */
 }
 /* Normalize list item spacing */

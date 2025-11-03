@@ -24,7 +24,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 </tbody>
 </table>
 
-### <a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use
+## <a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
   <tr>
@@ -44,7 +44,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 </tbody>
 </table>
 
-### <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
+## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
   <tr>
@@ -64,5 +64,3 @@ This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files
 </tr>
 </tbody>
 </table>
-
-<br>

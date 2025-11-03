@@ -79,6 +79,3 @@
 ## Instrument Details
 
 If individuals endorse one of 5 substances on the V1 Assist (3 months before or during pregnancy) or the V2 Assist (end of pregnancy), they will complete the questionnaire only for those endorsed substances. For each substance endorsed, they are asked the type of use (e.g. cannabis- smoked flower, vaped, edibles, etc). They then report, on average for each trimester, on average how many weeks they had use, and for each week, the average number of days they had use. See [Additional Exposure Questions PDF](additional-exp-V2.pdf) for example.
-
-<br>
-

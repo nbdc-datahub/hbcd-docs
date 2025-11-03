@@ -56,19 +56,6 @@
   margin-bottom: 0.1rem;
   line-height: 1;
 }
-.warning-collapsible-content ul ul {
-  margin-top: 0.1rem;
-  line-height: 1;
-}
-.warning-collapsible-content ul ul li {
-  margin-bottom: 0.1rem;
-  line-height: 1;
-}
-.warning-collapsible-content li b {
-  color: #0077cc;
-  line-height: 1;
-}
-
 
 /* STATIC BANNER */
 .warning-static-banner {
