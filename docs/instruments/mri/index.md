@@ -192,7 +192,7 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 <tbody>
 <tr>
   <td>Glasser</td>
-  <td style="word-wrap: break-word; white-space: normal;">Population-level multimodal anatomical atlas (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.127">Glasser et al., 2013</a>).</td>
+  <td style="word-wrap: break-word; white-space: normal;">Population-level multimodal anatomical atlas (<a href="https://doi.org/10.1038/nature18933">Glasser et al., 2016</a>).</td>
   <td style="word-wrap: break-word; white-space: normal;">Population-level structure and surface-based morphology.</td>
 </tr>
 <tr>
@@ -202,7 +202,7 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 </tr>
 <tr>
   <td>HCP</td>
-  <td style="word-wrap: break-word; white-space: normal;">360-ROI atlas parcellated from combining task, rest, and diffusion MRI data of 210 young adults   (<a href="https://doi.org/10.1038/nature18933">Glasser et al., 2016</a>).</td>
+  <td style="word-wrap: break-word; white-space: normal;">360-ROI atlas parcellated from combining task, rest, and diffusion MRI data of 210 young adults (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.127">Glasser et al., 2013</a>).</td>
   <td style="word-wrap: break-word; white-space: normal;">Cross-modal structural-functional alignment.</td>
 </tr>
 <tr>
@@ -211,7 +211,7 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
   <td style="word-wrap: break-word; white-space: normal;">Individualized functional network mapping.</td>
 </tr>
 <tr>
-  <td>Myers Labonte</td>
+  <td>Myers-Labonte</td>
   <td style="word-wrap: break-word; white-space: normal;">Infant probabilistic atlas, 50% probability threshold (<a href="https://doi.org/10.1101/2023.11.10.566629">Meyers et al., 2023</a>).</td>
   <td style="word-wrap: break-word; white-space: normal;">Infant individualized functional network mapping.</td>
 </tr>
@@ -222,7 +222,7 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 </tr>
 <tr>
   <td><span class="tooltip tooltip-right">4S<span class="tooltiptext">Schaefer Supplemented with Subcortical Structures</span></span> Atlas</td>
-  <td style="word-wrap: break-word; white-space: normal;">Integrated multimodal atlas combining cortical, subcortical, and cerebellar structures (<a href="https://github.com/PennLINC/AtlasPack">AtlasPack</a>).</td>
+  <td style="word-wrap: break-word; white-space: normal;">Integrated multimodal atlas combining cortical (at ten resolutions, 100-1000 parcels), subcortical, and cerebellar structures (<a href="https://github.com/PennLINC/AtlasPack">AtlasPack</a>).</td>
   <td style="word-wrap: break-word; white-space: normal;">Cross-modality alignment across XCP-D, QSIPrep, and ASLPrep outputs.</td>
 </tr>
 </tbody>
