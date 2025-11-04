@@ -315,4 +315,16 @@ Dataset downloads contain 2 additional columns not described in the data diction
   </tr>
 </table>
 
-<br>
+<div id="site-levels" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Extraneous Recruitment Site Levels in Basic Demographics</span>
+  <a class="anchor-link" href="#site-levels" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>In the Basic Demographics table (<code>sed_basic_demographics</code>), the variable <code>recruitment_site</code> includes three additional levels that do not represent study sites: <code>29=sampled</code>; <code>30=USDTL</code>; <code>31=BAH</code>. These levels, used for internal purposes, appear only as possible values in the data dictionary, but are not used in the actual tabulated data. In other words, all participant records in the Basic Demographics table will have <code>recruitment_site</code> values ranging only from 0 to 28, corresponding to the study sites - see full list of recruitment sites <a href="../../instruments/demo/basicdemo/#rec-sites" target="_blank">here</a>.</p>
+</div>
