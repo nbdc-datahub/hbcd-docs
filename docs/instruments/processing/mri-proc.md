@@ -47,6 +47,37 @@ BOLD data are resampled to both subject-specific (native) and symmetric (fsLR) s
 A “goodvoxels” mask is applied during volume-to-surface sampling in fsLR space to exclude unstable regions (voxels whose time-series with a locally high coefficient of variation before surface sampling) before surface projection.
 Finally, grayordinates files (91k) are generated using the highest-resolution `fsaverage` as intermediate standardized surface space for use in surface-based analyses compatible with tools such as the Human Connectome Workbench.
 
+## XCP-D
+**XCP-D** is used to post-process the outputs of Infant-fMRIPrep, generating cleaned, denoised, and parcellated datasets ready for analysis.
+
+**Both anatomical and functional data are parcellated using a set of standard atlases - see[Parcellations](../mri/index.md#parc) under *MRI Derivatives: Quickstart Guide*.**
+
+### Anatomical data
+Native-space T2w images are transformed into standard **MNI152NLin6Asym** space at 1 mm³ resolution.
+**fsLR-space** morphometric surfaces are copied from the preprocessing derivatives provided by Infant-fMRIPrep to the XCP-D derivatives.
+HCP-style midthickness, inflated, and very-inflated surfaces are generated from the white-matter and pial surface meshes and mapped to fsLR space.      
+These surfaces and associated metrics are included in the XCP-D derivatives for downstream analysis.
+
+### Functional data
+For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
+
+#### Preprocessing and Denoising
+- The first four volumes (dummy scans) are removed.
+- **Motion correction:** Framewise displacement (FD) is calculated per Power et al. (2014); volumes with FD > 0.3 mm are flagged as high-motion outliers.
+- **Nuisance regression:** 36 confound regressors (motion, tissue, and global signals plus derivatives) are regressed out following the 36P strategy.
+- **Despiking and filtering:** Data are despiked, temporally filtered (0.01–0.08 Hz), and smoothed (6 mm FWHM) to retain low-frequency neural signals while reducing noise.
+- **Censoring:** High-motion volumes are interpolated and later censored to minimize motion artifacts.
+
+#### Functional Metrics
+Several functional measures are computed from the cleaned time series:
+
+- **ALFF (Amplitude of Low-Frequency Fluctuations):** Quantifies spontaneous low-frequency signal amplitude across voxels.
+- **ReHo (Regional Homogeneity):** Measures local synchronization of neural activity within surface and subcortical regions.
+
+#### Connectivity Analysis
+Parcellated time series are extracted for each atlas, described [here](../mri/index.md#parc), and pairwise functional connectivity is calculated as the Pearson correlation between regional time series.
+For participants with multiple runs, postprocessed derivatives are concatenated across runs and directions.
+
 ## References
 
 Andersson, Jesper L. R., Stefan Skare, and John Ashburner. 2003. “How to Correct Susceptibility Distortions in Spin-Echo Echo-Planar Images: Application to Diffusion Tensor Imaging.” NeuroImage 20 (2): 870–88. https://doi.org/10.1016/S1053-8119(03)00336-7.
