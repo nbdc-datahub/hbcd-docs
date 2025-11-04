@@ -649,32 +649,21 @@ Expand the sections below to see a list of measures associated with each domain 
 <div class="table-collapsible-content">
 <p><i style="color: teal;" class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b>
 <p style="font-size: 0.9em; color: #555;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in <a href="../datacuration/overview/#warning" target="_blank">HBCD tabulated format <i class="fa-solid fa-up-right-from-square"></i></a>
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#warning" target="_blank"><i>see details</i></a>)
 </p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; margin-bottom: 0; padding-bottom: 0;">
-<tfoot>
-<tr>
-  <td colspan="4" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
-    <sup><b>1</b></sup> EEG Tasks include:
-    <a href="eeg/mmn" target="_blank">MMN</a> (<i>Auditory Mismatch Negativity</i>),
-    <a href="eeg/faces" target="_blank">FACE</a> (<i>Faces</i>),
-    <a href="eeg/rs" target="_blank">RS</a> (<i>Video Resting State</i>),
-    & <a href="eeg/vep" target="_blank">VEP</a> (<i>Visual Evoked Potential</i>)
-  </td>
-</tr>
-</tfoot>
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead>
 <tr>
-  <th>EEG Task<sup><b>1</b></sup></th>
+  <th><a href="eeg/tasks/" target="_blank"><b>HBCD EEG Tasks</b></a></th>
   <th>Raw BIDS</th>
   <th>Pipeline Derivatives</th>
-  <th style="text-align: center;"><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; Tabulated Derivatives</th>
+  <th><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; Tabulated Derivatives</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td><a href="eeg/tasks/" target="_blank">ALL</td>
-  <td><code>eeg/</code> <a href="eeg/#rawbids" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></td>
+  <td style="word-wrap: break-word; white-space: normal; line-height: 1.2;">Auditory Mismatch Negativity (MMN), Faces (FACE), Video Resting State (RS), & Visual Evoked Potential (VEP)</td>
+  <td><a href="eeg/#rawbids" target="_blank"><code>eeg/</code></a></td>
   <td><a href="eeg/#made" target="_blank">HBCD-MADE</a></td>
   <td style="text-align: center;"><i style="color: green;" class="fa-solid fa-check"></i></td>
 </tr>
@@ -682,7 +671,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </table>
 <p><i style="color: teal;" class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
 <p style="font-size: 0.9em; color: #555;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in <a href="../datacuration/overview/#warning" target="_blank">HBCD tabulated format <i class="fa-solid fa-up-right-from-square"></i></a>
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#warning" target="_blank"><i>see details</i></a>)
 </p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -697,11 +686,11 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>eeg_qc_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span></code></td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE Preprocessing Report</td>
+  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; HBCD-MADE Preprocessing Report</td>
   <td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span>_acq-eeg_preprocessingReport</code></td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i> HBCD-MADE ERP Summary Stats</td>
+  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; HBCD-MADE ERP Summary Stats</td>
   <td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|VEP&gt;</span>_acq-eeg_ERPSummaryStats</code></td>
 </tr>
 </tbody>
@@ -721,7 +710,7 @@ Expand the sections below to see a list of measures associated with each domain 
 <div class="table-collapsible-content">
 <p><i style="color: teal;" class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b></p>
 <p style="font-size: 0.9em; color: #555;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in <a href="../datacuration/overview/#warning" target="_blank">HBCD tabulated format <i class="fa-solid fa-up-right-from-square"></i></a>
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#warning" target="_blank"><i>see details</i></a>)
 </p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -779,7 +768,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </table>
 <p><i style="color: teal;" class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
 <p style="font-size: 0.9em; color: #555;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in <a href="../datacuration/overview/#warning" target="_blank">HBCD tabulated format <i class="fa-solid fa-up-right-from-square"></i></a>
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#warning" target="_blank"><i>see details</i></a>)
 </p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -805,7 +794,7 @@ Expand the sections below to see a list of measures associated with each domain 
 <tr>
 <th>Modality</th>
 <th>Pipeline</th>
-<th><i style="color: teal;" class="fa-solid fa-diagram-project"></i> Table Name (<i>Tabulated Pipeline Derivatives</i>)</th>
+<th><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; Table Name (<i>Tabulated Pipeline Derivatives</i>)</th>
 </tr>
 </thead>
 <tr>
@@ -871,26 +860,27 @@ Expand the sections below to see a list of measures associated with each domain 
 <div class="table-collapsible-content">
 <p><i style="color: teal;" class="fas fa-folder-open"></i> <b>FILE-BASED DATA</b></p>
 <p style="font-size: 0.9em; color: #555;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in <a href="../datacuration/overview/#warning" target="_blank">HBCD tabulated format <i class="fa-solid fa-up-right-from-square"></i></a>
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#warning" target="_blank"><i>see details</i></a>)
 </p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; margin-bottom: 0; padding-bottom: 0;">
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead>
 <tr>
-  <th>Sensor</th>
-  <th>Raw BIDS</th>
-  <th>Pipeline Derivatives</th>
-  <th style="text-align: center;"><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; Tabulated Derivatives</th>
+  <th style="width: 25%;">Sensor</th>
+  <th style="width: 25%;">Raw BIDS</th>
+  <th style="width: 25%;">Pipeline Derivatives</th>
+  <th style="width: 25%;"><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; Tabulated Derivatives</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td><a href="sensors/wearsensors/" target="_blank">Infant Leg Motion</td>
-  <td><code>motion/</code> <a href="sensors/wearsensors/#rawbids" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></td>
+  <td><a href="sensors/wearsensors/#rawbids" target="_blank"><code>motion/</code></a></td>
   <td><a href="sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a></td>
   <td style="text-align: center;"><i style="color: red;" class="fa-solid fa-xmark"></i></td>
 </tr>
 </tbody>
 </table>
+
 <p style="margin-top: 0; padding-top: 0;"><i style="color: teal;" class="fa-solid fa-table"></i> <b>TABULATED DATA</b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -902,18 +892,9 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-  <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1</a></td>
-  <td>Day 1 - Motor Development, Regulation (Sleep/Wake)</td>
-  <td><code>nt_ch_sens__qtn_<span class="blue-text">1</span></code></td>
-</tr>
-<tr>
-  <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 2</a></td>
-  <td>Day 2 - Motor Development, Regulation (Sleep/Wake)</td>
-  <td><code>nt_ch_sens__qtn_<span class="blue-text">2</span></code></td>
-</tr>
-  <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 3</a></td>
-  <td>Day 3 - Motor Development, Regulation (Sleep/Wake)</td>
-  <td><code>nt_ch_sens__qtn_<span class="blue-text">3</span></code></td>
+  <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire &lt;1|2|3&gt;</a></td>
+  <td>Motor Development, Regulation (Sleep/Wake) <i>(Days 1, 2, & 3)</i></td>
+  <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
 </tr>
 </tbody>
 </table>
