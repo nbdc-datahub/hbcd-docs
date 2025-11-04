@@ -9,40 +9,44 @@ Structural and functional MRI data is processed via a sequence of BIDS App pipel
 **XCP-D**: Infant fMRIPrep outputs are fed into XCP-D, which performs functional MRI post-processing and noise regression.
 
 ## Infant fMRIPrep
+Infant fMRIPrep adapts the fMRIPrep pipeline for infant MRI data, incorporating age-appropriate templates and processing steps optimized for developing brains.
 
-### Preprocessing of B0 inhomogeneity mappings
-A B0-nonuniformity map (or fieldmap) is estimated based on two (or more) echo-planar imaging (EPI) references with topup (Andersson, Skare, and Ashburner (2003); FSL None).
+### B0 Inhomogeneity Correction
+Fieldmap estimation is performed using paired EPI images to correct for B0 inhomogeneity. The resulting fieldmap is applied to all BOLD runs for distortion correction.
 
-### Anatomical data preprocessing
-Anatomical images (T1w and/or T2w) are denoised and corrected for intensity non-uniformity (INU). **A pre-computed brain mask is provided as input and used throughout the workflow.**
+### Anatomical Preprocessing
+T1w and/or T2w images are denoised and corrected for intensity inhomogeneity.
+A pre-computed brain mask is provided as input and used throughout all anatomical and functional processing.
 
 Surface reconstruction is performed via 2 methods:
 
 #### (1) M-CRIB-S
-A modified MCRIBReconAll (M-CRIB-S, Adamson et al. 2020) workflow is run using the reference T2w and a pre-computed anatomical segmentation. Volume-based spatial normalization to one standard space (MNIInfant:cohort-1) was performed through nonlinear registration with antsRegistration, using brain-extracted versions of both T1w reference and the T1w template. 
-
-Age-specific MNI Infant Atlases 0-4.5yr [Fonov et al. (2009), RRID:SCR_008796; TemplateFlow ID: MNIInfant:cohort-1] are selected for spatial normalization and accessed with TemplateFlow (24.2.2, Ciric et al. 2022). Volume-based spatial normalization to one standard space (MNI152NLin6Asym) is performed by concatenating two registrations with antsRegistration. First, the anatomical reference is registered to the Infant MNI templates (Fonov et al. (2009)). Separately, the Infant MNI templates are registered to one standard space, with the saved transform to template stored for reuse and accessed with TemplateFlow (24.2.2, Ciric et al. 2022): FSL’s MNI ICBM 152 non-linear 6th Generation Asymmetric Average Brain Stereotaxic Registration Model [Evans et al. (2012), RRID:SCR_002823; TemplateFlow ID: MNI152NLin6Asym].
+The modified `MCRIBReconAll` workflow uses the T2w reference image and a pre-computed anatomical segmentation from BIBSNet.
+Images are normalized first to an age-specific MNI Infant template (0-4.5yr), then to the standard MNI152 space via nonlinear registration for compatibility with adult analyses.
 
 #### (2) Infant FreeSurfer
-ADD TEXT
+ADD TEXT - Surface reconstruction using the Infant FreeSurfer pipeline ???????
 
 ### Functional Data Preprocessing
-For each BOLD run, the following preprocessing is performed:
+For each BOLD run, Infant fMRIPrep performs the following steps:
 
-A reference volume is generated for use in head motion correction. Head-motion parameters with respect to the BOLD reference (transformation matrices, and six corresponding rotation and translation parameters) are estimated before any spatiotemporal filtering using `mcflirt` (FSL , Jenkinson et al. 2002).
+ - **Motion correction**: A reference volume is generated, and head motion parameters are estimated prior to filtering.
+ - **Distortion correction**: The estimated fieldmap is aligned to the EPI reference and applied to correct distortions.
+ - **Coregistration**: The functional reference is aligned to the T2w anatomical image using boundary-based registration for accurate mapping between spaces.
 
-The estimated fieldmap is aligned with rigid-registration to the target EPI (echo-planar imaging) reference run, the field coefficients are mapped on to the reference EPI using the transform, and the BOLD reference is co-registered to the anatomical reference (boundary-based registration with six degrees of freedom) (Greve and Fischl 2009). The aligned T2w image is used for initial co-registration.
+#### Confound Estimation
+Several confound time series are calculated for each run for quality assessment and later noise modeling:
 
-Several confounding time-series are calculated based on the preprocessed BOLD, including: framewise displacement (FD), DVARS and three region-wise global signals. FD was computed using two formulations following Power (absolute sum of relative motions, Power et al. (2014)) and Jenkinson (relative root mean square displacement between affines, Jenkinson et al. (2002)). FD and DVARS are calculated for each functional run. The three global signals are extracted within the CSF, the WM, and the whole-brain masks. Additionally, a set of physiological regressors are extracted to allow for component-based noise correction (CompCor, Behzadi et al. 2007). Principal components are estimated after high-pass filtering the preprocessed BOLD time-series (using a discrete cosine filter with 128s cut-off) for the two CompCor variants: temporal (tCompCor) and anatomical (aCompCor). tCompCor components are then calculated from the top 2% variable voxels within the brain mask. For aCompCor, three probabilistic masks (CSF, WM and combined CSF+WM) are generated in anatomical space. The implementation differs from that of Behzadi et al. in that instead of eroding the masks by 2 pixels on BOLD space, a mask of pixels that likely contain a volume fraction of GM is subtracted from the aCompCor masks. This mask is obtained by dilating a GM mask extracted from the FreeSurfer’s aseg segmentation, and it ensures components are not extracted from voxels containing a minimal fraction of GM. Finally, these masks are resampled into BOLD space and binarized by thresholding at 0.99 (as in the original implementation).
+ - Motion metrics: Framewise displacement (FD) and DVARS
+ - Global signals: Mean signal from CSF, white matter, and whole brain
+ - CompCor components: Physiological noise regressors from aCompCor and tCompCor methods
+ - Derived regressors: Temporal derivatives, quadratic terms, and motion outlier flags (for frames exceeding 0.5 mm FD or 1.5 standardized DVARS thresholds)
 
-Components are also calculated separately within the WM and CSF masks. For each CompCor decomposition, the k components with the largest singular values are retained, such that the retained components’ time series are sufficient to explain 50 percent of variance across the nuisance mask (CSF, WM, combined, or temporal). The remaining components are dropped from consideration. The head-motion estimates calculated in the correction step were also placed within the corresponding confounds file. The confound time series derived from head motion estimates and global signals are expanded with the inclusion of temporal derivatives and quadratic terms for each (Satterthwaite et al. 2013). Frames that exceeded a threshold of 0.5 mm FD or 1.5 standardized DVARS are annotated as motion outliers. Additional nuisance timeseries are calculated by means of principal components analysis of the signal found within a thin band (crown) of voxels around the edge of the brain (Patriat, Reynolds, and Birn 2017). The BOLD time-series are resampled onto fsnative. The BOLD time-series are resampled onto the left/right-symmetric template “fsLR” using the Connectome Workbench (Glasser et al. 2013). 
-
-A “goodvoxels” mask is applied during volume-to-surface sampling in fsLR space, excluding voxels whose time-series have a locally high coefficient of variation. Grayordinates files (Glasser et al. 2013) containing 91k samples are also generated using the highest-resolution fsaverage as intermediate standardized surface space. All resamplings can be performed with a single interpolation step by composing all the pertinent transformations (i.e. head-motion transform matrices, susceptibility distortion correction when available, and co-registrations to anatomical and output spaces). Gridded (volumetric) resamplings are performed using nitransforms, configured with cubic B-spline interpolation. Non-gridded (surface) resamplings are performed using mri_vol2surf (FreeSurfer).
+#### Surface and Grayordinate Outputs
+BOLD data are resampled to both subject-specific (native) and symmetric (fsLR) surface spaces.
+A “goodvoxels” mask is applied during volume-to-surface sampling in fsLR space to exclude unstable regions (voxels whose time-series with a locally high coefficient of variation before surface sampling) before surface projection.
+Finally, grayordinates files (91k) are generated using the highest-resolution `fsaverage` as intermediate standardized surface space for use in surface-based analyses compatible with tools such as the Human Connectome Workbench.
 
 ## References
 
 Andersson, Jesper L. R., Stefan Skare, and John Ashburner. 2003. “How to Correct Susceptibility Distortions in Spin-Echo Echo-Planar Images: Application to Diffusion Tensor Imaging.” NeuroImage 20 (2): 870–88. https://doi.org/10.1016/S1053-8119(03)00336-7.
-
-
-
-
