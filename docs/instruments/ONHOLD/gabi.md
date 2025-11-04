@@ -109,5 +109,3 @@ Issues with the sensor data were generally rare, and most data were deemed prese
 <p>Pini, N., Ong, J. L., Yilmaz, G., Chee, N. I. Y. N., Siting, Z., Awasthi, A., Biju, S., Kishan, K., Patanaik, A., Fifer, W. P., & Lucchini, M. (2022). An automated heart rate-based algorithm for sleep stage classification: Validation using conventional polysomnography and an innovative wearable electrocardiogram device. <i>Frontiers in Neuroscience</i>, 16, 974192. <a href="https://doi.org/10.3389/fnins.2022.974192">https://doi.org/10.3389/fnins.2022.974192</a></p> 
 <p>Zinzuwadia, A., & Singh, J. P. (2022). Wearable devices-addressing bias and inequity. <i>The Lancet Digital Health</i>, 4(12), e856–e857. <a href="https://doi.org/10.1016/S2589-7500(22)00194-7">https://doi.org/10.1016/S2589-7500(22)00194-7</a></p>
 </div>
-
-<br>

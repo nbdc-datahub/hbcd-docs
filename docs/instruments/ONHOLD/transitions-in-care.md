@@ -58,8 +58,6 @@ The **Transitions in Care (TIC) Screener** documents when children spend time li
 <p>Radel, L., & Bramlett, M. (2014). Children in nonparental care: Findings from the 2011-2012 National Survey of Children’s Health. ASPE, DHHS. <a href="https://aspe.hhs.gov/reports/children-nonparental-care-findings-2011-2012-national-survey-childrens-health-0">https://aspe.hhs.gov/reports/children-nonparental-care-findings-2011-2012-national-survey-childrens-health-0</a></p>
 </div>
 
-<br>
-
 
 ## INTERNAL NOTES (to remove)
 

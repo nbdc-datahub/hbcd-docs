@@ -158,5 +158,3 @@ The ECHO form allowed for write-in durations, whereas HBCD form requires radio b
   <p>National Institute for Occupational Safety and Health. (1995, September). Protect your family: Reduce contamination at home (NIOSH Publication No. 97-125). Centers for Disease Control and Prevention. <a href="https://www.cdc.gov/niosh/docs/97-125/default.html">https://www.cdc.gov/niosh/docs/97-125/default.html</a></p> 
   <p>National Institute for Occupational Safety and Health. (2024, April 3). About take-home exposures. U.S. Centers for Disease Control and Prevention. <a href="https://www.cdc.gov/niosh/reproductive-health/about/take-home.html">https://www.cdc.gov/niosh/reproductive-health/about/take-home.html</a></p>
 </div>
-
-<br>

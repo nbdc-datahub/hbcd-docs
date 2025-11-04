@@ -128,4 +128,3 @@ Future publications should note that this measure combines NSESSS-PTSD and NSESS
 <p>Massey, S. H., Neiderhiser, J. M., Shaw, D. S., Leve, L. D., Ganiban, J. M., & Reiss, D. (2012). Maternal self concept as a provider and cessation of substance use during pregnancy. Addictive Behaviors, 37(8), 956–961. <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">https://doi.org/10.1016/j.addbeh.2012.04.002</a></p>
 <p>Massey, S. H., Reiss, D., Neiderhiser, J. M., Leve, L. D., Shaw, D. S., & Ganiban, J. M. (2016). Maternal personality traits associated with patterns of prenatal smoking and exposure: Implications for etiologic and prevention research. Neurotoxicology and Teratology, 53, 48–54. <a href="https://doi.org/10.1016/j.ntt.2015.11.010">https://doi.org/10.1016/j.ntt.2015.11.010</a></p>
 </div>
-<br>

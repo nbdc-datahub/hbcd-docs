@@ -90,9 +90,7 @@ The Edinburgh Postnatal Depression Scale (<a href="https://downloads.aap.org/AAP
 <p>Each item is scored on a scale from 0 to 3, with items 3, 5, 6, 7, 8, 9, and 10 being reverse-scored (i.e. 3, 2, 1, 0). Total scores are calculated by summing the item responses. Note that total scores are not prorated or left missing for missing items: data users should determine how best to address missing data.</p>
 </div>
 
-
 ## References
 <div class="references">
 <p>Cox, J. L., Holden, J. M., &amp; Sagovsky, R. (1987). Detection of postnatal depression . Development of the 10-item Edinburgh Postnatal Depression Scale. <em>British Journal of Psychiatry</em>, <em>150</em>, 782–786. <a href="https://doi.org/10.1192/bjp.150.6.782">https://doi.org/10.1192/bjp.150.6.782</a></p>
 </div>
-<br>

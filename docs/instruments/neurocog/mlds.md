@@ -78,4 +78,3 @@ Designed specifically for HBCD, this measure informs assessment teams conducting
 </ul>
 <p>The total frequency of Spanish and English was computed by multiplying the percentage of English and Spanish language provided per environment by the total hours per week in both the home and other care environments. The values are provided for home and for the overall total child experience, combining home and other care environments.</p>
 </div>
-<br>

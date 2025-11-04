@@ -97,7 +97,7 @@ Most <a href="../../datacuration/phenotypes/" target="_blank">tabulated datasets
 
 ## <i class="fa-solid fa-folder-open"></i> File-Based Metadata
 
-Age variables in [raw file-based datasets](../datacuration/file-based-data.md#raw-bids) describe the child’s age at the time of **data acquisition** for MR, EEG, and wearable sensor recordings. These values are stored in [session/scan-level TSV metadata files](../../datacuration/file-based-data/#participant-session-scan-level-data).  
+Age variables in [raw file-based datasets](../datacuration/file-based-data.md#raw-bids) describe the child’s age at the time of **data acquisition** for MR, EEG, and wearable sensor recordings. These values are stored in [session/scan-level TSV metadata files](../datacuration/file-based-data.md#participant-session-scan-level-data).  
 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>

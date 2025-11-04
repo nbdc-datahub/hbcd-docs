@@ -104,6 +104,3 @@ All data are provided in the same format as the CSV files that are exported when
 <p>Sparrow, S.S., Cicchetti, D.V., & Saulnier, C. A. (2016). <i>Vineland Adaptive Behavior Scales, Third Edition (Vineland-3)</i>. San Antonio, TX: Pearson.</p>  
 </div>
 
-
-<br>
-

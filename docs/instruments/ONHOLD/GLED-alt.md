@@ -70,5 +70,3 @@ The uploaded file are data-dictionary for the geocoded variables given the addre
 
 Fan et al., 2021, https://pubmed.ncbi.nlm.nih.gov/34891080/
 
-
-<br>

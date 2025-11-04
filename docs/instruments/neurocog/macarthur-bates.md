@@ -143,5 +143,3 @@ The MacArthur-Bates Communicative Development Inventories, Words and Gestures is
   </p>  
 </div>
 
-<br>
-

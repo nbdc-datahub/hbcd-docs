@@ -96,4 +96,3 @@ Participants are not to be asked about immigration or documentation status. The 
   <p>Ryder, A. G., Alden, L. E., & Paulhus, D. L. (2000). Is acculturation unidimensional or bidimensional? A head-to-head comparison in the prediction of personality, self-identity, and adjustment. <i>Journal of Personality and Social Psychology</i>, 79(1), 49–65. <a href="https://doi.org/10.1037//0022-3514.79.1.49">doi: 10.1037//0022-3514.79.1.49.</a> PMID: 10909877.</p>
   <p>Testa, S., Doucerain, M. M., Miglietta, A., Jurcik, T., Ryder, A. G., & Gattino, S. (2019). The Vancouver Index of Acculturation (VIA): New evidence on dimensionality and measurement invariance across two cultural settings. <i>JInternational Journal of Intercultural Relations</i>, 71, 60–71. <a href="https://doi.org/10.1016/j.ijintrel.2019.04.001">https://doi.org/10.1016/j.ijintrel.2019.04.001</a></p>
 </div>
-<br>

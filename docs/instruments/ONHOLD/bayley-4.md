@@ -119,5 +119,3 @@ Modifications were made to accommodate Spanish-speaking households. <strong>Engl
 <div class="references"> 
 <p>Bayley, N., & Aylward, G. (2019). <i>Administration Manual: Bayley Scales Infant Toddler Development, Fourth Edition</i>. Pearson.</p>  
 </div>
-<br>
-

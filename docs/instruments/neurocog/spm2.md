@@ -82,4 +82,3 @@ This questionnaire asks about the ways the child sensory systems contribute to d
 <div class="references">
     <p>Parham, L. D., Ecker, C. L., Kuhaneck, H., Henry, D. A., & Glennon, T. J. (2021). <i>Sensory Processing Measure, Second Edition (SPM-2)</i> [Manual]. Torrance, CA: Western Psychological Services.</p>
 </div>
-<br>

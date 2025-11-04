@@ -347,7 +347,3 @@ Also see [Basic Demographics](../demo/basicdemo.md), which includes variables de
   <p>Zachek, C. M., Schwartz, J. M., Glasser, M., DeMicco, E., & Woodruff, T. J. (2019). A screening questionnaire for occupational and hobby exposures during pregnancy. Occupational Medicine (Oxford, England), 69(6), 428–435. <a href="https://doi.org/10.1093/occmed/kqz094">https://doi.org/10.1093/occmed/kqz094</a></p>
 </div>
 
-
-
-
-<br>

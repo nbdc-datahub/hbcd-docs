@@ -135,4 +135,3 @@ HBCD protocols for structural MRI were informed by recent large-scale developmen
     <p>Tisdall, M. D., Reuter, M., Qureshi, A., Buckner, R. L., Fischl, B., & van der Kouwe, A. J. W. (2016). Prospective motion correction with volumetric navigators (vNavs) reduces the bias and variance in brain morphometry induced by subject motion. <em>Neuroimage</em>, 127, 11-22. <a href="https://doi.org/10.1016/j.neuroimage.2015.11.054">https://doi.org/10.1016/j.neuroimage.2015.11.054</a></p>
     <p>White, N., Roddey, C., Shankaranarayanan, A., Han, E., Rettmann, D., Santos, J., Kuperman, J., & Dale, A. (2010). PROMO: Real-time prospective motion correction in MRI using image-based tracking. <em>Magnetic Resonance in Medicine</em>, 63(1), 91–105. <a href="https://doi.org/10.1002/mrm.22176">https://doi.org/10.1002/mrm.22176</a></p>
 </div>
-<br>

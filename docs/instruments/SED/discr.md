@@ -136,4 +136,3 @@ For the *Everyday Discrimination Scale* and *Major Experiences of Discrimination
   <p>Sternthal, M. J., Slopen, N., &amp; Williams, D. R. (2011). Racial disparities in health. <em>Du Bois Review: Social Science Research on Race</em>, 8(1), 95–113. <a href="https://doi.org/10.1017/s1742058x11000087">https://doi.org/10.1017/s1742058x11000087</a></p>
   <p>Williams, D. R. (2015). Measuring discrimination resource. <a href="http://scholar.harvard.edu/davidrwilliams/node/32777">http://scholar.harvard.edu/davidrwilliams/node/32777</a></p>
 </div>
-<br>

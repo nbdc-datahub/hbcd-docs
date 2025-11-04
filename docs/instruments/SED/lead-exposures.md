@@ -83,8 +83,5 @@ Incidents of pediatric lead poisoning have previously been linked to consumption
 <p>CDC. (2025, August 22). About lead in foods, cosmetics, and medicines. Childhood Lead Poisoning Prevention. <a href="https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html">https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html</a></p> 
 <p>CDC. Lead poisoning associated with imported candy and powdered food coloring -- California and Michigan. MMWR 1998;47(48);1041-1043. <a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm">https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm</a></p>  
 </div>
-<br>
-
-
 
 
