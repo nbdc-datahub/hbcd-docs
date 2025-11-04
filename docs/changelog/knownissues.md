@@ -1,3 +1,10 @@
+<b style="color: red;">LUCI ADMIN NOTES: potential issues to be added -</b>
+
+1. Basic Demo: University of Florida not properly coded - see [Monday.com](https://ucsd-actri.monday.com/boards/6045591843/pulses/18348405924)
+1. Basic Demo: many participants have mismatching site values and labels - see [Monday.com](https://ucsd-actri.monday.com/boards/6045591843/pulses/18348433453)
+
+
+
 # Known Issues
 
 The following issues have been identified in the current HBCD data release. **We are actively working to address them and expect most fixes to be implemented in Release 2.1 unless otherwise noted.** This page will be updated as new issues are discovered.    

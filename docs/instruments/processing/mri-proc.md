@@ -2,7 +2,6 @@
 
 Structural and functional MRI data is processed via a sequence of BIDS App pipelines, so we describe the sequence here.
 
-
 **BIBSNet**: generates brain segmentations and brain masks
 
 **Infant fMRIPrep**: Brain segmentations and masks are fed into Infant fMRIPrep, which produces minimal structural and functional MRI processing including visual quality assessment reports, preprocessed derivatives, and confounds to be used for denoising in subsequent processing procedures.
