@@ -83,5 +83,3 @@ The **Study Navigator Contact Form** included in the data release captures visit
 <div class="references"> 
 <p>Hilliard, F., Horan, H., Zgierska, A. E., Edwards, R. C., & HBCD Study Navigator Workgroup. (2025). Establishing a model of peer support for pregnant persons with a substance use disorder as an innovative approach for engaging participants in the healthy brain and child development study. Developmental Cognitive Neuroscience, 71(101495), 101495. <a href="https://doi.org/10.1016/j.dcn.2024.101495" target="_blank">https://doi.org/10.1016/j.dcn.2024.101495</a></p>  
 </div>
-<br>
-

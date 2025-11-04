@@ -254,5 +254,3 @@ df[df["&lt;COLUMN NAME&gt;"].isna()][["&lt;COLUMN NAME&gt;_missing_reason"]]
       count(&lt;column_name&gt;)
   </code></pre>
 </div>
-
-<br>

@@ -403,7 +403,3 @@ Visit the instrument documentation pages for information on the unique file cont
 </tr>
 </tbody>
 </table>
-<br>
-
-
-<br>

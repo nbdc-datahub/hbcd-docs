@@ -16,6 +16,123 @@
 
 ## Details
 
+<div id="vars" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Full List of Visit Information Variables</span>
+  <a class="anchor-link" href="#vars" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</thead>
+</tr>
+<tbody>
+<tr>
+<td><code>par_visit_data_cohort</code></td>
+<td>The candidate cohort name.</td>
+</tr>
+<tr>
+<td><code>par_visit_data_participant_withdrawal</code></td>
+<td>Tells if the participant withdrawn fron the study.</td>
+</tr>
+<tr>
+<td><code>par_visit_data_participant_withdrawal_date</code></td>
+<td>If withdrawn, the date.</td>
+</tr>
+<tr>
+<td><code>par_visit_data_participant_withdrawal_reason</code></td>
+<td>If withdrawn, the reason why.</td>
+</tr>
+<tr>
+<td><code>par_visit_data_project</code></td>
+<td>The candidate project name.</td>
+</tr>
+<tr>
+<td><code>par_visit_data_protocol_exception</code></td>
+<td>Tells if there was a protocol exception.</td>
+</tr>
+<tr>
+<td><code>par_visit_data_protocol_exception_date</code></td>
+<td>If protocol exception, the date.</td>
+</tr>
+<tr>
+<td><code>par_visit_data_reason_visit_missed</code></td>
+<td>If the visit was missed, the reason why.</td>
+</tr>
+<tr>
+<td><code>par_visit_data_site</code></td>
+<td>The candidate site.</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_bio_barb</code></td>
+<td>Substance Use in Urine Biosample - barb</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_bio_benzo</code></td>
+<td>Substance Use in Urine Biosample - benzo</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_bio_cannabinoid</code></td>
+<td>Substance Use in Urine Biosample - cannabinoid</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_bio_mscrlx</code></td>
+<td>Substance Use in Urine Biosample - mscrlx</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_bio_opioid</code></td>
+<td>Substance Use in Urine Biosample - opioid</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_bio_stim</code></td>
+<td>Substance Use in Urine Biosample - stimulant</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_healthv2_fas</code></td>
+<td>Substance Use in Health V2 instrument - FAS</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_healthv2_nows</code></td>
+<td>Substance Use in Health V2 instrument - NOWS</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_tlfb_alcohol</code></td>
+<td>Substance Use in TLFB instrument - alcohol</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_tlfb_cannabis</code></td>
+<td>Substance Use in TLFB instrument - cannabis</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_tlfb_nicotine</code></td>
+<td>Substance Use in TLFB instrument - nicotine</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_tlfb_opioid</code></td>
+<td>Substance Use in TLFB instrument - opioid</td>
+</tr>
+<tr>
+<td><code>par_visit_data_su_flag_tlfb_stimulant</code></td>
+<td>Substance Use in TLFB instrument - stimulant</td>
+</tr>
+<tr>
+<td><code>par_visit_data_visit_missed</code></td>
+<td>Tells if the visit was missed.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p></p>
+
 Visit information contains all participant visit data, including:
 
 #### General Visit Information
@@ -78,3 +195,4 @@ Visit information also includes **substance use flags**, which are single summar
 </tbody>
 </table>
 </div>
+

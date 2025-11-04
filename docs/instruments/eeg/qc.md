@@ -87,5 +87,3 @@ EEG capping quality ratings are used to determine inclusion in data processing. 
 
 Please refer to the [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030) for additional information about capping requirements.
 
-<br>
-

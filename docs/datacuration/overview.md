@@ -124,6 +124,3 @@ hbcd/
     |__ participants.json 
 </pre>
 </div>
-
-<br>
-

@@ -713,6 +713,4 @@ Approximately **30 new study instruments/measures** have been added across the f
 </table>
 </div>
 
-<br>
-
 
