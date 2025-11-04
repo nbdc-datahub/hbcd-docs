@@ -16,11 +16,87 @@
 
 ## Details
 
-<div id="vars" class="table-banner" onclick="toggleCollapse(this)">
+Visit information contains all participant visit data, including:
+
+### General Visit Information
+ - Label, Stage, Date, Project, and Site
+ - If the visit was missed and reason 
+ - Withdrawal information (if the participant withdrew from the study, the reason, and date)
+ - Protocol violation information (if there was a protocol exception and the date)
+
+ <div id="vars" class="table-banner" onclick="toggleCollapse(this)">
+   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+   <span class="text-with-link">
+   <span class="text">General Visit Information Variables</span>
+   <a class="anchor-link" href="#vars" title="Copy link">
+   <i class="fa-solid fa-link"></i>
+   </a>
+   </span>
+   <span class="arrow">▸</span>
+ </div>
+ <div class="table-collapsible-content">
+ <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+ <thead>
+ <tr>
+ <th>Name</th>
+ <th>Description</th>
+</tr>
+ </thead>
+ <tbody>
+  <tr>
+ <td><code>par_visit_data_site</code></td>
+ <td>The candidate site.</td>
+ </tr>
+  <tr>
+ <td><code>par_visit_data_project</code></td>
+ <td>The candidate project name.</td>
+ </tr>
+ <tr>
+ <td><code>par_visit_data_participant_withdrawal</code></td>
+ <td>Tells if the participant withdrawn from the study.</td>
+ </tr>
+ <tr>
+ <td><code>par_visit_data_participant_withdrawal_date</code></td>
+ <td>If withdrawn, the date.</td>
+ </tr>
+ <tr>
+ <td><code>par_visit_data_participant_withdrawal_reason</code></td>
+ <td>If withdrawn, the reason why.</td>
+ </tr>
+ <tr>
+ <td><code>par_visit_data_protocol_exception</code></td>
+ <td>Tells if there was a protocol exception.</td>
+ </tr>
+ <tr>
+ <td><code>par_visit_data_protocol_exception_date</code></td>
+ <td>If protocol exception, the date.</td>
+ </tr>
+  <tr>
+ <td><code>par_visit_data_visit_missed</code></td>
+ <td>Tells if the visit was missed.</td>
+ </tr>
+ <tr>
+ <td><code>par_visit_data_reason_visit_missed</code></td>
+ <td>If the visit was missed, the reason why.</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+<p></p>
+
+### Substance Use Flags
+
+Visit information also includes **substance use flags**, which are single summary variables that indicate substance use status (yes/no) based on any positive reports from the following instruments:
+
+ - The Timeline Follow Back (<a href="../../pregexp/su/tlfb" target="_blank">TLFB</a>) (self-reported use)
+ - <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> when options 1 (*Neonatal Opioid Withdrawal Syndrome*) and/or 5 (*Fetal Alcohol Syndrome*) were selected for field `007` (self-reported use)
+ - <a href="../../biospec/urine" target="_blank">USDTL urine toxicology results</a> (<i>note: <a href="../../biospec/nails" target="_blank">Nail toxicology results</a> were not used in the creation of the substance use flags</i>)
+ 
+<div id="su" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
-  <span class="text">Full List of Visit Information Variables</span>
-  <a class="anchor-link" href="#vars" title="Copy link">
+  <span class="text">SU Visit Information Variables</span>
+  <a class="anchor-link" href="#su" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -35,42 +111,6 @@
 </thead>
 </tr>
 <tbody>
-<tr>
-<td><code>par_visit_data_cohort</code></td>
-<td>The candidate cohort name.</td>
-</tr>
-<tr>
-<td><code>par_visit_data_participant_withdrawal</code></td>
-<td>Tells if the participant withdrawn fron the study.</td>
-</tr>
-<tr>
-<td><code>par_visit_data_participant_withdrawal_date</code></td>
-<td>If withdrawn, the date.</td>
-</tr>
-<tr>
-<td><code>par_visit_data_participant_withdrawal_reason</code></td>
-<td>If withdrawn, the reason why.</td>
-</tr>
-<tr>
-<td><code>par_visit_data_project</code></td>
-<td>The candidate project name.</td>
-</tr>
-<tr>
-<td><code>par_visit_data_protocol_exception</code></td>
-<td>Tells if there was a protocol exception.</td>
-</tr>
-<tr>
-<td><code>par_visit_data_protocol_exception_date</code></td>
-<td>If protocol exception, the date.</td>
-</tr>
-<tr>
-<td><code>par_visit_data_reason_visit_missed</code></td>
-<td>If the visit was missed, the reason why.</td>
-</tr>
-<tr>
-<td><code>par_visit_data_site</code></td>
-<td>The candidate site.</td>
-</tr>
 <tr>
 <td><code>par_visit_data_su_flag_bio_barb</code></td>
 <td>Substance Use in Urine Biosample - barb</td>
@@ -123,36 +163,15 @@
 <td><code>par_visit_data_su_flag_tlfb_stimulant</code></td>
 <td>Substance Use in TLFB instrument - stimulant</td>
 </tr>
-<tr>
-<td><code>par_visit_data_visit_missed</code></td>
-<td>Tells if the visit was missed.</td>
-</tr>
 </tbody>
 </table>
 </div>
-
 <p></p>
 
-Visit information contains all participant visit data, including:
+### Cohort & Caregiver Types
 
-#### General Visit Information
- - Label, Stage, Date, Project, and Site
- - If the visit was missed and reason 
- - Withdrawal information (if the participant withdrew from the study, the reason, and date)
- - Protocol violation information (if there was a protocol exception and the date)
-
-#### Substance Use Flags
-
-Visit information also includes **substance use flags**, which are single summary variables that indicate substance use status (yes/no) based on any positive reports from the following instruments:
-
- - The Timeline Follow Back (<a href="../../pregexp/su/tlfb" target="_blank">TLFB</a>) (self-reported use)
- - <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> when options 1 (*Neonatal Opioid Withdrawal Syndrome*) and/or 5 (*Fetal Alcohol Syndrome*) were selected for field `007` (self-reported use)
- - <a href="../../biospec/urine" target="_blank">USDTL urine toxicology results</a> (<i>note: <a href="../../biospec/nails" target="_blank">Nail toxicology results</a> were not used in the creation of the substance use flags</i>)
- 
-
-#### Cohort & Caregiver Types
-
-**Cohort** information includes cohort subtype and caregiver type for each participant. Possible values include:
+**Cohort** information (<code>par_visit_data_cohort</code>) includes cohort subtype and caregiver type for each participant.    
+Possible values include:
 
  - HBCD Main Child - Postnatal Recruitment
  - HBCD Main Child - Type {*A-F*}
