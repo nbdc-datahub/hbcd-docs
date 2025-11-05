@@ -1,3 +1,10 @@
+// Temporary redirect link for EEG data warning
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.location.hash === "#data-warning") {
+    window.location.hash = "#warning";
+  }
+});
+
 // Function to make embedded links open new tab when clicked
 document.addEventListener('DOMContentLoaded', function() {
     // Select all anchor tags with href starting with "http"
