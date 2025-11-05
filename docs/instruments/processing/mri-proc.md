@@ -81,18 +81,22 @@ Unique hash IDs in the Infant fMRIPrep and XCP-D derivative folder and filenames
 <a class="anchor-link" href="#xcpd" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
 <span class="arrow">▸</span></div>
 <div class="table-collapsible-content">
-<p><a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a> is used for post-processing of Infant fMRIPrep outputs, producing cleaned and parcellated data ready for analysis. Atlases used for parcellation are described under <a href="../mri/#parc">MRI Derivatives: Quickstart Guide</a>.</p>
+<p><a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a> is used for post-processing of Infant fMRIPrep outputs, producing cleaned and parcellated data ready for analysis. Atlases used for parcellation are described under <a href="../../mri/#parc">MRI Derivatives: Quickstart Guide</a>.</p>
 <p><b>Anatomical Processing</b><br>
 Native-space T2w images are transformed into standard MNI152NLin6Asym space (1 mm³ resolution).
-Morphometric surfaces (fsLR-space) from Infant fMRIPrep are copied to the XCP-D derivatives and converted to HCP-style midthickness, inflated, and very-inflated surfaces.</p> 
+Morphometric surfaces (fsLR-space) from Infant fMRIPrep are copied to the XCP-D derivatives. HCP-style midthickness, inflated, and very-inflated surfaces are generated from the white-matter and pial surface meshes and mapped to fsLR space.</p> 
 <p><b>Functional Processing</b><br>
+For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:</p>
 <ul>
-<li>Remove first 4 volumes, apply motion correction (FD > 0.3 mm flagged).</li>
-<li>Regress 36 confounds (36P model), despike, bandpass filter (0.01–0.08 Hz), and smooth (6 mm FWHM).</li>
-<li>Interpolate and censor high-motion frames.</li>
-<li>Compute ALFF and ReHo metrics from cleaned data.</li> 
-<li>Extract parcellated time series and compute pairwise functional connectivity.</li>
-</ul></p>
+<li>First 4 volumes (dummy scans) are removed.</li>
+<li>Motion correction: Framewise displacement (FD) is calculated per Power et al. (2014); volumes with FD &gt; 0.3 mm flagged as high-motion outliers.</li>
+<li>Nuisance regression: 36 confound regressors (motion, tissue, and global signals plus derivatives) regressed out following the 36P strategy.</li>
+<li>Despiking and filtering: Data despiked, temporally filtered (0.01–0.08 Hz), and smoothed (6 mm FWHM).</li>
+<li>Censoring: High-motion volumes are interpolated and later censored to minimize motion artifacts.</li>
+<li>Amplitude of Low-Frequency Fluctuations (ALFF) and Regional Homogeneity (ReHo) metrics computed from cleaned data.</li> 
+<li>Parcellated time series are extracted for <a href="../mri/index.md#parc">each atlas</a> and pairwise functional connectivity is calculated as the Pearson correlation between regional time series.</li>
+<li>Postprocessed derivatives are concatenated across runs.</li>
+</ul>
 </div>
 
 ## References

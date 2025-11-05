@@ -64,7 +64,7 @@ th, td {
 }
 .table-collapsible-content li {
   margin-bottom: 0.4rem;
-  line-height: 1;
+  line-height: 1.1;
   font-size: 1em !important;
 }
 .table-collapsible-content ul ul {

@@ -112,15 +112,4 @@ yaml:
 </tr>
 
 
-### SED
-
-- 🚧 Geocoded Linkage: instruments/SED/geocoded-linkage.md
-
-<tr>
-  <td><span class="tooltip tooltip-right"><i class="fas fa-layer-group"></i><span class="tooltiptext">Concatenated Data</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;"><a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage</a></td>
-  <td></td>
-  <td style="word-wrap: break-word; white-space: normal;">Toxin Exposure & Other Neighborhood Measures</td>
-  <td><i>concatenated/geocoded_linkage/</i><br>
-  CONFIRM FOLDER NAME</td>
-</tr>   
+ 

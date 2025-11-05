@@ -1,11 +1,9 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW (CURRENTLY REMOVED FROM INCLUSION IN 2.0 HOWEVER)</i></p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW</i></p>
 
 
 <i style="color: red;">Administrative notes:<br>
-- original form responses are <a href="../GLED-alt">here</a> - page below has been reorganized to follow format of concat data pages and filled with more info from external sources<br>
  - <a href="https://drive.google.com/open?id=114NYqSe--744iuNJ3hZCsA2tmIaAB-ku">Data dictionary shared by Chun</a>: geocoded variables given the address history<br>
  - who can give more information on what the data look like?<br>
-- figure out what domain will be - currently under SED, but might be its own domain LED<br>
 - some measures in ABCD documentation have data and responsible use warnings - should these be included for HBCD as well? eg: <a href="https://docs.abcdstudy.org/latest/documentation/non_imaging/le.html#le_l_nbhsoc">NaNDa</a> - Chun says that these can be left out for HBCD for now<br>
 - Per Chun, "geocoded linkage measure data were deliberately designed to be compatible with ABCD, but with appropriate year updates (many of ABCD variables tracing back to 2010 census, but HBCD is updated to 2020 census)." for documentation, we could: (1) just link to ABCD documentation as the draft does and make a qualifying statement above the table about year updates. (2) could add specific modifications made for HBCD compared to ABCD documentation as a separate column of the table. (3) add to a "HBCD Modificaations" section as we do for other measures</p>
 </i></p>

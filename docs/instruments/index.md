@@ -205,35 +205,30 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 0.9em; color: #555;">
-<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;= Concatenated (File-Based) Data &nbsp;&nbsp;
-<i style="color: teal;" class="fa-solid fa-table"></i>&nbsp;= Tabulated Data
+<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
+<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;= Concatenated Data - <a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>
 </p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-<th></th>
 <th>Instrument</th>
 <th>Version</th>
 <th>Construct</th>
-<th><i style="color: teal;" class="fa-solid fa-table"></i>&nbsp; Table / <i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Folder Name</th>
+<th>Table Name / <i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Concatenated Data Folder</th>
 </thead>
 <tbody>
 <tr>
-    <td style="text-align: center;"><i style="color: teal;" class="fas fa-layer-group"></i></td>
-    <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
+    <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
     <td>Maternal & Child</td>
     <td>GWAS, EWAS, Transcriptome</td>
-    <td><i>concatenated/genetics/</i>  <a href="biospec/illumina-gda-gwas/#concat" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></td>
+    <td><i>genetics/</i></td>
 </tr>
 <tr>
-    <td style="text-align: center;"><i style="color: teal;" class="fa-solid fa-table"></i></td>
     <td><a href="biospec/nails" target="_blank">Maternal Nails</a></td>
     <td>Maternal</td>
     <td>Drug, Environmental Exposure</td>
     <td><code>bio_bm_biosample_nails_<span class="blue-text">&lt;results|type&gt;</span></code></td>
 </tr>
 <tr>
-    <td style="text-align: center;"><i style="color: teal;" class="fa-solid fa-table"></i></td>
     <td><a href="biospec/urine" target="_blank">Maternal Urine</a></td>
     <td>Maternal</td>
     <td>Drug Panel, Toxins</td>
@@ -520,25 +515,34 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
+<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;= Concatenated Data - <a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>
+</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
   <th>Instrument</th>
   <th>Version</th>
   <th>Construct</th>
-  <th>Table Name</th>
+  <th>Table Name / <i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Concatenated Folder</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage</a></td>
+  <td></td>
+  <td style="word-wrap: break-word; white-space: normal;">Neighborhood Measures</td>
+  <td><i>geocoded_linkage/</i></td>
+</tr>  
   <tr>
-  <td rowspan="2"><a href="SED/aces" target="_blank">ACEs</a></td>
+  <td rowspan="2"><a href="SED/aces" target="_blank">Adverse Childhood Experiences</a></td>
   <td>ACEs</td>
-  <td>Adverse Childhood Experiences (Caregiver)</td>
+  <td>ACEs (Caregiver)</td>
   <td><code>sed_cg_ace</code></td>
 </tr>  
 <tr>
   <td>Pediatric</td>
-  <td>Adverse Childhood Experiences (Child)</td>
+  <td>ACEs (Child)</td>
   <td><code>sed_cg_pedaces</code></td>
 </tr>  
 <tr>
@@ -607,7 +611,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>sed_cg_paces</code></td>
 </tr>
 <tr>
-  <td><a href="SED/promis" target="_blank">PROMIS Perceived Stress/Social Support</a></td>
+  <td><a href="SED/promis" target="_blank">PROMIS</a></td>
   <td></td>
   <td>Perceived Stress/Social Support</td>
   <td><code>sed_bm_strsup</code></td>
@@ -625,7 +629,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>sed_bm_phx__discr</code></td>
 </tr>  
 <tr>
-  <td><a href="SED/vi" target="_blank">Vancouver Index of Acculturation (VIA)</a></td>
+  <td><a href="SED/vi" target="_blank">Vancouver Index (VIA)</a></td>
   <td></td>
   <td>Acculturation</td>
   <td><code>sed_cg_via</code></td>
