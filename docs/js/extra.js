@@ -1,7 +1,14 @@
 // Temporary redirect link for EEG data warning
 document.addEventListener("DOMContentLoaded", function () {
-  if (window.location.hash === "#data-warning") {
-    window.location.hash = "#warning";
+  const currentPath = window.location.pathname;
+  const currentHash = window.location.hash;
+
+  // Redirect from /measures/eeg/#data-warning → /latest/instruments/eeg/#warning
+  if (
+    currentPath === "/measures/eeg/" &&
+    currentHash === "#data-warning"
+  ) {
+    window.location.href = "https://docs.hbcdstudy.org/latest/instruments/eeg/#warning";
   }
 });
 
