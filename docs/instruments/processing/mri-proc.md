@@ -15,35 +15,38 @@ HBCD MRI data are processed through a standardized sequence of BIDS App pipeline
 <i class="fa-solid fa-link"></i></a></span>
 <span class="arrow">▸</span></div>
 <div class="table-collapsible-content">
-ADD CONTENT
+<p>BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentation (<a href="https://doi.org/10.1101/2023.03.22.533696">Hendrickson et al. 2024</a>). The <a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet pipeline</a> generates native-space brain segmentations and brain masks (as well as ROI volume statistics), which are fed into Infant fMRIPrep for use in anatomical preprocessing and surface reconstruction.</p>
 </div>
 
 ## Infant fMRIPrep
 
 <div id="nibabies" class="table-banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa-solid fa-diagram-project"></i></span>
-<span class="text-with-link">
-<span class="text">Infant fMRIPrep Processing Overview</span>
-<a class="anchor-link" href="#nibabies" title="Copy link">
-<i class="fa-solid fa-link"></i></a></span>
+<span class="text-with-link"><span class="text">Infant fMRIPrep Processing Overview</span>
+<a class="anchor-link" href="#nibabies" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
 <span class="arrow">▸</span></div>
 <div class="table-collapsible-content">
-<p><b>Infant fMRIPrep</b> adapts <em>fMRIPrep</em> for infant data using age-appropriate templates and two surface reconstruction methods optimized for early development.</p>
-<p><b>Anatomical Processing</b><br>
-T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infant template (0–4.5 yr), then to MNI152 for compatibility with adult datasets. Surface reconstruction is performed via:
-<ul>
-<li><b>M-CRIB-S</b>: T2w-based method with modified <code>MCRIBReconAll</code> workflow. Uses pre-computed anatomical segmentation from BIBSNet.</li>
-<li><b>Infant FreeSurfer</b>: T1w-based method that runs <code>infant_recon_all</code>.</li>
-</ul>
+<p>
+  <a href="https://nibabies.readthedocs.io/en/latest/">Infant-fMRIPrep</a> adapts 
+  <em>fMRIPrep</em> for infant data using age-appropriate templates and two surface 
+  reconstruction methods optimized for early development.
 </p>
-<p><b>Functional Processing</b><br>
-For each BOLD run: 
+<p><b>Anatomical Processing</b><br>
+  T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infant 
+  template (0–4.5 yr), then to MNI152 for compatibility with adult datasets. Surface 
+  reconstruction is performed via:
+</p>
 <ul>
-<li>Motion and distortion correction using fieldmap-based estimation.</li>
-<li>Alignment of functional to anatomical space via boundary-based registration.</li>
-<li>Confound estimation: framewise displacement (FD) and DVARS for motion, CompCor physiological noise regressors, global signals (mean CSF, white matter, and whole brain), and derived regressors (e.g. motion outlier flags for frames exceeding 0.5 mm FD or 1.5 standardized DVARS thresholds)</li>
-<li>Resampling of BOLD data to subject and fsLR-space surfaces, with grayordinates (91k) for surface-based analyses.</li>
-</ul></p>
+  <li><b>M-CRIB-S</b>: T2w-based method with modified <code>MCRIBReconAll</code> workflow. Uses pre-computed anatomical segmentation from BIBSNet.</li>
+  <li><b>Infant FreeSurfer</b>: T1w-based method that runs <code>infant_recon_all</code>.</li>
+</ul>
+<p><b>Functional Processing</b></p>
+<ul>
+  <li>Motion and distortion correction using fieldmap-based estimation.</li>
+  <li>Alignment of functional to anatomical space via boundary-based registration.</li>
+  <li>Confound estimation: framewise displacement (FD) and DVARS for motion, CompCor physiological noise regressors, global signals (mean CSF, white matter, and whole brain), and derived regressors (e.g. motion outlier flags for frames exceeding 0.5 mm FD or 1.5 standardized DVARS thresholds)</li>
+  <li>Resampling of BOLD data to subject and fsLR-space surfaces, with grayordinates (91k) for surface-based analyses.</li>
+</ul>
 </div>
 
 ### Surface Reconstruction Methods
@@ -78,7 +81,7 @@ Unique hash IDs in the Infant fMRIPrep and XCP-D derivative folder and filenames
 <a class="anchor-link" href="#xcpd" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
 <span class="arrow">▸</span></div>
 <div class="table-collapsible-content">
-<p><b>XCP-D</b> is used for post-processing of Infant fMRIPrep outputs, producing cleaned and parcellated data ready for analysis. Atlases used for parcellation are described under <a href="../mri/#parc">MRI Derivatives: Quickstart Guide</a>.</p>
+<p><a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a> is used for post-processing of Infant fMRIPrep outputs, producing cleaned and parcellated data ready for analysis. Atlases used for parcellation are described under <a href="../mri/#parc">MRI Derivatives: Quickstart Guide</a>.</p>
 <p><b>Anatomical Processing</b><br>
 Native-space T2w images are transformed into standard MNI152NLin6Asym space (1 mm³ resolution).
 Morphometric surfaces (fsLR-space) from Infant fMRIPrep are copied to the XCP-D derivatives and converted to HCP-style midthickness, inflated, and very-inflated surfaces.</p> 
@@ -96,11 +99,13 @@ Morphometric surfaces (fsLR-space) from Infant fMRIPrep are copied to the XCP-D 
 <div class="references">
 <p>Adamson, C. L., Alexander, B., Ball, G., Beare, R., Cheong, J. L. Y., Spittle, A. J., Doyle, L. W., Anderson, P. J., Seal, M. L., & Thompson, D. K. (2020). Parcellation of the neonatal cortex using Surface-based Melbourne Children’s Regional Infant Brain atlases (M-CRIB-S). <em>Scientific Reports</em>, 10(1), 4359. <a href="https://doi.org/10.1038/s41598-020-61326-2">https://doi.org/10.1038/s41598-020-61326-2</a></p>
 <p>Goncalves, M., Moser, J., Madison, T. J., McCollum, R., Lundquist, J. T., Fayzullobekova, B., Hadera, L., Pham, H. H. N., Moore, L. A., Houghton, A., Conan, G., Styner, M. A., Alexopoulos, D., Smyser, C. D., Stoyell, S. M., Koirala, S., Nelson, S. M., Weldon, K. B., Lee, E., … Fair, D. A. (2025). FMRIPrep Lifespan: Extending A robust pipeline for functional MRI preprocessing to developmental neuroimaging. <em>In bioRxivorg.</em> <a href="https://doi.org/10.1101/2025.05.14.654069">https://doi.org/10.1101/2025.05.14.654069</a></p>
+<p>Hendrickson, T. J., Reiners, P., Moore, L. A., Lundquist, J. T., Fayzullobekova, B., Perrone, A. J., Lee, E. G., Moser, J., Day, T. K. M., Alexopoulos, D., Styner, M., Kardan, O., Chamberlain, T. A., Mummaneni, A., Caldas, H. A., Bower, B., Stoyell, S., Martin, T., Sung, S., … Feczko, E. (2024). BIBSNet: A deep learning Baby image brain segmentation network for MRI scans. <em>In bioRxivorg</em>. <a href="https://doi.org/10.1101/2023.03.22.533696">https://doi.org/10.1101/2023.03.22.533696</a></p>
 <p>Zöllei, L., Iglesias, J. E., Ou, Y., Grant, P. E., & Fischl, B. (2020). Infant FreeSurfer: An automated segmentation and surface extraction pipeline for T1-weighted neuroimaging data of infants 0-2 years. <em>NeuroImage</em>, 218(116946), 116946. <a href="https://doi.org/10.1016/j.neuroimage.2020.116946">https://doi.org/10.1016/j.neuroimage.2020.116946</a></p>
 </div>
  
 
 
+ 
 
 
 
@@ -111,17 +116,7 @@ Morphometric surfaces (fsLR-space) from Infant fMRIPrep are copied to the XCP-D 
 
 ## orig drafts - more detailed 
 
-<div id="nibabies" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-diagram-project"></i></span>
-  <span class="text-with-link">
-  <span class="text">Infant fMRIPrep</span>
-  <a class="anchor-link" href="#nibabies" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+#### Nibabies - orig
 <p>Infant fMRIPrep adapts the fMRIPrep pipeline for infant MRI data, incorporating age-appropriate templates and processing steps optimized for developing brains.</p>
 <p><b>B0 Inhomogeneity Correction</b><br>
 Fieldmap estimation is performed using paired EPI images to correct for B0 inhomogeneity. The resulting fieldmap is applied to all BOLD runs for distortion correction.</p>
@@ -151,17 +146,8 @@ A “goodvoxels” mask is applied during volume-to-surface sampling in fsLR spa
 Finally, grayordinates files (91k) are generated using the highest-resolution <code>fsaverage</code> as intermediate standardized surface space for use in surface-based analyses compatible with tools such as the Human Connectome Workbench.</p>
 </div>
 
-<div id="xcpd" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-diagram-project"></i></span>
-  <span class="text-with-link">
-  <span class="text">XCP-D</span>
-  <a class="anchor-link" href="#xcpd" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+#### XCP-D orig
+
 <p><strong>XCP-D</strong> is used to post-process the outputs of Infant-fMRIPrep, generating cleaned, denoised, and parcellated datasets ready for analysis. The workflow utilizes a set of standard atlases for parcellation - see <a href="../mri/#parc">Parcellations</a> under <em>MRI Derivatives: Quickstart Guide</em>.</p>
 <p><b>ANATOMICAL PROCESSING</b><br>
 Native-space T2w images are transformed into standard <strong>MNI152NLin6Asym</strong> space at 1 mm³ resolution.
@@ -184,6 +170,5 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps.
 </ul>
 <p><b>Connectivity Analysis</b><br>
 Parcellated time series are extracted for each atlas, described <a href="../mri/index.md#parc">here</a>, and pairwise functional connectivity is calculated as the Pearson correlation between regional time series. For participants with multiple runs, postprocessed derivatives are concatenated across runs and directions.</p>
-</div>
 
 
