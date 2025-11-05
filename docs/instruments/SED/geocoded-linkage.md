@@ -28,25 +28,15 @@
 <p>The geocoded variables should be considered as proxies for the exposure. Therefore, it is an estimates of the risk, which can differ from what is actually experienced by a given individual. In addition, researchers should not use any geospatial information to identify the actual geographical location.</p>
 </div>
 
-<div id="concat" class="static-banner" style="background-color: #dcd8fb; border-left: 5px solid #b5aef2;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-    <span class="text">Concatenated Data (<code>geocoded-linkage/</code>)</span>
-    <a class="anchor-link" href="#concat" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-</div>
-<div class="notification-static-content" style="border-left: 5px solid #b5aef2;">
-  <p>The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD). The dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> (<i>see the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details</i>) under 
-    <code>geocoded_linkage/</code>:</p>
-  <pre class="folder-tree">
+The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD). The dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> (<i>see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details</i>) under <code>geocoded_linkage/</code>:
+
+<pre class="folder-tree">
 hbcd/
 |__ concatenated/ 
     |__ geocoded-linkage/
         |__ ADD FILENAMES
 </pre>
-</div>
+
 
 ## Details
 

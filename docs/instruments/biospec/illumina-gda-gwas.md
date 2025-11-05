@@ -2,7 +2,7 @@
 
 # Illumina Global Diversity GWAS Array 
 
-Genomic data generated from the Illumina Global Diversity Array (*GDA GWAS*) is provided for both the birth parent and child. Samples are assayed from one sample, but may come from any visit (V01-V06) based on DNA yields.
+Genomic data generated from the **Illumina Global Diversity Array (GDA GWAS)** is provided for both the birth parent and child. Samples are assayed from one sample, but may come from any visit (V01-V06) based on DNA yields.
 
 ## Release Data
 
@@ -41,64 +41,42 @@ Analysts using HBCD data have ethical obligations to minimize risks, including p
 <p>Any removal of data during QC will be described in the README file accompanying the data.</p> 
 </div>
 
-<div id="concat" class="static-banner" style="background-color: #dcd8fb; border-left: 5px solid #b5aef2;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-    <span class="text">Concatenated Data (<code>genetics/</code>)</span>
-    <a class="anchor-link" href="#concat" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-</div>
-<div class="notification-static-content" style="border-left: 5px solid #b5aef2;">
-  <p>The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under 
-    <code>genetics/</code>. <i>See the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> to learn more about BIDS and data types.</i></p>
-  <pre class="folder-tree">
+The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>genetics/</code> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*). It includes **three interlinked PLINK files** (`.bed`, `.bim`, `.fam`) aligned to the **hg19 genome build**, plus supporting documentation and batch metadata:
+
+<pre class="folder-tree">
 hbcd/
 └── concatenated/
-    └── genetics/
-        ├── .bed
-        ├── .bim
-        ├── .fam
-        ├── batch.info
-        └── README
-  </pre>
-  <p>The dataset includes <strong>three interlinked PLINK files</strong> (<code>.bed</code>, <code>.bim</code>, <code>.fam</code>) aligned to the <strong>hg19 genome build</strong>, plus supporting documentation and batch metadata:</p>
-  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-    <thead>
-      <tr>
-        <th>File</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>.bed</code></td>
-        <td><a href="https://www.cog-genomics.org/plink/1.9/formats#bed">PLINK 1.9 <code>.bed</code> format</a> — Binary genotype file (not UCSC BED).</td>
-      </tr>
-      <tr>
-        <td><code>.bim</code></td>
-        <td><a href="https://www.cog-genomics.org/plink/1.9/formats#bim">PLINK 1.9 <code>.bim</code> format</a> — Variant information (chromosome, rsID, position, alleles).</td>
-      </tr>
-      <tr>
-        <td><code>.fam</code></td>
-        <td><a href="https://www.cog-genomics.org/plink/1.9/formats#fam">PLINK 1.9 <code>.fam</code> format</a> — Participant information.</td>
-      </tr>
-      <tr>
-        <td><code>batch.info</code></td>
-        <td>Plain-text file mapping participants to genotyping batches.</td>
-      </tr>
-      <tr>
-        <td><code>README</code></td>
-        <td>Documentation of QC procedures to ensure sample matches (e.g., ID concordance, sex checks).</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  └── genetics/
+      ├── .bed
+      ├── .bim
+      ├── .fam
+      ├── batch.info
+      └── README
+</pre>
 
-## Details
-
-Add more info?
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr><th>File</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>.bed</code></td>
+  <td><a href="https://www.cog-genomics.org/plink/1.9/formats#bed">PLINK 1.9 <code>.bed</code> format</a> — Binary genotype file (not UCSC BED).</td>
+</tr><tr>
+  <td><code>.bim</code></td>
+  <td><a href="https://www.cog-genomics.org/plink/1.9/formats#bim">PLINK 1.9 <code>.bim</code> format</a> — Variant information (chromosome, rsID, position, alleles).</td>
+</tr><tr>
+  <td><code>.fam</code></td>
+  <td><a href="https://www.cog-genomics.org/plink/1.9/formats#fam">PLINK 1.9 <code>.fam</code> format</a> — Participant information.</td>
+</tr><tr>
+  <td><code>batch.info</code></td>
+  <td>Plain-text file mapping participants to genotyping batches.</td>
+</tr><tr>
+  <td><code>README</code></td>
+  <td>Documentation of QC procedures to ensure sample matches (e.g., ID concordance, sex checks).</td>
+</tr>
+</tbody>
+</table>
 
 ## Quality Control
 

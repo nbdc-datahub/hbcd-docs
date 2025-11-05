@@ -147,7 +147,6 @@ nav:
         - Magnetic Resonance Imaging:
             - Overview & MR Protocols: instruments/mri/index.md
             - Quality Control Procedures: instruments/mri/qc.md
-             # - MRI Derivatives Quick Start Guide: instruments/mri/derivs-quickstart.md
             - ⚠️ Pre-Scan Questionnaire: instruments/mri/questionnaire.md
             - Structural MRI: instruments/mri/smri.md
             - Functional MRI: instruments/mri/fmri.md
@@ -163,7 +162,6 @@ nav:
             - Pipeline Software Standards: instruments/processing/standards.md
     - ON HOLD for 2.0:
         - ❗ Transitions in Care: instruments/ONHOLD/transitions-in-care.md
-        - ❗ GLED: instruments/ONHOLD/GLED-alt.md
         - ❗ Bayley-4: instruments/ONHOLD/bayley-4.md
         - ❗ Infant Heart Rate (GABI): instruments/ONHOLD/gabi.md
   - Release Notes: 

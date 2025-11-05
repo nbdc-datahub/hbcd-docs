@@ -1,6 +1,5 @@
 <p style="color: red;">LUCI ADMIN NOTES: original drafts of nibabies and xcp-d proc descriptions <a href="../mri-proc-alt/">here</a> - info below is more simplified</p>
 
-
 # Structural & Functional MRI Processing
 
 HBCD MRI data are processed through a standardized sequence of BIDS App pipelines. Each pipeline builds on the derivatives from the previous step:
