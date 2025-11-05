@@ -3,14 +3,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentPath = window.location.pathname;
   const currentHash = window.location.hash;
 
-  // Redirect from /measures/eeg/#data-warning → /latest/instruments/eeg/#warning
-  if (
-    currentPath === "/measures/eeg/" &&
-    currentHash === "#data-warning"
-  ) {
+  // Match /<version>/measures/eeg/
+  const measuresEegPattern = /^\/[^/]+\/measures\/eeg\/$/;
+
+  if (measuresEegPattern.test(currentPath) && currentHash === "#data-warning") {
+    // Redirect to the desired destination
     window.location.href = "https://docs.hbcdstudy.org/latest/instruments/eeg/#warning";
   }
 });
+
 
 // Function to make embedded links open new tab when clicked
 document.addEventListener('DOMContentLoaded', function() {
