@@ -17,7 +17,10 @@ The Auditory mismatch negativity (**MMN**) Task (v.11.29.23) facilitates examini
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>The interstimulus interval (ISI) for the Auditory Mismatch Negativity task changed between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details.</p>
+<p><b>Change in ISI Between Visits</b><br>
+The interstimulus interval (ISI) for the Auditory Mismatch Negativity task changed between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details.</p>
+<p><b>Stimtracker Artifact</b><br>
+The MMN, VEP, and FACE task data may contain an artifact originating from the StimTracker device used for stimulus timing - see more information on this <a href="../qc/#stimtracker-artifact-detection" target="_blank">here</a>.</p>
 </div>
 
 <div id="mmn" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
@@ -89,6 +92,21 @@ The Auditory mismatch negativity (**MMN**) Task (v.11.29.23) facilitates examini
 
 The Faces task (**FACE**) (v.11.29.23) assesses child and infant face processing abilities as well as the underlying neural activity supporting face and object processing. ERPs are computed as a function of repeated presentation of faces and objects. The ERPs index different stages of processing including attention, perception, categorization, individuation and memory. The ERP components elicited by the Faces task are the P1, N290, and P400 components. 
 
+<div id="warning-face" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</span>
+  <a class="anchor-link" href="#warning-face" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p><b>Stimtracker Artifact</b><br>
+The MMN, VEP, and FACE task data may contain an artifact originating from the StimTracker device used for stimulus timing - see more information on this <a href="../qc/#stimtracker-artifact-detection" target="_blank">here</a>.</p>
+</div>
+
 <div id="face" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa fa-clipboard-list"></i></span>
   <span class="text-with-link">
@@ -151,6 +169,21 @@ The Faces task (**FACE**) (v.11.29.23) assesses child and infant face processing
 ## Visual Evoked Potential Task
 
 The Visual Evoked Potential Task (**VEP**) (v.11.29.23) measures development of visual cortex and response to stimuli, reflecting underlying cortical development. VEP amplitude and latency decreases with age during the first three years of life. The VEP has been associated with concurrent and later developmental outcomes as a function of prenatal substance exposures ([Margolis et al., 2024](https://psycnet.apa.org/record/2024-66755-001)), early visual enrichment or deprivation ([Jensen et al., 2019](https://doi.org/10.1038/s41598-019-39242-x)), vision system maturation ([Lippé et al., 2009](https://doi.org/10.3389/neuro.09.048.2009)), neurodevelopmental disorders (e.g., ASD and ADHD; [Cremone-Caira et al., 2023](https://doi.org/10.1007/s10803-023-06005-7); [Nazhvani et al., 2013](https://doi.org/10.1016/j.clineuro.2013.08.009)), and reading and learning disabilities ([Shandiz et al., 2017](https://doi.org/10.4103/jovr.jovr_106_16)). The morphology of the VEP likely reflects varying degrees of synaptic efficiency and as such, can be used as a readout of general cortical function. 
+
+<div id="warning-vep" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</span>
+  <a class="anchor-link" href="#warning-vep" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p><b>Stimtracker Artifact</b><br>
+The MMN, VEP, and FACE task data may contain an artifact originating from the StimTracker device used for stimulus timing - see more information on this <a href="../qc/#stimtracker-artifact-detection" target="_blank">here</a>.</p>
+</div>
 
 <div id="vep" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa fa-clipboard-list"></i></span>
@@ -217,6 +250,7 @@ The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the de
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
+<p><b>Change in Video Content Between Visits</b><br>
 <p>The video content for the Resting State task changed between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details. Also note that RS is not a true resting state as there is a visual stimulus present.</p>
 </div>
 
@@ -254,3 +288,4 @@ The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the de
 <p>Whedon, M., Perry, N. B., & Bell, M. A. (2020). Relations between frontal EEG maturation and inhibitory control in preschool in the prediction of children’s early academic skills. <em>Brain and Cognition</em>, 145, 105636. <a href="https://doi.org/10.1016/j.bandc.2020.105636" target="_blank">https://doi.org/10.1016/j.bandc.2020.105636</a></p>
 </div>
 </div>
+
