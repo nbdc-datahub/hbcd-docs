@@ -8,21 +8,6 @@
 See the following sections for detailed descriptions for each column in the [data dictionary](#data-dictionary-columns) and [levels table](#levels-table).
 
 ## Data Dictionary Columns
-<!-- LEGEND -->
-<table id="legend" class="compact-table-no-vertical-lines" style="border: 2px solid #4fe2ffff; border-radius: 8px; border-collapse: collapse; line-height: 1.0;">
-<tbody>
-<tr>
-<td><b>LEGEND</b></td>
-<td style="text-align: center; padding-left: 30px"><i style="font-size: 1.2em;" class="fa-solid fa-lock"></i></td>
-<td style="padding-left: 5px">Values do not vary across releases</td></tr>
-<tr>
-<td></td>
-<td style="text-align: center; padding-left: 30px"><i style="font-size: 1.4em;" class="bi bi-filetype-json"></i></td>
-<td style="padding-left: 5px">Table/variable element corresponds to field in BIDS JSON - see <a href="#json">Corresponding Data Dictionary Elements in JSONs</a></td></tr>
-</tbody>
-</table>
-
-<!-- DD -->
 <table class="compact-table" style="font-size: 14px; border: 1px solid #4fe2ffff; border-radius: 8px;">
 <thead>
 <tr>
@@ -67,27 +52,23 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 <!-- TABLE STRUCTURE -->
 <tr>
-  <td><code>table_name</code><i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i>
-  </td>
+  <td><code>table_name</code>&nbsp; <span class="tooltip tooltip-right"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
   <td>Table name</td>
   <td style="word-wrap: break-word; white-space: normal;">Coded table name, e.g. <code>sed_bm_demo</code></td>
 </tr>
 <tr>
-  <td><code>table_label</code>
-  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td><code>table_label</code></td>
   <td>Table label</td>
   <td style="word-wrap: break-word; white-space: normal;">Label for coded table name (e.g. <i>Demographics</i>)</td>
 </tr>
 <!-- VARIABLE METADATA -->
 <tr>
-  <td><code>name</code>
-  <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+  <td><code>name</code>&nbsp; <span class="tooltip tooltip-right"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
   <td>Variable name</td>
   <td style="word-wrap: break-word; white-space: normal;">Coded variable name within a table (e.g. <code>sed_bm_demo_edu_001</code>)</td>
 </tr>
 <tr>
-  <td><code>label</code>
-  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td><code>label</code></td>
   <td>Variable label</td>
   <td style="word-wrap: break-word; white-space: normal;">Label for coded variable name (e.g. <i>Highest grade completed</i>)</td>
 </tr>
@@ -109,22 +90,19 @@ See the following sections for detailed descriptions for each column in the [dat
   <td style="word-wrap: break-word; white-space: normal;">Note displayed to participants (e.g. <i>Enter weight in pounds.</i>)</td>
 </tr>
 <tr>
-  <td><code>unit</code>
-  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td><code>unit</code></td>
   <td>Unit</td>
   <td style="word-wrap: break-word; white-space: normal;">Unit of measurement (e.g. <i>m, cm², lbs</i>)</td>
 </tr>
 <!-- VARIABLE TYPES -->
 <tr>
-  <td><code>type_var</code>
-  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td><code>type_var</code></td>
   <td>Variable type</td>
   <td style="word-wrap: break-word; white-space: normal;">Variable types include: <i>administrative | item | derived item | summary score</i><br>
   See <a href="#type_var">Variable Type Definitions</a> below</td>
 </tr>
 <tr>
-  <td><code>type_data</code>
-  <i class="fa-solid fa-lock" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+  <td><code>type_data</code>&nbsp; <span class="tooltip tooltip-right"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
   <td>Data type</td>
   <td style="word-wrap: break-word; white-space: normal;">Data types include: <i>date | timestamp| time | <span class="tooltip">character<span class="tooltiptext">Only used for categorical columns</span></span> | text | integer | double</i></td>
 </tr>
@@ -171,8 +149,7 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 <!-- IDENTIFIERS & LINKS -->
 <tr>
-  <td><code>identifier_column</code>
-  <i class="fa-solid fa-lock" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+  <td><code>identifier_column</code>&nbsp; <span class="tooltip tooltip-right"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
   <td>Identifier column(s)</td>
   <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names for table/variable, including participant and session IDs and sometimes run ID - see <a href="../../datacuration/phenotypes/#table-organization" target="_blank">Table Organization</a> for details</td>
 </tr>
