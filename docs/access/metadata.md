@@ -8,21 +8,9 @@
 See the following sections for detailed descriptions for each column in the [data dictionary](#data-dictionary-columns) and [levels table](#levels-table).
 
 ## Data Dictionary Columns
-<!-- LEGEND -->
-<table id="legend" class="compact-table-no-vertical-lines" style="border: 2px solid #4fe2ffff; border-radius: 8px; border-collapse: collapse; line-height: 1.0;">
-<tbody>
-<tr>
-<td><b>LEGEND</b></td>
-<td style="text-align: center; padding-left: 30px"><i style="font-size: 1.2em;" class="fa-solid fa-lock"></i></td>
-<td style="padding-left: 5px">Values do not vary across releases</td></tr>
-<tr>
-<td></td>
-<td style="text-align: center; padding-left: 30px"><i style="font-size: 1.4em;" class="bi bi-filetype-json"></i></td>
-<td style="padding-left: 5px">Table/variable element corresponds to field in BIDS JSON - see <a href="#json">Corresponding Data Dictionary Elements in JSONs</a></td></tr>
-</tbody>
-</table>
-
-<!-- DD -->
+<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
+<i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases
+</p>
 <table class="compact-table" style="font-size: 14px; border: 1px solid #4fe2ffff; border-radius: 8px;">
 <thead>
 <tr>
@@ -45,6 +33,21 @@ See the following sections for detailed descriptions for each column in the [dat
   <i>Behavior/Child-Caregiver Interaction | BioSpecimens | Neurocognition & Language | Novel Tech | Physical Health | Pregnancy/Exposure Including Substance | Social and Environmental Determinants | Tabular EEG | Tabular Imaging</i></td>
 </tr>
 <tr>
+  <td><code>sub_domain</code></td>
+  <td>Subdomain</td>
+  <td style="word-wrap: break-word; white-space: normal;">Domain subcategory (e.g. <i>Structural MRI</i> within the <i>Imaging</i> domain)</td>
+</tr>
+<tr>
+  <td><code>metric</code></td>
+  <td>Metric</td>
+  <td style="word-wrap: break-word; white-space: normal;">Imaging & EEG only: Specific metric assessed (e.g. <i>Cortical Thickness</i>)</td>
+</tr>
+<tr>
+  <td><code>atlas</code></td>
+  <td>Atlas</td>
+  <td style="word-wrap: break-word; white-space: normal;">Imaging only: Atlas used to derive parcellated structural measures and functional timeseries (e.g., <i>Gordon</i> - <a href="../../instruments/mri/#parc" target="_blank">see full list</a>)</td>
+</tr>
+<tr>
   <td><code>source</code></td>
   <td>Source</td>
   <td style="word-wrap: break-word; white-space: normal;">Source of information. Source values include:<br>
@@ -52,35 +55,31 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 <!-- TABLE STRUCTURE -->
 <tr>
-  <td><code>table_name</code><i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i>
-  </td>
+  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>table_name</code></td>
   <td>Table name</td>
   <td style="word-wrap: break-word; white-space: normal;">Coded table name, e.g. <code>sed_bm_demo</code></td>
 </tr>
 <tr>
-  <td><code>table_label</code>
-  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td><code>table_label</code></td>
   <td>Table label</td>
   <td style="word-wrap: break-word; white-space: normal;">Label for coded table name (e.g. <i>Demographics</i>)</td>
 </tr>
 <!-- VARIABLE METADATA -->
 <tr>
-  <td><code>name</code>
-  <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>name</code></td>
   <td>Variable name</td>
   <td style="word-wrap: break-word; white-space: normal;">Coded variable name within a table (e.g. <code>sed_bm_demo_edu_001</code>)</td>
 </tr>
 <tr>
-  <td><code>label</code>
-  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td><code>label</code></td>
   <td>Variable label</td>
   <td style="word-wrap: break-word; white-space: normal;">Label for coded variable name (e.g. <i>Highest grade completed</i>)</td>
 </tr>
 <tr>
-  <td><code>instruction</code>
-  <i class="fas fa-exclamation-triangle" style="font-size: 1em; margin-left: 6px; color: orange;"></i></td>
+  <td><i class="fas fa-exclamation-triangle" style="font-size: 1em; margin-left: 6px; color: orange;"></i>&nbsp; <code>instruction</code></td>
   <td>Instruction</td>
-  <td style="word-wrap: break-word; white-space: normal;">Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>)<br>
+  <td style="word-wrap: break-word; white-space: normal;">
+    Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>)<br>
   <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Instruction text may be incomplete or misaligned! See <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a></b></td>
 </tr>
 <tr>
@@ -94,22 +93,19 @@ See the following sections for detailed descriptions for each column in the [dat
   <td style="word-wrap: break-word; white-space: normal;">Note displayed to participants (e.g. <i>Enter weight in pounds.</i>)</td>
 </tr>
 <tr>
-  <td><code>unit</code>
-  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td><code>unit</code></td>
   <td>Unit</td>
   <td style="word-wrap: break-word; white-space: normal;">Unit of measurement (e.g. <i>m, cm², lbs</i>)</td>
 </tr>
 <!-- VARIABLE TYPES -->
 <tr>
-  <td><code>type_var</code>
-  <i class="bi bi-filetype-json" style="font-size: 1.2em; margin-left: 6px;"></i></td>
+  <td><code>type_var</code></td>
   <td>Variable type</td>
   <td style="word-wrap: break-word; white-space: normal;">Variable types include: <i>administrative | item | derived item | summary score</i><br>
   See <a href="#type_var">Variable Type Definitions</a> below</td>
 </tr>
 <tr>
-  <td><code>type_data</code>
-  <i class="fa-solid fa-lock" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>type_data</code></td>
   <td>Data type</td>
   <td style="word-wrap: break-word; white-space: normal;">Data types include: <i>date | timestamp| time | <span class="tooltip">character<span class="tooltiptext">Only used for categorical columns</span></span> | text | integer | double</i></td>
 </tr>
@@ -156,10 +152,9 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 <!-- IDENTIFIERS & LINKS -->
 <tr>
-  <td><code>identifier_column</code>
-  <i class="fa-solid fa-lock" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>identifier_column</code></td>
   <td>Identifier column(s)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names for table/variable, including participant and session IDs and sometimes run ID - see <a href="../../datacuration/phenotypes/#table-organization" target="_blank">Table Organization</a> for details</td>
+  <td style="word-wrap: break-word; white-space: normal;">Columns used for participant identification (i.e. participant & session ID) - see <a href="../../datacuration/phenotypes/#table-organization" target="_blank">Table Organization</a> for details</td>
 </tr>
 <tr>
   <td><code>url_table</code></td>
@@ -221,7 +216,7 @@ See the following sections for detailed descriptions for each column in the [dat
 <td style="word-wrap: break-word; white-space: normal;">Data that gives context to the assessments, e.g. date, language, quality control, etc.</td>
 </tr>
 <tr>
-<td>derived item</td><td style="word-wrap: break-word; white-space: normal;">Derived from original participant data — for example, if a participant enters their height in separate fields for feet and inches, a derived variable could combine these into a single value representing total height in inches.</td>
+<td>derived item</td><td style="word-wrap: break-word; white-space: normal;">Derived from original participant data (e.g., combining separate entries for feet and inches into a single derived height variable in inches) - see <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a> for more examples</td>
 <tr>
 <td>item</td><td style="word-wrap: break-word; white-space: normal;">Original data provided by the participant, e.g. questions in a questionnaire</td>
 </tr>
@@ -231,37 +226,11 @@ See the following sections for detailed descriptions for each column in the [dat
 </table>
 </div>
 
-<!-- JSON -->
-<div id="json" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i style="font-size: 1.1em;" class="bi bi-filetype-json"></i></span>
-  <span class="text-with-link">
-  <span class="text">Corresponding Data Dictionary Elements in JSONs</span>
-  <a class="anchor-link" href="#json" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines">
-<thead>
-  <tr><th>Data Dictionary Element</th><th>Corresponding Element in BIDS JSON</th>
-  </tr>
-</thead>
-<tbody>
-<tr><td><code>table_label</code></td><td><i>MeasurementToolMetadata > Description</i></td></tr>
-<tr><td><code>label</code></td><td><i>Description</i></td></tr>
-<tr><td><code>unit</code></td><td><i>Units</i></td></tr>
-<tr><td><code>type_var</code></td><td><i>Derivative</i> set to <i>True</i> in JSON if <code>type_var</code> = <i>summary score</i> or <i>derived item</i></td></tr>
-</tbody>
-</table>
-</div>
-
 <!-- Lasso User warnings -->
 <div id="add-columns" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
-  <span class="text">Lasso User Warnings - Blank Columns & Additional Columns with Download</span>
+  <span class="text">NBDC Data Access Platform User Warnings - Blank & Additional Columns with Download</span>
   <a class="anchor-link" href="#add-columns" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -269,14 +238,16 @@ See the following sections for detailed descriptions for each column in the [dat
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>Blank Columns in Lasso Query Tool</b><br>
-Some columns are currently blank in the Lasso Dictionary Query Tool and will be populated in the future. This includes <b>atlas</b>, <b>metric</b>, <b>sub_domain</b>, and column names appended with <b>*_es</b>. Other columns are blank because they are not applicable to the HBCD study data (e.g. <b>nda/deap/redcap</b>). Inapplicable columns will be removed in the future and can safely be ignored, but in the meantime still appear in Lasso Portal queries. <b>Only populated/applicable columns are included in the Data Dictionary overview above.</b></p>
+<p><b>Blank Columns in NBDC Data Access Platform Query Tool</b><br>
+Query Tool searches within the NBDC Data Access Platform currently display columns that are not applicable to HBCD study data, including columns ending with <code>nda</code>, <code>deap</code>, and <code>redcap</code>. Inapplicable columns will be removed in the future and can safely be ignored. Note that columns may also be blank if they have yet to be populated (currently the case for <b>sub_domain</b>, <b>atlas</b>, and <b>metric</b> for example). <b>For reference, only applicable columns are included in the Data Dictionary overview above.</b></p>
 <p><b>Additional Columns ('cohort' & 'site') Not Defined in Data Dictionary</b><br>
 Dataset downloads contain 2 additional columns not described in the data dictionary. This includes <b>cohort</b> and <b>site</b>, identical to <a href="../../instruments/demo/visitinfo">Visit Information</a> variables <b>par_visit_data_&lt;<i>cohort|site</i>&gt;</b>.</p>
 </div>
 
 ## Levels Table
-
+<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
+<i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases
+</p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px; border: 1px solid #4fe2ffff; border-radius: 8px;">
 <thead>
   <tr>
@@ -287,20 +258,17 @@ Dataset downloads contain 2 additional columns not described in the data diction
 </thead>
 <tbody>
   <tr>
-    <td><code>name</code>
-    <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+    <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>name</code></td>
     <td>&nbsp;</td>
     <td>Name of the categorical column/variable/question for which value/label pairs are reported</td>
   </tr>
   <tr>
-    <td><code>value</code>
-    <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+    <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>value</code></td>
     <td>left hand side</td>
     <td>Value of the level (<b>e.g. "1"</b>)</td>
   </tr>
   <tr>
-    <td><code>order_level</code>
-    <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+    <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>order_level</code></td>
     <td></td>
     <td>Order of response option as displayed to participants (and in data) (<b>e.g. "2"</b>)</td>
   </tr>
