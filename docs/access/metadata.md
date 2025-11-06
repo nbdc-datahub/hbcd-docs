@@ -45,6 +45,21 @@ See the following sections for detailed descriptions for each column in the [dat
   <i>Behavior/Child-Caregiver Interaction | BioSpecimens | Neurocognition & Language | Novel Tech | Physical Health | Pregnancy/Exposure Including Substance | Social and Environmental Determinants | Tabular EEG | Tabular Imaging</i></td>
 </tr>
 <tr>
+  <td><code>sub_domain</code></td>
+  <td>Subdomain</td>
+  <td style="word-wrap: break-word; white-space: normal;">Domain subcategory (e.g. <i>Structural MRI</i> within the <i>Imaging</i> domain)</td>
+</tr>
+<tr>
+  <td><code>metric</code></td>
+  <td>Metric</td>
+  <td style="word-wrap: break-word; white-space: normal;">Imaging & EEG only: Specific metric assessed (e.g. <i>Cortical Thickness</i>)</td>
+</tr>
+<tr>
+  <td><code>atlas</code></td>
+  <td>Atlas</td>
+  <td style="word-wrap: break-word; white-space: normal;">Imaging only: Atlas used to derive parcellated structural measures and functional timeseries (e.g., <i>Gordon</i> - <a href="../../instruments/mri/#parc" target="_blank">see full list</a>)</td>
+</tr>
+<tr>
   <td><code>source</code></td>
   <td>Source</td>
   <td style="word-wrap: break-word; white-space: normal;">Source of information. Source values include:<br>

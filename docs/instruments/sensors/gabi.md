@@ -36,8 +36,13 @@ The HBCD data release includes Infant Heart Rate Wearable Sensor data acquired d
 <p>Note that infant heart rate sensor data may contain non-consecutive samples. The most likely reason is an inconsistent connection between the sensor and the receiver tablet, which can result in missing samples. Always refer to the timestamps embedded in the files to reconstruct the temporal sequence of the data. Infant heart rate sensor recordings may also be shorter than the planned 72 hours, which can occur due to human error, technical issues, or a parent/legal guardian deciding to discontinue data collection.</p> 
 </div>
 
-Infant heart rate data collected from wearable sensors includes **file-based** data (raw and processed data files in modality-specific formats).      
-<i>See the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for a full explanation of these data types.</i>
+Infant heart rate data collected from wearable sensors includes **file-based** data (raw and processed data files in modality-specific formats). <i>See <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for an explanation of these data types.</i>
+
+
+
+For the heart rate sensor, 1 comma-separated values (CSV) file for each 72-hour data collection is generated. The CSV files are uploaded into LORIS. Following BIDS physiological and other continuous recordings extension, (Jeung et al., 2024) files are converted to Tab Separated Values (TSV) and associated metadata are generated. Raw data in BIDS format and processed derivatives (listed in Infant Sleep (by Measuring Heart Rate)) will be released in data releases, along with sensor questionnaire data. The raw data contain the heart rate (HR), the blood oxygen saturation (SpO2), and the respiratory rate (RR), along with their respective measures of reliability, timestamps and metadata.
+
+
 
 - <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> stored under subject- and session-specific <code>gabi/</code> folders
  - <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#derivatives" target="_blank">Derivatives</a> will be available in a future release 
