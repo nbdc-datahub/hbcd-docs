@@ -156,7 +156,6 @@ nav:
             - Quantitative MRI: instruments/mri/qmri.md
             - Magnetic Resonance Spectroscopy: instruments/mri/mrs.md 
         - Novel Tech & Wearable Sensors:
-            - 🚧 Infant Heart Rate (GABI): instruments/sensors/gabi.md
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
         - Processing & Analytic Standards: 

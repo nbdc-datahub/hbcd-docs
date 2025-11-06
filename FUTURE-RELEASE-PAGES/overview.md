@@ -67,3 +67,18 @@
   <td style="word-wrap: break-word; white-space: normal;">Mullen Receptive & Expressive + Observation</td>
   <td>Language</td>
 </tr>
+
+## Novel Tech
+
+### GABI
+
+yaml: - 🚧 Infant Heart Rate (GABI): instruments/sensors/gabi.md
+
+index page table:
+
+<tr>
+    <td></td>
+    <td><a href="sensors/gabi/" target="_blank">Infant Heart Rate (GABI) - Electrocardiography</td>
+    <td><a href="sensors/gabi/#rawbids" target="_blank"><code>gabi/</code></a></td>
+    <td><i>NA</i></td>
+</tr>

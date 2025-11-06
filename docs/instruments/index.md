@@ -890,12 +890,6 @@ Expand the sections below to see a list of measures associated with each domain 
 <tbody>
 <tr>
     <td></td>
-    <td><a href="sensors/gabi/" target="_blank">Infant Heart Rate (GABI) - Electrocardiography</td>
-    <td><a href="sensors/gabi/#rawbids" target="_blank"><code>gabi/</code></a></td>
-    <td><i>NA</i></td>
-</tr>
-<tr>
-    <td></td>
     <td><a href="sensors/wearsensors/" target="_blank">Infant Leg Motion - Accelerometry</td>
     <td><a href="sensors/wearsensors/#rawbids" target="_blank"><code>motion/</code></a></td>
     <td><a href="sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a></td>
