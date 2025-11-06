@@ -275,7 +275,7 @@ See the following sections for detailed descriptions for each column in the [dat
 <div id="add-columns" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
-  <span class="text">Lasso User Warnings - Blank Columns & Additional Columns with Download</span>
+  <span class="text">NBDC Data Access Platform User Warnings - Blank & Additional Columns with Download</span>
   <a class="anchor-link" href="#add-columns" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -283,8 +283,8 @@ See the following sections for detailed descriptions for each column in the [dat
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>Blank Columns in Lasso Query Tool</b><br>
-Some columns are currently blank in the Lasso Dictionary Query Tool and will be populated in the future. This includes <b>atlas</b>, <b>metric</b>, <b>sub_domain</b>, and column names appended with <b>*_es</b>. Other columns are blank because they are not applicable to the HBCD study data (e.g. <b>nda/deap/redcap</b>). Inapplicable columns will be removed in the future and can safely be ignored, but in the meantime still appear in Lasso Portal queries. <b>Only populated/applicable columns are included in the Data Dictionary overview above.</b></p>
+<p><b>Blank Columns in NBDC Data Access Platform Query Tool</b><br>
+Query Tool searches within the NBDC Data Access Platform currently display columns that are not applicable to HBCD study data, including columns ending with <code>nda</code>, <code>deap</code>, and <code>redcap</code>. Inapplicable columns will be removed in the future and can safely be ignored. Note that columns may also be blank if they have yet to be populated (currently common for columns ending with <code>*_es</code>). <b>For reference, only applicable columns are included in the Data Dictionary overview above.</b></p>
 <p><b>Additional Columns ('cohort' & 'site') Not Defined in Data Dictionary</b><br>
 Dataset downloads contain 2 additional columns not described in the data dictionary. This includes <b>cohort</b> and <b>site</b>, identical to <a href="../../instruments/demo/visitinfo">Visit Information</a> variables <b>par_visit_data_&lt;<i>cohort|site</i>&gt;</b>.</p>
 </div>
