@@ -10,7 +10,7 @@
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
     <div class="info-value">
-      Bayley Scales of Infant and Toddler Development, Fourth Edition (<i>BSID-4</i>, <i>Bayley</i>)
+      Bayley Scales of Infant and Toddler Development, Fourth Edition (<i>BSID-4</i>, <i>Bayley-4</i>)
     </div>
   </div>
   <div class="info-row">
