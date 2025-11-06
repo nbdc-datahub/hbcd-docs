@@ -24,17 +24,6 @@
 ### Biospec:
 
   <tr>
-    <td rowspan="2" style="text-align: left;"><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
-    <td style="text-align: left;">Maternal</td>
-    <td style="text-align: left;">GWAS, EWAS, Transcriptome</td>
-    <td style="text-align: left;"><code>bio_bm_biosample_saliva</code></td>
-  </tr>
-  <tr>
-    <td style="text-align: left;">Child</td>
-    <td style="text-align: left;">GWAS, EWAS, Transcriptome</td>
-    <td style="text-align: left;"><code>bio_ch_biosample_saliva</code></td>
-  </tr>
-  <tr>
     <td style="text-align: left;"><a href="biospec/blood" target="_blank">Blood</a></td>
     <td style="text-align: left;">Maternal</td>
     <td style="text-align: left;">Metals, nutrition, toxins, proteins</td>

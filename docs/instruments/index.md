@@ -268,7 +268,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-  <td><a href="neurocog/bayley-4" target="_blank">Bayley-4 Scales of Infant & Toddler Development</a></td>
+  <td><a href="neurocog/bayley-4" target="_blank">Bayley-4 Scales</a></td>
   <td></td>
   <td style="word-wrap: break-word; white-space: normal;">Child Development (Cognitive, Language, and Motor)</td>
   <td><code>nc_ch_bayley</code></td>
