@@ -212,10 +212,9 @@ See the following sections for detailed descriptions for each column in the [dat
 </thead>
 <tbody>
 <tr>
-<td>administrative</td>
-<td style="word-wrap: break-word; white-space: normal;">Data that gives context to the assessments, e.g. date, language, quality control, etc.</td>
+<td>administrative</td><td style="word-wrap: break-word; white-space: normal;">Data that gives context to the assessments, e.g. date, language, quality control, etc.</td>
 </tr>
-<tr><td>derived item</td><td style="word-wrap: break-word; white-space: normal;">Derived from original data provided by the participant - e.g. if the participant filled in two fields to enter their height in feet and inches, a derived item could integrate this information into one field that provides the height in inches</td></tr>
+<tr><td>derived item</td><td style="word-wrap: break-word; white-space: normal;">Derived from original participant data (e.g., combining separate entries for feet and inches into a single derived height variable in inches) - see <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a> for more examples</td></tr>
 <tr>
 <td>item</td><td style="word-wrap: break-word; white-space: normal;">Original data provided by the participant, e.g. questions in a questionnaire</td>
 </tr>
@@ -296,3 +295,4 @@ Dataset downloads contain 2 additional columns not described in the data diction
 <div class="warning-collapsible-content">
 <p>In the Basic Demographics table (<code>sed_basic_demographics</code>), the variable <code>recruitment_site</code> includes three additional levels that do not represent study sites: <code>29=sampled</code>; <code>30=USDTL</code>; <code>31=BAH</code>. These levels, used for internal purposes, appear only as possible values in the data dictionary, but are not used in the actual tabulated data. In other words, all participant records in the Basic Demographics table will have <code>recruitment_site</code> values ranging only from 0 to 28, corresponding to the study sites - see full list of recruitment sites <a href="../../instruments/demo/basicdemo/#rec-sites" target="_blank">here</a>.</p>
 </div>
+
