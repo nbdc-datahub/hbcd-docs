@@ -189,8 +189,6 @@ See the following sections for detailed descriptions for each column in the [dat
 </tbody>
 </table>
 
-#### Additional Information
-
 <!-- Type variable values -->
 <div id="type_var" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i style="margin-right: 4px;" class="fa fa-book"></i></span>
