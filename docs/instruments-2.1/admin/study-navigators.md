@@ -1,4 +1,6 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
+<p style="color: red;">🚧 LUCI ADMIN NOTES:<br>
+ - currently under RUD review: to be included in patch release 2.1
+</p>
 
 # Study Navigator Contact Form
 

@@ -60,11 +60,6 @@ Expand the sections below to see a list of measures associated with each domain 
   </thead>
   <tbody>
   <tr>
-    <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
-    <td>Study Navigation</td>
-    <td><i>study_nav/</i></td>
-  </tr>
-  <tr>
     <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
     <td><i>tic/</i></td>
