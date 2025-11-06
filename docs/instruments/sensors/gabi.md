@@ -2,7 +2,7 @@
 
 # Infant Heart Rate (GABI)
 
-The HBCD data release includes Infant Heart Rate Wearable Sensor data acquired via Gabi SmartCare during visits V02 and V03.
+The HBCD data release includes Infant Heart Rate Wearable Sensor data acquired during visits V02 and V03.
 
 ## Release Data
 
