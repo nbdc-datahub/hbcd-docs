@@ -64,16 +64,8 @@
 
 ### Neurocog
 
-- 🚧 Bayley-4: instruments/neurocog/bayley-4.md
 - ⚠️ NIH Baby Toolbox: instruments/neurocog/nih-btb.md
 
-<tr>
-  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td><a href="neurocog/bayley-4" target="_blank">Bayley-4</a></td>
-  <td></td>
-  <td style="word-wrap: break-word; white-space: normal;">Child Development (Cognitive, Language, and Motor)</td>
-  <td><code>nc_ch_bayley</code></td>
-</tr>
 
 <tr>
   <td rowspan="2"><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>

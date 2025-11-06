@@ -1,6 +1,4 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW (CURRENTLY REMOVED FROM INCLUSION IN 2.0 HOWEVER)</i></p>
-
-<p style="color: red;">Workgroup - see suggested edits to <a href="#administration-quality-control">QC section</a> below</p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW - potentially exclude from 2.0 or release without item-level score fields - under discussion</i></p>
 
 # Bayley Scales of Infant and Toddler Development
 

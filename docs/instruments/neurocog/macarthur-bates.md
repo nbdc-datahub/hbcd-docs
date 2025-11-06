@@ -2,26 +2,24 @@
 
 # MacArthur-Bates Communicative Development Inventories
 
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th><i class="fa-solid fa-maximize"></i> Instrument</th>
+  <th>Instrument</th>
   <th>Table</th>
-  <th><i class="fa-solid fa-tape"></i> Construct</th>
-  <th><i class="fa fa-table"></i> Table Name</th>
+  <th>Construct</th>
+  <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">MacArthur-Bates Communicative Development Inventories, Words and Gestures, Web Version, English and Spanish (<i>CDI-WG</i>, <i>Web-CDI-WG</i>)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Words</td>
-  <td>Language Development in Child</td>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">MacArthur-Bates CDI, Words and Gestures, Web Version (<i>CDI-WG</i>, <i>Web-CDI-WG</i>)</td>
+  <td>Words</td>
+  <td rowspan="2">Language<br>Development</td>
   <td><code>nc_ch_cdiws</code></td>
 </tr>
 <tr>
-  <td style="word-wrap: break-word; white-space: normal;">Gestures</td>
-  <td>Language Development in Child</td>
+  <td>Gestures</td>
   <td><code>nc_ch_cdiwg</code></td>
 </tr>
 </tbody>
@@ -88,7 +86,7 @@
 
 ## Instrument Details
 
-The MacArthur-Bates Communicative Development Inventories, Words and Gestures is a caregiver -report assessment of children’s early language development, including expressive and receptive vocabulary and gesture. In HBCD, the Words and Gestures form is administered up to 16 months of age.  Beginning at 16 months of age, the Words and Gestures form the Words and Sentences form. See details about both forms at [https://mb-cdi.stanford.edu/](https://mb-cdi.stanford.edu/).
+The **MacArthur-Bates Communicative Development Inventories, Words and Gestures**, Web Version, English and Spanish is a caregiver -report assessment of children’s early language development, including expressive and receptive vocabulary and gesture. In HBCD, the Words and Gestures form is administered up to 16 months of age.  Beginning at 16 months of age, the Words and Gestures form the Words and Sentences form. See details about both forms at [https://mb-cdi.stanford.edu/](https://mb-cdi.stanford.edu/).
 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">

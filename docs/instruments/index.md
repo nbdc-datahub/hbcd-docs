@@ -268,6 +268,12 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
+  <td><a href="neurocog/bayley-4" target="_blank">Bayley-4 Scales of Infant & Toddler Development</a></td>
+  <td></td>
+  <td style="word-wrap: break-word; white-space: normal;">Child Development (Cognitive, Language, and Motor)</td>
+  <td><code>nc_ch_bayley</code></td>
+</tr>
+<tr>
   <td rowspan="2"><a href="neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a></td>
   <td rowspan="2">Infant Form</td>
   <td>Language Development (Words)</td>
@@ -278,7 +284,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>nc_ch_cdiwg</code></td>
 </tr>
 <tr>
-  <td><a href="neurocog/mlds" target="_blank">Multilingual Language Development Screener (MLDS)</a></td>
+  <td><a href="neurocog/mlds" target="_blank">MLDS</a></td>
   <td></td>
   <td>Multilingual Exposure</td>
   <td><code>ncl_ch_mlds</code></td>
