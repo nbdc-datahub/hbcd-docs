@@ -2,18 +2,6 @@
 
 ## Study Instruments Overview tables
 
-### Admin
-
-TIC
-
-yaml:
-        - 🚧 Transition in Care Screener: instruments/admin/transitions-in-care.md
-<tr>
-  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-table"></i><span class="tooltiptext">Tabulated Data</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
-  <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
-  <td><code>TBD</code></td>
-</tr>
 
 ### BCGI:
 

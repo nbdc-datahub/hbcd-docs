@@ -77,6 +77,7 @@ nav:
     - Age Variables: instruments/agevariables.md
     - Administrative:
         - 🚧 Study Navigators Contact Form: instruments/admin/study-navigators.md
+        - 🚧 Transitions in Care: instruments/ONHOLD/transitions-in-care.md
     - Demographics:
         - ⚠️ Basic Demographics: instruments/demo/basicdemo.md
         - Visit Information: instruments/demo/visitinfo.md
@@ -161,7 +162,6 @@ nav:
             - 🚧 MRI Processing: instruments/processing/mri-proc.md
             - Pipeline Software Standards: instruments/processing/standards.md
     - ON HOLD for 2.0:
-        - ❗ Transitions in Care: instruments/ONHOLD/transitions-in-care.md
         - ❗ Bayley-4: instruments/ONHOLD/bayley-4.md
         - ❗ Infant Heart Rate (GABI): instruments/ONHOLD/gabi.md
   - Release Notes: 
