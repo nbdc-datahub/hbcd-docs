@@ -228,7 +228,7 @@ See the following sections for detailed descriptions for each column in the [dat
 <div id="add-columns" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
-  <span class="text">NBDC Data Access Platform User Warnings - Blank & Additional Columns with Download</span>
+  <span class="text">NBDC Data Access Platform User Warnings - Blank Columns in Query Tool</span>
   <a class="anchor-link" href="#add-columns" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -236,10 +236,7 @@ See the following sections for detailed descriptions for each column in the [dat
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>Blank Columns in NBDC Data Access Platform Query Tool</b><br>
-Query Tool searches within the NBDC Data Access Platform currently display columns that are not applicable to HBCD study data, including columns ending with <code>nda</code>, <code>deap</code>, and <code>redcap</code>. Inapplicable columns will be removed in the future and can safely be ignored. Note that columns may also be blank if they have yet to be populated (currently common for columns ending with <code>*_es</code>). <b>For reference, only applicable columns are included in the Data Dictionary overview above.</b></p>
-<p><b>Additional Columns ('cohort' & 'site') Not Defined in Data Dictionary</b><br>
-Dataset downloads contain 2 additional columns not described in the data dictionary. This includes <b>cohort</b> and <b>site</b>, identical to <a href="../../instruments/demo/visitinfo">Visit Information</a> variables <b>par_visit_data_&lt;<i>cohort|site</i>&gt;</b>.</p>
+<p>Dictionary Query Tool searches within the NBDC Data Access Platform currently display columns that are not applicable to HBCD study data, including columns ending with <code>nda</code>, <code>deap</code>, and <code>redcap</code>. Inapplicable columns will be removed in the future and can safely be ignored. Note that columns may also be blank if they have yet to be populated (currently common for columns ending with <code>*_es</code>). <b>For reference, only applicable columns are included in the Data Dictionary overview above.</b></p>
 </div>
 
 ## Levels Table
@@ -270,15 +267,8 @@ Dataset downloads contain 2 additional columns not described in the data diction
     <td></td>
     <td>Order of response option as displayed to participants (and in data) (<b>e.g. "2"</b>)</td>
   </tr>
-  <tr>
-    <td><code>label</code></td>
-    <td>right hand side</td>
-    <td>Label of the level (<b>e.g. "Yes"</b>)</td>
-  </tr>
-  <tr>
-    <td><code>label_es</code></td>
-    <td></td>
-    <td>Label of the level (Spanish) (<b>e.g. "Si"</b>)</td>
+  <tr><td><code>label</code> / <code>label_es</code></td><td>right hand side</td>
+    <td>Label of the level in English/Spanish (<b>e.g. "Yes" / "Si"</b>)</td>
   </tr>
 </table>
 
@@ -293,6 +283,61 @@ Dataset downloads contain 2 additional columns not described in the data diction
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>In the Basic Demographics table (<code>sed_basic_demographics</code>), the variable <code>recruitment_site</code> includes three additional levels that do not represent study sites: <code>30=Sampled</code>; <code>31=USDTL</code>; <code>32=BAH</code>. These levels, used for internal purposes, appear only as possible values in the data dictionary, but are not used in the actual tabulated data. In other words, all participant records in the Basic Demographics table will have <code>recruitment_site</code> values ranging only from 0 to 29, corresponding to the study sites - see full list of recruitment sites <a href="../../instruments/demo/basicdemo/#rec-sites" target="_blank">here</a>.</p>
+<p>In the Basic Demographics table (<code>sed_basic_demographics</code>), the variable <code>recruitment_site</code> includes three additional levels that do not represent study sites: <code>30=Sampled</code>; <code>31=USDTL</code>; <code>32=BAH</code>. These levels, used for internal purposes, appear only as possible values in the data dictionary, but are not used in the actual tabulated data. In other words, all participant records in the Basic Demographics table will have <code>recruitment_site</code> values ranging only from 0 to 29, corresponding to the study sites - see full list of recruitment sites <a href="#sites">below</a>.</p>
 </div>
 
+## Additional Information: Site & Cohort
+
+Datasets downloaded from the NBDC Data Access Platform include two additional columns not described in the NBDC Data Dictionary: `cohort` and `site`, derived from the <a href="../../instruments/demo/visitinfo" target="_blank">Visit Information</a> variables `par_visit_data_cohort` and `par_visit_data_site`.
+
+Click to expand the following section to see the global mapping between site IDs used to specify visit-specific site information in `site`/`par_visit_data_site` as well as recruitment sites included in <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a> (`sed_basic_demographics_recruitment_site`).
+
+<div id="sites" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i style="font-size: 0.9em;" class="fa-solid fa-location-dot"></i></span>
+  <span class="text-with-link">
+  <span class="text">Site IDs</span>
+  <a class="anchor-link" href="#sites" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="table-no-vertical-lines" style="width:100%;border-collapse:collapse;table-layout:fixed;">
+<thead>
+<tr style="border-bottom:2px solid #ccc;"><th>Basic Demographics Site Codes</th><th>Site ID</th><th>Site</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>hbcdsite64</td><td>Arkansas Children's Hospital (site 1)</td></tr>
+<tr><td>1</td><td>hbcdsite02</td><td>Arkansas Children's Hospital (site 2 - UAMS)</td></tr>
+<tr><td>2</td><td>hbcdsite48</td><td>Boston Children's Hospital - Harvard Medical School</td></tr>
+<tr><td>3</td><td>hbcdsite95</td><td>Cedars Sinai (site 1)</td></tr>
+<tr><td>4</td><td>hbcdsite23</td><td>Cedars Sinai (site 2 - UCLA)</td></tr>
+<tr><td>5</td><td>hbcdsite07</td><td>Children's Hospital Los Angeles</td></tr>
+<tr><td>6</td><td>hbcdsite09</td><td>Children's Hospital of Philadelphia</td></tr>
+<tr><td>7</td><td>hbcdsite04</td><td>Cincinnati Children's Hospital</td></tr>
+<tr><td>8</td><td>hbcdsite20</td><td>Emory University School of Medicine</td></tr>
+<tr><td>9</td><td>hbcdsite52</td><td>Johns Hopkins University</td></tr>
+<tr><td>10</td><td>hbcdsite06</td><td>New York University</td></tr>
+<tr><td>11</td><td>hbcdsite69</td><td>Northwestern University</td></tr>
+<tr><td>12</td><td>hbcdsite72</td><td>Oklahoma State</td></tr>
+<tr><td>13</td><td>hbcdsite93</td><td>Oregon Health &amp; Science University</td></tr>
+<tr><td>14</td><td>hbcdsite78</td><td>Pennsylvania State University (site 1 - UP)</td></tr>
+<tr><td>15</td><td>hbcdsite53</td><td>Pennsylvania State University (site 2 - COM)</td></tr>
+<tr><td>16</td><td>hbcdsite79</td><td>University of Alabama at Birmingham (site 1)</td></tr>
+<tr><td>17</td><td>hbcdsite28</td><td>University of Alabama at Birmingham (site 2 - UAT)</td></tr>
+<tr><td>18</td><td>hbcdsite77</td><td>University of California San Diego</td></tr>
+<tr><td>19</td><td>hbcdsite92</td><td>University of Maryland</td></tr>
+<tr><td>20</td><td>hbcdsite70</td><td>University of Minnesota</td></tr>
+<tr><td>21</td><td>hbcdsite84</td><td>University of New Mexico</td></tr>
+<tr><td>22</td><td>hbcdsite29</td><td>University of North Carolina (site 1)</td></tr>
+<tr><td>23</td><td>hbcdsite27</td><td>University of North Carolina (site 2 - Wake Forest)</td></tr>
+<tr><td>24</td><td>hbcdsite67</td><td>University of Vermont</td></tr>
+<tr><td>25</td><td>hbcdsite57</td><td>University of Wisconsin</td></tr>
+<tr><td>26</td><td>hbcdsite35</td><td>Vanderbilt University</td></tr>
+<tr><td>27</td><td>hbcdsite26</td><td>Washington University in St. Louis</td></tr>
+<tr><td>28</td><td>hbcdsite43</td><td>Virginia Tech</td></tr>
+<tr><td>29</td><td>hbcdsite42</td><td>University of Florida</td></tr>
+</tbody>
+</table>
+</div>
