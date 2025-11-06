@@ -222,32 +222,6 @@ See the following sections for detailed descriptions for each column in the [dat
 </table>
 </div>
 
-<!-- JSON -->
-<div id="json" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i style="font-size: 1.1em;" class="bi bi-filetype-json"></i></span>
-  <span class="text-with-link">
-  <span class="text">Corresponding Data Dictionary Elements in JSONs</span>
-  <a class="anchor-link" href="#json" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines">
-<thead>
-  <tr><th>Data Dictionary Element</th><th>Corresponding Element in BIDS JSON</th>
-  </tr>
-</thead>
-<tbody>
-<tr><td><code>table_label</code></td><td><i>MeasurementToolMetadata > Description</i></td></tr>
-<tr><td><code>label</code></td><td><i>Description</i></td></tr>
-<tr><td><code>unit</code></td><td><i>Units</i></td></tr>
-<tr><td><code>type_var</code></td><td><i>Derivative</i> set to <i>True</i> in JSON if <code>type_var</code> = <i>summary score</i> or <i>derived item</i></td></tr>
-</tbody>
-</table>
-</div>
-
 <!-- Lasso User warnings -->
 <div id="add-columns" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
