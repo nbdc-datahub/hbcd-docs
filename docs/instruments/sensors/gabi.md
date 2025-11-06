@@ -1,17 +1,6 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW (CURRENTLY REMOVED FROM INCLUSION IN 2.0 HOWEVER)</i></p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW</i></p>
 
-<ul style="color: red;">
-  <li><b>Workgroup</b>: Novel Tech & Wearables</li>
-  <li><b>Contact</b>: nicolo.pini92@gmail.com</li>
-  <li><b>Additional comments/questions you have about this form</b>: my institutional email is not gmail based so I could not submit this form using np2600@cumc.columbia.edu (which would be the preferred email) and using my person one.</li>
-  <li><b>NOTE FROM LUCI</b>: unclear whether this data will indeed by ready for R2.0, but will be included as raw BIDS data only. Follow up with Cecile to get raw BIDS file tree and BIDS conversion procedures. However, the essential info below is ready for RUDC review</li>
-</ul>
-</ul>
-</p>
-
-------------------------------------------------------------
-
-# Infant Heart Rate Wearable Sensor
+# Infant Heart Rate (GABI)
 
 The HBCD data release includes Infant Heart Rate Wearable Sensor data acquired during visits V02 and V03.
 
@@ -51,7 +40,7 @@ Infant heart rate data collected from wearable sensors includes **file-based** d
 <i>See the <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for a full explanation of these data types.</i>
 
 - <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> stored under subject- and session-specific <code>gabi/</code> folders
- - <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#processed-derivatives" target="_blank">Processed derivatives</a> will be available in a future release 
+ - <i class="fas fa-cog"></i> <a href="../../../datacuration/file-based-data/#derivatives" target="_blank">Derivatives</a> will be available in a future release 
 
 <div id="rawbids" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>

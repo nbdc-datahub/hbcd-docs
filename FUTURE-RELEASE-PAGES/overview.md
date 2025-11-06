@@ -67,18 +67,3 @@
   <td style="word-wrap: break-word; white-space: normal;">Mullen Receptive & Expressive + Observation</td>
   <td>Language</td>
 </tr>
-
-### Novel Tech & Wearable Sensors:
-
-- 🚧 Infant Heart Rate Sensor: instruments/sensors/gabi.md
-
-<tr>
-  <td>Infant Heart Rate</td>
-  <td><span class="tooltip tooltip-right"><i class="fa-solid fa-folder-open"></i><span class="tooltiptext">File-Based Data</span></span></td>
-  <td><a href="sensors/gabi/#rawbids" target="_blank">Raw BIDS</a></td>
-  <td>Regulation (Sleep/Wake)/<br>Autonomic Function</td>
-  <td><i>rawdata/sub-{ID}/ses-{V0X}/gabi/</i></td>
-</tr>
-
-
- 

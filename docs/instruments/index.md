@@ -3,7 +3,7 @@ In this section we provide a brief overview of each study instrument provided in
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">All surveys used in the HBCD Study were translated to Spanish by <a href="https://burgtranslations.com/our-services/">BURG Translations</a></span>
+  <span class="text">All surveys used in the HBCD Study were translated to Spanish by <a href="https://burgtranslations.com/our-services/">BURG Translations</a> unless stated otherwise.</span>
 </div>
 <p></p>
 
@@ -890,7 +890,13 @@ Expand the sections below to see a list of measures associated with each domain 
 <tbody>
 <tr>
     <td></td>
-    <td><a href="sensors/wearsensors/" target="_blank">Infant Leg Motion</td>
+    <td><a href="sensors/gabi/" target="_blank">Infant Heart Rate (GABI) - Electrocardiography</td>
+    <td><a href="sensors/gabi/#rawbids" target="_blank"><code>gabi/</code></a></td>
+    <td><i>NA</i></td>
+</tr>
+<tr>
+    <td></td>
+    <td><a href="sensors/wearsensors/" target="_blank">Infant Leg Motion - Accelerometry</td>
     <td><a href="sensors/wearsensors/#rawbids" target="_blank"><code>motion/</code></a></td>
     <td><a href="sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a></td>
 </tr>
@@ -915,4 +921,5 @@ Expand the sections below to see a list of measures associated with each domain 
 </tbody>
 </table>
 </div>
+
 
