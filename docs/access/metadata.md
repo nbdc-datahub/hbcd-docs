@@ -8,6 +8,9 @@
 See the following sections for detailed descriptions for each column in the [data dictionary](#data-dictionary-columns) and [levels table](#levels-table).
 
 ## Data Dictionary Columns
+<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
+<i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases
+</p>
 <table class="compact-table" style="font-size: 14px; border: 1px solid #4fe2ffff; border-radius: 8px;">
 <thead>
 <tr>
@@ -52,7 +55,7 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 <!-- TABLE STRUCTURE -->
 <tr>
-  <td><code>table_name</code>&nbsp; <span class="tooltip tooltip-right"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
+  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>table_name</code></td>
   <td>Table name</td>
   <td style="word-wrap: break-word; white-space: normal;">Coded table name, e.g. <code>sed_bm_demo</code></td>
 </tr>
@@ -63,7 +66,7 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 <!-- VARIABLE METADATA -->
 <tr>
-  <td><code>name</code>&nbsp; <span class="tooltip tooltip-right"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
+  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>name</code></td>
   <td>Variable name</td>
   <td style="word-wrap: break-word; white-space: normal;">Coded variable name within a table (e.g. <code>sed_bm_demo_edu_001</code>)</td>
 </tr>
@@ -73,10 +76,10 @@ See the following sections for detailed descriptions for each column in the [dat
   <td style="word-wrap: break-word; white-space: normal;">Label for coded variable name (e.g. <i>Highest grade completed</i>)</td>
 </tr>
 <tr>
-  <td><code>instruction</code>
-  <i class="fas fa-exclamation-triangle" style="font-size: 1em; margin-left: 6px; color: orange;"></i></td>
+  <td><i class="fas fa-exclamation-triangle" style="font-size: 1em; margin-left: 6px; color: orange;"></i>&nbsp; <code>instruction</code></td>
   <td>Instruction</td>
-  <td style="word-wrap: break-word; white-space: normal;">Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>)<br>
+  <td style="word-wrap: break-word; white-space: normal;">
+    Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>)<br>
   <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Instruction text may be incomplete or misaligned! See <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a></b></td>
 </tr>
 <tr>
@@ -102,7 +105,7 @@ See the following sections for detailed descriptions for each column in the [dat
   See <a href="#type_var">Variable Type Definitions</a> below</td>
 </tr>
 <tr>
-  <td><code>type_data</code>&nbsp; <span class="tooltip tooltip-right"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
+  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>type_data</code></td>
   <td>Data type</td>
   <td style="word-wrap: break-word; white-space: normal;">Data types include: <i>date | timestamp| time | <span class="tooltip">character<span class="tooltiptext">Only used for categorical columns</span></span> | text | integer | double</i></td>
 </tr>
@@ -149,9 +152,9 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 <!-- IDENTIFIERS & LINKS -->
 <tr>
-  <td><code>identifier_column</code>&nbsp; <span class="tooltip tooltip-right"><i class="fa-solid fa-lock"></i><span class="tooltiptext">Values do not vary across releases</span></span></td>
+  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>identifier_column</code></td>
   <td>Identifier column(s)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Unique identifier column names for table/variable, including participant and session IDs and sometimes run ID - see <a href="../../datacuration/phenotypes/#table-organization" target="_blank">Table Organization</a> for details</td>
+  <td style="word-wrap: break-word; white-space: normal;">Columns used for participant identification (i.e. participant & session ID) - see <a href="../../datacuration/phenotypes/#table-organization" target="_blank">Table Organization</a> for details</td>
 </tr>
 <tr>
   <td><code>url_table</code></td>
@@ -241,7 +244,9 @@ Dataset downloads contain 2 additional columns not described in the data diction
 </div>
 
 ## Levels Table
-
+<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
+<i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases
+</p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px; border: 1px solid #4fe2ffff; border-radius: 8px;">
 <thead>
   <tr>
@@ -252,20 +257,17 @@ Dataset downloads contain 2 additional columns not described in the data diction
 </thead>
 <tbody>
   <tr>
-    <td><code>name</code>
-    <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+    <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>name</code></td>
     <td>&nbsp;</td>
     <td>Name of the categorical column/variable/question for which value/label pairs are reported</td>
   </tr>
   <tr>
-    <td><code>value</code>
-    <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+    <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>value</code></td>
     <td>left hand side</td>
     <td>Value of the level (<b>e.g. "1"</b>)</td>
   </tr>
   <tr>
-    <td><code>order_level</code>
-    <i class="fa-solid fa-lock" title="Does not vary across releases" style="font-size: 1em; margin-left: 6px; color: #727070ff;"></i></td>
+    <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>order_level</code></td>
     <td></td>
     <td>Order of response option as displayed to participants (and in data) (<b>e.g. "2"</b>)</td>
   </tr>
