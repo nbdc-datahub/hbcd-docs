@@ -55,7 +55,7 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 <!-- TABLE STRUCTURE -->
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>table_name</code></td>
+  <td><code>table_name</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
   <td>Table name</td>
   <td style="word-wrap: break-word; white-space: normal;">Coded table name, e.g. <code>sed_bm_demo</code></td>
 </tr>
@@ -66,7 +66,7 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 <!-- VARIABLE METADATA -->
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>name</code></td>
+  <td><code>name</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
   <td>Variable name</td>
   <td style="word-wrap: break-word; white-space: normal;">Coded variable name within a table (e.g. <code>sed_bm_demo_edu_001</code>)</td>
 </tr>
@@ -76,7 +76,7 @@ See the following sections for detailed descriptions for each column in the [dat
   <td style="word-wrap: break-word; white-space: normal;">Label for coded variable name (e.g. <i>Highest grade completed</i>)</td>
 </tr>
 <tr>
-  <td><i class="fas fa-exclamation-triangle" style="font-size: 1em; margin-left: 6px; color: orange;"></i>&nbsp; <code>instruction</code></td>
+  <td><code>instruction</code>&nbsp; <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i></td>
   <td>Instruction</td>
   <td style="word-wrap: break-word; white-space: normal;">
     Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>)<br>
@@ -105,7 +105,7 @@ See the following sections for detailed descriptions for each column in the [dat
   See <a href="#type_var">Variable Type Definitions</a> below</td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>type_data</code></td>
+  <td><code>type_data</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
   <td>Data type</td>
   <td style="word-wrap: break-word; white-space: normal;">Data types include: <i>date | timestamp| time | <span class="tooltip">character<span class="tooltiptext">Only used for categorical columns</span></span> | text | integer | double</i></td>
 </tr>
@@ -152,7 +152,7 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 <!-- IDENTIFIERS & LINKS -->
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>identifier_column</code></td>
+  <td><code>identifier_column</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
   <td>Identifier column(s)</td>
   <td style="word-wrap: break-word; white-space: normal;">Columns used for participant identification (i.e. participant & session ID) - see <a href="../../datacuration/phenotypes/#table-organization" target="_blank">Table Organization</a> for details</td>
 </tr>
@@ -251,22 +251,22 @@ See the following sections for detailed descriptions for each column in the [dat
 </thead>
 <tbody>
   <tr>
-    <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>name</code></td>
+    <td><code>name</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
     <td>&nbsp;</td>
     <td>Name of the categorical column/variable/question for which value/label pairs are reported</td>
   </tr>
   <tr>
-    <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>value</code></td>
+    <td><code>value</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
     <td>left hand side</td>
     <td>Value of the level (<b>e.g. "1"</b>)</td>
   </tr>
   <tr>
-    <td><i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp; <code>order_level</code></td>
+    <td><code>order_level</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
     <td></td>
     <td>Order of response option as displayed to participants (and in data) (<b>e.g. "2"</b>)</td>
   </tr>
   <tr><td><code>label</code> / <code>label_es</code></td><td>right hand side</td>
-    <td>Label of the level in English/Spanish (<b>e.g. "Yes" / "Si"</b>)</td>
+    <td>Label (English/Spanish) of the level (<b>e.g. "Yes" / "Si"</b>)</td>
   </tr>
 </table>
 
