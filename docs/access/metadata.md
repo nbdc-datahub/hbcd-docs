@@ -286,7 +286,7 @@ See the following sections for detailed descriptions for each column in the [dat
 
 ## Additional Information: Site & Cohort
 
-Datasets downloaded from the NBDC Data Access Platform include two additional columns derived from <a href="../../instruments/demo/visitinfo" target="_blank">Visit Information</a> that are not described in the NBDC Data Dictionary: 
+Datasets downloaded from the NBDC Data Access Platform include two additional columns, both derived from <a href="../../instruments/demo/visitinfo" target="_blank">Visit Information</a>, that are not described in the NBDC Data Dictionary: 
 
 - `cohort`: derived from `par_visit_data_cohort` - see <a href="../../instruments/demo/visitinfo/#cohort-caregiver-types" target="_blank">Cohort & Caregiver Types</a> for more information.
 - `site`: derived from `par_visit_data_site` reporting the site at which a given visit occurred (which may vary between visits). Note that this differs from `recruitment_site` in the <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a> data, which refers to  the site at time of recruitment. Click to expand the following section to see the global mapping between site ID coding across variables.
