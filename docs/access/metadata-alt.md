@@ -2,7 +2,8 @@
 
 ## Data Dictionary Columns
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases
+<i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases&nbsp;&nbsp;
+<i style="color: teal;" class="fa fa-language"></i>&nbsp;= Column available in Spanish (column name appended with <code>_es</code>)
 </p>
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -92,26 +93,26 @@
   <td style="word-wrap: break-word; white-space: normal;">Variable name within a table (e.g. <code>sed_bm_demo_edu_001</code>)</td>
 </tr>
 <tr>
-  <td><code>label</code></td>
+  <td><code>label</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
   <td>Variable label</td>
-  <td style="word-wrap: break-word; white-space: normal;">Label for variable name (e.g. <i>Highest grade completed</i>). Also available in Spanish: <code>label_es</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Label for variable name (e.g. <i>Highest grade completed</i>). <i>Spanish version: <code>label_es</code>.</i></td>
 </tr>
 <tr>
-  <td><code>instruction</code>&nbsp; <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i></td>
+  <td><code>instruction</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i> <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i></td>
   <td>Instruction</td>
   <td style="word-wrap: break-word; white-space: normal;">
-    Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>). Also available in Spanish (<code>instruction_es</code>)<br>
-  <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Instruction text may be incomplete or misaligned! See <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a></b></td>
+    Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>). <i>Spanish version: <code>instruction_es</code>.</i><br>
+    <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Instruction text may be incomplete or misaligned! See <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a></b></td>
 </tr>
 <tr>
-  <td><code>header</code></td>
+  <td><code>header</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
   <td>Header</td>
-  <td style="word-wrap: break-word; white-space: normal;">Header/instructions for a set of questions (e.g. <i>For each item that describes your child...</i>). See <code>header_es</code> column for header text in Spanish.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Header/instructions for a set of questions (e.g. <i>For each item that describes your child...</i>). <i>Spanish version: <code>header_es</code>.</i></td>
 </tr>
 <tr>
-  <td><code>note</code></td>
+  <td><code>note</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
   <td>Note</td>
-  <td style="word-wrap: break-word; white-space: normal;">Note displayed to participants (e.g. <i>Enter weight in pounds.</i>). See <code>note_es</code> column for text in Spanish.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Note displayed to participants (e.g. <i>Enter weight in pounds.</i>). <i>Spanish version: <code>note_es</code>.</i></td>
 </tr>
 <tr>
   <td><code>unit</code></td>
