@@ -304,7 +304,7 @@ Datasets downloaded from the NBDC Data Access Platform include two additional co
 <div class="table-collapsible-content">
 <table class="table-no-vertical-lines" style="width:100%;border-collapse:collapse;table-layout:fixed;">
 <thead>
-<tr style="border-bottom:2px solid #ccc;"><th>Basic Demographics Site Codes</th><th>Site ID</th><th>Site</th></tr>
+<tr style="border-bottom:2px solid #ccc;"><th>Basic Demographics Site ID</th><th>Visit Information Site ID</th><th>Site</th></tr>
 </thead>
 <tbody>
 <tr><td>0</td><td>hbcdsite64</td><td>Arkansas Children's Hospital (site 1)</td></tr>
