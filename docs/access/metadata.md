@@ -57,23 +57,23 @@ See the following sections for detailed descriptions for each column in the [dat
 <tr>
   <td><code>table_name</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
   <td>Table name</td>
-  <td style="word-wrap: break-word; white-space: normal;">Coded table name, e.g. <code>sed_bm_demo</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Table name, e.g. <code>sed_bm_demo</code></td>
 </tr>
 <tr>
   <td><code>table_label</code></td>
   <td>Table label</td>
-  <td style="word-wrap: break-word; white-space: normal;">Label for coded table name (e.g. <i>Demographics</i>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Label for table name (e.g. <i>Demographics</i>)</td>
 </tr>
 <!-- VARIABLE METADATA -->
 <tr>
   <td><code>name</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
   <td>Variable name</td>
-  <td style="word-wrap: break-word; white-space: normal;">Coded variable name within a table (e.g. <code>sed_bm_demo_edu_001</code>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Variable name within a table (e.g. <code>sed_bm_demo_edu_001</code>)</td>
 </tr>
 <tr>
   <td><code>label</code></td>
   <td>Variable label</td>
-  <td style="word-wrap: break-word; white-space: normal;">Label for coded variable name (e.g. <i>Highest grade completed</i>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Label for variable name (e.g. <i>Highest grade completed</i>)</td>
 </tr>
 <tr>
   <td><code>instruction</code>&nbsp; <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i></td>
@@ -123,7 +123,7 @@ See the following sections for detailed descriptions for each column in the [dat
 <tr>
   <td><code>order_display</code></td>
   <td>Display order</td>
-  <td style="word-wrap: break-word; white-space: normal;">Display order of item within measure</td>
+  <td style="word-wrap: break-word; white-space: normal;">Order in which item is displayed to participants within a given measure</td>
 </tr>
 <tr>
   <td><code>branching_logic</code></td>
