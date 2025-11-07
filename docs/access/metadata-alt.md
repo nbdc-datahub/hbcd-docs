@@ -3,7 +3,7 @@
 ## Data Dictionary Columns
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
 <i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases&nbsp;&nbsp;
-<i style="color: teal;" class="fa fa-language"></i>&nbsp;= Column available in Spanish (column name appended with <code>_es</code>)
+<i style="color: teal;" class="fa fa-language"></i>&nbsp;= Column available in Spanish (includes <code>label_es</code>, <code>instruction_es</code>, <code>header_es</code>, <code>note_es</code>)
 </p>
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -26,8 +26,7 @@
 <tr>
   <td><code>domain</code></td>
   <td>Domain</td>
-  <td style="word-wrap: break-word; white-space: normal;">Domains include:<br>
-  <i>Behavior/Child-Caregiver Interaction | BioSpecimens | Neurocognition & Language | Novel Tech | Physical Health | Pregnancy/Exposure Including Substance | Social and Environmental Determinants | Tabular EEG | Tabular Imaging</i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Domains include <i>Demographics</i>, <i>Behavior/Child-Caregiver Interaction</i>, <i>Imaging</i>, etc. (see <a href="../../instruments/#instruments-by-domain">Instruments by Domain</a> for full list)</td>
 </tr>
 <tr>
   <td><code>sub_domain</code></td>
@@ -61,12 +60,12 @@
 <tr>
   <td><code>table_name</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
   <td>Table name</td>
-  <td style="word-wrap: break-word; white-space: normal;">Table name, e.g. <code>sed_bm_demo</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Table name (e.g. <code>sed_bm_demo</code>)</td>
 </tr>
 <tr>
   <td><code>table_label</code></td>
   <td>Table label</td>
-  <td style="word-wrap: break-word; white-space: normal;">Label for table name (e.g. <i>Demographics</i>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Human-readable label for table name (e.g. <i>Demographics</i>)</td>
 </tr>
 <tr>
   <td><code>url_table</code></td>
@@ -75,13 +74,13 @@
 </tr>
 <tr>
   <td><code>url_table_warn_use</code></td>
-  <td>Responsible Use<br>Warning (table)</td>
-  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Responsible use warning</a></td>
+  <td>Resp Use Warning (table)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Responsible Use Warning (<a href="../resp_data_use/#warnings" target="_blank"><i>see details</i></a>)</td>
 </tr>
 <tr>
   <td><code>url_table_warn_data</code></td>
   <td>Data Warning (table)</td>
-  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Data warning</a></td>
+  <td style="word-wrap: break-word; white-space: normal;">Data Warning (<a href="../resp_data_use/#warnings" target="_blank"><i>see details</i></a>)</td>
 </tr>
 <!-- VARIABLE METADATA -->
 <tr>
@@ -95,39 +94,41 @@
 <tr>
   <td><code>label</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
   <td>Variable label</td>
-  <td style="word-wrap: break-word; white-space: normal;">Label for variable name (e.g. <i>Highest grade completed</i>). <i>Spanish version: <code>label_es</code>.</i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Human-readable label for variable (e.g. <i>Highest grade completed</i>).<br>
+  <i>Spanish version: <code>label_es</code></i></td>
 </tr>
 <tr>
   <td><code>instruction</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i> <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i></td>
   <td>Instruction</td>
   <td style="word-wrap: break-word; white-space: normal;">
-    Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>). <i>Spanish version: <code>instruction_es</code>.</i><br>
-    <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Instruction text may be incomplete or misaligned! See <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a></b></td>
+    Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>). <i>Spanish version: <code>instruction_es</code></i><br>
+    <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Text may be incomplete/misaligned! See <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a></b></td>
 </tr>
 <tr>
   <td><code>header</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
   <td>Header</td>
-  <td style="word-wrap: break-word; white-space: normal;">Header/instructions for a set of questions (e.g. <i>For each item that describes your child...</i>). <i>Spanish version: <code>header_es</code>.</i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Header/instructions for a set of questions (e.g. <i>For each item that describes your child...</i>). <i>Spanish version: <code>header_es</code></i></td>
 </tr>
 <tr>
   <td><code>note</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
   <td>Note</td>
-  <td style="word-wrap: break-word; white-space: normal;">Note displayed to participants (e.g. <i>Enter weight in pounds.</i>). <i>Spanish version: <code>note_es</code>.</i></td>
+  <td style="word-wrap: break-word; white-space: normal;">Note displayed to participants (e.g. <i>Enter weight in pounds.</i>).<br>
+   <i>Spanish version: <code>note_es</code></i></td>
 </tr>
 <tr>
   <td><code>unit</code></td>
   <td>Unit</td>
-  <td style="word-wrap: break-word; white-space: normal;">Unit of measurement (e.g. <i>m, cm², lbs</i>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Unit of measurement (e.g. <i>years, cm, lbs, etc.</i>)</td>
 </tr>
 <tr>
   <td><code>url_warn_use</code></td>
-  <td>Responsible Use<br>Warning (variable)</td>
-  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Responsible use warning</a> specific to variable within a table</td>
+  <td>Resp Use Warning (variable)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Responsible Use Warning (<a href="../resp_data_use/#warnings" target="_blank"><i>see details</i></a>) - variable-specific</td>
 </tr>
 <tr>
   <td><code>url_warn_data</code></td>
   <td>Data Warning (variable)</td>
-  <td style="word-wrap: break-word; white-space: normal;"><a href="../resp_data_use/#warnings" target="_blank">Data warning</a> specific to variable within a table</td>
+  <td style="word-wrap: break-word; white-space: normal;">Data Warning (<a href="../resp_data_use/#warnings" target="_blank"><i>see details</i></a>) - variable-specific</td>
 </tr>
 <!-- VARIABLE TYPES -->
 <tr>
@@ -149,14 +150,14 @@
   <td style="word-wrap: break-word; white-space: normal;">Level of measurement</td>
   <td style="word-wrap: break-word; white-space: normal;">Levels include: <i>nominal | ordinal | interval | ratio</i></td>
 </tr>
+<!-- DISPLAY PROPERTIES -->
+<tr>
+  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>DISPLAY PROPERTIES</b></td>
+</tr>
 <tr>
   <td><code>type_field</code></td>
   <td>Field type</td>
   <td style="word-wrap: break-word; white-space: normal;">Field type in data capture system as presented to participant (e.g. <i>dropdown, radio, checkbox, etc.</i>)</td>
-</tr>
-<!-- DISPLAY PROPERTIES -->
-<tr>
-  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>DISPLAY PROPERTIES</b></td>
 </tr>
 <tr>
   <td><code>order_display</code></td>

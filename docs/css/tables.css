@@ -49,6 +49,7 @@ th, td {
 .table-collapsible-content.open {
   max-height: none;
 }
+
 .table-collapsible-content p {
   display: inline-block !important;
   padding: 5px 10px !important;
