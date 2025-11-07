@@ -1,5 +1,6 @@
 <p style="color: red;">🚧 LUCI ADMIN NOTES:<br>
- - currently under RUD review: to be included in patch release 2.1
+ - currently under RUD review: to be included in patch release 2.1<br>
+ - Nicolo Pini to provide description of BIDS conversion and data
 </p>
 
 # Infant Heart Rate (GABI)
