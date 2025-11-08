@@ -6,7 +6,7 @@ The HBCD study includes four electroencephalography (EEG) tasks collected during
 
 **EEG protocols** are described in detail in [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and fully documented in [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030).
 
-![](images/EEGParams.png)
+<img src="images/EEGParams.png" style="max-width:100%; height:auto;">
 
 ## Release Data
 
