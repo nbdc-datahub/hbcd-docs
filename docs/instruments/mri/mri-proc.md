@@ -4,9 +4,13 @@ Below we describe the processing streams for structural and functional MRI, whic
 
 ## Structural and Functional MRI Processing
 
-HBCD **structural and functional MRI** data are processed through a standardized sequence of BIDS App pipelines. Each pipeline builds on the derivatives from the previous step:
+HBCD **structural and functional MRI** data are processed through a standardized sequence of BIDS App pipelines. Each pipeline builds on the derivatives from the previous step, as outlined below. Visit the external [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/latest/tool_details.html#tool-names) website for full details on parameters and configurations used for each pipeline.
 
 <style> .pipeline-step { transition: all 0.25s ease; } .pipeline-step:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(100, 100, 255, 0.2); } </style> <div style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; font-size: 0.95em;"> <div style="text-align: center;"> <a href="https://bibsnet.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #a9bffcff; border-radius: 12px; background-color: #dde6fe; color: #222;"> <strong>BIBSNet</strong><br> <small>Segmentation & masks</small> </div> </a> </div> <span style="font-size: 20px;"><i class="fa-solid fa-arrow-right"></i></span> <div style="text-align: center;"> <a href="https://nibabies.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #a89df9ff; border-radius: 12px; background-color: #dcd8fb; color: #222;"> <strong>Infant-fMRIPrep</strong><br> <small><i>Surface reconstruction, preprocessing & confounds</i></small> </div> </a> </div> <span style="font-size: 20px;"><i class="fa-solid fa-arrow-right"></i></span> <div style="text-align: center;"> <a href="https://xcp-d.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #d794fcff; border-radius: 12px; background-color: #f0dcfb; color: #222;"> <strong>XCP-D</strong><br> <small>Post-processing & denoising</small> </div> </a> </div> </div>
+
+In brief, BIBSNet performs preprocessing on structural T1w/T2w images to generate brain tissue segmentations and masks. These are fed into Infant-fMRIPrep, which produces minimally pre-processed outputs including confound files (with motion parameters, average signals for ROIs like CSF, etc.) and motion-corrected data in age-specific MNI volumetric atlas as well as fs_LR32k surface space. From these outputs, the XCP-D pipeline runs nuisance regression/denoising, parcellates the fMRI data, and computes summary measures.
+
+*Click to expand the following sections for further processing details:*
 
 <div id="bibsnet-proc" class="table-banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa-solid fa-diagram-project"></i></span>
@@ -82,10 +86,10 @@ Unique hash IDs in the Infant fMRIPrep and XCP-D derivative folder and filenames
 <tr>
 <td>M-CRIB-S</td>
 <td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tools/nibabies_25.2.0-0f306a2f.html">0f306a2f</a></td>
-<td>T2w-based method optimized for neonates (<a href="https://doi.org/10.1038/s41598-020-61326-2">Adamson et al., 2020</a>). <i>Optimal ages<b>*</b>: ≤ 5 months</i>.</td>
+<td>T2w-based method optimized for neonates (<a href="https://doi.org/10.1038/s41598-020-61326-2">Adamson et al., 2020</a>). <i>Optimal ages: ≤ 5 months<b>*</b></i>.</td>
 </tr> <tr>
 <td>Infant FreeSurfer</td>
-<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tools/nibabies_25.2.0-2afa9081.html">2afa9081</a></td> <td>T1w-based, optimized for infants 0-2 years old (<a href="https://doi.org/10.1016/j.neuroimage.2020.116946">Zöllei et al., 2020</a>). <i>Optimal ages<b>*</b>: ≥ 3 months</i></td>
+<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tools/nibabies_25.2.0-2afa9081.html">2afa9081</a></td> <td>T1w-based, optimized for infants 0-2 years old (<a href="https://doi.org/10.1016/j.neuroimage.2020.116946">Zöllei et al., 2020</a>). <i>Optimal ages: ≥ 3 months<b>*</b></i></td>
 </tr> </tbody>
 <tfoot>
 <tr>
@@ -98,7 +102,7 @@ Unique hash IDs in the Infant fMRIPrep and XCP-D derivative folder and filenames
 
 ## MRI Derivatives Quick Start Guide
 
-Below is a summary of key MRI derivatives used for **structural morphology** and **resting-state functional MRI (rsfMRI) functional connectivity** analyses. Key derivatives are produced by the **XCP-D** pipeline, which builds on BIBSNet and Infant-fMRIPrep outputs to produce fully preprocessed, denoised, and quality-assessed data. See <a href="../mri/fmri/#xcpd" target="_blank">XCP-D derivatives included in the HBCD release</a>.
+Below is a summary of key MRI derivatives used for **structural morphology** and **resting-state functional MRI (rsfMRI) functional connectivity** analyses. Key derivatives are produced by the **XCP-D** pipeline, which builds on BIBSNet and Infant-fMRIPrep outputs to produce fully preprocessed, denoised, and quality-assessed data. See <a href="../fmri/#xcpd" target="_blank">XCP-D derivatives included in the HBCD release</a>.
 
 <div id="struc" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-cubes"></i></span>
