@@ -112,20 +112,8 @@ Visit information also includes **substance use flags**, which are single summar
 </tr>
 <tbody>
 <tr>
-<td><code>par_visit_data_su_flag_bio_barb</code></td>
-<td>Substance Use in Urine Biosample - barb</td>
-</tr>
-<tr>
-<td><code>par_visit_data_su_flag_bio_benzo</code></td>
-<td>Substance Use in Urine Biosample - benzo</td>
-</tr>
-<tr>
 <td><code>par_visit_data_su_flag_bio_cannabinoid</code></td>
 <td>Substance Use in Urine Biosample - cannabinoid</td>
-</tr>
-<tr>
-<td><code>par_visit_data_su_flag_bio_mscrlx</code></td>
-<td>Substance Use in Urine Biosample - mscrlx</td>
 </tr>
 <tr>
 <td><code>par_visit_data_su_flag_bio_opioid</code></td>
