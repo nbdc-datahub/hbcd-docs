@@ -87,7 +87,6 @@ nav:
             - 🚧 ecPROMIS Peer Relationships: instruments/bcgi/ecpromis-pr.md
             - 🚧 ecPROMIS Self-Regulation: instruments/bcgi/ecpromis-selfreg.md
             - 🚧 FAD: instruments/bcgi/fad.md
-            - 🚧 HOME-21: instruments/bcgi/home21.md
             - 🚧 IBQ/ECBQ-R (VSF)+BI: instruments/bcgi/ibqr.md
             - 🚧 MAPS-TL: instruments/bcgi/maps-tl.md
         - Biospecimens & Omics:
@@ -128,6 +127,7 @@ nav:
             - 🚧 Composite Abuse Scale: instruments/SED/cab.md
             - 🚧 Demographics Adult: instruments/SED/demo-cg.md
             - 🚧 Demographics Child: instruments/SED/demo-ch.md
+            - 🚧 HOME-21: instruments/bcgi/home21.md
             - Intimate Partner Violence: instruments/SED/ehits.md
             - 🚧 Employment: instruments/SED/current-employment.md
             - 🚧 Geocoded Linkage: instruments/SED/geocoded-linkage.md

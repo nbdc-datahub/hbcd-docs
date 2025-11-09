@@ -20,7 +20,7 @@ Expand the sections below to see a list of measures associated with each domain 
 
 Expand the sections below to see a list of measures associated with each domain included in the latest release data.
 
-<img src="../images/inst-ex.png" width="90%" height="auto" class="center">
+<img src="../images/instructions.png" width="90%" height="auto" class="center">
 
 --------------
 
@@ -104,11 +104,11 @@ Expand the sections below to see a list of measures associated with each domain 
 
 ### Behavior, Biology, & Environment
 
-<div id="bcgi" class="table-banner" onclick="toggleCollapse(this)">
+<div id="mh" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-people-arrows"></i></span>
   <span class="text-with-link">
   <span class="text">Behavior & Caregiver-Child Interaction</span>
-  <a class="anchor-link" href="#bcgi" title="Copy link">
+  <a class="anchor-link" href="#mh" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -162,12 +162,6 @@ Expand the sections below to see a list of measures associated with each domain 
     <td></td>
     <td style="word-wrap: break-word; white-space: normal;">Global Functioning of Family Unit</td>
     <td><code>mh_cg_fad</code></td>
-  </tr>
-  <tr>
-    <td><a href="bcgi/home21" target="_blank">HOME-21</a></td>
-    <td>Infant-Toddler</td>
-    <td>Child’s Home Environment</td>
-    <td><code>sed_cg_home_ec</code></td>
   </tr>
   <tr>
     <td rowspan="2"><a href="bcgi/ibqr" target="_blank">IBQ-R (VSF)+BI / ECBQ (VSF)+BI</a></td>
@@ -513,11 +507,11 @@ Expand the sections below to see a list of measures associated with each domain 
 </table>
 </div>
 
-<div id="socenvdet" class="table-banner" onclick="toggleCollapse(this)">
+<div id="sed" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-city"></i></span>
   <span class="text-with-link">
   <span class="text">Social & Environmental Determinants</span>
-  <a class="anchor-link" href="#socenvdet" title="Copy link">
+  <a class="anchor-link" href="#sed" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -590,6 +584,12 @@ Expand the sections below to see a list of measures associated with each domain 
   <td>Intimate Partner Violence</td>
   <td><code>sed_bm_ehits</code></td>
 </tr>  
+<tr>
+  <td><a href="SED/home21" target="_blank">HOME-21</a></td>
+  <td>Infant-Toddler</td>
+  <td>Child’s Home Environment</td>
+  <td><code>sed_cg_home_ec</code></td>
+</tr>
 <tr>
   <td style="word-wrap: break-word; white-space: normal;"><a href="SED/household-chemical-exposures" target="_blank">Household Chemical Exposures</a></td>
   <td></td>
