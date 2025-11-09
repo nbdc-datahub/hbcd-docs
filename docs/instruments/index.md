@@ -299,11 +299,11 @@ Expand the sections below to see a list of measures associated with each domain 
 </table>
 </div>
 
-<div id="physhealth" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ph" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-heart-pulse"></i></span>
   <span class="text-with-link">
   <span class="text">Physical Health</span>
-  <a class="anchor-link" href="#physhealth" title="Copy link">
+  <a class="anchor-link" href="#ph" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -527,7 +527,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <th>Instrument</th>
   <th>Version</th>
   <th>Construct</th>
-  <th>Table Name / <i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Concatenated Folder</th>
+  <th>Table / <i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Concatenated Folder</th>
 </tr>
 </thead>
 <tbody>
