@@ -45,24 +45,6 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>Postnatal Recruits Reported TLFB on Wrong Weeks</b><br>
-Participants enrolled postnatally, HBCD Main Child- Postnatal Recruitment or HBCD Multiple Birth- Postnatal Recruitment cohort, reported TLFB on the wrong weeks. Weeks were either reported in v1 or v2, but should be reported in v3.</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr>
-<td><b>v1</b></td>
-<td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> Last Week</td>
-</tr>
-<tr>
-<td><b>v2</b></td>
-<td><b>Period 4:</b> Last Two Weeks Before Delivery</td>
-</tr>
-<tr>
-<td><b>v3</b></td>
-<td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> LMP + 19 Weeks to LMP + 20 Weeks<br><b>Period 4:</b> Last Two Weeks Before Delivery</td>
-</tr>
-</tbody>
-</table>
 <p><b>Sampling Window and Coverage Limitations</b><br>
 The sampling covers specific weeks before pregnancy (Weeks 1-2) and during pregnancy (Weeks 3-9). Consequently, substance use reported outside these weeks may not appear in the TLFB, and a positive biospecimen may lack corresponding TLFB data for the same reason. This sampling approach balances participant burden (avoiding a full 40-week TLFB) with capturing key pregnancy phases when behaviors often shift, such as before and after pregnancy recognition and in late pregnancy.</p>
 <p><b>Notes on Reporting Format and Data Variability</b><br>
