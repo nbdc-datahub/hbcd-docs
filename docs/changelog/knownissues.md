@@ -3,8 +3,6 @@
 1. Basic Demo: University of Florida not properly coded - see [Monday.com](https://ucsd-actri.monday.com/boards/6045591843/pulses/18348405924)
 1. Basic Demo: many participants have mismatching site values and labels - see [Monday.com](https://ucsd-actri.monday.com/boards/6045591843/pulses/18348433453)
 
-
-
 # Known Issues
 
 The following issues have been identified in the current HBCD data release. **We are actively working to address them and expect most fixes to be implemented in Release 2.1 unless otherwise noted.** This page will be updated as new issues are discovered.    
@@ -12,9 +10,9 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 ## Instruction Metadata — Read Carefully
 
-<table class="compact-table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
-  <tr>
+<tr style="border-bottom:2px solid #ccc;">
     <th>KNOWN ISSUE - <span style="color: #f97316;">EXPECTED FIX TBD</span></th>
   </tr>
 </thead>
@@ -32,9 +30,9 @@ If you have questions or would like to report an issue, please submit a ticket t
 </table>
 
 ## <a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use
-<table class="compact-table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
-  <tr>
+<tr style="border-bottom:2px solid #ccc;">
     <th style="width: 20%;">TABLE/DATA</th>
     <th style="width: 1%; text-align: center;">FIX</th>
     <th>KNOWN ISSUE</th>
@@ -52,14 +50,14 @@ If you have questions or would like to report an issue, please submit a ticket t
   <td>TLFB<br><code>pex_ch_tlfb</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
-  Participants enrolled postnatally (<i>HBCD Main Child- Postnatal Recruitment</i> or <i>HBCD Multiple Birth- Postnatal Recruitment</i> cohorts) reported TLFB on the wrong weeks. Weeks were either reported in v1 or v2, but should be reported in v3.<br><br>
+  Participants enrolled postnatally (<i>HBCD Main Child- Postnatal Recruitment</i> or <i>HBCD Multiple Birth- Postnatal Recruitment</i> cohorts) reported TLFB on the wrong weeks. Weeks were either reported in TLFB versions 1 or 2, but should be reported in TLFB version 3.<br><br>
     <table class="table-no-vertical-lines">
     <tbody>
-    <tr><td><b>v1</b></td>
+    <tr><td><b>TLFB Version 1</b></td>
     <td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> Last Week</td></tr>
-    <tr><td><b>v2</b></td>
+    <tr><td><b>TLFB Version 2</b></td>
     <td><b>Period 4:</b> Last Two Weeks Before Delivery</td></tr>
-    <tr><td><b>v3</b></td>
+    <tr><td><b>TLFB Version 3</b></td>
     <td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> LMP + 19 Weeks to LMP + 20 Weeks<br><b>Period 4:</b> Last Two Weeks Before Delivery</td></tr>
     </tbody>
     </table>
@@ -69,9 +67,9 @@ If you have questions or would like to report an issue, please submit a ticket t
 </table>
 
 ## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
-<table class="compact-table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
-  <tr>
+  <tr style="border-bottom:2px solid #ccc;">
     <th style="width: 20%;">TABLE/DATA</th>
     <th style="width: 1%; text-align: center;">FIX</th>
     <th>KNOWN ISSUE</th>
