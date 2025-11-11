@@ -588,7 +588,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><a href="SED/home21" target="_blank">HOME-21</a></td>
   <td>Infant-Toddler</td>
   <td>Child’s Home Environment</td>
-  <td><code>sed_cg_home_ec</code></td>
+  <td><code>sed_cg_home_it</code></td>
 </tr>
 <tr>
   <td style="word-wrap: break-word; white-space: normal;"><a href="SED/household-chemical-exposures" target="_blank">Household Chemical Exposures</a></td>
