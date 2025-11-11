@@ -127,7 +127,7 @@ nav:
             - 🚧 Composite Abuse Scale: instruments/SED/cab.md
             - 🚧 Demographics Adult: instruments/SED/demo-cg.md
             - 🚧 Demographics Child: instruments/SED/demo-ch.md
-            - 🚧 HOME-21: instruments/bcgi/home21.md
+            - 🚧 HOME-21: instruments/SED/home21.md
             - Intimate Partner Violence: instruments/SED/ehits.md
             - 🚧 Employment: instruments/SED/current-employment.md
             - 🚧 Geocoded Linkage: instruments/SED/geocoded-linkage.md
@@ -149,7 +149,7 @@ nav:
             - Overview & MR Protocols: instruments/mri/index.md
             - Quality Control Procedures: instruments/mri/qc.md
             - MRI Processing & Derivatives Guide: instruments/mri/mri-proc.md
-            - ⚠️ Pre-Scan Questionnaire: instruments/mri/questionnaire.md
+            - 🚧 Pre-Scan Questionnaire: instruments/mri/questionnaire.md
             - Structural MRI: instruments/mri/smri.md
             - Functional MRI: instruments/mri/fmri.md
             - Diffusion MRI: instruments/mri/dmri.md
