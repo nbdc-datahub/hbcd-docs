@@ -41,10 +41,8 @@ hbcd/
             |__ dwi/
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.bval
                 |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.bvec
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.nii.gz
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.json
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_sbref.json
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_sbref.nii.gz
+                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_dwi.nii.gz <span class="hashtag">(+JSON)</span>
+                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-<span class="label">{X}</span>_sbref.nii.gz <span class="hashtag">(+JSON)</span>
 </pre>
 </div>
 
@@ -68,26 +66,18 @@ hbcd/
             |__ log/
             |__ ses-<span class="label">{V0X}</span>/
                 |__ anat/
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_from-ACPC_to-anat_mode-image_xfm.mat        
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_from-ACPC_to-MNIInfant+1_mode-image_xfm.h5
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_from-anat_to-ACPC_mode-image_xfm.mat
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_from-MNIInfant+1_to-ACPC_mode-image_xfm.h5
+                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_from-<span class="placeholder">&lt;ACPC_to-anat|anat_to-ACPC&gt;</span>_mode-image_xfm.mat
+                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_from-<span class="placeholder">&lt;ACPC_to-MNIInfant+1|MNIInfant+1_to-ACPC&gt;</span>_mode-image_xfm.h5
                 |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_from-orig_to-anat_mode-image_xfm.txt
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-aseg_dseg.nii.gz
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-brain_mask.nii.gz
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_T2w.json
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_T2w.nii.gz
+                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-<span class="placeholder">&lt;aseg_dseg|brain_mask&gt;</span>.nii.gz
+                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
                 |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_dseg.nii.gz
                 |
                 |__ dwi/
                 |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-confounds_timeseries.tsv
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-desc-pepolar_qc.tsv
+                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-desc-<span class="placeholder">&lt;image|pepolar&gt;</span>_qc.tsv
                 |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-brain_mask.nii.gz
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-image_qc.tsv
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_dwi.b
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_dwi.b_table.txt
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_dwi.bval
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_dwi.bvec
+                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_dwi.<span class="placeholder">&lt;b|b_table.txt|bval|bvec&gt;</span>
                 |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_dwi.nii.gz <span class="hashtag">(+JSON)</span>
                 |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-slice_qc.json
                 |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_dwiref.nii.gz
@@ -141,105 +131,59 @@ hbcd/
       |_ sub-<span class="label">{ID}</span>/
          |_ ses-<span class="label">{V0X}</span>/
             |_ dwi/
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_tdistats.tsv
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-Association<span class="placeholder">&lt;ASSOC&gt;</span><span class="placeholder">&lt;L|R&gt;</span>_streamlines.tck.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_<span class="placeholder">&lt;scalar|tdi&gt;</span>stats.tsv
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-Association<span class="placeholder">&lt;ASSOC&gt;</span>_streamlines.tck.gz
             |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-Cerebellum<span class="placeholder">&lt;CEREB&gt;</span>_streamlines.tck.gz
             |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-CommissureAnteriorCommissure_streamlines.tck.gz
             |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-CommissureCorpusCallosum_streamlines.tck.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-ProjectionBasalGanglia<span class="placeholder">&lt;BG&gt;</span><span class="placeholder">&lt;L|R&gt;</span>_streamlines.tck.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-ProjectionBrainstem<span class="placeholder">&lt;BRAINSTEM&gt;</span>_streamlines.tck.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-ProjectionBasalGanglia<span class="placeholder">&lt;BG&gt;</span>_streamlines.tck.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-ProjectionBrainstem<span class="placeholder">&lt;BSTEM&gt;</span>_streamlines.tck.gz
             |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundlestats.csv
             |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_dwimap.fib.gz
             |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_dwimap.fib.gz.icbm152_adult.map.gz
             |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-<span class="placeholder">&lt;gfa|iso&gt;</span>_dwimap.nii.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-qa_dwimap.nii.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-qa_dwimap.json
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-qa_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
             |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-rdi_param-<span class="placeholder">&lt;rd1|rd2&gt;</span>_dwimap.nii.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;ad|fa|ha|md|rd&gt;</span>_dwimap.nii.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-t<span class="placeholder">&lt;xx|xy|xz|yy|yz|zz&gt;</span>_dwimap.nii.gz
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;PARAM&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
             |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-gqi_param-<span class="placeholder">&lt;gfa|iso|qa&gt;</span>_dwimap.nii.gz
             |
             |_ figures/
             |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
 </pre>
-<div id="legend" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe31;">
-  <span class="emoji"><i class="fa-solid fa-tag"></i></span>
-  <span class="text" style="font-size: 14px;">end</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; font-size: 13px;">
-  <thead>
-    <tr>
-      <th style="width: 15%; text-align: left;">BIDS Entity</th>
-      <th style="width: 85%; text-align: left;">Values</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>&lt;ASSOC&gt;</strong></td>
-      <td>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-          <span>ArcuateFasciculus</span>
-          <span>Cingulum</span>
-          <span>ExtremeCapsule</span>
-          <span>FrontalAslantTract</span>
-          <span>HippocampusAlveus</span>
-          <span>InferiorFrontoOccipitalFasciculus</span>
-          <span>&lt;Inferior|Middle|Superior&gt;LongitudinalFasciculus</span>
-          <span>ParietalAslantTract</span>
-          <span>AssociationUncinateFasciculus</span>
-          <span>VerticalOccipitalFasciculus</span>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>&lt;CEREB&gt;</strong></td>
-      <td>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-          <span>Cerebellum (L/R)</span>
-          <span>InferiorCerebellarPeduncle (L/R)</span>
-          <span>MiddleCerebellarPeduncle</span>
-          <span>SuperiorCerebellarPeduncle</span>
-          <span>Vermis</span>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>&lt;BG&gt;</strong></td>
-      <td>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-          <span>AcousticRadiation</span>
-          <span>AnsaLenticularis</span>
-          <span>AnsaSubthalamica</span>
-          <span>CorticostriatalTract</span>
-          <span>FasciculusLenticularis</span>
-          <span>FasciculusSubthalamicus</span>
-          <span>Fornix</span>
-          <span>OpticRadiation</span>
-          <span>ThalamicRadiation</span>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>&lt;BRAINSTEM&gt;</strong></td>
-      <td>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-          <span>CorticobulbarTract (L/R)</span>
-          <span>CorticopontineTract (L/R)</span>
-          <span>CorticospinalTract (L/R)</span>
-          <span>DentatorubrothalamicTractrl</span>
-          <span>MedialForebrainBundle (L/R)</span>
-          <span>MedialLemniscus (L/R)</span>
-          <span>NonDecussatingDentatorubrothalamicTract (L/R)</span>
-          <span>ReticularTract (L/R)</span>
-        </div>
-      </td>
-    </tr>
-  </tbody>
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #282c34 !important;">
+<tr>
+<th colspan="2" style="background-color: #282c34 !important; color: #b0d619;"># Label Values Legend</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2" style="word-wrap: break-word; white-space: normal; font-size: 1.0em;"><i>Note: All anatomical labels are left/right (L/R) hemisphere–specific unless noted (e.g. CingulumL and CingulumR).<br>
+Entries marked <b>(no L/R)</b> are midline or bilateral structures; those marked <b>(lr/rl)</b> are crossing tracts.</i></td>
+</tr>
+<tr>
+<td><strong style="color: #00a298ff;">ASSOC</strong></td>
+<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>Cingulum</span><span>ExtremeCapsule</span><span>FrontalAslantTract</span><span>ParietalAslantTract</span><span>HippocampusAlveus</span><span>ArcuateFasciculus</span><span>AssociationUncinateFasciculus</span><span>InferiorFrontoOccipitalFasciculus</span><span>InferiorLongitudinalFasciculus</span><span>MiddleLongitudinalFasciculus</span><span>SuperiorLongitudinalFasciculus</span><span>VerticalOccipitalFasciculus</span></div></td>
+</tr>
+<tr>
+<td style="color: #00a298ff;"><strong>CEREB</strong></td>
+<td><div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<span>Cerebellum</span><span>InferiorCerebellarPeduncle</span><span>MiddleCerebellarPeduncle <b><i>(no L/R)</i></b></span><span>SuperiorCerebellarPeduncle <b><i>(no L/R)</i></b></span><span>Vermis <b><i>(no L/R)</i></b></span></div></td>
+</tr>
+<tr>
+<td><strong style="color: #00a298ff;">BG</strong></td>
+<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>AcousticRadiation</span><span>OpticRadiation</span><span>ThalamicRadiation</span><span>AnsaLenticularis</span><span>FasciculusLenticularis</span><span>AnsaSubthalamica</span><span>FasciculusSubthalamicus</span><span>CorticostriatalTract</span><span>Fornix</span></div></td>
+</tr>
+<tr>
+<td><strong style="color: #00a298ff;">BSTEM</strong></td>
+<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>CorticobulbarTract</span><span>CorticopontineTract</span><span>CorticospinalTract</span><span>ReticularTract</span><span>DentatorubrothalamicTract <b><i>(lr/rl)</i></b></span><span>NonDecussatingDentatorubrothalamicTract</span><span>MedialForebrainBundle</span><span>MedialLemniscus</span></div></td>
+</tr>
+<tr>
+<td style="color: #00a298ff;"><strong>PARAM</strong></td>
+<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>ad</span><span>fa</span><span>ha</span><span>md</span><span>rd</span><span>txx</span><span>txy</span><span>txz</span><span>tyy</span><span>tyz</span><span>tzz</span></div></td>
+</tr>
+</tbody>
 </table>
-</div>
 </div>
 
 <div id="qsirecon-DIPYDKI" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
@@ -262,13 +206,14 @@ hbcd/
          |_ ses-<span class="label">{V0X}</span>/
             |_ dwi/
             |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">ad|ak|kfa|md|mk|mkt|rd|rk</span>_dwimap.nii.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">ad|ak|kfa|md|mk|mkt|rd|rk</span>_dwimap.json
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.json
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">&lt;PARAM&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
             |
             |_ figures/
             |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
+
+<span class="hashtag"># Label Values Legend</span>
+<span class="placeholder">PARAM</span>: ad, ak, kfa, md, mk, mkt, rd, rk
 </pre>
 </div>
 
@@ -303,12 +248,11 @@ hbcd/
          |_ ses-<span class="label">{V0X}</span>/
             |_ dwi/
                |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">ad|am|fa|li|rd</span>_dwimap.nii.gz
-               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">ad|am|fa|li|rd</span>_dwimap.json
+               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">&lt;TENSOR&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">&lt;MAPMRI&gt;</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
-<span class="placeholder">&lt;TENSOR&gt;</span>: ad, am, fa, li, rd
+<span class="placeholder">MAPMRI</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
+<span class="placeholder">TENSOR</span>: ad, am, fa, li, rd
 </pre>
 </div>
 
@@ -320,7 +264,7 @@ Diffusion-Weighted Imaging (DWI) data is provided in raw BIDS format as outlined
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See full details of HBCD diffusion MRI processing and innovations in <a href="https://doi.org/10.1101/2025.11.10.687672)">Cieslak et. al 2025</a>.</span>
+  <span class="text">See full details of HBCD diffusion MRI processing and innovations in <a href="https://doi.org/10.1101/2025.11.10.687672">Cieslak et. al 2025</a>.</span>
 </div>
 <p></p>
 
@@ -496,6 +440,27 @@ Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.
 </tbody>
 </table>
 </div>
+
+## Quality Control Findings
+<div id="dwi-qc" class="static-banner" style="border-left: 5px solid #199bd6;">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+    <span class="text">Automated QC for Processed Diffusion Data</span>
+    <a class="anchor-link" href="#dwi-qc" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+</div>
+<div class="table-static-content">
+<p>Automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-{ID}_ses-{V0X}_space-ACPC_desc-image_qc.tsv</code> within the <a href="../dmri/#qsiprep">QSIPrep derivatives</a>. See the <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details.</p>  
+<p>Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. <strong>NDC can also be used as a covariate in analyses to account for QC variation.</strong></p>  
+<p><strong>Left</strong>: NDC calculated pre- and post-processing for each vendor using combined AP/PA scans (solid = processed, dashed = raw).<br>  
+<strong>Right</strong>: Shell-wise CNR per vendor, calculated by Eddy. Because all data shown passed preliminary QC, we do not provide exclusion threshold recommendations. However, NDC and CNR are useful covariates when analyzing other derivatives.</p>
+<img src="../images/ndc_cnr_comparison.svg" width="95%" height="auto" class="center">
+<br>
+</div>
+
+
 
 ## References
 <div class="references">
