@@ -442,12 +442,22 @@ Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.
 </div>
 
 ## Quality Control Summary Statistics
-
-<p>Automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-{ID}_ses-{V0X}_space-ACPC_desc-image_qc.tsv</code> within the <a href="#qsiprep">QSIPrep derivatives</a>. See <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details.</p>  
+<div id="dwi-qc" class="static-banner" style="border-left: 5px solid #199bd6;">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+    <span class="text">Automated QC for Processed Diffusion Data</span>
+    <a class="anchor-link" href="#dwi-qc" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+</div>
+<div class="table-static-content">
+<p>Automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-{ID}_ses-{V0X}_space-ACPC_desc-image_qc.tsv</code> within the <a href="#qsiprep">QSIPrep derivatives</a>. See the <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details.</p>  
 <p>Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. <strong>NDC can also be used as a covariate in analyses to account for QC variation.</strong></p>  
 <p><strong>Left</strong>: NDC calculated pre- and post-processing for each vendor using combined AP/PA scans (solid = processed, dashed = raw).<br>  
 <strong>Right</strong>: Shell-wise CNR per vendor, calculated by Eddy. Because all data shown passed preliminary QC, we do not provide exclusion threshold recommendations. However, NDC and CNR are useful covariates when analyzing other derivatives.</p>
 <img src="../images/ndc_cnr_comparison.svg" width="95%" height="auto" class="center">
+</div>
 
 ## References
 <div class="references">

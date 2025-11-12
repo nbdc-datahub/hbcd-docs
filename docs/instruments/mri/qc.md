@@ -539,27 +539,6 @@ print(filtered_df.head())
 </code></pre>
 </div>
 
-## QC Summary Statistics
-
-<div id="fconn" class="static-banner" style="border-left: 5px solid #199bd6;">
-  <span class="emoji"><i class="fa fa-circle-check"></i></span>
-  <span class="text-with-link">
-    <span class="text">Functional Connectivity as Data Quality Improves</span>
-    <a class="anchor-link" href="#fconn" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-</div>
-<div class="table-static-content">
-<p>Average functional connectivity matrices were computed using the Gordon parcellation from <a href="../fmri/#xcpd">XCP-D derivatives</a> for V02 sessions with data inclusion based on various thresholds of BrainSwipes QC results (<code>img_brainswipes_xcpd-bold</code>; <a href="../qc/#brainswipes">see details</a>). Functional connectivity patterns remained consistent even when incorporating data with lower QC scores, suggesting robustness to mild quality variations.</p>
-<p><strong>Connectivity matrices as data quality improves (Left -> Right) based on QC thresholds of 0.1, 0.5, and 0.9:</strong></p>
-<img src="../images/fconn_qc.png" style="width: 90%;" class="center">
-<br>
-</div>
-<p></p>
-
-
-
 ## References
 <div class="references">
     <p>Dean III, D. C., Tisdall, M. D., Wisnowski, J. L., Feczko, E., Gagoski, B., Alexander, A. L., ... &amp; HBCD MRI Working Group. (2024). Quantifying brain development in the HEALthy Brain and Child Development (HBCD) Study: The magnetic resonance imaging and spectroscopy protocol. <em>Developmental Cognitive Neuroscience</em>, 70, 101452. <a href="https://doi.org/10.1016/j.dcn.2024.101452">https://doi.org/10.1016/j.dcn.2024.101452</a></p>

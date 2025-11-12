@@ -451,9 +451,26 @@ hbcd/
 
 ## Data Processing
 
-Functional MRI data is processed through [infant-fMRIPrep](https://nibabies.readthedocs.io/en/latest/) and subsequently [XCP-D](https://xcp-d.readthedocs.io/en/latest/usage.html) - **see the [MRI Processing & Derivatives Guide](mri-proc.md#structural-and-functional-mri-processing) for details.** 
+Functional MRI data is processed through [infant-fMRIPrep](https://nibabies.readthedocs.io/en/latest/) and subsequently [XCP-D](https://xcp-d.readthedocs.io/en/latest/usage.html) - **see the [MRI Processing & Derivatives Guide](mri-proc.md#structural-and-functional-mri-processing) for details.** Volumetric and surface-based time series are available for each subject. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. All parcellated derivatives are generated from a variety of parcellation schemes. See the folder trees above for a full list of [XCP-D](#xcpd) and [Infant fMRIPrep](#nibabies) included in the release.
 
-Volumetric and surface-based time series will be made available for each subject. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. All parcellated derivatives are generated from a variety of parcellation schemes. See the folder trees above for a full list of [XCP-D](#xcpd) and [Infant fMRIPrep](#nibabies) included in the release.
+## Quality Control Summary Statistics
+
+<div id="fconn" class="static-banner" style="border-left: 5px solid #199bd6;">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+    <span class="text">Functional Connectivity as Data Quality Improves</span>
+    <a class="anchor-link" href="#fconn" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+</div>
+<div class="table-static-content">
+<p>Average functional connectivity matrices were computed using the Gordon parcellation from <a href="../fmri/#xcpd">XCP-D derivatives</a> for V02 sessions with data inclusion based on various thresholds of BrainSwipes QC results (<code>img_brainswipes_xcpd-bold</code>; <a href="../qc/#brainswipes">see details</a>). Functional connectivity patterns remained consistent even when incorporating data with lower QC scores, suggesting robustness to mild quality variations.</p>
+<p><strong>Connectivity matrices as data quality improves (Left -> Right) based on QC thresholds of 0.1, 0.5, and 0.9:</strong></p>
+<img src="../images/fconn_qc.png" style="width: 90%;" class="center">
+<br>
+</div>
+<p></p>
 
 ## References
 <div class="references">
