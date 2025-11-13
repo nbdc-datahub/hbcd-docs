@@ -88,6 +88,7 @@ hbcd/
 hbcd/
 |__ derivatives/        <span class="hashtag"># Processed pipeline derivatives</span>
 |   |__ bibsnet/
+|   |__ bme_x/
 |   |__ hbcd_motion/
 |   |__ made/
 |   |__ mriqc/

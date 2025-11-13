@@ -266,7 +266,8 @@ The `derivatives/` folder contains derivatives, which are file outputs from <a h
 hbcd/
 |__ derivatives/ 
     <span class="hashtag"># Structural & Functional MRI</span>             
-    |__ mriqc/      
+    |__ mriqc/
+    |__ bme_x/      
     |__ bibsnet/    
     |__ nibabies/   
     |__ freesurfer/ 
@@ -303,9 +304,13 @@ hbcd/
 </thead>
 <tbody>
 <tr>
-  <td rowspan="5">Structural & Functional MRI</td>
+  <td rowspan="6">Structural & Functional MRI</td>
   <td><code>mriqc/</code></td>
   <td>MRIQC - <a href="../../instruments/mri/smri/#mriqc" target="_blank">sMRI</a> & <a href="../../instruments/mri/fmri/#mriqc" target="_blank">fMRI</a></td>
+</tr>
+<tr>
+  <td><code>bme_x/</code></td>
+  <td><a href="../../instruments/mri/smri/#bme-x" target="_blank">BME-X</a></td>
 </tr>
 <tr>
   <td><code>bibsnet/</code></td>
