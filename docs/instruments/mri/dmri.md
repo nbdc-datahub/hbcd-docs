@@ -315,6 +315,12 @@ Diffusion-Weighted Imaging (DWI) data is provided in raw BIDS format as outlined
 
 ## Data Processing
 
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">See full details of HBCD diffusion MRI processing and innovations in <a href="https://doi.org/10.1101/2025.11.10.687672">Cieslak et. al 2025</a>.</span>
+</div>
+<p></p>
+
 Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs head motion correction, susceptibility distortion correction, MP-PCA denoising, co-registration to T1w images, ANTS spatial normalization, and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5)). QSIPrep derivatives are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which executes a curated set of reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. Multiple QSIRecon derivative folders are provided, each corresponding to a different reconstruction method or model. The diffusion encoding enables the estimation of multiple diffusion MRI models to create the derived data, including:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -488,11 +494,32 @@ Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.
 </table>
 </div>
 
+## Quality Control Summary Statistics
+
+<div id="dwi-qc" class="static-banner" style="border-left: 5px solid #199bd6;">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+    <span class="text">Automated QC for Processed Diffusion Data</span>
+    <a class="anchor-link" href="#dwi-qc" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+</div>
+<div class="table-static-content">
+<p>The current release includes BrainSwipes results for structural and functional MRI only; diffusion results will be added in a future release. However, automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-{ID}_ses-{V0X}_space-ACPC_desc-image_qc.tsv</code> within the <a href="../dmri/#qsiprep">QSIPrep derivatives</a>. See the <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details.</p>  
+<p>Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. <strong>NDC can also be used as a covariate in analyses to account for QC variation.</strong></p>  
+<p><strong>Left</strong>: NDC calculated pre- and post-processing for each vendor using combined AP/PA scans (solid = processed, dashed = raw).<br>  
+<strong>Right</strong>: Shell-wise CNR per vendor, calculated by Eddy. Because all data shown passed preliminary QC, we do not provide exclusion threshold recommendations. However, NDC and CNR are useful covariates when analyzing other derivatives.</p>
+<img src="../images/ndc_cnr_comparison.svg" width="95%" height="auto" class="center">
+<br>
+</div>
+
 ## References
 <div class="references">
     <p>Alexander AL, Lee JE, Lazar M, Field AS. (2007). Diffusion tensor imaging of the brain. <em>Neurotherapeutics</em>, 4(3):316-29. <a href="https://doi.org/10.1016/j.nurt.2007.05.011">10.1016/j.nurt.2007.05.011</a></p>
     <p>Basser PJ, Mattiello J, LeBihan D. (1994). MR diffusion tensor spectroscopy and imaging. <em>Biophys J.</em>, 66(1):259-67. <a href="https://doi.org/10.1016/S0006-3495(94)80775-1">10.1016/S0006-3495(94)80775-1</a></p>
     <p>Cieslak M, Cook PA, He X, Yeh FC, Dhollander T, Adebimpe A, Aguirre GK, Bassett DS, Betzel RF, Bourque J, Cabral LM, Davatzikos C, Detre JA, Earl E, Elliott MA, Fadnavis S, Fair DA, Foran W, Fotiadis P, Garyfallidis E, Giesbrecht B, Gur RC, Gur RE, Kelz MB, Keshavan A, Larsen BS, Luna B, Mackey AP, Milham MP, Oathes DJ, Perrone A, Pines AR, Roalf DR, Richie-Halford A, Rokem A, Sydnor VJ, Tapera TM, Tooley UA, Vettel JM, Yeatman JD, Grafton ST, Satterthwaite TD. (2021). QSIPrep: an integrative platform for preprocessing and reconstructing diffusion MRI data. <em>Nature Methods</em>, 18(7):775-778. <a href="https://doi.org/10.1038/s41592-021-01185-5">10.1038/s41592-021-01185-5</a></p>
+    <p>Cieslak, M., Irfanoglu, M. O., Meisler, S. L., Salo, T., Raikes, A. C., Cook, P. A., Chung, A. W., Lee, E. G., Li, R., Li, X., Pecheva, D., Fair, D. A., Smyser, C. D., Harms, M. P., Landman, B. A., Wisnowski, J. L., Huang, H., Alexander, A. L., & Satterthwaite, T. D. (2025). Diffusion MRI processing in the HEALthy Brain and child development study: Innovations and applications. <em>In bioRxiv.</em> <a href="https://doi.org/10.1101/2025.11.10.687672">https://doi.org/10.1101/2025.11.10.687672</a></p>
     <p>Jensen, J. H., Helpern, J. A., Ramani, A., Lu, H., & Kaczynski, K. (2005). Diffusional kurtosis imaging: the quantification of non-gaussian water diffusion by means of magnetic resonance imaging. Magnetic Resonance in Medicine, 53(6), 1432–1440. <a href="https://doi.org/10.1002/mrm.20508">https://doi.org/10.1002/mrm.20508</a></p>
     <p>Özarslan E, Koay CG, Shepherd TM, Komlosh ME, İrfanoğlu MO, Pierpaoli C, Basser PJ. (2013). Mean apparent propagator (MAP) MRI: a novel diffusion imaging method for mapping tissue microstructure. <em>Neuroimage</em>, 78:16-32. <a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">10.1016/j.neuroimage.2013.04.016</a></p>
 </div>

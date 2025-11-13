@@ -481,6 +481,24 @@ Functional MRI data is processed through [infant-fMRIPrep](https://nibabies.read
 
 Volumetric and surface-based time series will be made available for each subject. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. All parcellated derivatives are generated from a variety of parcellation schemes. See the folder trees above for a full list of [XCP-D](#xcpd) and [Infant fMRIPrep](#nibabies) included in the release.
 
+## Quality Control Summary Statistics
+
+<div id="fconn" class="static-banner" style="border-left: 5px solid #199bd6;">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+    <span class="text">Functional Connectivity as Data Quality Improves</span>
+    <a class="anchor-link" href="#fconn" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+</div>
+<div class="table-static-content">
+<p>Average functional connectivity matrices were computed using the Gordon parcellation from <a href="../fmri/#xcpd">XCP-D derivatives</a> for V02 sessions with data inclusion based on various thresholds of BrainSwipes QC results (<code>img_brainswipes_xcpd-bold</code>; <a href="../qc/#brainswipes">see details</a>). Functional connectivity patterns remained consistent even when incorporating data with lower QC scores, suggesting robustness to mild quality variations.</p>
+<p><strong>Connectivity matrices as data quality improves (Left -> Right) based on QC thresholds of 0.1, 0.5, and 0.9:</strong></p>
+<img src="../images/fconn_qc.png" style="width: 90%;" class="center">
+<br>
+</div>
+
 ## References
 <div class="references">
    <p>Cosgrove KT, McDermott TJ, White EJ, Mosconi MW, Thompson WK, Paulus MP, Cardenas-Iniguez C, Aupperle RL. Limits to the generalizability of resting-state functional magnetic resonance imaging studies of youth: An examination of ABCD Study® baseline data. <i>Brain Imaging Behav</i> 16, 1919-1925, 2022. <a href="https://doi.org/10.1007/s11682-022-00665-2" target="_blank">doi: 10.1007/s11682-022-00665-2</a></p>
