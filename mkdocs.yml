@@ -76,6 +76,7 @@ nav:
     - Instruments Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
     - Administrative:
+        - 🚧 Pre-Scan Questionnaire: instruments/admin/prescan-questionnaire.md
         - 🚧 Transitions in Care: instruments/admin/transitions-in-care.md
     - Demographics:
         - ⚠️ Basic Demographics: instruments/demo/basicdemo.md
@@ -149,7 +150,6 @@ nav:
             - Overview & MR Protocols: instruments/mri/index.md
             - Quality Control Procedures: instruments/mri/qc.md
             - MRI Processing & Derivatives Guide: instruments/mri/mri-proc.md
-            - 🚧 Pre-Scan Questionnaire: instruments/mri/questionnaire.md
             - Structural MRI: instruments/mri/smri.md
             - Functional MRI: instruments/mri/fmri.md
             - Diffusion MRI: instruments/mri/dmri.md

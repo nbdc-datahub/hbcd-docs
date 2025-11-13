@@ -5,7 +5,7 @@
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>img_ra_prep</code></div>
+    <div class="info-value"><code>adm_ra_fb</code></div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
