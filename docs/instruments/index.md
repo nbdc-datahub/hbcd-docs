@@ -55,15 +55,10 @@ Expand the sections below to see a list of measures associated with each domain 
     <tr>
       <th style="width: 30%;">Instrument</th>
       <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Name / <i style="color: teal;" class="fas fa-layer-group"></i> Folder Name</th>
+      <th style="width: 30%;"><i style="color: teal;" class="fas fa-layer-group"></i> Concatenated Folder Name</th>
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td><a href="admin/prescan-questionnaire" target="_blank">Pre-Scan Questionnaire</a></td>
-    <td>Infant Sleep Environment</td>
-    <td><code>adm_ra_fb</code></td>
-</tr>
   <tr>
     <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
@@ -803,6 +798,11 @@ Expand the sections below to see a list of measures associated with each domain 
 <td></td>
   <td><a href="mri/qc/#brainswipes" target="_blank">BrainSwipes (Manual QC)</a></td>
   <td><code>img_brainswipes_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_<span class="blue-text">&lt;T1w|T2w|bold&gt;</span></code></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="mri/prescan-questionnaire" target="_blank">Pre-Scan Questionnaire</a></td>
+<td><code>img_ra_prep</code></td>
 </tr>
 <tr>
     <td></td>

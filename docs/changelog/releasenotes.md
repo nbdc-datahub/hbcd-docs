@@ -107,11 +107,15 @@ Approximately **30 new study instruments/measures** have been added across the f
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-clipboard" style="font-size:1.1em; margin-right: 2px;"></i> ADM
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-clipboard" style="font-size:1.1em; margin-right: 2px;"></i> ADM
   <span class="tooltiptext">Administrative</span></span></td>
-  <td>Pre-Scan Questionnaire</td></tr>
-  <tr><td>Transition in Care Screener &nbsp;<i style="color: teal;" class="fas fa-layer-group"></i></td></tr>
+  <td>Transition in Care Screener &nbsp;<i style="color: teal;" class="fas fa-layer-group"></i></td>
 </tr>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i> IMG
+  <span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
+  <td>Pre-Scan Questionnaire</td>
 <tr>
 <td rowspan="6" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-people-arrows" style="font-size:1.1em; margin-right: 2px;"></i> MH<span class="tooltiptext">Behavior & Caregiver-Child Interaction</span></span></td>
 <td>CHAOS (<i>Confusion, Hubbub and Order Scale</i>)</td></tr>
