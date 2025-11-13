@@ -102,7 +102,7 @@ Unique hash IDs in the Infant fMRIPrep and XCP-D derivative folder and filenames
 
 ## MRI Derivatives Quick Start Guide
 
-Below is a summary of key MRI derivatives used for **structural morphology** and **resting-state functional MRI (rsfMRI) functional connectivity** analyses. Key derivatives are produced by the **XCP-D** pipeline, which builds on BIBSNet and Infant-fMRIPrep outputs to produce fully preprocessed, denoised, and quality-assessed data. See <a href="../fmri/#xcpd" target="_blank">XCP-D derivatives included in the HBCD release</a>.
+Below is a summary of key MRI derivatives used for **structural morphology** and **resting-state functional MRI (rsfMRI) functional connectivity** analyses. Key derivatives, produced by the **XCP-D** pipeline, include volumetric and surface-based time series for each participant. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. All parcellated derivatives are generated from a variety of parcellation schemes. See <a href="../fmri/#xcpd" target="_blank">XCP-D derivatives included in the HBCD release</a>.
 
 <div id="struc" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-cubes"></i></span>

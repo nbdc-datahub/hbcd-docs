@@ -125,6 +125,10 @@ HBCD protocols for structural MRI were informed by recent large-scale developmen
 - As with the [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study), the contrast-relevant parameters are matched as closely as possible across vendors for the T1w scans.
 - Also similar to the [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study), for the T2w scans, vendor-specific parameters were chosen to achieve similar contrast and SNR, accounting for the fact that each vendor implements their 3D T2w pulse sequences differently.
 
+## Data Processing
+Structural MRI data is used for a variety of image processing pipelines - **see the [MRI Processing & Derivatives Guide](mri-proc.md) for details.**
+
+
 ## References
 <div class="references">
     <p>Andersen, M., Björkman-Burtscher, I. M., Marsman, A., Petersen, E. T., & Boer, V. O. (2019). Improvement in diagnostic quality of structural and angiographic MRI of the brain using motion correction with interleaved, volumetric navigators.

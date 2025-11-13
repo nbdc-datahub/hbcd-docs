@@ -450,8 +450,7 @@ hbcd/
 </div>
 
 ## Data Processing
-
-Functional MRI data is processed through [infant-fMRIPrep](https://nibabies.readthedocs.io/en/latest/) and subsequently [XCP-D](https://xcp-d.readthedocs.io/en/latest/usage.html) - **see the [MRI Processing & Derivatives Guide](mri-proc.md#structural-and-functional-mri-processing) for details.** Volumetric and surface-based time series are available for each subject. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. All parcellated derivatives are generated from a variety of parcellation schemes. See the folder trees above for a full list of [XCP-D](#xcpd) and [Infant fMRIPrep](#nibabies) included in the release.
+Functional MRI data is processed through [infant-fMRIPrep](https://nibabies.readthedocs.io/en/latest/) and subsequently [XCP-D](https://xcp-d.readthedocs.io/en/latest/usage.html) - **see the [MRI Processing & Derivatives Guide](mri-proc.md) for details.** 
 
 ## Quality Control Summary Statistics
 
