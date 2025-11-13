@@ -21,12 +21,17 @@ The **HBCD processing pipelines** are a collection of modular tools used to proc
   </thead>
   <tbody>
 <tr>
-<td colspan="1" rowspan="6">
+<td colspan="1" rowspan="7">
 <div>MRI</div>
 </td>
 <td><a href="https://mriqc.readthedocs.io/en/latest/">MRIQC</a></td>
 <td><code>mriqc/</code></td>
 <td style="word-wrap: break-word; white-space: normal;">Automated extraction of image quality metrics from structural and functional MRI data</td>
+<tr>
+<td><a href="https://brain-mri-enhancement.readthedocs.io/">BME-X</a></td>
+<td><code>bme_x/</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Structural pipeline for T1w/T2w image quality enhancement</td>
+</tr>
 <tr>
 <td><a href="https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html">qMRI Postproc</a></td>
 <td><code>symri/</code><br><code>qmri_postproc/</code></td>
