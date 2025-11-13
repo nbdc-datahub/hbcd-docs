@@ -89,7 +89,7 @@ hbcd/
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
-    |__ bibsnet/
+    |__ bme_x/
         |__ sub-<span class="label">{ID}</span>/
             |__ ses-<span class="label">{V0X}</span>/
                 |__ anat/
