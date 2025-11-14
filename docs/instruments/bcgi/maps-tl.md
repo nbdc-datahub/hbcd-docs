@@ -153,5 +153,6 @@ When some but not all items are completed (9–16 at V03 or 20–39 at V05), a p
 
 ## References
 <div class="references">
+<p>Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. <em>Developmental Cognitive Neuroscience</em>, 69, 101422. <a href="https://doi.org/10.1016/j.dcn.2024.101422">https://doi.org/10.1016/j.dcn.2024.101422</a></p>
 <p>Krogh-Jespersen, S., Kaat, A. J., Petitclerc, A., Perlman, S. B., Briggs-Gowan, M. J., Burns, J. L., Adam, H., Nili, A., Gray, L., &amp; Wakschlag, L. S. (2022). Calibrating temper loss severity in the transition to toddlerhood: Implications for developmental science. <em>Applied Developmental Science</em>, 26(4), 785–798. <a href="https://doi.org/10.1080/10888691.2021.1995386">https://doi.org/10.1080/10888691.2021.1995386</a></p>
 </div>
