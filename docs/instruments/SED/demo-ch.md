@@ -72,7 +72,14 @@ There are several items with branching logic; please consult the following resou
 
 ## Instrument Details
 
-Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. **Beginning at Visit 4, the study includes a child demographic form** that captures detailed information about the child’s background, family structure, and household environment, including:
+<p>
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">See <a href="../../demo/basicdemo/" target="_blank">Basic Demographics</a> for additional demographics variables derived from HBCD Demographics and administrative records collected during study enrolment/screening.</span>
+</div>
+</p>
+
+Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. **Beginning at Visit 4, the study includes a child demographic form** that captures detailed information about the child’s background, family structure, and household environment (see [Sources for Demographic Protocols & Modifications](demo-ch.md#demo-tables)). This includes:
 
  - Child's sex at birth
  - Child's race and ethnicity (with multiple selections allowed to capture diverse identities)
@@ -81,41 +88,6 @@ Demographic information is crucial for understanding the child’s environment a
  - Total household income for the past year (if the child resides in more than one household, respondents are asked to provide the average household income across residences)
 
 These data are designed to support a nuanced analysis of the child’s social and family context within the HBCD study. See [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the HBCD Demographics survey.
-
-Additional derived variables are available in the [Basic Demographics](../demo/basicdemo.md) instrument, which includes variables derived from the HBCD Demographics as well as data collected during study enrolment/screening.
-
-<strong>&nbsp;&nbsp;Table 1. Sources</strong>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-<th style="width: 30%;">Construct</th>
-<th style="width: 30%;">Source</th>
-<th style="width: 30%;">Citations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Household Roster</td>
-  <td>Environmental Influences on Child Health Outcomes (<a href="https://echochildren.org/">ECHO</a>)</td>
-  <td>None available</td>
-</tr>
-<tr>
-  <td>Race/Ethnicity</td>
-  <td>Office of Management & Budget (OMB)</td>
-  <td><a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">Federal Register 2023</a></td>
-</tr>
-<tr>
-  <td>Others Describe Your Child</td>
-  <td><span class="tooltip">BRFSS<span class="tooltiptext">Behavioral Risk Factor Surveillance System</span></span></td>
-  <td>Jones et al. 2008</td>
-</tr>
-<tr>
-  <td>Annual Household Income</td>
-  <td><span class="tooltip">ABCD<span class="tooltiptext">Adolescent Brain Child Development Study</span></span></td>
-  <td>Barch et al. 2017</td>
-</tr>
-</tbody>  
-</table>
 
 ## References
 
