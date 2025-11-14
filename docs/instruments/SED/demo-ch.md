@@ -72,57 +72,50 @@ There are several items with branching logic; please consult the following resou
 
 ## Instrument Details
 
-Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. **Beginning at Visit 4, there is a child demographic form** that collects information about the child’s background and household environment. It includes questions on the child’s sex at birth, race and ethnicity (with multiple selectable categories to capture diverse identities), and how others classify the child’s race or ethnicity. 
+Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. **Beginning at Visit 4, the study includes a child demographic form** that captures detailed information about the child’s background, family structure, and household environment, including:
 
-The form also documents the respondent’s relationship to the child, legal guardianship status, and whether the respondent lives with the child, including the number of days per month in shared residence. Additional sections capture detailed household composition, such as the number of adults and children, and request a table listing all individuals who live with the child at least two nights per week, including their age and sex. Additionally, the child form requires the respondent to report the total household income for the past year (note: if the child resides in more than one household, they are asked to provide the average of the household incomes). These data are designed to support a nuanced analysis of the child’s social and family context within the study. See [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the HBCD Demographics survey.
+ - Child's sex at birth
+ - Child's race and ethnicity (with multiple selections allowed to capture diverse identities)
+ - Respondent's relationship to the child, legal guardianship status, and whether the respondent lives with the child (including the number of days per month they share residence)
+ - Detailed household composition, including the number of adults and children in the home and a household roster listing all individuals who live with the child at least two nights per week (including their age and sex)
+ - Total household income for the past year (if the child resides in more than one household, respondents are asked to provide the average household income across residences)
 
-Also see [Basic Demographics](../demo/basicdemo.md), which includes variables derived from the HBCD Demographics instruments and data collected during study enrolment/screening.
+These data are designed to support a nuanced analysis of the child’s social and family context within the HBCD study. See [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the HBCD Demographics survey.
 
-<div id="demo-tables" class="table-banner" onclick="toggleCollapse(this)">
- <span class="emoji"><i class="fa fa-magnifying-glass"></i></span>
-  <span class="text-with-link">
-  <span class="text">Sources for Child Demographic Questions</span>
-  <a class="anchor-link" href="#demo-tables" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<br>
-<strong>&nbsp;&nbsp;Table 1. Citations for Major Topics in Child Demographics</strong>
+Additional derived variables are available in the [Basic Demographics](../demo/basicdemo.md) instrument, which includes variables derived from the HBCD Demographics as well as data collected during study enrolment/screening.
+
+<strong>&nbsp;&nbsp;Table 1. Sources</strong>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-    <tr>
-    <th style="width: 30%;">Construct</th>
-    <th style="width: 30%;">Source</th>
-    <th style="width: 30%;">Citations</th>
-    </tr>
+<tr>
+<th style="width: 30%;">Construct</th>
+<th style="width: 30%;">Source</th>
+<th style="width: 30%;">Citations</th>
+</tr>
 </thead>
-    <tbody>
-    <tr>
-      <td>Household Roster</td>
-      <td>Environmental Influences on Child Health Outcomes (<a href="https://echochildren.org/">ECHO</a>)</td>
-      <td>None available</td>
-    </tr>
-    <tr>
-      <td>Race/Ethnicity</td>
-      <td>Office of Management & Budget (OMB)</td>
-      <td><a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">Federal Register 2023</a></td>
-    </tr>
-    <tr>
-      <td>Others Describe Your Child</td>
-      <td><span class="tooltip">BRFSS<span class="tooltiptext">Behavioral Risk Factor Surveillance System</span></span></td>
-      <td>Jones et al. 2008</td>
-    </tr>
-    <tr>
-      <td>Annual Household Income</td>
-      <td><span class="tooltip">ABCD<span class="tooltiptext">Adolescent Brain Child Development Study</span></span></td>
-      <td>Barch et al. 2017</td>
-    </tr>
-  </tbody>  
-  </table>
-</div>
+<tbody>
+<tr>
+  <td>Household Roster</td>
+  <td>Environmental Influences on Child Health Outcomes (<a href="https://echochildren.org/">ECHO</a>)</td>
+  <td>None available</td>
+</tr>
+<tr>
+  <td>Race/Ethnicity</td>
+  <td>Office of Management & Budget (OMB)</td>
+  <td><a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards">Federal Register 2023</a></td>
+</tr>
+<tr>
+  <td>Others Describe Your Child</td>
+  <td><span class="tooltip">BRFSS<span class="tooltiptext">Behavioral Risk Factor Surveillance System</span></span></td>
+  <td>Jones et al. 2008</td>
+</tr>
+<tr>
+  <td>Annual Household Income</td>
+  <td><span class="tooltip">ABCD<span class="tooltiptext">Adolescent Brain Child Development Study</span></span></td>
+  <td>Barch et al. 2017</td>
+</tr>
+</tbody>  
+</table>
 
 ## References
 
