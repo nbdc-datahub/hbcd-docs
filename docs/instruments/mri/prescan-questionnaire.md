@@ -8,10 +8,6 @@
     <div class="info-value"><code>img_ra_prep</code></div>
   </div>
   <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">Pre-Scan Questionnaire</div>
-  </div>
-  <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
     <div class="info-value">Infant Sleep Environment</div>
   </div>

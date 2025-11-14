@@ -1,15 +1,9 @@
-# Infant Sensor Questionnaire
+# Infant Sensor Questionnaire 1/2/3
 
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
     <div class="info-value"><code>nt_ch_sens__qtn_&lt;1|2|3&gt;</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-       Infant Sensor Questionnaire 1/2/3
-    </div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>

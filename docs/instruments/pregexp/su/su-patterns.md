@@ -8,12 +8,6 @@
     <div class="info-value"><code>ex_bm_subst</code></div>
   </div>
   <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Substance Use Patterns in Pregnancy
-    </div>
-  </div>
-  <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
     <div class="info-value">Substance Use in Pregnancy</div>
   </div>
