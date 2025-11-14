@@ -2,7 +2,6 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 (addition of ECBQ)</i> 🚧 </p>
 
 # Behavior Questionnaire + Inhibition
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
@@ -14,14 +13,14 @@
 </thead>
 <tbody>
 <tr>
-  <td><b>IBQ-R (VSF)+BI</b></td>
-  <td>Infant (<b>I</b>)</td>
+  <td>IBQ-R (VSF)+BI</td>
+  <td>Infant (<i>I</i>)</td>
   <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
   <td><code>mh_cg_ibqr</code></td>
 </tr>
 <tr>
-  <td><b>ECBQ (VSF)+BI</b></td>
-  <td>Early Childhood (<b>EC</b>)</td>
+  <td>ECBQ (VSF)+BI</td>
+  <td>Early Childhood (<i>EC</i>)</td>
   <td><code>mh_cg_ecbq</code></td>
 </tr>
 </tbody>

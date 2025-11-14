@@ -8,8 +8,7 @@
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Family Assessment Device (General Functioning 6+) (<i>FAD (GF6+)</i>) 
+    <div class="info-value">Family Assessment Device (General Functioning 6+) 
     </div>
   </div>
   <div class="info-row">

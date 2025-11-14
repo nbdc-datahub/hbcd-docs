@@ -14,7 +14,7 @@
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Multidimensional Assessment Profiles - Temper Loss Scale (<i>MAPS-TL</i>)</td>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Multidimensional Assessment Profiles - Temper Loss Scale</td>
   <td><strong>Infancy (&lt;1 year)</strong></td>
   <td>Irritability</td>
   <td><code>mh_cg_mapdb__inf</code></td>
