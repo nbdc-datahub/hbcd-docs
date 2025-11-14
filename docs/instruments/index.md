@@ -567,14 +567,14 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>sed_cg_employ</code></td>
 </tr>  
 <tr>
-  <td><a href="SED/demo-cg" target="_blank">Demographics Adult</a></td>
-  <td>V1, V4, V6</td>
+  <td><a href="SED/demo-cg" target="_blank">Demographics</a></td>
+  <td>Adult</td>
   <td>Demographics (Adult V01, V04, V06)</td>
   <td><code>sed_bm_demo</code></td>
 </tr> 
 <tr>
-  <td><a href="SED/demo-ch" target="_blank">Demographics Child</a></td>
-  <td>V4, V6</td>
+  <td><a href="SED/demo-ch" target="_blank">Child Demographics</a></td>
+  <td>Child</td>
   <td>Demographics (Child V04, V06)</td>
   <td><code>sed_bm_demo_child</code></td>
 </tr> 

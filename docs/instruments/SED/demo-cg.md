@@ -1,35 +1,23 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0: add additional versions for later visits to this same page</i></p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
 
-# Demographics Adult
+# Demographics (Adult)
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th style="width: 25%;"><i class="fa-solid fa-maximize"></i> Instrument</th>
-  <th style="width: 15%;"><i class="fa-solid fa-clone"></i> Version</th>
-  <th style="width: 25%;"><i class="fa-solid fa-tape"></i> Construct</th>
-  <th style="width: 25%;"><i class="fa fa-table"></i> Table Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td rowspan="4">HBCD Adult Demographics</td>
-  <td><strong>V1</strong></td>
-  <td>Demographics (Adult Visit 1)</td>
-  <td><code>sed_bm_demo</code></td>
-</tr>
-<tr>
-  <td><strong>V4</strong></td>
-  <td>Demographics (Birth Parent & Alt. Caregiver Visit 4)</td>
-  <td>ADD<code></code></td>
-</tr>
-<tr>
-  <td><strong>V6</strong></td>
-  <td>Demographics (Adult Visit 6)</td>
-  <td>ADD<code></code></td>
-</tr>
-</tbody>
-</table>
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>sed_bm_demo</code></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">Demographics
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Demographics: V01, V06 (Adult) & V04 (Birth Parent & Alternative Caregiver)</div>
+  </div>
+</div>
+---------------------------------------------   
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
