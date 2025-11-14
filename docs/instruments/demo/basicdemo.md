@@ -56,7 +56,7 @@
 Basic Demographics is a **derived measure** with information computed from the following sources: 
 
 - **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
-- A subset of <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics instrument (Adult)</a> (`sed_bm_demo`) Social & Environmental Determinants domain instrument variables 
+- A subset of <a href="../../SED/demo-cg/" target="_blank">Demographics instrument (Adult)</a> (`sed_bm_demo`) Social & Environmental Determinants domain instrument variables 
 
 Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.) for the adult/caregiver and beginning at Visit V02 for the child (post-birth). *However*, if only V01 data for a given participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about their child will be missing, as the child is not born until after the V01 visit.
 
@@ -100,12 +100,12 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <tr>
   <td>Mother education</td>
   <td><code>rc_mother_education</code></td>
-  <td>Derived from <code>sed_bm_demo_edu_001</code> (HBCD Demographics).</td>
+  <td>Derived from <code>sed_bm_demo_edu_001</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>) at V01</td>
 </tr>
 <tr>
   <td>Total household income</td>
   <td><code>rc_mother_income</code></td>
-  <td>Derived from <code>sed_bm_demo_income_002</code> (HBCD Demographics).</td>
+  <td>Derived from <code>sed_bm_demo_income_002</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>) at V01</td>
 </tr>
 <tr>
   <td>Recruitment site</td>
@@ -117,7 +117,7 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 
 ### Race & Ethnicity Variables
 
-Race and ethnicity variables are either computed from administrative records collected during screening using the American Community Survey ([ACS](https://www.census.gov/programs-surveys/acs.html)), or a single All of Us (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">AOU</a>) race and ethnicity item collected as part of the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics</a> instrument.
+Race and ethnicity variables are either computed from administrative records collected during screening using the American Community Survey ([ACS](https://www.census.gov/programs-surveys/acs.html)), or a single All of Us (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">AOU</a>) race and ethnicity item collected as part of the <a href="../../SED/demo-cg/" target="_blank">Demographics</a> instrument.
 
 <p style="font-size: 0.9em; color: #555;">
 <i class="fa-solid fa-baby"></i>&nbsp;= Variable refers to the child &nbsp;&nbsp;
@@ -209,7 +209,7 @@ Race and ethnicity variables are either computed from administrative records col
 <p></p>
 
 #### AOU-Derived Variables
-*Computed from a single All of Us (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">AOU</a>) race and ethnicity item collected as part of the <a href="../../SED/demo-cg/" target="_blank">HBCD Demographics</a> instrument.*
+*Computed from a single All of Us (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">AOU</a>) race and ethnicity item collected as part of the <a href="../../SED/demo-cg/" target="_blank">Demographics</a> instrument.*
 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
