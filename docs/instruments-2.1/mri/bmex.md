@@ -16,5 +16,4 @@ Manual QC ratings were coded numerically: Excellent = 0, Good = 1, Questionable 
 
 <img src="../images/bme-x.png" width="50%" height="auto" class="center">
 
-Interestingly, the BME-X Quality Index (QI) showed no significant correlation with the enhanced manual QC scores (ρ=0.02, p=0.78) and a significant, but weak (R² < 0.03) negative correlation with original manual QC scores prior to enhancement (ρ = −0.21, p < 0.001), meaning slightly higher QI values were linked with better-rated original images. The overall strength of this relationship was small (R² < 0.03), indicating that QI is not a reliable predictor of human QC ratings.
-
+The BME-X Quality Index (QI) showed no significant correlation with the enhanced manual QC scores (ρ=0.02, p=0.78) and a significant, but weak (R² < 0.03) negative correlation with original manual QC scores prior to enhancement (ρ = −0.21, p < 0.001), meaning slightly higher QI values were linked with better-rated original images.

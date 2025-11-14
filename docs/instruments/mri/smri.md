@@ -85,7 +85,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The Brain MRI Enhancement foundation (BME-X) model pipeline performs motion correction, resolution enhancement, denoising, and harmonization of MR images. Derivatives include enhanced T1w/T2w images and associated brainmasks. See the <a href="https://brain-mri-enhancement.readthedocs.io/en/latest/#outputs">pipeline documentation</a> for more information.</p>
+<p>The Brain MRI Enhancement foundation (BME-X) model pipeline performs motion correction, resolution enhancement, denoising, and harmonization of MR images. Derivatives include enhanced T1w/T2w images (head: <code>desc-preproc</code> and brain: <code>desc-enhanced</code>) and associated brainmasks. See the <a href="https://brain-mri-enhancement.readthedocs.io/en/latest/#outputs">pipeline documentation</a> for more information.</p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
