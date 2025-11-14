@@ -1,12 +1,12 @@
-# SPM-2
+# Sensory Processing Measure-2 (*SPM-2*)
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th style="width: 30%;"><i class="fa-solid fa-maximize"></i> Instrument</th>
-  <th style="width: 20%;"><i class="fa-solid fa-clone"></i> Version</th>
-  <th style="width: 20%;"><i class="fa-solid fa-tape"></i> Construct</th>
-  <th style="width: 20%;"><i class="fa fa-table"></i> Table Name</th>
+  <th style="width: 30%;">Instrument</th>
+  <th style="width: 20%;">Version</th>
+  <th style="width: 20%;">Construct</th>
+  <th style="width: 20%;">Table Name</th>
 </tr>
 </thead>
 <tbody>

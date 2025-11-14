@@ -9,12 +9,6 @@
     <div class="info-value"><code>ph_cg_bisq</code></div>
   </div>
   <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Brief Infant Sleep Questionnaire (<i>BISQ-SF</i>)
-    </div>
-  </div>
-  <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
     <div class="info-value">Sleep</div>
   </div>

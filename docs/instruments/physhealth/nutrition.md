@@ -8,12 +8,6 @@
     <div class="info-value"><code>ph_cg_inq</code></div>
   </div>
   <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Infant Nutrition Questionnaire
-    </div>
-  </div>
-  <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
     <div class="info-value">Nutrition</div>
   </div>

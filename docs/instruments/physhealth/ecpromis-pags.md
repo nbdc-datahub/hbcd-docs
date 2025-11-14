@@ -1,6 +1,6 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
 
-# Physical Activity
+# ecPROMIS - Physical Activity/Greenspace
 
 <div class="info-block">
   <div class="info-row">
@@ -10,7 +10,7 @@
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
     <div class="info-value">
-      Early Childhood Patient-Reported Outcome Measurement Information System Parent Proxy Physical Activity Short Form and Greenspace questions
+      Early Childhood Patient-Reported Outcome Measurement Information System - Parent Proxy Physical Activity Short Form and Greenspace
     </div>
   </div>
   <div class="info-row">
@@ -42,7 +42,7 @@
 
 ## Instrument Details
 
-The **PROMIS Early Childhood (EC) Parent Report Physical Activity** questionnaire is a measurement of the frequency, duration, and physiologic impacts (sweating, needing more rest, etc.) of a child's physical activity. It is validated for ages 1-5. As a PROMIS measure, the instrument has published scoring guidelines. The questions included in the HBCD protocol are the PROMIS Early Childhood Parent- Report Scale v1.0 - Physical Activity 7a. The physical activities questions are supplemented with questions about access and utilization of greenspace which have been developed by the Physical Health working group.
+The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **ecPROMIS - Parent Report Physical Activity** questionnaire is a measurement of the frequency, duration, and physiologic impacts (sweating, needing more rest, etc.) of a child's physical activity. It is validated for ages 1-5. As a PROMIS measure, the instrument has published scoring guidelines. The questions included in the HBCD protocol are the PROMIS Early Childhood Parent- Report Scale v1.0 - Physical Activity 7a. The physical activities questions are supplemented with questions about access and utilization of greenspace which have been developed by the Physical Health working group.
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>

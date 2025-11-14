@@ -7,9 +7,7 @@
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Height/Weight/Head Circumference
-    </div>
+    <div class="info-value">Height/Weight/Head Circumference</div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>

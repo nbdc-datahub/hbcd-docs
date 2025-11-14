@@ -1,17 +1,11 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
 
-# Screen-Based Media Use
+# Screen-Based Media Use (<i>ScreenQ</i>)
 
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
     <div class="info-value"><code>ph_cg_screenq</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      ScreenQ Screen-Based Media Use Measure (<i>ScreenQ</i>)
-    </div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>

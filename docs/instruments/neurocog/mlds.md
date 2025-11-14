@@ -7,9 +7,7 @@
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Multilingual Language Development Screener (<i>MLDS</i>)
-    </div>
+    <div class="info-value">Multilingual Language Development Screener</div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>

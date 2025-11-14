@@ -7,6 +7,12 @@
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
     <div class="info-value"><code>mh_cg_pms__peer</code></div>
   </div>
+    <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">
+      Early Childhood Patient-Reported Outcome Measurement Information System Peer Relationships Scale
+    </div>
+  </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
     <div class="info-value">Peer Relationships</div>
