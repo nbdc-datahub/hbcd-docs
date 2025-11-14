@@ -8,11 +8,6 @@
     <div class="info-value"><code>sed_bm_demo</code></div>
   </div>
   <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">Demographics
-    </div>
-  </div>
-  <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
     <div class="info-value">Demographics: V01, V06 (Adult) & V04 (Birth Parent & Alternative Caregiver)</div>
   </div>

@@ -1,19 +1,19 @@
 <p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
 
-# ACEs
+# Adverse Childhood Experiences (*ACEs*)
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-  <th><i class="fa-solid fa-maximize"></i> Instrument</th>
-  <th><i class="fa-solid fa-clone"></i> Version</th>
-  <th><i class="fa-solid fa-tape"></i> Construct</th>
-  <th><i class="fa fa-table"></i> Table Name</th>
+  <th>Instrument</th>
+  <th>Version</th>
+  <th>Construct</th>
+  <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Adverse Childhood Experiences (ACEs)</td>
+  <td rowspan="2">Adverse Childhood Experiences</td>
   <td><strong>ACEs</strong></td>
   <td>Adverse Childhood Experiences (Caregiver)</td>
   <td><code>sed_cg_ace</code></td>

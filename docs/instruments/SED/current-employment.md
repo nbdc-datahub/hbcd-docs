@@ -8,10 +8,6 @@
     <div class="info-value"><code>sed_cg_employ</code></div>
   </div>
   <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">Current Employment</div>
-  </div>
-  <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
     <div class="info-value">Current Employment</div>
   </div>

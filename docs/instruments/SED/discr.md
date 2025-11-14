@@ -6,12 +6,6 @@
     <div class="info-value"><code>sed_bm_phx__discr</code></div>
   </div>
   <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      PhenX+ Toolkit Discrimination
-    </div>
-  </div>
-  <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
     <div class="info-value">Experiences of Unfair Treatment</div>
   </div>

@@ -1,6 +1,6 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 - addition of version: &lt;18</i> 🚧 </p>
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 - addition of &lt;18</i> 🚧 </p>
 
-# Protective and Compensatory Experience
+# Protective and Compensatory Experience (*PACES*)
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -13,7 +13,7 @@
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2">Protective and Compensatory Experience (<i>PACES</i>)</td>
+  <td rowspan="2">Protective and Compensatory Experience</td>
   <td><strong>PACES (Current)</strong></td>
   <td>Protective Factors</td>
   <td><code>sed_bm_paces</code></td>

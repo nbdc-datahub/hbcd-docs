@@ -6,12 +6,6 @@
     <div class="info-value"><code>sed_bm_nbhsaf</code></div>
   </div>
   <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-       PhenX+ Toolkit Neighborhood Safety
-    </div>
-  </div>
-  <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
     <div class="info-value">Neighborhood Safety</div>
   </div>
