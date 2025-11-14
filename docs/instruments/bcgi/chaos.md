@@ -76,8 +76,9 @@ The **Confusion, Hubbub, and Order Scale (CHAOS)** is a 15-item, self-report sca
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Whereas the original scale used a dichotomous <em>True/False</em> response (<a href="https://doi.org/10.1016/0193-3973(95)90028-4">Matheny et al., 1995</a>), more recent publications using the CHAOS have adopted a 4-point Likert scale to better reflect normative nuance in household chaos (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8680262/">Wilhoit et al., 2021</a>). Overall, results examining household chaos are consistent across both response sets (in terms of associations with child cognitive/behavioral outcomes, parenting, etc.) (<a href="https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-021-00651-1">Andrews et al., 2021</a>; <a href="https://doi.org/10.1186/s12889-020-08587-8">Marsh et al., 2020</a>) and the Likert scale seems to maintain the scale validity of the original measure. Additionally, the Spanish-language version of the CHAOS is noted to use the 4-point Likert scale (<a href="https://doi.org/10.15174/au.2019.1971">Sanchez-Mondragon & Flores Herrera, 2019</a>).</p>
-<p>Based on HBCD measure expert and working group consensus, HBCD will utilize the Likert scale for the response options with: 1, Very much like your own home | 2, Somewhat like your own home | 3, A little bit like your own home | 4, Not at all like your own home.</p>
+<p>The original CHAOS used True/False responses (<a href="https://doi.org/10.1016/0193-3973(95)90028-4">Matheny et al., 1995</a>), but more recent work favors a 4-point Likert scale for improved sensitivity (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8680262/">Wilhoit et al., 2021</a>). Empirical results suggest consistent scale validity and associations (with child cognitive/behavioral outcomes, parenting, etc.) across both formats (<a href="https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-021-00651-1">Andrews et al., 2021</a>; <a href="https://doi.org/10.1186/s12889-020-08587-8">Marsh et al., 2020</a>). The 4-point scale is also validated in the Spanish language version of CHAOS as well (<a href="https://doi.org/10.15174/au.2019.1971">Sanchez-Mondragon & Flores Herrera, 2019</a>).</p>
+<p>Based on expert consensus, HBCD uses a 4-point scale with the following options:</p>
+<p style="margin-left: 20px;">{<i>1 = Very much | 2 = Somewhat | 3 = A little bit | 4 = Not at all</i>} like your own home</p>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
@@ -92,12 +93,7 @@ The **Confusion, Hubbub, and Order Scale (CHAOS)** is a 15-item, self-report sca
 </div>
 <div class="collapsible-content">
 <p>The CHAOS instrument consists of 15 items, each rated on a 4-point scale to indicate how much each statement describes the participant's home environment:</p>
-<ul>
-  <li>1 = Very much like your own home</li>
-  <li>2 = Somewhat like your own home</li>
-  <li>3 = A little bit like your own home</li>
-  <li>4 = Not at all like your own home</li>
-</ul>
+<p style="margin-left: 20px;">{<i>1 = Very much | 2 = Somewhat | 3 = A little bit | 4 = Not at all</i>} like your own home</p>
 <p>A non-response option, "<em>Decline to Answer</em>," is available and does not contribute to scoring.</p>
 <p><b>Total score:</b><br>
 Calculated as the sum of all numerical item responses, excluding non-responses. Higher scores indicate a higher level of household CHAOS. If fewer than 12 items are completed (or 4 or more items are missing), a total score is not computed. If less than 25% of items are missing (≤3 items), a prorated sum score is calculated using the formula:
