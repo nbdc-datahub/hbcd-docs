@@ -498,8 +498,12 @@ Swipes display GIFs of full-resolution T2w images as a grayscale background, wit
 </div>
 </p>
 
-**BrainSwipes QC results are provided as [tabulated](../index.md#mri) data**: <code>img_brainswipes_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_<span class="blue-text">&lt;T1w|T2w&gt;</span></code> and <code>img_brainswipes_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_bold</code> (where <code><span class="blue-text">&lt;HASH&gt;</span></code> ID corresponds to the method used for surface reconstruction - see [Dual Surface Reconstruction Methods](mri-proc.md#dual-surface-reconstruction-methods)).
-QC scores range from 0 (Fail) to 1 (Pass), averaged across reviewers. For example, a score of 0.6 indicates that 60% of reviewers rated the image as a pass. The data includes overall average QC scores and average number of reviewers for each session-level T2w and BOLD run (summarizing across all visual reports for a given run) as well as the average QC and number of reviewers for each visual report. A Python helper function is provided below to load a BrainSwipes TSV file into a Pandas DataFrame and filter runs with average QC scores above a user-specified threshold:
+**BrainSwipes QC results are provided as [tabulated](../index.md#mri) data** with unique hashes to indicate the method used for surface reconstruction performed in Infant fMRIPrep (see [Dual Surface Reconstruction Methods](mri-proc.md#dual-surface-reconstruction-methods)):
+
+ - <code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code> (*T2w-based surf recon with M-CRIB-S*)
+ - <code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code> (*T1w-based surf recon with Infant FreeSurfer*) 
+
+QC scores range from 0 (Fail) to 1 (Pass), averaged across reviewers. For example, a score of 0.6 indicates that 60% of reviewers rated the image as a pass. The data includes overall average QC scores and average number of reviewers for each session-level T1w/T2w and BOLD run (summarizing across all visual reports for a given run) as well as the average QC and number of reviewers for each visual report. A Python helper function is provided below to load a BrainSwipes TSV file into a Pandas DataFrame and filter runs with average QC scores above a user-specified threshold:
 
 <div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-brands fa-python"></i></span>
