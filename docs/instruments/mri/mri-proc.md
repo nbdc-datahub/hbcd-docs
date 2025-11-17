@@ -77,31 +77,56 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
 </div>
 
 ## Dual Surface Reconstruction Methods
-Unique hash IDs in the Infant fMRIPrep and XCP-D derivative folder and filenames are used to distinguish processing methods. These correspond to dual Infant fMRIPrep surface reconstruction methods (hash ID `0f306a2f` vs. `2afa9081`), followed by XCP-D processing (hash ID `0ef9c88a`). Full details are available on the HBCD Processing site (see [here](https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tool_details.html)).
 
+Infant fMRIPrep uses age-specific atlas templates and multiple surface reconstruction pipelines to accommodate rapid developmental changes in infant brain anatomy (<a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>). For early developmental stages, this includes **M-CRIB-S** (optimized for neonates) and **Infant FreeSurfer** (optimized for infants roughly 0–2 years old).
 
-ADD: mcribs used for V02 and infantFS used for V02, V03, V04
+Each processed dataset includes a unique hash ID embedded in the derivative folders and filenames. These IDs indicate which surface reconstruction method was used for the Infant fMRIPrep workflow, as well as the configuration used by XCP-D.
 
+#### Hash ID Interpretation
+
+ - <code>hash-0f306a2f+0ef9c88a</code>: M-CRIB-S (T2w-based surf reconstruction) + XCP-D
+ - <code>hash-2afa9081+0ef9c88a</code>: Infant FreeSurfer (T1w-based surf reconstruction) + XCP-D
+
+The **first hash** corresponds to the Infant fMRIPrep configuration (surface reconstruction method), while the **second hash** corresponds to the XCP-D configuration. All data were processed through a single XCP-D configuration (`0ef9c88a`), while Infant fMRIPrep used two configurations corresponding to the two surface reconstruction methods.
+
+#### Age-Specific Processing
+
+Because the optimal age ranges for M-CRIB-S and Infant FreeSurfer partially overlap, specific HBCD visits were processed as follows:
+
+ - **Visit 2 (0–1 month)**: processed with both M-CRIB-S and Infant FreeSurfer
+ - **Visit 3 (3–9 months)**: processed with Infant FreeSurfer only
+ - **Visit 4 (9–15 months)**: processed with Infant FreeSurfer only
+
+More detail is available on the HBCD Processing site (see <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tool_details.html">documentation</a>).
+
+#### Surface Reconstruction Methods and Hash IDs
 <table class="compact-table-no-vertical-lines">
-<b>Surface Reconstruction Methods</b>
-<thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> </tr> </thead>
+<thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Optimal Age <b>*</b></th> <th>Visit(s)</th> </tr> </thead>
 <tbody>
 <tr>
 <td>M-CRIB-S</td>
 <td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tools/nibabies_25.2.0-0f306a2f.html">0f306a2f</a></td>
-<td>T2w-based method optimized for neonates (<a href="https://doi.org/10.1038/s41598-020-61326-2">Adamson et al., 2020</a>). <i>Optimal ages: ≤ 5 months<b>*</b></i>.</td>
+<td>T2w-based method for neonates (<a href="https://doi.org/10.1038/s41598-020-61326-2">Adamson et al., 2020</a>)</td>
+<td>≤ 5 months</td>
+<td>V02</td>
 </tr> <tr>
 <td>Infant FreeSurfer</td>
-<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tools/nibabies_25.2.0-2afa9081.html">2afa9081</a></td> <td>T1w-based, optimized for infants 0-2 years old (<a href="https://doi.org/10.1016/j.neuroimage.2020.116946">Zöllei et al., 2020</a>). <i>Optimal ages: ≥ 3 months<b>*</b></i></td>
+<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tools/nibabies_25.2.0-2afa9081.html">2afa9081</a></td> <td>T1w-based method for infants 0-2 years old (<a href="https://doi.org/10.1016/j.neuroimage.2020.116946">Zöllei et al., 2020</a>)</td>
+<td>≥ 3 months</td>
+<td>V02/03/04</td>
 </tr> </tbody>
 <tfoot>
 <tr>
-  <td colspan="3" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
-    <b>*</b> Optimal age ranges based on <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>.
-  </td>
+<td colspan="5" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
+<b>*</b> Optimal age ranges based on <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>
+</td>
 </tr>
 </tfoot>
 </table>
+
+add somewhere: Relevant derivatives include: infant fMRIPrep, FreeSurfer, M-CRIB-S, and XCP-D as well as tabulated BrainSwipes QC results.
+
+
 
 ## MRI Derivatives Quick Start Guide
 

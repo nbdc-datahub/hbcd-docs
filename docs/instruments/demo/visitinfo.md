@@ -1,4 +1,3 @@
-
 # Visit Information
 
 <div class="info-block">
