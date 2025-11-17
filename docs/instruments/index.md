@@ -7,7 +7,8 @@ In this section we provide a brief overview of each study instrument provided in
 </div>
 <p></p>
 
-<img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" width="90%" height="auto" class="center">
+<img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" 
+alt="Age of Child participants at each Visit number: Visit 1 (V01) = Prenatal; Visit 2 (V02) = 0-1 month old; Visit 3 (V03) = 3-9 months old; Visit 4 (V04) = 9-15 months old; Visit 5 (V05) = 10-17 months old;  Visit 6 (V06) = 15-30 months old; Visit 7 (V07) = 16-32 months old" width="90%" height="auto" class="center">
 
 HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details. In summary:
 

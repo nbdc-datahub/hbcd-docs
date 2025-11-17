@@ -79,6 +79,9 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
 ## Dual Surface Reconstruction Methods
 Unique hash IDs in the Infant fMRIPrep and XCP-D derivative folder and filenames are used to distinguish processing methods. These correspond to dual Infant fMRIPrep surface reconstruction methods (hash ID `0f306a2f` vs. `2afa9081`), followed by XCP-D processing (hash ID `0ef9c88a`). Full details are available on the HBCD Processing site (see [here](https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tool_details.html)).
 
+
+ADD: mcribs used for V02 and infantFS used for V02, V03, V04
+
 <table class="compact-table-no-vertical-lines">
 <b>Surface Reconstruction Methods</b>
 <thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> </tr> </thead>

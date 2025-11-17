@@ -16,6 +16,68 @@
 
 ## Details
 
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<th>Visit</th>
+<th>Age Range of Child Participants</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Visit 1 (V01)</td>
+<td>Prenatal</td>
+</tr>
+<tr>
+<td>Visit 2 (V02)</td>
+<td>0-1 month old</td>
+</tr>
+<tr>
+<td>Visit 3 (V03)</td>
+<td>3-9 months old</td>
+</tr>
+<tr>
+<td>Visit 4 (V04)</td>
+<td>9-15 months old</td>
+</tr>
+<tr>
+<td>Visit 5 (V05)</td>
+<td>10-17 months old</td>
+</tr>
+<tr>
+<td>Visit 6 (V06)</td>
+<td>15-30 months old</td>
+</tr>
+<tr>
+<td>Visit 7 (V07)</td>
+<td>16-32 months old</td>
+</tr>
+</tbody>
+</table>
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+<td>Visit 1 (V01)</td>
+<td>Visit 2 (V02)</td>
+<td>Visit 3 (V03)</td>
+<td>Visit 4 (V04)</td>
+<td>Visit 5 (V05)</td>
+<td>Visit 6 (V06)</td>
+<td>Visit 7 (V07)</td>
+</tr>
+<tr>
+<td>Prenatal</td>
+<td>0-1 month</td>
+<td>3-9 months</td>
+<td>9-15 months</td>
+<td>10-17 months</td>
+<td>15-30 months old</td>
+<td>16-32 months</td>
+</tr>
+</tbody>
+</table>
+
 Visit information contains all participant visit data, including:
 
 ### General Visit Information
