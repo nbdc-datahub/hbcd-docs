@@ -78,28 +78,23 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
 
 ## Dual Surface Reconstruction Methods
 
-Infant fMRIPrep uses age-specific atlas templates and multiple surface reconstruction pipelines to accommodate rapid developmental changes in infant brain anatomy (<a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>). For early developmental stages, this includes **M-CRIB-S** (optimized for neonates) and **Infant FreeSurfer** (optimized for infants roughly 0–2 years old).
+<p> <div class="table-banner"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 1.0em;" class="fa-solid fa-up-right-from-square"></i></a></span> </div> </p>
 
-Each processed dataset includes a unique hash ID embedded in the derivative folders and filenames. These IDs indicate which surface reconstruction method was used for the Infant fMRIPrep workflow, as well as the configuration used by XCP-D.
+Infant fMRIPrep uses age-specific atlas templates and multiple surface reconstruction workflows to accommodate rapid developmental changes in early brain anatomy (<a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>). For the youngest ages, two surface reconstruction methods are supported: **M-CRIB-S** and **Infant FreeSurfer**, optimized for neonates and 0-2 year old infants, respectively.
 
-#### Hash ID Interpretation
+Because the optimal age ranges overlap, HBCD visits were processed as follows:
 
- - <code>hash-0f306a2f+0ef9c88a</code>: M-CRIB-S (T2w-based surf reconstruction) + XCP-D
- - <code>hash-2afa9081+0ef9c88a</code>: Infant FreeSurfer (T1w-based surf reconstruction) + XCP-D
-
-The **first hash** corresponds to the Infant fMRIPrep configuration (surface reconstruction method), while the **second hash** corresponds to the XCP-D configuration. All data were processed through a single XCP-D configuration (`0ef9c88a`), while Infant fMRIPrep used two configurations corresponding to the two surface reconstruction methods.
-
-#### Age-Specific Processing
-
-Because the optimal age ranges for M-CRIB-S and Infant FreeSurfer partially overlap, specific HBCD visits were processed as follows:
-
- - **Visit 2 (0–1 month)**: processed with both M-CRIB-S and Infant FreeSurfer
+ - **Visit 2 (0–1 month)**: processed with *both* M-CRIB-S and Infant FreeSurfer
  - **Visit 3 (3–9 months)**: processed with Infant FreeSurfer only
  - **Visit 4 (9–15 months)**: processed with Infant FreeSurfer only
 
-More detail is available on the HBCD Processing site (see <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tool_details.html">documentation</a>).
-
 #### Surface Reconstruction Methods and Hash IDs
+To differentiate processing workflows, each set of derivatives includes a **unique hash ID** in both the folder and filenames. The **first hash** identifies the Infant fMRIPrep configuration (i.e., which surface reconstruction method was used), and the **second hash** identifies the XCP-D configuration (which is the same for all participants - `0ef9c88a`).
+
+ - <code>hash-0f306a2f+0ef9c88a</code>: M-CRIB-S (T2w-based surface reconstruction) + XCP-D
+ - <code>hash-2afa9081+0ef9c88a</code>: Infant FreeSurfer (T1w-based surface reconstruction) + XCP-D
+
+The table below summarizes each method, associated hash ID, and age range.
 <table class="compact-table-no-vertical-lines">
 <thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Optimal Age <b>*</b></th> <th>Visit(s)</th> </tr> </thead>
 <tbody>
@@ -123,10 +118,6 @@ More detail is available on the HBCD Processing site (see <a href="https://hbcd-
 </tr>
 </tfoot>
 </table>
-
-add somewhere: Relevant derivatives include: infant fMRIPrep, FreeSurfer, M-CRIB-S, and XCP-D as well as tabulated BrainSwipes QC results.
-
-
 
 ## MRI Derivatives Quick Start Guide
 
