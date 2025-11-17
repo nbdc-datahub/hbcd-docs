@@ -100,31 +100,6 @@ hbcd/
 </pre>
 </div>
 
-<div id="bibsnet" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-<span class="text">BIBSNet Derivatives (<code>bibsnet/</code>)</span>
-  <a class="anchor-link" href="#bibsnet" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>BIBSNet outputs brain segmentations and masks in native T1w and T2w space as well as <code>volumes.tsv</code> files with ROI volume statistics. See the <a href="https://bibsnet.readthedocs.io/en/latest/">pipeline documentation</a> for a full explanation of derivatives.</p>
-<pre class="folder-tree">
-hbcd/
-|__ derivatives/ 
-    |__ bibsnet/
-        |__ sub-<span class="label">{ID}</span>/
-            |__ ses-<span class="label">{V0X}</span>/
-                |__ anat/
-                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_dseg.nii.gz <span class="hashtag">(+JSON)</span>
-                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv <span class="hashtag">(+JSON)</span>         
-                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.nii.gz <span class="hashtag">(+JSON)</span>
-</pre>
-</div>
-
 <div id="nibabies-xcpd" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #fbe6f7">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
