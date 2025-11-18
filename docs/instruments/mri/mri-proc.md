@@ -317,11 +317,11 @@ hbcd/
 </pre>
 </div>
 
-<div id="mcribs-v-fs" class="table-banner" onclick="toggleCollapse(this)">
+<div id="mcribs-vs-fs" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
 <span class="text">Details: <code>mcribs-0f306a2f/</code> vs. <code>freesurfer-0f306a2f/</code></span>
-  <a class="anchor-link" href="#mcribs-v-fs" title="Copy link">
+  <a class="anchor-link" href="#mcribs-vs-fs" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
