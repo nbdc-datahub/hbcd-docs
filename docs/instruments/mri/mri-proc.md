@@ -40,7 +40,7 @@ hbcd/
 </div>
 
 ## Infant fMRIPrep
-<a href="https://nibabies.readthedocs.io/en/latest/">Infant-fMRIPrep</a> (also known as NiBabies) adapts <em>fMRIPrep</em> for infant data using age-appropriate templates and two surface reconstruction methods optimized for early development. Pipeline outputs from minimal structural and functional MRI processing include visual quality assessment reports, preprocessed derivatives, and confounds to be used for denoising in subsequent processing procedures (<i>see <a href="https://nibabies.readthedocs.io/en/latest/outputs.html">pipeline documentation</a></i>).
+<a href="https://nibabies.readthedocs.io/en/latest/">Infant-fMRIPrep</a> (also known as NiBabies) adapts <em>fMRIPrep</em> for infant data using age-appropriate templates and two surface reconstruction methods optimized for early development (<a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>). Pipeline outputs from minimal structural and functional MRI processing include visual quality assessment reports, preprocessed derivatives, and confounds to be used for denoising in subsequent processing procedures (<i>see <a href="https://nibabies.readthedocs.io/en/latest/outputs.html">pipeline documentation</a></i>).
 
 <div id="nibabies" class="table-banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa-solid fa-diagram-project"></i></span>
@@ -136,19 +136,15 @@ hbcd/
 </div>
 
 ## M-CRIB-S & FreeSurfer Surface Reconstruction Methods
-
-Infant fMRIPrep uses age-specific atlas templates and multiple surface reconstruction workflows to accommodate rapid developmental changes in early brain anatomy (<a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>). Surface reconstruction workflows available for infants include:
+Surface reconstruction workflows available for infants within Infant fMRIPrep include:
 
  - **M-CRIB-S**: T2w-based method optimized for neonates (<a href="https://doi.org/10.1038/s41598-020-61326-2">Adamson et al., 2020</a>)
  - **Infant FreeSurfer**: T1w-based method designed for 0-2 year old infants (<a href="https://doi.org/10.1016/j.neuroimage.2020.116946">Zöllei et al., 2020</a>)
 
 Due to the overlap in optimal age ranges, all visit data included in the release (V02, V03, and V04 - <a href="../#age-of-child-at-each-visit" target="_blank">spanning 0-15 months</a>) was processed with Infant FreeSurfer and V02 data (0-1 months) was additionally processed with M-CRIB-S.
 
-#### Hash IDs and Pipeline Configurations
-To differentiate processing workflows, derivatives include **unique hash IDs** that indicate which surface reconstruction method was utilitized within Infant fMRIPrep (`hash-0f306a2f` or `hash-2afa9081`). XCP-D (and BrainSwipes) data include a second hash to indicate the XCP-D processing configuration, which is always `0ef9c88a` for this release.
-
-The table below summarizes each method, associated hash ID, and age range.
-<table class="compact-table-no-vertical-lines">
+**To differentiate processing workflows, derivatives include unique hash IDs that indicate which surface reconstruction method was utilitized within Infant fMRIPrep.** XCP-D (and BrainSwipes) data include a second hash to indicate the XCP-D processing configuration, which is always `0ef9c88a` for this release.
+<table class="table-no-vertical-lines">
 <thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Optimal Age <b>*</b></th> <th>Visit(s)</th> </tr> </thead>
 <tbody>
 <tr>
