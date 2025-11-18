@@ -92,17 +92,17 @@ hbcd/
       |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_from-T2w_to-<span class="placeholder">&lt;MNI&gt;</span>_mode-image_xfm.h5
       |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_from-T2w_to-fsnative_mode-image_xfm.txt
       |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_from-fsnative_to-T2w_mode-image_xfm.txt
-      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>.shape.gii
-      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_<span class="placeholder">&lt;SURF&gt;</span>.surf.gii
-      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_<span class="placeholder">&lt;inflated|sphere&gt;</span>.surf.gii
-      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-dhcpAsym_den-32k_<span class="placeholder">&lt;SURF&gt;</span>.surf.gii
-      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-<span class="placeholder">&lt;dhcpAsym|fsaverage&gt;</span>_den-32k_sphere.surf.gii
+      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;HEM&gt;</span>_<span class="placeholder">&lt;METRIC&gt;</span>.shape.gii
+      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;HEM&gt;</span>_<span class="placeholder">&lt;SURF&gt;</span>.surf.gii
+      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;HEM&gt;</span>_<span class="placeholder">&lt;inflated|sphere&gt;</span>.surf.gii
+      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;HEM&gt;</span>_space-dhcpAsym_den-32k_<span class="placeholder">&lt;SURF&gt;</span>.surf.gii
+      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;HEM&gt;</span>_space-<span class="placeholder">&lt;dhcpAsym|fsaverage&gt;</span>_den-32k_sphere.surf.gii
       |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-MNI152NLin6Asym_res-2_desc-brain_mask.nii.gz <span class="hashtag">(+JSON)</span>
       |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-MNI152NLin6Asym_res-2_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
       |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;SPACE&gt;</span>_dseg.nii.gz <span class="hashtag">(+JSON)</span>
       |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;SPACE&gt;</span>_label-<span class="placeholder">&lt;CSF|GM|WM&gt;</span>_probseg.nii.gz
       |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-T2w_desc-ribbon_mask.nii.gz <span class="hashtag">(+JSON)</span>
-      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>.dscalar.nii <span class="hashtag">(+JSON)</span>
+      |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_<span class="placeholder">&lt;METRIC&gt;</span>.dscalar.nii <span class="hashtag">(+JSON)</span>
       |     |
       |     |_ fmap/
       |     |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_fmapid-auto<span class="label">{X}</span>_desc-coeff_fieldmap.nii.gz
@@ -112,13 +112,12 @@ hbcd/
       |     |_ func/ <span class="hashtag">(ALL +JSON)</span>
       |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-brain_mask.nii.gz
       |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-confounds_timeseries.tsv
-      |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-coreg_boldref.nii.gz
-      |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-hmc_boldref.nii.gz 
+      |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-<span class="placeholder">&lt;coreg|hmc&gt;</span>_boldref.nii.gz
       |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-preproc_bold.nii.gz
       |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_from-boldref_to-T2w_mode-image_desc-coreg_xfm.txt
       |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_from-boldref_to-auto<span class="label">{X}</span>_mode-image_xfm.txt
       |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_from-orig_to-boldref_mode-image_desc-hmc_xfm.txt
-      |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsnative_bold.func.gii
+      |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;HEM&gt;</span>_space-fsnative_bold.func.gii
       |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;SPACE&gt;</span>_boldref.nii.gz
       |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;SPACE&gt;</span>_desc-brain_mask.nii.gz
       |        |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;SPACE&gt;</span>_desc-preproc_bold.nii.gz
@@ -128,10 +127,11 @@ hbcd/
 
 <span class="hashtag"># Label Values Legend</span>
 <span class="subses">SUBSES</span>: sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>
-<span class="placeholder">&lt;HASH&gt;</span>: 0f306a2f, 2afa9081
-<span class="placeholder">&lt;MNI&gt;</span>: MNI152NLin6Asym_res-2, MNIInfant+1
-<span class="placeholder">&lt;SPACE&gt;</span>: MNI152NLin6Asym_res-2, T2w
-<span class="placeholder">&lt;SURF&gt;</span>: midthickness, pial, white
+<span class="placeholder">HASH</span>: 0f306a2f | 2afa9081
+<span class="placeholder">HEM</span>: L | R
+<span class="placeholder">MNI</span>: MNI152NLin6Asym_res-2 | MNIInfant+1
+<span class="placeholder">SPACE</span>: MNI152NLin6Asym_res-2 | T2w
+<span class="placeholder">SURF</span>: midthickness | pial | white
 </pre>
 </div>
 
@@ -145,7 +145,7 @@ Due to the overlap in optimal age ranges, all visit data included in the release
 
 **To differentiate processing workflows, derivatives include unique hash IDs that indicate which surface reconstruction method was utilitized within Infant fMRIPrep.** XCP-D (and BrainSwipes) data include a second hash to indicate the XCP-D processing configuration, which is always `0ef9c88a` for this release.
 <table class="table-no-vertical-lines">
-<thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Optimal Age <b>*</b></th> <th>Visit(s)</th> </tr> </thead>
+<thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Optimal Age <b>*</b></th> <th>Visits</th> </tr> </thead>
 <tbody>
 <tr>
 <td>M-CRIB-S</td>
@@ -281,8 +281,7 @@ hbcd/
             |           |__ <span class="placeholder">&lt;STRUCT&gt;</span>-mask-<span class="placeholder">{X}</span>.nii.gz
             |           |__ <span class="placeholder">&lt;TISSUE&gt;</span>-<span class="placeholder">{X}</span>.vtp
             |           |__ <span class="placeholder">&lt;TISSUE&gt;</span>-<span class="placeholder">{X}</span>-output_<span class="placeholder">{X}</span>.vtp
-            |           |__ pial-foreground.nii.gz
-            |           |__ white-foreground.nii.gz
+            |           |__ <span class="placeholder">&lt;pial|white&gt;</span>-foreground.nii.gz
             |           |__ ventricles-dmap.nii.gz
             |           |__ t2w-image.nii.gz_symlink_s3_object
             |
@@ -352,8 +351,6 @@ done</span>
 <button class="copy-button">Copy</button>
 </div>
 </div>
-
-
 </div>
 
 ## XCP-D
@@ -377,7 +374,7 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
 <li>Despiking and filtering: Data despiked, temporally filtered (0.01–0.08 Hz), and smoothed (6 mm FWHM).</li>
 <li>Censoring: High-motion volumes are interpolated and later censored to minimize motion artifacts.</li>
 <li>Amplitude of Low-Frequency Fluctuations (ALFF) and Regional Homogeneity (ReHo) metrics computed from cleaned data.</li> 
-<li>Parcellated time series are extracted for <a href="../mri/index.md#parc">each atlas</a> and pairwise functional connectivity is calculated as the Pearson correlation between regional time series.</li>
+<li>Parcellated time series are extracted for <a href="#parc">each atlas</a> and pairwise functional connectivity is calculated as the Pearson correlation between regional time series.</li>
 <li>Postprocessed derivatives are concatenated across runs.</li>
 </ul>
 </div>
@@ -401,35 +398,31 @@ hbcd/
          |_ ses-<span class="label">{V0X}</span>/
          |  |_ anat/
          |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-MNI152NLin6Asym_desc-preproc_T2w.nii.gz
-         |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>_morph.tsv
+         |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-<span class="placeholder">&lt;METRIC&gt;</span>_morph.tsv
          |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;inflated|vinflated&gt;</span>.surf.gii
          |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;midthickness|pial|white&gt;</span>.surf.gii
-         |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_<span class="placeholder">&lt;curv|sulc|thickness&gt;</span>.dscalar.nii
+         |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_<span class="placeholder">&lt;METRIC&gt;</span>.dscalar.nii
          |  |
          |  |_ func/ <span class="hashtag"># All func files have JSONs with exception of .hdf5 & *linc_qc.tsv</span>
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_desc-abcc_qc.hdf5 <span class="hashtag">(No JSON)</span>
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_<span class="placeholder">&lt;motion|outliers&gt;</span>.tsv
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_space-fsLR_den-91k_desc-denoisedSmoothed_bold.dtseries.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii
+         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_space-fsLR_den-91k_desc-<span class="placeholder">&lt;DENOISED&gt;</span>_bold.dtseries.nii
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-abcc_qc.hdf5 <span class="hashtag">(No JSON)</span>
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-linc_qc.tsv <span class="hashtag">(No JSON)</span>
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_<span class="placeholder">&lt;design|motion|outliers&gt;</span>.tsv
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-denoisedSmoothed_bold.dtseries.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-alff_boldmap.dscalar.nii
+         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-<span class="placeholder">&lt;DENOISED&gt;</span>_bold.dtseries.nii
+         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-<span class="placeholder">&lt;STAT&gt;</span>_boldmap.dscalar.nii
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-alff_desc-smooth_boldmap.dscalar.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-reho_boldmap.dscalar.nii
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-coverage_boldmap.pscalar.nii
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-pearsoncorrelation_boldmap.pconn.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-alff_bold.tsv
+         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-<span class="placeholder">&lt;STAT&gt;</span>_bold.tsv
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-coverage_bold.tsv
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
          |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-reho_bold.tsv
          |  
          |_ figures/
          |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_executive_summary.html
@@ -437,8 +430,11 @@ hbcd/
 
 <span class="hashtag"># Label Values Legend</span>
 <span class="subses">SUBSES</span>: sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>
-<span class="placeholder">&lt;HASH&gt;</span>: 0f306a2f+0ef9c88a, 2afa9081+0ef9c88a
-<span class="placeholder">&lt;APARC&gt;</span>: 4S-&lt;156|256|...|1056&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte
+<span class="placeholder">&lt;HASH&gt;</span>: 0f306a2f+0ef9c88a | 2afa9081+0ef9c88a
+<span class="placeholder">&lt;METRIC&gt;</span>: curv | sulc | thickness
+<span class="placeholder">&lt;DENOISED&gt;</span>: denoised | denoisedSmoothed
+<span class="placeholder">&lt;STAT&gt;</span>: alff | reho
+<span class="placeholder">&lt;APARC&gt;</span>: 4S-&lt;156|256|...|1056&gt;Parcels | Glasser | Gordon | MIDB | MyersLabonte
 <span class="placeholder">&lt;PARC&gt;</span>: 4S-&lt;156|256|...|1056&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian
 </pre>
 </div>
