@@ -11,6 +11,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     max-width: 900px; /* Adjust to your layout */
     margin: 20px auto; /* Center on the page */
+    position: relative; /* allow absolute positioning inside */
+    padding-top: 40px;  /* optional: creates space so button doesn't overlap text */
   }
   /* Text container styles */
   .copy-text-container {
@@ -53,6 +55,9 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
   .copy-button:hover {
     background: #0056b3;
