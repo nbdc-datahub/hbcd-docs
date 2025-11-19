@@ -48,15 +48,18 @@ hbcd/
 <a class="anchor-link" href="#nibabies" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
 <span class="arrow">▸</span></div>
 <div class="table-collapsible-content">
-<p><b>Anatomical Processing</b><br>
-  T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infant 
-  template (0–4.5 yr), then to MNI152 for compatibility with adult datasets. Surface 
-  reconstruction is performed via:
-</p>
-<ul>
-  <li><b>M-CRIB-S</b>: T2w-based method with modified <code>MCRIBReconAll</code> workflow. Uses pre-computed anatomical segmentation from BIBSNet.</li>
-  <li><b>Infant FreeSurfer</b>: T1w-based method that runs <code>infant_recon_all</code>.</li>
-</ul>
+<p><b>Anatomical Preprocessing</b><br>
+T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infant template (0–4.5 yr), then to MNI152 for compatibility with adult datasets. <b><i>Surface reconstruction</i></b> is performed via one of the following methods:</p>
+<table class="table-no-vertical-lines">
+<tbody>
+<tr>
+<td><b>M-CRIB-S</b></td>
+<td style="word-wrap: break-word; white-space: normal;">T2w-based method for neonates (<a href="https://doi.org/10.1038/s41598-020-61326-2">Adamson et al., 2020</a>). Infant fMRIPrep runs a modified <code>MCRIBReconAll</code> workflow that uses the BIBSNet-derived brain segmentation. <i>Optimal age range per <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>: ≤ 5 months</i></td>
+</tr> <tr>
+<td><b>Infant FreeSurfer</b></td>
+<td style="word-wrap: break-word; white-space: normal;">T1w-based method for infants 0-2 years old (<a href="https://doi.org/10.1016/j.neuroimage.2020.116946">Zöllei et al., 2020</a>). Infant fMRIPrep executes <code>infant_recon_all</code> with its default configuration. <i>Optimal age range per <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>: ≥ 3 months</i></td>
+</tr> </tbody>
+</table>
 <p><b>Functional Processing</b></p>
 <ul>
   <li>Motion and distortion correction using fieldmap-based estimation.</li>
@@ -136,40 +139,29 @@ hbcd/
 </div>
 
 ## M-CRIB-S & FreeSurfer Surface Reconstruction Methods
-Surface reconstruction workflows available for infants within Infant fMRIPrep include:
-
- - **M-CRIB-S**: T2w-based method optimized for neonates (<a href="https://doi.org/10.1038/s41598-020-61326-2">Adamson et al., 2020</a>)
- - **Infant FreeSurfer**: T1w-based method designed for 0-2 year old infants (<a href="https://doi.org/10.1016/j.neuroimage.2020.116946">Zöllei et al., 2020</a>)
-
-Due to the overlap in optimal age ranges, all visit data included in the release (V02, V03, and V04 - <a href="../#age-of-child-at-each-visit" target="_blank">spanning 0-15 months</a>) was processed with Infant FreeSurfer and V02 data (0-1 months) was additionally processed with M-CRIB-S.
-
-**To differentiate processing workflows, derivatives include unique hash IDs that indicate which surface reconstruction method was utilitized within Infant fMRIPrep.** XCP-D (and BrainSwipes) data include a second hash to indicate the XCP-D processing configuration, which is always `0ef9c88a` for this release.
+Infant fMRIPrep supports two infant-specific surface reconstruction workflows (*[see details above](#nibabies)*): **M-CRIB-S** (used to process **V02** data) and **Infant FreeSurfer** (used to process **V02**, **V03**, and **V04** data). Derivatives include **unique hash IDs** to indicate which surface reconstruction method was used within Infant fMRIPrep for a given dataset:
 <table class="table-no-vertical-lines">
-<thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Optimal Age <b>*</b></th> <th>Visits</th> </tr> </thead>
+<thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Visits <i>(Age Range in Months)</i></th> </tr> </thead>
 <tbody>
 <tr>
 <td>M-CRIB-S</td>
 <td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tools/nibabies_25.2.0-0f306a2f.html">0f306a2f</a></td>
 <td>T2w-based method for neonates</td>
-<td>≤ 5 months</td>
-<td>V02</td>
+<td>V02 <i>(0-1 m)</i></td>
 </tr> <tr>
 <td>Infant FreeSurfer</td>
 <td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tools/nibabies_25.2.0-2afa9081.html">2afa9081</a></td> <td>T1w-based method for infants 0-2 years old</td>
-<td>≥ 3 months</td>
-<td>V02, V03, V04</td>
+<td>V02 <i>(0-1 m)</i>, V03 <i>(3-9 m)</i>, V04 <i>(9-15 m)</i></td>
 </tr> </tbody>
-<tfoot>
-<tr>
-<td colspan="5" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
-<b>*</b> Optimal age ranges based on <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>
-</td>
-</tr>
-</tfoot>
 </table>
 
+Below we summarize the processing workflows and resulting derivative folder names. Note that downstream outputs such as XCP-D include a second hash indicating the XCP-D processing configuration, which is always `0ef9c88a` for this release:
+<p align="center">
+  <img src="../images/proc-hashes.png" alt="Detailed MRI Processing Workflow">
+</p>
+
 #### Derivatives
-The M-CRIB-S and FreeSurfer folders included in the derivatives are sourced from [intermediate FreeSurfer-like folders](https://nibabies.readthedocs.io/en/latest/outputs.html#surface-reconstruction) generated by Infant-fMRIPrep during surface reconstruction. Note that when M-CRIB-S is used for surface reconstruction, Infant fMRIPrep still produces a FreeSurfer-like folder containing M-CRIB-S outputs mapped to follow the structure of FreeSurfer’s <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/ReconAllOutputFiles">recon-all</a>  - available in the release under <code>freesurfer-0f306a2f/</code>.
+The M-CRIB-S and FreeSurfer derivative folders are generated from the [intermediate FreeSurfer-like folders](https://nibabies.readthedocs.io/en/latest/outputs.html#surface-reconstruction) produced by Infant fMRIPrep during surface reconstruction. When M-CRIB-S is used, Infant fMRIPrep still creates a FreeSurfer-structured folder containing the M-CRIB-S results mapped to the standard <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/ReconAllOutputFiles">recon-all</a> layout; these appear in the release under <code>freesurfer-0f306a2f/</code>.
 
 <div id="fs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
@@ -441,7 +433,7 @@ hbcd/
 
 ## MRI Derivatives Quick Start Guide
 
-Below is a summary of key MRI derivatives used for **structural morphology** and **resting-state functional MRI (rsfMRI) functional connectivity** analyses. Key derivatives, produced by the **XCP-D** pipeline, include volumetric and surface-based time series for each participant. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. All parcellated derivatives are generated from a variety of parcellation schemes. See <a href="../fmri/#xcpd" target="_blank">XCP-D derivatives included in the HBCD release</a>.
+Below is a summary of key MRI derivatives used for **structural morphology** and **resting-state functional MRI (rsfMRI) functional connectivity** analyses. Key derivatives, produced by the **XCP-D** pipeline, include volumetric and surface-based time series for each participant. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. 
 
 <div id="struc" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-cubes"></i></span>
