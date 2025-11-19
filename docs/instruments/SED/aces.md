@@ -26,6 +26,19 @@
 </tbody>
 </table>
 
+<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Responsible Use Warning</i></span>
+  <a class="anchor-link" href="#alert" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="alert-collapsible-content">
+<p>This variable was only collected as a total ACE count, which means the specific items participants experienced are unknown.  Total ACE counts are strongly associated with a variety of health-related outcomes, and we used this data collection strategy to encourage more accurate reporting.  Total ACE counts should not be considered indexes of childhood neglect and maltreatment because not all ACE items reflect this.  It would be inappropriate to conclude that higher total ACE counts in specific populations reflect increased child abuse, for example.</p> 
+</div>
 
 ## Administration & Quality Control
 
