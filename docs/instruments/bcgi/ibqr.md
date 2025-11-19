@@ -165,7 +165,7 @@ Caregivers are asked to report on the infant’s behaviors on a 7-point Likert s
 </tr>
 </tbody>
 </table>
-<p><i>Options also include "Does not apply," which is not scored, but coded as "0" and "8" in the ECBQ and IBQ-R, respectively.</i></p>
+<p><b>NOTE: Options also include "Does not apply," which is not scored, but coded as "0" and "8" in the ECBQ and IBQ-R, respectively. For consistency between instruments, the coding will be changed to 8 for IBQ-R in a future release.</b> <span style="color: red;">LUCI NOTE: check that coding is still different - may or may not make 2.0 - see <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/18314046677">monday.com item</a></span></p>
 <p><b>Scale Scores</b><br>
 Each domain score is calculated as the mean of all applicable scale items:</p>
 <ul>

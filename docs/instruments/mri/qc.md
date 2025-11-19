@@ -498,7 +498,7 @@ Swipes display GIFs of full-resolution T2w images as a grayscale background, wit
 </div>
 </p>
 
-**BrainSwipes QC results are provided as [tabulated](../index.md#mri) data** with unique hashes to indicate the method used for surface reconstruction performed in Infant fMRIPrep (see [Dual Surface Reconstruction Methods](mri-proc.md#dual-surface-reconstruction-methods)):
+**BrainSwipes QC results are provided as [tabulated](../index.md#mri) data** with unique hashes to indicate the method used for surface reconstruction performed in Infant fMRIPrep (see [M-CRIB-S & FreeSurfer Reconstruction Methods](mri-proc.md#m-crib-s-freesurfer-surface-reconstruction-methods)):
 
  - <code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code> (*T2w-based surf recon with M-CRIB-S*)
  - <code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code> (*T1w-based surf recon with Infant FreeSurfer*) 
