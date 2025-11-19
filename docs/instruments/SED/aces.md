@@ -73,7 +73,7 @@
 </tr>
 <tr>
     <td><b>Quality Control Procedures</b></td>
-    <td colspan="2" style="word-wrap: break-word; white-space: normal;">QC is minimal as participants just report the total number of ACE events. Caution should be used if subject's ACEs scores decrease on subsequent visits as this could suggest inaccurate responding.</td>
+    <td colspan="2" style="word-wrap: break-word; white-space: normal;">QC is minimal as participants only report the total number of ACE events. Declines in ACE scores at later visits should be interpreted cautiously, as they may reflect inconsistent or inaccurate responding.</td>
 </tr>      
 </tbody>
 </table>
