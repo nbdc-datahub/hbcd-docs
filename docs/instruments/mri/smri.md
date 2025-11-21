@@ -103,7 +103,7 @@ hbcd/
 <div id="nibabies-xcpd" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #fbe6f7">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-<span class="text">Infant fMRIPrep (<code>nibabies/</code>) & XCP-D (<code>xcp_d/</code>) Derivatives</span>
+<span class="text">BIBSNet, Infant fMRIPrep (<code>nibabies/</code>), & XCP-D Derivatives</span>
   <a class="anchor-link" href="#nibabies-xcpd" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -111,7 +111,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>See the <code>anat/</code> subfolders of Infant fMRIPrep (<a href="../fmri/#nibabies" target="_blank">here</a>) and XCP-D (<a href="../fmri/#xcpd" target="_blank">here</a>) derivatives documented on the Functional MRI page, including T1w/T2w images processed to correct for motion and distortions and surface reconstructions.</p>
+<p>Structural MRI data is used for a variety of image processing pipelines such as BIBSNet, Infant fMRIPrep, and XCP-D. The pipelines generate structural-specific derivatives within an <code>anat/</code> subfolder, including T1w/T2w images processed to correct for motion and distortions and surface reconstructions. See <a href="../mri-proc/#structural-functional-mri-processing-overview" target="_blank">Structural & Functional MRI Processing Overview</a> for details.<p>
 </div>
 
 ## Data Acquisition
@@ -128,7 +128,6 @@ HBCD protocols for structural MRI were informed by recent large-scale developmen
 
 ## Data Processing
 Structural MRI data is used for a variety of image processing pipelines - **see the [MRI Processing & Derivatives Guide](mri-proc.md) for details.**
-
 
 ## References
 <div class="references">

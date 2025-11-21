@@ -111,6 +111,20 @@ hbcd/
 </pre>
 </div>
 
+<div id="nibabies-xcpd" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #fbe6f7">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">Infant fMRIPrep (<code>nibabies/</code>) & XCP-D Derivatives</span>
+  <a class="anchor-link" href="#nibabies-xcpd" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Functional MRI data is used in a variety of image processing pipelines, such as Infant fMRIPrep and XCP-D, in combination with structural data. The pipelines generate functional-specific derivatives within <code>func/</code> subfolder. See <a href="../mri-proc/#structural-functional-mri-processing-overview" target="_blank">Structural & Functional MRI Processing Overview</a> for details.<p>
+</div>
+
 ## Data Acquisition
 
 <div style="display: flex; align-items: center; gap: 20px;">

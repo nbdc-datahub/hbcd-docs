@@ -2,7 +2,7 @@
 
 Below we describe the processing streams for structural and functional MRI, which are more involved and include multiple pipelines. For a high-level overview of processing across modalities, see <a href="../../processing/">HBCD Processing Pipelines</a>.
 
-## Structural and Functional MRI Processing Overview
+## Structural & Functional MRI Processing Overview
 
 <p> <div class="table-banner"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 1.0em;" class="fa-solid fa-up-right-from-square"></i></a></span> </div> </p>
 
