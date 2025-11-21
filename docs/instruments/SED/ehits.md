@@ -41,6 +41,7 @@
 ## Instrument Details
 The eHITS is a self-administered 5 question Likert scale screener for experiences of psychological aggression, physical assault, sexual coercion, and injury. Originally created for quick administration in a health care setting or emergency department, the eHITS asks individuals to indicate whether their partner has done any of the following over the past 12 months: "physically hurt you", "insulted you", "threatened to harm you", "screamed or cursed at you", or "forced you to have sexual activities."
 
+
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
@@ -122,8 +123,19 @@ The following outlines the differences in the wording and/or content of question
     </tr>
 </tbody>
 </table>
+</div>
 
-<p><b>Scoring Procedures</b></p>
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
 <p>The eHITS summary score (sum of item ratings) is used clinically as a screening tool for intimate partner violence (IPV) based on a certain threshold. For HBCD, a clinical alert for IPV is triggered when the summary score is greater than 7 and/or the scores for “…physically hurt you?” or “…forced you to engage in sexual activity?” is greater than 0. If a respondent selects “Don’t know” for one or more questions, a clinical alert may not generate for a participant whose correct responses would result in a score sufficient to trigger an alert.</p>
 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
@@ -139,9 +151,9 @@ The following outlines the differences in the wording and/or content of question
         <td style="width: 400px; word-wrap: break-word; white-space: normal;">Score range: 0 - 20</td>
     </tr>
         <tr>
-        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Summary score>10.5 for IPV</td>
-        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Summary score> 8.5 for IPV</td>
-        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Summary score>3.5 for IPV</td>
+        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Summary score > 10.5 for IPV</td>
+        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Summary score > 8.5 for IPV</td>
+        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Summary score > 3.5 for IPV</td>
     </tr>
 </tbody>
 </table>
