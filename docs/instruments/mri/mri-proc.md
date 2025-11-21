@@ -374,7 +374,7 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
 <div id="xcpd-derivs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-<span class="text">XCP-D Derivatives (<code>xcp_d/</code>)</span>
+<span class="text">XCP-D Derivatives (<code>xcp_d-&lt;0f306a2f|2afa9081&gt;+0ef9c88a/</code>)</span>
   <a class="anchor-link" href="#xcpd-derivs" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
