@@ -158,6 +158,26 @@ If you have questions or would like to report an issue, please submit a ticket t
 </tbody>
 </table>
 
+### <a href="../../instruments/#socenvdet" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+  <tr>
+    <th style="width: 20%;">TABLE/DATA</th>
+    <th style="width: 1%; text-align: center;">FIX</th>
+    <th>KNOWN ISSUE</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>eHITS<br><code>sed_bm_ehits</code></td>
+  <td><b>2.0</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  The variable <code>sed_bm_ehits_total_score</code> was erroneously included and can safely be ignored - use <code>sed_bm_ehits_score</code> instead for sum scores.
+</td>
+</tr>
+</tbody>
+</table>
+
 ### <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
