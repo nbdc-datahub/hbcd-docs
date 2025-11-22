@@ -350,12 +350,6 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-  <td><a href="physhealth/foodinsecurity" target="_blank">2-item Food Insecurity</a></td>
-  <td></td>
-  <td>Food insecurity</td>
-  <td><code>sed_cg_foodins</code></td>
-</tr>
-<tr>
   <td><a href="physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
   <td></td>
   <td>Sleep</td>
@@ -613,6 +607,12 @@ Expand the sections below to see a list of measures associated with each domain 
   <td>Intimate Partner Violence</td>
   <td><code>sed_bm_ehits</code></td>
 </tr>  
+<tr>
+  <td><a href="SED/foodinsecurity" target="_blank">Food Insecurity</a></td>
+  <td></td>
+  <td>Food insecurity</td>
+  <td><code>sed_cg_foodins</code></td>
+</tr>
 <tr>
   <td><a href="SED/home21" target="_blank">HOME-21</a></td>
   <td>Infant-Toddler</td>

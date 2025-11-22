@@ -1,0 +1,80 @@
+Filepath,Status
+../docs/instruments/template.md,Both
+../docs/instruments/agevariables.md,None
+../docs/instruments/index.md,None
+../docs/instruments/demo/visitinfo.md,None
+../docs/instruments/demo/basicdemo.md,Responsible Use Warning
+../docs/instruments/sensors/wearsensors.md,Data Warning
+../docs/instruments/sensors/questionnaire.md,Data Warning
+../docs/instruments/physhealth/nutrition.md,None
+../docs/instruments/physhealth/ecpromis-sleep.md,None
+../docs/instruments/physhealth/foodinsecurity.md,Data Warning
+../docs/instruments/physhealth/medical-history.md,Responsible Use Warning
+../docs/instruments/physhealth/bf.md,Data Warning
+../docs/instruments/physhealth/vision.md,None
+../docs/instruments/physhealth/screenq.md,None
+../docs/instruments/physhealth/ecpromis-pags.md,None
+../docs/instruments/physhealth/growth.md,Data Warning
+../docs/instruments/physhealth/bisq-sf.md,None
+../docs/instruments/SED/demo-ch.md,Both
+../docs/instruments/SED/current-employment.md,None
+../docs/instruments/SED/second-hand-smoke-exposure.md,Data Warning
+../docs/instruments/SED/bfy.md,None
+../docs/instruments/SED/safety.md,None
+../docs/instruments/SED/lead-exposures.md,Responsible Use Warning
+../docs/instruments/SED/demo-cg.md,Both
+../docs/instruments/SED/geocoded-linkage.md,Responsible Use Warning
+../docs/instruments/SED/promis.md,None
+../docs/instruments/SED/demo-ch-table.md,None
+../docs/instruments/SED/household-chemical-exposures.md,Data Warning
+../docs/instruments/SED/home21.md,Responsible Use Warning
+../docs/instruments/SED/aces.md,Responsible Use Warning
+../docs/instruments/SED/paces.md,None
+../docs/instruments/SED/cab.md,None
+../docs/instruments/SED/ehits.md,None
+../docs/instruments/SED/discr.md,None
+../docs/instruments/SED/vi.md,Responsible Use Warning
+../docs/instruments/processing/index.md,None
+../docs/instruments/processing/standards.md,None
+../docs/instruments/bcgi/ecpromis.md,Both
+../docs/instruments/bcgi/ecpromis-selfreg.md,Responsible Use Warning
+../docs/instruments/bcgi/ibqr.md,Both
+../docs/instruments/bcgi/ecpromis-pr.md,Responsible Use Warning
+../docs/instruments/bcgi/fad.md,Responsible Use Warning
+../docs/instruments/bcgi/chaos.md,Responsible Use Warning
+../docs/instruments/bcgi/maps-tl.md,Both
+../docs/instruments/pregexp/pex.md,Both
+../docs/instruments/pregexp/tlfb-temp.md,None
+../docs/instruments/pregexp/mh/apa12.md,Data Warning
+../docs/instruments/pregexp/mh/ptsd.md,Data Warning
+../docs/instruments/pregexp/mh/fam-mh.md,None
+../docs/instruments/pregexp/mh/epds.md,None
+../docs/instruments/pregexp/su/tlfb.md,Both
+../docs/instruments/pregexp/su/su-patterns.md,Both
+../docs/instruments/pregexp/su/assist.md,Both
+../docs/instruments/admin/transitions-in-care.md,Responsible Use Warning
+../docs/instruments/biospec/illumina-gda-gwas.md,Responsible Use Warning
+../docs/instruments/biospec/urine.md,Data Warning
+../docs/instruments/biospec/nails.md,Data Warning
+../docs/instruments/neurocog/mlds.md,Data Warning
+../docs/instruments/neurocog/bayley-4.md,Both
+../docs/instruments/neurocog/spm2.md,Data Warning
+../docs/instruments/neurocog/macarthur-bates.md,Both
+../docs/instruments/neurocog/vineland.md,Both
+../docs/instruments/mri/smri.md,None
+../docs/instruments/mri/qmri.md,Data Warning
+../docs/instruments/mri/qc.md,None
+../docs/instruments/mri/index.md,None
+../docs/instruments/mri/mri-proc.md,None
+../docs/instruments/mri/prescan-questionnaire.md,Data Warning
+../docs/instruments/mri/mri-proc-alt.md,None
+../docs/instruments/mri/fmri.md,Both
+../docs/instruments/mri/protocols.md,None
+../docs/instruments/mri/mrs.md,None
+../docs/instruments/mri/dmri.md,None
+../docs/instruments/mri/images/mermaid.md,None
+../docs/instruments/eeg/qc-alt.md,None
+../docs/instruments/eeg/artifact.md,None
+../docs/instruments/eeg/tasks.md,None
+../docs/instruments/eeg/qc.md,None
+../docs/instruments/eeg/index.md,Responsible Use Warning

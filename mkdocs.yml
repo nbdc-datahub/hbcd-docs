@@ -104,7 +104,6 @@ nav:
             - Breastfeeding: instruments/physhealth/bf.md
             - 🚧 ecPROMIS- PA/GS: instruments/physhealth/ecpromis-pags.md
             - 🚧 PROMIS- Sleep: instruments/physhealth/ecpromis-sleep.md
-            - Food Insecurity: instruments/physhealth/foodinsecurity.md
             - Growth: instruments/physhealth/growth.md
             - 🚧 Medical History: instruments/physhealth/medical-history.md
             - 🚧 Nutrition: instruments/physhealth/nutrition.md
@@ -127,6 +126,7 @@ nav:
             - 🚧 Composite Abuse Scale: instruments/SED/cab.md
             - 🚧 Demographics (Adult): instruments/SED/demo-cg.md
             - 🚧 Child Demographics: instruments/SED/demo-ch.md
+            - Food Insecurity: instruments/SED/foodinsecurity.md
             - 🚧 HOME-21: instruments/SED/home21.md
             - Intimate Partner Violence: instruments/SED/ehits.md
             - 🚧 Employment: instruments/SED/current-employment.md
