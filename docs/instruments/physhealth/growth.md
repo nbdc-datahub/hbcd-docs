@@ -28,22 +28,27 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>Z-Scores Excluded From Current Release</b><br>
-Because dates of birth are jittered and calculated chronologic and adjusted ages are ±6 days, we do not provide z-scores in the current data release. Further, <strong>we do NOT recommend calculating z-scores using V02 data</strong>. Caution is recommended when calculating Z-scores using data from subsequent visits. Future data releases will have z-scores calculated with age in days for investigators wanting to compare to normative growth metrics.</p>
-<p><b>Range Checks for Growth</b><br>
-Range checks for Growth (<code>ph_ch_anthro</code>) were implemented in the database on 7/1/2024 and so are not reflected in data included in the first data release. Extreme out-of-range values outside of the following valid ranges were excluded (converted to 'n/a') (though some outliers are still possible):</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr> 
-  <th>Field Name</th>    
-  <th>Field Description</th> 
-  <th>Valid Range</th>
-  </tr>
-</thead>
-<tbody>        
-<tr><td><code>ph_ch_anthro_len_001__03</code></td><td>Length</td><td>30 to 130 cm</td></tr>     
-<tr><td><code>ph_ch_anthro_head_001__03</code></td><td>Head circumference</td><td>25 to 55 cm</td></tr>          
-<tr><td><code>ph_ch_anthro_wei_001__03</code></td><td>Weight</td><td>0.5 to 30 kg</td></tr>          
+<p>Range checks for growth were performed to identify and exclude extreme out-of-range values. Values outside of the following valid ranges were converted to 'n/a':</p>
+<table class="table-no-vertical-lines" style="font-size: 15px;">
+<tbody>
+<tr>
+<td><b>Name</b></td>
+<td><code>ph_ch_anthro_len_001__03</code></td>
+<td><code>ph_ch_anthro_head_001__03</code></td>
+<td><code>ph_ch_anthro_wei_001__03</code></td>
+</tr>
+<tr>
+<td><b>Description</b></td>
+<td>Average length (in cm)</td>
+<td>Head circumference (cm)</td>
+<td>Average weight (in kg)</td>
+</tr>
+<tr>
+<td><b>Valid Range</b></td>
+<td>30 to 130 cm</td>
+<td>25 to 55 cm</td>
+<td>0.5 to 30 kg</td>
+</tr>
 </tbody>
 </table>
 </div>
