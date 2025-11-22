@@ -27,30 +27,17 @@ Analysts using HBCD data have ethical obligations to minimize risks, including p
 <p>Researchers cannot control how others, including members of the public and policy makers, interpret scientific results we publish. However, we can take steps to minimize the likelihood our results will be misinterpreted or overinterpreted. In addition to clearly denoting limitations and caveats when reporting results, specific approaches for working with genomic data in this context are discussed in <a href="https://doi.org/10.1146/annurev-genom-011224-015733">Martshenko et al (2025)</a>, <i>Social and Behavioral Genomics: On the Ethics of the Research and Its Downstream Applications</i> (<b>Annual Reviews Genomics and Human Genetics</b>). For examples of brief documents that explain social and behavioral genomics for non-experts, see “FAQs on Human Genomics Studies” at <a href="https://www.thehastingscenter.org/genomics-research-index/">https://www.thehastingscenter.org/genomics-research-index/</a>.</p> 
 </div>
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>Any removal of data during QC will be described in the README file accompanying the data.</p> 
-</div>
-
 The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>genetics/</code> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*). It includes **three interlinked PLINK files** (`.bed`, `.bim`, `.fam`) aligned to the **hg19 genome build**, plus supporting documentation and batch metadata:
 
 <pre class="folder-tree">
 hbcd/
 └── concatenated/
   └── genetics/
-      ├── .bed
-      ├── .bim
-      ├── .fam
+      ├── hbcd.bed
+      ├── hbcd.bim
+      ├── hbcd.fam
       ├── batch.info
+      ├── excluded.txt
       └── README
 </pre>
 
@@ -60,17 +47,20 @@ hbcd/
 </thead>
 <tbody>
 <tr>
-  <td><code>.bed</code></td>
+  <td><code>hbcd.bed</code></td>
   <td><a href="https://www.cog-genomics.org/plink/1.9/formats#bed">PLINK 1.9 <code>.bed</code> format</a> — Binary genotype file (not UCSC BED).</td>
 </tr><tr>
-  <td><code>.bim</code></td>
+  <td><code>hbcd.bim</code></td>
   <td><a href="https://www.cog-genomics.org/plink/1.9/formats#bim">PLINK 1.9 <code>.bim</code> format</a> — Variant information (chromosome, rsID, position, alleles).</td>
 </tr><tr>
-  <td><code>.fam</code></td>
+  <td><code>hbcd.fam</code></td>
   <td><a href="https://www.cog-genomics.org/plink/1.9/formats#fam">PLINK 1.9 <code>.fam</code> format</a> — Participant information.</td>
 </tr><tr>
   <td><code>batch.info</code></td>
   <td>Plain-text file mapping participants to genotyping batches.</td>
+</tr><tr>
+  <td><code>excluded.txt</code></td>
+  <td>Plain-text file listing excluded participants.</td>
 </tr><tr>
   <td><code>README</code></td>
   <td>Documentation of QC procedures to ensure sample matches (e.g., ID concordance, sex checks).</td>
