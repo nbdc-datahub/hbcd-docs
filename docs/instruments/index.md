@@ -264,11 +264,11 @@ Expand the sections below to see a list of measures associated with each domain 
 </table>
 </div>
 
-<div id="neurocog" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ncl" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-puzzle-piece"></i></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
-  <a class="anchor-link" href="#neurocog" title="Copy link">
+  <a class="anchor-link" href="#ncl" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>

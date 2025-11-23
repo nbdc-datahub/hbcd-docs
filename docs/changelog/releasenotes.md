@@ -75,7 +75,7 @@ Approximately **30 new study instruments/measures** have been added across the f
 <a style="margin-left: 2px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
 </td>
 <td>
-<a style="margin-left: 2px;" href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language<br>
+<a style="margin-left: 2px;" href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language<br>
 <a style="margin-left: 2px;" href="../../instruments/#ph" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health<br>
 <a style="margin-left: 2px;" href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use<br>
 <a style="margin-left: 2px;" href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
@@ -256,7 +256,7 @@ Approximately **30 new study instruments/measures** have been added across the f
 </td>
 </tr>
 <tr>
-  <td rowspan="2" style="text-align: center;"><a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></td>
+  <td rowspan="2" style="text-align: center;"><a href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></td>
   <td rowspan="2">SPM-2<br><code>ncl_cg_spm2__inf</code></td>
   <td style="word-wrap: break-word; white-space: normal;">
   <b>[1]</b> Added age fields - <code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>.
@@ -544,7 +544,7 @@ Approximately **30 new study instruments/measures** have been added across the f
 </div>
 
 <div id="r1.1ngl" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></span>
+  <span class="emoji"><a href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
   <a class="anchor-link" href="#r1.1ngl" title="Copy link">

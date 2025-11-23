@@ -25,7 +25,7 @@ Variable names may also include **subcomponents**, separated by double ( `__` ) 
 <div class="table-collapsible-content">
 <p>Let's break down the following example: <code>ncl_cg_spm2__inf_soc_001</code></p>
 <ul>
-<li><code>ncl</code>: <a href="../../instruments/#neurocog">Neurocognition &amp; Language</a> (<em>domain</em>)</li>
+<li><code>ncl</code>: <a href="../../instruments/#ncl">Neurocognition &amp; Language</a> (<em>domain</em>)</li>
 <li><code>cg</code>: Caregiver (<em>source</em>)</li>
 <li><code>spm2__inf</code>: nested table name<ul>
 <li><code>spm2</code>: the <a href="../../instruments/neurocog/spm2">SPM-2</a> instrument (<em>table</em>)</li>

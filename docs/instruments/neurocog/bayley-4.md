@@ -51,6 +51,12 @@
 <p>Although the Bayley Scales of Infant and Toddler Development, Fourth Edition, is a well-established and validated measure of infant development, tests of this nature have historically had limited predictive validity for long-term neurocognitive status.</p> 
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#neurocognition-language" target="_blank">see details</a>.</span>
+</div>
+<p></p>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
