@@ -29,7 +29,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr style="border-bottom:2px solid #ccc;">
-    <th style="width: 20%;">TABLE/DATA</th>
+    <th>TABLE/DATA</th>
     <th style="width: 1%; text-align: center;">FIX</th>
     <th>KNOWN ISSUE</th>
   </tr>
@@ -38,9 +38,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <tr>
   <td>Bayley-4 Scales<br><code>nc_ch_bayley</code></td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">There are 13 Bayley administrations that do not have valid scores for all sub-tests. For these participants, the sub-test scores and/or domain scores display as <code>-9999</code>. We recommend cleaning the data to remove participants with scores of <code>-9999</code> <i>(participant list available in <a href="https://hbcd-docs-private.lassoinformatics.com/#flagged-participant-ids">HBCD Private Release Notes</a> accessible via the <a href="https://nbdc-datashare.lassoinformatics.com/help-center">NBDC Data Access Portal Help Center</a>)</i>. These participants will be removed from future release data.
-  
-  <br><span style="color: red;">LUCI ADMIN NOTE: need to figure out if private site can be linked to directly (i.e. will prompt user to log in) - if not, then specify which tab to click in help center</span></td>
+  <td style="word-wrap: break-word; white-space: normal;">There are 13 Bayley administrations that do not have valid scores for all sub-tests. For these participants, the sub-test scores and/or domain scores display as <code>-9999</code>. We recommend cleaning the data to remove participants with scores of <code>-9999</code> <i>(participant list available in <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> accessible via the <a href="https://nbdc-datashare.lassoinformatics.com/help-center">NBDC Data Access Portal Help Center</a>)</i>. These participants will be removed from future release data.</td>
 </tr>
 </tbody>
 </table>
