@@ -4,23 +4,42 @@
 The following issues have been identified in the current HBCD data release. **We are actively working to address them and expect most fixes to be implemented in Release 2.0 unless otherwise noted.** This page will be updated as new issues are discovered.    
 If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
 
-## Instruction Metadata — Read Carefully
+## General
 
-<table class="compact-table-no-vertical-lines">
-<thead style="background-color: #ff8a42cc; color: #695541ff;">
-  <tr>
-    <th>KNOWN ISSUE - <span style="color: #f97316;">EXPECTED FIX TBD</span></th>
-  </tr>
-</thead>
+#### Instruction Metadata — Read Carefully
+
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <tbody>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">
+<span style="color: #695541ff;"><i><b>Expected Fix: TBD</b></i></span><br><br>
   Instruction text in each form’s metadata is automatically extracted from the most recent <code>instruction</code> field in the REDCap Data Dictionary (based on field order). Because this process is automated, it may produce the following issues:
   <ul>
     <li>If an instruction spans multiple fields, only the <b>last portion</b> will be captured.</li>
     <li>Some fields may display text intended for a <b>previous section</b>.</li>
   </ul>
   Manual review and correction of instruction metadata are planned for a future release (<b>expected fix date TBD</b>). For the most accurate and complete information, please refer to the original form.</td>
+</tr>
+</tbody>
+</table>
+
+#### Differences in TSV vs Parquet Data Precision
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">
+<span style="color: #695541ff;"><i><b>Expected Fix: 2.0</b></i></span><br><br>
+TSV and Parquet files are currently generated from the source data via separate pipelines which lead to minor discrepancies in how certain values are represented, including:
+<ul>
+  <li><b>How NULL values are displayed</b>: To be BIDS compliant, ‘n/a’ is used as placeholder for empty cells in the data tables (tsv). Values passed as NAN/nan , '' , ‘n/a’ or ‘inf’ are mapped to ‘Null’ (blank) in parquet files. This is due to the more restrictive format of the parquet file.</li>
+  <li><b>Precision of floating-point values</b> (<code>type_data</code>=<i>doubles</i>): lower in Parquet files
+  <ul>
+    <li>Due to the software and libraries used to convert from PHP code to parquet files, there is variation in the precision of floating-point values (decimal points) compared to the values obtained when creating the tsv tables.</li>
+    <li>To alleviate this, parquet files are being generated from the de-identified tsv tables as a final step to align parquet values to the source data and ensure concordance between the data in these two formats.</li>
+  </ul>
+  </li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
