@@ -3,17 +3,15 @@
 The following issues have been identified in the current HBCD data release. **We are actively working to address them and expect most fixes to be implemented in Release 2.1 unless otherwise noted.** This page will be updated as new issues are discovered.    
 If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
 
-## Instruction Metadata — Read Carefully
+## General
+
+#### Instruction Metadata — Read Carefully
 
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
-<thead style="background-color: #ff8a42cc; color: #695541ff;">
-<tr style="border-bottom:2px solid #ccc;">
-    <th>KNOWN ISSUE - <span style="color: #f97316;">EXPECTED FIX TBD</span></th>
-  </tr>
-</thead>
 <tbody>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">
+<span style="color: #695541ff;"><i><b>Expected Fix: TBD</b></i></span><br><br>
   Instruction text in each form’s metadata is automatically extracted from the most recent <code>instruction</code> field in the REDCap Data Dictionary (based on field order). Because this process is automated, it may produce the following issues:
   <ul>
     <li>If an instruction spans multiple fields, only the <b>last portion</b> will be captured.</li>
@@ -24,6 +22,21 @@ If you have questions or would like to report an issue, please submit a ticket t
 </tbody>
 </table>
 
+## Differences in TSV vs Parquet Data Precision
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">
+<span style="color: #695541ff;"><i><b>Expected Fix: 3.0</b></i></span><br><br>
+TSV and Parquet files are currently derived from the source data via separate workflows, which can lead to minor discrepancies in how certain values are represented, including:
+<ul>
+  <li>How NULL values are displayed</li>
+  <li>Precision of floating-point values (<code>type_data</code>=<i>doubles</i>) lower in Parquet files</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
