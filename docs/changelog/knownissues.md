@@ -22,23 +22,6 @@ If you have questions or would like to report an issue, please submit a ticket t
 </tbody>
 </table>
 
-#### Differences in TSV vs Parquet Data Precision
-<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
-<tbody>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">
-<span style="color: #695541ff;"><i><b>Expected Fix: 3.0</b></i></span><br><br>
-TSV and Parquet files are currently derived from the source data via separate workflows, which can lead to minor discrepancies in how certain values are represented, including:
-<ul>
-  <li>How NULL values are displayed</li>
-  <li>Precision of floating-point values (<code>type_data</code>=<i>doubles</i>) lower in Parquet files</li>
-</ul>
-Any specific recommendations for users?
-</td>
-</tr>
-</tbody>
-</table>
-
 ## <a href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">

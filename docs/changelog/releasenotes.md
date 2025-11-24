@@ -217,7 +217,12 @@ Approximately **30 new study instruments/measures** have been added across the f
 </thead>
 <tbody>
 <tr>
-  <td rowspan="3" style="text-align: center;"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></td>
+  <td style="text-align: center;">N/A</td>
+  <td>General</td>
+  <td style="word-wrap: break-word; white-space: normal;"><b>[1]</b> Resolved lower floating-point value precision in Parquet files by deriving the data directly from the TSV file data (<code>type_data</code>=<i>doubles</i>)</td>
+</tr>
+<tr>
+  <td rowspan="6" style="text-align: center;"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></td>
   <td rowspan="3">Basic Demographics<br><code>sed_basic_demographics</code></td>
   <td><b>[1]</b> Removal of invalid response option 2 = <i>Hawaiian</i> from Mother Race (<code>screen_mother_race</code>).</td>
 </tr>
@@ -232,7 +237,6 @@ Approximately **30 new study instruments/measures** have been added across the f
 </td>
 </tr>
 <tr>
-<td rowspan="3" style="text-align: center;"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></td>
 <td rowspan="3">Visit Information<br><code>par_visit_data</code></td>
 <td style="word-wrap: break-word; white-space: normal;">
   <b>[1]</b> Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) were assigned a sentinel withdrawal date (<code>participant_withdrawal_date</code>) of <code>12/26/1999</code>. These values were updated to null for clarity and consistency.
