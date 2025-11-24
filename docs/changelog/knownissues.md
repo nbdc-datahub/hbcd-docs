@@ -22,7 +22,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 </tbody>
 </table>
 
-## Differences in TSV vs Parquet Data Precision
+#### Differences in TSV vs Parquet Data Precision
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <tbody>
 <tr>
