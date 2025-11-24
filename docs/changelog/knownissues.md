@@ -33,6 +33,7 @@ TSV and Parquet files are currently derived from the source data via separate wo
   <li>How NULL values are displayed</li>
   <li>Precision of floating-point values (<code>type_data</code>=<i>doubles</i>) lower in Parquet files</li>
 </ul>
+Any specific recommendations for users?
 </td>
 </tr>
 </tbody>
