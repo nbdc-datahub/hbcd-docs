@@ -27,6 +27,22 @@ Analysts using HBCD data have ethical obligations to minimize risks, including p
 <p>Researchers cannot control how others, including members of the public and policy makers, interpret scientific results we publish. However, we can take steps to minimize the likelihood our results will be misinterpreted or overinterpreted. In addition to clearly denoting limitations and caveats when reporting results, specific approaches for working with genomic data in this context are discussed in <a href="https://doi.org/10.1146/annurev-genom-011224-015733">Martshenko et al (2025)</a>, <i>Social and Behavioral Genomics: On the Ethics of the Research and Its Downstream Applications</i> (<b>Annual Reviews Genomics and Human Genetics</b>). For examples of brief documents that explain social and behavioral genomics for non-experts, see “FAQs on Human Genomics Studies” at <a href="https://www.thehastingscenter.org/genomics-research-index/">https://www.thehastingscenter.org/genomics-research-index/</a>.</p> 
 </div>
 
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>Two participants are twins, which should be considered prior to analysis. The participant IDs are available via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> (accessible to DUC-authorized users only).<br><br>
+<a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/illumina-gda-gwas-supplemental.csv"><i class="fa-solid fa-download"></i> Download participant list</a> 
+</p> 
+</div>
+
 The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>genetics/</code> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*). It includes **three interlinked PLINK files** (`.bed`, `.bim`, `.fam`) aligned to the **hg19 genome build**, plus supporting documentation and batch metadata:
 
 <pre class="folder-tree">
