@@ -29,7 +29,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">
 <span style="color: #695541ff;"><i><b>Expected Fix: 2.0</b></i></span><br><br>
-Currently, TSV and Parquet files are created from source data using separate pipelines, which may cause minor discrepancies. Software and library differences in converting PHP code to Parquet introduces variation in the precision of floating-point values (<code>type_data</code>=<i>doubles</i>) relative to the TSV tables. To address this and align values with the source data, future Parquet files will be generated directly from the TSV tables as a final step. This change will align Parquet values with the source data to ensure consistency between the two formats.
+Currently, TSV and Parquet files are created from source data using separate pipelines, which may cause minor discrepancies in how decimal values are reported. Software and library differences in converting PHP code to Parquet introduces variation in the precision of floating-point values (<code>type_data</code>=<i>doubles</i>) relative to the TSV tables. To address this and align values with the source data, future Parquet files will be generated directly from the TSV tables as a final step. This change will align Parquet values with the source data reported in the tsv tables to ensure consistency between the two formats.
 </td>
 </tr>
 </tbody>
