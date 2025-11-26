@@ -120,22 +120,6 @@ Plain text formats like TSV/CSV can cause problems in large-scale analyses due t
 
 **We therefore recommend using Parquet files for analysis to avoid these issues**, as the metadata is embedded directly. However, **if you do choose to use TSV/CSV files for analysis:** be sure to manually define column types during import using the sidecar JSON metadata files. We recommend using [NBDCtools](recprograms.md#tabulated-data) to automate this process - see documentation for the function `read_dsv_formatted()` [here](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html).
 
-<p>
-<div id="null-vals" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Warning: NULL Values Are Represented Differently in Parquet vs. TSV</span>
-  <a class="anchor-link" href="#null-vals" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>Note that Parquet and TSV files handle missing data differently due to their underlying format standards. For BIDS compliance, TSV files use <code>n/a</code> as the placeholder for empty cells. In contrast, Parquet files enforce stricter data typing, so any value provided as <code>NAN</code>/<code>nan</code>, an empty string (''), <code>n/a</code>, or <code>inf</code> will be stored as a true NULL (blank) in the Parquet tables.</p>
-</div>
-</p>
-
 #### Working with Parquet in Python and R
 <p>
 <div id="load-parquet" class="table-banner" onclick="toggleCollapse(this)">
