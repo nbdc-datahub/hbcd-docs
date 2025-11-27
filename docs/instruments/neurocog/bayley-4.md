@@ -1,5 +1,3 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW - potentially exclude from 2.0 or release without item-level score fields - under discussion</i></p>
-
 # Bayley Scales of Infant and Toddler Development
 
 <div class="info-block">

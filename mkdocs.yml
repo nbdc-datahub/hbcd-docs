@@ -94,11 +94,11 @@ nav:
             - Nails: instruments/biospec/nails.md
             - Urine: instruments/biospec/urine.md
         - Neurocognition & Language:
-            - 🚧 Bayley-4: instruments/neurocog/bayley-4.md
-            - 🚧 MacArthur-Bates CDI: instruments/neurocog/macarthur-bates.md
+            - Bayley-4: instruments/neurocog/bayley-4.md
+            - MacArthur-Bates CDI: instruments/neurocog/macarthur-bates.md
             - MLDS: instruments/neurocog/mlds.md
-            - 🚧 SPM-2: instruments/neurocog/spm2.md
-            - 🚧 Vineland: instruments/neurocog/vineland.md
+            - SPM-2: instruments/neurocog/spm2.md
+            - Vineland: instruments/neurocog/vineland.md
         - Physical Health:
             - ⚠️ Brief Infant Sleep Questionnaire: instruments/physhealth/bisq-sf.md
             - Breastfeeding: instruments/physhealth/bf.md
