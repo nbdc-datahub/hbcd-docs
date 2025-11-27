@@ -1,5 +1,3 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
-
 # ecPROMIS Peer Relationships Scale
 
 <div class="info-block">

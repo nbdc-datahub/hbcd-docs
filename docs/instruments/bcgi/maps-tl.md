@@ -1,6 +1,3 @@
-
-<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 - adding version: Toddlerhood and Preschool</i> 🚧 </p>
-
 # MAPS-TL
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
