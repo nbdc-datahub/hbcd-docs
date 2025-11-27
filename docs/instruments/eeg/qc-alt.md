@@ -1,4 +1,4 @@
-## StimTracker Artifact Detection <span style="color: red;"> - LUCI ADMIN NOTE: PROPOSED EDITS TO STREAMLINE</span>
+## StimTracker Artifact Detection <span style="color: red;"> - LUCI PROPOSED EDITS</span>
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -25,5 +25,6 @@ Flagged files in the raw EEG data (40–50%) were visually inspected after prepr
 
 To evaluate the impact of the StimTracker artifact on EEG derivatives, event-related potentials (ERPs) were generated for relevant regions and time windows - see <a href="../artifact/" target="_blank">Effects of Artifact on ERP Derivatives by Task</a> for details and figures displaying artifact-free and artifact-present waveforms across tasks and ROIs. Statistical comparisons of mean ERP component amplitudes between artifact-free and artifact-present files across tasks revealed only two significant differences, both in the T7T8 cluster for the standard and deviant conditions of the MMN after FDR correction. Difference waves (Predeviant–Deviant) showed no significant effects for the FCz or T7T8 clusters, and no significant differences were found in the VEP or FACEs tasks.
 
-In sum, our analysis indicates that the **StimTracker artifact does not meaningfully affect mean ERP amplitudes** and has minimal impact on the released derivatives. However, we encourage users to assess potential effects in their own analyses. The presence of the artifact is provided in the task-specific `eeg_qc_task-<TASK>` files included as part of the <a href="../../#eeg" target="_blank">tabulated EEG data</a>. <span style="color: red;">The binary `eeg_qc_-<TASK>` variable indicates whether the artifact was present (yes/no) in the processed data. (UPDATE FIELD/VARIABLE NAME ONCE KNOWN)</span>
+In sum, our analysis indicates that the **StimTracker artifact does not meaningfully affect mean ERP amplitudes** and has minimal impact on the released derivatives. However, we encourage users to assess potential effects in their own analyses. The presence of the artifact is provided in the task-specific `eeg_qc_task-<TASK>` files included as part of the <a href="../../#eeg" target="_blank">tabulated EEG data</a>. The `eeg_qc_task-<TASK>_stimtracker_artifact` variable indicates whether the artifact was present (yes/no) in the processed data.
+
 *Note: Due to limited data containing the artifact, no comparisons were conducted for V04 files.*
