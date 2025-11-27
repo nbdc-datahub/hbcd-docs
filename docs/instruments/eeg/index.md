@@ -44,11 +44,10 @@ EEG release data include both **file-based** (raw and processed data files in mo
 
 <div class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Note: Mismatch in Session Counts Between Raw and Derivative Data</span>
+  <span class="text">Note: Differences in Session Counts Between Raw and Derivative Data</span>
 </div>
 <div class="notification-static-content">
-<p>The raw BIDS are available in the release for all EEG session data collected for HBCD. Corresponding derivatives are available for all but approximately 2% of the sessions, which failed to successfully process through the HBCD-MADE pipeline due to technical issues from acquisition. These data may be made available in future releases as issues are resolved.</p>
-<p>Note that any EEG data that did not meet the <a href="qc/#eeg-net-placement-capping-quality-ratings" target="_blank">quality control criteria for processing</a> (such as "very poor" capping quality or missing EEG cap placement images) will also be missing corresponding derivative outputs.</p>
+<p>The raw BIDS are available in the release for all EEG session data collected for HBCD. Corresponding derivatives processed through the HBCD-MADE pipeline are available for most but not all sessions. This discrepancy is expected, as data that does not meet <a href="qc/#eeg-net-placement-capping-quality-ratings" target="_blank">quality control criteria</a> are excluded from processing. In addition, for approximately 2% of sessions, technical issues during acquisition led to incomplete processing through the HBCD-MADE pipeline, resulting in missing derivatives. These data may be made available in future releases as issues are resolved.</p>
 </div>
 <p></p>
 
