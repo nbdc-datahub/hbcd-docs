@@ -1,6 +1,3 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW</i></p>
-
-
 <i style="color: red;">Administrative notes:<br>
  - <a href="https://drive.google.com/open?id=114NYqSe--744iuNJ3hZCsA2tmIaAB-ku">Data dictionary shared by Chun</a>: geocoded variables given the address history<br>
  - who can give more information on what the data look like?<br>

@@ -76,21 +76,21 @@ nav:
     - Instruments Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
     - Administrative:
-        - 🚧 Transitions in Care: instruments/admin/transitions-in-care.md
+        - Transitions in Care: instruments/admin/transitions-in-care.md
     - Demographics:
-        - ⚠️ Basic Demographics: instruments/demo/basicdemo.md
+        - Basic Demographics: instruments/demo/basicdemo.md
         - Visit Information: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 
             - CHAOS: instruments/bcgi/chaos.md
-            - 🚧 ecPROMIS Child-Caregiver Relationship: instruments/bcgi/ecpromis.md
-            - 🚧 ecPROMIS Peer Relationships: instruments/bcgi/ecpromis-pr.md
-            - 🚧 ecPROMIS Self-Regulation: instruments/bcgi/ecpromis-selfreg.md
-            - 🚧 FAD: instruments/bcgi/fad.md
-            - 🚧 IBQ/ECBQ-R (VSF)+BI: instruments/bcgi/ibqr.md
-            - 🚧 MAPS-TL: instruments/bcgi/maps-tl.md
+            - ecPROMIS Child-Caregiver Relationship: instruments/bcgi/ecpromis.md
+            - ecPROMIS Peer Relationships: instruments/bcgi/ecpromis-pr.md
+            - ecPROMIS Self-Regulation: instruments/bcgi/ecpromis-selfreg.md
+            - FAD: instruments/bcgi/fad.md
+            - IBQ/ECBQ-R (VSF)+BI: instruments/bcgi/ibqr.md
+            - MAPS-TL: instruments/bcgi/maps-tl.md
         - Biospecimens & Omics:
-            - 🚧 Illumina GDA GWAS: instruments/biospec/illumina-gda-gwas.md
+            - Illumina GDA GWAS: instruments/biospec/illumina-gda-gwas.md
             - Nails: instruments/biospec/nails.md
             - Urine: instruments/biospec/urine.md
         - Neurocognition & Language:
@@ -100,15 +100,15 @@ nav:
             - SPM-2: instruments/neurocog/spm2.md
             - Vineland: instruments/neurocog/vineland.md
         - Physical Health:
-            - ⚠️ Brief Infant Sleep Questionnaire: instruments/physhealth/bisq-sf.md
+            - Brief Infant Sleep Questionnaire: instruments/physhealth/bisq-sf.md
             - Breastfeeding: instruments/physhealth/bf.md
-            - 🚧 ecPROMIS- PA/GS: instruments/physhealth/ecpromis-pags.md
-            - 🚧 PROMIS- Sleep: instruments/physhealth/ecpromis-sleep.md
+            - ecPROMIS- PA/GS: instruments/physhealth/ecpromis-pags.md
+            - PROMIS- Sleep: instruments/physhealth/ecpromis-sleep.md
             - Growth: instruments/physhealth/growth.md
-            - 🚧 Medical History: instruments/physhealth/medical-history.md
-            - 🚧 Nutrition: instruments/physhealth/nutrition.md
-            - 🚧 ScreenQ: instruments/physhealth/screenq.md
-            - ⚠️ Vision: instruments/physhealth/vision.md
+            - Medical History: instruments/physhealth/medical-history.md
+            - Nutrition: instruments/physhealth/nutrition.md
+            - ScreenQ: instruments/physhealth/screenq.md
+            - Vision: instruments/physhealth/vision.md
         - Pregnancy & Exposures:
             - Pregnancy & Infant Health: instruments/pregexp/pex.md
             - Mental Health:
@@ -118,25 +118,25 @@ nav:
                 - Postnatal Depression: instruments/pregexp/mh/epds.md
             - Substance Use:
                 - ASSIST: instruments/pregexp/su/assist.md
-                - 🚧 Substance Use Patterns: instruments/pregexp/su/su-patterns.md
+                - Substance Use Patterns: instruments/pregexp/su/su-patterns.md
                 - TLFB: instruments/pregexp/su/tlfb.md
         - Social & Environmental Determinants:
-            - 🚧 ACEs: instruments/SED/aces.md
+            - ACEs: instruments/SED/aces.md
             - Baby's First Years: instruments/SED/bfy.md
-            - 🚧 Composite Abuse Scale: instruments/SED/cab.md
-            - 🚧 Demographics (Adult): instruments/SED/demo-cg.md
-            - 🚧 Child Demographics: instruments/SED/demo-ch.md
+            - Composite Abuse Scale: instruments/SED/cab.md
+            - Demographics (Adult): instruments/SED/demo-cg.md
+            - Child Demographics: instruments/SED/demo-ch.md
             - Food Insecurity: instruments/SED/foodinsecurity.md
-            - 🚧 HOME-21: instruments/SED/home21.md
+            - HOME-21: instruments/SED/home21.md
             - Intimate Partner Violence: instruments/SED/ehits.md
-            - 🚧 Employment: instruments/SED/current-employment.md
-            - 🚧 Geocoded Linkage: instruments/SED/geocoded-linkage.md
-            - 🚧 Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
-            - 🚧 Lead Exposures: instruments/SED/lead-exposures.md
+            - Employment: instruments/SED/current-employment.md
+            - Geocoded Linkage: instruments/SED/geocoded-linkage.md
+            - Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
+            - Lead Exposures: instruments/SED/lead-exposures.md
             - Neighborhood Safety: instruments/SED/safety.md
-            - 🚧 Protective Factors: instruments/SED/paces.md
+            - Protective Factors: instruments/SED/paces.md
             - Perceived Stress/Social Support: instruments/SED/promis.md
-            - 🚧 Second Hand Smoke: instruments/SED/second-hand-smoke-exposure.md
+            - Second Hand Smoke: instruments/SED/second-hand-smoke-exposure.md
             - Unfair Treatment: instruments/SED/discr.md            
             - Vancouver Index: instruments/SED/vi.md
     - Brain Activity & Biosensors:
@@ -149,7 +149,7 @@ nav:
             - Overview & MR Protocols: instruments/mri/index.md
             - Quality Control Procedures: instruments/mri/qc.md
             - MRI Processing & Derivatives Guide: instruments/mri/mri-proc.md
-            - 🚧 Pre-Scan Questionnaire: instruments/mri/prescan-questionnaire.md
+            - Pre-Scan Questionnaire: instruments/mri/prescan-questionnaire.md
             - Structural MRI: instruments/mri/smri.md
             - Functional MRI: instruments/mri/fmri.md
             - Diffusion MRI: instruments/mri/dmri.md
