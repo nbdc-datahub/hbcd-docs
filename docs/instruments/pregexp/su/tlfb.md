@@ -79,25 +79,54 @@ Participants who reported any substance use in the three months prior to or duri
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <tbody>
     <tr>
-      <td style="text-align: center;"><strong>Visit 1</strong></td>
-      <td style="text-align: center;">
+      <td style="text-align: center;"><strong>v1</strong></td>
+      <td>
         <ul style="list-style-position: inside; padding-left: 0; margin: 0 auto; display: inline-block; text-align: left;">
-          <li>Pre-pregnancy use (Weeks 1–2: four weeks before LMP through two weeks before LMP)</li>
-          <li>Early pregnancy use (Weeks 3–6: two weeks after LMP through six weeks after LMP)</li>
-          <li>Current use (Week 7: the week prior to V1)</li>
+          <li>Period 1: Two Weeks Pre-LMP (Weeks 1–2, four through two weeks pre-LMP) - <i>Pre-pregnancy use</i></li>
+          <li>Period 2: Four Weeks Post-LMP (Weeks 3–6, two through six weeks post-LMP) - <i>Early pregnancy use</i></li>
+          <li>Period 3: Last Week (Week 7, the week prior to Visit 1) - <i>Current use</i></li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td style="text-align: center;"><strong>Visit 2</strong></td>
+      <td style="text-align: center;"><strong>v2</strong></td>
       <td>
         <ul style="list-style-position: inside; padding-left: 0; margin: 0 auto; display: inline-block; text-align: left;">
-          <li>Last two full weeks of gestation (Weeks 8–9)</li>
+          <li>Period 4: Last Two Weeks Before Delivery (Weeks 8–9)</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
+
+<div id="v3" class="table-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Version 3 Administered to Postnatal Recruits</span>
+  <a class="anchor-link" href="#v3" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><b>Postnatal recruits</b> (participants enrolled in the study postnatally) are administered an adapted <b>version 3</b> of the TLFB, which includes all of the four time periods above in a single administration. Period 3 in this version captures Week 7 as the week spanning LMP + 19 weeks to LMP + 20 weeks.</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <tbody>
+    <tr>
+      <td style="text-align: center;"><strong>v3</strong></td>
+      <td>
+        <ul style="list-style-position: inside; padding-left: 0; margin: 0 auto; display: inline-block; text-align: left;">
+          <li>Period 1: Two Weeks Pre-LMP (Weeks 1–2, four through two weeks pre-LMP) - <i>Pre-pregnancy use</i></li>
+          <li>Period 2: Four Weeks Post-LMP (Weeks 3–6, two through six weeks post-LMP) - <i>Early pregnancy use</i></li>
+          <li><b>Period 3: Week 7, captured as the week spanning LMP + 19 weeks pre-LMP + 20 weeks</b></li>
+          <li>Period 4: Last Two Weeks Before Delivery (Weeks 8–9)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ## References
 <div class="references">

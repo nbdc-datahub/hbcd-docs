@@ -64,18 +64,7 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
   <td>TLFB<br><code>pex_ch_tlfb</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
-  Participants enrolled postnatally (<i>HBCD Main Child- Postnatal Recruitment</i> or <i>HBCD Multiple Birth- Postnatal Recruitment</i> cohorts) reported TLFB on the wrong weeks. Weeks were either reported in TLFB versions 1 or 2, but should be reported in TLFB version 3.<br><br>
-    <table class="table-no-vertical-lines">
-    <tbody>
-    <tr><td><b>TLFB Version 1</b></td>
-    <td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> Last Week</td></tr>
-    <tr><td><b>TLFB Version 2</b></td>
-    <td><b>Period 4:</b> Last Two Weeks Before Delivery</td></tr>
-    <tr><td><b>TLFB Version 3</b></td>
-    <td><b>Period 1:</b> Two Weeks Pre-LMP<br><b>Period 2:</b> Four Weeks Post-LMP<br><b>Period 3:</b> LMP + 19 Weeks to LMP + 20 Weeks<br><b>Period 4:</b> Last Two Weeks Before Delivery</td></tr>
-    </tbody>
-    </table>
-</td>
+  Participants enrolled postnatally (<i>HBCD Main Child- Postnatal Recruitment</i> or <i>HBCD Multiple Birth- Postnatal Recruitment</i> cohorts) reported TLFB on the wrong weeks. Weeks were either reported in TLFB versions 1 or 2, but should be reported in TLFB version 3 (<a href="../../instruments/pregexp/su/tlfb/#v3">see details</a>).</td>
 </tr>
 </tbody>
 </table>
