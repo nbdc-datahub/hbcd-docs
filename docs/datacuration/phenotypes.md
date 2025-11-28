@@ -113,12 +113,12 @@ Tabulated data are provided in multiple formats to support a range of tools and 
 
 #### Caution: Using Plain Text Files for Analysis
 
-Plain text formats like TSV/CSV can cause problems in large-scale analyses due to the fact that **metadata is stored separately** (in sidecar JSON files). Python, R, or other tools may make mistakes when importing the data. For example:
+**We recommend using Parquet files for analysis instead of plain text formats (TSV/CSV)** to avoid data import issues in Python, R, etc. caused by the separation of metadata from data. Parquet files embed metadata directly, ensuring correct data types and handling of missing values. When using TSV/CSV files, common pitfalls include:
 
-- Tools may misinterpret data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical.
-- Columns with mostly missing values may be treated as empty if the first few rows contain no data.
+- Misinterpretation of data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical
+- Mishandling missing values (columns with mostly missing values may be treated as empty)
 
-**We therefore recommend using Parquet files for analysis to avoid these issues**, as the metadata is embedded directly. However, **if you do choose to use TSV/CSV files for analysis:** be sure to manually define column types during import using the sidecar JSON metadata files. We recommend using [NBDCtools](recprograms.md#tabulated-data) to automate this process - see documentation for the function `read_dsv_formatted()` [here](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html).
+**If you do choose to use TSV/CSV files for analysis:** be sure to (1) manually define column types during import using the sidecar JSON metadata files and (2) specify `n/a` as the placeholder for missing values (HBCD uses this placeholder for TSV files as recommended by the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/common-principles.html#tabular-files)). We recommend using [NBDCtools](recprograms.md#tabulated-data) to automate these processes - see documentation for the `read_dsv_formatted()` function [here](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html).
 
 #### Working with Parquet in Python and R
 <p>
