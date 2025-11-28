@@ -110,7 +110,7 @@ Plain text formats like TSV/CSV can cause problems in large-scale analyses due t
 - Tools may misinterpret data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical.
 - Columns with mostly missing values may be treated as empty if the first few rows contain no data.
 
-**We therefore recommend using Parquet files for analysis to avoid these issues**, as the metadata is embedded directly. However, **if you do choose to use TSV/CSV files for analysis:** be sure to manually define column types during import using the sidecar JSON metadata files. We recommend using [NBDCtools](recprograms.md#tabulated-data) to automate this process - see documentation for the function `read_dsv_formatted()` [here](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html).
+**We therefore recommend using Parquet files for analysis to avoid these issues**, as the metadata is embedded directly. However, **if you do choose to use TSV/CSV files for analysis:** be sure to manually define column types during import using the sidecar JSON metadata files. Additionally, make sure to specify `n/a` as placeholder for missing values when reading in the `.tsv` files (HBCD uses this placeholder as recommended by the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/common-principles.html#tabular-files)). We recommend using [NBDCtools](recprograms.md#tabulated-data) to automate this process - see documentation for the function `read_dsv_formatted()` [here](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html).
 
 #### Working with Parquet in Python and R
 <p>
