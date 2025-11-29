@@ -506,7 +506,7 @@ Expand the sections below to see a list of measures associated with each domain 
 ### Brain Activity & Biosensors
 
 <div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-bolt"></i></span>
+  <span class="emoji"><i class="fa-solid fa-file-waveform"></i></span>
   <span class="text-with-link">
   <span class="text">EEG</span>
   <a class="anchor-link" href="#eeg" title="Copy link">

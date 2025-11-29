@@ -375,7 +375,7 @@
   <td>
     <div class="icon-text-block">
       <a href="../../instruments/#eeg" target="_blank">
-        <i class="fa fa-bolt"></i>
+        <i class="fa-solid fa-file-waveform"></i>
       </a>
       <div class="text-block">
         HBCD-MADE Derivatives
