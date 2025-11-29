@@ -139,6 +139,7 @@ hbcd/
 </div>
 
 ## M-CRIB-S & FreeSurfer Surface Reconstruction Methods
+
 Infant fMRIPrep supports two infant-specific surface reconstruction workflows (*[see details above](#nibabies)*): **M-CRIB-S** (used to process **V02** data) and **Infant FreeSurfer** (used to process **V02**, **V03**, and **V04** data). Derivatives include **unique hash IDs** to indicate which surface reconstruction method was used within Infant fMRIPrep for a given dataset:
 <table class="table-no-vertical-lines">
 <thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Visits <i>(Age Range in Months)</i></th> </tr> </thead>
@@ -433,6 +434,26 @@ hbcd/
 
 ## MRI Derivatives Quick Start Guide
 
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning: Avoid Use of V02 Derivatives Processed Via Infant FreeSurfer Workflow</span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>Data acquired at visit V02 was processed through Infant fMRIPrep via two separate surface reconstruction workflows - Infant FreeSurfer and M-CRIB-S (see <a href="#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> above). Though Infant FreeSurfer outputs are included in the release, <b>we strongly recommend using V02 data processed with M-CRIB-S instead for all analyses with V02 data.</b> Expert visual review as well as preliminary BrainSwipes QC results indicate that V02 data processed with Infant FreeSurfer generally yield lower quality surface reconstructions. Reasons for this include:</p> 
+<ul>
+<li>T2w images are generally higher contrast in neonates and infants, which improves segmentation and surface reconstruction quality</li>
+<li>M-CRIB-S leverages T2w images for surface reconstruction, whereas Infant FreeSurfer relies solely on T1w images, which are often lower contrast at these ages. <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a> similarly reports that M-CRIB-S is optimal for neonates (optimal age range ≤ 5 month old) vs infant Freesurfer (optimal ages ≥ 3 months).</li>
+<li>Not all sessions include a T1w. For HBCD, T2w images were prioritized over T1w during acquisition, which were acquired at the end of the session if time permitted.</li>
+<p><b>Note that poor quality T1w images can also negatively impact data processed via the M-CRIB-S workflow</b> (despite its reliance on the T2w and brain segmentation). BIBSNet derives the brain segmentation based on both the T1w and T2w if both are available, so if the T1w data quality is poor, this may result in lower quality segmentations (particularly when the poor T1w quality results in poor T2w-to-T1w registration of the data fed into the BIBSNet model for segmentation).</p> 
+</div>
+<p></p>
+
 Below is a summary of key MRI derivatives used for **structural morphology** and **resting-state functional MRI (rsfMRI) functional connectivity** analyses. Key derivatives, produced by the **XCP-D** pipeline, include volumetric and surface-based time series for each participant. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. 
 
 <div id="struc" class="table-banner" onclick="toggleCollapse(this)">
@@ -475,8 +496,6 @@ Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) wit
 Useful for rendering structural data, computing surface-based metrics, or visualizing functional overlays.
 </p>
 </div>
-
-
 
 <div id="fc" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-globe"></i></span>
