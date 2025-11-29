@@ -526,7 +526,7 @@ Approximately **30 new study instruments/measures** have been added across the f
 </div>
 
 <div id="r1.1eeg" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#eeg" target="_blank"><i class="fa fa-bolt"></i></a></span>
+  <span class="emoji"><a href="../../instruments/#eeg" target="_blank"><i class="fa-solid fa-file-waveform"></i></a></span>
   <span class="text-with-link">
   <span class="text">EEG</span>
   <a class="anchor-link" href="#r1.1eeg" title="Copy link">
