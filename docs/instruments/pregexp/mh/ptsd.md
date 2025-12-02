@@ -125,7 +125,7 @@ Total of Questions 1, 2, 3, 4, 5, 6, 7, 8, 9. This 9-item measure assesses the s
 <p>The result is rounded to the nearest whole number and noted with an NA in the summary column and the new score in the pro-rated column.</p>
 <br>
 <p><b>NSESS-Acute stress</b><br>
-Total of Questions 1, 2, 3, 7, 8, 9, 10. This item measure assesses the severity symptoms of acute stress disorder following an extremely stressful event or experience. Each item asks about severity of the acute stress disorder over the past 7 days, and is measured on a 5-point scale (0-4). Total score ranges from 0 to 28, with higher scores indicating greater severity of acute stress disorder.</p>
+Total of Questions 1, 2, 3, 7, 8, 9, 10. This 7-item measure assesses the severity symptoms of acute stress disorder following an extremely stressful event or experience. Each item asks about severity of the acute stress disorder over the past 7 days, and is measured on a 5-point scale (0-4). Total score ranges from 0 to 28, with higher scores indicating greater severity of acute stress disorder.</p>
 <p><b>Scoring Rules:</b></p>
 <ul>
 <li>If <strong>2 or more items</strong> on a scale are left unanswered, a total score is <strong>not</strong> computed.</li>
