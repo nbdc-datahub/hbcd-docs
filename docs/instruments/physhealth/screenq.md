@@ -50,7 +50,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The HBCD ScreenQ includes additional response options "Decline to answer" and "Don’t know." The impact on scoring is described under <a href="#scoring">Scoring Procedures</a> below.</p>
+<p>The HBCD ScreenQ includes additional response options "Decline to answer" and "Don’t know." The impact on scoring is described under <a href="#scoring">Scoring Procedures</a> below. In addition, when the child is mentioned, pronouns were changed from he/she to “the child” for gender neutrality.</p>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
