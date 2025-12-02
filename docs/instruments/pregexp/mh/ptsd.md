@@ -61,12 +61,18 @@ The co-occurrence of psychiatric symptoms and substance use during pregnancy is 
 </table>
 
 ## Instrument Details
-The HBCD Severity of Posttraumatic/Acute Stress Symptoms measure was developed to assess the severity of PTSD and acute stress symptoms following a traumatic event (for individuals aged 18 and older). It combines items from the following National Stressful Events Surveys into a single 10-item assessment for the HBCD study:
 
-- **PTSD Short Scale ([NSESSS-PTSD](https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_Severity-of-Posttraumatic-Stress-Symptoms-Adult.pdf))**: items 1-9
-- **Acute Stress Disorder Short Scale ([NSESSS-Acute Stress Disorder](https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_Severity-of-Acute-Stress-Symptoms-Adult.pdf))**: item 3 
+This measure is a combination of two measures:
 
-Future publications should note that this measure combines NSESSS-PTSD and NSESSS-Acute Stress Disorder.
+- Severity of Posttraumatic Stress Symptoms-National Stressful Events Survey PTSD Short scale ([NSESSS-PTSD](https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_Severity-of-Posttraumatic-Stress-Symptoms-Adult.pdf))
+- Severity of Acute Stress Symptoms—Adult National Stressful Events Survey Acute Stress Disorder Short Scale ([NSESSS-Acute stress](https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_Severity-of-Acute-Stress-Symptoms-Adult.pdf)) 
+
+The NSESSS-acute stress is a 7-item scale, 6 of which are from the NSESSS-PTSD short scale, with one additional question. As such, the measures were combined into one administration. Publications should note the combined administration.
+
+Thus, the scales are as follows:
+
+ - Total Raw Score PTSD (Total of Questions 1, 2, 3, 4, 5, 6, 7, 8, 9)
+ - Total Raw Score Acute Stress (Total of Questions 1, 2, 3, 7, 8, 9, 10)
 
 <div class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
@@ -103,22 +109,37 @@ Future publications should note that this measure combines NSESSS-PTSD and NSESS
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>These scales assess trauma-related stress symptoms but do not distinguish between PTSD and Acute Stress Disorder. Researchers are encouraged to review individual item content to determine which scale best aligns with their research objectives. Each item is scored on a scale from 0 to 4. Total scores are calculated by summing the item responses.</p>
-
-<b>Scoring Rules:</b>
+<p>Please see documentation linked above for scoring.</p>
+<p><b>NSESS-PTSD</b><br>
+Total of Questions 1, 2, 3, 4, 5, 6, 7, 8, 9. This 9-item measure assesses the severity of PTSD following an extremely stressful event or experience. Each item asks about severity of the PTSD over the past 7 days, and is measured on a 5-point scale (0-4). Total score ranges from 0 to 36, with higher scores indicating greater severity of PTSD.</p> 
+<p><b>Scoring Rules:</b></p>
 <ul>
 <li>If <strong>3 or more items</strong> on a scale are left unanswered, a total score is <strong>not</strong> computed.</li>
-<li>If <strong>1 or 2 items</strong> are left unanswered, a <strong>prorated total score</strong> is calculated using the formula:</li>
+<li>If <strong>1-2 items</strong> are left unanswered, a <strong>prorated total score</strong> is calculated using the formula:</li>
 <p style="font-size: 0.9em;">
   \[
-  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{Total number of items}
+  \text{Prorated Score} = \frac{\text{Raw sum} \times {9}}{\text{Number of items that were actually answered}}
   \]
 </p>
 </ul>
-<p>The result is rounded to the nearest whole number.</p>
+<p>The result is rounded to the nearest whole number and noted with an NA in the summary column and the new score in the pro-rated column.</p>
+<br>
+<p><b>NSESS-Acute stress</b><br>
+Total of Questions 1, 2, 3, 7, 8, 9, 10. This item measure assesses the severity symptoms of acute stress disorder following an extremely stressful event or experience. Each item asks about severity of the acute stress disorder over the past 7 days, and is measured on a 5-point scale (0-4). Total score ranges from 0 to 28, with higher scores indicating greater severity of acute stress disorder.</p>
+<p><b>Scoring Rules:</b></p>
+<ul>
+<li>If <strong>2 or more items</strong> on a scale are left unanswered, a total score is <strong>not</strong> computed.</li>
+<li>If <strong>1 item</strong> is left unanswered, a <strong>prorated total score</strong> is calculated using the formula:</li>
+</ul>
+<p style="font-size: 0.9em;">
+  \[
+  \text{Prorated Score} = \frac{\text{Raw sum} \times {7}}{\text{Number of items that were actually answered}}
+  \]
+</p>
+</ul>
+<p>The result is rounded to the nearest whole number and noted with an NA in the summary column and the new score in the pro-rated column.</p>
 </div>
 </p>
-
 
 ## References
 <div class="references">
@@ -128,4 +149,3 @@ Future publications should note that this measure combines NSESSS-PTSD and NSESS
 <p>Massey, S. H., Neiderhiser, J. M., Shaw, D. S., Leve, L. D., Ganiban, J. M., & Reiss, D. (2012). Maternal self concept as a provider and cessation of substance use during pregnancy. Addictive Behaviors, 37(8), 956–961. <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">https://doi.org/10.1016/j.addbeh.2012.04.002</a></p>
 <p>Massey, S. H., Reiss, D., Neiderhiser, J. M., Leve, L. D., Shaw, D. S., & Ganiban, J. M. (2016). Maternal personality traits associated with patterns of prenatal smoking and exposure: Implications for etiologic and prevention research. Neurotoxicology and Teratology, 53, 48–54. <a href="https://doi.org/10.1016/j.ntt.2015.11.010">https://doi.org/10.1016/j.ntt.2015.11.010</a></p>
 </div>
-<br>
