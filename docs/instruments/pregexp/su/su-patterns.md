@@ -59,7 +59,7 @@
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Self administered in person</td></tr>
 <tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">V02 <i>or later (see <a href="#warning">Data Warning</a></i></td></tr>
+<td style="word-wrap: break-word; white-space: normal;">V02 <i>or later (see <a href="#warning">Data Warning</a>)</i></td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>5 min</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
