@@ -71,7 +71,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 
 <img src="../DSM-5Level2Cross-CuttingSymptomMeasures.png" width="90%" height="auto" class="center">
 
-**Level 1** includes 1 - 2 questions for each of <span class="tooltip">11 mental health domains <span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">Depression, Anger, Mania, Anxiety, Somatic Symptoms, Suicidal Ideation, Psychosis, Sleep Disturbance, Memory, Repetitive Behaviors, Dissociation</span></span>. This excludes *Personality Functioning* and *Substance Use* present in the original measure (SU is captured by a separate set of instruments for HBCD - see measures listed [here](../../index.md#pex)). When symptoms were reported for Level 1, participants were subsequently administered corresponding **Level 2** measures, which asked about <span class="tooltip">additional symptoms <span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">Anger, Anxiety, Depression, Somatic Symptoms, Mania, Repetitive Thoughts, Sleep Problems</span></span> associated with the following 8 mental health domains: Anxiety, Anger, Depression, Mania, Personality, Repetitive Behavior, Sleep, and Somatic symptoms. For HBCD, Level 2 symptom measures for *Depression* and *Sleep Disturbance* were replaced with the PROMIS Short Forms v1.0 [Depression 8a questionnaire](https://www.phenxtoolkit.org/toolkit_content/supplemental_info/psychiatric/measures/07_Depressed_Mood.doc) and [Sleep Disturbance 8a](https://heal.nih.gov/files/CDEs/2024-07/promis-sleep-disturbance-8a-crf.pdf). Level 2 additionally includes the [Personality Inventory for DSM-5 Brief](https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf), which assesses <span class="tooltip">5 personality trait domains <span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">Negative Affect, Detachment, Antagonism, Disinhibition, Psychoticism</span></span>.
+**Level 1** includes 1 - 2 questions for each of <span class="tooltip">11 mental health domains <span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">Depression, Anger, Mania, Anxiety, Somatic Symptoms, Suicidal Ideation, Psychosis, Sleep Disturbance, Memory, Repetitive Behaviors, Dissociation</span></span>. When symptoms were reported for Level 1, participants were subsequently administered corresponding Level 2 measures, which asked about additional symptoms associated with the following 8 mental health domains: Anxiety, Anger, Depression, Mania, Personality, Repetitive Behavior, Sleep, and Somatic symptoms. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -84,8 +84,13 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p><b>Level 1 Modifications</b><br>
+HBCD excluded <i>Personality Functioning and Substance Use</i> present in the original measure (SU is captured by a separate set of instruments for HBCD - see measures listed <a href="../../../#pex" target="_blank">here</a>).</p>
 <p><b>Gating Modifications</b><br>
-Gating was adapted for the HBCD study population so that participants proceeded automatically to the Level 2 measure for Personality Inventory. In addition, all participants answered the Level 1 questions for Depression and Somatic Symptoms, but proceeded to Level 2 questions irrespective of answers. <strong>Future publications should be sure to acknowledge the removal of Level 1 and 2 Substance Use and the gating mechanisms for Personality Inventory, Depression, and Somatic Symptoms.</strong></p>
+Gating was adapted for the HBCD study population so that participants proceeded automatically to the Level 2 measure for Personality Inventory without completing level 1. In addition, all participants answered the Level 1 questions for Depression and Somatic Symptoms, but proceeded to Level 2* questions irrespective of answers. <strong>Future publications should be sure to acknowledge the removal of Level 1 and 2 Substance Use and the gating mechanisms for Personality Inventory, Depression, and Somatic Symptoms.</strong></p>
+
+<p><b>*</b><i>For HBCD, Level 2 symptom measures for Depression and Sleep Disturbance were replaced with the PROMIS Short Forms v1.0 <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Depression 8a questionnaire</a> and <a href="https://heal.nih.gov/files/CDEs/2024-07/promis-sleep-disturbance-8a-crf.pdf">Sleep Disturbance 8a</a>. Level 2 additionally includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Personality Inventory for DSM-5 Brief</a>, which assesses <span class="tooltip">5 personality trait domains <span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">Negative Affect, Detachment, Antagonism, Disinhibition, Psychoticism</span></span>.</i></p>
+
 <p><b>Clinical Alerts</b><br>
 This measure was modified to alert HBCD study staff if responses to the Level 1 APA self-harm question ('Thoughts of actually hurting yourself?') or Level 2 APA Depression questionnaire (items from 'I felt worthless' to 'I felt that nothing could cheer me up') exceed thresholds of 0 and 32, respectively.</p>
 <p><b>Response Option Changes</b><br>
@@ -102,31 +107,160 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
-<p><b>Depression and Sleep</b><br>
-For Depression and Sleep, when any item responses are marked missing, the sum score is marked as missing.</p>
-
-<p><b>Personality Inventory</b><br>
-For the Personality Inventory measure, the total sum and average scores are only calculated for the full scale; individual subscale scores are not provided. Data users interested in subscale scores should refer to Personality Inventory scoring procedures for instructions on calculating subscale scores.</p>
-
-<p><b>Remaining Level 2 Measures</b><br>
-For the remaining Level 2 measures, sum scores are prorated when up to 25% of item responses are marked missing. If more than 25% of items are missing, the sum score is marked as missing. The following formula is used to generated a prorated score, with the answer rounded to the nearest whole number: 
-<p style="font-size: 0.9em;">
-  \[
-  \text{Prorated Score} = \left( \frac{\text{Sum of answered items}}{\text{Number of items answered}} \right) \times \text{Total number of items}
-  \]
-</p>
-</p>
-<p>
-<ul>
-<b>Scoring Resources</b><br>
-<li><a href="https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1 Cross-Cutting Symptom Measures</a> </li>
-<li><a href="https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures">Level 2 Cross-Cutting Symptom Measures</a></li>
-<li><a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Depression_Scoring_Manual_05Dec2023.pdf">Depression 8a questionnaire</a> </li>
-<li><a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Sleep_Scoring_Manual.pdf">Sleep Disturbance 8a</a></li>
-<li><a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Personality Inventory for DSM-5 Brief</a></li>
-</ul>
-</p>
+<div class="table-collapsible-content">
+<p><b><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1</a> items and scoring overview, including HBCD adaptations:</b></p>
+<table class="compact-table-no-vertical-lines">
+<tfoot><tr><td colspan="4"><b>*</b> <i>All items scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe</i></td></tr></tfoot>
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>Level 1 Items*</th>
+<th>Gate to level 2</th>
+<th>Level 2 measure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Depression</td>
+<td style="word-wrap: break-word; white-space: normal;">depr_001, depr_002</td>
+<td style="word-wrap: break-word; white-space: normal;">administered, but all to level 2 (no gating)</td>
+<td style="word-wrap: break-word; white-space: normal;">PROMIS Adult Short Form<br />v1.0 &ndash; Depression 8a</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Anger</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_anger_001</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_anger_001 ge 2</td>
+<td style="word-wrap: break-word; white-space: normal;">LEVEL 2&mdash;Anger&mdash;Adult (PROMIS Emotional Distress&mdash;Anger&mdash;Short Form)</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Mania</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_mania_001, apa_1_mania_002</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_mania_001 or apa_1_mania_002 ge 2</td>
+<td style="word-wrap: break-word; white-space: normal;">LEVEL 2&mdash;Mania&mdash;Adult (Altman Self-Rating Mania Scale)</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Anxiety</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_anx_001</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_anx_001 ge 2</td>
+<td style="word-wrap: break-word; white-space: normal;">LEVEL 2&mdash;Anxiety&mdash;Adult (PROMIS Emotional Distress&mdash;Anxiety&mdash;Short Form)</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Somatic</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_somat_001, apa_1_somat_002</td>
+<td style="word-wrap: break-word; white-space: normal;">administered, but all to level 2 (no gating)</td>
+<td style="word-wrap: break-word; white-space: normal;">LEVEL 2&mdash;Somatic Symptom&mdash;Adult (Patient Health Questionnaire 15 Somatic<br />Symptom Severity [PHQ-15])</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Self-harm</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_suic_001</td>
+<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Psychosis</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_psych_001, apa_1_psych_002</td>
+<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Sleep</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_sleep_001</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_sleep_001 ge 2</td>
+<td style="word-wrap: break-word; white-space: normal;">Adult v1.0 - Sleep Disturbance 8a</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Memory</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_memo_001</td>
+<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Repetitive</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_repet_001, apa_1_repet_002</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_repet_001 or apa_1_repet_002 ge 2</td>
+<td style="word-wrap: break-word; white-space: normal;">LEVEL 2&mdash;Repetitive Thoughts and Behaviors&mdash;Adult (adapted from the Florida<br />Obsessive-Compulsive Inventory [FOCI] Severity Scale [Part B])</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Dissociation</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_disso_001</td>
+<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Personality</td>
+<td style="word-wrap: break-word; white-space: normal;">not administered</td>
+<td style="word-wrap: break-word; white-space: normal;">not administered- all to personality inventory</td>
+<td style="word-wrap: break-word; white-space: normal;">Personality inventory for DSM-5 Brief</td>
+</tr>
+<tr>
+<td>Substance use</td>
+<td style="word-wrap: break-word; white-space: normal;">not administered</td>
+<td style="word-wrap: break-word; white-space: normal;">not administered</td>
+<td style="word-wrap: break-word; white-space: normal;">not administered</td>
+</tr>
+</tbody>
+</table>
+<p><b>Level two items and scoring overview, including HBCD adaptations. Scores were derived following linked documentation and as documented in the ‘Notes’ column.</b></p>
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>Level 2 Items</th>
+<th>Scoring</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Depression_Scoring_Manual_05Dec2023.pdf" target="_blank">Depression</a></td>
+<td style="word-wrap: break-word; white-space: normal;">apa_2_depr_001-apa_2_depr_008</td>
+<td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
+<td style="word-wrap: break-word; white-space: normal;">All items must be answered in order to produce a valid score using the scoring tables</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/a56cc2a0-3818-4975-bbcb-4a047e1ffbea/APA-DSM5TR-Level2AngerAdult.pdf" target="_blank">Anger</a></td>
+<td style="word-wrap: break-word; white-space: normal;">apa_2_anger_001-apa_2_anger_005</td>
+<td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
+<td style="word-wrap: break-word; white-space: normal;">One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/c1783d55-268a-47b2-9932-a549b21c8d64/APA-DSM5TR-Level2ManiaAdult.pdf" target="_blank">Mania</a></td>
+<td style="word-wrap: break-word; white-space: normal;">apa_2_mania_001-apa_2_mania_005</td>
+<td style="word-wrap: break-word; white-space: normal;">sum all items; score of ge 6 indicates high probability of mania</td>
+<td style="word-wrap: break-word; white-space: normal;">One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/f284f967-ed9e-4754-99fc-b32765b1c4a0/APA-DSM5TR-Level2AnxietyAdult.pdf" target="_blank">Anxiety</a></td>
+<td style="word-wrap: break-word; white-space: normal;">apa_2_anx_001-apa_2_anx_007</td>
+<td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
+<td style="word-wrap: break-word; white-space: normal;">Less than 3 missing items, pro-rate ((raw score *7)/(number answered)). Three or more missing items should not be scored</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/843c7fa5-9a40-4795-a25e-70208903d88c/APA-DSM5TR-Level2SomaticSymptomAdult.pdf" target="_blank">Somatic</a></td>
+<td style="word-wrap: break-word; white-space: normal;">apa_2_somat_001-apa_2_somat_015</td>
+<td style="word-wrap: break-word; white-space: normal;">sum all items; interpreted using the Interpretation Table for the PHQ-15 Somatic Symptom Severity scale</td>
+<td style="word-wrap: break-word; white-space: normal;">Less than 4 missing items, pro-rate ((raw score *15)/(number answered)). Four or more missing items should not be scored</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Sleep_Scoring_Manual.pdf" target="_blank">Sleep</a></td>
+<td style="word-wrap: break-word; white-space: normal;">apa_2_sleep_001-apa_2_sleep_008</td>
+<td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
+<td style="word-wrap: break-word; white-space: normal;">All items must be answered in order to produce a valid score using the scoring tables</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/a451f9f0-40b7-4262-8ef2-e7be2ea004f2/APA-DSM5TR-Level2RepetitiveThoughtsAndBehaviorsAdult.pdf" target="_blank">Repetitive</a></td>
+<td style="word-wrap: break-word; white-space: normal;">apa_2_repet_001-apa_2_repet_005</td>
+<td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
+<td style="word-wrap: break-word; white-space: normal;">One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf" target="_blank">Personality</a></td>
+<td style="word-wrap: break-word; white-space: normal;">apa_2_pers_001-apa_2_pers_025</td>
+<td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
+<td style="word-wrap: break-word; white-space: normal;">Six missing item, pro-rate ((raw score *25)/(number answered)). Seven or more missing items should not be scored</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 ## References
