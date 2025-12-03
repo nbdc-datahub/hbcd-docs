@@ -81,7 +81,7 @@ The Edinburgh Postnatal Depression Scale (<a href="https://downloads.aap.org/AAP
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Each item is scored on a scale from 0 to 3, with items 3, 5, 6, 7, 8, 9, and 10 being reverse-scored (i.e. 3, 2, 1, 0). Total scores are calculated by summing the item responses. Note that total scores are not prorated or left missing for missing items: data users should determine how best to address missing data.</p>
+<p>Each item is scored on a scale from 0 to 3, with items 3, 5, 6, 7, 8, 9, and 10 being reverse-scored (i.e. 3, 2, 1, 0), which was built into the original survey responses. No additional scoring changes are necessary at the item-level. Total scores are calculated by summing the item responses. Note that total scores are not prorated or left missing for missing items: data users should determine how best to address missing data.</p>
 </div>
 
 ## References
