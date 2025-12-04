@@ -288,7 +288,7 @@ Approximately **30 new study instruments/measures** have been added across the f
   <td style="text-align: center;"><a href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a></td>
   <td>eHITS<br><code>sed_bm_ehits</code></td>
   <td style="word-wrap: break-word; white-space: normal;">
-  Removed <code>sed_bm_ehits_total_score</code> (erroneously included in addition to <code>sed_bm_ehits_score</code>, which contains accurate sum scores).
+  Corrected calculation for the two eHits "score" variables (<code>score</code> & <code>total_score</code>).
 </td>
 </tr>
 </tbody>
