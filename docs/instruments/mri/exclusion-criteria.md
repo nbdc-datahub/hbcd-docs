@@ -70,11 +70,41 @@ Acquisition parameters vary by scanner vendor, so inclusion criteria are typical
 
 ## Exclusion Criteria for Structural & Functional MRI Derivatives
 
-Structural and functional MRI derivatives were evaluated using <strong>BrainSwipes QC</strong>, a web-based quality control tool that collects expert ratings on image quality via visual assessment of standardized reports <i>(see <a href="../qc/#brainswipes" target="_blank">MRI QC Procedures &gt; BrainSwipes</a> for details)</i>. Session data was excluded from the release based on an average BrainSwipes QC score threshold of 0.5:
+Structural and functional MRI derivatives were evaluated using <strong>BrainSwipes QC</strong>, a web-based quality control tool that collects expert ratings on image quality via visual assessment of standardized reports <i>(see <a href="../qc/#brainswipes" target="_blank">MRI QC Procedures &gt; BrainSwipes</a> for details)</i>. Structural and functional data was flagged for removal or additional review if the average QC score across visual reports was less than 0.5. Severe issues result from underlying data quality issues.
 
- - **If structural data (T1w/T2w) failed QC**, then all derivatives for that session (i.e. including both structural and functional outputs) were removed from Infant fMRIPrep (including M-CRIB-S/FreeSurfer derivative folders) and XCP-D.
- - **If only functional data (one or more BOLD runs) failed QC**, then only functional derivatives from Infant fMRIPrep and XCP-D were removed for that session; structural derivatives were retained. This includes the `func/` and `fmap/` folders in Infant fMRIPrep and `func/` folders in XCP-D.
- 
+<span style="color: red;">LUCI NOTE: need to explain what severe issues actually means here</span>
+
+#### Functional Data QC Failure
+BOLD runs with an average QC score less than 0.5 were flagged for additional expert manual review. For sessions with severe issues in one or more BOLD run, [Infant fMRIPrep](mri-proc.md#infant-fmriprep) and [XCP-D](mri-proc.md#xcp-d) derivatives for that session were excluded from the release.
+
+#### Structural Data QC Failure
+Structural failures were flagged for review and spot checks were performed to confirm removal by additional expert manual review. Session data with severe structural issues were removed across the following pipeline derivative folders: [BIBSNet](mri-proc.md#bibsnet), [Infant fMRIPrep](mri-proc.md#infant-fmriprep), [M-CRIB-S and FreeSurfer](mri-proc.md#m-crib-s-freesurfer-surface-reconstruction-methods), and [XCP-D](mri-proc.md#xcp-d).    
+In addition, session derivatives of additional pipelines downstream from BIBSNet were also excluded from the release, including [Osprey](mrs.md#derivatives) (used for MRS processing) and [qMRI-PostProc](qmri.md#derivatives) (used for quantitative MRI processing).
+
+#### Summary of Sessions Excluded From Release 
+<table class="table-no-vertical-lines">
+<tfoot>
+<tr><td colspan="5"><b>*</b> Includes sessions with failed structural as well as functional QC<br>
+<b>**</b> Includes sessions with no structural QC failures, but at least 1 BOLD run that failed QC
+</td></tr>
+</tfoot>
+<thead>
+<tr>
+<th>Visit</th>
+<th>Surface Reconstruction Workflow</th>
+<th>% Structural QC Failure*</th>
+<th>% Functional QC Failure**</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>V02</td><td>M-CRIB-S (hash-0f306a2f)</td><td>3%</td><td>16%</td><td>19%</td></tr>
+<tr><td>V02</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>19%</td><td>30%</td><td>49%</td></tr>
+<tr><td>V03</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>3%</td><td>3%</td><td>6%</td></tr>
+<tr><td>V04</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>0%</td><td>3%</td><td>3%</td></tr>
+</tbody>
+</table>
+
 ###  Interpretation of Missing BrainSwipes QC Scores
 
 #### #1 Unscored Data: V02 Outputs Processed Via Infant FreeSurfer Workflow
