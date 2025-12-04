@@ -182,7 +182,7 @@ For the 1.0 and 1.1 releases, TSV and Parquet files were created from source dat
   <td>eHITS<br><code>sed_bm_ehits</code></td>
   <td><b>2.0</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
-  The variable <code>sed_bm_ehits_total_score</code> was erroneously included and can safely be ignored - use <code>sed_bm_ehits_score</code> instead for sum scores.
+  There are currently two eHits "score" variables; <code>sed_bm_ehits_score</code> and <code>sed_bm_ehits_total_score</code> in the data release. Both scores are incorrectly calculated. If you would like to use eHits score in your analyses, please calculate the score based on the item-level data following the scoring rules in the <a href="../../instruments/SED/ehits">release notes documentation</a>.
 </td>
 </tr>
 </tbody>
