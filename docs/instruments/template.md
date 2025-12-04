@@ -56,7 +56,8 @@ and common issues identified during QC processes that users should be aware of (
 
 ## Instrument Details
 
-Description of the instrument, including its purpose, constructs measured, and any relevant background information. This section should provide enough context for the user to understand the significance of the instrument within the study. Include embedded links for in-line citations.
+<span style="color: red;">Description of the instrument, including its purpose, constructs measured, and any relevant background information. This section should provide enough context for the user to understand the significance of the instrument within the study. <br>
+PLEASE REMEMBER: this is general documentation for users of the data, so please provide general context to explain what a study measure is in addition to technical details (e.g. can pull from the abstract or introduction text if a paper was published on your measure)</span>
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
