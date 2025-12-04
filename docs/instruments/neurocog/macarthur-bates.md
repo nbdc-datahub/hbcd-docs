@@ -35,6 +35,7 @@
 </div>
 <div class="alert-collapsible-content">
 <p>The CDI forms are well-documented and widely used assessments. We note that percentile scores were calculated based on the norms described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023), see additional references below. See <a href="#hbcd-mod">HBCD Modifications</a> for a description of how the CDI-WG is administered to children with exposure to different languages; users may want to consider the <a href="../mlds" target="_blank">Multilingual Language Development</a> questionnaire in conjunction with the CDI.</p>
+<p>In addition, the CDI includes a benchmark age that is based on entry by the caregiver. Note that the CDI is not administered until 9 months of age and data entry errors may occur. Users may want to use this in conjunction with other data on the child's age included elsewhere in HBCD.</p>
 </div>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
