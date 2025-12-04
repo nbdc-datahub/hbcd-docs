@@ -24,11 +24,11 @@
 <tr><td><b>Respondent</b></td>
 <td>Child on Self</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Child, in person</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff, in person</td></tr>
 <tr><td><b>Visits</b></td>
-<td></td></tr>
+<td>V04, V06, V08</td></tr>
 <tr><td><b>Completion Time</b></td>
-<td></td></tr>
+<td>1 min</td></tr>
 <tr><td><b>Quality Control</b></td>
 <td style="word-wrap: break-word; white-space: normal;"></td></tr>
 </tbody>
