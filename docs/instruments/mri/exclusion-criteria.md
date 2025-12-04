@@ -70,36 +70,22 @@ Acquisition parameters vary by scanner vendor, so inclusion criteria are typical
 
 ## Processed Data Exclusion Criteria
 
-ADD LINK TO DATA WARNING ABOUT V02 FREESURFER DATA WHERE NEEDED: <a href="../mri-proc/#warning">link</a>
+Structural and functional MRI derivatives were evaluated using **BrainSwipes**, a web-based QC tool that collects QC ratings through visual inspection of standardized reports (<a href="../qc/#brainswipes" target="_blank">see MRI QC Procedures > BrainSwipes</a>). Any structural or functional dataset with an average BrainSwipes score below **0.5** was flagged for additional expert manual review (<a href="#manual-review">details below</a>).
 
-Structural and functional MRI derivatives were evaluated using <strong>BrainSwipes</strong>, a web-based quality control tool that collects expert ratings on image quality via visual assessment of standardized reports <i>(see <a href="../qc/#brainswipes" target="_blank">MRI QC Procedures &gt; BrainSwipes</a> for details)</i>. Structural and functional data was flagged for additional review if the average QC score across visual reports was less than 0.5. 
-
-Additional expert manual review was performed on flagged data to identify sessions with severe issues to exclude from the release. Severe issues noted were the result of underlying data quality issues as opposed to pipeline processing errors, and so were additionally flagged for secondary [raw MR data QC review](qc.md#raw-mr-data-qc). <span style="color: red;">[LUCI NOTE: EXPLAIN WHAT "SEVERE ISSUES" ACTUALLY MEANS HERE]</span>
-
-<div id="manual-review" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-circle-check"></i></span>
-  <span class="text-with-link">
-<span class="text">Details: Expert Manual Review of Flagged Data</span>
-  <a class="anchor-link" href="#manual-review" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>Additional manual review by experts was performed on a small subset of the data flagged with structural QC failures and all data flagged with only functional QC failures.</p>
-<p><b>Structural QC</b>: Structural BrainSwipes QC results are fairly consistent and reliable and reported only 0-3% of failures, so only a subset of the data flagged for structural QC failures were followed up by additional expert review.</p>
-<p><b>Functional QC</b>: Functional BrainSwipes QC results report an inflated rate of failures due, perhaps due to raters performing QC based on adult data QC standards, which are much more strict than for infant data. Therefore, all sessions with only functional failures reported were followed up with additional expert manual review to identify the severe failures.</p> <span style="color: red;">LUCI NOTE: not sure how to explain this in a way that would make sense to users. either way, should probably state inherent drawbacks of BrainSwipes and the results for users who may wish to use them for determining their own data exclusions</span>
-<p><b>V02	Infant FreeSurfer (hash-2afa9081)</b>: was not manually reviewed because data is bad, and we expected that. so removed data based on BrainSwipes results alone - also mention data warning telling users not to use this data - <a href="../mri-proc/#warning">link</a></p>
+<div id="manual-review" class="table-banner" onclick="toggleCollapse(this)"> <span class="emoji"><i class="fa fa-circle-check"></i></span> <span class="text-with-link"> <span class="text">Details: Expert Manual Review of Flagged Data</span> <a class="anchor-link" href="#manual-review" title="Copy link"> <i class="fa-solid fa-link"></i> </a> </span> <span class="arrow">▸</span> </div> 
+<div class="collapsible-content"> <p>Flagged data underwent additional review to identify sessions with severe quality issues that should be excluded from the release. These severe issues primarily reflected underlying data quality problems rather than processing errors and were flagged for secondary <a href="../qc/#raw-mr-data-qc">raw MR data QC</a>.</p>
+<ul> Manual review was performed on:
+<li>a subset of data flagged for structural QC failures, and</li> <li><em>all</em> data flagged for functional-only QC failures.</li> </ul>
+<p>This process was applied to all datasets except V02 sessions reconstructed using the <strong>Infant FreeSurfer (hash-2afa9081)</strong> workflow, which consistently produced poor-quality outputs. For this group, sessions were removed based on BrainSwipes QC scores alone without additional review. We advise against using this data for analysis (<a href="../mri-proc/#warning">see Data Warning</a>).</p>
+<p><strong>Structural QC.</strong> Structural BrainSwipes ratings were generally reliable and indicated low failure rates (0–3%). Only a subset of structurally flagged data required additional review to confirm removal.</p>
+<p><strong>Functional QC.</strong> Functional ratings exhibited higher apparent failure rates, likely because raters applied stricter, adult-oriented QC criteria. Therefore, all sessions with only functional QC failures were manually reviewed to determine which represented true severe issues for removal.</p>
 </div>
 <p></p>
 
-#### Structural Data QC Failure
-Session data with severe structural issues were removed across the following pipeline derivative folders: [BIBSNet](mri-proc.md#bibsnet), [Infant fMRIPrep](mri-proc.md#infant-fmriprep), [M-CRIB-S and FreeSurfer](mri-proc.md#m-crib-s-freesurfer-surface-reconstruction-methods), and [XCP-D](mri-proc.md#xcp-d).    
-Sessions were also removed from [Osprey](mrs.md#derivatives) and [qMRI-PostProc](qmri.md#derivatives) derivatives (used for MRS and quantitative MRI processing, respectively) and these pipelines both utilize BIBSNet outputs. 
+**Structural Data Exclusion:** Session data with confirmed severe structural issues were removed across the following derivative folders: [BIBSNet](mri-proc.md#bibsnet), [Infant fMRIPrep](mri-proc.md#infant-fmriprep), [M-CRIB-S and FreeSurfer](mri-proc.md#m-crib-s-freesurfer-surface-reconstruction-methods), and [XCP-D](mri-proc.md#xcp-d).    
+Session exclusions also propagate to [Osprey](mrs.md#derivatives) and [qMRI-PostProc](qmri.md#derivatives), which depend on BIBSNet outputs.
 
-#### Functional Data QC Failure
-BOLD runs with an average QC score less than 0.5 were flagged for additional expert manual review. For sessions with severe issues in one or more BOLD run, [Infant fMRIPrep](mri-proc.md#infant-fmriprep) and [XCP-D](mri-proc.md#xcp-d) derivatives for that session were excluded from the release.
+**Functional Data Exclusion:** Sessions with at least one severely failing BOLD run were removed from both [Infant fMRIPrep](mri-proc.md#infant-fmriprep) and [XCP-D](mri-proc.md#xcp-d) derivatives for that visit.
 
 #### Summary of Sessions Excluded From Release 
 
