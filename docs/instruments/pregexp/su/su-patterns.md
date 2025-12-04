@@ -1,5 +1,3 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i> 🚧 </p>
-
 # Substance Use Patterns in Pregnancy
 
 <div class="info-block">
@@ -44,7 +42,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>The SU Patterns in Pregnancy measure is administered only to participants who endorsed substance use on the V1 or V2 ASSIST. Because the measure was added one year after study enrollment began, its availability varies across participants. Most participants completed the measure at V2; however, early enrollees (~1,200 participants) who had already finished V2 before its introduction instead received it at their next available visit.</p>
+<p>The SU Patterns in Pregnancy measure is administered only to participants who endorsed substance use on the V1 or V2 ASSIST. Because the measure was added one year after study enrollment began, its availability varies across participants. Most participants completed the measure at V2; however, early enrollees (~1,200 participants) who had already finished V2 before its introduction instead received it at their next available visit, which was as late as Visit 5.</p>
 <p>The form captures general patterns of substance use by trimester and is intended to complement (1) the Timeline Followback (TLFB), which focuses on specific weeks of use during pregnancy, and (2) biospecimen data, which have variable look-back periods. However, some participants only consider <i>use after pregnancy recognition</i> as 'pregnancy use,' which may result in discrepancies between this measure, the ASSIST, and the TLFB.</p>
 </div>
 
@@ -63,10 +61,7 @@
 <tr><td><b>Completion Time</b></td>
 <td>5 min</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">This measure will need to be complied whenever it was assessed for the original participants. All others after its launch will have the measure at V2. One additional caveat- only people who report alcohol, opioids, cannabis, tobacco or stimulants on the ASSIST during or the 3 months before pregnancy (V1) or the end of pregnancy (V2) are given the instrument.
-<p style="color: red;">Luci note: I recommend removing this text as it is not pertinent to QC and the info that it does provide is already described more clearly in other sections. Perhaps replace with something similar to the other SU measures, eg: "Response distributions are reviewed for outliers and additionally cross-checked with ASSIST V1/V2 to ensure consistency in reported substances." </p>
-
-</td></tr>      
+<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers and additionally cross-checked with ASSIST V1/V2 to ensure consistency in reported substances.</td></tr>      
 </tbody>
 </table>
 
