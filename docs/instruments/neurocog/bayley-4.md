@@ -71,26 +71,12 @@
 <td>60-90</td></tr>
 <tr><td style="word-wrap: break-word; white-space: normal;"><b>QC Procedures</b></td>
 <td style="word-wrap: break-word; white-space: normal;">
-<ul>
-    <li>Research assistants (RAs) underwent a training process and were required to submit videos and item scoring responses of an administration for review by trained Bayley administrators who then certified that the RA was compliant with the administration instructions as outlined in the manual.</li>
-    <li>For data collection, a QR code was used to enter the child&#39;s study ID number and Date of Birth. Adjustments for prematurity were made using the QR code.</li>
-    <li>For data collection, responses were entered into QGlobal during testing and QGlobal aided RAs in determining appropriate basal and ceiling criteria during administration.</li>
-    <li>All scoring (addition of item responses) and tabulation of standard scores was done by the QGlobal software.</li>
-    <li>Item responses and standard scores were electronically transferred from QGlobal to HBCD.</li>
-    <li>Range checks were performed on the data to identify values that were deviant. This was done at the item and cluster level on individual records.</li>
-    <li>Mean and range checks were also done on items and summary scores across the overall cohort to assess deviations. These findings informed RA trainings.</li>
-    <li>Completion rates were monitored for the overall consortium and at the site level to address any additional training needed.</li>
-</ul>
-<span style="color: red;">
-LUCI ADMIN NOTE: suggested rewrite of QC info to simplify and only include info relevant for the end user:
-<br>
   <ul>
     <li>HBCD Study staff were trained and certified by experienced Bayley administrators to ensure adherence to standardized procedures.</li>
     <li>During testing, responses were entered into QGlobal (Pearson’s official scoring platform for the Bayley Scales), which automatically applied scoring rules and generated standardized scores.</li>
     <li>Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations.</li>
     <li>Completion rates were monitored across sites, with additional training provided when needed.</li>
 </ul>
-</span>
 </td></tr>    
 </tbody>
 </table>
