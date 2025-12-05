@@ -195,8 +195,7 @@ Approximately **30 new study instruments/measures** have been added across the f
 <p></p><p></p>
 
 ### 2.0 New Brain Imaging Derivatives & Exclusions
-
-New processes were employed to remove MR derivatives with serious data quality issues - see [MR Exclusion Criteria](../instruments/mri/exclusion-criteria.md#processed-data-exclusion-criteria) for details. The table below reports the percentage of session folders removed due to structural or functional QC failures for each visit (with V02 data split into parallel outputs that exist for different surface reconstruction methods used for processing).
+Processed derivatives are now included for V03 and V04 in addition to V02. New processes were employed to remove MR derivatives with serious data quality issues - see [MR Exclusion Criteria](../instruments/mri/exclusion-criteria.md#processed-data-exclusion-criteria) for details. The table below reports the percentage of session folders removed due to structural or functional QC failures for each visit (with V02 data split into parallel outputs that exist for different surface reconstruction methods used for processing).
 
 <table class="table-no-vertical-lines">
 <tfoot><tr><td colspan="5"><b>*</b> Structural QC passed; one or more BOLD runs failed QC</td></tr></tfoot>
