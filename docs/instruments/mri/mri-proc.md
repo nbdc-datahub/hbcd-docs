@@ -434,6 +434,35 @@ hbcd/
 
 ## MRI Derivatives Quick Start Guide
 
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning: Avoid Use of V02 Derivatives Processed Via Infant FreeSurfer Workflow</span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p><b>Summary</b><br>
+Data acquired at visit V02 (from neonates/0-1 months old) was processed through Infant fMRIPrep via two separate surface reconstruction workflows - Infant FreeSurfer and M-CRIB-S (see <a href="#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> above). Though Infant FreeSurfer outputs are included in the release, preliminary reviews and QC results made it clear that M-CRIB-S produced much higher quality outputs compared to Infant FreeSurfer at the neonatal age range. <b>We therefore strongly recommend using V02 data processed with M-CRIB-S instead for all analyses with V02 data.</b>. The following section outlines the reasoning for this.</p>
+
+<p><b>Neonatal Data Processing</b><br>
+</b> Expert visual review as well as preliminary BrainSwipes QC results indicate that V02 data processed with Infant FreeSurfer generally yield lower quality surface reconstructions. Reasons for this include:</p> 
+<ul>
+<li>T2w images are generally higher contrast in neonates and infants, which improves segmentation and surface reconstruction quality</li>
+<li>M-CRIB-S leverages T2w images for surface reconstruction, whereas Infant FreeSurfer relies solely on T1w images, which are often lower contrast at these ages. <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a> similarly reports that M-CRIB-S is optimal for neonates (optimal age range ≤ 5 month old) vs infant Freesurfer (optimal ages ≥ 3 months).</li>
+<li>Not all sessions include a T1w. For HBCD, T2w images were prioritized over T1w during acquisition for visit V02, which were acquired at the end of the session if time permitted.</li>
+</ul>
+
+<p><b>BrainSwipes QC Results</b><br>
+Approximately 30% of the visual reports produced across subject sessions were assigned QC scores based on BrainSwipes review. As early results indicated high rates of QC failure, we chose not to complete manual review of the remaining data. Based on the 30% of the sessions reviewed, a total of ~50% of the session derivatives for this group were removed across pipeline derivative outputs due to unusually high QC failures based on BrainSwipes results. Due to the expected high rates of failure for this group, structural and functional data flagged by BrainSwipes results underwent very minimal additional expert review. Instead, sessions were in large part excluded based on the BrainSwipes QC results alone. See <a href="../exclusion-criteria/#processed-data-exclusion-criteria">Processed Data Exclusion Criteria</a> for details.</p>
+
+<p><b>Implications for Corresponding V02 Data Processed via M-CRIB-S Workflow</b><br>
+<i>Note that poor quality T1w images can also negatively impact data processed via the M-CRIB-S workflow</i> (despite its reliance on the T2w and brain segmentation). BIBSNet derives the brain segmentation based on both the T1w and T2w if both are available, so if the T1w data quality is poor, this may result in lower quality segmentations (particularly when the poor T1w quality results in poor T2w-to-T1w registration of the data fed into the BIBSNet model for segmentation).</p> 
+</div>
+
 Below is a summary of key MRI derivatives used for **structural morphology** and **resting-state functional MRI (rsfMRI) functional connectivity** analyses. Key derivatives, produced by the **XCP-D** pipeline, include volumetric and surface-based time series for each participant. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. 
 
 <div id="struc" class="table-banner" onclick="toggleCollapse(this)">
@@ -616,46 +645,3 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 <p>Zöllei, L., Iglesias, J. E., Ou, Y., Grant, P. E., & Fischl, B. (2020). Infant FreeSurfer: An automated segmentation and surface extraction pipeline for T1-weighted neuroimaging data of infants 0-2 years. <em>NeuroImage</em>, 218(116946), 116946. <a href="https://doi.org/10.1016/j.neuroimage.2020.116946">https://doi.org/10.1016/j.neuroimage.2020.116946</a></p>
 </div>
  
-
-
-
-
-## DRAFT OF DATA WARNING FOR V02 FREESURFER OUTPUTS
-
-add under MRI Derivatives quickstart guide section above
-
-
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning: Avoid Use of V02 Derivatives Processed Via Infant FreeSurfer Workflow</span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p><b>Summary</b><br>
-Data acquired at visit V02 (from neonates/0-1 months old) was processed through Infant fMRIPrep via two separate surface reconstruction workflows - Infant FreeSurfer and M-CRIB-S (see <a href="#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> above). Though Infant FreeSurfer outputs are included in the release, preliminary reviews and QC results made it clear that M-CRIB-S produced much higher quality outputs compared to Infant FreeSurfer at the neonatal age range. <b>We therefore strongly recommend using V02 data processed with M-CRIB-S instead for all analyses with V02 data.</b>. The following section outlines the reasoning for this.</p>
-
-<p><b>Neonatal Data Processing</b><br>
-</b> Expert visual review as well as preliminary BrainSwipes QC results indicate that V02 data processed with Infant FreeSurfer generally yield lower quality surface reconstructions. Reasons for this include:</p> 
-<ul>
-<li>T2w images are generally higher contrast in neonates and infants, which improves segmentation and surface reconstruction quality</li>
-<li>M-CRIB-S leverages T2w images for surface reconstruction, whereas Infant FreeSurfer relies solely on T1w images, which are often lower contrast at these ages. <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a> similarly reports that M-CRIB-S is optimal for neonates (optimal age range ≤ 5 month old) vs infant Freesurfer (optimal ages ≥ 3 months).</li>
-<li>Not all sessions include a T1w. For HBCD, T2w images were prioritized over T1w during acquisition for visit V02, which were acquired at the end of the session if time permitted.</li>
-</ul>
-
-<p><b>BrainSwipes QC Results</b><br>
-Approximately 30% of the visual reports produced across subject sessions were assigned QC scores based on BrainSwipes review. As early results indicated high rates of QC failure, we chose not to complete manual review of the remaining data. Based on the 30% of the sessions reviewed, a total of ~50% of the session derivatives for this group were removed across pipeline derivative outputs due to unusually high QC failures based on BrainSwipes results. Due to the expected high rates of failure for this group, structural and functional data flagged by BrainSwipes results underwent very minimal additional expert review. Instead, sessions were in large part excluded based on the BrainSwipes QC results alone. See <a href="../exclusion-criteria/#processed-data-exclusion-criteria">Processed Data Exclusion Criteria</a> for details.</p>
-
-<p><b>Implications for Corresponding V02 Data Processed via M-CRIB-S Workflow</b><br>
-<i>Note that poor quality T1w images can also negatively impact data processed via the M-CRIB-S workflow</i> (despite its reliance on the T2w and brain segmentation). BIBSNet derives the brain segmentation based on both the T1w and T2w if both are available, so if the T1w data quality is poor, this may result in lower quality segmentations (particularly when the poor T1w quality results in poor T2w-to-T1w registration of the data fed into the BIBSNet model for segmentation).</p> 
-</div>
-
-
-
-add this note elsewhere and link to data warning:
-
-BrainSwipes QC results should be present for most if not all participant data with XCP-D outputs with the key exception: **visit V02 processed using infant FreeSurfer for surface reconstruction.**

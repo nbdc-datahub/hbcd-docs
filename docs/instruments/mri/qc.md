@@ -462,9 +462,29 @@ Automated metrics flag series for manual review using multivariate prediction an
 
 ## BrainSwipes
 
+<div id="BS-location" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fa-solid fa-location-dot"></i></span>
+  <span class="text-with-link">
+  <span class="text">Location of BrainSwipes QC Results in Release</span>
+  <a class="anchor-link" href="#BS-location" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>BrainSwipes QC results are provided as <a href="../../#mri">tabulated data</a>, with unique hash identifiers indicating the surface-reconstruction method used in Infant fMRIPrep (see <a href="../mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S & FreeSurfer Reconstruction Methods</a>):</p>
+<ul>
+<li><code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code> - <i>T2w-based surface reconstruction (M-CRIB-S)</i></li>
+<li><code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code> - <i>T1w-based surface reconstruction (Infant FreeSurfer)</i></li>
+</ul>
+<p><b>Note that BrainSwipes QC scores should be available for all release data with the exception of visit V02 data processed using Infant FreeSurfer for surface reconstruction, which is not advised for use in analysis - see <a href="../mri-proc/#warning">Data Warning</a>.</b></p>
+</div>
+<p></p>
+
 Manual visual inspection remains the gold standard for detecting artifacts in structural, functional (e.g., XCP-D), and diffusion (e.g., QSIPrep) derivatives. To support this, derivative visual reports are integrated into [BrainSwipes](https://brainswipes.us/about), a gamified, crowdsourced QC platform built on the open-source [Swipes For Science](https://swipesforscience.org/) framework. BrainSwipes provides an intuitive interface for large-scale studies, guiding users through a short [tutorial](https://brainswipes.us/tutorial-select) before they evaluate images and classify them as pass or fail.
 
-<p>
+ <p>
 <div id="swipes-procedures" class="table-banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-brain"></i></span>
 <span class="text-with-link">
@@ -489,59 +509,13 @@ For structural QA, swipers are presented with image slices in coronal, axial, an
 In addition to surface delineation, structural QA also includes atlas registration quality, evaluated by overlaying delineations of the subject’s image onto the atlas, and vice versa. Swipes display nine T1w slices for visual inspection, with three slices per anatomical plane. Quality is assessed based on the alignment of the outer boundaries of the overlaid contours with those of the underlying image, ensuring minimal gaps or misalignments. Images are derived from XCP-D visual reports.
 <p>
 <p style="font-size: 1em; margin: 0 0 5px;"><b>Functional Registration:</b></p>
-Functional registration is evaluated by overlaying outlines of functional images onto structural images and vice versa. Swipes display nine slices of the same functional image for visual inspection, with three slices per anatomical plane. Quality is assessed similarly to structural atlas registration, focusing on the alignment of the overlaid contours. Additional evaluation includes checking for artifacts such as signal dropout. Images are derived from XCP-D visual reports.
-</p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Diffusion Direction Encoding (<i>to be included in future release</i>):</b></p>
-Swipes display GIFs of full-resolution T2w images as a grayscale background, with the "Direction Encoded Color" (DEC) map overlaid. These GIFs sweep through a portion of the brain across the three anatomical planes. High-quality processed DWI images exhibit bands of color that closely follow the folds and contours of the grayscale background. These visuals are derived from the QSIPrep report.
-<p>
-<strong>Each visual report for a given modality is independently reviewed and rated as a pass or fail, which in the outputs are scored as values of 1 and 0 respectively. BrainSwipes generates a summary of these results that includes the average score as well as number of reviewers for each visual report of each modality.</strong>
+Functional registration is evaluated by overlaying outlines of functional images onto structural images and vice versa. Swipes display nine slices of the same functional image for visual inspection, with three slices per anatomical plane. Quality is assessed similarly to structural atlas registration, focusing on the alignment of the overlaid contours. Additional evaluation includes checking for artifacts such as signal dropout. Images are derived from XCP-D visual reports.</p>
 </div>
 </p>
 
-**BrainSwipes QC results are provided as [tabulated](../index.md#mri) data** with unique hashes to indicate the method used for surface reconstruction performed in Infant fMRIPrep (see [M-CRIB-S & FreeSurfer Reconstruction Methods](mri-proc.md#m-crib-s-freesurfer-surface-reconstruction-methods)):
+As described in the [procedure details](#swipes-procedures) above, structural and functional QC is performed based on a series of visual reports generated for processed outputs derived from the T1w/T2w and each BOLD run (one or more present per session). Each visual report is independently rated by reviewers as **Pass (1)** or **Fail (0)**. The BrainSwipes release data includes **(1)** the overall average QC score and average number of reviewers across visual reports for each modality as well as **(2)** the average QC score and number of reviewers for each visual report. 
 
- - <code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code> (*T2w-based surf recon with M-CRIB-S*)
- - <code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code> (*T1w-based surf recon with Infant FreeSurfer*) 
-
-QC scores range from 0 (Fail) to 1 (Pass), averaged across reviewers. For example, a score of 0.6 indicates that 60% of reviewers rated the image as a pass. The data includes overall average QC scores and average number of reviewers for each session-level T1w/T2w and BOLD run (summarizing across all visual reports for a given run) as well as the average QC and number of reviewers for each visual report. A Python helper function is provided below to load a BrainSwipes TSV file into a Pandas DataFrame and filter runs with average QC scores above a user-specified threshold:
-
-<div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-brands fa-python"></i></span>
-  <span class="text-with-link">
-  <span class="text">Python Helper Function</span>
-  <a class="anchor-link" href="#python-helper-function" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<pre class="helper-code"><code>
-import pandas as pd
-
-def read_and_filter_tsv(file_path, threshold):
-    """
-    Reads an HBCD BrainSwipes TSV file into a DataFrame and keeps subject rows where 
-	the overall average QC value is greater than or equal to the specified threshold.
-
-    Parameters:
-    - file_path (str): Path to the .tsv file
-    - threshold (float): Threshold value for filtering
-
-    Returns:
-    - pd.DataFrame: Filtered DataFrame
-    """
-    df = pd.read_csv(file_path, sep='\t')
-
-    fourth_col = df.columns[3]
-    return df[df[fourth_col] >= threshold]
-
-# Example usage:
-# Filter to keep only subjects with an average structural QC of at least 0.6 (60% pass rate)
-filtered_df = read_and_filter_tsv("img_brainswipes_xcpd_T2w.tsv", 0.6)
-print(filtered_df.head())
-</code></pre>
-</div>
+**BrainSwipes QC results are used to exclude derivative outputs with severe data quality issues from the release - see <a href="../exclusion-criteria/#processed-data-exclusion-criteria" target="_blank">Processed Data Exclusion Criteria</a> for details.**
 
 ## References
 <div class="references">
