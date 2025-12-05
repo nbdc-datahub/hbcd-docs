@@ -194,6 +194,30 @@ Approximately **30 new study instruments/measures** have been added across the f
 </table>
 <p></p><p></p>
 
+### 2.0 New Brain Imaging Derivatives & Exclusions
+
+New processes were employed to remove MR derivatives with serious data quality issues - see [MR Exclusion Criteria](../instruments/mri/exclusion-criteria.md#processed-data-exclusion-criteria) for details. The table below reports the percentage of session folders removed due to structural or functional QC failures for each visit (with V02 data split into parallel outputs that exist for different surface reconstruction methods used for processing).
+
+<table class="table-no-vertical-lines">
+<tfoot><tr><td colspan="5"><b>*</b> Structural QC passed; one or more BOLD runs failed QC</td></tr></tfoot>
+<thead>
+<tr>
+<th>Visit</th>
+<th>Surface Reconstruction Workflow</th>
+<th>Structural Exclusions (%)</th>
+<th>Functional Exclusions (%)*</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>V02</td><td>M-CRIB-S (hash-0f306a2f)</td><td>3%</td><td>16%</td><td>19%</td></tr>
+<tr><td>V02</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>19%</td><td>30%</td><td>49%</td></tr>
+<tr><td>V03</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>3%</td><td>3%</td><td>6%</td></tr>
+<tr><td>V04</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>0%</td><td>3%</td><td>3%</td></tr>
+</tbody>
+</table>
+
+
 ### 2.0 Resolved Known Issues
 
 <div id="r2.0res-KI" class="table-banner" onclick="toggleCollapse(this)">
