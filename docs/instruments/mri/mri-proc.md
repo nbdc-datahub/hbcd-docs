@@ -12,6 +12,11 @@ HBCD **structural and functional MRI** data are processed through a standardized
 
 In brief, BIBSNet performs preprocessing on structural T1w/T2w images to generate brain tissue segmentations and masks. These are fed into Infant-fMRIPrep, which produces minimally pre-processed outputs including confound files and motion-corrected data in age-specific MNI volumetric atlas as well as fs_LR32k surface space. From these outputs, the XCP-D pipeline runs nuisance regression/denoising, parcellates the fMRI data, and computes summary measures.
 
+## File Selection for Processing
+
+add link to section on processing page
+
+
 ## BIBSNet
 BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentation (<a href="https://doi.org/10.1101/2023.03.22.533696">Hendrickson et al. 2024</a>). The <a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet pipeline</a> generates native-space brain segmentations and brain masks (as well as <code>volumes.tsv</code> files with ROI volume statistics), which are fed into Infant fMRIPrep for use in anatomical preprocessing and surface reconstruction.
 

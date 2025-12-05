@@ -2,7 +2,7 @@
 
 ## Raw Data Exclusion Criteria
 
-Acquisition parameters vary by scanner vendor, so inclusion criteria are typically defined as acceptable <b>ranges</b> rather than fixed values. Following BIDS conversion, modality-specific criteria are extracted from BIDS sidecar JSON files and evaluated accordingly. All images are additionally checked to confirm they were acquired using a head coil.
+Acquisition parameters vary by scanner vendor, so inclusion criteria are typically defined as acceptable <b>ranges</b> rather than fixed values. Following BIDS conversion, modality-specific criteria are extracted from BIDS sidecar JSON files and evaluated accordingly. All images are additionally checked to confirm they were acquired using a head coil. **Aside from acquisition parameter criteria, all raw data regardless of raw data QC scores are included in the release data.**
 
 <p style="margin-bottom: 0;"><i><b>Acquisition Parameter Ranges for Data Release Eligibility</b></i></p>
 <table class="compact-table-no-vertical-lines">
