@@ -258,7 +258,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><a href="biospec/urine" target="_blank">Maternal Urine</a></td>
     <td>Maternal</td>
     <td>Drug Panel, Toxins</td>
-    <td><code>bio_bm_biosample_urine</code></td>
+    <td><code>bio_bm_biosample_urine_results</code></td>
 </tr>
 </tbody>
 </table>
@@ -689,16 +689,10 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fas fa-folder-open"></i>&nbsp;= File-Based Data &nbsp;&nbsp;
-<i style="color: teal;" class="fa-solid fa-table"></i>&nbsp;= Tabulated Data &nbsp;&nbsp;
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#warning" target="_blank"><i>see details</i></a>)
-</p>
-<br><br>
+<p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> &nbsp; <b>File-Based EEG Data</b></p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-  <th><i style="color: teal; font-size: 1.1em;" class="fas fa-folder-open"></i></th>
   <th>EEG Tasks</th>
   <th>Raw BIDS</th>
   <th>Pipeline Derivatives</th>
@@ -706,36 +700,51 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-  <td></td>
   <td style="word-wrap: break-word; white-space: normal;">Auditory Mismatch Negativity (MMN), Faces (FACE), Video Resting State (RS), & Visual Evoked Potential (VEP) - see <a href="eeg/tasks/" target="_blank">HBCD EEG Tasks</a></td>
   <td><a href="eeg/#rawbids" target="_blank"><code>eeg/</code></a></td>
-  <td><a href="eeg/#made" target="_blank">HBCD-MADE</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
+  <td><a href="eeg/#made" target="_blank">HBCD-MADE</a></td>
 </tr>
 </tbody>
 </table>
+<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> &nbsp; <b>Tabulated EEG Data</b></p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th><i style="color: teal; font-size: 1.1em;" class="fa-solid fa-table"></i></th>
+<th>Domain</th>
 <th>Table</th>
 <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-    <td></td>
+  <td rowspan="2">EEG<sup><b>1</b></sup></td>
+  <td>EEG Acquisition Checklist</td>
+  <td><code>eeg_ch_chkl</code></td>
+</tr>
+<tr>
+  <td>EEG Acquisition Checklist - Reattempt 1/2</td>
+  <td><code>eeg_ch_chkl_<span class="blue-text">&lt;1|2&gt;</span></code></td>
+</tr>
+<tr>
+  <td rowspan="2">Tabular EEG<sup><b>2</b></sup></td>
   <td><a href="eeg/qc" target="_blank">Quality Control Metrics</a></td>
   <td><code>eeg_qc_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span></code></td>
 </tr>
 <tr>
-<td></td>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; HBCD-MADE pipeline outputs</td>
+  <td>Tabulated HBCD-MADE pipeline derivatives</td>
   <td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span>_acq-eeg_preprocessingReport</code><br>
-  <code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|VEP&gt;</span>_acq-eeg_ERPSummaryStats</code></td>
+  <code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|VEP&gt;</span>_ERPSummaryStats</code></td>
 </tr>
 </tbody>
+<tfoot>
+  <tr><td colspan="3" style="word-wrap: break-word; white-space: normal; padding: 10px 8px 6px 8px;">
+<sup><b>1</b></sup> <b>EEG</b> Domain: form-based data<br>
+<sup><b>2</b></sup> <b>Tabular EEG</b> Domain = Pipeline derivatives in HBCD tabulated format (<a href="../datacuration/overview/#warning" target="_blank"><i>see details</i></a>)
+</td></tr>
+</tfoot>
 </table>
 </div>
+
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>

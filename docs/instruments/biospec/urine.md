@@ -3,7 +3,7 @@
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>bio_bm_biosample_urine</code></div>
+    <div class="info-value"><code>bio_bm_biosample_urine_results</code></div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>

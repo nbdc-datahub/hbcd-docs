@@ -277,7 +277,7 @@ Processed derivatives are now included for V03 and V04 in addition to V02. New p
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></td>
-<td>Urine toxicology<br><code>bio_bm_biosample_urine</code></td>
+<td>Urine toxicology<br><code>bio_bm_biosample_urine__results_results</code></td>
   <td style="word-wrap: break-word; white-space: normal;">
   Restored 'missing' values for urinary cotinine (<code>bio_c_cot_u</code>) erroneously set to <code>0</code> (N = 18).
 </td>
@@ -426,10 +426,10 @@ Processed derivatives are now included for V03 and V04 in addition to V02. New p
 <li><code>bio_bm_biosample_nails_results_shadow.parquet</code></li>
 <li><code>bio_bm_biosample_nails_results_shadow.tsv</code></li>
 <li><code>bio_bm_biosample_urine.json</code></li>
-<li><code>bio_bm_biosample_urine.parquet</code></li>
-<li><code>bio_bm_biosample_urine.tsv</code></li>
-<li><code>bio_bm_biosample_urine_shadow.parquet</code></li>
-<li><code>bio_bm_biosample_urine_shadow.tsv</code></li>
+<li><code>bio_bm_biosample_urine_results.parquet</code></li>
+<li><code>bio_bm_biosample_urine_results.tsv</code></li>
+<li><code>bio_bm_biosample_urine_results_shadow.parquet</code></li>
+<li><code>bio_bm_biosample_urine_results_shadow.tsv</code></li>
 </ul>
 <p><strong>SPM-2</strong></p>
 <ul>
@@ -526,7 +526,7 @@ Processed derivatives are now included for V03 and V04 in addition to V02. New p
   </tr>  
 </tbody>
 </table>
-<p style="font-size: 1.0em;"><strong>Urine (<code>bio_bm_biosample_urine</code>)</strong></p>
+<p style="font-size: 1.0em;"><strong>Urine (<code>bio_bm_biosample_urine_results</code>)</strong></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
