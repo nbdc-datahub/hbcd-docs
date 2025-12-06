@@ -48,8 +48,10 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>The IBQ-R (VSF)+BI and ECBQ (VSF)+BI assess normative variations in infant/child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p> 
-<p>The IBQ-R was administered at V03 and V05. 78 participants were inadvertently administered the ECBQ at V05. Thus, there are a limited number of participants who do not have IBQ-R data at V05 and instead this data is in the ECBQ table for V05.</p>
+<p><b>Interpreting IBQ-R and ECBQ Data</b><br>
+The IBQ-R (VSF)+BI and ECBQ (VSF)+BI measure normative variations in infant and child behavior and should be interpreted in the context of the child’s age and developmental stage. These instruments are not clinical or diagnostic tools.</p>
+<p><b>IBQ-R vs ECBQ Administration at V05</b><br>
+The IBQ-R was administered at visits V03 and V05. At V05, 78 participants were inadvertently given the ECBQ instead of the IBQ-R; therefore, their IBQ-R data for that visit are missing but corresponding ECBQ data are available. <b>Additionally,</b> 10 participants were mistakenly administered both the IBQ-R and ECBQ at V05 and thus have data for both at V05.</p>
 </div>
 
 ## Administration & Quality Control
