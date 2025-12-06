@@ -4,21 +4,21 @@
 <thead>
 <tr>
   <th>Instrument</th>
-  <th>Table</th>
+  <th>Version</th>
   <th>Construct</th>
   <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">MacArthur-Bates CDI, Words and Gestures, Web Version (<i>CDI-WG</i>, <i>Web-CDI-WG</i>)</td>
-  <td>Words</td>
-  <td rowspan="2">Language<br>Development</td>
-  <td><code>nc_ch_cdiws</code></td>
+  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">MacArthur-Bates CDI, Words and Gestures, Web Version<br>(<i>CDI-WG</i>, <i>Web-CDI-WG</i>)</td>
+  <td>English</td>
+  <td rowspan="2">Language Development</td>
+  <td><code>ncl_ch_cdiwgen</code></td>
 </tr>
 <tr>
-  <td>Gestures</td>
-  <td><code>nc_ch_cdiwg</code></td>
+  <td>Spanish</td>
+  <td><code>ncl_ch_cdiwges</code></td>
 </tr>
 </tbody>
 </table>

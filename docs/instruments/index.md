@@ -289,17 +289,18 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><a href="neurocog/bayley-4" target="_blank">Bayley-4 Scales</a></td>
   <td></td>
   <td style="word-wrap: break-word; white-space: normal;">Child Development (Cognitive, Language, and Motor)</td>
-  <td><code>nc_ch_bayley</code></td>
+  <td><code>ncl_ch_bayley</code></td>
 </tr>
 <tr>
   <td rowspan="2"><a href="neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a></td>
-  <td rowspan="2">Infant Form</td>
-  <td>Language Development (Words)</td>
-  <td><code>nc_ch_cdiws</code></td>
+  <td>English Version</td>
+  <td>Language Development (Words & Gestures)</td>
+  <td><code>ncl_ch_cdiwgen</code></td>
 </tr>
 <tr>
-  <td>Language Development (Gestures)</td>
-  <td><code>nc_ch_cdiwg</code></td>
+  <td>Spanish Version</td>
+  <td>Language Development (Words & Gestures)</td>
+  <td><code>ncl_ch_cdiwges</code></td>
 </tr>
 <tr>
   <td><a href="neurocog/mlds" target="_blank">MLDS</a></td>
@@ -322,7 +323,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><a href="neurocog/vineland" target="_blank">Vineland Adaptive Behavior</a></td>
   <td></td>
   <td>Adaptive Behavior</td>
-  <td><code>nc_cg_vabs</code></td>
+  <td><code>ncl_cg_vabs</code></td>
 </tr>
 </tbody>
 </table>

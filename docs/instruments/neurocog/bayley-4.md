@@ -3,7 +3,7 @@
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>nc_ch_bayley</code></div>
+    <div class="info-value"><code>ncl_ch_bayley</code></div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
