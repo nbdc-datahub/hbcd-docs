@@ -47,3 +47,25 @@ filtered_df = read_and_filter_tsv("img_brainswipes_xcpd_T2w.tsv", 0.6)
 print(filtered_df.head())
 </code></pre>
 </div>
+
+
+
+<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
+<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;= Concatenated Data - <a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>
+</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="width: 30%;">Instrument</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;">Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
+    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
+    <td><code>sed_cg_tic_screener</code></td>
+  </tr>
+  </tbody>
+  </table>

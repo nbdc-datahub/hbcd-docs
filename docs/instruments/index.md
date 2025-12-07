@@ -77,21 +77,25 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 <div class="table-collapsible-content">
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;= Concatenated Data - <a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>
+<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;= Concatenated data - <a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>
 </p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
     <tr>
       <th style="width: 30%;">Instrument</th>
       <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;"><i style="color: teal;" class="fas fa-layer-group"></i> Concatenated Folder Name</th>
+      <th style="width: 30%;">Table/<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Folder Name</th>
     </tr>
   </thead>
   <tbody>
   <tr>
-    <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
+    <td rowspan="2"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
     <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
-    <td><i>tic/</i></td>
+    <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <i>?????/</i></td>
+  </tr>
+    <tr>
+    <td style="word-wrap: break-word; white-space: normal;">'Data entry not required' Form</td>
+    <td><code>sed_cg_tic_screener</code></td>
   </tr>
   </tbody>
   </table>
@@ -719,11 +723,11 @@ Expand the sections below to see a list of measures associated with each domain 
 <tbody>
 <tr>
   <td rowspan="2">EEG<sup><b>1</b></sup></td>
-  <td>EEG Acquisition Checklist</td>
+  <td><a href="eeg/" target="_blank">EEG Acquisition Checklist</a></td>
   <td><code>eeg_ch_chkl</code></td>
 </tr>
 <tr>
-  <td>EEG Acquisition Checklist - Reattempt 1/2</td>
+  <td><a href="eeg/" target="_blank">EEG Acquisition Checklist - Reattempt 1/2</a></td>
   <td><code>eeg_ch_chkl_<span class="blue-text">&lt;1|2&gt;</span></code></td>
 </tr>
 <tr>
@@ -740,7 +744,7 @@ Expand the sections below to see a list of measures associated with each domain 
 <tfoot>
   <tr><td colspan="3" style="word-wrap: break-word; white-space: normal; padding: 10px 8px 6px 8px;">
 <sup><b>1</b></sup> <b>EEG</b> Domain: form-based data<br>
-<sup><b>2</b></sup> <b>Tabular EEG</b> Domain = Pipeline derivatives in HBCD tabulated format (<a href="../datacuration/overview/#warning" target="_blank"><i>see details</i></a>)
+<sup><b>2</b></sup> <b>Tabular EEG</b> Domain:Pipeline derivatives in HBCD tabulated format (<a href="../datacuration/overview/#warning" target="_blank"><i>see details</i></a>)
 </td></tr>
 </tfoot>
 </table>

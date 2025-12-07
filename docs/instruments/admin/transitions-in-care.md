@@ -1,4 +1,4 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW</i></p>
+<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW - is this concatenated data, tabulated, or both?</i></p>
 
 # Transitions in Care Screener
 
