@@ -87,7 +87,7 @@ nav:
             - ecPROMIS Peer Relationships: instruments/bcgi/ecpromis-pr.md
             - ecPROMIS Self-Regulation: instruments/bcgi/ecpromis-selfreg.md
             - FAD: instruments/bcgi/fad.md
-            - IBQ/ECBQ-R (VSF)+BI: instruments/bcgi/ibqr.md
+            - IBQ-R & ECBQ: instruments/bcgi/ibqr.md
             - MAPS-TL: instruments/bcgi/maps-tl.md
         - Biospecimens & Omics:
             - Illumina GDA GWAS: instruments/biospec/illumina-gda-gwas.md

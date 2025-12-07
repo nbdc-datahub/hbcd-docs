@@ -51,7 +51,8 @@
 <p><b>Interpreting IBQ-R and ECBQ Data</b><br>
 The IBQ-R (VSF)+BI and ECBQ (VSF)+BI measure normative variations in infant and child behavior and should be interpreted in the context of the child’s age and developmental stage. These instruments are not clinical or diagnostic tools.</p>
 <p><b>IBQ-R vs ECBQ Administration at V05</b><br>
-The IBQ-R was administered at visits V03 and V05. At V05, 78 participants were inadvertently given the ECBQ instead of the IBQ-R; therefore, their IBQ-R data for that visit are missing but corresponding ECBQ data are available. <b>Additionally,</b> 10 participants were mistakenly administered both the IBQ-R and ECBQ at V05 and thus have data for both at V05.</p>
+At V05 (10–17 months), participants could be administered either the IBQ-R (validated for ages 3–12 months) or the ECBQ (validated for ages 18–36 months), depending on their age at the visit. Because no validated measure exists for 12–18 months, researchers are advised to select the instrument that best aligns with their study design. The HBCD protocol spans this age gap, so the decision was made to administer the IBQ-R to all infants at V03 and V05.<br>
+However, early in data collection, the ECBQ was inadvertently administered to infants older than 12 months (N=78). In a small number of cases (N=10), caregivers had not completed all of their V05 remote surveys before the child aged into the ECBQ range, resulting in both measures being administered at V05. Although IBQ-R and ECBQ assess similar constructs, they are not interchangeable. Users should review measure-specific properties before incorporating these data into analyses.</p>
 </div>
 
 ## Administration & Quality Control
@@ -66,7 +67,7 @@ The IBQ-R was administered at visits V03 and V05. At V05, 78 participants were i
 <td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
 <tr><td><b>Visits</b></td>
 <td>
-  <strong>IBQ-R (VSF)+BI</strong>: V03, V05 / <strong>ECBQ (VSF)+BI</strong>: V05 - <i>Validated for ages 3-18 months for HBCD</i></td></tr>
+  <strong>IBQ-R (VSF)+BI</strong>: V03, V05 / <strong>ECBQ (VSF)+BI</strong>: V05</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>7-10 min</td></tr>
 <tr><td><b>Quality Control</b></td>
