@@ -63,43 +63,7 @@ Expand the sections below to see a list of measures associated with each domain 
   Expand All Sections ↕️
 </button>
 
-### Demographics & Administrative
-
-<div id="admin" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-clipboard"></i></span>
-  <span class="text-with-link">
-  <span class="text">Administrative</span>
-  <a class="anchor-link" href="#admin" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;= Concatenated data - <a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>
-</p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-  <thead>
-    <tr>
-      <th style="width: 30%;">Instrument</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table/<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Folder Name</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td rowspan="2"><a href="admin/transitions-in-care" target="_blank">Transition in Care Screener</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
-    <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <i>?????/</i></td>
-  </tr>
-    <tr>
-    <td style="word-wrap: break-word; white-space: normal;">'Data entry not required' Form</td>
-    <td><code>sed_cg_tic_screener</code></td>
-  </tr>
-  </tbody>
-  </table>
-</div>
+### Demographics
 
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
@@ -665,6 +629,12 @@ Expand the sections below to see a list of measures associated with each domain 
   <td>Second Hand Smoke Exposure</td>
   <td><code>sed_cg_shs</code></td>
 </tr>    
+<tr>
+  <td><a href="SED/transitions-in-care" target="_blank">Transitions in Care Screener</a></td>
+  <td></td>
+  <td style="word-wrap: break-word; white-space: normal;">Recruitment/Retention</td>
+  <td><code>sed_cg_tic_screener</code></td>
+</tr>
 <tr>
   <td><a href="SED/discr" target="_blank">Unfair Treatment</a></td>
   <td></td>

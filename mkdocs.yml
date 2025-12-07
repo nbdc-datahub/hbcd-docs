@@ -75,8 +75,6 @@ nav:
   - Study Instruments:
     - Instruments Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
-    - Administrative:
-        - Transitions in Care: instruments/admin/transitions-in-care.md
     - Demographics:
         - Basic Demographics: instruments/demo/basicdemo.md
         - Visit Information: instruments/demo/visitinfo.md
@@ -137,6 +135,7 @@ nav:
             - Protective Factors: instruments/SED/paces.md
             - Perceived Stress/Social Support: instruments/SED/promis.md
             - Second Hand Smoke: instruments/SED/second-hand-smoke-exposure.md
+            - Transitions in Care: instruments/SED/transitions-in-care.md
             - Unfair Treatment: instruments/SED/discr.md            
             - Vancouver Index: instruments/SED/vi.md
     - Brain Activity & Biosensors:

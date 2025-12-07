@@ -1,8 +1,10 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER RUD REVIEW - is this concatenated data, tabulated, or both?</i></p>
+<p style="font-size: 1.5em; color: red;">🚧 <i>UNDER RUD REVIEW - is this concatenated data, tabulated, or both?</i></p>
 
 # Transitions in Care Screener
 
 ## Release Data
+
+<p style="font-size: 1.5em; color: red;">🚧 <i>update this section depending on data type</i></p>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
