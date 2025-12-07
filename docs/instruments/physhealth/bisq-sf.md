@@ -14,6 +14,28 @@
 </div>
 
 ---------------------------------------------
+
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</i></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>Add warning about score fields - added for BR20.2:<br>
+ph_cg_bisq_infant_sleep_score (?? - not included in Santiago's notes for 20.2 - see <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/18369996603/posts/4727745323">here</a>)<br>
+ph_cg_bisq_parent_behavior_score<br>
+ph_cg_bisq_parent_perception_score<br>
+ph_cg_bisq_total_score<br>
+</p>
+<p>Per Jen, need to document for users:<br>
+Individual item-level data exists for the whole cohort. Score data exists for all participants with the exception of data obtained prior to the data lock/cutoff date for initial scores obtained and parsed June 1st, 2025.<br>
+Wait until BR 20.2 to see how data looks before drafting</p>
+</div>
     
 ## Administration & Quality Control
 
