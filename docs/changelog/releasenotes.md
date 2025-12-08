@@ -69,13 +69,12 @@ Approximately **30 new study instruments/measures** have been added across the f
 <tbody>
 <tr>
 <td>
-<a style="margin-left: 2px;" href="../../instruments/" target="_blank"><i class="fas fa-clipboard"></i></a> Administrative<br>
 <a style="margin-left: 2px;" href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> MRI & MRS<br>
 <a style="margin-left: 2px;" href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver–Child Interaction<br>
-<a style="margin-left: 2px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
+<a style="margin-left: 2px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics<br>
+<a style="margin-left: 2px;" href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
 </td>
 <td>
-<a style="margin-left: 2px;" href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language<br>
 <a style="margin-left: 2px;" href="../../instruments/#ph" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health<br>
 <a style="margin-left: 2px;" href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use<br>
 <a style="margin-left: 2px;" href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
@@ -106,12 +105,6 @@ Approximately **30 new study instruments/measures** have been added across the f
 </tr>
 </thead>
 <tbody>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-clipboard" style="font-size:1.1em; margin-right: 2px;"></i> ADM
-  <span class="tooltiptext">Administrative</span></span></td>
-  <td>Transition in Care Screener &nbsp;<i style="color: teal;" class="fas fa-layer-group"></i></td>
-</tr>
-</tr>
 <tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i> IMG
   <span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
@@ -147,7 +140,7 @@ Approximately **30 new study instruments/measures** have been added across the f
   <td>Alcohol, Smoking and Substance Involvement Screening Test (<i>ASSIST</i>) - <b>Addition of ASSIST V4</b></td></tr>
 <tr><td>Substance Use Patterns</td></tr>
 <tr>
-<td rowspan="10" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-city" style="font-size:1.1em; margin-right: 2px;"></i> SED<span class="tooltiptext">Social & Environmental Determinants</span></span></td>
+<td rowspan="11" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-city" style="font-size:1.1em; margin-right: 2px;"></i> SED<span class="tooltiptext">Social & Environmental Determinants</span></span></td>
 <td>Geocoded Linkage &nbsp;<i style="color: teal;" class="fas fa-layer-group"></i></td>
 <tr><td>Adverse Childhood Experiences (<i>ACEs</i>) - including Adult & Pediatric versions</td></tr>  
 <tr><td>Composite Abuse Scale (<i>CABr-SF</i>)</td></tr>
@@ -157,6 +150,7 @@ Approximately **30 new study instruments/measures** have been added across the f
 <tr><td>Lead Exposures</td></tr> 
 <tr><td>PACES (Protective Factors) - Addition of Version &lt;18</td></tr>  
 <tr><td>Second Hand Smoke Exposure</td></tr>
+<tr><td>Transition in Care Screener</td></tr>
 <tr><td>Vancouver Index of Acculturation (<i>VIA</i>)</td></tr> 
 </tbody>
 </table>
