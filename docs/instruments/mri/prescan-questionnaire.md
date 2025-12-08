@@ -5,7 +5,7 @@
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>img_ra_prep</code></div>
+    <div class="info-value"><code>mri_ra_prep</code></div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
