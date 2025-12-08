@@ -884,15 +884,10 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fas fa-folder-open"></i>&nbsp;= File-Based Data &nbsp;&nbsp;
-<i style="color: teal;" class="fa-solid fa-table"></i>&nbsp;= Tabulated Data
-</p>
-<br><br>
+<p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> &nbsp; <b>File-Based Data</b></p>
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead>
 <tr>
-  <th><i style="color: teal; font-size: 1.1em;" class="fas fa-folder-open"></i></th>
   <th>Wearable Sensor Type</th>
   <th>Raw BIDS</th>
   <th>Pipeline Derivatives</th>
@@ -900,17 +895,16 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-    <td></td>
     <td><a href="sensors/wearsensors/" target="_blank">Infant Leg Motion - Accelerometry</td>
     <td><a href="sensors/wearsensors/#rawbids" target="_blank"><code>motion/</code></a></td>
     <td><a href="sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a></td>
 </tr>
 </tbody>
 </table>
+<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> &nbsp; <b>Tabulated Data</b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
-<th><i style="color: teal; font-size: 1.1em;" class="fa-solid fa-table"></i></th>
 <th>Instrument</th>
 <th>Construct</th>
 <th>Table Name</th>
@@ -918,13 +912,21 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-<td></td>
 <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
 <td>Motor Development, Regulation (Sleep/Wake) <i>(Day 1/2/3)</i></td>
 <td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
 </tr>
+<tr>
+<td><a href="sensors/wearsensors" target="_blank">Biosensor Receipt</a></td>
+<td>Administrative</td>
+<td><code>nt_ch_sens_rcpt</code></td>
+</tr>
+<tr>
+<td><a href="sensors/wearsensors" target="_blank">Biosensor Setup</a></td>
+<td>Administrative</td>
+<td><code>nt_ch_sens_setup</code></td>
+</tr>
 </tbody>
 </table>
 </div>
-
 
