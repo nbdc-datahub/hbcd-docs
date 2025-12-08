@@ -803,7 +803,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-<td rowspan="7"><b>Tabular Imaging</b></td>
+<td rowspan="7"><b>Tabular<br>Imaging</b></td>
   <td><a href="mri/qc/#brainswipes" target="_blank">BrainSwipes (Manual QC)</a></td>
   <td>
   <code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code><br>
