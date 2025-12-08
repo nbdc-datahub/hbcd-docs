@@ -61,8 +61,18 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The first 5 items are used to create a Physical Activity T-score, and the remaining 2 items are individually scored using the response options. See additional/supplemental scoring document <a href="https://drive.google.com/open?id=15BEZmAczj1KT8do7CnbeqdET-79EKrgj">here</a>.</p>
+<p>The first 5 items are used to create a Physical Activity T-score, and the remaining 2 items are individually scored using the response options.</p>
+<p><a href="../images/PROMIS_Physical_Activity_Scoring_Manual_06.01.2023%5B95%5D.pdf" target="_blank">PROMIS® Physical Activity Scoring Manual</a>:
+<img src="../images/PA-scoring.png" alt="Physical Activity Scoring" width="70%" height="auto" class="center">
+</p>
 </div>
+
+## Resources
+
+<ul>
+<li><a href="../images/PROMIS_Early_Childhood_Parent_Report_Scale_v1.0_-_Physical_Activity_7a_06.01.2023.pdf" target="_blank">PROMIS® Early Childhood Parent Report Scale v1.0 - Physical Activity 7a</a></li>
+<li><a href="../images/PROMIS_Physical_Activity_Scoring_Manual_06.01.2023%5B95%5D.pdf" target="_blank">PROMIS® Physical Activity Scoring Manual</a> (also see <a href="#scoring">Scoring Procedures</a> above)</li>
+</ul>
 
 ## References
 

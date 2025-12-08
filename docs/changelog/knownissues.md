@@ -56,8 +56,7 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
 <tr>
   <td>ecPROMIS - Physical Activity/Greenspace<br><code>ph_cg_pms__pags</code></td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">The 3 score fields are currently excluded due to incorrect data. Users can calculate scores themselves via.....
-  </td>
+  <td style="word-wrap: break-word; white-space: normal;">The 3 score fields are currently excluded due to incorrect data. Users can calculate scores themselves by following the <a href="../../instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documented on the instrument page.</td>
 </tr>
 </tbody>
 </table>
