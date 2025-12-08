@@ -43,6 +43,25 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
 </tbody>
 </table>
 
+## <a href="../../instruments/#ph" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr style="border-bottom:2px solid #ccc;">
+    <th>TABLE/DATA</th>
+    <th style="width: 1%; text-align: center;">FIX</th>
+    <th>KNOWN ISSUE</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>ecPROMIS - Physical Activity/Greenspace<br><code>ph_cg_pms__pags</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">The 3 score fields are currently excluded due to incorrect data. Users can calculate scores themselves via.....
+  </td>
+</tr>
+</tbody>
+</table>
+
 ## <a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
