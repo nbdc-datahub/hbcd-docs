@@ -64,7 +64,6 @@ Expand the sections below to see a list of measures associated with each domain 
 </button>
 
 ### Demographics
-
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
   <span class="text-with-link">
@@ -877,23 +876,15 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> &nbsp; <b>File-Based Data</b></p>
-<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
-<thead>
-<tr>
-  <th>Wearable Sensor Type</th>
-  <th>Raw BIDS</th>
-  <th>Pipeline Derivatives</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td><a href="sensors/wearsensors/" target="_blank">Infant Leg Motion - Accelerometry</td>
-    <td><a href="sensors/wearsensors/#rawbids" target="_blank"><code>motion/</code></a></td>
-    <td><a href="sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a></td>
-</tr>
-</tbody>
-</table>
+<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-up-right-from-square"></i> <b>Quick Links</b></p>
+<ul>
+<li><a href="sensors/wearsensors/" target="_blank">Infant Leg Motion - Accelerometry</a></li>
+</ul>
+<p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> <b>File-Based Data</b></p>
+<ul>
+<li>Raw BIDS stored under subject- and session-specific <a href="sensors/wearsensors/#rawbids" target="_blank"><code>motion/</code></a> folders</li>
+<li>Processed derivatives output by the <a href="sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a> pipeline</li>
+</ul>
 <p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> &nbsp; <b>Tabulated Data</b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
