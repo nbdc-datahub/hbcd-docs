@@ -664,24 +664,21 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> &nbsp; <b>File-Based EEG Data</b></p>
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-  <th>EEG Tasks</th>
-  <th>Raw BIDS</th>
-  <th>Pipeline Derivatives</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;">Auditory Mismatch Negativity (MMN), Faces (FACE), Video Resting State (RS), & Visual Evoked Potential (VEP) - see <a href="eeg/tasks/" target="_blank">HBCD EEG Tasks</a></td>
-  <td><a href="eeg/#rawbids" target="_blank"><code>eeg/</code></a></td>
-  <td><a href="eeg/#made" target="_blank">HBCD-MADE</a></td>
-</tr>
-</tbody>
-</table>
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> &nbsp; <b>Tabulated EEG Data</b></p>
+<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-up-right-from-square"></i> <b>Quick Links</b></p>
+<ul>
+<li><a href="eeg/" target="_blank">Overview & EEG Protocols</a></li>
+<li><a href="eeg/qc" target="_blank">EEG Quality Control Procedures</a></li>
+<li><a href="eeg/tasks" target="_blank">HBCD EEG Tasks</a> (<i>Auditory Mismatch Negativity, Faces, Video Resting State, & Visual Evoked Potential</i>)</li>
+</ul>
+<p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> <b>File-Based EEG Data</b></p>
+<ul>
+<li>Raw BIDS stored under subject- and session-specific <a href="eeg/#rawbids" target="_blank"><code>eeg/</code></a> folders</li>
+<li>Processed derivatives output by the <a href="eeg/#made" target="_blank">HBCD-MADE</a> pipeline</li>
+</ul>
+<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> <b>Tabulated EEG Data</b></p>
+<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
+<b>MMN</b>=Auditory Mismatch Negativity; <b>FACE</b>=Faces; <b>RS</b>=Video Resting State; <b>VEP</b>=Visual Evoked Potential
+</p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -692,7 +689,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2">EEG<sup><b>1</b></sup></td>
+  <td rowspan="4">Tabular EEG</td>
   <td><a href="eeg/" target="_blank">EEG Acquisition Checklist</a></td>
   <td><code>eeg_ch_chkl</code></td>
 </tr>
@@ -701,22 +698,18 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>eeg_ch_chkl_<span class="blue-text">&lt;1|2&gt;</span></code></td>
 </tr>
 <tr>
-  <td rowspan="2">Tabular EEG<sup><b>2</b></sup></td>
   <td><a href="eeg/qc" target="_blank">Quality Control Metrics</a></td>
   <td><code>eeg_qc_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span></code></td>
 </tr>
 <tr>
-  <td>Tabulated HBCD-MADE pipeline derivatives</td>
+  <td>Tabulated HBCD-MADE pipeline derivatives<sup><b>1</b></sup></td>
   <td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span>_acq-eeg_preprocessingReport</code><br>
   <code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|VEP&gt;</span>_ERPSummaryStats</code></td>
 </tr>
 </tbody>
-<tfoot>
-  <tr><td colspan="3" style="word-wrap: break-word; white-space: normal; padding: 10px 8px 6px 8px;">
-<sup><b>1</b></sup> <b>EEG</b> Domain: form-based data<br>
-<sup><b>2</b></sup> <b>Tabular EEG</b> Domain:Pipeline derivatives in HBCD tabulated format (<a href="../datacuration/overview/#warning" target="_blank"><i>see details</i></a>)
-</td></tr>
-</tfoot>
+<tfoot><tr><td colspan="3">
+ <sup><b>1</b></sup> See <a href="../datacuration/overview/#warning" target="_blank"><i>Which file-based data are also available as HBCD tabulated data? </i></a>
+</td></tr></tfoot>
 </table>
 </div>
 
