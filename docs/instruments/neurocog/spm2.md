@@ -37,9 +37,6 @@
 <div class="warning-collapsible-content">
 <p><b>Addition of Response Option "Decline to answer"</b><br>
 The response option "Decline to answer" was added on November 8, 2024 to allow participants to not answer any questions they choose. However, "Decline to answer" is not a response option on the published form and was not used in the reference sample from which the standard scores were derived. It is possible that participants chose “Decline to Answer” rather than “never” for behaviors that have never been seen (for example items related to reacting to food texture for an infant who has not been exposed to solids).</p> 
-<span style="color: red;">LUCI NOTE: potential additional text (also check whether the list of participant IDs needs to be shared with users. if necessary for some reason, then can share via HBCD Private site)
-<p><b>SPM-2 Toddler Age Range</b><br>
-The age range for the SPM-2 Toddler is 10 to 16 months of age. There are 15 cases where the age is above 16 months, with a maximum age of 18.9 months.</p></span>
 </div>
 
 ## Administration & Quality Control
