@@ -4,8 +4,8 @@
 ## Release 2.1 (Release Date TBA)
 
 ### 2.1 Participant Data
-
-For **Multiple Birth participants** (see [Cohort & Caregiver Types](../instruments/demo/visitinfo.md#cohort-caregiver-types)), family/maternal-level data is not duplicated for both siblings; the data will only be present for the Main Child across instruments. In the future, HBCD Main Child data will be copied to the sibling profile (e.g. HBCD Multiple Birth - Sibling) for non-child-specific elements so that users won't have to do this themselves.
+##### Multiple Birth Participants
+Family/maternal-level data is only present for the Main Child across instruments. In the future, HBCD Main Child data will be copied to the sibling profile (e.g. HBCD Multiple Birth - Sibling) for non-child-specific elements so that users won't have to do this themselves.  **See [Note: Blank Fields for *HBCD Multiple Birth* Cohorts](../instruments/demo/visitinfo.md#warning) for details.** 
 
 ### 2.1 Existing Study Data Updates
 
