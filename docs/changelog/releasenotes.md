@@ -69,12 +69,13 @@ Approximately **30 new study instruments/measures** have been added across the f
 <tbody>
 <tr>
 <td>
-<a style="margin-left: 2px;" href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> MRI & MRS<br>
 <a style="margin-left: 2px;" href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver–Child Interaction<br>
 <a style="margin-left: 2px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics<br>
+<a style="margin-left: 2px;" href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> MRI & MRS<br>
 <a style="margin-left: 2px;" href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
 </td>
 <td>
+<a style="margin-left: 2px;" href="../../instruments/#sensors" target="_blank"><i class="fa fa-microchip"></i></a> Novel Technologies & Wearable Sensors<br>
 <a style="margin-left: 2px;" href="../../instruments/#ph" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health<br>
 <a style="margin-left: 2px;" href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use<br>
 <a style="margin-left: 2px;" href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
@@ -126,7 +127,13 @@ Approximately **30 new study instruments/measures** have been added across the f
 <td>Bayley-4 (<i>Bayley Scales of Infant and Toddler Development</i>)</td></tr>
 <tr><td>MacArthur-Bates CDI-I (<i>Communicative Development Inventories</i>) Words & Gestures</td></tr>
 <tr><td>SPM-2 (<i>Sensory Processing Measure-2</i>) - <b>Addition of Version: Toddler</b></td></tr>
-<tr><td>Vineland Adaptive Behavior</td></tr>
+<tr><td>Vineland Adaptive Behavior</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-microchip" style="font-size:1.1em; margin-right: 2px;"></i> NT<span class="tooltiptext">Novel Tech & Wearables</span></span></td>
+<td>Biosensor Receipt</td></tr>
+<tr><td>Biosensor Setup</td></tr>
+</tr>
 <tr>
 <td rowspan="6" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i> PH<span class="tooltiptext">Physical Health</span></span></td>
 <td>Brief Infant Sleep Questionnaire (<i>BISQ-SF</i>)</td></tr>
