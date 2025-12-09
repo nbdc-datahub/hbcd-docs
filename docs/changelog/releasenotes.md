@@ -718,7 +718,6 @@ Processed derivatives are now included for V03 and V04 in addition to V02. New p
 <tr><td>MRI Checklists & Pre/Post Scan Prep</td><td><code>mri_ra_chkl_data</code> / <code>mri_ra_chkl_scan</code> / <code>mri_ra_prep</code></td></tr>
 <tr><td>NIH Baby ToolBox</td><td><code>ncl_ch_nbtb</code></td></tr>
 <tr><td>Participant / RA Feedback</td><td><code>adm_cg_fb</code> / <code>adm_ra_fb</code></td></tr>
-<tr><td>Transitions in Care Questionnaire</td><td><code>sed_cg_tic</code></td></tr>
 <tr><td>Urgent Events & Participant Alerts</td><td><code>adm_fd_urgent</code> / <code>admin_alert</code></td></tr>
 <tr><td>Visit Start / Visit Level Data</td><td><code>visit_start</code> / <code>adm_fd_visitdata</code></td></tr>
 </tbody>
