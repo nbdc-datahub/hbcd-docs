@@ -31,6 +31,11 @@
 <p>This measure assesses a child’s exposure to language to guide the selection of appropriate measures for their next in-person study visit. It estimates the percentage of time the child is exposed to languages in caregiving environments, based on caregiver reports. These estimates are approximate and also may not account for all languages the child encounters. The measure does not evaluate or quantify the child’s interactions or their expressive or receptive language skills in a given language, but rather provides an estimate of the time spent in environments where specific languages are spoken.</p> 
 </div>
 
+<div id="issues" class="issues-banner">
+<span class="emoji"><i class="fas fa-bug"></i></span>
+<span class="text">This data has known issues - <a href="../../../changelog/knownissues/#neurocognition-language" target="_blank">see details</a>.</span>
+</div>
+<p></p>
 
 ## Administration & Quality Control
 

@@ -60,6 +60,13 @@ If you have questions or would like to report an issue, please submit a ticket t
 nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
   </td>
 </tr>
+<tr>
+  <td>MLDS<br><code>ncl_ch_mlds</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  The variable "total hours per week of non parental hours" (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The max plausible value for this variable is 168 hours; any observations greater than 168 are erroneous- please do not include these observations in your analysis.
+  </td>
+</tr>
 </tbody>
 </table>
 
