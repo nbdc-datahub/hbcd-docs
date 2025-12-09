@@ -90,7 +90,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><code>sed_basic_demographics</code></td>
   </tr>
     <tr>
-    <td><a href="demo/visitinfo" target="_blank">Visit Information</a></td>
+    <td><a href="demo/visitinfo" target="_blank">Visit Level Data</a></td>
     <td>Participant visit information</td>
     <td><code>par_visit_data</code></td>
   </tr>

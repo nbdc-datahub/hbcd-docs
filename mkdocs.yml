@@ -77,7 +77,7 @@ nav:
     - Age Variables: instruments/agevariables.md
     - Demographics:
         - Basic Demographics: instruments/demo/basicdemo.md
-        - Visit Information: instruments/demo/visitinfo.md
+        - Visit Level Data: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 
             - CHAOS: instruments/bcgi/chaos.md

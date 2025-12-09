@@ -1,4 +1,4 @@
-# Visit Information
+# Visit Level Data
 
 <div class="info-block">
   <div class="info-row">
@@ -13,7 +13,7 @@
 
 ---------------------------------------------
 
-**Visit Information includes: [General Visit Information](#general-visit-information), [Substance Use Flags](#substance-use-flags), and [Cohort & Caregiver Types](#cohort-caregiver-types).**
+**Visit Level Data includes: [General Visit Information](#general-visit-information), [Substance Use Flags](#substance-use-flags), and [Cohort & Caregiver Types](#cohort-caregiver-types).**
 
 ### Age Of Child at Each Visit
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -39,7 +39,7 @@
 </tbody>
 </table>
 
-### General Visit Information
+### General Visit Level Data
  - Label, Stage, Date, Project, and Site
  - If the visit was missed and reason 
  - Withdrawal information (if the participant withdrew from the study, the reason, and date)
@@ -48,7 +48,7 @@
  <div id="vars" class="table-banner" onclick="toggleCollapse(this)">
    <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
    <span class="text-with-link">
-   <span class="text">General Visit Information Variables</span>
+   <span class="text">General Visit Level Data Variables</span>
    <a class="anchor-link" href="#vars" title="Copy link">
    <i class="fa-solid fa-link"></i>
    </a>
@@ -107,7 +107,7 @@
 
 ### Substance Use Flags
 
-Visit information also includes **substance use flags**, which are single summary variables that indicate substance use status (yes/no) based on any positive reports from the following instruments:
+Visit Level Data also includes **substance use flags**, which are single summary variables that indicate substance use status (yes/no) based on any positive reports from the following instruments:
 
  - The Timeline Follow Back (<a href="../../pregexp/su/tlfb" target="_blank">TLFB</a>) (self-reported use)
  - <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> when options 1 (*Neonatal Opioid Withdrawal Syndrome*) and/or 5 (*Fetal Alcohol Syndrome*) were selected for field `007` (self-reported use)
@@ -116,7 +116,7 @@ Visit information also includes **substance use flags**, which are single summar
 <div id="su" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
-  <span class="text">SU Visit Information Variables</span>
+  <span class="text">SU Visit Level Data Variables</span>
   <a class="anchor-link" href="#su" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>

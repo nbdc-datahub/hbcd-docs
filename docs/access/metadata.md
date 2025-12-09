@@ -290,7 +290,7 @@ See the following sections for detailed descriptions for each column in the [dat
 
 ## Additional Information: Site & Cohort
 
-When using datasets downloaded from the NBDC Data Access Platform, two additional variables not listed in the data dictionary, `cohort` and `site`, are included. These are derived from the <a href="../../instruments/demo/visitinfo" target="_blank">Visit Information</a> (`par_visit_data`) table. 
+When using datasets downloaded from the NBDC Data Access Platform, two additional variables not listed in the data dictionary, `cohort` and `site`, are included. These are derived from the <a href="../../instruments/demo/visitinfo" target="_blank">Visit Level Data</a> (`par_visit_data`) table. 
 
 - **`cohort`** — Derived from `par_visit_data_cohort`. See <a href="../../instruments/demo/visitinfo/#cohort-caregiver-types" target="_blank">Cohort & Caregiver Types</a> for details.  
 - **`site`** — Derived from `par_visit_data_site`, indicating the site where each visit occurred (which may vary between visits). Note that this differs from `recruitment_site` in <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a>, which refers to the site at time of recruitment.
@@ -310,7 +310,7 @@ The following table (expand to view) shows the global mapping between site IDs a
 <div class="table-collapsible-content">
 <table class="table-no-vertical-lines" style="width:100%;border-collapse:collapse;table-layout:fixed;">
 <thead>
-<tr style="border-bottom:2px solid #ccc;"><th>Basic Demographics Site ID</th><th>Visit Information Site ID</th><th>Site Name</th></tr>
+<tr style="border-bottom:2px solid #ccc;"><th>Basic Demographics Site ID</th><th>Visit Level Data Site ID</th><th>Site Name</th></tr>
 </thead>
 <tbody>
 <tr><td>0</td><td>hbcdsite64</td><td>Arkansas Children's Hospital (site 1)</td></tr>

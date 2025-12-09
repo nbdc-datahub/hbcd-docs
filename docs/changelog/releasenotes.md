@@ -254,7 +254,7 @@ Processed derivatives are now included for V03 and V04 in addition to V02. New p
 </td>
 </tr>
 <tr>
-<td rowspan="3">Visit Information<br><code>par_visit_data</code></td>
+<td rowspan="3">Visit Level Data<br><code>par_visit_data</code></td>
 <td style="word-wrap: break-word; white-space: normal;">
   <b>[1]</b> Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) were assigned a sentinel withdrawal date (<code>participant_withdrawal_date</code>) of <code>12/26/1999</code>. These values were updated to null for clarity and consistency.
 </td>
@@ -490,7 +490,7 @@ Processed derivatives are now included for V03 and V04 in addition to V02. New p
   </tr>
 </tbody>
 </table>
-<p style="font-size: 1.0em;"><strong>Visit Information (<code>par_visit_data</code>)</strong></p>
+<p style="font-size: 1.0em;"><strong>Visit Level Data (<code>par_visit_data</code>)</strong></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>

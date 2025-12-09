@@ -14,7 +14,7 @@ hbcd/
 |__ rawdata/ 
     |__ phenotype/ 
         |__ sed_basic_demographics.*        <span class="hashtag"># Basic Demographics</span>
-        |__ par_visit_data.*                <span class="hashtag"># Visit Information</span>
+        |__ par_visit_data.*                <span class="hashtag"># Visit Level Data</span>
         |__ bio_biosample_<span class="placeholder">&lt;nails|urine&gt;</span>.*   <span class="hashtag"># Toxicology</span>
         |__ <span class="placeholder">{instrument_name}</span>.*               <span class="hashtag"># Instrument Data</span>
 </pre>
