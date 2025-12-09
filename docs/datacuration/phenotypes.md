@@ -53,12 +53,22 @@ Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modalit
 </tbody>
 </table>
 
-### Study Design Logic: Child-Centric Data Structure
-
-The HBCD Study organizes data around the Child ID as the central key, **i.e. a caregiver and their child share the same participant ID.** All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by:
-
-- **Simplifying child-focused analysis**: Researchers can track each child’s data over time without remapping caregiver information.
-- **Handling multi-birth cases cleanly**: When a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.
+<div id="study-design-logic-child-centric-data-structure" class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Study Design Logic: Child-Centric Data Structure</span>
+  <a class="anchor-link" href="#study-design-logic-child-centric-data-structure" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+</div>
+<div class="notification-static-content">
+<p>The HBCD Study organizes data around the Child ID as the central key, <strong>i.e. a caregiver and their child share the same participant ID.</strong> All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by:</p>
+<ul>
+<li><strong>Simplifying child-focused analysis</strong>: Researchers can track each child’s data over time without remapping caregiver information.</li>
+<li><strong>Handling multi-birth cases cleanly</strong>: When a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.</li>
+</ul>
+</div>
 
 ## File Types
 
