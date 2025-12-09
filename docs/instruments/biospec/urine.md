@@ -31,6 +31,12 @@ Urine concentrations vary by participant. Urinary concentration corrections can 
 <p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#biospecimen-omics" target="_blank">see details</a>.</span>
+</div>
+<p></p>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

@@ -22,6 +22,26 @@ If you have questions or would like to report an issue, please submit a ticket t
 </tbody>
 </table>
 
+## <a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr style="border-bottom:2px solid #ccc;">
+    <th>TABLE/DATA</th>
+    <th style="width: 1%; text-align: center;">FIX</th>
+    <th>KNOWN ISSUE</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>Urinary Creatinine<br><code>bio_bm_biosample_urine_results</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  Creatinine results (<code>bio_creat_u</code>) and units (<code>bio_creat_u_units</code>) are currently excluded due to inaccuracies in the data and will be added in a future release.
+  </td>
+</tr>
+</tbody>
+</table>
+
 ## <a href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
