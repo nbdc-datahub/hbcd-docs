@@ -3,6 +3,10 @@
 
 ## Release 2.1 (Release Date TBA)
 
+### 2.1 Participant Data
+
+For **Multiple Birth participants** (see [Cohort & Caregiver Types](../instruments/demo/visitinfo.md#cohort-caregiver-types)), family/maternal-level data is not duplicated for both siblings; the data will only be present for the Main Child across instruments. 
+
 ### 2.1 Existing Study Data Updates
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
@@ -20,3 +24,4 @@
 </tr>
 </tbody>
 </table>
+
