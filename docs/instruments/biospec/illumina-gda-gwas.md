@@ -1,5 +1,3 @@
- <span style="color: red;">LUCI ADMIN NOTE: recommended to workgroup to check out ABCD genetics documentation as a potential reference for how detailed the documentation should be - <a href="https://docs.abcdstudy.org/latest/documentation/non_imaging/gn.html">see ABCD Genetics section</a></span>
-
 # Illumina Global Diversity GWAS Array 
 
 Genomic data generated from the **Illumina Global Diversity Array (GDA GWAS)** is provided for both the birth parent and child. Samples are assayed from one sample, but may come from any visit (V01-V06) based on DNA yields.
