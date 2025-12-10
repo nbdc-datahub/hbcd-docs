@@ -105,6 +105,13 @@ For the 1.0 and 1.1 releases, TSV and Parquet files were created from source dat
   Missing values for urinary cotinine (<code>bio_c_cot_u</code>) were erroneously set to <code>0</code> (N = 18) and will be restored in a future release. In the meantime, users can identify affected records by checking <code>bio_c_nicotine_u</code> for values of <code>3</code> (<code>--invalid</code>).
 </td>
 </tr>
+<tr>
+  <td>Urinary Creatinine<br><code>bio_bm_biosample_urine_results</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  Creatinine results (<code>bio_creat_u</code>) contain values outside of the expected range; please do not use this variable until it is resolved.
+  </td>
+</tr>
 </tbody>
 </table>
 
