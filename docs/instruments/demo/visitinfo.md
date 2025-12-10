@@ -201,7 +201,7 @@ mult_birth_participants-supplemental.csv"><i class="fa-solid fa-download"></i> &
 <div id="warning-PNR" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
-  <span class="text">Postnatal Recruit (PNR) - Known Issue Regarding TLFB</span>
+  <span class="text">Postnatal Recruit (PNR) - Known Issue Regarding the TLFB</span>
   <a class="anchor-link" href="#warning-PNR" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>

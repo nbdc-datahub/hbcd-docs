@@ -38,7 +38,10 @@ Analysts using HBCD data have ethical obligations to minimize risks, including p
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>The dataset includes two birth parents who are monozygotic twins (along with their respective families), which may complicate certain analyses. The participant IDs associated with this twin pair are under internal review and may be shared in a future update.</p> 
+<p><b>Twins Present in Birth Parents</b><br>
+The dataset includes two birth parents who are monozygotic twins (along with their respective families), which may complicate certain analyses. The participant IDs associated with this twin pair are under internal review and may be shared in a future update.</p> 
+<p><b>Data Exclusions</b><br>
+See <a href="#data-exclusions">Quality Control &gt; Data Exclusions</a> below.</p>
 </div>
 <p></p>
 
@@ -94,6 +97,10 @@ Quality control procedures involved the following:
   <li>Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is ~.50 between the birth parent and child as well as siblings; evaluate potential twins).</li>
   <li>Use FHET estimates to check for plate contamination.</li>
 </ul>
+
+## Data Exclusions
+
+A total of 22 samples were excluded from data release (i.e., are not contained in the public release files) due to poor genotyping quality (i.e., SNP Missingness >10%), unexpected unrelatedness with no use of reproductive technology, unexpected relatedness (i.e., identical samples across adults), and sex check mismatch.
 
 ## References
 <div class="references"> 
