@@ -1,5 +1,3 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
-
 # Illumina Global Diversity GWAS Array 
 
 Genomic data generated from the **Illumina Global Diversity Array (GDA GWAS)** is provided for both the birth parent and child. Samples are assayed from one sample, but may come from any visit (V01-V06) based on DNA yields.
@@ -38,9 +36,7 @@ Analysts using HBCD data have ethical obligations to minimize risks, including p
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Two participants are twins, which should be considered prior to analysis. The participant IDs are available via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> (accessible to DUC-authorized users only).<br><br>
-<a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/illumina-gda-gwas-supplemental.csv"><i class="fa-solid fa-download"></i> Download participant list</a> 
-</p> 
+<p>The dataset includes two birth parents who are monozygotic twins (along with their respective families), which may complicate certain analyses. The participant IDs associated with this twin pair are under internal review and may be shared in a future update.</p> 
 </div>
 
 The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>genetics/</code> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*). It includes **three interlinked PLINK files** (`.bed`, `.bim`, `.fam`) aligned to the **hg19 genome build**, plus supporting documentation and batch metadata:

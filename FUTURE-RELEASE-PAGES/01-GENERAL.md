@@ -48,3 +48,20 @@ print(filtered_df.head())
 </code></pre>
 </div>
 
+## Genetics Data Warning
+
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>Two participants are twins, which should be considered prior to analysis. The participant IDs are available via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> (accessible to DUC-authorized users only).<br><br>
+<a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/illumina-gda-gwas-supplemental.csv"><i class="fa-solid fa-download"></i> Download participant list</a> 
+</p> 
+</div>
