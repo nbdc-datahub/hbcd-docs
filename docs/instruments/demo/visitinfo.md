@@ -209,7 +209,7 @@ mult_birth_participants-supplemental.csv"><i class="fa-solid fa-download"></i> &
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>For <b>Postnatal Recruits</b>, the TLFB instrument was reported on the incorrect version - see <a href="../../../changelog/knownissues/#pregnancy-exposure-including-substance-use" target="_blank">Known Issue &gt; TLFB</a> for details.</p>
+<p>For <b>Postnatal Recruits</b>, the TLFB instrument was reported on the wrong weeks - see <a href="../../../changelog/knownissues/#pregnancy-exposure-including-substance-use" target="_blank">Known Issue &gt; TLFB</a> for details.</p>
 </div>
 <p></p>
 
