@@ -39,13 +39,15 @@ This page defines how age is represented across HBCD datasets. Separate variable
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
+<p>
 <ul>
 <li><strong>Administration</strong>: The date a study instrument was completed.  </li>
 <li><strong>Data acquisition</strong>: The date of MR, EEG, or wearable sensor recording.  </li>
 <li><strong>Adjusted age</strong>: Computed relative to the <strong>Estimated Date of Delivery (EDD)</strong> to align preterm and full-term infants to a common developmental reference.  </li>
 <li><strong>Chronological age</strong>: Computed using a <strong>jittered date of birth (DOB)</strong> randomly shifted by up to 7 days to protect participant privacy without affecting analyses.  </li>
 </ul>
+</p>
 </div>
 
 ---

@@ -191,7 +191,7 @@ Visit Level Data also includes **substance use flags**, which are single summary
 </div>
 <div class="warning-collapsible-content">
 <p>For <b>Multiple Birth participants</b> (e.g., <i>cohort</i> = "HBCD Multiple Birth – Sibling"), instrument fields are blank unless the instrument is child-specific. Maternal instruments, for example, are only populated for the Main Child. Users may copy these values into the sibling record if needed.</p>
-<p>In future releases, non–child-specific data from the Main Child will be automatically copied to the sibling profile (see <a href="../../../changelog/pending/" target="_blank">Pending Updates</a>). Until then, we provide a participant list mapping Main Child to sibling IDs to support manual duplication:</p>
+<p>In future releases, fields for non–child-specific data will be populated from the Main Child to sibling profile and an additional Data Dictionary element will be incorporated for family ID (see <a href="../../../changelog/pending/" target="_blank">Pending Updates</a>). Until then, we provide a participant list mapping Main Child to sibling IDs to support manual duplication. Note that twins/triplets will also have matching values for <a href="../../agevariables/" target="_blank">age variables</a>, including those computed using a jittered DOB.</p>
 <p>
 <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/
 mult_birth_participants-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
