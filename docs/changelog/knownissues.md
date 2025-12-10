@@ -36,7 +36,7 @@ If you have questions or would like to report an issue, please submit a ticket t
   <td>Urinary Creatinine<br><code>bio_bm_biosample_urine_results</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
-  Creatinine results (<code>bio_creat_u</code>) and units (<code>bio_creat_u_units</code>) are currently excluded due to inaccuracies in the data and will be added in a future release.
+  Creatinine results (<code>bio_creat_u</code>) and units (<code>bio_creat_u_units</code>) are currently excluded due to presence of values outside of the expected range and will be-incorporated in the next release.
   </td>
 </tr>
 </tbody>
