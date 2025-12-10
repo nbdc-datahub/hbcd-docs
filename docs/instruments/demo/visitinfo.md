@@ -182,7 +182,7 @@ Visit Level Data also includes **substance use flags**, which are single summary
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
-  <span class="text">Note: Blank Fields for <i>HBCD Multiple Birth</i> Cohorts</span>
+  <span class="text">Blank Fields for <i>HBCD Multiple Birth</i> Cohorts</span>
   <a class="anchor-link" href="#warning" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -197,6 +197,21 @@ Visit Level Data also includes **substance use flags**, which are single summary
 mult_birth_participants-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
 </p>
 </div>
+
+<div id="warning-PNR" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Postnatal Recruit (PNR) - Known Issue Regarding TLFB</span>
+  <a class="anchor-link" href="#warning-PNR" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>For <b>Postnatal Recruits</b>, the TLFB instrument was reported on the incorrect version - see <a href="../../../changelog/knownissues/#pregnancy-exposure-including-substance-use" target="_blank">Known Issue &gt; TLFB</a> for details.</p>
+</div>
+<p></p>
 
 **Cohort** information (<code>par_visit_data_cohort</code>) includes cohort subtype and caregiver type for each participant.    
 Possible values include:
