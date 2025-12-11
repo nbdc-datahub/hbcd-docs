@@ -241,7 +241,7 @@ These cohort subtypes are defined below. Click the links to download participant
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
-  <span class="text"><i>Note: Blank Fields for <i>HBCD Multiple Birth - Sibling</i> Cohorts</i></span>
+  <span class="text"><i>Blank Fields in Sibling Data (Multiple Birth Cohorts)</i></span>
   <a class="anchor-link" href="#warning" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -249,8 +249,8 @@ These cohort subtypes are defined below. Click the links to download participant
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Certain fields are expected to be the same between siblings, such as caregiver/maternal instruments that aren't child-specific (e.g. <a href="../../SED/demo-cg/">Adult Demographics</a>). For twins/triplets, all <a href="../../agevariables/" target="_blank">age variables</a> will also be the same, including those computed with a jittered DOB.</p>
-<p><strong>Currently, non-child-specific instrument data are only populated for the Main Child.</strong> Future release data will be updated to provide more complete information - see <a href="../../../changelog/pending/" target="_blank">Pending Updates</a> for details. In the meantime, users will need to source blank <strong>Sibling</strong> data fields from the corresponding Main Child data for non-child-specific instrument tables. Please refer to the participant list mapping Main Child to Sibling IDs provided above - <a href="#postnatal-recruits-multiple-birth-participants">above</a>.</p>
+<p>Certain fields are expected to be the same between siblings, such as caregiver/maternal instrument data that isn't child-specific (e.g. <a href="../../SED/demo-cg/">Adult Demographics</a>). For twins/triplets, all <a href="../../agevariables/" target="_blank">age variables</a> will also be the same, including those computed with a jittered DOB.</p>
+<p><strong>Currently, non-child-specific instrument data are only populated for the Main Child.</strong> Future release data will be updated to provide more complete information - see <a href="../../../changelog/pending/#multiple-birth-participants" target="_blank">Pending Updates</a> for details. In the meantime, users will need to source blank <strong>Sibling</strong> data fields from the corresponding Main Child data for non-child-specific instrument tables. Please refer to the participant list mapping Main Child to Sibling IDs provided above - <a href="#postnatal-recruits-multiple-birth-participants">above</a>.</p>
 </div>
 
 ### Caregiver Types
