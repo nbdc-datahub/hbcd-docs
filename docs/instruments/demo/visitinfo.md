@@ -192,23 +192,22 @@ Visit Level Data also includes **substance use flags**, which are single summary
 </thead>
 <tbody>
 <tr>
-  <td rowspan="4"><b>HBCD Main Child</b></td>
+  <td rowspan="3"><b>HBCD Main Child</b></td>
   <td>HBCD Main Child</td>
   <td>0</td>
 </tr>
 <tr><td>HBCD Main Child - PNR</td><td>1</td></tr>
-<tr><td>HBCD Main Child - PNR - Split</td><td>2</td></tr>
-<tr><td>HBCD Main Child - Type <i>A - E</i></td><td><i>3 - 7</i> &nbsp; (<i>A→3, &nbsp; B→4, &nbsp; C→5, &nbsp; D→6 &nbsp; E→7</i>)</td></tr>
+<tr><td>HBCD Main Child - Type <i>A - E</i></td><td><i>2 - 6</i> &nbsp; (<i>A→2, &nbsp; B→3, &nbsp; C→4, &nbsp; D→5 &nbsp; E→6</i>)</td></tr>
 </tbody>
 <tbody>
 <tr>
   <td rowspan="5"><b>HBCD Multiple Birth</b></td>
-  <td>HBCD Multiple Birth - Main Child</td><td>8</td>
+  <td>HBCD Multiple Birth - Main Child</td><td>7</td>
 </tr>
-    <tr><td>HBCD Multiple Birth - PNR</td><td>9</td></tr>
-    <tr><td>HBCD Multiple Birth - PNR - Sibling</td><td>10</td></tr>
-    <tr><td>HBCD Multiple Birth - Sibling</td><td>11</td></tr>
-    <tr><td>HBCD Multiple Birth - Type <i>A - E</i></td><td><i>12 - 16</i> &nbsp; (<i>A→12, &nbsp; B→13, &nbsp; C→14, &nbsp; D→15, &nbsp; E→16</i>)</td></tr>
+    <tr><td>HBCD Multiple Birth - PNR</td><td>8</td></tr>
+    <tr><td>HBCD Multiple Birth - PNR - Sibling</td><td>9</td></tr>
+    <tr><td>HBCD Multiple Birth - Sibling</td><td>10</td></tr>
+    <tr><td>HBCD Multiple Birth - Type <i>A - E</i></td><td><i>11 - 15</i> &nbsp; (<i>A→11, &nbsp; B→12, &nbsp; C→13, &nbsp; D→14, &nbsp; E→15</i>)</td></tr>
 </tbody>
 </table>
 
