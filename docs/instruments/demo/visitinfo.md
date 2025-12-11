@@ -223,12 +223,10 @@ Postnatal Recruits are enrolled in the study after the child is born and complet
 
 Multiple Birth cohorts include siblings/twins enrolled as <b>Main Child</b> and <b>Sibling</b> participants. Certain data fields, such as caregiver or maternal instrument data that are not child-specific (e.g., <a href="../../SED/demo-cg/">Adult Demographics</a>), are expected to be identical across siblings. For twins and triplets, all <a href="../../agevariables/" target="_blank">age variables</a> will also be identical, including those derived from jittered date of birth.
 
-The downloadable participant list maps each **Main Child** to their corresponding **Sibling** IDs. In the current release, some multiples are incomplete:
+The downloadable participant list maps each **Main Child** to their corresponding **Sibling** IDs. In the current release, some multiples are incomplete (missing partner ID appears as <code>na</code> in the file):
 
  - 33 **Main Child** participants do not yet have their paired **Sibling** included, and
  - 4 **Sibling** participants do not yet have their paired **Main Child** included.
-
-For these participants, the missing partner ID appears as <code>na</code> in the file.
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)"> <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span> <span class="text-with-link"> <span class="text"><i>Blank Fields in Sibling Data (Multiple Birth Cohorts)</i></span> <a class="anchor-link" href="#warning" title="Copy link"> <i class="fa-solid fa-link"></i> </a> </span> <span class="arrow">▸</span> </div> <div class="warning-collapsible-content"> <p><strong>In the current release, non-child-specific instrument fields are populated only for the Main Child.</strong> These values should be identical for all siblings, and future releases will populate them consistently across participants (see <a href="../../../changelog/pending/#multiple-birth-participants" target="_blank">Pending Updates</a>).</p> <p>Until then, users should obtain non-child-specific values for any <strong>Sibling</strong> participant by referencing the corresponding <strong>Main Child</strong> in the mapping file. These data are unavailable for the <strong>4 siblings</strong> whose Main Child is not yet included in the release.</p> </div>
 
