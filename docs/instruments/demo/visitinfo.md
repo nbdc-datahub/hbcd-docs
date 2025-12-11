@@ -181,90 +181,36 @@ Visit Level Data also includes **substance use flags**, which are single summary
 
 ### HBCD Cohorts
 **Cohort** information (<code>par_visit_data_cohort</code>) includes cohort subtypes and caregiver type (*Type A-F* - [see details](#cg-types)) for each participant. Cohort subtypes are split into **Main Child** and **Multiple Birth**, with additional labeling for *Postnatal Recruits* (*PNR*) and Multiple Birth siblings (*Main Child* vs. *Sibling*):
-<div style="display: flex; gap: 3rem; flex-wrap: wrap;">
-  <table class="table-no-vertical-lines" style="flex: 1; min-width: 280px; border: none;">
-  <thead style="border: none;"><tr style="border: none;"><th>Main Child Cohorts</th></tr></thead>
-    <thead>
-      <tr><th>Label</th><th>Value</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>HBCD Main Child</td><td>0</td></tr>
-      <tr><td>HBCD Main Child - PNR</td><td>1</td></tr>
-      <tr><td>HBCD Main Child - PNR - Split</td><td>2</td></tr>
-      <tr><td>HBCD Main Child - Type A</td><td>3</td></tr>
-      <tr><td>HBCD Main Child - Type B</td><td>4</td></tr>
-      <tr><td>HBCD Main Child - Type C</td><td>5</td></tr>
-      <tr><td>HBCD Main Child - Type D</td><td>6</td></tr>
-      <tr><td>HBCD Main Child - Type E</td><td>7</td></tr>
-    </tbody>
-  </table>
-  <table class="table-no-vertical-lines" style="flex: 1; min-width: 280px;">
-  <thead style="border: none;"><tr><th>Multiple Birth Cohorts</th></tr></thead>
-    <thead>
-      <tr><th>Label</th><th>Value</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>HBCD Multiple Birth - Main Child</td><td>8</td></tr>
-      <tr><td>HBCD Multiple Birth - PNR</td><td>9</td></tr>
-      <tr><td>HBCD Multiple Birth - PNR - Sibling</td><td>10</td></tr>
-      <tr><td>HBCD Multiple Birth - Sibling</td><td>11</td></tr>
-      <tr><td>HBCD Multiple Birth - Type A</td><td>12</td></tr>
-      <tr><td>HBCD Multiple Birth - Type B</td><td>13</td></tr>
-      <tr><td>HBCD Multiple Birth - Type C</td><td>14</td></tr>
-      <tr><td>HBCD Multiple Birth - Type D</td><td>15</td></tr>
-      <tr><td>HBCD Multiple Birth - Type E</td><td>16</td></tr>
-    </tbody>
-  </table>
-</div>
 
-
-<div id="cohorts" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text-with-link">
-  <span class="text">Cohort Types (<i>Complete List</i>)</span>
-  <a class="anchor-link" href="#cohorts" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<div style="display: flex; gap: 3rem; flex-wrap: wrap;">
-  <table class="table-no-vertical-lines" style="flex: 1; min-width: 280px; border: none;">
-  <thead style="border: none;"><tr style="border: none;"><th>Main Child Cohorts</th></tr></thead>
-    <thead>
-      <tr><th>Label</th><th>Value</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>HBCD Main Child</td><td>0</td></tr>
-      <tr><td>HBCD Main Child - PNR</td><td>1</td></tr>
-      <tr><td>HBCD Main Child - PNR - Split</td><td>2</td></tr>
-      <tr><td>HBCD Main Child - Type A</td><td>3</td></tr>
-      <tr><td>HBCD Main Child - Type B</td><td>4</td></tr>
-      <tr><td>HBCD Main Child - Type C</td><td>5</td></tr>
-      <tr><td>HBCD Main Child - Type D</td><td>6</td></tr>
-      <tr><td>HBCD Main Child - Type E</td><td>7</td></tr>
-    </tbody>
-  </table>
-  <table class="table-no-vertical-lines" style="flex: 1; min-width: 280px;">
-  <thead style="border: none;"><tr><th>Multiple Birth Cohorts</th></tr></thead>
-    <thead>
-      <tr><th>Label</th><th>Value</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>HBCD Multiple Birth - Main Child</td><td>8</td></tr>
-      <tr><td>HBCD Multiple Birth - PNR</td><td>9</td></tr>
-      <tr><td>HBCD Multiple Birth - PNR - Sibling</td><td>10</td></tr>
-      <tr><td>HBCD Multiple Birth - Sibling</td><td>11</td></tr>
-      <tr><td>HBCD Multiple Birth - Type A</td><td>12</td></tr>
-      <tr><td>HBCD Multiple Birth - Type B</td><td>13</td></tr>
-      <tr><td>HBCD Multiple Birth - Type C</td><td>14</td></tr>
-      <tr><td>HBCD Multiple Birth - Type D</td><td>15</td></tr>
-      <tr><td>HBCD Multiple Birth - Type E</td><td>16</td></tr>
-    </tbody>
-  </table>
-</div>
-</div>
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+  <th>Cohort</th>
+  <th>Cohort Subtype (Label)</th>
+  <th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="4">HBCD Main Child</td>
+  <td>HBCD Main Child</td>
+  <td>0</td>
+</tr>
+<tr><td>HBCD Main Child - PNR</td><td>1</td></tr>
+<tr><td>HBCD Main Child - PNR - Split</td><td>2</td></tr>
+<tr><td>HBCD Main Child - Type <i>A - E</i></td><td><i>3 - 7</i> &nbsp; (<i>A→3, &nbsp; B→4, &nbsp; C→5, &nbsp; D→6 &nbsp; E→7</i>)</td></tr>
+</tbody>
+<tbody>
+<tr>
+  <td rowspan="5">HBCD Multiple Birth</td>
+  <td>HBCD Multiple Birth - Main Child</td><td>8</td>
+</tr>
+    <tr><td>HBCD Multiple Birth - PNR</td><td>9</td></tr>
+    <tr><td>HBCD Multiple Birth - PNR - Sibling</td><td>10</td></tr>
+    <tr><td>HBCD Multiple Birth - Sibling</td><td>11</td></tr>
+    <tr><td>HBCD Multiple Birth - Type <i>A - E</i></td><td><i>12 - 16</i> &nbsp; (<i>A→12, &nbsp; B→13, &nbsp; C→14, &nbsp; D→15, &nbsp; E→16</i>)</td></tr>
+</tbody>
+</table>
 
 ### Postnatal Recruits & Multiple Birth Participants
 
