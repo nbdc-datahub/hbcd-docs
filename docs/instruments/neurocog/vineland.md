@@ -90,7 +90,8 @@ The **Vineland-3** is a measure of adaptive behavior and the things that people 
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Each item in the Vineland-3 is scored on a scale of 0 to 3, with higher scores indicating higher levels of adaptive behavior. Summary scores are automatically computed within the Pearson Q-Global system, which generates a standard score, percentile rank, base rate score, confidence intervals (high/low), and standard score minus the mean score. Full scoring details are described in Sparrow et al. 2026.</p>
+<p>Each item in the Vineland-3 is scored on a scale of 0 to 3, with higher scores indicating higher levels of adaptive behavior. Summary scores are automatically computed within the Pearson Q-Global system, which generates a standard score, percentile rank, base rate score, confidence intervals (high/low), and standard score minus the mean score. Full scoring details are described in Sparrow et al. 2026.</p> 
+<p>Three more complex Vineland-3 subdomains (Written, Domestic, Community) are unavailable for very young children because they are designed for children age 3.0 years and older. All Domain scores (Communication, Daily Living, Socialization) are available. The Motor Skills Domain scores are available for children under age 10.0 years.</p>
 </div>
 
 ## References
