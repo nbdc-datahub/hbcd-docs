@@ -196,7 +196,7 @@ Visit Level Data also includes **substance use flags**, which are single summary
   <td>HBCD Main Child</td>
   <td>0</td>
 </tr>
-<tr><td>HBCD Main Child - PNR</td><td>1</td></tr>
+<tr><td>HBCD Main Child - PNR<b>*</b></td><td>1</td></tr>
 <tr><td>HBCD Main Child - Type <i>A - E</i></td><td><i>2 - 6</i> &nbsp; (<i>A→2, &nbsp; B→3, &nbsp; C→4, &nbsp; D→5 &nbsp; E→6</i>)</td></tr>
 </tbody>
 <tbody>
@@ -204,38 +204,25 @@ Visit Level Data also includes **substance use flags**, which are single summary
   <td rowspan="5"><b>HBCD Multiple Birth</b></td>
   <td>HBCD Multiple Birth - Main Child</td><td>7</td>
 </tr>
-    <tr><td>HBCD Multiple Birth - PNR</td><td>8</td></tr>
-    <tr><td>HBCD Multiple Birth - PNR - Sibling</td><td>9</td></tr>
+    <tr><td>HBCD Multiple Birth - PNR<b>*</b></td><td>8</td></tr>
+    <tr><td>HBCD Multiple Birth - PNR<b>*</b> - Sibling</td><td>9</td></tr>
     <tr><td>HBCD Multiple Birth - Sibling</td><td>10</td></tr>
     <tr><td>HBCD Multiple Birth - Type <i>A - E</i></td><td><i>11 - 15</i> &nbsp; (<i>A→11, &nbsp; B→12, &nbsp; C→13, &nbsp; D→14, &nbsp; E→15</i>)</td></tr>
 </tbody>
+<tfoot><tr><td colspan="3"><b>*</b> PNR is only available for V02 - <a href="#postnatal-recruits-pnr">see details</a></td></tr></tfoot>
 </table>
 
-### Postnatal Recruits (PNR) & Multiple Birth Participants
+### Postnatal Recruits (PNR)
 
-These cohort subtypes are defined below. Click the links to download participant lists for each, available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.
+<a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/PNR_participants-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
 
-<table class="table-no-vertical-lines">
-  <thead>
-    <tr>
-      <th>Cohort Subtype</th>
-      <th>Description</th>
-      <th>Download</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>Multiple Birth</td>
-    <td style="word-wrap: break-word; white-space: normal;">Siblings/twins enrolled in the study, categorized as <b>Main Child</b> and <b>Sibling</b>. Note that there is a subset of <b>Main Child</b> (N=33) and <b>Sibling</b> (N=4) participants whose <b>Sibling</b> and <b>Main Child</b> pair, respectively, will be added in a future release (paired participant ID = <code>na</code>).</td>
-    <td style="text-align: center;"><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv"><i class="fa-solid fa-download"></i></a></td>
-  </tr>
-  <tr>
-    <td>PNR</td>
-    <td style="word-wrap: break-word; white-space: normal;"><b>Postnatal Recruits</b> enrolled in the study after the child is born (complete a modified V01 and V02).</td>
-    <td style="text-align: center;"><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/PNR_participants-supplemental.csv"><i class="fa-solid fa-download"></i></a></td>
-  </tr>
-  </tbody>
-  </table>
+Postnatal Recruits are enrolled in the study after the child is born and complete a modified V01 and V02. **The PNR cohort is only denoted for the V02 visit**, with all subsequent visits falling under the same cohort as a standard participant. To check if a participant was part of a PNR cohort, users can either check the cohort at V02 or refer to the provided participant list.
+
+### Multiple Birth Participants
+
+<a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
+
+Multiple Birth cohorts include siblings/twins enrolled in the study, categorized as <b>Main Child</b> and <b>Sibling</b>. The participant list provided maps **Main Child** to corresponding **Sibling** IDs for participants who are siblings. Note that there is a subset of <b>Main Child</b> (N=33) and <b>Sibling</b> (N=4) participants whose <b>Sibling</b> and <b>Main Child</b> pair, respectively, will be added in a future release. The paired participant ID for the sibling without data included in the current release is <code>na</code> in the participant list.
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -249,7 +236,7 @@ These cohort subtypes are defined below. Click the links to download participant
 </div>
 <div class="warning-collapsible-content">
 <p>Certain fields are expected to be the same between siblings, such as caregiver/maternal instrument data that isn't child-specific (e.g. <a href="../../SED/demo-cg/">Adult Demographics</a>). For twins/triplets, all <a href="../../agevariables/" target="_blank">age variables</a> will also be the same, including those computed with a jittered DOB.</p>
-<p><strong>However, non-child-specific instrument data are only populated for the Main Child in the current release.</strong> Future release data will be updated to provide more complete information - see <a href="../../../changelog/pending/#multiple-birth-participants" target="_blank">Pending Updates</a> for details. In the meantime, users will need to source blank <strong>Sibling</strong> data fields from the corresponding Main Child data for non-child-specific instrument tables. Please refer to the participant list mapping Main Child to Sibling IDs provided above - <a href="#postnatal-recruits-multiple-birth-participants">above</a>.</p>
+<p><strong>However, non-child-specific instrument data are only populated for the Main Child in the current release.</strong> Future release data will be updated to provide more complete information - see <a href="../../../changelog/pending/#multiple-birth-participants" target="_blank">Pending Updates</a> for details. In the meantime, users will need to source blank <strong>Sibling</strong> data fields from the corresponding <strong>Main Child</strong> data for non-child-specific instrument tables. Please refer to the participant list mapping Main Child to Sibling IDs provided above.</p>
 </div>
 
 ### Caregiver Types
