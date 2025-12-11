@@ -186,7 +186,7 @@ Visit Level Data also includes **substance use flags**, which are single summary
 <thead>
 <tr>
   <th>Cohort</th>
-  <th>Cohort Subtype (Label)</th>
+  <th>Cohort Subtype Label</th>
   <th>Value</th>
 </tr>
 </thead>
@@ -258,24 +258,24 @@ These cohort subtypes are defined below. Click the links to download participant
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
     <tr>
-        <td>Type A</td>
+        <td><b>Type A</b></td>
         <td>Temporary Alternative Caregiver</td>
     </tr>
     <tr>
-        <td>Type B</td>
+        <td><b>Type B</b></td>
         <td style="word-wrap: break-word; white-space: normal;">Change in Primary Caregiver (Placement Only) Without Change in Legal Custody (But Birth Parent Unable to Complete Visit)</td>
     </tr>
     <tr>
-        <td>Type C</td>
+        <td><b>Type C</b></td>
         <td>Change in Joint Custody</td>
     </tr>
     <tr>
-        <td>Type D</td>
+        <td><b>Type D</b></td>
         <td style="word-wrap: break-word; white-space: normal;">Child Removed From Birth Parent and Placed in Foster Care (Change in Placement)</td>
     </tr>
-    <tr><td>Type E</td><td>Change in Legal Custody and Placement (e.g. adoption)</td>
+    <tr><td><b>Type E</b></td><td>Change in Legal Custody and Placement (e.g. adoption)</td>
     </tr>
-    <tr><td>Type F</td><td>Original Consented Parent</td>
+    <tr><td><b>Type F</b></td><td>Original Consented Parent</td>
     </tr>            
 </tbody>
 </table>
