@@ -39,7 +39,7 @@
 </tbody>
 </table>
 
-## General Visit Level Data
+## General Visit Information
  - Label, Stage, Date, Project, and Site
  - If the visit was missed and reason 
  - Withdrawal information (if the participant withdrew from the study, the reason, and date)
@@ -180,7 +180,7 @@ Visit Level Data also includes **substance use flags**, which are single summary
 ## Cohort & Caregiver Types
 
 ### HBCD Cohorts
-**Cohort** information (<code>par_visit_data_cohort</code>) includes cohort subtypes and caregiver type (*Type A-F* - [see details](#cg-types)) for each participant. Cohort subtypes are split into **Main Child** and **Multiple Birth**, with additional labeling for *Postnatal Recruits* (*PNR*) and Multiple Birth siblings (*Main Child* vs. *Sibling*):
+**Cohort** information (<code>par_visit_data_cohort</code>) includes cohort subtypes and caregiver type (*Type A-F* - [see details](#caregiver-types)) for each participant. Cohort subtypes are split into **Main Child** and **Multiple Birth**, with additional labeling for *Postnatal Recruits* (*PNR*) and Multiple Birth siblings (*Main Child* vs. *Sibling*):
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -211,7 +211,7 @@ Visit Level Data also includes **substance use flags**, which are single summary
 </tbody>
 </table>
 
-### Postnatal Recruits & Multiple Birth Participants
+### Postnatal Recruits (PNR) & Multiple Birth Participants
 
 These cohort subtypes are defined below. Click the links to download participant lists for each, available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.
 
@@ -226,12 +226,12 @@ These cohort subtypes are defined below. Click the links to download participant
   <tbody>
   <tr>
     <td>Multiple Birth</td>
-    <td style="word-wrap: break-word; white-space: normal;">Siblings/twins enrolled in the study, categorized as <b>Main Child</b> and <b>Sibling</b>.</td>
+    <td style="word-wrap: break-word; white-space: normal;">Siblings/twins enrolled in the study, categorized as <b>Main Child</b> and <b>Sibling</b>. Note that there is a subset of <b>Main Child</b> (N=33) and <b>Sibling</b> (N=4) participants whose <b>Sibling</b> and <b>Main Child</b> pair, respectively, will be added in a future release (paired participant ID = <code>na</code>).</td>
     <td style="text-align: center;"><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv"><i class="fa-solid fa-download"></i></a></td>
   </tr>
-    <tr>
-    <td>Postnatal Recruits (PNR)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Participants enrolled in the study after the child is born (complete a modified V01 and V02).</td>
+  <tr>
+    <td>PNR</td>
+    <td style="word-wrap: break-word; white-space: normal;"><b>Postnatal Recruits</b> enrolled in the study after the child is born (complete a modified V01 and V02).</td>
     <td style="text-align: center;"><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/PNR_participants-supplemental.csv"><i class="fa-solid fa-download"></i></a></td>
   </tr>
   </tbody>

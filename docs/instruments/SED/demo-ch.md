@@ -80,7 +80,7 @@ The item “How many days per month do you live with the child?” (<code>sed_bm
 </div>
 </p>
 
-Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. **Beginning at Visit 4, the study includes a child demographic form** that captures detailed information about the child’s background, family structure, and household environment (see [Sources for Demographic Protocols & Modifications](demo-ch.md#demo-tables)). This includes:
+Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. **Beginning at Visit 4, the study includes a child demographic form** that captures detailed information about the child’s background, family structure, and household environment (see [Sources for Demographic Protocols & Modifications](demo-cg.md#demo-tables)). This includes:
 
  - Child's sex at birth
  - Child's race and ethnicity (with multiple selections allowed to capture diverse identities)
