@@ -15,7 +15,7 @@
 
 **Visit Level Data includes: [General Visit Information](#general-visit-information), [Substance Use Flags](#substance-use-flags), and [Cohort & Caregiver Types](#cohort-caregiver-types).**
 
-### Age Of Child at Each Visit
+## Age Of Child at Each Visit
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
@@ -39,7 +39,7 @@
 </tbody>
 </table>
 
-### General Visit Level Data
+## General Visit Level Data
  - Label, Stage, Date, Project, and Site
  - If the visit was missed and reason 
  - Withdrawal information (if the participant withdrew from the study, the reason, and date)
@@ -105,7 +105,7 @@
  </div>
 <p></p>
 
-### Substance Use Flags
+## Substance Use Flags
 
 Visit Level Data also includes **substance use flags**, which are single summary variables that indicate substance use status (yes/no) based on any positive reports from the following instruments:
 
@@ -177,12 +177,125 @@ Visit Level Data also includes **substance use flags**, which are single summary
 </div>
 <p></p>
 
-### Cohort & Caregiver Types
+## Cohort & Caregiver Types
+
+### HBCD Cohorts
+**Cohort** information (<code>par_visit_data_cohort</code>) includes cohort subtypes and caregiver type (*Type A-F* - [see details](#cg-types)) for each participant. Cohort subtypes are split into **Main Child** and **Multiple Birth**, with additional labeling for *Postnatal Recruits* (*PNR*) and Multiple Birth siblings (*Main Child* vs. *Sibling*):
+<div style="display: flex; gap: 3rem; flex-wrap: wrap;">
+  <table class="table-no-vertical-lines" style="flex: 1; min-width: 280px; border: none;">
+  <thead style="border: none;"><tr style="border: none;"><th>Main Child Cohorts</th></tr></thead>
+    <thead>
+      <tr><th>Label</th><th>Value</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>HBCD Main Child</td><td>0</td></tr>
+      <tr><td>HBCD Main Child - PNR</td><td>1</td></tr>
+      <tr><td>HBCD Main Child - PNR - Split</td><td>2</td></tr>
+      <tr><td>HBCD Main Child - Type A</td><td>3</td></tr>
+      <tr><td>HBCD Main Child - Type B</td><td>4</td></tr>
+      <tr><td>HBCD Main Child - Type C</td><td>5</td></tr>
+      <tr><td>HBCD Main Child - Type D</td><td>6</td></tr>
+      <tr><td>HBCD Main Child - Type E</td><td>7</td></tr>
+    </tbody>
+  </table>
+  <table class="table-no-vertical-lines" style="flex: 1; min-width: 280px;">
+  <thead style="border: none;"><tr><th>Multiple Birth Cohorts</th></tr></thead>
+    <thead>
+      <tr><th>Label</th><th>Value</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>HBCD Multiple Birth - Main Child</td><td>8</td></tr>
+      <tr><td>HBCD Multiple Birth - PNR</td><td>9</td></tr>
+      <tr><td>HBCD Multiple Birth - PNR - Sibling</td><td>10</td></tr>
+      <tr><td>HBCD Multiple Birth - Sibling</td><td>11</td></tr>
+      <tr><td>HBCD Multiple Birth - Type A</td><td>12</td></tr>
+      <tr><td>HBCD Multiple Birth - Type B</td><td>13</td></tr>
+      <tr><td>HBCD Multiple Birth - Type C</td><td>14</td></tr>
+      <tr><td>HBCD Multiple Birth - Type D</td><td>15</td></tr>
+      <tr><td>HBCD Multiple Birth - Type E</td><td>16</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div id="cohorts" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Cohort Types (<i>Complete List</i>)</span>
+  <a class="anchor-link" href="#cohorts" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<div style="display: flex; gap: 3rem; flex-wrap: wrap;">
+  <table class="table-no-vertical-lines" style="flex: 1; min-width: 280px; border: none;">
+  <thead style="border: none;"><tr style="border: none;"><th>Main Child Cohorts</th></tr></thead>
+    <thead>
+      <tr><th>Label</th><th>Value</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>HBCD Main Child</td><td>0</td></tr>
+      <tr><td>HBCD Main Child - PNR</td><td>1</td></tr>
+      <tr><td>HBCD Main Child - PNR - Split</td><td>2</td></tr>
+      <tr><td>HBCD Main Child - Type A</td><td>3</td></tr>
+      <tr><td>HBCD Main Child - Type B</td><td>4</td></tr>
+      <tr><td>HBCD Main Child - Type C</td><td>5</td></tr>
+      <tr><td>HBCD Main Child - Type D</td><td>6</td></tr>
+      <tr><td>HBCD Main Child - Type E</td><td>7</td></tr>
+    </tbody>
+  </table>
+  <table class="table-no-vertical-lines" style="flex: 1; min-width: 280px;">
+  <thead style="border: none;"><tr><th>Multiple Birth Cohorts</th></tr></thead>
+    <thead>
+      <tr><th>Label</th><th>Value</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>HBCD Multiple Birth - Main Child</td><td>8</td></tr>
+      <tr><td>HBCD Multiple Birth - PNR</td><td>9</td></tr>
+      <tr><td>HBCD Multiple Birth - PNR - Sibling</td><td>10</td></tr>
+      <tr><td>HBCD Multiple Birth - Sibling</td><td>11</td></tr>
+      <tr><td>HBCD Multiple Birth - Type A</td><td>12</td></tr>
+      <tr><td>HBCD Multiple Birth - Type B</td><td>13</td></tr>
+      <tr><td>HBCD Multiple Birth - Type C</td><td>14</td></tr>
+      <tr><td>HBCD Multiple Birth - Type D</td><td>15</td></tr>
+      <tr><td>HBCD Multiple Birth - Type E</td><td>16</td></tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+### Postnatal Recruits & Multiple Birth Participants
+
+These cohort subtypes are defined below. Click the links to download participant lists for each, available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.
+
+<table class="table-no-vertical-lines">
+  <thead>
+    <tr>
+      <th>Cohort Subtype</th>
+      <th>Description</th>
+      <th>Download</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Multiple Birth</td>
+    <td style="word-wrap: break-word; white-space: normal;">Siblings/twins enrolled in the study, categorized as <b>Main Child</b> and <b>Sibling</b>.</td>
+    <td style="text-align: center;"><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv"><i class="fa-solid fa-download"></i></a></td>
+  </tr>
+    <tr>
+    <td>Postnatal Recruits (PNR)</td>
+    <td style="word-wrap: break-word; white-space: normal;">Participants enrolled in the study after the child is born (complete a modified V01 and V02).</td>
+    <td style="text-align: center;"><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/PNR_participants-supplemental.csv"><i class="fa-solid fa-download"></i></a></td>
+  </tr>
+  </tbody>
+  </table>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
-  <span class="text">Blank Fields for <i>HBCD Multiple Birth</i> Cohorts</span>
+  <span class="text"><i>Note: Blank Fields for <i>HBCD Multiple Birth - Sibling</i> Cohorts</i></span>
   <a class="anchor-link" href="#warning" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -190,48 +303,12 @@ Visit Level Data also includes **substance use flags**, which are single summary
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>For <b>Multiple Birth participants</b> (e.g., <i>cohort</i> = "HBCD Multiple Birth – Sibling"), instrument fields are blank unless the instrument is child-specific. Maternal instruments, for example, are only populated for the Main Child. Users may copy these values into the sibling record if needed.</p>
-<p>In future releases, fields for non–child-specific data will be populated from the Main Child to sibling profile and an additional Data Dictionary element will be incorporated for family ID (see <a href="../../../changelog/pending/" target="_blank">Pending Updates</a>). Until then, we provide a participant list mapping Main Child to sibling IDs to support manual duplication. Note that twins/triplets will also have matching values for <a href="../../agevariables/" target="_blank">age variables</a>, including those computed using a jittered DOB.</p>
-<p>
-<a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/
-mult_birth_participants-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
-</p>
+<p>Certain fields are expected to be the same between siblings, such as caregiver/maternal instruments that aren't child-specific (e.g. <a href="../../SED/demo-cg/">Adult Demographics</a>). For twins/triplets, all <a href="../../agevariables/" target="_blank">age variables</a> will also be the same, including those computed with a jittered DOB.</p>
+<p><strong>Currently, non-child-specific instrument data are only populated for the Main Child.</strong> Future release data will be updated to provide more complete information - see <a href="../../../changelog/pending/" target="_blank">Pending Updates</a> for details. In the meantime, users will need to source blank <strong>Sibling</strong> data fields from the corresponding Main Child data for non-child-specific instrument tables. Please refer to the participant list mapping Main Child to Sibling IDs provided above - <a href="#postnatal-recruits-multiple-birth-participants">above</a>.</p>
 </div>
 
-<div id="warning-PNR" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Postnatal Recruit (PNR) - Known Issue Regarding the TLFB</span>
-  <a class="anchor-link" href="#warning-PNR" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>For <b>Postnatal Recruits</b>, the TLFB instrument was reported on the wrong weeks - see <a href="../../../changelog/knownissues/#pregnancy-exposure-including-substance-use" target="_blank">Known Issue &gt; TLFB</a> for details.</p>
-</div>
-<p></p>
+### Caregiver Types
 
-**Cohort** information (<code>par_visit_data_cohort</code>) includes cohort subtype and caregiver type for each participant.    
-Possible values include:
-
- - HBCD Main Child - Postnatal Recruitment
- - HBCD Main Child - Type {*A-F*}
- - HBCD Multiple Birth - {*Main Child | Postnatal Recruitment | Sibling*}
- - HBCD Multiple Birth - Type {*A-F*}
-
-<div id="cg-types" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text-with-link">
-  <span class="text">Caregiver Type A-F Definitions</span>
-  <a class="anchor-link" href="#cg-types" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
     <tr>
@@ -256,5 +333,3 @@ Possible values include:
     </tr>            
 </tbody>
 </table>
-</div>
-

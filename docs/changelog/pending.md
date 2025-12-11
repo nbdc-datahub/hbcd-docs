@@ -5,7 +5,7 @@
 
 ### 2.1 Participant Data
 ##### Multiple Birth Participants
-Family/maternal-level data is only present for the Main Child across instruments. In the future, HBCD Main Child data will be copied to the sibling profile (e.g. HBCD Multiple Birth - Sibling) for non-child-specific elements so that users won't have to do this themselves. *See [Blank Fields for HBCD Multiple Birth Cohorts](../instruments/demo/visitinfo.md#warning) for details.*      
+Family/maternal-level data is only present for the Main Child across instruments. In the future, HBCD Main Child data will be copied to the sibling profile (e.g. HBCD Multiple Birth - Sibling) for non-child-specific elements so that users won't have to populate these fields themselves. *See [Blank Fields for HBCD Multiple Birth Cohorts](../instruments/demo/visitinfo.md#warning) for details.*      
 In addition, a new Data Dictionary element (***familyID***) will be incorporated in a future release to help identify siblings (Release # TBD).
 
 ### 2.1 Existing Study Data Updates
