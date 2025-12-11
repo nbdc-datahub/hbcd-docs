@@ -222,7 +222,9 @@ Postnatal Recruits are enrolled in the study after the child is born and complet
 
 <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
 
-Multiple Birth cohorts include siblings/twins enrolled in the study, categorized as <b>Main Child</b> and <b>Sibling</b>. The participant list provided maps **Main Child** to corresponding **Sibling** IDs for participants who are siblings. Note that there is a subset of <b>Main Child</b> (N=33) and <b>Sibling</b> (N=4) participants whose <b>Sibling</b> and <b>Main Child</b> pair, respectively, will be added in a future release. The paired participant ID for the sibling without data included in the current release is <code>na</code> in the participant list.
+Multiple Birth cohorts include siblings/twins enrolled in the study, categorized as <b>Main Child</b> and <b>Sibling</b>. Certain fields are expected to be the same between siblings, such as caregiver/maternal instrument data that isn't child-specific (e.g. <a href="../../SED/demo-cg/">Adult Demographics</a>). For twins/triplets, all <a href="../../agevariables/" target="_blank">age variables</a> will also be the same, including those computed with a jittered DOB.
+
+The participant list provided maps **Main Child** to corresponding **Sibling** IDs for participants who are siblings. Note that there is a subset of <b>Main Child</b> (N=33) and <b>Sibling</b> (N=4) participants whose <b>Sibling</b> and <b>Main Child</b> pair, respectively, will be added in a future release. The paired participant ID for the sibling without data included in the current release is <code>na</code> in the participant list.
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -235,8 +237,8 @@ Multiple Birth cohorts include siblings/twins enrolled in the study, categorized
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Certain fields are expected to be the same between siblings, such as caregiver/maternal instrument data that isn't child-specific (e.g. <a href="../../SED/demo-cg/">Adult Demographics</a>). For twins/triplets, all <a href="../../agevariables/" target="_blank">age variables</a> will also be the same, including those computed with a jittered DOB.</p>
-<p><strong>However, non-child-specific instrument data are only populated for the Main Child in the current release.</strong> Future release data will be updated to provide more complete information - see <a href="../../../changelog/pending/#multiple-birth-participants" target="_blank">Pending Updates</a> for details. In the meantime, users will need to source blank <strong>Sibling</strong> data fields from the corresponding <strong>Main Child</strong> data for non-child-specific instrument tables. Please refer to the participant list mapping Main Child to Sibling IDs provided above.</p>
+<p><strong>In the current release, non-child-specific instrument data are populated only for the Main Child in multiple-birth families.</strong> These fields are expected to be identical across siblings, and future releases will include them for all relevant participants (see <a href="../../../changelog/pending/#multiple-birth-participants" target="_blank">Pending Updates</a>).</p>
+<p>Until then, users should retrieve non-child-specific values from the corresponding <strong>Main Child</strong> record using the participant mapping provided above. Note that these data are unavailable for <strong>Sibling</strong> participants whose paired <strong>Main Child</strong> is not yet included in the release (<i>N</i>=4).</p>
 </div>
 
 ### Caregiver Types
