@@ -192,7 +192,7 @@ Visit Level Data also includes **substance use flags**, which are single summary
 </thead>
 <tbody>
 <tr>
-  <td rowspan="4">HBCD Main Child</td>
+  <td rowspan="4"><b>HBCD Main Child</b></td>
   <td>HBCD Main Child</td>
   <td>0</td>
 </tr>
@@ -202,7 +202,7 @@ Visit Level Data also includes **substance use flags**, which are single summary
 </tbody>
 <tbody>
 <tr>
-  <td rowspan="5">HBCD Multiple Birth</td>
+  <td rowspan="5"><b>HBCD Multiple Birth</b></td>
   <td>HBCD Multiple Birth - Main Child</td><td>8</td>
 </tr>
     <tr><td>HBCD Multiple Birth - PNR</td><td>9</td></tr>
