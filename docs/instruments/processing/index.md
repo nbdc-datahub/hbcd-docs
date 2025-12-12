@@ -2,7 +2,7 @@
 <p>
 <div id="visformat" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">See the <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/">HBCD Processing</a> website for full details on how each pipeline was used for HBCD processing.</span>
+  <span class="text">See the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> website for full details on how each pipeline was used for HBCD processing.</span>
 </div>
 </p>
 
@@ -104,6 +104,6 @@ All processing containers are available on [Docker Hub](https://hub.docker.com/)
 
 ## File Selection for Processing
 
-Files are selected for processing based on pipeline-specific criteria detailed under the sections *File Selection For Processing* and *Quality Control Selection Information* in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/latest/tool_details.html#tool-names) section of the [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/latest/index.html) documentation. 
+Files are selected for processing based on pipeline-specific criteria detailed under the sections *File Selection For Processing* and *Quality Control Selection Information* in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html#tool-names) section of the [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/index.html) documentation. 
 
 

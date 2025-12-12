@@ -14,7 +14,7 @@ In brief, BIBSNet performs preprocessing on structural T1w/T2w images to generat
 
 ## File Selection for Processing
 
-Files are selected for processing based on pipeline-specific criteria detailed under the sections *File Selection For Processing* and *Quality Control Selection Information* in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/latest/tool_details.html#tool-names) section of the [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/latest/index.html) documentation. For structural and functional MRI processing, file selection is based on [raw data quality control](../mri/qc.md#raw-mr-data-qc) metrics, including:
+Files are selected for processing based on pipeline-specific criteria detailed under the sections *File Selection For Processing* and *Quality Control Selection Information* in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html#tool-names) section of the [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/index.html) documentation. For structural and functional MRI processing, file selection is based on [raw data quality control](../mri/qc.md#raw-mr-data-qc) metrics, including:
 
 - Overall passing QC score (`QC` = 1) 
 - Motion score below a defined threshold (`QU_Motion` ≤ 2 for the current release)
