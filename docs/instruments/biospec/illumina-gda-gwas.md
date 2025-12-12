@@ -53,7 +53,6 @@ hbcd/
       ├── hbcd.bim
       ├── hbcd.fam
       ├── batch.info
-      ├── excluded.txt
       └── README
 </pre>
 
@@ -65,19 +64,20 @@ hbcd/
 <tr>
   <td><code>hbcd.bed</code></td>
   <td><a href="https://www.cog-genomics.org/plink/1.9/formats#bed">PLINK 1.9 <code>.bed</code> format</a> — Binary genotype file (not UCSC BED).</td>
-</tr><tr>
+</tr>
+<tr>
   <td><code>hbcd.bim</code></td>
   <td><a href="https://www.cog-genomics.org/plink/1.9/formats#bim">PLINK 1.9 <code>.bim</code> format</a> — Variant information (chromosome, rsID, position, alleles).</td>
-</tr><tr>
+</tr>
+<tr>
   <td><code>hbcd.fam</code></td>
   <td><a href="https://www.cog-genomics.org/plink/1.9/formats#fam">PLINK 1.9 <code>.fam</code> format</a> — Participant information.</td>
-</tr><tr>
+</tr>
+<tr>
   <td><code>batch.info</code></td>
   <td>Plain-text file mapping participants to genotyping batches.</td>
-</tr><tr>
-  <td><code>excluded.txt</code></td>
-  <td>Plain-text file listing excluded participants.</td>
-</tr><tr>
+</tr>
+<tr>
   <td><code>README</code></td>
   <td>Documentation of QC procedures to ensure sample matches (e.g., ID concordance, sex checks).</td>
 </tr>
