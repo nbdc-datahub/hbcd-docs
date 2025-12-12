@@ -4,7 +4,7 @@ Below we describe the processing streams for structural and functional MRI, whic
 
 ## Structural & Functional MRI Processing Overview
 
-<p> <div class="table-banner"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 1.0em;" class="fa-solid fa-up-right-from-square"></i></a></span> </div> </p>
+<p> <div class="table-banner"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 1.0em;" class="fa-solid fa-up-right-from-square"></i></a></span> </div> </p>
 
 HBCD **structural and functional MRI** data are processed through a standardized sequence of BIDS App pipelines. Each pipeline builds on the derivatives from the previous step, as outlined below. 
 
@@ -159,12 +159,12 @@ Infant fMRIPrep supports two infant-specific surface reconstruction workflows (*
 <tbody>
 <tr>
 <td>M-CRIB-S</td>
-<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tools/nibabies_25.2.0-0f306a2f.html">0f306a2f</a></td>
+<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/nibabies_25.2.0-0f306a2f.html">0f306a2f</a></td>
 <td>T2w-based method for neonates</td>
 <td>V02 <i>(0-1 m)</i></td>
 </tr> <tr>
 <td>Infant FreeSurfer</td>
-<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0_dev2/tools/nibabies_25.2.0-2afa9081.html">2afa9081</a></td> <td>T1w-based method for infants 0-2 years old</td>
+<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/nibabies_25.2.0-2afa9081.html">2afa9081</a></td> <td>T1w-based method for infants 0-2 years old</td>
 <td>V02 <i>(0-1 m)</i>, V03 <i>(3-9 m)</i>, V04 <i>(9-15 m)</i></td>
 </tr> </tbody>
 </table>
