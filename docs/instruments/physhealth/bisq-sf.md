@@ -60,7 +60,7 @@ Wait until BR 20.2 to see how data looks before drafting</p>
 </table>
 
 ## Instrument Details
-<span style="color: red;">TO DO</span>
+The Brief Infant Sleep Questionnaire - Short Form (**BISQ-SF**) instrument has three subscales:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
