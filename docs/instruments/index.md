@@ -3,7 +3,7 @@ In this section we provide a brief overview of each study instrument provided in
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">All HBCD Study surveys were translated to Spanish by <a href="https://burgtranslations.com/our-services/">BURG Translations</a> unless stated otherwise.</span>
+  <span class="text">All surveys used in the HBCD Study were translated into Spanish by <a href="https://burgtranslations.com/our-services/">BURG Translations</a> and reviewed by the Spanish Language Committee (SLC) to ensure clarity and accessibility for a broad Spanish-speaking population. Instruments from third-party publishers (e.g., Bayley, CDI, BTB, Vineland) were excluded from this process, and the third party's translation was used.</span>
 </div>
 <p></p>
 
