@@ -14,8 +14,11 @@ In brief, BIBSNet performs preprocessing on structural T1w/T2w images to generat
 
 ## File Selection for Processing
 
-add link to section on processing page
+Files are selected for processing based on pipeline-specific criteria detailed under the sections *File Selection For Processing* and *Quality Control Selection Information* in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/latest/tool_details.html#tool-names) section of the [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/latest/index.html) documentation. For structural and functional MRI processing, file selection is based on [raw data quality control](../mri/qc.md#raw-mr-data-qc) metrics, including:
 
+- Overall passing QC score (`QC` = 1) 
+- Motion score below a defined threshold (`QU_Motion` ≤ 2 for the current release)
+- Sessions are only processed if both T1w and T2w are present. If multiple scans are present for a given modality, the scan with the highest QC metrics is used. Future releases will include processed outputs for sessions with only a single modality present as well - see [Pending Updates](../../changelog/pending.md#21-additional-mri-processed-derivatives). 
 
 ## BIBSNet
 BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentation (<a href="https://doi.org/10.1101/2023.03.22.533696">Hendrickson et al. 2024</a>). The <a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet pipeline</a> generates native-space brain segmentations and brain masks (as well as <code>volumes.tsv</code> files with ROI volume statistics), which are fed into Infant fMRIPrep for use in anatomical preprocessing and surface reconstruction.
