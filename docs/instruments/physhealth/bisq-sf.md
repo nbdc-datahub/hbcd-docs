@@ -1,5 +1,3 @@
-<p style="font-size: 1.5em;">⚠️ <i>README NOT YET SUBMITTED - POTENTIALLY EXCLUDE FOR 2.0?</i></p>
-
 # Brief Infant Sleep Questionnaire (BISQ-SF)
 
 <div class="info-block">
@@ -33,8 +31,13 @@ ph_cg_bisq_parent_perception_score<br>
 ph_cg_bisq_total_score<br>
 </p>
 <p>Per Jen, need to document for users:<br>
-Individual item-level data exists for the whole cohort. Score data exists for all participants with the exception of data obtained prior to the data lock/cutoff date for initial scores obtained and parsed June 1st, 2025.<br>
+
+<p>From Sara: "Note that item-level responses are provided in data release 2.0. Summary scores from <a href="babysleep.com">http://babysleep.com</a> will be available in subsequent releases."</p>
+
+<p>Individual item-level data exists for the whole cohort. Score data exists for all participants with the exception of data obtained prior to the data lock/cutoff date for initial scores obtained and parsed June 1st, 2025.<br>
 Wait until BR 20.2 to see how data looks before drafting</p>
+<br>
+<p>Scores are for research purposes only and are not for individual dissemination or clinical use.</p>
 </div>
     
 ## Administration & Quality Control
@@ -59,6 +62,32 @@ Wait until BR 20.2 to see how data looks before drafting</p>
 ## Instrument Details
 <span style="color: red;">TO DO</span>
 
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr>
+    <th>Subscale</th>
+    <th># Items</th>
+    <th>Construct/Description</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Infant Sleep (IS)</strong></td>
+  <td>5</td>
+  <td style="word-wrap: break-word; white-space: normal;">Sleep patterns: sleep onset latency, number and duration of night wakings, longest stretch of sleep, and total night sleep</td>
+</tr>
+<tr>
+  <td><strong>Parent Perception (PP)</strong></td>
+  <td>3</td>
+  <td style="word-wrap: break-word; white-space: normal;">Caregiver perceptions of bedtime difficulty, overnight sleep, and overall child sleep problems</td>
+</tr>
+<tr>
+  <td><strong>Parent Behavior (PB)</strong></td>
+  <td>11</td>
+  <td style="word-wrap: break-word; white-space: normal;">Sleep ecology: bedtime routine consistency, bedtime, parental behavior at time of sleep onset and following night wakings, and sleep locations at time of sleep onset and following night wakings</td>
+</tr>
+</tbody>
+</table>
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -85,171 +114,6 @@ Wait until BR 20.2 to see how data looks before drafting</p>
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>DESCRIBE HOW SUMMARY SCORE IS CALCULATED</p>
+<p>The BISQ-SF is scored in collaboration with the instrument developers (<a href="https://www.babysleep.com/BISQ/">https://www.babysleep.com/BISQ/</a>). Parent responses are uploaded to the Baby Sleep team who scores the instrument utilizing a proprietary algorithm and then sends scores back to the HBCD data team. Note that the BISQ-R SF (short form) includes 19 scored questions and one additional sleep duration question which is not scored.</p>
+<p><b>From <a href="babysleep.com">http://babysleep.com</a></b>: Scores on each subscale and the total score are scaled from 0 to 100, with higher scores denoting better sleep quality, more positive perception of infant sleep, and parent behaviors that promote healthy and independent sleep. The Total score (T) is computed from the average of the 3 subscale scores.</p>
 </div>
-
-<div id="dd" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-book"></i></span>
-  <span class="text-with-link">
-  <span class="text">BISQ-SF Form Details</span>
-  <a class="anchor-link" href="#dd" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th>Item</th>
-<th>Item Text</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>001</td>
-<td style="word-wrap: break-word; white-space: normal;">How many nights per week are you involved with your child at bedtime and/or overnight?</td>
-</tr>
-<tr>
-<td>002</td>
-<td style="word-wrap: break-word; white-space: normal;">When your child wakes up during the night, what do you usually do? (check all that apply)</td>
-</tr>
-<tr>
-<td>003</td>
-<td>What time does your child wake up in the morning?</td>
-</tr>
-<tr>
-<td>004</td>
-<td style="word-wrap: break-word; white-space: normal;">On a typical DAY how many naps does your child take (between when your child wakes for the day and goes to bed at night)?</td>
-</tr>
-<tr>
-<td>005__00</td>
-<td style="word-wrap: break-word; white-space: normal;">How much total time does your child spend sleeping during the DAY (between when your child wakes for the day and goes to bed at night)? Example: If your child took 2 naps and slept 1 hour each time, your child's total time spent sleeping during the day is 2 hours (Hours napping: 2; Minutes napping: 0).Hours napping: {ph_cg_bisq_005__01}Minutes napping: {ph_cg_bisq_005__02}
-</td>
-</tr>
-<tr>
-<td>005__01</td>
-<td>Hours napping</td>
-</tr>
-<tr>
-<td>005__02</td>
-<td>Minutes napping</td>
-</tr>
-<tr>
-<td>Infant_Sleep_Score</td>
-<td>Infant Sleep Score</td>
-</tr>
-<tr>
-<td>Informant</td>
-<td>Informant for ph_cg_bisq</td>
-</tr>
-<tr>
-<td>instr02</td>
-<td>Please think about your child's sleep during the past two weeks in answering the following questions.</td>
-</tr>
-<tr>
-<td>is_001</td>
-<td style="word-wrap: break-word; white-space: normal;">How long does it usually take your child to fall asleep? (Example: If you put your child to bed at 6:30 pm and your child falls asleep at 8:00 pm, it takes 1 hour and 30 mins for your child to fall asleep)
-</td>
-</tr>
-<tr>
-<td>is_002</td>
-<td>How many times does your child usually wake during the night?</td>
-</tr>
-<tr>
-<td>is_003</td>
-<td style="word-wrap: break-word; white-space: normal;">How much total time during the NIGHT is your child usually awake (between when your child goes to bed and wakes for the day? Example: If you child wakes 2 times and is awake for about 15 mins each time, your child's total time spent awake is 30 minutes.
-</td>
-</tr>
-<tr>
-<td>is_003__00</td>
-<td style="word-wrap: break-word; white-space: normal;">What is the longest stretch of time that your child is asleep during the NIGHT without waking up? Please make a selection for both hours and minutes, even if one of the selections is zero "0."
-</td>
-</tr>
-<tr>
-<td>is_003__01</td>
-<td>Longest stretch of sleep (hours):</td>
-</tr>
-<tr>
-<td>is_003__02</td>
-<td>Longest stretch of sleep (minutes):</td>
-</tr>
-<tr>
-<td>is_004__00</td>
-<td style="word-wrap: break-word; white-space: normal;">How much time does your child spend in sleep during the NIGHT (between when your child goes to bed and wakes for the day)? Please make a selection for both hours and minutes, even if minutes are zero "0."Example: If your child sleeps for 3 hours, wakes up, then sleeps for 5 hours and 30 minutes more, your child sleeps for 8 hours and 30 minutes total. In that case, select "Hours of total nighttime sleep: 8 and Minutes of total nighttime sleep: 30."
-</td>
-</tr>
-<tr>
-<td>is_004__01</td>
-<td>Hours of total nighttime sleep</td>
-</tr>
-<tr>
-<td>is_004__02</td>
-<td>Minutes of total nighttime sleep</td>
-</tr>
-<tr>
-<td>location</td>
-<td>Remote or on-site?</td>
-</tr>
-<tr>
-<td>Parent_Behavior_Score</td>
-<td>Parent Behavior Score</td>
-</tr>
-<tr>
-<td>Parent_Perception_Score</td>
-<td>Parent Perception Score</td>
-</tr>
-<tr>
-<td>pb_001</td>
-<td style="word-wrap: break-word; white-space: normal;">What time do you usually start your child's bedtime routine (starting getting your child ready for bed)?
-</td>
-</tr>
-<tr>
-<td>pb_002</td>
-<td>In a typical week, how often does your child have the exact same bedtime routine?</td>
-</tr>
-<tr>
-<td>pb_003</td>
-<td>Where does your child usually fall asleep at bedtime?</td>
-</tr>
-<tr>
-<td>pb_004</td>
-<td>How does your child fall asleep at bedtime?</td>
-</tr>
-<tr>
-<td>pb_005</td>
-<td style="word-wrap: break-word; white-space: normal;">At bedtime, does your child usually fall asleep while breastfeeding, bottle feeding, or drinking from a sippy cup?</td>
-</tr>
-<tr>
-<td>pb_006</td>
-<td>What time do you usually put your child to bed at night (lights out)?</td>
-</tr>
-<tr>
-<td>pb_007</td>
-<td>In what room does your child sleep for most of the night?</td>
-</tr>
-<tr>
-<td>pb_008</td>
-<td>Where does your child sleep for most of the night?</td>
-</tr>
-<tr>
-<td>pp_001</td>
-<td>Typically, how difficult is bedtime?</td>
-</tr>
-<tr>
-<td>pp_002</td>
-<td>How well does your child usually sleep at night?</td>
-</tr>
-<tr>
-<td>pp_003</td>
-<td>Do you consider your child's sleep a problem?</td>
-</tr>
-<tr>
-<td>Total_Score</td>
-<td>Total Score</td>
-</tr>
-</tbody>
-</table>
-</div>
-
