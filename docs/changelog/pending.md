@@ -26,8 +26,6 @@ In addition, a new Data Dictionary element (***familyID***) will be incorporated
 </tbody>
 </table>
 
-### 2.1 Additional MRI Processed Derivatives 
 
-Release 2.0 processing schemes require the presence of both passing T1w and T2w scans (<a href="../../instruments/mri/mri-proc/#file-selection-for-processing" target="_blank">see details</a>) for structural and functional processing to occur. For 2.1, sessions with only a single modality present will be processed as well, using Infant FreeSurfer and M-CRIB-S for T1w- and T2w-based surface reconstruction within Infant fMRIPrep, respectively ([see details](../instruments/mri/mri-proc.md#m-crib-s-freesurfer-surface-reconstruction-methods)). For V02 data, sessions with both T1w and T2w available will be processed using T2w-based surface reconstruction.
 
 

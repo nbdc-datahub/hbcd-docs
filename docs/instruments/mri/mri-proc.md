@@ -18,7 +18,12 @@ Files are selected for processing based on pipeline-specific criteria detailed u
 
 - Overall passing QC score (`QC` = 1) 
 - Motion score below a defined threshold (`QU_Motion` ≤ 2 for the current release)
-- Sessions are only processed if both T1w and T2w are present. If multiple scans are present for a given modality, the scan with the highest QC metrics is used. Future releases will include processed outputs for sessions with only a single modality present as well - see [Pending Updates](../../changelog/pending.md#21-additional-mri-processed-derivatives). 
+- If multiple scans are present for a given modality (T1w/T2w), the scan with the highest QC metrics is used
+
+Requirements around the presence of a T1w vs T2w are pipeline-specific. For all pipelines, both T1w and T2w are used if available. Processing was still executed with only a single modality present as well, with certain requirements depending on the surface reconstruction method utilized within Infant fMRIPrep ([see details](#m-crib-s-freesurfer-surface-reconstruction-methods)):
+
+ - M-CRIB-S (T2w-based): requires T2w
+ - Infant FreeSurfer (T1w-based): requires both T1w and T2w
 
 ## BIBSNet
 BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentation (<a href="https://doi.org/10.1101/2023.03.22.533696">Hendrickson et al. 2024</a>). The <a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet pipeline</a> generates native-space brain segmentations and brain masks (as well as <code>volumes.tsv</code> files with ROI volume statistics), which are fed into Infant fMRIPrep for use in anatomical preprocessing and surface reconstruction.

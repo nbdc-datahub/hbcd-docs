@@ -4,6 +4,10 @@
 
 HBCD enrolls at least 25% of participants who have more than minimal substance use during pregnancy (LUCI NOTE: ADD REFS ref WG paper for substance use), including opioids. In addition, HBCD enrollment strategies aimed at yielding a study population that is representative of the individual and geographic characteristics of reproductive-aged women in the United States who had a birth in the past 12 months, and include an adequate comparison group for substance exposed individuals (LUCI NOTE: ADD REFS - refs yuan, chuck/tina). There are siblings enrolled in HBCD, some of whom are twins or triplets (multiples). IDs for multiples are presented in release notes.
 
+<a href="https://doi.org/10.1016/j.ntt.2021.107035" target="_blank">https://doi.org/10.1016/j.ntt.2021.107035</a></p>
+<a href="https://doi.org/10.1016/j.dcn.2024.101432" target="_blank">https://doi.org/10.1016/j.dcn.2024.101432</a></p>
+
+
 ## General Rules Applied to All Data
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
