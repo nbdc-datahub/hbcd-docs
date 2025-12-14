@@ -74,6 +74,20 @@
 
 ## Instrument Details
 
-Growth is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children, it will also include abdominal circumference (cm). Because of the jittered date of birth we do not recommend using raw data to calculate age based z-score for growth measurements for V02 data. Children in this window are between 0-30 days older than their estimated due date thus the jittering of age may introduce error. 
+Growth is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children, it will also include abdominal circumference (cm). 
+
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>Age-based z-scores for growth measurements are included. These are calculated based on <i>non-jittered</i> date of birth: children at V02 are between 0-30 days older than their estimated due date, thus the jittering of age may introduce error.</p>
+</div>
 
 
