@@ -81,6 +81,11 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
 </thead>
 <tbody>
 <tr>
+  <td>Growth<br><code>ph_ch_anthro</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Filters applied to out-of-range growth measurements (<a href="../../instruments/physhealth/growth/#warning" target="_blank">see details</a>) were not applied to the corresponding z-scores. Until this is resolved, users should manually filter the data by excluding z-scores without corresponding growth measurements.</td>
+</tr>
+<tr>
   <td>ecPROMIS - Physical Activity<br><code>ph_cg_pms__pags</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Summary scores (Summed Score, T-score, and SE) are currently excluded as they require first re-coding items to a 1 to 5 point scale, which will be done for the next release. In the interim, users can calculate summary scores themselves by following the <a href="../../instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documented on the instrument page.</td>
