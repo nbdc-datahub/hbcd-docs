@@ -22,6 +22,19 @@ If you have questions or would like to report an issue, please submit a ticket t
 </tbody>
 </table>
 
+#### Implausible Values for Gestational Age Across Multiple Instruments
+
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">
+<span style="color: #695541ff;"><i><b>Expected Fix: TBD</b></i></span><br><br>
+Several instruments contain implausible values for gestational age (<code>gestational_age</code>). This is currently under internal review and we will add more details as they become available.
+</td>
+</tr>
+</tbody>
+</table>
+
 ## <a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
