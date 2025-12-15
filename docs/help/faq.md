@@ -321,7 +321,7 @@
 <ul>
 <li>Raw data that pass QC are processed through pipelines that generate analysis-ready derivatives - see <a href="../../instruments/processing/#file-selection-for-processing" target="_blank">File Selection for Processing</a>.</li>
 <li>Processing pipelines, such as <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a> (for structural and functional MRI) and <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> (for diffusion MRI), produce visual reports that can help guide data selection.</li>
-<li>Visual QC is performed on these reports using <a href="../../instruments/mri/qc/#brainswipes">BrainSwipes</a>, and the results are available as <a href="../../datacuration/phenotypes">tabulated data</a>.</li>
+<li>Visual QC is performed on these reports using <a href="../../instruments/mri/brainswipes/">BrainSwipes</a>, and the results are available as <a href="../../datacuration/phenotypes">tabulated data</a>.</li>
 </ul>
 </div>
 

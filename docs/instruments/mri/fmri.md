@@ -174,7 +174,7 @@ Functional MRI data is processed through [infant-fMRIPrep](https://nibabies.read
   </span>
 </div>
 <div class="table-static-content">
-<p>Average functional connectivity matrices were computed using the Gordon parcellation from <a href="../fmri/#xcpd">XCP-D derivatives</a> for V02 sessions with data inclusion based on various thresholds of BrainSwipes QC results (<code>img_brainswipes_xcpd-bold</code>; <a href="../qc/#brainswipes">see details</a>). Functional connectivity patterns remained consistent even when incorporating data with lower QC scores, suggesting robustness to mild quality variations.</p>
+<p>Average functional connectivity matrices were computed using the Gordon parcellation from <a href="../fmri/#xcpd">XCP-D derivatives</a> for V02 sessions with data inclusion based on various thresholds of BrainSwipes QC results (<code>img_brainswipes_xcpd-bold</code>; <a href="../brainswipes/">see details</a>). Functional connectivity patterns remained consistent even when incorporating data with lower QC scores, suggesting robustness to mild quality variations.</p>
 <p><strong>Connectivity matrices as data quality improves (Left -> Right) based on QC thresholds of 0.1, 0.5, and 0.9:</strong></p>
 <img src="../images/fconn_qc.png" style="width: 90%;" class="center">
 <br>

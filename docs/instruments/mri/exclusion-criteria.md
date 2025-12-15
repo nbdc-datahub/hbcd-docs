@@ -70,7 +70,7 @@ Acquisition parameters vary by scanner vendor, so inclusion criteria are typical
 
 ## Processed Data Exclusion Criteria
 
-Structural and functional MRI derivatives were evaluated using **BrainSwipes**, a web-based QC tool that collects QC ratings through visual inspection of standardized reports (<a href="../qc/#brainswipes" target="_blank">see MRI QC Procedures > BrainSwipes</a>). Any structural or functional dataset with an average BrainSwipes score below **0.5** was flagged for additional expert manual review (<a href="#manual-review">details below</a>).
+Structural and functional MRI derivatives were evaluated using **BrainSwipes**, a web-based QC tool that collects QC ratings through visual inspection of standardized reports (<a href="../brainswipes/" target="_blank">see MRI QC Procedures > BrainSwipes</a>). Any structural or functional dataset with an average BrainSwipes score below **0.5** was flagged for additional expert manual review (<a href="#manual-review">details below</a>).
 
 <div id="manual-review" class="table-banner" onclick="toggleCollapse(this)"> <span class="emoji"><i class="fa fa-circle-check"></i></span> <span class="text-with-link"> <span class="text">Details: Expert Manual Review of Flagged Data</span> <a class="anchor-link" href="#manual-review" title="Copy link"> <i class="fa-solid fa-link"></i> </a> </span> <span class="arrow">▸</span> </div> 
 <div class="collapsible-content"> <p>Flagged data underwent additional review to identify sessions with severe quality issues that should be excluded from the release. These severe issues primarily reflected underlying data quality problems rather than processing errors and were flagged for secondary <a href="../qc/#raw-mr-data-qc">raw MR data QC</a>.</p>
