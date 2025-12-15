@@ -94,7 +94,7 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
 <tr>
   <td>BISQ-SF<br><code>ph_cg_bisq</code></td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">The 'Infant Sleep' (IS) sub-scale score is currently missing and will be included for 2.1.</td>
+  <td style="word-wrap: break-word; white-space: normal;">The Infant Sleep (IS) sub-scale score is currently missing and will be included for 2.1.</td>
 </tr>
 </tbody>
 </table>
