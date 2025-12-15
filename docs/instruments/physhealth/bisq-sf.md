@@ -36,6 +36,12 @@ ph_cg_bisq_total_score</p>
 <p>Individual item-level data exists for the whole cohort. Score data exists for all participants with the exception of data obtained prior to the data lock/cutoff date for initial scores obtained and parsed June 1st, 2025.<br>
 Wait until BR 20.2 to see how data looks before drafting</p>
 </div>
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#physical-health" target="_blank">see details</a>.</span>
+</div>
+<p></p>
     
 ## Administration & Quality Control
 

@@ -91,8 +91,16 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Summary scores (Summed Score, T-score, and SE) are currently excluded as they require first re-coding items to a 1 to 5 point scale, which will be done for the next release. In the interim, users can calculate summary scores themselves by following the <a href="../../instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documented on the instrument page.</td>
 </tr>
+<tr>
+  <td>BISQ-SF<br><code>ph_cg_bisq</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">The 'Infant Sleep' (IS) sub-scale score is currently missing and will be included for 2.1.</td>
+</tr>
 </tbody>
 </table>
+
+
+ly the 'Infant Sleep' (IS) sub-scale score is not included as we do not have any data for this sub-scale. Not
 
 ## <a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
