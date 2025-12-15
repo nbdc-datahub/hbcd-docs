@@ -105,7 +105,7 @@ nav:
             - Medical History: instruments/physhealth/medical-history.md
             - Nutrition: instruments/physhealth/nutrition.md
             - ScreenQ: instruments/physhealth/screenq.md
-            - Vision: instruments/physhealth/vision.md
+            - Vision Screener: instruments/physhealth/vision.md
         - Pregnancy & Exposures:
             - Pregnancy & Infant Health: instruments/pregexp/pex.md
             - Mental Health:

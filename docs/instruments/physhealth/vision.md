@@ -1,5 +1,3 @@
-<p style="font-size: 1.5em;">⚠️ <i>README NOT YET SUBMITTED - POTENTIALLY EXCLUDE FOR 2.0?</i></p>
-
 # VS100 Spot Vision Screener 
 
 <div class="info-block">
@@ -24,16 +22,29 @@
 <tr><td><b>Respondent</b></td>
 <td>Child on Self</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff, in person</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff, in person.<br>
+<i>Note: Before administration of the vision screener, one eligibility question is asked of the parent: “Have you been told that your child cannot see at all?” (i.e., cannot see shadows or distinguish light and dark). If the parent answers YES, the vision screener is not administered.</i></td></tr>
 <tr><td><b>Visits</b></td>
 <td>V04, V06, V08</td></tr>
 <tr><td><b>Completion Time</b></td>
-<td>1 min</td></tr>
+<td>A few seconds</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;"></td></tr>
+<td style="word-wrap: break-word; white-space: normal;"><span style="color: red;">TO DO</span></td></tr>
 </tbody>
 </table>
 
 ## Instrument Details
 
-ADD CONTENT
+The **VS100 Spot Vision Screener** is used to screen for six vision and oculomotor domains. Screening is conducted according to manufacturer instructions and HBCD study standard operating procedures. The device produces an *overall screening result* based on *age-specific threshold values*, as defined by established guidelines from the American Academy of Pediatric Ophthalmology and Strabismus ([AAPOS](https://www.aapos.org/home)):
+
+ - **PASS**: All measured domains fall within age-appropriate thresholds
+ - **REFER / COMPLETE EYE EXAM RECOMMENDED**: One or more domains falls outside acceptable age-appropriate thresholds
+
+Released data include all information recorded by the Vision Screener. For each of the six domains, this includes:    
+**(1)** the overall screening result (PASS/REFER) and       
+**(2)** all measurements used to assess vision performance and determine the screening result.
+
+
+
+
+
