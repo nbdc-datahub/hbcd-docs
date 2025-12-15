@@ -112,6 +112,10 @@ The Brief Infant Sleep Questionnaire - Short Form (**BISQ-SF**) instrument has t
 <p><b>From <a href="babysleep.com">http://babysleep.com</a></b>: Scores on each subscale and the total score are scaled from 0 to 100, with higher scores denoting better sleep quality, more positive perception of infant sleep, and parent behaviors that promote healthy and independent sleep. The Total score (T) is computed from the average of the 3 subscale scores.</p>
 </div>
 
+## Resources
+
+ - <a href="babysleep.com">http://babysleep.com</a>
+
 ## References
 <div class="references">
 <p>Mindell, J. A., Gould, R. A., Tikotzy, L., Leichman, E. S., & Walters, R. M. (2019). Norm-referenced scoring system for the Brief Infant Sleep Questionnaire - Revised (BISQ-R). <em>Sleep Medicine</em>, 63, 106–114. <a href="https://doi.org/10.1016/j.sleep.2019.05.010">https://doi.org/10.1016/j.sleep.2019.05.010</a></p>

@@ -29,7 +29,7 @@
 <tr><td><b>Completion Time</b></td>
 <td>A few seconds</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="color: red;"><b>TO DO</b></span></td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Data are reviewed to verify that sites obtain a valid screening outcome (PASS or REFER). The device does not generate results if it is used incorrectly.</td></tr>
 </tbody>
 </table>
 
@@ -45,8 +45,18 @@ The **VS100 Spot Vision Screener** is used to screen for six vision and oculomot
 >**(1)** the overall screening result (PASS/REFER) and       
 **(2)** all measurements used to assess vision performance and determine the screening result.
 
+## Resources
+ - <a href="https://www.hillrom.com/en/products/spot-vision-screener/">https://www.hillrom.com/en/products/spot-vision-screener/</a>
+
 ## References
-<td style="word-wrap: break-word; white-space: normal;"><span style="color: red;"><b>TO DO (if applicable)</b></span></td></tr>
+<div class="references">
+<p>Misra, N., Khanna, R. C., Mettla, A. L., Marmamula, S., & Keeffe, J. E. (2021). Agreement and diagnostic accuracy of vision screening in preschool children between vision technicians and spot vision screener. <em>Indian Journal of Ophthalmology</em>, 69(1), 117–121. <a href="https://doi.org/10.4103/ijo.IJO_1740_19">https://doi.org/10.4103/ijo.IJO_1740_19</a></p>
+</div>
+
+
+
+
+
 
 
 
