@@ -28,7 +28,8 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Range checks for growth were performed to identify and exclude extreme out-of-range values. Values outside of the following valid ranges were converted to 'n/a':</p>
+<p><b>Range Checks For Growth</b><br>
+Range checks were performed to identify and exclude extreme out-of-range values. Values outside of the following valid ranges were converted to 'n/a':</p>
 <table class="table-no-vertical-lines" style="font-size: 15px;">
 <tbody>
 <tr>
@@ -51,6 +52,8 @@
 </tr>
 </tbody>
 </table>
+<p><b>Sex-Specific Birthweight for Gestational Age</b><br>
+Sex-specific birthweight for gestational age centiles and Z scores will be calculated in future data releases using Intergrowth curves (<a href="https://doi.org/10.1016/S0140-6736(14)60932-6">Villar et al. 2014</a>). In the meantime, data users can use these growth curves or ones of their choice to calculate centiles and small/large for gestational age variables. 
 </div>
 
 <div id="issues" class="issues-banner">
@@ -96,4 +99,8 @@ Growth is a standard direct measure of child growth, including height or length 
 <p>Age-based z-scores for growth measurements are included. These are calculated based on <i>non-jittered</i> date of birth: children at V02 are between 0-30 days older than their estimated due date, thus the jittering of age may introduce error.</p>
 </div>
 
+## References
 
+<div class="references">
+    <p>Villar, J., Cheikh Ismail, L., Victora, C. G., Ohuma, E. O., Bertino, E., Altman, D. G., Lambert, A., Papageorghiou, A. T., Carvalho, M., Jaffer, Y. A., Gravett, M. G., Purwar, M., Frederick, I. O., Noble, A. J., Pang, R., Barros, F. C., Chumlea, C., Bhutta, Z. A., Kennedy, S. H., & International Fetal and Newborn Growth Consortium for the 21st Century (INTERGROWTH-21st). (2014). <i>International standards for newborn weight, length, and head circumference by gestational age and sex: the Newborn Cross-Sectional Study of the INTERGROWTH-21st Project</i>. Lancet, 384(9946), 857–868. <a href="https://doi.org/10.1016/S0140-6736(14)60932-6">https://doi.org/10.1016/S0140-6736(14)60932-6</a></p>
+</div>
