@@ -96,7 +96,7 @@ Growth is a standard direct measure of child growth, including height or length 
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Age-based z-scores for growth measurements are included. These are calculated based on <i>non-jittered</i> date of birth: children at V02 are between 0-30 days older than their estimated due date, thus the jittering of age may introduce error.</p>
+<p>Age-based z-scores for growth measurements are included. These are calculated based on <i>non-jittered</i> date of birth: children at V02 are between 0-30 days older than their estimated due date, thus the jittering of age may introduce error. For participants born prematurely, z-scores were calculated using age adjusted for prematurity.</p>
 </div>
 
 ## References
