@@ -182,12 +182,6 @@ Approximately **30 new study instruments/measures** have been added across the f
 </thead>
 <tbody>
 <tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Physical Health</span></span></td>
-  <td>Growth<br><code>ph_ch_anthro</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
-  Added age-based z-scores calculated based on (non-jittered) date of birth.</td>
-</tr>
-<tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
   <td>MR Derivatives</td>
   <td style="word-wrap: break-word; white-space: normal;">

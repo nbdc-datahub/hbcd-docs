@@ -27,7 +27,7 @@ In addition, a new Data Dictionary element (***familyID***) will be incorporated
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Physical Health</span></span></td>
   <td>Growth<br><code>ph_ch_anthro</code></td>
   <td style="word-wrap: break-word; white-space: normal;">
-  Addition of sex-specific birth weight for gestational age centiles and z-scores - <a href="../../instruments/physhealth/growth/#warning">see details</a></td>
+  Addition of age-based z-scores, including addition of sex-specific birth weight for gestational age centiles and z-scores - <a href="../../instruments/physhealth/growth/#warning">see details</a></td>
 </tr>
 </tbody>
 </table>
