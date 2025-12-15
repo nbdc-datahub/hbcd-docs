@@ -28,6 +28,8 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
+<p><b>Z-Scores Excluded From Current Release</b><br>
+Because dates of birth are jittered and calculated chronologic and adjusted ages are ±7 days, we do not provide z-scores in the current data release. Further, <b>we do NOT recommend calculating z-scores using V02 data</b>. Caution is recommended when calculating Z-scores using data from subsequent visits. Future data releases will have z-scores calculated with age in days for investigators wanting to compare to normative growth metrics.</p>
 <p><b>Range Checks For Growth</b><br>
 Range checks were performed to identify and exclude extreme out-of-range values. Values outside of the following valid ranges were converted to 'n/a'. <i>Note that these ranges are not age-specific, i.e. the same ranges were used for all visits.</i></p>
 <table class="table-no-vertical-lines" style="font-size: 15px;">
@@ -84,20 +86,6 @@ Sex-specific birthweight for gestational age centiles and z-scores will be calcu
 ## Instrument Details
 
 Growth is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children, it will also include abdominal circumference (cm). 
-
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Age-based z-scores for growth measurements were calculated using the <a href="https://github.com/CDC-DNPAO/WHOanthro">WHOanthro</a> R package. Calculations are based on <i>non-jittered</i> date of birth: children at V02 are between 0-30 days older than their estimated due date, thus the jittering of age may introduce error. For participants born prematurely, z-scores were calculated using age adjusted for prematurity.</p>
-</div>
 
 ## References
 
