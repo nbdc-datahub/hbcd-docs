@@ -40,8 +40,9 @@ The **VS100 Spot Vision Screener** is used to screen for six vision and oculomot
  - **PASS**: All measured domains fall within age-appropriate thresholds
  - **REFER / COMPLETE EYE EXAM RECOMMENDED**: One or more domains falls outside acceptable age-appropriate thresholds
 
-Released data include all information recorded by the Vision Screener. For each of the six domains, this includes:    
-**(1)** the overall screening result (PASS/REFER) and       
+Release data includes all information recorded by the Vision Screener for each of the six domains, including:
+
+>**(1)** the overall screening result (PASS/REFER) and       
 **(2)** all measurements used to assess vision performance and determine the screening result.
 
 
