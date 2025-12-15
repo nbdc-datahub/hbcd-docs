@@ -23,9 +23,12 @@ In addition, a new Data Dictionary element (***familyID***) will be incorporated
   <td style="word-wrap: break-word; white-space: normal;">
   Addition of <strong>source DICOMs</strong> for <a href="../../datacuration/file-based-data/#raw-bids" target="_blank">raw BIDS</a> for all imaging modalities.</td>
 </tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Physical Health</span></span></td>
+  <td>Growth<br><code>ph_ch_anthro</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Addition of sex-specific birth weight for gestational age centiles and z-scores - <a href="../../instruments/physhealth/growth/#warning">see details</a></td>
+</tr>
 </tbody>
 </table>
-
-
-
 
