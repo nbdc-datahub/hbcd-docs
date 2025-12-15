@@ -29,7 +29,7 @@
 <tr><td><b>Completion Time</b></td>
 <td>A few seconds</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="color: red;">TO DO</span></td></tr>
+<td style="word-wrap: break-word; white-space: normal;"><span style="color: red;"><b>TO DO</b></span></td></tr>
 </tbody>
 </table>
 
@@ -46,6 +46,7 @@ The **VS100 Spot Vision Screener** is used to screen for six vision and oculomot
 **(2)** all measurements used to assess vision performance and determine the screening result.
 
 ## References
+<td style="word-wrap: break-word; white-space: normal;"><span style="color: red;"><b>TO DO (if applicable)</b></span></td></tr>
 
 
 
