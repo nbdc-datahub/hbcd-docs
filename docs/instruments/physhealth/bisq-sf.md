@@ -113,5 +113,8 @@ The Brief Infant Sleep Questionnaire - Short Form (**BISQ-SF**) instrument has t
 </div>
 
 ## References
-
-<span style="color: red;">TO DO</span>
+<div class="references">
+<p>Mindell, J. A., Gould, R. A., Tikotzy, L., Leichman, E. S., & Walters, R. M. (2019). Norm-referenced scoring system for the Brief Infant Sleep Questionnaire - Revised (BISQ-R). <em>Sleep Medicine</em>, 63, 106–114. <a href="https://doi.org/10.1016/j.sleep.2019.05.010">https://doi.org/10.1016/j.sleep.2019.05.010</a></p>
+<p>Sadeh, A. (2004). A brief screening questionnaire for infant sleep problems: validation and findings for an Internet sample. <em>Pediatrics</em>, 113(6), e570-7. <a href="https://doi.org/10.1542/peds.113.6.e570">https://doi.org/10.1542/peds.113.6.e570</a></p>
+<p>Sadeh, A., Mindell, J. A., Luedtke, K., & Wiegand, B. (2009). Sleep and sleep ecology in the first 3 years: a web-based study. <em>Journal of Sleep Research</em>, 18(1), 60–73. <a href="https://doi.org/10.1111/j.1365-2869.2008.00699.x">https://doi.org/10.1111/j.1365-2869.2008.00699.x</a></p>
+</div>
