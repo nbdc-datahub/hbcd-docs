@@ -24,17 +24,8 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Note that item-level responses are provided in data release 2.0. Summary scores from <a href="babysleep.com">http://babysleep.com</a> will be available in subsequent releases.</p>
+<p>Note that item-level responses are provided in release 2.0 for the whole cohort. Score data exists for all participants with the exception of data obtained prior to the cutoff date for initial scores obtained and parsed (June 1st, 2025). Summary scores from http://babysleep.com will be available in subsequent releases.</p> 
 <p>Scores are for research purposes only and are not for individual dissemination or clinical use.</p>
-<br>
-<p>Add warning about score fields - added for BR20.2:<br>
-ph_cg_bisq_infant_sleep_score (?? - not included in Santiago's notes for 20.2 - see <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/18369996603/posts/4727745323">here</a>)<br>
-ph_cg_bisq_parent_behavior_score<br>
-ph_cg_bisq_parent_perception_score<br>
-ph_cg_bisq_total_score</p>
-<p>Per Jen, need to document for users:<br>
-<p>Individual item-level data exists for the whole cohort. Score data exists for all participants with the exception of data obtained prior to the data lock/cutoff date for initial scores obtained and parsed June 1st, 2025.<br>
-Wait until BR 20.2 to see how data looks before drafting</p>
 </div>
 
 <div id="issues" class="issues-banner">
