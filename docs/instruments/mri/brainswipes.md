@@ -20,11 +20,18 @@ BrainSwipes QC results are provided as <a href="../../#mri">tabulated data</a>, 
 
 UNDER CONSTRUCTION
 
-BrainSwipes results are additionally provided on a rolling monthly basis between releases via the HBCD Private Release Notes. This is done to provide users with the most up-to-date QC results to inform their anaylses.
+BrainSwipes results will additionally be provided on a rolling monthly basis between releases via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> (*only accessible for DUC-authorized users*).
+
+
+HBCD Private Release Notes. This is done to provide users with the most up-to-date QC results to inform their anaylses.
 
 Files are provided in the same format as the release data, nested under folders named with the date that the results were provided.
 
 **Maybe provide status?** eg no T2w-only sessions will have swipes, and vast majority of V02 processed via infant FS workflow are missing results as well 
+
+
+  <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/
+nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the )</i>
 
 ## QC Procedure Details
  <p>
