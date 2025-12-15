@@ -1,37 +1,6 @@
 # BrainSwipes
 
-## Overview
-
 Manual visual inspection remains the gold standard for detecting artifacts in structural, functional (e.g., XCP-D), and diffusion (e.g., QSIPrep) derivatives. To support this, derivative visual reports are integrated into [BrainSwipes](https://brainswipes.us/about), a gamified, crowdsourced QC platform built on the open-source [Swipes For Science](https://swipesforscience.org/) framework. BrainSwipes provides an intuitive interface for large-scale studies, guiding users through a short [tutorial](https://brainswipes.us/tutorial-select) before they evaluate images and classify them as pass or fail.
-
-##  Location of BrainSwipes QC Results
-
-### Release Data
-
-BrainSwipes QC results are provided as <a href="../../#mri">tabulated data</a>, with unique hash identifiers indicating the surface-reconstruction method used in Infant fMRIPrep (see <a href="../mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S & FreeSurfer Reconstruction Methods</a>):
-<ul>
-<li><code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code> - <i>T2w-based surface reconstruction (M-CRIB-S)</i></li>
-<li><code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code> - <i>T1w-based surface reconstruction (Infant FreeSurfer)</i></li>
-</ul>
-
-**Note that BrainSwipes QC scores should be available for all release data with the exception of visit V02 data processed using Infant FreeSurfer for surface reconstruction, which is not advised for use in analysis - see <a href="../mri-proc/#warning">Data Warning</a>.**
-
-### Private Release Notes
-
-UNDER CONSTRUCTION
-
-BrainSwipes results will additionally be provided on a rolling monthly basis between releases via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> (*only accessible for DUC-authorized users*).
-
-
-HBCD Private Release Notes. This is done to provide users with the most up-to-date QC results to inform their anaylses.
-
-Files are provided in the same format as the release data, nested under folders named with the date that the results were provided.
-
-**Maybe provide status?** eg no T2w-only sessions will have swipes, and vast majority of V02 processed via infant FS workflow are missing results as well 
-
-
-  <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/
-nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the )</i>
 
 ## QC Procedure Details
  <p>
@@ -67,3 +36,24 @@ As described in the [procedure details](#swipes-procedures) above, structural an
 
 **BrainSwipes QC results are used to exclude derivative outputs with severe data quality issues from the release - see <a href="../exclusion-criteria/#processed-data-exclusion-criteria" target="_blank">Processed Data Exclusion Criteria</a> for details.**
 
+
+
+##  Location of BrainSwipes QC Results
+### Release Data
+BrainSwipes QC results are provided as <a href="../../#mri">tabulated data</a>, with unique hash identifiers indicating the surface-reconstruction method used in Infant fMRIPrep (see <a href="../mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S & FreeSurfer Reconstruction Methods</a>):
+<ul>
+<li><code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code> - <i>T2w-based surface reconstruction (M-CRIB-S)</i></li>
+<li><code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code> - <i>T1w-based surface reconstruction (Infant FreeSurfer)</i></li>
+</ul>
+
+**Note that BrainSwipes QC scores should be available for all release data with the exception of visit V02 data processed using Infant FreeSurfer for surface reconstruction, which is not advised for use in analysis - see <a href="../mri-proc/#warning">Data Warning</a>.**
+
+### Private Release Notes
+
+BrainSwipes results will additionally be provided on a rolling basis between releases via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> (*only accessible for DUC-authorized users*). This is done to provide users with the most up-to-date QC results to inform their anaylses. Files are provided in the same format as the release data, nested under folders named with the date that the results were provided.
+
+**Maybe provide status?** eg no T2w-only sessions will have swipes, and vast majority of V02 processed via infant FS workflow are missing results as well 
+
+
+  <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/
+nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download latest BrainSwipes Results</a> <i>(available to DUC-authorized users via the )</i>
