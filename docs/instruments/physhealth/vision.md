@@ -35,7 +35,7 @@
 
 ## Instrument Details
 
-The **VS100 Spot Vision Screener** is used to screen for six vision and oculomotor domains. Screening is conducted according to manufacturer instructions and HBCD study standard operating procedures. The device produces an *overall screening result* based on *age-specific threshold values*, as defined by established guidelines from the American Academy of Pediatric Ophthalmology and Strabismus ([AAPOS](https://www.aapos.org/home)):
+The **VS100 Spot Vision Screener** (see [manufacturer documentation](https://www.hillrom.com/en/products/spot-vision-screener/)) is used to screen for six vision and oculomotor domains. Screening is conducted according to manufacturer instructions and HBCD study standard operating procedures. The device produces an *overall screening result* based on *age-specific threshold values*, as defined by established guidelines from the American Academy of Pediatric Ophthalmology and Strabismus ([AAPOS](https://www.aapos.org/home)):
 
  - **PASS**: All measured domains fall within age-appropriate thresholds
  - **REFER / COMPLETE EYE EXAM RECOMMENDED**: One or more domains falls outside acceptable age-appropriate thresholds
