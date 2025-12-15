@@ -53,7 +53,7 @@ Range checks were performed to identify and exclude extreme out-of-range values.
 </tbody>
 </table>
 <p><b>Sex-Specific Birthweight for Gestational Age</b><br>
-Sex-specific birthweight for gestational age centiles and Z scores will be calculated in future data releases using Intergrowth curves (<a href="https://doi.org/10.1016/S0140-6736(14)60932-6">Villar et al. 2014</a>). In the meantime, data users can use these growth curves or ones of their choice to calculate centiles and small/large for gestational age variables. 
+Sex-specific birthweight for gestational age centiles and z-scores will be calculated in future data releases using Intergrowth curves (<a href="https://doi.org/10.1016/S0140-6736(14)60932-6">Villar et al. 2014</a>). In the meantime, data users can use these growth curves or ones of their choice to calculate centiles and small/large for gestational age variables. 
 </div>
 
 <div id="issues" class="issues-banner">
