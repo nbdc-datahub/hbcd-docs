@@ -96,8 +96,7 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
 <tr>
   <td>Growth<br><code>ph_ch_anthro</code></td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;"><span style="color: red;">LUCI NOTE - DOUBLE CHECK WHETHER TO INCLUDE OR NOT (<a href="https://ucsd-actri.monday.com/boards/6365544655/pulses/18209381322/posts/4729352509?reply=reply-4730610688">monday.com</a>)</span><br>
-  Filters applied to out-of-range growth measurements (<a href="../../instruments/physhealth/growth/#warning" target="_blank">see details</a>) were not applied to the corresponding z-scores. Until this is resolved, users should manually filter the data by excluding z-scores without corresponding growth measurements.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Ranges used to filter out-of-range  growth measurements (<a href="../../instruments/physhealth/growth/#warning" target="_blank">see details</a>) are not age-specific, leading to values that are within the valid range, but biologically implausible for the visit age. Filtering methods will be re-evaluated for the next release.</td>
 </tr>
 <tr>
   <td>ecPROMIS - Physical Activity<br><code>ph_cg_pms__pags</code></td>
