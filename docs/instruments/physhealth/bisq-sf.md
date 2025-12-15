@@ -24,7 +24,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Item-level responses are provided for the whole cohort, but score data is present for all participants except those with data obtained in the month prior to the cutoff date for data inclusion (June 1st, 2025). Summary scores from <a href="http://babysleep.com">babysleep.com</a> will be available in subsequent releases.</p> 
+<p>Item-level responses are provided for the whole cohort; summary scores are present for all participants except those with data obtained in the month prior to the cutoff date for data inclusion (June 1st, 2025). Summary scores from <a href="http://babysleep.com">babysleep.com</a> will be available in subsequent releases.</p> 
 <p>Scores are for research purposes only and are not for individual dissemination or clinical use.</p>
 </div>
 
