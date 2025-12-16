@@ -38,7 +38,7 @@ hbcd/
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead>
 <tr>
-  <th>Measure</th>
+  <th>Measure By Domain</th>
   <th>Relevant Variable Names in Table</th>
   <th>Link</th>
 </tr>
