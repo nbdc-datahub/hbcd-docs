@@ -1,9 +1,6 @@
 # HBCD MR Quality Control Procedures
 
 ## Raw MR Data QC
-
-Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. Raw data QC is performed to detect acquisition errors, image artifacts, or corrupted files early so that problematic scans are excluded from [downstream processing](../processing/index.md#file-selection-for-processing).
-
 <div id="scanstsv" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fa-solid fa-location-dot"></i></span>
   <span class="text-with-link">
@@ -322,7 +319,15 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
 
 <p></p>
 
-#### <i class="fa fa-desktop"></i> Automated QC
+### Workflow
+
+Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing.
+
+Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, **manual visual review is only performed for series that fail automated QC**. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC.
+
+**As an additional safeguard, QC is also performed on processed outputs** using tools such as <a href="../brainswipes" target="_blank">BrainSwipes</a>. When issues are identified at this stage, the corresponding raw data are re-reviewed and QC decisions are updated as needed. This iterative process improves QC scoring and utilities over time and helps ensure high data quality while minimizing delays in data release.
+
+### <i class="fa fa-desktop"></i> Automated QC
 
 Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload, beginning with [protocol compliance and completeness checks](#compliance). Data that fail these checks are flagged for review and are not included in the release until resolved. 
 
@@ -423,12 +428,8 @@ For data that pass compliance checks, the following automated QC metrics availab
 </tbody>
 </table>
 
-#### <i class="fa-solid fa-eye"></i> Manual Review
-Manual visual review is performed **only for series that fail automated QC**. Due to the large data volume and the time-intensive nature of manual inspection, only a portion of the data undergoes manual review. Data is flagged for manual review based on multivariate prediction and Bayesian classifiers. While these tools identify most quality issues, some poor-quality data may pass automated QC due to misclassification or the presence of artifacts not assessed by automated metrics.
-
-When automated QC flags a series, trained technicians perform manual visual review and rate artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected (QC = 0)** and excluded from downstream processing. For remaining series, final selection is informed by manual ratings, reviewer notes, and automated QC scores.
-
-**As an additional safeguard, QC is also performed on processed outputs** using tools such as <a href="../brainswipes" target="_blank">BrainSwipes</a>. If processed data are flagged during this stage, the corresponding raw data are re-reviewed and QC decisions are corrected if necessary. This iterative workflow leads to improved QC procedures and scoring for existing data over time, ensuring that the majority of the data included in the release is of high quality without delaying release of the data.
+### <i class="fa-solid fa-eye"></i> Manual Review
+Data is flagged for manual review based on automated QC results using multivariate prediction and Bayesian classifiers. Only a portion of data therefore undergoes both automated and manual review. When automated QC flags a series, trained technicians perform manual visual review and rate artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected (QC = 0)** and excluded from downstream processing. For remaining series, final selection is informed by manual ratings, reviewer notes, and automated QC scores.
 
 <table class="compact-table-no-vertical-lines">
 <i>Manual QC Metrics</i>
@@ -463,7 +464,7 @@ When automated QC flags a series, trained technicians perform manual visual revi
 </tbody>
 </table>
 
-## References
+### References
 <div class="references">
     <p>Dean III, D. C., Tisdall, M. D., Wisnowski, J. L., Feczko, E., Gagoski, B., Alexander, A. L., ... &amp; HBCD MRI Working Group. (2024). Quantifying brain development in the HEALthy Brain and Child Development (HBCD) Study: The magnetic resonance imaging and spectroscopy protocol. <em>Developmental Cognitive Neuroscience</em>, 70, 101452. <a href="https://doi.org/10.1016/j.dcn.2024.101452">https://doi.org/10.1016/j.dcn.2024.101452</a></p>
     <p>Gard, A. M., Hyde, L. W., Heeringa, S. G., West, B. T., & Mitchell, C. (2023). Why weight? Analytic approaches for large-scale population neuroscience data. Developmental Cognitive Neuroscience, 59, 101196. <a href="https://doi.org/10.1016/j.dcn.2023.101196">https://doi.org/10.1016/j.dcn.2023.101196</a></p>
