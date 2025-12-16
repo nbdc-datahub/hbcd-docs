@@ -58,8 +58,8 @@ hbcd/
   <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>SOIL POLLUTION</b></td>
 </tr>
 <tr>
-  <td>Soil Contamination Meaasures</td>
-  <td><code>soilpoll_{at|hhet}_{As|Cd|Co|Cu|Ni|Pb}</code></td>
+  <td>Soil Contamination Measures</td>
+  <td><code>soilpoll_{at|hhet}_{As|Cd|Co|Cu|Ni|Pb}</code>; <code>gw_li</code></td>
   <td><a href="https://docs.abcdstudy.org/latest/documentation/non_imaging/le.html#le_l_leadrisk" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 </tr>
 <!-- Amenities & Services -->
@@ -131,7 +131,7 @@ hbcd/
 </tr>
 <tr>
   <td>Measure of Land Cover and Tree Canopy (NLCD)</td>
-  <td><code>nlcd</code></td>
+  <td><code>nlcd</code>; <code>tcc</code></td>
   <td><a href="https://docs.abcdstudy.org/latest/documentation/non_imaging/le.html#le_l_nlcd" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 </tr>
 <!-- Neighborhood Social Factors -->
