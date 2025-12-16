@@ -428,7 +428,7 @@ Manual visual review is performed **only for series that fail automated QC**. Du
 
 When automated QC flags a series, trained technicians perform manual visual review and rate artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected (QC = 0)** and excluded from downstream processing. For remaining series, final selection is informed by manual ratings, reviewer notes, and automated QC scores.
 
-**As an additional safeguard, QC is also performed on processed outputs** using tools such as <a href="../brainswipes" target="_blank">BrainSwipes</a>. If processed data are flagged during this stage, the corresponding raw data are re-reviewed and QC decisions are corrected if necessary. This process ensures that the majority of the data included in the release is of high quality without additional delays in data release.
+**As an additional safeguard, QC is also performed on processed outputs** using tools such as <a href="../brainswipes" target="_blank">BrainSwipes</a>. If processed data are flagged during this stage, the corresponding raw data are re-reviewed and QC decisions are corrected if necessary. This workflow leads to improved QC procedures and scoring for existing data over time, ensuring that the majority of the data included in the release is of high quality without delaying release of the data.
 
 <table class="compact-table-no-vertical-lines">
 <i>Manual QC Metrics</i>
