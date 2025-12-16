@@ -55,7 +55,7 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <tfoot><tr><td colspan="3" style="word-wrap: break-word; white-space: normal; padding: 10px 8px 6px 8px;">
   <sup><b>1</b></sup> Years are to 2 decimal places, calculated by dividing the number of whole months (rounded down) by 12<br>
-  <sup><b>2</b></sup> The values for these variables are derived from V01 and carry forward. If there is a change at V04, then the V04 report is carried forward (from V04 - no back-population of data)
+  <sup><b>2</b></sup> Values derived from V01 and carry forward. If there is a change at V04, then the V04 report is carried forward (from V04 - no back-population of data)
   </td></tr></tfoot>
 <thead>
 <tr style="background-color: #f8f9f9;">
