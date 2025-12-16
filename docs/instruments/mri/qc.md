@@ -424,8 +424,11 @@ For data that pass compliance checks, the following automated QC metrics availab
 </table>
 
 #### <i class="fa-solid fa-eye"></i> Manual Review
+Manual visual review is performed **only for series that fail automated QC**. Due to the large data volume and the time-intensive nature of manual inspection, only a portion of the data undergoes manual review. Data is flagged for manual review based on multivariate prediction and Bayesian classifiers. While these tools identify most quality issues, some poor-quality data may pass automated QC due to misclassification or the presence of artifacts not assessed by automated metrics.
 
-Automated metrics flag series for manual review using multivariate prediction and Bayesian classifiers. Trained technicians then score artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected** (QC = 0) and excluded from processing. Data are selected from the remaining series based on manual ratings, notes, and automated scores.
+When automated QC flags a series, trained technicians perform manual visual review and rate artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected (QC = 0)** and excluded from downstream processing. For remaining series, final selection is informed by manual ratings, reviewer notes, and automated QC scores.
+
+**As an additional safeguard, QC is also performed on processed outputs** using tools such as <a href="../brainswipes" target="_blank">BrainSwipes</a>. If processed data are flagged during this stage, the corresponding raw data are re-reviewed and QC decisions are corrected if necessary. This process ensures that the majority of the data included in the release is of high quality without additional delays in data release.
 
 <table class="compact-table-no-vertical-lines">
 <i>Manual QC Metrics</i>
@@ -459,7 +462,6 @@ Automated metrics flag series for manual review using multivariate prediction an
 </tr>
 </tbody>
 </table>
-
 
 ## References
 <div class="references">

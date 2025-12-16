@@ -11,7 +11,8 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>LUCI TO DO</p> 
+<p>LUCI TO DO - also add that T2-only subjects will be missing QC as well and add summary stats. link to section describing ongoing release of brainswipes via private release notes</p> 
+<p>BrainSwipes QC scores are available for all release data with the exception of visit V02 data processed using Infant FreeSurfer for surface reconstruction, which is not advised for use in analysis - see <a href="../mri-proc/#warning">Data Warning</a>.</p>
 </div>
 
 Manual visual inspection remains the gold standard for detecting artifacts in structural, functional (e.g., XCP-D), and diffusion (e.g., QSIPrep) derivatives. To support this, derivative visual reports are integrated into [BrainSwipes](https://brainswipes.us/about), a gamified, crowdsourced QC platform built on the open-source [Swipes For Science](https://swipesforscience.org/) framework. BrainSwipes provides an intuitive interface for large-scale studies, guiding users through a short [tutorial](https://brainswipes.us/tutorial-select) before they evaluate images and classify them as pass or fail.
@@ -59,8 +60,6 @@ BrainSwipes QC results are provided as <a href="../../#mri">tabulated data</a>, 
 <li><code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code> - <i>T2w-based surface reconstruction (M-CRIB-S)</i></li>
 <li><code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code> - <i>T1w-based surface reconstruction (Infant FreeSurfer)</i></li>
 </ul>
-
-**Note that BrainSwipes QC scores should be available for all release data with the exception of visit V02 data processed using Infant FreeSurfer for surface reconstruction, which is not advised for use in analysis - see <a href="../mri-proc/#warning">Data Warning</a>.**
 
 ### Private Release Notes
 
