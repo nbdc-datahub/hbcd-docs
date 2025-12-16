@@ -54,7 +54,9 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 </p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <tfoot><tr><td colspan="3" style="word-wrap: break-word; white-space: normal; padding: 10px 8px 6px 8px;">
-  <sup><b>1</b></sup> Years are to 2 decimal places, calculated by dividing the number of whole months (rounded down) by 12</td></tr></tfoot>
+  <sup><b>1</b></sup> Years are to 2 decimal places, calculated by dividing the number of whole months (rounded down) by 12<br>
+  <sup><b>2</b></sup> The values for these variables are derived from V01 and carry forward. If there is a change at V04, then the V04 report is carried forward (from V04 - no back-population of data)
+  </td></tr></tfoot>
 <thead>
 <tr style="background-color: #f8f9f9;">
   <th style="width: 20%;">Construct</th>
@@ -86,12 +88,12 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <tr>
   <td>Mother education</td>
   <td><code>rc_mother_education</code></td>
-  <td>Derived from <code>sed_bm_demo_edu_001</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>) at V01</td>
+  <td>Derived from <code>sed_bm_demo_edu_001</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>)<sup><b>2</b></sup></td>
 </tr>
 <tr>
   <td>Total household income</td>
   <td><code>rc_mother_income</code></td>
-  <td>Derived from <code>sed_bm_demo_income_002</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>) at V01</td>
+  <td>Derived from <code>sed_bm_demo_income_002</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>)<sup><b>2</b></sup></td>
 </tr>
 <tr>
   <td>Recruitment site</td>
