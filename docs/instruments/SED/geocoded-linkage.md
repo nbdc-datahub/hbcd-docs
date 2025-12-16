@@ -1,9 +1,3 @@
-<i style="color: red;">Administrative notes:<br>
- - <a href="https://drive.google.com/open?id=114NYqSe--744iuNJ3hZCsA2tmIaAB-ku">Data dictionary shared by Chun</a>: geocoded variables given the address history<br>
-- some measures in ABCD documentation have data and responsible use warnings - should these be included for HBCD as well? eg: <a href="https://docs.abcdstudy.org/latest/documentation/non_imaging/le.html#le_l_nbhsoc">NaNDa</a> - Chun says that these can be left out for HBCD for now<br>
-- Per Chun, "geocoded linkage measure data were deliberately designed to be compatible with ABCD, but with appropriate year updates (many of ABCD variables tracing back to 2010 census, but HBCD is updated to 2020 census)." for documentation, we could: (1) just link to ABCD documentation as the draft does and make a qualifying statement above the table about year updates. (2) could add specific modifications made for HBCD compared to ABCD documentation as a separate column of the table. (3) add to a "HBCD Modificaations" section as we do for other measures</p>
-</i></p>
-
 # Linked External Data
 
 **Geocoded Linked External Data (GLED) - Residential Address History** connects participants’ residential and care place addresses to external datasets. The data is computed for all visits (V01-V06); the current release contains data for visit V01 (including prenatal period up to 1 year before EDD).
@@ -38,11 +32,13 @@ hbcd/
 
 **Geocoded Linked External Data (GLED)** are external datasets linked to participants’ residential addresses. They serve as proxy measures of cumulative social, economic, and environmental contexts that may help explain individual differences in development ([Fan et al. 2021](https://doi.org/10.1016/j.dcn.2021.101030)). At each study visit, the Birth Parent or Primary Caregiver reports the child’s residential address history. Study staff collect this information in person or remotely (completion time: 5–15 minutes).
 
-<table class="compact-table-no-vertical-lines">
+**Geocoded linkage measures were deliberately designed to be compatible with the ABCD Study data, with appropriate updates for year** (i.e. many of ABCD variables trace back to 2010 Census data, whereas HBCD is updated to 2020 Census data). The table below lists the geocoded measures included in the release for HBCD, categorized by domain, and associated links to detailed measure documentation available on the [ABCD Data Documentation site](https://docs.abcdstudy.org/latest/documentation/non_imaging/). See [Fan et al. 2021](https://doi.org/10.1016/j.dcn.2021.101030) for additional details regarding each domain/measure.
+
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead>
 <tr>
   <th>Measure</th>
-  <th>Relevant Variable Names</th>
+  <th>Relevant Variable Names in Table</th>
   <th>Link</th>
 </tr>
 </thead>
@@ -58,7 +54,7 @@ hbcd/
 </tr>
 <!-- Soil Pollution -->
 <tr>
-  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>SOIL POLLUTION</b></td>
+  <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>SOIL POLLUTION</b></td>
 </tr>
 <tr>
   <td>Soil Contamination Meaasures</td>
@@ -67,7 +63,7 @@ hbcd/
 </tr>
 <!-- Amenities & Services -->
 <tr>
-  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>AMENITIES & SERVICES</b></td>
+  <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>AMENITIES & SERVICES</b></td>
 </tr>
 <tr>
   <td>Neighborhood Socioeconomic Status and Demographics</td>
@@ -91,7 +87,7 @@ hbcd/
 </tr>
 <!-- Built Environment -->
 <tr>
-  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>BUILT ENVIRONMENT</b></td>
+  <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>BUILT ENVIRONMENT</b></td>
 </tr>
 <tr>
   <td>Building Density (EPA)</td>
@@ -120,7 +116,7 @@ hbcd/
 </tr>
 <!-- Community Health Burden -->
 <tr>
-  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>COMMUNITY HEALTH BURDEN</b></td>
+  <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>COMMUNITY HEALTH BURDEN</b></td>
 </tr>
 <tr>
   <td>Behavioral Health Measures (PLACES)</td>
@@ -130,7 +126,7 @@ hbcd/
 
 <!-- Natural Space and Satellite -->
 <tr>
-  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>NATURAL SPACE & SATELLITE</b></td>
+  <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>NATURAL SPACE & SATELLITE</b></td>
 </tr>
 <tr>
   <td>Measure of Land Cover and Tree Canopy (NLCD)</td>
@@ -139,7 +135,7 @@ hbcd/
 </tr>
 <!-- Neighborhood Social Factors -->
 <tr>
-  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>NEIGHBORHOOD SOCIAL FACTORS</b></td>
+  <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>NEIGHBORHOOD SOCIAL FACTORS</b></td>
 <tr>
   <td>Census Return (Anomie/Disenfranchisement/Social Capital)</td>
   <td><code>censusret_*</code></td>
@@ -162,7 +158,7 @@ hbcd/
 </tr>
 <!-- Neighborhood Composite Measures -->
 <tr>
-  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>NEIGHBORHOOD COMPOSITE MEASURES</b></td>
+  <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>NEIGHBORHOOD COMPOSITE MEASURES</b></td>
 <tr>
 <tr>
   <td>Area Deprivation Index (ADI)</td>
