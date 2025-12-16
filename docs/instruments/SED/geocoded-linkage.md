@@ -23,8 +23,9 @@
 <div class="alert-collapsible-content">
 <p>The geocoded variables should be considered as proxies for the exposure. Therefore, it is an estimates of the risk, which can differ from what is actually experienced by a given individual. In addition, researchers should not use any geospatial information to identify the actual geographical location.</p>
 </div>
+<p></p>
 
-The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD). The dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> (<i>see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details</i>) under <code>geocoded_linkage/</code>:
+The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD). The dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> (<i>see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details</i>) under <code>geocoding/</code>:
 
 <pre class="folder-tree">
 hbcd/
@@ -48,7 +49,7 @@ hbcd/
 <tbody>
 <!-- Air Pollution -->
 <tr>
-  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>AIR POLLUTION</b></td>
+  <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>AIR POLLUTION</b></td>
 </tr>
 <tr>
   <td>Satellite-based Particulate Measures</td>
