@@ -46,7 +46,19 @@
 </table>
 
 ## General Visit Information
-General visit information includes site, project, and information about missed visits and participant withdrawal:
+General visit information includes site, project, and information about missed visits and participant withdrawal.
+
+<div id="gen" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">General Visit Level Data Variables</span>
+  <a class="anchor-link" href="#gen" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
  <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
  <thead>
  <tr>
@@ -81,6 +93,7 @@ General visit information includes site, project, and information about missed v
  </tr>
  </tbody>
  </table>
+ </div>
 
 ## Substance Use Flags
 
