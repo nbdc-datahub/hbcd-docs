@@ -46,23 +46,8 @@
 </table>
 
 ## General Visit Information
- - Label, Stage, Date, Project, and Site
- - If the visit was missed and reason 
- - Withdrawal information (if the participant withdrew from the study, the reason, and date)
- - Protocol violation information (if there was a protocol exception and the date)
-
- <div id="vars" class="table-banner" onclick="toggleCollapse(this)">
-   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-   <span class="text-with-link">
-   <span class="text">General Visit Level Data Variables</span>
-   <a class="anchor-link" href="#vars" title="Copy link">
-   <i class="fa-solid fa-link"></i>
-   </a>
-   </span>
-   <span class="arrow">▸</span>
- </div>
- <div class="table-collapsible-content">
- <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+General visit information includes site, project, and information about missed visits and participant withdrawal:
+ <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
  <thead>
  <tr>
  <th>Name</th>
@@ -71,49 +56,35 @@
  </thead>
  <tbody>
   <tr>
- <td><code>par_visit_data_site</code></td>
+ <td>par_visit_data_site</td>
  <td>The candidate site.</td>
  </tr>
   <tr>
- <td><code>par_visit_data_project</code></td>
+ <td>par_visit_data_project</td>
  <td>The candidate project name.</td>
  </tr>
  <tr>
- <td><code>par_visit_data_participant_withdrawal</code></td>
+ <td>par_visit_data_participant_withdrawal</td>
  <td>Tells if the participant withdrawn from the study.</td>
  </tr>
- <tr>
- <td><code>par_visit_data_participant_withdrawal_date</code></td>
- <td>If withdrawn, the date.</td>
- </tr>
- <tr>
- <td><code>par_visit_data_participant_withdrawal_reason</code></td>
- <td>If withdrawn, the reason why.</td>
- </tr>
- <tr>
- <td><code>par_visit_data_protocol_exception</code></td>
- <td>Tells if there was a protocol exception.</td>
- </tr>
- <tr>
- <td><code>par_visit_data_protocol_exception_date</code></td>
- <td>If protocol exception, the date.</td>
- </tr>
   <tr>
- <td><code>par_visit_data_visit_missed</code></td>
+ <td>par_visit_data_visit_missed</td>
  <td>Tells if the visit was missed.</td>
  </tr>
+  <tr>
+ <td>par_visit_data_visit_missed_date</td>
+ <td>Date of missed visit</td>
+ </tr>
  <tr>
- <td><code>par_visit_data_reason_visit_missed</code></td>
+ <td>par_visit_data_reason_visit_missed</td>
  <td>If the visit was missed, the reason why.</td>
  </tr>
  </tbody>
  </table>
- </div>
-<p></p>
 
 ## Substance Use Flags
 
-Visit Level Data also includes **substance use flags**, which are single summary variables that indicate substance use status (yes/no) based on any positive reports from the following instruments:
+Visit Level Data also includes **substance use flags**, which are single-summary variables that indicate substance use status (yes/no) based on any positive reports from the following instruments:
 
  - The Timeline Follow Back (<a href="../../pregexp/su/tlfb" target="_blank">TLFB</a>) (self-reported use)
  - <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> when options 1 (*Neonatal Opioid Withdrawal Syndrome*) and/or 5 (*Fetal Alcohol Syndrome*) were selected for field `007` (self-reported use)
@@ -135,48 +106,76 @@ Visit Level Data also includes **substance use flags**, which are single summary
 <tr>
 <th>Name</th>
 <th>Description</th>
-</thead>
 </tr>
+</thead>
 <tbody>
 <tr>
-<td><code>par_visit_data_su_flag_bio_cannabinoid</code></td>
-<td>Substance Use in Urine Biosample - cannabinoid</td>
+<td>par_visit_data_su_flag_alcohol</td>
+<td style="word-wrap: break-word; white-space: normal;">Rolled up Alcohol flag from Biological Mother across sources (Biospecimen, TLFB Self-report, Health V2 FAS)</td>
 </tr>
 <tr>
-<td><code>par_visit_data_su_flag_bio_opioid</code></td>
-<td>Substance Use in Urine Biosample - opioid</td>
+<td>par_visit_data_su_flag_bio_bm_cannabinoid</td>
+<td>Substance Use in Urine Biosample from Biological Mother - cannabinoid</td>
 </tr>
 <tr>
-<td><code>par_visit_data_su_flag_bio_stim</code></td>
-<td>Substance Use in Urine Biosample - stimulant</td>
+<td>par_visit_data_su_flag_bio_bm_ethanol</td>
+<td>Substance Use in Urine Biosample from Biological Mother - ethanol</td>
 </tr>
 <tr>
-<td><code>par_visit_data_su_flag_healthv2_fas</code></td>
-<td>Substance Use in Health V2 instrument - FAS</td>
+<td>par_visit_data_su_flag_bio_bm_nicotine</td>
+<td>Substance Use in Urine Biosample from Biological Mother - nicotine</td>
 </tr>
 <tr>
-<td><code>par_visit_data_su_flag_healthv2_nows</code></td>
-<td>Substance Use in Health V2 instrument - NOWS</td>
+<td>par_visit_data_su_flag_bio_bm_opioid</td>
+<td>Substance Use in Urine Biosample from Biological Mother - opioid</td>
 </tr>
 <tr>
-<td><code>par_visit_data_su_flag_tlfb_alcohol</code></td>
-<td>Substance Use in TLFB instrument - alcohol</td>
+<td>par_visit_data_su_flag_bio_bm_stim</td>
+<td>Substance Use in Urine Biosample from Biological Mother - stimulant</td>
 </tr>
 <tr>
-<td><code>par_visit_data_su_flag_tlfb_cannabis</code></td>
-<td>Substance Use in TLFB instrument - cannabis</td>
+<td>par_visit_data_su_flag_cannabis</td>
+<td style="word-wrap: break-word; white-space: normal;">Rolled up Cannabis flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
 </tr>
 <tr>
-<td><code>par_visit_data_su_flag_tlfb_nicotine</code></td>
-<td>Substance Use in TLFB instrument - nicotine</td>
+<td>par_visit_data_su_flag_healthv2_ch_fas</td>
+<td>Substance Use in Health V2 instrument from Biological Mother - FAS</td>
 </tr>
 <tr>
-<td><code>par_visit_data_su_flag_tlfb_opioid</code></td>
-<td>Substance Use in TLFB instrument - opioid</td>
+<td>par_visit_data_su_flag_healthv2_ch_nows</td>
+<td>Substance Use in Health V2 instrument from Biological Mother - NOWS</td>
 </tr>
 <tr>
-<td><code>par_visit_data_su_flag_tlfb_stimulant</code></td>
-<td>Substance Use in TLFB instrument - stimulant</td>
+<td>par_visit_data_su_flag_nicotine</td>
+<td style="word-wrap: break-word; white-space: normal;">Rolled up Nicotine flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_opioid</td>
+<td style="word-wrap: break-word; white-space: normal;">Rolled up Opioid flag from Biological Mother across sources (Biospecimen, TLFB Self-report, Health V2 NOWS)</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_stimulant</td>
+<td style="word-wrap: break-word; white-space: normal;">Rolled up Stimulant flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_tlfb_bm_alcohol</td>
+<td>Substance Use in TLFB instrument from Biological Mother - alcohol</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_tlfb_bm_cannabis</td>
+<td>Substance Use in TLFB instrument from Biological Mother - cannabis</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_tlfb_bm_nicotine</td>
+<td>Substance Use in TLFB instrument from Biological Mother - nicotine</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_tlfb_bm_opioid</td>
+<td>Substance Use in TLFB instrument from Biological Mother - opioid</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_tlfb_bm_stimulant</td>
+<td>Substance Use in TLFB instrument from Biological Mother - stimulant</td>
 </tr>
 </tbody>
 </table>

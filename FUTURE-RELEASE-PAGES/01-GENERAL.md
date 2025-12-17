@@ -65,3 +65,30 @@ print(filtered_df.head())
 <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/illumina-gda-gwas-supplemental.csv"><i class="fa-solid fa-download"></i> Download participant list</a> 
 </p> 
 </div>
+
+## Visit info
+
+add to general table:
+
+ - Withdrawal information (if the participant withdrew from the study, the reason, and date)
+  - Protocol violation information (if there was a protocol exception and the date)
+
+
+```
+<tr>
+ <td><code>par_visit_data_participant_withdrawal_date</code></td>
+ <td>If withdrawn, the date.</td>
+ </tr>
+ <tr>
+ <td><code>par_visit_data_participant_withdrawal_reason</code></td>
+ <td>If withdrawn, the reason why.</td>
+ </tr>
+  <tr>
+ <td><code>par_visit_data_protocol_exception</code></td>
+ <td>Tells if there was a protocol exception.</td>
+ </tr>
+ <tr>
+ <td><code>par_visit_data_protocol_exception_date</code></td>
+ <td>If protocol exception, the date.</td>
+ </tr>
+```
