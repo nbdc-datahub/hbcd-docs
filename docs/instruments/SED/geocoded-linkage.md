@@ -15,7 +15,21 @@
   <span class="arrow">▸</span>
 </div>
 <div class="alert-collapsible-content">
-<p>The geocoded variables should be considered as proxies for the exposure. Therefore, it is an estimates of the risk, which can differ from what is actually experienced by a given individual. In addition, researchers should not use any geospatial information to identify the actual geographical location.</p>
+<p>As a condition of using these data, specified in the data use certification (DUC), you agreed not to identify any individual from whom data was obtained and not to identify their relatives.  To help maintain our participant’s anonymity, researchers should refrain from using geospatial information to identify actual geographic locations. To avoid identification, we have blurred the coded value to avoid any unique values that are shared by less than 10 individuals.</p>
+</div>
+
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</i></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>The geocoded variables were based on intersections between residential addresses reported by participants and geospatial databases built by environmental and neighborhood through publicly available geospatial database, including CDC and EPA. Therefore, the coded values represent estimates about potential exposures or experience given where the participants have spent their time. The accuracy of such estimates would be influenced by multiple factors, including the validity of the original geospatial databases. For detailed information about how original geospatial databases were built by publicly available geospatial databases, including CDC and EPA, please refer to the data dictionary where the link to the source data is provided.</p> 
 </div>
 <p></p>
 
