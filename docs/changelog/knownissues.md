@@ -35,6 +35,26 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </tbody>
 </table>
 
+## <a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr style="border-bottom:2px solid #ccc;">
+    <th>TABLE/DATA</th>
+    <th style="width: 1%; text-align: center;">FIX</th>
+    <th>KNOWN ISSUE</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>Visit Level Data<br><code>par_visit_data</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  The <code>visit_missed_date</code> variable data is incorrect (dates are inaccurate and also cases where a date is provided when a visit was not missed) - please do not use.
+  </td>
+</tr>
+</tbody>
+</table>
+
 ## <a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">

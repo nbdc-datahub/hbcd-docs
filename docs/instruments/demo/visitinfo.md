@@ -13,6 +13,12 @@
 
 ---------------------------------------------
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#demographics" target="_blank">see details</a>.</span>
+</div>
+<p></p>
+
 **Visit Level Data includes: [General Visit Information](#general-visit-information), [Substance Use Flags](#substance-use-flags), and [Cohort & Caregiver Types](#cohort-caregiver-types).**
 
 ## Age Of Child at Each Visit
