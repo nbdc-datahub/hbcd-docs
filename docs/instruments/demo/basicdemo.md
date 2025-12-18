@@ -54,8 +54,7 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 </p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <tfoot><tr><td colspan="3" style="word-wrap: break-word; white-space: normal; padding: 10px 8px 6px 8px;">
-  <sup><b>1</b></sup> Years are to 2 decimal places, calculated by dividing the number of whole months (rounded down) by 12<br>
-  <sup><b>2</b></sup> Values derived from V01 and carry forward. If there is a change at V04, then the V04 report is carried forward (from V04 - no back-population of data)
+  <sup><b>1</b></sup> Years are to 2 decimal places, calculated by dividing the number of whole months (rounded down) by 12
   </td></tr></tfoot>
 <thead>
 <tr style="background-color: #f8f9f9;">
@@ -66,19 +65,19 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 </thead>
 <tbody>
 <tr>
-  <td>Maternal Age at V01 (MAV01)</td>
+  <td>Maternal Age at V01</td>
   <td><code>mother_age_v01</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit. Derived from administrative records.</td>
+  <td style="word-wrap: break-word; white-space: normal;">MAV01: Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit. Derived from administrative records.</td>
 </tr>
 <tr>
-  <td>Maternal Age at Delivery (MAD)</td>
+  <td>Maternal Age at Delivery</td>
   <td><code>mother_age_delivery</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery. Derived from administrative records.</td>
+  <td style="word-wrap: break-word; white-space: normal;">MAD: Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery. Derived from administrative records.</td>
 </tr>
 <tr>
-  <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery (GAD)</td>
+  <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery</td>
   <td><code>gestational_age_delivery</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between the birth parent's <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB. Derived from administrative records. <span class="pill-badge">V02+</span></td>
+  <td style="word-wrap: break-word; white-space: normal;">GAD: Time elapsed (whole weeks, rounded down) between the birth parent's <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB. Derived from administrative records. <span class="pill-badge">V02+</span></td>
 </tr>
 <tr>
   <td><i class="fa-solid fa-baby"></i>&nbsp;Child sex</td>
@@ -88,12 +87,12 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <tr>
   <td>Mother education</td>
   <td><code>rc_mother_education</code></td>
-  <td>Derived from <code>sed_bm_demo_edu_001</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>) at V01<sup><b>2</b></sup></td>
+  <td>Derived from <code>sed_bm_demo_edu_001</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>) at V01</td>
 </tr>
 <tr>
   <td>Total household income</td>
   <td><code>rc_mother_income</code></td>
-  <td>Derived from <code>sed_bm_demo_income_002</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>) at V01<sup><b>2</b></sup></td>
+  <td>Derived from <code>sed_bm_demo_income_002</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>) at V01</td>
 </tr>
 <tr>
   <td>Recruitment site</td>
