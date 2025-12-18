@@ -29,6 +29,8 @@ For all toxicology screens, continuous variables should be interpreted with caut
 <p><b>Urinary Concentration Corrections</b><br>
 Urine concentrations vary by participant. Urinary concentration corrections can be made using creatinine results from sample validation or specific gravity. Creatinine values will be provided in a future release for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds (<i>see <a href="../../../changelog/knownissues/#biospecimen-omics" target="_blank">known issue</a></i>).</p>
 <p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
+<p><b>Negative Values in <code>bio_c_cot_u</b><br> 
+Note that there are negative values in the <code>bio_c_cot_u</b> variable. While technically not inaccurate, these will be converted to zeros in the next release.</p>
 </div>
 
 <div id="issues" class="issues-banner">
