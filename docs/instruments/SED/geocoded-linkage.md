@@ -138,7 +138,6 @@ hbcd/
   <td><code>places_*_preval</code></td>
   <td><a href="https://docs.abcdstudy.org/latest/documentation/non_imaging/le.html#le_l_places" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 </tr>
-
 <!-- Natural Space and Satellite -->
 <tr>
   <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>NATURAL SPACE & SATELLITE</b></td>
