@@ -413,10 +413,60 @@ Annual average (mcg/m^3) measure of <code>{X}</code>:<br>
 <td><code>svi_disability_{prcnt|prcntile}</code></td>
 <td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} of civilian noninstitutionalized population with a disability estimate</td>
 </tr>
+<tr>
+<td><code>svi_groupquarters_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} of persons in group quarters estimate</td>
+</tr>
+<tr>
+<td><code>svi_lesseng_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} of persons (age 5+) who speak English "less than well" estimate</td>
+</tr>
+<tr>
+<td><code>svi_minority_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} minority* estimate</td>
+</tr>
+<tr>
+<td><code>svi_mobilehomes_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} mobile homes estimate</td>
+</tr>
+<tr>
+<td><code>svi_nohsdiploma_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} of persons with no high school diploma (age 25+) estimate</td>
+</tr>
+<tr>
+<td><code>svi_novehicle_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} households with no vehicle available estimate</td>
+</tr>
+<tr>
+<td><code>svi_poverty_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} of persons below 150% poverty estimate</td>
+</tr>
+<tr>
+<td><code>svi_multiplehousing_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} of housing in structures with 10 or more units estimate</td>
+</tr>
+<tr>
+<td><code>svi_singlehousehold_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} of single-parent households with children under 18 estimate</td>
+</tr>
+<tr>
+<td><code>svi_theme{1|2|3|4}_prcntile</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Percentile ranking for Socioeconomic Status theme summary (1/2/3/4)</td>
+</tr>
+<tr>
+<td><code>svi_total_prcntile</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Overall percentile ranking</td>
+</tr>
+<tr>
+<td><code>svi_unemploy_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} of civilian (age 16+) unemployed estimate</td>
+</tr>
+<tr>
+<td><code>svi_uninsured_prcnt</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Percentage uninsured in the total civilian noninstitutionalized population estimate, 2018-2022 ACS</td>
+</tr>
 </tbody>
 </table>
 
 
-
-
-
+*Minority: Hispanic or Latino (of any race); Black and African American, Not Hispanic or Latino; American Indian and Alaska Native, Not Hispanic or Latino; Asian, Not Hispanic or Latino; Native Hawaiian and Other Pacific Islander, Not Hispanic or Latino; Two or More Races, Not Hispanic or Latino; Other Races, Not Hispanic or Latino
