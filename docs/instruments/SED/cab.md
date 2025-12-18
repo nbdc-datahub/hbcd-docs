@@ -17,7 +17,21 @@
   </div>
 </div>
 
----------------------------------------------                      
+---------------------------------------------               
+
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</i></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>Users should not attempt to create their own summary scores when less than 11 items are answered. Please refer to <a href="">Ford-Gilboe et al. 2016</a> for scoring guidance.</p> 
+</div>
 
 ## Administration & Quality Control
 
@@ -84,3 +98,5 @@ Language was updated to use gender-neutral terminology in the definition of inti
 <div class="references"> 
 <p>Ford-Gilboe, M., Wathen, C. N., Varcoe, C., MacMillan, H. L., Scott-Storey, K., Mantler, T., Hegarty, K., & Perrin, N. (2016). Development of a brief measure of intimate partner violence experiences: the Composite Abuse Scale (Revised)-Short Form (CASR-SF). <i>BMJ Open</i>, 6(12), e012824. <a href="https://doi.org/10.1136/bmjopen-2016-012824">https://doi.org/10.1136/bmjopen-2016-012824</a></p>  
 </div>
+
+
