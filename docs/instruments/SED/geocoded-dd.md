@@ -357,24 +357,66 @@ Annual average (mcg/m^3) measure of <code>{X}</code>:<br>
 </tr>
 <tr>
 <td><code>ssvi_{RACE-ETH}_prcnt</code></td>
-<td>Percentage population estimate of {RACE-ETH}</td>
+<td style="word-wrap: break-word; white-space: normal;">Percentage population estimate <code>{RACE-ETH}</code><br>
+<code>{RACE-ETH}</code> = <code>afam</code> (Black or African American); <code>aian</code> (American Indian and Alaska Native); <code>asian</code> (Asian); <code>his</code> (Hispanic or Latino); <code>nhpi</code> (Native Hawaiian/Pacific Islander); <code>white</code> (white)
+</td>
 </tr>
 <tr>
 <td><code>ssvi_{LANGUAGE}_prcnt</code></td>
 <td>Percentage of <code>{LANGUAGE}</code> speakers who indicated that they speak English less than "very well."<br>
-<code>{LANGUAGE}</code>= <code>rus</code> (Russian); <code>span</code> (Spanish); <code>chin</code> (Chinese); <code>kor</code> (Korean); <code>viet</code> (Vietnamese);</td>
+<code>{LANGUAGE}</code>= <code>rus</code> (Russian); <code>span</code> (Spanish); <code>chin</code> (Chinese); <code>kor</code> (Korean); <code>viet</code> (Vietnamese)</td>
+</tr>
+<tr>
+<td><code>ssvi_hosp_state_prop</code></td>
+<td>Number of hospitals</td>
+</tr>
+<tr>
+<td><code>ssvi_nocomp_prcnt</code></td>
+<td>Percentage population estimate persons with no computer access</td>
+</tr>
+<tr>
+<td><code>ssvi_noint_prcnt</code></td>
+<td>Percentage population estimate persons with no internet access</td>
+</tr>
+<tr>
+<td><code>ssvi_pcp_state_rate</code></td>
+<td>Primary care physicians per 100,000 people</td>
+</tr>
+<tr>
+<td><code>ssvi_pharm_state_prop</code></td>
+<td>Number of pharmacies</td>
+</tr>
+<tr>
+<td><code>ssvi_unins_prcnt</code></td>
+<td>Percentage population estimate persons without health insurance</td>
+</tr>
+<tr>
+<td><code>ssvi_urg_state_prop</code></td>
+<td>Number of urgent care clinics</td>
+</tr>
+<tr>
+<td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>Social Vulnerability Index (SVI)</b></td>
+</tr>
+<tr>
+<td><code>svi_17younger_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} of persons aged 17 and younger</td>
+</tr>
+<tr>
+<td><code>svi_65older_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} of persons aged 65 and older</td>
+</tr>
+<tr>
+<td><code>svi_crowding_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} households with more people than rooms estimate</td>
+</tr>
+<tr>
+<td><code>svi_disability_{prcnt|prcntile}</code></td>
+<td style="word-wrap: break-word; white-space: normal;">{Percentage/Percentile percentage} of civilian noninstitutionalized population with a disability estimate</td>
 </tr>
 </tbody>
 </table>
 
 
 
-{RACE-ETH} = 
 
-- afam = Black or African American
-- aian = American Indian and Alaska Native
-- asian = Asian
-- nhpi = Native Hawaiian/Pacific Islander
-- his = Hispanic or Latino
-- white = white
 
