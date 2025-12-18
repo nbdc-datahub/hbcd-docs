@@ -50,7 +50,7 @@ hbcd/
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">Click <a href="../gled-dd.html" target="_blank">here</a> for detailed description of each table variable.</span>
+  <span class="text">Click <a href="../gled-dd.html" target="_blank">Geocoded Linkage: Detailed Variable Descriptions</a> for detailed description of each table variable.</span>
 </div>
 <p></p>
 
