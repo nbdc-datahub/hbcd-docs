@@ -65,19 +65,19 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 </thead>
 <tbody>
 <tr>
-  <td>Maternal Age at V01</td>
+  <td>Maternal Age at V01 (MAV01)</td>
   <td><code>mother_age_v01</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">MAV01: Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit. Derived from administrative records.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit. Derived from administrative records.</td>
 </tr>
 <tr>
-  <td>Maternal Age at Delivery</td>
+  <td>Maternal Age at Delivery (MAD)</td>
   <td><code>mother_age_delivery</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">MAD: Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery. Derived from administrative records.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery. Derived from administrative records.</td>
 </tr>
 <tr>
-  <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery</td>
+  <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery (GAD)</td>
   <td><code>gestational_age_delivery</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">GAD: Time elapsed (whole weeks, rounded down) between the birth parent's <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB. Derived from administrative records. <span class="pill-badge">V02+</span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between the birth parent's <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB. Derived from administrative records. <span class="pill-badge">V02+</span></td>
 </tr>
 <tr>
   <td><i class="fa-solid fa-baby"></i>&nbsp;Child sex</td>
