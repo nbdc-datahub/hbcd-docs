@@ -148,7 +148,6 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
   <td style="word-wrap: break-word; white-space: normal;">
   ICD codes are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <i>Health V1- Medications</i>, while the <i>Health V2- Pregnancy</i> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>
 </td>
-
 </tr>
 <tr>
   <td>TLFB<br><code>pex_ch_tlfb</code></td>
@@ -158,6 +157,26 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
 </tr>
 </tbody>
 </table>
+
+#### LUCI NOTE: potential additional items to add
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr style="border-bottom:2px solid #ccc;">
+    <th style="width: 20%;">TABLE/DATA</th>
+    <th style="width: 1%; text-align: center;">FIX</th>
+    <th>KNOWN ISSUE</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>Health V1-Illness<br><code>pex_bm_health_preg__illness</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">All "highest temperature reported" items (e.g. <code>003__12</code>) are blank and wil be populated in the next release.
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
