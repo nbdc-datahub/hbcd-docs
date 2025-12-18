@@ -88,12 +88,12 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <tr>
   <td>Mother education</td>
   <td><code>rc_mother_education</code></td>
-  <td>Derived from <code>sed_bm_demo_edu_001</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>)<sup><b>2</b></sup></td>
+  <td>Derived from <code>sed_bm_demo_edu_001</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>) at V01<sup><b>2</b></sup></td>
 </tr>
 <tr>
   <td>Total household income</td>
   <td><code>rc_mother_income</code></td>
-  <td>Derived from <code>sed_bm_demo_income_002</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>)<sup><b>2</b></sup></td>
+  <td>Derived from <code>sed_bm_demo_income_002</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>) at V01<sup><b>2</b></sup></td>
 </tr>
 <tr>
   <td>Recruitment site</td>
