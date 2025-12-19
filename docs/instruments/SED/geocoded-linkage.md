@@ -48,18 +48,17 @@ hbcd/
 
 **Geocoded linkage measures were deliberately designed to be compatible with the ABCD Study data, with appropriate updates for year** (i.e. many of ABCD variables trace back to 2010 Census data, whereas HBCD is updated to 2020 Census data). The table below lists the geocoded measures included in the release for HBCD, categorized by domain, and associated links to detailed measure documentation available on the [ABCD Data Documentation site](https://docs.abcdstudy.org/latest/documentation/non_imaging/) (descriptions for each individual variable are available via this <a href="../gled-dd.html" target="_blank">supplemental table</a>). See [Fan et al. 2021](https://doi.org/10.1016/j.dcn.2021.101030) for additional details regarding each domain/measure.
 
+#### Geocoded Linkage Measures
 <div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See <a href="../gled-dd.html" target="_blank">Geocoded Linkage: Detailed Variable Descriptions</a> for detailed description of each table variable.</span>
+  <span class="emoji"><i class="fa-solid fa-table"></i></span>
+  <span class="text">See <a href="../gled-dd.html" target="_blank">supplemental table</a> for full descriptions for each variable.</span>
 </div>
 <p></p>
-
-#### Geocoded Linkage Measures
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead>
 <tr>
   <th>Measure By Domain</th>
-  <th>Relevant Variable Names in Table</th>
+  <th>Relevant Variables</th>
   <th>Link</th>
 </tr>
 </thead>
