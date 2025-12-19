@@ -11,9 +11,14 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>LUCI TO DO - also add that T2-only subjects will be missing QC as well and add summary stats. link to section describing ongoing release of brainswipes via private release notes</p> 
-<p>BrainSwipes QC scores are available for all release data with the exception of visit V02 data processed using Infant FreeSurfer for surface reconstruction, which is not advised for use in analysis - see <a href="../mri-proc/#warning">Data Warning</a>.</p>
+<p>The following groups are missing all or a large portion of BrainSwipes QC results in the release data:
+<ul>
+<li>V02 sessions processed with T1-based surface reconstruction (<a href="../mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">Infant FreeSurfer method</a>) within Infant fMRIPrep: ~70% of the visual reports across sessions are missing BrainSwipes QC scores. <i>Note, however, that for separate reasons we advise against using this data for analyses - see <a href="../mri-proc/#warning" target="_blank">Data Warning</a></i>.</li>
+<li>V02 sessions with only a T2w anatomical image present (that passes raw data QC), and no T1w: missing ALL BrainSwipes QC results in the release data.</li>
+</ul>
+These results can be found in the most up-to-date BrainSwipes results provided on a rolling basis between releases via the HBCD Private Release Notes - <a href="#private-release-notes">see details</a> below.</p>
 </div>
+<p></p>
 
 Manual visual inspection remains the gold standard for detecting artifacts in structural, functional (e.g., XCP-D), and diffusion (e.g., QSIPrep) derivatives. To support this, derivative visual reports are integrated into [BrainSwipes](https://brainswipes.us/about), a gamified, crowdsourced QC platform built on the open-source [Swipes For Science](https://swipesforscience.org/) framework. BrainSwipes provides an intuitive interface for large-scale studies, guiding users through a short [tutorial](https://brainswipes.us/tutorial-select) before they evaluate images and classify them as pass or fail.
 
@@ -65,8 +70,4 @@ BrainSwipes QC results are provided as <a href="../../#mri">tabulated data</a>, 
 
 BrainSwipes results will additionally be provided on a rolling basis between releases via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> (*only accessible for DUC-authorized users*). This is done to provide users with the most up-to-date QC results to inform their anaylses. Files are provided in the same format as the release data, nested under folders named with the date that the results were provided.
 
-**Maybe provide status?** eg no T2w-only sessions will have swipes, and vast majority of V02 processed via infant FS workflow are missing results as well 
-
-
-  <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/
-nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download latest BrainSwipes Results</a> <i>(available to DUC-authorized users via the )</i>
+<a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/brainswipes/"><i class="fa-solid fa-download"></i> &nbsp; Download BrainSwipes Results Folder</a>
