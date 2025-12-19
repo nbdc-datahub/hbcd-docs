@@ -51,7 +51,7 @@ hbcd/
 #### Geocoded Linkage Measures
 <div class="table-banner">
   <span class="emoji"><i class="fa-solid fa-table"></i></span>
-  <span class="text">See <a href="../gled-dd.html" target="_blank">supplemental table</a> for full descriptions for each variable.</span>
+  <span class="text">See <a href="../gled-dd.html" target="_blank">supplemental table</a> for full descriptions of each variable.</span>
 </div>
 <p></p>
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
