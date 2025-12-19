@@ -62,6 +62,8 @@ Any negative values present in the <code>bio_c_cot_u</code> variable are biologi
 
 These data are the results of urine toxicology assays. **Screening** results for substances are determined to be positive or negative based on predefined thresholds (**[Table 1](#urine-table1)**), or invalid - see [Validation Procedures](#validation). **Confirmatory tests** are used to confirm the results of screening for any substance analyte (e.g. **Amphetamine (`c_amp_u`)**), which are grouped into different classes by analyte screening tests and analyte confirmatory tests (**[Table 2](#urine-table2)**).
 
+Please note that as of May 19, 2025, USDTL removed the complex specimen validity algorithm that included pH and Nitrite to a simple creatinine measurement to determine the hydration of the urine specimens. As of May 19, 2025 urine samples were no longer assayed for sufentanil and USDTL migrated the initial test for fentanyl in urine from LDTD to immunoassay.
+
 <div id="urine-table1" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
