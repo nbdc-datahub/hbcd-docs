@@ -153,7 +153,20 @@ hbcd/
 
 ## M-CRIB-S & FreeSurfer Surface Reconstruction Methods
 
-Infant fMRIPrep supports two infant-specific surface reconstruction workflows (*[see details above](#nibabies)*): **M-CRIB-S** (used to process **V02** data) and **Infant FreeSurfer** (used to process **V02**, **V03**, and **V04** data). Derivatives include **unique hash IDs** to indicate which surface reconstruction method was used within Infant fMRIPrep for a given dataset:
+**Infant fMRIPrep derivatives include a hash ID that encodes the surface reconstruction workflow used for a given dataset.** For HBCD data, two Infant fMRIPrep surface reconstruction workflows are supported, each associated with a distinct hash ID.
+
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">Derivative Folders with Hash IDs</span>
+</div>
+<div class="notification-static-content">
+<p>Infant fMRIPrep and XCP-D can append a unique hash ID to derivative folder names and filenames to indicate the processing parameters used (e.g., via the <a href="https://nibabies.readthedocs.io/en/latest/usage.html#nibabies.cli.parser-_build_parser-other-options"><code>--output-layout multiverse</code></a> option).</p>
+<p>For HBCD data, Infant fMRIPrep derivatives include one of two hash IDs corresponding to the surface reconstruction workflow used. XCP-D derivatives include an additional hash ID, which is constant across all data because the XCP-D configuration does not vary.</p>
+</div>
+<p></p>
+
+Infant fMRIPrep supports two infant-specific surface reconstruction workflows (*[see details above](#nibabies)*). The workflow used depends on visit and age, and is reflected in the derivative hash ID:
+
 <table class="table-no-vertical-lines">
 <thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Visits <i>(Age Range in Months)</i></th> </tr> </thead>
 <tbody>
@@ -169,7 +182,7 @@ Infant fMRIPrep supports two infant-specific surface reconstruction workflows (*
 </tr> </tbody>
 </table>
 
-Below we summarize the processing workflows and resulting derivative folder names. Note that downstream outputs such as XCP-D include a second hash indicating the XCP-D processing configuration, which is always `0ef9c88a` for this release:
+Downstream XCP-D derivatives include a second hash ID (`0ef9c88a`) indicating the XCP-D processing configuration. This value is identical for all HBCD data because the XCP-D parameters were fixed. Below we summarize the processing workflows and resulting derivative folder names. 
 <p align="center">
   <img src="../images/proc-hashes.png" alt="Detailed MRI Processing Workflow">
 </p>
