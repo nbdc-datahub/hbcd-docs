@@ -171,8 +171,17 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
 <tr>
   <td>Health V1-Illness<br><code>pex_bm_health_preg__illness</code></td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">All "highest temperature reported" items (e.g. <code>003__12</code>) are blank and wil be populated in the next release.
-</td>
+  <td style="word-wrap: break-word; white-space: normal;">All "highest temperature reported" items (e.g. <code>003__12</code>) are blank and will be populated in the next release.</td>
+</tr>
+<tr>
+  <td>Health V2-Pregnancy<br><code>pex_bm_healthv2_preg</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  The following measure variables will be added for 2.1:<br>
+   - All "highest temperature reported" items (e.g. <code>003__12</code>, <code>illness_015__12</code>, etc.)<br>
+   - <code>exp__pnv_007__01</code><br>
+   - <code>exp__pnv_011</code> and <code>exp__pnv_012</code> (reporting aspirin use)
+   </td>
 </tr>
 </tbody>
 </table>
