@@ -46,7 +46,10 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Although the Bayley Scales of Infant and Toddler Development, Fourth Edition, is a well-established and validated measure of infant development, tests of this nature have historically had limited predictive validity for long-term neurocognitive status.</p> 
+<p><b>Missing Records</b><br>
+A subset of participants are missing the Bayley-4 records, i.e. the Administration field (<code>ncl_ch_bayley_administration</code>) has value of 'none'. However, these missing records may not be due to a lack of data collection for a given participant in the current release and therefore may be present in future releases.</p>
+<p><b>Limited Predictive Validity for Long-Term Neurocognitive Status</b><br>
+Although the Bayley Scales of Infant and Toddler Development, Fourth Edition, is a well-established and validated measure of infant development, tests of this nature have historically had limited predictive validity for long-term neurocognitive status.</p> 
 </div>
 
 <div id="issues" class="issues-banner">
