@@ -55,7 +55,7 @@
 <p><b>Data Interpretation</b><br>
 The ecPROMIS assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p> 
 <p><b>Administration at V05 (<i>&lt;1 year</i> vs. <i>1-5 years</i>)</b><br>
-At V05 (10–17 months), a small number of participants (N=11) were administered both the infant (<i>&lt;1 year</i>) and child (<i>1–5 years</i>) versions of the ecPROMIS Child–Caregiver Relationship Scale. Data from both instruments are valid. However, <b>when both versions are available at V05, users should use the 1–5 years version data for analyses</b>.</p>
+The standard measure for V05 (10–17 months) is the child (<i>1–5 years</i>) version of the ecPROMIS Child–Caregiver Relationship Scale. However, a small number of participants (N=11) were administered both the child and infant (<i>&lt;1 year</i>) versions at V05. Though data from both instruments are valid, <b>we recommend using the 1–5 years version data at V05 for analyses.</b></p>
 </div>
 
 ## Administration & Quality Control
