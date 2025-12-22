@@ -50,7 +50,7 @@ As of July 1, 2024, the nail processing workflow was updated to optimize specime
 
 ## Instrument Details
 
-For the USDTL assay, fingernail and toenail specimens are sorted by weight, and those weighing at least 20 mg undergo ELISA screening, followed by LCMSMS confirmation for presumptive positives, each requiring an additional 20 mg. If insufficient specimen remains for LCMSMS, the remnant ELISA extract is used for confirmation. Please note that as of May 19, 2025,  USDTL no longer assayed sufentanil in the nail samples.
+For the USDTL assay, fingernail and toenail specimens are sorted by weight, and those weighing at least 20 mg undergo ELISA screening, followed by LCMSMS confirmation for presumptive positives, each requiring an additional 20 mg. If insufficient specimen remains for LCMSMS, the remnant ELISA extract is used for confirmation.  Please note that as of November 2025, USDTL no longer assayed sufentanil in the nail samples.
 
 <img src="../images/Fig1_nails.png" width="70%" height="auto" class="center">
 
