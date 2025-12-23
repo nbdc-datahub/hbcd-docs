@@ -138,34 +138,6 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
 </tbody>
 </table>
 
-#### LUCI NOTE: potential additional items to add
-<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
-<thead style="background-color: #ff8a42cc; color: #695541ff;">
-<tr style="border-bottom:2px solid #ccc;">
-    <th style="width: 20%;">TABLE/DATA</th>
-    <th style="width: 1%; text-align: center;">FIX</th>
-    <th>KNOWN ISSUE</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td>Health V1-Illness<br><code>pex_bm_health_preg__illness</code></td>
-  <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">All "highest temperature reported" items (e.g. <code>003__12</code>) are blank and will be populated in the next release.</td>
-</tr>
-<tr>
-  <td>Health V2-Pregnancy<br><code>pex_bm_healthv2_preg</code></td>
-  <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">
-  The following measure variables will be added for 2.1:<br>
-   - All "highest temperature reported" items (e.g. <code>003__12</code>, <code>illness_015__12</code>, etc.)<br>
-   - <code>exp__pnv_007__01</code><br>
-   - <code>exp__pnv_011</code> and <code>exp__pnv_012</code> (reporting aspirin use)
-   </td>
-</tr>
-</tbody>
-</table>
-
 ## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging & EEG Data
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
