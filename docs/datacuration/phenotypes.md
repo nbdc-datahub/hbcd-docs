@@ -167,6 +167,61 @@ Tabulated data are provided in multiple formats to support a range of tools and 
 
 Each TSV or Parquet file in `/rawdata/phenotype/` has a corresponding **shadow matrix file** in the same format that record the reason for missing values (e.g., `Don't know`, `Decline to Answer`, `Logic Skipped`, etc.) in the phenotype data.
 
+
+<div id="sm-values" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Shadow Matrix Values</span>
+  <a class="anchor-link" href="#sm-values" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p><b>Possible Values Across Instruments</b><br>
+The following are standard possible values for missingness reason found in the shadow matrices across instruments.</p>
+<ul>
+<li><strong>Decline to Answer</strong> (e.g., participant declined to answer a question)</li>
+<li><strong>Don't Know</strong> (e.g., participant did not know the answer)</li>
+<li><strong>Missed Visit</strong> (e.g., participant did not attend a visit)</li>
+<li><strong>Missed Instrument</strong> (e.g., participant did not complete assessment)</li>
+<li><strong>Logic Skipped</strong> (e.g., question skipped due to branching logic)</li>
+<li><strong>Unknown Missing</strong> (e.g., reason for missing value unknown)</li>
+</ul>
+<p> Note that <b>for cases where an instrument was not administered</b>, this would be indicated in the shadow matrix as 'Unknown Missing' for blank entries (as well as 'Logic Skipped' for fields skipped due to branching logic). There is also an 'Administration' field for all instruments that indicates whether an instrument was administered or not for a given participant/visit.</p>
+<p><b>Special Cases</b></p>
+<table class="table-no-vertical-lines">
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><strong>BioSpecimens</strong>
+  <ul>
+    <li>Converted '-999' codes to "Please refer to corresponding categorical field for more details"</li>
+  </ul>
+</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><strong>Basic Demographics</strong>
+  <ul>
+    <li><code>{gestational|mother}_age_delivery</code>: Note indicating "Child's DOB not reported or available for participant" where applicable</li>
+    <li><a href="../../instruments/demo/basicdemo/#acs-derived-variables" target="_blank">ACS-derived fields</a>: Note indicating "Missing Information From Ripple" where applicable</li>
+  </ul> 
+</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><strong>Visit Level Data</strong>
+  <ul>
+    <li><b>General</b>: Note indicating “Data not available for participants at this timepoint” where applicable</li>
+    <li><b>Candidate Age (<code>candidate_age</code>)</b>: Note indicating "No candidate age for V01" where applicable</li>
+    <li><b>Gestational Age (<code>gestational_age</code>)</b>: Note indicating "Gestational Age at Administration is only at V01 and not calculated for V02 onwards" where applicable</li>
+  </ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+
 #### How They Work
 
 In the data files, categorical codes for non-responses such as “Don’t know” (`999`) and “Decline to answer” (`777`) are deliberately converted to blank cells. The original responses are converted to a missingness reason stored in the shadow matrix, which mirror the structure and column names of the original data file (i.e. each cell corresponds to the same cell in the associated data file):

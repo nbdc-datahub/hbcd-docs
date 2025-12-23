@@ -97,7 +97,6 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 <td style="word-wrap: break-word; white-space: normal;">Participants proceed to Level 2 irrespective of Level 1 answers;<br>
  Level 2 measures replaced with PROMIS-SF v1.0 <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Depression 8a questionnaire</a>;<br>
  Clinical alert is triggered if responses (items from 'I felt worthless' to 'I felt that nothing could cheer me up') exceed threshold of 32</td>
-</td>
 </tr>
 <tr>
 <td>Anger</td>
