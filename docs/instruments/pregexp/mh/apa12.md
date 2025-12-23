@@ -103,7 +103,8 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b><a href="https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1</a> items and scoring overview, including HBCD adaptations:</b></p>
+<p style="font-size: 1.0em;"><b><a href="https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1</a> items and scoring overview, including HBCD adaptations:</b></p>
+
 <table class="compact-table-no-vertical-lines">
 <tfoot><tr><td colspan="4"><b>*</b> <i>All items scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe</i></td></tr></tfoot>
 <thead>
@@ -195,7 +196,8 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 </tr>
 </tbody>
 </table>
-<p><b>Level two items and scoring overview, including HBCD adaptations. Scores were derived following linked documentation and as documented in the ‘Notes’ column.</b></p>
+
+<p style="font-size: 1.0em;"><b>Level 2 items and scoring overview, including HBCD adaptations:</b></p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
