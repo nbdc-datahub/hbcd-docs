@@ -47,7 +47,9 @@
 </div>
 <div class="warning-collapsible-content">
 <p><b>Missing Records</b><br>
-A subset of participants are missing the Bayley-4 records, i.e. the Administration field (<code>ncl_ch_bayley_administration</code>) has a value of 'None.' However, there are a variety of reasons why the data may be missing, therefore a value of 'None' does not mean that the Bayley was not administered. These data will be added in future releases as it becomes available.</p>
+All instrument tables include an <b>Administration</b> field indicating whether an instrument was administered for a given participant and visit. A value of <b>None</b> typically indicates that the instrument was not administered.  
+<br>
+An exception applies to third-party instruments, including Bayley-4. In rare cases, <b>None</b> may reflect delays between data acquisition, processing, and availability for import, rather than true non-administration. For participants administered the Bayley-4, but currently missing records, data are pending upload and will be included in a subsequent data release.</p>
 <p><b>Limited Predictive Validity for Long-Term Neurocognitive Status</b><br>
 Although the Bayley Scales of Infant and Toddler Development, Fourth Edition, is a well-established and validated measure of infant development, tests of this nature have historically had limited predictive validity for long-term neurocognitive status.</p> 
 </div>

@@ -167,11 +167,10 @@ Tabulated data are provided in multiple formats to support a range of tools and 
 
 Each TSV or Parquet file in `/rawdata/phenotype/` has a corresponding **shadow matrix file** in the same format that record the reason for missing values (e.g., `Don't know`, `Decline to Answer`, `Logic Skipped`, etc.) in the phenotype data.
 
-
 <div id="sm-values" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
-  <span class="text">Shadow Matrix Values</span>
+  <span class="text">All Possible Shadow Matrix Values</span>
   <a class="anchor-link" href="#sm-values" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -190,30 +189,40 @@ The following are standard possible values for missingness reason found in the s
 <li><strong>Unknown Missing</strong> (e.g., reason for missing value unknown)</li>
 </ul>
 <p> Note that <b>for cases where an instrument was not administered</b>, this would be indicated in the shadow matrix as 'Unknown Missing' for blank entries (as well as 'Logic Skipped' for fields skipped due to branching logic). There is also an 'Administration' field for all instruments that indicates whether an instrument was administered or not for a given participant/visit.</p>
-<p><b>Special Cases</b></p>
+<p><b>Special Cases</b><br>
+The following domains/instruments have additional unique shadow matrix values used where applicable:</p>
 <table class="table-no-vertical-lines">
+<thead>
+<tr>
+<th>Table(s)</th>
+<th>Unique Shadow Matrix Values [<i>+Variable Name If Specific</i>]</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><strong>BioSpecimens</strong>
+<td><strong>BioSpecimens (<i>All</i>)</strong></td>
+<td style="word-wrap: break-word; white-space: normal;">
   <ul>
-    <li>Converted '-999' codes to "Please refer to corresponding categorical field for more details"</li>
+    <li><i>"Please refer to corresponding categorical field for more details"</i></li>
   </ul>
 </td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><strong>Basic Demographics</strong>
+<td><strong>Basic Demographics</strong></td>
+<td style="word-wrap: break-word; white-space: normal;">
   <ul>
-    <li><code>{gestational|mother}_age_delivery</code>: Note indicating "Child's DOB not reported or available for participant" where applicable</li>
-    <li><a href="../../instruments/demo/basicdemo/#acs-derived-variables" target="_blank">ACS-derived fields</a>: Note indicating "Missing Information From Ripple" where applicable</li>
+    <li><i>"Child's DOB not reported or available for participant"</i> [<code>{gestational|mother}_age_delivery</code>]</li>
+    <li><i>"Missing Information From Ripple"</i> [<a href="../../instruments/demo/basicdemo/#acs-derived-variables" target="_blank">ACS-derived fields</a>]</li>
   </ul> 
 </td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><strong>Visit Level Data</strong>
+<td><strong>Visit Level Data</strong></td>
+<td style="word-wrap: break-word; white-space: normal;">
   <ul>
-    <li><b>General</b>: Note indicating “Data not available for participants at this timepoint” where applicable</li>
-    <li><b>Candidate Age (<code>candidate_age</code>)</b>: Note indicating "No candidate age for V01" where applicable</li>
-    <li><b>Gestational Age (<code>gestational_age</code>)</b>: Note indicating "Gestational Age at Administration is only at V01 and not calculated for V02 onwards" where applicable</li>
+    <li><i>"Data not available for participants at this timepoint"</i></li>
+    <li><i>"No candidate age for V01"</i> [<code>candidate_age</code>]</li>
+    <li><i>"Gestational Age at Administration is only at V01 and not calculated for V02 onwards"</i> [<code>gestational_age</code>]</li>
   </ul>
 </td>
 </tr>
