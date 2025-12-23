@@ -6,10 +6,9 @@
 ### 2.1 Participant Data
 ##### Multiple Birth Participants
 Family/maternal-level data is only present for the Main Child across instruments. In the future, HBCD Main Child data will be copied to the sibling profile (e.g. HBCD Multiple Birth - Sibling) for non-child-specific elements so that users won't have to populate these fields themselves. *See [Blank Fields in Sibling Data (Multiple Birth Cohorts)](../instruments/demo/visitinfo.md#warning) for details.*      
-In addition, a new Data Dictionary element (***familyID***) will be incorporated in a future release to help identify siblings (Release # TBD).
+In addition, a new Data Dictionary element (***familyID***) will be incorporated to help identify siblings (Release # TBD).
 
 ### 2.1 Existing Study Data Updates
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
 <thead>
 <th>Domain</th>
@@ -18,17 +17,22 @@ In addition, a new Data Dictionary element (***familyID***) will be incorporated
 </thead>
 <tbody>
 <tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
-  <td>DICOMs</td>
-  <td style="word-wrap: break-word; white-space: normal;">
-  Addition of <strong>source DICOMs</strong> for <a href="../../datacuration/file-based-data/#raw-bids" target="_blank">raw BIDS</a> for all imaging modalities.</td>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-id-card" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Demographics</span></span></td>
+  <td>Visit Level Data (<code>par_visit_data</code>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Addition of <code>visit_missed_date</code> variable (date of missed visits)</td>
 </tr>
 <tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Physical Health</span></span></td>
-  <td>Growth<br><code>ph_ch_anthro</code></td>
+  <td>Growth (<code>ph_ch_anthro</code>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Addition of age-based z-scores & sex-specific birth weight for gestational age - <a href="../../instruments/physhealth/growth/#warning">see details</a></td>
+</tr>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
+  <td>DICOMs</td>
   <td style="word-wrap: break-word; white-space: normal;">
-  Addition of age-based z-scores, including addition of sex-specific birth weight for gestational age centiles and z-scores - <a href="../../instruments/physhealth/growth/#warning">see details</a></td>
+  Addition of source DICOMs for <a href="../../datacuration/file-based-data/#raw-bids" target="_blank">raw BIDS</a> for all imaging modalities</td>
 </tr>
 </tbody>
 </table>
+
 
