@@ -35,6 +35,12 @@ The HBCD study includes four electroencephalography (EEG) tasks collected during
 <p>It is important to use these data in a manner which takes into account that physical and neurological differences between groups are not necessarily representative of intrinsic qualities of a given demographic  group. Discussions around data patterns should be sensitive to societal factors. In addition, it is important to note that variation within demographic populations is greater than variation across populations. Demographic markers are categorical proxies that cannot capture or explain the causal mechanisms that may account for evident differences.</p>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#imaging-eeg-data" target="_blank">see details</a>.</span>
+</div>
+<p></p>
+
 EEG release data include both **file-based** (raw and processed data files in modality-specific formats) and **tabulated** (instrument and derived data in a standardized table format) data.      
 <i>See the <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a full explanation of these data types.</i>
 
