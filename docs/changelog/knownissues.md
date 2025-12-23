@@ -188,7 +188,7 @@ This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files
   <td>EEG</td>
   <td><b>2.1</b></td>
   <td style="word-wrap: break-word; white-space: normal;">Three V04 sessions in the HBCD-MADE pipeline derivatives for FACE and MMN tasks  are missing corresponding tabulated data. File-based data should therefore be used for analyses. Impacted participant IDs are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>:<br>
-  <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/eeg-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a></td>
+  <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/eeg-missing-tabulated-MADE-outputs-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a></td>
 </tr>
 </tbody>
 </table>
