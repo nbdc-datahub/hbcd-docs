@@ -237,7 +237,7 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 <tr>
 <td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Sleep_Scoring_Manual.pdf" target="_blank">Sleep</a></td>
 <td style="word-wrap: break-word; white-space: normal;">apa_2_sleep_001-apa_2_sleep_008</td>
-<td style="word-wrap: break-word; white-space: normal;">sum all items (<b>note that items 2 and 8 are reverse scored</b>); look up t-score</td>
+<td style="word-wrap: break-word; white-space: normal;">sum all items (<b>note that items 2 and 8 are reverse-scored</b>); look up t-score</td>
 <td style="word-wrap: break-word; white-space: normal;">All items must be answered in order to produce a valid score using the scoring tables</td>
 </tr>
 <tr>
