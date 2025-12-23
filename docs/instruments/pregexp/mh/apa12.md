@@ -197,7 +197,7 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 </tbody>
 </table>
 
-<p style="font-size: 1.0em;"><b>Level 2 items and scoring overview, including HBCD adaptations:</b></p>
+<p style="font-size: 1.0em;"><b><a href="https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures">Level 2</a> items and scoring overview, including HBCD adaptations:</b></p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
