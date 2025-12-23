@@ -16,7 +16,6 @@
 **Visit Level Data includes: [General Visit Information](#general-visit-information), [Substance Use Flags](#substance-use-flags), and [Cohort & Caregiver Types](#cohort-caregiver-types).**
 
 ## Age Of Child at Each Visit
-*Note that it is possible, in rare cases, for a child to be outside of the age range specified for a given visit.*
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>

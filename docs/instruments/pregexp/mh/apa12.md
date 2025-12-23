@@ -66,7 +66,116 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 
 <img src="../DSM-5Level2Cross-CuttingSymptomMeasures.png" width="90%" height="auto" class="center">
 
-**Level 1** includes 1 - 2 questions for each of the first 11 mental health domains displayed in the table above (Depression, Anger, Mania, Anxiety, Somatic Symptoms, Suicidal Ideation, Psychosis, Sleep Disturbance, Memory, Repetitive Behaviors, Dissociation). When symptoms were reported for Level 1, participants were subsequently administered corresponding **Level 2** measures, which asked about additional symptoms associated with the following 8 mental health domains: Anxiety, Anger, Depression, Mania, Personality, Repetitive Behavior, Sleep, and Somatic symptoms. 
+**Level 1** includes 1 - 2 questions for each of the first 11 mental health domains displayed in the table above (*Depression* through *Dissociation*). When symptoms were reported for Level 1, participants were subsequently administered corresponding **Level 2** measures, which asked about additional symptoms associated with the following 8 mental health domains: *Depression*, *Anger*, *Mania*, *Anxiety*, *Somatic Symptoms*, *Sleep*, *Repetitive Behavior*, and *Personality*. 
+
+<div id="table-summary" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-table"></i></span>
+  <span class="text-with-link">
+  <span class="text">Table Summary of Mental Health Domains Assessed By Levels 1/2 & HBCD Modifications</span>
+  <a class="anchor-link" href="#table-summary" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><i>*Unless specified otherwise, Level 2 measures are only administered when symptoms are reported for Level 1</i></p>
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>Domain</th>
+<th style="text-align:center;">Level 1</th>
+<th style="text-align:center;">Level 2*</th>
+<th>HBCD Modifications</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Depression</td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="word-wrap: break-word; white-space: normal;">Participants proceed to Level 2 irrespective of Level 1 answers;<br>
+ Level 2 measures replaced with PROMIS-SF v1.0 <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Depression 8a questionnaire</a>;<br>
+ Clinical alert is triggered if responses (items from 'I felt worthless' to 'I felt that nothing could cheer me up') exceed threshold of 32</td>
+</td>
+</tr>
+<tr>
+<td>Anger</td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td></td>
+</tr>
+<tr>
+<td>Mania</td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td></td>
+</tr>
+<tr>
+<td>Anxiety</td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td></td>
+</tr>
+<tr>
+<td>Somatic Symptoms</td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td>Participants proceed to Level 2 irrespective of Level 1 answers</td>
+</tr>
+<tr>
+<td>Suicidal Ideation</td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
+<td style="word-wrap: break-word; white-space: normal;">Clinical alert is triggered if response to self-harm question exceeds threshold of 0</td>
+</tr>
+<tr>
+<td>Psychosis</td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
+<td></td>
+</tr>
+<tr>
+<td>Sleep Disturbance</td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="word-wrap: break-word; white-space: normal;">
+ Level 2 symptom measures replaced with PROMIS-SF v1.0 <a href="https://heal.nih.gov/files/CDEs/2024-07/promis-sleep-disturbance-8a-crf.pdf">Sleep Disturbance 8a</a></td>
+</tr>
+<tr>
+<td>Memory</td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
+<td></td>
+</tr>
+<tr>
+<td>Repetitive Behaviors</td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td></td>
+</tr>
+<tr>
+<td>Dissociation</td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
+<td></td>
+</tr>
+<tr>
+<td>Personality Inventory</td>
+<td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+<td style="word-wrap: break-word; white-space: normal;">Participants proceed to Level 2 without completing Level 1;<br>
+Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Personality Inventory for DSM-5 Brief</a>, which assesses 5 personality trait domains (<i>Negative Affect, Detachment, Antagonism, Disinhibition, & Psychoticism</i>)</td>
+</tr>
+<tr>
+<td>Substance Use</td>
+<td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
+<td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
+<td style="word-wrap: break-word; white-space: normal;">Domain excluded (SU is measured by a separate set of instruments, e.g. ASSIST, Substance Use Patterns, & TLFB)</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -88,8 +197,6 @@ Gating was adapted for the HBCD study population so that participants proceeded 
 This measure was modified to alert HBCD study staff if responses to the Level 1 APA self-harm question ('Thoughts of actually hurting yourself?') or Level 2 APA Depression questionnaire (items from 'I felt worthless' to 'I felt that nothing could cheer me up') exceed thresholds of 0 and 32, respectively.</p>
 <p><b>Response Option Changes</b><br>
 For HBCD, the response option ‘Decline to answer’ was added to all questions. The response option ‘Don’t know’ was also included at the beginning of data collection, but was subsequently removed. Questions answered with ‘Decline to answer’ or ‘Don’t know’ are marked as missing.</p> 
-
-<p>luci note: could also show info as table to make info more straightforward - <a href="../temp" target="_blank">see example</a></p>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
