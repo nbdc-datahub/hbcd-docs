@@ -360,7 +360,7 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 <td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf" target="_blank">Personality</a></td>
 <td style="word-wrap: break-word; white-space: normal;">apa_2_pers_001-apa_2_pers_025</td>
 <td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
-<td style="word-wrap: break-word; white-space: normal;">Six missing item, pro-rate ((raw score *25)/(number answered)). Seven or more missing items should not be scored</td>
+<td style="word-wrap: break-word; white-space: normal;">Six missing items, pro-rate ((raw score *25)/(number answered)). Seven or more missing items should not be scored</td>
 </tr>
 </tbody>
 </table>
