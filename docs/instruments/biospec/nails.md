@@ -54,7 +54,7 @@ For the USDTL assay, fingernail and toenail specimens are sorted by weight, and 
 
 <img src="../images/Fig1_nails.png" width="70%" height="auto" class="center">
 
-Based on the predefined threshold outlined in [Table 1](#nails-table1), a confirmatory test result for any substance analyte is determined to be positive, negative, or invalid (*QNS* i.e. *quantity not sufficient*). Substance analytes (e.g. **Amphetamine (`c_amp_n`)**) are grouped into different classes by analyte screening tests and confirmatory tests (**[Table 2](#nails-table2)**). 
+Based on the predefined threshold outlined in [Table 1](#nails-table1), a confirmatory test result for any substance analyte is determined to be positive, negative, or invalid (*QNS* i.e. *quantity not sufficient*). Substance analytes (e.g. **Amphetamine/`c_amp_n`)**) are grouped into different classes by analyte screening tests and confirmatory tests (**[Table 2](#nails-table2)**). 
 
 <div id="nails-table1" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
