@@ -35,6 +35,26 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </tbody>
 </table>
 
+
+
+## <a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics 
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr style="border-bottom:2px solid #ccc;">
+    <th>DATA</th>
+    <th style="width: 1%; text-align: center;">FIX</th>
+    <th>KNOWN ISSUE</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>Basic Demographics</td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">The ACS Child race & ethnicity with multiracial aggregation by ethnicity (<code>child_ethnoracial_acs_by_multi_ethnicity</code>) are largely incorrectly coded as '7' (<i>Unknown</i>), so please do not use this data. Users may calculate the correct values themselves from the Child ethnicity and race (<code>child_{ethnicity|race}</code>) fields based on the logic described under <a href="../../instruments/demo/basicdemo/#fedstandards" target="_blank">ACS Combined Race & Ethnicity Logic</a>. Note that '7' <i>is</i> the correct value for all participants at V01 (as the child is not born yet).</td>
+</tr>
+</tbody>
+</table>
+
 ## <a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">

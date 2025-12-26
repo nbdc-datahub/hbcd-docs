@@ -30,6 +30,12 @@
 <p>Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race/ethnicity variables as a proxy for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.</p>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#demographics" target="_blank">see details</a>.</span>
+</div>
+<p></p>
+
 ## Details
 
 <p>
@@ -131,7 +137,7 @@ Race and ethnicity variables are either computed from administrative records col
 <tr style="background-color: #f9f9f9;">
   <td><i class="fa-solid fa-baby"></i>&nbsp;Child race</td>
   <td><code>child_race</code></td>
-  <td>Standard ACS race item. <span class="pill-badge">V02+</span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Standard ACS race item. <span class="pill-badge">V02+</span></td>
 </tr>
 <tr style="background-color: #ffffff;">
   <td><i class="fa-solid fa-baby"></i>&nbsp;Child race &amp; ethnicity<br>– multiracial aggregation by ethnicity</td>
@@ -185,13 +191,78 @@ Race and ethnicity variables are either computed from administrative records col
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>ACS combined variables are constructed from ACS race/ethnicity screening items following current federal standards:</p>
+<p><b>ACS combined variables are constructed from ACS race/ethnicity screening items following current federal standards:</b></p>
 <ul>
-<li>Participants identifying as <em>Hispanic or Latino</em> are categorized as such regardless of race.</li>
-<li>Individuals selecting more than one race are categorized as <strong>multiracial</strong>.</li>
-<li>Multiracial individuals are subcategorized by <strong>ethnicity</strong> (<em>Hispanic</em> vs. <em>non-Hispanic</em>)
-  and <strong>race</strong> (<em>Black/African American</em> vs. <em>non-Black/African American</em>).</li>
+<li><b>Hispanic or Latino</b> participants are categorized as such regardless of race.</li>
+<li><strong>Multiracial</strong> individuals (more than one race selected) are subcategorized in one of two ways:
+  <ul>
+    <li><strong>Ethnicity</strong>: Participants identifying as <em>Hispanic or Latino</em> are categorized as <em>Multiracial (Hispanic)</em> regardless of race</li>
+    <li><strong>Race</strong>: Non-Hispanic multiracial individuals are subcategorized based on if <em>Black/African American</em> is one of their selected identities regardless of other races selected: <em>Black (non-Hispanic)</em> vs. <em>Multiracial (non-Hispanic)</em></li>
+    </ul>
+</li>
 </ul>
+
+<p><b>Value Labels for Child ACS Race & Ethnicity Variables:</b></p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr>
+    <th>Value</th>
+    <th>Child ethnicity</th>
+    <th>Child race</th>
+    <th>Child race & ethnicity– multiracial aggregation by ethnicity</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td>Hispanic</td>
+<td>White</td>
+<td>Hispanic</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td>Non-Hispanic</td>
+<td>Black or African American</td>
+<td>White (non-Hispanic)</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Unknown</td>
+<td>American Indian or Alaskan Native</td>
+<td>Asian/Pacific Islander (non-Hispanic)</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td>&nbsp;</td>
+<td>Asian</td>
+<td>Black (non-Hispanic)</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td>&nbsp;</td>
+<td>Native Hawaiian or other Pacific Islander</td>
+<td>Multiracial (Hispanic)</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td>&nbsp;</td>
+<td>Two or More Races</td>
+<td>Multiracial (non-Hispanic)</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td>&nbsp;</td>
+<td>Other race</td>
+<td>Other (non-Hispanic)</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td>&nbsp;</td>
+<td>Unknown</td>
+<td>Unknown</td>
+</tr>
+</tbody>
+</table>
 </div>
 <p></p>
 
