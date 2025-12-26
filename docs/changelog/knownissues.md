@@ -39,18 +39,22 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr style="border-bottom:2px solid #ccc;">
-    <th>TABLE/DATA</th>
+    <th>DATA</th>
     <th style="width: 1%; text-align: center;">FIX</th>
     <th>KNOWN ISSUE</th>
   </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Urinary Creatinine<br><code>bio_bm_biosample_urine_results</code></td>
+  <td rowspan="2">Urine</td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
-  Creatinine results (<code>bio_creat_u</code>) and units (<code>bio_creat_u_units</code>) are currently excluded due to presence of values outside of the expected range and will be-incorporated in the next release.
+  Creatinine results and units fields (<code>bio_bm_biosample_urine_results_bio_creat_u{_units}</code>) are currently excluded due to presence of values outside of the expected range and will be-incorporated in the next release.
   </td>
+</tr>
+<tr>
+  <td><b>TBD</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Data Error: <code>bio_bm_biosample_urine_results_bio_c_aha_u</code> appears to contain incorrect values for some rows - further details to be added as more info becomes available.</td>
 </tr>
 </tbody>
 </table>
