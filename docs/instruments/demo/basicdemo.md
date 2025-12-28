@@ -262,6 +262,7 @@ Race and ethnicity variables are either computed from administrative records col
 </tr>
 </tbody>
 </table>
+<span><i>Note: combined variables for the Child currently only include multiracial aggregation by <b>ethnicity</b>.</i></span>
 </div>
 <p></p>
 
