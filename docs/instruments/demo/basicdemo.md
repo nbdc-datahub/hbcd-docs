@@ -201,8 +201,9 @@ Race and ethnicity variables are either computed from administrative records col
     </ul>
     </li>
 </ul>
-<p><b>Value Labels for Child/Mother ACS Race, Ethnicity, & Combined Race & Ethnicity Variables:</b></p>
+<p><b>Value Labels for Child/Mother ACS Race, Ethnicity, & Combined Race & Ethnicity<b>*</b> Variables:</b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tfoot><tr><td colspan="4"><b>*</b> <i>Note: combined variables for the Child currently only include multiracial aggregation by <b>ethnicity</b>.</i></td></tr></tfoot>
 <thead>
   <tr>
     <th>Value</th>
@@ -262,7 +263,6 @@ Race and ethnicity variables are either computed from administrative records col
 </tr>
 </tbody>
 </table>
-<span><i>Note: combined variables for the Child currently only include multiracial aggregation by <b>ethnicity</b>.</i></span>
 </div>
 <p></p>
 
