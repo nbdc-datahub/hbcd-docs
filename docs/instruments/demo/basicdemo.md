@@ -191,25 +191,24 @@ Race and ethnicity variables are either computed from administrative records col
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b>ACS combined variables are constructed from ACS race/ethnicity screening items following current federal standards:</b></p>
+<p><b>ACS combined variables are constructed from ACS race and ethnicity screening items following current federal standards:</b></p>
 <ul>
-<li><b>Hispanic or Latino</b> participants are categorized as such regardless of race.</li>
-<li><strong>Multiracial</strong> individuals (more than one race selected) are subcategorized in one of two ways:
-  <ul>
-    <li><strong>Ethnicity</strong>: Participants identifying as <em>Hispanic or Latino</em> are categorized as <em>Multiracial (Hispanic)</em> regardless of race</li>
-    <li><strong>Race</strong>: Non-Hispanic multiracial individuals are subcategorized based on if <em>Black/African American</em> is one of their selected identities regardless of other races selected: <em>Black (non-Hispanic)</em> vs. <em>Multiracial (non-Hispanic)</em></li>
+<li>Participants who identify as <b>Hispanic or Latino</b> under ethnicity are categorized as <i>Hispanic</i> regardless of race.</li>
+<li>Individuals selecting more than one race are categorized as <b>Multiracial</b> and subcategorized by <b>ethnicity</b> and <b>race</b> (<code>*_ethnoracial_acs_by_multi_&lt;ethnicity/race&gt;</code>):
+    <ul>
+    <li><b>By ethnicity</b>: based on Hispanic identity as <i>Multiracial (Hispanic)</i> or <i>Multiracial (non-Hispanic)</i></li>
+    <li><b>By race</b>: based on Black/African American identity as <i>Multiracial (Black)</i> or <i>Multiracial (non-Black)</i></li>
     </ul>
-</li>
+    </li>
 </ul>
-
-<p><b>Value Labels for Child ACS Race & Ethnicity Variables:</b></p>
+<p><b>Value Labels for Child/Mother ACS Race, Ethnicity, & Combined Race & Ethnicity Variables:</b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <tr>
     <th>Value</th>
-    <th>Child ethnicity</th>
-    <th>Child race</th>
-    <th>Child race & ethnicity– multiracial aggregation by ethnicity</th>
+    <th>Ethnicity</th>
+    <th>Race</th>
+    <th>Race & ethnicity– multiracial aggregation by ethnicity/race</th>
   </tr>
 </thead>
 <tbody>
@@ -241,13 +240,13 @@ Race and ethnicity variables are either computed from administrative records col
 <td style="text-align: center;">4</td>
 <td>&nbsp;</td>
 <td>Native Hawaiian or other Pacific Islander</td>
-<td>Multiracial (Hispanic)</td>
+<td><i>By ethnicity:</i> Multiracial (Hispanic);<br><i>By race:</i> Multiracial (Black)</td>
 </tr>
 <tr>
 <td style="text-align: center;">5</td>
 <td>&nbsp;</td>
 <td>Two or More Races</td>
-<td>Multiracial (non-Hispanic)</td>
+<td><i>By ethnicity:</i> Multiracial (non-Hispanic);<br><i>By race:</i> Multiracial (non-Black)</td>
 </tr>
 <tr>
 <td style="text-align: center;">6</td>
