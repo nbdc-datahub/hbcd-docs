@@ -35,8 +35,6 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </tbody>
 </table>
 
-
-
 ## <a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics 
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">

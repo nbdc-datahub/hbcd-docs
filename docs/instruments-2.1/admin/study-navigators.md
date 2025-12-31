@@ -1,7 +1,3 @@
-<p style="color: red;">🚧 LUCI ADMIN NOTES:<br>
- - currently under RUD review: to be included in patch release 2.1
-</p>
-
 # Study Navigator Contact Form
 
 The **Study Navigator Contact Form** data is provided by the Study Navigator, or person who is offering Study Navigator services, during and/or between study visits (V01-V06).

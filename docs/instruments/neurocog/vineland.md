@@ -44,7 +44,8 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>The Q-Global version of the Vineland-3 is not currently available in Spanish therefore the Vineland-3 was only administered to those parents/caregivers who indicated adequate English proficiency for completing this instrument.</p> 
+<p>The Q-Global version of the Vineland-3 is not currently available in Spanish therefore the Vineland-3 was only administered to those parents/caregivers who indicated adequate English proficiency for completing this instrument.</p>
+<p>In addition, note that there are some participants who were administered the Vineland outside of the V05 age range of 10-17 months.</p>
 </div>
 
 ## Administration & Quality Control
