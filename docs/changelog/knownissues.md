@@ -152,10 +152,14 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
 </td>
 </tr>
 <tr>
-  <td>TLFB<br><code>pex_ch_tlfb</code></td>
+  <td rowspan="2">TLFB<br><code>pex_ch_tlfb</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   Participants enrolled postnatally (<i>HBCD Main Child- Postnatal Recruitment</i> or <i>HBCD Multiple Birth- Postnatal Recruitment</i> cohorts) reported TLFB on the wrong weeks. Weeks were either reported in TLFB versions 1 or 2, but should be reported in TLFB version 3 (<a href="../../instruments/pregexp/su/tlfb/#v3">see details</a>).</td>
+</tr>
+<tr>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">All week 8 & 9 V01 variables should be `NA` instead of '0' as these were not yet completed at this timepoint.</td>
 </tr>
 </tbody>
 </table>
