@@ -159,7 +159,7 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
 </tr>
 <tr>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">All week 8 & 9 V01 variables should be `NA` instead of '0' as these were not yet completed at this timepoint.</td>
+  <td style="word-wrap: break-word; white-space: normal;">The 'breakdown' fields (sub-categories of substances that are compiled for a substance category; e.g. 'wine', 'beer' and 'spirits' for the 'Alcohol' category) for weeks 8 & 9 at V01 should be `NA` instead of '0', as these were not yet completed at this timepoint. Note that the main substance categories are correct (i.e. values set to blank).</td>
 </tr>
 <tr>
   <td>EPDS<br><code>pex_bm_epds</code></td>
