@@ -12,7 +12,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The session folder <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files include the following QC metrics. <i>Note: <b>x</b> values for b<b>x</b> below include 0, 500, 1000, 2000, and 3000</i></p>
+<p>The session folder <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files include the following fields relevant to QC (other fields, such as <i>filename</i>, <i>site</i>, etc. not shown below). <i>Note: <b>x</b> values for b<b>x</b> below include 0, 500, 1000, 2000, and 3000</i></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <thead>
@@ -21,13 +21,9 @@
     <th>Description</th>
     </tr>
     </thead>
-     <tr>
-        <td>filename</td>
-        <td>Relative paths to files</td>
-    </tr>
     <tr>
-        <td>acq_time</td>
-        <td>Acquisition time</td>
+        <td>part_of_a_pair</td>
+        <td>Whether the DWI file is part of a pair</td>
     </tr>
     <tr>
         <td>loris_qc_status</td>
@@ -38,21 +34,9 @@
         <td>Whether file is selected for further processing</td>
     </tr>
     <tr>
-        <td>site</td>
-        <td>Site where the session data was collected</td>
-    </tr>
-    <tr>
-        <td>age</td>
-        <td>Age (in years) of participant at time of the scan</td>
-    </tr>
-    <tr>
-        <td>age_adjusted</td>
-        <td>Adjusted age (in days) based on the EDD</td>
-    </tr>
-    <tr>
-        <td>head_size</td>
-        <td>Head size at the time of the scan</td>
-    </tr>
+        <td>bad_philips_exam_card_values</td>
+        <td>Whether the QALAS exam card used for acquisition was incorrect</td>
+    </tr>        
     <tr>
     <td>nrev</td><td><span class="tooltip tooltip-right"><i class="fa-solid fa-eye"></i><span class="tooltiptext">Manual QC Metric</span></span> Number of manual QC reviewers</td>
     </tr>
@@ -86,12 +70,8 @@
         <td>Number of frames with line artifacts</td>
     </tr>
     <tr>
-        <td>line_&ltmax|mean&gt_score</td>
-        <td>Maximum/Mean line artifact score across frames</td>
-    </tr>
-    <tr>
-        <td>line_&ltmax|mean&gt_count</td>
-        <td>Maximum/Mean line artifact count across frames</td>
+        <td>line_&ltmax|mean&gt_&ltscore|count&gt</td>
+        <td>Maximum/Mean line artifact score/count across frames</td>
     </tr>
     <tr>
         <td>cutoff</td>
@@ -102,12 +82,8 @@
         <td>Dorsal/Ventral cutoff score</td>
     </tr>
     <tr>
-        <td>brain_&ltmean|std&gt</td>
-        <td>Mean/Standard deviation of image intensity within brain mask</td>
-    </tr>
-    <tr>
-        <td>brain_SNR</td>
-        <td>Signal-to-noise ratio (mean/stdev) of image intensity within brain mask</td>
+        <td>brain_&ltmean|std|SNR&gt</td>
+        <td>Mean/SD/SNR of image intensity within brain mask</td>
     </tr>
     <tr>
         <td>brain_&ltmin|max|median&gt</td>
@@ -122,12 +98,8 @@
         <td>Average framewise displacement/translation/rotation (mm)</td>
     </tr>
     <tr>
-        <td>max_d&ltx|y|z&gt</td>
-        <td>Maximum absolute x/y/z translation (mm)</td>
-    </tr>
-    <tr>
-        <td>max_r&ltx|y|z&gt</td>
-        <td>Maximum absolute x/y/z rotation (mm)</td>
+        <td>max_&ltdx|dy|dz|rx|ry|rz&gt</td>
+        <td>Maximum absolute x/y/z translation (<i>d</i>)/rotation (<i>r</i>) (mm)</td>
     </tr>
     <tr>
         <td>subthresh_&lt02|03|04&gt</td>
@@ -190,11 +162,7 @@
         <td>Mean/Median MD (mean diffusivity) in brain mask</td>
     </tr>
     <tr>
-        <td>max_nbad_frames_per_slice</td>
-        <td>Maximum number of outlier frames per slice</td>
-    </tr>
-    <tr>
-        <td>max_nbad_frames_per_frame</td>
+        <td>max_nbad_frames_per_&ltslice|frame&gt</td>
         <td>Maximum number of outlier frames per slice/frame</td>
     </tr>
     <tr>
@@ -210,12 +178,8 @@
         <td>Number of outlier frame-slices (dMRI)</td>
     </tr>
     <tr>
-        <td>nbad_frames</td>
-        <td>Number of frames with outlier slices (dMRI)</td>
-    </tr>
-    <tr>
-        <td>nbad_slices</td>
-        <td>Number of slices with outlier frames (dMRI)</td>
+        <td>nbad_&ltframes|slices&gt</td>
+        <td>Number of frames/slices with outlier slices/frames (dMRI)</td>
     </tr>
     <tr>
         <td>fwhm_y</td>
@@ -242,48 +206,28 @@
         <td>Number of outlier frame-slices for dMRI b=<b>x</b> frames</td>
     </tr>
     <tr>
-        <td>nbad_frames_b<b>x</b></td>
-        <td>Number of frames with outlier slices for dMRI b=<b>x</b> frames</td>
-    </tr>
-    <tr>
-        <td>nbad_slices_b<b>x</b></td>
-        <td>Number of slices with outlier frames for dMRI b=<b>x</b> frames</td>
+        <td>nbad_&ltframes|slices&gt_b<b>x</b></td>
+        <td>Number of frames/slices with outlier slices/frames for dMRI b=<b>x</b> frames</td>
     </tr>
     <tr>
         <td>ngood_frames_b<b>x</b></td>
         <td>Number of frames without outlier slices for dMRI b=<b>x</b> frames</td>
     </tr>
     <tr>
-        <td>FWHMx_b<b>x</b></td>
-        <td>FWHM spatial smoothness in x-axis (left-right) for b=<b>x</b> frames</td>
-    </tr>
-    <tr>
-        <td>FWHMy_b<b>x</b></td>
-        <td>FWHM spatial smoothness in y-axis (anterior-posterior) for b=<b>x</b> frames</td>
-    </tr>
-    <tr>
-        <td>FWHMz_b<b>x</b></td>
-        <td>FWHM spatial smoothness in z-axis (inferior-superior) for b=<b>x</b> frames</td>
+        <td>FWHM&lt;x|y|z&gt;_b<b>x</b></td>
+        <td>FWHM spatial smoothness in x/y/z-axis (L-R/A-P/I-S) for b=<b>x</b> frames</td>
     </tr>
     <tr>
         <td>tSNR_b<b>x</b></td>
         <td>Median temporal SNR in brain mask for for b=<b>x</b> frames</td>
     </tr>
     <tr>
-        <td>DTerr_rel_b<b>x</b></td>
-        <td>Median DTI RMS residual error for b=<b>x</b> frames across voxels relative to within-voxel RMS b=0 signal</td>
+        <td>&lt;DT|RSI&gt;err_rel_b<b>x</b></td>
+        <td>Median DTI/RSI RMS for b=<b>x</b> frames across voxels relative to within-voxel RMS b=0 signal</td>
     </tr>
     <tr>
-        <td>RSIerr_rel_b<b>x</b></td>
-        <td>Median RSI RMS residual error for b=<b>x</b> frames across voxels relative to within-voxel RMS b=0 signal</td>
-    </tr>
-    <tr>
-        <td>DTerr_rel</td>
-        <td>Median of DTI RMS residual error for all frames across voxels relative to within-voxel RMS signal</td>
-    </tr>
-    <tr>
-        <td>RSIerr_rel</td>
-        <td>Median RSI RMS residual error for all frames across voxels relative to within-voxel RMS signal</td>
+        <td>&lt;DT|RSI&gt;err_rel</td>
+        <td>Median of DTI/RSI RMS for all frames across voxels relative to within-voxel RMS signal</td>
     </tr>
     <tr>
         <td>NumberOfFilesMissing</td>
@@ -294,12 +238,8 @@
         <td>Number of head/neck/spine coil elements</td>
     </tr>
     <tr>
-        <td>brain_nvox_max</td>
-        <td>Number of voxels within brain mask at maximum image intensity</td>
-    </tr>
-    <tr>
-        <td>brain_fvox_max</td>
-        <td>Fraction of voxels within brain mask at maximum image intensity</td>
+        <td>brain_&lt;n|f&gt;vox_max</td>
+        <td>Number/Fraction of voxels within brain mask at maximum image intensity</td>
     </tr>
     <tr>
         <td>nonbrain_&ltmean|std|snr&gt</td>
@@ -312,6 +252,26 @@
     <tr>
         <td>NumberOfFilesExtra</td>
         <td style="word-wrap: break-word; white-space: normal;">Number of extra DICOM files received (non-image, corrupt, or extra files)</td>
+    </tr>
+    <tr>
+        <td>NumberOfFilesValid</td>
+        <td style="word-wrap: break-word; white-space: normal;">Number of DICOM files received (after excluding non-image corrupt or extra files, but before excluding files from final partial frame)</td>
+    </tr>
+    <tr>
+        <td>brain_entropy</td>
+        <td style="word-wrap: break-word; white-space: normal;">Entropy score of voxels within brain mask</td>
+    </tr>
+    <tr>
+        <td>qc_selection</td>
+        <td style="word-wrap: break-word; white-space: normal;">Whether the series is selected for manual QC</td>
+    </tr>
+    <tr>
+        <td>auto_qc_score</td>
+        <td style="word-wrap: break-word; white-space: normal;">Automated QC score of 1 (pass) or 0 (fail)</td>
+    </tr>
+    <tr>
+        <td>auto_qc_notes</td>
+        <td style="word-wrap: break-word; white-space: normal">Reason for automated QC failure</td>
     </tr>
 </tbody>
 </table>
