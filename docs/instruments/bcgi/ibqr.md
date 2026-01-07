@@ -170,10 +170,12 @@ Caregivers are asked to report on the infant’s behaviors on a 7-point Likert s
 Each domain score is calculated as the mean of all applicable scale items:</p>
 <ul>
   <li>Only items scored 1–7 are included (a response of “Does not apply” receives no numerical score and is therefore not included).</li>
-  <li>Items marked with an “R” are <strong>reverse-scored</strong> and already implemented in the HBCD scoring algorithm.</li>
+  <li>All item-level data is raw data. However, items marked with an “R” should be <strong>reverse-scored</strong> when calculating temperament scale scores (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition). This reverse-scoring is already included in the HBCD scoring algorithm.</li>
 </ul>
 <p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
 </p>
+
+
 </div>
 
 ## References
