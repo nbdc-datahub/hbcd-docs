@@ -192,7 +192,7 @@ Visit Level Data also includes **substance use flags**, which are single-summary
 ## Cohort & Caregiver Types
 
 ### HBCD Cohorts
-**Cohort** information (<code>par_visit_data_cohort</code>) includes cohort subtypes and caregiver type (*Type A-F* - [see details](#caregiver-types)) for each participant. Cohort subtypes are split into **Main Child** and **Multiple Birth**, with additional labeling for *Postnatal Recruits* (*PNR*) and Multiple Birth siblings (*Main Child* vs. *Sibling*):
+**Cohort** information (<code>par_visit_data_cohort</code>) includes cohort subtypes and caregiver type (*Type A-E* - [see details](#caregiver-types)) for each participant. Cohort subtypes are split into **Main Child** and **Multiple Birth**, with additional labeling for *Postnatal Recruits* (*PNR*) and Multiple Birth siblings (*Main Child* vs. *Sibling*):
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -207,7 +207,7 @@ Visit Level Data also includes **substance use flags**, which are single-summary
   <td>HBCD Main Child</td>
 </tr>
 <tr><td>HBCD Main Child - Postnatal Recruitment<b>*</b></td></tr>
-<tr><td>HBCD Main Child - Type <i>A - F</i></td>
+<tr><td>HBCD Main Child - Type <i>A - E</i></td>
 </tr>
 </tbody>
 <tbody>
@@ -218,7 +218,7 @@ Visit Level Data also includes **substance use flags**, which are single-summary
     <tr><td>HBCD Multiple Birth - Postnatal Recruitment<b>*</b></td></tr>
     <tr><td>HBCD Multiple Birth - Postnatal Recruitment<b>*</b> - Sibling</td></tr>
     <tr><td>HBCD Multiple Birth - Sibling</td></tr>
-    <tr><td>HBCD Multiple Birth - Type <i>A - F</i></td></tr>
+    <tr><td>HBCD Multiple Birth - Type <i>A - E</i></td></tr>
 </tbody>
 <tfoot><tr><td colspan="3"><b>*</b> PNR is only available for V02 - <a href="#postnatal-recruits-pnr">see details</a></td></tr></tfoot>
 </table>
@@ -262,8 +262,6 @@ The downloadable participant list maps each **Main Child** to their correspondin
         <td style="word-wrap: break-word; white-space: normal;">Child Removed From Birth Parent and Placed in Foster Care (Change in Placement)</td>
     </tr>
     <tr><td><b>Type E</b></td><td>Change in Legal Custody and Placement (e.g. adoption)</td>
-    </tr>
-    <tr><td><b>Type F</b></td><td>Original Consented Parent</td>
     </tr>            
 </tbody>
 </table>
