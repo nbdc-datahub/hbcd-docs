@@ -9,7 +9,7 @@ Family/maternal-level data is only present for the Main Child across instruments
 In addition, a new Data Dictionary element (***familyID***) will be incorporated to help identify siblings (Release # TBD).
 
 ### 2.1 Existing Study Data Updates
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
 <th>Domain</th>
 <th>Table/Data</th>
@@ -18,13 +18,18 @@ In addition, a new Data Dictionary element (***familyID***) will be incorporated
 <tbody>
 <tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-id-card" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Demographics</span></span></td>
-  <td>Visit Level Data (<code>par_visit_data</code>)</td>
+  <td>Visit Level Data<br>(<code>par_visit_data</code>)</td>
   <td style="word-wrap: break-word; white-space: normal;">Addition of <code>visit_missed_date</code> variable (date of missed visits)</td>
 </tr>
 <tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-vial" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Biospecimens</span></span></td>
+  <td>Urine</td>
+  <td style="word-wrap: break-word; white-space: normal;">Addition of creatinine results (<code>bio_bm_biosample_urine_results_bio_creat_u</code>)</td>
+</tr>
+<tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Physical Health</span></span></td>
-  <td>Growth (<code>ph_ch_anthro</code>)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Addition of age-based z-scores & sex-specific birth weight for gestational age - <a href="../../instruments/physhealth/growth/#warning">see details</a></td>
+  <td>Growth<br>(<code>ph_ch_anthro</code>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Addition of age-based z-scores & sex-specific birth weight for gestational age (<a href="../../instruments/physhealth/growth/#warning">details</a>)</td>
 </tr>
 <tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
@@ -34,5 +39,3 @@ In addition, a new Data Dictionary element (***familyID***) will be incorporated
 </tr>
 </tbody>
 </table>
-
-

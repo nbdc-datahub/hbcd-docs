@@ -64,13 +64,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2">Urine</td>
-  <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">
-  Creatinine results and units fields (<code>bio_bm_biosample_urine_results_bio_creat_u{_units}</code>) are currently excluded due to presence of values outside of the expected range and will be-incorporated in the next release.
-  </td>
-</tr>
-<tr>
+  <td>Urine</td>
   <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Data Error: <code>bio_bm_biosample_urine_results_bio_c_aha_u</code> appears to contain incorrect values for some rows - further details to be added as more info becomes available.</td>
 </tr>
