@@ -207,7 +207,7 @@ Visit Level Data also includes **substance use flags**, which are single-summary
   <td>HBCD Main Child</td>
 </tr>
 <tr><td>HBCD Main Child - Postnatal Recruitment<b>*</b></td></tr>
-<tr><td>HBCD Main Child - Type <i>A - E</i></td>
+<tr><td>HBCD Main Child - Type <i>A - F</i></td>
 </tr>
 </tbody>
 <tbody>
@@ -218,7 +218,7 @@ Visit Level Data also includes **substance use flags**, which are single-summary
     <tr><td>HBCD Multiple Birth - Postnatal Recruitment<b>*</b></td></tr>
     <tr><td>HBCD Multiple Birth - Postnatal Recruitment<b>*</b> - Sibling</td></tr>
     <tr><td>HBCD Multiple Birth - Sibling</td></tr>
-    <tr><td>HBCD Multiple Birth - Type <i>A - E</i></td></tr>
+    <tr><td>HBCD Multiple Birth - Type <i>A - F</i></td></tr>
 </tbody>
 <tfoot><tr><td colspan="3"><b>*</b> PNR is only available for V02 - <a href="#postnatal-recruits-pnr">see details</a></td></tr></tfoot>
 </table>
