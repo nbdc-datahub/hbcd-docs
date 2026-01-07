@@ -63,7 +63,7 @@ The response option "Decline to answer" was added on November 8, 2024 to allow p
 
 The **Sensory Processing Measure – Infant/Toddler (SPM-2)** is designed to assess whether a child’s nervous system integrates visual, auditory, tactile, olfactory, gustatory, vestibular, and proprioceptive sensory information from the body and environment efficiently and effectively. Effective sensory processing contributes to the development of emotion regulation, motor skills, and social relatedness. Difficulties in the integration of sensory information can hinder the development of these skills and higher-level functions such as learning to plan and organize behaviors. The sensory systems serve as foundation for increasingly more complex behaviors and are critical to development.
 
-This questionnaire asks about the ways the child sensory systems contribute to daily functioning. The caregiver selects whether their child’s behavior during the past month never, occasionally, frequently, or always resembles the behavior described. Seven sensory domains are assessed as well as functions related to ideas/planning and social relatedness. The reference sample tables from which the summary scores were derived are available from Western Psychological Services (Parham et al. 2021). These items contain imputed scores based on tables from the publisher. At this time, released data does not specify the exact items that have been imputed.
+This questionnaire asks about the ways the child sensory systems contribute to daily functioning. The caregiver selects whether their child’s behavior during the past month never, occasionally, frequently, or always resembles the behavior described. Seven sensory domains are assessed as well as functions related to ideas/planning and social relatedness. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -77,6 +77,20 @@ This questionnaire asks about the ways the child sensory systems contribute to d
 </div>
 <div class="collapsible-content">
 <p>For HBCD, the response option ‘Decline to answer’ was added to all questions.</p> 
+</div>
+
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>The proprietary reference sample tables from which the SPM-2 summary scores were derived are available from Western Psychological Services (Parham et al. 2021). These items contain imputed scores based on tables from the publisher. At this time, released data does not specify the exact items that have been imputed.</p>
 </div>
 
 ## References
