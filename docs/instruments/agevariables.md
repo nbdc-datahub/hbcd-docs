@@ -72,7 +72,7 @@ Most <a href="../../datacuration/phenotypes/" target="_blank">tabulated datasets
 <tr>
 <td><i class="fa-solid fa-baby"></i>&nbsp; Gestational Age at Administration<br><code style="margin-left: 19px;">gestational_age</code></td>
 <td style="word-wrap: break-word; white-space: normal;">
-  Time elapsed (<b>whole weeks</b>, rounded down) between the <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period, estimated as EDD minus 280 days</span></span> and date of instrument administration. Varies no more than 4 weeks across protocol elements except when protocol exceptions were granted. <span class="pill-badge" style="background-color: pink;">V01</span>
+  Time elapsed (<b>whole weeks</b>, rounded down) between the <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period, estimated as EDD minus 280 days</span></span> and date of instrument administration. Varies no more than 4 weeks across protocol elements except when protocol exceptions were granted. <i>Note that instruments not administered at V01 will have null values for gestational age.</i> <span class="pill-badge" style="background-color: pink;">V01</span>
 </td>
 </tr>
 <tr>
