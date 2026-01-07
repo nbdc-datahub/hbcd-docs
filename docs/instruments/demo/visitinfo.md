@@ -199,27 +199,26 @@ Visit Level Data also includes **substance use flags**, which are single-summary
 <tr>
   <th>Cohort</th>
   <th>Cohort Subtype Label</th>
-  <th>Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td rowspan="3"><b>HBCD Main Child</b></td>
   <td>HBCD Main Child</td>
-  <td>0</td>
 </tr>
-<tr><td>HBCD Main Child - PNR<b>*</b></td><td>1</td></tr>
-<tr><td>HBCD Main Child - Type <i>A - E</i></td><td><i>2 - 6</i> &nbsp; (<i>A→2, &nbsp; B→3, &nbsp; C→4, &nbsp; D→5 &nbsp; E→6</i>)</td></tr>
+<tr><td>HBCD Main Child - Postnatal Recruitment<b>*</b></td></tr>
+<tr><td>HBCD Main Child - Type <i>A - E</i></td>
+</tr>
 </tbody>
 <tbody>
 <tr>
   <td rowspan="5"><b>HBCD Multiple Birth</b></td>
-  <td>HBCD Multiple Birth - Main Child</td><td>7</td>
+  <td>HBCD Multiple Birth - Main Child</td>
 </tr>
-    <tr><td>HBCD Multiple Birth - PNR<b>*</b></td><td>8</td></tr>
-    <tr><td>HBCD Multiple Birth - PNR<b>*</b> - Sibling</td><td>9</td></tr>
-    <tr><td>HBCD Multiple Birth - Sibling</td><td>10</td></tr>
-    <tr><td>HBCD Multiple Birth - Type <i>A - E</i></td><td><i>11 - 15</i> &nbsp; (<i>A→11, &nbsp; B→12, &nbsp; C→13, &nbsp; D→14, &nbsp; E→15</i>)</td></tr>
+    <tr><td>HBCD Multiple Birth - Postnatal Recruitment<b>*</b></td></tr>
+    <tr><td>HBCD Multiple Birth - Postnatal Recruitment<b>*</b> - Sibling</td></tr>
+    <tr><td>HBCD Multiple Birth - Sibling</td></tr>
+    <tr><td>HBCD Multiple Birth - Type <i>A - E</i></td></tr>
 </tbody>
 <tfoot><tr><td colspan="3"><b>*</b> PNR is only available for V02 - <a href="#postnatal-recruits-pnr">see details</a></td></tr></tfoot>
 </table>
