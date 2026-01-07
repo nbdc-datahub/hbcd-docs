@@ -161,6 +161,11 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">All week 8 & 9 V01 variables should be `NA` instead of '0' as these were not yet completed at this timepoint.</td>
 </tr>
+<tr>
+  <td>EPDS<br><code>pex_bm_epds</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Across visits V01-V03, there are a portion of participants with inconsistent data between individual item responses and the calculated sum score, including the following patterns: (1) individual items present, but sum score null; (2) individual items null, but sum score is 0.</td>
+</tr>
 </tbody>
 </table>
 
