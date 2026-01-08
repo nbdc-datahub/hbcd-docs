@@ -82,14 +82,6 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </thead>
 <tbody>
 <tr>
-  <td>Bayley-4 Scales<br><code>ncl_ch_bayley</code></td>
-  <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">There are 13 Bayley administrations that do not have valid scores for all sub-tests. For these participants, the sub-test scores and/or domain scores display as <code>-9999</code>. We recommend cleaning the data to remove participants with scores of <code>-9999</code>.<br>
-  <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/
-nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
-  </td>
-</tr>
-<tr>
   <td>MLDS<br><code>ncl_ch_mlds</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">

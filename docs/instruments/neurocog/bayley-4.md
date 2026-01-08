@@ -50,13 +50,12 @@
 A subset of participants are missing the Bayley-4 records, i.e. the <b>Administration</b> field (<code>ncl_ch_bayley_administration</code>) has a value of 'None.' However, there are a variety of reasons why the data may be missing, therefore a value of 'None' does not mean that the Bayley was not administered. These data will be added in future releases as it becomes available.</p>
 <p><b>Limited Predictive Validity for Long-Term Neurocognitive Status</b><br>
 Although the Bayley Scales of Infant and Toddler Development, Fourth Edition, is a well-established and validated measure of infant development, tests of this nature have historically had limited predictive validity for long-term neurocognitive status.</p> 
+<p><b>Invalid Scores for Subset of Participants</b><br>
+There are 13 Bayley administrations that do not have valid scores for all sub-tests. For these participants, the sub-test scores and/or domain scores display as <code>-9999</code>. We recommend cleaning the data to remove participants with scores of <code>-9999</code>.<br>
+  <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/
+nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
+  </p>
 </div>
-
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#neurocognition-language" target="_blank">see details</a>.</span>
-</div>
-<p></p>
 
 ## Administration & Quality Control
 
