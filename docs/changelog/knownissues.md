@@ -115,11 +115,6 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
   <td style="word-wrap: break-word; white-space: normal;">Ranges used to filter out-of-range  growth measurements (<a href="../../instruments/physhealth/growth/#warning" target="_blank">see details</a>) are not age-specific, leading to values that are within the valid range, but biologically implausible for the visit age. Filtering methods will be re-evaluated for the next release.</td>
 </tr>
 <tr>
-  <td>ecPROMIS - Physical Activity<br><code>ph_cg_pms__pags</code></td>
-  <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">Summary scores (Summed Score, T-score, and SE) are currently excluded as they require first re-coding items to a 1 to 5 point scale, which will be done for the next release. In the interim, users can calculate summary scores themselves by following the <a href="../../instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documented on the instrument page.</td>
-</tr>
-<tr>
   <td>BISQ-SF<br><code>ph_cg_bisq</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">The Infant Sleep (IS) sub-scale score is currently missing and will be included for 2.1.</td>
