@@ -142,10 +142,6 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
   Participants enrolled postnatally (<i>HBCD Main Child- Postnatal Recruitment</i> or <i>HBCD Multiple Birth- Postnatal Recruitment</i> cohorts) reported TLFB on the wrong weeks. Weeks were either reported in TLFB versions 1 or 2, but should be reported in TLFB version 3 (<a href="../../instruments/pregexp/su/tlfb/#v3">see details</a>).</td>
 </tr>
 <tr>
-  <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">The 'breakdown' fields (sub-categories of substances that are compiled for a substance category; e.g. 'wine', 'beer' and 'spirits' for the 'Alcohol' category) for weeks 8 & 9 at V01 should be `NA` instead of '0', as these were not yet completed at this timepoint. Note that the main substance categories are correct (i.e. values set to blank).</td>
-</tr>
-<tr>
   <td>EPDS<br><code>pex_bm_epds</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Across visits V01-V03, there are a portion of participants with inconsistent data between individual item responses and the calculated sum score, including the following patterns: (1) individual items present, but sum score null; (2) individual items null, but sum score is 0.</td>
