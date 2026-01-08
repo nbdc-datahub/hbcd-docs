@@ -128,7 +128,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </td>
 </tr>
 <tr>
-  <td rowspan="2">TLFB<br><code>pex_ch_tlfb</code></td>
+  <td>TLFB<br><code>pex_ch_tlfb</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   Participants enrolled postnatally (<i>HBCD Main Child- Postnatal Recruitment</i> or <i>HBCD Multiple Birth- Postnatal Recruitment</i> cohorts) reported TLFB on the wrong weeks. Weeks were either reported in TLFB versions 1 or 2, but should be reported in TLFB version 3 (<a href="../../instruments/pregexp/su/tlfb/#v3">see details</a>).</td>
