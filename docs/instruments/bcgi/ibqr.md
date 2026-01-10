@@ -165,11 +165,11 @@ Caregivers are asked to report on the infant’s behaviors on a 7-point Likert s
 </tr>
 </tbody>
 </table>
-<p><b>NOTE: Options also include "Does not apply" and "Choose not to respond," which are not scored. Note that "Does not apply" is coded as as "0" and "8" in the ECBQ and IBQ-R, respectively. For consistency between instruments, the coding will be changed to 8 for IBQ-R in a future release.</b>
+<p><b>NOTE: Options also include "Does not apply" and "Choose not to respond," which are not scored and should be treated as NAs. Note that "Does not apply" is coded as as "0" and "8" in the ECBQ and IBQ-R, respectively. For consistency between instruments, the coding will be changed to 8 for IBQ-R in a future release.</b>
 <p><b>Scale Scores</b><br>
 Each domain score is calculated as the mean of all applicable scale items:</p>
 <ul>
-  <li>Only items scored 1–7 are included (a response of “Does not apply” receives no numerical score and is therefore not included).</li>
+  <li>Only items scored 1–7 are included (“Does not apply” and "Choose not to respond" receive no numerical score and are therefore not included when calculating the scale score).</li>
   <li>All item-level data is raw data. However, items marked with an “R” should be <strong>reverse-scored</strong> when calculating temperament scale scores (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition). This reverse-scoring is already included in the HBCD scoring algorithm.</li>
 </ul>
 <p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
