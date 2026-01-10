@@ -69,7 +69,7 @@ This field is included, but blank across all instruments and will be removed.</t
 <tr>
   <td>Urine</td>
   <td><b>TBD</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">Data Error: <code>bio_bm_biosample_urine_results_bio_c_aha_u</code> appears to contain incorrect values for some rows - further details to be added as more info becomes available.</td>
+  <td style="word-wrap: break-word; white-space: normal;">The field <code>bio_bm_biosample_urine_results_bio_c_aha_u</code> includes N=2 participants with spurious values (all other rows are blank or '0') that should not be used and can safely be ignored.</td>
 </tr>
 </tbody>
 </table>
