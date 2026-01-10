@@ -48,6 +48,11 @@ This field is included, but blank across all instruments and will be removed.</t
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Notes appear in the score field and will be moved to a separate field in the next release.</td>
 </tr>
+<tr>
+  <td>MAPS-TL Toddlerhood (<code>mh_cg_mapdb__tod</code>)</td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">A subset of participants (N=16) are missing scores because pro-rated scoring for the Toddlerhood version has not yet been updated for cases with missing or 'Decline to answer' values.</td>
+</tr>
 </tbody>
 </table>
 
