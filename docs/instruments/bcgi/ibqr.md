@@ -165,7 +165,7 @@ Caregivers are asked to report on the infant’s behaviors on a 7-point Likert s
 </tr>
 </tbody>
 </table>
-<p><b>NOTE: Options also include "Does not apply," which is not scored, but coded as "0" and "8" in the ECBQ and IBQ-R, respectively. For consistency between instruments, the coding will be changed to 8 for IBQ-R in a future release.</b>
+<p><b>NOTE: Options also include "Does not apply" and "Choose not to respond," which are not scored. Note that "Does not apply" is coded as as "0" and "8" in the ECBQ and IBQ-R, respectively. For consistency between instruments, the coding will be changed to 8 for IBQ-R in a future release.</b>
 <p><b>Scale Scores</b><br>
 Each domain score is calculated as the mean of all applicable scale items:</p>
 <ul>
