@@ -28,7 +28,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <td style="word-wrap: break-word; white-space: normal;">
 <b>'Sequence' Field</b><br>
 This field is included, but blank across all instruments and will be removed.</td>
-<td>2.1</td> 
+<td>3.0</td> 
 </tr>
 </tbody>
 </table>
