@@ -109,7 +109,7 @@ See the following sections for detailed descriptions for each column in the [dat
   <td>Instruction</td>
   <td style="word-wrap: break-word; white-space: normal;">
     Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>). <i>Spanish version: <code>instruction_es</code></i><br>
-    <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Text may be incomplete/misaligned! See <a href="../../changelog/knownissues/#instruction-metadata-read-carefully">known issue</a></b></td>
+    <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Text may be incomplete/misaligned! See <a href="../../changelog/knownissues/#general">known issue: Instruction Metadata</a></b></td>
 </tr>
 <tr>
   <td><code>header</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>

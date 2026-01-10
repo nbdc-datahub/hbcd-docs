@@ -4,33 +4,31 @@ The following issues have been identified in the current HBCD data release. **We
 If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
 
 ## General
-
-#### Instruction Metadata — Read Carefully
-
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
-<tbody>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">
-<span style="color: #695541ff;"><i><b>Expected Fix: TBD</b></i></span><br><br>
-  Instruction text in each form’s metadata is automatically extracted from the most recent <code>instruction</code> field in the REDCap Data Dictionary (based on field order). Because this process is automated, it may produce the following issues:
-  <ul>
-    <li>If an instruction spans multiple fields, only the <b>last portion</b> will be captured.</li>
-    <li>Some fields may display text intended for a <b>previous section</b>.</li>
-  </ul>
-  Manual review and correction of instruction metadata are planned for a future release (<b>expected fix date TBD</b>). For the most accurate and complete information, please refer to the original form.</td>
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr style="border-bottom:2px solid #ccc;">
+<th>KNOWN ISSUE</th>
+<th style="width: 1%; text-align: center;">FIX</th>
 </tr>
-</tbody>
-</table>
-
-#### Implausible Values for Gestational Age Across Multiple Instruments
-
-<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+</thead>
 <tbody>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">
-<span style="color: #695541ff;"><i><b>Expected Fix: TBD</b></i></span><br><br>
-Several instruments contain implausible values for gestational age (<code>gestational_age</code>). This is currently under internal review and we will add more details as they become available.
-</td>
+<b>Instruction Metadata</b><br>
+Instruction text in each form’s metadata is automatically extracted from the most recent <code>instruction</code> field in the REDCap Data Dictionary (based on field order). Because this process is automated, it may produce the following issues: <b>(1)</b> If an instruction spans multiple fields, only the <b>last portion</b> will be captured and/or <b>(2)</b> Some fields may display text intended for a <b>previous section</b>. Until this is corrected, please refer to original forms for accurate instruction text.</td>
+<td>TBD</td> 
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">
+<b> Implausible Values for Gestational Age Across Multiple Instruments</b><br>
+Several instruments contain implausible values for gestational age (<code>gestational_age</code>). This is currently under internal review and we will add more details as they become available.</td>
+<td>TBD</td> 
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">
+<b>'Sequence' Field</b><br>
+This field is included, but blank across all instruments and will be removed.</td>
+<td>2.1</td> 
 </tr>
 </tbody>
 </table>
