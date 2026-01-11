@@ -139,45 +139,47 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Response Scale</b><br>
-Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale:<br> 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
-<thead>
-<tr>
-<th style="text-align: center;">1</th>
-<th style="text-align: center;">2</th>
-<th style="text-align: center;">3</th>
-<th style="text-align: center;">4</th>
-<th style="text-align: center;">5</th>
-<th style="text-align: center;">6</th>
-<th style="text-align: center;">7</th>
-</tr>
-</thead>
+<p><b>Response Scale</b></p>
+<p>Caregivers are asked to report on the infant’s behaviors on a <b>7-point Likert scale</b>:</p>
+<table class="compact-table-no-vertical-lines" style="width:100%; border-collapse:collapse; font-size:0.9em;">
+  <thead><tr>
+    <th style="text-align:center;">1</th><th style="text-align:center;">2</th>
+    <th style="text-align:center;">3</th><th style="text-align:center;">4</th>
+    <th style="text-align:center;">5</th><th style="text-align:center;">6</th>
+    <th style="text-align:center;">7</th>
+  </tr></thead>
+  <tbody><tr>
+    <td>Never</td><td>Very rarely</td><td>Less than half the time</td>
+    <td>About half the time</td><td>More than half the time</td>
+    <td>Almost always</td><td>Always</td>
+  </tr></tbody>
+</table>
+<p>The forms include <b>two additional non-response options, which are not scored and should be treated as NAs</b>:</p> 
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse;">
+<thead><tr><th>Response Option</th><th>Code/Value</th><th>Notes</th></tr></thead>
 <tbody>
 <tr>
-<td>Never</td>
-<td>Very rarely</td>
-<td>Less than half the time</td>
-<td>About half the time</td>
-<td>More than half the time</td>
-<td>Almost always</td>
-<td>Always</td>
+<td>Does not apply</td><td>0 (ECBQ only);<br>8 (IBQ-R only)</td>
+<td style="word-wrap: break-word; white-space: normal;">'Does not apply' will be coded as 8 for both instruments in a future release for consistency.</td>
+</tr>
+<tr>
+<td>Decline to answer</td><td>777</td>
+<td style="word-wrap: break-word; white-space: normal;">As for all instruments, 777 is converted to blank field values, with the missingness reason, 'Decline to answer', listed in the corresponding cell of the accompanying shadow matrix (<a href="../../../datacuration/phenotypes/#shadow-matrices-for-missing-data" target="_blank">see details</a>).</td>
 </tr>
 </tbody>
 </table>
-<p>NOTE: Options also include "Does not apply" and "Choose not to respond," which are not scored and should be treated as NAs. <b>Note that "Does not apply" is coded as as "0" and "8" in the ECBQ and IBQ-R, respectively.</b> For consistency between instruments, the coding will be changed to 8 for IBQ-R in a future release.
 <hr>
-<p><b>Scoring Procedure</b><br>
-Scale scores for the IBQ-R VSF+BI and ECBQ(VSF)+BI represent the mean score of all scale items applicable to the child, as judged by the caregiver. Scale scores are computed for each domain (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition) as follows:</p>
+<p><b>Scoring Procedures</b></p>
+<p>Scale scores for the IBQ-R VSF+BI and ECBQ(VSF)+BI represent the mean score of all items applicable to the child, as judged by the caregiver. Scores are computed for each domain (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition) as follows:</p>
 <p><b>1. Sum all numerical item responses for a given scale. Note that:</b></p>
 <ul>
-  <li>If caregiver omitted an item, <strong>that item receives no numerical score and should be treated as missing</strong>.</li>
-  <li>If caregiver checked the <strong>“Does not apply” or "Choose not to respond"</strong> response option for an item, that item receives no numerical score and should be treated as 'NA'.</li>
+  <li>If caregiver omitted an item, <strong>that item receives no numerical score</strong>. Missing items will have a field value of 'Don't know' in the <a href="../../../datacuration/phenotypes/#sm-values" target="_blank">shadow matrix</a>.</li>
+  <li>If caregiver checked the <strong>“Does not apply” or "Decline to answer"</strong> response option for an item, that item receives no numerical score and should be treated as 'NA'.</li>
   <li>All item-level data is raw data. However, items marked with an “R” should be <strong>reverse-scored</strong> when calculating scale scores. This reverse-scoring is already included in the HBCD scoring algorithm.</li>
 </ul>
 <p><b>2. Divide the total by the number of items receiving a numerical response.</b></p>
 <ul>
-  <li><strong>Do not include items marked “Does not apply (N/A)” or “Choose not to respond” in determining the total number of scale items.</strong></li>
+  <li><strong>Do not include items marked “Does not apply” or “Decline to answer”</strong> in the total number of scale items.</li>
   <li><strong><i>Of the items included in computing the total number of scale items,</i> if &gt;40% are missing (e.g., there are only 7/12 completed responses in a scale), it is not possible to score the individual domain.</strong></li>
 </ul>
 <p>For example, given a sum of 47 for a scale of 12 items, with one item receiving no response, two items marked "Does not apply", and 9 items receiving a numerical response, the sum of 47 would be divided by 9 to yield a mean of 5.22 for the scale score.</p>
