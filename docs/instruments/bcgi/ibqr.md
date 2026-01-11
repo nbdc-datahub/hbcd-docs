@@ -154,17 +154,17 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
     <td>Almost always</td><td>Always</td>
   </tr></tbody>
 </table>
-<p>The forms include <b>two additional non-response options, which are not scored and should be treated as NAs</b>:</p> 
+<p>The forms include <b>two additional non-response options, which are valid responses, but not scored</b>:</p> 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse;">
-<thead><tr><th>Response Option</th><th>Code/Value</th><th>Notes</th></tr></thead>
+<thead><tr><th>Response Option</th><th>Details</th></tr></thead>
 <tbody>
 <tr>
-<td>Does not apply</td><td>0 (ECBQ only);<br>8 (IBQ-R only)</td>
-<td style="word-wrap: break-word; white-space: normal;">'Does not apply' will be coded as 8 for both instruments in a future release for consistency.</td>
+<td>Does not apply</td>
+<td style="word-wrap: break-word; white-space: normal;">'Does not apply' is coded as 0 for ECBQ and 8 for IBQ-R: it will be coded as 8 for both in a future release for consistency.</td>
 </tr>
 <tr>
-<td>Decline to answer</td><td>777</td>
-<td style="word-wrap: break-word; white-space: normal;">As for all instruments, 777 is converted to blank field values, with the missingness reason, 'Decline to answer', listed in the corresponding cell of the accompanying shadow matrix (<a href="../../../datacuration/phenotypes/#shadow-matrices-for-missing-data" target="_blank">see details</a>).</td>
+<td>Decline to answer</td>
+<td style="word-wrap: break-word; white-space: normal;">'Decline to answer' is categorized as code 777 in the metadata, but in the release data, this code is deliberately converted to blank cells and the missingess reason is stored in the corresponding cell of the accompanying shadow matrix (<a href="../../../datacuration/phenotypes/#shadow-matrices-for-missing-data" target="_blank">see details</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -177,7 +177,7 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 <li><b>Reverse scoring:</b> All item-level data is raw data. However, items marked with an “R” should be <i>reverse-scored</i> when calculating scale scores. This reverse-scoring is already included in the HBCD scoring algorithm.</li>
 </ul>
 <p><b>2. Divide the sum by the total number of scale items included in computation of the sum.</b> For example, given a sum of 47 for a scale of 12 items, with one item receiving no response, two items marked "Does not apply", and 9 items receiving a numerical response of 1-7, the sum of 47 would be divided by 9 to yield a mean of 5.22 for the scale score.</p>
-<p><b>3. If more than 40% of all possible scale items within a domain are missing (e.g., there are only 7/12 completed responses in a scale), the domain score is set to missing as it is not possible to score.</b> Note that unscored values of 0 or 8 ('Does not apply') and blank cells with corresponding shadow matrix values of 'Decline to answer' do not count as missing values.</p>
+<p><b>3. If the caretaker did not respond to more than 40% of items in a scale (e.g., only 7/12 completed responses in a scale), the scale score is set to missing as it is not possible to score the individual domain without more data.</b> Note that non-response options ('Does not apply' or 'Decline to answer'), despite being unscored, still count as completed responses.</p>
 <p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
 </div>
 
