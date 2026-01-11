@@ -176,7 +176,7 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 <li><b>Only include items with numerical responses of 1-7</b>: <i>missing items</i> (omitted by the caregiver) and <i>items with non-response options selected</i> ('Does not apply' or 'Decline to answer') receive no numerical score.</li>
 <li><b>Reverse scoring:</b> All item-level data is raw data. However, items marked with an “R” should be <i>reverse-scored</i> when calculating scale scores. This reverse-scoring is already included in the HBCD scoring algorithm.</li>
 </ul>
-<p><b>2. Divide the sum by the total number of scale items.</b></p>
+<p><b>2. Divide the sum by the total number of scale items included in computation of sum.</b></p>
 <ul>
   <li><b>Do not include items with non-response options selected ('Does not apply' or 'Decline to answer') in determining the number of scale items.</b></li>
   <li>Of the included scale items, if &gt;40% are missing (e.g., there are only 7/12 completed responses in a scale), it is not possible to score the individual domain.</li>
