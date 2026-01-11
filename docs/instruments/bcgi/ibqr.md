@@ -164,7 +164,7 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 </tr>
 <tr>
 <td>Decline to answer</td>
-<td style="word-wrap: break-word; white-space: normal;">'Decline to answer' is categorized as code 777 in the metadata, but in the release data, this code is deliberately converted to blank cells and the missingess reason is stored in the corresponding cell of the accompanying shadow matrix (<a href="../../../datacuration/phenotypes/#shadow-matrices-for-missing-data" target="_blank">see details</a>).</td>
+<td style="word-wrap: break-word; white-space: normal;">'Decline to answer' is categorized as code 777 in the metadata, but in the release data, this code is deliberately converted to blank cells and the missingess reason is stored in the corresponding cell of the accompanying <a href="../../../datacuration/phenotypes/#shadow-matrices-for-missing-data" target="_blank">shadow matrix</a>.</td>
 </tr>
 </tbody>
 </table>
