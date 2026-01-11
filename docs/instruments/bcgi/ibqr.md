@@ -131,7 +131,7 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
+  <span class="text">Scoring Procedures DRAFT</span>
   <a class="anchor-link" href="#scoring" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -184,6 +184,54 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 </ul>
 <p>For example, given a sum of 47 for a scale of 12 items, with one item receiving no response, two items marked "Does not apply", and 9 items receiving a numerical response, the sum of 47 would be divided by 9 to yield a mean of 5.22 for the scale score.</p>
 <p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
+</div>
+
+<div id="scoring-orig" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures ORIGINAL</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p><b>Response Scale</b><br>
+Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale:<br> 
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
+<thead>
+<tr>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+<th style="text-align: center;">7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Never</td>
+<td>Very rarely</td>
+<td>Less than half the time</td>
+<td>About half the time</td>
+<td>More than half the time</td>
+<td>Almost always</td>
+<td>Always</td>
+</tr>
+</tbody>
+</table>
+<p><b>NOTE: Options also include "Does not apply" and "Choose not to respond," which are not scored and should be treated as NAs. Note that "Does not apply" is coded as as "0" and "8" in the ECBQ and IBQ-R, respectively. For consistency between instruments, the coding will be changed to 8 for IBQ-R in a future release.</b>
+<p><b>Scale Scores</b><br>
+Each domain score is calculated as the mean of all applicable scale items:</p>
+<ul>
+  <li>Only items scored 1–7 are included (“Does not apply” and "Choose not to respond" receive no numerical score and are therefore not included when calculating the scale score).</li>
+  <li>All item-level data is raw data. However, items marked with an “R” should be <strong>reverse-scored</strong> when calculating temperament scale scores (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition). This reverse-scoring is already included in the HBCD scoring algorithm.</li>
+</ul>
+<p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
+</p>
 </div>
 
 ## References
