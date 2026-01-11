@@ -231,6 +231,7 @@ Each domain score is calculated as the mean of all applicable scale items:</p>
 </ul>
 <p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
 </p>
+<p>LUCI ADMIN NOTE: REMOVE WHEN COMPLETE</p>
 </div>
 
 ## References
