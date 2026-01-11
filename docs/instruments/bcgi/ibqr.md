@@ -176,8 +176,13 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 <li><b>Only include items with numerical responses of 1-7</b>: <i>missing items</i> (omitted by the caregiver) and <i>items with non-response options selected</i> ('Does not apply' or 'Decline to answer') receive no numerical score.</li>
 <li><b>Reverse scoring:</b> All item-level data is raw data. However, items marked with an “R” should be <i>reverse-scored</i> when calculating scale scores. This reverse-scoring is already included in the HBCD scoring algorithm.</li>
 </ul>
-<p><b>2. Divide the sum by the total number of scale items included in computation of the sum.</b> For example, given a sum of 47 for a scale of 12 items, with one item receiving no response, two items marked "Does not apply", and 9 items receiving a numerical response of 1-7, the sum of 47 would be divided by 9 to yield a mean of 5.22 for the scale score.</p>
-<p><b>3. If the caretaker did not respond to more than 40% of items in a scale (e.g., only 7/12 completed), the scale score is set to missing as it is not possible to score the individual domain.</b> Note that non-response options ('Does not apply' or 'Decline to answer'), despite being unscored, still count as completed responses.</p>
+<p><b>2. Divide the sum by the total number of scale items included in computation of the sum.</b> 
+<ul>
+<li>As stated above, the total number of scale items only include items with numerical responses of 1-7 (and excludes non-response options 'Does not apply' and 'Decline to answer').</li>
+<li>If more than 40% of scale items are missing (i.e., there are only 7/12 items with numerical responses of 1-7), the scale score is set to missing as it is not possible to score the individual domain.</li>
+</ul>
+</p>
+<p>For example, given a sum of 47 for a scale of 12 items, with one item receiving no response, two items marked "Does not apply", and 9 items receiving a numerical response of 1-7, the sum of 47 would be divided by 9 to yield a mean of 5.22 for the scale score.</p>
 <p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
 </div>
 
