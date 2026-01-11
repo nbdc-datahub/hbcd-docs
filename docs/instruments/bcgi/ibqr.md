@@ -178,7 +178,7 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 </ul>
 <p><b>2. Divide the sum by the total number of scale items included in computation of the sum.</b> 
 <ul>
-<li>As stated above, the total number of scale items only include items with numerical responses of 1-7 (and excludes non-response options 'Does not apply' and 'Decline to answer').</li>
+<li>As stated above, the total number of scale items used to compute the sum only includes items with numerical responses of 1-7 (and excludes non-response options 'Does not apply' and 'Decline to answer').</li>
 <li>If more than 40% of scale items are missing (i.e., there are only 7/12 items with numerical responses of 1-7), the scale score is set to missing as it is not possible to score the individual domain.</li>
 </ul>
 </p>
