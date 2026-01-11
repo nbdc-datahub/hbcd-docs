@@ -170,7 +170,7 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 </table>
 <hr>
 <p><b>Scoring Procedures</b></p>
-<p>Scale scores for the IBQ-R VSF+BI and ECBQ(VSF)+BI represent the mean score of all items applicable to the child, as judged by the caregiver. Scores are computed for each domain (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition) as follows:</p>
+<p>Scale scores for the IBQ-R (VSF)+BI and ECBQ (VSF)+BI represent the mean score of all items applicable to the child, as judged by the caregiver. Scores are computed for each domain (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition) as follows:</p>
 <p><b>1. Sum numerical item responses for a given scale as follows:</b></p>
 <ul>
 <li><b>Only include items with numerical responses of 1-7</b>: <i>missing items</i> (omitted by the caregiver) and <i>items with non-response options selected</i> ('Does not apply' or 'Decline to answer') receive no numerical score.</li>
