@@ -173,7 +173,7 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 <p>Scale scores for the IBQ-R VSF+BI and ECBQ(VSF)+BI represent the mean score of all items applicable to the child, as judged by the caregiver. Scores are computed for each domain (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition) as follows:</p>
 <p><b>1. Sum all numerical item responses for a given scale. Note that:</b></p>
 <ul>
-  <li>If caregiver omitted an item, <strong>that item receives no numerical score</strong>. Missing items will have a field value of 'Don't know' in the <a href="../../../datacuration/phenotypes/#sm-values" target="_blank">shadow matrix</a>.</li>
+  <li>If caregiver omitted an item, <strong>that item receives no numerical score and be treated as missing</strong>.</li>
   <li>If caregiver checked the <strong>“Does not apply” or "Decline to answer"</strong> response option for an item, that item receives no numerical score and should be treated as 'NA'.</li>
   <li>All item-level data is raw data. However, items marked with an “R” should be <strong>reverse-scored</strong> when calculating scale scores. This reverse-scoring is already included in the HBCD scoring algorithm.</li>
 </ul>
