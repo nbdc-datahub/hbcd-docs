@@ -179,7 +179,7 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 </ul>
 <p><b>2. Divide the sum by the number of items with a numerical response of 1-7.</b></p>
 <ul>
-  <li>Do not include items marked “Does not apply” or “Decline to answer” in the number of scale items.</li>
+  <li>Do not include items marked “Does not apply” or “Decline to answer” in determining the number of scale items.</li>
   <li>Of the included scale items, if &gt;40% are missing (e.g., there are only 7/12 completed responses in a scale), it is not possible to score the individual domain.</li>
 </ul>
 <p>For example, given a sum of 47 for a scale of 12 items, with one item receiving no response, two items marked "Does not apply", and 9 items receiving a numerical response, the sum of 47 would be divided by 9 to yield a mean of 5.22 for the scale score.</p>
