@@ -165,17 +165,23 @@ Caregivers are asked to report on the infant’s behaviors on a 7-point Likert s
 </tr>
 </tbody>
 </table>
-<p><b>NOTE: Options also include "Does not apply" and "Choose not to respond," which are not scored and should be treated as NAs. Note that "Does not apply" is coded as as "0" and "8" in the ECBQ and IBQ-R, respectively. For consistency between instruments, the coding will be changed to 8 for IBQ-R in a future release.</b>
-<p><b>Scale Scores</b><br>
-Each domain score is calculated as the mean of all applicable scale items:</p>
+<p>NOTE: Options also include "Does not apply" and "Choose not to respond," which are not scored and should be treated as NAs. <b>Note that "Does not apply" is coded as as "0" and "8" in the ECBQ and IBQ-R, respectively.</b> For consistency between instruments, the coding will be changed to 8 for IBQ-R in a future release.
+<hr>
+<p><b>Scoring Procedure</b><br>
+Scale scores for the IBQ-R VSF+BI and ECBQ(VSF)+BI represent the mean score of all scale items applicable to the child, as judged by the caregiver. Scale scores are computed for each domain (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition) as follows:</p>
+<p><b>1. Sum all numerical item responses for a given scale. Note that:</b></p>
 <ul>
-  <li>Only items scored 1–7 are included (“Does not apply” and "Choose not to respond" receive no numerical score and are therefore not included when calculating the scale score).</li>
-  <li>All item-level data is raw data. However, items marked with an “R” should be <strong>reverse-scored</strong> when calculating temperament scale scores (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition). This reverse-scoring is already included in the HBCD scoring algorithm.</li>
+  <li>If caregiver omitted an item, <strong>that item receives no numerical score and should be treated as missing</strong>.</li>
+  <li>If caregiver checked the <strong>“Does not apply” or "Choose not to respond"</strong> response option for an item, that item receives no numerical score and should be treated as 'NA'.</li>
+  <li>All item-level data is raw data. However, items marked with an “R” should be <strong>reverse-scored</strong> when calculating scale scores. This reverse-scoring is already included in the HBCD scoring algorithm.</li>
 </ul>
+<p><b>2. Divide the total by the number of items receiving a numerical response.</b></p>
+<ul>
+  <li><strong>Do not include items marked “Does not apply (N/A)” or “Choose not to respond” in determining the total number of scale items.</strong></li>
+  <li><strong><i>Of the items included in computing the total number of scale items,</i> if &gt;40% are missing (e.g., there are only 7/12 completed responses in a scale), it is not possible to score the individual domain.</strong></li>
+</ul>
+<p>For example, given a sum of 47 for a scale of 12 items, with one item receiving no response, two items marked "Does not apply", and 9 items receiving a numerical response, the sum of 47 would be divided by 9 to yield a mean of 5.22 for the scale score.</p>
 <p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
-</p>
-
-
 </div>
 
 ## References
