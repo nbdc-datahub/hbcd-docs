@@ -173,17 +173,14 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 <p>Scale scores for the IBQ-R VSF+BI and ECBQ(VSF)+BI represent the mean score of all items applicable to the child, as judged by the caregiver. Scores are computed for each domain (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition) as follows:</p>
 <p><b>1. Sum all numerical item responses for a given scale. Note that:</b></p>
 <ul>
-  <li><b>The following items are unscored/receive no numerical score:</b>
-    <ul>
-    <li>Missing items without any caregiver response</li>
-    <li>Items with non-response options selected ('Does not apply' or 'Decline to answer')</li>
-    </ul></li>
-  <li><b>Reverse scoring:</b> All item-level data is raw data. However, items marked with an “R” should be <i>reverse-scored</i> when calculating scale scores. This reverse-scoring is already included in the HBCD scoring algorithm.</li>
+<li><b>Missing items</b> without any caregiver response receive no numerical score</li>
+<li><b>Items with non-response options selected</b> ('Does not apply' or 'Decline to answer') receive no numerical score</li>
+<li><b>Reverse scoring:</b> All item-level data is raw data. However, items marked with an “R” should be <i>reverse-scored</i> when calculating scale scores. This reverse-scoring is already included in the HBCD scoring algorithm.</li>
 </ul>
-<p><b>2. Divide the total by the number of items receiving a numerical response.</b></p>
+<p><b>2. Divide the sum by the number of items with a numerical response of 1-7.</b></p>
 <ul>
-  <li>Do not include items marked “Does not apply” or “Decline to answer” in the total number of scale items.</li>
-  <li>Of the items included in computing the total number of scale items, if &gt;40% are missing (e.g., there are only 7/12 completed responses in a scale), it is not possible to score the individual domain.</li>
+  <li>Do not include items marked “Does not apply” or “Decline to answer” in the number of scale items.</li>
+  <li>Of the included scale items, if &gt;40% are missing (e.g., there are only 7/12 completed responses in a scale), it is not possible to score the individual domain.</li>
 </ul>
 <p>For example, given a sum of 47 for a scale of 12 items, with one item receiving no response, two items marked "Does not apply", and 9 items receiving a numerical response, the sum of 47 would be divided by 9 to yield a mean of 5.22 for the scale score.</p>
 <p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
