@@ -5,7 +5,7 @@
  - **Data dictionary**: Provides detailed information about table variables, including variable name, label, description, data type, etc. 
  - **Levels table**: Provides information about the levels for categorical variables (label, order, etc.)
 
-See the following sections for detailed descriptions for each column in the [data dictionary](#data-dictionary-columns) and [levels table](#levels-table).
+See the following sections for detailed descriptions for each column in the [data dictionary](#data-dictionary-elements) and [levels table](#levels-table).
 
 ## Data Dictionary Elements
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
