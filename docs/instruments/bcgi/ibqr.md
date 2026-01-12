@@ -181,55 +181,6 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
 <p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
 </div>
 
-<div id="scoring-orig" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures ORIGINAL</span>
-  <a class="anchor-link" href="#scoring-orig" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p><b>Response Scale</b><br>
-Caregivers are asked to report on the infant’s behaviors on a 7-point Likert scale:<br> 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
-<thead>
-<tr>
-<th style="text-align: center;">1</th>
-<th style="text-align: center;">2</th>
-<th style="text-align: center;">3</th>
-<th style="text-align: center;">4</th>
-<th style="text-align: center;">5</th>
-<th style="text-align: center;">6</th>
-<th style="text-align: center;">7</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Never</td>
-<td>Very rarely</td>
-<td>Less than half the time</td>
-<td>About half the time</td>
-<td>More than half the time</td>
-<td>Almost always</td>
-<td>Always</td>
-</tr>
-</tbody>
-</table>
-<p><b>NOTE: Options also include "Does not apply" and "Choose not to respond," which are not scored and should be treated as NAs. Note that "Does not apply" is coded as as "0" and "8" in the ECBQ and IBQ-R, respectively. For consistency between instruments, the coding will be changed to 8 for IBQ-R in a future release.</b>
-<p><b>Scale Scores</b><br>
-Each domain score is calculated as the mean of all applicable scale items:</p>
-<ul>
-  <li>Only items scored 1–7 are included (“Does not apply” and "Choose not to respond" receive no numerical score and are therefore not included when calculating the scale score).</li>
-  <li>All item-level data is raw data. However, items marked with an “R” should be <strong>reverse-scored</strong> when calculating temperament scale scores (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition). This reverse-scoring is already included in the HBCD scoring algorithm.</li>
-</ul>
-<p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
-</p>
-<p>LUCI ADMIN NOTE: REMOVE WHEN COMPLETE</p>
-</div>
-
 ## References
 <div class="references">
 <p>Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. <em>Developmental Cognitive Neuroscience</em>, 69, 101422. <a href="https://doi.org/10.1016/j.dcn.2024.101422">https://doi.org/10.1016/j.dcn.2024.101422</a></p>
