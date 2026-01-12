@@ -24,9 +24,12 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Item-level responses are provided for the whole cohort; summary scores are present for all participants except those with data obtained in the month prior to the cutoff date for data inclusion (June 1st, 2025). Summary scores from <a href="http://babysleep.com">babysleep.com</a> will be available in subsequent releases.</p> 
-<p>Note that there is currently no way to tell which participants were administered the Spanish version of the BISQ; a <i>language</i> field will be included in a future release.</p>
-<p>Scores are for research purposes only and are not for individual dissemination or clinical use.</p>
+<p><b>Incomplete Summary Scores</b><br>
+Item-level responses are provided for the whole cohort; summary scores are present for all participants except those with data obtained in the month prior to the cutoff date for data inclusion (June 1st, 2025). Summary scores from <a href="http://babysleep.com">babysleep.com</a> will be available in subsequent releases.</p> 
+<p><b>Spanish Administration</b><br>
+Note that it is not currently possible to determine which participants were administered the Spanish version of the BISQ; a language field will be added in a future release.</p>
+<p><b>Appropriate Use</b><br>
+Scores are for research purposes only and are not for individual dissemination or clinical use.</p>
 </div>
     
 ## Administration & Quality Control
