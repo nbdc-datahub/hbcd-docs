@@ -69,7 +69,7 @@ This field is included, but blank across all instruments and will be removed.</t
 <tr>
   <td>Nails</td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">The toxicology results variable <code>bio_bm_biosample_nails_results_Nail_type</code> has a value of 4 (Unknown) for all rows and can safely be ignored; nail type is provided in the specimen type table, <code>bio_bm_biosample_nails_typ_collection_nail_type</code>.</td>
+  <td style="word-wrap: break-word; white-space: normal;">The toxicology results variable <code>bio_bm_biosample_nails_results_Nail_type</code> has a value of 4 (Unknown) for all rows and can safely be ignored; nail type is provided in the specimen type table: <code>bio_bm_biosample_nails_typ_collection_nail_type</code>.</td>
 </tr>
 <tr>
   <td>Urine</td>
