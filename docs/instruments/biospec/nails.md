@@ -559,7 +559,7 @@ Based on the predefined threshold outlined in [Table 1](#nails-table1), a confir
 <div class="table-collapsible-content">
 <p><b>Final results for each substance follows these rules</b>:</p>
 <ul>
-<li>If the confirmatory test for any substance analyte (e.g. Amphetamine (<code>c_amp_n</code>)) is positive based on predefined thresholds (<strong><a href="#nails-table1">Table 1</a></strong>), the class-level (<code>c_any_stim_n</code>) and sample-level (<code>c_any_specimen_n</code>) are also positive (value =1).</li>
+<li>If the confirmatory test for any substance analyte (e.g. Amphetamine/<code>c_amp_n</code>) is positive based on predefined thresholds (<strong><a href="#nails-table1">Table 1</a></strong>), the class-level (<code>c_any_stim_n</code>) and sample-level (<code>c_any_specimen_n</code>) are also positive (value =1).</li>
 <li>Otherwise, if the substance analyte confirmatory tests are negative, then class-level are negative (value =0). If all classes are negative (value = 0), then sample-level (<code>c_any_specimen_n</code>) are negative (value = 0).</li>
 <li>Finally, if any substance analyte confirmatory tests are invalid (value = 3) then that class-level, and sample-level values are also invalid (value = 3)</li>
 </ul>
