@@ -606,6 +606,8 @@ Based on the predefined threshold outlined in [Table 1](#nails-table1), a confir
 </tr>
 </tbody>
 </table>
+<p>[LUCI ADMIN NOTE: PLACEHOLDER TEXT]<br>
+In some cases, positive confirmatory results for cotinine or nicotine may be accompanied by a categorical confirmatory value of “QNS” (quantity not sufficient). As part of standard quality control to mitigate potential carryover, confirmatory tests are re-run when a specimen’s value is less than 5% of the previous specimen. If insufficient sample remains to complete this repeat test, the result is recorded as “QNS” and should be interpreted as a true quantity insufficiency.</p> 
 </div>
 
 ## References
