@@ -7,7 +7,7 @@
 
 See the following sections for detailed descriptions for each column in the [data dictionary](#data-dictionary-columns) and [levels table](#levels-table).
 
-## Data Dictionary Columns
+## Data Dictionary Elements
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
 <i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases&nbsp;&nbsp;
 <i style="color: teal;" class="fa fa-language"></i>&nbsp;= Column available in Spanish (includes <code>label_es</code>, <code>instruction_es</code>, <code>header_es</code>, <code>note_es</code>)
