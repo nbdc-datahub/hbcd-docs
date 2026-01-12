@@ -155,12 +155,18 @@ This field is included, but blank across all instruments and will be removed.</t
 </thead>
 <tbody>
 <tr>
-  <td>Imaging Data</td>
+  <td rowspan="2">Imaging</td>
   <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   For HBCD imaging data with multiple runs, the <code>run-{X}</code> field may not reflect chronological acquisition order.  
 This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files converted to HBCD tabulated data</b> (<a href="../../datacuration/overview" target="_blank">see file type details</a>). Despite this, data remain internally consistent — e.g., run IDs match between raw and processed datasets.
 </td>
+</tr>
+<tr>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">The sidecar JSONs for Myers-Labonte-parcellated structural measures in the tabulated XCP-D derivatives should have a <code>sub_domain</code> value of <code>Structural MRI</code>, not <code>Resting State fMRI</code>:<br>
+  <code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-&lt;curv|sulc|thickness&gt;_morph</code><br>
+   The Data Dictionary available via the NBDC Dictionary Query Tool is correct.</td>
 </tr>
 <tr>
   <td>EEG</td>
