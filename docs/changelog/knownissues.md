@@ -67,6 +67,11 @@ This field is included, but blank across all instruments and will be removed.</t
 </thead>
 <tbody>
 <tr>
+  <td>Nails</td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">The toxicology results variable <code>bio_bm_biosample_nails_results_Nail_type</code> has a value of 4 (Unknown) for all rows and can safely be ignored; nail type is provided in the specimen type table, <code>bio_bm_biosample_nails_typ_collection_nail_type</code>.</td>
+</tr>
+<tr>
   <td>Urine</td>
   <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">The field <code>bio_bm_biosample_urine_results_bio_c_aha_u</code> includes N=2 participants with spurious values (all other rows are blank or '0') that should not be used and can safely be ignored.</td>
