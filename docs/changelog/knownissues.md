@@ -131,6 +131,12 @@ This field is included, but blank across all instruments and will be removed.</t
 </td>
 </tr>
 <tr>
+  <td>Healthhx</td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">The field <code>pex_bm_health_preg__healthhx_002__01</code> ("Approximately how many weeks into your pregnancy were you when you found out that you were pregnant?") is blank.
+</td>
+</tr>
+<tr>
   <td>TLFB<br><code>pex_ch_tlfb</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
