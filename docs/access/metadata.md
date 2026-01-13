@@ -99,7 +99,7 @@ See the following sections for detailed descriptions for each column in the [dat
   <td style="word-wrap: break-word; white-space: normal;">Variable name within a table (e.g. <code>sed_bm_demo_edu_001</code>)</td>
 </tr>
 <tr>
-  <td><code>label</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
+  <td><code>label</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i>/<br><code>description</code></td>
   <td>Variable label</td>
   <td style="word-wrap: break-word; white-space: normal;">Human-readable label for variable (e.g. <i>Highest grade completed</i>).<br>
   <i>Spanish version: <code>label_es</code></i></td>
