@@ -29,6 +29,8 @@ For all toxicology screens, continuous variables should be interpreted with caut
 <p><b>Updated Workflow</b><br>
 As of July 1, 2024, the nail processing workflow was updated to optimize specimen use and allow confirmation testing for low sample quantities. Prior to this update, remnants of ELISA extract were not used for confirmation when specimens had insufficient sample.</p> 
 <p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
+<p><b>Interpretation of “QNS” in Confirmatory Results When a Positive Is Expected</b><br>
+In some cases, a specimen meets the threshold for a positive result, but the confirmatory result is reported as “QNS” (Quantity Not Sufficient). This occurs when a confirmatory test must be repeated (per quality control procedures, e.g. when a specimen's value is less than 5% of the previous specimen), but insufficient sample remains to complete the repeat test. Because the substance concentration could not be validated, this should be treated as a true quantity insufficiency.</p>
 </div>
 
 <div id="issues" class="issues-banner">
@@ -606,8 +608,6 @@ Based on the predefined threshold outlined in [Table 1](#nails-table1), a confir
 </tr>
 </tbody>
 </table>
-<p>[LUCI ADMIN NOTE: PLACEHOLDER TEXT]<br>
-In some cases, positive confirmatory results for cotinine or nicotine may be accompanied by a categorical confirmatory value of “QNS” (quantity not sufficient). As part of standard quality control to mitigate potential carryover, confirmatory tests are re-run when a specimen’s value is less than 5% of the previous specimen. If insufficient sample remains to complete this repeat test, the result is recorded as “QNS” and should be interpreted as a true quantity insufficiency.</p> 
 </div>
 
 ## References
