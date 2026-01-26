@@ -58,11 +58,6 @@ The ecPROMIS assesses normative variations in child behavior and should be inter
 At V05 (10–17 months), the standard administration is the child (<i>1–5 years</i>) version of the ecPROMIS Child–Caregiver Relationship Scale. A small subset of participants (N=11) were administered both the child and infant (<i>&lt;1 year</i>) versions at this visit. Although data from both instruments are valid, <b>we recommend using the 1–5 years version for V05 analyses to ensure consistency across participants</b>, as most were administered only the 1–5 years version.</p>
 </div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#behavior-caregiver-child-interaction" target="_blank">see details</a>.</span>
-</div>
-
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
