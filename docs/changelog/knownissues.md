@@ -44,14 +44,19 @@ This field is included, but blank across all instruments and will be removed.</t
 </thead>
 <tbody>
 <tr>
-  <td>MAPS-TL<br><code>mh_cg_mapdb__*</code></td>
+  <td>ecPROMIS CC Inf<br><code>mh_cg_pms__cc__inf</code></td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">Notes appear in the score field and will be moved to a separate field in the next release.</td>
+  <td style="word-wrap: break-word; white-space: normal;">For the ecPROMIS Child-Caregiver Relationship Scale, N=6 participants at V03 did not respond to any questions, but have a summary score of 0. These should be converted to <i>NA</i>.</td>
 </tr>
 <tr>
   <td>MAPS-TL Infancy<br><code>mh_cg_mapdb__inf</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">N=3 participants at V03 did not respond to any questions, but have a summary score of 0. These should be converted to <i>NA</i>.</td>
+</tr>
+<tr>
+  <td>MAPS-TL<br><code>mh_cg_mapdb__*</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Notes appear in the score field and will be moved to a separate field in the next release.</td>
 </tr>
 <tr>
   <td>MAPS-TL Toddlerhood<br><code>mh_cg_mapdb__tod</code></td>
