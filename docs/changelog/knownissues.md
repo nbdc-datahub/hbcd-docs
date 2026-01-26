@@ -46,7 +46,7 @@ This field is included, but blank across all instruments and will be removed.</t
 <tr>
   <td>MAPS-TL Infancy<br><code>mh_cg_mapdb__inf</code></td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">N=3 participants did not respond to any questions and should have a blank/null summary score, but instead have a score of 0. Users should convert these cases to blank/null prior to conducting their statistical analyses.</td>
+  <td style="word-wrap: break-word; white-space: normal;">N=4 participants did not respond to any questions and should have a blank/null summary score, but instead have a score of 0. Users should convert these cases to blank/null prior to conducting their statistical analyses.</td>
 </tr>
 <tr>
   <td>MAPS-TL<br><code>mh_cg_mapdb__*</code></td>
