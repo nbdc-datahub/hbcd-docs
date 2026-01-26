@@ -44,14 +44,14 @@ This field is included, but blank across all instruments and will be removed.</t
 </thead>
 <tbody>
 <tr>
-  <td>ecPROMIS CC Inf<br><code>mh_cg_pms__cc__inf</code></td>
+  <td>ecPROMIS CH-CG Rel (&lt;1 yr)<br><code>mh_cg_pms__cc__inf</code></td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">N=6 participants at V03 did not respond to any questions, but have a summary score of 0, which is not possible in these measures and should be converted to <i>NA</i>.</td>
+  <td style="word-wrap: break-word; white-space: normal;">N=6 participants did not respond to any questions, but received a score of 0; these participants should have an ‘NA’ score field instead of a 0. Users should convert these cases to ’NA” prior to conducting their statistical analyses.</td>
 </tr>
 <tr>
   <td>MAPS-TL Infancy<br><code>mh_cg_mapdb__inf</code></td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">N=3 participants at V03 did not respond to any questions, but have a summary score of 0, which is not possible in these measures and should be converted to <i>NA</i>.</td>
+  <td style="word-wrap: break-word; white-space: normal;">N=3 participants did not respond to any questions, but received a score of 0; these participants should have an ‘NA’ score field instead of a 0. Users should convert these cases to ’NA” prior to conducting their statistical analyses.</td>
 </tr>
 <tr>
   <td>MAPS-TL<br><code>mh_cg_mapdb__*</code></td>
