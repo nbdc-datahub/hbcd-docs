@@ -16,7 +16,7 @@
 <li>V02 sessions processed with T1-based surface reconstruction (<a href="../mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">Infant FreeSurfer method</a>) within Infant fMRIPrep: ~70% of the visual reports across sessions are missing BrainSwipes QC scores. <i>Note, however, that for separate reasons we advise against using this data for analyses - see <a href="../mri-proc/#warning" target="_blank">Data Warning</a></i>.</li>
 <li>V02 sessions with only a T2w anatomical image present (that passes raw data QC), and no T1w: missing ALL BrainSwipes QC results in the release data.</li>
 </ul>
-These results can be found in the most up-to-date BrainSwipes results provided on a rolling basis between releases via the HBCD Private Release Notes - <a href="#private-release-notes">see details</a> below.</p>
+<b>Complete BrainSwipes results can be found in the most up-to-date BrainSwipes results provided on a rolling basis between releases via the HBCD Private Release Notes - <a href="#private-release-notes">see details</a> below.</b></p>
 </div>
 <p></p>
 
@@ -68,6 +68,6 @@ BrainSwipes QC results are provided as <a href="../../#mri">tabulated data</a>, 
 
 ### Private Release Notes
 
-BrainSwipes results will additionally be provided on a rolling basis between releases via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> (*only accessible for DUC-authorized users*). This is done to provide users with the most up-to-date QC results to inform their anaylses. Files are provided in the same format as the release data, nested under folders named with the date that the results were provided.
+As needed, BrainSwipes results are provided on a rolling basis between releases via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> (*only accessible for DUC-authorized users*). This is done to provide users with the most up-to-date QC results to inform their anaylses. Files are provided in the same format as the release data, nested under folders named with the date that the results were provided.
 
-<a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/brainswipes/"><i class="fa-solid fa-download"></i> &nbsp; Download BrainSwipes Results Folder</a>
+<a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/brainswipes_2026-01-26.zip"><i class="fa-solid fa-download"></i> &nbsp; Download Completed BrainSwipes Results</a>
