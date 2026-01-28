@@ -160,6 +160,24 @@ This field is included, but blank across all instruments and will be removed.</t
 </tbody>
 </table>
 
+## <a href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants</span>
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr style="border-bottom:2px solid #ccc;">
+    <th>DATA</th>
+    <th style="width: 1%; text-align: center;">FIX</th>
+    <th>KNOWN ISSUE</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>eHITS<br><code>sed_bm_ehits</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Participants who did not respond to any questions and should have a blank/null summary score instead have a score of 0. Users should convert these cases to blank/null prior to conducting analyses.</td>
+</tr>
+</tbody>
+</table>
+
 ## <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging & EEG Data
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
