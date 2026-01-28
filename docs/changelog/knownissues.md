@@ -147,9 +147,9 @@ This field is included, but blank across all instruments and will be removed.</t
 </td>
 </tr>
 <tr>
-  <td>Health V2</td>
+  <td>Healthv2 Preg</td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">Aspirin items (<code>pex_bm_healthv2_preg__exp__pnv_{011/012}</code>) are largely blank.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Aspirin items (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
 </tr>
 <tr>
   <td>TLFB<br><code>pex_ch_tlfb</code></td>
