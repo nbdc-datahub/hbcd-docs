@@ -149,7 +149,12 @@ This field is included, but blank across all instruments and will be removed.</t
 <tr>
   <td>Healthv2 Preg</td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">Aspirin items (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
+</tr>
+<tr>
+  <td>Healthv2 Preg</td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Note that the field for the date when PNV was stopped (<code>exp__pnv_007__01</code>) is blank, despite participants having reported stopping.</td>
 </tr>
 <tr>
   <td>TLFB<br><code>pex_ch_tlfb</code></td>
@@ -169,8 +174,6 @@ This field is included, but blank across all instruments and will be removed.</t
 </tr>
 </tbody>
 </table>
-
-https://docs.hbcdstudy.org/2.0/changelog/knownissues/#pregnancy-exposure-including-substance-use
 
 ## <a href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants</span>
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
