@@ -162,8 +162,15 @@ This field is included, but blank across all instruments and will be removed.</t
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Across visits V01-V03, there are a portion of participants with inconsistent data between individual item responses and the calculated sum score, including the following patterns: (1) individual items present, but sum score null; (2) individual items null, but sum score is 0.</td>
 </tr>
+<tr>
+  <td>EPDS<br><code>pex_bm_epds</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Note that N=2 participants have an adjusted age of -1 at V02, which is biologically implausible and should be excluded from analyses.</td>
+</tr>
 </tbody>
 </table>
+
+https://docs.hbcdstudy.org/2.0/changelog/knownissues/#pregnancy-exposure-including-substance-use
 
 ## <a href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants</span>
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
