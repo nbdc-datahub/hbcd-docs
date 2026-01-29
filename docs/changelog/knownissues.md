@@ -149,7 +149,7 @@ This field is included, but blank across all instruments and will be removed.</t
 <tr>
   <td>Healthv2 Preg</td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank. This will be addressed in a future release.</td>
 </tr>
 <tr>
   <td>Healthv2 Preg</td>
