@@ -164,7 +164,7 @@ This field is included, but blank across all instruments and will be removed.</t
 </tr>
 <tr>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">N=8 PNR were not administered the V1 portion of the TLFB. When this was recognized, the participants were administered the TLFB at the next in-person visit, resulting in a longer recall period than specified in the protocol. These will be updated in the next release once the V1 data is collected.</td>
+  <td style="word-wrap: break-word; white-space: normal;">Select participants (N=8) were recruited postnatally, but not administered the V1 portion of the TLFB. When this was recognized, the participants were administered the TLFB at the next in-person visit, resulting in a longer recall period than specified in the protocol.</td>
 </tr>
 <tr>
   <td>EPDS<br><code>pex_bm_epds</code></td>
