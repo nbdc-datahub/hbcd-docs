@@ -55,7 +55,7 @@ The VIA is administered only if the caregiver, spouse/partner, or any of the chi
 
 The **Vancouver Index of Acculturation (VIA)** measures acculturation orientations, or the way immigrants prefer to relate to the society of settlement (cultural adoption) and country of origin (cultural maintenance). For this study, we use the terms “family culture” for a participant’s heritage/ethnic cultural practices and “American culture” for cultural practices that are part of mainstream American culture. In VIA, concepts are not unidimensional where an individual can either maintain the culture of origin OR adopt the culture of settlement. Participants are allowed to choose more than one culture to account for multicultural households. The VIA seeks to understand the participant’s personal preferences for taking part in their family culture as well as those of American culture, if they are different.
 
-Some immigrants may consider American culture as their family culture. They can select “none” to indicate they do not identify with a culture other than American. We attempted to capture many different countries, ethnicities, and religions for participants to select. However, if a participant’s family culture is not listed, they can select “None of these apply/My family culture is not listed”.
+Some immigrants may consider American culture as their family culture. They can select “none” to indicate they do not identify with a culture other than American. We attempted to capture many different countries, ethnicities, and religions for participants to select. However, if a participant’s family culture is not listed, they can select “None of these apply/My family culture is not listed.”
 
 Participants are not to be asked about immigration or documentation status. The intent is that they only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided.
 
@@ -70,7 +70,11 @@ Participants are not to be asked about immigration or documentation status. The 
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The Heritage/family culture subscore (<code>sed_cg_via_total_score_even</code>) is the mean of the items asking about family culture, whereas the Mainstream subscore (<code>sed_cg_via_total_score_odd</code>) is the mean of the items asking about American culture. Non-responses ("Decline to answer" or "Don't know") are not included in the subscores.</p>
+<p>The family culture subscore is the mean of the 9 items asking about "family culture," whereas the mainstream subscore is the mean of the 9 items asking about "American culture."</p>
+<p>Family culture questions are even-numbered: <code>sed_cg_via_006</code> through <code>sed_cg_via_022</code>.</p>
+<p>American culture questions are odd-numbered: <code>sed_cg_via_007</code> through <code>sed_cg_via_023</code>.</p>
+<p>If a participant chooses 777 ("Decline to answer"), or 999 ("Don't know"), please do not include those values in the mean score calculations.</p>
+<p>High scores on each 9-item subscale can be interpreted as a positive orientation toward the specific cultural group and/or higher levels of identification with the culture represented. A high score on both subscales is associated with having a strong bicultural identity. Subscale mean scores can be used independently and/or compared by researchers in a variety of ways, depending on the research question.</p>
 </div>
 
 ## References
