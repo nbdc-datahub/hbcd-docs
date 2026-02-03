@@ -127,14 +127,14 @@ This field is included, but blank across all instruments and will be removed.</t
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr style="border-bottom:2px solid #ccc;">
-    <th style="width: 20%;">TABLE/DATA</th>
+    <th>TABLE/DATA</th>
     <th style="width: 1%; text-align: center;">FIX</th>
     <th>KNOWN ISSUE</th>
   </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Pregnancy/Infant Health<br><code>pex_bm_health*</code></td>
+  <td>Preg/Inf Health<br><code>pex_bm_health*</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   ICD codes are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <i>Health V1- Medications</i>, while the <i>Health V2- Pregnancy</i> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>
@@ -157,10 +157,14 @@ This field is included, but blank across all instruments and will be removed.</t
   <td style="word-wrap: break-word; white-space: normal;">Note that the field for the date when PNV was stopped (<code>exp__pnv_007__01</code>) is blank, despite participants having reported stopping.</td>
 </tr>
 <tr>
-  <td>TLFB<br><code>pex_ch_tlfb</code></td>
+  <td rowspan="2">TLFB<br><code>pex_ch_tlfb</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
-  Participants enrolled postnatally (<i>HBCD Main Child- Postnatal Recruitment</i> or <i>HBCD Multiple Birth- Postnatal Recruitment</i> cohorts) reported TLFB on the wrong weeks. Weeks were either reported in TLFB versions 1 or 2, but should be reported in TLFB version 3 (<a href="../../instruments/pregexp/su/tlfb/#v3">see details</a>).</td>
+  Weeks for postnatal recruits (<a href="../../instruments/demo/visitinfo#postnatal-recruits-pnr">PNR</a>) were mistakenly reported in the TLFB <b>versions 1</b> or <b>2</b> instead of <a href="../../instruments/pregexp/su/tlfb/#v3"><b>version 3</b> adapted for PNR</a>. These will be adjusted to <b>version 3</b> in the next release.</td>
+</tr>
+<tr>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">N=8 PNR were not administered the V1 portion of the TLFB. When this was recognized, the participants were administered the TLFB at the next in-person visit, resulting in a longer recall period than specified in the protocol. These will be updated in the next release once the V1 data is collected.</td>
 </tr>
 <tr>
   <td>EPDS<br><code>pex_bm_epds</code></td>
