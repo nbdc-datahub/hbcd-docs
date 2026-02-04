@@ -209,7 +209,7 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><b><a href="https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1</a> items and scoring overview, including HBCD adaptations:</b></p>
+<p><b><a href="https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1</a> items (scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe) and gating overview, including HBCD adaptations:</b></p>
 
 <table class="compact-table-no-vertical-lines">
 <tfoot><tr><td colspan="4"><b>*</b> <i>All items scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe</i></td></tr></tfoot>
@@ -225,80 +225,80 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Depression</td>
 <td style="word-wrap: break-word; white-space: normal;">depr_001, depr_002</td>
-<td style="word-wrap: break-word; white-space: normal;">administered, but all to level 2 (no gating)</td>
-<td style="word-wrap: break-word; white-space: normal;">PROMIS Adult Short Form<br />v1.0 &ndash; Depression 8a</td>
+<td style="word-wrap: break-word; white-space: normal;">None (all proceed to Level 2)</td>
+<td style="word-wrap: break-word; white-space: normal;">PROMIS Adult Short Form v1.0 Depression 8a</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Anger</td>
 <td style="word-wrap: break-word; white-space: normal;">apa_1_anger_001</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_anger_001 ge 2</td>
-<td style="word-wrap: break-word; white-space: normal;">LEVEL 2&mdash;Anger&mdash;Adult (PROMIS Emotional Distress&mdash;Anger&mdash;Short Form)</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_anger_001 &ge; 2</td>
+<td style="word-wrap: break-word; white-space: normal;">LEVEL 2-Anger-Adult (PROMIS Emotional Distress-Anger-Short Form)</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Mania</td>
 <td style="word-wrap: break-word; white-space: normal;">apa_1_mania_001, apa_1_mania_002</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_mania_001 or apa_1_mania_002 ge 2</td>
-<td style="word-wrap: break-word; white-space: normal;">LEVEL 2&mdash;Mania&mdash;Adult (Altman Self-Rating Mania Scale)</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_mania_001 or apa_1_mania_002  &ge; 2</td>
+<td style="word-wrap: break-word; white-space: normal;">LEVEL 2-Mania-Adult (Altman Self-Rating Mania Scale)</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Anxiety</td>
 <td style="word-wrap: break-word; white-space: normal;">apa_1_anx_001</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_anx_001 ge 2</td>
-<td style="word-wrap: break-word; white-space: normal;">LEVEL 2&mdash;Anxiety&mdash;Adult (PROMIS Emotional Distress&mdash;Anxiety&mdash;Short Form)</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_anx_001  &ge; 2</td>
+<td style="word-wrap: break-word; white-space: normal;">LEVEL 2-Anxiety-Adult (PROMIS Emotional Distress-Anxiety-Short Form)</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Somatic</td>
 <td style="word-wrap: break-word; white-space: normal;">apa_1_somat_001, apa_1_somat_002</td>
-<td style="word-wrap: break-word; white-space: normal;">administered, but all to level 2 (no gating)</td>
-<td style="word-wrap: break-word; white-space: normal;">LEVEL 2&mdash;Somatic Symptom&mdash;Adult (Patient Health Questionnaire 15 Somatic<br />Symptom Severity [PHQ-15])</td>
+<td style="word-wrap: break-word; white-space: normal;">None (all proceed to Level 2)</td>
+<td style="word-wrap: break-word; white-space: normal;">LEVEL 2-Somatic Symptom-Adult (Patient Health Questionnaire 15 Somatic Symptom Severity [PHQ-15])</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Self-harm</td>
 <td style="word-wrap: break-word; white-space: normal;">apa_1_suic_001</td>
-<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
-<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Psychosis</td>
 <td style="word-wrap: break-word; white-space: normal;">apa_1_psych_001, apa_1_psych_002</td>
-<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
-<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Sleep</td>
 <td style="word-wrap: break-word; white-space: normal;">apa_1_sleep_001</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_sleep_001 ge 2</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_sleep_001  &ge; 2</td>
 <td style="word-wrap: break-word; white-space: normal;">Adult v1.0 - Sleep Disturbance 8a</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Memory</td>
 <td style="word-wrap: break-word; white-space: normal;">apa_1_memo_001</td>
-<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
-<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Repetitive</td>
 <td style="word-wrap: break-word; white-space: normal;">apa_1_repet_001, apa_1_repet_002</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_repet_001 or apa_1_repet_002 ge 2</td>
-<td style="word-wrap: break-word; white-space: normal;">LEVEL 2&mdash;Repetitive Thoughts and Behaviors&mdash;Adult (adapted from the Florida<br />Obsessive-Compulsive Inventory [FOCI] Severity Scale [Part B])</td>
+<td style="word-wrap: break-word; white-space: normal;">apa_1_repet_001 or apa_1_repet_002  &ge; 2</td>
+<td style="word-wrap: break-word; white-space: normal;">LEVEL 2-Repetitive Thoughts and Behaviors-Adult (adapted from the Florida Obsessive-Compulsive Inventory [FOCI] Severity Scale [Part B])</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Dissociation</td>
 <td style="word-wrap: break-word; white-space: normal;">apa_1_disso_001</td>
-<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
-<td style="word-wrap: break-word; white-space: normal;">no level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
+<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Personality</td>
-<td style="word-wrap: break-word; white-space: normal;">not administered</td>
-<td style="word-wrap: break-word; white-space: normal;">not administered- all to personality inventory</td>
+<td style="word-wrap: break-word; white-space: normal;">Not administered</td>
+<td style="word-wrap: break-word; white-space: normal;">Not administered- all to personality inventory</td>
 <td style="word-wrap: break-word; white-space: normal;">Personality inventory for DSM-5 Brief</td>
 </tr>
 <tr>
 <td>Substance use</td>
-<td style="word-wrap: break-word; white-space: normal;">not administered</td>
-<td style="word-wrap: break-word; white-space: normal;">not administered</td>
-<td style="word-wrap: break-word; white-space: normal;">not administered</td>
+<td style="word-wrap: break-word; white-space: normal;">Not administered</td>
+<td style="word-wrap: break-word; white-space: normal;">Not administered</td>
+<td style="word-wrap: break-word; white-space: normal;">Not administered</td>
 </tr>
 </tbody>
 </table>
@@ -329,7 +329,7 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 <tr>
 <td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/c1783d55-268a-47b2-9932-a549b21c8d64/APA-DSM5TR-Level2ManiaAdult.pdf" target="_blank">Mania</a></td>
 <td style="word-wrap: break-word; white-space: normal;">apa_2_mania_001-apa_2_mania_005</td>
-<td style="word-wrap: break-word; white-space: normal;">sum all items; score of ge 6 indicates high probability of mania</td>
+<td style="word-wrap: break-word; white-space: normal;">sum all items; score of  &ge; 6 indicates high probability of mania</td>
 <td style="word-wrap: break-word; white-space: normal;">One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
 </tr>
 <tr>
