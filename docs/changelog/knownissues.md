@@ -134,6 +134,12 @@ This field is included, but blank across all instruments and will be removed.</t
 </thead>
 <tbody>
 <tr>
+  <td>APA 1/2<br><code>pex_bm_apa</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">There are cases where APA Level 2 was administered against gating logic (e.g. for Repetitive Behavior despite there being missing Level 1 responses). As Level 2 administration was not expected, these are not scored (score values = "No additional inquiry required") despite having Level 2 item responses present. The Level 2 item-level data will be removed in the future to prevent confusion. 
+</td>
+</tr>
+<tr>
   <td>Preg/Inf Health<br><code>pex_bm_health*</code></td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
