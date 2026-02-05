@@ -8,6 +8,7 @@
 See the following sections for detailed descriptions for each column in the [data dictionary](#data-dictionary-elements) and [levels table](#levels-table).
 
 ## Data Dictionary Elements
+
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
 <i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases&nbsp;&nbsp;
 <i style="color: teal;" class="fa fa-language"></i>&nbsp;= Column available in Spanish (includes <code>label_es</code>, <code>instruction_es</code>, <code>header_es</code>, <code>note_es</code>)
@@ -21,7 +22,6 @@ See the following sections for detailed descriptions for each column in the [dat
 </tr>
 </thead>
 <tbody>
-<!-- CORE METADATA -->
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>CORE METADATA</b></td>
 </tr>
@@ -46,7 +46,6 @@ See the following sections for detailed descriptions for each column in the [dat
   <td style="word-wrap: break-word; white-space: normal;">Source of information. Possible values include:<br>
   <i>Biological Mother | Caregiver (Responsible Adult) | Child | General</i></td>
 </tr>
-<!-- MR/EEG -->
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>IMAGING & EEG</b></td>
 </tr>
@@ -60,7 +59,6 @@ See the following sections for detailed descriptions for each column in the [dat
   <td>Atlas</td>
   <td style="word-wrap: break-word; white-space: normal;">Imaging only: Atlas used to derive parcellated structural measures and functional timeseries (e.g., <i>Gordon</i> - <a href="../../instruments/mri/#parc" target="_blank">see full list</a>)</td>
 </tr>
-<!-- TABLE STRUCTURE -->
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>TABLE-LEVEL INFORMATION</b></td>
 </tr>
@@ -89,7 +87,6 @@ See the following sections for detailed descriptions for each column in the [dat
   <td>Data Warning (table)</td>
   <td style="word-wrap: break-word; white-space: normal;">Data Warning (<a href="../resp_data_use/#warnings" target="_blank"><i>see details</i></a>)</td>
 </tr>
-<!-- VARIABLE METADATA -->
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>VARIABLE-LEVEL INFORMATION</b></td>
 </tr>
@@ -137,7 +134,6 @@ See the following sections for detailed descriptions for each column in the [dat
   <td>Data Warning (var)</td>
   <td style="word-wrap: break-word; white-space: normal;">Data Warning (<a href="../resp_data_use/#warnings" target="_blank"><i>see details</i></a>) - variable-specific</td>
 </tr>
-<!-- VARIABLE TYPES -->
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>VARIABLE TYPE & FORMAT</b></td>
 </tr>
@@ -157,7 +153,6 @@ See the following sections for detailed descriptions for each column in the [dat
   <td style="word-wrap: break-word; white-space: normal;">Level of measurement</td>
   <td style="word-wrap: break-word; white-space: normal;">Levels include: <i>nominal | ordinal | interval | ratio</i></td>
 </tr>
-<!-- DISPLAY PROPERTIES -->
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>DISPLAY PROPERTIES</b></td>
 </tr>
@@ -176,7 +171,6 @@ See the following sections for detailed descriptions for each column in the [dat
   <td>Branching logic</td>
   <td style="word-wrap: break-word; white-space: normal;">Branching logic applied to variable/question</td>
 </tr>
-<!-- IDENTIFIERS & ORDER -->
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>IDENTIFIERS & ORDER</b></td>
 </tr>
