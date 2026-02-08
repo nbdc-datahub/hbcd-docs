@@ -66,106 +66,129 @@ The **Study Navigator Contact Form** included in the data release captures visit
 </div>
 <div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines">
-  <thead>
-    <tr>
-      <th>Variable</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>FORM_SITE</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>CV_CUSTOM_ID_COPY</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>FORM_SOURCE</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>AGE_IN_WEEKS_EDD_AT_CONTACT</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>WHO_SCHEDULED_CONTACT</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>SINGLE_OR_MULTIPLE_CONTACTS</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>CONTACT_SITE</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>SUCCESSFUL_CONTACT</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>WHY_UNABLE_TO_CONTACT</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>BARRIERS_TO_STUDY_ASSESSMENT_CHECKBOXES</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>BARRIERS_TO_STUDY_ASSESSMENT_CHECKBOXES_PART_2</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>PREGNANCY_AND_LABOR_CHECKBOXES</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>CHILD_HEALTH_CHECKBOXES</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>PARENTS_GUARDIANS_CHECKBOXES</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>BROADER_FAMILY_HEALTH_CHECKBOXES</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>SOCIOECONOMIC_RESOURCES_CHECKBOXES</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>SUBSTANCE_USE_CHECKBOXES</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>OTHER_CHECKBOXES</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>IS_FOLLOW_UP_NEEDED</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>IS_CONTACT_SCHEDULED</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>AGE_IN_WEEKS_EDD_NEXT_CONTACT</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>AGE_IN_WEEKS_EDD_FINAL_NAV_CONTACT</code></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><code>AGE_IN_EDD_WEEKS_DATE_OF_COMPLETION</code></td>
-      <td>&nbsp;</td>
-    </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Possible/Example Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>FORM_SITE</code></td>
+<td>Site of contact</td>
+<td>see <a href="../../../access/metadata/#sites">Global Site ID Mapping</a></td>
+</tr>
+<tr>
+<td><code>CV_CUSTOM_ID_COPY</code></td>
+<td>Participant ID</td>
+</tr>
+<tr>
+<td><code>FORM_SOURCE</code></td>
+<td>Respondent</td>
+<td><code>CH</code> (<i>Child</i>); <code>BP</code> (<i>Birth Parent</i>)</td>
+</tr>
+<tr>
+<td><code>AGE_IN_WEEKS_EDD_AT_CONTACT</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><code>WHO_SCHEDULED_CONTACT</code></td>
+<td>Who scheduled visit</td>
+<td><code>participant</code>; <code>navigator</code></td>
+</tr>
+<tr>
+<td><code>SINGLE_OR_MULTIPLE_CONTACTS</code></td>
+<td>Single or multiple contacts</td>
+<td><code>multiple_contacts</code>; <code>one_contact</code></td>
+</tr>
+<tr>
+<td><code>CONTACT_SITE</code></td>
+<td>Site of contact/administration</td>
+<td><code>clinic</code>; <code>phone</code></td>
+</tr>
+<tr>
+<td><code>SUCCESSFUL_CONTACT</code></td>
+<td>Contact completed</td>
+<td><code>yes</code>; <code>no</code></td>
+</tr>
+<tr>
+<td><code>WHY_UNABLE_TO_CONTACT</code></td>
+<td>Reason for unsuccessful contact</td>
+<td><code>participant_left_b4_contact</code> (<i>define</i>)</td>
+</tr>
+<tr>
+<td><code>BARRIERS_TO_STUDY_ASSESSMENT_CHECKBOXES</code></td>
+<td>&nbsp;</td>
+<td></td>
+</tr>
+<tr>
+<td><code>BARRIERS_TO_STUDY_ASSESSMENT_CHECKBOXES_PART_2</code></td>
+<td>&nbsp;</td>
+<td></td>
+</tr>
+<tr>
+<td><code>PREGNANCY_AND_LABOR_CHECKBOXES</code></td>
+<td>&nbsp;</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CHILD_HEALTH_CHECKBOXES</code></td>
+<td>&nbsp;</td>
+<td></td>
+</tr>
+<tr>
+<td><code>PARENTS_GUARDIANS_CHECKBOXES</code></td>
+<td>&nbsp;</td>
+<td></td>
+</tr>
+<tr>
+<td><code>BROADER_FAMILY_HEALTH_CHECKBOXES</code></td>
+<td>&nbsp;</td>
+<td></td>
+</tr>
+<tr>
+<td><code>SOCIOECONOMIC_RESOURCES_CHECKBOXES</code></td>
+<td>&nbsp;</td>
+<td></td>
+</tr>
+<tr>
+<td><code>SUBSTANCE_USE_CHECKBOXES</code></td>
+<td>&nbsp;</td>
+<td></td>
+</tr>
+<tr>
+<td><code>OTHER_CHECKBOXES</code></td>
+<td>&nbsp;</td>
+<td></td>
+</tr>
+<tr>
+<td><code>IS_FOLLOW_UP_NEEDED</code></td>
+<td>Followup needed</td>
+<td><code>yes</code>; <code>no</code></td>
+</tr>
+<tr>
+<td><code>IS_CONTACT_SCHEDULED</code></td>
+<td>Followup contact scheduled</td>
+<td><code>yes</code>; <code>no</code></td>
+</tr>
+<tr>
+<td><code>AGE_IN_WEEKS_EDD_NEXT_CONTACT</code></td>
+<td>&nbsp;</td>
+  <td></td>
+</tr>
+<tr>
+<td><code>AGE_IN_WEEKS_EDD_FINAL_NAV_CONTACT</code></td>
+<td>&nbsp;</td>
+  <td></td>
+</tr>
+<tr>
+<td><code>AGE_IN_EDD_WEEKS_DATE_OF_COMPLETION</code></td>
+<td>&nbsp;</td>
+  <td></td>
+</tr>
+</tbody>
 </table>
 </div>
 
