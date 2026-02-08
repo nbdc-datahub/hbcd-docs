@@ -15,7 +15,7 @@ The **Study Navigator Contact Form** data is provided by the Study Navigator, or
   <span class="arrow">▸</span>
 </div>
 <div class="alert-collapsible-content">
-<p>Study Navigators were strongly encouraged but not required to fill out the Study Navigator Contact Form. Guidance was provided to complete the contact form as soon as possible (within 24 hours) after a contact with a participant. Study Navigators were also provided with the option to complete the form to document multiple contacts within a specific time or for a specific participant (text messages, phone calls, etc.). The data is subject to recall bias.</p> 
+<p>Study Navigators were strongly encouraged, but not required, to fill out the Study Navigator Contact Form. Guidance was provided to complete the contact form as soon as possible (within 24 hours) after a contact with a participant. Study Navigators were also provided with the option to complete the form to document multiple contacts within a specific time or for a specific participant (text messages, phone calls, etc.). The data is subject to recall bias.</p> 
 </div>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
@@ -33,13 +33,15 @@ The **Study Navigator Contact Form** data is provided by the Study Navigator, or
 <p>There is wide variation across HBCD sites and Study Navigators in use of the forms, which should be considered in any analyses conducted and conclusions drawn using contact form data. Additionally, some HBCD sites provided study navigator support to all participants, and some sites focused support on participants with substance use and/or participants experiencing significant adversities.</p> 
 </div>
 
-The Study Navigators Contact Form dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>study_nav/</code> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*):
+---
+
+The Study Navigators Contact Form dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>study_navigator/</code> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*):
 
 <pre class="folder-tree">
 hbcd/
 └── concatenated/
-  └── study_nav/
-      ├── ADD FILENAMES
+  └── study_navigator/
+      └── Study Navigator Export - Release 2.0.csv
 </pre>
 
 ## Details

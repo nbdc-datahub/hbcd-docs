@@ -60,7 +60,35 @@ Expand the sections below to see a list of measures associated with each domain 
   Expand All Sections ↕️
 </button>
 
-### Demographics
+<div id="admin" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Administrative</span>
+  <a class="anchor-link" href="#admin" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>The following data is provided not tied to a specific domain, but associated with recruitment and retention efforts for the HBCD Study.</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="width: 30%;">Instrument</th>
+      <th style="width: 30%;">Construct</th>
+      <th style="width: 30%;">Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
+<td>Study Navigation</td>
+<td><i>study_nav/</i></td>
+</tr>
+</tbody>
+</table>
+</div>
+
 <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
   <span class="text-with-link">
