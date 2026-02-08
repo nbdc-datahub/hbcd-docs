@@ -111,6 +111,11 @@ Approximately **30 new study instruments/measures** have been added across the f
 </thead>
 <tbody>
 <tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"></i> ADM
+  <span class="tooltiptext">Administrative</span></span></td>
+  <td>Study Navigator Contact Form &nbsp;<i style="color: teal;" class="fas fa-layer-group"></i></td>
+<tr>
+<tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i> IMG
   <span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
   <td>Pre-Scan Questionnaire</td>

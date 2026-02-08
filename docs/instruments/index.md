@@ -40,8 +40,6 @@ alt="Age of Child participants at each Visit number: Visit 1 (V01) = Prenatal; V
 - <a href="../datacuration/phenotypes" target="_blank">Tabulated data</a> contain data across all participants organized according to a standardized tabulated format for HBCD (*includes Behavior, Biospecimens, Demographics, data derived from file-based MR/EEG data, etc.*).
 - <a href="../datacuration/file-based-data/" target="_blank">File-based data</a> are in varied, modality-specific formats. This includes <a href="../datacuration/file-based-data/#raw-bids" target="_blank">raw BIDS data</a> and <a href="../datacuration/file-based-data/#derivatives" target="_blank">processed derivatives</a> organized under subject/session-level folders (*MRI/MRS, EEG, and Wearable Sensors*) as well as <a href="../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a> aggregated across participants for certain modalities (*including Genomics*).
 
-Expand the sections below to see a list of measures associated with each domain included in the latest release data.
-
 ## Instruments by Domain
 
 Expand the sections below to see a list of measures associated with each domain included in the latest release data.
@@ -62,7 +60,7 @@ Expand the sections below to see a list of measures associated with each domain 
 
 <div id="admin" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="text">Administrative</span>
+  <span class="text">Administrative Data</span>
   <a class="anchor-link" href="#admin" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -70,20 +68,17 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The following data is provided not tied to a specific domain, but associated with recruitment and retention efforts for the HBCD Study.</p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-  <thead>
-    <tr>
-      <th style="width: 30%;">Instrument</th>
-      <th style="width: 30%;">Construct</th>
-      <th style="width: 30%;">Table Name</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
-<td>Study Navigation</td>
-<td><i>study_nav/</i></td>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<th>Instrument</th>
+<th>Construct</th>
+<th><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Concatenated Data (<a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>)</th>
+</thead>
+<tbody>
+<tr>
+<td><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
+<td>Recruitment/Retention</td>
+<td><i>study_navigator/Study Navigator Export - Release 2.0.csv</i></td>
 </tr>
 </tbody>
 </table>

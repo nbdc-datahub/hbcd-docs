@@ -308,8 +308,12 @@ The `concatenated/` folder contains participant-level files aggregated across al
 <pre class="folder-tree">
 hbcd/
 |__ concatenated/ 
-    |__ genetics/
-NOTE: need to confirm folder names, these are placeholders
+    └── genetics/
+        ├── hbcd.bed
+        ├── hbcd.bim
+        ├── hbcd.fam
+        ├── batch.info
+        └── README
 </pre>
 
 Visit the instrument documentation pages for information on the unique file contents of each subfolder:

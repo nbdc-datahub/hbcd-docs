@@ -54,6 +54,121 @@ The **Study Navigator Contact Form** included in the data release captures visit
 - Support topics discussed
 - Actions taken during each contact
 
+<div id="metadata" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+    <span class="text">Study Navigator Variables</span>
+    <a class="anchor-link" href="#metadata" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table-no-vertical-lines">
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>FORM_SITE</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>CV_CUSTOM_ID_COPY</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>FORM_SOURCE</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_WEEKS_EDD_AT_CONTACT</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>WHO_SCHEDULED_CONTACT</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>SINGLE_OR_MULTIPLE_CONTACTS</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>CONTACT_SITE</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>SUCCESSFUL_CONTACT</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>WHY_UNABLE_TO_CONTACT</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>BARRIERS_TO_STUDY_ASSESSMENT_CHECKBOXES</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>BARRIERS_TO_STUDY_ASSESSMENT_CHECKBOXES_PART_2</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>PREGNANCY_AND_LABOR_CHECKBOXES</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>CHILD_HEALTH_CHECKBOXES</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>PARENTS_GUARDIANS_CHECKBOXES</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>BROADER_FAMILY_HEALTH_CHECKBOXES</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>SOCIOECONOMIC_RESOURCES_CHECKBOXES</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>SUBSTANCE_USE_CHECKBOXES</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>OTHER_CHECKBOXES</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>IS_FOLLOW_UP_NEEDED</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>IS_CONTACT_SCHEDULED</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_WEEKS_EDD_NEXT_CONTACT</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_WEEKS_EDD_FINAL_NAV_CONTACT</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_EDD_WEEKS_DATE_OF_COMPLETION</code></td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 ## Quality Control
 This form is under development for HBCD. Data was collected with guidance using the <a href="../SNContactFormCompanionGuideOutline_Pilot_V4-HH.pdf" target="_blank">HBCD Study Navigation Contact Form Guide</a>.
 Data review and cleaning has occurred 3 times: September 2024, February 2025, and November 2025. Minor updates to the form and the form guide were completed in September 2024 and October 2025.
