@@ -43,7 +43,7 @@
 General visit information includes site, project, and information about missed visits and participant withdrawal.
 
 <div id="gen" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="emoji"><i class="fa-solid fa-table"></i></span>
   <span class="text-with-link">
   <span class="text">General Visit Level Data Variables</span>
   <a class="anchor-link" href="#gen" title="Copy link">
@@ -98,7 +98,7 @@ Visit Level Data also includes **substance use flags**, which are single-summary
  - <a href="../../biospec/urine" target="_blank">USDTL urine toxicology results</a> (<i>note: <a href="../../biospec/nails" target="_blank">Nail toxicology results</a> were not used in the creation of the substance use flags</i>)
  
 <div id="su" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="emoji"><i class="fa-solid fa-table"></i></span>
   <span class="text-with-link">
   <span class="text">SU Visit Level Data Variables</span>
   <a class="anchor-link" href="#su" title="Copy link">
@@ -190,6 +190,11 @@ Visit Level Data also includes **substance use flags**, which are single-summary
 <p></p>
 
 ## Cohort & Caregiver Types
+
+<div class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">See <a href="../../../changelog/releasenotes/#participant-population-inclusionexclusion-criteria" target="_blank">Release Notes</a> for participant population inclusion/exclusion information.</span>
+</div>
 
 ### HBCD Cohorts
 **Cohort** information (<code>par_visit_data_cohort</code>) includes cohort subtypes and caregiver type (*Type A-E* - [see details](#caregiver-types)) for each participant. Cohort subtypes are split into **Main Child** and **Multiple Birth**, with additional labeling for *Postnatal Recruits* (*PNR*) and Multiple Birth siblings (*Main Child* vs. *Sibling*):
