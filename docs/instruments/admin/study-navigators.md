@@ -48,7 +48,7 @@ The **Study Navigator Contact Form** data is provided by the Study Navigator, or
 
 ---
 
-The Study Navigators Contact Form dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>study_navigator/</code> (<i>see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details</i>):
+The Study Navigators Contact Form dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a> under <code>study_navigator/</code> (<i>see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details</i>):
 
 <pre class="folder-tree">
 hbcd/
@@ -78,13 +78,13 @@ The **Study Navigator Contact Form** included in the data release captures visit
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b>NOTE: For checkbox items, each checked item has a followup item to specify one or more of the following as they apply: <i>discussion</i>; <i>other</i>; <i>referrals</i>; <i>resources</i>.</b></p>
+<p style="color: red; font-size: 1.2em;">ADMIN NOTE: WG TO PROVIDE INFORMATION FOR TABLE VARIABLES, INCLUDING HOW AGE VARIABLES ARE COMPUTED</p>
 <table class="compact-table-no-vertical-lines">
   <thead>
     <tr>
       <th style="width: 20%;">Variable</th>
       <th style="width: 25%;">Description</th>
-      <th style="width: 55%;">Possible / Example Values</th>
+      <th style="width: 55%;">Possible Values (if categorical)</th>
     </tr>
   </thead>
   <tbody>
@@ -96,17 +96,12 @@ The **Study Navigator Contact Form** included in the data release captures visit
     <tr>
       <td><code>CV_CUSTOM_ID_COPY</code></td>
       <td>Participant ID</td>
-      <td></td>
+      <td>&mdash;</td>
     </tr>
     <tr>
       <td><code>FORM_SOURCE</code></td>
       <td>Respondent</td>
       <td>CH <i>(Child)</i>; BP <i>(Birth Parent)</i></td>
-    </tr>
-    <tr>
-      <td><code>AGE_IN_WEEKS_EDD_AT_CONTACT</code></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td><code>WHO_SCHEDULED_CONTACT</code></td>
@@ -137,6 +132,40 @@ The **Study Navigator Contact Form** included in the data release captures visit
         other; participant_left_b4_contact; prefer_to_complete_later; unable_to_complete_due_to_circumstances
       </td>
     </tr>
+    <tr>
+      <td><code>IS_FOLLOW_UP_NEEDED</code></td>
+      <td>Follow-up needed</td>
+      <td>yes; no</td>
+    </tr>
+    <tr>
+      <td><code>IS_CONTACT_SCHEDULED</code></td>
+      <td>Follow-up contact scheduled</td>
+      <td>yes; no</td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_WEEKS_EDD_AT_CONTACT</code></td>
+      <td>Age at contact</td>
+      <td>&mdash;</td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_WEEKS_EDD_NEXT_CONTACT</code></td>
+      <td>Age at next contact</td>
+      <td>&mdash;</td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_WEEKS_EDD_FINAL_NAV_CONTACT</code></td>
+      <td>Age at final contact</td>
+      <td>&mdash;</td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_EDD_WEEKS_DATE_OF_COMPLETION</code></td>
+      <td>Age on completion date</td>
+      <td>&mdash;</td>
+    </tr>
+<tr>
+  <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;">
+  <b>CHECKBOX FIELDS</b> [NOTE: each value is appended with one of the following: <i>/discussion</i>; <i>/other</i>; <i>/referrals</i>; <i>/resources</i>]</td>
+</tr>
     <tr>
       <td><code>BARRIERS_TO_STUDY_ASSESSMENT_<br>CHECKBOXES</code></td>
       <td></td>
@@ -196,31 +225,6 @@ The **Study Navigator Contact Form** included in the data release captures visit
     </tr>
     <tr>
       <td><code>OTHER_CHECKBOXES</code></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>IS_FOLLOW_UP_NEEDED</code></td>
-      <td>Follow-up needed</td>
-      <td>yes; no</td>
-    </tr>
-    <tr>
-      <td><code>IS_CONTACT_SCHEDULED</code></td>
-      <td>Follow-up contact scheduled</td>
-      <td>yes; no</td>
-    </tr>
-    <tr>
-      <td><code>AGE_IN_WEEKS_EDD_NEXT_CONTACT</code></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>AGE_IN_WEEKS_EDD_FINAL_NAV_CONTACT</code></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>AGE_IN_EDD_WEEKS_DATE_OF_COMPLETION</code></td>
       <td></td>
       <td></td>
     </tr>
