@@ -2,7 +2,7 @@
 
 ## Participant Population (Inclusion/Exclusion Criteria)
 
-HBCD enrolls at least 25% of participants who have more than minimal substance use during pregnancy, including opioids ([Si et al. 2024](https://doi.org/10.1016/j.dcn.2024.101432)). In addition, HBCD enrollment strategies aimed at yielding a study population that is representative of the individual and geographic characteristics of reproductive-aged women in the United States who had a birth in the past 12 months, and include an adequate comparison group for substance exposed individuals ([Nelson et al. 2024](https://doi.org/10.1016/j.dcn.2024.101441)). There are siblings enrolled in HBCD, some of whom are twins or triplets (multiples). IDs for multiples are presented in release notes.
+HBCD enrolls at least 25% of participants who have more than minimal substance use during pregnancy, including opioids ([Si et al. 2024](https://doi.org/10.1016/j.dcn.2024.101432)). In addition, HBCD enrollment strategies aimed at yielding a study population that is representative of the individual and geographic characteristics of reproductive-aged women in the United States who had a birth in the past 12 months, and include an adequate comparison group for substance exposed individuals ([Nelson et al. 2024](https://doi.org/10.1016/j.dcn.2024.101441)). There are siblings enrolled in HBCD, some of whom are twins or triplets (multiples). IDs for multiples are presented in the *HBCD Private Release Notes* - see <a href="../../instruments/demo/visitinfo/#multiple-birth-participants" target="_blank">Multiple Birth Participants</a> under **Visit Information** for details.
 
 ## General Rules Applied to All Data
 
