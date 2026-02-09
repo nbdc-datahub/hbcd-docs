@@ -103,7 +103,7 @@ There are four options the Study Navigator can select to indicate actions taken,
 <div id="metadata" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
-    <span class="text">Study Navigator Variables</span>
+    <span class="text">Study Navigator Variables - General</span>
     <a class="anchor-link" href="#metadata" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>
@@ -111,7 +111,6 @@ There are four options the Study Navigator can select to indicate actions taken,
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.1em;"><b>General</b></p>
 <table class="compact-table-no-vertical-lines">
   <thead>
     <tr>
@@ -123,7 +122,7 @@ There are four options the Study Navigator can select to indicate actions taken,
   <tbody>
     <tr>
       <td><code>FORM_SITE</code></td>
-      <td>Site of contact</td>
+      <td>Study site of contact</td>
       <td>See <a href="../../../access/metadata/#sites">Global Site ID Mapping</a></td>
     </tr>
     <tr>
@@ -197,14 +196,25 @@ There are four options the Study Navigator can select to indicate actions taken,
     </tr>
 </tbody>
 </table>
+</div>
 
-<p style="font-size: 1.1em;"><b>Topics Discussed & Actions Taken</b></p>
-<p>NOTE: each response value is appended with one or more of the following to indicate <a href="#navigation-services-support-offered-actions-taken">actions taken</a>: <i>/referrals</i>; <i>/resources</i>; <i>/discussion</i>; <i>/other</i>.</p>
+<div id="metadata-barriers" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+    <span class="text">Study Navigator Variables - Barriers Checkboxes</span>
+    <a class="anchor-link" href="#metadata-barriers" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>The following fields include data for topics discussed & actions taken. <b>NOTE:</b> each response value is appended with one or more of the following to indicate <a href="#navigation-services-support-offered-actions-taken">actions taken</a>: <i>/referrals</i>; <i>/resources</i>; <i>/discussion</i>; <i>/other</i>.</p>
 <table class="compact-table-no-vertical-lines">
   <thead>
     <tr>
       <th style="width: 20%;">Variable</th>
-      <th style="width: 25%;">Description</th>
+      <th style="width: 25%;">Type of Barriers Reported</th>
       <th style="width: 55%;">Possible Values (if categorical)</th>
     </tr>
   </thead>
