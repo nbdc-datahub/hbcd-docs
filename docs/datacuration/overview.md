@@ -1,13 +1,11 @@
-
-<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION: update page to add concatenated file type overview for 2.0</i></p>
-
 # Data Structure Overview
 
 The HBCD dataset follows NBDC data structure standards established as part of the ABCD Study (<a href="https://docs.abcdstudy.org/latest/documentation/curation/structure.html">see details</a>), which incorporates the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. At a high level, data are organized into two categories:
 
 <p style="font-size: 1.1em; margin-bottom: 0;"><i class="fa-solid fa-table"></i> <b>Tabulated Data</b></p>
-Study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), administrative (<a href="../../instruments/#demographics-visit-information" target="_blank">demographics & visit info</a>), and select <a href="../phenotypes/#warning" target="_blank">file-based</a> data organized in a standardized tabular format that includes all participant responses per table.<br>
-<a href="../phenotypes" target="_blank"><i>Go to Tabulated Data documentation</i> <i style="font-size: 0.8em;" class="fa-solid fa-arrow-up-right-from-square"></i></a>
+Demographics (<a href="../../instruments/#demo" target="_blank">demographics & visit info</a>), study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), and select file-based data organized in a standardized tabular format that includes all participant responses per table.
+
+<button class="button-link"><a href="../phenotypes" target="_blank">Go to Tabulated Data Documentation</a></button>
 
 <p style="font-size: 1.1em; margin-bottom: 0;"><i class="fa-solid fa-folder-open"></i> <b>File-Based Data</b></p>
 File-based data is any data that cannot be converted to the HBCD tabulated format. This includes:
@@ -28,8 +26,9 @@ File-based data is any data that cannot be converted to the HBCD tabulated forma
   </tr>
   </tbody>
 </table>
-<a href="../file-based-data" target="_blank"><i>Go to File-Based Data documentation</i> <i style="font-size: 0.9em;" class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
+
+<button class="button-link"><a href="../file-based-data" target="_blank">Go to File-Based Data Documentation</a></button>
 
 <p>
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
@@ -49,7 +48,7 @@ File-based data is any data that cannot be converted to the HBCD tabulated forma
 <li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
 <li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
 </ul>
-<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
+<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../../instruments/mri/mri-proc/#xcpd-derivs" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <tr>
 <td><b>File-based derivatives</b></td>
@@ -66,11 +65,11 @@ File-based data is any data that cannot be converted to the HBCD tabulated forma
 
 <pre class="folder-tree">
 hbcd/
-|__ derivatives/       <span class="hashtag"># Derivatives</span>
-|
+|__ concatenated/      <span class="hashtag"># Concatenated (file-based)</span>
+|__ derivatives/       <span class="hashtag"># Derivatives (file-based)</span>
 |__ rawdata/ 
     |__ phenotype/     <span class="hashtag"># Tabulated Data</span>
-    |__ sub-<span class="label">{ID}</span>/      <span class="hashtag"># Raw BIDS</span>
+    |__ sub-<span class="label">{ID}</span>/      <span class="hashtag"># Raw BIDS (file-based)</span>
 </pre>
 
 <div id="filetree" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #2b2b2bff;">

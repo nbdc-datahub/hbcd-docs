@@ -43,7 +43,7 @@ See <a href="#data-exclusions">Quality Control &gt; Data Exclusions</a> below.</
 </div>
 <p></p>
 
-The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>genetics/</code> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*). It includes **three interlinked PLINK files** (`.bed`, `.bim`, `.fam`) aligned to the **hg19 genome build**, plus supporting documentation and batch metadata:
+The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>genetics/</code> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*). It includes **batch metadata** and **three interlinked PLINK files** (`.bed`, `.bim`, `.fam`) aligned to the **hg19 genome build**:
 
 <pre class="folder-tree">
 hbcd/
@@ -63,6 +63,10 @@ hbcd/
 </thead>
 <tbody>
 <tr>
+  <td><code>batch.info</code></td>
+  <td>Plain-text file mapping participants to genotyping batches.</td>
+</tr>
+<tr>
   <td><code>hbcd.bed</code></td>
   <td><a href="https://www.cog-genomics.org/plink/1.9/formats#bed">PLINK 1.9 <code>.bed</code> format</a> — Binary genotype file (not UCSC BED).</td>
 </tr>
@@ -73,14 +77,6 @@ hbcd/
 <tr>
   <td><code>hbcd.fam</code></td>
   <td><a href="https://www.cog-genomics.org/plink/1.9/formats#fam">PLINK 1.9 <code>.fam</code> format</a> — Participant information.</td>
-</tr>
-<tr>
-  <td><code>batch.info</code></td>
-  <td>Plain-text file mapping participants to genotyping batches.</td>
-</tr>
-<tr>
-  <td><code>README</code></td>
-  <td>Documentation of QC procedures to ensure sample matches (e.g., ID concordance, sex checks).</td>
 </tr>
 </tbody>
 </table>

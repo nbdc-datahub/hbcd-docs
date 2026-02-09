@@ -326,7 +326,7 @@ Visit the instrument documentation pages for information on the unique file cont
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 17px;">
 <thead>
   <tr>
-  <th></th>
+  <th>Folder Name in Release Data</th>
   <th>Study Instrument (<i>Click to Visit Documentation</i>)</th>
   </tr>
 </thead>
