@@ -67,6 +67,39 @@ The **Study Navigator Contact Form** included in the data release captures visit
 - Support topics discussed
 - Actions taken during each contact
 
+### What is a contact? 
+A “contact” includes all scheduled or unscheduled interactions relevant to the study or when providing additional support services to the participant. Contacts can be face-to-face interactions, phone calls, text chats, or other forms of communication between a participant and a research team member providing navigation services. 
+
+### Navigation Services & Support Offered: Actions Taken 
+There are four options the Study Navigator can select to indicate actions taken, i.e. how they responded, for each topic, including:
+
+<table class="table-no-vertical-lines">
+<thead>
+<tr>
+  <th>Action</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><b>Referrals</b></td>
+    <td style="word-wrap: break-word; white-space: normal;">When the navigator initiates a connection between individuals/entities such as a community service, clinical service, or research team member(s). The navigator is contacting this individual/entity to assist the participant in accessing additional support and/or services that they need. </td>
+</tr>
+<tr>
+  <td><b>Resources</b></td>
+    <td style="word-wrap: break-word; white-space: normal;">The navigator shares information (fliers, brochures, websites, etc.) with the participant. The participant can use this content to obtain additional information, support, or services they need.</td>
+</tr>
+<tr>
+  <td><b>Discussion</b></td>
+    <td style="word-wrap: break-word; white-space: normal;">The participant may simply ask the navigator to listen and/or to talk with them about a sensitive matter(s) relevant to the research study or in their personal lives. When appropriate, navigators are responsible for gently reminding participants that they are mandatory reporters. Discussion may be the first step to making a referral or providing a resource.</td>
+</tr>
+<tr>
+  <td><b>Other</b></td>
+    <td style="word-wrap: break-word; white-space: normal;">Any other support the navigator provided that cannot be categorized as a referral, resource, or discussion.</td>
+</tr>
+</tbody>
+</table>
+
 <div id="metadata" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
@@ -78,7 +111,7 @@ The **Study Navigator Contact Form** included in the data release captures visit
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="color: red; font-size: 1.2em;">ADMIN NOTE: WG TO PROVIDE INFORMATION FOR TABLE VARIABLES, INCLUDING HOW AGE VARIABLES ARE COMPUTED</p>
+<p style="font-size: 1.1em;"><b>General</b></p>
 <table class="compact-table-no-vertical-lines">
   <thead>
     <tr>
@@ -95,7 +128,7 @@ The **Study Navigator Contact Form** included in the data release captures visit
     </tr>
     <tr>
       <td><code>CV_CUSTOM_ID_COPY</code></td>
-      <td>Participant ID</td>
+      <td>Participant ID number</td>
       <td>&mdash;</td>
     </tr>
     <tr>
@@ -112,7 +145,7 @@ The **Study Navigator Contact Form** included in the data release captures visit
     <tr>
       <td><code>SINGLE_OR_MULTIPLE_CONTACTS</code></td>
       <td>Single or multiple contacts</td>
-      <td>multiple_contacts; one_contact</td>
+      <td>one_contact; multiple_contacts</td>
     </tr>
     <tr>
       <td><code>CONTACT_SITE</code></td>
@@ -121,7 +154,7 @@ The **Study Navigator Contact Form** included in the data release captures visit
     </tr>
     <tr>
       <td><code>SUCCESSFUL_CONTACT</code></td>
-      <td>Contact completed</td>
+      <td>Navigator completed a contact with the participant</td>
       <td>yes; no</td>
     </tr>
     <tr>
@@ -162,10 +195,21 @@ The **Study Navigator Contact Form** included in the data release captures visit
       <td>Age on completion date</td>
       <td>&mdash;</td>
     </tr>
-<tr>
-  <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;">
-  <b>CHECKBOX FIELDS</b> [NOTE: each value is appended with one of the following: <i>/discussion</i>; <i>/other</i>; <i>/referrals</i>; <i>/resources</i>]</td>
-</tr>
+</tbody>
+</table>
+
+<p style="font-size: 1.1em;"><b>Topics Discussed & Actions Taken</b></p>
+<p>NOTE: each response value is appended with one or more of the following to indicate <a href="#navigation-services-support-offered-actions-taken">actions taken</a>: <i>/referrals</i>; <i>/resources</i>; <i>/discussion</i>; <i>/other</i>.</p>
+<table class="compact-table-no-vertical-lines">
+  <thead>
+    <tr>
+      <th style="width: 20%;">Variable</th>
+      <th style="width: 25%;">Description</th>
+      <th style="width: 55%;">Possible Values (if categorical)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
     <tr>
       <td><code>BARRIERS_TO_STUDY_ASSESSMENT_<br>CHECKBOXES</code></td>
       <td></td>
