@@ -301,19 +301,24 @@ hbcd/
 </table>
 
 ## Concatenated Data
-<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION: update entire contents of page for accuracy</i></p>
-
 The `concatenated/` folder contains participant-level files aggregated across all subjects for certain modalities, organized in modality-specific subfolders.
 
 <pre class="folder-tree">
 hbcd/
 |__ concatenated/ 
-    └── genetics/
-        ├── hbcd.bed
-        ├── hbcd.bim
-        ├── hbcd.fam
-        ├── batch.info
-        └── README
+    |__ genetics/
+    |   |__ genotype_microarray/
+    |       |__ GDA/
+    |           |__ batch.info
+    |           |__ hbcd.bed
+    |           |__ hbcd.bim
+    |           |__ hbcd.fam
+    |
+    |__ geocoding/
+    |   |__ HBCD_address_history_geocoded.csv
+    |
+    |__ study_navigator/
+        |__ Study Navigator Export - Release 2.0.csv
 </pre>
 
 Visit the instrument documentation pages for information on the unique file contents of each subfolder:
@@ -329,6 +334,14 @@ Visit the instrument documentation pages for information on the unique file cont
 <tr>
 <td><code>genetics/</code></td>
 <td><a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Illumina Global Diversity GWAS Array</a></td>
+</tr>
+<tr>
+<td><code>geocoding/</code></td>
+<td><a href="../../instruments/SED/geocoded-linkage" target="_blank">Geocoded Linked External Data (GLED)</a></td>
+</tr>
+<tr>
+<td><code>study_navigator/</code></td>
+<td><a href="../../instruments/admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
 </tr>
 </tbody>
 </table>

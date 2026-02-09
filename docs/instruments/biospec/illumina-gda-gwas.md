@@ -47,13 +47,14 @@ The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-da
 
 <pre class="folder-tree">
 hbcd/
-└── concatenated/
-  └── genetics/
-      ├── hbcd.bed
-      ├── hbcd.bim
-      ├── hbcd.fam
-      ├── batch.info
-      └── README
+|__ concatenated/ 
+    |__ genetics/
+        |__ genotype_microarray/
+            |__ GDA/
+                |__ batch.info
+                |__ hbcd.bed
+                |__ hbcd.bim
+                |__ hbcd.fam
 </pre>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
