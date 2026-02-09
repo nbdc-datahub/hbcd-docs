@@ -209,20 +209,22 @@ There are four options the Study Navigator can select to indicate actions taken,
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The following fields include data for topics discussed & actions taken. <b>NOTE:</b> each response value is appended with one or more of the following to indicate <a href="#navigation-services-support-offered-actions-taken">actions taken</a>: <i>/referrals</i>; <i>/resources</i>; <i>/discussion</i>; <i>/other</i>.</p>
+<p>The following fields include data for topics discussed & actions taken.</p>
 <table class="compact-table-no-vertical-lines">
+<tfoot>
+<tr><td colspan="3"><sup style="color: blue;">1</sup> Each response value is appended with one of the following to indicate <a href="#navigation-services-support-offered-actions-taken">actions taken</a>: <i>/referrals</i>; <i>/resources</i>; <i>/discussion</i>; <i>/other</i>.</td></tr></tfoot>
   <thead>
     <tr>
       <th style="width: 20%;">Variable</th>
-      <th style="width: 25%;">Type of Barriers Reported</th>
-      <th style="width: 55%;">Possible Values (if categorical)</th>
+      <th style="width: 10%;">Barrier Type</th>
+      <th style="width: 70%;">Response Options<sup style="color: blue;">1</sup></th>
     </tr>
   </thead>
   <tbody>
     <tr>
     <tr>
       <td><code>BARRIERS_TO_STUDY_ASSESSMENT_<br>CHECKBOXES</code></td>
-      <td></td>
+      <td>Relevant study domain(s)</td>
         <td>
         biosensors; biospecimen_collection; eeg;
         mri; observational_assessments; surveys
@@ -230,15 +232,15 @@ There are four options the Study Navigator can select to indicate actions taken,
     </tr>
     <tr>
       <td><code>BARRIERS_TO_STUDY_ASSESSMENT_<br>CHECKBOXES_PART_2</code></td>
-      <td></td>
+      <td>General</td>
       <td style="word-wrap: break-word; white-space: normal;">
         childcare; concerns_about_confidentiality; family_instability;
-        lack_of_time; other; transportation
+        lack_of_time; transportation; other
       </td>
     </tr>
     <tr>
       <td><code>PREGNANCY_AND_LABOR_CHECKBOXES</code></td>
-      <td></td>
+      <td>Pregnancy & labor</td>
       <td style="word-wrap: break-word; white-space: normal;">
         newborn_and_infant_care; labor_birth;
         maternal_perinatal_health; postpartum_care
@@ -246,40 +248,40 @@ There are four options the Study Navigator can select to indicate actions taken,
     </tr>
     <tr>
       <td><code>CHILD_HEALTH_CHECKBOXES</code></td>
-      <td></td>
+      <td>Child health</td>
       <td>
         mental_health; physical_health; safety
       </td>
     </tr>
     <tr>
       <td><code>PARENTS_GUARDIANS_CHECKBOXES</code></td>
-      <td></td>
+      <td>Parent or guardians</td>
       <td>
         mental_health; parenting; physical_health; safety
       </td>
     </tr>
     <tr>
       <td><code>BROADER_FAMILY_HEALTH_CHECKBOXES</code></td>
-      <td></td>
+      <td>Family health</td>
       <td>
         caregiving; mental_health; physical_health; safety
       </td>
     </tr>
     <tr>
       <td><code>SOCIOECONOMIC_RESOURCES_CHECKBOXES</code></td>
-      <td></td>
+      <td>Socioeconomic</td>
       <td>
         childcare; financial; food_nutrition; housing; transportation
       </td>
     </tr>
     <tr>
       <td><code>SUBSTANCE_USE_CHECKBOXES</code></td>
-      <td></td>
+      <td>Substance use</td>
       <td></td>
     </tr>
     <tr>
       <td><code>OTHER_CHECKBOXES</code></td>
-      <td></td>
+      <td>Other</td>
       <td></td>
     </tr>
   </tbody>
