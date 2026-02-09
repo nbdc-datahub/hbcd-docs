@@ -1,3 +1,11 @@
+<style>
+.wy-nav-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-grow: 1 !important;
+}
+</style>   
+
 # Study Navigator Contact Form
 
 The **Study Navigator Contact Form** data is provided by the Study Navigator, or person who is offering Study Navigator services, during and/or between study visits (V01-V06).
@@ -33,9 +41,14 @@ The **Study Navigator Contact Form** data is provided by the Study Navigator, or
 <p>There is wide variation across HBCD sites and Study Navigators in use of the forms, which should be considered in any analyses conducted and conclusions drawn using contact form data. Additionally, some HBCD sites provided study navigator support to all participants, and some sites focused support on participants with substance use and/or participants experiencing significant adversities.</p> 
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#administrative" target="_blank">see details</a>.</span>
+</div>
+
 ---
 
-The Study Navigators Contact Form dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>study_navigator/</code> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*):
+The Study Navigators Contact Form dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>study_navigator/</code> (<i>see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details</i>):
 
 <pre class="folder-tree">
 hbcd/
@@ -65,130 +78,153 @@ The **Study Navigator Contact Form** included in the data release captures visit
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><b>NOTE: For checkbox items, each checked item has a followup item to specify one or more of the following as they apply: <i>discussion</i>; <i>other</i>; <i>referrals</i>; <i>resources</i>.</b></p>
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th>Variable</th>
-<th>Description</th>
-<th>Possible/Example Values</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>FORM_SITE</code></td>
-<td>Site of contact</td>
-<td>see <a href="../../../access/metadata/#sites">Global Site ID Mapping</a></td>
-</tr>
-<tr>
-<td><code>CV_CUSTOM_ID_COPY</code></td>
-<td>Participant ID</td>
-</tr>
-<tr>
-<td><code>FORM_SOURCE</code></td>
-<td>Respondent</td>
-<td><code>CH</code> (<i>Child</i>); <code>BP</code> (<i>Birth Parent</i>)</td>
-</tr>
-<tr>
-<td><code>AGE_IN_WEEKS_EDD_AT_CONTACT</code></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td><code>WHO_SCHEDULED_CONTACT</code></td>
-<td>Who scheduled visit</td>
-<td><code>participant</code>; <code>navigator</code></td>
-</tr>
-<tr>
-<td><code>SINGLE_OR_MULTIPLE_CONTACTS</code></td>
-<td>Single or multiple contacts</td>
-<td><code>multiple_contacts</code>; <code>one_contact</code></td>
-</tr>
-<tr>
-<td><code>CONTACT_SITE</code></td>
-<td>Site of contact/administration</td>
-<td><code>clinic</code>; <code>phone</code></td>
-</tr>
-<tr>
-<td><code>SUCCESSFUL_CONTACT</code></td>
-<td>Contact completed</td>
-<td><code>yes</code>; <code>no</code></td>
-</tr>
-<tr>
-<td><code>WHY_UNABLE_TO_CONTACT</code></td>
-<td>Reason for unsuccessful contact</td>
-<td><code>participant_left_b4_contact</code> (<i>define</i>)</td>
-</tr>
-<tr>
-<td><code>BARRIERS_TO_STUDY_ASSESSMENT_CHECKBOXES</code></td>
-<td>&nbsp;</td>
-<td></td>
-</tr>
-<tr>
-<td><code>BARRIERS_TO_STUDY_ASSESSMENT_CHECKBOXES_PART_2</code></td>
-<td>&nbsp;</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PREGNANCY_AND_LABOR_CHECKBOXES</code></td>
-<td>&nbsp;</td>
-<td></td>
-</tr>
-<tr>
-<td><code>CHILD_HEALTH_CHECKBOXES</code></td>
-<td>&nbsp;</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PARENTS_GUARDIANS_CHECKBOXES</code></td>
-<td>&nbsp;</td>
-<td></td>
-</tr>
-<tr>
-<td><code>BROADER_FAMILY_HEALTH_CHECKBOXES</code></td>
-<td>&nbsp;</td>
-<td></td>
-</tr>
-<tr>
-<td><code>SOCIOECONOMIC_RESOURCES_CHECKBOXES</code></td>
-<td>&nbsp;</td>
-<td></td>
-</tr>
-<tr>
-<td><code>SUBSTANCE_USE_CHECKBOXES</code></td>
-<td>&nbsp;</td>
-<td></td>
-</tr>
-<tr>
-<td><code>OTHER_CHECKBOXES</code></td>
-<td>&nbsp;</td>
-<td></td>
-</tr>
-<tr>
-<td><code>IS_FOLLOW_UP_NEEDED</code></td>
-<td>Followup needed</td>
-<td><code>yes</code>; <code>no</code></td>
-</tr>
-<tr>
-<td><code>IS_CONTACT_SCHEDULED</code></td>
-<td>Followup contact scheduled</td>
-<td><code>yes</code>; <code>no</code></td>
-</tr>
-<tr>
-<td><code>AGE_IN_WEEKS_EDD_NEXT_CONTACT</code></td>
-<td>&nbsp;</td>
-  <td></td>
-</tr>
-<tr>
-<td><code>AGE_IN_WEEKS_EDD_FINAL_NAV_CONTACT</code></td>
-<td>&nbsp;</td>
-  <td></td>
-</tr>
-<tr>
-<td><code>AGE_IN_EDD_WEEKS_DATE_OF_COMPLETION</code></td>
-<td>&nbsp;</td>
-  <td></td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th style="width: 20%;">Variable</th>
+      <th style="width: 25%;">Description</th>
+      <th style="width: 55%;">Possible / Example Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>FORM_SITE</code></td>
+      <td>Site of contact</td>
+      <td>See <a href="../../../access/metadata/#sites">Global Site ID Mapping</a></td>
+    </tr>
+    <tr>
+      <td><code>CV_CUSTOM_ID_COPY</code></td>
+      <td>Participant ID</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>FORM_SOURCE</code></td>
+      <td>Respondent</td>
+      <td>CH <i>(Child)</i>; BP <i>(Birth Parent)</i></td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_WEEKS_EDD_AT_CONTACT</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>WHO_SCHEDULED_CONTACT</code></td>
+      <td>Who scheduled visit</td>
+      <td>participant; navigator; research_coordinator_ra; other
+      </td>
+    </tr>
+    <tr>
+      <td><code>SINGLE_OR_MULTIPLE_CONTACTS</code></td>
+      <td>Single or multiple contacts</td>
+      <td>multiple_contacts; one_contact</td>
+    </tr>
+    <tr>
+      <td><code>CONTACT_SITE</code></td>
+      <td>Site of contact</td>
+      <td>clinic; community; home; hospital; other; phone; research_facility; zoom</td>
+    </tr>
+    <tr>
+      <td><code>SUCCESSFUL_CONTACT</code></td>
+      <td>Contact completed</td>
+      <td>yes; no</td>
+    </tr>
+    <tr>
+      <td><code>WHY_UNABLE_TO_CONTACT</code></td>
+      <td>Reason if unable to contact</td>
+      <td style="word-wrap: break-word; white-space: normal;">
+        declined_to_continue; did_not_present; did_not_respond_to_contact;
+        other; participant_left_b4_contact; prefer_to_complete_later; unable_to_complete_due_to_circumstances
+      </td>
+    </tr>
+    <tr>
+      <td><code>BARRIERS_TO_STUDY_ASSESSMENT_<br>CHECKBOXES</code></td>
+      <td></td>
+        <td>
+        biosensors; biospecimen_collection; eeg;
+        mri; observational_assessments; surveys
+      </td>
+    </tr>
+    <tr>
+      <td><code>BARRIERS_TO_STUDY_ASSESSMENT_<br>CHECKBOXES_PART_2</code></td>
+      <td></td>
+      <td style="word-wrap: break-word; white-space: normal;">
+        childcare; concerns_about_confidentiality; family_instability;
+        lack_of_time; other; transportation
+      </td>
+    </tr>
+    <tr>
+      <td><code>PREGNANCY_AND_LABOR_CHECKBOXES</code></td>
+      <td></td>
+      <td style="word-wrap: break-word; white-space: normal;">
+        newborn_and_infant_care; labor_birth;
+        maternal_perinatal_health; postpartum_care
+      </td>
+    </tr>
+    <tr>
+      <td><code>CHILD_HEALTH_CHECKBOXES</code></td>
+      <td></td>
+      <td>
+        mental_health; physical_health; safety
+      </td>
+    </tr>
+    <tr>
+      <td><code>PARENTS_GUARDIANS_CHECKBOXES</code></td>
+      <td></td>
+      <td>
+        mental_health; parenting; physical_health; safety
+      </td>
+    </tr>
+    <tr>
+      <td><code>BROADER_FAMILY_HEALTH_CHECKBOXES</code></td>
+      <td></td>
+      <td>
+        caregiving; mental_health; physical_health; safety
+      </td>
+    </tr>
+    <tr>
+      <td><code>SOCIOECONOMIC_RESOURCES_CHECKBOXES</code></td>
+      <td></td>
+      <td>
+        childcare; financial; food_nutrition; housing; transportation
+      </td>
+    </tr>
+    <tr>
+      <td><code>SUBSTANCE_USE_CHECKBOXES</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>OTHER_CHECKBOXES</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>IS_FOLLOW_UP_NEEDED</code></td>
+      <td>Follow-up needed</td>
+      <td>yes; no</td>
+    </tr>
+    <tr>
+      <td><code>IS_CONTACT_SCHEDULED</code></td>
+      <td>Follow-up contact scheduled</td>
+      <td>yes; no</td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_WEEKS_EDD_NEXT_CONTACT</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_WEEKS_EDD_FINAL_NAV_CONTACT</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>AGE_IN_EDD_WEEKS_DATE_OF_COMPLETION</code></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
 </table>
 </div>
 

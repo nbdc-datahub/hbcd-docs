@@ -33,6 +33,25 @@ This field is included, but blank across all instruments and will be removed.</t
 </tbody>
 </table>
 
+## <a href="../../instruments/#admin" target="_blank">Administrative</a>
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr style="border-bottom:2px solid #ccc;">
+    <th>DATA</th>
+    <th style="width: 1%; text-align: center;">FIX</th>
+    <th>KNOWN ISSUE</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>Study Navigators</td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">The <b>SUBSTANCE_USE</b> and <b>OTHER</b> checkbox fields are blank and will be populated in the next release.</td>
+</tr>
+</tbody>
+</table>
+
+
 ## <a href="../../instruments/#mh" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver-Child Interaction</span>
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
