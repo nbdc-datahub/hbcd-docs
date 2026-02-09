@@ -37,24 +37,29 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
   </span>
 </div>
 
+
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0;">
   <!-- Participants -->
   <div style="background:#f9f9f9; flex:1; min-width:180px; padding:20px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center;">
     <h3 style="margin:0; font-size:1.1em; color:#666;">Participants</h3>
-    <p style="margin:10px 0 0; font-size:1.8em; font-weight:600; color:#2a5d9f;">ADD</p>
+    <p style="margin:10px 0 0; font-size:1.8em; font-weight:600; color:#2a5d9f;">3,605</p>
   </div>
   <!-- Visits -->
   <div style="background:#f9f9f9; flex:1; min-width:180px; padding:20px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center;">
     <h3 style="margin:0; font-size:1.1em; color:#666;">Total Visits</h3>
-    <p style="margin:10px 0 0; font-size:1.8em; font-weight:600; color:#2a5d9f;">ADD</p>
-    <p style="margin:10px 0 0; font-size:0.9em; color:#444;">V01: ADD | V02: ADD | V03: ADD</p>
+    <p style="margin:10px 0 0; font-size:1.8em; font-weight:600; color:#2a5d9f;">8,415</p>
+    <p style="margin:10px 0 0; font-size:0.9em; color:#444;">
+    V01: 3,545 | V02: 2,310<br>
+    V03: 1,398 | V04: 679 | V05: 483</p>
   </div>
   <!-- By Sex -->
   <div style="background:#f9f9f9; flex:1; min-width:180px; padding:20px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center;">
-    <h3 style="margin:0; font-size:1.1em; color:#666;">By Sex (V02/V03)</h3>
-    <p style="margin:10px 0 0; font-size:1.4em; font-weight:600; color:#2a5d9f;">
-      ♀ ADD &nbsp; | &nbsp; ♂ ADD
-    </p>
+    <h3 style="margin:0; font-size:1.1em; color:#666;">By Sex</h3>
+    <p style="margin:10px 0 0; font-size:0.9em; color:#444;">
+      <i>V02 onwards visit done:</i><br>
+      <span style="font-weight:600; color:#2a5d9f;">1,159 (F) | 1,271 (M)</span></p>
+      <p style="margin:10px 0 0; font-size:0.9em; color:#444;">
+      <i>V01 Only:</i> <span style="font-weight:600; color:#2a5d9f;">1,175 (Unknown)</span></p>
   </div>
 </div>
 
