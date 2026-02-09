@@ -85,6 +85,11 @@ hbcd/
 <div class="table-collapsible-content">
 <pre class="folder-tree" style="margin-top: 0;">
 hbcd/
+|__ concatenated/       <span class="hashtag"># Concatenated (file-based)</span>
+|   |__ genetics/
+|   |__ geocoding/
+|   |__ study_navigator/
+|
 |__ derivatives/        <span class="hashtag"># Processed pipeline derivatives</span>
 |   |__ bibsnet/
 |   |__ bme_x/
