@@ -164,7 +164,6 @@ nav:
         - Processing & Analytic Standards: 
             - Processing Pipelines: instruments/processing/index.md
             - Pipeline Software Standards: instruments/processing/standards.md
-    - FUTURE 2.1 DRAFTS: instruments-2.1/index.md
   - Release Notes: 
     - Pending Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
