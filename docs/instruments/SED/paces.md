@@ -44,7 +44,21 @@
 </table>
 
 ## Instrument Details
-**Protective and Compensatory Experience (PACES)** is a 10-question scale with scores ranging between 0 and 10 assessing protective experiences in the last year (**PACES (Current)**) and protective experiences in childhood through age 18 (**PACES (<18)**). This includes: relationships, feelings of connectedness, physical activity, engagement, environment, and opportunities.
+
+**Protective and Compensatory Experience (PACES)** is a 10-question scale with scores ranging between 0 and 10 assessing protective experiences, including **relationships, feelings of connectedness, physical activity, engagement, environment, and opportunities.** The versions assess protective experiences at two periods of time:
+
+<table class="table-no-vertical-lines" style="font-size: 16px;">
+<tbody>
+<tr>
+  <td><strong>PACES (Current)</strong></td>
+  <td>Protective experiences in the last year</td>
+</tr>
+<tr>
+  <td><strong>PACES (&lt;18)</strong></td>
+  <td>Protective experiences in childhood through age 18</td>
+</tr>
+</tbody>
+</table>
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
