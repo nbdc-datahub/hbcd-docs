@@ -91,20 +91,17 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2">Nails</td>
+  <td>Nails</td>
   <td><b>3.0</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">The toxicology results variable <code>bio_bm_biosample_nails_results_Nail_type</code> has a value of 4 (Unknown) for all rows and can safely be ignored; nail type is provided in the specimen type table: <code>bio_bm_biosample_nails_typ_collection_nail_type</code>.</td>
 </tr>
 <tr>
-  <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">Note that the data dictionary level values have quotes around them (for example; 1= "positive" instead of 1=positive), causing the downloaded data dictionary to have double quotes (e.g. 1=""positive"").</td>
-</tr>
-<tr>
-  <td rowspan="2">Urine</td>
+  <td>Urine</td>
   <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">The field <code>bio_bm_biosample_urine_results_bio_c_aha_u</code> includes N=2 participants with spurious values (all other rows are blank or '0') that should not be used and can safely be ignored.</td>
 </tr>
 <tr>
+  <td>Nails & Urine</td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Note that the data dictionary level values have quotes around them (for example; 1= "positive" instead of 1=positive), causing the downloaded data dictionary to have double quotes (e.g. 1=""positive"").</td>
 </tr>
@@ -123,7 +120,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <tbody>
 <tr>
   <td>MLDS<br><code>ncl_ch_mlds</code></td>
-  <td><b>2.1</b></td> 
+  <td><b>3.0</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   The variable "total hours per week of non parental hours" (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The max plausible value for this variable is 168 hours; any observations greater than 168 are erroneous- please do not include these observations in your analysis.
   </td>
