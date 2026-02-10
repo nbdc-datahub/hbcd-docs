@@ -251,7 +251,7 @@ The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the de
 </div>
 <div class="warning-collapsible-content">
 <p><b>Change in Video Content Between Visits</b><br>
-<p>The video content for the Resting State task changed between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details. Also note that RS is not a true resting state as there is a visual stimulus present.</p>
+The video content for the Resting State task changed between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details. Also note that RS is not a true resting state as there is a visual stimulus present.</p>
 </div>
 
 <div id="rs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
