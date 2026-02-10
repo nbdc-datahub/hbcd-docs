@@ -64,6 +64,24 @@
 </ul>
 </div>
 
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p><b>PACES (Current)</b><br>
+Item responses can range from <b>1 (Never)</b> to 5 <b>(Very Often)</b>. Summary scores are calculated by adding the responses from all 10 items in the instrument (<code>sed_bm_paces_001</code> through <code>sed_bm_paces_010</code>). Therefore, summary scores can range from <b>10 to 50</b> (higher scores indicating more protective experiences) if all items are answered. If not, summary scores are still calculated as the sum of the available responses.</p>
+
+<p><b>PACES (&lt;18)</b><br>
+Item responses are coded as <b>0 (No)</b> and <b>1 (Yes)</b>. Total scores are calculated by adding the responses to the first 10 items of the instrument (<code>sed_cg_paces_001</code> through <code>sed_cg_paces_010</code>). Therefore, total scores can range from <b>0 to 10</b> (higher scores indicating more protective experiences) if all items are answered. If not, total scores are still calculated as the sum of the available responses.</p>
+</div>
+
 ## References
 <div class="references">
   <p>Morris, A. S., Hays-Grudo, J., Zapata, M. I., Treat, A., &amp; Kerr, K. L. (2021). Adverse and protective childhood experiences and parenting attitudes: The role of cumulative protection in understanding resilience. <em>Adversity and Resilience Science</em>, 2(3), 181–192. <a href="https://doi.org/10.1007/s42844-021-00036-8">https://doi.org/10.1007/s42844-021-00036-8</a></p>
