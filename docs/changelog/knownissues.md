@@ -33,7 +33,7 @@ This field is included, but blank across all instruments and will be removed.</t
 </tbody>
 </table>
 
-## <a href="../../instruments/#admin" target="_blank">Administrative</a>
+## <a href="../../instruments/#adm" target="_blank">Administrative</a>
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr style="border-bottom:2px solid #ccc;">

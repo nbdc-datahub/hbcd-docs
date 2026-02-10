@@ -33,10 +33,9 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 <div style="background:#f2f6fc; padding:12px 20px; border-radius:10px; text-align:center; margin-bottom:25px; box-shadow:0 2px 4px rgba(0,0,0,0.05);">
   <span style="font-size:1.1em; font-weight:600; color:#2a5d9f;">
     <i class="fa-solid fa-calendar" style="margin-right:8px; vertical-align: 1px;"></i>
-    Release Date: ADD
+    Release Date: 2026-02-13
   </span>
 </div>
-
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0;">
   <!-- Participants -->
@@ -67,8 +66,8 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 
 ##### Additional Participant Data
 
-1. Multiple Birth Participants (MBP): multiple participants from the same birth (e.g. twins)
-1. Postnatal Recruits (PNRs) who joined the study after the child is born (complete a modified V01 and V02)
+1. **Multiple Birth Participants**: multiple participants from the same birth (e.g. twins)
+1. **Postnatal Recruits (PNR)**: joined the study after the child is born (complete a modified V01 and V02)
 
 ##### New Study Instruments/Measures
 
@@ -78,7 +77,8 @@ Approximately **30 new study instruments/measures** have been added across the f
 <tbody>
 <tr>
 <td>
-<a style="margin-left: 2px;" href="../../instruments/#bcgi" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver–Child Interaction<br>
+<a style="margin-left: 2px;" href="../../instruments/#adm" target="_blank"><i class="fa fa-clipboard-list"></i></a> Administrative<br>
+<a style="margin-left: 2px;" href="../../instruments/#mh" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver–Child Interaction<br>
 <a style="margin-left: 2px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics<br>
 <a style="margin-left: 2px;" href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> MRI & MRS<br>
 <a style="margin-left: 2px;" href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
@@ -87,7 +87,7 @@ Approximately **30 new study instruments/measures** have been added across the f
 <a style="margin-left: 2px;" href="../../instruments/#sensors" target="_blank"><i class="fa fa-microchip"></i></a> Novel Technologies & Wearable Sensors<br>
 <a style="margin-left: 2px;" href="../../instruments/#ph" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health<br>
 <a style="margin-left: 2px;" href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use<br>
-<a style="margin-left: 2px;" href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
+<a style="margin-left: 2px;" href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants<br><br>
 </td>
 </tr>
 </tbody>
@@ -116,8 +116,7 @@ Approximately **30 new study instruments/measures** have been added across the f
 </thead>
 <tbody>
 <tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"></i> ADM
-  <span class="tooltiptext">Administrative</span></span></td>
+<td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-clipboard-list" style="font-size:1.1em; margin-right: 2px;"></i> ADM<span class="tooltiptext">Administrative</span></span></td>
   <td>Study Navigator Contact Form &nbsp;<i style="color: teal;" class="fas fa-layer-group"></i></td>
 <tr>
 <tr>

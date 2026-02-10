@@ -58,10 +58,11 @@ Expand the sections below to see a list of measures associated with each domain 
   Expand All Sections ↕️
 </button>
 
-<div id="admin" class="table-banner" onclick="toggleCollapse(this)">
+<div id="adm" class="table-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa fa-clipboard-list"></i></span>
   <span class="text-with-link">
-  <span class="text">Administrative Data</span>
-  <a class="anchor-link" href="#admin" title="Copy link">
+  <span class="text">Administrative</span>
+  <a class="anchor-link" href="#adm" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
