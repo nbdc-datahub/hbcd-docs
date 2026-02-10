@@ -192,7 +192,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
   Weeks for postnatal recruits (<a href="../../instruments/demo/visitinfo#postnatal-recruits-pnr">PNR</a>) were mistakenly reported in the TLFB <b>versions 1</b> or <b>2</b> instead of <a href="../../instruments/pregexp/su/tlfb/#v3"><b>version 3</b> adapted for PNR</a>. These will be adjusted to <b>version 3</b> in the next release.</td>
 </tr>
 <tr>
-  <td><b>2.1</b></td> 
+  <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Select participants (N=8) were recruited postnatally, but not administered the V1 portion of the TLFB. When this was recognized, the participants were administered the TLFB at the next in-person visit, resulting in a longer recall period than specified in the protocol.</td>
 </tr>
 <tr>
