@@ -51,6 +51,24 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </tbody>
 </table>
 
+## <a href="../../instruments/#demo" target="_blank">Demographics</a>
+<table class="compact-table-no-vertical-lines" style="font-size: 15px;">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr style="border-bottom:2px solid #ccc;">
+    <th>DATA</th>
+    <th style="width: 1%; text-align: center;">FIX</th>
+    <th>KNOWN ISSUE</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>Basic Demo</td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">The variables <code>sed_bm_demo_residence_{001|002}</code>, present in the prior release, are missing in the current release and will be added back.</td>
+</tr>
+</tbody>
+</table>
+
 
 ## <a href="../../instruments/#mh" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver-Child Interaction</span>
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
