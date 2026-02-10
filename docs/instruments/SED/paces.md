@@ -1,5 +1,3 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0 - addition of &lt;18</i> 🚧 </p>
-
 # Protective and Compensatory Experience (*PACES*)
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

@@ -1,5 +1,3 @@
-<p style="font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION TO BE ADDED FOR R2.0</i></p>
-
 # Screen-Based Media Use (<i>ScreenQ</i>)
 
 <div class="info-block">

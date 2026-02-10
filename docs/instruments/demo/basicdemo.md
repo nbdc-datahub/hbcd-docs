@@ -1,5 +1,3 @@
-<p style="font-size: 1.2em;">🚧 UNDER CONSTRUCTION TO BE UPDATED FOR R2.0</p>
-
 # Basic Demographics Information
 
 <div class="info-block">

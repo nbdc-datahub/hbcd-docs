@@ -71,27 +71,7 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 
 ##### New Study Instruments/Measures
 
-Approximately **30 new study instruments/measures** have been added across the following domains. Click to expand the section below to view the full list.
-
-<table class="study-legend">
-<tbody>
-<tr>
-<td>
-<a style="margin-left: 2px;" href="../../instruments/#adm" target="_blank"><i class="fa fa-clipboard-list"></i></a> Administrative<br>
-<a style="margin-left: 2px;" href="../../instruments/#mh" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver–Child Interaction<br>
-<a style="margin-left: 2px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics<br>
-<a style="margin-left: 2px;" href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> MRI & MRS<br>
-<a style="margin-left: 2px;" href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
-</td>
-<td>
-<a style="margin-left: 2px;" href="../../instruments/#sensors" target="_blank"><i class="fa fa-microchip"></i></a> Novel Technologies & Wearable Sensors<br>
-<a style="margin-left: 2px;" href="../../instruments/#ph" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health<br>
-<a style="margin-left: 2px;" href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use<br>
-<a style="margin-left: 2px;" href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants<br><br>
-</td>
-</tr>
-</tbody>
-</table>
+Approximately **40 new study instruments/measures** have been added across study domains (*click section below to expand*):
 
 <div id="2.0-new-tables" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-plus"></i></span>
@@ -110,68 +90,77 @@ Approximately **30 new study instruments/measures** have been added across the f
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
 <thead>
 <tr>
-    <th>Domain</th>
-    <th>Instrument</th>
+<th>Domain</th>
+<th>Instrument</th>
+<th>Construct</th>
 </tr>
 </thead>
 <tbody>
+<tr><td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>BEHAVIOR, BIOLOGY, & ENVIRONMENT</b></td></tr>
 <tr>
-<td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-clipboard-list" style="font-size:1.1em; margin-right: 2px;"></i> ADM<span class="tooltiptext">Administrative</span></span></td>
-  <td>Study Navigator Contact Form &nbsp;<i style="color: teal;" class="fas fa-layer-group"></i></td>
-<tr>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i> IMG
-  <span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
-  <td>Pre-Scan Questionnaire</td>
-<tr>
-<td rowspan="6" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-people-arrows" style="font-size:1.1em; margin-right: 2px;"></i> MH<span class="tooltiptext">Behavior & Caregiver-Child Interaction</span></span></td>
-<td>CHAOS (<i>Confusion, Hubbub and Order Scale</i>)</td></tr>
-<tr><td>ecPROMIS (1) Child-Caregiver Relationship (1-5 year), (2) Peer Relationships, & (3) Self-Regulation & Flexibility</td></tr>
-<tr><td>FAD (GF6+) (<i>Family Assessment Device (General Functioning 6+)</i>)</td></tr>
-<tr><td>HOME-21 IT (<i>Home Observation for Measurement of the Environment Infant-Toddler Version</i>)</td></tr>
-<tr><td>ECBQ (VSF)+BI (<i>Early Childhood Behavior Questionnaire Very Short Form + Behavior Inhibition</i>)</td></tr>
-<tr><td>MAPS-TL (<i>Multidimensional Assessment Profiles - Temper Loss Scale</i>) - <b>Addition of Version: Toddlerhood & Preschool</td></tr>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-vial" style="font-size:1.1em; margin-right: 2px;"></i> BIO<span class="tooltiptext">Biospecimen & Omics</span></span></td>
-<td>Illumina GDA GWAS (Maternal & Child) &nbsp;<i style="color: teal;" class="fas fa-layer-group"></i></td>
+<td><i style="color: #199bd6; font-size: 1.0rem; margin-right: 2px;" class="fa fa-clipboard-list"></i> <a href="../../instruments/#adm" target="_blank"> Administrative</a></td>
+  <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;  Study Navigator Contact Form</td>
+  <td>Recruitment/Retention</td>
 </tr>
 <tr>
-<td rowspan="4" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa-solid fa-puzzle-piece" style="font-size:1.1em; margin-right: 2px;"></i> NCL<span class="tooltiptext">Neurocognition & Language</span></span></td>
-<td>Bayley-4 (<i>Bayley Scales of Infant and Toddler Development</i>)</td></tr>
-<tr><td>MacArthur-Bates CDI-I (<i>Communicative Development Inventories</i>) Words & Gestures</td></tr>
-<tr><td>SPM-2 (<i>Sensory Processing Measure-2</i>) - <b>Addition of Version: Toddler</b></td></tr>
-<tr><td>Vineland Adaptive Behavior</td>
+<td rowspan="7"><i style="color: #199bd6; font-size: 1.0rem; margin-right: 2px;" class="fa fa-people-arrows"></i> <a href="../../instruments/#mh" target="_blank"> Beh & CH-CG Int</a></td>
+<td>CHAOS</td><td>Family Organization</td>
+</tr>
+<tr><td>ecPROMIS CH-CG Relationship <b>[1-5 year]</b></td><td>Child-Caregiver Interaction</td></tr>
+<tr><td>ecPROMIS Peer Relationships</td><td>Peer Relationships</td></tr>
+<tr><td>ecPROMIS Self-Regulation</td><td>Self-Regulation and Flexibility</td></tr>
+<tr><td>FAD (GF6+)</td><td style="word-wrap: break-word; white-space: normal;">Global Functioning of Family Unit</td></tr>
+<tr><td>ECBQ (VSF)+BI</td><td>Early Childhood Behavior + Inhibition</td></tr>
+<tr><td>MAPS-TL <b>[Toddlerhood & Preschool]</td> <td>Irritability</td></tr>
+<tr>
+<td><i style="color: #199bd6; font-size: 1.0rem; margin-right: 2px;" class="fa fa-vial"></i> <a href="../../instruments/#biospec" target="_blank"> Biospecimen & Omics</a></td>
+<td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Illumina GDA GWAS</td>
+<td>GWAS, EWAS, Transcriptome</td>
+</tr>
+<tr><td rowspan="4"><i style="color: #199bd6; font-size: 1.0rem; margin-right: 2px;" class="fa-solid fa-puzzle-piece"></i> <a href="../../instruments/#ncl" target="_blank"> Neurocog & Language</a></td>
+<td>Bayley-4 Scales</td><td>Child Development (Cognitive, Language, Motor)</td>
+</tr>
+<tr><td>MacArthur-Bates CDI-I</td><td>Language Development (Words & Gestures)</td></tr>
+<tr><td>SPM-2 <b>[Toddler]</b></td>  <td>Sensory Processing/Integration</td></tr>
+<tr><td>Vineland Adaptive Behavior</td><td>Adaptive Behavior</td></tr>
+<tr><td rowspan="7"><i style="color: #199bd6; font-size: 1.0rem; margin-right: 2px;" class="fa fa-heart-pulse"></i> <a href="../../instruments/#ph" target="_blank"> Physical Health</a></td>
+<td>Brief Infant Sleep Questionnaire</td><td>Sleep</td>
+</tr>
+<tr><td>ecPROMIS Physical Activity/Greenspace</td> <td>Physical Activity</td></tr>
+<tr><td>ecPROMIS Sleep</td> <td>Sleep</td></tr>
+<tr><td>Medical History</td><td>Medical History</td></tr>
+<tr><td>Infant Nutrition Questionnaire</td><td>Nutrition</td></tr>
+<tr><td>Screen-Based Media Use (<i>ScreenQ</i>)</td><td>Media Use</td></tr>
+<tr><td>Vision Screener</td><td>Vision</td></tr>
+<tr><td rowspan="2"><i style="color: #199bd6; font-size: 1.0rem; margin-right: 2px;" class="fa-solid fa-baby"></i> <a href="../../instruments/#pex" target="_blank"> Pregnancy & Exposure</a></td>
+<td>ASSIST <b>[V4]</b></td>  <td>Substance Use Post-Pregnancy</td></tr>
+<tr><td>Substance Use Patterns</td>  <td>Substance Use in Pregnancy</td></tr>
+<tr><td rowspan="12"><i style="color: #199bd6; font-size: 1.0rem; margin-right: 2px;" class="fas fa-city"></i> <a href="../../instruments/#sed" target="_blank"> Social & Environment</a></td>
+<td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Geocoded Linkage</td>  <td>Neighborhood Measures</td></tr>
+<tr><td>ACEs</td>  <td>Adverse Childhood Experiences</td></tr>
+<tr><td>Child Demographics - V4 & V6</td><td>Demographics</td></tr>
+<tr><td>Composite Abuse Scale (CABr-SF)</td>  <td>Intimate Partner Violence</td></tr>
+<tr><td>Current Employment</td><td>Current Employment</td></tr>  
+<tr><td>HOME-21 IT</td><td>Child’s Home Environment</td></tr>  
+<tr><td>Household Chemical Exposures</td> <td>Household Chemical Exposures</td></tr>  
+<tr><td>Lead Exposures</td><td>Lead Exposures</td></tr> 
+<tr><td>PACES <b>[&lt;18]</b></td><td>Protective Factors</td></tr>  
+<tr><td>Second Hand Smoke Exposure</td> <td>Second Hand Smoke Exposure</td></tr>
+<tr><td>Transition in Care Screener</td><td>Recruitment/Retention</td></tr>
+<tr><td>Vancouver Index of Acculturation (VIA)</td><td>Acculturation</td></tr> 
+<tr><td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>BRAIN ACTIVITY & BIOSENSORS</b></td></tr>
+<tr>
+<td rowspan="2"><i style="color: #199bd6; font-size: 1.0rem; margin-right: 2px;" class="fa-solid fa-file-waveform"></i> <a href="../../instruments/#eeg" target="_blank"> EEG</a></td>
+<td>EEG Acquisition Checklist + Reattempt 1/2</td><td>Acquisition Checklists</td></tr>
+<tr><td>ERP SummaryStats</td><td>Tabulated HBCD-MADE derivatives</td></tr>
+<tr>
+<td><i style="color: #199bd6; font-size: 1.0rem; margin-right: 2px;" class="fa fa-brain"></i> <a href="../../instruments/#mri" target="_blank"> MRI</a></td>
+<td>Pre-Scan Questionnaire</td><td>Infant Sleep Environment</td>
 </tr>
 <tr>
-<td rowspan="2" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-microchip" style="font-size:1.1em; margin-right: 2px;"></i> NT<span class="tooltiptext">Novel Tech & Wearables</span></span></td>
-<td>Biosensor Receipt</td></tr>
-<tr><td>Biosensor Setup</td></tr>
+<td><i style="color: #199bd6; font-size: 1.0rem; margin-right: 2px;" class="fa fa-microchip"></i> <a href="../../instruments/#sensors" target="_blank"> Novel Tech & Wearables</a></td>
+<td>Biosensor Receipt & Setup</td><td>Administrative</td></tr>
 </tr>
-<tr>
-<td rowspan="6" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i> PH<span class="tooltiptext">Physical Health</span></span></td>
-<td>Brief Infant Sleep Questionnaire (<i>BISQ-SF</i>)</td></tr>
-<tr><td>ecPROMIS: (1) Physical Activity & Green Space & (2) Sleep</td></tr>
-<tr><td>Medical History</td></tr>
-<tr><td>Infant Nutrition Questionnaire</td></tr>
-<tr><td>Screen-Based Media Use (<i>ScreenQ</i>)</td></tr>
-<tr><td>Vision Screener</td></tr>
-<tr>
-  <td rowspan="2" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa-solid fa-baby" style="font-size:1.1em; margin-right: 2px;"></i> PEX<span class="tooltiptext">Pregnancy Exposure, Including Substance Use</span></span></td>
-  <td>Alcohol, Smoking and Substance Involvement Screening Test (<i>ASSIST</i>) - <b>Addition of ASSIST V4</b></td></tr>
-<tr><td>Substance Use Patterns</td></tr>
-<tr>
-<td rowspan="11" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-city" style="font-size:1.1em; margin-right: 2px;"></i> SED<span class="tooltiptext">Social & Environmental Determinants</span></span></td>
-<td>Geocoded Linkage &nbsp;<i style="color: teal;" class="fas fa-layer-group"></i></td>
-<tr><td>Adverse Childhood Experiences (<i>ACEs</i>) - including Adult & Pediatric versions</td></tr>  
-<tr><td>Composite Abuse Scale (<i>CABr-SF</i>)</td></tr>
-<tr><td>Current Employment</td></tr>  
-<tr><td>Demographics Adult & Child - V4 & V6</td></tr> 
-<tr><td>Household Chemical Exposures</td></tr>  
-<tr><td>Lead Exposures</td></tr> 
-<tr><td>PACES (Protective Factors) - Addition of Version &lt;18</td></tr>  
-<tr><td>Second Hand Smoke Exposure</td></tr>
-<tr><td>Transition in Care Screener</td></tr>
-<tr><td>Vancouver Index of Acculturation (<i>VIA</i>)</td></tr> 
 </tbody>
 </table>
 </div>
