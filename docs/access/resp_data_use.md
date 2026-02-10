@@ -28,7 +28,7 @@ We recommend that all data users:
 
 1.    	Review the data warnings for any variable that you will be downloading and/or using by clicking the link and reviewing the warning associated with that variable.
 2.    	Review any resources and citations included with the warning and follow recommended guidelines.
-3.    	Reach out via the [Lasso Help Center](https://nbdc-datashare.lassoinformatics.com/help-center) if you have questions about the data warning or how to use the data.
+3.    	Reach out via the [Help Center in the NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/help-center) if you have questions about the data warning or how to use the data.
  
 ## Recommendations for Rigorous, Reproducible, and Responsible Data Use
 The HBCD Responsible Use of Data Committee (RUDC) provides the following guidance for researchers planning to use HBCD data:

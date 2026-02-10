@@ -1,7 +1,7 @@
 # Known Issues
 
 The following issues have been identified in the current HBCD data release. **We are actively working to address them and expect most fixes to be implemented in Release 2.1 unless otherwise noted.** This page will be updated as new issues are reported.    
-If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
+If you have questions or would like to report an issue, please submit a ticket through the [Help Center in the NBDC Data Access Platform](https://nbdc.lassoinformatics.com/issue-tracker).
 
 ## General
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
