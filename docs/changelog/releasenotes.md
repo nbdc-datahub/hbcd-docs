@@ -1,3 +1,11 @@
+<style>
+.wy-nav-content {
+    width: 90% !important;
+    max-width: 90% !important;
+    flex-grow: 1 !important;
+}
+</style>   
+
 # Release Notes & History
 
 ## Participant Population (Inclusion/Exclusion Criteria)
@@ -213,7 +221,6 @@ Processed derivatives are now included for V03 and V04 in addition to V02. New p
 </tbody>
 </table>
 
-
 ### 2.0 Resolved Known Issues
 
 <div id="r2.0res-KI" class="table-banner" onclick="toggleCollapse(this)">
@@ -230,9 +237,9 @@ Processed derivatives are now included for V03 and V04 in addition to V02. New p
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8c4266; color: #6e6256ff;">
   <tr>
-    <th>DOMAIN</th>
-    <th>TABLE/DATA</th>
-    <th>RESOLVED KNOWN ISSUE</th>
+    <th style="width: 1%;">Domain</th>
+    <th>Table/Data</th>
+    <th>Resolved Known Issue</th>
   </tr>
 </thead>
 <tbody>
@@ -274,9 +281,9 @@ Processed derivatives are now included for V03 and V04 in addition to V02. New p
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></td>
-<td>Urine toxicology<br><code>bio_bm_biosample_urine__results_results</code></td>
+<td>Urine toxicology</td>
   <td style="word-wrap: break-word; white-space: normal;">
-  Restored 'missing' values for urinary cotinine (<code>bio_c_cot_u</code>) erroneously set to <code>0</code> (N = 18).
+  Restored 'missing' values for urinary cotinine (<code>bio_bm_biosample_urine__results_results_bio_c_cot_u</code>) erroneously set to <code>0</code> (N = 18).
 </td>
 </tr>
 <tr>
