@@ -33,7 +33,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </tbody>
 </table>
 
-## <a href="../../instruments/#adm" target="_blank">Administrative</a>
+## <a href="../../instruments/#adm" target="_blank"><i class="fa fa-clipboard-list"></i></a> Administrative</span>
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr style="border-bottom:2px solid #ccc;">
@@ -51,7 +51,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </tbody>
 </table>
 
-## <a href="../../instruments/#demo" target="_blank">Demographics</a>
+## <a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics</span>
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr style="border-bottom:2px solid #ccc;">
@@ -68,7 +68,6 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </tr>
 </tbody>
 </table>
-
 
 ## <a href="../../instruments/#mh" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver-Child Interaction</span>
 <table class="compact-table-no-vertical-lines" style="font-size: 15px;">
