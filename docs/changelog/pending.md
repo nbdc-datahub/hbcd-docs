@@ -22,11 +22,6 @@ In addition, a new Data Dictionary element (***familyID***) will be incorporated
   <td style="word-wrap: break-word; white-space: normal;">Addition of <code>visit_missed_date</code> variable (date of missed visits)</td>
 </tr>
 <tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-vial" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Biospecimens</span></span></td>
-  <td>Urine</td>
-  <td style="word-wrap: break-word; white-space: normal;">Addition of creatinine results (<code>bio_bm_biosample_urine_results_bio_creat_u</code>)</td>
-</tr>
-<tr>
   <td rowspan="4" style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-heart-pulse" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Physical Health</span></span></td>
   <td>BISQ-SF<br><code>ph_cg_bisq</code></td>
   <td style="word-wrap: break-word; white-space: normal;">Addition of Infant Sleep (IS) sub-scale score.</td>
@@ -48,6 +43,24 @@ In addition, a new Data Dictionary element (***familyID***) will be incorporated
   <td>DICOMs</td>
   <td style="word-wrap: break-word; white-space: normal;">
   Addition of source DICOMs for <a href="../../datacuration/file-based-data/#raw-bids" target="_blank">raw BIDS</a> for all imaging modalities</td>
+</tr>
+</tbody>
+</table>
+
+## Release 3.0 (Release Date TBA)
+
+### 3.0 Existing Study Data Updates
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<thead>
+<th>Domain</th>
+<th>Table/Data</th>
+<th>Pending Update</th>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-vial" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Biospecimens</span></span></td>
+  <td>Urine</td>
+  <td style="word-wrap: break-word; white-space: normal;">Addition of creatinine results (<code>bio_bm_biosample_urine_results_bio_creat_u</code>)</td>
 </tr>
 </tbody>
 </table>

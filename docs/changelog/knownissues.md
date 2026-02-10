@@ -1,6 +1,6 @@
 # Known Issues
 
-The following issues have been identified in the current HBCD data release. **We are actively working to address them and expect most fixes to be implemented in Release 2.1 unless otherwise noted.** This page will be updated as new issues are discovered.    
+The following issues have been identified in the current HBCD data release. **We are actively working to address them and expect most fixes to be implemented in Release 2.1 unless otherwise noted.** This page will be updated as new issues are reported.    
 If you have questions or would like to report an issue, please submit a ticket through the [Lasso Help Center](https://nbdc.lassoinformatics.com/issue-tracker).
 
 ## General
@@ -14,6 +14,12 @@ If you have questions or would like to report an issue, please submit a ticket t
 <tbody>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">
+<b>'Sequence' Field</b><br>
+This field is included, but blank across all instruments and will be removed.</td>
+<td>2.1</td> 
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">
 <b>Instruction Metadata</b><br>
 Instruction text in each form’s metadata is automatically extracted from the most recent <code>instruction</code> field in the REDCap Data Dictionary (based on field order). Because this process is automated, it may produce the following issues: <b>(1)</b> If an instruction spans multiple fields, only the <b>last portion</b> will be captured and/or <b>(2)</b> Some fields may display text intended for a <b>previous section</b>. Until this is corrected, please refer to original forms for accurate instruction text.</td>
 <td>TBD</td> 
@@ -23,12 +29,6 @@ Instruction text in each form’s metadata is automatically extracted from the m
 <b> Implausible Values for Gestational Age Across Multiple Instruments</b><br>
 Several instruments contain implausible values for gestational age (<code>gestational_age</code>). This is currently under internal review and we will add more details as they become available.</td>
 <td>TBD</td> 
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">
-<b>'Sequence' Field</b><br>
-This field is included, but blank across all instruments and will be removed.</td>
-<td>3.0</td> 
 </tr>
 </tbody>
 </table>
@@ -45,7 +45,7 @@ This field is included, but blank across all instruments and will be removed.</t
 <tbody>
 <tr>
   <td>Study Navigators</td>
-  <td><b>2.1</b></td> 
+  <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">The <b>SUBSTANCE_USE</b> and <b>OTHER</b> checkbox fields are blank and will be populated in the next release.</td>
 </tr>
 </tbody>
@@ -64,18 +64,18 @@ This field is included, but blank across all instruments and will be removed.</t
 <tbody>
 <tr>
   <td>MAPS-TL Infancy<br><code>mh_cg_mapdb__inf</code></td>
-  <td><b>2.1</b></td> 
+  <td><b>3.0</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">N=4 participants did not respond to any questions and should have a blank/null summary score, but instead have a score of 0. Users should convert these cases to blank/null prior to conducting their statistical analyses.</td>
 </tr>
 <tr>
-  <td>MAPS-TL<br><code>mh_cg_mapdb__*</code></td>
-  <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">Notes appear in the score field and will be moved to a separate field in the next release.</td>
+  <td>MAPS-TL Toddlerhood<br><code>mh_cg_mapdb__tod</code></td>
+  <td><b>3.0</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">A subset of participants (N=16) are missing scores because pro-rated scoring for the Toddlerhood version has not yet been updated for cases with missing or 'Decline to answer' values.</td>
 </tr>
 <tr>
-  <td>MAPS-TL Toddlerhood<br><code>mh_cg_mapdb__tod</code></td>
-  <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">A subset of participants (N=16) are missing scores because pro-rated scoring for the Toddlerhood version has not yet been updated for cases with missing or 'Decline to answer' values.</td>
+  <td>MAPS-TL<br><code>mh_cg_mapdb__*</code></td>
+  <td><b>3.0</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Notes appear in the score field and will be moved to a separate field in the next release.</td>
 </tr>
 </tbody>
 </table>
@@ -92,7 +92,7 @@ This field is included, but blank across all instruments and will be removed.</t
 <tbody>
 <tr>
   <td rowspan="2">Nails</td>
-  <td><b>2.1</b></td> 
+  <td><b>3.0</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">The toxicology results variable <code>bio_bm_biosample_nails_results_Nail_type</code> has a value of 4 (Unknown) for all rows and can safely be ignored; nail type is provided in the specimen type table: <code>bio_bm_biosample_nails_typ_collection_nail_type</code>.</td>
 </tr>
 <tr>
