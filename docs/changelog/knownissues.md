@@ -159,12 +159,12 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <tbody>
 <tr>
   <td>APA 1/2<br><code>pex_bm_apa</code></td>
-  <td><b>2.1</b></td> 
+  <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">There are cases where APA Level 2 was administered against gating logic (e.g. for Repetitive Behavior despite there being missing Level 1 responses). As Level 2 administration was not expected, these are not scored (score = "No additional inquiry required") despite having Level 2 item responses present. The Level 2 item-level data will be removed in the future to prevent confusion.</td>
 </tr>
 <tr>
   <td>Preg/Inf Health<br><code>pex_bm_health*</code></td>
-  <td><b>2.1</b></td> 
+  <td><b>3.0</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   ICD codes are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <i>Health V1- Medications</i>, while the <i>Health V2- Pregnancy</i> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>
 </td>
@@ -177,12 +177,12 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </tr>
 <tr>
   <td>Healthv2 Preg</td>
-  <td><b>2.1</b></td> 
+  <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank. This will be addressed in a future release.</td>
 </tr>
 <tr>
   <td>Healthv2 Preg</td>
-  <td><b>2.1</b></td> 
+  <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Note that the field for the date when PNV was stopped (<code>exp__pnv_007__01</code>) is blank, despite participants having reported stopping.</td>
 </tr>
 <tr>
@@ -197,12 +197,12 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </tr>
 <tr>
   <td>EPDS<br><code>pex_bm_epds</code></td>
-  <td><b>2.1</b></td> 
+  <td><b>3.0</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Across visits V01-V03, there are a portion of participants with inconsistent data between individual item responses and the calculated sum score, including the following patterns: (1) individual items present, but sum score null; (2) individual items null, but sum score is 0.</td>
 </tr>
 <tr>
   <td>EPDS<br><code>pex_bm_epds</code></td>
-  <td><b>2.1</b></td> 
+  <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Note that N=2 participants have an adjusted age of -1 at V02, which is biologically implausible and should be excluded from analyses.</td>
 </tr>
 </tbody>
