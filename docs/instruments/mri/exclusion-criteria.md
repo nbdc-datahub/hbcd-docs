@@ -88,12 +88,12 @@ Session data with confirmed severe **structural issues** were removed across the
   <thead>
     <tr>
       <th>QC Type</th>
-      <th><a href="mri-proc.md#bibsnet">BIBSNet</a></th>
-      <th><a href="mri-proc.md#infant-fmriprep">Infant fMRIPrep</a></th>
-      <th><a href="mri-proc.md#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S / FreeSurfer</a></th>
-      <th><a href="mri-proc.md#xcp-d">XCP-D</a></th>
-      <th><a href="mrs.md#derivatives">Osprey</a></th>
-      <th><a href="qmri.md#derivatives">qMRI-PostProc</a></th>
+      <th><a href="../mri-proc/#bibsnet" target="_blank">BIBSNet</a></th>
+      <th><a href="../mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a></th>
+      <th><a href="../mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">M-CRIB-S / FreeSurfer</a></th>
+      <th><a href="../mri-proc/#xcp-d" target="_blank">XCP-D</a></th>
+      <th><a href="../mrs/#derivatives" target="_blank">Osprey</a></th>
+      <th><a href="../qmri/#derivatives" target="_blank">qMRI-PostProc</a></th>
     </tr>
   </thead>
   <tbody>
