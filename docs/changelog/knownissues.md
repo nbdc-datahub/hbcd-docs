@@ -95,11 +95,6 @@ Several instruments contain implausible values for gestational age (<code>gestat
   <td style="word-wrap: break-word; white-space: normal;">The toxicology results variable <code>bio_bm_biosample_nails_results_Nail_type</code> has a value of 4 (Unknown) for all rows and can safely be ignored; nail type is provided in the specimen type table: <code>bio_bm_biosample_nails_typ_collection_nail_type</code>.</td>
 </tr>
 <tr>
-  <td>Urine</td>
-  <td><b>TBD</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">The field <code>bio_bm_biosample_urine_results_bio_c_aha_u</code> includes N=2 participants with spurious values (all other rows are blank or '0') that should not be used and can safely be ignored.</td>
-</tr>
-<tr>
   <td>Nails & Urine</td>
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Note that the data dictionary level values have quotes around them (for example; 1= "positive" instead of 1=positive), causing the downloaded data dictionary to have double quotes (e.g. 1=""positive"").</td>
