@@ -39,6 +39,7 @@ BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentat
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -93,6 +94,7 @@ T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infan
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
@@ -201,6 +203,7 @@ The M-CRIB-S and FreeSurfer derivative folders are generated from the [intermedi
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -269,6 +272,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |__ derivatives/ 
@@ -409,6 +413,7 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre style="font-size: 10px;" class="folder-tree">
 hbcd/
 |_ derivatives/ 
