@@ -728,7 +728,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </tr>
 </tbody>
 <tfoot><tr><td colspan="3">
- <sup><b>1</b></sup> See <a href="../datacuration/overview/#warning" target="_blank"><i>Which file-based data are also available as HBCD tabulated data? </i></a>
+ <sup><b>1</b></sup> See <a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>Which file-based data are also available as HBCD tabulated data? </i></a>
 </td></tr></tfoot>
 </table>
 </div>
@@ -747,7 +747,7 @@ Expand the sections below to see a list of measures associated with each domain 
 <p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> <b>File-Based Data</b></p>
 <table class="compact-table-no-vertical-lines">
 <tfoot><tr><td colspan="4">
- <sup><b>1</b></sup> See <a href="../datacuration/overview/#warning" target="_blank"><i>Which file-based data are also available as HBCD tabulated data?</i></a>
+ <sup><b>1</b></sup> See <a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>Which file-based data are also available as HBCD tabulated data?</i></a>
 </td></tr></tfoot>
 <thead>
 <tr>
@@ -812,7 +812,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </table>
 <p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> &nbsp; <b>Tabulated Data</b></p>
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#warning" target="_blank"><i>see details</i></a>)
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>see details</i></a>)
 </p>
 <table class="compact-table-no-vertical-lines">
 <thead>

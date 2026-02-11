@@ -2,12 +2,14 @@
 
 The HBCD dataset follows NBDC data structure standards established as part of the ABCD Study (<a href="https://docs.abcdstudy.org/latest/documentation/curation/structure.html">see details</a>), which incorporates the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. At a high level, data are organized into two categories:
 
-<p style="font-size: 1.1em; margin-bottom: 0;"><i class="fa-solid fa-table"></i> <b>Tabulated Data</b></p>
-Demographics (<a href="../../instruments/#demo" target="_blank">demographics & visit info</a>), study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), and select file-based data organized in a standardized tabular format that includes all participant responses per table.
+### <i style="color: #199bd6; margin-right: 4px;" class="fa-solid fa-table"></i> Tabulated Data
 
-<button class="button-link"><a href="../phenotypes" target="_blank">Go to Tabulated Data Documentation</a></button>
+Demographics (<a href="../../instruments/#demo" target="_blank">demographics & visit info</a>), study instrument (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), and select [file-based data organized in standardized HBCD tabular format](#which-file-based-data-are-also-available-as-hbcd-tabulated-data) that includes all participant responses per table.
 
-<p style="font-size: 1.1em; margin-bottom: 0;"><i class="fa-solid fa-folder-open"></i> <b>File-Based Data</b></p>
+<a href="../phenotypes" target="_blank" class="inline-doc-link">View Tabulated Data Documentation →</a>
+
+### <i style="color: #199bd6; margin-right: 4px;" class="fa-solid fa-folder-open"></i> File-Based Data
+
 File-based data is any data that cannot be converted to the HBCD tabulated format. This includes:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
@@ -27,41 +29,9 @@ File-based data is any data that cannot be converted to the HBCD tabulated forma
   </tbody>
 </table>
 
+<a href="../file-based-data" target="_blank" class="inline-doc-link">View File-Based Data Documentation →</a>
 
-<button class="button-link"><a href="../file-based-data" target="_blank">Go to File-Based Data Documentation</a></button>
-
-<p>
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Which file-based data are also available as HBCD tabulated data? <span class="hint">(Click to expand)</span></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p><strong>When possible</strong>, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
-<p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are included. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
-<ul>
-<li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
-<li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
-</ul>
-<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../../instruments/mri/mri-proc/#xcpd-derivs" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-<tr>
-<td><b>File-based derivatives</b></td>
-<td><code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
-</tr>
-<tbody>
-<tr>
-<td><b>Tabulated file</b></td>
-<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
-</tbody>
-</table>
-</div>
-</p>
+### Folder Structure
 
 <pre class="folder-tree">
 hbcd/
@@ -72,15 +42,15 @@ hbcd/
     |__ sub-<span class="label">{ID}</span>/      <span class="hashtag"># Raw BIDS (file-based)</span>
 </pre>
 
-<div id="filetree" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #2b2b2bff;">
+<div id="filetree" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-<span class="text" style="color: white; font-weight: normal;">Detailed Folder Tree Summary <span class="hint">(Click to expand)</span></span>
+<span class="text">Detailed Folder Tree Summary <span class="hint">(Click to expand)</span></span>
   <a class="anchor-link" href="#filetree" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
-  <span class="arrow" style="color: white;">▸</span>
+  <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
 <pre class="folder-tree" style="margin-top: 0;">
@@ -167,3 +137,25 @@ Some pipelines generate an <code>.html</code> visual summary report for quality 
 </li>
 </ul>
 </div>
+
+
+
+### Which file-based data are also available as HBCD tabulated data?
+<p><strong>When possible</strong>, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
+<p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are included. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
+<ul>
+<li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
+<li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
+</ul>
+<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../../instruments/mri/mri-proc/#xcpd-derivs" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<tr>
+<td><b>File-based derivatives</b></td>
+<td><code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
+</tr>
+<tbody>
+<tr>
+<td><b>Tabulated file</b></td>
+<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
+</tbody>
+</table>

@@ -148,7 +148,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>HBCD Study data includes data in both tabulated and file-based formats. <b>Tabulated data</b> is in a standardized table format, with one table provided for all participant data per measure, and includes instrument data (e.g., demographics, behavior, environmental determinants, etc.) as well as data derived from the file-based data. <b>File-based data</b> are imaging and biosignal data provided in varied formats depending on the modality. This includes MRI & MRS, EEG, and wearable sensor recordings. See <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a further details, including <a href="../../datacuration/overview/#warning" target="_blank">Which file-based data are also available as tabulated data?</a>.</p>
+<p>HBCD Study data includes data in both tabulated and file-based formats. <b>Tabulated data</b> is in a standardized table format, with one table provided for all participant data per measure, and includes instrument data (e.g., demographics, behavior, environmental determinants, etc.) as well as data derived from the file-based data. <b>File-based data</b> are imaging and biosignal data provided in varied formats depending on the modality. This includes MRI & MRS, EEG, and wearable sensor recordings. See <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a further details, including <a href="../../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank">Which file-based data are also available as tabulated data?</a>.</p>
 </div>
 
 <div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">

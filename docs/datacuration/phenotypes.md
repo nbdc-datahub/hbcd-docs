@@ -1,4 +1,3 @@
-
 # Tabulated Data
 
 <p>

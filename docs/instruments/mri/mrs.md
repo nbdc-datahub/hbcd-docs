@@ -144,7 +144,7 @@ HBCD MRS data are processed with a customized automated pipeline based on OSPREY
 
 The primary outcome variables from MRS data processed through the Osprey pipeline are **metabolite concentrations**. The **ISTHMUS** acquisition used in HBCD generates four spectra, each modeled separately using *linear combination modeling* with inclusive basis sets (since most metabolites may contribute, at least minimally, to all spectra).
 
-Each spectrum provides optimal quantification for a different subset of metabolites. The following recommended files are additionally available as <a href="../../../datacuration/overview/#warning" target="_blank">tabulated derivatives</a> that summarize participant data across Osprey derivatives.
+Each spectrum provides optimal quantification for a different subset of metabolites. The following recommended files are additionally available as <a href="../../../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank">tabulated derivatives</a> that summarize participant data across Osprey derivatives.
 
 See the full list of [OSPREY derivatives](#derivatives) included in the release above. 
 
