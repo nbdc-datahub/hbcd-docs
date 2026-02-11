@@ -25,6 +25,11 @@
 </tbody>
 </table>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#social-environmental-determinants" target="_blank">see details</a>.</span>
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -91,9 +96,9 @@
 </div>
 <div class="collapsible-content">
 <p><b>Current PACEs (C-PACEs)</b><br>
-Item responses can range from <b>1 (Never)</b> to <b>5 (Very Often)</b>. Summary scores are calculated by summing responses from all 10 items in the instrument (<code>sed_bm_paces_001</code> through <code>sed_bm_paces_010</code>). Therefore, summary scores can range from <b>1 to 5</b> (higher scores indicating more protective experiences) if all items are answered. If not, summary scores are still calculated as the average of the available responses. If fewer than seven items are completed, the score is set to missing.</p>
+Item responses can range from <b>1 (Never)</b> to <b>5 (Very Often)</b>. Summary scores are calculated by taking the average of the responses to 10 items in the instrument (<code>sed_bm_paces_001</code> through <code>sed_bm_paces_010</code>). Therefore, summary scores can range from <b>1 to 5</b>  (higher scores indicating more protective experiences) if all items are answered. If not, summary scores are still calculated as the average of the available responses. If fewer than seven items are completed, the score is set to missing.</p>
 <p><b>Retrospective PACEs ( R-PACEs) &lt;18</b><br>
-Item responses are coded as <b>0 (No)</b> and <b>1 (Yes)</b>. Total scores are calculated by adding the responses to the first 10 items of the instrument (<code>sed_cg_paces_001</code> through <code>sed_cg_paces_010</code>). Therefore, total scores can range from <b>0 to 10</b> (higher scores indicating more protective experiences) if all items are answered. If items are skipped or missed, the score is set to missing.</p>
+Item responses are coded as <b>0 (No)</b> and <b>1 (Yes)</b>. Total scores are calculated as the sum of responses to instrument items 1 through 10 (<code>sed_cg_paces_001</code> through <code>sed_cg_paces_010</code>). Therefore, total scores can range from <b>0 to 10</b> (higher scores indicating more protective experiences) if all items are answered. If items are skipped or missed, the score is calculated as the sum of all available responses.</p>
 </div>
 
 ## References

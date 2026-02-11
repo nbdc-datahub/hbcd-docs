@@ -222,6 +222,11 @@ Several instruments contain implausible values for gestational age (<code>gestat
   <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Participants who did not respond to any questions and should have a blank/null summary score instead have a score of 0. Users should convert these cases to blank/null prior to conducting analyses.</td>
 </tr>
+<tr>
+  <td>PACEs<br><code>sed_*_paces</code></td>
+  <td><b>TBD</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Summary scores are currently calculated as the sum of individual item responses rather than the average. This will be corrected in a future release. In the meantime, users may compute their own average-based summary scores using the item-level data provided in the dataset.</td>
+</tr>
 </tbody>
 </table>
 
