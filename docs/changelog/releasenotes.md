@@ -41,7 +41,7 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 <div style="background:#f2f6fc; padding:12px 20px; border-radius:10px; text-align:center; margin-bottom:25px; box-shadow:0 2px 4px rgba(0,0,0,0.05);">
   <span style="font-size:1.1em; font-weight:600; color:#2a5d9f;">
     <i class="fa-solid fa-calendar" style="margin-right:8px; vertical-align: 1px;"></i>
-    Release Date: 2026-02-13
+    Release Date: 2026-02-11
   </span>
 </div>
 
