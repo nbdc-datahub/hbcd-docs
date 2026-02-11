@@ -1,6 +1,6 @@
 # Infant Leg Motion
 
-The HBCD data release includes Infant Leg Motion Wearable Sensor data acquired during visits V02 and V03, V04.
+The HBCD data release includes Infant Leg Motion Wearable Sensor data acquired during visits V02 and V03.
 
 ## Release Data
 
