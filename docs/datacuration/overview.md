@@ -75,7 +75,7 @@ hbcd/
 <div id="filetree" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #2b2b2bff;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-<span class="text" style="color: white; font-weight: normal;">Detailed Folder Tree Summary</span>
+<span class="text" style="color: white; font-weight: normal;">Detailed Folder Tree Summary <span class="hint">(Click to expand)</span></span>
   <a class="anchor-link" href="#filetree" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -134,7 +134,7 @@ hbcd/
 <div id="filetrees" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-info"></i></span>
   <span class="text-with-link">
-  <span class="text">How To Read File Trees</span>
+  <span class="text">How To Read File Trees <span class="hint">(Click to expand)</span></span>
   <a class="anchor-link" href="#filetrees" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -142,11 +142,28 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b>The following formatting was employed to enhance readability of the file structure visuals throughout this site:</b></p>
+<p><b>The following conventions are used to improve readability of file tree diagrams throughout this site:</b></p>
 <ul>
-<li>The BIDS entities <code>sub-&lt;label&gt;_ses-&lt;label&gt;</code> are replaced with <code>sub-{ID}_ses-{V0X}</code>. In general, curly brackets (<code>{ }</code>) are used for items that have various possible values that are not fully listed in the documentation (i.e. <code>run-{X}</code> for run number).</li>
-<li>Some entities include a set of specific values, each of which is associated with a separate file: these values are either enclosed within <code>&lt;&gt;</code> as a list, separated by <code>|</code>, or listed in a <b>Label Values Legend</b> at the bottom of the file tree. In general, triangle brackets (<code>&lt; &gt;</code>) are used for items that have a defined set of possible values that are listed within the file tree.</li>
-<li>For brevity, sidecar JSON files may not be displayed, in which case files with corresponding JSONs are labeled with <code>(+JSON)</code> after the filename</li>
-<li>Several pipelines produce an <code>.html</code> visual summary report intended to be used for quality assessment of processed outputs. These files, typically located at either the pipeline folder or session-level, source their images from a <code>figures/</code> folder found in the derivatives. For readability, the contents of the <code>figures/</code> folders are not listed</li>
+<li>
+<strong>Curly brackets <code>{ }</code></strong> indicate placeholders with many possible values that are not exhaustively listed.
+Example: <code>sub-{ID}_ses-{V0X}</code>, <code>run-{X}</code>.
+</li>
+
+<li>
+<strong>Angle brackets <code>&lt; &gt;</code></strong> indicate a defined set of all included values.
+These values are either:
+<ul>
+<li>Listed directly inside the brackets and separated by <code>|</code>, or</li>
+<li>Defined in a <b>Label Values Legend</b> below the file tree.</li>
+</ul>
+</li>
+
+<li>
+<strong>Sidecar JSON files</strong> may be omitted for brevity. When applicable, files with corresponding JSONs are marked with <code>(+JSON)</code>.
+</li>
+
+<li>
+Some pipelines generate an <code>.html</code> visual summary report for quality assessment. These reports source images from a <code>figures/</code> directory within the derivatives folder. The contents of <code>figures/</code> are not listed for brevity.
+</li>
 </ul>
 </div>
