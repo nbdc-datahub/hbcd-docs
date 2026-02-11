@@ -43,6 +43,7 @@ with corresponding <code>*_channels.tsv</code> files describing each column (and
 See Further details on the BIDS conversion of motion data are available in 
 <a href="https://doi.org/10.1038/s41597-024-03559-8" target="_blank">Jeung et al., 2024</a>.
 </p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ rawdata/ 
@@ -70,6 +71,7 @@ hbcd/
 </div>
 <div class="table-collapsible-content">
 <p>The HBCD-Motion pipeline is used to process the HBCD Axivity Ax6 sensor recordings of infant leg movements across 72 continuous hours. See a full description of the pipeline and its outputs in the <a href="https://hbcd-motion-postproc.readthedocs.io/" target="_blank">HBCD-Motion documentation</a>.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
