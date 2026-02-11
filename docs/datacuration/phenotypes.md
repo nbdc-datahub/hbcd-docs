@@ -132,7 +132,7 @@ Tabulated data are provided in multiple formats to support a range of tools and 
 #### Working with Parquet in Python and R
 <p>
 <div id="load-parquet" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-brands fa-python"></i> / <i class="fa-brands fa-r-project"></i></span>
+  <span class="emoji" style="margin-right: 4px;"><i class="fa-brands fa-python"></i>&nbsp;<i class="fa-brands fa-r-project"></i></span>
   <span class="text-with-link">
   <span class="text">Loading Parquet Files</span>
   <a class="anchor-link" href="#load-parquet" title="Copy link">
