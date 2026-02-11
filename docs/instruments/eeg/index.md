@@ -96,7 +96,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>See details of the HBCD-MADE pipeline and outputs in the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE documentation</a>. Below is an overview of the HBCD-MADE derivative file structure and key outputs.</p>      
+<p>EEG data were processed using the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE</a> pipeline, as described in the <a href="#data-processing">Data Processing</a> summary on this page. The file structure of derivative outputs included in the release is as follows:</p>      
 <pre class="folder-tree" style="font-size: 11px">
 hbcd/
 |__ derivatives/ 
@@ -145,13 +145,23 @@ hbcd/
 </pre>
 </div>
 
-## Data Release & Processing Rules
+## Data Processing
 
-##### Multiple EEG Attempts
-For participants who had multiple EEG attempts, MADE derivatives are released for only the second/latest attempt.
+EEG data were processed using **[HBCD-MADE](https://docs-hbcd-made.readthedocs.io)**, an adaptation of the Maryland Analysis of Developmental EEG (MADE) pipeline ([Debnath et al., 2020](https://doi.org/10.1111/psyp.13580)) developed specifically for the HBCD Study. HBCD-MADE is implemented as a containerized [BIDS App](../processing/index.md#pipeline-standards-design) that adheres to [HBCD software and analytic standards](../processing/standards.md).
 
-##### Session Count Differences (Raw vs. Derivatives)
-The raw BIDS are available in the release for all EEG session data collected for HBCD. Corresponding derivatives processed through the HBCD-MADE pipeline are available for most, but not all sessions. This discrepancy is expected, as data that do not meet <a href="qc/#eeg-net-placement-capping-quality-ratings">quality control</a> criteria (such as when EEG capping images were not submitted, or sessions have very poor capping quality) are excluded from processing. In addition, for approximately 2% of sessions, technical issues during acquisition led to incomplete processing through the HBCD-MADE pipeline, resulting in missing derivatives. These data may be made available in future releases as issues are resolved.
+Full documentation of **processing parameters**, **pipeline configuration**, and **file selection logic** is available at:
+
+- The official [HBCD-MADE documentation site](https://docs-hbcd-made.readthedocs.io)
+- The external [HBCD Processing website](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/made.html)
+
+#### File Selection For Processing
+
+Not all raw EEG sessions are eligible for processing. Inclusion in the HBCD-MADE pipeline requires that sessions meet predefined <a href="qc/#eeg-net-placement-capping-quality-ratings">quality control</a> criteria. Common causes of exclusion include missing EEG capping images or very poor capping quality. For participants with multiple EEG acquisition attempts within a session, **only the final run was processed and included in the MADE derivatives.**
+
+#### Expected Differences Between Raw BIDS and Derivatives
+
+Raw BIDS data are released for all collected EEG sessions, regardless of processing eligibility. Therefore, **differences in session counts between raw BIDS and HBCD-MADE derivatives are expected.** In addition to exclusion based on quality control, ~2% of sessions had technical or acquisition issues that prevented complete processing. These data may be made available in future releases as issues are resolved.
+
 
 ## Resources
 - [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
