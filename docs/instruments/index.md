@@ -627,13 +627,13 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>sed_bm_nbhsaf</code></td>
 </tr> 
 <tr>
-  <td rowspan="2"><a href="SED/paces" target="_blank">PACES</a></td>
+  <td rowspan="2"><a href="SED/paces" target="_blank">PACEs</a></td>
   <td>Current</td>
   <td>Protective Factors</td>
   <td><code>sed_bm_paces</code></td>
 </tr>
   <tr>
-  <td>&lt;18</td>
+  <td>Retrospective &lt;18</td>
   <td>Protective Factors</td>
   <td><code>sed_cg_paces</code></td>
 </tr>
