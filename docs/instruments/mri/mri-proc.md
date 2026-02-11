@@ -28,11 +28,11 @@ Requirements around the presence of a T1w vs T2w are pipeline-specific. For all 
 ## BIBSNet
 BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentation (<a href="https://doi.org/10.1101/2023.03.22.533696">Hendrickson et al. 2024</a>). The <a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet pipeline</a> generates native-space brain segmentations and brain masks (as well as <code>volumes.tsv</code> files with ROI volume statistics), which are fed into Infant fMRIPrep for use in anatomical preprocessing and surface reconstruction.
 
-<div id="bibsnet" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+<div id="bibsnet-derivs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
 <span class="text">BIBSNet Derivatives (<code>bibsnet/</code>)</span>
-  <a class="anchor-link" href="#bibsnet" title="Copy link">
+  <a class="anchor-link" href="#bibsnet-derivs" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>

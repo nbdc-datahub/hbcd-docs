@@ -234,19 +234,19 @@ hbcd/
 </tr>
 <tr>
   <td><code>bibsnet/</code></td>
-  <td><a href="../../instruments/mri/smri/#bibsnet" target="_blank">BIBSNet</a></td>
+  <td><a href="../../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a></td>
 </tr>
 <tr>
   <td><code>nibabies/</code></td>
-  <td><a href="../../instruments/mri/fmri/#nibabies" target="_blank">Infant fMRIPrep (or Nibabies)</a></td>
+  <td><a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep (or Nibabies)</a></td>
 </tr>
 <tr>
   <td><code>freesurfer/</code> & <code>mcribs/</code></td>
-  <td><a href="../../instruments/mri/fmri/#fs-mcribs" target="_blank">FreeSurfer & M-CRIB-S</a></td>
+  <td><a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">FreeSurfer & M-CRIB-S</a></td>
 </tr>
 <tr>
   <td><code>xcp_d/</code></td>
-  <td><a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a></td>
+  <td><a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a></td>
 </tr>
 <tr>
   <td rowspan="2">Quantitative MRI</td>

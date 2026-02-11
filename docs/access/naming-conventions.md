@@ -142,7 +142,7 @@ Some variables deviate from the standard naming conventions. These exceptions ar
 
 - **Derived data** — variables such as <code>sed_basic_demographics</code> and <code>par_visit_data</code> in the [Demographics domain](../instruments/index.md#demo)
 - **Biospecimen data**, e.g. <code>bio_bm_biosample_nails_results</code> ([see instrument list](../instruments/index.md#biospec))
-- **Tabulated MRI and EEG derivatives** ([see details](../datacuration/overview.md#warning)):  
+- **Tabulated MRI and EEG derivatives** ([see details](../datacuration/overview.md#which-file-based-data-are-also-available-as-hbcd-tabulated-data)):  
 Follow the naming convention <code>domain_pipeline_derivative</code>, where:  
     - <code>domain</code>: either <code>img</code> or <code>eeg</code>  
     - <code>pipeline</code>: processing pipeline name  
