@@ -79,6 +79,25 @@ Structural and functional MRI derivatives were evaluated using **BrainSwipes**, 
 <p>This process was applied to all datasets except V02 sessions reconstructed using the <strong>Infant FreeSurfer (hash-2afa9081)</strong> workflow, which consistently produced poor-quality outputs. For this group, sessions were removed based on BrainSwipes QC scores alone without additional review. We advise against using this data for analysis (<a href="../mri-proc/#warning">see Data Warning</a>).</p>
 <p><strong>Structural QC.</strong> Structural BrainSwipes ratings were generally reliable and indicated low failure rates (0–3%). Only a subset of structurally flagged data required additional review to confirm removal.</p>
 <p><strong>Functional QC.</strong> Functional ratings exhibited higher apparent failure rates, likely because raters applied stricter, adult-oriented QC criteria. Therefore, all sessions with only functional QC failures were manually reviewed to determine which represented true severe issues for removal.</p>
+<p><b>The table below reports the percentage of session folders removed due to structural or functional QC failures for each visit</b> (with V02 data split into parallel outputs that exist for different surface reconstruction methods used for processing).</p>
+<table class="table-no-vertical-lines">
+<tfoot><tr><td colspan="5"><b>*</b> Structural QC passed; one or more BOLD runs failed QC</td></tr></tfoot>
+<thead>
+<tr>
+<th>Visit</th>
+<th>Surface Reconstruction Workflow</th>
+<th>Structural Exclusions (%)</th>
+<th>Functional Exclusions (%)*</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>V02</td><td>M-CRIB-S (hash-0f306a2f)</td><td>3%</td><td>16%</td><td>19%</td></tr>
+<tr><td>V02</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>19%</td><td>30%</td><td>49%</td></tr>
+<tr><td>V03</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>3%</td><td>3%</td><td>6%</td></tr>
+<tr><td>V04</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>0%</td><td>3%</td><td>3%</td></tr>
+</tbody>
+</table>
 </div>
 <p></p>
 

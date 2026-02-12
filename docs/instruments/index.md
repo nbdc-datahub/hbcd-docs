@@ -761,7 +761,7 @@ Expand the sections below to see a list of measures associated with each domain 
 <tr>
   <td rowspan="2">Structural MRI (<a href="mri/smri" target="_blank">sMRI</a>)</td>
   <td rowspan="2"><code>anat/</code></td>
-  <td><a href="../../instruments/mri/smri/#bibsnet" target="_blank">BIBSNet</a></td>
+  <td><a href="../../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a></td>
   <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 </tr>
 <tr>
@@ -777,17 +777,17 @@ Expand the sections below to see a list of measures associated with each domain 
 <tr>
     <td rowspan="2">Structural+Functional MRI</td>
     <td rowspan="2"></td>
-  <td><a href="../../instruments/mri/fmri/#nibabies" target="_blank">Infant fMRIPrep</a> & <a href="../../instruments/mri/fmri/#fs-mcribs" target="_blank">FreeSurfer & M-CRIB-S</a></td>
+  <td><a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> & <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">FreeSurfer & M-CRIB-S</a></td>
   <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
 </tr>
 <tr>
-  <td><a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a></td>
+  <td><a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a></td>
   <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 </tr>
 <tr>
     <td>Quantitative MRI (<a href="mri/qmri" target="_blank">qMRI</a>)</td>
     <td><code>anat/</code></td>
-    <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI</a> & <a href="../../instruments/mri/qmri/#derivatives" target="_blank">qMRI PostProc</a></td>
+    <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI & qMRI PostProc</a></td>
     <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
 </tr>
 <tr>

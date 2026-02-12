@@ -70,14 +70,12 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
   </div>
 </div>
 
-### 2.0 New Participant Data & Study Instruments
-
-##### Additional Participant Data
+### 2.0 New Participant Data 
 
 1. **Multiple Birth Participants**: multiple participants from the same birth (e.g. twins)
 1. **Postnatal Recruits (PNR)**: joined the study after the child is born (complete a modified V01 and V02)
 
-##### New Study Instruments/Measures
+### 2.0 New Study Instruments/Measures
 
 Approximately **40 new study instruments/measures** have been added across study domains (*click section below to expand*):
 
@@ -174,52 +172,20 @@ Approximately **40 new study instruments/measures** have been added across study
 </div>
 <p></p>
 
-### 2.0 Existing Study Data Updates
+### 2.0 MRI & EEG Updates
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
-<thead>
-<th style="width: 2%;">Domain</th>
-<th>Table/Data</th>
-<th>Update/Improvement</th>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
-  <td>MR Derivatives</td>
-  <td style="word-wrap: break-word; white-space: normal;">
-  Added processed <a href="../../instruments/mri/fmri/#nibabies" target="_blank" rel="noopener noreferrer">Infant fMRIPrep</a> and <a href="../../instruments/mri/fmri/#xcpd" target="_blank" rel="noopener noreferrer">XCP-D</a> derivatives for <strong>visits V03+</strong>.</td>
-</tr>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
-  <td>MR Scans TSV</td>
-  <td style="word-wrap: break-word; white-space: normal;">
-  Addition of <strong>MRI Scanner Information</strong> to <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV files</a> (<code>sub-{ID}_ses-{V0X}_scans.tsv</code>), including <i>ScannerManufacturer</i>, <i>ScannerModel</i>, <i>ScannerSoftwareVersion</i>, as well as <i>ScannerSerialNumber</i>, used to differentiate different scanners at the same site.</td>
-</tr>
-</tbody>
-</table>
-<p></p><p></p>
+#### Cross-Modality Updates (MRI & EEG)
 
-### 2.0 New Brain Imaging Derivatives & Exclusions
-Processed derivatives are now included for V03 and V04 in addition to V02. New processes were employed to remove MR derivatives with serious data quality issues - see [MR Exclusion Criteria](../instruments/mri/exclusion-criteria.md#processed-data-exclusion-criteria) for details. The table below reports the percentage of session folders removed due to structural or functional QC failures for each visit (with V02 data split into parallel outputs that exist for different surface reconstruction methods used for processing).
+- **Full Raw BIDS Inclusion**: All raw BIDS data are now included for both MRI and EEG (previously, only raw data that passed initial raw-data quality control were released).
+- **Additional participant- and visit-level data** 
 
-<table class="table-no-vertical-lines">
-<tfoot><tr><td colspan="5"><b>*</b> Structural QC passed; one or more BOLD runs failed QC</td></tr></tfoot>
-<thead>
-<tr>
-<th>Visit</th>
-<th>Surface Reconstruction Workflow</th>
-<th>Structural Exclusions (%)</th>
-<th>Functional Exclusions (%)*</th>
-<th>Total</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>V02</td><td>M-CRIB-S (hash-0f306a2f)</td><td>3%</td><td>16%</td><td>19%</td></tr>
-<tr><td>V02</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>19%</td><td>30%</td><td>49%</td></tr>
-<tr><td>V03</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>3%</td><td>3%</td><td>6%</td></tr>
-<tr><td>V04</td><td>Infant FreeSurfer (hash-2afa9081)</td><td>0%</td><td>3%</td><td>3%</td></tr>
-</tbody>
-</table>
+#### MRI-Specific Updates
+
+<b>Enhanced <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV</a> Metadata</b>    
+The session-level <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files now include detailed scanner metadata, including: `ScannerManufacturer`, `ScannerModel`, `ScannerSoftwareVersion`, and `ScannerSerialNumber` (enables differentiation of multiple scanners within the same site).   
+**Processed Data Exclusion Criteria Updated**   
+New procedures have been implemented to remove MRI derivatives with serious data quality issues.
+See: [MR Exclusion Criteria](../instruments/mri/exclusion-criteria.md#processed-data-exclusion-criteria) for full details.
 
 ### 2.0 Resolved Known Issues
 
