@@ -94,7 +94,7 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 <div id="2.0-new-tables" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-table"></i></span>
   <span class="text-with-link">
-  <span class="text">+ 40 New Instruments/Measures Across 8 Domains</span>
+  <span class="text">+ 40 New Instruments/Measures Across 10 Domains</span>
   <a class="anchor-link" href="#2.0-new-tables" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
