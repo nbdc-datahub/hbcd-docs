@@ -19,12 +19,13 @@ th, td {
   font-family: Lato; 
   color: #474646;
   font-weight: bold;
-  gap: 8px;                 /* space between emoji and text */
+  gap: 8px;
   font-size: 0.9em;
   line-height: 1.1;
-  border-radius: 6px; /* round edges */
+  border-radius: 6px;
   width: 100%;
 }
+
 .table-banner .text {
   flex: 1;                  /* text takes remaining space */
 }
@@ -48,6 +49,7 @@ th, td {
 .table-collapsible-content.open {
   max-height: none;
 }
+
 .table-collapsible-content p {
   display: inline-block !important;
   padding: 5px 10px !important;
@@ -57,14 +59,13 @@ th, td {
   margin-bottom: 0 !important;
 }
 .table-collapsible-content ul {
-  margin-top: 1rem;
   padding-left: 0.4rem;
   line-height: 1;
   font-size: 0.9em !important;
 }
 .table-collapsible-content li {
   margin-bottom: 0.4rem;
-  line-height: 1;
+  line-height: 1.1;
   font-size: 1em !important;
 }
 .table-collapsible-content ul ul {
@@ -77,9 +78,76 @@ th, td {
   line-height: 1;
   font-size: 1em !important;
 }
-.table-collapsible-content li b {
-  line-height: 1;
-  font-size: 1em !important;
+
+/* Static table banner */
+.static-table-banner {
+  display: flex;
+  align-items: center;
+  background-color: #d9dce2;
+  padding: 4px 8px;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: Lato; 
+  color: #474646;
+  font-weight: bold;
+  gap: 8px;  
+  font-size: 0.9em;
+  line-height: 1.1;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 10px; /* Only difference is that it has space below section */
+}
+/* Fixed-width icon column (icon size normalized) */
+.table-banner .emoji {
+  width: 1.8rem;      
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  color: #199bd6;
+}
+/* Text + anchor stay aligned */
+.table-banner .text-with-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.static-table-banner .emoji {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;   /* increase this for larger icon */
+  color: #4d5052;
+}
+.table-static-content {
+  background-color: #d0dff02c;
+  border-left: 5px solid #199bd6;
+  border-top: none;
+  padding: 0 0;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 10px; /* Adds spacing below the section */
+  width: 100%;
+  display: block;
+}
+.table-static-content ul,
+.table-static-content ol {
+  margin: 0;                   /* Remove extra spacing */
+  padding-left: 20px;          /* Optional: indent for list items */
+  font-size: 0.9em;
+}
+.table-static-content p {
+  display: inline-block !important;
+  padding: 5px 10px !important;
+  font-size: 0.9em;
+  line-height: 1.3 !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0 !important;
+}
+.table-static-content li {
+  margin: 0; /* override even the slight spacing */
+  padding: 0;
 }
 
 /* Static table banner */
@@ -165,21 +233,17 @@ th, td {
 }
 /* Make lists behave more like normal text blocks */
 .table-no-vertical-lines ul {
-  font-size: 1em;
-  line-height: 1.2;
   margin: 0;
-  padding-left: 1.2em;
-  display: block;
+  padding-left: 0;  /* indentation */
 }
 /* Reduce bottom space between last list item and table border */
 .table-no-vertical-lines ul:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin-top: 0; /* padding-top unnecessary; UL rarely has it */
+  margin-bottom: 0; /* padding-bottom unnecessary; UL rarely has it */
 }
-/* Optional: normalize list item alignment */
+/* Normalize list item spacing */
 .table-no-vertical-lines li {
   margin: 0;
-  padding: 0;
   line-height: 1.2;
 }
 

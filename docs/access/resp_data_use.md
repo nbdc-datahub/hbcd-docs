@@ -28,7 +28,7 @@ We recommend that all data users:
 
 1.    	Review the data warnings for any variable that you will be downloading and/or using by clicking the link and reviewing the warning associated with that variable.
 2.    	Review any resources and citations included with the warning and follow recommended guidelines.
-3.    	Reach out via the [Lasso Help Center](https://nbdc-datashare.lassoinformatics.com/help-center) if you have questions about the data warning or how to use the data.
+3.    	Reach out via the [Help Center in the NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/help-center) if you have questions about the data warning or how to use the data.
  
 ## Recommendations for Rigorous, Reproducible, and Responsible Data Use
 The HBCD Responsible Use of Data Committee (RUDC) provides the following guidance for researchers planning to use HBCD data:
@@ -113,4 +113,3 @@ The HBCD Responsible Use of Data Committee (RUDC) provides the following guidanc
   <p>Simmons, C., Conley, M. I., Gee, D. G., Baskin-Sommers, A., Barch, D. M., Hoffman, E. A., Huber, R. S., Iacono, W. G., Nagel, B. J., Palmer, C. E., Sheth, C. S., Sowell, E. R., Thompson, W. K., & Casey, B. J. (2021). Responsible use of open-access developmental data: The adolescent brain cognitive development (ABCD) study. Psychological Science, 32(6), 866–870. <a href="https://doi.org/10.1177/09567976211003564">https://doi.org/10.1177/09567976211003564</a></p>
   <p>Writing respectfully: Person-first and identity-first language. (n.d.). National Institutes of Health (NIH). Retrieved June 5, 2025, from <a href="https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language">https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language</a></p>
 </div>
-<br>

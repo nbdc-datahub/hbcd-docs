@@ -1,19 +1,12 @@
-# Overview & EEG Protocols 
+# Overview & EEG Protocols
 
-The HBCD study includes four electroencephalography (EEG) tasks collected during visits V03, V04, and V06:
-
-<ul>
-<li><a href="mmn" target="_blank">Auditory Mismatch Negativity (MMN)</a></li>
-<li><a href="faces" target="_blank">Faces (FACE)</a></li>
-<li><a href="videors" target="_blank">Video Resting State (RS)</a></li>
-<li><a href="vep" target="_blank">Visual Evoked Potential (VEP)</a></li>
-</ul>
+The HBCD study includes four electroencephalography (EEG) tasks collected during visits V03, V04, and V06: **Auditory Mismatch Negativity** (MMN), **Faces** (FACE), **Video Resting State** (RS), and **Visual Evoked Potential** (VEP). See [HBCD EEG Tasks](tasks.md) for detailed descriptions of each task.
 
 ## EEG Protocols
 
 **EEG protocols** are described in detail in [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and fully documented in [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030).
 
-![](images/EEGParams.png)
+<img src="images/EEGParams.png" style="max-width:100%; height:auto;">
 
 ## Release Data
 
@@ -42,33 +35,17 @@ The HBCD study includes four electroencephalography (EEG) tasks collected during
 <p>It is important to use these data in a manner which takes into account that physical and neurological differences between groups are not necessarily representative of intrinsic qualities of a given demographic  group. Discussions around data patterns should be sensitive to societal factors. In addition, it is important to note that variation within demographic populations is greater than variation across populations. Demographic markers are categorical proxies that cannot capture or explain the causal mechanisms that may account for evident differences.</p>
 </div>
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warnings</span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#imaging-eeg-data" target="_blank">see details</a>.</span>
 </div>
-<div class="warning-collapsible-content">
-<p><b>HBCD EEG Utilities</b><br>
-The EEG Core of the HBCD Data Coordinating Center (HDCC) has developed some helpful tools for extracting summary statistics and trial measures from HBCD EEG release data. We encourage all users to explore these resources at the <a href="https://hbcd-eeg-utilities.readthedocs.io/">HBCD EEG Utilities</a> website.</p>
-<p><b>Stimtracker Artifact</b><br>
-The MMN, VEP, and FACE task data for one participant included in the data release was found to contain an electrical noise artifact originating from the stimtracker device used for stimulus timing. All other participants' data were checked and confirmed to be artifact-free.</p> 
-<p>This artifact is most prominent in electrode E55 between the REF and COM electrodes, but is also visible in surrounding channels. It is time-locked to both stimulus onset and offset: as highlighted in the following EEG trace (MMN auditory oddball task in E55), the artifact presents as a negative deflection at onset and a positive deflection at offset.</p>
-<p><span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> <i><a href="artifacts" target="_blank">Click here</a> for information on how this artifact appears in time-frequency plots and ERP derivatives.</i></p>
-<img src="images/Fig1.png" width="70%" height="auto" class="center"><br>
-<p>The EEG workgroup is currently developing a method of ICA correction to remove this artifact. In the meantime, <strong>it is recommended to exclude the MMN, VEP, and FACE tasks for this participant from analyses</strong>. The ID of the impacted participant along with this documentation is available to DUC users in the <a href="https://hbcd-docs-private.lassoinformatics.com/">HBCD Private Release Notes</a> accessible via the <a href="https://nbdc-datashare.lassoinformatics.com/help-center">Lasso Help Center</a>.</p>
-<p><b>Task Updates Between V03 and V04/V06</b><br>
-The video content for the Resting State task and interstimulus interval (ISI) for the Auditory Mismatch Negativity task both changed between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details. Also note that RS is not a true resting state as there is a visual stimulus present.</p>
-</div>
+<p></p>
 
-EEG release data include both **file-based** (raw and processed data files in modality-specific formats) and **tabulated** (instrument and derived data in a standardized table format) data. <i>See the <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a full explanation of these data types.</i>
+EEG release data include both **file-based** (raw and processed data files in modality-specific formats) and **tabulated** (instrument and derived data in a standardized table format) data.      
+<i>See the <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a full explanation of these data types.</i>
 
  - <i class="fa fa-hammer"></i> <a href="../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> stored under subject- and session-specific <code>eeg/</code> folders      
- - <i class="fas fa-cog"></i> <a href="../../datacuration/file-based-data/#derivatives" target="_blank">Derivatives</a> generated by the HBCD-MADE pipeline      
+ - <i class="fas fa-cog"></i> <a href="../../datacuration/file-based-data/#processed-derivatives" target="_blank">Processed derivatives</a> generated by the HBCD-MADE pipeline      
  - <i class="fas fa-table"></i> <a href="../../datacuration/phenotypes" target="_blank">Tabulated data</a> derived from HBCD-MADE pipeline outputs — see the full list of EEG-specific tables <a href="../#eeg" target="_blank">here</a>
 
 <div id="rawbids" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
@@ -85,25 +62,28 @@ EEG release data include both **file-based** (raw and processed data files in mo
 <p>Each participant’s BIDS <code>eeg/</code> folder contains task-specific EEG recordings (<code>.set</code> and <code>.fdt</code> files), along with channel metadata (<code>*_channels.tsv</code> and <code>*_events.tsv</code>). Electrodes are placed on either the head (<code>acq-eeg</code>) or chest (<code>acq-ecg</code>). Electrode placement information is stored in <code>*_electrodes.tsv</code> files, accompanied by <code>*_coordsystem.json</code> files that define the Cartesian coordinates.</p>
 <p>The <code>sourcedata/</code> subfolder includes impedance measurements (<code>*_impedances.json</code>) used to ensure good electrode contact and task event logs (<code>*_eventlogs.txt</code>) describing stimulus presentation timing.<br>
 <i>See <a href="../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
+
+<p><a href="../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
-    |__ sub-<span class="label">&lt;ID&gt;</span>/   
-        |__ ses-<span class="label">&lt;V0X&gt;</span>/
+    |__ sub-<span class="label">{ID}</span>/   
+        |__ ses-<span class="label">{V0X}</span>/
             |__ eeg/
                 | <span class="hashtag"># TASK ACQUISITIONS:</span>
-                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_channels.tsv
-                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_eeg.set <span class="hashtag">(+JSON)</span>
-                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_events.tsv <span class="hashtag">(+JSON)</span>
-                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eeg.fdt
+                |__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_</span>_run-<span class="label">{X}</span>_channels.tsv
+                |__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_</span>_run-<span class="label">{X}</span>_eeg.set <span class="hashtag">(+JSON)</span>
+                |__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_</span>_run-<span class="label">{X}</span>_events.tsv <span class="hashtag">(+JSON)</span>
+                |__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_run-<span class="label">{X}</span>_eeg.fdt
                 |
-                | <span class="hashtag"># ELECTRODE PLACEMENT:</span>
-                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_electrodes.tsv
-                |__sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_coordsystem.json
+                | <span class="hashtag"># ELECTRODES PLACEMENT:</span>
+                |__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_electrodes.tsv
+                |__sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_coordsystem.json
                 |
                 |__ sourcedata/
-                    |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_impedances.json
-                    |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_eventlogs.txt
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_impedances.json
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_flags.json
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_run-<span class="label">{X}</span>_eventlogs.txt
 </pre>
 </div>
 
@@ -118,49 +98,75 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>See details of the HBCD-MADE pipeline and outputs in the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE documentation</a>. Below is an overview of the HBCD-MADE derivative file structure and key outputs.</p>      
-<pre class="folder-tree">
+<p>EEG data were processed using the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE</a> pipeline, as described in the <a href="#data-processing">Data Processing</a> summary on this page. The file structure of derivative outputs included in the release is as follows:</p>
+<p><a href="../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
+<pre class="folder-tree" style="font-size: 11px">
 hbcd/
 |__ derivatives/ 
     |__ made/
-        |__ sub-<span class="label">&lt;ID&gt;</span>/
-            |__ ses-<span class="label">&lt;V0X&gt;</span>/
+        |__ sub-<span class="label">{ID}</span>/
+            |__ ses-<span class="label">{V0X}</span>/
                 |__ eeg/
                     |__ filtered_data/
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.fdt
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filtered_eeg.set
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_run-<span class="label">{X}</span>_desc-filtered_eeg.fdt
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_run-<span class="label">{X}</span>_desc-filtered_eeg.set
                     |
                     |__ ica_data/
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_adjustReport.txt
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_desc-mergedICA_eeg.fdt
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_desc-mergedICA_eeg.set
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_adjustReport.txt
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-mergedICA_eeg.fdt
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-mergedICA_eeg.set
                     | 
                     |__ merged_data/
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_desc-merged_eeg.fdt
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_desc-merged_eeg.json
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_desc-merged_eeg.set
-                    |
-                    |__ processed_data/
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-FACE_desc-<span class="placeholder">&lt;F-TOPO&gt;</span>_topo.jpg
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-FACE_desc-oz_<span class="placeholder">&lt;diffERP|ERP&gt;</span>.jpg
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-MMN_desc-oz_<span class="placeholder">&lt;MMN-TOPO&gt;</span>_topo.jpg
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-MMN_desc-t7t8_<span class="placeholder">&lt;diffERP|ERP&gt;</span>.jpg
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-VEP_<span class="placeholder">&lt;desc-oz_ERP|topo&gt;</span>.jpg
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_acq-eeg_ERP.mat
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.fdt
-                    |   |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_desc-filteredprocessed_eeg.set
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-merged_eeg.fdt
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-merged_eeg.json
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-merged_eeg.set
                     | 
-                    |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_acq-eeg_preprocessingReport.csv
-                    |__ sub-<span class="label">&lt;ID&gt;</span>_ses-<span class="label">&lt;V0X&gt;</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_MADEspecification.json
-                    
+                    |__ processed_data/
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-FACE_desc-<span class="placeholder">&lt;F-TOPO&gt;</span>_topo.jpg
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-FACE_desc-oz_<span class="placeholder">&lt;diffERP|ERP&gt;</span>.jpg
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-MMN_desc-oz_<span class="placeholder">&lt;MMN-TOPO&gt;</span>_topo.jpg
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-MMN_desc-t7t8_<span class="placeholder">&lt;diffERP|ERP&gt;</span>.jpg
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN&gt;</span>_desc-<span class="placeholder">{IMG}</span>.jpg
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-RS_desc-allCh_PSD.jpg
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-RS_LogPowerSpectra.csv
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-RS_dbPowerSpectra.csv
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-RS_AbsPowerSpectra.csv
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_ERPSummaryStats.csv
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_ERPTrialMeasures.csv
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-VEP_<span class="placeholder">&lt;desc-oz_ERP|topo&gt;</span>.jpg
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_acq-eeg_run-<span class="label">{X}</span>_ERP.mat
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-RS_spectra.mat
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_run-<span class="label">{X}</span>_desc-filteredprocessed_eeg.fdt
+                    |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_run-<span class="label">{X}</span>_desc-filteredprocessed_eeg.set
+                    | 
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-eeg_preprocessingReport.csv
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-<span class="placeholder">&lt;FACE|MMN|RS|VEP&gt;</span>_acq-eeg_run-<span class="label">{X}</span>_MADEspecification.json
+
 <span class="hashtag"># Label Values Legend</span>
 <span class="placeholder">&lt;F-TOPO&gt;</span>: diffInvVsUpr, diffObjVsUp2, inverted, object, upright, upright2
 <span class="placeholder">&lt;MMN-TOPO&gt;</span>: deviant, diffDevVsSta, diffDevVsPre, preDeviant, standard 
 </pre>
 </div>
 
+## Data Processing
+
+EEG data were processed using **[HBCD-MADE](https://docs-hbcd-made.readthedocs.io)**, an adaptation of the Maryland Analysis of Developmental EEG (MADE) pipeline ([Debnath et al., 2020](https://doi.org/10.1111/psyp.13580)) developed specifically for the HBCD Study. HBCD-MADE is implemented as a containerized [BIDS App](../processing/index.md#pipeline-standards-design) that adheres to [HBCD software and analytic standards](../processing/standards.md).
+
+Full documentation of **processing parameters**, **pipeline configuration**, and **file selection logic** is available at:
+
+- The official [HBCD-MADE documentation site](https://docs-hbcd-made.readthedocs.io)
+- The external [HBCD Processing website](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/made.html)
+
+#### File Selection For Processing
+
+Not all raw EEG sessions are eligible for processing. Inclusion in the HBCD-MADE pipeline requires that sessions meet predefined <a href="qc/#eeg-net-placement-capping-quality-ratings">quality control</a> criteria. Common causes of exclusion include missing EEG capping images or very poor capping quality. For participants with multiple EEG acquisition attempts within a session, **only the final run was processed and included in the MADE derivatives.**
+
+#### Expected Differences Between Raw BIDS and Derivatives
+
+Raw BIDS data are released for all collected EEG sessions, regardless of processing eligibility. Therefore, **differences in session counts between raw BIDS and HBCD-MADE derivatives are expected.** In addition to exclusion based on quality control, ~2% of sessions had technical or acquisition issues that prevented complete processing. These data may be made available in future releases as issues are resolved.
+
+
 ## Resources
-- [HBCD EEG Utilities](https://hbcd-eeg-utilities.readthedocs.io/)
 - [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
 - [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030)
 
@@ -172,4 +178,3 @@ hbcd/
     <p>Fox, N. A., Pérez-Edgar, K., Morales, S., Brito, N. H., Campbell, A. M., Cavanagh, J. F., Gabard-Durnam, L. J., Hudac, C. M., Key, A. P., Larson-Prior, L. J., Pedapati, E. V., Norton, E. S., Reetzke, R., Roberts, T. P., Rutter, T. M., Scott, L. S., Shuffrey, L. C., Antúnez, M., Boylan, M. R., … Yoder, L. (2024). The development and structure of the Healthy Brain and Child Development (HBCD) study EEG Protocol. <i>Developmental Cognitive Neuroscience</i>, 69, 101447. <a href="https://doi.org/10.1016/j.dcn.2024.101447" target="_blank">https://doi.org/10.1016/j.dcn.2024.101447</a></p> 
     <p>Mlandu, N., McCormick, S. A., Davel, L., Zieff, M. R., Bradford, L., Herr, D., Jacobs, C. A., Khumalo, A., Knipe, C., Madi, Z., Mazubane, T., Methola, B., Mhlakwaphalwa, T., Miles, M., Nabi, Z. G., Negota, R., Nkubungu, K., Pan, T., Samuels, R., … Gabard-Durnam, L. J. (2024). Evaluating a novel high-density EEG sensor net structure for improving inclusivity in infants with curly or tightly coiled hair. <i>Developmental Cognitive Neuroscience</i>, 67(101396), 101396. <a href="https://doi.org/10.1016/j.dcn.2024.101396" target="_blank">https://doi.org/10.1016/j.dcn.2024.101396</a></p> 
 </div>
-<br>

@@ -1,4 +1,3 @@
-
 # ReproSchema
 ## What is ReproSchema?
 Ensuring consistency in research data collection is critical, especially in large-scale and multi-site studies like HBCD. However, tracking changes in questionnaires, maintaining structured formats, and ensuring version control across different time points can be challenging.
@@ -107,4 +106,3 @@ Tracking these elements allows researchers to see when and how questions change,
 <div class="references">
 	<p>Chen Y, Jarecka D, Abraham SA, Gau R, Ng E, Low DM, Bevers I, Johnson A, Keshavan A, Klein A, Clucas J, Rosli Z, Hodge SM, Linkersdörfer J, Bartsch H, Das S, Fair D, Kennedy D, Ghosh SS. Standardizing Survey Data Collection to Enhance Reproducibility: An Evaluation of ReproSchema. J Med Internet Res. <a href="http://dx.doi.org/10.2196/63343">http://dx.doi.org/10.2196/63343</a>
 </div>
-<br>

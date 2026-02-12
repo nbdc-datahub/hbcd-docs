@@ -47,32 +47,7 @@ hbcd/
 </pre>
 </div>
 
-<div id="bibsnet" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-<span class="text">BIBSNet Derivatives (<code>bibsnet/</code>)</span>
-  <a class="anchor-link" href="#bibsnet" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>BIBSNet outputs brain segmentations and masks in native T1w and T2w space as well as <code>volumes.tsv</code> files with ROI volume statistics. See the <a href="https://bibsnet.readthedocs.io/en/latest/">pipeline documentation</a> for a full explanation of derivatives.</p>
-<pre class="folder-tree">
-hbcd/
-|__ derivatives/ 
-    |__ bibsnet/
-        |__ sub-<span class="label">{ID}</span>/
-            |__ ses-<span class="label">{V0X}</span>/
-                |__ anat/
-                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_dseg.nii.gz <span class="hashtag">(+JSON)</span>
-                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv <span class="hashtag">(+JSON)</span>         
-                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.nii.gz <span class="hashtag">(+JSON)</span>
-</pre>
-</div>
-
-<div id="mriqc" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+<div id="mriqc" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
 <span class="text">MRIQC Derivatives (<code>mriqc/</code>)</span>
@@ -99,10 +74,36 @@ hbcd/
 </pre>
 </div>
 
+<div id="bme-x" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">BME-X Derivatives (<code>bme_x/</code>)</span>
+  <a class="anchor-link" href="#bme-x" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>The Brain MRI Enhancement foundation (BME-X) model pipeline performs motion correction, resolution enhancement, denoising, and harmonization of MR images. Derivatives include enhanced T1w/T2w images (head: <code>desc-preproc</code> and brain: <code>desc-enhanced</code>) and associated brainmasks. See the <a href="https://brain-mri-enhancement.readthedocs.io/en/latest/#outputs">pipeline documentation</a> for more information.</p>
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
+    |__ bme_x/
+        |__ sub-<span class="label">{ID}</span>/
+            |__ ses-<span class="label">{V0X}</span>/
+                |__ anat/
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_desc-enhanced_<span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_desc-preproc_<span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-brain_mask.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_<span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
+</pre>
+</div>
+
 <div id="nibabies-xcpd" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #fbe6f7">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-<span class="text">Infant fMRIPrep (<code>nibabies/</code>) & XCP-D (<code>xcp_d/</code>) Derivatives</span>
+<span class="text">BIBSNet, Infant fMRIPrep (<code>nibabies/</code>), & XCP-D Derivatives</span>
   <a class="anchor-link" href="#nibabies-xcpd" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -110,7 +111,7 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>See the <code>anat/</code> subfolders of Infant fMRIPrep (<a href="../fmri/#nibabies" target="_blank">here</a>) and XCP-D (<a href="../fmri/#xcpd" target="_blank">here</a>) derivatives documented on the Functional MRI page, including T1w/T2w images processed to correct for motion and distortions and surface reconstructions.</p>
+<p>Structural MRI data is used for a variety of image processing pipelines such as BIBSNet, Infant fMRIPrep, and XCP-D. The pipelines generate structural-specific derivatives within an <code>anat/</code> subfolder, including T1w/T2w images processed to correct for motion and distortions and surface reconstructions. See <a href="../mri-proc/#structural-functional-mri-processing-overview" target="_blank">Structural & Functional MRI Processing Overview</a> for details.<p>
 </div>
 
 ## Data Acquisition
@@ -125,6 +126,9 @@ HBCD protocols for structural MRI were informed by recent large-scale developmen
 - As with the [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study), the contrast-relevant parameters are matched as closely as possible across vendors for the T1w scans.
 - Also similar to the [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study), for the T2w scans, vendor-specific parameters were chosen to achieve similar contrast and SNR, accounting for the fact that each vendor implements their 3D T2w pulse sequences differently.
 
+## Data Processing
+Structural MRI data is used for a variety of image processing pipelines - **see the [MRI Processing & Derivatives Guide](mri-proc.md) for details.**
+
 ## References
 <div class="references">
     <p>Andersen, M., Björkman-Burtscher, I. M., Marsman, A., Petersen, E. T., & Boer, V. O. (2019). Improvement in diagnostic quality of structural and angiographic MRI of the brain using motion correction with interleaved, volumetric navigators.
@@ -135,4 +139,3 @@ HBCD protocols for structural MRI were informed by recent large-scale developmen
     <p>Tisdall, M. D., Reuter, M., Qureshi, A., Buckner, R. L., Fischl, B., & van der Kouwe, A. J. W. (2016). Prospective motion correction with volumetric navigators (vNavs) reduces the bias and variance in brain morphometry induced by subject motion. <em>Neuroimage</em>, 127, 11-22. <a href="https://doi.org/10.1016/j.neuroimage.2015.11.054">https://doi.org/10.1016/j.neuroimage.2015.11.054</a></p>
     <p>White, N., Roddey, C., Shankaranarayanan, A., Han, E., Rettmann, D., Santos, J., Kuperman, J., & Dale, A. (2010). PROMO: Real-time prospective motion correction in MRI using image-based tracking. <em>Magnetic Resonance in Medicine</em>, 63(1), 91–105. <a href="https://doi.org/10.1002/mrm.22176">https://doi.org/10.1002/mrm.22176</a></p>
 </div>
-<br>

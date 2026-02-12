@@ -2,7 +2,7 @@
 <p>
 <div id="visformat" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">See the <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/">HBCD Processing</a> website for full details on how each pipeline was used for HBCD processing.</span>
+  <span class="text">See the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> website for full details on how each pipeline was used for HBCD processing.</span>
 </div>
 </p>
 
@@ -21,12 +21,17 @@ The **HBCD processing pipelines** are a collection of modular tools used to proc
   </thead>
   <tbody>
 <tr>
-<td colspan="1" rowspan="6">
+<td colspan="1" rowspan="7">
 <div>MRI</div>
 </td>
 <td><a href="https://mriqc.readthedocs.io/en/latest/">MRIQC</a></td>
 <td><code>mriqc/</code></td>
 <td style="word-wrap: break-word; white-space: normal;">Automated extraction of image quality metrics from structural and functional MRI data</td>
+<tr>
+<td><a href="https://brain-mri-enhancement.readthedocs.io/">BME-X</a></td>
+<td><code>bme_x/</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Structural pipeline for T1w/T2w image quality enhancement</td>
+</tr>
 <tr>
 <td><a href="https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html">qMRI Postproc</a></td>
 <td><code>symri/</code><br><code>qmri_postproc/</code></td>
@@ -99,10 +104,6 @@ All processing containers are available on [Docker Hub](https://hub.docker.com/)
 
 ## File Selection for Processing
 
-With the exception of TB1 MRI and electrocardiogram (ECG) data, raw BIDS files are included in the release only if they were used in at least one processing pipeline, ensuring alignment with derived pipeline outputs. Since HBCD employs multiple pipelines — each with its own requirements — the released data represent the union of all files that meet at least one pipeline’s criteria. 
+Files are selected for processing based on pipeline-specific criteria detailed under the sections *File Selection For Processing* and *Quality Control Selection Information* in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html#tool-names) section of the [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/index.html) documentation. 
 
-For some data categories, files are selected for processing based on pipeline-specific criteria detailed under *Quality Control Selection Information* in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/latest/tool_details.html#tool-names) section of the HBCD Processing website. For imaging data that underwent [raw data quality control](../mri/qc.md#raw-mr-data-qc), only files that pass are included in the data release and utilized for data processing. All quality control information is stored in the `sub-{ID}_ses-{V0X}_scans.tsv` file located in each BIDS session folder. This file is queried prior to processing to determine which files to include/exclude (e.g. based on thresholds for `QU_motion`, `acq_motion`, `brain_SNR`, etc.). 
 
-There are some exceptions: for instance, MRS localizers are not excluded from processing based on QC alone. Data curation is instead performed during OSPREY-BIDS processing, which prioritizes localizer timing over QC (see details [here](https://osprey-bids.readthedocs.io/en/2.4.3/processing_pipeline_details.html)). 
-
-When additional QC criteria apply, filtering typically occurs in two stages: first, using both manual and automated QC fields, and second, using only automated fields. For example, only the highest-quality T1w and T2w are selected for structural MRI processing when multiple scans passing QC are present. In this first release, all high-resolution T1w and T2w scans — and most QALAS acquisitions — were selected using `QU_Motion`, a manual assessment of motion artifacts.

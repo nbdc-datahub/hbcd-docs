@@ -1,31 +1,9 @@
 # ASSIST      
-<p>
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>pex_bm_assistv&lt;1|2|3&gt;</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-     Alcohol, Smoking and Substance Involvement Screening Test (<i>ASSIST</i>)
-    </div>
-  </div>
-    <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-clone"></i> Versions:</div>
-    <div class="info-value">V1, V2, V3</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Substance Use Pre-, During, and Post-Pregnancy</div>
-  </div>
-</div>
-</p>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <tr>
-    <th colspan="3"><i><i class="fa-solid fa-clone"></i> Version-Specific Information</i></th>
+    <th colspan="3">Alcohol, Smoking and Substance Involvement Screening Test (<i>ASSIST</i>) Versions V1-V4:</th>
   </tr>
   <tr>
     <th>Version</th>
@@ -34,16 +12,19 @@
   </tr>
 </thead>
 <tbody>
-<tr><td><strong>ASSIST V1</strong></td>
+<tr><td>ASSIST V1</td>
 <td>Substance use and problematic use before and during pregnancy</td>
 <td><code>pex_bm_assistv1</code></td>
 </tr>
-<tr><td><strong>ASSIST V2</strong></td>
+<tr><td>ASSIST V2</td>
 <td style="word-wrap: break-word; white-space: normal;">Substance use during end of pregnancy ( between V01 and delivery) and postnatal (weeks 0-4, between delivery and V2)</td>
 <td><code>pex_bm_assistv2</code></td></tr>
-<tr><td><strong>ASSIST V3</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy</td>
+<tr><td>ASSIST V3</td>
+<td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy (3 month anchors)</td>
 <td><code>pex_bm_assistv3</code></td></tr>
+<tr><td>ASSIST V4</td>
+<td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy (12 month anchors)</td>
+<td><code>pex_bm_assistv4</code></td></tr>
 </tbody>
 </table>
 
@@ -76,7 +57,6 @@
 <p>It was difficult for some participants to self-report the typical size of a single drink (in oz) to capture ‘standard drinks’ of alcohol for ASSIST, leading to some reports falling outside the expected range. Similarly, reporting the frequency of use for substances like electronic cigarette devices proved difficult, resulting in outliers. While sites were queried on these outliers, participants could not always be re-contacted for clarification.</p> 
 </div>
 
-
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -84,13 +64,13 @@
 <tr><td><b>Child Specific</b></td>
 <td>No</td></tr>
 <tr><td><b>Respondent</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Pregnant Participant <strong>[V1]</strong>; Birth Parent <strong>[V2]</strong>; Birth Parent or Primary Caregiver <strong>[V3]</strong></td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Pregnant Participant <strong>[V1]</strong>; Birth Parent <strong>[V2]</strong>; Birth Parent or Primary Caregiver <strong>[V3, V4]</strong></td></tr>
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in-person (except in Alabama, where participants were trained to self-administer)</td></tr>
 <tr><td><b>Visits</b></td>
-<td>V01, V02, V03</td></tr>
+<td>V01, V02, V03, V04</td></tr>
 <tr><td><b>Completion Time</b></td>
-<td>5 min <strong>[V1, V2]</strong>; 3 min <strong>[V3]</strong></td></tr>
+<td>5 min <strong>[V1, V2]</strong>; 3 min <strong>[V3, V4]</strong></td></tr>
 <tr><td><b>Quality Control</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers and, for V1 and V2, additionally cross-checked with TLFB to ensure consistency in reported substances.</td></tr>
 </tbody>
@@ -98,7 +78,7 @@
 
 ## Instrument Details
 
-The **HBCD ASSIST V1, V2, and V3** were modified from the [NIDA Quick Screen (Modified ASSIST)](https://nida.nih.gov/sites/default/files/pdf/nmassist.pdf) and included questions from the Family History Assessment Module (FHAM) and the All of Us Personal and Family Health History. The original NIDA quick screen was scored; however, our version is not scored. To acknowledge these changes in future publications, authors can note that questions were motivated from the NIDA Modified ASSIST.
+The HBCD ASSIST measures were modified from the [NIDA Quick Screen (Modified ASSIST)](https://nida.nih.gov/sites/default/files/pdf/nmassist.pdf) and included questions from the Family History Assessment Module (FHAM) and the All of Us Personal and Family Health History. The original NIDA quick screen was scored; however, our version is not scored. To acknowledge these changes in future publications, authors can note that questions were motivated from the NIDA Modified ASSIST.
 
 The NIDA quick screen tool (*have you used alcohol, tobacco, prescription drugs, or illegal drugs in the last year*) was modified to assess more details regarding types of substances used and the timeline of use before and during pregnancy - see [HBCD Modification Details](#hbcd-mod) for modifications made to each instrument version. In addition, for lifetime and problematic use, and use pre-pregnancy, pregnancy, end-pregnancy, post-pregnancy, and past 3 months, use was greatly expanded - see [Expanded ASSIST Substance Type Options](#substance-options).
 
@@ -115,8 +95,8 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p><b>Replacement Questions for NIDA Quick Screen Tool</b></p>
 <ul>
-<b>Replacement Questions for NIDA Quick Screen Tool</b><br>
 <b>ASSIST V1</b><br>
 <strong>Assess lifetime use [lt] and disordered use, or use causing problems in their lives:</strong>
 <ul>
@@ -147,6 +127,13 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
     <li>[3m_use] IN THE PAST THREE MONTHS, how often have you used any of the following substances for any reason? [followed by list of substance options from section below]</li>
     <li>[problem] DURING THE PAST THREE MONTHS, has your use of this substance led to physical or mental health, social, or financial problems?</li>
     <li>[perform] DURING THE PAST THREE MONTHS, have you ever failed to do what was normally expected of you (like work, go to school, be a parent, or household tasks) because of your use of this substance?</li>
+</ul>
+<b>ASSIST V4</b><br>
+<strong>Assess use and impact of substance use after pregnancy in past 12 months (12m):</strong>
+<ul>
+    <li>[12m_use] IN THE PAST TWELVE MONTHS, how often have you used any of the following substances for any reason? [followed by list of substance options from section below]</li>
+    <li>[problem] DURING THE PAST TWELVE MONTHS, has your use of this substance led to physical or mental health, social, or financial problems?</li>
+    <li>[perform] DURING THE PAST TWELVE MONTHS, have you ever failed to do what was normally expected of you (like work, go to school, be a parent, or household tasks) because of your use of this substance?</li>
 </ul>
 </div>
 
@@ -237,4 +224,3 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
     Wakeman, S. E., Bryant, A., & Harrison, N. (2022). Redefining child protection. <i>Obstetrics and Gynecology</i>, <b>140</b>(2), 167–173. <a href="https://doi.org/10.1097/aog.0000000000004786" target="_blank">https://doi.org/10.1097/aog.0000000000004786</a>
   </p>
 </div>
-<br>

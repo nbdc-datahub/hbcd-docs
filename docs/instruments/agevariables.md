@@ -1,122 +1,173 @@
 # Age Variable Definitions
 
-Fields reporting age in the <span class="tooltip">tabulated data<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> include global, single-point (i.e. static) variables in [Basic Demographics](#basic-demographics) (e.g. Maternal Age at V01), and [instrument-specific variables](#tabulated-instrument-data) for age that vary depending on the date of administration for a given instrument. In the [raw file-based data](#raw-file-based-data) (EEG, magnetic resonance imaging/spectroscropy, and motion sensor data), fields reporting age vary depending on the date of data acquisition, reported in the session- and scan-level `.tsv` files. See details for each below. 
+This page defines how age is represented across HBCD datasets. Separate variables quantify (1) the child’s age at different points in the study during instrument administration, data acquisition, and at birth (i.e. gestational age) and (2) the mother's age at the scheduled V01 visit and delivery. 
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<thead>
+<tr>
+<th><strong>Dataset Type</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Variables</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tabulated Data</strong></td>
+<td>Age at time of instrument administration</td>
+<td><code>candidate_age</code><br><code>adjusted_age</code><br><code>gestational_age</code></td>
+</tr>
+<tr>
+<td><strong>File-Based Data</strong></td>
+<td>Age at MR, EEG, or wearable data acquisition</td>
+<td><code>age</code><br><code>age_adjusted</code></td>
+</tr>
+<tr>
+<td><strong>Basic Demographics</strong></td>
+<td>Global, single-point age variables derived from administrative data</td>
+<td><code>mother_age_v01</code><br><code>mother_age_delivery</code><br><code>gestational_age_delivery</code></td>
+</tr>
+</tbody>
+</table>
+
+<div id="age-contexts" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i style="font-size: 0.9em;" class="fa fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Overview of Age Variable Contexts</span>
+  <a class="anchor-link" href="#age-contexts" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>
+<ul>
+<li><strong>Administration</strong>: The date a study instrument was completed.  </li>
+<li><strong>Data acquisition</strong>: The date of MR, EEG, or wearable sensor recording.  </li>
+<li><strong>Adjusted age</strong>: Computed relative to the <strong>Estimated Date of Delivery (EDD)</strong> to align preterm and full-term infants to a common developmental reference.  </li>
+<li><strong>Chronological age</strong>: Computed using a <strong>jittered date of birth (DOB)</strong> randomly shifted by up to 7 days to protect participant privacy without affecting analyses.  </li>
+</ul>
+</p>
+</div>
+
+---
+
+## <i class="fa-solid fa-table"></i> Tabulated Data
+
+Most <a href="../../datacuration/phenotypes/" target="_blank">tabulated datasets</a> include the following age variables describing the child’s age at the time of **instrument administration** (or **data acquisition** for tabulated data computed from imaging/EEG pipeline derivatives <a href="../../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i style="font-size: 0.85em;" class="fa-solid fa-arrow-up-right-from-square"></i></a>). The primary exception is tabulated data within the <a href="../#demo" target="_blank">Demographics domain</a> datasets; see [Basic Demographics](#basic-demographics) below. 
+
+<p style="font-size: 0.9em; color: #555;">
+<i class="fa-solid fa-baby"></i>&nbsp;= Variable refers to the child &nbsp;&nbsp;
+<span class="pill-badge" style="background-color: pink;">V01</span>&nbsp;= Available Visit V01 only (prenatal) &nbsp;&nbsp;
+<span class="pill-badge">V02+</span>&nbsp;= Available Visit V02 onward (post-birth)
+</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<thead>
+<tr>
+<th><strong>Tabulated Data Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i class="fa-solid fa-baby"></i>&nbsp; Gestational Age at Administration<br><code style="margin-left: 19px;">gestational_age</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+  Time elapsed (<b>whole weeks</b>, rounded down) between the <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period, estimated as EDD minus 280 days</span></span> and date of instrument administration. Varies no more than 4 weeks across protocol elements except when protocol exceptions were granted. <i>Note that instruments not administered at V01 will have null values for gestational age.</i> <span class="pill-badge" style="background-color: pink;">V01</span>
+</td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-baby"></i>&nbsp; Chronological Age at Administration<br><code style="margin-left: 19px;">candidate_age</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+  Age in <b>years<sup><b>1</b></sup></b> at the time of instrument administration. Computed using a jittered DOB shifted by up to 7 days to protect participant privacy. <span class="pill-badge">V02+</span>
+</td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-baby"></i>&nbsp; Adjusted Chronological Age at Administration<br><code style="margin-left: 19px;">adjusted_age</code></td>
+<td style="word-wrap: break-word; white-space: normal;">
+  Time elapsed (<b>whole weeks</b>, rounded down) between the <b>EDD</b> and date of instrument administration. <span class="pill-badge">V02+</span>
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+  <td colspan="2" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
+    <sup><b>1</b></sup> Years are to three decimal places, calculated by dividing the total days elapsed (rounded down) by 365.25.
+  </td>
+</tr>
+</tfoot>
+</table>
+
+## <i class="fa-solid fa-folder-open"></i> File-Based Metadata
+
+Age variables in [raw file-based datasets](../datacuration/file-based-data.md#raw-bids) describe the child’s age at the time of **data acquisition** for MR, EEG, and wearable sensor recordings. These values are stored in [session/scan-level TSV metadata files](../datacuration/file-based-data.md#participant-session-scan-level-data).  
+
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<thead>
+<tr>
+<th><strong>File-Based Data Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i class="fa-solid fa-baby"></i>&nbsp; Adjusted Age at Time of Scan (<code>age_adjusted</code>)</td>
+<td style="word-wrap: break-word; white-space: normal;">
+  Time in <b>days</b> elapsed between the <b>EDD</b> and date of data acquisition. <span class="pill-badge">V02+</span>
+</td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-baby"></i>&nbsp; Chronological Age at Time of Scan (<code>age</code>)</td>
+<td style="word-wrap: break-word; white-space: normal;">
+  Age in <b>years<sup><b>1</b></sup></b> at the time of data acquisition. Computed using a jittered DOB shifted by up to 7 days to protect participant privacy. <span class="pill-badge">V02+</span>
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+  <td colspan="2" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
+    <sup><b>1</b></sup> Years are to three decimal places, calculated by dividing the total days elapsed (rounded down) by 365.25.
+  </td>
+</tr>
+</tfoot>
+</table>
 
 ## Basic Demographics
 
-<span class="tooltip">Tabulated<span class="tooltiptext">instrument and derived data<br>(tabulated format)</span></span> [Basic Demographics](demo/basicdemo.md) data (`sed_basic_demographics`) includes variables derived across instruments, with the following set of variables reporting age. **These are single-point, static variables (i.e. they do not change over time) that should be present and consistent across all visits unless data beyond visit V01 is not available.** 
+Datasets within the <a href="../#demo" target="_blank">Demographics <i style="font-size: 0.8em;" class="fa-solid fa-arrow-up-right-from-square"></i></a> domain, including Basic Demographics (`sed_basic_demographics`) and Visit Level Data (`par_visit_data`), combine information from multiple sources, including administrative data and study instruments. <a href="../demo/basicdemo/" target="_blank">Basic Demographics</a> (which provides global, single-point variables that do not vary over time, such as participant race/ethnicity) includes a distinct set of age variables that follow slightly different logic than those used in standard instrument datasets described above (e.g., how years and LMP-based ages are calculated). Visit Level Data does not include age variables.
 
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
-    <thead>
-      <tr>
-        <th style="width: 20%; padding: 5px; text-align: center;">Name</th>
-        <th style="width: 10%; padding: 5px; text-align: center;">Variable Name</th>
-        <th style="width: 30%; padding: 5px; text-align: center;">Description</th>
-        <th style="width: 30%; padding: 5px; text-align: center;">Unit & Calculation</th>
-      </tr>
-    </thead>
-    <tbody>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Maternal Age at V01 (MAV01)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>mother_age_v01</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Birth parent's age, obtained from the scheduled date of the V01 visit</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Years (to two decimal places), with fractional years calculated by dividing the number of whole months (rounded down) by 12</td>
+<i>From <a href="../demo/basicdemo/#age-sex-other-variables" target="_blank">Basic Demographics – Age, Sex, & Other Variables</a>:</i>
+<table class="compact-table-no-vertical-lines" style="width: 100%; table-layout: fixed; font-size: 15px; border: 2px solid #0086a0ff; border-radius: 8px; border-collapse: collapse;">
+  <caption style="caption-side: top; padding: 6px; text-align: left; font-size: 0.9em; color: #555;">
+    <i class="fa-solid fa-baby"></i>&nbsp;= Variable refers to the child &nbsp;&nbsp;
+    <span class="pill-badge">V02+</span>&nbsp;= Available beginning Visit V02 (post-birth)
+  </caption>
+<thead>
+<tr style="background-color: #f8f9f9;">
+  <th style="width: 20%;">Construct</th>
+  <th style="width: 20%;">Variable Name</th>
+  <th style="width: 60%;">Description / Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Maternal Age at V01 (MAV01)</td>
+  <td><code>mother_age_v01</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit. Derived from administrative records.</td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Maternal Age at Delivery (MAD)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>mother_age_delivery</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Birth parent's age at the time of their child's delivery (date of birth)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Years (to two decimal places), with fractional years calculated by dividing the total whole months (rounded down) by 12</td>
+  <td>Maternal Age at Delivery (MAD)</td>
+  <td><code>mother_age_delivery</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery. Derived from administrative records.</td>
 </tr>
 <tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Gestational Age at Delivery (GAD)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>gestational_age_delivery</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Time elapsed between the first day of the birth parent's <span class="tooltip">LMP
-		<span class="tooltiptext">last menstrual period, estimated as EDD minus 280 days</span>
-	  </span> and the child's date of birth</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Whole weeks, rounded down to the nearest week</td>
+  <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery (GAD)</td>
+  <td><code>gestational_age_delivery</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between the birth parent's <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB. Derived from administrative records. <span class="pill-badge">V02+</span></td>
 </tr>
 </tbody>
+<tfoot><tr><td colspan="3" style="word-wrap: break-word; white-space: normal; padding: 10px 8px 6px 8px;">
+  <sup><b>1</b></sup> Years are to 2 decimal places, calculated by dividing the number of whole months (rounded down) by 12</td></tr></tfoot>
 </table>
 
-## Tabulated Instrument Data
 
-All [tabulated data](../datacuration/phenotypes.md) include the following fields that report the age of the **child participants** at the time of instrument administration.
 
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
-    <thead>
-      <tr>
-        <th style="width: 20%; padding: 5px; text-align: center;">Name</th>
-        <th style="width: 10%; padding: 5px; text-align: center;">Variable Name</th>
-        <th style="width: 30%; padding: 5px; text-align: center;">Description</th>
-        <th style="width: 20%; padding: 5px; text-align: center;">Unit & Calculation</th>
-        <th style="width: 10%; padding: 5px; text-align: center;">Visit(s)</th>
-      </tr>
-    </thead>
-    <tbody>
-<tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Gestational Age at Administration (GAA)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>{instrument}_gestational_age</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Time from the first day of the birth parent's <span class="tooltip">LMP
-		<span class="tooltiptext">Last menstrual period, estimated as EDD minus 280 days</span>
-	  </span> to the instrument administration date.
-    <span class="tooltip">Max 4 week variation
-		<span class="tooltiptext">Varies no more than 4 weeks across protocol elements except when protocol exceptions were granted</span>
-	  </span>
-    </td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Whole weeks, rounded down to the nearest week</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">V01 only</td>
-</tr>
-<tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Chronological Age at Administration</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>{instrument}_candidate_age</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Time from birth (with the birthdate jittered up to 7 days to mitigate identification risks) to the date of instrument administration</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><span class="tooltip">Years
-		<span class="tooltiptext">Reporting in years, rather than months, ensures consistency across developmental stages (e.g., toddlerhood, childhood), while three-decimal precision compensates for birthdate adjustments, yielding values closer to actual age.</span></span> (to 3 decimal places), calculated by dividing the total days elapsed (rounded down) by 365.25</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">V02 onward</td>
-</tr>
-<tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Adjusted Chronological Age at Administration (ACAA)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>{instrument}_adjusted_age</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Time elapsed between the <span class="tooltip">EDD
-		<span class="tooltiptext">estimated date of delivery</span>
-	  </span> and date of instrument administration</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Whole weeks, rounded down to the nearest week</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">V02 onward</td>
-</tr>
-</tbody>
-</table>
-
-## Raw File-Based Data
-
-Raw <span class="tooltip">file-based data<span class="tooltiptext">imaging and biosignal data<br>(varied formats)</span></span> includes MRI, MRS, EEG, and motion/accelerometry data acquired from the child participants ([see details](../datacuration/file-based-data.md#raw-bids)). For visits V02 onward (*data unavailable for prenatal visit V01*), the age of the child at the time of data acquisition is reported in the session- and scan-level `.tsv` files that accompany these data ([see details](../datacuration/file-based-data.md#participant-session-scan-level-data)).
-
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
-    <thead>
-      <tr>
-        <th style="width: 20%; padding: 5px; text-align: center;">Name</th>
-        <th style="width: 10%; padding: 5px; text-align: center;">Variable Name</th>
-        <th style="width: 30%; padding: 5px; text-align: center;">Description</th>
-        <th style="width: 20%; padding: 5px; text-align: center;">Unit & Calculation</th>
-        <th style="width: 10%; padding: 5px; text-align: center;">Visit(s)</th>
-      </tr>
-    </thead>
-    <tbody>
-<tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Adjusted Age at Time of Scan</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>age_adjusted</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Time from <span class="tooltip">EDD
-		<span class="tooltiptext">estimated date of delivery</span>
-	  </span> to the date of data acquisition</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Days (not rounded)</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">V02 onward</td>
-</tr>
-<tr>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Chronological Age at Time of Scan</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><code>age</code></td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">Time from birth (with the birthdate jittered up to 7 days to mitigate identification risks) to the date of data acquisition.</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;"><span class="tooltip">Years
-		<span class="tooltiptext">Reporting in years, rather than months, ensures consistency across developmental stages (e.g., toddlerhood, childhood), while 3-decimal precision compensates for birthdate adjustments, yielding values closer to actual age.</span></span> (to three decimal places), calculated by dividing the total days elapsed (rounded down) by 365.25</td>
-<td style="padding: 8px; word-wrap: break-word; white-space: normal;">V02 onward</td>
-</tr>
-</tbody>
-</table>

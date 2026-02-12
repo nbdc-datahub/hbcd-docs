@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Geocoded Linkage: Detailed Variable Descriptions</title>
+
+  <!-- Optional: reuse RTD table styling -->
+  <link rel="stylesheet" href="../../css/tables.css">
+  <link rel="stylesheet" href="../../css/custom.css">
+
+  <style>
+    body {
+      margin: 2rem;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+<h2>Geocoded Linkage: Detailed Variable Descriptions</h2>
+<table class="compact-table-no-vertical-lines" style="font-size: 14px;">
+  <thead>
+    <tr>
+      <th style="width: 16%;">Measure</th>
+      <th style="width: 20%;">Variable Name</th>
+      <th>Variable Label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Administrative</td>
+      <td><code>PSCID</code></td>
+      <td>Participant ID</td>
+    </tr>
+    <tr>
+      <td><code>month_rel</code></td>
+      <td>Time relative to EDD, in months (range -12 to 32)</td>
+    </tr>
+    <!-- Air Pollution -->
+<tr>
+  <td>Satellite-based Particulate Measures</td>
+  <td><code>particulat_{ec|nh4|no3|oc|so4}_mean_yb0</code></td>
+  <td>Annual average (mcg/m^3) measure of: <i>{Elemental Carbon | Ammonium | Nitrate | Organic Carbon | Sulfate}</i></td>
+</tr>
+<!-- Soil Pollution -->
+<tr>
+  <td rowspan="3">Soil Contamination Measures</td>
+  <td><code>gw_li</code></td>
+  <td>Lithium concentration in soil C horizon (mg/kg)</td>
+</tr>
+<tr>
+  <td><code>soilpoll_at_{As|Cd|Co|Cr|Cu|Ni|Pb}</code></td>
+  <td>Grid-level probability of exceedance based on Agricultural Thresholds for: <i>{Arsenic | Cadmium | Cobalt | Chromium | Copper |  Nickel | Lead}</i></td>
+</tr>
+<tr>
+  <td><code>soilpoll_hhet_{As|Cd|Co|Cr|Cu|Ni|Pb}</code></td>
+  <td>Grid-level probability of exceedance based on Human Health & Ecological Thresholds for: <i>{Arsenic | Cadmium | Cobalt | Chromium | Copper |  Nickel | Lead}</i></td>
+</tr>
+<!-- Amenities & Services -->
+<tr>
+<td rowspan="5">Neighborhood Socioeconomic Status and Demographics</td>
+<td><code>nbhsoc_college_prop</code></td>
+<td>Proportion of persons with Bachelors Degree or Higher</td>
+</tr>
+<tr>
+<td><code>nbhsoc_factor{1|2|3}_tractscore</code></td>
+<td>Neighborhood <i>{disadvantage | affluence | ethnic/immigrant}</ii> score</td>
+</tr>
+<tr>
+<td><code>nbhsoc_finc{75k|100k}_prop</code></td>
+<td>Proportion of families with income of: <i>{$75k | $100k}</i> or more</td>
+</tr>
+<tr>
+<td><code>nbhsoc_forborn_prop</code></td>
+<td>Proportion of people who are foreign born</td>
+</tr>
+<tr>
+<td><code>nbhsoc_unemploy_prop</code></td>
+<td>Proportion of age 16+ civilian labor force unemployed</td>
+</tr>
+<!-- parks -->
+<tr>
+<td rowspan="2">Parks</td>
+<td><code>parks_parks_{count|prop}</code></td>
+<td>Total <i>{count | proportion}</i> of open parks in the census tract</td>
+</tr>
+<tr>
+<td><code>parks_parks{county|tc10}_count</code></td>
+<td>Total number of open parks <i>{in county | top coded at 10}</i> in census tract</td>
+</tr>
+<tr>
+<td rowspan="4">Religious/Civic Organizations</td>
+<td><code>relciv_civsoc_{count|prop}</code></td>
+<td>Total <i>{count | proportion per 1000 people}</i> of Civic and Social Associations</td>
+</tr>
+<tr>
+<td><code>relciv_civsoccounty_{count|prop}</code></td>
+<td>Total <i>{count | proportion per 1000 people}</i> of Civic and Social Associations - County-Level</td>
+</tr>
+<tr>
+<td><code>relciv_relorg_{count|prop}</code></td>
+<td>Total <i>{count | proportion per 1000 people}</i> of Religious Organizations</td>
+</tr>
+<tr>
+<td><code>relciv_relorgcounty_{count|prop}</code></td>
+<td>Total <i>{count | proportion per 1000 people}</i> of Religious Organizations - County-Level</td>
+</tr>
+<tr>
+<td rowspan="2">Social Service</td>
+<td><code>socsrv_socsrv_{count|prop}</code></td>
+<td>Total <i>{count | proportion per 1000 people}</i> of Individual and Family Services</td>
+</tr>
+<tr>
+<td><code>socsrv_socsrvcounty_{count|prop}</code></td>
+<td>Total <i>{count | proportion per 1000 people}</i> of Individual and Family Services - County-Level</td>
+</tr>
+<tr>
+<td>Building Density (EPA)</td>
+<td><code>densbld_density</code></td>
+<td>Gross residential density (HU/acre) on unprotected land</td>
+</tr>
+<tr>
+<td>Population Density (EPA)</td>
+<td><code>denspop_density</code></td>
+<td>UN adjusted population density</td>
+</tr>
+<tr>
+<td>Vehicle Density (ACS)</td>
+<td><code>densveh_{area|pop}_density</code></td>
+<td>Aggregate Number Of Vehicles Available per <i>{sq. mile of land area | individual}</i></td>
+</tr>
+<tr>
+<td>Urban/Rural Area (Census)</td>
+<td><code>urban_urbanclassification</code></td>
+<td>Urban Classification at current address (1 = urban; 0 = not urban)</td>
+</tr>
+<tr>
+<td>Walkability (EPA)</td>
+<td><code>walk_idx</code></td>
+<td>Walkability index</td>
+</tr>
+<tr>
+<td rowspan="24">Behavioral Health Measures (PLACES)</td>
+<td><code>places_access2_preval</code></td><td>Current lack of health insurance among adults aged 18-64 years</td>
+</tr>
+<tr><td><code>places_arthritis_preval</code></td><td>Arthritis among adults</td></tr>
+<tr><td><code>places_binge_preval</code></td><td>Binge drinking among adults</td></tr>
+<tr><td><code>places_bphigh_preval</code></td><td>High blood pressure among adults</td></tr>
+<tr><td><code>places_bpmed_preval</code></td><td>Taking medicine to control high blood pressure among adults with high blood pressure</td></tr>
+<tr><td><code>places_cancer_preval</code></td><td>Cancer (non-skin) or melanoma among adults</td></tr>
+<tr><td><code>places_casthma_preval</code></td><td>Current asthma among adults</td></tr>
+<tr><td><code>places_chd_preval</code></td><td>Coronary heart disease among adults</td></tr>
+<tr><td><code>places_checkup_preval</code></td><td>Visits to doctor for routine checkup within the past year among adults</td></tr>
+<tr><td><code>places_cholhigh_preval</code></td><td>High cholesterol among adults who have ever been screened</td></tr>
+<tr><td><code>places_cholscreen_preval</code></td><td>Cholesterol screening among adults</td></tr>
+<tr><td><code>places_colon_screen_preval</code></td><td>Colorectal cancer screening among adults aged 45&ndash;75 years</td></tr>
+<tr><td><code>places_copd_preval</code></td><td>Chronic obstructive pulmonary disease among adults</td></tr>
+<tr><td><code>places_csmoking_preval</code></td><td>Current cigarette smoking among adults</td></tr>
+<tr><td><code>places_dental_preval</code></td><td>Visited dentist or dental clinic in the past year among adults</td></tr>
+<tr><td><code>places_diabetes_preval</code></td><td>Diagnosed diabetes among adults</td></tr>
+<tr><td><code>places_lpa_preval</code></td><td>No leisure-time physical activity among adults</td></tr>
+<tr><td><code>places_mammouse_preval</code></td><td>Mammography use among women aged 50-74 years</td></tr>
+<tr><td><code>places_mhlth_preval</code></td><td>Frequent mental distress among adults</td></tr>
+<tr><td><code>places_obesity_preval</code></td><td>Obesity among adults</td></tr>
+<tr><td><code>places_phlth_preval</code></td><td>Frequent physical distress among adults</td></tr>
+<tr><td><code>places_sleep_preval</code></td><td>Short sleep duration among adults</td></tr>
+<tr><td><code>places_stroke_preval</code></td><td>Stroke among adults</td></tr>
+<tr><td><code>places_teethlost_preval</code></td><td>All teeth lost among adults aged ≥65 years</td></tr>
+<tr>
+<td rowspan="2">Measure of Land Cover and Tree Canopy (NLCD)</td>
+<td><code>nlcd</code></td>
+<td>Land cover</td>
+</tr>
+<tr>
+<td><code>tcc</code></td>
+<td>Percent Tree Canopy Cover</td>
+</tr>
+<tr>
+<td rowspan="2">Census Return (Anomie/Disenfranchisement/Social Capital)</td>
+<td><code>censusret_return_rate_2020</code></td>
+<td>Percentage occupied housing units providing sufficient internet, paper, or phone self-response (2020 Census)</td>
+</tr>
+<tr>
+<td><code>censusret_selfresponse_rate_20192023</code></td>
+<td>Self-response rate for the 2019-2023 ACS, census tract; from Census Bureau Planning Database</td>
+</tr>
+<tr>
+<td rowspan="4">Number of Jobs and Job Density (LODES)</td>
+<td><code>lodes_job_count</code></td>
+<td>Total number of jobs</td>
+</tr>
+<tr>
+<td><code>lodes_job_density</code></td>
+<td>Density of jobs per sq. mile of land area</td>
+</tr>
+<tr>
+<td><code>lodes_job{RACE-ETH}_count</code></td>
+<td>Total number of jobs by race & ethnicity. <i><code>{RACE-ETH}</code> = <code>aian</code> | <code>asian</code> | <code>black</code> | <code>hisp</code> | <code>multi</code> | <code>nhpi</code> | <code>nonhisp</code> | <code>white</code></i></td>
+</tr>
+<tr>
+<td><code>lodes_job{RACE-ETH}_density</code></td>
+<td>Density of jobs per sq. mile of land area by race & ethnicity. <i><code>{RACE-ETH}</code> = <code>aian</code> | <code>asian</code> | <code>black</code> | <code>hisp</code> | <code>multi</code> | <code>nhpi</code> | <code>nonhisp</code> | <code>white</code></i></td>
+</tr>
+<tr>
+<td rowspan="5">Rent and Mortgage Statistics (ACS)</td>
+<td><code>rentmort_homevalue_med</code></td>
+<td>Median house value</td>
+</tr>
+<tr>
+<td><code>rentmort_ownership_prcnt</code></td>
+<td>Percent Homeownership; [Occupied housing units(owner occupied) / Total tenure occupied housing units]</td>
+</tr>
+<tr>
+<td><code>rentmort_rent_med</code></td>
+<td>Median rent per month</td>
+</tr>
+<tr>
+<td><code>rentmort_rentburden_prcnt</code></td>
+<td>Percent rent burden</td>
+</tr>
+<tr>
+<td><code>rentmort_rentburdensev_prcnt</code></td>
+<td>Percent severe rent burden (50% or more of income)</td>
+</tr>
+<tr>
+<td rowspan="2">Social Mobility (Opportunity Atlas)</td>
+<td><code>socmob_kfrpp_{count|mean|se}</code></td>
+<td>Opportunity Atlas outcome for all children - <i>{count | mean | standard error}</i></td>
+</tr>
+<tr>
+<td><code>socmob_kfrpp_p{1|25|50|75|100}_prcntile</code></td>
+<td>Opportunity Atlas Mean household income rank for children whose parents were at the <i>{1st | 25th | 50th | 75th | 100th}</i> percentile of the national income distribution</td>
+</tr>
+<tr>
+<td>Area Deprivation Index (ADI)</td>
+<td><code>adi_national_prcnt</code></td>
+<td>National percentile of block group ADI score of Numeric Ranking (1-100) or Suppression Codes</td>
+</tr>
+<tr>
+<td rowspan="4">Child Opportunity Index 2.0 (COI)<br><i><code>{AREA}</code> = <code>state</code> | <code>metro</code> | <code>national</code></i></td>
+<td><code>coi_coi_total_{AREA}_{c5|score}</code></td>
+<td>COI value (<code>c5</code>) & z-score (<code>score</code>)</td>
+</tr>
+<tr>
+<td><code>coi_ed_total_{AREA}_{c5|score}</code></td>
+<td>COI value (<code>c5</code>) & z-score (<code>score</code>) - Education Domain</td>
+</tr>
+<tr>
+<td><code>coi_he_total_{AREA}_{c5|score}</code></td>
+<td>COI value (<code>c5</code>) & z-score (<code>score</code>) - Health & Environment Domain</td>
+</tr>
+<tr>
+<td><code>coi_se_total_{AREA}_{c5|score}</code></td>
+<td>COI value (<code>c5</code>) & z-score (<code>score</code>) - Social & Economic Domain</td>
+</tr>
+<tr>
+<td rowspan="9">Minority Health Social Vulnerability Index (MHSVI)</td>
+<td><code>ssvi_{RACE-ETH}_prcnt</code></td>
+<td>% population estimate.
+    <i><code>{RACE-ETH}</code> = <code>afam</code> | <code>aian</code> | <code>asian</code> | <code>his</code> | <code>nhpi</code> | <code>white</code></i></td>
+</tr>
+<tr>
+<td><code>ssvi_{LANGUAGE}_prcnt</code></td>
+<td>% of <code>{LANGUAGE}</code> speakers who indicated that they speak English less than "very well."
+    <i><code>{LANGUAGE}</code> = <code>rus</code> | <code>span</code> | <code>chin</code> | <code>kor</code> | <code>viet</code></i></td>
+</tr>
+<tr>
+<td><code>ssvi_hosp_state_prop</code></td>
+<td>Number of hospitals</td>
+</tr>
+<tr>
+<td><code>ssvi_nocomp_prcnt</code></td>
+<td>Percentage population estimate persons with no computer access</td>
+</tr>
+<tr>
+<td><code>ssvi_noint_prcnt</code></td>
+<td>Percentage population estimate persons with no internet access</td>
+</tr>
+<tr><td><code>ssvi_pcp_state_rate</code></td><td>Primary care physicians per 100,000 people</td></tr>
+<tr>
+<td><code>ssvi_pharm_state_prop</code></td>
+<td>Number of pharmacies</td>
+</tr>
+<tr>
+<td><code>ssvi_unins_prcnt</code></td>
+<td>Percentage population estimate persons without health insurance</td>
+</tr>
+<tr>
+<td><code>ssvi_urg_state_prop</code></td>
+<td>Number of urgent care clinics</td>
+</tr>
+<tr>
+<td rowspan="17">Social Vulnerability Index (SVI)</td>
+<td><code>svi_17younger_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> of persons aged 17 and younger</td>
+</tr>
+<tr>
+<td><code>svi_65older_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> of persons aged 65 and older</td>
+</tr>
+<tr>
+<td><code>svi_crowding_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> households with more people than rooms estimate</td>
+</tr>
+<tr>
+<td><code>svi_disability_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> of civilian noninstitutionalized population with a disability estimate</td>
+</tr>
+<tr>
+<td><code>svi_groupquarters_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> of persons in group quarters estimate</td>
+</tr>
+<tr>
+<td><code>svi_lesseng_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> of persons (age 5+) who speak English "less than well" estimate</td>
+</tr>
+<tr>
+<td><code>svi_minority_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> minority estimate (includes Hispanic or Latino (of any race); Black and African American, Not Hispanic or Latino; American Indian and Alaska Native, Not Hispanic or Latino; Asian, Not Hispanic or Latino; Native Hawaiian and Other Pacific Islander, Not Hispanic or Latino; Two or More Races, Not Hispanic or Latino; Other Races, Not Hispanic or Latino)</td>
+</tr>
+<tr>
+<td><code>svi_mobilehomes_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> mobile homes estimate</td>
+</tr>
+<tr>
+<td><code>svi_nohsdiploma_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> of persons with no high school diploma (age 25+) estimate</td>
+</tr>
+<tr>
+<td><code>svi_novehicle_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> households with no vehicle available estimate</td>
+</tr>
+<tr>
+<td><code>svi_poverty_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> of persons below 150% poverty estimate</td>
+</tr>
+<tr>
+<td><code>svi_multiplehousing_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> of housing in structures with 10 or more units estimate</td>
+</tr>
+<tr>
+<td><code>svi_singlehousehold_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> of single-parent households with children under 18 estimate</td>
+</tr>
+<tr>
+<td><code>svi_theme{1|2|3|4}_prcntile</code></td>
+<td>Percentile ranking - <i>{1 | 2 | 3 | 4}</i> - for Socioeconomic Status theme summary</td>
+</tr>
+<tr>
+<td><code>svi_total_prcntile</code></td>
+<td>Overall percentile ranking</td>
+</tr>
+<tr>
+<td><code>svi_unemploy_{prcnt|prcntile}</code></td>
+<td><i>{Percentage | Percentile}</i> of civilian (age 16+) unemployed estimate</td>
+</tr>
+<tr>
+<td><code>svi_uninsured_prcnt</code></td>
+<td>Percentage uninsured in the total civilian noninstitutionalized population estimate, 2018-2022 ACS</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

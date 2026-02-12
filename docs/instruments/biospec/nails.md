@@ -29,7 +29,15 @@ For all toxicology screens, continuous variables should be interpreted with caut
 <p><b>Updated Workflow</b><br>
 As of July 1, 2024, the nail processing workflow was updated to optimize specimen use and allow confirmation testing for low sample quantities. Prior to this update, remnants of ELISA extract were not used for confirmation when specimens had insufficient sample.</p> 
 <p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
+<p><b>Interpretation of “QNS” in Confirmatory Results When a Positive Is Expected</b><br>
+In some cases, a specimen’s initial test meets the threshold for a positive result, but the confirmatory result is reported as “QNS” (Quantity Not Sufficient). This occurs when there is not enough specimen to conduct a confirmatory test or a confirmatory test must be repeated (following quality control procedures, e.g. unacceptable chromatography, poor recovery, or when a sample result is &lt;5% of the previous specimen), but insufficient sample remains to complete the repeat test. Because the results could not be validated, this should be treated as a true quantity insufficiency.</p>
 </div>
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#biospecimen-omics" target="_blank">see details</a>.</span>
+</div>
+<p></p>
 
 ## Administration & Quality Control
 
@@ -50,11 +58,11 @@ As of July 1, 2024, the nail processing workflow was updated to optimize specime
 
 ## Instrument Details
 
-For the USDTL assay, fingernail and toenail specimens are sorted by weight, and those weighing at least 20 mg undergo ELISA screening, followed by LCMSMS confirmation for presumptive positives, each requiring an additional 20 mg. If insufficient specimen remains for LCMSMS, the remnant ELISA extract is used for confirmation. 
+For the USDTL assay, fingernail and toenail specimens are sorted by weight, and those weighing at least 20 mg undergo ELISA screening, followed by LCMSMS confirmation for presumptive positives, each requiring an additional 20 mg. If insufficient specimen remains for LCMSMS, the remnant ELISA extract is used for confirmation.  Please note that as of November 2025, USDTL no longer assayed sufentanil in the nail samples.
 
 <img src="../images/Fig1_nails.png" width="70%" height="auto" class="center">
 
-Based on the predefined threshold outlined in [Table 1](#nails-table1), a confirmatory test result for any substance analyte is determined to be positive, negative, or invalid (*QNS* i.e. *quantity not sufficient*). Substance analytes (e.g. **Amphetamine (`c_amp_n`)**) are grouped into different classes by analyte screening tests and confirmatory tests (**[Table 2](#nails-table2)**). 
+Based on the predefined threshold outlined in [Table 1](#nails-table1), a confirmatory test result for any substance analyte is determined to be positive, negative, or invalid (*QNS* i.e. *quantity not sufficient*). Substance analytes (e.g. **Amphetamine/`c_amp_n`**) are grouped into different classes by analyte screening tests and confirmatory tests (**[Table 2](#nails-table2)**). 
 
 <div id="nails-table1" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
@@ -553,7 +561,7 @@ Based on the predefined threshold outlined in [Table 1](#nails-table1), a confir
 <div class="table-collapsible-content">
 <p><b>Final results for each substance follows these rules</b>:</p>
 <ul>
-<li>If the confirmatory test for any substance analyte (e.g. Amphetamine (<code>c_amp_n</code>)) is positive based on predefined thresholds (<strong><a href="#nails-table1">Table 1</a></strong>), the class-level (<code>c_any_stim_n</code>) and sample-level (<code>c_any_specimen_n</code>) are also positive (value =1).</li>
+<li>If the confirmatory test for any substance analyte (e.g. Amphetamine/<code>c_amp_n</code>) is positive based on predefined thresholds (<strong><a href="#nails-table1">Table 1</a></strong>), the class-level (<code>c_any_stim_n</code>) and sample-level (<code>c_any_specimen_n</code>) are also positive (value =1).</li>
 <li>Otherwise, if the substance analyte confirmatory tests are negative, then class-level are negative (value =0). If all classes are negative (value = 0), then sample-level (<code>c_any_specimen_n</code>) are negative (value = 0).</li>
 <li>Finally, if any substance analyte confirmatory tests are invalid (value = 3) then that class-level, and sample-level values are also invalid (value = 3)</li>
 </ul>
@@ -608,4 +616,3 @@ Based on the predefined threshold outlined in [Table 1](#nails-table1), a confir
     <p>Bandoli, G., Anunziata, F., Bogdan, R., Zilverstand, A., Chaiyachati, B. H., Gurka, K. K., Sullivan, E., Croff, J., & Bakhireva, L. N. (2024). Assessment of substance exposures in nail clipping samples: A systematic review. <i>Drug and Alcohol Dependence</i>, 254, 111038. <a href="https://doi.org/10.1016/j.drugalcdep.2023.111038" target="_blank">https://doi.org/10.1016/j.drugalcdep.2023.111038</a></p>
     <p>Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <a href="https://doi.org/10.1016/j.dcn.2024.101451">https://doi.org/10.1016/j.dcn.2024.101451</a></p>
 </div>
-<br>

@@ -1,15 +1,9 @@
-# Baby's First Years
+# Baby's First Years (*BFY*)
 
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
     <div class="info-value"><code>sed_bm_bfy</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Baby’s First Years (<i>BFY</i>)
-    </div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>

@@ -10,7 +10,7 @@ The standard variable naming format is comprised of 4 or 5 **main components** s
 <code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
 </p>
  
-Variable names may also include **subcomponents**, separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*. Finally, **multiselect fields** are preceded by triple underscores ( `___` ), mainly relevant for [V01 Demographics](../instruments/SED/v01-demo.md) (`sed_bm_demo`) variables.
+Variable names may also include **subcomponents**, separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*. Finally, **multiselect fields** are preceded by triple underscores ( `___` ), mainly relevant for [Adult](../instruments/SED/demo-cg.md) & [Child](../instruments/SED/demo-ch.md) Demographics table variables.
 
 <div id="example" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
@@ -25,7 +25,7 @@ Variable names may also include **subcomponents**, separated by double ( `__` ) 
 <div class="table-collapsible-content">
 <p>Let's break down the following example: <code>ncl_cg_spm2__inf_soc_001</code></p>
 <ul>
-<li><code>ncl</code>: <a href="../../instruments/#neurocog">Neurocognition &amp; Language</a> (<em>domain</em>)</li>
+<li><code>ncl</code>: <a href="../../instruments/#ncl">Neurocognition &amp; Language</a> (<em>domain</em>)</li>
 <li><code>cg</code>: Caregiver (<em>source</em>)</li>
 <li><code>spm2__inf</code>: nested table name<ul>
 <li><code>spm2</code>: the <a href="../../instruments/neurocog/spm2">SPM-2</a> instrument (<em>table</em>)</li>
@@ -142,16 +142,10 @@ Some variables deviate from the standard naming conventions. These exceptions ar
 
 - **Derived data** — variables such as <code>sed_basic_demographics</code> and <code>par_visit_data</code> in the [Demographics domain](../instruments/index.md#demo)
 - **Biospecimen data**, e.g. <code>bio_bm_biosample_nails_results</code> ([see instrument list](../instruments/index.md#biospec))
-- **Tabulated MRI and EEG derivatives** ([see details](../datacuration/overview.md#warning)):  
+- **Tabulated MRI and EEG derivatives** ([see details](../datacuration/overview.md#which-file-based-data-are-also-available-as-hbcd-tabulated-data)):  
 Follow the naming convention <code>domain_pipeline_derivative</code>, where:  
     - <code>domain</code>: either <code>img</code> or <code>eeg</code>  
     - <code>pipeline</code>: processing pipeline name  
     - <code>derivative</code>: basename of the derivative output files sourced across participants to generate the tabulated data
  - **Administrative and summary score** ([see details](#administrative-summary-score-variables)) variables often include additional single underscores (e.g. `date_taken`, `summary_score`), but still represent single main components
 
-## Study Design Logic: Child-Centric Data Structure
-
-The HBCD Study organizes data around the Child ID as the central key. All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by:
-
-- **Simplifying child-focused analysis**: Researchers can track each child’s data over time without remapping caregiver information.
-- **Handling multi-birth cases cleanly**: When a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.

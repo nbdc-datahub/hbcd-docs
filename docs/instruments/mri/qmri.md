@@ -158,4 +158,3 @@ Using 3D-QALAS data with the Synthetic MRI (SyMRI) toolbox, we also generate syn
 
 <p>Yarnykh, V. L. (2007). Actual flip-angle imaging in the pulsed steady state: a method for rapid three-dimensional mapping of the transmitted radiofrequency field. <i>Magnetic Resonance in Medicine</i>, 57(1), 192–200. <a href="https://doi.org/10.1002/mrm.21120" target="_blank">https://doi.org/10.1002/mrm.21120</a></p>
 </div>
-<br>

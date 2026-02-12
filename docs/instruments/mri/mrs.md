@@ -138,13 +138,15 @@ Additional metabolites measured include NAA, lactate, ascorbate, creatine, myo-i
 
 ## Data Processing
 
-HBCD MRS data are processed with a customized automated pipeline based on OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)) - see the [OSPREY-BIDS documentation](https://osprey-bids.readthedocs.io/en/latest/index.html). Derivatives include quality control metrics and metabolite estimates (ratios to creatine and water, with and without tissue correction). See the list of [OSPREY derivatives](#derivatives) included in the release above.
+HBCD MRS data are processed with a customized automated pipeline based on OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)) - see the [OSPREY-BIDS documentation](https://osprey-bids.readthedocs.io/en/latest/index.html). Full details regarding HBCD processing implementation are available in the external [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/osprey.html) documentation, including [File Selection For Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/osprey.html#file-selection-for-processing) and [Quality Control Selection Information](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/osprey.html#quality-control-selection-information).
 
 ## Osprey MRS Output User Guide
 
 The primary outcome variables from MRS data processed through the Osprey pipeline are **metabolite concentrations**. The **ISTHMUS** acquisition used in HBCD generates four spectra, each modeled separately using *linear combination modeling* with inclusive basis sets (since most metabolites may contribute, at least minimally, to all spectra).
 
-Each spectrum provides optimal quantification for a different subset of metabolites. The following recommended files are all available as <a href="../../../datacuration/overview/#warning" target="_blank">tabulated derivatives</a> that summarize participant data across Osprey derivatives.
+Each spectrum provides optimal quantification for a different subset of metabolites. The following recommended files are additionally available as <a href="../../../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank">tabulated derivatives</a> that summarize participant data across Osprey derivatives.
+
+See the full list of [OSPREY derivatives](#derivatives) included in the release above. 
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
@@ -226,6 +228,6 @@ Because the optimal reference for HBCD data has not yet been established, severa
     <p>Träber, F., Block, W., Lamerichs, R., Gieseke, J., & Schild, H. H. (2004). 1H metabolite relaxation times at 3.0 tesla: Measurements of T1 and T2 values in normal brain and determination of regional differences in transverse relaxation. <em>Journal of Magnetic Resonance Imaging</em>, 19(5), 537–545. <a href="https://doi.org/10.1002/jmri.20053">https://doi.org/10.1002/jmri.20053</a></p>
     <p>Zöllner, H. J., Davies-Jenkins, C. W., Lee, E. G., Hendrickson, T. J., Clarke, W. T., Edden, R. A. E., Wisnowski, J. L., Gudmundson, A. T., & Oeltzschner, G. (2023). Continuous automated analysis workflow for MRS studies. Journal of Medical Systems, 47(1), 69. <a href="https://doi.org/10.1007/s10916-023-01969-6">https://doi.org/10.1007/s10916-023-01969-6</a></p>
 </div>
-<br> 
+
 
  

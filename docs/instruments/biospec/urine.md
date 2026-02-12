@@ -3,7 +3,7 @@
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>bio_bm_biosample_urine</code></div>
+    <div class="info-value"><code>bio_bm_biosample_urine_results</code></div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
@@ -27,7 +27,7 @@
 <p><b>Continuous Variables</b><br>
 For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#urine-table1">Table 1. Urine Assay Thresholds for Analytes</a>.</p> 
 <p><b>Urinary Concentration Corrections</b><br>
-Urine concentrations vary by participant. Urinary concentration corrections can be made using creatinine results from sample validation or specific gravity. Creatinine values are provided for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds.</p>
+Urine concentrations vary by participant. Urinary concentration corrections can be made using creatinine results from sample validation or specific gravity. Creatinine values will be provided in a future release for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds (<i>see <a href="../../../changelog/pending/" target="_blank">pending updates</a></i>).</p>
 <p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
 </div>
 
@@ -58,7 +58,9 @@ Urine concentrations vary by participant. Urinary concentration corrections can 
 
 <img src="../images/Fig1_biospec_urine.png" width="70%" height="auto" class="center">
 
-These data are the results of urine toxicology assays. **Screening** results for substances are determined to be positive or negative based on predefined thresholds (**[Table 1](#urine-table1)**), or invalid - see [Validation Procedures](#validation). **Confirmatory tests** are used to confirm the results of screening for any substance analyte (e.g. **Amphetamine (`c_amp_u`)**), which are grouped into different classes by analyte screening tests and analyte confirmatory tests (**[Table 2](#urine-table2)**).
+These data are the results of urine toxicology assays. **Screening** results for substances are determined to be positive or negative based on predefined thresholds (**[Table 1](#urine-table1)**), or invalid - see [Validation Procedures](#validation). **Confirmatory tests** are used to confirm the results of screening for any substance analyte (e.g. **Amphetamine/`c_amp_u`**), which are grouped into different classes by analyte screening tests and analyte confirmatory tests (**[Table 2](#urine-table2)**).
+
+Please note that as of May 19, 2025,  USDTL migrated the initial test for fentanyl and sufentanil in urine from LDTD to ELISA. As of November 2025, urine samples were no longer assayed for sufentanil and USDTL removed the complex specimen validity algorithm that included pH and Nitrite to a simple creatinine measurement to determine the hydration of the urine specimens. 
 
 <div id="urine-table1" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
@@ -684,7 +686,7 @@ These data are the results of urine toxicology assays. **Screening** results for
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Assay results may be scored as invalid if specimens are identified as dilute, substituted, adulterated, or otherwise insufficient based on validation. Validation is based on creatinine, pH, and nitrite measurements. <b>Only specimens with low creatinine (< 20 mg/dL) are confirmed using specific gravity via a refractometer</b> (decision grid below), and the creatinine analysis is repeated to rule out issues with the first analysis (e.g. sample mix-ups, air bubble in a line on the instrument, etc.).</p>
+<p>Assay results may be scored as invalid if specimens are identified as dilute, substituted, adulterated, or otherwise insufficient based on validation. Validation is based on creatinine, pH, and nitrite measurements. <b>Only specimens with low creatinine (< 20 mg/dL) are confirmed using specific gravity via a refractometer</b> (decision grid below), and the creatinine analysis is repeated to rule out issues with the first analysis (e.g. sample mix-ups, air bubble in a line on the instrument, etc.). Creatinine results will be made available to users in a future release (<i>see <a href="../../../changelog/pending/" target="_blank">pending updates</a></i>).</p>
 <img src="../images/Table1_biospec_urine.png" width="70%" height="auto" class="center">
 <br>
 </div>
@@ -756,4 +758,3 @@ These data are the results of urine toxicology assays. **Screening** results for
 <div class="references">
     <p>Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <a href="https://doi.org/10.1016/j.dcn.2024.101451">https://doi.org/10.1016/j.dcn.2024.101451</a></p>
 </div>
-<br>

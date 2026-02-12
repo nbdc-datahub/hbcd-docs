@@ -1,9 +1,6 @@
 # HBCD MR Quality Control Procedures
 
 ## Raw MR Data QC
-
-Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed MRI data. Raw data QC is performed to detect acquisition errors, image artifacts, or corrupted files early so that problematic scans are excluded from the released raw BIDS dataset and [downstream processing](../processing/index.md#file-selection-for-processing).
-
 <div id="scanstsv" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fa-solid fa-location-dot"></i></span>
   <span class="text-with-link">
@@ -15,7 +12,7 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The session folder <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files include the following QC metrics. <i>Note: <b>x</b> values for b<b>x</b> below include 0, 500, 1000, 2000, and 3000</i></p>
+<p>The session folder <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files include the following fields relevant to QC (other fields, such as <i>filename</i>, <i>site</i>, etc. not shown below). <i>Note: <b>x</b> values for b<b>x</b> below include 0, 500, 1000, 2000, and 3000</i></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <thead>
@@ -24,13 +21,9 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
     <th>Description</th>
     </tr>
     </thead>
-     <tr>
-        <td>filename</td>
-        <td>Relative paths to files</td>
-    </tr>
     <tr>
-        <td>acq_time</td>
-        <td>Acquisition time</td>
+        <td>part_of_a_pair</td>
+        <td>Whether the DWI file is part of a pair</td>
     </tr>
     <tr>
         <td>loris_qc_status</td>
@@ -41,21 +34,9 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
         <td>Whether file is selected for further processing</td>
     </tr>
     <tr>
-        <td>site</td>
-        <td>Site where the session data was collected</td>
-    </tr>
-    <tr>
-        <td>age</td>
-        <td>Age (in years) of participant at time of the scan</td>
-    </tr>
-    <tr>
-        <td>age_adjusted</td>
-        <td>Adjusted age (in days) based on the EDD</td>
-    </tr>
-    <tr>
-        <td>head_size</td>
-        <td>Head size at the time of the scan</td>
-    </tr>
+        <td>bad_philips_exam_card_values</td>
+        <td>Whether the QALAS exam card used for acquisition was incorrect</td>
+    </tr>        
     <tr>
     <td>nrev</td><td><span class="tooltip tooltip-right"><i class="fa-solid fa-eye"></i><span class="tooltiptext">Manual QC Metric</span></span> Number of manual QC reviewers</td>
     </tr>
@@ -89,12 +70,8 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
         <td>Number of frames with line artifacts</td>
     </tr>
     <tr>
-        <td>line_&ltmax|mean&gt_score</td>
-        <td>Maximum/Mean line artifact score across frames</td>
-    </tr>
-    <tr>
-        <td>line_&ltmax|mean&gt_count</td>
-        <td>Maximum/Mean line artifact count across frames</td>
+        <td>line_&ltmax|mean&gt_&ltscore|count&gt</td>
+        <td>Maximum/Mean line artifact score/count across frames</td>
     </tr>
     <tr>
         <td>cutoff</td>
@@ -105,12 +82,8 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
         <td>Dorsal/Ventral cutoff score</td>
     </tr>
     <tr>
-        <td>brain_&ltmean|std&gt</td>
-        <td>Mean/Standard deviation of image intensity within brain mask</td>
-    </tr>
-    <tr>
-        <td>brain_SNR</td>
-        <td>Signal-to-noise ratio (mean/stdev) of image intensity within brain mask</td>
+        <td>brain_&ltmean|std|SNR&gt</td>
+        <td>Mean/SD/SNR of image intensity within brain mask</td>
     </tr>
     <tr>
         <td>brain_&ltmin|max|median&gt</td>
@@ -125,12 +98,8 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
         <td>Average framewise displacement/translation/rotation (mm)</td>
     </tr>
     <tr>
-        <td>max_d&ltx|y|z&gt</td>
-        <td>Maximum absolute x/y/z translation (mm)</td>
-    </tr>
-    <tr>
-        <td>max_r&ltx|y|z&gt</td>
-        <td>Maximum absolute x/y/z rotation (mm)</td>
+        <td>max_&ltdx|dy|dz|rx|ry|rz&gt</td>
+        <td>Maximum absolute x/y/z translation (<i>d</i>)/rotation (<i>r</i>) (mm)</td>
     </tr>
     <tr>
         <td>subthresh_&lt02|03|04&gt</td>
@@ -193,11 +162,7 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
         <td>Mean/Median MD (mean diffusivity) in brain mask</td>
     </tr>
     <tr>
-        <td>max_nbad_frames_per_slice</td>
-        <td>Maximum number of outlier frames per slice</td>
-    </tr>
-    <tr>
-        <td>max_nbad_frames_per_frame</td>
+        <td>max_nbad_frames_per_&ltslice|frame&gt</td>
         <td>Maximum number of outlier frames per slice/frame</td>
     </tr>
     <tr>
@@ -213,12 +178,8 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
         <td>Number of outlier frame-slices (dMRI)</td>
     </tr>
     <tr>
-        <td>nbad_frames</td>
-        <td>Number of frames with outlier slices (dMRI)</td>
-    </tr>
-    <tr>
-        <td>nbad_slices</td>
-        <td>Number of slices with outlier frames (dMRI)</td>
+        <td>nbad_&ltframes|slices&gt</td>
+        <td>Number of frames/slices with outlier slices/frames (dMRI)</td>
     </tr>
     <tr>
         <td>fwhm_y</td>
@@ -245,48 +206,28 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
         <td>Number of outlier frame-slices for dMRI b=<b>x</b> frames</td>
     </tr>
     <tr>
-        <td>nbad_frames_b<b>x</b></td>
-        <td>Number of frames with outlier slices for dMRI b=<b>x</b> frames</td>
-    </tr>
-    <tr>
-        <td>nbad_slices_b<b>x</b></td>
-        <td>Number of slices with outlier frames for dMRI b=<b>x</b> frames</td>
+        <td>nbad_&ltframes|slices&gt_b<b>x</b></td>
+        <td>Number of frames/slices with outlier slices/frames for dMRI b=<b>x</b> frames</td>
     </tr>
     <tr>
         <td>ngood_frames_b<b>x</b></td>
         <td>Number of frames without outlier slices for dMRI b=<b>x</b> frames</td>
     </tr>
     <tr>
-        <td>FWHMx_b<b>x</b></td>
-        <td>FWHM spatial smoothness in x-axis (left-right) for b=<b>x</b> frames</td>
-    </tr>
-    <tr>
-        <td>FWHMy_b<b>x</b></td>
-        <td>FWHM spatial smoothness in y-axis (anterior-posterior) for b=<b>x</b> frames</td>
-    </tr>
-    <tr>
-        <td>FWHMz_b<b>x</b></td>
-        <td>FWHM spatial smoothness in z-axis (inferior-superior) for b=<b>x</b> frames</td>
+        <td>FWHM&lt;x|y|z&gt;_b<b>x</b></td>
+        <td>FWHM spatial smoothness in x/y/z-axis (L-R/A-P/I-S) for b=<b>x</b> frames</td>
     </tr>
     <tr>
         <td>tSNR_b<b>x</b></td>
         <td>Median temporal SNR in brain mask for for b=<b>x</b> frames</td>
     </tr>
     <tr>
-        <td>DTerr_rel_b<b>x</b></td>
-        <td>Median DTI RMS residual error for b=<b>x</b> frames across voxels relative to within-voxel RMS b=0 signal</td>
+        <td>&lt;DT|RSI&gt;err_rel_b<b>x</b></td>
+        <td>Median DTI/RSI RMS for b=<b>x</b> frames across voxels relative to within-voxel RMS b=0 signal</td>
     </tr>
     <tr>
-        <td>RSIerr_rel_b<b>x</b></td>
-        <td>Median RSI RMS residual error for b=<b>x</b> frames across voxels relative to within-voxel RMS b=0 signal</td>
-    </tr>
-    <tr>
-        <td>DTerr_rel</td>
-        <td>Median of DTI RMS residual error for all frames across voxels relative to within-voxel RMS signal</td>
-    </tr>
-    <tr>
-        <td>RSIerr_rel</td>
-        <td>Median RSI RMS residual error for all frames across voxels relative to within-voxel RMS signal</td>
+        <td>&lt;DT|RSI&gt;err_rel</td>
+        <td>Median of DTI/RSI RMS for all frames across voxels relative to within-voxel RMS signal</td>
     </tr>
     <tr>
         <td>NumberOfFilesMissing</td>
@@ -297,12 +238,8 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
         <td>Number of head/neck/spine coil elements</td>
     </tr>
     <tr>
-        <td>brain_nvox_max</td>
-        <td>Number of voxels within brain mask at maximum image intensity</td>
-    </tr>
-    <tr>
-        <td>brain_fvox_max</td>
-        <td>Fraction of voxels within brain mask at maximum image intensity</td>
+        <td>brain_&lt;n|f&gt;vox_max</td>
+        <td>Number/Fraction of voxels within brain mask at maximum image intensity</td>
     </tr>
     <tr>
         <td>nonbrain_&ltmean|std|snr&gt</td>
@@ -316,59 +253,43 @@ Raw MR QC includes **automated** and **manual** checks to evaluate unprocessed M
         <td>NumberOfFilesExtra</td>
         <td style="word-wrap: break-word; white-space: normal;">Number of extra DICOM files received (non-image, corrupt, or extra files)</td>
     </tr>
+    <tr>
+        <td>NumberOfFilesValid</td>
+        <td style="word-wrap: break-word; white-space: normal;">Number of DICOM files received (after excluding non-image corrupt or extra files, but before excluding files from final partial frame)</td>
+    </tr>
+    <tr>
+        <td>brain_entropy</td>
+        <td style="word-wrap: break-word; white-space: normal;">Entropy score of voxels within brain mask</td>
+    </tr>
+    <tr>
+        <td>qc_selection</td>
+        <td style="word-wrap: break-word; white-space: normal;">Whether the series is selected for manual QC</td>
+    </tr>
+    <tr>
+        <td>auto_qc_score</td>
+        <td style="word-wrap: break-word; white-space: normal;">Automated QC score of 1 (pass) or 0 (fail)</td>
+    </tr>
+    <tr>
+        <td>auto_qc_notes</td>
+        <td style="word-wrap: break-word; white-space: normal">Reason for automated QC failure</td>
+    </tr>
 </tbody>
 </table>
 </div>
 
 <p></p>
 
-#### <i class="fa fa-desktop"></i> Automated QC
+### Workflow
 
-Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload. Following [protocol compliance and completeness checks](#compliance), the following automated QC metrics available in the release are calculated:
+Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing.
 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<i>Automated QC Metrics</i>
-<thead>
-<tr>
-    <th>Modality</th>
-    <th>QC Procedures</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>sMRI & qMRI</td>
-    <td>• Estimate motion artifacts using a deep learning model<br>
-     • Compute signal-to-noise ratio (SNR)</td>
-</tr>
-<tr>
-<td>fMRI</td>
-<td style="word-wrap: break-word; white-space: normal;">
-    • Estimate head motion with average <span class="tooltip">FD<span class="tooltiptext">framewise displacement</span></span> and data (sec) at FD thresholds of 0.2/0.3/0.4 mm (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al., 2012</a>)<br>
-    • Detect line artifacts and FOV cutoff<br>
-    • Compute spatial smoothness (FWHM) and temporal SNR (tSNR) after motion correction (<a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">Triantafyllou et al., 2005</a>)
-</td>
-</tr>
-<tr>
-    <td>dMRI</td>
-    <td style="word-wrap: break-word; white-space: normal;">
-    • Estimate head motion (framewise displacement, FD)<br>
-    • Refine motion estimates via registration to tensor-synthesized images (<a href="https://doi.org/10.1002/hbm.20619">Hagler et al., 2009</a>)<br>
-    • Identify dark slices (caused by abrupt head movements) using RMS difference between raw and tensor-fitted data<br>
-    • Calculate total slices and frames with motion artifacts<br>
-    • Detect line artifacts and field-of-view (FOV) cutoff
-  </ul>
-</td>
-</tr>
-<tr>
-<td>Field Maps</td>
-<td>Detect line artifacts and field-of-view (FOV) cutoff</td>
-</tr>
-<tr>
-<td>All</td>
-<td>Compute SNR where applicable</td>
-</tr>
-</tbody>
-</table>
+Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, **manual visual review is only performed for series that fail automated QC**. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC.
+
+**As an additional safeguard, QC is also performed on processed outputs** using tools such as <a href="../brainswipes" target="_blank">BrainSwipes</a>. When issues are identified at this stage, the corresponding raw data are re-reviewed and QC decisions are updated as needed. This iterative process improves QC scoring and utilities over time and helps ensure high data quality while minimizing delays in data release.
+
+### <i class="fa fa-desktop"></i> Automated QC
+
+Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload, beginning with [protocol compliance and completeness checks](#compliance). Data that fail these checks are flagged for review and are not included in the release until resolved. 
 
 <div id="compliance" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
@@ -420,11 +341,55 @@ Completeness checks verify that all expected series are present in each imaging 
 </tbody>
 </table>
 </div>
-<p></p>
 
-#### <i class="fa-solid fa-eye"></i> Manual Review
+For data that pass compliance checks, the following automated QC metrics available in the release are calculated:
 
-Automated metrics flag series for manual review using multivariate prediction and Bayesian classifiers. Trained technicians then score artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected** (QC = 0) and excluded from processing. Data are selected from the remaining series based on manual ratings, notes, and automated scores.
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<i>Automated QC Metrics</i>
+<thead>
+<tr>
+    <th>Modality</th>
+    <th>QC Procedures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>sMRI & qMRI</td>
+    <td>• Estimate motion artifacts using a deep learning model<br>
+     • Compute signal-to-noise ratio (SNR)</td>
+</tr>
+<tr>
+<td>fMRI</td>
+<td style="word-wrap: break-word; white-space: normal;">
+    • Estimate head motion with average <span class="tooltip">FD<span class="tooltiptext">framewise displacement</span></span> and data (sec) at FD thresholds of 0.2/0.3/0.4 mm (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al., 2012</a>)<br>
+    • Detect line artifacts and FOV cutoff<br>
+    • Compute spatial smoothness (FWHM) and temporal SNR (tSNR) after motion correction (<a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">Triantafyllou et al., 2005</a>)
+</td>
+</tr>
+<tr>
+    <td>dMRI</td>
+    <td style="word-wrap: break-word; white-space: normal;">
+    • Estimate head motion (framewise displacement, FD)<br>
+    • Refine motion estimates via registration to tensor-synthesized images (<a href="https://doi.org/10.1002/hbm.20619">Hagler et al., 2009</a>)<br>
+    • Identify dark slices (caused by abrupt head movements) using RMS difference between raw and tensor-fitted data<br>
+    • Calculate total slices and frames with motion artifacts<br>
+    • Detect line artifacts and field-of-view (FOV) cutoff
+  </ul>
+</td>
+</tr>
+<tr>
+<td>Field Maps</td>
+<td>Detect line artifacts and field-of-view (FOV) cutoff</td>
+</tr>
+<tr>
+<td>All</td>
+<td>Compute SNR where applicable</td>
+</tr>
+</tbody>
+</table>
+
+### <i class="fa-solid fa-eye"></i> Manual Review
+Data is flagged for manual review based on automated QC results using multivariate prediction and Bayesian classifiers. Only a portion of data therefore undergoes both automated and manual review. When automated QC flags a series, trained technicians perform manual visual review and rate artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected (QC = 0)** and excluded from downstream processing. For remaining series, final selection is informed by manual ratings, reviewer notes, and automated QC scores.
 
 <table class="compact-table-no-vertical-lines">
 <i>Manual QC Metrics</i>
@@ -459,85 +424,7 @@ Automated metrics flag series for manual review using multivariate prediction an
 </tbody>
 </table>
 
-## BrainSwipes
-
-Manual visual inspection remains the gold standard for detecting artifacts in structural, functional (e.g., XCP-D), and diffusion (e.g., QSIPrep) derivatives. To support this, derivative visual reports are integrated into [BrainSwipes](https://brainswipes.us/about), a gamified, crowdsourced QC platform built on the open-source [Swipes For Science](https://swipesforscience.org/) framework. BrainSwipes provides an intuitive interface for large-scale studies, guiding users through a short [tutorial](https://brainswipes.us/tutorial-select) before they evaluate images and classify them as pass or fail.
-
-<p>
-<div id="swipes-procedures" class="table-banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fa fa-brain"></i></span>
-<span class="text-with-link">
-  <span class="text">BrainSwipes QC Procedures</span>
-	<a class="anchor-link" href="#swipes-procedures" title="Copy link">
-  	<i class="fa-solid fa-link"></i>
-  	</a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<br>
-<div class="img-with-text" style="width: 60%; margin: 0 auto; text-align: center;">
-    <img src="../images/brainswipes.png" alt="Example quality assessment of surface delineation in BrainSwipes" style="width: 100%; height: auto;">
-    <p><i>Example quality assessment of surface delineation on BrainSwipes platform (displaying brain in axial plane at level of basal ganglia/putamen).</i></p>
-</div>
-<p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Surface Delineation:</b></p>
-For structural QA, swipers are presented with image slices in coronal, axial, and sagittal planes to assess the accuracy of T1w and T2w surface delineations in differentiating gray and white matter. Images are derived from XCP-D visual reports.
-</p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Atlas Registration:</b></p>
-In addition to surface delineation, structural QA also includes atlas registration quality, evaluated by overlaying delineations of the subject’s image onto the atlas, and vice versa. Swipes display nine T1w slices for visual inspection, with three slices per anatomical plane. Quality is assessed based on the alignment of the outer boundaries of the overlaid contours with those of the underlying image, ensuring minimal gaps or misalignments. Images are derived from XCP-D visual reports.
-<p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Functional Registration:</b></p>
-Functional registration is evaluated by overlaying outlines of functional images onto structural images and vice versa. Swipes display nine slices of the same functional image for visual inspection, with three slices per anatomical plane. Quality is assessed similarly to structural atlas registration, focusing on the alignment of the overlaid contours. Additional evaluation includes checking for artifacts such as signal dropout. Images are derived from XCP-D visual reports.
-</p>
-<p style="font-size: 1em; margin: 0 0 5px;"><b>Diffusion Direction Encoding (<i>to be included in future release</i>):</b></p>
-Swipes display GIFs of full-resolution T2w images as a grayscale background, with the "Direction Encoded Color" (DEC) map overlaid. These GIFs sweep through a portion of the brain across the three anatomical planes. High-quality processed DWI images exhibit bands of color that closely follow the folds and contours of the grayscale background. These visuals are derived from the QSIPrep report.
-<p>
-<strong>Each visual report for a given modality is independently reviewed and rated as a pass or fail, which in the outputs are scored as values of 1 and 0 respectively. BrainSwipes generates a summary of these results that includes the average score as well as number of reviewers for each visual report of each modality.</strong>
-</div>
-</p>
-
-**BrainSwipes QC results are provided as [tabulated](../../datacuration/phenotypes.md) data**: `img_brainswipes_xcpd-T2w` and `img_brainswipes_xcpd-bold`. QC scores range from 0 (Fail) to 1 (Pass), averaged across reviewers. For example, a score of 0.6 indicates that 60% of reviewers rated the image as a pass. The data includes overall average QC scores and average number of reviewers for each session-level T2w and BOLD run (summarizing across all visual reports for a given run) as well as the average QC and number of reviewers for each visual report. A Python helper function is provided below to load a BrainSwipes TSV file into a Pandas DataFrame and filter runs with average QC scores above a user-specified threshold:
-
-<div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-brands fa-python"></i></span>
-  <span class="text-with-link">
-  <span class="text">Python Helper Function</span>
-  <a class="anchor-link" href="#python-helper-function" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<pre class="helper-code"><code>
-import pandas as pd
-
-def read_and_filter_tsv(file_path, threshold):
-    """
-    Reads an HBCD BrainSwipes TSV file into a DataFrame and keeps subject rows where 
-	the overall average QC value is greater than or equal to the specified threshold.
-
-    Parameters:
-    - file_path (str): Path to the .tsv file
-    - threshold (float): Threshold value for filtering
-
-    Returns:
-    - pd.DataFrame: Filtered DataFrame
-    """
-    df = pd.read_csv(file_path, sep='\t')
-
-    fourth_col = df.columns[3]
-    return df[df[fourth_col] >= threshold]
-
-# Example usage:
-# Filter to keep only subjects with an average structural QC of at least 0.6 (60% pass rate)
-filtered_df = read_and_filter_tsv("img_brainswipes_xcpd_T2w.tsv", 0.6)
-print(filtered_df.head())
-</code></pre>
-</div>
-
-## References
+### References
 <div class="references">
     <p>Dean III, D. C., Tisdall, M. D., Wisnowski, J. L., Feczko, E., Gagoski, B., Alexander, A. L., ... &amp; HBCD MRI Working Group. (2024). Quantifying brain development in the HEALthy Brain and Child Development (HBCD) Study: The magnetic resonance imaging and spectroscopy protocol. <em>Developmental Cognitive Neuroscience</em>, 70, 101452. <a href="https://doi.org/10.1016/j.dcn.2024.101452">https://doi.org/10.1016/j.dcn.2024.101452</a></p>
     <p>Gard, A. M., Hyde, L. W., Heeringa, S. G., West, B. T., & Mitchell, C. (2023). Why weight? Analytic approaches for large-scale population neuroscience data. Developmental Cognitive Neuroscience, 59, 101196. <a href="https://doi.org/10.1016/j.dcn.2023.101196">https://doi.org/10.1016/j.dcn.2023.101196</a></p>
@@ -545,4 +432,3 @@ print(filtered_df.head())
     <p>Power, J. D., Barnes, K. A., Snyder, A. Z., Schlaggar, B. L., &amp; Petersen, S. E. (2012). Spurious but systematic correlations in functional connectivity MRI networks arise from subject motion. NeuroImage, 59(3), 2142–2154. <a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">https://doi.org/10.1016/j.neuroimage.2011.10.018</a></p>
     <p>Triantafyllou, C., Hoge, R. D., Krueger, G., Wiggins, C. J., Potthast, A., Wiggins, G. C., &amp; Wald, L. L. (2005). Comparison of physiological noise at 1.5 T, 3 T and 7 T and optimization of fMRI acquisition parameters. NeuroImage, 26(1), 243–250. <a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">https://doi.org/10.1016/j.neuroimage.2005.01.007</a></p>
 </div>
-<br>

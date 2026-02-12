@@ -1,15 +1,9 @@
-# Postnatal Depression
+# Edinburgh Postnatal Depression Scale (<i>EPDS</i>)
 
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
     <div class="info-value"><code>pex_bm_epds</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Edinburgh Postnatal Depression Scale (<i>EPDS</i>)
-    </div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
@@ -18,6 +12,11 @@
 </div>
 
 ---------------------------------------------
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../../changelog/knownissues/#pregnancy-exposure-including-substance-use" target="_blank">see details</a>.</span>
+</div>
 
 ## Administration & Quality Control
 
@@ -90,9 +89,7 @@ The Edinburgh Postnatal Depression Scale (<a href="https://downloads.aap.org/AAP
 <p>Each item is scored on a scale from 0 to 3, with items 3, 5, 6, 7, 8, 9, and 10 being reverse-scored (i.e. 3, 2, 1, 0), which was built into the original survey responses. No additional scoring changes are necessary at the item-level. Total scores are calculated by summing the item responses. Note that total scores are not prorated or left missing for missing items: data users should determine how best to address missing data.</p>
 </div>
 
-
 ## References
 <div class="references">
 <p>Cox, J. L., Holden, J. M., &amp; Sagovsky, R. (1987). Detection of postnatal depression . Development of the 10-item Edinburgh Postnatal Depression Scale. <em>British Journal of Psychiatry</em>, <em>150</em>, 782–786. <a href="https://doi.org/10.1192/bjp.150.6.782">https://doi.org/10.1192/bjp.150.6.782</a></p>
 </div>
-<br>

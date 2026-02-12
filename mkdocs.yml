@@ -17,38 +17,38 @@ markdown_extensions:
   - toc:
       permalink: '🔗'  
   - pymdownx.arithmatex
-  
+
 extra_javascript:
   - js/extra.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://www.googletagmanager.com/gtag/js?id=G-BY0EH2K1YQ
   - js/ga.js
-  
+
 extra:
   analytics:
     provider: google
     property: G-BY0EH2K1YQ
 
 extra_css:
-  - css/custom.css
+  - css/alerts.css
+  - css/banners.css
   - css/collapsible.css
   - css/copybox.css
-  - css/banners.css
+  - css/custom.css
+  - css/headers.css
   - css/hide-sidebar.css
   - css/hoverable_elements.css
   - css/issues.css
   - css/legends.css
   - css/logos.css
   - css/notifications.css
-  - css/headers.css
+  - css/reduce-righthand-whitespace.css
   - css/tables.css
+  - css/warnings.css
   - overrides/styles.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
   - https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css
-  - css/reduce-righthand-whitespace.css
-  - css/warnings.css
-  - css/alerts.css
 
 plugins:
   - search
@@ -60,7 +60,7 @@ docs_dir: docs
 nav: 
   - Data Usage:
     - Access & Download Data: access/download.md
-    - Metadata (Data Dictionary): access/metadata.md
+    - Metadata: access/metadata.md
     - Naming Conventions: access/naming-conventions.md
     - Responsible Data Use: access/resp_data_use.md
     - Data Use Acknowledgement: access/dua.md
@@ -75,24 +75,40 @@ nav:
   - Study Instruments:
     - Instruments Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
+    - Administrative:
+        - Study Navigators: instruments/admin/study-navigators.md
     - Demographics:
         - Basic Demographics: instruments/demo/basicdemo.md
-        - Visit Information: instruments/demo/visitinfo.md
+        - Visit Level Data: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 
-            - ecPROMIS: instruments/bcgi/ecpromis.md
-            - IBQ-R (VSF)+BI: instruments/bcgi/ibqr.md
+            - CHAOS: instruments/bcgi/chaos.md
+            - ecPROMIS Child-Caregiver Relationship: instruments/bcgi/ecpromis.md
+            - ecPROMIS Peer Relationships: instruments/bcgi/ecpromis-pr.md
+            - ecPROMIS Self-Regulation: instruments/bcgi/ecpromis-selfreg.md
+            - FAD: instruments/bcgi/fad.md
+            - IBQ-R & ECBQ: instruments/bcgi/ibqr.md
             - MAPS-TL: instruments/bcgi/maps-tl.md
         - Biospecimens & Omics:
+            - Illumina GDA GWAS: instruments/biospec/illumina-gda-gwas.md
             - Nails: instruments/biospec/nails.md
             - Urine: instruments/biospec/urine.md
         - Neurocognition & Language:
+            - Bayley-4: instruments/neurocog/bayley-4.md
+            - MacArthur-Bates CDI: instruments/neurocog/macarthur-bates.md
             - MLDS: instruments/neurocog/mlds.md
             - SPM-2: instruments/neurocog/spm2.md
+            - Vineland: instruments/neurocog/vineland.md
         - Physical Health:
+            - Brief Infant Sleep Questionnaire: instruments/physhealth/bisq-sf.md
             - Breastfeeding: instruments/physhealth/bf.md
-            - Food Insecurity: instruments/physhealth/foodinsecurity.md
+            - ecPROMIS- PA/GS: instruments/physhealth/ecpromis-pags.md
+            - ecPROMIS- Sleep: instruments/physhealth/ecpromis-sleep.md
             - Growth: instruments/physhealth/growth.md
+            - Medical History: instruments/physhealth/medical-history.md
+            - Nutrition: instruments/physhealth/nutrition.md
+            - ScreenQ: instruments/physhealth/screenq.md
+            - Vision Screener: instruments/physhealth/vision.md
         - Pregnancy & Exposures:
             - Pregnancy & Infant Health: instruments/pregexp/pex.md
             - Mental Health:
@@ -102,27 +118,41 @@ nav:
                 - Postnatal Depression: instruments/pregexp/mh/epds.md
             - Substance Use:
                 - ASSIST: instruments/pregexp/su/assist.md
+                - Substance Use Patterns: instruments/pregexp/su/su-patterns.md
                 - TLFB: instruments/pregexp/su/tlfb.md
         - Social & Environmental Determinants:
-            - V01 Demographics: instruments/SED/v01-demo.md
+            - ACEs: instruments/SED/aces.md
             - Baby's First Years: instruments/SED/bfy.md
-            - Unfair Treatment: instruments/SED/discr.md
+            - Composite Abuse Scale: instruments/SED/cab.md
+            - Demographics (Adult): instruments/SED/demo-cg.md
+            - Child Demographics: instruments/SED/demo-ch.md
+            - Food Insecurity: instruments/SED/foodinsecurity.md
+            - HOME-21: instruments/SED/home21.md
             - Intimate Partner Violence: instruments/SED/ehits.md
-            - Perceived Stress/Social Support: instruments/SED/promis.md
+            - Employment: instruments/SED/current-employment.md
+            - Geocoded Linkage: instruments/SED/geocoded-linkage.md
+            - Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
+            - Lead Exposures: instruments/SED/lead-exposures.md
             - Neighborhood Safety: instruments/SED/safety.md
             - Protective Factors: instruments/SED/paces.md
+            - Perceived Stress/Social Support: instruments/SED/promis.md
+            - Second Hand Smoke: instruments/SED/second-hand-smoke-exposure.md
+            - Transitions in Care: instruments/SED/transitions-in-care.md
+            - Unfair Treatment: instruments/SED/discr.md            
+            - Vancouver Index: instruments/SED/vi.md
     - Brain Activity & Biosensors:
         - Electroencephalography:
             - Overview & EEG Protocols: instruments/eeg/index.md
             - Quality Control Procedures: instruments/eeg/qc.md
-            - Auditory Mismatch Negativity Task: instruments/eeg/mmn.md
-            - Faces Task: instruments/eeg/faces.md
-            - Video Resting State Task: instruments/eeg/videors.md
-            - Visual Evoked Potential Task: instruments/eeg/vep.md
+            - EEG Task Details: instruments/eeg/tasks.md
         - Magnetic Resonance Imaging:
             - Overview & MR Protocols: instruments/mri/index.md
-            - Quality Control Procedures: instruments/mri/qc.md
-            # - MRI Derivatives Quick Start Guide: instruments/mri/derivs-quickstart.md
+            - Quality Control Procedures:
+              - Raw MR Data QC: instruments/mri/qc.md
+              - BrainSwipes: instruments/mri/brainswipes.md
+            - MR Exclusion Criteria: instruments/mri/exclusion-criteria.md
+            - MRI Processing & Derivatives Guide: instruments/mri/mri-proc.md
+            - Pre-Scan Questionnaire: instruments/mri/prescan-questionnaire.md
             - Structural MRI: instruments/mri/smri.md
             - Functional MRI: instruments/mri/fmri.md
             - Diffusion MRI: instruments/mri/dmri.md

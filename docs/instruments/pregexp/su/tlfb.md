@@ -1,15 +1,9 @@
-# Timeline Follow Back
+# Timeline Follow Back (*TLFB*)
 
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
     <div class="info-value"><code>pex_ch_tlfb</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Timeline Follow Back (<i>TLFB</i>)
-    </div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
@@ -45,14 +39,17 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>The sampling covers specific weeks before pregnancy (Weeks 1-2) and during pregnancy (Weeks 3-9). Consequently, substance use reported outside these weeks may not appear in the TLFB, and a positive biospecimen may lack corresponding TLFB data for the same reason. This sampling approach balances participant burden (avoiding a full 40-week TLFB) with capturing key pregnancy phases when behaviors often shift, such as before and after pregnancy recognition and in late pregnancy.</p>
-<p>Also, of note- participants were asked to report occasions (except cigarettes/cigarillos and drinks, reported as number), but some substances (e.g. electronic cigarette devices) are difficult to report in occasions and have outliers.</p>
+<p><b>Sampling Window and Coverage Limitations</b><br>
+The sampling covers specific weeks before pregnancy (Weeks 1-2) and during pregnancy (Weeks 3-9). Consequently, substance use reported outside these weeks may not appear in the TLFB, and a positive biospecimen may lack corresponding TLFB data for the same reason. This sampling approach balances participant burden (avoiding a full 40-week TLFB) with capturing key pregnancy phases when behaviors often shift, such as before and after pregnancy recognition and in late pregnancy.</p>
+<p><b>Notes on Reporting Format and Data Variability</b><br>
+Participants were asked to report occasions (except cigarettes/cigarillos and drinks, reported as number), but some substances (e.g. electronic cigarette devices) are difficult to report in occasions and have outliers.</p>
 </div>
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">The data for one or more of these instruments has known issues - <a href="../../../../changelog/knownissues/#tlfb" target="_blank">see details</a>.</span>
+  <span class="text">This data has known issues - <a href="../../../../changelog/knownissues/#pregnancy-exposure-including-substance-use" target="_blank">see details</a>.</span>
 </div>
+<p></p>
 
 ## Administration & Quality Control
 
@@ -79,29 +76,57 @@ The original Timeline Follow Back instrument is designed to assess substance use
 
 Participants who reported any substance use in the three months prior to or during pregnancy completed a TLFB interview for each substance reported on the ASSIST. Use was disaggregated by product type (e.g., edible cannabis products), and participants provided estimates for **nine distinct weeks** of use. For each week, the **number of occasions of use per day** was captured for all products except for cigarettes and cigarillos (number per day) and alcohol (number of single servings per day). The nine sampled weeks were distributed across two study visits:
 
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <tbody>
     <tr>
-      <td style="text-align: center;"><strong>Visit 1</strong></td>
-      <td style="text-align: center;">
+      <td style="text-align: center;"><strong>Version 1</strong></td>
+      <td>
         <ul style="list-style-position: inside; padding-left: 0; margin: 0 auto; display: inline-block; text-align: left;">
-          <li>Pre-pregnancy use (Weeks 1–2: four weeks before LMP through two weeks before LMP)</li>
-          <li>Early pregnancy use (Weeks 3–6: two weeks after LMP through six weeks after LMP)</li>
-          <li>Current use (Week 7: the week prior to V1)</li>
+          <li>Period 1: Two Weeks Pre-LMP (Weeks 1–2, four through two weeks pre-LMP) - <i>Pre-pregnancy use</i></li>
+          <li>Period 2: Four Weeks Post-LMP (Weeks 3–6, two through six weeks post-LMP) - <i>Early pregnancy use</i></li>
+          <li>Period 3: Last Week (Week 7, the week prior to Visit 1) - <i>Current use (at time of administration)</i></li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td style="text-align: center;"><strong>Visit 2</strong></td>
+      <td style="text-align: center;"><strong>Version 2</strong></td>
       <td>
         <ul style="list-style-position: inside; padding-left: 0; margin: 0 auto; display: inline-block; text-align: left;">
-          <li>Last two full weeks of gestation (Weeks 8–9)</li>
+          <li>Period 4: Last Two Weeks Before Delivery (Weeks 8–9)</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
+
+<div id="v3" class="table-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Version 3 Administered to Postnatal Recruits</span>
+  <a class="anchor-link" href="#v3" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><b>Postnatal recruits</b> (participants enrolled in the study postnatally) are administered an adapted <b>Version 3</b> of the TLFB, which includes all of the four time periods above in a single administration. Period 3 in this version captures Week 7 as the week spanning LMP + 19 weeks to LMP + 20 weeks.</p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <tbody>
+    <tr>
+      <td style="text-align: center;"><strong>Version 3</strong></td>
+      <td>
+        <ul style="list-style-position: inside; padding-left: 0; margin: 0 auto; display: inline-block; text-align: left;">
+          <li>Period 1: Two Weeks Pre-LMP (Weeks 1–2, four through two weeks pre-LMP) - <i>Pre-pregnancy use</i></li>
+          <li>Period 2: Four Weeks Post-LMP (Weeks 3–6, two through six weeks post-LMP) - <i>Early pregnancy use</i></li>
+          <li><b>Period 3: Week 7, captured as the week spanning LMP + 19 weeks pre-LMP + 20 weeks</b></li>
+          <li>Period 4: Last Two Weeks Before Delivery (Weeks 8–9)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ## References
 <div class="references">

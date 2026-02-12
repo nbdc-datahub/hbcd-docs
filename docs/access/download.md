@@ -61,5 +61,3 @@ The NBDC Data Hub provides two main platforms for **exploring**, **querying**, a
 <p>
 <span class="blue-text"><strong>**</strong></span> <strong>Before obtaining DUC access</strong>, you can preview the available data in the data dictionary browsers. See <a href="../metadata" target="_blank">Metadata & Naming Conventions</a> for guidance on navigating the data structure.
 </p>
-
-<br>

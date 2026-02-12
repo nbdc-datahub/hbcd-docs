@@ -1,15 +1,9 @@
-# Infant Sensor Questionnaire
+# Infant Sensor Questionnaire 1/2/3
 
 <div class="info-block">
   <div class="info-row">
     <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
     <div class="info-value"><code>nt_ch_sens__qtn_&lt;1|2|3&gt;</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-       Infant Sensor Questionnaire 1/2/3
-    </div>
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
@@ -46,7 +40,7 @@
 <tr><td><b>Visits</b></td>
 <td>V02, V03</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">When no survey responses were received, research assistants were contacted to confirm whether the surveys had been sent to participants as intended. The most common cause of missing responses was caregiver non-response, and less commonly due to human error (preferred contact/contact method not selected by RA) or technological malfunction. .</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">When no survey responses were received, research assistants were contacted to confirm whether the surveys had been sent to participants as intended. The most common cause of missing responses was caregiver non-response, and less commonly due to human error (preferred contact/contact method not selected by RA) or technological malfunction.</td></tr>
 </tbody>
 </table>
 
@@ -59,4 +53,3 @@ The **Infant Sensor Questionnaire**, developed by the HBCD Workgroup, is a daily
 <div class="references">
     <p>Pini, N., Fifer, W. P., Oh, J., Nebeker, C., Croff, J. M., Smith, B. A., &amp; Novel Technology/Wearable Sensors Working Group. (2024). Remote data collection of infant activity and sleep patterns via wearable sensors in the HEALthy Brain and Child Development Study (HBCD). <em>Developmental Cognitive Neuroscience</em>, 69(101446), 101446. <a href="https://doi.org/10.1016/j.dcn.2024.101446">https://doi.org/10.1016/j.dcn.2024.101446</a></p>
 </div>
-<br>

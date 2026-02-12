@@ -1,3 +1,41 @@
+
+import os
+
+# Root directory where your markdown files are stored
+ROOT_DIR = "../docs/instruments"
+
+# Text snippets to look for
+WARNING_SNIPPET = '<div id="warning"'
+ALERT_SNIPPET = '<div id="alert"'
+
+warning_files = []
+alert_files = []
+
+for root, _, files in os.walk(ROOT_DIR):
+    for file in files:
+        if file.endswith(".md"):
+            filepath = os.path.join(root, file)
+            try:
+                with open(filepath, "r", encoding="utf-8") as f:
+                    content = f.read()
+                    if WARNING_SNIPPET in content:
+                        warning_files.append(filepath)
+                    if ALERT_SNIPPET in content:
+                        alert_files.append(filepath)
+            except Exception as e:
+                print(f"Could not read {filepath}: {e}")
+
+# Print results
+print("=== Files with Data Warning ===")
+for f in warning_files:
+    print(f)
+
+print("\n=== Files with Responsible Use Warning ===")
+for f in alert_files:
+    print(f)
+    
+    
+'''    
 import os
 import csv
 
@@ -43,38 +81,4 @@ print(f"Results written to {output_file}")
 
 
 '''
-import os
 
-# Root directory where your markdown files are stored
-ROOT_DIR = "../docs/instruments"
-
-# Text snippets to look for
-WARNING_SNIPPET = '<div id="warning"'
-ALERT_SNIPPET = '<div id="alert"'
-
-warning_files = []
-alert_files = []
-
-for root, _, files in os.walk(ROOT_DIR):
-    for file in files:
-        if file.endswith(".md"):
-            filepath = os.path.join(root, file)
-            try:
-                with open(filepath, "r", encoding="utf-8") as f:
-                    content = f.read()
-                    if WARNING_SNIPPET in content:
-                        warning_files.append(filepath)
-                    if ALERT_SNIPPET in content:
-                        alert_files.append(filepath)
-            except Exception as e:
-                print(f"Could not read {filepath}: {e}")
-
-# Print results
-print("=== Files with Data Warning ===")
-for f in warning_files:
-    print(f)
-
-print("\n=== Files with Responsible Use Warning ===")
-for f in alert_files:
-    print(f)
-'''

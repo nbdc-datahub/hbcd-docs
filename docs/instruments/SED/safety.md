@@ -6,12 +6,6 @@
     <div class="info-value"><code>sed_bm_nbhsaf</code></div>
   </div>
   <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-       PhenX+ Toolkit Neighborhood Safety
-    </div>
-  </div>
-  <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
     <div class="info-value">Neighborhood Safety</div>
   </div>
@@ -48,4 +42,3 @@ This measure is a three-item questionnaire to assess the respondent’s percepti
   <p>Mujahid, M. S., Diez Roux, A. V., Morenoff, J. D., &amp; Raghunathan, T. (2007). Assessing the measurement properties of neighborhood scales: from psychometrics to ecometrics. <em>American Journal of Epidemiology</em>, 165(8), 858–867. <a href="https://doi.org/10.1093/aje/kwm040">https://doi.org/10.1093/aje/kwm040</a></p>
   <p>PhenX Toolkit. (2024 November 01). Neighborhood Safety, PhenX Toolkit. <a href="https://www.phenxtoolkit.org/protocols/view/210901">https://www.phenxtoolkit.org/protocols/view/210901</a></p>
 </div>
-<br>

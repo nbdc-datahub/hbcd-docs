@@ -14,7 +14,7 @@ hbcd/
 |__ rawdata/ 
     |__ phenotype/ 
         |__ sed_basic_demographics.*        <span class="hashtag"># Basic Demographics</span>
-        |__ par_visit_data.*                <span class="hashtag"># Visit Information</span>
+        |__ par_visit_data.*                <span class="hashtag"># Visit Level Data</span>
         |__ bio_biosample_<span class="placeholder">&lt;nails|urine&gt;</span>.*   <span class="hashtag"># Toxicology</span>
         |__ <span class="placeholder">{instrument_name}</span>.*               <span class="hashtag"># Instrument Data</span>
 </pre>
@@ -52,6 +52,23 @@ Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modalit
 </tr>
 </tbody>
 </table>
+
+<div id="study-design-logic-child-centric-data-structure" class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Study Design Logic: Child-Centric Data Structure</span>
+  <a class="anchor-link" href="#study-design-logic-child-centric-data-structure" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+</div>
+<div class="notification-static-content">
+<p>The HBCD Study organizes data around the Child ID as the central key, <strong>i.e. a caregiver and their child share the same participant ID.</strong> All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by:</p>
+<ul>
+<li><strong>Simplifying child-focused analysis</strong>: Researchers can track each child’s data over time without remapping caregiver information.</li>
+<li><strong>Handling multi-birth cases cleanly</strong>: When a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.</li>
+</ul>
+</div>
 
 ## File Types
 
@@ -105,17 +122,17 @@ Tabulated data are provided in multiple formats to support a range of tools and 
 
 #### Caution: Using Plain Text Files for Analysis
 
-Plain text formats like TSV/CSV can cause problems in large-scale analyses due to the fact that **metadata is stored separately** (in sidecar JSON files). Python, R, or other tools may make mistakes when importing the data. For example:
+**We recommend using Parquet files for analysis instead of plain text formats (TSV/CSV)** to avoid data import issues in Python, R, etc. caused by the separation of metadata from data. Parquet files embed metadata directly, ensuring correct data types and handling of missing values. When using TSV/CSV files, common pitfalls include:
 
-- Tools may misinterpret data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical.
-- Columns with mostly missing values may be treated as empty if the first few rows contain no data.
+- Misinterpretation of data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical
+- Mishandling missing values (columns with mostly missing values may be treated as empty)
 
-**We therefore recommend using Parquet files for analysis to avoid these issues**, as the metadata is embedded directly. However, **if you do choose to use TSV/CSV files for analysis:** be sure to manually define column types during import using the sidecar JSON metadata files. Additionally, make sure to specify `n/a` as placeholder for missing values when reading in the `.tsv` files (HBCD uses this placeholder as recommended by the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/common-principles.html#tabular-files)). We recommend using [NBDCtools](recprograms.md#tabulated-data) to automate this process - see documentation for the function `read_dsv_formatted()` [here](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html).
+**If you do choose to use TSV/CSV files for analysis:** be sure to (1) manually define column types during import using the sidecar JSON metadata files and (2) specify `n/a` as the placeholder for missing values (HBCD uses this placeholder for TSV files as recommended by the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/common-principles.html#tabular-files)). We recommend using [NBDCtools](recprograms.md#tabulated-data) to automate these processes - see documentation for the `read_dsv_formatted()` function [here](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html).
 
 #### Working with Parquet in Python and R
 <p>
 <div id="load-parquet" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-brands fa-python"></i> / <i class="fa-brands fa-r-project"></i></span>
+  <span class="emoji" style="margin-right: 4px;"><i class="fa-brands fa-python"></i>&nbsp;<i class="fa-brands fa-r-project"></i></span>
   <span class="text-with-link">
   <span class="text">Loading Parquet Files</span>
   <a class="anchor-link" href="#load-parquet" title="Copy link">
@@ -148,6 +165,70 @@ Plain text formats like TSV/CSV can cause problems in large-scale analyses due t
 ### Shadow Matrices for Missing Data
 
 Each TSV or Parquet file in `/rawdata/phenotype/` has a corresponding **shadow matrix file** in the same format that record the reason for missing values (e.g., `Don't know`, `Decline to Answer`, `Logic Skipped`, etc.) in the phenotype data.
+
+<div id="sm-values" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">All Possible Shadow Matrix Values</span>
+  <a class="anchor-link" href="#sm-values" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p><b>Possible Values Across Instruments</b><br>
+The following are standard possible values for missingness reason found in the shadow matrices across instruments.</p>
+<ul>
+<li><strong>Decline to Answer</strong> (e.g., participant declined to answer a question)</li>
+<li><strong>Don't Know</strong> (e.g., participant did not know the answer)</li>
+<li><strong>Missed Visit</strong> (e.g., participant did not attend a visit)</li>
+<li><strong>Missed Instrument</strong> (e.g., participant did not complete assessment)</li>
+<li><strong>Logic Skipped</strong> (e.g., question skipped due to branching logic)</li>
+<li><strong>Unknown Missing</strong> (e.g., reason for missing value unknown)</li>
+</ul>
+<p> Note that <b>for cases where an instrument was not administered</b>, this would be indicated in the shadow matrix as 'Unknown Missing' for blank entries (as well as 'Logic Skipped' for fields skipped due to branching logic). There is also an 'Administration' field for all instruments that indicates whether an instrument was administered or not for a given participant/visit.</p>
+<p><b>Special Cases</b><br>
+The following domains/instruments have additional unique shadow matrix values used where applicable:</p>
+<table class="table-no-vertical-lines">
+<thead>
+<tr>
+<th>Table(s)</th>
+<th>Unique Shadow Matrix Values [<i>+Variable Name If Specific</i>]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BioSpecimens (<i>All</i>)</strong></td>
+<td style="word-wrap: break-word; white-space: normal;">
+  <ul>
+    <li><i>"Please refer to corresponding categorical field for more details"</i></li>
+  </ul>
+</td>
+</tr>
+<tr>
+<td><strong>Basic Demographics</strong></td>
+<td style="word-wrap: break-word; white-space: normal;">
+  <ul>
+    <li><i>"Child's DOB not reported or available for participant"</i> [<code>{gestational|mother}_age_delivery</code>]</li>
+    <li><i>"Missing Information From Ripple"</i> [<a href="../../instruments/demo/basicdemo/#acs-derived-variables" target="_blank">ACS-derived fields</a>]</li>
+  </ul> 
+</td>
+</tr>
+<tr>
+<td><strong>Visit Level Data</strong></td>
+<td style="word-wrap: break-word; white-space: normal;">
+  <ul>
+    <li><i>"Data not available for participants at this timepoint"</i></li>
+    <li><i>"No candidate age for V01"</i> [<code>candidate_age</code>]</li>
+    <li><i>"Gestational Age at Administration is only at V01 and not calculated for V02 onwards"</i> [<code>gestational_age</code>]</li>
+  </ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
 
 #### How They Work
 
@@ -246,5 +327,3 @@ df[df["&lt;COLUMN NAME&gt;"].isna()][["&lt;COLUMN NAME&gt;_missing_reason"]]
       count(&lt;column_name&gt;)
   </code></pre>
 </div>
-
-<br>

@@ -4,7 +4,57 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
-/* styling text to make more subtle, e.g. "Click to Expand"*/
+/* 2-column list */
+.two-column-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem; /* space between columns */
+  line-height: 1.4em;
+}
+.two-column-list .column {
+  flex: 1; /* evenly spaced columns */
+}
+.two-column-list ul {
+  margin: 0;
+  padding-left: 0.9em;
+}
+.two-column-list li {
+  list-style-type: disc;
+  margin-bottom: 0.4em;
+}
+.two-column-list a {
+  text-decoration: none;
+}
+
+/* Pill badge used for basic demo */
+.pill-badge {
+  background-color: #00aeae;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 1px 8px;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+/* Pill badge with emoji */
+.pill-badge-emoji {
+  background-color: none;
+  color: teal;
+  border: 1px solid teal;
+  border-radius: 12px;
+  padding: 2px 4px;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+/* Add space above the bottom navigation buttons */
+.rst-footer-buttons {
+  margin-top: 3em; 
+}
+
+/* styling text to make more subtle, e.g. "Click to Expand" */
 .hint {
   color: #888;
   font-size: 1rem;
@@ -48,6 +98,7 @@ pre > code {
   font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace;
   color: black !important;
   font-size: 0.75em !important;
+  line-height: 1.4em;
 }
 /* Reset for code inside tooltips */
 .tooltiptext code,
@@ -99,6 +150,7 @@ pre.helper-code code {
   color: #ffffff;
   font-size: 12px;
   padding: 10px;
+  line-height: 1.4em;
   border-radius: 5px;
   white-space: pre;
   display: block;
@@ -112,10 +164,10 @@ pre.helper-code code {
   color: #b0d619
 }
 .folder-tree .label {
-  color: #199bd6
+  color: #b5c2ff
 }
 .folder-tree .subses {
-  color: #ffd000
+  color: #b5c2ff
 }
 
 
@@ -154,31 +206,47 @@ pre.helper-code code {
     font-size: 14px;
   }
 
-/* Styling for NBDC Lasso quick link in Data Access section */ 
+/* BUTTONS WITH LINKS */ 
 .button-link {
   display: inline-block;
   background-color: #EBDDF9;
-  color: #3e3e3e !important; /* Ensures text stays black */
-  font-weight: bold; 
-  font-family: Lato; 
-  padding: 20px 20px;
+  color: #3e3e3e !important;
+  font-family: Lato;
+  padding: 10px 10px;
   text-decoration: none;
-  border: 2px solid #9325ae;
-  border-radius: 30px;
-  font-size: 1.1rem;
+  border-radius: 20px;
+
+  border: none;     
+  outline: none;   
+  box-shadow: none; 
+
+  font-size: 1.0rem;
   transition: background-color 0.2s ease;
 }
-/* Explicitly set link states to black */
+
+.button-link a {
+  background-color: none !important;
+  color: #3e3e3e !important;
+  text-decoration: none !important;
+}
+.button-link a:hover {
+  background-color: none !important;
+  color: #3e3e3e !important;
+  text-decoration: none !important;
+}
 .button-link:link,
 .button-link:visited,
 .button-link:hover,
 .button-link:active {
   color: #3e3e3e !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .button-link:hover {
-  background-color: #25ae70; /* background color on hover */
+  color: #3e3e3e !important;
+  background-color: #e2c4ff;
+  text-decoration: none !important;
 }
+
 
 
 /* Instrument pages overview info (table name, construct, full name) */
