@@ -306,45 +306,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 </table>
 </div>
 
-<br>
-
 -----------------------
-
-
-## Version: R1.1
-
-<div style="background:#f2f6fc; padding:12px 20px; border-radius:10px; text-align:center; margin-bottom:25px; box-shadow:0 2px 4px rgba(0,0,0,0.05);">
-  <span style="font-size:1.1em; font-weight:600; color:#2a5d9f;">
-    <i class="fa-solid fa-calendar" style="margin-right:8px; vertical-align: 1px;"></i>
-    Release Date: 2025-10-10
-  </span>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0;">
-  <!-- Participants -->
-  <div style="background:#f9f9f9; flex:1; min-width:180px; padding:20px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center;">
-    <h3 style="margin:0; font-size:1.1em; color:#666;">Participants</h3>
-    <p style="margin:10px 0 0; font-size:1.8em; font-weight:600; color:#2a5d9f;">1,426</p>
-  </div>
-  <!-- Visits -->
-  <div style="background:#f9f9f9; flex:1; min-width:180px; padding:20px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center;">
-    <h3 style="margin:0; font-size:1.1em; color:#666;">Total Visits</h3>
-    <p style="margin:10px 0 0; font-size:1.8em; font-weight:600; color:#2a5d9f;">2,207</p>
-    <p style="margin:10px 0 0; font-size:0.9em; color:#444;">V01: 1,426 | V02: 660 | V03: 121</p>
-  </div>
-  <!-- By Sex -->
-  <div style="background:#f9f9f9; flex:1; min-width:180px; padding:20px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center;">
-    <h3 style="margin:0; font-size:1.1em; color:#666;">By Sex (V02/V03)</h3>
-    <p style="margin:10px 0 0; font-size:1.4em; font-weight:600; color:#2a5d9f;">
-      ♀ 328 &nbsp; | &nbsp; ♂ 338
-    </p>
-  </div>
-</div>
-
-<br>
-
------------------------
-
 
 ## Version: R1.1
 
