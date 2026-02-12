@@ -1,0 +1,26 @@
+/* BUTTONS WITH LINKS */ 
+.button-link-wrapper {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.2em;
+}
+.button-link {
+  display: inline-block;
+  background-color: #00d7d75c !important;
+  color: #0d47a1;
+  font-weight: 500;
+  font-size: 0.9em;
+  padding: 5px 18px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button-link:hover {
+  background-color: #00d7d7af !important;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.button-link i {
+  margin-left: 6px;
+}

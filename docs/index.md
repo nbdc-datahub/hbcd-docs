@@ -2,6 +2,21 @@
   <img src="images/logo_HBCD_final.png" alt="HBCD Study logo" width="450">
 </p>
 
+<p style="text-align:center; margin-top: 10px;">
+  <span style="
+    display:inline-block;
+    background-color: #00d7d7af;
+    color:#444;
+    font-size:1.1em;
+    font-weight:600;
+    padding:6px 14px;
+    border-radius:20px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;">
+    Data Release 2.0
+  </span>
+</p>
+
 <p style="text-align: center; font-size: 1.6em; font-weight: 500; line-height: 1.2em;">
   Welcome to the Data Release Documentation for the<br>
   HEALthy Brain and Child Development (<b>HBCD</b>) Study!
@@ -24,22 +39,11 @@
   (<a href="https://hbcdstudy.org/">hbcdstudy.org</a>) for comprehensive information about the study.
 </p>
 
-<p></p>
-
-<p style="text-align: center; font-size: 1.3em; margin-top: 25px;">
+<p class="button-link-wrapper">
   <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study"
-     style="display: inline-block; 
-            background-color: #e3f2fd; 
-            color: #0d47a1;
-            font-weight: 500; 
-            font-size: 1em; 
-            padding: 10px 18px; 
-            border-radius: 8px; 
-            text-decoration: none; 
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: background-color 0.3s, transform 0.2s;">
-    HBCD Study on NBDC Data Hub 
-    <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px;"></i>
+     class="button-link">
+    HBCD Study on NBDC Data Hub
+    <i class="fa-solid fa-up-right-from-square"></i>
   </a>
 </p>
 

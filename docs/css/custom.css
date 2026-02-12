@@ -72,14 +72,13 @@
   text-underline-offset: 2px;
   text-decoration-thickness: thin; 
   text-decoration-thickness: 0.3px; 
-  background-color: rgba(0, 102, 204, 0.031); /* Add slight color box around text with embedded links too */
   padding: 0 2px;
   border-radius: 2px;
   transition: background-color 0.2s ease;
 }
 .rst-content a:hover:not(.rst-footer-buttons a):not(:has(img)) {
-  background-color: rgba(0, 102, 204, 0.15);
   text-decoration: underline;
+  color: #0066cca7;
 }
 
 /* Inline code styling */
@@ -205,49 +204,6 @@ pre.helper-code code {
     padding: 5px;
     font-size: 14px;
   }
-
-/* BUTTONS WITH LINKS */ 
-.button-link {
-  display: inline-block;
-  background-color: #EBDDF9;
-  color: #3e3e3e !important;
-  font-family: Lato;
-  padding: 10px 10px;
-  text-decoration: none;
-  border-radius: 20px;
-
-  border: none;     
-  outline: none;   
-  box-shadow: none; 
-
-  font-size: 1.0rem;
-  transition: background-color 0.2s ease;
-}
-
-.button-link a {
-  background-color: none !important;
-  color: #3e3e3e !important;
-  text-decoration: none !important;
-}
-.button-link a:hover {
-  background-color: none !important;
-  color: #3e3e3e !important;
-  text-decoration: none !important;
-}
-.button-link:link,
-.button-link:visited,
-.button-link:hover,
-.button-link:active {
-  color: #3e3e3e !important;
-  text-decoration: none !important;
-}
-.button-link:hover {
-  color: #3e3e3e !important;
-  background-color: #e2c4ff;
-  text-decoration: none !important;
-}
-
-
 
 /* Instrument pages overview info (table name, construct, full name) */
 .info-block {

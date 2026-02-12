@@ -77,28 +77,24 @@
     left: 50%;                /* Center horizontally */
     transform: translateX(-50%);
     margin-top: 5px;
-
-    bottom: auto;             /* Ensure no conflict with vertical position */
-    right: auto;              /* Ensure no conflict with horizontal position */
-
-    width: auto;              /* Allow width to expand as needed */
-    max-width: 90vw;          /* Keep it responsive */
-    white-space: normal;      /* Allow wrapping */
-    word-wrap: break-word;    /* Ensure long words wrap */
+    bottom: auto;
+    right: auto;
+    width: auto;
+    max-width: 90vw;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
-/* Position the tooltip above the element */
+/* TOOLTIP ABOVE ELEMENT */
 .tooltip-top .tooltiptext {
-    bottom: 100%;              /* Place directly above the element */
-    left: 50%;                 /* Center horizontally */
+    bottom: 100%;              /* places directly above the element */
+    left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 5px;        /* Add spacing between element and tooltip */
-
-    top: auto;                 /* Ensure no conflict with vertical position */
-    right: auto;               /* Ensure no conflict with horizontal position */
-
-    width: auto;               /* Allow width to expand as needed */
-    max-width: 90vw;           /* Keep it responsive */
-    white-space: normal;       /* Allow wrapping */
-    word-wrap: break-word;     /* Ensure long words wrap */
+    margin-bottom: 5px;        /* spacing between element and tooltip */
+    top: auto;
+    right: auto;
+    width: auto;
+    max-width: 90vw;
+    white-space: normal;
+    word-wrap: break-word;
 }
