@@ -70,19 +70,31 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
   </div>
 </div>
 
-### 2.0 New Participant Data 
+<h4>Below are the key changes made in Release 2.0 - click to expand each section for details.</h4>
 
-1. **Multiple Birth Participants**: multiple participants from the same birth (e.g. twins)
-1. **Postnatal Recruits (PNR)**: joined the study after the child is born (complete a modified V01 and V02)
-
-### 2.0 New Study Instruments/Measures
-
-Approximately **40 new study instruments/measures** have been added across study domains (*click section below to expand*):
+<div id="2.0-cohorts" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-user-group"></i></span>
+  <span class="text-with-link">
+  <span class="text">New Participant Cohorts: Inclusion of Multiple Birth + PNR</span>
+  <a class="anchor-link" href="#2.0-cohorts" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>
+<ol>
+<li><strong>Multiple Birth Participants</strong>: multiple participants from the same birth (e.g. twins)</li>
+<li><strong>Postnatal Recruits (PNR)</strong>: joined the study after the child is born (complete a modified V01 and V02)</li>
+</ol>
+</p>
+</div>
 
 <div id="2.0-new-tables" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-plus"></i></span>
+  <span class="emoji"><i class="fa-solid fa-table"></i></span>
   <span class="text-with-link">
-  <span class="text">New Study Instruments/Measures By Domain</span>
+  <span class="text">+ 40 New Instruments/Measures Across 8 Domains</span>
   <a class="anchor-link" href="#2.0-new-tables" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -170,29 +182,35 @@ Approximately **40 new study instruments/measures** have been added across study
 </tbody>
 </table>
 </div>
-<p></p>
 
-### 2.0 MRI & EEG Updates
-
-#### Cross-Modality Updates (MRI & EEG)
-
-- **Full Raw BIDS Inclusion**: All raw BIDS data are now included for both MRI and EEG (previously, only raw data that passed initial raw-data quality control were released).
-- **Additional participant- and visit-level data** 
-
-#### MRI-Specific Updates
-
-<b>Enhanced <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV</a> Metadata</b>    
-The session-level <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files now include detailed scanner metadata, including: `ScannerManufacturer`, `ScannerModel`, `ScannerSoftwareVersion`, and `ScannerSerialNumber` (enables differentiation of multiple scanners within the same site).   
-**Processed Data Exclusion Criteria Updated**   
-New procedures have been implemented to remove MRI derivatives with serious data quality issues.
-See: [MR Exclusion Criteria](../instruments/mri/exclusion-criteria.md#processed-data-exclusion-criteria) for full details.
-
-### 2.0 Resolved Known Issues
+<div id="2.0-mri-eeg" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-brain"></i></span>
+  <span class="text-with-link">
+  <span class="text">MRI & EEG: New processed derivatives, full raw BIDS inclusion, & scanner metadata</span>
+  <a class="anchor-link" href="#2.0-mri-eeg" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p><b>Cross-Modality Updates (MRI &amp; EEG)</b></p>
+<ul>
+<li><strong>Full Raw BIDS Inclusion</strong>: All raw BIDS data are now included for both MRI and EEG (previously, only raw data that passed initial raw-data quality control were released).</li>
+<li><strong>Additional participant- and visit-level data</strong> </li>
+</ul>
+<p><b>MRI-Specific Updates</b></p>
+<ul>
+<li><b>Enhanced <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV</a> metadata</b>: The session-level <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files now include detailed scanner metadata, including: <code>ScannerManufacturer</code>, <code>ScannerModel</code>, <code>ScannerSoftwareVersion</code>, and <code>ScannerSerialNumber</code> (enables differentiation of multiple scanners within the same site).   </li>
+<li><strong>Processed data exclusion criteria updated</strong>: New procedures have been implemented to remove MRI derivatives with serious data quality issues.
+See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion-criteria">MR Exclusion Criteria</a> for full details.</li>
+</ul>
+</div>
 
 <div id="r2.0res-KI" class="table-banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
   <span class="text-with-link">
-  <span class="text">2.0 Resolved Known Issues - <i>Click to Expand</i></span>
+  <span class="text">10+ Resolved Known Issues</span>
   <a class="anchor-link" href="#r2.0res-KI" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -286,6 +304,41 @@ See: [MR Exclusion Criteria](../instruments/mri/exclusion-criteria.md#processed-
 </tr>
 </tbody>
 </table>
+</div>
+
+<br>
+
+-----------------------
+
+
+## Version: R1.1
+
+<div style="background:#f2f6fc; padding:12px 20px; border-radius:10px; text-align:center; margin-bottom:25px; box-shadow:0 2px 4px rgba(0,0,0,0.05);">
+  <span style="font-size:1.1em; font-weight:600; color:#2a5d9f;">
+    <i class="fa-solid fa-calendar" style="margin-right:8px; vertical-align: 1px;"></i>
+    Release Date: 2025-10-10
+  </span>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0;">
+  <!-- Participants -->
+  <div style="background:#f9f9f9; flex:1; min-width:180px; padding:20px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center;">
+    <h3 style="margin:0; font-size:1.1em; color:#666;">Participants</h3>
+    <p style="margin:10px 0 0; font-size:1.8em; font-weight:600; color:#2a5d9f;">1,426</p>
+  </div>
+  <!-- Visits -->
+  <div style="background:#f9f9f9; flex:1; min-width:180px; padding:20px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center;">
+    <h3 style="margin:0; font-size:1.1em; color:#666;">Total Visits</h3>
+    <p style="margin:10px 0 0; font-size:1.8em; font-weight:600; color:#2a5d9f;">2,207</p>
+    <p style="margin:10px 0 0; font-size:0.9em; color:#444;">V01: 1,426 | V02: 660 | V03: 121</p>
+  </div>
+  <!-- By Sex -->
+  <div style="background:#f9f9f9; flex:1; min-width:180px; padding:20px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center;">
+    <h3 style="margin:0; font-size:1.1em; color:#666;">By Sex (V02/V03)</h3>
+    <p style="margin:10px 0 0; font-size:1.4em; font-weight:600; color:#2a5d9f;">
+      ♀ 328 &nbsp; | &nbsp; ♂ 338
+    </p>
+  </div>
 </div>
 
 <br>
