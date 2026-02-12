@@ -5,3 +5,5 @@ scratch/
 __pycache__/
 .vscode/
 make_tables/
+tools/
+local/
