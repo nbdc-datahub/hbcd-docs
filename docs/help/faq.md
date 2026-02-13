@@ -116,7 +116,7 @@
   <tr>
     <td><a href="../../access/download/#explore-download-hbcd-study-data">Data Dictionary Explorers</a></td>
     <td style="word-wrap: break-word; white-space: normal;">
-      Data dictionary explorers available through the NBDC Data Access Platform and DEAP show survey questions and response options (see related <a href="../../changelog/knownissues/#instruction-metadata-caution-please-read-carefully">known issue</a>).
+      Data dictionary explorers available through the NBDC Data Access Platform and DEAP show survey questions and response options.
     </td>
   </tr>
   <tr>
