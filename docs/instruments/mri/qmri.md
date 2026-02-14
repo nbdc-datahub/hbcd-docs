@@ -48,6 +48,7 @@ Quantitative MRI release data include **file-based** (raw and processed data fil
 </div>
 <div class="table-collapsible-content">
 <p>qMRI files are located under the <code>anat/</code> directory along with anatomical MRI files, including QALAS and localizer files (<code>acq-mrsLocAx</code> and <code>acq-mrsLocCor</code> indicate axial and coronal localizers, respectively). <i>See <a href="../../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -73,6 +74,7 @@ hbcd/
 </div>
 <div class="table-collapsible-content">
 <p>Quantitative MRI data was processed through two pipelines, SyMRI and qMRI PostProc. <a href="https://syntheticmr.com/products/symri-neuro/">SyMRI</a>, a proprietary software for quantitative MRI, is used to generate T1w and T2w images and derived relaxometry maps from <a href="https://pubmed.ncbi.nlm.nih.gov/25526880/">QALAS</a> brain images. These outputs are then minimally preprocessed by <a href="https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html">qMRI PostProc</a>.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 

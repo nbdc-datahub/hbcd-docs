@@ -37,6 +37,7 @@ MRS release data include both **file-based** (raw and processed data files in mo
 </div>
 <div class="table-collapsible-content">
 <p>MRS files include metabolite (<code>*_svs.nii.gz</code>) and water reference (<code>*_ref.nii.gz</code>) data acquired via short-echo-time (TE = 35 ms; <code>acq-shortTE</code>) and HERCULES (spectral-edited, TE = 80 ms; <code>acq-hercules</code>). The JSON sidecar files include the dimensions of the NIfTI-MRS data array, holding different coil elements in dimension 5 and different transients in dimension 6. <i>See <a href="../../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -62,6 +63,7 @@ hbcd/
 </div>
 <div class="table-collapsible-content">
 <p>Only the <code>HERCULES/</code> file tree is displayed below. The <code>unedited/</code> files generally follow similar naming conventions, with some exceptions (e.g., the BIDS field <code>acq-shortTE</code> is used instead of <code>acq-hercules</code>). <b>See <a href="#osprey-mrs-output-user-guide">Osprey MRS Output User Guide</a> on this page for usage guidance.</b></p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 

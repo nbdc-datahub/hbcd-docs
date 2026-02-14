@@ -33,6 +33,7 @@ Diffusion MRI release data include both **file-based** (raw and processed data f
 </div>
 <div class="table-collapsible-content">
 <p>Raw diffusion files include DWI runs (<code>*_dwi.nii.gz</code>), magnitude (<code>bval</code>) and orientation (<code>bvec</code>) of the diffusion gradients for each volume, and single-band reference files (<code>*_sbref.nii.gz</code>), all acquired in AP and PA phase encoding directions (<code>dir-&lt;AP|PA&gt;</code>). <i>See <a href="../../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -58,6 +59,7 @@ hbcd/
 </div>
 <div class="table-collapsible-content">
 <p><a href="https://qsiprep.readthedocs.io/">QSIPrep</a> preprocesses data to feed into QSIRecon reconstruction workflows. See <a href="#data-processing">Data Processing</a> for details.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -100,6 +102,7 @@ hbcd/
 </div>
 <div class="table-collapsible-content">
 <p><a href="https://qsirecon.readthedocs.io/">QSIRecon</a> has separate derivative folders for each reconstruction workflow. The <code>qsirecon/</code> folder itself contains only a log folder with metadata for the reconstruction workflows executed. See the following sections for workflow-specific outputs stored in self-contained derivatives folders and <a href="#data-processing">Data Processing</a> for details.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -124,6 +127,7 @@ hbcd/
 </div>
 <div class="table-collapsible-content">
 <p>QSIRecon-DSIStudio runs <a href="https://dsi-studio.labsolver.org/">DSI Studio</a> to generate DTI maps. See <a href="#data-processing">Data Processing</a> for details.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
@@ -198,6 +202,7 @@ Entries marked <b>(no L/R)</b> are midline or bilateral structures; those marked
 </div>
 <div class="table-collapsible-content">
 <p>QSIRecon-DIPYDKI runs <a href="https://dipy.org/">DIPY</a> to generate DKI maps. See <a href="#data-processing">Data Processing</a> for details.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
@@ -229,6 +234,7 @@ hbcd/
 </div>
 <div class="table-collapsible-content">
 <p><a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> calculates MAP-MRI and Tensor fits and scalar maps. See <a href="#data-processing">Data Processing</a> for details.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
