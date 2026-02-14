@@ -9,9 +9,11 @@
 <div class="notification-static-content">
 <p> 
 • <a href="..">Overview & MR Protocols</a><br>
-• <a href="../qc">Quality Control Procedures</a><br>
+• <a href="../qc/">Quality Control Procedures</a><br>
+• <a href="../mri-proc/">MRI Processing & Derivatives Guide</a>
 </p>
 </div>
+
 
 ## Release Data
 

@@ -49,7 +49,7 @@
 <b>Processed Imaging Data (Derivatives):</b> 
 <ul>
 <li>.</li>
-<li>Processing pipelines, such as <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a> (for structural and functional MRI) and <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> (for diffusion MRI), produce visual reports that can help guide data selection.</li>
+<li>Processing pipelines, such as <a href="../../instruments/mri-proc#xcp-d" target="_blank">XCP-D</a> (for structural and functional MRI) and <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> (for diffusion MRI), produce visual reports that can help guide data selection.</li>
 <li>Visual QC is performed on these reports using <a href="../../instruments/mri/brainswipes/">BrainSwipes</a>, and the results are available as <a href="../../datacuration/phenotypes">tabulated data</a>.</li>
 </ul>
 </div>
