@@ -71,6 +71,7 @@ Functional MRI release data include both **file-based** (raw and processed data 
 </div>
 <div class="table-collapsible-content">
 <p>BOLD functional resting state data are located under <code>func/</code>. Each BOLD run has an associated pair of EPI fieldmaps acquired for distortion correction under <code>fmap/</code> in AP and PA (<code>dir-&lt;AP|PA&gt;</code>) phase encoding directions. <strong>Siemens, GE, and Philips additionally include B1 fieldmaps</strong> - see <a href="https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html">qMRI BIDS specifications</a> for details. <i>See <a href="../../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -97,7 +98,8 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>MRIQC extracts image quality metrics (IQMs) from functional MRI data and also generates visual <code>.html</code> reports.<br><a href="https://mriqc.readthedocs.io/en/latest/about.html"><i class="fa-solid fa-book"></i> Go to pipeline documentation</a></p>
+<p>MRIQC extracts image quality metrics (IQMs) for each BOLD run and generates visual <code>.html</code> reports (view <a href="https://mriqc.readthedocs.io/en/latest/about.html">pipeline documentation</a>).</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -160,7 +162,7 @@ hbcd/
 </div>
 
 ## Data Processing
-Functional MRI data is processed through [infant-fMRIPrep](https://nibabies.readthedocs.io/en/latest/) and subsequently [XCP-D](https://xcp-d.readthedocs.io/en/latest/usage.html) - **see the [MRI Processing & Derivatives Guide](mri-proc.md) for details.** 
+Functional MRI data is processed through [Infant-fMRIPrep](https://nibabies.readthedocs.io/en/latest/) and subsequently [XCP-D](https://xcp-d.readthedocs.io/en/latest/usage.html) - **see the [MRI Processing & Derivatives Guide](mri-proc.md) for details.** 
 
 ## Quality Control Summary Statistics
 

@@ -34,6 +34,7 @@ Structural MRI release data include both **file-based** (raw and processed data 
 </div>
 <div class="table-collapsible-content">
 <p>Anatomical files include T1- and T2-weighted MRI images with accompanying sidecar JSONS for metadata. <i>See <a href="../../../datacuration/file-based-data/#bids-conversion-procedures">BIDS Conversion Procedures</a>.</i></p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ rawdata/ 
@@ -58,7 +59,8 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>MRIQC extracts image quality metrics (IQMs) from structural data (T1w and T2w) and also generates visual <code>.html</code> reports. See the <a href="https://mriqc.readthedocs.io/">pipeline documentation</a> for a full explanation of derivatives.</p>
+<p>MRIQC extracts image quality metrics (IQMs) for each T1w/T2w and generates visual <code>.html</code> reports (view <a href="https://mriqc.readthedocs.io/en/latest/about.html">pipeline documentation</a>).</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -86,6 +88,7 @@ hbcd/
 </div>
 <div class="table-collapsible-content">
 <p>The Brain MRI Enhancement foundation (BME-X) model pipeline performs motion correction, resolution enhancement, denoising, and harmonization of MR images. Derivatives include enhanced T1w/T2w images (head: <code>desc-preproc</code> and brain: <code>desc-enhanced</code>) and associated brainmasks. See the <a href="https://brain-mri-enhancement.readthedocs.io/en/latest/#outputs">pipeline documentation</a> for more information.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 

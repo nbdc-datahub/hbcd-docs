@@ -1,4 +1,4 @@
-# HBCD MR Quality Control Procedures
+# HBCD Raw MR Quality Control Procedures
 
 ## Raw MR Data QC
 <div id="scanstsv" class="warning-banner" onclick="toggleCollapse(this)">
@@ -302,7 +302,8 @@ Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediatel
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Protocol Compliance</strong></p>
+<p><strong>Protocol Compliance</strong><br>
+All raw data first undergo protocol compliance and completeness checks. Data that fail these checks are flagged for review and are not included in the release until resolved. This involves the following:</p>
 <ul>
     <li>Extract imaging parameters from DICOM headers</li>
     <li>Confirm key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner</li>

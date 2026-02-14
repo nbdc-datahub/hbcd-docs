@@ -240,7 +240,8 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>FreeSurfer outputs, generated as part of Infant-fMRIPrep pipeline processing, are included in the data release within the <code>freesurfer/</code> folder of the derivatives. See <a href="../../instruments/mri/fmri/#fs-mcribs">M-CRIB-S & FreeSurfer Source Directories</a> for details. M-CRIB-S, a surface reconstruction method optimized for neonates, is used in place of FreeSurfer for processing. The FreeSurfer files are derived from the M-CRIB-S outputs, which are converted and remapped into FreeSurfer-compatible format.</p>
+<p>FreeSurfer outputs, generated as part of Infant-fMRIPrep pipeline processing, are included in the data release within the <code>freesurfer/</code> folder of the derivatives. However, note that an alternative surface reconstruction workflow optimized for neonates, M-CRIB-S, is used in place of FreeSurfer for processing visit V02 data. The V02 FreeSurfer files are therefore derived from the M-CRIB-S outputs, remapped into FreeSurfer-compatible format.<br>
+See <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> for details.</p>
 </div>
 
 <div id="faq-raw" class="notification-banner" onclick="toggleCollapse(this)">
@@ -288,7 +289,7 @@
 <div id="faq-qc" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
-    <span class="text">Why are certain QC scores available for only a subset of imaging data?</span>
+    <span class="text">Why are manual raw data QC scores available for only a subset of imaging data?</span>
     <a class="anchor-link" href="#faq-qc" title="Copy link">
     <i class="fa-solid fa-link"></i>
     </a>
@@ -296,33 +297,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Quality control (QC) metrics derived from automated and manual raw data QC procedures (described in the section <a href="../../instruments/mri/qc/#raw-mr-data-qc">Raw MR Data QC</a>) are provided for each scan in the session-level <code>sub-{ID}_ses-{V0X}_scans.tsv</code> file. A sampling approach was used to select a subset of data for manual review based on the automated QC metrics. Therefore, while automated QC metrics are available for all scans, not all will include manual QC metrics in the <code>scans.tsv</code> file. Also note that although the <code>QC</code> field is the overall manual QC score of 1 (pass) or 0 (fail), this field will automatically have a score of 1 if only automated QC was performed.</p>
-</div>
-
-<div id="faq-qcrec" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text-with-link">
-    <span class="text">Which imaging data are recommended for analysis?</span>
-    <a class="anchor-link" href="#faq-qcrec" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-    </a>
-    </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="notification-collapsible-content">
-<p>All imaging data are provided in the release data, including data that failed raw data quality control (QC) (and compliance checks?). To help researchers make informed decisions, QC metrics are provided in various formats:</p>
-<b>Raw Imaging Data:</b> 
-<ul>
-<li>QC metrics for raw data are available in the <code>sub-{ID}_ses-{V0X}_scans.tsv</code> file within each subject session folder under <code>rawdata/</code>.</li>
-<li>Additional exclusion criteria include <a href="../../instruments/mri/qc/#data-release-eligibility-criteria">acquisition parameter checks</a> and <a href="../../instruments/processing/#file-selection-for-processing">processing pipeline requirements</a>.</li>
-<li>Structural and functional MRI data undergo MRIQC processing to generate image quality metrics. See the <a href="../../instruments/mri/smri/#mriqc">sMRI</a> and <a href="../../instruments/mri/fmri/#mriqc">sMRI</a> MRIQC derivatives</a> for more information. Researchers may use these outputs for further curation if desired.</li>
-</ul>
-<b>Processed Imaging Data (Derivatives):</b> 
-<ul>
-<li>Raw data that pass QC are processed through pipelines that generate analysis-ready derivatives - see <a href="../../instruments/processing/#file-selection-for-processing" target="_blank">File Selection for Processing</a>.</li>
-<li>Processing pipelines, such as <a href="../../instruments/mri/fmri/#xcpd" target="_blank">XCP-D</a> (for structural and functional MRI) and <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> (for diffusion MRI), produce visual reports that can help guide data selection.</li>
-<li>Visual QC is performed on these reports using <a href="../../instruments/mri/brainswipes/">BrainSwipes</a>, and the results are available as <a href="../../datacuration/phenotypes">tabulated data</a>.</li>
-</ul>
+<p>Quality control (QC) metrics derived from automated and manual raw data QC procedures (described in the section <a href="../../instruments/mri/qc/#raw-mr-data-qc">Raw MR Data QC</a>) are provided for each scan in session-level <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files. A sampling approach was used to select a subset of data for manual review based on the automated QC metrics. Therefore, while <b>automated</b> QC metrics are available for all scans, not all will include <b>manual</b> QC metrics. Also note that although the <code>QC</code> field is the overall manual QC score of 1 (pass) or 0 (fail), this field will automatically have a score of 1 if only automated QC was performed.</p>
 </div>
 
 <div id="faq-fov" class="notification-banner" onclick="toggleCollapse(this)">
