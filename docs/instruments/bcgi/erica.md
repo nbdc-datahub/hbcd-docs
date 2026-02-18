@@ -225,26 +225,26 @@ Next, the script checks on the 'Codes' form, where a similar logic would ensue.
 <li>If initial data entry form is '<em>Complete/All</em>' or '<em>Complete/Partial</em>' and DDE form is '<em>In progress</em>' or not started ('Data Entry' is 'Null'), a note is added to all fields saying &quot;<em>Data in 'Codes' form but no DDE done</em>&quot;.</li>
 </ul>
 <h3 id="logic-tree">Logic Tree</h3>
-<h4 id="reliability-checks">Reliability Checks</h4>
+<h4 id="reliability-checks">Reliability Form Checks</h4>
 <ul>
-<li><strong>Step 1. Check Reliability Administration Status</strong><ul>
-<li>If <strong>Status = None</strong> → Skip following steps and go to Codes form Step 1  </li>
-<li>OR If <strong>Status = All or Partial</strong> → Proceed to Step 2</li>
+<li><strong>Step 1. Check Reliability Administration status</strong><ul>
+<li>If <strong>status = None</strong> → Skip following steps and go to Codes form Step 1  </li>
+<li>OR If <strong>status = All or Partial</strong> → Proceed to Step 2</li>
 </ul>
 </li>
-<li><strong>Step 2. Check Reliability Data Entry Status</strong><ul>
-<li>If <strong>Status = In Progress or Null</strong> → Skip following steps and go to Codes form Step 1  </li>
-<li>OR If <strong>Status = Complete</strong> → Proceed to Step 3</li>
+<li><strong>Step 2. Check Reliability Data Entry status</strong><ul>
+<li>If <strong>status = In Progress or Null</strong> → Skip following steps and go to Codes form Step 1  </li>
+<li>OR If <strong>status = Complete</strong> → Proceed to Step 3</li>
 </ul>
 </li>
-<li><strong>Step 3. Check DDE Administration Status</strong><ul>
-<li>If <strong>Status = None or Null</strong> → Add note: &quot;Data in Reliability form, but no DDE done&quot; → Stop  </li>
-<li>OR If <strong>Status = All or Partial</strong> → Proceed to Step 4</li>
+<li><strong>Step 3. Check DDE Administration status</strong><ul>
+<li>If <strong>status = None or Null</strong> → Add note: &quot;Data in Reliability form, but no DDE done&quot; → Stop  </li>
+<li>OR If <strong>status = All or Partial</strong> → Proceed to Step 4</li>
 </ul>
 </li>
-<li><strong>Step 4. Check DDE Data Entry Status</strong><ul>
-<li>If <strong>Status = In progress</strong> → Add note: &quot;Data in Reliability form but no DDE done&quot; → Stop</li>
-<li>OR If <strong>Status = Complete</strong> → Proceed to Step 5</li>
+<li><strong>Step 4. Check DDE Data Entry status</strong><ul>
+<li>If <strong>status = In progress</strong> → Add note: &quot;Data in Reliability form but no DDE done&quot; → Stop</li>
+<li>OR If <strong>status = Complete</strong> → Proceed to Step 5</li>
 </ul>
 </li>
 <li><strong>Step 5. Check conflicts per field</strong><ul>
@@ -258,26 +258,26 @@ Next, the script checks on the 'Codes' form, where a similar logic would ensue.
 <ul>
 <li><strong>Step 1. Check Administration status in Codes Form</strong>
   <ul>
-  <li>If <strong>Status = None</strong> → Stop process</li>
-  <li>OR If <strong>Status = All or Partial</strong> → Proceed to Step 2</li>
+  <li>If <strong>status = None</strong> → Stop process</li>
+  <li>OR If <strong>status = All or Partial</strong> → Proceed to Step 2</li>
   </ul>
 </li>
 <li><strong>Step 2. Check Data Entry status</strong>
   <ul>
-  <li>If <strong>Status = In Progress or Null</strong> → Stop process</li>
-  <li>OR If <strong>Status = Complete</strong> → Proceed to Step 3</li>
+  <li>If <strong>status = In Progress or Null</strong> → Stop process</li>
+  <li>OR If <strong>status = Complete</strong> → Proceed to Step 3</li>
   </ul>
 </li>
 <li><strong>Step 3. Check DDE Administration status</strong>
   <ul>
-  <li>If <strong>Status = None or Null</strong> (not started) → Add note "Data in 'Codes' form but no DDE done" to all fields</li>
-  <li>OR If <strong>Status = All or Partial</strong> → Proceed to Step 4</li>
+  <li>If <strong>status = None or Null</strong> (not started) → Add note "Data in 'Codes' form but no DDE done" to all fields</li>
+  <li>OR If <strong>status = All or Partial</strong> → Proceed to Step 4</li>
   </ul>
 </li>
 <li><strong>Step 4. Check DDE Data Entry status</strong>
   <ul>
-  <li>If <strong>Status = In Progress</strong> → Add note "Data in 'Codes' form but no DDE done" to all fields</li>
-  <li>OR If <strong>Status = Complete</strong> → Proceed to Step 5</li>
+  <li>If <strong>status = In Progress</strong> → Add note "Data in 'Codes' form but no DDE done" to all fields</li>
+  <li>OR If <strong>status = Complete</strong> → Proceed to Step 5</li>
   </ul>
 </li>
 <li><strong>Step 5. Check conflicts per field</strong>
