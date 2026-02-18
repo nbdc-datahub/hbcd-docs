@@ -165,12 +165,6 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </td>
 </tr>
 <tr>
-  <td>Healthhx</td>
-  <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">The field <code>pex_bm_health_preg__healthhx_002__01</code> ("Approximately how many weeks into your pregnancy were you when you found out that you were pregnant?") is blank.
-</td>
-</tr>
-<tr>
   <td>Healthv2 Preg</td>
   <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank. This will be addressed in a future release.</td>

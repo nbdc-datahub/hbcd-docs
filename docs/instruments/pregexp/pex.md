@@ -159,6 +159,8 @@ Out-of-range values were filtered (i.e. changed to "n/a") for the following Heal
   <tr><td><code>pex_bm_healthv2_inf_002__01</code></td><td>Calculated length at birth (cm)</td><td>30 - 130</td></tr>   
 </tbody>
 </table>
+<p><b>Blank Fields: <i>Health V1- Health History</i></b><br>
+Note that the field <code>pex_bm_health_preg__healthhx_002__01</code> ("Approximately how many weeks into your pregnancy were you when you found out that you were pregnant?") is currently blank, but will be populated in future releases.</p>
 </div>
 
 <div id="issues" class="issues-banner">
