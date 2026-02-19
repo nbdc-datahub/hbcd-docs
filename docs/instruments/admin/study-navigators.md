@@ -227,7 +227,7 @@ There are four options the Study Navigator can select to indicate actions taken,
       <td>Relevant study domain(s)</td>
         <td>
         biosensors; biospecimen_collection; eeg;
-        mri; observational_assessments; surveys
+        mri; observational_assessments; surveys; other
       </td>
     </tr>
     <tr>
@@ -243,46 +243,46 @@ There are four options the Study Navigator can select to indicate actions taken,
       <td>Pregnancy & labor</td>
       <td style="word-wrap: break-word; white-space: normal;">
         newborn_and_infant_care; labor_birth;
-        maternal_perinatal_health; postpartum_care
+        maternal_perinatal_health; postpartum_care; other
       </td>
     </tr>
     <tr>
       <td><code>CHILD_HEALTH_CHECKBOXES</code></td>
       <td>Child health</td>
       <td>
-        mental_health; physical_health; safety
+        mental_health; physical_health; safety; other
       </td>
     </tr>
     <tr>
       <td><code>PARENTS_GUARDIANS_CHECKBOXES</code></td>
       <td>Parent or guardians</td>
       <td>
-        mental_health; parenting; physical_health; safety
+        mental_health; parenting; physical_health; safety; other
       </td>
     </tr>
     <tr>
       <td><code>BROADER_FAMILY_HEALTH_CHECKBOXES</code></td>
       <td>Family health</td>
       <td>
-        caregiving; mental_health; physical_health; safety
+        caregiving; mental_health; physical_health; safety; other
       </td>
     </tr>
     <tr>
       <td><code>SOCIOECONOMIC_RESOURCES_CHECKBOXES</code></td>
       <td>Socioeconomic</td>
       <td>
-        childcare; financial; food_nutrition; housing; transportation
+        childcare; financial; food_nutrition; housing; transportation; other
       </td>
     </tr>
     <tr>
       <td><code>SUBSTANCE_USE_CHECKBOXES</code></td>
       <td>Substance use</td>
-      <td>SUD_behavioral_health_treatment; SUD_medical_treatment; SUD_recovery_resource</td>
+      <td>SUD_behavioral_health_treatment; SUD_medical_treatment; SUD_recovery_resource; other</td>
     </tr>
     <tr>
       <td><code>OTHER_CHECKBOXES</code></td>
       <td>Other</td>
-      <td>family_crisis; court_or_legal</td>
+      <td>family_crisis; court_or_legal; other</td>
     </tr>
   </tbody>
 </table>
