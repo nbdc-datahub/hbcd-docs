@@ -277,12 +277,12 @@ There are four options the Study Navigator can select to indicate actions taken,
     <tr>
       <td><code>SUBSTANCE_USE_CHECKBOXES</code></td>
       <td>Substance use</td>
-      <td></td>
+      <td>SUD_behavioral_health_treatment; SUD_medical_treatment; SUD_recovery_resource</td>
     </tr>
     <tr>
       <td><code>OTHER_CHECKBOXES</code></td>
       <td>Other</td>
-      <td></td>
+      <td>family_crisis; court_or_legal</td>
     </tr>
   </tbody>
 </table>
