@@ -24,7 +24,7 @@ During quality control, a frequently observed issue across all tasks was the irr
 
 <div style="display: flex; align-items: center; gap: 25px;">
 <div style="flex: 1;">
-<p>The <b>StimTracker</b> device, used during EEG acquisition for visits V03, V04, and V06, provides precise timing for auditory and visual stimulus onset and marks task start and end points. The EEG Core identified an <b>electrical artifact</b> in a subset of files caused by intermittent spikes from the device at both stimulus onset and offset.</p>
+<p>The <b>StimTracker</b> device used during EEG acquisition for visits V03, V04, and V06 provides precise timing for auditory and visual stimulus onset and marks task start and end points. The EEG Core identified an <b>electrical artifact</b> in a subset of files caused by intermittent spikes from the device at both stimulus onset and offset.</p>
 <p>To detect the artifact, the EEG Core developed a custom MATLAB script that averages all epochs per task and flags voltage fluctuations >1 µV in two time windows: onset (–10 to 10 ms) and offset (250 to 270 ms) of the voltage spike.<p>
 </div>
   <!-- Image on the right -->
@@ -37,7 +37,7 @@ During quality control, a frequently observed issue across all tasks was the irr
   </div>
 </div>
 
-Flagged files in the raw EEG data (40–50%) were visually inspected after preprocessing with the MADE pipeline by examining all channels averaged across all trials. If the artifact was still visible, the file was labeled as artifact-present. If it was no longer visible, the file was labeled as artifact-free, indicating adequate artifact removal. **After preprocessing, roughly 10% of V03 files retained the StimTracker artifact.**
+Flagged files in the raw EEG data (40–50%) were visually inspected after preprocessing with the MADE pipeline by examining all channels averaged across all trials. If the artifact was still visible, the file was labeled as artifact-present. If it was no longer visible, the file was labeled as artifact-free, indicating adequate artifact removal. **After preprocessing, ~10% of V03 files retained the StimTracker artifact.**
 
 To evaluate the impact of the StimTracker artifact on EEG derivatives, event-related potentials (ERPs) were generated for relevant regions and time windows - see <a href="../artifact/" target="_blank">Effects of Artifact on ERP Derivatives by Task</a> for details and figures displaying artifact-free and artifact-present waveforms across tasks and ROIs. Statistical comparisons of mean ERP component amplitudes between artifact-free and artifact-present files across tasks revealed only two significant differences, both in the T7T8 cluster for the standard and deviant conditions of the MMN after FDR correction. Difference waves (Predeviant–Deviant) showed no significant effects for the FCz or T7T8 clusters, and no significant differences were found in the VEP or FACEs tasks.
 
