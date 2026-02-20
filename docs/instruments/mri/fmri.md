@@ -54,6 +54,14 @@ Clipping severity can be estimated using the ratio of median to maximum image in
 </ul>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#imaging-eeg-data" target="_blank">see details</a>.</span>
+</div>
+
+<p></p>
+
+
 Functional MRI release data include both **file-based** (raw and processed data files in modality-specific formats) and **tabulated** (instrument and derived data in a standardized table format) data. <i>See <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details.</i>
 
  - <i class="fa fa-hammer"></i> <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> stored under subject- and session-specific <code>func/</code> and <code>fmap/</code> folders 
