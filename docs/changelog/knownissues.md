@@ -17,19 +17,19 @@ If you have questions or would like to report an issue, please submit a ticket t
 <td style="word-wrap: break-word; white-space: normal;">
 <b>'Sequence' Field</b><br>
 This field is included, but blank across all instruments and will be removed.</td>
-<td>2.1</td> 
+<td><b>2.1</b></td> 
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">
 <b>Instruction Metadata</b><br>
 Instruction text in each form’s metadata is automatically extracted from the most recent <code>instruction</code> field in the REDCap Data Dictionary (based on field order). Because this process is automated, it may produce the following issues: <b>(1)</b> If an instruction spans multiple fields, only the <b>last portion</b> will be captured and/or <b>(2)</b> Some fields may display text intended for a <b>previous section</b>. Until this is corrected, please refer to original forms for accurate instruction text.</td>
-<td>TBD</td> 
+<td><b>3.0+</b></td> 
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">
 <b> Implausible Values for Gestational Age Across Multiple Instruments</b><br>
 Several instruments contain implausible values for gestational age (<code>gestational_age</code>). This is currently under internal review and we will add more details as they become available.</td>
-<td>TBD</td> 
+<td><b>3.0+</b></td> 
 </tr>
 </tbody>
 </table>
@@ -46,7 +46,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <tbody>
 <tr>
   <td>Study Navigators</td>
-  <td><b>TBD</b></td> 
+  <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">The <b>SUBSTANCE_USE</b> and <b>OTHER</b> checkbox fields are blank and will be populated in the next release.</td>
 </tr>
 </tbody>
@@ -64,17 +64,17 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <tbody>
 <tr>
   <td>MAPS-TL Infancy<br><code>mh_cg_mapdb__inf</code></td>
-  <td><b>3.0</b></td> 
+  <td><b>3.0+</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">N=4 participants did not respond to any questions and should have a blank/null summary score, but instead have a score of 0. Users should convert these cases to blank/null prior to conducting their statistical analyses.</td>
 </tr>
 <tr>
   <td>MAPS-TL Toddlerhood<br><code>mh_cg_mapdb__tod</code></td>
-  <td><b>3.0</b></td> 
+  <td><b>3.0+</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">A subset of participants (N=16) are missing scores because pro-rated scoring for the Toddlerhood version has not yet been updated for cases with missing or 'Decline to answer' values.</td>
 </tr>
 <tr>
   <td>MAPS-TL<br><code>mh_cg_mapdb__*</code></td>
-  <td><b>3.0</b></td> 
+  <td><b>3.0+</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Notes appear in the score field and will be moved to a separate field in the next release.</td>
 </tr>
 </tbody>
@@ -92,7 +92,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <tbody>
 <tr>
   <td>Nails</td>
-  <td><b>3.0</b></td> 
+  <td><b>3.0+</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">The toxicology results variable <code>bio_bm_biosample_nails_results_Nail_type</code> has a value of 4 (Unknown) for all rows and can safely be ignored; nail type is provided in the specimen type table: <code>bio_bm_biosample_nails_typ_collection_nail_type</code>.</td>
 </tr>
 <tr>
@@ -115,7 +115,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <tbody>
 <tr>
   <td>MLDS<br><code>ncl_ch_mlds</code></td>
-  <td><b>3.0</b></td> 
+  <td><b>3.0+</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   The variable "total hours per week of non parental hours" (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The max plausible value for this variable is 168 hours; any observations greater than 168 are erroneous- please do not include these observations in your analysis.
   </td>
@@ -154,35 +154,8 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <tbody>
 <tr>
   <td>APA 1/2<br><code>pex_bm_apa</code></td>
-  <td><b>TBD</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">There are cases where APA Level 2 was administered against gating logic (e.g. for Repetitive Behavior despite there being missing Level 1 responses). As Level 2 administration was not expected, these are not scored (score = "No additional inquiry required") despite having Level 2 item responses present. The Level 2 item-level data will be removed in the future to prevent confusion.</td>
-</tr>
-<tr>
-  <td>Preg/Inf Health<br><code>pex_bm_health*</code></td>
-  <td><b>3.0</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">
-  ICD codes are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <i>Health V1- Medications</i>, while the <i>Health V2- Pregnancy</i> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>
-</td>
-</tr>
-<tr>
-  <td>Healthv2 Preg</td>
-  <td><b>TBD</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank. This will be addressed in a future release.</td>
-</tr>
-<tr>
-  <td>Healthv2 Preg</td>
-  <td><b>TBD</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">Note that the field for the date when PNV was stopped (<code>exp__pnv_007__01</code>) is blank, despite participants having reported stopping.</td>
-</tr>
-<tr>
-  <td rowspan="2">TLFB<br><code>pex_ch_tlfb</code></td>
   <td><b>2.1</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">
-  Weeks for postnatal recruits (<a href="../../instruments/demo/visitinfo#postnatal-recruits-pnr">PNR</a>) were mistakenly reported in the TLFB <b>versions 1</b> or <b>2</b> instead of <a href="../../instruments/pregexp/su/tlfb/#v3"><b>version 3</b> adapted for PNR</a>. These will be adjusted to <b>version 3</b> in the next release.</td>
-</tr>
-<tr>
-  <td><b>TBD</b></td> 
-  <td style="word-wrap: break-word; white-space: normal;">Select participants (N=8) were recruited postnatally, but not administered the V1 portion of the TLFB. When this was recognized, the participants were administered the TLFB at the next in-person visit, resulting in a longer recall period than specified in the protocol.</td>
+  <td style="word-wrap: break-word; white-space: normal;">There are cases where APA Level 2 was administered against gating logic (e.g. for Repetitive Behavior despite there being missing Level 1 responses). As Level 2 administration was not expected, these are not scored (score = "No additional inquiry required") despite having Level 2 item responses present. The Level 2 item-level data will be removed in the future to prevent confusion.</td>
 </tr>
 <tr>
   <td>EPDS<br><code>pex_bm_epds</code></td>
@@ -191,8 +164,35 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </tr>
 <tr>
   <td>EPDS<br><code>pex_bm_epds</code></td>
-  <td><b>TBD</b></td> 
+  <td><b>2.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Note that N=2 participants have an adjusted age of -1 at V02, which is biologically implausible and should be excluded from analyses.</td>
+</tr>
+<tr>
+  <td>Healthv2 Preg</td>
+  <td><b>3.0+</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank. This will be addressed in a future release.</td>
+</tr>
+<tr>
+  <td>Healthv2 Preg</td>
+  <td><b>3.0+</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Note that the field for the date when PNV was stopped (<code>exp__pnv_007__01</code>) is blank, despite participants having reported stopping.</td>
+</tr>
+<tr>
+  <td>Preg/Inf Health<br><code>pex_bm_health*</code></td>
+  <td><b>3.0+</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  ICD codes are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <i>Health V1- Medications</i>, while the <i>Health V2- Pregnancy</i> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>
+</td>
+</tr>
+<tr>
+  <td rowspan="2">TLFB<br><code>pex_ch_tlfb</code></td>
+  <td><b>2.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  Weeks for postnatal recruits (<a href="../../instruments/demo/visitinfo#postnatal-recruits-pnr">PNR</a>) were mistakenly reported in the TLFB <b>versions 1</b> or <b>2</b> instead of <a href="../../instruments/pregexp/su/tlfb/#v3"><b>version 3</b> adapted for PNR</a>. These will be adjusted to <b>version 3</b> in the next release.</td>
+</tr>
+<tr>
+  <td><b>3.0+</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">Select participants (N=8) were recruited postnatally, but not administered the V1 portion of the TLFB. When this was recognized, the participants were administered the TLFB at the next in-person visit, resulting in a longer recall period than specified in the protocol.</td>
 </tr>
 </tbody>
 </table>
@@ -237,7 +237,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <tbody>
 <tr>
   <td>EEG</td>
-  <td><b>2.1</b></td>
+  <td><b>3.0+</b></td>
   <td style="word-wrap: break-word; white-space: normal;">Three V04 sessions in the HBCD-MADE pipeline derivatives for FACE and MMN tasks  are missing corresponding tabulated data. File-based data should therefore be used for analyses. Impacted participant IDs are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>:<br>
   <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/eeg-missing-tabulated-MADE-outputs-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a></td>
 </tr>
@@ -249,7 +249,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
   The Data Dictionary available via the NBDC Dictionary Query Tool is correct.</td>
 </tr>
 <tr>
-<td><b>3.0</b></td> 
+<td><b>3.0+</b></td> 
 <td style="word-wrap: break-word; white-space: normal;">
 For HBCD imaging data with multiple runs, the <code>run-{X}</code> field may not reflect chronological acquisition order.  
 This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files converted to HBCD tabulated data</b> (<a href="../../datacuration/overview" target="_blank">see file type details</a>). Despite this, data remain internally consistent — e.g., run IDs match between raw and processed datasets.</td>
