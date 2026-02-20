@@ -219,7 +219,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 </tr>
 <tr>
   <td>C-PACEs<br><code>sed_bm_paces</code></td>
-  <td><b>TBD</b></td> 
+  <td><b>3.0+</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Summary scores are currently calculated as the sum of individual item responses rather than the average. This will be corrected in a future release. In the meantime, users may compute their own average-based summary scores using the item-level data provided in the dataset.</td>
 </tr>
 </tbody>
