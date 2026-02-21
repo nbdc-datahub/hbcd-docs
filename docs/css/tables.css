@@ -432,3 +432,32 @@ th, td {
   text-align: left;
   border-bottom: 1px solid #ccc;
 }
+
+
+/* Aligning icons in known issues tables */
+/* .table-cell-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.table-cell i {
+  font-size: 0.9em;
+  vertical-align: middle;
+} */
+
+.table-cell {
+  white-space: nowrap;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  margin-right: 0.4em;
+}
+
+.table-name {
+  white-space: normal;
+}

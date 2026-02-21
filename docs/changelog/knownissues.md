@@ -135,7 +135,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <tbody>
 <tr>
   <td>Growth<br><code>ph_ch_anthro</code></td>
-  <td><b>2.1</b></td> 
+  <td><b>3.0+</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">Ranges used to filter out-of-range  growth measurements (<a href="../../instruments/physhealth/growth/#warning" target="_blank">see details</a>) are not age-specific, leading to values that are within the valid range, but biologically implausible for the visit age. Filtering methods will be re-evaluated for the next release.</td>
 </tr>
 </tbody>
@@ -252,7 +252,7 @@ Several instruments contain implausible values for gestational age (<code>gestat
 <td><b>3.0+</b></td> 
 <td style="word-wrap: break-word; white-space: normal;">
 For HBCD imaging data with multiple runs, the <code>run-{X}</code> field may not reflect chronological acquisition order.  
-This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files converted to HBCD tabulated data</b> (<a href="../../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank">see details</a>). Despite this, data remain internally consistent — e.g., run IDs match between raw and processed datasets.</td>
+This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files converted to HBCD tabulated data</b> (<a href="../../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank">see details</a>). Despite this, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
 </tr>
 <tr>
 <td><b>2.1</b></td> 
@@ -263,3 +263,5 @@ There are 2 corrupted raw BIDS files (V02 bold runs under session-level <code>fu
 </tr>
 </tbody>
 </table>
+
+

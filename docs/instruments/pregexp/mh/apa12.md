@@ -36,7 +36,7 @@ The co-occurrence of psychiatric symptoms and substance use during pregnancy is 
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This data has known issues - <a href="../../../../changelog/knownissues/#pregnancy-exposure-including-substance-use" target="_blank">see details</a>.</span>
+  <span class="text">This data has known issues - <a href="../../../../changelog/knownissues/" target="_blank">see details</a>.</span>
 </div>
 
 ## Administration & Quality Control

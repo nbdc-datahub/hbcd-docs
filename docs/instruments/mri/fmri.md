@@ -56,7 +56,7 @@ Clipping severity can be estimated using the ratio of median to maximum image in
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#imaging-eeg-data" target="_blank">see details</a>.</span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/" target="_blank">see details</a>.</span>
 </div>
 
 <p></p>

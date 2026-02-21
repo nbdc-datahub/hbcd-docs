@@ -68,7 +68,7 @@ Beginning at V04, some information that was collected in the V01 Adult Demograph
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#social-environmental-determinants" target="_blank">see details</a>.</span>
+  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/" target="_blank">see details</a>.</span>
 </div>
 
 ## Administration & Quality Control
