@@ -434,7 +434,19 @@ th, td {
 }
 
 
-/* Aligning icons in known issues tables */
+/* KNOWN ISSUES TABLE */
+/* Domain row styling */
+.domain-row td {
+  padding-top: 0.6em;
+  padding-bottom: 0.1em;
+  font-size: 1.1em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  line-height: 0.9;
+}
+.domain-row strong {
+  font-weight: 600;
+}
+/* Align icons with text and style */
 .table-cell {
   white-space: nowrap;
 }
@@ -450,7 +462,7 @@ th, td {
   white-space: normal;
 }
 .issue-icon {
-  color: #d32f2f; 
+  color: #f97316; 
 }
 .pending-icon {
   color: #199bd6;;
