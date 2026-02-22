@@ -6,6 +6,7 @@
 }
 </style>
 
+# NEW VERSION OF PAGE WITH AUTOMATED PARSING FROM MONDAY.COM (includes known issues and pending updates)
 # Known Issues & Pending Updates 
 
 The following table outlines **known issues** (<i class="fas fa-bug issue-icon" title="Known Issue"></i>) relevant to the current release data and **pending updates** (<i class="fa-solid fa-clock pending-icon" title="Pending Update"></i>) across study instruments, organized by domain and including estimated release number for which the fix/update will be employed. This page will be updated as new issues are reported and updates are requested.
