@@ -53,7 +53,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">Sequence Field</span>
 </td>
@@ -80,7 +80,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">Nails</span>
 </td>
@@ -91,7 +91,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">Nails &amp; Urine</span>
 </td>
@@ -107,7 +107,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">MRI</span>
 </td>
@@ -123,7 +123,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">MLDS</span>
 </td>
@@ -139,7 +139,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">TLFB</span>
 </td>
@@ -150,7 +150,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">APA 1/2</span>
 </td>
@@ -161,7 +161,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">EPDS</span>
 </td>
@@ -177,7 +177,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">eHITS</span>
 </td>
@@ -188,7 +188,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">Demographics</span>
 </td>
@@ -199,7 +199,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">PACEs</span>
 </td>
@@ -215,7 +215,7 @@ If you have questions or would like to report an issue, please submit a ticket t
 
 <td class="table-cell">
 <span class="icon-wrapper">
-    <i class="fas fa-bug" title="Issue"></i>
+    <i class="fas fa-bug issue-icon" title="Issue"></i>
 </span>
 <span class="table-name">Study Navigators</span>
 </td>
