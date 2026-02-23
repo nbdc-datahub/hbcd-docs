@@ -28,7 +28,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>Z-Scores Excluded From Current Release</b><br>
+<p><b>Z-Scores Excluded</b><br>
 Because dates of birth are jittered and calculated chronologic and adjusted ages are ±7 days, we do not provide z-scores in the current data release. Further, <b>we do NOT recommend calculating z-scores using V02 data</b>. Caution is recommended when calculating Z-scores using data from subsequent visits. Future data releases will have z-scores calculated with age in days for investigators wanting to compare to normative growth metrics.</p>
 <p><b>Range Checks For Growth</b><br>
 Range checks were performed to identify and exclude extreme out-of-range values. Values outside of the following valid ranges were converted to 'n/a'. <i>Note that these ranges are not age-specific, i.e. the same ranges were used for all visits.</i></p>

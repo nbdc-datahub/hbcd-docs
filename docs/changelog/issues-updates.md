@@ -315,7 +315,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Multibirth Cohorts</td>
 <td style='word-wrap: break-word; white-space: normal;'>For Multibirth Sibling cohorts: (1) instrument fields will be populated where mising and (2) the Data Dictionary element <em>familyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
-<td style='text-align: center; font-weight: bold;'>TBD</td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 
 <tr class="domain-row-pending">
@@ -346,6 +346,11 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td class='table-cell' style='font-weight: bold;'>BISQ-SF</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
+</tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Growth</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of age-based z-scores to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Z-Scores Excluded</a>).</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ecPROMIS- Sleep</td>
