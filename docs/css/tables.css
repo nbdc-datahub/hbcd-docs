@@ -432,3 +432,19 @@ th, td {
   text-align: left;
   border-bottom: 1px solid #ccc;
 }
+
+
+/* KNOWN ISSUES TABLE - Domain rows styling */
+.compact-table-no-vertical-lines .domain-row-issue {
+  background-color: #ff8a42cc;
+  color: #695541ff;
+  font-weight: 600;
+}
+/* Pending Updates domain header */
+.compact-table-no-vertical-lines .domain-row-pending {
+  background-color: #199ad67e;
+  color: #003b56;
+  font-weight: 600;
+}
+
+

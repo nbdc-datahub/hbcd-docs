@@ -28,7 +28,7 @@
 <!-- INTERNAL NOTE: REMOVE MENTION OF THIS KNOWN ISSUE ONCE RESOLVED -->
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/#social-environmental-determinants" target="_blank">see details</a>.</span>
+  <span class="text">This data has known issues - <a href="../../../changelog/issues-updates/#known-issues" target="_blank">see details</a>.</span>
 </div>
 
 ## Administration & Quality Control
@@ -100,7 +100,7 @@
 <!-- INTERNAL NOTE: REMOVE MENTION OF THIS KNOWN ISSUE ONCE RESOLVED -->
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please see relevant <a href="../../../changelog/knownissues/#social-environmental-determinants" target="_blank">known issue for C-PACEs</a>.</span>
+  <span class="text">Please see relevant <a href="../../../changelog/issues-updates/#known-issues" target="_blank">known issue for C-PACEs</a>.</span>
 </div>
 <p>Item responses can range from <b>1 (Never)</b> to <b>5 (Very Often)</b>. The summary score is calculated as the average of responses to the 10 items (<code>sed_bm_paces_001</code> through <code>sed_bm_paces_010</code>), yielding scores from <b>1 to 5</b>, with higher scores indicating more protective experiences.<br>
 The summary score is calculated only if at least 7 items are completed, in which case the score is the average of the completed items. <b>If fewer than 7 items are completed</b> (i.e. 4 or more items have responses of ‘Decline to answer’ or ‘I don’t know’), <b>the summary score is set to missing</b>.</p>
