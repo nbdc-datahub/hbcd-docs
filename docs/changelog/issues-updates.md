@@ -102,7 +102,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Nails &amp; Urine</td>
 <td style='word-wrap: break-word; white-space: normal;'>Note that the data dictionary level values have quotes around them (for example; 1= "positive" instead of 1=positive), causing the downloaded data dictionary to have double quotes (e.g. 1=""positive"").</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
+<td style='text-align: center; font-weight: bold;'>TBD</td>
 </tr>
 
 <tr class="domain-row-issue">
@@ -130,11 +130,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='text-align: center; font-weight: bold;'>TBD</td>
 </tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>Run ID</td>
-<td style='word-wrap: break-word; white-space: normal;'>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
-<td style='text-align: center; font-weight: bold;'>3</td>
-</tr>
-<tr>
 <td class='table-cell' style='font-weight: bold;'>Sequence Field</td>
 <td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
@@ -146,13 +141,18 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MRI</td>
+<td style='word-wrap: break-word; white-space: normal;'>The sidecar JSONs for Myers-Labonte-parcellated structural measures in the tabulated XCP-D derivatives should have a <code>sub_domain</code> value of <code>Structural MRI</code>, not <code>Resting State fMR</code>: <code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>. The Data Dictionary available via the NBDC Dictionary Query Tool is correct.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>MRI</td>
 <td style='word-wrap: break-word; white-space: normal;'>There are 2 corrupted raw BIDS files (V02 bold runs under session-level <code>func/</code> folders of <code>rawdata/</code>) to be resolved. Impacted participant IDs/filepaths are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center; font-weight: bold;'>TBD</td>
 </tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>MRI</td>
-<td style='word-wrap: break-word; white-space: normal;'>The sidecar JSONs for Myers-Labonte-parcellated structural measures in the tabulated XCP-D derivatives should have a <code>sub_domain</code> value of <code>Structural MRI</code>, not <code>Resting State fMR</code>: <code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>. The Data Dictionary available via the NBDC Dictionary Query Tool is correct.</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
+<td class='table-cell' style='font-weight: bold;'>Run ID</td>
+<td style='word-wrap: break-word; white-space: normal;'>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 
 <tr class="domain-row-issue">
@@ -202,7 +202,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>APA 1/2</td>
 <td style='word-wrap: break-word; white-space: normal;'>There are cases where APA Level 2 was administered against gating logic (e.g. for Repetitive Behavior despite there being missing Level 1 responses). As Level 2 administration was not expected, these are not scored (score = "No additional inquiry required") despite having Level 2 item responses present. The Level 2 item-level data will be removed in the future to prevent confusion.</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
+<td style='text-align: center; font-weight: bold;'>TBD</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>EPDS</td>
@@ -308,11 +308,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 
 <tr>
-<td class='table-cell' style='font-weight: bold;'>Language</td>
-<td style='word-wrap: break-word; white-space: normal;'>Fields indicating language of administration will be included for all applicable instruments (including, but not limited to: Vineland and BISQ-SF).</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
-</tr>
-<tr>
 <td class='table-cell' style='font-weight: bold;'>Multibirth Cohorts</td>
 <td style='word-wrap: break-word; white-space: normal;'>For Multibirth Sibling cohorts: (1) instrument fields will be populated where mising and (2) the Data Dictionary element <em>familyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
@@ -337,6 +332,11 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='word-wrap: break-word; white-space: normal;'>Set percentile scores in <code>ncl_ch_cdiwgen</code> (with the exception of <code>percentile_both</code>) to data type=integer.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Vineland</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of language field to <code>ncl_cg_vabs</code>.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
 
 <tr class="domain-row-pending">
 <td colspan="3"><strong>PHYSICAL HEALTH</strong></td>
@@ -353,9 +353,9 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>Growth</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
+<td class='table-cell' style='font-weight: bold;'>Vision Screener</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results).</td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ecPROMIS- Sleep</td>
@@ -365,6 +365,16 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ecPROMIS-PAG</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of summary scores (Summed Score, T-score, and SE) to <code>ph_cg_pms__pags</code>. Until added, users can calculate summary scores themselves by following the Scoring Procedures documented on the instrument page.</td>
+<td style='text-align: center; font-weight: bold;'>3</td>
+</tr>
+
+<tr class="domain-row-pending">
+<td colspan="3"><strong>PREGNANCY &amp; EXPOSURE</strong></td>
+</tr>
+
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Growth</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 </tbody>

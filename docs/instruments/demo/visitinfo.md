@@ -91,16 +91,25 @@ General visit information includes site, project, and information about missed v
 
 ## Substance Use Flags
 
-Visit Level Data also includes **substance use flags**, which are single-summary variables that indicate substance use status (yes/no) based on any positive reports from the following instruments:
+**SU flags denote whether the participant met study-defined criteria for substance use for:** 
+
+ - Cannabis (`par_visit_data_su_flag_cannabis`)
+ - Nicotine (`par_visit_data_su_flag_nicotine`)
+ - Opioid (`par_visit_data_su_flag_opioid`)
+ - Alcohol (`par_visit_data_su_flag_alcohol`) (information from the ASSIST used to convert typical drinks into standard drinks) 
+ 
+**This information is derived based on any positive reports from the following instruments:**
 
  - The Timeline Follow Back (<a href="../../pregexp/su/tlfb" target="_blank">TLFB</a>) (self-reported use)
- - <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> when options 1 (*Neonatal Opioid Withdrawal Syndrome*) and/or 5 (*Fetal Alcohol Syndrome*) were selected for field `007` (self-reported use)
- - <a href="../../biospec/urine" target="_blank">USDTL urine toxicology results</a> (<i>note: <a href="../../biospec/nails" target="_blank">Nail toxicology results</a> were not used in the creation of the substance use flags</i>)
+ - <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> diagnosis of Neonatal Opioid Withdrawal Syndrome (NOWS) or Fetal Alcohol Syndrome (FAS) (self-reported use, field `007`)
+ - <a href="../../biospec/urine" target="_blank">USDTL urine toxicology results</a> (<i>note: <a href="../../biospec/nails" target="_blank">Nail toxicology results</a> will be integrated into creation of SU flags in the future</i>)
  
+ See [Gurka et. al, 2025](https://doi.org/10.1016/j.dcn.2024.101494) for additional information.
+
 <div id="su" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-table"></i></span>
+  <span class="emoji"><i class="fas fa-sliders"></i></span>
   <span class="text-with-link">
-  <span class="text">SU Visit Level Data Variables</span>
+  <span class="text">Thresholds of Prenatal Exposure</span>
   <a class="anchor-link" href="#su" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -108,84 +117,40 @@ Visit Level Data also includes **substance use flags**, which are single-summary
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
+<p>Thresholds of prenatal exposure used to assess enrollment goals for the HBCD Study are as follows. <b>For each substance, only one of the listed exposure thresholds must be met for substance use to be flagged as positive</b>.</p>
+
+<table class="compact-table-no-vertical-lines" style="width:100%; table-layout:fixed;"> 
+<thead> <tr> 
+<th>Substance</th>
+<th>Data Source</th>
+<th>Exposure Threshold - <i>Substance use flagged as positive if one or more of the associated criteria are met</i></th>
+</tr> </thead>
 <tbody>
 <tr>
-<td>par_visit_data_su_flag_alcohol</td>
-<td style="word-wrap: break-word; white-space: normal;">Rolled up Alcohol flag from Biological Mother across sources (Biospecimen, TLFB Self-report, Health V2 FAS)</td>
+<td rowspan="3"><strong>Opioids</strong></td>
+<td>TLFB</td>
+<td style="word-wrap: break-word; white-space: normal;">Self-reported use of prescribed (including medications for opioid use disorder) or illicit opioids for ≥2 weeks during pregnancy (Wk 03-09)</td></tr>
+<tr>
+<td>Health V2-Infancy</td> 
+<td>Diagnosis of Neonatal Opioid Withdrawal Syndrome (NOWS)</td>
 </tr>
 <tr>
-<td>par_visit_data_su_flag_bio_bm_cannabinoid</td>
-<td>Substance Use in Urine Biosample from Biological Mother - cannabinoid</td>
+<td>Urine</td> <td>Positive opioid toxicology result in research-collected biospecimen</td>
 </tr>
+<tr> 
+<td rowspan="4"><strong>Alcohol</strong></td>
+<td>TLFB</td> <td>Self-reported use ≥7 standard drinks per week for ≥2 weeks during pregnancy (Wk 03-09)</td></tr>
+<tr><td>TLFB</td> <td>Self-reported use ≥3 standard drinks per occasion on ≥2 occasions during pregnancy (Wk 03-09)</td> </tr>
+<tr><td>Health V2-Infancy</td> <td>Diagnosis of Fetal Alcohol Syndrome (FAS)</td></tr>
+<tr><td>Urine</td> <td>Positive alcohol toxicology result</td> </tr>
 <tr>
-<td>par_visit_data_su_flag_bio_bm_ethanol</td>
-<td>Substance Use in Urine Biosample from Biological Mother - ethanol</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_bio_bm_nicotine</td>
-<td>Substance Use in Urine Biosample from Biological Mother - nicotine</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_bio_bm_opioid</td>
-<td>Substance Use in Urine Biosample from Biological Mother - opioid</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_bio_bm_stim</td>
-<td>Substance Use in Urine Biosample from Biological Mother - stimulant</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_cannabis</td>
-<td style="word-wrap: break-word; white-space: normal;">Rolled up Cannabis flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_healthv2_ch_fas</td>
-<td>Substance Use in Health V2 instrument from Biological Mother - FAS</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_healthv2_ch_nows</td>
-<td>Substance Use in Health V2 instrument from Biological Mother - NOWS</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_nicotine</td>
-<td style="word-wrap: break-word; white-space: normal;">Rolled up Nicotine flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_opioid</td>
-<td style="word-wrap: break-word; white-space: normal;">Rolled up Opioid flag from Biological Mother across sources (Biospecimen, TLFB Self-report, Health V2 NOWS)</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_stimulant</td>
-<td style="word-wrap: break-word; white-space: normal;">Rolled up Stimulant flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_tlfb_bm_alcohol</td>
-<td>Substance Use in TLFB instrument from Biological Mother - alcohol</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_tlfb_bm_cannabis</td>
-<td>Substance Use in TLFB instrument from Biological Mother - cannabis</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_tlfb_bm_nicotine</td>
-<td>Substance Use in TLFB instrument from Biological Mother - nicotine</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_tlfb_bm_opioid</td>
-<td>Substance Use in TLFB instrument from Biological Mother - opioid</td>
-</tr>
-<tr>
-<td>par_visit_data_su_flag_tlfb_bm_stimulant</td>
-<td>Substance Use in TLFB instrument from Biological Mother - stimulant</td>
-</tr>
-</tbody>
-</table>
+<td rowspan="2"><strong>Cannabis</strong></td> <td>TLFB</td> <td>Self-reported cannabis use for ≥4 weeks during pregnancy (Wk 03-09)</td> </tr>
+<tr> <td>Urine</td> <td>Positive cannabis toxicology result</td> </tr> 
+<tr> <td rowspan="2"><strong>Nicotine</strong></td> <td>TLFB</td> <td>Self-reported nicotine or nicotine product use for ≥4 weeks during pregnancy (Wk 03-09)</td> </tr> 
+<tr> <td>Urine</td> <td>Positive nicotine toxicology result</td> </tr> 
+</tbody> </table>
+
+<p>© Copyright 2025 by Elsevier. All rights reserved. Used/adapted with permission from <a href="https://doi.org/10.1016/j.dcn.2024.101494">Gurka et. al, Dev Cogn Neurosci. 2025</a>.</p>
 </div>
 <p></p>
 
@@ -271,3 +236,93 @@ The downloadable participant list maps each **Main Child** to their correspondin
     </tr>            
 </tbody>
 </table>
+
+
+ ## References
+
+<div class="references">
+    <p>Gurka, K. K., Burris, H. H., Ciciolla, L., Coles, C. D., Massey, S. H., Newman, S., Rajagopalan, V., Smith, L. M., Zilverstand, A., Bandoli, G., & HBCD Pregnancy Exposures, Including Substances Workgroup. (2025). Assessment of maternal health and behavior during pregnancy in the HEALthy Brain and Child Development Study: Rationale and approach. <em>Developmental Cognitive Neuroscience</em>, 71(101494), 101494. <a href="https://doi.org/10.1016/j.dcn.2024.101494">https://doi.org/10.1016/j.dcn.2024.101494</a></p>
+</div>
+
+
+
+
+<!-- 
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>par_visit_data_su_flag_alcohol</td>
+<td style="word-wrap: break-word; white-space: normal;">Rolled up Alcohol flag from Biological Mother across sources (Biospecimen, TLFB Self-report, Health V2 FAS)</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_bio_bm_cannabinoid</td>
+<td>Substance Use in Urine Biosample from Biological Mother - cannabinoid</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_bio_bm_ethanol</td>
+<td>Substance Use in Urine Biosample from Biological Mother - ethanol</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_bio_bm_nicotine</td>
+<td>Substance Use in Urine Biosample from Biological Mother - nicotine</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_bio_bm_opioid</td>
+<td>Substance Use in Urine Biosample from Biological Mother - opioid</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_bio_bm_stim</td>
+<td>Substance Use in Urine Biosample from Biological Mother - stimulant</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_cannabis</td>
+<td style="word-wrap: break-word; white-space: normal;">Rolled up Cannabis flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_healthv2_ch_fas</td>
+<td>Substance Use in Health V2 instrument from Biological Mother - FAS</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_healthv2_ch_nows</td>
+<td>Substance Use in Health V2 instrument from Biological Mother - NOWS</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_nicotine</td>
+<td style="word-wrap: break-word; white-space: normal;">Rolled up Nicotine flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_opioid</td>
+<td style="word-wrap: break-word; white-space: normal;">Rolled up Opioid flag from Biological Mother across sources (Biospecimen, TLFB Self-report, Health V2 NOWS)</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_stimulant</td>
+<td style="word-wrap: break-word; white-space: normal;">Rolled up Stimulant flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_tlfb_bm_alcohol</td>
+<td>Substance Use in TLFB instrument from Biological Mother - alcohol</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_tlfb_bm_cannabis</td>
+<td>Substance Use in TLFB instrument from Biological Mother - cannabis</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_tlfb_bm_nicotine</td>
+<td>Substance Use in TLFB instrument from Biological Mother - nicotine</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_tlfb_bm_opioid</td>
+<td>Substance Use in TLFB instrument from Biological Mother - opioid</td>
+</tr>
+<tr>
+<td>par_visit_data_su_flag_tlfb_bm_stimulant</td>
+<td>Substance Use in TLFB instrument from Biological Mother - stimulant</td>
+</tr>
+</tbody>
+</table> -->
