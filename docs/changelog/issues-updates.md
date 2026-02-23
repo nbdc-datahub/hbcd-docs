@@ -353,6 +353,11 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
+<td class='table-cell' style='font-weight: bold;'>Growth</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
+<tr>
 <td class='table-cell' style='font-weight: bold;'>ecPROMIS- Sleep</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of summary scores to <code>ph_cg_pms__sleep</code>.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
