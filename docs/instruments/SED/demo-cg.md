@@ -68,7 +68,7 @@ Beginning at V04, some information that was collected in the V01 Adult Demograph
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This data has known issues - <a href="../../../changelog/knownissues/" target="_blank">see details</a>.</span>
+  <span class="text">This data has known issues - <a href="../../../changelog/issues-updates/#known-issues" target="_blank">see details</a>.</span>
 </div>
 
 ## Administration & Quality Control
@@ -160,7 +160,7 @@ Demographic information is crucial for understanding the child’s environment a
     <td>Hamilton, et al. (2011)</td>
     </tr>
     <tr>
-        <td>Sexual Orientation (<i>available Release 1.1 - <a href="../../../changelog/pending/#inclusion-of-birth-parent-sexual-orientation">see details</a></i>)</td>
+        <td>Sexual Orientation</td>
         <td><a href="https://www.phenxtoolkit.org/protocols/view/11701">PhenX</a></td>
         <td>Hamilton, et al. (2011)</td>
     </tr>

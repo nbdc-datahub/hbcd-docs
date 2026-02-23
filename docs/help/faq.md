@@ -255,7 +255,7 @@ See <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconst
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Unprocessed raw imaging DICOM files will be made publicly available in a <a href="../../changelog/pending/">future release</a>. However, raw data converted to the Brain Imaging Data Structure (BIDS) standard is currently available - see <a href="../../datacuration/file-based-data/#raw-bids">Raw BIDS</a>.</p>
+<p>Unprocessed raw imaging DICOM files will be made publicly available in a <a href="../../changelog/issues-updates/#pending-updates">future release</a>. However, raw data converted to the Brain Imaging Data Structure (BIDS) standard is currently available - see <a href="../../datacuration/file-based-data/#raw-bids">Raw BIDS</a>.</p>
 </div>
 
 <div id="faq-dmri" class="notification-banner" onclick="toggleCollapse(this)">

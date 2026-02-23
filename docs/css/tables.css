@@ -434,36 +434,17 @@ th, td {
 }
 
 
-/* KNOWN ISSUES TABLE */
-/* Domain row styling */
-.domain-row td {
-  padding-top: 0.6em;
-  padding-bottom: 0.1em;
-  font-size: 1.1em;
-  border-bottom: 1px solid var(--md-default-fg-color--lightest);
-  line-height: 0.9;
-}
-.domain-row strong {
+/* KNOWN ISSUES TABLE - Domain rows styling */
+.compact-table-no-vertical-lines .domain-row-issue {
+  background-color: #ff8a42cc;
+  color: #695541ff;
   font-weight: 600;
 }
-/* Align icons with text and style */
-.table-cell {
-  white-space: nowrap;
+/* Pending Updates domain header */
+.compact-table-no-vertical-lines .domain-row-pending {
+  background-color: #199ad67e;
+  color: #003b56;
+  font-weight: 600;
 }
-.icon-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.5em;
-  margin-right: 0.4em;
-  font-size: 1.1em;
-}
-.table-name {
-  white-space: normal;
-}
-.issue-icon {
-  color: #f97316; 
-}
-.pending-icon {
-  color: #199bd6;;
-}
+
+

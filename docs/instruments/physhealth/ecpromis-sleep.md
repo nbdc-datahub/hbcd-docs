@@ -30,7 +30,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Note that summary scores are currently absent from the release data and will be added in the future - see <a href="../../../changelog/pending/" target="_blank">Pending Updates</a>.</p>
+<p>Note that summary scores are currently absent from the release data and will be added in the future - see <a href="../../../changelog/issues-updates/#pending-updates" target="_blank">Pending Updates</a>.</p>
 </div>
 
 ## Administration & Quality Control
