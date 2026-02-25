@@ -41,7 +41,7 @@ hbcd/
 <p>
 <div class="table-banner">
   <span class="emoji"><i class="fa fa-circle-info"></i><i class="fa fa-person-cane"></i></span>
-<span class="text">MRI scanner information is now included in the session-level scans TSV files (<code>sub-{ID}_ses-{V0X}_scans.tsv</code>), including <i>scanner manufacturer, model, software, and serial_number</i>.</span>
+<span class="text">MRI scanner information is now included in the session-level scans TSV files (<code>sub-{ID}_ses-{V0X}_scans.tsv</code>) and will be made available in the tabulated data in a future release.</span>
 </div>
 </p>
 

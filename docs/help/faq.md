@@ -215,6 +215,20 @@
 <p>Please see <a href="https://hbcdsequences.readthedocs.io">HBCD Study MRI Protocols</a>.</p>
 </div>
 
+<div id="faq-scanner-info" class="notification-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+    <span class="text-with-link">
+    <span class="text">Where can I find MRI scanner information?</span>
+    <a class="anchor-link" href="#faq-scanner-info" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+    </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="notification-collapsible-content">
+<p>MRI scanner information, including <i>scanner manufacturer, model, software, and serial_number</i>, can be found in the raw BIDS data, including the session-level <a href="../../datacuration/file-based-data/#participant-session-scan-level-data">scans TSV files</a> (<code>sub-{ID}_ses-{V0X}_scans.tsv</code>) and imaging file JSON metadata. Scanner information will be additionally provided as tabulated data in a future release.</p>
+</div>
+
 <div id="faq-dataproc" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
