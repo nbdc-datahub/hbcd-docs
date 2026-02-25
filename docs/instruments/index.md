@@ -219,23 +219,15 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;= Concatenated Data - <a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>
-</p>
+<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> &nbsp; <b>Tabulated Biospecimen/Toxicology Data</b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <th>Instrument</th>
 <th>Version</th>
 <th>Construct</th>
-<th>Table Name / <i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Concatenated Data Folder</th>
+<th>Table Name</th>
 </thead>
 <tbody>
-<tr>
-    <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
-    <td>Maternal & Child</td>
-    <td>GWAS, EWAS, Transcriptome</td>
-    <td><i>genetics/</i></td>
-</tr>
 <tr>
     <td><a href="biospec/nails" target="_blank">Maternal Nails</a></td>
     <td>Maternal</td>
@@ -247,6 +239,30 @@ Expand the sections below to see a list of measures associated with each domain 
     <td>Maternal</td>
     <td>Drug Panel, Toxins</td>
     <td><code>bio_bm_biosample_urine_results</code></td>
+</tr>
+</tbody>
+</table>
+<p style="font-size: 1.0em; margin-bottom: 0px; padding-bottom: 0px;"><i style="color: teal;" class="fas fa-layer-group"></i> &nbsp; <b>Concatenated Genomics Data</b> (<a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>)</p>
+<table class="compact-table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<th>Instrument</th>
+<th>Version</th>
+<th>Construct</th>
+<th>Data Folder</th>
+</thead>
+<tbody>
+<tr>
+    <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
+    <td>Maternal & Child</td>
+    <td>GWAS, EWAS, Transcriptome</td>
+    <td><i>genetics/</i></td>
+</tr>
+<tr>
+    <td><a href="biospec/olink" target="_blank">Olink</a></td>
+    <td></td>
+    <td>Inflammation</td>
+    <td><i>genetics/</i></td>
 </tr>
 </tbody>
 </table>
