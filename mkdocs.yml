@@ -93,6 +93,7 @@ nav:
         - Biospecimens & Omics:
             - Illumina GDA GWAS: instruments/biospec/illumina-gda-gwas.md
             - Nails: instruments/biospec/nails.md
+            # - Olink: instruments/biospec/olink.md
             - Urine: instruments/biospec/urine.md
         - Neurocognition & Language:
             - Bayley-4: instruments/neurocog/bayley-4.md
