@@ -30,6 +30,7 @@ Genomic data generated using the **Olink Explore 384 Inflammation 1 Panel Matern
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
+<p>add content as needed</p>
 </div>
 
 
