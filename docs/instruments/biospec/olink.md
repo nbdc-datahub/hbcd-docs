@@ -1,3 +1,5 @@
+<p style="font-size: 1.2em; color: red;">LUCI NOTE: Workgroup to fill out remaining information. See <a href="https://forms.gle/fgXTAkPhZbx2qjoH6">HBCD Release Docs Measure Documentation Form</a> if needed for additional info on sections below</p>
+
 # Olink Explore 384 Inflammation
 
 Genomic data generated using the **Olink Explore 384 Inflammation 1 Panel Maternal V1** ([Olink.com](https://olink.com/products/olink-explore-3072-384)) are provided for the birth parent during pregnancy at Visit 01 as a measure of maternal inflammation.
