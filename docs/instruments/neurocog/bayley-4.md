@@ -57,6 +57,8 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
   </p>
 </div>
 
+<!-- LUCI NOTE: need to check on whether data warnings require updates -->
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -106,6 +108,20 @@ The use of Caregiver Questions on the BSID-4 was modified. RAs were instructed t
 
 <p><b>Accommodations For Spanish-Speaking Households</b><br>
 Modifications were made to accommodate Spanish-speaking households. <strong>English instructions were translated by experienced Bayley assessors</strong> accustomed to administering the BSID-4 in Spanish contexts for infants. The HBCD Spanish Language Committee reviewed translations, resolving discrepancies through iterative discussion. For families opting for Spanish administration, RAs used the approved HBCD Spanish translations of both instructions and caregiver questions. No modifications were made to the scoring of the responses and computation of the associated cluster and standard scores.</p> 
+</div>
+
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>Bayley scores are generated automatically using QGlobal, Pearson’s official scoring platform for the Bayley Scales. Scores reflect the standardized scoring procedures implemented by Pearson, and no additional manual scoring or modification is applied.</p>
 </div>
 
 ## References
