@@ -63,34 +63,34 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MAPS-TL (Inf &amp; Tod)</td>
 <td style='word-wrap: break-word; white-space: normal;'>Notes appear in the score field in both versions (Infant/Toddlerhood) and will be moved to a separate field.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MAPS-TL (Tod)</td>
 <td style='word-wrap: break-word; white-space: normal;'>A subset of participants (N=16) in <code>mh_cg_mapdb__tod</code> are missing scores because pro-rated scoring for the Toddlerhood version has not yet been updated for cases with missing or 'Decline to answer' values.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Nails</td>
 <td style='word-wrap: break-word; white-space: normal;'>Add unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Nails</td>
 <td style='word-wrap: break-word; white-space: normal;'>The toxicology results variable <code>bio_bm_biosample_nails_results_Nail_type</code> has a value of 4 (Unknown) for all rows and can safely be ignored; nail type can instead be found in <code>bio_bm_biosample_nails_typ_collection_nail_type</code>.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Nails &amp; Urine</td>
 <td style='word-wrap: break-word; white-space: normal;'>Note that the data dictionary level values have quotes around them (for example; 1= "positive" instead of 1=positive), causing the downloaded data dictionary to have double quotes (e.g. 1=""positive"").</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>GENERAL</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Implausible GA</td>
 <td style='word-wrap: break-word; white-space: normal;'>Several instruments contain implausible values for gestational age (<code>gestational_age</code>). This is currently under internal review and we will add more details as they become available.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Instruction Metadata</td>
@@ -100,34 +100,34 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Sequence Field</td>
 <td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MRI</td>
 <td style='word-wrap: break-word; white-space: normal;'>The sidecar JSONs for Myers-Labonte-parcellated structural measures in the tabulated XCP-D derivatives should have a <code>sub_domain</code> value of <code>Structural MRI</code>, not <code>Resting State fMR</code>: <code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>. The Data Dictionary available via the NBDC Dictionary Query Tool is correct.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MRI</td>
 <td style='word-wrap: break-word; white-space: normal;'>There are 2 corrupted raw BIDS files (V02 bold runs under session-level <code>func/</code> folders of <code>rawdata/</code>) to be resolved. Impacted participant IDs/filepaths are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>21</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Run ID</td>
 <td style='word-wrap: break-word; white-space: normal;'>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MLDS</td>
 <td style='word-wrap: break-word; white-space: normal;'>Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "Â Â Â Â ")</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MLDS</td>
 <td style='word-wrap: break-word; white-space: normal;'>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The maximum values is 168 hours: please exclude values greater than 168 from analysis.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Vineland</td>
@@ -138,7 +138,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Growth</td>
 <td style='word-wrap: break-word; white-space: normal;'>The Data Dictionary element <code>type_data</code> for <code>average_bmi</code> will be corrected to <code>double</code> (currently=<code>character</code>).</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Growth</td>
@@ -149,17 +149,17 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>APA 1/2</td>
 <td style='word-wrap: break-word; white-space: normal;'>Note that <code>pex_bm_apa_mania_001</code> through <code>mania_005</code> have incorrect Data Dictionary descriptions.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>APA 1/2</td>
 <td style='word-wrap: break-word; white-space: normal;'>There are cases where APA Level 2 was administered against gating logic (e.g. for Repetitive Behavior despite there being missing Level 1 responses). As Level 2 administration was not expected, these are not scored (score = "No additional inquiry required") despite having Level 2 item responses present. The Level 2 item-level data will be removed in the future to prevent confusion.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>EPDS</td>
 <td style='word-wrap: break-word; white-space: normal;'>N=2 participants in <code>pex_bm_epds</code> have a biologically implausible adjusted age of -1 at V02. Until corrected, please exclude from analyses.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>EPDS</td>
@@ -174,12 +174,12 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Preg &amp; Inf Health</td>
 <td style='word-wrap: break-word; white-space: normal;'>ICD codes for the <code>pex_bm_health*</code> instrument tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>TLFB</td>
 <td style='word-wrap: break-word; white-space: normal;'>Weeks for postnatal recruits were mistakenly reported in the TLFB <strong>versions 1</strong> or <strong>2</strong> instead of <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3"><strong>version 3</strong> adapted for PNR</a>. These will be adjusted to <strong>version 3</strong>.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>TLFB</td>
@@ -190,12 +190,12 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>C-PACEs</td>
 <td style='word-wrap: break-word; white-space: normal;'>Summary scores for <code>sed_bm_paces</code> are currently calculated as the sum of individual item responses rather than the average. This will be corrected in a future release. In the meantime, users may compute their own average-based summary scores using the item-level data provided in the dataset.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>eHITS</td>
 <td style='word-wrap: break-word; white-space: normal;'>In <code>sed_bm_ehits</code>, participants who did not respond to any questions have a summary score of 0 instead of missing. Until corrected, users should convert these cases to blank/null prior to conducting analyses.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 </tbody></table>
 
@@ -218,27 +218,37 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ECBQ</td>
 <td style='word-wrap: break-word; white-space: normal;'>Change coding for "Does not apply" to 8 to match the IBQ-R.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
 <tr>
+<td class='table-cell' style='font-weight: bold;'>Olink</td>
+<td style='word-wrap: break-word; white-space: normal;'>Genomic Olink Explore 384 Inflammation 1 Panel to be provided for the birth parent during pregnancy as a measure of maternal inflammation.</td>
+<td style='text-align: center; font-weight: bold;'></td>
+</tr>
+<tr>
 <td class='table-cell' style='font-weight: bold;'>Urine</td>
 <td style='word-wrap: break-word; white-space: normal;'>The creatinine results (<code>bio_bm_biosample_urine_results_bio_creat_u</code>) variable is currently excluded from the release due to out-of-range values and will be added once corrected.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Visit Level Data</td>
 <td style='word-wrap: break-word; white-space: normal;'>The <code>visit_missed_date</code> variable (date of missed visits) is currently excluded from the release due to inaccuracies and will be added once corrected.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>GENERAL</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Multibirth Cohorts</td>
 <td style='word-wrap: break-word; white-space: normal;'>For Multibirth Sibling cohorts: (1) instrument fields will be populated where mising and (2) the Data Dictionary element <em>familyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>MRI</strong></td></tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>BrainSwipes</td>
+<td style='word-wrap: break-word; white-space: normal;'>BrainSwipes will be updated with the most recent QC results. In the meantime, users can find the latest QC results in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MRI</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of source DICOMs for all imaging modalities.</td>
@@ -246,46 +256,51 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
 <tr>
+<td class='table-cell' style='font-weight: bold;'>Bayley-4</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of item-level scores for the Bayley-4.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
+<tr>
 <td class='table-cell' style='font-weight: bold;'>CDI</td>
 <td style='word-wrap: break-word; white-space: normal;'>Set percentile scores in <code>ncl_ch_cdiwgen</code> (with the exception of <code>percentile_both</code>) to data type=integer.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Vineland</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of language field to <code>ncl_cg_vabs</code>.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>PHYSICAL HEALTH</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>BISQ-SF</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Growth</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of age-based z-scores to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Z-Scores Excluded</a>).</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Vision Screener</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results).</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ecPROMIS- Sleep</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of summary scores to <code>ph_cg_pms__sleep</code>.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ecPROMIS-PAG</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of summary scores (Summed Score, T-score, and SE) to <code>ph_cg_pms__pags</code>. Until added, users can calculate summary scores themselves by following the Scoring Procedures documented on the instrument page.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>PREGNANCY &amp; EXPOSURE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Growth</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 </tbody></table>
 
