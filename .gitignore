@@ -5,6 +5,6 @@ scratch/
 __pycache__/
 .vscode/
 make_tables/
-tools/
+tools/local/
 local/
 archive/
