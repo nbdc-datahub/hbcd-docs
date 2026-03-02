@@ -8,8 +8,8 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 TSV= "latest.tsv"
 # External and internal paths
-HBCD_DOCS_MD = "../../docs/changelog/issues-updates.md"
-INTERNAL_MD = "../../../../hbcd-docs-internal/docs/changelog/knownissues.md"
+HBCD_DOCS_MD = "../docs/changelog/issues-updates.md"
+INTERNAL_MD = "../../../hbcd-docs-internal/docs/changelog/knownissues.md"
 
 # HBCD_DOCS_MD = "../../docs/changelog/test-ext.md"
 # INTERNAL_MD = "../../docs/changelog/test-int.md"
