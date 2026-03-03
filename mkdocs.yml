@@ -150,9 +150,7 @@ nav:
             - EEG Task Details: instruments/eeg/tasks.md
         - Magnetic Resonance Imaging:
             - Overview & MR Protocols: instruments/mri/index.md
-            - Quality Control Procedures:
-              - Raw MR Data QC: instruments/mri/qc.md
-              - BrainSwipes: instruments/mri/brainswipes.md
+            - Quality Control Procedures: instruments/mri/qc.md
             - MR Exclusion Criteria: instruments/mri/exclusion-criteria.md
             - MRI Processing & Derivatives Guide: instruments/mri/mri-proc.md
             - Pre-Scan Questionnaire: instruments/mri/prescan-questionnaire.md
