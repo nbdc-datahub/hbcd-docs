@@ -110,7 +110,7 @@ Below are a description of each variable (column) in the Olink files:
 </tbody>
 </table>
 
-div id="assays" class="table-banner" onclick="toggleCollapse(this)">
+<div id="assays" class="table-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-circle-info"></i></span>
   <span class="text-with-link">
   <span class="text">Full Assay List</span>
@@ -120,10 +120,8 @@ div id="assays" class="table-banner" onclick="toggleCollapse(this)">
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
-<br>
-<input type="text" id="assaySearch" placeholder="Search assays..." />
-<br>
+<div class="collapsible-content"><br>
+<input type="text" id="assaySearch" placeholder="Search assays..." /><br>
 <p class="legend"><span class="failed-marker">*</span> <b>Indicates assay did not pass Olink QC</b></p>
 <div class="assay-grid">
 <span>ACTN4</span><span>ADA</span><span>ADAM23</span><span>ADGRE2</span><span>AGER</span><span>AGRN</span><span>AGRP</span><span>ALDH3A1</span><span>AMBN</span><span>AMN</span><span>ANGPT1</span><span>ANGPTL2</span><span>ANGPTL4</span><span>ANXA11</span><span>AOC1</span><span>ARHGEF12</span><span>ARNT</span><span>ARTN</span><span>ATP5IF1</span><span>AXIN1</span><span>B4GALT1</span><span>BACH1</span><span>BANK1</span><span>BCR</span><span class="failed">BCL2L11</span><span class="failed">BID</span><span>BSG</span><span>BTN2A1</span><span>BTN3A2</span><span>CCL3</span><span>CCL4</span><span>CCL7</span><span>CCL11</span><span>CCL13</span><span>CCL17</span><span>CCL20</span><span>CCL21</span><span>CCL22</span><span>CCL23</span><span>CCL24</span><span>CCL25</span><span>CCL26</span><span>CCL28</span><span>CCN2</span><span>CD4</span><span>CD6</span><span>CD22</span><span>CD40</span>
@@ -135,18 +133,263 @@ div id="assays" class="table-banner" onclick="toggleCollapse(this)">
 
 ## Quality Control
 
-Quality control procedures involved the following:
+The following proteins did not meet Olink’s quality control criteria and are therefore displayed as 0 for Count and NA for ExtNPX, NPX, and PCNormalizedNPX. 
 
-TO DO
+  * BCL2L11 (O43521-2) 
+  * LTA (P01374) 
+  * RAB6A (P20340) 
+  * PTPRM (P28827) 
+  * BID (P55957) 
+  * HGF (P14210) 
+  * IDS (P22304) 
+  * CD40LG (P29965) 
+  * CLEC7A (Q9BXN2) 
+  * MGLL (Q99685)  
+
+Samples were run on 15 plates (numbered 1 – 15).
+
+Proteins demonstrating a plate effect are not removed from the data. 46 proteins demonstrated a plate effect when plates were normalized by median plate intensity - click to expand section below for details:
+
+<div id="plate-effects" class="table-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Plate Effects</span>
+  <a class="anchor-link" href="#plate-effects" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table dir="ltr" border="1" cellspacing="0" cellpadding="0" data-sheets-root="1" data-sheets-baot="1"><colgroup><col width="100" /><col width="100" /><col width="100" /><col width="100" /><col width="100" /><col width="100" /><col width="100" /></colgroup>
+<tbody>
+<tr>
+<td>Assay</td>
+<td>P-value</td>
+<td>Adj p-value</td>
+<td>&nbsp;</td>
+<td>Assay</td>
+<td>P-value</td>
+<td>Adj p-value</td>
+</tr>
+<tr>
+<td>IL4</td>
+<td>9.36E-38</td>
+<td>3.35E-35</td>
+<td>&nbsp;</td>
+<td>LTO1</td>
+<td>1.57E-10</td>
+<td>2.33E-09</td>
+</tr>
+<tr>
+<td>NRTN</td>
+<td>5.76E-36</td>
+<td>1.03E-33</td>
+<td>&nbsp;</td>
+<td>IL22RA1</td>
+<td>3.26E-09</td>
+<td>4.67E-08</td>
+</tr>
+<tr>
+<td>IL2RB</td>
+<td>1.83E-33</td>
+<td>2.18E-31</td>
+<td>&nbsp;</td>
+<td>TANK</td>
+<td>8.15E-09</td>
+<td>1.12E-07</td>
+</tr>
+<tr>
+<td>PADI2</td>
+<td>1.89E-32</td>
+<td>1.69E-30</td>
+<td>&nbsp;</td>
+<td>IFNG</td>
+<td>1.32E-08</td>
+<td>1.76E-07</td>
+</tr>
+<tr>
+<td>IL2</td>
+<td>2.05E-29</td>
+<td>1.47E-27</td>
+<td>&nbsp;</td>
+<td>NCLN</td>
+<td>1.54E-08</td>
+<td>1.96E-07</td>
+</tr>
+<tr>
+<td>PRKCQ</td>
+<td>1.06E-19</td>
+<td>6.34E-18</td>
+<td>&nbsp;</td>
+<td>PNPT1</td>
+<td>4.67E-08</td>
+<td>5.77E-07</td>
+</tr>
+<tr>
+<td>IL33</td>
+<td>3.71E-19</td>
+<td>1.90E-17</td>
+<td>&nbsp;</td>
+<td>TNFAIP8</td>
+<td>8.73E-08</td>
+<td>0.000001041</td>
+</tr>
+<tr>
+<td>IL12RB1</td>
+<td>1.28E-18</td>
+<td>5.75E-17</td>
+<td>&nbsp;</td>
+<td>JUN</td>
+<td>1.79E-07</td>
+<td>0.000002007</td>
+</tr>
+<tr>
+<td>TPT1</td>
+<td>1.51E-18</td>
+<td>6.02E-17</td>
+<td>&nbsp;</td>
+<td>NFATC3</td>
+<td>1.76E-07</td>
+<td>0.000002007</td>
+</tr>
+<tr>
+<td>IL20RA</td>
+<td>2.54E-18</td>
+<td>9.10E-17</td>
+<td>&nbsp;</td>
+<td>LAP3</td>
+<td>2.69E-07</td>
+<td>0.000002913</td>
+</tr>
+<tr>
+<td>DGKZ</td>
+<td>5.29E-18</td>
+<td>1.72E-16</td>
+<td>&nbsp;</td>
+<td>JCHAIN</td>
+<td>0.00000199</td>
+<td>0.000021</td>
+</tr>
+<tr>
+<td>IL13</td>
+<td>4.00E-17</td>
+<td>1.19E-15</td>
+<td>&nbsp;</td>
+<td>RGS8</td>
+<td>0.00000458</td>
+<td>0.0000469</td>
+</tr>
+<tr>
+<td>GBP2</td>
+<td>7.27E-17</td>
+<td>2.00E-15</td>
+<td>&nbsp;</td>
+<td>IL10RA</td>
+<td>0.00000587</td>
+<td>0.00005838</td>
+</tr>
+<tr>
+<td>IL17F</td>
+<td>1.75E-16</td>
+<td>4.48E-15</td>
+<td>&nbsp;</td>
+<td>FXYD5</td>
+<td>0.0000213</td>
+<td>0.0002061</td>
+</tr>
+<tr>
+<td>ACTN4</td>
+<td>2.05E-16</td>
+<td>4.89E-15</td>
+<td>&nbsp;</td>
+<td>PRDX3</td>
+<td>0.00003494</td>
+<td>0.0003292</td>
+</tr>
+<tr>
+<td>IL15RA</td>
+<td>5.16E-13</td>
+<td>1.15E-11</td>
+<td>&nbsp;</td>
+<td>IL11</td>
+<td>0.0001046</td>
+<td>0.0009602</td>
+</tr>
+<tr>
+<td>EIF5A</td>
+<td>1.50E-12</td>
+<td>3.17E-11</td>
+<td>&nbsp;</td>
+<td>FCRL3</td>
+<td>0.0001765</td>
+<td>0.00158</td>
+</tr>
+<tr>
+<td>SLAMF1</td>
+<td>2.37E-12</td>
+<td>4.71E-11</td>
+<td>&nbsp;</td>
+<td>IL17A</td>
+<td>0.0002635</td>
+<td>0.002301</td>
+</tr>
+<tr>
+<td>IL20</td>
+<td>2.95E-12</td>
+<td>5.56E-11</td>
+<td>&nbsp;</td>
+<td>ICA1</td>
+<td>0.0009262</td>
+<td>0.007895</td>
+</tr>
+<tr>
+<td>IL5</td>
+<td>2.09E-11</td>
+<td>3.74E-10</td>
+<td>&nbsp;</td>
+<td>ITGB6</td>
+<td>0.001058</td>
+<td>0.008812</td>
+</tr>
+<tr>
+<td>AMN</td>
+<td>2.95E-11</td>
+<td>5.03E-10</td>
+<td>&nbsp;</td>
+<td>CEACAM21</td>
+<td>0.002006</td>
+<td>0.01596</td>
+</tr>
+<tr>
+<td>IL1B</td>
+<td>4.79E-11</td>
+<td>7.45E-10</td>
+<td>&nbsp;</td>
+<td>TNFRSF13C</td>
+<td>0.001986</td>
+<td>0.01596</td>
+</tr>
+<tr>
+<td>PRKAB1</td>
+<td>4.75E-11</td>
+<td>7.45E-10</td>
+<td>&nbsp;</td>
+<td>IL24</td>
+<td>0.00248</td>
+<td>0.0193</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+337 proteins demonstrated a plate effect when plates were normalized by plate control. 
+
+Limits of detection were not calculated for this data release; however, LODs should be calculated based on NC values and proteins with a large number of samples being below the LOD should be removed or evaluated with caution.  
 
 ## Resources
 
 - [Olink.com](https://olink.com/products/olink-explore-3072-384)
-
-
-## References
-<div class="references"> 
-</div>
 
 
 <!-- ## Administration & Quality Control
