@@ -42,3 +42,10 @@ h5 {
 h5 + * { /* Selects the element directly following the h5 */
   margin-top: 0; /* Remove space created by the next element */
 }
+
+/* ICONS INCLUDED IN HEADERS */
+.header-icon {
+  margin-right: 0.5em;
+  font-size: 1em;
+  color: #199bd6;
+}

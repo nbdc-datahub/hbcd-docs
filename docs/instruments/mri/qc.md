@@ -1,10 +1,20 @@
-# HBCD Raw MR Quality Control Procedures
+# HBCD MR Quality Control Procedures
 
-## Raw MR Data QC
-<div id="scanstsv" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fa-solid fa-location-dot"></i></span>
+## Overview
+
+Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing. Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, **manual visual review is only performed for series that fail automated QC**. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC.
+
+**QC is also performed on select processed outputs** with **[BrainSwipes](#brainswipes)**. When issues are identified at this stage, the corresponding raw data are re-reviewed and QC decisions are updated as needed. This iterative process improves QC scoring and utilities over time and helps ensure high data quality while minimizing delays in data release.
+
+## <i class="fa-solid fa-location-dot header-icon"></i> Location of QC Results in Release
+
+#### Raw MR Data QC Metrics
+Raw data QC metrics are available in the session-level <a href="../../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV Files (<code>*_scans.tsv</code>)</a>. Expand the section below to see all QC metrics included in these files. 
+
+<div id="scanstsv" class="table-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fa-solid fa-info-circle"></i></span>
   <span class="text-with-link">
-  <span class="text">Location of Raw MR QC metrics in Release Data: <a href="../../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV Files (<code>*_scans.tsv</code>)</a></span>
+  <span class="text">Raw Data QC Metrics Included in Scans TSV</span>
   <a class="anchor-link" href="#scanstsv" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -279,17 +289,21 @@
 
 <p></p>
 
-### Workflow
+#### BrainSwipes QC Results
+BrainSwipes QC results for processed data are provided as <a href="../../#mri">tabulated data</a>, with unique hash identifiers indicating the surface-reconstruction method used in Infant fMRIPrep (see <a href="../mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S & FreeSurfer Reconstruction Methods</a>):
+<ul>
+<li><code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code> - <i>T2w-based surface reconstruction (M-CRIB-S)</i></li>
+<li><code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code> - <i>T1w-based surface reconstruction (Infant FreeSurfer)</i></li>
+</ul>
 
-Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing.
+<b>Note that the release data are incomplete! See <a href="#warning"><i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Data Warning</a> for details. Tabulated data with complete results can be found in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> (<i>only accessible for DUC-authorized users</i>).</b>         
+<a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/brainswipes_2026-01-26.zip"><i class="fa-solid fa-download"></i> &nbsp; Download Completed BrainSwipes Results</a>
 
-Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, **manual visual review is only performed for series that fail automated QC**. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC.
+## Raw MR Data QC
 
-**As an additional safeguard, QC is also performed on processed outputs** using tools such as <a href="../brainswipes" target="_blank">BrainSwipes</a>. When issues are identified at this stage, the corresponding raw data are re-reviewed and QC decisions are updated as needed. This iterative process improves QC scoring and utilities over time and helps ensure high data quality while minimizing delays in data release.
+### <i class="fa fa-desktop header-icon"></i> Automated QC
 
-### <i class="fa fa-desktop"></i> Automated QC
-
-Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediately after data upload, beginning with [protocol compliance and completeness checks](#compliance). Data that fail these checks are flagged for review and are not included in the release until resolved. 
+Automated QC begins immediately after data upload with protocol compliance and completeness checks ([expand infobox for details](#compliance)). Data that fail are flagged for review and excluded from release until resolved. For compliant data, automated QC metrics are then calculated (see table below).
 
 <div id="compliance" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
@@ -302,55 +316,16 @@ Automated QC is performed at the HBCD Data Coordinating Center (HDCC) immediatel
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Protocol Compliance</strong><br>
-All raw data first undergo protocol compliance and completeness checks. Data that fail these checks are flagged for review and are not included in the release until resolved. This involves the following:</p>
-<ul>
-    <li>Extract imaging parameters from DICOM headers</li>
-    <li>Confirm key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner</li>
-    <li>Flag out-of-compliance series for review; sites are contacted if corrective action is needed</li>
-</ul>
-<p><b>Completeness Checks</b><br>
-Completeness checks verify that all expected series are present in each imaging session. For example, dMRI and fMRI require paired EPI field maps for distortion correction. Missing data usually indicate an aborted scan or incomplete data transfer (often resolved by re-sending files). Series included in a valid session include the following:</p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Modality</th>
-  <th>Required Series</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>Structural MRI (sMRI)</td>
-    <td>T1w & T2w</td>
-</tr>
-<tr>
-    <td>Functional MRI (fMRI)</td>
-    <td>Resting state (rs) runs 1 & 2, each accompanied by fieldmaps acquired in AP and PA phase encoding directions</td>
-</tr>
-<tr>
-    <td>Diffusion MRI (dMRI)</td>
-    <td>Diffusion scans acquired in AP and PA phase encoding directions</td>
-</tr>
-<tr>
-    <td>Quantitative MRI (qMRI)</td>
-    <td>3DMagic/QALAS and B1 Map</td>
-</tr>
-<tr>
-    <td>MR Spectroscopy (MRS)</td>
-    <td> MRS scan and SVS localizer</td>
-</tr>
-</tbody>
-</table>
+<p><strong>Protocol compliance</strong> is performed by extracting imaging parameters from DICOM headers to confirm that key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner. Out-of-compliance series are flagged for review and sites are contacted if corrective action is needed.</p>
+<p><strong>Completeness checks</strong> verify that all expected series are present in each imaging session. Missing data usually indicate an aborted scan or incomplete data transfer. Series included in a valid session include: <strong>T1w &amp; T2w</strong> structural scans; <strong>2 resting state functional runs</strong> (each accompanied by fieldmaps acquired in AP and PA phase encoding directions); <strong>diffusion scans (acquired both AP and PA)</strong>; quantitative <strong>QALAS and B1 maps</strong>; and an <strong>MRS scan and SVS localizer</strong>. </p>
 </div>
-
-For data that pass compliance checks, the following automated QC metrics available in the release are calculated:
+<p></p>
 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<i>Automated QC Metrics</i>
 <thead>
 <tr>
     <th>Modality</th>
-    <th>QC Procedures</th>
+    <th>Automated QC Metrics</th>
 </tr>
 </thead>
 <tbody>
@@ -389,15 +364,15 @@ For data that pass compliance checks, the following automated QC metrics availab
 </tbody>
 </table>
 
-### <i class="fa-solid fa-eye"></i> Manual Review
-Data is flagged for manual review based on automated QC results using multivariate prediction and Bayesian classifiers. Only a portion of data therefore undergoes both automated and manual review. When automated QC flags a series, trained technicians perform manual visual review and rate artifact severity on a **0–3 scale** (0 = none, 1 = mild, 2 = moderate, 3 = severe). Series with **severe artifacts (score = 3) are rejected (QC = 0)** and excluded from downstream processing. For remaining series, final selection is informed by manual ratings, reviewer notes, and automated QC scores.
+### <i class="fa-solid fa-eye header-icon"></i> Manual Review
+
+Data are flagged for manual review based on automated QC results using multivariate prediction and Bayesian classifiers, so only a subset undergoes both automated and manual review. When a series is flagged, trained technicians perform visual review and rate artifact severity on a **0–3 scale**: *none* (**0**), *mild* (**1**), *moderate* (**2**), or *severe* (**3**). Series rated **3** (*severe*) are automatically assigned an overall QC score of **0** (*Fail*) and excluded from downstream processing. For all others, final selection is informed by manual ratings, reviewer notes, and automated QC metrics.
 
 <table class="compact-table-no-vertical-lines">
-<i>Manual QC Metrics</i>
 <thead>
 <tr>
     <th>Modality</th>
-    <th>QC Procedures & Scoring</th>
+    <th>Manual QC Procedures & Scoring</th>
 </tr>
 </thead>
 <tbody>
@@ -424,6 +399,71 @@ Data is flagged for manual review based on automated QC results using multivaria
 </tr>
 </tbody>
 </table>
+
+## BrainSwipes
+
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</i></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>The following groups are missing all or a large portion of BrainSwipes QC results in the release data:
+<ul>
+<li>V02 sessions processed with T1-based surface reconstruction (<a href="../mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">Infant FreeSurfer method</a>) within Infant fMRIPrep: ~70% of the visual reports across sessions are missing BrainSwipes QC scores. <i>Note, however, that for separate reasons we advise against using this data for analyses - see <a href="../mri-proc/#warning" target="_blank">Data Warning</a></i>.</li>
+<li>V02 sessions with only a T2w anatomical image present (that passes raw data QC), and no T1w: missing ALL BrainSwipes QC results in the release data.</li>
+</ul>
+<p><b>Completed tabulated data can be found in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> accessible to DUC-authorized users.</b></p>  
+<p><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/brainswipes_2026-01-26.zip"><i class="fa-solid fa-download"></i> &nbsp; Download Completed BrainSwipes Results</a></p>
+</div>
+<p></p>
+
+
+<div style="display: flex; align-items: center; gap: 30px;">
+<div style="flex: 1;">
+<p>Processed structural and functional MRI data are quality-controlled via manual review of XCP-D visual reports. Manual inspection remains the gold standard for QC, but is highly resource-intensive.</p>
+<p>To support large-scale QC, HBCD uses <a href="https://brainswipes.us/about/">BrainSwipes</a>, a gamified, crowdsourced platform where users classify images as Pass or Fail by swiping right or left after completing a brief visual QC tutorial.</p>
+<p>BrainSwipes QC results were also used to identify and exclude derivative outputs with severe data quality issues from the release (see <a href="../exclusion-criteria/#processed-data-exclusion-criteria" target="_blank">Processed Data Exclusion Criteria</a> for details).</p>
+</div>
+  <!-- Image on the right -->
+  <div style="flex: 1; text-align: center;">
+    <img src="../images/brainswipes.png" style="max-width:100%; height:auto; display:block; margin:0 auto;">
+    <p style="font-size: 0.8em; margin-top: 5px; line-height: 1.1; max-width:80%; margin-left:auto; margin-right:auto; text-align:justify;">
+      <i>Example quality assessment of surface delineation on BrainSwipes platform (displaying brain in axial plane at level of basal ganglia/putamen).</i>
+    </p>
+  </div>
+</div>
+
+ <p>
+<div id="swipes-procedures" class="table-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa fa-brain"></i></span>
+<span class="text-with-link">
+  <span class="text">Detailed BrainSwipes QC Procedures</span>
+    <a class="anchor-link" href="#swipes-procedures" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p><b>Surface Delineation</b><br>
+For structural QA, swipers are presented with image slices in coronal, axial, and sagittal planes to assess the accuracy of T1w and T2w surface delineations in differentiating gray and white matter. Images are derived from XCP-D visual reports.</p>
+<p><b>Atlas Registration</b><br>
+In addition to surface delineation, structural QA also includes atlas registration quality, evaluated by overlaying delineations of the subject’s image onto the atlas, and vice versa. Swipes display nine T1w slices for visual inspection, with three slices per anatomical plane. Quality is assessed based on the alignment of the outer boundaries of the overlaid contours with those of the underlying image, ensuring minimal gaps or misalignments. Images are derived from XCP-D visual reports.</p>
+<p><b>Functional Registration</b><br>
+Functional registration is evaluated by overlaying outlines of functional images onto structural images and vice versa. Swipes display nine slices of the same functional image for visual inspection, with three slices per anatomical plane. Quality is assessed similarly to structural atlas registration, focusing on the alignment of the overlaid contours. Additional evaluation includes checking for artifacts such as signal dropout. Images are derived from XCP-D visual reports.</p>
+</div>
+</p>
+
+Expand the [infobox](#swipes-procedures) above for full procedural details. In brief, each run of a given modality (T1w/T2w structural scans and BOLD runs) includes a series of visual reports generated by XCP-D to assess different aspects of data quality. Each visual report is independently rated as **Pass (1)** or **Fail (0)**. The tabulated BrainSwipes data includes:
+
+1. The average QC score and mean number of reviewers **across visual reports for each modality**
+1. The average QC score and number of reviewers **for each individual visual report**
 
 ### References
 <div class="references">

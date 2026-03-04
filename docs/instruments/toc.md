@@ -1,74 +1,28 @@
-# Study Instruments
-In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Full study protocols are available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). See [Pending Updates](../changelog/issues-updates.md#pending-updates) for details on what to expect in future releases.
+# Instruments by Domain
 
-## Age Of Child at Each Visit
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+
+<table class="table-no-vertical-lines expandable-table" style="width: 100%;">
+<thead>
+<tr>
+  <th>Assessment</th>
+  <th>Table Name</th>
+  <th style="text-align: center;">README</th>
+</tr>
+</thead>
 <tbody>
-<tr>
-<td><b>Visit 1 (V01)</b></td>
-<td><b>Visit 2 (V02)</b></td>
-<td><b>Visit 3 (V03)</b></td>
-<td><b>Visit 4 (V04)</b></td>
-<td><b>Visit 5 (V05)</b></td>
-<td><b>Visit 6 (V06)</b></td>
-<td><b>Visit 7 (V07)</b></td>
+<!-- ================= DOMAIN: Adaptive Behavior ================= -->
+<tr class="domain-header open" data-domain="AB">
+  <td colspan="3" style="background-color: #53CBC5;">
+    <span class="chevron">▸</span>Adaptive Behavior</td>
 </tr>
-<tr>
-<td>Prenatal</td>
-<td>0-1 month</td>
-<td>3-9 months</td>
-<td>9-15 months</td>
-<td>10-17 months</td>
-<td>15-30 months</td>
-<td>16-32 months</td>
-</tr>
+<tr class="domain AB">
+<td>Vineland Adaptive Behaviour Scale, 3rd Edition</td><td><code>ab_cg_vabs__3</code></td>
+<td style="text-align: center;"><a href="AB/ab_cg_vabs__3" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td></tr>
 </tbody>
 </table>
 
-## Spanish Translations
-All surveys used in the HBCD Study were translated into Spanish by <a href="https://burgtranslations.com/our-services/">BURG Translations</a> and reviewed by the Spanish Language Committee (SLC) to ensure clarity and accessibility for a broad Spanish-speaking population. Instruments from third-party publishers (e.g., Bayley, CDI, BTB, Vineland) were excluded from this process, and the third party's translation was used.
+## <span class="emoji"><i class="fa fa-clipboard-list"></i></span> Administrative
 
-## Data Collected at Visits
-
-<img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" 
-alt="Age of Child participants at each Visit number: Visit 1 (V01) = Prenatal; Visit 2 (V02) = 0-1 month old; Visit 3 (V03) = 3-9 months old; Visit 4 (V04) = 9-15 months old; Visit 5 (V05) = 10-17 months old;  Visit 6 (V06) = 15-30 months old; Visit 7 (V07) = 16-32 months old" width="100%" height="auto" class="center">
-
-## Data Types Included in Release
-
-**HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details.** In summary:
-
-- <a href="../datacuration/phenotypes" target="_blank">Tabulated data</a> contain data across all participants organized according to a standardized tabulated format for HBCD (*includes Behavior, Biospecimens, Demographics, data derived from file-based MR/EEG data, etc.*).
-- <a href="../datacuration/file-based-data/" target="_blank">File-based data</a> are in varied, modality-specific formats. This includes <a href="../datacuration/file-based-data/#raw-bids" target="_blank">raw BIDS data</a> and <a href="../datacuration/file-based-data/#derivatives" target="_blank">processed derivatives</a> organized under subject/session-level folders (*MRI/MRS, EEG, and Wearable Sensors*) as well as <a href="../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a> aggregated across participants for certain modalities (*including Genomics*).
-
-## Instruments by Domain
-
-Expand the sections below to see a list of measures associated with each domain included in the latest release data.
-
-<img src="../images/instructions.png" width="90%" height="auto" class="center">
-
---------------
-
-<button id="toggle-all-btn" style="
-  padding: 2px 14px;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  cursor: pointer;
-">
-  Expand All Sections ↕️
-</button>
-
-<div id="adm" class="table-banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fa fa-clipboard-list"></i></span>
-  <span class="text-with-link">
-  <span class="text">Administrative</span>
-  <a class="anchor-link" href="#adm" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <th>Instrument</th>
@@ -83,19 +37,9 @@ Expand the sections below to see a list of measures associated with each domain 
 </tr>
 </tbody>
 </table>
-</div>
 
-<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-id-card"></i></span>
-  <span class="text-with-link">
-  <span class="text">Demographics</span>
-  <a class="anchor-link" href="#demo" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+## <span class="emoji"><i class="fas fa-id-card"></i></span> Demographics
+
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
     <tr>
@@ -117,21 +61,9 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
 </tbody>
 </table>
-</div>
 
-### Behavior, Biology, & Environment
+## <span class="emoji"><i class="fa fa-people-arrows"></i></span> Behavior & Caregiver-Child Interaction
 
-<div id="mh" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-people-arrows"></i></span>
-  <span class="text-with-link">
-  <span class="text">Behavior & Caregiver-Child Interaction</span>
-  <a class="anchor-link" href="#mh" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <tr>
@@ -206,7 +138,11 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
   </tbody>
   </table>
-</div>
+
+
+### Behavior, Biology, & Environment
+
+
 
 <div id="biospec" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-vial"></i></span>
@@ -825,7 +761,7 @@ Expand the sections below to see a list of measures associated with each domain 
 <tbody>
 <tr>
 <td rowspan="7"><b>Tabular<br>Imaging</b></td>
-  <td><a href="mri/qc/#brainswipes" target="_blank">BrainSwipes (Manual QC)</a></td>
+  <td><a href="mri/brainswipes/" target="_blank">BrainSwipes (Manual QC)</a></td>
   <td>
   <code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code><br>
   <code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code>
@@ -931,4 +867,3 @@ Expand the sections below to see a list of measures associated with each domain 
 </tbody>
 </table>
 </div>
-
