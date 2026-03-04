@@ -48,7 +48,7 @@ hbcd/
 
 ### `Olink_allplates_long`
 
-This is a csv file containing protein NPX estimates where each row represents a unique participant-protein combination. This file format can be used with [Olink Insight](https://olink.com/software/olink-insight), a web-based data analysis application provided by Olink. Each row in this data file represents a unique combination of participant and protein: 
+This is a csv file containing **protein NPX estimates where each row represents a unique participant-protein combination**. This file format can be used with [Olink Insight](https://olink.com/software/olink-insight), a web-based data analysis application provided by Olink. Each row in this data file represents a unique combination of participant and protein: 
 
 <table class="compact-table">
 <tbody>
@@ -63,7 +63,7 @@ This is a csv file containing protein NPX estimates where each row represents a 
 </table>
 
 ### `Olink_allplates_wide`
-This is a csv file in wide format where each row represents a participant with individual protein NPX values provided in columns. Each row in this data file represents a study participant, with protein values listed in columns:
+This is a csv file in wide format where **each row represents a participant with individual protein NPX values provided in columns**. Each row in this data file represents a study participant, with protein values listed in columns:
 
 <table class="compact-table">
 <tbody>
@@ -75,21 +75,63 @@ This is a csv file in wide format where each row represents a participant with i
 ## File Variables
 Below are a description of each variable (column) in the Olink files: 
 
-* SampleID: Participant ID or control ID 
-  * Control IDs = external controls that are added to every plate, the 3 types of external controls are as follows 
-      * SC = sample control, pooled plasma spiked with protein, basically a positive control used to monitor that the assay is working, don’t need to worry about it on the data analysis side of things 
-      * NC = negative control, used to determine levels of background signal and calculate LOD 
-      * PC = place control, used to normalize between plates 
-* PlateID: 1 – 15 
-* [Protein]_Count: the raw data (number of times the oligo sequence was counted in the sample) 
-* [Protein]_ExtNPX: count normalized by extension control 
-* [Protein]_NPX: ExtNPX normalized by median plate intensity, **this is the most commonly used output variable for analyses** 
-    * NPX = Normalized Protein eXpression 
-    * NPX values are arbitrary proprietary units that reflect protein quantity. Higher NPX values represent higher protein abundance 
-    * NPX is a log2 value, meaning that a difference of 1 NPX represents a doubling of protein of 1 NPX represents a doubling of protein 
-    * NPX values for the same protein across samples or plates are comparable, but NPX values across proteins are not directly comparable 
-    * Normalization by median plate intensity is recommended to be used by Olink when there is sufficient sample size 
-* [Protein]_PCNormalizedNPX: ExtNPX normalized by plate control (a pooled plasma sample that is added to every plate) 
+<!-- <style>
+table ul {
+  margin: 0.3em 0 0.3em 1.2em;
+}
+table p {
+  margin: 0.3em 0;
+}
+</style> -->
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>SampleID</strong></td>
+  <td style="word-wrap: break-word; white-space: normal;">Participant ID or Control ID, which are external controls added to every plate. The three types are:
+        <ul>
+          <li><strong>SC</strong> (Sample Control): pooled plasma spiked with protein; positive control used to monitor assay performance. Not needed for downstream data analysis.</li>
+          <li><strong>NC</strong> (Negative Control): used to determine background signal levels and calculate LOD.</li>
+          <li><strong>PC</strong> (Plate Control): used to normalize between plates.</li>
+        </ul>
+  </td>
+</tr>
+<tr>
+  <td><strong>PlateID</strong></td>
+  <td>Plate number (1–15)</td>
+</tr>
+<tr>
+  <td><strong>[Protein]_Count</strong></td>
+  <td>Raw count data (number of times the oligo sequence was counted in the sample)</td>
+</tr>
+<tr>
+  <td><strong>[Protein]_ExtNPX</strong></td>
+  <td>Count normalized by extension control</td>
+</tr>
+<tr>
+  <td><strong>[Protein]_NPX</strong></td>
+  <td style="word-wrap: break-word; white-space: normal;">ExtNPX normalized by median plate intensity - <strong>this is the most commonly used output variable for analyses.</strong>
+    <ul>
+      <li><strong>NPX</strong> = Normalized Protein eXpression.</li>
+      <li>NPX values are arbitrary proprietary units reflecting protein quantity. Higher NPX values indicate higher protein abundance.</li>
+      <li>NPX is a log2 scale value: a difference of 1 NPX represents a doubling of protein abundance.</li>
+      <li>NPX values for the same protein across samples or plates are comparable, but NPX values across different proteins are not directly comparable.</li>
+      <li>Normalization by median plate intensity is recommended by Olink when sample size is sufficient.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td><strong>[Protein]_PCNormalizedNPX</strong></td>
+  <td>ExtNPX normalized by plate control (a pooled plasma sample added to every plate)</td>
+</tr>
+</tbody>
+</table>
 
 ## Full List of Assays 
 
