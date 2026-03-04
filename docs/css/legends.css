@@ -53,20 +53,21 @@ details ul:last-child {
 .assay-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 6px 16px;
+  gap: 2px 12px;
   font-family: monospace;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .assay-grid span {
   padding: 2px 4px;
 }
-.assay-grid .failed::after {
-  content: " *";
-}
-.failed-marker {
-  font-weight: bold;
-}
 .legend {
   font-size: 0.85rem;
   opacity: 0.8;
+}
+.assay-grid span.failed {
+  color: #b00020;
+  font-weight: 600;
+}
+.assay-grid span.failed::after {
+  content: " ✖";
 }
