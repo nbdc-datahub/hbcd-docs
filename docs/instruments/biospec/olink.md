@@ -133,6 +133,8 @@ Below are a description of each variable (column) in the Olink files:
 
 ## Quality Control
 
+### Proteins Failing to Meet QC
+
 The following proteins did not meet Olink’s quality control criteria and are therefore displayed as 0 for Count and NA for ExtNPX, NPX, and PCNormalizedNPX. 
 
   * BCL2L11 (O43521-2) 
@@ -146,14 +148,15 @@ The following proteins did not meet Olink’s quality control criteria and are t
   * CLEC7A (Q9BXN2) 
   * MGLL (Q99685)  
 
-Samples were run on 15 plates (numbered 1 – 15).
 
-Proteins demonstrating a plate effect are not removed from the data. 46 proteins demonstrated a plate effect when plates were normalized by median plate intensity - click to expand section below for details:
+### Plate Effects
+
+Samples were run on 15 plates (numbered 1 – 15). Proteins demonstrating a plate effect are not removed from the data. **337 proteins** demonstrated a plate effect when plates were normalized by plate control. **46 proteins** demonstrated a plate effect when plates were normalized by median plate intensity - click to expand section below for details:
 
 <div id="plate-effects" class="table-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-circle-info"></i></span>
   <span class="text-with-link">
-  <span class="text">Plate Effects</span>
+  <span class="text">Plate Effects When Normalized by Median Plate Intensity </span>
   <a class="anchor-link" href="#plate-effects" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -383,9 +386,7 @@ Proteins demonstrating a plate effect are not removed from the data. 46 proteins
 </tr>
 </tbody>
 </table>
-</div>
-
-337 proteins demonstrated a plate effect when plates were normalized by plate control.  
+</div> 
 
 ## Resources
 
