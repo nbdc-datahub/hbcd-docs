@@ -151,3 +151,12 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleAllBtn.textContent = allExpanded ? "Expand All Sections  ↕️" : "Collapse All Sections ↕️";
   });
 });
+
+
+// Assay search functionality (Olink page)
+document.getElementById("assaySearch").addEventListener("input", function() {
+  const filter = this.value.toUpperCase();
+  document.querySelectorAll(".assay-grid span").forEach(el => {
+    el.style.display = el.textContent.includes(filter) ? "" : "none";
+  });
+});
