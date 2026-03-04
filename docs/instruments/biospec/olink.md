@@ -161,17 +161,19 @@ Proteins demonstrating a plate effect are not removed from the data. 46 proteins
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table dir="ltr" border="1" cellspacing="0" cellpadding="0" data-sheets-root="1" data-sheets-baot="1"><colgroup><col width="100" /><col width="100" /><col width="100" /><col width="100" /><col width="100" /><col width="100" /><col width="100" /></colgroup>
+<!-- <table dir="ltr" border="1" cellspacing="0" cellpadding="0" data-sheets-root="1" data-sheets-baot="1"><colgroup><col width="100" /><col width="100" /><col width="100" /><col width="100" /><col width="100" /><col width="100" /><col width="100" /></colgroup> -->
+<table class="compact-table-no-vertical-lines">
+<thead>
+  <tr>
+  <th>Assay</th>
+  <th>P-value</th>
+  <th>Adj p-value</th>
+  <th>&nbsp;</th>
+  <th>Assay</th>
+  <th>P-value</th>
+  <th>Adj p-value</th>
+  </tr>
 <tbody>
-<tr>
-<td>Assay</td>
-<td>P-value</td>
-<td>Adj p-value</td>
-<td>&nbsp;</td>
-<td>Assay</td>
-<td>P-value</td>
-<td>Adj p-value</td>
-</tr>
 <tr>
 <td>IL4</td>
 <td>9.36E-38</td>
@@ -383,9 +385,7 @@ Proteins demonstrating a plate effect are not removed from the data. 46 proteins
 </table>
 </div>
 
-337 proteins demonstrated a plate effect when plates were normalized by plate control. 
-
-Limits of detection were not calculated for this data release; however, LODs should be calculated based on NC values and proteins with a large number of samples being below the LOD should be removed or evaluated with caution.  
+337 proteins demonstrated a plate effect when plates were normalized by plate control.  
 
 ## Resources
 
