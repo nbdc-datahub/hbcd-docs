@@ -133,7 +133,7 @@ Below are a description of each variable (column) in the Olink files:
 
 ## Quality Control
 
-### Proteins Failing to Meet QC
+### Olink QC 
 
 The following proteins did not meet Olink’s quality control criteria and are therefore displayed as 0 for Count and NA for ExtNPX, NPX, and PCNormalizedNPX. 
 
