@@ -100,7 +100,7 @@ Tracking these elements allows researchers to see when and how questions change,
 
 ## Additional Resources
 - [https://www.repronim.org/reproschema](https://www.repronim.org/reproschema/)
-- [hbcd-loris2reproschema](https://github.com/ReproNim/hbcd-loris2reproschema) GitHub repository
+- [HBCD-ReproSchema](https://github.com/ReproNim/HBCD-ReproSchema) GitHub repository
 
 ## References
 <div class="references">
