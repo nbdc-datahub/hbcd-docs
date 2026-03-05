@@ -761,51 +761,51 @@ Expand the sections below to see a list of measures associated with each domain 
 <tr>
   <td rowspan="2">Structural MRI (<a href="mri/smri" target="_blank">sMRI</a>)</td>
   <td rowspan="2"><code>anat/</code></td>
-  <td><a href="../../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a></td>
+  <td><a href="../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a></td>
   <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 </tr>
 <tr>
-  <td><a href="../../instruments/mri/smri/#mriqc" target="_blank">MRIQC</a></td>
+  <td><a href="../instruments/mri/smri/#mriqc" target="_blank">MRIQC</a></td>
   <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 </tr>
 <tr>
   <td>Functional MRI (<a href="mri/fmri" target="_blank">fMRI</a>)</td>
   <td><code>func/</code>, <code>fmap/</code></td>
-  <td><a href="../../instruments/mri/fmri/#mriqc" target="_blank">MRIQC</a></td>
+  <td><a href="../instruments/mri/fmri/#mriqc" target="_blank">MRIQC</a></td>
   <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 </tr>
 <tr>
     <td rowspan="2">Structural+Functional MRI</td>
     <td rowspan="2"></td>
-  <td><a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> & <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">FreeSurfer & M-CRIB-S</a></td>
+  <td><a href="../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> & <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">FreeSurfer & M-CRIB-S</a></td>
   <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
 </tr>
 <tr>
-  <td><a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a></td>
+  <td><a href="../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a></td>
   <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 </tr>
 <tr>
     <td>Quantitative MRI (<a href="mri/qmri" target="_blank">qMRI</a>)</td>
     <td><code>anat/</code></td>
-    <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI & qMRI PostProc</a></td>
+    <td><a href="../instruments/mri/qmri/#derivatives" target="_blank">SyMRI & qMRI PostProc</a></td>
     <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
 </tr>
 <tr>
     <td rowspan="2">Diffusion MRI (<a href="mri/dmri" target="_blank">dMRI</a>)</td>
     <td rowspan="2"><code>dwi/</code></td>
-    <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
+    <td><a href="../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 </tr>
 <tr>
-<td><a href="mri/dmri/#qsirecon" target="_blank">QSIRecon</a> (<a href="../../instruments/mri/dmri/#qsirecon-DSIStudio" target="_blank">DSI Studio</a>/
-  <a href="../../instruments/mri/dmri/#qsirecon-DIPYDKI" target="_blank">DIPY DKI</a>/
-  <a href="../../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">TORTOISE</a>)</td>
+<td><a href="mri/dmri/#qsirecon" target="_blank">QSIRecon</a> (<a href="../instruments/mri/dmri/#qsirecon-DSIStudio" target="_blank">DSI Studio</a>/
+  <a href="../instruments/mri/dmri/#qsirecon-DIPYDKI" target="_blank">DIPY DKI</a>/
+  <a href="../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">TORTOISE</a>)</td>
   <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
 </tr>
 <tr>
   <td>MR Spectroscopy (<a href="mri/mrs" target="_blank">MRS</a>)</td>
   <td><code>mrs/</code></td>
-  <td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a></td>
+  <td><a href="../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a></td>
   <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 </tr>
 </tbody>
