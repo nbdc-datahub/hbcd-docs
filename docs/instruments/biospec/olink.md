@@ -30,77 +30,23 @@ hbcd/
                 |__ Olink_allplates_wide.csv
 </pre>
 
-## File Descriptions & Structure
 
-### `Olink_allplates_long`
+**[Protein NPX estimates](#normalized-protein-expression-npx) are provided in two files with different data structures:**  
 
-This is a csv file containing **protein NPX estimates where each row represents a unique participant-protein combination**. This file format can be used with [Olink Insight](https://olink.com/software/olink-insight), a web-based data analysis application provided by Olink. Each row in this data file represents a unique combination of participant and protein: 
+<table class="table-no-vertical-lines">
+<thead> <tr> <th></th> <th><code>Olink_allplates_long.csv</code></th> <th><code>Olink_allplates_wide.csv</code></th> </tr> </thead> <tbody> <tr> <td><strong>Format</strong></td> <td>Long</td> <td>Wide</td> </tr> 
+<tr> <td><strong>Structure</strong></td> <td>One row per participant–protein combination</td> <td>One row per participant & one column per protein</td> </tr> 
+<tr> <td><strong>Dimensions</strong></td> <td>538,080 rows × 16 columns</td> <td>1,416 rows × 1,522 columns</td> </tr> 
+</tbody> </table>
 
-<table class="compact-table">
-<tbody>
-<tr><td>Participant 1</td><td>Protein 1</td></tr>
-<tr><td>Participant 2</td><td>Protein 1</td></tr>
-<tr><td>Participant 3</td><td>Protein 1</td></tr>
-<tr><td colspan="2">...</td></tr>
-<tr><td>Participant 1</td><td>Protein 2</td></tr>
-<tr><td>Participant 2</td><td>Protein 2</td></tr>
-<tr><td>Participant 3</td><td>Protein 2</td></tr>
-</tbody>
-</table>
+## Details
 
-### `Olink_allplates_wide`
-This is a csv file in wide format where **each row represents a participant with individual protein NPX values provided in columns**. Each row in this data file represents a study participant, with protein values listed in columns:
+### Normalized Protein eXpression (NPX)
+Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX is a **proprietary, arbitrary unit that reflects relative protein abundance**, with higher values indicating higher abundance. It is reported on a log₂ scale, so a difference of 1 NPX represents a two-fold difference in protein abundance. Note that NPX is a relative measures and so is **only comparable for the same protein** across samples and plates. Direct comparison between different proteins are not valid. The most commonly used output variable for analyses, following Olink recommendations, is **NPX normalized by median plate intensity** (the variable 'NPX' in the release data). 
 
-<table class="compact-table">
-<tbody>
-<tr style="background-color: white;"><td>Participant 1</td><td>Protein 1</td><td>Protein 2</td><td>Protein 3</td></tr>
-<tr><td>Participant 2</td><td>Protein 1</td><td>Protein 2</td><td>Protein 3</td></tr>
-</tbody>
-</table>
+### Proteins Assays
 
-## File Variables
-Below are a description of each variable (column) in the Olink files: 
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th>Variable</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><strong>SampleID</strong></td>
-  <td style="word-wrap: break-word; white-space: normal;">Participant ID or Control ID, which are external controls added to every plate. The three types are:
-        <ul>
-          <li><strong>SC</strong> (Sample Control): pooled plasma spiked with protein; positive control used to monitor assay performance. Not needed for downstream data analysis.</li>
-          <li><strong>NC</strong> (Negative Control): used to determine background signal levels and calculate LOD.</li>
-          <li><strong>PC</strong> (Plate Control): used to normalize between plates.</li>
-        </ul>
-  </td>
-</tr>
-<tr>  <td><strong>PlateID</strong></td>  <td>Plate number (1–15)</td></tr>
-<tr>  <td><strong>[Protein]_Count</strong></td>  <td>Raw count data (number of times the oligo sequence was counted in the sample)</td></tr>
-<tr>  <td><strong>[Protein]_ExtNPX</strong></td>  <td>Count normalized by extension control</td></tr>
-<tr>
-  <td><strong>[Protein]_NPX</strong></td>
-  <td style="word-wrap: break-word; white-space: normal;">ExtNPX normalized by median plate intensity - <strong>this is the most commonly used output variable for analyses.</strong>
-    <ul>
-      <li><strong>NPX</strong> = Normalized Protein eXpression.</li>
-      <li>NPX values are arbitrary proprietary units reflecting protein quantity. Higher NPX values indicate higher protein abundance.</li>
-      <li>NPX is a log2 scale value: a difference of 1 NPX represents a doubling of protein abundance.</li>
-      <li>NPX values for the same protein across samples or plates are comparable, but NPX values across different proteins are not directly comparable.</li>
-      <li>Normalization by median plate intensity is recommended by Olink when sample size is sufficient.</li>
-    </ul>
-  </td>
-</tr>
-<tr><td><strong>[Protein]_PCNormalizedNPX</strong></td><td>ExtNPX normalized by plate control (a pooled plasma sample added to every plate)</td></tr>
-</tbody>
-</table>
-
-## Full List of Assays 
-
-**Internal assay controls** include an **extension control**, used for normalization to generate NPX values, as well as **incubation** and **amplification controls**, which monitor assay performance (QC).
+**Click to expand the [section below](#assays) to view the full list of proteins assayed by Olink for HBCD.**
 
 <div id="assays" class="table-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-circle-info"></i></span>
@@ -126,11 +72,67 @@ Below are a description of each variable (column) in the Olink files:
 </div>
 </div>
 
+
+## File Variables
+
+### Long File (`Olink_allplates_long.csv`)
+
+<table class="table-no-vertical-lines">
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>SampleID</td><td>Participant or control identifier</td></tr>
+<tr>
+<td>SampleType</td>
+<td>Sample type. Possible values include:
+    <ul>
+    <li><b>SAMPLE</b></li>
+    <li><b>NEGATIVE_CONTROL</b> (used to determine background signal levels and calculate LOD)</li>
+    <li><b>PLATE_CONTROL</b> (for normalization between plates)</li>
+    <li><b>SAMPLE_CONTROL</b> (positive control; not needed for downstream data analysis)</li>
+    </ul>
+</td></tr>
+<tr><td>WellID</td><td>Plate well position</td></tr>
+<tr><td>PlateID</td><td>Plate number (1-15)/run identifier</td></tr>
+<tr><td>DataAnalysisRefID</td><td>Olink analysis reference ID</td></tr>
+<tr><td>OlinkID</td><td>Olink assay identifier</td></tr>
+<tr><td>UniProt</td><td>UniProt or control code</td></tr>
+<tr><td>Assay</td><td>Assay/control name</td></tr>
+<tr><td>AssayType</td><td>assay, ext_ctrl, inc_ctrl, amp_ctrl</td></tr>
+<tr><td>Block</td><td>Olink plate block</td></tr>
+<tr><td>Count</td><td>Raw count value (number of times the oligo sequence was counted in the sample)</td></tr>
+<tr><td>ExtNPX</td><td>Extension-normalized value (count normalized by extension control)</td></tr>
+<tr><td>NPX</td><td>Normalized Protein eXpression value (ExtNPX normalized by median plate intensity)</td></tr>
+<tr><td>PCNormalizedNPX</td><td>Plate-control normalized NPX-like value</td></tr>
+<tr><td>AssayQC</td><td>Assay-level QC flag</td></tr>
+<tr><td>SampleQC</td><td>Sample-level QC flag</td></tr>
+</tbody>
+</table>
+
+Reference: [Olink® Explore Overview](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf)
+
+### Wide File (`Olink_allplates_wide.csv`)
+
+- Identifier columns:
+    - SampleID
+    - PlateID
+- Expanded metric columns for each assay/control:
+    - {Assay}_Count
+    - {Assay}_ExtNPX
+    - {Assay}_NPX 
+    - {Assay}_PCNormalizedNPX
+ - Observed assay/control count: 380
+ - Observed metric suffixes: Count, ExtNPX, NPX, PCNormalizedNPX
+
 ## Quality Control
 
 #### Olink QC 
 
-Proteins that did not meet Olink’s quality control criteria have values of **0** for **[Protein]_Count** and **NA** for **ExtNPX**, **NPX**, and **PCNormalizedNPX**. This includes the following proteins (also indicated in the [Full Assay List](#assays) above):
+Internal assay controls include an **extension control**, used for normalization to generate NPX values, as well as **incubation** and **amplification controls**, which monitor assay performance (QC). See the [Olink® Explore Overview](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf) for a detailed description of these controls. Proteins that did not meet Olink’s quality control criteria have values of **0** for **[Protein]_Count** and **NA** for **ExtNPX**, **NPX**, and **PCNormalizedNPX**. This includes the following proteins (also indicated in the [Full Assay List](#assays) above):
 
 <ul style="font-size: 0.9em;">
 <li>BCL2L11 (O43521-2) </li>
@@ -202,4 +204,10 @@ Samples were run on 15 plates (numbered 1–15). Proteins exhibiting a plate eff
 ## Resources
 
 - [Olink.com](https://olink.com/products/olink-explore-3072-384)
+- [Olink Insight](https://olink.com/software/olink-insight): a web-based data analysis application provided by Olink that cab be used for release data 
+- [Olink® Explore Overview User Manual](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf#page=6&zoom=100,170,128)
 
+## References
+<div class="references"> 
+<p>Olink Proteomics AB. (2025). <i>Olink® Explore Overview User Manual</i> (Version 5.0, Doc. 1187) [PDF]. <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf</a></p>  
+</div>
