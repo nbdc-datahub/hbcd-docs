@@ -1,6 +1,6 @@
 # Olink Explore 384 Inflammation
 
-Protein abundance of inflammatory markers generated using the **Olink Explore 384 Inflammation 1 Panel and read with Explore version 6.7.2** ([Olink.com](https://olink.com/products/olink-explore-3072-384)) are provided for the birth parent during pregnancy at Visit 1 as a measure of maternal inflammation.
+Protein abundance of inflammatory markers generated using the **Olink Explore 384 Inflammation 1 Panel ([Olink® Explore 3072/384](https://olink.com/products/olink-explore-3072-384))** and read with Explore version 6.7.2 are provided for the birth parent during pregnancy at Visit 1 as a measure of maternal inflammation.
 
 ## Release Data
 
@@ -41,17 +41,14 @@ hbcd/
 
 ## Details
 
-### Normalized Protein eXpression (NPX)
-Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX is a **proprietary, arbitrary unit that reflects relative protein abundance**, with higher values indicating higher abundance. It is reported on a log₂ scale, so a difference of 1 NPX represents a two-fold difference in protein abundance. Note that NPX is a relative measures and so is **only comparable for the same protein** across samples and plates. Direct comparison between different proteins are not valid. The most commonly used output variable for analyses, following Olink recommendations, is **NPX normalized by median plate intensity** (the variable 'NPX' in the release data). 
+### Olink Panel
 
-### Proteins Assays
-
-**Click to expand the [section below](#assays) to view the full list of proteins assayed by Olink for HBCD.**
+Protein abundance was measured using the **Olink® Explore 384 Inflammation Panel** - visit [Olink® Explore 3072/384](https://olink.com/products/olink-explore-3072-384) for details. The expandable section below provides a **quick reference of assays included in this panel**, with markers indicating assays that did not pass Olink QC in this dataset.
 
 <div id="assays" class="table-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-circle-info"></i></span>
   <span class="text-with-link">
-  <span class="text">Full Assay List</span>
+  <span class="text">Olink Explore 384 Inflammation Panel Quick Guide</span>
   <a class="anchor-link" href="#assays" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -72,6 +69,8 @@ Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX i
 </div>
 </div>
 
+### Normalized Protein eXpression (NPX)
+Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX is a **proprietary, arbitrary unit that reflects relative protein abundance**, with higher values indicating higher abundance. It is reported on a log₂ scale, so a difference of 1 NPX represents a two-fold difference in protein abundance. Note that NPX is a relative measures and so is **only comparable for the same protein** across samples and plates. Direct comparison between different proteins are not valid. The most commonly used output variable for analyses, following Olink recommendations, is **NPX normalized by median plate intensity** (the variable 'NPX' in the release data). 
 
 ## File Variables
 
@@ -132,7 +131,7 @@ Reference: [Olink® Explore Overview](https://7074596.fs1.hubspotusercontent-na1
 
 #### Olink QC 
 
-Internal assay controls include an **extension control**, used for normalization to generate NPX values, as well as **incubation** and **amplification controls**, which monitor assay performance (QC). See the [Olink® Explore Overview](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf) for a detailed description of these controls. Proteins that did not meet Olink’s quality control criteria have values of **0** for **[Protein]_Count** and **NA** for **ExtNPX**, **NPX**, and **PCNormalizedNPX**. This includes the following proteins (also indicated in the [Full Assay List](#assays) above):
+Internal assay controls include an **extension control**, used for normalization to generate NPX values, as well as **incubation** and **amplification controls**, which monitor assay performance (QC). See the [Olink® Explore Overview](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf) for a detailed description of these controls. Proteins that did not meet Olink’s quality control criteria have values of **0** for **[Protein]_Count** and **NA** for **ExtNPX**, **NPX**, and **PCNormalizedNPX**. This includes the following proteins:
 
 <ul style="font-size: 0.9em;">
 <li>BCL2L11 (O43521-2) </li>
