@@ -204,7 +204,7 @@ Samples were run on 15 plates (numbered 1–15). Proteins exhibiting a plate eff
 ## Resources
 
 - [Olink.com](https://olink.com/products/olink-explore-3072-384)
-- [Olink Insight](https://olink.com/software/olink-insight): a web-based data analysis application provided by Olink that cab be used for release data 
+- [Olink Insight](https://olink.com/software/olink-insight): a web-based data analysis application provided by Olink that can be used for release data 
 - [Olink® Explore Overview User Manual](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf#page=6&zoom=100,170,128)
 
 ## References
