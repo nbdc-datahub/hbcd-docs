@@ -4,6 +4,11 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
+/* Hide footer that says Built with MkDocs using a theme provided by Read the Docs. */
+footer {
+  display: none;
+}
+
 /* 2-column list */
 .two-column-list {
   display: flex;

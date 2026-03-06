@@ -758,7 +758,7 @@ Expand the sections below to see a list of measures associated with each domain 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
-    <span class="text">Imaging</span>
+    <span class="text">Imaging (<i>File-Based Data</i>)</span>
     <a class="anchor-link" href="#mri" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>
@@ -766,7 +766,6 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> <b>File-Based Data</b></p>
 <table class="compact-table-no-vertical-lines">
 <tfoot><tr><td colspan="4">
  <sup><b>1</b></sup> See <a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>Which file-based data are also available as HBCD tabulated data?</i></a>
@@ -832,41 +831,67 @@ Expand the sections below to see a list of measures associated with each domain 
 </tr>
 </tbody>
 </table>
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> &nbsp; <b>Tabulated Data</b></p>
+</div>
+
+<div id="mri-tab" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-brain"></i></span>
+  <span class="text-with-link">
+    <span class="text">Tabulated Imaging</span>
+    <a class="anchor-link" href="#mri-tab" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
 <i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>see details</i></a>)
 </p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th>Domain</th>
 <th>Table</th>
+<th>Construct</th>
 <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td rowspan="7"><b>Tabular<br>Imaging</b></td>
-  <td><a href="mri/qc#brainswipes" target="_blank">BrainSwipes (Manual QC)</a></td>
-  <td>
-  <code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code><br>
-  <code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code>
-  </td>
+<td><a href="mri/qc#brainswipes" target="_blank">BrainSwipes</a></td>
+<td>Manual QC</td>
+<td>
+<code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code><br>
+<code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code>
+</td>
+</tr>
+<tr>
+<td><a href="mri/summary-forms" target="_blank">MRI Data Summary Form</a></td>
+<td>Admin</td>
+<td><code>mri_ra_chkl_data</code></td>
+</tr>
+<tr>
+<td><a href="mri/summary-forms" target="_blank">MRI Scan Session Summary Form</a></td>
+<td>Admin</td>
+<td><code>mri_ra_chkl_scan</code></td>
 </tr>
 <tr>
 <td><a href="mri/prescan-questionnaire" target="_blank">Pre-Scan Questionnaire</a></td>
+<td>Infant Sleep</td>
 <td><code>mri_ra_prep</code></td>
 </tr>
 <tr>
-    <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; MRIQC pipeline outputs</td>
+    <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; <a href="../../instruments/mri/fmri/#mriqc" target="_blank">MRIQC</a></td>
+    <td>Pipeline</td>
     <td><code>img_mriqc_<span class="blue-text">&lt;T1w|T2w|bold&gt;</span></code></td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; BIBSNet pipeline outputs</td>
+  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; <a href="../../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a></td>
+  <td>Pipeline</td>
   <td><code>img_bibsnet_space-<span class="blue-text">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes</code></td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; XCP-D pipeline outputs</td>
+  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; <a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a></td>
+  <td>Pipeline</td>
   <td><code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-sulc_morph</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-thickness_morph</code><br>
@@ -876,11 +901,13 @@ Expand the sections below to see a list of measures associated with each domain 
   </td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; QSIPrep pipeline outputs</td>
+  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
+  <td>Pipeline</td>
   <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; OSPREY-BIDS pipeline outputs</td>
+  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; <a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a></td>
+  <td>Pipeline</td>
   <td>
     <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
     <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
