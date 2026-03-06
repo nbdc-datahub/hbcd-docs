@@ -1,4 +1,4 @@
-# Olink Explore 384 Inflammation
+# Olink Explore 384 Inflammation 1 Panel
 
 Protein abundance of inflammatory markers generated using the **Olink Explore 384 Inflammation 1 Panel ([Olink® Explore 3072/384](https://olink.com/products/olink-explore-3072-384))** and read with Explore version 6.7.2 are provided for the birth parent during pregnancy at Visit 1 as a measure of maternal inflammation.
 
@@ -43,7 +43,7 @@ hbcd/
 
 ### Olink Panel
 
-Protein abundance was measured using the **Olink® Explore 384 Inflammation Panel** - visit [Olink® Explore 3072/384](https://olink.com/products/olink-explore-3072-384) for details. The expandable section below provides a **quick reference of assays included in this panel**, with markers indicating assays that did not pass Olink QC in this dataset.
+Protein abundance was measured using the **Olink® Explore 384 Inflammation 1 Panel** - visit [Olink® Explore 3072/384](https://olink.com/products/olink-explore-3072-384) for details. The expandable section below provides a **quick reference of assays included in this panel**, with markers indicating assays that did not pass Olink QC in this dataset.
 
 <div id="assays" class="table-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-circle-info"></i></span>
@@ -148,7 +148,7 @@ Internal assay controls include an **extension control**, used for normalization
 
 #### Plate Effects
 
-Samples were run on 15 plates (numbered 1–15). Proteins exhibiting a plate effect were not excluded from the release. A total of **337 proteins** demonstrated a plate effect when normalizing by plate control; a total of **46 proteins** demonstrated a plate effect when normalizing by median plate intensity (expand [section below](#plate-effects) for stats).
+Samples were run on 15 plates (numbered 1–15). Proteins exhibiting a plate effect were not excluded from the release. Plate effects were determined by ANOVA with a p-value threshold of *.0033* (*.05 / 15*). Post-hoc tests were run to determine if plate effects were driven by a small number of outlier plates and this was determined not to be the case. A total of **337 proteins** demonstrated a plate effect when normalizing by plate control; a total of **46 proteins** demonstrated a plate effect when normalizing by median plate intensity (expand [section below](#plate-effects) for stats).
 
 <div id="plate-effects" class="table-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-table"></i></span>
