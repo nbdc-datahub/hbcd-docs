@@ -25,21 +25,6 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
 
 ---------------------------------------------
 
-
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>A modified Visit 2 protocol is employed for postnatal recruits (PNR). - THIS IS FROM AIRTABLE, MAY NOT BE ACCURATE</p> 
-</div>
-
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
