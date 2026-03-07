@@ -53,16 +53,25 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
 <tr><td><b>Visits</b></td>
 <td>V02, V03, V04, V06</td></tr>
 <tr><td><b>QC Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">TO DO</td></tr>      
+<td style="word-wrap: break-word; white-space: normal; color: red;">TO DO</td></tr>      
 </tbody>
 </table>
 
 ## Instrument Details
 
-Information provided in the release from each of these forms is outlined below.
+Click to expand the sections below for an overview of the information provided in the release from each of the MRI summary forms:
 
-### MRI Scan Session Summary Form
-
+<div id="scan-session-form" class="table-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa fa-circle-info"></i></span>
+<span class="text-with-link">
+  <span class="text">MRI Scan Session Summary Form</span>
+    <a class="anchor-link" href="#scan-session-form" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -101,9 +110,19 @@ Information provided in the release from each of these forms is outlined below.
 </tr>
 </tbody>
 </table>
+</div>
 
-### MRI Data Summary Form
-
+<div id="data-form" class="table-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa fa-circle-info"></i></span>
+<span class="text-with-link">
+  <span class="text">MRI Data Summary Form</span>
+    <a class="anchor-link" href="#data-form" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -126,4 +145,5 @@ Information provided in the release from each of these forms is outlined below.
 </tr>
 </tbody>
 </table>
+</div>
 
