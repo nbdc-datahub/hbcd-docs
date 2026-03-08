@@ -91,25 +91,97 @@ General visit information includes site, project, and information about missed v
 
 ## Substance Use Flags
 
-**SU flags denote whether the participant met study-defined criteria for substance use for:** 
+### Instrument-Specific SU Flags
 
- - Cannabis (`par_visit_data_su_flag_cannabis`)
- - Nicotine (`par_visit_data_su_flag_nicotine`)
- - Opioid (`par_visit_data_su_flag_opioid`)
- - Alcohol (`par_visit_data_su_flag_alcohol`) (information from the ASSIST used to convert typical drinks into standard drinks) 
- 
-**This information is derived based on any positive reports from the following instruments:**
+**SU flags** indicate whether a participant met study-defined criteria for prenatal exposure to **Alcohol, Nicotine, Cannabis, Opioids, or Stimulants.** Instrument-specific flags are generated from positive reports in the instruments listed below. See  [Gurka et al., 2025](https://doi.org/10.1016/j.dcn.2024.101494) for full methodological details.
 
- - The Timeline Follow Back (<a href="../../pregexp/su/tlfb" target="_blank">TLFB</a>) (self-reported use)
- - <a href="../../pregexp/pex" target="_blank">Health V2- Infancy</a> diagnosis of Neonatal Opioid Withdrawal Syndrome (NOWS) or Fetal Alcohol Syndrome (FAS) (self-reported use, field `007`)
- - <a href="../../biospec/urine" target="_blank">USDTL urine toxicology results</a> (<i>note: <a href="../../biospec/nails" target="_blank">Nail toxicology results</a> will be integrated into creation of SU flags in the future</i>)
- 
- See [Gurka et. al, 2025](https://doi.org/10.1016/j.dcn.2024.101494) for additional information.
+
+<table class="table-no-vertical-lines" style="width:100%; table-layout:fixed;"> 
+<thead> <tr> 
+<th>Instrument</th>
+<th>SU Flag Variables</th>
+<th>Positive Report</th>
+</tr> </thead>
+<tbody>
+<tr>
+<td>Biospecimen - <a href="../../biospec/urine" target="_blank">Urine</a><sup><b>1</b></sup></td>
+<td><code>su_flag_bio_bm_&lt;<span class="tooltip">SUBSTANCE<span class="tooltiptext">ethanol; nicotine; cannabinoid; opioid; stim</span></span>&gt;</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Positive USDTL urine toxicology result</td>
+</tr>
+<tr>
+<td>Timeline Follow Back (<a href="../../pregexp/su/tlfb" target="_blank">TLFB</a>)</td>
+<td><code>su_flag_tlfb_bm_&lt;<span class="tooltip">SUBSTANCE<span class="tooltiptext">alcohol; nicotine; cannabis; opioid; stimulant</span></span>&gt;</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Self-reported use</td>
+</tr>
+<tr>
+<td><strong><a href="../../pregexp/pex" target="_blank">Health V2 - Infancy</a></strong></td>
+<td><code>su_flag_healthv2_ch_&lt;fas|nows&gt;</code></td>
+<td style="word-wrap: break-word; white-space: normal;">Diagnosis of <span class="tooltip to">NOWS<span class="tooltiptext">Neonatal Opioid Withdrawal Syndrome</span></span> or <span class="tooltip">FAS<span class="tooltiptext">Fetal Alcohol Syndrome</span></span></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+  <td colspan="3" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
+    <sup><b>1</b></sup> <i><a href="../../biospec/nails" target="_blank">Nails</a> Biospecimen results will additionally be integrated into creation of SU flags in a future release</i>
+  </td>
+</tr>
+</tfoot>
+</table>
+
+### Derived SU Flags
+
+In addition to the above, the following derived SU flags **aggregate evidence across instruments** to provide a single indicator per substance. **A derived SU flag is reported as "Yes" if one or more contributing instrument-specific flags are positive.**
+
+<table class="table-no-vertical-lines" style="width:100%; table-layout:fixed;"> 
+<thead>
+<tr> 
+<th style="width:20%">Substance</th>
+<th style="width:25%">Derived SU Flag</th>
+<th style="width:55%">Contributing Instrument Flags</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alcohol</td>
+<td><code>su_flag_alcohol</code></td>
+<td>
+<code>su_flag_bio_ethanol</code> (Urine toxicology)<br>
+<code>su_flag_tlfb_alcohol</code> (TLFB self-report)<br>
+<code>su_flag_healthv2_fas</code> (Health V2 – FAS diagnosis)
+</td>
+</tr>
+<tr>
+<td>Nicotine</td>
+<td><code>su_flag_nicotine</code></td>
+<td>
+<code>su_flag_bio_nicotine</code> (Urine toxicology)<br>
+<code>su_flag_tlfb_nicotine</code> (TLFB self-report)
+</td>
+</tr>
+<tr>
+<td>Cannabis</td>
+<td><code>su_flag_cannabis</code></td>
+<td>
+<code>su_flag_bio_cannabinoid</code> (Urine toxicology)<br>
+<code>su_flag_tlfb_cannabis</code> (TLFB self-report)
+</td>
+</tr>
+<tr>
+<td>Opioids</td>
+<td><code>su_flag_opioid</code></td>
+<td>
+<code>su_flag_bio_opioid</code> (Urine toxicology)<br>
+<code>su_flag_tlfb_opioid</code> (TLFB self-report)<br>
+<code>su_flag_healthv2_nows</code> (Health V2 – NOWS diagnosis)
+</td>
+</tr>
+</tbody>
+</table>
 
 <div id="su" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-sliders"></i></span>
   <span class="text-with-link">
-  <span class="text">Thresholds of Prenatal Exposure</span>
+  <span class="text">Prenatal Exposure Thresholds</span>
   <a class="anchor-link" href="#su" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -117,15 +189,23 @@ General visit information includes site, project, and information about missed v
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Thresholds of prenatal exposure used to assess enrollment goals for the HBCD Study are as follows. <b>For each substance, only one of the listed exposure thresholds must be met for substance use to be flagged as positive</b>.</p>
+<p>The thresholds below define the criteria used to determine whether an instrument-specific report is considered positive for prenatal exposure. <b>For each substance, only one of the listed exposure thresholds must be met for the derived SU flag to be positive</b>.</p>
 
 <table class="compact-table-no-vertical-lines" style="width:100%; table-layout:fixed;"> 
 <thead> <tr> 
 <th>Substance</th>
 <th>Data Source</th>
-<th>Exposure Threshold - <i>Substance use flagged as positive if one or more of the associated criteria are met</i></th>
+<th>Exposure Threshold
+<i>(Substance use flagged as positive if ≥1 criterion is met)</i></th>
 </tr> </thead>
 <tbody>
+<tr> 
+<td rowspan="4"><strong>Alcohol</strong></td>
+<td>TLFB</td> <td>Self-reported use ≥7 standard drinks per week for ≥2 weeks during pregnancy (Wk 03-09)</td></tr>
+<tr><td>TLFB</td> <td>Self-reported use ≥3 standard drinks per occasion on ≥2 occasions during pregnancy (Wk 03-09)</td> </tr>
+<tr><td>Health V2-Infancy</td> <td>Diagnosis of Fetal Alcohol Syndrome (FAS)</td></tr>
+<tr><td>Urine</td> <td>Positive alcohol toxicology result</td>
+</tr>
 <tr>
 <td rowspan="3"><strong>Opioids</strong></td>
 <td>TLFB</td>
@@ -137,12 +217,6 @@ General visit information includes site, project, and information about missed v
 <tr>
 <td>Urine</td> <td>Positive opioid toxicology result in research-collected biospecimen</td>
 </tr>
-<tr> 
-<td rowspan="4"><strong>Alcohol</strong></td>
-<td>TLFB</td> <td>Self-reported use ≥7 standard drinks per week for ≥2 weeks during pregnancy (Wk 03-09)</td></tr>
-<tr><td>TLFB</td> <td>Self-reported use ≥3 standard drinks per occasion on ≥2 occasions during pregnancy (Wk 03-09)</td> </tr>
-<tr><td>Health V2-Infancy</td> <td>Diagnosis of Fetal Alcohol Syndrome (FAS)</td></tr>
-<tr><td>Urine</td> <td>Positive alcohol toxicology result</td> </tr>
 <tr>
 <td rowspan="2"><strong>Cannabis</strong></td> <td>TLFB</td> <td>Self-reported cannabis use for ≥4 weeks during pregnancy (Wk 03-09)</td> </tr>
 <tr> <td>Urine</td> <td>Positive cannabis toxicology result</td> </tr> 
@@ -150,9 +224,10 @@ General visit information includes site, project, and information about missed v
 <tr> <td>Urine</td> <td>Positive nicotine toxicology result</td> </tr> 
 </tbody> </table>
 
-<p>© Copyright 2025 by Elsevier. All rights reserved. Used/adapted with permission from <a href="https://doi.org/10.1016/j.dcn.2024.101494">Gurka et. al, Dev Cogn Neurosci. 2025</a>.</p>
+<p>© Copyright 2025 by Elsevier. All rights reserved. Used/adapted with permission from <a href="https://doi.org/10.1016/j.dcn.2024.101494">Gurka et al., Dev Cogn Neurosci. 2025</a>.</p>
 </div>
 <p></p>
+
 
 ## Cohort & Caregiver Types
 

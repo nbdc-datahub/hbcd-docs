@@ -270,11 +270,11 @@ Diffusion-Weighted Imaging (DWI) data is provided in raw BIDS format as outlined
 
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See full details of HBCD diffusion MRI processing and innovations in <a href="https://doi.org/10.1101/2025.11.10.687672">Cieslak et. al 2025</a>.</span>
+  <span class="text">See full details of HBCD diffusion MRI processing and innovations in <a href="https://doi.org/10.1101/2025.11.10.687672">Cieslak et al. 2025</a>.</span>
 </div>
 <p></p>
 
-Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs head motion correction, susceptibility distortion correction, MP-PCA denoising, co-registration to T1w images, ANTS spatial normalization, and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5), [Cieslak et. al 2025](https://doi.org/10.1101/2025.11.10.687672)). QSIPrep derivatives are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which executes a curated set of reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. Multiple QSIRecon derivative folders are provided, each corresponding to a different reconstruction method or model. The diffusion encoding enables the estimation of multiple diffusion MRI models to create the derived data, including:
+Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs head motion correction, susceptibility distortion correction, MP-PCA denoising, co-registration to T1w images, ANTS spatial normalization, and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5), [Cieslak et al. 2025](https://doi.org/10.1101/2025.11.10.687672)). QSIPrep derivatives are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which executes a curated set of reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. Multiple QSIRecon derivative folders are provided, each corresponding to a different reconstruction method or model. The diffusion encoding enables the estimation of multiple diffusion MRI models to create the derived data, including:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
