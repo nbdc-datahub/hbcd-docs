@@ -60,7 +60,7 @@
 
 ## Instrument Details
 
-The **General Functioning (GF) subscale of the Family Assessment Device (FAD)** measures global functioning of the family unit, aiming to capture the quality of communication, emotional climate, problem-solving, and closeness among members the family unit. The original 12-item (GF12) subscale is one of seven subscales of The McMaster Family Assessment Device ([Epstein et al., 1983](https://doi.org/10.1111/j.1752-0606.1983.tb01497.x)). A shorter, validated 6-item (GF6+) subscale includes the six positively worded items from the GF12 ([Boterhoven de Haan et. al, 2015](https://doi.org/10.1111/famp.12113)).  The GF6+ is used in HBCD.
+The **General Functioning (GF) subscale of the Family Assessment Device (FAD)** measures global functioning of the family unit, aiming to capture the quality of communication, emotional climate, problem-solving, and closeness among members the family unit. The original 12-item (GF12) subscale is one of seven subscales of The McMaster Family Assessment Device ([Epstein et al., 1983](https://doi.org/10.1111/j.1752-0606.1983.tb01497.x)). A shorter, validated 6-item (GF6+) subscale includes the six positively worded items from the GF12 ([Boterhoven de Haan et al., 2015](https://doi.org/10.1111/famp.12113)).  The GF6+ is used in HBCD.
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>

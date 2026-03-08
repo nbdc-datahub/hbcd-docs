@@ -226,7 +226,7 @@ th, td {
   padding: 8px;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.6) !important; 
-  vertical-align: top; /* aligns all cell content at the top */
+  vertical-align: top !important;
 }
 .table-no-vertical-lines th {
   background-color: rgba(255, 255, 255, 0.6) !important;
@@ -262,7 +262,7 @@ th, td {
   padding: 6px 8px;
   word-wrap: break-word;
   white-space: normal;
-  vertical-align: top; 
+  vertical-align: top !important; 
 }
 /* Make lists behave more like normal text blocks */
 .compact-table ul {
@@ -300,7 +300,7 @@ th, td {
   border-right: none !important;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.6) !important; 
-  vertical-align: top;
+  vertical-align: top !important;
   padding: 0.1em 0.1em;
   padding-left: 1px;
   padding-right: 1px;
@@ -329,7 +329,7 @@ th, td {
 .expandable-table th,
 .expandable-table td {
   padding: 6px 8px;
-  vertical-align: top;
+  vertical-align: top !important;
   border-left: none !important;
   border-right: none !important;
 }
@@ -379,7 +379,7 @@ th, td {
   font-size: 1.0em;
 }
 .study-legend td {
-  vertical-align: top;
+  vertical-align: top !important;
   padding-top: 0;
   line-height: 1.5;
   border-left: 3px solid transparent;
@@ -426,7 +426,7 @@ th, td {
 .compact-table-no-vertical-lines th,
 .compact-table-no-vertical-lines td {
   padding: 6px;
-  vertical-align: top;
+  vertical-align: top !important;
 }
 .compact-table-no-vertical-lines th {
   text-align: left;
