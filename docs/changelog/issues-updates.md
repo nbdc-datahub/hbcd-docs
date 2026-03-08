@@ -80,11 +80,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr class="domain-row-issue"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MRI</td>
-<td style='word-wrap: break-word; white-space: normal;'>The sidecar JSONs for Myers-Labonte-parcellated structural measures in the tabulated XCP-D derivatives should have a <code>sub_domain</code> value of <code>Structural MRI</code>, not <code>Resting State fMR</code>: <code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>. The Data Dictionary available via the NBDC Dictionary Query Tool is correct.</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>MRI</td>
 <td style='word-wrap: break-word; white-space: normal;'>There are 2 corrupted raw BIDS files (V02 bold runs under session-level <code>func/</code> folders of <code>rawdata/</code>) to be resolved. Impacted participant IDs/filepaths are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center; font-weight: bold;'>21</td>
 </tr>
@@ -98,11 +93,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>APA 1/2</td>
 <td style='word-wrap: break-word; white-space: normal;'>Note that <code>pex_bm_apa_mania_001</code> through <code>mania_005</code> have incorrect Data Dictionary descriptions.</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>APA 1/2</td>
-<td style='word-wrap: break-word; white-space: normal;'>There are cases where APA Level 2 was administered against gating logic (e.g. for Repetitive Behavior despite there being missing Level 1 responses). As Level 2 administration was not expected, these are not scored (score = "No additional inquiry required") despite having Level 2 item responses present. The Level 2 item-level data will be removed in the future to prevent confusion.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
@@ -149,7 +139,18 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='word-wrap: break-word; white-space: normal;'>Genomic Olink Explore 384 Inflammation 1 Panel to be provided for the birth parent during pregnancy as a measure of maternal inflammation.</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
+<tr class="domain-row-pending"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Visit Info</td>
+<td style='word-wrap: break-word; white-space: normal;'>SU flags will include Nail toxicology results in addition to Urine</td>
+<td style='text-align: center; font-weight: bold;'></td>
+</tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>GENERAL</strong></td></tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Language</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of language of administration across all instruments where applicable..</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Multibirth Cohorts</td>
 <td style='word-wrap: break-word; white-space: normal;'>For Multibirth Sibling cohorts: (1) instrument fields will be populated where mising and (2) the Data Dictionary element <em>familyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
@@ -157,8 +158,13 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>BrainSwipes</td>
-<td style='word-wrap: break-word; white-space: normal;'>BrainSwipes will be updated with the most recent QC results. In the meantime, users can find the latest QC results in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td class='table-cell' style='font-weight: bold;'>Shorten variable name length</td>
+<td style='word-wrap: break-word; white-space: normal;'>Variable names for tabulated MRI data (particularly XCP-D outputs) can be upwards of 167 characters, which may exceed variable name limits in some software and lead to truncation or import errors. Shorter variable names will be implemented in a future release.</td>
+<td style='text-align: center; font-weight: bold;'></td>
+</tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Summary Forms</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of MRI 'Scan Session' and 'Data' Summary Forms to release data with information from the MRI technician obtained on day of scan.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
