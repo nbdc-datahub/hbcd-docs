@@ -96,7 +96,7 @@ General visit information includes site, project, and information about missed v
 **Instrument-specific SU flags** are generated from:
 
  - Self-reported use from the Timeline Follow Back (<a href="../../pregexp/su/tlfb" target="_blank">TLFB</a>)
- - Diagnosis of <span class="tooltip to">NOWS<span class="tooltiptext">Neonatal Opioid Withdrawal Syndrome</span></span> or <span class="tooltip">FAS<span class="tooltiptext">Fetal Alcohol Syndrome</span></span> from the <a href="../../pregexp/pex" target="_blank">Health V2 - Infancy</a>
+ - Diagnosis of <span class="tooltip">NOWS<span class="tooltiptext">Neonatal Opioid Withdrawal Syndrome</span></span> or <span class="tooltip">FAS<span class="tooltiptext">Fetal Alcohol Syndrome</span></span> from the <a href="../../pregexp/pex" target="_blank">Health V2 - Infancy</a>
  - Positive toxicology based on <a href="../../biospec/urine" target="_blank">Urine</a> biospecimen results (<i><a href="../../biospec/nails" target="_blank">Nail toxicology</a> to be integrated in a future release</i>)
  
  **Derived SU flags** aggregate evidence across instruments to provide a single indicator per substance. With the exception of Stimulants, which do not include a derived flag, a derived SU flag is reported as **"Yes" if one or more of the corresponding instrument-specific flags in the summary table below are positive.** 
@@ -165,32 +165,31 @@ General visit information includes site, project, and information about missed v
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The thresholds below define when an instrument-specific report is considered positive for prenatal exposure. For each substance, <b>the derived SU flag is positive if at least one threshold is met.</b></p>
+<p>The thresholds below define when an instrument-specific report is considered positive for prenatal exposure. For each substance, <b>the derived SU flag is positive if one or more of the corresponding instrument-specific reports are positive.</b></p>
 <table class="compact-table-no-vertical-lines" style="width:100%; table-layout:fixed;"> 
 <thead> <tr> 
 <th>Substance</th>
-<th>Data Source</th>
-<th>Exposure Threshold
-<i>(Substance use flagged as positive if ≥1 criterion is met)</i></th>
+<th>Source Instrument</th>
+<th>Instrument-Specific Exposure Thresholds</th>
 </tr> </thead>
 <tbody>
 <tr> 
 <td rowspan="4"><strong>Alcohol</strong></td>
 <td>TLFB</td> <td>Self-reported use ≥7 standard drinks per week for ≥2 weeks during pregnancy (weeks 3-9)</td></tr>
 <tr><td>TLFB</td> <td>Self-reported use ≥3 standard drinks per occasion on ≥2 occasions during pregnancy (weeks 3-9)</td> </tr>
-<tr><td>Health V2 - Infancy</td> <td>Diagnosis of Fetal Alcohol Syndrome (FAS)</td></tr>
+<tr><td>Health V2</td> <td>Diagnosis of Fetal Alcohol Syndrome (FAS)</td></tr>
 <tr><td>Urine</td> <td>Positive alcohol toxicology result</td>
 </tr>
 <tr>
 <td rowspan="3"><strong>Opioids</strong></td>
 <td>TLFB</td>
-<td style="word-wrap: break-word; white-space: normal;">Self-reported use of prescribed (including medications for opioid use disorder) or illicit opioids for ≥2 weeks during pregnancy (weeks 3-9)</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Self-reported use of <span class="tooltip">prescribed<span class="tooltiptext">including medications for opioid use disorder</span></span> or illicit opioids for ≥2 weeks during pregnancy (weeks 3-9)</td></tr>
 <tr>
-<td>Health V2- Infancy</td> 
+<td>Health V2</td> 
 <td>Diagnosis of Neonatal Opioid Withdrawal Syndrome (NOWS)</td>
 </tr>
 <tr>
-<td>Urine</td> <td>Positive opioid toxicology result in research-collected biospecimen</td>
+<td>Urine</td> <td>Positive opioid toxicology result</td>
 </tr>
 <tr>
 <td rowspan="2"><strong>Cannabis</strong></td> <td>TLFB</td> <td>Self-reported cannabis use for ≥4 weeks during pregnancy (weeks 3-9)</td> </tr>
