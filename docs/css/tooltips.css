@@ -1,11 +1,12 @@
 /* Tooltip container */
 .tooltip {
     position: relative;
-    display: inline-block;
+    display: inline;
     cursor: help;
     border-bottom: 1px dotted #555; /* Dotted underline for hover indication */
     color: teal;
     font-weight: 500;
+    line-height: inherit;
 }
 
 /* Default Tooltip (Above the Text) */
