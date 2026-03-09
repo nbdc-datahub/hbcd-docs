@@ -54,6 +54,12 @@ To ask a question or report an issue, please submit a ticket through the [Help C
     </thead>
     <tbody>
     
+<tr class="domain-row-issue"><td colspan="4"><strong>ADMINISTRATIVE</strong></td></tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Study Navigators</td>
+<td style='word-wrap: break-word; white-space: normal;'>The SUBSTANCE_USE and OTHER checkbox fields are blank and will be populated in the next release.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MAPS-TL (&lt;1yr)</td>
@@ -92,6 +98,11 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='word-wrap: break-word; white-space: normal;'>Chronological and adjusted age are inaccurate for N=74 participants at V03 due to site data entry errors, causing there to be ages that fall outside of the expected age range (3-9 months). Until resolved, please exclude age values that fall outside of the expected age range from your analyses.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>EEG</td>
+<td style='word-wrap: break-word; white-space: normal;'>N=3 V04 sessions in the HBCD-MADE pipeline derivatives for FACE and MMN tasks are missing corresponding tabulated data. File-based data should therefore be used for analyses. Impacted participant IDs are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>GENERAL</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Implausible GA</td>
@@ -109,6 +120,11 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>MRI</strong></td></tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>MRI</td>
+<td style='word-wrap: break-word; white-space: normal;'>The sidecar JSONs for Myers-Labonte-parcellated structural measures in the tabulated XCP-D derivatives should have a <code>sub_domain</code> value of <code>Structural MRI</code>, not <code>Resting State fMR</code>: <code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>. The Data Dictionary available via the NBDC Dictionary Query Tool is correct.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MRI</td>
 <td style='word-wrap: break-word; white-space: normal;'>There are 2 corrupted raw BIDS files (V02 bold runs under session-level <code>func/</code> folders of <code>rawdata/</code>) to be resolved. Impacted participant IDs/filepaths are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
@@ -199,6 +215,11 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
+<td class='table-cell' style='font-weight: bold;'>Demographics</td>
+<td style='word-wrap: break-word; white-space: normal;'>The variables <code>sed_bm_demo_residence_{001|002}</code>, present in the prior release, are missing in the current release and will be added back.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
+<tr>
 <td class='table-cell' style='font-weight: bold;'>eHITS</td>
 <td style='word-wrap: break-word; white-space: normal;'>In <code>sed_bm_ehits</code>, participants who did not respond to any questions have a summary score of 0 instead of missing. Until corrected, users should convert these cases to blank/null prior to conducting analyses.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
@@ -260,6 +281,11 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>MRI</strong></td></tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>BrainSwipes</td>
+<td style='word-wrap: break-word; white-space: normal;'>BrainSwipes will be updated with the most recent QC results. In the meantime, users can find the latest QC results in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MRI</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of source DICOMs for all imaging modalities.</td>

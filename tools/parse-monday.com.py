@@ -69,8 +69,8 @@ def insert_into_markdown(md_path, combined_html):
 df = load_and_filter_tsv(TSV)
 
 # Separate out Done items 
-df = df[~df['Status'].str.contains('Done')]
-df_done = df[df['Status'].str.contains('Done')]
+# df = df[~df['Status'].str.contains('Done')]
+# df_done = df[df['Status'].str.contains('Done')]
 
 # Type mapping and sort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)
