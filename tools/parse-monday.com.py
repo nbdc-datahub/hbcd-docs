@@ -11,9 +11,6 @@ TSV= "latest.tsv"
 HBCD_DOCS_MD = "../docs/changelog/issues-updates.md"
 INTERNAL_MD = "../../../hbcd-docs-internal/docs/changelog/knownissues.md"
 
-# HBCD_DOCS_MD = "../../docs/changelog/test-ext.md"
-# INTERNAL_MD = "../../docs/changelog/test-int.md"
-
 # FUNCTIONS
 
 def load_and_filter_tsv(tsv_path):
@@ -28,7 +25,7 @@ def load_and_filter_tsv(tsv_path):
 
     # Filter
     df = df[df['Autoparsed?'].str.contains('Yes')]
-    df = df[df['RTDs_Status'].str.contains('Done')]
+    # df = df[df['RTDs_Status'].str.contains('Done')]
 
     # Fill missing values and strip whitespace 
     df = df.fillna('')
@@ -72,8 +69,8 @@ def insert_into_markdown(md_path, combined_html):
 df = load_and_filter_tsv(TSV)
 
 # Separate out Done items 
-df = df[~df['Status'].str.contains('Done')]
-df_done = df[df['Status'].str.contains('Done')]
+# df = df[~df['Status'].str.contains('Done')]
+# df_done = df[df['Status'].str.contains('Done')]
 
 # Type mapping and sort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)
@@ -121,7 +118,7 @@ def build_table(data_dict, table_title, dest="external"):
         table_parts.append("""
     <thead>
     <tr style="text-decoration: bold; font-size: 1.2em;">
-    <th style="width: 18%;">TABLE/TOPIC</th>
+    <th>TABLE/TOPIC</th>
     <th>SUMMARY</th>
     <th style='text-align: center;'><span class="tooltip tooltip-left">PR<span class="tooltiptext">Target Release</span></span></th>
     </tr>
