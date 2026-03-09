@@ -107,24 +107,15 @@ In longitudinal studies like HBCD, where data are collected over many years, tra
 
 ## How ReproSchema Organizes Questionnaires
 
-ReproSchema organizes research questionnaires into a hierarchical structure that supports versioning, change tracking, and consistent data collection over time. As illustrated in the figure below, questionnaires are organized across **three levels: Protocol → Activity → Item.**
+ReproSchema organizes research questionnaires into a hierarchical structure that supports **versioning, change tracking, and consistent data collection over time.** Questionnaires are organized across the following levels:
 
-A **protocol** can contain multiple <span style="color: red;">Activities (assessments)</span>. Each Activity contains <span style="color: #13d016;">Items (questions)</span>, which define <span style="color: #9010f7;">ResponseOptions (answer choices)</span>. When a participant selects an answer, that selection is recorded as a <span style="color: orange;">Response</span>. The right panel illustrates how Activities within a protocol are organized in the user interface.
+- <span style="color: #3a82fe;"><b>Protocol</b></span>: The Protocol represents the **full set of instruments used within a study**. The right panel in the figure below illustrates how Activities within a protocol are organized in the user interface.
+
+- <span style="color: red;"><b>Activity</b></span>: An Activity corresponds to a **single questionnaire or instrument** (e.g., PHQ-9 depression scale).
+
+- <span style="color: #12ba15;">Items</span>: Items are **individual questions** within an Activity. The available answer choices are <span style="color: #9010f7;">ResponseOptions</span>. When a participant selects an answer, that selection is recorded as a <span style="color: orange;">Response</span>. Item tracking includes **question text** (the exact wording presented to participants), **response options** (available answer choices), and **skip logic** (rules that determine which questions appear next based on responses).
 
 <img src="../images/reproschema-fig2.jpg" alt="ReproSchema hierarchical structure">
-
-#### Protocol Level
-A **protocol** represents the **full set of assessments** used within a study or data release. It defines the overall questionnaire framework and links all associated activities together under a version-controlled structure tied to specific data releases.
-
-#### Activity Level
-An **activity** corresponds to a specific **questionnaire or instrument** (e.g., PHQ-9 depression scale or GAD-7 anxiety scale). Activities group related questions and allow changes to assessments, such as additions, removals, or revisions, to be tracked across versions.
-
-#### Item Level
-An **item** represents a **single question** within an activity (questionnaire). Tracking items allows researchers to identify when questions change and interpret longitudinal data accurately. Each item includes:
-
- - Question text: the exact wording presented to participants
- - Response options: the available answer choices
- - Skip logic: rules that determine which questions appear next based on responses
 
 ## Resources
 - [https://www.repronim.org/reproschema](https://www.repronim.org/reproschema/)
