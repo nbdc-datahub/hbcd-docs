@@ -17,40 +17,48 @@ Ensuring consistent research data collection is critical in large-scale, multi-s
  - Access and compare questionnaire versions used at different time points.
 
 <div id="rs-example" class="table-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-    <span class="text">Practical Example: Evolution of a Sleep Quality Question Across Data Releases</span>
-    <span class="arrow">▸</span>
+   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Example: Evolution of a Sleep Question Across Data Releases</span>
+  <a class="anchor-link" href="#rs-example" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
-  <ul>
-  <b>Release 1.0 (Initial Version):</b>
-    <li><strong>Question:</strong> "How many hours do you sleep on a typical night?"</li>
-    <li><strong>Response Options:</strong> Free-text input (participants enter a number).</li>
-  </ul>
-  <ul>
-  <b>Release 2.0 (Revised Version):</b>
-    <li><strong>Question:</strong> "On average, how many hours of sleep do you get per night?"</li>
-    <li><strong>Response Options:</strong> Dropdown menu:
-      <ul>
-        <li>Less than 5 hours</li>
-        <li>5-6 hours</li>
-        <li>7-8 hours</li>
-        <li>More than 8 hours</li>
-      </ul>
-    </li>
-  </ul>
-  <ul>
-  <b>Release 3.0 (Further Revision):</b>
-    <li><strong>Question:</strong> "On average, how many hours of sleep do you get in a 24-hour period, including naps?"</li>
-    <li><strong>Response Options:</strong> Same as Release 2.0.</li>
-  </ul>
-  <hr>
-  <ul>
-  <b>Implications for Data Analysis:</b>
-    <li><strong>Data Consistency:</strong> The shift from free-text to predefined categories (Release 1.0 → 2.0) standardizes responses, reducing variability but limiting detail.</li>
-    <li><strong>Comparability:</strong> The addition of naps (Release 2.0 → 3.0) may impact cross-release trend analysis.</li>
-    <li><strong>Data Harmonization:</strong> ReproSchema’s version management ensures that each change is documented for consistent longitudinal studies.</li>
-  </ul>
+<div class="table-collapsible-content">
+<p>The example below illustrates how a question and its response options may change across data releases.</p>
+<table class="table-no-vertical-lines">
+<thead>
+<tr>
+<th>Release</th>
+<th>Item Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1.0</td>
+  <td><strong>Question</strong>: "How many hours do you sleep on a typical night?"<br>
+  <strong>Responses</strong>: Free-text numeric entry</td>
+</tr>
+<tr>
+  <td>2.0</td>
+  <td><strong>Question</strong>: "On average, how many hours of sleep do you get per night?"<br>
+  <strong>Responses</strong>: Dropdown menu (<i>Less than 5, 5-6, 7-8, or More than 8 hours</i>)</td>
+</tr>
+<tr>
+  <td>3.0</td>
+  <td><strong>Question</strong>: "On average, how many hours of sleep do you get in a 24-hour period, including naps?"<br>
+  <strong>Responses</strong>: Same as Release 2.0.</td>
+</tr>
+</tbody>
+</table>
+<p><b>Implications for Analysis:</b></p>
+<ul>
+  <li><strong>Data consistency</strong>: Moving from free-text to predefined categories (1.0 → 2.0) standardizes responses and reduces variability, but removes fine-grained detail.</li>
+  <li><strong>Comparability across releases</strong>: Adding naps to the question (2.0 → 3.0) changes the construct being measured and may affect cross-release trend analyses.</li>
+  <li><strong>Data harmonization</strong>: ReproSchema versioning records these changes to support consistent longitudinal studies.</li>
+</ul>
 </div>
 
 ## ReproSchema Workflow 
