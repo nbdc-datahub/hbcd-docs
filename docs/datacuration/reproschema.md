@@ -54,12 +54,34 @@ Ensuring consistent research data collection is critical in large-scale, multi-s
 </div>
 
 ## ReproSchema Workflow 
-The ReproSchema workflow for standardizing survey data collection consists of **six key components**, illustrated below:
 
-<figure>
-  <img src="../images/reproschema-fig1.jpg" alt="ReproSchema Figure 1">
-  <figcaption style="font-size: 0.9em;"><b>Figure 1. ReproSchema workflow overview.</b> <b>(A)</b> ReproSchema supports multiple input formats, including questionnaires in PDF or DOC format (which can be converted to ReproSchema format using large language models (LLMs) such as Claude 3.7 Sonnet), existing assessments from the ReproSchema library, and REDCap CSV exports (which can be automatically converted using <code>redcap2reproschema</code>). <b>(B)</b> The <code>reproschema-protocol-cookiecutter</code> tool provides a structured, stepwise process for researchers to create and publish a protocol on GitHub, ensuring organized metadata and version control. This tool enables schema validation and user interface (UI) serving. <b>(C)</b> ReproSchema protocols are stored in GitHub repositories, where version-controlled URIs ensure persistent access to protocols, activities, and assessment items, supporting reproducibility and provenance tracking. <b>(D)</b> The ReproSchema-UI provides a browser-based interface for interactive survey deployment, allowing researchers to collect structured data while maintaining schema integrity. <b>(E)</b> Survey responses are stored in JSON-LD format, with embedded URIs linking each protocol, activity, and item to their respective sources in the ReproSchema library. This structure ensures data provenance, traceability, and semantic interoperability. <b>(F)</b> The <code>reproschema-py</code> tools facilitate output conversion into various standardized formats, including National Institute of Mental Health (NIMH) Common Data Elements (<code>reproschema2cde</code>), Brain Imaging Data Structure (BIDS) (<code>reproschema2bids</code>), and REDCap CSV (<code>output2redcap</code>).</figcaption>
-</figure>
+The ReproSchema workflow for standardizing survey data collection consists of **six key components**:
+
+<img src="../images/reproschema-fig1.jpg" width="100%" height="auto" alt="ReproSchema Figure 1" class="center">
+
+<table class="table-no-vertical-lines">
+<tbody>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;"><b>1. Import questionnaires (<i>A</i>)</b><br>
+  ReproSchema supports multiple input formats, including questionnaires in PDF or DOC format, existing assessments from the ReproSchema library, and REDCap CSV exports. Questionnaires can be converted into ReproSchema format using large language models (e.g., Claude 3.7 Sonnet) (from PDF/DOC) or automated tools such as <code>redcap2reproschema</code>.</td>
+</tr>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;"><b>2. Create and publish protocols (<i>B</i>)</b><br>
+  The <code>reproschema-protocol-cookiecutter</code> tool provides a structured workflow for creating and publishing protocols on GitHub, ensuring organized metadata and version control. This tool enables schema validation and user interface (UI) serving.</td>
+</tr>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;"><b>3. Store protocols with version control (<i>C</i>)</b><br>
+  ReproSchema protocols are stored in <b>GitHub repositories</b>, where version-controlled URIs provide persistent access to protocols, activities, and individual assessment items. This structure supports reproducibility and provenance tracking.</td>
+</tr>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;"><b>4. Deploy surveys through the web interface (<i>D</i>)</b><br>
+The <b>ReproSchema-UI</b> provides a browser-based interface for interactive survey administration, allowing researchers to collect structured data while maintaining schema integrity. </td></tr>
+<tr><td style="word-wrap: break-word; white-space: normal;"><b>5. Record structured responses (<i>E</i>)</b><br>
+Survey responses are stored in <b>JSON-LD format</b>, with embedded URIs linking each response to the corresponding protocol, activity, and item in the ReproSchema library. This structure supports provenance, traceability, and semantic interoperability.</td></tr>
+<tr><td style="word-wrap: break-word; white-space: normal;"><b>6. Export data to standardized formats (<i>F</i>)</b><br>
+The <code>reproschema-py</code> toolkit allows responses and protocols to be converted into multiple standardized formats, including <b>NIMH Common Data Elements (CDE)</b> (<code>reproschema2cde</code>), <b>Brain Imaging Data Structure (BIDS)</b> (<code>reproschema2bids</code>), and REDCap CSV (<code>output2redcap</code>).</td></tr>
+</tbody>
+</table>
 
 ## Version Management
 In longitudinal studies like HBCD, where data are collected over many years, tracking changes to data collection instruments is essential. ReproSchema maintains a detailed version history so researchers can understand how questionnaires evolve over time. This version tracking helps researchers:
