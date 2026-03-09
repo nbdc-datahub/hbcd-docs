@@ -130,7 +130,7 @@ def build_table(data_dict, table_title, dest="external"):
         table_parts.append("""
     <thead>
     <tr style="text-decoration: bold; font-size: 1.2em;">
-    <th style="width: 18%;">TABLE/TOPIC</th>
+    <th>TABLE/TOPIC</th>
     <th>SUMMARY</th>
     <th style='text-align: center;'><span class="tooltip tooltip-left">PR<span class="tooltiptext">Target Public Release</span></span></th>
     <th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th>
