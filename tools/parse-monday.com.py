@@ -11,9 +11,6 @@ TSV= "latest.tsv"
 HBCD_DOCS_MD = "../docs/changelog/issues-updates.md"
 INTERNAL_MD = "../../../hbcd-docs-internal/docs/changelog/knownissues.md"
 
-# HBCD_DOCS_MD = "../../docs/changelog/test-ext.md"
-# INTERNAL_MD = "../../docs/changelog/test-int.md"
-
 # FUNCTIONS
 
 def load_and_filter_tsv(tsv_path):
@@ -28,7 +25,7 @@ def load_and_filter_tsv(tsv_path):
 
     # Filter
     df = df[df['Autoparsed?'].str.contains('Yes')]
-    df = df[df['RTDs_Status'].str.contains('Done')]
+    # df = df[df['RTDs_Status'].str.contains('Done')]
 
     # Fill missing values and strip whitespace 
     df = df.fillna('')
