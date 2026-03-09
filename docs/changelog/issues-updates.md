@@ -111,13 +111,8 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Implausible GA</td>
-<td style='word-wrap: break-word; white-space: normal;'>Several instruments contain implausible values for gestational age (<code>gestational_age</code>). This is currently under internal review and we will add more details as they become available.</td>
+<td style='word-wrap: break-word; white-space: normal;'>A small subset of participants have implausible gestational ages (<code>gestational_age</code>; V01 only) for one or more instrument. Until corrected, please review the GA distribution to exclude outlier GA values prior to analysis (values should be positive and generally &lt; 45 weeks).</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Sequence Field</td>
-<td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
@@ -203,11 +198,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='word-wrap: break-word; white-space: normal;'>Weeks for postnatal recruits were mistakenly reported in the TLFB <strong>versions 1</strong> or <strong>2</strong> instead of <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3"><strong>version 3</strong> adapted for PNR</a>. These will be adjusted to <strong>version 3</strong>.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>TLFB</td>
-<td style='word-wrap: break-word; white-space: normal;'>Select participants (N=8) were recruited postnatally, but not administered the V1 portion of the TLFB. When this was recognized, the participants were administered the TLFB at the next in-person visit, resulting in a longer recall period than specified in the protocol.</td>
-<td style='text-align: center; font-weight: bold;'></td>
-</tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>SOCIAL &amp; ENVIRONMENTAL DETERMINANTS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>C-PACEs</td>
@@ -250,12 +240,12 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr class="domain-row-pending"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Olink</td>
-<td style='word-wrap: break-word; white-space: normal;'>Olink Explore 384 Inflammation 1 Panel to be provided for the birth parent during pregnancy as a measure of maternal inflammation.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Urine</td>
-<td style='word-wrap: break-word; white-space: normal;'>The creatinine results (<code>bio_bm_biosample_urine_results_bio_creat_u</code>) variable is currently excluded from the release due to out-of-range values and will be added once corrected.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Creatinine results (<code>bio_creat_u</code>) are currently excluded from the release due to out-of-range values and will be added once corrected.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
@@ -266,7 +256,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Visit Level Data</td>
-<td style='word-wrap: break-word; white-space: normal;'>The <code>visit_missed_date</code> variable (date of missed visits) is currently excluded from the release due to inaccuracies and will be added once corrected.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Date of missed visit (<code>visit_missed_date</code>) is currently excluded from the release due to inaccuracies and will be added once corrected.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>GENERAL</strong></td></tr>
@@ -277,13 +267,18 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Multibirth Cohorts</td>
-<td style='word-wrap: break-word; white-space: normal;'>For Multibirth Sibling cohorts: (1) instrument fields will be populated where mising and (2) the Data Dictionary element <em>familyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Missing instrument fields for Sibling cohorts will be populated and <em>familyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
+</tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Sequence Field</td>
+<td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>BrainSwipes</td>
-<td style='word-wrap: break-word; white-space: normal;'>BrainSwipes will be updated with the most recent QC results. In the meantime, users can find the latest QC results in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='word-wrap: break-word; white-space: normal;'>BrainSwipes will be updated with the most recent QC results, currently available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
@@ -292,7 +287,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>Shorten variable name length</td>
+<td class='table-cell' style='font-weight: bold;'>Shorten var names</td>
 <td style='word-wrap: break-word; white-space: normal;'>Variable names for tabulated MRI data (particularly XCP-D outputs) can be upwards of 167 characters, which may exceed variable name limits in some software and lead to truncation or import errors. Shorter variable names will be implemented in a future release.</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
@@ -340,7 +335,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ecPROMIS-PAG</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of summary scores (Summed Score, T-score, and SE) to <code>ph_cg_pms__pags</code>. Until added, users can calculate summary scores themselves by following the Scoring Procedures documented on the instrument page.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of summary scores to <code>ph_cg_pms__pags</code>. Until added, scores can be calculated by following the <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>PREGNANCY &amp; EXPOSURE</strong></td></tr>
