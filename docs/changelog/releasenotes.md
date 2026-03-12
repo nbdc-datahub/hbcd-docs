@@ -156,7 +156,7 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 <tr><td rowspan="12"><i style="color: #199bd6; font-size: 1.0rem; margin-right: 2px;" class="fas fa-city"></i> <a href="../../instruments/#sed" target="_blank"> Social & Environment</a></td>
 <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Geocoded Linkage</td>  <td>Neighborhood Measures</td></tr>
 <tr><td>ACEs</td>  <td>Adverse Childhood Experiences</td></tr>
-<tr><td>Child Demographics - V4 & V6</td><td>Demographics</td></tr>
+<tr><td>Child Demographics</td><td>Demographics</td></tr>
 <tr><td>Composite Abuse Scale (CABr-SF)</td>  <td>Intimate Partner Violence</td></tr>
 <tr><td>Current Employment</td><td>Current Employment</td></tr>  
 <tr><td>HOME-21 IT</td><td>Child’s Home Environment</td></tr>  
