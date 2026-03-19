@@ -110,6 +110,11 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
 <tr>
+<td class='table-cell' style='font-weight: bold;'>DD &#x27;instruction&#x27;</td>
+<td style='word-wrap: break-word; white-space: normal;'>The 'instruction' Data Dictionary element is currently blank and will be populated in a future release to resolve.</td>
+<td style='text-align: center; font-weight: bold;'></td>
+</tr>
+<tr>
 <td class='table-cell' style='font-weight: bold;'>Implausible GA</td>
 <td style='word-wrap: break-word; white-space: normal;'>A small subset of participants have implausible gestational ages (<code>gestational_age</code>; V01 only) for one or more instrument. Until corrected, please review the GA distribution to exclude outlier GA values prior to analysis (values should be positive and generally &lt; 45 weeks).</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
@@ -237,6 +242,11 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='word-wrap: break-word; white-space: normal;'>Change coding for "Does not apply" to 8 to match the IBQ-R.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>ERICA</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of the ERICA instrument.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Olink</td>
@@ -250,8 +260,8 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>Visit Info</td>
-<td style='word-wrap: break-word; white-space: normal;'>SU flags will include Nail toxicology results in addition to Urine</td>
+<td class='table-cell' style='font-weight: bold;'>VIsit Info</td>
+<td style='word-wrap: break-word; white-space: normal;'>SU flags will include Nail toxicology results in addition to Urine.</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
 <tr>
@@ -284,6 +294,11 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MRI</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of source DICOMs for all imaging modalities.</td>
+<td style='text-align: center; font-weight: bold;'></td>
+</tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Scanner Info</td>
+<td style='word-wrap: break-word; white-space: normal;'>Scanner information (currently available in the scans TSV files within the raw BIDS data as well as all sidecar JSON files) will be provided as tabulated data.</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
 <tr>
@@ -335,7 +350,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ecPROMIS-PAG</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of summary scores to <code>ph_cg_pms__pags</code>. Until added, scores can be calculated by following the <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation.</td>
+<td style='word-wrap: break-word; white-space: normal;'>ddition of summary scores to <code>ph_cg_pms__pags</code>. Until added, scores can be calculated by following the <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>PREGNANCY &amp; EXPOSURE</strong></td></tr>
@@ -343,6 +358,12 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td class='table-cell' style='font-weight: bold;'>Growth</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
+</tr>
+<tr class="domain-row-pending"><td colspan="4"><strong>SOCIAL &amp; ENVIRONMENTAL DETERMINANTS</strong></td></tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Child Demo</td>
+<td style='word-wrap: break-word; white-space: normal;'>Household roster will be updated to clarify that counts exclude the main child - see "Household Roster" under the <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> for details.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 </tbody></table>
 
