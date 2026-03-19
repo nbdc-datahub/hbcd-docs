@@ -91,6 +91,20 @@ General visit information includes site, project, and information about missed v
 
 ## Substance Use Flags
 
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Data Warning</i></span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>Nail biospecimens are not currently included in the SU flag. Users who wish to add nail results into the categorization (consistent with <a href="https://doi.org/10.1016/j.dcn.2024.101494">Gurka et al., 2025</a>), please include an ‘or’ statement with the following variables within the nail toxicology table (<code>bio_bm_biosample_nails_results</code>) for visits 1 and 2: <code>c_any_cannabinoid_n</code> (cannabis); <code>c_any_opioid_n</code> (opioid); <code>c_ethanol_n</code> (alcohol); <code>c_nicotine_n</code> (nicotine).</p>
+</div>
+
 **SU flag** variables indicate whether a participant met study-defined criteria for prenatal exposure to **Alcohol, Nicotine, Cannabis, Opioids, or Stimulants.** Variables include **instrument-specific** and **derived** SU flags. See [Gurka et al., 2025](https://doi.org/10.1016/j.dcn.2024.101494) for full methodological details.
 
 **Instrument-specific SU flags** are generated from:
