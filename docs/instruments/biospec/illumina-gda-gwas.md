@@ -83,19 +83,18 @@ hbcd/
 
 ## Quality Control
 
-Quality control procedures involved the following:
+Genomics data passed through the [GDCGenomicsQC](https://github.com/UMN-GDC/GDCGenomicsQC) pipeline which is documented [here](https://gdcgenomicsqc.readthedocs.io/en/latest/genomics.html) which briefly include alternating filters for variant and subject missingness (first 10% then 2%), sex checks, outlier detection on first two genetic relatedness matrix derived principal components using PC-AIR and PC-Relate from [GENESIS](https://bioc.r-universe.dev/GENESIS), classification of relatedness by IBD estimates using [KING](https://www.kingrelatedness.com/). Additional project quality control steps involved the following:
 
-<ul>
-  <li>Check that sampled ID matches from Sampled File and Lasso Database.</li>
-  <li>Check that sample specific barcode matches between Sampled file and Lasso Database.</li>
-  <li>Check that genomic sex matches with sex at birth.</li>
-  <li>Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is ~.50 between the birth parent and child as well as siblings; evaluate potential twins).</li>
-  <li>Use FHET estimates to check for plate contamination.</li>
-</ul>
+* Check that sampled ID matches from Sampled File and Lasso Database.  
+* Check that sample specific barcode matches between Sampled file and Lasso Database.  
+* Check that genomic sex matches with sex at birth.  
+* Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is \~.50 between the birth parent and child as well as siblings; evaluate potential twins).  
+* Use FHET estimates to check for plate contamination.  
+* Visually inspect plate effects on principal component space derived from PC-Relate
 
 ## Data Exclusions
 
-A total of 22 samples were excluded from data release (i.e., are not contained in the public release files) due to poor genotyping quality (i.e., SNP Missingness >10%), unexpected unrelatedness with no use of reproductive technology, unexpected relatedness (i.e., identical samples across adults), and sex check mismatch.
+A total of 22 samples were excluded from data release (i.e., are not contained in the public release files) due to poor genotyping quality (i.e., SNP Missingness >10%), unexpected unrelatedness with no confirmed use of reproductive technology, unexpected relatedness (i.e., identical samples across adults), and sex check mismatch.
 
 ## References
 <div class="references"> 
