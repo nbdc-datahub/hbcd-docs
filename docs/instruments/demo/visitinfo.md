@@ -105,13 +105,13 @@ General visit information includes site, project, and information about missed v
 <p>Nail biospecimens are not currently included in the SU flag. Users who wish to add nail results into the categorization (consistent with <a href="https://doi.org/10.1016/j.dcn.2024.101494">Gurka et al., 2025</a>), please include an ‘or’ statement with the following variables within the nail toxicology table (<code>bio_bm_biosample_nails_results</code>) for visits 1 and 2: <code>c_any_cannabinoid_n</code> (cannabis); <code>c_any_opioid_n</code> (opioid); <code>c_ethanol_n</code> (alcohol); <code>c_nicotine_n</code> (nicotine).</p>
 </div>
 
-**SU flag** variables indicate whether a participant met study-defined criteria for prenatal exposure to **Alcohol, Nicotine, Cannabis, Opioids, or Stimulants.** Variables include **instrument-specific** and **derived** SU flags. See [Gurka et al., 2025](https://doi.org/10.1016/j.dcn.2024.101494) for full methodological details.
+**Substance use (SU) flag** variables indicate whether a participant met study-defined criteria for prenatal exposure to **Alcohol, Nicotine, Cannabis, Opioids, or Stimulants.** Variables include **instrument-specific** and **derived** SU flags. See [Gurka et al., 2025](https://doi.org/10.1016/j.dcn.2024.101494) for full methodological details.
 
 **Instrument-specific SU flags** are generated from:
 
  - Self-reported use from the Timeline Follow Back (<a href="../../pregexp/su/tlfb" target="_blank">TLFB</a>)
  - Diagnosis of <span class="tooltip">NOWS<span class="tooltiptext">Neonatal Opioid Withdrawal Syndrome</span></span> or <span class="tooltip">FAS<span class="tooltiptext">Fetal Alcohol Syndrome</span></span> from the <a href="../../pregexp/pex" target="_blank">Health V2 - Infancy</a>
- - Positive toxicology based on <a href="../../biospec/urine" target="_blank">Urine</a> biospecimen results (<i><a href="../../biospec/nails" target="_blank">Nail toxicology</a> to be integrated in a future release</i>)
+ - Positive toxicology based on <a href="../../biospec/urine" target="_blank">Urine</a> biospecimen results (collected at V01 only). <i>Note: <a href="../../biospec/nails" target="_blank">Nail toxicology</a>, collected both V01 and V02, is not currently integrated into the SU flags, but will be in the future</i>
  
  **Derived SU flags** aggregate evidence across instruments to provide a single indicator per substance. With the exception of Stimulants, which do not include a derived flag, a derived SU flag is reported as **"Yes" if one or more of the corresponding instrument-specific flags in the summary table below are positive.** 
 
