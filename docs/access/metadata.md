@@ -102,11 +102,11 @@ See the following sections for detailed descriptions for each column in the [dat
   <i>Spanish version: <code>label_es</code></i></td>
 </tr>
 <tr>
-  <td><code>instruction</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i> <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i></td>
+  <td><code>instruction</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
   <td>Instruction</td>
   <td style="word-wrap: break-word; white-space: normal;">
-    Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>). <i>Spanish version: <code>instruction_es</code></i><br>
-    <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Text may be incomplete/misaligned! See <a href="../../changelog/issues-updates/#known-issues">Known Issues: Instruction Metadata</a></b></td>
+    Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>). <i>Spanish version: <code>instruction_es</code></i></td>
+<!-- POTENTIALLY ADD IN FUTURE TO INSTRUCTION DESCRIPTION: <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> and <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Text may be incomplete/misaligned! See <a href="../../changelog/issues-updates/#known-issues">Known Issues: Instruction Metadata</a></b> -->
 </tr>
 <tr>
   <td><code>header</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
