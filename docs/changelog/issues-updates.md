@@ -54,12 +54,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
     </thead>
     <tbody>
     
-<tr class="domain-row-issue"><td colspan="4"><strong>ADMINISTRATIVE</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Study Navigators</td>
-<td style='word-wrap: break-word; white-space: normal;'>The SUBSTANCE_USE and OTHER checkbox fields are blank and will be populated in the next release.</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
-</tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MAPS-TL</td>
@@ -68,12 +62,12 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MAPS-TL (&lt;1yr)</td>
-<td style='word-wrap: break-word; white-space: normal;'>N=4 participants did not respond to any questions and should have a blank/null summary score, but instead have a score of 0 in <code>mh_cg_mapdb__inf</code>. Users should convert these cases to blank/null prior to conducting their statistical analyses.</td>
+<td style='word-wrap: break-word; white-space: normal;'>N=4 participants in <code>mh_cg_mapdb__inf</code> had no responses, but were scored 0; until resolved, set to null before analysis.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MAPS-TL (Tod)</td>
-<td style='word-wrap: break-word; white-space: normal;'>A subset of participants (N=16) in <code>mh_cg_mapdb__tod</code> are missing scores because pro-rated scoring for the Toddlerhood version has not yet been updated for cases with missing or 'Decline to answer' values.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Pro-rated scoring is not yet applied for missing responses in the <code>mh_cg_mapdb__tod</code>, resulting in N=16 participants missing scores.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
@@ -84,7 +78,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Nails</td>
-<td style='word-wrap: break-word; white-space: normal;'>The toxicology results variable <code>bio_bm_biosample_nails_results_Nail_type</code> has a value of 4 (Unknown) for all rows and can safely be ignored; nail type can instead be found in <code>bio_bm_biosample_nails_typ_collection_nail_type</code>.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Use <code>bio_bm_biosample_nails_typ_collection_nail_type</code> <em>specimen type</em> table for nail type (<em>results</em> table values are all 4 (Unknown)).</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
 <tr>
@@ -94,8 +88,8 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>MAV01</td>
-<td style='word-wrap: break-word; white-space: normal;'>N=14 participants have a Maternal Age at V01 of 0 - these values should be excluded from analyses until corrected.</td>
+<td class='table-cell' style='font-weight: bold;'>Basic Demo</td>
+<td style='word-wrap: break-word; white-space: normal;'>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; please exclude these values from analyses until corrected.</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>EEG</strong></td></tr>
@@ -232,6 +226,12 @@ To ask a question or report an issue, please submit a ticket through the [Help C
     </thead>
     <tbody>
     
+<tr class="domain-row-pending"><td colspan="4"><strong>ADMINISTRATIVE</strong></td></tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Study Navigators</td>
+<td style='word-wrap: break-word; white-space: normal;'>The SUBSTANCE_USE and OTHER checkbox fields are blank and will be populated in the next release.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ECBQ</td>
