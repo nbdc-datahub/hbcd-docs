@@ -7,7 +7,7 @@
   </div>
   <div class="info-row">
     <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Demographics: V01, V06 (Adult) & V04 (Birth Parent & Alternative Caregiver)</div>
+    <div class="info-value">Demographics: V01 (Adult) & V04 (Birth Parent & Alternative Caregiver)</div>
   </div>
 </div>
 ---------------------------------------------   
@@ -42,7 +42,7 @@
 Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e., imperfect option for job type and number of hours).</p> 
 <hr>
 <p><b>Withheld Variables/Variable Data With Small Cell Sizes</b><br>
-Some variables do not contain any data in the current data release (e.g., household roster response options allowed for more household members than were reported by the respondents who completed V04 or V06  to date). These variables are currently being retained, as their relevance may change as data collection proceeds.</p> 
+Some variables do not contain any data in the current data release (e.g., household roster response options allowed for more household members than were reported by the respondents who completed V04 to date). These variables are currently being retained, as their relevance may change as data collection proceeds.</p> 
 <p>Some variables in this release have small cell sizes (between 1 and ten people per cell).  As a condition of using these data, specified in the DUC, you agree not to identify any individual from whom data was obtained and not to identify their relatives. You agree to a minimum cell threshold of 10 in any public reporting of the data (publications or presentations).</p> 
 <hr>
 <p><b>Branching Logic</b><br>
