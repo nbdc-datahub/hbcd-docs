@@ -122,14 +122,14 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Implausible GA</td>
-<td style='word-wrap: break-word; white-space: normal;'>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
+<td style='word-wrap: break-word; white-space: normal;'>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Raw BIDS</td>
 <td style='word-wrap: break-word; white-space: normal;'>There are 2 corrupted raw BIDS files (V02 bold runs under session-level <code>func/</code> folders of <code>rawdata/</code>) to be resolved. Impacted participant IDs/filepaths are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Run ID</td>
@@ -171,11 +171,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr class="domain-row-issue"><td colspan="4"><strong>PREGNANCY &amp; EXPOSURE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>APA 1/2</td>
-<td style='word-wrap: break-word; white-space: normal;'>Note that <code>pex_bm_apa_mania_001</code> through <code>mania_005</code> have incorrect Data Dictionary descriptions.</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>APA 1/2</td>
 <td style='word-wrap: break-word; white-space: normal;'>There are cases where APA Level 2 was administered against gating logic (e.g. for Repetitive Behavior despite there being missing Level 1 responses). As Level 2 administration was not expected, these are not scored (score = "No additional inquiry required") despite having Level 2 item responses present. The Level 2 item-level data will be removed in the future to prevent confusion.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
@@ -197,11 +192,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Healthv2 Preg</td>
 <td style='word-wrap: break-word; white-space: normal;'>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank. This will be addressed in a future release.</td>
-<td style='text-align: center; font-weight: bold;'></td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>PEX Health</td>
-<td style='word-wrap: break-word; white-space: normal;'>ICD codes for the <code>pex_bm_health*</code> instrument tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
 <tr>
@@ -370,10 +360,15 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='word-wrap: break-word; white-space: normal;'>Addition of sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>PEX Health</td>
+<td style='word-wrap: break-word; white-space: normal;'>ICD codes for the <code>pex_bm_health*</code> instrument tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
+<td style='text-align: center; font-weight: bold;'></td>
+</tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>SOCIAL &amp; ENVIRONMENTAL DETERMINANTS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Child Demo</td>
-<td style='word-wrap: break-word; white-space: normal;'>Update household roster count metadata to specify exclusion of Main Child (see "Household Roster" under <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a>).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Household roster will be updated to clarify that counts exclude the main child - see "Household Roster" under the Child Demographics <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> for details.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 </tbody></table>
