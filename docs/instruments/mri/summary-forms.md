@@ -40,6 +40,9 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
 </tbody>
 </table>
 
+<!-- LUCI NOTE: update QC procedures as needed once WG performs QC on data as available in Lasso BR -->
+
+
 ## Instrument Details
 
 Click to expand the sections below for an overview of the information provided in the release from each of the MRI summary forms:
