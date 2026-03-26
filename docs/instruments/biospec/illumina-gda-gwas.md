@@ -83,7 +83,10 @@ hbcd/
 
 ## Quality Control
 
-Genomics data passed through the [GDCGenomicsQC](https://github.com/UMN-GDC/GDCGenomicsQC) pipeline which is documented [here](https://gdcgenomicsqc.readthedocs.io/en/latest/genomics.html) which briefly include alternating filters for variant and subject missingness (first 10% then 2%), sex checks, outlier detection on first two genetic relatedness matrix derived principal components using PC-AIR and PC-Relate from [GENESIS](https://bioc.r-universe.dev/GENESIS), classification of relatedness by IBD estimates using [KING](https://www.kingrelatedness.com/). Additional project quality control steps involved the following:
+<!-- LUCI ADMIN NOTE: potentially add figures or tables from QC results provided in [html report](illumina-QC.html)  -->
+
+### General QC Checks
+The following quality control checks are performed:
 
 * Check that sampled ID matches from Sampled File and Lasso Database.  
 * Check that sample specific barcode matches between Sampled file and Lasso Database.  
@@ -91,6 +94,15 @@ Genomics data passed through the [GDCGenomicsQC](https://github.com/UMN-GDC/GDCG
 * Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is \~.50 between the birth parent and child as well as siblings; evaluate potential twins).  
 * Use FHET estimates to check for plate contamination.  
 * Visually inspect plate effects on principal component space derived from PC-Relate
+
+### GDC Genomics QC Pipeline Analysis
+
+In addition to the items above, genomics data is also passed through the [GDC Genomics QC](https://gdcgenomicsqc.readthedocs.io/en/latest/genomics.html) pipeline (<a href="https://github.com/UMN-GDC/GDCGenomicsQC"><i class="fa-brands fa-github" style="font-size: 1.1em;"></i></a>) for further QC analysis, including:
+
+- Alternating filters for variant and subject missingness (first 10% then 2%)
+- Sex checks
+- Outlier detection based on the first two principal components derived from the genetic relatedness matrix using PC-AIR and PC-Relate ([GENESIS](https://bioc.r-universe.dev/GENESIS))
+- Classification of relatedness using IBD estimates from [KING](https://www.kingrelatedness.com/).
 
 ## Data Exclusions
 
