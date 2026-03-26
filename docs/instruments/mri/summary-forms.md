@@ -36,7 +36,7 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
 <tr><td><b>Visits</b></td>
 <td>V02, V03, V04, V06</td></tr>
 <tr><td><b>QC Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal; color: red;">TO DO</td></tr>      
+<td><i>NA</i></td></tr>      
 </tbody>
 </table>
 
