@@ -48,7 +48,7 @@
 <tr><td><b>Visits</b></td>
 <td>V02, V03</td></tr>
 <tr><td><b>QC Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Monitor data dashboard for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>      
+<td style="word-wrap: break-word; white-space: normal;">Monitor data dashboard for variable missingness, coding errors, and data consistency.</td></tr>      
 </tbody>
 </table>
 
