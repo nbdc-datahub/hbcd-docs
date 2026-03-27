@@ -47,27 +47,3 @@ details ul li code {
 details ul:last-child {
   margin-bottom: 0; /* Remove any extra margin at the bottom of the last child */
 }
-
-
-/* Assay grid (for Olink) */
-.assay-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 2px 12px;
-  font-family: monospace;
-  font-size: 0.8rem;
-}
-.assay-grid span {
-  padding: 2px 4px;
-}
-.legend {
-  font-size: 0.85rem;
-  opacity: 0.8;
-}
-.assay-grid span.failed {
-  color: #b00020;
-  font-weight: 600;
-}
-.assay-grid span.failed::after {
-  content: " ✖";
-}
