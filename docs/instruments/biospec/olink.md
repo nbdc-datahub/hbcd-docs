@@ -2,7 +2,7 @@
 
 Protein abundance of inflammatory markers was measured using the **Olink Explore 384 Inflammation 1 Panel ([Olink® Explore 3072/384](https://olink.com/products/olink-explore-3072-384))**, with data generated using Explore version 6.7.2. Measurements were obtained from birth parents during pregnancy at Visit 1 as an indicator of maternal inflammation.
 
-Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX is a proprietary, arbitrary unit that reflects relative protein abundance, with higher values indicating higher abundance. Values are reported on a log₂ scale, such that a difference of 1 NPX corresponds to a two-fold difference in protein abundance. Note that NPX values are only comparable for the same protein across samples and plates and cannot be used for comparisons between different proteins. See the full assay list under the [Panel Quick Guide](#olink-explore-384-inflammation-panel-quick-guide) at the end of this page.
+Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX is a proprietary, arbitrary unit that reflects relative protein abundance, with higher values indicating higher abundance. Values are reported on a log₂ scale, such that a difference of 1 NPX corresponds to a two-fold difference in protein abundance. Note that NPX values are only comparable for the same protein across samples and plates and cannot be used for comparisons between different proteins. See the [Panel Quick Guide](#olink-explore-384-inflammation-panel-quick-guide) at the end of this page for the full assay list.
 
 ## Release Data
 
@@ -17,11 +17,10 @@ Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX i
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Limits of detection were not calculated for this data release; however, LODs should be calculated based on NC values and proteins with a large number of samples being below the LOD should be removed or evaluated with caution.</p>
+<p>Limits of detection (LOD) were not calculated for this release. Users should compute LOD values using negative control (NC) samples. Proteins with a high proportion of values below the LOD should be excluded or interpreted with caution.</p>
 </div>
 
-The Olink dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*):
-
+The Olink dataset is provided as concatenated files (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details):
 <pre class="folder-tree">
 hbcd/
 |__ concatenated/ 
@@ -33,95 +32,72 @@ hbcd/
 </pre>
 <p></p>
 
-**Protein NPX estimates are provided in two files with different data structures:**  
-
+**Two versions of the dataset are provided to support different analysis workflows:**
 <table class="table-no-vertical-lines">
-<thead> <tr> <th></th> <th><code>Olink_allplates_long.csv</code></th> <th><code>Olink_allplates_wide.csv</code></th> </tr> </thead> <tbody> <tr> <td><strong>Format</strong></td> <td>Long</td> <td>Wide</td> </tr> 
+<thead> <tr> <th></th> <th><code><b>Olink_allplates_long.csv</b></code></th> <th><code><b>Olink_allplates_wide.csv</b></code></th> </tr> </thead> <tbody> <tr> <td><strong>Format</strong></td> <td>Long</td> <td>Wide</td> </tr> 
 <tr> <td><strong>Structure</strong></td> <td>One row per participant–protein combination</td> <td>One row per participant & one column per protein</td> </tr> 
 <tr> <td><strong>Dimensions</strong></td> <td>538,080 rows × 16 columns</td> <td>1,416 rows × 1,522 columns</td> </tr> 
 </tbody> </table>
 
-## File Variables
+<div id="vars" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-table"></i></span>
+  <span class="text-with-link">
+    <span class="text">Long & Wide File Variables <span class="hint">(Click to expand)</span></span></span>
+    <a class="anchor-link" href="#vars" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>Reference: <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview</a></p><br>
 
-### Long File (`Olink_allplates_long.csv`)
-
+<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
+<span style="color: teal;">[WIDE]</span> = Column name is prefixed with assay name in the wide file version <i>(<code>{ASSAY}_{COLUMN}</code>)</i>
+</p>
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
-<th>Column</th>
+<th>Variable/Column Name</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr><td><code>SampleID</code></td><td>Participant or control identifier</td></tr>
-<tr>
-<td><code>SampleType</code></td>
-<td>Sample type. Possible values include:
-    <ul>
-    <li><b>SAMPLE</b></li>
-    <li><b>NEGATIVE_CONTROL</b> (used to determine background signal levels and calculate LOD)</li>
-    <li><b>PLATE_CONTROL</b> (for normalization between plates)</li>
-    <li><b>SAMPLE_CONTROL</b> (positive control; not needed for downstream data analysis)</li>
-    </ul>
-</td></tr>
+<tr><td><code>SampleID</code></td><td>Unique identifier for participant sample or control</td></tr>
+<tr><td><code>SampleType</code></td><td>Sample type - <i>see <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview</a> section 7.2 for external control type descriptions</i></td></tr>
 <tr><td><code>WellID</code></td><td>Plate well position</td></tr>
-<tr><td><code>PlateID</code></td><td>Plate number (1-15)/run identifier</td></tr>
+<tr><td><code>PlateID</code></td><td>Plate number (1–15) or run identifier</td></tr>
 <tr><td><code>DataAnalysisRefID</code></td><td>Olink analysis reference ID</td></tr>
 <tr><td><code>OlinkID</code></td><td>Olink assay identifier</td></tr>
 <tr><td><code>UniProt</code></td><td>UniProt or control code</td></tr>
 <tr><td><code>Assay</code></td><td>Assay/control name</td></tr>
 <tr><td><code>AssayType</code></td><td>assay, ext_ctrl, inc_ctrl, amp_ctrl</td></tr>
 <tr><td><code>Block</code></td><td>Olink plate block</td></tr>
-<tr><td><code>Count</code></td><td>Raw count value (number of times the oligo sequence was counted in the sample)</td></tr>
-<tr><td><code>ExtNPX</code></td><td>Extension-normalized value (count normalized by extension control)</td></tr>
-<tr><td><code>NPX</code></td><td>Normalized Protein eXpression value (ExtNPX normalized by median plate intensity)</td></tr>
-<tr><td><code>PCNormalizedNPX</code></td><td>Plate-control normalized NPX-like value</td></tr>
+<tr><td><code>Count</code> <b style="font-size: 0.9em; color: teal;">[WIDE]</b></td><td>Raw oligo sequence count value <i>(wide format: <code>{ASSAY}_Count</code>)</i></td></tr>
+<tr><td><code>ExtNPX</code> <b style="font-size: 0.9em; color: teal;">[WIDE]</b></td><td>Extension-normalized count value <i>(wide format: <code>{ASSAY}_ExtNPX</code>)</i></td></tr>
+<tr><td><code>NPX</code> <b style="font-size: 0.9em; color: teal;">[WIDE]</b></td><td>Protein eXpression normalized by median plate intensity <i>(wide format: <code>{ASSAY}_NPX</code>)</i></td></tr>
+<tr><td><code>PCNormalizedNPX</code> <b style="font-size: 0.9em; color: teal;">[WIDE]</b></td><td>Plate-control normalized NPX-like value <i>(wide format: <code>{ASSAY}_PCNormalizedNPX</code>)</i></td></tr>
 <tr><td><code>AssayQC</code></td><td>Assay-level QC flag</td></tr>
 <tr><td><code>SampleQC</code></td><td>Sample-level QC flag</td></tr>
 </tbody>
 </table>
-
-Reference: [Olink® Explore Overview](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf)
-
-### Wide File (`Olink_allplates_wide.csv`)
-
-- Identifier columns:
-    - SampleID
-    - PlateID
-- Expanded metric columns for each assay/control:
-    - {Assay}_Count
-    - {Assay}_ExtNPX
-    - {Assay}_NPX 
-    - {Assay}_PCNormalizedNPX
- - Observed assay/control count: 380
- - Observed metric suffixes: Count, ExtNPX, NPX, PCNormalizedNPX
+</div>
 
 ## Quality Control
 
 #### Olink QC 
 
-Internal assay controls include an extension control (used for normalization to generate NPX values) as well as incubation and amplification controls which monitor assay performance. See the [Olink® Explore Overview](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf) for a detailed description of these controls. Proteins that did not meet Olink’s quality control criteria have values of **0** for **[Protein]_Count** and **NA** for **ExtNPX**, **NPX**, and **PCNormalizedNPX**.    
-Select "QC Failures Only" under the [Panel Quick Guide](#olink-explore-384-inflammation-panel-quick-guide) at the end of this page to see list protein assays that failed Olink QC.
+Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the [Olink® Explore Overview (*section 7.1 Internal controls*)](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf) for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of *0* for `{ASSAY}_Count` and *NA* for `ExtNPX`, `NPX`, and `PCNormalizedNPX`.
 
-<!-- This includes the following proteins:
+**→ Select “QC failures only” under the [Panel Quick Guide](#olink-explore-384-inflammation-panel-quick-guide) to view list of affected assays**
 
-<ul style="font-size: 0.9em;">
-<li>BCL2L11 (O43521-2) </li>
-<li>BID (P55957) </li>
-<li>CD40LG (P29965) </li>
-<li>CLEC7A (Q9BXN2) </li>
-<li>HGF (P14210) </li>
-<li>IDS (P22304) </li>
-<li>LTA (P01374) </li>
-<li>MGLL (Q99685)  </li>
-<li>PTPRM (P28827) </li>
-<li>RAB6A (P20340) </li>
-</ul> -->
+<!-- This includes the following proteins: BCL2L11 (O43521-2); BID (P55957); CD40LG (P29965); CLEC7A (Q9BXN2); HGF (P14210); IDS (P22304); LTA (P01374);MGLL (Q99685); PTPRM (P28827); RAB6A (P20340) -->
 
 #### Plate Effects
 
-Samples were run on 15 plates (numbered 1–15). Proteins exhibiting a plate effect were not excluded from the release. Plate effects were determined by ANOVA with a p-value threshold of *.0033* (*.05 / 15*). Post-hoc tests were run to determine if plate effects were driven by a small number of outlier plates and this was determined not to be the case. A total of **337 proteins** demonstrated a plate effect when normalizing by plate control; a total of **46 proteins** demonstrated a plate effect when normalizing by median plate intensity.    
-Select "Plate Effects Only" under the [Panel Quick Guide](#olink-explore-384-inflammation-panel-quick-guide) at the end of this page to see list protein assays with significant plate effects.
+Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting plate effects are not excluded from release data. Plate effects were assessed using ANOVA with a p-value threshold of *0.0033 (.05 / 15)*. Post-hoc analyses showed that these effects were not driven by a small number of outlier plates, but instead reflected broader plate-to-plate variation. A total of **337 proteins** demonstrated a plate effect when normalizing by plate control; a total of **46 proteins** demonstrated a plate effect when normalizing by median plate intensity.
+
+**→ Select “Plate effects only” under the [Panel Quick Guide](#olink-explore-384-inflammation-panel-quick-guide) to view list of affected assays**
 
 ## Resources
 
