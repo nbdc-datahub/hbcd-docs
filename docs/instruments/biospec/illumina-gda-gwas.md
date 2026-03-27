@@ -101,7 +101,7 @@ The following quality control checks are performed:
 * Visually inspect plate effects on principal component space derived from PC-Relate
 
 ### GDC Genomics QC Pipeline Analysis
-In addition to the items above, genomics data is also passed through the [GDC Genomics QC](https://gdcgenomicsqc.readthedocs.io/en/latest/genomics.html) pipeline (<a href="https://github.com/UMN-GDC/GDCGenomicsQC"><i class="fa-brands fa-github" style="font-size: 1.1em;"></i></a>) for further QC analysis, including:
+Genomics data is also passed through the [GDC Genomics QC](https://gdcgenomicsqc.readthedocs.io/en/latest/genomics.html) pipeline (<a href="https://github.com/UMN-GDC/GDCGenomicsQC"><i class="fa-brands fa-github" style="font-size: 1.1em;"></i></a>) for further QC analysis, including:
 
 - Alternating filters for variant and subject missingness (first 10% then 2%)
 - Sex checks
@@ -109,27 +109,26 @@ In addition to the items above, genomics data is also passed through the [GDC Ge
 - Classification of relatedness using IBD estimates from [KING](https://www.kingrelatedness.com/).
 
 #### Cryptic Relatedness
-
-<div style="display: flex; align-items: center; gap: 25px;">
-<div style="flex: 1;">
-<p>KING coefficient inferred relatedness revealed familial relationships that were unreported. <i>Right:</i> Anonymized cryptic relatedness family graphs with the following intervals: (0.354, infy) -> monozygotic twins or duplicate samples, (0.177, 0.354] -> first degree relations (Parent/Offspring [PO] or sibling), (0.0884, 0.177] -> 2nd degree, and [0, 0.0884] -> unrelated. (Note: all visualized edges were unreported).</p>
-</div>
-  <!-- Image on the right -->
-  <div style="flex: 1; text-align: center;">
-    <img src="../images/family-clusters.png" style="max-width:100%; height:auto; display:block; margin:0 auto;"> 
+<div style="display: flex; align-items: center; gap: 25px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 250px;">
+    <p>KING coefficient–inferred relatedness identified previously unreported familial relationships. The anonymized cryptic relatedness family graphs (<i>right</i>) show inferred relationships based on the following KING coefficient intervals (all visualized edges represent unreported relationships):</p>
+    <ul style="font-size: 0.9em;">
+      <li>[0.354, ∞] → Monozygotic twins or duplicate samples</li>
+      <li>[0.177, 0.354] → First-degree (parent–offspring or siblings)</li>
+      <li>[0.0884, 0.177] → Second-degree</li>
+      <li>[0, 0.0884] → Unrelated</li>
+    </ul>
+  </div>
+  <div style="flex: 1; min-width: 200px; text-align: center;">
+    <img src="../images/family-clusters.png" style="max-width:100%; height:auto; display:block; margin:0 auto;">
   </div>
 </div>
+<br>
 
 #### Genetic Ancestry-Based Clustering
-
-<div style="display: flex; align-items: center; gap: 25px;">
-<div style="flex: 1;">
-<p>PC space derived from the first two components from PC-Relate were visually inspected to evaluate the effect of reported race on clustering. Reported race seemed to be largely clustered within the first two genetic principal components:</p>
-</div>
-  <!-- Image on the right -->
-  <div style="flex: 1; text-align: center;">
-    <img src="../images/pca.png" style="max-width:100%; height:auto; display:block; margin:0 auto;"> 
-  </div>
+<p style="margin-bottom: 0;">PC space derived from the first two PC-Relate components was visually inspected to assess clustering by reported race. Reported race largely clustered within the first two genetic principal components:</p>
+<div style="text-align: center;">
+  <img src="../images/pca.png" style="max-width: 70%; height:auto; display:block; margin:0 auto;">
 </div>
 
 ## Data Exclusions
