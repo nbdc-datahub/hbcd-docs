@@ -96,18 +96,41 @@ The following quality control checks are performed:
 * Check that sampled ID matches from Sampled File and Lasso Database.  
 * Check that sample specific barcode matches between Sampled file and Lasso Database.  
 * Check that genomic sex matches with sex at birth.  
-* Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is \~.50 between the birth parent and child as well as siblings; evaluate potential twins).  
+* Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is ~0.25 between the birth parent and child as well as siblings; evaluate potential twins).  
 * Use FHET estimates to check for plate contamination.  
 * Visually inspect plate effects on principal component space derived from PC-Relate
 
 ### GDC Genomics QC Pipeline Analysis
-
 In addition to the items above, genomics data is also passed through the [GDC Genomics QC](https://gdcgenomicsqc.readthedocs.io/en/latest/genomics.html) pipeline (<a href="https://github.com/UMN-GDC/GDCGenomicsQC"><i class="fa-brands fa-github" style="font-size: 1.1em;"></i></a>) for further QC analysis, including:
 
 - Alternating filters for variant and subject missingness (first 10% then 2%)
 - Sex checks
 - Outlier detection based on the first two principal components derived from the genetic relatedness matrix using PC-AIR and PC-Relate ([GENESIS](https://bioc.r-universe.dev/GENESIS))
 - Classification of relatedness using IBD estimates from [KING](https://www.kingrelatedness.com/).
+
+#### Cryptic Relatedness
+
+<div style="display: flex; align-items: center; gap: 25px;">
+<div style="flex: 1;">
+<p>KING coefficient inferred relatedness revealed familial relationships that were unreported. <i>Right:</i> Anonymized cryptic relatedness family graphs with the following intervals: (0.354, infy) -> monozygotic twins or duplicate samples, (0.177, 0.354] -> first degree relations (Parent/Offspring [PO] or sibling), (0.0884, 0.177] -> 2nd degree, and [0, 0.0884] -> unrelated. (Note: all visualized edges were unreported).</p>
+</div>
+  <!-- Image on the right -->
+  <div style="flex: 1; text-align: center;">
+    <img src="../images/family-clusters.png" style="max-width:100%; height:auto; display:block; margin:0 auto;"> 
+  </div>
+</div>
+
+#### Genetic Ancestry-Based Clustering
+
+<div style="display: flex; align-items: center; gap: 25px;">
+<div style="flex: 1;">
+<p>PC space derived from the first two components from PC-Relate were visually inspected to evaluate the effect of reported race on clustering. Reported race seemed to be largely clustered within the first two genetic principal components:</p>
+</div>
+  <!-- Image on the right -->
+  <div style="flex: 1; text-align: center;">
+    <img src="../images/pca.png" style="max-width:100%; height:auto; display:block; margin:0 auto;"> 
+  </div>
+</div>
 
 ## Data Exclusions
 
