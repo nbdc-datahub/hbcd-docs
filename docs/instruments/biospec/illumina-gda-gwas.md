@@ -92,21 +92,25 @@ hbcd/
 
 ### General QC Checks
 The following quality control checks are performed:
-
-* Check that sampled ID matches from Sampled File and Lasso Database.  
-* Check that sample specific barcode matches between Sampled file and Lasso Database.  
-* Check that genomic sex matches with sex at birth.  
-* Check that genetic relatedness of each sample matches the anticipated based on Lasso data (i.e., that IBD is ~0.25 between the birth parent and child as well as siblings; evaluate potential twins).  
-* Use FHET estimates to check for plate contamination.  
-* Visually inspect plate effects on principal component space derived from PC-Relate
+<ul style="font-size: 0.9em;">
+<li>Check that sampled ID matches from Sampled File and Lasso Database.  </li>
+<li>Check that sample specific barcode matches between Sampled file and Lasso Database.  </li>
+<li>Check that genomic sex matches with sex at birth.  </li>
+<li>Check that genetic relatedness of each sample matches Lasso data (i.e., that IBD is ~0.25 between the birth parent and child as well as siblings; evaluate potential twins).  </li>
+<li>Use FHET estimates to check for plate contamination.  </li>
+<li>Visually inspect plate effects on principal component space derived from PC-Relate</li>
+</ul>
 
 ### GDC Genomics QC Pipeline Analysis
-Genomics data is also passed through the [GDC Genomics QC](https://gdcgenomicsqc.readthedocs.io/en/latest/genomics.html) pipeline (<a href="https://github.com/UMN-GDC/GDCGenomicsQC"><i class="fa-brands fa-github" style="font-size: 1.1em;"></i></a>) for further QC analysis, including:
 
-- Alternating filters for variant and subject missingness (first 10% then 2%)
-- Sex checks
-- Outlier detection based on the first two principal components derived from the genetic relatedness matrix using PC-AIR and PC-Relate ([GENESIS](https://bioc.r-universe.dev/GENESIS))
-- Classification of relatedness using IBD estimates from [KING](https://www.kingrelatedness.com/).
+Genomics data are further processed through the [GDC Genomics QC](https://gdcgenomicsqc.readthedocs.io/en/latest/genomics.html) pipeline (<a href="https://github.com/UMN-GDC/GDCGenomicsQC"><i class="fa-brands fa-github" style="font-size: 1.1em;"></i></a>) for additional quality control, including:
+
+<ul style="font-size: 0.9em;">
+<li>Alternating filters for variant and subject missingness (10% followed by 2%)</li>
+<li>Sex checks</li>
+<li>Outlier detection based on the first two principal components derived from the genetic relatedness matrix using PC-AIR and PC-Relate (<a href="https://bioc.r-universe.dev/GENESIS">GENESIS</a>)</li>
+<li>Classification of relatedness using IBD estimates from <a href="https://www.kingrelatedness.com/">KING</a></li>
+</ul>
 
 #### Cryptic Relatedness
 <div style="display: flex; align-items: center; gap: 25px; flex-wrap: wrap;">
@@ -126,7 +130,7 @@ Genomics data is also passed through the [GDC Genomics QC](https://gdcgenomicsqc
 <br>
 
 #### Genetic Ancestry-Based Clustering
-<p style="margin-bottom: 0;">PC space derived from the first two PC-Relate components was visually inspected to assess clustering by reported race. Reported race largely clustered within the first two genetic principal components:</p>
+PC space derived from the first two PC-Relate components was visually inspected to assess clustering by reported race. Reported race largely clustered within the first two genetic principal components:
 <div style="text-align: center;">
   <img src="../images/pca.png" style="max-width: 70%; height:auto; display:block; margin:0 auto;">
 </div>
