@@ -55,6 +55,11 @@ The item “How many days per month do you live with the child?” (<code>sed_bm
 For household roster variables, respondents were instructed to <b>exclude the main child</b> when reporting the number of people living in the household (e.g., <a href="../demo-ch-table/#household-specific-details" target="_blank">item 29</a>). Metadata for relevant fields (<code>sed_bm_demo_child__roster_002__02__*</code>) will be updated in the future to make this instruction explicit. This includes fields describing the total number of children younger than 17, the total number of people in the household, and corresponding fields for a second household, if applicable.</p>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

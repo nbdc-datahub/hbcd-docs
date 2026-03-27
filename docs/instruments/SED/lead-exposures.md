@@ -27,6 +27,11 @@
 <p>Incidents of pediatric lead poisoning have previously been linked to consumption of certain imported candies and food colorings, traditional remedies, or food storage vessels (<a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm">CDC 1998</a>; <a href="https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html">CDC 2025</a>). The identification of these specific sources in the Lead Exposures questionnaire is based on documented cases of lead poisoning tied to specific products and should not be interpreted as highlighting any group as having particularly high risk as a result of their race or ethnicity. It is important to recognize that products and sources others than those specifically listed may contain hazardous levels of lead.</p>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

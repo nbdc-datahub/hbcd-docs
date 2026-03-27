@@ -27,6 +27,11 @@
 <p>Participants report information for the child’s primary residence. If a child spends at least 2-days per week in multiple homes, reporters are asked to provide information for the home they are most familiar with. As a result, exposures to secondhand smoke or chemicals in those additional environments is not captured, which may result in incomplete exposure data.</p> 
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

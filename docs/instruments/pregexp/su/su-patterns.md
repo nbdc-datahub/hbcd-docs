@@ -46,6 +46,11 @@
 <p>The form captures general patterns of substance use by trimester and is intended to complement (1) the Timeline Followback (TLFB), which focuses on specific weeks of use during pregnancy, and (2) biospecimen data, which have variable look-back periods. However, some participants only consider <i>use after pregnancy recognition</i> as 'pregnancy use,' which may result in discrepancies between this measure, the ASSIST, and the TLFB.</p>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
