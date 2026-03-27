@@ -18,6 +18,7 @@ markdown_extensions:
   - toc:
       permalink: '🔗'  
   - pymdownx.arithmatex
+  - pymdownx.snippets
 
 extra_javascript:
   - js/extra.js
@@ -39,7 +40,6 @@ extra_css:
   - css/copybox.css
   - css/custom.css
   - css/headers.css
-  - css/issues.css
   - css/legends.css
   - css/logos.css
   - css/notifications.css

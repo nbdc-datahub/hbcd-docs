@@ -29,6 +29,11 @@
 <p>Some variables in this release have small cell sizes. As a condition of using these data, specified in the DUC, you agree not to identify any individual from whom data was obtained and not to identify their relatives. You agree to a minimum cell threshold of 10 in any public reporting of the data (publications, posters, or other presentations). Protecting participants’ anonymity demonstrates respect for them and minimizes their research-related risks.</p>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
+</div>
+
 ## Administration & Quality Control
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>

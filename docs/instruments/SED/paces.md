@@ -25,10 +25,9 @@
 </tbody>
 </table>
 
-<!-- INTERNAL NOTE: REMOVE MENTION OF THIS KNOWN ISSUE ONCE RESOLVED -->
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">This data has known issues - <a href="../../../changelog/issues-updates/#known-issues" target="_blank">see details</a>.</span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
 
 ## Administration & Quality Control

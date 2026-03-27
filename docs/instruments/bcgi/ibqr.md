@@ -55,6 +55,11 @@ At V05 (10–17 months), participants could be administered either the IBQ-R (va
 However, early in data collection, the ECBQ was inadvertently administered to infants older than 12 months (N=78). In a small number of cases (N=10), caregivers had not completed all of their V05 remote surveys before the child aged into the ECBQ range, resulting in both measures being administered at V05. Although IBQ-R and ECBQ assess similar constructs, they are not interchangeable. Users should review measure-specific properties before incorporating these data into analyses.</p>
 </div>
 
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
+</div>
+
 ## Administration & Quality Control
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">

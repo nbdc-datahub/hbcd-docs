@@ -1,21 +1,7 @@
 # Visit Information
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>par_visit_data</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Derived Visit Information</div>
-  </div>
-</div>
+Visit Information (table name `par_visit_data`) includes general visit information (e.g. site and information about missed visits and participant withdrawal), [substance use flags](#substance-use-flags), and [cohort and caregiver types](#cohort-caregiver-types). The age range of the child participant at each visit is as follows:
 
----------------------------------------------
-
-**Visit Level Data includes: [General Visit Information](#general-visit-information), [Substance Use Flags](#substance-use-flags), and [Cohort & Caregiver Types](#cohort-caregiver-types).**
-
-## Age Of Child at Each Visit
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
@@ -39,55 +25,10 @@
 </tbody>
 </table>
 
-## General Visit Information
-General visit information includes site, project, and information about missed visits and participant withdrawal.
-
-<div id="gen" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-table"></i></span>
-  <span class="text-with-link">
-  <span class="text">General Visit Level Data Variables</span>
-  <a class="anchor-link" href="#gen" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-<div class="table-collapsible-content">
- <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
- <thead>
- <tr>
- <th>Name</th>
- <th>Description</th>
-</tr>
- </thead>
- <tbody>
-  <tr>
- <td>par_visit_data_site</td>
- <td>The candidate site.</td>
- </tr>
-  <tr>
- <td>par_visit_data_project</td>
- <td>The candidate project name.</td>
- </tr>
- <tr>
- <td>par_visit_data_participant_withdrawal</td>
- <td>Tells if the participant withdrawn from the study.</td>
- </tr>
-  <tr>
- <td>par_visit_data_visit_missed</td>
- <td>Tells if the visit was missed.</td>
- </tr>
-<tr>
- <td>par_visit_data_visit_missed_date (<i>to be added in future release</i>)</td>
- <td>Date of missed visit</td>
- </tr>
- <tr>
- <td>par_visit_data_reason_visit_missed</td>
- <td>If the visit was missed, the reason why.</td>
- </tr>
- </tbody>
- </table>
- </div>
 
 ## Substance Use Flags
 

@@ -41,6 +41,11 @@ The dataset includes two birth parents who are monozygotic twins (along with the
 <p><b>Data Exclusions</b><br>
 See <a href="#data-exclusions">Quality Control &gt; Data Exclusions</a> below.</p>
 </div>
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
+</div>
 <p></p>
 
 The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>genetics/</code> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*). It includes **batch metadata** and **three interlinked PLINK files** (`.bed`, `.bim`, `.fam`) aligned to the **hg19 genome build**:

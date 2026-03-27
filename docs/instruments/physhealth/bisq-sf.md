@@ -31,6 +31,11 @@ Note that it is not currently possible to determine which participants were admi
 <p><b>Appropriate Use</b><br>
 Scores are for research purposes only and are not for individual dissemination or clinical use.</p>
 </div>
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
+</div>
     
 ## Administration & Quality Control
 
