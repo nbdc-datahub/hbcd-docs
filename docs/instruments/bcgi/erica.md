@@ -44,14 +44,22 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<ul>
-  <li>Data Release 2.1 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month).</li>
-  <li>Coding data for a subset of participants may be missing from this data release for various reasons. This data will be added in future releases.</li>
-  <li>The ERICA was administered in Spanish and English. The language of administration (i.e., in which RAs would deliver the instructions) does not always correspond with the language spoken by the caregiver/child during the activities. All videos in which the dyad speaks Spanish during the activities were coded by fully Spanish-English bilingual coders.</li>
-  <li>Modifiers added at the activity level occasionally result in global scores of &lt;0 or &gt;3. Global scores that are &lt;0 should be converted to "0" by the user for analysis, and scores &gt;3 should be converted to "3" prior to analysis.</li>
-  <li>The code for "caregiver irritable behavior" in Data Release 2.1 has a low base rate. We recommend dichotomizing (0 = 0 and &gt;0 = 1) for analysis.</li>
-  <li>There are two data files included in this release. The files contain the same coding data for different participants and should be combined prior to analysis to create a single analytic file.</li>
-</ul>
+<p>Data Release 2.1 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month).</p>
+<hr style="margin-bottom: 0; margin-top: 0;">
+<p>Coding data for a subset of participants may be missing from this data release for various reasons. This data will be added in future releases.</p>
+<hr style="margin-bottom: 0; margin-top: 0;">
+<p>The ERICA was administered in Spanish and English. The language of administration (i.e., in which RAs would deliver the instructions) does not always correspond with the language spoken by the caregiver/child during the activities. All videos in which the dyad speaks Spanish during the activities were coded by fully Spanish-English bilingual coders.</p>
+<hr style="margin-bottom: 0; margin-top: 0;">
+<p>Modifiers added at the activity level occasionally result in global scores of &lt;0 or &gt;3. Global scores that are &lt;0 should be converted to "0" by the user for analysis, and scores &gt;3 should be converted to "3" prior to analysis.</p>
+<hr style="margin-bottom: 0; margin-top: 0;">
+<p>The code for "caregiver irritable behavior" in Data Release 2.1 has a low base rate. We recommend dichotomizing (0 = 0 and &gt;0 = 1) for analysis.</p>
+<hr style="margin-bottom: 0; margin-top: 0;">
+<p>There are two data files included in this release. The files contain the same coding data for different participants and should be combined prior to analysis to create a single analytic file.</p>
+</div>
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
 
 ## Administration & Quality Control
@@ -132,8 +140,20 @@ The ERICA is coded utilizing a one-pass, global coding system, which was adapted
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Coders rate each construct at the activity level on a 4-point scale (None=0, Low=1, Medium=2, High=3).  Activity-level ratings are then  averaged across all activities to generate a continuous global score, ranging from 0-3, with higher scores reflecting higher levels of observed behavior.  Modifiers (-1, +1, and +2) may be used with three codes (child irritability, caregiver responsive behavior, and dyadic connectedness) to capture important qualitative distinctions.  For example, for child irritability, a +1 is added at the activity level when a child is highly irritable throughout an entire activity, with no recovery or re-engagement and a +2 is added if a child becomes intensely dysregulated during an activity (e.g., intense crying with breath holding, gagging, other indications of intense dysregulation).  When used, modifiers are included in the sum for the global scores.  Videos are coded and global scores generated as long as 3 out of the 5 ERICA activities are completed.  If less than 3 activities are completed, the video is not coded and scores are not generated.</p>
+<p>Coders rate each construct at the activity level on a 4-point scale (None = 0, Low = 1, Medium = 2, High = 3). Activity-level ratings are then averaged across all activities to generate a continuous global score, ranging from 0-3, with higher scores reflecting higher levels of observed behavior.</p>
+
+<p>Modifiers (-1, +1, and +2) may be used with three codes (<i>child irritability, caregiver responsive behavior, and dyadic connectedness</i>) to capture important qualitative distinctions. For example, for child irritability, a <b>+1</b> is added at the activity level when a child is highly irritable throughout an entire activity, with no recovery or re-engagement and a <b>+2/<b> is added if a child becomes intensely dysregulated during an activity (e.g., intense crying with breath holding, gagging, other indications of intense dysregulation). When used, modifiers are included in the sum for the global scores.</p>
+
+<p>Videos are coded and global scores generated as long as 3 out of the 5 ERICA activities are completed. If less than 3 activities are completed, the video is not coded and scores are not generated.</p>
 </div>
+
+
+Modifiers (−1, +1, +2) may be applied to three constructs—child irritability, caregiver responsive behavior, and dyadic connectedness—to capture meaningful qualitative distinctions. Modifiers are assigned at the activity level and incorporated into global score calculations.
+
+For example, within child irritability, a +1 modifier is applied when a child remains highly irritable throughout an activity without recovery or re-engagement. A +2 modifier is applied when a child exhibits intense dysregulation (e.g., sustained crying with breath holding or gagging).
+
+Videos are coded and global scores are computed when at least 3 of the 5 ERICA activities are completed. Videos with fewer than 3 completed activities are not coded and do not receive scores.
+
 
 ## References
 <div class="references"> 
