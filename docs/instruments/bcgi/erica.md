@@ -156,14 +156,6 @@ The ERICA is coded utilizing a one-pass, global coding system, which was adapted
 <p>Videos are coded and global scores generated as long as 3 out of the 5 ERICA activities are completed. If less than 3 activities are completed, the video is not coded and scores are not generated.</p>
 </div>
 
-
-Modifiers (−1, +1, +2) may be applied to three constructs—child irritability, caregiver responsive behavior, and dyadic connectedness—to capture meaningful qualitative distinctions. Modifiers are assigned at the activity level and incorporated into global score calculations.
-
-For example, within child irritability, a +1 modifier is applied when a child remains highly irritable throughout an activity without recovery or re-engagement. A +2 modifier is applied when a child exhibits intense dysregulation (e.g., sustained crying with breath holding or gagging).
-
-Videos are coded and global scores are computed when at least 3 of the 5 ERICA activities are completed. Videos with fewer than 3 completed activities are not coded and do not receive scores.
-
-
 ## References
 <div class="references"> 
 <p>Krogh-Jespersen, S., MacNeill, L. A., Anderson, E. L., Stroup, H. E., Harriott, E. M., Gut, E., Blum, A., Fareedi, E., Fredian, K. M., Wert, S. L., Wakschlag, L. S., & Norton, E. S. (2021). Disruption leads to methodological and analytic innovation in developmental sciences: Recommendations for remote administration and dealing with messy data. <i>Frontiers in Psychology</i>, 12, 732312. <a href="https://doi.org/10.3389/fpsyg.2021.732312">https://doi.org/10.3389/fpsyg.2021.732312</a></p>
