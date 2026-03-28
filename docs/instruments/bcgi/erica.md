@@ -44,17 +44,17 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Data Release 2.1 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month).</p>
+<p style="margin-bottom: 0;">Data Release 2.1 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month).</p>
 <hr style="margin-bottom: 0; margin-top: 0;">
 <p>Coding data for a subset of participants may be missing from this data release for various reasons. This data will be added in future releases.</p>
 <hr style="margin-bottom: 0; margin-top: 0;">
-<p>The ERICA was administered in Spanish and English. The language of administration (i.e., in which RAs would deliver the instructions) does not always correspond with the language spoken by the caregiver/child during the activities. All videos in which the dyad speaks Spanish during the activities were coded by fully Spanish-English bilingual coders.</p>
+<p style="margin-bottom: 0;">The ERICA was administered in Spanish and English. The language of administration (i.e., in which RAs would deliver the instructions) does not always correspond with the language spoken by the caregiver/child during the activities. All videos in which the dyad speaks Spanish during the activities were coded by fully Spanish-English bilingual coders.</p>
 <hr style="margin-bottom: 0; margin-top: 0;">
-<p>Modifiers added at the activity level occasionally result in global scores of &lt;0 or &gt;3. Global scores that are &lt;0 should be converted to "0" by the user for analysis, and scores &gt;3 should be converted to "3" prior to analysis.</p>
+<p style="margin-bottom: 0;">Modifiers added at the activity level occasionally result in global scores of &lt;0 or &gt;3. Global scores that are &lt;0 should be converted to "0" by the user for analysis, and scores &gt;3 should be converted to "3" prior to analysis.</p>
 <hr style="margin-bottom: 0; margin-top: 0;">
-<p>The code for "caregiver irritable behavior" in Data Release 2.1 has a low base rate. We recommend dichotomizing (0 = 0 and &gt;0 = 1) for analysis.</p>
+<p style="margin-bottom: 0;">The code for "caregiver irritable behavior" in Data Release 2.1 has a low base rate. We recommend dichotomizing (0 = 0 and &gt;0 = 1) for analysis.</p>
 <hr style="margin-bottom: 0; margin-top: 0;">
-<p>There are two data files included in this release. The files contain the same coding data for different participants and should be combined prior to analysis to create a single analytic file.</p>
+<p style="margin-bottom: 0.1;">There are two data files included in this release. The files contain the same coding data for different participants and should be combined prior to analysis to create a single analytic file.</p>
 </div>
 
 <div id="issues" class="issues-banner">
@@ -72,7 +72,7 @@
 <tr><td><b>Visits</b></td><td>V03</td></tr>
 <tr><td><b>Completion Time</b></td><td>20-30 minutes</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">QC procedures were conducted separately for (1) ERICA site-level administration and (2) the centralized coding of ERICA videos. Click to expand <a href="#qc">Quality Control Details</a> below for details.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">QC procedures were conducted separately for <b>(1) ERICA site-level administration</b> and <b>(2) the centralized coding of ERICA videos</b>. Click to expand <a href="#qc">Quality Control Details</a> below for details.</td></tr>
 </tbody>
 </table>
 
