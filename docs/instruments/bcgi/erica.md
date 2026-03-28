@@ -73,15 +73,6 @@
 <tr><td><b>Completion Time</b></td><td>20-30 minutes</td></tr>
 <tr><td><b>Quality Control</b></td>
 <td style="word-wrap: break-word; white-space: normal;">QC procedures were conducted separately for <b>(1) ERICA site-level administration</b> and <b>(2) the centralized coding of ERICA videos</b>. Expand <a href="#qc">Quality Control Details</a> below for full documentation.</td></tr>
-<!-- <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
-  QC procedures were conducted separately for:<br>
-  <ol style="margin-bottom: 0;">
-  <li>ERICA site-level administration</li>
-  <li>Centralized coding of ERICA videos</li>
-  </ol>
-  <span>Expand <a href="#qc">Quality Control Details</a> below for full documentation.</span>
-</td></tr> -->
 </tbody>
 </table>
 
@@ -121,8 +112,26 @@
 
 The Early Regulation in Context Assessment (**ERICA**) is a standardized observational paradigm that is adapted from the well-validated Disruptive Behavior Diagnostic Observation Schedule (DB-DOS) ([Krogh-Jespersen et al. 2022](https://doi.org/10.3389/fpsyg.2021.732312)). The ERICA assesses early child regulation in the context of the caregiver-child relationship via a series of five brief, developmentally appropriate activities that “press” for regulation within the dyad (e.g., frustration, engagement, enjoyment).
 
-The ERICA is coded utilizing a one-pass, global coding system, which was adapted for HBCD. There are seven codes—three child, three caregiver, and one dyadic code. Codes include: child positive affect, irritability, and social engagement; caregiver responsive behavior, irritable behavior, and directive behavior; and caregiver-child connectedness. Codes are scored on a 4-point scale (0-3), reflecting the frequency, intensity and duration of observed behaviors across the paradigm, with higher scores indicating higher levels of observed behavior. See [Edwards et al. (2024)](https://doi.org/10.1016/j.dcn.2024.101422) for additional details on the ERICA paradigm and adaptation for HBCD.  
+The ERICA is coded utilizing a one-pass, global coding system, which was adapted for HBCD. There are seven codes—three child, three caregiver, and one dyadic code. Codes include: child positive affect, irritability, and social engagement; caregiver responsive behavior, irritable behavior, and directive behavior; and caregiver-child connectedness. Codes are scored on a 4-point scale (0-3), reflecting the frequency, intensity and duration of observed behaviors across the paradigm, with higher scores indicating higher levels of observed behavior. See [Edwards et al. (2024)](https://doi.org/10.1016/j.dcn.2024.101422) for additional details on the ERICA paradigm and adaptation for HBCD.
 
+<!-- The ERICA is coded using a one-pass, global coding system adapted for HBCD. Seven codes are organized across child, caregiver, and dyadic domains:
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+<td><b>Child</b></td>
+<td>Positive affect; irritability; social engagement</td>
+</tr>
+<tr>
+<td><b>Caregiver</b></td>
+<td>Responsive behavior; irritable behavior; directive behavior</td>
+</tr>
+<tr>
+<td><b>Dyadic</b></td>
+<td>Caregiver–child connectedness</td>
+</tr>
+</tbody>
+</table> -->
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -135,7 +144,7 @@ The ERICA is coded utilizing a one-pass, global coding system, which was adapted
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-
+<p style="color: red;">PLACEHOLDER - should anything be added or moved here from instrument details above?</p>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
