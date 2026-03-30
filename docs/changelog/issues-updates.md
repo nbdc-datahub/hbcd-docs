@@ -88,8 +88,18 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
 <tr>
+<td class='table-cell' style='font-weight: bold;'></td>
+<td style='word-wrap: break-word; white-space: normal;'></td>
+<td style='text-align: center; font-weight: bold;'></td>
+</tr>
+<tr>
 <td class='table-cell' style='font-weight: bold;'>Basic Demo</td>
 <td style='word-wrap: break-word; white-space: normal;'>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; please exclude these values from analyses until corrected.</td>
+<td style='text-align: center; font-weight: bold;'></td>
+</tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Demographics</td>
+<td style='word-wrap: break-word; white-space: normal;'>Variables on the Other Biological Parent are missing from <code>sed_bm_demo</code>.</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>EEG</strong></td></tr>
@@ -279,7 +289,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Multibirth Cohorts</td>
 <td style='word-wrap: break-word; white-space: normal;'>Missing instrument fields for Sibling cohorts will be populated and <em>familyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
-<td style='text-align: center; font-weight: bold;'>3</td>
+<td style='text-align: center; font-weight: bold;'></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Sequence Field</td>
@@ -363,7 +373,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td class='table-cell' style='font-weight: bold;'>PEX Health</td>
 <td style='word-wrap: break-word; white-space: normal;'>ICD codes for the <code>pex_bm_health*</code> instrument tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>SOCIAL &amp; ENVIRONMENTAL DETERMINANTS</strong></td></tr>
 <tr>
