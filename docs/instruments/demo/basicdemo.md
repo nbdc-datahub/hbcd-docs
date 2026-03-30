@@ -1,3 +1,12 @@
+<style>
+.wy-nav-content {
+    width: 90% !important;
+    max-width: 100% !important;
+    flex-grow: 1 !important;
+}
+</style>
+
+
 # Basic Demographics Information 
 
 <div class="info-block">
@@ -38,14 +47,14 @@
 <p>
 <div class="table-banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">Basic Demographics is a <a href="../../../access/metadata/#type_var" target="_blank">derived table</a>. See <a href="../../SED/demo-cg/" target="_blank">Demographics</a> and <a href="../../SED/demo-ch/" target="_blank">Child Demographics</a> instruments for full demographic information.</span>
+  <span class="text">Basic Demographics is <a href="../../../access/metadata/#type_var" target="_blank">derived data</a>: see <a href="../../SED/demo-cg/" target="_blank">Demographics</a>/<a href="../../SED/demo-ch/" target="_blank">Child Demographics</a> for full demographic information.</span>
 </div>
 </p>
 
 Basic Demographics is a **derived measure** with information computed from the following sources: 
 
 - **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
-- The <a href="../../SED/demo-cg/" target="_blank"><b>Demographics</b></a> instrument (`sed_bm_demo`) within the Social & Environmental Determinants domain 
+- **Demographics** instruments (Social & Environmental Determinants), including <a href="../../SED/demo-cg/" target="_blank">Adult</a> (`sed_bm_demo`) and <a href="../../SED/demo-ch/" target="_blank">Child</a> (`sed_ch_demo`)
 
 Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.) for the adult/caregiver and beginning at Visit V02 for the child (post-birth). Note that if only V01 data for a given adult participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about their child will be missing, as the child is not born until after the V01 visit.
 
@@ -95,7 +104,7 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <tr>
   <td>Total household income</td>
   <td><code>rc_mother_income</code></td>
-  <td>Derived from <code>sed_bm_demo_income_002</code> (<i><a href="../../SED/demo-cg/" target="_blank">Demographics</a></i>) at V01</td>
+  <td>Derived from <code>sed_bm_demo_child__income_001</code> (<i><a href="../../SED/demo-ch/" target="_blank">Child Demographics</a></i>) at V01</td>
 </tr>
 <tr>
   <td>Recruitment site</td>
