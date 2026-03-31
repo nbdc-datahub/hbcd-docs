@@ -95,7 +95,8 @@ Language was updated to use gender-neutral terminology in the definition of inti
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The summary score is computed as the mean of the frequency of abuse experience responses (e.g., ranging from "not in the past 12 months" (0) to "daily/almost daily" (5)) multiplied by 15 when there are response for at least 11 of the 15 items. Note that in the updated scoring procedures, "Don’t Know" and "Decline to answer" are regarded as missing or non-responses.</p>
+<p>The CABr-SF has 16 questions. Question 1 is a gateway ("Have you ever been in an intimate relationship?"). Questions 2–16 (15 items) are abuse experience items. The summary score is computed as the mean of the abuse experience responses (questions 2-16), multiplied by 15; summary scores are only calculated if participants responded to at least 11 of the 15 abuse experience items. Note that in the updated scoring procedures, "Don’t Know" and "Decline to answer" are regarded as missing or non-responses.</p>
+<!-- <p>OLD: updated by Jen as shown above The summary score is computed as the mean of the frequency of abuse experience responses (e.g., ranging from "not in the past 12 months" (0) to "daily/almost daily" (5)) multiplied by 15 when there are response for at least 11 of the 15 items. Note that in the updated scoring procedures, "Don’t Know" and "Decline to answer" are regarded as missing or non-responses.</p> -->
 </div>
 
 ## References
