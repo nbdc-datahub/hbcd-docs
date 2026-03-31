@@ -2,7 +2,7 @@
 
 ## Overview
 
-Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing. Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, **manual visual review is only performed for series that fail automated QC**. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC.
+Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing. Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, manual visual review is only performed for series that fail automated QC. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC.
 
 **QC is also performed on select processed outputs** with **[BrainSwipes](#brainswipes)**. When issues are identified at this stage, the corresponding raw data are re-reviewed and QC decisions are updated as needed. This iterative process improves QC scoring and utilities over time and helps ensure high data quality while minimizing delays in data release.
 
@@ -296,6 +296,7 @@ BrainSwipes QC results for processed data are provided as <a href="../../#mri">t
 <li><code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code> - <i>T1w-based surface reconstruction (Infant FreeSurfer)</i></li>
 </ul>
 
+<!-- PATCH: TAKE OUT FOLLOWING PARAGRAPH -->
 <b>Note that the release data are incomplete! See <a href="#warning"><i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Data Warning</a> for details. Tabulated data with complete results can be found in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> (<i>only accessible for DUC-authorized users</i>).</b>         
 <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/brainswipes_2026-01-26.zip"><i class="fa-solid fa-download"></i> &nbsp; Download Completed BrainSwipes Results</a>
 
@@ -422,7 +423,6 @@ Data are flagged for manual review based on automated QC results using multivari
 <p><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/brainswipes_2026-01-26.zip"><i class="fa-solid fa-download"></i> &nbsp; Download Completed BrainSwipes Results</a></p>
 </div>
 <p></p>
-
 
 <div style="display: flex; align-items: center; gap: 30px;">
 <div style="flex: 1;">
