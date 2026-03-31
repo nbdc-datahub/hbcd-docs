@@ -89,7 +89,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr class="domain-row-issue"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Basic Demo</td>
-<td style='word-wrap: break-word; white-space: normal;'>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; please exclude these values from analyses until corrected.</td>
+<td style='word-wrap: break-word; white-space: normal;'>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
 <tr>
@@ -153,7 +153,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MLDS</td>
-<td style='word-wrap: break-word; white-space: normal;'>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The maximum values is 168 hours: please exclude values greater than 168 from analysis.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The maximum values is 168 hours: exclude values greater than 168 from analysis.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Growth</td>
-<td style='word-wrap: break-word; white-space: normal;'><a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Ranges used to filter out-of-range growth measurements</a> in <code>ph_ch_anthro</code> are not age-specific, leading to values that are within the valid range, but biologically implausible for the visit age. Filtering methods will be re-evaluated for the next release.</td>
+<td style='word-wrap: break-word; white-space: normal;'><a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Ranges used to filter out-of-range growth measurements</a> in <code>ph_ch_anthro</code> are not age-specific, leading to values that are within the valid range, but biologically implausible for the visit age. Filtering methods will be re-evaluated.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>PREGNANCY &amp; EXPOSURE</strong></td></tr>
@@ -234,7 +234,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr class="domain-row-pending"><td colspan="4"><strong>ADMINISTRATIVE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Study Navigators</td>
-<td style='word-wrap: break-word; white-space: normal;'>The SUBSTANCE_USE and OTHER checkbox fields are blank and will be populated in the next release.</td>
+<td style='word-wrap: break-word; white-space: normal;'>The SUBSTANCE_USE and OTHER checkbox fields are blank and will be populated.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
