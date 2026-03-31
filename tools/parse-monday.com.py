@@ -172,11 +172,11 @@ def build_combined_tables(dest):
 
 # Public and internal
 combined_tables_html = build_combined_tables(dest="external")
-combined_tables_html_int = build_combined_tables(dest="internal")
+# combined_tables_html_int = build_combined_tables(dest="internal")
 
 # Insert Into Markdown
 insert_into_markdown(HBCD_DOCS_MD, combined_tables_html)
-insert_into_markdown(INTERNAL_MD, combined_tables_html_int)
+# insert_into_markdown(INTERNAL_MD, combined_tables_html_int)
 
 # df.to_csv('temp.tsv', index=None, na_rep='NA', sep='\t')
 

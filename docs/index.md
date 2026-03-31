@@ -14,6 +14,7 @@
     letter-spacing:0.5px;
     text-transform:uppercase;">
     Data Release 2.0
+    <!-- PATCH UPDATE: Data Release 2.1 -->
   </span>
 </p>
 
