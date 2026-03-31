@@ -22,10 +22,11 @@ markdown_extensions:
 
 extra_javascript:
   - js/extra.js
+  - js/ga.js
+  - js/gridsearch.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://www.googletagmanager.com/gtag/js?id=G-BY0EH2K1YQ
-  - js/ga.js
 
 extra:
   analytics:
@@ -158,7 +159,7 @@ nav:
             - Functional MRI: instruments/mri/fmri.md
             - Diffusion MRI: instruments/mri/dmri.md
             - Quantitative MRI: instruments/mri/qmri.md
-            - Magnetic Resonance Spectroscopy: instruments/mri/mrs.md 
+            - MRS: instruments/mri/mrs.md 
         - Novel Tech & Wearable Sensors:
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md

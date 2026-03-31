@@ -403,6 +403,7 @@ Data are flagged for manual review based on automated QC results using multivari
 
 ## BrainSwipes
 
+<!-- PATCH: REMOVE FOLLOWIGN DATA WARNING-->
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
@@ -430,7 +431,6 @@ Data are flagged for manual review based on automated QC results using multivari
 <p>To support large-scale QC, HBCD uses <a href="https://brainswipes.us/about/">BrainSwipes</a>, a gamified, crowdsourced platform where users classify images as Pass or Fail by swiping right or left after completing a brief visual QC tutorial.</p>
 <p>BrainSwipes QC results were also used to identify and exclude derivative outputs with severe data quality issues from the release (see <a href="../exclusion-criteria/#processed-data-exclusion-criteria" target="_blank">Processed Data Exclusion Criteria</a> for details).</p>
 </div>
-  <!-- Image on the right -->
   <div style="flex: 1; text-align: center;">
     <img src="../images/brainswipes.png" style="max-width:100%; height:auto; display:block; margin:0 auto;">
     <p style="font-size: 0.8em; margin-top: 5px; line-height: 1.1; max-width:80%; margin-left:auto; margin-right:auto; text-align:justify;">

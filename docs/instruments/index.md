@@ -760,7 +760,7 @@ PATCH RELEASE
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
-    <span class="text">Imaging (<i>File-Based Data</i>)</span>
+    <span class="text">Imaging (File-Based Data)</span>
     <a class="anchor-link" href="#mri" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>
