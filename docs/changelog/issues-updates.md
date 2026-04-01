@@ -92,11 +92,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='word-wrap: break-word; white-space: normal;'>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Demographics</td>
-<td style='word-wrap: break-word; white-space: normal;'>Variables on the Other Biological Parent are missing from <code>sed_bm_demo</code>.</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
-</tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>EEG</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>.set files</td>
@@ -105,7 +100,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Age fields</td>
-<td style='word-wrap: break-word; white-space: normal;'>Chronological and adjusted age are inaccurate, falling outside of the expected 3-9 month range, for N=74 participants at V03 due to site data entry errors. Until resolved, exclude age values outside of. the expected range.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Chronological and adjusted age fall outside the expected 3–9 month range for 74 participants (V03) due to site data entry errors. Exclude out-of-range values until corrected.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
@@ -127,7 +122,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr class="domain-row-issue"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Raw BIDS</td>
-<td style='word-wrap: break-word; white-space: normal;'>There are 2 corrupted raw BIDS files (V02 bold runs under session-level <code>func/</code> folders of <code>rawdata/</code>) to be resolved. Impacted participant IDs/filepaths are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Raw BIDs include 2 corrupted bold runs in V02; view participant IDs/filepaths in the<a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
@@ -206,12 +201,22 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Demographics</td>
+<td style='word-wrap: break-word; white-space: normal;'>V01 household income (<code>sed_bm_demo_income_002</code>) missing from adult demographics.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Demographics</td>
+<td style='word-wrap: break-word; white-space: normal;'>Variables on the Other Biological Parent are missing from <code>sed_bm_demo</code>.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+</tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Demographics</td>
 <td style='word-wrap: break-word; white-space: normal;'>The variables <code>sed_bm_demo_residence_{001|002}</code>, present in the prior release, are missing in the current release and will be added back.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>eHITS</td>
-<td style='word-wrap: break-word; white-space: normal;'>In <code>sed_bm_ehits</code>, participants who did not respond to any questions have a summary score of 0 instead of missing. Until corrected, users should convert these cases to blank/null prior to conducting analyses.</td>
+<td style='word-wrap: break-word; white-space: normal;'>In <code>sed_bm_ehits</code>, participants with no responses are assigned a score of 0 instead of missing; convert to null before analysis.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 </tbody></table>
@@ -234,7 +239,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr class="domain-row-pending"><td colspan="4"><strong>ADMINISTRATIVE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Study Navigators</td>
-<td style='word-wrap: break-word; white-space: normal;'>The SUBSTANCE_USE and OTHER checkbox fields are blank and will be populated.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Populate SUBSTANCE_USE and OTHER checkbox fields.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
@@ -283,13 +288,13 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Multibirth Cohorts</td>
-<td style='word-wrap: break-word; white-space: normal;'>Missing instrument fields for Sibling cohorts will be populated and <em>familyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Sequence Field</td>
 <td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
+<td style='text-align: center; font-weight: bold;'>3</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
@@ -345,6 +350,11 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 <tr>
+<td class='table-cell' style='font-weight: bold;'>Growth</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
+<td style='text-align: center; font-weight: bold;'>3</td>
+</tr>
+<tr>
 <td class='table-cell' style='font-weight: bold;'>Vision Screener</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results).</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
@@ -361,11 +371,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>PREGNANCY &amp; EXPOSURE</strong></td></tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>Growth</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
-<td style='text-align: center; font-weight: bold;'>3</td>
-</tr>
-<tr>
 <td class='table-cell' style='font-weight: bold;'>PEX Health</td>
 <td style='word-wrap: break-word; white-space: normal;'>ICD codes for the <code>pex_bm_health*</code> instrument tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
 <td style='text-align: center; font-weight: bold;'>3</td>
@@ -373,7 +378,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr class="domain-row-pending"><td colspan="4"><strong>SOCIAL &amp; ENVIRONMENTAL DETERMINANTS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Child Demo</td>
-<td style='word-wrap: break-word; white-space: normal;'>Household roster will be updated to clarify that counts exclude the main child - see "Household Roster" under the Child Demographics <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> for details.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Household roster will be updated to clarify that counts exclude the main child - see "Household Roster" under <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> for details.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 </tr>
 </tbody></table>
