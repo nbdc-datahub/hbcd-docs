@@ -1,4 +1,10 @@
-# Useful Programs & Utilities
+# Recommended Programs & Utilities
+
+<!-- ## Download Platforms
+
+### NBDC Data Access Platform
+
+### DEAP -->
 
 ## Tabulated Data
 <i class="fas fa-database"></i> **NBDCtools**  
@@ -45,3 +51,49 @@ A command-line tool that provides a variety of functions for processing and anal
   Especially strong for statistical plots, often used in conjunction with analysis results.       
   [Download page for R/RStudio <i class="fa fa-download"></i>](https://posit.co/download/rstudio-desktop/)
 
+## NMIND
+
+[NMIND](https://www.nmind.org/about) is a collaborative initiative dedicated to improving transparency, reproducibility, and efficiency in neuroimaging research. NMIND principles, standards, and tools were used to develop the [HBCD Processing & Analytic Software Standards](../instruments/processing/standards.md). Explore a growing collection of tools tested and improved through the NMIND process in the [Proceedings](https://www.nmind.org/proceedings/) page of the NMIND website.
+
+## ReproSchema
+
+<a href="https://github.com/ReproNim/HBCD-ReproSchema"><i class="fa-brands fa-github"></i> HBCD-ReproSchema</a>
+
+Consistent data collection is essential to reproducible longitudinal research, particularly for large, multi-site studies like HBCD. **ReproSchema** ([https://www.repronim.org/reproschema](https://www.repronim.org/reproschema/)) provides both a **schema** and **software platform** for structuring, versioning, and managing research questionnaires over time, including integration with survey and data collection platforms like REDCap. 
+
+**As a [schema](https://repronim.org/reproschema/schema/schema/)**, ReproSchema defines a standardized structure for questionnaires, including consistent formatting across time points, with explicitly defined questions, response options, and skip logic linked metadata. Questionnaires are organized following a hierarchical model with three main components:
+> ***Protocol* (all study instruments) → *Activity* (single questionnaire/instrument) → *Item* (single question within instrument)**
+
+**As a [platform](https://repronim.org/reproschema/user-guide/create-new-protocol/)**, ReproSchema provides tools for automated storage, versioning in GitHub, tracking changes (e.g. wording updates, added/removed/re-ordered items, updated skip logic, etc.), and comparing questionnaires over time. It also provides a utility for browser-based survey deployment, with survey responses stored in JSON-LD format to link each answer to its protocol, activity, and item in the ReproSchema library. See [Chen et al. 2025 Figure 1](https://www.jmir.org/2025/1/e63343#figure1) for details.
+
+<p>
+<div id="rs-example" class="table-banner" onclick="toggleCollapse(this)"> <span class="emoji"><i class="fa-solid fa-circle-info"></i></span> <span class="text-with-link">
+<span class="text">Tracking Changes: Example</span> <a class="anchor-link" href="#rs-example" title="Copy link"> <i class="fa-solid fa-link"></i> </a> </span> <span class="arrow">▸</span> </div>
+<div class="table-collapsible-content"> 
+<p>ReproSchema maintains transparent, detailed version histories so researchers can understand how questionnaires evolve between releases. For example, the following shows how a sleep question and its response options may evolve across releases. ReproSchema versioning captures these changes to allow researchers to adjust longitudinal analyses as needed.</p> 
+<table class="compact-table-no-vertical-lines">
+<thead><tr>
+<th>Release</th>
+<th>Item Question</th>
+<th>Response Options</th>
+<th>Implications for Analysis</th>
+</tr> </thead>
+<tbody>
+<tr><td>1.0</td> 
+<td style="word-wrap: break-word; white-space: normal;"><i>How many hours do you sleep on a typical night?</i></td>
+<td style="word-wrap: break-word; white-space: normal;">Free-text numeric entry</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td style="word-wrap: break-word; white-space: normal;"><i>On average, how many hours of sleep do you get per night?</i></td>
+<td style="word-wrap: break-word; white-space: normal;">Dropdown menu options (e.g. <i>Less than 5, 5-6, etc.</i>)</td>
+<td style="word-wrap: break-word; white-space: normal;">1.0 → 2.0: Categorical response options reduce variability, but lose detail</td>
+</tr>
+<tr> <td>3.0</td>
+<td style="word-wrap: break-word; white-space: normal;"><i>On average, how many hours of sleep do you get in a 24-hour period, including naps?</i></td>
+<td style="word-wrap: break-word; white-space: normal;">Same as Release 2.0</td> 
+<td style="word-wrap: break-word; white-space: normal;">2.0 → 3.0: Adding naps changes the construct, affecting cross-release comparability</td>
+</tbody> </table> 
+</div>
+</p>

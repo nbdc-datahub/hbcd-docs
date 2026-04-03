@@ -66,14 +66,13 @@ nav:
     - Naming Conventions: access/naming-conventions.md
     - Responsible Data Use: access/resp_data_use.md
     - Data Use Acknowledgement: access/dua.md
+    - Tools: access/tools.md
+    - Tools_temp: 
+        - ReproSchema: datacuration/reproschema.md
   - Data Structure & File Types:
     - Data Structure Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md
     - File-Based Data: datacuration/file-based-data.md
-    - Tools: 
-        - Useful Utilities: datacuration/recprograms.md
-        - NMIND: datacuration/nmind.md
-        - ReproSchema: datacuration/reproschema.md
   - Study Instruments:
     - Instruments Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
