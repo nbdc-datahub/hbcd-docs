@@ -1,43 +1,41 @@
 # Recommended Programs & Utilities
 
-<!-- ## Download Platforms
-
-### NBDC Data Access Platform
-
-### DEAP -->
+## Download Platforms
+HBCD study data can be downloaded via the [NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/) or [Data Exploration and Analysis Portal (DEAP)](https://hbcd.deapscience.com/#/home") - see the [Access & Download](download.md#explore-download-hbcd-study-data) page for details.
 
 ## Tabulated Data
-<i class="fas fa-database"></i> **NBDCtools**  
-NBDCtools is an R package for creating custom, analysis-ready datasets by simply specifying the variable and/or table names you need. The package automatically retrieves the specified columns from locally downloaded HBCD tabulated data and assembles them into a single in-memory data frame, minimizing storage and memory use. This provides a flexible alternative to building datasets through the Lasso or DEAP platforms, eliminating the need to manually parse files or resolve formatting issues. In addition to dataset assembly, NBDCtools includes functions for working with [shadow matrices](phenotypes.md#shadow-matrices-for-missing-data) as well as applying transformations and filters.   
-[Download page for NBDCtools <i class="fa fa-download"></i>](https://software.nbdc-datahub.org/NBDCtools/index.html) 
+
+### <i class="fas fa-database header-icon"></i> NBDC Sandbox   
+The NBDC Sandbox provides a secure, cloud-based analysis environment designed to support data analysis workflows, particularly for neuroimaging and large-scale tabular datasets, without having to download and manage data locally.   
+[Go to NBDC Sandbox →](https://nbdc-safe.lassoinformatics.com/pun/sys/dashboard)      
+[View NBDC Sandbox Tutorial Series →](https://hdcc-sandbox-rtd.readthedocs.io/latest/)
+
+#### <i class="fas fa-database header-icon"></i> NBDCtools
+NBDCtools is an R package for creating custom, analysis-ready datasets by simply specifying the variable and/or table names you need. The package automatically retrieves the specified columns from locally downloaded HBCD tabulated data and assembles them into a single in-memory data frame, minimizing storage and memory use. This provides a flexible alternative to building datasets through the Lasso or DEAP platforms, eliminating the need to manually parse files or resolve formatting issues. In addition to dataset assembly, NBDCtools includes functions for working with [shadow matrices](../datacuration/phenotypes.md#shadow-matrices-for-missing-data) as well as applying transformations and filters.   
+[Download page for NBDCtools &nbsp;<i class="fa fa-download"></i>](https://software.nbdc-datahub.org/NBDCtools/index.html) 
 
 ## Brain Imaging Data
-#### Interactive Visualization of Volumetric NIfTI (`.nii.gz`) files (e.g. T1w, T2w, DTI, etc.)
-<i class="fa-solid fa-eye"></i></i> **[ITK-Snap](http://www.itksnap.org/pmwiki/pmwiki.php)**    
-A free, open-source software application used to visualize and segment 3D and 4D medical images. See an overview of ITK-Snap on Andy's Brain Blog [here](https://andysbrainbook.readthedocs.io/en/latest/ITK-Snap/ITK-Snap_Overview.html#itk-snap-overview) for a primer.      
-[Download page for ITK-Snap <i class="fa fa-download"></i>](http://www.itksnap.org/pmwiki/pmwiki.php?n=Downloads.SNAP4)
 
-<i class="fa-solid fa-eye"></i></i> **[FSLeyes](https://fsl.fmrib.ox.ac.uk/fsl/docs/#/utilities/fsleyes)**    
+#### <i class="fa-solid fa-eye header-icon"></i> [ITK-Snap](http://www.itksnap.org/pmwiki/pmwiki.php)
+*Good for: Interactive visualization of volumetric NIfTI files (T1w, T2w, DTI, etc.)*   
+A free, open-source software application used to visualize and segment 3D and 4D medical images. See [Andy's Brain Blog](https://andysbrainbook.readthedocs.io/en/latest/ITK-Snap/ITK-Snap_Overview.html#itk-snap-overview) for a primer.      
+[Download page for ITK-Snap &nbsp;<i class="fa fa-download"></i>](http://www.itksnap.org/pmwiki/pmwiki.php?n=Downloads.SNAP4)
+
+#### <i class="fa-solid fa-eye header-icon"></i> [FSLeyes](https://fsl.fmrib.ox.ac.uk/fsl/docs/#/utilities/fsleyes) 
+*Good for: Interactive visualization of volumetric NIfTI files (T1w, T2w, DTI, etc.)*   
 A free, open-source image viewer for medical images, particularly MRI data. Part of the FSL software suite.    
-[Download page for FSLeyes <i class="fa fa-download"></i>](https://fsl.fmrib.ox.ac.uk/fsl/docs/#/utilities/fsleyes)
+[Download page for FSLeyes &nbsp;<i class="fa fa-download"></i>](https://fsl.fmrib.ox.ac.uk/fsl/docs/#/utilities/fsleyes)
 
-#### Interactive Visualization & Processing of Surface Data
-**[Connectome Workbench](https://www.humanconnectome.org/software/connectome-workbench)** is a free, open-source software package particularly useful for visualizing connectivity data, surface-based analyses, and more. It is recommended for viewing and processing surface data (`.gii` files), volume data (`.nii/.nii.gz` files), and CIFTI data (dlabel, dscalar, dtseries, pconn, etc. files) - check out this [blog post](https://mvpa.blogspot.com/2014/03/nifti-cifti-gifti-in-hcp-and-workbench.html) for a helpful primer on the difference between these various file formats. Useful Workbench tools include wb_view and wb_command.    
+#### <i class="fa-solid fa-eye header-icon"></i><i class="fas fa-cogs header-icon"></i> Connectome Workbench
+*Good for: Interactive visualization & surface data processing/analysis*    
+**[Connectome Workbench](https://www.humanconnectome.org/software/connectome-workbench)** is a free, open-source software package particularly useful for visualizing connectivity data, surface-based analyses, and more. It is recommended for viewing and processing surface data (`.gii` files), volume data (`.nii/.nii.gz` files), and CIFTI data (dlabel, dscalar, dtseries, pconn, etc. files). Useful Workbench tools include:   
+
+- **wb_view**: For visualizing surface-based data, connectivity, creating overlays of structural/functional data, etc.
+- **wb_command**: A set of command-line tools for processing and analysis of neuroimaging data (see [usage](https://www.humanconnectome.org/software/workbench-command))
+
 [Download page for Connectome Workbench <i class="fa fa-download"></i>](https://humanconnectome.org/software/get-connectome-workbench)
 
-<i class="fa-solid fa-eye"></i></i> **wb_view**       
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;">
-  <i class="fa-regular fa-lightbulb" style="margin-right: 6px; color:rgb(13, 148, 8);"></i>
-  <strong>Good for:</strong> interactive visualization
-</span>     
-An interactive GUI used for inspecting images, particularly useful for visualizing surface-based data. It allows users to view and manipulate 3D brain images, including the ability to rotate, zoom, and pan the images. It also provides tools for overlaying different types of data, such as functional and structural images, and for visualizing connectivity data.  
-
-<i class="fas fa-cogs"></i> **wb_command**          
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;">
-  <i class="fa-regular fa-lightbulb" style="margin-right: 6px; color:rgb(13, 148, 8);"></i>
-  <strong>Good for:</strong> processing & analysis
-</span>     
-A command-line tool that provides a variety of functions for processing and analyzing neuroimaging data. It can be used to perform a wide range of tasks, including image registration, surface generation, and statistical analysis. The command-line interface allows for batch processing of data and can be integrated into scripts for automated analysis.
+<!-- - check out this [blog post](https://mvpa.blogspot.com/2014/03/nifti-cifti-gifti-in-hcp-and-workbench.html) for a helpful primer on the difference between these various file formats.  -->
 
 ## Programming Languages
 
