@@ -44,7 +44,7 @@ The NBDC Data Hub provides two main platforms for **exploring**, **querying**, a
 </thead>
 <tbody>
 <tr>
-  <td><strong>NBDC Data Access Platform</strong> (hosted by Lasso)</td>
+  <td><strong>NBDC Data Access Platform</strong></td>
   <td><a href="https://nbdc-datashare.lassoinformatics.com/" target="_blank" rel="noopener noreferrer">Open Portal</a></td>
   <td><a href="https://nbdc.lassoinformatics.com/" target="_blank" rel="noopener noreferrer">Resource Hub</a></td>
   <td><a href="https://nbdc.lassoinformatics.com/query-wizard" target="_blank" rel="noopener noreferrer">Query Tool</a></td>
