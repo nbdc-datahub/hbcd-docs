@@ -67,8 +67,6 @@ nav:
     - Responsible Data Use: access/resp_data_use.md
     - Data Use Acknowledgement: access/dua.md
     - Tools: access/tools.md
-    - Tools_temp: 
-        - ReproSchema: datacuration/reproschema.md
   - Data Structure & File Types:
     - Data Structure Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md
