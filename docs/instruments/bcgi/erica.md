@@ -1,20 +1,29 @@
 # ERICA
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>mh_cg_erica_3_9m</code>; <code>mh_cg_erica_rel_3_9m</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">Early Regulation in Context Assessment
-    </div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Child Emotional Regulation, Parenting, Caregiver-Child Relationship</div>
-  </div>
-</div>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+<tr>
+  <th>Instrument</th>
+  <th>Version</th>
+  <th>Construct</th>
+  <th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2"><strong>ERICA</strong></td>
+  <td rowspan="2">3-9M</td>
+  <td>Child Emotional Regulation, Parenting, Caregiver-Child Relationship</td>
+  <td><code>mh_cg_erica_3_9m</code></td>
+</tr>
+<tr>
+  <td>ERICA Codes Reliability</td>
+  <td><code>mh_cg_erica_rel_3_9m</code></td>
+</tr>
+</tbody>
+</table>
+
+<!-- LUCI NOTE <p>se they are consortium-wide fields that are usually included across all instruments (things like "age"). However ERICA is a special case because the SMEs noted that these fields will be inaccurate for this particular instrument.  ESPECIALLY when someone inevitably asks 9 months from now why "age" is missing from ERICA</p> -->
 
 ---
 
@@ -103,7 +112,9 @@
 <li>Reliability was monitored weekly.</li>
 <li>If a coder dropped below 80% reliability for two consecutive weeks, they were pulled for re-training/re-certification prior to coding additional videos.</li>
 <li>All coding was done via a single, one-pass, video review, with codes entered into the HBCD database. Double data entry and conflict resolution were utilized to ensure the accuracy of coding data entry.</li>
-<li>In addition to percent agreement, coder reliability was monitored utilizing a two-way, mixed effects, intraclass correlation coefficient (ICC) for all codes, except Caregiver Irritable Behavior, which had a low base rate and was thus dichotomized for Data Release 2.1, with reliability estimated using an unweighted kappa instead (see &quot;Data Release 2.1 Reliability Statistics&quot; in attachments for a table of alphas for this data set). We will continue to monitor all reliability and coding; thus, Caregiver Irritable Behavior may be updated in future data releases.</li>
+<li>In addition to percent agreement, coder reliability was monitored utilizing a two-way, mixed effects, intraclass correlation coefficient (ICC) for all codes, except Caregiver Irritable Behavior, which had a low base rate and was thus dichotomized for Data Release 2.1, with reliability estimated using an unweighted kappa instead (see "Data Release 2.1 Reliability Statistics" in attachments for a table of alphas for this data set). We will continue to monitor all reliability and coding; thus, Caregiver Irritable Behavior may be updated in future data releases.</li>
+
+<!-- LUCI NOTE: add ata Release 2.1 Reliability Statistics" -->
 <li>Data dashboards and reports were regularly monitored for missing data or unexpected score distributions and completion reports were cross-tabulated with video files to ensure alignment.</li>
 </ul>
 </div>
