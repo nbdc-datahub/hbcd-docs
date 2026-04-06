@@ -23,8 +23,6 @@
 </tbody>
 </table>
 
-<!-- LUCI NOTE <p>se they are consortium-wide fields that are usually included across all instruments (things like "age"). However ERICA is a special case because the SMEs noted that these fields will be inaccurate for this particular instrument.  ESPECIALLY when someone inevitably asks 9 months from now why "age" is missing from ERICA</p> -->
-
 ---
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
@@ -81,15 +79,20 @@
 <tr><td><b>Visits</b></td><td>V03</td></tr>
 <tr><td><b>Completion Time</b></td><td>20-30 minutes</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">QC procedures were conducted separately for <b>(1) ERICA site-level administration</b> and <b>(2) the centralized coding of ERICA videos</b>. Expand <a href="#qc">Quality Control Details</a> below for full documentation.</td></tr>
+<td>
+  QC procedures were conducted separately for (click for details):<br>
+  <ul>
+  <li><a href="#qc-admin">ERICA site-level administration →</a></li>
+  <li><a href="#qc-coding">Centralized coding of ERICA videos →</a></li>
+  </ul>
+</td></tr>
 </tbody>
 </table>
-
-<div id="qc" class="table-banner" onclick="toggleCollapse(this)">
+<div id="qc-admin" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-shield"></i></span>
   <span class="text-with-link">
-  <span class="text">Quality Control Details</span>
-  <a class="anchor-link" href="#qc" title="Copy link">
+  <span class="text">QC Details: ERICA Administration</span>
+  <a class="anchor-link" href="#qc-admin" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -103,6 +106,19 @@
 <li>Completion rates were monitored and site level data on administration was reviewed for potential QC issues (e.g., frequent protocol interruptions or tech issues), with results informing site-level training and follow-up.</li>
 <li>Additional training was provided as needed.</li>
 </ul>
+</div>
+
+<div id="qc-coding" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-shield"></i></span>
+  <span class="text-with-link">
+  <span class="text">QC Details: ERICA Coding</span>
+  <a class="anchor-link" href="#qc-coding" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <p><b>ERICA Coding</b></p>
 <ul style="font-size: 0.8em;">
 <li>An independent team of coders was trained for reliability by two expert coders, themselves trained and supervised by one of the ERICA developers.</li>
@@ -112,18 +128,12 @@
 <li>Reliability was monitored weekly.</li>
 <li>If a coder dropped below 80% reliability for two consecutive weeks, they were pulled for re-training/re-certification prior to coding additional videos.</li>
 <li>All coding was done via a single, one-pass, video review, with codes entered into the HBCD database. Double data entry and conflict resolution were utilized to ensure the accuracy of coding data entry.</li>
-<li>In addition to percent agreement, coder reliability was monitored utilizing a two-way, mixed effects, intraclass correlation coefficient (ICC) for all codes, except Caregiver Irritable Behavior, which had a low base rate and was thus dichotomized for Data Release 2.1, with reliability estimated using an unweighted kappa instead (see "Data Release 2.1 Reliability Statistics" in attachments for a table of alphas for this data set). We will continue to monitor all reliability and coding; thus, Caregiver Irritable Behavior may be updated in future data releases.</li>
-
-<!-- LUCI NOTE: add ata Release 2.1 Reliability Statistics" -->
+<li>In addition to percent agreement, coder reliability was monitored utilizing a two-way, mixed effects, intraclass correlation coefficient (ICC) for all codes, except Caregiver Irritable Behavior, which had a low base rate and was thus dichotomized for Data Release 2.1, with reliability estimated using an unweighted kappa instead <span style="color: red;">(see "Data Release 2.1 Reliability Statistics" in attachments for a table of alphas for this data set).</span> We will continue to monitor all reliability and coding; thus, Caregiver Irritable Behavior may be updated in future data releases.</li>
 <li>Data dashboards and reports were regularly monitored for missing data or unexpected score distributions and completion reports were cross-tabulated with video files to ensure alignment.</li>
 </ul>
 </div>
 
-
-mh_cg_erica_3_9m_date_taken
-mh_cg_erica_3_9m_adjusted_age
-mh_cg_erica_3_9m_gestational_age
-mh_cg_erica_3_9m_candidate_age
+<p style="color: red; font-size: 1.2em;">LUCI ADMIN NOTE: add "Data Release 2.1 Reliability Statistics" table of alphas once available, mentioned in <a href="#qc-coding">Coding QC infobox</a></p>
 
 ## Instrument Details
 
