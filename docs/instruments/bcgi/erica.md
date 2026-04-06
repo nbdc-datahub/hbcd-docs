@@ -119,6 +119,12 @@
 </ul>
 </div>
 
+
+mh_cg_erica_3_9m_date_taken
+mh_cg_erica_3_9m_adjusted_age
+mh_cg_erica_3_9m_gestational_age
+mh_cg_erica_3_9m_candidate_age
+
 ## Instrument Details
 
 The Early Regulation in Context Assessment (**ERICA**) is a standardized observational paradigm that is adapted from the well-validated Disruptive Behavior Diagnostic Observation Schedule (DB-DOS) ([Krogh-Jespersen et al. 2022](https://doi.org/10.3389/fpsyg.2021.732312)). The ERICA assesses early child regulation in the context of the caregiver-child relationship via a series of five brief, developmentally appropriate activities that “press” for regulation within the dyad (e.g., frustration, engagement, enjoyment).
