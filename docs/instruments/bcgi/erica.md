@@ -2,6 +2,8 @@
 
  - add "Data Release 2.1 Reliability Statistics" table of alphas once available, mentioned in <a href="#qc-coding">Coding QC infobox</a>
 <br>
+ - see <a href="#qc-coding-alt">suggested re-write of Coding QC infobox</a>
+ <br>
 - WG to provide content for <a href="#hbcd-mod">HBCD Modifications</a> - click link to see guiding questions
 <br>
  - Note to WG: see <a href="https://docs.hbcdstudy.org/patch/changelog/issues-updates/#pending-updates">pending update for the ERICA</a>
