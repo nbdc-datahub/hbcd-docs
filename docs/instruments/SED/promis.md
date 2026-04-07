@@ -45,11 +45,39 @@
 
 ## Instrument Details
 
-The Perceived Stress and Social Support tools assess caregivers’ perceived stress and emotional support within their social networks longitudinally. These tools combine the PROMIS Emotional Support 4a questionnaire and the Perceived Stress Scale-4 (PSS-4).
+The **Perceived Stress and Social Support (PROMIS)** tools assess caregivers’ perceived stress and emotional support within their social networks longitudinally. These tools combine the PROMIS Emotional Support 4a questionnaire and the Perceived Stress Scale-4 (PSS-4).
 
 The PROMIS Emotional Support 4a questionnaire (first 4 questions) evaluates the quality of emotional support available to the participant, while the PSS-4 (last 4 questions) measures general perceived stress over the past month. The PSS-4 is a shortened version of the PSS-14, which has been widely used across different populations, including pregnant individuals and young families.
 
-Note that the HBCD measures include the addition of response options “Don’t know” and “Decline to answer.” The original measure requires that all items are completed to allow for scoring via the tables provided in the manual, so items with “don’t know” answers will not have a total score reported. If scoring will utilize the PROMIS HealthMeasures Scoring Service, total scores can include missing data (this can be done by individual investigators). For the PSS-4, complete data is essential, and scores should not be reported if any question is answered as “Don’t know.”
+
+<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-gear"></i></span>
+  <span class="text-with-link">
+    <span class="text">HBCD Modification Details</span>
+    <a class="anchor-link" href="#hbcd-mod" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>Response options for the PROMIS were modified to include the addition of “Don’t know” and “Decline to answer.”</p>
+</div>
+
+<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-calculator"></i></span>
+  <span class="text-with-link">
+  <span class="text">Scoring Procedures</span>
+  <a class="anchor-link" href="#scoring" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>The original measure requires that all items are completed to allow for scoring via the tables provided in the manual, so items with “Don’t know” answers will not have a total score reported. If scoring will utilize the PROMIS HealthMeasures Scoring Service, total scores can include missing data (this can be done by individual investigators). For the PSS-4, complete data is essential, and scores should not be reported if any question is answered as “Don’t know.”</p>
+</div>
+
 
 ## References
 <div class="references">
