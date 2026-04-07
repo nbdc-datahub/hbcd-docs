@@ -176,12 +176,12 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
   <tr>
     <td rowspan="2"><a href="bcgi/erica" target="_blank">ERICA</a></td>
-    <td rowspan="2">3-9M</td>
+    <td rowspan="2"><i>(3-9 months)</i></td>
     <td>Emotional Regulation</td>
     <td><code>mh_cg_erica_3_9m</code></td>
   </tr>
     <tr>
-    <td>ERICA Codes Reliability</td>
+    <td>ERICA Coding Reliability</td>
     <td> <code>mh_cg_erica_rel_3_9m</code></td>
   </tr>
   <tr>

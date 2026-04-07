@@ -9,28 +9,22 @@
 
 # ERICA
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Instrument</th>
-  <th>Version</th>
-  <th>Construct</th>
-  <th>Table Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td rowspan="2"><strong>ERICA</strong></td>
-  <td rowspan="2">3-9M</td>
-  <td>Child Emotional Regulation, Parenting, Caregiver-Child Relationship</td>
-  <td><code>mh_cg_erica_3_9m</code></td>
-</tr>
-<tr>
-  <td>ERICA Codes Reliability</td>
-  <td><code>mh_cg_erica_rel_3_9m</code></td>
-</tr>
-</tbody>
-</table>
+<p>
+<div class="info-block">
+  <div class="info-row">
+    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
+    <div class="info-value"><code>mh_cg_erica_3_9m</code> <i>(main table)</i> & <code>mh_cg_erica_rel_3_9m</code> <i>(coding reliability)</i></div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
+    <div class="info-value">Early Regulation in Context Assessment (<i>ERICA</i>)</div>
+  </div>
+  <div class="info-row">
+    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
+    <div class="info-value">Emotional Regulation, Parenting, Caregiver-Child Relationship</div>
+  </div>
+</div>
+</p>
 
 ---
 
@@ -85,7 +79,7 @@
 <tr><td><b>Child Specific</b></td><td>Yes</td></tr>
 <tr><td><b>Respondent</b></td><td>Birth Parent or Primary Caregiver and Child</td></tr>
 <tr><td><b>Administration</b></td><td>HBCD Study staff in-person</td></tr>
-<tr><td><b>Visits</b></td><td>V03</td></tr>
+<tr><td><b>Visits</b></td><td>V03 (3-9 months)</td></tr>
 <tr><td><b>Completion Time</b></td><td>20-30 minutes</td></tr>
 <tr><td><b>Quality Control</b></td>
 <td>
@@ -100,7 +94,7 @@
 <div id="qc-admin" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-shield"></i></span>
   <span class="text-with-link">
-  <span class="text">QC Details: ERICA Administration</span>
+  <span class="text">QC Procedures for ERICA Administration</span>
   <a class="anchor-link" href="#qc-admin" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -120,7 +114,7 @@
 <div id="qc-coding" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-shield"></i></span>
   <span class="text-with-link">
-  <span class="text">QC Details: ERICA Coding</span>
+  <span class="text">QC Procedures for the Centralized Coding of ERICA Videos</span>
   <a class="anchor-link" href="#qc-coding" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -128,7 +122,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b>ERICA Coding</b></p>
+<p><b>QC Procedures for the Centralized Coding of ERICA Videos</b></p>
 <ul style="font-size: 0.8em;">
 <li>An independent team of coders was trained for reliability by two expert coders, themselves trained and supervised by one of the ERICA developers.</li>
 <li>Coders were certified as reliable upon achieving 80% agreement on each code (within ±0.5 decimal points) with the expert coders.</li>
@@ -140,6 +134,33 @@
 <li>In addition to percent agreement, coder reliability was monitored utilizing a two-way, mixed effects, intraclass correlation coefficient (ICC) for all codes, except Caregiver Irritable Behavior, which had a low base rate and was thus dichotomized for Data Release 2.1, with reliability estimated using an unweighted kappa instead <span style="color: red;">(see "Data Release 2.1 Reliability Statistics" in attachments for a table of alphas for this data set).</span> We will continue to monitor all reliability and coding; thus, Caregiver Irritable Behavior may be updated in future data releases.</li>
 <li>Data dashboards and reports were regularly monitored for missing data or unexpected score distributions and completion reports were cross-tabulated with video files to ensure alignment.</li>
 </ul>
+</div>
+
+<div id="qc-coding-alt" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-shield"></i></span>
+  <span class="text-with-link">
+  <span class="text">QC Procedures for the Centralized Coding of ERICA Videos (SUGGESTED VERSION)</span>
+  <a class="anchor-link" href="#qc-coding-alt" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p style = "color: red;">LUCI NOTE: I think a more narrative structure would be good in this case for clarity, eg:</p>
+<p>Videos are coded based on a single-pass review, with data entered directly into the HBCD database. Basic steps to ensure data completeness and accuracy include:</p>
+<ul>
+  <li>Double data entry with conflict resolution to ensure accurate data entry</li>
+  <li>Regular review of dashboards and reports to identify missing data and unexpected score distributions</li>
+  <li>Completion reports cross-referenced with video files</li>
+</ul>
+<p><b>ERICA Coding Training and Reliability Monitoring</b><br> 
+Coders were trained and certified by coding experts under the supervision of ERICA developers. Certification required ≥80% agreement with expert ratings (±0.5 points per item). To ensure ongoing reliability, 20% of each coder's videos were randomly selected for double coding by experts on a weekly basis. Coders below 80% agreement for two consecutive weeks were re-trained/certified before continuing.</p>
+<p><b>Coding Reliability Statistics</b><br>
+Inter-rater reliability was quantified using a two-way mixed-effects intraclass correlation coefficient (ICC):<br>
+[ADD TABLE OF ALPHAS FOR THIS DATASET]
+</p>
+<p>All codes were evaluated using ICC except for Caregiver Irritable Behavior. Due to its low base rate, this code was dichotomized and reliability was estimated using an unweighted kappa statistic. Updated reliability estimates may be provided in future data releases as additional data become available.</p>
 </div>
 
 ## Instrument Details
