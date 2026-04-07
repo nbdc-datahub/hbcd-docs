@@ -1,3 +1,12 @@
+<p style="color: red; font-size: 1.2em;">LUCI ADMIN NOTES:<br>
+
+ - add "Data Release 2.1 Reliability Statistics" table of alphas once available, mentioned in <a href="#qc-coding">Coding QC infobox</a>
+<br>
+- WG to provide content for <a href="#hbcd-mod">HBCD Modifications</a> - click link to see guiding questions
+<br>
+ - Note to WG: see <a href="https://docs.hbcdstudy.org/patch/changelog/issues-updates/#pending-updates">pending update for the ERICA</a>
+ </p>
+
 # ERICA
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -133,8 +142,6 @@
 </ul>
 </div>
 
-<p style="color: red; font-size: 1.2em;">LUCI ADMIN NOTE: add "Data Release 2.1 Reliability Statistics" table of alphas once available, mentioned in <a href="#qc-coding">Coding QC infobox</a></p>
-
 ## Instrument Details
 
 The Early Regulation in Context Assessment (**ERICA**) is a standardized observational paradigm that is adapted from the well-validated Disruptive Behavior Diagnostic Observation Schedule (DB-DOS) ([Krogh-Jespersen et al. 2022](https://doi.org/10.3389/fpsyg.2021.732312)). The ERICA assesses early child regulation in the context of the caregiver-child relationship via a series of five brief, developmentally appropriate activities that “press” for regulation within the dyad (e.g., frustration, engagement, enjoyment).
@@ -172,6 +179,12 @@ Codes are scored on a 4-point scale (0-3), reflecting the frequency, intensity a
 </div>
 <div class="collapsible-content">
 <p style="color: red;">PLACEHOLDER - should anything be added or moved here from instrument details above?</p>
+<ul style="color: red;">
+<li>Was the language altered for use of gender-neutral terms? If yes, briefly describe</li>
+<li>Was the language altered from 'parent' to caregiver or alternate? If yes, briefly describe the changes made</li>
+<li><strong>Do any modifications made for HBCD impact data analyses or interpretation of results?</strong> If yes, please describe</li>
+<li>Does the Workgroup recommend measure changes be noted in future publications? If yes, are there particular details you would want users to be sure to mention?</li>
+</ul>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
