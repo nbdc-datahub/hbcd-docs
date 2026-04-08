@@ -94,6 +94,7 @@ nav:
             - IBQ-R & ECBQ: instruments/bcgi/ibqr.md
             - MAPS-TL: instruments/bcgi/maps-tl.md
         - Biospecimens & Omics:
+            - Blood: instruments/biospec/blood.md
             - Illumina GDA GWAS: instruments/biospec/illumina-gda-gwas.md
             - Nails: instruments/biospec/nails.md
             - Olink: instruments/biospec/olink.md
