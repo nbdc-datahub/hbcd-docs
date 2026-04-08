@@ -29,8 +29,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>Continuous Variables</b><br>
-For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative.</p> 
+<p>For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative.</p> 
 </div>
 </p>
 
@@ -73,6 +72,13 @@ PEth is assessed using confirmatory testing only and categorized under a single 
 <li>If the PEth confirmatory tests is <b>negative</b> (<code>0</code>), then sample-level (<code>c_any_specimen_b</code>) is <b>negative</b> (<code>0</code>). </li>
 <li>If the PEth confirmatory tests is cancelled (<code>3)</code> then sample-level (<code>c_any_specimen_b</code>) is cancelled (<code>3</code>).</li>
 </ul> -->
+
+<!-- 
+Results are reported at three levels:
+
+Specimen level: Any analyte detected
+Class level: Any analyte within a substance class
+Analyte level: Individual compound results -->
 
 <p style="margin-bottom: 0; font-size: 0.9em"><b>Screening Result Scoring</b></p>
 <table class="compact-table-no-vertical-lines">
