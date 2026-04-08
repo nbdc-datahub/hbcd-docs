@@ -57,48 +57,24 @@ For all toxicology screens, continuous variables should be interpreted with caut
 
 ## Instrument Details
 
-Processing of Blood Spot Cards consists of preparing 3x 1/8” punches of dried blood spot followed by extraction using an organic solvent. Detection of PETH in the extract is accomplished with a single pass using LCMSMS:
+Phosphatidylethanol (PEth) is measured from dried blood spot cards using liquid chromatography–tandem mass spectrometry (LC-MS/MS).
 <img src="../images/Fig1_blood.png" width="70%" height="auto" class="center">
 
-<p style="margin-bottom: 0; font-size: 0.9em"><b>Blood Assay Thresholds PEth</b></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr><th>Analyte</th>
-<th><span class="tooltip tooltip-bottom">LOD<span class="tooltiptext">Limit of detection</span></span> (ng/mL)</th>
-<th><span class="tooltip tooltip-bottom">LOQ<span class="tooltiptext">Limit of quantification</span></span> (ng/mL)</th>
-<th>Cutoff (ng/mL)</th>
-<th>Detection Window</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>Phosphatidylethanol</td><td>4</td><td>4</td><td>20</td><td>2-4 weeks</td></tr>
-</tbody>
-</table>
+Results include both a quantitative concentration (`c_peth_b`) and a derived categorical outcome (`c_peth_b_cat`) based on predefined thresholds:
+<p style="margin-bottom: 0; font-size: 0.9em"><b>Blood Assay Thresholds (PEth)</b></p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;"> <thead> <tr> <th>Analyte</th> <th><span class="tooltip tooltip-right">LOD<span class="tooltiptext">Limit of detection</span></span> (ng/mL)</th> <th><span class="tooltip tooltip-right">LOQ<span class="tooltiptext">Limit of quantification</span></span> (ng/mL)</th> <th>Cutoff (ng/mL)</th> <th>Detection Window</th> </tr> </thead> <tbody> <tr> <td>Phosphatidylethanol (PEth)</td> <td>4</td> <td>4</td> <td>20</td> <td>2–4 weeks</td> </tr> </tbody> </table>
 
-PEth results (`c_peth_b_cat`) are *positive*, *negative*, or *canceled* based on the predefined thresholds in the table above. Substance analytes are grouped into classes by analyte screening and confirmatory tests. PEth is confirmatory-testing only: 
+PEth is assessed using confirmatory testing only and categorized under a single substance class: Ethanol (`c_ethanol_b`). Categorical PEth results (`c_peth_b_cat`) are defined as: `0` (Negative), `1` (Positive), or `3` (Canceled). Sample-level results (`c_any_specimen_b`) are derived directly from the PEth confirmatory results.
 
- - **Confirmatory test**: 20phsphtdetbsp (`c_peth_b_cat`) 
- - **Class**: Ethanol (`c_ethanol_b`)
-
-
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+<!-- 
 <p><b>Final PEth assay results follow these rules</b>:</p>
 <ul>
-<li>If the PEth test is positive (<code>c_peth_b_cat</code>), the sample level (<code>c_any_specimen_b</code>) is positive (value = 1). </li>
-<li>If the PEth confirmatory tests is negative (value = 0), then sample-level (<code>c_any_specimen_b</code>) is negative (0). </li>
-<li>If the PEth confirmatory tests is cancelled (value = 3) then sample-level (<code>c_any_specimen_b</code>) is cancelled (value = 3).</li>
-</ul>
-<p><b>Screening Result Scoring</b></p>
+<li>If the PEth test is <b>positive</b> (<code>c_peth_b_cat</code>), the sample level (<code>c_any_specimen_b</code>) is <b>positive</b> (<code>1</code>). </li>
+<li>If the PEth confirmatory tests is <b>negative</b> (<code>0</code>), then sample-level (<code>c_any_specimen_b</code>) is <b>negative</b> (<code>0</code>). </li>
+<li>If the PEth confirmatory tests is cancelled (<code>3)</code> then sample-level (<code>c_any_specimen_b</code>) is cancelled (<code>3</code>).</li>
+</ul> -->
+
+<p style="margin-bottom: 0; font-size: 0.9em"><b>Screening Result Scoring</b></p>
 <table class="compact-table-no-vertical-lines">
     <thead>
       <tr>
@@ -111,7 +87,7 @@ PEth results (`c_peth_b_cat`) are *positive*, *negative*, or *canceled* based on
     <tbody>
 <tr>
 <td>Specimen</td>
-<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte)</td>
+<td style="word-wrap: break-word; white-space: normal;">Sample-level results</td>
 <td><code>c_any_specimen_b</code></td>
 <td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=cancelled</td>
 </tr>
@@ -138,5 +114,24 @@ PEth results (`c_peth_b_cat`) are *positive*, *negative*, or *canceled* based on
 </tr>
 </tbody>
 </table>
-</div>
-<br>
+
+
+
+<!-- <p><b>Final PEth assay results follow these rules</b>:</p>
+<ul>
+<li>If the PEth test is <b>positive</b> (<code>c_peth_b_cat</code>), the sample level (<code>c_any_specimen_b</code>) is <b>positive</b> (<code>1</code>). </li>
+<li>If the PEth confirmatory tests is <b>negative</b> (<code>0</code>), then sample-level (<code>c_any_specimen_b</code>) is <b>negative</b> (<code>0</code>). </li>
+<li>If the PEth confirmatory tests is cancelled (<code>3)</code> then sample-level (<code>c_any_specimen_b</code>) is cancelled (<code>3</code>).</li>
+</ul> -->
+
+<!-- 
+is not part of an initial screening panel. -->
+
+<!-- 
+PEth results (`c_peth_b_cat`) are *positive*, *negative*, or *canceled* based on the predefined thresholds in the table above. Substance analytes are grouped into classes by analyte screening and confirmatory tests. PEth is confirmatory-testing only:  -->
+
+
+<!-- 
+Negative → <code>c_any_specimen_b = 0</code>      
+Positive → <code>c_any_specimen_b = 1</code>      
+Canceled → <code>c_any_specimen_b = 3</code> -->
