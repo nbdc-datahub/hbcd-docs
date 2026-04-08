@@ -59,11 +59,10 @@
 Phosphatidylethanol (PEth) is measured from dried blood spot cards using liquid chromatography–tandem mass spectrometry (LC-MS/MS).
 <img src="../images/Fig1_blood.png" width="70%" height="auto" class="center">
 
-Results include both a quantitative concentration (`c_peth_b`) and a derived categorical outcome (`c_peth_b_cat`) based on predefined thresholds:
+PEth is assessed using confirmatory testing only and categorized under a single substance class: Ethanol (`c_ethanol_b`). Results include both a quantitative concentration (`c_peth_b`) and a derived categorical outcome (`c_peth_b_cat`) based on predefined thresholds shown in the table below. Categorical PEth results (`c_peth_b_cat`) are defined as: `0` (Negative), `1` (Positive), or `3` (Canceled). Sample-level results (`c_any_specimen_b`) are derived directly from the PEth confirmatory results.
+
 <p style="margin-bottom: 0; font-size: 0.9em"><b>Blood Assay Thresholds (PEth)</b></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;"> <thead> <tr> <th>Analyte</th> <th><span class="tooltip tooltip-right">LOD<span class="tooltiptext">Limit of detection</span></span> (ng/mL)</th> <th><span class="tooltip tooltip-right">LOQ<span class="tooltiptext">Limit of quantification</span></span> (ng/mL)</th> <th>Cutoff (ng/mL)</th> <th>Detection Window</th> </tr> </thead> <tbody> <tr> <td>Phosphatidylethanol (PEth)</td> <td>4</td> <td>4</td> <td>20</td> <td>2–4 weeks</td> </tr> </tbody> </table>
-
-PEth is assessed using confirmatory testing only and categorized under a single substance class: Ethanol (`c_ethanol_b`). Categorical PEth results (`c_peth_b_cat`) are defined as: `0` (Negative), `1` (Positive), or `3` (Canceled). Sample-level results (`c_any_specimen_b`) are derived directly from the PEth confirmatory results.
 
 <!-- 
 <p><b>Final PEth assay results follow these rules</b>:</p>
