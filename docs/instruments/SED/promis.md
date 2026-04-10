@@ -84,7 +84,7 @@ The **Perceived Stress and Social Support (PROMIS)** tools assess caregiver perc
 <p><b>PROMIS Emotional Support 4a</b><br>
 <!-- ADD LINK TO official scoring tables to generate t-scores -->
 The PROMIS Emotional Support 4a is scored on 5-point Likert scales. Total (raw) scores are calculated as the sum of all item responses and only computed when all items have valid responses (i.e., responses such as “Don’t know” are not permitted). Raw scores are converted to scale scores using values provided in the <a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Emotional_Support_Scoring_Manual.pdf">official scoring tables</a> to generate T-scores.<p>
-<p>For researchers wanting to include participants with missing items, raw data can be entered into the <a href="https://www.assessmentcenter.net/ac_scoringservice3UU33T3T">HealthMeasures Scoring Service</a> to generate final T-score. Higher scores indicate higher levels of emotional support.</p>
+<p>For researchers wanting to include participants with missing items, raw data can be entered into the <a href="https://www.assessmentcenter.net/ac_scoringservice">HealthMeasures Scoring Service</a> to generate final T-score. Higher scores indicate higher levels of emotional support.</p>
 <p><b>Perceived Stress Scale-4 (PSS-4)</b><br>
 The PSS-4 is scored on a 5-point Likert scale. Total scores are calculated as the sum of all item response only when all items have been answered. Items 2 and 3 are reverse-coded. Higher scores indicate higher levels of perceived stress.</p>
 </div>
