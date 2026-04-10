@@ -45,7 +45,7 @@
 
 ## Instrument Details
 
-The **Perceived Stress and Social Support (PROMIS)** tools assess caregiver perceived stress and emotional support within their social networks longitudinally. 
+The **Perceived Stress and Social Support (PROMIS)** tools assess caregiver perceived stress and emotional support within their social networks longitudinally. Questionnaires include:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
@@ -82,25 +82,28 @@ The **Perceived Stress and Social Support (PROMIS)** tools assess caregiver perc
 </div>
 <div class="collapsible-content">
 <p><b>PROMIS Emotional Support 4a</b><br>
-<!-- ADD LINK TO official scoring tables to generate t-scores -->
-The PROMIS Emotional Support 4a is scored on 5-point Likert scales. Total (raw) scores are calculated as the sum of all item responses and only computed when all items have valid responses (i.e., responses such as “Don’t know” are not permitted). Raw scores are converted to scale scores using values provided in the <a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Emotional_Support_Scoring_Manual.pdf">official scoring tables</a> to generate T-scores.<p>
-<p>For researchers wanting to include participants with missing items, raw data can be entered into the <a href="https://www.assessmentcenter.net/ac_scoringservice">HealthMeasures Scoring Service</a> to generate final T-score. Higher scores indicate higher levels of emotional support.</p>
-<p><b>Perceived Stress Scale-4 (PSS-4)</b><br>
-The PSS-4 is scored on a 5-point Likert scale. Total scores are calculated as the sum of all item response only when all items have been answered. Items 2 and 3 are reverse-coded. Higher scores indicate higher levels of perceived stress.</p>
+Emotional support is reported on a 5-point Likert scale. Total raw scores (<code>total_raw_score</code>) are calculated as the sum of all item responses and are only computed when all items are answered<b style="font-size: 1.1em;">*</b>. Raw scores are converted to scale/T-scores (<code>scale_score</code>) with standard errors (<code>standard_error</code>) using the <a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Emotional_Support_Scoring_Manual.pdf">official scoring tables</a>. Higher scores indicate greater emotional support. To include participants with missing item responses, researchers may instead use the <a href="https://www.assessmentcenter.net/ac_scoringservice">HealthMeasures Scoring Service</a> to generate T-scores.</p>
+<p><b>Perceived Stress Scale–4 (PSS-4)</b><br> 
+Perceived stress is reported on a 5-point Likert scale. Total scores (<code>total_score</code>) are calculated as the sum of all item responses and are only computed when all items are answered<b style="font-size: 1.1em;">*</b>. Items 2 and 3 are reverse-coded prior to scoring (i.e., <code>0</code>→<code>4</code> becomes <code>4</code>→<code>0</code>). Higher scores indicate greater perceived stress.</p>
+<p><i><b style="font-size: 1.1em;">*</b> Items are considered "answered" if they have valid responses ranging from <code>0</code> to <code>4</code>, which excludes responses such as “Don’t know”</i></p>
 </div>
 
 
-<!-- PSS-4 Scoring Instructions:
-In the last month, how often have you felt that you were unable to control the important things in your life?
-In the last month, how often have you felt confident about your ability to handle your personal problems?
-In the last month, how often have you felt that things were going your way?
-In the last month, how often have you felt difficulties were piling up so high that you could not
-overcome them? -->
+
+
 
 <!-- 
-Questions 1 and 4: 0 = Never; 1 = Almost never; 2 = Sometimes; 3 = Fairly often; 4 = Very often Questions 2 and 3: 4 = Never; 3 = Almost never; 2 = Sometimes; 1 = Fairly often; 0 = Very often
+PSS-4 Scoring Instructions:
 
-I would support using the variable names to identify Questions 2/3 and 1/4 but want to make sure we are careful to keep up with any name changes that occur with various releases. These questions are NOT already reverse coded in the data dictionary.  -->
+ - In the last month, how often have you felt that you were unable to control the important things in your life?
+ - In the last month, how often have you felt confident about your ability to handle your personal problems?
+ - In the last month, how often have you felt that things were going your way?
+ - In the last month, how often have you felt difficulties were piling up so high that you could not overcome them?
+
+ - Questions 1 and 4: 0 = Never; 1 = Almost never; 2 = Sometimes; 3 = Fairly often; 4 = Very often 
+ - Questions 2 and 3: 4 = Never; 3 = Almost never; 2 = Sometimes; 1 = Fairly often; 0 = Very often
+
+These questions are NOT already reverse coded in the data dictionary.  -->
 
 ## References
 <div class="references">
