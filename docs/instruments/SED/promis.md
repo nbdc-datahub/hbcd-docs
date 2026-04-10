@@ -39,16 +39,22 @@
 <tr><td><b>Completion Time</b></td>
 <td>4 min</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Data dashboard was monitored for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">A data dashboard was used to routinely assess variable missingness, detect potential coding errors, verify scoring, and ensure overall data consistency.</td></tr>
 </tbody>
 </table>
 
 ## Instrument Details
 
-The **Perceived Stress and Social Support (PROMIS)** tools assess caregivers’ perceived stress and emotional support within their social networks longitudinally. These tools combine the PROMIS Emotional Support 4a questionnaire and the Perceived Stress Scale-4 (PSS-4).
+The **Perceived Stress and Social Support (PROMIS)** tools assess caregiver perceived stress and emotional support within their social networks longitudinally. 
 
-The PROMIS Emotional Support 4a questionnaire (first 4 questions) evaluates the quality of emotional support available to the participant, while the PSS-4 (last 4 questions) measures general perceived stress over the past month. The PSS-4 is a shortened version of the PSS-14, which has been widely used across different populations, including pregnant individuals and young families.
-
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr><td><b>PROMIS Emotional Support 4a</b><br>(first 4 questions)</td>
+<td style="word-wrap: break-word; white-space: normal;">Evaluates the quality of emotional support available to the participant</td></tr>
+<tr><td><b>Perceived Stress Scale-4 (PSS-4)</b><br>(last 4 questions)</td>
+<td style="word-wrap: break-word; white-space: normal;">Shortened version of the PSS-14 that measures general perceived stress over the past month, used widely used across different populations (including pregnant individuals and young families)</td></tr>
+</tbody>
+</table>
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -75,9 +81,26 @@ The PROMIS Emotional Support 4a questionnaire (first 4 questions) evaluates the 
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The original measure requires that all items are completed to allow for scoring via the tables provided in the manual, so items with “Don’t know” answers will not have a total score reported. If scoring will utilize the PROMIS HealthMeasures Scoring Service, total scores can include missing data (this can be done by individual investigators). For the PSS-4, complete data is essential, and scores should not be reported if any question is answered as “Don’t know.”</p>
+<p><b>PROMIS Emotional Support 4a</b><br>
+<!-- ADD LINK TO official scoring tables to generate t-scores -->
+The PROMIS Emotional Support 4a is scored on 5-point Likert scales. Total (raw) scores are calculated as the sum of all item responses and only computed when all items have valid responses (i.e., responses such as “Don’t know” are not permitted). Raw scores are converted to scale scores using values provided in the <a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Emotional_Support_Scoring_Manual.pdf">official scoring tables</a> to generate T-scores.<p>
+<p>For researchers wanting to include participants with missing items, raw data can be entered into the <a href="https://www.assessmentcenter.net/ac_scoringservice3UU33T3T">HealthMeasures Scoring Service</a> to generate final T-score. Higher scores indicate higher levels of emotional support.</p>
+<p><b>Perceived Stress Scale-4 (PSS-4)</b><br>
+The PSS-4 is scored on a 5-point Likert scale. Total scores are calculated as the sum of all item response only when all items have been answered. Items 2 and 3 are reverse-coded. Higher scores indicate higher levels of perceived stress.</p>
 </div>
 
+
+<!-- PSS-4 Scoring Instructions:
+In the last month, how often have you felt that you were unable to control the important things in your life?
+In the last month, how often have you felt confident about your ability to handle your personal problems?
+In the last month, how often have you felt that things were going your way?
+In the last month, how often have you felt difficulties were piling up so high that you could not
+overcome them? -->
+
+<!-- 
+Questions 1 and 4: 0 = Never; 1 = Almost never; 2 = Sometimes; 3 = Fairly often; 4 = Very often Questions 2 and 3: 4 = Never; 3 = Almost never; 2 = Sometimes; 1 = Fairly often; 0 = Very often
+
+I would support using the variable names to identify Questions 2/3 and 1/4 but want to make sure we are careful to keep up with any name changes that occur with various releases. These questions are NOT already reverse coded in the data dictionary.  -->
 
 ## References
 <div class="references">
