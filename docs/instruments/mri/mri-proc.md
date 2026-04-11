@@ -620,49 +620,141 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 </div>
 <div class="table-collapsible-content">
 <p><i>See <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#parcellations-and-atlases">Parcellations & Atlases</a> in the XCP-D documentation for more details.</i></p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+
+<style>
+    .compact-table-clean {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.compact-table-clean th {
+  text-align: left;
+  font-weight: 600;
+  padding: 0.6em 0.5em;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.compact-table-clean td {
+  padding: 0.65em 0.5em;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+.compact-table-clean tr:not(:last-child) td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.compact-table-clean code {
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.atlas-type {
+  font-weight: 600;
+}
+
+.atlas-details {
+  color: #6b7280;
+  font-size: 0.85em;
+  display: block;
+  margin-top: 0.15em;
+}
+
+.atlas-use {
+  display: inline-block;
+  margin-top: 0.35em;
+  font-size: 0.8em;
+  color: #0f766e;
+  background: #eef6f6;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+</style>
+<table class="compact-table-clean">
 <thead>
 <tr>
-  <th>Atlas</th>
+  <th style="width: 22%;">Atlas</th>
   <th>Description</th>
-  <th>Recommended Use</th>
 </tr>
 </thead>
 <tbody>
+
 <tr>
-  <td>Glasser</td>
-  <td style="word-wrap: break-word; white-space: normal;">Population-level multimodal anatomical atlas (<a href="https://doi.org/10.1038/nature18933">Glasser et al., 2016</a>).</td>
-  <td style="word-wrap: break-word; white-space: normal;">Population-level structure and surface-based morphology.</td>
+  <td><code>Glasser</code></td>
+  <td>
+    <span class="atlas-type">Multimodal anatomical atlas (population-level)</span>
+    <span class="atlas-details">
+      Derived from multimodal MRI data (<a href="https://doi.org/10.1038/nature18933">Glasser et al., 2016</a>)
+    </span>
+    <span class="atlas-use">Surface-based morphology, population-level structure</span>
+  </td>
 </tr>
 <tr>
-  <td>Gordon</td>
-  <td style="word-wrap: break-word; white-space: normal;">333-ROI template from rs-fMRI boundary detection for 120 young adults with 14 minutes of data collected on average  (<a href="https://doi.org/10.1093/cercor/bhu239">Gordon et al., 2016</a>).</td>
-  <td style="word-wrap: break-word; white-space: normal;">Functional network mapping and group-level FC analyses.</td>
+  <td><code>Gordon</code></td>
+  <td>
+    <span class="atlas-type">Functional atlas (333 ROIs)</span>
+    <span class="atlas-details">
+      rs-fMRI boundary detection (120 young adults, ~14 min per subject;
+      <a href="https://doi.org/10.1093/cercor/bhu239">Gordon et al., 2016</a>)
+    </span>
+    <span class="atlas-use">Functional network mapping, group-level FC analyses</span>
+  </td>
 </tr>
 <tr>
-  <td>HCP</td>
-  <td style="word-wrap: break-word; white-space: normal;">360-ROI atlas parcellated from combining task, rest, and diffusion MRI data of 210 young adults (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.127">Glasser et al., 2013</a>).</td>
-  <td style="word-wrap: break-word; white-space: normal;">Cross-modal structural-functional alignment.</td>
+  <td><code>HCP</code></td>
+  <td>
+    <span class="atlas-type">Multimodal cortical atlas (360 ROIs)</span>
+    <span class="atlas-details">
+      Combined task, resting-state, and diffusion MRI (210 young adults;
+      <a href="https://doi.org/10.1016/j.neuroimage.2013.04.127">Glasser et al., 2013</a>)
+    </span>
+    <span class="atlas-use">Cross-modal structural–functional alignment</span>
+  </td>
 </tr>
 <tr>
-  <td>MIDB</td>
-  <td style="word-wrap: break-word; white-space: normal;">Precision atlas derived from ABCD data, 75% probability threshold (<a href="https://doi.org/10.1038/s41593-024-01596-5">Hermosillo et al., 2024</a>).</td>
-  <td style="word-wrap: break-word; white-space: normal;">Individualized functional network mapping.</td>
+  <td><code>MIDB</code></td>
+  <td>
+    <span class="atlas-type">Precision functional atlas (individualized)</span>
+    <span class="atlas-details">
+      Derived from ABCD data using a 75% probability threshold
+      (<a href="https://doi.org/10.1038/s41593-024-01596-5">Hermosillo et al., 2024</a>)
+    </span>
+    <span class="atlas-use">Individualized functional network mapping</span>
+  </td>
 </tr>
 <tr>
-  <td>Myers-Labonte</td>
-  <td style="word-wrap: break-word; white-space: normal;">Infant probabilistic atlas, 50% probability threshold (<a href="https://doi.org/10.1101/2023.11.10.566629">Meyers et al., 2023</a>).</td>
-  <td style="word-wrap: break-word; white-space: normal;">Infant individualized functional network mapping.</td>
+  <td><code>Myers-Labonte</code></td>
+  <td>
+    <span class="atlas-type">Infant probabilistic functional atlas</span>
+    <span class="atlas-details">
+      50% probability threshold; infant population
+      (<a href="https://doi.org/10.1101/2023.11.10.566629">Myers et al., 2023</a>)
+    </span>
+    <span class="atlas-use">Infant functional network mapping</span>
+  </td>
 </tr>
 <tr>
-  <td>Tian</td>
-  <td style="word-wrap: break-word; white-space: normal;">Subcortical parcellation atlas (<a href="https://doi.org/10.1038/s41593-020-00711-6">Tian et al., 2020</a>).</td>
-  <td style="word-wrap: break-word; white-space: normal;">Subcortical connectivity analyses.</td>
+  <td><code>Tian</code></td>
+  <td>
+    <span class="atlas-type">Subcortical parcellation atlas</span>
+    <span class="atlas-details">
+      High-resolution subcortical segmentation
+      (<a href="https://doi.org/10.1038/s41593-020-00711-6">Tian et al., 2020</a>)
+    </span>
+    <span class="atlas-use">Subcortical connectivity analyses</span>
+  </td>
 </tr>
 <tr>
-  <td><span class="tooltip tooltip-right">4S<span class="tooltiptext">Schaefer Supplemented with Subcortical Structures</span></span> Atlas</td>
-  <td style="word-wrap: break-word; white-space: normal;">Integrated multimodal atlas combining cortical (at ten resolutions, 100-1000 parcels), subcortical, and cerebellar structures (<a href="https://github.com/PennLINC/AtlasPack">AtlasPack</a>).</td>
-  <td style="word-wrap: break-word; white-space: normal;">Cross-modality alignment across XCP-D, QSIPrep, and ASLPrep outputs.</td>
+  <td><code>4S{1-10}56Parcels</code></td>
+  <td>
+    <span class="atlas-type">Multimodal atlas (multi-resolution)</span>
+    <span class="atlas-details">
+      Schaefer cortical parcellations (100–1000 parcels) supplemented with subcortical and cerebellar regions
+      (<a href="https://github.com/PennLINC/AtlasPack">AtlasPack</a>)
+    </span>
+    <span class="atlas-use">Cross-modality alignment across XCP-D, QSIPrep, and ASLPrep</span>
+  </td>
 </tr>
 </tbody>
 </table>

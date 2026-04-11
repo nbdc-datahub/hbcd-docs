@@ -843,14 +843,6 @@ PATCH RELEASE
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="mri/qc#brainswipes" target="_blank">BrainSwipes</a></td>
-<td>Manual QC</td>
-<td>
-<code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code><br>
-<code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code>
-</td>
-</tr>
 <!-- 
 LUCI NOTE: PATCH RELEASE
 <tr>
@@ -864,30 +856,45 @@ LUCI NOTE: PATCH RELEASE
 <td><code>mri_ra_chkl_scan</code></td>
 </tr> -->
 <tr>
-<td><a href="mri/prescan-questionnaire" target="_blank">Pre-Scan Questionnaire</a></td>
+<td><a href="mri/prescan-questionnaire" target="_blank">Pre/Post Scan Prep</a></td>
 <td>Infant Sleep</td>
 <td><code>mri_ra_prep</code></td>
 </tr>
 <tr>
+<td><a href="mri/qc#brainswipes" target="_blank">BrainSwipes</a></td>
+<td>Manual QC</td>
+<td>
+<code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_T2w</code><br>
+<code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_bold</code><br>
+<code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_T1w</code><br>
+<code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_bold</code><br>
+</td>
+</tr>
+<tr>
     <td><a href="../../instruments/mri/fmri/#mriqc" target="_blank">MRIQC</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
     <td>Pipeline</td>
-    <td><code>img_mriqc_<span class="blue-text">&lt;T1w|T2w|bold&gt;</span></code></td>
+    <td><code>img_mriqc_T1w</code><br><code>img_mriqc_T2w</code><br><code>img_mriqc_bold</code>
+</td>
 </tr>
 <tr>
   <td><a href="../../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
   <td>Pipeline</td>
-  <td><code>img_bibsnet_space-<span class="blue-text">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes</code></td>
+  <td><code>img_bibsnet_space-T1w_desc-aseg_volumes</code><br><code>img_bibsnet_space-T2w_desc-aseg_volumes</code></td>
 </tr>
 <tr>
   <td><a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
   <td>Pipeline</td>
-  <td><code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph</code><br>
+  <td>
+    <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-sulc_morph</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-thickness_morph</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-alff_bold</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-coverage_bold</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-reho_bold</code>
-  </td>
+  <br><br>
+  <code><span class="blue-text">&lt;HASH&gt;</span></code>  values: <code>0f306a2f+0ef9c88a</code>; <code>2afa9081+0ef9c88a</code><br>
+  <code><span class="blue-text">&lt;PARC&gt;</span></code>  values: <code>Glasser</code>, <code>Gordon</code>, etc - <a href="mri/mri-proc/#parc" target="_blank">see full atlas list →</a></code><br><br>
+  <a href="mri/tables/xcpd.html" target="_blank">See full file list →</a></td>
 </tr>
 <tr>
   <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
@@ -895,27 +902,29 @@ LUCI NOTE: PATCH RELEASE
   <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
 </tr>
 <tr>
-  <td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
-  <td>Pipeline</td>
-  <td>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_CSFWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_TissCorrWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_rawWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_amplMets_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_tCr_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_HERCULES_qm_processed_spectra</code><br>
-    <code>img_osprey_unedited_qm_processed_spectra</code>
+<td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
+<td>Pipeline</td>
+<td>
+<code><span class="blue-text"># HERCULES diff1, diff2, and sum files</span></code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_CSFWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_TissCorrWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_rawWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_amplMets_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_tCr_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_qm_processed_spectra</code><br><br>
+    <code><span class="blue-text"># Unedited files</span></code><br>
+    <code>img_osprey_unedited_A_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_CSFWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_TissCorrWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_rawWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_amplMets_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_tCr_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_qm_processed_spectra</code><br><br>
+    <a href="mri/tables/osprey.html" target="_blank">See full file list →</a>
     </td>
-</tr>
-<tr>
-  <td colspan="3">
-    <strong>Label Values Legend</strong><br>
-    <b style="color: #0077cc;">&lt;HASH&gt;</b>: 0f306a2f+0ef9c88a, 2afa9081+0ef9c88a<br>
-    <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations): 4S-{1-10}56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)<br>
-    <b style="color: #0077cc;">&lt;Q&gt;</b> (quantification method): HERCULES_diff1, HERCULES_diff2, HERCULES_sum, unedited_A
-  </td>
 </tr>
 </tbody>
 </table>

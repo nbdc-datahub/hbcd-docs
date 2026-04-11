@@ -1,20 +1,161 @@
 # MR Raw BIDS
 
-<p>
 <div class="table-banner">
   <span class="emoji"><i class="fa fa-circle-info"></i></span>
-<span class="text">See <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">File-Based Data</a> for a general introduction to the Brain Imaging Data Structure (BIDS).</span>
+  <span class="text">
+    See <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">File-Based Data</a> for a general introduction to BIDS.
+  </span>
 </div>
-</p>
+
+---
+
+## Raw BIDS Structure Overview
+
+<table class="table-no-vertical-lines">
+<thead>
+<tr>
+<th>Folder</th>
+<th>Modality</th>
+<th>Key contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>anat/</code></td>
+<td>Structural, qMRI</td>
+<td>T1w, T2w, QALAS, localizers</td>
+</tr>
+<tr>
+<td><code>func/</code></td>
+<td>Functional MRI</td>
+<td>BOLD runs</td>
+</tr>
+<tr>
+<td><code>fmap/</code></td>
+<td>Fieldmaps</td>
+<td>EPI (AP/PA), B1 maps</td>
+</tr>
+<tr>
+<td><code>dwi/</code></td>
+<td>Diffusion MRI</td>
+<td>DWI, bvec, bval, SBRef</td>
+</tr>
+<tr>
+<td><code>mrs/</code></td>
+<td>MR Spectroscopy</td>
+<td>SVS, reference scans</td>
+</tr>
+</tbody>
+</table>
 
 ## BIDS Conversion Procedures
 
-For **MRI**, DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>, with post-conversion modifications required for certain scan types to maintain consistency across vendors - see <a href="#bids-conversion-mri">MRI Hardcoded Fields & Post-Conversion Modifications</a> below for details.
+<table class="table-no-vertical-lines">
+<tbody>
+<tr>
+<td><b>MRI</b></td>
+<td style="word-wrap: break-word; white-space: normal;">DICOM images are converted using an HBCD-customized version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>, with additional post-processing to ensure consistency across vendors.</td>
+</tr>
+<tr>
+<td><b>MRS</b></td>
+<td style="word-wrap: break-word; white-space: normal;">Vendor-specific formats (Siemens <code>.dat</code>, Philips data/list, GE P-file) are converted using <a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">spec2nii v0.7.0</a>.</td>
+</tr>
+</tbody>
+</table>
+
+### Hardcoded Fields
+
+Certain metadata fields are hardcoded post-BIDS conversion when missing or inconsistent. These are documented in the JSON metadata files under the field `HardCodedValues` and summarized below.
+
+<table class="compact-table-no-vertical-lines">
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>DWI<br><span style="font-weight:normal;">Philips</span></th>
+      <th>EPI<br><span style="font-weight:normal;">Philips</span></th>
+      <th>BOLD<br><span style="font-weight:normal;">Philips</span></th>
+      <th>T1w<br><span style="font-weight:normal;">Philips & GE</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>PhaseEncodingDirection</code></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>TotalReadoutTime</code></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>SliceTiming</code></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>&lt;Small|Large&gt;Delta</code></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>RepetitionTime</code></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<br><br>
+
+<div class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text">Hardcoded Fields</span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>QALAS (vendor-specific handling)</p>
+
+* Converted to **five 3D NIfTI files** (`inv-0` → `inv-4`)
+* JSON sidecars updated with standardized timing values
+* `T2Prep` and `InversionTime` are set per manufacturer
+</div>
+
+
+
+<br><br><br><br><br>
+
+
+
+
+
+
+
+
+## BIDS Conversion Procedures
+
+
+
+
+
 
 <div id="bids-conversion-mri" class="table-banner" onclick="toggleCollapse(this)">
   <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
   <span class="text-with-link">
-  <span class="text">MRI Hardcoded Fields & Post-Conversion Modifications</span>
+  <span class="text">Hard-Coded Fields</span>
   <a class="anchor-link" href="#bids-conversion-mri" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -22,26 +163,8 @@ For **MRI**, DICOM images are converted using an <a href="https://github.com/ror
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><strong>Hardcoded Fields</strong><br>
-Key fields for Philips (<i>and GE for T1w scans</i>) are hard-coded to ensure consistency across vendors, as NIfTI/JSON metadata can be omitted or misconfigured during conversion. Hardcoded fields for different modalities/scan types are outlined in the following table and also documented in the JSON sidecars under <code>HardCodedValues</code>. <strong>All of the following were modified for Philips only with the exception of T1w scans, modified for both Philips and GE.</strong></p>
-<table class="compact-table-no-vertical-lines" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
-  <thead>
-    <tr>
-      <th>Modality</th>
-      <th><code>PhaseEncodingDirection</code></th>
-      <th><code>TotalReadoutTime</code></th>
-      <th><code>SliceTiming</code></th>
-      <th><code>&lt;Small|Large&gt;Delta</code></th>
-      <th><code>RepetitionTime</code></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>DWI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td></tr>
-    <tr><td>EPI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td><td></td></tr>
-    <tr><td>BOLD</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td></tr>
-    <tr><td>T1w <i>(both Philips & GE)</i></td><td></td><td></td><td></td><td></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td></tr>
-  </tbody>
-</table>
+<p>MRI Hardcoded Fields & Post-Conversion Modifications</p>
+
 <p><strong>QALAS</strong><br>
 QALAS conversion yielded either five 3D NIfTI files or one 4D file with five volumes and missing JSON headers. To standardize outputs, all series were split into five NIfTI files, each labeled by inversion time (<code>inv-{X}</code>). The JSON sidecars were updated as follows: <code>T2Prep</code> for QALAS file <code>inv-0</code> is set to 0.10 for Siemens/Philips and 0.09  for GE. <code>InversionTime</code> (s) is hard-coded per manufacturer as follows:</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 90%;">
@@ -53,8 +176,6 @@ QALAS conversion yielded either five 3D NIfTI files or one 4D file with five vol
     <tr><th>Philips</th><td>0</td><td>0.115</td><td>1.0105</td><td>1.9060</td><td>2.8016</td></tr>
   </table>
 </div>
-
-For **MRS**, vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.
 
 ## Anatomical Files (`anat/`)
 

@@ -1,4 +1,4 @@
-# Overview & MR Protocols
+# Overview
 
 HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy (MRS)** data measures acquired as part of a comprehensive pediatric neuroimaging protocol, meticulously designed to overcome technical challenges of imaging early in life. MR data are acquired during visits V02, V03, V04, and V06 across all 27 Study recruitment sites. MR modalities include the following - click to be directed to modality documentation pages:
 
@@ -10,7 +10,7 @@ HBCD includes a suite of **magnetic resonance imaging (MRI)** and **spectroscopy
 <li><a href="mrs" target="_blank">Magnetic Resonance Spectroscopy (MRS)</a></li>
 </ul>
 
-## MRI & MRS Protocols
+## HBCD Study MRI Protocols
 
 See <a href="https://hbcdsequences.readthedocs.io"><b>HBCD Study MRI Protocols</b></a> for full MRI protocols, sequence installation, and operation instructions.
 
@@ -22,12 +22,17 @@ See <a href="https://hbcdsequences.readthedocs.io"><b>HBCD Study MRI Protocols</
 </div>
 <p></p>
 
-MRI and MRS release data include both **file-based** (raw and processed data files in modality-specific formats) and **tabulated** (instrument and derived data in a standardized table format) data.      
-<i>See the <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a full explanation of these data types.</i>
+MRI and MRS release data include the following - <i>see <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for explanation of these data types</i>:
 
-- <i class="fa fa-hammer"></i> <a href="../../datacuration/file-based-data/#raw-bids" target="_blank">Raw BIDS</a> under subject- and session-specific <code>rawdata/</code> folders
-- <i class="fas fa-cog"></i> <a href="../../datacuration/file-based-data/#derivatives" target="_blank">Derivatives</a> processed through MRI & MRS pipelines (see <a href="../processing" target="_blank">Processing Pipelines</a>)
-- <i class="fas fa-table"></i> <a href="../../datacuration/phenotypes" target="_blank">Tabulated</a> data tables derived from pipeline derivatives - see full list of tables <a href="../#mri" target="_blank">here</a>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr><td><b><i class="fas fa-hammer header-icon"></i> Raw BIDS</b></td>
+<td>File-based data in modality-specific formats under subject- and session-specific <code>rawdata/</code> folders</td></tr>
+<tr><td><b><i class="fas fa-cog header-icon"></i> Derivatives</b></td>
+<td>File-based data in modality-specific formats processed through <a href="../processing" target="_blank">HBCD pipelines</a></td></tr>
+<tr><td><b><i class="fas fa-table header-icon"></i> Tabulated Data</b></td>
+<td style="word-wrap: break-word; white-space: normal;">Includes (1) questionnaires and (2) select derivative data compiled across participants in HBCD-tabulated format (see <a href="../#mri-tab" target="_blank">Tabulated Imaging</a>)</td></tr>
+</tbody></table>
 
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
