@@ -15,7 +15,11 @@ File-based data is provided for imaging, EEG, and biosensor recordings. Unlike [
 </div>
 </p>
 
-The `rawdata/` folder includes raw file-based data in [BIDS](https://bids-specification.readthedocs.io/en/stable/) format for MRI, MRS, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings. 
+The `rawdata/` folder includes raw file-based data in [BIDS](https://bids-specification.readthedocs.io/en/stable/) format for MRI, MRS, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings. Visit the following links to see full file contents and documentation for each raw BIDS folder:
+
+ - <a href="../../instruments/mri/raw-bids" target="_blank">MRI & MRS</a> (`anat/`, `func/`, `fmap/`, `dwi/`, `mrs/`)
+ - <a href="../../instruments/eeg/#rawbids" target="_blank">EEG</a> (`eeg/`)
+ - <a href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">Wearable Sensors</a> (`motion/`)
 
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
@@ -45,7 +49,6 @@ hbcd/
 </div>
 </p>
 
-
 Participant-, session-, and scan-level data are stored in the following `.tsv` files, accompanied by `.json` sidecar files containing metadata:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
@@ -74,117 +77,6 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 </tr>
 </tbody>
 </table>
-
-### Modality-Specific Subfolders
-
-*Click the following links to see the full file contents of each raw BIDS folder in the measure documentation pages:*
-
-<table class="compact-table-no-vertical-lines" style="line-height: 1.0;">
-<tbody>
-<tr>
-<td><a href="../../instruments/mri/smri/#rawbids" target="_blank">Structural MRI</a></td>
-<td><code>anat/</code></td>
-</tr>
-<tr>
-<td><a href="../../instruments/mri/qmri/#rawbids" target="_blank">Quantitative MRI</a></td>
-<td><code>anat/</code></td>
-</tr>
-<tr>
-<td><a href="../../instruments/mri/fmri/#rawbids" target="_blank">Functional MRI</a></td>
-<td><code>func/</code>, <code>fmap/</code></td>
-</tr>
-<tr>
-<td><a href="../../instruments/mri/dmri/#rawbids" target="_blank">Diffusion MRI</a></td>
-<td><code>dwi/</code></td>
-</tr>
-<tr>
-<td><a href="../../instruments/mri/mrs/#rawbids" target="_blank">MR Spectroscopy</a></td>
-<td><code>mrs/</code></td>
-</tr>
-<tr>
-<td><a href="../../instruments/eeg/#rawbids" target="_blank">EEG</a></td>
-<td><code>eeg/</code></td>
-</tr>
-<tr>
-<td><a href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">Wearable Sensors</a></td>
-<td><code>motion/</code></td>
-</tr>
-</tbody>
-</table>
-
-### BIDS Conversion Procedures
-
-Raw data for each modality are converted to the BIDS standard via the following software and procedures:
-
-<table class="compact-table-no-vertical-lines" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
-  <thead>
-    <tr>
-      <th></th>
-      <th>BIDS Conversion</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>MRI</strong></td>
-      <td style="word-wrap: break-word; white-space: normal;">DICOM images are converted using an <a href="https://github.com/rordenlab/dcm2niix/tree/c5caaa9f858b704b61d3ff4a7989282922dd712e">HBCD-customized</a> version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>, with post-conversion modifications required for certain scan types to maintain consistency across vendors - see <a href="#bids-conversion-mri">MRI Hardcoded Fields & Post-Conversion Modifications</a> below for details.</td>
-    </tr>
-    <tr>
-      <td><strong>MRS</strong></td>
-      <td style="word-wrap: break-word; white-space: normal;">Vendor-specific raw data formats (Siemens <code>.dat</code>; Philips data/list; GE P-file) were converted to BIDS using a wrapper (<a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">hbcd_mrs_to_nii_conversion</a>) for <a href="https://github.com/wtclarke/spec2nii">spec2nii v0.7.0</a>.</td>
-    </tr>
-    <tr>
-      <td><strong>EEG</strong></td>
-      <td style="word-wrap: break-word; white-space: normal;">BIDS conversion was performed with the <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application for HBCD EEG data management and formatting, installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which converts them to the BIDS standard.</td>
-    </tr>
-    <tr>
-      <td><strong>Sensors</strong></td>
-      <td style="word-wrap: break-word; white-space: normal;">See <a href="https://www.nature.com/articles/s41597-024-03559-8">Jeung et al., 2024</a> <i>Motion-BIDS: an extension to the brain imaging data structure to organize motion data for reproducible research</i></td>
-    </tr>
-  </tbody>
-</table>
-
-<div id="bids-conversion-mri" class="table-banner" onclick="toggleCollapse(this)">
-  <img src="../images/BIDS-logo.png" style="width: 3%;" alt="BIDS-logo">
-  <span class="text-with-link">
-  <span class="text">MRI Hardcoded Fields & Post-Conversion Modifications</span>
-  <a class="anchor-link" href="#bids-conversion-mri" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p><strong>Hardcoded Fields</strong><br>
-Key fields for Philips (<i>and GE for T1w scans</i>) are hard-coded to ensure consistency across vendors, as NIfTI/JSON metadata can be omitted or misconfigured during conversion. Hardcoded fields for different modalities/scan types are outlined in the following table and also documented in the JSON sidecars under <code>HardCodedValues</code>. <strong>All of the following were modified for Philips only with the exception of T1w scans, modified for both Philips and GE.</strong></p>
-<table class="compact-table-no-vertical-lines" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
-  <thead>
-    <tr>
-      <th>Modality</th>
-      <th><code>PhaseEncodingDirection</code></th>
-      <th><code>TotalReadoutTime</code></th>
-      <th><code>SliceTiming</code></th>
-      <th><code>&lt;Small|Large&gt;Delta</code></th>
-      <th><code>RepetitionTime</code></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>DWI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td></tr>
-    <tr><td>EPI</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td><td></td></tr>
-    <tr><td>BOLD</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td></td></tr>
-    <tr><td>T1w <i>(both Philips & GE)</i></td><td></td><td></td><td></td><td></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td></tr>
-  </tbody>
-</table>
-<p><strong>QALAS</strong><br>
-QALAS conversion yielded either five 3D NIfTI files or one 4D file with five volumes and missing JSON headers. To standardize outputs, all series were split into five NIfTI files, each labeled by inversion time (<code>inv-{X}</code>). The JSON sidecars were updated as follows: <code>T2Prep</code> for QALAS file <code>inv-0</code> is set to 0.10 for Siemens/Philips and 0.09  for GE. <code>InversionTime</code> (s) is hard-coded per manufacturer as follows:</p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 90%;">
-    <tr>
-      <th></th><th>inv-0</th><th>inv-1</th><th>inv-2</th><th>inv-3</th><th>inv-4</th>
-    </tr>
-    <tr><th>Siemens</th><td>0</td><td>0.1</td><td>1</td><td>1.9</td><td>2.8</td></tr>
-    <tr><th>GE</th><td>0</td><td>0.1193</td><td>1.0192</td><td>1.9191</td><td>2.8190</td></tr>
-    <tr><th>Philips</th><td>0</td><td>0.115</td><td>1.0105</td><td>1.9060</td><td>2.8016</td></tr>
-  </table>
-</div>
 
 ## Derivatives
 

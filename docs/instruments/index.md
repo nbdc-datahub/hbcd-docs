@@ -785,26 +785,26 @@ PATCH RELEASE
 <tbody>
 <tr>
   <td>Structural MRI (<a href="mri/smri" target="_blank">sMRI</a>)</td>
-  <td><a href="mri/smri/#rawbids" target="_blank"><code>anat/</code></a></td>
+  <td><code>anat/</code></td>
   <td>
     <a href="../../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i><br>
     <a href="../../instruments/mri/smri/#mriqc" target="_blank">MRIQC</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
 </tr>
 <tr>
   <td>Functional MRI (<a href="mri/fmri" target="_blank">fMRI</a>)</td>
-  <td><a href="mri/fmri/#rawbids" target="_blank"><code>func/</code>, <code>fmap/</code></a></td>
+  <td><code>func/</code>, <code>fmap/</code></td>
   <td><a href="../../instruments/mri/fmri/#mriqc" target="_blank">MRIQC</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i><br>
       <a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> + <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">FreeSurfer / M-CRIB-S</a><br>
       <a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
 </tr>
 <tr>
     <td>Quantitative MRI (<a href="mri/qmri" target="_blank">qMRI</a>)</td>
-    <td><a href="mri/qmri/#rawbids" target="_blank"><code>anat/</code></a></td>
+    <td><code>anat/</code>, <code>fmap/</code></td>
     <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI & qMRI PostProc</a></td>
 </tr>
 <tr>
     <td>Diffusion MRI (<a href="mri/dmri" target="_blank">dMRI</a>)</td>
-    <td><a href="mri/dmri/#rawbids" target="_blank"><code>dwi/</code></a></td>
+    <td><code>dwi/</code></td>
     <td>
       <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i><br>
      <a href="mri/dmri/#qsirecon" target="_blank">QSIRecon</a> (<a href="../../instruments/mri/dmri/#qsirecon-DSIStudio" target="_blank">DSI Studio</a>/
@@ -813,7 +813,7 @@ PATCH RELEASE
 </tr>
 <tr>
   <td>MR Spectroscopy (<a href="mri/mrs" target="_blank">MRS</a>)</td>
-  <td><a href="mri/mrs/#rawbids" target="_blank"><code>mrs/</code></a></td>
+  <td><code>mrs/</code></td>
   <td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
 </tr>
 </tbody>
