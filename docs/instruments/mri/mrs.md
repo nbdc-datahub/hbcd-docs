@@ -67,8 +67,6 @@ hbcd/
 
 ## Data Acquisition
 
-The MRS acquisition protocol was optimized to maximize signal-to-noise across multiple low-concentration metabolites while maintaining an acquisition time (TA) under 9 minutes. The MRS acquisition centers on a single voxel Point-RESolved Spectroscopy (PRESS) ([Bottomley, 1987](https://doi.org/10.1111/j.1749-6632.1987.tb32915.x)) localization (30×23×23 mm^3) in the bilateral thalamus, with SVS localizer acquisitions to define the ROI. The ISTHMUS sequence incorporates a short TE (35 ms) unedited block at the beginning of the sequence for optimal measurement of high concentration metabolites, including N-acetylasparte, followed by an advanced Hadamard encoded spectral editing scheme (HERCULES, TE = 80 ms) to derive reliable and reproducible measures of the low-concentration metabolites ([Oeltzschner et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.10.002)).
-
 The primary metabolites measured for HBCD include: 
 
 - **N-acetylaspartate (NAA)**: a marker of neuronal mitochondrial metabolism

@@ -151,9 +151,8 @@ nav:
             - MRI Protocols: instruments/mri/protocols.md
             - Processed Derivatives: instruments/mri/mri-proc.md
             - Quality Control Procedures: instruments/mri/qc.md
-            - MR Exclusion Criteria: instruments/mri/exclusion-criteria.md
             - Pre-Scan Questionnaire: instruments/mri/prescan-questionnaire.md
-            - Structural & Functional MRI: instruments/mri/s-fmri.md
+            - Modalities: instruments/mri/s-fmri.md
             - Modalites:
                 - Diffusion MRI: instruments/mri/dmri.md
                 - Quantitative MRI: instruments/mri/qmri.md
