@@ -1,17 +1,12 @@
 # HBCD MR Quality Control Procedures
 
-## Overview
+## Raw MR Data QC
 
 Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing. Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, manual visual review is only performed for series that fail automated QC. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC.
-
-**QC is also performed on select processed outputs** with **[BrainSwipes](#brainswipes)**. When issues are identified at this stage, the corresponding raw data are re-reviewed and QC decisions are updated as needed. This iterative process improves QC scoring and utilities over time and helps ensure high data quality while minimizing delays in data release.
-
-## Raw MR Data QC
 
 ### <i class="fa-solid fa-location-dot header-icon"></i> Location in Release Data
 
 Raw data QC metrics are provided in the session-level <a href="../../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">scans TSV Files</a>. QC metrics included in the scans TSV file are summarized <a href="../tables/scans-tsv.html" target="_blank">here</a>.
-
 
 ### <i class="fa fa-desktop header-icon"></i> Automated QC
 
@@ -136,6 +131,12 @@ Data are flagged for manual review based on automated QC results using multivari
 </div>
 <p></p>
 
+QC is performed on processed structural and functional MRI data via manual review of <a href="../mri-proc/#xcp-d">XCP-D</a> visual reports. Though manual inspection remains the gold standard for QC, it is highly resource-intensive. Manual visual review was therefore performed using **[BrainSwipes](#brainswipes)**, a gamified crowdsourcing platform where users classify images as Pass or Fail by swiping right or left after completing a brief visual QC tutorial.
+
+
+
+When issues are identified at this stage, the corresponding raw data are re-reviewed and QC decisions are updated as needed. This iterative process improves QC scoring and utilities over time and helps ensure high data quality while minimizing delays in data release.
+
 ### <i class="fa-solid fa-location-dot header-icon"></i> Location in Release Data
 <!-- , with unique hash identifiers indicating T1w- vs T2w-based surface-reconstruction method used in Infant fMRIPrep (<a href="../mri-proc/#m-crib-s-freesurfer">see details</a>). -->
 
@@ -169,7 +170,7 @@ Functional registration is evaluated by overlaying outlines of functional images
 
 <div style="display: flex; align-items: center; gap: 30px;">
 <div style="flex: 1;">
-<p>Processed structural and functional MRI data are quality-controlled via manual review of <a href="../mri-proc/#xcp-d">XCP-D</a> visual reports. Manual inspection remains the gold standard for QC, but is highly resource-intensive.</p>
+<!-- <p>Processed structural and functional MRI data are quality-controlled via manual review of <a href="../mri-proc/#xcp-d">XCP-D</a> visual reports. Manual inspection remains the gold standard for QC, but is highly resource-intensive.</p> -->
 <p>To support large-scale QC, HBCD uses <a href="https://brainswipes.us/about/">BrainSwipes</a>, a gamified, crowdsourced platform where users classify images as Pass or Fail by swiping right or left after completing a brief visual QC tutorial.</p>
 <p>BrainSwipes QC results were also used to identify and exclude derivative outputs with severe data quality issues from the release (see <a href="../exclusion-criteria/#processed-data-exclusion-criteria" target="_blank">Processed Data Exclusion Criteria</a> for details).</p>
 </div>

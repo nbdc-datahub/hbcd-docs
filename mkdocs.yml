@@ -149,13 +149,13 @@ nav:
         - Magnetic Resonance Imaging:
             - Overview: instruments/mri/index.md
             - MRI Protocols: instruments/mri/protocols.md
-            - Processed Derivatives: instruments/mri/mri-proc.md
             - Quality Control Procedures: instruments/mri/qc.md
+            - Raw BIDS: instruments/mri/rawbids.md
+            - Processed Derivatives: instruments/mri/mri-proc.md
             - Pre-Scan Questionnaire: instruments/mri/prescan-questionnaire.md
-            - Modalities: instruments/mri/s-fmri.md
             - Modalites:
+                - Structural & Functional MRI: instruments/mri/s-fmri.md
                 - Diffusion MRI: instruments/mri/dmri.md
-                - Quantitative MRI: instruments/mri/qmri.md
                 - MRS: instruments/mri/mrs.md 
         - Novel Tech & Wearable Sensors:
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
