@@ -26,8 +26,18 @@ Automated QC begins immediately after data upload with protocol compliance and c
 <p><strong>Protocol compliance</strong> is performed by extracting imaging parameters from DICOM headers to confirm that key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner. Out-of-compliance series are flagged for review and sites are contacted if corrective action is needed.</p>
 <p><strong>Completeness checks</strong> verify that all expected series are present in each imaging session. Missing data usually indicate an aborted scan or incomplete data transfer. Series included in a valid session include: <strong>T1w &amp; T2w</strong> structural scans; <strong>2 resting state functional runs</strong> (each accompanied by fieldmaps acquired in AP and PA phase encoding directions); <strong>diffusion scans (acquired both AP and PA)</strong>; quantitative <strong>QALAS and B1 maps</strong>; and an <strong>MRS scan and SVS localizer</strong>. </p>
 </div>
-<p></p>
 
+<div id="auto-qc" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+<span class="text">Automated QC Metrics</span>
+  <a class="anchor-link" href="#auto-qc" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
@@ -70,18 +80,25 @@ Automated QC begins immediately after data upload with protocol compliance and c
 </tr>
 </tbody>
 </table>
+</div>
 
 ### <i class="fa-solid fa-eye header-icon"></i> Manual Review
 
 Data are flagged for manual review based on automated QC results using multivariate prediction and Bayesian classifiers, so only a subset undergoes both automated and manual review. When a series is flagged, trained technicians perform visual review and rate artifact severity on a **0–3 scale**: *none* (**0**), *mild* (**1**), *moderate* (**2**), or *severe* (**3**). Series rated **3** (*severe*) are automatically assigned an overall QC score of **0** (*Fail*) and excluded from downstream processing. For all others, final selection is informed by manual ratings, reviewer notes, and automated QC metrics.
 
+<div id="man-qc" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-check"></i></span>
+  <span class="text-with-link">
+<span class="text">Manual QC Metrics</span>
+  <a class="anchor-link" href="#man-qc" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-    <th>Modality</th>
-    <th>Manual QC Procedures & Scoring</th>
-</tr>
-</thead>
+<thead><tr>    <th>Modality</th>    <th>Manual QC Procedures & Scoring</th></tr></thead>
 <tbody>
 <tr>
     <td>sMRI</td>
@@ -106,6 +123,7 @@ Data are flagged for manual review based on automated QC results using multivari
 </tr>
 </tbody>
 </table>
+</div>
 
 ## BrainSwipes
 
@@ -131,23 +149,22 @@ Data are flagged for manual review based on automated QC results using multivari
 </div>
 <p></p>
 
-QC is performed on processed structural and functional MRI data via manual review of <a href="../mri-proc/#xcp-d">XCP-D</a> visual reports. Though manual inspection remains the gold standard for QC, it is highly resource-intensive. Manual visual review was therefore performed using **[BrainSwipes](#brainswipes)**, a gamified crowdsourcing platform where users classify images as Pass or Fail by swiping right or left after completing a brief visual QC tutorial.
 
 
+<div style="display: flex; align-items: center; gap: 30px;">
+<div style="flex: 1;">
+<!-- <p>Processed structural and functional MRI data are quality-controlled via manual review of <a href="../mri-proc/#xcp-d">XCP-D</a> visual reports. Manual inspection remains the gold standard for QC, but is highly resource-intensive.</p> -->
+<p>QC is performed on processed structural and functional MRI data via manual review of <a href="../mri-proc/#xcp-d">XCP-D</a> visual reports. Though manual inspection remains the gold standard for QC, it is highly resource-intensive. Manual visual review was therefore performed using <a href="https://brainswipes.us/about/">BrainSwipes</a>, a gamified crowdsourcing platform where users classify images as Pass or Fail by swiping right or left after completing a brief visual QC tutorial.</p>
+<p>BrainSwipes QC results were also used to inform processed data exclusion (see <a href="../exclusion-criteria/#processed-data-exclusion-criteria" target="_blank">Processed Data Exclusion Criteria</a> for details).</p>
+</div>
+  <div style="flex: 1; text-align: center;">
+    <img src="../images/brainswipes.png" style="max-width:100%; height:auto; display:block; margin:0 auto;">
+    <p style="font-size: 0.8em; margin-top: 5px; line-height: 1.1; max-width:80%; margin-left:auto; margin-right:auto; text-align:justify;">
+      <i>Example quality assessment of surface delineation on BrainSwipes platform (displaying brain in axial plane at level of basal ganglia/putamen).</i>
+    </p>
+  </div>
+</div>
 
-When issues are identified at this stage, the corresponding raw data are re-reviewed and QC decisions are updated as needed. This iterative process improves QC scoring and utilities over time and helps ensure high data quality while minimizing delays in data release.
-
-### <i class="fa-solid fa-location-dot header-icon"></i> Location in Release Data
-<!-- , with unique hash identifiers indicating T1w- vs T2w-based surface-reconstruction method used in Infant fMRIPrep (<a href="../mri-proc/#m-crib-s-freesurfer">see details</a>). -->
-
-BrainSwipes QC results for processed data are provided as <a href="../../#mri-tab">tabulated data</a> (`img_brainswipes_xcpd_*`). BrainSwipes presents users with a series of visual reports, generated by XCP-D, to assess the quality of structural and functional processing. Each report is independently rated as **Pass (1)** or **Fail (0)**. The BrainSwipes data include:
-
- - The mean QC score and number of reviewers **for each individual visual report**
- - The mean QC score and average number of reviewers **across all visual reports** 
-
-### BrainSwipes QC Procedures
-
- <p>
 <div id="swipes-procedures" class="table-banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-brain"></i></span>
 <span class="text-with-link">
@@ -166,29 +183,31 @@ In addition to surface delineation, structural QA also includes atlas registrati
 <p><b>Functional Registration</b><br>
 Functional registration is evaluated by overlaying outlines of functional images onto structural images and vice versa. Swipes display nine slices of the same functional image for visual inspection, with three slices per anatomical plane. Quality is assessed similarly to structural atlas registration, focusing on the alignment of the overlaid contours. Additional evaluation includes checking for artifacts such as signal dropout. Images are derived from XCP-D visual reports.</p>
 </div>
-</p>
 
-<div style="display: flex; align-items: center; gap: 30px;">
-<div style="flex: 1;">
-<!-- <p>Processed structural and functional MRI data are quality-controlled via manual review of <a href="../mri-proc/#xcp-d">XCP-D</a> visual reports. Manual inspection remains the gold standard for QC, but is highly resource-intensive.</p> -->
-<p>To support large-scale QC, HBCD uses <a href="https://brainswipes.us/about/">BrainSwipes</a>, a gamified, crowdsourced platform where users classify images as Pass or Fail by swiping right or left after completing a brief visual QC tutorial.</p>
-<p>BrainSwipes QC results were also used to identify and exclude derivative outputs with severe data quality issues from the release (see <a href="../exclusion-criteria/#processed-data-exclusion-criteria" target="_blank">Processed Data Exclusion Criteria</a> for details).</p>
+### <i class="fa-solid fa-location-dot header-icon"></i> Location in Release Data
+BrainSwipes QC results for processed data are provided as <a href="../../#mri-tab">tabulated data</a> (`img_brainswipes_xcpd_*`). BrainSwipes presents users with a series of visual reports, generated by XCP-D, to assess the quality of structural and functional processing. Each report is independently rated as **Pass (1)** or **Fail (0)**. The BrainSwipes data include:
+
+ - The mean QC score and number of reviewers **for each individual visual report**
+ - The mean QC score and average number of reviewers **across all visual reports** 
+
+---
+
+<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
+  <span class="text-with-link">
+  <span class="text">References</span>
+  <a class="anchor-link" href="#ref" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
 </div>
-  <div style="flex: 1; text-align: center;">
-    <img src="../images/brainswipes.png" style="max-width:100%; height:auto; display:block; margin:0 auto;">
-    <p style="font-size: 0.8em; margin-top: 5px; line-height: 1.1; max-width:80%; margin-left:auto; margin-right:auto; text-align:justify;">
-      <i>Example quality assessment of surface delineation on BrainSwipes platform (displaying brain in axial plane at level of basal ganglia/putamen).</i>
-    </p>
-  </div>
-</div>
-
-
-<!-- 
-### References
+<div class="collapsible-content">
 <div class="references">
     <p>Dean III, D. C., Tisdall, M. D., Wisnowski, J. L., Feczko, E., Gagoski, B., Alexander, A. L., ... &amp; HBCD MRI Working Group. (2024). Quantifying brain development in the HEALthy Brain and Child Development (HBCD) Study: The magnetic resonance imaging and spectroscopy protocol. <em>Developmental Cognitive Neuroscience</em>, 70, 101452. <a href="https://doi.org/10.1016/j.dcn.2024.101452">https://doi.org/10.1016/j.dcn.2024.101452</a></p>
     <p>Gard, A. M., Hyde, L. W., Heeringa, S. G., West, B. T., & Mitchell, C. (2023). Why weight? Analytic approaches for large-scale population neuroscience data. Developmental Cognitive Neuroscience, 59, 101196. <a href="https://doi.org/10.1016/j.dcn.2023.101196">https://doi.org/10.1016/j.dcn.2023.101196</a></p>
     <p>Hagler, D. J., Jr, Ahmadi, M. E., Kuperman, J., Holland, D., McDonald, C. R., Halgren, E., &amp; Dale, A. M. (2009). Automated white-matter tractography using a probabilistic diffusion tensor atlas: Application to temporal lobe epilepsy. Human Brain Mapping, 30(5), 1535–1547. <a href="https://doi.org/10.1002/hbm.20619">https://doi.org/10.1002/hbm.20619</a></p>
     <p>Power, J. D., Barnes, K. A., Snyder, A. Z., Schlaggar, B. L., &amp; Petersen, S. E. (2012). Spurious but systematic correlations in functional connectivity MRI networks arise from subject motion. NeuroImage, 59(3), 2142–2154. <a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">https://doi.org/10.1016/j.neuroimage.2011.10.018</a></p>
     <p>Triantafyllou, C., Hoge, R. D., Krueger, G., Wiggins, C. J., Potthast, A., Wiggins, G. C., &amp; Wald, L. L. (2005). Comparison of physiological noise at 1.5 T, 3 T and 7 T and optimization of fMRI acquisition parameters. NeuroImage, 26(1), 243–250. <a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">https://doi.org/10.1016/j.neuroimage.2005.01.007</a></p>
-</div> -->
+</div>
+</div>
