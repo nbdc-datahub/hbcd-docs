@@ -142,7 +142,7 @@ hbcd/
 </tr>
 <tr>
   <td><code>freesurfer/</code> & <code>mcribs/</code></td>
-  <td><a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">FreeSurfer & M-CRIB-S</a></td>
+  <td><a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer" target="_blank">FreeSurfer & M-CRIB-S</a></td>
 </tr>
 <tr>
   <td><code>xcp_d/</code></td>

@@ -713,7 +713,7 @@
 <tr>
     <td rowspan="2">Structural+Functional MRI</td>
     <td rowspan="2"></td>
-  <td><a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> & <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">FreeSurfer & M-CRIB-S</a></td>
+  <td><a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> & <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer" target="_blank">FreeSurfer & M-CRIB-S</a></td>
   <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
 </tr>
 <tr>

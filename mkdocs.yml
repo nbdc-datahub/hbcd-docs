@@ -148,14 +148,13 @@ nav:
             - EEG Task Details: instruments/eeg/tasks.md
         - Magnetic Resonance Imaging:
             - Overview: instruments/mri/index.md
-            - Raw BIDS: instruments/mri/raw-bids.md
-            - MRI Processing & Derivatives Guide: instruments/mri/mri-proc.md
+            - MRI Protocols: instruments/mri/protocols.md
+            - Processed Derivatives: instruments/mri/mri-proc.md
             - Quality Control Procedures: instruments/mri/qc.md
             - MR Exclusion Criteria: instruments/mri/exclusion-criteria.md
             - Pre-Scan Questionnaire: instruments/mri/prescan-questionnaire.md
+            - Structural & Functional MRI: instruments/mri/s-fmri.md
             - Modalites:
-                - Structural MRI: instruments/mri/smri.md
-                - Functional MRI: instruments/mri/fmri.md
                 - Diffusion MRI: instruments/mri/dmri.md
                 - Quantitative MRI: instruments/mri/qmri.md
                 - MRS: instruments/mri/mrs.md 

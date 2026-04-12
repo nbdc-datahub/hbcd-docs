@@ -794,7 +794,7 @@ PATCH RELEASE
   <td>Functional MRI (<a href="mri/fmri" target="_blank">fMRI</a>)</td>
   <td><code>func/</code>, <code>fmap/</code></td>
   <td><a href="../../instruments/mri/fmri/#mriqc" target="_blank">MRIQC</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i><br>
-      <a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> + <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">FreeSurfer / M-CRIB-S</a><br>
+      <a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> + <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer" target="_blank">FreeSurfer / M-CRIB-S</a><br>
       <a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
 </tr>
 <tr>
@@ -978,4 +978,6 @@ LUCI NOTE: PATCH RELEASE
 </tbody>
 </table>
 </div>
+
+
 

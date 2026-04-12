@@ -255,7 +255,7 @@
 </div>
 <div class="notification-collapsible-content">
 <p>FreeSurfer outputs, generated as part of Infant-fMRIPrep pipeline processing, are included in the data release within the <code>freesurfer/</code> folder of the derivatives. However, note that an alternative surface reconstruction workflow optimized for neonates, M-CRIB-S, is used in place of FreeSurfer for processing visit V02 data. The V02 FreeSurfer files are therefore derived from the M-CRIB-S outputs, remapped into FreeSurfer-compatible format.<br>
-See <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> for details.</p>
+See <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> for details.</p>
 </div>
 
 <div id="faq-raw" class="notification-banner" onclick="toggleCollapse(this)">

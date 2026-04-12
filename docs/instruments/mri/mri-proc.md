@@ -20,7 +20,7 @@ Files are selected for processing based on pipeline-specific criteria detailed u
 - Motion score below a defined threshold (`QU_Motion` ≤ 2 for the current release)
 - If multiple scans are present for a given modality (T1w/T2w), the scan with the highest QC metrics is used
 
-Requirements around the presence of a T1w vs T2w are pipeline-specific. For all pipelines, both T1w and T2w are used if available. Processing was still executed with only a single modality present as well, with certain requirements depending on the surface reconstruction method utilized within Infant fMRIPrep ([see details](#m-crib-s-freesurfer-surface-reconstruction-methods)):
+Requirements around the presence of a T1w vs T2w are pipeline-specific. For all pipelines, both T1w and T2w are used if available. Processing was still executed with only a single modality present as well, with certain requirements depending on the surface reconstruction method utilized within Infant fMRIPrep ([see details](#m-crib-s-freesurfer)):
 
  - M-CRIB-S (T2w-based): requires T2w
  - Infant FreeSurfer (T1w-based): requires both T1w and T2w
@@ -153,11 +153,12 @@ hbcd/
 </pre>
 </div>
 
-## M-CRIB-S & FreeSurfer Surface Reconstruction Methods
+## M-CRIB-S & FreeSurfer
 
-**Infant fMRIPrep derivatives include a hash ID that encodes the surface reconstruction workflow used for a given dataset.** For HBCD data, two Infant fMRIPrep surface reconstruction workflows are supported, each associated with a distinct hash ID.
+M-CRIB-S & FreeSurfer are alternative surface reconstruction methods supported by Infant fMRIPrep, optimized for different age ranges (*[see details above](#nibabies)*). Infant fMRIPrep and XCP-D derivative folder/filenames include unique hash IDs to indicate which of these methods was used for processing.
 
-<div class="notification-banner static-banner">
+
+<!-- <div class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">Derivative Folders with Hash IDs</span>
 </div>
@@ -165,9 +166,9 @@ hbcd/
 <p>Infant fMRIPrep and XCP-D can append a unique hash ID to derivative folder names and filenames to indicate the processing parameters used (e.g., via the <a href="https://nibabies.readthedocs.io/en/latest/usage.html#nibabies.cli.parser-_build_parser-other-options"><code>--output-layout multiverse</code></a> option).</p>
 <p>For HBCD data, Infant fMRIPrep derivatives include one of two hash IDs corresponding to the surface reconstruction workflow used. XCP-D derivatives include an additional hash ID, which is constant across all data because the XCP-D configuration does not vary.</p>
 </div>
-<p></p>
+<p></p> -->
 
-Infant fMRIPrep supports two infant-specific surface reconstruction workflows (*[see details above](#nibabies)*). The workflow used depends on visit and age, and is reflected in the derivative hash ID:
+ 
 
 <table class="table-no-vertical-lines">
 <thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Visits <i>(Age Range in Months)</i></th> </tr> </thead>
@@ -463,6 +464,68 @@ hbcd/
 </pre>
 </div>
 
+## Other
+
+<div id="mriqc" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">MRIQC (<code>mriqc/</code>)</span>
+  <a class="anchor-link" href="#mriqc" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><a href="https://mriqc.readthedocs.io/en/latest/about.html">MRIQC</a> extracts image quality metrics (IQMs) for T1w, T2w, and BOLD run and generates visual <code>.html</code> reports.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
+    |__ mriqc/
+        |__ sub-<span class="label">{ID}</span>/
+        |   |__ ses-<span class="label">{V0X}</span>/
+        |       |__ anat/
+        |       |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T1w.json
+        |       |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.json
+        |       |
+        |       |__ func/
+        |           |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_bold.json
+        |        
+        |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T1w.html
+        |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_T2w.html
+        |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_bold.html
+</pre>
+</div>
+
+<div id="bme-x" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">BME-X (<code>bme_x/</code>)</span>
+  <a class="anchor-link" href="#bme-x" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>The Brain MRI Enhancement foundation (<a href="https://brain-mri-enhancement.readthedocs.io/en/latest/#outputs">BME-X</a>) model pipeline performs motion correction, resolution enhancement, denoising, and harmonization of MR images. Derivatives include enhanced T1w/T2w images (head: <code>desc-preproc</code> and brain: <code>desc-enhanced</code>) and associated brainmasks.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
+<pre class="folder-tree">
+hbcd/
+|__ derivatives/ 
+    |__ bme_x/
+        |__ sub-<span class="label">{ID}</span>/
+            |__ ses-<span class="label">{V0X}</span>/
+                |__ anat/
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_desc-enhanced_<span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_desc-preproc_<span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-brain_mask.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_run-<span class="label">{X}</span>_<span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
+</pre>
+</div>
+
+
 ## MRI Derivatives Quick Start Guide
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
@@ -477,7 +540,7 @@ hbcd/
 </div>
 <div class="warning-collapsible-content">
 <p><b>Summary</b><br>
-Data acquired at visit V02 (from neonates/0-1 months old) was processed through Infant fMRIPrep via two separate surface reconstruction workflows - Infant FreeSurfer and M-CRIB-S (see <a href="#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> above). Though Infant FreeSurfer outputs are included in the release, preliminary reviews and QC results made it clear that M-CRIB-S produced much higher quality outputs compared to Infant FreeSurfer at the neonatal age range. <b>We therefore strongly recommend using V02 data processed with M-CRIB-S instead for all analyses with V02 data.</b>. The following section outlines the reasoning for this.</p>
+Data acquired at visit V02 (from neonates/0-1 months old) was processed through Infant fMRIPrep via two separate surface reconstruction workflows - Infant FreeSurfer and M-CRIB-S (see <a href="#m-crib-s-freesurfer">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> above). Though Infant FreeSurfer outputs are included in the release, preliminary reviews and QC results made it clear that M-CRIB-S produced much higher quality outputs compared to Infant FreeSurfer at the neonatal age range. <b>We therefore strongly recommend using V02 data processed with M-CRIB-S instead for all analyses with V02 data.</b>. The following section outlines the reasoning for this.</p>
 
 <p><b>Neonatal Data Processing</b><br>
 </b> Expert visual review as well as preliminary BrainSwipes QC results indicate that V02 data processed with Infant FreeSurfer generally yield lower quality surface reconstructions. Reasons for this include:</p> 
