@@ -1,6 +1,6 @@
 # Diffusion MRI (dMRI)
 
-**Diffusion-Weighted Imaging (DWI)** may be used to estimate multiple models of diffusion behavior in the central nervous system. 
+**Diffusion-Weighted Imaging (DWI)** measures the diffusion of water molecules in tissue and is used to model white matter microstructure and structural connectivity in the central nervous system.
 
 ## DWI Acquisition
 
@@ -13,257 +13,196 @@ Full protocols, sequence installation, and operation instructions are available 
 
 Diffusion MRI data are preprocessed using **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs motion and distortion correction, MP-PCA denoising, co-registration to T1w images, spatial normalization (ANTs), and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5), [Cieslak et al. 2025](https://doi.org/10.1101/2025.11.10.687672)). Preprocessed outputs are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which runs curated reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. 
 
-
 <table class="table-no-vertical-lines"> 
 <thead> <th>Pipeline</th> <th>Folder</th> <th>Description</th> </thead> 
 <tbody> 
-<tr> <td><b>QSIPrep</b></td> <td><code>qsiprep/</code></td> <td>Preprocessed diffusion data, transforms, QC metrics, and reports</td> </tr> 
+<tr> <td><b>QSIPrep</b></td> <td><code>qsiprep/</code></td> <td>Preprocessed diffusion data, transforms, QC metrics & reports</td> </tr> 
 <tr> <td><b>QSIRecon</b></td> <td><code>qsirecon/</code></td> <td><a href="https://qsirecon.readthedocs.io/">QSIRecon</a> workflow logs and configuration files</td> </tr> 
 <tr> <td><b>QSIRecon-DSIStudio</b></td> <td><code>qsirecon-DSIStudio/</code></td> <td><a href="https://dsi-studio.labsolver.org/">DSI Studio</a> DTI reconstruction & tractography</td> </tr>
 <tr> <td><b>QSIRecon-DIPYDKI</b></td> <td><code>qsirecon-DIPYDKI/</code></td> <td><a href="https://dipy.org/">DIPY</a> Diffusion kurtosis (DKI) and tensor-derived maps</td> </tr> 
 <tr> 
-<td><b>QSIRecon-TORTOISE</b></td>
-<td><code>qsirecon-TORTOISE_model-{MAPMRI|tensor}/</code></td>
-<td><a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> MAP-MRI and tensor fits and scalar maps</td> </tr> 
+<td rowspan="2"><b>QSIRecon-TORTOISE</b></td>
+<td><code>qsirecon-TORTOISE_model-MAPMRI/</code></td>
+<td><a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> MAP-MRI and scalar maps</td> </tr> 
+<tr>
+<td><code>qsirecon-TORTOISE_model-tensor/</code></td>
+<td><a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> Tensor fits and scalar maps</td> </tr> 
 </tbody> </table> 
 
 <p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 
 <div id="qsiprep" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-  <span class="text">QSIPrep Derivatives</span>
-  <a class="anchor-link" href="#qsiprep" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>  <span class="text-with-link">
+  <span class="text">QSIPrep Derivatives</span>  <a class="anchor-link" href="#qsiprep" title="Copy link">
+  <i class="fa-solid fa-link"></i>  </a>  </span>  <span class="arrow">▸</span></div>
 <div class="table-collapsible-content">
-<pre class="folder-tree">
+<pre class="folder-tree" style="font-size: 11px;">
 hbcd/
-|__ derivatives/ 
-    |__ qsiprep/
-        |__ sub-<span class="label">{ID}</span>/
-            |__ log/
-            |__ ses-<span class="label">{V0X}</span>/
-                |__ anat/
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_from-<span class="placeholder">&lt;ACPC_to-anat|anat_to-ACPC&gt;</span>_mode-image_xfm.mat
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_from-<span class="placeholder">&lt;ACPC_to-MNIInfant+1|MNIInfant+1_to-ACPC&gt;</span>_mode-image_xfm.h5
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_from-orig_to-anat_mode-image_xfm.txt
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-<span class="placeholder">&lt;aseg_dseg|brain_mask&gt;</span>.nii.gz
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_dseg.nii.gz
-                |
-                |__ dwi/
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-confounds_timeseries.tsv
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_desc-desc-<span class="placeholder">&lt;image|pepolar&gt;</span>_qc.tsv
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-brain_mask.nii.gz
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_dwi.<span class="placeholder">&lt;b|b_table.txt|bval|bvec&gt;</span>
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-preproc_dwi.nii.gz <span class="hashtag">(+JSON)</span>
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_desc-slice_qc.json
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_dwiref.nii.gz
-                |   |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-eddy_stat-cnr_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
-                |
-                |__ figures/
-                |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
+└── derivatives/
+    └── qsiprep/
+        └── sub-{ID}/
+            ├── log/
+            └── ses-{V0X}/
+                ├── anat/
+                │   <span class="hashtag"># Transforms</span>
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>from-<span class="placeholder">&lt;ACPC_to-anat|anat_to-ACPC&gt;</span>_mode-image_xfm.mat
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>from-<span class="placeholder">&lt;ACPC_to-MNIInfant+1|MNIInfant+1_to-ACPC&gt;</span>_mode-image_xfm.h5
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>from-orig_to-anat_mode-image_xfm.txt
+                │
+                │   <span class="hashtag"># Structural outputs (ACPC space)</span>
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-<span class="placeholder">&lt;aseg_dseg|brain_mask&gt;</span>.nii.gz
+                │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_dseg.nii.gz
+                │
+                ├── dwi/
+                │   <span class="hashtag"># QC & confounds</span>
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-confounds_timeseries.tsv
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-<span class="placeholder">&lt;image|pepolar&gt;</span>_qc.tsv
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-slice_qc.json
+                │
+                │   <span class="hashtag"># Preprocessed data</span>
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-preproc_dwi.nii.gz <span class="hashtag">(+JSON)</span>
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-preproc_dwi.<span class="placeholder">&lt;bval|bvec|b|b_table.txt&gt;</span>
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_dwiref.nii.gz
+                │
+                │   <span class="hashtag"># Masks & maps</span>
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-brain_mask.nii.gz
+                │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-eddy_stat-cnr_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+                │
+                ├── figures/
+                └── <span class="muted">sub-{ID}_ses-{V0X}_</span>.html
 </pre>
 </div>
 
 <div id="qsirecon" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-  <span class="text">QSIRecon Derivatives</span>
-  <a class="anchor-link" href="#qsirecon" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span><span class="text-with-link">
+  <span class="text">QSIRecon Derivatives</span><a class="anchor-link" href="#qsirecon" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<pre class="folder-tree">
+<p><a href="https://qsirecon.readthedocs.io/">QSIRecon</a> outputs are organized into separate derivative folders by reconstruction workflow. 
+The <code>qsirecon/</code> directory stores workflow metadata and logs. <i><b>Below:</b> Each folder corresponds to a reconstruction method; outputs are organized by session and modality (dwi/ + figures). For brevity, logs, figures, and JSON sidecars filenames are not shown.</i></p>
+<pre class="folder-tree" style="font-size: 11px;">
 hbcd/
-|__ derivatives/ 
-    |__ qsirecon/
-        |__ sub-<span class="label">{ID}</span>
-            |__ log/
-                |__ <span class="label">{YYYYMMDD-HHMMSS_UUID}</span>/
-                    |__ qsirecon.toml
-                    |__ recon_spec.yaml
+└── derivatives/
+    ├── qsirecon/
+    │   └── <span class="muted">sub-{ID}/</span>
+    │       └── log/*
+    <!-- │           └── <span class="label">{YYYYMMDD-HHMMSS_UUID}</span>/
+    │               ├── qsirecon.toml
+    │               └── recon_spec.yaml -->
+  <span class="hashtag">DSI Studio</span>
+    ├── qsirecon-DSIStudio/
+    │   └── <span class="muted">sub-{ID}/</span>
+    │       └── <span class="muted">ses-{V0X}/</span>
+    │           ├── dwi/
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_<span class="placeholder">&lt;scalar|tdi&gt;</span>stats.tsv
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_bundle-<span class="placeholder">&lt;BUNDLE&gt;</span>_streamlines.tck.gz
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_bundlestats.csv
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_dwimap.fib.gz
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_dwimap.fib.gz.icbm152_adult.map.gz
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_param-<span class="placeholder">&lt;gfa|iso|qa&gt;</span>_dwimap.nii.gz
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-rdi_param-<span class="placeholder">&lt;rd1|rd2&gt;</span>_dwimap.nii.gz
+    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;DTI-PARAM&gt;</span>_dwimap.nii.gz
+    │           ├── figures/*
+    │           └── <span class="muted">sub-{ID}_ses-{V0X}_</span>.html
+
+  <span class="hashtag">DIPY-DKI</span>
+    ├── qsirecon-DIPYDKI/
+    │   └── <span class="muted">sub-{ID}/</span>
+    │       └── <span class="muted">ses-{V0X}/</span>
+    │           ├── dwi/
+    │           │   # DIPY DKI
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_scalarstats.tsv
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">&lt;DKI-PARAM&gt;</span>_dwimap.nii.gz
+    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz
+    │           ├── figures/*
+    │           └── <span class="muted">sub-{ID}_ses-{V0X}_</span>.html
+    
+  <span class="hashtag">TORTOISE MAP-MRI</span>
+    ├── qsirecon-TORTOISE_model-MAPMRI/
+    │   └── <span class="muted">sub-{ID}/</span>
+    │       └── <span class="muted">ses-{V0X}/</span>
+    │           ├── dwi/
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_scalarstats.tsv
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="placeholder">&lt;MAPMRI&gt;</span>_dwimap.nii.gz
+    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;TENSOR&gt;</span>_dwimap.nii.gz
+    │           ├── figures/*
+    │           └── <span class="muted">sub-{ID}_ses-{V0X}_</span>.html
+    
+  <span class="hashtag">TORTOISE Tensor</span>
+    └── qsirecon-TORTOISE_model-tensor/
+        └── <span class="muted">sub-{ID}/</span>
+            └── <span class="muted">ses-{V0X}/</span>
+                └── dwi/
+                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_scalarstats.tsv
+                    └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-MNIInfant+1_model-tensor_param-<span class="placeholder">&lt;TENSOR&gt;</span>_dwimap.nii.gz
+
+<span class="hashtag"># Label Values Legend</span>
+<span class="placeholder">DTI-PARAM</span>: ad, fa, ha, md, rd, txx, txy, txz, tyy, tyz, tzz
+<span class="placeholder">DKI-PARAM</span>: ad, ak, kfa, md, mk, mkt, rd, rk
+<span class="placeholder">MAPMRI</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
+<span class="placeholder">TENSOR</span>: ad, am, fa, li, rd
+
+<span class="hashtag"># DSI Studio &lt;BUNDLE&gt; groups:</span> → See <a href="#bundle">full DSIStudio bundle label list</a>
+Association<span class="placeholder">&lt;LABEL&gt;</span>, Cerebellum<span class="placeholder">&lt;LABEL&gt;</span>, Commissure<span class="placeholder">&lt;LABEL&gt;</span>, ProjectionBasalGanglia<span class="placeholder">&lt;LABEL&gt;</span>, ProjectionBrainstem<span class="placeholder">&lt;LABEL&gt;</span>
 </pre>  
 </div>
 
-<div id="qsirecon-DSIStudio" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+<div id="bundle" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-info"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon-DSIStudio Derivatives</span>
-  <a class="anchor-link" href="#qsirecon-DSIStudio" title="Copy link">
+  <span class="text">Label Values Legend Extended: DSIStudio <code>BUNDLE</code> Values</span>
+  <a class="anchor-link" href="#bundle" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<pre class="folder-tree" style="font-size: 11px;">
-hbcd/
-|_ derivatives/ 
-   |_ qsirecon-DSIStudio/
-      |_ sub-<span class="label">{ID}</span>/
-         |_ ses-<span class="label">{V0X}</span>/
-            |_ dwi/
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_<span class="placeholder">&lt;scalar|tdi&gt;</span>stats.tsv
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-Association<span class="placeholder">&lt;ASSOC&gt;</span>_streamlines.tck.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-Cerebellum<span class="placeholder">&lt;CEREB&gt;</span>_streamlines.tck.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-CommissureAnteriorCommissure_streamlines.tck.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-CommissureCorpusCallosum_streamlines.tck.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-ProjectionBasalGanglia<span class="placeholder">&lt;BG&gt;</span>_streamlines.tck.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundle-ProjectionBrainstem<span class="placeholder">&lt;BSTEM&gt;</span>_streamlines.tck.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_bundlestats.csv
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_dwimap.fib.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_dwimap.fib.gz.icbm152_adult.map.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-<span class="placeholder">&lt;gfa|iso&gt;</span>_dwimap.nii.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_model-gqi_param-qa_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-rdi_param-<span class="placeholder">&lt;rd1|rd2&gt;</span>_dwimap.nii.gz
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;PARAM&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-gqi_param-<span class="placeholder">&lt;gfa|iso|qa&gt;</span>_dwimap.nii.gz
-            |
-            |_ figures/
-            |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
-</pre>
 <table class="compact-table-no-vertical-lines">
-<thead style="background-color: #282c34 !important;">
-<tr>
-<th colspan="2" style="background-color: #282c34 !important; color: #b0d619;"># Label Values Legend</th>
-</tr>
-</thead>
+<tr><thead><th>&lt;BUNDLE&gt; Values</th><th>Nested Bundle &lt;LABEL&gt; Values</th></thead><tr>
 <tbody>
 <tr>
-<td colspan="2" style="word-wrap: break-word; white-space: normal; font-size: 1.0em;"><i>Note: All anatomical labels are left/right (L/R) hemisphere–specific unless noted (e.g. CingulumL and CingulumR).<br>
-Entries marked <b>(no L/R)</b> are midline or bilateral structures; those marked <b>(lr/rl)</b> are crossing tracts.</i></td>
+<td><strong style="color: #00a298ff;">Association&lt;LABEL&gt;</strong></td>
+<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>Cingulum{L/R}</span><span>ExtremeCapsule{L/R}</span><span>FrontalAslantTract{L/R}</span><span>ParietalAslantTract{L/R}</span><span>HippocampusAlveus{L/R}</span><span>ArcuateFasciculus{L/R}</span><span>AssociationUncinateFasciculus{L/R}</span><span>InferiorFrontoOccipitalFasciculus{L/R}</span><span>InferiorLongitudinalFasciculus{L/R}</span><span>MiddleLongitudinalFasciculus{L/R}</span><span>SuperiorLongitudinalFasciculus{L/R}</span><span>VerticalOccipitalFasciculus{L/R}</span></div></td>
 </tr>
 <tr>
-<td><strong style="color: #00a298ff;">ASSOC</strong></td>
-<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>Cingulum</span><span>ExtremeCapsule</span><span>FrontalAslantTract</span><span>ParietalAslantTract</span><span>HippocampusAlveus</span><span>ArcuateFasciculus</span><span>AssociationUncinateFasciculus</span><span>InferiorFrontoOccipitalFasciculus</span><span>InferiorLongitudinalFasciculus</span><span>MiddleLongitudinalFasciculus</span><span>SuperiorLongitudinalFasciculus</span><span>VerticalOccipitalFasciculus</span></div></td>
-</tr>
-<tr>
-<td style="color: #00a298ff;"><strong>CEREB</strong></td>
+<td style="color: #00a298ff;"><strong>Cerebellum&lt;LABEL&gt;</strong></td>
 <td><div style="display: flex; flex-wrap: wrap; gap: 8px;">
-<span>Cerebellum</span><span>InferiorCerebellarPeduncle</span><span>MiddleCerebellarPeduncle <b><i>(no L/R)</i></b></span><span>SuperiorCerebellarPeduncle <b><i>(no L/R)</i></b></span><span>Vermis <b><i>(no L/R)</i></b></span></div></td>
+<span>Cerebellum{L/R}</span><span>InferiorCerebellarPeduncle{L/R}</span><span>MiddleCerebellarPeduncle</span><span>SuperiorCerebellarPeduncle</span><span>Vermis</span></div></td>
 </tr>
 <tr>
-<td><strong style="color: #00a298ff;">BG</strong></td>
-<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>AcousticRadiation</span><span>OpticRadiation</span><span>ThalamicRadiation</span><span>AnsaLenticularis</span><span>FasciculusLenticularis</span><span>AnsaSubthalamica</span><span>FasciculusSubthalamicus</span><span>CorticostriatalTract</span><span>Fornix</span></div></td>
+<td><strong style="color: #00a298ff;">Commissure&lt;LABEL&gt;</strong></td>
+<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>AnteriorCommissure</span><span>CorpusCallosum</span></div></td>
 </tr>
 <tr>
-<td><strong style="color: #00a298ff;">BSTEM</strong></td>
-<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>CorticobulbarTract</span><span>CorticopontineTract</span><span>CorticospinalTract</span><span>ReticularTract</span><span>DentatorubrothalamicTract <b><i>(lr/rl)</i></b></span><span>NonDecussatingDentatorubrothalamicTract</span><span>MedialForebrainBundle</span><span>MedialLemniscus</span></div></td>
+<td><strong style="color: #00a298ff;">ProjectionBasalGanglia&lt;LABEL&gt;</strong></td>
+<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>AcousticRadiation{L/R}</span><span>OpticRadiation{L/R}</span><span>ThalamicRadiation{L/R}</span><span>AnsaLenticularis{L/R}</span><span>FasciculusLenticularis{L/R}</span><span>AnsaSubthalamic{L/R}</span><span>FasciculusSubthalamicus{L/R}</span><span>CorticostriatalTract{L/R}</span><span>Fornix{L/R}</span></div></td>
 </tr>
 <tr>
-<td style="color: #00a298ff;"><strong>PARAM</strong></td>
-<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>ad</span><span>fa</span><span>ha</span><span>md</span><span>rd</span><span>txx</span><span>txy</span><span>txz</span><span>tyy</span><span>tyz</span><span>tzz</span></div></td>
+<td><strong style="color: #00a298ff;">ProjectionBrainstem&lt;LABEL&gt;</strong></td>
+<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>CorticobulbarTract{L/R}</span><span>CorticopontineTract{L/R}</span><span>CorticospinalTract{L/R}</span><span>ReticularTract{L/R}</span><span>DentatorubrothalamicTract{lr/rl}</span><span>NonDecussatingDentatorubrothalamicTract{L/R}</span><span>MedialForebrainBundle{L/R}</span><span>MedialLemniscus{L/R}</span></div></td>
 </tr>
 </tbody>
 </table>
-</div>
-
-<div id="qsirecon-DIPYDKI" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-  <span class="text">QSIRecon-DIPYDKI Derivatives</span>
-  <a class="anchor-link" href="#qsirecon-DIPYDKI" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<pre class="folder-tree" style="font-size: 11px;">
-hbcd/
-|_ derivatives/ 
-   |_ qsirecon-DIPYDKI/
-      |_ sub-<span class="label">{ID}</span>/
-         |_ ses-<span class="label">{V0X}</span>/
-            |_ dwi/
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">&lt;PARAM&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
-            |  |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
-            |
-            |_ figures/
-            |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
-
-<span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">PARAM</span>: ad, ak, kfa, md, mk, mkt, rd, rk
-</pre>
-</div>
-
-<div id="qsirecon-TORTOISE" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-  <span class="text">QSIRecon-TORTOISE MAP-MRI & Tensor Derivatives</span>
-  <a class="anchor-link" href="#qsirecon-TORTOISE" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<pre class="folder-tree" style="font-size: 11px;">
-hbcd/
-|_ derivatives/ 
-   |_ qsirecon-TORTOISE_model-MAPMRI/
-   |  |_ sub-<span class="label">{ID}</span>/
-   |     |_ ses-<span class="label">{V0X}</span>/
-   |        |_ dwi/
-   |        | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-   |        | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="placeholder">&lt;MAPMRI&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
-   |        | |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;TENSOR&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
-   |        |
-   |        |_ figures/
-   |        |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>.html
-   |
-   |_ qsirecon-TORTOISE_model-tensor/
-      |_ sub-<span class="label">{ID}</span>/
-         |_ ses-<span class="label">{V0X}</span>/
-            |_ dwi/
-               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-               |_ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_space-MNIInfant+1_model-tensor_param-<span class="placeholder">&lt;TENSOR&gt;</span>_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
-
-<span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">MAPMRI</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
-<span class="placeholder">TENSOR</span>: ad, am, fa, li, rd
-</pre>
 </div>
 
 ## Derivatives Quick Start Guide
 
 The diffusion encoding provided via the multiple QSIRecon derivative folders enable the estimation of multiple diffusion MRI models to create the derived data, including:
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-    <th>Model</th>
-    <th>Description</th>
-    <th>Derivatives</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td><span class="tooltip">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Models diffusion with a 3D Gaussian distribution of water displacements. Key outputs include Fractional Anisotropy (FA: anisotropic diffusion, typically higher in white matter bundles with dense, parallel fibers) and Mean Diffusivity (MD: the directionally averaged apparent diffusion coefficient, inversely related to cellular membrane density) (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser 1994</a>).</td>
-  <td><a href="#qsirecon-DSIStudio">qsirecon-<br>DSIStudio</a></td>
-</tr>
-<tr>
-  <td><span class="tooltip">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Extends DTI to capture non-Gaussian diffusion. Main metric: MK (mean kurtosis), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).</td>
-  <td><a href="#qsirecon-DIPYDKI">qsirecon-<br>DIPYDKI</a></td>
-</tr>
-<tr>
-  <td><span class="tooltip">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator MRI</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution, enabling quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>). See <a href="#mapmri-metrics">MAP-MRI metrics</a>.</td>
-  <td><a href="#qsirecon-TORTOISE">qsirecon-<br>TORTOISE_model-<br>MAPMRI</a></td>
-</tr>
-</tbody>
-</table>
+#### Diffusion Tensor Imaging (DTI)        
+DSI Studio models diffusion with a 3D Gaussian distribution of water displacements. Key outputs include fractional anisotropy (FA), i.e. anisotropic diffusion (typically higher in white matter bundles with dense, parallel fibers) and mean diffusivity (MD), i.e. directionally averaged apparent diffusion coefficient (inversely related to cellular membrane density) (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser 1994</a>).     
+<i class="fas fa-folder-tree header-icon"></i>**Derivatives**: <a href="#qsirecon">qsirecon-DSIStudio/</a>   
+
+#### Diffusion Kurtosis Imaging (DKI)
+DKI extends DTI to capture non-Gaussian diffusion. The main metric is mean kurtosis (MK), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).      
+<i class="fas fa-folder-tree header-icon"></i>**Derivatives**: <a href="#qsirecon">qsirecon-DIPYDKI/</a>                  
+
+#### Mean Apparent Propagator MRI (MAP-MRI)
+MAP-MRI Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution. This enables quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>).     
+<i class="fas fa-folder-tree header-icon"></i>**Derivatives**: <a href="#qsirecon">qsirecon-TORTOISE_model-MAPMRI/</a>                  
 
 <div id="mapmri-metrics" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-atom"></i></span>
@@ -276,33 +215,23 @@ The diffusion encoding provided via the multiple QSIRecon derivative folders ena
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-    <th>Metric</th>
-    <th>Description</th>
-  </tr>
-</thead>
+<table class="compact-table-no-vertical-lines">
+<thead>  <tr>    <th>Metric</th>    <th>Description</th>  </tr></thead>
 <tbody>
-<tr>
-  <td><span class="tooltip">PA<span class="tooltiptext">Propagator Anisotropy</span></span></td>
+<tr><td>Propagator Anisotropy (PA)</td>
   <td style="word-wrap: break-word; white-space: normal;">Quantifies anisotropy by computing the dissimilarity of the full MAP-MRI propagator from its fully isotropic counterpart. More accurate than FA.</td>
 </tr>
-<tr>
-  <td><span class="tooltip">NG<span class="tooltiptext">Non-Gaussianity</span></span></td>
+<tr><td>Non-Gaussianity (NG)</td>
   <td style="word-wrap: break-word; white-space: normal;">Quantifies deviation from Gaussian diffusion. <strong>NG</strong> measures overall deviation, <strong>NGpar</strong> along the primary diffusion axis (fiber direction in white matter), and <strong>NGperp</strong> perpendicular to it (often related to restriction).</td>
 </tr>
-<tr>
-  <td><span class="tooltip">RTOP<span class="tooltiptext">Return To Origin Probability</span></span></td>
+<tr><td>Return To Origin Probability (RTOP)</td>
   <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to its starting point. Low in unrestricted diffusion (large cells), high in restricted diffusion (small or impermeable cells). Inversely related to pore volume.</td>
 </tr>
-<tr>
-  <td><span class="tooltip">RTAP<span class="tooltiptext">Return To Axis Probability</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to the principal diffusion axis (primary eigenvector).</td>
+<tr><td>Return To Axis Probability (RTAP)</td>
+ <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to the principal diffusion axis (primary eigenvector).</td>
 </tr>
-<tr>
-  <td><span class="tooltip">RTPP<span class="tooltiptext">Return To Plane Probability</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Reciprocal of mean cylinder length and inversely proportional to axial diffusivity; Related to diffusion taking place within coherently oriented cylinders.</td>
+<tr><td>Return To Plane Probability (RTPP)</td>
+<td style="word-wrap: break-word; white-space: normal;">Reciprocal of mean cylinder length and inversely proportional to axial diffusivity; Related to diffusion taking place within coherently oriented cylinders.</td>
 </tr>
 </tbody>
 </table>
@@ -319,113 +248,69 @@ The diffusion encoding provided via the multiple QSIRecon derivative folders ena
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b><a href="#qsirecon-DSIStudio">qsirecon-DSIStudio</a></b></p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; table-layout: fixed;">
 <thead>
 <tr>
-<th>Model</th>
+<th>QSIRecon Workflow</th>
+<th>Model (Shells)</th>
 <th>Parameters</th>
 <th>Description</th>
-<th>Shells</th>
 </tr>
 </thead>
 <tbody>
+<!-- DSI Studio -->
 <tr>
-<td rowspan="3"><b>gqi</b></td>
-<td>gfa</td>
-<td>Generalized fractional anisotropy</td>
-<td rowspan="3">Full</td>
+<td rowspan="8"><b>DSI Studio</b></td>
+<td rowspan="3"><b>gqi</b><br>(Full shells)</td>
+<td>gfa</td><td>Generalized fractional anisotropy</td>
 </tr>
-<tr>
-<td>iso</td>
-<td>Isotropic diffusion</td>
-</tr>
-<tr>
-<td>qa</td>
-<td>Quantitative anisotropy</td>
-</tr>
-<tr>
-<td rowspan="5"><b>tensor</b></td>
-<td>fa, md, rd, ad</td>
-<td>Standard diffusion metrics (fractional, mean, radial, axial)</td>
-<td rowspan="5">Inner</td>
-</tr>
-<tr>
-<td>rd1, rd2</td>
-<td>Second and third eigenvalues (λ₂, λ₃)</td>
-</tr>
-<tr>
-<td>ha</td>
-<td>Helix angle</td>
-</tr>
-<tr>
-<td>txx, txy, txz, tyy, tyz, tzz</td>
-<td>Tensor elements</td>
-</tr>
+<tr><td>iso</td><td>Isotropic diffusion component</td></tr>
+<tr><td>qa</td><td>Quantitative anisotropy</td></tr>
 
-</tbody>
-</table>
+<tr>
+<td rowspan="5"><b>tensor</b><br>(Inner shells)</td>
+<td>fa</td><td>Fractional anisotropy</td>
+</tr>
+<tr><td>ad / md / rd</td><td>Axial / Mean / Radial diffusivity</td></tr>
+<tr><td>rd1 / rd2</td><td>Second and third eigenvalues (λ₂ / λ₃)</td></tr>
+<tr><td>ha</td><td>Helix angle</td></tr>
+<tr><td>txx / txy / txz / tyy / tyz / tzz</td><td>Diffusion tensor elements</td></tr>
 
-<!-- 
-<thead>
-    <tr>
-    <th style="text-align: center;"><a href="#qsirecon-DIPYDKI">qsirecon-DIPYDKI</a></th>
-    <th>Model</th>
-    <th>Parameter</th>
-    <th>Description</th>
-    <th>Shells</th>
-    </tr>
-</thead>
-<tbody>
-<tr><td></td><td>dki</td><td>ad</td><td>Axial diffusivity</td><td>Full</td></tr>
-<tr><td></td><td>dki</td><td>ak</td><td>Axial kurtosis</td><td>Full</td></tr>
-<tr><td></td><td>dki</td><td>fa</td><td>Fractional anisotropy</td><td>Full</td></tr>
-<tr><td></td><td>dki</td><td>kfa</td><td>Kurtosis fractional anisotropy</td><td>Full</td></tr>
-<tr><td></td><td>dki</td><td>md</td><td>Mean diffusivity</td><td>Full</td></tr>
-<tr><td></td><td>dki</td><td>mk</td><td>Mean kurtosis</td><td>Full</td></tr>
-<tr><td></td><td>dki</td><td>mkt</td><td>Mean kurtosis tensor</td><td>Full</td></tr>
-<tr><td></td><td>dki</td><td>rd</td><td>Radial diffusivity</td><td>Full</td></tr>
-<tr><td></td><td>dki</td><td>rk</td><td>Radial kurtosis</td><td>Full</td></tr>
-<thead>
-<tr><td colspan="5"></td></tr>
-    <tr>
-    <th style="text-align: center;"><a href="#qsirecon-TORTOISE">qsirecon-TORTOISE_model-MAPMRI</a></th>
-    <th>Model</th>
-    <th>Parameter</th>
-    <th>Description</th>
-    <th>Shells</th>
-    </tr>
-</thead>
+<!-- DIPY DKI -->
 <tr>
-<tr><td></td><td>mapmri</td><td>ng</td><td>Non-Gaussianity</td><td>Full</td></tr>
-<tr><td></td><td>mapmri</td><td>ngpar</td><td>Non-Gaussianity parallel</td><td>Full</td></tr>
-<tr><td></td><td>mapmri</td><td>ngperp</td><td>Non-Gaussianity perpendicular</td><td>Full</td></tr>
-<tr><td></td><td>mapmri</td><td>pa</td><td>Propagator anisotropy</td><td>Full</td></tr>
-<tr><td></td><td>mapmri</td><td>path</td><td>Thresholded propagator anisotropy</td><td>Full</td></tr>
-<tr><td></td><td>mapmri</td><td>rtap</td><td>Return to axis probability</td><td>Full</td></tr>
-<tr><td></td><td>mapmri</td><td>rtop</td><td>Return to origin probability</td><td>Full</td></tr>
-<tr><td></td><td>mapmri</td><td>rtpp</td><td>Return to plane probability</td><td>Full</td></tr>
-<tr><td></td><td>tensor</td><td>ad</td><td>Axial diffusivity</td><td>Inner</td></tr>
-<tr><td></td><td>tensor</td><td>am</td><td>A0 from a tensor fit</td><td>Inner</td></tr>
-<tr><td></td><td>tensor</td><td>fa</td><td>Fractional anisotropy from a tensor fit</td><td>Inner</td></tr>
-<tr><td></td><td>tensor</td><td>li</td><td>Lattice index</td><td>Inner</td></tr>
-<tr><td></td><td>tensor</td><td>rd</td><td>Radial diffusivity from a tensor fit</td><td>Inner</td></tr>
-<thead>
-<tr><td colspan="5"></td></tr>
-    <tr>
-    <th style="text-align: center;"><a href="#qsirecon-TORTOISE">qsirecon-TORTOISE_model-tensor</a></th>
-    <th>Model</th>
-    <th>Parameter</th>
-    <th>Description</th>
-    <th>Shells</th>
-    </tr>
-</thead>
+<td rowspan="4"><b>DIPY DKI</b></td>
+<td rowspan="4"><b>dki</b><br>(Full shells)</td>
+<td>ad / ak</td><td>Axial diffusivity / Axial kurtosis</td>
+</tr>
+<tr><td>fa / kfa</td><td>Fractional anisotropy / Kurtosis FA</td></tr>
+<tr><td>md / mk / mkt</td><td>Mean diffusivity / Mean kurtosis / Mean kurtosis tensor</td></tr>
+<tr><td>rd / rk</td><td>Radial diffusivity / Radial kurtosis</td></tr>
+
+<!-- TORTOISE MAPMRI -->
 <tr>
-<tr><td></td><td>tensor</td><td>ad</td><td>Axial diffusivity</td><td>Full</td></tr>
-<tr><td></td><td>tensor</td><td>am</td><td>A0 from a tensor fit</td><td>Full</td></tr>
-<tr><td></td><td>tensor</td><td>fa</td><td>Fractional anisotropy from a tensor fit</td><td>Full</td></tr>
-<tr><td></td><td>tensor</td><td>li</td><td>Lattice index</td><td>Full</td></tr>
-<tr><td></td><td>tensor</td><td>rd</td><td>Radial diffusivity from a tensor fit</td><td>Full</td></tr> -->
+<td rowspan="7"><b>TORTOISE-<br>MAPMRI</b></td>
+<td rowspan="4"><b>mapmri</b><br>(Full shells)</td>
+<td>ng / ngpar / ngperp</td><td>Non-Gaussianity / Parallel NG / Perpendicular NG</td>
+</tr>
+<tr><td>fa / kfa</td><td>Fractional anisotropy / Kurtosis FA</td></tr>
+<tr><td>pa / path</td><td>Propagator anisotropy / Thresholded PA</td></tr>
+<tr><td>rtap / rtop / rtpp</td><td>Return-to-axis / origin / plane probability</td></tr>
+
+<tr>
+<td rowspan="3"><b>tensor</b><br>(Inner shells)</td>
+<td>ad / rd</td><td>Axial / Radial diffusivity</td>
+</tr>
+<tr><td>am / fa</td><td>A0 (mean signal) / Fractional anisotropy</td></tr>
+<tr><td>li</td><td>Lattice index</td></tr>
+
+<!-- TORTOISE Tensor -->
+<tr>
+<td rowspan="5"><b>TORTOISE-<br>Tensor</b></td>
+<td rowspan="5"><b>tensor</b><br>(Full shells)</td>
+<td>ad / rd</td><td>Axial / Radial diffusivity</td>
+</tr>
+<tr><td>am / fa</td><td>A0 (mean signal) / Fractional anisotropy</td></tr>
+<tr><td>li</td><td>Lattice index</td></tr>
 </tbody>
 </table>
 </div>
@@ -469,3 +354,34 @@ The diffusion encoding provided via the multiple QSIRecon derivative folders ena
     <p>Özarslan E, Koay CG, Shepherd TM, Komlosh ME, İrfanoğlu MO, Pierpaoli C, Basser PJ. (2013). Mean apparent propagator (MAP) MRI: a novel diffusion imaging method for mapping tissue microstructure. <em>Neuroimage</em>, 78:16-32. <a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">10.1016/j.neuroimage.2013.04.016</a></p>
 </div>
 </div>
+
+
+
+
+
+<!-- <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr>
+    <th>Model</th>
+    <th>Description</th>
+    <th>Derivatives</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="tooltip">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Models diffusion with a 3D Gaussian distribution of water displacements. Key outputs include Fractional Anisotropy (FA: anisotropic diffusion, typically higher in white matter bundles with dense, parallel fibers) and Mean Diffusivity (MD: the directionally averaged apparent diffusion coefficient, inversely related to cellular membrane density) (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser 1994</a>).</td>
+  <td><a href="#qsirecon-DSIStudio">qsirecon-<br>DSIStudio</a></td>
+</tr>
+<tr>
+  <td><span class="tooltip">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Extends DTI to capture non-Gaussian diffusion. Main metric: MK (mean kurtosis), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).</td>
+  <td><a href="#qsirecon-DIPYDKI">qsirecon-<br>DIPYDKI</a></td>
+</tr>
+<tr>
+  <td><span class="tooltip">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator MRI</span></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution, enabling quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>). See <a href="#mapmri-metrics">MAP-MRI metrics</a>.</td>
+  <td><a href="#qsirecon-TORTOISE">qsirecon-<br>TORTOISE_model-<br>MAPMRI</a></td>
+</tr>
+</tbody>
+</table> -->

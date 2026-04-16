@@ -180,10 +180,13 @@ Updates to real-time reconstruction are in development to recover affected data.
 
 fMRI measures functional brain activity using the blood oxygen level–dependent (BOLD) signal (see [Acquisition Details](#fmri-acq)). In the HBCD Study, at least **7.5 minutes of low-motion** resting-state fMRI (rs-fMRI) data (FD < 0.3 mm) are acquired per session across runs. Head motion is monitored in real time using [FIRMM](https://firmm.readthedocs.io/), which estimates the amount of usable low-motion data during acquisition (<a href="https://doi.org/10.1016/j.neuroimage.2017.08.025">Dosenbach et al., 2017</a>).
 
+
+## Quality Control Summary Statistics
+
 <div id="fconn" class="static-banner" style="border-left: 5px solid #199bd6;">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
-    <span class="text">QC Report: Impact of Data Quality on Functional Connectivity</span>
+    <span class="text">Impact of Data Quality on Functional Connectivity</span>
     <a class="anchor-link" href="#fconn" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>

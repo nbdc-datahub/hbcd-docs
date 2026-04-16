@@ -168,7 +168,9 @@ pre.helper-code code {
 .folder-tree .subses {
   color: #b5c2ff
 }
-
+.folder-tree .muted {
+   opacity: 0.6;
+}
 
 .gray-text {
   color: #505050;
