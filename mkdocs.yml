@@ -148,15 +148,26 @@ nav:
             - EEG Task Details: instruments/eeg/tasks.md
         - Magnetic Resonance Imaging:
             - Overview: instruments/mri/index.md
-            - MRI Protocols: instruments/mri/protocols.md
             - Quality Control Procedures: instruments/mri/qc.md
-            - Raw BIDS: instruments/mri/rawbids.md
-            - Processed Derivatives: instruments/mri/mri-proc.md
-            - Pre-Scan Questionnaire: instruments/mri/prescan-questionnaire.md
-            - Modalites:
-                - Structural & Functional MRI: instruments/mri/s-fmri.md
-                - Diffusion MRI: instruments/mri/dmri.md
-                - MRS: instruments/mri/mrs.md 
+            - Structural & Functional MRI: instruments/mri/s-fmri.md
+            - Diffusion MRI: instruments/mri/dmri.md
+            - MRS: instruments/mri/mrs.md 
+            # - temp:
+
+            # - MRI Protocols: instruments/mri/protocols.md
+            # - Processed Derivatives: instruments/mri/mri-proc.md
+            # - Pre-Scan Questionnaire: instruments/mri/prescan-questionnaire.md
+        # - Magnetic Resonance Imaging:
+        #     - Overview: instruments/mri/index.md
+        #     - MRI Protocols: instruments/mri/protocols.md
+        #     - MRI Protocols-temp: 
+        #         - Structural & Functional MRI: instruments/mri/s-fmri.md
+        #         - Diffusion MRI: instruments/mri/dmri.md
+        #         - MRS: instruments/mri/mrs.md 
+        #     - Quality Control Procedures: instruments/mri/qc.md
+        #     - Raw BIDS: instruments/mri/rawbids.md
+        #     - Processed Derivatives: instruments/mri/mri-proc.md
+        #     - Pre-Scan Questionnaire: instruments/mri/prescan-questionnaire.md
         - Novel Tech & Wearable Sensors:
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md

@@ -1,38 +1,11 @@
 # Diffusion MRI (dMRI)
 
-**Diffusion-Weighted Imaging (DWI)** may be used to estimate multiple models of diffusion behavior in the central nervous system. 
-
-## DWI Acquisition
-
-Full protocols, sequence installation, and operation instructions are available via <a href="https://hbcdsequences.readthedocs.io/">HBCD Study MRI Protocols</a>. In brief, the DWI protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm<sup>2</sup> (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful.
-
-## Processing & Derivatives
-
-<div class="table-banner"> <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> <span class="text"> Full details of HBCD diffusion MRI processing and methods are described in <a href="https://doi.org/10.1101/2025.11.10.687672">Cieslak et al. 2025</a>. </span> </div>
-<p></p>
-
-Diffusion MRI data are preprocessed using **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs motion and distortion correction, MP-PCA denoising, co-registration to T1w images, spatial normalization (ANTs), and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5), [Cieslak et al. 2025](https://doi.org/10.1101/2025.11.10.687672)). Preprocessed outputs are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which runs curated reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. 
-
-
-<table class="table-no-vertical-lines"> 
-<thead> <th>Pipeline</th> <th>Folder</th> <th>Description</th> </thead> 
-<tbody> 
-<tr> <td><b>QSIPrep</b></td> <td><code>qsiprep/</code></td> <td>Preprocessed diffusion data, transforms, QC metrics, and reports</td> </tr> 
-<tr> <td><b>QSIRecon</b></td> <td><code>qsirecon/</code></td> <td><a href="https://qsirecon.readthedocs.io/">QSIRecon</a> workflow logs and configuration files</td> </tr> 
-<tr> <td><b>QSIRecon-DSIStudio</b></td> <td><code>qsirecon-DSIStudio/</code></td> <td><a href="https://dsi-studio.labsolver.org/">DSI Studio</a> DTI reconstruction & tractography</td> </tr>
-<tr> <td><b>QSIRecon-DIPYDKI</b></td> <td><code>qsirecon-DIPYDKI/</code></td> <td><a href="https://dipy.org/">DIPY</a> Diffusion kurtosis (DKI) and tensor-derived maps</td> </tr> 
-<tr> 
-<td><b>QSIRecon-TORTOISE</b></td>
-<td><code>qsirecon-TORTOISE_model-{MAPMRI|tensor}/</code></td>
-<td><a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> MAP-MRI and tensor fits and scalar maps</td> </tr> 
-</tbody> </table> 
-
-<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
+### Derivatives
 
 <div id="qsiprep" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIPrep Derivatives</span>
+  <span class="text">QSIPrep Derivatives (<code>qsiprep/</code>)</span>
   <a class="anchor-link" href="#qsiprep" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -40,6 +13,8 @@ Diffusion MRI data are preprocessed using **[QSIPrep](https://qsiprep.readthedoc
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><a href="https://qsiprep.readthedocs.io/">QSIPrep</a> preprocesses data to feed into QSIRecon reconstruction workflows. See <a href="#data-processing">Data Processing</a> for details.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -73,7 +48,7 @@ hbcd/
 <div id="qsirecon" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon Derivatives</span>
+  <span class="text">QSIRecon Derivatives (<code>qsirecon/</code>)</span>
   <a class="anchor-link" href="#qsirecon" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -81,6 +56,8 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><a href="https://qsirecon.readthedocs.io/">QSIRecon</a> has separate derivative folders for each reconstruction workflow. The <code>qsirecon/</code> folder itself contains only a log folder with metadata for the reconstruction workflows executed. See the following sections for workflow-specific outputs stored in self-contained derivatives folders and <a href="#data-processing">Data Processing</a> for details.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 |__ derivatives/ 
@@ -96,7 +73,7 @@ hbcd/
 <div id="qsirecon-DSIStudio" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon-DSIStudio Derivatives</span>
+  <span class="text">QSIRecon-DSIStudio Derivatives (<code>qsirecon-DSIStudio/</code>)</span>
   <a class="anchor-link" href="#qsirecon-DSIStudio" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -104,6 +81,8 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p>QSIRecon-DSIStudio runs <a href="https://dsi-studio.labsolver.org/">DSI Studio</a> to generate DTI maps. See <a href="#data-processing">Data Processing</a> for details.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
@@ -169,7 +148,7 @@ Entries marked <b>(no L/R)</b> are midline or bilateral structures; those marked
 <div id="qsirecon-DIPYDKI" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon-DIPYDKI Derivatives</span>
+  <span class="text">QSIRecon-DIPYDKI Derivatives (<code>qsirecon-DIPYDKI</code>)</span>
   <a class="anchor-link" href="#qsirecon-DIPYDKI" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -177,6 +156,8 @@ Entries marked <b>(no L/R)</b> are midline or bilateral structures; those marked
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p>QSIRecon-DIPYDKI runs <a href="https://dipy.org/">DIPY</a> to generate DKI maps. See <a href="#data-processing">Data Processing</a> for details.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
@@ -199,7 +180,7 @@ hbcd/
 <div id="qsirecon-TORTOISE" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
-  <span class="text">QSIRecon-TORTOISE MAP-MRI & Tensor Derivatives</span>
+  <span class="text">QSIRecon-TORTOISE MAP-MRI & Tensor Derivatives (<code>qsirecon-TORTOISE_model-&lt;MAPMRI|tensor&gt;/</code>)</span>
   <a class="anchor-link" href="#qsirecon-TORTOISE" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -207,6 +188,8 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p><a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> calculates MAP-MRI and Tensor fits and scalar maps. See <a href="#data-processing">Data Processing</a> for details.</p>
+<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 |_ derivatives/ 
@@ -234,9 +217,15 @@ hbcd/
 </pre>
 </div>
 
-## Derivatives Quick Start Guide
+## Data Processing
 
-The diffusion encoding provided via the multiple QSIRecon derivative folders enable the estimation of multiple diffusion MRI models to create the derived data, including:
+<div class="table-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">See full details of HBCD diffusion MRI processing and innovations in <a href="https://doi.org/10.1101/2025.11.10.687672">Cieslak et al. 2025</a>.</span>
+</div>
+<p></p>
+
+Diffusion data are preprocessed through **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs head motion correction, susceptibility distortion correction, MP-PCA denoising, co-registration to T1w images, ANTS spatial normalization, and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5), [Cieslak et al. 2025](https://doi.org/10.1101/2025.11.10.687672)). QSIPrep derivatives are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which executes a curated set of reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. Multiple QSIRecon derivative folders are provided, each corresponding to a different reconstruction method or model. The diffusion encoding enables the estimation of multiple diffusion MRI models to create the derived data, including:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -319,54 +308,33 @@ The diffusion encoding provided via the multiple QSIRecon derivative folders ena
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b><a href="#qsirecon-DSIStudio">qsirecon-DSIStudio</a></b></p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
-<tr>
-<th>Model</th>
-<th>Parameters</th>
-<th>Description</th>
-<th>Shells</th>
-</tr>
+<tr><td colspan="5"></td></tr>
+    <tr>
+    <th style="text-align: center;"><a href="#qsirecon-DSIStudio">qsirecon-DSIStudio</a></th>
+    <th>Model</th>
+    <th>Parameter</th>
+    <th>Description</th>
+    <th>Shells</th>
+    </tr>
 </thead>
-<tbody>
-<tr>
-<td rowspan="3"><b>gqi</b></td>
-<td>gfa</td>
-<td>Generalized fractional anisotropy</td>
-<td rowspan="3">Full</td>
-</tr>
-<tr>
-<td>iso</td>
-<td>Isotropic diffusion</td>
-</tr>
-<tr>
-<td>qa</td>
-<td>Quantitative anisotropy</td>
-</tr>
-<tr>
-<td rowspan="5"><b>tensor</b></td>
-<td>fa, md, rd, ad</td>
-<td>Standard diffusion metrics (fractional, mean, radial, axial)</td>
-<td rowspan="5">Inner</td>
-</tr>
-<tr>
-<td>rd1, rd2</td>
-<td>Second and third eigenvalues (λ₂, λ₃)</td>
-</tr>
-<tr>
-<td>ha</td>
-<td>Helix angle</td>
-</tr>
-<tr>
-<td>txx, txy, txz, tyy, tyz, tzz</td>
-<td>Tensor elements</td>
-</tr>
-
-</tbody>
-</table>
-
-<!-- 
+<tr><td></td><td>gqi</td><td>gfa</td><td>Generalized fractional anisotropy</td><td>Full</td></tr>
+<tr><td></td><td>gqi</td><td>iso</td><td>Isotropic diffusion</td><td>Full</td></tr>
+<tr><td></td><td>gqi</td><td>qa</td><td>Quantitative anisotropy</td><td>Full</td></tr>
+<tr><td></td><td>tensor</td><td>ad</td><td>Axial diffusivity (first eigenvalue) from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>fa</td><td>Fractional anisotropy from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>ha</td><td>Helix angle from tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>md</td><td>Mean diffusivity from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>rd</td><td>Radial diffusivity from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>rd1</td><td>Lambda 2 (second eigenvalue) from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>rd2</td><td>Lambda 3 (third eigenvalue) from a tensor fit</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>txx</td><td>Tensor fit txx</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>txy</td><td>Tensor fit txy</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>txz</td><td>Tensor fit txz</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>tyy</td><td>Tensor fit tyy</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>tyz</td><td>Tensor fit tyz</td><td>Inner</td></tr>
+<tr><td></td><td>tensor</td><td>tzz</td><td>Tensor fit tzz</td><td>Inner</td></tr>
 <thead>
     <tr>
     <th style="text-align: center;"><a href="#qsirecon-DIPYDKI">qsirecon-DIPYDKI</a></th>
@@ -425,7 +393,7 @@ The diffusion encoding provided via the multiple QSIRecon derivative folders ena
 <tr><td></td><td>tensor</td><td>am</td><td>A0 from a tensor fit</td><td>Full</td></tr>
 <tr><td></td><td>tensor</td><td>fa</td><td>Fractional anisotropy from a tensor fit</td><td>Full</td></tr>
 <tr><td></td><td>tensor</td><td>li</td><td>Lattice index</td><td>Full</td></tr>
-<tr><td></td><td>tensor</td><td>rd</td><td>Radial diffusivity from a tensor fit</td><td>Full</td></tr> -->
+<tr><td></td><td>tensor</td><td>rd</td><td>Radial diffusivity from a tensor fit</td><td>Full</td></tr>
 </tbody>
 </table>
 </div>
@@ -448,18 +416,6 @@ The diffusion encoding provided via the multiple QSIRecon derivative folders ena
 </div>
 
 ## References
-
-<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
-  <span class="text-with-link">
-  <span class="text">References</span>
-  <a class="anchor-link" href="#ref" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
 <div class="references">
     <p>Alexander AL, Lee JE, Lazar M, Field AS. (2007). Diffusion tensor imaging of the brain. <em>Neurotherapeutics</em>, 4(3):316-29. <a href="https://doi.org/10.1016/j.nurt.2007.05.011">10.1016/j.nurt.2007.05.011</a></p>
     <p>Basser PJ, Mattiello J, LeBihan D. (1994). MR diffusion tensor spectroscopy and imaging. <em>Biophys J.</em>, 66(1):259-67. <a href="https://doi.org/10.1016/S0006-3495(94)80775-1">10.1016/S0006-3495(94)80775-1</a></p>
@@ -467,5 +423,4 @@ The diffusion encoding provided via the multiple QSIRecon derivative folders ena
     <p>Cieslak, M., Irfanoglu, M. O., Meisler, S. L., Salo, T., Raikes, A. C., Cook, P. A., Chung, A. W., Lee, E. G., Li, R., Li, X., Pecheva, D., Fair, D. A., Smyser, C. D., Harms, M. P., Landman, B. A., Wisnowski, J. L., Huang, H., Alexander, A. L., & Satterthwaite, T. D. (2025). Diffusion MRI processing in the HEALthy Brain and child development study: Innovations and applications. <em>In bioRxiv.</em> <a href="https://doi.org/10.1101/2025.11.10.687672">https://doi.org/10.1101/2025.11.10.687672</a></p>
     <p>Jensen, J. H., Helpern, J. A., Ramani, A., Lu, H., & Kaczynski, K. (2005). Diffusional kurtosis imaging: the quantification of non-gaussian water diffusion by means of magnetic resonance imaging. Magnetic Resonance in Medicine, 53(6), 1432–1440. <a href="https://doi.org/10.1002/mrm.20508">https://doi.org/10.1002/mrm.20508</a></p>
     <p>Özarslan E, Koay CG, Shepherd TM, Komlosh ME, İrfanoğlu MO, Pierpaoli C, Basser PJ. (2013). Mean apparent propagator (MAP) MRI: a novel diffusion imaging method for mapping tissue microstructure. <em>Neuroimage</em>, 78:16-32. <a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">10.1016/j.neuroimage.2013.04.016</a></p>
-</div>
 </div>

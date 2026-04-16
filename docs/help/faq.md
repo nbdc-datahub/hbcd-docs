@@ -201,6 +201,38 @@
 
 ### Imaging Data
 
+<!-- 
+REVIEW & REVISE THIS FAQ
+
+<div id="faq-qcrec" class="notification-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+    <span class="text-with-link">
+    <span class="text">Which imaging data are recommended for analysis?</span>
+    <a class="anchor-link" href="#faq-qcrec" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+    </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="notification-collapsible-content">
+<p>The majority of processed derivative data should be safe to use for analysis. File selection procedures for processing generally exclude data that fails raw data QC, though specific procedures vary by pipeline (see <a href="../../instruments/processing/#file-selection-for-processing" target="_blank">see details</a>).</p>
+<p>To help researchers make informed decisions, many pipelines generate visual reports to summarize the success and quality of processed outputs. This includes, for example, <a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a> (structural and functional MRI) and <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> (diffusion MRI). </p>
+<p>For structural and functional processing specifically, manual visual QC is performed on the visual reports using <a href="../../instruments/mri/brainswipes/">BrainSwipes</a>, the results of which are provided as tabulated release data.</li>
+<b>Raw Imaging Data:</b> 
+<ul>
+<li>QC metrics for raw data are available in the <code>sub-{ID}_ses-{V0X}_scans.tsv</code> file within each subject session folder under <code>rawdata/</code>.</li>
+<li>Additional exclusion criteria include <a href="../../instruments/mri/qc/#data-release-eligibility-criteria">acquisition parameter checks</a> and <a href="../../instruments/processing/#file-selection-for-processing">processing pipeline requirements</a>.</li>
+<li>Structural and functional MRI data undergo MRIQC processing to generate image quality metrics. See the <a href="../../instruments/mri/smri/#mriqc">sMRI</a> and <a href="../../instruments/mri/fmri/#mriqc">sMRI</a> MRIQC derivatives</a> for more information. Researchers may use these outputs for further curation if desired.</li>
+</ul>
+<b>Processed Imaging Data (Derivatives):</b> 
+<ul>
+<li>.</li>
+<li>Processing pipelines, such as <a href="../../instruments/mri-proc#xcp-d" target="_blank">XCP-D</a> (for structural and functional MRI) and <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> (for diffusion MRI), produce visual reports that can help guide data selection.</li>
+<li>Visual QC is performed on these reports using <a href="../../instruments/mri/brainswipes/">BrainSwipes</a>, and the results are available as <a href="../../datacuration/phenotypes">tabulated data</a>.</li>
+</ul>
+</div> -->
+
+
 <div id="faq-mriprotocol" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">

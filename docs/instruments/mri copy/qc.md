@@ -1,39 +1,5 @@
 # HBCD MR Quality Control Procedures
 
-<!-- SUMMARY TABLE
- MR data undergoes both **raw** and **processed** data quality control assessments, as summarized below.
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<thead>
-<tr>
-    <th>QC Type</th>
-    <th>Specific Data Performed On</th>
-    <th>Location of Output QC Metrics in Data Release</th>
-</tr>
-</thead>
-<tr>
-    <td style="word-wrap: break-word; white-space: normal;">Raw MR Data QC, including automated and manual</td>
-    <td style="word-wrap: break-word; white-space: normal;">Raw DICOMs, after protocol compliance & completeness checks (<a href="../../qc/#compliance">see details</a>) and prior to BIDS conversion</td>
-    <td style="word-wrap: break-word; white-space: normal;">Session-level Scans TSV files - <a href="../../qc/#scanstsv">see details</a> - includes both automated and manual QC metrics</td>
-</tr>
-<tr>
-    <td style="word-wrap: break-word; white-space: normal;">Raw BIDS QC via MRIQC Pipeline</td>
-    <td style="word-wrap: break-word; white-space: normal;">MRIQC generates image quality metrics (IQM) for raw anatomical and functional data (only outputs for the scans selected for full structural and functional processing are included in the release)</td>
-    <td style="word-wrap: break-word; white-space: normal;">MRIQC Pipeline Derivatives - <a href="../../qc/#scanstsv">see details</a>. NOTE that the MRIQC outputs are not used to inform HBCD processing workflows, but are instead simple made available in the release for users convenience.</td>
-</tr>
-<tr>
-    <td style="word-wrap: break-word; white-space: normal;">Processed Data: Pipeline-Specific Reports</td>
-    <td style="word-wrap: break-word; white-space: normal;">Several pipelines generate visual reports and automated metrics for users to assess the quality of processed outputs (ADD MORE INFO)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Available in pipeline derivatives (ADD MORE INFO)</td>
-</tr>
-<tr>
-    <td style="word-wrap: break-word; white-space: normal;">Processed Data: BrainSwipes</td>
-    <td style="word-wrap: break-word; white-space: normal;">Structural and functional visual reports derived from XCP-D derivative outputs - <a href="../../brainswipes/">see details</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Available as tabulated derivatives, with most up-to-date results provided between releases in the HBCD Private Release Notes - <a href="../../brainswipes/#location-of-brainswipes-qc-results">see details</a></td>
-</tr>
-</tbody>
-</table> -->
-
 ## Raw MR Data QC
 
 Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing. Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, manual visual review is only performed for series that fail automated QC. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC.
