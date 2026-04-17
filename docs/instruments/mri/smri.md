@@ -1,9 +1,20 @@
 # Structural MRI (sMRI)
 
+## Overview & Acquisition
+
 HBCD protocols for structural MRI were informed by recent large-scale developmental neuroimaging studies including [ABCD](https://abcdstudy.org/), HCP Lifespan, and BCP ([Howell et al., 2019](https://pubmed.ncbi.nlm.nih.gov/29578031/)). These studies laid critical foundation for the development of well-validated, high-resolution protocols harmonized across all three major scanner vendors ([Casey et al., 2018](https://doi.org/10.1016/j.dcn.2018.03.001)). In addition, the findings emphasized the importance of T2w acquisition in infants due to suboptimal grey/white T1w contrast resulting from incomplete myelination ([Howell et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.03.049), [Myers et al., 2023](https://doi.org/10.1016/j.neuroimage.2018.03.049)).
 
-## Acquisition 
-
+<div id="acq" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Acquisition Details</span>
+  <a class="anchor-link" href="#acq" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
 <p>Key features of the HBCD T1w and T2w structural imaging protocols include:</p>
 <ul>
 <li>0.8 mm isotropic resolution</li>
@@ -12,6 +23,7 @@ HBCD protocols for structural MRI were informed by recent large-scale developmen
 <li>Harmonization approach similar to the <a href="https://nbdc-splash-beta.lassoinformatics.com/abcd-study">ABCD Study</a>:<ul>
 <li>T1w: contrast-relevant parameters matched as closely as possible across vendors</li>
 <li>T2w: vendor-specific parameters selected to achieve comparable contrast and SNR, accounting for differences in 3D T2w pulse sequence implementation</li></ul></li></ul>
+</div>
 
 ## Processing & Derivatives
 Structural MRI data is used in several processing pipelines. In addition to the derivatives listed below, sMRI is also critical to Infant fMRIPrep and XCP-D, which generate structural-specific derivatives within an <code>anat/</code> subfolder (including T1w/T2w images processed to correct for motion and distortions and surface reconstructions). These derivatives are described on the fMRI page.

@@ -5,26 +5,23 @@ HBCD includes the following magnetic resonance imaging (**MRI**) and spectroscop
 <table class="table-no-vertical-lines">
   <thead>
     <tr>
-      <th style="width: 40%;">Modality</th>
-      <th style="width: 30%;">Acronym</th>
-      <th style="width: 40%;">Documentation</th>
+      <th>Modality</th><th>Acronym</th><th>Documentation</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Structural, Quantitative, & Functional MRI</td>
-      <td>sMRI, qMRI, fMRI</td>
-      <td><a href="s-fmri" target="_blank">View documentation</a></td>
+      <td>Structural MRI</td><td>sMRI</td><td><a href="smri" target="_blank">View README</a></td>
+    </tr>
+        <tr>
+      <td>Quantitative MRI</td>      <td>qMRI</td>      <td><a href="qmri" target="_blank">View README</a></td>
+    </tr>
+         <tr>      <td>Functional MRI</td>      <td>fMRI</td>      <td><a href="fmri" target="_blank">View README</a></td>
     </tr>
     <tr>
-      <td>Diffusion MRI</td>
-      <td>dMRI</td>
-      <td><a href="dmri" target="_blank">View documentation</a></td>
+      <td>Diffusion MRI</td>      <td>dMRI</td>      <td><a href="dmri" target="_blank">View README</a></td>
     </tr>
     <tr>
-      <td>Magnetic Resonance Spectroscopy</td>
-      <td>MRS</td>
-      <td><a href="mrs" target="_blank">View documentation</a></td>
+      <td>Magnetic Resonance Spectroscopy</td>      <td>MRS</td>      <td><a href="mrs" target="_blank">View README</a></td>
     </tr>
   </tbody>
 </table>
