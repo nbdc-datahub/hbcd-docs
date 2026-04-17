@@ -42,8 +42,7 @@ Updates to real-time reconstruction are in development to recover affected data.
 </div>
 
 ## Overview & Acquisition
-
-fMRI measures functional brain activity using the blood oxygen level–dependent (BOLD) signal (see [Acquisition Details](#fmri-acq)). In the HBCD Study, at least **7.5 minutes of low-motion** resting-state fMRI (rs-fMRI) data (FD < 0.3 mm) are acquired per session across runs. Head motion is monitored in real time using [FIRMM](https://firmm.readthedocs.io/), which estimates the amount of usable low-motion data during acquisition (<a href="https://doi.org/10.1016/j.neuroimage.2017.08.025">Dosenbach et al., 2017</a>).
+Functional MRI (fMRI) measures brain activity via the blood oxygen level–dependent (BOLD) signal. The HBCD Study includes resting-state fMRI (rs-fMRI), with head motion monitored in real time using [FIRMM](https://firmm.readthedocs.io/) to estimate usable data during acquisition (<a href="https://doi.org/10.1016/j.neuroimage.2017.08.025">Dosenbach et al., 2017</a>). A target of 7.5 minutes of usable low-motion data is acquired across runs per session.
 
 <div id="acq" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
@@ -55,9 +54,10 @@ fMRI measures functional brain activity using the blood oxygen level–dependent
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
+<div class="table-collapsible-content">
+<br>
 <ul>
-<li>Resting-state (rs-fMRI) data is acquired at 2 mm isotropic resolution with a repetition time (TR) of 1725 ms and multiband (MB) factor of 4</li>
+<li>rs-fMRI data is acquired at 2 mm isotropic resolution with a repetition time (TR) of 1725 ms and multiband (MB) factor of 4</li>
  <li>A minimum of 2 runs are collected (during sleep for infants &lt;30 months old), each lasting 7.5 minutes</li>
 <li><a href="https://firmm.readthedocs.io/" target="_blank"><b>FIRMM</b></a> is used to monitor head motion in real time, quantified by framewise displacement (FD)</li>
 <li>Additional runs are acquired as needed to obtain at least <b>7.5 minutes of low-motion data</b> (FD &lt; 0.3 mm)</li>
@@ -67,7 +67,7 @@ fMRI measures functional brain activity using the blood oxygen level–dependent
 
 ## Processing & Derivatives
 <div class="table-banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 5px;" class="fa-solid fa-up-right-from-square"></i></a></span> </div>
-<p>
+
 <div id="file-selection" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-info"></i></span>
   <span class="text-with-link">
@@ -91,12 +91,13 @@ fMRI measures functional brain activity using the blood oxygen level–dependent
 <li>Infant FreeSurfer (T1w-based): requires both T1w and T2w</li>
 </ul>
 </div>
-</p>
+<p></p>
 
 HBCD structural and functional MRI data are processed through a sequence of BIDS App pipelines. **BIBSNet** generate brain tissue segmentations and masks for T1w/T2w images. These are fed into **Infant-fMRIPrep** to generate confound files and motion-corrected data (in MNI space, registered to age-specific volumetric atlases) as well as fs_LR32k surface space.
 From these outputs, the **XCP-D** pipeline runs nuisance regression/denoising, parcellates the fMRI data, and computes summary measures.
 
-<style> .pipeline-step { transition: all 0.25s ease; } .pipeline-step:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(100, 100, 255, 0.2); } </style> <div style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; font-size: 0.95em;"> <div style="text-align: center;"> <a href="https://bibsnet.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #a9bffcff; border-radius: 12px; background-color: #dde6fe; color: #222;"> <strong>BIBSNet</strong><br> <small>Segmentation & masks</small> </div> </a> </div> <span style="font-size: 20px;"><i class="fa-solid fa-arrow-right"></i></span> <div style="text-align: center;"> <a href="https://nibabies.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #a89df9ff; border-radius: 12px; background-color: #dcd8fb; color: #222;"> <strong>Infant-fMRIPrep</strong><br> <small>Surface reconstruction, preprocessing & confounds</small> </div> </a> </div> <span style="font-size: 20px;"><i class="fa-solid fa-arrow-right"></i></span> <div style="text-align: center;"> <a href="https://xcp-d.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #d794fcff; border-radius: 12px; background-color: #f0dcfb; color: #222;"> <strong>XCP-D</strong><br> <small>Post-processing & denoising</small> </div> </a> </div> </div>
+
+<style> .pipeline-step { transition: all 0.25s ease; } .pipeline-step:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(100, 100, 255, 0.2); } </style> <div style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; font-size: 0.95em;"> <div style="text-align: center;"> <a href="https://bibsnet.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #a9bffcff; border-radius: 12px; background-color: #dde6fe; color: #222;"> <strong>BIBSNet</strong><br> <small>Brain segmentations & masks</small> </div> </a> </div> <span style="font-size: 20px;"><i class="fa-solid fa-arrow-right"></i></span> <div style="text-align: center;"> <a href="https://nibabies.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #a89df9ff; border-radius: 12px; background-color: #dcd8fb; color: #222;"> <strong>Infant-fMRIPrep</strong><br> <small>Surface reconstruction, preprocessing & confounds</small> </div> </a> </div> <span style="font-size: 20px;"><i class="fa-solid fa-arrow-right"></i></span> <div style="text-align: center;"> <a href="https://xcp-d.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #d794fcff; border-radius: 12px; background-color: #f0dcfb; color: #222;"> <strong>XCP-D</strong><br> <small>Post-processing & denoising</small> </div> </a> </div> </div>
 
 ### Infant fMRIPrep
 
@@ -140,9 +141,10 @@ T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infan
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><i>JSON files excluded for brevity</i></p><br>
-<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 11px;">
+<span class="hashtag"># JSON files excluded for brevity</span>
+<span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+
 hbcd/
 └── derivatives/
     └── nibabies-<span class="placeholder">&lt;HASH&gt;</span>/
@@ -394,8 +396,8 @@ done</span>
 </div>
 
 ### XCP-D
-<a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a> performs functional MRI post-processing and noise regression from Infant-fMRIPrep derivatives, producing cleaned and parcellated data ready for analysis. Atlases used for parcellation are described under <a href="#parc">MRI Derivatives: Quickstart Guide</a>. See the XCP-D documentation on <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#functional-timeseries-and-connectivity-matrices">"HBCD mode" functional outputs</a>.
-
+<a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a> performs functional MRI post-processing and noise regression from Infant-fMRIPrep derivatives, producing cleaned and parcellated data (<a href="#parc">see parcellation atlases</a>) ready for analysis.
+. 
 <div id="xcpd" class="table-banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa-solid fa-diagram-project"></i></span>
 <span class="text-with-link"><span class="text">XCP-D Processing Overview</span>
@@ -430,53 +432,57 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
-<pre style="font-size: 10px;" class="folder-tree">
-hbcd/
-|_ derivatives/ 
-   |_ xcp_d-<span class="placeholder">&lt;HASH&gt;</span>/
-      |_ sub-<span class="label">{ID}</span>/
-         |_ ses-<span class="label">{V0X}</span>/
-         |  |_ anat/
-         |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-MNI152NLin6Asym_desc-preproc_T2w.nii.gz
-         |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-<span class="placeholder">&lt;METRIC&gt;</span>_morph.tsv
-         |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;inflated|vinflated&gt;</span>.surf.gii
-         |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;midthickness|pial|white&gt;</span>.surf.gii
-         |  |  |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_<span class="placeholder">&lt;METRIC&gt;</span>.dscalar.nii
-         |  |
-         |  |_ func/ <span class="hashtag"># All func files have JSONs with exception of .hdf5 & *linc_qc.tsv</span>
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_desc-abcc_qc.hdf5 <span class="hashtag">(No JSON)</span>
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_<span class="placeholder">&lt;motion|outliers&gt;</span>.tsv
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_space-fsLR_den-91k_desc-<span class="placeholder">&lt;DENOISED&gt;</span>_bold.dtseries.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-abcc_qc.hdf5 <span class="hashtag">(No JSON)</span>
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-linc_qc.tsv <span class="hashtag">(No JSON)</span>
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_<span class="placeholder">&lt;design|motion|outliers&gt;</span>.tsv
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-<span class="placeholder">&lt;DENOISED&gt;</span>_bold.dtseries.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-<span class="placeholder">&lt;STAT&gt;</span>_boldmap.dscalar.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-alff_desc-smooth_boldmap.dscalar.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-coverage_boldmap.pscalar.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-pearsoncorrelation_boldmap.pconn.nii
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-<span class="placeholder">&lt;STAT&gt;</span>_bold.tsv
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-coverage_bold.tsv
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
-         |     |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
-         |  
-         |_ figures/
-         |_ <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_executive_summary.html
-         |_ sub-<span class="label">{ID}</span>.html
+<pre style="font-size: 10.5px;" class="folder-tree">
+<span class="hashtag"># JSON files excluded for brevity</span>
+<span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 
-<span class="hashtag"># Label Values Legend</span>
-<span class="subses">SUBSES</span>: sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>
-<span class="placeholder">&lt;HASH&gt;</span>: 0f306a2f+0ef9c88a | 2afa9081+0ef9c88a
-<span class="placeholder">&lt;METRIC&gt;</span>: curv | sulc | thickness
-<span class="placeholder">&lt;DENOISED&gt;</span>: denoised | denoisedSmoothed
-<span class="placeholder">&lt;STAT&gt;</span>: alff | reho
-<span class="placeholder">&lt;APARC&gt;</span>: 4S-&lt;156|256|...|1056&gt;Parcels | Glasser | Gordon | MIDB | MyersLabonte
-<span class="placeholder">&lt;PARC&gt;</span>: 4S-&lt;156|256|...|1056&gt;Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian
+hbcd/
+└── derivatives/
+    └── xcp_d-<span class="placeholder">&lt;HASH&gt;</span>/
+        └── sub-<span class="label">{ID}</span>/
+            └── ses-<span class="label">{V0X}</span>/
+                │
+                ├── anat/
+                │   ├── <span class="placeholder">*</span>_run-<span class="label">{X}</span>_space-MNI152NLin6Asym_desc-preproc_T2w.nii.gz
+                │   ├── <span class="placeholder">*</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-<span class="placeholder">&lt;METRIC&gt;</span>_morph.tsv
+                │   ├── <span class="placeholder">*</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;inflated|vinflated&gt;</span>.surf.gii
+                │   ├── <span class="placeholder">*</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;midthickness|pial|white&gt;</span>.surf.gii
+                │   └── <span class="placeholder">*</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_<span class="placeholder">&lt;METRIC&gt;</span>.dscalar.nii
+                │
+                ├── func/  
+                │   ├── <span class="placeholder">*</span>_task-rest_desc-abcc_qc.hdf5
+                │   ├── <span class="placeholder">*</span>_task-rest_<span class="placeholder">&lt;motion|outliers&gt;</span>.tsv
+                │   ├── <span class="placeholder">*</span>_task-rest_space-fsLR_den-91k_desc-<span class="placeholder">&lt;denoised|denoisedSmoothed&gt;</span>_bold.dtseries.nii
+                │   ├── <span class="placeholder">*</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
+                │   ├── <span class="placeholder">*</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
+                │   ├── <span class="placeholder">*</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
+                │
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-abcc_qc.hdf5
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-linc_qc.tsv
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_<span class="placeholder">&lt;design|motion|outliers&gt;</span>.tsv
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-<span class="placeholder">&lt;denoised|denoisedSmoothed&gt;</span>_bold.dtseries.nii
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-<span class="placeholder">&lt;alff|reho &gt;</span>_boldmap.dscalar.nii
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-alff_desc-smooth_boldmap.dscalar.nii
+                │
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-coverage_boldmap.pscalar.nii
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-pearsoncorrelation_boldmap.pconn.nii
+                │
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-<span class="placeholder">&lt;alff|reho&gt;</span>_bold.tsv
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-coverage_bold.tsv
+                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
+                │   └── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
+                │
+                ├── figures/*
+                ├── sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_executive_summary.html
+                └── sub-<span class="label">{ID}</span>.html
+
+<span class="hashtag"># ── Label Legend ─────────────────────────────────────────────</span>
+<span class="placeholder">HASH</span>       : 0f306a2f+0ef9c88a | 2afa9081+0ef9c88a
+<span class="placeholder">*</span>          : sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>-hash-<span class="placeholder">&lt;HASH&gt;</span>
+<span class="placeholder">METRIC</span>     : curv | sulc | thickness  
+<span class="placeholder">APARC</span>      : 4S-&lt;156|256|...|1056&gt;Parcels | Glasser | Gordon | MIDB | MyersLabonte  
+<span class="placeholder">PARC</span>       : 4S-&lt;156|256|...|1056&gt;Parcels | Glasser | Gordon | MIDB | MyersLabonte | HCP | Tian  
 </pre>
 </div>
 
