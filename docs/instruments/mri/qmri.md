@@ -15,19 +15,24 @@
 <p>Additionally, estimated quantitative T1 values show variability across MRI vendors and participant age. Current estimates do not align well with values reported in the literature, likely due to assumptions made in the modeling procedures. Work is ongoing to address these issues. As a result, quantitative T1 values (and by extension, PD values) will not be included initial release data.</p> 
 </div>
 
+## Overview & Acquisition
+
 Conventional neuroimaging relies on qualitative relaxation-weighted images (e.g., T1w, T2w), which reflect relative differences in tissue properties, but are strongly influenced by sequence parameters, participant positioning, and scanner hardware. These dependencies limit biological interpretability and hinder comparisons across participants, sessions, and sites. The challenge is especially pronounced in pediatric imaging, where rapid age-related changes in free water distribution, iron, and myelination dynamically alter image contrast.
 
 **Quantitative MRI (qMRI)** addresses these limitations by directly measuring relaxation properties, providing more reliable markers of brain tissue microstructure ([Deoni 2010](https://doi.org/10.1097/RMR.0b013e31821e56d8); [Does 2018](https://doi.org/10.1016/j.neuroimage.2017.12.087)). The HBCD Study acquires 3D-QALAS, a time-efficient 3D sequence that combines interleaved Look-Locker acquisition with a T2-preparation pulse ([Kvernby et al. 2014](https://doi.org/10.1186/s12968-014-0102-0)). This approach enables simultaneous estimation of T1/T2 relaxation times and proton density (PD) maps from a single scan and has been validated across major MRI vendors ([Fujita et al. 2019](https://doi.org/10.1016/j.mri.2019.08.031)).
 
-## Acquisition
-#### QALAS
-QALAS is a multi-contrast MRI sequence that produces five brain volumes using turbo-flash readouts with varying T1 and T2 weightings (acquisition time ~5 min for Siemens and ~4 min for GE/Philips). These volumes are combined to estimate T1, T2, and proton density (PD) maps. The sequence starts with a T2-preparation pulse, which adds T2 weighting to the first volume. An inversion pulse follows, imparting T1 weighting to the next four volumes.
-
+<div id="acq" class="table-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="text-with-link">
+<span class="text">Acquisition Details</span><a class="anchor-link" href="#acq" title="Copy link">
+<i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span>
+</div><div class="collapsible-content">
+<p><b>QALAS</b><br>
+QALAS is a multi-contrast MRI sequence that produces five brain volumes using turbo-flash readouts with varying T1 and T2 weightings (acquisition time ~5 min for Siemens and ~4 min for GE/Philips). These volumes are combined to estimate T1, T2, and proton density (PD) maps. The sequence starts with a T2-preparation pulse, which adds T2 weighting to the first volume. An inversion pulse follows, imparting T1 weighting to the next four volumes.</p>
 **QALAS Pulse Sequence Diagram** (<i><a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.29939">Fujita et al., 2024</a> Figure. 1</i>)
 <img src="../images/qalas_Fig1.png" style="max-width:90%; height:auto;">
-
-#### B1+ Fieldmaps
-The HBCD protocol includes a short B1+ field map acquisition (~30–45 seconds across all scanner types) to calibrate flip angle measurements, which can vary spatially due to B1+ field inhomogeneity. This calibration is required for accurate T1, T2, and PD estimation. Because the transmit B1+ field varies smoothly across space, coarse spatial resolution is sufficient, enabling rapid acquisition. Vendor-specific implementations in the HBCD protocol include Actual Flip Angle Imaging (AFI) for GE and Philips, and a pre-saturation turbo-FLASH readout for Siemens (<a href="https://doi.org/10.1002/mrm.21120">Yarnykh 2007</a>).
+<p><b>B1+ Fieldmaps</b><br>
+The HBCD protocol includes a short B1+ field map acquisition (~30–45 seconds across all scanner types) to calibrate flip angle measurements, which can vary spatially due to B1+ field inhomogeneity. This calibration is required for accurate T1, T2, and PD estimation. Because the transmit B1+ field varies smoothly across space, coarse spatial resolution is sufficient, enabling rapid acquisition. Vendor-specific implementations in the HBCD protocol include Actual Flip Angle Imaging (AFI) for GE and Philips, and a pre-saturation turbo-FLASH readout for Siemens (<a href="https://doi.org/10.1002/mrm.21120">Yarnykh 2007</a>).</p>
+</div>
 
 ## Processing & Derivatives
 qMRI data are processed via <a href="https://syntheticmr.com/products/symri-neuro/">SyMRI</a> followed by minimal post-processing through <a href="https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html">qMRI PostProc</a>. SyMRI derives synthetic T1w/T2w images and quantitative relaxometry maps from 3D-QALAS acquisitions by reintroducing estimated T1/T2 relaxation times into the MR signal equation (Bloch equations).
@@ -43,7 +48,6 @@ qMRI data are processed via <a href="https://syntheticmr.com/products/symri-neur
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
 hbcd/
 └── derivatives/
@@ -68,6 +72,8 @@ hbcd/
                     ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-RegistrationQCAid.png               <span class="hashtag">(+JSON)</span>
                     ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-T2w_desc-QALAS_T2map.nii.gz        <span class="hashtag">(+JSON)</span>
                     └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-QALAS_desc-aseg_dseg.nii.gz
+
+<span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 </pre>
 </div>
 <p></p>

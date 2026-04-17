@@ -2,29 +2,54 @@
 
 HBCD includes the following magnetic resonance imaging (**MRI**) and spectroscopy (**MRS**) data acquired as part of a comprehensive pediatric neuroimaging protocol, meticulously designed to overcome technical challenges of imaging early in life. All modalities are acquired during visits V02, V03, V04, and V06.
 
-<table class="table-no-vertical-lines">
-  <thead>
-    <tr>
-      <th>Modality</th><th>Acronym</th><th>Documentation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Structural MRI</td><td>sMRI</td><td><a href="smri" target="_blank">View README</a></td>
-    </tr>
-        <tr>
-      <td>Quantitative MRI</td>      <td>qMRI</td>      <td><a href="qmri" target="_blank">View README</a></td>
-    </tr>
-         <tr>      <td>Functional MRI</td>      <td>fMRI</td>      <td><a href="fmri" target="_blank">View README</a></td>
-    </tr>
-    <tr>
-      <td>Diffusion MRI</td>      <td>dMRI</td>      <td><a href="dmri" target="_blank">View README</a></td>
-    </tr>
-    <tr>
-      <td>Magnetic Resonance Spectroscopy</td>      <td>MRS</td>      <td><a href="mrs" target="_blank">View README</a></td>
-    </tr>
-  </tbody>
-</table>
+<style>
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.1rem;
+}
+.toc-card {
+  display: block;
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.toc-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--md-primary-fg-color);
+}
+.toc-title {font-weight: 600;}
+.toc-sub {font-size: 0.9em; opacity: 0.7;}
+</style>
+
+<div class="toc-grid">
+<a href="smri" class="toc-card"><div class="toc-title">Structural MRI</div><div class="toc-sub">sMRI</div></a>
+<a href="qmri" class="toc-card"><div class="toc-title">Quantitative MRI</div><div class="toc-sub">qMRI</div></a>
+<a href="fmri" class="toc-card"><div class="toc-title">Functional MRI</div><div class="toc-sub">fMRI</div></a>
+<a href="dmri" class="toc-card"><div class="toc-title">Diffusion MRI</div><div class="toc-sub">dMRI</div></a>
+<a href="mrs" class="toc-card"><div class="toc-title">MR Spectroscopy</div><div class="toc-sub">MRS</div></a>
+</div>
+
+<!-- <table class="table-no-vertical-lines">
+<tbody>
+<tr><td><a href="smri" target="_blank">Structural MRI (sMRI)</a></td></tr>
+<tr><td><a href="qmri" target="_blank">Quantitative MRI (qMRI)</a></td></tr>
+<tr><td><a href="fmri" target="_blank">Functional MRI (fMRI)</a></td></tr>
+<tr><td><a href="dmri" target="_blank">Diffusion MRI (dMRI)</a></td></tr>
+<tr><td><a href="mrs" target="_blank">Magnetic Resonance Spectroscopy (MRS)</a></td></tr>
+</tbody></table> -->
+
+ <!-- - <a href="smri" target="_blank">Structural MRI (sMRI)</a>
+ - <a href="qmri" target="_blank">Quantitative MRI (qMRI)</a>
+ - <a href="fmri" target="_blank">Functional MRI (fMRI)</a>
+ - <a href="dmri" target="_blank">Diffusion MRI (dMRI)</a>
+ - <a href="mrs" target="_blank">Magnetic Resonance Spectroscopy (MRS)</a> -->
+
+## MRI Protocols
+HBCD Study MRI protocols and acquisition parameters are described in <a href="https://doi.org/10.1016/j.dcn.2024.101452">Dean et al. 2024</a>. See the external [HBCD Study MRI Protocols](https://hbcdsequences.readthedocs.io) documentation for full protocols, sequence installation, and operation instructions.
 
 ## Release Data
 
@@ -45,7 +70,6 @@ MRI and MRS release data include the following - <i>see <a href="../../datacurat
 <tr><td><b><i class="fas fa-table header-icon"></i> Tabulated Data</b></td>
 <td style="word-wrap: break-word; white-space: normal;">Questionnaires and select pipeline derivatives in HBCD-tabulated format - see <a href="../#mri-tab" target="_blank">Tabulated Imaging</a></td></tr>
 </tbody></table>
-
 
 <pre class="folder-tree">
 hbcd/
@@ -96,9 +120,99 @@ hbcd/
     └── osprey/
 </pre>
 
-## MRI Protocols
+## Raw MR BIDS
+Each participant/session folder within `rawdata/` contains raw imaging data organized into modality-specific subfolders (e.g., `anat/`, `func/`, `dwi/`), with filenames encoding acquisition details (task, direction, run, etc.). See <a href="../../../datacuration/file-based-data/#raw-bids" target="_blank">File-Based Data</a> for a general introduction to BIDS.
 
-HBCD Study MRI protocols and acquisition parameters are described in <a href="https://doi.org/10.1016/j.dcn.2024.101452">Dean et al. 2024</a>. See the external [HBCD Study MRI Protocols](https://hbcdsequences.readthedocs.io) documentation for full protocols, sequence installation, and operation instructions.
+<div id="bids-conversion" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="text-with-link"><span class="text">BIDS Conversion Procedures</span>
+  <a class="anchor-link" href="#bids-conversion" title="Copy link"><i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>For MRI, DICOM images are converted using an HBCD-customized version of <a href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>. For MRS, vendor-specific formats (Siemens <code>.dat</code>, Philips data/list, GE P-file) are converted using <a href="https://github.com/DCAN-Labs/hbcd_mrs_to_nii_conversion">spec2nii v0.7.0</a>.</p>
+<p>Additional post-processing is performed for MRI to ensure consistency across vendors. This includes converting QALAS to five 3D NIfTI files (labeled by inversion time) and hardcoding missing or inconsistent metadata fields for various modalities as follows:</p>
+<table class="compact-table-no-vertical-lines">
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>DWI <span style="font-weight:normal;">(Philips)</span></th>
+      <th>EPI <span style="font-weight:normal;">(Philips)</span></th>
+      <th>BOLD <span style="font-weight:normal;">(Philips)</span></th>
+      <th>T1w <span style="font-weight:normal;">(Philips & GE)</span></th>
+      <th>QALAS <span style="font-weight:normal;">(Philips, Siemens, GE)</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>PhaseEncodingDirection</code></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td></td> <td></td>
+    </tr>
+    <tr>
+      <td><code>TotalReadoutTime</code></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td></td> <td></td>
+    </tr>
+    <tr><td><code>SliceTiming</code></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td> <td></td></tr>
+    <tr><td><code>&lt;Small|Large&gt;Delta</code></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td> <td></td><td></td><td></td></tr>
+    <tr><td><code>RepetitionTime</code></td> <td></td> <td></td> <td></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td><td></td>    </tr>
+      <tr>      <td><code>T2Prep</code></td><td></td> <td></td> <td></td> <td></td> <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+    </tr>      <tr><td><code>InversionTime</code></td><td></td><td></td><td></td><td></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>    </tr>
+  </tbody>
+</table>
+</div>
+<p></p>
+
+<table class="table-no-vertical-lines">
+<thead><tr><th>Folder</th><th>Modality</th><th>Key Files</th></tr></thead>
+<tbody>
+<tr><td rowspan="3"><code>anat/</code></td><td>sMRI</td><td>T1w, T2w</td></tr>
+<tr><td>qMRI</td><td>QALAS (<code>inv-0</code> → <code>inv-4</code>) files</td></tr>
+<tr><td>MRS</td><td>Localizers (<code>aqc-mrsLocAx</code>, <code>aqc-mrsLocCor</code>)</td></tr>
+<tr><td><code>func/</code></td><td>fMRI</td><td>Resting-state BOLD runs</td></tr>
+<tr><td rowspan="2"><code>fmap/</code></td><td>fMRI</td>
+<td>EPI fieldmap pairs acquired in AP/PA directions for each <code>func/</code> BOLD run</td></tr>
+<tr><td>qMRI</td><td>B1+ fieldmaps</td></tr>
+<tr><td><code>dwi/</code></td><td>dMRI</td><td>DWI; gradient magnitude/direction (<code>.bval</code>/<code>.bvec</code>); single-band reference images (<code>*_sbref.nii.gz</code>)</li></ul></td></tr>
+<tr><td><code>mrs/</code></td><td>MRS</td>
+<td style="word-wrap: break-word; white-space: normal;">Metabolite spectra and water reference scans (<code>{svs|ref}.nii.gz</code>), each acquired via short echo time and HERCULES edited spectra (<code>acq-{shortTE|hercules}</code>)</td>
+</tr></tbody></table>
+
+#### Raw BIDS Folder Structure
+
+<pre class="folder-tree">
+<span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+<span class="hashtag"># All NIfTI files include sidecar JSON metadata ({FILENAME}.json)</span>
+hbcd/
+└── rawdata/
+    └── sub-{ID}/
+        └── ses-{V0X}/
+            ├── anat/
+            │   ├── *_<span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz                      <span class="hashtag"># Structural MRI</span>
+            │   ├── *_inv-<span class="placeholder">&lt;0-4&gt;</span>_QALAS.nii.gz                <span class="hashtag"># Quantitative MRI (QALAS)</span>
+            │   └── *_acq-mrsLoc<span class="placeholder">&lt;Ax|Cor&gt;</span>_run-{X}_T2w.nii.gz <span class="hashtag"># MRS localizers</span>
+            │
+            ├── func/
+            │   └── *_task-rest_dir-PA_run-{X}_bold.nii.gz  <span class="hashtag"># Resting-state fMRI</span>
+            │
+            ├── fmap/
+            │   ├── *_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-{X}_epi.nii.gz        <span class="hashtag"># fMRI fieldmaps</span>
+            │   ├── *_acq-<span class="placeholder">&lt;anat|famp&gt;</span>_run-{X}_TB1TFL.nii.gz <span class="hashtag"># qMRI Siemens B1+ fieldmaps</span>
+            │   └── *_acq-<span class="placeholder">&lt;tr1|tr2&gt;</span>_run-{X}_TB1AFI.nii.gz   <span class="hashtag"># qMRI GE/Philips B1+ fieldmaps</span>
+            │
+            ├── dwi/
+            │   ├── *_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-{X}_dwi.nii.gz        <span class="hashtag"># Diffusion MRI</span>
+            │   ├── *_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-{X}_dwi.bval
+            │   ├── *_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-{X}_dwi.bvec
+            │   └── *_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-{X}_sbref.nii.gz
+            │
+            └── mrs/
+                ├── *_acq-<span class="placeholder">&lt;shortTE|hercules&gt;</span>_run-{X}_svs.nii.gz <span class="hashtag"># Spectroscopy (SVS)</span>
+                └── *_acq-<span class="placeholder">&lt;shortTE|hercules&gt;</span>_run-{X}_ref.nii.gz <span class="hashtag"># Reference scans</span>
+</pre>
 
 
 ## Exclusion Criteria

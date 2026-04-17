@@ -13,10 +13,6 @@ Full protocols, sequence installation, and operation instructions are available 
  (<a href="https://doi.org/10.1002/jmri.25304">Edden et al., 2016</a>).
 
 ## MRS Processing & Derivatives
-
-<div class="table-banner"> <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> <span class="text"> Full details of HBCD diffusion MRI processing and methods are described in <a href="https://doi.org/10.1101/2025.11.10.687672">Cieslak et al. 2025</a>. </span> </div>
-<p></p>
-
 HBCD MRS data are processed with [OSPREY-BIDS](https://osprey-bids.readthedocs.io/en/latest/index.html), a customized automated pipeline based on OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)). Full details regarding HBCD processing implementation (e.g., file selection for processing) are available in the external [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/osprey.html) documentation.
 
 <div id="derivatives" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
@@ -30,9 +26,9 @@ HBCD MRS data are processed with [OSPREY-BIDS](https://osprey-bids.readthedocs.i
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 0.75em;">
-<span class="hashtag"># Note: JSON files excluded for brevity</span>
+<span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+
 hbcd/
 └── derivatives/
     └── osprey/
@@ -40,7 +36,7 @@ hbcd/
             └── ses-<span class="label">{V0X}</span>/
                 ├── HERCULES/
                 │   ├── PreOspreyLocalizerReg/
-                │   │   ├── <span class="placeholder">&lt;SEG&gt;</span>reference_seg_aligned_to_localizer.nii.gz
+                │   │   ├── <span class="placeholder">&lt;aal|c1|c2|c3&gt;</span>reference_seg_aligned_to_localizer.nii.gz
                 │   │   ├── reference_<span class="placeholder">&lt;img|seg&gt;</span>_aligned_to_localizer.nii.gz
                 │   │   ├── readme.txt
                 │   │   ├── registration_summary.json
@@ -48,15 +44,15 @@ hbcd/
                 │   │
                 │   ├── QuantifyResults/
                 │   │   ├── <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1.tsv
-                │   │   ├── <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_<span class="placeholder">&lt;REF&gt;</span>WaterScaled_Voxel_1_Basis_1.tsv
+                │   │   ├── <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_<span class="placeholder">&lt;AlphaCorr|CSF|raw|TissCorr&gt;</span>WaterScaled_Voxel_1_Basis_1.tsv
                 │   │   └── <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_<span class="placeholder">&lt;amplMets|tCr&gt;</span>_Voxel_1_Basis_1.tsv
                 │   │
                 │   ├── SegMaps/
-                │   │   ├── sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_svs.nii_space-scanner_Voxel-1_label-<span class="placeholder">&lt;ROI&gt;</span>.nii.gz
+                │   │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-hercules_svs.nii_space-scanner_Voxel-1_label-<span class="placeholder">&lt;ROI&gt;</span>.nii.gz
                 │   │   └── TissueFractions_Voxel_1.tsv
                 │   │
                 │   ├── VoxelMasks/
-                │   │   └── sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-hercules_svs_space-scanner_mask.nii.gz
+                │   │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-hercules_svs_space-scanner_mask.nii.gz
                 │   │
                 │   ├── LogFile.txt
                 │   ├── QM_processed_spectra.tsv
@@ -68,16 +64,14 @@ hbcd/
                 <span class="hashtag"># Mirrors HERCULES/ structure - only unique filenames are displayed below</span>
                     ├── QuantifyResults/
                     │   ├── A_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1.tsv
-                    │   ├── A_<span class="placeholder">&lt;REF&gt;</span>WaterScaled_Voxel_1_Basis_1.tsv
+                    │   ├── A_<span class="placeholder">&lt;AlphaCorr|CSF|raw|TissCorr&gt;</span>WaterScaled_Voxel_1_Basis_1.tsv
                     │   └── A_<span class="placeholder">&lt;amplMets|tCr&gt;</span>_Voxel_1_Basis_1.tsv
                     ├── SegMaps/
-                    │   └── sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_svs.nii_space-scanner_Voxel-1_label-&lt;ROI&gt;.nii.gz
+                    │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-shortTE_svs.nii_space-scanner_Voxel-1_label-<span class="placeholder">&lt;ROI&gt;</span>.nii.gz
                     └── VoxelMasks/
-                        └── sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_acq-shortTE_svs_space-scanner_mask.nii.gz
+                        └── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-shortTE_svs_space-scanner_mask.nii.gz
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">SEG</span>: aal | c1 | c2 | c3
-<span class="placeholder">REF</span>: AlphaCorr | CSF | raw | TissCorr
 <span class="placeholder">ROI</span>: CSF | GM | Tha | WM
 </pre>
 </div>

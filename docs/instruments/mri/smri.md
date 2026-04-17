@@ -28,9 +28,6 @@ HBCD protocols for structural MRI were informed by recent large-scale developmen
 ## Processing & Derivatives
 Structural MRI data is used in several processing pipelines. In addition to the derivatives listed below, sMRI is also critical to Infant fMRIPrep and XCP-D, which generate structural-specific derivatives within an <code>anat/</code> subfolder (including T1w/T2w images processed to correct for motion and distortions and surface reconstructions). These derivatives are described on the fMRI page.
 
-### BIBSNet
-BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentation (<a href="https://doi.org/10.1101/2023.03.22.533696">Hendrickson et al. 2024</a>). The <a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet pipeline</a> generates native-space brain segmentations and brain masks (as well as <code>volumes.tsv</code> files with ROI volume statistics), which are fed into Infant fMRIPrep for use in anatomical preprocessing and surface reconstruction.
-
 <div id="bibsnet-derivs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
@@ -42,7 +39,7 @@ BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentat
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
+<p>BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentation (<a href="https://doi.org/10.1101/2023.03.22.533696">Hendrickson et al. 2024</a>). The <a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet pipeline</a> generates native-space brain segmentations and brain masks (as well as <code>volumes.tsv</code> files with ROI volume statistics), which are fed into Infant fMRIPrep for use in anatomical preprocessing and surface reconstruction.</p>
 <pre class="folder-tree">
 hbcd/
 └── derivatives/ 
@@ -53,19 +50,17 @@ hbcd/
                     ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_dseg.nii.gz <span class="hashtag">(+JSON)</span>
                     ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv <span class="hashtag">(+JSON)</span>         
                     └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.nii.gz <span class="hashtag">(+JSON)</span>
+
+<span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 </pre>
 </div>
-
-
-### MRIQC & BME-X
-
-[MRIQC](https://mriqc.readthedocs.io/en/latest/about.html) extracts image quality metrics (IQMs) for each T1w/T2w and generates visual <code>.html</code> reports. The [BME-X](https://brain-mri-enhancement.readthedocs.io/) pipeline performs motion correction, resolution enhancement, denoising, and harmonization of MR images.
 
 <div id="mriqc" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span><span class="text-with-link">
 <span class="text">MRIQC & BME-X Derivatives</span><a class="anchor-link" href="#mriqc" title="Copy link">  <i class="fa-solid fa-link"></i></a></span>
   <span class="arrow">▸</span></div>
 <div class="table-collapsible-content">
+<p><a href="https://mriqc.readthedocs.io/en/latest/about.html">MRIQC</a> extracts image quality metrics (IQMs) for each T1w/T2w and generates visual <code>.html</code> reports. The <a href="https://brain-mri-enhancement.readthedocs.io/">BME-X</a> pipeline performs motion correction, resolution enhancement, denoising, and harmonization of MR images.</p>
 <pre class="folder-tree">
 hbcd/
 └── derivatives/
@@ -85,6 +80,8 @@ hbcd/
                     |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span>desc-<span class="placeholder">&lt;enhanced|preproc&gt;</span>_<span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
                     |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span>space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-brain_mask.nii.gz <span class="hashtag">(+JSON)</span>
                     |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span><span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
+
+<span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 </pre>
 </div>
 

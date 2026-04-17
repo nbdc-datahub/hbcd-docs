@@ -1,7 +1,4 @@
 # Functional MRI
-
-## Overview & Acquisition
-
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
   <span class="text-with-link">
@@ -44,7 +41,7 @@ Clipping severity can be estimated from QC metrics available in the <a href="../
 Updates to real-time reconstruction are in development to recover affected data. In the meantime, users should practice caution when performing sensitive analyses and consider including clipping metrics as covariates in analysis. Note that scans with severe clipping fail raw data QC, so are automatically excluded from downstream pipeline processing.</p>
 </div>
 
----
+## Overview & Acquisition
 
 fMRI measures functional brain activity using the blood oxygen level–dependent (BOLD) signal (see [Acquisition Details](#fmri-acq)). In the HBCD Study, at least **7.5 minutes of low-motion** resting-state fMRI (rs-fMRI) data (FD < 0.3 mm) are acquired per session across runs. Head motion is monitored in real time using [FIRMM](https://firmm.readthedocs.io/), which estimates the amount of usable low-motion data during acquisition (<a href="https://doi.org/10.1016/j.neuroimage.2017.08.025">Dosenbach et al., 2017</a>).
 
@@ -291,73 +288,73 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
-|__ derivatives/ 
-    |__ mcribs-0f306a2f/
-        |__ sub-<span class="label">{ID}</span>_ses-V02/
-            |__ RawT2/
-            |   |__ sub-<span class="label">{ID}</span>_ses-V02.nii.gz
-            |
-            |__ RawT2RadiologicalIsotropic/
-            |   |__ sub-<span class="label">{ID}</span>_ses-V02.nii.gz_symlink_s3_object
-            |
-            |__ SurfReconDeformable/
-            |   |__ sub-<span class="label">{ID}</span>_ses-V02/
-            |       |__ meshes/
-            |       |   |__ <span class="placeholder">&lt;MESH&gt;</span>.vtp
-            |       |   |__ pial-<span class="placeholder">&lt;HEM&gt;</span>.vtp
-            |       |   |__ pial-<span class="placeholder">&lt;HEM&gt;</span>-reordered.vtp
-            |       |   |__ white-<span class="placeholder">&lt;HEM&gt;</span>.<span class="placeholder">&lt;SUFFIX&gt;</span>
-            |       |
-            |       |__ recon/
-            |       |   |__ cortical-hull-dmap.nii.gz
-            |       |   |__ regions.nii.gz 
-            |       |
-            |       |__ temp/
-            |           |__ brain-mask.nii.gz
-            |           |__ cerebrum-<span class="placeholder">&lt;HEM&gt;</span>-dmap.nii.gz
-            |           |__ cerebrum-<span class="placeholder">&lt;HEM&gt;</span>-hull-<span class="placeholder">{X}</span>.vtp
-            |           |__ cerebrum-<span class="placeholder">&lt;HEM&gt;</span>-iso.vtp
-            |           |__ <span class="placeholder">&lt;STRUCT&gt;</span>-mask-<span class="placeholder">{X}</span>.nii.gz
-            |           |__ <span class="placeholder">&lt;TISSUE&gt;</span>-<span class="placeholder">{X}</span>.vtp
-            |           |__ <span class="placeholder">&lt;TISSUE&gt;</span>-<span class="placeholder">{X}</span>-output_<span class="placeholder">{X}</span>.vtp
-            |           |__ <span class="placeholder">&lt;pial|white&gt;</span>-foreground.nii.gz
-            |           |__ ventricles-dmap.nii.gz
-            |           |__ t2w-image.nii.gz_symlink_s3_object
-            |
-            |__ TissueSeg/
-            |   |__ sub-<span class="label">{ID}</span>_ses-V02_all_labels.nii.gz
-            |   |__ sub-<span class="label">{ID}</span>_ses-V02_all_labels_manedit.nii.gz_symlink_s3_object
-            |   |__ sub-<span class="label">{ID}</span>_ses-V02_brain_mask.nii.gz
-            |   |__ sub-<span class="label">{ID}</span>_ses-V02_t2w_restore.nii.gz_symlink_s3_object
-            |
-            |__ TissueSegDrawEM/
-            |   |__ sub-<span class="label">{ID}</span>_ses-V02/
-            |       |__ N4/
-            |           |__ sub-<span class="label">{ID}</span>_ses-V02.nii.gz_symlink_s3_object
-            |
-            |__ freesurfer/ <span class="hashtag"># Only M-CRIB-S–unique files</span>
-            |   |__ sub-<span class="label">{ID}</span>_ses-V02/
-            |       |__ mri/
-            |           |__ brain.mgz_symlink_s3_object
-            |           |__ orig.mgz_symlink_s3_object
-            |
-            |__ logs/
-            |   |__ sub-<span class="label">{ID}</span>_ses-V02.log
-            |
-            |__ command.txt
-
+└── derivatives/
+    └── mcribs-0f306a2f/
+        └── sub-<span class="label">{ID}</span>_ses-V02/
+            ├── RawT2/
+            │   └── sub-<span class="label">{ID}</span>_ses-V02.nii.gz
+            │
+            ├── RawT2RadiologicalIsotropic/
+            │   └── sub-<span class="label">{ID}</span>_ses-V02.nii.gz_symlink_s3_object
+            │
+            ├── SurfReconDeformable/
+            │   └── sub-<span class="label">{ID}</span>_ses-V02/
+            │       ├── meshes/
+            │       │   ├── <span class="placeholder">&lt;MESH&gt;</span>.vtp
+            │       │   ├── pial-<span class="placeholder">&lt;HEM&gt;</span>.vtp
+            │       │   ├── pial-<span class="placeholder">&lt;HEM&gt;</span>-reordered.vtp
+            │       │   └── white-<span class="placeholder">&lt;HEM&gt;</span>.<span class="placeholder">&lt;SUFFIX&gt;</span>
+            │       │
+            │       ├── recon/
+            │       │   ├── cortical-hull-dmap.nii.gz
+            │       │   └── regions.nii.gz
+            │       │
+            │       └── temp/
+            │           ├── brain-mask.nii.gz
+            │           ├── ventricles-dmap.nii.gz
+            │           ├── t2w-image.nii.gz_symlink_s3_object
+            │           │
+            │           ├── cerebrum-<span class="placeholder">&lt;HEM&gt;</span>-dmap.nii.gz
+            │           ├── cerebrum-<span class="placeholder">&lt;HEM&gt;</span>-hull-<span class="placeholder">{X}</span>.vtp
+            │           ├── cerebrum-<span class="placeholder">&lt;HEM&gt;</span>-iso.vtp
+            │           │
+            │           ├── <span class="placeholder">&lt;STRUCT&gt;</span>-mask-<span class="placeholder">{X}</span>.nii.gz
+            │           ├── <span class="placeholder">&lt;TISSUE&gt;</span>-<span class="placeholder">{X}</span>.vtp
+            │           ├── <span class="placeholder">&lt;TISSUE&gt;</span>-<span class="placeholder">{X}</span>-output_<span class="placeholder">{X}</span>.vtp
+            │           │
+            │           └── <span class="placeholder">&lt;pial|white&gt;</span>-foreground.nii.gz
+            │
+            ├── TissueSeg/
+            │   ├── sub-<span class="label">{ID}</span>_ses-V02_all_labels.nii.gz
+            │   ├── sub-<span class="label">{ID}</span>_ses-V02_all_labels_manedit.nii.gz_symlink_s3_object
+            │   ├── sub-<span class="label">{ID}</span>_ses-V02_brain_mask.nii.gz
+            │   └── sub-<span class="label">{ID}</span>_ses-V02_t2w_restore.nii.gz_symlink_s3_object
+            │
+            ├── TissueSegDrawEM/
+            │   └── sub-<span class="label">{ID}</span>_ses-V02/
+            │       └── N4/
+            │           └── sub-<span class="label">{ID}</span>_ses-V02.nii.gz_symlink_s3_object
+            │
+            ├── freesurfer/ <span class="hashtag"># M-CRIB-S–specific outputs</span>
+            │   └── sub-<span class="label">{ID}</span>_ses-V02/
+            │       └── mri/
+            │           ├── brain.mgz_symlink_s3_object
+            │           └── orig.mgz_symlink_s3_object
+            │
+            ├── logs/
+            │   └── sub-<span class="label">{ID}</span>_ses-V02.log
+            │
+            └── command.txt
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">HEM</span>: lh | rh
-<span class="placeholder">STRUCT</span>: brain | cerebrum-{lh/rh} | corpus-callosum | cortex | deep-gray-matter | gray-matter | ventricles | white-matter
-<span class="placeholder">TISSUE</span>: cerebrum-lh | cerebrum-rh | pial | white 
-<span class="placeholder">MESH</span>: internal | pial | white | pial+internal | white+internal
-<span class="placeholder">SUFFIX</span>: CortexMask.curv | Normals.surf | RegionId.curv | vtp 
+<span class="placeholder">HEM</span>: lh | rh  
+<span class="placeholder">STRUCT</span>: brain | cerebrum-{lh/rh} | corpus-callosum | cortex | deep-gray-matter | gray-matter | ventricles | white-matter  
+<span class="placeholder">TISSUE</span>: cerebrum-lh | cerebrum-rh | pial | white  
+<span class="placeholder">MESH</span>: internal | pial | white | pial+internal | white+internal  
+<span class="placeholder">SUFFIX</span>: CortexMask.curv | Normals.surf | RegionId.curv | vtp  
 </pre>
 </div>
-
 
 <div id="mcribs-vs-fs" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
