@@ -2,7 +2,7 @@
 
 **Diffusion-Weighted Imaging (DWI)** measures the diffusion of water molecules in tissue and is used to model white matter microstructure and structural connectivity in the central nervous system.
 
-## DWI Acquisition
+## Acquisition
 
 Full protocols, sequence installation, and operation instructions are available via <a href="https://hbcdsequences.readthedocs.io/">HBCD Study MRI Protocols</a>. In brief, the DWI protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm<sup>2</sup> (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful.
 
@@ -188,7 +188,7 @@ Association<span class="placeholder">&lt;LABEL&gt;</span>, Cerebellum<span class
 </table>
 </div>
 
-## Derivatives Quick Start Guide
+## dMRI Derivatives Quick Start Guide
 
 The diffusion encoding provided via the multiple QSIRecon derivative folders enable the estimation of multiple diffusion MRI models to create the derived data, including:
 

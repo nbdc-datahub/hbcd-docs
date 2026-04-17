@@ -12,21 +12,10 @@
 Full protocols, sequence installation, and operation instructions are available via <a href="https://hbcdsequences.readthedocs.io/">HBCD Study MRI Protocols</a>. Of note, a key challenge in MRS is sensitivity to scanner frequency drift, which can degrade data quality by altering editing efficiency and signal contributions (<a href="https://doi.org/10.1002/mrm.25009">Harris et al., 2014</a>). To address this, HBCD incorporates interleaved water referencing for real-time frequency correction, initially implemented on Philips systems and later extended to Siemens and GE platforms
  (<a href="https://doi.org/10.1002/jmri.25304">Edden et al., 2016</a>).
 
-
-<!-- <div id="mrs-acq" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-brain"></i></span>
-  <span class="text-with-link">
-    <span class="text">Acquisition Details</span>
-    <a class="anchor-link" href="#mrs-acq" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-</div> -->
-
 ## MRS Processing & Derivatives
+
+<div class="table-banner"> <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> <span class="text"> Full details of HBCD diffusion MRI processing and methods are described in <a href="https://doi.org/10.1101/2025.11.10.687672">Cieslak et al. 2025</a>. </span> </div>
+<p></p>
 
 HBCD MRS data are processed with [OSPREY-BIDS](https://osprey-bids.readthedocs.io/en/latest/index.html), a customized automated pipeline based on OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)). Full details regarding HBCD processing implementation (e.g., file selection for processing) are available in the external [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/osprey.html) documentation.
 
