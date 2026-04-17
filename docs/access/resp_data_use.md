@@ -3,6 +3,30 @@
 ## Rationale
 The HEALthy Brain and Child Development (HBCD) study dataset is a large, rich, and complex resource that can drive scientific discovery, provide a foundation for translation and implementation research, and inform development of public policy. To create this dataset, thousands of participants have given generously of their time and their bodies to help advance science. They have trusted us with sensitive information. The use of HBCD data carries ethical responsibilities to minimize risks of harm to participants and to treat them respectfully and justly. One way data users can respect participants’ contributions is by conducting careful, high-quality science.  
 
+
+## Data Use Acknowledgement
+
+When using HBCD Study data, processes, plans, and/or concepts in a publication, please include the acknowledgement text below (also provided in the NBDC Responsible Data Use Training required for data access).
+
+<div id="dua" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-info"></i></span>
+  <span class="text-with-link">
+    <span class="text">HBCD Study Acknowledgement (Copy & Paste)</span>
+    <a class="anchor-link" href="#dua" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p><b>Copy the text below and adjust contents of text within [SQUARE BRACKETS] as needed:</b></p>
+<p><b>[DATA/PROCESS/PLAN/CONCEPT (select as applicable)]</b> used in the preparation of this article were obtained from the <a href="https://hbcdstudy.org/">HEALthy Brain and Child Development (HBCD) Study</a>, held in the NIH Brain Development Cohorts Data Sharing Platform. This is a multisite, longitudinal study designed to recruit approximately 7,000 families and follow them from pregnancy to early childhood.</p>
+<p>The HBCD Study is supported by the NIH and additional federal partners under award numbers U01DA055352, U01DA055353, U01DA055366, U01DA055365, U01DA055362, U01DA055342, U01DA055360, U01DA055350, U01DA055338, U01DA055355, U01DA055363, U01DA055349, U01DA055361, U01DA055316, U01DA055344, U01DA055322, U01DA055369, U01DA055358, U01DA055371, U01DA055359, U01DA055354, U01DA055370, U01DA055347, U01DA055357, U01DA055367, U24DA055325, and U24DA055330. A full list of supporters is available at <a href="https://hbcdstudy.org/federal-partners/">Federal Partners-HBCD Study</a>.</p>
+<p>A full list of participating sites is available at <a href="https://hbcdstudy.org/recruitment-sites/">Study Sites-HBCD Study</a>. HBCD Study Consortium investigators designed and implemented the study and/or provided data but did not necessarily participate in the analysis or writing of this report. This manuscript reflects the views of the authors and may not reflect the opinions or views of the NIH or the HBCD Study Consortium investigators.</p>
+<p>The HBCD dataset grows and changes over time. The HBCD data used in this report came from <b>[NBDC Digital Object Identifier (DOI)]</b>. DOIs can be found at <b>[DOI URL]</b>.</p>
+</div>
+</div>
+
 ## Warnings
 To facilitate responsible data use, table- and variable-level warnings are embedded in the [NBDC Data Dictionary](metadata.md) linking to data and responsible use warnings within the [study instrument documentation](../instruments/index.md). There are 2 types of warnings, both of which may aid in more scientifically rigorous use of HBCD data - click to expand each section below for a description of the function of these warnings:
 

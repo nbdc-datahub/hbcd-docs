@@ -207,7 +207,9 @@ hbcd/
 
 ### M-CRIB-S & FreeSurfer
 
-M-CRIB-S & FreeSurfer are alternative surface reconstruction methods supported by Infant fMRIPrep, optimized for different age ranges (*[see details above](#nibabies)*). Infant fMRIPrep and XCP-D derivative folder/filenames include unique hash IDs to indicate which of these methods was used for processing. 
+**Infant fMRIPrep and XCP-D derivative folder/filenames include unique hash IDs to indicate distinct processing parameters used for a given pipeline. In the case of HBCD data, the hash IDs correspond to which surface reconstruction method was used for processing within Infant fMRIPrep.**
+
+M-CRIB-S & FreeSurfer are alternative surface reconstruction methods supported by Infant fMRIPrep, optimized for different age ranges (*[see details above](#nibabies)*). 
 
 <table class="table-no-vertical-lines">
 <thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Visits <i>(Age Range in Months)</i></th> </tr> </thead>
@@ -229,7 +231,6 @@ Downstream XCP-D derivatives include a second hash ID (`0ef9c88a`) indicating th
   <img src="../images/proc-hashes.png" alt="Detailed MRI Processing Workflow">
 </p>
 
-#### Derivatives
 The M-CRIB-S and FreeSurfer derivative folders are generated from the [intermediate FreeSurfer-like folders](https://nibabies.readthedocs.io/en/latest/outputs.html#surface-reconstruction) produced by Infant fMRIPrep during surface reconstruction. When M-CRIB-S is used, Infant fMRIPrep still creates a FreeSurfer-structured folder containing the M-CRIB-S results mapped to the standard <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/ReconAllOutputFiles">recon-all</a> layout; these appear in the release under <code>freesurfer-0f306a2f/</code>.
 
 <div id="fs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
@@ -779,7 +780,6 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 </tbody>
 </table>
 </div>
-
 
 ## Quality Control Summary Statistics
 
