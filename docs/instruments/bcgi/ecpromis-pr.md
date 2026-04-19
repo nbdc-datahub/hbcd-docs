@@ -1,23 +1,23 @@
 # ecPROMIS Peer Relationships Scale
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>mh_cg_pms__peer</code></div>
-  </div>
-    <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Early Childhood Patient-Reported Outcome Measurement Information System Peer Relationships Scale
-    </div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Peer Relationships</div>
-  </div>
-</div>
-
----------------------------------------------
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>mh_cg_pms__peer</code></td></tr>
+<tr><td><b>Construct</b></td><td>Peer Relationships</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V05, V07, V09</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: Yes<br>
+<b>Respondent</b>: Primary Caregiver on Child<br>
+<b>Method</b>: Self-administered remotely (1-2 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td>
+  <ul>
+  <li>Examine missingness by counting items answered per participant.</li>
+  <li>Check age is within expected ranges.</li>
+  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
+  </ul>
+</td></tr>
+</tbody></table>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -37,31 +37,6 @@
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Primary Caregiver on Child</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V05, V07, V09</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>1-2 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
-<ul>
-  <li>Examine missingness by counting the number of items answered for each participant.</li>
-  <li>Check age to ensure that it falls within expected ranges (1-5 years).</li>
-  <li>Generate summary statistics and visualizations to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data).</li>
-</ul>
-</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Peer Relationships Scale** assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors. 

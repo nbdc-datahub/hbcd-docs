@@ -306,15 +306,20 @@ th, td {
   padding-right: 1px;
   line-height: 1.1; 
 }
+/* Make lists behave more like normal text blocks */
 .compact-table-no-vertical-lines ul {
-  margin-top: 1rem;
-  line-height: 1;
-  font-size: 1em !important;
+  margin: 0;
+  padding-left: 0;
 }
+/* Reduce bottom space between last list item and table border */
+.compact-table-no-vertical-lines ul:last-child {
+  margin-top: 0; 
+  margin-bottom: 0;
+}
+/* Normalize list item spacing */
 .compact-table-no-vertical-lines li {
-  margin-bottom: 0.4rem;
-  line-height: 1;
-  font-size: 1em !important;
+  margin: 0;
+  line-height: 1.2;
 }
 
 /* Table with expandable sections */

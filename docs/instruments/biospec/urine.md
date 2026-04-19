@@ -1,17 +1,17 @@
 # USDTL Urine Toxicology (Maternal)
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>bio_bm_biosample_urine_results</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Drug Panel, Toxins</div>
-  </div>
-</div>
-
----------------------------------------------
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>bio_bm_biosample_urine_results</code></td></tr>
+<tr><td><b>Construct</b></td><td>Drug Panel, Toxins</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V01</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Respondent</b>: Pregnant/postpartum person<br>
+<b>Method</b>: Self-collected (5 min estimated duration)
+</td></tr>
+<td><b>Quality Control</b></td><td>Examine assay ranges and categorical versus continuous measures</td></tr>
+</tbody>
+</table>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -24,10 +24,12 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
+<p><b>USDTL Screening Updates</b><br>
+As of May 19, 2025, USDTL transitioned the initial urine screening test for fentanyl and sufentanil from LDTD to ELISA. As of November 2025, urine samples were no longer assayed for sufentanil, and USDTL simplified its specimen validity assessment, replacing a multi-parameter algorithm (including pH and nitrite) with a single creatinine-based measure to evaluate urine hydration.</p>
 <p><b>Continuous Variables</b><br>
-For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#urine-table1">Table 1. Urine Assay Thresholds for Analytes</a>.</p> 
+Continuous variables should be interpreted with caution based on limits of quantification (LOQ), i.e. the minimum concentration at which metabolites can be reliably quantified. See <a href="#urine-table1">Urine Assay Thresholds for Analytes</a>.</p>
 <p><b>Urinary Concentration Corrections</b><br>
-Urine concentrations vary by participant. Urinary concentration corrections can be made using creatinine results from sample validation or specific gravity. Creatinine values will be provided in a future release for researchers who wish to adjust/correct for urinary concentration in continuous measures or apply different thresholds (<i>see <a href="../../../changelog/issues-updates/#pending-updates" target="_blank">pending updates</a></i>).</p>
+Urinary concentration varies by participant. Researchers who wish to correct for urinary concentration in continuous measures, or apply different thresholds, can do so using creatinine or specific gravity results from sample validation.</p>
 <p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
 </div>
 
@@ -35,453 +37,75 @@ Urine concentrations vary by participant. Urinary concentration corrections can 
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-<p></p>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Respondent</b></td>
-<td>Pregnant/postpartum person</td></tr>
-<tr><td><b>Administration</b></td>
-<td>Self-collected</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V01</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>5 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td>Examine assay ranges and categorical versus continuous measures.</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 
+Urine toxicology assay results include:
+
+- **Screening results**: initial screening results for substances (e.g. **Amphetamine/`s_amp_u`**), determined to be positive/negative based on [predefined thresholds](#urine-table1), or invalid based on [Validation Procedures](#validation)
+- **Confirmatory results**: confirm positive screening results for a given substance analyte, e.g. **Amphetamine**, including continuous (`c_amp_u`) and categorical (`c_amp_u_cat`) results
+- **Classification**: results are grouped into different classes based on analyte screening and confirmatory tests (**[Mapping From Class to Screening & Confirmatory Tests](#urine-table2)**)
+
 <img src="../images/Fig1_biospec_urine.png" width="70%" height="auto" class="center">
 
-These data are the results of urine toxicology assays. **Screening** results for substances are determined to be positive or negative based on predefined thresholds (**[Table 1](#urine-table1)**), or invalid - see [Validation Procedures](#validation). **Confirmatory tests** are used to confirm the results of screening for any substance analyte (e.g. **Amphetamine/`c_amp_u`**), which are grouped into different classes by analyte screening tests and analyte confirmatory tests (**[Table 2](#urine-table2)**).
-
-Please note that as of May 19, 2025,  USDTL migrated the initial test for fentanyl and sufentanil in urine from LDTD to ELISA. As of November 2025, urine samples were no longer assayed for sufentanil and USDTL removed the complex specimen validity algorithm that included pH and Nitrite to a simple creatinine measurement to determine the hydration of the urine specimens. 
-
 <div id="urine-table1" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-table"></i></span>
-  <span class="text-with-link">
-  <span class="text">Table 1. Urine Assay Thresholds for Analytes</span>
-  <a class="anchor-link" href="#urine-table1" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
+<span class="emoji"><i class="fa fa-table"></i></span><span class="text-with-link">
+<span class="text">Urine Assay Thresholds for Analytes</span><a class="anchor-link" href="#urine-table1" title="Copy link">
+<i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines">
 <thead>
-      <tr>
-        <th style="width: 30%;">Analyte</th>
-        <th style="width: 20%;"><span class="tooltip tooltip-bottom">LOD<span class="tooltiptext">Limit of detection</span></span> (ng/mL)</th>
-        <th style="width: 10%;"><span class="tooltip tooltip-bottom">LOQ<span class="tooltiptext">Limit of quantification</span></span> (ng/mL)</th>
-        <th style="width: 10%;">Cutoff (ng/mL)</th>
-        <th style="width: 40%;">Detection Window</th>
-      </tr>
+<tr>
+<th>Analytes</th>
+<th>Unit</th>
+<th><span class="tooltip tooltip-right">LOD<span class="tooltiptext">Limit of detection</span></span></th>
+<th><span class="tooltip tooltip-right">LOQ<span class="tooltiptext">Limit of quantification</span></span></th>
+<th><span class="tooltip tooltip-right">Cutoff<span class="tooltiptext">Threshold used to classify results as positive or negative</span></span></th>
+<th>Detection Window</th>
+</tr>
 </thead>
 <tbody>
-    <tr>
-        <td>Amphetamine</td>
-        <td>50</td>
-        <td>100</td>
-        <td>250</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Methamphetamine</td>
-        <td>50</td>
-        <td>100</td>
-        <td>250</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>MDA</td>
-        <td>50</td>
-        <td>100</td>
-        <td>250</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>MDMA</td>
-        <td>50</td>
-        <td>100</td>
-        <td>250</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>MDEA</td>
-        <td>50</td>
-        <td>100</td>
-        <td>250</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Carboxy-delta-9-THC</td>
-        <td>3</td>
-        <td>7.5</td>
-        <td>15</td>
-        <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word; white-space: normal;">2-5 days for casual use; 10-14 for chronic use</td>
-    </tr>
-    <tr>
-        <td>Carboxy-delta-8-THC</td>
-        <td>3</td>
-        <td>7.5</td>
-        <td>15</td>
-        <td>No consensus</td>
-    </tr>
-    <tr>
-        <td>Carboxy-cannabidiol</td>
-        <td>10</td>
-        <td>25</td>
-        <td>50</td>
-        <td>No consensus</td>
-    </tr>
-        <tr>
-        <td><span class="tooltip tooltip-right">Cotinine<span class="tooltiptext" style="font-size: 0.9em;"> Based on DRI® Cotinine assay for the qualitative and semiquantitative determination of Cotinine</span></span></td>
-        <td>34</td>
-        <td>34</td>
-        <td>500</td>
-        <td>Up to 7 days</td>
-    </tr>
-    <tr>
-        <td>Benzoylecgonine</td>
-        <td>20</td>
-        <td>50</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>6-MAM</td>
-        <td>2</td>
-        <td>4</td>
-        <td>10</td>
-        <td>8 hours</td>
-    </tr>
-    <tr>
-        <td>Codeine</td>
-        <td>10</td>
-        <td>50</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Hydrocodone</td>
-        <td>10</td>
-        <td>50</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Hydromorphone</td>
-        <td>10</td>
-        <td>50</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Morphine</td>
-        <td>10</td>
-        <td>50</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Oxycodone</td>
-        <td>60</td>
-        <td>120</td>
-        <td>300</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Oxymorphone</td>
-        <td>60</td>
-        <td>120</td>
-        <td>300</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Phencyclidine</td>
-        <td>5</td>
-        <td>12.5</td>
-        <td>25</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Methadone</td>
-        <td>60</td>
-        <td>120</td>
-        <td>300</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>EDDP</td>
-        <td>60</td>
-        <td>120</td>
-        <td>300</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Amobarbital</td>
-        <td>40</td>
-        <td>100</td>
-        <td>200</td>
-        <td>2-4 days</td>
-    </tr>
-    <tr>
-        <td>Butalbital</td>
-        <td>40</td>
-        <td>100</td>
-        <td>200</td>
-        <td>2-4 days</td>
-    </tr>
-    <tr>
-        <td>Pentobarbital</td>
-        <td>40</td>
-        <td>100</td>
-        <td>200</td>
-        <td>1-2 days</td>
-    </tr>
-    <tr>
-        <td>Phenobarbital</td>
-        <td>40</td>
-        <td>100</td>
-        <td>200</td>
-        <td>2 weeks</td>
-    </tr>
-    <tr>
-        <td>Secobarbital</td>
-        <td>40</td>
-        <td>100</td>
-        <td>200</td>
-        <td>1-2 days</td>
-    </tr>
-    <tr>
-        <td>&alpha;-Hydroxyalprazolam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>1-4 days</td>
-    </tr>
-    <tr>
-        <td>&alpha; -Hydroxytirazolam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>1-4 days</td>
-    </tr>
-    <tr>
-        <td>&alpha; -Hydroxymidazolam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>1-4 days</td>
-    </tr>
-    <tr>
-        <td>2-Hydroxyethylflurazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>1-4 days</td>
-    </tr>
-    <tr>
-        <td>7-Aminoflunitrazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>1-4 days</td>
-    </tr>
-    <tr>
-        <td>7-Aminoclonazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>1-4 days</td>
-    </tr>
-    <tr>
-        <td>7-Aminonitrazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>1-4 days</td>
-    </tr>
-    <tr>
-        <td>Lorazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>1-4 days</td>
-    </tr>
-    <tr>
-        <td>Nordiazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>1-4 days</td>
-    </tr>
-    <tr>
-        <td>Oxazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>1-4 days</td>
-    </tr>
-    <tr>
-        <td>Temazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>1-4 days</td>
-    </tr>
-    <tr>
-        <td>Norpropoxyphene</td>
-        <td>10</td>
-        <td>50</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Ketamine</td>
-        <td>10</td>
-        <td>50</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Norketamine</td>
-        <td>10</td>
-        <td>50</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Normeperidine</td>
-        <td>40</td>
-        <td>100</td>
-        <td>200</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Tramadol</td>
-        <td>40</td>
-        <td>80</td>
-        <td>200</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Buprenorphine</td>
-        <td>1</td>
-        <td>2</td>
-        <td>5</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Norbuprenorphine</td>
-        <td>1</td>
-        <td>2</td>
-        <td>5</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Ethyl glucuronide</td>
-        <td>50</td>
-        <td>100</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Ethyl sulfate</td>
-        <td>12.5</td>
-        <td>25</td>
-        <td>25</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Zolpidem</td>
-        <td>4</td>
-        <td>8</td>
-        <td>20</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Zolpidem Carboxylic Acid</td>
-        <td>4</td>
-        <td>8</td>
-        <td>20</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Carisoprodol</td>
-        <td>10</td>
-        <td>20</td>
-        <td>50</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Meprobamate</td>
-        <td>10</td>
-        <td>20</td>
-        <td>50</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-    <td colspan="5"></td>
-</tr>  
+<tr><td>2-Hydroxyethylflurazepam</td><td>ng/mL</td><td>20</td><td>40</td><td>100</td><td>1–4 days</td></tr>
+<tr><td>6-MAM</td><td>ng/mL</td><td>2</td><td>4</td><td>10</td><td>8 hours</td></tr>
+<tr><td>7-Aminoflunitrazepam<br>7-Aminoclonazepam<br>7-Aminonitrazepam</td><td>ng/mL</td><td>20</td><td>40</td><td>100</td><td>1–4 days</td></tr>
+<tr><td>&alpha;-Hydroxyalprazolam<br>&alpha;-Hydroxymidazolam<br>&alpha;-Hydroxytirazolam</td><td>ng/mL</td><td>20</td><td>40</td><td>100</td><td>1–4 days</td></tr>
+<tr><td>Amphetamine<br>Methamphetamine</td><td>ng/mL</td><td>50</td><td>100</td><td>250</td><td>2–3 days</td></tr>
+<tr><td>Amobarbital<br>Butalbital</td><td>ng/mL</td><td>40</td><td>100</td><td>200</td><td>2–4 days</td></tr>
+<tr><td>Benzoylecgonine</td><td>ng/mL</td><td>20</td><td>50</td><td>100</td><td>2–3 days</td></tr>
+<tr><td>Buprenorphine<br>Norbuprenorphine</td><td>ng/mL</td><td>1</td><td>2</td><td>5</td><td>2–3 days</td></tr>
+<tr><td>Carboxy-delta-9-THC</td><td>ng/mL</td><td>3</td><td>7.5</td><td>15</td><td>2–5 days (casual); 10–14 days (chronic)</td></tr>
+<tr><td>Carboxy-delta-8-THC</td><td>ng/mL</td><td>3</td><td>7.5</td><td>15</td><td>No consensus</td></tr>
+<tr><td>Carboxy-cannabidiol</td><td>ng/mL</td><td>10</td><td>25</td><td>50</td><td>No consensus</td></tr>
+<tr><td>Carisoprodol</td><td>ng/mL</td><td>10</td><td>20</td><td>50</td><td>2–3 days</td></tr>
+<tr><td>Codeine<br>Hydrocodone</td><td>ng/mL</td><td>10</td><td>50</td><td>100</td><td>2–3 days</td></tr>
+<tr><td><span class="tooltip tooltip-right">Cotinine<span class="tooltiptext" style="font-size: 0.9em;">Based on DRI® Cotinine assay (qualitative/semiquantitative)</span></span></td><td>ng/mL</td><td>34</td><td>34</td><td>500</td><td>Up to 7 days</td></tr>
+<tr><td>EDDP</td><td>ng/mL</td><td>60</td><td>120</td><td>300</td><td>2–3 days</td></tr>
+<tr><td>Ethyl glucuronide</td><td>ng/mL</td><td>50</td><td>100</td><td>100</td><td>2–3 days</td></tr>
+<tr><td>Ethyl sulfate</td><td>ng/mL</td><td>12.5</td><td>25</td><td>25</td><td>2–3 days</td></tr>
+<tr><td>Fentanyl<br>Norfentanyl<br>Alfentanil<br>Sufentanil</td><td>pg/mL</td><td>40</td><td>40</td><td>100</td><td>2–3 days</td></tr>
+<tr><td>Hydromorphone<br>Morphine</td><td>ng/mL</td><td>10</td><td>50</td><td>100</td><td>2–3 days</td></tr>
+<tr><td>Ketamine<br>Norketamine</td><td>ng/mL</td><td>10</td><td>50</td><td>100</td><td>2–3 days</td></tr>
+<tr><td>Lorazepam<br>Nordiazepam<br>Oxazepam<br>Temazepam</td><td>ng/mL</td><td>20</td><td>40</td><td>100</td><td>1–4 days</td></tr>
+<tr><td>MDA<br>MDMA<br>MDEA</td><td>ng/mL</td><td>50</td><td>100</td><td>250</td><td>2–3 days</td></tr>
+<tr><td>Meprobamate</td><td>ng/mL</td><td>10</td><td>20</td><td>50</td><td>2–3 days</td></tr>
+<tr><td>Methadone</td><td>ng/mL</td><td>60</td><td>120</td><td>300</td><td>2–3 days</td></tr>
+<tr><td>Normeperidine</td><td>ng/mL</td><td>40</td><td>100</td><td>200</td><td>2–3 days</td></tr>
+<tr><td>Norpropoxyphene</td><td>ng/mL</td><td>10</td><td>50</td><td>100</td><td>2–3 days</td></tr>
+<tr><td>Oxycodone<br>Oxymorphone</td><td>ng/mL</td><td>60</td><td>120</td><td>300</td><td>2–3 days</td></tr>
+<tr><td>Pentobarbital<br>Secobarbital</td><td>ng/mL</td><td>40</td><td>100</td><td>200</td><td>1–2 days</td></tr>
+<tr><td>Phenobarbital</td><td>ng/mL</td><td>40</td><td>100</td><td>200</td><td>2 weeks</td></tr>
+<tr><td>Phencyclidine</td><td>ng/mL</td><td>5</td><td>12.5</td><td>25</td><td>2–3 days</td></tr>
+<tr><td>Tramadol</td><td>ng/mL</td><td>40</td><td>80</td><td>200</td><td>2–3 days</td></tr>
+<tr><td>Zolpidem<br>Zolpidem Carboxylic Acid</td><td>ng/mL</td><td>4</td><td>8</td><td>20</td><td>2–3 days</td></tr>
 </tbody>
-<thead>
-      <tr>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Analyte</th>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">LOD (pg/mL)</th>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">LOQ (pg/mL)</th>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Cutoff (pg/mL)</th>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Detection Window</th>
-      </tr>
-</thead>
-    <tr>
-        <td>Fentanyl</td>
-        <td>40</td>
-        <td>40</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Norfentanyl</td>
-        <td>40</td>
-        <td>40</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Alfentanil</td>
-        <td>40</td>
-        <td>40</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Sufentanil</td>
-        <td>40</td>
-        <td>40</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
-    <tr>
-        <td>Norsufentanil</td>
-        <td>40</td>
-        <td>40</td>
-        <td>100</td>
-        <td>2-3 days</td>
-    </tr>
 </table>
 </div>
 
 <div id="urine-table2" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
-  <span class="text">Table 2. Mapping From Class to Screening Tests and Confirmatory Tests</span>
+  <span class="text">Mapping From Class to Screening & Confirmatory Tests</span>
   <a class="anchor-link" href="#urine-table2" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -686,10 +310,18 @@ Please note that as of May 19, 2025,  USDTL migrated the initial test for fentan
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Assay results may be scored as invalid if specimens are identified as dilute, substituted, adulterated, or otherwise insufficient based on validation. Validation is based on creatinine, pH, and nitrite measurements. <b>Only specimens with low creatinine (< 20 mg/dL) are confirmed using specific gravity via a refractometer</b> (decision grid below), and the creatinine analysis is repeated to rule out issues with the first analysis (e.g. sample mix-ups, air bubble in a line on the instrument, etc.). Creatinine results will be made available to users in a future release (<i>see <a href="../../../changelog/issues-updates/#pending-updates" target="_blank">pending updates</a></i>).</p>
-<img src="../images/Table1_biospec_urine.png" width="70%" height="auto" class="center">
-<br>
+<p>Assay results may be scored as invalid if specimens are identified as dilute, substituted, adulterated, or otherwise insufficient based on validation. Validation is based on creatinine, pH, and nitrite measurements, with creatinine analysis repeated to rule out issues with the first analysis (e.g., sample mix-ups, air bubble in a line on the instrument). Specimens with low creatinine (< 20 mg/dL) are confirmed using specific gravity via a refractometer. Decision grid:</p>
+<table class="compact-table">
+<thead><tr><th rowspan="2">Creatinine (mg/dL)</th><th colspan="5" style="text-align: center;">Specific Gravity</th></tr>
+<tr><th>1.000</th><th>1.001</th><th>1.002</th><th>1.003–1.019</th><th>≥1.020</th></tr></thead>
+<tbody>
+<tr><td>0–1.9</td><td>Substituted</td><td>Substituted</td><td>Invalid</td><td>Invalid</td><td>Substituted</td></tr>
+<tr><td>2.0–19.9</td><td>Invalid</td><td>Invalid</td><td>Dilute</td><td>Normal</td><td>Normal</td></tr>
+<tr><td>&gt;20</td><td colspan="5" class="muted-cell">Normal — Specific Gravity not required</td></tr>
+</tbody>
+</table>
 </div>
+
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
@@ -702,13 +334,12 @@ Please note that as of May 19, 2025,  USDTL migrated the initial test for fentan
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b>Final results for each substance follows these rules</b>:</p>
+<p><b>Final results for each substance follow these rules:</b></p>
 <ul>
-<li>If the confirmatory test for any substance analyte (e.g. Amphetamine (<code>c_amp_u</code>)) is positive based on predefined thresholds (<strong><a href="#urine-table1">Table 1</a></strong>), the class-level (<code>c_any_stim_u</code>) and sample-level (<code>c_any_specimen_u</code>) are also positive (value =1).</li>
-<li>Otherwise, if the  substance analyte confirmatory tests are negative (e.g., <code>c_ethglu_u</code> and <code>c_ethsyl_u</code>, values = 0) then class-level (e.g., <code>c_etgeia_u</code>) are negative (value =0). If all classes are negative (value = 0), then sample-level (e.g., <code>c_any_specimen_u</code>) are negative (value = 0).</li>
-<li>Finally, if any substance analyte confirmatory tests are invalid (value = 3) then that class-level, and sample-level values are also invalid (value = 3).</li>
+  <li>If any confirmatory analyte test (e.g., Amphetamine / <code>c_amp_u</code>) is positive, the corresponding class-level (<code>c_any_stim_u</code>) and sample-level (<code>c_any_specimen_u</code>) results are also positive.</li>
+  <li>If all confirmatory analyte tests within a class are negative (e.g., <code>c_ethglu_u</code>, <code>c_ethsyl_u</code>), the class-level result (e.g., <code>c_etgeia_u</code>) is negative. If all classes are negative, the sample-level result (<code>c_any_specimen_u</code>) is negative.</li>
+  <li>If any confirmatory analyte test is invalid, the corresponding class- and sample-level results are also invalid.</li>
 </ul>
-<p><b>Table 3. Screening Result Scoring</b></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
     <thead>
       <tr>
@@ -719,38 +350,21 @@ Please note that as of May 19, 2025,  USDTL migrated the initial test for fentan
        </tr>
     </thead>
     <tbody>
+<tr><td>Specimen</td>
+<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte)</td><td><code>c_any_specimen_u</code></td><td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td></tr>
+<tr><td>Class</td>
+<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte in class)</td><td><code>c_any_stim_u</code></td><td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td></tr>
 <tr>
-<td>Specimen</td>
-<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte)</td>
-<td><code>c_any_specimen_u</code></td>
-<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
-</tr>
-<tr>
-<td>Class</td>
-<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte in class)</td>
-<td><code>c_any_stim_u</code></td>
-<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
-</tr>
-<tr>
-<td rowspan="3">Analyte</td>
-<td>Screening results</td>
-<td><code>s_amp_u</code></td>
-<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
-</tr>
-<tr>
-<td>Confirmatory results</td>
-<td><code>c_amp_u</code></td>
-<td>concentration value</td>
-</tr>
-<tr>
-<td>Confirmatory results - categorical</td>
-<td><code>c_amp_u_cat</code>⁠<span class="blue-text">**</span></td>
-<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid; <code>4</code>=screen negative</td>
-</tr>
+<td rowspan="3">Analyte</td><td>Screening results</td><td><code>s_amp_u</code></td><td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td></tr>
+<tr><td>Confirmatory results</td><td><code>c_amp_u</code></td><td>concentration value</td></tr>
+<tr><td>Confirmatory results - categorical</td><td><code>c_amp_u_cat</code>⁠<sup>1</sup></td><td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid; <code>4</code>=screen negative</td></tr>
 </tbody>
+<tfoot>
+<tr>
+  <td colspan="4" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
+    <sup><b>1</b></sup><i>Note: the categorical confirmatory test variable for nicotine follows the convention <code>c_nicotine_u</code><ii></td></tr>
+</tfoot>
 </table>
-⁠<span class="blue-text">**</span><small>Note: the categorical confirmatory test variable for nicotine follows the convention: <code>c_nicotine_u</code>.</small>
-<br>
 </div>
 
 ## References
