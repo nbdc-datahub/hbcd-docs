@@ -49,6 +49,24 @@ For the USDTL assay, fingernail and toenail specimens are sorted by weight, and 
 
 Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)), a confirmatory test result for any substance analyte is determined to be positive, negative, or invalid (*QNS* i.e. *quantity not sufficient*). Substance analytes (e.g. **Amphetamine/`c_amp_n`**) are grouped into different classes by analyte screening tests and confirmatory tests ([see details](#nails-table2)). 
 
+<style>
+.analyte-table .num {
+  text-align: right;
+  white-space: nowrap;
+}
+.analyte-table .unit {
+  font-size: 0.75em;
+  color: #6b7280;
+}
+.analyte-table .group td {
+  font-weight: 600;
+  font-size: 0.85em;
+  color: #4b5563;
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
+}
+</style>
+
 <div id="nails-table1" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
@@ -60,350 +78,34 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<p>The detection window for all analytes is 3-6 and 10-14 months for finger and toe nails, respectively, with the exception of Ethyl glucuronide (finger nails: 3; toe nails: no consensus).</p>
+<table class="compact-table-no-vertical-lines analyte-table">
 <thead>
-    <tr>
-    <th style="width: 30%;">Analyte</th>
-    <th style="width: 20%;"><span class="tooltip tooltip-bottom">LOD
-                <span class="tooltiptext">Limit of detection</span>
-            </span> (pg/mL)</th>
-    <th style="width: 10%;"><span class="tooltip tooltip-bottom">LOQ
-                <span class="tooltiptext">Limit of quantification</span>
-            </span> (pg/mL)</th>
-    <th style="width: 10%;">Cutoff (pg/mL)</th>
-    <th style="width: 40%;">Detection Window (months)</th>
-    </tr>
+<tr>
+<th>Analytes</th>
+<th class="num"><span class="tooltip tooltip-bottom">LOD<span class="tooltiptext">Limit of detection</span></span> / <span class="unit">(pg/mL)</span></th>
+<th class="num"><span class="tooltip tooltip-bottom">LOQ<span class="tooltiptext">Limit of quantification</span></span> / <span class="unit">(pg/mL)</span></th>
+<th class="num"><span class="tooltip tooltip-left">Cutoff<span class="tooltiptext">Threshold used to classify results as positive or negative</span></span> / <span class="unit">(pg/mL)</span></th>
+</tr>
 </thead>
 <tbody>
-    <tr>
-        <td>Amphetamine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Methamphetamine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>MDA</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>MDMA</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>MDEA</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Carboxy-delta-9-THC</td>
-        <td>0.01</td>
-        <td>0.02</td>
-        <td>0.05</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Cocaine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Cocaethylene</td>
-        <td>10</td>
-        <td>20</td>
-        <td>50</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Benzoylecgonine</td>
-        <td>10</td>
-        <td>20</td>
-        <td>50</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norcocaine</td>
-        <td>10</td>
-        <td>20</td>
-        <td>50</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>6-MAM</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Codeine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Hydrocodone</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Hydromorphone</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Morphine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norhydrocodone</td>
-        <td>8</td>
-        <td>16</td>
-        <td>40</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Oxycodone</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Oxymorphone</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Noroxycodone</td>
-        <td>8</td>
-        <td>16</td>
-        <td>40</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Methadone</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>EDDP</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Amobarbital</td>
-        <td>80</td>
-        <td>80</td>
-        <td>200</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Butalbital</td>
-        <td>80</td>
-        <td>80</td>
-        <td>200</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Pentobarbital</td>
-        <td>80</td>
-        <td>80</td>
-        <td>200</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Phenobarbital</td>
-        <td>80</td>
-        <td>80</td>
-        <td>200</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Secobarbital</td>
-        <td>80</td>
-        <td>80</td>
-        <td>200</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Alprazolam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Diazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Midazolam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Nordiazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Oxazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Temazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Ketamine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norketamine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Tramadol</td>
-        <td>200</td>
-        <td>400</td>
-        <td>500</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Fentanyl</td>
-        <td>2</td>
-        <td>4</td>
-        <td>10</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norfentanyl</td>
-        <td>2</td>
-        <td>4</td>
-        <td>10</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Alfentanil</td>
-        <td>2</td>
-        <td>4</td>
-        <td>10</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Acetyl Fentanyl</td>
-        <td>2</td>
-        <td>4</td>
-        <td>10</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Acetyl Norfentanyl</td>
-        <td>2</td>
-        <td>4</td>
-        <td>10</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Sufentanil</td>
-        <td>1</td>
-        <td>2</td>
-        <td>5</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norsufentanil</td>
-        <td>2</td>
-        <td>2</td>
-        <td>5</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Buprenorphine</td>
-        <td>4</td>
-        <td>8</td>
-        <td>20</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norbuprenorphine</td>
-        <td>4</td>
-        <td>8</td>
-        <td>20</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Ethyl glucuronide</td>
-        <td>4</td>
-        <td>8</td>
-        <td>20</td>
-        <td>Finger 3; Toe no consensus</td>
-    </tr>
-    <tr>
-        <td>Nicotine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Cotinine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
+<tr><td>Amphetamine / Methamphetamine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>MDA / MDMA / MDEA</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Carboxy-delta-9-THC</td><td class="num">0.01</td><td class="num">0.02</td><td class="num">0.05</td></tr>
+<tr><td>Cocaine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Cocaethylene / Benzoylecgonine / Norcocaine</td><td class="num">10</td><td class="num">20</td><td class="num">50</td></tr>
+<tr><td>6-MAM</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Codeine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Hydrocodone</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Hydromorphone / Morphine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Norhydrocodone</td><td class="num">8</td><td class="num">16</td><td class="num">40</td></tr>
+<tr><td>Fentanyl / Norfentanyl / Alfentanil / Acetyl Fentanyl / Acetyl Norfentanyl</td><td class="num">2</td><td class="num">4</td><td class="num">10</td>
+</tr>
+<tr><td>Sufentanil</td><td class="num">1</td><td class="num">2</td><td class="num">5</td></tr>
+<tr><td>Norsufentanil</td><td class="num">2</td><td class="num">2</td><td class="num">5</td></tr>
+<tr><td>Tramadol</td><td class="num">200</td><td class="num">400</td><td class="num">500</td></tr>
+<tr><td>Ethyl glucuronide</td><td class="num">4</td><td class="num">8</td><td class="num">20</td></tr>
+<tr><td>Nicotine / Cotinine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
 </tbody>
 </table>
 </div>

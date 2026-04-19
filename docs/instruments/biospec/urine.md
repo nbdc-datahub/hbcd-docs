@@ -103,198 +103,38 @@ Urine toxicology assay results include:
 </div>
 
 <div id="urine-table2" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-table"></i></span>
-  <span class="text-with-link">
-  <span class="text">Mapping From Class to Screening & Confirmatory Tests</span>
-  <a class="anchor-link" href="#urine-table2" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
+<span class="emoji"><i class="fa fa-table"></i></span>
+<span class="text-with-link"><span class="text">Mapping From Class to Screening & Confirmatory Tests</span>
+<a class="anchor-link" href="#urine-table2" title="Copy link"><i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-    <thead>
-      <tr>
-        <th style="width: 20%;">Class</th>
-        <th style="width: 20%;">Screening Test</th>
-        <th style="width: 60%;">Confirmatory Test (positive screen reflex)</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td colspan="1" rowspan="6">
-            <div>stimulant (<code>c_any_stim_u</code>)</div>
-        </td>
-        <td colspan="1" rowspan="2">
-            <div>amp (<code>s_amp_u</code>)</div>
-        </td>
-        <td>Amphetamine (<code>c_amp_u</code>)</td>
-    </tr>
-    <tr>
-        <td>Methamphetamine (<code>c_meth_u</code>)</td>
-    </tr>
-    <tr>
-        <td colspan="1" rowspan="3">
-            <div>mdma (<code>s_mdma_u</code>)</div>
-        </td>
-        <td>MDM (<code>c_mdm_u</code>)</td>
-    </tr>
-    <tr>
-        <td>MDA (<code>c_mda_u</code>)</td>
-    </tr>
-    <tr>
-        <td>MDEA (<code>c_mdea_u</code>)</td>
-    </tr>
-    <tr>
-        <td>coc (<code>s_coc_u</code>)</td>
-        <td>Benzoylecgonine (<code>c_ben_u</code>)</td>
-    </tr>
-    <tr>
-        <td colspan="1" rowspan="3">
-            <div>cannabinoid (<code>c_any_cannabinoid_u</code>)</div>
-        </td>
-        <td colspan="1" rowspan="3">
-            <div>thc (<code>s_thc_u</code>)</div>
-        </td>
-        <td>Carboxy-delta-9-THC (<code>c_delta-9-THC_u</code>)</td>
-    </tr>
-    <tr>
-        <td>Carboxy-Cannabidiol (<code>c_cannabidiol_u</code>)</td>
-    </tr>
-    <tr>
-        <td>Carboxy-delta-8-THC (<code>c_delta-8-THC_u</code>)</td>
-    </tr>
-    <tr>
-        <td colspan="1" rowspan="5">
-            <div>barbiturate (<code>c_any_barb_u</code>)</div>
-        </td>
-        <td colspan="1" rowspan="5">
-            <div>bar (<code>s_bar_u</code>)</div>
-        </td>
-        <td>Amobarbital (<code>c_amobarb_u</code>)</td>
-    </tr>
-    <tr><td>Secobarbital (<code>c_secobarb_u</code>)</td></tr>
-    <tr><td>Pentobarbital (<code>c_pentobarb_u</code>)</td></tr>
-    <tr><td>Phenobarbital (<code>c_phenobarb_u</code>)</td></tr>
-    <tr><td>Butalbital (<code>c_butalbital_u</code>)</td></tr>
-    <tr>
-        <td colspan="1" rowspan="11">
-            <div>benzodiazepine (<code>c_any_benzo_u</code>)</div>
-        </td>
-        <td colspan="1" rowspan="11">
-            <div>benz (<code>s_benz_u</code>)</div>
-        </td>
-        <td>Oxazepam (<code>c_oxaz_u</code>)</td>
-    </tr>
-    <tr><td>Nordiazepam (<code>c_nord_u</code>)</td></tr>
-    <tr><td>Temazepam (<code>c_tema_u</code>)</td></tr>
-    <tr><td>Hydroxymidazolam (<code>c_homi_u</code>)</td></tr>
-    <tr><td>Alphahydroxyalprazolam (<code>c_aha_u</code>)</td></tr>
-    <tr><td>2hydroxyethylflurazepam (<code>c_2hef_u</code>)</td></tr>
-    <tr><td>7Aminoclonazepam (<code>c_7ac_u</code>)</td></tr>
-    <tr><td>7Aminoflunitrazepam (<code>c_7af_u</code>)</td></tr>
-    <tr><td>7Aminonitrazepam (<code>c_7an_u</code>)</td></tr>
-    <tr><td>Alphahydroxytriazolam (<code>c_aht_u</code>)</td></tr>
-    <tr><td>Lorazepam (<code>c_lor_u</code>)</td></tr>
-    <tr>
-        <td colspan="1" rowspan="19">
-            <div>opioids (<code>c_any_opioid_u</code>)</div>
-        </td>
-        <td colspan="1" rowspan="5">
-            <div>opi (<code>s_opi_u</code>)</div>
-        </td>
-        <td>Codeine (<code>c_cod_u</code>)</td></tr>
-    <tr><td>Morphine (<code>c_mor_u</code>)</td></tr>
-    <tr><td>MAM (<code>c_mam_u</code>)</td></tr>
-    <tr><td>Hydrocodone (<code>c_hydroc_u</code>)</td></tr>
-    <tr><td>Hydromorphone (<code>c_hydrom_u</code>)</td></tr>
-    <tr>
-        <td colspan="1" rowspan="2"><div>mtd (<code>s_mtd_u</code>)</div></td>
-        <td>Methadone (<code>c_mtd_u</code>)</td></tr>
-    <tr>
-    <td>EDDP (<code>c_eddp_u</code>)</td></tr>
-    <tr>
-        <td>ppx (<code>s_ppx_u</code>)</td>
-        <td>Norpropoxyphene (<code>c_nppx_u</code>)</td>
-    </tr>
-    <tr>
-        <td colspan="1" rowspan="2">
-            <div>oxyc (<code>s_oxyc_u</code>)</div>
-        </td>
-        <td>Oxycodone (<code>c_oxyc_u</code>)</td>
-    </tr>
-    <tr>
-        <td>Oxymorphone (<code>c_oxym_u</code>)</td>
-    </tr>
-    <tr>
-        <td>mep (<code>s_mep_u</code>)</td>
-        <td>Normeperidine (<code>c_nmep_u</code>)</td>
-    </tr>
-    <tr>
-        <td>tram (<code>s_tram_u</code>)</td>
-        <td>Tramadol (<code>c_tram_u</code>)</td>
-    </tr>
-    <tr>
-        <td colspan="1" rowspan="3"><div>fent (<code>s_fent_u</code>)</div></td>
-        <td>Fentanyl (<code>c_fent_u</code>)</td>
-    </tr>
-    <tr>
-        <td>Norfentanyl (<code>c_nfent_u</code>)</td></tr>
-    <tr><td>Alfentanil (<code>c_afent_u</code>)</td></tr>
-    <tr>
-        <td colspan="1" rowspan="2"><div>suf (<code>s_suf_u</code>)</div></td>
-        <td>Norsufentanil (<code>c_nsuf_u</code>)</td>
-    </tr>
-    <tr><td>Sufentanil (<code>c_suf_u</code>)</td></tr>
-    <tr>
-        <td colspan="1" rowspan="2">
-            <div>bup (<code>s_bup_u</code>)</div>
-        </td>
-        <td>Buprenorphine (<code>c_bup_u</code>)</td></tr>
-    <tr><td>Norbuprenorpine (<code>c_nbup_u</code>)</td></tr>
-    <tr>
-        <td colspan="1" rowspan="2">
-            <div>muscle relaxant (<code>c_any_mscrlx_u</code>)</div>
-        </td>
-        <td colspan="1" rowspan="2">
-            <div>crs (<code>s_crs_u</code>)</div>
-        </td>
-        <td>Carisoprodol (<code>c_crs_u</code>)</td>
-    </tr>
-    <tr><td>Meprobamate (<code>c_mepb_u</code>)</td></tr>
-    <tr>
-        <td colspan="1" rowspan="2"><div>ethanol (<code>c_ethanol_u</code>)</div></td>
-        <td colspan="1" rowspan="2">
-            <div>etgeia (<code>s_etgeia_u</code>)</div>
-        </td>
-        <td>EthylGluc-0100 (<code>c_ethglu_u</code>)</td>
-    </tr>
-    <tr><td>EthylSul-100 (<code>c_ethsyl_u</code>)</td></tr>
-    <tr>
-        <td colspan="1" rowspan="2">
-            <div>sedative (<code>c_sedative_u</code>)</div>
-        </td>
-        <td colspan="1" rowspan="2">
-            <div>zol (<code>s_zol_u</code>)</div>
-        </td>
-        <td>Zolpidem (<code>c_zol_u</code>)</td>
-    </tr>
-    <tr>
-        <td>Zolpidem CA (<code>c_zolc_u</code>)</td>
-    </tr>
-    <tr>
-        <td colspan="1" rowspan="3"><div>dissociative anesthetic (<code>c_disanesth_u</code>)</div></td>
-        <td colspan="1" rowspan="2"><div>ket (<code>s_ket_u</code>)</div></td>
-        <td>Ketamine (<code>c_ket_u</code>)</td>
-    </tr>
-    <tr><td>Norketamine (<code>c_nket_u</code>)</td></tr>
-    <tr><td>pcp (<code>s_pcp_u</code>)</td>
-    <td>Phencyclidine (<code>c_pcp_u</code>)</td></tr>
-    <tr><td>nicotine (<code>c_nicotine_u</code>)</td>
-        <td>&nbsp;</td>
-        <td>Cotinine (<code>c_cot_u</code>)</td>
-    </tr>
+<table class="compact-table-no-vertical-lines">
+<thead><tr><th>Class</th><th>Screening Test</th><th>Confirmatory Test (positive screen reflex)</th></tr></thead>
+<tbody>
+<tr><td rowspan="3">stimulant (<code>c_any_stim_u</code>)</td><td>amp (<code>s_amp_u</code>)</td><td>Amphetamine (<code>c_amp_u</code>)<br>Methamphetamine (<code>c_meth_u</code>)</td></tr>
+<tr><td>mdma (<code>s_mdma_u</code>)</td><td>MDM (<code>c_mdm_u</code>)<br>MDA (<code>c_mda_u</code>)<br>MDEA (<code>c_mdea_u</code>)</td></tr>
+<tr><td>coc (<code>s_coc_u</code>)</td><td>Benzoylecgonine (<code>c_ben_u</code>)</td></tr>
+<tr><td>cannabinoid (<code>c_any_cannabinoid_u</code>)</td><td>thc (<code>s_thc_u</code>)</td><td>Carboxy-delta-9-THC (<code>c_delta-9-THC_u</code>)<br>Carboxy-Cannabidiol (<code>c_cannabidiol_u</code>)<br>Carboxy-delta-8-THC (<code>c_delta-8-THC_u</code>)</td></tr>
+<tr><td>barbiturate (<code>c_any_barb_u</code>)</td><td>bar (<code>s_bar_u</code>)</td><td>Amobarbital (<code>c_amobarb_u</code>)<br>Secobarbital (<code>c_secobarb_u</code>)<br>Pentobarbital (<code>c_pentobarb_u</code>)<br>Phenobarbital (<code>c_phenobarb_u</code>)<br>Butalbital (<code>c_butalbital_u</code>)</td></tr>
+<tr><td>benzodiazepine (<code>c_any_benzo_u</code>)</td><td>benz (<code>s_benz_u</code>)</td><td>
+Oxazepam (<code>c_oxaz_u</code>)<br>Nordiazepam (<code>c_nord_u</code>)<br>Temazepam (<code>c_tema_u</code>)<br>Hydroxymidazolam (<code>c_homi_u</code>)<br>Alphahydroxyalprazolam (<code>c_aha_u</code>)<br>2hydroxyethylflurazepam (<code>c_2hef_u</code>)<br>7Aminoclonazepam (<code>c_7ac_u</code>)<br>7Aminoflunitrazepam (<code>c_7af_u</code>)<br>7Aminonitrazepam (<code>c_7an_u</code>)<br>Alphahydroxytriazolam (<code>c_aht_u</code>)<br>Lorazepam (<code>c_lor_u</code>)</td></tr>
+<tr><td rowspan="9">opioids (<code>c_any_opioid_u</code>)</td><td>opi (<code>s_opi_u</code>)</td><td>Codeine (<code>c_cod_u</code>)<br>Morphine (<code>c_mor_u</code>)<br>MAM (<code>c_mam_u</code>)<br>Hydrocodone (<code>c_hydroc_u</code>)<br>Hydromorphone (<code>c_hydrom_u</code>)</td></tr>
+<tr><td>mtd (<code>s_mtd_u</code>)</td><td>Methadone (<code>c_mtd_u</code>)<br>EDDP (<code>c_eddp_u</code>)</td></tr>
+<tr><td>ppx (<code>s_ppx_u</code>)</td><td>Norpropoxyphene (<code>c_nppx_u</code>)</td></tr>
+<tr><td>oxyc (<code>s_oxyc_u</code>)</td><td>Oxycodone (<code>c_oxyc_u</code>)<br>Oxymorphone (<code>c_oxym_u</code>)</td></tr>
+<tr><td>mep (<code>s_mep_u</code>)</td><td>Normeperidine (<code>c_nmep_u</code>)</td></tr>
+<tr><td>tram (<code>s_tram_u</code>)</td><td>Tramadol (<code>c_tram_u</code>)</td></tr>
+<tr><td>fent (<code>s_fent_u</code>)</td><td>Fentanyl (<code>c_fent_u</code>)<br>Norfentanyl (<code>c_nfent_u</code>)<br>Alfentanil (<code>c_afent_u</code>)
+</td></tr>
+<tr><td>suf (<code>s_suf_u</code>)</td><td>Norsufentanil (<code>c_nsuf_u</code>)<br>Sufentanil (<code>c_suf_u</code>)</td></tr>
+<tr><td>bup (<code>s_bup_u</code>)</td><td>Buprenorphine (<code>c_bup_u</code>)<br>Norbuprenorpine (<code>c_nbup_u</code>)</td></tr>
+<tr><td>muscle relaxant (<code>c_any_mscrlx_u</code>)</td><td>crs (<code>s_crs_u</code>)</td><td>Carisoprodol (<code>c_crs_u</code>)<br>Meprobamate (<code>c_mepb_u</code>)</td></tr>
+<tr><td>ethanol (<code>c_ethanol_u</code>)</td><td>etgeia (<code>s_etgeia_u</code>)</td><td>
+EthylGluc-0100 (<code>c_ethglu_u</code>)<br>EthylSul-100 (<code>c_ethsyl_u</code>)</td></tr>
+<tr><td>sedative (<code>c_sedative_u</code>)</td><td>zol (<code>s_zol_u</code>)</td><td>Zolpidem (<code>c_zol_u</code>)<br>Zolpidem CA (<code>c_zolc_u</code>)</td></tr>
+<tr><td>dissociative anesthetic (<code>c_disanesth_u</code>)</td><td>ket (<code>s_ket_u</code>)<br>pcp (<code>s_pcp_u</code>)</td><td>
+Ketamine (<code>c_ket_u</code>)<br>Norketamine (<code>c_nket_u</code>)<br>Phencyclidine (<code>c_pcp_u</code>)</td></tr>
+<tr><td>nicotine (<code>c_nicotine_u</code>)</td><td>&nbsp;</td><td>Cotinine (<code>c_cot_u</code>)</td></tr>
 </tbody>
 </table>
 </div>
