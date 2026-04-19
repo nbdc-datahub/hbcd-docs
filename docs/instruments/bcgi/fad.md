@@ -1,21 +1,25 @@
-# FAD (GF6+)
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>mh_cg_fad</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">Family Assessment Device (General Functioning 6+) 
-    </div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Global Functioning of the Family Unit</div>
-  </div>
-</div>
+# Family Assessment Device (FAD (GF6+))
 
----------------------------------------------
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>mh_cg_fad</code></td></tr>
+<tr><td><b>Construct</b></td><td>Global Functioning of the Family Unit</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V04, V06</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
+<b>Method</b>: Administered by Self or HBCD Study staff, in person or remote (2 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td>
+    <ul>
+  <li>Item- and measure-level missingness were examined.</li>
+  <li>CCheck age is within expected ranges.</li>
+  <li>Scoring algorithm evaluated to ensure correct score calculations.</li>
+  <li>Review summary statistics and visualizations (item frequencies, scores distributions, prorated scoring).</li>
+  <li>Cronbach’s alpha calculated to assess inter-item reliability.</li>
+</ul>
+</td></tr>
+</tbody></table>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -35,33 +39,6 @@
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No </td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Birth Parent or Primary Caregiver</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Administered by Self or HBCD Study staff in person, in person or remote</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V04, V06</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>2 minutes</td></tr>
-<tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
-    <ul>
-  <li>Item-level and measure-level missingness were examined.</li>
-  <li>Child age at administration was checked to see if within the expected range for the visit.</li>
-  <li>Scoring algorithm was evaluated to ensure that scores and prorated scores were calculated correctly.</li>
-  <li>Summary statistics and visualizations were generated to review item-level frequencies and the distribution of total scores (calculated with application of prorated scoring to account for missing data).</li>
-  <li>Cronbach’s alpha was calculated to assess inter-item reliability.</li>
-</ul>
-</td></tr>      
-</tbody>
-</table>
 
 ## Instrument Details
 
