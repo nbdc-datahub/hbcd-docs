@@ -1,4 +1,4 @@
-# Processing & Analytic Software Standards
+# Processing & Derivative Data Standards
 
 <img src="../nmind.png" alt="NMIND" width="80%" height="auto" class="center">
 

@@ -67,7 +67,7 @@ nav:
     - Data Standards:
         - Metadata: access/metadata.md
         - Naming Conventions: access/naming-conventions.md
-    - Processing & Analytic Standards: 
+    - Processing & Derivative Data Standards: 
         - Processing Pipelines: instruments/processing/index.md
         - Pipeline Software Standards: instruments/processing/standards.md
   - Data Structure & File Types:
