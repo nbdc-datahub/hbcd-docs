@@ -42,7 +42,6 @@ extra_css:
   - css/custom.css
   - css/headers.css
   - css/legends.css
-  - css/logos.css
   - css/notifications.css
   - css/reduce-righthand-whitespace.css
   - css/tables.css
