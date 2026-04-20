@@ -1,23 +1,27 @@
 # DSM5 Severity Acute Stress or PTSD
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>pex_bm_str__ptsd</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder
-    </div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">PTSD/Acute Stress Disorder Symptom Severity</div>
-  </div>
-</div>
+National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder
 
----------------------------------------------
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>pex_bm_str__ptsd</code></td></tr>
+<tr><td><b>Construct</b></td><td>PTSD/Acute Stress Disorder Symptom Severity</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V01, V02, V03</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Pregnant Participant, Birth Parent, or Primary Caregiver<<br>
+<b>Method</b>: Self-administered in-person or remotely (3 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td>
+<ul>
+<li>Checks for missing data based on counts for items completed by each participant</li>
+<li>Verification of scoring accuracy</li>
+<li>Summary statistics to examine item-level frequencies and total scores</li>
+<li>Review of response distributions for potential outliers</li>
+</ul>  
+</td></tr>
+</tbody></table>
+
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -38,32 +42,6 @@ The co-occurrence of psychiatric symptoms and substance use during pregnancy is 
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Pregnant Participant, Birth Parent, or Primary Caregiver</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered in-person or remote</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V01, V02, V03</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>3 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
-<ul>
-<li>Checks for missing data based on counts for items completed by each participant</li>
-<li>Verification of scoring accuracy</li>
-<li>Summary statistics to examine item-level frequencies and total scores</li>
-<li>Review of response distributions for potential outliers</li>
-</ul>        
-</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 
