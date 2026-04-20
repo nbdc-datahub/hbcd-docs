@@ -2,6 +2,20 @@
 
 <img src="../nmind.png" alt="NMIND" width="80%" height="auto" class="center">
 
+<div id="study-design-logic-child-centric-data-structure" class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Application of Software Standards to Derivate Data</span>
+  <a class="anchor-link" href="#study-design-logic-child-centric-data-structure" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+</div>
+<div class="notification-static-content">
+<p>Note that all software standards also apply to derivative data standards for HBCD Study data. In practice, this means software must comply with the data standards in order for its outputs to be eligible for inclusion in a release.</p>
+</div>
+<p></p>
+
 HBCD pipeline developers, Workgroups, and community contributors who wish to integrate their tools into the HBCD release environment are expected to follow these guidelines to ensure standardization of HBCD software and documentation. These guidelines are rooted in principles and utilities developed by [NMIND](https://www.nmind.org/about) aimed at promoting reproducibility and standardization in neuroimaging tools ([Kiar et al. 2023](https://www.nature.com/articles/s41562-023-01647-0)). Among these is the [NMIND Coding Standards Checklist](https://www.nmind.org/standards-checklist/), a comprehensive framework for evaluating the quality of a tool's documentation, infrastructure, and testing capabilities against open, community-developed, scientific software-development standards. Badge ratings for all tools that complete this review process can be viewed at [Evaluated Tools](https://www.nmind.org/proceedings/). 
 
 Software utilized for the HBCD release must undergo NMIND peer review and be published with a DOI. To initiate editorial review, developers complete the checklist and submit a pull request to the [proceedings repository](https://github.com/nmind/proceedings), including the tool's exported JSON file for external review. Any issues or feature requests related to this utility should be reported as issues in the NMIND [GitHub repository](https://github.com/nmind/standards-checklist). 

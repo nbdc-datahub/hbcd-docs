@@ -4,7 +4,7 @@ The HBCD dataset follows NBDC data structure standards established as part of th
 
 ### <i style="color: #199bd6; margin-right: 4px;" class="fa-solid fa-table"></i> Tabulated Data
 
-Tables in a standardized format across instruments, with one row per participant session and one column per variable. This generally includes demographics, questionnaire/form-based study instruments (e.g. <a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), and select file-based data converted to HBCD tabulated format ([see details](#which-file-based-data-are-also-available-as-hbcd-tabulated-data)).       
+Tabulated data are tables in a standardized format across instruments, with one row per participant session and one column per variable. This generally includes demographics, questionnaire/form-based study instruments (e.g. <a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), and select file-based data converted to HBCD tabulated format ([see details](#which-file-based-data-are-also-available-as-hbcd-tabulated-data)).       
 <a href="../phenotypes" target="_blank" class="inline-doc-link">View Tabulated Data Documentation →</a>
 
 ### <i style="color: #199bd6; margin-right: 4px;" class="fa-solid fa-folder-open"></i> File-Based Data
