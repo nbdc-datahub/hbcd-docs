@@ -65,8 +65,9 @@ nav:
     - Responsible Data Use: access/resp_data_use.md
     - Tools: access/tools.md
   - Study Standards & Conventions:
-    - Metadata: access/metadata.md
-    - Naming Conventions: access/naming-conventions.md
+    - Data Standards:
+        - Metadata: access/metadata.md
+        - Naming Conventions: access/naming-conventions.md
     - Processing & Analytic Standards: 
         - Processing Pipelines: instruments/processing/index.md
         - Pipeline Software Standards: instruments/processing/standards.md

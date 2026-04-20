@@ -87,7 +87,9 @@
 <p>It is prohibited to input HBCD data into generative AI tools (e.g., ChatGPT) because doing so would violate the terms of the data use agreement. These agreements strictly limit access to approved individuals to protect sensitive information. Generative AI tools process input data in ways that may result in unauthorized access or unintended use, making them unsuitable for handling restricted data.</p>
 </div>
 
-## Protocol
+
+
+## Release Data
 
 <div id="faq-protocol" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -134,8 +136,6 @@
 </tbody>
 </table>
 </div>
-
-## Release Data
 
 <div id="faq-tab-vs-fb" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -199,7 +199,7 @@
 <p>Instrument table and field names may contain either single or double underscores. Single underscores separate main naming components (e.g. the domain or source of the data) while double underscores separate subcomponents that provide additional details nested within the main naming components. See <a href="../../access/naming-conventions/#convention-logic-rules">Naming Conventions</a> for full details.
 </div>
 
-### Imaging Data
+## Imaging Data
 
 <!-- 
 REVIEW & REVISE THIS FAQ
@@ -264,7 +264,7 @@ REVIEW & REVISE THIS FAQ
 <div id="faq-dataproc" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
-    <span class="text">What methods were used for processing the imaging data to produce the minimally processed and tabulated imaging data?</span>
+    <span class="text">What methods were used to process imaging data?</span>
     <a class="anchor-link" href="#faq-dataproc" title="Copy link">
     <i class="fa-solid fa-link"></i>
     </a>
