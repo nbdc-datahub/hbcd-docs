@@ -93,35 +93,5 @@ BIDS is a community-driven standard for organizing neuroimaging and behavioral d
 HBCD pipelines must maintain living documentation via a dedicated website. This provides a current, easily navigable resource beyond static publications or a GitHub README. We recommend hosting documentation with [Read the Docs](https://docs.readthedocs.com/platform/stable/) or [GitHub Pages](https://pages.github.com/). See the [fMRIPrep documentation](https://fmriprep.org/en/stable/) for guidance on organization of level of detail. Include clear guidance on how to cite the documentation (<a href="https://fmriprep.org/en/stable/#citation">example</a>).
 
 
-## Current HBCD Pipeline & Utility Evaluations
-A full list of tools evaluated through the [NMIND Coding Standards Checklist](https://www.nmind.org/standards-checklist/) can be found on their webpage under [Evaluated Tools](https://www.nmind.org/proceedings/). Below are the badge rating details for pipelines integrated into the HBCD release environment:
-
-- [MRIQC](https://www.nmind.org/proceedings/mriqc/)
-- [BME-X](https://www.nmind.org/proceedings/bmex/)
-- [BIBSNet](https://www.nmind.org/proceedings/bibsnet/)
-- [infant-fMRIPrep](https://www.nmind.org/proceedings/nibabies/) (as well as base software [fMRIPrep](https://www.nmind.org/proceedings/fmriprep/))
-- [XCP-D](https://www.nmind.org/proceedings/xcpd/)
-- [QSIPrep](https://www.nmind.org/proceedings/qsiprep/) 
-- [QSIRecon](https://www.nmind.org/proceedings/qsirecon/)
-- [qMRI Postproc](https://www.nmind.org/proceedings/hbcd_qmri_postproc/)
-- [HBCD-MADE](https://www.nmind.org/proceedings/hbcdmade/)
-- [OSPREY-BIDS](https://www.nmind.org/proceedings/osprey_bids/) (as well as base software [OSPREY](https://www.nmind.org/proceedings/osprey/))
-- [HBCD-Motion](https://www.nmind.org/proceedings/hbcd_motion_postproc/)
-
-
-
-
-
-<!-- <div id="study-design-logic-child-centric-data-structure" class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text-with-link">
-  <span class="text">Application of Software Standards to Derivate Data</span>
-  <a class="anchor-link" href="#study-design-logic-child-centric-data-structure" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-</div>
-<div class="notification-static-content">
-<p>Note that all software standards also apply to derivative data standards for HBCD Study data. In practice, this means software must comply with the data standards in order for its outputs to be eligible for inclusion in a release.</p>
-</div>
-<p></p> -->
+<!-- ## Current HBCD Pipeline & Utility Evaluations
+A full list of tools evaluated through the [NMIND Coding Standards Checklist](https://www.nmind.org/standards-checklist/) can be found on their webpage under [Evaluated Tools](https://www.nmind.org/proceedings/). Below are the badge rating details for pipelines integrated into the HBCD release environment: -->
