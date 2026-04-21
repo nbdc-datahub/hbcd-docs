@@ -1,27 +1,21 @@
-# HBCD Processing Pipelines
-<p>
-<div id="visformat" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">See the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> website for full details on how each pipeline was used for HBCD processing.</span>
-</div>
-</p>
+<!-- ## File Selection for Processing
 
-The HBCD processing pipelines are a collection of modular tools used to process HBCD Study data, including magnetic resonance imaging/spectroscopy (**MRI/MRS**), electroencephalography (**EEG**), and **biosensor data**. See [here](../../datacuration/file-based-data.md#links-to-pipeline-derivatives) for links to pipeline derivatives.
+Files are selected for processing based on pipeline-specific criteria detailed under the sections ***File Selection For Processing*** and ***Quality Control Selection Information*** in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html#tool-names) section of the [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/index.html) documentation.  -->
+
 
 <table class="compact-table-no-vertical-lines">
-  <thead>
-    <tr>
-      <th>Modality</th>
-      <th>Processing Pipeline</th>
-      <th>NMIND</th>
-      <th>Pipeline Description</th>
-    </tr>
-  </thead>
-  <tbody>
+<thead>
 <tr>
-<td rowspan="7">
-<div>MRI</div>
-</td>
+<th>Processing Pipeline</th>
+<th></th>
+<th>NMIND</th>
+<th>Pipeline Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="4">MRI</td></tr>
+<tr>
+<td></td>
 <td><a href="https://mriqc.readthedocs.io/en/latest/">MRIQC</a></td>
 <td style="text-align: center;"><a href="https://www.nmind.org/proceedings/mriqc/"><i class="fa fa-shield"></i></a></td>
 <td style="word-wrap: break-word; white-space: normal;">Extracts image quality metrics from structural and functional MRI data</td>
@@ -75,21 +69,3 @@ The HBCD processing pipelines are a collection of modular tools used to process 
 </tr>
 </tbody>
 </table>
-
-
-<!-- ## Pipeline Standards & Design
-
-### Running an HBCD Processing Pipeline
-To process HBCD study data using one of these pipelines, follow the installation and usage instructions on the specific pipeline's documentation page (links below).
-
-**Choosing a Container System:**            
-**Singularity/Apptainer** → Recommended for university-affiliated HPC clusters, where users lack administrative privileges.         
-**Docker** → Preferred for personal computers due to its ease of installation (may require extra setup for HPC use).
-
-All processing containers are available on [Docker Hub](https://hub.docker.com/). -->
-
-
-<!-- 
-A general overview of file selection procedures specifically for **structural and functional MRI data** is additionally provided in the [MRI Processing & Derivatives Guide](../mri/mri-proc.md#file-selection-for-processing).
- -->
-
