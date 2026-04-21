@@ -6,9 +6,7 @@
 </div>
 </p>
 
-The **HBCD processing pipelines** are a collection of modular tools used to process data from the HBCD study. These pipelines are not exclusive to HBCD, but are general-purpose tools for analyzing a variety of data modalities, including magnetic resonance imaging (**MRI**), electroencephalography (**EEG**), magnetic resonance spectroscopy (**MRS**), and **biosensor data**. The pipelines are designed to be modular and flexible, allowing for customization to meet the specific needs of the HBCD study.
-
-**The following processing pipelines were used for the HBCD study. Also see a more detailed breakdown by modality with links to derivative folder documentation for HBCD [here](../../datacuration/file-based-data.md#links-to-pipeline-derivatives).**
+The HBCD processing pipelines are a collection of modular tools used to process HBCD Study data, including magnetic resonance imaging/spectroscopy (**MRI/MRS**), electroencephalography (**EEG**), and **biosensor data**. See [here](../../datacuration/file-based-data.md#links-to-pipeline-derivatives) for links to pipeline derivatives.
 
 <table class="compact-table-no-vertical-lines">
   <thead>
@@ -79,9 +77,7 @@ The **HBCD processing pipelines** are a collection of modular tools used to proc
 </table>
 
 
-
-
-## Pipeline Standards & Design
+<!-- ## Pipeline Standards & Design
 
 ### Running an HBCD Processing Pipeline
 To process HBCD study data using one of these pipelines, follow the installation and usage instructions on the specific pipeline's documentation page (links below).
@@ -90,12 +86,12 @@ To process HBCD study data using one of these pipelines, follow the installation
 **Singularity/Apptainer** → Recommended for university-affiliated HPC clusters, where users lack administrative privileges.         
 **Docker** → Preferred for personal computers due to its ease of installation (may require extra setup for HPC use).
 
-All processing containers are available on [Docker Hub](https://hub.docker.com/).
+All processing containers are available on [Docker Hub](https://hub.docker.com/). -->
 
 ## File Selection for Processing
 
 Files are selected for processing based on pipeline-specific criteria detailed under the sections ***File Selection For Processing*** and ***Quality Control Selection Information*** in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html#tool-names) section of the [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/index.html) documentation. 
-
+<!-- 
 A general overview of file selection procedures specifically for **structural and functional MRI data** is additionally provided in the [MRI Processing & Derivatives Guide](../mri/mri-proc.md#file-selection-for-processing).
-
+ -->
 
