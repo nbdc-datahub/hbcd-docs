@@ -24,3 +24,14 @@
 .button-link i {
   margin-left: 6px;
 }
+
+
+/* Badge styling (used on pipeline standards page) */
+.badge-hbcd {
+  background-color: #00d7d75c;
+  color: #4d546f;
+  font-size: 1em;
+  padding: 0.3em 0.6em;
+  border-radius: 8px;
+  font-weight: 600;
+}
