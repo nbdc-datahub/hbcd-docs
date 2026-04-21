@@ -79,19 +79,6 @@ The **HBCD processing pipelines** are a collection of modular tools used to proc
 </table>
 
 ## Pipeline Standards & Design
-All pipelines used for HBCD data processing must adhere to [HBCD Processing & Analytic Software Standards](standards.md), which require, among other things:
-
-- NMIND peer review and DOI publication for reproducibility.
-- Compliance with the Brain Imaging Data Structure (BIDS) standard.
-- Implementation as BIDS Apps ([Gorgolewski et al.,2017](https://doi.org/10.1371/journal.pcbi.1005209)), ensuring containerized, standardized processing.
-
-### Why BIDS & BIDS Apps?
-BIDS is a community-driven standard for organizing neuroimaging and behavioral data, making datasets **structured**, **shareable**, and **reproducible**. BIDS Apps are containerized applications that run on any system supporting [Docker](https://docs.docker.com/get-started/get-docker/) or [Apptainer](https://apptainer.org/docs/user/main/quick_start.html) (Singularity).
-
-**Benefits of Containerization:**        
-<i class="fa fa-check-square"></i> Ensures all software dependencies are included.      
-<i class="fa fa-check-square"></i> Guarantees consistent processing environments across systems.        
-<i class="fa fa-check-square"></i> Simplifies reproducibility and collaboration.        
 
 ### Running an HBCD Processing Pipeline
 To process HBCD study data using one of these pipelines, follow the installation and usage instructions on the specific pipeline's documentation page (links below).

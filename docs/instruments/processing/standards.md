@@ -1,37 +1,24 @@
 
 <!-- HBCD pipeline developers, Workgroups, and community contributors who wish to integrate tools into the HBCD release environment must submit the [NMIND Coding Standards Checklist](https://www.nmind.org/standards-checklist/) to initiate third-party peer review. The software is reviewed by a third party, who reviews the accuracy of the submitted checklist and provides other suggested updates, reported to the developers via the [proceedings repository](https://github.com/nmind/proceedings). Reviewed tools are assigned badge ratings and published to [Evaluated Tools](https://www.nmind.org/proceedings/). At a minimum, tools must meet Bronze-level standards.  -->
 
-
 # Processing & Derivative Data Standards
 <img src="../nmind.png" alt="NMIND" width="70%" height="auto" class="center">
 
-All pipelines used for HBCD data processing must adhere to HBCD processing and derivative data standards. This inlcudes adherence to [NMIND](https://www.nmind.org/about) standards for reproducible neuroimaging ([Kiar et al. 2023](https://www.nature.com/articles/s41562-023-01647-0)) as well as additional HBCD-specific requirements.
+All pipelines used for HBCD data processing must follow HBCD processing and derivative data standards, including: [NMIND standards for reproducible neuroimaging](#nmind-checklists-bronze-badge-items) and [HBCD-specific requirements](#hbcd-specific-requirements).
 
-- NMIND peer review via the [NMIND Coding Standards Checklist](https://www.nmind.org/standards-checklist/). Pipeline code is evaluate by a third party against community-driven scientific software standards across three main categories: documentation, infrastructure, and testability. Reviewed tools are assigned badge ratings and published to [Evaluated Tools](https://www.nmind.org/proceedings/). At a minimum, HBCD pipelines must meet Bronze-level standards. 
-- DOI publication for reproducibility.
+<!-- **NMIND Checklist**             
+          
+**See details below under [NMIND Checklists](#nmind-checklists-bronze-badge-items).**
 
-HBCD-specific requirements
+**HBCD-Specific Requirements**          
+      
+**See details below under [HBCD-Specific Requirements](#hbcd-specific-requirements).** -->
 
-- Compliance with HBCD Study derivative data standards.
-- Compliance with the Brain Imaging Data Structure (BIDS) standard and implementation as BIDS App ([Gorgolewski et al.,2017](https://doi.org/10.1371/journal.pcbi.1005209)), ensuring containerized, standardized processing.
+## NMIND Checklists (Bronze Badge Items)
 
+The [NMIND](https://www.nmind.org/about) consortium is dedicated to the advancement of community standards and utilities in support of reproducible neuroimaging research ([Kiar et al. 2023](https://www.nature.com/articles/s41562-023-01647-0)). For HBCD, peer review of software is performed via submission of the [NMIND Coding Standards Checklist](https://www.nmind.org/standards-checklist/). Software is reviewed against community-driven scientific software standards across three main categories: documentation, infrastructure, and testability. Reviewed tools are assigned badge ratings and published to [Evaluated Tools](https://www.nmind.org/proceedings/). At a minimum, HBCD pipelines must meet Bronze-level standards. Pipelines are additionally published with DOIs to support reproducibility.  
 
-
-## HBCD-Specific Requirements
-
-### Derivative Data Standards
-All software standards also apply to derivative data standards for HBCD Study data. In practice, this means software must comply with the data standards in order for its processed outputs to be eligible for inclusion in a release. Therefore, in addition to the requirements outlined below, all pipelines must produce derivatives compatible with current release data.
-
-### BIDS Compliance & BIDS App Implementation
-BIDS is a community-driven standard for organizing neuroimaging and behavioral data to make datasets structured, shareable, and reproducible. BIDS Apps are containerized applications that run on any system supporting [Docker](https://docs.docker.com/get-started/get-docker/) or [Apptainer](https://apptainer.org/docs/user/main/quick_start.html) (Singularity). All HBCD pipelines must be containerized following [BIDS-App guidelines](https://bids-apps.neuroimaging.io/).
-
-**Benefits of Containerization:**        
-<i class="fa fa-check-square"></i> Ensures all software dependencies are included.      
-<i class="fa fa-check-square"></i> Guarantees consistent processing environments across systems.        
-<i class="fa fa-check-square"></i> Simplifies reproducibility and collaboration. 
-
-## Documentation Standards
-#### NMIND Bronze Badge Checklist Items for Documentation
+### NMIND Documentation Standards Checklist 
 <input type="checkbox"> Landing page provides a link to documentation and brief description of what program does<br>
 <input type="checkbox"> Documentation is up to date with version of software (*see [Obtaining a DOI](#obtaining-a-doi) for details*)<br>
 <input type="checkbox"> Typical intended usage is described<br>
@@ -42,13 +29,7 @@ BIDS is a community-driven standard for organizing neuroimaging and behavioral d
 <input type="checkbox"> User installation instructions available<br>
 <input type="checkbox"> Dependencies listed *(Note: this is largely inapplicable to HBCD pipelines as they are required to be containerized - [see details](#derivative-data-standards))*
 
-#### Dedicated Pipeline Documentation Website  
-<span class="badge-hbcd"><i class="fa-solid fa-triangle-exclamation"></i> HBCD-specific requirement</span>
-
-In addition to the checklist above, HBCD pipelines must maintain living documentation via a dedicated website. This provides a current, easily navigable resource beyond static publications or a GitHub README. We recommend hosting documentation with [Read the Docs](https://docs.readthedocs.com/platform/stable/) or [GitHub Pages](https://pages.github.com/). See the [fMRIPrep documentation](https://fmriprep.org/en/stable/) for guidance on organization of level of detail. Include clear guidance on how to cite the documentation (<a href="https://fmriprep.org/en/stable/#citation">example</a>).
-
-## Infrastructure Standards
-#### NMIND Bronze Badge Checklist Items for Infrastructure
+### NMIND Infrastructure Standards Checklist
 <input type="checkbox"> Code is open source<br>
 <input type="checkbox"> Package is under version control (*see [Version Control](#version-control) for details*)<br>
 <input type="checkbox"> Readme is present<br>
@@ -88,11 +69,29 @@ In addition to the checklist above, HBCD pipelines must maintain living document
 <p>Version control is maintained via GitHub. Tag releases for significant or cumulative updates, and include a changelog summarizing changes from the previous version. Establish a standard release cycle and criteria for special releases (e.g., urgent bug fixes). Pipeline documentation should define long-term support versions, deprecation plans, and timelines.</p>
 </div>
 
-## Testing Ability Standards
-
-#### NMIND Bronze Badge Checklist Items for Testing Ability
+### NMIND Testing Ability Standards Checklist
 <input type="checkbox"> Provide/generate/point to test data (*Only applicable if non-HBCD data can be shared as a representative data sample*)<br>
 <input type="checkbox"> Provide instructions for users to run tests and evaluate for correct behavior 
+
+
+## HBCD-Specific Requirements
+
+Additional requirements include compliance with HBCD Study derivative data standards and Brain Imaging Data Structure (BIDS). Pipelines must also be implemented as BIDS Apps ([Gorgolewski et al.,2017](https://doi.org/10.1371/journal.pcbi.1005209)), ensuring containerized, standardized processing.   
+
+### Derivative Data Standards
+All software standards also apply to derivative data standards for HBCD Study data. In practice, this means software must comply with the data standards in order for its processed outputs to be eligible for inclusion in a release. Therefore, in addition to the requirements outlined below, all pipelines must produce derivatives compatible with current release data.
+
+### BIDS Compliance & BIDS App Implementation
+BIDS is a community-driven standard for organizing neuroimaging and behavioral data to make datasets structured, shareable, and reproducible. BIDS Apps are containerized applications that run on any system supporting [Docker](https://docs.docker.com/get-started/get-docker/) or [Apptainer](https://apptainer.org/docs/user/main/quick_start.html) (Singularity). All HBCD pipelines must be containerized following [BIDS-App guidelines](https://bids-apps.neuroimaging.io/).
+
+**Benefits of Containerization:**        
+<i class="fa fa-check-square"></i> Ensures all software dependencies are included.      
+<i class="fa fa-check-square"></i> Guarantees consistent processing environments across systems.        
+<i class="fa fa-check-square"></i> Simplifies reproducibility and collaboration. 
+
+### Dedicated Pipeline Documentation Website  
+HBCD pipelines must maintain living documentation via a dedicated website. This provides a current, easily navigable resource beyond static publications or a GitHub README. We recommend hosting documentation with [Read the Docs](https://docs.readthedocs.com/platform/stable/) or [GitHub Pages](https://pages.github.com/). See the [fMRIPrep documentation](https://fmriprep.org/en/stable/) for guidance on organization of level of detail. Include clear guidance on how to cite the documentation (<a href="https://fmriprep.org/en/stable/#citation">example</a>).
+
 
 ## Current HBCD Pipeline & Utility Evaluations
 A full list of tools evaluated through the [NMIND Coding Standards Checklist](https://www.nmind.org/standards-checklist/) can be found on their webpage under [Evaluated Tools](https://www.nmind.org/proceedings/). Below are the badge rating details for pipelines integrated into the HBCD release environment:
