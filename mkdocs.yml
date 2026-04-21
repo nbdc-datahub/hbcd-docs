@@ -161,9 +161,6 @@ nav:
         - Novel Tech & Wearable Sensors:
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
-        # - Processing & Analytic Standards: 
-        #     - Processing Pipelines: instruments/processing/index.md
-        #     - Pipeline Software Standards: instruments/processing/standards.md
   - Release Notes: 
     - Known Issues & Pending Updates: changelog/issues-updates.md
     - Release Notes & History: changelog/releasenotes.md

@@ -150,7 +150,7 @@ hbcd/
 
 ## Data Processing
 
-EEG data were processed using **[HBCD-MADE](https://docs-hbcd-made.readthedocs.io)**, an adaptation of the Maryland Analysis of Developmental EEG (MADE) pipeline ([Debnath et al., 2020](https://doi.org/10.1111/psyp.13580)) developed specifically for the HBCD Study. HBCD-MADE is implemented as a containerized [BIDS App](../processing/index.md#pipeline-standards-design) that adheres to [HBCD software and analytic standards](../processing/standards.md).
+EEG data were processed using **[HBCD-MADE](https://docs-hbcd-made.readthedocs.io)**, an adaptation of the Maryland Analysis of Developmental EEG (MADE) pipeline ([Debnath et al., 2020](https://doi.org/10.1111/psyp.13580)) developed specifically for the HBCD Study. HBCD-MADE is implemented as a containerized [BIDS App](../processing/index.md#pipeline-standards-design) that adheres to HBCD [Processing & Derivative Data Standards](../processing/standards.md).
 
 Full documentation of **processing parameters**, **pipeline configuration**, and **file selection logic** is available at:
 
