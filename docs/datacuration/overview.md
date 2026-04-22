@@ -8,9 +8,10 @@ Tidy tables with one row per participant session and one column per variable.
 <i><a href="../phenotypes" target="_blank" class="inline-doc-link">See detailed documentation →</a></i>
 
 <i class="fa-solid fa-folder-open header-icon"></i>  **File-Based Data**          
-File-based data is an umbrella term for all other data that isn't tabulated, typically due to the complex nature or modality-specific format of source files.     
+File-based data is an umbrella term for all other data that isn't tabulated, typically required due to the complex or multidimensional nature of certain data modalities.       
 **Includes**: Raw (**raw BIDS**) and processed (**derivative**) imaging, EEG, and wearable sensor recording data (with datasets organized under separate subject folders) and **concatenated data** for measures such as genomics, which include participant-level files aggregated across all subjects    
 <i><a href="../file-based-data" target="_blank" class="inline-doc-link">See detailed documentation →</a></i>
+
 
 ## Folder Structure
 
@@ -78,17 +79,10 @@ hbcd/
     └── <span class="folder">study_navigator/</span>
 </pre>
 
-<!-- File-based data is any data that cannot be converted to the HBCD tabulated format. This includes: -->
-
-
-### Which file-based data are also available as HBCD tabulated data?
-<p>When possible, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
-<p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are included. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
-<ul>
-<li><strong>Tabulated data</strong>: one row per participant/session with summary fields.</li>
-<li><strong>File-based data</strong>: required for complex, multidimensional, or non-row-summarizable outputs.</li>
-</ul>
-<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../../instruments/mri/mri-proc/#xcpd-derivs" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
+## Which file-based data are also available as HBCD tabulated data?
+<p>Whenever possible, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
+<p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are tabulated. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
+<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <tr>
 <td><b>File-based derivatives</b></td>

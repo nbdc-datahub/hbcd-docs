@@ -151,6 +151,7 @@ nav:
             - EEG Task Details: instruments/eeg/tasks.md
         - Magnetic Resonance Imaging:
             - Overview: instruments/mri/index.md
+            - Raw BIDS Data: instruments/mri/rawbids.md
             - Quality Control Procedures: instruments/mri/qc.md
             - Prescan Questionnaire: instruments/mri/prescan-questionnaire.md
             - Structural MRI: instruments/mri/smri.md

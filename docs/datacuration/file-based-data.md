@@ -15,29 +15,32 @@ File-based data is provided for imaging, EEG, and biosensor recordings. Unlike [
 </div>
 </p>
 
-The `rawdata/` folder includes raw file-based data in [BIDS](https://bids-specification.readthedocs.io/en/stable/) format for MRI, MRS, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings. Visit the following links to see full file contents and documentation for each raw BIDS folder:
+Raw BIDS are raw file-based data in [BIDS](https://bids-specification.readthedocs.io/en/stable/) format and include MRI, MRS, EEG, and [wearable sensor](../instruments/sensors/wearsensors.md) recordings. Data are located under `rawdata/` in subject, session, and modality-specific subfolders. Visit the following links to see full file contents and documentation for each modality:
 
- - <a href="../../instruments/mri/raw-bids" target="_blank">MRI & MRS</a> (`anat/`, `func/`, `fmap/`, `dwi/`, `mrs/`)
- - <a href="../../instruments/eeg/#rawbids" target="_blank">EEG</a> (`eeg/`)
- - <a href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">Wearable Sensors</a> (`motion/`)
-
-<pre class="folder-tree" style="font-size: 11px;">
+<pre class="folder-tree">
 hbcd/
-|__ rawdata/ 
-    |__ sub-<span class="label">{ID}</span>/
-    |   |__ sub-<span class="label">{ID}</span>_sessions.tsv <span class="hashtag">(+JSON)</span>
-    |   |__ ses-<span class="label">{V0X}</span>/
-    |       |__ anat/
-    |       |__ dwi/
-    |       |__ eeg/
-    |       |__ fmap/
-    |       |__ func/
-    |       |__ motion/
-    |       |__ mrs/
-    |       |__ sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_scans.tsv <span class="hashtag">(+JSON)</span>
-    |
-    |__ dataset_description.json
-    |__ participants.tsv <span class="hashtag">(+JSON)</span>
+└── <span class="folder">rawdata/</span>
+    ├── <span class="file">sub-{ID}_ses-{V0X}_scans.tsv</span>
+
+    <span class="section"># Raw BIDS (MRI/MRS, EEG, biosensors)</span>
+    ├── <span class="folder">sub-{ID}/</span>
+    │   └── <span class="folder">ses-{V0X}/</span>
+    │       <span style="color: #0af0e1; font-style: italic;"># Imaging & Spectroscopy - <a style="color: #0af0e1; font-style: italic;" href="../../instruments/mri/rawbids" target="_blank">See file contents</a></span>
+    │       ├── <span class="folder">anat/</span>   
+    │       ├── <span class="folder">dwi/</span>
+    │       ├── <span class="folder">fmap/</span>
+    │       ├── <span class="folder">func/</span>
+    │       ├── <span class="folder">mrs/</span>
+    │
+    │       <span style="color: #0af0e1; font-style: italic;"># EEG - <a style="color: #0af0e1; font-style: italic;" href="../../instruments/eeg/#rawbids" target="_blank">See file contents</a></span> 
+    │       ├── <span class="folder">eeg/</span>
+    │
+    │       <span style="color: #0af0e1; font-style: italic;"># Wearable sensors - <a style="color: #0af0e1; font-style: italic;" href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">See file contents</a></span>
+    │       └── <span class="folder">motion/</span> 
+    │
+    <span class="section"># Dataset-level metadata</span>
+    ├── <span class="file">dataset_description.json</span>
+    └── <span class="file">participants.tsv</span>
 </pre>
 <p></p>
 

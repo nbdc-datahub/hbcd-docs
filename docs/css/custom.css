@@ -156,9 +156,7 @@ pre.helper-code code {
   overflow-x: auto; /* Allows horizontal scrolling */
 }
 /* Style for placeholder variables in angle brackets */
-.folder-tree .placeholder {
-  color: #0af0e1
-}
+.folder-tree .placeholder {color: #0af0e1}
 .folder-tree .hashtag {
   color: #b0d619
 }

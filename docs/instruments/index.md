@@ -700,7 +700,7 @@ PATCH RELEASE
 <div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-file-waveform"></i></span>
   <span class="text-with-link">
-  <span class="text">EEG</span>
+  <span class="text">EEG & Tabular EEG</span>
   <a class="anchor-link" href="#eeg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -708,32 +708,38 @@ PATCH RELEASE
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-up-right-from-square"></i> <b>Quick Links</b></p>
-<ul>
-<li><a href="eeg/" target="_blank">Overview & EEG Protocols</a></li>
-<li><a href="eeg/qc" target="_blank">EEG Quality Control Procedures</a></li>
-<li><a href="eeg/tasks" target="_blank">HBCD EEG Tasks</a> (<i>Auditory Mismatch Negativity, Faces, Video Resting State, & Visual Evoked Potential</i>)</li>
-</ul>
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> <b>File-Based EEG Data</b></p>
-<ul>
-<li>Raw BIDS stored under subject- and session-specific <a href="eeg/#rawbids" target="_blank"><code>eeg/</code></a> folders</li>
-<li>Processed derivatives output by the <a href="eeg/#made" target="_blank">HBCD-MADE</a> pipeline</li>
-</ul>
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> <b>Tabulated EEG Data</b></p>
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<b>MMN</b>=Auditory Mismatch Negativity; <b>FACE</b>=Faces; <b>RS</b>=Video Resting State; <b>VEP</b>=Visual Evoked Potential
-</p>
+<p>EEG release data, including EEG (file-based data) and Tabular EEG domains, are displayed below. 
+See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critical information on protocols, quality control procedures, etc.</p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th>Domain</th>
-<th>Table</th>
-<th>Table Name</th>
+<th><i class="fa-solid fa-folder-open header-icon"></i> EEG</th>
+<th>Task Name</th>
+<th>Raw & Processed File-Based Data</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="4">Tabular EEG</td>
+  <td rowspan="4"></td>
+  <td><a href="eeg/tasks/#auditory-mismatch-negativity-task" target="_blank">Auditory Mismatch Negativity (MMN)</a></td>
+  <td rowspan="4">
+        <b>Raw</b>: <a href="eeg/#rawbids" target="_blank">Raw BIDS <i>(rawdata/sub-{ID}/ses-{V0x}/eeg/)</i></a><br><br>
+        <b>Processed</b>: <a href="eeg/#rawbids" target="_blank">HBCD-MADE pipeline derivatives <i>(derivatives/made/)</i></a>
+    </td>
+</tr>
+<tr><td><a href="eeg/tasks/#faces-task" target="_blank">Faces (FACE)</a></td></tr>
+<tr>  <td><a href="eeg/tasks/#visual-evoked-potential-task" target="_blank">Visual Evoked Potential (VEP)</a></td></tr>
+<tr>  <td><a href="eeg/tasks/#video-resting-state-task" target="_blank">Video Resting State (RS)</a></td></tr>
+</tbody>
+<thead>
+<tr>
+<th><i class="fa-solid fa-table header-icon"></i> Tabular EEG</th>
+<th>Table/Instrument</th>
+<th>Table Name</th>
+</tr>
+</thead>
+<tr>
+  <td rowspan="4"></td>
   <td><a href="eeg/" target="_blank">EEG Acquisition Checklist</a></td>
   <td><code>eeg_ch_chkl</code></td>
 </tr>
@@ -760,7 +766,7 @@ PATCH RELEASE
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
-    <span class="text">Imaging (File-Based Data)</span>
+    <span class="text">Imaging</span>
     <a class="anchor-link" href="#mri" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>
