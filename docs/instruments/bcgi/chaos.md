@@ -1,4 +1,4 @@
-# Confusion, Hubbub and Order Scale (*CHAOS*)
+# Confusion, Hubbub and Order Scale (CHAOS)
 
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>

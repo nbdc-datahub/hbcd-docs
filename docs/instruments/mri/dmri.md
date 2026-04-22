@@ -88,9 +88,7 @@ hbcd/
     ├── qsirecon/
     │   └── <span class="muted">sub-{ID}/</span>
     │       └── log/*
-    <!-- │           └── <span class="label">{YYYYMMDD-HHMMSS_UUID}</span>/
-    │               ├── qsirecon.toml
-    │               └── recon_spec.yaml -->
+    
   <span class="hashtag">DSI Studio</span>
     ├── qsirecon-DSIStudio/
     │   └── <span class="muted">sub-{ID}/</span>
