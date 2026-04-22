@@ -4,7 +4,7 @@ The HBCD dataset follows NBDC data structure standards established as part of th
 
 <i class="fa-solid fa-table header-icon"></i>  **Tabulated Data**              
 Tidy tables with one row per participant session and one column per variable.       
-**Includes:** Demographics, behavioral/phenotypic questionnaires (e.g. <a href="../../instruments/#behavior-biology-environment" target="_blank">see details</a>), and select file-based data converted to the tabulated standard to match other instrument data ([see details](#which-file-based-data-are-also-available-as-hbcd-tabulated-data)).   
+**Includes:** Demographics, behavioral/phenotypic questionnaires (e.g. <a href="../../instruments/#behavior-biology-environment" target="_blank">see details</a>), and select pipeline derivatives, tabulated to match other instrument data ([see details](#tabulated-pipeline-derivatives)).   
 <i><a href="../phenotypes" target="_blank" class="inline-doc-link">See detailed documentation →</a></i>
 
 <i class="fa-solid fa-folder-open header-icon"></i>  **File-Based Data**          
@@ -79,7 +79,7 @@ hbcd/
     └── <span class="folder">study_navigator/</span>
 </pre>
 
-## Which file-based data are also available as HBCD tabulated data?
+## Tabulated Pipeline Derivatives
 <p>Whenever possible, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
 <p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are tabulated. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
 <p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>

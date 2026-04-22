@@ -713,27 +713,35 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th><i class="fa-solid fa-folder-open header-icon"></i> EEG</th>
+<th width="15%"><i class="fa-solid fa-folder-open header-icon"></i> EEG</th>
 <th>Task Name</th>
+<th style="text-align: center;">Label</th>
 <th>Raw & Processed File-Based Data</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td rowspan="4"></td>
-  <td><a href="eeg/tasks/#auditory-mismatch-negativity-task" target="_blank">Auditory Mismatch Negativity (MMN)</a></td>
+  <td><a href="eeg/tasks/#auditory-mismatch-negativity-task" target="_blank">Auditory Mismatch Negativity</a></td>
+  <td style="text-align: center;"><code>MMN</code></td>
   <td rowspan="4">
-        <b>Raw</b>: <a href="eeg/#rawbids" target="_blank">Raw BIDS <i>(rawdata/sub-{ID}/ses-{V0x}/eeg/)</i></a><br><br>
+        <b>Raw</b>: <a href="eeg/#rawbids" target="_blank">Raw BIDS <i>(rawdata/sub-{ID}/ses-{V0X}/eeg/)</i></a><br><br>
         <b>Processed</b>: <a href="eeg/#rawbids" target="_blank">HBCD-MADE pipeline derivatives <i>(derivatives/made/)</i></a>
     </td>
 </tr>
-<tr><td><a href="eeg/tasks/#faces-task" target="_blank">Faces (FACE)</a></td></tr>
-<tr>  <td><a href="eeg/tasks/#visual-evoked-potential-task" target="_blank">Visual Evoked Potential (VEP)</a></td></tr>
-<tr>  <td><a href="eeg/tasks/#video-resting-state-task" target="_blank">Video Resting State (RS)</a></td></tr>
+<tr><td><a href="eeg/tasks/#faces-task" target="_blank">Faces</a></td>
+  <td style="text-align: center;"><code>FACE</code></td></tr>
+<tr><td><a href="eeg/tasks/#visual-evoked-potential-task" target="_blank">Visual Evoked Potential</a></td>
+  <td style="text-align: center;"><code>VEP</code></td></tr>
+<tr><td><a href="eeg/tasks/#video-resting-state-task" target="_blank">Video Resting State</a></td>
+  <td style="text-align: center;"><code>RS</code></td></tr>
 </tbody>
+</table>
+
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th><i class="fa-solid fa-table header-icon"></i> Tabular EEG</th>
+<th width="15%"><i class="fa-solid fa-table header-icon"></i> Tabular EEG</th>
 <th>Table/Instrument</th>
 <th>Table Name</th>
 </tr>
@@ -745,21 +753,22 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 </tr>
 <tr>
   <td><a href="eeg/" target="_blank">EEG Acquisition Checklist - Reattempt 1/2</a></td>
-  <td><code>eeg_ch_chkl_<span class="blue-text">&lt;1|2&gt;</span></code></td>
+  <td><code>eeg_ch_chkl_<span class="blue-text">{1|2}</span></code></td>
 </tr>
 <tr>
   <td><a href="eeg/qc" target="_blank">Quality Control Metrics</a></td>
-  <td><code>eeg_qc_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span></code></td>
+  <td><code>eeg_qc_task-<span class="blue-text">{ALL TASKS}</span></code></td>
 </tr>
 <tr>
-  <td>Tabulated HBCD-MADE pipeline derivatives<sup><b>1</b></sup></td>
-  <td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span>_acq-eeg_preprocessingReport</code><br>
-  <code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|VEP&gt;</span>_ERPSummaryStats</code></td>
+  <td>Tabulated HBCD-MADE derivatives<br>
+  <i>(See <a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>Tabulated Pipeline Derivatives</a> for details)</i></td>
+  <td><code>eeg_made_task-<span class="blue-text">{ALL TASKS}</span>_acq-eeg_preprocessingReport</code><br>
+    <code>eeg_made_task-FACE_ERPSummaryStats</code><br>
+    <code>eeg_made_task-MMN_ERPSummaryStats</code><br>
+    <code>eeg_made_task-VEP_ERPSummaryStats</code>
+</td>
 </tr>
 </tbody>
-<tfoot><tr><td colspan="3">
- <sup><b>1</b></sup> See <a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>Which file-based data are also available as HBCD tabulated data? </i></a>
-</td></tr></tfoot>
 </table>
 </div>
 
@@ -775,7 +784,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 </div>
 <div class="table-collapsible-content">
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>see details</i></a>)
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in tabulated format (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)
 </p>
 
 <table class="compact-table-no-vertical-lines" style="line-height: 1.1;">
@@ -838,7 +847,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 </div>
 <div class="table-collapsible-content">
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>see details</i></a>)
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)
 </p>
 <table class="compact-table-no-vertical-lines">
 <thead>
