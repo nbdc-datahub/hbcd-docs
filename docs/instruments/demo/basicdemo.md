@@ -58,7 +58,7 @@ Basic Demographics is a **derived measure** with information computed from the f
 
 Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.) for the adult/caregiver and beginning at Visit V02 for the child (post-birth). Note that if only V01 data for a given adult participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about their child will be missing, as the child is not born until after the V01 visit.
 
-### Age, Sex, & Other Variables
+### Age Variables 
 
 <p style="font-size: 0.9em; color: #555;">
 <i class="fa-solid fa-baby"></i>&nbsp;= Variable refers to the child &nbsp;&nbsp;
@@ -70,27 +70,45 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
   </td></tr></tfoot>
 <thead>
 <tr style="background-color: #f8f9f9;">
+  <th>Construct</th>
+  <th>Variable Name</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Maternal Age at V01</td>
+  <td><code>mother_age_v01</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit. Derived from administrative records.</td>
+</tr>
+<tr>
+  <td>Maternal Age at Delivery</td>
+  <td><code>mother_age_delivery</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery. Derived from administrative records.</td>
+</tr>
+<tr>
+  <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery</td>
+  <td><code>gestational_age_delivery</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between the birth parent's <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB. Derived from administrative records. <span class="pill-badge">V02+</span></td>
+</tr>
+</tbody>
+</table>
+
+### Sex & Other Variables
+
+<p style="font-size: 0.9em; color: #555;">
+<i class="fa-solid fa-baby"></i>&nbsp;= Variable refers to the child &nbsp;&nbsp;
+<span class="pill-badge">V02+</span>&nbsp;= Available beginning Visit V02 (post-birth)
+</p>
+<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<thead>
+<tr style="background-color: #f8f9f9;">
   <th style="width: 20%;">Construct</th>
   <th style="width: 20%;">Variable Name</th>
   <th style="width: 60%;">Description / Details</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-  <td>Maternal Age at V01 (MAV01)</td>
-  <td><code>mother_age_v01</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit. Derived from administrative records.</td>
-</tr>
-<tr>
-  <td>Maternal Age at Delivery (MAD)</td>
-  <td><code>mother_age_delivery</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery. Derived from administrative records.</td>
-</tr>
-<tr>
-  <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery (GAD)</td>
-  <td><code>gestational_age_delivery</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between the birth parent's <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB. Derived from administrative records. <span class="pill-badge">V02+</span></td>
-</tr>
 <tr>
   <td><i class="fa-solid fa-baby"></i>&nbsp;Child sex</td>
   <td><code>sex</code></td>
