@@ -1,6 +1,6 @@
 <p style="color: red; font-size: 1em;">LUCI ADMIN NOTES:<br>
 
- - add "Data Release 2.1 Reliability Statistics" table of alphas once available, mentioned in <a href="#qc-coding">Coding QC infobox</a>
+ - add "Data Release 2.1 Reliability Statistics" table of alphas once available, mentioned in <a href="#qc">Coding QC infobox</a>
  <br>
 - WG to provide content for <a href="#hbcd-mod">HBCD Modifications</a> - click link to see guiding questions </p>
 
