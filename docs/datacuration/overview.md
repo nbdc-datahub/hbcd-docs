@@ -80,20 +80,12 @@ hbcd/
 </pre>
 
 ## Tabulated Pipeline Derivatives
-<p>Whenever possible, tabulated data tables are derived from file-based data (e.g., MRS, MRI, EEG, wearable sensor data) to provide a single file with rows across participants/sessions. Users may choose either the original file-based data or the combined tabulated version, depending on their needs.</p>
-<p><strong>Not all processed data are available in tabulated form.</strong> Tabulated datasets have <em>one row per participant/session</em>, so only derivatives that can be summarized into a single row/column structure are tabulated. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.</p>
-<p>Note tabulated files closely mirror their source derivative file names for easy cross-reference. For example, the following subject/session-level <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D derivatives</a> are combined into a single tabulated file:</p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-<tr>
-<td><b>File-based derivatives</b></td>
-<td><code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> </td>
-</tr>
-<tbody>
-<tr>
-<td><b>Tabulated file</b></td>
-<td><code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code></td>
-</tbody>
-</table>
+
+Processing pipelines for imaging, EEG, and wearable sensor recordings output derivative files to separate subject- and session-specific directories. Whenever possible, derivative data is combined across participants to additionally provide a single file in the tabulated data. Users may choose to use either the file-based or tabulated data for their analyses depending on their needs.
+
+**Not all processed data are available in tabulated form.** Tabulated datasets have one row per participant/session, so only derivatives that can be summarized into a single row/column structure are tabulated. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.
+
+Tabulated filenames closely mirror their source derivative file names for easy cross-reference. For example, the <code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> table is derived from <code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D</a> derivatives. 
 
 <!-- 
 

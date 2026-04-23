@@ -783,18 +783,13 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in tabulated format (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)
-</p>
-
+<p>All raw BIDS data documentation under <a href="mri/rawbids/" target="_blank">Raw MR BIDS</a>.</p>
 <table class="compact-table-no-vertical-lines" style="line-height: 1.1;">
 <thead>
 <tr>
     <th>Modality</th>
-    <!-- <th>Acronym</th> -->
     <th>Raw BIDS</th>
     <th>Pipeline Derivatives</th>
-    <!-- <th>README</th> -->
 </tr>
 </thead>
 <tbody>
@@ -802,34 +797,29 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   <td>Structural MRI (<a href="mri/smri" target="_blank">sMRI</a>)</td>
   <td><code>anat/</code></td>
   <td>
-    <a href="../../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i><br>
-    <a href="../../instruments/mri/smri/#mriqc" target="_blank">MRIQC</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
+    MRIQC • BIBSNet</td>
 </tr>
 <tr>
   <td>Functional MRI (<a href="mri/fmri" target="_blank">fMRI</a>)</td>
   <td><code>func/</code>, <code>fmap/</code></td>
-  <td><a href="../../instruments/mri/fmri/#mriqc" target="_blank">MRIQC</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i><br>
-      <a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> + <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer" target="_blank">FreeSurfer / M-CRIB-S</a><br>
-      <a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
+  <td>
+    MRIQC • Infant fMRIPrep + FreeSurfer / M-CRIB-S • XCP-D</td>
 </tr>
 <tr>
     <td>Quantitative MRI (<a href="mri/qmri" target="_blank">qMRI</a>)</td>
     <td><code>anat/</code>, <code>fmap/</code></td>
-    <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI & qMRI PostProc</a></td>
+    <td>SyMRI & qMRI PostProc</td>
 </tr>
 <tr>
     <td>Diffusion MRI (<a href="mri/dmri" target="_blank">dMRI</a>)</td>
     <td><code>dwi/</code></td>
     <td>
-      <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i><br>
-     <a href="mri/dmri/#qsirecon" target="_blank">QSIRecon</a> (<a href="../../instruments/mri/dmri/#qsirecon-DSIStudio" target="_blank">DSI Studio</a>/
-  <a href="../../instruments/mri/dmri/#qsirecon-DIPYDKI" target="_blank">DIPY DKI</a>/
-  <a href="../../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">TORTOISE</a>)</td>
+      QSIPrep & QSIRecon (DSI Studio, DIPY DKI, TORTOISE)</td>
 </tr>
 <tr>
   <td>MR Spectroscopy (<a href="mri/mrs" target="_blank">MRS</a>)</td>
   <td><code>mrs/</code></td>
-  <td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a> &nbsp;<i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
+  <td>OSPREY-BIDS</td>
 </tr>
 </tbody>
 </table>
@@ -846,9 +836,8 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)
-</p>
+<p style="font-size: 0.9em; color: #555;">
+<i class="fa-solid fa-diagram-project header-icon"></i>= Tabulated pipeline derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)</p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -886,19 +875,16 @@ LUCI NOTE: PATCH RELEASE
 </td>
 </tr>
 <tr>
-    <td><a href="../../instruments/mri/fmri/#mriqc" target="_blank">MRIQC</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
-    <td>Pipeline</td>
-    <td><code>img_mriqc_T1w</code><br><code>img_mriqc_T2w</code><br><code>img_mriqc_bold</code>
-</td>
+<td>MRIQC</td><td><i class="fa-solid fa-diagram-project header-icon"></i></td>
+<td><code>img_mriqc_T1w</code><br><code>img_mriqc_T2w</code><br><code>img_mriqc_bold</code></td>
 </tr>
 <tr>
-  <td><a href="../../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
-  <td>Pipeline</td>
-  <td><code>img_bibsnet_space-T1w_desc-aseg_volumes</code><br><code>img_bibsnet_space-T2w_desc-aseg_volumes</code></td>
+<td>BIBSNet</td><td><i class="fa-solid fa-diagram-project header-icon"></i></td>
+<td><code>img_bibsnet_space-T1w_desc-aseg_volumes</code><br><code>img_bibsnet_space-T2w_desc-aseg_volumes</code></td>
 </tr>
 <tr>
-  <td><a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
-  <td>Pipeline</td>
+  <td>XCP-D</td>
+  <td><i class="fa-solid fa-diagram-project header-icon"></i></td>
   <td>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-sulc_morph</code><br>
@@ -908,17 +894,17 @@ LUCI NOTE: PATCH RELEASE
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-reho_bold</code>
   <br><br>
   <code><span class="blue-text">&lt;HASH&gt;</span></code>  values: <code>0f306a2f+0ef9c88a</code>; <code>2afa9081+0ef9c88a</code><br>
-  <code><span class="blue-text">&lt;PARC&gt;</span></code>  values: <code>Glasser</code>, <code>Gordon</code>, etc - <a href="mri/mri-proc/#parc" target="_blank">see full atlas list →</a></code><br><br>
+  <code><span class="blue-text">&lt;PARC&gt;</span></code>  values: <code>Glasser</code>, <code>Gordon</code>, etc - <a href="mri/fmri/#parc" target="_blank">see full atlas list →</a></code><br><br>
   <a href="mri/tables/xcpd.html" target="_blank">See full file list →</a></td>
 </tr>
 <tr>
-  <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
-  <td>Pipeline</td>
+  <td>QSIPrep</td>
+  <td><i class="fa-solid fa-diagram-project header-icon"></i></td>
   <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
 </tr>
 <tr>
-<td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a> <i style="color: teal;" class="fa-solid fa-diagram-project"></i></td>
-<td>Pipeline</td>
+<td>OSPREY-BIDS</td>
+<td><i class="fa-solid fa-diagram-project header-icon"></i></td>
 <td>
 <code><span class="blue-text"># HERCULES diff1, diff2, and sum files</span></code><br>
     <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
