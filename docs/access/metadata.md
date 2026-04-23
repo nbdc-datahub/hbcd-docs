@@ -1,11 +1,6 @@
 # NBDC Data Dictionary
 
-<a href="../../datacuration/phenotypes/" target="_blank">Tabulated HBCD study data</a> is organized into a **standardized table format** per study instrument/measure, with each table containing a set of **variables** (see [Data Structure Overview](../datacuration/overview.md) for details). The metadata for studies released via the NBDC Data Hub consists of:
-
- - **Data dictionary**: Provides detailed information about table variables, including variable name, label, description, data type, etc. 
- - **Levels table**: Provides information about the levels for categorical variables (label, order, etc.)
-
-See the following sections for detailed descriptions for each column in the [data dictionary](#data-dictionary-elements) and [levels table](#levels-table).
+Tabulated HBCD study data is organized into a standardized table format per study instrument/measure, with each table containing a set of variables (see [Data Structure Overview](../datacuration/overview.md) for details). Metadata is organized via a data dictionary, which provides detailed information about table variables, including variable name, label, description, data type, etc. All data dictionary elements are outlined below.
 
 ## Data Dictionary Elements
 

@@ -39,19 +39,19 @@ A free, open-source image viewer for medical images, particularly MRI data. Part
 
 ## Programming Languages
 
-<i class="fas fa-laptop-code"></i> **[MATLAB](https://www.mathworks.com/products/matlab.html)**   
-  MATLAB has a variety of built-in functions and toolboxes for neuroimaging data. Note that it is proprietary, but may be provided at no-cost through your institution or department. See Andy's Brain Blog [Matlab for Neuroimagers](https://andysbrainbook.readthedocs.io/en/latest/Matlab/Matlab_Overview.html#matlab-for-neuroimagers) for a primer.
+<i class="fas fa-laptop-code header-icon"></i> **MATLAB**   
+  [MATLAB](https://www.mathworks.com/products/matlab.html) has a variety of built-in functions and toolboxes for neuroimaging data. Note that it is proprietary, but may be provided at no-cost through your institution or department. See Andy's Brain Blog [Matlab for Neuroimagers](https://andysbrainbook.readthedocs.io/en/latest/Matlab/Matlab_Overview.html#matlab-for-neuroimagers) for a primer.
 
-<i class="fas fa-laptop-code"></i> **Python**   
+<i class="fas fa-laptop-code header-icon"></i> **Python**   
   Python is also commonly used in the field of neuroimaging: useful Python modules for neuroimaging include NiBabel, Nilearn, Nipype, PyNIfTI, PySurfer, PyTorch, and others. See Andy's Brain Blog [Python for Neuroimagers](https://andysbrainbook.readthedocs.io/en/latest/PythonForNeuroimagers/PythonForNeuroimagers_Overview.html) for a primer. 
 
-<i class="fas fa-laptop-code"></i> **R/RStudio**    
+<i class="fas fa-laptop-code header-icon"></i> **R/RStudio**    
   Especially strong for statistical plots, often used in conjunction with analysis results.       
   [Download page for R/RStudio <i class="fa fa-download"></i>](https://posit.co/download/rstudio-desktop/)
 
 ## NMIND
 
-[NMIND](https://www.nmind.org/about) is a collaborative initiative dedicated to improving transparency, reproducibility, and efficiency in neuroimaging research. NMIND principles, standards, and tools were used to develop the [HBCD Processing & Analytic Software Standards](../instruments/processing/standards.md). Explore a growing collection of tools tested and improved through the NMIND process in the [Proceedings](https://www.nmind.org/proceedings/) page of the NMIND website.
+[NMIND](https://www.nmind.org/about) is a collaborative initiative dedicated to improving transparency, reproducibility, and efficiency in neuroimaging research. NMIND principles, standards, and tools were used to develop the HBCD [Processing & Derivative Data Standards](../instruments/processing/standards.md). Explore a growing collection of tools tested and improved through the NMIND process under [Evaluated Tools](https://www.nmind.org/proceedings/).
 
 ## ReproSchema
 

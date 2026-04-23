@@ -1,17 +1,17 @@
 # USDTL Nails Toxicology (Maternal)
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>bio_bm_biosample_nails_results</code> (toxicology screen), <code>bio_bm_biosample_nails_type</code> (specimen type)</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Drug, Environmental Exposure</div>
-  </div>
-</div>
-
----------------------------------------------
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>bio_bm_biosample_nails_results</code> (toxicology screen), <code>bio_bm_biosample_nails_type</code> (specimen type)</td></tr>
+<tr><td><b>Construct</b></td><td>Drug Panel, Environmental Exposure</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V01, V02</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Respondent</b>: Pregnant/postpartum person<br>
+<b>Method</b>: Self-collected under supervision or collected by research team (5 min estimated duration)
+</td></tr>
+<td><b>Quality Control</b></td><td>Examine assay ranges and categorical versus continuous measures</td></tr>
+</tbody>
+</table>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -24,8 +24,10 @@
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
+<p><b>USDTL Screening Updates</b><br>
+As of November 2025, USDTL no longer assayed sufentanil in the nail samples.</p>
 <p><b>Continuous Variables</b><br>
-For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative. LOQs are provided in <a href="#nails-table1">Table 1. Nail Assay Thresholds</a>.</p> 
+Continuous variables should be interpreted with caution based on limits of quantification (LOQ), i.e. the minimum concentration at which metabolites can be reliably quantified. See <a href="#nails-table1">Urine Assay Thresholds for Analytes</a>.</p>
 <p><b>Updated Workflow</b><br>
 As of July 1, 2024, the nail processing workflow was updated to optimize specimen use and allow confirmation testing for low sample quantities. Prior to this update, remnants of ELISA extract were not used for confirmation when specimens had insufficient sample.</p> 
 <p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
@@ -39,35 +41,36 @@ In some cases, a specimen’s initial test meets the threshold for a positive re
 </div>
 <p></p>
 
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Respondent</b></td>
-<td>Pregnant/postpartum person</td></tr>
-<tr><td><b>Administration</b></td>
-<td>Self-collected under research team supervision, or collected by research team</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V01, V02</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>5 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td>Examine assay ranges and categorical versus continuous measures.</td></tr>
-</tbody>
-</table>
-
 ## Instrument Details
 
-For the USDTL assay, fingernail and toenail specimens are sorted by weight, and those weighing at least 20 mg undergo ELISA screening, followed by LCMSMS confirmation for presumptive positives, each requiring an additional 20 mg. If insufficient specimen remains for LCMSMS, the remnant ELISA extract is used for confirmation.  Please note that as of November 2025, USDTL no longer assayed sufentanil in the nail samples.
+For the USDTL assay, fingernail and toenail specimens are sorted by weight, and those weighing at least 20 mg undergo ELISA screening, followed by LCMSMS confirmation for presumptive positives, each requiring an additional 20 mg. If insufficient specimen remains for LCMSMS, the remnant ELISA extract is used for confirmation.
 
 <img src="../images/Fig1_nails.png" width="70%" height="auto" class="center">
 
-Based on the predefined threshold outlined in [Table 1](#nails-table1), a confirmatory test result for any substance analyte is determined to be positive, negative, or invalid (*QNS* i.e. *quantity not sufficient*). Substance analytes (e.g. **Amphetamine/`c_amp_n`**) are grouped into different classes by analyte screening tests and confirmatory tests (**[Table 2](#nails-table2)**). 
+Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)), a confirmatory test result for any substance analyte is determined to be positive, negative, or invalid (*QNS* i.e. *quantity not sufficient*). Substance analytes (e.g. **Amphetamine/`c_amp_n`**) are grouped into different classes by analyte screening tests and confirmatory tests ([see details](#nails-table2)). 
+
+<style>
+.analyte-table .num {
+  text-align: right;
+  white-space: nowrap;
+}
+.analyte-table .unit {
+  font-size: 0.75em;
+  color: #6b7280;
+}
+.analyte-table .group td {
+  font-weight: 600;
+  font-size: 0.85em;
+  color: #4b5563;
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
+}
+</style>
 
 <div id="nails-table1" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
-  <span class="text">Table 1. Nail Assay Thresholds</span>
+  <span class="text">Nail Assay Thresholds</span>
   <a class="anchor-link" href="#nails-table1" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -75,350 +78,34 @@ Based on the predefined threshold outlined in [Table 1](#nails-table1), a confir
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<p>The detection window for all analytes is 3-6 and 10-14 months for finger and toe nails, respectively, with the exception of Ethyl glucuronide (finger nails: 3; toe nails: no consensus).</p>
+<table class="compact-table-no-vertical-lines analyte-table">
 <thead>
-    <tr>
-    <th style="width: 30%;">Analyte</th>
-    <th style="width: 20%;"><span class="tooltip tooltip-bottom">LOD
-                <span class="tooltiptext">Limit of detection</span>
-            </span> (pg/mL)</th>
-    <th style="width: 10%;"><span class="tooltip tooltip-bottom">LOQ
-                <span class="tooltiptext">Limit of quantification</span>
-            </span> (pg/mL)</th>
-    <th style="width: 10%;">Cutoff (pg/mL)</th>
-    <th style="width: 40%;">Detection Window (months)</th>
-    </tr>
+<tr>
+<th>Analytes</th>
+<th class="num"><span class="tooltip tooltip-bottom">LOD<span class="tooltiptext">Limit of detection</span></span> / <span class="unit">(pg/mL)</span></th>
+<th class="num"><span class="tooltip tooltip-bottom">LOQ<span class="tooltiptext">Limit of quantification</span></span> / <span class="unit">(pg/mL)</span></th>
+<th class="num"><span class="tooltip tooltip-left">Cutoff<span class="tooltiptext">Threshold used to classify results as positive or negative</span></span> / <span class="unit">(pg/mL)</span></th>
+</tr>
 </thead>
 <tbody>
-    <tr>
-        <td>Amphetamine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Methamphetamine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>MDA</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>MDMA</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>MDEA</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Carboxy-delta-9-THC</td>
-        <td>0.01</td>
-        <td>0.02</td>
-        <td>0.05</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Cocaine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Cocaethylene</td>
-        <td>10</td>
-        <td>20</td>
-        <td>50</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Benzoylecgonine</td>
-        <td>10</td>
-        <td>20</td>
-        <td>50</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norcocaine</td>
-        <td>10</td>
-        <td>20</td>
-        <td>50</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>6-MAM</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Codeine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Hydrocodone</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Hydromorphone</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Morphine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norhydrocodone</td>
-        <td>8</td>
-        <td>16</td>
-        <td>40</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Oxycodone</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Oxymorphone</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Noroxycodone</td>
-        <td>8</td>
-        <td>16</td>
-        <td>40</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Methadone</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>EDDP</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Amobarbital</td>
-        <td>80</td>
-        <td>80</td>
-        <td>200</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Butalbital</td>
-        <td>80</td>
-        <td>80</td>
-        <td>200</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Pentobarbital</td>
-        <td>80</td>
-        <td>80</td>
-        <td>200</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Phenobarbital</td>
-        <td>80</td>
-        <td>80</td>
-        <td>200</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Secobarbital</td>
-        <td>80</td>
-        <td>80</td>
-        <td>200</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Alprazolam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Diazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Midazolam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Nordiazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Oxazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Temazepam</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Ketamine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norketamine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Tramadol</td>
-        <td>200</td>
-        <td>400</td>
-        <td>500</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Fentanyl</td>
-        <td>2</td>
-        <td>4</td>
-        <td>10</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norfentanyl</td>
-        <td>2</td>
-        <td>4</td>
-        <td>10</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Alfentanil</td>
-        <td>2</td>
-        <td>4</td>
-        <td>10</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Acetyl Fentanyl</td>
-        <td>2</td>
-        <td>4</td>
-        <td>10</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Acetyl Norfentanyl</td>
-        <td>2</td>
-        <td>4</td>
-        <td>10</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Sufentanil</td>
-        <td>1</td>
-        <td>2</td>
-        <td>5</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norsufentanil</td>
-        <td>2</td>
-        <td>2</td>
-        <td>5</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Buprenorphine</td>
-        <td>4</td>
-        <td>8</td>
-        <td>20</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Norbuprenorphine</td>
-        <td>4</td>
-        <td>8</td>
-        <td>20</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Ethyl glucuronide</td>
-        <td>4</td>
-        <td>8</td>
-        <td>20</td>
-        <td>Finger 3; Toe no consensus</td>
-    </tr>
-    <tr>
-        <td>Nicotine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
-    <tr>
-        <td>Cotinine</td>
-        <td>20</td>
-        <td>40</td>
-        <td>100</td>
-        <td>Finger 3-6; Toe 10-14</td>
-    </tr>
+<tr><td>Amphetamine / Methamphetamine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>MDA / MDMA / MDEA</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Carboxy-delta-9-THC</td><td class="num">0.01</td><td class="num">0.02</td><td class="num">0.05</td></tr>
+<tr><td>Cocaine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Cocaethylene / Benzoylecgonine / Norcocaine</td><td class="num">10</td><td class="num">20</td><td class="num">50</td></tr>
+<tr><td>6-MAM</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Codeine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Hydrocodone</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Hydromorphone / Morphine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
+<tr><td>Norhydrocodone</td><td class="num">8</td><td class="num">16</td><td class="num">40</td></tr>
+<tr><td>Fentanyl / Norfentanyl / Alfentanil / Acetyl Fentanyl / Acetyl Norfentanyl</td><td class="num">2</td><td class="num">4</td><td class="num">10</td>
+</tr>
+<tr><td>Sufentanil</td><td class="num">1</td><td class="num">2</td><td class="num">5</td></tr>
+<tr><td>Norsufentanil</td><td class="num">2</td><td class="num">2</td><td class="num">5</td></tr>
+<tr><td>Tramadol</td><td class="num">200</td><td class="num">400</td><td class="num">500</td></tr>
+<tr><td>Ethyl glucuronide</td><td class="num">4</td><td class="num">8</td><td class="num">20</td></tr>
+<tr><td>Nicotine / Cotinine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
 </tbody>
 </table>
 </div>
@@ -426,7 +113,7 @@ Based on the predefined threshold outlined in [Table 1](#nails-table1), a confir
 <div id="nails-table2" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
-  <span class="text">Table 2. Mapping from Class to Screening Tests and Confirmatory Tests for Nails</span>
+  <span class="text">Mapping from Class to Screening Tests and Confirmatory Tests for Nails</span>
   <a class="anchor-link" href="#nails-table2" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -561,11 +248,11 @@ Based on the predefined threshold outlined in [Table 1](#nails-table1), a confir
 <div class="table-collapsible-content">
 <p><b>Final results for each substance follows these rules</b>:</p>
 <ul>
-<li>If the confirmatory test for any substance analyte (e.g. Amphetamine/<code>c_amp_n</code>) is positive based on predefined thresholds (<strong><a href="#nails-table1">Table 1</a></strong>), the class-level (<code>c_any_stim_n</code>) and sample-level (<code>c_any_specimen_n</code>) are also positive (value =1).</li>
-<li>Otherwise, if the substance analyte confirmatory tests are negative, then class-level are negative (value =0). If all classes are negative (value = 0), then sample-level (<code>c_any_specimen_n</code>) are negative (value = 0).</li>
-<li>Finally, if any substance analyte confirmatory tests are invalid (value = 3) then that class-level, and sample-level values are also invalid (value = 3)</li>
+<li>If the confirmatory test for any substance analyte (e.g. Amphetamine/<code>c_amp_n</code>) is positive based on <a href="#nails-table1">predefined thresholds</a>, the class-level (<code>c_any_stim_n</code>) and sample-level (<code>c_any_specimen_n</code>) are also positive.</li>
+<li>Otherwise, if the substance analyte confirmatory tests are negative, then class-level are negative. If all classes are negative, then sample-level (<code>c_any_specimen_n</code>) are negative.</li>
+<li>Finally, if any substance analyte confirmatory tests are invalid then that class-level, and sample-level values are also invalid</li>
 </ul>
-<p><b>Table 3. Screening Result Scoring</b></p>
+<p><b>Screening Result Scoring</b></p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
     <thead>
       <tr>

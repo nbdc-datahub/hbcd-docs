@@ -87,7 +87,9 @@
 <p>It is prohibited to input HBCD data into generative AI tools (e.g., ChatGPT) because doing so would violate the terms of the data use agreement. These agreements strictly limit access to approved individuals to protect sensitive information. Generative AI tools process input data in ways that may result in unauthorized access or unintended use, making them unsuitable for handling restricted data.</p>
 </div>
 
-## Protocol
+
+
+## Release Data
 
 <div id="faq-protocol" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -135,8 +137,6 @@
 </table>
 </div>
 
-## Release Data
-
 <div id="faq-tab-vs-fb" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
@@ -148,7 +148,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>HBCD Study data includes data in both tabulated and file-based formats. <b>Tabulated data</b> is in a standardized table format, with one table provided for all participant data per measure, and includes instrument data (e.g., demographics, behavior, environmental determinants, etc.) as well as data derived from the file-based data. <b>File-based data</b> are imaging and biosignal data provided in varied formats depending on the modality. This includes MRI & MRS, EEG, and wearable sensor recordings. See <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for a further details, including <a href="../../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank">Which file-based data are also available as tabulated data?</a>.</p>
+<p>HBCD Study data includes data in both tabulated and file-based formats - see the <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for an explanation of how these file types.</p>
 </div>
 
 <div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">
@@ -199,7 +199,39 @@
 <p>Instrument table and field names may contain either single or double underscores. Single underscores separate main naming components (e.g. the domain or source of the data) while double underscores separate subcomponents that provide additional details nested within the main naming components. See <a href="../../access/naming-conventions/#convention-logic-rules">Naming Conventions</a> for full details.
 </div>
 
-### Imaging Data
+## Imaging Data
+
+<!-- 
+REVIEW & REVISE THIS FAQ
+
+<div id="faq-qcrec" class="notification-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+    <span class="text-with-link">
+    <span class="text">Which imaging data are recommended for analysis?</span>
+    <a class="anchor-link" href="#faq-qcrec" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+    </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="notification-collapsible-content">
+<p>The majority of processed derivative data should be safe to use for analysis. File selection procedures for processing generally exclude data that fails raw data QC, though specific procedures vary by pipeline (see <a href="../../instruments/processing/#file-selection-for-processing" target="_blank">see details</a>).</p>
+<p>To help researchers make informed decisions, many pipelines generate visual reports to summarize the success and quality of processed outputs. This includes, for example, <a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a> (structural and functional MRI) and <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> (diffusion MRI). </p>
+<p>For structural and functional processing specifically, manual visual QC is performed on the visual reports using <a href="../../instruments/mri/brainswipes/">BrainSwipes</a>, the results of which are provided as tabulated release data.</li>
+<b>Raw Imaging Data:</b> 
+<ul>
+<li>QC metrics for raw data are available in the <code>sub-{ID}_ses-{V0X}_scans.tsv</code> file within each subject session folder under <code>rawdata/</code>.</li>
+<li>Additional exclusion criteria include <a href="../../instruments/mri/qc/#data-release-eligibility-criteria">acquisition parameter checks</a> and <a href="../../instruments/processing/#file-selection-for-processing">processing pipeline requirements</a>.</li>
+<li>Structural and functional MRI data undergo MRIQC processing to generate image quality metrics. See the <a href="../../instruments/mri/smri/#mriqc">sMRI</a> and <a href="../../instruments/mri/fmri/#mriqc">sMRI</a> MRIQC derivatives</a> for more information. Researchers may use these outputs for further curation if desired.</li>
+</ul>
+<b>Processed Imaging Data (Derivatives):</b> 
+<ul>
+<li>.</li>
+<li>Processing pipelines, such as <a href="../../instruments/mri-proc#xcp-d" target="_blank">XCP-D</a> (for structural and functional MRI) and <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a> (for diffusion MRI), produce visual reports that can help guide data selection.</li>
+<li>Visual QC is performed on these reports using <a href="../../instruments/mri/brainswipes/">BrainSwipes</a>, and the results are available as <a href="../../datacuration/phenotypes">tabulated data</a>.</li>
+</ul>
+</div> -->
+
 
 <div id="faq-mriprotocol" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
@@ -232,7 +264,7 @@
 <div id="faq-dataproc" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
-    <span class="text">What methods were used for processing the imaging data to produce the minimally processed and tabulated imaging data?</span>
+    <span class="text">What methods were used to process imaging data?</span>
     <a class="anchor-link" href="#faq-dataproc" title="Copy link">
     <i class="fa-solid fa-link"></i>
     </a>
@@ -255,7 +287,7 @@
 </div>
 <div class="notification-collapsible-content">
 <p>FreeSurfer outputs, generated as part of Infant-fMRIPrep pipeline processing, are included in the data release within the <code>freesurfer/</code> folder of the derivatives. However, note that an alternative surface reconstruction workflow optimized for neonates, M-CRIB-S, is used in place of FreeSurfer for processing visit V02 data. The V02 FreeSurfer files are therefore derived from the M-CRIB-S outputs, remapped into FreeSurfer-compatible format.<br>
-See <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> for details.</p>
+See <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> for details.</p>
 </div>
 
 <div id="faq-raw" class="notification-banner" onclick="toggleCollapse(this)">

@@ -1,24 +1,31 @@
 # Behavior Questionnaire + Inhibition
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Instrument</th>
-  <th>Version</th>
-  <th>Construct</th>
-  <th>Table Name</th>
-</tr>
-</thead>
+
+<table class="table-no-vertical-lines">
 <tbody>
 <tr>
-  <td>IBQ-R (VSF)+BI</td>
-  <td>Infant (<i>I</i>)</td>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Temperamental Surgency/Extraversion, Negative Affectivity, Effortful Control, and Behavioral Inhibition</td>
-  <td><code>mh_cg_ibqr</code></td>
+  <td></td>
+  <td><b>IBQ-R VSF +BI</b><br>Infant Behavior Questionnaire–Revised <span class="tooltip tooltip-left">VSF +BI<span class="tooltiptext">Very Short Form + Behavior Inhibition</span></span></td>
+  <td><b>ECBR VSF +BI</b><br>Early Childhood Behavior Questionnaire <span class="tooltip tooltip-left">VSF +BI<span class="tooltiptext">Very Short Form + Behavior Inhibition</span></span></td>
 </tr>
-<tr>
-  <td>ECBQ (VSF)+BI</td>
-  <td>Early Childhood (<i>EC</i>)</td>
-  <td><code>mh_cg_ecbq</code></td>
+<tr><td><b>Table Names</b></td><td><code>mh_cg_ibqr</code></td><td><code>mh_cg_ecbq</code></td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V03, V05</td><td>V05</td></tr>
+<tr><td><b>Construct</b></td><td  colspan="2">Behavioral Inhibition • Negative Affectivity • Effortful Control • Surgency/Extraversion</td></tr>
+<td><b>Administration</b></td><td colspan="2">
+  <ul>
+  <li><b>Child-specific</b>: Yes</li>
+  <li><b>Respondent</b>: Primary caregiver on Child</li>
+  <li><b>Method</b>: Self-administered remotely (7-10 min)</li>
+  </ul>
+</tr>
+<tr><td><b>Quality Control</b></td>
+<td colspan="2">
+  <ul>
+  <li>Examine missingness by counting items answered per participant.</li>
+  <li>Check age is within expected ranges.</li>
+  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
+  <li>Cronbach's Alpha calculated to assess reliability.</li>
+  </ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -60,63 +67,148 @@ However, early in data collection, the ECBQ was inadvertently administered to in
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
 
-## Administration & Quality Control
+## Instrument Details
+The *Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibition* **(IBQ-R VSF+BI)** and *Early Childhood Behavior Questionnaire Very Short Form + Behavior Inhibition* **(ECBQ VSF+BI)** are caregiver-report measures of temperamental reactivity and self-regulation in early development. Both instruments extend the validated Very Short Forms (VSF) of the IBQ-R and ECBQ by incorporating additional items from the long-form questionnaires (items 38–47) to capture Behavioral Inhibition (Social Fear).
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+The HBCD versions therefore include four scale domains: **Behavioral Inhibition**, **Negative Affectivity**, **Effortful Control**, and **Surgency/Extraversion**. Scale domain items for the IBQ and ECBQ are listed in the table below, with reverse scoring (“R”) and duplicate items for BEH and NEG scale noted:
+
+##### IBQ-R & ECBQ DOMAIN ITEMS
+<div style="display: flex; gap: 24px; flex-wrap: wrap;">
+<div style="flex: 1; min-width: 350px;">
+<table class="compact-table-no-vertical-lines" style="font-size: 14px; line-height: 1.4; width: 100%;">
 <tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Primary caregiver on Child</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
-<tr><td><b>Visits</b></td>
-<td>
-  <strong>IBQ-R (VSF)+BI</strong>: V03, V05 / <strong>ECBQ (VSF)+BI</strong>: V05</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>7-10 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within the expected range of 3-18 months. Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
+<tr><td colspan="4" style="border-top: 2px solid #cce7e7; padding-top: 8px;">
+<b>IBQ-R Items</b><span style="color:#666; font-weight: normal;"> (prefix: <code>mh_cg_ibqr_</code>)</span></td>
+</tr>
+<tr>
+<td><b>BEH</b><br><span style="color:#888; font-size:0.9em;">(13 items)</span></td>
+<td><b>NEG</b><br><span style="color:#888; font-size:0.9em;">(12 items)</span></td>
+<td><b>EFRT</b><br><span style="color:#888; font-size:0.9em;">(12 items)</span></td>
+<td><b>SURG</b><br><span style="color:#888; font-size:0.9em;">(13 items)</span></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+  <!-- <td><code>beh__neg_001</code></td><td><code>beh__neg_001</code></td> -->
+  <td colspan="2" style="text-align: center; color:#666;"><code>beh__neg_001</code></td>
+  <td><code>efrt_001</code></td>
+  <td><code>surg_001</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td colspan="2" style="text-align: center; color:#666;"><code>beh__neg_002</code></td>
+    <td><code>efrt_002</code></td>
+    <td><code>surg_002</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td colspan="2" style="text-align: center; color:#666;"><code>beh__neg_003</code></td>
+    <td><code>efrt_003</code> <span style="color: #4e7dff;"><b>(R)</b></span></td>
+    <td><code>surg_003</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_001</code></td><td><code>neg_001</code></td><td><code>efrt_004</code></td><td><code>surg_004</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_002</code></td><td><code>neg_002</code></td><td><code>efrt_005</code></td><td><code>surg_005</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_003</code></td><td><code>neg_003</code></td><td><code>efrt_006</code></td><td><code>surg_006</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_004</code></td><td><code>neg_004</code></td><td><code>efrt_007</code></td><td><code>surg_007</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_005</code></td><td><code>neg_005</code></td><td><code>efrt_008</code></td><td><code>surg_008</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_006</code></td><td><code>neg_006</code></td><td><code>efrt_009</code></td><td><code>surg_009</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_007</code></td><td><code>neg_007</code></td><td><code>efrt_010</code></td><td><code>surg_010</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_008</code></td><td><code>neg_008</code></td><td><code>efrt_011</code></td><td><code>surg_011</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_009</code> <span style="color: #4e7dff;"><b>(R)</b></span></td>
+    <td><code>neg_009</code></td>
+    <td><code>efrt_012</code></td>
+    <td><code>surg_012</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_010</code></td><td></td><td></td><td><code>surg_013</code></td>
+</tr>
 </tbody>
 </table>
-
-## Instrument Details
-
-The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibition (**IBQ-R (VSF)+BI**) and Early Childhood Behavior Questionnaire Very Short Form + Behavior Inhibition (**ECBQ (VSF)+BI**) are caregiver-report questionnaires used to evaluate temperamental reactivity and self-regulation during the early years of development. These instruments are adapted from the validated Very Short Forms (VSF) of the IBQ-R and ECBQ, with additional items (items 38-47) drawn from the long forms to capture **Behavioral Inhibition (Social Fear)**.
-
-**The HBCD versions therefore include four scale domains:**
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 16px; line-height: 1.4; text-align: center;">
-  <thead>
-    <tr>
-      <th style="text-align: left;">Scale Domain</th>
-      <th>IBQ-R (# items)</th>
-      <th>ECBQ (# items)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left;"><strong>Surgency / Extraversion</strong></td>
-      <td>13</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <td style="text-align: left;"><strong>Negative Affectivity</strong></td>
-      <td>12</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <td style="text-align: left;"><strong>Effortful Control</strong></td>
-      <td>12</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <td style="text-align: left;"><strong>Behavioral Inhibition (Social Fear)</strong></td>
-      <td>13 <span style="font-size: 0.9em; color: #666;">(3 overlap with Negative Affectivity)</span></td>
-      <td>12 <span style="font-size: 0.9em; color: #666;">(1 overlaps with Negative Affectivity)</span></td>
-    </tr>
-  </tbody>
+</div>
+<div style="flex: 1; min-width: 350px;">
+<table class="compact-table-no-vertical-lines" style="font-size: 14px; line-height: 1.4; width: 100%;">
+<tbody>
+<tr>
+<td colspan="4" style="border-top: 2px solid #cce7e7; padding-top: 8px;"><b>ECBQ Items</b>
+<span style="color:#666; font-weight: normal;">(prefix: <code>mh_cg_ecbq_</code>)</span>
+</td>
+</tr>
+<tr>
+<td><b>BEH</b><br><span style="color:#888; font-size:0.9em;">(12 items)</span></td>
+<td><b>NEG</b><br><span style="color:#888; font-size:0.9em;">(12 items)</span></td>
+<td><b>EFRT</b><br><span style="color:#888; font-size:0.9em;">(12 items)</span></td>
+<td><b>SURG</b><br><span style="color:#888; font-size:0.9em;">(12 items)</span></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+<td colspan="2" style="text-align: center; color:#666;"><code>beh__neg_001</code></td>
+<td><code>efrt_001</code></td>
+<td><code>surg_001</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+<td><code>beh_001</code> <span style="color: #4e7dff;"><b>(R)</b></span></td>
+<td><code>neg_001</code></td>
+<td><code>efrt_002</code></td>
+<td><code>surg_003</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_002</code></td><td><code>neg_002</code></td><td><code>efrt_003</code></td><td><code>surg_004</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_003</code></td>
+    <td><code>neg_003</code></td>
+    <td><code>efrt_004</code> <span style="color: #4e7dff;"><b>(R)</b></span></td>
+    <td><code>surg_004</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_004</code></td>
+    <td><code>neg_004</code></td>
+    <td><code>efrt_005</code> <span style="color: #4e7dff;"><b>(R)</b></span></td>
+    <td><code>surg_005</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_005</code></td><td><code>neg_005</code></td><td><code>efrt_006</code></td><td><code>surg_006</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_006</code></td><td><code>neg_006</code></td><td><code>efrt_007</code></td><td><code>surg_007</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+    <td><code>beh_007</code></td><td><code>neg_007</code></td><td><code>efrt_008</code></td><td><code>surg_008</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+<td><code>beh_008</code> <span style="color: #4e7dff;"><b>(R)</b></span></td>
+<td><code>neg_008</code></td>
+<td><code>efrt_009</code></td>
+<td><code>surg_009</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+<td><code>beh_009</code></td><td><code>neg_009</code></td><td><code>efrt_010</code></td><td><code>surg_010</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+<td><code>beh_010</code></td><td><code>neg_010</code></td><td><code>efrt_011</code></td><td><code>surg_011</code></td>
+</tr>
+<tr style="border-top: 1px solid #f5f5f5;">
+<td><code>beh_011</code> <span style="color: #4e7dff;"><b>(R)</b></span></td>
+<td><code>neg_011</code> <span style="color: #4e7dff;"><b>(R)</b></span></td>
+<td><code>efrt_012</code></td>
+<td><code>surg_012</code></td>
+</tr>
+</tbody>
 </table>
+</div>
+</div>
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -144,8 +236,23 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Response Scale</b></p>
-<p>Caregivers are asked to report on the infant’s behaviors on a <b>7-point Likert scale</b>:</p>
+<p>The IBQ-R and ECBQ item responses are reported on a 7-point Likert scale (from <i>1 = Never</i> to <i>7 = Always</i>). For each domain (Behavioral Inhibition, Negative Affectivity, Effortful Control, and Surgency/Extraversion), summary scores are computed as the mean of all items with values of 1-7. This excludes non-response options, "Does not apply" and "Decline to answer," which are not scored and considered missing.</p>
+<p>Prior to computing summary scores, reverse scoring (i.e. values reassigned from 1→7 to 7→1) is applied to items labeled with <b>(R)</b> in the <a href="#ibq-r-ecbq-domain-items">Domain Items</a> table above. In the release data, the raw item-level data is not reverse-scored already. However, the domain scores do incorporate the reverse scoring. Summary scores are not computed if more than 40% of the items are missing responses (e.g. there are only 7/12 items with numerical responses of 1-7) and are instead marked as missing.</p>
+<p>For additional information, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
+</div>
+
+## References
+<div class="references">
+<p>Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. <em>Developmental Cognitive Neuroscience</em>, 69, 101422. <a href="https://doi.org/10.1016/j.dcn.2024.101422">https://doi.org/10.1016/j.dcn.2024.101422</a></p>
+    <p>Gartstein, M. A., & Rothbart, M. K. (2003). Studying infant temperament via the Revised Infant Behavior Questionnaire. <i>Infant Behavior & Development</i>, 26(1), 64–86. <a href="https://doi.org/10.1016/s0163-6383(02)00169-8" target="_blank">https://doi.org/10.1016/s0163-6383(02)00169-8</a></p>  
+    <p>Putnam, S. P., Gartstein, M. A., & Rothbart, M. K. (2006). Measurement of fine-grained aspects of toddler temperament: the early childhood behavior questionnaire. <i>Infant Behavior & Development</i>, 29(3), 386–401. <a href="https://doi.org/10.1016/j.infbeh.2006.01.004" target="_blank">https://doi.org/10.1016/j.infbeh.2006.01.004</a></p> 
+    <p>Putnam, S. P., Helbig, A. L., Gartstein, M. A., Rothbart, M. K., & Leerkes, E. (2014). Development and assessment of short and very short forms of the infant behavior questionnaire-revised. <i>Journal of Personapty Assessment</i>, 96(4), 445–458. <a href="https://doi.org/10.1080/00223891.2013.841171" target="_blank">https://doi.org/10.1080/00223891.2013.841171</a></p> 
+    <p>Putnam, S. P., Jacobs, J., Gartstein, M., & Rothbart, M. K. (2010). <i>Development assessment short very short forms Early Childhood Behavior Questionnaire<i>. In Poster presented International Conference Infant Studies (<a href="http://research.bowdoin.edu/rothbart-temperament-questionnaires/files/2016/09/ICIS_2010_ECBQ_sf_poster.pdf">LINK</a>).</p> 
+    <p>Rothbart, M. K. (1981). Measurement of temperament in infancy. <i>Child Development</i>, 52(2), 569–578. <a href="https://doi.org/10.1111/j.1467-8624.1981.tb03082.x" target="_blank">https://doi.org/10.1111/j.1467-8624.1981.tb03082.x</a></p>  
+</div>
+
+
+<!-- 
 <table class="compact-table-no-vertical-lines" style="width:100%; border-collapse:collapse; font-size:0.9em;">
   <thead><tr>
     <th style="text-align:center;">1</th><th style="text-align:center;">2</th>
@@ -158,40 +265,4 @@ The Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibitio
     <td>About half the time</td><td>More than half the time</td>
     <td>Almost always</td><td>Always</td>
   </tr></tbody>
-</table>
-<p>The forms include <b>two additional non-response options, which are not scored</b>:</p> 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse;">
-<thead><tr><th>Response Option</th><th>Details</th></tr></thead>
-<tbody>
-<tr>
-<td>Does not apply</td>
-<td style="word-wrap: break-word; white-space: normal;">'Does not apply' is coded as 0 for ECBQ and 8 for IBQ-R: it will be coded as 8 for both in a future release for consistency.</td>
-</tr>
-<tr>
-<td>Decline to answer</td>
-<td style="word-wrap: break-word; white-space: normal;">'Decline to answer' is categorized as code 777 in the metadata, but in the release data, this code is deliberately converted to blank cells and the missingess reason is stored in the corresponding cell of the accompanying <a href="../../../datacuration/phenotypes/#shadow-matrices-for-missing-data" target="_blank">shadow matrix</a>.</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p><b>Scoring Procedures</b></p>
-<p>Scale scores for the IBQ-R (VSF)+BI and ECBQ (VSF)+BI represent the mean score of all items applicable to the child, as judged by the caregiver. Scores are computed for each domain (Negative Affectivity, Surgency/Extraversion, Effortful Control, and Behavioral Inhibition) as follows:</p>
-<p><b>1. Identify all items with numerical responses of 1–7, applying reverse scoring as needed, and compute their sum:</b></p>
-<ul>
-<li><b>Only include items with numerical responses of 1-7</b>: <i>missing items</i> (omitted by the caregiver) and <i>items with non-response options selected</i> ('Does not apply' or 'Decline to answer') receive no numerical score.</li>
-<li><b>Reverse scoring:</b> All item-level data is raw data. However, items marked with an “R” should be <i>reverse-scored</i> when calculating scale scores. This reverse-scoring is already included in the HBCD scoring algorithm.</li>
-</ul>
-<p><b>2. Divide the sum by the total number of scale items included in computation of the sum.</b> For example, given a sum of 47 for a scale of 12 items, with one item receiving no response, two items marked "Does not apply", and 9 items receiving a numerical response of 1-7, the sum of 47 would be divided by 9 to yield a mean of 5.22 for the scale score.</p>
-<p><b>3. If more than 40% of the total possible scale items are missing, the scale score is set to missing as it is not possible to score the individual domain</b> (e.g. there are only 7/12 items with numerical responses of 1-7).</p>
-<p><strong>For additional information</strong>, see the HBCD data dictionary for details on items and scales and <a href="https://research.bowdoin.edu/rothbart-temperament-questionnaires">Mary Rothbart's Temperament Questionnaires</a> for background on measure development.</p>
-</div>
-
-## References
-<div class="references">
-<p>Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. <em>Developmental Cognitive Neuroscience</em>, 69, 101422. <a href="https://doi.org/10.1016/j.dcn.2024.101422">https://doi.org/10.1016/j.dcn.2024.101422</a></p>
-    <p>Gartstein, M. A., & Rothbart, M. K. (2003). Studying infant temperament via the Revised Infant Behavior Questionnaire. <i>Infant Behavior & Development</i>, 26(1), 64–86. <a href="https://doi.org/10.1016/s0163-6383(02)00169-8" target="_blank">https://doi.org/10.1016/s0163-6383(02)00169-8</a></p>  
-    <p>Putnam, S. P., Gartstein, M. A., & Rothbart, M. K. (2006). Measurement of fine-grained aspects of toddler temperament: the early childhood behavior questionnaire. <i>Infant Behavior & Development</i>, 29(3), 386–401. <a href="https://doi.org/10.1016/j.infbeh.2006.01.004" target="_blank">https://doi.org/10.1016/j.infbeh.2006.01.004</a></p> 
-    <p>Putnam, S. P., Helbig, A. L., Gartstein, M. A., Rothbart, M. K., & Leerkes, E. (2014). Development and assessment of short and very short forms of the infant behavior questionnaire-revised. <i>Journal of Personapty Assessment</i>, 96(4), 445–458. <a href="https://doi.org/10.1080/00223891.2013.841171" target="_blank">https://doi.org/10.1080/00223891.2013.841171</a></p> 
-    <p>Putnam, S. P., Jacobs, J., Gartstein, M., & Rothbart, M. K. (2010). <i>Development assessment short very short forms Early Childhood Behavior Questionnaire<i>. In Poster presented International Conference Infant Studies (<a href="http://research.bowdoin.edu/rothbart-temperament-questionnaires/files/2016/09/ICIS_2010_ECBQ_sf_poster.pdf">LINK</a>).</p> 
-    <p>Rothbart, M. K. (1981). Measurement of temperament in infancy. <i>Child Development</i>, 52(2), 569–578. <a href="https://doi.org/10.1111/j.1467-8624.1981.tb03082.x" target="_blank">https://doi.org/10.1111/j.1467-8624.1981.tb03082.x</a></p>  
-</div>
+</table> -->

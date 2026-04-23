@@ -1,97 +1,102 @@
 # HBCD Processing Pipelines
-<p>
-<div id="visformat" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">See the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> website for full details on how each pipeline was used for HBCD processing.</span>
-</div>
-</p>
 
-The **HBCD processing pipelines** are a collection of modular tools used to process data from the HBCD study. These pipelines are not exclusive to HBCD, but are general-purpose tools for analyzing a variety of data modalities, including magnetic resonance imaging (**MRI**), electroencephalography (**EEG**), magnetic resonance spectroscopy (**MRS**), and **biosensor data**. The pipelines are designed to be modular and flexible, allowing for customization to meet the specific needs of the HBCD study.
+## HBCD Pipelines
 
-**The following processing pipelines were used for the HBCD study. Also see a more detailed breakdown by modality with links to derivative folder documentation for HBCD [here](../../datacuration/file-based-data.md#links-to-pipeline-derivatives).**
+The HBCD processing pipelines are a collection of modular tools used to process HBCD Study data, including magnetic resonance imaging/spectroscopy (**MRI/MRS**), electroencephalography (**EEG**), and **biosensor data**. See [Derivatives](../../datacuration/file-based-data.md#links-to-pipeline-derivatives) documentation for details on processed outputs.
 
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
-  <thead>
-    <tr>
-      <th style="width: 10%; text-align: center;">Modality</th>
-      <th style="width: 10%; text-align: center;">Processing Pipeline</th>
-      <th style="width: 10%; text-align: center;">Derivatives</th>
-      <th style="width: 60%; text-align: center;">Pipeline Description</th>
-    </tr>
-  </thead>
-  <tbody>
+
+The table below also includes links to the <a href="https://www.nmind.org/proceedings/"><i class="fa fa-shield"></i> NMIND Evaluated Tools</a> page for each pipeline - see <a href="standards/">Processing & Derivative Standards</a> for details.
+
+
+<table class="compact-table-no-vertical-lines">
+<thead><tr><th>Processing Pipeline</th><th>NMIND</th><th>Pipeline Description</th></tr></thead>
+<tbody>
+<!-- s/f/MRI -->
+<tr><td colspan="3" style="font-weight: bold; padding-top: 10px;">Structural & Functional MRI</td></tr>
 <tr>
-<td colspan="1" rowspan="7">
-<div>MRI</div>
-</td>
 <td><a href="https://mriqc.readthedocs.io/en/latest/">MRIQC</a></td>
-<td><code>mriqc/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Automated extraction of image quality metrics from structural and functional MRI data</td>
-<tr>
-<td><a href="https://brain-mri-enhancement.readthedocs.io/">BME-X</a></td>
-<td><code>bme_x/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Structural pipeline for T1w/T2w image quality enhancement</td>
+<td style="text-align: center;"><a href="https://www.nmind.org/proceedings/mriqc/"><i class="fa fa-shield"></i></a></td>
+<td>Extracts image quality metrics from structural and functional MRI data</td>
 </tr>
 <tr>
-<td><a href="https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html">qMRI Postproc</a></td>
-<td><code>symri/</code><br><code>qmri_postproc/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Minimal post-processing for SyMRI synthetic images derived from QALAS acquisition</td>
+<td><a href="https://brain-mri-enhancement.readthedocs.io/">BME-X</a></td>
+<td style="text-align: center;"><a href="https://www.nmind.org/proceedings/bmex/"><i class="fa fa-shield"></i></a></td>
+<td>Structural pipeline for T1w/T2w image quality enhancement</td>
 </tr>
 <tr>
 <td><a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet</a></td>
-<td><code>bibsnet/</code></td>
+<td style="text-align: center;"><a href="https://www.nmind.org/proceedings/bibsnet/"><i class="fa fa-shield"></i></a></td>
 <td>Deep learning model for brain segmentation</td>
 </tr>
 <tr>
 <td><a href="https://nibabies.readthedocs.io/en/latest/">infant-fMRIPrep</a></td>
-<td><code>nibabies/</code><br><code>freesurfer/</code><br><code>mcribs/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Structural and functional MRI preprocessing pipeline</td>
+<td style="text-align: center;"><a href="https://www.nmind.org/proceedings/nibabies/"><i class="fa fa-shield"></i></a></td>
+<td>Structural and functional MRI preprocessing pipeline</td>
 </tr>
 <tr>
 <td><a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a></td>
-<td><code>xcpd/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Functional MRI post-processing and noise regression pipeline</td>
+<td style="text-align: center;"><a href="https://www.nmind.org/proceedings/xcpd/"><i class="fa fa-shield"></i></a></td>
+<td>Functional MRI post-processing and noise regression pipeline</td>
+</tr>
+<!-- qMRI -->
+<tr><td colspan="3" style="font-weight: bold; padding-top: 10px;">Quantitative MRI</td></tr>
+<tr>
+<td><a href="https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html">qMRI Postproc</a></td>
+<td style="text-align: center;"><a href="https://www.nmind.org/proceedings/hbcd_qmri_postproc/"><i class="fa fa-shield"></i></a></td>
+<td>Minimal post-processing for SyMRI synthetic images</td>
+</tr>
+<!-- dMRI -->
+<tr><td colspan="3" style="font-weight: bold; padding-top: 10px;">Diffusion MRI</td></tr>
+<tr>
+<td><a href="https://qsiprep.readthedocs.io/en/latest/">QSIPrep</a></td>
+<td style="text-align: center;"><a href="https://www.nmind.org/proceedings/qsiprep/"><i class="fa fa-shield"></i></a></td>
+<td>dMRI data preprocessing pipeline</td>
 </tr>
 <tr>
-<td><a href="https://qsiprep.readthedocs.io/en/latest/">QSIPrep</a> and <a href="https://qsirecon.readthedocs.io/en/latest/">QSIRecon</a></td>
-<td><code>qsiprep/</code><br><code>qsirecon/</code><br><code>qsirecon-*/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Diffusion-weighted MRI (dMRI) data processing pipelines</td>
+<td><a href="https://qsirecon.readthedocs.io/en/latest/">QSIRecon</a></td>
+<td style="text-align: center;"><a href="https://www.nmind.org/proceedings/qsirecon/"><i class="fa fa-shield"></i></a></td>
+<td>dMRI post-processing workflows for reconstruction of preprocessed q-space images </td>
+</tr>
+<!-- MRS -->
+<tr>
+  <td colspan="3" style="font-weight: bold; padding-top: 10px;">MRS</td>
 </tr>
 <tr>
-<td>MRS</td>
 <td><a href="https://osprey-bids.readthedocs.io/en/latest/index.html">OSPREY-BIDS</a></td>
-<td><code>osprey/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">MRS data processing pipeline</td>
+<td style="text-align: center;"><a href="https://www.nmind.org/proceedings/osprey_bids/"><i class="fa fa-shield"></i></a></td>
+<td>MRS data processing pipeline</td>
+</tr>
+<!-- EEG -->
+<tr>
+  <td colspan="3" style="font-weight: bold; padding-top: 10px;">EEG</td>
 </tr>
 <tr>
-<td>EEG</td>
 <td><a href="https://docs-hbcd-made.readthedocs.io/en/latest/">HBCD-MADE</a></td>
-<td><code>made/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Maryland Analysis of Developmental EEG (MADE) pipeline adapted for HBCD</td>
+<td style="text-align: center;"><a href="https://www.nmind.org/proceedings/hbcdmade/"><i class="fa fa-shield"></i></a></td>
+<td>Maryland Analysis of Developmental EEG (MADE) pipeline adapted for HBCD</td>
+</tr>
+<!-- Biosensors -->
+<tr>
+  <td colspan="3" style="font-weight: bold; padding-top: 10px;">Biosensors</td>
 </tr>
 <tr>
-<td>Biosensors</td>
 <td><a href="https://hbcd-motion-postproc.readthedocs.io/en/latest/">HBCD-Motion</a></td>
-<td><code>hbcd_motion/</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Leg movement sensor data processing</td>
+<td style="text-align: center;"><a href="https://www.nmind.org/proceedings/hbcd_motion_postproc/"><i class="fa fa-shield"></i></a></td>
+<td>Leg movement sensor data processing</td>
 </tr>
 </tbody>
 </table>
 
-## Pipeline Standards & Design
-All pipelines used for HBCD data processing must adhere to [HBCD Processing & Analytic Software Standards](standards.md), which require, among other things:
+## Pipeline Configuration
 
-- NMIND peer review and DOI publication for reproducibility.
-- Compliance with the Brain Imaging Data Structure (BIDS) standard.
-- Implementation as BIDS Apps ([Gorgolewski et al.,2017](https://doi.org/10.1371/journal.pcbi.1005209)), ensuring containerized, standardized processing.
+The full details on how each pipeline was executed and configured is available in the complete <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> documentation. All pipeline-specific parameters and data criteria are detailed under [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html#tool-names), including **processing settings**, **pipeline outputs**, **file selection for processing**, **QC selection information**, and more.
 
-### Why BIDS & BIDS Apps?
-BIDS is a community-driven standard for organizing neuroimaging and behavioral data, making datasets **structured**, **shareable**, and **reproducible**. BIDS Apps are containerized applications that run on any system supporting [Docker](https://docs.docker.com/get-started/get-docker/) or [Apptainer](https://apptainer.org/docs/user/main/quick_start.html) (Singularity).
 
-**Benefits of Containerization:**        
-<i class="fa fa-check-square"></i> Ensures all software dependencies are included.      
-<i class="fa fa-check-square"></i> Guarantees consistent processing environments across systems.        
-<i class="fa fa-check-square"></i> Simplifies reproducibility and collaboration.        
+<!-- 
+A general overview of file selection procedures specifically for **structural and functional MRI data** is additionally provided in the [MRI Processing & Derivatives Guide](../mri/mri-proc.md#file-selection-for-processing).
+ -->
+
+<!-- ## Pipeline Standards & Design
 
 ### Running an HBCD Processing Pipeline
 To process HBCD study data using one of these pipelines, follow the installation and usage instructions on the specific pipeline's documentation page (links below).
@@ -100,12 +105,6 @@ To process HBCD study data using one of these pipelines, follow the installation
 **Singularity/Apptainer** → Recommended for university-affiliated HPC clusters, where users lack administrative privileges.         
 **Docker** → Preferred for personal computers due to its ease of installation (may require extra setup for HPC use).
 
-All processing containers are available on [Docker Hub](https://hub.docker.com/).
-
-## File Selection for Processing
-
-Files are selected for processing based on pipeline-specific criteria detailed under the sections ***File Selection For Processing*** and ***Quality Control Selection Information*** in the [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html#tool-names) section of the [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/index.html) documentation. 
-
-A general overview of file selection procedures specifically for **structural and functional MRI data** is additionally provided in the [MRI Processing & Derivatives Guide](../mri/mri-proc.md#file-selection-for-processing).
+All processing containers are available on [Docker Hub](https://hub.docker.com/). -->
 
 

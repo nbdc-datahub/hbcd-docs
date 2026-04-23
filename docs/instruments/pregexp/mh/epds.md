@@ -1,48 +1,29 @@
-# Edinburgh Postnatal Depression Scale (<i>EPDS</i>)
+# Edinburgh Postnatal Depression Scale (EPDS)
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>pex_bm_epds</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Postnatal Depression</div>
-  </div>
-</div>
-
----------------------------------------------
-
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Pregnant Participant or Birth Parent</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered in-person or remote</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V01, V02, V03</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>3 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<tr><td><b>Table Name</b></td><td><code>pex_bm_epds</code></td></tr>
+<tr><td><b>Construct</b></td><td>Postnatal Depression</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V01, V02, V03</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Pregnant Participant or Birth Parent<br>
+<b>Method</b>: Self-administered in-person or remote (3 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td>
 <ul>
 <li>Checks for missing data based on counts for items completed by each participant</li>
 <li>Verification of scoring accuracy</li>
 <li>Summary statistics to examine item-level frequencies and total scores</li>
 <li>Review of response distributions for potential outliers</li>
-</ul>        
+</ul> 
 </td></tr>
-</tbody>
-</table>
+</tbody></table>
+
+<div id="issues" class="issues-banner">
+  <span class="emoji"><i class="fas fa-bug"></i></span>
+  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
+</div>
 
 ## Instrument Details
 
@@ -86,7 +67,7 @@ The Edinburgh Postnatal Depression Scale (<a href="https://downloads.aap.org/AAP
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Each item is scored on a scale from 0 to 3, with items 3, 5, 6, 7, 8, 9, and 10 being reverse-scored (i.e. 3, 2, 1, 0), which was built into the original survey responses. No additional scoring changes are necessary at the item-level. Total scores are calculated by summing the item responses. Note that total scores are not prorated or left missing for missing items: data users should determine how best to address missing data.</p>
+<p>Items are scored on a 0→3 scale. Items 3, 5–10 are reverse-scored (i.e., 3→0): this is already reflected in the raw responses and no additional item-level scoring is required. Total scores are calculated as the sum of item responses. Scores are not prorated or set to missing for incomplete items; users should determine how to handle missing data.</p>
 </div>
 
 ## References

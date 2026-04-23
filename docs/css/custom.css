@@ -149,16 +149,14 @@ pre.helper-code code {
   color: #ffffff;
   font-size: 12px;
   padding: 10px;
-  line-height: 1.4em;
+  line-height: 1.5em;
   border-radius: 5px;
   white-space: pre;
   display: block;
   overflow-x: auto; /* Allows horizontal scrolling */
 }
 /* Style for placeholder variables in angle brackets */
-.folder-tree .placeholder {
-  color: #0af0e1
-}
+.folder-tree .placeholder {color: #0af0e1}
 .folder-tree .hashtag {
   color: #b0d619
 }
@@ -168,7 +166,11 @@ pre.helper-code code {
 .folder-tree .subses {
   color: #b5c2ff
 }
-
+.folder-tree .muted {opacity: 0.6;} /* ellipses */
+.folder-tree .folder {font-weight: 500;}
+.folder-tree .file {color: #a6dddd;}
+.folder-tree .section {color: #a6ddb6;}
+.folder-tree .comment {color: #9aa0a6; font-style: italic;} /* Inline comments */
 
 .gray-text {
   color: #505050;

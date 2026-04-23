@@ -1,28 +1,26 @@
 # ecPROMIS Child-Caregiver Relationship Scale
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Instrument</th>
-  <th>Version</th>
-  <th>Construct</th>
-  <th>Visits</th>
-  <th>Table Name</th>
-</tr>
-</thead>
+<table class="table-no-vertical-lines">
+<thead><tr><th></th><th>Infant Version (&lt;1 year old)</th><th>Child (1&ndash;5 Years) Version</th></tr></thead>
 <tbody>
-<tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">ecPROMIS Child-Caregiver Relationship Scale</td>
-  <td><strong>&lt;1 year</strong></td>
-  <td>Relationships</td>
-  <td>V03, V05</td>
-  <td><code>mh_cg_pms__cc__inf</code></td>
+<tr><td><b>Table Name</b></td><td><code>mh_cg_pms__cc__inf</code></td><td><code>mh_cg_pms__cc__1to5</code></td></tr>
+<tr><td><b>Construct</b></td><td  colspan="2">Relationships</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V03, V05</td><td>V05, V07, V09</td></tr>
+<td><b>Administration</b></td><td colspan="2">
+  <ul>
+  <li><b>Child-specific</b>: Yes</li>
+  <li><b>Respondent</b>: Primary Caregiver</li>
+  <li><b>Method</b>: Self-administered remotely (1&ndash;2 min estimated duration)</li>
+  </ul>
 </tr>
-<tr>
-  <td><strong>1-5 years</strong></td>
-  <td>Relationships</td>
-  <td>V05, V07, V09</td>
-  <td><code>mh_cg_pms__cc__1to5</code></td>
+<tr><td><b>Quality Control</b></td>
+<td colspan="2">
+  <ul>
+  <li>Examine missingness by counting items answered per participant.</li>
+  <li>Check age is within expected ranges.</li>
+  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
+  </ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -62,31 +60,6 @@ At V05 (10–17 months), the standard administration is the child (<i>1–5 year
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Primary caregiver</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
-<tr><td><b>Visits</b></td>
-<td><b>&lt;1 year</b>: V03, V05; <b>1-5 years</b>: V05, V07, V09</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>1-2 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
-<ul>
-  <li>Examine missingness by counting the number of items answered for each participant.</li>
-  <li>Check age to ensure that it falls within expected ranges (3-9 months for V03; 1-5 years for V05-V09).</li>
-  <li>Generate summary statistics and visualizations to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data).</li>
-</ul>
-</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 

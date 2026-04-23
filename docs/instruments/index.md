@@ -700,7 +700,7 @@ PATCH RELEASE
 <div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-file-waveform"></i></span>
   <span class="text-with-link">
-  <span class="text">EEG</span>
+  <span class="text">EEG & Tabular EEG</span>
   <a class="anchor-link" href="#eeg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -708,59 +708,74 @@ PATCH RELEASE
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-up-right-from-square"></i> <b>Quick Links</b></p>
-<ul>
-<li><a href="eeg/" target="_blank">Overview & EEG Protocols</a></li>
-<li><a href="eeg/qc" target="_blank">EEG Quality Control Procedures</a></li>
-<li><a href="eeg/tasks" target="_blank">HBCD EEG Tasks</a> (<i>Auditory Mismatch Negativity, Faces, Video Resting State, & Visual Evoked Potential</i>)</li>
-</ul>
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> <b>File-Based EEG Data</b></p>
-<ul>
-<li>Raw BIDS stored under subject- and session-specific <a href="eeg/#rawbids" target="_blank"><code>eeg/</code></a> folders</li>
-<li>Processed derivatives output by the <a href="eeg/#made" target="_blank">HBCD-MADE</a> pipeline</li>
-</ul>
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> <b>Tabulated EEG Data</b></p>
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<b>MMN</b>=Auditory Mismatch Negativity; <b>FACE</b>=Faces; <b>RS</b>=Video Resting State; <b>VEP</b>=Visual Evoked Potential
-</p>
+<p>EEG release data, including EEG (file-based data) and Tabular EEG domains, are displayed below. 
+See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critical information on protocols, quality control procedures, etc.</p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th>Domain</th>
-<th>Table</th>
-<th>Table Name</th>
+<th width="15%"><i class="fa-solid fa-folder-open header-icon"></i> EEG</th>
+<th>Task Name</th>
+<th style="text-align: center;">Label</th>
+<th>Raw & Processed File-Based Data</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="4">Tabular EEG</td>
+  <td rowspan="4"></td>
+  <td><a href="eeg/tasks/#auditory-mismatch-negativity-task" target="_blank">Auditory Mismatch Negativity</a></td>
+  <td style="text-align: center;"><code>MMN</code></td>
+  <td rowspan="4">
+        <b>Raw</b>: <a href="eeg/#rawbids" target="_blank">Raw BIDS <i>(rawdata/sub-{ID}/ses-{V0X}/eeg/)</i></a><br><br>
+        <b>Processed</b>: <a href="eeg/#rawbids" target="_blank">HBCD-MADE pipeline derivatives <i>(derivatives/made/)</i></a>
+    </td>
+</tr>
+<tr><td><a href="eeg/tasks/#faces-task" target="_blank">Faces</a></td>
+  <td style="text-align: center;"><code>FACE</code></td></tr>
+<tr><td><a href="eeg/tasks/#visual-evoked-potential-task" target="_blank">Visual Evoked Potential</a></td>
+  <td style="text-align: center;"><code>VEP</code></td></tr>
+<tr><td><a href="eeg/tasks/#video-resting-state-task" target="_blank">Video Resting State</a></td>
+  <td style="text-align: center;"><code>RS</code></td></tr>
+</tbody>
+</table>
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th width="15%"><i class="fa-solid fa-table header-icon"></i> Tabular EEG</th>
+<th>Table/Instrument</th>
+<th>Table Name</th>
+</tr>
+</thead>
+<tr>
+  <td rowspan="4"></td>
   <td><a href="eeg/" target="_blank">EEG Acquisition Checklist</a></td>
   <td><code>eeg_ch_chkl</code></td>
 </tr>
 <tr>
   <td><a href="eeg/" target="_blank">EEG Acquisition Checklist - Reattempt 1/2</a></td>
-  <td><code>eeg_ch_chkl_<span class="blue-text">&lt;1|2&gt;</span></code></td>
+  <td><code>eeg_ch_chkl_<span class="blue-text">{1|2}</span></code></td>
 </tr>
 <tr>
   <td><a href="eeg/qc" target="_blank">Quality Control Metrics</a></td>
-  <td><code>eeg_qc_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span></code></td>
+  <td><code>eeg_qc_task-<span class="blue-text">{ALL TASKS}</span></code></td>
 </tr>
 <tr>
-  <td>Tabulated HBCD-MADE pipeline derivatives<sup><b>1</b></sup></td>
-  <td><code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|RS|VEP&gt;</span>_acq-eeg_preprocessingReport</code><br>
-  <code>eeg_made_task-<span class="blue-text">&lt;MMN|FACE|VEP&gt;</span>_ERPSummaryStats</code></td>
+  <td>Tabulated HBCD-MADE derivatives<br>
+  <i>(See <a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>Tabulated Pipeline Derivatives</a> for details)</i></td>
+  <td><code>eeg_made_task-<span class="blue-text">{ALL TASKS}</span>_acq-eeg_preprocessingReport</code><br>
+    <code>eeg_made_task-FACE_ERPSummaryStats</code><br>
+    <code>eeg_made_task-MMN_ERPSummaryStats</code><br>
+    <code>eeg_made_task-VEP_ERPSummaryStats</code>
+</td>
 </tr>
 </tbody>
-<tfoot><tr><td colspan="3">
- <sup><b>1</b></sup> See <a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>Which file-based data are also available as HBCD tabulated data? </i></a>
-</td></tr></tfoot>
 </table>
 </div>
 
 <div id="mri" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
-    <span class="text">Imaging (File-Based Data)</span>
+    <span class="text">Imaging</span>
     <a class="anchor-link" href="#mri" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>
@@ -768,68 +783,43 @@ PATCH RELEASE
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines">
-<tfoot><tr><td colspan="4">
- <sup><b>1</b></sup> See <a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>Which file-based data are also available as HBCD tabulated data?</i></a>
-</td></tr></tfoot>
+<p>All raw BIDS data documentation under <a href="mri/rawbids/" target="_blank">Raw MR BIDS</a>.</p>
+<table class="compact-table-no-vertical-lines" style="line-height: 1.1;">
 <thead>
 <tr>
     <th>Modality</th>
     <th>Raw BIDS</th>
     <th>Pipeline Derivatives</th>
-    <th>HBCD Tabulated Format Available<sup><b>1</b></sup></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2">Structural MRI (<a href="mri/smri" target="_blank">sMRI</a>)</td>
-  <td rowspan="2"><code>anat/</code></td>
-  <td><a href="../../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a></td>
-  <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
-</tr>
-<tr>
-  <td><a href="../../instruments/mri/smri/#mriqc" target="_blank">MRIQC</a></td>
-  <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+  <td>Structural MRI (<a href="mri/smri" target="_blank">sMRI</a>)</td>
+  <td><code>anat/</code></td>
+  <td>
+    MRIQC • BIBSNet</td>
 </tr>
 <tr>
   <td>Functional MRI (<a href="mri/fmri" target="_blank">fMRI</a>)</td>
   <td><code>func/</code>, <code>fmap/</code></td>
-  <td><a href="../../instruments/mri/fmri/#mriqc" target="_blank">MRIQC</a></td>
-  <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
-</tr>
-<tr>
-    <td rowspan="2">Structural+Functional MRI</td>
-    <td rowspan="2"></td>
-  <td><a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> & <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">FreeSurfer & M-CRIB-S</a></td>
-  <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
-</tr>
-<tr>
-  <td><a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a></td>
-  <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+  <td>
+    MRIQC • Infant fMRIPrep + FreeSurfer / M-CRIB-S • XCP-D</td>
 </tr>
 <tr>
     <td>Quantitative MRI (<a href="mri/qmri" target="_blank">qMRI</a>)</td>
-    <td><code>anat/</code></td>
-    <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI & qMRI PostProc</a></td>
-    <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
+    <td><code>anat/</code>, <code>fmap/</code></td>
+    <td>SyMRI & qMRI PostProc</td>
 </tr>
 <tr>
-    <td rowspan="2">Diffusion MRI (<a href="mri/dmri" target="_blank">dMRI</a>)</td>
-    <td rowspan="2"><code>dwi/</code></td>
-    <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
-<td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
-</tr>
-<tr>
-<td><a href="mri/dmri/#qsirecon" target="_blank">QSIRecon</a> (<a href="../../instruments/mri/dmri/#qsirecon-DSIStudio" target="_blank">DSI Studio</a>/
-  <a href="../../instruments/mri/dmri/#qsirecon-DIPYDKI" target="_blank">DIPY DKI</a>/
-  <a href="../../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">TORTOISE</a>)</td>
-  <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
+    <td>Diffusion MRI (<a href="mri/dmri" target="_blank">dMRI</a>)</td>
+    <td><code>dwi/</code></td>
+    <td>
+      QSIPrep & QSIRecon (DSI Studio, DIPY DKI, TORTOISE)</td>
 </tr>
 <tr>
   <td>MR Spectroscopy (<a href="mri/mrs" target="_blank">MRS</a>)</td>
   <td><code>mrs/</code></td>
-  <td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a></td>
-  <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+  <td>OSPREY-BIDS</td>
 </tr>
 </tbody>
 </table>
@@ -846,9 +836,8 @@ PATCH RELEASE
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>see details</i></a>)
-</p>
+<p style="font-size: 0.9em; color: #555;">
+<i class="fa-solid fa-diagram-project header-icon"></i>= Tabulated pipeline derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)</p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -858,16 +847,8 @@ PATCH RELEASE
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="mri/qc#brainswipes" target="_blank">BrainSwipes</a></td>
-<td>Manual QC</td>
-<td>
-<code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">&lt;T2w|bold&gt;</span></code><br>
-<code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">&lt;T1w|bold&gt;</span></code>
-</td>
-</tr>
 <!-- 
-PATCH RELEASE
+LUCI NOTE: PATCH RELEASE
 <tr>
 <td><a href="mri/summary-forms" target="_blank">MRI Data Summary Form</a></td>
 <td>Admin</td>
@@ -879,58 +860,72 @@ PATCH RELEASE
 <td><code>mri_ra_chkl_scan</code></td>
 </tr> -->
 <tr>
-<td><a href="mri/prescan-questionnaire" target="_blank">Pre-Scan Questionnaire</a></td>
+<td><a href="mri/prescan-questionnaire" target="_blank">Pre/Post Scan Prep</a></td>
 <td>Infant Sleep</td>
 <td><code>mri_ra_prep</code></td>
 </tr>
 <tr>
-    <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; <a href="../../instruments/mri/fmri/#mriqc" target="_blank">MRIQC</a></td>
-    <td>Pipeline</td>
-    <td><code>img_mriqc_<span class="blue-text">&lt;T1w|T2w|bold&gt;</span></code></td>
+<td><a href="mri/qc#brainswipes" target="_blank">BrainSwipes</a></td>
+<td>Manual QC</td>
+<td>
+<code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_T2w</code><br>
+<code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_bold</code><br>
+<code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_T1w</code><br>
+<code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_bold</code><br>
+</td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; <a href="../../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a></td>
-  <td>Pipeline</td>
-  <td><code>img_bibsnet_space-<span class="blue-text">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes</code></td>
+<td>MRIQC</td><td><i class="fa-solid fa-diagram-project header-icon"></i></td>
+<td><code>img_mriqc_T1w</code><br><code>img_mriqc_T2w</code><br><code>img_mriqc_bold</code></td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; <a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a></td>
-  <td>Pipeline</td>
-  <td><code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph</code><br>
+<td>BIBSNet</td><td><i class="fa-solid fa-diagram-project header-icon"></i></td>
+<td><code>img_bibsnet_space-T1w_desc-aseg_volumes</code><br><code>img_bibsnet_space-T2w_desc-aseg_volumes</code></td>
+</tr>
+<tr>
+  <td>XCP-D</td>
+  <td><i class="fa-solid fa-diagram-project header-icon"></i></td>
+  <td>
+    <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-sulc_morph</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-thickness_morph</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-alff_bold</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-coverage_bold</code><br>
     <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-reho_bold</code>
-  </td>
+  <br><br>
+  <code><span class="blue-text">&lt;HASH&gt;</span></code>  values: <code>0f306a2f+0ef9c88a</code>; <code>2afa9081+0ef9c88a</code><br>
+  <code><span class="blue-text">&lt;PARC&gt;</span></code>  values: <code>Glasser</code>, <code>Gordon</code>, etc - <a href="mri/fmri/#parc" target="_blank">see full atlas list →</a></code><br><br>
+  <a href="mri/tables/xcpd.html" target="_blank">See full file list →</a></td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; <a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
-  <td>Pipeline</td>
+  <td>QSIPrep</td>
+  <td><i class="fa-solid fa-diagram-project header-icon"></i></td>
   <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
 </tr>
 <tr>
-  <td><i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp; <a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a></td>
-  <td>Pipeline</td>
-  <td>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_CSFWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_TissCorrWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_rawWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_amplMets_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_<span class="blue-text">&lt;Q&gt;</span>_tCr_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_HERCULES_qm_processed_spectra</code><br>
-    <code>img_osprey_unedited_qm_processed_spectra</code>
+<td>OSPREY-BIDS</td>
+<td><i class="fa-solid fa-diagram-project header-icon"></i></td>
+<td>
+<code><span class="blue-text"># HERCULES diff1, diff2, and sum files</span></code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_CSFWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_TissCorrWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_rawWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_amplMets_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_tCr_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_qm_processed_spectra</code><br><br>
+    <code><span class="blue-text"># Unedited files</span></code><br>
+    <code>img_osprey_unedited_A_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_CSFWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_TissCorrWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_rawWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_amplMets_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_A_tCr_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_unedited_qm_processed_spectra</code><br><br>
+    <a href="mri/tables/osprey.html" target="_blank">See full file list →</a>
     </td>
-</tr>
-<tr>
-  <td colspan="3">
-    <strong>Label Values Legend</strong><br>
-    <b style="color: #0077cc;">&lt;HASH&gt;</b>: 0f306a2f+0ef9c88a, 2afa9081+0ef9c88a<br>
-    <b style="color: #0077cc;">&lt;PARC&gt;</b> (parcellations): 4S-{1-10}56Parcels, Glasser, Gordon, MIDB, MyersLabonte, HCP, Tian (HCP & Tian functional only)<br>
-    <b style="color: #0077cc;">&lt;Q&gt;</b> (quantification method): HERCULES_diff1, HERCULES_diff2, HERCULES_sum, unedited_A
-  </td>
 </tr>
 </tbody>
 </table>
@@ -984,4 +979,6 @@ PATCH RELEASE
 </tbody>
 </table>
 </div>
+
+
 

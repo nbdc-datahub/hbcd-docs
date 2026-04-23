@@ -263,9 +263,7 @@ There are four options the Study Navigator can select to indicate actions taken,
     <tr>
       <td><code>BROADER_FAMILY_HEALTH_CHECKBOXES</code></td>
       <td>Family health</td>
-      <td>
-        caregiving; mental_health; physical_health; safety; other
-      </td>
+      <td>caregiving; mental_health; physical_health; safety; other</td>
     </tr>
     <tr>
       <td><code>SOCIOECONOMIC_RESOURCES_CHECKBOXES</code></td>
@@ -275,9 +273,7 @@ There are four options the Study Navigator can select to indicate actions taken,
       </td>
     </tr>
     <tr>
-      <td><code>SUBSTANCE_USE_CHECKBOXES</code></td>
-      <td>Substance use</td>
-      <td>SUD_behavioral_health_treatment; SUD_medical_treatment; SUD_recovery_resource; other</td>
+      <td><code>SUBSTANCE_USE_CHECKBOXES</code></td><td>Substance use</td><td>behavioral; medical; recovery; other</td>
     </tr>
     <tr>
       <td><code>OTHER_CHECKBOXES</code></td>

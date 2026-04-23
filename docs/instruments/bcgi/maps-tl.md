@@ -1,25 +1,28 @@
 # MAPS-TL
+<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Multidimensional Assessment Profiles - Temper Loss Scale</i></p>
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Instrument</th>
-  <th>Version</th>
-  <th>Construct</th>
-  <th>Table Name</th>
-</tr>
-</thead>
+<table class="table-no-vertical-lines">
+<thead><tr><th></th><th>MAPS-TL Infancy (&lt;1 year old)</th><th>MAPS-TL Toddlerhood & Preschool</th></tr></thead>
 <tbody>
-<tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">Multidimensional Assessment Profiles - Temper Loss Scale</td>
-  <td><strong>Infancy (&lt;1 year)</strong></td>
-  <td>Irritability</td>
-  <td><code>mh_cg_mapdb__inf</code></td>
+<tr><td><b>Table Name</b></td><td><code>mh_cg_mapdb__inf</code></td><td><code>mh_cg_mapdb__tod</code></td></tr>
+<tr><td><b>Construct</b></td><td  colspan="2">Irritability</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V03</td><td>V05</td></tr>
+<td><b>Administration</b></td><td colspan="2">
+  <ul>
+  <li><b>Child-specific</b>: Yes</li>
+  <li><b>Respondent</b>: Primary Caregiver on Child</li>
+  <li><b>Method</b>: Self-administered remotely (5 min estimated duration)</li>
+  </ul>
 </tr>
-<tr>
-  <td><strong>Toddlerhood and Preschool</strong></td>
-  <td>Irritability</td>
-  <td><code>mh_cg_mapdb__tod</code></td>
+<tr><td><b>Quality Control</b></td>
+<td colspan="2">
+  <ul>
+  <li>Examine missingness by counting items answered per participant.</li>
+  <li>Check age is within expected ranges (3-9/10-17 months for Infant/Toddlerhood).</li>
+  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
+  <li>Cronbach's Alpha calculated to assess reliability.</li>
+  </ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -56,25 +59,6 @@
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Primary caregiver on Child</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
-<tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">V03 <strong>[Infancy]</strong>; V05 <strong>[Toddlerhood and Preschool]</strong></td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>5 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">QC procedures involved examination of missingness (by counting the number of items answered for each participant) and age to ensure that it falls within the expected range (3-9 months for Infant version; 10-17 months for Toddlerhood and Preschool version). Summary statistics and visualizations were generated to review item-level frequencies, age, and scores (calculated with application of prorated scoring to account for missing data). Finally, Cronbach's Alpha was calculated to assess reliability.</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 

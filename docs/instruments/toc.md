@@ -664,7 +664,7 @@
 </tr>
 </tbody>
 <tfoot><tr><td colspan="3">
- <sup><b>1</b></sup> See <a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>Which file-based data are also available as HBCD tabulated data? </i></a>
+ <sup><b>1</b></sup> See <a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>Tabulated Pipeline Derivatives</i></a>
 </td></tr></tfoot>
 </table>
 </div>
@@ -683,7 +683,7 @@
 <p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> <b>File-Based Data</b></p>
 <table class="compact-table-no-vertical-lines">
 <tfoot><tr><td colspan="4">
- <sup><b>1</b></sup> See <a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>Which file-based data are also available as HBCD tabulated data?</i></a>
+ <sup><b>1</b></sup> See <a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>Tabulated Pipeline Derivatives</i></a>
 </td></tr></tfoot>
 <thead>
 <tr>
@@ -713,7 +713,7 @@
 <tr>
     <td rowspan="2">Structural+Functional MRI</td>
     <td rowspan="2"></td>
-  <td><a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> & <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer-surface-reconstruction-methods" target="_blank">FreeSurfer & M-CRIB-S</a></td>
+  <td><a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep</a> & <a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer" target="_blank">FreeSurfer & M-CRIB-S</a></td>
   <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
 </tr>
 <tr>
@@ -748,7 +748,7 @@
 </table>
 <p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> &nbsp; <b>Tabulated Data</b></p>
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#which-file-based-data-are-also-available-as-hbcd-tabulated-data" target="_blank"><i>see details</i></a>)
+<i style="color: teal;" class="fa-solid fa-diagram-project"></i>&nbsp;= Pipeline derivatives available in HBCD tabulated format (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)
 </p>
 <table class="compact-table-no-vertical-lines">
 <thead>
