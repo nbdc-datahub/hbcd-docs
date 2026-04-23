@@ -88,7 +88,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr class="domain-row-pending"><td colspan="3"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ERICA</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of age (<code>adjusted</code>/<code>gestational</code>/<code>candidate</code>) and <code>date_taken</code> fields (currently excluded due to use of <i>coding</i> rather than <i>visit</i> dates).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of all age and <code>date_taken</code> fields (currently excluded due to use of coding rather than visit dates).</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 
