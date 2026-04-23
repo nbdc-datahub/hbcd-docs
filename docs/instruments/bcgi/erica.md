@@ -28,7 +28,8 @@
 <span class="text">QC Procedures: Administration & Centralized Coding</span>
 <a class="anchor-link" href="#qc" title="Copy link"><i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span></div>
 <div class="collapsible-content">
-<p><b>ERICA Site-Level Administration</b></p>
+<br>
+<h4>ERICA Site-Level Administration</h4>
 <ul>
 <li>HBCD study staff were trained and certified to administer the ERICA by experienced ERICA administrators to ensure adherence to standardized procedures.</li>
 <li>Ongoing quality of administration was ensured through video review of every 10th administration at each site, with higher levels of review conducted for sites that did not meet fidelity benchmarks.</li>
@@ -36,8 +37,8 @@
 <li>Additional training was provided as needed.</li>
 </ul>
 <hr>
-<p><b>Centralized Coding of ERICA Videos</b></p>
-<p>Videos are coded based on a single-pass review, with data entered directly into the HBCD database. Basic steps to ensure data completeness and accuracy include:</p>
+<h4>Centralized Coding of ERICA Videos</h4>
+Videos are coded based on a single-pass review, with data entered directly into the HBCD database. Basic steps to ensure data completeness and accuracy include:</p>
 <ul>
   <li>Double data entry with conflict resolution to ensure accurate data entry</li>
   <li>Regular review of dashboards and reports to identify missing data and unexpected score distributions</li>

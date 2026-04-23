@@ -81,7 +81,7 @@
   padding-left: 0.4rem;
   line-height: 1;
 }
-.collapsible-content li {
+/* .collapsible-content li {
   margin-bottom: 0.1rem;
   line-height: 1;
 }
@@ -95,7 +95,7 @@
 }
 .collapsible-content li b {
   line-height: 1;
-}
+} */
 
 /* text */
 .text {
