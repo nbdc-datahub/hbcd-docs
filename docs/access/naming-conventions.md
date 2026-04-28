@@ -1,3 +1,24 @@
+<style>
+  .naming-pattern {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+.naming-pattern code {
+  background: var(--md-code-bg-color, #f5f5f5);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.suffix {
+  color: teal;
+  font-weight: 500;
+}
+</style>
+
+
 # Naming Conventions
 
 The instrument table and variable names used for <a href="../../datacuration/phenotypes/" target="_blank">tabulated HBCD study data</a> largely follow standardized naming conventions adapted from the [ABCD Study](https://docs.abcdstudy.org/latest/documentation/curation/naming.html). This ensures consistency across instruments and derived datasets, allowing for intuitive parsing of variable meaning and structure.
@@ -138,14 +159,24 @@ Name of scale within instrument/protocol element for instruments with multiple s
 
 ## Exceptions
 
-Some variables deviate from the standard naming conventions. These exceptions are temporary and will be standardized in future releases.
+Some table/variable names deviate from the standard naming conventions. These exceptions are temporary and will be standardized in future releases. Main exceptions include:
 
-- **Derived data** — variables such as <code>sed_basic_demographics</code> and <code>par_visit_data</code> in the [Demographics domain](../instruments/index.md#demo)
-- **Biospecimen data**, e.g. <code>bio_bm_biosample_nails_results</code> ([see instrument list](../instruments/index.md#biospec))
-- **Tabulated MRI and EEG derivatives** ([see details](../datacuration/overview.md#tabulated-pipeline-derivatives)):  
-Follow the naming convention <code>domain_pipeline_derivative</code>, where:  
-    - <code>domain</code>: either <code>img</code> or <code>eeg</code>  
-    - <code>pipeline</code>: processing pipeline name  
-    - <code>derivative</code>: basename of the derivative output files sourced across participants to generate the tabulated data
- - **Administrative and summary score** ([see details](#administrative-summary-score-variables)) variables often include additional single underscores (e.g. `date_taken`, `summary_score`), but still represent single main components
+ - [Demographics domain](../instruments/index.md#demo) tables (<code>sed_basic_demographics</code> and <code>par_visit_data</code>)
+ - [Biospecimen domain](../instruments/index.md#biospec) tables, e.g. <code>bio_bm_biosample_nails_results</code>
+ - Administrative and summary score variables (e.g. `date_taken`, `summary_score`) often contain additional single underscores -see [infobox](#administrative-summary-score-variables) for details 
+ 
 
+### Tabulated Pipeline Derivatives 
+
+[Tabulated derivatives](../datacuration/overview.md#tabulated-pipeline-derivatives) from imaging and EEG processing pipelines follow a standardized naming convention:
+
+<div class="naming-pattern"> <code>domain</code>_<code>pipeline</code>_<code>derivative</code> </div> 
+
+<table class="table-no-vertical-lines" style="width: 100%; max-width: 520px;"> <tbody> <tr> <td style="width: 30%;"><code>domain</code></td> <td><code>img</code> (imaging) or <code>eeg</code> (EEG)</td> </tr> 
+<tr> <td><code>pipeline</code></td> <td>Name of the processing pipeline (e.g. <code>xcpd</code>)</td> </tr>
+<tr> <td><code>derivative</code></td> <td>Basename of output files aggregated across participants</td> </tr> </tbody> </table>
+
+For example, the **table** name below corresponds to participant data aggregated across the <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D</a> **derivatives**:
+
+ - **Table:** <code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> 
+ - **Derivatives:** <code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> 
