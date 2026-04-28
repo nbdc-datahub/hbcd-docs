@@ -1,7 +1,7 @@
 # Recommended Programs & Utilities
 
 ## Download Platforms
-HBCD study data can be downloaded via the [NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/) or [Data Exploration and Analysis Portal (DEAP)](https://hbcd.deapscience.com/#/home") - see the [Access & Download](download.md#explore-download-hbcd-study-data) page for details.
+HBCD study data can be downloaded via the [NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/) or [Data Exploration and Analysis Portal (DEAP)](https://hbcd.deapscience.com/#/home") - see the [Access & Download](download.md#explore-download) page for details.
 
 ## Tabulated Data
 

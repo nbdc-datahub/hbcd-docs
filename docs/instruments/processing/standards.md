@@ -22,7 +22,7 @@ A full list of tools evaluated through the [NMIND Coding Standards Checklist](ht
 
 ### NMIND Documentation Standards Checklist 
 <input type="checkbox"> Landing page provides a link to documentation and brief description of what program does<br>
-<input type="checkbox"> Documentation is up to date with version of software (*see [Obtaining a DOI](#obtaining-a-doi) for details*)<br>
+<input type="checkbox"> Documentation is up to date with version of software (*see [Obtaining a DOI](#doi) for details*)<br>
 <input type="checkbox"> Typical intended usage is described<br>
 <input type="checkbox"> An example of its usage is shown<br>
 <input type="checkbox"> Document functions intended for users (i.e., public function docstring/help coverage ≥ 10%)<br>
