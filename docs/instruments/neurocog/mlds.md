@@ -1,21 +1,23 @@
 # MLDS
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>ncl_ch_mlds</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">Multilingual Language Development Screener</div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Multilingual Exposure</div>
-  </div>
-</div>
+<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Multilingual Language Development Screener</i></p>
 
----------------------------------------------
+
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>ncl_ch_mlds</code></td></tr>
+<tr><td><b>Construct</b></td><td>Multilingual Exposure</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V03, V04, V05, V07</td></tr>
+<tr><td><b>Administration</b></td>
+<td style="word-wrap: break-word; white-space: normal;">
+<b>Child-specific</b>: Yes<br>
+<b>Respondent</b>: Primary Caregiver<br>
+<b>Method</b>: Self-administered remotely (3-10 min estimated duration). If the caregiver does not complete the assessment remotely, it is conducted at the visit to document the child’s language exposure environments. The instrument can be administered by an HBCD Study team member in-person or via video as needed.</td></tr>
+<td><b>Quality Control</b></td>
+<td style="word-wrap: break-word; white-space: normal;">Monitor frequency of decline to answer and completeness during data collection (initial data showed that about 10% of questionnaires were not complete).</td>
+</tr>
+</tbody>
+</table>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -36,25 +38,6 @@
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
 <p></p>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Primary Caregiver</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely. If the caregiver does not complete the assessment remotely, it is conducted at the visit to document the child’s language exposure environments. The instrument can be administered by an HBCD Study team member in-person or via video as needed.</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V03, V04, V05, V07</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>3-10 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Monitor frequency of decline to answer and completeness during data collection (initial data showed that about 10% of questionnaires were not complete).</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 
