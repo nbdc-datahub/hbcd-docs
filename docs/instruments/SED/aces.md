@@ -1,28 +1,23 @@
 # Adverse Childhood Experiences (*ACEs*)
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Instrument</th>
-  <th>Version</th>
-  <th>Construct</th>
-  <th>Table Name</th>
-</tr>
-</thead>
+<table class="table-no-vertical-lines">
+<thead><tr><th></th><th>ACEs</th><th>Pediatric ACEs</th></tr></thead>
 <tbody>
-<tr>
-  <td rowspan="2">Adverse Childhood Experiences</td>
-  <td><strong>ACEs</strong></td>
-  <td>Adverse Childhood Experiences (Caregiver)</td>
-  <td><code>sed_cg_ace</code></td>
-</tr>
-<tr>
-  <td><strong>Pediatric ACEs</strong></td>
-  <td style="word-wrap: break-word; white-space: normal;">Adverse Childhood Experiences (Child)</td>
-  <td><code>sed_cg_pedaces</code></td>
+<tr><td><b>Table Name</b></td><td><code>sed_cg_ace</code></td><td><code>sed_cg_pedaces</code></td></tr>
+<tr><td><b>Construct</b></td><td>Adverse Childhood Experiences (Caregiver)</td><td>Adverse Childhood Experiences (Child)</td></tr>
+<tr><td><b>Study Visit(s)</b></td>
+    <td>V04</td><td>V04, V06</td></tr>
+<tr><td colspan="2"><b>Administration</b></td></tr>
+<tr><td style="text-align: right;"><i>Child-specific:</i></td><td>No</td><td>Yes</td></tr>
+<tr><td style="text-align: right;"><i>Respondent:</i></td><td>Birth Parent or Primary Caregiver</td><td>Birth Parent or Primary Caregiver on Child</td></tr>
+<tr><td style="text-align: right;"><i>Method:</i></td><td colspan="2">Self-administered in-person (2 min estimated duration)</td></tr>
+<tr><td><b>Quality Control</b></td>
+ <td colspan="2" style="word-wrap: break-word; white-space: normal;">QC is minimal as participants only report the total number of ACE events. Declines in ACE scores at later visits should be interpreted cautiously, as they may reflect inconsistent or inaccurate responding.
+</td>
 </tr>
 </tbody>
 </table>
+
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -42,44 +37,6 @@
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-    <th></th>
-    <th>ACEs</th>
-    <th>Pediatric ACEs</th>
-<tbody>
-<tr>
-    <td><b>Child Specific</b></td>
-    <td>No</td>
-    <td>Yes</td>
-    </tr>
-<tr>
-    <td><b>Respondent</b></td>
-    <td>Birth Parent or Primary Caregiver</td>
-    <td>Birth Parent or Primary Caregiver on Child</td>
-</tr>
-<tr><td><b>Administration</b></td>
-    <td>Self administered in person</td>
-    <td>Self administered in person</td>
-</tr>
-<tr>
-    <td><b>Visits</b></td>
-    <td>V04</td>
-    <td>V04, V06</td>
-    </tr>
-<tr><td><b>Completion Time</b></td>
-    <td>2 min</td>
-    <td>2 min</td>
-</tr>
-<tr>
-    <td><b>Quality Control Procedures</b></td>
-    <td colspan="2" style="word-wrap: break-word; white-space: normal;">QC is minimal as participants only report the total number of ACE events. Declines in ACE scores at later visits should be interpreted cautiously, as they may reflect inconsistent or inaccurate responding.</td>
-</tr>      
-</tbody>
-</table>
 
 ## Instrument Details
 

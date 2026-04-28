@@ -1,15 +1,36 @@
 # Demographics (Adult)
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>sed_bm_demo</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Demographics: V01 (Adult) & V04 (Birth Parent & Alternative Caregiver)</div>
-  </div>
-</div>
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr>
+  <td><b>Table Name</b></td>
+  <td><code>sed_bm_demo</code></td>
+</tr>
+<tr>
+  <td><b>Construct</b></td>
+  <td>Adult Demographics (Birth Parent/Alternative Caregiver)</td>
+</tr>
+<tr>
+  <td><b>Study Visit(s)</b></td>
+  <td>V01, V04, V06</td>
+</tr>
+<tr>
+  <td><b>Administration</b></td>
+  <td>
+    <b>Child-specific</b>: No<br>
+    <b>Respondent</b>: Birth Parent (V01); Birth Parent & Alternative Caregiver (V04)<br>
+    <b>Method</b>: HBCD Study Staff, in person (10 min estimated duration)
+  </td>
+</tr>
+<tr>
+  <td><b>Quality Control</b></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+    Data dashboard was monitored for variable missingness, possible coding errors, scoring verification when needed, and data consistency. High missingness was noted for income, although this is in line with expectations.
+  </td>
+</tr>
+</tbody>
+</table>
+
 ---------------------------------------------   
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
@@ -70,25 +91,6 @@ Beginning at V04, some information that was collected in the V01 Adult Demograph
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Parent</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in person</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V01, V04, V06</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>10 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Data dashboard was monitored for variable missingness, possible coding errors, scoring verification when needed, and data consistency - high missingness was noted for income, although this is in line with expectations.</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 
