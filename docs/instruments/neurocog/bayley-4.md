@@ -1,21 +1,27 @@
-# Bayley Scales of Infant and Toddler Development
+# Bayley-4
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>ncl_ch_bayley</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Bayley Scales of Infant and Toddler Development, Fourth Edition (<i>BSID-4</i>, <i>Bayley-4</i>)
-    </div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Child Development (Cognitive, Language, and Motor)</div>
-  </div>
-</div>
+<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Bayley Scales of Infant and Toddler Development, Fourth Edition</i></p>
+
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>ncl_ch_bayley</code></td></tr>
+<tr><td><b>Construct</b></td><td>Child Development (Cognitive, Language, and Motor)</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V04</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: Yes<br>
+<b>Respondent</b>: Child<br>
+<b>Method</b>: HBCD Study staff in person (60-90 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td style="word-wrap: break-word; white-space: normal;">
+<ul>
+    <li>HBCD Study staff were trained and certified by experienced Bayley administrators to ensure adherence to standardized procedures.</li>
+    <li>During testing, responses were entered into QGlobal (Pearson’s official scoring platform for the Bayley Scales), which automatically applied scoring rules and generated standardized scores.</li>
+    <li>Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations.</li>
+    <li>Completion rates were monitored across sites, with additional training provided when needed.</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
 
 ---------------------------------------------
 
@@ -63,32 +69,6 @@ nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Downl
 </div>
 
 <!-- LUCI NOTE: need to check on whether data warnings require updates -->
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes </td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Child</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff in person</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V04</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>60-90</td></tr>
-<tr><td style="word-wrap: break-word; white-space: normal;"><b>QC Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
-  <ul>
-    <li>HBCD Study staff were trained and certified by experienced Bayley administrators to ensure adherence to standardized procedures.</li>
-    <li>During testing, responses were entered into QGlobal (Pearson’s official scoring platform for the Bayley Scales), which automatically applied scoring rules and generated standardized scores.</li>
-    <li>Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations.</li>
-    <li>Completion rates were monitored across sites, with additional training provided when needed.</li>
-</ul>
-</td></tr>    
-</tbody>
-</table>
 
 ## Instrument Details
 

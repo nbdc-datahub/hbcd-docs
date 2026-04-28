@@ -1,23 +1,28 @@
-# Vineland Adaptive Behavior Scales Third Edition
+# Vineland-3
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>ncl_cg_vabs</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Vineland Adaptive Behavior Scales Third Edition (Comprehensive Level Parent/Caregiver Q-global Form) (<i>Vineland-3</i>, <i>VABS</i>)
-    </div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Adaptive Behavior</div>
-  </div>
-</div>
+<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Vineland Adaptive Behavior Scales Third Edition</i></p>
 
----------------------------------------------
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>ncl_cg_vabs</code></td></tr>
+<tr><td><b>Construct</b></td><td>Adaptive Behavior</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V05, V09, V10</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
+<b>Method</b>: Self-administered remotely (15-30 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td style="word-wrap: break-word; white-space: normal;">
+<ul>
+    <li>The caregiver is instructed to follow instructions as presented in Pearson Q-Global.</li>
+    <li>HBCD has an API license agreement with Pearson Education, Inc.</li>
+    <li>All data collection (item-level responses) and tabulation of scores were done within the Pearson Q-Global system.</li>
+    <li>All item-level responses and scores were electronically transferred from Q-Global and imported into the HBCD database.</li>
+    <li>Data was reviewed to verify that fields are appropriately labeled upon import, and range checks of all summary variables were completed.</li>
+    <li>Completion rates were monitored for the overall consortium and at the site level to address any concerns.</li>
+</ul></td></tr>
+</tbody>
+</table>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -52,34 +57,6 @@
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Birth Parent or Primary Caregiver</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V05, V09 and V10</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>15 to 30 minutes</td></tr>
-<tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
-<ul>
-    <li>The caregiver is instructed to follow instructions as presented in Pearson Q-Global.</li>
-    <li>HBCD has an API license agreement with Pearson Education, Inc.</li>
-    <li>All data collection (item-level responses) and tabulation of scores were done within the Pearson Q-Global system.</li>
-    <li>All item-level responses and scores were electronically transferred from Q-Global and imported into the HBCD database.</li>
-    <li>Data was reviewed to verify that fields are appropriately labeled upon import, and range checks of all summary variables were completed.</li>
-    <li>Completion rates were monitored for the overall consortium and at the site level to address any concerns.</li>
-</ul>
-</td></tr>      
-</tbody>
-</table>
 
 ## Instrument Details
 

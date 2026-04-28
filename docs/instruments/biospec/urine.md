@@ -68,36 +68,36 @@ Urine toxicology assay results include:
 <tbody>
 <tr><td>2-Hydroxyethylflurazepam</td><td>ng/mL</td><td>20</td><td>40</td><td>100</td><td>1–4 days</td></tr>
 <tr><td>6-MAM</td><td>ng/mL</td><td>2</td><td>4</td><td>10</td><td>8 hours</td></tr>
-<tr><td>7-Aminoflunitrazepam<br>7-Aminoclonazepam<br>7-Aminonitrazepam</td><td>ng/mL</td><td>20</td><td>40</td><td>100</td><td>1–4 days</td></tr>
-<tr><td>&alpha;-Hydroxyalprazolam<br>&alpha;-Hydroxymidazolam<br>&alpha;-Hydroxytirazolam</td><td>ng/mL</td><td>20</td><td>40</td><td>100</td><td>1–4 days</td></tr>
-<tr><td>Amphetamine<br>Methamphetamine</td><td>ng/mL</td><td>50</td><td>100</td><td>250</td><td>2–3 days</td></tr>
-<tr><td>Amobarbital<br>Butalbital</td><td>ng/mL</td><td>40</td><td>100</td><td>200</td><td>2–4 days</td></tr>
+<tr><td>7-Aminoflunitrazepam / 7-Aminoclonazepam /<br>7-Aminonitrazepam</td><td>ng/mL</td><td>20</td><td>40</td><td>100</td><td>1–4 days</td></tr>
+<tr><td>&alpha;-Hydroxyalprazolam / &alpha;-Hydroxymidazolam /<br>&alpha;-Hydroxytirazolam</td><td>ng/mL</td><td>20</td><td>40</td><td>100</td><td>1–4 days</td></tr>
+<tr><td>Amphetamine / Methamphetamine</td><td>ng/mL</td><td>50</td><td>100</td><td>250</td><td>2–3 days</td></tr>
+<tr><td>Amobarbital / Butalbital</td><td>ng/mL</td><td>40</td><td>100</td><td>200</td><td>2–4 days</td></tr>
 <tr><td>Benzoylecgonine</td><td>ng/mL</td><td>20</td><td>50</td><td>100</td><td>2–3 days</td></tr>
-<tr><td>Buprenorphine<br>Norbuprenorphine</td><td>ng/mL</td><td>1</td><td>2</td><td>5</td><td>2–3 days</td></tr>
-<tr><td>Carboxy-delta-9-THC</td><td>ng/mL</td><td>3</td><td>7.5</td><td>15</td><td>2–5 days (casual); 10–14 days (chronic)</td></tr>
+<tr><td>Buprenorphine / Norbuprenorphine</td><td>ng/mL</td><td>1</td><td>2</td><td>5</td><td>2–3 days</td></tr>
+<tr><td>Carboxy-delta-9-THC</td><td>ng/mL</td><td>3</td><td>7.5</td><td>15</td><td>Casual: 2–5; Chronic: 10–14 days</td></tr>
 <tr><td>Carboxy-delta-8-THC</td><td>ng/mL</td><td>3</td><td>7.5</td><td>15</td><td>No consensus</td></tr>
 <tr><td>Carboxy-cannabidiol</td><td>ng/mL</td><td>10</td><td>25</td><td>50</td><td>No consensus</td></tr>
 <tr><td>Carisoprodol</td><td>ng/mL</td><td>10</td><td>20</td><td>50</td><td>2–3 days</td></tr>
-<tr><td>Codeine<br>Hydrocodone</td><td>ng/mL</td><td>10</td><td>50</td><td>100</td><td>2–3 days</td></tr>
+<tr><td>Codeine / Hydrocodone</td><td>ng/mL</td><td>10</td><td>50</td><td>100</td><td>2–3 days</td></tr>
 <tr><td><span class="tooltip tooltip-right">Cotinine<span class="tooltiptext" style="font-size: 0.9em;">Based on DRI® Cotinine assay (qualitative/semiquantitative)</span></span></td><td>ng/mL</td><td>34</td><td>34</td><td>500</td><td>Up to 7 days</td></tr>
 <tr><td>EDDP</td><td>ng/mL</td><td>60</td><td>120</td><td>300</td><td>2–3 days</td></tr>
 <tr><td>Ethyl glucuronide</td><td>ng/mL</td><td>50</td><td>100</td><td>100</td><td>2–3 days</td></tr>
 <tr><td>Ethyl sulfate</td><td>ng/mL</td><td>12.5</td><td>25</td><td>25</td><td>2–3 days</td></tr>
-<tr><td>Fentanyl<br>Norfentanyl<br>Alfentanil<br>Sufentanil</td><td>pg/mL</td><td>40</td><td>40</td><td>100</td><td>2–3 days</td></tr>
-<tr><td>Hydromorphone<br>Morphine</td><td>ng/mL</td><td>10</td><td>50</td><td>100</td><td>2–3 days</td></tr>
-<tr><td>Ketamine<br>Norketamine</td><td>ng/mL</td><td>10</td><td>50</td><td>100</td><td>2–3 days</td></tr>
-<tr><td>Lorazepam<br>Nordiazepam<br>Oxazepam<br>Temazepam</td><td>ng/mL</td><td>20</td><td>40</td><td>100</td><td>1–4 days</td></tr>
-<tr><td>MDA<br>MDMA<br>MDEA</td><td>ng/mL</td><td>50</td><td>100</td><td>250</td><td>2–3 days</td></tr>
+<tr><td>Fentanyl / Norfentanyl / Alfentanil / Sufentanil</td><td>pg/mL</td><td>40</td><td>40</td><td>100</td><td>2–3 days</td></tr>
+<tr><td>Hydromorphone / Morphine</td><td>ng/mL</td><td>10</td><td>50</td><td>100</td><td>2–3 days</td></tr>
+<tr><td>Ketamine / Norketamine</td><td>ng/mL</td><td>10</td><td>50</td><td>100</td><td>2–3 days</td></tr>
+<tr><td>Lorazepam / Nordiazepam / Oxazepam / Temazepam</td><td>ng/mL</td><td>20</td><td>40</td><td>100</td><td>1–4 days</td></tr>
+<tr><td>MDA / MDMA / MDEA</td><td>ng/mL</td><td>50</td><td>100</td><td>250</td><td>2–3 days</td></tr>
 <tr><td>Meprobamate</td><td>ng/mL</td><td>10</td><td>20</td><td>50</td><td>2–3 days</td></tr>
 <tr><td>Methadone</td><td>ng/mL</td><td>60</td><td>120</td><td>300</td><td>2–3 days</td></tr>
 <tr><td>Normeperidine</td><td>ng/mL</td><td>40</td><td>100</td><td>200</td><td>2–3 days</td></tr>
 <tr><td>Norpropoxyphene</td><td>ng/mL</td><td>10</td><td>50</td><td>100</td><td>2–3 days</td></tr>
-<tr><td>Oxycodone<br>Oxymorphone</td><td>ng/mL</td><td>60</td><td>120</td><td>300</td><td>2–3 days</td></tr>
-<tr><td>Pentobarbital<br>Secobarbital</td><td>ng/mL</td><td>40</td><td>100</td><td>200</td><td>1–2 days</td></tr>
+<tr><td>Oxycodone / Oxymorphone</td><td>ng/mL</td><td>60</td><td>120</td><td>300</td><td>2–3 days</td></tr>
+<tr><td>Pentobarbital / Secobarbital</td><td>ng/mL</td><td>40</td><td>100</td><td>200</td><td>1–2 days</td></tr>
 <tr><td>Phenobarbital</td><td>ng/mL</td><td>40</td><td>100</td><td>200</td><td>2 weeks</td></tr>
 <tr><td>Phencyclidine</td><td>ng/mL</td><td>5</td><td>12.5</td><td>25</td><td>2–3 days</td></tr>
 <tr><td>Tramadol</td><td>ng/mL</td><td>40</td><td>80</td><td>200</td><td>2–3 days</td></tr>
-<tr><td>Zolpidem<br>Zolpidem Carboxylic Acid</td><td>ng/mL</td><td>4</td><td>8</td><td>20</td><td>2–3 days</td></tr>
+<tr><td>Zolpidem / Zolpidem Carboxylic Acid</td><td>ng/mL</td><td>4</td><td>8</td><td>20</td><td>2–3 days</td></tr>
 </tbody>
 </table>
 </div>
@@ -176,33 +176,52 @@ Ketamine (<code>c_ket_u</code>)<br>Norketamine (<code>c_nket_u</code>)<br>Phency
 <div class="table-collapsible-content">
 <p><b>Final results for each substance follow these rules:</b></p>
 <ul>
-  <li>If any confirmatory analyte test (e.g., Amphetamine / <code>c_amp_u</code>) is positive, the corresponding class-level (<code>c_any_stim_u</code>) and sample-level (<code>c_any_specimen_u</code>) results are also positive.</li>
-  <li>If all confirmatory analyte tests within a class are negative (e.g., <code>c_ethglu_u</code>, <code>c_ethsyl_u</code>), the class-level result (e.g., <code>c_etgeia_u</code>) is negative. If all classes are negative, the sample-level result (<code>c_any_specimen_u</code>) is negative.</li>
-  <li>If any confirmatory analyte test is invalid, the corresponding class- and sample-level results are also invalid.</li>
+  <li>
+    <b>Positive results:</b> If any confirmatory test for a substance analyte (e.g., Amphetamine/<code>c_amp_u</code>) is positive, then the corresponding class-level (<code>c_any_stim_u</code>) and overall sample-level (<code>c_any_specimen_u</code>) results are also positive.
+  </li>
+  <li>
+    <b>Negative results:</b> If all confirmatory tests for analytes in a class are negative (e.g., <code>c_ethglu_u</code>, <code>c_ethsyl_u</code>), then the class-level result (e.g., <code>c_etgeia_u</code>) is negative. If all classes are negative, the overall sample-level (<code>c_any_specimen_u</code>) result is negative.
+  </li>
+  <li>
+    <b>Invalid results:</b> If any confirmatory test for a substance analyte is invalid, then the corresponding class-level and overall sample-level results are also invalid.
+  </li>
 </ul>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+<table class="table-no-vertical-lines">
     <thead>
       <tr>
-        <th style="width: 10%; text-align: center;">Level</th>
-        <th style="width: 50%; text-align: center;">Result Type</th>
-        <th style="width: 10%; text-align: center;">Example</th>
-        <th style="width: 20%; text-align: center;">Options</th>
+        <th>Level</th>
+        <th>Result Type</th>
+        <th>Example</th>
+        <th>Options</th>
        </tr>
     </thead>
     <tbody>
 <tr><td>Specimen</td>
-<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte)</td><td><code>c_any_specimen_u</code></td><td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte)</td>
+<td><code>c_any_specimen_u</code></td>
+<td rowspan="3"><code>1</code>=positive
+    <br><code>0</code>=negative<br>
+    <code>3</code>=invalid
+</td>
+</tr>
 <tr><td>Class</td>
-<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte in class)</td><td><code>c_any_stim_u</code></td><td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td></tr>
+<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte in class)</td><td><code>c_any_stim_u</code></td>
+</tr>
 <tr>
-<td rowspan="3">Analyte</td><td>Screening results</td><td><code>s_amp_u</code></td><td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td></tr>
+<td rowspan="3">Analyte</td><td>Screening results</td><td><code>s_amp_u</code></td></tr>
 <tr><td>Confirmatory results</td><td><code>c_amp_u</code></td><td>concentration value</td></tr>
-<tr><td>Confirmatory results - categorical</td><td><code>c_amp_u_cat</code>⁠<sup>1</sup></td><td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid; <code>4</code>=screen negative</td></tr>
+<tr><td>Confirmatory results - categorical</td><td><code>c_amp_u_cat</code>⁠<sup>1</sup></td>
+<td><code>1</code>=positive<br>
+    <code>0</code>=negative<br>
+    <code>3</code>=invalid<br>
+    <code>4</code>=screen negative
+</td>
+</tr>
 </tbody>
 <tfoot>
 <tr>
   <td colspan="4" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
-    <sup><b>1</b></sup><i>Note: the categorical confirmatory test variable for nicotine follows the convention <code>c_nicotine_u</code><ii></td></tr>
+    <sup><b>1</b></sup>Note: the categorical confirmatory test variable for nicotine follows the convention <code>c_nicotine_u</code></td></tr>
 </tfoot>
 </table>
 </div>

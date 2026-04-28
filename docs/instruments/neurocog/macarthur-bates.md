@@ -1,25 +1,27 @@
-# MacArthur-Bates Communicative Development Inventories
+# MacArthur-Bates CDI
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th>Instrument</th>
-  <th>Version</th>
-  <th>Construct</th>
-  <th>Table Name</th>
-</tr>
-</thead>
+<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>MacArthur-Bates Communicative Development Inventories, Words and Gestures</i></p>
+
+<table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
-<tr>
-  <td rowspan="2" style="word-wrap: break-word; white-space: normal;">MacArthur-Bates CDI, Words and Gestures, Web Version<br>(<i>CDI-WG</i>, <i>Web-CDI-WG</i>)</td>
-  <td>English</td>
-  <td rowspan="2">Language Development</td>
-  <td><code>ncl_ch_cdiwgen</code></td>
-</tr>
-<tr>
-  <td>Spanish</td>
-  <td><code>ncl_ch_cdiwges</code></td>
-</tr>
+<tr><td><b>Table Name</b></td><td><code>ncl_ch_cdiwgen</code> (English version); <code>ncl_ch_cdiwges</code> (Spanish version)</td></tr>
+<tr><td><b>Construct</b></td><td>Language Development</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V04, V06</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: Yes<br>
+<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
+<b>Method</b>: Self administered in person (20-60 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td style="word-wrap: break-word; white-space: normal;">
+  <ul>
+  <li>
+    <strong>Administration QC:</strong> HBCD SOPs instruct RAs to present instructions exactly as shown in the existing 
+    <a href="https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf" target="_blank">Web-CDI Manual</a>.
+  </li>
+  <li>All data collection, calculation of summary scores, and percentile scores are completed within Web-CDI and then 
+    imported into the HBCD database. Data were reviewed to verify that fields are appropriately labeled upon import, 
+    and range checks of all summary variables were performed.</li>
+</td></tr>
 </tbody>
 </table>
 
@@ -56,37 +58,6 @@
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes </td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Birth Parent or Primary Caregiver</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self administered in person</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V04, V06</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>20-60 min</td></tr>
-<tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
-  <ul>
-  <li>
-    <strong>Administration QC:</strong> HBCD SOPs instruct RAs to present instructions exactly as shown in the existing 
-    <a href="https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf" target="_blank">Web-CDI Manual</a>.
-  </li>
-  <li>
-    All data collection, calculation of summary scores, and percentile scores are completed within Web-CDI and then 
-    imported into the HBCD database. Data were reviewed to verify that fields are appropriately labeled upon import, 
-    and range checks of all summary variables were performed.
-  </li>
-</ul>
-</td></tr>      
-</tbody>
-</table>
 
 ## Instrument Details
 
