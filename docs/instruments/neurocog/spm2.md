@@ -1,25 +1,22 @@
 # Sensory Processing Measure-2 (*SPM-2*)
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-<tr>
-  <th style="width: 30%;">Instrument</th>
-  <th style="width: 20%;">Version</th>
-  <th style="width: 20%;">Construct</th>
-  <th style="width: 20%;">Table Name</th>
-</tr>
-</thead>
+
+<table class="table-no-vertical-lines">
 <tbody>
-<tr>
-  <td rowspan="2">Sensory Processing Measure-2</td>
-  <td><strong>Infant</strong></td>
-  <td>Sensory Processing/Integration</td>
-  <td><code>ncl_cg_spm2__inf</code></td>
+<tr><td><b>Table Name</b></td><td><code>ncl_cg_spm2__inf</code> (Infant version); <code>ncl_cg_spm2__tod</code> (Toddler version)</td></tr>
+<tr><td><b>Construct</b></td><td  colspan="2">Sensory Processing/Integration</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V03 (Infant); V05 (Toddler)</td></tr>
+<td><b>Administration</b></td><td colspan="2">
+  <ul>
+  <li><b>Child-specific</b>: Yes</li>
+  <li><b>Respondent</b>: Primary Caregiver</li>
+  <li><b>Method</b>: Self-administered remotely (12 min estimated duration)</li>
+  </ul>
 </tr>
-<tr>
-  <td><strong>Toddler</strong></td>
-  <td>Sensory Processing/Integration</td>
-  <td><code>ncl_cg_spm2__tod</code></td>
+<tr><td><b>Quality Control</b></td>
+<td colspan="2"style="word-wrap: break-word; white-space: normal;">
+Periodic review of data capture to ensure that items are being fully completed and spot checks on scoring to assure algorithms are being correctly employed.
+</td>
 </tr>
 </tbody>
 </table>
@@ -43,26 +40,6 @@ The response option "Decline to answer" was added on November 8, 2024 to allow p
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Primary Caregiver</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V03 (SPM Infant), V05 (SPM Toddler)</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>12 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Periodic review of data capture to ensure that items are being fully completed and spot checks on scoring to assure algorithms are being correctly employed.</td></tr>
-</tbody>
-</table>
-
 
 ## Instrument Details
 
