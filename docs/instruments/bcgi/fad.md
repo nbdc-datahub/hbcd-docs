@@ -1,5 +1,7 @@
 # Family Assessment Device (FAD (GF6+))
 
+<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Multidimensional Assessment Profiles - Temper Loss Scale</i></p>
+
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>mh_cg_fad</code></td></tr>
