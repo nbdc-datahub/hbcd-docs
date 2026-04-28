@@ -81,11 +81,12 @@ hbcd/
 
 ## Tabulated Pipeline Derivatives
 
-Processing pipelines for imaging, EEG, and wearable sensor recordings output derivative files to separate subject- and session-specific directories. Whenever possible, derivative data is combined across participants to additionally provide a single file in the tabulated data. Users may choose to use either the file-based or tabulated data for their analyses depending on their needs.
+Processing pipelines for imaging, EEG, and wearable sensor recordings output derivative files to separate subject- and session-specific directories. Whenever possible, derivative data is combined across participants to additionally provide a single file in the tabulated data. Users may choose to use either the file-based or tabulated data for their analyses depending on their needs. *See filenaming conventions for tabulated derivatives [here](../access/naming-conventions.md#tabulated-pipeline-derivatives).*
 
 **Not all processed data are available in tabulated form.** Tabulated datasets have one row per participant/session, so only derivatives that can be summarized into a single row/column structure are tabulated. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.
 
-Tabulated filenames closely mirror their source derivative file names for easy cross-reference. For example, the <code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> table is derived from <code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D</a> derivatives. 
+
+<!-- Tabulated filenames closely mirror their source derivative file names for easy cross-reference. For example, the <code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> table is derived from <code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D</a> derivatives.  -->
 
 <!-- 
 
