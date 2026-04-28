@@ -121,110 +121,102 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<p><i>See more easily parsable table <a href="../nails_table2.html">here</a>.</i></p>
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-    <th style="width: 20%;">Class</th>
-    <th style="width: 30%;">Screening Test</th>
-    <th style="width: 50%;">Confirmatory Test</th>
+    <th>Class: Label (<code>Name</code>)</th>
+    <th>Screening Test: Label (<code>Name</code>)</th>
+    <th>Confirmatory Test: Label (<code>Name</code>)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-    <td colspan="1" rowspan="9">Stimulant (<code>c_any_stim_n</code>)</td>
-    <td colspan="1" rowspan="5">amp/mamp (<code>s_amp_n, s_mamp_n</code>)</td>
-    <td>Amphetamine (<code>c_amp_n</code>)</td>
-</tr>
-    <tr><td>Methamphetamine (<code>c_meth_n</code>)</td></tr>
-    <tr><td>MDMA (<code>c_mdma_n</code>)</td></tr>
-    <tr><td>MDA (<code>c_mda_n</code>)</td></tr>
-    <tr><td>MDEA (<code>c_mdea_n</code>)</td></tr>
+    <td rowspan="2">Stimulant (<code>c_any_stim_n</code>)</td>
+    <td>amp/mamp (<code>s_amp_n, s_mamp_n</code>)</td>
+    <td>Amphetamine (<code>c_amp_n</code>)<br>Methamphetamine (<code>c_meth_n</code>)<br>MDMA (<code>c_mdma_n</code>)<br>MDA (<code>c_mda_n</code>)<br>MDEA (<code>c_mdea_n</code>)</td></tr>
 <tr>
-    <td colspan="1" rowspan="4">coc (<code>s_coc_n</code>)</td>
-    <td>Cocaine (<code>c_coc_n</code>)</td>
+    <td>coc (<code>s_coc_n</code>)</td>
+    <td>Cocaine (<code>c_coc_n</code>)<br>Cocaethylene (<code>c_cocae_n</code>)<br>Benzoylecgonine (<code>c_ben_n</code>)<br>Norcocaine (<code>c_ncoc_n</code>)</td>
 </tr>
-    <tr><td>Cocaethylene (<code>c_cocae_n</code>)</td></tr>
-    <tr><td>Benzoylecgonine (<code>c_ben_n</code>)</td></tr>
-    <tr><td>Norcocaine (<code>c_ncoc_n</code>)</td></tr>
+
 <tr>
     <td>Cannabinoid (<code>c_any_cannabinoid_n</code>)</td>
     <td>thc (<code>s_thc_n</code>)</td>
     <td style="word-wrap: break-word; white-space: normal;">Carboxy-delta-9-THC (<code>c_delta-9-THC_n</code>)</td>
 </tr>
+
 <tr>
-    <td colspan="1" rowspan="5">Barbiturate (<code>c_any_barb_n</code>)</td>
-    <td colspan="1" rowspan="5">bar (<code>s_bar_n</code>)</td>
-    <td>Amobarbital (<code>c_amobarb_n</code>)</td>
-</tr>
-    <tr><td>Secobarbital (<code>c_secobarb_n</code>)</td></tr>
-    <tr><td>Pentobarbital (<code>c_pentobarb_n</code>)</td></tr>
-    <tr><td>Phenobarbital (<code>c_phenobarb_n</code>)</td></tr>
-    <tr><td>Butalbital (<code>c_butalbital_n</code>)</td>
+    <td>Barbiturate (<code>c_any_barb_n</code>)</td>
+    <td>bar (<code>s_bar_n</code>)</td>
+    <td>Amobarbital (<code>c_amobarb_n</code>)<br>
+    Secobarbital (<code>c_secobarb_n</code>)<br>
+    Pentobarbital (<code>c_pentobarb_n</code>)<br>
+    Phenobarbital (<code>c_phenobarb_n</code>)<br>
+    Butalbital (<code>c_butalbital_n</code>)</td>
 </tr> 
 <tr>
-    <td colspan="1" rowspan="6" style="word-wrap: break-word; white-space: normal;">Benzodiazepine (<code>c_any_benzo_n</code>)</td>
-    <td colspan="1" rowspan="6">benz (<code>s_benz_n</code>)</td>
-    <td>Diazepam (<code>c_diaz_n</code>)</td></tr>
-    <tr><td>Oxazepam (<code>c_oxaz_n</code>)</td></tr>
-    <tr><td>Nordiazepam (<code>c_nord_n</code>)</td></tr>
-    <tr><td>Temazepam (<code>c_tema_n</code>)</td></tr>
-    <tr><td>Midazolam (<code>c_mida_n</code>)</td></tr>
-    <tr><td>Alprazolam (<code>c_alpa_n</code>)</td>
+    <td>Benzodiazepine (<code>c_any_benzo_n</code>)</td>
+    <td>benz (<code>s_benz_n</code>)</td>
+    <td>Diazepam (<code>c_diaz_n</code>)<br>
+    Oxazepam (<code>c_oxaz_n</code>)<br>
+    Nordiazepam (<code>c_nord_n</code>)<br>
+    Temazepam (<code>c_tema_n</code>)<br>
+    Midazolam (<code>c_mida_n</code>)<br>
+    Alprazolam (<code>c_alpa_n</code>)</td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="21">Opioids (<code>c_any_opioid_n</code>)</td>
-    <td colspan="1" rowspan="6">opi (<code>s_opi_n</code>)</td>
-    <td>Codeine (<code>c_cod_n</code>)</td></tr>
-    <tr><td>Morphine (<code>c_mor_n</code>)</td></tr>
-    <tr><td>MAM (<code>c_mam_n</code>)</td></tr>
-    <tr><td>Hydrocodone (<code>c_hydroc_n</code>)</td></tr>
-    <tr><td>Norhydrocodone (<code>c_norh_n</code>)</td></tr>
-    <tr><td>Hydromorphone (<code>c_hydrom_n</code>)</td>
+    <td rowspan="7">Opioids (<code>c_any_opioid_n</code>)</td>
+    <td>opi (<code>s_opi_n</code>)</td>
+    <td>Codeine (<code>c_cod_n</code>)<br>
+    Morphine (<code>c_mor_n</code>)<br>
+    MAM (<code>c_mam_n</code>)<br>
+    Hydrocodone (<code>c_hydroc_n</code>)<br>
+    Norhydrocodone (<code>c_norh_n</code>)<br>
+    Hydromorphone (<code>c_hydrom_n</code>)</td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="2">mtd (<code>s_mtd_n</code>)</td>
-    <td>Methadone (<code>c_mtd_n</code>)</td></tr>
-    <tr><td>EDDP (<code>c_eddp_n</code>)</td>
+    <td>mtd (<code>s_mtd_n</code>)</td>
+    <td>Methadone (<code>c_mtd_n</code>)<br>EDDP (<code>c_eddp_n</code>)</td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="3">oxyc (<code>s_oxyc_n</code>)</td>
-    <td>Oxycodone (<code>c_oxyc_n</code>)</td></tr>
-    <tr><td>Noroxycodone (<code>c_noxyc_n</code>)</td></tr>
-    <tr><td>Oxymorphone (<code>c_oxym_n</code>)</td>
+    <td>oxyc (<code>s_oxyc_n</code>)</td>
+    <td>Oxycodone (<code>c_oxyc_n</code>)<br>
+        Noroxycodone (<code>c_noxyc_n</code>)<br>
+        Oxymorphone (<code>c_oxym_n</code>)</td>
 </tr>
 <tr>    
     <td>tram (<code>s_tram_n</code>)</td>
     <td>Tramadol (<code>c_tram_n</code>)</td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="4">fent (<code>s_fent_n</code>)</td>
-    <td>Fentanyl (<code>c_fent_n</code>)</td></tr>
-    <tr><td>Norfentanyl (<code>c_nfent_n</code>)</td></tr>
-    <tr><td>Acetylfentanyl (<code>c_acfent_n</code>)</td></tr>
-    <tr><td>ActlNorfentanyl (<code>c_acnfent_n</code>)</td>
+    <td>fent (<code>s_fent_n</code>)</td>
+    <td>Fentanyl (<code>c_fent_n</code>)<br>
+        Norfentanyl (<code>c_nfent_n</code>)<br>
+        Acetylfentanyl (<code>c_acfent_n</code>)<br>
+        ActlNorfentanyl (<code>c_acnfent_n</code>)</td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="3">suf (<code>s_suf_n</code>)</td>
-    <td>Alfentanil (<code>c_afent_n</code>)</td></tr>
-    <tr><td>Sufentanil (<code>c_suf_n</code>)</td></tr>
-    <tr><td>Norsufentanil (<code>c_nsuf_n</code>)</td>
+    <td>suf (<code>s_suf_n</code>)</td>
+    <td>Alfentanil (<code>c_afent_n</code>)<br>
+        Sufentanil (<code>c_suf_n</code>)<br>
+        Norsufentanil (<code>c_nsuf_n</code>)</td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="2">bup (<code>s_bup_n</code>)</td>
-    <td>Buprenorphine (<code>c_bup_n</code>)</td></tr>
-    <tr><td>Norbuprenorpine (<code>c_nbup_n</code>)</td>
+    <td>bup (<code>s_bup_n</code>)</td>
+    <td>Buprenorphine (<code>c_bup_n</code>)<br>
+        Norbuprenorpine (<code>c_nbup_n</code>)</td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="2" style="word-wrap: break-word; white-space: normal;">dissociative anesthetic (<code>c_disanesth_n</code>)</td>
-    <td colspan="1" rowspan="2">ket (<code>s_ket_n</code>)</td>
-    <td>Ketamine (<code>c_ket_n</code>)</td>
-    </tr><tr><td>Norketamine (<code>c_nket_n</code>)</td>
+    <td>dissociative anesthetic (<code>c_disanesth_n</code>)</td>
+    <td>ket (<code>s_ket_n</code>)</td>
+    <td>Ketamine (<code>c_ket_n</code>)<br>Norketamine (<code>c_nket_n</code>)</td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="2">Nicotine (<code>c_nicotine_n</code>)</td>
-    <td colspan="1" rowspan="2">cot (<code>s_cot_n</code>)</td>
-    <td>Nicotine (<code>c_nic_n</code>)</td></tr>
-    <tr><td>Cotinine (<code>c_cot_n</code>)</td>
+    <td>Nicotine (<code>c_nicotine_n</code>)</td>
+    <td>cot (<code>s_cot_n</code>)</td>
+    <td>Nicotine (<code>c_nic_n</code>)<br>
+        Cotinine (<code>c_cot_n</code>)</td>
 </tr>
 <tr>
     <td>Ethanol (<code>c_ethanol_n</code>)</td>
@@ -246,34 +238,48 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b>Final results for each substance follows these rules</b>:</p>
+<p><b>Final results for each substance follow these rules:</b></p>
 <ul>
-<li>If the confirmatory test for any substance analyte (e.g. Amphetamine/<code>c_amp_n</code>) is positive based on <a href="#nails-table1">predefined thresholds</a>, the class-level (<code>c_any_stim_n</code>) and sample-level (<code>c_any_specimen_n</code>) are also positive.</li>
-<li>Otherwise, if the substance analyte confirmatory tests are negative, then class-level are negative. If all classes are negative, then sample-level (<code>c_any_specimen_n</code>) are negative.</li>
-<li>Finally, if any substance analyte confirmatory tests are invalid then that class-level, and sample-level values are also invalid</li>
+  <li>
+    <b>Positive results:</b> If any confirmatory test for a substance analyte 
+    (e.g., Amphetamine/<code>c_amp_n</code>) is positive based on 
+    <a href="#nails-table1">predefined thresholds</a>, then the corresponding 
+    class-level (<code>c_any_stim_n</code>) and overall sample-level 
+    (<code>c_any_specimen_n</code>) results are also positive.
+  </li>
+  <li>
+    <b>Negative results:</b> If all confirmatory tests for analytes in a class are negative, 
+    then the class-level result is negative. If all classes are negative, the overall 
+    sample-level (<code>c_any_specimen_n</code>) result is negative.
+  </li>
+  <li>
+    <b>Invalid results:</b> If any confirmatory test for a substance analyte is invalid, 
+    then the corresponding class-level and overall sample-level results are also invalid.
+  </li>
 </ul>
-<p><b>Screening Result Scoring</b></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
+<table class="table-no-vertical-lines">
     <thead>
       <tr>
-        <th style="width: 10%; text-align: center;">Level</th>
-        <th style="width: 50%; text-align: center;">Result Type</th>
-        <th style="width: 10%; text-align: center;">Example</th>
-        <th style="width: 20%; text-align: center;">Options</th>
+        <th>Level</th>
+        <th>Result Type</th>
+        <th>Example</th>
+        <th>Possible Values</th>
        </tr>
     </thead>
     <tbody>
 <tr>
 <td>Specimen</td>
-<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte)</td>
+<td>Confirmatory results (presence of any analyte)</td>
 <td><code>c_any_specimen_n</code></td>
-<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
+<td rowspan="3"><code>1</code>=positive
+    <br><code>0</code>=negative<br>
+    <code>3</code>=invalid
+</td>
 </tr>
 <tr>
 <td>Class</td>
-<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte in class)</td>
+<td>Confirmatory results (presence of any analyte in class)</td>
 <td><code>c_any_stim_n</code></td>
-<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
 </tr>
 <tr>
 <td colspan="1" rowspan="3">
@@ -281,7 +287,6 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
 </td>
 <td>Screening results</td>
 <td><code>s_amp_n</code></td>
-<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid</td>
 </tr>
 <tr>
 <td>Confirmatory results</td>
@@ -291,7 +296,10 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
 <tr>
 <td>Confirmatory results - categorical</td>
 <td><span class="tooltip"><code>c_amp_n_cat</code><span class="tooltiptext" style="font-size: 0.9em;">Categorical confirmatory test variable for alcohol follows a different convention and is ‘c_ethanol_n’</span></span></td>
-<td><code>1</code>=positive; <code>0</code>=negative; <code>3</code>=invalid; <code>4</code>=screen negative</td>
+<td><code>1</code>=positive<br>
+    <code>0</code>=negative<br>
+    <code>3</code>=invalid<br>
+    <code>4</code>=screen negative</td>
 </tr>
 </tbody>
 </table>
