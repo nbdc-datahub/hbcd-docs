@@ -219,6 +219,14 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='word-wrap: break-word; white-space: normal;'>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
+
+<tr>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Olink</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+</tr>
+
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Urine</td>

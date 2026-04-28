@@ -72,61 +72,14 @@
     </thead>
     <tbody>
     
-<tr class="domain-row-pending"><td colspan="3"><strong>ADMINISTRATIVE</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Study Navigators</td>
-<td style='word-wrap: break-word; white-space: normal;'>Populate SUBSTANCE_USE and OTHER checkbox fields.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr class="domain-row-pending"><td colspan="3"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>ECBQ</td>
-<td style='word-wrap: break-word; white-space: normal;'>Change coding for "Does not apply" to 8 to match the IBQ-R.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr class="domain-row-pending"><td colspan="3"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Olink</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Urine</td>
-<td style='word-wrap: break-word; white-space: normal;'>Creatinine results (<code>bio_creat_u</code>) are currently excluded from the release due to out-of-range values and will be added once corrected.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
-</tr>
-<tr class="domain-row-pending"><td colspan="3"><strong>DEMOGRAPHICS</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>SU Flags</td>
-<td style='word-wrap: break-word; white-space: normal;'>A derived/rolled up substance use flag for Stimulants will be added based on positive instrument-specific Stimulant results.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>VIsit Info</td>
-<td style='word-wrap: break-word; white-space: normal;'>SU flags will include Nail toxicology results in addition to Urine.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Visit Level Data</td>
-<td style='word-wrap: break-word; white-space: normal;'>Date of missed visit (<code>visit_missed_date</code>) is currently excluded from the release due to inaccuracies and will be added once corrected.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
+
 <tr class="domain-row-pending"><td colspan="3"><strong>GENERAL</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Language</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of language of administration across all instruments where applicable.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Multibirth Cohorts</td>
-<td style='word-wrap: break-word; white-space: normal;'>Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be added to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Sequence Field</td>
-<td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
+
 <tr class="domain-row-pending"><td colspan="3"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>BrainSwipes</td>
