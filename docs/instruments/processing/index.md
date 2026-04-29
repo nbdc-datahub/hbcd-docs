@@ -91,11 +91,6 @@ The table below also includes links to the <a href="https://www.nmind.org/procee
 
 The full details on how each pipeline was executed and configured is available in the complete <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> documentation. All pipeline-specific parameters and data criteria are detailed under [Tool Names](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html#tool-names), including **processing settings**, **pipeline outputs**, **file selection for processing**, **QC selection information**, and more.
 
-
-<!-- 
-A general overview of file selection procedures specifically for **structural and functional MRI data** is additionally provided in the [MRI Processing & Derivatives Guide](../mri/mri-proc.md#file-selection-for-processing).
- -->
-
 <!-- ## Pipeline Standards & Design
 
 ### Running an HBCD Processing Pipeline

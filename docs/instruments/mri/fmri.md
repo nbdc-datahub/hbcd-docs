@@ -16,29 +16,30 @@
 </div>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
+<span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+<span class="text-with-link"><span class="text">Data Warning</span>
+<a class="anchor-link" href="#warning" title="Copy link">
+<i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p><b>Overview & Prevalence</b><br>
-A subset of Philips fMRI scans is affected by a <b>signal intensity clipping artifact</b>. Due to a scaling error during real-time reconstruction, raw pixel intensities &gt;4095 are capped, producing hyperintense regions that can obscure gray/white matter signal. This artifact can significantly distort BOLD registration and subsequent derived measures such as functional connectivity estimates.
+<h3>Avoid Use of V02 Derivatives Processed Via Infant FreeSurfer Workflow</h3>
+<p>Data acquired at visit V02 (from neonates/0-1 months old) was processed through Infant fMRIPrep via two separate surface reconstruction workflows - Infant FreeSurfer and M-CRIB-S (<a href="#m-crib-s-freesurfer">details</a>). Though Infant FreeSurfer outputs are included in the release, expert visual review as well as preliminary BrainSwipes QC results made it clear that M-CRIB-S produced much higher quality outputs compared to Infant FreeSurfer at the neonatal age range. <b>We therefore strongly recommend using V02 data processed with M-CRIB-S instead for all analyses with V02 data.</b>. Infant FreeSurfer generally yields lower quality surface reconstructions due to the following reasons:</p> 
+<ul>
+<li>T2w images are generally higher contrast in neonates and infants, which improves segmentation and surface reconstruction quality</li>
+<li>M-CRIB-S leverages T2w images for surface reconstruction, whereas Infant FreeSurfer relies solely on T1w images, which are often lower contrast at these ages. <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a> similarly reports that M-CRIB-S is optimal for neonates (optimal age range ≤ 5 month old) vs infant Freesurfer (optimal ages ≥ 3 months).</li>
+<li>Not all sessions include a T1w. For HBCD, T2w images were prioritized over T1w during acquisition for visit V02, which were acquired at the end of the session if time permitted.</li>
+</ul>
+<p><b>BrainSwipes QC Results</b><br>
+Approximately 30% of the visual reports produced across subject sessions were assigned QC scores based on BrainSwipes review. As early results indicated high rates of QC failure, we chose not to complete manual review of the remaining data. Based on the 30% of the sessions reviewed, a total of ~50% of the session derivatives for this group were removed across pipeline derivative outputs due to unusually high QC failures based on BrainSwipes results. Due to the expected high rates of failure for this group, structural and functional data flagged by BrainSwipes results underwent very minimal additional expert review. Instead, sessions were in large part excluded based on the BrainSwipes QC results alone. See <a href="../exclusion-criteria/#processed-data-exclusion-criteria">Processed Data Exclusion Criteria</a> for details.</p>
+<p><b>Implications for Corresponding V02 Data Processed via M-CRIB-S Workflow</b><br>
+<i>Note that poor quality T1w images can also negatively impact data processed via the M-CRIB-S workflow</i> (despite its reliance on the T2w and brain segmentation). BIBSNet derives the brain segmentation based on both the T1w and T2w if both are available, so if the T1w data quality is poor, this may result in lower quality segmentations (particularly when the poor T1w quality results in poor T2w-to-T1w registration of the data fed into the BIBSNet model for segmentation).</p> 
+
+<hr>
+
+<h3>Signal Intensity Clipping Artifact</h3>
+A subset of Philips fMRI scans is affected by a signal intensity clipping artifact. Due to a scaling error during real-time reconstruction, raw pixel intensities &gt;4095 are capped, producing hyperintense regions that can obscure gray/white matter signal. This artifact can significantly distort BOLD registration and subsequent derived measures such as functional connectivity estimates.
 This issue was identified during pilot data collection and patched at most sites prior to the main study. However, there are residual cases at the sites VAN and CCH, where the patch was implemented later (Oct 2024). Overall, ~20% of scans from VAN and CCH show some degree of clipping and ~6% are classified as severe enough to fail manual visual raw data QC.</p>
-<p><b>How to Identify Affected Scans</b><br>
-Clipping severity can be estimated from QC metrics available in the <a href="../../../datacuration/file-based-data/#participant-session-scan-level-data"><code>scans.tsv</code> file</a>, including (1) the ratio of median to maximum image intensity and (2) the fraction of voxels at maximum intensity within the brain mask:</p> 
-<table class="table-no-vertical-lines">
-<tr><th>Clipping Severity</th>
-<th>Criteria</th></tr> <tr>
-<td><b>Severe</b></td> <td>(<code>brain_median</code>/<code>brain_max</code>) &gt; 0.8 <b>AND</b> <code>brain_fvox_max</code> &gt; 0.001</td> </tr>
-<tr><td><b>Potential</b></td> <td>(<code>brain_median</code>/<code>brain_max</code>) &gt; 0.5 <b>AND</b> <code>brain_fvox_max</code> &gt; 0.001</td> </tr> 
-</table>
-<p><b>Recommended Usage</b><br>
-Updates to real-time reconstruction are in development to recover affected data. In the meantime, users should practice caution when performing sensitive analyses and consider including clipping metrics as covariates in analysis. Note that scans with severe clipping fail raw data QC, so are automatically excluded from downstream pipeline processing.</p>
+<p>Updates to real-time reconstruction are in development to recover affected data. In the meantime, users should practice caution when performing sensitive analyses and consider including clipping metrics as covariates in analysis. Clipping severity can be estimated from QC metrics available in the <a href="../../../datacuration/file-based-data/#participant-session-scan-level-data"><code>scans.tsv</code> file</a>: <code>brain_fvox_max</code> &gt; 0.001 (fraction of voxels at maximum intensity within the brain mask) could indicate either potential or severe clipping if the ratio of median to maximum image intensity (<code>brain_median</code>/<code>brain_max</code>) is also &gt; 0.5 or 0.8, respectively. Note that scans with severe clipping typically fail raw data QC, so are automatically excluded from downstream pipeline processing.</p>
 </div>
 
 ## Overview & Acquisition

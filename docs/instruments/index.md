@@ -783,13 +783,12 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>All raw BIDS data documentation under <a href="mri/rawbids/" target="_blank">Raw MR BIDS</a>.</p>
-<table class="compact-table-no-vertical-lines" style="line-height: 1.1;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
     <th>Modality</th>
-    <th>Raw BIDS</th>
-    <th>Pipeline Derivatives</th>
+    <th>Raw BIDS <i>(<a href="mri/rawbids/" target="_blank">Documentation</a>)</i></th>
+    <th>Pipeline Derivatives <i>(see <a href="../datacuration/file-based-data/#links-to-pipeline-derivatives" target="_blank">Links to Pipeline Derivatives</a>)</i></th>
 </tr>
 </thead>
 <tbody>
