@@ -789,7 +789,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 <tr>
     <th>Modality</th>
     <th>Raw BIDS</th>
-    <th>Pipeline Derivatives</th>
+    <th>Pipeline Derivatives <i>(see <a href="../datacuration/file-based-data/#links-to-pipeline-derivatives" target="_blank">Links to Pipeline Derivatives</a>)</i></th>
 </tr>
 </thead>
 <tbody>
