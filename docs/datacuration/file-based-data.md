@@ -129,27 +129,27 @@ hbcd/
 <tr>
   <td rowspan="6">Structural & Functional MRI</td>
   <td><code>mriqc/</code></td>
-  <td>MRIQC - <a href="../../instruments/mri/smri/#mriqc" target="_blank">sMRI</a> & <a href="../../instruments/mri/fmri/#mriqc" target="_blank">fMRI</a></td>
+  <td><a href="../../instruments/mri/smri/#mriqc" target="_blank">MRIQC</a></td>
 </tr>
 <tr>
   <td><code>bme_x/</code></td>
-  <td><a href="../../instruments/mri/smri/#bme-x" target="_blank">BME-X</a></td>
+  <td><a href="../../instruments/mri/smri/#mriqc" target="_blank">BME-X</a></td>
 </tr>
 <tr>
   <td><code>bibsnet/</code></td>
-  <td><a href="../../instruments/mri/mri-proc/#bibsnet" target="_blank">BIBSNet</a></td>
+  <td><a href="../../instruments/mri/smri/#bibsnet-derivs" target="_blank">BIBSNet</a></td>
 </tr>
 <tr>
   <td><code>nibabies/</code></td>
-  <td><a href="../../instruments/mri/mri-proc/#infant-fmriprep" target="_blank">Infant fMRIPrep (or Nibabies)</a></td>
+  <td><a href="../../instruments/mri/fmri/#nibabies-derivs" target="_blank">Infant fMRIPrep (or Nibabies)</a></td>
 </tr>
 <tr>
   <td><code>freesurfer/</code> & <code>mcribs/</code></td>
-  <td><a href="../../instruments/mri/mri-proc/#m-crib-s-freesurfer" target="_blank">FreeSurfer & M-CRIB-S</a></td>
+  <td><a href="../../instruments/mri/fmri/#fs" target="_blank">FreeSurfer</a> & <a href="../../instruments/mri/fmri/#mcribs" target="_blank">M-CRIB-S</a></td>
 </tr>
 <tr>
   <td><code>xcp_d/</code></td>
-  <td><a href="../../instruments/mri/mri-proc/#xcp-d" target="_blank">XCP-D</a></td>
+  <td><a href="../../instruments/mri/fmri/#xcpd-derivs" target="_blank">XCP-D</a></td>
 </tr>
 <tr>
   <td rowspan="2">Quantitative MRI</td>
