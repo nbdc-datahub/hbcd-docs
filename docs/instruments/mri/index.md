@@ -33,21 +33,6 @@ HBCD includes the following magnetic resonance imaging (**MRI**) and spectroscop
 <a href="mrs" class="toc-card"><div class="toc-title">MR Spectroscopy</div><div class="toc-sub">MRS</div></a>
 </div>
 
-<!-- <table class="table-no-vertical-lines">
-<tbody>
-<tr><td><a href="smri" target="_blank">Structural MRI (sMRI)</a></td></tr>
-<tr><td><a href="qmri" target="_blank">Quantitative MRI (qMRI)</a></td></tr>
-<tr><td><a href="fmri" target="_blank">Functional MRI (fMRI)</a></td></tr>
-<tr><td><a href="dmri" target="_blank">Diffusion MRI (dMRI)</a></td></tr>
-<tr><td><a href="mrs" target="_blank">Magnetic Resonance Spectroscopy (MRS)</a></td></tr>
-</tbody></table> -->
-
- <!-- - <a href="smri" target="_blank">Structural MRI (sMRI)</a>
- - <a href="qmri" target="_blank">Quantitative MRI (qMRI)</a>
- - <a href="fmri" target="_blank">Functional MRI (fMRI)</a>
- - <a href="dmri" target="_blank">Diffusion MRI (dMRI)</a>
- - <a href="mrs" target="_blank">Magnetic Resonance Spectroscopy (MRS)</a> -->
-
 ## MRI Protocols
 HBCD Study MRI protocols and acquisition parameters are described in <a href="https://doi.org/10.1016/j.dcn.2024.101452">Dean et al. 2024</a>. See the external [HBCD Study MRI Protocols](https://hbcdsequences.readthedocs.io) documentation for full protocols, sequence installation, and operation instructions.
 
@@ -71,7 +56,7 @@ MRI and MRS release data include the following - <i>see <a href="../../datacurat
 <td style="word-wrap: break-word; white-space: normal;">Questionnaires and select pipeline derivatives in HBCD-tabulated format - see <a href="../#mri-tab" target="_blank">Tabulated Imaging</a></td></tr>
 </tbody></table>
 
-<pre class="folder-tree">
+<pre class="folder-tree" style="line-height: 1.2">
 hbcd/
 ├── rawdata/
 │   ├── phenotype/  
@@ -122,11 +107,9 @@ hbcd/
 
 ## Exclusion Criteria
 
-### Raw BIDS Data
-Acquisition parameters must fall within the ranges specified below in order for data to be included in the release. Inclusion criteria are typically defined as acceptable ranges rather than fixed values due to variations between scanner types. The following values are extracted from BIDS JSON metadata.
+### Acquisition Criteria
+Acquisition specs, extracted post-BIDS conversion from JSON metadata, must fall within the ranges specified below in order to be included in the release or any downstream pipeline processing. Note that inclusion criteria are typically defined as acceptable ranges rather than fixed values due to variations between scanner types.
 
-<div id="exclusion-criteria-rawbids" class="table-banner" onclick="toggleCollapse(this)"> <span class="emoji"><i class="fa fa-circle-check"></i></span> <span class="text-with-link"> <span class="text">Acquisition Parameter Ranges for Data Release Eligibility</span> <a class="anchor-link" href="#exclusion-criteria-rawbids" title="Copy link"> <i class="fa-solid fa-link"></i> </a> </span> <span class="arrow">▸</span> </div>
-<div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines">
   <thead><tr> <th>Scan Type</th> <th>Repetition Time (TR)</th><th>Echo Time (TE)</th><th>Inversion Time (TI)</th><th>Slice Thickness</th><th>Number of Volumes</th></tr></thead>
 <tbody>
@@ -139,15 +122,25 @@ Acquisition parameters must fall within the ranges specified below in order for 
   <tr><td>Functional</td><td>1.725</td><td>0.0369 - 0.0371</td><td>NA</td><td>2</td><td>≥ 87 (~2.5 min)</td>     </tr>  
 </tbody>
 </table>
-</div>
+
 
 ### Processed Derivatives
 
-Structural and functional MRI derivatives with an average <a href="../qc/#brainswipes/" target="_blank">BrainSwipes</a> QC score < 0.5 were flagged for expert manual review; data with severe QC issues were excluded from release data. V02 sessions processed using Infant FreeSurfer (`hash-2afa9081`) for surface reconstruction were only partially evaluated - <a href="fmri/#warning">see Data Warning</a>.
+Structural and functional MRI derivatives with an average <a href="../qc/#brainswipes/" target="_blank">BrainSwipes</a> QC score < 0.5 were flagged for expert manual review; data with severe QC issues were excluded from release data. V02 sessions processed using Infant FreeSurfer (`hash-2afa9081`) for surface reconstruction were only partially evaluated due to generally poor quality and should not be used for analysis - <a href="fmri/#warning">see Data Warning</a>.
 
-<div id="manual-review" class="table-banner" onclick="toggleCollapse(this)"> <span class="emoji"><i class="fa fa-circle-check"></i></span> <span class="text-with-link"> <span class="text">Details: Expert Manual Review</span> <a class="anchor-link" href="#manual-review" title="Copy link"> <i class="fa-solid fa-link"></i> </a> </span> <span class="arrow">▸</span> </div>
+
+<div id="deriv-exclusions" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+  <span class="text">Processed Data Exclusion/Removal</span>
+  <a class="anchor-link" href="#deriv-exclusions" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
 <div class="table-collapsible-content">
-<p>The table below reports the percentage of session folders removed due to structural or functional QC failures for each visit.</p>
+<p>The table below reports the percentage of session folders removed due to QC failures for each visit.</p>
 <table class="table-no-vertical-lines">
 <tfoot><tr><td colspan="5"><b>*</b> Structural QC passed; one or more BOLD runs failed QC</td></tr></tfoot>
 <thead>
@@ -156,4 +149,39 @@ Structural and functional MRI derivatives with an average <a href="../qc/#brains
 <tbody>
 <tr><td>V02</td><td>M-CRIB-S</td><td>3%</td><td>16%</td><td>19%</td></tr><tr><td>V02</td><td>Infant FreeSurfer</td><td>19%</td><td>30%</td><td>49%</td></tr><tr><td>V03</td><td>Infant FreeSurfer</td><td>3%</td><td>3%</td><td>6%</td></tr><tr><td>V04</td><td>Infant FreeSurfer</td><td>0%</td><td>3%</td><td>3%</td></tr>
 </tbody></table>
-</div> 
+<p>Session data with confirmed severe structural issues were removed across the pipeline derivatives indicated below. This includes Osprey and qMRI-PostProc pipelines for MRS and qMRI as these depend on BIBSNet outputs. Sessions without structural issues flagged for functional issues (at least one severely failing BOLD run) were only removed from Infant fMRIPrep and XCP-D derivatives. </p>
+<table class="table-no-vertical-lines">
+  <thead>
+    <tr>
+      <th>QC Type</th>
+      <th><a href="../fmri/#bibsnet" target="_blank">BIBSNet</a></th>
+      <th><a href="../fmri/#infant-fmriprep" target="_blank">Infant fMRIPrep</a></th>
+      <th><a href="../fmri/#m-crib-s-freesurfer" target="_blank">M-CRIB-S / FreeSurfer</a></th>
+      <th><a href="../fmri/#xcp-d" target="_blank">XCP-D</a></th>
+      <th><a href="../mrs/#derivatives" target="_blank">Osprey</a></th>
+      <th><a href="../qmri/#derivatives" target="_blank">qMRI-PostProc</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Structural</strong></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+    </tr>
+    <tr>
+      <td><strong>Functional</strong></td>
+      <td></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td></td>
+      <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+

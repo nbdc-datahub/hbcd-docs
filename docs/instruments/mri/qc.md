@@ -183,8 +183,6 @@ Data are flagged for manual review based on automated QC results using multivari
 </div>
 <p></p>
 
-
-
 <div style="display: flex; align-items: center; gap: 30px;">
 <div style="flex: 1;">
 <p>QC is performed on processed structural and functional MRI data via manual review of <a href="../fmri/#xcp-d">XCP-D</a> visual reports. Though manual inspection remains the gold standard for QC, it is highly resource-intensive. Manual visual review was therefore performed using <a href="https://brainswipes.us/about/">BrainSwipes</a>, a gamified crowdsourcing platform where users classify images as Pass or Fail by swiping right or left after completing a brief visual QC tutorial.</p>
