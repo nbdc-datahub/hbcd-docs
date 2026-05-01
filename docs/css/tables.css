@@ -451,3 +451,14 @@ th, td {
   color: #003b56;
   font-weight: 600;
 }
+/* KNOWN ISSUE ICONS */
+.icon-rotate {
+  color: #199bd6;
+  margin-right: 0.4em;
+  font-size: 1em;
+}
+.icon-bug {
+  color: #f97316;
+  margin-right: 0.4em;
+  font-size: 1em;
+}
