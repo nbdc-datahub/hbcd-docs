@@ -488,7 +488,7 @@ hbcd/
 
 ## MRI Derivatives Quick Start Guide
 
-Below is a summary of key MRI derivatives used for **structural morphology** and **resting-state functional MRI (rsfMRI) functional connectivity** analyses. Key derivatives, produced by the **XCP-D** pipeline, include volumetric and surface-based time series for each participant. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. 
+Below is a summary of key MRI derivatives used for structural morphology and resting-state functional MRI (rsfMRI) functional connectivity analyses. Key derivatives, produced by the [XCP-D](https://xcp-d.readthedocs.io/en/latest/) pipeline, include volumetric and surface-based time series for each participant. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. 
 
 <div id="struc" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-cubes"></i></span>
@@ -615,6 +615,9 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 <div class="table-collapsible-content">
 <p><i>See <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#parcellations-and-atlases">Parcellations & Atlases</a> in the XCP-D documentation for more details.</i></p>
 
+<!-- 4P Atlas LUTs: eg https://github.com/PennLINC/AtlasPack/blob/main/atlas-4S156Parcels_dseg.tsv -->
+
+
 <style>
     .compact-table-clean {
   width: 100%;
@@ -668,7 +671,7 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 <table class="compact-table-clean">
 <thead>
 <tr>
-  <th style="width: 22%;">Atlas</th>
+  <th>Atlas</th>
   <th>Description</th>
 </tr>
 </thead>
@@ -740,7 +743,7 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
   </td>
 </tr>
 <tr>
-  <td><code>4S{1-10}56Parcels</code></td>
+  <td><code>4S{X}56Parcels</code></td>
   <td>
     <span class="atlas-type">Multimodal atlas (multi-resolution)</span>
     <span class="atlas-details">
