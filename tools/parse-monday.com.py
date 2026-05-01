@@ -2,6 +2,7 @@ import pandas as pd
 import html
 import os
 import markdown
+import numpy as np
 import re
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
@@ -9,19 +10,21 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 XLSX= "latest.xlsx"
 HBCD_DOCS_MD = "../docs/changelog/issues-updates.md"
 
+# HBCD_DOCS_MD = "../docs/changelog/test.md"
+
+
 # FUNCTIONS
 
 def load_and_filter_xlsx(xlsx_path):
     """
     Load XLSX file, rename columns, filter rows, fill missing values, and strip whitespace.
     """
-    # Load XLSX as strings and rename columns 
     df = pd.read_excel(xlsx_path, dtype=str)
     df = df.rename(columns={
     "RTDs": "Type",
     "RTDs Text (markdown format)": "Text"})
 
-    # Filter
+    # Filter - only include items marked for autoparsing
     df = df[df['Autoparsed?'].str.contains('Yes')]
 
     # Fill missing values and strip whitespace 
@@ -37,6 +40,7 @@ def map_type(value):
         return "Pending Update"
     return None
 
+
 def insert_into_markdown(md_path, combined_html):
     START_MARKER = "<!-- BEGIN KNOWN_ISSUES_TABLE -->"
     END_MARKER = "<!-- END KNOWN_ISSUES_TABLE -->"
@@ -51,9 +55,7 @@ def insert_into_markdown(md_path, combined_html):
     new_content = (
         content[:start_index]
         + START_MARKER
-        + "\n\n"
         + combined_html
-        + "\n\n"
         + END_MARKER
         + content[end_index:]
     )
@@ -62,60 +64,53 @@ def insert_into_markdown(md_path, combined_html):
     print("Known issues table successfully updated.")
 
 # Generate HTML tables 
-def build_table(data_dict, table_title):
-    if "Known Issues" in table_title:
-        domain_class = "domain-row-issue"
-    else:
-        domain_class = "domain-row-pending"
-
+def build_table(domain, rows):
     table_parts = []
 
-    table_parts.append(f"\n\n### {table_title}\n")
-    table_parts.append('<table class="compact-table-no-vertical-lines">')
-
+    table_parts.append(f"\n### {html.escape(domain)}")
     table_parts.append("""
-    <thead>
-    <tr style="text-decoration: bold; font-size: 1.2em;">
-    <th>TABLE/TOPIC</th>
-    <th>SUMMARY</th>
-    <th style='text-align: center;'><span class="tooltip tooltip-left">PR<span class="tooltiptext">Target Release</span></span></th>
-    </tr>
-    </thead>
-    <tbody>
-    """)
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th></th><th>Table/Topic</th><th>Summary</th>
+<th style='text-align: center;'>
+  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
+</th></tr>
+</thead>
+<tbody>
+""")
 
-    for domain in sorted(data_dict.keys()):
-        table_parts.append(f"""<tr class="{domain_class}"><td colspan="3"><strong>{html.escape(domain)}</strong></td></tr>""")
+    for issue_type, table, summary_html, pr in rows:
+        table_parts.append("<tr>")
+        if issue_type == "Issue":
+            type_label = '<i class="fas fa-bug icon-bug"></i>'
+        else:
+            type_label = '<i class="fa-solid fa-rotate icon-rotate"></i>'
+        table_parts.append(f"<td>{type_label}</td>")
+        table_parts.append(f"<td>{html.escape(str(table))}</td>")
+        table_parts.append(f"<td style='word-wrap: break-word; white-space: normal;'>{summary_html}</td>")
 
-        for table, summary_html, pr in data_dict[domain]:
-            table_parts.append("<tr>")
-            table_parts.append(f"<td class='table-cell' style='font-weight: bold;'>{html.escape(str(table))}</td>")
-            table_parts.append(f"<td style='word-wrap: break-word; white-space: normal;'>{summary_html}</td>")
-            # table_parts.append(f"<td style='text-align: center; font-weight: bold;'>{pr}</td>")
+         # Determine pill class based on PR value
+        if str(pr).upper() == "TBD":
+            pill_class = "pr-pill pr-tbd"
+        else:
+            pill_class = f"pr-pill pr-general"
 
-             # Determine pill class based on PR value
-            if str(pr).upper() == "TBD":
-                pill_class = "pr-pill pr-tbd"
-            else:
-                pill_class = f"pr-pill pr-general"
-
-            table_parts.append(
+        table_parts.append(
                 f"<td style='text-align: center;'><span class='{pill_class}'>{html.escape(str(pr))}</span></td>"
             )
-
-            table_parts.append("</tr>")
+        table_parts.append("</tr>")
     table_parts.append("</tbody></table>")
-    return "\n".join(table_parts)
 
-def build_combined_tables():
-    tables = [
-        build_table(grouped[key], label)
-        for key, label in table_configs
-    ]
-    return "\n\n".join(tables)
+    return "\n".join(table_parts)
 
 # WORK
 df = load_and_filter_xlsx(XLSX)
+
+# Drop unecessary columns (for troubleshooting purposes)
+df = df.drop(['Name'], axis=1)
+df = df.drop(['Status'], axis=1)
+df = df.drop(['BR'], axis=1)
 
 # Replace empty PR cells with 'TBD'
 df['PR'] = df['PR'].replace('', 'TBD') 
@@ -125,11 +120,13 @@ df["MappedType"] = df["Type"].apply(map_type)
 df = df[df["MappedType"].notna()]
 df = df.sort_values(by=['Domain', 'Table/Topic'])
 
-# Build grouped structure (separate by type - known issues vs pending updates)
-grouped = {
-    "Issue": {},
-    "Pending Update": {}
-}
+# Type mapping and sort by (1) domain, (2) table/topic
+df["MappedType"] = df["Type"].apply(map_type)
+df = df[df["MappedType"].notna()]
+df = df.sort_values(by=['Domain', 'Table/Topic'])
+
+# Build grouped structure (by domain only)
+grouped_by_domain = {}
 
 for _, row in df.iterrows():
     domain = row["Domain"]
@@ -145,21 +142,32 @@ for _, row in df.iterrows():
     )
     summary_html = re.sub(r'^<p>(.*)</p>$', r'\1', summary_html, flags=re.DOTALL)
 
-    grouped[issue_type].setdefault(domain, []).append(
-        (table, summary_html, pr)
+    grouped_by_domain.setdefault(domain, []).append(
+        (issue_type, table, summary_html, pr)
     )
 
-# Generate known issues and pending tables
+# Generate known issues and pending tables 
 table_configs = [
     ("Issue",
-     '<i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Known Issues'),
+     '<i class="fas fa-bug icon-bug"></i> Known Issues'),
     ("Pending Update",
-     '<i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Pending Updates'),
+     '<i class="fa-solid fa-rotate icon-rotate"></i> Pending Updates'),
 ]
 
-# Generate table and insert into markdown
-combined_tables_html = build_combined_tables()
-insert_into_markdown(HBCD_DOCS_MD, combined_tables_html)
+def build_combined_tables():
+    tables = []
 
-# df.to_csv('temp.tsv', index=None, na_rep='NA', sep='\t')
+    for domain in sorted(grouped_by_domain.keys()):
+        rows = grouped_by_domain[domain]
+        # Sort within domain
+        rows = sorted(rows, key=lambda x: (x[0], x[1]))  # (type, table)
+        tables.append(build_table(domain, rows))
 
+    return "\n\n".join(tables)
+
+# Make table and insert into markdown
+combined_tables_html_int = build_combined_tables()
+insert_into_markdown(HBCD_DOCS_MD, combined_tables_html_int)
+
+
+# df.to_csv("debug.tsv", sep='\t', index=False)
