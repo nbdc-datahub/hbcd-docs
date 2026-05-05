@@ -22,8 +22,8 @@ The Basic Demographics table contains global, static variables derived across ad
 - **Time of scan/data acquisition** for file-based data (MR, EEG, and biosensor data, provided within [session- and scan-level metadata files](../datacuration/file-based-data.md#participant-session-scan-level-data))
 
 ---
-<p style="text-align: center;">
-<span class="pill-badge" style="background-color: pink;">V01</span>&nbsp;= Available Visit 1 only (prenatal) &nbsp;&nbsp;
+<p style="text-align: center; font-size: 0.9em;">
+<span class="pill-badge" style="background-color: pink;">V01</span>&nbsp;= Available Visit 1 only (prenatal) &nbsp;&nbsp;&nbsp;&nbsp;
 <span class="pill-badge">V02+</span>&nbsp;= Available Visit 2 onward (post-birth)
 </p>
 
@@ -32,19 +32,17 @@ The Basic Demographics table contains global, static variables derived across ad
 <table class="compact-table-no-vertical-lines" style="font-size: 16px;">
 <thead>
 <tr>
-</tr>
-<tr>
-<th>Variable Name</th>
-<th>Variable Label</th>
-<th>Description</th>
-<th>Visit</th>
+<th style="width: 20%;">Variable Name</th>
+<th style="width: 15%;">Variable Label</th>
+<th style="width: 60%;">Description</th>
+<th style="text-align: center; width: 5%;">Visit</th>
 </tr>
 </thead>
 <tbody>
 
 <tr>
 <td>
-  Gestational Age<br>
+  Gestational Age
   <span class="subtle">at Administration</span>
 </td>
 <td><code>gestational_age</code></td>
@@ -52,14 +50,13 @@ The Basic Demographics table contains global, static variables derived across ad
 <ul>
   <li>Number of weeks (rounded down) between <span class="tooltip tooltip-right">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period, estimated as EDD − 280 days</span></span> and the V01 administration date</li>
   <li>May vary by ≤4 weeks across protocol elements (except for protocol exceptions)</li>
-  <li><i><b>Note:</b> May be negative if collected prior to the <span class="tooltip">EDD<span class="tooltiptext">Estimated Date of Delivery</span></span></i></li>
 </ul>
 </td>
-<td><span class="pill-badge" style="background-color: pink;">V01</span></td>
+<td style="text-align: center; font-size: 0.8em;"><span class="pill-badge" style="background-color: pink;">V01</span></td>
 </tr>
 <tr>
 <td>
-  Chronological Age<br>
+  Chronological Age
   <span class="subtle">at Administration</span>
 </td>
 <td><code>candidate_age</code></td>
@@ -70,7 +67,7 @@ The Basic Demographics table contains global, static variables derived across ad
   <li>Based on a jittered DOB (±7 days) to protect participant privacy</li>
 </ul>
 </td>
-<td><span class="pill-badge">V02+</span></td>
+<td style="text-align: center; font-size: 0.8em;"><span class="pill-badge">V02+</span></td>
 </tr>
 
 <tr>
@@ -79,14 +76,21 @@ The Basic Demographics table contains global, static variables derived across ad
   <span class="subtle">at Administration</span>
 </td>
 <td><code>adjusted_age</code></td>
-<td style="word-wrap: break-word; white-space: normal;">
-<ul>
-  <li>Number of weeks (rounded down) between <span class="tooltip">EDD<span class="tooltiptext">Estimated Date of Delivery</span></span> 
-and the administration date</li>
+<td>
+<ul style="margin-bottom: 10px;">
+  <li>Number of weeks (rounded down) between 
+    <span class="tooltip">EDD<span class="tooltiptext">Estimated Date of Delivery</span></span> 
+    and the administration date</li>
   <li>Aligns preterm and full-term infants to a common developmental reference</li>
-</ul>
+</ul>  
+
+<div style="background-color: #fff8e1; padding: 4px 5px; margin-top: 6px; border-radius: 3px; font-weight: 600; border-left: 4px solid #ffa500;">
+  <i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
+  &nbsp;Note: May be negative if collected prior to the EDD
+</div>
+
 </td>
-<td><span class="pill-badge">V02+</span></td>
+<td style="text-align: center; font-size: 0.8em;"><span class="pill-badge">V02+</span></td>
 </tr>
 </tbody>
 </table>
@@ -98,10 +102,10 @@ and the administration date</li>
 <table class="compact-table-no-vertical-lines" style="font-size: 16px;">
 <thead>
 <tr>
-<th>Variable Name</th>
-<th>Variable Label</th>
-<th>Description</th>
-<th>Visit</th>
+<th style="width: 20%;">Variable Name</th>
+<th style="width: 15%;">Variable Label</th>
+<th style="width: 60%;">Description</th>
+<th style="text-align: center; width: 5%;">Visit</th>
 </tr>
 </thead>
 <tbody>
@@ -117,7 +121,7 @@ and the administration date</li>
     <li>Time in days between <span class="tooltip">EDD<span class="tooltiptext">Estimated Date of Delivery</span></span> and the acquisition date</li>
     </ul>
 </td>
-<td><span class="pill-badge">V02+</span></td>
+<td style="text-align: center; font-size: 0.8em;"><span class="pill-badge">V02+</span></td>
 </tr>
 
 <tr>
@@ -133,7 +137,7 @@ and the administration date</li>
         <li>Based on a jittered DOB (±7 days) to protect participant privacy</li>
     </ul>
 </td>
-<td><span class="pill-badge">V02+</span></td>
+<td style="text-align: center; font-size: 0.8em;"><span class="pill-badge">V02+</span></td>
 </tr>
 
 </tbody>
