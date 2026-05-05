@@ -287,7 +287,7 @@ PATCH RELEASE
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
   <th>Instrument</th>
@@ -305,12 +305,12 @@ PATCH RELEASE
 </tr>
 <tr>
   <td rowspan="2"><a href="neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a></td>
-  <td>English Version</td>
+  <td>English</td>
   <td>Language Development (Words & Gestures)</td>
   <td><code>ncl_ch_cdiwgen</code></td>
 </tr>
 <tr>
-  <td>Spanish Version</td>
+  <td>Spanish</td>
   <td>Language Development (Words & Gestures)</td>
   <td><code>ncl_ch_cdiwges</code></td>
 </tr>

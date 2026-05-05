@@ -147,7 +147,7 @@ T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infan
 hbcd/
 └── derivatives/
     └── nibabies-<span class="placeholder">&lt;HASH&gt;</span>/
-        └── sub-<span class="label">{ID}</span>/
+        └── sub-{ID}/
             ├── figures/*
             ├── ses-<span class="label">{V0X}</span>/
             │   ├── log/
@@ -196,7 +196,7 @@ hbcd/
             └── <span class="subses">SUBSES</span>_<span class="placeholder">&lt;HASH&gt;</span>.html
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="subses">SUBSES</span>: sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>  
+<span class="subses">SUBSES</span>: sub-{ID}_ses-<span class="label">{V0X}</span>  
 <span class="placeholder">HASH</span>: 0f306a2f | 2afa9081  
 <span class="placeholder">MNI</span>: MNI152NLin6Asym_res-2 | MNIInfant+1  
 <span class="placeholder">SPACE</span>: MNI152NLin6Asym_res-2 | T2w  
@@ -243,16 +243,16 @@ hbcd/
     └── freesurfer-<span class="placeholder">&lt;HASH&gt;</span>/
         └── sub-{ID}_ses-{V0X}/
             ├── label/
-            │   ├── <span class="placeholder">&lt;HEM&gt;</span>.<span class="placeholder">&lt;ATLAS&gt;</span>.annot
-            │   ├── <span class="placeholder">&lt;HEM&gt;</span>.<span class="placeholder">&lt;ATLAS&gt;</span>.auto.nomask.annot
-            │   └── <span class="placeholder">&lt;HEM&gt;</span>.cortex.label
+            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;ATLAS&gt;</span>.annot
+            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;ATLAS&gt;</span>.auto.nomask.annot
+            │   └── <span class="placeholder">&lt;lh|rh&gt;</span>.cortex.label
             │
             ├── mri/
             │   ├── T2.mgz
             │   ├── <span class="placeholder">&lt;ATLAS&gt;</span>+aseg.mgz
             │   ├── aseg*.mgz
             │   ├── <span class="placeholder">&lt;brain|brainmask&gt;</span>.mgz
-            │   ├── <span class="placeholder">&lt;HEM&gt;</span>.ribbon.mgz
+            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.ribbon.mgz
             │   ├── norm.mgz
             │   ├── orig.mgz
             │   └── ribbon.mgz
@@ -260,15 +260,15 @@ hbcd/
             ├── stats/
             │   ├── aseg.stats
             │   ├── brainvol.stats
-            │   ├── <span class="placeholder">&lt;HEM&gt;</span>.<span class="placeholder">&lt;ATLAS&gt;</span>.stats
-            │   └── <span class="placeholder">&lt;HEM&gt;</span>.curv.stats
+            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;ATLAS&gt;</span>.stats
+            │   └── <span class="placeholder">&lt;lh|rh&gt;</span>.curv.stats
             │
             ├── surf/
-            │   ├── <span class="placeholder">&lt;HEM&gt;</span>.{white,pial,midthickness}
-            │   ├── <span class="placeholder">&lt;HEM&gt;</span>.{inflated,sphere}*
-            │   ├── <span class="placeholder">&lt;HEM&gt;</span>.smoothwm*
-            │   ├── <span class="placeholder">&lt;HEM&gt;</span>.{area,area.mid,area.pial}
-            │   └── <span class="placeholder">&lt;HEM&gt;</span>.{curv,sulc,thickness,volume}
+            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.{white,pial,midthickness}
+            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.{inflated,sphere}*
+            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.smoothwm*
+            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.{area,area.mid,area.pial}
+            │   └── <span class="placeholder">&lt;lh|rh&gt;</span>.{curv,sulc,thickness,volume}
             │
             └── scripts/*
 
@@ -290,71 +290,49 @@ hbcd/
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<pre class="folder-tree" style="font-size: 11px;">
+<pre class="folder-tree">
 hbcd/
 └── derivatives/
     └── mcribs-0f306a2f/
-        └── sub-<span class="label">{ID}</span>_ses-V02/
-            ├── RawT2/
-            │   └── sub-<span class="label">{ID}</span>_ses-V02.nii.gz
-            │
-            ├── RawT2RadiologicalIsotropic/
-            │   └── sub-<span class="label">{ID}</span>_ses-V02.nii.gz_symlink_s3_object
-            │
+        └── sub-{ID}_ses-V02/
+            ├── RawT2/sub-{ID}_ses-V02.nii.gz
+            ├── RawT2RadiologicalIsotropic/sub-{ID}_ses-V02.nii.gz_symlink_s3_object
             ├── SurfReconDeformable/
-            │   └── sub-<span class="label">{ID}</span>_ses-V02/
+            │   └── sub-{ID}_ses-V02/
             │       ├── meshes/
-            │       │   ├── <span class="placeholder">&lt;MESH&gt;</span>.vtp
-            │       │   ├── pial-<span class="placeholder">&lt;HEM&gt;</span>.vtp
-            │       │   ├── pial-<span class="placeholder">&lt;HEM&gt;</span>-reordered.vtp
-            │       │   └── white-<span class="placeholder">&lt;HEM&gt;</span>.<span class="placeholder">&lt;SUFFIX&gt;</span>
-            │       │
+            │       │   ├── <span class="placeholder">&lt;internal|pial|white|pial+internal|white+internal&gt;</span>.vtp
+            │       │   ├── pial-<span class="placeholder">&lt;lh|rh&gt;</span>.vtp
+            │       │   ├── pial-<span class="placeholder">&lt;lh|rh&gt;</span>-reordered.vtp
+            │       │   └── white-<span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;CortexMask.curv|Normals.surf|RegionId.curv|vtp&gt;</span>
             │       ├── recon/
             │       │   ├── cortical-hull-dmap.nii.gz
             │       │   └── regions.nii.gz
-            │       │
             │       └── temp/
             │           ├── brain-mask.nii.gz
             │           ├── ventricles-dmap.nii.gz
             │           ├── t2w-image.nii.gz_symlink_s3_object
-            │           │
-            │           ├── cerebrum-<span class="placeholder">&lt;HEM&gt;</span>-dmap.nii.gz
-            │           ├── cerebrum-<span class="placeholder">&lt;HEM&gt;</span>-hull-<span class="placeholder">{X}</span>.vtp
-            │           ├── cerebrum-<span class="placeholder">&lt;HEM&gt;</span>-iso.vtp
-            │           │
+            │           ├── cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-dmap.nii.gz
+            │           ├── cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-hull-<span class="placeholder">{X}</span>.vtp
+            │           ├── cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-iso.vtp
             │           ├── <span class="placeholder">&lt;STRUCT&gt;</span>-mask-<span class="placeholder">{X}</span>.nii.gz
-            │           ├── <span class="placeholder">&lt;TISSUE&gt;</span>-<span class="placeholder">{X}</span>.vtp
-            │           ├── <span class="placeholder">&lt;TISSUE&gt;</span>-<span class="placeholder">{X}</span>-output_<span class="placeholder">{X}</span>.vtp
+            │           ├── <span class="placeholder">&lt;cerebrum-lh|cerebrum-rh|pial|white&gt;</span>-<span class="placeholder">{X}</span>.vtp
+            │           ├── <span class="placeholder">&lt;cerebrum-lh|cerebrum-rh|pial|white&gt;</span>-<span class="placeholder">{X}</span>-output_<span class="placeholder">{X}</span>.vtp
             │           │
             │           └── <span class="placeholder">&lt;pial|white&gt;</span>-foreground.nii.gz
-            │
             ├── TissueSeg/
-            │   ├── sub-<span class="label">{ID}</span>_ses-V02_all_labels.nii.gz
-            │   ├── sub-<span class="label">{ID}</span>_ses-V02_all_labels_manedit.nii.gz_symlink_s3_object
-            │   ├── sub-<span class="label">{ID}</span>_ses-V02_brain_mask.nii.gz
-            │   └── sub-<span class="label">{ID}</span>_ses-V02_t2w_restore.nii.gz_symlink_s3_object
-            │
-            ├── TissueSegDrawEM/
-            │   └── sub-<span class="label">{ID}</span>_ses-V02/
-            │       └── N4/
-            │           └── sub-<span class="label">{ID}</span>_ses-V02.nii.gz_symlink_s3_object
-            │
+            │   ├── sub-{ID}_ses-V02_all_labels.nii.gz
+            │   ├── sub-{ID}_ses-V02_all_labels_manedit.nii.gz_symlink_s3_object
+            │   ├── sub-{ID}_ses-V02_brain_mask.nii.gz
+            │   └── sub-{ID}_ses-V02_t2w_restore.nii.gz_symlink_s3_object
+            ├── TissueSegDrawEM/sub-{ID}_ses-V02/N4/sub-{ID}_ses-V02.nii.gz_symlink_s3_object
             ├── freesurfer/ <span class="hashtag"># M-CRIB-S–specific outputs</span>
-            │   └── sub-<span class="label">{ID}</span>_ses-V02/
+            │   └── sub-{ID}_ses-V02/
             │       └── mri/
-            │           ├── brain.mgz_symlink_s3_object
-            │           └── orig.mgz_symlink_s3_object
-            │
-            ├── logs/
-            │   └── sub-<span class="label">{ID}</span>_ses-V02.log
-            │
+            │           └── <span class="placeholder">&lt;brain|orig&gt;</span>.mgz_symlink_s3_object
+            ├── logs/sub-{ID}_ses-V02.log
             └── command.txt
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">HEM</span>: lh | rh  
-<span class="placeholder">STRUCT</span>: brain | cerebrum-{lh/rh} | corpus-callosum | cortex | deep-gray-matter | gray-matter | ventricles | white-matter  
-<span class="placeholder">TISSUE</span>: cerebrum-lh | cerebrum-rh | pial | white  
-<span class="placeholder">MESH</span>: internal | pial | white | pial+internal | white+internal  
-<span class="placeholder">SUFFIX</span>: CortexMask.curv | Normals.surf | RegionId.curv | vtp  
+<span class="placeholder">STRUCT</span>: brain | cerebrum-{lh/rh} | corpus-callosum | cortex | {deep-gray|gray|white}-matter | ventricles 
 </pre>
 </div>
 
@@ -439,7 +417,7 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
 hbcd/
 └── derivatives/
     └── xcp_d-<span class="placeholder">&lt;HASH&gt;</span>/
-        └── sub-<span class="label">{ID}</span>/
+        └── sub-{ID}/
             └── ses-<span class="label">{V0X}</span>/
                 │
                 ├── anat/
@@ -474,12 +452,12 @@ hbcd/
                 │   └── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
                 │
                 ├── figures/*
-                ├── sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_executive_summary.html
-                └── sub-<span class="label">{ID}</span>.html
+                ├── sub-{ID}_ses-<span class="label">{V0X}</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_executive_summary.html
+                └── sub-{ID}.html
 
 <span class="hashtag"># ── Label Legend ─────────────────────────────────────────────</span>
 <span class="placeholder">HASH</span>       : 0f306a2f+0ef9c88a | 2afa9081+0ef9c88a
-<span class="placeholder">*</span>          : sub-<span class="label">{ID}</span>_ses-<span class="label">{V0X}</span>-hash-<span class="placeholder">&lt;HASH&gt;</span>
+<span class="placeholder">*</span>          : sub-{ID}_ses-<span class="label">{V0X}</span>-hash-<span class="placeholder">&lt;HASH&gt;</span>
 <span class="placeholder">METRIC</span>     : curv | sulc | thickness  
 <span class="placeholder">APARC</span>      : 4S-&lt;156|256|...|1056&gt;Parcels | Glasser | Gordon | MIDB | MyersLabonte  
 <span class="placeholder">PARC</span>       : 4S-&lt;156|256|...|1056&gt;Parcels | Glasser | Gordon | MIDB | MyersLabonte | HCP | Tian  

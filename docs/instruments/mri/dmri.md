@@ -70,7 +70,7 @@ hbcd/
                 │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-eddy_stat-cnr_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
                 │
                 ├── figures/
-                └── <span class="muted">sub-{ID}_ses-{V0X}_</span>.html
+                └── <span class="muted">sub-{ID}_ses-{V0X}</span>.html
 </pre>
 </div>
 
@@ -103,7 +103,7 @@ hbcd/
     │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-rdi_param-<span class="placeholder">&lt;rd1|rd2&gt;</span>_dwimap.nii.gz
     │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;DTI-PARAM&gt;</span>_dwimap.nii.gz
     │           ├── figures/*
-    │           └── <span class="muted">sub-{ID}_ses-{V0X}_</span>.html
+    │           └── <span class="muted">sub-{ID}_ses-{V0X}</span>.html
 
   <span class="hashtag">DIPY-DKI</span>
     ├── qsirecon-DIPYDKI/
@@ -115,7 +115,7 @@ hbcd/
     │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">&lt;DKI-PARAM&gt;</span>_dwimap.nii.gz
     │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz
     │           ├── figures/*
-    │           └── <span class="muted">sub-{ID}_ses-{V0X}_</span>.html
+    │           └── <span class="muted">sub-{ID}_ses-{V0X}</span>.html
     
   <span class="hashtag">TORTOISE MAP-MRI</span>
     ├── qsirecon-TORTOISE_model-MAPMRI/
@@ -126,7 +126,7 @@ hbcd/
     │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="placeholder">&lt;MAPMRI&gt;</span>_dwimap.nii.gz
     │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;TENSOR&gt;</span>_dwimap.nii.gz
     │           ├── figures/*
-    │           └── <span class="muted">sub-{ID}_ses-{V0X}_</span>.html
+    │           └── <span class="muted">sub-{ID}_ses-{V0X}</span>.html
     
   <span class="hashtag">TORTOISE Tensor</span>
     └── qsirecon-TORTOISE_model-tensor/
