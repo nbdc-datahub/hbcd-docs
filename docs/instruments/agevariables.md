@@ -83,7 +83,7 @@ and the administration date.</li>
 </table>
 
 
-#### <i class="fa-solid fa-folder-open header-icon"></i> FILE-BASED DATA <i>(age at instrument administration)</i>
+#### <i class="fa-solid fa-folder-open header-icon"></i> FILE-BASED DATA <i>(age at data acquisition)</i>
 
 <!-- FILE-BASED DATA -->
 <table class="table-no-vertical-lines">
