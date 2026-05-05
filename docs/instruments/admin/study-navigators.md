@@ -54,7 +54,7 @@ The Study Navigators Contact Form dataset is provided as <a href="../../../datac
 hbcd/
 └── concatenated/
     └── study_navigator/
-        └── Study Navigator Export - Release 2.0.csv
+        └── Study Navigator Export
 </pre>
 
 ## Details

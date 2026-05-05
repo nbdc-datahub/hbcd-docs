@@ -85,39 +85,40 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 
 The `derivatives/` folder contains derivatives, which are file outputs from <a href="../../instruments/processing/" target="_blank">processing pipelines</a>. 
 
-<pre class="folder-tree" style="font-size: 11px;">
+<pre class="folder-tree">
 hbcd/
-|__ derivatives/ 
-    <span class="hashtag"># Structural & Functional MRI</span>             
-    |__ mriqc/
-    |__ bme_x/      
-    |__ bibsnet/    
-    |__ nibabies/   
-    |__ freesurfer/ 
-    |__ mcribs/     
-    |__ xcp_d/      
-    |               
-    <span class="hashtag"># Quantitative MRI</span>    
-    |__ symri/           
-    |__ qmri_postproc/  
-    | 
-    <span class="hashtag"># Diffusion MRI</span>                                  
-    |__ qsiprep/                         
-    |__ qsirecon/                        
-    |__ qsirecon-DIPYDKI/                
-    |__ qsirecon-DSIStudio/                 
-    |__ qsirecon-TORTOISE_model-MAPMRI/  
-    |__ qsirecon-TORTOISE_model-tensor/  
-    |
-    |__ osprey/       <span class="hashtag"># MRS</span>
-    |__ made/         <span class="hashtag"># EEG</span>
-    |__ hbcd_motion/  <span class="hashtag"># Biosensor Recordings</span>
+└── derivatives/
+    <span class="section"># Structural & Functional MRI</span>
+    ├── mriqc/
+    ├── bme_x/
+    ├── bibsnet/
+    ├── nibabies/
+    ├── freesurfer/
+    ├── mcribs/
+    ├── xcp_d/
+
+    <span class="section"># Quantitative MRI</span>
+    ├── symri/
+    ├── qmri_postproc/
+
+    <span class="section"># Diffusion MRI</span>
+    ├── qsiprep/
+    ├── qsirecon/
+    ├── qsirecon-DIPYDKI/
+    ├── qsirecon-DSIStudio/
+    ├── qsirecon-TORTOISE_model-MAPMRI/
+    └── qsirecon-TORTOISE_model-tensor/
+
+    <span class="section"># Other Modalities</span>
+    ├── osprey/       <span class="hashtag"># MRS</span>
+    ├── made/         <span class="hashtag"># EEG</span>
+    └── hbcd_motion/  <span class="hashtag"># Biosensor Recordings</span>
 </pre>
 <p></p>
 
 ### Links to Pipeline Derivatives
 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
   <th>Modality</th>
@@ -151,40 +152,28 @@ hbcd/
   <td><code>xcp_d/</code></td>
   <td><a href="../../instruments/mri/fmri/#xcpd-derivs" target="_blank">XCP-D</a></td>
 </tr>
+
 <tr>
-  <td rowspan="2">Quantitative MRI</td>
-  <td><code>symri/</code></td>
-  <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">SyMRI</a></td>
+  <td>Quantitative MRI</td>
+  <td><code>symri/</code> & <code>qmri_postproc/</code></td>
+  <td><a href="../../instruments/mri/qmri/#qmri-derivs" target="_blank">SyMRI / qMRI PostProc</a></td>
 </tr>
+
 <tr>
-  <td><code>qmri_postproc/</code></td>
-  <td><a href="../../instruments/mri/qmri/#derivatives" target="_blank">qMRI PostProc</a></td>
-</tr>
-<tr>
-  <td rowspan="6">Diffusion MRI</td>
+  <td rowspan="2">Diffusion MRI</td>
   <td><code>qsiprep/</code></td>
   <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
 </tr>
 <tr>
-  <td><code>qsirecon/</code></td>
+  <td><code>qsirecon/</code><br>
+  <code>qsirecon-DSIStudio/</code><br>
+  <code>qsirecon-DIPYDKI/</code><br>
+  <code>qsirecon-TORTOISE_model-MAPMRI/</code><br>
+  <code>qsirecon-TORTOISE_model-tensor/</code>
+  </td>
   <td><a href="../../instruments/mri/dmri/#qsirecon" target="_blank">QSIRecon</a></td>
 </tr>
-<tr>
-  <td><code>qsirecon-DSIStudio/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon-DSIStudio" target="_blank">QSIRecon-DSI Studio</a></td>
-</tr>
-<tr>
-  <td><code>qsirecon-DIPYDKI/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon-DIPYDKI" target="_blank">QSIRecon-DIPY DKI</a></td>
-</tr>
-<tr>
-  <td><code>qsirecon-TORTOISE_model-MAPMRI/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">QSIRecon-TORTOISE MAP-MRI</a></td>
-</tr>
-<tr>
-  <td><code>qsirecon-TORTOISE_model-tensor/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon-TORTOISE" target="_blank">QSIRecon-TORTOISE Tensor</a></td>
-</tr>
+
 <tr>
   <td>MR Spectroscopy</td>
   <td><code>osprey/</code></td>
@@ -204,47 +193,26 @@ hbcd/
 </table>
 
 ## Concatenated Data
-The `concatenated/` folder contains participant-level files aggregated across all subjects for certain modalities, organized in modality-specific subfolders.
+The `concatenated/` folder contains participant-level files aggregated across all subjects for certain modalities, organized in modality-specific subfolders. Click *View README* links to view instrument documentation.
 
 <pre class="folder-tree">
 hbcd/
-|__ concatenated/ 
-    |__ genetics/
-    |   |__ genotype_microarray/
-    |       |__ GDA/
-    |           |__ batch.info
-    |           |__ hbcd.bed
-    |           |__ hbcd.bim
-    |           |__ hbcd.fam
-    |
-    |__ geocoding/
-    |   |__ HBCD_address_history_geocoded.csv
-    |
-    |__ study_navigator/
-        |__ Study Navigator Export - Release 2.0.csv
+└── concatenated/
+    <span class="section"># Illumina Global Diversity GWAS Array</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/biospec/illumina-gda-gwas" target="_blank">View README</a></span>
+    ├── genetics/
+    │   └── genotype_microarray/
+    │       └── GDA/
+    │           ├── batch.info
+    │           ├── hbcd.bed
+    │           ├── hbcd.bim
+    │           └── hbcd.fam
+    │
+    <span class="section"># Geocoded Linked External Data (GLED)</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/SED/geocoded-linkage" target="_blank">View README</a></span>
+    ├── geocoding/
+    │   └── HBCD_address_history_geocoded.csv
+    │
+    <span class="section"># Study Navigator Contact Form</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/admin/study-navigators" target="_blank">View README</a></span>
+    └── study_navigator/
+        └── study_navigator_export.csv
 </pre>
 
-Visit the instrument documentation pages for information on the unique file contents of each subfolder:
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 17px;">
-<thead>
-  <tr>
-  <th>Folder Name in Release Data</th>
-  <th>Study Instrument (<i>Click to Visit Documentation</i>)</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-<td><code>genetics/</code></td>
-<td><a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Illumina Global Diversity GWAS Array</a></td>
-</tr>
-<tr>
-<td><code>geocoding/</code></td>
-<td><a href="../../instruments/SED/geocoded-linkage" target="_blank">Geocoded Linked External Data (GLED)</a></td>
-</tr>
-<tr>
-<td><code>study_navigator/</code></td>
-<td><a href="../../instruments/admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
-</tr>
-</tbody>
-</table>

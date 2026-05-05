@@ -1,8 +1,7 @@
 # Responsible Data Use
 
 ## Rationale
-The HEALthy Brain and Child Development (HBCD) study dataset is a large, rich, and complex resource that can drive scientific discovery, provide a foundation for translation and implementation research, and inform development of public policy. To create this dataset, thousands of participants have given generously of their time and their bodies to help advance science. They have trusted us with sensitive information. The use of HBCD data carries ethical responsibilities to minimize risks of harm to participants and to treat them respectfully and justly. One way data users can respect participants’ contributions is by conducting careful, high-quality science.  
-
+The HBCD study dataset is a large, rich, and complex resource that can drive scientific discovery, provide a foundation for translation and implementation research, and inform development of public policy. To create this dataset, thousands of participants have given generously of their time and their bodies to help advance science. They have trusted us with sensitive information. The use of HBCD data carries ethical responsibilities to minimize risks of harm to participants and to treat them respectfully and justly. One way data users can respect participants’ contributions is by conducting careful, high-quality science.  
 
 ## Data Use Acknowledgement
 
@@ -28,7 +27,7 @@ When using HBCD Study data, processes, plans, and/or concepts in a publication, 
 </div>
 
 ## Warnings
-To facilitate responsible data use, table- and variable-level warnings are embedded in the [NBDC Data Dictionary](metadata.md) linking to data and responsible use warnings within the [study instrument documentation](../instruments/index.md). There are 2 types of warnings, both of which may aid in more scientifically rigorous use of HBCD data - click to expand each section below for a description of the function of these warnings:
+To facilitate responsible data use and scientific rigor, the following warnings are provided within the study instrument documentation where applicable (with direct URL links provided in the [NBDC Data Dictionary](metadata.md):
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -48,13 +47,9 @@ To facilitate responsible data use, table- and variable-level warnings are embed
 <p>The purpose of this warning is to improve transparency and offer technical assistance by alerting the user to issues of data quality, providing information on how variables were constructed, providing instructions on how to calculate or analyze specific variables, or providing code (if necessary).</p> 
 </div>
 
-We recommend that all data users:
-
-1.    	Review the data warnings for any variable that you will be downloading and/or using by clicking the link and reviewing the warning associated with that variable.
-2.    	Review any resources and citations included with the warning and follow recommended guidelines.
-3.    	Reach out via the [Help Center in the NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/help-center) if you have questions about the data warning or how to use the data.
+We recommend that all data users review the data warnings for any data you will be downloading and/or using, review included resources and citations, and follow recommended guidelines. Reach out via the [Help Center in the NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/help-center) if you have questions about the data warning or how to use the data.
  
-## Recommendations for Rigorous, Reproducible, and Responsible Data Use
+## Recommendations: Rigorous, Reproducible, and Responsible Data Use
 The HBCD Responsible Use of Data Committee (RUDC) provides the following guidance for researchers planning to use HBCD data:
 
 ### Learn and abide by the provisions of the Data Use Certificate.
@@ -118,7 +113,17 @@ The HBCD Responsible Use of Data Committee (RUDC) provides the following guidanc
 
 <b class="gray-text">Researchers should consider features of the data available in HBCD, the strengths and limitations therein, and follow guidance for rigor and reproducibility.</b> [Sarasoga-Harris and colleagues (2022)](https://doi.org/10.1016/j.dcn.2022.101115) have developed a practical guide for researchers and reviewers, including relevant analytical and methodological considerations.
 
-## References
+<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa fa-circle-info"></i></span>
+  <span class="text-with-link">
+    <span class="text">References</span>
+    <a class="anchor-link" href="#ref" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
 <div class="references">
   <p>Appleseth, H. S., Moyers, S. A., Crockett-Barbera, E. K., Hartwell, M., Arndt, S., & Croff, J. M. (2023). Language considerations for children of parents with substance use disorders. Substance Abuse Treatment, Prevention, and Policy, 18(1), 28. <a href="https://doi.org/10.1186/s13011-023-00536-z">https://doi.org/10.1186/s13011-023-00536-z</a></p>
   <p>Canadian Fetal Alcohol Spectrum Disorder Research Network. (2023). Common messages guide. CanFASD. <a href="https://canfasd.ca/wp-content/uploads/publications/CanFASD-Common-Messages-Guide-2023_FINAL-1.pdf">https://canfasd.ca/wp-content/uploads/publications/CanFASD-Common-Messages-Guide-2023_FINAL-1.pdf</a></p>
@@ -136,4 +141,5 @@ The HBCD Responsible Use of Data Committee (RUDC) provides the following guidanc
   <p>Shi, H. D., McKee, S. A., & Cosgrove, K. P. (2022). Why language matters in alcohol research: Reducing stigma. Alcoholism, Clinical and Experimental Research, 46(6), 1103–1109. <a href="https://doi.org/10.1111/acer.14840">https://doi.org/10.1111/acer.14840</a></p>
   <p>Simmons, C., Conley, M. I., Gee, D. G., Baskin-Sommers, A., Barch, D. M., Hoffman, E. A., Huber, R. S., Iacono, W. G., Nagel, B. J., Palmer, C. E., Sheth, C. S., Sowell, E. R., Thompson, W. K., & Casey, B. J. (2021). Responsible use of open-access developmental data: The adolescent brain cognitive development (ABCD) study. Psychological Science, 32(6), 866–870. <a href="https://doi.org/10.1177/09567976211003564">https://doi.org/10.1177/09567976211003564</a></p>
   <p>Writing respectfully: Person-first and identity-first language. (n.d.). National Institutes of Health (NIH). Retrieved June 5, 2025, from <a href="https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language">https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language</a></p>
+</div>
 </div>
