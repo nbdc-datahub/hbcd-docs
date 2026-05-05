@@ -615,7 +615,9 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 <div class="table-collapsible-content">
 <p><i>See <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#parcellations-and-atlases">Parcellations & Atlases</a> in the XCP-D documentation for more details.</i></p>
 
-<!-- 4P Atlas LUTs: eg https://github.com/PennLINC/AtlasPack/blob/main/atlas-4S156Parcels_dseg.tsv -->
+<!-- 4P Atlas LUTs: eg https://github.com/PennLINC/AtlasPack/blob/main/atlas-4S156Parcels_dseg.tsv 
+Meyers-Labonte LUT is in supp: https://www.biorxiv.org/content/10.1101/2023.11.10.566629v1.supplementary-material
+-->
 
 
 <style>
