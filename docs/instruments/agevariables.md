@@ -16,20 +16,26 @@ The Basic Demographics table contains global, static variables derived across ad
 
 ## Tabulated Instrument & File-Based Data
 
-Age variables describe the child’s age at either instrument administration for tabulated instrument data or data acquisition for file-based data (*MR, EEG, and biosensor data, provided within [session- and scan-level metadata files](../datacuration/file-based-data.md#participant-session-scan-level-data)*). **All variables below refer to the child.**
+**All variables below refer to the child and describe the child’s age at either:**
 
-<span class="pill-badge" style="background-color: pink;">V01</span>&nbsp;= Available Visit V01 only (prenatal) &nbsp;&nbsp;
-<span class="pill-badge">V02+</span>&nbsp;= Available Visit V02 onward (post-birth)
+- **Instrument administration** for tabulated instrument data
+- **Time of scan/data acquisition** for file-based data (MR, EEG, and biosensor data, provided within [session- and scan-level metadata files](../datacuration/file-based-data.md#participant-session-scan-level-data))
+
+---
+<p style="text-align: center;">
+<span class="pill-badge" style="background-color: pink;">V01</span>&nbsp;= Available Visit 1 only (prenatal) &nbsp;&nbsp;
+<span class="pill-badge">V02+</span>&nbsp;= Available Visit 2 onward (post-birth)
 </p>
 
 <!-- TABULATED DATA -->
-#### <i class="fa-solid fa-table header-icon"></i> TABULATED DATA <i>(age at instrument administration)</i>
-<table class="table-no-vertical-lines">
+#### <i class="fa-solid fa-table header-icon"></i> TABULATED DATA 
+<table class="compact-table-no-vertical-lines" style="font-size: 16px;">
 <thead>
 <tr>
 </tr>
 <tr>
-<th>Variable</th>
+<th>Variable Name</th>
+<th>Variable Label</th>
 <th>Description</th>
 <th>Visit</th>
 </tr>
@@ -38,28 +44,30 @@ Age variables describe the child’s age at either instrument administration for
 
 <tr>
 <td>
-Gestational Age<br>at Administration<br>
-<code>gestational_age</code>
+  Gestational Age<br>
+  <span class="subtle">at Administration</span>
 </td>
+<td><code>gestational_age</code></td>
 <td style="word-wrap: break-word; white-space: normal;">
 <ul>
-  <li>Time in completed weeks (rounded down) between <span class="tooltip tooltip-right">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period (estimated as EDD − 280 days)</span></span> and the V01 administration date.</li>
-  <li>Values are expected to vary by ≤4 weeks across protocol elements, except in approved protocol exceptions.</li>
-  <li><b>Note:</b> May be negative if collected prior to the <span class="tooltip">EDD<span class="tooltiptext">Estimated Date of Delivery</span></span>.</li>
+  <li>Number of weeks (rounded down) between <span class="tooltip tooltip-right">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period, estimated as EDD − 280 days</span></span> and the V01 administration date</li>
+  <li>May vary by ≤4 weeks across protocol elements (except for protocol exceptions)</li>
+  <li><i><b>Note:</b> May be negative if collected prior to the <span class="tooltip">EDD<span class="tooltiptext">Estimated Date of Delivery</span></span></i></li>
 </ul>
 </td>
 <td><span class="pill-badge" style="background-color: pink;">V01</span></td>
 </tr>
-
 <tr>
 <td>
-Chronological Age<br>at Administration<br>
-<code>candidate_age</code>
+  Chronological Age<br>
+  <span class="subtle">at Administration</span>
 </td>
+<td><code>candidate_age</code></td>
 <td style="word-wrap: break-word; white-space: normal;">
 <ul>
-  <li>Age in years (3 decimal places) at administration, calculated as: total elapsed days (rounded down) ÷ 365.25.</li>
-  <li>Based on a jittered DOB (±7 days) to protect participant privacy.</li>
+  <li>Age in years (3 decimal places) at administration</li>
+  <li>Calculated as: total elapsed days (rounded down) ÷ 365.25</li>
+  <li>Based on a jittered DOB (±7 days) to protect participant privacy</li>
 </ul>
 </td>
 <td><span class="pill-badge">V02+</span></td>
@@ -67,14 +75,15 @@ Chronological Age<br>at Administration<br>
 
 <tr>
 <td>
-Adjusted Chronological Age<br>at Administration<br>
-<code>adjusted_age</code>
+  Adjusted Chronological Age<br>
+  <span class="subtle">at Administration</span>
 </td>
+<td><code>adjusted_age</code></td>
 <td style="word-wrap: break-word; white-space: normal;">
 <ul>
-  <li>Time in completed weeks (rounded down) between <span class="tooltip">EDD<span class="tooltiptext">Estimated Date of Delivery</span></span> 
-and the administration date.</li>
-  <li>Aligns preterm and full-term infants to a common developmental reference.</li>
+  <li>Number of weeks (rounded down) between <span class="tooltip">EDD<span class="tooltiptext">Estimated Date of Delivery</span></span> 
+and the administration date</li>
+  <li>Aligns preterm and full-term infants to a common developmental reference</li>
 </ul>
 </td>
 <td><span class="pill-badge">V02+</span></td>
@@ -83,13 +92,14 @@ and the administration date.</li>
 </table>
 
 
-#### <i class="fa-solid fa-folder-open header-icon"></i> FILE-BASED DATA <i>(age at data acquisition)</i>
+#### <i class="fa-solid fa-folder-open header-icon"></i> FILE-BASED DATA
 
 <!-- FILE-BASED DATA -->
-<table class="table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines" style="font-size: 16px;">
 <thead>
 <tr>
-<th>Variable</th>
+<th>Variable Name</th>
+<th>Variable Label</th>
 <th>Description</th>
 <th>Visit</th>
 </tr>
@@ -98,20 +108,30 @@ and the administration date.</li>
 
 <tr>
 <td>
-Adjusted Age at Time of Scan<br>
-<code>age_adjusted</code>
+  Adjusted Age
+  <span class="subtle">at Time of Scan</span>
 </td>
-<td style="word-wrap: break-word; white-space: normal;">Time in days between <span class="tooltip">EDD<span class="tooltiptext">Estimated Date of Delivery</span></span> and the acquisition date.
+<td><code>age_adjusted</code></td>
+<td>
+    <ul>
+    <li>Time in days between <span class="tooltip">EDD<span class="tooltiptext">Estimated Date of Delivery</span></span> and the acquisition date</li>
+    </ul>
 </td>
 <td><span class="pill-badge">V02+</span></td>
 </tr>
 
 <tr>
 <td>
-Chronological Age at Time of Scan<br>
-<code>age</code>
+  Chronological Age 
+  <span class="subtle">at Time of Scan</span>
 </td>
-<td style="word-wrap: break-word; white-space: normal;">Age in years (3 decimal places) at acquisition, calculated as: total elapsed days (rounded down) ÷ 365.25. Based on a jittered DOB (±7 days) to protect participant privacy.
+<td><code>age</code></td>
+<td>
+    <ul>
+        <li>Age in years (3 decimal places) at acquisition</li>
+        <li>Calculated as: total elapsed days (rounded down) ÷ 365.25</li>
+        <li>Based on a jittered DOB (±7 days) to protect participant privacy</li>
+    </ul>
 </td>
 <td><span class="pill-badge">V02+</span></td>
 </tr>

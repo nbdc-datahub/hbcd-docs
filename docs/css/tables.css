@@ -462,3 +462,10 @@ th, td {
   margin-right: 0.4em;
   font-size: 1em;
 }
+
+/* SUBTLE class */
+.subtle {
+  font-size: 0.9em;
+  color: #6b7280; /* soft gray */
+  font-weight: 400;
+}
