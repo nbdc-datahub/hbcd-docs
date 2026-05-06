@@ -113,23 +113,23 @@
 <tbody>
   <tr>
     <td><a href="https://hbcdstudy.org/study-protocols/">HBCD Study Protocols</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Available on the main HBCD Study site.</td>
+    <td>Available on the main HBCD Study site.</td>
   </tr>
   <tr>
     <td><a href="../../access/download/#explore-download-hbcd-study-data">Data Dictionary Explorers</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       Data dictionary explorers available through the NBDC Data Access Platform and DEAP show survey questions and response options.
     </td>
   </tr>
   <tr>
     <td><a href="../../instruments/#instruments-by-domain">HBCD Docs</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       Each instrument has a dedicated page on this site with links to source documentation and available surveys. Click instrument names in the domain tables to view their documentation pages.
     </td>
   </tr>
   <tr>
     <td><a href="https://www.sciencedirect.com/special-issue/10VNSS1BBLV">DCN Special Issue on HBCD</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       A collection of articles describing the HBCD study design and protocol development for specific measures.
     </td>
   </tr>

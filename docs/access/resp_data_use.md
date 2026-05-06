@@ -113,13 +113,15 @@ The HBCD Responsible Use of Data Committee (RUDC) provides the following guidanc
 
 <b class="gray-text">Researchers should consider features of the data available in HBCD, the strengths and limitations therein, and follow guidance for rigor and reproducibility.</b> [Sarasoga-Harris and colleagues (2022)](https://doi.org/10.1016/j.dcn.2022.101115) have developed a practical guide for researchers and reviewers, including relevant analytical and methodological considerations.
 
+---
+
 <div id="ref" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-circle-info"></i></span>
+  <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
   <span class="text-with-link">
-    <span class="text">References</span>
-    <a class="anchor-link" href="#ref" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
+  <span class="text">References</span>
+  <a class="anchor-link" href="#ref" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
   </span>
   <span class="arrow">▸</span>
 </div>

@@ -16,7 +16,7 @@ derivatives-quick-start-guide
  </thead>
 <tbody>
 <tr>
-    <td style="word-wrap: break-word; white-space: normal;">Brain volumes computed for segmented ROIs in native T1w/T2w space</td>
+    <td>Brain volumes computed for segmented ROIs in native T1w/T2w space</td>
     <td><code><span class="subses">SUBSES</span>_space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv</code></td>
     <td>BIBSNet</td>
 </tr>

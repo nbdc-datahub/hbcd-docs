@@ -1,41 +1,51 @@
 # Infant Nutrition Questionnaire
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>ph_cg_inq</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Nutrition</div>
-  </div>
-</div>
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
 
----------------------------------------------
+<tr>
+  <td><b>Table Name</b></td>
+  <td><code>ph_cg_inq</code></td>
+</tr>
+
+<tr>
+  <td><b>Construct</b></td>
+  <td>Nutrition</td>
+</tr>
+
+<tr>
+  <td><b>Study Visit(s)</b></td>
+  <td>V05</td>
+</tr>
+
+<tr>
+  <td><b>Administration</b></td>
+  <td>
+    <b>Child-specific</b>: Yes<br>
+    <b>Respondent</b>: Birth Parent or Primary Caregiver on Child<br>
+    <b>Method</b>: HBCD Study staff or self-administered, in person or remote (10 min estimated duration)
+  </td>
+</tr>
+
+<tr>
+  <td><b>Quality Control</b></td>
+  <td>
+    <ul>
+      <li>Monitoring of data dashboard for variable missingness</li>
+      <li>Detection of possible coding errors</li>
+      <li>Review of data consistency</li>
+    </ul>
+  </td>
+</tr>
+
+</tbody>
+</table>
+
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Birth Parent or Primary Caregiver on Child</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff or self administered, in person or remote</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V05</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>10 minutes</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Monitor data dashboard for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>     
-</tbody>
-</table>
 
 ## Instrument Details
 

@@ -66,11 +66,11 @@ Details of individual naming components are as follows:
 <tbody>
 <tr>
   <td><code>domain</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Data domain, e.g. <code>bio</code> (Biospecimens), <code>img</code> (Imaging) - see <a href="#values-key">values key</a></td>
+  <td>Data domain, e.g. <code>bio</code> (Biospecimens), <code>img</code> (Imaging) - see <a href="#values-key">values key</a></td>
 </tr>
 <tr>
   <td><code>source</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Can either be the subject/who the protocol element is about <b>OR</b> respondent/who completed the assessment. Examples include <code>cg</code> (Caregiver), <code>ch</code> (Child), etc. - see <a href="#values-key">values key</a></td>
+  <td>Can either be the subject/who the protocol element is about <b>OR</b> respondent/who completed the assessment. Examples include <code>cg</code> (Caregiver), <code>ch</code> (Child), etc. - see <a href="#values-key">values key</a></td>
 </tr>
 <tr>
 <td><b><code>table</code></b></td>
@@ -78,12 +78,12 @@ Details of individual naming components are as follows:
 </tr>
 <tr>
 <td><b><code><span style="color: teal;">{scale}</span></code></b></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
 Name of scale within instrument/protocol element for instruments with multiple scales (not including <a href="#administrative-summary-score-variables">administrative/summary score variables</a>). For example, the IBQ-R (VSF)+BI includes <a href="../../instruments/bcgi/ibqr/#instrument-details" target="_blank">4 scales</a>, each indicated by a separate <i>scale</i> component (e.g. Behavioral Inhibition scale annotated by a value of <code><span style="color: teal;">beh</span></code> in variable name <code>mh_cg_ibqr_<span style="color: teal;">beh</span>_001</code>).</td>
 </tr>
 <tr>
 <td><b><code>item</code></b></td>
-<td style="word-wrap: break-word; white-space: normal;">Will either be an item number corresponding to individual questions in a scale (e.g. <code>001</code>) <b>or</b> admin field/score label for administrative/summary score variables - <a href="#administrative-summary-score-variables"><i>see details</i></a></td>
+<td>Will either be an item number corresponding to individual questions in a scale (e.g. <code>001</code>) <b>or</b> admin field/score label for administrative/summary score variables - <a href="#administrative-summary-score-variables"><i>see details</i></a></td>
 </tr>
 </tbody>
 </table>

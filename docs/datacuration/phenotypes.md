@@ -26,33 +26,12 @@ Key features of tabulated data include:
 
 ## Table Organization
 
-Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files/phenotypic-and-assessment-data.html) standard, each table includes **identifier columns** for participant ID, visit number, and run number (when applicable) that allow you to link information between tables:
+Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files/phenotypic-and-assessment-data.html) standard, each table includes unique identifier columns for the following items that allow you to link information between tables:
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <th>Column Name</th>
-  <th>Definition</th>
-  <th style="width: 20%;">Example</th>
-</thead>
-<tbody>
-<tr>
-  <td><b><code>participant_id</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Unique identifier for a participant</td>
-  <td><code>sub-0123456789</code></td>
-</tr>
-<tr>
-  <td><b><code>session_id</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Unique identifier for session/visit number</td>
-  <td><code>ses-V01</code></td>
-</tr>
-<tr>
-  <td><b><code>run_id</code></b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Unique identifier for run number - <i>only present in tables derived from file-based data with multiple runs, e.g. for MRI acquisition</i></td>
-  <td><code>1</code></td>
-</tr>
-</tbody>
-</table>
-
+ - Participant ID (<code>participant_id</code>)
+ - Session/visit number (<code>session_id</code>)
+ - Run number (<code>run_id</code>) - only as applicable, e.g., for MRI where multiple runs are acquired 
+ 
 <div id="study-design-logic-child-centric-data-structure" class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
@@ -63,7 +42,7 @@ Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modalit
   </span>
 </div>
 <div class="notification-static-content">
-<p>The HBCD Study organizes data around the Child ID as the central key, <strong>i.e. a caregiver and their child share the same participant ID.</strong> All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by:</p>
+<p>The HBCD Study organizes data around the Child ID as the central key, i.e. a caregiver and their child share the same participant ID. All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by:</p>
 <ul>
 <li><strong>Simplifying child-focused analysis</strong>: Researchers can track each child’s data over time without remapping caregiver information.</li>
 <li><strong>Handling multi-birth cases cleanly</strong>: When a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.</li>
@@ -91,7 +70,7 @@ Tabulated data are provided in multiple formats to support a range of tools and 
   <tbody>
     <tr>
       <td><b>TSV/CSV</b></td>
-      <td style="word-wrap: break-word; white-space: normal;">Quick inspection, spreadsheet use</td>
+      <td>Quick inspection, spreadsheet use</td>
       <td>
         <i style="color: blue;" class="fas fa-check"></i> Easy to open<br>
         <i style="color: blue;" class="fas fa-check"></i> Widely compatible format
@@ -104,7 +83,7 @@ Tabulated data are provided in multiple formats to support a range of tools and 
     </tr>
     <tr>
       <td><b>Parquet</b></td>
-      <td style="word-wrap: break-word; white-space: normal;">Analysis in Python/R for large data</td>
+      <td>Analysis in Python/R for large data</td>
       <td>
         <i style="color: blue;" class="fas fa-check"></i> Optimized for large-scale data<br>
         <i style="color: blue;" class="fas fa-check"></i> Fast loading and smaller files<br>
@@ -200,7 +179,7 @@ The following domains/instruments have additional unique shadow matrix values us
 <tbody>
 <tr>
 <td><strong>BioSpecimens (<i>All</i>)</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
   <ul>
     <li><i>"Please refer to corresponding categorical field for more details"</i></li>
   </ul>
@@ -208,7 +187,7 @@ The following domains/instruments have additional unique shadow matrix values us
 </tr>
 <tr>
 <td><strong>Basic Demographics</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
   <ul>
     <li><i>"Child's DOB not reported or available for participant"</i> [<code>{gestational|mother}_age_delivery</code>]</li>
     <li><i>"Missing Information From Ripple"</i> [<a href="../../instruments/demo/basicdemo/#acs-derived-variables" target="_blank">ACS-derived fields</a>]</li>
@@ -217,7 +196,7 @@ The following domains/instruments have additional unique shadow matrix values us
 </tr>
 <tr>
 <td><strong>Visit Level Data</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
   <ul>
     <li><i>"Data not available for participants at this timepoint"</i></li>
     <li><i>"No candidate age for V01"</i> [<code>candidate_age</code>]</li>

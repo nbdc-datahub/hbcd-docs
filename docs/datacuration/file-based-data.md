@@ -66,17 +66,17 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 <tr>
   <td>Participant</td>
   <td><code>participants.tsv</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Basic demographic and participant information (e.g., sex)</td>
+  <td>Basic demographic and participant information (e.g., sex)</td>
 </tr>
 <tr>
   <td>Session</td>
   <td><code>sub-{ID}_sessions.tsv</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Session information (e.g., collection site, age at each session, head size)</td>
+  <td>Session information (e.g., collection site, age at each session, head size)</td>
 </tr>
 <tr>
   <td>Scan</td>
   <td><code>sub-{ID}_ses-{V0X}_scans.tsv</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Per-scan information (e.g., age at scan, <a href="../../instruments/mri/qc/#location-of-qc-results-in-release" target="_blank">raw data QC metrics</a>, scanner info)</td>
+  <td>Per-scan information (e.g., age at scan, <a href="../../instruments/mri/qc/#location-of-qc-results-in-release" target="_blank">raw data QC metrics</a>, scanner info)</td>
 </tr>
 </tbody>
 </table>
