@@ -83,19 +83,19 @@ There are four options the Study Navigator can select to indicate actions taken,
 <tbody>
 <tr>
   <td><b>Referrals</b></td>
-    <td style="word-wrap: break-word; white-space: normal;">When the navigator initiates a connection between individuals/entities such as a community service, clinical service, or research team member(s). The navigator is contacting this individual/entity to assist the participant in accessing additional support and/or services that they need. </td>
+    <td>When the navigator initiates a connection between individuals/entities such as a community service, clinical service, or research team member(s). The navigator is contacting this individual/entity to assist the participant in accessing additional support and/or services that they need. </td>
 </tr>
 <tr>
   <td><b>Resources</b></td>
-    <td style="word-wrap: break-word; white-space: normal;">The navigator shares information (fliers, brochures, websites, etc.) with the participant. The participant can use this content to obtain additional information, support, or services they need.</td>
+    <td>The navigator shares information (fliers, brochures, websites, etc.) with the participant. The participant can use this content to obtain additional information, support, or services they need.</td>
 </tr>
 <tr>
   <td><b>Discussion</b></td>
-    <td style="word-wrap: break-word; white-space: normal;">The participant may simply ask the navigator to listen and/or to talk with them about a sensitive matter(s) relevant to the research study or in their personal lives. When appropriate, navigators are responsible for gently reminding participants that they are mandatory reporters. Discussion may be the first step to making a referral or providing a resource.</td>
+    <td>The participant may simply ask the navigator to listen and/or to talk with them about a sensitive matter(s) relevant to the research study or in their personal lives. When appropriate, navigators are responsible for gently reminding participants that they are mandatory reporters. Discussion may be the first step to making a referral or providing a resource.</td>
 </tr>
 <tr>
   <td><b>Other</b></td>
-    <td style="word-wrap: break-word; white-space: normal;">Any other support the navigator provided that cannot be categorized as a referral, resource, or discussion.</td>
+    <td>Any other support the navigator provided that cannot be categorized as a referral, resource, or discussion.</td>
 </tr>
 </tbody>
 </table>
@@ -159,7 +159,7 @@ There are four options the Study Navigator can select to indicate actions taken,
     <tr>
       <td><code>WHY_UNABLE_TO_CONTACT</code></td>
       <td>Reason if unable to contact</td>
-      <td style="word-wrap: break-word; white-space: normal;">
+      <td>
         declined_to_continue; did_not_present; did_not_respond_to_contact;
         other; participant_left_b4_contact; prefer_to_complete_later; unable_to_complete_due_to_circumstances
       </td>
@@ -233,7 +233,7 @@ There are four options the Study Navigator can select to indicate actions taken,
     <tr>
       <td><code>BARRIERS_TO_STUDY_ASSESSMENT_<br>CHECKBOXES_PART_2</code></td>
       <td>General</td>
-      <td style="word-wrap: break-word; white-space: normal;">
+      <td>
         childcare; concerns_about_confidentiality; family_instability;
         lack_of_time; transportation; other
       </td>
@@ -241,7 +241,7 @@ There are four options the Study Navigator can select to indicate actions taken,
     <tr>
       <td><code>PREGNANCY_AND_LABOR_CHECKBOXES</code></td>
       <td>Pregnancy & labor</td>
-      <td style="word-wrap: break-word; white-space: normal;">
+      <td>
         newborn_and_infant_care; labor_birth;
         maternal_perinatal_health; postpartum_care; other
       </td>

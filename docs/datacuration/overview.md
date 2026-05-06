@@ -102,7 +102,7 @@ Processing pipelines for imaging, EEG, and wearable sensor recordings output der
   </tr>
   <tr>
     <td><a href="../file-based-data/#concatenated-data"><strong>Concatenated Data</strong></a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Participant-level files aggregated across all subjects for select measures, e.g. <a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
+    <td>Participant-level files aggregated across all subjects for select measures, e.g. <a href="../../instruments/biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
   </tr>
   </tbody>
 </table> -->

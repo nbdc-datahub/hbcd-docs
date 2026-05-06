@@ -7,8 +7,8 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    word-wrap: break-word;
-    white-space: normal;
+    word-wrap: break-word !important;
+    white-space: normal !important;
 }
 .table-banner {
   display: flex;

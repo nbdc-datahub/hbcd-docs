@@ -78,20 +78,20 @@ Consistent data collection is essential to reproducible longitudinal research, p
 </tr> </thead>
 <tbody>
 <tr><td>1.0</td> 
-<td style="word-wrap: break-word; white-space: normal;"><i>How many hours do you sleep on a typical night?</i></td>
-<td style="word-wrap: break-word; white-space: normal;">Free-text numeric entry</td>
+<td><i>How many hours do you sleep on a typical night?</i></td>
+<td>Free-text numeric entry</td>
 <td>-</td>
 </tr>
 <tr>
 <td>2.0</td>
-<td style="word-wrap: break-word; white-space: normal;"><i>On average, how many hours of sleep do you get per night?</i></td>
-<td style="word-wrap: break-word; white-space: normal;">Dropdown menu options (e.g. <i>Less than 5, 5-6, etc.</i>)</td>
-<td style="word-wrap: break-word; white-space: normal;">1.0 → 2.0: Categorical response options reduce variability, but lose detail</td>
+<td><i>On average, how many hours of sleep do you get per night?</i></td>
+<td>Dropdown menu options (e.g. <i>Less than 5, 5-6, etc.</i>)</td>
+<td>1.0 → 2.0: Categorical response options reduce variability, but lose detail</td>
 </tr>
 <tr> <td>3.0</td>
-<td style="word-wrap: break-word; white-space: normal;"><i>On average, how many hours of sleep do you get in a 24-hour period, including naps?</i></td>
-<td style="word-wrap: break-word; white-space: normal;">Same as Release 2.0</td> 
-<td style="word-wrap: break-word; white-space: normal;">2.0 → 3.0: Adding naps changes the construct, affecting cross-release comparability</td>
+<td><i>On average, how many hours of sleep do you get in a 24-hour period, including naps?</i></td>
+<td>Same as Release 2.0</td> 
+<td>2.0 → 3.0: Adding naps changes the construct, affecting cross-release comparability</td>
 </tbody> </table> 
 </div>
 </p>

@@ -127,7 +127,7 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 <tr><td>ecPROMIS CH-CG Relationship <b>[1-5 year]</b></td><td>Child-Caregiver Interaction</td></tr>
 <tr><td>ecPROMIS Peer Relationships</td><td>Peer Relationships</td></tr>
 <tr><td>ecPROMIS Self-Regulation</td><td>Self-Regulation and Flexibility</td></tr>
-<tr><td>FAD (GF6+)</td><td style="word-wrap: break-word; white-space: normal;">Global Functioning of Family Unit</td></tr>
+<tr><td>FAD (GF6+)</td><td>Global Functioning of Family Unit</td></tr>
 <tr><td>ECBQ (VSF)+BI</td><td>Early Childhood Behavior + Inhibition</td></tr>
 <tr><td>MAPS-TL <b>[Toddlerhood & Preschool]</td> <td>Irritability</td></tr>
 <tr>
@@ -230,7 +230,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 <tr>
   <td style="text-align: center;">N/A</td>
   <td>General</td>
-  <td style="word-wrap: break-word; white-space: normal;"><b>[1]</b> Resolved lower floating-point value precision in Parquet files by creating all data available in the release in one step (<code>type_data</code>=<i>doubles</i>)</td>
+  <td><b>[1]</b> Resolved lower floating-point value precision in Parquet files by creating all data available in the release in one step (<code>type_data</code>=<i>doubles</i>)</td>
 </tr>
 <tr>
   <td rowspan="6" style="text-align: center;"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></td>
@@ -238,67 +238,67 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
   <td><b>[1]</b> Removal of invalid response option 2 = <i>Hawaiian</i> from Mother Race (<code>screen_mother_race</code>).</td>
 </tr>
 <tr>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   <b>[2]</b> Removed Child Multi-Race (<code>child_ethnoracial_acs_by_multi_race</code>) variable due to duplicated coding to Child Multi-Ethnicity (<code>child_ethnoracial_acs_by_multi_ethnicity</code>).
   </td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
 <b>[3]</b> Removed Child Multi-Ethnicity V01 data.
 </td>
 </tr>
 <tr>
 <td rowspan="3">Visit Level Data<br><code>par_visit_data</code></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
   <b>[1]</b> Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) were assigned a sentinel withdrawal date (<code>participant_withdrawal_date</code>) of <code>12/26/1999</code>. These values were updated to null for clarity and consistency.
 </td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
 <b>[2]</b> Removed V02 Biospec substance use flags <a href="../../instruments/demo/visitinfo/#substance-use-flags">derived from USDTL urine toxicology</a> (<code>su_flag_bio_*</code>) (urine samples not collected at V02).
 </td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
 <b>[3]</b> Corrected values (replaced 'no' with 'null') of the TLFB substance use flags (<code>su_flag_tlfb_*</code>) for participants without a V02 visit.
 </td>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></td>
 <td>Urine toxicology</td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   Restored 'missing' values for urinary cotinine (<code>bio_bm_biosample_urine__results_results_bio_c_cot_u</code>) erroneously set to <code>0</code> (N = 18).
 </td>
 </tr>
 <tr>
   <td rowspan="2" style="text-align: center;"><a href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></td>
   <td rowspan="2">SPM-2<br><code>ncl_cg_spm2__inf</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   <b>[1]</b> Added age fields - <code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>.
 </td>
 </tr>
 <tr>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   <b>[2]</b> Added Status Scores that were missing for all but one subscale.
 </td>
 </tr>
 <tr>
   <td rowspan="2" style="text-align: center;"><a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a></td>
   <td>APA 1/2<br><code>pex_bm_apa_anger_*</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   Added missing T-scores and total scores to Anger subscale (remaining subscales intact).
 </td>
 </tr>
 <tr>
   <td>TLFB<br><code>pex_ch_tlfb</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   Added age variable fields - <code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>.
 </td>
 </tr>
 <tr>
   <td style="text-align: center;"><a href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a></td>
   <td>eHITS<br><code>sed_bm_ehits</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   Corrected calculation for the two eHits "score" variables (<code>score</code> & <code>total_score</code>).
 </td>
 </tr>
@@ -350,20 +350,20 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 <tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-id-card" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Demographics</span></span></td>
   <td>Basic Demographics<br><code>sed_basic_demographics</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   Reviewed scoring for AOU and ACS EthnoRacial fields. The multiracial options for <strong>ACS – Child – Multi Race</strong> (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.</td>
 </tr>
 <tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-vial" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Biospecimen & Omics</span></span></td>
   <td>Nails & Urine Toxicology<br><code>bio_bm_biosample_*</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   Removed 'Specimen ID’ fields from all Biospecimen tables and time from dates in 'Nails Results.'
 </td>
 </tr>
 <tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa-solid fa-baby" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Pregnancy Exposure, Including Substance Use</span></span></td>
   <td>Pregnancy & Infant Health<br><code>pex_bm_health*</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   Medications are now categorized into more detailed components based on <strong>RxNorm IDs</strong> to improve clarity and enable more granular analyses.
   Additional columns specify: <em>Brand Name</em>, <em>Ingredient</em>, <em>Precise Ingredient</em>, and <em>Multiple Active Ingredients</em>.
 </td>
@@ -371,14 +371,14 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 <tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-city" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Social & Environmental Determinants</span></span></td>
   <td>V01 Demographics<br><code>sed_bm_demo</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   Added <strong>Birth Parent Sexual Orientation</strong> variable.
 </td>
 </tr>
 <tr>
   <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
   <td>BrainSwipes QC<br><code>img_brainswipes*</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
   Added QC results missing from R1.0 (N=8).
 </td>
 </tr>
@@ -460,22 +460,22 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
     Missing income fields for subset of subjects now added.</td>
   </tr>  
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
     <strong>Duplicate Options for 'Mother Race' Variable</strong> (<code>screen_mother_race</code>)<br>
     Option #3, a duplicate of option #5 for 'Black African American,' now removed.</td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
     <strong>Gestational Age at Delivery and Mother’s Age at Delivery</strong> (<code>&lt;gestational|mother&gt;_age_delivery</code>)<br>
     Data from deliveries that occurred after the R1.0 cutoff date of 2025-07-01 (and therefore did not undergo QC) now removed so that only eligible participants with V01 + V02 or V03 are retained.</td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
     <strong>Mother Ethnicity</strong> (<code>screen_mother_ethnicity</code>)<br>
     Incorrectly documented as a 4-level variable in the data dictionary, with additional values of 0 and 1 that were not used. The data now only includes the valid levels: 2 (Hispanic) and 3 (Non-Hispanic).</td>
   </tr>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
     <strong>Mother Race & Ethnicity</strong> (<code>rc_mother_ethnoracial_aou_race_ethnicity</code>)<br>
     Addition of formerly missing response option, "None of these fully describe me/Other."</td>
   </tr>
@@ -485,7 +485,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       Addition of missing <strong>Substance Use flags</strong> (<i><a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a></i>) for alcohol, opioid, cannabis, and nicotine.</td>
   </tr>  
 </tbody>
@@ -515,17 +515,17 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       <strong>Corrected Specific Gravity Variable</strong><br>
       Values for the 'Urine Specific Gravity' field (<code>bio_spg_u</code>) have been set to the correct floating point value for the appropriate thousandths format (were previously set to '1' and data type to 'integer'). The corrected variable can now be used for urinary concentration corrections.</td>
   </tr>  
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       <strong>Toxicology (Cotinine)</strong><br>
       All negative values for urinary toxicology results field <code>bio_c_cot_u</code> are now set to ‘0’ (as negative values are not biologically plausible).</td>
   </tr> 
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       <strong>Corrected Negative Gestational Ages</strong><br>
       The negative gestational ages for 2 participants in the Urine dataset have been corrected.</td>
   </tr>  
@@ -547,7 +547,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
     The <strong>HBCD-MADE</strong> resting-state derivative files (<code>processed_data/*_task-RS_powerSummaryStats.csv</code>) have been removed due to errors caused by a previous pipeline bug. These files should not be used for analysis. Users can regenerate the corresponding summary statistics using the scripts provided in  <a href="https://hbcd-eeg-utilities.readthedocs.io/en/stable/">HBCD EEG Utilities</a>.
     </td>
   </tr>  
@@ -569,7 +569,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       The <strong>SPM-2 (<code>ncl_cg_spm2__inf</code>)</strong> now includes <strong>verified t-scores</strong>, originally excluded due to errors in conversion from raw scores.</td>
   </tr>  
 </tbody>
@@ -590,30 +590,30 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       <strong>Health V2- Infancy</strong> (<code>pex_bm_healthv2_inf</code>)<br>
       Erroneously included descriptive fields <code>001__00</code> - <code>005__00</code> now removed.</td>
   </tr>  
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       <strong>APA 1/2 (<code>pex_bm_apa</code>)</strong><br>
       Summary scores and corresponding T-scores are now provided, where appropriate, for Level 2 domains.
     </td>
   </tr>  
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       <strong>EPDS (<code>pex_bm_epds</code>)</strong><br>
       Duplicate data for each item (e.g., <code>epds_001</code> and <code>epds_001_01</code>) now removed.</td>
   </tr>  
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       <strong>TLFB (<code>pex_ch_tlfb</code>)</strong><br>
       <strong>#1 Corrected logic for TLFB substance use flags</strong><br>
       Previously, only the alcohol use flag applied the intended criteria (use during or after pregnancy across V01–V02). All substance use flags now follow this logic.
       </td>
   </tr>    
   <tr>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
       <strong>#2 Age Variables Removed</strong><br>
       TLFB age variable fields (<i>gestational_age</i>, <i>adjusted_age</i>, and <i>candidate_age</i>) are now removed due to incorrect values.</td>
   </tr>  

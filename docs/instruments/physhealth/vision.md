@@ -1,42 +1,51 @@
 # VS100 Spot Vision Screener 
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>ph_ch_vs</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Vision</div>
-  </div>
-</div>
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
 
----------------------------------------------
+<tr>
+  <td><b>Table Name</b></td>
+  <td><code>ph_ch_vs</code></td>
+</tr>
+
+<tr>
+  <td><b>Construct</b></td>
+  <td>Vision</td>
+</tr>
+
+<tr>
+  <td><b>Study Visit(s)</b></td>
+  <td>V04, V06, V08</td>
+</tr>
+
+<tr>
+  <td><b>Administration</b></td>
+  <td>
+    <b>Child-specific</b>: Yes<br>
+    <b>Respondent</b>: Child on Self<br>
+    <b>Method</b>: HBCD Study staff, in person (Few seconds estimated duration)<br>
+    <i>Only administered if parent responds NO to eligibility question (“Have you been told that your child cannot see at all?” (i.e., cannot see shadows or distinguish light and dark)</i>
+  </td>
+</tr>
+
+<tr>
+  <td><b>Quality Control</b></td>
+    <td>
+    <ul>
+      <li>Data are reviewed to verify that sites obtain a valid screening outcome (PASS or REFER).</li>
+      <li>The device does not generate results if it is used incorrectly.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+
+
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Child on Self</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff, in person.<br>
-<i>Note: Before administration of the vision screener, one eligibility question is asked of the parent: “Have you been told that your child cannot see at all?” (i.e., cannot see shadows or distinguish light and dark). If the parent answers YES, the vision screener is not administered.</i></td></tr>
-<tr><td><b>Visits</b></td>
-<td>V04, V06, V08</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>A few seconds</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Data are reviewed to verify that sites obtain a valid screening outcome (PASS or REFER). The device does not generate results if it is used incorrectly.</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 
@@ -45,13 +54,7 @@ The **VS100 Spot Vision Screener** is used to screen for six vision and oculomot
  - **PASS**: All measured domains fall within age-appropriate thresholds
  - **REFER / COMPLETE EYE EXAM RECOMMENDED**: One or more domains falls outside acceptable age-appropriate thresholds
 
-**The current release includes completion status and overall screening results.** Release data will eventually include all information recorded by the Vision Screener for each of the six domains, including:
-
->**(1)** the overall screening result (PASS/REFER) and       
-**(2)** all measurements used to assess vision performance and determine the screening result.
-
-## Resources
- - <a href="https://www.hillrom.com/en/products/spot-vision-screener/">https://www.hillrom.com/en/products/spot-vision-screener/</a>
+The current release includes completion status and overall screening results. Release data will eventually include all information recorded by the Vision Screener for each of the six domains, including both the overall screening result (PASS/REFER) **and** all measurements used to assess vision performance and determine the screening result.
 
 ## References
 <div class="references">
