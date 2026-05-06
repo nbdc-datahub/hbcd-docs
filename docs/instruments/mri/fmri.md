@@ -198,6 +198,7 @@ hbcd/
 <span class="hashtag"># Label Values Legend</span>
 <span class="subses">SUBSES</span>: sub-{ID}_ses-<span class="label">{V0X}</span>  
 <span class="placeholder">HASH</span>: 0f306a2f | 2afa9081  
+<span class="placeholder">METRIC</span>: curv | sulc | thickness      
 <span class="placeholder">MNI</span>: MNI152NLin6Asym_res-2 | MNIInfant+1  
 <span class="placeholder">SPACE</span>: MNI152NLin6Asym_res-2 | T2w  
 <span class="placeholder">SURF</span>: midthickness | pial | white  
