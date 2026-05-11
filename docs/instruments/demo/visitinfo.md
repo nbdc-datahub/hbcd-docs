@@ -243,7 +243,7 @@ The downloadable participant list maps each **Main Child** to their correspondin
 </table>
 
 
- ## References
+## References
 
 <div class="references">
     <p>Gurka, K. K., Burris, H. H., Ciciolla, L., Coles, C. D., Massey, S. H., Newman, S., Rajagopalan, V., Smith, L. M., Zilverstand, A., Bandoli, G., & HBCD Pregnancy Exposures, Including Substances Workgroup. (2025). Assessment of maternal health and behavior during pregnancy in the HEALthy Brain and Child Development Study: Rationale and approach. <em>Developmental Cognitive Neuroscience</em>, 71(101494), 101494. <a href="https://doi.org/10.1016/j.dcn.2024.101494">https://doi.org/10.1016/j.dcn.2024.101494</a></p>
@@ -330,4 +330,4 @@ The downloadable participant list maps each **Main Child** to their correspondin
 <td>Substance Use in TLFB instrument from Biological Mother - stimulant</td>
 </tr>
 </tbody>
-</table> -->
+</table> 
