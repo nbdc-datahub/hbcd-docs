@@ -6,21 +6,15 @@
 }
 </style>
 
-
 # Basic Demographics Information 
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>sed_basic_demographics</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Derived Demographics</div>
-  </div>
-</div>
+Basic Demographics (<code>sed_basic_demographics</code>) is a **derived measure** with information computed from the following sources: 
 
----------------------------------------------
+- **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
+- **Demographics** instruments (Social & Environmental Determinants), including <a href="../../SED/demo-cg/" target="_blank">Adult</a> (`sed_bm_demo`) and <a href="../../SED/demo-ch/" target="_blank">Child</a> (`sed_ch_demo`)
+
+Basic Demographics includes global, visit-agnostic variables that do not change over time and should be consistent across all visits for the adult/caregiver and beginning at Visit 2 for the child (post-birth). Note that if only V01 data for a given adult participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about their child will be missing, as the child is not born until after the V01 visit.
+
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -42,35 +36,17 @@
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
 
-## Details
+---
 
-<p>
-<div class="table-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">Basic Demographics is <a href="../../../access/metadata/#type_var" target="_blank">derived data</a>: see <a href="../../SED/demo-cg/" target="_blank">Demographics</a>/<a href="../../SED/demo-ch/" target="_blank">Child Demographics</a> for full demographic information.</span>
-</div>
-</p>
-
-Basic Demographics is a **derived measure** with information computed from the following sources: 
-
-- **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
-- **Demographics** instruments (Social & Environmental Determinants), including <a href="../../SED/demo-cg/" target="_blank">Adult</a> (`sed_bm_demo`) and <a href="../../SED/demo-ch/" target="_blank">Child</a> (`sed_ch_demo`)
-
-Basic Demographics are **global, visit-agnostic variables** that do not change over time and should be present and consistent across all Visits (V01, V02, etc.) for the adult/caregiver and beginning at Visit V02 for the child (post-birth). Note that if only V01 data for a given adult participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about their child will be missing, as the child is not born until after the V01 visit.
+<p style="text-align: center; margin-bottom: 0; padding-bottom: 0;">
+<span class="pill-badge" style="font-size: 0.8em;">V02+</span>&nbsp;= Child-specific, available Visit 2 onward (post-birth)</p>
 
 ### Age Variables 
 
-<p style="font-size: 0.9em; color: #555;">
-<i class="fa-solid fa-baby"></i>&nbsp;= Variable refers to the child &nbsp;&nbsp;
-<span class="pill-badge">V02+</span>&nbsp;= Available beginning Visit V02 (post-birth)
-</p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-<tfoot><tr><td colspan="3" style="word-wrap: break-word; white-space: normal; padding: 10px 8px 6px 8px;">
-  <sup><b>1</b></sup> Years are to 2 decimal places, calculated by dividing the number of whole months (rounded down) by 12
-  </td></tr></tfoot>
+<table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="background-color: #f8f9f9;">
-  <th>Construct</th>
+<tr>
+  <th style="width: 25%;">Construct</th>
   <th>Variable Name</th>
   <th>Description</th>
 </tr>
@@ -79,40 +55,54 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 <tr>
   <td>Maternal Age at V01</td>
   <td><code>mother_age_v01</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at scheduled date of the V01 visit. Derived from administrative records.</td>
+  <td>
+    <ul>
+      <li>Birth parent's age in years (2 decimal places) at V01 visit</li>
+      <li>Calculated by dividing the number of whole months (rounded down) by 12</li>
+      <li>Derived from administrative records</li>
+    </ul>
+  </td>
 </tr>
 <tr>
   <td>Maternal Age at Delivery</td>
   <td><code>mother_age_delivery</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Birth parent's age in years<sup><b>1</b></sup> at time of their child's delivery. Derived from administrative records.</td>
+  <td>
+    <ul>
+      <li>Birth parent's age in years (2 decimal places) at time of their child's delivery</li>
+      <li>Calculated by dividing the number of whole months (rounded down) by 12</li>
+      <li>Derived from administrative records</li>
+    </ul>
+  </td>
 </tr>
 <tr>
-  <td><i class="fa-solid fa-baby"></i>&nbsp;Gestational age at delivery</td>
+<td style="white-space: nowrap;">Gestational Age at Delivery <span class="pill-badge" style="font-size: 0.8em;">V02+</span></td>
   <td><code>gestational_age_delivery</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Time elapsed (whole weeks, rounded down) between the birth parent's <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB. Derived from administrative records. <span class="pill-badge">V02+</span></td>
+  <td>
+    <ul>
+      <li>Age of child at delivery</li>
+      <li>Calculated as: total elapsed weeks (rounded down) between <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB</li>
+      <li>Derived from administrative records</li>
+    </ul>
+  </td>
 </tr>
 </tbody>
 </table>
 
 ### Sex & Other Variables
 
-<p style="font-size: 0.9em; color: #555;">
-<i class="fa-solid fa-baby"></i>&nbsp;= Variable refers to the child &nbsp;&nbsp;
-<span class="pill-badge">V02+</span>&nbsp;= Available beginning Visit V02 (post-birth)
-</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
 <thead>
-<tr style="background-color: #f8f9f9;">
-  <th style="width: 20%;">Construct</th>
-  <th style="width: 20%;">Variable Name</th>
-  <th style="width: 60%;">Description / Details</th>
+<tr>
+  <th>Construct</th>
+  <th>Variable Name</th>
+  <th>Description / Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td><i class="fa-solid fa-baby"></i>&nbsp;Child sex</td>
+  <td>Child sex &nbsp; <span class="pill-badge" style="font-size: 0.8em;">V02+</span></td>
   <td><code>sex</code></td>
-  <td>Derived from administrative records. <span class="pill-badge">V02+</span></td>
+  <td>Derived from administrative records.</td>
 </tr>
 <tr>
   <td>Mother education</td>
@@ -136,37 +126,32 @@ Basic Demographics are **global, visit-agnostic variables** that do not change o
 
 Race and ethnicity variables are either computed from administrative records collected during screening using the American Community Survey ([ACS](https://www.census.gov/programs-surveys/acs.html)), or a single All of Us (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">AOU</a>) race and ethnicity item collected as part of the <a href="../../SED/demo-cg/" target="_blank">Demographics</a> instrument.
 
-<p style="font-size: 0.9em; color: #555;">
-<i class="fa-solid fa-baby"></i>&nbsp;= Variable refers to the child &nbsp;&nbsp;
-<span class="pill-badge">V02+</span>&nbsp;= Available beginning Visit V02 (post-birth)
-</p>
-
 #### ACS-Derived Variables
 *Race and ethnicity variables computed from administrative records collected during screening using the [ACS](https://www.census.gov/programs-surveys/acs.html).*
 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<table class="compact-table-no-vertical-lines">
 <thead>
-  <tr style="background-color: #f8f9f9;">
-    <th style="width: 20%;">Construct</th>
-    <th style="width: 20%;">Variable Name</th>
-    <th style="width: 60%;">Description / Details</th>
+  <tr>
+    <th>Construct</th>
+    <th>Variable Name</th>
+    <th>Description</th>
   </tr>
 </thead>
 <tbody>
-<tr style="background-color: #ffffff;">
-  <td><i class="fa-solid fa-baby"></i>&nbsp;Child ethnicity</td>
+<tr>
+  <td>Child ethnicity &nbsp; <span class="pill-badge" style="font-size: 0.8em;">V02+</span></td>
   <td><code>child_ethnicity</code></td>
-  <td>Standard ACS ethnicity item. <span class="pill-badge">V02+</span></td>
+  <td>Standard ACS ethnicity item</td>
 </tr>
-<tr style="background-color: #f9f9f9;">
-  <td><i class="fa-solid fa-baby"></i>&nbsp;Child race</td>
+<tr>
+  <td>Child race &nbsp; <span class="pill-badge" style="font-size: 0.8em;">V02+</span></td>
   <td><code>child_race</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Standard ACS race item. <span class="pill-badge">V02+</span></td>
+  <td>Standard ACS race item</td>
 </tr>
-<tr style="background-color: #ffffff;">
-  <td><i class="fa-solid fa-baby"></i>&nbsp;Child race &amp; ethnicity<br>– multiracial aggregation by ethnicity</td>
+<tr>
+  <td>Child race & ethnicity– multiracial aggregation by ethnicity &nbsp; <span class="pill-badge" style="font-size: 0.8em;">V02+</span></td>
   <td><code>child_ethnoracial_<br>acs_by_multi_ethnicity</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Derived from ACS race/ethnicity screening responses, with multiracial individuals subcategorized by <b>ethnicity</b> - see <a href="#fedstandards">ACS Combined Race & Ethnicity Logic</a>. <span class="pill-badge">V02+</span></td>
+  <td>Derived from ACS race/ethnicity screening responses, with multiracial individuals subcategorized by <b>ethnicity</b> - see <a href="#fedstandards">ACS Combined Race & Ethnicity Logic</a>.</td>
 </tr>
 <tr style="background-color: #f9f9f9;">
   <td>Mother ethnicity</td>
@@ -181,12 +166,12 @@ Race and ethnicity variables are either computed from administrative records col
 <tr style="background-color: #f9f9f9;">
   <td>Mother race &amp; ethnicity<br>– multiracial aggregation by ethnicity</td>
   <td><code>screen_mother_ethnoracial_<br>acs_by_multi_ethnicity</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">Derived from ACS race/ethnicity screening responses, with multiracial individuals subcategorized by <b>ethnicity</b> - see <a href="#fedstandards">ACS Combined Race & Ethnicity Logic</a>.</td>
+  <td>Derived from ACS race/ethnicity screening responses, with multiracial individuals subcategorized by <b>ethnicity</b> - see <a href="#fedstandards">ACS Combined Race & Ethnicity Logic</a>.</td>
 </tr>
 <tr style="background-color: #ffffff;">
   <td>Mother race &amp; ethnicity<br>– multiracial aggregation by race</td>
   <td><code>screen_mother_ethnoracial_<br>acs_by_multi_race</code></td>
-    <td style="word-wrap: break-word; white-space: normal;">Derived from ACS race/ethnicity screening responses, with multiracial individuals subcategorized by <b>race</b> - see <a href="#fedstandards">ACS Combined Race & Ethnicity Logic</a>.</td>
+    <td>Derived from ACS race/ethnicity screening responses, with multiracial individuals subcategorized by <b>race</b> - see <a href="#fedstandards">ACS Combined Race & Ethnicity Logic</a>.</td>
 </tr>
 <tr style="background-color: #f9f9f9;">
   <td>Mother race indicator<br>variables (0–5)</td>
@@ -305,7 +290,7 @@ Race and ethnicity variables are either computed from administrative records col
 <tr style="background-color: #ffffff;">
   <td>Mother race &amp; ethnicity</td>
   <td><code>rc_mother_ethnoracial_<br>aou_race_ethnicity</code></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
     Derived from the single All of Us (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations" target="_blank">AOU</a>) 
     race and ethnicity item, scored following 
     <a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards" target="_blank">OMB</a> standards:

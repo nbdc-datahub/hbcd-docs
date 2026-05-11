@@ -32,17 +32,17 @@ The Basic Demographics table contains global, static variables derived across ad
 <table class="compact-table-no-vertical-lines" style="font-size: 16px;">
 <thead>
 <tr>
-<th style="width: 20%;">Variable Name</th>
+<th style="width: 21%;">Variable Name</th>
 <th style="width: 15%;">Variable Label</th>
 <th style="width: 60%;">Description</th>
-<th style="text-align: center; width: 5%;">Visit</th>
+<th style="text-align: center;">Visit</th>
 </tr>
 </thead>
 <tbody>
 
 <tr>
 <td>
-  Gestational Age
+  Gestational Age<br>
   <span class="subtle">at Administration</span>
 </td>
 <td><code>gestational_age</code></td>
@@ -56,7 +56,7 @@ The Basic Demographics table contains global, static variables derived across ad
 </tr>
 <tr>
 <td>
-  Chronological Age
+  Chronological Age<br>
   <span class="subtle">at Administration</span>
 </td>
 <td><code>candidate_age</code></td>
@@ -102,17 +102,17 @@ The Basic Demographics table contains global, static variables derived across ad
 <table class="compact-table-no-vertical-lines" style="font-size: 16px;">
 <thead>
 <tr>
-<th style="width: 20%;">Variable Name</th>
+<th style="width: 21%;">Variable Name</th>
 <th style="width: 15%;">Variable Label</th>
 <th style="width: 60%;">Description</th>
-<th style="text-align: center; width: 5%;">Visit</th>
+<th style="text-align: center;">Visit</th>
 </tr>
 </thead>
 <tbody>
 
 <tr>
 <td>
-  Adjusted Age
+  Adjusted Age<br>
   <span class="subtle">at Time of Scan</span>
 </td>
 <td><code>age_adjusted</code></td>
@@ -126,7 +126,7 @@ The Basic Demographics table contains global, static variables derived across ad
 
 <tr>
 <td>
-  Chronological Age 
+  Chronological Age<br>
   <span class="subtle">at Time of Scan</span>
 </td>
 <td><code>age</code></td>
