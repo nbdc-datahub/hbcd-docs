@@ -48,7 +48,7 @@ Visit Information (table name `par_visit_data`) includes general visit informati
 
 <!-- LUCI NOTE: REMOVE THIS DATA WARNING FOR 2.1 PATCH -->
 
-**Substance use (SU) flag** variables indicate whether a participant met study-defined criteria for prenatal exposure to **Alcohol, Nicotine, Cannabis, Opioids, or Stimulants.** Variables include **instrument-specific** and **derived** SU flags. See [Gurka et al., 2025](https://doi.org/10.1016/j.dcn.2024.101494) for full methodological details.
+**Substance use (SU) flag** variables indicate whether a participant met study-defined criteria for prenatal exposure to Alcohol, Nicotine, Cannabis, Opioids, or Stimulants. Variables include instrument-specific and derived SU flags. See [Gurka et al., 2025](https://doi.org/10.1016/j.dcn.2024.101494) for full methodological details.
 
 **Instrument-specific SU flags** are generated from:
 
@@ -140,7 +140,7 @@ Visit Information (table name `par_visit_data`) includes general visit informati
 <tr>
 <td rowspan="3"><strong>Opioids</strong></td>
 <td>TLFB</td>
-<td style="word-wrap: break-word; white-space: normal;">Self-reported use of <span class="tooltip">prescribed<span class="tooltiptext">including medications for opioid use disorder</span></span> or illicit opioids for ≥2 weeks during pregnancy (weeks 3-9)</td></tr>
+<td>Self-reported use of <span class="tooltip">prescribed<span class="tooltiptext">including medications for opioid use disorder</span></span> or illicit opioids for ≥2 weeks during pregnancy (weeks 3-9)</td></tr>
 <tr>
 <td>Health V2</td> 
 <td>Diagnosis of Neonatal Opioid Withdrawal Syndrome (NOWS)</td>
@@ -202,7 +202,7 @@ Visit Information (table name `par_visit_data`) includes general visit informati
 
 <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/PNR_participants-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
 
-Postnatal Recruits are enrolled in the study after the child is born and complete a modified V01 and V02. **The PNR cohort is only denoted for the V02 visit**, with all subsequent visits falling under the same cohort as a standard participant. To check if a participant was part of a PNR cohort, users can either check the cohort at V02 or refer to the provided participant list.
+Postnatal Recruits are enrolled in the study after the child is born and complete a modified V01 and V02. **The PNR cohort is only denoted for the V02 visit**, with all subsequent visits falling under the same cohort as a standard participant. To check if a participant was part of a PNR cohort, users can either check the cohort (`par_visit_data_cohort`) at V02 or refer to the provided participant list.
 
 ### Multiple Birth Participants
 <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
@@ -219,7 +219,7 @@ The downloadable participant list maps each **Main Child** to their correspondin
 
 ### Caregiver Types
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines">
 <tbody>
     <tr>
         <td><b>Type A</b></td>
@@ -227,7 +227,7 @@ The downloadable participant list maps each **Main Child** to their correspondin
     </tr>
     <tr>
         <td><b>Type B</b></td>
-        <td style="word-wrap: break-word; white-space: normal;">Change in Primary Caregiver (Placement Only) Without Change in Legal Custody (But Birth Parent Unable to Complete Visit)</td>
+        <td>Change in Primary Caregiver (Placement Only) Without Change in Legal Custody (But Birth Parent Unable to Complete Visit)</td>
     </tr>
     <tr>
         <td><b>Type C</b></td>
@@ -235,7 +235,7 @@ The downloadable participant list maps each **Main Child** to their correspondin
     </tr>
     <tr>
         <td><b>Type D</b></td>
-        <td style="word-wrap: break-word; white-space: normal;">Child Removed From Birth Parent and Placed in Foster Care (Change in Placement)</td>
+        <td>Child Removed From Birth Parent and Placed in Foster Care (Change in Placement)</td>
     </tr>
     <tr><td><b>Type E</b></td><td>Change in Legal Custody and Placement (e.g. adoption)</td>
     </tr>            
@@ -251,6 +251,97 @@ The downloadable participant list maps each **Main Child** to their correspondin
 
 
 
+<!-- 
+cohorts DD levels table
+
+<table class="table-no-vertical-lines">
+<thead>
+<tr>
+<th>Value</th>
+<th>Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>HBCD - EEG Timing Test</td>
+</tr>
+<tr>
+<td>1</td>
+<td>HBCD Main Child</td>
+</tr>
+<tr>
+<td>2</td>
+<td>HBCD Main Child - Postnatal Recruitment</td>
+</tr>
+<tr>
+<td>3</td>
+<td>HBCD Main Child - Postnatal Recruitment - Split</td>
+</tr>
+<tr>
+<td>4</td>
+<td>HBCD Main Child - Type A</td>
+</tr>
+<tr>
+<td>5</td>
+<td>HBCD Main Child - Type B</td>
+</tr>
+<tr>
+<td>6</td>
+<td>HBCD Main Child - Type C</td>
+</tr>
+<tr>
+<td>7</td>
+<td>HBCD Main Child - Type D</td>
+</tr>
+<tr>
+<td>8</td>
+<td>HBCD Main Child - Type E</td>
+</tr>
+<tr>
+<td>9</td>
+<td>HBCD Multiple Birth - Main Child</td>
+</tr>
+<tr>
+<td>10</td>
+<td>HBCD Multiple Birth - Postnatal Recruitment</td>
+</tr>
+<tr>
+<td>11</td>
+<td>HBCD Multiple Birth - Postnatal Recruitment - Sibling</td>
+</tr>
+<tr>
+<td>12</td>
+<td>HBCD Multiple Birth - Sibling</td>
+</tr>
+<tr>
+<td>13</td>
+<td>HBCD Multiple Birth - Type A</td>
+</tr>
+<tr>
+<td>14</td>
+<td>HBCD Multiple Birth - Type B</td>
+</tr>
+<tr>
+<td>15</td>
+<td>HBCD Multiple Birth - Type C</td>
+</tr>
+<tr>
+<td>16</td>
+<td>HBCD Multiple Birth - Type D</td>
+</tr>
+<tr>
+<td>17</td>
+<td>HBCD Multiple Birth - Type E</td>
+</tr>
+<tr>
+<td>18</td>
+<td>HBCD Phantom</td>
+</tr>
+</tbody>
+</table>  -->
+
+
 
 <!-- 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
@@ -263,7 +354,7 @@ The downloadable participant list maps each **Main Child** to their correspondin
 <tbody>
 <tr>
 <td>par_visit_data_su_flag_alcohol</td>
-<td style="word-wrap: break-word; white-space: normal;">Rolled up Alcohol flag from Biological Mother across sources (Biospecimen, TLFB Self-report, Health V2 FAS)</td>
+<td>Rolled up Alcohol flag from Biological Mother across sources (Biospecimen, TLFB Self-report, Health V2 FAS)</td>
 </tr>
 <tr>
 <td>par_visit_data_su_flag_bio_bm_cannabinoid</td>
@@ -287,7 +378,7 @@ The downloadable participant list maps each **Main Child** to their correspondin
 </tr>
 <tr>
 <td>par_visit_data_su_flag_cannabis</td>
-<td style="word-wrap: break-word; white-space: normal;">Rolled up Cannabis flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
+<td>Rolled up Cannabis flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
 </tr>
 <tr>
 <td>par_visit_data_su_flag_healthv2_ch_fas</td>
@@ -299,15 +390,15 @@ The downloadable participant list maps each **Main Child** to their correspondin
 </tr>
 <tr>
 <td>par_visit_data_su_flag_nicotine</td>
-<td style="word-wrap: break-word; white-space: normal;">Rolled up Nicotine flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
+<td>Rolled up Nicotine flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
 </tr>
 <tr>
 <td>par_visit_data_su_flag_opioid</td>
-<td style="word-wrap: break-word; white-space: normal;">Rolled up Opioid flag from Biological Mother across sources (Biospecimen, TLFB Self-report, Health V2 NOWS)</td>
+<td>Rolled up Opioid flag from Biological Mother across sources (Biospecimen, TLFB Self-report, Health V2 NOWS)</td>
 </tr>
 <tr>
 <td>par_visit_data_su_flag_stimulant</td>
-<td style="word-wrap: break-word; white-space: normal;">Rolled up Stimulant flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
+<td>Rolled up Stimulant flag from Biological Mother across sources (Biospecimen, TLFB Self-report)</td>
 </tr>
 <tr>
 <td>par_visit_data_su_flag_tlfb_bm_alcohol</td>
@@ -331,3 +422,4 @@ The downloadable participant list maps each **Main Child** to their correspondin
 </tr>
 </tbody>
 </table> 
+-->
