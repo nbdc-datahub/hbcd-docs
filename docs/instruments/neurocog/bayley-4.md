@@ -57,10 +57,8 @@ A subset of participants are missing the Bayley-4 records, i.e. the <b>Administr
 <p><b>Limited Predictive Validity for Long-Term Neurocognitive Status</b><br>
 Although the Bayley Scales of Infant and Toddler Development, Fourth Edition, is a well-established and validated measure of infant development, tests of this nature have historically had limited predictive validity for long-term neurocognitive status.</p> 
 <p><b>Invalid Scores for Subset of Participants</b><br>
-There are 13 Bayley administrations that do not have valid scores for all sub-tests. For these participants, the sub-test scores and/or domain scores display as <code>-9999</code>. We recommend cleaning the data to remove participants with scores of <code>-9999</code>.<br>
-  <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/
-nc_ch_bayley-supplemental.csv"><i class="fa-solid fa-download"></i> &nbsp; Download participant list</a> <i>(available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>)</i>
-  </p>
+Participants may include invalid sub-test and/or domain scores of <code>-9999</code>. Users should remove this participant data prior to analysis.
+</p>
 </div>
 
 <div id="issues" class="issues-banner">
