@@ -251,6 +251,96 @@ The downloadable participant list maps each **Main Child** to their correspondin
 
 
 
+<!-- 
+cohorts DD levels table
+<table>
+<thead>
+<tr>
+<th align="right">Value</th>
+<th>Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">0</td>
+<td>HBCD - EEG Timing Test</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td>HBCD Main Child</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>HBCD Main Child - Postnatal Recruitment</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>HBCD Main Child - Postnatal Recruitment - Split</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>HBCD Main Child - Type A</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>HBCD Main Child - Type B</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>HBCD Main Child - Type C</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>HBCD Main Child - Type D</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>HBCD Main Child - Type E</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>HBCD Multiple Birth - Main Child</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>HBCD Multiple Birth - Postnatal Recruitment</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>HBCD Multiple Birth - Postnatal Recruitment - Sibling</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>HBCD Multiple Birth - Sibling</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td>HBCD Multiple Birth - Type A</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td>HBCD Multiple Birth - Type B</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td>HBCD Multiple Birth - Type C</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td>HBCD Multiple Birth - Type D</td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td>HBCD Multiple Birth - Type E</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td>HBCD Phantom</td>
+</tr>
+</tbody>
+</table> -->
+
+
 
 <!-- 
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
