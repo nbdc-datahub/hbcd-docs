@@ -1,3 +1,11 @@
+<style>
+.wy-nav-content {
+    width: 90% !important;
+    max-width: 100% !important;
+    flex-grow: 1 !important;
+}
+</style>
+
 # NBDC Data Dictionary
 
 Tabulated HBCD study data is organized into a standardized table format per study instrument/measure, with each table containing a set of variables (see [Data Structure Overview](../datacuration/overview.md) for details). Metadata is organized via a data dictionary, which provides detailed information about table variables, including variable name, label, description, data type, etc. All data dictionary elements are outlined below.
@@ -17,6 +25,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 </tr>
 </thead>
 <tbody>
+<!-- CORE METADATA -->
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>CORE METADATA</b></td>
 </tr>
@@ -28,32 +37,33 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <tr>
   <td><code>domain</code></td>
   <td>Domain</td>
-  <td>Domains include <i>Demographics</i>, <i>Behavior/Child-Caregiver Interaction</i>, <i>Imaging</i>, etc. (see <a href="../../instruments/#instruments-by-domain">Instruments by Domain</a> for full list)</td>
+  <td>e.g. <i>Demographics</i>- see <a href="../../instruments/#instruments-by-domain">Instruments by Domain</a> for full list</td>
+</tr>
+<tr>
+  <td><code>source</code></td>
+  <td>Source</td>
+  <td>Source of information <i>(Biological Mother; Caregiver (Responsible Adult); Child; General)</i></td>
+</tr>
+<!-- IMAGING -->
+<tr>
+  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>IMAGING & EEG</b></td>
+</tr>
+<tr>
+  <td><code>atlas</code></td>
+  <td>Atlas</td>
+  <td><a href="../../instruments/mri/fmri/#parc" target="_blank">MRI atlas</a> used for parcellated structural measures and functional timeseries (e.g., <i>Gordon</i>)</td>
+</tr>
+<tr>
+  <td><code>metric</code></td>
+  <td>Metric</td>
+  <td>Specific metric assessed (e.g. MRI <i>Cortical Thickness</i>)</td>
 </tr>
 <tr>
   <td><code>sub_domain</code></td>
   <td>Subdomain</td>
   <td>Domain subcategory (e.g. <i>Structural MRI</i> within the <i>Imaging</i> domain)</td>
 </tr>
-<tr>
-  <td><code>source</code></td>
-  <td>Source</td>
-  <td>Source of information. Possible values include:<br>
-  <i>Biological Mother | Caregiver (Responsible Adult) | Child | General</i></td>
-</tr>
-<tr>
-  <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>IMAGING & EEG</b></td>
-</tr>
-<tr>
-  <td><code>metric</code></td>
-  <td>Metric</td>
-  <td>Imaging & EEG only: Specific metric assessed (e.g. <i>Cortical Thickness</i>)</td>
-</tr>
-<tr>
-  <td><code>atlas</code></td>
-  <td>Atlas</td>
-  <td>Imaging only: Atlas used to derive parcellated structural measures and functional timeseries (e.g., <i>Gordon</i> - <a href="../../instruments/mri/#parc" target="_blank">see full list</a>)</td>
-</tr>
+<!-- TABLE-LEVEL -->
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>TABLE-LEVEL INFORMATION</b></td>
 </tr>
@@ -75,13 +85,14 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <tr>
   <td><code>url_table_warn_use</code></td>
   <td>Resp Use Warning (table)</td>
-  <td>Responsible Use Warning (<a href="../resp_data_use/#warnings" target="_blank"><i>see details</i></a>)</td>
+  <td>Responsible Use Warning (<a href="../../access/resp_data_use/#warnings" target="_blank">see details</a>)</td>
 </tr>
 <tr>
   <td><code>url_table_warn_data</code></td>
   <td>Data Warning (table)</td>
-  <td>Data Warning (<a href="../resp_data_use/#warnings" target="_blank"><i>see details</i></a>)</td>
+  <td>Data Warning (<a href="../../access/resp_data_use/#warnings" target="_blank">see details</a>)</td>
 </tr>
+<!-- VAR LEVEL -->
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>VARIABLE-LEVEL INFORMATION</b></td>
 </tr>
@@ -93,26 +104,38 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <tr>
   <td><code>label</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i>/<br><code>description</code></td>
   <td>Variable label</td>
-  <td>Human-readable label for variable (e.g. <i>Highest grade completed</i>).<br>
-  <i>Spanish version: <code>label_es</code></i></td>
+  <td>Human-readable label for variable (e.g. <i>Highest grade completed</i>)</td>
+</tr>
+
+<tr>
+  <td><code>levels</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
+  <td>Levels</td>
+  <td>
+    Embedded tables with Value:Label options for categorical variables
+    <span class="tooltip">
+      <i class="fa-solid fa-eye" aria-hidden="true"></i>
+      <span class="tooltiptext">
+        <img src="../levels.png" alt="Levels table example" style="max-height: 200px;">
+      </span>
+    </span>
+  </td>
 </tr>
 <tr>
   <td><code>instruction</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
   <td>Instruction</td>
   <td>
-    Instructions preceding measure questions (e.g. <i>The next set of questions is about your child's behavior...</i>). <i>Spanish version: <code>instruction_es</code></i></td>
+    Instructions preceding form items (e.g. <i>The next set of questions is about your child's behavior...</i>)</td>
 <!-- POTENTIALLY ADD IN FUTURE TO INSTRUCTION DESCRIPTION: <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> and <i class="fas fa-exclamation-triangle" style="font-size: 1em; color: orange;"></i> <b>CAUTION: Text may be incomplete/misaligned! See <a href="../../changelog/issues-updates/#known-issues">Known Issues: Instruction Metadata</a></b> -->
 </tr>
 <tr>
   <td><code>header</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
   <td>Header</td>
-  <td>Header/instructions for a set of questions (e.g. <i>For each item that describes your child...</i>). <i>Spanish version: <code>header_es</code></i></td>
+  <td>Header/instructions for a set of questions (e.g. <i>For each item that describes your child...</i>)</td>
 </tr>
 <tr>
   <td><code>note</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
   <td>Note</td>
-  <td>Note displayed to participants (e.g. <i>Enter weight in pounds.</i>).<br>
-   <i>Spanish version: <code>note_es</code></i></td>
+  <td>Note displayed to participants (e.g. <i>Enter weight in pounds.</i>)</td>
 </tr>
 <tr>
   <td><code>unit</code></td>
@@ -122,12 +145,12 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <tr>
   <td><code>url_warn_use</code></td>
   <td>Resp Use Warning (var)</td>
-  <td>Responsible Use Warning (<a href="../resp_data_use/#warnings" target="_blank"><i>see details</i></a>) - variable-specific</td>
+  <td>Responsible Use Warning (<a href="../resp_data_use/#warnings" target="_blank">see details</a>) - variable-specific</td>
 </tr>
 <tr>
   <td><code>url_warn_data</code></td>
   <td>Data Warning (var)</td>
-  <td>Data Warning (<a href="../resp_data_use/#warnings" target="_blank"><i>see details</i></a>) - variable-specific</td>
+  <td>Data Warning (<a href="../resp_data_use/#warnings" target="_blank">see details</a>) - variable-specific</td>
 </tr>
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>VARIABLE TYPE & FORMAT</b></td>
@@ -135,18 +158,17 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <tr>
   <td><code>type_var</code></td>
   <td>Variable type</td>
-  <td>Variable types include: <i>administrative | item | derived item | summary score</i><br>
-  See <a href="#type_var">Variable Type Definitions</a> below</td>
+  <td>Includes: <i>administrative; item; derived item; summary score</i> -  <a href="#type_var">see details</a></td>
 </tr>
 <tr>
   <td><code>type_data</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
   <td>Data type</td>
-  <td>Data types include: <i>date | timestamp| time | <span class="tooltip">character<span class="tooltiptext">Only used for categorical columns</span></span> | text | integer | double</i></td>
+  <td>Includes: <i>date; timestamp; time; <span class="tooltip">character<span class="tooltiptext">Only used for categorical columns</span></span>; text; integer; double</i></td>
 </tr>
 <tr>
   <td><code>type_level</code></td>
   <td>Level of measurement</td>
-  <td>Levels include: <i>nominal | ordinal | interval | ratio</i></td>
+  <td>Includes: <i>nominal; ordinal; interval; ratio</i></td>
 </tr>
 <tr>
   <td colspan="3" style="font-size: 0.8em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>DISPLAY PROPERTIES</b></td>
@@ -154,7 +176,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <tr>
   <td><code>type_field</code></td>
   <td>Field type</td>
-  <td>Field type in data capture system as presented to participant (e.g. <i>dropdown, radio, checkbox, etc.</i>)</td>
+  <td>Field type presented to participant (e.g. <i>dropdown, radio, checkbox, etc.</i>)</td>
 </tr>
 <tr>
   <td><code>order_display</code></td>
@@ -172,7 +194,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <tr>
   <td><code>identifier_column</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
   <td>Identifier column(s)</td>
-  <td>Columns used for participant identification (i.e. participant & session ID) - see <a href="../../datacuration/phenotypes/#table-organization" target="_blank">Table Organization</a> for details</td>
+  <td>Columns used for participant identification (i.e. participant & session ID)- <a href="../../datacuration/phenotypes/#table-organization" target="_blank">see details</a></td>
 </tr>
 <tr>
   <td><code>order_sort</code></td>
@@ -229,7 +251,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <div class="warning-collapsible-content">
 <p>Dictionary Query Tool searches within the NBDC Data Access Platform currently display columns that are not applicable to HBCD study data, including columns ending with <code>nda</code>, <code>deap</code>, and <code>redcap</code>. Inapplicable columns will be removed in the future and can safely be ignored. Note that columns may also be blank if they have yet to be populated (currently common for columns ending with <code>*_es</code>). <b>For reference, only applicable columns are included in the Data Dictionary overview above.</b></p>
 </div>
-
+<!-- 
 ## Levels Table
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
 <i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases
@@ -261,21 +283,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   <tr><td><code>label</code> / <code>label_es</code></td><td>right hand side</td>
     <td>Label (English/Spanish) of the level (<b>e.g. "Yes" / "Si"</b>)</td>
   </tr>
-</table>
-
-<div id="site-levels" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Extraneous Recruitment Site Levels in Basic Demographics</span>
-  <a class="anchor-link" href="#site-levels" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>In the Basic Demographics table (<code>sed_basic_demographics</code>), the variable <code>recruitment_site</code> includes three additional levels that do not represent study sites: <code>30=Sampled</code>; <code>31=USDTL</code>; <code>32=BAH</code>. These levels, used for internal purposes, appear only as possible values in the data dictionary, but are not used in the actual tabulated data. In other words, all participant records in the Basic Demographics table will have <code>recruitment_site</code> values ranging only from 0 to 29, corresponding to the study sites - see full list of recruitment sites <a href="#sites">below</a>.</p>
-</div>
+</table> -->
 
 ## Additional Information: Site & Cohort
 

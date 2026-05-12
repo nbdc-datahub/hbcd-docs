@@ -49,3 +49,11 @@ h5 + * { /* Selects the element directly following the h5 */
   font-size: 1em;
   color: #199bd6;
 }
+
+/* SUBTITLES */
+.subtle-note {
+  color: #6c757d;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2em;
+}
