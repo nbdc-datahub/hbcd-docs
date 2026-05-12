@@ -20,11 +20,11 @@ The platforms below allow users to explore, query, and download HBCD Study data.
   cursor: pointer;}
 </style>
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
+<table class="table-no-vertical-lines">
 <thead>
-<th style="text-align: center; width: 20%;">
+<th>
 </th>
-<th style="text-align: center; width: 40%; font-size: 1.1em;">
+<th style="text-align: center; width: 40%;">
     <div class="logo"><a href="https://www.nbdc-datahub.org/">
     <img src="../images/NBDC-Blk-Horizontal.png" alt="NBDC-logo" 
     style="max-height: 100px;"></a>
@@ -38,12 +38,12 @@ The platforms below allow users to explore, query, and download HBCD Study data.
       </a> )
     </div>
 </th>
-<th style="text-align: center; width: 40%; font-size: 1.1em;">
+<th style="text-align: center; width: 40%;">
     <div class="logo"><a href="https://docs.deapscience.com/">
     <img src="../images/ZEV103-DEAP-Logo-with-DEAP.png" alt="DEAP-logo" 
     style="max-height: 60px; margin-top: 20px; margin-bottom: 20px;"></a>
     </div>
-    Data Exploration and Analysis Portal (DEAP)
+    Data Exploration and Analysis Portal
 </th>
 </thead>
 <tbody>

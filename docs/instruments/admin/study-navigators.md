@@ -123,7 +123,7 @@ There are four options the Study Navigator can select to indicate actions taken,
     <tr>
       <td><code>FORM_SITE</code></td>
       <td>Study site of contact</td>
-      <td>See <a href="../../../access/metadata/#sites">Global Site ID Mapping</a></td>
+      <td>See <a href="../../../standards/metadata/#sites">Global Site ID Mapping</a></td>
     </tr>
     <tr>
       <td><code>CV_CUSTOM_ID_COPY</code></td>

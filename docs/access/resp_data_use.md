@@ -24,10 +24,9 @@ When using HBCD Study data, processes, plans, and/or concepts in a publication, 
 <p>A full list of participating sites is available at <a href="https://hbcdstudy.org/recruitment-sites/">Study Sites-HBCD Study</a>. HBCD Study Consortium investigators designed and implemented the study and/or provided data but did not necessarily participate in the analysis or writing of this report. This manuscript reflects the views of the authors and may not reflect the opinions or views of the NIH or the HBCD Study Consortium investigators.</p>
 <p>The HBCD dataset grows and changes over time. The HBCD data used in this report came from <b>[NBDC Digital Object Identifier (DOI)]</b>. DOIs can be found at <b>[DOI URL]</b>.</p>
 </div>
-</div>
 
 ## Warnings
-To facilitate responsible data use and scientific rigor, the following warnings are provided within the study instrument documentation where applicable (with direct URL links provided in the [NBDC Data Dictionary](metadata.md):
+To facilitate responsible data use and scientific rigor, the following warnings are provided within the study instrument documentation where applicable (with direct URL links provided in the [NBDC Data Dictionary](../standards/metadata.md). We recommend that all data users review the data warnings for any data you will be downloading and/or using, review included resources and citations, and follow recommended guidelines. Reach out via the NBDC Data Access Platform [Help Center](https://nbdc-datashare.lassoinformatics.com/help-center) with any question about the data warnings or how to use the data.
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -46,16 +45,18 @@ To facilitate responsible data use and scientific rigor, the following warnings 
 <div class="warning-collapsible-content">
 <p>The purpose of this warning is to improve transparency and offer technical assistance by alerting the user to issues of data quality, providing information on how variables were constructed, providing instructions on how to calculate or analyze specific variables, or providing code (if necessary).</p> 
 </div>
-
-We recommend that all data users review the data warnings for any data you will be downloading and/or using, review included resources and citations, and follow recommended guidelines. Reach out via the [Help Center in the NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/help-center) if you have questions about the data warning or how to use the data.
  
-## Recommendations: Rigorous, Reproducible, and Responsible Data Use
-The HBCD Responsible Use of Data Committee (RUDC) provides the following guidance for researchers planning to use HBCD data:
+## Recommendations
+
+<p class="subtle-note">The HBCD Responsible Use of Data Committee (RUDC) provides the following recommendations for rigorous, reproducible, and responsible data use guidance for researchers and users of HBCD Study data.</p>
 
 ### Learn and abide by the provisions of the Data Use Certificate.
-<b class="gray-text">All users of HBCD data should be listed on a Data Use Certificate (DUC) and bound by it.</b> Among other things, the DUC prohibits any attempt to establish the identities of HBCD participants. To protect participants against identification, users agree to adhere to a minimum cell threshold of ten participants in publications and other public presentations. Epidemiologists, statisticians, and other data analysts argue that a cell size between 1 and 10 is usually too small for meaningful analysis; therefore, avoiding analysis of small cells can produce more rigorous, reproducible science and also helps protect study participants from identification.   
 
-<b class="gray-text">Access to HBCD data is limited to people who are listed on an active HBCD DUC.</b> This means you cannot enter HBCD data into a generative AI tool/large language model, such as ChatGPT, because doing so would leak HBCD data to people who do not have a DUC (see [FAQ: Can I Use ChatGPT...](../help/faq.md/#faq-ai)).  
+##### All users of HBCD data should be listed on a Data Use Certificate (DUC) and bound by it.
+The DUC prohibits any attempt to establish the identities of HBCD participants. To protect participants against identification, users agree to adhere to a minimum cell threshold of ten participants in publications and public presentations. Epidemiologists, statisticians, and other data analysts argue that a cell size between 1 and 10 is usually too small for meaningful analysis; therefore, avoiding analysis of small cells can produce more rigorous, reproducible science and also helps protect study participants from identification.   
+
+##### Access to HBCD data is limited to people who are listed on an active HBCD DUC.
+This means you cannot enter HBCD data into a generative AI tool/large language model, such as ChatGPT; doing so would leak HBCD data to people who do not have a DUC (see [FAQ: Can I Use ChatGPT...](../help/faq.md/#faq-ai)).  
 
 ### Consider ethical principles throughout the research process.
 <b class="gray-text">Equity-focused reflection:</b> Regulations for the protection of humans in federally-funded research (e.g., 45 C.F.R. 46) do not require IRBs to oversee research using anonymized data obtained from a repository. Nonetheless, the data come from people to whom we have ethical obligations, including obligations of respect, minimizing harm, and justice. Data users should keep these principles in mind at each stage of their research. 
@@ -63,34 +64,27 @@ The HBCD Responsible Use of Data Committee (RUDC) provides the following guidanc
 ### Use non-stigmatizing language in scientific communications.
 <b class="gray-text">Use clear and respectful language when describing people whose data you analyzed.</b> Person-first language emphasizes individuals’ inherent value and respects them as people before describing any conditions or diseases they may have (*[Writing respectfully: Person-first and identity-first language](https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language)*). For example, consider using “person with a substance use disorder” or “person in recovery from a substance use disorder” and avoid referring to participants as “addicts,” “users,” or “former users.”  Avoid terms such as “drug baby” or “crack baby” in favor of descriptions such as “Infant with prenatal substance exposure” or “infant with neonatal opioid withdrawal syndrome” ([Appleseth et al. 2023](https://doi.org/10.1186/s13011-023-00536-z)).   
 
-<div style="padding: 0;">
-  <b class="gray-text">Recommendations for language regarding people with substance use disorders:</b>
-  <ul style="margin: 0 0 20px 20px; padding: 0;">
-    <li><a href="https://nida.nih.gov/nidamed-medical-health-professionals/health-professions-education/words-matter-terms-to-use-avoid-when-talking-about-addiction">Words Matter - Terms to Use and Avoid When Talking About Addiction</a></li>
-    <li><a href="https://doi.org/10.1111/acer.14840">Why language matters in alcohol research: Reducing stigma (Shi et al., 2022)</a></li>
-  </ul>
-</div>
+***Recommendations for ...***
 
-<div style="padding: 0;">
-<b class="gray-text">Recommendations for writing and talking about Fetal Alcohol Spectrum Disorder:</b>
-  <ul style="margin: 0 0 20px 20px; padding: 0;">
-    <li><a href="https://canfasd.ca/wp-content/uploads/publications/CanFASD-Common-Messages-Guide-2023_FINAL-1.pdf">Common Messages: Guidelines for talking and writing about FASD</a></li>
-  </ul>
-</div>
-
-<div style="padding: 0;">
-<b class="gray-text">Recommendations for using language regarding people with disabilities:</b>
-  <ul style="margin: 0 0 20px 20px; padding: 0;">
-    <li><a href="https://www.cdc.gov/disability-and-health/articles-documents/communicating-with-and-about-people-with-disabilities.html">Communicating With and About People with Disabilities (CDC)</a></li>
-  </ul>
-</div>
+ - Language regarding people with substance use disorders:
+    - [Words Matter - Terms to Use and Avoid When Talking About Addiction](https://nida.nih.gov/nidamed-medical-health-professionals/health-professions-education/words-matter-terms-to-use-avoid-when-talking-about-addiction)
+    - Why language matters in alcohol research: Reducing stigma ([Shi et al., 2022](https://doi.org/10.1111/acer.14840))
+ - Writing and talking about Fetal Alcohol Spectrum Disorder:
+    - [Common Messages: Guidelines for talking and writing about FASD](https://canfasd.ca/wp-content/uploads/publications/CanFASD-Common-Messages-Guide-2023_FINAL-1.pdf)
+ - Using language regarding people with disabilities:
+    - [Communicating With and About People with Disabilities (CDC)](https://www.cdc.gov/disability-and-health/articles-documents/communicating-with-and-about-people-with-disabilities.html)
 
 ### Use population descriptors thoughtfully and scientifically.
-<b class="gray-text">Best practice is to include the right variable for the scientific question.</b> Genetic and/or biological variables are not interchangeable with demographic descriptions. Demographic descriptors should be used when they are scientifically justified and accompanied by clear definitions and rationales.
-  
-<b class="gray-text">Use of race and ethnicity:</b> The National Academies of Sciences, Engineering, and Medicine (NASEM) recently published a report, [*Rethinking Race and Ethnicity in Biomedical Research*](https://doi.org/10.17226/27913), which can be downloaded free of charge. This report emphasizes that race variables are “not a substitute for unseen or unmeasured biological predictors of interest” (Conclusion 5-5; [NASEM, 2024](https://doi.org/10.17226/27913)). This report also notes that the Office for Management and Budget’s race and ethnicity categories, which must be used for government reporting purposes (e.g., by federal grantees), are a minimum set of categories and need not be used for scientific analyses (Conclusion 5-1; [NASEM, 2024](https://doi.org/10.17226/27913)).  
 
-<b class="gray-text">Population descriptors in genomics research:</b> NASEM also published a report, [*Using Population Descriptors in Genetics and Genomics Research*](https://doi.org/10.17226/26902), articulating best practices for using population descriptors in genomics. Importantly, the report cautions researchers against using race as a proxy for genetic variation or assigning genetic ancestry labels based on race, regardless of whether race was self-identified. In addition, researchers should be mindful of the connotations and impacts of terminology used to label groups and should disclose how they select and assign group labels ([NASEM, 2023](https://doi.org/10.17226/26902)).
+##### Best practice is to include the right variable for the scientific question.
+Genetic and/or biological variables are not interchangeable with demographic descriptions. Demographic descriptors should be used when they are scientifically justified and accompanied by clear definitions and rationales.
+
+##### Use of race and ethnicity:
+
+The publicly available <span class="tooltip">NASEM<span class="tooltiptext">National Academies of Sciences, Engineering, and Medicine</span></span> report, [*Rethinking Race and Ethnicity in Biomedical Research*](https://doi.org/10.17226/27913), emphasizes that race variables are “not a substitute for unseen or unmeasured biological predictors of interest” (Conclusion 5-5; [NASEM, 2024](https://doi.org/10.17226/27913)). This report also notes that the <span class="tooltip">OMB<span class="tooltiptext">Office for Management and Budget</span></span>’s race and ethnicity categories, which must be used for government reporting purposes (e.g., by federal grantees), are a minimum set of categories and need not be used for scientific analyses (Conclusion 5-1; [NASEM, 2024](https://doi.org/10.17226/27913)).  
+
+##### Population descriptors in genomics research
+NASEM also published a report, [*Using Population Descriptors in Genetics and Genomics Research*](https://doi.org/10.17226/26902), articulating best practices for using population descriptors in genomics. Importantly, the report cautions researchers against using race as a proxy for genetic variation or assigning genetic ancestry labels based on race, regardless of whether race was self-identified. In addition, researchers should be mindful of the connotations and impacts of terminology used to label groups and should disclose how they select and assign group labels ([NASEM, 2023](https://doi.org/10.17226/26902)).
 
 ### Analyses should reflect the complexity of brain and child development.  Use relevant social and environmental variables (available in the HBCD dataset) as covariates in your analyses.
 <b class="gray-text">It is essential to recognize the differences of life experiences and environments</b>, acknowledging that human development is a dynamic process influenced by the potential for adaptation and change ([Simmons et al., 2021](https://doi.org/10.1177/09567976211003564)). Studying this complexity requires use of statistical models that include appropriate covariates. Data users are encouraged to consider contextual information regarding which covariates might confound, modify, or mediate the effect they seek to study ([Greenland & Pearce, 2015](https://doi.org/10.1146/annurev-publhealth-031914-122559)).   
@@ -102,14 +96,14 @@ The HBCD Responsible Use of Data Committee (RUDC) provides the following guidanc
 ### Promoting transparency and reproducibility in research. 
 <b class="gray-text">Transparency in reporting methods and results is essential.</b> A review of [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study) manuscripts found that sharing analytic scripts (e.g., on Github, OSF, Zenodo) and providing detailed information about missing data significantly improved transparency and reproducibility ([Lopez et al., 2024](https://doi.org/10.1016/j.dcn.2024.101408)). We recommend that HBCD data users review the data analysis and manuscript preparation questions below to improve transparency and reproducibility.
 
-<p style="margin-bottom: 0;"><i>Recommended considerations when preparing a manuscript:</i></p>
+<b class="gray-text">Recommended considerations when preparing a manuscript:</b> 
 
-- What is your reason for analyzing data stratified by sample population?
-- Have you acknowledged any potential limitations in measures/constructs (known or suspected)?
-- Have you contextualized the variables?
-- Have you limited the use of deterministic language (especially important for developmental studies)?
-- If demographic variables were used as covariates or for sample characteristic reporting, were they appropriately reported and are the limitations of such reporting addressed?
-- If your findings have shown significant differences between groups, describe how your data will inform the larger effort to improve public health.
+ - What is your reason for analyzing data stratified by sample population?
+ - Have you acknowledged any potential limitations in measures/constructs (known or suspected)?
+ - Have you contextualized the variables?
+ - Have you limited the use of deterministic language (especially important for developmental studies)?
+ - If demographic variables were used as covariates or for sample characteristic reporting, were they appropriately reported and are the limitations of such reporting addressed?
+ - If your findings have shown significant differences between groups, describe how your data will inform the larger effort to improve public health.
 
 <b class="gray-text">Researchers should consider features of the data available in HBCD, the strengths and limitations therein, and follow guidance for rigor and reproducibility.</b> [Sarasoga-Harris and colleagues (2022)](https://doi.org/10.1016/j.dcn.2022.101115) have developed a practical guide for researchers and reviewers, including relevant analytical and methodological considerations.
 

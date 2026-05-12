@@ -65,8 +65,8 @@ nav:
     - Tools: access/tools.md
   - Study Standards & Conventions:
     - Data Standards:
-        - Metadata: access/metadata.md
-        - Naming Conventions: access/naming-conventions.md
+        - Metadata: standards/metadata.md
+        - Naming Conventions: standards/naming-conventions.md
     - Processing & Derivative Data Standards: 
         - Processing Pipelines: instruments/processing/index.md
         - Pipeline Software Standards: instruments/processing/standards.md
