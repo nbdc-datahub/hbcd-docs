@@ -227,7 +227,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
 <td>
-Remove internal <code>recruitment_site</code> categories only present in data dictionary (e.g., <code>30=Sampled</code>; <code>31=USDTL</code>; <code>32=BAH</code>)</td>
+Remove internal <code>recruitment_site</code> categories only present in data dictionary (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 
