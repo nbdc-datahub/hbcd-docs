@@ -26,7 +26,7 @@ When using HBCD Study data, processes, plans, and/or concepts in a publication, 
 </div>
 
 ## Warnings
-To facilitate responsible data use and scientific rigor, the following warnings are provided within the study instrument documentation where applicable (with direct URL links provided in the [NBDC Data Dictionary](../standards/metadata.md). We recommend that all data users review the data warnings for any data you will be downloading and/or using, review included resources and citations, and follow recommended guidelines. Reach out via the NBDC Data Access Platform [Help Center](https://nbdc-datashare.lassoinformatics.com/help-center) with any question about the data warnings or how to use the data.
+To facilitate responsible data use and scientific rigor, the following warnings are provided within the study instrument documentation where applicable (with direct URL links provided in the [NBDC Data Dictionary](../standards/metadata.md)). We recommend that all data users review the data warnings for any data you will be downloading and/or using, review included resources and citations, and follow recommended guidelines. Reach out via the NBDC Data Access Platform [Help Center](https://nbdc-datashare.lassoinformatics.com/help-center) with any question about the data warnings or how to use the data.
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
