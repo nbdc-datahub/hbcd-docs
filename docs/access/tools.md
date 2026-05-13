@@ -51,7 +51,7 @@ A free, open-source image viewer for medical images, particularly MRI data. Part
 
 ## NMIND
 
-[NMIND](https://www.nmind.org/about) is a collaborative initiative dedicated to improving transparency, reproducibility, and efficiency in neuroimaging research. NMIND principles, standards, and tools were used to develop the HBCD [Processing & Derivative Data Standards](../instruments/processing/standards.md). Explore a growing collection of tools tested and improved through the NMIND process under [Evaluated Tools](https://www.nmind.org/proceedings/).
+[NMIND](https://www.nmind.org/about) is a collaborative initiative dedicated to improving transparency, reproducibility, and efficiency in neuroimaging research. NMIND principles, standards, and tools were used to develop the HBCD [Processing & Derivative Data Standards](../standards/processing/standards.md). Explore a growing collection of tools tested and improved through the NMIND process under [Evaluated Tools](https://www.nmind.org/proceedings/).
 
 ## ReproSchema
 

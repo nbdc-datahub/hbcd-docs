@@ -1,17 +1,17 @@
-# Timeline Follow Back (*TLFB*)
+# Timeline Follow Back (TLFB)
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>pex_ch_tlfb</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Substance Use Before and During Pregnancy</div>
-  </div>
-</div>
-
----------------------------------------------
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>pex_bm_tlfb</code></td></tr>
+<tr><td><b>Construct</b></td><td>Substance Use Before and During Pregnancy</td></tr>
+<tr><td><b>Study Visits</b></td><td>V01, V02</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
+<b>Method</b>: Staff-administered, in-person (self-administered in Alabama) (10 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td>Response distributions are reviewed for outliers and additionally cross-checked with ASSIST V1/V2 to ensure consistency in reported substances.</td></tr>
+</tbody></table>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -49,25 +49,6 @@ Participants were asked to report occasions (except cigarettes/cigarillos and dr
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Pregnant who gave birth or Primary Caregiver</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in-person (except in Alabama, where participants were trained to self-administer)</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V01, V02</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>10 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers and additionally cross-checked with ASSIST V1/V2 to ensure consistency in reported substances.</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 

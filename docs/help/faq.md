@@ -272,7 +272,7 @@ REVIEW & REVISE THIS FAQ
   <span class="arrow">▸</span>
 </div>
 <div class="notification-collapsible-content">
-<p>Please refer to the <a href="../../instruments/processing">HBCD Processing Pipelines</a> for an overview of the pipelines and software standards. For full documentation on how each pipeline was used for HBCD processing, please visit the external <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> page.</p>
+<p>Please refer to the <a href="../../standards/processing">HBCD Processing Pipelines</a> for an overview of the pipelines and software standards. For full documentation on how each pipeline was used for HBCD processing, please visit the external <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> page.</p>
 </div>
 
 <div id="faq-FS" class="notification-banner" onclick="toggleCollapse(this)">

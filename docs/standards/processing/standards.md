@@ -84,12 +84,9 @@ Additional requirements include compliance with HBCD Study derivative data stand
 All software standards also apply to derivative data standards for HBCD Study data. In practice, this means software must comply with the data standards in order for its processed outputs to be eligible for inclusion in a release. Therefore, in addition to the requirements outlined below, all pipelines must produce derivatives compatible with current release data.
 
 ### BIDS Compliance & BIDS App Implementation
-BIDS is a community-driven standard for organizing neuroimaging and behavioral data to make datasets structured, shareable, and reproducible. BIDS Apps are containerized applications that run on any system supporting [Docker](https://docs.docker.com/get-started/get-docker/) or [Apptainer](https://apptainer.org/docs/user/main/quick_start.html) (Singularity). All HBCD pipelines must be containerized following [BIDS-App guidelines](https://bids-apps.neuroimaging.io/).
+BIDS is a community-driven standard for organizing neuroimaging and behavioral data to make datasets structured, shareable, and reproducible. BIDS Apps are containerized applications that intake and output BIDS-formatted data. 
 
-**Benefits of Containerization:**        
-<i class="fa fa-check-square"></i> Ensures all software dependencies are included.      
-<i class="fa fa-check-square"></i> Guarantees consistent processing environments across systems.        
-<i class="fa fa-check-square"></i> Simplifies reproducibility and collaboration. 
+Per the [BIDS-App guidelines](https://bids-apps.neuroimaging.io/), all HBCD pipelines must be containerized to run on any system supporting [Docker](https://docs.docker.com/get-started/get-docker/) or [Apptainer](https://apptainer.org/docs/user/main/quick_start.html) (Singularity). Containerization ensures that all software dependencies are included to guarantee consistent processing environments across systems. This is not only critical for reproducibility, but also makes data processing more straightforward and foolproof.
 
 ### Dedicated Pipeline Documentation Website  
 HBCD pipelines must maintain living documentation via a dedicated website. This provides a current, easily navigable resource beyond static publications or a GitHub README. We recommend hosting documentation with [Read the Docs](https://docs.readthedocs.com/platform/stable/) or [GitHub Pages](https://pages.github.com/). See the [fMRIPrep documentation](https://fmriprep.org/en/stable/) for guidance on organization of level of detail.

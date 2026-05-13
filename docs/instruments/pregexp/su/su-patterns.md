@@ -1,17 +1,17 @@
 # Substance Use Patterns in Pregnancy
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>ex_bm_subst</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Substance Use in Pregnancy</div>
-  </div>
-</div>
-
----------------------------------------------
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>pex_bm_subst</code></td></tr>
+<tr><td><b>Construct</b></td><td>Substance Use in Pregnancy</td></tr>
+<tr><td><b>Study Visit(s)</b></td><td>V02 <i>or later (see <a href="#warning">Data Warning</a>)</i></td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Birth Parent<br>
+<b>Method</b>: Self administered in-person (5 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td>Response distributions are reviewed for outliers and additionally cross-checked with ASSIST V1/V2 to ensure consistency in reported substances.</td></tr>
+</tbody></table>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -50,25 +50,6 @@
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Birth Parent</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self administered in person</td></tr>
-<tr><td><b>Visits</b></td>
-<td style="word-wrap: break-word; white-space: normal;">V02 <i>or later (see <a href="#warning">Data Warning</a>)</i></td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>5 min</td></tr>
-<tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers and additionally cross-checked with ASSIST V1/V2 to ensure consistency in reported substances.</td></tr>      
-</tbody>
-</table>
 
 ## Instrument Details
 
