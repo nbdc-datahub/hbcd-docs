@@ -6,7 +6,6 @@ table {
 }
 th, td {
     border: 1px solid #ddd;
-    padding: 8px;
     word-wrap: break-word !important;
     white-space: normal !important;
 }
@@ -234,20 +233,18 @@ th, td {
 /* Make lists behave more like normal text blocks */
 .table-no-vertical-lines ul {
   margin: 0;
-  padding-left: 0;  /* indentation */
+  padding-left: 0;
 }
 /* Reduce bottom space between last list item and table border */
 .table-no-vertical-lines ul:last-child {
-  margin-top: 0; /* padding-top unnecessary; UL rarely has it */
-  margin-bottom: 0; /* padding-bottom unnecessary; UL rarely has it */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Normalize list item spacing */
 .table-no-vertical-lines li {
   margin: 0;
   line-height: 1.2;
 }
-
-/* Compact Table Style */
 /* Compact table with no vertical lines */
 .compact-table {
   width: 100%;
@@ -277,7 +274,7 @@ th, td {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* Optional: normalize list item alignment */
+/* Normalize list item alignment */
 .compact-table li {
   margin: 0;
   padding: 0;

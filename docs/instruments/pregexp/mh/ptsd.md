@@ -1,6 +1,6 @@
 # DSM5 Severity Acute Stress or PTSD
 
-National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder
+<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder</i></p>
 
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>

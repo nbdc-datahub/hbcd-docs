@@ -16,37 +16,37 @@ Health V1 & V2 instruments include the following:
   <td colspan="4"><b>ADMINISTERED VISIT 1</b></td>
 </tr>
 <tr>
-    <td>Health V1- Health History</td>
+    <td><a href="#health-v1-health-history-healthhx">Health V1- Health History</a></td>
     <td>Healthhx</td>
     <td>Pre-pregnancy and pregnancy health</td>
     <td><code>pex_bm_health_preg__healthhx</code></td>
 </tr>
 <tr>
-    <td>Health V1- Exposures & Vaccines</td>
+    <td><a href="#health-v1-exposures-vaccines-vacc">Health V1- Exposures & Vaccines</a></td>
     <td>Vacc</td>
     <td>Vaccines in pregnancy</td>
     <td><code>pex_bm_health_preg__exp__vacc</code></td>
 </tr>
 <tr>
-    <td>Health V1- Chronic Conditions</td>
+    <td><a href="#health-v1-chronic-conditions-chroncond">Health V1- Chronic Conditions</a></td>
     <td>Chroncond</td>
     <td>Chronic conditions/STIs in pregnancy</td>
     <td><code>pex_bm_health_preg__chroncond</code></td>
 </tr>
 <tr>
-    <td>Health V1- Illness</td>
+    <td><a href="#health-v1-illness-illness">Health V1- Illness</a></td>
     <td>Illness</td>
     <td>Illness in pregnancy</td>
     <td><code>pex_bm_health_preg__illness</code></td>
 </tr>
 <tr>
-    <td>Health V1- ER Admissions</td>
+    <td><a href="#health-v1-er-admissions-erhosp">Health V1- ER Admissions</a></td>
     <td>ERhosp</td>
     <td>ER or hospitalization in pregnancy</td>
     <td><code>pex_bm_health_preg__erhosp</code></td>
 </tr>
 <tr>
-    <td>Health V1- Medications</td>
+    <td><a href="#health-v1-medications-meds">Health V1- Medications</a></td>
     <td>Meds</td>
     <td>Medications in pregnancy</td>
     <td><code>pex_bm_health_preg__meds</code></td>
@@ -56,13 +56,13 @@ Health V1 & V2 instruments include the following:
   <td colspan="4"><b>ADMINISTERED VISIT 2</b></td>
 </tr>
 <tr>
-    <td>Health V2- Pregnancy</td>
+    <td><a href="#health-v2-pregnancy-healthv2-preg">Health V2- Pregnancy</a></td>
     <td>Healthv2 Preg</td>
     <td>Health updates up to delivery</td>
     <td><code>pex_bm_healthv2_preg</code></td>
 </tr>
 <tr>
-    <td>Health V2- Infancy</td>
+    <td><a href="#health-v2-infancy-healthv2-inf">Health V2- Infancy</a></td>
     <td>Healthv2 Inf</td>
     <td>Delivery and birth outcomes</td>
     <td><code>pex_bm_healthv2_inf</code></td>
@@ -154,8 +154,6 @@ Health V1 & V2 instruments include the following:
 </tbody>
 </table>
 </div>
-
-
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
@@ -276,20 +274,6 @@ Health updates for the birth parent between enrollment and delivery, including: 
 
 ### Health V2- Infancy (Healthv2 Inf)
 
-<div id="warning-healthv2-preg" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning-healthv2-preg" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>The same coding issues identified at V1, including difficulty with ICD codes (from BioPortal ICD) and medication names (from RxNORM) apply to this visit as well.</p>
-</div>
-
 <div id="warning-healthv2-inf" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
@@ -305,7 +289,7 @@ Health updates for the birth parent between enrollment and delivery, including: 
 The same coding issues identified at V1, including difficulty with ICD codes (from BioPortal ICD) and medication names (from RxNORM) apply to this visit as well.</p>
 <p><b>Filters</b><br>
 Out-of-range values were filtered (i.e. changed to "n/a") for the following Health V2- Infancy fields:</b></p>
-<table class="compact-table-no-vertical-lines" style="font-size: 1.1em;">
+<table class="compact-table-no-vertical-lines">
 <thead>
   <tr> 
   <th>Field Name</th>    

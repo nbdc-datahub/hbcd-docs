@@ -1,7 +1,5 @@
 # Brief Infant Sleep Questionnaire (BISQ-SF)
 
-
-
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>ph_cg_bisq</code></td></tr>
@@ -12,7 +10,7 @@
 <b>Respondent</b>: Parent on Child<br>
 <b>Method</b>: Remote survey (5 min estimated duration)</td></tr>
 <td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Monitor data dashboard for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>
+<td>Monitor data dashboard for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>
 </tbody>
 </table>
 
@@ -43,29 +41,29 @@ Scores are for research purposes only and are not for individual dissemination o
 ## Instrument Details
 The Brief Infant Sleep Questionnaire - Short Form (**BISQ-SF**) instrument has three subscales:
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines">
 <thead>
   <tr>
-    <th>Subscale</th>
-    <th># Items</th>
-    <th>Construct/Description</th>
+    <th style="width: 20%">Subscale</th>
+    <th style="white-space: nowrap !important;"># Items</th>
+    <th>Construct</th>
   </tr>
 </thead>
 <tbody>
 <tr>
   <td><strong>Infant Sleep (IS)</strong></td>
-  <td>5</td>
-  <td style="word-wrap: break-word; white-space: normal;">Sleep patterns: sleep onset latency, number and duration of night wakings, longest stretch of sleep, and total night sleep</td>
+  <td style="text-align: center;">5</td>
+  <td>Sleep patterns: sleep onset latency, number and duration of night wakings, longest stretch of sleep, and total night sleep</td>
 </tr>
 <tr>
   <td><strong>Parent Perception (PP)</strong></td>
-  <td>3</td>
-  <td style="word-wrap: break-word; white-space: normal;">Caregiver perceptions of bedtime difficulty, overnight sleep, and overall child sleep problems</td>
+  <td style="text-align: center;">3</td>
+  <td>Caregiver perceptions of bedtime difficulty, overnight sleep, and overall child sleep problems</td>
 </tr>
 <tr>
   <td><strong>Parent Behavior (PB)</strong></td>
-  <td>11</td>
-  <td style="word-wrap: break-word; white-space: normal;">Sleep ecology: bedtime routine consistency, bedtime, parental behavior at time of sleep onset and following night wakings, and sleep locations at time of sleep onset and following night wakings</td>
+  <td style="text-align: center;">11</td>
+  <td>Sleep ecology: bedtime routine consistency, bedtime, parental behavior at time of sleep onset and following night wakings, and sleep locations at time of sleep onset and following night wakings</td>
 </tr>
 </tbody>
 </table>
@@ -98,10 +96,6 @@ The Brief Infant Sleep Questionnaire - Short Form (**BISQ-SF**) instrument has t
 <p>The BISQ-SF is scored in collaboration with the instrument developers (<a href="https://www.babysleep.com/BISQ/">https://www.babysleep.com/BISQ/</a>). Parent responses are uploaded to the Baby Sleep team who scores the instrument utilizing a proprietary algorithm and then sends scores back to the HBCD data team. Note that the BISQ-R SF (short form) includes 19 scored questions and one additional sleep duration question which is not scored.</p>
 <p><b>From <a href="http://babysleep.com">babysleep.com</a></b>: Scores on each subscale and the total score are scaled from 0 to 100, with higher scores denoting better sleep quality, more positive perception of infant sleep, and parent behaviors that promote healthy and independent sleep. The Total score (T) is computed from the average of the 3 subscale scores.</p>
 </div>
-
-## Resources
-
- - <a href="http://babysleep.com">babysleep.com</a>
 
 ## References
 <div class="references">

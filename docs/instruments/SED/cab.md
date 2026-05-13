@@ -13,7 +13,7 @@
 </td></tr>
 <tr>
 <td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
 Scoring verification, data consistency checks, and checks for missingness.
 </td>
 </tr>
@@ -41,7 +41,7 @@ Scoring verification, data consistency checks, and checks for missingness.
 
 ## Instrument Details
 
-The **CASR-SF** is a 15-item scale indexing lifetime and current experiences and frequency (in the past 12 months) with physical, sexual, and psychological abuse. It is participant self-administered and administered in a private setting away from any additional adults who may have accompanied the participant to the visit. 
+The **CABr-SF** is a 15-item scale indexing lifetime and current experiences and frequency (in the past 12 months) with physical, sexual, and psychological abuse. It is participant self-administered and administered in a private setting away from any additional adults who may have accompanied the participant to the visit. 
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-gear"></i></span>
@@ -72,7 +72,6 @@ Language was updated to use gender-neutral terminology in the definition of inti
 </div>
 <div class="collapsible-content">
 <p>The CABr-SF has 16 questions. Question 1 is a gateway ("Have you ever been in an intimate relationship?"). Questions 2–16 (15 items) are abuse experience items. The summary score is computed as the mean of the abuse experience responses (questions 2-16), multiplied by 15; summary scores are only calculated if participants responded to at least 11 of the 15 abuse experience items. Note that in the updated scoring procedures, "Don’t Know" and "Decline to answer" are regarded as missing or non-responses.</p>
-<!-- <p>OLD: updated by Jen as shown above The summary score is computed as the mean of the frequency of abuse experience responses (e.g., ranging from "not in the past 12 months" (0) to "daily/almost daily" (5)) multiplied by 15 when there are response for at least 11 of the 15 items. Note that in the updated scoring procedures, "Don’t Know" and "Decline to answer" are regarded as missing or non-responses.</p> -->
 </div>
 
 ## References

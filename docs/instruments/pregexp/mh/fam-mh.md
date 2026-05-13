@@ -22,10 +22,10 @@
 
 The **HBCD FAM MH** assesses self-reported diagnoses and mental health conditions of the biological mother, biological father, and biological maternal and paternal grandmother and grandfather. It was created from combining and modifying items from the following instruments:
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
   <tbody>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal; text-align: center;"><strong>Family History Assessment Module<br>
+      <td><strong>Family History Assessment Module<br>
       (<a href="https://arc.psych.wisc.edu/self-report/family-history-assessment-module-fham/">FHAM</a>)</strong></td>
       <td>
         <ul>
@@ -38,7 +38,7 @@ The **HBCD FAM MH** assesses self-reported diagnoses and mental health condition
       </td>
     </tr>
     <tr>
-      <td style="word-wrap: break-word; white-space: normal; text-align: center;"><strong>All of Us Personal and Family Health History<br>
+      <td><strong>All of Us Personal and Family Health History<br>
       (<a href="https://www.researchallofus.org/wp-content/themes/research-hub-wordpress-theme/media/2023/PaFHH_Survey_English.pdf">All of Us</a>)</strong><br>
       Collected for only the biological mother [<code>bm</code>] and biological father [<code>bf</code>] and excludes questions about age of diagnosis, treatment, and medications</td>
       <td>

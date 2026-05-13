@@ -1,41 +1,27 @@
 # Experiences of Unfair Treatment
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>sed_bm_phx__discr</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Experiences of Unfair Treatment</div>
-  </div>
-</div>
+<table class="table-no-vertical-lines">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>sed_bm_phx__discr</code></td></tr>
+<tr><td><b>Construct</b></td><td>Experiences of Unfair Treatment</td></tr>
+<tr><td><b>Study Visits</b></td><td>V01, V05, V07</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Parent<br>
+<b>Method</b>: Self-administered remotely (3 min estimated duration)
+</td></tr>
+<tr>
+<td><b>Quality Control</b></td>
+<td>Data dashboard monitored for variable missingness, possible coding errors, scoring verification, and data consistency.</td>
+</tr>
+</tbody>
+</table>
 
----------------------------------------------
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Parent</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self-administered remotely</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V01, V05, V07</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>3 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Data dashboard was monitored for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 

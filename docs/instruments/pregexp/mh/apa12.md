@@ -74,7 +74,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 <td>Depression</td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
-<td style="word-wrap: break-word; white-space: normal;">Participants proceed to Level 2 irrespective of Level 1 answers;<br>
+<td>Participants proceed to Level 2 irrespective of Level 1 answers;<br>
  Level 2 measures replaced with PROMIS-SF v1.0 <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Depression 8a questionnaire</a>;<br>
  Clinical alert is triggered if responses (items from 'I felt worthless' to 'I felt that nothing could cheer me up') exceed threshold of 32</td>
 </tr>
@@ -106,7 +106,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 <td>Suicidal Ideation</td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
-<td style="word-wrap: break-word; white-space: normal;">Clinical alert is triggered if response to self-harm question exceeds threshold of 0</td>
+<td>Clinical alert is triggered if response to self-harm question exceeds threshold of 0</td>
 </tr>
 <tr>
 <td>Psychosis</td>
@@ -118,7 +118,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 <td>Sleep Disturbance</td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
  Level 2 symptom measures replaced with PROMIS-SF v1.0 <a href="https://heal.nih.gov/files/CDEs/2024-07/promis-sleep-disturbance-8a-crf.pdf">Sleep Disturbance 8a</a></td>
 </tr>
 <tr>
@@ -143,14 +143,14 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 <td>Personality Inventory</td>
 <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
-<td style="word-wrap: break-word; white-space: normal;">Participants proceed to Level 2 without completing Level 1;<br>
+<td>Participants proceed to Level 2 without completing Level 1;<br>
 Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Personality Inventory for DSM-5 Brief</a>, which assesses 5 personality trait domains (<i>Negative Affect, Detachment, Antagonism, Disinhibition, & Psychoticism</i>)</td>
 </tr>
 <tr>
 <td>Substance Use</td>
 <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
 <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
-<td style="word-wrap: break-word; white-space: normal;">Domain excluded (SU is measured by a separate set of instruments, e.g. ASSIST, Substance Use Patterns, & TLFB)</td>
+<td>Domain excluded (SU is measured by a separate set of instruments, e.g. ASSIST, Substance Use Patterns, & TLFB)</td>
 </tr>
 </tbody>
 </table>
@@ -203,82 +203,82 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 </thead>
 <tbody>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Depression</td>
-<td style="word-wrap: break-word; white-space: normal;">depr_001, depr_002</td>
-<td style="word-wrap: break-word; white-space: normal;">None (all proceed to Level 2)</td>
-<td style="word-wrap: break-word; white-space: normal;">PROMIS Adult Short Form v1.0 Depression 8a</td>
+<td>Depression</td>
+<td>depr_001, depr_002</td>
+<td>None (all proceed to Level 2)</td>
+<td>PROMIS Adult Short Form v1.0 Depression 8a</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Anger</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_anger_001</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_anger_001 &ge; 2</td>
-<td style="word-wrap: break-word; white-space: normal;">LEVEL 2-Anger-Adult (PROMIS Emotional Distress-Anger-Short Form)</td>
+<td>Anger</td>
+<td>apa_1_anger_001</td>
+<td>apa_1_anger_001 &ge; 2</td>
+<td>LEVEL 2-Anger-Adult (PROMIS Emotional Distress-Anger-Short Form)</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Mania</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_mania_001, apa_1_mania_002</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_mania_001 or apa_1_mania_002  &ge; 2</td>
-<td style="word-wrap: break-word; white-space: normal;">LEVEL 2-Mania-Adult (Altman Self-Rating Mania Scale)</td>
+<td>Mania</td>
+<td>apa_1_mania_001, apa_1_mania_002</td>
+<td>apa_1_mania_001 or apa_1_mania_002  &ge; 2</td>
+<td>LEVEL 2-Mania-Adult (Altman Self-Rating Mania Scale)</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Anxiety</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_anx_001</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_anx_001  &ge; 2</td>
-<td style="word-wrap: break-word; white-space: normal;">LEVEL 2-Anxiety-Adult (PROMIS Emotional Distress-Anxiety-Short Form)</td>
+<td>Anxiety</td>
+<td>apa_1_anx_001</td>
+<td>apa_1_anx_001  &ge; 2</td>
+<td>LEVEL 2-Anxiety-Adult (PROMIS Emotional Distress-Anxiety-Short Form)</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Somatic</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_somat_001, apa_1_somat_002</td>
-<td style="word-wrap: break-word; white-space: normal;">None (all proceed to Level 2)</td>
-<td style="word-wrap: break-word; white-space: normal;">LEVEL 2-Somatic Symptom-Adult (Patient Health Questionnaire 15 Somatic Symptom Severity [PHQ-15])</td>
+<td>Somatic</td>
+<td>apa_1_somat_001, apa_1_somat_002</td>
+<td>None (all proceed to Level 2)</td>
+<td>LEVEL 2-Somatic Symptom-Adult (Patient Health Questionnaire 15 Somatic Symptom Severity [PHQ-15])</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Self-harm</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_suic_001</td>
-<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
-<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
+<td>Self-harm</td>
+<td>apa_1_suic_001</td>
+<td>No Level 2</td>
+<td>No Level 2</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Psychosis</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_psych_001, apa_1_psych_002</td>
-<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
-<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
+<td>Psychosis</td>
+<td>apa_1_psych_001, apa_1_psych_002</td>
+<td>No Level 2</td>
+<td>No Level 2</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Sleep</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_sleep_001</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_sleep_001  &ge; 2</td>
-<td style="word-wrap: break-word; white-space: normal;">Adult v1.0 - Sleep Disturbance 8a</td>
+<td>Sleep</td>
+<td>apa_1_sleep_001</td>
+<td>apa_1_sleep_001  &ge; 2</td>
+<td>Adult v1.0 - Sleep Disturbance 8a</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Memory</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_memo_001</td>
-<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
-<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
+<td>Memory</td>
+<td>apa_1_memo_001</td>
+<td>No Level 2</td>
+<td>No Level 2</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Repetitive</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_repet_001, apa_1_repet_002</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_repet_001 or apa_1_repet_002  &ge; 2</td>
-<td style="word-wrap: break-word; white-space: normal;">LEVEL 2-Repetitive Thoughts and Behaviors-Adult (adapted from the Florida Obsessive-Compulsive Inventory [FOCI] Severity Scale [Part B])</td>
+<td>Repetitive</td>
+<td>apa_1_repet_001, apa_1_repet_002</td>
+<td>apa_1_repet_001 or apa_1_repet_002  &ge; 2</td>
+<td>LEVEL 2-Repetitive Thoughts and Behaviors-Adult (adapted from the Florida Obsessive-Compulsive Inventory [FOCI] Severity Scale [Part B])</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Dissociation</td>
-<td style="word-wrap: break-word; white-space: normal;">apa_1_disso_001</td>
-<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
-<td style="word-wrap: break-word; white-space: normal;">No Level 2</td>
+<td>Dissociation</td>
+<td>apa_1_disso_001</td>
+<td>No Level 2</td>
+<td>No Level 2</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Personality</td>
-<td style="word-wrap: break-word; white-space: normal;">Not administered</td>
-<td style="word-wrap: break-word; white-space: normal;">Not administered- all to personality inventory</td>
-<td style="word-wrap: break-word; white-space: normal;">Personality inventory for DSM-5 Brief</td>
+<td>Personality</td>
+<td>Not administered</td>
+<td>Not administered- all to personality inventory</td>
+<td>Personality inventory for DSM-5 Brief</td>
 </tr>
 <tr>
 <td>Substance use</td>
-<td style="word-wrap: break-word; white-space: normal;">Not administered</td>
-<td style="word-wrap: break-word; white-space: normal;">Not administered</td>
-<td style="word-wrap: break-word; white-space: normal;">Not administered</td>
+<td>Not administered</td>
+<td>Not administered</td>
+<td>Not administered</td>
 </tr>
 </tbody>
 </table>
@@ -295,52 +295,52 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 </thead>
 <tbody>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Depression_Scoring_Manual_05Dec2023.pdf" target="_blank">Depression</a></td>
-<td style="word-wrap: break-word; white-space: normal;">apa_2_depr_001-apa_2_depr_008</td>
-<td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
-<td style="word-wrap: break-word; white-space: normal;">All items must be answered in order to produce a valid score using the scoring tables</td>
+<td><a class="in-cell-link" href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Depression_Scoring_Manual_05Dec2023.pdf" target="_blank">Depression</a></td>
+<td>apa_2_depr_001-apa_2_depr_008</td>
+<td>sum all items; look up t-score</td>
+<td>All items must be answered in order to produce a valid score using the scoring tables</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/a56cc2a0-3818-4975-bbcb-4a047e1ffbea/APA-DSM5TR-Level2AngerAdult.pdf" target="_blank">Anger</a></td>
-<td style="word-wrap: break-word; white-space: normal;">apa_2_anger_001-apa_2_anger_005</td>
-<td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
-<td style="word-wrap: break-word; white-space: normal;">One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/a56cc2a0-3818-4975-bbcb-4a047e1ffbea/APA-DSM5TR-Level2AngerAdult.pdf" target="_blank">Anger</a></td>
+<td>apa_2_anger_001-apa_2_anger_005</td>
+<td>sum all items; look up t-score</td>
+<td>One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/c1783d55-268a-47b2-9932-a549b21c8d64/APA-DSM5TR-Level2ManiaAdult.pdf" target="_blank">Mania</a></td>
-<td style="word-wrap: break-word; white-space: normal;">apa_2_mania_001-apa_2_mania_005</td>
-<td style="word-wrap: break-word; white-space: normal;">sum all items; score of  &ge; 6 indicates high probability of mania</td>
-<td style="word-wrap: break-word; white-space: normal;">One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/c1783d55-268a-47b2-9932-a549b21c8d64/APA-DSM5TR-Level2ManiaAdult.pdf" target="_blank">Mania</a></td>
+<td>apa_2_mania_001-apa_2_mania_005</td>
+<td>sum all items; score of  &ge; 6 indicates high probability of mania</td>
+<td>One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/f284f967-ed9e-4754-99fc-b32765b1c4a0/APA-DSM5TR-Level2AnxietyAdult.pdf" target="_blank">Anxiety</a></td>
-<td style="word-wrap: break-word; white-space: normal;">apa_2_anx_001-apa_2_anx_007</td>
-<td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
-<td style="word-wrap: break-word; white-space: normal;">Less than 3 missing items, pro-rate ((raw score *7)/(number answered)). Three or more missing items should not be scored</td>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/f284f967-ed9e-4754-99fc-b32765b1c4a0/APA-DSM5TR-Level2AnxietyAdult.pdf" target="_blank">Anxiety</a></td>
+<td>apa_2_anx_001-apa_2_anx_007</td>
+<td>sum all items; look up t-score</td>
+<td>Less than 3 missing items, pro-rate ((raw score *7)/(number answered)). Three or more missing items should not be scored</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/843c7fa5-9a40-4795-a25e-70208903d88c/APA-DSM5TR-Level2SomaticSymptomAdult.pdf" target="_blank">Somatic</a></td>
-<td style="word-wrap: break-word; white-space: normal;">apa_2_somat_001-apa_2_somat_015</td>
-<td style="word-wrap: break-word; white-space: normal;">sum all items; interpreted using the Interpretation Table for the PHQ-15 Somatic Symptom Severity scale</td>
-<td style="word-wrap: break-word; white-space: normal;">Less than 4 missing items, pro-rate ((raw score *15)/(number answered)). Four or more missing items should not be scored</td>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/843c7fa5-9a40-4795-a25e-70208903d88c/APA-DSM5TR-Level2SomaticSymptomAdult.pdf" target="_blank">Somatic</a></td>
+<td>apa_2_somat_001-apa_2_somat_015</td>
+<td>sum all items; interpreted using the Interpretation Table for the PHQ-15 Somatic Symptom Severity scale</td>
+<td>Less than 4 missing items, pro-rate ((raw score *15)/(number answered)). Four or more missing items should not be scored</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Sleep_Scoring_Manual.pdf" target="_blank">Sleep</a></td>
-<td style="word-wrap: break-word; white-space: normal;">apa_2_sleep_001-apa_2_sleep_008</td>
-<td style="word-wrap: break-word; white-space: normal;">sum all items (<b>note that items 2 and 8 are reverse-scored</b>); look up t-score</td>
-<td style="word-wrap: break-word; white-space: normal;">All items must be answered in order to produce a valid score using the scoring tables</td>
+<td><a class="in-cell-link" href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Sleep_Scoring_Manual.pdf" target="_blank">Sleep</a></td>
+<td>apa_2_sleep_001-apa_2_sleep_008</td>
+<td>sum all items (<b>note that items 2 and 8 are reverse-scored</b>); look up t-score</td>
+<td>All items must be answered in order to produce a valid score using the scoring tables</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/a451f9f0-40b7-4262-8ef2-e7be2ea004f2/APA-DSM5TR-Level2RepetitiveThoughtsAndBehaviorsAdult.pdf" target="_blank">Repetitive</a></td>
-<td style="word-wrap: break-word; white-space: normal;">apa_2_repet_001-apa_2_repet_005</td>
-<td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
-<td style="word-wrap: break-word; white-space: normal;">One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/a451f9f0-40b7-4262-8ef2-e7be2ea004f2/APA-DSM5TR-Level2RepetitiveThoughtsAndBehaviorsAdult.pdf" target="_blank">Repetitive</a></td>
+<td>apa_2_repet_001-apa_2_repet_005</td>
+<td>sum all items; look up t-score</td>
+<td>One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><a class="in-cell-link" href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf" target="_blank">Personality</a></td>
-<td style="word-wrap: break-word; white-space: normal;">apa_2_pers_001-apa_2_pers_025</td>
-<td style="word-wrap: break-word; white-space: normal;">sum all items; look up t-score</td>
-<td style="word-wrap: break-word; white-space: normal;">Six missing items, pro-rate ((raw score *25)/(number answered)). Seven or more missing items should not be scored</td>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf" target="_blank">Personality</a></td>
+<td>apa_2_pers_001-apa_2_pers_025</td>
+<td>sum all items; look up t-score</td>
+<td>Six missing items, pro-rate ((raw score *25)/(number answered)). Seven or more missing items should not be scored</td>
 </tr>
 </tbody>
 </table>
