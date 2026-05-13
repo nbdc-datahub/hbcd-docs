@@ -1,17 +1,18 @@
 # 2-item Food Insecurity
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>sed_cg_foodins</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Food Insecurity</div>
-  </div>
-</div>
-
----------------------------------------------
+<table class="table-no-vertical-lines">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>sed_cg_foodins</code></td></tr>
+<tr><td><b>Construct</b></td><td>Food Insecurity</td></tr>
+<tr><td><b>Study Visits</b></td><td>V02, V03</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: Yes<br>
+<b>Respondent</b>: Parent<br>
+<b>Method</b>: Remote survey (1 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td>Monitor data dashboard for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>
+</tbody>
+</table>
 
 <div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
@@ -31,25 +32,6 @@
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Parent</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Remote survey</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V02, V03</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>1 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Monitor data dashboard for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 

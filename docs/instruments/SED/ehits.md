@@ -1,47 +1,28 @@
-# Partner Dynamics (eHITS)
+# Partner Dynamics Extended (eHITS)
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>sed_bm_ehits</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Partner Dynamics Extended – Hurt, Insult, Threaten, Scream (<i>eHITS</i>)
-    </div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Intimate Partner Violence</div>
-  </div>
-</div>
+<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Partner Dynamics Extended – Hurt, Insult, Threaten, Scream</i></p>
 
----------------------------------------------
+<table class="table-no-vertical-lines">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>sed_bm_ehits</code></td></tr>
+<tr><td><b>Construct</b></td><td>Intimate Partner Violence</td></tr>
+<tr><td><b>Study Visits</b></td><td>V01</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Parent<br>
+<b>Method</b>: HBCD Study staff in-person (2 min estimated duration)
+</td></tr>
+<tr>
+<td><b>Quality Control</b></td>
+<td>Data dashboard monitored for variable missingness, possible coding errors, scoring verification, and data consistency.</td>
+</tr>
+</tbody>
+</table>
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Parent</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in person</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V01</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>2 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Data dashboard was monitored for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 The eHITS is a self-administered 5 question Likert scale screener for experiences of psychological aggression, physical assault, sexual coercion, and injury. Originally created for quick administration in a health care setting or emergency department, the eHITS asks individuals to indicate whether their partner has done any of the following over the past 12 months: "physically hurt you", "insulted you", "threatened to harm you", "screamed or cursed at you", or "forced you to have sexual activities."

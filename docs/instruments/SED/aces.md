@@ -1,4 +1,4 @@
-# Adverse Childhood Experiences (*ACEs*)
+# Adverse Childhood Experiences (ACEs)
 
 <table class="table-no-vertical-lines">
 <thead><tr><th></th><th>ACEs</th><th>Pediatric ACEs</th></tr></thead>

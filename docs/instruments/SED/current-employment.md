@@ -1,41 +1,26 @@
 # Current Employment
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>sed_cg_employ</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Current Employment</div>
-  </div>
-</div>
-
----------------------------------------------
+<table class="table-no-vertical-lines">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>sed_cg_employ</code></td></tr>
+<tr><td><b>Construct</b></td><td>Current Employment</td></tr>
+<tr><td><b>Study Visits</b></td><td>V05</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: Yes<br>
+<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
+<b>Method</b>: Self administered (in person or remote) (5 min estimated duration)
+</td></tr>
+<tr>
+<td><b>Quality Control</b></td>
+<td>Data were inspected for missing response and proportions.</td>
+</tr>
+</tbody>
+</table>
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes </td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Birth Parent or Primary Caregiver</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self administered (in person or remote)</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V05</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>5 minutes</td></tr>
-<tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Data were inspected for missing response and proportions.</td></tr>      
-</tbody>
-</table>
 
 ## Instrument Details
 
@@ -53,102 +38,30 @@ Version “Caregiver Occupation and Employment”. Caregiver employment and indu
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
-<p><b>Instruction Item Changes</b><br>We modified the prompt to address language more consistent with other sections.</p>
-<b>Assessment Item Changes</b>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
-<thead>
-  <tr>
-    <th style="width: 5%;">Item</th>
-    <th style="width: 40%;">Original Text</th>
-    <th style="width: 60%;">Updated Text</th>
-  </tr>
-  </thead>
+<div class="table-collapsible-content">
+<p>Instruction prompts were modified to make language more consistent with other sections and assessment items, which included several new items (outlined in table below). Response options were updated to require radio button choices in place of the write-in durations option in the ECHO form.</p>
+
+<table class="compact-table-no-vertical-lines">
 <tbody>
-<tr>
-  <td>Prompt</td>
-  <td style="word-wrap: break-word; white-space: normal;">Please provide information on your occupation and employment in Section A below. If you have a spouse/partner, please provide information on his/her occupation and employment in Section B.</td>
-  <td style="word-wrap: break-word; white-space: normal;">The following questions are about your child's primary residence (the place outside of daycare where they spend the most time). If the child lives in two places at least 2 days per week, please answer the questions about the residence you are most familiar with.</td>
-</tr>
-<tr>
-  <td>New item</td>
-  <td>NA</td>
-  <td style="word-wrap: break-word; white-space: normal;">At any time during your most recent pregnancy, did you work at a job for pay?</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">Have you returned to the job you had during your most recent pregnancy?</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">Did you take leave from work after your new baby was born?</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">How many weeks of leave, in total, did you take/ have you taken so far?</td>
-</tr>
-<tr>
-<td>Section B</td>
-<td style="word-wrap: break-word; white-space: normal;">Section B: Occupation and Employment of Spouse/Partner<br />INSTRUCTIONS: Please answer Section B questions if you have a spouse/partner; otherwise, SKIP TO END</td>
-<td style="word-wrap: break-word; white-space: normal;">The following questions are about your partner's occupation and employment. Your "partner" refers to any significant figure in your life that helps you in raising your child. For example, your partner could be your spouse. However, your partner could also be your boyfriend/girlfriend or relative.</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td>Do you have a partner?</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">What is the highest grade or level of school that your partner completed?</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">At any time during your most recent pregnancy, did your partner work at a job for pay?</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">Has your partner returned to the job they held during your most recent pregnancy?</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">Did your partner take leave from work after your new baby was born?</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">How many weeks of leave, in total, did your partner take/has your partner taken so far?</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">The following questions are about substances that you or any member of your child's household may be exposed to during your/their current employment.</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">Do you or any member of your child's household(s) work with any of these hazardous materials on the job? <br />(select all that apply)<br />Asbestos<br />Batteries<br />Lead<br />Mercury<br />Paint<br />Pesticides<br />None<br />Don't know<br />Decline to answer</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">Before coming home do you/they (select all that apply) <br />Change clothes?<br />Change shoes?<br />Shower?<br />Don&rsquo;t know<br />Decline to answer</td>
-</tr>
-<tr>
-<td>New item</td>
-<td>NA</td>
-<td style="word-wrap: break-word; white-space: normal;">Are your/their work clothes laundered separately from the family wash?</td>
-</tr>
+<tr><td><b>Updated prompt text:</b> The following questions are about your child's primary residence (the place outside of daycare where they spend the most time). If the child lives in two places at least 2 days per week, please answer the questions about the residence you are most familiar with.</td></tr>
+<tr><td>At any time during your most recent pregnancy, did you work at a job for pay?</td></tr>
+<tr><td>Have you returned to the job you had during your most recent pregnancy?</td></tr>
+<tr><td>Did you take leave from work after your new baby was born?</td></tr>
+<tr><td>How many weeks of leave, in total, did you take/ have you taken so far?</td></tr>
+
+<tr><td><b>Updated prompt text:</b> The following questions are about your partner's occupation and employment. Your "partner" refers to any significant figure in your life that helps you in raising your child. For example, your partner could be your spouse. However, your partner could also be your boyfriend/girlfriend or relative.</td></tr>
+<tr><td>Do you have a partner?</td></tr>
+<tr><td>What is the highest grade or level of school that your partner completed?</td></tr>
+<tr><td>At any time during your most recent pregnancy, did your partner work at a job for pay?</td></tr>
+<tr><td>Has your partner returned to the job they held during your most recent pregnancy?</td></tr>
+<tr><td>Did your partner take leave from work after your new baby was born?</td></tr>
+<tr><td>How many weeks of leave, in total, did your partner take/has your partner taken so far?</td></tr>
+<tr><td>The following questions are about substances that you or any member of your child's household may be exposed to during your/their current employment.</td></tr>
+<tr><td>Do you or any member of your child's household(s) work with any of these hazardous materials on the job? <br />(select all that apply)<br />Asbestos; Batteries; Lead; Mercury; Paint; Pesticides; None; Don't know; Decline to answer</td></tr>
+<tr><td>Before coming home do you/they (select all that apply) <br />Change clothes?; Change shoes?; Shower?; Don’t know; Decline to answer</td></tr>
+<tr><td>Are your/their work clothes laundered separately from the family wash?</td></tr>
 </tbody>
 </table>
-<p><b>Response Option Changes</b><br>
-The ECHO form allowed for write-in durations, whereas HBCD form requires radio button choices throughout for durations.</p>
 </div>
 
 ## References

@@ -1,23 +1,23 @@
 # HOME-21 Infant-Toddler
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>sed_cg_home_it</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-maximize"></i> Full Name:</div>
-    <div class="info-value">
-      Home Observation for Measurement of the Environment Infant-Toddler Version (<i>HOME-21 IT</i>) 
-    </div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Child’s Home Environment: Cognitive Stimulation and Emotional Support in the Home</div>
-  </div>
-</div>
+<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Home Observation for Measurement of the Environment Infant-Toddler Version</i></p>
 
----------------------------------------------
+<table class="table-no-vertical-lines">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>sed_cg_home_it</code></td></tr>
+<tr><td><b>Construct</b></td><td>Child’s Home Environment: Cognitive Stimulation and Emotional Support in the Home</td></tr>
+<tr><td><b>Study Visits</b></td><td>V04, V06</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
+<b>Method</b>: HBCD Study staff or self-administered (in-person or remote) (10 min estimated duration)
+</td></tr>
+<tr>
+<td><b>Quality Control</b></td>
+<td>Subject matter experts constructed an algorithm to verify and correct scores computed automatically.</td>
+</tr>
+</tbody>
+</table>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -37,25 +37,6 @@
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Birth Parent or Primary Caregiver</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff or self-administered (in-person or remote)</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V04, V06</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>10 minutes</td></tr>
-<tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Subject matter experts constructed a scoring algorithm to verify/correct the scores computed automatically in the data system.</td></tr>      
-</tbody>
-</table>
 
 ## Instrument Details
 
