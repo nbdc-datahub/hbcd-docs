@@ -24,7 +24,7 @@
 </tr>
 <tr>
   <td><b>Quality Control</b></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
     Data dashboard was monitored for variable missingness, possible coding errors, scoring verification when needed, and data consistency. High missingness was noted for income, although this is in line with expectations.
   </td>
 </tr>
@@ -147,12 +147,12 @@ Demographic information is crucial for understanding the child’s environment a
 <div class="table-collapsible-content">
 <br>
 <strong>&nbsp;&nbsp;Table 1. Demographics of Birth Parent</strong>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines">
 <thead>
     <tr>
-    <th style="width: 60%;">Construct</th>
-    <th style="width: 10%;">Source</th>
-    <th style="width: 20%;">Citations</th>
+    <th>Construct</th>
+    <th>Source</th>
+    <th>Citations</th>
     </tr>
 </thead>
     <tbody>
@@ -230,9 +230,7 @@ Demographic information is crucial for understanding the child’s environment a
     <tr>
         <td>Currently Work for Pay</td>
     <td>
-      <span class="tooltip">BFY
-      <span class="tooltiptext">Baby's First Years</span>
-      </span>
+      <span class="tooltip">BFY<span class="tooltiptext">Baby's First Years</span></span>
     </td>
         <td>Year 1 Protocol - G35, Mwork</td>
     </tr>
@@ -242,7 +240,8 @@ Demographic information is crucial for understanding the child’s environment a
         <td>Cioffredi, et al. (2024)</td>
     </tr>
     <tr>
-    <td style="border: 1px solid #ddd;  word-wrap: break-word; white-space: normal;">Jobs During Pregnancy - <b>{</b> All Jobs - Work 35+ Hr/Wk; At Least 1 Job At 20 Hr/Wk for 1 Month; Type of Work; Job Start/Stop Dates; Typical Hours/Week <b>}</b>
+    <td>Jobs During Pregnancy -<br>
+      <b>{</b> All Jobs - Work 35+ Hr/Wk; At Least 1 Job At 20 Hr/Wk for 1 Month; Type of Work; Job Start/Stop Dates; Typical Hours/Week <b>}</b>
     </td>
         <td>HBCD</td>
         <td>Cioffredi, et al. (2024)</td>
@@ -270,19 +269,19 @@ Demographic information is crucial for understanding the child’s environment a
   </table>
 
 <strong>&nbsp;&nbsp;Table 2. Demographics of Other Biological Parent <i>(Only collected at V01 baseline interview)</i></strong>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines">
 <thead>
     <tr>
-    <th style="width: 60%;">Construct</th>
-    <th style="width: 10%;">Source</th>
-    <th style="width: 20%;">Citations</th>
+    <th>Construct</th>
+    <th>Source</th>
+    <th>Citations</th>
     </tr>
 </thead>
     <tbody>
 <tr>
-    <td style="width: 350px; word-wrap: break-word; white-space: normal;">Age</td>
+    <td>Age</td>
     <td>HBCD</td>
-    <td style="width: 300px; word-wrap: break-word; white-space: normal;">Cioffredi, et al. (2024)</td>
+    <td>Cioffredi, et al. (2024)</td>
 </tr>
 <tr>
   <td>Race/Ethnicity</td>
@@ -310,7 +309,7 @@ Demographic information is crucial for understanding the child’s environment a
     <td>Hamilton, et al. (2011)</td>
 </tr>
 <tr>
-     <td style="border: 1px solid #ddd; word-wrap: break-word; white-space: normal;">Job At Conception - <b>{</b> Work for Pay; Type of Work; Full Time/ Part Time <b>}</b></td>
+     <td>Job At Conception - <b>{</b> Work for Pay; Type of Work; Full Time/ Part Time <b>}</b></td>
     <td>HBCD</td>
     <td>Cioffredi, et al. (2024)</td>
 </tr>
