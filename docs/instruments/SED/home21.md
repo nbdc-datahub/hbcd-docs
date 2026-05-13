@@ -67,25 +67,14 @@ Assessment of children’s home environments is crucial to understanding context
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The HOME-21 is scored in 2 domains, Cognitive Stimulation and Emotional Support, plus a total score. Individual items are rescored as Yes/No and summed within each domain and overall. The tool is intended to be used in infants aged Birth - 2y 11m 30d. See the table below for details and <a href="https://doi.org/10.1037/pas0001183">Lansford et al. (2023)</a> for complete scoring procedure details.</p>
+<p>Individual items are re-scored as Yes (1)/No (0) and summed within two domains, Cognitive Stimulation (range 0-8) and Emotional Support (range 0-3), plus a total score (range 0-12). The tool is intended to be used in infants aged Birth - 2y 11m 30d. See the table below for details and <a href="https://doi.org/10.1037/pas0001183">Lansford et al. (2023)</a> for complete scoring procedure details.</p>
 
-<table class="compact-table-no-vertical-lines">
-<tbody>
-<tr><td><b>Cognitive Stimulation</b></td>
-<td>Sum of Yes (1) responses for items in table (range 0-8) provided complete valid responses.</td></tr> 
-<tr><td><b>Emotional Support</b></td>
-<td>Sum of Yes (1) responses for items in table (range 0-3) provided complete valid responses.</td></tr> 
-<tr><td><b>HOME-21 Infant/Toddler Total</b></td>
-<td>Sum of all Yes (1) responses in table (range 0-12) provided complete valid responses.</td></tr> 
-</tbody>
-</table>
-
-<b>Cognitive Stimulation</b>
+<p><b>COGNITIVE STIMULATION</b></p>
 <table class="compact-table-no-vertical-lines">
 <thead>
   <tr>
-    <th style="width: 50%">Item</th>
-    <th>Response Options</th>
+    <th width="40%">Item</th>
+    <th width="40%">Response Options</th>
     <th>Recode/Scoring</th>
   </tr>
   </thead>
@@ -93,26 +82,15 @@ Assessment of children’s home environments is crucial to understanding context
 <tr>
   <td>About how many children&rsquo;s books does your child have?</td>
   <td>
-1 = None<br>
-2 = 1–2<br>
-3 = 3–9<br>
-4 = 10–19<br>
+1 = None;
+2 = 1–2;
+3 = 3–9;
+4 = 10–19;
 5 = 20 or more
 </td>
   <td>1-3 → No (0)<br>4, 5 → Yes (1)</td>
 </tr>
 
-<tr>
-  <td>About how many hours are the TV or other screens in your home in use each day?</td>
-  <td>
-1 = Less than 1 hour<br>
-2 = 1–2 hours<br>
-3 = 3–4 hours<br>
-4 = 5–7 hours<br>
-5 = 8 hours or more
-</td>
-  <td>4, 5 → No (0)<br>1, 2, 3 → Yes (1)</td>
-</tr>
 <tr>
   <td>Does your family have reliable access to the internet?</td>
   <td>0 = No, 1 = Yes</td>
@@ -121,10 +99,10 @@ Assessment of children’s home environments is crucial to understanding context
 <tr>
   <td>How often does your whole family get together with relatives or friends?</td>
   <td>
-1 = Once a year or less<br>
-2 = A few times a year<br>
-3 = Once a month<br>
-4 = Two or three times a month<br>
+1 = Once a year or less;
+2 = A few times a year;
+3 = Once a month;
+4 = Two or three times a month;
 5 = Once a week or more
 </td>
   <td>1-3 → No (0)<br>4, 5 → Yes (1)</td>
@@ -132,11 +110,11 @@ Assessment of children’s home environments is crucial to understanding context
 <tr>
   <td>How often does your child spend time with you or another adult in your home doing outdoor activities (like going for a walk outside, playing at a park playground)?</td>
   <td>
-1 = Never<br>
-2 = A few times a year or less<br>
-3 = Once a month<br>
-4 = Once a week<br>
-5 = At least four times a week<br>
+1 = Never; 
+2 = A few times a year or less;
+3 = Once a month;
+4 = Once a week;
+5 = At least four times a week;
 6 = Once a day or more often
 </td>
   <td>1-3 → No (0)<br>4, 5, 6 → Yes (1)</td>
@@ -144,11 +122,11 @@ Assessment of children’s home environments is crucial to understanding context
 <tr>
 <td>How often do you or another adult in your home get a chance to read stories to your child?</td>
 <td>
-1 = Never<br>
-2 = Several times a year<br>
-3 = Several times a month<br>
-4 = Once a week<br>
-5 = About 3 times a week<br>
+1 = Never;
+2 = Several times a year;
+3 = Several times a month;
+4 = Once a week;
+5 = About 3 times a week;
 6 = Every day
 </td>
 <td>1-4 → No (0)<br>5, 6 → Yes (1)</td>
@@ -157,9 +135,9 @@ Assessment of children’s home environments is crucial to understanding context
 <tr>
 <td>How often do you or another adult in your home take your child shopping (like going to the grocery store)?</td>
 <td>
-1 = Hardly ever<br>
-2 = Once a month<br>
-3 = Once a week<br>
+1 = Hardly ever;
+2 = Once a month;
+3 = Once a week;
 4 = Twice a week or more
 </td>
 <td>1, 2 → No (0)<br>3, 4 → Yes (1)</td>
@@ -176,24 +154,24 @@ Assessment of children’s home environments is crucial to understanding context
 </tr>
 </tbody>
 </table>
-<b>Emotional Support</b>
+
+<p><b>EMOTIONAL SUPPORT</b></p>
 <table class="compact-table-no-vertical-lines">
 <thead>
   <tr>
-    <th>Item</th>
-    <th>Response Options</th>
+    <th width="40%">Item</th>
+    <th width="40%">Response Options</th>
     <th>Recode/Scoring</th>
   </tr>
-  </thead>
-<tbody>
+</thead>
 <tr>
   <td>How often does your child eat a meal with you or another adult in your home?</td>
   <td>
-1 = Never<br>
-2 = Once a month or less<br>
-3 = Once a week<br>
-4 = Several times a week<br>
-5 = Once a day<br>
+1 = Never;
+2 = Once a month or less;
+3 = Once a week;
+4 = Several times a week;
+5 = Once a day;
 6 = More than once a day
 </td>
   <td>1-3 → No (0)<br>4, 5, 6 → Yes (1)</td>
@@ -201,10 +179,10 @@ Assessment of children’s home environments is crucial to understanding context
 <tr>
 <td>How many times, if any, have you spanked your child in the past week?</td>
 <td>
-0 = No<br>
-1 = 1–2 times<br>
-3 = 3–4 times<br>
-4 = 5–6 times<br>
+0 = No;
+1 = 1–2 times;
+3 = 3–4 times;
+4 = 5–6 times;
 5 = 7 times or more
 </td>
 <td>0 → Yes (1)<br>1-5 → No (0)</td>
@@ -213,13 +191,37 @@ Assessment of children’s home environments is crucial to understanding context
 <tr>
 <td>Children seem to demand attention when their parents are busy, doing housework, for example. How often do you talk to your child while you are working?</td>
 <td>
-1 = Never<br>
-2 = Rarely<br>
-3 = Sometimes<br>
-4 = Often<br>
+1 = Never;
+2 = Rarely;
+3 = Sometimes;
+4 = Often;
 5 = Always
 </td>
 <td>1-3 → No (0)<br>4, 5 → Yes (1)</td>
+</tr>
+</tbody>
+</table>
+
+<p><b>OTHER (not included in summary scores)</b></p>
+<table class="compact-table-no-vertical-lines">
+<thead>
+  <tr>
+    <th width="40%">Item</th>
+    <th width="40%">Response Options</th>
+    <th>Recode/Scoring</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>About how many hours are the TV or other screens in your home in use each day?</td>
+  <td>
+1 = Less than 1 hour;
+2 = 1–2 hours;
+3 = 3–4 hours;
+4 = 5–7 hours;
+5 = 8 hours or more
+</td>
+  <td>4, 5 → No (0)<br>1, 2, 3 → Yes (1)</td>
 </tr>
 </tbody>
 </table>
