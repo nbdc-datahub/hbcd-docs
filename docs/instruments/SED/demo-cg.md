@@ -145,8 +145,7 @@ Demographic information is crucial for understanding the child’s environment a
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<br>
-<strong>&nbsp;&nbsp;Table 1. Demographics of Birth Parent</strong>
+<p><b>Table 1. Demographics of Birth Parent</b></p>
 <table class="compact-table-no-vertical-lines">
 <thead>
     <tr>
@@ -241,7 +240,8 @@ Demographic information is crucial for understanding the child’s environment a
     </tr>
     <tr>
     <td>Jobs During Pregnancy -<br>
-      <b>{</b> All Jobs - Work 35+ Hr/Wk; At Least 1 Job At 20 Hr/Wk for 1 Month; Type of Work; Job Start/Stop Dates; Typical Hours/Week <b>}</b>
+      <b>{</b> All Jobs - Work 35+ Hr/Wk; At Least 1 Job At 20 Hr/Wk for 1 Month;<br>
+      Type of Work; Job Start/Stop Dates; Typical Hours/Week <b>}</b>
     </td>
         <td>HBCD</td>
         <td>Cioffredi, et al. (2024)</td>
@@ -267,8 +267,7 @@ Demographic information is crucial for understanding the child’s environment a
     </tr>
   </tbody>
   </table>
-
-<strong>&nbsp;&nbsp;Table 2. Demographics of Other Biological Parent <i>(Only collected at V01 baseline interview)</i></strong>
+<p><b>Table 2. Demographics of Other Biological Parent <i>(Only collected at V01 baseline interview)</i></b></p>
 <table class="compact-table-no-vertical-lines">
 <thead>
     <tr>

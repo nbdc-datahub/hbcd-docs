@@ -143,7 +143,7 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
 <tr>
     <td>Cannabinoid (<code>c_any_cannabinoid_n</code>)</td>
     <td>thc (<code>s_thc_n</code>)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Carboxy-delta-9-THC (<code>c_delta-9-THC_n</code>)</td>
+    <td>Carboxy-delta-9-THC (<code>c_delta-9-THC_n</code>)</td>
 </tr>
 
 <tr>
