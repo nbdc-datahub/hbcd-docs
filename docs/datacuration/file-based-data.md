@@ -11,7 +11,7 @@ File-based data is provided for imaging, EEG, and biosensor recordings. Unlike [
 <p>
 <div id="agefields" class="table-banner">
   <span class="emoji"><i class="fa fa-hourglass-half"></i><i class="fa fa-person-cane"></i></span>
-<span class="text">See <a href="../../instruments/agevariables/#raw-file-based-data" target="_blank">Age Variable Definitions</a> for documentation on fields reporting age in raw BIDS data.</span>
+<span class="text">See <a href="../../instruments/agevariables/#file-based-data" target="_blank">Age Variable Definitions</a> for documentation on fields reporting age in raw BIDS data.</span>
 </div>
 </p>
 
@@ -48,13 +48,13 @@ hbcd/
 <p>
 <div class="table-banner">
   <span class="emoji"><i class="fa fa-circle-info"></i><i class="fa fa-person-cane"></i></span>
-<span class="text">MRI scanner information is now included in the session-level scans TSV files (<code>sub-{ID}_ses-{V0X}_scans.tsv</code>) and may be made available in the tabulated data in a future release.</span>
+<span class="text">MRI scanner information is now included in the session-level scans TSV files (<code>sub-{ID}_ses-{V0X}_scans.tsv</code>) and will be made available as tabulated data in a future release.</span>
 </div>
 </p>
 
-Participant-, session-, and scan-level data are stored in the following `.tsv` files, accompanied by `.json` sidecar files containing metadata:
+Participant-, session-, and scan-level data are stored in TSV files accompanied by side JSONs with metadata:
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<table class="table-no-vertical-lines">
 <thead>
 <tr>
   <th>Level</th>
@@ -76,14 +76,14 @@ Participant-, session-, and scan-level data are stored in the following `.tsv` f
 <tr>
   <td>Scan</td>
   <td><code>sub-{ID}_ses-{V0X}_scans.tsv</code></td>
-  <td>Per-scan information (e.g., age at scan, <a href="../../instruments/mri/qc/#location-of-qc-results-in-release" target="_blank">raw data QC metrics</a>, scanner info)</td>
+  <td>Per-scan information (e.g., age, <a href="../../instruments/mri/qc/#location-in-release-data" target="_blank">raw data QC metrics</a>, scanner info)</td>
 </tr>
 </tbody>
 </table>
 
 ## Derivatives
 
-The `derivatives/` folder contains derivatives, which are file outputs from <a href="../../instruments/processing/" target="_blank">processing pipelines</a>. 
+The `derivatives/` folder contains derivatives, which are file outputs from <a href="../../standards/processing/" target="_blank">processing pipelines</a>. 
 
 <pre class="folder-tree">
 hbcd/

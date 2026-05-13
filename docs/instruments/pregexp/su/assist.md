@@ -1,32 +1,31 @@
-# ASSIST      
+# ASSIST V1-V4
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-    <th colspan="3">Alcohol, Smoking and Substance Involvement Screening Test (<i>ASSIST</i>) Versions V1-V4:</th>
-  </tr>
-  <tr>
-    <th>Version</th>
-    <th>Construct</th>
-    <th>Table Name</th>
-  </tr>
-</thead>
+<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Alcohol, Smoking and Substance Involvement Screening Test V1-V4</i></p>
+
+<table class="compact-table-no-vertical-lines" style="font-size: 16px;">
 <tbody>
-<tr><td>ASSIST V1</td>
-<td>Substance use and problematic use before and during pregnancy</td>
-<td><code>pex_bm_assistv1</code></td>
+<tr><td><b>Table Name</b></td><td><code>pex_bm_assist{v1|v2|v3|v4}</code></td></tr>
+<tr>
+  <td><b>Construct</b></td>
+  <td>
+    <b>ASSIST substance use assessment across visits:</b>
+    <ul>
+      <li><b>V1</b>: Pre-pregnancy and during pregnancy</li>
+      <li><b>V2</b>: Late pregnancy and early postnatal (0–4 weeks)</li>
+      <li><b>V3</b>: Postpartum (3-month anchor)</li>
+      <li><b>V4</b>: Postpartum (12-month anchor)</li>
+    </ul>
+  </td>
 </tr>
-<tr><td>ASSIST V2</td>
-<td style="word-wrap: break-word; white-space: normal;">Substance use during end of pregnancy ( between V01 and delivery) and postnatal (weeks 0-4, between delivery and V2)</td>
-<td><code>pex_bm_assistv2</code></td></tr>
-<tr><td>ASSIST V3</td>
-<td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy (3 month anchors)</td>
-<td><code>pex_bm_assistv3</code></td></tr>
-<tr><td>ASSIST V4</td>
-<td style="word-wrap: break-word; white-space: normal;">Substance use after pregnancy (12 month anchors)</td>
-<td><code>pex_bm_assistv4</code></td></tr>
-</tbody>
-</table>
+<tr><td><b>Visits</b></td><td>V01, V02, V03, V04</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Pregnant Participant/Birth Parent (as applicable)<br>
+<b>Method</b>: Staff-administered, in-person (self-administered in Alabama) (3-5 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td>Response distributions are reviewed for outliers. For V1-V2, responses are cross-checked with TLFB for consistency in reported substance use.</td></tr>
+</tbody></table>
+
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -61,25 +60,6 @@
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Pregnant Participant <strong>[V1]</strong>; Birth Parent <strong>[V2]</strong>; Birth Parent or Primary Caregiver <strong>[V3, V4]</strong></td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study Staff, in-person (except in Alabama, where participants were trained to self-administer)</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V01, V02, V03, V04</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>5 min <strong>[V1, V2]</strong>; 3 min <strong>[V3, V4]</strong></td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Response distributions are reviewed for outliers and, for V1 and V2, additionally cross-checked with TLFB to ensure consistency in reported substances.</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 

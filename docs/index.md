@@ -29,9 +29,9 @@
   See the <a href="changelog/releasenotes" target="_blank">Release Notes</a> for information on the latest release.
 </p>
 
-<p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 2 auto;">
+<!-- <p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 2 auto;">
   Key resources provided in the HBCD Data Release Docs include: <a href="access/download" target="_blank">Access & Download</a>, <a href="access/resp_data_use">Responsible Use</a>, <a href="instruments/">Data Structures</a>, <a href="instruments/">Instrument/Measure Documentation</a>, and <a href="instruments/processing/standards/">Processing Standards</a>.
-</p>
+</p> -->
 
 <p></p>
 

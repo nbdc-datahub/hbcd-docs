@@ -68,8 +68,8 @@ nav:
         - Metadata: standards/metadata.md
         - Naming Conventions: standards/naming-conventions.md
     - Processing & Derivative Data Standards: 
-        - Processing Pipelines: instruments/processing/index.md
-        - Pipeline Software Standards: instruments/processing/standards.md
+        - Processing Pipelines: standards/processing/index.md
+        - Pipeline Software Standards: standards/processing/standards.md
   - Data Structure & File Types:
     - Data Structure Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md
