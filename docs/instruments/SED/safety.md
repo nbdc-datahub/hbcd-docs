@@ -1,41 +1,26 @@
 # PhenX+ Neighborhood Safety 
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>sed_bm_nbhsaf</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Neighborhood Safety</div>
-  </div>
-</div>
-
----------------------------------------------
+<table class="table-no-vertical-lines">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>sed_bm_nbhsaf</code></td></tr>
+<tr><td><b>Construct</b></td><td>Neighborhood Safety</td></tr>
+<tr><td><b>Study Visits</b></td><td>V01, V02, V07, V09</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Parent<br>
+<b>Method</b>: Self-administered (in-person or remote) (1 min estimated duration)
+</td></tr>
+<tr>
+<td><b>Quality Control</b></td>
+<td>Data dashboard monitored for missingness.</td>
+</tr>
+</tbody>
+</table>
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Parent</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Self, in person or remote</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V01, V02, V07, V09</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>1 min</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Data dashboard monitored for missingness.</td></tr>
-</tbody>
-</table>
 
 ## Instrument Details
 

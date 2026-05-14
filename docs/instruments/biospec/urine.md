@@ -197,7 +197,7 @@ Ketamine (<code>c_ket_u</code>)<br>Norketamine (<code>c_nket_u</code>)<br>Phency
     </thead>
     <tbody>
 <tr><td>Specimen</td>
-<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte)</td>
+<td>Confirmatory results (presence of any analyte)</td>
 <td><code>c_any_specimen_u</code></td>
 <td rowspan="3"><code>1</code>=positive
     <br><code>0</code>=negative<br>
@@ -205,7 +205,7 @@ Ketamine (<code>c_ket_u</code>)<br>Norketamine (<code>c_nket_u</code>)<br>Phency
 </td>
 </tr>
 <tr><td>Class</td>
-<td style="word-wrap: break-word; white-space: normal;">Confirmatory results (presence of any analyte in class)</td><td><code>c_any_stim_u</code></td>
+<td>Confirmatory results (presence of any analyte in class)</td><td><code>c_any_stim_u</code></td>
 </tr>
 <tr>
 <td rowspan="3">Analyte</td><td>Screening results</td><td><code>s_amp_u</code></td></tr>

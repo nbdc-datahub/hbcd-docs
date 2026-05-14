@@ -113,7 +113,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   <td>
     Embedded tables with Value:Label options for categorical variables
     <span class="tooltip">
-      <i class="fa-solid fa-eye" aria-hidden="true"></i>
+      <i class="fa-solid fa-eye"></i>
       <span class="tooltiptext">
         <img src="../levels.png" alt="Levels table example" style="max-height: 200px;">
       </span>

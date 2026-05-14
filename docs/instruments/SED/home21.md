@@ -67,115 +67,161 @@ Assessment of children’s home environments is crucial to understanding context
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>The HOME-21 is scored in 2 domains, <i>Cognitive Stimulation (C)</i> and <i>Emotional Support (E)</i> (see NLSY Scale* in table below), plus a total score:</p><br><br>
+<p>Individual items are re-scored as Yes (1)/No (0) and summed within two domains, Cognitive Stimulation (range 0-8) and Emotional Support (range 0-3), plus a total score (range 0-12). The tool is intended to be used in infants aged Birth - 2y 11m 30d. See the table below for details and <a href="https://doi.org/10.1037/pas0001183">Lansford et al. (2023)</a> for complete scoring procedure details.</p>
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px; padding-bottom: 0; margin-bottom: 0;">
-<tbody>
-<tr><td><b>Cognitive Stimulation (C)</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Sum of Yes (1) responses for items with C in table (range 0-8) provided complete valid responses.</td></tr> 
-<tr><td><b>Emotional Support (E)</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Sum of Yes (1) responses for items with E in table (range 0-3) provided complete valid responses.</td></tr> 
-<tr><td><b>HOME-21 Infant/Toddler Total</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Sum of all Yes (1) responses in table (range 0-12) provided complete valid responses.</td></tr> 
-</tbody>
-</table>
-<p>Individual items are rescored as Yes/No and summed within each domain and overall. The tool is intended to be used in infants aged Birth-2y11m30d. Details are as follows. See <a href="https://doi.org/10.1037/pas0001183">Lansford et al. (2023)</a> for complete scoring procedure details.</p>
-<br><br>
-
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
+<p><b>COGNITIVE STIMULATION</b></p>
+<table class="compact-table-no-vertical-lines">
 <thead>
   <tr>
-    <th style="width: 40%;">Item</th>
-    <th style="width: 40%;">Response Options</th>
-    <th style="width: 20%;">Recode/Scoring</th>
-    <th style="width: 5%;">IT</th>
-    <th style="width: 5%; word-wrap: break-word; white-space: normal;">NLSY Scale*</th>
+    <th width="40%">Item</th>
+    <th width="40%">Response Options</th>
+    <th>Recode/Scoring</th>
   </tr>
   </thead>
 <tbody>
 <tr>
-  <td style="word-wrap: break-word; white-space: normal;">About how many children&rsquo;s books does your child have?</td>
-  <td style="word-wrap: break-word; white-space: normal;">1 = None, 2 = 1&ndash;2, 3 = 3&ndash;9, 4 = 10&ndash;19, 5 = 20 or more</td>
-  <td style="word-wrap: break-word; white-space: normal;">1-3 scored No (0)<br>4, 5 scored Yes (1)</td>
-  <td>X</td>
-  <td>C</td>
+  <td>About how many children&rsquo;s books does your child have?</td>
+  <td>
+1 = None;
+2 = 1–2;
+3 = 3–9;
+4 = 10–19;
+5 = 20 or more
+</td>
+  <td>1-3 → No (0)<br>4, 5 → Yes (1)</td>
 </tr>
+
 <tr>
-  <td style="word-wrap: break-word; white-space: normal;">How often does your child eat a meal with you or another adult in your home?</td>
-  <td style="word-wrap: break-word; white-space: normal;">1 = Never, 2 = Once a month or less, 3 = Once a week, 4 = Several times a week, 5 = Once a day, 6 = More than once a day</td>
-  <td style="word-wrap: break-word; white-space: normal;">1-3 scored No (0)<br>4, 5, 6 scored Yes (1)</td>
-  <td>X</td>
-  <td>E</td>
-</tr>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;">About how many hours are the TV or other screens in your home in use each day?</td>
-  <td style="word-wrap: break-word; white-space: normal;">1=Less than 1 hour, 2=1-2 hours, 3=3-4 hours, 4=5-7 hours, 5=8 hours or more</td>
-  <td style="word-wrap: break-word; white-space: normal;">4, 5 scored No (0)<br>1, 2, 3 scored Yes (1)</td>
-  <td>X</td>
-  <td>-</td>
-</tr>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;">Does your family have reliable access to the internet?</td>
+  <td>Does your family have reliable access to the internet?</td>
   <td>0 = No, 1 = Yes</td>
   <td>0 = No, 1 = Yes</td>
-  <td>X</td>
-  <td>C</td>
 </tr>
 <tr>
-  <td style="word-wrap: break-word; white-space: normal;">How often does your whole family get together with relatives or friends?</td>
-  <td style="word-wrap: break-word; white-space: normal;">1 = Once a year or less, 2 = A few times a year, 3 = Once a month, 4 = Two or three times a month, 5 = Once a week or more</td>
-  <td style="word-wrap: break-word; white-space: normal;">1-3 scored No (0)<br>4, 5 scored Yes (1)</td>
-  <td>X</td>
-  <td>C</td>
+  <td>How often does your whole family get together with relatives or friends?</td>
+  <td>
+1 = Once a year or less;
+2 = A few times a year;
+3 = Once a month;
+4 = Two or three times a month;
+5 = Once a week or more
+</td>
+  <td>1-3 → No (0)<br>4, 5 → Yes (1)</td>
 </tr>
 <tr>
-  <td style="word-wrap: break-word; white-space: normal;">How often does your child spend time with you or another adult in your home doing outdoor activities (like going for a walk outside, playing at a park playground)?</td>
-  <td style="word-wrap: break-word; white-space: normal;">1 = Never, 2 = A few times a year or less, 3 = Once a month, /4 = Once a week, 5 = At least four times a week, 6 = Once a day or more often</td>
-  <td style="word-wrap: break-word; white-space: normal;">1-3 scored No (0)<br>4, 5, 6 scored Yes (1)</td>
-  <td>X</td>
-  <td>C</td>
+  <td>How often does your child spend time with you or another adult in your home doing outdoor activities (like going for a walk outside, playing at a park playground)?</td>
+  <td>
+1 = Never; 
+2 = A few times a year or less;
+3 = Once a month;
+4 = Once a week;
+5 = At least four times a week;
+6 = Once a day or more often
+</td>
+  <td>1-3 → No (0)<br>4, 5, 6 → Yes (1)</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">How often do you or another adult in your home get a chance to read stories to your child?</td>
-<td style="word-wrap: break-word; white-space: normal;">1 = Never, 2 = Several times a year, 3 = Several times a month, 4 = Once a week, 5 = About 3 times a week, 6 = Every day</td>
-<td style="word-wrap: break-word; white-space: normal;">1-4 scored No (0)<br>5, 6 scored Yes (1)</td>
-<td>X</td>
-<td>C</td>
+<td>How often do you or another adult in your home get a chance to read stories to your child?</td>
+<td>
+1 = Never;
+2 = Several times a year;
+3 = Several times a month;
+4 = Once a week;
+5 = About 3 times a week;
+6 = Every day
+</td>
+<td>1-4 → No (0)<br>5, 6 → Yes (1)</td>
+</tr>
+
+<tr>
+<td>How often do you or another adult in your home take your child shopping (like going to the grocery store)?</td>
+<td>
+1 = Hardly ever;
+2 = Once a month;
+3 = Once a week;
+4 = Twice a week or more
+</td>
+<td>1, 2 → No (0)<br>3, 4 → Yes (1)</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">How many times, if any, have you spanked your child in the past week?</td>
-<td style="word-wrap: break-word; white-space: normal;">0=No, 1=1-2 times, 3=3-4 times, 4=5-6 times, 5=7 times or more</td>
-<td style="word-wrap: break-word; white-space: normal;">0 scored Yes (1)<br>1-5 scored No (0)</td>
-<td>X</td>
-<td>E</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">How often do you or another adult in your home take your child shopping (like going to the grocery store)?</td>
-<td style="word-wrap: break-word; white-space: normal;">1 = Hardly ever, 2 = Once a month, 3 = Once a week, 4 = Twice a week or more</td>
-<td style="word-wrap: break-word; white-space: normal;">1, 2 scored No (0)<br>3, 4 scored Yes (1)</td>
-<td>X</td>
-<td>C</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">Does your child have cuddly, soft, or role-playing toys (like a doll)? These may be shared with sibling(s).</td>
+<td>Does your child have cuddly, soft, or role-playing toys (like a doll)? These may be shared with sibling(s).</td>
 <td>0 = No, 1 = Yes</td>
 <td>0 = No, 1 = Yes</td>
-<td>X</td>
-<td>C</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Does your child have toys that they can push or pull? These may be shared with sibling(s).</td>
+<td>Does your child have toys that they can push or pull? These may be shared with sibling(s).</td>
 <td>0 = No, 1 = Yes</td>
 <td>0 = No, 1 = Yes</td>
-<td>X</td>
-<td>C</td>
+</tr>
+</tbody>
+</table>
+
+<p><b>EMOTIONAL SUPPORT</b></p>
+<table class="compact-table-no-vertical-lines">
+<thead>
+  <tr>
+    <th width="40%">Item</th>
+    <th width="40%">Response Options</th>
+    <th>Recode/Scoring</th>
+  </tr>
+</thead>
+<tr>
+  <td>How often does your child eat a meal with you or another adult in your home?</td>
+  <td>
+1 = Never;
+2 = Once a month or less;
+3 = Once a week;
+4 = Several times a week;
+5 = Once a day;
+6 = More than once a day
+</td>
+  <td>1-3 → No (0)<br>4, 5, 6 → Yes (1)</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Children seem to demand attention when their parents are busy, doing housework, for example. How often do you talk to your child while you are working?</td>
-<td style="word-wrap: break-word; white-space: normal;">1 = Never, 2 = Rarely, 3 = Sometimes, 4 = Often, 5 = Always</td>
-<td style="word-wrap: break-word; white-space: normal;">1-3 scored No (0)<br>4, 5 scored Yes (1)</td>
-<td>X</td>
-<td>E</td>
+<td>How many times, if any, have you spanked your child in the past week?</td>
+<td>
+0 = No;
+1 = 1–2 times;
+3 = 3–4 times;
+4 = 5–6 times;
+5 = 7 times or more
+</td>
+<td>0 → Yes (1)<br>1-5 → No (0)</td>
+</tr>
+
+<tr>
+<td>Children seem to demand attention when their parents are busy, doing housework, for example. How often do you talk to your child while you are working?</td>
+<td>
+1 = Never;
+2 = Rarely;
+3 = Sometimes;
+4 = Often;
+5 = Always
+</td>
+<td>1-3 → No (0)<br>4, 5 → Yes (1)</td>
+</tr>
+</tbody>
+</table>
+
+<p><b>OTHER (not included in summary scores)</b></p>
+<table class="compact-table-no-vertical-lines">
+<thead>
+  <tr>
+    <th width="40%">Item</th>
+    <th width="40%">Response Options</th>
+    <th>Recode/Scoring</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>About how many hours are the TV or other screens in your home in use each day?</td>
+  <td>
+1 = Less than 1 hour;
+2 = 1–2 hours;
+3 = 3–4 hours;
+4 = 5–7 hours;
+5 = 8 hours or more
+</td>
+  <td>4, 5 → No (0)<br>1, 2, 3 → Yes (1)</td>
 </tr>
 </tbody>
 </table>

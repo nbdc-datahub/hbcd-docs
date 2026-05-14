@@ -12,7 +12,7 @@
 </td></tr>
 <tr>
 <td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
 Data dashboard was monitored for variable missingness, possible coding errors, scoring verification when needed, and data consistency.
 </td>
 </tr>
@@ -38,8 +38,9 @@ The HBCD BFY includes a selection of questions from the [BFY Age 1 Survey Instru
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Slight modifications were made for the HBCD study by removing the Medicaid coverage question (asked elsewhere in the study) as well as the following assessment and response option modifications:</strong></p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+<p>Slight modifications were made for the HBCD study by removing the Medicaid coverage question (asked elsewhere in the study) as well as the following assessment and response option modifications:</p>
+<table class="table-no-vertical-lines">
+<!-- <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px"> -->
   <tr>
       <th>Original Text</th>
       <th>Modified Text</th>   
