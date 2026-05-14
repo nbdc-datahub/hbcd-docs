@@ -36,10 +36,11 @@ This [PhenX+ Toolkit Discrimination](https://www.phenxtoolkit.org/protocols/view
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
+<div class="table-collapsible-content">
 <p><b>Modifications to Everyday Discrimination Scale</b><br>
-<b>Modified instruction text:</b> "In the following questions, we are interested in your perceptions about the way other people have treated you.  Can you tell me if any of the following has ever happened to you?".</p>
-<p><b>Response options ("main reason for these experiences"):</b></p>
+Instruction text was modified to: "In the following questions, we are interested in your perceptions about the way other people have treated you.  Can you tell me if any of the following has ever happened to you?".<br>
+<br>
+Response options ("main reason for these experiences") were modified as follows:</p>
 <ul>
   <li>Standardized capitalization (e.g., "Your ancestry or national origin" → "Your Ancestry or National Origin").</li>
   <li>Replaced “A physical disability” with “A Disability.”</li>
