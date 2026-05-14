@@ -38,20 +38,20 @@
 </div>
 <p></p>
 
-The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD). The dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> (<i>see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details</i>) under <code>geocoding/</code>:
+The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD). The dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a>:
 
 <pre class="folder-tree">
 hbcd/
-|__ concatenated/ 
-    |__ geocoding/
-        |__ HBCD_address_history_geocoded_filtered.csv
+└── concatenated/ 
+    └── geocoding/
+        └── HBCD_address_history_geocoded_filtered.csv
 </pre>
 
 ## Details
 
 **Geocoded Linked External Data (GLED)** are external datasets linked to participants’ residential addresses. They serve as proxy measures of cumulative social, economic, and environmental contexts that may help explain individual differences in development ([Fan et al. 2021](https://doi.org/10.1016/j.dcn.2021.101030)). At each study visit, the Birth Parent or Primary Caregiver reports the child’s residential address history. Study staff collect this information in person or remotely (completion time: 5–15 minutes).
 
-**Geocoded linkage measures were deliberately designed to be compatible with the ABCD Study data, with appropriate updates for year** (i.e. many of ABCD variables trace back to 2010 Census data, whereas HBCD is updated to 2020 Census data). The table below lists the geocoded measures included in the release for HBCD, categorized by domain, and associated links to detailed measure documentation available on the [ABCD Data Documentation site](https://docs.abcdstudy.org/latest/documentation/non_imaging/) (descriptions for each individual variable are available via this <a href="../gled-dd.html" target="_blank">supplemental table</a>). See [Fan et al. 2021](https://doi.org/10.1016/j.dcn.2021.101030) for additional details regarding each domain/measure.
+Geocoded linkage measures were deliberately designed to be compatible with the ABCD Study data, with appropriate updates for year (i.e. many of ABCD variables trace back to 2010 Census data, whereas HBCD is updated to 2020 Census data). The table below lists the geocoded measures included in the release for HBCD, categorized by domain, and associated links to detailed measure documentation available on the [ABCD Data Documentation site](https://docs.abcdstudy.org/latest/documentation/non_imaging/) (descriptions for each individual variable are available via this <a href="../gled-dd.html" target="_blank">supplemental table</a>). See [Fan et al. 2021](https://doi.org/10.1016/j.dcn.2021.101030) for additional details regarding each domain/measure.
 
 #### Geocoded Linkage Measures
 <div class="table-banner">

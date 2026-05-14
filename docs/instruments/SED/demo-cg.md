@@ -11,7 +11,7 @@
   <td>Adult Demographics (Birth Parent/Alternative Caregiver)</td>
 </tr>
 <tr>
-  <td><b>Study Visit(s)</b></td>
+  <td><b>Study Visits</b></td>
   <td>V01, V04, V06</td>
 </tr>
 <tr>

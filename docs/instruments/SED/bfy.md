@@ -4,7 +4,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>sed_bm_bfy</code></td></tr>
 <tr><td><b>Construct</b></td><td>Benefits/Services, Economic Stress</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V01, V05, V07</td></tr>
+<tr><td><b>Study Visits</b></td><td>V01, V05, V07</td></tr>
 <tr><td><b>Administration</b></td><td>
 <b>Child-specific</b>: No<br>
 <b>Respondent</b>: Parent<br>

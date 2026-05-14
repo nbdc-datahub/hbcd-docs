@@ -6,7 +6,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>mh_cg_mapdb__inf</code></td><td><code>mh_cg_mapdb__tod</code></td></tr>
 <tr><td><b>Construct</b></td><td  colspan="2">Irritability</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V03</td><td>V05</td></tr>
+<tr><td><b>Study Visits</b></td><td>V03</td><td>V05</td></tr>
 <td><b>Administration</b></td><td colspan="2">
   <ul>
   <li><b>Child-specific</b>: Yes</li>

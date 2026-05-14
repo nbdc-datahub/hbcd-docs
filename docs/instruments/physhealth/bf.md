@@ -15,7 +15,7 @@
 </tr>
 
 <tr>
-  <td><b>Study Visit(s)</b></td>
+  <td><b>Study Visits</b></td>
   <td>
     V02, V03, V04, V06, V08 
     <br><i>V08 (31–45 months) only administered if still breastfeeding at prior visit</i>

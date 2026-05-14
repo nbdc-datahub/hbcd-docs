@@ -1,26 +1,25 @@
 # Protective and Compensatory Experience (*PACEs*)
 
-<table class="table-no-vertical-lines" style="width: 100%; font-size: 16px;">
-<thead>
-<tr>
-  <th>Instrument</th>
-  <th>Acronym</th>
-  <th>Construct</th>
-  <th>Table Name</th>
-</tr>
-</thead>
+
+<table class="table-no-vertical-lines">
 <tbody>
 <tr>
-  <td><b>Current PACEs</b></td>
-  <td>C-PACEs</td>
-  <td>Protective Factors</td>
-  <td><code>sed_bm_paces</code></td>
+  <td></td>
+  <td>Current PACEs (<b>C-PACES</b>)</td>
+  <td>Retrospective PACEs &lt;18 (<b>R-PACES</b>)</td>
 </tr>
-<tr>
-  <td><b>Retrospective PACEs &lt;18</b></td>
-  <td>R-PACEs</td>
-  <td>Protective Factors</td>
-  <td><code>sed_cg_paces</code></td>
+<tr><td><b>Table Names</b></td><td><code>sed_bm_paces</code></td><td><code>sed_cg_paces</code></td></tr>
+<tr><td><b>Study Visits</b></td><td>V01</td><td>V05</td></tr>
+<tr><td><b>Construct</b></td><td  colspan="2">Protective Factors</td></tr>
+<td><b>Administration</b></td><td colspan="2">
+  <ul>
+  <li><b>Child-specific</b>: No</li>
+  <li><b>Respondent</b>: Parent on Self</li>
+  <li><b>Method</b>: Self-administered, in-person or remote</li>
+  </ul>
+</tr>
+<tr><td><b>Quality Control</b></td>
+<td colspan="2">Data dashboard was monitored for variable missingness, possible coding errors, scoring verification, and data consistency.</td>
 </tr>
 </tbody>
 </table>
@@ -30,28 +29,9 @@
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
 
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>No</td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Parent on Self</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Parent, in person or remote</td></tr>
-<tr><td><b>Visits</b></td>
-<td>V01 <strong>[C-PACEs]</strong>; V05 <strong>[R-PACEs]</strong>;</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>NA</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Data dashboard was monitored for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>
-</tbody>
-</table>
-
 ## Instrument Details
 
-**Protective and Compensatory Experience (PACEs)** is a 10-question scale with scores ranging between 0 and 10 assessing protective experiences, including **relationships, feelings of connectedness, physical activity, engagement, environment, and opportunities.** The versions assess protective experiences at two periods of time:
+Protective and Compensatory Experience (PACEs) is a 10-question scale with scores ranging between 0 and 10 assessing protective experiences, including relationships, feelings of connectedness, physical activity, engagement, environment, and opportunities. The versions assess protective experiences at two periods of time:
 
 <table class="table-no-vertical-lines" style="font-size: 16px;">
 <tbody>
@@ -95,17 +75,12 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Current PACEs (C-PACEs)</b></p>
-<!-- INTERNAL NOTE: REMOVE MENTION OF THIS KNOWN ISSUE ONCE RESOLVED -->
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please see relevant <a href="../../../changelog/issues-updates/#known-issues" target="_blank">known issue for C-PACEs</a>.</span>
-</div>
-<p>Item responses can range from <b>1 (Never)</b> to <b>5 (Very Often)</b>. The summary score is calculated as the average of responses to the 10 items (<code>sed_bm_paces_001</code> through <code>sed_bm_paces_010</code>), yielding scores from <b>1 to 5</b>, with higher scores indicating more protective experiences.<br>
-The summary score is calculated only if at least 7 items are completed, in which case the score is the average of the completed items. <b>If fewer than 7 items are completed</b> (i.e. 4 or more items have responses of ‘Decline to answer’ or ‘I don’t know’), <b>the summary score is set to missing</b>.</p>
+<p><b>Current PACEs (C-PACEs)</b><br>
+Item responses can range from 1 (Never) to 5 (Very Often). The summary score is calculated as the average of responses to the 10 items (<code>sed_bm_paces_001</code> through <code>sed_bm_paces_010</code>), yielding scores from 1 to 5, with higher scores indicating more protective experiences.<br>
+The summary score is calculated only if at least 7 items are completed, in which case the score is the average of the completed items. If fewer than 7 items are completed (i.e. 4 or more items have responses of ‘Decline to answer’ or ‘I don’t know’), the summary score is set to missing.</p>
 <hr>
 <p><b>Retrospective PACEs ( R-PACEs) &lt;18</b><br>
-Item responses are coded as <b>0 (No)</b> and <b>1 (Yes)</b>. Total scores are calculated as the sum of responses to instrument items 1 through 10 (<code>sed_cg_paces_001</code> through <code>sed_cg_paces_010</code>). Therefore, total scores can range from <b>0 to 10</b> (higher scores indicating more protective experiences) if all items are answered. If items are skipped or missed, the score is calculated as the sum of all available responses.</p>
+Item responses are coded as 0 (No) and 1 (Yes). Total scores are calculated as the sum of responses to instrument items 1 through 10 (<code>sed_cg_paces_001</code> through <code>sed_cg_paces_010</code>). Therefore, total scores can range from 0 to 10 (higher scores indicating more protective experiences) if all items are answered. If items are skipped or missed, the score is calculated as the sum of all available responses.</p>
 </div>
 
 ## References

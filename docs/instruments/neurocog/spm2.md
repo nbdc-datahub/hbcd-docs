@@ -5,7 +5,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>ncl_cg_spm2__inf</code> (Infant version); <code>ncl_cg_spm2__tod</code> (Toddler version)</td></tr>
 <tr><td><b>Construct</b></td><td  colspan="2">Sensory Processing/Integration</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V03 (Infant); V05 (Toddler)</td></tr>
+<tr><td><b>Study Visits</b></td><td>V03 (Infant); V05 (Toddler)</td></tr>
 <td><b>Administration</b></td><td colspan="2">
   <ul>
   <li><b>Child-specific</b>: Yes</li>

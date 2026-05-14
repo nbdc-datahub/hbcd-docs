@@ -6,7 +6,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>ncl_ch_bayley</code></td></tr>
 <tr><td><b>Construct</b></td><td>Child Development (Cognitive, Language, and Motor)</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V04</td></tr>
+<tr><td><b>Study Visits</b></td><td>V04</td></tr>
 <tr><td><b>Administration</b></td><td>
 <b>Child-specific</b>: Yes<br>
 <b>Respondent</b>: Child<br>

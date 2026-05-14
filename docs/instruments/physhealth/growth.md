@@ -14,7 +14,7 @@
 </tr>
 
 <tr>
-  <td><b>Study Visit(s)</b></td>
+  <td><b>Study Visits</b></td>
   <td>V02, V03, V04, V06, V08</td>
 </tr>
 

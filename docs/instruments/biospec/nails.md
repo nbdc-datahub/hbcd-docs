@@ -4,7 +4,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>bio_bm_biosample_nails_results</code> (toxicology screen), <code>bio_bm_biosample_nails_type</code> (specimen type)</td></tr>
 <tr><td><b>Construct</b></td><td>Drug Panel, Environmental Exposure</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V01, V02</td></tr>
+<tr><td><b>Study Visits</b></td><td>V01, V02</td></tr>
 <tr><td><b>Administration</b></td><td>
 <b>Respondent</b>: Pregnant/postpartum person<br>
 <b>Method</b>: Self-collected under supervision or collected by research team (5 min estimated duration)
