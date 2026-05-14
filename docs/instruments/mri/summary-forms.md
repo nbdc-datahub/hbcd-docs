@@ -12,11 +12,11 @@
   <ul>
   <li><b>Child-specific</b>: Yes</li>
   <li><b>Respondent</b>: NA (MRI Technician Form)</li>
-  <li><b>Method</b>: HBCD Study staff in person (1&ndash;2 min estimated duration)</li>
+  <li><b>Method</b>: HBCD Study staff in person</li>
   </ul>
 </tr>
 <tr><td><b>Quality Control</b></td>
-<td colspan="2">Brief visual review of data prior to release to check for errors and missingness.</td>
+<td>Visual review to check for errors and missingness.</td>
 </tr>
 </tbody>
 </table>
