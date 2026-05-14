@@ -153,9 +153,7 @@ nav:
             - Overview: instruments/mri/index.md
             - Raw BIDS Data: instruments/mri/rawbids.md
             - Quality Control Procedures: instruments/mri/qc.md
-            - Prescan Questionnaire: instruments/mri/prescan-questionnaire.md
-            - MRI Summary Forms: instruments/mri/summary-forms.md
-            
+            - Prescan Questionnaire & Forms: instruments/mri/mri-forms.md
             - Structural MRI: instruments/mri/smri.md
             - Quantitative MRI: instruments/mri/qmri.md
             - Functional MRI: instruments/mri/fmri.md
