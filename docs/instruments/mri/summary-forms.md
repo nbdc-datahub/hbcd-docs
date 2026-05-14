@@ -41,7 +41,7 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
-<th>Section</th>
+<th width="25%">Section</th>
 <th>Details Collected</th>
 </tr>
 </thead>
@@ -55,7 +55,7 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
 <td>Scheduled time of scan (24-hour); repeated visit indicator; family arrival time at scanning facility</td>
 </tr>
 <tr>
-<td>Family Preparations Before Visit</td>
+<td>Family Prep Before Visit</td>
 <td>MRI sound exposure; sleep practice (back sleeping, lifting/moving while asleep); medications in past 24 hours (sleep aids, allergy medications, acetaminophen, ibuprofen, cough/cold medicine, antibiotics)</td>
 </tr>
 <tr>
@@ -92,7 +92,7 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
-<th>Section</th>
+<th width="20%">Section</th>
 <th>Details Collected</th>
 </tr>
 </thead>
