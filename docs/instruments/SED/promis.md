@@ -6,14 +6,14 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>sed_bm_strsup</code></td></tr>
 <tr><td><b>Construct</b></td><td>Perceived Stress/Social Support</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V01, V02, V03</td></tr>
+<tr><td><b>Study Visits</b></td><td>V01, V02, V03</td></tr>
 <tr><td><b>Administration</b></td>
 <td>
 <b>Child-specific</b>: Yes<br>
 <b>Respondent</b>: Primary Caregiver on Child<br>
 <b>Method</b>: Remote survey (4 min estimated duration)</td></tr>
 <td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">A data dashboard was used to routinely assess variable missingness, detect potential coding errors, verify scoring, and ensure overall data consistency.</td></tr>
+<td>A data dashboard was used to routinely assess variable missingness, detect potential coding errors, verify scoring, and ensure overall data consistency.</td></tr>
 </tbody>
 </table>
 
@@ -26,14 +26,8 @@
 
 The **Perceived Stress and Social Support (PROMIS)** tools assess caregiver perceived stress and emotional support within their social networks longitudinally. Questionnaires include:
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>PROMIS Emotional Support 4a</b><br>(first 4 questions)</td>
-<td style="word-wrap: break-word; white-space: normal;">Evaluates the quality of emotional support available to the participant</td></tr>
-<tr><td><b>Perceived Stress Scale-4 (PSS-4)</b><br>(last 4 questions)</td>
-<td style="word-wrap: break-word; white-space: normal;">Shortened version of the PSS-14 that measures general perceived stress over the past month, used widely used across different populations (including pregnant individuals and young families)</td></tr>
-</tbody>
-</table>
+ - PROMIS Emotional Support 4a (first 4 questions): Evaluates the quality of emotional support available to the participant
+ - Perceived Stress Scale-4 (PSS-4) (last 4 questions): Shortened version of the PSS-14 that measures general perceived stress over the past month, used widely used across different populations (including pregnant individuals and young families)
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>

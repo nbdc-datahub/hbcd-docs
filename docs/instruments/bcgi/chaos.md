@@ -4,7 +4,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>mh_cg_chaos</code></td></tr>
 <tr><td><b>Construct</b></td><td>Family Organization</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V05, V07</td></tr>
+<tr><td><b>Study Visits</b></td><td>V05, V07</td></tr>
 <tr><td><b>Administration</b></td><td>
 <b>Child-specific</b>: Yes<br>
 <b>Respondent</b>: Primary Caregiver on Child<br>

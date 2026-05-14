@@ -5,7 +5,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>sed_cg_cabr_sf</code></td></tr>
 <tr><td><b>Construct</b></td><td>Intimate Partner Violence</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V04, V06</td></tr>
+<tr><td><b>Study Visits</b></td><td>V04, V06</td></tr>
 <tr><td><b>Administration</b></td><td>
 <b>Child-specific</b>: No<br>
 <b>Respondent</b>: Birth Parent or Primary Caregiver<br>

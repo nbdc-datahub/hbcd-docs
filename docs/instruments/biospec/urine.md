@@ -4,7 +4,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>bio_bm_biosample_urine_results</code></td></tr>
 <tr><td><b>Construct</b></td><td>Drug Panel, Toxins</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V01</td></tr>
+<tr><td><b>Study Visits</b></td><td>V01</td></tr>
 <tr><td><b>Administration</b></td><td>
 <b>Respondent</b>: Pregnant/postpartum person<br>
 <b>Method</b>: Self-collected (5 min estimated duration)

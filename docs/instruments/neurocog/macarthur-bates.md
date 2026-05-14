@@ -6,7 +6,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>ncl_ch_cdiwgen</code> (English version); <code>ncl_ch_cdiwges</code> (Spanish version)</td></tr>
 <tr><td><b>Construct</b></td><td>Language Development</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V04, V06</td></tr>
+<tr><td><b>Study Visits</b></td><td>V04, V06</td></tr>
 <tr><td><b>Administration</b></td><td>
 <b>Child-specific</b>: Yes<br>
 <b>Respondent</b>: Birth Parent or Primary Caregiver<br>

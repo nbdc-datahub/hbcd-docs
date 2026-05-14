@@ -7,7 +7,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>ncl_ch_mlds</code></td></tr>
 <tr><td><b>Construct</b></td><td>Multilingual Exposure</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V03, V04, V05, V07</td></tr>
+<tr><td><b>Study Visits</b></td><td>V03, V04, V05, V07</td></tr>
 <tr><td><b>Administration</b></td>
 <td style="word-wrap: break-word; white-space: normal;">
 <b>Child-specific</b>: Yes<br>

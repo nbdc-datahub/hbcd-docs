@@ -4,7 +4,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>pex_bm_subst</code></td></tr>
 <tr><td><b>Construct</b></td><td>Substance Use in Pregnancy</td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V02 <i>or later (see <a href="#warning">Data Warning</a>)</i></td></tr>
+<tr><td><b>Study Visits</b></td><td>V02 <i>or later (see <a href="#warning">Data Warning</a>)</i></td></tr>
 <tr><td><b>Administration</b></td><td>
 <b>Child-specific</b>: No<br>
 <b>Respondent</b>: Birth Parent<br>

@@ -5,7 +5,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>sed_cg_ace</code></td><td><code>sed_cg_pedaces</code></td></tr>
 <tr><td><b>Construct</b></td><td>Adverse Childhood Experiences (Caregiver)</td><td>Adverse Childhood Experiences (Child)</td></tr>
-<tr><td><b>Study Visit(s)</b></td>
+<tr><td><b>Study Visits</b></td>
     <td>V04</td><td>V04, V06</td></tr>
 <tr><td colspan="2"><b>Administration</b></td></tr>
 <tr><td style="text-align: right;"><i>Child-specific:</i></td><td>No</td><td>Yes</td></tr>

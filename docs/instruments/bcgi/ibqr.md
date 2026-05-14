@@ -8,7 +8,7 @@
   <td><b>ECBR VSF +BI</b><br>Early Childhood Behavior Questionnaire <span class="tooltip tooltip-left">VSF +BI<span class="tooltiptext">Very Short Form + Behavior Inhibition</span></span></td>
 </tr>
 <tr><td><b>Table Names</b></td><td><code>mh_cg_ibqr</code></td><td><code>mh_cg_ecbq</code></td></tr>
-<tr><td><b>Study Visit(s)</b></td><td>V03, V05</td><td>V05</td></tr>
+<tr><td><b>Study Visits</b></td><td>V03, V05</td><td>V05</td></tr>
 <tr><td><b>Construct</b></td><td  colspan="2">Behavioral Inhibition • Negative Affectivity • Effortful Control • Surgency/Extraversion</td></tr>
 <td><b>Administration</b></td><td colspan="2">
   <ul>

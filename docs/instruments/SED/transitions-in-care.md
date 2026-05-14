@@ -1,17 +1,27 @@
 # Transitions in Care Screener
 
-<div class="info-block">
-  <div class="info-row">
-    <div class="info-label"><i class="fa fa-table"></i> Table Name:</div>
-    <div class="info-value"><code>sed_cg_tic_screener</code></div>
-  </div>
-  <div class="info-row">
-    <div class="info-label"><i class="fa-solid fa-tape"></i> Construct:</div>
-    <div class="info-value">Documents when children spend time living in non-parental care ((i.e., change in who provides primary care)</div>
-  </div>
-</div>
-
----------------------------------------------
+<table class="table-no-vertical-lines">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>sed_cg_tic_screener</code></td></tr>
+<tr><td><b>Construct</b></td><td>Documents when children spend time living in non-parental care/change in who provides primary care</td></tr>
+<tr><td><b>Study Visits</b></td><td>All visits beginning at V02</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: Yes<br>
+<b>Respondent</b>: Original Consented Parent or Alternate Caregiver<br>
+<b>Method</b>: RA administered via phone (5 min estimated duration)
+</td></tr>
+<tr>
+<td><b>Quality Control</b></td>
+<td>
+<ul>
+<li>Monthly data consistency checks to identify discrepancies across submissions.</li>
+<li>Resolution of contradictory site responses, such as inconsistencies in site responses where reported answers about whether a TIC had or had not “ever” occurred conflicted with the information recorded in TIC Screeners. Sites were contacted for clarification and correction.</li>
+<li>Follow-up on data entry issues, including missing or incomplete responses, conflicting information across multiple forms, and TIC being filled out for a later time point than when the transition occurred (e.g., V06 TIC available for TIC that occurred at V02).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -45,31 +55,6 @@
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-## Administration & Quality Control
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b>Child Specific</b></td>
-<td>Yes </td></tr>
-<tr><td><b>Respondent</b></td>
-<td>Original Consented Parent or Alternate Caregiver</td></tr>
-<tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">RA administered via phone</td></tr>
-<tr><td><b>Visits</b></td>
-<td>All visits beginning at V02</td></tr>
-<tr><td><b>Completion Time</b></td>
-<td>5 min</td></tr>
-<tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
-<ul>
-<li><strong>Monthly data consistency checks</strong> to identify discrepancies across submissions.</li>
-<li><strong>Resolution of contradictory site responses</strong>, such as inconsistencies in site responses where reported answers about whether a TIC had or had not “ever” occurred conflicted with the information recorded in TIC Screeners. Sites were contacted for clarification and correction.</li>
-<li><strong>Follow-up on data entry issues</strong>, including missing or incomplete responses, conflicting information across multiple forms, and TIC being filled out for a later time point than when the transition occurred (e.g., V06 TIC available for TIC that occurred at V02).</li>
-</ul>
-</td></tr>      
-</tbody>
-</table>
 
 ## Instrument Details
 

@@ -53,49 +53,11 @@ As of 2022, about 1 in 5 US adults report current smoking ([CDC 2022](https://ww
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Instruction Item Changes</b><br>We modified the prompt to be consistent with description of housing/residence, and removed information on dose of exposure given lack of validation of dose-related information.</p>
-<b>Assessment Item Changes</b>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
-<thead>
-  <tr>
-    <th style="width: 5%;">Item</th>
-    <th style="width: 40%;">Original Text</th>
-    <th style="width: 40%;">Updated Text</th>
-  </tr>
-  </thead>
-<tbody>
-<tr>
-  <td>1 Prompt</td>
-  <td style="word-wrap: break-word; white-space: normal;">The following questions ask about exposure to secondhand smoke and the child’s current home(s) or dwelling(s).</td>
-  <td style="word-wrap: break-word; white-space: normal;">The following questions are about your child’s primary residence (the place outside of daycare where they spend the most time).</td>
-</tr>
-<tr>
-  <td>2 1b</td>
-  <td style="word-wrap: break-word; white-space: normal;">How often, on average, are cigarettes smoked inside the child’s home or dwelling</td>
-  <td style="word-wrap: break-word; white-space: normal;"><i>Removed</i></td>
-</tr>
-<tr>
-  <td>3 2b-e</td>
-  <td style="word-wrap: break-word; white-space: normal;">Specifics on non-cigarette products used most often, and their frequency</td>
-  <td style="word-wrap: break-word; white-space: normal;"><i>Removed</i></td>
-</tr>
-<tr>
-  <td>4</td>
-  <td style="word-wrap: break-word; white-space: normal;"></td>
-  <td style="word-wrap: break-word; white-space: normal;"></td>
-</tr>
-<tr>
-  <td>5</td>
-  <td style="word-wrap: break-word; white-space: normal;"></td>
-  <td style="word-wrap: break-word; white-space: normal;"></td>
-</tr>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;">etc.</td>
-  <td style="word-wrap: break-word; white-space: normal;"></td>
-  <td style="word-wrap: break-word; white-space: normal;"></td>
-</tr>
-</tbody>
-</table>
+<p>Prompts for instruction items were modified to be consistent with the housing/residence description and remove information on dose of exposure (given lack of validation of dose-related information). The following items were removed:</p>
+<ul>
+  <li>2 1b: How often, on average, are cigarettes smoked inside the child’s home or dwelling?</li>
+  <li>3 2b-e: Specifics on non-cigarette products used most often, and their frequency</li>
+</ul>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
