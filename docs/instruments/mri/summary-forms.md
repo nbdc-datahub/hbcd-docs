@@ -38,7 +38,7 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines">
+<table class="table-no-vertical-lines">
 <thead>
 <tr>
 <th>Section</th>
@@ -47,31 +47,31 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
 </thead>
 <tbody>
 <tr>
-<td><strong>Scan Session Summary</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Date of acquisition; candidate age (months); window difference (± days); adjusted chronological age at administration (weeks)</td>
+<td>Scan Session Summary</td>
+<td>Date of acquisition; candidate age (months); window difference (± days); adjusted chronological age at administration (weeks)</td>
 </tr>
 <tr>
-<td><strong>Participant Information</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Scheduled time of scan (24-hour); repeated visit indicator; family arrival time at scanning facility</td>
+<td>Participant Information</td>
+<td>Scheduled time of scan (24-hour); repeated visit indicator; family arrival time at scanning facility</td>
 </tr>
 <tr>
-<td><strong>Family Preparations Before Visit</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">MRI sound exposure; sleep practice (back sleeping, lifting/moving while asleep); medications in past 24 hours (sleep aids, allergy medications, acetaminophen, ibuprofen, cough/cold medicine, antibiotics)</td>
+<td>Family Preparations Before Visit</td>
+<td>MRI sound exposure; sleep practice (back sleeping, lifting/moving while asleep); medications in past 24 hours (sleep aids, allergy medications, acetaminophen, ibuprofen, cough/cold medicine, antibiotics)</td>
 </tr>
 <tr>
-<td><strong>Travel to Visit</strong></td>
+<td>Travel to Visit</td>
 <td>Transportation method; whether baby fell asleep in the car</td>
 </tr>
 <tr>
-<td><strong>Preparations at Scan Site</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Sleep location; room lighting; sounds played; feeding before scan; caregiver soothing methods; materials used during scan</td>
+<td>Preparations at Scan Site</td>
+<td>Sleep location; room lighting; sounds played; feeding before scan; caregiver soothing methods; materials used during scan</td>
 </tr>
 <tr>
-<td><strong>Sleep Information</strong></td>
+<td>Sleep Information</td>
 <td>Time to fall asleep; time first asleep; initial sleep position</td>
 </tr>
 <tr>
-<td><strong>Transfer to Scanner</strong></td>
+<td>Transfer to Scanner</td>
 <td>Transfer method; whether child woke during transfer</td>
 </tr>
 </tbody>
@@ -89,7 +89,7 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines">
+<table class="table-no-vertical-lines">
 <thead>
 <tr>
 <th>Section</th>
@@ -98,16 +98,16 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
 </thead>
 <tbody>
 <tr>
-<td><strong>Scan Log</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Scan start and interruption times, scan quality grade, FIRMM quality metrics (score, time, volumes), and images acquired</td>
+<td>Scan Log</td>
+<td>Scan start and interruption times, scan quality grade, FIRMM quality metrics (score, time, volumes), and images acquired</td>
 </tr>
 <tr>
-<td><strong>Summary</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Reasons for incomplete/unsuccessful scan, whether each modality was acquired, and if the minimum threshold for low motion fMRI data (7 min 30 sec) was acquired</td>
+<td>Summary</td>
+<td>Reasons for incomplete/unsuccessful scan, whether each modality was acquired, and if the minimum threshold for low motion fMRI data (7 min 30 sec) was acquired</td>
 </tr>
 <tr>
-<td><strong>Post-Scan</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Time of family departure</td>
+<td>Post-Scan</td>
+<td>Time of family departure</td>
 </tr>
 </tbody>
 </table>
