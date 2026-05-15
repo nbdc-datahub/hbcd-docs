@@ -12,24 +12,24 @@
 </tr>
 </thead>
 <tr>
-    <td style="word-wrap: break-word; white-space: normal;">Raw MR Data QC, including automated and manual</td>
-    <td style="word-wrap: break-word; white-space: normal;">Raw DICOMs, after protocol compliance & completeness checks (<a href="../../qc/#compliance">see details</a>) and prior to BIDS conversion</td>
-    <td style="word-wrap: break-word; white-space: normal;">Session-level Scans TSV files - <a href="../../qc/#scanstsv">see details</a> - includes both automated and manual QC metrics</td>
+    <td>Raw MR Data QC, including automated and manual</td>
+    <td>Raw DICOMs, after protocol compliance & completeness checks (<a href="../../qc/#compliance">see details</a>) and prior to BIDS conversion</td>
+    <td>Session-level Scans TSV files - <a href="../../qc/#scanstsv">see details</a> - includes both automated and manual QC metrics</td>
 </tr>
 <tr>
-    <td style="word-wrap: break-word; white-space: normal;">Raw BIDS QC via MRIQC Pipeline</td>
-    <td style="word-wrap: break-word; white-space: normal;">MRIQC generates image quality metrics (IQM) for raw anatomical and functional data (only outputs for the scans selected for full structural and functional processing are included in the release)</td>
-    <td style="word-wrap: break-word; white-space: normal;">MRIQC Pipeline Derivatives - <a href="../../qc/#scanstsv">see details</a>. NOTE that the MRIQC outputs are not used to inform HBCD processing workflows, but are instead simple made available in the release for users convenience.</td>
+    <td>Raw BIDS QC via MRIQC Pipeline</td>
+    <td>MRIQC generates image quality metrics (IQM) for raw anatomical and functional data (only outputs for the scans selected for full structural and functional processing are included in the release)</td>
+    <td>MRIQC Pipeline Derivatives - <a href="../../qc/#scanstsv">see details</a>. NOTE that the MRIQC outputs are not used to inform HBCD processing workflows, but are instead simple made available in the release for users convenience.</td>
 </tr>
 <tr>
-    <td style="word-wrap: break-word; white-space: normal;">Processed Data: Pipeline-Specific Reports</td>
-    <td style="word-wrap: break-word; white-space: normal;">Several pipelines generate visual reports and automated metrics for users to assess the quality of processed outputs (ADD MORE INFO)</td>
-    <td style="word-wrap: break-word; white-space: normal;">Available in pipeline derivatives (ADD MORE INFO)</td>
+    <td>Processed Data: Pipeline-Specific Reports</td>
+    <td>Several pipelines generate visual reports and automated metrics for users to assess the quality of processed outputs (ADD MORE INFO)</td>
+    <td>Available in pipeline derivatives (ADD MORE INFO)</td>
 </tr>
 <tr>
-    <td style="word-wrap: break-word; white-space: normal;">Processed Data: BrainSwipes</td>
-    <td style="word-wrap: break-word; white-space: normal;">Structural and functional visual reports derived from XCP-D derivative outputs - <a href="../../brainswipes/">see details</a></td>
-    <td style="word-wrap: break-word; white-space: normal;">Available as tabulated derivatives, with most up-to-date results provided between releases in the HBCD Private Release Notes - <a href="../../brainswipes/#location-of-brainswipes-qc-results">see details</a></td>
+    <td>Processed Data: BrainSwipes</td>
+    <td>Structural and functional visual reports derived from XCP-D derivative outputs - <a href="../../brainswipes/">see details</a></td>
+    <td>Available as tabulated derivatives, with most up-to-date results provided between releases in the HBCD Private Release Notes - <a href="../../brainswipes/#location-of-brainswipes-qc-results">see details</a></td>
 </tr>
 </tbody>
 </table> -->
@@ -87,7 +87,7 @@ Automated QC begins immediately after data upload with protocol compliance and c
 </tr>
 <tr>
 <td>fMRI</td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
     • Estimate head motion with average <span class="tooltip">FD<span class="tooltiptext">framewise displacement</span></span> and data (sec) at FD thresholds of 0.2/0.3/0.4 mm (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al., 2012</a>)<br>
     • Detect line artifacts and FOV cutoff<br>
     • Compute spatial smoothness (FWHM) and temporal SNR (tSNR) after motion correction (<a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">Triantafyllou et al., 2005</a>)
@@ -95,7 +95,7 @@ Automated QC begins immediately after data upload with protocol compliance and c
 </tr>
 <tr>
     <td>dMRI</td>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
     • Estimate head motion (framewise displacement, FD)<br>
     • Refine motion estimates via registration to tensor-synthesized images (<a href="https://doi.org/10.1002/hbm.20619">Hagler et al., 2009</a>)<br>
     • Identify dark slices (caused by abrupt head movements) using RMS difference between raw and tensor-fitted data<br>
@@ -147,7 +147,7 @@ Data are flagged for manual review based on automated QC results using multivari
 </tr>
 <tr>
     <td>dMRI & fMRI, & field maps</td>
-    <td style="word-wrap: break-word; white-space: normal;">
+    <td>
     • Score susceptibility artifacts, FOV cutoff, and horizontal line artifacts (present in the sagittal view)<br>
     • Note susceptibility artifacts, including <span class="tooltip">signal dropout<span class="tooltiptext">common in posterior occipital cortex of infant fMRI data acquired in PA phase encoding direction</span></span>, signal bunching, and warping</td>
 </tr> 

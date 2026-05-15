@@ -67,7 +67,7 @@ The HBCD BFY includes a selection of questions from the [BFY Age 1 Survey Instru
       <th>Modified Text</th>   
   </tr>
   <tr>
-    <td style="width: 400px; word-wrap: break-word; white-space: normal;">
+    <td>
       <b>I am going to read a list of services, government benefits, and support. Please tell me after each one if you receive it or not</b>
       <br>
       <br>
@@ -108,7 +108,7 @@ The HBCD BFY includes a selection of questions from the [BFY Age 1 Survey Instru
     </td>
   </tr>
     <tr>
-    <td style="width: 400px; word-wrap: break-word; white-space: normal;">
+    <td>
       <b>Since [CHILDNAME]’s birth, have you EVER been forced to leave or were evicted from your home?</b>
       <br>
       <br>

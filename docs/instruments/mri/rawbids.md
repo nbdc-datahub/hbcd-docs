@@ -58,7 +58,7 @@ Each participant/session folder within `rawdata/` contains raw imaging data orga
 <tr><td>qMRI</td><td>B1+ fieldmaps</td></tr>
 <tr><td><code>dwi/</code></td><td>dMRI</td><td>DWI; gradient magnitude/direction (<code>.bval</code>/<code>.bvec</code>); single-band reference images (<code>*_sbref.nii.gz</code>)</li></ul></td></tr>
 <tr><td><code>mrs/</code></td><td>MRS</td>
-<td style="word-wrap: break-word; white-space: normal;">Metabolite spectra and water reference scans (<code>{svs|ref}.nii.gz</code>), each acquired via short echo time and HERCULES edited spectra (<code>acq-{shortTE|hercules}</code>)</td>
+<td>Metabolite spectra and water reference scans (<code>{svs|ref}.nii.gz</code>), each acquired via short echo time and HERCULES edited spectra (<code>acq-{shortTE|hercules}</code>)</td>
 </tr></tbody></table>
 
 #### Raw BIDS Folder Structure

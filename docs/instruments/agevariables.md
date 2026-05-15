@@ -46,7 +46,7 @@ The Basic Demographics table contains global, static variables derived across ad
   <span class="subtle">at Administration</span>
 </td>
 <td><code>gestational_age</code></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
 <ul>
   <li>Number of weeks (rounded down) between <span class="tooltip tooltip-right">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period, estimated as EDD − 280 days</span></span> and the V01 administration date</li>
   <li>May vary by ≤4 weeks across protocol elements (except for protocol exceptions)</li>
@@ -60,7 +60,7 @@ The Basic Demographics table contains global, static variables derived across ad
   <span class="subtle">at Administration</span>
 </td>
 <td><code>candidate_age</code></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
 <ul>
   <li>Age in years (3 decimal places) at administration</li>
   <li>Calculated as: total elapsed days (rounded down) ÷ 365.25</li>

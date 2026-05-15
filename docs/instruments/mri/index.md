@@ -53,7 +53,7 @@ MRI and MRS release data include the following - <i>see <a href="../../datacurat
 <tr><td><b><i class="fas fa-cog header-icon"></i> Derivatives</b></td>
 <td>File-based data in modality-specific formats processed through <a href="../processing" target="_blank">HBCD pipelines</a></td></tr>
 <tr><td><b><i class="fas fa-table header-icon"></i> Tabulated Data</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Questionnaires and select pipeline derivatives in HBCD-tabulated format - see <a href="../#mri-tab" target="_blank">Tabulated Imaging</a></td></tr>
+<td>Questionnaires and select pipeline derivatives in HBCD-tabulated format - see <a href="../#mri-tab" target="_blank">Tabulated Imaging</a></td></tr>
 </tbody></table>
 
 <pre class="folder-tree" style="line-height: 1.2">

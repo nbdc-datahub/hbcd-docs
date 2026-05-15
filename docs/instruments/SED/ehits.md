@@ -51,43 +51,43 @@ The following outlines the differences in the wording and/or content of question
       <th><b>HBCD 2024</b></th>
     </tr>
         <tr>
-        <td style="word-wrap: break-word; white-space: normal;"><span class="tooltip">How often does your partner...
+        <td><span class="tooltip">How often does your partner...
                 <span class="tooltiptext">preceding text for following rows</span>
             </span>
         </td>
-        <td style="word-wrap: break-word; white-space: normal;"><span class="tooltip">Has your partner ever...
+        <td><span class="tooltip">Has your partner ever...
                 <span class="tooltiptext">preceding text for following rows</span>
             </span>
         </td>
-        <td style="word-wrap: break-word; white-space: normal;"><span class="tooltip">In the previous 12 months, how often has your current partner...
+        <td><span class="tooltip">In the previous 12 months, how often has your current partner...
                 <span class="tooltiptext">preceding text for following rows</span>
             </span>
         </td>
     </tr>
     <tr>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...physically hurt you?</td>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...physically hurt you in the past 12 months?</td>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...physically hurt you?</td>
+      <td>...physically hurt you?</td>
+      <td>...physically hurt you in the past 12 months?</td>
+      <td>...physically hurt you?</td>
     </tr>
     <tr>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...insult you or talk down to you?</td>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...insulted you in the past 12 months?</td>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...insulted you?</td>
+      <td>...insult you or talk down to you?</td>
+      <td>...insulted you in the past 12 months?</td>
+      <td>...insulted you?</td>
     </tr>
     <tr>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...threaten you with harm?</td>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...threatened to harm you in the past 12 months?</td>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...threatened you?</td>
+      <td>...threaten you with harm?</td>
+      <td>...threatened to harm you in the past 12 months?</td>
+      <td>...threatened you?</td>
     </tr>
     <tr>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...scream or curse at you?</td>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...screamed or cursed at you in the past 12 months?</td>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...screamed or cursed at you?</td>
+      <td>...scream or curse at you?</td>
+      <td>...screamed or cursed at you in the past 12 months?</td>
+      <td>...screamed or cursed at you?</td>
     </tr>
     <tr>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;"></td>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...forced you to have sexual activities in the past 12 months?</td>
-      <td style="width: 400px; word-wrap: break-word; white-space: normal;">...forced you to engage in sexual activity?</td>
+      <td></td>
+      <td>...forced you to have sexual activities in the past 12 months?</td>
+      <td>...forced you to engage in sexual activity?</td>
     </tr>
   </tbody>
 </table>
@@ -132,14 +132,14 @@ The following outlines the differences in the wording and/or content of question
         <th><b>HBCD 2024</b></th>
     </tr>
     <tr>
-        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Score range: 4 - 20</td>
-        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Score range: 5 - 25</td>
-        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Score range: 0 - 20</td>
+        <td>Score range: 4 - 20</td>
+        <td>Score range: 5 - 25</td>
+        <td>Score range: 0 - 20</td>
     </tr>
         <tr>
-        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Summary score > 10.5 for IPV</td>
-        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Summary score > 8.5 for IPV</td>
-        <td style="width: 400px; word-wrap: break-word; white-space: normal;">Summary score > 3.5 for IPV</td>
+        <td>Summary score > 10.5 for IPV</td>
+        <td>Summary score > 8.5 for IPV</td>
+        <td>Summary score > 3.5 for IPV</td>
     </tr>
 </tbody>
 </table>

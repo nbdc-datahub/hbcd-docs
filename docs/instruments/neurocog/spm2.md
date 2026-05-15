@@ -14,7 +14,7 @@
   </ul>
 </tr>
 <tr><td><b>Quality Control</b></td>
-<td colspan="2"style="word-wrap: break-word; white-space: normal;">
+<td colspan="2">
 Periodic review of data capture to ensure that items are being fully completed and spot checks on scoring to assure algorithms are being correctly employed.
 </td>
 </tr>

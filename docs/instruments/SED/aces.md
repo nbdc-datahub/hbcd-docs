@@ -12,7 +12,7 @@
 <tr><td style="text-align: right;"><i>Respondent:</i></td><td>Birth Parent or Primary Caregiver</td><td>Birth Parent or Primary Caregiver on Child</td></tr>
 <tr><td style="text-align: right;"><i>Method:</i></td><td colspan="2">Self-administered in-person (2 min estimated duration)</td></tr>
 <tr><td><b>Quality Control</b></td>
- <td colspan="2" style="word-wrap: break-word; white-space: normal;">QC is minimal as participants only report the total number of ACE events. Declines in ACE scores at later visits should be interpreted cautiously, as they may reflect inconsistent or inaccurate responding.
+ <td colspan="2">QC is minimal as participants only report the total number of ACE events. Declines in ACE scores at later visits should be interpreted cautiously, as they may reflect inconsistent or inaccurate responding.
 </td>
 </tr>
 </tbody>

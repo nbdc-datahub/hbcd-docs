@@ -220,7 +220,7 @@ Ketamine (<code>c_ket_u</code>)<br>Norketamine (<code>c_nket_u</code>)<br>Phency
 </tbody>
 <tfoot>
 <tr>
-  <td colspan="4" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
+  <td colspan="4" style="border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
     <sup><b>1</b></sup>Note: the categorical confirmatory test variable for nicotine follows the convention <code>c_nicotine_u</code></td></tr>
 </tfoot>
 </table>

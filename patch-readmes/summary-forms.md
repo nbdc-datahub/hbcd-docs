@@ -32,7 +32,7 @@ MRI summary forms are checklists filled out by MRI technicians pre- and post-acq
 <tr><td><b>Respondent</b></td>
 <td>NA (MRI Technician Form)</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff (in person)</td></tr>
+<td>HBCD Study staff (in person)</td></tr>
 <tr><td><b>Visits</b></td>
 <td>V02, V03, V04, V06</td></tr>
 <tr><td><b>QC Procedures</b></td>
@@ -68,15 +68,15 @@ Click to expand the sections below for an overview of the information provided i
 <tbody>
 <tr>
 <td><strong>Scan Session Summary</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Date of acquisition; candidate age (months); window difference (± days); adjusted chronological age at administration (weeks)</td>
+<td>Date of acquisition; candidate age (months); window difference (± days); adjusted chronological age at administration (weeks)</td>
 </tr>
 <tr>
 <td><strong>Participant Information</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Scheduled time of scan (24-hour); repeated visit indicator; family arrival time at scanning facility</td>
+<td>Scheduled time of scan (24-hour); repeated visit indicator; family arrival time at scanning facility</td>
 </tr>
 <tr>
 <td><strong>Family Preparations Before Visit</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">MRI sound exposure; sleep practice (back sleeping, lifting/moving while asleep); medications in past 24 hours (sleep aids, allergy medications, acetaminophen, ibuprofen, cough/cold medicine, antibiotics)</td>
+<td>MRI sound exposure; sleep practice (back sleeping, lifting/moving while asleep); medications in past 24 hours (sleep aids, allergy medications, acetaminophen, ibuprofen, cough/cold medicine, antibiotics)</td>
 </tr>
 <tr>
 <td><strong>Travel to Visit</strong></td>
@@ -84,7 +84,7 @@ Click to expand the sections below for an overview of the information provided i
 </tr>
 <tr>
 <td><strong>Preparations at Scan Site</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Sleep location; room lighting; sounds played; feeding before scan; caregiver soothing methods; materials used during scan</td>
+<td>Sleep location; room lighting; sounds played; feeding before scan; caregiver soothing methods; materials used during scan</td>
 </tr>
 <tr>
 <td><strong>Sleep Information</strong></td>
@@ -119,15 +119,15 @@ Click to expand the sections below for an overview of the information provided i
 <tbody>
 <tr>
 <td><strong>Scan Log</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Scan start and interruption times, scan quality grade, FIRMM quality metrics (score, time, volumes), and images acquired</td>
+<td>Scan start and interruption times, scan quality grade, FIRMM quality metrics (score, time, volumes), and images acquired</td>
 </tr>
 <tr>
 <td><strong>Summary</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Reasons for incomplete/unsuccessful scan, whether each modality was acquired, and if the minimum threshold for low motion fMRI data (7 min 30 sec) was acquired</td>
+<td>Reasons for incomplete/unsuccessful scan, whether each modality was acquired, and if the minimum threshold for low motion fMRI data (7 min 30 sec) was acquired</td>
 </tr>
 <tr>
 <td><strong>Post-Scan</strong></td>
-<td style="word-wrap: break-word; white-space: normal;">Time of family departure</td>
+<td>Time of family departure</td>
 </tr>
 </tbody>
 </table>
