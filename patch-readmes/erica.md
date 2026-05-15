@@ -72,7 +72,7 @@
 <tr><td><b>Visits</b></td><td>V03</td></tr>
 <tr><td><b>Completion Time</b></td><td>20-30 minutes</td></tr>
 <tr><td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">QC procedures were conducted separately for <b>(1) ERICA site-level administration</b> and <b>(2) the centralized coding of ERICA videos</b>. Expand <a href="#qc">Quality Control Details</a> below for full documentation.</td></tr>
+<td>QC procedures were conducted separately for <b>(1) ERICA site-level administration</b> and <b>(2) the centralized coding of ERICA videos</b>. Expand <a href="#qc">Quality Control Details</a> below for full documentation.</td></tr>
 </tbody>
 </table>
 
