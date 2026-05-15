@@ -12,7 +12,7 @@
 <b>Respondent</b>: Birth Parent or Primary Caregiver<br>
 <b>Method</b>: Self administered in person (20-60 min estimated duration)</td></tr>
 <td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
   <ul>
   <li>
     <strong>Administration QC:</strong> HBCD SOPs instruct RAs to present instructions exactly as shown in the existing 

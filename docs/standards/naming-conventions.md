@@ -147,7 +147,7 @@ Name of scale within instrument/protocol element for instruments with multiple s
 <tbody>
 <tr>
   <td><b>Admin fields</b></td>
-  <td  style="word-wrap: break-word; white-space: normal;"><code>administration</code>; <code>location</code>; <code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></td>
+  <td><code>administration</code>; <code>location</code>; <code>lang</code>; <code>date_taken</code>; <code>candidate_age</code>; <code>gestational_age</code>; <code>adjusted_age</code></td>
 </tr>
 <tr>
   <td><b>Score labels</b></td>

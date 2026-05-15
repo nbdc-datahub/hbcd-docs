@@ -6,7 +6,6 @@
 }
 </style>
 
-
 # Infant Leg Motion
 
 The HBCD data release includes Infant Leg Motion Wearable Sensor data acquired during visits V02 and V03.
@@ -96,12 +95,12 @@ hbcd/
             └── ses-{V0X}/
                 └── motion/
 
-                    <span class="hashtag"># --- Kinematics ---</span>
+                    <span class="hashtag"># Kinematics</span>
                     ├── Kinematics/
                     │   ├── sub-{ID}_ses-{V0X}_desc-kinematics_recording-20_motion.json
                     │   └── sub-{ID}_ses-{V0X}_desc-kinematics_recording-25_motion.json
 
-                    <span class="hashtag"># --- Physical Activity (PA) ---</span>
+                    <span class="hashtag"># Physical Activity (PA)</span>
                     ├── PA/
                     │   ├── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_BOUTS.tsv
                     │   ├── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_LOG.txt
@@ -112,7 +111,7 @@ hbcd/
                     │   ├── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_RAW.tsv
                     │   └── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_SUMMARY.json
 
-                    <span class="hashtag"># --- Metadata & Outputs ---</span>
+                    <span class="hashtag"># Metadata & Outputs</span>
                     ├── PARAMETERS.json
                     └── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-calibrated_recording-20_motion.tsv
 </pre>

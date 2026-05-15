@@ -114,10 +114,10 @@ T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infan
 <tbody>
 <tr>
 <td><b>M-CRIB-S</b></td>
-<td style="word-wrap: break-word; white-space: normal;">T2w-based method for neonates (<a href="https://doi.org/10.1038/s41598-020-61326-2">Adamson et al., 2020</a>). Infant fMRIPrep runs a modified <code>MCRIBReconAll</code> workflow that uses the BIBSNet-derived brain segmentation. <i>Optimal age range per <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>: ≤ 5 months</i></td>
+<td>T2w-based method for neonates (<a href="https://doi.org/10.1038/s41598-020-61326-2">Adamson et al., 2020</a>). Infant fMRIPrep runs a modified <code>MCRIBReconAll</code> workflow that uses the BIBSNet-derived brain segmentation. <i>Optimal age range per <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>: ≤ 5 months</i></td>
 </tr> <tr>
 <td><b>Infant FreeSurfer</b></td>
-<td style="word-wrap: break-word; white-space: normal;">T1w-based method for infants 0-2 years old (<a href="https://doi.org/10.1016/j.neuroimage.2020.116946">Zöllei et al., 2020</a>). Infant fMRIPrep executes <code>infant_recon_all</code> with its default configuration. <i>Optimal age range per <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>: ≥ 3 months</i></td>
+<td>T1w-based method for infants 0-2 years old (<a href="https://doi.org/10.1016/j.neuroimage.2020.116946">Zöllei et al., 2020</a>). Infant fMRIPrep executes <code>infant_recon_all</code> with its default configuration. <i>Optimal age range per <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>: ≥ 3 months</i></td>
 </tr> </tbody>
 </table>
 <p><b>Functional Processing</b></p>

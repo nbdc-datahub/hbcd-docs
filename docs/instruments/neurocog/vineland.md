@@ -12,7 +12,7 @@
 <b>Respondent</b>: Birth Parent or Primary Caregiver<br>
 <b>Method</b>: Self-administered remotely (15-30 min estimated duration)</td></tr>
 <td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
 <ul>
     <li>The caregiver is instructed to follow instructions as presented in Pearson Q-Global.</li>
     <li>HBCD has an API license agreement with Pearson Education, Inc.</li>

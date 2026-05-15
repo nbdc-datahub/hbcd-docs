@@ -12,7 +12,7 @@
 <b>Respondent</b>: Child<br>
 <b>Method</b>: HBCD Study staff in person (60-90 min estimated duration)</td></tr>
 <td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
 <ul>
     <li>HBCD Study staff were trained and certified by experienced Bayley administrators to ensure adherence to standardized procedures.</li>
     <li>During testing, responses were entered into QGlobal (Pearson’s official scoring platform for the Bayley Scales), which automatically applied scoring rules and generated standardized scores.</li>

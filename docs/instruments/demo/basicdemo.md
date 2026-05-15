@@ -15,7 +15,6 @@ Basic Demographics (<code>sed_basic_demographics</code>) is a **derived measure*
 
 Basic Demographics includes global, visit-agnostic variables that do not change over time and should be consistent across all visits for the adult/caregiver and beginning at Visit 2 for the child (post-birth). Note that if only V01 data for a given adult participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about their child will be missing, as the child is not born until after the V01 visit.
 
-
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
   <span class="text-with-link">
@@ -75,7 +74,7 @@ Basic Demographics includes global, visit-agnostic variables that do not change 
   </td>
 </tr>
 <tr>
-<td style="white-space: nowrap;">Gestational Age at Delivery <span class="pill-badge" style="font-size: 0.8em;">V02+</span></td>
+<td>Gestational Age at Delivery <span class="pill-badge" style="font-size: 0.8em;">V02+</span></td>
   <td><code>gestational_age_delivery</code></td>
   <td>
     <ul>
@@ -90,7 +89,7 @@ Basic Demographics includes global, visit-agnostic variables that do not change 
 
 ### Sex & Other Variables
 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
   <th>Construct</th>

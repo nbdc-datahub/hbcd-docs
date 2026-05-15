@@ -92,7 +92,7 @@ The primary of outcome variables from MRS data processed through the Osprey pipe
 <tr><td><b>HERCULES Diff2</b></td><td>GSH, Lac, NAAG, PE</td><td><code>img_osprey_HERCULES_diff2_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
 </tr>
 </tbody><tfoot>
-<tr><td colspan="3" style="word-wrap: break-word; white-space: normal; border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
+<tr><td colspan="3" style="border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
 <sup><b>1</b></sup> Note: tables contain data summarized across participants from <a href="#derivatives">Osprey pipeline derivatives</a></td></tr>
 </tfoot>
 </table>
@@ -100,7 +100,7 @@ The primary of outcome variables from MRS data processed through the Osprey pipe
 ### Quantification Approaches
 MRS values are quantified relative to internal reference signals. Optimal reference for HBCD data has not yet been established, so several quantification methods are provided (see [Harris et al., 2015](https://doi.org/10.1002/jmri.24903)):
 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr><th>Method</th><th>Recommended Use</th></tr></thead>
 <tbody>
@@ -111,7 +111,7 @@ MRS values are quantified relative to internal reference signals. Optimal refere
 <tr><td>Alpha-corrected variants</td><td>Use only for GABA+</td></tr>
 <tr>
   <td>Metabolite-to-creatine ratios</td>
-  <td style="word-wrap: break-word; white-space: normal;">Values are normalized to total creatine (tCr), which is relativel stable across lifespan, but only present in tissue and not CSF; use only for tissue</td>
+  <td>Values are normalized to total creatine (tCr), which is relativel stable across lifespan, but only present in tissue and not CSF; use only for tissue</td>
 </tr>
 <tr><td>Unscaled model amplitudes</td><td>Do not use for analyses</td></tr>
 <!-- <tr><td>Raw water-scaled concentrations</td><td></td></tr> -->

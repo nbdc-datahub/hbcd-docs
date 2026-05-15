@@ -9,12 +9,12 @@
 <tr><td><b>Construct</b></td><td>Multilingual Exposure</td></tr>
 <tr><td><b>Study Visits</b></td><td>V03, V04, V05, V07</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">
+<td>
 <b>Child-specific</b>: Yes<br>
 <b>Respondent</b>: Primary Caregiver<br>
 <b>Method</b>: Self-administered remotely (3-10 min estimated duration). If the caregiver does not complete the assessment remotely, it is conducted at the visit to document the child’s language exposure environments. The instrument can be administered by an HBCD Study team member in-person or via video as needed.</td></tr>
 <td><b>Quality Control</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Monitor frequency of decline to answer and completeness during data collection (initial data showed that about 10% of questionnaires were not complete).</td>
+<td>Monitor frequency of decline to answer and completeness during data collection (initial data showed that about 10% of questionnaires were not complete).</td>
 </tr>
 </tbody>
 </table>
