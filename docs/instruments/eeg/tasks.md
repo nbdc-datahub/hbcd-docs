@@ -1,3 +1,11 @@
+<style>
+.wy-nav-content {
+    width: 90% !important;
+    max-width: 100% !important;
+    flex-grow: 1 !important;
+}
+</style>
+
 # HBCD EEG Tasks
 
 This section summarizes the four EEG tasks collected during HBCD study visits V03, V04, and V06, with complete task descriptions provided in <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a>. Additional information relevant to all HBCD EEG data can be found in the <a href="..">Overview & EEG Protocols</a> and <a href="../qc">Quality Control Procedures</a> sections.

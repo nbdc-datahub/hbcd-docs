@@ -55,26 +55,26 @@ See <a href="../artifact/" target="_blank">Effects of Artifact on ERP Derivative
 
 EEG capping quality ratings are used to determine inclusion in data processing. Photos used to assess EEG capping quality are taken for each acquisition from the front, back, top, left, and right angles of the participant's head and uploaded via the BIDS Wizard application to a secure computing environment. They are then reviewed by the EEG Core at the University of Maryland to rate the quality of EEG net placement, or "capping quality," for each acquisition.
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 18px;">
+<table class="table-no-vertical-lines">
   <tbody>
     <tr>
       <td style="width: 30%;"><strong>Markers of Proper Net Placement</strong></td>
       <td>
-        <ul style="margin: 0; padding-left: 1.2em;">
-          <li>Reference electrode <strong>(REF)</strong> at the vertex</li>
-          <li>Nasion electrode <strong>(#17)</strong> between eyebrows</li>
-          <li>Ear electrodes <strong>(#44, #114)</strong> at preauricular points</li>
+        <ul>
+          <li>Reference electrode (REF) at the vertex</li>
+          <li>Nasion electrode (#17) between eyebrows</li>
+          <li>Ear electrodes (#44, #114) at preauricular points</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td><strong>Net Placement Rubric</strong></td>
       <td>
-        <ul style="margin: 0; padding-left: 1.2em;">
-          <li><strong>Excellent</strong> – all markers <strong>0–0.5 cm</strong> from correct placement</li>
-          <li><strong>Average</strong> – any marker <strong>0.5–2 cm</strong> off</li>
-          <li><strong>Poor</strong> – any marker <strong>2–3 cm</strong> off</li>
-          <li><strong>Very Poor</strong> – any marker <strong>>3 cm</strong> off</li>
+        <ul>
+          <li><strong>Excellent</strong> – all markers 0–0.5 cm from correct placement</li>
+          <li><strong>Average</strong> – any marker 0.5–2 cm off</li>
+          <li><strong>Poor</strong> – any marker 2–3 cm off</li>
+          <li><strong>Very Poor</strong> – any marker >3 cm off</li>
         </ul>
       </td>
     </tr>

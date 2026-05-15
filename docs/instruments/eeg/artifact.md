@@ -1,3 +1,11 @@
+<style>
+.wy-nav-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-grow: 1 !important;
+}
+</style>
+
 # StimTracker Artifact- detailed
 
 ## Effects of Artifact on ERP Derivatives by Task
@@ -8,23 +16,23 @@ See: [VEP](#vep), [MMN](#mmn), and [Faces](#face-task-by-roi).
 
 ## VEP
 
-<img src="../images/vep-erp-oz.jpeg" width="50%" height="auto" class="center">
+<img src="../images/vep-erp-oz.jpeg" width="40%" height="auto" class="center">
 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
     <th>Measure</th>
-    <th style="word-wrap: break-word; white-space: normal;">N1 (40-79 ms) Mean Difference</th>
-    <th style="word-wrap: break-word; white-space: normal;">N1 (40-79 ms) Significance</th>
-    <th style="word-wrap: break-word; white-space: normal;">P1 (80-140 ms) Mean Difference</th>
-    <th style="word-wrap: break-word; white-space: normal;">P1 (80-140 ms) Significance</th>
-    <th style="word-wrap: break-word; white-space: normal;">N2 (141-300 ms) Mean Difference</th>
-    <th style="word-wrap: break-word; white-space: normal;">N2 (141-300 ms) Significance</th>
+    <th>N1 (40-79 ms) Mean Difference</th>
+    <th>N1 (40-79 ms) Significance</th>
+    <th>P1 (80-140 ms) Mean Difference</th>
+    <th>P1 (80-140 ms) Significance</th>
+    <th>N2 (141-300 ms) Mean Difference</th>
+    <th>N2 (141-300 ms) Significance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-    <td style="word-wrap: break-word; white-space: normal;">Mean Amplitude</td>
+    <td>Mean Amplitude</td>
     <td>&Delta; = 0.07 &micro;V</td>
     <td>p = 0.91</td>
     <td>&Delta; = 0.18 &micro;V</td>
@@ -33,7 +41,7 @@ See: [VEP](#vep), [MMN](#mmn), and [Faces](#face-task-by-roi).
     <td>p= 0.99</td>
 </tr>
 <tr>
-    <td style="word-wrap: break-word; white-space: normal;">Peak Amplitude</td>
+    <td>Peak Amplitude</td>
     <td>&Delta; = -0.43 &micro;V</td>
     <td>p= 0.55</td>
     <td>&Delta; = 0.67 &micro;V</td>
@@ -42,7 +50,7 @@ See: [VEP](#vep), [MMN](#mmn), and [Faces](#face-task-by-roi).
     <td>p = 0.49</td>
 </tr>
 <tr>
-    <td style="word-wrap: break-word; white-space: normal;">Peak Latency</td>
+    <td>Peak Latency</td>
     <td>&Delta; = -0.3 ms</td>
     <td>p = 0.85</td>
     <td>&Delta; = 0.1 ms</td>
@@ -51,7 +59,7 @@ See: [VEP](#vep), [MMN](#mmn), and [Faces](#face-task-by-roi).
     <td>p = 0.86</td>
 </tr>
 <tr>
-<td colspan="7" style="font-size: 14px; word-wrap: break-word; white-space: normal; border-bottom: none;">
+<td colspan="7" style="font-size: 14px; border-bottom: none;">
 <b>Table 1.</b> Differences in ERPs between the artifact containing (n=100) and artifact-free (n=100) files.  Mean differences for mean amplitude, peak amplitude, and peak latency for the Oz cluster are presented for our time windows of interest.</td>
 </tr>
 </tbody>
@@ -59,9 +67,9 @@ See: [VEP](#vep), [MMN](#mmn), and [Faces](#face-task-by-roi).
 
 ## MMN
 
-<img src="../images/mmn-artifact.jpeg" width="95%" height="auto" class="center">
+<img src="../images/mmn-artifact.jpeg" width="85%" height="auto" class="center">
 <p></p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr><th>Condition</th><th>ROI</th><th>Mean Amp Artifact (uV)</th><th>Mean Amp No Artifact (uV)</th><th>Delta (uV)</th><th>p Value</th><th>p Value Adj. (FDR)</th></tr>
 </thead>
@@ -72,20 +80,20 @@ See: [VEP](#vep), [MMN](#mmn), and [Faces](#face-task-by-roi).
 <tr><td>Predeviant</td><td>T7T8</td><td>1.279</td><td>0.641</td><td>0.637</td><td>0.055</td><td>0.11</td></tr>
 <tr><td>Deviant</td><td>FCz</td><td>1.478</td><td>1.444</td><td>0.034</td><td>0.927</td><td>0.946</td></tr>
 <tr><td>Deviant</td><td>T7T8</td><td>3.118</td><td>1.987</td><td>1.132</td><td>0.004</td><td>0.024</td></tr>
-<tr><td colspan="7" style="font-size: 14px; word-wrap: break-word; white-space: normal;"><b>Table 2.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.</td></tr>
+<tr><td colspan="7" style="font-size: 14px;"><b>Table 2.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.</td></tr>
 </tbody>
 </table>
 
 <i>Note:</i> Differences between means are presented for each artifact designation, as well as the difference between them (delta). P-values were calculated for the differences between means, and then FDR corrected.  Original and corrected p-values are presented.
 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr><th>Contrast</th><th>ROI</th><th>Mean Amp Artifact (uV)</th><th>Mean Amp No Artifact (uV)</th><th>Delta (uV)</th><th>p Value</th></tr>
 </thead>
 <tbody>
 <tr><td>Deviant-Predeviant</td><td>FCz</td><td>0.24</td><td>-0.10</td><td>0.34</td><td>0.45</td></tr>
 <tr><td>Deviant-Predeviant</td><td>T7T8</td><td>1.70</td><td>1.03</td><td>0.67</td><td>0.10</td></tr>
-<tr><td colspan="6" style="font-size: 14px; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 3.</b> Differences in mean amplitude for the difference wave of files containing the artifact (n = 100) and artifact-free files (n = 100). 
+<tr><td colspan="6" style="font-size: 14px; border-bottom: none;"><b>Table 3.</b> Differences in mean amplitude for the difference wave of files containing the artifact (n = 100) and artifact-free files (n = 100). 
 Contrast</td></tr>
 </tbody>
 </table>
@@ -114,17 +122,17 @@ Contrast</td></tr>
 </div>
 <p></p>
 
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th>Condition</th>
 <th>ROI</th>
-<th style="word-wrap: break-word; white-space: normal;">Time Window (ms)</th>
-<th style="word-wrap: break-word; white-space: normal;">Mean Amp Artifact (uV)</th>
-<th style="word-wrap: break-word; white-space: normal;">Mean Amp No Artifact (uV)</th>
+<th>Time Window (ms)</th>
+<th>Mean Amp Artifact (uV)</th>
+<th>Mean Amp No Artifact (uV)</th>
 <th>Delta (uV)</th>
-<th style="word-wrap: break-word; white-space: normal;">p Value</th>
-<th style="word-wrap: break-word; white-space: normal;">p value Adjusted<br />(FDR)</th>
+<th>p Value</th>
+<th>p value Adjusted<br />(FDR)</th>
 </tr>
 </thead>
 <tbody>
@@ -153,25 +161,24 @@ Contrast</td></tr>
 <tr><td>Object</td><td>P8</td><td>200-350</td><td>1.532</td><td>1.866</td><td>-0.334</td><td>0.692</td><td>0.836</td></tr>
 <tr><td>Object</td><td>P8</td><td>350-600</td><td>5.32</td><td>6.283</td><td>-0.963</td><td>0.405</td><td>0.648</td></tr>
 <tr>
-<td colspan="8" style="font-size: 14px; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 4.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.</td>
+<td colspan="8" style="font-size: 14px; border-bottom: none;"><b>Table 4.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude for each condition, ROI, and time window.</td>
 </tr>
 </tbody>
 </table>
 
 <b>Note:</b> The FACE task has 2 blocks: one with upright and inverted faces and the other with upright faces and Sheinbug objects. The upright condition is separated into its corresponding block; “Upright (Inv)” are those upright faces during the inverted block while “Upright (Obj)” corresponds to upright faces during the object block. Differences between means are presented for each artifact designation, as well as the difference between them (delta).  P-values were calculated for the differences between means, and then FDR corrected. Original and corrected p-values are presented.
 
-
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th>Contrast</th>
 <th>ROI</th>
-<th style="word-wrap: break-word; white-space: normal;">Time Window (ms)</th>
-<th style="word-wrap: break-word; white-space: normal;">Mean Artifact</th>
-<th style="word-wrap: break-word; white-space: normal;">Mean No Artifact</th>
+<th>Time Window (ms)</th>
+<th>Mean Artifact</th>
+<th>Mean No Artifact</th>
 <th>Delta &Delta;</th>
-<th style="word-wrap: break-word; white-space: normal;">p Value</th>
-<th style="word-wrap: break-word; white-space: normal;">p value Adjusted (FDR)</th>
+<th>p Value</th>
+<th>p value Adjusted (FDR)</th>
 </tr>
 </thead>
 <tbody>
@@ -296,7 +303,7 @@ Contrast</td></tr>
 <td>0.703</td>
 </tr>
 <tr>
-<td colspan="8" style="font-size: 14px; word-wrap: break-word; white-space: normal; border-bottom: none;"><b>Table 5.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude of the difference wave.</td>
+<td colspan="8" style="font-size: 14px; border-bottom: none;"><b>Table 5.</b> Differences between the artifact containing (n=100) and artifact-free (n = 100) files for the mean amplitude of the difference wave.</td>
 </tr>
 </tbody>
 </table>
