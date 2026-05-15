@@ -44,7 +44,7 @@ HBCD Study MRI protocols and acquisition parameters are described in <a href="ht
 </div>
 <p></p>
 
-MRI and MRS release data include the following - <i>see <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for explanation of these data types</i>:
+MRI and MRS release data include the following - <i>see <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for an explanation of these data types</i>:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
