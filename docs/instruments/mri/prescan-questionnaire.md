@@ -44,11 +44,11 @@
 <tr><td><b>Respondent</b></td>
 <td>Primary Caregiver on Child (entered by Research Assistant)</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HBCD Study staff (remote)</td></tr>
+<td>HBCD Study staff (remote)</td></tr>
 <tr><td><b>Visits</b></td>
 <td>V02, V03</td></tr>
 <tr><td><b>QC Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Monitor data dashboard for variable missingness, coding errors, and data consistency.</td></tr>    
+<td>Monitor data dashboard for variable missingness, coding errors, and data consistency.</td></tr>    
 </tbody>
 </table>
 
@@ -96,38 +96,38 @@ This instrument is completed by research assistants when planning for MRI strate
 </tr>
 <tr>
 <td><code>s1_slp_001</code></td>
-<td style="word-wrap: break-word; white-space: normal;">Do you think skipping your child's nap prior to the visit would be helpful?</td>
+<td>Do you think skipping your child's nap prior to the visit would be helpful?</td>
 <td>Yes; No</td>
 </tr>
 <tr>
 <td><code>s1_slp_002</code></td>
 <td>Length of bedtime routine</td>
-<td style="word-wrap: break-word; white-space: normal;">0–5, 5–10, 10–20, 20–30, 30–45, 45–60 min; 1+ hr; No routine</td>
+<td>0–5, 5–10, 10–20, 20–30, 30–45, 45–60 min; 1+ hr; No routine</td>
 </tr>
 <tr>
 <td><code>s1_slp_003</code></td>
 <td>Length of nap routine</td>
-<td style="word-wrap: break-word; white-space: normal;">0–5, 5–10, 10–20, 20–30, 30–45, 45–60 min; 1+ hr; No routine</td>
+<td>0–5, 5–10, 10–20, 20–30, 30–45, 45–60 min; 1+ hr; No routine</td>
 </tr>
 <tr>
 <td><code>s1_slp_004</code></td>
 <td>After you set the child to sleep, how long does it take for them to fall asleep?</td>
-<td style="word-wrap: break-word; white-space: normal;">0–5, 5–10, 10–20, 20–30, 30–45, 45–60 min; 1+ hr; No routine</td>
+<td>0–5, 5–10, 10–20, 20–30, 30–45, 45–60 min; 1+ hr; No routine</td>
 </tr>
 <tr>
 <td><code>s1_slp_005</code></td>
 <td>Once asleep, how long does your child typically sleep?</td>
-<td style="word-wrap: break-word; white-space: normal;">0-30, 30-60 min; 1-2 hr; 2+ hrs</td>
+<td>0-30, 30-60 min; 1-2 hr; 2+ hrs</td>
 </tr>
 <tr>
 <td><code>s1_slp_006</code></td>
 <td>How consistent is your child's nap/sleep schedule?</td>
-<td style="word-wrap: break-word; white-space: normal;">Very; Somewhat; Not consistent; My child does not have a sleep schedule</td>
+<td>Very; Somewhat; Not consistent; My child does not have a sleep schedule</td>
 </tr>
 <tr>
 <td><code>s1_slp_007*</code></td>
 <td>Which of the following would help your child sleep? <i class="fa fa-square-check" style="color: #00aeae;"></i></td>
-<td style="word-wrap: break-word; white-space: normal;">Playtime; Breast feeding; Bottle feeding; Eating/drinking something else</td>
+<td>Playtime; Breast feeding; Bottle feeding; Eating/drinking something else</td>
 </tr>
 <tr>
 <td><code>s1_sls_001*</code></td>
@@ -152,12 +152,12 @@ This instrument is completed by research assistants when planning for MRI strate
 <tr>
 <td><code>s1_sls_005*</code></td>
 <td>Soothing sounds</td>
-<td style="word-wrap: break-word; white-space: normal;">White noise; Sing lullabies; Listen to music</td>
+<td>White noise; Sing lullabies; Listen to music</td>
 </tr>
 <tr>
 <td><code>s1_sls_006*</code></td>
 <td>Sleep aids</td>
-<td style="word-wrap: break-word; white-space: normal;">Stuffed toy; Pacifier; Weighted blanket; Other</td>
+<td>Stuffed toy; Pacifier; Weighted blanket; Other</td>
 </tr>
 <tr>
 <td><code>s1_sls_007</code></td>

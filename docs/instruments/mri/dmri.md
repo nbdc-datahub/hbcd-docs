@@ -217,19 +217,19 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 <thead>  <tr>    <th>Metric</th>    <th>Description</th>  </tr></thead>
 <tbody>
 <tr><td>Propagator Anisotropy (PA)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Quantifies anisotropy by computing the dissimilarity of the full MAP-MRI propagator from its fully isotropic counterpart. More accurate than FA.</td>
+  <td>Quantifies anisotropy by computing the dissimilarity of the full MAP-MRI propagator from its fully isotropic counterpart. More accurate than FA.</td>
 </tr>
 <tr><td>Non-Gaussianity (NG)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Quantifies deviation from Gaussian diffusion. <strong>NG</strong> measures overall deviation, <strong>NGpar</strong> along the primary diffusion axis (fiber direction in white matter), and <strong>NGperp</strong> perpendicular to it (often related to restriction).</td>
+  <td>Quantifies deviation from Gaussian diffusion. <strong>NG</strong> measures overall deviation, <strong>NGpar</strong> along the primary diffusion axis (fiber direction in white matter), and <strong>NGperp</strong> perpendicular to it (often related to restriction).</td>
 </tr>
 <tr><td>Return To Origin Probability (RTOP)</td>
-  <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to its starting point. Low in unrestricted diffusion (large cells), high in restricted diffusion (small or impermeable cells). Inversely related to pore volume.</td>
+  <td>Probability that a water molecule returns to its starting point. Low in unrestricted diffusion (large cells), high in restricted diffusion (small or impermeable cells). Inversely related to pore volume.</td>
 </tr>
 <tr><td>Return To Axis Probability (RTAP)</td>
- <td style="word-wrap: break-word; white-space: normal;">Probability that a water molecule returns to the principal diffusion axis (primary eigenvector).</td>
+ <td>Probability that a water molecule returns to the principal diffusion axis (primary eigenvector).</td>
 </tr>
 <tr><td>Return To Plane Probability (RTPP)</td>
-<td style="word-wrap: break-word; white-space: normal;">Reciprocal of mean cylinder length and inversely proportional to axial diffusivity; Related to diffusion taking place within coherently oriented cylinders.</td>
+<td>Reciprocal of mean cylinder length and inversely proportional to axial diffusivity; Related to diffusion taking place within coherently oriented cylinders.</td>
 </tr>
 </tbody>
 </table>
@@ -246,7 +246,7 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines" style="width: 100%; table-layout: fixed;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th>QSIRecon Workflow</th>
@@ -368,17 +368,17 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 <tbody>
 <tr>
   <td><span class="tooltip">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Models diffusion with a 3D Gaussian distribution of water displacements. Key outputs include Fractional Anisotropy (FA: anisotropic diffusion, typically higher in white matter bundles with dense, parallel fibers) and Mean Diffusivity (MD: the directionally averaged apparent diffusion coefficient, inversely related to cellular membrane density) (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser 1994</a>).</td>
+  <td>Models diffusion with a 3D Gaussian distribution of water displacements. Key outputs include Fractional Anisotropy (FA: anisotropic diffusion, typically higher in white matter bundles with dense, parallel fibers) and Mean Diffusivity (MD: the directionally averaged apparent diffusion coefficient, inversely related to cellular membrane density) (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser 1994</a>).</td>
   <td><a href="#qsirecon-DSIStudio">qsirecon-<br>DSIStudio</a></td>
 </tr>
 <tr>
   <td><span class="tooltip">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Extends DTI to capture non-Gaussian diffusion. Main metric: MK (mean kurtosis), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).</td>
+  <td>Extends DTI to capture non-Gaussian diffusion. Main metric: MK (mean kurtosis), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).</td>
   <td><a href="#qsirecon-DIPYDKI">qsirecon-<br>DIPYDKI</a></td>
 </tr>
 <tr>
   <td><span class="tooltip">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator MRI</span></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution, enabling quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>). See <a href="#mapmri-metrics">MAP-MRI metrics</a>.</td>
+  <td>Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution, enabling quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>). See <a href="#mapmri-metrics">MAP-MRI metrics</a>.</td>
   <td><a href="#qsirecon-TORTOISE">qsirecon-<br>TORTOISE_model-<br>MAPMRI</a></td>
 </tr>
 </tbody>

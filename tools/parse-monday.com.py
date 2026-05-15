@@ -88,7 +88,7 @@ def build_table(domain, rows):
             type_label = '<i class="fa-solid fa-rotate icon-rotate"></i>'
         table_parts.append(f"<td>{type_label}</td>")
         table_parts.append(f"<td>{html.escape(str(table))}</td>")
-        table_parts.append(f"<td style='word-wrap: break-word; white-space: normal;'>{summary_html}</td>")
+        table_parts.append(f"<td>{summary_html}</td>")
 
          # Determine pill class based on PR value
         if str(pr).upper() == "TBD":

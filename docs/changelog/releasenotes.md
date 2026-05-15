@@ -10,11 +10,11 @@
 
 ## Participant Population (Inclusion/Exclusion Criteria)
 
-HBCD enrolls at least 25% of participants who have more than minimal substance use during pregnancy, including opioids ([Si et al. 2024](https://doi.org/10.1016/j.dcn.2024.101432)). In addition, HBCD enrollment strategies aimed at yielding a study population that is representative of the individual and geographic characteristics of reproductive-aged women in the United States who had a birth in the past 12 months, and include an adequate comparison group for substance exposed individuals ([Nelson et al. 2024](https://doi.org/10.1016/j.dcn.2024.101441)). There are siblings enrolled in HBCD, some of whom are twins or triplets (multiples). IDs for multiples are presented in the *HBCD Private Release Notes* - see <a href="../../instruments/demo/visitinfo/#multiple-birth-participants" target="_blank">Multiple Birth Participants</a> under **Visit Information** for details.
+HBCD enrolls at least 25% of participants who have more than minimal substance use during pregnancy, including opioids ([Si et al. 2024](https://doi.org/10.1016/j.dcn.2024.101432)). In addition, HBCD enrollment strategies aimed at yielding a study population that is representative of the individual and geographic characteristics of reproductive-aged women in the United States who had a birth in the past 12 months, and include an adequate comparison group for substance exposed individuals ([Nelson et al. 2024](https://doi.org/10.1016/j.dcn.2024.101441)). There are siblings enrolled in HBCD, some of whom are twins or triplets (multiples). IDs for multiples are presented in the *HBCD Private Release Notes* - see <a href="../../instruments/demo/visitinfo/#multiple-birth-participants" target="_blank">Multiple Birth Participants</a> under Visit Information for details.
 
 ## General Rules Applied to All Data
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
 <tbody>
 <tr>
     <td><strong>Exclusions applied to all data</strong></td>
@@ -85,8 +85,8 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 <div class="collapsible-content">
 <p>
 <ol>
-<li><strong>Multiple Birth Participants</strong>: multiple participants from the same birth (e.g. twins)</li>
-<li><strong>Postnatal Recruits (PNR)</strong>: joined the study after the child is born (complete a modified V01 and V02)</li>
+<li>Multiple Birth Participants: multiple participants from the same birth (e.g. twins)</li>
+<li>Postnatal Recruits (PNR): joined the study after the child is born (complete a modified V01 and V02)</li>
 </ol>
 </p>
 </div>
@@ -105,7 +105,7 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
 <i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;= Concatenated Data - <a href="../../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>
 </p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
+<table class="table-no-vertical-lines">
 <thead>
 <tr>
 <th>Domain</th>
@@ -219,7 +219,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 </div>
 <div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines">
-<thead style="background-color: #ff8c4266; color: #6e6256ff;">
+<thead>
   <tr>
     <th style="width: 1%;">Domain</th>
     <th>Table/Data</th>
@@ -340,7 +340,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 
 ### 1.1 Existing Study Data Updates
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 16px;">
+<table class="table-no-vertical-lines">
 <thead>
 <th>Domain</th>
 <th>Table/Data</th>
@@ -452,7 +452,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 </div>
 <div class="table-collapsible-content">
 <p style="font-size: 1.0em;"><strong>Basic Demographics (<code>sed_basic_demographics</code>)</strong></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
 <tbody>
   <tr>
     <td>
@@ -482,7 +482,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 </tbody>
 </table>
 <p style="font-size: 1.0em;"><strong>Visit Level Data (<code>par_visit_data</code>)</strong></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
 <tbody>
   <tr>
     <td>
@@ -504,7 +504,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 </div>
 <div class="table-collapsible-content">
 <p style="font-size: 1.0em;"><strong>Nails & Urine (<code>bio_bm_biosample_&lt;nails|urine&gt;</code>)</strong></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
 <tbody>
   <tr>
   <td>Addition of formerly missing <strong>collection and analysis dates</strong> (<i>Collection/Received/Report</i>).</td>
@@ -512,7 +512,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 </tbody>
 </table>
 <p style="font-size: 1.0em;"><strong>Urine (<code>bio_bm_biosample_urine_results</code>)</strong></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
 <tbody>
   <tr>
     <td>
@@ -544,7 +544,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
 <tbody>
   <tr>
     <td>
@@ -566,11 +566,11 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
 <tbody>
   <tr>
     <td>
-      The <strong>SPM-2 (<code>ncl_cg_spm2__inf</code>)</strong> now includes <strong>verified t-scores</strong>, originally excluded due to errors in conversion from raw scores.</td>
+      The SPM-2 (<code>ncl_cg_spm2__inf</code>) now includes verified t-scores, originally excluded due to errors in conversion from raw scores.</td>
   </tr>  
 </tbody>
 </table>
@@ -587,7 +587,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
 <tbody>
   <tr>
     <td>
@@ -689,7 +689,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 </div>
 <div class="table-collapsible-content">
 <p style="font-size: 1.0em;"><strong>Instrument Exclusions</strong></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
 <thead>
   <th>Instrument</th>
   <th>Table Name</th>
@@ -707,7 +707,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
 </tbody>
 </table>
 <p style="font-size: 1.0em;"><strong>Instrument Field Exclusions</strong></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
 <thead>
   <th>Table Field(s)</th>
   <th>Field Name(s)/Details</th>

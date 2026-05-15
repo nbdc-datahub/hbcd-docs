@@ -51,7 +51,7 @@ EEG release data include the following - <i>see <a href="../../datacuration/over
 <tr><td><b><i class="fas fa-cog header-icon"></i> Derivatives</b></td>
 <td>File-based data in modality-specific formats processed through HBCD-MADE pipeline</td></tr>
 <tr><td><b><i class="fas fa-table header-icon"></i> Tabulated Data</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Pipeline derivatives in HBCD-tabulated format - see <a href="../../#eeg" target="_blank">EEG Tabulated Data</a>
+<td>Pipeline derivatives in HBCD-tabulated format - see <a href="../../#eeg" target="_blank">EEG Tabulated Data</a>
 </td></tr>
 </tbody></table>
 

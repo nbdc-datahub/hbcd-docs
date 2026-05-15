@@ -24,7 +24,7 @@
 </tr>
 <tr>
   <td><b>Quality Control</b></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td>
     Data dashboard was monitored for variable missingness, possible coding errors, scoring verification when needed, and data consistency. High missingness was noted for income, although this is in line with expectations.
   </td>
 </tr>

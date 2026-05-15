@@ -42,13 +42,13 @@
 <tr><td><b>Respondent</b></td>
 <td>[eg Pregnant participant, Birth parent, Primary Caregiver]</td></tr>
 <tr><td><b>Administration</b></td>
-<td style="word-wrap: break-word; white-space: normal;">[eg HBCD Study staff in person/remote; Self administered in person/remote.<br>Please also note if Spanish translation exists for surveys - yes/no]</td></tr>
+<td>[eg HBCD Study staff in person/remote; Self administered in person/remote.<br>Please also note if Spanish translation exists for surveys - yes/no]</td></tr>
 <tr><td><b>Visits</b></td>
 <td>[V01, V02, V03, etc]</td></tr>
 <tr><td><b>Completion Time</b></td>
 <td>[eg x min]</td></tr>
 <tr><td><b>Quality Control Procedures</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Detail the QC procedures specific to the measure<br>
+<td>Detail the QC procedures specific to the measure<br>
 (e.g., scoring algorithm verification, data consistency checks)<br>
 and common issues identified during QC processes that users should be aware of (may also be included as a Data Warning above).</td></tr>      
 </tbody>
