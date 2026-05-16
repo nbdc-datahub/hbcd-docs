@@ -34,7 +34,7 @@ Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modalit
  
 #### Study Design Logic: Child-Centric Data Structure
 
-The HBCD Study organizes data around the Child ID as the central key, i.e. a caregiver and their child share the same participant ID. All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by simplifying child-focused analysis (researchers can track each child’s data over time without remapping caregiver information) and handling multi-birth cases cleanly (e.g. when a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.
+The HBCD Study organizes data around the Child ID as the primary key, meaning each caregiver and child share the same participant ID, with all caregiver-reported data nested under the corresponding Child ID. This structure supports longitudinal analyses by enabling straightforward tracking of each child’s data over time without needing to remap caregiver information. It also simplifies multi-birth cases: when a caregiver reports on multiple children, each child is assigned a unique record, so each child's data remains distinct (avoiding complex joins or disambiguation).
 
 ## File Types
 

@@ -1,4 +1,4 @@
-/* Anchor links for collapsible sections */
+/* Anchor links */
 .text-with-link {
   position: relative;
 }
@@ -9,14 +9,12 @@
   opacity: 0;
   transition: opacity 0.2s;
 }
-.text-with-link:hover .anchor-link {
-  opacity: 1;
-}
+.text-with-link:hover .anchor-link,
 .anchor-link:hover {
   opacity: 1;
 }
 
-/* General Banner Settings */
+/* Arrow */
 .arrow {
   font-size: 1.5em;
   line-height: 1;
@@ -25,283 +23,81 @@
   color: #3e3e3e;
   margin-left: auto;
   transition: transform 0.3s ease;
-  transform-origin: center;
 }
 .arrow.rotate,
 .arrow.open-arrow {
   transform: rotate(90deg);
 }
-.banner {
+
+/* Shared banner base */
+.banner,
+.issues-banner,
+.alert-banner,
+.warning-banner,
+.table-banner {
   display: flex;
   align-items: center;
-  background-color: #eaf9f0;
-  padding: 4px 8px; 
+  padding: 4px 8px;
   border-bottom: 1px solid #e0e0e0;
-  font-family: Lato; 
+  font-family: Lato;
   color: #474646;
   font-weight: bold;
+  font-size: 0.9em;
+  line-height: 1.1;
+  width: 100%;
+}
+
+/* Banner variants */
+.banner {
+  background-color: #eaf9f0;
   gap: 3px;
   line-height: 18px;
-  font-size: 0.9em;
-  border-radius: 0;
   cursor: pointer;
-  width: 100%;
 }
 
-/* General Collapsible Banner Settings */
-.collapsible-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  background-color: #d0dff03d;
-  border: 1px solid #3333331a;
-  border-top: none;
-  padding: 0 20px;
-  border-radius: 0 0 5px 5px;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-}
-.collapsible-content.open {
-  max-height: none;
-}
-.collapsible-content p {
-  font-size: 1.0em;
-  line-height: 1.3;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-}
-.collapsible-content b {
-  line-height: 1.3;
-}
-.collapsible-content ul {
-  margin-top: 1rem;
-  padding-left: 0.4rem;
-  line-height: 1;
-}
-.collapsible-content li {
-  margin-bottom: 0.1rem;
-  line-height: 1;
-}
-.collapsible-content ul ul {
-  margin-top: 0.1rem;
-  line-height: 1;
-}
-
-.text {
-  flex: 1;
-  font-size: 1rem; 
-  font-weight: bold; 
-  text-align-last: left;
-  margin-right: 10px;
-  word-wrap: break-word;
-}
-
-/* Issues Banner */
 .issues-banner {
-  display: flex;
-  align-items: center;
   background-color: #dde6fe;
-  padding: 4px 8px;
-  border-bottom: 1px solid #e0e0e0;
-  font-family: Lato; 
-  color: #474646;
-  font-weight: bold;
   gap: 8px;
-  font-size: 0.9em;
-  line-height: 1.1;
   border-radius: 6px;
-  width: 100%;
-}
-.issues-banner .emoji {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4em;
-  color: #199bd6;
-}
-.issues-banner .text {
-  flex: 1;
 }
 
-
-/* RED RESPONSIBLE USE INFOBOXES */
 .alert-banner {
-  display: flex;
-  align-items: center;
   background-color: #be044537;
-  padding: 4px 8px;
-  border-bottom: 1px solid #e0e0e0;
-  font-family: Lato; 
-  color: #474646;
-  font-weight: bold;
   gap: 8px;
-  font-size: 0.9em;
-  line-height: 1.1;
   border-radius: 6px;
-  width: 100%;
-}
-.alert-banner .emoji {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4em;
-  color: red;
-}
-.alert-banner .text {
-  flex: 1;
-}
-.alert-collapsible-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  background-color: #be04450c;
-  border: 1px solid #3333331a;
-  border-top: none;
-  padding: 0 20px;
-  border-radius: 0 0 5px 5px;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-}
-.alert-collapsible-content.open {
-  max-height: none;
-}
-.alert-collapsible-content p {
-  font-size: 1.0em;
-  line-height: 1.3;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-}
-.alert-collapsible-content ul {
-  margin-top: 1rem;
-  padding-left: 0.4rem;
-  line-height: 1;
-}
-.alert-collapsible-content li {
-  margin-bottom: 0.1rem;
-  line-height: 1;
 }
 
-/* YELLOW DATA WARNING INFOBOX */
 .warning-banner {
-  display: flex;
-  align-items: center;
   background-color: #ffe10066;
-  padding: 4px 8px;
-  border-bottom: 1px solid #e0e0e0;
-  font-family: Lato; 
-  color: #474646;
-  font-weight: bold;
   gap: 8px;
-  font-size: 0.9em;
-  line-height: 1.1;
   border-radius: 6px;
-  width: 100%;
 }
+
+.table-banner {
+  background-color: #dde6fe;
+  padding: 3px 10px;
+  gap: 8px;
+  border-radius: 6px;
+}
+
+/* Shared emoji (standard banners) */
+.issues-banner .emoji,
+.alert-banner .emoji,
 .warning-banner .emoji {
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.4em;
-  color: #ffa500;
-}
-.warning-banner .text {
-  flex: 1;
 }
 
-.warning-collapsible-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  background-color: #ffe10012;
-  border: 1px solid #3333331a;
-  border-top: none;
-  padding: 0 20px;
-  border-radius: 0 0 5px 5px;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-}
-.warning-collapsible-content.open {
-  max-height: none;
-}
-.warning-collapsible-content p {
-  font-size: 1.0em;
-  line-height: 1.3;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-}
-.warning-collapsible-content ul {
-  margin-top: 1rem;
-  padding-left: 0.4rem;
-  line-height: 1;
-}
-.warning-collapsible-content li {
-  margin-bottom: 0.1rem;
-  line-height: 1;
-}
+.issues-banner .emoji { color: #199bd6; }
+.alert-banner .emoji { color: red; }
+.warning-banner .emoji { color: #ffa500; }
 
-/* TABLE INFOBOXES */
-
-.table-banner {
-  display: flex;
-  align-items: center;
-  background-color: #dde6fe;
-  padding: 3px 10px;
-  border-bottom: 1px solid #e0e0e0;
-  font-family: Lato; 
-  color: #474646;
-  font-weight: bold;
-  gap: 8px;
-  font-size: 0.9em;
-  line-height: 1.1;
-  border-radius: 6px;
-  width: 100%;
-}
-
-.table-banner .text {
-  flex: 1;
-}
-.table-collapsible-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  background-color: #d0dff02c;
-  border-top: none;
-  padding: 0 0;
-  border-radius: 0 0 5px 5px;
-  margin-bottom: 8px;
-  width: 100%;
-  display: block;
-  overflow-x: auto; 
-}
-.table-collapsible-content table {
-  background-color: #ffffff;
-}
-.table-collapsible-content.open {
-  max-height: none;
-}
-.table-collapsible-content p {
-  display: inline-block !important;
-  padding: 5px 10px !important;
-  font-size: 0.9em;
-  line-height: 1.3 !important;
-  margin-top: 0.5em !important;
-  margin-bottom: 0 !important;
-}
-.table-collapsible-content ul {
-  padding-left: 0.4rem;
-  line-height: 1;
-  font-size: 0.9em !important;
-}
-.table-collapsible-content li {
-  margin-bottom: 0.4rem;
-  line-height: 1.1;
-  font-size: 1em !important;
-}
+/* Table banner emoji (slightly different sizing) */
 .table-banner .emoji {
-  width: 1.8rem;      
+  width: 1.8rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -310,11 +106,116 @@
   color: #199bd6;
 }
 
-/* STATIC BANNER */
+/* Shared text */
+.text {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align-last: left;
+  overflow-wrap: break-word;
+}
+
+/* Shared collapsible base */
+.collapsible-content,
+.alert-collapsible-content,
+.warning-collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border: 1px solid #3333331a;
+  border-top: none;
+  padding: 0 20px;
+  border-radius: 0 0 5px 5px;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.collapsible-content { background-color: #d0dff03d; }
+.alert-collapsible-content { background-color: #be04450c; }
+.warning-collapsible-content { background-color: #ffe10012; }
+
+.collapsible-content.open,
+.alert-collapsible-content.open,
+.warning-collapsible-content.open {
+  max-height: none;
+}
+
+/* Shared inner content styles */
+.collapsible-content p,
+.alert-collapsible-content p,
+.warning-collapsible-content p {
+  font-size: 1em;
+  line-height: 1.3;
+  margin: 0.8em 0;
+}
+
+.collapsible-content ul,
+.alert-collapsible-content ul,
+.warning-collapsible-content ul {
+  margin-top: 1rem;
+  padding-left: 0.4rem;
+  line-height: 1;
+}
+
+.collapsible-content li,
+.alert-collapsible-content li,
+.warning-collapsible-content li {
+  margin-bottom: 0.1rem;
+  line-height: 1;
+}
+
+/* Minor unique rules kept */
+.collapsible-content b {
+  line-height: 1.3;
+}
+.collapsible-content ul ul {
+  margin-top: 0.1rem;
+}
+
+/* Table collapsible (kept separate due to real differences) */
+.table-collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  overflow-x: auto;
+  transition: max-height 0.3s ease-out;
+  background-color: #d0dff02c;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.table-collapsible-content.open {
+  max-height: none;
+}
+
+.table-collapsible-content table {
+  background-color: #ffffff;
+}
+
+.table-collapsible-content p {
+  display: inline-block !important;
+  padding: 5px 10px !important;
+  font-size: 0.9em;
+  line-height: 1.3 !important;
+  margin: 0.5em 0 0 !important;
+}
+
+.table-collapsible-content ul {
+  padding-left: 0.4rem;
+  line-height: 1;
+  font-size: 0.9em !important;
+}
+
+.table-collapsible-content li {
+  margin-bottom: 0.4rem;
+  line-height: 1.1;
+}
+
+/* Static banner */
 .static-banner {
   background-color: #f0f4ff;
   padding: 4px 8px;
-  border: none;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -322,10 +223,10 @@
   line-height: 1.1;
   font-size: 0.9em;
   border-left: 5px solid #199bd6;
-  border-radius: 0;
 }
+
 .static-banner .emoji {
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   margin-right: 10px;
   color: #199bd6;
 }
