@@ -1,14 +1,22 @@
+<style>
+.wy-nav-content {
+    width: 85% !important;
+    max-width: 100% !important;
+    flex-grow: 1 !important;
+}
+</style>
+
 # Recommended Programs & Utilities
 
 ## Download Platforms
-HBCD study data can be downloaded via the [NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/) or [Data Exploration and Analysis Portal (DEAP)](https://hbcd.deapscience.com/#/home") - see the [Access & Download](download.md#explore-download) page for details.
+HBCD study data can be downloaded via the [NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/) or [DEAP](https://hbcd.deapscience.com/#/home") - see the [Access & Download](download.md#explore-download) page for details.
 
 ## Tabulated Data
 
 ### <i class="fas fa-database header-icon"></i> NBDC Sandbox   
 The NBDC Sandbox provides a secure, cloud-based analysis environment designed to support data analysis workflows, particularly for neuroimaging and large-scale tabular datasets, without having to download and manage data locally.   
-[Go to NBDC Sandbox →](https://nbdc-safe.lassoinformatics.com/pun/sys/dashboard)      
-[View NBDC Sandbox Tutorial Series →](https://hdcc-sandbox-rtd.readthedocs.io/latest/)
+[NBDC Sandbox →](https://nbdc-safe.lassoinformatics.com/pun/sys/dashboard)      
+[NBDC Sandbox Tutorial Series →](https://hdcc-sandbox-rtd.readthedocs.io/latest/)
 
 ### <i class="fas fa-database header-icon"></i> NBDCtools
 NBDCtools is an R package for creating custom, analysis-ready datasets by simply specifying the variable and/or table names you need. The package automatically retrieves the specified columns from locally downloaded HBCD tabulated data and assembles them into a single in-memory data frame, minimizing storage and memory use. This provides a flexible alternative to building datasets through the Lasso or DEAP platforms, eliminating the need to manually parse files or resolve formatting issues. In addition to dataset assembly, NBDCtools includes functions for working with [shadow matrices](../datacuration/phenotypes.md#shadow-matrices-for-missing-data) as well as applying transformations and filters.   
@@ -51,7 +59,7 @@ A free, open-source image viewer for medical images, particularly MRI data. Part
 
 ## NMIND
 
-[NMIND](https://www.nmind.org/about) is a collaborative initiative dedicated to improving transparency, reproducibility, and efficiency in neuroimaging research. NMIND principles, standards, and tools were used to develop the HBCD [Processing & Derivative Data Standards](../standards/processing/standards.md). Explore a growing collection of tools tested and improved through the NMIND process under [Evaluated Tools](https://www.nmind.org/proceedings/).
+[NMIND](https://www.nmind.org/about) is a collaborative initiative dedicated to improving transparency, reproducibility, and efficiency in neuroimaging research. NMIND principles, standards, and tools were used to develop the HBCD [Processing & Derivative Data Standards](../standards/processing/standards.md). Explore a growing collection of tools tested and improved through the NMIND process at [Evaluated Tools](https://www.nmind.org/proceedings/).
 
 ## ReproSchema
 
@@ -59,17 +67,21 @@ A free, open-source image viewer for medical images, particularly MRI data. Part
 
 Consistent data collection is essential to reproducible longitudinal research, particularly for large, multi-site studies like HBCD. **ReproSchema** ([https://www.repronim.org/reproschema](https://www.repronim.org/reproschema/)) provides both a **schema** and **software platform** for structuring, versioning, and managing research questionnaires over time, including integration with survey and data collection platforms like REDCap. 
 
-**As a [schema](https://repronim.org/reproschema/schema/schema/)**, ReproSchema defines a standardized structure for questionnaires, including consistent formatting across time points, with explicitly defined questions, response options, and skip logic linked metadata. Questionnaires are organized following a hierarchical model with three main components:
-> ***Protocol* (all study instruments) → *Activity* (single questionnaire/instrument) → *Item* (single question within instrument)**
+### Schema
 
-**As a [platform](https://repronim.org/reproschema/user-guide/create-new-protocol/)**, ReproSchema provides tools for automated storage, versioning in GitHub, tracking changes (e.g. wording updates, added/removed/re-ordered items, updated skip logic, etc.), and comparing questionnaires over time. It also provides a utility for browser-based survey deployment, with survey responses stored in JSON-LD format to link each answer to its protocol, activity, and item in the ReproSchema library. See [Chen et al. 2025 Figure 1](https://www.jmir.org/2025/1/e63343#figure1) for details.
+As a schema, ReproSchema defines a standardized structure for questionnaires, including consistent formatting across time points, with explicitly defined questions, response options, and skip logic linked metadata. Questionnaires are organized following a hierarchical model with three main components:
+> ***Protocol* (all study instruments) → *Activity* (single instrument) → *Item* (single question within instrument)**
 
-<p>
-<div id="rs-example" class="table-banner" onclick="toggleCollapse(this)"> <span class="emoji"><i class="fa-solid fa-circle-info"></i></span> <span class="text-with-link">
-<span class="text">Tracking Changes: Example</span> <a class="anchor-link" href="#rs-example" title="Copy link"> <i class="fa-solid fa-link"></i> </a> </span> <span class="arrow">▸</span> </div>
-<div class="table-collapsible-content"> 
-<p>ReproSchema maintains transparent, detailed version histories so researchers can understand how questionnaires evolve between releases. For example, the following shows how a sleep question and its response options may evolve across releases. ReproSchema versioning captures these changes to allow researchers to adjust longitudinal analyses as needed.</p> 
-<table class="compact-table-no-vertical-lines">
+### Platform
+
+As a platform, ReproSchema provides tools for automated storage, versioning in GitHub, tracking changes (e.g. wording updates, added/removed/re-ordered items, updated skip logic, etc.), and comparing questionnaires over time. It also provides a utility for browser-based survey deployment, with survey responses stored in JSON-LD format to link each answer to its protocol, activity, and item in the ReproSchema library. See [Chen et al. 2025 Figure 1](https://www.jmir.org/2025/1/e63343#figure1) for details.
+
+
+### Tracking Changes: Example 
+
+ReproSchema maintains transparent, detailed version histories so researchers can understand how questionnaires evolve between releases. For example, the following shows how a sleep question and its response options may evolve across releases. ReproSchema versioning captures these changes to allow researchers to adjust longitudinal analyses as needed.
+
+<table class="table-no-vertical-lines">
 <thead><tr>
 <th>Release</th>
 <th>Item Question</th>
@@ -78,20 +90,18 @@ Consistent data collection is essential to reproducible longitudinal research, p
 </tr> </thead>
 <tbody>
 <tr><td>1.0</td> 
-<td><i>How many hours do you sleep on a typical night?</i></td>
+<td>How many hours do you sleep on a typical night?</td>
 <td>Free-text numeric entry</td>
 <td>-</td>
 </tr>
 <tr>
 <td>2.0</td>
-<td><i>On average, how many hours of sleep do you get per night?</i></td>
+<td>On average, how many hours of sleep do you get per night?</td>
 <td>Dropdown menu options (e.g. <i>Less than 5, 5-6, etc.</i>)</td>
 <td>1.0 → 2.0: Categorical response options reduce variability, but lose detail</td>
 </tr>
 <tr> <td>3.0</td>
-<td><i>On average, how many hours of sleep do you get in a 24-hour period, including naps?</i></td>
+<td>On average, how many hours of sleep do you get in a 24-hour period, including naps?</td>
 <td>Same as Release 2.0</td> 
 <td>2.0 → 3.0: Adding naps changes the construct, affecting cross-release comparability</td>
 </tbody> </table> 
-</div>
-</p>

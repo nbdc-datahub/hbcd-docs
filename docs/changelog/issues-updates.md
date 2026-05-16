@@ -24,7 +24,17 @@
   color: #666;
   font-style: italic;
 }
-
+/* ICONS */
+.icon-rotate {
+  color: #199bd6;
+  margin-right: 0.4em;
+  font-size: 1em;
+}
+.icon-bug {
+  color: #f97316;
+  margin-right: 0.4em;
+  font-size: 1em;
+}
 /* DOMAINS LEGEND*/
 .study-legend {
   width: 100%;
