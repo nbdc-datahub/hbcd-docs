@@ -1,7 +1,7 @@
 # Access & Download Data
 
 ## ACCESS
-To request access to HBCD Study data, researchers must submit a *Data Use Certification (DUC)* through the [NBDC Data Hub](https://www.nbdc-datahub.org/). **See [Data Access Process](https://www.nbdc-datahub.org/data-access-process) for detailed submission instructions**.  
+To request access to HBCD Study data, researchers must submit a *Data Use Certification (DUC)* through the [NBDC Data Hub](https://www.nbdc-datahub.org/). See [Data Access Process](https://www.nbdc-datahub.org/data-access-process) for detailed submission instructions.  
 
 <p style="margin-bottom: 0;"><i class="fas fa-circle-info header-icon"></i> <b>Additional Resources</b></p>
 <ul class="compact-list">

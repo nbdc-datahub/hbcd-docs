@@ -740,21 +740,10 @@ Meyers-Labonte LUT is in supp: https://www.biorxiv.org/content/10.1101/2023.11.1
 
 ## Quality Control Summary Statistics
 
-<div id="fconn" class="static-banner" style="border-left: 5px solid #199bd6;">
-  <span class="emoji"><i class="fa fa-circle-check"></i></span>
-  <span class="text-with-link">
-    <span class="text">Impact of Data Quality on Functional Connectivity</span>
-    <a class="anchor-link" href="#fconn" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-</div>
-<div class="table-static-content">
-<p>Average functional connectivity matrices were computed using the Gordon-parcellated time series available in the V02 XCP-D derivatives. Data were included based on varying thresholds of <a href="../qc/#brainswipes">BrainSwipes</a> QC scores. Functional connectivity patterns were not substantially altered with the inclusion of lower-quality data, indicating robustness to mild quality variation.</p>
-<p><strong>Connectivity matrices as data quality improves (left -> right) based on QC thresholds of 0.1, 0.5, and 0.9:</strong></p>
+We evaluated the impact of data quality on functional connectivity. Average functional connectivity matrices were computed using the Gordon-parcellated time series available in the V02 XCP-D derivatives. Data were included based on varying thresholds of <a href="../qc/#brainswipes">BrainSwipes</a> QC scores. Functional connectivity patterns were not substantially altered with the inclusion of lower-quality data, indicating robustness to mild quality variation
+
+**Connectivity matrices as data quality improves (left -> right) based on QC thresholds of 0.1, 0.5, and 0.9:**
 <img src="../images/fconn_qc.png" style="width: 90%;" class="center">
-<br>
-</div>
 
 ## References
 

@@ -32,22 +32,9 @@ Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modalit
  - Session/visit number (<code>session_id</code>)
  - Run number (<code>run_id</code>) - only as applicable, e.g., for MRI where multiple runs are acquired 
  
-<div id="study-design-logic-child-centric-data-structure" class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text-with-link">
-  <span class="text">Study Design Logic: Child-Centric Data Structure</span>
-  <a class="anchor-link" href="#study-design-logic-child-centric-data-structure" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-</div>
-<div class="notification-static-content">
-<p>The HBCD Study organizes data around the Child ID as the central key, i.e. a caregiver and their child share the same participant ID. All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by:</p>
-<ul>
-<li><strong>Simplifying child-focused analysis</strong>: Researchers can track each child’s data over time without remapping caregiver information.</li>
-<li><strong>Handling multi-birth cases cleanly</strong>: When a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.</li>
-</ul>
-</div>
+#### Study Design Logic: Child-Centric Data Structure
+
+The HBCD Study organizes data around the Child ID as the central key, i.e. a caregiver and their child share the same participant ID. All caregiver-provided data (e.g., from biological mothers or other caregivers) is nested under the corresponding Child ID. This structure supports the study’s goal of enabling longitudinal analyses of child development by simplifying child-focused analysis (researchers can track each child’s data over time without remapping caregiver information) and handling multi-birth cases cleanly (e.g. when a caregiver reports on multiple children (e.g., twins), each child’s data remains distinct, avoiding complex joins or disambiguation.
 
 ## File Types
 

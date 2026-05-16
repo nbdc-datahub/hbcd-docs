@@ -9,7 +9,7 @@
 # Recommended Programs & Utilities
 
 ## Download Platforms
-HBCD study data can be downloaded via the [NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/) or [DEAP](https://hbcd.deapscience.com/#/home") - see the [Access & Download](download.md#explore-download) page for details.
+HBCD study data can be downloaded via the [NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/) or [DEAP](https://hbcd.deapscience.com/#/home")- see [Access & Download Data](download.md#explore-download).
 
 ## Tabulated Data
 
@@ -75,7 +75,6 @@ As a schema, ReproSchema defines a standardized structure for questionnaires, in
 ### Platform
 
 As a platform, ReproSchema provides tools for automated storage, versioning in GitHub, tracking changes (e.g. wording updates, added/removed/re-ordered items, updated skip logic, etc.), and comparing questionnaires over time. It also provides a utility for browser-based survey deployment, with survey responses stored in JSON-LD format to link each answer to its protocol, activity, and item in the ReproSchema library. See [Chen et al. 2025 Figure 1](https://www.jmir.org/2025/1/e63343#figure1) for details.
-
 
 ### Tracking Changes: Example 
 

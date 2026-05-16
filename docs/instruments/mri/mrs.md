@@ -72,7 +72,7 @@ hbcd/
                         └── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-shortTE_svs_space-scanner_mask.nii.gz
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">ROI</span>: CSF | GM | Tha | WM
+<span class="placeholder">ROI</span>: CSF, GM, Tha, WM
 </pre>
 </div>
 
@@ -80,8 +80,9 @@ hbcd/
 
 The primary of outcome variables from MRS data processed through the Osprey pipeline are metabolite concentrations. The ISTHMUS acquisition generates four spectra, each modeled separately using linear combination modeling with inclusive basis sets (since most metabolites may contribute, at least minimally, to all spectra). Each spectrum provides optimal quantification for a different subset of metabolites as follows:
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-<thead><tr><th>Spectrum</th><th>Best-Quantified Metabolites</th><th>Table Name<sup><b>1</b></sup></th></tr></thead>
+<table class="compact-table-no-vertical-lines">
+<thead><tr><th>Spectrum</th><th>Best-Quantified Metabolites</th><th>Table Name (in <a href="../../../datacuration/overview/#tabulated-pipeline-derivatives">tabulated pipeline derivatives</a>)
+</th></tr></thead>
 <tbody>
 <tr><td><b>Short-TE Unedited</b></td><td>tNAA, tCr, tCho, mI, Glx, Scyllo</d><td><code>img_osprey_unedited_A_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
 </tr>
@@ -91,10 +92,7 @@ The primary of outcome variables from MRS data processed through the Osprey pipe
 </tr>
 <tr><td><b>HERCULES Diff2</b></td><td>GSH, Lac, NAAG, PE</td><td><code>img_osprey_HERCULES_diff2_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
 </tr>
-</tbody><tfoot>
-<tr><td colspan="3" style="border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
-<sup><b>1</b></sup> Note: tables contain data summarized across participants from <a href="#derivatives">Osprey pipeline derivatives</a></td></tr>
-</tfoot>
+</tbody>
 </table>
 
 ### Quantification Approaches
@@ -105,16 +103,15 @@ MRS values are quantified relative to internal reference signals. Optimal refere
 <tr><th>Method</th><th>Recommended Use</th></tr></thead>
 <tbody>
 <tr>
-  <td>Tissue-Corrected Water-Scaled Concentrations <i class="fa-solid fa-star" style="color: gold;"></i></td>
-  <td><b>Recommended default</b> (<code>TissCorrWaterScaled</code> TSV files)</td>
+  <td>Tissue-Corrected Water-Scaled Concentrations</td>
+  <td><i class="fa-solid fa-star" style="color: gold;"></i> <b>Recommended default</b> (<code>TissCorrWaterScaled</code> TSV files)</td>
 </tr>
 <tr><td>Alpha-corrected variants</td><td>Use only for GABA+</td></tr>
 <tr>
   <td>Metabolite-to-creatine ratios</td>
-  <td>Values are normalized to total creatine (tCr), which is relativel stable across lifespan, but only present in tissue and not CSF; use only for tissue</td>
+  <td>Values normalized to total creatine (tCr), relatively stable across lifespan. tCR is not present in CSF and should only be used for tissue-based analysis.</td>
 </tr>
-<tr><td>Unscaled model amplitudes</td><td>Do not use for analyses</td></tr>
-<!-- <tr><td>Raw water-scaled concentrations</td><td></td></tr> -->
+<tr><td>Unscaled model amplitudes</td><td>Do not use for analysis</td></tr>
 </tbody>
 </table>
 

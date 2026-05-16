@@ -57,16 +57,11 @@ Thus, the scales are as follows:
  - Total Raw Score PTSD (Total of Questions 1, 2, 3, 4, 5, 6, 7, 8, 9)
  - Total Raw Score Acute Stress (Total of Questions 1, 2, 3, 7, 8, 9, 10)
 
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    Questionnaire prompt/instructions:
-  </span>
-</div>
-<div class="notification-static-content">
-<p>People sometimes have problems after extremely stressful events or experiences. How much have you been bothered during the PAST SEVEN (7) DAYS by each of the following problems that occurred or became worse after an extremely stressful event/experience?</p>
-</div>
-<br>
+**Questionnaire prompt/instructions:**
+
+> People sometimes have problems after extremely stressful events or experiences. How much have you been bothered during the PAST SEVEN (7) DAYS by each of the following problems that occurred or became worse after an extremely stressful event/experience?
+
+
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">

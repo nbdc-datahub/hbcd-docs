@@ -29,18 +29,8 @@
 
 The Edinburgh Postnatal Depression Scale (<a href="https://downloads.aap.org/AAP/PDF/Postnatal%20Depression%20Scale.pdf">EPDS</a>) is a sensitive, 10-item screening tool for prenatal and postpartum depression symptoms. It was selected for the HBCD Study to capture symptoms of prenatal and postnatal depression due to its ease of administration and widely accepted use. 
 
-<p>
-<div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    Questionnaire prompt/instructions:
-  </span>
-</div>
-<div class="notification-static-content">
-<p>Since you are either pregnant or have recently had a baby, we want to know how you feel. MARK the answer that comes closest to how you have felt IN THE PAST 7 DAYS-not just how you feel today.</p>
-<p>In the past 7 days…</p>
-</div>
-</p>
+**Questionnaire prompt/instructions:**
+> Since you are either pregnant or have recently had a baby, we want to know how you feel. MARK the answer that comes closest to how you have felt IN THE PAST 7 DAYS-not just how you feel today. In the past 7 days…
 
 <div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
