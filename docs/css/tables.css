@@ -11,7 +11,7 @@ th, td {
 }
 .table-banner {
   display: flex;
-  align-items: center;      /* centers emoji relative to text block */
+  align-items: center;
   background-color: #dde6fe;
   padding: 3px 10px;
   border-bottom: 1px solid #e0e0e0;
@@ -26,7 +26,7 @@ th, td {
 }
 
 .table-banner .text {
-  flex: 1;                  /* text takes remaining space */
+  flex: 1;
 }
 .table-collapsible-content {
   max-height: 0;
@@ -36,7 +36,7 @@ th, td {
   border-top: none;
   padding: 0 0;
   border-radius: 0 0 5px 5px;
-  margin-bottom: 8px; /* Adds spacing below the section */
+  margin-bottom: 8px;
   width: 100%;
   display: block;
   overflow-x: auto; 
@@ -67,35 +67,6 @@ th, td {
   line-height: 1.1;
   font-size: 1em !important;
 }
-.table-collapsible-content ul ul {
-  margin-top: 0.1rem;
-  line-height: 1;
-  font-size: 1em !important;
-}
-.table-collapsible-content ul ul li {
-  margin-bottom: 0.1rem;
-  line-height: 1;
-  font-size: 1em !important;
-}
-
-/* Static table banner */
-.static-table-banner {
-  display: flex;
-  align-items: center;
-  background-color: #d9dce2;
-  padding: 4px 8px;
-  border-bottom: 1px solid #e0e0e0;
-  font-family: Lato; 
-  color: #474646;
-  font-weight: bold;
-  gap: 8px;  
-  font-size: 0.9em;
-  line-height: 1.1;
-  border-radius: 6px;
-  width: 100%;
-  margin-bottom: 10px; /* Only difference is that it has space below section */
-}
-/* Fixed-width icon column (icon size normalized) */
 .table-banner .emoji {
   width: 1.8rem;      
   display: inline-flex;
@@ -111,29 +82,20 @@ th, td {
   align-items: center;
   gap: 0.35rem;
 }
-
-.static-table-banner .emoji {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4em;   /* increase this for larger icon */
-  color: #4d5052;
-}
 .table-static-content {
   background-color: #d0dff02c;
   border-left: 5px solid #199bd6;
   border-top: none;
   padding: 0 0;
   border-radius: 0 0 5px 5px;
-  margin-bottom: 10px; /* Adds spacing below the section */
+  margin-bottom: 10px;
   width: 100%;
   display: block;
 }
 .table-static-content ul,
 .table-static-content ol {
-  margin: 0;                   /* Remove extra spacing */
-  padding-left: 20px;          /* Optional: indent for list items */
+  margin: 0;
+  padding-left: 20px;
   font-size: 0.9em;
 }
 .table-static-content p {
@@ -145,7 +107,7 @@ th, td {
   margin-bottom: 0 !important;
 }
 .table-static-content li {
-  margin: 0; /* override even the slight spacing */
+  margin: 0;
   padding: 0;
 }
 
@@ -164,23 +126,15 @@ th, td {
   line-height: 1.1;
   border-radius: 6px;
   width: 100%;
-  margin-bottom: 10px; /* Only difference is that it has space below section */
+  margin-bottom: 10px;
 }
 .table-banner .emoji {
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4em;   /* increase this for larger icon */
+  font-size: 1.4em; 
   color: #199bd6;
-}
-.static-table-banner .emoji {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4em;   /* increase this for larger icon */
-  color: #4d5052;
 }
 .table-static-content {
   background-color: #d0dff02c;
@@ -188,14 +142,14 @@ th, td {
   border-top: none;
   padding: 0 0;
   border-radius: 0 0 5px 5px;
-  margin-bottom: 10px; /* Adds spacing below the section */
+  margin-bottom: 10px; 
   width: 100%;
   display: block;
 }
 .table-static-content ul,
 .table-static-content ol {
-  margin: 0;                   /* Remove extra spacing */
-  padding-left: 20px;          /* Optional: indent for list items */
+  margin: 0; 
+  padding-left: 20px;
   font-size: 0.9em;
 }
 .table-static-content p {
@@ -207,7 +161,7 @@ th, td {
   margin-bottom: 0 !important;
 }
 .table-static-content li {
-  margin: 0; /* override even the slight spacing */
+  margin: 0;
   padding: 0;
 }
 
@@ -245,41 +199,6 @@ th, td {
   margin: 0;
   line-height: 1.2;
 }
-/* Compact table with no vertical lines */
-.compact-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  font-size: 0.9em;
-  line-height: 1.2;
-}
-.compact-table th,
-.compact-table td {
-  text-align: left;
-  padding: 6px 8px;
-  word-wrap: break-word;
-  white-space: normal;
-  vertical-align: top !important; 
-}
-/* Make lists behave more like normal text blocks */
-.compact-table ul {
-  font-size: 1em;
-  line-height: 1.2;
-  margin: 0;
-  padding-left: 1.2em;
-  display: block;
-}
-/* Reduce bottom space between last list item and table border */
-.compact-table ul:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-/* Normalize list item alignment */
-.compact-table li {
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
-}
 
 /* Compact table with no vertical lines */
 .compact-table-no-vertical-lines {
@@ -298,111 +217,24 @@ th, td {
   padding: 5px 14px !important;
   line-height: 1.4; 
 }
-/* Make lists behave more like normal text blocks */
 .compact-table-no-vertical-lines ul {
   margin: 0;
   padding-left: 0;
 }
-/* Reduce bottom space between last list item and table border */
 .compact-table-no-vertical-lines ul:last-child {
   margin-top: 0; 
   margin-bottom: 0;
 }
-/* Normalize list item spacing */
 .compact-table-no-vertical-lines li {
   margin: 0;
   line-height: 1.2;
 }
 
-/* Table with expandable sections */
-.expandable-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  font-size: 15px;
-  background-color: #fafafa; /* base color */
-}
-
-.expandable-table th,
-.expandable-table td {
-  padding: 6px 8px;
-  vertical-align: top !important;
-  border-left: none !important;
-  border-right: none !important;
-}
-
-/* Default row background */
-.expandable-table tr {
-  background-color: #fafafa;
-}
-
-/* Group header rows */
-.group-header td {
-  font-weight: bold;
-  cursor: pointer;
-  border-top: 2px solid #ccc;
-}
-
-.group-header:hover td {
-  background-color: #dde6fe !important;
-}
-
-/* Indented child rows */
-.child-row td {
-  padding-left: 20px;
-}
-
-.table-compact-banner {
-  display: flex;
-  align-items: center;      /* centers emoji relative to text block */
-  background-color: #dde6fe;
-  padding: 2px 8px;
-  border-bottom: 1px solid #e0e0e0;
-  font-family: Lato; 
-  color: #474646;
-  font-weight: bold;
-  gap: 8px;                 /* space between emoji and text */
-  font-size: 0.8em;
-  line-height: 1.0;
-  border-radius: 4px; /* round edges */
-  width: 100%;
-}
-
-/* Study Legend tables */
-.study-legend {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  font-size: 1.0em;
-}
-.study-legend td {
-  vertical-align: top !important;
-  padding-top: 0;
-  line-height: 1.5;
-  border-left: 3px solid transparent;
-}
-.study-legend i {
-  margin-right: 6px;
-  color: #0077ff; /* soft blue accent */
-  width: 18px;
-  text-align: center;
-}
-.study-legend a {
-  color: inherit;
-  text-decoration: none;
-}
-.study-legend a:hover i {
-  color: #1a4f8b;
-}
-.study-legend td:first-child {
-  border-right: 1px solid #e0e0e0;
-}
-
 /* Resolved Known Issues table */
 .icon-text-block {
   display: flex;
-  align-items: center;      /* centers icon vertically with both text lines */
-  gap: 8px;                 /* space between icon and text */
+  align-items: center;
+  gap: 8px;
 }
 .icon-link i {
   font-size: 1.1em;
@@ -443,6 +275,6 @@ th, td {
 /* SUBTLE class */
 .subtle {
   font-size: 0.9em;
-  color: #6b7280; /* soft gray */
+  color: #6b7280;
   font-weight: 400;
 }

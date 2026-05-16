@@ -3,7 +3,7 @@
     position: relative;
     display: inline;
     cursor: help;
-    border-bottom: 1px dotted #555; /* Dotted underline for hover indication */
+    border-bottom: 1px dotted #555;
     color: teal;
     font-weight: 500;
     line-height: inherit;
@@ -24,15 +24,15 @@
     z-index: 1000; /* Appear above everything else */
     white-space: normal;
     word-wrap: break-word;
-    max-width: 90vw; /* Prevents the tooltip from exceeding the viewport width */
+    max-width: 90vw;
     font-size: 12px;
     line-height: 1.2;
     
     /* Default tooltip appears above */
-    bottom: 100%; /* Positions above */
+    bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 5px; /* Space between text and tooltip */
+    margin-bottom: 5px;
 }
 
 /* Show tooltip on hover */
@@ -58,24 +58,19 @@
     margin-right: 5px;
 }
 
-/* Position the tooltip to the right */
 .tooltip-right .tooltiptext {
-    /* Override default positioning */
     bottom: auto; /* Reset bottom positioning */
     left: auto;
     right: auto;
-    
-    /* Position it to the right */
     top: 50%;
     left: 100%;
     transform: translateY(-50%);
     margin-left: 5px;
 }
 
-/* Position the tooltip underneath the element */
 .tooltip-bottom .tooltiptext {
-    top: 100%;                /* Place directly below the element */
-    left: 50%;                /* Center horizontally */
+    top: 100%;
+    left: 50%;
     transform: translateX(-50%);
     margin-top: 5px;
     bottom: auto;
@@ -86,12 +81,11 @@
     word-wrap: break-word;
 }
 
-/* TOOLTIP ABOVE ELEMENT */
 .tooltip-top .tooltiptext {
-    bottom: 100%;              /* places directly above the element */
+    bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 5px;        /* spacing between element and tooltip */
+    margin-bottom: 5px;
     top: auto;
     right: auto;
     width: auto;
