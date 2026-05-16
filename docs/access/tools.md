@@ -10,7 +10,7 @@ The NBDC Sandbox provides a secure, cloud-based analysis environment designed to
 [Go to NBDC Sandbox →](https://nbdc-safe.lassoinformatics.com/pun/sys/dashboard)      
 [View NBDC Sandbox Tutorial Series →](https://hdcc-sandbox-rtd.readthedocs.io/latest/)
 
-#### <i class="fas fa-database header-icon"></i> NBDCtools
+### <i class="fas fa-database header-icon"></i> NBDCtools
 NBDCtools is an R package for creating custom, analysis-ready datasets by simply specifying the variable and/or table names you need. The package automatically retrieves the specified columns from locally downloaded HBCD tabulated data and assembles them into a single in-memory data frame, minimizing storage and memory use. This provides a flexible alternative to building datasets through the Lasso or DEAP platforms, eliminating the need to manually parse files or resolve formatting issues. In addition to dataset assembly, NBDCtools includes functions for working with [shadow matrices](../datacuration/phenotypes.md#shadow-matrices-for-missing-data) as well as applying transformations and filters.   
 [Download page for NBDCtools &nbsp;<i class="fa fa-download"></i>](https://software.nbdc-datahub.org/NBDCtools/index.html) 
 
