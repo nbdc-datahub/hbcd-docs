@@ -71,25 +71,25 @@ hbcd/
     └── sub-{ID}/
         └── ses-{V0X}/
             ├── anat/
-            │   ├── *_<span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz                      <span class="hashtag"># Structural MRI</span>
-            │   ├── *_inv-<span class="placeholder">&lt;0-4&gt;</span>_QALAS.nii.gz                <span class="hashtag"># Quantitative MRI (QALAS)</span>
-            │   └── *_acq-mrsLoc<span class="placeholder">&lt;Ax|Cor&gt;</span>_run-{X}_T2w.nii.gz <span class="hashtag"># MRS localizers</span>
+            │   ├── *_<span class="var">&lt;T1w|T2w&gt;</span>.nii.gz                      <span class="hashtag"># Structural MRI</span>
+            │   ├── *_inv-<span class="var">&lt;0-4&gt;</span>_QALAS.nii.gz                <span class="hashtag"># Quantitative MRI (QALAS)</span>
+            │   └── *_acq-mrsLoc<span class="var">&lt;Ax|Cor&gt;</span>_run-{X}_T2w.nii.gz <span class="hashtag"># MRS localizers</span>
             │
             ├── func/
             │   └── *_task-rest_dir-PA_run-{X}_bold.nii.gz  <span class="hashtag"># Resting-state fMRI</span>
             │
             ├── fmap/
-            │   ├── *_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-{X}_epi.nii.gz        <span class="hashtag"># fMRI fieldmaps</span>
-            │   ├── *_acq-<span class="placeholder">&lt;anat|famp&gt;</span>_run-{X}_TB1TFL.nii.gz <span class="hashtag"># qMRI Siemens B1+ fieldmaps</span>
-            │   └── *_acq-<span class="placeholder">&lt;tr1|tr2&gt;</span>_run-{X}_TB1AFI.nii.gz   <span class="hashtag"># qMRI GE/Philips B1+ fieldmaps</span>
+            │   ├── *_dir-<span class="var">&lt;AP|PA&gt;</span>_run-{X}_epi.nii.gz        <span class="hashtag"># fMRI fieldmaps</span>
+            │   ├── *_acq-<span class="var">&lt;anat|famp&gt;</span>_run-{X}_TB1TFL.nii.gz <span class="hashtag"># qMRI Siemens B1+ fieldmaps</span>
+            │   └── *_acq-<span class="var">&lt;tr1|tr2&gt;</span>_run-{X}_TB1AFI.nii.gz   <span class="hashtag"># qMRI GE/Philips B1+ fieldmaps</span>
             │
             ├── dwi/
-            │   ├── *_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-{X}_dwi.nii.gz        <span class="hashtag"># Diffusion MRI</span>
-            │   ├── *_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-{X}_dwi.bval
-            │   ├── *_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-{X}_dwi.bvec
-            │   └── *_dir-<span class="placeholder">&lt;AP|PA&gt;</span>_run-{X}_sbref.nii.gz
+            │   ├── *_dir-<span class="var">&lt;AP|PA&gt;</span>_run-{X}_dwi.nii.gz        <span class="hashtag"># Diffusion MRI</span>
+            │   ├── *_dir-<span class="var">&lt;AP|PA&gt;</span>_run-{X}_dwi.bval
+            │   ├── *_dir-<span class="var">&lt;AP|PA&gt;</span>_run-{X}_dwi.bvec
+            │   └── *_dir-<span class="var">&lt;AP|PA&gt;</span>_run-{X}_sbref.nii.gz
             │
             └── mrs/
-                ├── *_acq-<span class="placeholder">&lt;shortTE|hercules&gt;</span>_run-{X}_svs.nii.gz <span class="hashtag"># Spectroscopy (SVS)</span>
-                └── *_acq-<span class="placeholder">&lt;shortTE|hercules&gt;</span>_run-{X}_ref.nii.gz <span class="hashtag"># Reference scans</span>
+                ├── *_acq-<span class="var">&lt;shortTE|hercules&gt;</span>_run-{X}_svs.nii.gz <span class="hashtag"># Spectroscopy (SVS)</span>
+                └── *_acq-<span class="var">&lt;shortTE|hercules&gt;</span>_run-{X}_ref.nii.gz <span class="hashtag"># Reference scans</span>
 </pre>

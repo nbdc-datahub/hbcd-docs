@@ -1,3 +1,11 @@
+<style>
+.wy-nav-content {
+    width: 85% !important;
+    max-width: 100% !important;
+    flex-grow: 1 !important;
+}
+</style>
+
 # Functional MRI
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -140,68 +148,92 @@ T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infan
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+<p style="font-size: 1.1em; font-weight: 600;">Overview</p>
+<ul>
+<li>JSON files excluded for brevity from file trees below</li>
+<li>See <a href="../../../datacuration/overview/#filetrees" target="_blank"><i class="fa fa-circle-info"></i> How To Read File Trees</a> for additional guidance</li>
+<li>T1w-related files will only be present in the derivatives if a T1w was acquired</li>
+</ul>
 <pre class="folder-tree" style="font-size: 11px;">
-<span class="hashtag"># JSON files excluded for brevity</span>
-<span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
-
 hbcd/
 └── derivatives/
-    └── nibabies-<span class="placeholder">&lt;HASH&gt;</span>/
-        └── sub-{ID}/
-            ├── figures/*
-            ├── ses-<span class="label">{V0X}</span>/
-            │   ├── log/
+    └── nibabies-<span class="var">{HASH}</span>/
+        └── sub-[ID]/
+            ├── figures/
+            ├── ses-[V0X]/
             │   ├── anat/
-            │   │   <span class="hashtag"># Volumetric outputs</span>
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_desc-preproc_T2w.nii.gz
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-MNI152NLin6Asym_res-2_desc-brain_mask.nii.gz
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-MNI152NLin6Asym_res-2_desc-preproc_T2w.nii.gz
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;SPACE&gt;</span>_dseg.nii.gz
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;SPACE&gt;</span>_label-<span class="placeholder">&lt;CSF|GM|WM&gt;</span>_probseg.nii.gz
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-T2w_desc-ribbon_mask.nii.gz
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_<span class="placeholder">&lt;METRIC&gt;</span>.dscalar.nii 
-            │   │   
-            │   │   <span class="hashtag"># Transforms</span>
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_from-<span class="placeholder">&lt;MNI&gt;</span>_to-T2w_mode-image_xfm.h5
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_from-T2w_to-<span class="placeholder">&lt;MNI&gt;</span>_mode-image_xfm.h5
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_from-T2w_to-fsnative_mode-image_xfm.txt
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_from-fsnative_to-T2w_mode-image_xfm.txt
-            │   │   
-            │   │   <span class="hashtag"># Surface files</span>
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_<span class="placeholder">&lt;METRIC&gt;</span>.shape.gii
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_<span class="placeholder">&lt;SURF&gt;</span>.surf.gii
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_<span class="placeholder">&lt;inflated|sphere&gt;</span>.surf.gii
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-dhcpAsym_den-32k_<span class="placeholder">&lt;SURF&gt;</span>.surf.gii
-            │   │   └── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-<span class="placeholder">&lt;dhcpAsym|fsaverage&gt;</span>_den-32k_sphere.surf.gii
-            │   │   
             │   ├── fmap/
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_fmapid-auto<span class="label">{X}</span>_desc-coeff_fieldmap.nii.gz
-            │   │   ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_fmapid-auto<span class="label">{X}</span>_desc-epi_fieldmap.nii.gz
-            │   │   └── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_run-<span class="label">{X}</span>_fmapid-auto<span class="label">{X}</span>_desc-preproc_fieldmap.nii.gz
-            │   │
-            │   └── func/
-            │       ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-brain_mask.nii.gz
-            │       ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-confounds_timeseries.tsv
-            │       ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-<span class="placeholder">&lt;coreg|hmc&gt;</span>_boldref.nii.gz
-            │       ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-preproc_bold.nii.gz
-            │       ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;SPACE&gt;</span>_boldref.nii.gz
-            │       ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;SPACE&gt;</span>_desc-brain_mask.nii.gz
-            │       ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-<span class="placeholder">&lt;SPACE&gt;</span>_desc-preproc_bold.nii.gz
-            │       ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_bold.dtseries.nii
-            │       ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsnative_bold.func.gii
-            │       ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_from-boldref_to-T2w_mode-image_desc-coreg_xfm.txt
-            │       ├── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_from-boldref_to-auto<span class="label">{X}</span>_mode-image_xfm.txt
-            │       └── <span class="subses">SUBSES</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_from-orig_to-boldref_mode-image_desc-hmc_xfm.txt
+            │   ├── func/
+            │   └── log/
             │
-            └── <span class="subses">SUBSES</span>_<span class="placeholder">&lt;HASH&gt;</span>.html
+            └── sub-[ID]_ses-[V0X]_hash-<span class="var">{HASH}</span>.html
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="subses">SUBSES</span>: sub-{ID}_ses-<span class="label">{V0X}</span>  
-<span class="placeholder">HASH</span>: 0f306a2f | 2afa9081  
-<span class="placeholder">METRIC</span>: curv | sulc | thickness      
-<span class="placeholder">MNI</span>: MNI152NLin6Asym_res-2 | MNIInfant+1  
-<span class="placeholder">SPACE</span>: MNI152NLin6Asym_res-2 | T2w  
-<span class="placeholder">SURF</span>: midthickness | pial | white  
+<span class="var">HASH</span>: 0f306a2f , 2afa9081
+</pre>
+<p style="font-size: 1.1em; font-weight: 600;">Anatomical Folder Details</p>
+<pre class="folder-tree" style="font-size: 11px;">
+<span class="hashtag"># Prefix (anat/, fmap/ files): sub-[ID]_ses-[V0X]_hash-{HASH}_run-[X]</span>
+...
+└── ses-[V0X]/
+    └── anat/
+        <span class="hashtag"># Primary volumetric outputs & segmentations</span>
+        ├── *_desc-preproc_<span class="var">{T1w|T2w}</span>.nii.gz
+        ├── *_space-MNI152NLin6Asym_res-2_desc-preproc_T2w.nii.gz
+        ├── *_space-MNI152NLin6Asym_res-2_desc-brain_mask.nii.gz
+        ├── *_space-T2w_desc-ribbon_mask.nii.gz
+        ├── *_space-<span class="var">{STD_SPACE}</span>_dseg.nii.gz
+        ├── *_space-T2w_desc-<span class="var">{aparcaseg|aseg}</span>_dseg.nii.gz
+        ├── *_space-<span class="var">{STD_SPACE}</span>_label-<span class="var">{CSF|GM|WM}</span>_probseg.nii.gz
+      
+        <span class="hashtag"># Transforms</span>
+        ├── *_from-<span class="var">{SPACE}</span>_to-T2w_mode-image_xfm.h5
+        ├── *_from-T2w_to-<span class="var">{SPACE}</span>_mode-image_xfm.h5
+      
+        <span class="hashtag"># Surface & CIFTI outputs</span>
+        ├── *_hemi-<span class="var">{L|R}</span>_desc-cortex_mask.label.gii
+        ├── *_space-fsLR_den-91k_<span class="var">{METRIC}</span>.dscalar.nii 
+        ├── *_hemi-<span class="var">{L|R}</span>_<span class="var">{METRIC}</span>.shape.gii
+        ├── *_hemi-<span class="var">{L|R}</span>_<span class="var">{inflated|sphere}</span>.surf.gii
+        ├── *_hemi-<span class="var">{L|R}</span>_<span class="var">{SURF}</span>.surf.gii
+        ├── *_hemi-<span class="var">{L|R}</span>_space-dhcpAsym_den-32k_<span class="var">{SURF}</span>.surf.gii
+        └── *_hemi-<span class="var">{L|R}</span>_space-<span class="var">{dhcpAsym|fsaverage}</span>_reg_sphere.surf.gii   
+...
+<span class="hashtag"># Label Values Legend</span>
+<span class="var">METRIC</span>: curv , sulc , thickness 
+<span class="var">SPACE</span>: fsnative , MNI152NLin6Asym , MNIInfant+1 , T1w
+<span class="var">STD_SPACE</span>: MNI152NLin6Asym_res-2 , T2w
+<span class="var">SURF</span>: midthickness , pial , white  
+</pre>
+<p style="font-size: 1.1em; font-weight: 600;">Fieldmap & Functional Folder Details</p>
+<pre class="folder-tree" style="font-size: 11px;">
+... 
+└── ses-[V0X]/
+    ├── fmap/
+    │   └── *_fmapid-auto[X]_desc-<span class="var">{coeff|epi|preproc}</span>_fieldmap.nii.gz
+    │
+    <span class="hashtag"># Prefix for func/ files: sub-[ID]_ses-[V0X]_hash-{HASH}_task-rest_dir-PA_run-[X]</span>
+    └── func/
+        <span class="hashtag"># BOLD & masks</span>
+        ├── *_desc-<span class="var">{preproc_bold|brain_mask}</span>.nii.gz
+        ├── *_space-<span class="var">{STD_SPACE}</span>_boldref.nii.gz
+        ├── *_space-<span class="var">{STD_SPACE}</span>_desc-<span class="var">{preproc_bold|brain_mask}</span>.nii.gz
+
+        <span class="hashtag"># Motion-corrected or coregistered outputs</span>
+        ├── *_desc-<span class="var">{hmc|coreg}</span>_boldref.nii.gz
+        ├── *_from-orig_to-boldref_mode-image_desc-hmc_xfm.txt
+        ├── *_from-boldref_to-T2w_mode-image_desc-coreg_xfm.txt
+        ├── *_from-boldref_to-auto*_mode-image_xfm.txt
+
+        <span class="hashtag"># Surface & CIFTI outputs</span>
+        ├── *_space-fsLR_den-91k_bold.dtseries.nii
+        ├── *_hemi-<span class="var">{L|R}</span>_space-fsnative_bold.func.gii 
+
+        <span class="hashtag"># Confounds</span>
+        └── *_desc-confounds_timeseries.tsv 
+
+<span class="hashtag"># Label Values Legend</span>
+<span class="var">STD_SPACE</span>: MNI152NLin6Asym_res-2 , T2w
 </pre>
 </div>
 
@@ -241,19 +273,19 @@ The M-CRIB-S and FreeSurfer derivative folders are generated from the [intermedi
 <pre class="folder-tree">
 hbcd/
 └── derivatives/
-    └── freesurfer-<span class="placeholder">&lt;HASH&gt;</span>/
+    └── freesurfer-<span class="var">{HASH}</span>/
         └── sub-{ID}_ses-{V0X}/
             ├── label/
-            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;ATLAS&gt;</span>.annot
-            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;ATLAS&gt;</span>.auto.nomask.annot
-            │   └── <span class="placeholder">&lt;lh|rh&gt;</span>.cortex.label
+            │   ├── <span class="var">{lh|rh}</span>.<span class="var">{ATLAS}</span>.annot
+            │   ├── <span class="var">{lh|rh}</span>.<span class="var">{ATLAS}</span>.auto.nomask.annot
+            │   └── <span class="var">{lh|rh}</span>.cortex.label
             │
             ├── mri/
             │   ├── T2.mgz
-            │   ├── <span class="placeholder">&lt;ATLAS&gt;</span>+aseg.mgz
+            │   ├── <span class="var">{ATLAS}</span>+aseg.mgz
             │   ├── aseg*.mgz
-            │   ├── <span class="placeholder">&lt;brain|brainmask&gt;</span>.mgz
-            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.ribbon.mgz
+            │   ├── <span class="var">{brain|brainmask}</span>.mgz
+            │   ├── <span class="var">{lh|rh}</span>.ribbon.mgz
             │   ├── norm.mgz
             │   ├── orig.mgz
             │   └── ribbon.mgz
@@ -261,22 +293,22 @@ hbcd/
             ├── stats/
             │   ├── aseg.stats
             │   ├── brainvol.stats
-            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;ATLAS&gt;</span>.stats
-            │   └── <span class="placeholder">&lt;lh|rh&gt;</span>.curv.stats
+            │   ├── <span class="var">{lh|rh}</span>.<span class="var">{ATLAS}</span>.stats
+            │   └── <span class="var">{lh|rh}</span>.curv.stats
             │
             ├── surf/
-            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.{white,pial,midthickness}
-            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.{inflated,sphere}*
-            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.smoothwm*
-            │   ├── <span class="placeholder">&lt;lh|rh&gt;</span>.{area,area.mid,area.pial}
-            │   └── <span class="placeholder">&lt;lh|rh&gt;</span>.{curv,sulc,thickness,volume}
+            │   ├── <span class="var">{lh|rh}</span>.{white,pial,midthickness}
+            │   ├── <span class="var">{lh|rh}</span>.{inflated,sphere}*
+            │   ├── <span class="var">{lh|rh}</span>.smoothwm*
+            │   ├── <span class="var">{lh|rh}</span>.{area,area.mid,area.pial}
+            │   └── <span class="var">{lh|rh}</span>.{curv,sulc,thickness,volume}
             │
             └── scripts/*
 
 <span class="hashtag"># Label Legend</span>
-<span class="placeholder">HASH</span>: 0f306a2f | 2afa9081
-<span class="placeholder">HEM</span>: lh | rh
-<span class="placeholder">ATLAS</span>: aparc | aparc+DKTatlas
+<span class="var">HASH</span>: 0f306a2f | 2afa9081
+<span class="var">HEM</span>: lh | rh
+<span class="var">ATLAS</span>: aparc | aparc+DKTatlas
 </pre>
 </div>
 
@@ -301,10 +333,10 @@ hbcd/
             ├── SurfReconDeformable/
             │   └── sub-{ID}_ses-V02/
             │       ├── meshes/
-            │       │   ├── <span class="placeholder">&lt;internal|pial|white|pial+internal|white+internal&gt;</span>.vtp
-            │       │   ├── pial-<span class="placeholder">&lt;lh|rh&gt;</span>.vtp
-            │       │   ├── pial-<span class="placeholder">&lt;lh|rh&gt;</span>-reordered.vtp
-            │       │   └── white-<span class="placeholder">&lt;lh|rh&gt;</span>.<span class="placeholder">&lt;CortexMask.curv|Normals.surf|RegionId.curv|vtp&gt;</span>
+            │       │   ├── <span class="var">{internal|pial|white|pial+internal|white+internal}</span>.vtp
+            │       │   ├── pial-<span class="var">{lh|rh}</span>.vtp
+            │       │   ├── pial-<span class="var">{lh|rh}</span>-reordered.vtp
+            │       │   └── white-<span class="var">{lh|rh}</span>.<span class="var">{CortexMask.curv|Normals.surf|RegionId.curv|vtp}</span>
             │       ├── recon/
             │       │   ├── cortical-hull-dmap.nii.gz
             │       │   └── regions.nii.gz
@@ -312,14 +344,14 @@ hbcd/
             │           ├── brain-mask.nii.gz
             │           ├── ventricles-dmap.nii.gz
             │           ├── t2w-image.nii.gz_symlink_s3_object
-            │           ├── cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-dmap.nii.gz
-            │           ├── cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-hull-<span class="placeholder">{X}</span>.vtp
-            │           ├── cerebrum-<span class="placeholder">&lt;lh|rh&gt;</span>-iso.vtp
-            │           ├── <span class="placeholder">&lt;STRUCT&gt;</span>-mask-<span class="placeholder">{X}</span>.nii.gz
-            │           ├── <span class="placeholder">&lt;cerebrum-lh|cerebrum-rh|pial|white&gt;</span>-<span class="placeholder">{X}</span>.vtp
-            │           ├── <span class="placeholder">&lt;cerebrum-lh|cerebrum-rh|pial|white&gt;</span>-<span class="placeholder">{X}</span>-output_<span class="placeholder">{X}</span>.vtp
+            │           ├── cerebrum-<span class="var">{lh|rh}</span>-dmap.nii.gz
+            │           ├── cerebrum-<span class="var">{lh|rh}</span>-hull-<span class="var">{X}</span>.vtp
+            │           ├── cerebrum-<span class="var">{lh|rh}</span>-iso.vtp
+            │           ├── <span class="var">{STRUCT}</span>-mask-<span class="var">{X}</span>.nii.gz
+            │           ├── <span class="var">{cerebrum-lh|cerebrum-rh|pial|white}</span>-<span class="var">{X}</span>.vtp
+            │           ├── <span class="var">{cerebrum-lh|cerebrum-rh|pial|white}</span>-<span class="var">{X}</span>-output_<span class="var">{X}</span>.vtp
             │           │
-            │           └── <span class="placeholder">&lt;pial|white&gt;</span>-foreground.nii.gz
+            │           └── <span class="var">{pial|white}</span>-foreground.nii.gz
             ├── TissueSeg/
             │   ├── sub-{ID}_ses-V02_all_labels.nii.gz
             │   ├── sub-{ID}_ses-V02_all_labels_manedit.nii.gz_symlink_s3_object
@@ -329,11 +361,11 @@ hbcd/
             ├── freesurfer/ <span class="hashtag"># M-CRIB-S–specific outputs</span>
             │   └── sub-{ID}_ses-V02/
             │       └── mri/
-            │           └── <span class="placeholder">&lt;brain|orig&gt;</span>.mgz_symlink_s3_object
+            │           └── <span class="var">{brain|orig}</span>.mgz_symlink_s3_object
             ├── logs/sub-{ID}_ses-V02.log
             └── command.txt
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">STRUCT</span>: brain | cerebrum-{lh/rh} | corpus-callosum | cortex | {deep-gray|gray|white}-matter | ventricles 
+<span class="var">STRUCT</span>: brain | cerebrum-{lh/rh} | corpus-callosum | cortex | {deep-gray|gray|white}-matter | ventricles 
 </pre>
 </div>
 
@@ -417,51 +449,51 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
 
 hbcd/
 └── derivatives/
-    └── xcp_d-<span class="placeholder">&lt;HASH&gt;</span>/
+    └── xcp_d-<span class="var">{HASH}</span>/
         └── sub-{ID}/
             └── ses-<span class="label">{V0X}</span>/
                 │
                 ├── anat/
-                │   ├── <span class="placeholder">*</span>_run-<span class="label">{X}</span>_space-MNI152NLin6Asym_desc-preproc_T2w.nii.gz
-                │   ├── <span class="placeholder">*</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;APARC&gt;</span>_stat-mean_desc-<span class="placeholder">&lt;METRIC&gt;</span>_morph.tsv
-                │   ├── <span class="placeholder">*</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;inflated|vinflated&gt;</span>.surf.gii
-                │   ├── <span class="placeholder">*</span>_run-<span class="label">{X}</span>_hemi-<span class="placeholder">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span class="placeholder">&lt;midthickness|pial|white&gt;</span>.surf.gii
-                │   └── <span class="placeholder">*</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_<span class="placeholder">&lt;METRIC&gt;</span>.dscalar.nii
+                │   ├── <span class="var">*</span>_run-<span class="label">{X}</span>_space-MNI152NLin6Asym_desc-preproc_T2w.nii.gz
+                │   ├── <span class="var">*</span>_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="var">{APARC}</span>_stat-mean_desc-<span class="var">{METRIC}</span>_morph.tsv
+                │   ├── <span class="var">*</span>_run-<span class="label">{X}</span>_hemi-<span class="var">{L|R}</span>_space-fsLR_den-32k_<span class="var">{inflated|vinflated}</span>.surf.gii
+                │   ├── <span class="var">*</span>_run-<span class="label">{X}</span>_hemi-<span class="var">{L|R}</span>_space-fsLR_den-32k_<span class="var">{midthickness|pial|white}</span>.surf.gii
+                │   └── <span class="var">*</span>_run-<span class="label">{X}</span>_space-fsLR_den-91k_<span class="var">{METRIC}</span>.dscalar.nii
                 │
                 ├── func/  
-                │   ├── <span class="placeholder">*</span>_task-rest_desc-abcc_qc.hdf5
-                │   ├── <span class="placeholder">*</span>_task-rest_<span class="placeholder">&lt;motion|outliers&gt;</span>.tsv
-                │   ├── <span class="placeholder">*</span>_task-rest_space-fsLR_den-91k_desc-<span class="placeholder">&lt;denoised|denoisedSmoothed&gt;</span>_bold.dtseries.nii
-                │   ├── <span class="placeholder">*</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
-                │   ├── <span class="placeholder">*</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
-                │   ├── <span class="placeholder">*</span>_task-rest_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
+                │   ├── <span class="var">*</span>_task-rest_desc-abcc_qc.hdf5
+                │   ├── <span class="var">*</span>_task-rest_<span class="var">{motion|outliers}</span>.tsv
+                │   ├── <span class="var">*</span>_task-rest_space-fsLR_den-91k_desc-<span class="var">{denoised|denoisedSmoothed}</span>_bold.dtseries.nii
+                │   ├── <span class="var">*</span>_task-rest_space-fsLR_seg-<span class="var">{PARC}</span>_den-91k_stat-mean_timeseries.ptseries.nii
+                │   ├── <span class="var">*</span>_task-rest_space-fsLR_seg-<span class="var">{PARC}</span>_stat-mean_timeseries.tsv
+                │   ├── <span class="var">*</span>_task-rest_space-fsLR_seg-<span class="var">{PARC}</span>_stat-pearsoncorrelation_relmat.tsv
                 │
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-abcc_qc.hdf5
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-linc_qc.tsv
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_<span class="placeholder">&lt;design|motion|outliers&gt;</span>.tsv
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-<span class="placeholder">&lt;denoised|denoisedSmoothed&gt;</span>_bold.dtseries.nii
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-<span class="placeholder">&lt;alff|reho &gt;</span>_boldmap.dscalar.nii
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-alff_desc-smooth_boldmap.dscalar.nii
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_desc-abcc_qc.hdf5
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-linc_qc.tsv
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_<span class="var">{design|motion|outliers}</span>.tsv
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_desc-<span class="var">{denoised|denoisedSmoothed}</span>_bold.dtseries.nii
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-<span class="var">{alff|reho }</span>_boldmap.dscalar.nii
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_den-91k_stat-alff_desc-smooth_boldmap.dscalar.nii
                 │
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-coverage_boldmap.pscalar.nii
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-mean_timeseries.ptseries.nii
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_den-91k_stat-pearsoncorrelation_boldmap.pconn.nii
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="var">{PARC}</span>_den-91k_stat-coverage_boldmap.pscalar.nii
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="var">{PARC}</span>_den-91k_stat-mean_timeseries.ptseries.nii
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="var">{PARC}</span>_den-91k_stat-pearsoncorrelation_boldmap.pconn.nii
                 │
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-<span class="placeholder">&lt;alff|reho&gt;</span>_bold.tsv
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-coverage_bold.tsv
-                │   ├── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv
-                │   └── <span class="placeholder">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="placeholder">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="var">{PARC}</span>_stat-<span class="var">{alff|reho}</span>_bold.tsv
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="var">{PARC}</span>_stat-coverage_bold.tsv
+                │   ├── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="var">{PARC}</span>_stat-mean_timeseries.tsv
+                │   └── <span class="var">*</span>_task-rest_dir-PA_run-<span class="label">{X}</span>_space-fsLR_seg-<span class="var">{PARC}</span>_stat-pearsoncorrelation_relmat.tsv
                 │
                 ├── figures/*
-                ├── sub-{ID}_ses-<span class="label">{V0X}</span>_hash-<span class="placeholder">&lt;HASH&gt;</span>_executive_summary.html
+                ├── sub-{ID}_ses-<span class="label">{V0X}</span>_hash-<span class="var">{HASH}</span>_executive_summary.html
                 └── sub-{ID}.html
 
 <span class="hashtag"># ── Label Legend ─────────────────────────────────────────────</span>
-<span class="placeholder">HASH</span>       : 0f306a2f+0ef9c88a | 2afa9081+0ef9c88a
-<span class="placeholder">*</span>          : sub-{ID}_ses-<span class="label">{V0X}</span>-hash-<span class="placeholder">&lt;HASH&gt;</span>
-<span class="placeholder">METRIC</span>     : curv | sulc | thickness  
-<span class="placeholder">APARC</span>      : 4S-&lt;156|256|...|1056&gt;Parcels | Glasser | Gordon | MIDB | MyersLabonte  
-<span class="placeholder">PARC</span>       : 4S-&lt;156|256|...|1056&gt;Parcels | Glasser | Gordon | MIDB | MyersLabonte | HCP | Tian  
+<span class="var">HASH</span>       : 0f306a2f+0ef9c88a | 2afa9081+0ef9c88a
+<span class="var">*</span>          : sub-{ID}_ses-<span class="label">{V0X}</span>-hash-<span class="var">{HASH}</span>
+<span class="var">METRIC</span>     : curv | sulc | thickness  
+<span class="var">APARC</span>      : 4S-{156|256|...|1056}Parcels | Glasser | Gordon | MIDB | MyersLabonte  
+<span class="var">PARC</span>       : 4S-{156|256|...|1056}Parcels | Glasser | Gordon | MIDB | MyersLabonte | HCP | Tian  
 </pre>
 </div>
 
@@ -482,7 +514,7 @@ Below is a summary of key MRI derivatives used for structural morphology and res
 <div class="collapsible-content">
 <p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; border-bottom: 1px solid #6b6b6b66;">Curvature, Sulcal Depth, & Cortical Thickness</p>
 <p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>anat/*_space-fsLR_den-91k_<span style="color: teal;">&lt;curv|sulc|thickness&gt;</span>.dscalar.nii</code></i><br>
+<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>anat/*_space-fsLR_den-91k_<span style="color: teal;">{curv|sulc|thickness}</span>.dscalar.nii</code></i><br>
 <i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> Vertex-wise cortical morphology analyses (e.g., folding, curvature, thickness comparisons).</p>
 <p class="details">
 These CIFTI scalar files contain surface-based structural metrics derived from reconstructed L/R cortical surfaces, aligned to the fsLR template (~64k vertices per hemisphere).  
@@ -494,7 +526,7 @@ These CIFTI scalar files contain surface-based structural metrics derived from r
 </p>
 <p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; border-bottom: 1px solid #6b6b6b66;">Parcellated Structural Measures</p>
 <p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>anat/*_space-fsLR_seg-<span style="color: teal;">&lt;PARC&gt;</span>_stat-mean_desc-<span style="color: teal;">&lt;curv|sulc|thickness&gt;</span>_morph.tsv</code></i><br>
+<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>anat/*_space-fsLR_seg-<span style="color: teal;">{PARC}</span>_stat-mean_desc-<span style="color: teal;">{curv|sulc|thickness}</span>_morph.tsv</code></i><br>
 <i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> Region-based (ROI-level) analyses such as group comparisons or developmental modeling.</p>
 <p class="details">
 Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical regions defined by 
@@ -502,7 +534,7 @@ Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) wit
 </p>
 <p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; padding-top: 12px; border-bottom: 1px solid #6b6b6b66;">Midthickness, Pial, and White Matter Surfaces</p>
 <p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>anat/*_hemi-<span style="color: teal;">&lt;L|R&gt;</span>_space-fsLR_den-32k_<span style="color: teal;">&lt;midthickness|pial|white&gt;</span>.surf.gii</code></i><br>
+<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>anat/*_hemi-<span style="color: teal;">{L|R}</span>_space-fsLR_den-32k_<span style="color: teal;">{midthickness|pial|white}</span>.surf.gii</code></i><br>
 <i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> Visualizing cortical anatomy or mapping functional data to anatomical space.</p>
 <p class="details">
 3D surface models representing the midthickness, gray–white matter boundary, and pial surfaces for each hemisphere.  
@@ -523,7 +555,7 @@ Useful for rendering structural data, computing surface-based metrics, or visual
 <div class="collapsible-content">
 <p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px;  padding-top: 12px; border-bottom: 1px solid #6b6b6b66;">Dense Timeseries</p>
 <p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_space-fsLR_den-91k_desc-<span style="color: teal;">&lt;denoised|denoisedSmoothed&gt;</span>_bold.dtseries.nii</code></i><br>
+<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_space-fsLR_den-91k_desc-<span style="color: teal;">{denoised|denoisedSmoothed}</span>_bold.dtseries.nii</code></i><br>
 <i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> Voxelwise or seed-based FC analyses, timeseries analysis via sliding windows or markov chains, etc.</p>
 <p class="details">
 CIFTI dense time series containing fully preprocessed, temporally filtered, and nuisance-regressed BOLD data.
@@ -532,7 +564,7 @@ Each greyordinate (~96k total) represents a vertex or voxel with pre-processed r
 </p>
 <p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; padding-top: 12px; border-bottom: 1px solid #6b6b6b66;">Parcellated Timeseries</p>
 <p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_space-fsLR_seg-<span style="color: teal;">&lt;PARC&gt;</span>_stat-mean_timeseries.tsv</code></i><br>
+<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_space-fsLR_seg-<span style="color: teal;">{PARC}</span>_stat-mean_timeseries.tsv</code></i><br>
 <i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> ROI-to-ROI connectivity or network analyses using mean BOLD signals per region.</p>
 <p class="details">
 Tabulated mean BOLD time series for each region in the 
@@ -541,14 +573,14 @@ Also available as CIFTI <code>.ptseries.nii</code> files, where columns = region
 </p>
 <p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; padding-top: 12px; border-bottom: 1px solid #6b6b6b66;">Connectivity Matrices</p>
 <p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_space-fsLR_seg-<span style="color: teal;">&lt;PARC&gt;</span>_stat-pearsoncorrelation_relmat.tsv</code></i><br>
+<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_space-fsLR_seg-<span style="color: teal;">{PARC}</span>_stat-pearsoncorrelation_relmat.tsv</code></i><br>
 <i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> Quick inspection, validation, or as input to network and graph analyses.</p>
 <p class="details">
 Tab-delimited matrices of pairwise Pearson correlations between atlas regions, computed from parcellated time series using all available low-motion data (motion censored with a framewise displacement threshold of 0.3 mm). These matrices form the foundation for ROI-to-ROI connectivity analyses.
 </p>
 <p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; padding-top: 12px; border-bottom: 1px solid #6b6b6b66;">Motion Detection and Confound Files</p>
 <p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_dir-PA_run-{X}_<span style="color: teal;">&lt;design|motion|outliers&gt;</span>.tsv</code></i><br>
+<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_dir-PA_run-{X}_<span style="color: teal;">{design|motion|outliers}</span>.tsv</code></i><br>
 <i style="font-size: 0.9em;" class="fa-solid fa-triangle-exclamation"></i> <b>Required for:</b> Motion assessment and filtering low-quality data prior to group analyses.</p>
 <p class="details">
 Includes framewise displacement values and nuisance regressor design files.  

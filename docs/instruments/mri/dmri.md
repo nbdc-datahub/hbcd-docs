@@ -45,24 +45,24 @@ hbcd/
             └── ses-{V0X}/
                 ├── anat/
                 │   <span class="hashtag"># Transforms</span>
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>from-<span class="placeholder">&lt;ACPC_to-anat|anat_to-ACPC&gt;</span>_mode-image_xfm.mat
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>from-<span class="placeholder">&lt;ACPC_to-MNIInfant+1|MNIInfant+1_to-ACPC&gt;</span>_mode-image_xfm.h5
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>from-<span class="var">&lt;ACPC_to-anat|anat_to-ACPC&gt;</span>_mode-image_xfm.mat
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>from-<span class="var">&lt;ACPC_to-MNIInfant+1|MNIInfant+1_to-ACPC&gt;</span>_mode-image_xfm.h5
                 │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>from-orig_to-anat_mode-image_xfm.txt
                 │
                 │   <span class="hashtag"># Structural outputs (ACPC space)</span>
                 │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-<span class="placeholder">&lt;aseg_dseg|brain_mask&gt;</span>.nii.gz
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-<span class="var">&lt;aseg_dseg|brain_mask&gt;</span>.nii.gz
                 │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_dseg.nii.gz
                 │
                 ├── dwi/
                 │   <span class="hashtag"># QC & confounds</span>
                 │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-confounds_timeseries.tsv
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-<span class="placeholder">&lt;image|pepolar&gt;</span>_qc.tsv
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-<span class="var">&lt;image|pepolar&gt;</span>_qc.tsv
                 │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-slice_qc.json
                 │
                 │   <span class="hashtag"># Preprocessed data</span>
                 │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-preproc_dwi.nii.gz <span class="hashtag">(+JSON)</span>
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-preproc_dwi.<span class="placeholder">&lt;bval|bvec|b|b_table.txt&gt;</span>
+                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-preproc_dwi.<span class="var">&lt;bval|bvec|b|b_table.txt&gt;</span>
                 │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_dwiref.nii.gz
                 │
                 │   <span class="hashtag"># Masks & maps</span>
@@ -94,14 +94,14 @@ hbcd/
     │   └── <span class="muted">sub-{ID}/</span>
     │       └── <span class="muted">ses-{V0X}/</span>
     │           ├── dwi/
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_<span class="placeholder">&lt;scalar|tdi&gt;</span>stats.tsv
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_bundle-<span class="placeholder">&lt;BUNDLE&gt;</span>_streamlines.tck.gz
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_<span class="var">&lt;scalar|tdi&gt;</span>stats.tsv
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_bundle-<span class="var">&lt;BUNDLE&gt;</span>_streamlines.tck.gz
     │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_bundlestats.csv
     │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_dwimap.fib.gz
     │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_dwimap.fib.gz.icbm152_adult.map.gz
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_param-<span class="placeholder">&lt;gfa|iso|qa&gt;</span>_dwimap.nii.gz
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-rdi_param-<span class="placeholder">&lt;rd1|rd2&gt;</span>_dwimap.nii.gz
-    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;DTI-PARAM&gt;</span>_dwimap.nii.gz
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_param-<span class="var">&lt;gfa|iso|qa&gt;</span>_dwimap.nii.gz
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-rdi_param-<span class="var">&lt;rd1|rd2&gt;</span>_dwimap.nii.gz
+    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="var">&lt;DTI-PARAM&gt;</span>_dwimap.nii.gz
     │           ├── figures/*
     │           └── <span class="muted">sub-{ID}_ses-{V0X}</span>.html
 
@@ -112,8 +112,8 @@ hbcd/
     │           ├── dwi/
     │           │   # DIPY DKI
     │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_scalarstats.tsv
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="placeholder">&lt;DKI-PARAM&gt;</span>_dwimap.nii.gz
-    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="var">&lt;DKI-PARAM&gt;</span>_dwimap.nii.gz
+    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz
     │           ├── figures/*
     │           └── <span class="muted">sub-{ID}_ses-{V0X}</span>.html
     
@@ -123,8 +123,8 @@ hbcd/
     │       └── <span class="muted">ses-{V0X}/</span>
     │           ├── dwi/
     │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_scalarstats.tsv
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="placeholder">&lt;MAPMRI&gt;</span>_dwimap.nii.gz
-    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="placeholder">&lt;TENSOR&gt;</span>_dwimap.nii.gz
+    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="var">&lt;MAPMRI&gt;</span>_dwimap.nii.gz
+    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="var">&lt;TENSOR&gt;</span>_dwimap.nii.gz
     │           ├── figures/*
     │           └── <span class="muted">sub-{ID}_ses-{V0X}</span>.html
     
@@ -134,16 +134,16 @@ hbcd/
             └── <span class="muted">ses-{V0X}/</span>
                 └── dwi/
                     ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_scalarstats.tsv
-                    └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-MNIInfant+1_model-tensor_param-<span class="placeholder">&lt;TENSOR&gt;</span>_dwimap.nii.gz
+                    └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-MNIInfant+1_model-tensor_param-<span class="var">&lt;TENSOR&gt;</span>_dwimap.nii.gz
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">DTI-PARAM</span>: ad, fa, ha, md, rd, txx, txy, txz, tyy, tyz, tzz
-<span class="placeholder">DKI-PARAM</span>: ad, ak, kfa, md, mk, mkt, rd, rk
-<span class="placeholder">MAPMRI</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
-<span class="placeholder">TENSOR</span>: ad, am, fa, li, rd
+<span class="var">DTI-PARAM</span>: ad, fa, ha, md, rd, txx, txy, txz, tyy, tyz, tzz
+<span class="var">DKI-PARAM</span>: ad, ak, kfa, md, mk, mkt, rd, rk
+<span class="var">MAPMRI</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
+<span class="var">TENSOR</span>: ad, am, fa, li, rd
 
 <span class="hashtag"># DSI Studio &lt;BUNDLE&gt; groups:</span> → See <a href="#bundle">full DSIStudio bundle label list</a>
-Association<span class="placeholder">&lt;LABEL&gt;</span>, Cerebellum<span class="placeholder">&lt;LABEL&gt;</span>, Commissure<span class="placeholder">&lt;LABEL&gt;</span>, ProjectionBasalGanglia<span class="placeholder">&lt;LABEL&gt;</span>, ProjectionBrainstem<span class="placeholder">&lt;LABEL&gt;</span>
+Association<span class="var">&lt;LABEL&gt;</span>, Cerebellum<span class="var">&lt;LABEL&gt;</span>, Commissure<span class="var">&lt;LABEL&gt;</span>, ProjectionBasalGanglia<span class="var">&lt;LABEL&gt;</span>, ProjectionBrainstem<span class="var">&lt;LABEL&gt;</span>
 </pre>  
 </div>
 

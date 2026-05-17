@@ -15,8 +15,8 @@ hbcd/
     └── phenotype/ 
         ├── sed_basic_demographics.*        <span class="hashtag"># Basic Demographics</span>
         ├── par_visit_data.*                <span class="hashtag"># Visit Level Data</span>
-        ├── bio_biosample_<span class="placeholder">&lt;nails|urine&gt;</span>.*   <span class="hashtag"># Toxicology</span>
-        └── <span class="placeholder">{instrument_name}</span>.*             <span class="hashtag"># Instrument Data</span>
+        ├── bio_biosample_<span class="var">&lt;nails|urine&gt;</span>.*   <span class="hashtag"># Toxicology</span>
+        └── <span class="var">{instrument_name}</span>.*             <span class="hashtag"># Instrument Data</span>
 </pre>
 
 Key features of tabulated data include:

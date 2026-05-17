@@ -36,19 +36,19 @@ hbcd/
             └── ses-<span class="label">{V0X}</span>/
                 ├── HERCULES/
                 │   ├── PreOspreyLocalizerReg/
-                │   │   ├── <span class="placeholder">&lt;aal|c1|c2|c3&gt;</span>reference_seg_aligned_to_localizer.nii.gz
-                │   │   ├── reference_<span class="placeholder">&lt;img|seg&gt;</span>_aligned_to_localizer.nii.gz
+                │   │   ├── <span class="var">&lt;aal|c1|c2|c3&gt;</span>reference_seg_aligned_to_localizer.nii.gz
+                │   │   ├── reference_<span class="var">&lt;img|seg&gt;</span>_aligned_to_localizer.nii.gz
                 │   │   ├── readme.txt
                 │   │   ├── registration_summary.json
                 │   │   └── transform_mat.npy
                 │   │
                 │   ├── QuantifyResults/
-                │   │   ├── <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1.tsv
-                │   │   ├── <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_<span class="placeholder">&lt;AlphaCorr|CSF|raw|TissCorr&gt;</span>WaterScaled_Voxel_1_Basis_1.tsv
-                │   │   └── <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_<span class="placeholder">&lt;amplMets|tCr&gt;</span>_Voxel_1_Basis_1.tsv
+                │   │   ├── <span class="var">&lt;diff1|diff2|sum&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1.tsv
+                │   │   ├── <span class="var">&lt;diff1|diff2|sum&gt;</span>_<span class="var">&lt;AlphaCorr|CSF|raw|TissCorr&gt;</span>WaterScaled_Voxel_1_Basis_1.tsv
+                │   │   └── <span class="var">&lt;diff1|diff2|sum&gt;</span>_<span class="var">&lt;amplMets|tCr&gt;</span>_Voxel_1_Basis_1.tsv
                 │   │
                 │   ├── SegMaps/
-                │   │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-hercules_svs.nii_space-scanner_Voxel-1_label-<span class="placeholder">&lt;ROI&gt;</span>.nii.gz
+                │   │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-hercules_svs.nii_space-scanner_Voxel-1_label-<span class="var">&lt;ROI&gt;</span>.nii.gz
                 │   │   └── TissueFractions_Voxel_1.tsv
                 │   │
                 │   ├── VoxelMasks/
@@ -64,15 +64,15 @@ hbcd/
                 <span class="hashtag"># Mirrors HERCULES/ structure - only unique filenames are displayed below</span>
                     ├── QuantifyResults/
                     │   ├── A_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1.tsv
-                    │   ├── A_<span class="placeholder">&lt;AlphaCorr|CSF|raw|TissCorr&gt;</span>WaterScaled_Voxel_1_Basis_1.tsv
-                    │   └── A_<span class="placeholder">&lt;amplMets|tCr&gt;</span>_Voxel_1_Basis_1.tsv
+                    │   ├── A_<span class="var">&lt;AlphaCorr|CSF|raw|TissCorr&gt;</span>WaterScaled_Voxel_1_Basis_1.tsv
+                    │   └── A_<span class="var">&lt;amplMets|tCr&gt;</span>_Voxel_1_Basis_1.tsv
                     ├── SegMaps/
-                    │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-shortTE_svs.nii_space-scanner_Voxel-1_label-<span class="placeholder">&lt;ROI&gt;</span>.nii.gz
+                    │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-shortTE_svs.nii_space-scanner_Voxel-1_label-<span class="var">&lt;ROI&gt;</span>.nii.gz
                     └── VoxelMasks/
                         └── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-shortTE_svs_space-scanner_mask.nii.gz
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">ROI</span>: CSF, GM, Tha, WM
+<span class="var">ROI</span>: CSF, GM, Tha, WM
 </pre>
 </div>
 

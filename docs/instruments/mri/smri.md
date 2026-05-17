@@ -47,9 +47,9 @@ hbcd/
         └── sub-<span class="label">{ID}</span>/
             └── ses-<span class="label">{V0X}</span>/
                 └── anat/
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_dseg.nii.gz <span class="hashtag">(+JSON)</span>
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv <span class="hashtag">(+JSON)</span>         
-                    └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.nii.gz <span class="hashtag">(+JSON)</span>
+                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;T1w|T2w&gt;</span>_desc-aseg_dseg.nii.gz <span class="hashtag">(+JSON)</span>
+                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv <span class="hashtag">(+JSON)</span>         
+                    └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.nii.gz <span class="hashtag">(+JSON)</span>
 
 <span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 </pre>
@@ -68,18 +68,18 @@ hbcd/
     │   ├── sub-<span class="label">{ID}</span>/
     │   │   └── ses-<span class="label">{V0X}</span>/
     │   │       ├── anat/
-    │   │       │   └── <span class="muted">sub-{ID}_ses-{V0X}_run-{x}</span>_<span class="placeholder">&lt;T1w|T2w&gt;</span>.json
+    │   │       │   └── <span class="muted">sub-{ID}_ses-{V0X}_run-{x}</span>_<span class="var">&lt;T1w|T2w&gt;</span>.json
     │   │       └── func/
-    │   │           └── <span class="muted">sub-{ID}_ses-{V0X}_run-{x}</span>_<span class="placeholder">&lt;T1w|T2w&gt;</span>.json
-    │   └── <span class="muted">sub-{ID}_ses-{V0X}_run-{x}</span>_<span class="placeholder">&lt;T1w|T2w&gt;</span>.html
+    │   │           └── <span class="muted">sub-{ID}_ses-{V0X}_run-{x}</span>_<span class="var">&lt;T1w|T2w&gt;</span>.json
+    │   └── <span class="muted">sub-{ID}_ses-{V0X}_run-{x}</span>_<span class="var">&lt;T1w|T2w&gt;</span>.html
     │
     └── bme-x/                  
         └── sub-<span class="label">{ID}</span>/
             └── ses-<span class="label">{V0X}</span>/
                 └── anat/
-                    |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span>desc-<span class="placeholder">&lt;enhanced|preproc&gt;</span>_<span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
-                    |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span>space-<span class="placeholder">&lt;T1w|T2w&gt;</span>_desc-brain_mask.nii.gz <span class="hashtag">(+JSON)</span>
-                    |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span><span class="placeholder">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span>desc-<span class="var">&lt;enhanced|preproc&gt;</span>_<span class="var">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span>space-<span class="var">&lt;T1w|T2w&gt;</span>_desc-brain_mask.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span><span class="var">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
 
 <span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 </pre>

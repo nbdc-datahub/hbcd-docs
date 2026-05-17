@@ -65,12 +65,12 @@ hbcd/
             └── motion/
 
                 <span class="hashtag"># Calibration files</span>
-                ├── *_task-<span class="placeholder">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-calibration_motion.tsv   <span class="hashtag">(+JSON)</span>
-                └── *_task-<span class="placeholder">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-calibration_channels.tsv <span class="hashtag">(+JSON)</span>
+                ├── *_task-<span class="var">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-calibration_motion.tsv   <span class="hashtag">(+JSON)</span>
+                └── *_task-<span class="var">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-calibration_channels.tsv <span class="hashtag">(+JSON)</span>
 
                 <span class="hashtag"># 72-hr recordings</span>
-                ├── *_task-<span class="placeholder">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-primary_motion.tsv   <span class="hashtag">(+JSON)</span>
-                └── *_task-<span class="placeholder">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-primary_channels.tsv <span class="hashtag">(+JSON)</span>
+                ├── *_task-<span class="var">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-primary_motion.tsv   <span class="hashtag">(+JSON)</span>
+                └── *_task-<span class="var">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-primary_channels.tsv <span class="hashtag">(+JSON)</span>
 </pre>
 </div>
 
@@ -102,18 +102,18 @@ hbcd/
 
                     <span class="hashtag"># Physical Activity (PA)</span>
                     ├── PA/
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_BOUTS.tsv
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_LOG.txt
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_RAW.tsv
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-accelerationPA_SUMMARY.json
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_BOUTS.tsv
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_LOG.txt
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_RAW.tsv
-                    │   └── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-jerkPA_SUMMARY.json
+                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-accelerationPA_BOUTS.tsv
+                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-accelerationPA_LOG.txt
+                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-accelerationPA_RAW.tsv
+                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-accelerationPA_SUMMARY.json
+                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-jerkPA_BOUTS.tsv
+                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-jerkPA_LOG.txt
+                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-jerkPA_RAW.tsv
+                    │   └── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-jerkPA_SUMMARY.json
 
                     <span class="hashtag"># Metadata & Outputs</span>
                     ├── PARAMETERS.json
-                    └── sub-{ID}_ses-{V0X}_leg-<span class="placeholder">&lt;left|right&gt;</span>_desc-calibrated_recording-20_motion.tsv
+                    └── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-calibrated_recording-20_motion.tsv
 </pre>
 </div>
 
