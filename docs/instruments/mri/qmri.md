@@ -49,29 +49,30 @@ qMRI data are processed via <a href="https://syntheticmr.com/products/symri-neur
 </div>
 <div class="table-collapsible-content">
 <pre class="folder-tree">
+<span class="hashtag"># JSON files excluded for brevity</span>
 hbcd/
 └── derivatives/
     │
   <span class="hashtag">SyMRI</span>
     ├── symri/ 
-    │   └── sub-<span class="label">{ID}</span>/
-    │       └── ses-<span class="label">{V0X}</span>/
+    │   └── sub-[ID]/
+    │       └── ses-[V0X]/
     │           └── anat/
-    │               ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-QALAS_T1w.nii.gz      <span class="hashtag">(+JSON)</span>
-    │               ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-QALAS_T2w.nii.gz      <span class="hashtag">(+JSON)</span>
-    │               ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-QALAS_T2map.nii.gz    <span class="hashtag">(+JSON)</span>
-    │               └── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-QALAS_desc-SymriContainer.log
+    │               ├── sub-[ID]_ses-[V0X]_acq-QALAS_T1w.nii.gz
+    │               ├── sub-[ID]_ses-[V0X]_acq-QALAS_T2w.nii.gz
+    │               ├── sub-[ID]_ses-[V0X]_acq-QALAS_T2map.nii.gz
+    │               └── sub-[ID]_ses-[V0X]_acq-QALAS_desc-SymriContainer.log
     │
   <span class="hashtag">qMRI PostProc</span>
     └── qmri_postproc/
-        └── sub-<span class="label">{ID}</span>/
-            └── ses-<span class="label">{V0X}</span>/
+        └── sub-[ID]/
+            └── ses-[V0X]/
                 └── anat/
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-AsegROIs_scalarstats.tsv            <span class="hashtag">(+JSON)</span>
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-BilateralAsegROIs_scalarstats.tsv   <span class="hashtag">(+JSON)</span>
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-RegistrationQCAid.png               <span class="hashtag">(+JSON)</span>
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-T2w_desc-QALAS_T2map.nii.gz        <span class="hashtag">(+JSON)</span>
-                    └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-QALAS_desc-aseg_dseg.nii.gz
+                    ├── sub-[ID]_ses-[V0X]_desc-AsegROIs_scalarstats.tsv
+                    ├── sub-[ID]_ses-[V0X]_desc-BilateralAsegROIs_scalarstats.tsv
+                    ├── sub-[ID]_ses-[V0X]_desc-RegistrationQCAid.png   
+                    ├── sub-[ID]_ses-[V0X]_space-T2w_desc-QALAS_T2map.nii.gz
+                    └── sub-[ID]_ses-[V0X]_space-QALAS_desc-aseg_dseg.nii.gz
 
 <span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 </pre>

@@ -71,21 +71,25 @@ EEG release data include the following - <i>see <a href="../../datacuration/over
 <pre class="folder-tree">
 hbcd/
 └── rawdata/
-    └── sub-{ID}/
-        └── ses-{V0X}/
+    └── sub-[ID]/
+        └── ses-[V0X]/
             └── eeg/
               <span class="hashtag"># Task Acquisitions</span>
-                ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;TASK&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_</span>_run-{X}_channels.tsv
-                ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;TASK&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_</span>_run-{X}_eeg.set <span class="hashtag">(+JSON)</span>
-                ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;TASK&gt;</span>_acq-<span class="placeholder">&lt;eeg|ecg&gt;</span>_</span>_run-{X}_events.tsv <span class="hashtag">(+JSON)</span>
-                ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;TASK&gt;</span>_acq-eeg_run-{X}_eeg.fdt
+                ├── *_task-<span class="var">{TASK}</span>_acq-<span class="var">{eeg|ecg}</span>_run-[X]_channels.tsv
+                ├── *_task-<span class="var">{TASK}</span>_acq-<span class="var">{eeg|ecg}</span>_run-[X]_eeg.set <span class="hashtag">(+JSON)</span>
+                ├── *_task-<span class="var">{TASK}</span>_acq-<span class="var">{eeg|ecg}</span>_run-[X]_events.tsv <span class="hashtag">(+JSON)</span>
+                ├── *_task-<span class="var">{TASK}</span>_acq-eeg_run-[X]_eeg.fdt
               <span class="hashtag"># Electrode Placement</span>
-                ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_electrodes.tsv
-                ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-eeg_space-<span class="placeholder">&lt;CapTrak|CTF&gt;</span>_coordsystem.json
+                ├── *_acq-eeg_space-<span class="var">{CapTrak|CTF}</span>_electrodes.tsv
+                ├── *_acq-eeg_space-<span class="var">{CapTrak|CTF}</span>_coordsystem.json
                 └── sourcedata/
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-eeg_flags.json
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-eeg_impedances.json
-                    └── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;TASK&gt;</span>_acq-eeg_run-{X}_eventlogs.txt
+                    ├── *_acq-eeg_flags.json
+                    ├── *_acq-eeg_impedances.json
+                    └── *_task-<span class="var">{TASK}</span>_acq-eeg_run-[X]_eventlogs.txt
+
+<span class="hashtag"># Label Values Legend</span>
+File Prefixes: sub-[ID]_ses-[V0X]
+<span class="var">TASK</span>: FACE, MMN, RS, VEP
 </pre>
 <p><b>BIDS Conversion Procedures</b><br>BIDS conversion was performed with the <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application for HBCD EEG data management and formatting, installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which converts them to the BIDS standard.</p>
 </div>
@@ -102,54 +106,40 @@ hbcd/
 </div>
 <div class="table-collapsible-content">
 <p>EEG data were processed using the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE</a> pipeline, as described in the <a href="#data-processing">Data Processing</a> summary on this page. The file structure of derivative outputs included in the release is as follows:</p>
-<p><a href="../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
-
-<pre class="folder-tree" style="font-size: 11px">
+<p><a href="../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees</a></p>
+<pre class="folder-tree" style="font-size: 11.5px">
 hbcd/
 └── derivatives/
     └── made/
-        └── sub-{ID}/
-            └── ses-{V0X}/
+        └── sub-[ID]/
+            └── ses-[V0X]/
                 └── eeg/
                     ├── filtered_data/
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;TASK&gt;</span>_acq-eeg_run-{X}_desc-filtered_eeg.fdt
-                    │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;TASK&gt;</span>_acq-eeg_run-{X}_desc-filtered_eeg.set
+                    │   └── *_task-<span class="var">{TASK}</span>_acq-eeg_run-[X]_desc-filtered_eeg<span class="var">{.fdt|.set}</span>
                     │
                     ├── ica_data/
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>adjustReport.txt
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-mergedICA_eeg.fdt
-                    │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-mergedICA_eeg.set
+                    │   ├── *_adjustReport.txt
+                    │   └── *_desc-mergedICA_eeg<span class="var">{.fdt|.set}</span>
                     │
                     ├── merged_data/
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-merged_eeg.fdt
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-merged_eeg.json
-                    │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-merged_eeg.set
+                    │   └── *_desc-merged_eeg<span class="var">{.fdt|.set}</span>
+                    │   └── *_desc-merged_eeg.json
                     │
                     ├── processed_data/
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-FACE_desc-<span class="placeholder">&lt;FACE-IMG&gt;</span>.jpg
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-MMN_desc-oz_<span class="placeholder">&lt;MMN-IMG&gt;</span>_topo.jpg
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-MMN_desc-t7t8_<span class="placeholder">&lt;diffERP|ERP&gt;</span>.jpg
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;FACE|MMN&gt;</span>_desc-{IMG}.jpg
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-RS_desc-allCh_PSD.jpg
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-RS_<span class="placeholder">&lt;Log|db|Abs&gt;</span>PowerSpectra.csv
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_ERPSummaryStats.csv
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_ERPTrialMeasures.csv
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-VEP_<span class="placeholder">&lt;VEP-IMG&gt;</span>.jpg
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;FACE|MMN|VEP&gt;</span>_acq-eeg_run-{X}_ERP.mat
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-RS_spectra.mat
-                    │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;TASK&gt;</span>_acq-eeg_run-{X}_desc-filteredprocessed_eeg.fdt
-                    │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;TASK&gt;</span>_acq-eeg_run-{X}_desc-filteredprocessed_eeg.set
+                    │   ├── *.jpg <span class="comment"># Topographic and ERP plots- <a href="https://docs-hbcd-made.readthedocs.io/en/latest/expected-outputs/#expected-outputs-from-hbcd-made">see details</a></span>
+                    │   ├── *_task-RS_<span class="var">{Log|db|Abs}</span>PowerSpectra.csv
+                    │   ├── *_task-RS_spectra.mat
+                    │   ├── *_task-<span class="var">{FACE|MMN|VEP}</span>_ERPSummaryStats.csv
+                    │   ├── *_task-<span class="var">{FACE|MMN|VEP}</span>_ERPTrialMeasures.csv
+                    │   ├── *_task-<span class="var">{FACE|MMN|VEP}</span>_acq-eeg_run-[X]_ERP.mat
+                    │   └── *_task-<span class="var">{TASK}</span>_acq-eeg_run-[X]_desc-filteredprocessed_eeg<span class="var">{.fdt|.set}</span>
                     │
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-eeg_preprocessingReport.csv
-                    └── <span class="muted">sub-{ID}_ses-{V0X}_</span>task-<span class="placeholder">&lt;TASK&gt;</span>_acq-eeg_run-{X}_MADEspecification.json
+                    ├── *_acq-eeg_preprocessingReport.csv
+                    └── *_task-<span class="var">{TASK}</span>_acq-eeg_run-[X]_MADEspecification.json
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">TASK</span>: FACE, MMN, RS, VEP
-<span class="placeholder">&lt;FACE-IMG&gt;</span>: 
-    diffInvVsUpr_topo, diffObjVsUp2_topo, inverted_topo, object_topo, 
-    upright_topo, upright2_topo, oz_diffERP, oz_ERP
-<span class="placeholder">&lt;MMN-IMG&gt;</span>: deviant, diffDevVsSta, diffDevVsPre, preDeviant, standard
-<span class="placeholder">&lt;VEP-IMG&gt;</span>: desc-oz_ERP, topo
+File Prefixes: sub-[ID]_ses-[V0X]
+<span class="var">TASK</span>: FACE, MMN, RS, VEP
 </pre>
 </div>
 

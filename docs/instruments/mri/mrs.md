@@ -32,27 +32,27 @@ HBCD MRS data are processed with [OSPREY-BIDS](https://osprey-bids.readthedocs.i
 hbcd/
 └── derivatives/
     └── osprey/
-        └── sub-<span class="label">{ID}</span>/
-            └── ses-<span class="label">{V0X}</span>/
+        └── sub-[ID]/
+            └── ses-[V0X]/
                 ├── HERCULES/
                 │   ├── PreOspreyLocalizerReg/
-                │   │   ├── <span class="placeholder">&lt;aal|c1|c2|c3&gt;</span>reference_seg_aligned_to_localizer.nii.gz
-                │   │   ├── reference_<span class="placeholder">&lt;img|seg&gt;</span>_aligned_to_localizer.nii.gz
+                │   │   ├── <span class="var">{aal|c1|c2|c3}</span>reference_seg_aligned_to_localizer.nii.gz
+                │   │   ├── reference_<span class="var">{img|seg}</span>_aligned_to_localizer.nii.gz
                 │   │   ├── readme.txt
                 │   │   ├── registration_summary.json
                 │   │   └── transform_mat.npy
                 │   │
                 │   ├── QuantifyResults/
-                │   │   ├── <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1.tsv
-                │   │   ├── <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_<span class="placeholder">&lt;AlphaCorr|CSF|raw|TissCorr&gt;</span>WaterScaled_Voxel_1_Basis_1.tsv
-                │   │   └── <span class="placeholder">&lt;diff1|diff2|sum&gt;</span>_<span class="placeholder">&lt;amplMets|tCr&gt;</span>_Voxel_1_Basis_1.tsv
+                │   │   ├── <span class="var">{diff1|diff2|sum}</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1.tsv
+                │   │   ├── <span class="var">{diff1|diff2|sum}</span>_<span class="var">{AlphaCorr|CSF|raw|TissCorr}</span>WaterScaled_Voxel_1_Basis_1.tsv
+                │   │   └── <span class="var">{diff1|diff2|sum}</span>_<span class="var">{amplMets|tCr}</span>_Voxel_1_Basis_1.tsv
                 │   │
                 │   ├── SegMaps/
-                │   │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-hercules_svs.nii_space-scanner_Voxel-1_label-<span class="placeholder">&lt;ROI&gt;</span>.nii.gz
+                │   │   ├── sub-[ID]_ses-[V0X]_acq-hercules_svs.nii_space-scanner_Voxel-1_label-<span class="var">{ROI}</span>.nii.gz
                 │   │   └── TissueFractions_Voxel_1.tsv
                 │   │
                 │   ├── VoxelMasks/
-                │   │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-hercules_svs_space-scanner_mask.nii.gz
+                │   │   └── sub-[ID]_ses-[V0X]_acq-hercules_svs_space-scanner_mask.nii.gz
                 │   │
                 │   ├── LogFile.txt
                 │   ├── QM_processed_spectra.tsv
@@ -64,15 +64,15 @@ hbcd/
                 <span class="hashtag"># Mirrors HERCULES/ structure - only unique filenames are displayed below</span>
                     ├── QuantifyResults/
                     │   ├── A_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1.tsv
-                    │   ├── A_<span class="placeholder">&lt;AlphaCorr|CSF|raw|TissCorr&gt;</span>WaterScaled_Voxel_1_Basis_1.tsv
-                    │   └── A_<span class="placeholder">&lt;amplMets|tCr&gt;</span>_Voxel_1_Basis_1.tsv
+                    │   ├── A_<span class="var">{AlphaCorr|CSF|raw|TissCorr}</span>WaterScaled_Voxel_1_Basis_1.tsv
+                    │   └── A_<span class="var">{amplMets|tCr}</span>_Voxel_1_Basis_1.tsv
                     ├── SegMaps/
-                    │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-shortTE_svs.nii_space-scanner_Voxel-1_label-<span class="placeholder">&lt;ROI&gt;</span>.nii.gz
+                    │   └── sub-[ID]_ses-[V0X]_acq-shortTE_svs.nii_space-scanner_Voxel-1_label-<span class="var">{ROI}</span>.nii.gz
                     └── VoxelMasks/
-                        └── <span class="muted">sub-{ID}_ses-{V0X}_</span>acq-shortTE_svs_space-scanner_mask.nii.gz
+                        └── sub-[ID]_ses-[V0X]_acq-shortTE_svs_space-scanner_mask.nii.gz
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="placeholder">ROI</span>: CSF | GM | Tha | WM
+<span class="var">ROI</span>: CSF, GM, Tha, WM
 </pre>
 </div>
 
@@ -80,8 +80,9 @@ hbcd/
 
 The primary of outcome variables from MRS data processed through the Osprey pipeline are metabolite concentrations. The ISTHMUS acquisition generates four spectra, each modeled separately using linear combination modeling with inclusive basis sets (since most metabolites may contribute, at least minimally, to all spectra). Each spectrum provides optimal quantification for a different subset of metabolites as follows:
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px;">
-<thead><tr><th>Spectrum</th><th>Best-Quantified Metabolites</th><th>Table Name<sup><b>1</b></sup></th></tr></thead>
+<table class="compact-table-no-vertical-lines">
+<thead><tr><th>Spectrum</th><th>Best-Quantified Metabolites</th><th>Table Name (in <a href="../../../datacuration/overview/#tabulated-pipeline-derivatives">tabulated pipeline derivatives</a>)
+</th></tr></thead>
 <tbody>
 <tr><td><b>Short-TE Unedited</b></td><td>tNAA, tCr, tCho, mI, Glx, Scyllo</d><td><code>img_osprey_unedited_A_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
 </tr>
@@ -91,10 +92,7 @@ The primary of outcome variables from MRS data processed through the Osprey pipe
 </tr>
 <tr><td><b>HERCULES Diff2</b></td><td>GSH, Lac, NAAG, PE</td><td><code>img_osprey_HERCULES_diff2_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
 </tr>
-</tbody><tfoot>
-<tr><td colspan="3" style="border-top: 2px solid #cce7e7; padding: 10px 8px 6px 8px;">
-<sup><b>1</b></sup> Note: tables contain data summarized across participants from <a href="#derivatives">Osprey pipeline derivatives</a></td></tr>
-</tfoot>
+</tbody>
 </table>
 
 ### Quantification Approaches
@@ -105,16 +103,15 @@ MRS values are quantified relative to internal reference signals. Optimal refere
 <tr><th>Method</th><th>Recommended Use</th></tr></thead>
 <tbody>
 <tr>
-  <td>Tissue-Corrected Water-Scaled Concentrations <i class="fa-solid fa-star" style="color: gold;"></i></td>
-  <td><b>Recommended default</b> (<code>TissCorrWaterScaled</code> TSV files)</td>
+  <td>Tissue-Corrected Water-Scaled Concentrations</td>
+  <td><i class="fa-solid fa-star" style="color: gold;"></i> <b>Recommended default</b> (<code>TissCorrWaterScaled</code> TSV files)</td>
 </tr>
 <tr><td>Alpha-corrected variants</td><td>Use only for GABA+</td></tr>
 <tr>
   <td>Metabolite-to-creatine ratios</td>
-  <td>Values are normalized to total creatine (tCr), which is relativel stable across lifespan, but only present in tissue and not CSF; use only for tissue</td>
+  <td>Values normalized to total creatine (tCr), relatively stable across lifespan. tCR is not present in CSF and should only be used for tissue-based analysis.</td>
 </tr>
-<tr><td>Unscaled model amplitudes</td><td>Do not use for analyses</td></tr>
-<!-- <tr><td>Raw water-scaled concentrations</td><td></td></tr> -->
+<tr><td>Unscaled model amplitudes</td><td>Do not use for analysis</td></tr>
 </tbody>
 </table>
 

@@ -201,7 +201,7 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 </ul>
 <p><b>MRI-Specific Updates</b></p>
 <ul>
-<li><b>Enhanced <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV</a> metadata</b>: The session-level <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files now include detailed scanner metadata, including: <code>ScannerManufacturer</code>, <code>ScannerModel</code>, <code>ScannerSoftwareVersion</code>, and <code>ScannerSerialNumber</code> (enables differentiation of multiple scanners within the same site).   </li>
+<li><b>Enhanced <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV</a> metadata</b>: The session-level <code>sub-[ID]_ses-{V0X}_scans.tsv</code> files now include detailed scanner metadata, including: <code>ScannerManufacturer</code>, <code>ScannerModel</code>, <code>ScannerSoftwareVersion</code>, and <code>ScannerSerialNumber</code> (enables differentiation of multiple scanners within the same site).   </li>
 <li><strong>Processed data exclusion criteria updated</strong>: New procedures have been implemented to remove MRI derivatives with serious data quality issues.
 See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion-criteria">MR Exclusion Criteria</a> for full details.</li>
 </ul>
@@ -503,7 +503,7 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><strong>Nails & Urine (<code>bio_bm_biosample_&lt;nails|urine&gt;</code>)</strong></p>
+<p style="font-size: 1.0em;"><strong>Nails & Urine (<code>bio_bm_biosample_{nails|urine}</code>)</strong></p>
 <table class="table-no-vertical-lines">
 <tbody>
   <tr>

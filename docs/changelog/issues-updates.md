@@ -18,11 +18,41 @@
   background-color: #e6f0ff;
   color: #1a4fb3;
 }
-/* TBD */
+/* TBD PILL*/
 .pr-tbd {
   background-color: #f1f3f5;
   color: #666;
   font-style: italic;
+}
+/* ICONS */
+.icon-rotate {
+  color: #199bd6;
+  margin-right: 0.4em;
+  font-size: 1em;
+}
+.icon-bug {
+  color: #f97316;
+  margin-right: 0.4em;
+  font-size: 1em;
+}
+/* DOMAINS LEGEND*/
+.study-legend {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 1.0em;
+}
+.study-legend td {
+  vertical-align: top !important;
+  padding-top: 0;
+  line-height: 1.5;
+  border-left: 3px solid transparent;
+}
+.study-legend i {
+  margin-right: 6px;
+  color: #0077ff;
+  width: 18px;
+  text-align: center;
 }
 </style>
 

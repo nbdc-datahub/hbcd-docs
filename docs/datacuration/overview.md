@@ -28,17 +28,9 @@ File-based data is an umbrella term for all other data that isn't tabulated, typ
 <div class="table-collapsible-content">
 <p><b>The following conventions are used to improve readability of file tree diagrams throughout this site:</b></p>
 <ul>
-<li>
-<strong>Curly brackets <code>{ }</code></strong> indicate placeholders with many possible values that are not exhaustively listed.
-Example: <code>sub-{ID}_ses-{V0X}</code>, <code>run-{X}</code>.</li>
-<li><strong>Angle brackets <code>&lt; &gt;</code></strong> indicate a defined set of all included values.
-These values are either:
-<ul>
-<li>Listed directly inside the brackets and separated by <code>|</code>, or</li>
-<li>Defined in a <b>Label Values Legend</b> below the file tree.</li>
-</ul>
-</li>
-<li><strong>Sidecar JSON files</strong> may be omitted for brevity. When applicable, files with corresponding JSONs are marked with <code>(+JSON)</code>.
+<li><strong>Square brackets <code>[ ]</code></strong> indicate placeholders with many possible values that are not exhaustively listed, e.g., <code>sub-[ID]</code></li>
+<li><strong>Curly brackets <code>{ }</code></strong> indicate a defined set of all included values. These values are either listed directly inside the brackets (separated by <code>|</code>) or defined in a <b>Label Values Legend</b> below the file tree.</li>
+<li><strong>Sidecar JSON files</strong> may be omitted for brevity entirely or indicated by marking corresponding JSON files with <code>(+JSON)</code>.
 </li>
 <li>Some pipelines generate an <code>.html</code> visual summary report for quality assessment. These reports source images from a <code>figures/</code> directory within the derivatives folder. The contents of <code>figures/</code> are not listed for brevity.</li>
 </ul>
@@ -53,14 +45,14 @@ hbcd/
 │   │   └── <span class="file">{INSTRUMENT_NAME}.tsv</span>
 │
 │   <span class="section"># Raw BIDS (MRI/MRS, EEG, biosensors)</span>
-│   ├── <span class="folder">sub-{ID}/</span>
+│   ├── <span class="folder">sub-[ID]/</span>
 │   │   ├── <span class="folder">ses-{V0X}/</span>   <span class="comment"># Modality-specific subfolders</span>
 │   │   │   ├── <span class="folder">anat/</span>
 │   │   │   ├── <span class="folder">dwi/</span>
 │   │   │   ├── <span class="folder">eeg/</span>
 │   │   │   ├── <span class="muted">...</span>
-│   │   │   └── <span class="file">sub-{ID}_ses-{V0X}_scans.tsv</span>
-│   │   └── <span class="file">sub-{ID}_sessions.tsv</span>
+│   │   │   └── <span class="file">sub-[ID]_ses-{V0X}_scans.tsv</span>
+│   │   └── <span class="file">sub-[ID]_sessions.tsv</span>
 │
 │   <span class="section"># Dataset-level metadata</span>
 │   ├── <span class="file">dataset_description.json</span>
@@ -69,7 +61,7 @@ hbcd/
 ├── <span class="folder">derivatives/</span>
 │   <span class="section"># Processed outputs by pipeline</span>
 │   └── <span class="folder">{PIPELINE_NAME}/</span>
-│       └── <span class="folder">sub-{ID}/</span>
+│       └── <span class="folder">sub-[ID]/</span>
 │           └── <span class="folder">ses-{V0X}/</span>   <span class="comment"># Mirrors rawdata structure</span>
 │
 └── <span class="folder">concatenated/</span>
@@ -86,7 +78,7 @@ Processing pipelines for imaging, EEG, and wearable sensor recordings output der
 **Not all processed data are available in tabulated form.** Tabulated datasets have one row per participant/session, so only derivatives that can be summarized into a single row/column structure are tabulated. If no tabulated file exists for the derivatives you need, you will need to use the file-based data.
 
 
-<!-- Tabulated filenames closely mirror their source derivative file names for easy cross-reference. For example, the <code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> table is derived from <code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D</a> derivatives.  -->
+<!-- Tabulated filenames closely mirror their source derivative file names for easy cross-reference. For example, the <code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> table is derived from <code>sub-[ID]_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D</a> derivatives.  -->
 
 <!-- 
 

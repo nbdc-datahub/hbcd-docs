@@ -162,7 +162,6 @@ Ketamine (<code>c_ket_u</code>)<br>Norketamine (<code>c_nket_u</code>)<br>Phency
 </table>
 </div>
 
-
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">

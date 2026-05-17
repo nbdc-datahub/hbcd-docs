@@ -14,7 +14,7 @@
 </head>
 <body>
 <h2>Raw MR Data QC Metrics Included in Scans TSV File</h2>
-<p>The session folder <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files include the following fields relevant to QC (other fields, such as <code>filename</code>, <code>site</code>, etc. not shown below).</p>
+<p>The session folder <code>sub-[ID]_ses-[V0X]_scans.tsv</code> files include the following fields relevant to QC (other fields, such as <code>filename</code>, <code>site</code>, etc. not shown below).</p>
 <table class="table-no-vertical-lines" style="font-size: 14px;">
 <thead>
 <tr>
@@ -76,7 +76,7 @@
 <td>Number of frames with line artifacts</td>
 </tr>
 <tr>
-<td><code>line_&lt;max|mean&gt;_&lt;score|count&gt;</code></td>
+<td><code>line_{max|mean}_{score|count}</code></td>
 <td>Maximum/Mean line artifact score/count across frames</td>
 </tr>
 <tr>
@@ -84,31 +84,31 @@
 <td>Sum of dorsal and ventral cutoff scores</td>
 </tr>
 <tr>
-<td><code>&lt;dorsal|ventral&gt;_cutoff</code></td>
+<td><code>{dorsal|ventral}_cutoff</code></td>
 <td>Dorsal/Ventral cutoff score</td>
 </tr>
 <tr>
-<td><code>brain_&lt;mean|std|SNR&gt;</code></td>
+<td><code>brain_{mean|std|SNR}</code></td>
 <td>Mean/SD/SNR of image intensity within brain mask</td>
 </tr>
 <tr>
-<td><code>brain_&lt;min|max|median&gt;</code></td>
+<td><code>brain_{min|max|median}</code></td>
 <td>Minimum/Maximum/Median image intensity within brain mask</td>
 </tr>
 <tr>
-<td><code>brain_tSNR_&lt;mean|median|std&gt;</code></td>
+<td><code>brain_tSNR_{mean|median|std}</code></td>
 <td>Mean/Median/Standard deviation of temporal SNR in brain mask</td>
 </tr>
 <tr>
-<td><code>mean_&lt;motion|trans|rot&gt;</code></td>
+<td><code>mean_{motion|trans|rot}</code></td>
 <td>Average framewise displacement/translation/rotation (mm)</td>
 </tr>
 <tr>
-<td><code>max_&lt;dx|dy|dz|rx|ry|rz&gt;</code></td>
+<td><code>max_{dx|dy|dz|rx|ry|rz}</code></td>
 <td>Maximum absolute x/y/z translation (d)/rotation (r) (mm)</td>
 </tr>
 <tr>
-<td><code>subthresh_&lt;02|03|04&gt;</code></td>
+<td><code>subthresh_{02|03|04}</code></td>
 <td>Number of seconds with framewise displacement less than 0.2/0.3/0.4 mm</td>
 </tr>
 <tr>
@@ -128,11 +128,11 @@
 <td>Full width half max spatial smoothness in x-axis (left-right)</td>
 </tr>
 <tr>
-<td><code>b0_&lt;median|std&gt;</code></td>
+<td><code>b0_{median|std}</code></td>
 <td>Median/Standard Deviation b=0 intensity in brain mask</td>
 </tr>
 <tr>
-<td><code>DTerr_&lt;mean|median|std&gt;</code></td>
+<td><code>DTerr_{mean|median|std}</code></td>
 <td>Mean/Median/STD across frames of RMS residual error relative to RMS signal in brain voxels</td>
 </tr>
 <tr>
@@ -164,15 +164,15 @@
 <td>Standard deviation of fractional anisotropy in brain mask</td>
 </tr>
 <tr>
-<td><code>MD_&lt;mean|median&gt;</code></td>
+<td><code>MD_{mean|median}</code></td>
 <td>Mean/Median MD (mean diffusivity) in brain mask</td>
 </tr>
 <tr>
-<td><code>max_nbad_frames_per_&lt;slice|frame&gt;</code></td>
+<td><code>max_nbad_frames_per_{slice|frame}</code></td>
 <td>Maximum number of outlier frames per slice/frame</td>
 </tr>
 <tr>
-<td><code>FA_&lt;mean|median&gt;</code></td>
+<td><code>FA_{mean|median}</code></td>
 <td>Mean/Median fractional anisotropy in brain mask</td>
 </tr>
 <tr>
@@ -184,7 +184,7 @@
 <td>Number of outlier frame-slices (dMRI)</td>
 </tr>
 <tr>
-<td><code>nbad_&lt;frames|slices&gt;</code></td>
+<td><code>nbad_{frames|slices}</code></td>
 <td>Number of frames/slices with outlier slices/frames (dMRI)</td>
 </tr>
 <tr>
@@ -204,35 +204,35 @@
 <td>Threshold used for censoring outlier slices (dMRI)</td>
 </tr>
 <tr>
-<td><code>nframes_b&lt;0|500|1000|2000|3000&gt;</code></td>
+<td><code>nframes_b{0|500|1000|2000|3000}</code></td>
 <td>Number of frames (b = <code>0-3000</code>)</td>
 </tr>
 <tr>
-<td><code>nbad_frame_slices_b&lt;0|500|1000|2000|3000&gt;</code></td>
+<td><code>nbad_frame_slices_b{0|500|1000|2000|3000}</code></td>
 <td>Number of outlier frame-slices for dMRI b = <code>0-3000</code> frames</td>
 </tr>
 <tr>
-<td><code>nbad_&lt;frames|slices&gt;_b&lt;0|500|1000|2000|3000&gt;</code></td>
+<td><code>nbad_{frames|slices}_b{0|500|1000|2000|3000}</code></td>
 <td>Number of frames/slices with outlier slices/frames for dMRI b=x frames</td>
 </tr>
 <tr>
-<td><code>ngood_frames_b&lt;0|500|1000|2000|3000&gt;</code></td>
+<td><code>ngood_frames_b{0|500|1000|2000|3000}</code></td>
 <td>Number of frames without outlier slices for dMRI b = <code>0-3000</code> frames</td>
 </tr>
 <tr>
-<td><code>FWHM&lt;x|y|z&gt;_b&lt;0|500|1000|2000|3000&gt;</code></td>
+<td><code>FWHM{x|y|z}_b{0|500|1000|2000|3000}</code></td>
 <td>FWHM spatial smoothness in x/y/z-axis (L-R/A-P/I-S) for b = <code>0-3000</code> frames</td>
 </tr>
 <tr>
-<td><code>tSNR_b&lt;0|500|1000|2000|3000&gt;</code></td>
+<td><code>tSNR_b{0|500|1000|2000|3000}</code></td>
 <td>Median temporal SNR in brain mask for for b = <code>0-3000</code> frames</td>
 </tr>
 <tr>
-<td><code>&lt;DT|RSI&gt;err_rel_b&lt;0|500|1000|2000|3000&gt;</code></td>
+<td><code>{DT|RSI}err_rel_b{0|500|1000|2000|3000}</code></td>
 <td>Median DTI/RSI RMS for b = <code>0-3000</code> frames across voxels relative to within-voxel RMS b=0 signal</td>
 </tr>
 <tr>
-<td><code>&lt;DT|RSI&gt;err_rel</code></td>
+<td><code>{DT|RSI}err_rel</code></td>
 <td>Median of DTI/RSI RMS for all frames across voxels relative to within-voxel RMS signal</td>
 </tr>
 <tr>
@@ -240,15 +240,15 @@
 <td>Number of DICOM files apparently missing (based on gaps in InstanceNumbers)</td>
 </tr>
 <tr>
-<td><code>Num&lt;Head|Neck|Spine&gt;CoilElem</code></td>
+<td><code>Num{Head|Neck|Spine}CoilElem</code></td>
 <td>Number of head/neck/spine coil elements</td>
 </tr>
 <tr>
-<td><code>brain_&lt;n|f&gt;vox_max</code></td>
+<td><code>brain_{n|f}vox_max</code></td>
 <td>Number/Fraction of voxels within brain mask at maximum image intensity</td>
 </tr>
 <tr>
-<td><code>nonbrain_&lt;mean|std|snr&gt;</code></td>
+<td><code>nonbrain_{mean|std|snr}</code></td>
 <td>
 <div>
 <div>Mean/Standard deviation/Signal-to-noise ratio (mean/stdev) image intensity outside brain mask</div>

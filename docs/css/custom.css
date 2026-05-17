@@ -4,27 +4,77 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
-/* 2-column list */
-.two-column-list {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 1rem; /* space between columns */
-  line-height: 1.4em;
-}
-.two-column-list .column {
-  flex: 1; /* evenly spaced columns */
-}
-.two-column-list ul {
+/* HEADERS */
+h1 {
+    font-size: 2em;
+    margin: 2 0 5px;
+    font-weight: normal;
+    border-bottom: 2px solid #6b6b6b66;
+    padding-bottom: 5px;
+  }
+h2 {
+    font-size: 1.5em;
+    margin: 40px 0 5px;
+    font-weight: normal;
+    border-bottom: 1px solid #6b6b6b66;
+    padding-bottom: 5px;
+}    
+h3 {
+  font-size: 1.3em; 
+  margin: 30px 0 0; 
+  font-weight: normal;
+  border-bottom: 1px solid #6b6b6b66;
+  padding-bottom: 0;
+  }    
+h4 {
+  font-family: Lato;
+  font-size: 1.1em; 
+  margin-bottom: 0;
+  font-weight: bold;
+  border-bottom: 0.5px solid #6b6b6b66;
+  padding-bottom: 0;
+  padding-top: 0;
+  }    
+h5 {
+  font-family: Lato;
+  font-size: 1em;
   margin: 0;
-  padding-left: 0.9em;
+  padding: 0;
+  font-weight: bold;
+  border-bottom: 0.5px solid #6b6b6b66;
+  line-height: 1.2;
+  overflow: hidden;
 }
-.two-column-list li {
-  list-style-type: disc;
-  margin-bottom: 0.4em;
+h5 + * { /* Selects the element directly following the h5 */
+  margin-top: 0; /* Remove space created by the next element */
 }
-.two-column-list a {
-  text-decoration: none;
+
+/* ICONS INCLUDED IN HEADERS */
+.header-icon {
+  margin-right: 0.5em;
+  font-size: 1em;
+  color: #199bd6;
+}
+
+/* SUBTITLES */
+.subtle-note {
+  color: #6c757d;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+/* EXPAND WIDTH OF MAIN CONTENT */
+/* Shrink the width of the right-hand blank area */
+.wy-nav-content {
+  max-width: 90% !important;
+}
+
+/* Push main content over so it doesn’t overlap */
+@media (min-width: 1000px) {
+  .wy-nav-content {
+    margin-right: 195px; 
+  }
 }
 
 /* Pill badge used for basic demo */
@@ -82,7 +132,6 @@
 }
 
 /* Inline code styling */
-/* Default inline code styling */
 code {
   background: none !important;
   border: none !important;
@@ -141,7 +190,7 @@ pre > code {
   overflow-x: auto; /* Allows horizontal scrolling */
 }
 /* Style for placeholder variables in angle brackets */
-.folder-tree .placeholder {color: #0af0e1}
+.folder-tree .var {color: #0af0e1}
 .folder-tree .hashtag {
   color: #b0d619
 }
@@ -213,4 +262,104 @@ pre > code {
 }
 .info-value {
   margin: 0;
+}
+
+/* BUTTONS */ 
+.button-link-wrapper {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.2em;
+}
+.button-link {
+  display: inline-block;
+  background-color: #00d7d75c !important;
+  color: #0d47a1;
+  font-weight: 500;
+  font-size: 0.9em;
+  padding: 5px 18px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button-link:hover {
+  background-color: #00d7d7af !important;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.button-link i {
+  margin-left: 6px;
+}
+
+/* TOOLTIPS */
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    cursor: help;
+    border-bottom: 1px dotted #555;
+    color: teal;
+    font-weight: 500;
+    line-height: inherit;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    max-width: 90vw;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 4px;
+    border-radius: 4px;
+    position: absolute;
+    transition: opacity 0.2s;
+    opacity: 0;
+    z-index: 1000;
+    white-space: normal;
+    overflow-wrap: break-word;
+    font-size: 12px;
+    line-height: 1.2;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover {
+    color: rgb(0, 207, 207);
+    border-bottom: 1px dotted #0056b3;
+}
+
+.tooltip-left .tooltiptext {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+}
+
+.tooltip-right .tooltiptext {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+
+.tooltip-bottom .tooltiptext {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+}
+
+.tooltip-top .tooltiptext {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
 }

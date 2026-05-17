@@ -1,4 +1,4 @@
-/* Anchor links for collapsible sections */
+/* Anchor links */
 .text-with-link {
   position: relative;
 }
@@ -9,129 +9,224 @@
   opacity: 0;
   transition: opacity 0.2s;
 }
-.text-with-link:hover .anchor-link {
-  opacity: 1;
-}
+.text-with-link:hover .anchor-link,
 .anchor-link:hover {
   opacity: 1;
 }
 
-/* General Banner Settings */
-/* arrow */
+/* Arrow */
 .arrow {
   font-size: 1.5em;
   line-height: 1;
   display: inline-flex;
   align-items: center;
   color: #3e3e3e;
-  margin-left: auto;          /* spacing from text */
+  margin-left: auto;
   transition: transform 0.3s ease;
-  transform-origin: center;
 }
-/* Rotate when explicitly marked or when JS adds rotate class */
 .arrow.rotate,
 .arrow.open-arrow {
   transform: rotate(90deg);
 }
-.banner {
+
+/* Shared banner base */
+.banner,
+.issues-banner,
+.alert-banner,
+.warning-banner,
+.table-banner {
   display: flex;
-  align-items: center;   /* vertically align text and arrow */
-  background-color: #eaf9f0;
-  padding: 4px 8px;           /* Reduced vertical padding */
+  align-items: center;
+  padding: 4px 8px;
   border-bottom: 1px solid #e0e0e0;
-  font-family: Lato; 
+  font-family: Lato;
   color: #474646;
   font-weight: bold;
-  gap: 3px;
-  line-height: 18px;
   font-size: 0.9em;
-  border-radius: 0; /* Make square shaped */
-  cursor: pointer;
+  line-height: 1.1;
   width: 100%;
 }
 
-/* General Collapsible Banner Settings */
-/* collapsible content */
-.collapsible-content {
+/* Banner variants */
+.banner {
+  background-color: #eaf9f0;
+  gap: 3px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.issues-banner {
+  background-color: #dde6fe;
+  gap: 8px;
+  border-radius: 6px;
+}
+
+.alert-banner {
+  background-color: #be044537;
+  gap: 8px;
+  border-radius: 6px;
+}
+
+.warning-banner {
+  background-color: #ffe10066;
+  gap: 8px;
+  border-radius: 6px;
+}
+
+.table-banner {
+  background-color: #dde6fe;
+  padding: 3px 10px;
+  gap: 8px;
+  border-radius: 6px;
+}
+
+/* Shared emoji (standard banners) */
+.issues-banner .emoji,
+.alert-banner .emoji,
+.warning-banner .emoji {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+}
+
+.issues-banner .emoji { color: #199bd6; }
+.alert-banner .emoji { color: red; }
+.warning-banner .emoji { color: #ffa500; }
+
+/* Table banner emoji (slightly different sizing) */
+.table-banner .emoji {
+  width: 1.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  color: #199bd6;
+}
+
+/* Shared text */
+.text {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align-last: left;
+  overflow-wrap: break-word;
+}
+
+/* Shared collapsible base */
+.collapsible-content,
+.alert-collapsible-content,
+.warning-collapsible-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
-  background-color: #d0dff03d;
   border: 1px solid #3333331a;
   border-top: none;
   padding: 0 20px;
   border-radius: 0 0 5px 5px;
   font-size: 0.9em;
-  margin-bottom: 10px; /* Adds spacing below the section */
+  margin-bottom: 10px;
 }
-.collapsible-content.open {
+
+.collapsible-content { background-color: #d0dff03d; }
+.alert-collapsible-content { background-color: #be04450c; }
+.warning-collapsible-content { background-color: #ffe10012; }
+
+.collapsible-content.open,
+.alert-collapsible-content.open,
+.warning-collapsible-content.open {
   max-height: none;
 }
-.collapsible-content p {
-  font-size: 1.0em;
+
+/* Shared inner content styles */
+.collapsible-content p,
+.alert-collapsible-content p,
+.warning-collapsible-content p {
+  font-size: 1em;
   line-height: 1.3;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  margin: 0.8em 0;
 }
-.collapsible-content b {
-  line-height: 1.3;
-}
-.collapsible-content ul {
+
+.collapsible-content ul,
+.alert-collapsible-content ul,
+.warning-collapsible-content ul {
   margin-top: 1rem;
   padding-left: 0.4rem;
   line-height: 1;
 }
-.collapsible-content li {
+
+.collapsible-content li,
+.alert-collapsible-content li,
+.warning-collapsible-content li {
   margin-bottom: 0.1rem;
   line-height: 1;
+}
+
+/* Minor unique rules kept */
+.collapsible-content b {
+  line-height: 1.3;
 }
 .collapsible-content ul ul {
   margin-top: 0.1rem;
-  line-height: 1;
-}
-.collapsible-content ul ul li {
-  margin-bottom: 0.1rem;
-  line-height: 1;
-}
-.collapsible-content li b {
-  line-height: 1;
 }
 
-/* text */
-.text {
-  flex: 1; /* Allows the text to take available space without overlapping */
-  font-size: 1rem; 
-  font-weight: bold; 
-  text-align-last: left;
-  margin-right: 10px; /* Adds space between text and the arrow */
-  word-wrap: break-word; /* Ensures text wraps if too long */
-}
-
-/* Issues Banner */
-
-.issues-banner {
-  display: flex;
-  align-items: center;      /* centers emoji relative to text block */
-  background-color: #dde6fe;
-  padding: 4px 8px;
-  border-bottom: 1px solid #e0e0e0;
-  font-family: Lato; 
-  color: #474646;
-  font-weight: bold;
-  gap: 8px;                 /* space between emoji and text */
-  font-size: 0.9em;
-  line-height: 1.1;
-  border-radius: 6px; /* round edges */
+/* Table collapsible (kept separate due to real differences) */
+.table-collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  overflow-x: auto;
+  transition: max-height 0.3s ease-out;
+  background-color: #d0dff02c;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 8px;
   width: 100%;
 }
-.issues-banner .emoji {
-  flex-shrink: 0;
+
+.table-collapsible-content.open {
+  max-height: none;
+}
+
+.table-collapsible-content table {
+  background-color: #ffffff;
+}
+
+.table-collapsible-content p {
+  display: inline-block !important;
+  padding: 5px 10px !important;
+  font-size: 0.9em;
+  line-height: 1.3 !important;
+  margin: 0.5em 0 0 !important;
+}
+
+.table-collapsible-content ul {
+  padding-left: 0.4rem;
+  line-height: 1;
+  font-size: 0.9em !important;
+}
+
+.table-collapsible-content li {
+  margin-bottom: 0.4rem;
+  line-height: 1.1;
+}
+
+/* Static banner */
+.static-banner {
+  background-color: #f0f4ff;
+  padding: 4px 8px;
+  font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.4em;   /* increase this for larger icon */
-  color: #199bd6;
+  gap: 2px;
+  line-height: 1.1;
+  font-size: 0.9em;
+  border-left: 5px solid #199bd6;
 }
-.issues-banner .text {
-  flex: 1;                  /* text takes remaining space */
+
+.static-banner .emoji {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #199bd6;
 }
