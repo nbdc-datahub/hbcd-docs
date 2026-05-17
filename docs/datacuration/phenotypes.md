@@ -42,9 +42,16 @@ Tabulated data are available in two formats, **plain text files** (`.tsv`/`.csv`
 
 ### Plain Text vs. Parquet Files
 
-Tabulated data are provided in multiple formats to support a range of tools and user preferences. **Plain text files** (`.tsv`/`.csv`) are widely compatible and easy to open/inspect in Excel or text editors. Metadata (including column types, variable labels, categorical coding, etc.) is stored in separate `.json` files accompanying each plain text file. [Apache Parquet](https://parquet.apache.org/), or simply **Parquet** (`.parquet`), is a modern, compressed columnar format optimized for analysis and large-scale data. Unlike plain text files, metadata is embedded directly in parquet files, ensuring correct data types and enabling efficient loading and analysis in Python or R.
+Tabulated data are provided in multiple formats to support a range of tools and user preferences. **Plain text files** (`.tsv`/`.csv`) are widely compatible and easy to open/inspect in Excel or text editors and have metadata (including column types, variable labels, categorical coding, etc.) stored in accompanying `.json` files. [Apache Parquet](https://parquet.apache.org/), or simply **Parquet** (`.parquet`), is a modern, compressed columnar format optimized for analysis and large-scale data. Unlike plain text files, metadata is embedded directly in parquet files, ensuring correct data types and enabling efficient loading and analysis in Python or R.
 
-#### Which format should I use?
+<div id="csv-vs-parquet" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+    <span class="text">Which format should I use?</span>
+    <a class="anchor-link" href="#csv-vs-parquet" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines">
   <thead>
     <tr>
@@ -86,15 +93,17 @@ Tabulated data are provided in multiple formats to support a range of tools and 
     </tr>
   </tbody>
 </table>
+</div>
+<p></p>
 
-#### Caution: Using Plain Text Files for Analysis
+#### <i style="color: #ffa500;" class="fas fa-exclamation-triangle header-icon"></i> CAUTION: Using Plain Text Files for Analysis
 
-**We recommend using Parquet files for analysis instead of plain text formats (TSV/CSV)** to avoid data import issues in Python, R, etc. caused by the separation of metadata from data. Parquet files embed metadata directly, ensuring correct data types and handling of missing values. When using TSV/CSV files, common pitfalls include:
+For large data, plain text formats (TSV/CSV) can cause import issues (in Python, R, etc.) due to the separation of metadata. **We therefore recommend using Parquet files for analysis whenever possible to avoid these issues.** Parquet files embed metadata directly, ensuring correct data types and handling of missing values. Common issues include:
 
 - Misinterpretation of data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical
 - Mishandling missing values (columns with mostly missing values may be treated as empty)
 
-**If you do choose to use TSV/CSV files for analysis:** be sure to (1) manually define column types during import using the sidecar JSON metadata files and (2) specify `n/a` as the placeholder for missing values (HBCD uses this placeholder for TSV files as recommended by the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/common-principles.html#tabular-files)). We recommend using [NBDCtools](../access/tools.md#tabulated-data) to automate these processes - see documentation for the `read_dsv_formatted()` function [here](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html).
+**If you do use CSV/TSV files for analysis:** be sure to (1) manually define column types during import using the sidecar JSON metadata files and (2) replace blank values with `n/a` (missing values are blank in HBCD data following [BIDS specification](https://bids-specification.readthedocs.io/en/stable/common-principles.html#tabular-files)). We recommend using [NBDCtools](../access/tools.md#tabulated-data) to automate these processes (e.g. [`read_dsv_formatted()`](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html)).
 
 #### Working with Parquet in Python and R
 

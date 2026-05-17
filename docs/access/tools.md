@@ -14,48 +14,21 @@ HBCD study data can be downloaded via the [NBDC Data Access Platform](https://nb
 ## Tabulated Data
 
 ### <i class="fas fa-database header-icon"></i> NBDC Sandbox   
-The NBDC Sandbox provides a secure, cloud-based analysis environment designed to support data analysis workflows, particularly for neuroimaging and large-scale tabular datasets, without having to download and manage data locally.   
-[NBDC Sandbox →](https://nbdc-safe.lassoinformatics.com/pun/sys/dashboard)      
-[NBDC Sandbox Tutorial Series →](https://hdcc-sandbox-rtd.readthedocs.io/latest/)
+The [NBDC Sandbox](https://nbdc-safe.lassoinformatics.com/pun/sys/dashboard) provides a secure, cloud-based analysis environment designed to support data analysis workflows, particularly for neuroimaging and large-scale tabular datasets, without having to download and manage data locally. See the [NBDC Sandbox Tutorial Series](https://hdcc-sandbox-rtd.readthedocs.io/latest/) to get started.
 
 ### <i class="fas fa-database header-icon"></i> NBDCtools
-NBDCtools is an R package for creating custom, analysis-ready datasets by simply specifying the variable and/or table names you need. The package automatically retrieves the specified columns from locally downloaded HBCD tabulated data and assembles them into a single in-memory data frame, minimizing storage and memory use. This provides a flexible alternative to building datasets through the Lasso or DEAP platforms, eliminating the need to manually parse files or resolve formatting issues. In addition to dataset assembly, NBDCtools includes functions for working with [shadow matrices](../datacuration/phenotypes.md#shadow-matrices-for-missing-data) as well as applying transformations and filters.   
-[Download page for NBDCtools &nbsp;<i class="fa fa-download"></i>](https://software.nbdc-datahub.org/NBDCtools/index.html) 
+NBDCtools, available in both [R](https://software.nbdc-datahub.org/NBDCtools/) and [Python](https://software.nbdc-datahub.org/nbdctools-py/), is a package for creating custom, analysis-ready datasets by simply specifying the variable or table names you need. NBDCtools automatically retrieves the specified columns from locally downloaded HBCD tabulated data and assembles them into a single in-memory data frame, minimizing storage and memory use. This provides a flexible alternative to building datasets through the NBDC Data Access Platform or DEAP, eliminating the need to manually parse files or resolve formatting issues. In addition to dataset assembly, NBDCtools includes functions for working with shadow matrices as well as applying transformations and filters.   
 
 ## Brain Imaging Data
 
-#### <i class="fa-solid fa-eye header-icon"></i> [ITK-Snap](http://www.itksnap.org/pmwiki/pmwiki.php)
-*Good for: Interactive visualization of volumetric NIfTI files (T1w, T2w, DTI, etc.)*   
-A free, open-source software application used to visualize and segment 3D and 4D medical images. See [Andy's Brain Blog](https://andysbrainbook.readthedocs.io/en/latest/ITK-Snap/ITK-Snap_Overview.html#itk-snap-overview) for a primer.      
-[Download page for ITK-Snap &nbsp;<i class="fa fa-download"></i>](http://www.itksnap.org/pmwiki/pmwiki.php?n=Downloads.SNAP4)
-
-#### <i class="fa-solid fa-eye header-icon"></i> [FSLeyes](https://fsl.fmrib.ox.ac.uk/fsl/docs/#/utilities/fsleyes) 
-*Good for: Interactive visualization of volumetric NIfTI files (T1w, T2w, DTI, etc.)*   
-A free, open-source image viewer for medical images, particularly MRI data. Part of the FSL software suite.    
-[Download page for FSLeyes &nbsp;<i class="fa fa-download"></i>](https://fsl.fmrib.ox.ac.uk/fsl/docs/#/utilities/fsleyes)
+#### <i class="fa-solid fa-eye header-icon"></i> ITK-Snap & FSLeyes
+For interactive visualization of MRI images, we recommend using either [ITK-Snap](http://www.itksnap.org/pmwiki/pmwiki.php) (see [Andy's Brain Blog](https://andysbrainbook.readthedocs.io/en/latest/ITK-Snap/ITK-Snap_Overview.html#itk-snap-overview) for a primer) or [FSLeyes](https://fsl.fmrib.ox.ac.uk/fsl/docs/#/utilities/fsleyes), part of the FSL software suite. Both are free, open-source image viewers for 3D and 4D medical images.
 
 #### <i class="fa-solid fa-eye header-icon"></i><i class="fas fa-cogs header-icon"></i> Connectome Workbench
-*Good for: Interactive visualization & surface data processing/analysis*    
-**[Connectome Workbench](https://www.humanconnectome.org/software/connectome-workbench)** is a free, open-source software package particularly useful for visualizing connectivity data, surface-based analyses, and more. It is recommended for viewing and processing surface data (`.gii` files), volume data (`.nii/.nii.gz` files), and CIFTI data (dlabel, dscalar, dtseries, pconn, etc. files). Useful Workbench tools include:   
+**[Connectome Workbench](https://www.humanconnectome.org/software/connectome-workbench)** is a free, open-source software package that includes critically useful tools such as:
 
-- **wb_view**: For visualizing surface-based data, connectivity, creating overlays of structural/functional data, etc.
+- **wb_view**: For interactive visualization of surface-based and connectivity data, creating overlays of structural/functional data, etc.
 - **wb_command**: A set of command-line tools for processing and analysis of neuroimaging data (see [usage](https://www.humanconnectome.org/software/workbench-command))
-
-[Download page for Connectome Workbench <i class="fa fa-download"></i>](https://humanconnectome.org/software/get-connectome-workbench)
-
-<!-- - check out this [blog post](https://mvpa.blogspot.com/2014/03/nifti-cifti-gifti-in-hcp-and-workbench.html) for a helpful primer on the difference between these various file formats.  -->
-
-## Programming Languages
-
-<i class="fas fa-laptop-code header-icon"></i> **MATLAB**   
-  [MATLAB](https://www.mathworks.com/products/matlab.html) has a variety of built-in functions and toolboxes for neuroimaging data. Note that it is proprietary, but may be provided at no-cost through your institution or department. See Andy's Brain Blog [Matlab for Neuroimagers](https://andysbrainbook.readthedocs.io/en/latest/Matlab/Matlab_Overview.html#matlab-for-neuroimagers) for a primer.
-
-<i class="fas fa-laptop-code header-icon"></i> **Python**   
-  Python is also commonly used in the field of neuroimaging: useful Python modules for neuroimaging include NiBabel, Nilearn, Nipype, PyNIfTI, PySurfer, PyTorch, and others. See Andy's Brain Blog [Python for Neuroimagers](https://andysbrainbook.readthedocs.io/en/latest/PythonForNeuroimagers/PythonForNeuroimagers_Overview.html) for a primer. 
-
-<i class="fas fa-laptop-code header-icon"></i> **R/RStudio**    
-  Especially strong for statistical plots, often used in conjunction with analysis results.       
-  [Download page for R/RStudio <i class="fa fa-download"></i>](https://posit.co/download/rstudio-desktop/)
 
 ## NMIND
 
@@ -104,3 +77,16 @@ ReproSchema maintains transparent, detailed version histories so researchers can
 <td>Same as Release 2.0</td> 
 <td>2.0 → 3.0: Adding naps changes the construct, affecting cross-release comparability</td>
 </tbody> </table> 
+
+
+<!-- ## Programming Languages
+
+<i class="fas fa-laptop-code header-icon"></i> **MATLAB**   
+  [MATLAB](https://www.mathworks.com/products/matlab.html) has a variety of built-in functions and toolboxes for neuroimaging data. Note that it is proprietary, but may be provided at no-cost through your institution or department. See Andy's Brain Blog [Matlab for Neuroimagers](https://andysbrainbook.readthedocs.io/en/latest/Matlab/Matlab_Overview.html#matlab-for-neuroimagers) for a primer.
+
+<i class="fas fa-laptop-code header-icon"></i> **Python**   
+  Python is also commonly used in the field of neuroimaging: useful Python modules for neuroimaging include NiBabel, Nilearn, Nipype, PyNIfTI, PySurfer, PyTorch, and others. See Andy's Brain Blog [Python for Neuroimagers](https://andysbrainbook.readthedocs.io/en/latest/PythonForNeuroimagers/PythonForNeuroimagers_Overview.html) for a primer. 
+
+<i class="fas fa-laptop-code header-icon"></i> **R/RStudio**    
+  Especially strong for statistical plots, often used in conjunction with analysis results.       
+  [Download page for R/RStudio <i class="fa fa-download"></i>](https://posit.co/download/rstudio-desktop/) -->
