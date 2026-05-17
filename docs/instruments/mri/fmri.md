@@ -173,7 +173,6 @@ hbcd/
 </pre>
 <p style="font-size: 1.1em; font-weight: 600;">Anatomical Folder Details</p>
 <pre class="folder-tree" style="font-size: 11px;">
-<span class="hashtag"># Prefix (anat/, fmap/ files): sub-[ID]_ses-[V0X]_hash-{HASH}_run-[X]</span>
 ...
 └── ses-[V0X]/
     └── anat/
@@ -200,6 +199,7 @@ hbcd/
         └── *_hemi-<span class="var">{L|R}</span>_space-<span class="var">{dhcpAsym|fsaverage}</span>_reg_sphere.surf.gii   
 ...
 <span class="hashtag"># Label Values Legend</span>
+File Prefixes (anat/, fmap/ files): sub-[ID]_ses-[V0X]_hash-{HASH}_run-[X]
 <span class="var">METRIC</span>: curv , sulc , thickness 
 <span class="var">SPACE</span>: fsnative , MNI152NLin6Asym , MNIInfant+1 , T1w
 <span class="var">STD_SPACE</span>: MNI152NLin6Asym_res-2 , T2w
@@ -212,7 +212,6 @@ hbcd/
     ├── fmap/
     │   └── *_fmapid-auto[X]_desc-<span class="var">{coeff|epi|preproc}</span>_fieldmap.nii.gz
     │
-    <span class="hashtag"># Prefix for func/ files: sub-[ID]_ses-[V0X]_hash-{HASH}_task-rest_dir-PA_run-[X]</span>
     └── func/
         <span class="hashtag"># BOLD & masks</span>
         ├── *_desc-<span class="var">{preproc_bold|brain_mask}</span>.nii.gz
@@ -233,6 +232,7 @@ hbcd/
         └── *_desc-confounds_timeseries.tsv 
 
 <span class="hashtag"># Label Values Legend</span>
+File Prefixes (func/): sub-[ID]_ses-[V0X]_hash-{HASH}_task-rest_dir-PA_run-[X]
 <span class="var">STD_SPACE</span>: MNI152NLin6Asym_res-2 , T2w
 </pre>
 </div>
