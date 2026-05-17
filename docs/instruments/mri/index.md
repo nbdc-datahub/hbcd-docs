@@ -68,9 +68,9 @@ hbcd/
 │   │   ├── img_xcpd_*            <span class="hashtag"># XCP-D outputs (tabulated)</span>
 │   │   └── img_osprey_*          <span class="hashtag"># OSPREY (MRS) outputs (tabulated)</span>
 │   │
-│   └── sub-<span class="label">{ID}</span>/  
+│   └── sub-[ID]/  
 │       <span class="hashtag"># Raw BIDS imaging data (file-based)</span>
-│       └── ses-<span class="label">{V0X}</span>/
+│       └── ses-[V0X]/
 │           ├── anat/             <span class="hashtag"># Structural/qMRI + MRS localizers</span>
 │           ├── dwi/              <span class="hashtag"># Diffusion MRI</span>
 │           ├── fmap/             <span class="hashtag"># fMRI + qMRI fieldmaps</span>

@@ -528,7 +528,7 @@ PATCH RELEASE
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-prescription-bottle header-icon"></i> <a href="pregexp/su/assist" target="_blank">ASSIST V1/2/3/4</a></td>
   <td>V1-V4</td>
   <td>Substance Use Pre-, During, and Post-Pregnancy</td>
-  <td><code>pex_bm_assistv<span class="blue-text">&lt;1|2|3|4&gt;</span></code></td>
+  <td><code>pex_bm_assistv<span class="blue-text">{1|2|3|4}</span></code></td>
 </tr>
 <tr class="section-su">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-prescription-bottle header-icon"></i> <a href="pregexp/su/su-patterns" target="_blank">Substance Use Patterns</a></td>
@@ -728,7 +728,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   <td><a href="eeg/tasks/#auditory-mismatch-negativity-task" target="_blank">Auditory Mismatch Negativity</a></td>
   <td style="text-align: center;"><code>MMN</code></td>
   <td rowspan="4">
-        <b>Raw</b>: <a href="eeg/#rawbids" target="_blank">Raw BIDS <i>(rawdata/sub-{ID}/ses-{V0X}/eeg/)</i></a><br><br>
+        <b>Raw</b>: <a href="eeg/#rawbids" target="_blank">Raw BIDS <i>(rawdata/sub-[ID]/ses-{V0X}/eeg/)</i></a><br><br>
         <b>Processed</b>: <a href="eeg/#rawbids" target="_blank">HBCD-MADE pipeline derivatives <i>(derivatives/made/)</i></a>
     </td>
 </tr>
@@ -888,15 +888,15 @@ LUCI NOTE: PATCH RELEASE
   <td>XCP-D</td>
   <td><i class="fa-solid fa-diagram-project header-icon"></i></td>
   <td>
-    <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-curv_morph</code><br>
-    <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-sulc_morph</code><br>
-    <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-mean_desc-thickness_morph</code><br>
-    <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-alff_bold</code><br>
-    <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-coverage_bold</code><br>
-    <code>img_xcpd_hash-<span class="blue-text">&lt;HASH&gt;</span>_space-fsLR_seg-<span class="blue-text">&lt;PARC&gt;</span>_stat-reho_bold</code>
+    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-mean_desc-curv_morph</code><br>
+    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-mean_desc-sulc_morph</code><br>
+    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-mean_desc-thickness_morph</code><br>
+    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-alff_bold</code><br>
+    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-coverage_bold</code><br>
+    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-reho_bold</code>
   <br><br>
-  <code><span class="blue-text">&lt;HASH&gt;</span></code>  values: <code>0f306a2f+0ef9c88a</code>; <code>2afa9081+0ef9c88a</code><br>
-  <code><span class="blue-text">&lt;PARC&gt;</span></code>  values: <code>Glasser</code>, <code>Gordon</code>, etc - <a href="mri/fmri/#parc" target="_blank">see full atlas list →</a></code><br><br>
+  <code><span class="blue-text">{HASH}</span></code>  values: <code>0f306a2f+0ef9c88a</code>; <code>2afa9081+0ef9c88a</code><br>
+  <code><span class="blue-text">{PARC}</span></code>  values: <code>Glasser</code>, <code>Gordon</code>, etc - <a href="mri/fmri/#parc" target="_blank">see full atlas list →</a></code><br><br>
   <a href="mri/tables/xcpd.html" target="_blank">See full file list →</a></td>
 </tr>
 <tr>
@@ -909,13 +909,13 @@ LUCI NOTE: PATCH RELEASE
 <td><i class="fa-solid fa-diagram-project header-icon"></i></td>
 <td>
 <code><span class="blue-text"># HERCULES diff1, diff2, and sum files</span></code><br>
-    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_CSFWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_TissCorrWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_rawWaterScaled_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_amplMets_Voxel_1_Basis_1</code><br>
-    <code>img_osprey_HERCULES_diff<span class="blue-text">&lt;1|2|sum&gt;</span>_tCr_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">{1|2|sum}</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">{1|2|sum}</span>_AlphaCorrWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">{1|2|sum}</span>_CSFWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">{1|2|sum}</span>_TissCorrWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">{1|2|sum}</span>_rawWaterScaled_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">{1|2|sum}</span>_amplMets_Voxel_1_Basis_1</code><br>
+    <code>img_osprey_HERCULES_diff<span class="blue-text">{1|2|sum}</span>_tCr_Voxel_1_Basis_1</code><br>
     <code>img_osprey_HERCULES_qm_processed_spectra</code><br><br>
     <code><span class="blue-text"># Unedited files</span></code><br>
     <code>img_osprey_unedited_A_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
@@ -944,17 +944,14 @@ LUCI NOTE: PATCH RELEASE
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-up-right-from-square"></i> <b>Quick Links</b></p>
-<ul>
-<li><a href="sensors/wearsensors/" target="_blank">Infant Leg Motion - Accelerometry</a></li>
-</ul>
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fas fa-folder-open"></i> <b>File-Based Data</b></p>
+<p><i class="fa-solid fa-folder-open header-icon"></i> File-based data</p>
 <ul>
 <li>Raw BIDS stored under subject- and session-specific <a href="sensors/wearsensors/#rawbids" target="_blank"><code>motion/</code></a> folders</li>
 <li>Processed derivatives output by the <a href="sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a> pipeline</li>
 </ul>
-<p style="font-size: 1.0em;"><i style="color: teal;" class="fa-solid fa-table"></i> &nbsp; <b>Tabulated Data</b></p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+
+<p><i class="fa-solid fa-table header-icon"></i> Tabulated Data</p>
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th>Instrument</th>
@@ -966,7 +963,7 @@ LUCI NOTE: PATCH RELEASE
 <tr>
 <td><a href="sensors/questionnaire" target="_blank">Infant Sensor Questionnaire 1/2/3</a></td>
 <td>Motor Development, Regulation (Sleep/Wake) <i>(Day 1/2/3)</i></td>
-<td><code>nt_ch_sens__qtn_<span class="blue-text">&lt;1|2|3&gt;</span></code></td>
+<td><code>nt_ch_sens__qtn_<span class="blue-text">{1|2|3}</span></code></td>
 </tr>
 <tr>
 <td><a href="sensors/wearsensors" target="_blank">Biosensor Receipt</a></td>

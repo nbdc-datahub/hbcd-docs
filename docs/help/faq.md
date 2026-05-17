@@ -218,7 +218,7 @@ REVIEW & REVISE THIS FAQ
 <p>For structural and functional processing specifically, manual visual QC is performed on the visual reports using <a href="../../instruments/mri/brainswipes/">BrainSwipes</a>, the results of which are provided as tabulated release data.</li>
 <b>Raw Imaging Data:</b> 
 <ul>
-<li>QC metrics for raw data are available in the <code>sub-{ID}_ses-{V0X}_scans.tsv</code> file within each subject session folder under <code>rawdata/</code>.</li>
+<li>QC metrics for raw data are available in the <code>sub-[ID]_ses-{V0X}_scans.tsv</code> file within each subject session folder under <code>rawdata/</code>.</li>
 <li>Additional exclusion criteria include <a href="../../instruments/mri/qc/#data-release-eligibility-criteria">acquisition parameter checks</a> and <a href="../../instruments/processing/#file-selection-for-processing">processing pipeline requirements</a>.</li>
 <li>Structural and functional MRI data undergo MRIQC processing to generate image quality metrics. See the <a href="../../instruments/mri/smri/#mriqc">sMRI</a> and <a href="../../instruments/mri/fmri/#mriqc">sMRI</a> MRIQC derivatives</a> for more information. Researchers may use these outputs for further curation if desired.</li>
 </ul>
@@ -256,7 +256,7 @@ REVIEW & REVISE THIS FAQ
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>MRI scanner information, including <i>scanner manufacturer, model, software, and serial_number</i>, can be found in the raw BIDS data, including the session-level <a href="../../datacuration/file-based-data/#participant-session-scan-level-data">scans TSV files</a> (<code>sub-{ID}_ses-{V0X}_scans.tsv</code>) and imaging file JSON metadata. Scanner information may be additionally provided as tabulated data in a future release.</p>
+<p>MRI scanner information, including <i>scanner manufacturer, model, software, and serial_number</i>, can be found in the raw BIDS data, including the session-level <a href="../../datacuration/file-based-data/#participant-session-scan-level-data">scans TSV files</a> (<code>sub-[ID]_ses-{V0X}_scans.tsv</code>) and imaging file JSON metadata. Scanner information may be additionally provided as tabulated data in a future release.</p>
 </div>
 
 <div id="faq-dataproc" class="table-banner" onclick="toggleCollapse(this)">
@@ -341,7 +341,7 @@ See <a href="../../instruments/mri/fmri/#m-crib-s-freesurfer">M-CRIB-S & FreeSur
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Quality control (QC) metrics derived from automated and manual raw data QC procedures (described in the section <a href="../../instruments/mri/qc/#raw-mr-data-qc">Raw MR Data QC</a>) are provided for each scan in session-level <code>sub-{ID}_ses-{V0X}_scans.tsv</code> files. A sampling approach was used to select a subset of data for manual review based on the automated QC metrics. Therefore, while <b>automated</b> QC metrics are available for all scans, not all will include <b>manual</b> QC metrics. Also note that although the <code>QC</code> field is the overall manual QC score of 1 (pass) or 0 (fail), this field will automatically have a score of 1 if only automated QC was performed.</p>
+<p>Quality control (QC) metrics derived from automated and manual raw data QC procedures (described in the section <a href="../../instruments/mri/qc/#raw-mr-data-qc">Raw MR Data QC</a>) are provided for each scan in session-level <code>sub-[ID]_ses-{V0X}_scans.tsv</code> files. A sampling approach was used to select a subset of data for manual review based on the automated QC metrics. Therefore, while <b>automated</b> QC metrics are available for all scans, not all will include <b>manual</b> QC metrics. Also note that although the <code>QC</code> field is the overall manual QC score of 1 (pass) or 0 (fail), this field will automatically have a score of 1 if only automated QC was performed.</p>
 </div>
 
 <div id="faq-fov" class="table-banner" onclick="toggleCollapse(this)">

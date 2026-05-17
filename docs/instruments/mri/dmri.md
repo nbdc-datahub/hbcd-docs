@@ -13,7 +13,7 @@ Full protocols, sequence installation, and operation instructions are available 
 
 Diffusion MRI data are preprocessed using **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs motion and distortion correction, MP-PCA denoising, co-registration to T1w images, spatial normalization (ANTs), and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5), [Cieslak et al. 2025](https://doi.org/10.1101/2025.11.10.687672)). Preprocessed outputs are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which runs curated reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. 
 
-<table class="table-no-vertical-lines"> 
+<table class="compact-table-no-vertical-lines"> 
 <thead> <th>Pipeline</th> <th>Folder</th> <th>Description</th> </thead> 
 <tbody> 
 <tr> <td><b>QSIPrep</b></td> <td><code>qsiprep/</code></td> <td>Preprocessed diffusion data, transforms, QC metrics & reports</td> </tr> 
@@ -40,37 +40,37 @@ Diffusion MRI data are preprocessed using **[QSIPrep](https://qsiprep.readthedoc
 hbcd/
 └── derivatives/
     └── qsiprep/
-        └── sub-{ID}/
+        └── sub-[ID]/
             ├── log/
             └── ses-{V0X}/
                 ├── anat/
                 │   <span class="hashtag"># Transforms</span>
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>from-<span class="var">&lt;ACPC_to-anat|anat_to-ACPC&gt;</span>_mode-image_xfm.mat
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>from-<span class="var">&lt;ACPC_to-MNIInfant+1|MNIInfant+1_to-ACPC&gt;</span>_mode-image_xfm.h5
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>from-orig_to-anat_mode-image_xfm.txt
+                │   ├── *_from-<span class="var">{ACPC_to-anat|anat_to-ACPC}</span>_mode-image_xfm.mat
+                │   ├── *_from-<span class="var">{ACPC_to-MNIInfant+1|MNIInfant+1_to-ACPC}</span>_mode-image_xfm.h5
+                │   ├── *_from-orig_to-anat_mode-image_xfm.txt
                 │
                 │   <span class="hashtag"># Structural outputs (ACPC space)</span>
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-<span class="var">&lt;aseg_dseg|brain_mask&gt;</span>.nii.gz
-                │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_dseg.nii.gz
+                │   ├── *_space-ACPC_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
+                │   ├── *_space-ACPC_desc-<span class="var">{aseg_dseg|brain_mask}</span>.nii.gz
+                │   └── *_space-ACPC_dseg.nii.gz
                 │
                 ├── dwi/
                 │   <span class="hashtag"># QC & confounds</span>
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-confounds_timeseries.tsv
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>desc-<span class="var">&lt;image|pepolar&gt;</span>_qc.tsv
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-slice_qc.json
+                │   ├── *_desc-confounds_timeseries.tsv
+                │   ├── *_desc-<span class="var">{image|pepolar}</span>_qc.tsv
+                │   ├── *_space-ACPC_desc-slice_qc.json
                 │
                 │   <span class="hashtag"># Preprocessed data</span>
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-preproc_dwi.nii.gz <span class="hashtag">(+JSON)</span>
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-preproc_dwi.<span class="var">&lt;bval|bvec|b|b_table.txt&gt;</span>
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_dwiref.nii.gz
+                │   ├── *_space-ACPC_desc-preproc_dwi.nii.gz <span class="hashtag">(+JSON)</span>
+                │   ├── *_space-ACPC_desc-preproc_dwi.<span class="var">{bval|bvec|b|b_table.txt}</span>
+                │   ├── *_space-ACPC_dwiref.nii.gz
                 │
                 │   <span class="hashtag"># Masks & maps</span>
-                │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_desc-brain_mask.nii.gz
-                │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-eddy_stat-cnr_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+                │   ├── *_space-ACPC_desc-brain_mask.nii.gz
+                │   └── *_space-ACPC_model-eddy_stat-cnr_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
                 │
                 ├── figures/
-                └── <span class="muted">sub-{ID}_ses-{V0X}</span>.html
+                └── sub-[ID]_ses-[V0X].html
 </pre>
 </div>
 
@@ -86,64 +86,65 @@ The <code>qsirecon/</code> directory stores workflow metadata and logs. <i><b>Be
 hbcd/
 └── derivatives/
     ├── qsirecon/
-    │   └── <span class="muted">sub-{ID}/</span>
+    │   └── sub-[ID]/
     │       └── log/*
     
   <span class="hashtag">DSI Studio</span>
     ├── qsirecon-DSIStudio/
-    │   └── <span class="muted">sub-{ID}/</span>
-    │       └── <span class="muted">ses-{V0X}/</span>
+    │   └── sub-[ID]/
+    │       └── ses-[V0X]/
     │           ├── dwi/
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_<span class="var">&lt;scalar|tdi&gt;</span>stats.tsv
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_bundle-<span class="var">&lt;BUNDLE&gt;</span>_streamlines.tck.gz
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_bundlestats.csv
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_dwimap.fib.gz
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_dwimap.fib.gz.icbm152_adult.map.gz
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_model-gqi_param-<span class="var">&lt;gfa|iso|qa&gt;</span>_dwimap.nii.gz
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-rdi_param-<span class="var">&lt;rd1|rd2&gt;</span>_dwimap.nii.gz
-    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="var">&lt;DTI-PARAM&gt;</span>_dwimap.nii.gz
+    │           │   ├── *_space-ACPC_bundles-DSIStudio_<span class="var">{scalar|tdi}</span>stats.tsv
+    │           │   ├── *_space-ACPC_model-gqi_bundle-<span class="var">{BUNDLE}</span>_streamlines.tck.gz
+    │           │   ├── *_space-ACPC_model-gqi_bundlestats.csv
+    │           │   ├── *_space-ACPC_model-gqi_dwimap.fib.gz
+    │           │   ├── *_space-ACPC_model-gqi_dwimap.fib.gz.icbm152_adult.map.gz
+    │           │   ├── *_space-ACPC_model-gqi_param-<span class="var">{gfa|iso|qa}</span>_dwimap.nii.gz
+    │           │   ├── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-rdi_param-<span class="var">{rd1|rd2}</span>_dwimap.nii.gz
+    │           │   └── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-tensor_param-<span class="var">{DTI-PARAM}</span>_dwimap.nii.gz
     │           ├── figures/*
-    │           └── <span class="muted">sub-{ID}_ses-{V0X}</span>.html
+    │           └── sub-[ID]_ses-[V0X].html
 
   <span class="hashtag">DIPY-DKI</span>
     ├── qsirecon-DIPYDKI/
-    │   └── <span class="muted">sub-{ID}/</span>
-    │       └── <span class="muted">ses-{V0X}/</span>
+    │   └── sub-[ID]/
+    │       └── ses-[V0X]/
     │           ├── dwi/
     │           │   # DIPY DKI
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_scalarstats.tsv
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-dki_param-<span class="var">&lt;DKI-PARAM&gt;</span>_dwimap.nii.gz
-    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-fa_dwimap.nii.gz
+    │           │   ├── *_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+    │           │   ├── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-dki_param-<span class="var">{DKI-PARAM}</span>_dwimap.nii.gz
+    │           │   └── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-tensor_param-fa_dwimap.nii.gz
     │           ├── figures/*
-    │           └── <span class="muted">sub-{ID}_ses-{V0X}</span>.html
+    │           └── sub-[ID]_ses-[V0X].html
     
   <span class="hashtag">TORTOISE MAP-MRI</span>
     ├── qsirecon-TORTOISE_model-MAPMRI/
-    │   └── <span class="muted">sub-{ID}/</span>
-    │       └── <span class="muted">ses-{V0X}/</span>
+    │   └── sub-[ID]/
+    │       └── ses-[V0X]/
     │           ├── dwi/
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_scalarstats.tsv
-    │           │   ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-mapmri_param-<span class="var">&lt;MAPMRI&gt;</span>_dwimap.nii.gz
-    │           │   └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;ACPC|MNIInfant+1&gt;</span>_model-tensor_param-<span class="var">&lt;TENSOR&gt;</span>_dwimap.nii.gz
+    │           │   ├── *_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+    │           │   ├── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-mapmri_param-<span class="var">{MAPMRI}</span>_dwimap.nii.gz
+    │           │   └── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-tensor_param-<span class="var">{TENSOR}</span>_dwimap.nii.gz
     │           ├── figures/*
-    │           └── <span class="muted">sub-{ID}_ses-{V0X}</span>.html
+    │           └── sub-[ID]_ses-[V0X].html
     
   <span class="hashtag">TORTOISE Tensor</span>
     └── qsirecon-TORTOISE_model-tensor/
-        └── <span class="muted">sub-{ID}/</span>
-            └── <span class="muted">ses-{V0X}/</span>
+        └── sub-[ID]/
+            └── ses-[V0X]/
                 └── dwi/
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-ACPC_bundles-DSIStudio_scalarstats.tsv
-                    └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-MNIInfant+1_model-tensor_param-<span class="var">&lt;TENSOR&gt;</span>_dwimap.nii.gz
+                    ├── *_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+                    └── *_space-MNIInfant+1_model-tensor_param-<span class="var">{TENSOR}</span>_dwimap.nii.gz
 
 <span class="hashtag"># Label Values Legend</span>
+Prefix: sub-[ID]_ses-[V0X]
 <span class="var">DTI-PARAM</span>: ad, fa, ha, md, rd, txx, txy, txz, tyy, tyz, tzz
 <span class="var">DKI-PARAM</span>: ad, ak, kfa, md, mk, mkt, rd, rk
 <span class="var">MAPMRI</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
 <span class="var">TENSOR</span>: ad, am, fa, li, rd
 
-<span class="hashtag"># DSI Studio &lt;BUNDLE&gt; groups:</span> → See <a href="#bundle">full DSIStudio bundle label list</a>
-Association<span class="var">&lt;LABEL&gt;</span>, Cerebellum<span class="var">&lt;LABEL&gt;</span>, Commissure<span class="var">&lt;LABEL&gt;</span>, ProjectionBasalGanglia<span class="var">&lt;LABEL&gt;</span>, ProjectionBrainstem<span class="var">&lt;LABEL&gt;</span>
+<span class="hashtag"># DSI Studio {BUNDLE} groups:</span> → See <a href="#bundle">full DSIStudio bundle label list</a>
+Association<span class="var">{LABEL}</span>, Cerebellum<span class="var">{LABEL}</span>, Commissure<span class="var">{LABEL}</span>, ProjectionBasalGanglia<span class="var">{LABEL}</span>, ProjectionBrainstem<span class="var">{LABEL}</span>
 </pre>  
 </div>
 
@@ -159,27 +160,27 @@ Association<span class="var">&lt;LABEL&gt;</span>, Cerebellum<span class="var">&
 </div>
 <div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines">
-<tr><thead><th>&lt;BUNDLE&gt; Values</th><th>Nested Bundle &lt;LABEL&gt; Values</th></thead><tr>
+<tr><thead><th>{BUNDLE} Values</th><th>Nested Bundle {LABEL} Values</th></thead><tr>
 <tbody>
 <tr>
-<td><strong style="color: #00a298ff;">Association&lt;LABEL&gt;</strong></td>
+<td><strong style="color: #00a298ff;">Association{LABEL}</strong></td>
 <td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>Cingulum{L/R}</span><span>ExtremeCapsule{L/R}</span><span>FrontalAslantTract{L/R}</span><span>ParietalAslantTract{L/R}</span><span>HippocampusAlveus{L/R}</span><span>ArcuateFasciculus{L/R}</span><span>AssociationUncinateFasciculus{L/R}</span><span>InferiorFrontoOccipitalFasciculus{L/R}</span><span>InferiorLongitudinalFasciculus{L/R}</span><span>MiddleLongitudinalFasciculus{L/R}</span><span>SuperiorLongitudinalFasciculus{L/R}</span><span>VerticalOccipitalFasciculus{L/R}</span></div></td>
 </tr>
 <tr>
-<td style="color: #00a298ff;"><strong>Cerebellum&lt;LABEL&gt;</strong></td>
+<td style="color: #00a298ff;"><strong>Cerebellum{LABEL}</strong></td>
 <td><div style="display: flex; flex-wrap: wrap; gap: 8px;">
 <span>Cerebellum{L/R}</span><span>InferiorCerebellarPeduncle{L/R}</span><span>MiddleCerebellarPeduncle</span><span>SuperiorCerebellarPeduncle</span><span>Vermis</span></div></td>
 </tr>
 <tr>
-<td><strong style="color: #00a298ff;">Commissure&lt;LABEL&gt;</strong></td>
+<td><strong style="color: #00a298ff;">Commissure{LABEL}</strong></td>
 <td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>AnteriorCommissure</span><span>CorpusCallosum</span></div></td>
 </tr>
 <tr>
-<td><strong style="color: #00a298ff;">ProjectionBasalGanglia&lt;LABEL&gt;</strong></td>
+<td><strong style="color: #00a298ff;">ProjectionBasalGanglia{LABEL}</strong></td>
 <td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>AcousticRadiation{L/R}</span><span>OpticRadiation{L/R}</span><span>ThalamicRadiation{L/R}</span><span>AnsaLenticularis{L/R}</span><span>FasciculusLenticularis{L/R}</span><span>AnsaSubthalamic{L/R}</span><span>FasciculusSubthalamicus{L/R}</span><span>CorticostriatalTract{L/R}</span><span>Fornix{L/R}</span></div></td>
 </tr>
 <tr>
-<td><strong style="color: #00a298ff;">ProjectionBrainstem&lt;LABEL&gt;</strong></td>
+<td><strong style="color: #00a298ff;">ProjectionBrainstem{LABEL}</strong></td>
 <td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>CorticobulbarTract{L/R}</span><span>CorticopontineTract{L/R}</span><span>CorticospinalTract{L/R}</span><span>ReticularTract{L/R}</span><span>DentatorubrothalamicTract{lr/rl}</span><span>NonDecussatingDentatorubrothalamicTract{L/R}</span><span>MedialForebrainBundle{L/R}</span><span>MedialLemniscus{L/R}</span></div></td>
 </tr>
 </tbody>
@@ -315,7 +316,7 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 
 ## Quality Control Summary Statistics
 
-Automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-{ID}_ses-{V0X}_space-ACPC_desc-image_qc.tsv</code> within the QSIPrep derivatives (see <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details). Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. NDC can also be used as a covariate in analyses to account for QC variation. 
+Automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-[ID]_ses-{V0X}_space-ACPC_desc-image_qc.tsv</code> within the QSIPrep derivatives (see <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details). Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. NDC can also be used as a covariate in analyses to account for QC variation. 
 <p><strong>Left</strong>: NDC calculated pre- and post-processing for each vendor using combined AP/PA scans<br>  
 <strong>Right</strong>: Shell-wise CNR calculated by Eddy. We do not provide exclusion threshold recommendations because all data passed preliminary QC. However, NDC and CNR are useful covariates when analyzing other derivatives.</p>
 <img src="../images/ndc_cnr_comparison.svg" width="95%" height="auto" class="center">

@@ -179,4 +179,4 @@ Some table/variable names deviate from the standard naming conventions. These ex
 For example, the **table** name below corresponds to participant data aggregated across the <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D</a> **derivatives**:
 
  - **Table:** <code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> 
- - **Derivatives:** <code>sub-{ID}_ses-{V0X}_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> 
+ - **Derivatives:** <code>sub-[ID]_ses-[V0X]_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> 

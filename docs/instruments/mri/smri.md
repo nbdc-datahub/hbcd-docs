@@ -44,12 +44,12 @@ Structural MRI data is used in several processing pipelines. In addition to the 
 hbcd/
 └── derivatives/ 
     └── bibsnet/
-        └── sub-<span class="label">{ID}</span>/
-            └── ses-<span class="label">{V0X}</span>/
+        └── sub-[ID]/
+            └── ses-[V0X]/
                 └── anat/
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;T1w|T2w&gt;</span>_desc-aseg_dseg.nii.gz <span class="hashtag">(+JSON)</span>
-                    ├── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;T1w|T2w&gt;</span>_desc-aseg_volumes.tsv <span class="hashtag">(+JSON)</span>         
-                    └── <span class="muted">sub-{ID}_ses-{V0X}_</span>space-<span class="var">&lt;T1w|T2w&gt;</span>_desc-aseg_brain-mask.nii.gz <span class="hashtag">(+JSON)</span>
+                    ├── sub-[ID]_ses-[V0X]_space-<span class="var">{T1w|T2w}</span>_desc-aseg_dseg.nii.gz <span class="hashtag">(+JSON)</span>
+                    ├── sub-[ID]_ses-[V0X]_space-<span class="var">{T1w|T2w}</span>_desc-aseg_volumes.tsv <span class="hashtag">(+JSON)</span>         
+                    └── sub-[ID]_ses-[V0X]_space-<span class="var">{T1w|T2w}</span>_desc-aseg_brain-mask.nii.gz <span class="hashtag">(+JSON)</span>
 
 <span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 </pre>
@@ -65,21 +65,21 @@ hbcd/
 hbcd/
 └── derivatives/
     ├── mriqc/                            
-    │   ├── sub-<span class="label">{ID}</span>/
-    │   │   └── ses-<span class="label">{V0X}</span>/
+    │   ├── sub-[ID]/
+    │   │   └── ses-[V0X]/
     │   │       ├── anat/
-    │   │       │   └── <span class="muted">sub-{ID}_ses-{V0X}_run-{x}</span>_<span class="var">&lt;T1w|T2w&gt;</span>.json
+    │   │       │   └── sub-[ID]_ses-[V0X]_run-[X]_<span class="var">{T1w|T2w}</span>.json
     │   │       └── func/
-    │   │           └── <span class="muted">sub-{ID}_ses-{V0X}_run-{x}</span>_<span class="var">&lt;T1w|T2w&gt;</span>.json
-    │   └── <span class="muted">sub-{ID}_ses-{V0X}_run-{x}</span>_<span class="var">&lt;T1w|T2w&gt;</span>.html
+    │   │           └── sub-[ID]_ses-[V0X]_run-[X]_<span class="var">{T1w|T2w}</span>.json
+    │   └── sub-[ID]_ses-[V0X]_run-[X]_<span class="var">{T1w|T2w}</span>.html
     │
     └── bme-x/                  
-        └── sub-<span class="label">{ID}</span>/
-            └── ses-<span class="label">{V0X}</span>/
+        └── sub-[ID]/
+            └── ses-[V0X]/
                 └── anat/
-                    |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span>desc-<span class="var">&lt;enhanced|preproc&gt;</span>_<span class="var">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
-                    |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span>space-<span class="var">&lt;T1w|T2w&gt;</span>_desc-brain_mask.nii.gz <span class="hashtag">(+JSON)</span>
-                    |__ <span class="muted">sub-{ID}_ses-{V0X}_run-{X}_</span><span class="var">&lt;T1w|T2w&gt;</span>.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-[ID]_ses-[V0X]_run-[X]_desc-<span class="var">{enhanced|preproc}</span>_<span class="var">{T1w|T2w}</span>.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-[ID]_ses-[V0X]_run-[X]_space-<span class="var">{T1w|T2w}</span>_desc-brain_mask.nii.gz <span class="hashtag">(+JSON)</span>
+                    |__ sub-[ID]_ses-[V0X]_run-[X]_<span class="var">{T1w|T2w}</span>.nii.gz <span class="hashtag">(+JSON)</span>
 
 <span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 </pre>

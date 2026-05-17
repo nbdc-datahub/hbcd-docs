@@ -60,17 +60,16 @@ The raw data include recordings from the left and right leg sensors (<code>motio
 <pre class="folder-tree" style="font-size: 12px; line-height: 1.4;">
 hbcd/
 └── rawdata/
-    └── sub-{ID}/
-        └── ses-{V0X}/
+    └── sub-[ID]/
+        └── ses-[V0X]/
             └── motion/
-
                 <span class="hashtag"># Calibration files</span>
-                ├── *_task-<span class="var">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-calibration_motion.tsv   <span class="hashtag">(+JSON)</span>
-                └── *_task-<span class="var">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-calibration_channels.tsv <span class="hashtag">(+JSON)</span>
+                ├── *_task-<span class="var">{Left|Right}</span>LegMovement_tracksys-imu_acq-calibration_motion.tsv   <span class="hashtag">(+JSON)</span>
+                └── *_task-<span class="var">{Left|Right}</span>LegMovement_tracksys-imu_acq-calibration_channels.tsv <span class="hashtag">(+JSON)</span>
 
                 <span class="hashtag"># 72-hr recordings</span>
-                ├── *_task-<span class="var">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-primary_motion.tsv   <span class="hashtag">(+JSON)</span>
-                └── *_task-<span class="var">&lt;Left|Right&gt;</span>LegMovement_tracksys-imu_acq-primary_channels.tsv <span class="hashtag">(+JSON)</span>
+                ├── *_task-<span class="var">{Left|Right}</span>LegMovement_tracksys-imu_acq-primary_motion.tsv   <span class="hashtag">(+JSON)</span>
+                └── *_task-<span class="var">{Left|Right}</span>LegMovement_tracksys-imu_acq-primary_channels.tsv <span class="hashtag">(+JSON)</span>
 </pre>
 </div>
 
@@ -91,29 +90,23 @@ hbcd/
 hbcd/
 └── derivatives/
     └── hbcd_motion/
-        └── sub-{ID}/
-            └── ses-{V0X}/
+        └── sub-[ID]/
+            └── ses-[V0X]/
                 └── motion/
-
                     <span class="hashtag"># Kinematics</span>
                     ├── Kinematics/
-                    │   ├── sub-{ID}_ses-{V0X}_desc-kinematics_recording-20_motion.json
-                    │   └── sub-{ID}_ses-{V0X}_desc-kinematics_recording-25_motion.json
+                    │   └── sub-[ID]_ses-[V0X]_desc-kinematics_recording-<span class="var">{20|25}</span>_motion.json
 
                     <span class="hashtag"># Physical Activity (PA)</span>
                     ├── PA/
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-accelerationPA_BOUTS.tsv
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-accelerationPA_LOG.txt
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-accelerationPA_RAW.tsv
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-accelerationPA_SUMMARY.json
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-jerkPA_BOUTS.tsv
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-jerkPA_LOG.txt
-                    │   ├── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-jerkPA_RAW.tsv
-                    │   └── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-jerkPA_SUMMARY.json
-
+                    │   ├── sub-[ID]_ses-[V0X]_leg-<span class="var">{left|right}</span>_desc-<span class="var">{accelerationPA|jerkPA}</span>_BOUTS.tsv
+                    │   ├── sub-[ID]_ses-[V0X]_leg-<span class="var">{left|right}</span>_desc-<span class="var">{accelerationPA|jerkPA}</span>_LOG.txt
+                    │   ├── sub-[ID]_ses-[V0X]_leg-<span class="var">{left|right}</span>_desc-<span class="var">{accelerationPA|jerkPA}</span>_RAW.tsv
+                    │   └── sub-[ID]_ses-[V0X]_leg-<span class="var">{left|right}</span>_desc-<span class="var">{accelerationPA|jerkPA}</span>_SUMMARY.json
+                    
                     <span class="hashtag"># Metadata & Outputs</span>
                     ├── PARAMETERS.json
-                    └── sub-{ID}_ses-{V0X}_leg-<span class="var">&lt;left|right&gt;</span>_desc-calibrated_recording-20_motion.tsv
+                    └── sub-[ID]_ses-[V0X]_leg-<span class="var">{left|right}</span>_desc-calibrated_recording-20_motion.tsv
 </pre>
 </div>
 
