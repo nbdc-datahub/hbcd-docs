@@ -238,38 +238,44 @@ While the approach of storing missingness reasons in a shadow matrix file suppor
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<pre><code>import pandas as pd
+<pre><code># Example 1: Load CSV/TSV and corresponding shadow matrix and add '_missing_reason' columns for missing values.
+import pandas as pd
 import os
 
 def load_data_with_shadow(data_path, shadow_path):  
-    """  
-    Loads a data file (CSV or TSV) and its corresponding shadow matrix  
-    (CSV or TSV) and adds '_missing_reason' columns for missing values.
-    """  
-
     # Detect delimiter from file extension and load data
     def get_delimiter(path):
         ext = os.path.splitext(path)[1].lower()
         return "\t" if ext == ".tsv" else ","
-
     data = pd.read_csv(data_path, delimiter=get_delimiter(data_path))  
     shadow = pd.read_csv(shadow_path, delimiter=get_delimiter(shadow_path))
 
-    # Annotate data with non-empty missingness reason columns (excluding participant_id 
-    # and session_id) in shadow matrix 
+    # Annotate data with non-empty missingness reason columns (excluding participant_id, session_id) in shadow matrix 
     for col in data.columns[2:]:  
         if col in shadow.columns:
             if not shadow[col].isna().all() and not (shadow[col] == '').all():
                 data[f"{col}_missing_reason"] = shadow[col]
-
     return data
 
 # Example usage:
 df = load_data_with_shadow("data.tsv", "shadow_matrix.tsv")
-
 # Example: View reasons for missing data for a given column/variable in the data file 
 df[df["&lt;COLUMN NAME&gt;"].isna()][["&lt;COLUMN NAME&gt;_missing_reason"]]
 </code></pre>
+
+<pre><code>
+# Example 2: Using NBDCtools Python package
+# install R backend with `NBDCtools` is required to run this code
+from NBDCtools import create_dataset
+create_dataset(
+    dir_data="path/to/data",
+    study="hbcd",
+    vars=["var1", "var2", "var3"],
+    tables=["table1", "table2"],
+    bind_shadow=True
+)</code>
+</pre>
+
 </div>
 
 <div id="r-helper-function" class="table-banner" onclick="toggleCollapse(this)">
@@ -283,7 +289,21 @@ df[df["&lt;COLUMN NAME&gt;"].isna()][["&lt;COLUMN NAME&gt;_missing_reason"]]
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<pre><code>library(dplyr)
+<pre><code>library(NBDCtools)
+create_dataset(
+  dir_data = "path/to/data",
+  study = "hbcd",
+  vars = c("var1", "var2", "var3"),
+  tables = c("table1", "table2"),
+  bind_shadow = TRUE
+)
+</code></pre>
+</div>
+
+
+<!-- 
+Replaced code above per request of ABCD team:
+library(dplyr)
 library(NBDCtools)
 
 # read in data and shadow matrix
@@ -296,6 +316,4 @@ data_shadow <- shadow_bind_data(data, shadow)
 # show the reasons for missing values for a given variable
 data_shadow |>
   filter(is.na(&lt;column_name&gt;)) |> 
-  count(&lt;column_name&gt;)
-</code></pre>
-</div>
+  count(&lt;column_name&gt;) -->
