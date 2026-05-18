@@ -381,13 +381,13 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Run ID</td>
-<td>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
+<td>The <code>run-[X]</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>XCP-D</td>
-<td>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata will be corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
+<td>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-[X]_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata will be corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 <tr>

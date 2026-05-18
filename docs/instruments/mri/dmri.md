@@ -42,7 +42,7 @@ hbcd/
     └── qsiprep/
         └── sub-[ID]/
             ├── log/
-            └── ses-{V0X}/
+            └── ses-[V0X]/
                 ├── anat/
                 │   <span class="hashtag"># Transforms</span>
                 │   ├── *_from-<span class="var">{ACPC_to-anat|anat_to-ACPC}</span>_mode-image_xfm.mat
@@ -316,7 +316,7 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 
 ## Quality Control Summary Statistics
 
-Automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-[ID]_ses-{V0X}_space-ACPC_desc-image_qc.tsv</code> within the QSIPrep derivatives (see <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details). Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. NDC can also be used as a covariate in analyses to account for QC variation. 
+Automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-[ID]_ses-[V0X]_space-ACPC_desc-image_qc.tsv</code> within the QSIPrep derivatives (see <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details). Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. NDC can also be used as a covariate in analyses to account for QC variation. 
 <p><strong>Left</strong>: NDC calculated pre- and post-processing for each vendor using combined AP/PA scans<br>  
 <strong>Right</strong>: Shell-wise CNR calculated by Eddy. We do not provide exclusion threshold recommendations because all data passed preliminary QC. However, NDC and CNR are useful covariates when analyzing other derivatives.</p>
 <img src="../images/ndc_cnr_comparison.svg" width="95%" height="auto" class="center">
