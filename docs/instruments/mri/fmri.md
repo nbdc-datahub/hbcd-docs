@@ -462,8 +462,8 @@ hbcd/
                 │   ├── *_hemi-<span class="var">{L|R}</span>_space-fsLR_den-32k_<span class="var">{SURF}</span>.surf.gii
                 │   └── *_space-fsLR_den-91k_<span class="var">{METRIC}</span>.dscalar.nii
                 │                
-                │   <span class="hashtag"># File Prefix: sub-[ID]_ses-[V0X]_hash-{HASH}_task-rest</span>
                 ├── func/  
+                │   <span class="hashtag"># File Prefix: sub-[ID]_ses-[V0X]_hash-{HASH}_task-rest</span>
                 │   ├── *_desc-abcc_qc.hdf5
                 │   ├── *_<span class="var">{motion|outliers}</span>.tsv
                 │   ├── *_space-fsLR_den-91k_desc-<span class="var">{denoised|denoisedSmoothed}</span>_bold.dtseries.nii
@@ -494,8 +494,7 @@ hbcd/
 <span class="hashtag"># ── Label Legend ─────────────────────────────────────────────</span>
 <span class="var">HASH</span>       : 0f306a2f+0ef9c88a , 2afa9081+0ef9c88a
 <span class="var">METRIC</span>     : curv , sulc , thickness  
-<span class="var">PARC</span>       : 4S-{156|256|...|1056}Parcels , Glasser , Gordon , MIDB , MyersLabonte
-                          + HCP , Tian  (functional files only)
+<span class="var">PARC</span>       : 4S-{156|256|...|1056}Parcels , Glasser , Gordon , MIDB , MyersLabonte , HCP (func/ only) , Tian  (func/ only)
 <span class="var">SURF</span>       : midthickness , pial , white , inflated , vinflated
 </div>
 
