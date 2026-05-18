@@ -20,11 +20,11 @@ Raw BIDS are raw file-based data in [BIDS](https://bids-specification.readthedoc
 <pre class="folder-tree">
 hbcd/
 └── <span class="folder">rawdata/</span>
-    ├── <span class="file">sub-[ID]_ses-{V0X}_scans.tsv</span>
+    ├── <span class="file">sub-[ID]_ses-[V0X]_scans.tsv</span>
 
     <span class="section"># Raw BIDS (MRI/MRS, EEG, biosensors)</span>
     ├── <span class="folder">sub-[ID]/</span>
-    │   └── <span class="folder">ses-{V0X}/</span>
+    │   └── <span class="folder">ses-[V0X]/</span>
     │       <span style="color: #0af0e1; font-style: italic;"># Imaging & Spectroscopy - <a style="color: #0af0e1; font-style: italic;" href="../../instruments/mri/rawbids" target="_blank">See file contents</a></span>
     │       ├── <span class="folder">anat/</span>   
     │       ├── <span class="folder">dwi/</span>
@@ -48,7 +48,7 @@ hbcd/
 <p>
 <div class="table-banner">
   <span class="emoji"><i class="fa fa-circle-info"></i><i class="fa fa-person-cane"></i></span>
-<span class="text">MRI scanner information is now included in the session-level scans TSV files (<code>sub-[ID]_ses-{V0X}_scans.tsv</code>) and will be made available as tabulated data in a future release.</span>
+<span class="text">MRI scanner information is now included in the session-level scans TSV files (<code>sub-[ID]_ses-[V0X]_scans.tsv</code>) and will be made available as tabulated data in a future release.</span>
 </div>
 </p>
 
@@ -75,7 +75,7 @@ Participant-, session-, and scan-level data are stored in TSV files accompanied 
 </tr>
 <tr>
   <td>Scan</td>
-  <td><code>sub-[ID]_ses-{V0X}_scans.tsv</code></td>
+  <td><code>sub-[ID]_ses-[V0X]_scans.tsv</code></td>
   <td>Per-scan information (e.g., age, <a href="../../instruments/mri/qc/#location-in-release-data" target="_blank">raw data QC metrics</a>, scanner info)</td>
 </tr>
 </tbody>
