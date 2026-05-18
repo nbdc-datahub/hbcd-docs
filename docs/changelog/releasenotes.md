@@ -8,32 +8,6 @@
 
 # Release Notes & History
 
-## Participant Population
-
-HBCD enrolls at least 25% of participants who have more than minimal substance use during pregnancy, including opioids ([Si et al. 2024](https://doi.org/10.1016/j.dcn.2024.101432)). In addition, HBCD enrollment strategies aimed at yielding a study population that is representative of the individual and geographic characteristics of reproductive-aged women in the United States who had a birth in the past 12 months, and include an adequate comparison group for substance exposed individuals ([Nelson et al. 2024](https://doi.org/10.1016/j.dcn.2024.101441)). There are siblings enrolled in HBCD, some of whom are twins or triplets (multiples). IDs for multiples are presented in the *HBCD Private Release Notes* - see <a href="../../instruments/demo/visitinfo/#multiple-birth-participants" target="_blank">Multiple Birth Participants</a> under Visit Information for details.
-
-##  Exclusion Criteria & Filters
-
-**Participants & Participant Information**
-
-- Participants with no brain rating or brain rating noted as "atypical" excluded
-- Inactive participants/sessions excluded
-- Sex is set to 'Other' for participants with only one active Visit 1 (V01) visit
-- 'Candidate_Age' values are replaced with 'n/a' for Visit 1 (V01)
-<!-- - Excluded visits with 'LaunchPad Complete' Status set to 'Complete' after 2024-07-01 -->
-
-**Instrument & Field Exclusions**
-
-- ERICA forms — `mh_cg_erica_{fcm_adm_}{3_7m|7_9m}`  
-- GABI Setup/Receipt — `nt_pa_gabi_{setup|rcpt}`    
-- MRI Data & Scan Summary Forms (pre/post scan prep) — `mri_ra_chkl_{data|scan}`  
-- NIH Baby ToolBox — `ncl_ch_nbtb`
-- Participant / RA Feedback — `adm_cg_fb` / `adm_ra_fb`    
-- Urgent Events & Participant Alerts — `adm_fd_urgent` / `admin_alert`
-- Fields including *examiner*, *REDCap Complete status*, *timestamps*, *visit stage*, and *visit start*
-
----
-
 ## Version: R2.0
 
 <div style="background:#f2f6fc; padding:12px 20px; border-radius:10px; text-align:center; margin-bottom:25px; box-shadow:0 2px 4px rgba(0,0,0,0.05);">
@@ -92,7 +66,7 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 <div id="2.0-new-tables" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-table"></i></span>
   <span class="text-with-link">
-  <span class="text">+ 40 New Instruments/Measures Across 10 Domains</span>
+  <span class="text">+ 40 New Instruments Across 10 Domains</span>
   <a class="anchor-link" href="#2.0-new-tables" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -299,7 +273,7 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 </table>
 </div>
 
------------------------
+---
 
 ## Version: R1.1
 
@@ -342,64 +316,27 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="table-no-vertical-lines">
-<thead>
-<th>Domain</th>
-<th>Table/Data</th>
-<th>Update/Improvement</th>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-id-card" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Demographics</span></span></td>
-  <td>Basic Demographics<br><code>sed_basic_demographics</code></td>
-  <td>
-  Reviewed scoring for AOU and ACS EthnoRacial fields. The multiracial options for <strong>ACS – Child – Multi Race</strong> (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.</td>
-</tr>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-vial" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Biospecimen & Omics</span></span></td>
-  <td>Nails & Urine Toxicology<br><code>bio_bm_biosample_*</code></td>
-  <td>
-  Removed 'Specimen ID’ fields from all Biospecimen tables and time from dates in 'Nails Results.'
-</td>
-</tr>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa-solid fa-baby" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Pregnancy Exposure, Including Substance Use</span></span></td>
-  <td>Pregnancy & Infant Health<br><code>pex_bm_health*</code></td>
-  <td>
-  Medications are now categorized into more detailed components based on <strong>RxNorm IDs</strong> to improve clarity and enable more granular analyses.
-  Additional columns specify: <em>Brand Name</em>, <em>Ingredient</em>, <em>Precise Ingredient</em>, and <em>Multiple Active Ingredients</em>.
-</td>
-</tr>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fas fa-city" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Social & Environmental Determinants</span></span></td>
-  <td>V01 Demographics<br><code>sed_bm_demo</code></td>
-  <td>
-  Added <strong>Birth Parent Sexual Orientation</strong> variable.
-</td>
-</tr>
-<tr>
-  <td style="text-align: center;"><span class="tooltip tooltip-right"><i class="fa fa-brain" style="font-size:1.1em; margin-right: 2px;"></i><span class="tooltiptext">Magnetic Resonance Imaging & Spectroscopy</span></span></td>
-  <td>BrainSwipes QC<br><code>img_brainswipes*</code></td>
-  <td>
-  Added QC results missing from R1.0 (N=8).
-</td>
-</tr>
-</tbody>
-</table>
-<p>Full Updated File List:</p>
+<table class="table-no-vertical-lines"><tbody>
+<tr><td colspan="2"><i class="fas fa-id-card header-icon"></i><b>Demographics</b><br><br>
+Scoring for AOU and ACS ethno-racial fields included in the Basic Demographics (<code>sed_basic_demographics</code>) table were reviewed. The multiracial options for ACS–Child–Multi Race (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.</td></tr>
+<tr><td colspan="2"><i class="fa fa-vial header-icon"></i> <b>Biospecimen & Omics</b><br><br>
+Removed 'Specimen ID’ fields from both the Nails & Urine Biospecimen tables; removed time from dates in Nails Results.</td></tr>
+<tr><td colspan="2"><i class="fa-solid fa-baby header-icon"></i> <b>Pregnancy Exposure, Including Substance Use</b><br><br>
+Medications in Pregnancy & Infant Health instruments  (<code>pex_bm_health*</code>) are now categorized into more detailed components based on <strong>RxNorm IDs</strong> to improve clarity and enable more granular analyses. Additional columns specify: <em>Brand Name</em>, <em>Ingredient</em>, <em>Precise Ingredient</em>, and <em>Multiple Active Ingredients</em>.</td></tr>
+<tr><td colspan="2"><i class="fas fa-city header-icon"></i> <b>Social & Environmental Determinants</b><br><br>
+Added 'Birth parent sexual orientation' variable to V01 Demographics (<code>sed_bm_demo</code>).</td></tr>
+<tr><td colspan="2"><i class="fa fa-brain header-icon"></i> <b>MRI</b><br><br>
+Added BrainSwipes QC (<code>img_brainswipes*</code>) results missing from R1.0 (N=8).</td></tr>
+
+<tr><td colspan="2"><b>Summary of Updated Files</b><br>
+<i>Formats:</i> <code>.json | .parquet | .tsv</code>
 <ul>
-<li>Basic Demographics: <code>sed_basic_demographics.{json|parquet|tsv}</code></li>
-<li>BioSpecimens: 
-  <ul>
-  <li><code>bio_bm_biosample_nails_results.{json|parquet|tsv}</code> & <code>bio_bm_biosample_nails_results_shadow.{parquet|tsv}</code></li>
-  <li><code>bio_bm_biosample_urine.json</code></li>
-  <li><code>bio_bm_biosample_urine_results.{parquet|tsv}</code> & <code>bio_bm_biosample_urine_results_shadow.{parquet|tsv}</code></li>
-  </ul>
-  </li>
-<li>SPM-2: <code>ncl_cg_spm2__inf.{json|parquet|tsv}</code> & <code>ncl_cg_spm2__inf_shadow.{parquet|tsv}</code></li>
-<li>TLFB: <code>pex_ch_tlfb.{json|parquet|tsv}</code> & <code>pex_ch_tlfb_shadow.{parquet|tsv}</code></li>
-<li>PEX Health V2 Preg: <code>pex_bm_healthv2_preg.json</code></li>
-</ul>
+<li>Basic Demographics: <code>sed_basic_demographics</code></li>
+<li>BioSpecimens: Nails and Urine -  <code>bio_bm_biosample_{nails|urine}_results</code> (+shadow matrix files)</li>
+<li>SPM-2: <code>ncl_cg_spm2__inf</code> (+shadow matrix files)</li>
+<li>TLFB: <code>pex_ch_tlfb</code> (+shadow matrix files)</li>
+<li>PEX Health V2 Preg: <code>pex_bm_healthv2_preg</code> (.json only)</li></td></tr>
+</tbody></table>
 </div>
 
 <div id="r1.1-resolved-issues" class="table-banner" onclick="toggleCollapse(this)">
@@ -457,6 +394,8 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 </tbody>
 </table>
 </div>
+
+---
 
 ## Version: R1.0
 

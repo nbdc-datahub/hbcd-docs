@@ -35,7 +35,6 @@ extra:
 
 extra_css:
   - css/banners.css
-  - css/copybox.css
   - css/custom.css
   - css/tables.css
   - overrides/styles.css
@@ -154,8 +153,9 @@ nav:
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
   - Release Notes: 
-    - Known Issues & Pending Updates: changelog/issues-updates.md
+    - Participants & Exclusion Criteria: changelog/criteria.md
     - Release Notes & History: changelog/releasenotes.md
+    - Known Issues & Pending Updates: changelog/issues-updates.md
   - Help & Support:
     - FAQs: help/faq.md
     - Report Issues: help/reportissue.md
