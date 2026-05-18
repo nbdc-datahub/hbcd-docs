@@ -331,8 +331,17 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
   </div>
 </div>
 
-### 1.1 Existing Study Data Updates
-
+<div id="1.1-main-updates" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
+  <span class="text-with-link">
+  <span class="text">1.1 Existing Study Data Updates</span>
+  <a class="anchor-link" href="#1.1-main-updates" title="updatedfiles">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="table-no-vertical-lines">
 <thead>
 <th>Domain</th>
@@ -377,160 +386,27 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 </tr>
 </tbody>
 </table>
-<p></p><p></p>
-
-<div id="updatedfiles" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
-  <span class="text-with-link">
-  <span class="text">Full Updated File List</span>
-  <a class="anchor-link" href="#visitinfo" title="updatedfiles">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><strong>Basic Demographics</strong></p>
+<p>Full Updated File List:</p>
 <ul>
-<li><code>sed_basic_demographics.json</code></li>
-<li><code>sed_basic_demographics.parquet</code></li>
-<li><code>sed_basic_demographics.tsv</code></li>
-</ul>
-<p><strong>BioSpecimens</strong></p>
-<ul>
-<li><code>bio_bm_biosample_nails_results.json</code></li>
-<li><code>bio_bm_biosample_nails_results.parquet</code></li>
-<li><code>bio_bm_biosample_nails_results.tsv</code></li>
-<li><code>bio_bm_biosample_nails_results_shadow.parquet</code></li>
-<li><code>bio_bm_biosample_nails_results_shadow.tsv</code></li>
-<li><code>bio_bm_biosample_urine.json</code></li>
-<li><code>bio_bm_biosample_urine_results.parquet</code></li>
-<li><code>bio_bm_biosample_urine_results.tsv</code></li>
-<li><code>bio_bm_biosample_urine_results_shadow.parquet</code></li>
-<li><code>bio_bm_biosample_urine_results_shadow.tsv</code></li>
-</ul>
-<p><strong>SPM-2</strong></p>
-<ul>
-<li><code>ncl_cg_spm2__inf.json</code></li>
-<li><code>ncl_cg_spm2__inf.parquet</code></li>
-<li><code>ncl_cg_spm2__inf.tsv</code></li>
-<li><code>ncl_cg_spm2__inf_shadow.parquet</code></li>
-<li><code>ncl_cg_spm2__inf_shadow.tsv</code></li>
-</ul>
-<p><strong>TLFB</strong></p>
-<ul>
-<li><code>pex_ch_tlfb.json</code></li>
-<li><code>pex_ch_tlfb.parquet</code></li>
-<li><code>pex_ch_tlfb.tsv</code></li>
-<li><code>pex_ch_tlfb_shadow.parquet</code></li>
-<li><code>pex_ch_tlfb_shadow.tsv</code></li>
-</ul>
-<p><strong>PEX Health V2 Preg</strong></p>
-<ul>
-<li><code>pex_bm_healthv2_preg.json</code></li>
+<li>Basic Demographics: <code>sed_basic_demographics.{json|parquet|tsv}</code></li>
+<li>BioSpecimens: 
+  <ul>
+  <li><code>bio_bm_biosample_nails_results.{json|parquet|tsv}</code> & <code>bio_bm_biosample_nails_results_shadow.{parquet|tsv}</code></li>
+  <li><code>bio_bm_biosample_urine.json</code></li>
+  <li><code>bio_bm_biosample_urine_results.{parquet|tsv}</code> & <code>bio_bm_biosample_urine_results_shadow.{parquet|tsv}</code></li>
+  </ul>
+  </li>
+<li>SPM-2: <code>ncl_cg_spm2__inf.{json|parquet|tsv}</code> & <code>ncl_cg_spm2__inf_shadow.{parquet|tsv}</code></li>
+<li>TLFB: <code>pex_ch_tlfb.{json|parquet|tsv}</code> & <code>pex_ch_tlfb_shadow.{parquet|tsv}</code></li>
+<li>PEX Health V2 Preg: <code>pex_bm_healthv2_preg.json</code></li>
 </ul>
 </div>
 
-### 1.1 Resolved Known Issues
-
-<div id="r1.1demo" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a></span>
+<div id="r1.1-resolved-issues" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-bug"></i></span>
   <span class="text-with-link">
-  <span class="text">Demographics</span>
-  <a class="anchor-link" href="#r1.1demo" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><strong>Basic Demographics (<code>sed_basic_demographics</code>)</strong></p>
-<table class="table-no-vertical-lines">
-<tbody>
-  <tr>
-    <td>
-      <strong>Income Not Displayed For All Participants</strong> (<code>income</code>)<br>
-    Missing income fields for subset of subjects now added.</td>
-  </tr>  
-  <tr>
-    <td>
-    <strong>Duplicate Options for 'Mother Race' Variable</strong> (<code>screen_mother_race</code>)<br>
-    Option #3, a duplicate of option #5 for 'Black African American,' now removed.</td>
-  </tr>
-  <tr>
-    <td>
-    <strong>Gestational Age at Delivery and Mother’s Age at Delivery</strong> (<code>&lt;gestational|mother&gt;_age_delivery</code>)<br>
-    Data from deliveries that occurred after the R1.0 cutoff date of 2025-07-01 (and therefore did not undergo QC) now removed so that only eligible participants with V01 + V02 or V03 are retained.</td>
-  </tr>
-  <tr>
-    <td>
-    <strong>Mother Ethnicity</strong> (<code>screen_mother_ethnicity</code>)<br>
-    Incorrectly documented as a 4-level variable in the data dictionary, with additional values of 0 and 1 that were not used. The data now only includes the valid levels: 2 (Hispanic) and 3 (Non-Hispanic).</td>
-  </tr>
-  <tr>
-    <td>
-    <strong>Mother Race & Ethnicity</strong> (<code>rc_mother_ethnoracial_aou_race_ethnicity</code>)<br>
-    Addition of formerly missing response option, "None of these fully describe me/Other."</td>
-  </tr>
-</tbody>
-</table>
-<p style="font-size: 1.0em;"><strong>Visit Level Data (<code>par_visit_data</code>)</strong></p>
-<table class="table-no-vertical-lines">
-<tbody>
-  <tr>
-    <td>
-      Addition of missing <strong>Substance Use flags</strong> (<i><a href="../../instruments/demo/visitinfo/#substance-use-flags">see details</a></i>) for alcohol, opioid, cannabis, and nicotine.</td>
-  </tr>  
-</tbody>
-</table>
-</div>
-
-<div id="r1.1biospec" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a></span>
-  <span class="text-with-link">
-  <span class="text">Biospecimens</span>
-  <a class="anchor-link" href="#r1.1biospec" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><strong>Nails & Urine (<code>bio_bm_biosample_{nails|urine}</code>)</strong></p>
-<table class="table-no-vertical-lines">
-<tbody>
-  <tr>
-  <td>Addition of formerly missing <strong>collection and analysis dates</strong> (<i>Collection/Received/Report</i>).</td>
-  </tr>  
-</tbody>
-</table>
-<p style="font-size: 1.0em;"><strong>Urine (<code>bio_bm_biosample_urine_results</code>)</strong></p>
-<table class="table-no-vertical-lines">
-<tbody>
-  <tr>
-    <td>
-      <strong>Corrected Specific Gravity Variable</strong><br>
-      Values for the 'Urine Specific Gravity' field (<code>bio_spg_u</code>) have been set to the correct floating point value for the appropriate thousandths format (were previously set to '1' and data type to 'integer'). The corrected variable can now be used for urinary concentration corrections.</td>
-  </tr>  
-  <tr>
-    <td>
-      <strong>Toxicology (Cotinine)</strong><br>
-      All negative values for urinary toxicology results field <code>bio_c_cot_u</code> are now set to ‘0’ (as negative values are not biologically plausible).</td>
-  </tr> 
-  <tr>
-    <td>
-      <strong>Corrected Negative Gestational Ages</strong><br>
-      The negative gestational ages for 2 participants in the Urine dataset have been corrected.</td>
-  </tr>  
-</tbody>
-</table>
-</div>
-
-<div id="r1.1eeg" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#eeg" target="_blank"><i class="fa-solid fa-file-waveform"></i></a></span>
-  <span class="text-with-link">
-  <span class="text">EEG</span>
-  <a class="anchor-link" href="#r1.1eeg" title="Copy link">
+  <span class="text">1.1 Resolved Known Issues</span>
+  <a class="anchor-link" href="#r1.1-resolved-issues" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -539,77 +415,45 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 <div class="table-collapsible-content">
 <table class="table-no-vertical-lines">
 <tbody>
-  <tr>
-    <td>
-    The <strong>HBCD-MADE</strong> resting-state derivative files (<code>processed_data/*_task-RS_powerSummaryStats.csv</code>) have been removed due to errors caused by a previous pipeline bug. These files should not be used for analysis. Users can regenerate the corresponding summary statistics using the scripts provided in  <a href="https://hbcd-eeg-utilities.readthedocs.io/en/stable/">HBCD EEG Utilities</a>.
-    </td>
-  </tr>  
-</tbody>
-</table>
-</div>
+<tr><td><strong>DEMOGRAPHICS</strong><br><br>
+  <strong>Basic Demo</strong> (<code>sed_basic_demographics</code>)
+    <ul>
+    <li>Added missing income data for applicable participants.</li>
+    <li>Mother Race (<code>screen_mother_race</code>): removed duplicate option (#3) for "Black African American".</li>
+    <li>Removed gestational age and mother’s age at delivery for post–R1.0 deliveries that did not undergo QC.</li>
+    <li>Mother Ethnicity (<code>screen_mother_ethnicity</code>): removed invalid levels (0, 1); retained valid values: 2 (Hispanic), 3 (Non-Hispanic).</li>
+    <li>Mother Race &amp; Ethnicity (<code>rc_mother_ethnoracial_aou_race_ethnicity</code>): added missing response option "None of these fully describe me / Other".</li>
+    </ul>
+<strong>Visit Info</strong> (<code>par_visit_data</code>)
+  <ul><li>Added missing <strong>substance use flags</strong> (alcohol, opioids, cannabis, nicotine)</li></ul></td>
+</tr>
 
-<div id="r1.1ngl" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a></span>
-  <span class="text-with-link">
-  <span class="text">Neurocognition & Language</span>
-  <a class="anchor-link" href="#r1.1ngl" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines">
-<tbody>
-  <tr>
-    <td>
-      The SPM-2 (<code>ncl_cg_spm2__inf</code>) now includes verified t-scores, originally excluded due to errors in conversion from raw scores.</td>
-  </tr>  
-</tbody>
-</table>
-</div>
+<tr><td><strong>BIOSPECIMENS</strong><br><br>
+  <strong>Nails &amp; Urine</strong>
+  <ul><li>Added collection and analysis dates (<em>Collection / Received / Report</em>)</li></ul>
+  <strong>Urine</strong>
+   <ul><li>Specific gravity correction (<code>bio_spg_u</code>) updated to floating-point values (previously set to '1' as data type 'integer').</li>
+  <li>Cotinine (<code>bio_c_cot_u</code>): set all negative values (biologically implausible) to <code>0</code>. </li> 
+  <li>Corrected negative gestational age values where needed (n=2 participants).</li></ul>
+  </td>
+</tr>
 
-<div id="r1.1pex" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a></span>
-  <span class="text-with-link">
-  <span class="text">Pregnancy & Exposure, Including Substance Use</span>
-  <a class="anchor-link" href="#r1.1pex" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines">
-<tbody>
-  <tr>
-    <td>
-      <strong>Health V2- Infancy</strong> (<code>pex_bm_healthv2_inf</code>)<br>
-      Erroneously included descriptive fields <code>001__00</code> - <code>005__00</code> now removed.</td>
-  </tr>  
-  <tr>
-    <td>
-      <strong>APA 1/2 (<code>pex_bm_apa</code>)</strong><br>
-      Summary scores and corresponding T-scores are now provided, where appropriate, for Level 2 domains.
-    </td>
-  </tr>  
-  <tr>
-    <td>
-      <strong>EPDS (<code>pex_bm_epds</code>)</strong><br>
-      Duplicate data for each item (e.g., <code>epds_001</code> and <code>epds_001_01</code>) now removed.</td>
-  </tr>  
-  <tr>
-    <td>
-      <strong>TLFB (<code>pex_ch_tlfb</code>)</strong><br>
-      <strong>#1 Corrected logic for TLFB substance use flags</strong><br>
-      Previously, only the alcohol use flag applied the intended criteria (use during or after pregnancy across V01–V02). All substance use flags now follow this logic.
-      </td>
-  </tr>    
-  <tr>
-    <td>
-      <strong>#2 Age Variables Removed</strong><br>
-      TLFB age variable fields (<i>gestational_age</i>, <i>adjusted_age</i>, and <i>candidate_age</i>) are now removed due to incorrect values.</td>
-  </tr>  
+<tr><td><strong>EEG</strong>
+  <ul><li>HBCD-MADE derivatives <code>*_task-RS_powerSummaryStats.csv</code> removed due to errors caused by pipeline bug.</li></ul></td>
+</tr>
+<tr><td><strong>NEUROCOGNITION & LANGUAGE</strong><br>
+  <ul><li>SPM-2 (<code>ncl_cg_spm2__inf</code>): Added verified summary and T-scores (previously excluded due to conversion errors).</li></ul></td>
+</tr>
+
+<tr><td><strong>PREGNANCY & EXPOSURE</strong><br>
+<ul>
+<li>Health V2– Infancy (<code>pex_bm_healthv2_inf</code>): removed descriptive fields <code>001__00</code>–<code>005__00</code></li>
+<li>APA 1/2 (<code>pex_bm_apa</code>): added summary and T-scores for Level 2 domains. </li>
+<li>EPDS (<code>pex_bm_epds</code>): removed duplicate item fields (e.g., <code>epds_001</code> and <code>epds_001_01</code>).</li>
+<li>TLFB (<code>pex_ch_tlfb</code>): updated substance use flag logic to apply intended criteria (use during or after pregnancy across V01–V02; only correct for alcohol before). Removed all age variables (<em>gestational/adjusted/candidate age</em>).</li>
+</ul>
+</td>
+</tr>
 </tbody>
 </table>
 </div>
