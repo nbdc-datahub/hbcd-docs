@@ -8,33 +8,19 @@
 
 # Release Notes & History
 
-## Participant Population (Inclusion/Exclusion Criteria)
+## Participant Population
 
 HBCD enrolls at least 25% of participants who have more than minimal substance use during pregnancy, including opioids ([Si et al. 2024](https://doi.org/10.1016/j.dcn.2024.101432)). In addition, HBCD enrollment strategies aimed at yielding a study population that is representative of the individual and geographic characteristics of reproductive-aged women in the United States who had a birth in the past 12 months, and include an adequate comparison group for substance exposed individuals ([Nelson et al. 2024](https://doi.org/10.1016/j.dcn.2024.101441)). There are siblings enrolled in HBCD, some of whom are twins or triplets (multiples). IDs for multiples are presented in the *HBCD Private Release Notes* - see <a href="../../instruments/demo/visitinfo/#multiple-birth-participants" target="_blank">Multiple Birth Participants</a> under Visit Information for details.
 
-## General Rules Applied to All Data
+##  Exclusion Criteria/Filters
 
-<table class="table-no-vertical-lines">
-<tbody>
-<tr>
-    <td><strong>Exclusions applied to all data</strong></td>
-    <td>
-    <ul>
-      <li>Inactive participants/sessions excluded</li>
-    </ul></td>
-</tr>
-<tr>
-  <td><strong>Field Conversions</strong></td>
-  <td>
-    <ul>
-      <li>Empty fields are replaced with 'n/a'</li>
-      <li>Sex is set to 'Other' for participants with only one active Visit 1 (V01) visit</li>
-      <li>'Candidate_Age' values are replaced with 'n/a' for Visit 1 (V01)</li>
-    </ul>
-  </td>
-</tr>
-</tbody>
-</table>
+- Excluded if 'Brain Rating' is 'Abnormal'
+- Inactive participants/sessions excluded
+- Empty fields are replaced with 'n/a'
+- Sex is set to 'Other' for participants with only one active Visit 1 (V01) visit
+- 'Candidate_Age' values are replaced with 'n/a' for Visit 1 (V01)
+
+---
 
 ## Version: R2.0
 
@@ -201,7 +187,7 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 </ul>
 <p><b>MRI-Specific Updates</b></p>
 <ul>
-<li><b>Enhanced <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV</a> metadata</b>: The session-level <code>sub-[ID]_ses-{V0X}_scans.tsv</code> files now include detailed scanner metadata, including: <code>ScannerManufacturer</code>, <code>ScannerModel</code>, <code>ScannerSoftwareVersion</code>, and <code>ScannerSerialNumber</code> (enables differentiation of multiple scanners within the same site).   </li>
+<li><b>Enhanced <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV</a> metadata</b>: The session-level <code>sub-[ID]_ses-[V0X]_scans.tsv</code> files now include detailed scanner metadata, including: <code>ScannerManufacturer</code>, <code>ScannerModel</code>, <code>ScannerSoftwareVersion</code>, and <code>ScannerSerialNumber</code> (enables differentiation of multiple scanners within the same site).   </li>
 <li><strong>Processed data exclusion criteria updated</strong>: New procedures have been implemented to remove MRI derivatives with serious data quality issues.
 See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion-criteria">MR Exclusion Criteria</a> for full details.</li>
 </ul>

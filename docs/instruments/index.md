@@ -728,7 +728,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   <td><a href="eeg/tasks/#auditory-mismatch-negativity-task" target="_blank">Auditory Mismatch Negativity</a></td>
   <td style="text-align: center;"><code>MMN</code></td>
   <td rowspan="4">
-        <b>Raw</b>: <a href="eeg/#rawbids" target="_blank">Raw BIDS <i>(rawdata/sub-[ID]/ses-{V0X}/eeg/)</i></a><br><br>
+        <b>Raw</b>: <a href="eeg/#rawbids" target="_blank">Raw BIDS <i>(rawdata/sub-[ID]/ses-[V0X]/eeg/)</i></a><br><br>
         <b>Processed</b>: <a href="eeg/#rawbids" target="_blank">HBCD-MADE pipeline derivatives <i>(derivatives/made/)</i></a>
     </td>
 </tr>
