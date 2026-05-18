@@ -79,7 +79,7 @@ Basic Demographics includes global, visit-agnostic variables that do not change 
   <td>
     <ul>
       <li>Age of child at delivery</li>
-      <li>Calculated as: total elapsed weeks (rounded down) between <span class="tooltip tooltip-left">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB</li>
+      <li>Calculated as: # whole weeks (rounded down) between <span class="tooltip tooltip-top">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period</span></span> and child's DOB</li>
       <li>Derived from administrative records</li>
     </ul>
   </td>

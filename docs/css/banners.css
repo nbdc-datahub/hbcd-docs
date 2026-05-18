@@ -155,22 +155,12 @@
 .warning-collapsible-content ul {
   margin-top: 1rem;
   padding-left: 0.4rem;
-  line-height: 1;
 }
 
 .collapsible-content li,
 .alert-collapsible-content li,
 .warning-collapsible-content li {
-  margin-bottom: 0.1rem;
-  line-height: 1;
-}
-
-/* Minor unique rules kept */
-.collapsible-content b {
   line-height: 1.3;
-}
-.collapsible-content ul ul {
-  margin-top: 0.1rem;
 }
 
 /* Table collapsible (kept separate due to real differences) */
@@ -208,8 +198,7 @@
 }
 
 .table-collapsible-content li {
-  margin-bottom: 0.4rem;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 /* Static banner */

@@ -12,13 +12,25 @@
 
 HBCD enrolls at least 25% of participants who have more than minimal substance use during pregnancy, including opioids ([Si et al. 2024](https://doi.org/10.1016/j.dcn.2024.101432)). In addition, HBCD enrollment strategies aimed at yielding a study population that is representative of the individual and geographic characteristics of reproductive-aged women in the United States who had a birth in the past 12 months, and include an adequate comparison group for substance exposed individuals ([Nelson et al. 2024](https://doi.org/10.1016/j.dcn.2024.101441)). There are siblings enrolled in HBCD, some of whom are twins or triplets (multiples). IDs for multiples are presented in the *HBCD Private Release Notes* - see <a href="../../instruments/demo/visitinfo/#multiple-birth-participants" target="_blank">Multiple Birth Participants</a> under Visit Information for details.
 
-##  Exclusion Criteria/Filters
+##  Exclusion Criteria & Filters
 
-- Excluded if 'Brain Rating' is 'Abnormal'
+**Participants & Participant Information**
+
+- Participants with no brain rating or brain rating noted as "atypical" excluded
 - Inactive participants/sessions excluded
-- Empty fields are replaced with 'n/a'
 - Sex is set to 'Other' for participants with only one active Visit 1 (V01) visit
 - 'Candidate_Age' values are replaced with 'n/a' for Visit 1 (V01)
+<!-- - Excluded visits with 'LaunchPad Complete' Status set to 'Complete' after 2024-07-01 -->
+
+**Instrument & Field Exclusions**
+
+- ERICA forms — `mh_cg_erica_{fcm_adm_}{3_7m|7_9m}`  
+- GABI Setup/Receipt — `nt_pa_gabi_{setup|rcpt}`    
+- MRI Data & Scan Summary Forms (pre/post scan prep) — `mri_ra_chkl_{data|scan}`  
+- NIH Baby ToolBox — `ncl_ch_nbtb`
+- Participant / RA Feedback — `adm_cg_fb` / `adm_ra_fb`    
+- Urgent Events & Participant Alerts — `adm_fd_urgent` / `admin_alert`
+- Fields including *examiner*, *REDCap Complete status*, *timestamps*, *visit stage*, and *visit start*
 
 ---
 
@@ -172,7 +184,7 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 <div id="2.0-mri-eeg" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-brain"></i></span>
   <span class="text-with-link">
-  <span class="text">MRI & EEG: New processed derivatives, full raw BIDS inclusion, & scanner metadata</span>
+  <span class="text">MRI & EEG: New derivatives, full raw BIDS inclusion, & scanner metadata</span>
   <a class="anchor-link" href="#2.0-mri-eeg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -180,16 +192,11 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Cross-Modality Updates (MRI &amp; EEG)</b></p>
 <ul>
-<li><strong>Full Raw BIDS Inclusion</strong>: All raw BIDS data are now included for both MRI and EEG (previously, only raw data that passed initial raw-data quality control were released).</li>
-<li><strong>Additional participant- and visit-level data</strong> </li>
-</ul>
-<p><b>MRI-Specific Updates</b></p>
-<ul>
-<li><b>Enhanced <a href="../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">Scans TSV</a> metadata</b>: The session-level <code>sub-[ID]_ses-[V0X]_scans.tsv</code> files now include detailed scanner metadata, including: <code>ScannerManufacturer</code>, <code>ScannerModel</code>, <code>ScannerSoftwareVersion</code>, and <code>ScannerSerialNumber</code> (enables differentiation of multiple scanners within the same site).   </li>
-<li><strong>Processed data exclusion criteria updated</strong>: New procedures have been implemented to remove MRI derivatives with serious data quality issues.
-See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion-criteria">MR Exclusion Criteria</a> for full details.</li>
+<li>All raw BIDS data are now included for both MRI and EEG (previously, only raw data that passed raw-data quality control were released).</li>
+<li>Additional participant- and visit-level data.</li>
+<li>MRI scanner details now included in the session-level <code>sub-[ID]_ses-[V0X]_scans.tsv</code> files, including: <code>ScannerManufacturer</code>, <code>ScannerModel</code>, <code>ScannerSoftwareVersion</code>, and <code>ScannerSerialNumber</code> (enables differentiation of multiple scanners within the same site).</li>
+<li>New procedures were implemented to remove processed MRI derivatives with serious data quality issues - see <a href="../../instruments/mri/#processed-derivatives">MR Exclusion Criteria</a> for details.</li>
 </ul>
 </div>
 
@@ -637,36 +644,10 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
   </div>
 </div>
 
-#### Participant & Visit Exclusions
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr>
-  <td><strong>Excluded Participants</strong></td>
-  <td>
-    <ul>
-      <li>Participants with no brain rating or brain rating noted as "atypical"</li>
-      <li>Postnatal Recruitment participants</li>
-      <li>Multiple Birth participants</li>
-    </ul>
-  </td>
-</tr>
-<tr>
-    <td><strong>Excluded Visit Data</strong></td>
-    <td>
-    <ul>
-      <li>Visits with 'LaunchPad Complete' Status set to 'Complete' after 2024-07-01.</li>
-    </ul>
-</tr>
-</tbody>
-</table>
-
-#### Instrument & Field Exclusions
-
 <div id="r1-exclusions" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-filter"></i></span>
   <span class="text-with-link">
-  <span class="text"><i>Click to Expand</i></span>
+  <span class="text">R1.0 Exclusion Criteria & Filters</span>
   <a class="anchor-link" href="#r1-exclusions" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -674,40 +655,31 @@ See: <a href="../../instruments/mri/exclusion-criteria/#processed-data-exclusion
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 1.0em;"><strong>Instrument Exclusions</strong></p>
-<table class="table-no-vertical-lines">
-<thead>
-  <th>Instrument</th>
-  <th>Table Name</th>
-</thead>
-<tbody>
-<tr><td>Biosensor Receipt Form</td><td><code>sens_ch_rcpt</code></td></tr>
-<tr><td>EEG Acquisition Checklists</td><td><code>eeg_ch_chkl</code> / <code>eeg_ch_chkl_&lt;1|2&gt;</code></td></tr>
-<tr><td>ERICA forms</td><td><code>mh_cg_erica_&lt;3_7m|7_9m&gt;</code> / <code>mh_cg_erica_fcm_adm_&lt;3_7m|7_9m&gt;</code></td></tr>
-<tr><td>GABI Setup/Receipt</td><td><code>nt_pa_gabi_setup</code> / <code>nt_pa_gabi_rcpt</code></td></tr>
-<tr><td>MRI Checklists & Pre/Post Scan Prep</td><td><code>mri_ra_chkl_data</code> / <code>mri_ra_chkl_scan</code> / <code>mri_ra_prep</code></td></tr>
-<tr><td>NIH Baby ToolBox</td><td><code>ncl_ch_nbtb</code></td></tr>
-<tr><td>Participant / RA Feedback</td><td><code>adm_cg_fb</code> / <code>adm_ra_fb</code></td></tr>
-<tr><td>Urgent Events & Participant Alerts</td><td><code>adm_fd_urgent</code> / <code>admin_alert</code></td></tr>
-<tr><td>Visit Start / Visit Level Data</td><td><code>visit_start</code> / <code>adm_fd_visitdata</code></td></tr>
-</tbody>
-</table>
-<p style="font-size: 1.0em;"><strong>Instrument Field Exclusions</strong></p>
-<table class="table-no-vertical-lines">
-<thead>
-  <th>Table Field(s)</th>
-  <th>Field Name(s)/Details</th>
-</thead>
-<tbody>
-  <tr><td>Date of Administration</td><td><code>date_taken</code></td></tr>
-  <tr><td>Examiner</td><td><code>examiner</code></td></tr>
-  <tr><td>REDCap Complete status</td><td><code>complete</code></td>
-  <tr><td>Timestamps</td><td><code>timestamp</code> / <code>timestamp_start</code> / <code>timestamp_stop</code> / <code>timestamp_redcap_locked</code></td></tr>
-  </tr><tr><td>Visit Data</td><td><code>visit_stage</code> removed from the <code>visit_data</code> category</td></tr>
-  <tr><td>Breast Feeding History Fields</td><td><code>ph_cg_phx_i_bfh</code> – All fields except <code>001</code> excluded</td></tr>
-  <tr><td>Height/Weight/Head Circumference BMI</td><td><code>ph_ch_anthro</code> – BMI-related fields removed</td></tr>
-</tbody>
-</table>
+<p><strong>Excluded Participants &amp; Visit Data</strong></p>
+<ul>
+<li>Participants with no brain rating or brain rating noted as &quot;atypical&quot;</li>
+<li>Postnatal Recruitment and Multiple Birth participants</li>
+<li>Excluded visits with &#39;LaunchPad Complete&#39; Status set to &#39;Complete&#39; after 2024-07-01</li>
+</ul>
+<p><strong>Instrument &amp; Field Exclusions</strong></p>
+<ul>
+<li>Biosensor Receipt Form — <code>sens_ch_rcpt</code></li>
+<li>EEG Acquisition Checklists — <code>eeg_ch_chkl</code> / <code>eeg_ch_chkl_&lt;1|2&gt;</code>    </li>
+<li>ERICA forms — <code>mh_cg_erica_{3_7m|7_9m}</code> / <code>mh_cg_erica_fcm_adm_{3_7m|7_9m}</code>    </li>
+<li>GABI Setup/Receipt — <code>nt_pa_gabi_setup</code> / <code>nt_pa_gabi_rcpt</code>    </li>
+<li>MRI Checklists &amp; Pre/Post Scan Prep — <code>mri_ra_chkl_data</code> / <code>mri_ra_chkl_scan</code> / <code>mri_ra_prep</code>    </li>
+<li>NIH Baby ToolBox — <code>ncl_ch_nbtb</code></li>
+<li>Participant / RA Feedback — <code>adm_cg_fb</code> / <code>adm_ra_fb</code>    </li>
+<li>Urgent Events &amp; Participant Alerts — <code>adm_fd_urgent</code> / <code>admin_alert</code></li>
+<li>Visit Start / Visit Level Data — <code>visit_start</code> / <code>adm_fd_visitdata</code></li>
+<li>Date of Administration — <code>date_taken</code>  </li>
+<li>Examiner — <code>examiner</code>  </li>
+<li>REDCap Complete status — <code>complete</code>  </li>
+<li>Timestamps — <code>timestamp</code> / <code>timestamp_start</code> / <code>timestamp_stop</code> / <code>timestamp_redcap_locked</code>  </li>
+<li>Visit Data — <code>visit_stage</code> removed from the <code>visit_data</code> category  </li>
+<li>Breast Feeding History Fields — <code>ph_cg_phx_i_bfh</code> – All fields except <code>001</code> excluded  </li>
+<li>Height/Weight/Head Circumference BMI — <code>ph_ch_anthro</code> – BMI-related fields removed  </li>
+</ul>
 </div>
 
 
