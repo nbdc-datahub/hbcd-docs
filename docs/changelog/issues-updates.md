@@ -59,7 +59,41 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
-<th></th><th>Table/Topic</th><th>Summary</th>
+<th></th><th>Table</th><th>Summary</th>
+<th style='text-align: center;'>
+  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
+</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ERICA</td>
+<td>Addition of all age and <code>date_taken</code> fields (currently excluded due to use of coding rather than visit dates).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i><i class="fas fa-bug icon-bug"></i></td>
+<td>ERICA</td>
+<td>
+A future release will include reliability codes integrated into the primary coding dataset. Until then, users must perform this integration manually: <b>see the ERICA <a href="../../instruments/bcgi/erica/#warning">Data Warning</a> for instructions.</b>
+<br>
+Instructions include cleaning the current files to exclude n=44 participants with incorrect code values (data entry/form errors) and capping <code>b_raw</code> values at 3.0 (n=3 participants). These issues will also be corrected in future release data.
+</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+
+</tbody></table>
+
+
+<!-- 
+
+### ORIG
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th></th><th>Table</th><th>Summary</th>
 <th style='text-align: center;'>
   <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
 </th></tr>
@@ -97,14 +131,4 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 
-</tbody></table>
-
-
-<!-- ### ORIG:
-
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>ERICA</td>
-<td>For a subset of participants, ERICA Codes (N=17) or Reliability (N=2) form scores are inaccurate; corrected scores are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>. Users should further exclude participants with values of 0 across all scores (N=23 Codes, 12 Reliability) prior to analysis. </td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr> -->
+</tbody></table> -->
