@@ -35,25 +35,6 @@
   margin-right: 0.4em;
   font-size: 1em;
 }
-/* DOMAINS LEGEND*/
-.study-legend {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  font-size: 1.0em;
-}
-.study-legend td {
-  vertical-align: top !important;
-  padding-top: 0;
-  line-height: 1.5;
-  border-left: 3px solid transparent;
-}
-.study-legend i {
-  margin-right: 6px;
-  color: #0077ff;
-  width: 18px;
-  text-align: center;
-}
 </style>
 
 # Known Issues & Pending Updates 
@@ -61,43 +42,6 @@
 The tables below summarize known issues affecting the current data release and pending updates across study instruments. Entries are organized by domain and include the expected release in which each fix or update will be implemented. This page is updated regularly as new issues are identified and updates are planned.
 
 To ask a question or report an issue, please submit a ticket through the [Help Center in the NBDC Data Access Platform →](https://nbdc.lassoinformatics.com/issue-tracker)
-
-<div id="domains" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-book"></i></span>
-  <span class="text-with-link">
-    <span class="text">Domains Quick Guide</span>
-    <a class="anchor-link" href="#domains" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p><i>Click icons to view full list of associated instruments.</i></b></p>
-<table class="study-legend">
-<tbody>
-<tr>
-<td>
-<a style="margin-left: 2px;" href="../../instruments/#adm" target="_blank"><i class="fa fa-clipboard-list"></i></a> Administrative<br>
-<a style="margin-left: 2px;" href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics<br><br>
-<b>Brain Activity & Biosensors</b><br>
-<a style="margin-left: 2px;" href="../../instruments/#eeg" target="_blank"><i class="fa-solid fa-file-waveform"></i></a> EEG<br>
-<a style="margin-left: 2px;" href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging<br>
-<a style="margin-left: 2px;" href="../../instruments/#sensors" target="_blank"><i class="fa fa-microchip"></i></a> Novel Technologies & Wearable Sensors
-</td>
-<td>
-<b>Behavior, Biology, & Environment</b><br>
-<a style="margin-left: 2px;" href="../../instruments/#mh" target="_blank"><i class="fa fa-people-arrows"></i></a> Behavior & Caregiver–Child Interaction<br>
-<a style="margin-left: 2px;" href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics<br>
-<a style="margin-left: 2px;" href="../../instruments/#ncl" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language<br>
-<a style="margin-left: 2px;" href="../../instruments/#ph" target="_blank"><i class="fa fa-heart-pulse"></i></a> Physical Health<br>
-<a style="margin-left: 2px;" href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use<br>
-<a style="margin-left: 2px;" href="../../instruments/#sed" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
-</td>
-</tr>
-</tbody>
-</table>
-</div>
 
 ---
 
@@ -108,7 +52,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </p>
     
 ---
-
 
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
 ### Administrative
