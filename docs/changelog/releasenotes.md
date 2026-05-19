@@ -42,8 +42,6 @@
   </div>
 </div>
 
-<h4>Below are the key changes made in Release 2.0 - click to expand each section for details.</h4>
-
 <div id="2.0-cohorts" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-user-group"></i></span>
   <span class="text-with-link">
