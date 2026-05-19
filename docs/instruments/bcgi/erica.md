@@ -152,26 +152,6 @@ The ERICA is coded using a one-pass, global coding system adapted for HBCD. Seve
 
 Codes are scored on a 4-point scale (0-3), reflecting the frequency, intensity, and duration of observed behaviors across the paradigm, with higher scores indicating higher levels of observed behavior. See [Edwards et al. (2024)](https://doi.org/10.1016/j.dcn.2024.101422) for additional details on the ERICA paradigm and adaptation for HBCD.
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-    <span class="text">HBCD Modification Details</span>
-    <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p style="color: red;">PLACEHOLDER - should anything be added or moved here from instrument details above?</p>
-<ul style="color: red;">
-<li>Was the language altered for use of gender-neutral terms? If yes, briefly describe</li>
-<li>Was the language altered from 'parent' to caregiver or alternate? If yes, briefly describe the changes made</li>
-<li><strong>Do any modifications made for HBCD impact data analyses or interpretation of results?</strong> If yes, please describe</li>
-<li>Does the Workgroup recommend measure changes be noted in future publications? If yes, are there particular details you would want users to be sure to mention?</li>
-</ul>
-</div>
-
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
