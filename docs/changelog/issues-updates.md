@@ -71,14 +71,40 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td>Addition of all age and <code>date_taken</code> fields (currently excluded due to use of coding rather than visit dates).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
+
 <tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ERICA</td>
+<td>Integrate reliability codes into the primary coding dataset. <b>Users must perform integration themselves for current release data - see <a href="../../instruments/bcgi/erica/#warning">Data Warning</a> for instructions.</b></td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>ERICA</td>
+<td>Users should clean the <code>mh_cg_erica_3_9m</code> (primary coding data file) as follows (fixes coming in a future release):
+<ul>
+  <li>
+    Exclude n=44 participants with incorrect code values (data entry/form errors): 
+    <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv"><code>ERICA_2.1_DataError_EXCLUSIONS.csv</code></a>
+    (<a href="https://hbcd-docs-private.lassoinformatics.com">HBCD Private Release Notes</a>)
+  </li>
+  <li>
+    Cap <code>b_raw</code> values at 3.0 (n=3 participants)
+  </li>
+</ul>
+</td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+</tr>
+
+</tbody></table>
+
+
+<!-- ### ORIG:
+
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>ERICA</td>
 <td>For a subset of participants, ERICA Codes (N=17) or Reliability (N=2) form scores are inaccurate; corrected scores are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>. Users should further exclude participants with values of 0 across all scores (N=23 Codes, 12 Reliability) prior to analysis. </td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr>
-</tbody></table>
-
-
+</tr> -->

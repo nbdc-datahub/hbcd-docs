@@ -128,7 +128,15 @@ Inter-rater reliability was quantified using a two-way mixed-effects intraclass 
   <span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<p>Prior to analysis, <b>a final, integrated analytic data set</b> must be created, in which data from the reliability codes (<code>mh_cg_erica_rel_3_9m</code>) are integrated into the primary coding data file (<code>mh_cg_erica_3_9m</code>). Please see instructions under <a href="../../../changelog/issues-updates/#behavior-child-caregiver-interaction" target="_blank">Known Issues & Pending Updates</a>. <b>Failure to correctly integrate these data files prior to analysis will result in incorrect analyses.</b></p>
+<p><b>Integrated Analytic Dataset (REQUIRED)</b></p>
+<p>Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (<code>mh_cg_erica_rel_3_9m</code>) into the primary coding data (<code>mh_cg_erica_3_9m</code>). <b>Failure to integrate these data prior to analysis will result in incorrect results.</b> In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release.</p>
+<p>Download the instructions and required participant lists <i>(available via the <a href="https://hbcd-docs-private.lassoinformatics.com">HBCD Private Release Notes</a> - DUC access required)</i> at the following links:</p>
+<ul>
+<li><a href="../ERICA_2.1_Integrated_Analytic_Data_INSTRUCTIONS.pdf" target="_blank">Integration Instructions (PDF)</a></li>
+<li><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv"><code>ERICA_2.1_DataError_EXCLUSIONS.csv</code></a></li>
+<li><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_Analytic_REMOVALS.csv"><code>ERICA_2.1_Analytic_REMOVALS.csv</code></a></li></ul>
+<hr>
+<p><b>General</b></p>
 <p>Data Release 2.1 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month).</p>
 <p>Coded data for a subset of participants may be missing from this data release for various reasons. These data will be added in future releases.</p>
 <p>The ERICA was administered in Spanish and English. The language of administration (i.e., language in which RAs delivered the instructions) does not always correspond with the language spoken by the caregiver/child during the activities. All videos in which the dyad speaks Spanish during the activities were coded by fully Spanish-English bilingual coders.</p>
