@@ -29,7 +29,7 @@
 <tr>
     <td>Processed Data: BrainSwipes</td>
     <td>Structural and functional visual reports derived from XCP-D derivative outputs - <a href="../../brainswipes/">see details</a></td>
-    <td>Available as tabulated derivatives, with most up-to-date results provided between releases in the HBCD Private Release Notes - <a href="../../brainswipes/#location-of-brainswipes-qc-results">see details</a></td>
+    <td>Available as tabulated derivatives</td>
 </tr>
 </tbody>
 </table> -->
