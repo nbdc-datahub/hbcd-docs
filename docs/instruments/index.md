@@ -713,7 +713,7 @@ PATCH RELEASE
 <div class="table-collapsible-content">
 <p>EEG release data, including EEG (file-based data) and Tabular EEG domains, are displayed below. 
 See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critical information on protocols, quality control procedures, etc.</p>
-<table class="compact-table-no-vertical-lines">
+<table class="table-no-vertical-lines">
 <thead>
 <tr>
 <th width="15%"><i class="fa-solid fa-folder-open header-icon"></i> EEG</th>
@@ -729,7 +729,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   <td style="text-align: center;"><code>MMN</code></td>
   <td rowspan="4">
         <b>Raw</b>: <a href="eeg/#rawbids" target="_blank">Raw BIDS <i>(rawdata/sub-[ID]/ses-[V0X]/eeg/)</i></a><br><br>
-        <b>Processed</b>: <a href="eeg/#rawbids" target="_blank">HBCD-MADE pipeline derivatives <i>(derivatives/made/)</i></a>
+        <b>Processed</b>: <a href="eeg/#made" target="_blank">HBCD-MADE pipeline derivatives <i>(derivatives/made/)</i></a>
     </td>
 </tr>
 <tr><td><a href="eeg/tasks/#faces-task" target="_blank">Faces</a></td>
@@ -741,7 +741,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 </tbody>
 </table>
 
-<table class="compact-table-no-vertical-lines">
+<table class="table-no-vertical-lines">
 <thead>
 <tr>
 <th width="15%"><i class="fa-solid fa-table header-icon"></i> Tabular EEG</th>
@@ -766,9 +766,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   <td>Tabulated HBCD-MADE derivatives<br>
   <i>(See <a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>Tabulated Pipeline Derivatives</a> for details)</i></td>
   <td><code>eeg_made_task-<span class="blue-text">{ALL TASKS}</span>_acq-eeg_preprocessingReport</code><br>
-    <code>eeg_made_task-FACE_ERPSummaryStats</code><br>
-    <code>eeg_made_task-MMN_ERPSummaryStats</code><br>
-    <code>eeg_made_task-VEP_ERPSummaryStats</code>
+    <code>eeg_made_task-<span class="blue-text">{FACE|MMN|VEP}</span>FACE_ERPSummaryStats</code>
 </td>
 </tr>
 </tbody>
