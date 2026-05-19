@@ -336,7 +336,7 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Instruction</td>
-<td>The 'instruction' Data Dictionary element is currently blank.</td>
+<td>The 'instruction' data dictionary element is currently blank.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
@@ -483,7 +483,7 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Growth</td>
-<td>The Data Dictionary element <code>type_data</code> for <code>average_bmi</code> will be corrected to <code>double</code> (currently=<code>character</code>).</td>
+<td>The data dictionary element <code>type_data</code> for <code>average_bmi</code> will be corrected to <code>double</code> (currently=<code>character</code>).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
