@@ -400,8 +400,26 @@ pre > code {
 }
 
 
-/* CHANGELOG CARDS */
-
+/* RELEASE NOTES */
+/* RELEASE DATE BANNER */
+.release-banner {
+  background: #f2f6fc;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.release-banner .release-text {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #2a5d9f;
+}
+.release-banner .release-icon {
+  margin-right: 8px;
+  vertical-align: 1px;
+}
+/* CHANGE/COUNTS CARDS AT TOP OF PAGE */
 .tag {
   display: inline-block;
   font-size: 0.7em;
