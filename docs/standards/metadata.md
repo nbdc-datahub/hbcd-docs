@@ -102,11 +102,10 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   <td>Variable name within a table (e.g. <code>sed_bm_demo_edu_001</code>)</td>
 </tr>
 <tr>
-  <td><code>label</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i>/<br><code>description</code></td>
+  <td><code>description</code></td>
   <td>Variable label</td>
-  <td>Human-readable label for variable (e.g. <i>Highest grade completed</i>)</td>
+  <td>Human-readable label for variable (e.g. <i>Highest grade completed</i>). <i>Alternative name: <code>label</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></i></td>
 </tr>
-
 <tr>
   <td><code>levels</code>&nbsp; <i style="color: teal;" class="fa fa-language"></i></td>
   <td>Levels</td>
@@ -208,7 +207,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <div id="type_var" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i style="margin-right: 4px;" class="fa fa-book"></i></span>
   <span class="text-with-link">
-  <span class="text">Variable Type (<code>type_var</code>) Definitions</span>
+  <span class="text">Variable Types</span>
   <a class="anchor-link" href="#type_var" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -290,4 +289,4 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 When using datasets downloaded from the NBDC Data Access Platform, two additional variables not listed in the data dictionary, `cohort` and `site`, are included. These are derived from the <a href="../../instruments/demo/visitinfo" target="_blank">Visit Level Data</a> (`par_visit_data`) table. 
 
 - **`cohort`** — Derived from `par_visit_data_cohort`. See <a href="../../instruments/demo/visitinfo/#cohort-caregiver-types" target="_blank">Cohort & Caregiver Types</a> for details.  
-- **`site`** — Derived from `par_visit_data_site`, indicating the site where each visit occurred (which may vary between visits). Note that this differs from `recruitment_site` in <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a>, which refers to the site at time of recruitment.
+- **`site`** — Derived from `par_visit_data_site`, indicating the site where each visit occurred. Note that this differs from `recruitment_site` in <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a>, which refers to the site at time of recruitment.
