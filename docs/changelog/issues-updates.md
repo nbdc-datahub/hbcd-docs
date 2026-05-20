@@ -131,8 +131,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 </tbody></table>
 
-
-### Biospecimens &amp; Omics
+### Biospecimens & Omics
 
 <table class="compact-table-no-vertical-lines">
 <thead>

@@ -159,7 +159,6 @@ Not all raw EEG sessions are eligible for processing. Inclusion in the HBCD-MADE
 
 Raw BIDS data are released for all collected EEG sessions, regardless of processing eligibility. Therefore, **differences in session counts between raw BIDS and HBCD-MADE derivatives are expected.** In addition to exclusion based on quality control, ~2% of sessions had technical or acquisition issues that prevented complete processing. These data may be made available in future releases as issues are resolved.
 
-
 ## Resources
 - [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
 - [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030)

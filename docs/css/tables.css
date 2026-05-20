@@ -37,8 +37,7 @@ th, td {
   border-bottom: 1px solid #ccc;
   border-left: none !important;
   border-right: none !important;
-  padding: 8px;
-  text-align: left;
+  padding: 5px 8px !important;
   background-color: rgba(255, 255, 255, 0.6) !important; 
   vertical-align: top !important;
 }
