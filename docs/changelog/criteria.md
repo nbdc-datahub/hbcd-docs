@@ -8,6 +8,8 @@ HBCD enrolls at least 25% of participants who have more than minimal substance u
 
 ### Participants & Participant Information
 
+- Visit data collected prior to the January 2026 data freeze are excluded from Release 2.X data 
+ <!-- Excluded visits with 'LaunchPad Complete' Status set to 'Complete' after 2026-01-XX -->
 - Participants with no brain rating or brain rating noted as "atypical" excluded
 - Inactive participants/sessions excluded
 - Sex is set to 'Other' for participants with only one active Visit 1 (V01) visit
