@@ -8,12 +8,13 @@
 
 # 2.0 Release Notes 
 
-<div style="background:#f2f6fc; padding:12px 20px; border-radius:10px; text-align:center; margin-bottom:25px; box-shadow:0 2px 4px rgba(0,0,0,0.05);">
-  <span style="font-size:1.1em; font-weight:600; color:#2a5d9f;">
-    <i class="fa-solid fa-calendar header-icon"></i>
+<div class="release-banner">
+  <span class="release-text">
+    <i class="fa-solid fa-calendar release-icon"></i>
     Release Date: 2026-02-11
   </span>
 </div>
+
 <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin:20px 0;">
 <div class="card">
 <h3>Participants</h3>
