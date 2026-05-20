@@ -153,8 +153,8 @@ nav:
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
   - Release Notes: 
-    - Participants & Exclusion Criteria: changelog/criteria.md
-    - Release Notes & History: changelog/releasenotes.md
+    - 2.0 Release Notes: changelog/releasenotes.md
+    - Release History: changelog/release-history.md
     - Known Issues & Pending Updates: changelog/issues-updates.md
   - Help & Support:
     - FAQs: help/faq.md
