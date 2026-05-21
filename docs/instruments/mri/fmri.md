@@ -30,12 +30,10 @@
 <i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span>
 </div>
 <div class="warning-collapsible-content">
-<h3>Avoid V02 Derivatives Processed with Infant FreeSurfer</h3>
-<p><b>Recommendation:</b> Use M-CRIB-S derivatives for all neonatal (V02; 0–1 month) analyses.</p>
-
-<p>V02 data were processed in Infant fMRIPrep via two separate surface reconstruction workflows, Infant FreeSurfer and M-CRIB-S (<a href="#m-crib-s-freesurfer">details</a>). Expert review and BrainSwipes QC consistently showed higher-quality surfaces from M-CRIB-S. This is expected, as M-CRIB-S uses T2w images, which are much higher contrast than the T1w (on which FreeSurfer relies) in neonates. <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a> report optimal performance for M-CRIB-S ≤5 months and Infant FreeSurfer ≥3 months.</p>
+<h3>V02: Use Derivatives Processed with M-CRIB-S (<code>hash-0f306a2f</code>)</h3>
+<p><b>Recommendation:</b> Use M-CRIB-S derivatives for all neonatal (V02; 0–1 month) analyses (<code>nibabies-0f306a2f</code>/<code>xcp_d-0f306a2f+0ef9c88a</code>)</p>
+<p>V02 data were processed in Infant fMRIPrep via two separate surface reconstruction workflows, M-CRIB-S (<code>hash-0f306a2f</code>) and Infant FreeSurfer (<code>hash-2afa9081</code>) (<a href="#m-crib-s-freesurfer">details</a>). Expert review and BrainSwipes QC consistently showed higher-quality surfaces from M-CRIB-S. This is expected, as M-CRIB-S uses T2w images, which are much higher contrast than the T1w (on which FreeSurfer relies) in neonates. <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a> report optimal performance for M-CRIB-S ≤5 months and Infant FreeSurfer ≥3 months.</p>
 <p><i>Note:</i> M-CRIB-S outputs can still be affected by poor T1w quality as it uses an externally generated brain segmentation from BIBSNet fed into Infant fMRIPrep as an external derivative. BIBSNet uses both T1w and T2w (when available), and low-quality T1w data may degrade segmentation quality.</p>
-<!-- <i>Note:</i> Poor T1w quality can still affect M-CRIB-S results. BIBSNet uses both T1w and T2w (when available) for segmentation; low-quality T1w data can degrade segmentation accuracy, particularly via poor T2w–T1w registration.</p> -->
 <h3>Signal Intensity Clipping Artifact</h3>
 <!-- Updates to real-time reconstruction are in development to recover affected data. -->
 <p>A subset of Philips fMRI scans exhibit signal intensity clipping, where voxel intensities &gt;4095 are capped due to a reconstruction scaling error. This produces hyperintense regions that can distort BOLD registration and impact downstream measures such as functional connectivity. The issue was identified during pilot data collection and fixed at most sites before the main study. Residual cases remain at VAN and CCH (patch implemented Oct 2024). Approximately ~20% of scans at these sites show some clipping, with ~6% classified as severe. Severe cases fail raw data QC, so are naturally filtered out from inclusion in downstream processing steps.</p>
