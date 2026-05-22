@@ -95,7 +95,7 @@ Growth is a standard direct measure of child growth, including height or length 
 </div>
 <div class="collapsible-content">
 <p><b>Anthropometric Z-Score and Percentile Calculations</b><br>
-Z-scores and percentiles were calculated starting at V02 onward <span style="color: red;">USING XYZ CALCULATION METHOD</span>. Estimated date of delivery was used as the age variable for the calculations, inherently adjusting for pre-maturity. WHO growth charts were used for participants &lt;2 years old, and CDC growth charts were used for participants 2 years and older.</p>
+Z-scores and percentiles were calculated for V02 onward <span style="color: red;">USING XYZ CALCULATION METHOD</span>. Estimated date of delivery was used as the age variable for the calculations, inherently adjusting for pre-maturity. WHO growth charts were used for participants &lt;2 years old, and CDC growth charts were used for participants 2 years and older.</p>
 </div>
 
 <!-- LUCI INTERNAL NOTE: NEED TO UPDATE SCORING -->
