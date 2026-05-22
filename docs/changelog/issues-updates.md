@@ -131,7 +131,8 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 </tbody></table>
 
-### Biospecimens & Omics
+
+### Biospecimens &amp; Omics
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -146,14 +147,14 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Nails</td>
-<td>Add unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+<td>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Nails</td>
-<td>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+<td>Add unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
@@ -191,18 +192,15 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
-<td>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+<td>Remove internal <code>recruitment_site</code> categories only present in data dictionary (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
-
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
-<td>
-Remove internal <code>recruitment_site</code> categories only present in data dictionary (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+<td>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
-
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>RESTRUCTURE</td>
@@ -238,14 +236,14 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>.set files</td>
-<td>Update EEG .set files to include subject release IDs.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+<td>Age fields</td>
+<td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Age fields</td>
-<td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
+<td>.set files</td>
+<td>Update EEG .set files to include subject release IDs.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 <tr>
@@ -323,13 +321,13 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Run ID</td>
-<td>The <code>run-[X]</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+<td>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>XCP-D</td>
-<td>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-[X]_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata will be corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
+<td>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata will be corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 <tr>
@@ -337,6 +335,12 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <td>BrainSwipes</td>
 <td>BrainSwipes QC results will be updated with latest results  currently available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>QSIRecon</td>
+<td>Tabulated data for QSIRecon (participant data combined across derivative files into single tidy table) will be provided in a future release.</td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -355,12 +359,6 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <td>Summary Forms</td>
 <td>Add MRI Scan Session + Data Summary Forms (information from the MRI technician obtained on day of scan).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Var name length</td>
-<td>Variable names for tabulated MRI data (particularly XCP-D outputs) can be upwards of 167 characters, which may exceed variable name limits in some software and lead to truncation or import errors.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -419,12 +417,6 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Growth</td>
-<td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Growth</td>
 <td>The data dictionary element <code>type_data</code> for <code>average_bmi</code> will be corrected to <code>double</code> (currently=<code>character</code>).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
@@ -432,6 +424,12 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Growth</td>
 <td>Growth (<code>ph_ch_anthro</code>) filter ranges will be updated to be visit-specific, as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Growth</td>
+<td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
@@ -466,11 +464,12 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>ecPROMIS-PAG</td>
+<td>ecPROMIS-PAGS</td>
 <td>Add scores to <code>ph_cg_pms__pags</code>. Until added, scores can be calculated by following the <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 </tbody></table>
+
 
 ### Pregnancy &amp; Environmental Exposure
 
@@ -517,7 +516,7 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>PEX Health</td>
-<td>ICD codes for the <code>pex_bm_health*</code> tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
+<td>ICD codes for the <code>pex_bm_health*</code>  tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table>
@@ -556,8 +555,14 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Child Demo</td>
-<td>Household roster will be updated to clarify that counts exclude the main child - see <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> ("Household Roster")</td>
+<td>see <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> ("Household Roster")</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Demo</td>
+<td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -576,11 +581,5 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <td>Demo</td>
 <td>Add <code>work_{002–004}_post</code> (worked for pay + for X hours while pregnant) and <code>work_004__01</code> (job held ≥1 month since V01) (adult table).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Demo</td>
-<td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table><!-- END KNOWN_ISSUES_TABLE -->

@@ -27,7 +27,6 @@ During quality control, a frequently observed issue across all tasks was the irr
 <p>The <b>StimTracker</b> device used during EEG acquisition for visits V03, V04, and V06 provides precise timing for auditory and visual stimulus onset and marks task start and end points. The EEG Core identified an <b>electrical artifact</b> in a subset of files caused by intermittent spikes from the device at both stimulus onset and offset.</p>
 <p>To detect the artifact, the EEG Core developed a custom MATLAB script that averages all epochs per task and flags voltage fluctuations >1 µV in two time windows: onset (–10 to 10 ms) and offset (250 to 270 ms) of the voltage spike.<p>
 </div>
-  <!-- Image on the right -->
   <div style="flex: 1; text-align: center;">
     <img src="../images/Fig1.png" style="max-width:100%; height:auto; display:block; margin:0 auto;">
     <p style="font-size: 0.8em; margin-top: 5px; line-height: 1.1; max-width:100%; margin-left:auto; margin-right:auto; text-align:justify;">
