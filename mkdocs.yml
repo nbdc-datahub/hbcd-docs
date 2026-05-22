@@ -154,9 +154,7 @@ nav:
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
   - Release Notes: 
     - Release Notes & History: changelog/release-notes.md
-    # - 2.0 Release Notes: changelog/releasenotes.md
     - Known Issues & Pending Updates: changelog/issues-updates.md
-    # - Release History: changelog/release-history.md
   - Help & Support:
     - FAQs: help/faq.md
     - Report Issues: help/reportissue.md

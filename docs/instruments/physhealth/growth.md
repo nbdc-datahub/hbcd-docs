@@ -1,5 +1,7 @@
 # Growth
 
+<!-- LUCI INTERNAL PATCH NOTE: update this page from 2.1 branch -->
+
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
 
