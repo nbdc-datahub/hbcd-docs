@@ -1,12 +1,6 @@
-<style>
-.wy-nav-content {
-    width: 90% !important;
-    max-width: 90% !important;
-    flex-grow: 1 !important;
-}
-</style>   
+# Release Notes & History
 
-# 2.0 Release Notes 
+## Release 2.0
 
 <div class="release-banner">
   <span class="release-text">
@@ -43,7 +37,7 @@
   </div>
 </div>
 
-## Key Changes in 2.0
+### Key Changes in 2.0
 
 <ul>
 <li>New participant cohorts included: multiple birth participants and postnatal recruits (PNR)</li>
@@ -52,11 +46,11 @@
 <li>Major data fixes and harmonization updates across multiple domains</li>
 </ul>
 
-## Participant Population
+### Participant Population
 
 HBCD enrolls at least 25% of participants with more than minimal substance use during pregnancy, including opioids ([Si et al. 2024](https://doi.org/10.1016/j.dcn.2024.101432)). Enrollment strategies aim to yield a study population representative of individual and geographic characteristics of pregnant and postpartum individuals (18 years or older) in the U.S., including an adequate comparison group for substance-exposed individuals ([Nelson et al. 2024](https://doi.org/10.1016/j.dcn.2024.101441)). 
 
-## Inclusion & Exclusion Criteria
+### Inclusion & Exclusion Criteria
 
 <table class="compact-table-no-vertical-lines" style="font-size: 16px;">
 <thead>
@@ -117,7 +111,7 @@ HBCD enrolls at least 25% of participants with more than minimal substance use d
 </tbody>
 </table>
 
-## New Cohorts & Instruments
+### New Cohorts & Instruments
 
 Release data now include **multiple birth participants** (multiple participants from the same birth, e.g. twins) and **postnatal recruits (PNR)** who joined the study after the child is born (complete a modified V01 and V02). Participant IDs for multiples and PNR are provided in the *HBCD Private Release Notes* - see <a href="../../instruments/demo/visitinfo/#multiple-birth-participants" target="_blank">Multiple Birth Participants</a> under Visit Information for details.
 
@@ -209,16 +203,16 @@ A number of new instruments were incorporated into R2.0 as well. Click to expand
 </table>
 </div>
 
-## MRI & EEG Updates   
+### MRI & EEG Updates   
 
 <ul>
 <li>Raw BIDS data now includes all available data, not restricted to data that only passed raw data quality control.</li>
 <li>Raw and processed data included for additional participants and visits.</li>
 <li>MRI scanner details now included in the session-level Scans TSV files, including: <code>ScannerManufacturer</code>, <code>ScannerModel</code>, <code>ScannerSoftwareVersion</code>, and <code>ScannerSerialNumber</code>.</li>
-<li>New procedures were implemented to remove processed MRI derivatives with serious data quality issues (<a href="../../instruments/mri/#processed-derivatives">see details</a>).</li>
+<li>New procedures were implemented to remove processed MRI data with serious data quality issues (<a href="../../instruments/mri/#processed-derivatives">see details</a>).</li>
 </ul>
 
-## Resolved Known Issues
+### Resolved Known Issues
 
 <table class="table-no-vertical-lines">
 <thead>
@@ -278,74 +272,37 @@ A number of new instruments were incorporated into R2.0 as well. Click to expand
 </tr>
 </tbody>
 </table>
-<!-- 
-<div id="r2.0res-KI" class="table-banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text-with-link">
-  <span class="text">10+ Resolved Known Issues</span>
-  <a class="anchor-link" href="#r2.0res-KI" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+
+## Release History
+
+Prior release notes are available via prior versions of this site as follows (also accessible via [flyout menu](../help/citation.md#view-archived-release-documentation)).
+
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
-<th>Domain</th>
-<th>Updates</th>
+<th>Version</th>
+<th>Release Date</th>
+<th>Release Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><b>General</b></td>
-<td>• Standardized Parquet precision by regenerating all data in a single step (<code>type_data</code> = <i>double</i>)</td>
-</tr>
-<tr>
-<td><b>Demographics</b></td>
+<td><strong>1.0</strong></td>
+<td>2025-06-26</td>
 <td>
-<b>Basic Demographics (<code>sed_basic_demographics</code>)</b><br>
-• Removed invalid <code>screen_mother_race</code> response option (2 = <i>Hawaiian</i>)<br>
-• Removed ACS Child Multi-Race (duplicate coding to <code>child_ethnoracial_acs_by_multi_ethnicity</code>)<br>
-• Removed Child Multi-Ethnicity V01 data<br><br>
-<b>Visit Data (<code>par_visit_data</code>)</b><br>
-• Set withdrawal dates for participants who did not withdraw to null (from 12/26/1999)<br>
-• Removed V02 urine toxicology substance use flags (urine not collected at V02)<br>
-• Corrected TLFB substance use flags for missing V02 visits ('no' → null)
+  <a href="https://docs.hbcdstudy.org/r1.0/changelog/versions/R1/" target="_blank">
+    View Release Notes
+  </a>
 </td>
 </tr>
 <tr>
-<td><b>Biospecimen &amp; Omics</b></td>
+<td><strong>1.1</strong></td>
+<td>2025-10-10</td>
 <td>
-<b>Urine Toxicology</b><br>
-• Restored missing values for cotinine (<code>*_results_bio_c_cot_u</code>) incorrectly set to 0 (N = 18)
-</td>
-</tr>
-<tr>
-<td><b>Neurocognition &amp; Language</b></td>
-<td>
-<b>SPM-2 (<code>ncl_cg_spm2__inf</code>)</b><br>
-• Added age fields (gestational, adjusted, candidate)<br>
-• Added missing status scores
-</td>
-</tr>
-<tr>
-<td><b>Pregnancy &amp; Exposure</b></td>
-<td>
-<b>APA 1/2 (<code>pex_bm_apa_anger_*</code>)</b><br>
-• Added missing T-scores and total scores for Anger subscale<br><br>
-<b>TLFB (<code>pex_ch_tlfb</code>)</b><br>
-• Added age variables (gestational / adjusted / candidate age)
-</td>
-</tr>
-<tr>
-<td><b>Social &amp; Environmental</b></td>
-<td>
-<b>eHITS (<code>sed_bm_ehits</code>)</b><br>
-• Corrected score calculations (<code>score</code>, <code>total_score</code>)
+  <a href="https://docs.hbcdstudy.org/r1.1/changelog/releasenotes/#version-r11" target="_blank">
+    View Release Notes
+  </a>
 </td>
 </tr>
 </tbody>
 </table>
-</div> -->

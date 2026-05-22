@@ -18,40 +18,106 @@
 
 # Release Notes History
 
-## Release 1.X
+## Release 1
 
-<p class="meta-note">
-  Participant and visit counts remain constant across minor releases within a major version (e.g., R1.x).
-</p>
+<div class="stats-grid">
+  <div class="card">
+    <h3>Participants</h3>
+    <div class="metric">
+      1,426
+    </div>
+  </div>
+  <div class="card">
+    <h3>Total Visits</h3>
+    <div class="metric">
+      2,207
+    </div>
+    <div class="detail">
+      V01: 1,426 | V02: 660 | V03: 121
+    </div>
+  </div>
+  <div class="card">
+    <h3>By Sex</h3>
+    <div class="metric-sub">
+      328 F · 338 M <span class="muted">[V02+]</span>
+    </div>
+  </div>
+</div>
 
-<div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin:20px 0;">
-<div class="card">
-<h3>Participants</h3>
-<p class="big">1,426</p>
-</div>
-<div class="card">
-<h3>Total Visits</h3>
-<p class="big">2,207</p>
-<p class="small">
-V01: 1,426 | V02: 660 | V03: 121</p>
-</div>
-<div class="card">
-<h3>By Sex</h3>
-<p class="small">
-  <i>V02+ visits:</i><br>
-  <span class="big" style="font-size:1.2em;">328 (F) | 338 (M)</span><br><br>
-</p>
-</div>
-</div>
-
-### Version: R1.1
-
-<div class="release-banner">
-  <span class="release-text">
-    <i class="fa-solid fa-calendar release-icon"></i>
-    Release Date: 2025-10-10
+<div id="r1-filters" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-info-circle"></i></span>
+  <span class="text-with-link">
+  <span class="text">Release 1 Inclusion & Exclusion Criteria</span>
+  <a class="anchor-link" href="#r1-filters" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
   </span>
+  <span class="arrow">▸</span>
 </div>
+<div class="table-collapsible-content">
+<table class="compact-table-no-vertical-lines" style="font-size: 16px;">
+<thead>
+<tr>
+  <th colspan="2"><i>Items listed below are filtered/excluded from release data unless stated otherwise</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Participants</b></td>
+<td>
+<ul>
+<li>DCC participants excluded</li>
+<li>Only CH Profiles included - Exclusion by PSCID prefix (PI, QI, XI, YI)</li>
+<li>Only 'Active' participants included</li>
+<li>'Multiple Birth' and 'Postnatal Recruitment' participants excluded</li>
+<li>Participant exclusion if 'Brain Rating' is 'Abnormal'</li>
+<li>Participant excluded due to 'Examiner' not 'REDCap' on REDCap surveys (possible modification of data between REDCap and LORIS, or data entered directly into LORIS) </li>
+</ul>
+  </td>
+</tr>
+<tr>
+  <td><b>Visits</b></td>
+  <td>
+   <ul>
+   <li>Excluded visits with 'LaunchPad Complete' Status set to 'Complete' after 2024-07-01</li>
+    <li>Forced insertion/exclusion of participants (based on 'LaunchPad Complete' date after July 1, 2024 exceptions granted for 1.0 release only)</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+<td><b>Instruments</b></td>
+<td>
+    <ul>
+    <li>Biosensor Receipt Form — <code>sens_ch_rcpt</code></li>
+    <li>EEG Acquisition Checklists — <code>eeg_ch_chkl</code> / <code>eeg_ch_chkl_&lt;1|2&gt;</code>    </li>
+    <li>ERICA forms — <code>mh_cg_erica_{3_7m|7_9m}</code> / <code>mh_cg_erica_fcm_adm_{3_7m|7_9m}</code>    </li>
+    <li>GABI Setup/Receipt — <code>nt_pa_gabi_setup</code> / <code>nt_pa_gabi_rcpt</code>    </li>
+    <li>MRI Checklists &amp; Pre/Post Scan Prep — <code>mri_ra_chkl_data</code> / <code>mri_ra_chkl_scan</code> / <code>mri_ra_prep</code>    </li>
+    <li>NIH Baby ToolBox — <code>ncl_ch_nbtb</code></li>
+    <li>Participant / RA Feedback — <code>adm_cg_fb</code> / <code>adm_ra_fb</code>    </li>
+    <li>Urgent Events & Participant Alerts — <code>adm_fd_urgent</code> / <code>admin_alert</code></li>
+    <li>Visit Start / Visit Level Data — <code>visit_start</code> / <code>adm_fd_visitdata</code></li>
+    </ul>
+</td>
+</tr>
+<tr>
+<td><b>Variables</b></td>
+<td>
+    <ul>
+    <li>Informant (<code>informant</code>), Validity (<code>validity</code>), Duration (<code>duration</code>), and Window Difference (<code>window_difference</code>)</li>
+    <li>Open text, descriptive, and line variables</li>
+    <li>Impossible or selected Extreme/Outlier values filtered out</li>
+    <li>Select Item/Score-level fields (hardcoded per instrument)</li>
+    </ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+---
+
+### Version R1.1 [Release Date: 2025-10-10]
 
 <div id="1.1-main-updates" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-arrows-rotate"></i></span>
@@ -64,26 +130,28 @@ V01: 1,426 | V02: 660 | V03: 121</p>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="table-no-vertical-lines"><tbody>
-<tr><td colspan="2"><i class="fas fa-id-card header-icon"></i><b>Demographics</b><br><br>
-Scoring for AOU and ACS ethno-racial fields included in the Basic Demographics (<code>sed_basic_demographics</code>) table were reviewed. The multiracial options for ACS–Child–Multi Race (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.</td></tr>
-<tr><td colspan="2"><i class="fa fa-vial header-icon"></i> <b>Biospecimen & Omics</b><br><br>
-Removed 'Specimen ID’ fields from both the Nails & Urine Biospecimen tables; removed time from dates in Nails Results.</td></tr>
-<tr><td colspan="2"><i class="fa-solid fa-baby header-icon"></i> <b>Pregnancy Exposure, Including Substance Use</b><br><br>
-Medications in Pregnancy & Infant Health instruments  (<code>pex_bm_health*</code>) are now categorized into more detailed components based on <strong>RxNorm IDs</strong> to improve clarity and enable more granular analyses. Additional columns specify: <em>Brand Name</em>, <em>Ingredient</em>, <em>Precise Ingredient</em>, and <em>Multiple Active Ingredients</em>.</td></tr>
-<tr><td colspan="2"><i class="fas fa-city header-icon"></i> <b>Social & Environmental Determinants</b><br><br>
-Added 'Birth parent sexual orientation' variable to V01 Demographics (<code>sed_bm_demo</code>).</td></tr>
-<tr><td colspan="2"><i class="fa fa-brain header-icon"></i> <b>MRI</b><br><br>
-Added BrainSwipes QC (<code>img_brainswipes*</code>) results missing from R1.0 (N=8).</td></tr>
-
-<tr><td colspan="2"><b>Summary of Updated Files</b><br>
-<i>Formats:</i> <code>.json | .parquet | .tsv</code>
+<table class="table-no-vertical-lines">
+<tbody>
+<tr><td><strong>DEMOGRAPHICS</strong><br>
+    <ul>
+    <li>After review of scoring for AOU and ACS ethno-racial fields in Basic Demographics</strong> (<code>sed_basic_demographics</code>), the multiracial options for ACS–Child–Multi Race (<code>child_ethnoracial_acs_by_multi_race</code>) were merged into one due to limited granularity in the <em>child_race</em> field.</li>
+    </ul></td>
+</tr>
+<tr><td><strong>BIOSPECIMENS</strong><br>
+  <ul><li>Removed 'Specimen ID’ fields from both the Nails & Urine Biospecimen tables; removed time from dates in Nails Results.</li></ul>
+  </td>
+</tr>
+<tr><td><strong>PREGNANCY & EXPOSURE</strong>
 <ul>
-<li>Basic Demographics: <code>sed_basic_demographics</code></li>
-<li>BioSpecimens: Nails and Urine -  <code>bio_bm_biosample_{nails|urine}_results</code> (+shadow matrix files)</li>
-<li>SPM-2: <code>ncl_cg_spm2__inf</code> (+shadow matrix files)</li>
-<li>TLFB: <code>pex_ch_tlfb</code> (+shadow matrix files)</li>
-<li>PEX Health V2 Preg: <code>pex_bm_healthv2_preg</code> (.json only)</li></td></tr>
+<li>Medications in Pregnancy & Infant Health instruments  (<code>pex_bm_health*</code>) are now categorized into more detailed components based on <strong>RxNorm IDs</strong> to improve clarity and enable more granular analyses. Additional columns specify: <em>Brand Name</em>, <em>Ingredient</em>, <em>Precise Ingredient</em>, and <em>Multiple Active Ingredients</em></li>
+</ul>
+</td>
+<tr><td><strong>SOCIAL & ENV DETERMINANTS</strong>
+<ul><li>'Birth parent sexual orientation' variable added to V01 Demographics (<code>sed_bm_demo</code>).</li></ul>
+</td></tr>
+<tr><td><strong>MRI</strong>
+<ul><li>BrainSwipes QC (<code>img_brainswipes*</code>) results missing from R1.0 (N=8) added.</li></ul>
+</td></tr>
 </tbody></table>
 </div>
 
@@ -101,7 +169,7 @@ Added BrainSwipes QC (<code>img_brainswipes*</code>) results missing from R1.0 (
 <table class="table-no-vertical-lines">
 <tbody>
 <tr><td><strong>DEMOGRAPHICS</strong><br><br>
-  <strong>Basic Demo</strong> (<code>sed_basic_demographics</code>)
+  <strong>Basic Demographics</strong> (<code>sed_basic_demographics</code>)
     <ul>
     <li>Added missing income data for applicable participants.</li>
     <li>Mother Race (<code>screen_mother_race</code>): removed duplicate option (#3) for "Black African American".</li>
@@ -143,53 +211,4 @@ Added BrainSwipes QC (<code>img_brainswipes*</code>) results missing from R1.0 (
 </table>
 </div>
 
----
-
-### Version: R1.0
-
-<div class="release-banner">
-  <span class="release-text">
-    <i class="fa-solid fa-calendar release-icon"></i>
-    Release Date: 2025-06-26
-  </span>
-</div>
-
-<div id="r1-exclusions" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-filter"></i></span>
-  <span class="text-with-link">
-  <span class="text">R1.0 Exclusion Criteria & Filters</span>
-  <a class="anchor-link" href="#r1-exclusions" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><strong>Excluded Participants &amp; Visit Data</strong></p>
-<ul>
-<li>Participants with no brain rating or brain rating noted as &quot;atypical&quot;</li>
-<li>Postnatal Recruitment and Multiple Birth participants</li>
-<li>Excluded visits with &#39;LaunchPad Complete&#39; Status set to &#39;Complete&#39; after 2024-07-01</li>
-</ul>
-<p><strong>Instrument &amp; Field Exclusions</strong></p>
-<ul>
-<li>Biosensor Receipt Form — <code>sens_ch_rcpt</code></li>
-<li>EEG Acquisition Checklists — <code>eeg_ch_chkl</code> / <code>eeg_ch_chkl_&lt;1|2&gt;</code>    </li>
-<li>ERICA forms — <code>mh_cg_erica_{3_7m|7_9m}</code> / <code>mh_cg_erica_fcm_adm_{3_7m|7_9m}</code>    </li>
-<li>GABI Setup/Receipt — <code>nt_pa_gabi_setup</code> / <code>nt_pa_gabi_rcpt</code>    </li>
-<li>MRI Checklists &amp; Pre/Post Scan Prep — <code>mri_ra_chkl_data</code> / <code>mri_ra_chkl_scan</code> / <code>mri_ra_prep</code>    </li>
-<li>NIH Baby ToolBox — <code>ncl_ch_nbtb</code></li>
-<li>Participant / RA Feedback — <code>adm_cg_fb</code> / <code>adm_ra_fb</code>    </li>
-<li>Urgent Events &amp; Participant Alerts — <code>adm_fd_urgent</code> / <code>admin_alert</code></li>
-<li>Visit Start / Visit Level Data — <code>visit_start</code> / <code>adm_fd_visitdata</code></li>
-<li>Date of Administration — <code>date_taken</code>  </li>
-<li>Examiner — <code>examiner</code>  </li>
-<li>REDCap Complete status — <code>complete</code>  </li>
-<li>Timestamps — <code>timestamp</code> / <code>timestamp_start</code> / <code>timestamp_stop</code> / <code>timestamp_redcap_locked</code>  </li>
-<li>Visit Data — <code>visit_stage</code> removed from the <code>visit_data</code> category  </li>
-<li>Breast Feeding History Fields — <code>ph_cg_phx_i_bfh</code> – All fields except <code>001</code> excluded  </li>
-<li>Height/Weight/Head Circumference BMI — <code>ph_ch_anthro</code> – BMI-related fields removed  </li>
-</ul>
-</div>
-
-
+### Version R1.0 [Release Date: 2025-06-26]
