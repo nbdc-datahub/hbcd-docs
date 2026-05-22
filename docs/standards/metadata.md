@@ -1,7 +1,7 @@
 <style>
 .wy-nav-content {
     width: 90% !important;
-    max-width: 100% !important;
+    max-width: 90% !important;
     flex-grow: 1 !important;
 }
 </style>
@@ -11,6 +11,21 @@
 Tabulated HBCD study data is organized into a standardized table format per study instrument/measure, with each table containing a set of variables (see [Data Structure Overview](../datacuration/overview.md) for details). Metadata is organized via a data dictionary, which provides detailed information about table variables, including variable name, label, description, data type, etc. All data dictionary elements are outlined below.
 
 ## Data Dictionary Elements
+
+<!-- Lasso User warnings -->
+<div id="add-columns" class="warning-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+  <span class="text-with-link">
+  <span class="text">NBDC Data Access Platform User Warnings - Blank Columns in Query Tool</span>
+  <a class="anchor-link" href="#add-columns" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+<p>Dictionary Query Tool searches within the NBDC Data Access Platform currently display columns that are not applicable to HBCD study data, including columns ending with <code>nda</code>, <code>deap</code>, and <code>redcap</code>. Inapplicable columns will be removed in the future and can safely be ignored. Note that columns may also be blank if they have yet to be populated (currently common for columns ending with <code>*_es</code>). <b>For reference, only applicable columns are included in the data dictionary overview on this page.</b></p>
+</div>
 
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
 <i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases&nbsp;&nbsp;
@@ -157,7 +172,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <tr>
   <td><code>type_var</code></td>
   <td>Variable type</td>
-  <td>Includes: <i>administrative; item; derived item; summary score</i> -  <a href="#type_var">see details</a></td>
+  <td>Includes: <i>administrative; item; derived item; summary score</i> -  <a href="#variable-types">see details</a></td>
 </tr>
 <tr>
   <td><code>type_data</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
@@ -203,8 +218,37 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 </tbody>
 </table>
 
-<!-- Type variable values -->
-<div id="type_var" class="table-banner" onclick="toggleCollapse(this)">
+### Variable Types
+
+<table class="table-no-vertical-lines">
+<thead>
+<tr>
+<th>Variable Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>administrative</td><td>Data that gives context to the assessments, e.g. date, language, quality control, etc.</td>
+</tr>
+<tr><td>derived item</td><td>Derived from original participant data (e.g., combining separate entries for feet and inches into a single derived height variable in inches) - see <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a> for more examples</td></tr>
+<tr>
+<td>item</td><td>Original data provided by the participant, e.g. questions in a questionnaire</td>
+</tr>
+<tr><td>summary score</td><td>Summary and/or score output based on algorithmic conversions of items/raw data</td>
+</tr>
+</tbody>
+</table>
+
+### Site & Cohort Information
+
+Datasets downloaded from the NBDC Data Access Platform contain two additional fields not listed in the data dictionary, `cohort` and `site`. These are derived from the <a href="../../instruments/demo/visitinfo" target="_blank">Visit Level Data</a> table variables `par_visit_data_cohort` and `par_visit_data_site`. 
+
+- **`cohort`**: study cohort, e.g. HBCD Main Child vs. HBCD Multiple Birth (see <a href="../../instruments/demo/visitinfo/#cohort-caregiver-types" target="_blank">Cohort & Caregiver Types</a> for details)  
+- **`site`**: site where visit occurred (distinct from site at time of recruitment - see `recruitment_site` in <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a>)
+
+
+<!-- <div id="type_var" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i style="margin-right: 4px;" class="fa fa-book"></i></span>
   <span class="text-with-link">
   <span class="text">Variable Types</span>
@@ -234,59 +278,4 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 </tr>
 </tbody>
 </table>
-</div>
-
-<!-- Lasso User warnings -->
-<div id="add-columns" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">NBDC Data Access Platform User Warnings - Blank Columns in Query Tool</span>
-  <a class="anchor-link" href="#add-columns" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>Dictionary Query Tool searches within the NBDC Data Access Platform currently display columns that are not applicable to HBCD study data, including columns ending with <code>nda</code>, <code>deap</code>, and <code>redcap</code>. Inapplicable columns will be removed in the future and can safely be ignored. Note that columns may also be blank if they have yet to be populated (currently common for columns ending with <code>*_es</code>). <b>For reference, only applicable columns are included in the data dictionary overview above.</b></p>
-</div>
-<!-- 
-## Levels Table
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fa-solid fa-lock"></i>&nbsp;= Values do not vary across releases
-</p>
-<table class="compact-table-no-vertical-lines">
-<thead style="background-color: #f0dcfb;">
-<tr style="border-bottom:2px solid #ccc;">
-  <th style="width: 20%;">Name</th>
-  <th style="width: 10%;">JSON Element</th>
-  <th style="width: 70%;">Description</th>
-</tr>
-</thead>
-<tbody>
-  <tr>
-    <td><code>name</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
-    <td>&nbsp;</td>
-    <td>Name of the categorical column/variable/question for which value/label pairs are reported</td>
-  </tr>
-  <tr>
-    <td><code>value</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
-    <td>left hand side</td>
-    <td>Value of the level (<b>e.g. "1"</b>)</td>
-  </tr>
-  <tr>
-    <td><code>order_level</code>&nbsp; <i style="color: teal;" class="fa-solid fa-lock"></i></td>
-    <td></td>
-    <td>Order of response option as displayed to participants (and in data) (<b>e.g. "2"</b>)</td>
-  </tr>
-  <tr><td><code>label</code> / <code>label_es</code></td><td>right hand side</td>
-    <td>Label (English/Spanish) of the level (<b>e.g. "Yes" / "Si"</b>)</td>
-  </tr>
-</table> -->
-
-## Additional Information: Site & Cohort
-
-When using datasets downloaded from the NBDC Data Access Platform, two additional variables not listed in the data dictionary, `cohort` and `site`, are included. These are derived from the <a href="../../instruments/demo/visitinfo" target="_blank">Visit Level Data</a> (`par_visit_data`) table. 
-
-- **`cohort`** — Derived from `par_visit_data_cohort`. See <a href="../../instruments/demo/visitinfo/#cohort-caregiver-types" target="_blank">Cohort & Caregiver Types</a> for details.  
-- **`site`** — Derived from `par_visit_data_site`, indicating the site where each visit occurred. Note that this differs from `recruitment_site` in <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a>, which refers to the site at time of recruitment.
+</div> -->

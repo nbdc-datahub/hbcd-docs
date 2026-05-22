@@ -292,8 +292,6 @@ pre > code {
 }
 
 /* TOOLTIPS */
-
-/* Tooltip container */
 .tooltip {
     position: relative;
     cursor: help;
@@ -302,7 +300,6 @@ pre > code {
     font-weight: 500;
     line-height: inherit;
 }
-
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 200px;

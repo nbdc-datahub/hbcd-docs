@@ -142,7 +142,7 @@ Name of scale within instrument/protocol element for instruments with multiple s
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p>Administrative and summary score <a href="../metadata/#type_var" target="_blank">variable types</a> include <b>administrative fields</b> and <b>score labels</b> in place of the <code>item</code> naming component, respectively. Possible values include:</p>
+<p>Administrative and summary score <a href="../metadata/#variable-types" target="_blank">variable types</a> include <b>administrative fields</b> and <b>score labels</b> in place of the <code>item</code> naming component, respectively. Possible values include:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
