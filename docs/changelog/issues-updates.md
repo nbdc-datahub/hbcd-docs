@@ -472,7 +472,6 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 </tr>
 </tbody></table>
 
-
 ### Pregnancy &amp; Environmental Exposure
 
 <table class="compact-table-no-vertical-lines">

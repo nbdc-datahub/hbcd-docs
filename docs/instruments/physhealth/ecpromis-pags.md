@@ -1,4 +1,4 @@
-# ecPROMIS - Physical Activity/Greenspace (PA/GS)
+# ecPROMIS - Physical Activity/Greenspace
 
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
