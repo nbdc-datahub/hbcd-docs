@@ -2,22 +2,18 @@
 
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
-
 <tr>
   <td><b>Table Name</b></td>
   <td><code>ph_cg_pms__pags</code></td>
 </tr>
-
 <tr>
   <td><b>Construct</b></td>
   <td>Physical Activity</td>
 </tr>
-
 <tr>
   <td><b>Study Visits</b></td>
   <td>V04, V06</td>
 </tr>
-
 <tr>
   <td><b>Administration</b></td>
   <td>
@@ -26,7 +22,6 @@
     <b>Method</b>: HBCD Study staff or self, in person or remote (2 min estimated duration)
   </td>
 </tr>
-
 <tr>
   <td><b>Quality Control</b></td>
   <td>
@@ -38,7 +33,6 @@
     </ul>
   </td>
 </tr>
-
 </tbody>
 </table>
 
