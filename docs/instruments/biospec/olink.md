@@ -2,7 +2,7 @@
 
 Protein abundance of inflammatory markers was measured using the **Olink Explore 384 Inflammation 1 Panel ([Olink® Explore 3072/384](https://olink.com/products/olink-explore-3072-384))**, with data generated using Explore version 6.7.2. Measurements were obtained from birth parents during pregnancy at Visit 1 as an indicator of maternal inflammation.
 
-Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX is a proprietary, arbitrary unit that reflects relative protein abundance, with higher values indicating higher abundance. Values are reported on a log₂ scale, such that a difference of 1 NPX corresponds to a two-fold difference in protein abundance. Note that NPX values are only comparable for the same protein across samples and plates and cannot be used for comparisons between different proteins. See the [Panel Quick Guide](#olink-explore-384-inflammation-panel-quick-guide) at the end of this page for the full assay list.
+Olink data are reported as Normalized Protein eXpression (**NPX**) values. NPX is a proprietary, arbitrary unit that reflects relative protein abundance, with higher values indicating higher abundance. Values are reported on a log₂ scale, such that a difference of 1 NPX corresponds to a two-fold difference in protein abundance. Note that NPX values are only comparable for the same protein across samples and plates and cannot be used for comparisons between different proteins. See the [Panel Quick Guide](#olink-explore-384-inflammation-panel-quick-guide) at the end of this page for the full assay list.
 
 ## Release Data
 
@@ -24,8 +24,10 @@ Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX i
   <span class="emoji"><i class="fas fa-bug"></i></span>
   <span class="text">Please review the <a href="../../../changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
+<p></p>
 
-The Olink dataset is provided as concatenated files (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details):
+The Olink dataset is provided as  <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated files</a> organized as follows:
+
 <pre class="folder-tree">
 hbcd/
 └── concatenated/ 
