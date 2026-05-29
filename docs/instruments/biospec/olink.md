@@ -28,12 +28,12 @@ Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX i
 The Olink dataset is provided as concatenated files (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details):
 <pre class="folder-tree">
 hbcd/
-|__ concatenated/ 
-    |__ proteins/
-        |__ olink/
-            |__ inflammation/
-                |__ Olink_allplates_long.csv
-                |__ Olink_allplates_wide.csv
+└── concatenated/ 
+    └── proteins/
+        └── olink/
+            └── inflammation/
+                ├── Olink_allplates_long.csv
+                └── Olink_allplates_wide.csv
 </pre>
 <p></p>
 
