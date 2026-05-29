@@ -22,7 +22,7 @@ Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX i
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
+  <span class="text">Please review the <a href="../../../changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
 
 The Olink dataset is provided as concatenated files (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details):
