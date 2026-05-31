@@ -50,6 +50,8 @@ See <a href="#data-exclusions">Quality Control &gt; Data Exclusions</a> below.</
 
 The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a> under <code>genetics/</code> (*see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details*). It includes **batch metadata** and **three interlinked PLINK files** (`.bed`, `.bim`, `.fam`) aligned to the **hg19 genome build**:
 
+<!-- aligned to the **GRCh38/hg38 Build**: -->
+
 <pre class="folder-tree">
 hbcd/
 └── concatenated/

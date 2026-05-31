@@ -125,33 +125,36 @@ The MMN, VEP, and FACE task data may contain an artifact originating from the St
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>ERPs indexing different stages of processing are computed from repeated presentations of faces and objects. 
     In the Faces task, the ERP components include P1, N290, and P400. 
     If the child loses attention, an attention getter may be used. 
     The stimulus set includes 36 unique images, with women with neutral expressions, spanning the following self-identified demographics: 
     Indigenous, Black, White, Asian, Hispanic/Latino, and South Asian.
 </p>
-<div style="display: flex; align-items: center; gap: 15px;">
-  <!-- Text on the left -->
-  <div style="flex: 1;">
-    <p><strong>The Face task (Face vs. Object) consists of 2 blocks:</strong>
-      <ul>
-        <li><strong>Block 1</strong>: 50 trials of upright faces & 50 trials of inverted faces</li>
-        <li><strong>Block 2</strong>: 50 trials of upright faces & 50 trials of objects</li>
-      </ul>
-    <p><strong>Timing Details:</strong>
-            <ul>
-              <li><strong>Stimulus duration</strong>: 500 ms</li>
-              <li><strong>Interstimulus interval</strong>: 600-700 ms</li>
-              <li><strong>Total trial length</strong>: 110-1200 ms</li>
-            </ul>
-    </p>
-  </div>
-  <!-- Image on the right -->
-  <div style="flex: 1; text-align: center;">
-    <img src="../images/eeg-facetask.png" style="max-width:100%; height:auto;">
-  </div>
+<div style="display: flex; align-items: center; gap: 10px;">
+<div style="flex: 2;">
+<p><b>The Face task (Face vs. Object) consists of 2 blocks:</b></p>
+<p><b>Block 1</b>: 50 trials of upright faces & 50 trials of inverted faces</p>
+<ul>
+  <li>Variable name in the tabular data for upright face trials in block 1: <code>uprightInv</code>.</li>
+  <li>Variable name in the tabular data for inverted face trials in block 1: <code>Inv</code>.</li>
+</ul>
+<p><b>Block 2</b>: 50 trials of upright faces (uprightObj) & 50 trials of objects (Obj)</p>
+<ul>
+  <li>Variable name in the tabular data for upright face trials in block 2: <code>uprightObj</code>.</li>
+  <li>Variable name in the tabular data for object trials in block 2: <code>Obj</code>.</li>
+</ul>
+<p><b>Timing Details:</b></p>
+<ul>
+  <li><b>Stimulus duration</b>: 500 ms</li>
+  <li><b>Interstimulus interval</b>: 600-700 ms</li>
+  <li><b>Total trial length</b>: 110-1200 ms</li>
+</ul>
+</div>
+<div style="flex: 1;">
+<img src="../images/eeg-facetask.png" alt="Visual of FACES task presentations">
+</div>
 </div>
 </div>
 
