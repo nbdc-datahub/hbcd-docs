@@ -161,28 +161,6 @@ Data are flagged for manual review based on automated QC results using multivari
 
 ## BrainSwipes
 
-<!-- PATCH: REMOVE FOLLOWIGN DATA WARNING-->
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</i></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>The following groups are missing all or a large portion of BrainSwipes QC results in the release data:
-<ul>
-<li>V02 sessions processed with T1-based surface reconstruction (<a href="../fmri/#m-crib-s-freesurfer" target="_blank">Infant FreeSurfer method</a>) within Infant fMRIPrep: ~70% of the visual reports across sessions are missing BrainSwipes QC scores. <i>Note, however, that for separate reasons we advise against using this data for analyses - see <a href="../fmri/#warning" target="_blank">Data Warning</a></i>.</li>
-<li>V02 sessions with only a T2w anatomical image present (that passes raw data QC), and no T1w: missing ALL BrainSwipes QC results in the release data.</li>
-</ul>
-<p><b>Completed tabulated data can be found in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> accessible to DUC-authorized users.</b></p>  
-<p><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/brainswipes_2026-01-26.zip"><i class="fa-solid fa-download"></i> &nbsp; Download Completed BrainSwipes Results</a></p>
-</div>
-<p></p>
-
 <div style="display: flex; align-items: center; gap: 30px;">
 <div style="flex: 1;">
 <p>QC is performed on processed structural and functional MRI data via manual review of <a href="../fmri/#xcp-d">XCP-D</a> visual reports. Though manual inspection remains the gold standard for QC, it is highly resource-intensive. Manual visual review was therefore performed using <a href="https://brainswipes.us/about/">BrainSwipes</a>, a gamified crowdsourcing platform where users classify images as Pass or Fail by swiping right or left after completing a brief visual QC tutorial.</p>

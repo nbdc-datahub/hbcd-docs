@@ -27,10 +27,10 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://www.googletagmanager.com/gtag/js?id=G-BY0EH2K1YQ
 
-extra:
-  analytics:
-    provider: google
-    property: G-BY0EH2K1YQ
+# extra:
+#   analytics:
+#     provider: google
+#     property: G-BY0EH2K1YQ
 
 extra_css:
   - css/banners.css
@@ -77,14 +77,14 @@ nav:
             - ecPROMIS Child-Caregiver Relationship: instruments/bcgi/ecpromis.md
             - ecPROMIS Peer Relationships: instruments/bcgi/ecpromis-pr.md
             - ecPROMIS Self-Regulation: instruments/bcgi/ecpromis-selfreg.md
-            #- ERICA: instruments/bcgi/erica.md
+            - ERICA: instruments/bcgi/erica.md
             - FAD: instruments/bcgi/fad.md
             - IBQ-R & ECBQ: instruments/bcgi/ibqr.md
             - MAPS-TL: instruments/bcgi/maps-tl.md
         - Biospecimens & Omics:
             - Illumina GDA GWAS: instruments/biospec/illumina-gda-gwas.md
             - Nails: instruments/biospec/nails.md
-            # - Olink: instruments/biospec/olink.md
+            - Olink: instruments/biospec/olink.md
             - Urine: instruments/biospec/urine.md
         - Neurocognition & Language:
             - Bayley-4: instruments/neurocog/bayley-4.md

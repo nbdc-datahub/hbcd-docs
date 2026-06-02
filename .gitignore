@@ -2,6 +2,7 @@ site/
 .DS_Store
 docs/.DS_Store
 scratch/
+scratch.md
 __pycache__/
 .vscode/
 make_tables/
