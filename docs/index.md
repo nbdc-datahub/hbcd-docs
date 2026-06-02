@@ -13,9 +13,8 @@
     border-radius:20px;
     letter-spacing:0.5px;
     text-transform:uppercase;">
-    Data Release 2.0
-    <!-- PATCH UPDATE: Data Release 2.1 -->
-  </span>
+    Data Release 2.1
+    </span>
 </p>
 
 <p style="text-align: center; font-size: 1.6em; font-weight: 500; line-height: 1.2em;">

@@ -183,13 +183,12 @@ Expand the sections below to see a list of measures associated with each domain 
     <td>Self-Regulation and Flexibility</td>
     <td><code>mh_cg_pms__selfreg</code></td>
   </tr>
-  <!-- <tr>
-  PATCH RELEASE
+  <tr>
     <td><a href="bcgi/erica" target="_blank">ERICA</a></td>
     <td></td>
     <td>Emotional Regulation</td>
     <td><code>mh_cg_erica</code></td>
-  </tr> -->
+  </tr>
   <tr>
     <td><a href="bcgi/fad" target="_blank">FAD (GF6+)</a></td>
     <td></td>
@@ -265,13 +264,12 @@ Expand the sections below to see a list of measures associated with each domain 
     <td>GWAS, EWAS, Transcriptome</td>
     <td>Concatenated data under <i>genetics/</i></td>
 </tr>
-<!-- <tr>
-PATCH RELEASE
+<tr>
     <td><i class="fas fa-layer-group header-icon"></i> <a href="biospec/olink" target="_blank">Olink</a></td>
     <td></td>
     <td>Inflammation</td>
     <td><i>genetics/</i></td>
-</tr> -->
+</tr>
 </tbody>
 </table>
 </div>
