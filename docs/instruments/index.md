@@ -245,6 +245,13 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
+    <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a> <i class="fas fa-layer-group table-icon"></i></td>
+    <td>Maternal & Child</td>
+    <td>GWAS, EWAS, Transcriptome</td>
+    <td>Concatenated data under <i>genetics/</i></td>
+</tr>
+
+<tr>
     <td><a href="biospec/nails" target="_blank">Maternal Nails</a></td>
     <td>Maternal</td>
     <td>Drug, Environmental Exposure</td>
@@ -259,15 +266,9 @@ Expand the sections below to see a list of measures associated with each domain 
 </tr>
 
 <tr>
-    <td><i class="fas fa-layer-group header-icon"></i><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a></td>
-    <td>Maternal & Child</td>
-    <td>GWAS, EWAS, Transcriptome</td>
-    <td>Concatenated data under <i>genetics/</i></td>
-</tr>
-<tr>
-    <td><i class="fas fa-layer-group header-icon"></i> <a href="biospec/olink" target="_blank">Olink</a></td>
+    <td><a href="biospec/olink" target="_blank">Olink Explore 384 Inflammation 1 Panel</a> <i class="fas fa-layer-group table-icon"></i></td>
     <td></td>
-    <td>Inflammation</td>
+    <td>Maternal Inflammation</td>
     <td>Concatenated data under <i>proteins/</i></td>
 </tr>
 </tbody>
@@ -846,13 +847,13 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 </thead>
 <tbody>
 <tr>
-<td><a href="mri/summary-forms" target="_blank">MRI Data Summary Form</a></td>
-<td>Admin</td>
+<td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms" target="_blank">MRI Data Summary Form</a></td>
+<td>Pre-/Post-MRI Tech Checklist 2</td>
 <td><code>mri_ra_chkl_data</code></td>
 </tr>
 <tr>
-<td><a href="mri/summary-forms" target="_blank">MRI Scan Session Summary Form</a></td>
-<td>Admin</td>
+<td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms" target="_blank">MRI Scan Session Summary Form</a></td>
+<td>Pre-/Post-MRI Tech Checklist 1</td>
 <td><code>mri_ra_chkl_scan</code></td>
 </tr>
 <tr>

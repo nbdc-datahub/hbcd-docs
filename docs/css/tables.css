@@ -4,6 +4,7 @@ table {
     width: 100%;
     table-layout: fixed;
     overflow: visible !important; /* needed in combo with logic below for tooltips to overflow outside of table container */
+    font-size: 0.95em;
 }
 
 /* Allow tooltips to overflow outside of the table container */
@@ -45,7 +46,7 @@ th, td {
   border-bottom: 1px solid #ccc;
   border-left: none !important;
   border-right: none !important;
-  padding: 5px 8px !important;
+  padding: 5px 10px !important;
   background-color: rgba(255, 255, 255, 0.6) !important; 
   vertical-align: top !important;
 }
@@ -67,6 +68,7 @@ th, td {
   margin: 0;
   line-height: 1.2;
 }
+
 /* Compact table with no vertical lines */
 .compact-table-no-vertical-lines {
   width: 100%;
@@ -136,14 +138,38 @@ th, td {
 }
 
 /* UNIQUE STYLING FOR README INTRO TABLES */
+.readme-intro {
+  font-size: 1em;
+  line-height: 1.5;
+  table-layout: auto;
+}
 .readme-intro td:first-child {
   font-weight: 600;
-  font-size: 1.05em;
-  width: 160px;
+  font-size: 1.1em;
+  width: 150px;
   color: #6b6b6b;
 }
 .visit-list {
   color: #6b7280;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+
+/* ICONS INCLUDED IN TABLE ROWS TO RIGHT OF TEXT */
+.table-icon {
+  margin-left: 0.5em;
+  font-size: 1em;
+  color: #199bd6;
+}
+
+
+/* GROUPING ROWS (e.g. domains or groups in DD table) */
+.table-group-row td {
+  color: white;
+  background-color: #199bd6 !important;
+  line-height: 1.0;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.04em;
 }

@@ -1,11 +1,11 @@
 # Release Notes & History
 
-## Release 2.0
+## Release 2.1
 
 <div class="release-banner">
   <span class="release-text">
     <i class="fa-solid fa-calendar release-icon"></i>
-    Release Date: 2026-02-11
+    Release Date: 2026-06-01 <span style="color: red;">(UPDATE)</span>
   </span>
 </div>
 
@@ -37,18 +37,24 @@
   </div>
 </div>
 
-### Key Changes in 2.0
+### Key Changes in 2.1
+
+<!-- 
+2.0 INFO:
 
 <ul>
 <li>New participant cohorts included: multiple birth participants and postnatal recruits (PNR)</li>
 <li>+40 new instruments across 10 domains</li>
 <li>Expanded MRI & EEG data (processed derivatives for more participants, no QC restriction on raw BIDS)</li>
 <li>Major data fixes and harmonization updates across multiple domains</li>
-</ul>
+</ul> -->
 
 ### Participant Population
 
 HBCD enrolls at least 25% of participants with more than minimal substance use during pregnancy, including opioids ([Si et al. 2024](https://doi.org/10.1016/j.dcn.2024.101432)). Enrollment strategies aim to yield a study population representative of individual and geographic characteristics of pregnant and postpartum individuals (18 years or older) in the U.S., including an adequate comparison group for substance-exposed individuals ([Nelson et al. 2024](https://doi.org/10.1016/j.dcn.2024.101441)). 
+
+<!-- There are siblings enrolled in HBCD, some of whom are twins or triplets (multiples). IDs for multiples are provided in the *HBCD Private Release Notes* - see <a href="../../instruments/demo/visitinfo/#multiple-birth-participants" target="_blank">Multiple Birth Participants</a> under Visit Information for details. -->
+
 
 ### Inclusion & Exclusion Criteria
 
@@ -87,16 +93,13 @@ HBCD enrolls at least 25% of participants with more than minimal substance use d
 <td><b>Instruments</b></td>
 <td>
     <ul>
-    <li>ERICA — <code>mh_cg_erica_{fcm_adm_}{3_7m|7_9m}</code></li>
     <li>GABI Setup/Receipt — <code>nt_pa_gabi_{setup|rcpt}</code></li>
-    <li>MRI Data &amp; Scan Summary — <code>mri_ra_chkl_{data|scan}</code></li>
     <li>NIH Baby Toolbox — <code>ncl_ch_nbtb</code></li>
-    <li>Participant &amp; RA Feedback — <code>adm_cg_fb</code> / <code>adm_ra_fb</code></li>
+    <li>Participant & RA Feedback — <code>adm_cg_fb</code> / <code>adm_ra_fb</code></li>
     <li>Urgent Events &amp; Participant Alerts — <code>adm_fd_urgent</code> / <code>admin_alert</code></li>
     </ul>
 </td>
 </tr>
-
 <tr>
 <td><b>Variables</b></td>
 <td>
@@ -111,9 +114,56 @@ HBCD enrolls at least 25% of participants with more than minimal substance use d
 </tbody>
 </table>
 
-### New Cohorts & Instruments
+<!-- OLD NOTES for 2.0 prior to updates from Santiago - Instrument & Field Exclusions - 
 
-Release data now include **multiple birth participants** (multiple participants from the same birth, e.g. twins) and **postnatal recruits (PNR)** who joined the study after the child is born (complete a modified V01 and V02). Participant IDs for multiples and PNR are provided in the *HBCD Private Release Notes* - see <a href="../../instruments/demo/visitinfo/#multiple-birth-participants" target="_blank">Multiple Birth Participants</a> under Visit Information for details.
+- Fields including *examiner*, *REDCap Complete status*, *timestamps*, *visit stage*, and *visit start* -->
+
+### New Instruments
+
+Release data now include the addition of the following new instruments:
+
+
+[Go to full list of instruments organized by domain →](../instruments/index.md#instruments-by-domain)
+
+<table class="table-no-vertical-lines">
+<thead>
+<tr>
+<th>Domain</th>
+<th>Instrument</th>
+<th>Construct</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Behavior & Caregiver-Child Interaction</td>
+<td>ERICA</td>
+<td>Emotional Regulation</td>
+</tr>
+
+<tr>
+<td>Biospecimen & Omics</td>
+<td>Olink Explore 384 Inflammation 1 Panel</td>
+<td>Maternal Inflammation</td>
+</tr>
+
+<tr>
+<td rowspan="2">Tabulated Imaging</td>
+<td>MRI Data Summary Form</a></td>
+<td>Pre-/Post-MRI Tech Checklist 2</td>
+</tr>
+<tr>
+<td>MRI Scan Session Summary Form</td>
+<td>Pre-/Post-MRI Tech Checklist 1</td>
+</tr>
+
+</tbody>
+</table>
+
+
+
+
+### 2.0 INFO - New Cohorts & Instruments
 
 A number of new instruments were incorporated into R2.0 as well. Click to expand infobox below to view the full list.  
 
@@ -203,7 +253,7 @@ A number of new instruments were incorporated into R2.0 as well. Click to expand
 </table>
 </div>
 
-### MRI & EEG Updates   
+### 2.0 INFO - MRI & EEG Updates   
 
 <ul>
 <li>Raw BIDS data now includes all available data, not restricted to data that only passed raw data quality control.</li>
@@ -212,7 +262,7 @@ A number of new instruments were incorporated into R2.0 as well. Click to expand
 <li>New procedures were implemented to remove processed MRI data with serious data quality issues (<a href="../../instruments/mri/#processed-derivatives">see details</a>).</li>
 </ul>
 
-### Resolved Known Issues
+### 2.0 INFO - Resolved Known Issues
 
 <table class="table-no-vertical-lines">
 <thead>
@@ -286,20 +336,32 @@ Prior release notes are available via prior versions of this site as follows (al
 </tr>
 </thead>
 <tbody>
+
 <tr>
-<td><strong>1.0</strong></td>
-<td>2025-06-26</td>
+<td><strong>2.0</strong></td>
+<td>2026-02-11</td>
 <td>
-  <a href="https://docs.hbcdstudy.org/r1.0/changelog/versions/R1/" target="_blank">
+  <a href="https://docs.hbcdstudy.org/r2.0/changelog/release-notes/#release-20" target="_blank">
     View Release Notes
   </a>
 </td>
 </tr>
+
 <tr>
 <td><strong>1.1</strong></td>
 <td>2025-10-10</td>
 <td>
   <a href="https://docs.hbcdstudy.org/r1.1/changelog/releasenotes/#version-r11" target="_blank">
+    View Release Notes
+  </a>
+</td>
+</tr>
+
+<tr>
+<td><strong>1.0</strong></td>
+<td>2025-06-26</td>
+<td>
+  <a href="https://docs.hbcdstudy.org/r1.0/changelog/versions/R1/" target="_blank">
     View Release Notes
   </a>
 </td>
