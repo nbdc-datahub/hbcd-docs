@@ -75,14 +75,16 @@ h5 {
 
 /* PILL BADGE OR PILL BADGE WITH EMOJI */
 .pill-badge {
-  background-color: #00aeae;
+  display: inline-block;
+  background-color: #00aeaec0;
   color: white;
   font-weight: 500;
   border-radius: 12px;
-  padding: 5px 6px;
+  padding: 2px 6px;
   font-size: 0.8em;
   white-space: nowrap;
 }
+
 .pill-badge-emoji {
   background-color: none;
   color: teal;

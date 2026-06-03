@@ -1,0 +1,28 @@
+chaos:
+  name: Confusion, Hubbub and Order Scale
+  acronym: CHAOS
+  domain: Behavior & Caregiver-Child Interaction
+  table_name: med_cg_chaos
+  construct: Family Organization
+  visits: V05 · V07
+  administration: Primary caregiver survey (child-specific; 4–8 min)
+  qc: <ul>
+      <li>Assess missingness (items completed per participant)</li>
+      <li>Verify scoring accuracy</li>
+      <li>Review summary statistics (item frequencies, total scores)</li>
+      <li>Inspect response distributions for outliers</li>
+      </ul>
+
+ecpromis_peer:
+  name: ecPROMIS Peer Relationships Scale
+  acronym: ecPROMIS Peer
+  domain: Behavior & Caregiver-Child Interaction
+  table_name: med_cg_pms__peer
+  construct: Peer Relationships
+  visits: V05 · V07 · V09
+  administration: Primary caregiver survey (child-specific; 1-2 min)
+  qc: <ul>
+      <li>Assess missingness (items completed per participant)</li>
+      <li>Check age is within expected range</li>
+      <li>Review summary statistics (item frequencies, age, prorated scores)</li>
+      </ul>

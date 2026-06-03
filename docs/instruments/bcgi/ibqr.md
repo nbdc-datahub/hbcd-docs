@@ -4,26 +4,38 @@
 
 <table class="table-no-vertical-lines">
 <tbody>
-<tr><td><b>Table Names</b></td>
-<td>IBQ-R VSF +BI: <code>mh_cg_ibqr</code> <br>
-ECBQ VSF +BI: <code>mh_cg_ecbq</code>
+<tr><td><b>Table name</b></td>
+<td>
+<ul>
+  <li><b>IBQ-R VSF + BI</b>: <code>mh_cg_ibqr</code></li>
+  <li><b>ECBQ VSF + BI</b>: <code>mh_cg_ecbq</code></li>
+</ul>
 </td></tr>
-<tr><td><b>Study Visits</b></td><td>V03, V05 (IBQ-R); V05 (ECBQ)</td></tr>
-<tr><td><b>Construct</b></td><td  colspan="2">Behavioral Inhibition • Negative Affectivity • Effortful Control • Surgency/Extraversion</td></tr>
-<td><b>Administration</b></td><td colspan="2">
-  <ul>
+<tr><td><b>Visits</b></td><td>V03, V05 (IBQ-R); V05 (ECBQ)</td></tr>
+<tr><td><b>Construct</b></td>
+<td>
+<ul>
+  <li>Behavioral Inhibition</li>
+  <li>Negative Affectivity</li>
+  <li>Effortful Control</li>
+  <li>Surgency / Extraversion</li>
+</ul>
+</td></tr>
+<tr>
+<td><b>Administration</b></td><td>
+<ul>
   <li><b>Child-specific</b>: Yes</li>
-  <li><b>Respondent</b>: Primary caregiver on Child</li>
-  <li><b>Method</b>: Self-administered remotely (7-10 min)</li>
-  </ul>
+  <li><b>Respondent</b>: Primary caregiver</li>
+  <li><b>Method</b>: Self-administered (remote; 7–10 min)</li>
+</ul>
 </tr>
 <tr><td><b>Quality Control</b></td>
-<td colspan="2">
-  <ul>
-  <li>Examine missingness by counting items answered per participant.</li>
-  <li>Check age is within expected ranges.</li>
-  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
-  <li>Cronbach's Alpha calculated to assess reliability.</li>
+<td>
+<ul>
+  <li>Assess missingness (items completed per participant)</li>
+  <li>Verify age falls within expected range</li>
+  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores)</li>
+  <li>Assess reliability (Cronbach’s α)</li>
   </ul>
 </td>
 </tr>

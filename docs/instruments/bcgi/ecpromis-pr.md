@@ -1,23 +1,6 @@
 # ecPROMIS Peer Relationships Scale
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>mh_cg_pms__peer</code></td></tr>
-<tr><td><b>Construct</b></td><td>Peer Relationships</td></tr>
-<tr><td><b>Study Visits</b></td><td>V05, V07, V09</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Primary Caregiver on Child<br>
-<b>Method</b>: Self-administered remotely (1-2 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
-<td>
-  <ul>
-  <li>Examine missingness by counting items answered per participant.</li>
-  <li>Check age is within expected ranges.</li>
-  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
-  </ul>
-</td></tr>
-</tbody></table>
+{{ overview_table(instruments.ecpromis_peer) }}
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>

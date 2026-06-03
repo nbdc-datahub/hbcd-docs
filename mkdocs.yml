@@ -13,6 +13,9 @@ theme:
     - navigation.instant
     - navigation.sections
     - header.autohide
+    - search.suggest       # show search suggestions as you type
+    - search.highlight     # highlight search terms in results and on page
+    - search.share         # add "Share Search" button to results page to copy URL with search query 
  
 markdown_extensions:
   - toc:
@@ -42,6 +45,7 @@ extra_css:
 
 plugins:
   - search
+  - macros
   - git-revision-date-localized:
       type: date
 

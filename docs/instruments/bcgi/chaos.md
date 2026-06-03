@@ -1,24 +1,30 @@
 # Confusion, Hubbub and Order Scale (CHAOS)
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
+{{ overview_table(instruments.chaos) }}
+
+<!-- <table class="table-no-vertical-lines readme-intro">
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>mh_cg_chaos</code></td></tr>
 <tr><td><b>Construct</b></td><td>Family Organization</td></tr>
-<tr><td><b>Study Visits</b></td><td>V05, V07</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Primary Caregiver on Child<br>
-<b>Method</b>: Self-administered remotely (4-8 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
+<tr><td><b>Type</b></td><td>Primary caregiver survey (child-specific; 4–8 min)</td></tr>
+<tr><td><b>Study Visits</b></td>
 <td>
-  <ul>
-  <li>Checks for missing data based on counts for items completed by each participant</li>
-  <li>Verification of scoring accuracy</li>
-  <li>Summary statistics to examine item-level frequencies and total scores</li>
-  <li>Review of response distributions for potential outliers</li>
-</ul></td></tr>
+<span class="visit">V05</span>
+<span class="visit">V07</span>
+</td></tr>
+<tr><td><b>Quality Control</b></td>
+<td>
+<ul>
+<li>Assess missingness (items completed per participant)</li>
+<li>Verify scoring accuracy</li>
+<li>Review summary statistics (item frequencies, total scores)</li>
+<li>Inspect response distributions for outliers</li>
+</ul>
+</td>
+</tr>
 </tbody>
-</table>
+</table> -->
+
 
 <div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
@@ -55,8 +61,6 @@ The **Confusion, Hubbub, and Order Scale (CHAOS)** is a 15-item, self-report sca
 </div>
 <div class="collapsible-content">
 <p>The original CHAOS used True/False responses (<a href="https://doi.org/10.1016/0193-3973(95)90028-4">Matheny et al., 1995</a>), but more recent work favors a 4-point Likert scale for improved sensitivity (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8680262/">Wilhoit et al., 2021</a>). Empirical results suggest consistent scale validity and associations (with child cognitive/behavioral outcomes, parenting, etc.) across both formats (<a href="https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-021-00651-1">Andrews et al., 2021</a>; <a href="https://doi.org/10.1186/s12889-020-08587-8">Marsh et al., 2020</a>). The 4-point scale is also validated in the Spanish language version of CHAOS as well (<a href="https://doi.org/10.15174/au.2019.1971">Sanchez-Mondragon & Flores Herrera, 2019</a>).</p>
-<p>Based on expert consensus, HBCD uses a 4-point scale with the following options:</p>
-<p style="margin-left: 20px;">{<i>1 = Very much | 2 = Somewhat | 3 = A little bit | 4 = Not at all</i>} like your own home</p>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">

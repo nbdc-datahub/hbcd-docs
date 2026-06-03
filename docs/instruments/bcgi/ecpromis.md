@@ -1,26 +1,49 @@
 # ecPROMIS Child-Caregiver Relationship Scale
 
-<table class="table-no-vertical-lines">
-<thead><tr><th></th><th>Infant Version (&lt;1 year old)</th><th>Child (1&ndash;5 Years) Version</th></tr></thead>
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>mh_cg_pms__cc__inf</code></td><td><code>mh_cg_pms__cc__1to5</code></td></tr>
-<tr><td><b>Construct</b></td><td  colspan="2">Relationships</td></tr>
-<tr><td><b>Study Visits</b></td><td>V03, V05</td><td>V05, V07, V09</td></tr>
-<td><b>Administration</b></td><td colspan="2">
-  <ul>
-  <li><b>Child-specific</b>: Yes</li>
-  <li><b>Respondent</b>: Primary Caregiver</li>
-  <li><b>Method</b>: Self-administered remotely (1&ndash;2 min estimated duration)</li>
-  </ul>
+<table class="table-no-vertical-lines readme-intro">
+<thead>
+<tr>
+  <th></th>
+  <th>Infant Version (&lt;1 year old)</th>
+  <th>Child Version (1 - 5 years old)</th>
 </tr>
-<tr><td><b>Quality Control</b></td>
-<td colspan="2">
-  <ul>
-  <li>Examine missingness by counting items answered per participant.</li>
-  <li>Check age is within expected ranges.</li>
-  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
-  </ul>
-</td>
+</thead>
+<tbody>
+<tr>
+  <td>Table Name</td>
+  <td><code>mh_cg_pms__cc__inf</code></td>
+  <td><code>mh_cg_pms__cc__1to5</code></td>
+</tr>
+<tr>
+  <td>Study Visits</td>
+  <td class="visit-list">V03 · V05</td>
+  <td class="visit-list">V03 · V05 · V07</td>
+</tr>
+<tr>
+  <td colspan="3" style="height: 3rem;"></td>
+</tr>
+<tr class="section-divider">
+  <td colspan="3">SHARED INSTRUMENT INFORMATION</td>
+</tr>
+<tr>
+  <td>Construct</td>
+  <td colspan="2">Relationships</td>
+</tr>
+<tr>
+  <td>Type</td>
+  <td colspan="2">
+  	Primary caregiver survey (child-specific; 1-2 min)
+  </td>
+</tr>
+<tr>
+  <td>Quality Control</td>
+  <td colspan="2">
+    <ul>
+    <li>Examine missingness by counting items answered per participant.</li>
+    <li>Check age is within expected ranges.</li>
+    <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
+    </ul>
+  </td>
 </tr>
 </tbody>
 </table>
