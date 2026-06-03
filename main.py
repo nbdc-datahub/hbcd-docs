@@ -27,12 +27,14 @@ def define_env(env):
 
 ## INSTRUMENT OVERVIEW TABLES AT TOP OF README PAGES
     @env.macro
-    def overview_table(inst):    
+    def overview_table(inst):
+
         return f"""
 <table class="table-no-vertical-lines readme-intro">
 <tbody>
 
 {row("Table Name", inst.get("table_name"), code=True)}
+{row("Concatenated Data", inst.get('file_tree'), code=True)}
 {row("Construct", inst.get("construct"))}
 {row("Type", inst.get("administration"))}
 {row("Study Visits", inst.get("visits"), value_class="visit-list")}
@@ -41,11 +43,28 @@ def define_env(env):
 </tbody>
 </table>
 """
+        
+    @env.macro
+    def warning_banner(
+        banner_id="warning",
+        text="Data Warning",
+        icon="fa-exclamation-triangle"
+    ):
+        return f"""
+<div id="{banner_id}" class="warning-banner" onclick="toggleCollapse(this)">
+<span class="emoji">
+    <i class="fas {icon}"></i>
+</span>
 
+<span class="text-with-link">
+    <span class="text">{text}</span>
 
+    <a class="anchor-link" href="#{banner_id}" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+</span>
 
-# Administration details (respondent, method, duration) are not currently included in the table, but could be added back in if desired. If so, would need to add to YAML file and then add rows here similar to the other fields.
-# admin = f"""
-# <b>Respondent</b>: {inst.get('respondent')}<br>
-# <b>Method</b>: {inst.get('method')}
-# """
+<span class="arrow">▸</span>
+</div>
+"""
+        

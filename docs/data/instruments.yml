@@ -26,3 +26,17 @@ ecpromis_peer:
       <li>Check age is within expected range</li>
       <li>Review summary statistics (item frequencies, age, prorated scores)</li>
       </ul>
+
+olink:
+  name: Olink Explore 384 Inflammation 1 Panel
+  acronym: Olink
+  domain: Behavior & Caregiver-Child Interaction
+  file_tree: |
+    └── concatenated/proteins/olink/inflammation/
+        ├── Olink_allplates_long.csv
+        └── Olink_allplates_wide.csv
+  table_name:
+  construct: Maternal Inflammation
+  visits: V01
+  administration: Direct assessment of pregnant participant
+  qc: <a href="#quality-control">See QC section below</a>

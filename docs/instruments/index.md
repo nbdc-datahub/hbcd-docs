@@ -268,7 +268,7 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><i class="fas fa-layer-group header-icon"></i> <a href="biospec/olink" target="_blank">Olink</a></td>
     <td></td>
     <td>Inflammation</td>
-    <td><i>genetics/</i></td>
+    <td>Concatenated data under <i>proteins/</i></td>
 </tr>
 </tbody>
 </table>

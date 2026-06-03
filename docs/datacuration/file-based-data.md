@@ -211,6 +211,13 @@ hbcd/
     ├── geocoding/
     │   └── HBCD_address_history_geocoded.csv
     │
+    <span class="section"># Olink Explore 384 Inflammation 1 Panel</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/biospec/olink/" target="_blank">View README</a></span>
+    ├── proteins/
+    │   └── olink/
+    │       └── inflammation/
+    │           ├── Olink_allplates_long.csv
+    │           └── Olink_allplates_wide.csv
+    │
     <span class="section"># Study Navigator Contact Form</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/admin/study-navigators" target="_blank">View README</a></span>
     └── study_navigator/
         └── study_navigator_export.csv

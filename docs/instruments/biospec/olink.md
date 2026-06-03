@@ -1,73 +1,54 @@
 # Olink Explore 384 Inflammation 1 Panel
 
-Protein abundance of inflammatory markers was measured using the **Olink Explore 384 Inflammation 1 Panel ([Olink® Explore 3072/384](https://olink.com/products/olink-explore-3072-384))**, with data generated using Explore version 6.7.2. Measurements were obtained from birth parents during pregnancy at Visit 1 as an indicator of maternal inflammation.
+{{ overview_table(instruments.olink) }}
 
-Olink data are reported as **Normalized Protein eXpression (NPX)** values. NPX is a proprietary, arbitrary unit that reflects relative protein abundance, with higher values indicating higher abundance. Values are reported on a log₂ scale, such that a difference of 1 NPX corresponds to a two-fold difference in protein abundance. Note that NPX values are only comparable for the same protein across samples and plates and cannot be used for comparisons between different proteins. See the [Panel Quick Guide](#olink-explore-384-inflammation-panel-quick-guide) at the end of this page for the full assay list.
 
-## Release Data
+<!-- <table class="table-no-vertical-lines readme-intro">
+<tbody>
+<tr><td>Concatenated Data</td>
+<td>
+<code>└── concatenated/proteins/olink/inflammation/
+    ├── Olink_allplates_long.csv
+    └── Olink_allplates_wide.csv
+</code>
+</td></tr>
+</td></tr>
+<tr><td>Construct</td><td>Maternal Inflammation</td></tr>
+<tr><td>Type</td><td>Direct assessment of pregnant participant</td></tr>
+<tr><td><b>Study Visits</b></td>
+<td><span class="visit">V01</span></td></tr>
+<tr><td><b>Quality Control</b></td>
+<td>See details</td>
+</tr>
+</tbody>
+</table> -->
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ warning_banner() }}
 <div class="warning-collapsible-content">
 <p>Limits of detection (LOD) were not calculated for this release. Users should compute LOD values using negative control (NC) samples. Proteins with a high proportion of values below the LOD should be excluded or interpreted with caution.</p>
 </div>
 
 <div id="issues" class="issues-banner">
   <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
+  <span class="text">Please review the <a href="../../../changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
-
-The Olink dataset is provided as concatenated files (see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for details):
-<pre class="folder-tree">
-hbcd/
-|__ concatenated/ 
-    |__ proteins/
-        |__ olink/
-            |__ inflammation/
-                |__ Olink_allplates_long.csv
-                |__ Olink_allplates_wide.csv
-</pre>
 <p></p>
 
-**Two versions of the dataset are provided to support different analysis workflows:**
+## Instrument Details
+
+Protein abundance of inflammatory markers was measured using the **Olink Explore 384 Inflammation 1 Panel ([Olink® Explore 3072/384](https://olink.com/products/olink-explore-3072-384))**, with data generated using Explore version 6.7.2.
+
+Olink data are reported as Normalized Protein eXpression (**NPX**) values. NPX is a proprietary, arbitrary unit that reflects relative protein abundance, with higher values indicating higher abundance. Values are reported on a log₂ scale, such that a difference of 1 NPX corresponds to a two-fold difference in protein abundance. Note that NPX values are only comparable for the same protein across samples and plates and cannot be used for comparisons between different proteins. See the [Panel Quick Guide](#olink-panel-quick-guide) at the end of this page for the full assay list.
+
+### Concatenated Release Data
+
+The Olink dataset is provided as  <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated files</a> organized as displayed in the file tree above.Two versions of the dataset are provided to support different analysis workflows:
+
 <table class="table-no-vertical-lines">
 <thead> <tr> <th></th> <th><code><b>Olink_allplates_long.csv</b></code></th> <th><code><b>Olink_allplates_wide.csv</b></code></th> </tr> </thead> <tbody> <tr> <td><strong>Format</strong></td> <td>Long</td> <td>Wide</td> </tr> 
 <tr> <td><strong>Structure</strong></td> <td>One row per participant–protein combination</td> <td>One row per participant & one column per protein</td> </tr> 
 <tr> <td><strong>Dimensions</strong></td> <td>538,080 rows × 16 columns</td> <td>1,416 rows × 1,522 columns</td> </tr> 
 </tbody> </table>
-
-
-<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fa-solid fa-book-open"></i></span>
-  <span class="text-with-link">
-  <span class="text">References</span>
-  <a class="anchor-link" href="#ref" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-<span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
 
 <div id="vars" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
@@ -113,30 +94,24 @@ hbcd/
 </table>
 </div>
 
-## Quality Control
+### Quality Control
 
 #### Olink QC 
 
-Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the [Olink® Explore Overview (*section 7.1 Internal controls*)](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf) for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of *0* for `{ASSAY}_Count` and *NA* for `ExtNPX`, `NPX`, and `PCNormalizedNPX`.
-
-**→ Select “QC failures only” under the [Panel Quick Guide](#olink-explore-384-inflammation-panel-quick-guide) to view list of affected assays**
+Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the [Olink® Explore Overview (*section 7.1 Internal controls*)](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf) for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of *0* for `{ASSAY}_Count` and *NA* for `ExtNPX`, `NPX`, and `PCNormalizedNPX`.    
+***Select “QC failures only” under the [Panel Quick Guide](#olink-panel-quick-guide) to view list of affected assays.***
 
 <!-- This includes the following proteins: BCL2L11 (O43521-2); BID (P55957); CD40LG (P29965); CLEC7A (Q9BXN2); HGF (P14210); IDS (P22304); LTA (P01374);MGLL (Q99685); PTPRM (P28827); RAB6A (P20340) -->
 
 #### Plate Effects
 
-Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting plate effects are not excluded from release data. Plate effects were assessed using ANOVA with a p-value threshold of *0.0033 (.05 / 15)*. Post-hoc analyses showed that these effects were not driven by a small number of outlier plates, but instead reflected broader plate-to-plate variation. A total of **337 proteins** demonstrated a plate effect when normalizing by plate control; a total of **46 proteins** demonstrated a plate effect when normalizing by median plate intensity.
+Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting plate effects are not excluded from release data. Plate effects were assessed using ANOVA with a p-value threshold of *0.0033 (.05 / 15)*. Post-hoc analyses showed that these effects were not driven by a small number of outlier plates, but instead reflected broader plate-to-plate variation. A total of **337 proteins** demonstrated a plate effect when normalizing by plate control; a total of **46 proteins** demonstrated a plate effect when normalizing by median plate intensity.      
+***Select “Plate effects only” under the [Panel Quick Guide](#olink-panel-quick-guide) to view list of affected assays.***
 
-**→ Select “Plate effects only” under the [Panel Quick Guide](#olink-explore-384-inflammation-panel-quick-guide) to view list of affected assays**
+## Olink Panel Quick Guide
 
-## Resources
-
-- [Olink.com](https://olink.com/products/olink-explore-3072-384)
-- [Olink Insight](https://olink.com/software/olink-insight): a web-based data analysis application provided by Olink that can be used for release data 
-- [Olink® Explore Overview User Manual](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf#page=6&zoom=100,170,128)
-
-
-## Olink Explore 384 Inflammation Panel Quick Guide
+<div class="subtle-note">Olink Explore 384 Inflammation 1 Panel</div>
+<p></p>
 
 <style>
 .assay-grid {
@@ -182,3 +157,8 @@ Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting p
 <span>CLEC7A</span><span>CLIP2</span><span>CLSTN2</span><span>CNTNAP2</span><span>COL9A1</span><span>COLEC12</span><span>CRHBP</span><span>CRIM1</span><span>CRKL</span><span>CRLF1</span><span>CSF1</span><span>CSF3</span><span>CST7</span><span>CTRC</span><span>CTSC</span><span>CTSO</span><span>CXADR</span><span>CXCL1</span><span>CXCL3</span><span>CXCL6</span><span>CXCL8</span><span>CXCL9</span><span>CXCL10</span><span>CXCL12</span><span>CXCL14</span><span>CXCL17</span><span>DAG1</span><span>DAPP1</span><span>DBNL</span><span>DECR1</span><span>DGKZ</span><span>DNAJA2</span><span>DNPH1</span><span>DNER</span><span>DPP10</span><span>DFFA</span><span>EDAR</span><span>EGF</span><span>EGLN1</span><span>EIF4G1</span><span>EIF5A</span><span>ENAH</span><span>ENPP5</span><span>ENPP7</span><span>EPCAM</span><span>EPHA1</span><span>EPO</span><span>ERBB3</span><span>ESM1</span><span>FABP1</span><span>FABP9</span><span>FASLG</span><span>FCAR</span><span>FCRL2</span><span>FCRL3</span><span>FCRL6</span><span>FGF2</span><span>FGF5</span><span>FGF19</span><span>FIS1</span><span>FLT3LG</span><span>FOXO1</span><span>FST</span><span>FSTL3</span><span>FXYD5</span><span>GAL</span><span>GALNT3</span><span>GBP2</span><span>GMPR</span><span>GLOD4</span><span>GOPC</span><span>GZMA</span><span>GZMB</span><span>HGF</span><span>HCLS1</span><span>HEXIM1</span><span>HLA-DRA</span><span>HLA-E</span><span>HPCAL1</span><span>HSD11B1</span><span>HSPA1A</span><span>ICA1</span><span>ICAM4</span><span>IDS</span><span>IFNG</span><span>IFNGR1</span><span>IFNLR1</span><span>IKBKG</span><span>IL1A</span><span>IL1B</span><span>IL1R2</span><span>IL1RL2</span><span>IL1RN</span><span>IL2</span><span>IL2RB</span><span>IL3RA</span><span>IL4</span><span>IL4R</span><span>IL5</span><span>IL5RA</span><span>IL6</span><span>IL7</span><span>IL10</span><span>IL10RA</span><span>IL10RB</span><span>IL11</span><span>IL12B</span><span>IL12RB1</span><span>IL13</span><span>IL15</span><span>IL15RA</span><span>IL16</span><span>IL17A</span><span>IL17C</span><span>IL17D</span><span>IL17F</span><span>IL17RB</span><span>IL18</span><span>IL18R1</span><span>IL20</span><span>IL20RA</span><span>IL22RA1</span><span>IL24</span><span>IL32</span><span>IL33</span><span>IRAK1</span><span>IRAK4</span><span>IRF?</span><span>ISM1</span><span>ITGA6</span><span>ITGA11</span><span>ITGB6</span><span>ITM2A</span><span>JCHAIN</span><span>JUN</span><span>KLRB1</span><span>KLRD1</span><span>KRT19</span><span>KYNU</span><span>LAMA4</span><span>LAMP3</span><span>LAP3</span><span>LAIR1</span><span>LAT</span><span>LGALS4</span><span>LGALS9</span><span>LGMN</span><span>LIFR</span><span>LTA</span><span>LTBR</span><span>LY6D</span><span>LY75</span><span>LY9</span><span>MANF</span><span>MAP2K6</span><span>MAPK9</span><span>MATN2</span><span>MEGF10</span><span>MEPE</span><span>METAP1D</span><span>MERTK</span><span>MGMT</span><span>MGLL</span><span>MILR1</span><span>MICB_MICA</span><span>MMP1</span><span>MMP10</span><span>MPIG6B</span><span>MVK</span><span>MYO9B</span><span>MZB1</span><span>NBN</span><span>NCK2</span><span>NCF2</span><span>NCLN</span><span>NCR1</span><span>NELL2</span><span>NME3</span><span>NFASC</span><span>NFATC1</span><span>NFATC3</span><span>NRTN</span><span>NT5C3A</span><span>NTF3</span><span>NUDC</span><span>NUB1</span><span>NPPC</span><span>OMD</span><span>OSCAR</span><span>OSM</span><span>PADI2</span><span>PAPPA</span><span>PARP1</span><span>PCDH1</span><span>PDGFB</span><span>PDLIM7</span><span>PGF</span><span>PIK3AP1</span><span>PLA2G4A</span><span>PLAUR</span><span>PLXNA4</span><span>PNLIPRP2</span><span>PON3</span><span>PREB</span><span>PRELP</span><span>PRDX3</span><span>PRDX5</span><span>PRKAB1</span><span>PRKCQ</span><span>PRSS8</span><span>PSIP1</span><span>PSMG3</span><span>PSPN</span><span>PTPRM</span><span>PTPN6</span><span>PTX3</span><span>RAB37</span><span>RABGAP1L</span><span>RAB6A</span><span>REG4</span><span>RGS8</span><span>ROBO1</span><span>SAMD9L</span><span>SCG3</span><span>SCGB1A1</span><span>SCGB3A2</span><span>SCGN</span><span>SCRN1</span><span>SELPLG</span><span>SERPINB8</span><span>SH2D1A</span><span>SHMT1</span><span>SIGLEC1</span><span>SIGLEC10</span><span>SIRPB1</span><span>SIT1</span><span>SKAP2</span><span>SLAMF1</span><span>SLAMF7</span><span>SLC39A5</span><span>SMOC2</span><span>SMPDL3A</span><span>SPINK4</span><span>SPINT2</span><span>SPON1</span><span>SPRY2</span><span>SRPK2</span><span>STX8</span><span>SULT2A1</span><span>TANK</span><span>TFF2</span><span>TGFA</span><span>TGFB1</span><span>TIMP3</span><span>TLR3</span><span>TNF</span><span>TNFAIP8</span><span>TNFRSF4</span><span>TNFRSF11A</span><span>TNFRSF11B</span><span>TNFRSF13B</span><span>TNFRSF13C</span><span>TNFRSF14</span><span>TNFSF10</span><span>TNFSF11</span><span>TNFSF12</span><span>TNFSF13</span><span>TPSAB1</span><span>TPT1</span><span>TRAF2</span><span>TREM2</span><span>TRIM5</span><span>TRIM21</span><span>VEGFA</span><span>VEGFD</span><span>VASH1</span><span>WAS</span><span>WFIKKN2</span><span>WNT9A</span><span>YTHDF3</span>
 </div>
 
+## Resources
+
+- [Olink.com](https://olink.com/products/olink-explore-3072-384)
+- [Olink Insight](https://olink.com/software/olink-insight): a web-based data analysis application provided by Olink that can be used for release data 
+- [Olink® Explore Overview User Manual](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf#page=6&zoom=100,170,128)
