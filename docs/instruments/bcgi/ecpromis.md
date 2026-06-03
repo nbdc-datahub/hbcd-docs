@@ -1,4 +1,4 @@
-# ecPROMIS Child-Caregiver Relationship Scale
+# ecPROMIS Caregiver-Child Relationship Scale
 
 <table class="table-no-vertical-lines readme-intro">
 <thead>
@@ -104,7 +104,7 @@ For the HBCD study, the ecPROMIS Child–Caregiver Relationship Form was develop
 <p><b>General Language Modiﬁcations</b><br> 
 Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible. In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
 <p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p> 
-<p>The child-caregiver ecPROMIS was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the HealthMeasures (ecPROMIS) team.</p>
+<p>The caregiver-child ecPROMIS was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the HealthMeasures (ecPROMIS) team.</p>
 </div>
 
 <div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
@@ -118,7 +118,7 @@ Measure instructions and individual items that reference gendered pronouns (‘h
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The Child-Caregiver Relationship Scale includes 5 items answered on a scale of 1-5:<br>
+<p>The Caregiver-Child Relationship Scale includes 5 items answered on a scale of 1-5:<br>
 1 = <b>Never</b> &nbsp; 2 = <b>Rarely</b> &nbsp; 3 = <b>Sometimes</b> &nbsp 4 = <b>Often</b> &nbsp; 5 = <b>Always</b> &nbsp; <i>Decline to Answer = missing</i></p>
 <p>If all items are answered, their sum is used as the total score. If fewer than three items are completed, the score is set to missing. If at least three items are answered but some are missing, a prorated score is calculated as:</p>
 <p style="font-size: 0.9em;">

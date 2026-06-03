@@ -46,7 +46,7 @@ th, td {
   border-bottom: 1px solid #ccc;
   border-left: none !important;
   border-right: none !important;
-  padding: 5px 10px !important;
+  /* padding: 5px 12px !important; */
   background-color: rgba(255, 255, 255, 0.6) !important; 
   vertical-align: top !important;
 }
@@ -74,7 +74,7 @@ th, td {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 .compact-table-no-vertical-lines th,
 .compact-table-no-vertical-lines td {

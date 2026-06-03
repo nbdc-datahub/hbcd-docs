@@ -1,10 +1,10 @@
-<style>
+<!-- <style>
 .wy-nav-content {
     width: 90% !important;
     max-width: 90% !important;
     flex-grow: 1 !important;
 }
-</style>   
+</style>    -->
 
 
 # Study Instruments
@@ -82,11 +82,11 @@ Expand the sections below to see a list of measures associated with each domain 
 <thead>
 <th>Instrument</th>
 <th>Construct</th>
-<th><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Concatenated Data (<a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>)</th>
+<th>File Name</th>
 </thead>
 <tbody>
 <tr>
-<td><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a></td>
+<td><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a> <i class="fas fa-layer-group table-icon"></i></td>
 <td>Recruitment/Retention</td>
 <td><i>study_navigator/Study Navigator Export - Release 2.0.csv</i></td>
 </tr>
@@ -159,19 +159,19 @@ Expand the sections below to see a list of measures associated with each domain 
   </tr>
   <tr>
     <td rowspan="2">
-      <a href="bcgi/ecpromis" target="_blank">ecPROMIS Child-Caregiver Relationship</a></td>
+      <a href="bcgi/ecpromis" target="_blank">ecPROMIS Caregiver-Child</a></td>
     <td>&lt;1 year</td>
-    <td>Child-Caregiver Interaction</td>
+    <td>Caregiver-Child Interactions</td>
     <td><code>mh_cg_pms__cc__inf</code></td>
   </tr>
   <tr>
     <td>1-5 years</td>
-    <td>Child-Caregiver Interaction</td>
+    <td>Caregiver-Child Interactions</td>
     <td><code>mh_cg_pms__cc__1to5</code></td>
   </tr>
   <tr>
     <td>
-      <a href="bcgi/ecpromis-pr" target="_blank">ecPROMIS Peer Relationships</a></td>
+      <a href="bcgi/ecpromis-pr" target="_blank">ecPROMIS Peer</a></td>
     <td></td>
     <td>Peer Relationships</td>
     <td><code>mh_cg_pms__peer</code></td>
@@ -199,10 +199,11 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><a href="bcgi/ibqr" target="_blank">IBQ-R (VSF)+BI</a></td>
     <td>Infant</td>
     <td rowspan="2">
-      Surgency/Extraversion,<br>
+      Surgency/Extraversion,
       Negative Affectivity,<br>
       Effortful Control, 
-      <span class="tooltip">BI<span class="tooltiptext">Behavioral Inhibition</span></span></td>
+      Behavioral Inhibition
+      </td>
     <td><code>mh_cg_ibqr</code></td>
   </tr>
   <tr>
@@ -241,14 +242,14 @@ Expand the sections below to see a list of measures associated with each domain 
 <th>Instrument</th>
 <th>Version</th>
 <th>Construct</th>
-<th>Table Name</th>
+<th>Table / Folder Name</th>
 </thead>
 <tbody>
 <tr>
-    <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a> <i class="fas fa-layer-group table-icon"></i></td>
+    <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a><i class="fas fa-layer-group table-icon"></i></td>
     <td>Maternal & Child</td>
     <td>GWAS, EWAS, Transcriptome</td>
-    <td>Concatenated data under <i>genetics/</i></td>
+    <td><i>concatenated/genetics/</i></td>
 </tr>
 
 <tr>
@@ -266,10 +267,10 @@ Expand the sections below to see a list of measures associated with each domain 
 </tr>
 
 <tr>
-    <td><a href="biospec/olink" target="_blank">Olink Explore 384 Inflammation 1 Panel</a> <i class="fas fa-layer-group table-icon"></i></td>
+    <td><a href="biospec/olink" target="_blank">Olink Explore</a> <i class="fas fa-layer-group table-icon"></i></td>
     <td></td>
     <td>Maternal Inflammation</td>
-    <td>Concatenated data under <i>proteins/</i></td>
+    <td><i>concatenated/proteins/</i></td>
 </tr>
 </tbody>
 </table>
@@ -433,16 +434,17 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
+
 <p style="font-size: 0.9em; color: #555;">
 <i style="color: #ff5df7ff;" class="fa-solid fa-baby"></i>&nbsp;= Pregnancy & Infant Health&nbsp;&nbsp;&nbsp;
 <i style="color: #ff5df7ff;" class="fas fa-brain"></i>&nbsp;= Mental Health&nbsp;&nbsp;&nbsp;
 <i style="color: #ff5df7ff;" class="fa-solid fa-prescription-bottle"></i>&nbsp;= Substance Use
 </p>
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
   <th>Instrument</th>
-  <th>Version</th>
   <th>Construct</th>
   <th>Table Name</th>
 </tr>
@@ -451,93 +453,78 @@ Expand the sections below to see a list of measures associated with each domain 
 <!-- Pregnancy & Infant Health -->
 <tr class="section-health">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="pregexp/pex/" target="_blank">Health V1-Health History</a></td>
-  <td></td>
   <td>Pre-pregnancy and pregnancy health</td>
   <td><code>pex_bm_health_preg__healthhx</code></td>
 </tr>
 <tr class="section-health">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="pregexp/pex/" target="_blank">Health V1-Exp & Vaccines</a></td>
-  <td></td>
   <td>Vaccines in pregnancy</td>
   <td><code>pex_bm_health_preg__exp__vacc</code></td>
 </tr>
 <tr class="section-health">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="pregexp/pex/" target="_blank">Health V1-Chronic Conditions</a></td>
-  <td></td>
   <td>Chronic conditions/STIs in pregnancy</td>
   <td><code>pex_bm_health_preg__chroncond</code></td>
 </tr>
 <tr class="section-health">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="pregexp/pex/" target="_blank">Health V1-Illness</a></td>
-  <td></td>
   <td>Illness in pregnancy</td>
   <td><code>pex_bm_health_preg__illness</code></td>
 </tr>
 <tr class="section-health">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="pregexp/pex/" target="_blank">Health V1-ER Admissions</a></td>
-  <td></td>
   <td>ER visit or hospitalization in pregnancy</td>
   <td><code>pex_bm_health_preg__erhosp</code></td>
 </tr>
 <tr class="section-health">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="pregexp/pex/" target="_blank">Health V1-Medications</a></td>
-  <td></td>
   <td>Medications in pregnancy</td>
   <td><code>pex_bm_health_preg__meds</code></td>
 </tr>
 <tr class="section-health">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="pregexp/pex/" target="_blank">Health V2-Pregnancy</a></td>
-  <td></td>
   <td>Health updates up to delivery</td>
   <td><code>pex_bm_healthv2_preg</code></td>
 </tr>
 <tr class="section-health">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="pregexp/pex/" target="_blank">Health V2-Infancy</a></td>
-  <td></td>
   <td>Delivery and birth outcomes</td>
   <td><code>pex_bm_healthv2_inf</code></td>
 </tr>
 <!-- Mental Health -->
 <tr class="section-mh">
   <td><i style="color: #ff5df7ff;" class="fas fa-brain header-icon"></i> <a href="pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
-  <td></td>
   <td>Personal and Family Mental Health</td>
   <td><code>pex_bm_psych</code></td>
 </tr>
 <tr class="section-mh">
   <td><i style="color: #ff5df7ff;" class="fas fa-brain header-icon"></i> <a href="pregexp/mh/apa12" target="_blank">APA 1/2</a></td>
-  <td></td>
   <td>Mental Health</td>
   <td><code>pex_bm_apa</code></td>
 </tr>
 <tr class="section-mh">
   <td><i style="color: #ff5df7ff;" class="fas fa-brain header-icon"></i> <a href="pregexp/mh/ptsd" target="_blank">DSM5 Acute Stress or PTSD</a></td>
-  <td></td>
   <td>PTSD/Acute Stress Symptom Severity</td>
   <td><code>pex_bm_str__ptsd</code></td>
 </tr>
 <tr class="section-mh">
   <td><i style="color: #ff5df7ff;" class="fas fa-brain header-icon"></i> <a href="pregexp/mh/epds" target="_blank">EPDS</a></td>
-  <td></td>
   <td>Postnatal Depression</td>
   <td><code>pex_bm_epds</code></td>
 </tr>
 <!-- Substance Use -->
 <tr class="section-su">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-prescription-bottle header-icon"></i> <a href="pregexp/su/assist" target="_blank">ASSIST V1/2/3/4</a></td>
-  <td>V1-V4</td>
   <td>Substance Use Pre-, During, and Post-Pregnancy</td>
   <td><code>pex_bm_assistv<span class="blue-text">{1|2|3|4}</span></code></td>
 </tr>
 <tr class="section-su">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-prescription-bottle header-icon"></i> <a href="pregexp/su/su-patterns" target="_blank">Substance Use Patterns</a></td>
-  <td></td>
   <td>Substance Use in Pregnancy</td>
   <td><code>pex_bm_subst</code></td>
 </tr>
 <tr class="section-su">
   <td><i style="color: #ff5df7ff;" class="fa-solid fa-prescription-bottle header-icon"></i> <a href="pregexp/su/tlfb" target="_blank">TLFB</a></td>
-  <td></td>
   <td>SU Before and During Pregnancy</td>
   <td><code>pex_ch_tlfb</code></td>
 </tr>
@@ -556,26 +543,24 @@ Expand the sections below to see a list of measures associated with each domain 
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<i style="color: teal;" class="fas fa-layer-group"></i>&nbsp;= Concatenated Data - <a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>see details</i></a>
+
+<p style="font-size: 1em; color: #555; text-align: center;">
+<i class="fas fa-layer-group table-icon"></i>&nbsp;=&nbsp;Concatenated data <a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>(see details)</i></a>
 </p>
-<table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<br>
+
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
   <th>Instrument</th>
   <th>Version</th>
   <th>Construct</th>
-  <th>Table / <i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; Concatenated Folder</th>
+  <th>Table / Folder Name</th>
 </tr>
 </thead>
 <tbody>
+
 <tr>
-  <td><i style="color: teal;" class="fas fa-layer-group"></i>&nbsp; <a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage</a></td>
-  <td></td>
-  <td>Neighborhood Measures</td>
-  <td><i>geocoded_linkage/</i></td>
-</tr>  
-  <tr>
   <td rowspan="2"><a href="SED/aces" target="_blank">Adverse Childhood Experiences</a></td>
   <td>ACEs</td>
   <td>ACEs (Caregiver)</td>
@@ -628,6 +613,14 @@ Expand the sections below to see a list of measures associated with each domain 
   <td>Food insecurity</td>
   <td><code>sed_cg_foodins</code></td>
 </tr>
+
+<tr>
+  <td><a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage</a> <i class="fas fa-layer-group table-icon"></i></td>
+  <td></td>
+  <td>Neighborhood Measures</td>
+  <td><i>geocoded_linkage/</i></td>
+</tr>  
+
 <tr>
   <td><a href="SED/home21" target="_blank">HOME-21</a></td>
   <td>Infant-Toddler</td>
