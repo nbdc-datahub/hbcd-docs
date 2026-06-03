@@ -90,8 +90,6 @@ hbcd/
 
 ## Quality Control
 
-<!-- LUCI ADMIN NOTE: potentially add figures or tables from QC results provided in [html report](illumina-QC.html)  -->
-
 ### General QC Checks
 The following quality control checks are performed:
 <ul style="font-size: 0.9em;">

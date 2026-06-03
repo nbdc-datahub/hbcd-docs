@@ -3,13 +3,21 @@ table {
     border-collapse: collapse;
     width: 100%;
     table-layout: fixed;
+    overflow: visible !important; /* needed in combo with logic below for tooltips to overflow outside of table container */
 }
+
+/* Allow tooltips to overflow outside of the table container */
+.rst-content .wy-table-responsive {
+    overflow: visible !important;
+}
+
 th, td {
+    position: relative;
+    overflow: visible;
     border: 1px solid #ddd;
     word-wrap: break-word !important;
     white-space: normal !important;
 }
-
 
 /* Text + anchor stay aligned */
 .table-banner .text-with-link {

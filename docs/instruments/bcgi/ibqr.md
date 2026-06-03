@@ -1,14 +1,14 @@
-# Behavior Questionnaire + Inhibition
+# Behavior Questionnaire + Inhibition (IBQ-R / ECBQ)
+
+<p style="font-size: 1.2em; font-weight: 500; color: gray;"><i>Infant / Early Childhood Behavior Questionnaire + Inhibition (IBQ-R / ECBQ) VSF + BI</i></p>
 
 <table class="table-no-vertical-lines">
 <tbody>
-<tr>
-  <td></td>
-  <td><b>IBQ-R VSF +BI</b><br>Infant Behavior Questionnaire–Revised <span class="tooltip tooltip-left">VSF +BI<span class="tooltiptext">Very Short Form + Behavior Inhibition</span></span></td>
-  <td><b>ECBR VSF +BI</b><br>Early Childhood Behavior Questionnaire <span class="tooltip tooltip-left">VSF +BI<span class="tooltiptext">Very Short Form + Behavior Inhibition</span></span></td>
-</tr>
-<tr><td><b>Table Names</b></td><td><code>mh_cg_ibqr</code></td><td><code>mh_cg_ecbq</code></td></tr>
-<tr><td><b>Study Visits</b></td><td>V03, V05</td><td>V05</td></tr>
+<tr><td><b>Table Names</b></td>
+<td>IBQ-R VSF +BI: <code>mh_cg_ibqr</code> <br>
+ECBQ VSF +BI: <code>mh_cg_ecbq</code>
+</td></tr>
+<tr><td><b>Study Visits</b></td><td>V03, V05 (IBQ-R); V05 (ECBQ)</td></tr>
 <tr><td><b>Construct</b></td><td  colspan="2">Behavioral Inhibition • Negative Affectivity • Effortful Control • Surgency/Extraversion</td></tr>
 <td><b>Administration</b></td><td colspan="2">
   <ul>

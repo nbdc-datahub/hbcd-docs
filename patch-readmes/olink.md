@@ -44,10 +44,35 @@ hbcd/
 <tr> <td><strong>Dimensions</strong></td> <td>538,080 rows × 16 columns</td> <td>1,416 rows × 1,522 columns</td> </tr> 
 </tbody> </table>
 
+
+<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa-solid fa-book-open"></i></span>
+  <span class="text-with-link">
+  <span class="text">References</span>
+  <a class="anchor-link" href="#ref" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+
+<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+<span class="text-with-link">
+  <span class="text">Data Warning</span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+</span>
+  <span class="arrow">▸</span>
+</div>
+<div class="warning-collapsible-content">
+
 <div id="vars" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
-    <span class="text">Long & Wide File Variables <span class="hint">(Click to expand)</span></span></span>
+    <span class="text">Long & Wide File Variables</span></span>
     <a class="anchor-link" href="#vars" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>

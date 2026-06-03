@@ -177,21 +177,6 @@ Health V1 & V2 instruments include the following:
 <p>Amidst powerful societal expectations to ‘do what’s best for the baby’ during pregnancy (i.e. by stopping substance use), up to half of pregnancies in the United States are unintended with 1 in 5 unwanted (<a href="https://doi.org/10.1016/S2214-109X(20)30315-6">Bearak et al. 2020</a>). This discrepancy contributes to implicit bias against pregnant individuals who use substances as ‘not caring about their babies’ which is neither humane, nor evidence based (<a href="https://doi.org/10.1016/j.socscimed.2022.115071">Massey et al., 2022</a>). While cessation of substance use during pregnancy is universally recognized as optimal, the ability to make this “parental” sacrifice varies substantially between birthing individuals and within individuals between their different pregnancies (<a href="https://doi.org/10.1007/s00737-023-01396-z">Level et al., 2024</a>). Failure to recognize this inherent heterogeneity in pregnancy intention stigmatizes substance users who did not intend to want to become pregnant. Summarily, inclusion of pregnancy intention as a covariate in all studies that characterize prenatal substance exposure (in the absence of a strong justification otherwise) is thus strongly recommended to acknowledge myriad experiences of birthing parents who participated in HBCD who made this research possible.</p>
 </div>
 
-<div id="warning-healthhx" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning-healthhx" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>Note that the field <code>pex_bm_health_preg__healthhx_002__01</code> ("Approximately how many weeks into your pregnancy were you when you found out that you were pregnant?") is currently blank, but will be populated in the next release.</p>
-<!-- LUCI NOTE: REMOVE THIS ITEM FOR PATCH RELEASE -->
-</div>
-
 Pre-pregnancy and pregnancy health outcomes, including: gravidity and parity, height and weight, pregnancy intentions, use of assisted reproductive technology, start of prenatal care, prenatal vitamin or aspirin use, secondhand smoke.
 
 ### Health V1- Exposures & Vaccines (Vacc)

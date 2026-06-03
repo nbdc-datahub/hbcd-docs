@@ -45,9 +45,6 @@ h5 {
   line-height: 1.2;
   overflow: hidden;
 }
-h5 + * { /* Selects the element directly following the h5 */
-  margin-top: 0; /* Remove space created by the next element */
-}
 
 /* ICONS INCLUDED IN HEADERS */
 .header-icon {
@@ -69,7 +66,6 @@ h5 + * { /* Selects the element directly following the h5 */
 .wy-nav-content {
   max-width: 90% !important;
 }
-
 /* Push main content over so it doesn’t overlap */
 @media (min-width: 1000px) {
   .wy-nav-content {
@@ -77,7 +73,7 @@ h5 + * { /* Selects the element directly following the h5 */
   }
 }
 
-/* Pill badge used for basic demo */
+/* PILL BADGE OR PILL BADGE WITH EMOJI */
 .pill-badge {
   background-color: #00aeae;
   color: white;
@@ -87,8 +83,6 @@ h5 + * { /* Selects the element directly following the h5 */
   font-size: 0.8em;
   white-space: nowrap;
 }
-
-/* Pill badge with emoji */
 .pill-badge-emoji {
   background-color: none;
   color: teal;
@@ -99,19 +93,9 @@ h5 + * { /* Selects the element directly following the h5 */
   white-space: nowrap;
 }
 
-/* Add space above the bottom navigation buttons */
+/* ADD SPACE ABOVE THE BOTTOM NAVIGATION BUTTONS */
 .rst-footer-buttons {
   margin-top: 3em; 
-}
-
-/* styling text to make more subtle, e.g. "Click to Expand" */
-.hint {
-  color: #888;
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: normal;
-  background-color: transparent !important;
-  align-items: center;
 }
 
 /* styling for text with hyperlinks (not TOC, previous and next footer buttons, or images) */
@@ -147,15 +131,6 @@ pre > code {
   color: black !important;
   font-size: 0.75em !important;
   line-height: 1.4em;
-}
-/* Reset for code inside tooltips */
-.tooltiptext code,
-[role="tooltiptext"] code {
-  all: unset;
-  font-family: inherit;
-  color: white !important;
-  font-size: inherit;
-  font-weight: inherit;
 }
 
 /* Style for expand all button (measures overview page) */
@@ -291,71 +266,6 @@ pre > code {
   margin-left: 6px;
 }
 
-/* TOOLTIPS */
-.tooltip {
-    position: relative;
-    cursor: help;
-    border-bottom: 1px dotted #555;
-    color: teal;
-    font-weight: 500;
-    line-height: inherit;
-}
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 200px;
-    max-width: 90vw;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 4px;
-    border-radius: 4px;
-    position: absolute;
-    transition: opacity 0.2s;
-    opacity: 0;
-    z-index: 1000;
-    white-space: normal;
-    overflow-wrap: break-word;
-    font-size: 12px;
-    line-height: 1.2;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 5px;
-}
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-.tooltip:hover {
-    color: rgb(0, 207, 207);
-    border-bottom: 1px dotted #0056b3;
-}
-.tooltip-left .tooltiptext {
-    top: 50%;
-    right: 100%;
-    transform: translateY(-50%);
-    margin-right: 5px;
-}
-.tooltip-right .tooltiptext {
-    top: 50%;
-    left: 100%;
-    transform: translateY(-50%);
-    margin-left: 5px;
-}
-.tooltip-bottom .tooltiptext {
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 5px;
-}
-.tooltip-top .tooltiptext {
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 5px;
-}
-
-
 /* COPY BOXES */
 
 .copy-box {
@@ -469,3 +379,67 @@ pre > code {
   color: #6b7280;
   font-weight: 500;
 }
+
+/* TOOLTIPS */
+.tooltip {
+    position: relative;
+    cursor: help;
+    border-bottom: 1px dotted #555;
+    color: teal;
+    font-weight: 500;
+}
+.tooltip .tooltiptext {
+    position: absolute;
+    z-index: 9999;
+    min-width: 160px;
+    max-width: 40ch;
+    width: max-content;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 12.5px;
+    line-height: 1.4;
+    box-sizing: border-box;
+    word-break: break-word;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(4px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+.tooltip:hover {
+    color: rgb(0, 207, 207);
+    border-bottom: 1px dotted #0056b3;
+}
+
+/* Arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Reset for code inside tooltips */
+/* .tooltiptext code,
+[role="tooltiptext"] code {
+  all: unset;
+  font-family: inherit;
+  color: white !important;
+  font-size: inherit;
+  font-weight: inherit;
+} */

@@ -59,9 +59,9 @@ Urine toxicology assay results include:
 <tr>
 <th>Analytes</th>
 <th>Unit</th>
-<th><span class="tooltip tooltip-right">LOD<span class="tooltiptext">Limit of detection</span></span></th>
-<th><span class="tooltip tooltip-right">LOQ<span class="tooltiptext">Limit of quantification</span></span></th>
-<th><span class="tooltip tooltip-right">Cutoff<span class="tooltiptext">Threshold used to classify results as positive or negative</span></span></th>
+<th><span class="tooltip">LOD<span class="tooltiptext">Limit of detection</span></span></th>
+<th><span class="tooltip">LOQ<span class="tooltiptext">Limit of quantification</span></span></th>
+<th><span class="tooltip">Cutoff<span class="tooltiptext">Threshold used to classify results as positive or negative</span></span></th>
 <th>Detection Window</th>
 </tr>
 </thead>

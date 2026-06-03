@@ -120,7 +120,7 @@ MRS values are quantified relative to internal reference signals. Optimal refere
 <div id="ref" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
   <span class="text-with-link">
-  <span class="text">References <span class="hint">(Click to expand)</span></span>
+  <span class="text">References</span>
   <a class="anchor-link" href="#ref" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>

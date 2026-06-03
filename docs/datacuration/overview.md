@@ -18,7 +18,7 @@ File-based data is an umbrella term for all other data that isn't tabulated, typ
 <div id="filetrees" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-info"></i></span>
   <span class="text-with-link">
-  <span class="text">How To Read File Trees <span class="hint">(Click to expand)</span></span>
+  <span class="text">How To Read File Trees</span>
   <a class="anchor-link" href="#filetrees" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>

@@ -48,7 +48,7 @@ The Basic Demographics table contains global, static variables derived across ad
 <td><code>gestational_age</code></td>
 <td>
 <ul>
-  <li>Number of weeks (rounded down) between <span class="tooltip tooltip-right">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period, estimated as EDD − 280 days</span></span> and the V01 administration date</li>
+  <li>Number of weeks (rounded down) between <span class="tooltip">LMP<span class="tooltiptext">First day of the birth parent's last menstrual period, estimated as EDD − 280 days</span></span> and the V01 administration date</li>
   <li>May vary by ≤4 weeks across protocol elements (except for protocol exceptions)</li>
 </ul>
 </td>

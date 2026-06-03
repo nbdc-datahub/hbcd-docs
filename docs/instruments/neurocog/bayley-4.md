@@ -66,7 +66,6 @@ Participants may include invalid sub-test and/or domain scores of <code>-9999</c
   <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
 </div>
 
-<!-- LUCI NOTE: need to check on whether data warnings require updates -->
 
 ## Instrument Details
 
