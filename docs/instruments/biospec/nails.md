@@ -13,16 +13,7 @@
 </tbody>
 </table>
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</i></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ warning_banner() }}
 <div class="warning-collapsible-content">
 <p><b>USDTL Screening Updates</b><br>
 As of November 2025, USDTL no longer assayed sufentanil in the nail samples.</p>
@@ -81,9 +72,9 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
 <thead>
 <tr>
 <th>Analytes</th>
-<th class="num"><span class="tooltip tooltip-bottom">LOD<span class="tooltiptext">Limit of detection</span></span> / <span class="unit">(pg/mL)</span></th>
-<th class="num"><span class="tooltip tooltip-bottom">LOQ<span class="tooltiptext">Limit of quantification</span></span> / <span class="unit">(pg/mL)</span></th>
-<th class="num"><span class="tooltip tooltip-left">Cutoff<span class="tooltiptext">Threshold used to classify results as positive or negative</span></span> / <span class="unit">(pg/mL)</span></th>
+<th class="num"><span class="tooltip tooltip-bottom">LOD<span class="tooltiptext">Limit of detection</span></span> <span class="unit">(pg/mL)</span></th>
+<th class="num"><span class="tooltip tooltip-bottom">LOQ<span class="tooltiptext">Limit of quantification</span></span> <span class="unit">(pg/mL)</span></th>
+<th class="num"><span class="tooltip tooltip-left">Cutoff<span class="tooltiptext">Threshold to classify as positive / negative</span></span> <span class="unit">(pg/mL)</span></th>
 </tr>
 </thead>
 <tbody>
