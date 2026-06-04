@@ -9,6 +9,10 @@
 
 # Instruments by Domain
 
+In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Study protocols are also available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). 
+
+HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details.
+
 Expand the sections below to see a list of measures associated with each domain included in the latest release data.
 
 <img src="../../images/instructions.png" width="90%" height="auto" class="center">

@@ -2,16 +2,15 @@
 
 The HBCD dataset follows NBDC data structure standards established as part of the ABCD Study (<a href="https://docs.abcdstudy.org/latest/documentation/curation/structure.html">see details</a>), which incorporates the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. At a high level, data are organized into two categories: **tabulated** and **file-based** data.
 
-<i class="fa-solid fa-table header-icon"></i>  **Tabulated Data**              
-Tidy tables with one row per participant session and one column per variable.       
-**Includes:** Demographics, behavioral/phenotypic questionnaires (e.g. <a href="../../instruments/#behavior-biology-environment" target="_blank">see details</a>), and select pipeline derivatives, tabulated to match other instrument data ([see details](#tabulated-pipeline-derivatives)).   
+<i class="fa-solid fa-table header-icon"></i>  **Tabulated Data**          
+Data across all participants organized tidy tables following a standard format with one row per participant session and one column per variable.      
+**Includes:** Demographics, behavioral/phenotypic questionnaires, and select [tabulated pipeline derivatives](#tabulated-pipeline-derivatives).  
 <i><a href="../phenotypes" target="_blank" class="inline-doc-link">See detailed documentation →</a></i>
 
 <i class="fa-solid fa-folder-open header-icon"></i>  **File-Based Data**          
-File-based data is an umbrella term for all other data that isn't tabulated, typically required due to the complex or multidimensional nature of certain data modalities.       
-**Includes**: Raw (**raw BIDS**) and processed (**derivative**) imaging, EEG, and wearable sensor recording data (with datasets organized under separate subject folders) and **concatenated data** for measures such as genomics, which include participant-level files aggregated across all subjects    
+File-based data is an umbrella term for all other data that isn't tabulated, typically required due to the complex or multidimensional nature of certain data modalities. File-based data are in varied, modality-specific formats.    
+**Includes**: Raw (**[raw BIDS](file-based-data.md#raw-bids)**) and processed **[derivatives](file-based-data.md#derivatives)** for  imaging, EEG, and wearable sensor recording data (organized under separate subject session-level folders) and **[concatenated data](file-based-data.md#concatenated-data)** aggregated across participants for certain modalities (e.g., genomnics).       
 <i><a href="../file-based-data" target="_blank" class="inline-doc-link">See detailed documentation →</a></i>
-
 
 ## Folder Structure
 

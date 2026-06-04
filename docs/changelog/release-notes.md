@@ -152,15 +152,6 @@ Release data now include the addition of the following new instruments:
 </tbody>
 </table>
 
-### 2.0 INFO - MRI & EEG Updates   
-
-<ul>
-<li>Raw BIDS data now includes all available data, not restricted to data that only passed raw data quality control.</li>
-<li>Raw and processed data included for additional participants and visits.</li>
-<li>MRI scanner details now included in the session-level Scans TSV files, including: <code>ScannerManufacturer</code>, <code>ScannerModel</code>, <code>ScannerSoftwareVersion</code>, and <code>ScannerSerialNumber</code>.</li>
-<li>New procedures were implemented to remove processed MRI data with serious data quality issues (<a href="../../instruments/mri/#processed-derivatives">see details</a>).</li>
-</ul>
-
 ### 2.0 INFO - Resolved Known Issues
 
 <table class="table-no-vertical-lines">
