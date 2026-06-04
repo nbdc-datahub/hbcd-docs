@@ -1,16 +1,18 @@
 # Access & Download Data
 
-## ACCESS
+## Access
 To request access to HBCD Study data, researchers must submit a *Data Use Certification (DUC)* through the [NBDC Data Hub](https://www.nbdc-datahub.org/). See [Data Access Process](https://www.nbdc-datahub.org/data-access-process) for detailed submission instructions.  
+
+<!-- <a href="https://nbdc-splash-beta.lassoinformatics.com/faqs">NBDC Data Hub FAQs</a>
 
 <p style="margin-bottom: 0;"><i class="fas fa-circle-info header-icon"></i> <b>Additional Resources</b></p>
 <ul class="compact-list">
 <li><a href="https://nbdc-splash-beta.lassoinformatics.com/faqs">NBDC Data Hub FAQs</a></li>
 <li><a href="https://nbdc.lassoinformatics.com/post-duc">What Can I Do While I Wait for My DUC Approval?</a></li>
-</ul>
+</ul> -->
 
-## EXPLORE & DOWNLOAD
-The platforms below allow users to explore, query, and download HBCD Study data. Data dictionary browsers are publicly available and do not require DUC approval, so users may explore the available data at any point. See the <a href="../metadata" target="_blank">NBDC Data Dictionary</a> and <a href="../naming-conventions" target="_blank">Naming Conventions</a> documentation for guidance on navigating the data structure.
+## Explore & Download
+The platforms below allow users to explore, query, and download HBCD Study data. Data dictionary browsers are publicly available and do not require DUC approval, so users may explore the available data at any point. See the <a href="/standards/metadata/" target="_blank">NBDC Data Dictionary</a> and <a href="/standards/naming-conventions" target="_blank">Naming Conventions</a> documentation for guidance on navigating the data structure.
 
 <style>
 .logo img {transition: filter 0.2s ease, transform 0.2s ease;}

@@ -2,41 +2,11 @@
 
 {{ overview_table(instruments.olink) }}
 
-<!-- 
-<table class="table-no-vertical-lines readme-intro">
-<tbody>
-<tr><td>Release Data</td>
-<td>
-<code>└── concatenated/proteins/olink/inflammation/
-    ├── Olink_allplates_long.csv
-    └── Olink_allplates_wide.csv
-</code>
-</td></tr>
-</td></tr>
-<tr><td>Construct</td><td>Maternal Inflammation</td></tr>
-<tr><td>Type</td><td>Direct assessment of pregnant participant</td></tr>
-<tr><td><b>Study Visits</b></td>
-<td><span class="visit">V01</span></td></tr>
-<tr><td><b>Quality Control</b></td>
-<td>
-<b>Olink QC</b><br>
-Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview (<em>section 7.1 Internal controls</em>)</a> for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of <em>0</em> for <code>{ASSAY}_Count</code> and <em>NA</em> for <code>ExtNPX</code>, <code>NPX</code>, and <code>PCNormalizedNPX</code>.
-<br>
-<br>
-<b>Plate Effects</b><br>
-Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting plate effects are not excluded from release data. Plate effects were assessed using ANOVA with a p-value threshold of 0.0033 (.05 / 15). Post-hoc analyses showed that these effects were not driven by a small number of outlier plates, but instead reflected broader plate-to-plate variation. A total of 337 proteins demonstrated a plate effect when normalizing by plate control; a total of 46 proteins demonstrated a plate effect when normalizing by median plate intensity.
-<br>
-<br>
-<strong><em>Select “Plate effects only” / “QC failures only” under the <a href="#olink-panel-quick-guide">Panel Quick Guide</a> to view lists of affected assays.</em></strong>
-
-</td>
-</tr>
-</tbody>
-</table> -->
-
 {{ warning_banner() }}
 <div class="warning-collapsible-content">
-<p>Limits of detection (LOD) were not calculated for this release. Users should compute LOD values using negative control (NC) samples. Proteins with a high proportion of values below the LOD should be excluded or interpreted with caution.</p>
+<p><b>74 samples that were run in this batch are not included in this data release.</b> However, data normalized by median plate intensity included NPX values from these excluded subjects. We anticipate that these subjects will be included in later data releases.</p>
+
+<p><b>Limits of detection (LOD) were not calculated for this release.</b> Users should compute LOD values using negative control (NC) samples. Proteins with a high proportion of values below the LOD should be excluded or interpreted with caution. 14 assays have low NC counts and calculating LOD based on NPX is not appropriate, so these assays should also be interpreted with caution.</p>
 </div>
 
 {{ issues_banner() }}
@@ -103,20 +73,6 @@ The Olink dataset is provided as  <a href="../../../datacuration/file-based-data
 </table>
 </div>
 
-<!-- ### Quality Control
-
-#### Olink QC 
-
-Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the [Olink® Explore Overview (*section 7.1 Internal controls*)](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf) for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of *0* for `{ASSAY}_Count` and *NA* for `ExtNPX`, `NPX`, and `PCNormalizedNPX`.    
-***Select “QC failures only” under the [Panel Quick Guide](#olink-panel-quick-guide) to view list of affected assays.*** -->
-
-<!-- This includes the following proteins: BCL2L11 (O43521-2); BID (P55957); CD40LG (P29965); CLEC7A (Q9BXN2); HGF (P14210); IDS (P22304); LTA (P01374);MGLL (Q99685); PTPRM (P28827); RAB6A (P20340) -->
-
-<!-- #### Plate Effects
-
-Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting plate effects are not excluded from release data. Plate effects were assessed using ANOVA with a p-value threshold of *0.0033 (.05 / 15)*. Post-hoc analyses showed that these effects were not driven by a small number of outlier plates, but instead reflected broader plate-to-plate variation. A total of **337 proteins** demonstrated a plate effect when normalizing by plate control; a total of **46 proteins** demonstrated a plate effect when normalizing by median plate intensity.      
-***Select “Plate effects only” under the [Panel Quick Guide](#olink-panel-quick-guide) to view list of affected assays.*** -->
-
 ## Olink Panel Quick Guide
 
 <div class="subtle-note">Olink Explore 384 Inflammation 1 Panel</div>
@@ -171,3 +127,53 @@ Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting p
 - [Olink.com](https://olink.com/products/olink-explore-3072-384)
 - [Olink Insight](https://olink.com/software/olink-insight): a web-based data analysis application provided by Olink that can be used for release data 
 - [Olink® Explore Overview User Manual](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf#page=6&zoom=100,170,128)
+
+
+
+<!-- ### Quality Control
+
+#### Olink QC 
+
+Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the [Olink® Explore Overview (*section 7.1 Internal controls*)](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf) for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of *0* for `{ASSAY}_Count` and *NA* for `ExtNPX`, `NPX`, and `PCNormalizedNPX`.    
+***Select “QC failures only” under the [Panel Quick Guide](#olink-panel-quick-guide) to view list of affected assays.*** -->
+
+<!-- This includes the following proteins: BCL2L11 (O43521-2); BID (P55957); CD40LG (P29965); CLEC7A (Q9BXN2); HGF (P14210); IDS (P22304); LTA (P01374);MGLL (Q99685); PTPRM (P28827); RAB6A (P20340) -->
+
+<!-- #### Plate Effects
+
+Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting plate effects are not excluded from release data. Plate effects were assessed using ANOVA with a p-value threshold of *0.0033 (.05 / 15)*. Post-hoc analyses showed that these effects were not driven by a small number of outlier plates, but instead reflected broader plate-to-plate variation. A total of **337 proteins** demonstrated a plate effect when normalizing by plate control; a total of **46 proteins** demonstrated a plate effect when normalizing by median plate intensity.      
+***Select “Plate effects only” under the [Panel Quick Guide](#olink-panel-quick-guide) to view list of affected assays.*** -->
+
+
+
+<!-- 
+<table class="table-no-vertical-lines readme-intro">
+<tbody>
+<tr><td>Release Data</td>
+<td>
+<code>└── concatenated/proteins/olink/inflammation/
+    ├── Olink_allplates_long.csv
+    └── Olink_allplates_wide.csv
+</code>
+</td></tr>
+</td></tr>
+<tr><td>Construct</td><td>Maternal Inflammation</td></tr>
+<tr><td>Type</td><td>Direct assessment of pregnant participant</td></tr>
+<tr><td><b>Study Visits</b></td>
+<td><span class="visit">V01</span></td></tr>
+<tr><td><b>Quality Control</b></td>
+<td>
+<b>Olink QC</b><br>
+Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview (<em>section 7.1 Internal controls</em>)</a> for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of <em>0</em> for <code>{ASSAY}_Count</code> and <em>NA</em> for <code>ExtNPX</code>, <code>NPX</code>, and <code>PCNormalizedNPX</code>.
+<br>
+<br>
+<b>Plate Effects</b><br>
+Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting plate effects are not excluded from release data. Plate effects were assessed using ANOVA with a p-value threshold of 0.0033 (.05 / 15). Post-hoc analyses showed that these effects were not driven by a small number of outlier plates, but instead reflected broader plate-to-plate variation. A total of 337 proteins demonstrated a plate effect when normalizing by plate control; a total of 46 proteins demonstrated a plate effect when normalizing by median plate intensity.
+<br>
+<br>
+<strong><em>Select “Plate effects only” / “QC failures only” under the <a href="#olink-panel-quick-guide">Panel Quick Guide</a> to view lists of affected assays.</em></strong>
+
+</td>
+</tr>
+</tbody>
+</table> -->
