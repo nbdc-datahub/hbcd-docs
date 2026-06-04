@@ -48,12 +48,12 @@ Expand the sections below to see a list of measures associated with each domain 
   </thead>
   <tbody>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/demo/basicdemo/" target="_blank">Basic Demographics</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/demo/basicdemo/" target="_blank">Basic Demographics</a></td>
     <td>Demographics data derived from multiple sources</td>
     <td><code>sed_basic_demographics</code></td>
   </tr>
     <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/demo/visitinfo" target="_blank">Visit Level Data</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/demo/visitinfo" target="_blank">Visit Level Data</a></td>
     <td>Participant visit information</td>
     <td><code>par_visit_data</code></td>
   </tr>
@@ -86,7 +86,7 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-<td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/admin/study-navigators" target="_blank">Study Navigator Contact Form</a> <i class="fas fa-layer-group table-icon"></i></td>
+<td><a href="/{{ config.extra.docs_version }}/instruments/admin/study-navigators" target="_blank">Study Navigator Contact Form</a> <i class="fas fa-layer-group table-icon"></i></td>
 <td>Recruitment/Retention</td>
 <td><i>study_navigator/Study Navigator Export - Release 2.0.csv</i></td>
 </tr>
@@ -115,38 +115,38 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
   <tbody>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/bcgi/chaos" target="_blank">CHAOS</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/chaos" target="_blank">CHAOS</a></td>
     <td>Family Organization</td>
     <td><code>mh_cg_chaos</code></td>
   </tr>
   <tr>
     <td>
-      <a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/bcgi/ecpromis" target="_blank">ecPROMIS Caregiver-Child</a> <i>(&lt;1 / 1-5 years)</i></td>
+      <a href="/{{ config.extra.docs_version }}/instruments/bcgi/ecpromis" target="_blank">ecPROMIS Caregiver-Child</a> <i>(&lt;1 / 1-5 years)</i></td>
     <td>Caregiver-Child Interactions</td>
     <td><code>mh_cg_pms__cc__inf</code> / <code>mh_cg_pms__cc__1to5</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/bcgi/ecpromis-pr" target="_blank">ecPROMIS Peer</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/ecpromis-pr" target="_blank">ecPROMIS Peer</a></td>
     <td>Peer Relationships</td>
     <td><code>mh_cg_pms__peer</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/bcgi/ecpromis-selfreg" target="_blank">ecPROMIS Self-Regulation</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/ecpromis-selfreg" target="_blank">ecPROMIS Self-Regulation</a></td>
     <td>Self-Regulation and Flexibility</td>
     <td><code>mh_cg_pms__selfreg</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/bcgi/erica" target="_blank">ERICA</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/erica" target="_blank">ERICA</a></td>
     <td>Emotional Regulation</td>
     <td><code>mh_cg_erica</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/bcgi/fad" target="_blank">FAD (GF6+)</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/fad" target="_blank">FAD (GF6+)</a></td>
     <td>Global Functioning of Family Unit</td>
     <td><code>mh_cg_fad</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/bcgi/ibqr" target="_blank">IBQ-R (VSF)+BI</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/ibqr" target="_blank">IBQ-R (VSF)+BI</a></td>
     <td rowspan="2">
       Surgency/Extraversion,
       Negative Affectivity,<br>
@@ -156,11 +156,11 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><code>mh_cg_ibqr</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/bcgi/ibqr" target="_blank">ECBQ (VSF)+BI</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/ibqr" target="_blank">ECBQ (VSF)+BI</a></td>
     <td><code>mh_cg_ecbq</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/bcgi/maps-tl" target="_blank">MAPS-TL</a> <i>(Infant / Toddler)</i></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/maps-tl" target="_blank">MAPS-TL</a> <i>(Infant / Toddler)</i></td>
     <td>Irritability</td>
     <td>
     <code>mh_cg_mapdb__inf</code> / <code>mh_cg_mapstl__tod</code>
@@ -197,28 +197,28 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a><i class="fas fa-layer-group table-icon"></i></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a><i class="fas fa-layer-group table-icon"></i></td>
     <td>Maternal & Child</td>
     <td>GWAS, EWAS, Transcriptome</td>
     <td><i>concatenated/genetics/</i></td>
 </tr>
 
 <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/biospec/nails" target="_blank">Maternal Nails</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/biospec/nails" target="_blank">Maternal Nails</a></td>
     <td>Maternal</td>
     <td>Drug, Environmental Exposure</td>
     <td><code>bio_bm_biosample_nails_results</code><br>
     <code>bio_bm_biosample_nails_type</code></td>
 </tr>
 <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/biospec/urine" target="_blank">Maternal Urine</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/biospec/urine" target="_blank">Maternal Urine</a></td>
     <td>Maternal</td>
     <td>Drug Panel, Toxins</td>
     <td><code>bio_bm_biosample_urine_results</code></td>
 </tr>
 
 <tr>
-    <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/biospec/olink" target="_blank">Olink Explore</a> <i class="fas fa-layer-group table-icon"></i></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/biospec/olink" target="_blank">Olink Explore</a> <i class="fas fa-layer-group table-icon"></i></td>
     <td></td>
     <td>Maternal Inflammation</td>
     <td><i>concatenated/proteins/</i></td>
@@ -250,13 +250,13 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/neurocog/bayley-4" target="_blank">Bayley-4 Scales</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/neurocog/bayley-4" target="_blank">Bayley-4 Scales</a></td>
   <td></td>
   <td>Child Development (Cognitive, Language, and Motor)</td>
   <td><code>ncl_ch_bayley</code></td>
 </tr>
 <tr>
-  <td rowspan="2"><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a></td>
+  <td rowspan="2"><a href="/{{ config.extra.docs_version }}/instruments/neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a></td>
   <td>English</td>
   <td>Language Development (Words & Gestures)</td>
   <td><code>ncl_ch_cdiwgen</code></td>
@@ -267,13 +267,13 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>ncl_ch_cdiwges</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/neurocog/mlds" target="_blank">MLDS</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/neurocog/mlds" target="_blank">MLDS</a></td>
   <td></td>
   <td>Multilingual Exposure</td>
   <td><code>ncl_ch_mlds</code></td>
 </tr>
 <tr>
-  <td rowspan="2"><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/neurocog/spm2" target="_blank">Sensory Processing Measure-2 (SPM-2)</a></td>
+  <td rowspan="2"><a href="/{{ config.extra.docs_version }}/instruments/neurocog/spm2" target="_blank">Sensory Processing Measure-2 (SPM-2)</a></td>
   <td>Infant</td>
   <td>Sensory Processing/Integration</td>
   <td><code>ncl_cg_spm2__inf</code></td>
@@ -284,7 +284,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>ncl_cg_spm2__tod</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/neurocog/vineland" target="_blank">Vineland Adaptive Behavior</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/neurocog/vineland" target="_blank">Vineland Adaptive Behavior</a></td>
   <td></td>
   <td>Adaptive Behavior</td>
   <td><code>ncl_cg_vabs</code></td>
@@ -316,55 +316,55 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
   <td></td>
   <td>Sleep</td>
   <td><code>ph_cg_bisq</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/physhealth/bf" target="_blank">Breast Feeding History</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/bf" target="_blank">Breast Feeding History</a></td>
   <td></td>
   <td>Nutrition</td>
   <td><code>ph_cg_phx__bfh</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/physhealth/ecpromis-pags" target="_blank">ecPROMIS Physical Activity/Greenspace</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/ecpromis-pags" target="_blank">ecPROMIS Physical Activity/Greenspace</a></td>
   <td>Early Childhood</td>
   <td>Physical Activity</td>
   <td><code>ph_cg_pms__pags</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/physhealth/ecpromis-sleep" target="_blank">ecPROMIS Sleep</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/ecpromis-sleep" target="_blank">ecPROMIS Sleep</a></td>
   <td>Early Childhood</td>
   <td>Sleep</td>
   <td><code>ph_cg_pms__sleep</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
   <td></td>
   <td>Growth</td>
   <td><code>ph_ch_anthro</code></td>
 </tr> 
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/physhealth/medical-history" target="_blank">Medical History</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/medical-history" target="_blank">Medical History</a></td>
   <td></td>
   <td>Medical History</td>
   <td><code>ph_cg_ecls__medhist</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/physhealth/nutrition" target="_blank">Nutrition Questionnaire</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/nutrition" target="_blank">Nutrition Questionnaire</a></td>
   <td>Infant</td>
   <td>Nutrition</td>
   <td><code>ph_cg_inq</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/physhealth/screenq" target="_blank">ScreenQ</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/screenq" target="_blank">ScreenQ</a></td>
   <td></td>
   <td>Media Use</td>
   <td><code>ph_cg_screenq</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/physhealth/vision" target="_blank">Vision Screener</a></td>
+  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/vision" target="_blank">Vision Screener</a></td>
   <td></td>
   <td>Vision</td>
   <td><code>ph_ch_vs</code></td>
@@ -403,22 +403,22 @@ Expand the sections below to see a list of measures associated with each domain 
 <tbody>
 <!-- Pregnancy & Infant Health -->
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Health History</a></td>
+  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Health History</a></td>
   <td>Pre-pregnancy and pregnancy health</td>
   <td><code>pex_bm_health_preg__healthhx</code></td>
 </tr>
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Exp & Vaccines</a></td>
+  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Exp & Vaccines</a></td>
   <td>Vaccines in pregnancy</td>
   <td><code>pex_bm_health_preg__exp__vacc</code></td>
 </tr>
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Chronic Conditions</a></td>
+  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Chronic Conditions</a></td>
   <td>Chronic conditions/STIs in pregnancy</td>
   <td><code>pex_bm_health_preg__chroncond</code></td>
 </tr>
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Illness</a></td>
+  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Illness</a></td>
   <td>Illness in pregnancy</td>
   <td><code>pex_bm_health_preg__illness</code></td>
 </tr>
