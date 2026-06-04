@@ -32,10 +32,7 @@
 <p>This variable was only collected as a total ACE count, which means the specific items participants experienced are unknown.  Total ACE counts are strongly associated with a variety of health-related outcomes, and we used this data collection strategy to encourage more accurate reporting.  Total ACE counts should not be considered indexes of childhood neglect and maltreatment because not all ACE items reflect this.  It would be inappropriate to conclude that higher total ACE counts in specific populations reflect increased child abuse, for example.</p> 
 </div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
+{{ issues_banner() }}
 
 ## Instrument Details
 

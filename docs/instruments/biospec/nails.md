@@ -35,10 +35,8 @@ As of July 1, 2024, the nail processing workflow was updated to optimize specime
 In some cases, a specimen’s initial test meets the threshold for a positive result, but the confirmatory result is reported as “QNS” (Quantity Not Sufficient). This occurs when there is not enough specimen to conduct a confirmatory test or a confirmatory test must be repeated (following quality control procedures, e.g. unacceptable chromatography, poor recovery, or when a sample result is &lt;5% of the previous specimen), but insufficient sample remains to complete the repeat test. Because the results could not be validated, this should be treated as a true quantity insufficiency.</p>
 </div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
+{{ issues_banner() }}
+
 <p></p>
 
 ## Instrument Details

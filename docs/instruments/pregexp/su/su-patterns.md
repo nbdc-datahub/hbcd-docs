@@ -31,25 +31,13 @@
 <p>Please take care not to overinterpret your results or to make assumptions about causation if your analysis is not designed for causal inference.  We cannot control how other people, such as policy makers, educators, or clinicians, use the results of our research, but we can minimize risks of misuse by such non-scientist constituencies by being very clear, in papers and presentations, about the limits of our findings. </p>
 </div>
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ warning_banner() }}
 <div class="warning-collapsible-content">
 <p>The SU Patterns in Pregnancy measure is administered only to participants who endorsed substance use on the V1 or V2 ASSIST. Because the measure was added one year after study enrollment began, its availability varies across participants. Most participants completed the measure at V2; however, early enrollees (~1,200 participants) who had already finished V2 before its introduction instead received it at their next available visit, which was as late as Visit 5.</p>
 <p>The form captures general patterns of substance use by trimester and is intended to complement (1) the Timeline Followback (TLFB), which focuses on specific weeks of use during pregnancy, and (2) biospecimen data, which have variable look-back periods. However, some participants only consider <i>use after pregnancy recognition</i> as 'pregnancy use,' which may result in discrepancies between this measure, the ASSIST, and the TLFB.</p>
 </div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
+{{ issues_banner() }}
 
 ## Instrument Details
 

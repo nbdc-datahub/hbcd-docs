@@ -135,11 +135,7 @@ Inter-rater reliability was quantified using a two-way mixed-effects intraclass 
 <p>The code for "caregiver irritable behavior" in Data Release 2.1 has a low base rate because few caregivers exhibited elevated irritability. We recommend dichotomizing (0 = 0 and >0 = 1) for analysis.</p>
 </div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="../../../changelog/issues-updates/#behavior-child-caregiver-interaction" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
-
+{{ issues_banner() }}
 ## Instrument Details
 
 The Early Regulation in Context Assessment (**ERICA**) is a standardized observational paradigm that is adapted from the well-validated Disruptive Behavior Diagnostic Observation Schedule (DB-DOS) ([Krogh-Jespersen et al. 2022](https://doi.org/10.3389/fpsyg.2021.732312)). The ERICA assesses early child regulation in the context of the caregiver-child relationship via a series of five brief, developmentally appropriate activities that “press” for regulation within the dyad (e.g., frustration, engagement, enjoyment).

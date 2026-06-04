@@ -41,16 +41,7 @@
 <p>The child's exposure to different languages may also impact their performance. The Multilingual Language Development questionnaire was used to screen for parental preference for the test to be administered in Spanish or English (<i>Spanish language translations used are available upon request</i>). The instrument also documents other language exposures that the child may have. Exposure to languages other than Spanish or English may impact a child's performance. In addition, some items on the test may be impacted by environmental experiences related to the task or items used. In these cases, the test may underestimate the child's developmental status.</p>
 </div>
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ warning_banner() }}
 <div class="warning-collapsible-content">
 <p><b>Missing Records</b><br>
 A subset of participants are missing the Bayley-4 records, i.e. the <b>Administration</b> field (<code>ncl_ch_bayley_administration</code>) has a value of 'None.' However, there are a variety of reasons why the data may be missing, therefore a value of 'None' does not mean that the Bayley was not administered. These data will be added in future releases as it becomes available.</p>
@@ -61,11 +52,7 @@ Participants may include invalid sub-test and/or domain scores of <code>-9999</c
 </p>
 </div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
-
+{{ issues_banner() }}
 
 ## Instrument Details
 

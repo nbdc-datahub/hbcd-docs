@@ -28,16 +28,7 @@
 <p>Moreover, characterization of between- and within-person variability in substance use has been shown to enhance the sensitivity and specificity of risk prediction (<a href="https://doi.org/10.1016/j.ntt.2021.107035">Massey et al., 2021</a>, <a href="https://doi.org/10.1016/j.ntt.2018.06.002">Massey et al., 2018</a>). Thus, the characterization of patterns or trajectories of use should be considered over the use of dichotomous exposure characterization. Another gap in literature concerns the extent, nature, and implications of polysubstance use during pregnancy since individual substances have primarily been examined alone in prior research (<a href="https://doi.org/10.1016/j.ntt.2018.06.002">Massey et al., 2018</a>). The power and scope of HBCD avails a unique opportunity to understand the prevalence and implications of such ‘real world’ patterns of substance use.</p> 
 </div>
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</i></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ warning_banner() }}
 <div class="warning-collapsible-content">
 <p><b>Sampling Window and Coverage Limitations</b><br>
 The sampling covers specific weeks before pregnancy (Weeks 1-2) and during pregnancy (Weeks 3-9). Consequently, substance use reported outside these weeks may not appear in the TLFB, and a positive biospecimen may lack corresponding TLFB data for the same reason. This sampling approach balances participant burden (avoiding a full 40-week TLFB) with capturing key pregnancy phases when behaviors often shift, such as before and after pregnancy recognition and in late pregnancy.</p>
@@ -45,10 +36,7 @@ The sampling covers specific weeks before pregnancy (Weeks 1-2) and during pregn
 Participants were asked to report occasions (except cigarettes/cigarillos and drinks, reported as number), but some substances (e.g. electronic cigarette devices) are difficult to report in occasions and have outliers.</p>
 </div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
+{{ issues_banner() }}
 
 ## Instrument Details
 

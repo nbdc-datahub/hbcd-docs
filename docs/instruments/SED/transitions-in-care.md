@@ -37,24 +37,12 @@
 <p>TIC information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”). Small cells increase the risk that a participant can be identified. Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives. The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.</p> 
 </div>
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</i></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ warning_banner() }}
 <div class="warning-collapsible-content">
 <p>Typically, there is only one birth parent TIC Screener form per timepoint. However, if a TIC occurred, there is sometimes one TIC screener filled out when talking to the birth parent and a second screener filled out when talking to the alternate caregiver. This is not an error but reflects how these data were collected. If a TIC occurred, another possibility is that there is only an alternate caregiver TIC form (and not a birth parent form because we were unable to get in touch with the birth parent).</p> 
 </div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
+{{ issues_banner() }}
 
 ## Instrument Details
 
