@@ -67,4 +67,16 @@ def define_env(env):
 <span class="arrow">▸</span>
 </div>
 """
-        
+    
+    @env.macro
+    def issues_banner(
+        icon="fas fa-bug"
+    ):
+        return f"""
+<div class="table-banner">
+<span class="emoji"><i class="fas {icon}"></i></span>
+<span class="text">See <a href="/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> for issues that may affect data use.</span>
+</div>
+"""
+    
+   

@@ -1,8 +1,12 @@
 # Visit Information
 
-Visit Information (table name `par_visit_data`) includes general visit information (e.g. site and information about missed visits and participant withdrawal), [substance use flags](#substance-use-flags), and [cohort and caregiver types](#cohort-caregiver-types). The age range of the child participant at each visit is as follows:
+Visit Information (table name `par_visit_data`) includes general visit information (e.g. site and information about missed visits and participant withdrawal), substance use flags, and cohort and caregiver types. 
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+{{ issues_banner() }}
+
+## Age Of Child at Each Visit
+
+<table class="table-no-vertical-lines">
 <tbody>
 <tr>
 <td><b>Visit 1 (V01)</b></td>
@@ -24,11 +28,6 @@ Visit Information (table name `par_visit_data`) includes general visit informati
 </tr>
 </tbody>
 </table>
-
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
 
 ## Substance Use Flags
 

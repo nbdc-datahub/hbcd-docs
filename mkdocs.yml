@@ -68,14 +68,15 @@ nav:
     - Tabulated Data: datacuration/phenotypes.md
     - File-Based Data: datacuration/file-based-data.md
   - Study Instruments:
-    - Instruments Overview: instruments/index.md
+    - Overview: instruments/index.md
+    - All Instruments: instruments/instruments.md
     - Age Variables: instruments/agevariables.md
-    - Administrative:
-        - Study Navigators: instruments/admin/study-navigators.md
     - Demographics:
         - Basic Demographics: instruments/demo/basicdemo.md
         - Visit Level Data: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
+        - Administrative:
+            - Study Navigator Notes: instruments/admin/study-navigators.md
         - Behavior & Caregiver-Child Interaction: 
             - CHAOS: instruments/bcgi/chaos.md
             - ecPROMIS Child-Caregiver Relationship: instruments/bcgi/ecpromis.md
