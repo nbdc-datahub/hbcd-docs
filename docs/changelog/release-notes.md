@@ -115,8 +115,7 @@
 
 Release data now include the addition of the following new instruments:
 
-
-[Go to full list of instruments organized by domain →](../instruments/index.md#instruments-by-domain)
+[Go to full list of instruments organized by domain →](../instruments/instruments.md)
 
 <table class="table-no-vertical-lines">
 <thead>
@@ -152,99 +151,6 @@ Release data now include the addition of the following new instruments:
 
 </tbody>
 </table>
-
-
-
-
-### 2.0 INFO - New Cohorts & Instruments
-
-A number of new instruments were incorporated into R2.0 as well. Click to expand infobox below to view the full list.  
-
-<div id="2.0-new-tables" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-table"></i></span>
-  <span class="text-with-link">
-  <span class="text">+ 40 New Instruments Across 10 Domains</span>
-  <a class="anchor-link" href="#2.0-new-tables" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines">
-<thead>
-<tr>
-<th>Domain</th>
-<th>Instrument</th>
-<th>Construct</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../../instruments/#adm" target="_blank"> Administrative</a></td>
-<td><span class="tooltip"><i class="fas fa-layer-group header-icon"></i><span class="tooltiptext">Concatenated data</span></span> Study Navigator Contact Form </td>
-  <td>Recruitment/Retention</td>
-</tr>
-<tr>
-<td rowspan="7"><a href="../../instruments/#mh" target="_blank"> Behavior & Caregiver-Child Interaction</a></td>
-<td>CHAOS</td><td>Family Organization</td>
-</tr>
-<tr><td>ecPROMIS CH-CG Relationship <b>[1-5 year]</b></td><td>Child-Caregiver Interaction</td></tr>
-<tr><td>ecPROMIS Peer Relationships</td><td>Peer Relationships</td></tr>
-<tr><td>ecPROMIS Self-Regulation</td><td>Self-Regulation and Flexibility</td></tr>
-<tr><td>FAD (GF6+)</td><td>Global Functioning of Family Unit</td></tr>
-<tr><td>ECBQ (VSF)+BI</td><td>Early Childhood Behavior + Inhibition</td></tr>
-<tr><td>MAPS-TL <b>[Toddlerhood & Preschool]</td> <td>Irritability</td></tr>
-<tr>
-<td><a href="../../instruments/#biospec" target="_blank">Biospecimen & Omics</a></td>
-<td><span class="tooltip"><i class="fas fa-layer-group header-icon"></i><span class="tooltiptext">Concatenated data</span></span> Illumina GDA GWAS</td>
-<td>GWAS, EWAS, Transcriptome</td>
-</tr>
-<tr><td rowspan="4"><a href="../../instruments/#ncl" target="_blank">Neurocognition & Language</a></td>
-<td>Bayley-4 Scales</td><td>Child Development (Cognitive, Language, Motor)</td>
-</tr>
-<tr><td>MacArthur-Bates CDI-I</td><td>Language Development (Words & Gestures)</td></tr>
-<tr><td>SPM-2 <b>[Toddler]</b></td>  <td>Sensory Processing/Integration</td></tr>
-<tr><td>Vineland Adaptive Behavior</td><td>Adaptive Behavior</td></tr>
-<tr><td rowspan="7"><a href="../../instruments/#ph" target="_blank"> Physical Health</a></td>
-<td>Brief Infant Sleep Questionnaire</td><td>Sleep</td>
-</tr>
-<tr><td>ecPROMIS Physical Activity/Greenspace</td> <td>Physical Activity</td></tr>
-<tr><td>ecPROMIS Sleep</td> <td>Sleep</td></tr>
-<tr><td>Medical History</td><td>Medical History</td></tr>
-<tr><td>Infant Nutrition Questionnaire</td><td>Nutrition</td></tr>
-<tr><td>Screen-Based Media Use (<i>ScreenQ</i>)</td><td>Media Use</td></tr>
-<tr><td>Vision Screener</td><td>Vision</td></tr>
-<tr><td rowspan="2"><a href="../../instruments/#pex" target="_blank"> Pregnancy & Exposure</a></td>
-<td>ASSIST <b>[V4]</b></td>  <td>Substance Use Post-Pregnancy</td></tr>
-<tr><td>Substance Use Patterns</td>  <td>Substance Use in Pregnancy</td></tr>
-<tr><td rowspan="12"><a href="../../instruments/#sed" target="_blank"> Social & Environment</a></td>
-<td><span class="tooltip"><i class="fas fa-layer-group header-icon"></i><span class="tooltiptext">Concatenated data</span></span> Geocoded Linkage</td>  <td>Neighborhood Measures</td></tr>
-<tr><td>ACEs</td>  <td>Adverse Childhood Experiences</td></tr>
-<tr><td>Child Demographics</td><td>Demographics</td></tr>
-<tr><td>Composite Abuse Scale (CABr-SF)</td>  <td>Intimate Partner Violence</td></tr>
-<tr><td>Current Employment</td><td>Current Employment</td></tr>  
-<tr><td>HOME-21 IT</td><td>Child’s Home Environment</td></tr>  
-<tr><td>Household Chemical Exposures</td> <td>Household Chemical Exposures</td></tr>  
-<tr><td>Lead Exposures</td><td>Lead Exposures</td></tr> 
-<tr><td>PACES <b>[&lt;18]</b></td><td>Protective Factors</td></tr>  
-<tr><td>Second Hand Smoke Exposure</td> <td>Second Hand Smoke Exposure</td></tr>
-<tr><td>Transition in Care Screener</td><td>Recruitment/Retention</td></tr>
-<tr><td>Vancouver Index of Acculturation (VIA)</td><td>Acculturation</td></tr> 
-<td rowspan="2"><a href="../../instruments/#eeg" target="_blank"> EEG</a></td>
-<td>EEG Acquisition Checklist + Reattempt 1/2</td><td>Acquisition Checklists</td></tr>
-<tr><td>ERP SummaryStats</td><td>Tabulated HBCD-MADE derivatives</td></tr>
-<tr>
-<td><a href="../../instruments/#mri" target="_blank"> MRI</a></td>
-<td>Pre-Scan Questionnaire</td><td>Infant Sleep Environment</td>
-</tr>
-<tr>
-<td><a href="../../instruments/#sensors" target="_blank"> Novel Tech & Wearables</a></td>
-<td>Biosensor Receipt & Setup</td><td>Administrative</td></tr>
-</tr>
-</tbody>
-</table>
-</div>
 
 ### 2.0 INFO - MRI & EEG Updates   
 
