@@ -48,7 +48,7 @@ Expand the sections below to see a list of measures associated with each domain 
   </thead>
   <tbody>
   <tr>
-    <td><a href="/instruments/demo/basicdemo" target="_blank">Basic Demographics</a></td>
+    <td><a href="/{{ config.extra.docs_version }}/instruments/demo/basicdemo/" target="_blank">Basic Demographics</a></td>
     <td>Demographics data derived from multiple sources</td>
     <td><code>sed_basic_demographics</code></td>
   </tr>
