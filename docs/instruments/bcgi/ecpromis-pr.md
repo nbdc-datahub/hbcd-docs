@@ -16,10 +16,7 @@
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
+{{ issues_banner() }}
 
 ## Instrument Details
 The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Peer Relationships Scale** assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors. 
