@@ -1,3 +1,11 @@
+<style>
+.wy-nav-content {
+    width: 90% !important;
+    max-width: 90% !important;
+    flex-grow: 1 !important;
+}
+</style>
+
 # Release Notes & History
 
 ## Release 2.1
@@ -37,7 +45,7 @@
   </div>
 </div>
 
-### Key Changes in 2.1
+### 2.1 Key Changes
 
 <!-- 
 2.0 INFO:
@@ -49,7 +57,7 @@
 <li>Major data fixes and harmonization updates across multiple domains</li>
 </ul> -->
 
-### Inclusion & Exclusion Criteria
+### 2.1 Inclusion & Exclusion Criteria
 
 <table class="compact-table-no-vertical-lines" style="font-size: 16px;">
 <thead>
@@ -111,7 +119,7 @@
 
 - Fields including *examiner*, *REDCap Complete status*, *timestamps*, *visit stage*, and *visit start* -->
 
-### New Instruments
+### 2.1 New Instruments
 
 Release data now include the addition of the following instruments:
 
@@ -158,284 +166,160 @@ Release data now include the addition of the following instruments:
 <i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Resolved Known Issue &nbsp;&nbsp;&nbsp;
 <i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Completed Pending Update</p>
 
-##### General
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th>
 <th>Topic</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 
+<tr class="table-group-row">
+  <td colspan="3">General</td>
+</tr>
+
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Language</td>
-<td>Added language of administration across all instruments where applicable</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added language of administration across all instruments where applicable</td>
 </tr>
 
-</tbody>
-</table>
-
-##### Administrative
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th>
-<th>Table</th>
-<th>Summary</th>
+<tr class="table-group-row">
+  <td colspan="3">Administrative</td>
 </tr>
-</thead>
-<tbody>
-
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Study Navigators</td>
-<td>SUBSTANCE_USE and OTHER checkbox fields populated</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> SUBSTANCE_USE and OTHER checkbox fields populated</td>
 </tr>
 
-</tbody>
-</table>
-
-
-##### Behavior & Caregiver-Child Interaction
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th>
-<th>Table</th>
-<th>Summary</th>
+<tr class="table-group-row">
+  <td colspan="3">Behavior & Caregiver-Child Interaction</td>
 </tr>
-</thead>
-<tbody>
-
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ECBQ</td>
-<td>Coding for "Does not apply" changed to 8 to match the IBQ-R.</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>  Coding for "Does not apply" changed to 8 to match the IBQ-R.</td>
 </tr>
 
-</tbody>
-</table>
-
-##### Biospecimens & Omics
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<tr class="table-group-row">
+  <td colspan="3">Biospecimens & Omics</td>
 </tr>
-</thead>
-<tbody>
 
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>Nails</td>
-<td>Added unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
+<td><i class="fas fa-bug icon-bug"></i> Added unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
 </tr>
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>Nails &amp; Urine</td>
-<td>Removed quotes in data dictionary level values causing the downloaded to have double quotes, e.g. 1=""positive""</td>
+<td><i class="fas fa-bug icon-bug"></i> Removed quotes in data dictionary level values causing the downloaded to have double quotes, e.g. 1=""positive""</td>
 </tr>
-
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Urine</td>
-<td>Added creatinine results (<code>bio_creat_u</code>).</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added creatinine results (<code>bio_creat_u</code>).</td>
 </tr>
-</tbody></table>
 
-##### Demographics
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th>
-<th>Summary</th>
+<tr class="table-group-row">
+  <td colspan="3">Demographics</td>
 </tr>
-</thead>
-<tbody>
-
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
-<td>Removed internal data dictionary <code>recruitment_site</code> categories not present in data (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
+<td><i class="fas fa-bug icon-bug"></i> Removed internal data dictionary <code>recruitment_site</code> categories not present in data (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
 </tr>
-
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Visit Inf</td>
-<td>Added a derived/rolled up substance use flag for Stimulants based on positive instrument-specific Stimulant results</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added a derived/rolled up substance use flag for Stimulants based on positive instrument-specific Stimulant results</td>
 </tr>
 
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Visit Info</td>
-<td>SU flags now include Nail toxicology results in addition to Urine</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> SU flags now include Nail toxicology results in addition to Urine</td>
 </tr>
-</tbody></table>
 
-
-##### EEG
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>.set files</td>
-<td>Updated .set files to include subject release IDs</td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>MADE</td>
-<td>Added missing FACE/MMN tabulated data for N=3 V04 session derivatives</td>
-</tr>
-</tbody></table>
-
-##### MRI
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-</tr>
-</thead>
-<tbody>
-
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Raw BIDS</td>
-<td>Corrected 2 corrupted bold runs in V02 raw BIDs</td>
+<tr class="table-group-row">
+  <td colspan="3">EEG & MRI</td>
 </tr>
 
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
+<td>EEG .set files</td>
+<td><i class="fas fa-bug icon-bug"></i> Updated .set files to include subject release IDs</td>
+</tr>
+<tr>
+<td>HBCD-MADE (EEG)</td>
+<td><i class="fas fa-bug icon-bug"></i> Added missing FACE/MMN tabulated data for N=3 V04 session derivatives</td>
+</tr>
+
+<tr>
+<td>Raw BIDS (MRI)</td>
+<td><i class="fas fa-bug icon-bug"></i> Corrected 2 corrupted bold runs in V02 raw BIDs</td>
+</tr>
+
+<tr>
 <td>XCP-D</td>
-<td>Corrected tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata to have a <code>sub_domain</code> value of <code>Structural MRI</code></td>
+<td><i class="fas fa-bug icon-bug"></i> Corrected <code>sub_domain</code> values in tabulated XCP-D Myers-Labonte metadata to <code>Structural MRI</code></td>
 </tr>
 
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>BrainSwipes</td>
-<td>Addition of complete BrainSwipes QC results</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Addition of complete BrainSwipes MRI QC results</td>
 </tr>
 
-</tbody></table>
-
-##### Neurocognition & Language
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<tr class="table-group-row">
+  <td colspan="3">Neurocognition & Language</td>
 </tr>
-</thead>
-<tbody>
-
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>Vineland</td>
-<td>Corrected subset of variables with typo in the spelling of "receptive"</td>
+<td><i class="fas fa-bug icon-bug"></i> Corrected subset of variables with typo in the spelling of "receptive"</td>
 </tr>
-
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Bayley-4</td>
-<td>Added item-level scores</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added item-level scores</td>
 </tr>
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Vineland</td>
-<td>Added language field</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added language field</td>
 </tr>
-</tbody></table>
 
-
-##### Physical Health
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<tr class="table-group-row">
+  <td colspan="3">Physical Health</td>
 </tr>
-</thead>
-<tbody>
-
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Growth</td>
-<td>Added age-based z-scores to <code>ph_ch_anthro</code></td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added age-based z-scores to <code>ph_ch_anthro</code></td>
 </tr>
-
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ecPROMIS-PAGS</td>
-<td>Added scores to <code>ph_cg_pms__pags</code></td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added scores to <code>ph_cg_pms__pags</code></td>
 </tr>
 
-</tbody></table>
-
-##### Pregnancy & Environmental Exposure
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<tr class="table-group-row">
+  <td colspan="3">Pregnancy & Environmental Exposure</td>
 </tr>
-</thead>
-<tbody>
 
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>APA 1/2</td>
-<td>APA Level 2 was sometimes administered despite unmet gating criteria (e.g., missing Level 1 responses). These cases were not scored (“No additional inquiry required”) even when Level 2 responses were present. Level 2 item data was removed to avoid confusion.</td>
+<td><i class="fas fa-bug icon-bug"></i> APA Level 2 was sometimes administered despite unmet gating criteria (e.g., missing Level 1 responses). These cases were not scored (“No additional inquiry required”) even when Level 2 responses were present. Level 2 item data was removed to avoid confusion.</td>
 </tr>
 
-</tbody></table>
-
-
-##### Social & Environmental Determinants
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<tr class="table-group-row">
+  <td colspan="3">Social & Environmental Determinants/td>
 </tr>
-</thead>
-<tbody>
-
-
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>C-PACEs</td>
-<td>Corrected summary scores</td>
+<td><i class="fas fa-bug icon-bug"></i> Corrected summary scores</td>
 </tr>
 
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Demo (adult table)</td>
-<td>Added (1) V01 household income (<code>income_002</code>); (2) Other Biological Parent information variables; (3) <code>work_{002–004}_post</code> (worked for pay + for X hours while pregnant) and <code>work_004__01</code> (job held ≥1 month since V01)</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added (1) V01 household income (<code>income_002</code>); (2) Other Biological Parent information variables; (3) <code>work_{002–004}_post</code> (worked for pay + for X hours while pregnant) and <code>work_004__01</code> (job held ≥1 month since V01)</td>
 </tr>
 
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>Demo</td>
-<td>Re-addition of variables <code>sed_bm_demo_residence_{001|002}</code></td>
+<td><i class="fas fa-bug icon-bug"></i> Re-addition of variables <code>sed_bm_demo_residence_{001|002}</code></td>
 </tr>
 
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>eHITS</td>
-<td>Set values to null for participants missing all item responses that were incorrectly scored as <code>0</code></td>
+<td><i class="fas fa-bug icon-bug"></i>Set values to null for participants missing all item responses that were incorrectly scored as <code>0</code></td>
 </tr>
 
 <!-- <tr>
@@ -444,103 +328,8 @@ Release data now include the addition of the following instruments:
 <td>see <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> ("Household Roster")</td>
 </tr> -->
 
-
 </tbody></table>
 
-
-
-
-
-
-<!-- #### ORIG COMBINED
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th>Domain</th>
-<th>Table/Topic</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><i>NA/General</i></td>
-<td>Language</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Added language of administration across all instruments where applicable</td>
-</tr>
-<tr>
-<td>ADM</td>
-<td>Study Navigators</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> SUBSTANCE_USE and OTHER checkbox fields populated</td>
-</tr>
-<tr>
-<td>MH</td>
-<td>ECBQ</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Coding for "Does not apply" changed to 8 to match the IBQ-R.</td>
-</tr>
-</tbody>
-</table> -->
-
-
-### 2.0 INFO - Resolved Known Issues
-
-<table class="table-no-vertical-lines">
-<thead>
-<tr>
-<th>Domain</th>
-<th>Updates</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><b>General</b></td>
-<td>• Standardized Parquet precision by regenerating all data in a single step (<code>type_data</code> = <i>double</i>)</td>
-</tr>
-<tr>
-<td><b>Demographics</b></td>
-<td>
-<b>Basic Demographics (<code>sed_basic_demographics</code>)</b><br>
-• Removed invalid <code>screen_mother_race</code> response option (2 = <i>Hawaiian</i>)<br>
-• Removed ACS Child Multi-Race (duplicate coding to <code>child_ethnoracial_acs_by_multi_ethnicity</code>)<br>
-• Removed Child Multi-Ethnicity V01 data<br><br>
-<b>Visit Data (<code>par_visit_data</code>)</b><br>
-• Set withdrawal dates for participants who did not withdraw to null (from 12/26/1999)<br>
-• Removed V02 urine toxicology substance use flags (urine not collected at V02)<br>
-• Corrected TLFB substance use flags for missing V02 visits ('no' → null)
-</td>
-</tr>
-<tr>
-<td><b>Biospecimen &amp; Omics</b></td>
-<td>
-<b>Urine Toxicology</b><br>
-• Restored missing values for cotinine (<code>*_results_bio_c_cot_u</code>) incorrectly set to 0 (N = 18)
-</td>
-</tr>
-<tr>
-<td><b>Neurocognition &amp; Language</b></td>
-<td>
-<b>SPM-2 (<code>ncl_cg_spm2__inf</code>)</b><br>
-• Added age fields (gestational, adjusted, candidate)<br>
-• Added missing status scores
-</td>
-</tr>
-<tr>
-<td><b>Pregnancy &amp; Exposure</b></td>
-<td>
-<b>APA 1/2 (<code>pex_bm_apa_anger_*</code>)</b><br>
-• Added missing T-scores and total scores for Anger subscale<br><br>
-<b>TLFB (<code>pex_ch_tlfb</code>)</b><br>
-• Added age variables (gestational / adjusted / candidate age)
-</td>
-</tr>
-<tr>
-<td><b>Social &amp; Environmental</b></td>
-<td>
-<b>eHITS (<code>sed_bm_ehits</code>)</b><br>
-• Corrected score calculations (<code>score</code>, <code>total_score</code>)
-</td>
-</tr>
-</tbody>
-</table>
 
 ## Release History
 
