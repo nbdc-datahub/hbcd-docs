@@ -299,9 +299,7 @@ Release data now include the addition of the following instruments:
 <td>MADE</td>
 <td>Added missing FACE/MMN tabulated data for N=3 V04 session derivatives</td>
 </tr>
-
 </tbody></table>
-
 
 ##### MRI
 
@@ -332,6 +330,124 @@ Release data now include the addition of the following instruments:
 </tr>
 
 </tbody></table>
+
+##### Neurocognition & Language
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th></th><th>Table/Topic</th><th>Summary</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Vineland</td>
+<td>Corrected subset of variables with typo in the spelling of "receptive"</td>
+</tr>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Bayley-4</td>
+<td>Added item-level scores</td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Vineland</td>
+<td>Added language field</td>
+</tr>
+</tbody></table>
+
+
+##### Physical Health
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th></th><th>Table/Topic</th><th>Summary</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Growth</td>
+<td>Added age-based z-scores to <code>ph_ch_anthro</code></td>
+</tr>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ecPROMIS-PAGS</td>
+<td>Added scores to <code>ph_cg_pms__pags</code></td>
+</tr>
+
+</tbody></table>
+
+##### Pregnancy & Environmental Exposure
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th></th><th>Table/Topic</th><th>Summary</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>APA 1/2</td>
+<td>APA Level 2 was sometimes administered despite unmet gating criteria (e.g., missing Level 1 responses). These cases were not scored (“No additional inquiry required”) even when Level 2 responses were present. Level 2 item data was removed to avoid confusion.</td>
+</tr>
+
+</tbody></table>
+
+
+##### Social & Environmental Determinants
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th></th><th>Table/Topic</th><th>Summary</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>C-PACEs</td>
+<td>Corrected summary scores</td>
+</tr>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Demo (adult table)</td>
+<td>Added (1) V01 household income (<code>income_002</code>); (2) Other Biological Parent information variables; (3) <code>work_{002–004}_post</code> (worked for pay + for X hours while pregnant) and <code>work_004__01</code> (job held ≥1 month since V01)</td>
+</tr>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Demo</td>
+<td>Re-addition of variables <code>sed_bm_demo_residence_{001|002}</code></td>
+</tr>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>eHITS</td>
+<td>Set values to null for participants missing all item responses that were incorrectly scored as <code>0</code></td>
+</tr>
+
+<!-- <tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Child Demo</td>
+<td>see <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> ("Household Roster")</td>
+</tr> -->
+
+
+</tbody></table>
+
+
 
 
 

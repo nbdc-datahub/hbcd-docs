@@ -253,32 +253,16 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 </th></tr>
 </thead>
 <tbody>
-
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>MLDS</td>
 <td>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis.</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Vineland</td>
-<td>Subset of variables have a typo in the spelling of "receptive."</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Bayley-4</td>
-<td>Add item-level scores.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Vineland</td>
-<td>Add language field to <code>ncl_cg_vabs</code>.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
 </tbody></table>
+
+
+
 
 
 ### Physical Health
@@ -317,12 +301,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Growth</td>
-<td>Add age-based z-scores to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Z-Scores Excluded</a>).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
+
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Growth</td>
@@ -341,16 +320,10 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>Add <code>ph_cg_pms__sleep</code>  summary scores</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>ecPROMIS-PAGS</td>
-<td>Add scores to <code>ph_cg_pms__pags</code>. Until added, scores can be calculated by following the <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
 </tbody></table>
 
 
-### Pregnancy &amp; Environmental Exposure
+### Pregnancy & Environmental Exposure
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -362,12 +335,6 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 </thead>
 <tbody>
 
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>APA 1/2</td>
-<td>APA Level 2 was sometimes administered despite unmet gating criteria (e.g., missing Level 1 responses). These cases are not scored (“No additional inquiry required”) even when Level 2 responses are present. Level 2 item data will be removed to avoid confusion.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>EPDS</td>
@@ -401,7 +368,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 </tbody></table>
 
 
-### Social &amp; Environmental Determinants
+### Social & Environmental Determinants
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -414,51 +381,10 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <tbody>
 
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>C-PACEs</td>
-<td>Summary scores are inaccurate; until corrected, users can compute scores following the provided scoring documentation.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Demo</td>
-<td>The variables <code>sed_bm_demo_residence_{001|002}</code>, present in the prior release, are missing in the current release.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>eHITS</td>
-<td>Participants missing all item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Child Demo</td>
-<td>see <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> ("Household Roster")</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Demo</td>
 <td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Demo</td>
-<td>Add V01 household income (<code>income_002</code>) (adult table).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Demo</td>
-<td>Add variables on Other Biological Parent (adult table).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Demo</td>
-<td>Add <code>work_{002–004}_post</code> (worked for pay + for X hours while pregnant) and <code>work_004__01</code> (job held ≥1 month since V01) (adult table).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
+
 </tbody></table><!-- END KNOWN_ISSUES_TABLE -->
