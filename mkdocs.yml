@@ -30,8 +30,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://www.googletagmanager.com/gtag/js?id=G-BY0EH2K1YQ
 
-extra:
-    docs_version: 2.1-v2
+# extra:
 #   analytics:
 #     provider: google
 #     property: G-BY0EH2K1YQ
@@ -58,10 +57,11 @@ nav:
     - Responsible Data Use: access/resp_data_use.md
     - Tools: access/tools.md
   - Study Standards & Conventions:
-    - Data Standards:
+    - General: standards/protocol.md
+    - Data:
         - Metadata: standards/metadata.md
         - Naming Conventions: standards/naming-conventions.md
-    - Processing & Derivative Data Standards: 
+    - Processing & Derivative Data: 
         - Processing Pipelines: standards/processing/index.md
         - Pipeline Software Standards: standards/processing/standards.md
   - Data Structure & File Types:

@@ -6,7 +6,6 @@
   <span style="
     display:inline-block;
     background-color: #00d7d7af;
-    color:#444;
     font-size:1.1em;
     font-weight:600;
     padding:6px 14px;
@@ -35,13 +34,14 @@
   (<a href="https://hbcdstudy.org/">hbcdstudy.org</a>) for comprehensive information about the study.
 </p>
 
-<p class="button-link-wrapper">
-  <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study"
-     class="button-link">
-    HBCD Study on NBDC Data Hub
-    <i class="fa-solid fa-up-right-from-square"></i>
-  </a>
+<p></p>
+
+<p align="center">
+<a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study" class="button-link" style="justify-content: center;">HBCD Study on NBDC Data Hub →
+</a>
 </p>
+
+
 
 <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ddd;">
 

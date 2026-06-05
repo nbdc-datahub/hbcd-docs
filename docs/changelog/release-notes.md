@@ -158,13 +158,7 @@ Release data now include the addition of the following instruments:
 </tbody>
 </table>
 
-
-<p class="button-link-wrapper">
-  <a href="/instruments/"
-     class="button-link">
-    Go to full list of instruments organized by domain →
-  </a>
-</p>
+<a href="../../instruments/" class="button-link"> All instruments by domain →</a>
 
 ### 2.1 Resolved Known Issues & Updates
 

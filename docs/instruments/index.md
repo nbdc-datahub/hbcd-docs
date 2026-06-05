@@ -9,9 +9,7 @@
 # Study Instruments
 
 <img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" 
-alt="Age of Child participants at each Visit number: Visit 1 (V01) = Prenatal; Visit 2 (V02) = 0-1 month old; Visit 3 (V03) = 3-9 months old; Visit 4 (V04) = 9-15 months old; Visit 5 (V05) = 10-17 months old;  Visit 6 (V06) = 15-30 months old; Visit 7 (V07) = 16-32 months old" width="100%" height="auto" class="center">
-
-<!-- In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Study protocols are also available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/).  -->
+alt="Age of Child participants at each Visit number: Visit 1 (V01) = Prenatal; Visit 2 (V02) = 0-1 month old; Visit 3 (V03) = 3-9 months old; Visit 4 (V04) = 9-15 months old; Visit 5 (V05) = 10-17 months old;  Visit 6 (V06) = 15-30 months old; Visit 7 (V07) = 16-32 months old" width="90%" height="auto" class="center">
 
 ## Participant Population
 
@@ -22,14 +20,13 @@ All surveys used in the HBCD Study were translated into Spanish by <a href="http
 
 ## Instruments By Domain
 
-
 In this section we provide a brief overview of each study instrument provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Study protocols are also available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). 
 
 HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details.
 
 Expand the sections below to see a list of measures associated with each domain included in the latest release data.
 
-<img src="../../images/instructions.png" width="90%" height="auto" class="center">
+<!-- <img src="../../images/instructions.png" width="90%" height="auto" class="center"> -->
 
 --------------
 
@@ -43,9 +40,9 @@ Expand the sections below to see a list of measures associated with each domain 
   Expand All Sections ↕️
 </button>
 
-## Demographics
+<!-- ## Demographics -->
 
-<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
+<!-- <div id="demo" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-id-card"></i></span>
   <span class="text-with-link">
   <span class="text">Demographics</span>
@@ -66,18 +63,18 @@ Expand the sections below to see a list of measures associated with each domain 
   </thead>
   <tbody>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/demo/basicdemo/" target="_blank">Basic Demographics</a></td>
+    <td><a href="demo/basicdemo/" target="_blank">Basic Demographics</a></td>
     <td>Demographics data derived from multiple sources</td>
     <td><code>sed_basic_demographics</code></td>
   </tr>
     <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/demo/visitinfo" target="_blank">Visit Level Data</a></td>
+    <td><a href="demo/visitinfo/" target="_blank">Visit Level Data</a></td>
     <td>Participant visit information</td>
     <td><code>par_visit_data</code></td>
   </tr>
 </tbody>
 </table>
-</div>
+</div> -->
 
 ## Behavior, Biology, & Environment
 
@@ -104,13 +101,49 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-<td><a href="/{{ config.extra.docs_version }}/instruments/admin/study-navigators" target="_blank">Study Navigator Contact Form</a> <i class="fas fa-layer-group table-icon"></i></td>
+<td><a href="admin/study-navigators" target="_blank">Study Navigator Contact Form</a> <i class="fas fa-layer-group table-icon"></i></td>
 <td>Recruitment/Retention</td>
 <td><i>study_navigator/Study Navigator Export - Release 2.0.csv</i></td>
 </tr>
 </tbody>
 </table>
 </div>
+
+<div id="demo" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-id-card"></i></span>
+  <span class="text-with-link">
+  <span class="text">Demographics</span>
+  <a class="anchor-link" href="#demo" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="table-no-vertical-lines">
+  <thead>
+    <tr>
+      <th>Instrument</th>
+      <th>Construct</th>
+      <th>Table Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="demo/basicdemo/" target="_blank">Basic Demographics</a></td>
+    <td>Demographics data derived from multiple sources</td>
+    <td><code>sed_basic_demographics</code></td>
+  </tr>
+    <tr>
+    <td><a href="demo/visitinfo/" target="_blank">Visit Level Data</a></td>
+    <td>Participant visit information</td>
+    <td><code>par_visit_data</code></td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+---
 
 <div id="mh" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-people-arrows"></i></span>
@@ -133,38 +166,38 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
   <tbody>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/chaos" target="_blank">CHAOS</a></td>
+    <td><a href="bcgi/chaos" target="_blank">CHAOS</a></td>
     <td>Family Organization</td>
     <td><code>mh_cg_chaos</code></td>
   </tr>
   <tr>
     <td>
-      <a href="/{{ config.extra.docs_version }}/instruments/bcgi/ecpromis" target="_blank">ecPROMIS Caregiver-Child</a> <i>(&lt;1 / 1-5 years)</i></td>
+      <a href="bcgi/ecpromis" target="_blank">ecPROMIS Caregiver-Child</a> <i>(&lt;1 / 1-5 years)</i></td>
     <td>Caregiver-Child Interactions</td>
     <td><code>mh_cg_pms__cc__inf</code> / <code>mh_cg_pms__cc__1to5</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/ecpromis-pr" target="_blank">ecPROMIS Peer</a></td>
+    <td><a href="bcgi/ecpromis-pr" target="_blank">ecPROMIS Peer</a></td>
     <td>Peer Relationships</td>
     <td><code>mh_cg_pms__peer</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/ecpromis-selfreg" target="_blank">ecPROMIS Self-Regulation</a></td>
+    <td><a href="bcgi/ecpromis-selfreg" target="_blank">ecPROMIS Self-Regulation</a></td>
     <td>Self-Regulation and Flexibility</td>
     <td><code>mh_cg_pms__selfreg</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/erica" target="_blank">ERICA</a></td>
+    <td><a href="bcgi/erica" target="_blank">ERICA</a></td>
     <td>Emotional Regulation</td>
     <td><code>mh_cg_erica</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/fad" target="_blank">FAD (GF6+)</a></td>
+    <td><a href="bcgi/fad" target="_blank">FAD (GF6+)</a></td>
     <td>Global Functioning of Family Unit</td>
     <td><code>mh_cg_fad</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/ibqr" target="_blank">IBQ-R (VSF)+BI</a></td>
+    <td><a href="bcgi/ibqr" target="_blank">IBQ-R (VSF)+BI</a></td>
     <td rowspan="2">
       Surgency/Extraversion,
       Negative Affectivity,<br>
@@ -174,11 +207,11 @@ Expand the sections below to see a list of measures associated with each domain 
     <td><code>mh_cg_ibqr</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/ibqr" target="_blank">ECBQ (VSF)+BI</a></td>
+    <td><a href="bcgi/ibqr" target="_blank">ECBQ (VSF)+BI</a></td>
     <td><code>mh_cg_ecbq</code></td>
   </tr>
   <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/bcgi/maps-tl" target="_blank">MAPS-TL</a> <i>(Infant / Toddler)</i></td>
+    <td><a href="bcgi/maps-tl" target="_blank">MAPS-TL</a> <i>(Infant / Toddler)</i></td>
     <td>Irritability</td>
     <td>
     <code>mh_cg_mapdb__inf</code> / <code>mh_cg_mapstl__tod</code>
@@ -215,28 +248,28 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a><i class="fas fa-layer-group table-icon"></i></td>
+    <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a><i class="fas fa-layer-group table-icon"></i></td>
     <td>Maternal & Child</td>
     <td>GWAS, EWAS, Transcriptome</td>
     <td><i>concatenated/genetics/</i></td>
 </tr>
 
 <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/biospec/nails" target="_blank">Maternal Nails</a></td>
+    <td><a href="biospec/nails" target="_blank">Maternal Nails</a></td>
     <td>Maternal</td>
     <td>Drug, Environmental Exposure</td>
     <td><code>bio_bm_biosample_nails_results</code><br>
     <code>bio_bm_biosample_nails_type</code></td>
 </tr>
 <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/biospec/urine" target="_blank">Maternal Urine</a></td>
+    <td><a href="biospec/urine" target="_blank">Maternal Urine</a></td>
     <td>Maternal</td>
     <td>Drug Panel, Toxins</td>
     <td><code>bio_bm_biosample_urine_results</code></td>
 </tr>
 
 <tr>
-    <td><a href="/{{ config.extra.docs_version }}/instruments/biospec/olink" target="_blank">Olink Explore</a> <i class="fas fa-layer-group table-icon"></i></td>
+    <td><a href="biospec/olink" target="_blank">Olink Explore</a> <i class="fas fa-layer-group table-icon"></i></td>
     <td></td>
     <td>Maternal Inflammation</td>
     <td><i>concatenated/proteins/</i></td>
@@ -268,13 +301,13 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/neurocog/bayley-4" target="_blank">Bayley-4 Scales</a></td>
+  <td><a href="neurocog/bayley-4" target="_blank">Bayley-4 Scales</a></td>
   <td></td>
   <td>Child Development (Cognitive, Language, and Motor)</td>
   <td><code>ncl_ch_bayley</code></td>
 </tr>
 <tr>
-  <td rowspan="2"><a href="/{{ config.extra.docs_version }}/instruments/neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a></td>
+  <td rowspan="2"><a href="neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a></td>
   <td>English</td>
   <td>Language Development (Words & Gestures)</td>
   <td><code>ncl_ch_cdiwgen</code></td>
@@ -285,13 +318,13 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>ncl_ch_cdiwges</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/neurocog/mlds" target="_blank">MLDS</a></td>
+  <td><a href="neurocog/mlds" target="_blank">MLDS</a></td>
   <td></td>
   <td>Multilingual Exposure</td>
   <td><code>ncl_ch_mlds</code></td>
 </tr>
 <tr>
-  <td rowspan="2"><a href="/{{ config.extra.docs_version }}/instruments/neurocog/spm2" target="_blank">Sensory Processing Measure-2 (SPM-2)</a></td>
+  <td rowspan="2"><a href="neurocog/spm2" target="_blank">Sensory Processing Measure-2 (SPM-2)</a></td>
   <td>Infant</td>
   <td>Sensory Processing/Integration</td>
   <td><code>ncl_cg_spm2__inf</code></td>
@@ -302,7 +335,7 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>ncl_cg_spm2__tod</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/neurocog/vineland" target="_blank">Vineland Adaptive Behavior</a></td>
+  <td><a href="neurocog/vineland" target="_blank">Vineland Adaptive Behavior</a></td>
   <td></td>
   <td>Adaptive Behavior</td>
   <td><code>ncl_cg_vabs</code></td>
@@ -334,55 +367,55 @@ Expand the sections below to see a list of measures associated with each domain 
 </thead>
 <tbody>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
+  <td><a href="physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
   <td></td>
   <td>Sleep</td>
   <td><code>ph_cg_bisq</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/bf" target="_blank">Breast Feeding History</a></td>
+  <td><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
   <td></td>
   <td>Nutrition</td>
   <td><code>ph_cg_phx__bfh</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/ecpromis-pags" target="_blank">ecPROMIS Physical Activity/Greenspace</a></td>
+  <td><a href="physhealth/ecpromis-pags" target="_blank">ecPROMIS Physical Activity/Greenspace</a></td>
   <td>Early Childhood</td>
   <td>Physical Activity</td>
   <td><code>ph_cg_pms__pags</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/ecpromis-sleep" target="_blank">ecPROMIS Sleep</a></td>
+  <td><a href="physhealth/ecpromis-sleep" target="_blank">ecPROMIS Sleep</a></td>
   <td>Early Childhood</td>
   <td>Sleep</td>
   <td><code>ph_cg_pms__sleep</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
+  <td><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
   <td></td>
   <td>Growth</td>
   <td><code>ph_ch_anthro</code></td>
 </tr> 
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/medical-history" target="_blank">Medical History</a></td>
+  <td><a href="physhealth/medical-history" target="_blank">Medical History</a></td>
   <td></td>
   <td>Medical History</td>
   <td><code>ph_cg_ecls__medhist</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/nutrition" target="_blank">Nutrition Questionnaire</a></td>
+  <td><a href="physhealth/nutrition" target="_blank">Nutrition Questionnaire</a></td>
   <td>Infant</td>
   <td>Nutrition</td>
   <td><code>ph_cg_inq</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/screenq" target="_blank">ScreenQ</a></td>
+  <td><a href="physhealth/screenq" target="_blank">ScreenQ</a></td>
   <td></td>
   <td>Media Use</td>
   <td><code>ph_cg_screenq</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/physhealth/vision" target="_blank">Vision Screener</a></td>
+  <td><a href="physhealth/vision" target="_blank">Vision Screener</a></td>
   <td></td>
   <td>Vision</td>
   <td><code>ph_ch_vs</code></td>
@@ -404,12 +437,6 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 <div class="table-collapsible-content">
 
-<p style="font-size: 0.9em; color: #555;">
-<i style="color: #ff5df7ff;" class="fa-solid fa-baby"></i>&nbsp;= Pregnancy & Infant Health&nbsp;&nbsp;&nbsp;
-<i style="color: #ff5df7ff;" class="fas fa-brain"></i>&nbsp;= Mental Health&nbsp;&nbsp;&nbsp;
-<i style="color: #ff5df7ff;" class="fa-solid fa-prescription-bottle"></i>&nbsp;= Substance Use
-</p>
-
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -419,81 +446,96 @@ Expand the sections below to see a list of measures associated with each domain 
 </tr>
 </thead>
 <tbody>
+
 <!-- Pregnancy & Infant Health -->
+<tr class="table-group-row">
+  <td colspan="3"><i style="color: white;" class="fa-solid fa-baby table-icon-left"></i> Pregnancy & Infant Health</td>
+</tr>
+
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Health History</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-Health History</a></td>
   <td>Pre-pregnancy and pregnancy health</td>
   <td><code>pex_bm_health_preg__healthhx</code></td>
 </tr>
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Exp & Vaccines</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-Exp & Vaccines</a></td>
   <td>Vaccines in pregnancy</td>
   <td><code>pex_bm_health_preg__exp__vacc</code></td>
 </tr>
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Chronic Conditions</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-Chronic Conditions</a></td>
   <td>Chronic conditions/STIs in pregnancy</td>
   <td><code>pex_bm_health_preg__chroncond</code></td>
 </tr>
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Illness</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-Illness</a></td>
   <td>Illness in pregnancy</td>
   <td><code>pex_bm_health_preg__illness</code></td>
 </tr>
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-ER Admissions</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-ER Admissions</a></td>
   <td>ER visit or hospitalization in pregnancy</td>
   <td><code>pex_bm_health_preg__erhosp</code></td>
 </tr>
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V1-Medications</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V1-Medications</a></td>
   <td>Medications in pregnancy</td>
   <td><code>pex_bm_health_preg__meds</code></td>
 </tr>
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V2-Pregnancy</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V2-Pregnancy</a></td>
   <td>Health updates up to delivery</td>
   <td><code>pex_bm_healthv2_preg</code></td>
 </tr>
 <tr class="section-health">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-baby header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/pex/" target="_blank">Health V2-Infancy</a></td>
+  <td><a href="pregexp/pex/" target="_blank">Health V2-Infancy</a></td>
   <td>Delivery and birth outcomes</td>
   <td><code>pex_bm_healthv2_inf</code></td>
 </tr>
+
 <!-- Mental Health -->
+<tr class="table-group-row">
+  <td colspan="3"><i style="color: white;" class="fas fa-brain table-icon-left"></i> Mental Health</td>
+</tr>
+
 <tr class="section-mh">
-  <td><i style="color: #ff5df7ff;" class="fas fa-brain header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
+  <td><a href="pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
   <td>Personal and Family Mental Health</td>
   <td><code>pex_bm_psych</code></td>
 </tr>
 <tr class="section-mh">
-  <td><i style="color: #ff5df7ff;" class="fas fa-brain header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/mh/apa12" target="_blank">APA 1/2</a></td>
+  <td><a href="pregexp/mh/apa12" target="_blank">APA 1/2</a></td>
   <td>Mental Health</td>
   <td><code>pex_bm_apa</code></td>
 </tr>
 <tr class="section-mh">
-  <td><i style="color: #ff5df7ff;" class="fas fa-brain header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/mh/ptsd" target="_blank">DSM5 Acute Stress or PTSD</a></td>
+  <td><a href="pregexp/mh/ptsd" target="_blank">DSM5 Acute Stress or PTSD</a></td>
   <td>PTSD/Acute Stress Symptom Severity</td>
   <td><code>pex_bm_str__ptsd</code></td>
 </tr>
 <tr class="section-mh">
-  <td><i style="color: #ff5df7ff;" class="fas fa-brain header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/mh/epds" target="_blank">EPDS</a></td>
+  <td><a href="pregexp/mh/epds" target="_blank">EPDS</a></td>
   <td>Postnatal Depression</td>
   <td><code>pex_bm_epds</code></td>
 </tr>
+
 <!-- Substance Use -->
+<tr class="table-group-row">
+  <td colspan="3"><i style="color: white;" class="fa-solid fa-prescription-bottle table-icon-left"></i> Substance Use</td>
+</tr>
+
 <tr class="section-su">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-prescription-bottle header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/su/assist" target="_blank">ASSIST V1/2/3/4</a></td>
+  <td><a href="pregexp/su/assist" target="_blank">ASSIST V1/2/3/4</a></td>
   <td>Substance Use Pre-, During, and Post-Pregnancy</td>
   <td><code>pex_bm_assistv<span class="blue-text">{1|2|3|4}</span></code></td>
 </tr>
 <tr class="section-su">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-prescription-bottle header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/su/su-patterns" target="_blank">Substance Use Patterns</a></td>
+  <td><a href="pregexp/su/su-patterns" target="_blank">Substance Use Patterns</a></td>
   <td>Substance Use in Pregnancy</td>
   <td><code>pex_bm_subst</code></td>
 </tr>
 <tr class="section-su">
-  <td><i style="color: #ff5df7ff;" class="fa-solid fa-prescription-bottle header-icon"></i> <a href="/{{ config.extra.docs_version }}/instruments/pregexp/su/tlfb" target="_blank">TLFB</a></td>
+  <td><a href="pregexp/su/tlfb" target="_blank">TLFB</a></td>
   <td>SU Before and During Pregnancy</td>
   <td><code>pex_ch_tlfb</code></td>
 </tr>
@@ -513,10 +555,12 @@ Expand the sections below to see a list of measures associated with each domain 
 </div>
 <div class="table-collapsible-content">
 
-<p style="font-size: 1em; color: #555; text-align: center;">
-<i class="fas fa-layer-group table-icon"></i>&nbsp;=&nbsp;Concatenated data <a href="/datacuration/file-based-data/#concatenated-data" target="_blank"><i>(see details)</i></a>
-</p>
-<br>
+<div class="table-legend">
+  <span class="legend-item">
+    <i class="fas fa-layer-group legend-icon"></i>
+    Concatenated data <a href="/datacuration/file-based-data/#concatenated-data" target="_blank"><i>(see details)</i></a>
+  </span>
+</div>
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -530,7 +574,7 @@ Expand the sections below to see a list of measures associated with each domain 
 <tbody>
 
 <tr>
-  <td rowspan="2"><a href="/{{ config.extra.docs_version }}/instruments/SED/aces" target="_blank">Adverse Childhood Experiences</a></td>
+  <td rowspan="2"><a href="SED/aces" target="_blank">Adverse Childhood Experiences</a></td>
   <td>ACEs</td>
   <td>ACEs (Caregiver)</td>
   <td><code>sed_cg_ace</code></td>
@@ -541,81 +585,81 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>sed_cg_pedaces</code></td>
 </tr>  
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/bfy" target="_blank">Baby's First Years (BFY)</a></td>
+  <td><a href="SED/bfy" target="_blank">Baby's First Years (BFY)</a></td>
   <td></td>
   <td>Benefits/Services/Economic Stress</td>
   <td><code>sed_bm_bfy</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/cab" target="_blank">Composite Abuse Scale (CABr-SF)</a></td>
+  <td><a href="SED/cab" target="_blank">Composite Abuse Scale (CABr-SF)</a></td>
   <td></td>
   <td>Intimate Partner Violence</td>
   <td><code>sed_cg_cabr_sf</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/current-employment" target="_blank">Current Employment</a></td>
+  <td><a href="SED/current-employment" target="_blank">Current Employment</a></td>
   <td></td>
   <td>Current Employment</td>
   <td><code>sed_cg_employ</code></td>
 </tr>  
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/demo-cg" target="_blank">Demographics</a></td>
+  <td><a href="SED/demo-cg" target="_blank">Demographics</a></td>
   <td>Adult</td>
   <td>Demographics (Adult V01, V04, V06)</td>
   <td><code>sed_bm_demo</code></td>
 </tr> 
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/demo-ch" target="_blank">Child Demographics</a></td>
+  <td><a href="SED/demo-ch" target="_blank">Child Demographics</a></td>
   <td>Child</td>
   <td>Demographics (Child V04, V06)</td>
   <td><code>sed_bm_demo_child</code></td>
 </tr> 
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/ehits" target="_blank">eHITS</a></td>
+  <td><a href="SED/ehits" target="_blank">eHITS</a></td>
   <td></td>
   <td>Intimate Partner Violence</td>
   <td><code>sed_bm_ehits</code></td>
 </tr>  
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/foodinsecurity" target="_blank">Food Insecurity</a></td>
+  <td><a href="SED/foodinsecurity" target="_blank">Food Insecurity</a></td>
   <td></td>
   <td>Food insecurity</td>
   <td><code>sed_cg_foodins</code></td>
 </tr>
 
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/geocoded-linkage" target="_blank">Geocoded Linkage</a> <i class="fas fa-layer-group table-icon"></i></td>
+  <td><a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage</a> <i class="fas fa-layer-group table-icon"></i></td>
   <td></td>
   <td>Neighborhood Measures</td>
   <td><i>geocoded_linkage/</i></td>
 </tr>  
 
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/home21" target="_blank">HOME-21</a></td>
+  <td><a href="SED/home21" target="_blank">HOME-21</a></td>
   <td>Infant-Toddler</td>
   <td>Child’s Home Environment</td>
   <td><code>sed_cg_home_it</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/household-chemical-exposures" target="_blank">Household Chemical Exposures</a></td>
+  <td><a href="SED/household-chemical-exposures" target="_blank">Household Chemical Exposures</a></td>
   <td></td>
   <td>Household Chemical Exposures</td>
   <td><code>sed_cg_hce</code></td>
 </tr>   
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/lead-exposures" target="_blank">Lead Exposures</a></td>
+  <td><a href="SED/lead-exposures" target="_blank">Lead Exposures</a></td>
   <td></td>
   <td>Lead Exposures</td>
   <td><code>sed_cg_leadexp</code></td>
 </tr> 
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/safety" target="_blank">Neighborhood Safety</a></td>
+  <td><a href="SED/safety" target="_blank">Neighborhood Safety</a></td>
   <td></td>
   <td>Neighborhood Safety</td>
   <td><code>sed_bm_nbhsaf</code></td>
 </tr> 
 <tr>
-  <td rowspan="2"><a href="/{{ config.extra.docs_version }}/instruments/SED/paces" target="_blank">PACEs</a></td>
+  <td rowspan="2"><a href="SED/paces" target="_blank">PACEs</a></td>
   <td>Current</td>
   <td>Protective Factors</td>
   <td><code>sed_bm_paces</code></td>
@@ -626,31 +670,31 @@ Expand the sections below to see a list of measures associated with each domain 
   <td><code>sed_cg_paces</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/promis" target="_blank">PROMIS</a></td>
+  <td><a href="SED/promis" target="_blank">PROMIS</a></td>
   <td></td>
   <td>Perceived Stress/Social Support</td>
   <td><code>sed_bm_strsup</code></td>
 </tr>      
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/second-hand-smoke-exposure" target="_blank">Second Hand Smoke</a></td>
+  <td><a href="SED/second-hand-smoke-exposure" target="_blank">Second Hand Smoke</a></td>
   <td></td>
   <td>Second Hand Smoke Exposure</td>
   <td><code>sed_cg_shs</code></td>
 </tr>    
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/transitions-in-care" target="_blank">Transitions in Care Screener</a></td>
+  <td><a href="SED/transitions-in-care" target="_blank">Transitions in Care Screener</a></td>
   <td></td>
   <td>Recruitment/Retention</td>
   <td><code>sed_cg_tic_screener</code></td>
 </tr>
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/discr" target="_blank">Unfair Treatment</a></td>
+  <td><a href="SED/discr" target="_blank">Unfair Treatment</a></td>
   <td></td>
   <td>Experiences of Unfair Treatment</td>
   <td><code>sed_bm_phx__discr</code></td>
 </tr>  
 <tr>
-  <td><a href="/{{ config.extra.docs_version }}/instruments/SED/vi" target="_blank">Vancouver Index (VIA)</a></td>
+  <td><a href="SED/vi" target="_blank">Vancouver Index (VIA)</a></td>
   <td></td>
   <td>Acculturation</td>
   <td><code>sed_cg_via</code></td>
@@ -724,7 +768,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   <td><code>eeg_qc_task-<span class="blue-text">{ALL TASKS}</span></code></td>
 </tr>
 <tr>
-  <td>Tabulated HBCD-MADE derivatives<br>
+  <td>Tabular HBCD-MADE derivatives<br>
   <i>(See <a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>Tabulated Pipeline Derivatives</a> for details)</i></td>
   <td><code>eeg_made_task-<span class="blue-text">{ALL TASKS}</span>_acq-eeg_preprocessingReport</code><br>
     <code>eeg_made_task-<span class="blue-text">{FACE|MMN|VEP}</span>FACE_ERPSummaryStats</code>

@@ -43,15 +43,39 @@ def define_env(env):
 </tbody>
 </table>
 """
-        
+    
+    @env.macro
+    def alert_banner(
+        banner_id="alert",
+        text="Responsible Use Warning",
+        icon="fas fa-exclamation-circle"
+    ):
+        return f"""
+<div id="{banner_id}" class="banner {banner_id}" onclick="toggleCollapse(this)">
+<span class="emoji">
+    <i class="fas {icon}"></i>
+</span>
+
+<span class="text-with-link">
+    <span class="text">{text}</span>
+
+    <a class="anchor-link" href="#{banner_id}" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+
+<span class="arrow">▸</span>
+</div>
+"""
+    
     @env.macro
     def warning_banner(
         banner_id="warning",
         text="Data Warning",
-        icon="fa-exclamation-triangle"
+        icon="fas fa-exclamation-triangle"
     ):
         return f"""
-<div id="{banner_id}" class="warning-banner" onclick="toggleCollapse(this)">
+<div id="{banner_id}" class="banner {banner_id}" onclick="toggleCollapse(this)">
 <span class="emoji">
     <i class="fas {icon}"></i>
 </span>

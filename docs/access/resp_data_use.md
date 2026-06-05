@@ -7,11 +7,11 @@ The HBCD study dataset is a large, rich, and complex resource that can drive sci
 
 When using HBCD Study data, processes, plans, and/or concepts in a publication, please include the acknowledgement text below (also provided in the NBDC Responsible Data Use Training required for data access).
 
-<div id="dua" class="table-banner" onclick="toggleCollapse(this)">
+<div id="dua" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-info"></i></span>
   <span class="text-with-link">
     <span class="text">HBCD Study Acknowledgement (Copy & Paste)</span>
-    <a class="anchor-link" href="#dua" title="Copy link">
+    <a class="anchor-link" href="#lasso" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>
   </span>
@@ -28,22 +28,14 @@ When using HBCD Study data, processes, plans, and/or concepts in a publication, 
 ## Warnings
 To facilitate responsible data use and scientific rigor, the following warnings are provided within the study instrument documentation where applicable (with direct URL links provided in the [NBDC Data Dictionary](../standards/metadata.md)). We recommend that all data users review the data warnings for any data you will be downloading and/or using, review included resources and citations, and follow recommended guidelines. Reach out via the NBDC Data Access Platform [Help Center](https://nbdc-datashare.lassoinformatics.com/help-center) with any question about the data warnings or how to use the data.
 
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-    <span class="text">Responsible Use Warning</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="alert-collapsible-content">
-<p>The purpose of this warning is to offer guidance for research design, data interpretation, and communication of findings, including conceptual information. These warnings also include information on stigma and stigmatizing language related to some variables, or information on the manner in which race variables were conceptualized and collected for this study.</p>
+{{ alert_banner() }}
+<div class="collapsible-content">
+<p>The purpose of the <b>Responsible Use Warning</b> is to offer guidance for research design, data interpretation, and communication of findings, including conceptual information. These warnings also include information on stigma and stigmatizing language related to some variables, or information on the manner in which race variables were conceptualized and collected for this study.</p>
 </div>
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text">Data Warning</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>The purpose of this warning is to improve transparency and offer technical assistance by alerting the user to issues of data quality, providing information on how variables were constructed, providing instructions on how to calculate or analyze specific variables, or providing code (if necessary).</p> 
+{{ warning_banner() }}
+<div class="collapsible-content">
+<p>The purpose of the <b>Data Warning</b> is to offer guidance for research design, data interpretation, and communication of findings, including conceptual information. These warnings also include information on stigma and stigmatizing language related to some variables, or information on the manner in which race variables were conceptualized and collected for this study.</p>
 </div>
  
 ## Recommendations
