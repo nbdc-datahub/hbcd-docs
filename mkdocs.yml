@@ -70,7 +70,6 @@ nav:
     - File-Based Data: datacuration/file-based-data.md
   - Study Instruments:
     - Overview: instruments/index.md
-    - All Instruments: instruments/instruments.md
     - Age Variables: instruments/agevariables.md
     - Demographics:
         - Basic Demographics: instruments/demo/basicdemo.md

@@ -4,37 +4,6 @@
     max-width: 100% !important;
     flex-grow: 1 !important;
 }
-.pr-pill {
-  display: inline-block;
-  padding: 2px 8px;
-  font-size: 1em;
-  font-weight: 600;
-  border-radius: 999px;
-  line-height: 1;
-  white-space: nowrap;
-}
-/* Version-specific styling */
-.pr-general {
-  background-color: #e6f0ff;
-  color: #1a4fb3;
-}
-/* TBD PILL*/
-.pr-tbd {
-  background-color: #f1f3f5;
-  color: #666;
-  font-style: italic;
-}
-/* ICONS */
-.icon-rotate {
-  color: #199bd6;
-  margin-right: 0.4em;
-  font-size: 1em;
-}
-.icon-bug {
-  color: #f97316;
-  margin-right: 0.4em;
-  font-size: 1em;
-}
 </style>
 
 # Known Issues & Pending Updates 
@@ -51,22 +20,25 @@ The tables below summarize known issues affecting the current data release and p
     
 ---
 
-
-## TO INCLUDE FOR SURE
-
-
-
 ### Behavior & Child-Caregiver Interaction
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="font-size: 1.1em;">
+<tr>
 <th></th><th>Table</th><th>Summary</th>
 <th style='text-align: center;'>
   <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
 </th></tr>
 </thead>
 <tbody>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>ecPROMIS CC</td>
+<td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ERICA</td>
@@ -78,50 +50,12 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fa-solid fa-rotate icon-rotate"></i><i class="fas fa-bug icon-bug"></i></td>
 <td>ERICA</td>
 <td>
-A future release will include reliability codes integrated into the primary coding dataset. Until then, users must perform this integration manually: <b>see the ERICA <a href="../../instruments/bcgi/erica/#warning">Data Warning</a> for instructions.</b>
+A future release will include reliability codes integrated into the primary coding dataset. Until then, users must perform this integration manually - see the ERICA <a href="../../instruments/bcgi/erica/#warning">Data Warning</a> for instructions.
 <br>
 Instructions include cleaning the current files to exclude n=44 participants with incorrect code values (data entry/form errors) and capping <code>b_raw</code> values at 3.0 (n=3 participants). These issues will also be corrected in future release data.
 </td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
-
-</tbody></table>
-
-## NEED TO SORT AND MOVE TO RELEASE NOTES FOR CLOSED ISSUES
-
-<!-- BEGIN KNOWN_ISSUES_TABLE -->
-### Administrative
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr style="font-size: 1.1em;">
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
-</thead>
-<tbody>
-
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Study Navigators</td>
-<td>Populate SUBSTANCE_USE and OTHER checkbox fields.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-</tbody></table>
-
-
-### Behavior &amp; Child-Caregiver Interaction
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr style="font-size: 1.1em;">
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
-</thead>
-<tbody>
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
@@ -129,50 +63,31 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>MAPS-TL</td>
-<td>Notes appear in the score field in both versions (Infant/Toddlerhood) and will be moved to a separate field.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
+
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>MAPS-TL (&lt;1yr)</td>
 <td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>ecPROMIS CC</td>
-<td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>ECBQ</td>
-<td>Change coding for "Does not apply" to 8 to match the IBQ-R.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>ERICA</td>
-<td>Addition of the ERICA instrument.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
+
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>MAPS-TL (Tod)</td>
 <td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
+
 </tbody></table>
 
+## NEED TO SORT AND MOVE TO RELEASE NOTES FOR CLOSED ISSUES
 
-### Biospecimens &amp; Omics
+
+### Biospecimens & Omics
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="font-size: 1.1em;">
+<tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
 <th style='text-align: center;'>
   <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
@@ -186,30 +101,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Nails</td>
-<td>Add unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Nails &amp; Urine</td>
-<td>Data dictionary level values have quotes around them, causing the downloaded to have double quotes (e.g. 1=""positive"").</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Olink</td>
-<td>Add Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Urine</td>
-<td>Add creatinine results (<code>bio_creat_u</code>).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
+
 </tbody></table>
 
 
@@ -217,7 +109,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="font-size: 1.1em;">
+<tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
 <th style='text-align: center;'>
   <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
@@ -225,12 +117,6 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 </thead>
 <tbody>
 
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Basic Demo</td>
-<td>Remove internal <code>recruitment_site</code> categories only present in data dictionary (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
@@ -243,26 +129,13 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>The Demographics domain includes 2 tables with derived information grouped into visit-specific data (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/">Visit Info</a>) and general demographics (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/">Basic Demographics</a>). In a future release, these tables will be restructured to instead organize variables as either longitudinal (dynamic measures that change over time) or global (static measures, such as sex assigned at birth and race/ethnicity).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>SU Flags</td>
-<td>A derived/rolled up substance use flag for Stimulants will be added based on positive instrument-specific Stimulant results.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Visit Info</td>
-<td>SU flags will include Nail toxicology results in addition to Urine.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
 </tbody></table>
-
 
 ### EEG
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="font-size: 1.1em;">
+<tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
 <th style='text-align: center;'>
   <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
@@ -276,18 +149,6 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>.set files</td>
-<td>Update EEG .set files to include subject release IDs.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>MADE</td>
-<td>N=3 V04 session derivatives are missing corresponding tabulated data for FACE/MMN tasks. See <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> for impacted participant IDs.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
 </tbody></table>
 
 
@@ -295,7 +156,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="font-size: 1.1em;">
+<tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
 <th style='text-align: center;'>
   <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
@@ -315,18 +176,23 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>The 'instruction' data dictionary element is currently blank.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Language</td>
-<td>Add language of administration across all instruments where applicable.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
+
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Multibirth Cohorts</td>
 <td>Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be added to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Score text</td>
+<td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts ecPROMIS-PAGS; MAPS-TL; SPM-2).
+</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+
+
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Sequence Field</td>
@@ -340,7 +206,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="font-size: 1.1em;">
+<tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
 <th style='text-align: center;'>
   <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
@@ -350,28 +216,11 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Raw BIDS</td>
-<td>Raw BIDs include 2 corrupted bold runs in V02; view participant IDs/filepaths in the<a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>Run ID</td>
 <td>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>XCP-D</td>
-<td>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata will be corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>BrainSwipes</td>
-<td>BrainSwipes QC results will be updated with latest results  currently available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
+
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>QSIRecon</td>
@@ -390,12 +239,6 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>Add source DICOMs for all imaging modalities.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Summary Forms</td>
-<td>Add MRI Scan Session + Data Summary Forms (information from the MRI technician obtained on day of scan).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
 </tbody></table>
 
 
@@ -403,7 +246,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="font-size: 1.1em;">
+<tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
 <th style='text-align: center;'>
   <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
@@ -442,7 +285,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="font-size: 1.1em;">
+<tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
 <th style='text-align: center;'>
   <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
@@ -511,7 +354,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="font-size: 1.1em;">
+<tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
 <th style='text-align: center;'>
   <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
@@ -562,7 +405,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="font-size: 1.1em;">
+<tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
 <th style='text-align: center;'>
   <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>

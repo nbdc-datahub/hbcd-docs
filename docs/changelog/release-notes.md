@@ -113,7 +113,7 @@
 
 ### New Instruments
 
-Release data now include the addition of the following new instruments:
+Release data now include the addition of the following instruments:
 
 [Go to full list of instruments organized by domain →](../instruments/instruments.md)
 
@@ -129,7 +129,7 @@ Release data now include the addition of the following new instruments:
 
 <tr>
 <td>Behavior & Caregiver-Child Interaction</td>
-<td>ERICA</td>
+<td>ERICA (<code>mh_cg_erica{_rel}_3_9m</code>; raw scores only)</td>
 <td>Emotional Regulation</td>
 </tr>
 
@@ -151,6 +151,219 @@ Release data now include the addition of the following new instruments:
 
 </tbody>
 </table>
+
+### 2.1 Resolved Known Issues & Updates
+
+<p style="font-size: 1.1em; color: #555; text-align: center;">
+<i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Resolved Known Issue &nbsp;&nbsp;&nbsp;
+<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Completed Pending Update</p>
+
+##### General
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th></th>
+<th>Topic</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Language</td>
+<td>Added language of administration across all instruments where applicable</td>
+</tr>
+
+</tbody>
+</table>
+
+##### Administrative
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th></th>
+<th>Table</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Study Navigators</td>
+<td>SUBSTANCE_USE and OTHER checkbox fields populated</td>
+</tr>
+
+</tbody>
+</table>
+
+
+##### Behavior & Caregiver-Child Interaction
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th></th>
+<th>Table</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ECBQ</td>
+<td>Coding for "Does not apply" changed to 8 to match the IBQ-R.</td>
+</tr>
+
+</tbody>
+</table>
+
+##### Biospecimens & Omics
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th></th><th>Table/Topic</th><th>Summary</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Nails</td>
+<td>Added unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Nails &amp; Urine</td>
+<td>Removed quotes in data dictionary level values causing the downloaded to have double quotes, e.g. 1=""positive""</td>
+</tr>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Urine</td>
+<td>Added creatinine results (<code>bio_creat_u</code>).</td>
+</tr>
+</tbody></table>
+
+##### Demographics
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th></th><th>Table/Topic</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Basic Demo</td>
+<td>Removed internal data dictionary <code>recruitment_site</code> categories not present in data (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
+</tr>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Visit Inf</td>
+<td>Added a derived/rolled up substance use flag for Stimulants based on positive instrument-specific Stimulant results</td>
+</tr>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Visit Info</td>
+<td>SU flags now include Nail toxicology results in addition to Urine</td>
+</tr>
+</tbody></table>
+
+
+##### EEG
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th></th><th>Table</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>.set files</td>
+<td>Updated .set files to include subject release IDs</td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>MADE</td>
+<td>Added missing FACE/MMN tabulated data for N=3 V04 session derivatives</td>
+</tr>
+
+</tbody></table>
+
+
+##### MRI
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th></th><th>Table/Topic</th><th>Summary</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Raw BIDS</td>
+<td>Corrected 2 corrupted bold runs in V02 raw BIDs</td>
+</tr>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>XCP-D</td>
+<td>Corrected tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata to have a <code>sub_domain</code> value of <code>Structural MRI</code></td>
+</tr>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>BrainSwipes</td>
+<td>Addition of complete BrainSwipes QC results</td>
+</tr>
+
+</tbody></table>
+
+
+
+
+<!-- #### ORIG COMBINED
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>Domain</th>
+<th>Table/Topic</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i>NA/General</i></td>
+<td>Language</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added language of administration across all instruments where applicable</td>
+</tr>
+<tr>
+<td>ADM</td>
+<td>Study Navigators</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> SUBSTANCE_USE and OTHER checkbox fields populated</td>
+</tr>
+<tr>
+<td>MH</td>
+<td>ECBQ</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Coding for "Does not apply" changed to 8 to match the IBQ-R.</td>
+</tr>
+</tbody>
+</table> -->
+
 
 ### 2.0 INFO - Resolved Known Issues
 
