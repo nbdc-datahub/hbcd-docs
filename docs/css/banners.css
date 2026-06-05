@@ -51,7 +51,6 @@
   gap: 8px;
   background-color: #dde6fe;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
 /* =========================================================
@@ -108,6 +107,9 @@
   margin-bottom: 0;
   font-size: 0.9em;
 }
+.collapsible-content > *:first-child {
+  margin-top: 1em;
+}
 .collapsible-content.open {
   display: block;
   max-height: 500px; 
@@ -116,29 +118,6 @@
   border-top: none;
   margin-bottom: 10px;
 }
-
-
-
-/* .collapsible-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  padding: 0;
-  border: none;
-  margin-bottom: 0;
-}
-.collapsible-content > *:first-child {
-  margin-top: 0;
-}
-.collapsible-content.open {
-  max-height: none;
-  padding: 14px 20px;
-  border: 1px solid #3333331a;
-  border-top: none;
-  margin-bottom: 10px;
-} */
-
-
 .collapsible-content p {
   margin: 0.8em 0;
   font-size: 1em;
@@ -161,7 +140,7 @@
   width: 100%;
   overflow-x: auto;
   background-color: #d0dff02c;
-} */
+}
 
 /* =========================================================
    INFO SECTIONS INSIDE COLLAPSIBLES

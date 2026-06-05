@@ -49,7 +49,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 
   <span class="legend-item">
     <i class="fa fa-language legend-icon"></i>
-    Column available in Spanish (includes <code>label_es</code>, <code>instruction_es</code>, <code>header_es</code>, <code>note_es</code>)
+    Column available in Spanish (e.g., <code>label_es</code>)
   </span>
 </div>
 

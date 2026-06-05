@@ -53,7 +53,7 @@ def define_env(env):
         return f"""
 <div id="{banner_id}" class="banner {banner_id}" onclick="toggleCollapse(this)">
 <span class="emoji">
-    <i class="fas {icon}"></i>
+    <i class="{icon}"></i>
 </span>
 
 <span class="text-with-link">
@@ -77,7 +77,7 @@ def define_env(env):
         return f"""
 <div id="{banner_id}" class="banner {banner_id}" onclick="toggleCollapse(this)">
 <span class="emoji">
-    <i class="fas {icon}"></i>
+    <i class="{icon}"></i>
 </span>
 
 <span class="text-with-link">
@@ -97,10 +97,11 @@ def define_env(env):
         icon="fas fa-bug"
     ):
         return f"""
-<div class="table-banner">
-<span class="emoji"><i class="fas {icon}"></i></span>
+<div class="banner">
+<span class="emoji"><i class="{icon}"></i></span>
 <span class="text">See <a href="/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> for issues that may affect data use.</span>
 </div>
 """
     
+
    

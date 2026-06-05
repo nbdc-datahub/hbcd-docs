@@ -49,13 +49,17 @@ function toggleCollapse(element) {
 // Utility function to expand a collapsible section by ID
 function expandCollapsibleById(id) {
   const element = document.getElementById(id);
-  
-  if (element && (element.classList.contains('notification-banner') || 
-                  element.classList.contains('table-banner') ||
-                  element.classList.contains('warning-banner') ||
-                  element.classList.contains('alert-banner'))) {
+
+  if (element && (element.classList.contains('banner'))) {
     const collapsibleContent = element.nextElementSibling;
     const arrow = element.querySelector(['.arrow']);
+  
+  // if (element && (element.classList.contains('notification-banner') || 
+  //                 element.classList.contains('table-banner') ||
+  //                 element.classList.contains('warning-banner') ||
+  //                 element.classList.contains('alert-banner'))) {
+  //   const collapsibleContent = element.nextElementSibling;
+  //   const arrow = element.querySelector(['.arrow']);
 
     if (collapsibleContent && !collapsibleContent.classList.contains('open')) {
       collapsibleContent.classList.add('open');

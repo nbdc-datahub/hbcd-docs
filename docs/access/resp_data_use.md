@@ -35,7 +35,7 @@ To facilitate responsible data use and scientific rigor, the following warnings 
 
 {{ warning_banner() }}
 <div class="collapsible-content">
-<p>The purpose of the <b>Data Warning</b> is to offer guidance for research design, data interpretation, and communication of findings, including conceptual information. These warnings also include information on stigma and stigmatizing language related to some variables, or information on the manner in which race variables were conceptualized and collected for this study.</p>
+<p>The purpose of the <b>Data Warning</b> is to improve transparency and offer technical assistance by alerting the user to issues of data quality, providing information on how variables were constructed, providing instructions on how to calculate or analyze specific variables, or providing code (if necessary).</p>
 </div>
  
 ## Recommendations
@@ -101,17 +101,8 @@ NASEM also published a report, [*Using Population Descriptors in Genetics and Ge
 
 ---
 
-<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
-  <span class="text-with-link">
-  <span class="text">References</span>
-  <a class="anchor-link" href="#ref" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
+## References
+
 <div class="references">
   <p>Appleseth, H. S., Moyers, S. A., Crockett-Barbera, E. K., Hartwell, M., Arndt, S., & Croff, J. M. (2023). Language considerations for children of parents with substance use disorders. Substance Abuse Treatment, Prevention, and Policy, 18(1), 28. <a href="https://doi.org/10.1186/s13011-023-00536-z">https://doi.org/10.1186/s13011-023-00536-z</a></p>
   <p>Canadian Fetal Alcohol Spectrum Disorder Research Network. (2023). Common messages guide. CanFASD. <a href="https://canfasd.ca/wp-content/uploads/publications/CanFASD-Common-Messages-Guide-2023_FINAL-1.pdf">https://canfasd.ca/wp-content/uploads/publications/CanFASD-Common-Messages-Guide-2023_FINAL-1.pdf</a></p>
@@ -129,5 +120,4 @@ NASEM also published a report, [*Using Population Descriptors in Genetics and Ge
   <p>Shi, H. D., McKee, S. A., & Cosgrove, K. P. (2022). Why language matters in alcohol research: Reducing stigma. Alcoholism, Clinical and Experimental Research, 46(6), 1103–1109. <a href="https://doi.org/10.1111/acer.14840">https://doi.org/10.1111/acer.14840</a></p>
   <p>Simmons, C., Conley, M. I., Gee, D. G., Baskin-Sommers, A., Barch, D. M., Hoffman, E. A., Huber, R. S., Iacono, W. G., Nagel, B. J., Palmer, C. E., Sheth, C. S., Sowell, E. R., Thompson, W. K., & Casey, B. J. (2021). Responsible use of open-access developmental data: The adolescent brain cognitive development (ABCD) study. Psychological Science, 32(6), 866–870. <a href="https://doi.org/10.1177/09567976211003564">https://doi.org/10.1177/09567976211003564</a></p>
   <p>Writing respectfully: Person-first and identity-first language. (n.d.). National Institutes of Health (NIH). Retrieved June 5, 2025, from <a href="https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language">https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language</a></p>
-</div>
 </div>
