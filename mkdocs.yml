@@ -57,7 +57,7 @@ nav:
     - Responsible Data Use: access/resp_data_use.md
     - Tools: access/tools.md
   - Study Standards & Conventions:
-    - General: standards/protocol.md
+    - Study Protocol: standards/protocol.md
     - Data:
         - Metadata: standards/metadata.md
         - Naming Conventions: standards/naming-conventions.md

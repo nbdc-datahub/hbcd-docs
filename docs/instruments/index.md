@@ -8,13 +8,9 @@
 
 # Study Instruments
 
-In this section we provide a brief overview of each study instrument, organized below by domain, provided in the data release, including, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Study protocols are also available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). 
+In this section we provide a brief overview of each study instrument provided in the data release, organized below by domain. Instrument documentat pages include, where applicable, details of implementation and data collection, scoring procedures, quality control procedures, data and responsible use warnings, and references. Study protocols are also available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). Note that HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details.
 
-HBCD Study data includes both tabulated and file-based data - see <a href="../datacuration/overview" target="_blank">Data Structure Overview</a> for details.
-
-Expand the sections below to see a list of measures associated with each domain included in the latest release data.
-
-<!-- <img src="../../images/instructions.png" width="90%" height="auto" class="center"> -->
+*Expand the sections below to see a list of measures associated with each domain included in the latest release data.*
 
 --------------
 
@@ -97,17 +93,17 @@ Expand the sections below to see a list of measures associated with each domain 
 
 ---
 
-<div id="mh" class="table-banner" onclick="toggleCollapse(this)">
+<div id="mh" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-people-arrows"></i></span>
   <span class="text-with-link">
-  <span class="text">Behavior & Caregiver-Child Interaction</span>
-  <a class="anchor-link" href="#mh" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
+    <span class="text">Behavior & Caregiver-Child Interaction</span>
+    <a class="anchor-link" href="#mh" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
   <tr>
