@@ -162,16 +162,7 @@
 
 ### Health V1- Health History (Healthhx)
 
-<div id="alert-healthv1" class="banner alert" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Responsible Use Warning</span>
-  <a class="anchor-link" href="#alert-healthv1" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ alert_banner() }}
 <div class="collapsible-content">
 <p>Amidst powerful societal expectations to ‘do what’s best for the baby’ during pregnancy (i.e. by stopping substance use), up to half of pregnancies in the United States are unintended with 1 in 5 unwanted (<a href="https://doi.org/10.1016/S2214-109X(20)30315-6">Bearak et al. 2020</a>). This discrepancy contributes to implicit bias against pregnant individuals who use substances as ‘not caring about their babies’ which is neither humane, nor evidence based (<a href="https://doi.org/10.1016/j.socscimed.2022.115071">Massey et al., 2022</a>). While cessation of substance use during pregnancy is universally recognized as optimal, the ability to make this “parental” sacrifice varies substantially between birthing individuals and within individuals between their different pregnancies (<a href="https://doi.org/10.1007/s00737-023-01396-z">Level et al., 2024</a>). Failure to recognize this inherent heterogeneity in pregnancy intention stigmatizes substance users who did not intend to want to become pregnant. Summarily, inclusion of pregnancy intention as a covariate in all studies that characterize prenatal substance exposure (in the absence of a strong justification otherwise) is thus strongly recommended to acknowledge myriad experiences of birthing parents who participated in HBCD who made this research possible.</p>
 </div>
