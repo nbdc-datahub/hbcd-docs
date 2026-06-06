@@ -14,7 +14,7 @@
 </tbody>
 </table>
 
-{{ warning_banner() }}
+{{ warn_banner() }}
 <div class="collapsible-content">
 <p><b>Incomplete Summary Scores</b><br>
 Item-level responses are provided for the whole cohort; summary scores are present for all participants except those with data obtained in the month prior to the cutoff date for data inclusion (June 1st, 2025). Summary scores from <a href="http://babysleep.com">babysleep.com</a> will be available in subsequent releases.</p> 

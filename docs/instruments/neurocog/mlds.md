@@ -19,7 +19,7 @@
 </tbody>
 </table>
 
-{{ warning_banner() }}
+{{ warn_banner() }}
 <div class="collapsible-content">
 <p>This measure assesses a child’s exposure to language to guide the selection of appropriate measures for their next in-person study visit. It estimates the percentage of time the child is exposed to languages in caregiving environments, based on caregiver reports. These estimates are approximate and also may not account for all languages the child encounters. The measure does not evaluate or quantify the child’s interactions or their expressive or receptive language skills in a given language, but rather provides an estimate of the time spent in environments where specific languages are spoken.</p> 
 </div>

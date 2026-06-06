@@ -44,12 +44,12 @@ def define_env(env):
 </table>
 """
     
-## ALERT BANNER
+## WARNING BANNER
     @env.macro
-    def alert_banner(
-        banner_id="alert",
-        text="Responsible Use Warning",
-        icon="fas fa-exclamation-circle"
+    def warn_banner(
+        banner_id="warn",
+        text="Data Warning",
+        icon="fas fa-exclamation-triangle"
     ):
         return f"""
 <div id="{banner_id}" class="banner {banner_id}" onclick="toggleCollapse(this)">
@@ -68,13 +68,13 @@ def define_env(env):
 <span class="arrow">▸</span>
 </div>
 """
-
-## WARNING BANNER
+    
+## ALERT BANNER
     @env.macro
-    def warning_banner(
-        banner_id="warning",
-        text="Data Warning",
-        icon="fas fa-exclamation-triangle"
+    def alert_banner(
+        banner_id="alert",
+        text="Responsible Use Warning",
+        icon="fas fa-exclamation-circle"
     ):
         return f"""
 <div id="{banner_id}" class="banner {banner_id}" onclick="toggleCollapse(this)">

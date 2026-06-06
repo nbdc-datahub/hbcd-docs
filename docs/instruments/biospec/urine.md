@@ -13,7 +13,7 @@
 </tbody>
 </table>
 
-{{ warning_banner() }}
+{{ warn_banner() }}
 <div class="collapsible-content">
 <p><b>USDTL Screening Updates</b><br>
 As of May 19, 2025, USDTL transitioned the initial urine screening test for fentanyl and sufentanil from LDTD to ELISA. As of November 2025, urine samples were no longer assayed for sufentanil, and USDTL simplified its specimen validity assessment, replacing a multi-parameter algorithm (including pH and nitrite) with a single creatinine-based measure to evaluate urine hydration.</p>

@@ -197,7 +197,7 @@ The downloadable participant list maps each **Main Child** to their correspondin
  - 33 **Main Child** participants do not yet have their paired **Sibling** included, and
  - 4 **Sibling** participants do not yet have their paired **Main Child** included.
 
-<div id="MBP-warning" class="banner warning" onclick="toggleCollapse(this)"> <span class="emoji">
+<div id="MBP-warning" class="banner warn" onclick="toggleCollapse(this)"> <span class="emoji">
 <i class="fas fa-exclamation-triangle"></i></span> <span class="text-with-link"> 
 <span class="text">Blank Fields in Sibling Data (Multiple Birth Cohorts)</span> 
 <a class="anchor-link" href="#MBP-warning" title="Copy link"> <i class="fa-solid fa-link"></i> </a> </span> <span class="arrow">▸</span> </div> <div class="collapsible-content"> <p><strong>In the current release, family/maternal-level (i.e. non-child-specific) instrument fields are only populated for the Main Child.</strong> These values should be identical for all siblings, and in a future release, <b>HBCD Main Child</b> data will be copied to the sibling profile (e.g. <b>HBCD Multiple Birth - Sibling</b>) for non-child-specific elements so that the information is populated consistently across participants. In addition, a new data dictionary element (<b>familyID</b>) will be incorporated to help identify siblings.</p>

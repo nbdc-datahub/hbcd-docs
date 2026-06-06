@@ -108,7 +108,7 @@ Inter-rater reliability was quantified using a two-way mixed-effects intraclass 
 <p>The ERICA assesses variations in child behavior, parenting, and the caregiver-child relationship and should be interpreted within the context of the child's age and developmental stage. This is not a clinical or diagnostic instrument.</p>
 </div>
 
-{{ warning_banner() }}
+{{ warn_banner() }}
 <div class="collapsible-content">
 <p><b>Integrated Analytic Dataset (REQUIRED)</b></p>
 <p>Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (<code>mh_cg_erica_rel_3_9m</code>) into the primary coding data (<code>mh_cg_erica_3_9m</code>). <b>Failure to integrate these data prior to analysis will result in incorrect results.</b> In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release.</p>

@@ -322,12 +322,6 @@ Release data now include the addition of the following instruments:
 <td><i class="fas fa-bug icon-bug"></i>Set values to null for participants missing all item responses that were incorrectly scored as <code>0</code></td>
 </tr>
 
-<!-- <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Child Demo</td>
-<td>see <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> ("Household Roster")</td>
-</tr> -->
-
 </tbody></table>
 
 

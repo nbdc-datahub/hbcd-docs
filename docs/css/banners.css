@@ -56,11 +56,11 @@
 /* =========================================================
    BANNER VARIANTS
 ========================================================= */
+.banner.warn {
+  background-color: #ffe10066;
+}
 .banner.alert {
   background-color: #be044537;
-}
-.banner.warning {
-  background-color: #ffe10066;
 }
 
 /* =========================================================
@@ -76,11 +76,11 @@
   font-size: 1.1em;
 }
 /* Variant icon colors */
+.banner.warn .emoji {
+  color: #ffa500;
+}
 .banner.alert .emoji {
   color: red;
-}
-.banner.warning .emoji {
-  color: #ffa500;
 }
 
 /* =========================================================
