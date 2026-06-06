@@ -1,6 +1,6 @@
 # Pregnancy & Infant Health Instruments
 
-Health V1 & V2 instruments include the following:
+**Health V1 & V2 instruments include the following:**
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -70,17 +70,18 @@ Health V1 & V2 instruments include the following:
 </tbody>
 </table>
 
-<div id="admin" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-info-circle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Quality Control & Administration Details</span>
-  <a class="anchor-link" href="#admin" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
+
+<div id="admin" class="banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa fa-info-circle"></i>   </span>
+<span class="text-with-link">
+    <span class="text">Quality Control & Administration Details</span>
+    <a class="anchor-link" href="#admin" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+<span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><b>Quality control procedures</b> include reviewing response distributions for outliers.</p>
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -160,17 +161,18 @@ Health V1 & V2 instruments include the following:
 ## Instrument Details
 
 ### Health V1- Health History (Healthhx)
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
+
+<div id="alert-healthv1" class="banner alert" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
   <span class="text-with-link">
   <span class="text">Responsible Use Warning</span>
-  <a class="anchor-link" href="#alert" title="Copy link">
+  <a class="anchor-link" href="#alert-healthv1" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="alert-collapsible-content">
+<div class="collapsible-content">
 <p>Amidst powerful societal expectations to ‘do what’s best for the baby’ during pregnancy (i.e. by stopping substance use), up to half of pregnancies in the United States are unintended with 1 in 5 unwanted (<a href="https://doi.org/10.1016/S2214-109X(20)30315-6">Bearak et al. 2020</a>). This discrepancy contributes to implicit bias against pregnant individuals who use substances as ‘not caring about their babies’ which is neither humane, nor evidence based (<a href="https://doi.org/10.1016/j.socscimed.2022.115071">Massey et al., 2022</a>). While cessation of substance use during pregnancy is universally recognized as optimal, the ability to make this “parental” sacrifice varies substantially between birthing individuals and within individuals between their different pregnancies (<a href="https://doi.org/10.1007/s00737-023-01396-z">Level et al., 2024</a>). Failure to recognize this inherent heterogeneity in pregnancy intention stigmatizes substance users who did not intend to want to become pregnant. Summarily, inclusion of pregnancy intention as a covariate in all studies that characterize prenatal substance exposure (in the absence of a strong justification otherwise) is thus strongly recommended to acknowledge myriad experiences of birthing parents who participated in HBCD who made this research possible.</p>
 </div>
 
@@ -184,35 +186,35 @@ Information on chronic conditions and sexually transmitted infections (STIs) dur
 
 ### Health V1- Illness (Illness)
 
-<div id="warning-illness" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning-illness" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
+<div id="warning-illness" class="banner warning" onclick="toggleCollapse(this)">
+<span class="emoji">    <i class="fas fa-exclamation-triangle"></i>   </span>
+<span class="text-with-link">
+    <span class="text">Data Warning</span>
+    <a class="anchor-link" href="#warning-illness" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+<span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
-<p>Illnesses are captured either from ICD codes (from BioPortal ICD) or WHO (World Health Organization) symptom codes, which were at times difficult for the participant to name or the HBCD staff to correctly find in the ICD or symptom database.</p>
+<div class="collapsible-content">
+<p>Illnesses are captured from either BioPortal ICD codes or WHO (World Health Organization) symptom codes, which were at times difficult for the participant to name or the HBCD staff to correctly find in the ICD or symptom database.</p>
 </div>
 
 Illness in pregnancy, including start and stop dates and whether the person had a fever.
 
 ### Health V1- ER Admissions (ERhosp)
 
-<div id="warning-erhosp" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning-erhosp" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
+<div id="warning-erhosp" class="banner warning" onclick="toggleCollapse(this)">
+<span class="emoji">    <i class="fas fa-exclamation-triangle"></i>   </span>
+<span class="text-with-link">
+    <span class="text">Data Warning</span>
+    <a class="anchor-link" href="#warning-erhosp" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+<span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p>Reasons for ER visit or hospitalization are captured from ICD codes (from BioPortal ICD), which were at times difficult for the participant to name or HBCD study staff to correctly find in the ICD database. This was particularly apparent for ER visits for routine care (no diagnosis) or false alarms (e.g., suspected water break), frequently coded as "Don’t know."</p>
 </div>
 
@@ -220,17 +222,17 @@ ER visit(s) or hospitalization(s) during pregnancy, including occurrence(s) and 
 
 ### Health V1- Medications (Meds)
 
-<div id="warning-meds" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning-meds" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
+<div id="warning-meds" class="banner warning" onclick="toggleCollapse(this)">
+<span class="emoji">    <i class="fas fa-exclamation-triangle"></i>   </span>
+<span class="text-with-link">
+    <span class="text">Data Warning</span>
+    <a class="anchor-link" href="#warning-meds" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+<span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p>Medication names are queried from the RxNORM database and reasons for medication use are captured from ICD codes (from BioPortal ICD). Reasons for use were sometimes difficult for the participant to name and/or HBCD study staff to find in the ICD database. This was apparent with aspirin for preeclampsia prevention, as there was not an option for coding preventive use. Aspirin was later moved to the prenatal vitamin section as a result. Additionally, medications used PRN (“as needed”) were difficult for participants to report. Finally, although not asked, some medications were coded with dose, but this was not asked and should not be used.</p>
 </div>
 
@@ -238,7 +240,7 @@ Medications used during pregnancy (since last menstrual period), including presc
 
 ### Health V2- Pregnancy (Healthv2 Preg)
 
-<div id="warning-healthv2-preg" class="warning-banner" onclick="toggleCollapse(this)">
+<div id="warning-healthv2-preg" class="banner warning" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
@@ -248,7 +250,7 @@ Medications used during pregnancy (since last menstrual period), including presc
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p>The same coding issues identified at V1, including difficulty with ICD codes (from BioPortal ICD) and medication names (from RxNORM) apply to this visit as well.</p>
 </div>
 
@@ -256,7 +258,7 @@ Health updates for the birth parent between enrollment and delivery, including: 
 
 ### Health V2- Infancy (Healthv2 Inf)
 
-<div id="warning-healthv2-inf" class="warning-banner" onclick="toggleCollapse(this)">
+<div id="warning-healthv2-inf" class="banner warning" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
@@ -266,11 +268,24 @@ Health updates for the birth parent between enrollment and delivery, including: 
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
-<p><b>Coding Issues</b><br>
-The same coding issues identified at V1, including difficulty with ICD codes (from BioPortal ICD) and medication names (from RxNORM) apply to this visit as well.</p>
-<p><b>Filters</b><br>
-Out-of-range values were filtered (i.e. changed to "n/a") for the following Health V2- Infancy fields:</b></p>
+<div class="collapsible-content">
+
+<div class="info-section">
+<div class="info-section-title">
+  Coding Issues
+</div>
+<p>
+The same coding issues identified at V1, including difficulty with ICD codes (from BioPortal ICD) and medication names (from RxNORM) apply to this visit as well.
+</p>
+</div>
+
+<div class="info-section">
+<div class="info-section-title">
+  Filters
+</div>
+<p>
+Out-of-range values were filtered (i.e. changed to "n/a") for the following Health V2- Infancy fields:
+</p>
 <table class="compact-table-no-vertical-lines">
 <thead>
   <tr> 
@@ -286,6 +301,7 @@ Out-of-range values were filtered (i.e. changed to "n/a") for the following Heal
   <tr><td><code>pex_bm_healthv2_inf_002__01</code></td><td>Calculated length at birth (cm)</td><td>30 - 130</td></tr>   
 </tbody>
 </table>
+</div>
 </div>
 
 Delivery and birth outcomes, including: infant characteristics (birth weight & length, duration of hospital stay); newborn conditions (birth defects, genetic diagnoses); medical interventions including NICU admission and length of stay, intubation, adverse outcomes (e.g. bronchopulmonary dysplasia, congenital syphilis), medications (name, indication, status), healthcare access, specialist visits, and newborn hearing test results.

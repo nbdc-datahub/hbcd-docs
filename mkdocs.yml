@@ -71,12 +71,12 @@ nav:
   - Study Instruments:
     - Overview: instruments/index.md
     - Age Variables: instruments/agevariables.md
-    - Demographics:
-        - Basic Demographics: instruments/demo/basicdemo.md
-        - Visit Level Data: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
         - Administrative:
             - Study Navigator Notes: instruments/admin/study-navigators.md
+        - Demographics:
+            - Basic Demographics: instruments/demo/basicdemo.md
+            - Visit Level Data: instruments/demo/visitinfo.md
         - Behavior & Caregiver-Child Interaction: 
             - CHAOS: instruments/bcgi/chaos.md
             - ecPROMIS Child-Caregiver Relationship: instruments/bcgi/ecpromis.md

@@ -40,8 +40,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 4px 10px;
-  font-family: Lato, sans-serif;
+  padding: 4px 10px !important;
   font-size: 0.9em;
   font-weight: 700;
   line-height: 1.1;
@@ -51,6 +50,7 @@
   gap: 8px;
   background-color: #dde6fe;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 /* =========================================================
@@ -73,7 +73,7 @@
   justify-content: center;
   color: #199bd6;
   width: 1.8rem;
-  font-size: 1.1rem;
+  font-size: 1.1em;
 }
 /* Variant icon colors */
 .banner.alert .emoji {
@@ -102,22 +102,20 @@
   display: none;
   max-height: 0;
   overflow: hidden;
-  padding: 0;
   border: none;
   margin-bottom: 0;
   font-size: 0.9em;
 }
-.collapsible-content > *:first-child {
-  margin-top: 1em;
-}
 .collapsible-content.open {
   display: block;
   max-height: 500px; 
-  padding: 0 14px;
+  padding: 10px 14px; /* REQUIRED FOR SPACING BETWEEN BANNERS */
   border: 1px solid #3333331a;
   border-top: none;
   margin-bottom: 10px;
+  overflow: hidden;
 }
+
 .collapsible-content p {
   margin: 0.8em 0;
   font-size: 1em;
@@ -135,6 +133,9 @@
   width: 100%;
   background-color: #ffffff;
 }
+
+
+
 /* Table-specific collapsible */
 /* .collapsible-content.table {
   width: 100%;

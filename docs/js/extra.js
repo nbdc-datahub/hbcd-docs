@@ -38,14 +38,6 @@ function expandCollapsibleById(id) {
   if (element && (element.classList.contains('banner'))) {
     const collapsibleContent = element.nextElementSibling;
     const arrow = element.querySelector(['.arrow']);
-  
-  // if (element && (element.classList.contains('notification-banner') || 
-  //                 element.classList.contains('table-banner') ||
-  //                 element.classList.contains('warning-banner') ||
-  //                 element.classList.contains('alert-banner'))) {
-  //   const collapsibleContent = element.nextElementSibling;
-  //   const arrow = element.querySelector(['.arrow']);
-
     if (collapsibleContent && !collapsibleContent.classList.contains('open')) {
       collapsibleContent.classList.add('open');
       if (arrow) arrow.classList.add('rotate');
@@ -61,27 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
     expandCollapsibleById(hash);
   }
 });
-
-// // Expand collapsible sections with arrows that have the "open-arrow" class
-// document.addEventListener('DOMContentLoaded', function () {
-//   const openArrows = document.querySelectorAll('.open-arrow');
-
-//   openArrows.forEach(arrow => {
-//     arrow.classList.add('rotate');
-
-//     const content = arrow.closest('.collapsible-header')?.nextElementSibling;
-
-//     if (content && content.classList.contains('collapsible-content')) {
-//       content.classList.add('open');
-//     }
-//   });
-
-//   // Auto-expand specific banner if navigated via external link
-//   const hash = window.location.hash.substring(1);
-//   if (hash) {
-//     expandCollapsibleById(hash);
-//   }
-// });
 
 // Listen for hash changes to expand collapsible sections
 window.addEventListener('hashchange', () => {

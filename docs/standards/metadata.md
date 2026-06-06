@@ -110,13 +110,11 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <tr class="table-group-row">
   <td colspan="3">Table-level Information</td>
 </tr>
-
 <tr>
   <td><code>table_label</code></td>
   <td>Table label</td>
   <td>Human-readable label for table name (e.g. <i>Demographics</i>)</td>
 </tr>
-
 <tr>
   <td><code>table_name</code><i class="fa-solid fa-lock table-icon"></i></td>
   <td>Table name</td>
