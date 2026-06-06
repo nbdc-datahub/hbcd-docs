@@ -39,11 +39,13 @@ The Olink dataset is provided as  <a href="../../../datacuration/file-based-data
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Reference: <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview</a></p><br>
+<div class="table-legend">
+  <span class="legend-item">
+  <i class="fa-solid fa-arrows-left-right legend-icon"></i>
+     = Column name is prefixed with assay name in wide file version <i>(<code>{ASSAY}_{COLUMN}</code>)</i>
+  </span>
+</div>
 
-<p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
-<span style="color: teal;">[WIDE]</span> = Column name is prefixed with assay name in the wide file version <i>(<code>{ASSAY}_{COLUMN}</code>)</i>
-</p>
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
@@ -62,14 +64,25 @@ The Olink dataset is provided as  <a href="../../../datacuration/file-based-data
 <tr><td><code>Assay</code></td><td>Assay/control name</td></tr>
 <tr><td><code>AssayType</code></td><td>assay, ext_ctrl, inc_ctrl, amp_ctrl</td></tr>
 <tr><td><code>Block</code></td><td>Olink plate block</td></tr>
-<tr><td><code>Count</code> <b style="font-size: 0.9em; color: teal;">[WIDE]</b></td><td>Raw oligo sequence count value <i>(wide format: <code>{ASSAY}_Count</code>)</i></td></tr>
-<tr><td><code>ExtNPX</code> <b style="font-size: 0.9em; color: teal;">[WIDE]</b></td><td>Extension-normalized count value <i>(wide format: <code>{ASSAY}_ExtNPX</code>)</i></td></tr>
-<tr><td><code>NPX</code> <b style="font-size: 0.9em; color: teal;">[WIDE]</b></td><td>Protein eXpression normalized by median plate intensity <i>(wide format: <code>{ASSAY}_NPX</code>)</i></td></tr>
-<tr><td><code>PCNormalizedNPX</code> <b style="font-size: 0.9em; color: teal;">[WIDE]</b></td><td>Plate-control normalized NPX-like value <i>(wide format: <code>{ASSAY}_PCNormalizedNPX</code>)</i></td></tr>
+<tr><td><code>Count</code> <i class="fa-solid fa-arrows-left-right table-icon"></i>
+</td><td>Raw oligo sequence count value <i>(wide format: <code>{ASSAY}_Count</code>)</i></td></tr>
+<tr>
+<td><code>ExtNPX</code> 
+<i class="fa-solid fa-arrows-left-right table-icon"></i></td>
+<td>Extension-normalized count value <i>(wide format: <code>{ASSAY}_ExtNPX</code>)</i></td></tr>
+<tr><td><code>NPX</code>
+<i class="fa-solid fa-arrows-left-right table-icon"></i>
+</td>
+<td>Protein eXpression normalized by median plate intensity <i>(wide format: <code>{ASSAY}_NPX</code>)</i></td></tr>
+<tr><td><code>PCNormalizedNPX</code> 
+<i class="fa-solid fa-arrows-left-right table-icon"></i>
+</td>
+<td>Plate-control normalized NPX-like value <i>(wide format: <code>{ASSAY}_PCNormalizedNPX</code>)</i></td></tr>
 <tr><td><code>AssayQC</code></td><td>Assay-level QC flag</td></tr>
 <tr><td><code>SampleQC</code></td><td>Sample-level QC flag</td></tr>
 </tbody>
 </table>
+<p>Reference: <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview</a></p>
 </div>
 
 ## Olink Panel Quick Guide

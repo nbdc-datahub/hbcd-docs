@@ -92,6 +92,7 @@ h5 {
   margin-right: 0.1em;
   margin-left: 0.8em;
   color: #199bd6;
+  font-size: 1.1em;
 }
 
 /* TABLE LEGENDS & ICONS */
@@ -141,7 +142,7 @@ h5 {
 /* PILL BADGE OR PILL BADGE WITH EMOJI */
 .pill-badge {
   display: inline-block;
-  background-color: #00aeaec0;
+  background-color: #199bd6;
   color: white;
   font-weight: 500;
   border-radius: 12px;

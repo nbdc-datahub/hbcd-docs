@@ -4,7 +4,7 @@ table {
     width: 100%;
     table-layout: fixed;
     overflow: visible !important; /* needed in combo with logic below for tooltips to overflow outside of table container */
-    font-size: 0.95em;
+    font-size: 1.0em;
 }
 
 /* Allow tooltips to overflow outside of the table container */
@@ -19,21 +19,6 @@ th, td {
     word-wrap: break-word !important;
     white-space: normal !important;
 }
-
-/* Text + anchor stay aligned */
-/* .table-banner .text-with-link {
-display: inline-flex;
-align-items: center;
-gap: 0.35rem;
-}
-.table-banner .emoji {
-flex-shrink: 0;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 1.4em; 
-color: #199bd6;
-} */
 
 /* Table with no vertical lines */
 .table-no-vertical-lines {
@@ -142,10 +127,9 @@ color: #199bd6;
   letter-spacing: 0.02em;
 }
 
-
 /* ICONS INCLUDED IN TABLE ROWS TO RIGHT OF TEXT */
 .table-icon {
-  margin-left: 0.5em;
+  margin-left: 0.4em;
   font-size: 1em;
   color: #199bd6;
 }
