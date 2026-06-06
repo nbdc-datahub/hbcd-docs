@@ -24,17 +24,8 @@
 </tbody>
 </table>
 
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Responsible Use Warning</span>
-  <a class="anchor-link" href="#alert" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="alert-collapsible-content">
+{{ alert_banner() }}
+<div class="collapsible-content">
 <p>The Pearson products, including the Vineland-3, are under copyright agreement. Data use is as signified by the test publisher, <a href="https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Behavior/Vineland-Adaptive-Behavior-Scales-%7C-Third-Edition/p/100001622?tab=overview">Pearson Education, Inc.</a>.</p>
 </div>
 

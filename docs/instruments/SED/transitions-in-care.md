@@ -23,17 +23,8 @@
 </tbody>
 </table>
 
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Responsible Use Warning</span>
-  <a class="anchor-link" href="#alert" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="alert-collapsible-content">
+{{ alert_banner() }}
+<div class="collapsible-content">
 <p>TIC information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”). Small cells increase the risk that a participant can be identified. Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives. The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.</p> 
 </div>
 

@@ -7,29 +7,21 @@
 </style>
 
 # Functional MRI
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Responsible Use Warning</i></span>
-  <a class="anchor-link" href="#alert" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="alert-collapsible-content">
+
+{{ alert_banner() }}
+<div class="collapsible-content">
 <p>Head motion is a serious issue in neuroimaging, especially for resting state fMRI, as it creates brain-wide artifactual effects such as inflated short-distance connectivity and attenuated long-distance connectivity (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al. 2012</a>). Researchers employ a variety of strategies to mitigate head motion during acquisition and processing (<a href="https://doi.org/10.1016/j.neuroimage.2013.08.048">Power et al. 2014</a>; <a href="https://doi.org/10.1016/j.neuroimage.2014.10.044">2015</a>; <a href="https://doi.org/10.1016/j.neuroimage.2012.08.052">Satterthwaite et al. 2013</a>; <a href="https://doi.org/10.1093/cercor/bhw253">Siegel et al. 2017</a>; <a href="https://doi.org/10.1016/j.neuroimage.2020.116866">Gratton et al. 2020</a>). This includes motion censoring (discarding individual frames that are proximal to motion events within a run) and/or excluding entire runs due to high motion. These strategies may lead to the exclusion of some participants from further analysis due to lack of sufficient data.</p>
 <p>Levels of head motion differ according to demographic factors such as sex, race/ethnicity, and SES (<a href="https://doi.org/10.1007/s11682-022-00665-2">Cosgrove et al., 2022</a>). Therefore, mitigation strategies for head motion introduce questions around fairness and differential exclusions across demographic groups. In addition, motion censoring causes sessions to vary by the amount of data remaining. Such variability may continue to inflate findings especially in the presence of conditions that may correlate with the motion artifact like autism or ADHD (<a href="https://doi.org/10.1093/cercor/bhw403">Eggebrecht, 2017</a>). The amount of data remaining influences the variation in the connectivity calculations by affecting the degrees of freedom. Therefore, even after motion censoring, issues concerning fairness may persist when examining factors that might be affected by motion like sex, race/ethnicity, SES, and BMI (<a href="https://doi.org/10.1007/s11682-022-00665-2">Cosgrove et al., 2022</a>). One strategy that avoids this confound is to strictly control the degrees of freedom, where functional connectivity measures are calculated with the exact same amount of data. Researchers should assess whether control of artifactual effects of head motion effects can be achieved by alternative means that mitigate this impact. Examples of such strategies could include data augmentation approaches such as sampling from other datasets, data processing strategies like the include use of ICA-based denoising (<a href="https://doi.org/10.1016/j.neuroimage.2015.02.064">Pruim et al., 2015a</a>; <a href="https://doi.org/10.1016/j.neuroimage.2015.02.063">2015b</a>), use of bootstrap aggregation (<a href="https://doi.org/10.1101/2024.06.22.600221">Ramduny et al., 2024</a>), or the creation of “pseudo-rest” by removing task signals from the task data (<a href="https://doi.org/10.1016/j.neuroimage.2006.11.051">Fair et al. 2007</a>), or post-hoc approaches like propensity weighting.</p> 
 <p>Researchers interested in examining brain-behavior associations or multivariate predictions should follow strategies such as those in <a href="https://doi.org/10.1093/cercor/bhw403">Eggebrecht 2017</a> to: 1) assess how missing data impacts dependent, independent variables and covariates, 2) examine the association between the degrees of freedom and non-FC variables, 3) use trimmed FC measures when needed to mitigate artifacts due to data quality.</p>
 </div>
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
+<div id="warning" class="banner warning" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
 <span class="text-with-link"><span class="text">Data Warning</span>
 <a class="anchor-link" href="#warning" title="Copy link">
 <i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <h3>V02: Use Derivatives Processed with M-CRIB-S (<code>hash-0f306a2f</code>)</h3>
 <p><b>Recommendation:</b> Use M-CRIB-S derivatives for all neonatal (V02; 0–1 month) analyses (<code>nibabies-0f306a2f</code>/<code>xcp_d-0f306a2f+0ef9c88a</code>)</p>
 <p>V02 data were processed in Infant fMRIPrep via two separate surface reconstruction workflows, M-CRIB-S (<code>hash-0f306a2f</code>) and Infant FreeSurfer (<code>hash-2afa9081</code>) (<a href="#m-crib-s-freesurfer">details</a>). Expert review and BrainSwipes QC consistently showed higher-quality surfaces from M-CRIB-S. This is expected, as M-CRIB-S uses T2w images, which are much higher contrast than the T1w (on which FreeSurfer relies) in neonates. <a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a> report optimal performance for M-CRIB-S ≤5 months and Infant FreeSurfer ≥3 months.</p>

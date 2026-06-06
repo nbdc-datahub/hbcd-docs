@@ -14,7 +14,7 @@ This section summarizes the four EEG tasks collected during HBCD study visits V0
  
 The Auditory mismatch negativity (**MMN**) Task (v.11.29.23) facilitates examining auditory evoked potentials and habituation/dishabituation to auditory stimuli. The MMN captures differences in neural responses to standard (“ba”) and deviant (“da”) stimuli. From this task the MMN difference wave is computed, which is also known as the Mismatch Response (MMR). The amplitude/latency of this difference wave has been linked to language ([Choudhury & Benasich, 2011](https://doi.org/10.1016/j.clinph.2010.05.035)), temperament/personality ([Gurrera et al., 2001](https://doi.org/10.1016/S0006-3223(00)01067-2); [Marshall et al., 2009](https://doi.org/10.1111/j.1467-7687.2008.00808.x)), internalizing problems ([Reeb-Sutherland et al., 2009](https://doi.org/10.1111/j.1469-7610.2009.02170.x)), externalizing/attention problems ([Gumenyuk et al., 2005](https://doi.org/10.1016/j.neulet.2004.10.081)), and disorders including autism ([Lepistö et al., 2005](https://doi.org/10.1016/j.brainres.2005.10.052); [Schwartz et al., 2018](https://doi.org/10.1016/j.neubiorev.2018.01.008)) and reading ability/dyslexia ([Leppänen et al., 2010](https://doi.org/10.1016/j.cortex.2010.06.003); [Norton, Beach, et al., 2021](https://doi.org/10.3389/fnhum.2021.624617)).
 
-<div id="warning-mmn" class="warning-banner" onclick="toggleCollapse(this)">
+<div id="warning-mmn" class="banner warning" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
@@ -24,7 +24,7 @@ The Auditory mismatch negativity (**MMN**) Task (v.11.29.23) facilitates examini
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p><b>Change in ISI Between Visits</b><br>
 The interstimulus interval (ISI) for the Auditory Mismatch Negativity task changed between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details.</p>
 <p><b>Stimtracker Artifact</b><br>
@@ -100,7 +100,7 @@ The MMN, VEP, and FACE task data may contain an artifact originating from the St
 
 The Faces task (**FACE**) (v.11.29.23) assesses child and infant face processing abilities as well as the underlying neural activity supporting face and object processing. ERPs are computed as a function of repeated presentation of faces and objects. The ERPs index different stages of processing including attention, perception, categorization, individuation and memory. The ERP components elicited by the Faces task are the P1, N290, and P400 components. 
 
-<div id="warning-face" class="warning-banner" onclick="toggleCollapse(this)">
+<div id="warning-face" class="banner warning" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
@@ -110,7 +110,7 @@ The Faces task (**FACE**) (v.11.29.23) assesses child and infant face processing
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p><b>Stimtracker Artifact</b><br>
 The MMN, VEP, and FACE task data may contain an artifact originating from the StimTracker device used for stimulus timing - see more information on this <a href="../qc/#stimtracker-artifact-detection" target="_blank">here</a>.</p>
 </div>
@@ -181,7 +181,7 @@ The MMN, VEP, and FACE task data may contain an artifact originating from the St
 
 The Visual Evoked Potential Task (**VEP**) (v.11.29.23) measures development of visual cortex and response to stimuli, reflecting underlying cortical development. VEP amplitude and latency decreases with age during the first three years of life. The VEP has been associated with concurrent and later developmental outcomes as a function of prenatal substance exposures ([Margolis et al., 2024](https://psycnet.apa.org/record/2024-66755-001)), early visual enrichment or deprivation ([Jensen et al., 2019](https://doi.org/10.1038/s41598-019-39242-x)), vision system maturation ([Lippé et al., 2009](https://doi.org/10.3389/neuro.09.048.2009)), neurodevelopmental disorders (e.g., ASD and ADHD; [Cremone-Caira et al., 2023](https://doi.org/10.1007/s10803-023-06005-7); [Nazhvani et al., 2013](https://doi.org/10.1016/j.clineuro.2013.08.009)), and reading and learning disabilities ([Shandiz et al., 2017](https://doi.org/10.4103/jovr.jovr_106_16)). The morphology of the VEP likely reflects varying degrees of synaptic efficiency and as such, can be used as a readout of general cortical function. 
 
-<div id="warning-vep" class="warning-banner" onclick="toggleCollapse(this)">
+<div id="warning-vep" class="banner warning" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
@@ -191,7 +191,7 @@ The Visual Evoked Potential Task (**VEP**) (v.11.29.23) measures development of 
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p><b>Stimtracker Artifact</b><br>
 The MMN, VEP, and FACE task data may contain an artifact originating from the StimTracker device used for stimulus timing - see more information on this <a href="../qc/#stimtracker-artifact-detection" target="_blank">here</a>.</p>
 </div>
@@ -250,7 +250,7 @@ The MMN, VEP, and FACE task data may contain an artifact originating from the St
 
 The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the development of large-scale neural networks during infancy and early childhood via information about neural oscillations measured in EEG power across the scalp. Developmental changes in oscillatory activity reflect underlying developing large-scale neural networks associated with early self-regulatory, cognitive, and affective processes and developmental outcomes ([Gabard-Durnam et al., 2019](https://doi.org/10.1038/s41467-019-12202-9); [Jones et al., 2020](https://doi.org/10.1038/s41598-020-67687-y); [Whedon et al., 2020](https://doi.org/10.1016/j.bandc.2020.105636)). The metrics derived from the resting EEG signal include power across the frequency spectrum ([Gabard-Durnam et al., 2019](https://doi.org/10.1038/s41467-019-12202-9)) and relative power between different scalp locations ([Davidson & Fox, 1982](https://doi.org/10.1126/science.7146906)).
 
-<div id="warning-rs" class="warning-banner" onclick="toggleCollapse(this)">
+<div id="warning-rs" class="banner warning" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
@@ -260,7 +260,7 @@ The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the de
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p><b>Change in Video Content Between Visits</b><br>
 The video content for the Resting State task changed between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details. Also note that RS is not a true resting state as there is a visual stimulus present.</p>
 </div>

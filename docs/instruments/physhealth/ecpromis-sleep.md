@@ -42,16 +42,7 @@
 </tbody>
 </table>
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</i></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ warning_banner() }}
 <div class="warning-collapsible-content">
 <p>Note that summary scores are currently absent from the release data and will be added in the future - see <a href="../../../changelog/issues-updates/#pending-updates" target="_blank">Pending Updates</a>.</p>
 </div>

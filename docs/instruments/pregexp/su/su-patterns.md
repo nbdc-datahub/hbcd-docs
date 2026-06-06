@@ -13,17 +13,8 @@
 <td>Response distributions are reviewed for outliers and additionally cross-checked with ASSIST V1/V2 to ensure consistency in reported substances.</td></tr>
 </tbody></table>
 
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Responsible Use Warning</span>
-  <a class="anchor-link" href="#alert" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="alert-collapsible-content">
+{{ alert_banner() }}
+<div class="collapsible-content">
 <p>HBCD participants are relying on data users to be respectful and to minimize potential harms (such as stigmatization) when analyzing data and reporting analyses. For a brief discussion of how stigma and stereotyping affect people with substance use disorder, see this National Institute of Drug Abuse (NIDA) website: <a href="https://nida.nih.gov/research-topics/stigma-discrimination#address">https://nida.nih.gov/research-topics/stigma-discrimination#address</a>.  </p>
 <p>When using these data, please consider the context in which HBCD collected data on the use of substances. HBCD focuses on the impact of exposures on child development; therefore, substance exposure was assessed rather than the legality of the drug or its misuse. There is a significant difference between the “use” of a substance, which may or may not be legal, and the “misuse” of that substance. It is not, for instance, appropriate to describe participants who used substances as “addicts” or as having a “substance use disorder” because we did not collect information on such diagnoses. A number of drugs for which we gathered data, although open to misuse, could have been prescribed. These include methadone, buprenorphine, Adderall, and even certain cannabis products. While a participant’s use may or may not have been consistent with prescribed indications, we have not collected such information, nor have we collected information addressing the motivation for use.   </p>
 <p>For recommended language related to substance use, please see the NIDA website: <a href="https://nida.nih.gov/nidamed-medical-health-professionals/health-professions-education/words-matter-terms-to-use-avoid-when-talking-about-addiction"><i>Words Matter - Terms to Use and Avoid When Talking About Addiction</i></a>.</p>

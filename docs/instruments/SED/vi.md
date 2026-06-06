@@ -17,17 +17,8 @@
 </tbody>
 </table>
 
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Responsible Use Warning</span>
-  <a class="anchor-link" href="#alert" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="alert-collapsible-content">
+{{ alert_banner() }}
+<div class="collapsible-content">
 <p>When using HBCD data, all data users must agree to responsible use as described in the data use certification (DUC). When conceptualizing studies, analyzing data, and communicating analyses hat address socially sensitive topics, it is critical that data users consider strategies to avoid stigmatization of any groups and avoid perpetuating harmful biases.</p> 
 <p>Immigration status was not collected as part of this measure, and data users should not infer or assume immigration status in their analyses or interpretations.</p> 
 <p>Some variables in this release have small cell sizes. As a condition of using these data, specified in the DUC, you agree not to identify any individual from whom data was obtained and not to identify their relatives. You agree to a minimum cell threshold of 10 in any public reporting of the data (publications, posters, or other presentations). Protecting participants’ anonymity demonstrates respect for them and minimizes their research-related risks.</p>

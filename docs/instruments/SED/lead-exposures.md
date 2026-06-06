@@ -17,17 +17,8 @@
 </tbody>
 </table>
 
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Responsible Use Warning</span>
-  <a class="anchor-link" href="#alert" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="alert-collapsible-content">
+{{ alert_banner() }}
+<div class="collapsible-content">
 <p>Incidents of pediatric lead poisoning have previously been linked to consumption of certain imported candies and food colorings, traditional remedies, or food storage vessels (<a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm">CDC 1998</a>; <a href="https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html">CDC 2025</a>). The identification of these specific sources in the Lead Exposures questionnaire is based on documented cases of lead poisoning tied to specific products and should not be interpreted as highlighting any group as having particularly high risk as a result of their race or ethnicity. It is important to recognize that products and sources others than those specifically listed may contain hazardous levels of lead.</p>
 </div>
 

@@ -10,24 +10,7 @@
 
 ## MRI Scan Session & Data Summary Forms
 
-<table class="table-no-vertical-lines">
-<tbody>
-<tr><td><b>Table Name</b></td>
-<td>
-  MRI Scan Session Summary Form: <code>mri_ra_chkl_scan</code><br>
-  MRI Data Summary Form: <code>mri_ra_chkl_data</code>
-</td>
-</tr>
-<tr><td><b>Construct</b></td><td>Pre-/Post-MRI Tech Checklists 1 <i>(Scan Session)</i> & 2 <i>(Data)<i></td></tr>
-<tr><td><b>Study Visits</b></td><td>V02 - V06</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: NA (MRI Technician Form)<br>
-<b>Method</b>: HBCD Study staff (in person)</td></tr>
-<td><b>Quality Control</b></td>
-<td>Brief visual review of data prior to release to check for errors and missingness</td></tr>
-</tbody>
-</table>
+{{ overview_table(instruments.mri_forms) }}
 
 MRI summary forms are checklists completed by MRI technicians before and after each scan session. Expand the sections below for an overview of the information included in each form.
 
@@ -121,19 +104,7 @@ MRI summary forms are checklists completed by MRI technicians before and after e
 
 ## Pre-Scan Questionnaire
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>mri_ra_prep</code></td></tr>
-<tr><td><b>Construct</b></td><td>Infant Sleep Environment</td></tr>
-<tr><td><b>Study Visits</b></td><td>V02 - V06</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Primary Caregiver on Child<br>
-<b>Method</b>: HBCD Study staff (remote)</td></tr>
-<td><b>Quality Control</b></td>
-<td>Data dashboard monitored for variable missingness, coding errors, and data consistency</td></tr>
-</tbody>
-</table>
+{{ overview_table(instruments.prescan_q) }}
 
 The Pre-Scan Questionnaire is completed by HBCD Study staff when planning MRI procedures. It captures caregiver-reported sleep routines, habits, and environment. **Note that missingness may vary across sites.** Expand the section below for a summary of key item questions and response options. 
 

@@ -100,20 +100,16 @@
 ========================================================= */
 .collapsible-content {
   display: none;
-  max-height: 0;
-  overflow: hidden;
   border: none;
   margin-bottom: 0;
   font-size: 0.9em;
 }
 .collapsible-content.open {
   display: block;
-  max-height: 500px; 
   padding: 10px 14px; 
   border: 1px solid #3333331a;
   border-top: none;
   margin-bottom: 10px;
-  overflow: hidden;
 }
 
 .collapsible-content p {
@@ -130,17 +126,8 @@
   line-height: 1.2;
 }
 .collapsible-content table {
-  width: 100%;
-  background-color: #ffffff;
-}
-
-
-
-/* Table-specific collapsible */
-/* .collapsible-content.table {
-  width: 100%;
-  overflow-x: auto;
-  background-color: #d0dff02c;
+  width: 100% !important;
+  font-size: 1.0em;
 }
 
 /* =========================================================

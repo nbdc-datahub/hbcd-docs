@@ -27,23 +27,15 @@
 </tbody></table>
 
 
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Responsible Use Warning: V1 & V2</i></span>
-  <a class="anchor-link" href="#alert" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="alert-collapsible-content">
-<p>Responsible use of prenatal drug exposure data requires thoughtful interpretation of exposure-related outcomes in the context of measured and unmeasured confounders. These confounders include, but are not limited to, phenotypic risks associated with persistent alcohol, tobacco, and other drug use during pregnancy by birthing parents (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2010</a>), and confounding by familial risk from within-family studies (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>).</p>
+{{ alert_banner() }}
+<div class="collapsible-content">
+<p><b>V1 & V2</b><br>
+Responsible use of prenatal drug exposure data requires thoughtful interpretation of exposure-related outcomes in the context of measured and unmeasured confounders. These confounders include, but are not limited to, phenotypic risks associated with persistent alcohol, tobacco, and other drug use during pregnancy by birthing parents (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2010</a>), and confounding by familial risk from within-family studies (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>).</p>
 <p>Finally, unwarranted speculation about ‘neural bases of behavior’ form differences in neuroimaging between exposed and unexposed children in the absence of differences in behavioral performance can exacerbate stigma already faced by birthing parents with substance use disorders and their children (<a href="https://doi.org/10.1016/j.ntt.2015.07.002">McAllister & Hart 2015</a>).</p> 
 </div>
 
 {{ warning_banner() }}
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p>It was difficult for some participants to self-report the typical size of a single drink (in oz) to capture ‘standard drinks’ of alcohol for ASSIST, leading to some reports falling outside the expected range. Similarly, reporting the frequency of use for substances like electronic cigarette devices proved difficult, resulting in outliers. While sites were queried on these outliers, participants could not always be re-contacted for clarification.</p> 
 </div>
 

@@ -27,6 +27,16 @@ ecpromis_peer:
       <li>Review summary statistics (item frequencies, age, prorated scores)</li>
       </ul>
 
+mri_forms:
+  name: MRI Scan Session & Data Summary Forms
+  acronym: 
+  domain: Tabular Imaging
+  table_name: mri_ra_chkl_scan / mri_ra_chkl_data
+  construct: Pre-/Post-MRI Tech Checklists 1 <i>(Scan Session)</i> & 2 <i>(Data)<i>
+  visits: V02 - V06
+  administration: Checklists completed by MRI technicians (child-specific)
+  qc: Brief visual review of data prior to release to check for errors and missingness
+
 olink:
   name: Olink Explore 384 Inflammation 1 Panel
   acronym: Olink
@@ -40,6 +50,17 @@ olink:
   visits: V01
   administration: Direct assessment of pregnant participant
   qc: Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview (<em>section 7.1 Internal controls</em>)</a> for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of <em>0</em> for <code>{ASSAY}_Count</code> and <em>NA</em> for <code>ExtNPX</code>, <code>NPX</code>, and <code>PCNormalizedNPX</code>.
+
+prescan_q:
+  name: Pre-Scan Questionnaire
+  acronym: 
+  domain: Tabular Imaging
+  table_name: mri_ra_prep
+  construct: Infant Sleep Environment
+  visits: V02 - V06
+  administration: Primary caregiver interview (child-specific)
+  qc: Data dashboard monitored for variable missingness, coding errors, and data consistency
+
 
   # qc: <b>Olink QC</b><br>
   #     Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview (<em>section 7.1 Internal controls</em>)</a> for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of <em>0</em> for <code>{ASSAY}_Count</code> and <em>NA</em> for <code>ExtNPX</code>, <code>NPX</code>, and <code>PCNormalizedNPX</code>.
