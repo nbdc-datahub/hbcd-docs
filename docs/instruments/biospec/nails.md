@@ -56,7 +56,7 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
 }
 </style>
 
-<div id="nails-table1" class="table-banner" onclick="toggleCollapse(this)">
+<div id="nails-table1" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
   <span class="text">Nail Assay Thresholds</span>
@@ -66,7 +66,7 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>The detection window for all analytes is 3-6 and 10-14 months for finger and toe nails, respectively, with the exception of Ethyl glucuronide (finger nails: 3; toe nails: no consensus).</p>
 <table class="compact-table-no-vertical-lines analyte-table">
 <thead>
@@ -99,7 +99,7 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
 </table>
 </div>
 
-<div id="nails-table2" class="table-banner" onclick="toggleCollapse(this)">
+<div id="nails-table2" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
   <span class="text">Mapping from Class to Screening Tests and Confirmatory Tests for Nails</span>
@@ -109,7 +109,7 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><i>See more easily parsable table <a href="../nails_table2.html">here</a>.</i></p>
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -216,17 +216,8 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
 </table> 
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+{{ scoring_banner() }}
+<div class="collapsible-content">
 <p><b>Final results for each substance follow these rules:</b></p>
 <ul>
   <li>

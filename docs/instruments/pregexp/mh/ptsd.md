@@ -59,30 +59,12 @@ Thus, the scales are as follows:
 > People sometimes have problems after extremely stressful events or experiences. How much have you been bothered during the PAST SEVEN (7) DAYS by each of the following problems that occurred or became worse after an extremely stressful event/experience?
 
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ mods_banner() }}
 <div class="collapsible-content">
 <p>In the HBCD study, a ‘Decline to answer’ option was added to all items. A ‘Don’t know’ option was also available early in data collection, but was later removed.</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>Please see documentation linked above for scoring.</p>
 <p><b>NSESS-PTSD</b><br>

@@ -170,7 +170,7 @@ In this section we provide a brief overview of each study instrument provided in
 </div>
 
 <!-- BIOSPEC -->
-<div id="biospec" class="table-banner" onclick="toggleCollapse(this)">
+<div id="biospec" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-vial"></i></span>
   <span class="text-with-link">
   <span class="text">Biospecimen & Omics</span>
@@ -180,7 +180,7 @@ In this section we provide a brief overview of each study instrument provided in
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 
 <p style="font-size: 1em; color: #555; text-align: center;">
 <i class="fas fa-layer-group table-icon"></i>&nbsp;=&nbsp;Concatenated data <a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>(see details)</i></a>
@@ -227,7 +227,7 @@ In this section we provide a brief overview of each study instrument provided in
 </div>
 
 <!-- NCL -->
-<div id="ncl" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ncl" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-puzzle-piece"></i></span>
   <span class="text-with-link">
   <span class="text">Neurocognition & Language</span>
@@ -237,7 +237,7 @@ In this section we provide a brief overview of each study instrument provided in
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -293,7 +293,7 @@ In this section we provide a brief overview of each study instrument provided in
 </div>
 
 <!-- PHYSICAL HEALTH -->
-<div id="ph" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ph" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-heart-pulse"></i></span>
   <span class="text-with-link">
   <span class="text">Physical Health</span>
@@ -303,7 +303,7 @@ In this section we provide a brief overview of each study instrument provided in
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -373,7 +373,7 @@ In this section we provide a brief overview of each study instrument provided in
 </div>
 
 <!-- PEX -->
-<div id="pex" class="table-banner" onclick="toggleCollapse(this)">
+<div id="pex" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-baby"></i></span>
   <span class="text-with-link">
   <span class="text">Pregnancy & Exposure, Including Substance Use</span>
@@ -383,7 +383,7 @@ In this section we provide a brief overview of each study instrument provided in
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -491,7 +491,7 @@ In this section we provide a brief overview of each study instrument provided in
 </table>
 </div>
 
-<div id="sed" class="table-banner" onclick="toggleCollapse(this)">
+<div id="sed" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-city"></i></span>
   <span class="text-with-link">
   <span class="text">Social & Environmental Determinants</span>
@@ -501,7 +501,7 @@ In this section we provide a brief overview of each study instrument provided in
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 
 <div class="table-legend">
   <span class="legend-item">
@@ -653,7 +653,7 @@ In this section we provide a brief overview of each study instrument provided in
 
 ## Brain Activity & Biosensors
 
-<div id="eeg" class="table-banner" onclick="toggleCollapse(this)">
+<div id="eeg" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-file-waveform"></i></span>
   <span class="text-with-link">
   <span class="text">EEG & Tabular EEG</span>
@@ -663,7 +663,7 @@ In this section we provide a brief overview of each study instrument provided in
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>EEG release data, including EEG (file-based data) and Tabular EEG domains, are displayed below. 
 See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critical information on protocols, quality control procedures, etc.</p>
 <table class="table-no-vertical-lines">
@@ -726,7 +726,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 </table>
 </div>
 
-<div id="mri" class="table-banner" onclick="toggleCollapse(this)">
+<div id="mri" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
     <span class="text">Imaging</span>
@@ -736,7 +736,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -778,7 +778,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 </table>
 </div>
 
-<div id="mri-tab" class="table-banner" onclick="toggleCollapse(this)">
+<div id="mri-tab" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
     <span class="text">Tabulated Imaging</span>
@@ -788,7 +788,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p style="font-size: 0.9em; color: #555;">
 <i class="fa-solid fa-diagram-project header-icon"></i>= Tabulated pipeline derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)</p>
 <table class="compact-table-no-vertical-lines">
@@ -882,7 +882,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 </table>
 </div>
 
-<div id="sensors" class="table-banner" onclick="toggleCollapse(this)">
+<div id="sensors" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-microchip"></i></span>
   <span class="text-with-link">
   <span class="text">Novel Technologies & Wearable Sensors</span>
@@ -892,7 +892,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><i class="fa-solid fa-folder-open header-icon"></i> File-based data</p>
 <ul>
 <li>Raw BIDS stored under subject- and session-specific <a href="sensors/wearsensors/#rawbids" target="_blank"><code>motion/</code></a> folders</li>

@@ -31,7 +31,7 @@ The interstimulus interval (ISI) for the Auditory Mismatch Negativity task chang
 The MMN, VEP, and FACE task data may contain an artifact originating from the StimTracker device used for stimulus timing - see more information on this <a href="../qc/#stimtracker-artifact-detection" target="_blank">here</a>.</p>
 </div>
 
-<div id="mmn" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
+<div id="mmn" class="banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa fa-clipboard-list"></i></span>
   <span class="text-with-link">
 <span class="text">Protocol Summary</span>
@@ -41,7 +41,7 @@ The MMN, VEP, and FACE task data may contain an artifact originating from the St
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>Auditory stimuli (“ba” = 196 ms; “da” = 198 ms) are presented while a video plays on an iPad (brightness at maximum, in airplane mode, and unplugged) to serve as a visual distractor. The task is paused for breaks as needed.</p>
 <p><strong>Visit 3 trial progression schematic:</strong></p>
 <img src="../images/mmn-trial.jpg" width="90%" height="auto" class="center">
@@ -69,7 +69,7 @@ The MMN, VEP, and FACE task data may contain an artifact originating from the St
 </div>
 </div>
 
-<div id="mmn-ref" class="table-banner" onclick="toggleCollapse(this)">
+<div id="mmn-ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-book"></i></span>
   <span class="text-with-link">
   <span class="text">References</span>
@@ -79,7 +79,7 @@ The MMN, VEP, and FACE task data may contain an artifact originating from the St
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <div class="references" style="font-size: 0.9em; line-height: 1.0; margin-top: 0;">
   <p>Choudhury, N., & Benasich, A. A. (2011). Maturation of auditory evoked potentials from 6 to 48 months: Prediction to 3 and 4 year language and cognitive abilities. <i>Clinical Neurophysiology</i>, 122(2), 320–338. <a href="https://doi.org/10.1016/j.clinph.2010.05.035" target="_blank">https://doi.org/10.1016/j.clinph.2010.05.035</a></p>
   <p>Fox, N. A., Pérez-Edgar, K., Morales, S., Brito, N. H., Campbell, A. M., Cavanagh, J. F., Gabard-Durnam, L. J., Hudac, C. M., Key, A. P., Larson-Prior, L. J., Pedapati, E. V., Norton, E. S., Reetzke, R., Roberts, T. P., Rutter, T. M., Scott, L. S., Shuffrey, L. C., Antúnez, M., Boylan, M. R., … Yoder, L. (2024). The development and structure of the Healthy Brain and Child Development (HBCD) study EEG Protocol. <i>Developmental Cognitive Neuroscience</i>, 69, 101447. <a href="https://doi.org/10.1016/j.dcn.2024.101447" target="_blank">https://doi.org/10.1016/j.dcn.2024.101447</a></p> 
@@ -115,7 +115,7 @@ The Faces task (**FACE**) (v.11.29.23) assesses child and infant face processing
 The MMN, VEP, and FACE task data may contain an artifact originating from the StimTracker device used for stimulus timing - see more information on this <a href="../qc/#stimtracker-artifact-detection" target="_blank">here</a>.</p>
 </div>
 
-<div id="face" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
+<div id="face" class="banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa fa-clipboard-list"></i></span>
   <span class="text-with-link">
   <span class="text">Protocol Summary</span>
@@ -158,7 +158,7 @@ The MMN, VEP, and FACE task data may contain an artifact originating from the St
 </div>
 </div>
 
-<div id="face-ref" class="table-banner" onclick="toggleCollapse(this)">
+<div id="face-ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-book"></i></span>
   <span class="text-with-link">
   <span class="text">References</span>
@@ -168,7 +168,7 @@ The MMN, VEP, and FACE task data may contain an artifact originating from the St
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <div class="references" style="font-size: 0.9em; line-height: 1.0; margin-top: 0;">
 <p>Barry-Anwar, R., Riggins, T., & Scott, L. S. (2024). Electrophysiology in developmental populations: Key methods and findings. In K. Cohen Kadosh (Ed.), <i>Oxford Handbook of Developmental Cognitive Neuroscience</i>. Oxford Library of Psychology. Oxford Academic. <a href="https://doi.org/10.1093/oxfordhb/9780198827474.013.3" target="_blank">https://doi.org/10.1093/oxfordhb/9780198827474.013.3</a></p>
 <p>Fox, N. A., Pérez-Edgar, K., Morales, S., Brito, N. H., Campbell, A. M., Cavanagh, J. F., Gabard-Durnam, L. J., Hudac, C. M., Key, A. P., Larson-Prior, L. J., Pedapati, E. V., Norton, E. S., Reetzke, R., Roberts, T. P., Rutter, T. M., Scott, L. S., Shuffrey, L. C., Antúnez, M., Boylan, M. R., … Yoder, L. (2024). The development and structure of the Healthy Brain and Child Development (HBCD) study EEG Protocol. <i>Developmental Cognitive Neuroscience</i>, 69, 101447. <a href="https://doi.org/10.1016/j.dcn.2024.101447" target="_blank">https://doi.org/10.1016/j.dcn.2024.101447</a></p> 
@@ -196,7 +196,7 @@ The Visual Evoked Potential Task (**VEP**) (v.11.29.23) measures development of 
 The MMN, VEP, and FACE task data may contain an artifact originating from the StimTracker device used for stimulus timing - see more information on this <a href="../qc/#stimtracker-artifact-detection" target="_blank">here</a>.</p>
 </div>
 
-<div id="vep" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
+<div id="vep" class="banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa fa-clipboard-list"></i></span>
   <span class="text-with-link">
   <span class="text">Protocol Summary</span>
@@ -224,7 +224,7 @@ The MMN, VEP, and FACE task data may contain an artifact originating from the St
 </p>
 </div>
 
-<div id="vep-ref" class="table-banner" onclick="toggleCollapse(this)">
+<div id="vep-ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-book"></i></span>
   <span class="text-with-link">
   <span class="text">References</span>
@@ -234,7 +234,7 @@ The MMN, VEP, and FACE task data may contain an artifact originating from the St
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <div class="references" style="font-size: 0.9em; line-height: 1.0; margin-top: 0;">
 <p>Cremone-Caira, A., Braverman, Y., MacNaughton, G. A., Nikolaeva, J. I., & Faja, S. (2023). Reduced Visual Evoked Potential Amplitude in Autistic Children with Co-Occurring Features of Attention-Deficit/Hyperactivity Disorder. <em>Journal of Autism and Developmental Disorders</em>. <a href="https://doi.org/10.1007/s10803-023-06005-7" target="_blank">https://doi.org/10.1007/s10803-023-06005-7</a></p>
 <p>Fox, N. A., Pérez-Edgar, K., Morales, S., Brito, N. H., Campbell, A. M., Cavanagh, J. F., Gabard-Durnam, L. J., Hudac, C. M., Key, A. P., Larson-Prior, L. J., Pedapati, E. V., Norton, E. S., Reetzke, R., Roberts, T. P., Rutter, T. M., Scott, L. S., Shuffrey, L. C., Antúnez, M., Boylan, M. R., … Yoder, L. (2024). The development and structure of the Healthy Brain and Child Development (HBCD) study EEG Protocol. <i>Developmental Cognitive Neuroscience</i>, 69, 101447. <a href="https://doi.org/10.1016/j.dcn.2024.101447" target="_blank">https://doi.org/10.1016/j.dcn.2024.101447</a></p> 
@@ -265,7 +265,7 @@ The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the de
 The video content for the Resting State task changed between visits V03 and V04/V06 - see <a href="https://doi.org/10.1016/j.dcn.2024.101447">Fox et al. 2024</a> and <a href="https://doi.org/10.1097/00003446-200204000-00005">Morr et al. 2002</a> for details. Also note that RS is not a true resting state as there is a visual stimulus present.</p>
 </div>
 
-<div id="rs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
+<div id="rs" class="banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa fa-clipboard-list"></i></span>
   <span class="text-with-link">
   <span class="text">Protocol Summary</span>
@@ -275,12 +275,12 @@ The video content for the Resting State task changed between visits V03 and V04/
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>Participants watch a silent video for the duration of the RS task. In <strong>V03</strong> (<i>left set of images below</i>), the video displays a variety of colorful and abstract toys and other visuals. In <strong>V04 & V06</strong> (<i>right set of images below</i>), the video includes a variety of marble run and construction visuals.</p>
 <img src="../images/eeg-RS.png" width="100%" height="auto">
 </div>
 
-<div id="rs-ref" class="table-banner" onclick="toggleCollapse(this)">
+<div id="rs-ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-book"></i></span>
   <span class="text-with-link">
   <span class="text">References</span>
@@ -290,7 +290,7 @@ The video content for the Resting State task changed between visits V03 and V04/
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <div class="references" style="font-size: 0.9em; line-height: 1.0; margin-top: 0;">
 <p>Davidson, R. J., & Fox, N. A. (1982). Asymmetrical Brain Activity Discriminates Between Positive and Negative Affective Stimuli in Human Infants. <em>Science</em>, 218(4578), 1235–1237. <a href="https://doi.org/10.1126/science.7146906" target="_blank">https://doi.org/10.1126/science.7146906</a></p>
 <p>Fox, N. A., Pérez-Edgar, K., Morales, S., Brito, N. H., Campbell, A. M., Cavanagh, J. F., Gabard-Durnam, L. J., Hudac, C. M., Key, A. P., Larson-Prior, L. J., Pedapati, E. V., Norton, E. S., Reetzke, R., Roberts, T. P., Rutter, T. M., Scott, L. S., Shuffrey, L. C., Antúnez, M., Boylan, M. R., … Yoder, L. (2024). The development and structure of the Healthy Brain and Child Development (HBCD) study EEG Protocol. <i>Developmental Cognitive Neuroscience</i>, 69, 101447. <a href="https://doi.org/10.1016/j.dcn.2024.101447" target="_blank">https://doi.org/10.1016/j.dcn.2024.101447</a></p> 

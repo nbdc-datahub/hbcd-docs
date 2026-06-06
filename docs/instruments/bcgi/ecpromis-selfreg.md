@@ -39,30 +39,12 @@
 
 The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Self-Regulation - Flexibility Scale** assesses young children’s ability to adapt in response to environmental demands, changes, and expectations. 
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ mods_banner() }}
 <div class="collapsible-content">
 <p>The item queue was rearranged per the HBCD DEI Committee’s recommendation to: 2, 3, 4, 5, 1. The item order change is minimal, should have no effect on data, and was approved by the measure creators. While ecPROMIS measures are copyrighted, the content of each item is maintained.</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>The Self-Regulation Scale includes 5 items answered on a scale of 1-5:<br>
 1 = <b>Never</b> &nbsp; 2 = <b>Rarely</b> &nbsp; 3 = <b>Sometimes</b> &nbsp 4 = <b>Often</b> &nbsp; 5 = <b>Always</b> &nbsp; <i>Decline to Answer = missing</i></p>

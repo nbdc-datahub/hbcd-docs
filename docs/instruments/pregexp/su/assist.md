@@ -57,16 +57,7 @@ The NIDA quick screen tool (*have you used alcohol, tobacco, prescription drugs,
 
 Finally, the Time Line Follow Back (TLFB) was triggered when substance use was reported before [`pre-use`] or during pregnancy [`during_use`] on the ASSIST V1 or at the end of pregnancy [`end_use`] on the ASSIST V2 (see [documentation on TLFB](tlfb.md)). 
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ mods_banner() }}
 <div class="collapsible-content">
 <p><b>Replacement Questions for NIDA Quick Screen Tool</b></p>
 <ul>
@@ -110,7 +101,7 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
 </ul>
 </div>
 
-<div id="substance-options" class="table-banner" onclick="toggleCollapse(this)">
+<div id="substance-options" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
   <span class="text">Expanded ASSIST Substance Type Options</span>
@@ -157,16 +148,7 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
 </div>
 
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>For each substance, participants indicate whether they had ever used it and, if endorsed, frequency of use with options: 0 (Never), 1 (Once or Twice), 2 (Monthly), 3 (Weekly), or 4 (Daily or Almost Daily). For substances reported as used pre-pregnancy, during pregnancy, and end-pregnancy, participants were asked about modes of use and typical quantities/amounts of consumption for alcohol and opioids (if applicable).</p>
 </div>

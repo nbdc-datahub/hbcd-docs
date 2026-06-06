@@ -67,7 +67,7 @@ Participants who reported any substance use in the three months prior to or duri
   </tbody>
 </table>
 
-<div id="v3" class="table-banner" onclick="toggleCollapse(this)">
+<div id="v3" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
   <span class="text">Version 3 Administered to Postnatal Recruits</span>
@@ -77,7 +77,7 @@ Participants who reported any substance use in the three months prior to or duri
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><b>Postnatal recruits</b> (participants enrolled in the study postnatally) are administered an adapted <b>Version 3</b> of the TLFB, which includes all of the four time periods above in a single administration. Period 3 in this version captures Week 7 as the week spanning LMP + 19 weeks to LMP + 20 weeks.</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <tbody>

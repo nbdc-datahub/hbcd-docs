@@ -50,7 +50,7 @@
   gap: 8px;
   background-color: #dde6fe;
   cursor: pointer;
-  margin-top: 8px;
+  margin-top: 8px; /* REQUIRED FOR SPACING BETWEEN BANNERS */
 }
 
 /* =========================================================
@@ -109,7 +109,7 @@
 .collapsible-content.open {
   display: block;
   max-height: 500px; 
-  padding: 10px 14px; /* REQUIRED FOR SPACING BETWEEN BANNERS */
+  padding: 10px 14px; 
   border: 1px solid #3333331a;
   border-top: none;
   margin-bottom: 10px;

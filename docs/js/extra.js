@@ -83,8 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // Expand all function for measures overview page 
 document.addEventListener("DOMContentLoaded", function () {
   const toggleAllBtn = document.getElementById("toggle-all-btn");
-  const banners = document.querySelectorAll(".table-banner");
-  const sections = document.querySelectorAll(".table-collapsible-content");
+  const banners = document.querySelectorAll(".banner");
+  const sections = document.querySelectorAll(".collapsible-content");
 
   toggleAllBtn.addEventListener("click", function () {
       const allExpanded = Array.from(sections).every(sec => sec.classList.contains("open"));

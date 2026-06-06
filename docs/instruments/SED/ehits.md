@@ -25,17 +25,8 @@
 The eHITS is a self-administered 5 question Likert scale screener for experiences of psychological aggression, physical assault, sexual coercion, and injury. Originally created for quick administration in a health care setting or emergency department, the eHITS asks individuals to indicate whether their partner has done any of the following over the past 12 months: "physically hurt you", "insulted you", "threatened to harm you", "screamed or cursed at you", or "forced you to have sexual activities."
 
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+{{ mods_banner() }}
+<div class="collapsible-content">
 <p>Various research groups made minor word changes. Sherin and colleagues developed the original instrument, HITS, published in 1998. Chan and colleagues expanded HITS to include a question regarding forced sexual activity <a href="https://doi.org/10.1177/102490791001700202">Chan et al. 2010</a>. To acknowledge these changes in future publications, we recommend including the exact verbiage of the HBCD-version of the item in the methods section of any reports, presentations, and manuscripts.</p>
 
 <p><b>Instruction/Assessment Item Modifications</b><br>
@@ -108,16 +99,7 @@ The following outlines the differences in the wording and/or content of question
 </table>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>The eHITS summary score (sum of item ratings) is used clinically as a screening tool for intimate partner violence (IPV) based on a certain threshold. For HBCD, a clinical alert for IPV is triggered when the summary score is greater than 7 and/or the scores for “…physically hurt you?” or “…forced you to engage in sexual activity?” is greater than 0. If a respondent selects “Don’t know” for one or more questions, a clinical alert may not generate for a participant whose correct responses would result in a score sufficient to trigger an alert.</p>
 

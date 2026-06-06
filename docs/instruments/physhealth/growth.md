@@ -80,16 +80,7 @@ Sex-specific birthweight for gestational age centiles and z-scores will be calcu
 
 Growth is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children, it will also include abdominal circumference (cm). 
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p><b>Anthropometric Z-Score and Percentile Calculations</b><br>
 Age-based z-scores and percentiles for growth measurements were calculated for V02 onward using the <a href="https://github.com/CDC-DNPAO/WHOanthro">WHOanthro</a> R package. Calculations are based on estimated date of delivery, inherently adjusting for pre-mature birth. WHO growth charts were used for participants &lt;2 years old, and CDC growth charts were used for participants 2 years and older.</p>

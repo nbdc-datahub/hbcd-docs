@@ -70,7 +70,7 @@ For household roster variables, respondents were instructed to <b>exclude the ma
 ## Instrument Details
 
 <p>
-<div class="table-banner">
+<div class="banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
   <span class="text">See <a href="../../demo/basicdemo/" target="_blank">Basic Demographics</a> for additional demographics variables derived from HBCD Demographics and administrative records collected during study enrolment/screening.</span>
 </div>

@@ -46,7 +46,7 @@
 ## Overview & Acquisition
 Functional MRI (fMRI) measures brain activity via the blood oxygen level–dependent (BOLD) signal. The HBCD Study includes resting-state fMRI (rs-fMRI), with head motion monitored in real time using [FIRMM](https://firmm.readthedocs.io/) to estimate usable data during acquisition (<a href="https://doi.org/10.1016/j.neuroimage.2017.08.025">Dosenbach et al., 2017</a>). A target of 7.5 minutes of usable low-motion data is acquired across runs per session.
 
-<div id="acq" class="table-banner" onclick="toggleCollapse(this)">
+<div id="acq" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
   <span class="text">Acquisition Details</span>
@@ -56,7 +56,7 @@ Functional MRI (fMRI) measures brain activity via the blood oxygen level–depen
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <br>
 <ul>
 <li>rs-fMRI data is acquired at 2 mm isotropic resolution with a repetition time (TR) of 1725 ms and multiband (MB) factor of 4</li>
@@ -68,9 +68,9 @@ Functional MRI (fMRI) measures brain activity via the blood oxygen level–depen
 </div>
 
 ## Processing & Derivatives
-<div class="table-banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 5px;" class="fa-solid fa-up-right-from-square"></i></a></span> </div>
+<div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 5px;" class="fa-solid fa-up-right-from-square"></i></a></span> </div>
 
-<div id="file-selection" class="table-banner" onclick="toggleCollapse(this)">
+<div id="file-selection" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-info"></i></span>
   <span class="text-with-link">
 <span class="text">File Selection for Processing</span>
@@ -108,12 +108,12 @@ HBCD structural and functional MRI data are processed through a sequence of BIDS
 
 <a href="https://nibabies.readthedocs.io/en/latest/">Infant-fMRIPrep</a> (also known as NiBabies) performs minimal structural and functional MRI processing. It is an adapted version of <em>fMRIPrep</em> optimized for infant data processing, using age-appropriate templates and surface reconstruction methods optimized for early development (<a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>). Pipeline outputs include visual quality assessment reports, preprocessed derivatives, and confounds used for denoising in subsequent processing steps.
 
-<div id="nibabies" class="table-banner" onclick="toggleCollapse(this)">
+<div id="nibabies" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa-solid fa-diagram-project"></i></span>
 <span class="text-with-link"><span class="text">Infant fMRIPrep Processing Overview</span>
 <a class="anchor-link" href="#nibabies" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
 <span class="arrow">▸</span></div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><b>Anatomical Preprocessing</b><br>
 T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infant template (0–4.5 yr), then to MNI152 for compatibility with adult datasets. <b><i>Surface reconstruction</i></b> is performed via one of the following methods:</p>
 <table class="table-no-vertical-lines">
@@ -135,7 +135,7 @@ T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infan
 </ul>
 </div>
 
-<div id="nibabies-derivs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+<div id="nibabies-derivs" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
   <span class="text">Infant fMRIPrep Derivatives</span>
@@ -145,7 +145,7 @@ T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infan
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p style="font-size: 1.1em; font-weight: 600;">Overview</p>
 <ul>
 <li>JSON files excluded for brevity from file trees below</li>
@@ -263,11 +263,11 @@ Downstream XCP-D derivatives include a second hash ID (`0ef9c88a`) indicating th
 
 The M-CRIB-S and FreeSurfer derivative folders are generated from the [intermediate FreeSurfer-like folders](https://nibabies.readthedocs.io/en/latest/outputs.html#surface-reconstruction) produced by Infant fMRIPrep during surface reconstruction. When M-CRIB-S is used, Infant fMRIPrep still creates a FreeSurfer-structured folder containing the M-CRIB-S results mapped to the standard <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/ReconAllOutputFiles">recon-all</a> layout; these appear in the release under <code>freesurfer-0f306a2f/</code>.
 
-<div id="fs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+<div id="fs" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span><span class="text-with-link">
 <span class="text">FreeSurfer Source Directories</span><a class="anchor-link" href="#fs" title="Copy link">
   <i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span></div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <pre class="folder-tree">
 hbcd/
 └── derivatives/
@@ -310,7 +310,7 @@ hbcd/
 </pre>
 </div>
 
-<div id="mcribs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+<div id="mcribs" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
 <span class="text">M-CRIB-S Source Directories</span>
@@ -320,7 +320,7 @@ hbcd/
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <pre class="folder-tree">
 hbcd/
 └── derivatives/
@@ -367,7 +367,7 @@ hbcd/
 </pre>
 </div>
 
-<div id="mcribs-vs-fs" class="table-banner" onclick="toggleCollapse(this)">
+<div id="mcribs-vs-fs" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
 <span class="text">Restoring Symlink Files Present in M-CRIB-S Derivatives</span>
@@ -407,12 +407,12 @@ done</span>
 ### XCP-D
 <a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a> performs functional MRI post-processing and noise regression from Infant-fMRIPrep derivatives, producing cleaned and parcellated data (<a href="#parc">see parcellation atlases</a>) ready for analysis.
 
-<div id="xcpd" class="table-banner" onclick="toggleCollapse(this)">
+<div id="xcpd" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa-solid fa-diagram-project"></i></span>
 <span class="text-with-link"><span class="text">XCP-D Processing Overview</span>
 <a class="anchor-link" href="#xcpd" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
 <span class="arrow">▸</span></div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><b>Anatomical Processing</b><br>
 Native-space T2w images are transformed into standard MNI152NLin6Asym space (1 mm³ resolution).
 Morphometric surfaces (fsLR-space) from Infant fMRIPrep are copied to the XCP-D derivatives. HCP-style midthickness, inflated, and very-inflated surfaces are generated from the white-matter and pial surface meshes and mapped to fsLR space.</p> 
@@ -430,7 +430,7 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
 </ul>
 </div>
 
-<div id="xcpd-derivs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+<div id="xcpd-derivs" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
 <span class="text">XCP-D Derivatives</span>
@@ -440,7 +440,7 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <!-- 
 ### AT A GLANCE
 <ul>
@@ -511,7 +511,7 @@ hbcd/
 
 Below is a summary of key MRI derivatives used for structural morphology and resting-state functional MRI (rsfMRI) functional connectivity analyses. Key derivatives, produced by the [XCP-D](https://xcp-d.readthedocs.io/en/latest/) pipeline, include volumetric and surface-based time series for each participant. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. 
 
-<div id="struc" class="table-banner" onclick="toggleCollapse(this)">
+<div id="struc" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-cubes"></i></span>
   <span class="text-with-link">
   <span class="text">Structural Morphology: Key Derivatives for Analysis</span>
@@ -552,7 +552,7 @@ Useful for rendering structural data, computing surface-based metrics, or visual
 </p>
 </div>
 
-<div id="fc" class="table-banner" onclick="toggleCollapse(this)">
+<div id="fc" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-globe"></i></span>
   <span class="text-with-link">
   <span class="text">Functional Connectivity: Key Derivatives for Analysis</span>
@@ -623,7 +623,7 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 }
 </style>
 
-<div id="parc" class="table-banner" onclick="toggleCollapse(this)">
+<div id="parc" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-book-atlas"></i></span>
   <span class="text-with-link">
   <span class="text">Parcellations</span>
@@ -633,7 +633,7 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><i>See <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#parcellations-and-atlases">Parcellations & Atlases</a> in the XCP-D documentation for more details.</i></p>
 
 <!-- 4P Atlas LUTs: eg https://github.com/PennLINC/AtlasPack/blob/main/atlas-4S156Parcels_dseg.tsv 
@@ -789,7 +789,7 @@ We evaluated the impact of data quality on functional connectivity. Average func
 
 ## References
 
-<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
   <span class="text-with-link">
   <span class="text">References</span>

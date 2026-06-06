@@ -219,31 +219,13 @@ The HBCD versions therefore include four scale domains: **Behavioral Inhibition*
 </div>
 </div>
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ mods_banner() }}
 <div class="collapsible-content">
 <p>Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, the pronouns "she/he" or "her/him" in reference to the child/baby were changed to “the baby/child” or “they/them” as fit the item wording.</p>
 <p>The creators of this measure have requested that these alterations be noted in all documentation and publications.</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>The IBQ-R and ECBQ item responses are reported on a 7-point Likert scale (from <i>1 = Never</i> to <i>7 = Always</i>). For each domain (Behavioral Inhibition, Negative Affectivity, Effortful Control, and Surgency/Extraversion), summary scores are computed as the mean of all items with values of 1-7. This excludes non-response options, "Does not apply" and "Decline to answer," which are not scored and considered missing.</p>
 <p>Prior to computing summary scores, reverse scoring (i.e. values reassigned from 1→7 to 7→1) is applied to items labeled with <b>(R)</b> in the <a href="#ibq-r-ecbq-domain-items">Domain Items</a> table above. In the release data, the raw item-level data is not reverse-scored already. However, the domain scores do incorporate the reverse scoring. Summary scores are not computed if more than 40% of the items are missing responses (e.g. there are only 7/12 items with numerical responses of 1-7) and are instead marked as missing.</p>

@@ -34,16 +34,7 @@
 
 Food Insecurity, based on two items assessing the availability of food, is a screening measure used across many populations indicating risk of food insecurity in the last 12 months. Each question uses the same response options. 
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ mods_banner() }}
 <div class="collapsible-content">
 <p>This measure was modified slightly for HBCD to use gender-neutral terms (children are referred to as “the child” in place of gendered pronouns) as well as inclusion of "Don't know" as a response option to survey questions.</p>
 </div>

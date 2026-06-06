@@ -46,7 +46,7 @@ Raw data QC metrics are provided in the session-level <a href="../../../datacura
 
 Automated QC begins immediately after data upload with protocol compliance and completeness checks ([expand infobox for details](#compliance)). Data that fail are flagged for review and excluded from release until resolved. For compliant data, automated QC metrics are then calculated (see table below).
 
-<div id="compliance" class="table-banner" onclick="toggleCollapse(this)">
+<div id="compliance" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
 <span class="text">Protocol Compliance & Completeness Checks</span>
@@ -56,12 +56,12 @@ Automated QC begins immediately after data upload with protocol compliance and c
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><strong>Protocol compliance</strong> is performed by extracting imaging parameters from DICOM headers to confirm that key parameters (e.g., voxel size, TR, orientation) match the expected protocol for each scanner. Out-of-compliance series are flagged for review and sites are contacted if corrective action is needed.</p>
 <p><strong>Completeness checks</strong> verify that all expected series are present in each imaging session. Missing data usually indicate an aborted scan or incomplete data transfer. Series included in a valid session include: <strong>T1w &amp; T2w</strong> structural scans; <strong>2 resting state functional runs</strong> (each accompanied by fieldmaps acquired in AP and PA phase encoding directions); <strong>diffusion scans (acquired both AP and PA)</strong>; quantitative <strong>QALAS and B1 maps</strong>; and an <strong>MRS scan and SVS localizer</strong>. </p>
 </div>
 
-<div id="auto-qc" class="table-banner" onclick="toggleCollapse(this)">
+<div id="auto-qc" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
 <span class="text">Automated QC Metrics</span>
@@ -71,7 +71,7 @@ Automated QC begins immediately after data upload with protocol compliance and c
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
 <tr>
@@ -120,7 +120,7 @@ Automated QC begins immediately after data upload with protocol compliance and c
 
 Data are flagged for manual review based on automated QC results using multivariate prediction and Bayesian classifiers, so only a subset undergoes both automated and manual review. When a series is flagged, trained technicians perform visual review and rate artifact severity on a **0–3 scale**: *none* (**0**), *mild* (**1**), *moderate* (**2**), or *severe* (**3**). Series rated **3** (*severe*) are automatically assigned an overall QC score of **0** (*Fail*) and excluded from downstream processing. For all others, final selection is informed by manual ratings, reviewer notes, and automated QC metrics.
 
-<div id="man-qc" class="table-banner" onclick="toggleCollapse(this)">
+<div id="man-qc" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
 <span class="text">Manual QC Metrics</span>
@@ -130,7 +130,7 @@ Data are flagged for manual review based on automated QC results using multivari
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead><tr>    <th>Modality</th>    <th>Manual QC Procedures & Scoring</th></tr></thead>
 <tbody>
@@ -174,7 +174,7 @@ Data are flagged for manual review based on automated QC results using multivari
   </div>
 </div>
 
-<div id="swipes-procedures" class="table-banner" onclick="toggleCollapse(this)">
+<div id="swipes-procedures" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-brain"></i></span>
 <span class="text-with-link">
   <span class="text">Detailed BrainSwipes QC Procedures</span>
@@ -201,7 +201,7 @@ BrainSwipes QC results for processed data are provided as <a href="../../#mri-ta
 
 ---
 
-<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
   <span class="text-with-link">
   <span class="text">References</span>

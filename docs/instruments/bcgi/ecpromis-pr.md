@@ -21,7 +21,7 @@
 ## Instrument Details
 The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Peer Relationships Scale** assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors. 
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+<div id="hbcd-mod" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
     <span class="text">HBCD Modification Details</span>
@@ -40,16 +40,7 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn't scored), but can be used as a filter variable for analyses. This item was added with the approval of the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure.</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>The Peer Relationship Scale includes the unscored <code>peer_yn</code> item and 4 scored items answered on a scale of 1-5:<br>
 1 = <b>Never</b> &nbsp; 2 = <b>Almost Never</b> &nbsp; 3 = <b>Sometimes</b> &nbsp 4 = <b>Often</b> &nbsp; 5 = <b>Almost Always</b> &nbsp; <i>Decline to Answer = missing</i></p>

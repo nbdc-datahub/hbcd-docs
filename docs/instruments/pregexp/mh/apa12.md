@@ -45,7 +45,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 
 **Level 1** includes 1 - 2 questions for each of the first 11 mental health domains displayed in the table above (*Depression* through *Dissociation*). When symptoms were reported for Level 1, participants were subsequently administered corresponding **Level 2** measures, which asked about additional symptoms associated with the following 8 mental health domains: *Depression*, *Anger*, *Mania*, *Anxiety*, *Somatic Symptoms*, *Sleep*, *Repetitive Behavior*, and *Personality*. 
 
-<div id="table-summary" class="table-banner" onclick="toggleCollapse(this)">
+<div id="table-summary" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
   <span class="text">Table Summary of Mental Health Domains Assessed By Levels 1/2 & HBCD Modifications</span>
@@ -55,7 +55,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><i>*Unless specified otherwise, Level 2 measures are only administered when symptoms are reported for Level 1</i></p>
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -153,16 +153,7 @@ Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Pr
 </table>
 </div>
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ mods_banner() }}
 <div class="collapsible-content">
 <p><b>Level 1 Modifications</b><br>
 HBCD excluded <i>Personality Functioning and Substance Use</i> present in the original measure (SU is captured by a separate set of instruments for HBCD - see measures listed <a href="../../../#pex" target="_blank">here</a>).</p>
@@ -175,17 +166,8 @@ This measure was modified to alert HBCD study staff if responses to the Level 1 
 For HBCD, the response option ‘Decline to answer’ was added to all questions. The response option ‘Don’t know’ was also included at the beginning of data collection, but was subsequently removed. Questions answered with ‘Decline to answer’ or ‘Don’t know’ are marked as missing.</p> 
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+{{ scoring_banner() }}
+<div class="collapsible-content">
 <p><b><a href="https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1</a> items (scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe) and gating overview, including HBCD adaptations:</b></p>
 
 <table class="compact-table-no-vertical-lines">

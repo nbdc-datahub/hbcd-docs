@@ -16,7 +16,7 @@
 </tbody>
 </table>
 
-<div id="qc" class="table-banner" onclick="toggleCollapse(this)">
+<div id="qc" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-shield"></i></span><span class="text-with-link">
 <span class="text">QC Procedures: Administration & Centralized Coding</span>
 <a class="anchor-link" href="#qc" title="Copy link"><i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span></div>
@@ -148,16 +148,7 @@ The ERICA is coded using a one-pass, global coding system adapted for HBCD. Seve
 
 Codes are scored on a 4-point scale (0-3), reflecting the frequency, intensity, and duration of observed behaviors across the paradigm, with higher scores indicating higher levels of observed behavior. See [Edwards et al. (2024)](https://doi.org/10.1016/j.dcn.2024.101422) for additional details on the ERICA paradigm and adaptation for HBCD.
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>Coders rate each construct at the activity level on a 4-point scale (None = 0, Low = 1, Medium = 2, High = 3). Activity-level ratings are then averaged across all activities to generate a continuous global score, ranging from 0-3, with higher scores reflecting higher levels of observed behavior.</p>
 <p>Modifiers (-1, +1, and +2) may be used with three codes (<i>child irritability, caregiver responsive behavior, and dyadic connectedness</i>) to capture important qualitative distinctions. For example, for child irritability, a <b>+1</b> is added at the activity level when a child is highly irritable throughout an entire activity, with no recovery or re-engagement and a <b>+2</b> is added if a child becomes intensely dysregulated during an activity (e.g., intense crying with breath holding, gagging, other indications of intense dysregulation). When used, modifiers are included in the sum for the global scores. For caregiver responsive behavior, a <b>-1</b> is added at the activity level when a caregiver does not responds at all to intense dysregulation in a child, is delayed in responding to child distress and this results in the child becoming intensely dysregulated, or is repeatedly doing things that are dysregulating to the child, resulting in the child becoming more and more distressed. For dyadic connectedness, a <b>-1</b> is added at the activity level, when a child is distressed through much of the activity without any ability to be soothed by the caregiver and distress is not resolved by the end of the activity or during the immediate re-engagement period when transitioning to the next activity. </p>

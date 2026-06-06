@@ -8,7 +8,7 @@ All pipelines used for HBCD data processing must follow HBCD processing and deri
 
 ## NMIND Checklists (Bronze Badge Items)
 
-<div class="table-banner">
+<div class="banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
   <span class="text">See NMIND checklist ratings under <a href="https://www.nmind.org/proceedings/">Evaluated Tools</a> (specific links provided in <a href="../#hbcd-pipelines">pipeline table</a>).</span>
 </div>
@@ -40,7 +40,7 @@ A full list of tools evaluated through the [NMIND Coding Standards Checklist](ht
 <input type="checkbox"> Digital Object Identifier (DOI) points to latest version (*see [How to Obtain a DOI](#doi) for details*)<br>
 <input type="checkbox"> All documented installation instructions can be successfully followed<br>
 
-<div id="doi" class="table-banner" onclick="toggleCollapse(this)">
+<div id="doi" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-circle-info"></i></span>
 <span class="text-with-link">
 <span class="text">How to Obtain a DOI</span>
@@ -51,7 +51,7 @@ A full list of tools evaluated through the [NMIND Coding Standards Checklist](ht
 <p>A Zenodo DOI badge should also be included on the landing page of your pipeline documentation website. This will additionally fulfill the Documentation checklist item <em>&quot;Documentation is up to date with version of software</em>.&quot; See an example of Zenodo badge and associated Zenodo publication on the <a href="https://nibabies.readthedocs.io/en/latest/">Nibabies webpage</a>.</p>
 </div>
 
-<div id="licensing" class="table-banner" onclick="toggleCollapse(this)">
+<div id="licensing" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-circle-info"></i></span>
 <span class="text-with-link">
 <span class="text">Licensing Tips</span>
@@ -61,7 +61,7 @@ A full list of tools evaluated through the [NMIND Coding Standards Checklist](ht
 <p>HBCD processing pipelines are largely open source. Common permissive license options include <a href="https://github.com/DCAN-Labs/hbcd-docs/community/license/new?branch=main&amp;filename=LICENSE&amp;template=apache-2.0">Apache-2.0 License 2.0</a>, <a href="https://github.com/DCAN-Labs/hbcd-docs/community/license/new?branch=main&amp;filename=LICENSE&amp;template=mit">MIT License</a>, and the <a href="https://github.com/DCAN-Labs/hbcd-docs/community/license/new?branch=main&amp;filename=LICENSE&amp;template=bsd-3-clause">BSD-3-Clause license</a>. Visit GitHub&#39;s documentation on <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository">Licensing a Repository</a> and <a href="https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository">Adding a License To a Repository</a> for more information. </p>
 </div>
 
-<div id="version-control" class="table-banner" onclick="toggleCollapse(this)">
+<div id="version-control" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-circle-info"></i></span>
 <span class="text-with-link">
 <span class="text">Version Control</span>

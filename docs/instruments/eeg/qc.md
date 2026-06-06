@@ -16,7 +16,7 @@ During quality control, a frequently observed issue across all tasks was the irr
 
 ## Stimtracker Artifact Detection
 
-<div class="table-banner">
+<div class="banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
   <span class="text">Presence of the StimTracker artifact is listed in the tabulated QC file for each task (<code>eeg_qc_task-&lt;TASK&gt;</code>).</span>
 </div>
@@ -46,7 +46,7 @@ See <a href="../artifact/" target="_blank">Effects of Artifact on ERP Derivative
 
 ## EEG Net Placement ("Capping Quality") Ratings
 
-<div class="table-banner">
+<div class="banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
   <span class="text">Each task’s tabulated QC file includes capping ratings in the variable <code>eeg_qc_task-&lt;TASK&gt;_capping_quality</code>.</span>
 </div>

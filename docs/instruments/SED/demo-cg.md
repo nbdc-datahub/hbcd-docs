@@ -83,7 +83,7 @@ Beginning at V04, some information that was collected in the V01 Adult Demograph
 ## Instrument Details
 
 <p>
-<div class="table-banner">
+<div class="banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
   <span class="text">See <a href="../../demo/basicdemo/" target="_blank">Basic Demographics</a> for additional demographics variables derived from HBCD Demographics and administrative records collected during study enrolment/screening.</span>
 </div>
@@ -93,16 +93,7 @@ Demographic information is crucial for understanding the child’s environment a
 
 **At subsequent times of assessment (i.e., V04+)**, a selected set of variables that can change over time were re-administered, and several new questions were added (i.e., disability status and access to reliable transportation). Of note, from V04 onward, there is a separate <a href="../demo-ch" target="_blank">Child Demographics</a> form that includes child-focused information including child race and ethnicity, relationship to the child/custody, household roster, type of residence, and household income. In addition, from V04 onward, data on caregiver work/employment characteristics are in a separate form (see <a href="../current-employment" target="_blank">Current Employment</a>).
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ mods_banner() }}
 <div class="collapsible-content">
 <p>Below are alterations made to demographic constructs to tailor it to the HBCD Study. The modifications were made to reduce bias and capture a more inclusive and accurate breadth of demographic information, e.g., by correcting for embedded assumptions of heteronormative nuclear-family structures.</p>
   <ul>
@@ -122,7 +113,7 @@ Demographic information is crucial for understanding the child’s environment a
   </ul>
 </div>
 
-<div id="demo-tables" class="table-banner" onclick="toggleCollapse(this)">
+<div id="demo-tables" class="banner" onclick="toggleCollapse(this)">
  <span class="emoji"><i class="fa fa-magnifying-glass"></i></span>
   <span class="text-with-link">
   <span class="text">Sources for Demographic Protocols & Modifications</span>
@@ -132,7 +123,7 @@ Demographic information is crucial for understanding the child’s environment a
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><b>Table 1. Demographics of Birth Parent</b></p>
 <table class="compact-table-no-vertical-lines">
 <thead>

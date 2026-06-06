@@ -9,7 +9,7 @@ File-based data is provided for imaging, EEG, and biosensor recordings. Unlike [
 ## Raw BIDS
 
 <p>
-<div id="agefields" class="table-banner">
+<div id="agefields" class="banner">
   <span class="emoji"><i class="fa fa-hourglass-half"></i><i class="fa fa-person-cane"></i></span>
 <span class="text">See <a href="../../instruments/agevariables/#file-based-data" target="_blank">Age Variable Definitions</a> for documentation on fields reporting age in raw BIDS data.</span>
 </div>
@@ -46,7 +46,7 @@ hbcd/
 
 ### Participant-, Session-, & Scan-Level Data
 <p>
-<div class="table-banner">
+<div class="banner">
   <span class="emoji"><i class="fa fa-circle-info"></i><i class="fa fa-person-cane"></i></span>
 <span class="text">MRI scanner information is now included in the session-level scans TSV files (<code>sub-[ID]_ses-[V0X]_scans.tsv</code>) and will be made available as tabulated data in a future release.</span>
 </div>

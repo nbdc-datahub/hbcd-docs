@@ -33,7 +33,7 @@ The standard variable naming format is comprised of 4 or 5 **main components** s
  
 Variable names may also include **subcomponents**, separated by double ( `__` ) underscores to indicate nested components of `table`, <code><span style="color: teal;">scale</span></code>, and/or `item`. Subcomponents distinguish finer details such as *subscales*, *versions*, or *counter types*. Finally, **multiselect fields** are preceded by triple underscores ( `___` ), mainly relevant for [Adult](../instruments/SED/demo-cg.md) & [Child](../instruments/SED/demo-ch.md) Demographics table variables.
 
-<div id="example" class="table-banner" onclick="toggleCollapse(this)">
+<div id="example" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
   <span class="text">Example</span>
@@ -43,7 +43,7 @@ Variable names may also include **subcomponents**, separated by double ( `__` ) 
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>Let's break down the following example: <code>ncl_cg_spm2__inf_soc_001</code></p>
 <ul>
 <li><code>ncl</code>: <a href="../../instruments/#ncl">Neurocognition &amp; Language</a> (<em>domain</em>)</li>
@@ -88,7 +88,7 @@ Name of scale within instrument/protocol element for instruments with multiple s
 </tbody>
 </table>
 
-<div id="values-key" class="table-banner" onclick="toggleCollapse(this)">
+<div id="values-key" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-key"></i></span>
   <span class="text-with-link">
   <span class="text">Values Key: <code>domain</code> & <code>source</code></span>
@@ -98,7 +98,7 @@ Name of scale within instrument/protocol element for instruments with multiple s
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content" style="background-color: white;">
+<div class="collapsible-content" style="background-color: white;">
 <div style="display: flex; gap: 24px; align-items: flex-start; padding-top: 5px;">
 <table class="compact-table-no-vertical-lines" style="flex: 1; padding-left: 20px;">
 <thead>
@@ -131,7 +131,7 @@ Name of scale within instrument/protocol element for instruments with multiple s
 </div>
 </div>
 
-<div id="administrative-summary-score-variables" class="table-banner" onclick="toggleCollapse(this)">
+<div id="administrative-summary-score-variables" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
   <span class="text">Administrative & Summary Score Variables</span>
@@ -141,7 +141,7 @@ Name of scale within instrument/protocol element for instruments with multiple s
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>Administrative and summary score <a href="../metadata/#variable-types" target="_blank">variable types</a> include <b>administrative fields</b> and <b>score labels</b> in place of the <code>item</code> naming component, respectively. Possible values include:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>

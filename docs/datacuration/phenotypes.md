@@ -2,7 +2,7 @@
 # Tabulated Data
 
 <p>
-<div id="agefields" class="table-banner">
+<div id="agefields" class="banner">
   <span class="emoji"><i class="fa fa-hourglass-half"></i><i class="fa fa-person-cane"></i></span>
 <span class="text">See <a href="../../instruments/agevariables/#tabulated-instrument-data" target="_blank">Age Variable Definitions</a> for documentation on fields reporting age in tabulated instrument data.</span>
 </div>
@@ -44,14 +44,14 @@ Tabulated data are available in two formats, **plain text files** (`.tsv`/`.csv`
 
 Tabulated data are provided in multiple formats to support a range of tools and user preferences. **Plain text files** (`.tsv`/`.csv`) are widely compatible and easy to open/inspect in Excel or text editors and have metadata (including column types, variable labels, categorical coding, etc.) stored in accompanying `.json` files. [Apache Parquet](https://parquet.apache.org/), or simply **Parquet** (`.parquet`), is a modern, compressed columnar format optimized for analysis and large-scale data. Unlike plain text files, metadata is embedded directly in parquet files, ensuring correct data types and enabling efficient loading and analysis in Python or R.
 
-<div id="csv-vs-parquet" class="table-banner" onclick="toggleCollapse(this)">
+<div id="csv-vs-parquet" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
     <span class="text">Which format should I use?</span>
     <a class="anchor-link" href="#csv-vs-parquet" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
   <thead>
     <tr>
@@ -108,7 +108,7 @@ For large data, plain text formats (TSV/CSV) can cause import issues (in Python,
 #### Working with Parquet in Python and R
 
 <p>
-<div id="load-parquet" class="table-banner" onclick="toggleCollapse(this)">
+<div id="load-parquet" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji" style="margin-right: 4px;"><i class="fa-brands fa-python"></i>&nbsp;<i class="fa-brands fa-r-project"></i></span>
   <span class="text-with-link">
   <span class="text">Loading Parquet Files</span>
@@ -140,7 +140,7 @@ For large data, plain text formats (TSV/CSV) can cause import issues (in Python,
 
 Each TSV or Parquet file in `/rawdata/phenotype/` has a corresponding **shadow matrix file** in the same format that record the reason for missing values (e.g., `Don't know`, `Decline to Answer`, `Logic Skipped`, etc.) in the phenotype data.
 
-<div id="sm-values" class="table-banner" onclick="toggleCollapse(this)">
+<div id="sm-values" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
   <span class="text">Shadow Matrix Values for Missingness</span>
@@ -227,7 +227,7 @@ Shadow matrices make analyses cleaner and more reliable by:
 
 While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, **there are situations where non-responses are themselves meaningful.** For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables. To understand patterns of missing data, users can re-integrate the non-responses from the shadow matrix back into the data using the following helper functions (*click to expand*):
 
-<div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
+<div id="python-helper-function" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-brands fa-python"></i></span>
   <span class="text-with-link">
   <span class="text">Python</span>
@@ -278,7 +278,7 @@ create_dataset(
 
 </div>
 
-<div id="r-helper-function" class="table-banner" onclick="toggleCollapse(this)">
+<div id="r-helper-function" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-brands fa-r-project"></i></span>
   <span class="text-with-link">
   <span class="text">R (using <a href="../../access/tools.md#tabulated-data">NBDCtools</a>)</span>

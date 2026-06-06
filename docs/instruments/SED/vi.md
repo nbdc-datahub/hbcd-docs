@@ -45,16 +45,7 @@ Some immigrants may consider American culture as their family culture. They can 
 
 Participants are not to be asked about immigration or documentation status. The intent is that they only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided.
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>The family culture subscore is the mean of the 9 items asking about "family culture," whereas the mainstream subscore is the mean of the 9 items asking about "American culture."</p>
 <p>Family culture questions are even-numbered: <code>sed_cg_via_006</code> through <code>sed_cg_via_022</code>.</p>

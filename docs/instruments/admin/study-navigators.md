@@ -97,7 +97,7 @@ There are four options the Study Navigator can select to indicate actions taken,
 </tbody>
 </table>
 
-<div id="metadata" class="table-banner" onclick="toggleCollapse(this)">
+<div id="metadata" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
     <span class="text">Study Navigator Variables - General</span>
@@ -107,7 +107,7 @@ There are four options the Study Navigator can select to indicate actions taken,
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
   <thead>
     <tr>
@@ -195,7 +195,7 @@ There are four options the Study Navigator can select to indicate actions taken,
 </table>
 </div>
 
-<div id="metadata-barriers" class="table-banner" onclick="toggleCollapse(this)">
+<div id="metadata-barriers" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
     <span class="text">Study Navigator Variables - Barriers Checkboxes</span>
@@ -205,7 +205,7 @@ There are four options the Study Navigator can select to indicate actions taken,
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>The following fields include data for topics discussed & actions taken.</p>
 <table class="compact-table-no-vertical-lines">
 <tfoot>

@@ -31,7 +31,7 @@
 
 MRI summary forms are checklists completed by MRI technicians before and after each scan session. Expand the sections below for an overview of the information included in each form.
 
-<div id="scan-session-form" class="table-banner" onclick="toggleCollapse(this)">
+<div id="scan-session-form" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-circle-info"></i></span>
 <span class="text-with-link">
   <span class="text">MRI Scan Session Summary Form</span>
@@ -41,7 +41,7 @@ MRI summary forms are checklists completed by MRI technicians before and after e
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -82,7 +82,7 @@ MRI summary forms are checklists completed by MRI technicians before and after e
 </table>
 </div>
 
-<div id="data-form" class="table-banner" onclick="toggleCollapse(this)">
+<div id="data-form" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-circle-info"></i></span>
 <span class="text-with-link">
   <span class="text">MRI Data Summary Form</span>
@@ -92,7 +92,7 @@ MRI summary forms are checklists completed by MRI technicians before and after e
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -137,7 +137,7 @@ MRI summary forms are checklists completed by MRI technicians before and after e
 
 The Pre-Scan Questionnaire is completed by HBCD Study staff when planning MRI procedures. It captures caregiver-reported sleep routines, habits, and environment. **Note that missingness may vary across sites.** Expand the section below for a summary of key item questions and response options. 
 
-<div id="items" class="table-banner" onclick="toggleCollapse(this)">
+<div id="items" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-circle-info"></i></span>
 <span class="text-with-link">
   <span class="text">Pre-Scan Questionnaire Items Summary</span>
@@ -147,7 +147,7 @@ The Pre-Scan Questionnaire is completed by HBCD Study staff when planning MRI pr
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">
 <i style="color: #00aeae;" class="fa fa-square-check"></i>&nbsp;= Multi-select (Check all that apply)

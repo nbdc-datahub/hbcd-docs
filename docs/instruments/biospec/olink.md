@@ -29,7 +29,7 @@ The Olink dataset is provided as  <a href="../../../datacuration/file-based-data
 <tr> <td><strong>Dimensions</strong></td> <td>538,080 rows × 16 columns</td> <td>1,416 rows × 1,522 columns</td> </tr> 
 </tbody> </table>
 
-<div id="vars" class="table-banner" onclick="toggleCollapse(this)">
+<div id="vars" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
     <span class="text">Long & Wide File Variables</span></span>
@@ -39,7 +39,7 @@ The Olink dataset is provided as  <a href="../../../datacuration/file-based-data
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>Reference: <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview</a></p><br>
 
 <p style="font-size: 0.9em; color: #696969ff; font-weight: bold;">

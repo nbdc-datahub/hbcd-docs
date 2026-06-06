@@ -31,7 +31,7 @@ Scoring verification, data consistency checks, and checks for missingness.
 
 The **CABr-SF** is a 15-item scale indexing lifetime and current experiences and frequency (in the past 12 months) with physical, sexual, and psychological abuse. It is participant self-administered and administered in a private setting away from any additional adults who may have accompanied the participant to the visit. 
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+<div id="hbcd-mod" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-gear"></i></span>
 <span class="text-with-link">
   <span class="text">HBCD Modification Details</i></span>
@@ -41,23 +41,14 @@ The **CABr-SF** is a 15-item scale indexing lifetime and current experiences and
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><b>General</b><br>
 Language was updated to use gender-neutral terminology in the definition of intimate partner in the methods section (e.g.,"Current or former husband, partner or boyfriend/girlfriend" was replaced with "spouse, partner, significant other"). Researcher should consider noting this in publications using this data.</p>
 <p><b>Response Option Changes</b><br>
 “Don’t know” and “Decline to answer” were added as response options for HBCD.</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>The CABr-SF has 16 questions. Question 1 is a gateway ("Have you ever been in an intimate relationship?"). Questions 2–16 (15 items) are abuse experience items. The summary score is computed as the mean of the abuse experience responses (questions 2-16), multiplied by 15; summary scores are only calculated if participants responded to at least 11 of the 15 abuse experience items. Note that in the updated scoring procedures, "Don’t Know" and "Decline to answer" are regarded as missing or non-responses.</p>
 </div>

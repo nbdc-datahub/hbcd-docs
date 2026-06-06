@@ -26,7 +26,7 @@ The **Perceived Stress and Social Support (PROMIS)** tools assess caregiver perc
  - PROMIS Emotional Support 4a (first 4 questions): Evaluates the quality of emotional support available to the participant
  - Perceived Stress Scale-4 (PSS-4) (last 4 questions): Shortened version of the PSS-14 that measures general perceived stress over the past month, used widely used across different populations (including pregnant individuals and young families)
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+<div id="hbcd-mod" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
     <span class="text">HBCD Modification Details</span>
@@ -40,16 +40,7 @@ The **Perceived Stress and Social Support (PROMIS)** tools assess caregiver perc
 <p>Response options for the PROMIS were modified to include the addition of “Don’t know” and “Decline to answer.”</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p><b>PROMIS Emotional Support 4a</b><br>
 Emotional support is reported on a 5-point Likert scale. Total raw scores (<code>total_raw_score</code>) are calculated as the sum of all item responses and are only computed when all items are answered<b style="font-size: 1.1em;">*</b>. Raw scores are converted to scale/T-scores (<code>scale_score</code>) with standard errors (<code>standard_error</code>) using the <a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Emotional_Support_Scoring_Manual.pdf">official scoring tables</a> (see table "PROMIS Emotional Support 4a"). Higher scores indicate greater emotional support. To include participants with missing item responses, researchers may instead use the <a href="https://www.assessmentcenter.net/ac_scoringservice">HealthMeasures Scoring Service</a> to generate T-scores.</p>

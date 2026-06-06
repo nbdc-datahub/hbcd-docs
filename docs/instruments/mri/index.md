@@ -126,7 +126,7 @@ Acquisition specs, extracted post-BIDS conversion from JSON metadata, must fall 
 Structural and functional MRI derivatives with an average <a href="../qc/#brainswipes/" target="_blank">BrainSwipes</a> QC score < 0.5 were flagged for expert manual review; data with severe QC issues were excluded from release data. V02 sessions processed using Infant FreeSurfer (`hash-2afa9081`) for surface reconstruction were only partially evaluated due to generally poor quality and should not be used for analysis - <a href="fmri/#warning">see Data Warning</a>.
 
 
-<div id="deriv-exclusions" class="table-banner" onclick="toggleCollapse(this)">
+<div id="deriv-exclusions" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
   <span class="text">Processed Data Exclusion/Removal</span>
@@ -136,7 +136,7 @@ Structural and functional MRI derivatives with an average <a href="../qc/#brains
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>The table below reports the percentage of session folders removed due to QC failures for each visit.</p>
 <table class="table-no-vertical-lines">
 <tfoot><tr><td colspan="5"><b>*</b> Structural QC passed; one or more BOLD runs failed QC</td></tr></tfoot>

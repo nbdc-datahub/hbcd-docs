@@ -2,7 +2,7 @@
 
 ## Data Access/Use
 
-<div id="faq-access" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-access" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">How do I access the data?</span>
@@ -16,7 +16,7 @@
 <p>Please see instructions for data access <a href="../../access/download">here</a>.</p>
 </div>
 
-<div id="faq-nonus" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-nonus" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">I’m from a non-US institution - can I access the data?</span>
@@ -31,7 +31,7 @@
 <p>Please also see <a href="https://www.federalregister.gov/executive-order/14117">Executive Order 14117</a> that may cause data access issues for users within certain countries.</p>
 </div>
 
-<div id="faq-cost" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-cost" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">Is there a cost to access the data?</span>
@@ -45,7 +45,7 @@
 <p>There is no direct cost or fee for HBCD data access.</p>
 </div>
 
-<div id="faq-los" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-los" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">I am writing a proposal to use HBCD data, can you write a letter of support?</span>
@@ -59,7 +59,7 @@
 <p>The HBCD Administrative Core (HCAC) and the HBCD Data Coordinating Center (HDCC) do not provide letters that could be interpreted as endorsements for specific applications or projects proposing secondary analyses of HBCD Study data. However, we are committed to fostering open communication with the broader scientific community. To support this, we can provide a letter outlining our commitment to facilitating access to information about the HBCD Data Resource, helping researchers obtain the details they need to pursue their specific aims. To request such a letter, please contact Lilly Tureaud at ltureaud@health.ucsd.edu.</p>
 </div>
 
-<div id="faq-irb" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-irb" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">Do I need IRB approval to use these data?</span>
@@ -73,7 +73,7 @@
 <p>Each institution has their own definitions and requirements surrounding whether the use of the de-identified HBCD data is considered to be human subjects research. Please consult directly with your IRB. </p>
 </div>
 
-<div id="faq-ai" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-ai" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">Can I use ChatGPT/generative AI tools to create figures and graphs for HBCD data?</span>
@@ -89,7 +89,7 @@
 
 ## Release Data
 
-<div id="faq-protocol" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-protocol" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
   <span class="text-with-link">
     <span class="text">Where can I find the protocol for the HBCD study?</span>
@@ -111,7 +111,7 @@
 </ul>
 </div>
 
-<div id="faq-tab-vs-fb" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-tab-vs-fb" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">What are and what is the difference between tabulated and file-based data?</span>
@@ -125,7 +125,7 @@
 <p>HBCD Study data includes data in both tabulated and file-based formats - see the <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for an explanation of how these file types.</p>
 </div>
 
-<div id="faq-subids" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-subids" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">How do I determine whether data is associated with the birth parent or the child?</span>
@@ -139,7 +139,7 @@
 <p>The <b>source</b> element in the <a href="../../standards/metadata/">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../standards/naming-conventions" target="_blank">Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../datacuration/phenotypes/#study-design-logic-child-centric-data-structure">here</a>.</p>
 </div>
 
-<div id="faq-age" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-age" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">What is the difference between the fields reporting age?</span>
@@ -159,7 +159,7 @@
 </p>
 </div>
 
-<div id="faq-underscores" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-underscores" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">What is the significance of single versus double underscores in table and field names?</span>
@@ -178,7 +178,7 @@
 <!-- 
 REVIEW & REVISE THIS FAQ
 
-<div id="faq-qcrec" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-qcrec" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">Which imaging data are recommended for analysis?</span>
@@ -207,7 +207,7 @@ REVIEW & REVISE THIS FAQ
 </div> -->
 
 
-<div id="faq-mriprotocol" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-mriprotocol" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">Where can I find more information about the imaging protocol?</span>
@@ -221,7 +221,7 @@ REVIEW & REVISE THIS FAQ
 <p>Please see <a href="https://hbcdsequences.readthedocs.io">HBCD Study MRI Protocols</a>.</p>
 </div>
 
-<div id="faq-scanner-info" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-scanner-info" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">Where can I find MRI scanner information?</span>
@@ -235,7 +235,7 @@ REVIEW & REVISE THIS FAQ
 <p>MRI scanner information, including <i>scanner manufacturer, model, software, and serial_number</i>, can be found in the raw BIDS data, including the session-level <a href="../../datacuration/file-based-data/#participant-session-scan-level-data">scans TSV files</a> (<code>sub-[ID]_ses-[V0X]_scans.tsv</code>) and imaging file JSON metadata. Scanner information may be additionally provided as tabulated data in a future release.</p>
 </div>
 
-<div id="faq-dataproc" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-dataproc" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">What methods were used to process imaging data?</span>
@@ -249,7 +249,7 @@ REVIEW & REVISE THIS FAQ
 <p>Please refer to the <a href="../../standards/processing">HBCD Processing Pipelines</a> for an overview of the pipelines and software standards. For full documentation on how each pipeline was used for HBCD processing, please visit the external <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> page.</p>
 </div>
 
-<div id="faq-FS" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-FS" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">Are FreeSurfer processing outputs included in the release data?</span>
@@ -264,7 +264,7 @@ REVIEW & REVISE THIS FAQ
 See <a href="../../instruments/mri/fmri/#m-crib-s-freesurfer">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> for details.</p>
 </div>
 
-<div id="faq-raw" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-raw" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">How can I download raw DICOM or source data?</span>
@@ -278,7 +278,7 @@ See <a href="../../instruments/mri/fmri/#m-crib-s-freesurfer">M-CRIB-S & FreeSur
 <p>Unprocessed raw imaging DICOM files will be made publicly available in a <a href="../../changelog/issues-updates/#pending-updates">future release</a>. However, raw data converted to the Brain Imaging Data Structure (BIDS) standard is currently available - see <a href="../../datacuration/file-based-data/#raw-bids">Raw BIDS</a>.</p>
 </div>
 
-<div id="faq-dmri" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-dmri" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">Where are the dMRI gradient tables?  </span>
@@ -292,7 +292,7 @@ See <a href="../../instruments/mri/fmri/#m-crib-s-freesurfer">M-CRIB-S & FreeSur
 <p>Raw dMRI gradient tables are located in the raw BIDS data - see <a href="../../instruments/mri/dmri/#rawbids">Raw BIDS Files (<code>dwi/</code>)</a>. Processed gradient tables, adjusted for head rotation, are additionally provided in the <a href="../../instruments/mri/dmri/#qsiprep">QSIPrep derivatives</a>.</p>
 </div>
 
-<div id="faq-fmap" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-fmap" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">When should I use EPI fieldmaps?</span>
@@ -306,7 +306,7 @@ See <a href="../../instruments/mri/fmri/#m-crib-s-freesurfer">M-CRIB-S & FreeSur
 <p>HBCD image processing pipelines use field maps to perform distortion correction for structural and functional MRI data. Most researchers will likely use the processed data for their analyses and therefore do not need to use the fieldmaps for anything, as all pipeline output derivatives are already distortion corrected. However, if using the <a href="../../datacuration/file-based-data/#raw-bids">raw BIDS data</a> for your research, note that each fMRI acquisition will have a specific pair of fieldmaps associated with it, acquired in AP and PA phase encoding directions, located under <code>fmap/</code>. The matching EPI fieldmaps can easily be identified by the run number, specified by <code>run-[X]</code> in the filename (<a href="../../instruments/mri/fmri/#rawbids">see details</a>).</p>
 </div>
 
-<div id="faq-qc" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-qc" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">Why are manual raw data QC scores available for only a subset of imaging data?</span>
@@ -320,7 +320,7 @@ See <a href="../../instruments/mri/fmri/#m-crib-s-freesurfer">M-CRIB-S & FreeSur
 <p>Quality control (QC) metrics derived from automated and manual raw data QC procedures (described in the section <a href="../../instruments/mri/qc/#raw-mr-data-qc">Raw MR Data QC</a>) are provided for each scan in session-level <code>sub-[ID]_ses-[V0X]_scans.tsv</code> files. A sampling approach was used to select a subset of data for manual review based on the automated QC metrics. Therefore, while <b>automated</b> QC metrics are available for all scans, not all will include <b>manual</b> QC metrics. Also note that although the <code>QC</code> field is the overall manual QC score of 1 (pass) or 0 (fail), this field will automatically have a score of 1 if only automated QC was performed.</p>
 </div>
 
-<div id="faq-fov" class="table-banner" onclick="toggleCollapse(this)">
+<div id="faq-fov" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
     <span class="text">Why is the cerebellum sometimes cut off in functional and diffusion MRI scans?</span>

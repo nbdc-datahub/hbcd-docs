@@ -35,30 +35,12 @@ The **Sensory Processing Measure – Infant/Toddler (SPM-2)** is designed to ass
 
 This questionnaire asks about the ways the child sensory systems contribute to daily functioning. The caregiver selects whether their child’s behavior during the past month never, occasionally, frequently, or always resembles the behavior described. Seven sensory domains are assessed as well as functions related to ideas/planning and social relatedness. 
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ mods_banner() }}
 <div class="collapsible-content">
 <p>For HBCD, the response option ‘Decline to answer’ was added to all questions.</p> 
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>The proprietary reference sample tables from which the SPM-2 summary scores were derived are available from Western Psychological Services (Parham et al. 2021). These items contain imputed scores based on tables from the publisher. At this time, released data does not specify the exact items that have been imputed.</p>
 </div>

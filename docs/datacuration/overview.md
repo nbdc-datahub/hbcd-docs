@@ -14,7 +14,7 @@ File-based data is an umbrella term for all other data that isn't tabulated, typ
 
 ## Folder Structure
 
-<div id="filetrees" class="table-banner" onclick="toggleCollapse(this)">
+<div id="filetrees" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-info"></i></span>
   <span class="text-with-link">
   <span class="text">How To Read File Trees</span>
@@ -24,7 +24,7 @@ File-based data is an umbrella term for all other data that isn't tabulated, typ
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><b>The following conventions are used to improve readability of file tree diagrams throughout this site:</b></p>
 <ul>
 <li><strong>Square brackets <code>[ ]</code></strong> indicate placeholders with many possible values that are not exhaustively listed, e.g., <code>sub-[ID]</code></li>

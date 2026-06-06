@@ -43,17 +43,8 @@ Protective and Compensatory Experience (PACEs) is a 10-question scale with score
 </tbody>
 </table>
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+{{ mods_banner() }}
+<div class="collapsible-content">
 <p>“Decline to answer” was added as a response option for all items. Instruction item language was also modified as follows:</p>
 <ul>
 <li>Original text: <i>On a scale of 1 to 5, fill the circle of the number that best describes how often each of the items occurred.</i>
@@ -61,16 +52,7 @@ Protective and Compensatory Experience (PACEs) is a 10-question scale with score
 </ul>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p><b>Current PACEs (C-PACEs)</b><br>
 Item responses can range from 1 (Never) to 5 (Very Often). The summary score is calculated as the average of responses to the 10 items (<code>sed_bm_paces_001</code> through <code>sed_bm_paces_010</code>), yielding scores from 1 to 5, with higher scores indicating more protective experiences.<br>

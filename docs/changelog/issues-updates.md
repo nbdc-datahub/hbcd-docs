@@ -210,6 +210,14 @@ The currently included Sequence field is blank across all instruments and will b
 <tbody>
 
 <tr>
+<td>Bayley-4</td>
+<td><i class="fas fa-bug icon-bug"></i>
+Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis.
+</td>
+<td><span class='pr-pill pr-general'>3</span></td>
+</tr>
+
+<tr>
 <td>MLDS</td>
 <td><i class="fas fa-bug icon-bug"></i>
 Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values: exclude values &gt;168 hours from analysis.</td>
@@ -311,7 +319,6 @@ ICD codes for the <code>pex_bm_health*</code>  tables are inconsistently provide
 <td><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table>
-
 
 ### Social & Environmental Determinants
 <table class="compact-table-no-vertical-lines issues">

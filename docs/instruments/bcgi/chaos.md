@@ -46,7 +46,7 @@
 
 The **Confusion, Hubbub, and Order Scale (CHAOS)** is a 15-item, self-report scale designed to assess household chaos conceptualized as disorganization, disruption, and a chaotic atmosphere ([Matheny et al., 1995](https://doi.org/10.1016/0193-3973(95)90028-4); [Wilhoit et al., 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8680262/)). The CHAOS is intended to measure two facets of household chaos: 1. routines and organization; 2. disorganization, confusion, and noise. It does not assess other features that have been linked to household chaos, such as shifting family structure or housing instability.
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+<div id="hbcd-mod" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
     <span class="text">HBCD Modification Details</span>
@@ -60,7 +60,7 @@ The **Confusion, Hubbub, and Order Scale (CHAOS)** is a 15-item, self-report sca
 <p>The original CHAOS used True/False responses (<a href="https://doi.org/10.1016/0193-3973(95)90028-4">Matheny et al., 1995</a>), but more recent work favors a 4-point Likert scale for improved sensitivity (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8680262/">Wilhoit et al., 2021</a>). Empirical results suggest consistent scale validity and associations (with child cognitive/behavioral outcomes, parenting, etc.) across both formats (<a href="https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-021-00651-1">Andrews et al., 2021</a>; <a href="https://doi.org/10.1186/s12889-020-08587-8">Marsh et al., 2020</a>). The 4-point scale is also validated in the Spanish language version of CHAOS as well (<a href="https://doi.org/10.15174/au.2019.1971">Sanchez-Mondragon & Flores Herrera, 2019</a>).</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
+<div id="scoring" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-calculator"></i></span>
   <span class="text-with-link">
     <span class="text">Scoring Procedures</span>

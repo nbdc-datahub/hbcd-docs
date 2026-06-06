@@ -25,7 +25,7 @@ This is a modified version of ECHO-wide Cohort Version 01.20 / November 30, 2018
 Version “Caregiver Occupation and Employment”. Caregiver employment and industry can provide information on socioeconomic position, shift work, and take-home environmental exposures that can adversely affect the health of children in the home, especially at young ages when children spend time on the floor and have hand-to-mouth behaviors ([National Institute for Occupational Safety and Health, 2024](https://www.cdc.gov/niosh/reproductive-health/about/take-home.html); [National Institute for Occupational Safety and Health, 1995](https://www.cdc.gov/niosh/docs/97-125/default.html)).
 
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+<div id="hbcd-mod" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-gear"></i></span>
 <span class="text-with-link">
   <span class="text">HBCD Modification Details</span>
@@ -35,7 +35,7 @@ Version “Caregiver Occupation and Employment”. Caregiver employment and indu
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>Instruction prompts were modified to make language more consistent with other sections and assessment items, which included several new items (outlined in table below). Response options were updated to require radio button choices in place of the write-in durations option in the ECHO form.</p>
 
 <table class="compact-table-no-vertical-lines">

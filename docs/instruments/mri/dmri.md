@@ -8,7 +8,7 @@ Full protocols, sequence installation, and operation instructions are available 
 
 ## Processing & Derivatives
 
-<div class="table-banner"> <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> <span class="text"> Full details of HBCD diffusion MRI processing and methods are described in <a href="https://doi.org/10.1101/2025.11.10.687672">Cieslak et al. 2025</a>. </span> </div>
+<div class="banner"> <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> <span class="text"> Full details of HBCD diffusion MRI processing and methods are described in <a href="https://doi.org/10.1101/2025.11.10.687672">Cieslak et al. 2025</a>. </span> </div>
 <p></p>
 
 Diffusion MRI data are preprocessed using **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs motion and distortion correction, MP-PCA denoising, co-registration to T1w images, spatial normalization (ANTs), and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5), [Cieslak et al. 2025](https://doi.org/10.1101/2025.11.10.687672)). Preprocessed outputs are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which runs curated reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. 
@@ -31,11 +31,11 @@ Diffusion MRI data are preprocessed using **[QSIPrep](https://qsiprep.readthedoc
 
 <p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 
-<div id="qsiprep" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
+<div id="qsiprep" class="banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>  <span class="text-with-link">
   <span class="text">QSIPrep Derivatives</span>  <a class="anchor-link" href="#qsiprep" title="Copy link">
   <i class="fa-solid fa-link"></i>  </a>  </span>  <span class="arrow">▸</span></div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <pre class="folder-tree" style="font-size: 11px;">
 hbcd/
 └── derivatives/
@@ -74,12 +74,12 @@ hbcd/
 </pre>
 </div>
 
-<div id="qsirecon" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+<div id="qsirecon" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span><span class="text-with-link">
   <span class="text">QSIRecon Derivatives</span><a class="anchor-link" href="#qsirecon" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><a href="https://qsirecon.readthedocs.io/">QSIRecon</a> outputs are organized into separate derivative folders by reconstruction workflow. 
 The <code>qsirecon/</code> directory stores workflow metadata and logs. <i><b>Below:</b> Each folder corresponds to a reconstruction method; outputs are organized by session and modality (dwi/ + figures). For brevity, logs, figures, and JSON sidecars filenames are not shown.</i></p>
 <pre class="folder-tree" style="font-size: 11px;">
@@ -148,7 +148,7 @@ Association<span class="var">{LABEL}</span>, Cerebellum<span class="var">{LABEL}
 </pre>  
 </div>
 
-<div id="bundle" class="table-banner" onclick="toggleCollapse(this)">
+<div id="bundle" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-info"></i></span>
   <span class="text-with-link">
   <span class="text">Label Values Legend Extended: DSIStudio <code>BUNDLE</code> Values</span>
@@ -158,7 +158,7 @@ Association<span class="var">{LABEL}</span>, Cerebellum<span class="var">{LABEL}
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <tr><thead><th>{BUNDLE} Values</th><th>Nested Bundle {LABEL} Values</th></thead><tr>
 <tbody>
@@ -203,7 +203,7 @@ DKI extends DTI to capture non-Gaussian diffusion. The main metric is mean kurto
 MAP-MRI Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution. This enables quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>).     
 <i class="fas fa-folder-tree header-icon"></i>**Derivatives**: <a href="#qsirecon">qsirecon-TORTOISE_model-MAPMRI/</a>                  
 
-<div id="mapmri-metrics" class="table-banner" onclick="toggleCollapse(this)">
+<div id="mapmri-metrics" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-atom"></i></span>
   <span class="text-with-link">
   <span class="text">MAP-MRI Metrics</span>
@@ -213,7 +213,7 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>  <tr>    <th>Metric</th>    <th>Description</th>  </tr></thead>
 <tbody>
@@ -236,7 +236,7 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 </table>
 </div>
 
-<div id="model-param-details" class="table-banner" onclick="toggleCollapse(this)">
+<div id="model-param-details" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-atom"></i></span>
   <span class="text-with-link">
   <span class="text">QSIRecon Parametric Microstructure Maps Generated for HBCD</span>
@@ -246,7 +246,7 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -323,7 +323,7 @@ Automated QC for processed diffusion data is fairly robust, with metrics provide
 
 ## References
 
-<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
   <span class="text-with-link">
   <span class="text">References</span>

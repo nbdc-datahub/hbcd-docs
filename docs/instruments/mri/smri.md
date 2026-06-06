@@ -4,7 +4,7 @@
 
 HBCD protocols for structural MRI were informed by recent large-scale developmental neuroimaging studies including [ABCD](https://abcdstudy.org/), HCP Lifespan, and BCP ([Howell et al., 2019](https://pubmed.ncbi.nlm.nih.gov/29578031/)). These studies laid critical foundation for the development of well-validated, high-resolution protocols harmonized across all three major scanner vendors ([Casey et al., 2018](https://doi.org/10.1016/j.dcn.2018.03.001)). In addition, the findings emphasized the importance of T2w acquisition in infants due to suboptimal grey/white T1w contrast resulting from incomplete myelination ([Howell et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.03.049), [Myers et al., 2023](https://doi.org/10.1016/j.neuroimage.2018.03.049)).
 
-<div id="acq" class="table-banner" onclick="toggleCollapse(this)">
+<div id="acq" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
   <span class="text">Acquisition Details</span>
@@ -28,7 +28,7 @@ HBCD protocols for structural MRI were informed by recent large-scale developmen
 ## Processing & Derivatives
 Structural MRI data is used in several processing pipelines. In addition to the derivatives listed below, sMRI is also critical to Infant fMRIPrep and XCP-D, which generate structural-specific derivatives within an <code>anat/</code> subfolder (including T1w/T2w images processed to correct for motion and distortions and surface reconstructions). These derivatives are described on the fMRI page.
 
-<div id="bibsnet-derivs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+<div id="bibsnet-derivs" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
 <span class="text">BIBSNet Derivatives</span>
@@ -38,7 +38,7 @@ Structural MRI data is used in several processing pipelines. In addition to the 
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentation (<a href="https://doi.org/10.1101/2023.03.22.533696">Hendrickson et al. 2024</a>). The <a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet pipeline</a> generates native-space brain segmentations and brain masks (as well as <code>volumes.tsv</code> files with ROI volume statistics), which are fed into Infant fMRIPrep for use in anatomical preprocessing and surface reconstruction.</p>
 <pre class="folder-tree">
 hbcd/
@@ -55,11 +55,11 @@ hbcd/
 </pre>
 </div>
 
-<div id="mriqc" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
+<div id="mriqc" class="banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span><span class="text-with-link">
 <span class="text">MRIQC & BME-X Derivatives</span><a class="anchor-link" href="#mriqc" title="Copy link">  <i class="fa-solid fa-link"></i></a></span>
   <span class="arrow">▸</span></div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><a href="https://mriqc.readthedocs.io/en/latest/about.html">MRIQC</a> extracts image quality metrics (IQMs) for each T1w/T2w and generates visual <code>.html</code> reports. The <a href="https://brain-mri-enhancement.readthedocs.io/">BME-X</a> pipeline performs motion correction, resolution enhancement, denoising, and harmonization of MR images.</p>
 <pre class="folder-tree">
 hbcd/
@@ -87,7 +87,7 @@ hbcd/
 
 ## References
 
-<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
   <span class="text-with-link">
   <span class="text">References</span>

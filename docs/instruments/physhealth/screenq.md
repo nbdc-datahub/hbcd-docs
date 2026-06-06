@@ -48,7 +48,7 @@
 
 **ScreenQ** is designed to measure child screen use patterns. Questions are based on the AAP guidelines for media use. ScreenQ scores have been correlated with language development, working memory and executive functioning.
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
+<div id="hbcd-mod" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
     <span class="text">HBCD Modification Details</span>
@@ -62,16 +62,7 @@
 <p>The HBCD ScreenQ includes additional response options "Decline to answer" and "Don’t know." The impact on scoring is described under <a href="#scoring">Scoring Procedures</a> below. In addition, when the child is mentioned, pronouns were changed from he/she to “the child” for gender neutrality.</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>The ScreenQ is scored in 4 domains:</p>
 <ul>

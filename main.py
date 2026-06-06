@@ -44,6 +44,7 @@ def define_env(env):
 </table>
 """
     
+## ALERT BANNER
     @env.macro
     def alert_banner(
         banner_id="alert",
@@ -67,7 +68,8 @@ def define_env(env):
 <span class="arrow">▸</span>
 </div>
 """
-    
+
+## WARNING BANNER
     @env.macro
     def warning_banner(
         banner_id="warning",
@@ -92,6 +94,51 @@ def define_env(env):
 </div>
 """
     
+## HBCD MODIFICATIONS BANNER
+    @env.macro
+    def mods_banner(
+        banner_id="hbcd-mod",
+        text="HBCD Modifications",
+        icon="fa fa-gear"
+    ):
+        return f"""
+<div id="{banner_id}" class="banner" onclick="toggleCollapse(this)">
+<span class="emoji">
+    <i class="{icon}"></i>
+</span>
+<span class="text-with-link">
+    <span class="text">{text}</span>
+    <a class="anchor-link" href="#{banner_id}" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+<span class="arrow">▸</span>
+</div>
+"""
+    
+## HBCD MODIFICATIONS BANNER
+    @env.macro
+    def scoring_banner(
+        banner_id="scoring",
+        text="Scoring Procedures",
+        icon="fa fa-calculator"
+    ):
+        return f"""
+<div id="{banner_id}" class="banner" onclick="toggleCollapse(this)">
+<span class="emoji">
+    <i class="{icon}"></i>
+</span>
+<span class="text-with-link">
+    <span class="text">{text}</span>
+    <a class="anchor-link" href="#{banner_id}" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+<span class="arrow">▸</span>
+</div>
+"""
+    
+## ISSUES BANNER
     @env.macro
     def issues_banner(
         icon="fas fa-bug"

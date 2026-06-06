@@ -52,7 +52,7 @@ EEG release data include the following - <i>see <a href="../../datacuration/over
 </td></tr>
 </tbody></table>
 
-<div id="rawbids" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
+<div id="rawbids" class="banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
 <span class="text">Raw BIDS Files (<code>eeg/</code>)</span>
@@ -62,7 +62,7 @@ EEG release data include the following - <i>see <a href="../../datacuration/over
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>Each participant’s BIDS <code>eeg/</code> folder contains task-specific .set and .fdt EEG recordings, along with channel metadata (<i>channels</i> and <i>events</i> TSF files). Electrodes are placed on either the head or chest (<i>acq-eeg/ecg</i>) and electrode placement information is stored in <i>electrodes</i> TSV files accompanied by <i>coordsystem</i> JSON files that define the Cartesian coordinates. Finally, the <code>sourcedata/</code> subfolder includes impedance measurements (<i>impedances</i> JSON) used to ensure good electrode contact and task <i>eventlogs</i> txt files describing stimulus presentation timing.<br>
 <p><a href="../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree">
@@ -91,7 +91,7 @@ File Prefixes: sub-[ID]_ses-[V0X]
 <p><b>BIDS Conversion Procedures</b><br>BIDS conversion was performed with the <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application for HBCD EEG data management and formatting, installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which converts them to the BIDS standard.</p>
 </div>
 
-<div id="made" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
+<div id="made" class="banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
 <span class="text">HBCD MADE Derivatives (<code>made/</code>)</span>
@@ -101,7 +101,7 @@ File Prefixes: sub-[ID]_ses-[V0X]
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>EEG data were processed using the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE</a> pipeline, as described in the <a href="#data-processing">Data Processing</a> summary on this page. The file structure of derivative outputs included in the release is as follows:</p>
 <p><a href="../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees</a></p>
 <pre class="folder-tree" style="font-size: 11.5px">

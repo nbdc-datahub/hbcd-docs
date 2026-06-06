@@ -59,30 +59,12 @@ and common issues identified during QC processes that users should be aware of (
 <span style="color: red;">Description of the instrument, including its purpose, constructs measured, and any relevant background information. This section should provide enough context for the user to understand the significance of the instrument within the study. <br>
 PLEASE REMEMBER: this is general documentation for users of the data, so please provide general context to explain what a study measure is in addition to technical details (e.g. can pull from the abstract or introduction text if a paper was published on your measure)</span>
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ mods_banner() }}
 <div class="collapsible-content">
 <p>Modifications made to the instrument for HBCD, including any changes in response options, item wording, or administration procedures. This section should clarify how the HBCD version differs from the original instrument.</p>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ scoring_banner() }}
 <div class="collapsible-content">
 <p>Scoring procedures for the instrument, including how to calculate scores, any algorithms used, and how to interpret the results. This section should provide clear instructions for users to derive meaningful scores from the data collected. Upload the scoring algorithms used for any calculated scores or summary scores as well as the look up tables and any norming used. If this information isn't available online, you can send a PDF as well to include on the website (as long as the information is not proprietary).</p>
 </div>

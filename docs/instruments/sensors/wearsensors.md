@@ -31,7 +31,7 @@ Motion/accelerometry data collected from wearable infant leg sensors include raw
 <td>Processed outputs from the HBCD-Motion pipeline (<code>hbcd_motion/</code> subfolder of <code>derivatives/</code>)</td></tr>
 </tbody></table>
 
-<div id="rawbids" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
+<div id="rawbids" class="banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
   <span class="text">Raw BIDS</span>
@@ -41,7 +41,7 @@ Motion/accelerometry data collected from wearable infant leg sensors include raw
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>
 The raw data include recordings from the left and right leg sensors (<code>motion.tsv</code>) with corresponding <code>channels.tsv</code> files describing each column (and sidecar JSON files with metadata). See <a href="https://doi.org/10.1038/s41597-024-03559-8" target="_blank">Jeung et al., 2024</a> for BIDS conversion procedures.</p>
 <p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
@@ -61,7 +61,7 @@ hbcd/
 </pre>
 </div>
 
-<div id="derivatives" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
+<div id="derivatives" class="banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
     <span class="text">HBCD-Motion Derivatives</span>
@@ -71,7 +71,7 @@ hbcd/
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>Axivity Ax6 sensor recordings of infant leg movements across 72 continuous hours are processed via the HBCD-Motion pipeline. Derivative files are explained in the <a href="https://hbcd-motion-postproc.readthedocs.io/" target="_blank">HBCD-Motion documentation</a>.</p>
 <p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 <pre class="folder-tree" style="font-size: 12px; line-height: 1.4;">
@@ -110,7 +110,7 @@ Issues were generally rare for sensor data and most data were deemed to be prese
 
 ## References
 
-<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
   <span class="text-with-link">
   <span class="text">References</span>

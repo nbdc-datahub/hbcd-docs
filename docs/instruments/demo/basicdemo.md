@@ -176,7 +176,7 @@ Race and ethnicity variables are either computed from administrative records col
 </tbody>
 </table>
 
-<div id="fedstandards" class="table-banner" onclick="toggleCollapse(this)">
+<div id="fedstandards" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i style="font-size: 0.9em;" class="fa fa-calculator"></i></span>
   <span class="text-with-link">
   <span class="text">ACS Combined Race & Ethnicity Logic</span>
@@ -186,7 +186,7 @@ Race and ethnicity variables are either computed from administrative records col
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p><b>ACS combined variables are constructed from ACS race and ethnicity screening items following current federal standards:</b></p>
 <ul>
 <li>Participants who identify as <b>Hispanic or Latino</b> under ethnicity are categorized as <i>Hispanic</i> regardless of race.</li>

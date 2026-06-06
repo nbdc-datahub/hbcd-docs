@@ -21,7 +21,7 @@ Conventional neuroimaging relies on qualitative relaxation-weighted images (e.g.
 
 **Quantitative MRI (qMRI)** addresses these limitations by directly measuring relaxation properties, providing more reliable markers of brain tissue microstructure ([Deoni 2010](https://doi.org/10.1097/RMR.0b013e31821e56d8); [Does 2018](https://doi.org/10.1016/j.neuroimage.2017.12.087)). The HBCD Study acquires 3D-QALAS, a time-efficient 3D sequence that combines interleaved Look-Locker acquisition with a T2-preparation pulse ([Kvernby et al. 2014](https://doi.org/10.1186/s12968-014-0102-0)). This approach enables simultaneous estimation of T1/T2 relaxation times and proton density (PD) maps from a single scan and has been validated across major MRI vendors ([Fujita et al. 2019](https://doi.org/10.1016/j.mri.2019.08.031)).
 
-<div id="acq" class="table-banner" onclick="toggleCollapse(this)">
+<div id="acq" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="text-with-link">
 <span class="text">Acquisition Details</span><a class="anchor-link" href="#acq" title="Copy link">
 <i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span>
@@ -37,7 +37,7 @@ The HBCD protocol includes a short B1+ field map acquisition (~30–45 seconds a
 ## Processing & Derivatives
 qMRI data are processed via <a href="https://syntheticmr.com/products/symri-neuro/">SyMRI</a> followed by minimal post-processing through <a href="https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html">qMRI PostProc</a>. SyMRI derives synthetic T1w/T2w images and quantitative relaxometry maps from 3D-QALAS acquisitions by reintroducing estimated T1/T2 relaxation times into the MR signal equation (Bloch equations).
 
-<div id="qmri-derivs" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
+<div id="qmri-derivs" class="banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
 <span class="text">SyMRI & qMRI PostProc Derivatives</span>
@@ -47,7 +47,7 @@ qMRI data are processed via <a href="https://syntheticmr.com/products/symri-neur
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <pre class="folder-tree">
 <span class="hashtag"># JSON files excluded for brevity</span>
 hbcd/
@@ -81,7 +81,7 @@ hbcd/
 
 ## References
 
-<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
   <span class="text-with-link">
   <span class="text">References</span>

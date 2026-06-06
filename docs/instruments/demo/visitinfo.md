@@ -94,7 +94,7 @@ Visit Information (table name `par_visit_data`) includes general visit informati
 </tbody>
 </table>
  
-<div id="su" class="table-banner" onclick="toggleCollapse(this)">
+<div id="su" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-sliders"></i></span>
   <span class="text-with-link">
   <span class="text">Prenatal Exposure Thresholds</span>
@@ -104,7 +104,7 @@ Visit Information (table name `par_visit_data`) includes general visit informati
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>The thresholds below define when an instrument-specific report is considered positive for prenatal exposure. For each substance, <b>the derived SU flag is positive if one or more of the corresponding instrument-specific reports are positive.</b></p>
 <table class="compact-table-no-vertical-lines" style="width:100%; table-layout:fixed;"> 
 <thead> <tr> 
@@ -144,7 +144,7 @@ Visit Information (table name `par_visit_data`) includes general visit informati
 
 ## Cohort & Caregiver Types
 
-<div class="table-banner" onclick="toggleCollapse(this)">
+<div class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">See <a href="../../../changelog/releasenotes/#participant-population" target="_blank">Release Notes</a> for participant population inclusion/exclusion information.</span>
 </div>

@@ -36,12 +36,12 @@ Urine toxicology assay results include:
 
 <img src="../images/Fig1_biospec_urine.png" width="70%" height="auto" class="center">
 
-<div id="urine-table1" class="table-banner" onclick="toggleCollapse(this)">
+<div id="urine-table1" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-table"></i></span><span class="text-with-link">
 <span class="text">Urine Assay Thresholds for Analytes</span><a class="anchor-link" href="#urine-table1" title="Copy link">
 <i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -90,12 +90,12 @@ Urine toxicology assay results include:
 </table>
 </div>
 
-<div id="urine-table2" class="table-banner" onclick="toggleCollapse(this)">
+<div id="urine-table2" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-table"></i></span>
 <span class="text-with-link"><span class="text">Mapping From Class to Screening & Confirmatory Tests</span>
 <a class="anchor-link" href="#urine-table2" title="Copy link"><i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead><tr><th>Class</th><th>Screening Test</th><th>Confirmatory Test (positive screen reflex)</th></tr></thead>
 <tbody>
@@ -127,7 +127,7 @@ Ketamine (<code>c_ket_u</code>)<br>Norketamine (<code>c_nket_u</code>)<br>Phency
 </table>
 </div>
 
-<div id="validation" class="table-banner" onclick="toggleCollapse(this)">
+<div id="validation" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-clipboard-check"></i></span>
   <span class="text-with-link">
   <span class="text">Validation Procedures</span>
@@ -137,7 +137,7 @@ Ketamine (<code>c_ket_u</code>)<br>Norketamine (<code>c_nket_u</code>)<br>Phency
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <p>Assay results may be scored as invalid if specimens are identified as dilute, substituted, adulterated, or otherwise insufficient based on validation. Validation is based on creatinine, pH, and nitrite measurements, with creatinine analysis repeated to rule out issues with the first analysis (e.g., sample mix-ups, air bubble in a line on the instrument). Specimens with low creatinine (< 20 mg/dL) are confirmed using specific gravity via a refractometer. Decision grid:</p>
 <table class="compact-table">
 <thead><tr><th rowspan="2">Creatinine (mg/dL)</th><th colspan="5" style="text-align: center;">Specific Gravity</th></tr>
@@ -150,17 +150,8 @@ Ketamine (<code>c_ket_u</code>)<br>Norketamine (<code>c_nket_u</code>)<br>Phency
 </table>
 </div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+{{ scoring_banner() }}
+<div class="collapsible-content">
 <p><b>Final results for each substance follow these rules:</b></p>
 <ul>
   <li>
