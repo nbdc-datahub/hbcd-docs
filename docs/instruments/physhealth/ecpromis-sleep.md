@@ -43,7 +43,7 @@
 </table>
 
 {{ warning_banner() }}
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p>Note that summary scores are currently absent from the release data and will be added in the future - see <a href="../../../changelog/issues-updates/#pending-updates" target="_blank">Pending Updates</a>.</p>
 </div>
 

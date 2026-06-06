@@ -1,24 +1,10 @@
-#  DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure—Adult (APA 1/2)
+# APA 1/2
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>pex_bm_apa</code></td></tr>
-<tr><td><b>Construct</b></td><td>Mental Health</td></tr>
-<tr><td><b>Study Visits</b></td><td>V01, V02, V03</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: No<br>
-<b>Respondent</b>: Pregnant Participant, Birth Parent, or Primary Caregiver<br>
-<b>Method</b>: Self-administered in-person or remote (5 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
-<td>
-<ul>
-<li>Checks for missing data based on counts for items completed by each participant</li>
-<li>Verification of scoring accuracy</li>
-<li>Summary statistics to examine item-level frequencies and total scores</li>
-<li>Review of response distributions for potential outliers</li>
-</ul>       
-</td></tr>
-</tbody></table>
+<div class="subtle-note">DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure—Adult</div>
+
+<p></p>
+
+{{ overview_table(instruments.apa) }}
 
 {{ warning_banner() }}
 <div class="collapsible-content">

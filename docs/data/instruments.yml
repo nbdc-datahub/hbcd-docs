@@ -1,3 +1,18 @@
+apa:
+  name: DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure—Adult (APA 1/2)
+  acronym: APA 1/2
+  domain: Pregnancy & Exposure, Including Substance Use
+  table_name: pex_bm_apa
+  construct: Mental Health
+  visits: V01 · V02 · V03
+  administration: Pregnant participant/primary caregiver survey (not child-specific; 5 min)
+  qc: <ul>
+      <li>Checks for missing data based on counts for items completed by each participant</li>
+      <li>Verification of scoring accuracy</li>
+      <li>Summary statistics to examine item-level frequencies and total scores</li>
+      <li>Review of response distributions for potential outliers</li>
+      </ul>
+
 chaos:
   name: Confusion, Hubbub and Order Scale
   acronym: CHAOS

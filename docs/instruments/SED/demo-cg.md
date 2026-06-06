@@ -40,7 +40,7 @@
 </div>
 
 {{ warning_banner() }}
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p><b>Participant-Reported Challenges</b><br>
 Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture identity) and occupation (i.e., imperfect option for job type and number of hours).</p> 
 <hr>

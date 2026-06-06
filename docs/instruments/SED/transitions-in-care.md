@@ -29,7 +29,7 @@
 </div>
 
 {{ warning_banner() }}
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p>Typically, there is only one birth parent TIC Screener form per timepoint. However, if a TIC occurred, there is sometimes one TIC screener filled out when talking to the birth parent and a second screener filled out when talking to the alternate caregiver. This is not an error but reflects how these data were collected. If a TIC occurred, another possibility is that there is only an alternate caregiver TIC form (and not a birth parent form because we were unable to get in touch with the birth parent).</p> 
 </div>
 

@@ -22,7 +22,7 @@ Periodic review of data capture to ensure that items are being fully completed a
 </table>
 
 {{ warning_banner() }}
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p><b>Addition of Response Option "Decline to answer"</b><br>
 The response option "Decline to answer" was added on November 8, 2024 to allow participants to not answer any questions they choose. However, "Decline to answer" is not a response option on the published form and was not used in the reference sample from which the standard scores were derived. It is possible that participants chose “Decline to Answer” rather than “never” for behaviors that have never been seen (for example items related to reacting to food texture for an infant who has not been exposed to solids).</p> 
 </div>

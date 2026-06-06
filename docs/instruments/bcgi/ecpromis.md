@@ -54,7 +54,7 @@
 </div>
 
 {{ warning_banner() }}
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p><b>Data Interpretation</b><br>
 The ecPROMIS assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p> 
 <p><b>Administration at V05 (<i>&lt;1 year</i> vs. <i>1–5 years</i>)</b><br>

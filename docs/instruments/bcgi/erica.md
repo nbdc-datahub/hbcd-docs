@@ -109,7 +109,7 @@ Inter-rater reliability was quantified using a two-way mixed-effects intraclass 
 </div>
 
 {{ warning_banner() }}
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p><b>Integrated Analytic Dataset (REQUIRED)</b></p>
 <p>Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (<code>mh_cg_erica_rel_3_9m</code>) into the primary coding data (<code>mh_cg_erica_3_9m</code>). <b>Failure to integrate these data prior to analysis will result in incorrect results.</b> In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release.</p>
 <p>Download the instructions and required participant lists <i>(available via the <a href="https://hbcd-docs-private.lassoinformatics.com">HBCD Private Release Notes</a> - DUC access required)</i> at the following links:</p>

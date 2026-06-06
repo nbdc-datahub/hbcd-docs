@@ -21,7 +21,7 @@ Scoring verification, data consistency checks, and checks for missingness.
 </table>
 
 {{ warning_banner() }}
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p>Users should not attempt to create their own summary scores when less than 11 items are answered. Please refer to <a href="">Ford-Gilboe et al. 2016</a> for scoring guidance.</p> 
 </div>
 

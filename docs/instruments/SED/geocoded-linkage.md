@@ -10,7 +10,7 @@
 </div>
 
 {{ warning_banner() }}
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p>The geocoded variables were based on intersections between residential addresses reported by participants and geospatial databases built by environmental and neighborhood through publicly available geospatial database, including CDC and EPA. Therefore, the coded values represent estimates about potential exposures or experience given where the participants have spent their time. The accuracy of such estimates would be influenced by multiple factors, including the validity of the original geospatial databases. For detailed information about how original geospatial databases were built by publicly available geospatial databases, including CDC and EPA, please refer to the data dictionary where the link to the source data is provided.</p> 
 </div>
 

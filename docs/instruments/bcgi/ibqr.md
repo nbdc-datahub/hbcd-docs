@@ -48,7 +48,7 @@
 </div>
 
 {{ warning_banner() }}
-<div class="warning-collapsible-content">
+<div class="collapsible-content">
 <p><b>Interpreting IBQ-R and ECBQ Data</b><br>
 The IBQ-R (VSF)+BI and ECBQ (VSF)+BI measure normative variations in infant and child behavior and should be interpreted in the context of the child’s age and developmental stage. These instruments are not clinical or diagnostic tools.</p>
 <p><b>IBQ-R vs ECBQ Administration at V05</b><br>
