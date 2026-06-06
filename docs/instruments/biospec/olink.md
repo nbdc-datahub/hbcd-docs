@@ -39,17 +39,11 @@ The Olink dataset is provided as  <a href="../../../datacuration/file-based-data
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<div class="table-legend">
-  <span class="legend-item">
-  <i class="fa-solid fa-arrows-left-right legend-icon"></i>
-     = Column name is prefixed with assay name in wide file version <i>(<code>{ASSAY}_{COLUMN}</code>)</i>
-  </span>
-</div>
-
-<table class="table-no-vertical-lines">
+<p>Reference: <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview</a></p>
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th>Variable/Column Name</th>
+<th width="20%">Variable</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -64,31 +58,29 @@ The Olink dataset is provided as  <a href="../../../datacuration/file-based-data
 <tr><td><code>Assay</code></td><td>Assay/control name</td></tr>
 <tr><td><code>AssayType</code></td><td>assay, ext_ctrl, inc_ctrl, amp_ctrl</td></tr>
 <tr><td><code>Block</code></td><td>Olink plate block</td></tr>
-<tr><td><code>Count</code> <i class="fa-solid fa-arrows-left-right table-icon"></i>
-</td><td>Raw oligo sequence count value <i>(wide format: <code>{ASSAY}_Count</code>)</i></td></tr>
+<tr><td><code>Count</code>
+</td><td>Raw oligo sequence count value <i>(wide format variable name: <code>{ASSAY}_Count</code>)</i></td></tr>
 <tr>
-<td><code>ExtNPX</code> 
-<i class="fa-solid fa-arrows-left-right table-icon"></i></td>
-<td>Extension-normalized count value <i>(wide format: <code>{ASSAY}_ExtNPX</code>)</i></td></tr>
-<tr><td><code>NPX</code>
-<i class="fa-solid fa-arrows-left-right table-icon"></i>
-</td>
-<td>Protein eXpression normalized by median plate intensity <i>(wide format: <code>{ASSAY}_NPX</code>)</i></td></tr>
+<td><code>ExtNPX</code></td>
+<td>Extension-normalized count value
+<i>(wide format variable name: <code>{ASSAY}_ExtNPX</code>)</i>
+</td></tr>
+<tr><td><code>NPX</code></td>
+<td>Protein eXpression normalized by median plate intensity
+<i>(wide format: <code>{ASSAY}_NPX</code>)</i>
+</td></tr>
 <tr><td><code>PCNormalizedNPX</code> 
-<i class="fa-solid fa-arrows-left-right table-icon"></i>
 </td>
-<td>Plate-control normalized NPX-like value <i>(wide format: <code>{ASSAY}_PCNormalizedNPX</code>)</i></td></tr>
-<tr><td><code>AssayQC</code></td><td>Assay-level QC flag</td></tr>
+<td>Plate-control normalized NPX-like value
+<i>(wide format variable name: <code>{ASSAY}_PCNormalizedNPX</code>)</i></td></tr>
+<tr><td><code>AssayQC</code></td>
+<td>Assay-level QC flag</td></tr>
 <tr><td><code>SampleQC</code></td><td>Sample-level QC flag</td></tr>
 </tbody>
 </table>
-<p>Reference: <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview</a></p>
 </div>
 
 ## Olink Panel Quick Guide
-
-<div class="subtle-note">Olink Explore 384 Inflammation 1 Panel</div>
-<p></p>
 
 <style>
 .assay-grid {
@@ -101,33 +93,20 @@ The Olink dataset is provided as  <a href="../../../datacuration/file-based-data
 .assay-grid span {
   padding: 2px 4px;
 }
-.legend {
-  font-size: 0.85rem;
-  opacity: 0.8;
-}
 .assay-grid span.failed {
   background: #fdeaea;
   color: #b00020;
 }
-.assay-grid span.plate {
-  background: #fff3e6;
-  color: #e67e22;
-}
 </style>
-<input type="text" id="assaySearch" placeholder="Search assays..." />
-<br>
-<label style="margin-left: 15px;">
-  <input type="checkbox" id="qcFailFilter">
-  QC failures only
-</label>
-<label style="margin-left: 15px;">
-  <input type="checkbox" id="plateFilter">
-  Plate effects only
-</label>
-<p class="legend">
-  <span style="color: #b00020;">✖</span> = Failed OLink QC &nbsp;&nbsp;
-  <span style="color: #e67e22;">▲</span> = Significant plate effect
+<p>
+<div class="subtle-note">Olink Explore 384 Inflammation 1 Panel</div>
 </p>
+<input type="text" id="assaySearch" placeholder="Search assays..." />
+<label>
+  <input type="checkbox" id="qcFailFilter">
+  QC failures only <span style="color: #b00020;">✖</span>
+</label>
+
 <div class="assay-grid" id="assayGrid">
 <span>ACTN4</span><span>ADA</span><span>ADAM23</span><span>ADGRE2</span><span>AGER</span><span>AGRN</span><span>AGRP</span><span>ALDH3A1</span><span>AMBN</span><span>AMN</span><span>ANGPT1</span><span>ANGPTL2</span><span>ANGPTL4</span><span>ANXA11</span><span>AOC1</span><span>ARHGEF12</span><span>ARNT</span><span>ARTN</span><span>ATP5IF1</span><span>AXIN1</span><span>B4GALT1</span><span>BACH1</span><span>BANK1</span><span>BCR</span><span>BCL2L11</span><span>BID</span><span>BSG</span><span>BTN2A1</span><span>BTN3A2</span><span>CCL3</span><span>CCL4</span><span>CCL7</span><span>CCL11</span><span>CCL13</span><span>CCL17</span><span>CCL20</span><span>CCL21</span><span>CCL22</span><span>CCL23</span><span>CCL24</span><span>CCL25</span><span>CCL26</span><span>CCL28</span><span>CCN2</span><span>CD4</span><span>CD6</span><span>CD22</span><span>CD40</span>
 <span>CD40LG</span><span>CD48</span><span>CD58</span><span>CD70</span><span>CD79B</span><span>CD83</span><span>CD84</span><span>CD160</span><span>CD200</span><span>CD200R1</span><span>CD244</span><span>CD276</span><span>CDON</span><span>CEACAM21</span><span>CEP164</span><span>CHRDL1</span><span>CLEC4A</span><span>CLEC4C</span><span>CLEC4D</span><span>CLEC4G</span>
@@ -140,52 +119,3 @@ The Olink dataset is provided as  <a href="../../../datacuration/file-based-data
 - [Olink Insight](https://olink.com/software/olink-insight): a web-based data analysis application provided by Olink that can be used for release data 
 - [Olink® Explore Overview User Manual](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf#page=6&zoom=100,170,128)
 
-
-
-<!-- ### Quality Control
-
-#### Olink QC 
-
-Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the [Olink® Explore Overview (*section 7.1 Internal controls*)](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf) for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of *0* for `{ASSAY}_Count` and *NA* for `ExtNPX`, `NPX`, and `PCNormalizedNPX`.    
-***Select “QC failures only” under the [Panel Quick Guide](#olink-panel-quick-guide) to view list of affected assays.*** -->
-
-<!-- This includes the following proteins: BCL2L11 (O43521-2); BID (P55957); CD40LG (P29965); CLEC7A (Q9BXN2); HGF (P14210); IDS (P22304); LTA (P01374);MGLL (Q99685); PTPRM (P28827); RAB6A (P20340) -->
-
-<!-- #### Plate Effects
-
-Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting plate effects are not excluded from release data. Plate effects were assessed using ANOVA with a p-value threshold of *0.0033 (.05 / 15)*. Post-hoc analyses showed that these effects were not driven by a small number of outlier plates, but instead reflected broader plate-to-plate variation. A total of **337 proteins** demonstrated a plate effect when normalizing by plate control; a total of **46 proteins** demonstrated a plate effect when normalizing by median plate intensity.      
-***Select “Plate effects only” under the [Panel Quick Guide](#olink-panel-quick-guide) to view list of affected assays.*** -->
-
-
-
-<!-- 
-<table class="table-no-vertical-lines readme-intro">
-<tbody>
-<tr><td>Release Data</td>
-<td>
-<code>└── concatenated/proteins/olink/inflammation/
-    ├── Olink_allplates_long.csv
-    └── Olink_allplates_wide.csv
-</code>
-</td></tr>
-</td></tr>
-<tr><td>Construct</td><td>Maternal Inflammation</td></tr>
-<tr><td>Type</td><td>Direct assessment of pregnant participant</td></tr>
-<tr><td><b>Study Visits</b></td>
-<td><span class="visit">V01</span></td></tr>
-<tr><td><b>Quality Control</b></td>
-<td>
-<b>Olink QC</b><br>
-Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview (<em>section 7.1 Internal controls</em>)</a> for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of <em>0</em> for <code>{ASSAY}_Count</code> and <em>NA</em> for <code>ExtNPX</code>, <code>NPX</code>, and <code>PCNormalizedNPX</code>.
-<br>
-<br>
-<b>Plate Effects</b><br>
-Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting plate effects are not excluded from release data. Plate effects were assessed using ANOVA with a p-value threshold of 0.0033 (.05 / 15). Post-hoc analyses showed that these effects were not driven by a small number of outlier plates, but instead reflected broader plate-to-plate variation. A total of 337 proteins demonstrated a plate effect when normalizing by plate control; a total of 46 proteins demonstrated a plate effect when normalizing by median plate intensity.
-<br>
-<br>
-<strong><em>Select “Plate effects only” / “QC failures only” under the <a href="#olink-panel-quick-guide">Panel Quick Guide</a> to view lists of affected assays.</em></strong>
-
-</td>
-</tr>
-</tbody>
-</table> -->
