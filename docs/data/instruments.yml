@@ -76,6 +76,25 @@ prescan_q:
   administration: Primary caregiver interview (child-specific)
   qc: Data dashboard monitored for variable missingness, coding errors, and data consistency
 
+urine:
+  name: USDTL Urine Toxicology (Maternal)
+  acronym: Maternal Urine
+  domain: Biospecimens & Omics
+  table_name: bio_bm_biosample_urine_results
+  construct: Drug Panel, Toxins
+  visits: V01
+  administration: Direct Assessment of pregnant/postpartum participant (self-collected; 5 min)
+  qc: Examine assay ranges and categorical versus continuous measures
+  warning1: USDTL Screening Updates
+  warning1_text: As of May 19, 2025, USDTL transitioned the initial urine screening test for fentanyl and sufentanil from LDTD to ELISA. As of November 2025, urine samples were no longer assayed for sufentanil, and USDTL simplified its specimen validity assessment, replacing a multi-parameter algorithm (including pH and nitrite) with a single creatinine-based measure to evaluate urine hydration.
+  warning2: Continuous Variables
+  warning2_text: Continuous variables should be interpreted with caution based on limits of quantification (LOQ), i.e. the minimum concentration at which metabolites can be reliably quantified. See <a href="#urine-table1">Urine Assay Thresholds for Analytes</a>.
+  warning3: Urinary Concentration Corrections
+  warning3_text: Urinary concentration varies by participant. Researchers who wish to correct for urinary concentration in continuous measures, or apply different thresholds, can do so using creatinine or specific gravity results from sample validation.
+  warning4: Large Gaps Between Collection and Analysis Dates
+  warning4_text: A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.
+
+
 
   # qc: <b>Olink QC</b><br>
   #     Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview (<em>section 7.1 Internal controls</em>)</a> for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of <em>0</em> for <code>{ASSAY}_Count</code> and <em>NA</em> for <code>ExtNPX</code>, <code>NPX</code>, and <code>PCNormalizedNPX</code>.

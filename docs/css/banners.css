@@ -107,7 +107,7 @@
 .collapsible-content.open {
   display: block;
   padding: 10px 14px; 
-  border: 1px solid #3333331a;
+  border: 3px solid #3333331a;
   border-top: none;
   margin-bottom: 10px;
 }
@@ -134,8 +134,8 @@
    INFO SECTIONS INSIDE COLLAPSIBLES
 ========================================================= */
 .info-section {
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
   border-bottom: 1px solid #e5e7eb;
 }
 .info-section:last-child {
@@ -145,9 +145,13 @@
 }
 .info-section-title {
   display: inline-block;
-  margin-bottom: 0.35rem;
   font-size: 1.04em;
   font-weight: 700;
   letter-spacing: 0.03em;
   color: #474646;
+}
+/* Adjust spacing between subheaders and text */
+.info-section p {
+  margin-top: 0.5em;
+  margin-bottom: 0;
 }

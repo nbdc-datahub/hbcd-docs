@@ -44,7 +44,64 @@ def define_env(env):
 </table>
 """
     
-## WARNING BANNER
+## WARNING BANNER - INSTRUMENT-SPECIFIC
+    @env.macro
+    def warn_test(inst):
+        return f"""
+<div id="warn" class="banner warn" onclick="toggleCollapse(this)">
+<span class="emoji">
+    <i class="fas fa-exclamation-triangle"></i>
+</span>
+<span class="text-with-link">
+    <span class="text">Data Warning</span>
+    <a class="anchor-link" href="#warn" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+<span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+
+<div class="info-section">
+<div class="info-section-title">
+    {inst.get("warning1")}
+</div>
+<p>
+  {inst.get("warning1_text")}
+</p>
+</div>
+
+<div class="info-section">
+<div class="info-section-title">
+    {inst.get("warning2")}
+</div>
+<p>
+  {inst.get("warning2_text")}
+</p>
+</div>
+
+<div class="info-section">
+<div class="info-section-title">
+    {inst.get("warning3")}
+</div>
+<p>
+  {inst.get("warning3_text")}
+</p>
+</div>
+
+<div class="info-section">
+<div class="info-section-title">
+    {inst.get("warning4")}
+</div>
+<p>
+  {inst.get("warning4_text")}
+</p>
+</div>
+
+</div>
+"""
+    
+## WARNING BANNER - GENERAL
     @env.macro
     def warn_banner(
         banner_id="warn",

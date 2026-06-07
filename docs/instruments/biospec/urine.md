@@ -1,30 +1,12 @@
 # USDTL Urine Toxicology (Maternal)
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>bio_bm_biosample_urine_results</code></td></tr>
-<tr><td><b>Construct</b></td><td>Drug Panel, Toxins</td></tr>
-<tr><td><b>Study Visits</b></td><td>V01</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Respondent</b>: Pregnant/postpartum person<br>
-<b>Method</b>: Self-collected (5 min estimated duration)
-</td></tr>
-<td><b>Quality Control</b></td><td>Examine assay ranges and categorical versus continuous measures</td></tr>
-</tbody>
-</table>
+{{ overview_table(instruments.urine) }}
 
-{{ warn_banner() }}
-<div class="collapsible-content">
-<p><b>USDTL Screening Updates</b><br>
-As of May 19, 2025, USDTL transitioned the initial urine screening test for fentanyl and sufentanil from LDTD to ELISA. As of November 2025, urine samples were no longer assayed for sufentanil, and USDTL simplified its specimen validity assessment, replacing a multi-parameter algorithm (including pH and nitrite) with a single creatinine-based measure to evaluate urine hydration.</p>
-<p><b>Continuous Variables</b><br>
-Continuous variables should be interpreted with caution based on limits of quantification (LOQ), i.e. the minimum concentration at which metabolites can be reliably quantified. See <a href="#urine-table1">Urine Assay Thresholds for Analytes</a>.</p>
-<p><b>Urinary Concentration Corrections</b><br>
-Urinary concentration varies by participant. Researchers who wish to correct for urinary concentration in continuous measures, or apply different thresholds, can do so using creatinine or specific gravity results from sample validation.</p>
-<p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
-</div>
+{{ warn_test(instruments.urine) }}
 
 {{ issues_banner() }}
+
+---
 
 ## Instrument Details
 

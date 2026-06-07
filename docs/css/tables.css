@@ -1,7 +1,9 @@
-/* Table styling */
+/* =========================================================
+   GENERAL TABLE STYLING
+========================================================= */
 table {
     border-collapse: collapse;
-    width: 100%;
+    width: 100% !important;
     table-layout: fixed;
     overflow: visible !important; /* needed in combo with logic below for tooltips to overflow outside of table container */
     font-size: 1.0em;
@@ -12,6 +14,11 @@ table {
     overflow: visible !important;
 }
 
+th {
+    font-size: 1.2em;
+}
+
+
 th, td {
     position: relative;
     overflow: visible;
@@ -20,7 +27,9 @@ th, td {
     white-space: normal !important;
 }
 
-/* Table with no vertical lines */
+/* =========================================================
+   TABLES W/ NO VERTICAL LINES
+========================================================= */
 .table-no-vertical-lines {
   border-collapse: collapse !important;
   width: 100% !important;
@@ -54,7 +63,9 @@ th, td {
   line-height: 1.2;
 }
 
-/* Compact table with no vertical lines */
+/* =========================================================
+   COMPACT TABLE W/ NO VERTICAL LINES
+========================================================= */
 .compact-table-no-vertical-lines {
   width: 100% !important;
   border-collapse: collapse;
@@ -84,24 +95,6 @@ th, td {
   line-height: 1.2;
 }
 
-/* Resolved Known Issues table */
-.icon-text-block {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.icon-link i {
-  font-size: 1.1em;
-  color: #444;
-  vertical-align: middle;
-  min-width: 20px;
-}
-.text-block {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.3;
-}
-
 /* SUBTLE class */
 .subtle {
   font-size: 0.9em;
@@ -109,10 +102,12 @@ th, td {
   font-weight: 400;
 }
 
-/* UNIQUE STYLING FOR README INTRO TABLES */
+/* =========================================================
+   README OVERVIEW/INTRO TABLE
+========================================================= */
 .readme-intro {
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.3;
   table-layout: auto;
 }
 .readme-intro td:first-child {
@@ -130,17 +125,18 @@ th, td {
 /* ICONS INCLUDED IN TABLE ROWS TO RIGHT OF TEXT */
 .table-icon {
   margin-left: 0.4em;
-  font-size: 1em;
+  /* font-size: 1em; */
   color: #199bd6;
 }
 .table-icon-left {
   margin-right: 0.5em;
-  font-size: 1em;
+  /* font-size: 1em; */
   color: #199bd6;
 }
 
-
-/* GROUPING ROWS (e.g. domains or groups in DD table) */
+/* =========================================================
+   GROUP ROWS LOGIC (e.g. domains or groups in DD table)
+========================================================= */
 .table-group-row td {
   color: white;
   background-color: #199bd6 !important;
@@ -148,14 +144,36 @@ th, td {
   font-weight: 500;
   /* text-transform: uppercase; */
   letter-spacing: 0.04em;
+}  
+
+/* =========================================================
+   RESOLVED KNOWN ISSUES TABLE
+========================================================= */
+.icon-text-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon-link i {
+  font-size: 1.1em;
+  color: #444;
+  vertical-align: middle;
+  min-width: 20px;
+}
+.text-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
 }
 
-/* KNOWN ISSUES/PENDING UPDATES PAGE */
+
+/* =========================================================
+   KNOWN ISSUES/PENDING UPDATES PAGE TABLE & OTHER FEATURES
+========================================================= */
 /* TABLE */
 .issues {
     font-size: 0.9em;
 }     
-
 .issues th:last-child,
 .issues td:last-child {
     text-align: center;
@@ -163,13 +181,7 @@ th, td {
 .issues th:first-child,
 .issues td:first-child {
     white-space: nowrap !important;
-}     
-/* .issues tr td:nth-child(2) {
-  white-space: nowrap !important;
-}    */
-/* .issues tr td:nth-child(2) {
-  white-space: nowrap !important;
-}    */
+}   
 
 /* PILLS */
 .pr-pill {
@@ -207,3 +219,16 @@ th, td {
   margin-right: 0.4em;
   font-size: 1em;
 }
+
+
+/* =========================================================
+   DATA DICTIONARY TABLE
+========================================================= */
+/* .dd {
+    font-size: 0.9em;
+}      */
+.dd th:first-child,
+.dd td:first-child {
+    white-space: nowrap !important;
+    font-weight: 550;
+}   
