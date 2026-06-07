@@ -349,10 +349,10 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   <td>Identifier column(s)</td>
   <td>
     <a href="../../datacuration/phenotypes/#table-organization" target="_blank">Participant/session identifiers</a>
-        <div class="dd-inline-list">
-        <span>participant_id</span>
-        <span>session_id</span>
-        <span>run_id</span>
+    <div class="dd-inline-list">
+    <span>participant_id</span>
+    <span>session_id</span>
+    <span>run_id</span>
     </div>
 
   </td>
@@ -390,26 +390,49 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <thead>
 <tr>
 <th>Variable Type</th>
-<th>Description</th>
+<th>Description & Possible Values</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>administrative</td><td>Data that gives context to the assessments, e.g. date, language, quality control, etc.</td>
+<td>administrative</td>
+<td>Data that gives context to the assessments.
+  Possible values include:
+  <div class="dd-inline-list">
+  <span>adjusted_age</span>
+  <span>candidate_age</span>
+  <span>gestational_age</span>
+  <span>date_taken</span>
+  <span>administration</span>
+  <span>lang</span>
+  <span>location</span>
+  </div>
 </tr>
 <tr>
   <td>derived item</td>
   <td>
-      Derived from original participant data, either directly (e.g., <code>sex</code> from administrative records) or by combining variables (e.g., race and ethnicity); see <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a> for examples.
+      Derived from original participant data, either directly (e.g., <code>sex</code> from administrative records) or by combining variables (e.g., race and ethnicity)
+      <div class="dd-inline-list">
+      See <a href="../../instruments/demo/basicdemo/" target="_blank">Basic Demographics</a> for examples
+      </div>
   </td>
 </tr>
 <tr>
-<td>item</td><td>Original data provided by the participant, e.g. questions in a questionnaire</td>
+  <td>item</td>
+  <td>Original data provided by the participant, e.g. questions in a questionnaire</td>
 </tr>
-<tr><td>summary score</td><td>Summary and/or score output based on algorithmic conversions of items/raw data</td>
+<tr>
+  <td>summary score</td>
+  <td>Summary and/or score output based on algorithmic conversions of items/raw data
+    <div class="dd-inline-list">
+      e.g., <i>summary_score, total_score</i>
+    </div>
+  </td>
 </tr>
 </tbody>
 </table>
+
+
 
 
 
