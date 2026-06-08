@@ -181,7 +181,7 @@ Information on chronic conditions and sexually transmitted infections (STIs) dur
 <span class="emoji">    <i class="fas fa-exclamation-triangle"></i>   </span>
 <span class="text-with-link">
     <span class="text">Data Warning</span>
-    <a class="anchor-link" href="#warning-illness" title="Copy link">
+    <a class="anchor-link" href="#data-warning-illness" title="Copy link">
     <i class="fa-solid fa-link"></i>
     </a>
 </span>
@@ -199,7 +199,7 @@ Illness in pregnancy, including start and stop dates and whether the person had 
 <span class="emoji">    <i class="fas fa-exclamation-triangle"></i>   </span>
 <span class="text-with-link">
     <span class="text">Data Warning</span>
-    <a class="anchor-link" href="#warning-erhosp" title="Copy link">
+    <a class="anchor-link" href="#data-warning-erhosp" title="Copy link">
     <i class="fa-solid fa-link"></i>
     </a>
 </span>
@@ -217,7 +217,7 @@ ER visit(s) or hospitalization(s) during pregnancy, including occurrence(s) and 
 <span class="emoji">    <i class="fas fa-exclamation-triangle"></i>   </span>
 <span class="text-with-link">
     <span class="text">Data Warning</span>
-    <a class="anchor-link" href="#warning-meds" title="Copy link">
+    <a class="anchor-link" href="#data-warning-meds" title="Copy link">
     <i class="fa-solid fa-link"></i>
     </a>
 </span>
@@ -235,7 +235,7 @@ Medications used during pregnancy (since last menstrual period), including presc
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning-healthv2-preg" title="Copy link">
+  <a class="anchor-link" href="#data-warning-healthv2-preg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -253,7 +253,7 @@ Health updates for the birth parent between enrollment and delivery, including: 
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning-healthv2-inf" title="Copy link">
+  <a class="anchor-link" href="#data-warning-healthv2-inf" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>

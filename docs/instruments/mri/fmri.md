@@ -15,7 +15,7 @@
 <p>Researchers interested in examining brain-behavior associations or multivariate predictions should follow strategies such as those in <a href="https://doi.org/10.1093/cercor/bhw403">Eggebrecht 2017</a> to: 1) assess how missing data impacts dependent, independent variables and covariates, 2) examine the association between the degrees of freedom and non-FC variables, 3) use trimmed FC measures when needed to mitigate artifacts due to data quality.</p>
 </div>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <h3>V02: Use Derivatives Processed with M-CRIB-S (<code>hash-0f306a2f</code>)</h3>
 <p><b>Recommendation:</b> Use M-CRIB-S derivatives for all neonatal (V02; 0–1 month) analyses (<code>nibabies-0f306a2f</code>/<code>xcp_d-0f306a2f+0ef9c88a</code>)</p>

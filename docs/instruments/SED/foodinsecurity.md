@@ -14,7 +14,7 @@
 </tbody>
 </table>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p>Researchers should be aware that the validated measure uses Yes/No answers and does not account for missing data.</p> 
 </div>

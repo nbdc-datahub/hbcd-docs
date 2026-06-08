@@ -35,7 +35,7 @@
 </tbody>
 </table>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p><b>Range Checks For Growth</b><br>
 Range checks were performed to identify and exclude extreme out-of-range values. Values outside of the following valid ranges were converted to 'n/a'. <i>Note that these ranges are not age-specific, i.e. the same ranges were used for all visits.</i></p>

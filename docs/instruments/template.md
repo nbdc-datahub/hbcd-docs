@@ -5,7 +5,7 @@
 **Table Name**: table name (eg `pex_bm_apa`)       
 **Construct**: [The construct(s) that the measure assesses]
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p>Please provide any issue flagged by subject matter experts that are critical for users of this data. The purpose of this warning is to improve transparency and offer technical assistance by alerting the user to issues of data quality, providing information on how variables were constructed, providing instructions on how to calculate or analyze specific variables, or providing code (if necessary).</p> 
 </div>

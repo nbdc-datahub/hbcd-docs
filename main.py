@@ -46,15 +46,15 @@ def define_env(env):
     
 ## WARNING BANNER - INSTRUMENT-SPECIFIC
     @env.macro
-    def warn_test(inst):
+    def warning_banner_FULL(inst):
         return f"""
-<div id="warn" class="banner warn" onclick="toggleCollapse(this)">
+<div id="warn" class="banner data-warning" onclick="toggleCollapse(this)">
 <span class="emoji">
     <i class="fas fa-exclamation-triangle"></i>
 </span>
 <span class="text-with-link">
     <span class="text">Data Warning</span>
-    <a class="anchor-link" href="#warn" title="Copy link">
+    <a class="anchor-link" href="#data-warning" title="Copy link">
     <i class="fa-solid fa-link"></i>
     </a>
 </span>
@@ -100,11 +100,12 @@ def define_env(env):
 
 </div>
 """
-    
-## WARNING BANNER - GENERAL
+        
+
+## DATA WARNING BANNER - GENERAL
     @env.macro
-    def warn_banner(
-        banner_id="warn",
+    def warning_banner(
+        banner_id="data-warning",
         text="Data Warning",
         icon="fas fa-exclamation-triangle"
     ):

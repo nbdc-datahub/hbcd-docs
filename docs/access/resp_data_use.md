@@ -33,7 +33,7 @@ To facilitate responsible data use and scientific rigor, the following warnings 
 <p>The purpose of the <b>Responsible Use Warning</b> is to offer guidance for research design, data interpretation, and communication of findings, including conceptual information. These warnings also include information on stigma and stigmatizing language related to some variables, or information on the manner in which race variables were conceptualized and collected for this study.</p>
 </div>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p>The purpose of the <b>Data Warning</b> is to improve transparency and offer technical assistance by alerting the user to issues of data quality, providing information on how variables were constructed, providing instructions on how to calculate or analyze specific variables, or providing code (if necessary).</p>
 </div>

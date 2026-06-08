@@ -49,7 +49,7 @@ Addition of all age and <code>date_taken</code> fields (currently excluded due t
 <td>ERICA</td>
 <td>
 <i class="fa-solid fa-rotate icon-rotate"></i>
-A future release will integrate reliability codes into the primary coding dataset. Until then, users must perform this integration manually - see the ERICA <a href="../../instruments/bcgi/erica/#warning">Data Warning</a> for instructions.
+A future release will integrate reliability codes into the primary coding dataset. Until then, users must perform this integration manually - see the ERICA <a href="../../instruments/bcgi/erica/#data-warning">Data Warning</a> for instructions.
 Instructions include cleaning the current files to exclude n=44 participants with incorrect code values (data entry/form errors) and capping <code>b_raw</code> values at 3.0 (n=3 participants), also to be corrected in the next release.
 </td>
 <td><span class='pr-pill pr-general'>3</span></td>
@@ -182,7 +182,7 @@ The 'instruction' data dictionary element is currently blank.</td>
 <tr>
 <td>Multibirth Cohorts</td>
 <td><i class="fa-solid fa-rotate icon-rotate"></i>
-Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be added to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
+Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be added to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#data-warning">see details</a>.</td>
 <td><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
@@ -242,7 +242,7 @@ Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes impl
 </tr>
 <tr>
 <td>Growth</td>
-<td><i class="fas fa-bug icon-bug"></i> <code>ph_ch_anthro</code> filter ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>) and will updated to be age/visit-specific </td>
+<td><i class="fas fa-bug icon-bug"></i> <code>ph_ch_anthro</code> filter ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#data-warning">Range Checks</a>) and will updated to be age/visit-specific </td>
 <td><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
 <tr>
 <td>Growth</td>
 <td><i class="fa-solid fa-rotate icon-rotate"></i>
-Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
+Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#data-warning">Sex-Specific Birthweight for GA</a>).</td>
 <td><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>

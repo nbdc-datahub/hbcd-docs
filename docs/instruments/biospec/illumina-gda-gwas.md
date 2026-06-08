@@ -16,7 +16,7 @@ Analysts using HBCD data have ethical obligations to minimize risks, including p
 <p>Researchers cannot control how others, including members of the public and policy makers, interpret scientific results we publish. However, we can take steps to minimize the likelihood our results will be misinterpreted or overinterpreted. In addition to clearly denoting limitations and caveats when reporting results, specific approaches for working with genomic data in this context are discussed in <a href="https://doi.org/10.1146/annurev-genom-011224-015733">Martshenko et al. (2025)</a>, <i>Social and Behavioral Genomics: On the Ethics of the Research and Its Downstream Applications</i> (<b>Annual Reviews Genomics and Human Genetics</b>). For examples of brief documents that explain social and behavioral genomics for non-experts, see “FAQs on Human Genomics Studies” at <a href="https://www.thehastingscenter.org/genomics-research-index/">https://www.thehastingscenter.org/genomics-research-index/</a>.</p> 
 </div>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p><b>Twins Present in Birth Parents</b><br>
 The dataset includes two birth parents who are monozygotic twins (along with their respective families), which may complicate certain analyses. The participant IDs associated with this twin pair are under internal review and may be shared in a future update.</p> 

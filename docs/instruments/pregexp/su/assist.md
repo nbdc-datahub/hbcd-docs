@@ -34,7 +34,7 @@ Responsible use of prenatal drug exposure data requires thoughtful interpretatio
 <p>Finally, unwarranted speculation about ‘neural bases of behavior’ form differences in neuroimaging between exposed and unexposed children in the absence of differences in behavioral performance can exacerbate stigma already faced by birthing parents with substance use disorders and their children (<a href="https://doi.org/10.1016/j.ntt.2015.07.002">McAllister & Hart 2015</a>).</p> 
 </div>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p>It was difficult for some participants to self-report the typical size of a single drink (in oz) to capture ‘standard drinks’ of alcohol for ASSIST, leading to some reports falling outside the expected range. Similarly, reporting the frequency of use for substances like electronic cigarette devices proved difficult, resulting in outliers. While sites were queried on these outliers, participants could not always be re-contacted for clarification.</p> 
 </div>

@@ -2,7 +2,7 @@
 
 {{ overview_table(instruments.urine) }}
 
-{{ warn_test(instruments.urine) }}
+{{  warning_banner_FULL(instruments.urine) }}
 
 {{ issues_banner() }}
 

@@ -108,7 +108,7 @@ Inter-rater reliability was quantified using a two-way mixed-effects intraclass 
 <p>The ERICA assesses variations in child behavior, parenting, and the caregiver-child relationship and should be interpreted within the context of the child's age and developmental stage. This is not a clinical or diagnostic instrument.</p>
 </div>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p>Prior to analysis, <b>a final, integrated analytic data set</b> must be created, in which data from the reliability codes (<code>mh_cg_erica_rel_3_9m</code>) are integrated into the primary coding data file (<code>mh_cg_erica_3_9m</code>). Please see instructions under <a href="../../../changelog/issues-updates/#behavior-child-caregiver-interaction" target="_blank">Known Issues & Pending Updates</a>. <b>Failure to correctly integrate these data files prior to analysis will result in incorrect analyses.</b></p>
 <p>Data Release 2.1 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month).</p>

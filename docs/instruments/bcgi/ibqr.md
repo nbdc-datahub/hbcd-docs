@@ -47,7 +47,7 @@
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p><b>Interpreting IBQ-R and ECBQ Data</b><br>
 The IBQ-R (VSF)+BI and ECBQ (VSF)+BI measure normative variations in infant and child behavior and should be interpreted in the context of the child’s age and developmental stage. These instruments are not clinical or diagnostic tools.</p>

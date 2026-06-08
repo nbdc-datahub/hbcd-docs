@@ -17,7 +17,7 @@ The **Study Navigator Contact Form** data is provided by the Study Navigator, or
 <p>Study Navigators were strongly encouraged, but not required, to fill out the Study Navigator Contact Form. Guidance was provided to complete the contact form as soon as possible (within 24 hours) after a contact with a participant. Study Navigators were also provided with the option to complete the form to document multiple contacts within a specific time or for a specific participant (text messages, phone calls, etc.). The data is subject to recall bias.</p> 
 </div>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p>The Study Navigator Contact Form was created for the HBCD Study as a document for characterizing participant contacts and support. The form was developed by integrating metrics from documents used in similar support professions (e.g. certified peer support, case managers, doulas, social workers, etc.). Use of the form was strongly encouraged but not mandatory for Study Navigators to complete.</p>
 <p>There is wide variation across HBCD sites and Study Navigators in use of the forms, which should be considered in any analyses conducted and conclusions drawn using contact form data. Additionally, some HBCD sites provided study navigator support to all participants, and some sites focused support on participants with substance use and/or participants experiencing significant adversities.</p> 

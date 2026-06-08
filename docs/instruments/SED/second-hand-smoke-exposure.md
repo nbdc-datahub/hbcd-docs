@@ -17,7 +17,7 @@
 </tbody>
 </table>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p>Participants report information for the child’s primary residence. If a child spends at least 2-days per week in multiple homes, reporters are asked to provide information for the home they are most familiar with. As a result, exposures to secondhand smoke or chemicals in those additional environments is not captured, which may result in incomplete exposure data.</p> 
 </div>

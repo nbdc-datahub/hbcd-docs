@@ -18,7 +18,7 @@ The Auditory mismatch negativity (**MMN**) Task (v.11.29.23) facilitates examini
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning-mmn" title="Copy link">
+  <a class="anchor-link" href="#data-warning-mmn" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -104,7 +104,7 @@ The Faces task (**FACE**) (v.11.29.23) assesses child and infant face processing
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning-face" title="Copy link">
+  <a class="anchor-link" href="#data-warning-face" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -185,7 +185,7 @@ The Visual Evoked Potential Task (**VEP**) (v.11.29.23) measures development of 
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning-vep" title="Copy link">
+  <a class="anchor-link" href="#data-warning-vep" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -254,7 +254,7 @@ The Video Resting State Task (**RS**) (v.11.29.23) provides assessment of the de
   <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning-rs" title="Copy link">
+  <a class="anchor-link" href="#data-warning-rs" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>

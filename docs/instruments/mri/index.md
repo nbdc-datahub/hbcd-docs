@@ -123,7 +123,7 @@ Acquisition specs, extracted post-BIDS conversion from JSON metadata, must fall 
 
 ### Processed Derivatives
 
-Structural and functional MRI derivatives with an average <a href="../qc/#brainswipes/" target="_blank">BrainSwipes</a> QC score < 0.5 were flagged for expert manual review; data with severe QC issues were excluded from release data. V02 sessions processed using Infant FreeSurfer (`hash-2afa9081`) for surface reconstruction were only partially evaluated due to generally poor quality and should not be used for analysis - <a href="fmri/#warning">see Data Warning</a>.
+Structural and functional MRI derivatives with an average <a href="../qc/#brainswipes/" target="_blank">BrainSwipes</a> QC score < 0.5 were flagged for expert manual review; data with severe QC issues were excluded from release data. V02 sessions processed using Infant FreeSurfer (`hash-2afa9081`) for surface reconstruction were only partially evaluated due to generally poor quality and should not be used for analysis - <a href="fmri/#data-warning">see Data Warning</a>.
 
 
 <div id="deriv-exclusions" class="banner" onclick="toggleCollapse(this)">

@@ -187,7 +187,7 @@ In this section we provide a brief overview of each study instrument provided in
 </p>
 <br>
 
-<table class="table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <th>Instrument</th>
 <th>Version</th>

@@ -29,7 +29,7 @@
 <p>The Pearson products, including the Vineland-3, are under copyright agreement. Data use is as signified by the test publisher, <a href="https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Behavior/Vineland-Adaptive-Behavior-Scales-%7C-Third-Edition/p/100001622?tab=overview">Pearson Education, Inc.</a>.</p>
 </div>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p>The Q-Global version of the Vineland-3 is not currently available in Spanish therefore the Vineland-3 was only administered to those parents/caregivers who indicated adequate English proficiency for completing this instrument.</p>
 <p>In addition, at V05, note that a small number of participants (N=5) were administered the Vineland-3 at 18-22 months of age, outside of the V05 visit window of 10-17 months of age.</p>

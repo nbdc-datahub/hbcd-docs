@@ -180,7 +180,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   <td><code>url_table_warn_data</code></td>
   <td>Data Warning (table)</td>
   <td>
-    Table-level <a href="../../access/resp_data_use/#warnings" target="_blank">Data Warning</a>
+    Table-level <a href="../../access/resp_data_use/#data-warnings" target="_blank">Data Warning</a>
   </td>
 </tr>
 
@@ -188,7 +188,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   <td><code>url_table_warn_use</code></td>
   <td>Responsible Use Warning (table)</td>
   <td>
-    Table-level <a href="../../access/resp_data_use/#warnings" target="_blank"> Responsible Use Warning</a>
+    Table-level <a href="../../access/resp_data_use/#data-warnings" target="_blank"> Responsible Use Warning</a>
   </td>
 </tr>
 
@@ -324,13 +324,13 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <tr>
   <td><code>url_warn_data</code></td>
   <td>Data Warning (var)</td>
-  <td>Variable-level <a href="../../access/resp_data_use/#warnings" target="_blank">Data Warning</a></td>
+  <td>Variable-level <a href="../../access/resp_data_use/#data-warnings" target="_blank">Data Warning</a></td>
 </tr>
 
 <tr>
   <td><code>url_warn_use</code></td>
   <td>Responsible Use Warning (var)</td>
-  <td>Variable-level <a href="../../access/resp_data_use/#warnings" target="_blank">Responsible Use Warning</a></td>
+  <td>Variable-level <a href="../../access/resp_data_use/#data-warnings" target="_blank">Responsible Use Warning</a></td>
 </tr>
 
 <!-- DISPLAY -->

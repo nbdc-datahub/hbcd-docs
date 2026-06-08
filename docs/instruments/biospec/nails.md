@@ -13,7 +13,7 @@
 </tbody>
 </table>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p><b>USDTL Screening Updates</b><br>
 As of November 2025, USDTL no longer assayed sufentanil in the nail samples.</p>

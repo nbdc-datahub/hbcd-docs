@@ -1,18 +1,20 @@
 <style>
-  .naming-pattern {
+.naming-pattern {
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: 600;
   margin: 1em 0;
 }
+
 .naming-pattern code {
   background: var(--md-code-bg-color, #f5f5f5);
   padding: 2px 6px;
   border-radius: 4px;
 }
-.suffix {
-  color: teal;
-  font-weight: 500;
+.table-name-part {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
 }
 </style>
 
@@ -23,10 +25,12 @@ The instrument table and variable names used for <a href="../../datacuration/phe
 ## Convention Logic & Rules
 
 Variable names are constructed from a set of ordered **main components** separated by single underscores. **Subcomponents**, if present, are preceded by double or triple underscores, which represent *subscale*, *version*, or *counter type* and multiselect fields (common in [Demographics](../instruments/SED/demo-cg.md)), respectively. Main components include:
-
-<div class="naming-pattern">
-<code>domain_source_table_<span class="tooltip">{scale}<span class="tooltiptext">Optional: only applies if instrument contains subscales</span></span>_item</code>
+<div class="naming-pattern"><code><span class="table-components"><span style="background-color: #f500e92c">domain_source_table</span></span>_<span class="tooltip">{scale}<span class="tooltiptext">Optional: only applies if instrument contains subscales</span></span>_item</code>
 </div>
+
+ - The first 3 main components, <code><span style="background-color: #f500e92c">domain_source_table</span></code>, make up the name of the table
+ - <code><span style="color: teal;">{scale}</span></code> is only included for instruments that have subscales
+ - See component descriptions and example values in table below
 
 <table class="table-no-vertical-lines">
 <thead class="table-header">
@@ -152,7 +156,16 @@ e.g., <code>mh_cg_ibqr_<span style="color: teal;"><b>beh</b></span>_001</code> =
 
 Some table/variable names deviate from the standard naming conventions and will be standardized in the future. Main exceptions include:
 
- - [Demographics domain](../instruments/index.md#demo): <code>sed_basic_demographics</code> and <code>par_visit_data</code>
- - [Biospecimen domain](../instruments/index.md#biospec), e.g. <code>bio_bm_biosample_nails_results</code>
- - [Tabulated derivatives](../datacuration/overview.md#tabulated-pipeline-derivatives) derived from processed imaging and EEG data follow the naming convention `domain_pipeline_derivative`, where `derivative` corresponds to the basename of the source derivative files
-    - For example, <code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code> contains participant data aggregated across <code>sub-[ID]_ses-[V0X]_task-rest_dir-PA_run-{X}<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code>  <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D</a> derivatives.
+**Demographics Domain**     
+The [Demographics domain](../instruments/index.md#demo), which contains derived table data, does not have a unique domain code, resulting in unconventional table names. Includes:  `sed_basic_demographics` and `par_visit_data`.
+
+**Biospecimens Domain**     
+The [Biospecimen domain](../instruments/index.md#biospec) `table` naming component includes additional underscores for subcomponents, e.g. <code>bio_bm_biosample_nails_results</code>, where `table` corresponds to `biosample_nails_results` instead of `biosample`.
+
+**Tabulated Pipeline Derivatives**      
+[Tabulated derivatives](../datacuration/overview.md#tabulated-pipeline-derivatives) derived from processed imaging and EEG data use the following naming convention, where `derivative` corresponds to the basename of the source derivative files:
+<div class="naming-pattern"><code>domain_pipeline_derivative</code></div>
+For example, the <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D</a> tabulated file:
+<code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code>    
+is sourced from:
+<code>sub-[ID]_ses-[V0X]_task-rest_dir-PA_run-[X]<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code>

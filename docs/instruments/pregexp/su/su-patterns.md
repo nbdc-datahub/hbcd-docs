@@ -4,7 +4,7 @@
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>pex_bm_subst</code></td></tr>
 <tr><td><b>Construct</b></td><td>Substance Use in Pregnancy</td></tr>
-<tr><td><b>Study Visits</b></td><td>V02 <i>or later (see <a href="#warning">Data Warning</a>)</i></td></tr>
+<tr><td><b>Study Visits</b></td><td>V02 <i>or later (see <a href="#data-warning">Data Warning</a>)</i></td></tr>
 <tr><td><b>Administration</b></td><td>
 <b>Child-specific</b>: No<br>
 <b>Respondent</b>: Birth Parent<br>
@@ -22,7 +22,7 @@
 <p>Please take care not to overinterpret your results or to make assumptions about causation if your analysis is not designed for causal inference.  We cannot control how other people, such as policy makers, educators, or clinicians, use the results of our research, but we can minimize risks of misuse by such non-scientist constituencies by being very clear, in papers and presentations, about the limits of our findings. </p>
 </div>
 
-{{ warn_banner() }}
+{{ warning_banner() }}
 <div class="collapsible-content">
 <p>The SU Patterns in Pregnancy measure is administered only to participants who endorsed substance use on the V1 or V2 ASSIST. Because the measure was added one year after study enrollment began, its availability varies across participants. Most participants completed the measure at V2; however, early enrollees (~1,200 participants) who had already finished V2 before its introduction instead received it at their next available visit, which was as late as Visit 5.</p>
 <p>The form captures general patterns of substance use by trimester and is intended to complement (1) the Timeline Followback (TLFB), which focuses on specific weeks of use during pregnancy, and (2) biospecimen data, which have variable look-back periods. However, some participants only consider <i>use after pregnancy recognition</i> as 'pregnancy use,' which may result in discrepancies between this measure, the ASSIST, and the TLFB.</p>

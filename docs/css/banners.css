@@ -56,7 +56,7 @@
 /* =========================================================
    BANNER VARIANTS
 ========================================================= */
-.banner.warn {
+.banner.data-warning {
   background-color: #ffe10066;
 }
 .banner.alert {
@@ -76,7 +76,7 @@
   font-size: 1.1em;
 }
 /* Variant icon colors */
-.banner.warn .emoji {
+.banner.data-warning .emoji {
   color: #ffa500;
 }
 .banner.alert .emoji {
