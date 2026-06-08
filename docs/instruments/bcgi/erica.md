@@ -1,6 +1,7 @@
 # ERICA
 <p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Early Regulation in Context Assessment</i></p>
-<table class="table-no-vertical-lines">
+
+<table class="table-no-vertical-lines readme-intro">
 <tbody>
 <tr><td><b>Table Name</b></td><td>Primary coding data file: <code>mh_cg_erica_3_9m</code><br>
                                 Reliability codes: <code>mh_cg_erica_rel_3_9m</code></td></tr>
@@ -112,7 +113,7 @@ Inter-rater reliability was quantified using a two-way mixed-effects intraclass 
 <div class="collapsible-content">
 <p><b>Integrated Analytic Dataset (REQUIRED)</b></p>
 <p>Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (<code>mh_cg_erica_rel_3_9m</code>) into the primary coding data (<code>mh_cg_erica_3_9m</code>). <b>Failure to integrate these data prior to analysis will result in incorrect results.</b> In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release.</p>
-<p>Download the instructions and required participant lists <i>(available via the <a href="https://hbcd-docs-private.lassoinformatics.com">HBCD Private Release Notes</a> - DUC access required)</i> at the following links:</p>
+<p>Download the instructions and relevant participant lists <i>(in <a href="https://hbcd-docs-private.lassoinformatics.com">HBCD Private Release Notes</a> - DUC access required)</i> as follows:</p>
 <ul>
 <li><a href="../ERICA_2.1_Integrated_Analytic_Data_INSTRUCTIONS.pdf" target="_blank">Integration Instructions (PDF)</a></li>
 <li><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv"><code>ERICA_2.1_DataError_EXCLUSIONS.csv</code></a></li>
