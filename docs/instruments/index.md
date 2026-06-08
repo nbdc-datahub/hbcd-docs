@@ -645,16 +645,11 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<span class="table-title"><i class="fa-solid fa-folder-open header-icon"></i> EEG Domain</span>
 <p>See the <a href="eeg/#overview-eeg-protocols">Overview page</a> for protocols, quality control procedures, etc. and <a href="eeg/tasks/">HBCD EEG Tasks</a> for task protocols/documentation. EEG tasks include Auditory Mismatch Negativity (<a href="eeg/tasks/#auditory-mismatch-negativity-task" target="_blank">MMN</a>), Faces (<a href="eeg/tasks/#faces-task" target="_blank">FACE</a>), Visual Evoked Potential (<a href="eeg/tasks/#visual-evoked-potential-task" target="_blank">VEP</a>), and Video Resting State (<a href="eeg/tasks/#video-resting-state-task" target="_blank">RS</a>).</p>
-
-<h4><i class="fa-solid fa-folder-open header-icon"></i> EEG</h4>
-<p>The <b>EEG</b> domain includes raw and processed file-based data:</p>
-<ul>
-<li><b>Raw BIDS</b>: <code>eeg/</code> participant session subfolders within <code>rawbids/</code> - <a href="eeg/#rawbids" target="_blank">see details</a></li>
-<li><b>Processed</b>: <a href="eeg/#made" target="_blank">HBCD-MADE pipeline</a> derivatives under <code>derivatives/made/</code></li>
-</ul>
-
-<h4><i class="fa-solid fa-table header-icon"></i> Tabular EEG</h4>
+<p>The EEG domain contains file-based data, including <a href="eeg/#rawbids" target="_blank">raw BIDS-formatted data</a> and <a href="eeg/#made" target="_blank">HBCD-MADE pipeline</a> derivatives under <code>derivatives/made/</code>.</p>
+<hr>
+<span class="table-title"><i class="fa-solid fa-table header-icon"></i> Tabular EEG Domain</span>
 <table class="table-no-vertical-lines index">
 <thead>
 <tr>
@@ -664,21 +659,18 @@ In this section we provide a brief overview of each study instrument provided in
 </thead>
 <tr>
   <td>EEG Acquisition Checklist & Checklist Reattempt 1/2</td>
-  <td><code>eeg_ch_chkl</code><br>
-  <code>eeg_ch_chkl_1</code><br>
+  <td><code>eeg_ch_chkl</code>, 
+  <code>eeg_ch_chkl_1</code>,
   <code>eeg_ch_chkl_2</code></td>
 </tr>
 <tr>
   <td><a href="eeg/qc" target="_blank">Quality Control Metrics</a></td>
-  <td><code>eeg_qc_task-<span class="blue-text">FACE</span></code><br>
-      <code>eeg_qc_task-<span class="blue-text">MMN</span></code><br>
-      <code>eeg_qc_task-<span class="blue-text">RS</span></code><br>
-      <code>eeg_qc_task-<span class="blue-text">VEP</span></code>
+  <td><code>eeg_qc_task-<span class="blue-text">{FACE|MMN|RS|VEP}</span></code>
   </td>
 </tr>
 <tr>
-  <td>Tabular HBCD-MADE derivatives<br>
-  <i>(See <a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>Tabulated Pipeline Derivatives</a> for details)</i></td>
+  <td>Tabulated HBCD-MADE derivatives <i>(see <a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>Tabulated Pipeline Derivatives</a>)</i>
+  </td>
   <td><code>eeg_made_task-<span class="blue-text">{FACE|MMN|RS|VEP}</span>_acq-eeg_preprocessingReport</code><br>
     <code>eeg_made_task-<span class="blue-text">{FACE|MMN|VEP}</span>FACE_ERPSummaryStats</code>
 </td>
@@ -698,7 +690,7 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<table class="compact-table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines index">
 <thead>
 <tr>
     <th>Modality</th>
@@ -750,14 +742,9 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-
-<div class="table-legend">
-  <span class="legend-item">
-    <i class="fa-solid fa-diagram-project legend-icon"></i>
-   Tabulated pipeline derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)
-  </span>
-</div>
-<table class="table-no-vertical-lines">
+<!-- REGULAR TABULATED DATA -->
+<span class="table-title"><i class="fa-solid fa-table header-icon"></i> MRI Administrative Forms & Post-Processing Quality Control</span>
+<table class="table-no-vertical-lines index">
 <thead>
 <tr>
 <th>Table</th>
@@ -767,14 +754,14 @@ In this section we provide a brief overview of each study instrument provided in
 </thead>
 <tbody>
 <tr>
-<td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms" target="_blank">MRI Data Summary Form</a></td>
-<td>Pre-/Post-MRI Tech Checklist 2</td>
-<td><code>mri_ra_chkl_data</code></td>
-</tr>
-<tr>
 <td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms" target="_blank">MRI Scan Session Summary Form</a></td>
 <td>Pre-/Post-MRI Tech Checklist 1</td>
 <td><code>mri_ra_chkl_scan</code></td>
+</tr>
+<tr>
+<td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms" target="_blank">MRI Data Summary Form</a></td>
+<td>Pre-/Post-MRI Tech Checklist 2</td>
+<td><code>mri_ra_chkl_data</code></td>
 </tr>
 <tr>
 <td><a href="mri/prescan-questionnaire" target="_blank">Pre/Post Scan Prep</a></td>
@@ -791,17 +778,29 @@ In this section we provide a brief overview of each study instrument provided in
 <code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_bold</code><br>
 </td>
 </tr>
+</tbody>
+</table>
+<!-- PIPELINE DERIVATIVES -->
+<span class="table-title"><i class="fa-solid fa-diagram-project header-icon"></i> Tabulated Pipeline Derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)</span>
+
+<table class="table-no-vertical-lines index">
+<thead>
 <tr>
-<td>MRIQC</td><td><i class="fa-solid fa-diagram-project header-icon"></i></td>
+<th>Processing Pipeline Source</th>
+<th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MRIQC</td>
 <td><code>img_mriqc_T1w</code><br><code>img_mriqc_T2w</code><br><code>img_mriqc_bold</code></td>
 </tr>
 <tr>
-<td>BIBSNet</td><td><i class="fa-solid fa-diagram-project header-icon"></i></td>
+<td>BIBSNet</td>
 <td><code>img_bibsnet_space-T1w_desc-aseg_volumes</code><br><code>img_bibsnet_space-T2w_desc-aseg_volumes</code></td>
 </tr>
 <tr>
   <td>XCP-D</td>
-  <td><i class="fa-solid fa-diagram-project header-icon"></i></td>
   <td>
     <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-mean_desc-curv_morph</code><br>
     <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-mean_desc-sulc_morph</code><br>
@@ -816,12 +815,10 @@ In this section we provide a brief overview of each study instrument provided in
 </tr>
 <tr>
   <td>QSIPrep</td>
-  <td><i class="fa-solid fa-diagram-project header-icon"></i></td>
   <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td>
 </tr>
 <tr>
 <td>OSPREY-BIDS</td>
-<td><i class="fa-solid fa-diagram-project header-icon"></i></td>
 <td>
 <code><span class="blue-text"># HERCULES diff1, diff2, and sum files</span></code><br>
     <code>img_osprey_HERCULES_diff<span class="blue-text">{1|2|sum}</span>_AlphaCorrWaterScaledGroupNormed_Voxel_1_Basis_1</code><br>
@@ -848,6 +845,7 @@ In this section we provide a brief overview of each study instrument provided in
 </table>
 </div>
 
+
 <div id="sensors" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-microchip"></i></span>
   <span class="text-with-link">
@@ -859,14 +857,11 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><i class="fa-solid fa-folder-open header-icon"></i> File-based data</p>
-<ul>
-<li>Raw BIDS stored under subject- and session-specific <a href="sensors/wearsensors/#rawbids" target="_blank"><code>motion/</code></a> folders</li>
-<li>Processed derivatives output by the <a href="sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a> pipeline</li>
-</ul>
-
-<p><i class="fa-solid fa-table header-icon"></i> Tabulated Data</p>
-<table class="compact-table-no-vertical-lines">
+<span class="table-title"><i class="fa-solid fa-folder-open header-icon"></i> File-Based Data</span>
+<p>File-based wearable sensor data includes raw BIDS-formatted data within subject/session-specific <a href="sensors/wearsensors/#rawbids" target="_blank"><code>motion/</code></a> folders and processed derivatives output by the <a href="sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a> pipeline.</p>
+<hr>
+<span class="table-title"><i class="fa-solid fa-table header-icon"></i> Tabulated Data</span>
+<table class="table-no-vertical-lines index">
 <thead>
 <tr>
 <th>Instrument</th>
