@@ -781,7 +781,7 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 <div id="mri-tab" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
-    <span class="text">Tabulated Imaging</span>
+    <span class="text">Tabular Imaging</span>
     <a class="anchor-link" href="#mri-tab" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>
@@ -789,8 +789,10 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+
 <p style="font-size: 0.9em; color: #555;">
 <i class="fa-solid fa-diagram-project header-icon"></i>= Tabulated pipeline derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)</p>
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
