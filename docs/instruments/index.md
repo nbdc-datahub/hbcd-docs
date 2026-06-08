@@ -37,10 +37,12 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p style="font-size: 1em; color: #555; text-align: center;">
-<i class="fas fa-layer-group table-icon"></i>&nbsp;=&nbsp;Concatenated data <a href="/datacuration/file-based-data/#concatenated-data" target="_blank"><i>(see details)</i></a>
-</p>
-<br>
+<div class="table-legend">
+  <span class="legend-item">
+    <i class="fas fa-layer-group legend-icon"></i>
+    Concatenated data <a href="/datacuration/file-based-data/#concatenated-data" target="_blank"><i>(see details)</i></a>
+  </span>
+</div>
 <table class="table-no-vertical-lines">
 <thead>
 <th>Instrument</th>
@@ -104,7 +106,7 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<table class="compact-table-no-vertical-lines">
+<table class="table-no-vertical-lines">
 <thead>
   <tr>
     <th>Instrument</th>
@@ -120,9 +122,12 @@ In this section we provide a brief overview of each study instrument provided in
   </tr>
   <tr>
     <td>
-      <a href="bcgi/ecpromis" target="_blank">ecPROMIS Caregiver-Child</a> <i>(&lt;1 / 1-5 years)</i></td>
+      <a href="bcgi/ecpromis" target="_blank">ecPROMIS Caregiver-Child</a> 
+      <div class="subtle">(&lt;1 / 1-5 years versions)</div>
+      </td>
     <td>Caregiver-Child Interactions</td>
-    <td><code>mh_cg_pms__cc__inf</code> / <code>mh_cg_pms__cc__1to5</code></td>
+    <td><code>mh_cg_pms__cc__inf</code> <span class="subtle">(&lt;1)</span><br>
+    <code>mh_cg_pms__cc__1to5</code> <span class="subtle">(1-5 years)</span></td>
   </tr>
   <tr>
     <td><a href="bcgi/ecpromis-pr" target="_blank">ecPROMIS Peer</a></td>
@@ -158,11 +163,15 @@ In this section we provide a brief overview of each study instrument provided in
     <td><a href="bcgi/ibqr" target="_blank">ECBQ (VSF)+BI</a></td>
     <td><code>mh_cg_ecbq</code></td>
   </tr>
+
   <tr>
-    <td><a href="bcgi/maps-tl" target="_blank">MAPS-TL</a> <i>(Infant / Toddler)</i></td>
+    <td><a href="bcgi/maps-tl" target="_blank">MAPS-TL</a>
+    <div class="subtle">(Infant / Toddler versions)</div>
+    </td>
     <td>Irritability</td>
     <td>
-    <code>mh_cg_mapdb__inf</code> / <code>mh_cg_mapstl__tod</code>
+    <code>mh_cg_mapdb__inf</code> <span class="subtle">(Infant)</span><br>
+    <code>mh_cg_mapstl__tod</code> <span class="subtle">(Toddler)</span>
     </td>
   </tr>
   </tbody>
@@ -181,44 +190,37 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-
-<p style="font-size: 1em; color: #555; text-align: center;">
-<i class="fas fa-layer-group table-icon"></i>&nbsp;=&nbsp;Concatenated data <a href="../datacuration/file-based-data/#concatenated-data" target="_blank"><i>(see details)</i></a>
-</p>
-<br>
-
-<table class="compact-table-no-vertical-lines">
+<div class="table-legend">
+  <span class="legend-item">
+    <i class="fas fa-layer-group legend-icon"></i>
+    Concatenated data <a href="/datacuration/file-based-data/#concatenated-data" target="_blank"><i>(see details)</i></a>
+  </span>
+</div>
+<table class="table-no-vertical-lines">
 <thead>
 <th>Instrument</th>
-<th>Version</th>
 <th>Construct</th>
 <th>Table / Folder Name</th>
 </thead>
 <tbody>
 <tr>
     <td><a href="biospec/illumina-gda-gwas" target="_blank">Illumina GDA GWAS</a><i class="fas fa-layer-group table-icon"></i></td>
-    <td>Maternal & Child</td>
     <td>GWAS, EWAS, Transcriptome</td>
     <td><i>concatenated/genetics/</i></td>
 </tr>
-
 <tr>
     <td><a href="biospec/nails" target="_blank">Maternal Nails</a></td>
-    <td>Maternal</td>
     <td>Drug, Environmental Exposure</td>
     <td><code>bio_bm_biosample_nails_results</code><br>
     <code>bio_bm_biosample_nails_type</code></td>
 </tr>
 <tr>
     <td><a href="biospec/urine" target="_blank">Maternal Urine</a></td>
-    <td>Maternal</td>
     <td>Drug Panel, Toxins</td>
     <td><code>bio_bm_biosample_urine_results</code></td>
 </tr>
-
 <tr>
     <td><a href="biospec/olink" target="_blank">Olink Explore</a> <i class="fas fa-layer-group table-icon"></i></td>
-    <td></td>
     <td>Maternal Inflammation</td>
     <td><i>concatenated/proteins/</i></td>
 </tr>
@@ -238,11 +240,10 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<table class="compact-table-no-vertical-lines">
+<table class="table-no-vertical-lines">
 <thead>
 <tr>
   <th>Instrument</th>
-  <th>Version</th>
   <th>Construct</th>
   <th>Table Name</th>
 </tr>
@@ -250,41 +251,32 @@ In this section we provide a brief overview of each study instrument provided in
 <tbody>
 <tr>
   <td><a href="neurocog/bayley-4" target="_blank">Bayley-4 Scales</a></td>
-  <td></td>
   <td>Child Development (Cognitive, Language, and Motor)</td>
   <td><code>ncl_ch_bayley</code></td>
 </tr>
 <tr>
-  <td rowspan="2"><a href="neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a></td>
-  <td>English</td>
+  <td><a href="neurocog/macarthur-bates" target="_blank">MacArthur-Bates CDI-I</a>
+</td>
   <td>Language Development (Words & Gestures)</td>
-  <td><code>ncl_ch_cdiwgen</code></td>
-</tr>
-<tr>
-  <td>Spanish</td>
-  <td>Language Development (Words & Gestures)</td>
-  <td><code>ncl_ch_cdiwges</code></td>
+  <td><code>ncl_ch_cdiwgen</code> <span class="subtle">(English version)</span>
+  <br>
+  <code>ncl_ch_cdiwges</code> <span class="subtle">(Spanish version)</span>  
+  </td>
 </tr>
 <tr>
   <td><a href="neurocog/mlds" target="_blank">MLDS</a></td>
-  <td></td>
   <td>Multilingual Exposure</td>
   <td><code>ncl_ch_mlds</code></td>
 </tr>
 <tr>
-  <td rowspan="2"><a href="neurocog/spm2" target="_blank">Sensory Processing Measure-2 (SPM-2)</a></td>
-  <td>Infant</td>
+  <td><a href="neurocog/spm2" target="_blank">Sensory Processing Measure-2</a>
+  </td>
   <td>Sensory Processing/Integration</td>
-  <td><code>ncl_cg_spm2__inf</code></td>
-</tr>
-<tr>
-  <td>Toddler</td>
-  <td>Sensory Processing/Integration</td>
-  <td><code>ncl_cg_spm2__tod</code></td>
+  <td><code>ncl_cg_spm2__inf</code> <span class="subtle">(Infant version)</span>
+  <br><code>ncl_cg_spm2__tod</code> <span class="subtle">(Toddler version)</span></td>
 </tr>
 <tr>
   <td><a href="neurocog/vineland" target="_blank">Vineland Adaptive Behavior</a></td>
-  <td></td>
   <td>Adaptive Behavior</td>
   <td><code>ncl_cg_vabs</code></td>
 </tr>
