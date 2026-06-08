@@ -1,35 +1,13 @@
 # Child Demographics
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr>
-  <td><b>Table Name</b></td>
-  <td><code>sed_bm_demo_child</code></td>
-</tr>
-<tr>
-  <td><b>Construct</b></td>
-  <td>Child Demographics</td>
-</tr>
-<tr>
-  <td><b>Study Visits</b></td>
-  <td>V04, V06</td>
-</tr>
-<tr>
-  <td><b>Administration</b></td>
-  <td>
-    <b>Child-specific</b>: Yes<br>
-    <b>Respondent</b>: Primary Caregiver on Child<br>
-    <b>Method</b>: HBCD Study Staff, in person (10 min estimated duration)
-  </td>
-</tr>
-<tr>
-  <td><b>Quality Control</b></td>
-  <td>
-    Data dashboard was monitored for variable missingness, possible coding errors, scoring verification when needed, and data consistency. High missingness was noted for income, although this is in line with expectations.
-  </td>
-</tr>
-</tbody>
-</table>
+{{ overview_table(instruments.demographics_ch) }}
+
+<!-- <td><b>Administration</b></td>
+<td>
+  <b>Child-specific</b>: Yes<br>
+  <b>Respondent</b>: Primary Caregiver on Child<br>
+  <b>Method</b>: HBCD Study Staff, in person (10 min estimated duration)
+</td> -->
 
 {{ alert_banner() }}
 <div class="collapsible-content">

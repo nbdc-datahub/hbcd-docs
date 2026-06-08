@@ -1,37 +1,6 @@
 # Demographics (Adult)
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr>
-  <td><b>Table Name</b></td>
-  <td><code>sed_bm_demo</code></td>
-</tr>
-<tr>
-  <td><b>Construct</b></td>
-  <td>Adult Demographics (Birth Parent/Alternative Caregiver)</td>
-</tr>
-<tr>
-  <td><b>Study Visits</b></td>
-  <td>V01, V04, V06</td>
-</tr>
-<tr>
-  <td><b>Administration</b></td>
-  <td>
-    <b>Child-specific</b>: No<br>
-    <b>Respondent</b>: Birth Parent (V01); Birth Parent & Alternative Caregiver (V04)<br>
-    <b>Method</b>: HBCD Study Staff, in person (10 min estimated duration)
-  </td>
-</tr>
-<tr>
-  <td><b>Quality Control</b></td>
-  <td>
-    Data dashboard was monitored for variable missingness, possible coding errors, scoring verification when needed, and data consistency. High missingness was noted for income, although this is in line with expectations.
-  </td>
-</tr>
-</tbody>
-</table>
-
----------------------------------------------   
+{{ overview_table(instruments.demographics) }}
 
 {{ alert_banner() }}
 <div class="collapsible-content">

@@ -43,7 +43,7 @@ In this section we provide a brief overview of each study instrument provided in
     Concatenated data <a href="/datacuration/file-based-data/#concatenated-data" target="_blank"><i>(see details)</i></a>
   </span>
 </div>
-<table class="table-no-vertical-lines">
+<table class="table-no-vertical-lines index">
 <thead>
 <th>Instrument</th>
 <th>Construct</th>
@@ -70,7 +70,7 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<table class="table-no-vertical-lines">
+<table class="table-no-vertical-lines index">
   <thead>
     <tr>
       <th>Instrument</th>
@@ -106,7 +106,7 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<table class="table-no-vertical-lines">
+<table class="table-no-vertical-lines index">
 <thead>
   <tr>
     <th>Instrument</th>
@@ -123,10 +123,10 @@ In this section we provide a brief overview of each study instrument provided in
   <tr>
     <td>
       <a href="bcgi/ecpromis" target="_blank">ecPROMIS Caregiver-Child</a> 
-      <div class="subtle">(&lt;1 / 1-5 years versions)</div>
+      <!-- <div class="subtle">(&lt;1 / 1-5 years versions)</div> -->
       </td>
     <td>Caregiver-Child Interactions</td>
-    <td><code>mh_cg_pms__cc__inf</code> <span class="subtle">(&lt;1)</span><br>
+    <td><code>mh_cg_pms__cc__inf</code> <span class="subtle">(&lt;1 year)</span><br>
     <code>mh_cg_pms__cc__1to5</code> <span class="subtle">(1-5 years)</span></td>
   </tr>
   <tr>
@@ -163,10 +163,9 @@ In this section we provide a brief overview of each study instrument provided in
     <td><a href="bcgi/ibqr" target="_blank">ECBQ (VSF)+BI</a></td>
     <td><code>mh_cg_ecbq</code></td>
   </tr>
-
   <tr>
     <td><a href="bcgi/maps-tl" target="_blank">MAPS-TL</a>
-    <div class="subtle">(Infant / Toddler versions)</div>
+    <!-- <div class="subtle">(Infant / Toddler versions)</div> -->
     </td>
     <td>Irritability</td>
     <td>
@@ -196,7 +195,7 @@ In this section we provide a brief overview of each study instrument provided in
     Concatenated data <a href="/datacuration/file-based-data/#concatenated-data" target="_blank"><i>(see details)</i></a>
   </span>
 </div>
-<table class="table-no-vertical-lines">
+<table class="table-no-vertical-lines index">
 <thead>
 <th>Instrument</th>
 <th>Construct</th>
@@ -296,11 +295,10 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<table class="compact-table-no-vertical-lines">
+<table class="table-no-vertical-lines index">
 <thead>
 <tr>
   <th>Instrument</th>
-  <th>Version</th>
   <th>Construct</th>
   <th>Table Name</th>
 </tr>
@@ -308,55 +306,49 @@ In this section we provide a brief overview of each study instrument provided in
 <tbody>
 <tr>
   <td><a href="physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
-  <td></td>
   <td>Sleep</td>
   <td><code>ph_cg_bisq</code></td>
 </tr>
 <tr>
   <td><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
-  <td></td>
   <td>Nutrition</td>
   <td><code>ph_cg_phx__bfh</code></td>
 </tr>
 <tr>
   <td><a href="physhealth/ecpromis-pags" target="_blank">ecPROMIS Physical Activity/Greenspace</a></td>
-  <td>Early Childhood</td>
+  <!-- <td>Early Childhood</td> -->
   <td>Physical Activity</td>
   <td><code>ph_cg_pms__pags</code></td>
 </tr>
 <tr>
   <td><a href="physhealth/ecpromis-sleep" target="_blank">ecPROMIS Sleep</a></td>
-  <td>Early Childhood</td>
+  <!-- <td>Early Childhood</td> -->
   <td>Sleep</td>
   <td><code>ph_cg_pms__sleep</code></td>
 </tr>
 <tr>
   <td><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
-  <td></td>
   <td>Growth</td>
   <td><code>ph_ch_anthro</code></td>
 </tr> 
 <tr>
   <td><a href="physhealth/medical-history" target="_blank">Medical History</a></td>
-  <td></td>
   <td>Medical History</td>
   <td><code>ph_cg_ecls__medhist</code></td>
 </tr>
 <tr>
   <td><a href="physhealth/nutrition" target="_blank">Nutrition Questionnaire</a></td>
-  <td>Infant</td>
+  <!-- <td>Infant</td> -->
   <td>Nutrition</td>
   <td><code>ph_cg_inq</code></td>
 </tr>
 <tr>
   <td><a href="physhealth/screenq" target="_blank">ScreenQ</a></td>
-  <td></td>
   <td>Media Use</td>
   <td><code>ph_cg_screenq</code></td>
 </tr>
 <tr>
   <td><a href="physhealth/vision" target="_blank">Vision Screener</a></td>
-  <td></td>
   <td>Vision</td>
   <td><code>ph_ch_vs</code></td>
 </tr>
@@ -376,8 +368,9 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-
-<table class="compact-table-no-vertical-lines">
+<!-- Pregnancy & Infant Health -->
+<span class="table-title"><i class="fa-solid fa-baby header-icon"></i> Pregnancy & Infant Health</span>
+<table class="table-no-vertical-lines index">
 <thead>
 <tr>
   <th>Instrument</th>
@@ -386,12 +379,9 @@ In this section we provide a brief overview of each study instrument provided in
 </tr>
 </thead>
 <tbody>
-
-<!-- Pregnancy & Infant Health -->
-<tr class="table-group-row">
+<!-- <tr class="table-group-row">
   <td colspan="3"><i style="color: white;" class="fa-solid fa-baby table-icon-left"></i> Pregnancy & Infant Health</td>
-</tr>
-
+</tr> -->
 <tr class="section-health">
   <td><a href="pregexp/pex/" target="_blank">Health V1-Health History</a></td>
   <td>Pre-pregnancy and pregnancy health</td>
@@ -432,12 +422,27 @@ In this section we provide a brief overview of each study instrument provided in
   <td>Delivery and birth outcomes</td>
   <td><code>pex_bm_healthv2_inf</code></td>
 </tr>
+</tbody>
+</table>
 
-<!-- Mental Health -->
-<tr class="table-group-row">
-  <td colspan="3"><i style="color: white;" class="fas fa-brain table-icon-left"></i> Mental Health</td>
+
+
+
+
+<!-- MENTAL HEALTH -->
+<span class="table-title"><i class="fas fa-brain header-icon"></i> Mental Health</span>
+<table class="table-no-vertical-lines index">
+<thead>
+<tr>
+  <th>Instrument</th>
+  <th>Construct</th>
+  <th>Table Name</th>
 </tr>
-
+</thead>
+<tbody>
+<!-- <tr class="table-group-row">
+  <td colspan="3"><i style="color: white;" class="fas fa-brain table-icon-left"></i> Mental Health</td>
+</tr> -->
 <tr class="section-mh">
   <td><a href="pregexp/mh/fam-mh" target="_blank">FAM MH</a></td>
   <td>Personal and Family Mental Health</td>
@@ -458,12 +463,22 @@ In this section we provide a brief overview of each study instrument provided in
   <td>Postnatal Depression</td>
   <td><code>pex_bm_epds</code></td>
 </tr>
-
+</tbody>
+</table>
 <!-- Substance Use -->
-<tr class="table-group-row">
-  <td colspan="3"><i style="color: white;" class="fa-solid fa-prescription-bottle table-icon-left"></i> Substance Use</td>
+<span class="table-title"><i class="fa-solid fa-prescription-bottle header-icon"></i> Substance Use</span>
+<table class="table-no-vertical-lines index">
+<thead>
+<tr>
+  <th>Instrument</th>
+  <th>Construct</th>
+  <th>Table Name</th>
 </tr>
-
+</thead>
+<tbody>
+<!-- <tr class="table-group-row">
+  <td colspan="3"><i style="color: white;" class="fa-solid fa-prescription-bottle table-icon-left"></i> Substance Use</td>
+</tr> -->
 <tr class="section-su">
   <td><a href="pregexp/su/assist" target="_blank">ASSIST V1/2/3/4</a></td>
   <td>Substance Use Pre-, During, and Post-Pregnancy</td>
@@ -476,13 +491,16 @@ In this section we provide a brief overview of each study instrument provided in
 </tr>
 <tr class="section-su">
   <td><a href="pregexp/su/tlfb" target="_blank">TLFB</a></td>
-  <td>SU Before and During Pregnancy</td>
+  <td>Substance Use Before and During Pregnancy</td>
   <td><code>pex_ch_tlfb</code></td>
 </tr>
 </tbody>
 </table>
 </div>
 
+
+
+<!-- SOC & ENV DETERMINANTS -->
 <div id="sed" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-city"></i></span>
   <span class="text-with-link">
@@ -502,140 +520,111 @@ In this section we provide a brief overview of each study instrument provided in
   </span>
 </div>
 
-<table class="compact-table-no-vertical-lines">
+<table class="table-no-vertical-lines index">
 <thead>
 <tr>
   <th>Instrument</th>
-  <th>Version</th>
   <th>Construct</th>
-  <th>Table / Folder Name</th>
+  <th>Table Name</th>
 </tr>
 </thead>
 <tbody>
-
 <tr>
-  <td rowspan="2"><a href="SED/aces" target="_blank">Adverse Childhood Experiences</a></td>
-  <td>ACEs</td>
-  <td>ACEs (Caregiver)</td>
-  <td><code>sed_cg_ace</code></td>
-</tr>  
-<tr>
-  <td>Pediatric</td>
-  <td>ACEs (Child)</td>
-  <td><code>sed_cg_pedaces</code></td>
+  <td><a href="SED/aces" target="_blank">ACES</a></td>
+  <td>Adverse Childhood Experiences</td>
+  <td><code>sed_cg_ace</code> <br>
+  <code>sed_cg_pedaces</code> <span class="subtle">(Pediatric ACES)</span>
+  </td>
 </tr>  
 <tr>
   <td><a href="SED/bfy" target="_blank">Baby's First Years (BFY)</a></td>
-  <td></td>
   <td>Benefits/Services/Economic Stress</td>
   <td><code>sed_bm_bfy</code></td>
 </tr>
 <tr>
   <td><a href="SED/cab" target="_blank">Composite Abuse Scale (CABr-SF)</a></td>
-  <td></td>
   <td>Intimate Partner Violence</td>
   <td><code>sed_cg_cabr_sf</code></td>
 </tr>
 <tr>
   <td><a href="SED/current-employment" target="_blank">Current Employment</a></td>
-  <td></td>
   <td>Current Employment</td>
   <td><code>sed_cg_employ</code></td>
 </tr>  
 <tr>
   <td><a href="SED/demo-cg" target="_blank">Demographics</a></td>
-  <td>Adult</td>
-  <td>Demographics (Adult V01, V04, V06)</td>
+  <td>Adult Demographics</td>
   <td><code>sed_bm_demo</code></td>
 </tr> 
 <tr>
   <td><a href="SED/demo-ch" target="_blank">Child Demographics</a></td>
-  <td>Child</td>
-  <td>Demographics (Child V04, V06)</td>
+  <td>Child Demographics</td>
   <td><code>sed_bm_demo_child</code></td>
 </tr> 
 <tr>
   <td><a href="SED/ehits" target="_blank">eHITS</a></td>
-  <td></td>
   <td>Intimate Partner Violence</td>
   <td><code>sed_bm_ehits</code></td>
 </tr>  
 <tr>
   <td><a href="SED/foodinsecurity" target="_blank">Food Insecurity</a></td>
-  <td></td>
   <td>Food insecurity</td>
   <td><code>sed_cg_foodins</code></td>
 </tr>
-
 <tr>
   <td><a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage</a> <i class="fas fa-layer-group table-icon"></i></td>
-  <td></td>
   <td>Neighborhood Measures</td>
   <td><i>geocoded_linkage/</i></td>
 </tr>  
-
 <tr>
   <td><a href="SED/home21" target="_blank">HOME-21</a></td>
-  <td>Infant-Toddler</td>
   <td>Child’s Home Environment</td>
   <td><code>sed_cg_home_it</code></td>
 </tr>
 <tr>
   <td><a href="SED/household-chemical-exposures" target="_blank">Household Chemical Exposures</a></td>
-  <td></td>
   <td>Household Chemical Exposures</td>
   <td><code>sed_cg_hce</code></td>
 </tr>   
 <tr>
   <td><a href="SED/lead-exposures" target="_blank">Lead Exposures</a></td>
-  <td></td>
   <td>Lead Exposures</td>
   <td><code>sed_cg_leadexp</code></td>
 </tr> 
 <tr>
   <td><a href="SED/safety" target="_blank">Neighborhood Safety</a></td>
-  <td></td>
   <td>Neighborhood Safety</td>
   <td><code>sed_bm_nbhsaf</code></td>
 </tr> 
 <tr>
-  <td rowspan="2"><a href="SED/paces" target="_blank">PACEs</a></td>
-  <td>Current</td>
+  <td><a href="SED/paces" target="_blank">PACEs</a></td>
   <td>Protective Factors</td>
-  <td><code>sed_bm_paces</code></td>
-</tr>
-  <tr>
-  <td>Retrospective &lt;18</td>
-  <td>Protective Factors</td>
-  <td><code>sed_cg_paces</code></td>
+  <td><code>sed_bm_paces</code> <span class="subtle">(Current)</span><br>
+      <code>sed_cg_paces</code> <span class="subtle">(Retrospective &lt;18)</span><br>
+  </td>
 </tr>
 <tr>
   <td><a href="SED/promis" target="_blank">PROMIS</a></td>
-  <td></td>
   <td>Perceived Stress/Social Support</td>
   <td><code>sed_bm_strsup</code></td>
 </tr>      
 <tr>
   <td><a href="SED/second-hand-smoke-exposure" target="_blank">Second Hand Smoke</a></td>
-  <td></td>
   <td>Second Hand Smoke Exposure</td>
   <td><code>sed_cg_shs</code></td>
 </tr>    
 <tr>
   <td><a href="SED/transitions-in-care" target="_blank">Transitions in Care Screener</a></td>
-  <td></td>
   <td>Recruitment/Retention</td>
   <td><code>sed_cg_tic_screener</code></td>
 </tr>
 <tr>
   <td><a href="SED/discr" target="_blank">Unfair Treatment</a></td>
-  <td></td>
   <td>Experiences of Unfair Treatment</td>
   <td><code>sed_bm_phx__discr</code></td>
 </tr>  
 <tr>
   <td><a href="SED/vi" target="_blank">Vancouver Index (VIA)</a></td>
-  <td></td>
   <td>Acculturation</td>
   <td><code>sed_cg_via</code></td>
 </tr>      
@@ -656,61 +645,41 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>EEG release data, including EEG (file-based data) and Tabular EEG domains, are displayed below. 
-See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critical information on protocols, quality control procedures, etc.</p>
-<table class="table-no-vertical-lines">
-<thead>
-<tr>
-<th width="15%"><i class="fa-solid fa-folder-open header-icon"></i> EEG</th>
-<th>Task Name</th>
-<th style="text-align: center;">Label</th>
-<th>Raw & Processed File-Based Data</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td rowspan="4"></td>
-  <td><a href="eeg/tasks/#auditory-mismatch-negativity-task" target="_blank">Auditory Mismatch Negativity</a></td>
-  <td style="text-align: center;"><code>MMN</code></td>
-  <td rowspan="4">
-        <b>Raw</b>: <a href="eeg/#rawbids" target="_blank">Raw BIDS <i>(rawdata/sub-[ID]/ses-[V0X]/eeg/)</i></a><br><br>
-        <b>Processed</b>: <a href="eeg/#made" target="_blank">HBCD-MADE pipeline derivatives <i>(derivatives/made/)</i></a>
-    </td>
-</tr>
-<tr><td><a href="eeg/tasks/#faces-task" target="_blank">Faces</a></td>
-  <td style="text-align: center;"><code>FACE</code></td></tr>
-<tr><td><a href="eeg/tasks/#visual-evoked-potential-task" target="_blank">Visual Evoked Potential</a></td>
-  <td style="text-align: center;"><code>VEP</code></td></tr>
-<tr><td><a href="eeg/tasks/#video-resting-state-task" target="_blank">Video Resting State</a></td>
-  <td style="text-align: center;"><code>RS</code></td></tr>
-</tbody>
-</table>
+<p>See the <a href="eeg/#overview-eeg-protocols">Overview page</a> for protocols, quality control procedures, etc. and <a href="eeg/tasks/">HBCD EEG Tasks</a> for task protocols/documentation. EEG tasks include Auditory Mismatch Negativity (<a href="eeg/tasks/#auditory-mismatch-negativity-task" target="_blank">MMN</a>), Faces (<a href="eeg/tasks/#faces-task" target="_blank">FACE</a>), Visual Evoked Potential (<a href="eeg/tasks/#visual-evoked-potential-task" target="_blank">VEP</a>), and Video Resting State (<a href="eeg/tasks/#video-resting-state-task" target="_blank">RS</a>).</p>
 
-<table class="table-no-vertical-lines">
+<h4><i class="fa-solid fa-folder-open header-icon"></i> EEG</h4>
+<p>The <b>EEG</b> domain includes raw and processed file-based data:</p>
+<ul>
+<li><b>Raw BIDS</b>: <code>eeg/</code> participant session subfolders within <code>rawbids/</code> - <a href="eeg/#rawbids" target="_blank">see details</a></li>
+<li><b>Processed</b>: <a href="eeg/#made" target="_blank">HBCD-MADE pipeline</a> derivatives under <code>derivatives/made/</code></li>
+</ul>
+
+<h4><i class="fa-solid fa-table header-icon"></i> Tabular EEG</h4>
+<table class="table-no-vertical-lines index">
 <thead>
 <tr>
-<th width="15%"><i class="fa-solid fa-table header-icon"></i> Tabular EEG</th>
-<th>Table/Instrument</th>
+<th>Table</th>
 <th>Table Name</th>
 </tr>
 </thead>
 <tr>
-  <td rowspan="4"></td>
-  <td><a href="eeg/" target="_blank">EEG Acquisition Checklist</a></td>
-  <td><code>eeg_ch_chkl</code></td>
-</tr>
-<tr>
-  <td><a href="eeg/" target="_blank">EEG Acquisition Checklist - Reattempt 1/2</a></td>
-  <td><code>eeg_ch_chkl_<span class="blue-text">{1|2}</span></code></td>
+  <td>EEG Acquisition Checklist & Checklist Reattempt 1/2</td>
+  <td><code>eeg_ch_chkl</code><br>
+  <code>eeg_ch_chkl_1</code><br>
+  <code>eeg_ch_chkl_2</code></td>
 </tr>
 <tr>
   <td><a href="eeg/qc" target="_blank">Quality Control Metrics</a></td>
-  <td><code>eeg_qc_task-<span class="blue-text">{ALL TASKS}</span></code></td>
+  <td><code>eeg_qc_task-<span class="blue-text">FACE</span></code><br>
+      <code>eeg_qc_task-<span class="blue-text">MMN</span></code><br>
+      <code>eeg_qc_task-<span class="blue-text">RS</span></code><br>
+      <code>eeg_qc_task-<span class="blue-text">VEP</span></code>
+  </td>
 </tr>
 <tr>
   <td>Tabular HBCD-MADE derivatives<br>
   <i>(See <a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>Tabulated Pipeline Derivatives</a> for details)</i></td>
-  <td><code>eeg_made_task-<span class="blue-text">{ALL TASKS}</span>_acq-eeg_preprocessingReport</code><br>
+  <td><code>eeg_made_task-<span class="blue-text">{FACE|MMN|RS|VEP}</span>_acq-eeg_preprocessingReport</code><br>
     <code>eeg_made_task-<span class="blue-text">{FACE|MMN|VEP}</span>FACE_ERPSummaryStats</code>
 </td>
 </tr>
@@ -782,10 +751,13 @@ See <a href="eeg/#overview-eeg-protocols">Overview page</a> for links to critica
 </div>
 <div class="collapsible-content">
 
-<p style="font-size: 0.9em; color: #555;">
-<i class="fa-solid fa-diagram-project header-icon"></i>= Tabulated pipeline derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)</p>
-
-<table class="compact-table-no-vertical-lines">
+<div class="table-legend">
+  <span class="legend-item">
+    <i class="fa-solid fa-diagram-project legend-icon"></i>
+   Tabulated pipeline derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)
+  </span>
+</div>
+<table class="table-no-vertical-lines">
 <thead>
 <tr>
 <th>Table</th>

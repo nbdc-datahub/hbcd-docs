@@ -13,6 +13,32 @@ apa:
       <li>Review of response distributions for potential outliers</li>
       </ul>
 
+demographics:
+  name: Demographics
+  acronym:
+  domain: Social & Environmental Determinants
+  table_name: sed_bm_demo
+  construct: Demographics (Birth Parent/Alternative Caregiver)
+  visits: V01 · V04 · V06
+  administration: Parent/Caregiver interview (not child-specific; 10 min)
+  qc: <ul>
+      <li>Data dashboard was monitored for variable missingness, coding errors, and data consistency</li>
+      <li>High missingness was noted for income, although this is in line with expectations</li>
+      </ul>
+
+demographics_ch:
+  name: Child Demographics
+  acronym:
+  domain: Social & Environmental Determinants
+  table_name: sed_bm_demo_child
+  construct: Child Demographics
+  visits: V04 · V06
+  administration: Parent interview (child-specific; 10 min)
+  qc: <ul>
+      <li>Data dashboard was monitored for variable missingness, coding errors, and data consistency</li>
+      <li>High missingness was noted for income, although this is in line with expectations</li>
+      </ul>
+
 chaos:
   name: Confusion, Hubbub and Order Scale
   acronym: CHAOS

@@ -288,15 +288,6 @@ th, td {
   padding-bottom: 0.4rem;
   /* border-bottom: 2px solid #dce3ea; */
 }
-.table-title-soft {
-  margin: 1.5rem 0 0.75rem;
-  padding: 0.6rem 0.9rem;
-  background: #f5f7fa;
-  border-left: 4px solid #199bd6;
-  border-radius: 6px;
-  font-weight: 600;
-  color: #2c3e50;
-}
 
 /* =========================================================
    USED FOR NAMING COMPONENTS TABLE
