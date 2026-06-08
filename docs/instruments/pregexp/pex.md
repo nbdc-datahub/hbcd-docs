@@ -177,7 +177,7 @@ Information on chronic conditions and sexually transmitted infections (STIs) dur
 
 ### Health V1- Illness (Illness)
 
-<div id="warning-illness" class="banner warn" onclick="toggleCollapse(this)">
+<div id="warning-illness" class="banner data-warning" onclick="toggleCollapse(this)">
 <span class="emoji">    <i class="fas fa-exclamation-triangle"></i>   </span>
 <span class="text-with-link">
     <span class="text">Data Warning</span>
@@ -195,7 +195,7 @@ Illness in pregnancy, including start and stop dates and whether the person had 
 
 ### Health V1- ER Admissions (ERhosp)
 
-<div id="warning-erhosp" class="banner warn" onclick="toggleCollapse(this)">
+<div id="warning-erhosp" class="banner data-warning" onclick="toggleCollapse(this)">
 <span class="emoji">    <i class="fas fa-exclamation-triangle"></i>   </span>
 <span class="text-with-link">
     <span class="text">Data Warning</span>
@@ -213,7 +213,7 @@ ER visit(s) or hospitalization(s) during pregnancy, including occurrence(s) and 
 
 ### Health V1- Medications (Meds)
 
-<div id="warning-meds" class="banner warn" onclick="toggleCollapse(this)">
+<div id="warning-meds" class="banner data-warning" onclick="toggleCollapse(this)">
 <span class="emoji">    <i class="fas fa-exclamation-triangle"></i>   </span>
 <span class="text-with-link">
     <span class="text">Data Warning</span>
@@ -231,7 +231,7 @@ Medications used during pregnancy (since last menstrual period), including presc
 
 ### Health V2- Pregnancy (Healthv2 Preg)
 
-<div id="warning-healthv2-preg" class="banner warn" onclick="toggleCollapse(this)">
+<div id="warning-healthv2-preg" class="banner data-warning" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
@@ -249,7 +249,7 @@ Health updates for the birth parent between enrollment and delivery, including: 
 
 ### Health V2- Infancy (Healthv2 Inf)
 
-<div id="warning-healthv2-inf" class="banner warn" onclick="toggleCollapse(this)">
+<div id="warning-healthv2-inf" class="banner data-warning" onclick="toggleCollapse(this)">
     <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
   <span class="text-with-link">
   <span class="text">Data Warning</span>
