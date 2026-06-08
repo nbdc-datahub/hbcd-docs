@@ -1,9 +1,4 @@
 <style>
-/* .wy-nav-content {
-    width: 90% !important;
-    max-width: 90% !important;
-    flex-grow: 1 !important;
-} */
   .naming-pattern {
   text-align: center;
   font-size: 1.6em;
@@ -30,89 +25,128 @@ The instrument table and variable names used for <a href="../../datacuration/phe
 Variable names are constructed from a set of ordered **main components** separated by single underscores. **Subcomponents**, if present, are preceded by double or triple underscores, which represent *subscale*, *version*, or *counter type* and multiselect fields (common in [Demographics](../instruments/SED/demo-cg.md)), respectively. Main components include:
 
 <div class="naming-pattern">
-<code>domain_source_table_<span class="tooltip">{scale}<span class="tooltiptext">Optional: only applies to multi-scale instruments</span></span>_item</code>
+<code>domain_source_table_<span class="tooltip">{scale}<span class="tooltiptext">Optional: only applies if instrument contains subscales</span></span>_item</code>
 </div>
 
-<table class="table-no-vertical-lines dd">
-<thead>
+<table class="table-no-vertical-lines">
+<thead class="table-header">
 <tr>
-  <th>Component</th>
-  <th>Description & Possible Values</th>
+<th width="35%">Naming Component</th>
+<th>Possible Values</th>
 </tr>
 </thead>
 <tbody>
 
 <tr>
-  <td><code>domain</code></td>
-  <td>
-    Data domain the variable belongs to.
-    <div class="dd-inline-list">
-      <span><code>bio</code>: BioSpecimens &amp; Omics</span>
-      <span><code>eeg</code>: Tabular EEG</span>
-      <span><code>img</code>: Tabular Imaging</span>
-      <span><code>mh</code>: Behavior/Child-Caregiver Interaction</span>
-      <span><code>ncl</code>: Neurocognition and Language</span>
-      <span><code>nt</code>: Novel Technology &amp; Wearable Sensors</span>
-      <span><code>ph</code>: Physical Health</span>
-      <span><code>pex</code>: Pregnancy/Exposure Including Substance</span>
-      <span><code>sed</code>: Social and Environmental Determinants</span>
-    </div>
-  </td>
+<td>
+  <span class="naming-token"><code>domain</code></span>
+  <div class="naming-description">
+    Data domain
+  </div>
+</td>
+<td>
+<div class="dd-inline-list">
+<ul>
+    <li><code>bio</code>: Biospecimen &amp; Omics</li>
+    <li><code>eeg</code>: Tabular EEG</li>
+    <li><code>img</code>: Tabular Imaging</li>
+    <li><code>mh</code>: Behavior/Child-Caregiver Interaction</li>
+    <li><code>ncl</code>: Neurocognition and Language</li>
+    <li><code>nt</code>: Novel Technology &amp; Wearable Sensors</li>
+    <li><code>ph</code>: Physical Health</li>
+    <li><code>pex</code>: Pregnancy/Exposure Including Substance</li>
+    <li><code>sed</code>: Social and Environmental Determinants</li>
+</ul>
+</div>
+</td>
 </tr>
 
 <tr>
-  <td><code>source</code></td>
-  <td>
-    Indicates either the respondent (who completed the assessment) or who the measurement refers to.
-    <div class="dd-inline-list">
-      <span><code>bm</code>: Biological Mother</span>
-      <span><code>cg</code>: Caregiver (Responsible Adult)</span>
-      <span><code>ch</code>: Child</span>
-      <span><code>ld</code>: Linked Data</span>
-      <span><code>ra</code>: RA (research assistant)</span>
+<td>
+    <span class="naming-token"><code>source</code></span>
+    <div class="naming-description">
+    Respondent <b>OR</b> who the data is about
     </div>
-  </td>
+</td>
+<td>
+<div class="dd-inline-list">
+<ul>
+    <li><code>bm</code>: Biological Mother</li>
+    <li><code>cg</code>: Caregiver (Responsible Adult)</li>
+    <li><code>ch</code>: Child</li>
+    <li><code>ld</code>: Linked Data</li>
+    <li><code>ra</code>: RA (Research Assistant)</li>
+</ul>
+</div>
+</td>
 </tr>
 
 <tr>
-  <td><code>table</code></td>
-  <td>
-    The instrument or protocol element name.
-    <div class="dd-inline-list">
-      e.g., <code>ibqr</code> — Infant Behavior Questionnaire–Revised
+<td>
+    <span class="naming-token"><code>table</code></span>
+    <div class="naming-description">
+    Instrument name
     </div>
-  </td>
+</td>
+<td>
+<div class="dd-inline-list">
+e.g., <code>ibqr</code> — Infant Behavior Questionnaire–Revised (<a href="../../instruments/bcgi/ibqr/#instrument-details" target="_blank">IBQ-R</a>)
+</div>
+</td>
 </tr>
 
 <tr>
-  <td><code>scale</code> <span class="subtle">(optional)</span></td>
-  <td>
-    Used only when an instrument contains multiple scales.
-    <div class="dd-inline-list">
-      e.g., <code>beh</code> in <code>mh_cg_ibqr_<span style="color: teal;">beh</span>_001</code> (<a href="../../instruments/bcgi/ibqr/#instrument-details" target="_blank">IBQ-R</a>) indicates the Behavioral Inhibition subscale
+<td>
+    <span class="naming-token"><code><span class="tooltip">{scale}<span class="tooltiptext">Optional: only applies if instrument contains subscales</span></span></code></span>
+    <div class="naming-description">
+    Instrument subscale, as applicable
     </div>
-  </td>
+</td>
+<td>
+<div class="dd-inline-list">
+e.g., <code>mh_cg_ibqr_<span style="color: teal;"><b>beh</b></span>_001</code> = <b>Behavioral Inhibition</b> subscale
+</div>
+</td>
 </tr>
 
 <tr>
-  <td><code>item</code></td>
-  <td>
-    Instrument item number (e.g., <code>001</code>), but may be replaced by administrative or summary score fields
-    <div class="dd-inline-list">
-      See <a href="../metadata/#variable-types" target="_blank">Variable Types</a> for details
+<td>
+    <span class="naming-token"><code>item</code></span>
+    <div class="naming-description">
+    Item # <b>OR</b> admin/score fields
     </div>
-  </td>
+</td>
+<td>
+<div class="dd-inline-list">
+<ul>
+  <li>Item number example: <code>001</code></li>
+  <li>See <a href="../metadata/#variable-types" target="_blank">Variable Types</a> for details on administrative and summary score fields</li>
+</ul>
+</div>
+</td>
 </tr>
+
 </tbody>
 </table>
 
-For example, the variable name `mh_cg_ibqr_beh_001` is constructed as follows:
 
-- `mh` → domain (Behavior & Caregiver-Child Interaction)
-- `cg` → source (Caregiver)
-- `ibqr` → table (the <a href="../../instruments/bcgi/ibqr/" target="_blank">IBQ-R</a>)
-- `beh` → scale (Behavioral Inhibition subscale)
-- `001` → item number
+<div id="example" class="banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text-with-link">
+    <span class="text">Example</span>
+    <a class="anchor-link" href="#example" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>For example, the variable name <code>mh_cg_ibqr_beh_001</code> is constructed as follows:</p>
+<ul>
+<li><code>mh</code> → domain (Behavior &amp; Caregiver-Child Interaction)</li>
+<li><code>cg</code> → source (Caregiver)</li>
+<li><code>ibqr</code> → table (the <a href="../../instruments/bcgi/ibqr/" target="_blank">IBQ-R</a>)</li>
+<li><code>beh</code> → scale (Behavioral Inhibition subscale)</li>
+<li><code>001</code> → item number</li>
+</ul>
+</div>
 
 ## Exceptions
 

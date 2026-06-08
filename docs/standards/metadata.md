@@ -329,7 +329,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 
 <tr>
   <td><code>url_warn_use</code></td>
-  <td>Resp Use Warning (var)</td>
+  <td>Responsible Use Warning (var)</td>
   <td>Variable-level <a href="../../access/resp_data_use/#warnings" target="_blank">Responsible Use Warning</a></td>
 </tr>
 

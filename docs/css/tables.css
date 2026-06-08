@@ -100,6 +100,11 @@ th, td {
   color: #6b7280;
   font-weight: 400;
 }
+/* .table-header {
+  font-size: 0.9em;
+  color: #6b7280;
+  font-weight: 400;
+} */
 
 /* =========================================================
    README OVERVIEW/INTRO TABLE
@@ -251,4 +256,60 @@ th, td {
 .dd-inline-list span:not(:last-child)::after {
   content: "·";
   margin: 0 0.6em;
+}
+
+
+
+/* =========================================================
+   TABLE HEADER STYLING
+========================================================= */
+.table-header {
+  background-color: #f5f7fa;
+  color: #2c3e50;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 0.85rem;
+  border-bottom: 2px solid #dce3ea;
+}
+.table-header th {
+  padding: 0.85rem 1rem;
+  text-align: left;
+}
+
+/* =========================================================
+   TABLE TITLE
+========================================================= */
+.table-title {
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2c3e50;
+  padding-bottom: 0.4rem;
+  /* border-bottom: 2px solid #dce3ea; */
+}
+.table-title-soft {
+  margin: 1.5rem 0 0.75rem;
+  padding: 0.6rem 0.9rem;
+  background: #f5f7fa;
+  border-left: 4px solid #199bd6;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* =========================================================
+   USED FOR NAMING COMPONENTS TABLE
+========================================================= */
+.naming-token {
+  font-size: 1.4em;
+  font-weight: 800;
+  line-height: 1.1;
+  display: inline-block;
+  margin-bottom: 0.35rem;
+}
+.naming-description {
+  color: #4b5563e1;
+  font-size: 1em;
+  line-height: 1.1;
 }
