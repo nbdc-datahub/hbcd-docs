@@ -102,6 +102,20 @@ prescan_q:
   administration: Primary caregiver interview (child-specific)
   qc: Data dashboard monitored for variable missingness, coding errors, and data consistency
 
+studynav:
+  name: Study Navigator Contact Form
+  acronym: 
+  domain: Administrative
+  file_tree: |
+    └── concatenated/
+        └── study_navigator/
+            └── Study Navigator Export - Release X.csv
+  table_name: 
+  construct: Recruitment/Retention
+  visits: V01 - V06
+  administration: Primary caregiver interview (filled out by the Study Navigator during and/or between study visits)
+  qc: This form is under development for HBCD. Data was collected with guidance using the <a href="../SNContactFormCompanionGuideOutline_Pilot_V4-HH.pdf"   target="_blank">HBCD Study Navigation Contact Form Guide</a>. Data review and cleaning has occurred 3 times (September 2024, February 2025, and November 2025). Minor updates to the form and the form guide were completed in September 2024 and October 2025.
+
 urine:
   name: USDTL Urine Toxicology (Maternal)
   acronym: Maternal Urine

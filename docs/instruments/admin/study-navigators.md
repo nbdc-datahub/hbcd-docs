@@ -7,10 +7,10 @@
 </style>   
 
 # Study Navigator Contact Form
+<!-- 
+The Study Navigators Contact Form dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a> under <code>study_navigator/</code> (<i>see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details</i>). -->
 
-The **Study Navigator Contact Form** data is provided by the Study Navigator, or person who is offering Study Navigator services, during and/or between study visits (V01-V06).
-
-## Release Data
+{{ overview_table(instruments.studynav) }}
 
 {{ alert_banner() }}
 <div class="collapsible-content">
@@ -27,27 +27,18 @@ The **Study Navigator Contact Form** data is provided by the Study Navigator, or
 
 ---
 
-The Study Navigators Contact Form dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a> under <code>study_navigator/</code> (<i>see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details</i>):
-
-<pre class="folder-tree">
-hbcd/
-└── concatenated/
-    └── study_navigator/
-        └── Study Navigator Export
-</pre>
-
-## Details
+## Instrument Details
 
 Recruitment and retention in studies involving pregnant individuals who use substances can be challenged by mistrust due to SUD-related stigma. To address this, the HBCD Study integrates **certified [peer support](https://www.sciencedirect.com/topics/nursing-and-health-professions/peer-group) specialists and/or other support professionals (case managers, doulas, social workers, etc.) i.e., Study Navigators**, at each site’s research team to provide participant-centered support throughout the study. Study Navigators may provide support specifically to families that are substance-involved or to a wider range of participants. The breadth of the provision of Study Navigator support is determined based on the needs and capacity of each HBCD site. For details on the conceptual framework, core skills, training, and team integration of support professionals, see [Hilliard et al. 2025](https://doi.org/10.1016/j.dcn.2024.101495).
 
-The **Study Navigator Contact Form** included in the data release captures visit-specific information when participant support is provided. This form was created in 2022 by integrating contact form information from other behavioral health practices from some Study Navigator Workgroup members. The “Support Services Offered” section of the form is original and was created specifically for the HBCD study. This data is purely descriptive and thus not scored. It documents:
+The **Study Navigator Contact Form** included in the data release captures visit-specific information when participant support is provided. HBCD Study Navigator Workgroup members created this form in 2022 by integrating contact form information from other behavioral health practices. The “Support Services Offered” section of the form is original and was created specifically for the HBCD study. This data is purely descriptive and thus not scored. It documents:
 
 - Visit details (date, time, location, scheduling, etc.)
 - Support topics discussed
 - Actions taken during each contact
 
 ### What is a contact? 
-A “contact” includes all scheduled or unscheduled interactions relevant to the study or when providing additional support services to the participant. Contacts can be face-to-face interactions, phone calls, text chats, or other forms of communication between a participant and a research team member providing navigation services. 
+A “contact” includes all scheduled or unscheduled interactions relevant to the study or when providing additional support services to the participant. Contacts can be face-to-face interactions, phone calls, text chats, or other forms of communication between a participant and a research team member providing navigation services.
 
 ### Navigation Services & Support Offered: Actions Taken 
 There are four options the Study Navigator can select to indicate actions taken, i.e. how they responded, for each topic, including:
@@ -78,6 +69,10 @@ There are four options the Study Navigator can select to indicate actions taken,
 </tr>
 </tbody>
 </table>
+
+## Concatenated Release Data
+
+The Study Navigator Contact dataset is provided as in a single file as <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a>. 
 
 <div id="metadata" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
@@ -177,6 +172,8 @@ There are four options the Study Navigator can select to indicate actions taken,
 </table>
 </div>
 
+
+
 <div id="metadata-barriers" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
@@ -188,84 +185,97 @@ There are four options the Study Navigator can select to indicate actions taken,
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The following fields include data for topics discussed & actions taken.</p>
+<p><b>Note: All RESPONSE OPTION values below are appended with the relevant <a href="#navigation-services-support-offered-actions-taken">actions taken</a> to barriers faced, including <i>referrals</i>, <i>resources</i>,  <i>discussion</i>, and/or <i>other</i> (e.g. <i>biosensors/referrals</i>).</b></p>
 <table class="compact-table-no-vertical-lines">
-<tfoot>
-<tr><td colspan="3"><sup style="color: blue;">1</sup> Each response value is appended with one of the following to indicate <a href="#navigation-services-support-offered-actions-taken">actions taken</a>: <i>/referrals</i>; <i>/resources</i>; <i>/discussion</i>; <i>/other</i>.</td></tr></tfoot>
-  <thead>
-    <tr>
-      <th style="width: 20%;">Variable</th>
-      <th style="width: 10%;">Barrier Type</th>
-      <th style="width: 70%;">Response Options<sup style="color: blue;">1</sup></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-    <tr>
-      <td><code>BARRIERS_TO_STUDY_ASSESSMENT_<br>CHECKBOXES</code></td>
-      <td>Relevant study domain(s)</td>
-        <td>
-        biosensors; biospecimen_collection; eeg;
-        mri; observational_assessments; surveys; other
-      </td>
-    </tr>
-    <tr>
-      <td><code>BARRIERS_TO_STUDY_ASSESSMENT_<br>CHECKBOXES_PART_2</code></td>
-      <td>General</td>
-      <td>
-        childcare; concerns_about_confidentiality; family_instability;
-        lack_of_time; transportation; other
-      </td>
-    </tr>
-    <tr>
-      <td><code>PREGNANCY_AND_LABOR_CHECKBOXES</code></td>
-      <td>Pregnancy & labor</td>
-      <td>
-        newborn_and_infant_care; labor_birth;
-        maternal_perinatal_health; postpartum_care; other
-      </td>
-    </tr>
-    <tr>
-      <td><code>CHILD_HEALTH_CHECKBOXES</code></td>
-      <td>Child health</td>
-      <td>
-        mental_health; physical_health; safety; other
-      </td>
-    </tr>
-    <tr>
-      <td><code>PARENTS_GUARDIANS_CHECKBOXES</code></td>
-      <td>Parent or guardians</td>
-      <td>
-        mental_health; parenting; physical_health; safety; other
-      </td>
-    </tr>
-    <tr>
-      <td><code>BROADER_FAMILY_HEALTH_CHECKBOXES</code></td>
-      <td>Family health</td>
-      <td>caregiving; mental_health; physical_health; safety; other</td>
-    </tr>
-    <tr>
-      <td><code>SOCIOECONOMIC_RESOURCES_CHECKBOXES</code></td>
-      <td>Socioeconomic</td>
-      <td>
-        childcare; financial; food_nutrition; housing; transportation; other
-      </td>
-    </tr>
-    <tr>
-      <td><code>SUBSTANCE_USE_CHECKBOXES</code></td><td>Substance use</td><td>behavioral; medical; recovery; other</td>
-    </tr>
-    <tr>
-      <td><code>OTHER_CHECKBOXES</code></td>
-      <td>Other</td>
-      <td>family_crisis; court_or_legal; other</td>
-    </tr>
-  </tbody>
+<thead class="table-header">
+<tr>
+<th>Variable/Barrier Type</th>
+<th>Response Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+  <code>BARRIERS_TO_STUDY_ASSESSMENT_CHECKBOXES</code>
+  <div class="subtle">
+    Relevant study domains
+  </div>
+</td>
+<td>
+biosensors; biospecimen_collection; eeg; mri; observational_assessments; surveys; other
+</td>
+</tr>
+<tr>
+<td>
+  <code>BARRIERS_TO_STUDY_ASSESSMENT_CHECKBOXES_PART_2</code>
+  <div class="subtle">General</div>
+</td>
+<td>
+childcare; concerns_about_confidentiality; family_instability; lack_of_time; transportation; other
+</td>
+</tr>
+<tr>
+<td>
+  <code>PREGNANCY_AND_LABOR_CHECKBOXES</code>
+  <div class="subtle">Pregnancy & labor</div>
+</td>
+<td>newborn_and_infant_care; labor_birth; maternal_perinatal_health; postpartum_care; other</td>
+</tr>
+
+<tr>
+<td>
+  <code>CHILD_HEALTH_CHECKBOXES</code>
+  <div class="subtle">Child health</div>
+</td>
+<td>mental_health; physical_health; safety; other</td>
+</tr>
+
+<tr>
+<td>
+  <code>PARENTS_GUARDIANS_CHECKBOXES</code>
+  <div class="subtle">Parent or guardians</div>
+</td>
+<td> mental_health; parenting; physical_health; safety; other</td>
+</tr>
+
+<tr>
+<td>
+  <code>BROADER_FAMILY_HEALTH_CHECKBOXES</code>
+  <div class="subtle">Family health</div>
+</td>
+<td>caregiving; mental_health; physical_health; safety; other</td>
+</tr>
+
+<tr>
+<td>
+  <code>SOCIOECONOMIC_RESOURCES_CHECKBOXES</code>
+  <div class="subtle">Socioeconomic</div>
+</td>
+<td>
+childcare; financial; food_nutrition; housing; transportation; other
+</td>
+</tr>
+<tr>
+<td>
+  <code>SUBSTANCE_USE_CHECKBOXES</code>
+  <div class="subtle">Substance use</div>
+</td>
+<td>
+behavioral; medical; recovery; other
+</td>
+</tr>
+
+<tr>
+<td>
+  <code>OTHER_CHECKBOXES</code>
+  <div class="subtle">Other</div>
+</td>
+<td>family_crisis; court_or_legal; other</td>
+</tr>
+
+</tbody>
 </table>
 </div>
-
-## Quality Control
-This form is under development for HBCD. Data was collected with guidance using the <a href="../SNContactFormCompanionGuideOutline_Pilot_V4-HH.pdf" target="_blank">HBCD Study Navigation Contact Form Guide</a>.
-Data review and cleaning has occurred 3 times: September 2024, February 2025, and November 2025. Minor updates to the form and the form guide were completed in September 2024 and October 2025.
 
 ## References
 

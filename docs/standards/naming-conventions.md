@@ -40,7 +40,6 @@ Variable names are constructed from a set of ordered **main components** separat
 </tr>
 </thead>
 <tbody>
-
 <tr>
 <td>
   <span class="naming-token"><code>domain</code></span>

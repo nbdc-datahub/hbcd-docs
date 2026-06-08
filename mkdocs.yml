@@ -72,7 +72,7 @@ nav:
     - Age Variables: instruments/agevariables.md
     - Behavior, Biology, & Environment:
         - Administrative:
-            - Study Navigator Notes: instruments/admin/study-navigators.md
+            - Study Navigator Contact Form: instruments/admin/study-navigators.md
         - Demographics:
             - Basic Demographics: instruments/demo/basicdemo.md
             - Visit Level Data: instruments/demo/visitinfo.md

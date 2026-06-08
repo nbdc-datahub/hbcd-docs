@@ -679,10 +679,11 @@ In this section we provide a brief overview of each study instrument provided in
 </table>
 </div>
 
+<!-- MRI -->
 <div id="mri" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-brain"></i></span>
   <span class="text-with-link">
-    <span class="text">Imaging</span>
+    <span class="text">Imaging & Tabular Imaging</span>
     <a class="anchor-link" href="#mri" title="Copy link">
       <i class="fa-solid fa-link"></i>
     </a>
@@ -690,6 +691,8 @@ In this section we provide a brief overview of each study instrument provided in
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<!-- FILE-BASED IMAGING DATA -->
+<span class="table-title"><i class="fa-solid fa-folder-open header-icon"></i> Imaging Domain <span class="subtle"><i>(File-Based Data)</i></span></span>
 <table class="compact-table-no-vertical-lines index">
 <thead>
 <tr>
@@ -729,21 +732,9 @@ In this section we provide a brief overview of each study instrument provided in
 </tr>
 </tbody>
 </table>
-</div>
-
-<div id="mri-tab" class="banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-brain"></i></span>
-  <span class="text-with-link">
-    <span class="text">Tabular Imaging</span>
-    <a class="anchor-link" href="#mri-tab" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
 <!-- REGULAR TABULATED DATA -->
-<span class="table-title"><i class="fa-solid fa-table header-icon"></i> MRI Administrative Forms & Post-Processing Quality Control</span>
+<span class="table-title"><i class="fa-solid fa-table header-icon"></i> Tabular Imaging Domain</span>
+<p class="subtle">MRI Administrative Forms & Post-Processing Quality Control</p>
 <table class="table-no-vertical-lines index">
 <thead>
 <tr>
@@ -753,6 +744,16 @@ In this section we provide a brief overview of each study instrument provided in
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms" target="_blank">MRI Summary Forms</a></td>
+<td>Pre-/Post-MRI Tech Checklist 1/2</td>
+<td><code>mri_ra_chkl_scan</code> <span class="subtle">(Checklist 1)</span><br>
+    <code>mri_ra_chkl_data</code> <span class="subtle">(Checklist 2)</span>
+</td>
+</tr>
+
+
+
 <tr>
 <td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms" target="_blank">MRI Scan Session Summary Form</a></td>
 <td>Pre-/Post-MRI Tech Checklist 1</td>
@@ -772,17 +773,19 @@ In this section we provide a brief overview of each study instrument provided in
 <td><a href="mri/qc#brainswipes" target="_blank">BrainSwipes</a></td>
 <td>Manual QC</td>
 <td>
+<code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">{T2w|bold}</span></code><br>
+<code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">{T1w|bold}</span></code>
+<!-- 
 <code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_T2w</code><br>
 <code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_bold</code><br>
 <code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_T1w</code><br>
-<code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_bold</code><br>
+<code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_bold</code><br> -->
 </td>
 </tr>
 </tbody>
 </table>
 <!-- PIPELINE DERIVATIVES -->
-<span class="table-title"><i class="fa-solid fa-diagram-project header-icon"></i> Tabulated Pipeline Derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)</span>
-
+<p class="subtle">Tabulated Pipeline Derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives" target="_blank"><i>see details</i></a>)</p>
 <table class="table-no-vertical-lines index">
 <thead>
 <tr>

@@ -16,7 +16,7 @@ The Basic Demographics table contains global, static variables derived across ad
 
 ## Tabulated Instrument & File-Based Data
 
-**All variables below refer to the child and describe the child’s age at either:**
+All variables below refer to the child and describe the child’s age at either:
 
 - **Instrument administration** for tabulated instrument data
 - **Time of scan/data acquisition** for file-based data (MR, EEG, and biosensor data, provided within [session- and scan-level metadata files](../datacuration/file-based-data.md#participant-session-scan-level-data))
