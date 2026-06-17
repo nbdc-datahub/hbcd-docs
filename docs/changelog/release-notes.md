@@ -289,6 +289,10 @@ Release data now include the addition of the following instruments:
 <td>ecPROMIS-PAGS</td>
 <td><i class="fa-solid fa-rotate icon-rotate"></i> Added scores to <code>ph_cg_pms__pags</code></td>
 </tr>
+<tr>
+<td>ecPROMIS-PAGS</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added <code>ph_cg_pms__sleep</code> summary scores</td>
+</tr>
 
 <tr class="table-group-row">
   <td colspan="3">Pregnancy & Environmental Exposure</td>

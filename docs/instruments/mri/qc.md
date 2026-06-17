@@ -201,6 +201,38 @@ BrainSwipes QC results for processed data are provided as <a href="../../#mri">t
 
 ---
 
+## QC Metrics Available in Derivatives
+
+In addition to QC procedures performed prior to data release, most processing pipelines provide quality control (QC) information in the derivatives, including quantitative metrics and visual reports. For example:
+
+- [**MRIQC**](smri.md#mriqc): run on raw BIDS data to extract image quality metrics from structural and functional MRI.
+- [**QSIPrep**](dmri.md#processing-derivatives): provides automated QC metrics for processed diffusion MRI data (*[see summary statistics](dmri.md#quality-control-summary-statistics)*).
+- [**Infant fMRIPrep & XCP-D**](fmri.md#processing-derivatives): generate HTML reports containing QC metrics, brain visualizations, and summary figures to support assessment of processed structural and functional MRI data. Note that brain visualizations used for [BrainSwipes](#brainswipes) to perform manual QC are directly sourced from XCP-D derivatives.
+
+See the derivatives and pipeline output documentation for full details on these and other processing pipelines.
+ 
+ <!-- One key metric is <a href="https://xcp-d.readthedocs.io/en/latest/workflows/#framewise-displacement-calculation-and-thresholding">framewise displacement</a> (FD), which quantifies head motion across the scan. For each run, the amount of low-motion data, based on an FD threshold of 0.3 mm, is calculated. Only runs with at least 210 seconds of low-motion data are retained in the final outputs. -->
+
+<!-- <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+    <tbody>
+    <tr>
+        <td><strong>QSIPrep pipeline (dMRI)</strong></td>
+        <td style="word-wrap: break-word; white-space: normal;">QSIPrep produces robust QC metrics - see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#dwi-qc">Automated QC for Processed Diffusion Data</a> for details.</td>
+    </tr>
+    <tr>
+        <td><strong>XCP-D pipeline (sMRI/fMRI)</strong></td>
+        <td style="word-wrap: break-word; white-space: normal;">XCP-D produces several QC metrics and visual reports to aid in data evaluation. One key metric is <a href="https://xcp-d.readthedocs.io/en/latest/workflows/#framewise-displacement-calculation-and-thresholding">framewise displacement</a> (FD), which quantifies head motion across the scan. For each run, the amount of low-motion data, based on an FD threshold of 0.3 mm, is calculated. Only runs with at least 210 seconds of low-motion data are retained in the final outputs.</td>
+    </tr>   
+    <tr>
+        <td><strong>MRIQC utility</strong></td>
+        <td style="word-wrap: break-word; white-space: normal;">MRIQC extracts image quality metrics, provided in the release data, from structural and functional MRI - <a href="https://docs.hbcdstudy.org/latest/datacuration/derivatives/#mriqc-mriqc">see details</a>.</td>
+    </tr>    
+</tbody>
+</table> -->
+
+
+---
+
 <div id="ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
   <span class="text-with-link">
