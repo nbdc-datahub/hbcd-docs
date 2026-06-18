@@ -36,11 +36,18 @@
 
 ## Raw MR Data QC
 
+<div class="banner data-warning">
+  <span class="emoji"><i class="fa-solid fa-location-dot"></i></span>
+  <span class="text">Location in Release Data: 
+  Raw data QC metrics (<a href="../tables/scans-tsv.html" target="_blank">see list</a>) are provided in the <a href="../../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">scans TSV Files</a>.</span>
+</div>
+<p></p>
+
 Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing. Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, manual visual review is only performed for series that fail automated QC. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC.
 
-### <i class="fa-solid fa-location-dot header-icon"></i> Location in Release Data
+<!-- ### <i class="fa-solid fa-location-dot header-icon"></i> Location in Release Data
 
-Raw data QC metrics are provided in the session-level <a href="../../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">scans TSV Files</a>. QC metrics included in the scans TSV file are summarized <a href="../tables/scans-tsv.html" target="_blank">here</a>.
+Raw data QC metrics are provided in the session-level <a href="../../../datacuration/file-based-data/#participant-session-scan-level-data" target="_blank">scans TSV Files</a>. QC metrics included in the scans TSV file are summarized <a href="../tables/scans-tsv.html" target="_blank">here</a>. -->
 
 ### <i class="fa fa-desktop header-icon"></i> Automated QC
 
@@ -161,47 +168,59 @@ Data are flagged for manual review based on automated QC results using multivari
 
 ## BrainSwipes
 
-<div style="display: flex; align-items: center; gap: 30px;">
-<div style="flex: 1;">
-<p>QC is performed on processed structural and functional MRI data via manual review of <a href="../fmri/#xcp-d">XCP-D</a> visual reports. Though manual inspection remains the gold standard for QC, it is highly resource-intensive. Manual visual review was therefore performed using <a href="https://brainswipes.us/about/">BrainSwipes</a>, a gamified crowdsourcing platform where users classify images as Pass or Fail by swiping right or left after completing a brief visual QC tutorial.</p>
-<p>BrainSwipes QC results were also used to inform processed data exclusion (see <a href="../exclusion-criteria/#processed-data-exclusion-criteria" target="_blank">Processed Data Exclusion Criteria</a> for details).</p>
+<div class="banner data-warning">
+  <span class="emoji"><i class="fa-solid fa-location-dot"></i></span>
+  <span class="text">Location in Release Data: 
+  BrainSwipes data are provided as <a href="../../#mri">tabulated data</a> (<code>img_brainswipes_xcpd_*</code>).</span>
 </div>
-  <div style="flex: 1; text-align: center;">
-    <img src="../images/brainswipes.png" style="max-width:100%; height:auto; display:block; margin:0 auto;">
-    <p style="font-size: 0.8em; margin-top: 5px; line-height: 1.1; max-width:80%; margin-left:auto; margin-right:auto; text-align:justify;">
-      <i>Example quality assessment of surface delineation on BrainSwipes platform (displaying brain in axial plane at level of basal ganglia/putamen).</i>
-    </p>
-  </div>
-</div>
+<p></p>
 
-<div id="swipes-procedures" class="banner" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fa fa-brain"></i></span>
-<span class="text-with-link">
-  <span class="text">Detailed BrainSwipes QC Procedures</span>
-    <a class="anchor-link" href="#swipes-procedures" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-  <span class="arrow">▸</span>
+<div style="display: flex; align-items: center; gap: 20px;">
+<div style="flex: 1;"> <p><a href="https://brainswipes.us/about/">BrainSwipes</a> is a gamified crowdsourcing platform used to perform manual QC of processed MRI data. Reviewers assess images from <a href="../fmri/#xcp-d">XCP-D</a> visual reports, displaying a series of brain images in coronal, axial, and sagittal planes, and classify each report as <strong>Pass (1)</strong> or <strong>Fail (0)</strong>.</p> <p>The released data include:</p>
+<ul> 
+<li><strong>Report-level QC metrics</strong>: mean QC score and number of reviewers for each visual report</li>
+<li><strong>Subject-level QC metrics</strong>: mean QC score and average number of reviewers across all reports for a participant</li> 
+</ul> 
+<p>BrainSwipes QC results were also used to inform <a href="../#processed-derivatives">processed-data exclusions</a>.</p>
 </div>
-<div class="collapsible-content">
-<p><b>Surface Delineation</b><br>
-For structural QA, swipers are presented with image slices in coronal, axial, and sagittal planes to assess the accuracy of T1w and T2w surface delineations in differentiating gray and white matter. Images are derived from XCP-D visual reports.</p>
-<p><b>Atlas Registration</b><br>
-In addition to surface delineation, structural QA also includes atlas registration quality, evaluated by overlaying delineations of the subject’s image onto the atlas, and vice versa. Swipes display nine T1w slices for visual inspection, with three slices per anatomical plane. Quality is assessed based on the alignment of the outer boundaries of the overlaid contours with those of the underlying image, ensuring minimal gaps or misalignments. Images are derived from XCP-D visual reports.</p>
-<p><b>Functional Registration</b><br>
-Functional registration is evaluated by overlaying outlines of functional images onto structural images and vice versa. Swipes display nine slices of the same functional image for visual inspection, with three slices per anatomical plane. Quality is assessed similarly to structural atlas registration, focusing on the alignment of the overlaid contours. Additional evaluation includes checking for artifacts such as signal dropout. Images are derived from XCP-D visual reports.</p>
-</div>
+  <div style="flex: 1;">
+  <figure>
+    <img src="../images/brainswipes.png" alt="BrainSwipes example">
+    <figcaption class="figure-caption">
+      Example BrainSwipes assessment of cortical surface delineation. Reviewers swipe right/left to classify images as Pass/Fail after completing a brief QC tutorial.
+    </figcaption>
+  </figure>
+  </div> 
+</div> 
 
-### <i class="fa-solid fa-location-dot header-icon"></i> Location in Release Data
-BrainSwipes QC results for processed data are provided as <a href="../../#mri">tabulated data</a> (`img_brainswipes_xcpd_*`). BrainSwipes presents users with a series of visual reports, generated by XCP-D, to assess the quality of structural and functional processing. Each report is independently rated as **Pass (1)** or **Fail (0)**. The BrainSwipes data include:
 
- - The mean QC score and number of reviewers **for each individual visual report**
- - The mean QC score and average number of reviewers **across all visual reports** 
+
+<table class="table-no-vertical-lines">
+<thead>
+<tr>
+  <th width="25%">QC Assessment</th>
+  <th width="75%">What is Evaluated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Surface Delineation</strong></td>
+  <td>Accuracy of cortical surface placement and gray/white matter boundaries</td>
+</tr>
+<tr>
+  <td><strong>Atlas Registration</strong></td>
+  <td>Alignment between the participant's anatomical image and the reference atlas</td>
+</tr>
+<tr>
+  <td><strong>Functional Registration</strong></td>
+  <td>Alignment between functional and structural images and detection of major artifacts such as signal dropout</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
-## QC Metrics Available in Derivatives
+## QC Metrics Generated from Processing Pipelines
 
 In addition to QC procedures performed prior to data release, most processing pipelines provide quality control (QC) information in the derivatives, including quantitative metrics and visual reports. For example:
 
