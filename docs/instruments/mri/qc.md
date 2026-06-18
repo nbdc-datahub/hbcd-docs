@@ -218,17 +218,33 @@ Data are flagged for manual review based on automated QC results using multivari
 </tbody>
 </table>
 
----
+## Post-Processing QC
 
-## QC Metrics Generated from Processing Pipelines
+Post-processing QC analyses are performed for certain MR modalities to provide in tandem with release data. This includes:
 
-In addition to QC procedures performed prior to data release, most processing pipelines provide quality control (QC) information in the derivatives, including quantitative metrics and visual reports. For example:
+ - fMRI - link to results
+ - dMRI - link to results
 
-- [**MRIQC**](smri.md#mriqc): run on raw BIDS data to extract image quality metrics from structural and functional MRI.
-- [**QSIPrep**](dmri.md#processing-derivatives): provides automated QC metrics for processed diffusion MRI data (*[see summary statistics](dmri.md#quality-control-summary-statistics)*).
-- [**Infant fMRIPrep & XCP-D**](fmri.md#processing-derivatives): generate HTML reports containing QC metrics, brain visualizations, and summary figures to support assessment of processed structural and functional MRI data. Note that brain visualizations used for [BrainSwipes](#brainswipes) to perform manual QC are directly sourced from XCP-D derivatives.
+Also note that, while not always leveraged for standard data release QC procedures, the majority of processing pipelines do provide QC metrics in their derivative outputs, including quantitative metrics and visual reports. See the processing and derivatives documentation provided for each modality page for details. For example:
 
-See the derivatives and pipeline output documentation for full details on these and other processing pipelines.
+- [MRIQC](smri.md#mriqc): run on raw BIDS data to extract image quality metrics from structural and functional MRI.
+- [QSIPrep](dmri.md#processing-derivatives): provides automated QC metrics for processed diffusion MRI data (*[see summary statistics](dmri.md#quality-control-summary-statistics)*).
+- [Infant fMRIPrep & XCP-D](fmri.md#processing-derivatives): generate HTML reports containing QC metrics, brain visualizations, and summary figures to support assessment of processed structural and functional MRI data. Brain visualizations used for [BrainSwipes](#brainswipes) to perform manual QC are directly sourced from XCP-D derivatives.
+
+
+
+
+
+<!-- QC Metrics in Derivatives -->
+
+Also note that, though not always used for internal QC procedures, the majority of processing pipelines do provide QC metrics in their derivative outputs, including quantitative metrics and visual reports. For example:
+
+
+
+
+
+
+
  
  <!-- One key metric is <a href="https://xcp-d.readthedocs.io/en/latest/workflows/#framewise-displacement-calculation-and-thresholding">framewise displacement</a> (FD), which quantifies head motion across the scan. For each run, the amount of low-motion data, based on an FD threshold of 0.3 mm, is calculated. Only runs with at least 210 seconds of low-motion data are retained in the final outputs. -->
 
