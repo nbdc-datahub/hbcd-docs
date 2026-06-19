@@ -4,15 +4,15 @@
 
 <p></p>
 
-{{ overview_table(instruments.apa) }}
+{{ readme(instruments.apa) }}
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p><strong>Consideration of Mental Health Symptoms Experienced During Pregnancy</strong><br>
 The co-occurrence of psychiatric symptoms and substance use during pregnancy is well-documented (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2011</a>, <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">Massey et al., 2012</a>). Phenotypic risk in birthing parents may affect offspring neurodevelopment through both prenatal and postnatal mechanisms, beyond direct exposure alone (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2015.11.010">Massey et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2018.02.003">Massey et al., 2018</a>). These factors may confound associations between exposures and neuroimaging or neurodevelopmental outcomes, but they also represent malleable targets for prevention and early intervention. When possible, incorporating parental mental health symptoms as covariates offers a robust strategy to account for these confounding influences.</p> 
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -130,7 +130,7 @@ Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Pr
 </table>
 </div>
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p><b>Level 1 Modifications</b><br>
 HBCD excluded <i>Personality Functioning and Substance Use</i> present in the original measure (SU is captured by a separate set of instruments for HBCD - see measures listed <a href="../../../#pex" target="_blank">here</a>).</p>
@@ -143,7 +143,7 @@ This measure was modified to alert HBCD study staff if responses to the Level 1 
 For HBCD, the response option ‘Decline to answer’ was added to all questions. The response option ‘Don’t know’ was also included at the beginning of data collection, but was subsequently removed. Questions answered with ‘Decline to answer’ or ‘Don’t know’ are marked as missing.</p> 
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p><b><a href="https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1</a> items (scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe) and gating overview, including HBCD adaptations:</b></p>
 

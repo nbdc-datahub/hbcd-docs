@@ -17,12 +17,12 @@
 </tbody>
 </table>
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p>Participants report information for the child’s primary residence. If a child spends at least 2-days per week in multiple homes, reporters are asked to provide information for the home they are most familiar with. As a result, exposures to secondhand smoke or chemicals in those additional environments is not captured, which may result in incomplete exposure data.</p> 
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -48,7 +48,7 @@ As of 2022, about 1 in 5 US adults report current smoking ([CDC 2022](https://ww
 </ul>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>Responses can be used in binary form (yes/no).</p>
 </div>

@@ -1,37 +1,13 @@
 # Confusion, Hubbub and Order Scale (CHAOS)
 
-{{ overview_table(instruments.chaos) }}
+{{ readme(instruments.chaos) }}
 
-<!-- <table class="table-no-vertical-lines readme-intro">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>mh_cg_chaos</code></td></tr>
-<tr><td><b>Construct</b></td><td>Family Organization</td></tr>
-<tr><td><b>Type</b></td><td>Primary caregiver survey (child-specific; 4–8 min)</td></tr>
-<tr><td><b>Study Visits</b></td>
-<td>
-<span class="visit">V05</span>
-<span class="visit">V07</span>
-</td></tr>
-<tr><td><b>Quality Control</b></td>
-<td>
-<ul>
-<li>Assess missingness (items completed per participant)</li>
-<li>Verify scoring accuracy</li>
-<li>Review summary statistics (item frequencies, total scores)</li>
-<li>Inspect response distributions for outliers</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table> -->
-
-
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -91,3 +67,29 @@ Calculated as the sum of all numerical item responses, excluding non-responses. 
 </div>
 
 
+
+
+<!-- 
+### ORIG FULL HTML
+<table class="table-no-vertical-lines readme-intro">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>mh_cg_chaos</code></td></tr>
+<tr><td><b>Construct</b></td><td>Family Organization</td></tr>
+<tr><td><b>Type</b></td><td>Primary caregiver survey (child-specific; 4–8 min)</td></tr>
+<tr><td><b>Study Visits</b></td>
+<td>
+<span class="visit">V05</span>
+<span class="visit">V07</span>
+</td></tr>
+<tr><td><b>Quality Control</b></td>
+<td>
+<ul>
+<li>Assess missingness (items completed per participant)</li>
+<li>Verify scoring accuracy</li>
+<li>Review summary statistics (item frequencies, total scores)</li>
+<li>Inspect response distributions for outliers</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table> -->

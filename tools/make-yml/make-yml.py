@@ -5,13 +5,11 @@ import os
 os.chdir(os.getcwd())
 
 INPUT = "instruments.csv"
-OUTPUT = "../docs/data/instruments.yml"
+OUTPUT = "../../docs/data/instruments.yml"
 
 # df = pd.read_csv(INPUT)
 # read all values as strings so that info like total number of items isn't converted from '25' to '25.0'
-df = pd.read_csv(INPUT, dtype=str)
-
-# df = df[df['battery'] != 'Infant']      
+df = pd.read_csv(INPUT, dtype=str)    
 
 # Check that instrument/measure name is present otherwise raise error
 required = ["measure"]

@@ -25,30 +25,30 @@
 </tbody>
 </table>
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>The CDI forms are well-documented and widely used assessments. We note that percentile scores were calculated based on the norms described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023), see additional references below. See <a href="#hbcd-mod">HBCD Modifications</a> for a description of how the CDI-WG is administered to children with exposure to different languages; users may want to consider the <a href="../mlds" target="_blank">Multilingual Language Development</a> questionnaire in conjunction with the CDI.</p>
 </div>
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p>The CDI-WG provides percentiles score but does not provide standard scores. Note that in some cases, the caregiver endorsed all items in certain sections of the Web-CDI form. These cases are included in the released data as completed by the caregiver, but users may take caution in interpretation.</p> 
 <p>In addition, the CDI includes a benchmark age that is based on entry by the caregiver. Note that the CDI is not administered until 9 months of age and data entry errors may occur. Users may want to use this in conjunction with other data on the child's age included elsewhere in HBCD.</p>
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
 The **MacArthur-Bates Communicative Development Inventories, Words and Gestures**, Web Version, English and Spanish is a caregiver -report assessment of children’s early language development, including expressive and receptive vocabulary and gesture. In HBCD, the Words and Gestures form is administered up to 16 months of age.  Beginning at 16 months of age, the Words and Gestures form the Words and Sentences form. See details about both forms at [https://mb-cdi.stanford.edu/](https://mb-cdi.stanford.edu/).
 
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p>Administration of the CDI-WG in English or Spanish is decided based on the results of the Multilingual Language Development questionnaire. If the caregiver reports that the child has 30% or greater exposure to English and/or Spanish, they are prompted to complete the CDI in that language; children who are exposed to both English and Spanish at a greater than 30% level are prompted to complete both forms. If caregivers report less than 30% exposure to either language, administration defaults to English.</p> 
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>All summary scores (e.g. <strong>Total Gestures</strong>, <strong>Words Understood</strong>, <strong>Words Produced</strong>) and associated percentiles (with and without adjustment for child sex) were computed within Web-CDI using the most updated norms within that software and described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023).</p>  
 <p>The child’s age at administration for purposes of scoring the CDI is entered by the caregiver as part of the Web-CDI form. The caregiver also notes on this form if the child was born prematurely and if so, by how many weeks. The Web-CDI then provides percentile scores both unadjusted and adjusted for prematurity. See <a href="https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf">https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf</a>.</p>

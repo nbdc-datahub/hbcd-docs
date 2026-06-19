@@ -14,7 +14,7 @@
 </tbody>
 </table>
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p><b>Incomplete Summary Scores</b><br>
 Item-level responses are provided for the whole cohort; summary scores are present for all participants except those with data obtained in the month prior to the cutoff date for data inclusion (June 1st, 2025). Summary scores from <a href="http://babysleep.com">babysleep.com</a> will be available in subsequent releases.</p> 
@@ -24,7 +24,7 @@ Note that it is not currently possible to determine which participants were admi
 Scores are for research purposes only and are not for individual dissemination or clinical use.</p>
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 The Brief Infant Sleep Questionnaire - Short Form (**BISQ-SF**) instrument has three subscales:
@@ -70,7 +70,7 @@ The Brief Infant Sleep Questionnaire - Short Form (**BISQ-SF**) instrument has t
 <p>When the child is mentioned, pronouns were changed from "he/she" to “the child” or gender-neutral pronouns for gender neutrality.</p>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>The BISQ-SF is scored in collaboration with the instrument developers (<a href="https://www.babysleep.com/BISQ/">https://www.babysleep.com/BISQ/</a>). Parent responses are uploaded to the Baby Sleep team who scores the instrument utilizing a proprietary algorithm and then sends scores back to the HBCD data team. Note that the BISQ-R SF (short form) includes 19 scored questions and one additional sleep duration question which is not scored.</p>
 <p><b>From <a href="http://babysleep.com">babysleep.com</a></b>: Scores on each subscale and the total score are scaled from 0 to 100, with higher scores denoting better sleep quality, more positive perception of infant sleep, and parent behaviors that promote healthy and independent sleep. The Total score (T) is computed from the average of the 3 subscale scores.</p>

@@ -1,10 +1,10 @@
 # USDTL Urine Toxicology (Maternal)
 
-{{ overview_table(instruments.urine) }}
+{{ readme(instruments.urine) }}
 
 {{  warning_banner_FULL(instruments.urine) }}
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ---
 
@@ -132,7 +132,7 @@ Ketamine (<code>c_ket_u</code>)<br>Norketamine (<code>c_nket_u</code>)<br>Phency
 </table>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p><b>Final results for each substance follow these rules:</b></p>
 <ul>

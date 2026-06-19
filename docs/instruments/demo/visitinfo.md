@@ -2,7 +2,7 @@
 
 Visit Information (table name `par_visit_data`) includes general visit information (e.g. site and information about missed visits and participant withdrawal), substance use flags, and cohort and caregiver types. 
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Age Of Child at Each Visit
 

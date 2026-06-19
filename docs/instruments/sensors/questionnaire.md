@@ -13,12 +13,12 @@
 
 ---------------------------------------------
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p>Researchers should consider that occurrence of caregiver non-response (see Quality Control information) may not be randomly distributed across the sample.</p>
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Administration & Quality Control
 

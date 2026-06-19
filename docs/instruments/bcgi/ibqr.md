@@ -54,12 +54,12 @@
 </table>
 
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p><b>Interpreting IBQ-R and ECBQ Data</b><br>
 The IBQ-R (VSF)+BI and ECBQ (VSF)+BI measure normative variations in infant and child behavior and should be interpreted in the context of the child’s age and developmental stage. These instruments are not clinical or diagnostic tools.</p>
@@ -68,7 +68,7 @@ At V05 (10–17 months), participants could be administered either the IBQ-R (va
 However, early in data collection, the ECBQ was inadvertently administered to infants older than 12 months (N=78). In a small number of cases (N=10), caregivers had not completed all of their V05 remote surveys before the child aged into the ECBQ range, resulting in both measures being administered at V05. Although IBQ-R and ECBQ assess similar constructs, they are not interchangeable. Users should review measure-specific properties before incorporating these data into analyses.</p>
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 The *Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibition* **(IBQ-R VSF+BI)** and *Early Childhood Behavior Questionnaire Very Short Form + Behavior Inhibition* **(ECBQ VSF+BI)** are caregiver-report measures of temperamental reactivity and self-regulation in early development. Both instruments extend the validated Very Short Forms (VSF) of the IBQ-R and ECBQ by incorporating additional items from the long-form questionnaires (items 38–47) to capture Behavioral Inhibition (Social Fear).
@@ -213,13 +213,13 @@ The HBCD versions therefore include four scale domains: **Behavioral Inhibition*
 </div>
 </div>
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p>Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, the pronouns "she/he" or "her/him" in reference to the child/baby were changed to “the baby/child” or “they/them” as fit the item wording.</p>
 <p>The creators of this measure have requested that these alterations be noted in all documentation and publications.</p>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>The IBQ-R and ECBQ item responses are reported on a 7-point Likert scale (from <i>1 = Never</i> to <i>7 = Always</i>). For each domain (Behavioral Inhibition, Negative Affectivity, Effortful Control, and Surgency/Extraversion), summary scores are computed as the mean of all items with values of 1-7. This excludes non-response options, "Does not apply" and "Decline to answer," which are not scored and considered missing.</p>
 <p>Prior to computing summary scores, reverse scoring (i.e. values reassigned from 1→7 to 7→1) is applied to items labeled with <b>(R)</b> in the <a href="#ibq-r-ecbq-domain-items">Domain Items</a> table above. In the release data, the raw item-level data is not reverse-scored already. However, the domain scores do incorporate the reverse scoring. Summary scores are not computed if more than 40% of the items are missing responses (e.g. there are only 7/12 items with numerical responses of 1-7) and are instead marked as missing.</p>

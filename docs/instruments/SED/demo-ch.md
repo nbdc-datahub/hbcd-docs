@@ -1,6 +1,6 @@
 # Child Demographics
 
-{{ overview_table(instruments.demographics_ch) }}
+{{ readme(instruments.demographics_ch) }}
 
 <!-- <td><b>Administration</b></td>
 <td>
@@ -9,13 +9,13 @@
   <b>Method</b>: HBCD Study Staff, in person (10 min estimated duration)
 </td> -->
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables such as race, ethnicity, country of origin, and socioeconomic data, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.</p> 
 <p>Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race and/or ethnicity variables as proxies for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.</p>
 </div>
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p><b>Participant-Reported Challenges</b><br>
 Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture how they choose to identify their child).</p> 
@@ -34,7 +34,7 @@ The item “How many days per month do you live with the child?” (<code>sed_bm
 For household roster variables, respondents were instructed to <b>exclude the main child</b> when reporting the number of people living in the household (e.g., <a href="../demo-ch-table/#household-specific-details" target="_blank">item 29</a>). Metadata for relevant fields (<code>sed_bm_demo_child__roster_002__02__*</code>) will be updated in the future to make this instruction explicit. This includes fields describing the total number of children younger than 17, the total number of people in the household, and corresponding fields for a second household, if applicable.</p>
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 

@@ -1,135 +1,774 @@
-apa:
-  name: DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure—Adult (APA 1/2)
-  acronym: APA 1/2
-  domain: Pregnancy & Exposure, Including Substance Use
-  table_name: pex_bm_apa
-  construct: Mental Health
-  visits: V01 · V02 · V03
-  administration: Pregnant participant/primary caregiver survey (not child-specific; 5 min)
-  qc: <ul>
-      <li>Checks for missing data based on counts for items completed by each participant</li>
-      <li>Verification of scoring accuracy</li>
-      <li>Summary statistics to examine item-level frequencies and total scores</li>
-      <li>Review of response distributions for potential outliers</li>
-      </ul>
-
-demographics:
-  name: Demographics
-  acronym:
-  domain: Social & Environmental Determinants
-  table_name: sed_bm_demo
-  construct: Demographics (Birth Parent/Alternative Caregiver)
-  visits: V01 · V04 · V06
-  administration: Parent/Caregiver interview (not child-specific; 10 min)
-  qc: <ul>
-      <li>Data dashboard was monitored for variable missingness, coding errors, and data consistency</li>
-      <li>High missingness was noted for income, although this is in line with expectations</li>
-      </ul>
-
-demographics_ch:
-  name: Child Demographics
-  acronym:
-  domain: Social & Environmental Determinants
-  table_name: sed_bm_demo_child
-  construct: Child Demographics
-  visits: V04 · V06
-  administration: Parent interview (child-specific; 10 min)
-  qc: <ul>
-      <li>Data dashboard was monitored for variable missingness, coding errors, and data consistency</li>
-      <li>High missingness was noted for income, although this is in line with expectations</li>
-      </ul>
-
 chaos:
-  name: Confusion, Hubbub and Order Scale
+  measure: Confusion, Hubbub and Order Scale
   acronym: CHAOS
-  domain: Behavior & Caregiver-Child Interaction
-  table_name: med_cg_chaos
+  full_name: null
+  domain: Behavior & Caregiver-Child Interactions
+  table_name: mh_cg_chaos
   construct: Family Organization
-  visits: V05 · V07
-  administration: Primary caregiver survey (child-specific; 4–8 min)
-  qc: <ul>
-      <li>Assess missingness (items completed per participant)</li>
-      <li>Verify scoring accuracy</li>
-      <li>Review summary statistics (item frequencies, total scores)</li>
-      <li>Inspect response distributions for outliers</li>
-      </ul>
-
+  visits: V05, V07
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Primary caregiver on Child
+  admin_notes: null
+  remote: remote
+  duration: 4-8 min
+  qc: Assess missingness (items completed per participant); Verify scoring accuracy;
+    Review summary statistics (item frequencies, total scores); Inspect response distributions
+    for outliers
+ecpromis_selfreg:
+  measure: ecPROMIS Self-Regulation - Flexibility Scale
+  acronym: null
+  full_name: null
+  domain: Behavior & Caregiver-Child Interactions
+  table_name: mh_cg_pms__selfreg
+  construct: Self-Regulation and Flexibility
+  visits: V05, V07, V09
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Primary Caregiver on Child
+  admin_notes: null
+  remote: remote
+  duration: 1-2 min
+  qc: Examine missingness by counting items answered per participant; Check age is
+    within expected ranges; Review summary statistics and visualizations (item frequencies,
+    age, prorated scores)
+fad:
+  measure: Family Assessment Device
+  acronym: FAD (GF6+)
+  full_name: null
+  domain: Behavior & Caregiver-Child Interactions
+  table_name: mh_cg_fad
+  construct: Global Functioning of the Family Unit
+  visits: V04, V06
+  child_specific: 'No'
+  type: Parent Interview or Survey
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: either
+  duration: 2 min
+  qc: null
+ibqr:
+  measure: Infant Behavior Questionnaire-Revised VSF+BI
+  acronym: IBQ-R
+  full_name: Infant Behavior Questionnaire-Revised Very Short Form + Behavioral Inhibition
+  domain: Behavior & Caregiver-Child Interactions
+  table_name: mh_cg_ibqr
+  construct: Behavioral Inhibition Negative Affectivity Effortful Control Surgency
+    / Extraversion
+  visits: V03, V05
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Primary caregiver
+  admin_notes: null
+  remote: remote
+  duration: 7-10 min
+  qc: Assess missingness (items completed per participant); Verify age falls within
+    expected range; Review summary statistics and visualizations (item frequencies,
+    age, prorated scores); Assess reliability (Cronbach’s α)
+maps_tl:
+  measure: Multidimensional Assessment Profiles - Temper Loss Scale
+  acronym: MAPS-TL
+  full_name: null
+  domain: Behavior & Caregiver-Child Interactions
+  table_name: mh_cg_mapdb__inf
+  construct: Irritability
+  visits: V03
+  child_specific: null
+  type: null
+  respondent_notes: null
+  admin_notes: null
+  remote: null
+  duration: null
+  qc: Examine missingness by counting items answered per participant.; Check age is
+    within expected ranges (3-9/10-17 months for Infant/Toddlerhood).; Review summary
+    statistics and visualizations (item frequencies, age, prorated scores).; Cronbach's
+    Alpha calculated to assess reliability.
+nails:
+  measure: USDTL Nails Toxicology (Maternal)
+  acronym: Nails
+  full_name: null
+  domain: Biospecimen & Omics
+  table_name: bio_bm_biosample_nails_results (toxicology screen), bio_bm_biosample_nails_type
+    (specimen type)
+  construct: Drug Panel, Environmental Exposure
+  visits: V01, V02
+  child_specific: 'No'
+  type: Direct Assessment
+  respondent_notes: Pregnant/postpartum person
+  admin_notes: Self-collected under supervision or collected by research team
+  remote: in-person
+  duration: 5 min
+  qc: null
+urine:
+  measure: USDTL Urine Toxicology (Maternal)
+  acronym: Urine
+  full_name: null
+  domain: Biospecimen & Omics
+  table_name: null
+  construct: null
+  visits: null
+  child_specific: 'No'
+  type: Direct Assessment
+  respondent_notes: null
+  admin_notes: null
+  remote: null
+  duration: null
+  qc: null
+bayley_4:
+  measure: Bayley Scales of Infant and Toddler Development, Fourth Edition
+  acronym: Bayley-4
+  full_name: null
+  domain: Neurocognition & Language
+  table_name: ncl_ch_bayley
+  construct: Child Development (Cognitive, Language, and Motor)
+  visits: V04
+  child_specific: 'Yes'
+  type: Parent Interview
+  respondent_notes: Child
+  admin_notes: null
+  remote: in-person
+  duration: 60-90 min
+  qc: null
+mb_cdi:
+  measure: MacArthur-Bates CDI
+  acronym: MB-CDI
+  full_name: MacArthur-Bates Communicative Development Inventories, Words and Gestures
+  domain: Neurocognition & Language
+  table_name: ncl_ch_cdiwgen (English version); ncl_ch_cdiwges (Spanish version)
+  construct: Language Development
+  visits: V04, V06
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: in-person
+  duration: 20-60 min
+  qc: null
+mlds:
+  measure: Multilingual Language Development Screener
+  acronym: MLDS
+  full_name: null
+  domain: Neurocognition & Language
+  table_name: ncl_ch_mlds
+  construct: Multilingual Exposure
+  visits: V03, V04, V05, V07
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Primary Caregiver
+  admin_notes: If the caregiver does not complete the assessment remotely, it is conducted
+    at the visit to document the child’s language exposure environments. The instrument
+    can be administered by an HBCD Study team member in-person or via video as needed.
+  remote: remote
+  duration: 3-10 min
+  qc: null
+spm_2:
+  measure: Sensory Processing Measure-2
+  acronym: SPM-2
+  full_name: null
+  domain: Neurocognition & Language
+  table_name: ncl_cg_spm2__inf (Infant version); ncl_cg_spm2__tod (Toddler version)
+  construct: Sensory Processing/Integration
+  visits: V03 (Infant); V05 (Toddler)
+  child_specific: null
+  type: null
+  respondent_notes: null
+  admin_notes: null
+  remote: null
+  duration: null
+  qc: null
+vineland_3:
+  measure: Vineland-3
+  acronym: Vineland-3
+  full_name: Vineland Adaptive Behavior Scales Third Edition
+  domain: Neurocognition & Language
+  table_name: ncl_cg_vabs
+  construct: Adaptive Behavior
+  visits: V05, V09, V10
+  child_specific: 'No'
+  type: Parent Survey
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: remote
+  duration: 15-30 min
+  qc: null
+int_sensor_q:
+  measure: Infant Sensor Questionnaire 1/2/3
+  acronym: null
+  full_name: null
+  domain: Novel Tech & Wearable Sensors
+  table_name: nt_ch_sens__qtn_{1|2|3}
+  construct: Motor Development, Regulation (Sleep/Wake)
+  visits: V02, V03
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Primary Caregiver
+  admin_notes: null
+  remote: null
+  duration: null
+  qc: null
+bf:
+  measure: Breast Feeding History
+  acronym: PHENX BF
+  full_name: null
+  domain: Physical Health
+  table_name: ph_cg_phx__bfh
+  construct: Nutrition
+  visits: V02, V03, V04, V06, V08 V08 (only administered if still breastfeeding at
+    prior visit)
+  child_specific: 'Yes'
+  type: null
+  respondent_notes: Parent Survey
+  admin_notes: null
+  remote: remote
+  duration: 1 min
+  qc: Monitoring of data dashboard for variable missingness; Detection of possible
+    coding errors; Review of data consistency
+bisq:
+  measure: Brief Infant Sleep Questionnaire
+  acronym: BISQ-SF
+  full_name: null
+  domain: Physical Health
+  table_name: ph_cg_bisq
+  construct: Sleep
+  visits: V04
+  child_specific: 'Yes'
+  type: null
+  respondent_notes: Parent Survey
+  admin_notes: null
+  remote: remote
+  duration: 5 min
+  qc: null
+ecpromis_sleep:
+  measure: ecPROMIS - Parent Report Sleep Problems
+  acronym: null
+  full_name: null
+  domain: Physical Health
+  table_name: ph_cg_pms__sleep
+  construct: Sleep
+  visits: V04, V06
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: either
+  duration: 1 min
+  qc: Monitoring of data dashboard for variable missingness; Detection of possible
+    coding errors; Verification of scoring accuracy when applicable; Review of data
+    consistency
+ecpromis_pags:
+  measure: ecPROMIS - Physical Activity/Greenspace
+  acronym: null
+  full_name: null
+  domain: Physical Health
+  table_name: ph_cg_pms__pags
+  construct: Physical Activity
+  visits: V04, V06
+  child_specific: 'Yes'
+  type: Parent Survey or Interview
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: either
+  duration: 2 min
+  qc: Monitoring of data dashboard for variable missingness; Detection of possible
+    coding errors; Verification of scoring accuracy; Review of data consistency
+growth:
+  measure: Growth
+  acronym: null
+  full_name: null
+  domain: Physical Health
+  table_name: ph_ch_anthro
+  construct: Growth
+  visits: V02, V03, V04, V06, V08
+  child_specific: 'Yes'
+  type: Direct Assessment
+  respondent_notes: null
+  admin_notes: null
+  remote: in-person
+  duration: 5 min
+  qc: Monitoring of data dashboard for variable missingness; Detection of possible
+    coding errors; Review of data consistency
+nutrition:
+  measure: Infant Nutrition Questionnaire
+  acronym: null
+  full_name: null
+  domain: Physical Health
+  table_name: ph_cg_inq
+  construct: null
+  visits: V05
+  child_specific: 'Yes'
+  type: Parent Interview
+  respondent_notes: Birth Parent or Primary Caregiver on Child
+  admin_notes: null
+  remote: either
+  duration: 10 min
+  qc: Monitoring of data dashboard for variable missingness; Detection of possible
+    coding errors; Review of data consistency
+med_hist:
+  measure: Medical History Questionnaire
+  acronym: null
+  full_name: null
+  domain: Physical Health
+  table_name: ph_cg_ecls__medhist
+  construct: Medical History
+  visits: V04, V06
+  child_specific: 'Yes'
+  type: Parent Interview
+  respondent_notes: Birth Parent or Primary Caregiver on Child
+  admin_notes: null
+  remote: either
+  duration: 10 min
+  qc: Monitoring of data dashboard for variable missingness; Detection of possible
+    coding errors; Review of data consistency
+screenq:
+  measure: Screen-Based Media Use
+  acronym: ScreenQ
+  full_name: null
+  domain: Physical Health
+  table_name: ph_cg_screenq
+  construct: Media Use
+  visits: V04, V06
+  child_specific: 'Yes'
+  type: Parent Interview
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: either
+  duration: 5 min
+  qc: Monitoring of data dashboard for variable missingness; Detection of possible
+    coding errors; Verification of scoring accuracy when applicable; Review of data
+    consistency
+vision:
+  measure: VS100 Spot Vision Screener
+  acronym: null
+  full_name: null
+  domain: Physical Health
+  table_name: ph_ch_vs
+  construct: Vision
+  visits: V04, V06, V08
+  child_specific: 'Yes'
+  type: null
+  respondent_notes: Child on Self
+  admin_notes: HBCD Study staff, in person (Few seconds estimated duration) Only administered
+    if parent responds NO to eligibility question (“Have you been told that your child
+    cannot see at all?” (i.e., cannot see shadows or distinguish light and dark)
+  remote: null
+  duration: null
+  qc: Data are reviewed to verify that sites obtain a valid screening outcome (PASS
+    or REFER).; The device does not generate results if it is used incorrectly.
+assist:
+  measure: Alcohol, Smoking and Substance Involvement Screening Test V1-V4
+  acronym: ASSIST V1-V4
+  full_name: null
+  domain: Pregnancy & Exposure, Including Substance Use
+  table_name: pex_bm_assist{v1|v2|v3|v4}
+  construct: 'ASSIST substance use assessment across visits: V1 : Pre-pregnancy and
+    during pregnancy V2 : Late pregnancy and early postnatal (0–4 weeks) V3 : Postpartum
+    (3-month anchor) V4 : Postpartum (12-month anchor)'
+  visits: null
+  child_specific: 'No'
+  type: Parent Interview
+  respondent_notes: Pregnant Participant/Birth Parent (as applicable)
+  admin_notes: Self-administered in Alabama
+  remote: in-person
+  duration: 3-5 min
+  qc: null
+ptsd:
+  measure: DSM5 Severity Acute Stress or PTSD
+  acronym: PTSD/Acute Stress
+  full_name: National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder
+  domain: Pregnancy & Exposure, Including Substance Use
+  table_name: pex_bm_str__ptsd
+  construct: PTSD/Acute Stress Disorder Symptom Severity
+  visits: V01, V02, V03
+  child_specific: 'No'
+  type: Parent Survey
+  respondent_notes: Pregnant Participant, Birth Parent, or Primary Caregiver&lt;
+  admin_notes: null
+  remote: either
+  duration: 3 min
+  qc: null
+epds:
+  measure: Edinburgh Postnatal Depression Scale
+  acronym: EPDS
+  full_name: null
+  domain: Pregnancy & Exposure, Including Substance Use
+  table_name: pex_bm_epds
+  construct: Postnatal Depression
+  visits: V01, V02, V03
+  child_specific: 'No'
+  type: Parent Survey
+  respondent_notes: Pregnant Participant or Birth Parent
+  admin_notes: null
+  remote: either
+  duration: 3 min
+  qc: null
+fam_mh:
+  measure: Personal and Family Psychiatric History
+  acronym: FAM MH
+  full_name: null
+  domain: Pregnancy & Exposure, Including Substance Use
+  table_name: pex_bm_psych
+  construct: Personal and Family Mental Health
+  visits: V01
+  child_specific: 'No'
+  type: Parent Survey
+  respondent_notes: Pregnant Participant
+  admin_notes: null
+  remote: either
+  duration: 5 min
+  qc: null
+subst:
+  measure: Substance Use Patterns in Pregnancy
+  acronym: null
+  full_name: null
+  domain: Pregnancy & Exposure, Including Substance Use
+  table_name: pex_bm_subst
+  construct: Substance Use in Pregnancy
+  visits: V02
+  child_specific: 'No'
+  type: Parent Survey
+  respondent_notes: Birth Parent
+  admin_notes: null
+  remote: in-person
+  duration: 5 min
+  qc: null
+tlfb:
+  measure: Timeline Follow Back
+  acronym: TLFB
+  full_name: null
+  domain: Pregnancy & Exposure, Including Substance Use
+  table_name: pex_bm_tlfb
+  construct: Substance Use Before and During Pregnancy
+  visits: V01, V02
+  child_specific: 'No'
+  type: Parent Interview
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: self-administered in Alabama
+  remote: in-person
+  duration: 10 min
+  qc: null
+foodins:
+  measure: 2-item Food Insecurity
+  acronym: null
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_cg_foodins
+  construct: Food Insecurity
+  visits: V02, V03
+  child_specific: 'Yes'
+  type: null
+  respondent_notes: Parent
+  admin_notes: null
+  remote: remote
+  duration: 1 min
+  qc: null
+aces:
+  measure: Adverse Childhood Experiences
+  acronym: ACEs
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_cg_ace
+  construct: Adverse Childhood Experiences (Caregiver)
+  visits: V04
+  child_specific: null
+  type: null
+  respondent_notes: null
+  admin_notes: null
+  remote: null
+  duration: null
+  qc: null
+bfy:
+  measure: Baby's First Years
+  acronym: BFY
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_bm_bfy
+  construct: Benefits/Services, Economic Stress
+  visits: V01, V05, V07
+  child_specific: 'No'
+  type: null
+  respondent_notes: Parent
+  admin_notes: null
+  remote: in-person
+  duration: 4 min
+  qc: null
+child_demo:
+  measure: Child Demographics
+  acronym: null
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: null
+  construct: null
+  visits: null
+  child_specific: null
+  type: null
+  respondent_notes: null
+  admin_notes: null
+  remote: null
+  duration: null
+  qc: null
+cabr_sf:
+  measure: Composite Abuse Scale Revised - Short Form
+  acronym: CABr-SF
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_cg_cabr_sf
+  construct: Intimate Partner Violence
+  visits: V04, V06
+  child_specific: 'No'
+  type: Parent Survey
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: Self-administered in person in a private setting
+  remote: in-person
+  duration: 2 min
+  qc: null
+employment:
+  measure: Current Employment
+  acronym: null
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_cg_employ
+  construct: Current Employment
+  visits: V05
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: either
+  duration: 5 min
+  qc: null
+demo:
+  measure: Demographics (Adult)
+  acronym: null
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: null
+  construct: null
+  visits: null
+  child_specific: null
+  type: null
+  respondent_notes: null
+  admin_notes: null
+  remote: null
+  duration: null
+  qc: null
+discr:
+  measure: Experiences of Unfair Treatment
+  acronym: null
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_bm_phx__discr
+  construct: Experiences of Unfair Treatment
+  visits: V01, V05, V07
+  child_specific: 'No'
+  type: Parent Survey
+  respondent_notes: Parent
+  admin_notes: null
+  remote: remote
+  duration: 3 min
+  qc: null
+home21:
+  measure: HOME-21 Infant-Toddler
+  acronym: HOME-21
+  full_name: Home Observation for Measurement of the Environment Infant-Toddler Version
+  domain: Social & Environmental Determinants
+  table_name: sed_cg_home_it
+  construct: 'Child’s Home Environment: Cognitive Stimulation and Emotional Support
+    in the Home'
+  visits: V04, V06
+  child_specific: 'No'
+  type: Parent Interview or Survey
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: either
+  duration: 10 min
+  qc: null
+chem_exp:
+  measure: Household Chemical Exposures
+  acronym: null
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_cg_hce
+  construct: Household Chemical Exposures
+  visits: V05
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: either
+  duration: 5 min
+  qc: null
+lead_exp:
+  measure: Lead Exposures
+  acronym: null
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_cg_ledexp
+  construct: Lead Exposures
+  visits: V05
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: either
+  duration: 5 min
+  qc: null
+ehits:
+  measure: Partner Dynamics Extended
+  acronym: eHITS
+  full_name: Partner Dynamics Extended – Hurt, Insult, Threaten, Scream
+  domain: Social & Environmental Determinants
+  table_name: sed_bm_ehits
+  construct: Intimate Partner Violence
+  visits: V01
+  child_specific: 'No'
+  type: Parent Interview
+  respondent_notes: Parent
+  admin_notes: null
+  remote: in-person
+  duration: 2 min
+  qc: null
+nbhsaf:
+  measure: PhenX+ Neighborhood Safety
+  acronym: null
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_bm_nbhsaf
+  construct: Neighborhood Safety
+  visits: V01, V02, V07, V09
+  child_specific: 'No'
+  type: Parent Survey
+  respondent_notes: Parent
+  admin_notes: null
+  remote: either
+  duration: 1 min
+  qc: null
+strsup:
+  measure: PROMIS Perceived Stress/Social Support
+  acronym: null
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_bm_strsup
+  construct: Perceived Stress/Social Support
+  visits: V01, V02, V03
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Primary Caregiver on Child
+  admin_notes: null
+  remote: remote
+  duration: 4 min
+  qc: null
+shs:
+  measure: Second Hand Smoke Exposure
+  acronym: null
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_cg_shs
+  construct: Second Hand Smoke
+  visits: V05
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: either
+  duration: 1 min
+  qc: null
+tic:
+  measure: Transitions in Care Screener
+  acronym: TIC
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_cg_tic_screener
+  construct: Documents when children spend time living in non-parental care/change
+    in who provides primary care
+  visits: V02 onward
+  child_specific: 'Yes'
+  type: Parent Interview or Survey
+  respondent_notes: Original Consented Parent or Alternate Caregiver
+  admin_notes: RA administered via phone
+  remote: remote
+  duration: 5 min
+  qc: Monthly data consistency checks to identify discrepancies across submissions.;
+    Resolution of contradictory site responses, such as inconsistencies in site responses
+    where reported answers about whether a TIC had or had not “ever” occurred conflicted
+    with the information recorded in TIC Screeners. Sites were contacted for clarification
+    and correction.; Follow-up on data entry issues, including missing or incomplete
+    responses, conflicting information across multiple forms, and TIC being filled
+    out for a later time point than when the transition occurred (e.g., V06 TIC available
+    for TIC that occurred at V02).
+via:
+  measure: Vancouver Index of Acculturation
+  acronym: VIA
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: sed_cg_via
+  construct: Acculturation
+  visits: V05
+  child_specific: 'No'
+  type: Parent Interview or Survey
+  respondent_notes: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: either
+  duration: 5 min
+  qc: null
+apa:
+  measure: APA 1/2
+  acronym: APA 1/2
+  full_name: DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure—Adult
+  domain: null
+  table_name: null
+  construct: null
+  visits: null
+  child_specific: null
+  type: null
+  respondent_notes: null
+  admin_notes: null
+  remote: null
+  duration: null
+  qc: null
+erica:
+  measure: Early Regulation in Context Assessment
+  acronym: ERICA
+  full_name: null
+  domain: null
+  table_name: 'Primary coding data file: mh_cg_erica_3_9m Reliability codes: mh_cg_erica_rel_3_9m'
+  construct: Emotional Regulation, Parenting, Caregiver-Child Relationship
+  visits: V03
+  child_specific: 'Yes'
+  type: Parent Interview
+  respondent_notes: Birth Parent or Primary Caregiver and Child
+  admin_notes: null
+  remote: in-person
+  duration: 20-30 min
+  qc: null
 ecpromis_peer:
-  name: ecPROMIS Peer Relationships Scale
-  acronym: ecPROMIS Peer
-  domain: Behavior & Caregiver-Child Interaction
+  measure: ecPROMIS Peer Relationships Scale
+  acronym: null
+  full_name: null
+  domain: Behavior & Caregiver-Child Interactions
   table_name: med_cg_pms__peer
   construct: Peer Relationships
-  visits: V05 · V07 · V09
-  administration: Primary caregiver survey (child-specific; 1-2 min)
-  qc: <ul>
-      <li>Assess missingness (items completed per participant)</li>
-      <li>Check age is within expected range</li>
-      <li>Review summary statistics (item frequencies, age, prorated scores)</li>
-      </ul>
-
-mri_forms:
-  name: MRI Scan Session & Data Summary Forms
-  acronym: 
-  domain: Tabular Imaging
-  table_name: mri_ra_chkl_scan / mri_ra_chkl_data
-  construct: Pre-/Post-MRI Tech Checklists 1 <i>(Scan Session)</i> & 2 <i>(Data)<i>
-  visits: V02 - V06
-  administration: Checklists completed by MRI technicians (child-specific)
-  qc: Brief visual review of data prior to release to check for errors and missingness
-
-olink:
-  name: Olink Explore 384 Inflammation 1 Panel
-  acronym: Olink
-  domain: Behavior & Caregiver-Child Interaction
-  file_tree: |
-    └── concatenated/proteins/olink/inflammation/
-        ├── Olink_allplates_long.csv
-        └── Olink_allplates_wide.csv
-  table_name:
-  construct: Maternal Inflammation
-  visits: V01
-  administration: Direct assessment of pregnant participant
-  qc: Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview (<em>section 7.1 Internal controls</em>)</a> for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of <em>0</em> for <code>{ASSAY}_Count</code> and <em>NA</em> for <code>ExtNPX</code>, <code>NPX</code>, and <code>PCNormalizedNPX</code>.
-
+  visits: V05, V07, V09
+  child_specific: 'Yes'
+  type: Parent Survey
+  respondent_notes: Primary Caregiver on Child
+  admin_notes: null
+  remote: remote
+  duration: 1-2 min
+  qc: Examine missingness by counting items answered per participant.; Check age is
+    within expected ranges.; Review summary statistics and visualizations (item frequencies,
+    age, prorated scores).
 prescan_q:
-  name: Pre-Scan Questionnaire
-  acronym: 
-  domain: Tabular Imaging
-  table_name: mri_ra_prep
-  construct: Infant Sleep Environment
-  visits: V02 - V06
-  administration: Primary caregiver interview (child-specific)
-  qc: Data dashboard monitored for variable missingness, coding errors, and data consistency
-
-studynav:
-  name: Study Navigator Contact Form
-  acronym: 
-  domain: Administrative
-  file_tree: |
-    └── concatenated/
-        └── study_navigator/
-            └── Study Navigator Export - Release X.csv
-  table_name: 
-  construct: Recruitment/Retention
-  visits: V01 - V06
-  administration: Primary caregiver interview (filled out by the Study Navigator during and/or between study visits)
-  qc: This form is under development for HBCD. Data was collected with guidance using the <a href="../SNContactFormCompanionGuideOutline_Pilot_V4-HH.pdf"   target="_blank">HBCD Study Navigation Contact Form Guide</a>. Data review and cleaning has occurred 3 times (September 2024, February 2025, and November 2025). Minor updates to the form and the form guide were completed in September 2024 and October 2025.
-
-urine:
-  name: USDTL Urine Toxicology (Maternal)
-  acronym: Maternal Urine
-  domain: Biospecimens & Omics
-  table_name: bio_bm_biosample_urine_results
-  construct: Drug Panel, Toxins
-  visits: V01
-  administration: Direct Assessment of pregnant/postpartum participant (self-collected; 5 min)
-  qc: Examine assay ranges and categorical versus continuous measures
-  warning1: USDTL Screening Updates
-  warning1_text: As of May 19, 2025, USDTL transitioned the initial urine screening test for fentanyl and sufentanil from LDTD to ELISA. As of November 2025, urine samples were no longer assayed for sufentanil, and USDTL simplified its specimen validity assessment, replacing a multi-parameter algorithm (including pH and nitrite) with a single creatinine-based measure to evaluate urine hydration.
-  warning2: Continuous Variables
-  warning2_text: Continuous variables should be interpreted with caution based on limits of quantification (LOQ), i.e. the minimum concentration at which metabolites can be reliably quantified. See <a href="#urine-table1">Urine Assay Thresholds for Analytes</a>.
-  warning3: Urinary Concentration Corrections
-  warning3_text: Urinary concentration varies by participant. Researchers who wish to correct for urinary concentration in continuous measures, or apply different thresholds, can do so using creatinine or specific gravity results from sample validation.
-  warning4: Large Gaps Between Collection and Analysis Dates
-  warning4_text: A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.
+  measure: Pre-Scan Questionnaire & MRI Summary Forms
+  acronym: null
+  full_name: null
+  domain: null
+  table_name: null
+  construct: null
+  visits: null
+  child_specific: null
+  type: null
+  respondent_notes: null
+  admin_notes: null
+  remote: null
+  duration: null
+  qc: null

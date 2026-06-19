@@ -13,7 +13,7 @@
 <td>Response distributions reviewed for outliers</td></tr>
 </tbody></table>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -57,7 +57,7 @@ The **HBCD FAM MH** assesses self-reported diagnoses and mental health condition
 
 Future publications should note that this measure is a combination of these and that this is not a scored scale, but simply descriptive for family psychiatric history.
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p><b>FHAM</b><br>
 The FAM MH excludes the following items from the original FHAM instrument:

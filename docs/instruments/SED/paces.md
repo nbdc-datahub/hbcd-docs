@@ -24,7 +24,7 @@
 </tbody>
 </table>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -43,7 +43,7 @@ Protective and Compensatory Experience (PACEs) is a 10-question scale with score
 </tbody>
 </table>
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p>“Decline to answer” was added as a response option for all items. Instruction item language was also modified as follows:</p>
 <ul>
@@ -52,7 +52,7 @@ Protective and Compensatory Experience (PACEs) is a 10-question scale with score
 </ul>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p><b>Current PACEs (C-PACEs)</b><br>
 Item responses can range from 1 (Never) to 5 (Very Often). The summary score is calculated as the average of responses to the 10 items (<code>sed_bm_paces_001</code> through <code>sed_bm_paces_010</code>), yielding scores from 1 to 5, with higher scores indicating more protective experiences.<br>

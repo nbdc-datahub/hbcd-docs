@@ -42,7 +42,7 @@
 </tbody>
 </table>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -62,7 +62,7 @@
 <p>The HBCD ScreenQ includes additional response options "Decline to answer" and "Don’t know." The impact on scoring is described under <a href="#scoring">Scoring Procedures</a> below. In addition, when the child is mentioned, pronouns were changed from he/she to “the child” for gender neutrality.</p>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>The ScreenQ is scored in 4 domains:</p>
 <ul>

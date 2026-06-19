@@ -1,28 +1,29 @@
 from .utils import is_present, table_row
 
+
 def build_readme(inst):
 
-    form_html = ""
+    qc = inst.get("qc")
 
-    if is_present(inst.get("form_link")):
-        form_html = f"""
-<a href="{inst.get('form_link')}" class="button-link">
-  View Questionnaire
-</a>
-"""
+    if qc:
+        qc_items = [
+            f"<li>{item.strip()}</li>"
+            for item in qc.split(";")
+            if item.strip()
+        ]
+        qc = f"<ul>{''.join(qc_items)}</ul>"
 
     return f"""
-<table class="table-no-vertical-lines-compact readme-table">
+<table class="table-no-vertical-lines readme-intro">
 <tbody>
 
 {table_row("Table Name", inst.get("table_name"), code=True)}
-{table_row("Acronym", inst.get("acronym"))}
+{table_row("Concatenated Data", inst.get('file_tree'), code=True)}
+{table_row("Construct", inst.get("construct"))}
 {table_row("Type (Duration)", f"{inst.get('type')} ({inst.get('duration')})")}
-{table_row("Response format", inst.get("responses"))}
-{table_row("Number of Items", inst.get("total_items"))}
+{table_row("Study Visits", inst.get("visits"))}
+{table_row("Quality Control", qc)}
 
 </tbody>
 </table>
-
-{form_html}
 """

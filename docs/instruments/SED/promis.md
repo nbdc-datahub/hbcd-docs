@@ -17,7 +17,7 @@
 </tbody>
 </table>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -40,7 +40,7 @@ The **Perceived Stress and Social Support (PROMIS)** tools assess caregiver perc
 <p>Response options for the PROMIS were modified to include the addition of “Don’t know” and “Decline to answer.”</p>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p><b>PROMIS Emotional Support 4a</b><br>
 Emotional support is reported on a 5-point Likert scale. Total raw scores (<code>total_raw_score</code>) are calculated as the sum of all item responses and are only computed when all items are answered<b style="font-size: 1.1em;">*</b>. Raw scores are converted to scale/T-scores (<code>scale_score</code>) with standard errors (<code>standard_error</code>) using the <a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Emotional_Support_Scoring_Manual.pdf">official scoring tables</a> (see table "PROMIS Emotional Support 4a"). Higher scores indicate greater emotional support. To include participants with missing item responses, researchers may instead use the <a href="https://www.assessmentcenter.net/ac_scoringservice">HealthMeasures Scoring Service</a> to generate T-scores.</p>

@@ -35,7 +35,7 @@
 </tbody>
 </table>
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p><b>Range Checks For Growth</b><br>
 Range checks were performed to identify and exclude extreme out-of-range values. Values outside of the following valid ranges were converted to 'n/a'. <i>Note that these ranges are not age-specific, i.e. the same ranges were used for all visits.</i></p>
@@ -65,13 +65,13 @@ Range checks were performed to identify and exclude extreme out-of-range values.
 Sex-specific birthweight for gestational age centiles and z-scores will be calculated in future data releases using Intergrowth curves (<a href="https://doi.org/10.1016/S0140-6736(14)60932-6">Villar et al. 2014</a>). In the meantime, data users can use these growth curves or ones of their choice to calculate centiles and small/large for gestational age variables. 
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
 Growth is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children, it will also include abdominal circumference (cm). 
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p><b>Anthropometric Z-Score and Percentile Calculations</b><br>
 Age-based z-scores and percentiles for growth measurements were calculated for V02 onward using the <a href="https://github.com/CDC-DNPAO/WHOanthro">WHOanthro</a> R package. Calculations are based on estimated date of delivery, inherently adjusting for pre-mature birth. WHO growth charts were used for participants &lt;2 years old, and CDC growth charts were used for participants 2 years and older.</p>

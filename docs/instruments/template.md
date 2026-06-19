@@ -5,12 +5,12 @@
 **Table Name**: table name (eg `pex_bm_apa`)       
 **Construct**: [The construct(s) that the measure assesses]
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p>Please provide any issue flagged by subject matter experts that are critical for users of this data. The purpose of this warning is to improve transparency and offer technical assistance by alerting the user to issues of data quality, providing information on how variables were constructed, providing instructions on how to calculate or analyze specific variables, or providing code (if necessary).</p> 
 </div>
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>The purpose of this warning is to offer guidance for research design, data interpretation, and communication of findings, including conceptual information. These warnings also include information on stigma and stigmatizing language related to some variables, or information on the manner in which race variables were conceptualized and collected for this study.</p>
 </div>
@@ -41,12 +41,12 @@ and common issues identified during QC processes that users should be aware of (
 <span style="color: red;">Description of the instrument, including its purpose, constructs measured, and any relevant background information. This section should provide enough context for the user to understand the significance of the instrument within the study. <br>
 PLEASE REMEMBER: this is general documentation for users of the data, so please provide general context to explain what a study measure is in addition to technical details (e.g. can pull from the abstract or introduction text if a paper was published on your measure)</span>
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p>Modifications made to the instrument for HBCD, including any changes in response options, item wording, or administration procedures. This section should clarify how the HBCD version differs from the original instrument.</p>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>Scoring procedures for the instrument, including how to calculate scores, any algorithms used, and how to interpret the results. This section should provide clear instructions for users to derive meaningful scores from the data collected. Upload the scoring algorithms used for any calculated scores or summary scores as well as the look up tables and any norming used. If this information isn't available online, you can send a PDF as well to include on the website (as long as the information is not proprietary).</p>
 </div>

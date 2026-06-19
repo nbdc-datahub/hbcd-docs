@@ -41,7 +41,7 @@
 </tbody>
 </table>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 

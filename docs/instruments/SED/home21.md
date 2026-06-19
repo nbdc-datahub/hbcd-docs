@@ -19,23 +19,23 @@
 </tbody>
 </table>
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables—especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers—to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
 Assessment of children’s home environments is crucial to understanding contexts and experiences that are important predictors of children’s development. The Home Observation for Measurement of the Environment (HOME) Inventory (Caldwell & Bradley, 2016, 2003) is one of the most widely used measures of the quality and quantity of support available to a child in the child’s home environment. The HOME-21 is a revision of the HOME-Short Form that was used in the NLSY. The HOME-21 includes updates to tool to be responsive to changes in the composition of families, gender roles and the division of childcare in families, norms about the acceptability and advisability of different forms of discipline, and the digital environment in which children live (<a href="https://doi.org/10.1037/pas0001183" target="_blank">Lansford et al., 2023</a>).
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p>For HBCD, HOME-21 was adapted for more inclusive language (“sister or brother” changed to “sibling(s)”; “family members” changed to “another adult in your home”).</p>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>Individual items are re-scored as Yes (1)/No (0) and summed within two domains, Cognitive Stimulation (range 0-8) and Emotional Support (range 0-3), plus a total score (range 0-12). The tool is intended to be used in infants aged Birth - 2y 11m 30d. See the table below for details and <a href="https://doi.org/10.1037/pas0001183">Lansford et al. (2023)</a> for complete scoring procedure details.</p>
 
