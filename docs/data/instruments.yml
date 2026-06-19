@@ -133,15 +133,3 @@ urine:
   warning3_text: Urinary concentration varies by participant. Researchers who wish to correct for urinary concentration in continuous measures, or apply different thresholds, can do so using creatinine or specific gravity results from sample validation.
   warning4: Large Gaps Between Collection and Analysis Dates
   warning4_text: A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.
-
-
-
-  # qc: <b>Olink QC</b><br>
-  #     Olink internal assay controls include extension (used for normalization to generate NPX values), incubation, and amplification controls used to monitor assay performance and individual sample quality. See the <a href="https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/01-User%20Manuals%20for%20website/1187-olink-explore-overview-user-manual.pdf">Olink® Explore Overview (<em>section 7.1 Internal controls</em>)</a> for details. Proteins that did not meet Olink’s quality control criteria (N=10) have values of <em>0</em> for <code>{ASSAY}_Count</code> and <em>NA</em> for <code>ExtNPX</code>, <code>NPX</code>, and <code>PCNormalizedNPX</code>.
-  #     <br>
-  #     <br>
-  #     <b>Plate Effects</b><br>
-  #     Samples were processed across 15 plates (numbered 1–15). Proteins exhibiting plate effects are not excluded from release data. Plate effects were assessed using ANOVA with a p-value threshold of 0.0033 (.05 / 15). Post-hoc analyses showed that these effects were not driven by a small number of outlier plates, but instead reflected broader plate-to-plate variation. A total of 337 proteins demonstrated a plate effect when normalizing by plate control; a total of 46 proteins demonstrated a plate effect when normalizing by median plate intensity.
-  #     <br>
-  #     <br>
-  #     <strong><em>Select “Plate effects only” / “QC failures only” under the <a href="#olink-panel-quick-guide">Panel Quick Guide</a> to view lists of affected assays.</em></strong>

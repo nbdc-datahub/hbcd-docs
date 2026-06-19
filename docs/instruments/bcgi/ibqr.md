@@ -1,46 +1,58 @@
-# Behavior Questionnaire + Inhibition (IBQ-R / ECBQ)
+# Infant/Early Childhood Behavior + Inhibition
+<!-- # Behavior Questionnaire + Inhibition (IBQ-R / ECBQ) -->
 
-<p style="font-size: 1.2em; font-weight: 500; color: gray;"><i>Infant / Early Childhood Behavior Questionnaire + Inhibition (IBQ-R / ECBQ) VSF + BI</i></p>
+<!-- <p style="font-size: 1.2em; font-weight: 500; color: gray;"><i>Infant / Early Childhood Behavior Questionnaire + Inhibition (IBQ-R / ECBQ) VSF + BI</i></p> -->
 
-<table class="table-no-vertical-lines">
-<tbody>
-<tr><td><b>Table name</b></td>
-<td>
-<ul>
-  <li><b>IBQ-R VSF + BI</b>: <code>mh_cg_ibqr</code></li>
-  <li><b>ECBQ VSF + BI</b>: <code>mh_cg_ecbq</code></li>
-</ul>
-</td></tr>
-<tr><td><b>Visits</b></td><td>V03, V05 (IBQ-R); V05 (ECBQ)</td></tr>
-<tr><td><b>Construct</b></td>
-<td>
-<ul>
-  <li>Behavioral Inhibition</li>
-  <li>Negative Affectivity</li>
-  <li>Effortful Control</li>
-  <li>Surgency / Extraversion</li>
-</ul>
-</td></tr>
+
+<table class="table-no-vertical-lines readme-intro">
+<thead>
 <tr>
-<td><b>Administration</b></td><td>
-<ul>
-  <li><b>Child-specific</b>: Yes</li>
-  <li><b>Respondent</b>: Primary caregiver</li>
-  <li><b>Method</b>: Self-administered (remote; 7–10 min)</li>
-</ul>
+  <th></th>
+  <th>IBQ-R VSF + BI (Infant Version)</th>
+  <th>ECBQ VSF + BI (Early Childhood)</th>
 </tr>
-<tr><td><b>Quality Control</b></td>
-<td>
-<ul>
-  <li>Assess missingness (items completed per participant)</li>
-  <li>Verify age falls within expected range</li>
-  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores)</li>
-  <li>Assess reliability (Cronbach’s α)</li>
+</thead>
+<tbody>
+<tr>
+  <td>Table Name</td>
+  <td><code>mh_cg_ibqr</code></td>
+  <td><code>mh_cg_ecbq</code></td>
+</tr>
+<tr>
+  <td>Study Visits</td>
+  <td class="visit-list">V03 · V05</td>
+  <td class="visit-list">V05</td>
+</tr>
+<tr>
+  <td colspan="3" style="height: 2em;"></td>
+</tr>
+<tr class="section-divider">
+  <td colspan="3">SHARED INSTRUMENT INFORMATION</td>
+</tr>
+<tr>
+  <td>Construct</td>
+  <td colspan="2">Behavioral Inhibition; Negative Affectivity; Effortful Control; Surgency / Extraversion</td>
+</tr>
+<tr>
+  <td>Type</td>
+  <td colspan="2">
+  	Primary caregiver survey (child-specific; 7-10 min)
+  </td>
+</tr>
+<tr>
+  <td>Quality Control</td>
+  <td colspan="2">
+  <ul>
+    <li>Assess missingness (items completed per participant)</li>
+    <li>Verify age falls within expected range</li>
+    <li>Review summary statistics and visualizations (item frequencies, age, prorated scores)</li>
+    <li>Assess reliability (Cronbach’s α)</li>
   </ul>
-</td>
+  </td>
 </tr>
 </tbody>
 </table>
+
 
 {{ alert_banner() }}
 <div class="collapsible-content">
