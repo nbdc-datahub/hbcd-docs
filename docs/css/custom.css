@@ -121,6 +121,16 @@ h5 {
   font-size: 1.2em;
 }
 
+/* Subtitles for README pages*/
+.readme-subtitle {
+  color: #6c757d;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 1.2em;
+}
+
+
 /* EXPAND WIDTH OF MAIN CONTENT */
 /* Shrink the width of the right-hand blank area */
 .wy-nav-content {

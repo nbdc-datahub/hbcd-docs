@@ -1,31 +1,70 @@
+<!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE -->
+
 # ASSIST V1-V4
+<span class="readme-subtitle">Alcohol, Smoking and Substance Involvement Screening Test V1-V4</span>
 
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Alcohol, Smoking and Substance Involvement Screening Test V1-V4</i></p>
-
-<table class="compact-table-no-vertical-lines" style="font-size: 16px;">
+<table class="table-no-vertical-lines readme-intro">
+<thead>
+  <th>Instrument</th>
+  <th>Table Name</th>
+  <th>Construct - Substance Use (SU)</th>
+  <th>Study Visit</th>
+</thead>
 <tbody>
-<tr><td><b>Table Name</b></td><td><code>pex_bm_assist{v1|v2|v3|v4}</code></td></tr>
 <tr>
-  <td><b>Construct</b></td>
-  <td>
-    <b>ASSIST substance use assessment across visits:</b>
-    <ul>
-      <li><b>V1</b>: Pre-pregnancy and during pregnancy</li>
-      <li><b>V2</b>: Late pregnancy and early postnatal (0–4 weeks)</li>
-      <li><b>V3</b>: Postpartum (3-month anchor)</li>
-      <li><b>V4</b>: Postpartum (12-month anchor)</li>
-    </ul>
+  <td>ASSIST V1</td>
+  <td><code>pex_bm_assistv1</code></td>
+  <td>SU pre-pregnancy and during pregnancy</td>
+  <td>V01</td>
+</tr>
+<tr>
+  <td>ASSIST V2</td>
+  <td><code>pex_bm_assistv2</code></td>
+  <td>SU late pregnancy and early postnatal (0–4 weeks)</td>
+  <td>V02</td>
+</tr>
+<tr>
+  <td>ASSIST V3</td>
+  <td><code>pex_bm_assistv3</code></td>
+  <td>SU postpartum (3-month anchor)</td>
+  <td>V03</td>
+</tr>
+<tr>
+  <td>ASSIST V4</td>
+  <td><code>pex_bm_assistv4</code></td>
+  <td>SU postpartum (12-month anchor)</td>
+  <td>V04</td>
+</tr>
+
+<tr>
+  <td colspan="4" style="height: 2em;"></td>
+</tr>
+<tr class="section-divider">
+  <td colspan="4">SHARED INSTRUMENT INFORMATION</td>
+</tr>
+
+<tr>
+  <td>Type</td>
+  <td colspan="3">
+  <ul>
+  <li>Parent Interview (3-5 min)</li>
+  <li>Administered in-person to Pregnant Participant/Birth Parent, as applicable.</li>
+  <li>Note: Participants in Alabama were trained to self-administer remotely as a Parent Survey.</li>
+  </ul> 
   </td>
 </tr>
-<tr><td><b>Visits</b></td><td>V01, V02, V03, V04</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: No<br>
-<b>Respondent</b>: Pregnant Participant/Birth Parent (as applicable)<br>
-<b>Method</b>: Staff-administered, in-person (self-administered in Alabama) (3-5 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
-<td>Response distributions are reviewed for outliers. For V1-V2, responses are cross-checked with TLFB for consistency in reported substance use.</td></tr>
-</tbody></table>
 
+<tr>
+<td>Quality Control</td>
+<td colspan="3">
+<ul>
+  <li>Response distributions are reviewed for outliers.</li>
+  <li>For V1-V2, responses are cross-checked with TLFB for consistency in reported substance use.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 {{ alert_banner_macro() }}
 <div class="collapsible-content">

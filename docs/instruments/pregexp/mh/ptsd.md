@@ -2,6 +2,8 @@
 
 <p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder</i></p>
 
+{{ readme(instruments.ptsd) }}
+
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>pex_bm_str__ptsd</code></td></tr>

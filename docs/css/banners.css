@@ -147,13 +147,14 @@
 }
 .info-section-title {
   display: inline-block;
-  font-size: 1.04em;
+  font-size: 1em;
   font-weight: 700;
   letter-spacing: 0.03em;
   color: #474646;
 }
 /* Adjust spacing between subheaders and text */
 .info-section p {
+  font-size: 0.9em;
   margin-top: 0.5em;
   margin-bottom: 0;
 }

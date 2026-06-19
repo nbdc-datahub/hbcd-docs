@@ -2,7 +2,7 @@
 
 {{ readme(instruments.urine) }}
 
-{{  warning_banner_FULL(instruments.urine) }}
+{{  data_warning(instruments.urine) }}
 
 {{ issues_banner_macro() }}
 

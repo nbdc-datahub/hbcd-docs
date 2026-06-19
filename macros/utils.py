@@ -10,9 +10,11 @@ def slugify_heading(text):
     text = re.sub(r"-+", "-", text)
     return text
 
+# CHECK IF VALUE IS PRESENT (not empty)
 def is_present(value):
     return value is not None and str(value).strip() != ""
 
+# Don't render rows without values and define css classes where needed (i.e. for visits list)
 def table_row(label, value, code=False):
     if not is_present(value):
         return ""
