@@ -7,18 +7,10 @@
 </style>   
 
 # Study Navigator Contact Form
-<!-- 
-The Study Navigators Contact Form dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a> under <code>study_navigator/</code> (<i>see <a href="../../../datacuration/overview" target="_blank">Data Structure Overview</a> for additional details</i>). -->
 
 {{ readme(instruments.study_nav) }}
-
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p>Study Navigators were strongly encouraged, but not required, to fill out the Study Navigator Contact Form. Guidance was provided to complete the contact form as soon as possible (within 24 hours) after a contact with a participant. Study Navigators were also provided with the option to complete the form to document multiple contacts within a specific time or for a specific participant (text messages, phone calls, etc.). The data is subject to recall bias.</p> 
-</div>
-
+{{ alert_warning(instruments.study_nav) }}
 {{  data_warning(instruments.study_nav) }}
-
 {{ issues_banner_macro() }}
 
 ---

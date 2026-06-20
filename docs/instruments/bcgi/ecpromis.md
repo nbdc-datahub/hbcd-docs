@@ -20,7 +20,7 @@
   <td class="visit-list">V03 · V05 · V07</td>
 </tr>
 <tr>
-  <td colspan="3" style="height: 3rem;"></td>
+  <td colspan="3" style="height: 2em;"></td>
 </tr>
 <tr class="section-divider">
   <td colspan="3">SHARED INSTRUMENT INFORMATION</td>
@@ -48,19 +48,8 @@
 </tbody>
 </table>
 
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
-</div>
-
-{{ warning_banner_macro() }}
-<div class="collapsible-content">
-<p><b>Data Interpretation</b><br>
-The ecPROMIS assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p> 
-<p><b>Administration at V05 (<i>&lt;1 year</i> vs. <i>1–5 years</i>)</b><br>
-At V05 (10–17 months), the standard administration is the child (<i>1–5 years</i>) version of the ecPROMIS Child–Caregiver Relationship Scale. A small subset of participants (N=11) were administered both the child and infant (<i>&lt;1 year</i>) versions at this visit. Although data from both instruments are valid, <b>we recommend using the 1–5 years version for V05 analyses to ensure consistency across participants</b>, as most were administered only the 1–5 years version.</p>
-</div>
-
+{{ alert_warning(instruments.ecpromis) }}
+{{ data_warning(instruments.ecpromis) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
@@ -97,3 +86,21 @@ Measure instructions and individual items that reference gendered pronouns (‘h
 <p>Lai, J.-S., Kallen, M. A., Blackwell, C. K., Wakschlag, L. S., & Cella, D. (2022). Psychometric considerations in developing PROMIS® measures for early childhood. <i>Journal of Pediatric Psychology</i>, 47(5), 510–522. <a href="https://doi.org/10.1093/jpepsy/jsac025" target="_blank">https://doi.org/10.1093/jpepsy/jsac025</a></p>  
 <p>Park, C. H., Blaisdell, C. J., & Gillman, M. W. (2022). The NIH ECHO program: An impetus for the development of early childhood PROMIS tools. <i>Journal of Pediatric Psychology</i>, 47(5), 497–499. <a href="https://doi.org/10.1093/jpepsy/jsac010" target="_blank">https://doi.org/10.1093/jpepsy/jsac010</a></p>
 </div>
+
+
+
+
+
+
+
+<!-- <div class="collapsible-content">
+<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
+</div> -->
+
+<!-- {{ warning_banner_macro() }}
+<div class="collapsible-content">
+<p><b>Data Interpretation</b><br>
+The ecPROMIS assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p> 
+<p><b>Administration at V05 (<i>&lt;1 year</i> vs. <i>1–5 years</i>)</b><br>
+At V05 (10–17 months), the standard administration is the child (<i>1–5 years</i>) version of the ecPROMIS Child–Caregiver Relationship Scale. A small subset of participants (N=11) were administered both the child and infant (<i>&lt;1 year</i>) versions at this visit. Although data from both instruments are valid, <b>we recommend using the 1–5 years version for V05 analyses to ensure consistency across participants</b>, as most were administered only the 1–5 years version.</p>
+</div> -->

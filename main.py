@@ -12,6 +12,7 @@ from macros.instrument_tables import (
 from macros.readme_tables import build_readme
 
 from macros.data_warnings import build_data_warning
+from macros.alert_warnings import build_alert_warning
 
 from macros.scoring_tables import (
     build_scoring_table,
@@ -61,6 +62,10 @@ def define_env(env):
     @env.macro
     def data_warning(inst):
         return build_data_warning(inst)
+    
+    @env.macro
+    def alert_warning(inst):
+        return build_alert_warning(inst)
 
     @env.macro
     def issues_banner_macro():

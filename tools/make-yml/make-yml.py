@@ -7,8 +7,7 @@ os.chdir(os.getcwd())
 INPUT = "instruments.csv"
 OUTPUT = "../../docs/data/instruments.yml"
 
-# read all values as strings so that info like total number of items
-# isn't converted from '25' to '25.0'
+# read all values as strings so that info like total number of items isn't converted from '25' to '25.0'
 df = pd.read_csv(INPUT, dtype=str)
 
 # Check that instrument/measure name is present otherwise raise error
@@ -36,7 +35,7 @@ for _, row in df.iterrows():
 
         value = str(value).strip()
 
-        # Special handling for QC field
+        # For QC field, convert to list if there are multiple items (separated by line break in spreadsheet)
         if field == "qc":
             items = [line.strip() for line in value.splitlines() if line.strip()]
 
@@ -46,7 +45,6 @@ for _, row in df.iterrows():
                 instruments[instrument_id][field] = items
             else:
                 instruments[instrument_id][field] = None
-
         else:
             instruments[instrument_id][field] = value
 

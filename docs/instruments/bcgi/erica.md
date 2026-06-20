@@ -103,6 +103,14 @@ Inter-rater reliability was quantified using a two-way mixed-effects intraclass 
 
 ---
 
+## NEW
+
+{{ alert_warning(instruments.erica) }}
+{{ data_warning(instruments.erica) }}
+{{ issues_banner_macro() }}
+
+## ORIG
+
 {{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables—especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers—to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>

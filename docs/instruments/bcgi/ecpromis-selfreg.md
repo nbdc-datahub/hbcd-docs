@@ -1,29 +1,8 @@
 # ecPROMIS Self-Regulation - Flexibility Scale
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>mh_cg_pms__selfreg</code></td></tr>
-<tr><td><b>Construct</b></td><td>Self-Regulation and Flexibility</td></tr>
-<tr><td><b>Study Visits</b></td><td>V05, V07, V09</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Primary Caregiver on Child<br>
-<b>Method</b>: Self-administered remotely (1-2 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
-<td>
-  <ul>
-  <li>Examine missingness by counting items answered per participant.</li>
-  <li>Check age is within expected ranges.</li>
-  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
-  </ul>
-</td></tr>
-</tbody></table>
-
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
-</div>
-
+{{ readme(instruments.ecpromis_selfreg) }}
+{{ alert_warning(instruments.ecpromis_selfreg) }}
+{{ data_warning(instruments.ecpromis_selfreg) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
@@ -55,3 +34,36 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 <p>Lai, J.-S., Kallen, M. A., Blackwell, C. K., Wakschlag, L. S., & Cella, D. (2022). Psychometric considerations in developing PROMIS® measures for early childhood. <i>Journal of Pediatric Psychology</i>, 47(5), 510–522. <a href="https://doi.org/10.1093/jpepsy/jsac025" target="_blank">https://doi.org/10.1093/jpepsy/jsac025</a></p>  
 <p>Park, C. H., Blaisdell, C. J., & Gillman, M. W. (2022). The NIH ECHO program: An impetus for the development of early childhood PROMIS tools. <i>Journal of Pediatric Psychology</i>, 47(5), 497–499. <a href="https://doi.org/10.1093/jpepsy/jsac010" target="_blank">https://doi.org/10.1093/jpepsy/jsac010</a></p>
 </div>
+
+
+
+
+<!-- 
+
+## ORIG
+
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>mh_cg_pms__selfreg</code></td></tr>
+<tr><td><b>Construct</b></td><td>Self-Regulation and Flexibility</td></tr>
+<tr><td><b>Study Visits</b></td><td>V05, V07, V09</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: Yes<br>
+<b>Respondent</b>: Primary Caregiver on Child<br>
+<b>Method</b>: Self-administered remotely (1-2 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td>
+  <ul>
+  <li>Examine missingness by counting items answered per participant.</li>
+  <li>Check age is within expected ranges.</li>
+  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
+  </ul>
+</td></tr>
+</tbody></table>
+
+{{ alert_banner_macro() }}
+<div class="collapsible-content">
+<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
+</div>
+
+{{ issues_banner_macro() }} -->
