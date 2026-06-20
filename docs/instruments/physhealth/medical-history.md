@@ -41,12 +41,12 @@
 </tbody>
 </table>
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables within the Medical History Form, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.</p>
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 

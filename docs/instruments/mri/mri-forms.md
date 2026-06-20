@@ -10,7 +10,7 @@
 
 ## MRI Scan Session & Data Summary Forms
 
-{{ overview_table(instruments.mri_forms) }}
+{{ readme(instruments.mri_forms) }}
 
 MRI summary forms are checklists completed by MRI technicians before and after each scan session. Expand the sections below for an overview of the information included in each form.
 
@@ -104,7 +104,7 @@ MRI summary forms are checklists completed by MRI technicians before and after e
 
 ## Pre-Scan Questionnaire
 
-{{ overview_table(instruments.prescan_q) }}
+{{ readme(instruments.prescan_q) }}
 
 The Pre-Scan Questionnaire is completed by HBCD Study staff when planning MRI procedures. It captures caregiver-reported sleep routines, habits, and environment. **Note that missingness may vary across sites.** Expand the section below for a summary of key item questions and response options. 
 

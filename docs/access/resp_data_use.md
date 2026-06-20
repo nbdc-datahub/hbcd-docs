@@ -28,12 +28,12 @@ When using HBCD Study data, processes, plans, and/or concepts in a publication, 
 ## Warnings
 To facilitate responsible data use and scientific rigor, the following warnings are provided within the study instrument documentation where applicable (with direct URL links provided in the [NBDC Data Dictionary](../standards/metadata.md)). We recommend that all data users review the data warnings for any data you will be downloading and/or using, review included resources and citations, and follow recommended guidelines. Reach out via the NBDC Data Access Platform [Help Center](https://nbdc-datashare.lassoinformatics.com/help-center) with any question about the data warnings or how to use the data.
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>The purpose of the <b>Responsible Use Warning</b> is to offer guidance for research design, data interpretation, and communication of findings, including conceptual information. These warnings also include information on stigma and stigmatizing language related to some variables, or information on the manner in which race variables were conceptualized and collected for this study.</p>
 </div>
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p>The purpose of the <b>Data Warning</b> is to improve transparency and offer technical assistance by alerting the user to issues of data quality, providing information on how variables were constructed, providing instructions on how to calculate or analyze specific variables, or providing code (if necessary).</p>
 </div>

@@ -1,45 +1,84 @@
+<!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE -->
+
 # ASSIST V1-V4
+<span class="readme-subtitle">Alcohol, Smoking and Substance Involvement Screening Test V1-V4</span>
 
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Alcohol, Smoking and Substance Involvement Screening Test V1-V4</i></p>
-
-<table class="compact-table-no-vertical-lines" style="font-size: 16px;">
+<table class="table-no-vertical-lines readme-intro">
+<thead>
+  <th>Instrument</th>
+  <th>Table Name</th>
+  <th>Construct - Substance Use (SU)</th>
+  <th>Study Visit</th>
+</thead>
 <tbody>
-<tr><td><b>Table Name</b></td><td><code>pex_bm_assist{v1|v2|v3|v4}</code></td></tr>
 <tr>
-  <td><b>Construct</b></td>
-  <td>
-    <b>ASSIST substance use assessment across visits:</b>
-    <ul>
-      <li><b>V1</b>: Pre-pregnancy and during pregnancy</li>
-      <li><b>V2</b>: Late pregnancy and early postnatal (0–4 weeks)</li>
-      <li><b>V3</b>: Postpartum (3-month anchor)</li>
-      <li><b>V4</b>: Postpartum (12-month anchor)</li>
-    </ul>
+  <td>ASSIST V1</td>
+  <td><code>pex_bm_assistv1</code></td>
+  <td>SU pre-pregnancy and during pregnancy</td>
+  <td>V01</td>
+</tr>
+<tr>
+  <td>ASSIST V2</td>
+  <td><code>pex_bm_assistv2</code></td>
+  <td>SU late pregnancy and early postnatal (0–4 weeks)</td>
+  <td>V02</td>
+</tr>
+<tr>
+  <td>ASSIST V3</td>
+  <td><code>pex_bm_assistv3</code></td>
+  <td>SU postpartum (3-month anchor)</td>
+  <td>V03</td>
+</tr>
+<tr>
+  <td>ASSIST V4</td>
+  <td><code>pex_bm_assistv4</code></td>
+  <td>SU postpartum (12-month anchor)</td>
+  <td>V04</td>
+</tr>
+
+<tr>
+  <td colspan="4" style="height: 2em;"></td>
+</tr>
+<tr class="section-divider">
+  <td colspan="4">SHARED INSTRUMENT INFORMATION</td>
+</tr>
+
+<tr>
+  <td>Type</td>
+  <td colspan="3">
+  <ul>
+  <li>Parent Interview (3-5 min)</li>
+  <li>Administered in-person to Pregnant Participant/Birth Parent, as applicable.</li>
+  <li>Note: Participants in Alabama were trained to self-administer remotely as a Parent Survey.</li>
+  </ul> 
   </td>
 </tr>
-<tr><td><b>Visits</b></td><td>V01, V02, V03, V04</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: No<br>
-<b>Respondent</b>: Pregnant Participant/Birth Parent (as applicable)<br>
-<b>Method</b>: Staff-administered, in-person (self-administered in Alabama) (3-5 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
-<td>Response distributions are reviewed for outliers. For V1-V2, responses are cross-checked with TLFB for consistency in reported substance use.</td></tr>
-</tbody></table>
 
+<tr>
+<td>Quality Control</td>
+<td colspan="3">
+<ul>
+  <li>Response distributions are reviewed for outliers.</li>
+  <li>For V1-V2, responses are cross-checked with TLFB for consistency in reported substance use.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p><b>V1 & V2</b><br>
 Responsible use of prenatal drug exposure data requires thoughtful interpretation of exposure-related outcomes in the context of measured and unmeasured confounders. These confounders include, but are not limited to, phenotypic risks associated with persistent alcohol, tobacco, and other drug use during pregnancy by birthing parents (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2010</a>), and confounding by familial risk from within-family studies (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>).</p>
 <p>Finally, unwarranted speculation about ‘neural bases of behavior’ form differences in neuroimaging between exposed and unexposed children in the absence of differences in behavioral performance can exacerbate stigma already faced by birthing parents with substance use disorders and their children (<a href="https://doi.org/10.1016/j.ntt.2015.07.002">McAllister & Hart 2015</a>).</p> 
 </div>
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p>It was difficult for some participants to self-report the typical size of a single drink (in oz) to capture ‘standard drinks’ of alcohol for ASSIST, leading to some reports falling outside the expected range. Similarly, reporting the frequency of use for substances like electronic cigarette devices proved difficult, resulting in outliers. While sites were queried on these outliers, participants could not always be re-contacted for clarification.</p> 
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -49,7 +88,7 @@ The NIDA quick screen tool (*have you used alcohol, tobacco, prescription drugs,
 
 Finally, the Time Line Follow Back (TLFB) was triggered when substance use was reported before [`pre-use`] or during pregnancy [`during_use`] on the ASSIST V1 or at the end of pregnancy [`end_use`] on the ASSIST V2 (see [documentation on TLFB](tlfb.md)). 
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p><b>Replacement Questions for NIDA Quick Screen Tool</b></p>
 <ul>
@@ -140,7 +179,7 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
 </div>
 
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>For each substance, participants indicate whether they had ever used it and, if endorsed, frequency of use with options: 0 (Never), 1 (Once or Twice), 2 (Monthly), 3 (Weekly), or 4 (Daily or Almost Daily). For substances reported as used pre-pregnancy, during pregnancy, and end-pregnancy, participants were asked about modes of use and typical quantities/amounts of consumption for alcohol and opioids (if applicable).</p>
 </div>

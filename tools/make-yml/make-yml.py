@@ -5,13 +5,11 @@ import os
 os.chdir(os.getcwd())
 
 INPUT = "instruments.csv"
-OUTPUT = "../docs/data/instruments.yml"
+OUTPUT = "../../docs/data/instruments.yml"
 
-# df = pd.read_csv(INPUT)
-# read all values as strings so that info like total number of items isn't converted from '25' to '25.0'
+# read all values as strings so that info like total number of items
+# isn't converted from '25' to '25.0'
 df = pd.read_csv(INPUT, dtype=str)
-
-# df = df[df['battery'] != 'Infant']      
 
 # Check that instrument/measure name is present otherwise raise error
 required = ["measure"]
@@ -34,8 +32,23 @@ for _, row in df.iterrows():
 
         if pd.isna(value) or str(value).strip() == "":
             instruments[instrument_id][field] = None
+            continue
+
+        value = str(value).strip()
+
+        # Special handling for QC field
+        if field == "qc":
+            items = [line.strip() for line in value.splitlines() if line.strip()]
+
+            if len(items) == 1:
+                instruments[instrument_id][field] = items[0]
+            elif len(items) > 1:
+                instruments[instrument_id][field] = items
+            else:
+                instruments[instrument_id][field] = None
+
         else:
-            instruments[instrument_id][field] = str(value).strip()
+            instruments[instrument_id][field] = value
 
 with open(OUTPUT, "w") as f:
     yaml.safe_dump(

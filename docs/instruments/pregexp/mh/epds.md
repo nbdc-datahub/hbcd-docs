@@ -20,7 +20,7 @@
 </td></tr>
 </tbody></table>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -29,12 +29,12 @@ The Edinburgh Postnatal Depression Scale (<a href="https://downloads.aap.org/AAP
 **Questionnaire prompt/instructions:**
 > Since you are either pregnant or have recently had a baby, we want to know how you feel. MARK the answer that comes closest to how you have felt IN THE PAST 7 DAYS-not just how you feel today. In the past 7 days…
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p>In the HBCD study, a ‘Decline to answer’ option was added to all items. A ‘Don’t know’ option was also available early in data collection, but was subsequently removed. Questions answered with ‘Decline to answer’ or ‘Don’t know’ are marked as missing. In addition, scores for EPDS Self-Harm (score>1) and Depression (total score>11) triggered clinical alerts for study staff.</p>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>Items are scored on a 0→3 scale. Items 3, 5–10 are reverse-scored (i.e., 3→0): this is already reflected in the raw responses and no additional item-level scoring is required. Total scores are calculated as the sum of item responses. Scores are not prorated or set to missing for incomplete items; users should determine how to handle missing data.</p>
 </div>

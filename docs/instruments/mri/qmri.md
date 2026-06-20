@@ -1,6 +1,6 @@
 # Quantitative MRI (qMRI)
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p>Note that different sites may apply varying criteria for identifying motion-degraded QALAS and B1+ mapping scans. For 3D-QALAS, the SyMRI toolbox does <strong>not</strong> incorporate externally acquired B1+ field maps when estimating quantitative T1, T2, and proton density (PD) values.</p>
 <p>Additionally, estimated quantitative T1 values show variability across MRI vendors and participant age. Current estimates do not align well with values reported in the literature, likely due to assumptions made in the modeling procedures. Work is ongoing to address these issues. As a result, quantitative T1 values (and by extension, PD values) will not be included initial release data.</p> 

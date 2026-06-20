@@ -1,55 +1,67 @@
-# MAPS-TL
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Multidimensional Assessment Profiles - Temper Loss Scale</i></p>
+<!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE -->
 
-<table class="table-no-vertical-lines">
-<thead><tr><th></th><th>MAPS-TL Infancy (&lt;1 year old)</th><th>MAPS-TL Toddlerhood & Preschool</th></tr></thead>
+# MAPS-TL
+<span class="readme-subtitle">Multidimensional Assessment Profiles - Temper Loss Scale</span>
+
+<table class="table-no-vertical-lines readme-intro">
+<thead>
+  <th>Instrument</th>
+  <th>Table Name</th>
+  <th>Study Visit</th>
+  <th>Construct</th>
+  <th>Type</th>
+</thead>
 <tbody>
-<tr><td><b>Table Name</b></td><td><code>mh_cg_mapdb__inf</code></td><td><code>mh_cg_mapdb__tod</code></td></tr>
-<tr><td><b>Construct</b></td><td  colspan="2">Irritability</td></tr>
-<tr><td><b>Study Visits</b></td><td>V03</td><td>V05</td></tr>
-<td><b>Administration</b></td><td colspan="2">
-  <ul>
-  <li><b>Child-specific</b>: Yes</li>
-  <li><b>Respondent</b>: Primary Caregiver on Child</li>
-  <li><b>Method</b>: Self-administered remotely (5 min estimated duration)</li>
-  </ul>
+<tr>
+  <td>MAPS-TL Infancy (&lt;1 year old)</td>
+  <td><code>mh_cg_mapdb__inf</code></td>
+  <td>V03</td>
+  <td rowspan="2">Irritability</td>
+  <td rowspan="2">Parent Survey (5 min) - 
+  <br><i>Child-specific</i>
+  </td>
 </tr>
-<tr><td><b>Quality Control</b></td>
-<td colspan="2">
-  <ul>
+<tr>
+  <td>MAPS-TL Toddlerhood & Preschool</td>
+  <td><code>mh_cg_mapdb__tod</code></td>
+  <td>V05</td>
+</tr>
+</tbody>
+</table>
+
+<div style="font-weight: 600; font-size: 1em; color: #6b6b6b;">Quality Control</div>
+<ul style="font-size: 0.9em;">
   <li>Examine missingness by counting items answered per participant.</li>
   <li>Check age is within expected ranges (3-9/10-17 months for Infant/Toddlerhood).</li>
   <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
   <li>Cronbach's Alpha calculated to assess reliability.</li>
   </ul>
-</td>
-</tr>
-</tbody>
-</table>
 
-{{ alert_banner() }}
+---
+
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p>The MAPS-TL assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p>  
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
 The **Multidimensional Assessment Profiles- Temper Loss scale (MAPS-TL)** is a well-validated survey assessing irritability that serves as a tool for characterizing the developmental expression of early mental health risk. MAPS-TL measures a range of behaviors that encompass dysregulation, responsiveness to environmental input, and context. Questions inquire about the behaviors of the focal child over the past month. Irritability has been identified as an early dimensional marker of lifespan mental health risk. MAPS-TL aims to delineate the typical-to-atypical spectrum of irritability in early childhood and identify those young children at high probability of subsequent adaptational problems based on problems with dysregulation. 
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p><b>General Language Modifications</b><br>
 Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replaced with ‘my child’ when eliminating pronouns was not grammatically possible. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.</p>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>The MAPS-TL includes 17 items at Visit 3 (<strong>V03</strong>) and 40 items at Visit 5 (<strong>V05</strong>). Each item is rated by the caregiver on a 6-point frequency scale:</p>
 <table class="compact-table-no-vertical-lines" style="width: 100%; border-collapse: collapse; font-size: 0.9em;">

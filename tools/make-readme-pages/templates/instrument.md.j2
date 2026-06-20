@@ -24,20 +24,20 @@
 {% endif %}   
 
 {% if responsible_use %}
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>{{ responsible_use }}</p>
 </div>
 {% endif %}
 
 {% if data_warning %}
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p>{{ data_warning }}</p> 
 </div>
 {% endif %}
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Administration & Quality Control
 
@@ -67,7 +67,7 @@
 {{ instrument_details }}
 
 {% if hbcd_modifications or hbcd_modifications_file%}
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 {% if hbcd_modifications %}
 <p>{{ hbcd_modifications }}</p> 
@@ -80,7 +80,7 @@
 {% endif %}
 
 {% if scoring_procedures or scoring_file %}
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>{{ scoring_procedures }}</p>
 </div>

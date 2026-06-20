@@ -13,7 +13,7 @@
 </tbody>
 </table>
 
-{{ warning_banner() }}
+{{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p><b>USDTL Screening Updates</b><br>
 As of November 2025, USDTL no longer assayed sufentanil in the nail samples.</p>
@@ -26,7 +26,7 @@ As of July 1, 2024, the nail processing workflow was updated to optimize specime
 In some cases, a specimen’s initial test meets the threshold for a positive result, but the confirmatory result is reported as “QNS” (Quantity Not Sufficient). This occurs when there is not enough specimen to conduct a confirmatory test or a confirmatory test must be repeated (following quality control procedures, e.g. unacceptable chromatography, poor recovery, or when a sample result is &lt;5% of the previous specimen), but insufficient sample remains to complete the repeat test. Because the results could not be validated, this should be treated as a true quantity insufficiency.</p>
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 <p></p>
 
@@ -216,7 +216,7 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
 </table> 
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p><b>Final results for each substance follow these rules:</b></p>
 <ul>

@@ -2,6 +2,8 @@
 
 <p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder</i></p>
 
+{{ readme(instruments.ptsd) }}
+
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>pex_bm_str__ptsd</code></td></tr>
@@ -22,13 +24,13 @@
 </td></tr>
 </tbody></table>
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p><strong>Consideration of Mental Health Symptoms Experienced During Pregnancy</strong><br>
 The co-occurrence of psychiatric symptoms and substance use during pregnancy is well-documented (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2011</a>, <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">Massey et al., 2012</a>). Phenotypic risk in birthing parents may affect offspring neurodevelopment through both prenatal and postnatal mechanisms, beyond direct exposure alone (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2015.11.010">Massey et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2018.02.003">Massey et al., 2018</a>). These factors may confound associations between exposures and neuroimaging or neurodevelopmental outcomes, but they also represent malleable targets for prevention and early intervention. When possible, incorporating parental mental health symptoms as covariates offers a robust strategy to account for these confounding influences.</p> 
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -49,12 +51,12 @@ Thus, the scales are as follows:
 > People sometimes have problems after extremely stressful events or experiences. How much have you been bothered during the PAST SEVEN (7) DAYS by each of the following problems that occurred or became worse after an extremely stressful event/experience?
 
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p>In the HBCD study, a ‘Decline to answer’ option was added to all items. A ‘Don’t know’ option was also available early in data collection, but was later removed.</p>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>Please see documentation linked above for scoring.</p>
 <p><b>NSESS-PTSD</b><br>

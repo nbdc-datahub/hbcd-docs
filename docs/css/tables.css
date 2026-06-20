@@ -43,7 +43,7 @@ th, td {
   border-right: none !important;
   /* padding: 5px 12px !important; */
   background-color: rgba(255, 255, 255, 0.6) !important; 
-  vertical-align: top !important;
+  vertical-align: center !important;
 }
 .table-no-vertical-lines th {
   background-color: rgba(255, 255, 255, 0.6) !important;
@@ -102,11 +102,6 @@ th, td {
   color: #6b7280;
   font-weight: 400;
 }
-/* .table-header {
-  font-size: 0.9em;
-  color: #6b7280;
-  font-weight: 400;
-} */
 
 /* =========================================================
    README OVERVIEW/INTRO TABLE
@@ -121,6 +116,7 @@ th, td {
   font-size: 1.1em;
   width: 160px;
   color: #6b6b6b;
+  white-space: nowrap !important;
 }
 .visit-list {
   color: #6b7280;
@@ -285,7 +281,7 @@ th, td {
   font-size: 1rem;
   font-weight: 700;
   color: #2c3e50;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.4em;
   /* border-bottom: 2px solid #dce3ea; */
 }
 

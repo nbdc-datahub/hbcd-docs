@@ -1,74 +1,66 @@
-# Infant/Early Childhood Behavior + Inhibition
-<!-- # Behavior Questionnaire + Inhibition (IBQ-R / ECBQ) -->
+<!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE -->
 
-<!-- <p style="font-size: 1.2em; font-weight: 500; color: gray;"><i>Infant / Early Childhood Behavior Questionnaire + Inhibition (IBQ-R / ECBQ) VSF + BI</i></p> -->
+<style>
+.wy-nav-content {
+    width: 85% !important;
+    max-width: 85% !important;
+    flex-grow: 1 !important;
+}
+</style>
 
 
-<table class="table-no-vertical-lines readme-intro">
+# Behavior Questionnaire + Inhibition (IBQ-R / ECBQ)
+
+<table class="table-no-vertical-lines" style="width: 100%;">
 <thead>
-<tr>
-  <th></th>
-  <th>IBQ-R VSF + BI (Infant Version)</th>
-  <th>ECBQ VSF + BI (Early Childhood)</th>
-</tr>
+  <th>Instrument</th>
+  <th>Table Name</th>
+  <th>Study Visits</th>
+  <th>Constructs</th>
+  <th>Type</th>
 </thead>
 <tbody>
 <tr>
-  <td>Table Name</td>
+  <td>IBQ-R VSF + BI <i>(Infant)</i></td>
   <td><code>mh_cg_ibqr</code></td>
+  <td>V03, V05</td>
+  <td rowspan="2">
+      <ul style="font-size: 0.9em;">
+        <li>Behavioral Inhibition</li>
+        <li>Negative Affectivity</li>
+        <li>Effortful Control</li>
+        <li>Surgency / Extraversion</li>
+    </ul>
+    </td>
+  <td rowspan="2">Parent Survey (7-10 min)
+    <br>&nbsp; - <i>Child-specific</i></td>
+</tr>
+<tr>
+  <td>ECBQ VSF + BI <i>(Early Childhood)</i></td>
   <td><code>mh_cg_ecbq</code></td>
+  <td>V05</td>
 </tr>
-<tr>
-  <td>Study Visits</td>
-  <td class="visit-list">V03 · V05</td>
-  <td class="visit-list">V05</td>
-</tr>
-<tr>
-  <td colspan="3" style="height: 2em;"></td>
-</tr>
-<tr class="section-divider">
-  <td colspan="3">SHARED INSTRUMENT INFORMATION</td>
-</tr>
-<tr>
-  <td>Construct</td>
-  <td colspan="2">Behavioral Inhibition; Negative Affectivity; Effortful Control; Surgency / Extraversion</td>
-</tr>
-<tr>
-  <td>Type</td>
-  <td colspan="2">
-  	Primary caregiver survey (child-specific; 7-10 min)
-  </td>
-</tr>
-<tr>
-  <td>Quality Control</td>
-  <td colspan="2">
-  <ul>
+</tbody>
+</table>
+
+<div style="font-weight: 600; font-size: 1em; color: #6b6b6b;">Quality Control</div>
+<ul style="font-size: 0.9em;">
     <li>Assess missingness (items completed per participant)</li>
     <li>Verify age falls within expected range</li>
     <li>Review summary statistics and visualizations (item frequencies, age, prorated scores)</li>
     <li>Assess reliability (Cronbach’s α)</li>
   </ul>
-  </td>
-</tr>
-</tbody>
-</table>
 
+---
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
-{{ warning_banner() }}
-<div class="collapsible-content">
-<p><b>Interpreting IBQ-R and ECBQ Data</b><br>
-The IBQ-R (VSF)+BI and ECBQ (VSF)+BI measure normative variations in infant and child behavior and should be interpreted in the context of the child’s age and developmental stage. These instruments are not clinical or diagnostic tools.</p>
-<p><b>IBQ-R vs ECBQ Administration at V05</b><br>
-At V05 (10–17 months), participants could be administered either the IBQ-R (validated for ages 3–12 months) or the ECBQ (validated for ages 18–36 months), depending on their age at the visit. Because no validated measure exists for 12–18 months, researchers are advised to select the instrument that best aligns with their study design. The HBCD protocol spans this age gap, so the decision was made to administer the IBQ-R to all infants at V03 and V05.<br>
-However, early in data collection, the ECBQ was inadvertently administered to infants older than 12 months (N=78). In a small number of cases (N=10), caregivers had not completed all of their V05 remote surveys before the child aged into the ECBQ range, resulting in both measures being administered at V05. Although IBQ-R and ECBQ assess similar constructs, they are not interchangeable. Users should review measure-specific properties before incorporating these data into analyses.</p>
-</div>
+{{  data_warning(instruments.ibqr) }}
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 The *Infant Behavior Questionnaire–Revised Very Short Form + Behavior Inhibition* **(IBQ-R VSF+BI)** and *Early Childhood Behavior Questionnaire Very Short Form + Behavior Inhibition* **(ECBQ VSF+BI)** are caregiver-report measures of temperamental reactivity and self-regulation in early development. Both instruments extend the validated Very Short Forms (VSF) of the IBQ-R and ECBQ by incorporating additional items from the long-form questionnaires (items 38–47) to capture Behavioral Inhibition (Social Fear).
@@ -213,13 +205,13 @@ The HBCD versions therefore include four scale domains: **Behavioral Inhibition*
 </div>
 </div>
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p>Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, the pronouns "she/he" or "her/him" in reference to the child/baby were changed to “the baby/child” or “they/them” as fit the item wording.</p>
 <p>The creators of this measure have requested that these alterations be noted in all documentation and publications.</p>
 </div>
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>The IBQ-R and ECBQ item responses are reported on a 7-point Likert scale (from <i>1 = Never</i> to <i>7 = Always</i>). For each domain (Behavioral Inhibition, Negative Affectivity, Effortful Control, and Surgency/Extraversion), summary scores are computed as the mean of all items with values of 1-7. This excludes non-response options, "Does not apply" and "Decline to answer," which are not scored and considered missing.</p>
 <p>Prior to computing summary scores, reverse scoring (i.e. values reassigned from 1→7 to 7→1) is applied to items labeled with <b>(R)</b> in the <a href="#ibq-r-ecbq-domain-items">Domain Items</a> table above. In the release data, the raw item-level data is not reverse-scored already. However, the domain scores do incorporate the reverse scoring. Summary scores are not computed if more than 40% of the items are missing responses (e.g. there are only 7/12 items with numerical responses of 1-7) and are instead marked as missing.</p>
@@ -251,3 +243,13 @@ The HBCD versions therefore include four scale domains: **Behavioral Inhibition*
     <td>Almost always</td><td>Always</td>
   </tr></tbody>
 </table> -->
+
+<!-- 
+{{ warning_banner_macro() }}
+<div class="collapsible-content">
+<p><b>Interpreting IBQ-R and ECBQ Data</b><br>
+The IBQ-R (VSF)+BI and ECBQ (VSF)+BI measure normative variations in infant and child behavior and should be interpreted in the context of the child’s age and developmental stage. These instruments are not clinical or diagnostic tools.</p>
+<p><b>IBQ-R vs ECBQ Administration at V05</b><br>
+At V05 (10–17 months), participants could be administered either the IBQ-R (validated for ages 3–12 months) or the ECBQ (validated for ages 18–36 months), depending on their age at the visit. Because no validated measure exists for 12–18 months, researchers are advised to select the instrument that best aligns with their study design. The HBCD protocol spans this age gap, so the decision was made to administer the IBQ-R to all infants at V03 and V05.<br>
+However, early in data collection, the ECBQ was inadvertently administered to infants older than 12 months (N=78). In a small number of cases (N=10), caregivers had not completed all of their V05 remote surveys before the child aged into the ECBQ range, resulting in both measures being administered at V05. Although IBQ-R and ECBQ assess similar constructs, they are not interchangeable. Users should review measure-specific properties before incorporating these data into analyses.</p>
+</div> -->

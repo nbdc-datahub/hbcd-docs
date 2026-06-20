@@ -68,7 +68,7 @@ nav:
     - Tabulated Data: datacuration/phenotypes.md
     - File-Based Data: datacuration/file-based-data.md
   - Study Instruments:
-    - Overview: instruments/index.md
+    - List of Instruments: instruments/index.md
     - Age Variables: instruments/agevariables.md
     - Behavior, Biology, & Environment:
         - Administrative:

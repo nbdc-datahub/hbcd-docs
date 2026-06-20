@@ -17,13 +17,13 @@
 </tbody>
 </table>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
 This [PhenX+ Toolkit Discrimination](https://www.phenxtoolkit.org/protocols/view/210302) measure is a questionnaire to assess perceived experiences of being treated unfairly. This is an important factor in an individual’s health because it affects access to employment, housing, and education opportunities and can affect self-esteem and cause stress. It includes the **Major Experiences and Everyday Discrimination Scales**.
 
-{{ mods_banner() }}
+{{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p><b>Modifications to Everyday Discrimination Scale</b><br>
 Instruction text was modified to: "In the following questions, we are interested in your perceptions about the way other people have treated you.  Can you tell me if any of the following has ever happened to you?".<br>

@@ -17,12 +17,12 @@
 </tbody>
 </table>
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>Incidents of pediatric lead poisoning have previously been linked to consumption of certain imported candies and food colorings, traditional remedies, or food storage vessels (<a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm">CDC 1998</a>; <a href="https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html">CDC 2025</a>). The identification of these specific sources in the Lead Exposures questionnaire is based on documented cases of lead poisoning tied to specific products and should not be interpreted as highlighting any group as having particularly high risk as a result of their race or ethnicity. It is important to recognize that products and sources others than those specifically listed may contain hazardous levels of lead.</p>
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -32,7 +32,7 @@ CDC-recommended lead testing protocols are described [here](https://www.cdc.gov/
 
 Incidents of pediatric lead poisoning have previously been linked to consumption of [certain imported candies and food colorings](https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm), [traditional remedies](https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html), or food storage vessels. The identification of these specific sources in the Lead Exposures questionnaire is based on documented cases of lead poisoning tied to specific products and should not be interpreted as highlighting any group as having particularly high risk as a result of their race or ethnicity. It is important to recognize that products and sources others than those specifically listed may contain hazardous levels of lead.
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p>While lead screening protocols vary by state, many states screen children for lead exposure if they have at least one positive response to a lead exposure risk factor.</p>
 </div>

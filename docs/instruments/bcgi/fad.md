@@ -23,18 +23,18 @@
 </td></tr>
 </tbody></table>
 
-{{ alert_banner() }}
+{{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
 </div>
 
-{{ issues_banner() }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
 The **General Functioning (GF) subscale of the Family Assessment Device (FAD)** measures global functioning of the family unit, aiming to capture the quality of communication, emotional climate, problem-solving, and closeness among members the family unit. The original 12-item (GF12) subscale is one of seven subscales of The McMaster Family Assessment Device ([Epstein et al., 1983](https://doi.org/10.1111/j.1752-0606.1983.tb01497.x)). A shorter, validated 6-item (GF6+) subscale includes the six positively worded items from the GF12 ([Boterhoven de Haan et al., 2015](https://doi.org/10.1111/famp.12113)).  The GF6+ is used in HBCD.
 
-{{ scoring_banner() }}
+{{ scoring_banner_macro() }}
 <div class="collapsible-content">
 <p><strong>Scores are computed by the following method:</strong></p>
 <ol>
