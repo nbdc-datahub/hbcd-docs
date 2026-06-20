@@ -53,9 +53,9 @@ nav:
     - Responsible Data Use: access/resp_data_use.md
     - Tools: access/tools.md
   - Study Standards & Conventions:
-    - Data Standards:
-        - Metadata: standards/metadata.md
-        - Naming Conventions: standards/naming-conventions.md
+    - Study Protocol: standards/protocol.md
+    - Data Dictionary: standards/metadata.md
+    - Naming Conventions: standards/naming-conventions.md
     - Processing & Derivative Data Standards: 
         - Processing Pipelines: standards/processing/index.md
         - Pipeline Software Standards: standards/processing/standards.md
@@ -64,7 +64,7 @@ nav:
     - Tabulated Data: datacuration/phenotypes.md
     - File-Based Data: datacuration/file-based-data.md
   - Study Instruments:
-    - Instruments Overview: instruments/index.md
+    - List of Instruments: instruments/index.md
     - Age Variables: instruments/agevariables.md
     - Administrative:
         - Study Navigators: instruments/admin/study-navigators.md
