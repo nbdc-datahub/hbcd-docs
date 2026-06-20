@@ -18,11 +18,15 @@ def build_data_warning(inst):
         if not title and not text:
             continue
 
+        title_html = f"""
+<div class="info-section-title">
+    {title}
+</div>
+""" if title else ""
+
         warning_sections += f"""
 <div class="info-section">
-<div class="info-section-title">
-    {title or ""}
-</div>
+{title_html}
 <p>
     {text or ""}
 </p>

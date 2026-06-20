@@ -25,6 +25,9 @@ foodins:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 aces:
   measure: Adverse Childhood Experiences
   notes: aces & ped aces
@@ -59,6 +62,9 @@ aces:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 assist:
   measure: Alcohol, Smoking and Substance Involvement Screening Test V1-V4
   notes: MANUAL
@@ -88,6 +94,9 @@ assist:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 apa:
   measure: APA 1/2
   notes: null
@@ -118,6 +127,9 @@ apa:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 bfy:
   measure: Baby's First Years
   notes: null
@@ -145,6 +157,9 @@ bfy:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 basic_demo:
   measure: Basic Demographics
   notes: null
@@ -184,6 +199,9 @@ basic_demo:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 bayley_4:
   measure: Bayley Scales of Infant and Toddler Development, Fourth Edition
   notes: null
@@ -238,6 +256,9 @@ bayley_4:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 bfh:
   measure: Breast Feeding History
   notes: null
@@ -266,6 +287,9 @@ bfh:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 bisq:
   measure: Brief Infant Sleep Questionnaire
   notes: null
@@ -293,6 +317,9 @@ bisq:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 demographics_ch:
   measure: Child Demographics
   notes: null
@@ -320,6 +347,9 @@ demographics_ch:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 cabr_sf:
   measure: Composite Abuse Scale Revised - Short Form
   notes: null
@@ -346,6 +376,9 @@ cabr_sf:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 chaos:
   measure: Confusion, Hubbub and Order Scale
   notes: null
@@ -383,6 +416,9 @@ chaos:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 employment:
   measure: Current Employment
   notes: null
@@ -409,6 +445,9 @@ employment:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 demographics:
   measure: Demographics (Adult)
   notes: null
@@ -436,6 +475,9 @@ demographics:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 ptsd:
   measure: DSM5 Severity Acute Stress or PTSD
   notes: null
@@ -466,6 +508,9 @@ ptsd:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 erica:
   measure: Early Regulation in Context Assessment
   notes: 2 files
@@ -517,31 +562,25 @@ erica:
     <li><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv"><code>ERICA_2.1_DataError_EXCLUSIONS.csv</code></a></li>
 
     <li><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_Analytic_REMOVALS.csv"><code>ERICA_2.1_Analytic_REMOVALS.csv</code></a></li></ul>'
-  warning2: General
-  warning2_text: 'Data Release 2.1 includes data from ERICA administrations completed
+  warning2: null
+  warning2_text: Data Release 2.1 includes data from ERICA administrations completed
     as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA
     infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol
     (7–9 month).
-
-
-    Coded data for a subset of participants may be missing from this data release
-    for various reasons. These data will be added in future releases.
-
-
-    The ERICA was administered in Spanish and English. The language of administration
-    (i.e., language in which RAs delivered the instructions) does not always correspond
-    with the language spoken by the caregiver/child during the activities. All videos
-    in which the dyad speaks Spanish during the activities were coded by fully Spanish-English
-    bilingual coders.
-
-
-    The code for "caregiver irritable behavior" in Data Release 2.1 has a low base
-    rate because few caregivers exhibited elevated irritability. We recommend dichotomizing
-    (0 = 0 and >0 = 1) for analysis.'
   warning3: null
-  warning3_text: null
+  warning3_text: Coded data for a subset of participants may be missing from this
+    data release for various reasons. These data will be added in future releases.
   warning4: null
-  warning4_text: null
+  warning4_text: The ERICA was administered in Spanish and English. The language of
+    administration (i.e., language in which RAs delivered the instructions) does not
+    always correspond with the language spoken by the caregiver/child during the activities.
+    All videos in which the dyad speaks Spanish during the activities were coded by
+    fully Spanish-English bilingual coders.
+  warning5: null
+  warning5_text: The code for "caregiver irritable behavior" in Data Release 2.1 has
+    a low base rate because few caregivers exhibited elevated irritability. We recommend
+    dichotomizing (0 = 0 and >0 = 1) for analysis.
+  Column 29: null
 ecpromis_sleep:
   measure: ecPROMIS - Parent Report Sleep Problems
   notes: null
@@ -569,6 +608,9 @@ ecpromis_sleep:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 ecpromis_pags:
   measure: ecPROMIS - Physical Activity/Greenspace
   notes: null
@@ -596,6 +638,9 @@ ecpromis_pags:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 ecpromis:
   measure: ecPROMIS Caregiver-Child Relationship Scale
   notes: MANUAL
@@ -642,6 +687,9 @@ ecpromis:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 ecpromis_peer:
   measure: ecPROMIS Peer Relationships Scale
   notes: null
@@ -679,6 +727,9 @@ ecpromis_peer:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 ecpromis_selfreg:
   measure: ecPROMIS Self-Regulation - Flexibility Scale
   notes: null
@@ -716,6 +767,9 @@ ecpromis_selfreg:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 epds:
   measure: Edinburgh Postnatal Depression Scale
   notes: null
@@ -746,6 +800,9 @@ epds:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 discr:
   measure: Experiences of Unfair Treatment
   notes: null
@@ -773,6 +830,9 @@ discr:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 fad:
   measure: Family Assessment Device
   notes: null
@@ -812,6 +872,9 @@ fad:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 growth:
   measure: Growth
   notes: null
@@ -839,6 +902,9 @@ growth:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 home21:
   measure: HOME-21 Infant-Toddler
   notes: null
@@ -867,6 +933,9 @@ home21:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 chem_exp:
   measure: Household Chemical Exposures
   notes: null
@@ -893,6 +962,9 @@ chem_exp:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 ibqr:
   measure: Infant Behavior Questionnaire-Revised VSF+BI
   notes: null
@@ -941,6 +1013,9 @@ ibqr:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 nutrition:
   measure: Infant Nutrition Questionnaire
   notes: null
@@ -968,6 +1043,9 @@ nutrition:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 inf_sensor_q:
   measure: Infant Sensor Questionnaire 1/2/3
   notes: null
@@ -998,6 +1076,9 @@ inf_sensor_q:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 lead_exp:
   measure: Lead Exposures
   notes: null
@@ -1024,6 +1105,9 @@ lead_exp:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 mb_cdi:
   measure: MacArthur-Bates CDI
   notes: null
@@ -1050,6 +1134,9 @@ mb_cdi:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 med_hist:
   measure: Medical History Questionnaire
   notes: null
@@ -1077,6 +1164,9 @@ med_hist:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 mri_forms:
   measure: MRI Scan Session & Data Summary Forms
   notes: 2 tables- make manually?
@@ -1103,6 +1193,9 @@ mri_forms:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 maps_tl:
   measure: Multidimensional Assessment Profiles - Temper Loss Scale
   notes: MANUAL
@@ -1134,6 +1227,9 @@ maps_tl:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 mlds:
   measure: Multilingual Language Development Screener
   notes: null
@@ -1163,6 +1259,9 @@ mlds:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 olink:
   measure: Olink Explore 384 Inflammation 1 Panel
   notes: null
@@ -1196,6 +1295,9 @@ olink:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 ehits:
   measure: Partner Dynamics Extended
   notes: null
@@ -1223,6 +1325,9 @@ ehits:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 fam_mh:
   measure: Personal and Family Psychiatric History
   notes: null
@@ -1249,6 +1354,9 @@ fam_mh:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 nbhsaf:
   measure: PhenX+ Neighborhood Safety
   notes: null
@@ -1275,6 +1383,9 @@ nbhsaf:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 prescan_q:
   measure: Pre-Scan Questionnaire
   notes: null
@@ -1301,6 +1412,9 @@ prescan_q:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 strsup:
   measure: PROMIS Perceived Stress/Social Support
   notes: null
@@ -1328,6 +1442,9 @@ strsup:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 screenq:
   measure: Screen-Based Media Use
   notes: null
@@ -1355,6 +1472,9 @@ screenq:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 shs:
   measure: Second Hand Smoke Exposure
   notes: null
@@ -1381,6 +1501,9 @@ shs:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 spm_2:
   measure: Sensory Processing Measure-2
   notes: null
@@ -1408,6 +1531,9 @@ spm_2:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 study_nav:
   measure: Study Navigator Contact Form
   notes: null
@@ -1452,6 +1578,9 @@ study_nav:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 subst:
   measure: Substance Use Patterns in Pregnancy
   notes: null
@@ -1479,6 +1608,9 @@ subst:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 tlfb:
   measure: Timeline Follow Back
   notes: null
@@ -1506,6 +1638,9 @@ tlfb:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 tic:
   measure: Transitions in Care Screener
   notes: null
@@ -1542,6 +1677,9 @@ tic:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 nails:
   measure: USDTL Nails Toxicology (Maternal)
   notes: 2 files
@@ -1569,6 +1707,9 @@ nails:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 urine:
   measure: USDTL Urine Toxicology (Maternal)
   notes: null
@@ -1609,6 +1750,9 @@ urine:
     specified by internal SOPs). We are working to determine whether this reflects
     a data entry or site-level issue and will provide an update once more information
     is available.
+  warning5: null
+  warning5_text: null
+  Column 29: null
 via:
   measure: Vancouver Index of Acculturation
   notes: null
@@ -1637,6 +1781,9 @@ via:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 vineland_3:
   measure: Vineland-3
   notes: null
@@ -1673,6 +1820,9 @@ vineland_3:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 visit_info:
   measure: Visit Level Information
   notes: null
@@ -1699,6 +1849,9 @@ visit_info:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 vision:
   measure: VS100 Spot Vision Screener
   notes: null
@@ -1728,3 +1881,6 @@ vision:
   warning3_text: null
   warning4: null
   warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
