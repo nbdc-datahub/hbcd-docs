@@ -1,33 +1,10 @@
 # FAD (GF6+)
 
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Family Assessment Device</i></p>
+<span class="readme-subtitle">Family Assessment Device</span>
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>mh_cg_fad</code></td></tr>
-<tr><td><b>Construct</b></td><td>Global Functioning of the Family Unit</td></tr>
-<tr><td><b>Study Visits</b></td><td>V04, V06</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: No<br>
-<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
-<b>Method</b>: Administered by Self or HBCD Study staff, in person or remote (2 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
-<td>
-    <ul>
-  <li>Item- and measure-level missingness were examined.</li>
-  <li>CCheck age is within expected ranges.</li>
-  <li>Scoring algorithm evaluated to ensure correct score calculations.</li>
-  <li>Review summary statistics and visualizations (item frequencies, scores distributions, prorated scoring).</li>
-  <li>Cronbach’s alpha calculated to assess inter-item reliability.</li>
-</ul>
-</td></tr>
-</tbody></table>
-
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
-</div>
-
+{{ readme(instruments.fad) }}
+{{ alert_warning(instruments.fad) }}
+{{ data_warning(instruments.fad) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
@@ -56,3 +33,34 @@ The **General Functioning (GF) subscale of the Family Assessment Device (FAD)** 
 <p>Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. <em>Developmental Cognitive Neuroscience</em>, 69, 101422. <a href="https://doi.org/10.1016/j.dcn.2024.101422">https://doi.org/10.1016/j.dcn.2024.101422</a></p>
 <p>Epstein, N. B., Baldwin, L. M., & Bishop, D. S. (1983). The McMaster Family Assessment Device. <i>Journal of Marital and Family Therapy</i>, 9(2): 171–180. doi: <a href="https://doi.org/10.1111/j.1752-0606.1983.tb01497.x">10.1111/j.1752-0606.1983.tb01497.x</a></p>  
 </div>
+
+
+
+<!-- 
+## OLD
+
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>mh_cg_fad</code></td></tr>
+<tr><td><b>Construct</b></td><td>Global Functioning of the Family Unit</td></tr>
+<tr><td><b>Study Visits</b></td><td>V04, V06</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: No<br>
+<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
+<b>Method</b>: Administered by Self or HBCD Study staff, in person or remote (2 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td>
+    <ul>
+  <li>Item- and measure-level missingness were examined.</li>
+  <li>CCheck age is within expected ranges.</li>
+  <li>Scoring algorithm evaluated to ensure correct score calculations.</li>
+  <li>Review summary statistics and visualizations (item frequencies, scores distributions, prorated scoring).</li>
+  <li>Cronbach’s alpha calculated to assess inter-item reliability.</li>
+</ul>
+</td></tr>
+</tbody></table>
+
+{{ alert_banner_macro() }}
+<div class="collapsible-content">
+<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
+</div> -->
