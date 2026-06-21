@@ -1,57 +1,3 @@
-gled:
-  measure: Geocoded Linked External Data
-  notes: null
-  acronym: GLED
-  full_name: Geocoded Linked External Data- Residential Address History
-  domain: Social & Environmental Determinants
-  table_name: null
-  construct: Neighborhood Measures
-  concatenated: geocoding/
-  concat_filetree: "└── geocoding/\n    └──  HBCD_address_history_geocoded_filtered.csv"
-  visits: null
-  child_specific: 'Yes'
-  type: Derived Data
-  respondent_notes: null
-  admin_notes: null
-  remote: null
-  duration: null
-  qc:
-  - Verify that addresses from the address history form fall within the appropriate
-    catchment area boundaries.
-  - Assess address history completeness to ensure continuous coverage back to at least
-    one year before the child's estimated due date (EDD).
-  - Geocode addresses and verify successful geocoding to ensure accurate linkage.
-  alert1: null
-  alert1_text: As a condition of using these data, specified in the data use certification
-    (DUC), you agreed not to identify any individual from whom data was obtained and
-    not to identify their relatives.  To help maintain our participant’s anonymity,
-    researchers should refrain from using geospatial information to identify actual
-    geographic locations. To avoid identification, we have blurred the coded value
-    to avoid any unique values that are shared by less than 10 individuals.
-  alert2: null
-  alert2_text: null
-  alert3: null
-  alert3_text: null
-  warning1: null
-  warning1_text: The geocoded variables were based on intersections between residential
-    addresses reported by participants and geospatial databases built by environmental
-    and neighborhood through publicly available geospatial database, including CDC
-    and EPA. Therefore, the coded values represent estimates about potential exposures
-    or experience given where the participants have spent their time. The accuracy
-    of such estimates would be influenced by multiple factors, including the validity
-    of the original geospatial databases. For detailed information about how original
-    geospatial databases were built by publicly available geospatial databases, including
-    CDC and EPA, please refer to the data dictionary where the link to the source
-    data is provided.
-  warning2: null
-  warning2_text: null
-  warning3: null
-  warning3_text: null
-  warning4: null
-  warning4_text: null
-  warning5: null
-  warning5_text: null
-  Column 29: null
 foodins:
   measure: 2-item Food Insecurity
   notes: null
@@ -61,10 +7,12 @@ foodins:
   table_name: sed_cg_foodins
   construct: Food Insecurity
   concatenated: null
-  concat_filetree: null
   visits: V02, V03
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Parent
   admin_notes: null
   remote: remote
@@ -97,11 +45,13 @@ aces:
   table_name: sed_cg_ace / sed_cg_pedaces (Pediatric ACES)
   construct: Adverse Childhood Experiences (Caregiver)
   concatenated: null
-  concat_filetree: null
   visits: V04
   child_specific: null
   type: Parent Survey
-  respondent_notes: Birth Parent/Primary Caregiver
+  administration: null
+  respondent_category: Parent on Self
+  respondent: Birth Parent or Primary Caregiver
+  respondent_notes: null
   admin_notes: null
   remote: in-person
   duration: 2 min
@@ -142,10 +92,12 @@ assist:
     during pregnancy V2 : Late pregnancy and early postnatal (0–4 weeks) V3 : Postpartum
     (3-month anchor) V4 : Postpartum (12-month anchor)'
   concatenated: null
-  concat_filetree: null
   visits: V01 - V04
   child_specific: 'No'
   type: Parent Interview
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Pregnant Participant/Birth Parent (as applicable)
   admin_notes: Self-administered in Alabama
   remote: in-person
@@ -178,10 +130,12 @@ apa:
   table_name: pex_bm_apa
   construct: Mental Health
   concatenated: null
-  concat_filetree: null
   visits: V01, V02, V03
   child_specific: 'No'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Pregnant Participant, Birth Parent, or Primary Caregiver
   admin_notes: null
   remote: either
@@ -217,10 +171,12 @@ bfy:
   table_name: sed_bm_bfy
   construct: Benefits/Services, Economic Stress
   concatenated: null
-  concat_filetree: null
   visits: V01, V05, V07
   child_specific: 'No'
   type: Parent Interview
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Parent
   admin_notes: null
   remote: in-person
@@ -253,10 +209,12 @@ basic_demo:
   table_name: sed_basic_demographics
   construct: Demographics data derived from multiple sources
   concatenated: null
-  concat_filetree: null
   visits: null
   child_specific: null
   type: Derived Data
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: null
   admin_notes: null
   remote: null
@@ -301,10 +259,12 @@ bayley_4:
   table_name: ncl_ch_bayley
   construct: Child Development (Cognitive, Language, and Motor)
   concatenated: null
-  concat_filetree: null
   visits: V04
   child_specific: 'Yes'
   type: Parent Interview
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Child
   admin_notes: In person
   remote: in-person
@@ -371,11 +331,13 @@ bfh:
   table_name: ph_cg_phx__bfh
   construct: Nutrition
   concatenated: null
-  concat_filetree: null
   visits: V02, V03, V04, V06, V08 V08 (only administered if still breastfeeding at
     prior visit)
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Parent Survey
   admin_notes: null
   remote: remote
@@ -408,10 +370,12 @@ bisq:
   table_name: ph_cg_bisq
   construct: Sleep
   concatenated: null
-  concat_filetree: null
   visits: V04
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Parent on Child
   admin_notes: remote
   remote: remote
@@ -451,10 +415,12 @@ demographics_ch:
   table_name: sed_bm_demo_child
   construct: Child Demographics
   concatenated: null
-  concat_filetree: null
   visits: V04, V06
   child_specific: 'Yes'
   type: Parent Interview
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: null
   admin_notes: null
   remote: null
@@ -487,10 +453,12 @@ cabr_sf:
   table_name: sed_cg_cabr_sf
   construct: Intimate Partner Violence
   concatenated: null
-  concat_filetree: null
   visits: V04, V06
   child_specific: 'No'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: Self-administered in person in a private setting
   remote: in-person
@@ -522,10 +490,12 @@ chaos:
   table_name: mh_cg_chaos
   construct: Family Organization
   concatenated: null
-  concat_filetree: null
   visits: V05, V07
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Primary caregiver on Child
   admin_notes: null
   remote: remote
@@ -568,10 +538,12 @@ employment:
   table_name: sed_cg_employ
   construct: Current Employment
   concatenated: null
-  concat_filetree: null
   visits: V05
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
@@ -603,10 +575,12 @@ demographics:
   table_name: sed_bm_demo
   construct: Demographics (Birth Parent/Alternative Caregiver)
   concatenated: null
-  concat_filetree: null
   visits: V01, V04, V06
   child_specific: 'No'
   type: Parent Interview
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Parent/Caregiver interview
   admin_notes: null
   remote: null
@@ -639,10 +613,12 @@ ptsd:
   table_name: pex_bm_str__ptsd
   construct: PTSD/Acute Stress Disorder Symptom Severity
   concatenated: null
-  concat_filetree: null
   visits: V01, V02, V03
   child_specific: 'No'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Pregnant Participant, Birth Parent, or Primary Caregiver&lt;
   admin_notes: null
   remote: either
@@ -678,10 +654,12 @@ erica:
   table_name: 'Primary coding data file: mh_cg_erica_3_9m Reliability codes: mh_cg_erica_rel_3_9m'
   construct: Emotional Regulation, Parenting, Caregiver-Child Relationship
   concatenated: null
-  concat_filetree: null
   visits: V03
   child_specific: 'Yes'
   type: Parent Interview
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver and Child
   admin_notes: null
   remote: in-person
@@ -746,7 +724,7 @@ erica:
     dichotomizing (0 = 0 and >0 = 1) for analysis.
   Column 29: null
 ecpromis_sleep:
-  measure: ecPROMIS - Parent Report Sleep Problems
+  measure: ecPROMIS - Sleep
   notes: null
   acronym: null
   full_name: ecPROMIS - Parent Report Sleep Problems
@@ -754,10 +732,12 @@ ecpromis_sleep:
   table_name: ph_cg_pms__sleep
   construct: Sleep
   concatenated: null
-  concat_filetree: null
   visits: V04, V06
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
@@ -790,10 +770,12 @@ ecpromis_pags:
   table_name: ph_cg_pms__pags
   construct: Physical Activity
   concatenated: null
-  concat_filetree: null
   visits: V04, V06
   child_specific: 'Yes'
   type: Parent Survey or Interview
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
@@ -826,12 +808,14 @@ ecpromis:
   table_name: mh_cg_pms__cc__inf / mh_cg_pms__cc__1to5
   construct: Relationships
   concatenated: null
-  concat_filetree: null
   visits: 'Inf: V03, V05
 
     1to5: V03, V05, V07'
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: null
   admin_notes: null
   remote: remote
@@ -881,10 +865,12 @@ ecpromis_peer:
   table_name: med_cg_pms__peer
   construct: Peer Relationships
   concatenated: null
-  concat_filetree: null
   visits: V05, V07, V09
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Primary Caregiver on Child
   admin_notes: null
   remote: remote
@@ -927,10 +913,12 @@ ecpromis_selfreg:
   table_name: mh_cg_pms__selfreg
   construct: Self-Regulation and Flexibility
   concatenated: null
-  concat_filetree: null
   visits: V05, V07, V09
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Primary Caregiver on Child
   admin_notes: null
   remote: remote
@@ -973,10 +961,12 @@ epds:
   table_name: pex_bm_epds
   construct: Postnatal Depression
   concatenated: null
-  concat_filetree: null
   visits: V01, V02, V03
   child_specific: 'No'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Pregnant Participant or Birth Parent
   admin_notes: null
   remote: either
@@ -1012,10 +1002,12 @@ discr:
   table_name: sed_bm_phx__discr
   construct: Experiences of Unfair Treatment
   concatenated: null
-  concat_filetree: null
   visits: V01, V05, V07
   child_specific: 'No'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Parent
   admin_notes: null
   remote: remote
@@ -1048,10 +1040,12 @@ fad:
   table_name: mh_cg_fad
   construct: Global Functioning of the Family Unit
   concatenated: null
-  concat_filetree: null
   visits: V04, V06
   child_specific: 'No'
   type: Parent Interview or Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
@@ -1087,6 +1081,62 @@ fad:
   warning5: null
   warning5_text: null
   Column 29: null
+gled:
+  measure: Geocoded Linked External Data
+  notes: null
+  acronym: GLED
+  full_name: Geocoded Linked External Data- Residential Address History
+  domain: Social & Environmental Determinants
+  table_name: null
+  construct: Neighborhood Measures
+  concatenated: geocoding/
+  visits: null
+  child_specific: 'Yes'
+  type: Derived Data
+  administration: null
+  respondent_category: null
+  respondent: null
+  respondent_notes: null
+  admin_notes: null
+  remote: null
+  duration: null
+  qc:
+  - Verify that addresses from the address history form fall within the appropriate
+    catchment area boundaries.
+  - Assess address history completeness to ensure continuous coverage back to at least
+    one year before the child's estimated due date (EDD).
+  - Geocode addresses and verify successful geocoding to ensure accurate linkage.
+  alert1: null
+  alert1_text: As a condition of using these data, specified in the data use certification
+    (DUC), you agreed not to identify any individual from whom data was obtained and
+    not to identify their relatives.  To help maintain our participant’s anonymity,
+    researchers should refrain from using geospatial information to identify actual
+    geographic locations. To avoid identification, we have blurred the coded value
+    to avoid any unique values that are shared by less than 10 individuals.
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
+  warning1: null
+  warning1_text: The geocoded variables were based on intersections between residential
+    addresses reported by participants and geospatial databases built by environmental
+    and neighborhood through publicly available geospatial database, including CDC
+    and EPA. Therefore, the coded values represent estimates about potential exposures
+    or experience given where the participants have spent their time. The accuracy
+    of such estimates would be influenced by multiple factors, including the validity
+    of the original geospatial databases. For detailed information about how original
+    geospatial databases were built by publicly available geospatial databases, including
+    CDC and EPA, please refer to the data dictionary where the link to the source
+    data is provided.
+  warning2: null
+  warning2_text: null
+  warning3: null
+  warning3_text: null
+  warning4: null
+  warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 growth:
   measure: Growth
   notes: null
@@ -1096,10 +1146,12 @@ growth:
   table_name: ph_ch_anthro
   construct: Growth
   concatenated: null
-  concat_filetree: null
   visits: V02, V03, V04, V06, V08
   child_specific: 'Yes'
   type: Direct Assessment
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: null
   admin_notes: null
   remote: in-person
@@ -1133,10 +1185,12 @@ home21:
   construct: 'Child’s Home Environment: Cognitive Stimulation and Emotional Support
     in the Home'
   concatenated: null
-  concat_filetree: null
   visits: V04, V06
   child_specific: 'No'
   type: Parent Interview or Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
@@ -1169,10 +1223,12 @@ chem_exp:
   table_name: sed_cg_hce
   construct: Household Chemical Exposures
   concatenated: null
-  concat_filetree: null
   visits: V05
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
@@ -1205,12 +1261,13 @@ illumina:
   construct: GWAS, EWAS, Transcriptome
   concatenated: "└── genetics/genotype_microarray/GDA/\n    ├── batch.info\n    └──\
     \  hbcd.{bed|bim|fam}"
-  concat_filetree: "└── concatenated/genetics/genotype_microarray/GDA/\n    ├── batch.info\n\
-    \    ├── hbcd.bed\n    ├── hbcd.bim\n    └── hbcd.fam"
   visits: Samples are assayed from one sample (from parent and child), but may come
     from any visit (V01-V06) based on DNA yields.
   child_specific: null
   type: Direct Assessment
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: Both Birth Parent and Child
   admin_notes: null
   remote: null
@@ -1303,10 +1360,12 @@ ibqr:
   construct: Behavioral Inhibition Negative Affectivity Effortful Control Surgency
     / Extraversion
   concatenated: null
-  concat_filetree: null
   visits: V03, V05
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: Primary caregiver
   admin_notes: null
   remote: remote
@@ -1366,10 +1425,12 @@ nutrition:
   table_name: ph_cg_inq
   construct: Nutrition
   concatenated: null
-  concat_filetree: null
   visits: V05
   child_specific: 'Yes'
   type: Parent Interview
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver on Child
   admin_notes: null
   remote: either
@@ -1402,10 +1463,12 @@ inf_sensor_q:
   table_name: nt_ch_sens__qtn_{1|2|3}
   construct: Motor Development, Regulation (Sleep/Wake)
   concatenated: null
-  concat_filetree: null
   visits: V02, V03
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Primary Caregiver
   admin_notes: null
   remote: remote
@@ -1441,10 +1504,12 @@ lead_exp:
   table_name: sed_cg_ledexp
   construct: Lead Exposures
   concatenated: null
-  concat_filetree: null
   visits: V05
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
@@ -1478,23 +1543,47 @@ mb_cdi:
     ncl_ch_cdiwges'
   construct: Language Development
   concatenated: null
-  concat_filetree: null
   visits: V04, V06
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: in-person
   duration: 20-60 min
-  qc: null
+  qc:
+  - HBCD SOPs instruct RAs to present instructions exactly as shown in the existing
+    <a href="https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf" target="_blank">Web-CDI
+    Manual</a>.
+  - All data collection, calculation of summary scores, and percentile scores are
+    completed within Web-CDI and then imported into the HBCD database. Data were reviewed
+    to verify that fields are appropriately labeled upon import, and range checks
+    of all summary variables were performed.
   alert1: null
-  alert1_text: null
+  alert1_text: The CDI forms are well-documented and widely used assessments. We note
+    that percentile scores were calculated based on the norms described in MacArthur-Bates
+    User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023),
+    see additional references below. See <a href="#hbcd-mod">HBCD Modifications</a>
+    for a description of how the CDI-WG is administered to children with exposure
+    to different languages; users may want to consider the <a href="../mlds" target="_blank">Multilingual
+    Language Development</a> questionnaire in conjunction with the CDI.
   alert2: null
   alert2_text: null
   alert3: null
   alert3_text: null
   warning1: null
-  warning1_text: null
+  warning1_text: 'The CDI-WG provides percentiles score but does not provide standard
+    scores. Note that in some cases, the caregiver endorsed all items in certain sections
+    of the Web-CDI form. These cases are included in the released data as completed
+    by the caregiver, but users may take caution in interpretation.
+
+
+    In addition, the CDI includes a benchmark age that is based on entry by the caregiver.
+    Note that the CDI is not administered until 9 months of age and data entry errors
+    may occur. Users may want to use this in conjunction with other data on the child''s
+    age included elsewhere in HBCD.'
   warning2: null
   warning2_text: null
   warning3: null
@@ -1513,10 +1602,12 @@ med_hist:
   table_name: ph_cg_ecls__medhist
   construct: Medical History
   concatenated: null
-  concat_filetree: null
   visits: V04, V06
   child_specific: 'Yes'
   type: Parent Interview
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver on Child
   admin_notes: null
   remote: either
@@ -1549,10 +1640,12 @@ mri_forms:
   table_name: mri_ra_chkl_scan / mri_ra_chkl_data
   construct: Pre-/Post-MRI Tech Checklists 1 <i>(Scan Session)</i> & 2 <i>(Data)<i>
   concatenated: null
-  concat_filetree: null
   visits: V02 - V06
   child_specific: 'Yes'
   type: MRI Technician Form
+  administration: null
+  respondent_category: 'N/A: RA Form'
+  respondent: null
   respondent_notes: null
   admin_notes: null
   remote: in-person
@@ -1584,11 +1677,13 @@ maps_tl:
   table_name: mh_cg_mapdb__inf
   construct: Irritability
   concatenated: null
-  concat_filetree: null
   visits: V03
   child_specific: 'Yes'
   type: Parent Survey
-  respondent_notes: Primary Caregiver on Child
+  administration: null
+  respondent_category: Parent on Child
+  respondent: Primary Caregiver
+  respondent_notes: on Child
   admin_notes: null
   remote: remote
   duration: 5 min
@@ -1624,11 +1719,13 @@ mlds:
   table_name: ncl_ch_mlds
   construct: Multilingual Exposure
   concatenated: null
-  concat_filetree: null
   visits: V03, V04, V05, V07
   child_specific: 'Yes'
   type: Parent Survey
-  respondent_notes: Primary Caregiver
+  administration: Self-administered remotely
+  respondent_category: Parent on Child
+  respondent: Primary Caregiver
+  respondent_notes: null
   admin_notes: If the caregiver does not complete the assessment remotely, it is conducted
     at the visit to document the child’s language exposure environments. The instrument
     can be administered by an HBCD Study team member in-person or via video as needed.
@@ -1643,7 +1740,14 @@ mlds:
   alert3: null
   alert3_text: null
   warning1: null
-  warning1_text: null
+  warning1_text: This measure assesses a child’s exposure to language to guide the
+    selection of appropriate measures for their next in-person study visit. It estimates
+    the percentage of time the child is exposed to languages in caregiving environments,
+    based on caregiver reports. These estimates are approximate and also may not account
+    for all languages the child encounters. The measure does not evaluate or quantify
+    the child’s interactions or their expressive or receptive language skills in a
+    given language, but rather provides an estimate of the time spent in environments
+    where specific languages are spoken.
   warning2: null
   warning2_text: null
   warning3: null
@@ -1663,11 +1767,12 @@ olink:
   construct: Maternal Inflammation
   concatenated: "└── proteins/olink/inflammation/\n    ├── Olink_allplates_long.csv\n\
     \    └── Olink_allplates_wide.csv"
-  concat_filetree: "└── proteins/olink/inflammation/\n    ├── Olink_allplates_long.csv\n\
-    \    └── Olink_allplates_wide.csv"
   visits: V01
   child_specific: 'No'
   type: Direct Assessment
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: pregnant participant
   admin_notes: null
   remote: in-person
@@ -1712,10 +1817,12 @@ ehits:
   table_name: sed_bm_ehits
   construct: Intimate Partner Violence
   concatenated: null
-  concat_filetree: null
   visits: V01
   child_specific: 'No'
   type: Parent Interview
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Parent
   admin_notes: null
   remote: in-person
@@ -1748,10 +1855,12 @@ fam_mh:
   table_name: pex_bm_psych
   construct: Personal and Family Mental Health
   concatenated: null
-  concat_filetree: null
   visits: V01
   child_specific: 'No'
   type: Parent Survey
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: Pregnant Participant
   admin_notes: null
   remote: either
@@ -1783,10 +1892,12 @@ nbhsaf:
   table_name: sed_bm_nbhsaf
   construct: Neighborhood Safety
   concatenated: null
-  concat_filetree: null
   visits: V01, V02, V07, V09
   child_specific: 'No'
   type: Parent Survey
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: Parent
   admin_notes: null
   remote: either
@@ -1818,10 +1929,12 @@ prescan_q:
   table_name: mri_ra_prep
   construct: Infant Sleep Environment
   concatenated: null
-  concat_filetree: null
   visits: V02 - V06
   child_specific: 'Yes'
   type: Parent Interview
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: null
   admin_notes: null
   remote: null
@@ -1853,10 +1966,12 @@ strsup:
   table_name: sed_bm_strsup
   construct: Perceived Stress/Social Support
   concatenated: null
-  concat_filetree: null
   visits: V01, V02, V03
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: Primary Caregiver on Child
   admin_notes: null
   remote: remote
@@ -1889,10 +2004,12 @@ paces:
   table_name: null
   construct: Protective Factors
   concatenated: null
-  concat_filetree: null
   visits: V01
-  child_specific: null
+  child_specific: 'No'
   type: null
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: null
   admin_notes: null
   remote: null
@@ -1924,10 +2041,12 @@ screenq:
   table_name: ph_cg_screenq
   construct: Media Use
   concatenated: null
-  concat_filetree: null
   visits: V04, V06
   child_specific: 'Yes'
   type: Parent Interview
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
@@ -1960,10 +2079,12 @@ shs:
   table_name: sed_cg_shs
   construct: Second Hand Smoke
   concatenated: null
-  concat_filetree: null
   visits: V05
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
@@ -1995,10 +2116,12 @@ spm_2:
   table_name: ncl_cg_spm2__inf (Infant version); ncl_cg_spm2__tod (Toddler version)
   construct: Sensory Processing/Integration
   concatenated: null
-  concat_filetree: null
   visits: V03 (Infant); V05 (Toddler)
   child_specific: 'Yes'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Primary CG
   admin_notes: null
   remote: remote
@@ -2031,10 +2154,12 @@ study_nav:
   table_name: null
   construct: Recruitment/Retention
   concatenated: study_navigator/
-  concat_filetree: null
   visits: Filled out by the Study Navigator during and/or between study visits.
   child_specific: null
   type: Parent Interview
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: Primary Caregiver
   admin_notes: null
   remote: either
@@ -2083,10 +2208,12 @@ subst:
   table_name: pex_bm_subst
   construct: Substance Use in Pregnancy
   concatenated: null
-  concat_filetree: null
   visits: V02
   child_specific: 'No'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Birth Parent
   admin_notes: null
   remote: in-person
@@ -2119,10 +2246,12 @@ tlfb:
   table_name: pex_bm_tlfb
   construct: Substance Use Before and During Pregnancy
   concatenated: null
-  concat_filetree: null
   visits: V01, V02
   child_specific: 'No'
   type: Parent Interview
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: self-administered in Alabama
   remote: in-person
@@ -2156,10 +2285,12 @@ tic:
   construct: Documents when children spend time living in non-parental care/change
     in who provides primary care
   concatenated: null
-  concat_filetree: null
   visits: V02 onward
   child_specific: 'Yes'
   type: Parent Interview or Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Original Consented Parent or Alternate Caregiver
   admin_notes: RA administered via phone
   remote: remote
@@ -2202,10 +2333,12 @@ nails:
     bio_bm_biosample_nails_type'
   construct: Drug Panel, Environmental Exposure
   concatenated: null
-  concat_filetree: null
   visits: V01, V02
   child_specific: 'No'
   type: Direct Assessment
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: Pregnant/postpartum person
   admin_notes: Self-collected under supervision or collected by research team
   remote: in-person
@@ -2255,10 +2388,12 @@ urine:
   table_name: bio_bm_biosample_urine_results
   construct: Drug Panel, Toxins
   concatenated: null
-  concat_filetree: null
   visits: V01
   child_specific: 'No'
   type: Direct Assessment
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: Pregnant/postpartum person
   admin_notes: Self-collected
   remote: in-person
@@ -2304,10 +2439,12 @@ via:
   table_name: sed_cg_via
   construct: Acculturation
   concatenated: null
-  concat_filetree: null
   visits: V05
   child_specific: 'No'
   type: Parent Interview or Survey
+  administration: null
+  respondent_category: Parent on Self
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
@@ -2341,10 +2478,12 @@ vineland_3:
   table_name: ncl_cg_vabs
   construct: Adaptive Behavior
   concatenated: null
-  concat_filetree: null
   visits: V05, V09, V10
   child_specific: 'No'
   type: Parent Survey
+  administration: null
+  respondent_category: Parent on Child
+  respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: remote
@@ -2386,10 +2525,12 @@ visit_info:
   table_name: par_visit_data
   construct: Participant visit information
   concatenated: null
-  concat_filetree: null
   visits: All
   child_specific: null
   type: Derived Data
+  administration: null
+  respondent_category: null
+  respondent: null
   respondent_notes: null
   admin_notes: null
   remote: null
@@ -2421,10 +2562,12 @@ vision:
   table_name: ph_ch_vs
   construct: Vision
   concatenated: null
-  concat_filetree: null
   visits: V04, V06, V08
   child_specific: 'Yes'
   type: Direct Assessment
+  administration: null
+  respondent_category: Child on Self
+  respondent: null
   respondent_notes: Child on Self
   admin_notes: HBCD Study staff, in person (Few seconds estimated duration) Only administered
     if parent responds NO to eligibility question (“Have you been told that your child

@@ -6,43 +6,14 @@
 {{ issues_banner_macro() }}
 
 
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>MacArthur-Bates Communicative Development Inventories, Words and Gestures</i></p>
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>ncl_ch_cdiwgen</code> (English version); <code>ncl_ch_cdiwges</code> (Spanish version)</td></tr>
-<tr><td><b>Construct</b></td><td>Language Development</td></tr>
-<tr><td><b>Study Visits</b></td><td>V04, V06</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
-<b>Method</b>: Self administered in person (20-60 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
-<td>
-  <ul>
-  <li>
-    <strong>Administration QC:</strong> HBCD SOPs instruct RAs to present instructions exactly as shown in the existing 
-    <a href="https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf" target="_blank">Web-CDI Manual</a>.
-  </li>
-  <li>All data collection, calculation of summary scores, and percentile scores are completed within Web-CDI and then 
-    imported into the HBCD database. Data were reviewed to verify that fields are appropriately labeled upon import, 
-    and range checks of all summary variables were performed.</li>
-</td></tr>
-</tbody>
-</table>
 
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p>The CDI forms are well-documented and widely used assessments. We note that percentile scores were calculated based on the norms described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023), see additional references below. See <a href="#hbcd-mod">HBCD Modifications</a> for a description of how the CDI-WG is administered to children with exposure to different languages; users may want to consider the <a href="../mlds" target="_blank">Multilingual Language Development</a> questionnaire in conjunction with the CDI.</p>
-</div>
 
 {{ warning_banner_macro() }}
 <div class="collapsible-content">
 <p>The CDI-WG provides percentiles score but does not provide standard scores. Note that in some cases, the caregiver endorsed all items in certain sections of the Web-CDI form. These cases are included in the released data as completed by the caregiver, but users may take caution in interpretation.</p> 
 <p>In addition, the CDI includes a benchmark age that is based on entry by the caregiver. Note that the CDI is not administered until 9 months of age and data entry errors may occur. Users may want to use this in conjunction with other data on the child's age included elsewhere in HBCD.</p>
 </div>
-
-{{ issues_banner_macro() }}
 
 ## Instrument Details
 
@@ -83,3 +54,33 @@ The **MacArthur-Bates Communicative Development Inventories, Words and Gestures*
   </p>  
 </div>
 
+
+
+
+
+
+<!-- 
+<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>MacArthur-Bates Communicative Development Inventories, Words and Gestures</i></p>
+
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>ncl_ch_cdiwgen</code> (English version); <code>ncl_ch_cdiwges</code> (Spanish version)</td></tr>
+<tr><td><b>Construct</b></td><td>Language Development</td></tr>
+<tr><td><b>Study Visits</b></td><td>V04, V06</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: Yes<br>
+<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
+<b>Method</b>: Self administered in person (20-60 min estimated duration)</td></tr>
+<td><b>Quality Control</b></td>
+<td>
+  <ul>
+  <li>
+    HBCD SOPs instruct RAs to present instructions exactly as shown in the existing 
+    <a href="https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf" target="_blank">Web-CDI Manual</a>.
+  </li>
+  <li>All data collection, calculation of summary scores, and percentile scores are completed within Web-CDI and then 
+    imported into the HBCD database. Data were reviewed to verify that fields are appropriately labeled upon import, 
+    and range checks of all summary variables were performed.</li>
+</td></tr>
+</tbody>
+</table> -->

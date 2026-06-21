@@ -1,7 +1,15 @@
 # MLDS
 
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Multilingual Language Development Screener</i></p>
+{{ readme(instruments.mlds) }}
 
+*Note: If the caregiver does not complete the assessment remotely, it is conducted at the visit to document the child’s language exposure environments. The instrument can be administered by an HBCD Study team member in-person or via video as needed.*
+
+{{ alert_warning(instruments.mlds) }}
+{{ data_warning(instruments.mlds) }}
+{{ issues_banner_macro() }}
+
+
+### ORIG
 
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
@@ -18,13 +26,6 @@
 </tr>
 </tbody>
 </table>
-
-{{ warning_banner_macro() }}
-<div class="collapsible-content">
-<p>This measure assesses a child’s exposure to language to guide the selection of appropriate measures for their next in-person study visit. It estimates the percentage of time the child is exposed to languages in caregiving environments, based on caregiver reports. These estimates are approximate and also may not account for all languages the child encounters. The measure does not evaluate or quantify the child’s interactions or their expressive or receptive language skills in a given language, but rather provides an estimate of the time spent in environments where specific languages are spoken.</p> 
-</div>
-
-{{ issues_banner_macro() }}
 
 ## Instrument Details
 

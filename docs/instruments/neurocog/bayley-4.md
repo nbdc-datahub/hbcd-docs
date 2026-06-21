@@ -6,32 +6,6 @@
 {{ data_warning(instruments.bayley_4) }}
 {{ issues_banner_macro() }}
 
----
-
----------------------------------------------
-
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p>Performance of the Bayley Scales of Infant and Toddler Development, Fourth Edition, reflects the child's developmental status, but various factors might influence the results of the assessment that should be taken into account.</p>
-<p>The test was given in the context of a battery of tests and procedures administered to the child and his/her caregiver during the course of an extended visit. Some children may experience fatigue from this and this may have adversely impacted their performance. Ratings of arousal level of the child before and after the assessment may help in identifying situations where the child may have under-performed.</p>
-<p>The child's exposure to different languages may also impact their performance. The Multilingual Language Development questionnaire was used to screen for parental preference for the test to be administered in Spanish or English (<i>Spanish language translations used are available upon request</i>). The instrument also documents other language exposures that the child may have. Exposure to languages other than Spanish or English may impact a child's performance. In addition, some items on the test may be impacted by environmental experiences related to the task or items used. In these cases, the test may underestimate the child's developmental status.</p>
-</div>
-
-{{ warning_banner_macro() }}
-<div class="collapsible-content">
-<p><b>Missing Records</b><br>
-A subset of participants are missing the Bayley-4 records, i.e. the <b>Administration</b> field (<code>ncl_ch_bayley_administration</code>) has a value of 'None.' However, there are a variety of reasons why the data may be missing, therefore a value of 'None' does not mean that the Bayley was not administered. These data will be added in future releases as it becomes available.</p>
-<p><b>Limited Predictive Validity for Long-Term Neurocognitive Status</b><br>
-Although the Bayley Scales of Infant and Toddler Development, Fourth Edition, is a well-established and validated measure of infant development, tests of this nature have historically had limited predictive validity for long-term neurocognitive status.</p> 
-<!-- 
-MOVED TO KNOWN ISSUES:
-<p><b>Invalid Scores for Subset of Participants</b><br>
-Participants may include invalid sub-test and/or domain scores of <code>-9999</code>. Users should remove this participant data prior to analysis.
-</p> -->
-</div>
-
-{{ issues_banner_macro() }}
-
 ## Instrument Details
 
 The **Bayley Scales of Infant and Toddler Development, Fourth Edition**, is an established, commercially available measure of early development. The test provides an estimate of the child's cognitive, language, and motor skills. The **Language Domain** evaluates both receptive and expressive communication skills. The **Motor Domain** evaluates both fine and gross motor skills. The **Social-Emotional** and **Adaptive Behavior** Scales of the Bayley-4 were not administered in this study. Publisher documentation for the Bayley-4 is available [here](https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Cognition-%26-Neuro/Bayley-Scales-of-Infant-and-Toddler-Development-%7C-Fourth-Edition/p/100001996).
@@ -58,3 +32,26 @@ Modifications were made to accommodate Spanish-speaking households. <strong>Engl
 <div class="references"> 
 <p>Bayley, N., & Aylward, G. (2019). <i>Administration Manual: Bayley Scales Infant Toddler Development, Fourth Edition</i>. Pearson.</p>  
 </div>
+
+
+
+
+
+<!-- {{ alert_banner_macro() }}
+<div class="collapsible-content">
+<p>Performance of the Bayley Scales of Infant and Toddler Development, Fourth Edition, reflects the child's developmental status, but various factors might influence the results of the assessment that should be taken into account.</p>
+<p>The test was given in the context of a battery of tests and procedures administered to the child and his/her caregiver during the course of an extended visit. Some children may experience fatigue from this and this may have adversely impacted their performance. Ratings of arousal level of the child before and after the assessment may help in identifying situations where the child may have under-performed.</p>
+<p>The child's exposure to different languages may also impact their performance. The Multilingual Language Development questionnaire was used to screen for parental preference for the test to be administered in Spanish or English (<i>Spanish language translations used are available upon request</i>). The instrument also documents other language exposures that the child may have. Exposure to languages other than Spanish or English may impact a child's performance. In addition, some items on the test may be impacted by environmental experiences related to the task or items used. In these cases, the test may underestimate the child's developmental status.</p>
+</div> -->
+
+<!-- {{ warning_banner_macro() }}
+<div class="collapsible-content">
+<p><b>Missing Records</b><br>
+A subset of participants are missing the Bayley-4 records, i.e. the <b>Administration</b> field (<code>ncl_ch_bayley_administration</code>) has a value of 'None.' However, there are a variety of reasons why the data may be missing, therefore a value of 'None' does not mean that the Bayley was not administered. These data will be added in future releases as it becomes available.</p>
+<p><b>Limited Predictive Validity for Long-Term Neurocognitive Status</b><br>
+Although the Bayley Scales of Infant and Toddler Development, Fourth Edition, is a well-established and validated measure of infant development, tests of this nature have historically had limited predictive validity for long-term neurocognitive status.</p>  -->
+<!-- 
+MOVED TO KNOWN ISSUES:
+<p><b>Invalid Scores for Subset of Participants</b><br>
+Participants may include invalid sub-test and/or domain scores of <code>-9999</code>. Users should remove this participant data prior to analysis.
+</p> -->
