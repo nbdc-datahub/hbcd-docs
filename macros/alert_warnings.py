@@ -14,6 +14,7 @@ def build_alert_warning(inst):
     for i in alert_nums:
         title = inst.get(f"alert{i}")
         text = inst.get(f"alert{i}_text")
+        text = text.replace("\n", "<br>") 
 
         if not title and not text:
             continue

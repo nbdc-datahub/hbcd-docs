@@ -1,27 +1,12 @@
-# Bayley-4
+# Bayley Scales of Infant and Toddler Development
 
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Bayley Scales of Infant and Toddler Development, Fourth Edition</i></p>
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>ncl_ch_bayley</code></td></tr>
-<tr><td><b>Construct</b></td><td>Child Development (Cognitive, Language, and Motor)</td></tr>
-<tr><td><b>Study Visits</b></td><td>V04</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Child<br>
-<b>Method</b>: HBCD Study staff in person (60-90 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
-<td>
-<ul>
-    <li>HBCD Study staff were trained and certified by experienced Bayley administrators to ensure adherence to standardized procedures.</li>
-    <li>During testing, responses were entered into QGlobal (Pearson’s official scoring platform for the Bayley Scales), which automatically applied scoring rules and generated standardized scores.</li>
-    <li>Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations.</li>
-    <li>Completion rates were monitored across sites, with additional training provided when needed.</li>
-</ul>
-</td></tr>
-</tbody>
-</table>
+{{ readme(instruments.bayley_4) }}
+{{ alert_warning(instruments.bayley_4) }}
+{{ data_warning(instruments.bayley_4) }}
+{{ issues_banner_macro() }}
+
+---
 
 ---------------------------------------------
 

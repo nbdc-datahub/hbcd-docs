@@ -1,31 +1,8 @@
-# USDTL Nails Toxicology (Maternal)
+# USDTL Nails Toxicology
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>bio_bm_biosample_nails_results</code> (toxicology screen), <code>bio_bm_biosample_nails_type</code> (specimen type)</td></tr>
-<tr><td><b>Construct</b></td><td>Drug Panel, Environmental Exposure</td></tr>
-<tr><td><b>Study Visits</b></td><td>V01, V02</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Respondent</b>: Pregnant/postpartum person<br>
-<b>Method</b>: Self-collected under supervision or collected by research team (5 min estimated duration)
-</td></tr>
-<td><b>Quality Control</b></td><td>Examine assay ranges and categorical versus continuous measures</td></tr>
-</tbody>
-</table>
-
-{{ warning_banner_macro() }}
-<div class="collapsible-content">
-<p><b>USDTL Screening Updates</b><br>
-As of November 2025, USDTL no longer assayed sufentanil in the nail samples.</p>
-<p><b>Continuous Variables</b><br>
-Continuous variables should be interpreted with caution based on limits of quantification (LOQ), i.e. the minimum concentration at which metabolites can be reliably quantified. See <a href="#nails-table1">Urine Assay Thresholds for Analytes</a>.</p>
-<p><b>Updated Workflow</b><br>
-As of July 1, 2024, the nail processing workflow was updated to optimize specimen use and allow confirmation testing for low sample quantities. Prior to this update, remnants of ELISA extract were not used for confirmation when specimens had insufficient sample.</p> 
-<p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
-<p><b>Interpretation of “QNS” in Confirmatory Results When a Positive Is Expected</b><br>
-In some cases, a specimen’s initial test meets the threshold for a positive result, but the confirmatory result is reported as “QNS” (Quantity Not Sufficient). This occurs when there is not enough specimen to conduct a confirmatory test or a confirmatory test must be repeated (following quality control procedures, e.g. unacceptable chromatography, poor recovery, or when a sample result is &lt;5% of the previous specimen), but insufficient sample remains to complete the repeat test. Because the results could not be validated, this should be treated as a true quantity insufficiency.</p>
-</div>
-
+{{ readme(instruments.nails) }}
+{{ alert_warning(instruments.nails) }}
+{{ data_warning(instruments.nails) }}
 {{ issues_banner_macro() }}
 
 <p></p>
@@ -291,3 +268,32 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
     <p>Bandoli, G., Anunziata, F., Bogdan, R., Zilverstand, A., Chaiyachati, B. H., Gurka, K. K., Sullivan, E., Croff, J., & Bakhireva, L. N. (2024). Assessment of substance exposures in nail clipping samples: A systematic review. <i>Drug and Alcohol Dependence</i>, 254, 111038. <a href="https://doi.org/10.1016/j.drugalcdep.2023.111038" target="_blank">https://doi.org/10.1016/j.drugalcdep.2023.111038</a></p>
     <p>Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <a href="https://doi.org/10.1016/j.dcn.2024.101451">https://doi.org/10.1016/j.dcn.2024.101451</a></p>
 </div>
+
+
+
+
+<!-- {{ warning_banner_macro() }}
+<div class="collapsible-content">
+<p><b>USDTL Screening Updates</b><br>
+As of November 2025, USDTL no longer assayed sufentanil in the nail samples.</p>
+<p><b>Continuous Variables</b><br>
+Continuous variables should be interpreted with caution based on limits of quantification (LOQ), i.e. the minimum concentration at which metabolites can be reliably quantified. See <a href="#nails-table1">Urine Assay Thresholds for Analytes</a>.</p>
+<p><b>Updated Workflow</b><br>
+As of July 1, 2024, the nail processing workflow was updated to optimize specimen use and allow confirmation testing for low sample quantities. Prior to this update, remnants of ELISA extract were not used for confirmation when specimens had insufficient sample.</p> 
+<p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
+<p><b>Interpretation of “QNS” in Confirmatory Results When a Positive Is Expected</b><br>
+In some cases, a specimen’s initial test meets the threshold for a positive result, but the confirmatory result is reported as “QNS” (Quantity Not Sufficient). This occurs when there is not enough specimen to conduct a confirmatory test or a confirmatory test must be repeated (following quality control procedures, e.g. unacceptable chromatography, poor recovery, or when a sample result is &lt;5% of the previous specimen), but insufficient sample remains to complete the repeat test. Because the results could not be validated, this should be treated as a true quantity insufficiency.</p>
+</div> -->
+<!-- 
+<table class="table-no-vertical-lines" style="font-size: 1em;">
+<tbody>
+<tr><td><b>Table Name</b></td><td><code>bio_bm_biosample_nails_results</code> (toxicology screen), <code>bio_bm_biosample_nails_type</code> (specimen type)</td></tr>
+<tr><td><b>Construct</b></td><td>Drug Panel, Environmental Exposure</td></tr>
+<tr><td><b>Study Visits</b></td><td>V01, V02</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Respondent</b>: Pregnant/postpartum person<br>
+<b>Method</b>: Self-collected under supervision or collected by research team (5 min estimated duration)
+</td></tr>
+<td><b>Quality Control</b></td><td>Examine assay ranges and categorical versus continuous measures</td></tr>
+</tbody>
+</table> -->

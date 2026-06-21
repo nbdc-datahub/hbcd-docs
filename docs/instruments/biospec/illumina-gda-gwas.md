@@ -12,9 +12,9 @@
 Genomic data generated from the **Illumina Global Diversity Array (GDA GWAS)** is provided for both the birth parent and child. Samples are assayed from one sample, but may come from any visit (V01-V06) based on DNA yields. The dataset includes batch metadata and interlinked PLINK files (`.bed`, `.bim`, `.fam`) aligned to the **GRCh38/hg38 Build**.
 <!-- replaced: **hg19 genome build** -->
 
-## Concatenated Release Data
+## Release Data
 
-The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a> organized within the file tree [above](#illumina-global-diversity-gwas-array), including:
+The GDA GWAS dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a> including the following files:
 
 <table class="table-no-vertical-lines">
 <thead>

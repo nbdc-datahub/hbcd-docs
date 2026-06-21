@@ -1,36 +1,21 @@
 # Linked External Data
 
-**Geocoded Linked External Data (GLED) - Residential Address History** connects participants’ residential and care place addresses to external datasets. The data is computed for all visits (V01-V06); the current release contains data for visit V01 (including prenatal period up to 1 year before EDD).
-
-## Release Data
-
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p>As a condition of using these data, specified in the data use certification (DUC), you agreed not to identify any individual from whom data was obtained and not to identify their relatives.  To help maintain our participant’s anonymity, researchers should refrain from using geospatial information to identify actual geographic locations. To avoid identification, we have blurred the coded value to avoid any unique values that are shared by less than 10 individuals.</p>
-</div>
-
-{{ warning_banner_macro() }}
-<div class="collapsible-content">
-<p>The geocoded variables were based on intersections between residential addresses reported by participants and geospatial databases built by environmental and neighborhood through publicly available geospatial database, including CDC and EPA. Therefore, the coded values represent estimates about potential exposures or experience given where the participants have spent their time. The accuracy of such estimates would be influenced by multiple factors, including the validity of the original geospatial databases. For detailed information about how original geospatial databases were built by publicly available geospatial databases, including CDC and EPA, please refer to the data dictionary where the link to the source data is provided.</p> 
-</div>
-
+{{ readme(instruments.gled) }}
+{{ alert_warning(instruments.gled) }}
+{{ data_warning(instruments.gled) }}
 {{ issues_banner_macro() }}
-<p></p>
 
-The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD). The dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a>:
+---
 
-<pre class="folder-tree">
-hbcd/
-└── concatenated/ 
-    └── geocoding/
-        └── HBCD_address_history_geocoded_filtered.csv
-</pre>
-
-## Details
+## Instrument Details
 
 **Geocoded Linked External Data (GLED)** are external datasets linked to participants’ residential addresses. They serve as proxy measures of cumulative social, economic, and environmental contexts that may help explain individual differences in development ([Fan et al. 2021](https://doi.org/10.1016/j.dcn.2021.101030)). At each study visit, the Birth Parent or Primary Caregiver reports the child’s residential address history. Study staff collect this information in person or remotely (completion time: 5–15 minutes).
 
-Geocoded linkage measures were deliberately designed to be compatible with the ABCD Study data, with appropriate updates for year (i.e. many of ABCD variables trace back to 2010 Census data, whereas HBCD is updated to 2020 Census data). The table below lists the geocoded measures included in the release for HBCD, categorized by domain, and associated links to detailed measure documentation available on the [ABCD Data Documentation site](https://docs.abcdstudy.org/latest/documentation/non_imaging/) (descriptions for each individual variable are available via this <a href="../gled-dd.html" target="_blank">supplemental table</a>). See [Fan et al. 2021](https://doi.org/10.1016/j.dcn.2021.101030) for additional details regarding each domain/measure.
+Geocoded linkage measures were deliberately designed to be compatible with the ABCD Study data, with appropriate updates for year (i.e. many of ABCD variables trace back to 2010 Census data, whereas HBCD is updated to 2020 Census data). The table below lists the geocoded measures included in the release for HBCD, categorized by domain, and associated links to detailed measure documentation available on the ABCD Data Documentation site (descriptions for each individual variable are available via this <a href="../gled-dd.html" target="_blank">supplemental table</a>). See [Fan et al. 2021](https://doi.org/10.1016/j.dcn.2021.101030) for additional details regarding each domain/measure.
+
+## Release Data
+
+The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD). The dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a>:
 
 #### Geocoded Linkage Measures
 <div class="banner">
@@ -185,10 +170,6 @@ Geocoded linkage measures were deliberately designed to be compatible with the A
 </tr>
   </tbody>
 </table>
-
-## Quality Control
-
-Quality control procedures involve several steps. First, input addresses from the address history form are verified to ensure they fall within the correct geographical boundaries of the catchment area. Next, the completeness of the address history is evaluated to confirm that the recorded addresses trace back continuously to at least one year before the child’s estimated due date (EDD). Finally, the addresses are geocoded, and the success of these conversions is checked to ensure accurate linkage.
 
 ## References
 

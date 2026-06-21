@@ -1,6 +1,7 @@
 # USDTL Urine Toxicology (Maternal)
 
 {{ readme(instruments.urine) }}
+{{ alert_warning(instruments.urine) }}
 {{ data_warning(instruments.urine) }}
 {{ issues_banner_macro() }}
 

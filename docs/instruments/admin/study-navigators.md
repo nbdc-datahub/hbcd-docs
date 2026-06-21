@@ -17,19 +17,26 @@
 
 ## Instrument Details
 
-Recruitment and retention in studies involving pregnant individuals who use substances can be challenged by mistrust due to SUD-related stigma. To address this, the HBCD Study integrates **certified [peer support](https://www.sciencedirect.com/topics/nursing-and-health-professions/peer-group) specialists and/or other support professionals (case managers, doulas, social workers, etc.) i.e., Study Navigators**, at each site’s research team to provide participant-centered support throughout the study. Study Navigators may provide support specifically to families that are substance-involved or to a wider range of participants. The breadth of the provision of Study Navigator support is determined based on the needs and capacity of each HBCD site. For details on the conceptual framework, core skills, training, and team integration of support professionals, see [Hilliard et al. 2025](https://doi.org/10.1016/j.dcn.2024.101495).
+Recruitment and retention in studies involving pregnant individuals who use substances can be challenged by mistrust due to SUD-related stigma. To address this, the HBCD Study integrates certified [peer support](https://www.sciencedirect.com/topics/nursing-and-health-professions/peer-group) specialists and/or other support professionals (case managers, doulas, social workers, etc.) i.e., Study Navigators, to provide participant-centered support (substance-involved or otherwise) throughout the study. A “contact” includes all scheduled or unscheduled interactions relevant to the study or when providing additional support services to the participant. Contacts can be face-to-face interactions, phone calls, text chats, or other forms of communication between a participant and a research team member providing navigation services. The breadth of the provision of Study Navigator support is determined based on the needs and capacity of each HBCD site. For details on the conceptual framework, core skills, training, and team integration of support professionals, see [Hilliard et al. 2025](https://doi.org/10.1016/j.dcn.2024.101495).
 
-The **Study Navigator Contact Form** included in the data release captures visit-specific information when participant support is provided. HBCD Study Navigator Workgroup members created this form in 2022 by integrating contact form information from other behavioral health practices. The “Support Services Offered” section of the form is original and was created specifically for the HBCD study. This data is purely descriptive and thus not scored. It documents:
+The **Study Navigator Contact Form** captures visit-specific information when participant support is provided. The HBCD Study Navigator Workgroup created this form in 2022 by integrating contact form information from other behavioral health practices. The “Support Services Offered” section of the form is original and was created specifically for the HBCD study. This data is purely descriptive and thus not scored. It documents:
 
 - Visit details (date, time, location, scheduling, etc.)
 - Support topics discussed
 - Actions taken during each contact
 
-### What is a contact? 
-A “contact” includes all scheduled or unscheduled interactions relevant to the study or when providing additional support services to the participant. Contacts can be face-to-face interactions, phone calls, text chats, or other forms of communication between a participant and a research team member providing navigation services.
-
-### Navigation Services & Support Offered: Actions Taken 
-There are four options the Study Navigator can select to indicate actions taken, i.e. how they responded, for each topic, including:
+<div id="actions-taken" class="banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
+  <span class="emoji"><i class="fa fa-info-circle"></i></span>
+  <span class="text-with-link">
+<span class="text">Navigation Services & Support Offered: Actions Taken</span>
+  <a class="anchor-link" href="#actions-taken" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>There are four options the Study Navigator can select to indicate actions taken, i.e. how they responded, for each topic, including:</p>
 
 <table class="table-no-vertical-lines">
 <thead>
@@ -58,9 +65,11 @@ There are four options the Study Navigator can select to indicate actions taken,
 </tbody>
 </table>
 
-## Concatenated Release Data
+</div>
 
-The Study Navigator Contact dataset is provided as in a single file as <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a>. 
+## Release Data
+
+The Study Navigator Contact dataset is provided as a single <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a> file containing the following variables:
 
 <div id="metadata" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>

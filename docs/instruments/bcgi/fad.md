@@ -1,6 +1,6 @@
 # FAD (GF6+)
 
-<span class="readme-subtitle">Family Assessment Device</span>
+<!-- <span class="readme-subtitle">Family Assessment Device</span> -->
 
 {{ readme(instruments.fad) }}
 {{ alert_warning(instruments.fad) }}

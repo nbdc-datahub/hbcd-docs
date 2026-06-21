@@ -574,7 +574,7 @@ In this section we provide a brief overview of each study instrument provided in
 <tr>
   <td><a href="SED/geocoded-linkage" target="_blank">Geocoded Linkage</a> <i class="fas fa-layer-group table-icon"></i></td>
   <td>Neighborhood Measures</td>
-  <td><i>geocoded_linkage/</i></td>
+  <td><i>geocoding/</i></td>
 </tr>  
 <tr>
   <td><a href="SED/home21" target="_blank">HOME-21</a></td>

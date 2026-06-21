@@ -14,9 +14,9 @@ Protein abundance of inflammatory markers was measured using the **Olink Explore
 
 Olink data are reported as Normalized Protein eXpression (**NPX**) values. NPX is a proprietary, arbitrary unit that reflects relative protein abundance, with higher values indicating higher abundance. Values are reported on a log₂ scale, such that a difference of 1 NPX corresponds to a two-fold difference in protein abundance. Note that NPX values are only comparable for the same protein across samples and plates and cannot be used for comparisons between different proteins. See the [Panel Quick Guide](#olink-panel-quick-guide) at the end of this page for the full assay list.
 
-## Concatenated Release Data
+## Release Data
 
-The Olink dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated files</a> organized as displayed in the file tree above. Two versions of the dataset are provided to support different analysis workflows:
+The Olink dataset, provided as <a href="../../../datacuration/file-based-data/#concatenated-data" target="_blank">concatenated data</a>, are available in two versions to support different analysis workflows:
 
 <table class="table-no-vertical-lines">
 <thead> <tr> <th></th> <th><code><b>Olink_allplates_long.csv</b></code></th> <th><code><b>Olink_allplates_wide.csv</b></code></th> </tr> </thead> <tbody> <tr> <td><strong>Format</strong></td> <td>Long</td> <td>Wide</td> </tr> 

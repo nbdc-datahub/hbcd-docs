@@ -1,5 +1,11 @@
 # MacArthur-Bates CDI
 
+{{ readme(instruments.mb_cdi) }}
+{{ alert_warning(instruments.mb_cdi) }}
+{{ data_warning(instruments.mb_cdi) }}
+{{ issues_banner_macro() }}
+
+
 <p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>MacArthur-Bates Communicative Development Inventories, Words and Gestures</i></p>
 
 <table class="table-no-vertical-lines" style="font-size: 1em;">

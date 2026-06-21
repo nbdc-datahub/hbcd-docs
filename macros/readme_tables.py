@@ -11,6 +11,12 @@ def build_readme(inst):
             for item in qc
         ) + "</ul>"
 
+    full_name_value = inst.get("full_name")
+    acronym = inst.get("acronym")
+
+    if acronym:
+        full_name_value = f"{full_name_value} ({acronym})"
+
     type_value = inst.get("type", "")
     duration = inst.get("duration")
 
@@ -25,7 +31,7 @@ def build_readme(inst):
     return f"""
 <table class="table-no-vertical-lines readme-intro">
 <tbody>
-
+{table_row("Full Name", full_name_value)}
 {table_row("Table Name", inst.get("table_name"), code=True)}
 {table_row("Concatenated Data", inst.get('concatenated'), code=True)}
 {table_row("Construct", inst.get("construct"))}

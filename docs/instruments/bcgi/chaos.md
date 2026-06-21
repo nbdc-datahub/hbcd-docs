@@ -1,4 +1,4 @@
-# Confusion, Hubbub and Order Scale (CHAOS)
+# Confusion, Hubbub and Order Scale
 
 {{ readme(instruments.chaos) }}
 {{ alert_warning(instruments.chaos) }}

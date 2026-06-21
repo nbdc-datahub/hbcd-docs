@@ -1,29 +1,8 @@
-# Brief Infant Sleep Questionnaire (BISQ-SF)
+# Brief Infant Sleep Questionnaire
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>ph_cg_bisq</code></td></tr>
-<tr><td><b>Construct</b></td><td>Sleep</td></tr>
-<tr><td><b>Study Visits</b></td><td>V04</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Parent on Child<br>
-<b>Method</b>: Remote survey (5 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
-<td>Monitor data dashboard for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>
-</tbody>
-</table>
-
-{{ warning_banner_macro() }}
-<div class="collapsible-content">
-<p><b>Incomplete Summary Scores</b><br>
-Item-level responses are provided for the whole cohort; summary scores are present for all participants except those with data obtained in the month prior to the cutoff date for data inclusion (June 1st, 2025). Summary scores from <a href="http://babysleep.com">babysleep.com</a> will be available in subsequent releases.</p> 
-<p><b>Spanish Administration</b><br>
-Note that it is not currently possible to determine which participants were administered the Spanish version of the BISQ; a language field will be added in a future release.</p>
-<p><b>Appropriate Use</b><br>
-Scores are for research purposes only and are not for individual dissemination or clinical use.</p>
-</div>
-
+{{ readme(instruments.bisq) }}
+{{ alert_warning(instruments.bisq) }}
+{{ data_warning(instruments.bisq) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
