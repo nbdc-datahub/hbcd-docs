@@ -1,3 +1,99 @@
+illumina:
+  measure: Illumina Global Diversity GWAS Array
+  notes: null
+  acronym: GDA GWAS
+  full_name: null
+  domain: Biospecimen & Omics
+  table_name: null
+  construct: GWAS, EWAS, Transcriptome
+  concatenated: "└── concatenated/genetics/genotype_microarray/GDA/\n    ├── batch.info\n\
+    \    ├── hbcd.bed\n    ├── hbcd.bim\n    └── hbcd.fam"
+  visits: Samples are assayed from one sample (from parent and child), but may come
+    from any visit (V01-V06) based on DNA yields.
+  child_specific: null
+  type: Direct Assessment
+  respondent_notes: Both Birth Parent and Child
+  admin_notes: null
+  remote: null
+  duration: null
+  qc:
+  - Check that sampled ID matches from Sampled File and Lasso Database.
+  - Check that sample specific barcode matches between Sampled file and Lasso Database.
+  - Check that genomic sex matches with sex at birth.
+  - Check that genetic relatedness of each sample matches Lasso data (i.e., that IBD
+    is ~0.25 between the birth parent and child as well as siblings; evaluate potential
+    twins).
+  - Use FHET estimates to check for plate contamination.
+  - Visually inspect plate effects on principal component space derived from PC-Relate.
+  - GDC Genomics QC pipeline analysis - see details and summary statistics <a href="#gdc-genomics-qc-pipeline-analysis">below</a>.
+  alert1: Anonymity
+  alert1_text: Data users are prohibited from using HBCD data, including genomic data,
+    to identify participants or their relatives. You accessed these data under a Data
+    Use Certification (DUC) agreement in which you and your institution agreed that
+    you would not attempt to establish the individual identity of any study participants
+    or their relatives. You also agreed to adhere to a minimum cell threshold of 10
+    in any public reporting of data (i.e., publications, posters, or other presentations).
+    Protecting participants’ anonymity demonstrates respect for them and minimizes
+    their research-related risks.
+  alert2: Population Descriptors
+  alert2_text: The use of population descriptors in genetic research has been varied
+    and inconsistent. The National Academies of Science, Engineering, and Medicine
+    (NASEM) published a report on the use of population descriptors, such as ancestry,
+    race, ethnicity, and geography, in genomics (<a href="https://doi.org/10.17226/26902">https://doi.org/10.17226/26902</a>).
+    We encourage data users working with HBCD genomics data to consult the NASEM report
+    to understand the past and current use of population descriptors in genomics research
+    as well as current best practice recommendations when analyzing or reporting on
+    HBCD genomic data. Race and ethnicity represent social constructs that are conceptually
+    distinct from ancestry inferred from genetic data. Description of race and ethnicity
+    variables in HBCD may be found in <a href="../../demo/basicdemo/#race-ethnicity-variables"
+    target="_blank">Basic Demographics</a>.
+  alert3: Ethical Obligations to Minimize Risks
+  alert3_text: 'Analysts using HBCD data have ethical obligations to minimize risks,
+    including psychological, social, and economic risks, to research participants
+    who generously provided their data. Risk minimization includes avoiding stigmatizing
+    language when describing participants or the populations with which they identify,
+    their phenotypes, or their genetic risks. It also includes carefully and clearly
+    articulating limitations and caveats when reporting results and discussing how
+    the results should and should not be interpreted or generalized.
+
+
+    Results generated from HBCD data may be used to guide policy (e.g., for social
+    services, education, or public health interventions). Researchers should be aware
+    of policy implications and controversies related to their research. Some approaches
+    for ethically conducting and reporting research using genetic data are discussed
+    in <a href="https://doi.org/10.1002/hast.1477">Meyer et al. (2023)</a>, <i>Wrestling
+    with Social and Behavioral Genomics: Risks, Potential Benefits, and Ethical Responsibility</i>
+    (<b>The Hastings Center Report</b>).
+
+
+    Researchers cannot control how others, including members of the public and policy
+    makers, interpret scientific results we publish. However, we can take steps to
+    minimize the likelihood our results will be misinterpreted or overinterpreted.
+    In addition to clearly denoting limitations and caveats when reporting results,
+    specific approaches for working with genomic data in this context are discussed
+    in <a href="https://doi.org/10.1146/annurev-genom-011224-015733">Martshenko et
+    al. (2025)</a>, <i>Social and Behavioral Genomics: On the Ethics of the Research
+    and Its Downstream Applications</i> (<b>Annual Reviews Genomics and Human Genetics</b>).
+    For examples of brief documents that explain social and behavioral genomics for
+    non-experts, see “FAQs on Human Genomics Studies” at <a href="https://www.thehastingscenter.org/genomics-research-index/">https://www.thehastingscenter.org/genomics-research-index/</a>.'
+  warning1: Twins Present in Birth Parents
+  warning1_text: The dataset includes two birth parents who are monozygotic twins
+    (along with their respective families), which may complicate certain analyses.
+    The participant IDs associated with this twin pair are under internal review and
+    may be shared in a future update.
+  warning2: Data Exclusions
+  warning2_text: A total of 22 samples were excluded from data release (i.e., are
+    not contained in the public release files) due to poor genotyping quality (i.e.,
+    SNP Missingness >10%), unexpected unrelatedness with no confirmed use of reproductive
+    technology, unexpected relatedness (i.e., identical samples across adults), and
+    sex check mismatch.
+  warning3: null
+  warning3_text: null
+  warning4: null
+  warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
 foodins:
   measure: 2-item Food Insecurity
   notes: null
@@ -16,7 +112,12 @@ foodins:
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -47,13 +148,18 @@ aces:
   qc: QC is minimal as participants only report the total number of ACE events. Declines
     in ACE scores at later visits should be interpreted cautiously, as they may reflect
     inconsistent or inaccurate responding.
-  alert: This variable was only collected as a total ACE count, which means the specific
+  alert1: This variable was only collected as a total ACE count, which means the specific
     items participants experienced are unknown. Total ACE counts are strongly associated
     with a variety of health-related outcomes, and we used this data collection strategy
     to encourage more accurate reporting. Total ACE counts should not be considered
     indexes of childhood neglect and maltreatment because not all ACE items reflect
     this. It would be inappropriate to conclude that higher total ACE counts in specific
     populations reflect increased child abuse, for example.
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -85,7 +191,12 @@ assist:
   duration: 3-5 min
   qc: Response distributions are reviewed for outliers. For V1-V2, responses are cross-checked
     with TLFB for consistency in reported substance use.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -118,7 +229,12 @@ apa:
     Verification of scoring accuracy.
   - Summary statistics to examine item-level frequencies and total scores; Review
     of response distributions for potential outliers.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -148,7 +264,12 @@ bfy:
   duration: 4 min
   qc: Data dashboard was monitored for variable missingness, possible coding errors,
     scoring verification when needed, and data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -177,7 +298,7 @@ basic_demo:
   remote: null
   duration: null
   qc: null
-  alert: 'When using HBCD data, all data users must agree to responsible use as described
+  alert1: 'When using HBCD data, all data users must agree to responsible use as described
     in the DUC. When conceptualizing studies, analyzing data, and communicating findings
     from studies that use variables such as race, ethnicity, country of origin, and
     socioeconomic data, it is critical to consider strategies to avoid stigmatization
@@ -191,6 +312,11 @@ basic_demo:
     experiences or environmental exposures. HBCD measures a wide variety of social
     experiences and environmental exposures. In analyzing HBCD data, race/ethnicity
     should not be used as a proxy for measured variables.'
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -228,7 +354,7 @@ bayley_4:
     range and consistency checks, to identify potential errors or deviations.
   - Completion rates were monitored across sites, with additional training provided
     when needed.
-  alert: 'Performance of the Bayley Scales of Infant and Toddler Development, Fourth
+  alert1: 'Performance of the Bayley Scales of Infant and Toddler Development, Fourth
     Edition, reflects the child''s developmental status, but various factors might
     influence the results of the assessment that should be taken into account.
 
@@ -248,6 +374,11 @@ bayley_4:
     or English may impact a child''s performance. In addition, some items on the test
     may be impacted by environmental experiences related to the task or items used.
     In these cases, the test may underestimate the child''s developmental status.'
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -278,7 +409,12 @@ bfh:
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -308,7 +444,12 @@ bisq:
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -338,7 +479,12 @@ demographics_ch:
   duration: 10 min
   qc: 'Data dashboard was monitored for variable missingness, coding errors, and data
     consistency. High missingness was noted for income: this is in line with expectations.'
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -367,7 +513,12 @@ cabr_sf:
   remote: in-person
   duration: 2 min
   qc: Scoring verification, data consistency checks, and checks for missingness.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -400,7 +551,7 @@ chaos:
   - Verify scoring accuracy.
   - Review summary statistics (item frequencies, total scores).
   - Inspect response distributions for outliers.
-  alert: The HBCD dataset includes many variables that may be important for sound
+  alert1: The HBCD dataset includes many variables that may be important for sound
     and comprehensive analysis. The inclusion of additional variables will depend
     on the research question(s) and methodological approach. Users are encouraged
     to take time to explore the full range of available variables — especially those
@@ -408,6 +559,11 @@ chaos:
     modifiers — to ensure thoughtful and well-supported analytic decisions. Other
     important considerations may include developmental functioning, broader family
     supports, and early adverse and protective exposures.
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -436,7 +592,12 @@ employment:
   remote: either
   duration: 5 min
   qc: Data were inspected for missing response and proportions.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -466,7 +627,12 @@ demographics:
   duration: 10 min
   qc: 'Data dashboard was monitored for variable missingness, coding errors, and data
     consistency. High missingness was noted for income: this is in line with expectations.'
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -499,7 +665,12 @@ ptsd:
   - Verification of scoring accuracy.
   - Summary statistics to examine item-level frequencies and total scores.
   - Review of response distributions for potential outliers.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -528,7 +699,7 @@ erica:
   remote: in-person
   duration: 20-30 min
   qc: null
-  alert: 'The HBCD dataset includes many variables that may be important for sound
+  alert1: 'The HBCD dataset includes many variables that may be important for sound
     and comprehensive analysis. The inclusion of additional variables will depend
     on the research question(s) and methodological approach. Users are encouraged
     to take time to explore the full range of available variables—especially those
@@ -541,6 +712,11 @@ erica:
     The ERICA assesses variations in child behavior, parenting, and the caregiver-child
     relationship and should be interpreted within the context of the child''s age
     and developmental stage. This is not a clinical or diagnostic instrument.'
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: Integrated Analytic Dataset (REQUIRED)
   warning1_text: 'Prior to analysis, you must create a final integrated analytic dataset
     by merging the reliability codes (<code>mh_cg_erica_rel_3_9m</code>) into the
@@ -599,7 +775,12 @@ ecpromis_sleep:
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -629,7 +810,12 @@ ecpromis_pags:
   duration: 2 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -664,7 +850,7 @@ ecpromis:
   - Check age is within expected ranges.
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
-  alert: The HBCD dataset includes many variables that may be important for sound
+  alert1: The HBCD dataset includes many variables that may be important for sound
     and comprehensive analysis. The inclusion of additional variables will depend
     on the research question(s) and methodological approach. Users are encouraged
     to take time to explore the full range of available variables — especially those
@@ -672,6 +858,11 @@ ecpromis:
     modifiers — to ensure thoughtful and well-supported analytic decisions. Other
     important considerations may include developmental functioning, broader family
     supports, and early adverse and protective exposures.
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: Data Interpretation
   warning1_text: The ecPROMIS assesses normative variations in child behavior and
     should be interpreted within the context of the child's age and developmental
@@ -711,7 +902,7 @@ ecpromis_peer:
   - Check age is within expected ranges.
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
-  alert: The HBCD dataset includes many variables that may be important for sound
+  alert1: The HBCD dataset includes many variables that may be important for sound
     and comprehensive analysis. The inclusion of additional variables will depend
     on the research question(s) and methodological approach. Users are encouraged
     to take time to explore the full range of available variables — especially those
@@ -719,6 +910,11 @@ ecpromis_peer:
     modifiers — to ensure thoughtful and well-supported analytic decisions. Other
     important considerations may include developmental functioning, broader family
     supports, and early adverse and protective exposures.
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -751,7 +947,7 @@ ecpromis_selfreg:
   - Check age is within expected ranges.
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
-  alert: The HBCD dataset includes many variables that may be important for sound
+  alert1: The HBCD dataset includes many variables that may be important for sound
     and comprehensive analysis. The inclusion of additional variables will depend
     on the research question(s) and methodological approach. Users are encouraged
     to take time to explore the full range of available variables — especially those
@@ -759,6 +955,11 @@ ecpromis_selfreg:
     modifiers — to ensure thoughtful and well-supported analytic decisions. Other
     important considerations may include developmental functioning, broader family
     supports, and early adverse and protective exposures.
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -791,7 +992,12 @@ epds:
   - Verification of scoring accuracy.
   - Summary statistics to examine item-level frequencies and total scores.
   - Review of response distributions for potential outliers.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -821,7 +1027,12 @@ discr:
   duration: 3 min
   qc: Data dashboard monitored for variable missingness, possible coding errors, and
     data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -856,7 +1067,7 @@ fad:
   - Review summary statistics and visualizations (item frequencies, scores distributions,
     prorated scoring).
   - Cronbach’s alpha calculated to assess inter-item reliability.
-  alert: The HBCD dataset includes many variables that may be important for sound
+  alert1: The HBCD dataset includes many variables that may be important for sound
     and comprehensive analysis. The inclusion of additional variables will depend
     on the research question(s) and methodological approach. Users are encouraged
     to take time to explore the full range of available variables — especially those
@@ -864,6 +1075,11 @@ fad:
     modifiers — to ensure thoughtful and well-supported analytic decisions. Other
     important considerations may include developmental functioning, broader family
     supports, and early adverse and protective exposures.
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -893,7 +1109,12 @@ growth:
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -924,7 +1145,12 @@ home21:
   duration: 10 min
   qc: Subject matter experts constructed an algorithm to verify and correct scores
     computed automatically.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -953,7 +1179,12 @@ chem_exp:
   remote: either
   duration: 5 min
   qc: Response proportions and unusual missing patterns were reviewed.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -988,7 +1219,19 @@ ibqr:
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
   - Assess reliability (Cronbach’s α).
-  alert: null
+  alert1: The HBCD dataset includes many variables that may be important for sound
+    and comprehensive analysis. The inclusion of additional variables will depend
+    on the research question(s) and methodological approach. Users are encouraged
+    to take time to explore the full range of available variables — especially those
+    that may serve as controls, contextual indicators, confounders, mechanisms, or
+    modifiers — to ensure thoughtful and well-supported analytic decisions. Other
+    important considerations may include developmental functioning, broader family
+    supports, and early adverse and protective exposures.
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: Interpreting Data
   warning1_text: The IBQ-R (VSF)+BI and ECBQ (VSF)+BI measure normative variations
     in infant and child behavior and should be interpreted in the context of the child’s
@@ -1034,7 +1277,12 @@ nutrition:
   duration: 10 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1067,7 +1315,12 @@ inf_sensor_q:
     common cause of missing responses was caregiver non-response, and less commonly
     due to human error (preferred contact/contact method not selected by RA) or technological
     malfunction.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1096,7 +1349,12 @@ lead_exp:
   remote: either
   duration: 5 min
   qc: Response proportions and unusual missing patterns were reviewed.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1125,7 +1383,12 @@ mb_cdi:
   remote: in-person
   duration: 20-60 min
   qc: null
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1155,7 +1418,12 @@ med_hist:
   duration: 10 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1184,7 +1452,12 @@ mri_forms:
   remote: in-person
   duration: null
   qc: Brief visual review of data prior to release to check for errors and missingness.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1218,7 +1491,12 @@ maps_tl:
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
   - Assess reliability (Cronbach’s α).
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1250,7 +1528,12 @@ mlds:
   duration: 3-10 min
   qc: Monitor frequency of decline to answer and completeness during data collection
     (initial data showed that about 10% of questionnaires were not complete).
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1286,7 +1569,12 @@ olink:
     that did not meet Olink’s quality control criteria (N=10) have values of <em>0</em>
     for <code>{ASSAY}_Count</code> and <em>NA</em> for <code>ExtNPX</code>, <code>NPX</code>,
     and <code>PCNormalizedNPX</code>.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1316,7 +1604,12 @@ ehits:
   duration: 2 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1345,7 +1638,12 @@ fam_mh:
   remote: either
   duration: 5 min
   qc: Response distributions reviewed for outliers
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1374,7 +1672,12 @@ nbhsaf:
   remote: either
   duration: 1 min
   qc: Data dashboard monitored for missingness.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1403,7 +1706,12 @@ prescan_q:
   remote: null
   duration: null
   qc: Data dashboard monitored for variable missingness, coding errors, and data consistency
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1433,7 +1741,46 @@ strsup:
   duration: 4 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
+  warning1: null
+  warning1_text: null
+  warning2: null
+  warning2_text: null
+  warning3: null
+  warning3_text: null
+  warning4: null
+  warning4_text: null
+  warning5: null
+  warning5_text: null
+  Column 29: null
+paces:
+  measure: Protective and Compensatory Experience
+  notes: null
+  acronym: PACEs
+  full_name: null
+  domain: Social & Environmental Determinants
+  table_name: null
+  construct: Protective Factors
+  concatenated: null
+  visits: V01
+  child_specific: null
+  type: null
+  respondent_notes: null
+  admin_notes: null
+  remote: null
+  duration: null
+  qc: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1463,7 +1810,12 @@ screenq:
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1492,7 +1844,12 @@ shs:
   remote: either
   duration: 1 min
   qc: Response missingness and proportions were reviewed.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1522,7 +1879,12 @@ spm_2:
   duration: 12 min
   qc: Periodic review of data capture to ensure that items are being fully completed
     and spot checks on scoring to assure algorithms are being correctly employed.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1556,12 +1918,17 @@ study_nav:
     Study Navigation Contact Form Guide</a>. Data review and cleaning has occurred
     3 times (September 2024, February 2025, and November 2025). Minor updates to the
     form and the form guide were completed in September 2024 and October 2025.
-  alert: Study Navigators were strongly encouraged, but not required, to fill out
+  alert1: Study Navigators were strongly encouraged, but not required, to fill out
     the Study Navigator Contact Form. Guidance was provided to complete the contact
     form as soon as possible (within 24 hours) after a contact with a participant.
     Study Navigators were also provided with the option to complete the form to document
     multiple contacts within a specific time or for a specific participant (text messages,
     phone calls, etc.). The data is subject to recall bias.
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: Background Information
   warning1_text: The Study Navigator Contact Form was created for the HBCD Study as
     a document for characterizing participant contacts and support. The form was developed
@@ -1599,7 +1966,12 @@ subst:
   duration: 5 min
   qc: Response distributions are reviewed for outliers and additionally cross-checked
     with ASSIST V1/V2 to ensure consistency in reported substances.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1629,7 +2001,12 @@ tlfb:
   duration: 10 min
   qc: Response distributions are reviewed for outliers and additionally cross-checked
     with ASSIST V1/V2 to ensure consistency in reported substances.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1668,7 +2045,12 @@ tic:
     information across multiple forms, and TIC being filled out for a later time point
     than when the transition occurred (e.g., V06 TIC available for TIC that occurred
     at V02).
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1698,17 +2080,40 @@ nails:
   remote: in-person
   duration: 5 min
   qc: Examine assay ranges and categorical versus continuous measures
-  alert: null
-  warning1: null
-  warning1_text: null
-  warning2: null
-  warning2_text: null
-  warning3: null
-  warning3_text: null
-  warning4: null
-  warning4_text: null
-  warning5: null
-  warning5_text: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
+  warning1: USDTL Screening Updates
+  warning1_text: As of November 2025, USDTL no longer assayed sufentanil in the nail
+    samples.
+  warning2: Continuous Variables
+  warning2_text: Continuous variables should be interpreted with caution based on
+    limits of quantification (LOQ), i.e. the minimum concentration at which metabolites
+    can be reliably quantified. See <a href="#nails-table1">Urine Assay Thresholds
+    for Analytes</a>.
+  warning3: Updated Workflow
+  warning3_text: As of July 1, 2024, the nail processing workflow was updated to optimize
+    specimen use and allow confirmation testing for low sample quantities. Prior to
+    this update, remnants of ELISA extract were not used for confirmation when specimens
+    had insufficient sample.
+  warning4: Large Gaps Between Collection and Analysis Dates
+  warning4_text: A substantial number of samples show unusually long intervals between
+    collection and analysis (e.g., over 100–300 days, compared to the 30-day limit
+    specified by internal SOPs). We are working to determine whether this reflects
+    a data entry or site-level issue and will provide an update once more information
+    is available.
+  warning5: Interpretation of “QNS” in Confirmatory Results When a Positive Is Expected
+  warning5_text: In some cases, a specimen’s initial test meets the threshold for
+    a positive result, but the confirmatory result is reported as “QNS” (Quantity
+    Not Sufficient). This occurs when there is not enough specimen to conduct a confirmatory
+    test or a confirmatory test must be repeated (following quality control procedures,
+    e.g. unacceptable chromatography, poor recovery, or when a sample result is <5%
+    of the previous specimen), but insufficient sample remains to complete the repeat
+    test. Because the results could not be validated, this should be treated as a
+    true quantity insufficiency.
   Column 29: null
 urine:
   measure: USDTL Urine Toxicology (Maternal)
@@ -1727,7 +2132,12 @@ urine:
   remote: in-person
   duration: 5 min
   qc: Examine assay ranges and categorical versus continuous measures
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: USDTL Screening Updates
   warning1_text: As of May 19, 2025, USDTL transitioned the initial urine screening
     test for fentanyl and sufentanil from LDTD to ELISA. As of November 2025, urine
@@ -1772,7 +2182,12 @@ via:
   qc: The VIA is administered only if the caregiver, spouse/partner, or any of the
     child's grandparents were born outside the U.S. If all are U.S.-born, the survey
     platform (REDCap) automatically ends the questionnaire after the screening questions.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1811,7 +2226,12 @@ vineland_3:
     and range checks of all summary variables were completed.
   - Completion rates were monitored for the overall consortium and at the site level
     to address any concerns.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1840,7 +2260,12 @@ visit_info:
   remote: null
   duration: null
   qc: null
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null
@@ -1872,7 +2297,12 @@ vision:
   duration: <1 min
   qc: Data are reviewed to verify that sites obtain a valid screening outcome (PASS
     or REFER). The device does not generate results if it is used incorrectly.
-  alert: null
+  alert1: null
+  alert1_text: null
+  alert2: null
+  alert2_text: null
+  alert3: null
+  alert3_text: null
   warning1: null
   warning1_text: null
   warning2: null

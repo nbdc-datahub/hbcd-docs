@@ -7,6 +7,15 @@ os.chdir(os.getcwd())
 INPUT = "instruments.csv"
 OUTPUT = "../../docs/data/instruments.yml"
 
+# Download google sheet as csv locally
+sheet_id = "1_2TJ83VIMJMzW5LAgW-AmbmjiOkuT1-3WAvF-RS5g18"
+g_id = "64448846"
+
+url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={g_id}"
+
+df = pd.read_csv(url)
+df.to_csv("instruments.csv", index=False)
+
 # read all values as strings so that info like total number of items isn't converted from '25' to '25.0'
 df = pd.read_csv(INPUT, dtype=str)
 
