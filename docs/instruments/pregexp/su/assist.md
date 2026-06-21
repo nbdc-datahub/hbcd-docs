@@ -66,18 +66,8 @@
 </tbody>
 </table>
 
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p><b>V1 & V2</b><br>
-Responsible use of prenatal drug exposure data requires thoughtful interpretation of exposure-related outcomes in the context of measured and unmeasured confounders. These confounders include, but are not limited to, phenotypic risks associated with persistent alcohol, tobacco, and other drug use during pregnancy by birthing parents (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2010</a>), and confounding by familial risk from within-family studies (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>).</p>
-<p>Finally, unwarranted speculation about ‘neural bases of behavior’ form differences in neuroimaging between exposed and unexposed children in the absence of differences in behavioral performance can exacerbate stigma already faced by birthing parents with substance use disorders and their children (<a href="https://doi.org/10.1016/j.ntt.2015.07.002">McAllister & Hart 2015</a>).</p> 
-</div>
-
-{{ warning_banner_macro() }}
-<div class="collapsible-content">
-<p>It was difficult for some participants to self-report the typical size of a single drink (in oz) to capture ‘standard drinks’ of alcohol for ASSIST, leading to some reports falling outside the expected range. Similarly, reporting the frequency of use for substances like electronic cigarette devices proved difficult, resulting in outliers. While sites were queried on these outliers, participants could not always be re-contacted for clarification.</p> 
-</div>
-
+{{ alert_warning(instruments.assist) }}
+{{ data_warning(instruments.assist) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
@@ -178,11 +168,7 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
     </ul>
 </div>
 
-
-{{ scoring_banner_macro() }}
-<div class="collapsible-content">
-<p>For each substance, participants indicate whether they had ever used it and, if endorsed, frequency of use with options: 0 (Never), 1 (Once or Twice), 2 (Monthly), 3 (Weekly), or 4 (Daily or Almost Daily). For substances reported as used pre-pregnancy, during pregnancy, and end-pregnancy, participants were asked about modes of use and typical quantities/amounts of consumption for alcohol and opioids (if applicable).</p>
-</div>
+{{ scoring(instruments.assist) }}
 
 ## References
 <div class="references">
@@ -210,3 +196,20 @@ Finally, the Time Line Follow Back (TLFB) was triggered when substance use was r
     Wakeman, S. E., Bryant, A., & Harrison, N. (2022). Redefining child protection. <i>Obstetrics and Gynecology</i>, <b>140</b>(2), 167–173. <a href="https://doi.org/10.1097/aog.0000000000004786" target="_blank">https://doi.org/10.1097/aog.0000000000004786</a>
   </p>
 </div>
+
+
+
+
+
+
+<!-- {{ alert_banner_macro() }}
+<div class="collapsible-content">
+<p><b>V1 & V2</b><br>
+Responsible use of prenatal drug exposure data requires thoughtful interpretation of exposure-related outcomes in the context of measured and unmeasured confounders. These confounders include, but are not limited to, phenotypic risks associated with persistent alcohol, tobacco, and other drug use during pregnancy by birthing parents (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2010</a>), and confounding by familial risk from within-family studies (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>).</p>
+<p>Finally, unwarranted speculation about ‘neural bases of behavior’ form differences in neuroimaging between exposed and unexposed children in the absence of differences in behavioral performance can exacerbate stigma already faced by birthing parents with substance use disorders and their children (<a href="https://doi.org/10.1016/j.ntt.2015.07.002">McAllister & Hart 2015</a>).</p> 
+</div>
+
+{{ warning_banner_macro() }}
+<div class="collapsible-content">
+<p>It was difficult for some participants to self-report the typical size of a single drink (in oz) to capture ‘standard drinks’ of alcohol for ASSIST, leading to some reports falling outside the expected range. Similarly, reporting the frequency of use for substances like electronic cigarette devices proved difficult, resulting in outliers. While sites were queried on these outliers, participants could not always be re-contacted for clarification.</p> 
+</div> -->

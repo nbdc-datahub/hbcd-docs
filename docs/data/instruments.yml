@@ -18,6 +18,7 @@ foodins:
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -57,6 +58,7 @@ aces:
   qc: QC is minimal as participants only report the total number of ACE events. Declines
     in ACE scores at later visits should be interpreted cautiously, as they may reflect
     inconsistent or inaccurate responding.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: This variable was only collected as a total ACE count, which means the specific
@@ -103,15 +105,38 @@ assist:
   duration: 3-5 min
   qc: Response distributions are reviewed for outliers. For V1-V2, responses are cross-checked
     with TLFB for consistency in reported substance use.
-  scoring: null
-  alert1_title: null
-  alert1: null
+  hbcd_mods: null
+  scoring: 'For each substance, participants indicate whether they had ever used it
+    and, if endorsed, frequency of use with options: 0 (Never), 1 (Once or Twice),
+    2 (Monthly), 3 (Weekly), or 4 (Daily or Almost Daily). For substances reported
+    as used pre-pregnancy, during pregnancy, and end-pregnancy, participants were
+    asked about modes of use and typical quantities/amounts of consumption for alcohol
+    and opioids (if applicable).'
+  alert1_title: V1 & V2
+  alert1: 'Responsible use of prenatal drug exposure data requires thoughtful interpretation
+    of exposure-related outcomes in the context of measured and unmeasured confounders.
+    These confounders include, but are not limited to, phenotypic risks associated
+    with persistent alcohol, tobacco, and other drug use during pregnancy by birthing
+    parents (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et
+    al., 2010</a>), and confounding by familial risk from within-family studies (<a
+    href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>).</p>
+
+    <p>Finally, unwarranted speculation about ‘neural bases of behavior’ form differences
+    in neuroimaging between exposed and unexposed children in the absence of differences
+    in behavioral performance can exacerbate stigma already faced by birthing parents
+    with substance use disorders and their children (<a href="https://doi.org/10.1016/j.ntt.2015.07.002">McAllister
+    & Hart 2015</a>).'
   alert2_title: null
   alert2: null
   alert3_title: null
   alert3: null
   warning1_title: null
-  warning1: null
+  warning1: It was difficult for some participants to self-report the typical size
+    of a single drink (in oz) to capture ‘standard drinks’ of alcohol for ASSIST,
+    leading to some reports falling outside the expected range. Similarly, reporting
+    the frequency of use for substances like electronic cigarette devices proved difficult,
+    resulting in outliers. While sites were queried on these outliers, participants
+    could not always be re-contacted for clarification.
   warning2_title: null
   warning2: null
   warning3_title: null
@@ -144,6 +169,7 @@ apa:
     Verification of scoring accuracy.
   - Summary statistics to examine item-level frequencies and total scores; Review
     of response distributions for potential outliers.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -151,8 +177,19 @@ apa:
   alert2: null
   alert3_title: null
   alert3: null
-  warning1_title: null
-  warning1: null
+  warning1_title: Consideration of Mental Health Symptoms Experienced During Pregnancy
+  warning1: The co-occurrence of psychiatric symptoms and substance use during pregnancy
+    is well-documented (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey
+    et al., 2011</a>, <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">Massey
+    et al., 2012</a>). Phenotypic risk in birthing parents may affect offspring neurodevelopment
+    through both prenatal and postnatal mechanisms, beyond direct exposure alone (<a
+    href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>, <a
+    href="https://doi.org/10.1016/j.ntt.2015.11.010">Massey et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2018.02.003">Massey
+    et al., 2018</a>). These factors may confound associations between exposures and
+    neuroimaging or neurodevelopmental outcomes, but they also represent malleable
+    targets for prevention and early intervention. When possible, incorporating parental
+    mental health symptoms as covariates offers a robust strategy to account for these
+    confounding influences.
   warning2_title: null
   warning2: null
   warning3_title: null
@@ -174,7 +211,7 @@ bfy:
   visits: V01, V05, V07
   child_specific: 'No'
   type: Parent Interview
-  administration: null
+  administration: HBCD Study Staff
   respondent_category: Parent on Self
   respondent: null
   admin_notes: null
@@ -182,6 +219,13 @@ bfy:
   duration: 4 min
   qc: Data dashboard was monitored for variable missingness, possible coding errors,
     scoring verification when needed, and data consistency.
+  hbcd_mods: '<ul>  <li>Removed Medicaid coverage item (collected elsewhere in the
+    HBCD Study).</li>  <li>Updates to instruction text for receipt of services items
+    (“Have you received any of these services in the past 12 months?”) and added response
+    option (“Free or reduced school lunch”).</li>  <li>Updated eviction instruction:
+    “In the past 12 months, have you EVER been forced to leave or were evicted from
+    your home?”</li>  <li>Added response options across items: “Don’t know” and “Decline
+    to answer.”</li></ul>'
   scoring: null
   alert1_title: null
   alert1: null
@@ -219,6 +263,7 @@ basic_demo:
   remote: null
   duration: null
   qc: null
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: 'When using HBCD data, all data users must agree to responsible use as described
@@ -278,6 +323,7 @@ bayley_4:
     range and consistency checks, to identify potential errors or deviations.
   - Completion rates were monitored across sites, with additional training provided
     when needed.
+  hbcd_mods: null
   scoring: Bayley scores are generated automatically using QGlobal, Pearson’s official
     scoring platform for the Bayley Scales. Scores reflect the standardized scoring
     procedures implemented by Pearson, and no additional manual scoring or modification
@@ -340,6 +386,7 @@ bfh:
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -381,6 +428,8 @@ bisq:
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
+  hbcd_mods: When the child is mentioned, pronouns were changed from "he/she" to “the
+    child” or gender-neutral pronouns for gender neutrality.
   scoring: 'The BISQ-SF is scored in collaboration with the instrument developers
     (<a href="https://www.babysleep.com/BISQ/">https://www.babysleep.com/BISQ/</a>).
     Parent responses are uploaded to the Baby Sleep team who scores the instrument
@@ -438,6 +487,7 @@ demographics_ch:
   duration: 10 min
   qc: 'Data dashboard was monitored for variable missingness, coding errors, and data
     consistency. High missingness was noted for income: this is in line with expectations.'
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -475,7 +525,20 @@ cabr_sf:
   remote: in-person
   duration: 2 min
   qc: Scoring verification, data consistency checks, and checks for missingness.
-  scoring: null
+  hbcd_mods: 'Language was updated to use gender-neutral terminology in the definition
+    of intimate partner in the methods section (e.g.,"Current or former husband, partner
+    or boyfriend/girlfriend" was replaced with "spouse, partner, significant other").
+    Researcher should consider noting this in publications using this data.
+
+
+    “Don’t know” and “Decline to answer” were added as response options for HBCD.'
+  scoring: The CABr-SF has 16 questions. Question 1 is a gateway ("Have you ever been
+    in an intimate relationship?"). Questions 2–16 (15 items) are abuse experience
+    items. The summary score is computed as the mean of the abuse experience responses
+    (questions 2-16), multiplied by 15; summary scores are only calculated if participants
+    responded to at least 11 of the 15 abuse experience items. Note that in the updated
+    scoring procedures, "Don’t Know" and "Decline to answer" are regarded as missing
+    or non-responses.
   alert1_title: null
   alert1: null
   alert2_title: null
@@ -483,7 +546,9 @@ cabr_sf:
   alert3_title: null
   alert3: null
   warning1_title: null
-  warning1: null
+  warning1: Users should not attempt to create their own summary scores when less
+    than 11 items are answered. Please refer to <a href="">Ford-Gilboe et al. 2016</a>
+    for scoring guidance.
   warning2_title: null
   warning2: null
   warning3_title: null
@@ -516,6 +581,7 @@ chaos:
   - Verify scoring accuracy.
   - Review summary statistics (item frequencies, total scores).
   - Inspect response distributions for outliers.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: The HBCD dataset includes many variables that may be important for sound
@@ -560,6 +626,7 @@ employment:
   remote: either
   duration: 5 min
   qc: Data were inspected for missing response and proportions.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -598,6 +665,7 @@ demographics:
   duration: 10 min
   qc: 'Data dashboard was monitored for variable missingness, coding errors, and data
     consistency. High missingness was noted for income: this is in line with expectations.'
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -628,7 +696,7 @@ ptsd:
   visits: V01, V02, V03
   child_specific: 'No'
   type: Parent Survey
-  administration: null
+  administration: Self-administered in-person or remotely
   respondent_category: Parent on Self
   respondent: Pregnant Participant/Birth Parent (as applicable) or Primary Caregiver
   admin_notes: null
@@ -639,9 +707,23 @@ ptsd:
   - Verification of scoring accuracy.
   - Summary statistics to examine item-level frequencies and total scores.
   - Review of response distributions for potential outliers.
+  hbcd_mods: In the HBCD study, a ‘Decline to answer’ option was added to all items.
+    A ‘Don’t know’ option was also available early in data collection, but was later
+    removed.
   scoring: null
-  alert1_title: null
-  alert1: null
+  alert1_title: Consideration of Mental Health Symptoms Experienced During Pregnancy
+  alert1: The co-occurrence of psychiatric symptoms and substance use during pregnancy
+    is well-documented (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey
+    et al., 2011</a>, <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">Massey
+    et al., 2012</a>). Phenotypic risk in birthing parents may affect offspring neurodevelopment
+    through both prenatal and postnatal mechanisms, beyond direct exposure alone (<a
+    href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>, <a
+    href="https://doi.org/10.1016/j.ntt.2015.11.010">Massey et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2018.02.003">Massey
+    et al., 2018</a>). These factors may confound associations between exposures and
+    neuroimaging or neurodevelopmental outcomes, but they also represent malleable
+    targets for prevention and early intervention. When possible, incorporating parental
+    mental health symptoms as covariates offers a robust strategy to account for these
+    confounding influences.
   alert2_title: null
   alert2: null
   alert3_title: null
@@ -663,19 +745,23 @@ erica:
   acronym: ERICA
   full_name: Early Regulation in Context Assessment
   domain: Behavior & Caregiver-Child Interactions
-  table_name: 'Primary coding data file: mh_cg_erica_3_9m Reliability codes: mh_cg_erica_rel_3_9m'
+  table_name: 'mh_cg_erica_3_9m (Primary coding data file)
+
+    mh_cg_erica_rel_3_9m (Reliability codes)'
   construct: Emotional Regulation, Parenting, Caregiver-Child Relationship
   concatenated: null
   visits: V03
   child_specific: 'Yes'
   type: Parent Interview
-  administration: null
+  administration: HBCD Study Staff
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: in-person
   duration: 20-30 min
-  qc: null
+  qc: QC procedures were conducted for ERICA site-level administration and centralized
+    coding of ERICA videos - <a href="#qc">expand infobox below for details →</a>
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: 'The HBCD dataset includes many variables that may be important for sound
@@ -703,19 +789,11 @@ erica:
     this will not be necessary, as the integrated, analytic data set will be created
     prior to release.
 
-    <br>
-
-    Download the instructions and relevant participant lists <i>(in <a href="https://hbcd-docs-private.lassoinformatics.com">HBCD
-    Private Release Notes</a> - DUC access required)</i> as follows:
-
-    <ul>
-
-    <li><a href="../ERICA_2.1_Integrated_Analytic_Data_INSTRUCTIONS.pdf" target="_blank">Integration
-    Instructions (PDF)</a></li>
-
-    <li><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv"><code>ERICA_2.1_DataError_EXCLUSIONS.csv</code></a></li>
-
-    <li><a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_Analytic_REMOVALS.csv"><code>ERICA_2.1_Analytic_REMOVALS.csv</code></a></li></ul>'
+    See the <a href="../ERICA_2.1_Integrated_Analytic_Data_INSTRUCTIONS.pdf" target="_blank">Integration
+    Instructions</a> PDF for details. Relevant participant lists can be downloaded
+    from the <a href="https://hbcd-docs-private.lassoinformatics.com">HBCD Private
+    Release Notes</a> (DUC access required), including <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv"><code>ERICA_2.1_DataError_EXCLUSIONS.csv</code></a>
+    and <a href="https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_Analytic_REMOVALS.csv"><code>ERICA_2.1_Analytic_REMOVALS.csv</code></a>.'
   warning2_title: null
   warning2: Data Release 2.1 includes data from ERICA administrations completed as
     part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA
@@ -734,53 +812,6 @@ erica:
   warning5: The code for "caregiver irritable behavior" in Data Release 2.1 has a
     low base rate because few caregivers exhibited elevated irritability. We recommend
     dichotomizing (0 = 0 and >0 = 1) for analysis.
-  Column 29: null
-ecpromis_sleep:
-  measure: ecPROMIS - Sleep
-  notes: null
-  acronym: ecPROMIS - Sleep
-  full_name: ecPROMIS - Parent Report Sleep Problems
-  domain: Physical Health
-  table_name: ph_cg_pms__sleep
-  construct: Sleep
-  concatenated: null
-  visits: V04, V06
-  child_specific: 'Yes'
-  type: Parent Survey
-  administration: HBCD Study Staff or Self
-  respondent_category: Parent on Child
-  respondent: Birth Parent or Primary Caregiver
-  admin_notes: null
-  remote: either
-  duration: 1 min
-  qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
-    verification when needed, and data consistency.
-  scoring: 'The questions included in the HBCD protocol are the PROMIS Early Childhood
-    Parent Report Sleep Problems - Short Form 8a. All questions must be answered in
-    order to produce a valid score using the scoring tables provided. If a participant
-    has skipped a question, use the <a href="https://www.assessmentcenter.net/ac_scoringservice">HealthMeasures
-    Scoring Service</a> to generate a final score.
-
-
-    See additional/supplemental scoring document <a href="https://drive.google.com/open?id=1ROIfz0CKm_kqa_CyrZDEMcKMnTqDXJe9">here</a>.'
-  alert1_title: null
-  alert1: null
-  alert2_title: null
-  alert2: null
-  alert3_title: null
-  alert3: null
-  warning1_title: null
-  warning1: Note that summary scores are currently absent from the release data and
-    will be added in the future - see <a href="../../../changelog/issues-updates/#pending-updates"
-    target="_blank">Pending Updates</a>.
-  warning2_title: null
-  warning2: null
-  warning3_title: null
-  warning3: null
-  warning4_title: null
-  warning4: null
-  warning5_title: null
-  warning5: null
   Column 29: null
 ecpromis_pags:
   measure: ecPROMIS - Physical Activity/Greenspace
@@ -802,6 +833,7 @@ ecpromis_pags:
   duration: 2 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
+  hbcd_mods: null
   scoring: 'The first 5 items are used to create a Physical Activity T-score, and
     the remaining 2 items are individually scored using the response options. <i>Note
     that the item-level PA scores are currently on a 0 to 4 scale and need to be converted
@@ -821,6 +853,54 @@ ecpromis_pags:
   alert3: null
   warning1_title: null
   warning1: null
+  warning2_title: null
+  warning2: null
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  Column 29: null
+ecpromis_sleep:
+  measure: ecPROMIS - Sleep
+  notes: null
+  acronym: ecPROMIS - Sleep
+  full_name: ecPROMIS - Parent Report Sleep Problems
+  domain: Physical Health
+  table_name: ph_cg_pms__sleep
+  construct: Sleep
+  concatenated: null
+  visits: V04, V06
+  child_specific: 'Yes'
+  type: Parent Survey
+  administration: HBCD Study Staff or Self
+  respondent_category: Parent on Child
+  respondent: Birth Parent or Primary Caregiver
+  admin_notes: null
+  remote: either
+  duration: 1 min
+  qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
+    verification when needed, and data consistency.
+  hbcd_mods: null
+  scoring: 'The questions included in the HBCD protocol are the PROMIS Early Childhood
+    Parent Report Sleep Problems - Short Form 8a. All questions must be answered in
+    order to produce a valid score using the scoring tables provided. If a participant
+    has skipped a question, use the <a href="https://www.assessmentcenter.net/ac_scoringservice">HealthMeasures
+    Scoring Service</a> to generate a final score.
+
+
+    See additional/supplemental scoring document <a href="https://drive.google.com/open?id=1ROIfz0CKm_kqa_CyrZDEMcKMnTqDXJe9">here</a>.'
+  alert1_title: null
+  alert1: null
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: null
+  warning1: Note that summary scores are currently absent from the release data and
+    will be added in the future - see <a href="../../../changelog/issues-updates/#pending-updates"
+    target="_blank">Pending Updates</a>.
   warning2_title: null
   warning2: null
   warning3_title: null
@@ -855,6 +935,7 @@ ecpromis:
   - Check age is within expected ranges.
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: The HBCD dataset includes many variables that may be important for sound
@@ -910,6 +991,7 @@ ecpromis_peer:
   - Check age is within expected ranges.
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: The HBCD dataset includes many variables that may be important for sound
@@ -958,6 +1040,7 @@ ecpromis_selfreg:
   - Check age is within expected ranges.
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: The HBCD dataset includes many variables that may be important for sound
@@ -995,7 +1078,7 @@ epds:
   visits: V01, V02, V03
   child_specific: 'No'
   type: Parent Survey
-  administration: null
+  administration: Self-administered in-person or remotely
   respondent_category: Parent on Self
   respondent: Pregnant Participant or Birth Parent (as applicable)
   admin_notes: null
@@ -1006,7 +1089,16 @@ epds:
   - Verification of scoring accuracy.
   - Summary statistics to examine item-level frequencies and total scores.
   - Review of response distributions for potential outliers.
-  scoring: null
+  hbcd_mods: In the HBCD study, a ‘Decline to answer’ option was added to all items.
+    A ‘Don’t know’ option was also available early in data collection, but was subsequently
+    removed. Questions answered with ‘Decline to answer’ or ‘Don’t know’ are marked
+    as missing. In addition, scores for EPDS Self-Harm (score>1) and Depression (total
+    score>11) triggered clinical alerts for study staff.
+  scoring: 'Items are scored on a 0→3 scale. Items 3, 5–10 are reverse-scored (i.e.,
+    3→0): this is already reflected in the raw responses and no additional item-level
+    scoring is required. Total scores are calculated as the sum of item responses.
+    Scores are not prorated or set to missing for incomplete items; users should determine
+    how to handle missing data.'
   alert1_title: null
   alert1: null
   alert2_title: null
@@ -1044,6 +1136,7 @@ discr:
   duration: 3 min
   qc: Data dashboard monitored for variable missingness, possible coding errors, and
     data consistency.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1087,6 +1180,7 @@ fad:
   - Review summary statistics and visualizations (item frequencies, scores distributions,
     prorated scoring).
   - Cronbach’s alpha calculated to assess inter-item reliability.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: The HBCD dataset includes many variables that may be important for sound
@@ -1136,6 +1230,7 @@ gled:
   - Assess address history completeness to ensure continuous coverage back to at least
     one year before the child's estimated due date (EDD).
   - Geocode addresses and verify successful geocoding to ensure accurate linkage.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: As a condition of using these data, specified in the data use certification
@@ -1188,6 +1283,7 @@ growth:
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
+  hbcd_mods: null
   scoring: "<b>Anthropometric Z-Score and Percentile Calculations</b>\n Age-based\
     \ z-scores and percentiles for growth measurements were calculated for V02 onward\
     \ using the <a href=\"https://github.com/CDC-DNPAO/WHOanthro\">WHOanthro</a> R\
@@ -1235,6 +1331,7 @@ home21:
   duration: 10 min
   qc: Subject matter experts constructed an algorithm to verify and correct scores
     computed automatically.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1272,6 +1369,7 @@ chem_exp:
   remote: either
   duration: 5 min
   qc: Response proportions and unusual missing patterns were reviewed.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1320,6 +1418,7 @@ illumina:
   - Use FHET estimates to check for plate contamination.
   - Visually inspect plate effects on principal component space derived from PC-Relate.
   - GDC Genomics QC pipeline analysis - see details and summary statistics <a href="#gdc-genomics-qc-pipeline-analysis">below</a>.
+  hbcd_mods: null
   scoring: null
   alert1_title: Anonymity
   alert1: Data users are prohibited from using HBCD data, including genomic data,
@@ -1414,6 +1513,7 @@ ibqr:
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
   - Assess reliability (Cronbach’s α).
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: The HBCD dataset includes many variables that may be important for sound
@@ -1474,6 +1574,7 @@ nutrition:
   duration: 10 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1515,6 +1616,7 @@ inf_sensor_q:
     common cause of missing responses was caregiver non-response, and less commonly
     due to human error (preferred contact/contact method not selected by RA) or technological
     malfunction.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1552,6 +1654,7 @@ lead_exp:
   remote: either
   duration: 5 min
   qc: Response proportions and unusual missing patterns were reviewed.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1598,6 +1701,7 @@ mb_cdi:
     completed within Web-CDI and then imported into the HBCD database. Data were reviewed
     to verify that fields are appropriately labeled upon import, and range checks
     of all summary variables were performed.
+  hbcd_mods: null
   scoring: 'All summary scores (e.g. <strong>Total Gestures</strong>, <strong>Words
     Understood</strong>, <strong>Words Produced</strong>) and associated percentiles
     (with and without adjustment for child sex) were computed within Web-CDI using
@@ -1662,6 +1766,7 @@ med_hist:
   duration: 10 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: When using HBCD data, all data users must agree to responsible use as described
@@ -1703,6 +1808,7 @@ mri_forms:
   remote: in-person
   duration: null
   qc: Brief visual review of data prior to release to check for errors and missingness.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1745,6 +1851,7 @@ maps_tl:
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
   - Assess reliability (Cronbach’s α).
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1785,6 +1892,7 @@ mlds:
   duration: 3-10 min
   qc: Monitor frequency of decline to answer and completeness during data collection
     (initial data showed that about 10% of questionnaires were not complete).
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1836,6 +1944,7 @@ olink:
     that did not meet Olink’s quality control criteria (N=10) have values of <em>0</em>
     for <code>{ASSAY}_Count</code> and <em>NA</em> for <code>ExtNPX</code>, <code>NPX</code>,
     and <code>PCNormalizedNPX</code>.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1881,6 +1990,7 @@ ehits:
   duration: 2 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1911,13 +2021,14 @@ fam_mh:
   visits: V01
   child_specific: 'No'
   type: Parent Survey
-  administration: null
-  respondent_category: null
+  administration: Self-administered in-person
+  respondent_category: Parent on Self
   respondent: Pregnant Participant
   admin_notes: null
   remote: either
   duration: 5 min
   qc: Response distributions reviewed for outliers
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1955,6 +2066,7 @@ nbhsaf:
   remote: either
   duration: 1 min
   qc: Data dashboard monitored for missingness.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -1992,6 +2104,7 @@ prescan_q:
   remote: null
   duration: null
   qc: Data dashboard monitored for variable missingness, coding errors, and data consistency
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -2030,6 +2143,7 @@ strsup:
   duration: 4 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -2067,6 +2181,7 @@ paces:
   remote: null
   duration: null
   qc: null
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -2105,6 +2220,10 @@ screenq:
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
+  hbcd_mods: The HBCD ScreenQ includes additional response options "Decline to answer"
+    and "Don’t know." The impact on scoring is described under Scoring Procedures
+    below. In addition, when the child is mentioned, pronouns were changed from he/she
+    to “the child” for gender neutrality.
   scoring: 'The ScreenQ is scored in 4 domains: Access (7 point max), Frequency (8
     point max), Content (6 point max), and Co-Viewing (6 point max). The sum of these
     domains gives the Total score with range 0-27. A summary score is not computed
@@ -2149,6 +2268,7 @@ shs:
   remote: either
   duration: 1 min
   qc: Response missingness and proportions were reviewed.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -2173,7 +2293,9 @@ spm_2:
   acronym: SPM-2
   full_name: Sensory Processing Measure-2
   domain: Neurocognition & Language
-  table_name: ncl_cg_spm2__inf (Infant version); ncl_cg_spm2__tod (Toddler version)
+  table_name: 'ncl_cg_spm2__inf (Infant version)
+
+    ncl_cg_spm2__tod (Toddler version)'
   construct: Sensory Processing/Integration
   concatenated: null
   visits: V03 (Infant); V05 (Toddler)
@@ -2187,6 +2309,7 @@ spm_2:
   duration: 12 min
   qc: Periodic review of data capture to ensure that items are being fully completed
     and spot checks on scoring to assure algorithms are being correctly employed.
+  hbcd_mods: null
   scoring: The proprietary reference sample tables from which the SPM-2 summary scores
     were derived are available from Western Psychological Services (Parham et al.
     2021). These items contain imputed scores based on tables from the publisher.
@@ -2237,6 +2360,7 @@ study_nav:
     Study Navigation Contact Form Guide</a>. Data review and cleaning has occurred
     3 times (September 2024, February 2025, and November 2025). Minor updates to the
     form and the form guide were completed in September 2024 and October 2025.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: Study Navigators were strongly encouraged, but not required, to fill out
@@ -2280,7 +2404,7 @@ subst:
   visits: V02
   child_specific: 'No'
   type: Parent Survey
-  administration: null
+  administration: Self-administered in-person
   respondent_category: Parent on Self
   respondent: Birth Parent
   admin_notes: null
@@ -2288,15 +2412,68 @@ subst:
   duration: 5 min
   qc: Response distributions are reviewed for outliers and additionally cross-checked
     with ASSIST V1/V2 to ensure consistency in reported substances.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
-  alert1: null
+  alert1: 'HBCD participants are relying on data users to be respectful and to minimize
+    potential harms (such as stigmatization) when analyzing data and reporting analyses.
+    For a brief discussion of how stigma and stereotyping affect people with substance
+    use disorder, see this National Institute of Drug Abuse (NIDA) website: <a href="https://nida.nih.gov/research-topics/stigma-discrimination#address">https://nida.nih.gov/research-topics/stigma-discrimination#address</a>.
+
+
+    When using these data, please consider the context in which HBCD collected data
+    on the use of substances. HBCD focuses on the impact of exposures on child development;
+    therefore, substance exposure was assessed rather than the legality of the drug
+    or its misuse. There is a significant difference between the “use” of a substance,
+    which may or may not be legal, and the “misuse” of that substance. It is not,
+    for instance, appropriate to describe participants who used substances as “addicts”
+    or as having a “substance use disorder” because we did not collect information
+    on such diagnoses. A number of drugs for which we gathered data, although open
+    to misuse, could have been prescribed. These include methadone, buprenorphine,
+    Adderall, and even certain cannabis products. While a participant’s use may or
+    may not have been consistent with prescribed indications, we have not collected
+    such information, nor have we collected information addressing the motivation
+    for use.
+
+
+    For recommended language related to substance use, please see the NIDA website:
+    <a href="https://nida.nih.gov/nidamed-medical-health-professionals/health-professions-education/words-matter-terms-to-use-avoid-when-talking-about-addiction"><i>Words
+    Matter - Terms to Use and Avoid When Talking About Addiction</i></a>.
+
+
+    We suggest that while designing and reporting analyses, users consider additional
+    factors that may be more common among individuals with prenatal substance use
+    and likely affect many outcomes of interest. Data users can minimize potential
+    experimental biases by including appropriate additional variables that assess
+    participants’ other relevant exposures and social contexts. HBCD has collected
+    many such variables, some of which might serve as confounders or modifiers in
+    analyses of substance use variables from this instrument.
+
+
+    Please take care not to overinterpret your results or to make assumptions about
+    causation if your analysis is not designed for causal inference.  We cannot control
+    how other people, such as policy makers, educators, or clinicians, use the results
+    of our research, but we can minimize risks of misuse by such non-scientist constituencies
+    by being very clear, in papers and presentations, about the limits of our findings.'
   alert2_title: null
   alert2: null
   alert3_title: null
   alert3: null
   warning1_title: null
-  warning1: null
+  warning1: 'The SU Patterns in Pregnancy measure is administered only to participants
+    who endorsed substance use on the V1 or V2 ASSIST. Because the measure was added
+    one year after study enrollment began, its availability varies across participants.
+    Most participants completed the measure at V2; however, early enrollees (~1,200
+    participants) who had already finished V2 before its introduction instead received
+    it at their next available visit, which was as late as Visit 5.
+
+
+    The form captures general patterns of substance use by trimester and is intended
+    to complement (1) the Timeline Followback (TLFB), which focuses on specific weeks
+    of use during pregnancy, and (2) biospecimen data, which have variable look-back
+    periods. However, some participants only consider <i>use after pregnancy recognition</i>
+    as ''pregnancy use,'' which may result in discrepancies between this measure,
+    the ASSIST, and the TLFB.'
   warning2_title: null
   warning2: null
   warning3_title: null
@@ -2318,7 +2495,7 @@ tlfb:
   visits: V01, V02
   child_specific: 'No'
   type: Parent Interview
-  administration: null
+  administration: HBCD Study Staff
   respondent_category: Parent on Self
   respondent: Birth Parent or Primary Caregiver
   admin_notes: self-administered in Alabama
@@ -2326,17 +2503,43 @@ tlfb:
   duration: 10 min
   qc: Response distributions are reviewed for outliers and additionally cross-checked
     with ASSIST V1/V2 to ensure consistency in reported substances.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
-  alert1: null
+  alert1: 'HBCD was designed to enable the characterization of the known fluctuation
+    in substance use across the perinatal period critical for advancing prevention
+    and intervention (<a href="https://doi.org/10.1016/j.ntt.2021.107035">Massey et
+    al., 2021</a>, <a href="https://doi.org/10.1016/j.drugalcdep.2022.109351">Bandoli
+    et al., 2022</a>, <a href="https://doi.org/10.1016/j.dcn.2024.101432">Si et al.,
+    2024</a>).
+
+
+    Moreover, characterization of between- and within-person variability in substance
+    use has been shown to enhance the sensitivity and specificity of risk prediction
+    (<a href="https://doi.org/10.1016/j.ntt.2021.107035">Massey et al., 2021</a>,
+    <a href="https://doi.org/10.1016/j.ntt.2018.06.002">Massey et al., 2018</a>).
+    Thus, the characterization of patterns or trajectories of use should be considered
+    over the use of dichotomous exposure characterization. Another gap in literature
+    concerns the extent, nature, and implications of polysubstance use during pregnancy
+    since individual substances have primarily been examined alone in prior research
+    (<a href="https://doi.org/10.1016/j.ntt.2018.06.002">Massey et al., 2018</a>).
+    The power and scope of HBCD avails a unique opportunity to understand the prevalence
+    and implications of such ‘real world’ patterns of substance use.'
   alert2_title: null
   alert2: null
   alert3_title: null
   alert3: null
-  warning1_title: null
-  warning1: null
-  warning2_title: null
-  warning2: null
+  warning1_title: Sampling Window and Coverage Limitations
+  warning1: The sampling covers specific weeks before pregnancy (Weeks 1-2) and during
+    pregnancy (Weeks 3-9). Consequently, substance use reported outside these weeks
+    may not appear in the TLFB, and a positive biospecimen may lack corresponding
+    TLFB data for the same reason. This sampling approach balances participant burden
+    (avoiding a full 40-week TLFB) with capturing key pregnancy phases when behaviors
+    often shift, such as before and after pregnancy recognition and in late pregnancy.
+  warning2_title: Notes on Reporting Format and Data Variability
+  warning2: Participants were asked to report occasions (except cigarettes/cigarillos
+    and drinks, reported as number), but some substances (e.g. electronic cigarette
+    devices) are difficult to report in occasions and have outliers.
   warning3_title: null
   warning3: null
   warning4_title: null
@@ -2373,6 +2576,7 @@ tic:
     information across multiple forms, and TIC being filled out for a later time point
     than when the transition occurred (e.g., V06 TIC available for TIC that occurred
     at V02).
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -2412,6 +2616,7 @@ nails:
   remote: in-person
   duration: 5 min
   qc: Examine assay ranges and categorical versus continuous measures
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -2467,6 +2672,7 @@ urine:
   remote: in-person
   duration: 5 min
   qc: Examine assay ranges and categorical versus continuous measures
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -2519,6 +2725,7 @@ via:
   qc: The VIA is administered only if the caregiver, spouse/partner, or any of the
     child's grandparents were born outside the U.S. If all are U.S.-born, the survey
     platform (REDCap) automatically ends the questionnaire after the screening questions.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -2566,6 +2773,7 @@ vineland_3:
     and range checks of all summary variables were completed.
   - Completion rates were monitored for the overall consortium and at the site level
     to address any concerns.
+  hbcd_mods: null
   scoring: 'Each item in the Vineland-3 is scored on a scale of 0 to 3, with higher
     scores indicating higher levels of adaptive behavior. Summary scores are automatically
     computed within the Pearson Q-Global system, which generates a standard score,
@@ -2623,6 +2831,7 @@ visit_info:
   remote: null
   duration: null
   qc: null
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null
@@ -2665,6 +2874,7 @@ vs100:
   - Data are reviewed to verify that sites obtain a valid screening outcome (PASS
     or REFER).
   - The device does not generate results if it is used incorrectly.
+  hbcd_mods: null
   scoring: null
   alert1_title: null
   alert1: null

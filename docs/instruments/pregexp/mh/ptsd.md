@@ -1,35 +1,11 @@
+<!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE  - scoring -->
+
+
 # DSM5 Severity Acute Stress or PTSD
 
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder</i></p>
-
 {{ readme(instruments.ptsd) }}
-
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>pex_bm_str__ptsd</code></td></tr>
-<tr><td><b>Construct</b></td><td>PTSD/Acute Stress Disorder Symptom Severity</td></tr>
-<tr><td><b>Study Visits</b></td><td>V01, V02, V03</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: No<br>
-<b>Respondent</b>: Pregnant Participant, Birth Parent, or Primary Caregiver<<br>
-<b>Method</b>: Self-administered in-person or remotely (3 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
-<td>
-<ul>
-<li>Checks for missing data based on counts for items completed by each participant</li>
-<li>Verification of scoring accuracy</li>
-<li>Summary statistics to examine item-level frequencies and total scores</li>
-<li>Review of response distributions for potential outliers</li>
-</ul>  
-</td></tr>
-</tbody></table>
-
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p><strong>Consideration of Mental Health Symptoms Experienced During Pregnancy</strong><br>
-The co-occurrence of psychiatric symptoms and substance use during pregnancy is well-documented (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2011</a>, <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">Massey et al., 2012</a>). Phenotypic risk in birthing parents may affect offspring neurodevelopment through both prenatal and postnatal mechanisms, beyond direct exposure alone (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2015.11.010">Massey et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2018.02.003">Massey et al., 2018</a>). These factors may confound associations between exposures and neuroimaging or neurodevelopmental outcomes, but they also represent malleable targets for prevention and early intervention. When possible, incorporating parental mental health symptoms as covariates offers a robust strategy to account for these confounding influences.</p> 
-</div>
-
+{{ alert_warning(instruments.ptsd) }}
+{{ data_warning(instruments.ptsd) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
@@ -50,11 +26,9 @@ Thus, the scales are as follows:
 
 > People sometimes have problems after extremely stressful events or experiences. How much have you been bothered during the PAST SEVEN (7) DAYS by each of the following problems that occurred or became worse after an extremely stressful event/experience?
 
+{{ hbcd_mods(instruments.ptsd) }}
 
-{{ mods_banner_macro() }}
-<div class="collapsible-content">
-<p>In the HBCD study, a ‘Decline to answer’ option was added to all items. A ‘Don’t know’ option was also available early in data collection, but was later removed.</p>
-</div>
+<!-- {{ scoring(instruments.ptsd) }} -->
 
 {{ scoring_banner_macro() }}
 <div class="collapsible-content">
@@ -98,3 +72,13 @@ Total of Questions 1, 2, 3, 7, 8, 9, 10. This 7-item measure assesses the severi
 <p>Massey, S. H., Neiderhiser, J. M., Shaw, D. S., Leve, L. D., Ganiban, J. M., & Reiss, D. (2012). Maternal self concept as a provider and cessation of substance use during pregnancy. Addictive Behaviors, 37(8), 956–961. <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">https://doi.org/10.1016/j.addbeh.2012.04.002</a></p>
 <p>Massey, S. H., Reiss, D., Neiderhiser, J. M., Leve, L. D., Shaw, D. S., & Ganiban, J. M. (2016). Maternal personality traits associated with patterns of prenatal smoking and exposure: Implications for etiologic and prevention research. Neurotoxicology and Teratology, 53, 48–54. <a href="https://doi.org/10.1016/j.ntt.2015.11.010">https://doi.org/10.1016/j.ntt.2015.11.010</a></p>
 </div>
+
+
+
+
+
+<!-- {{ alert_banner_macro() }}
+<div class="collapsible-content">
+<p><strong>Consideration of Mental Health Symptoms Experienced During Pregnancy</strong><br>
+The co-occurrence of psychiatric symptoms and substance use during pregnancy is well-documented (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2011</a>, <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">Massey et al., 2012</a>). Phenotypic risk in birthing parents may affect offspring neurodevelopment through both prenatal and postnatal mechanisms, beyond direct exposure alone (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2015.11.010">Massey et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2018.02.003">Massey et al., 2018</a>). These factors may confound associations between exposures and neuroimaging or neurodevelopmental outcomes, but they also represent malleable targets for prevention and early intervention. When possible, incorporating parental mental health symptoms as covariates offers a robust strategy to account for these confounding influences.</p> 
+</div> -->

@@ -1,35 +1,32 @@
-# ERICA
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Early Regulation in Context Assessment</i></p>
+<!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE, including QC details and scoring -->
 
-<table class="table-no-vertical-lines readme-intro">
-<tbody>
-<tr><td><b>Table Name</b></td><td>Primary coding data file: <code>mh_cg_erica_3_9m</code><br>
-                                Reliability codes: <code>mh_cg_erica_rel_3_9m</code></td></tr>
-<tr><td><b>Construct</b></td><td>Emotional Regulation, Parenting, Caregiver-Child Relationship</td></tr>
-<tr><td><b>Study Visits</b></td><td>V03 (3-9 months)</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Birth Parent or Primary Caregiver and Child<br>
-<b>Method</b>: HBCD Study staff in-person (20-30 min estimated duration)</td></tr>
-<td width="10%"><b>Quality Control</b></td>
-<td>QC procedures were conducted for ERICA site-level administration and centralized coding of ERICA videos - <a href="#qc">expand infobox below for details →</a></li>
-</td></tr>
-</tbody>
-</table>
+
+# ERICA
+
+{{ readme(instruments.erica) }}
 
 <div id="qc" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-shield"></i></span><span class="text-with-link">
 <span class="text">QC Procedures: Administration & Centralized Coding</span>
 <a class="anchor-link" href="#qc" title="Copy link"><i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span></div>
 <div class="collapsible-content">
-<p style="font-size: 1.0em; text-decoration: underline; font-weight: 600;">ERICA Site-Level Administration</p>
+<div class="info-section">
+<div class="info-section-title">
+    ERICA Site-Level Administration
+</div>
 <ul>
 <li>HBCD study staff were trained and certified to administer the ERICA by experienced ERICA administrators to ensure adherence to standardized procedures.</li>
 <li>Ongoing quality of administration was ensured through video review of at least 10 percent of administrations at each site, with higher levels of review conducted for sites that did not meet fidelity benchmarks. Video selection was not random, but sites were not told in advance which videos would be reviewed.</li>
 <li>Completion rates were monitored, and site-level data on administration was reviewed for potential QC issues (e.g., frequent protocol interruptions or tech issues), with results informing site-level training and follow-up.</li>
 <li>Additional training was provided as needed.</li>
 </ul>
-<p style="font-size: 1.0em; text-decoration: underline; font-weight: 600;">Centralized Coding of ERICA Videos</p>
+</div>
+
+<div class="info-section">
+<div class="info-section-title">
+  Centralized Coding of ERICA Videos
+</div>
+
 <p>Videos are coded based on a single-pass review, with data entered directly into the HBCD database. Basic steps to ensure data completeness and accuracy include:</p>
 <ul>
   <li>Double data entry with conflict resolution to ensure accurate data entry</li>
@@ -43,6 +40,7 @@ developers. Certification required ≥80% agreement with expert ratings (exact a
 were randomly selected for double coding by experts (reliability coders) on a weekly basis.
 Coders who fell below 80% agreement for two consecutive weeks on any code were pulled
 from coding and re-trained/certified before continuing.</p>
+<br>
 <p><b>Coding Reliability Statistics</b><br>
 Inter-rater reliability was quantified using a two-way mixed-effects intraclass correlation coefficient (ICC) (see table below). All codes were evaluated using ICC except for Caregiver Irritable Behavior. Due to its low base rate, this code was dichotomized and reliability was estimated using an unweighted kappa statistic. Updated reliability estimates may be provided in future data releases as additional data become available.</p>
 <table class="table-no-vertical-lines">
@@ -100,12 +98,13 @@ Inter-rater reliability was quantified using a two-way mixed-effects intraclass 
 </tbody>
 </table>
 </div>
-
----
+</div>
 
 {{ alert_warning(instruments.erica) }}
 {{ data_warning(instruments.erica) }}
 {{ issues_banner_macro() }}
+
+---
 
 ## Instrument Details
 
@@ -118,6 +117,10 @@ The ERICA is coded using a one-pass, global coding system adapted for HBCD. Seve
  - **Dyadic**: Caregiver–child connectedness
 
 Codes are scored on a 4-point scale (0-3), reflecting the frequency, intensity, and duration of observed behaviors across the paradigm, with higher scores indicating higher levels of observed behavior. See [Edwards et al. (2024)](https://doi.org/10.1016/j.dcn.2024.101422) for additional details on the ERICA paradigm and adaptation for HBCD.
+
+
+{{ scoring(instruments.erica) }}
+
 
 {{ scoring_banner_macro() }}
 <div class="collapsible-content">
@@ -175,6 +178,24 @@ Codes are scored on a 4-point scale (0-3), reflecting the frequency, intensity, 
 
 
 
+
+<!-- <p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Early Regulation in Context Assessment</i></p>
+
+<table class="table-no-vertical-lines readme-intro">
+<tbody>
+<tr><td><b>Table Name</b></td><td>Primary coding data file: <code>mh_cg_erica_3_9m</code><br>
+                                Reliability codes: <code>mh_cg_erica_rel_3_9m</code></td></tr>
+<tr><td><b>Construct</b></td><td>Emotional Regulation, Parenting, Caregiver-Child Relationship</td></tr>
+<tr><td><b>Study Visits</b></td><td>V03 (3-9 months)</td></tr>
+<tr><td><b>Administration</b></td><td>
+<b>Child-specific</b>: Yes<br>
+<b>Respondent</b>: Birth Parent or Primary Caregiver and Child<br>
+<b>Method</b>: HBCD Study staff in-person (20-30 min estimated duration)</td></tr>
+<td width="10%"><b>Quality Control</b></td>
+<td>QC procedures were conducted for ERICA site-level administration and centralized coding of ERICA videos - <a href="#qc">expand infobox below for details →</a></li>
+</td></tr>
+</tbody>
+</table> -->
 
 <!-- {{ alert_banner_macro() }}
 <div class="collapsible-content">

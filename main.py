@@ -13,6 +13,7 @@ from macros.readme_tables import build_readme
 
 from macros.data_warnings import build_data_warning
 from macros.alert_warnings import build_alert_warning
+from macros.hbcd_mods import build_hbcd_mods
 from macros.scoring import build_scoring
 
 from macros.scoring_tables import (
@@ -71,6 +72,10 @@ def define_env(env):
     @env.macro
     def scoring(inst):
         return build_scoring(inst)
+    
+    @env.macro
+    def hbcd_mods(inst):
+        return build_hbcd_mods(inst)
 
     @env.macro
     def issues_banner_macro():

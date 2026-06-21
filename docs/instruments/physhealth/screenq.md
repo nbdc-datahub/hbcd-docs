@@ -1,6 +1,5 @@
 # Screen-Based Media Use (<i>ScreenQ</i>)
 
-
 {{ readme(instruments.screenq) }}
 {{ alert_warning(instruments.screenq) }}
 {{ data_warning(instruments.screenq) }}
@@ -10,6 +9,18 @@
 
 **ScreenQ** is designed to measure child screen use patterns. Questions are based on the AAP guidelines for media use. ScreenQ scores have been correlated with language development, working memory and executive functioning.
 
+{{ hbcd_mods(instruments.screenq) }}
+{{ scoring(instruments.screenq) }}
+
+## References
+
+<div class="references"> 
+<p>Hutton, J.S., Huang, G., Sahay, R.D. et al. A novel, composite measure of screen-based media use in young children (ScreenQ) and associations with parenting practices and cognitive abilities. <i>Pediatr Res</i> 87, 1211–1218 (2020). <a href="https://doi.org/10.1038/s41390-020-0765-1">https://doi.org/10.1038/s41390-020-0765-1</a></p>  
+</div>
+
+
+
+<!-- 
 <div id="hbcd-mod" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-gear"></i></span>
   <span class="text-with-link">
@@ -22,16 +33,7 @@
 </div>
 <div class="collapsible-content">
 <p>The HBCD ScreenQ includes additional response options "Decline to answer" and "Don’t know." The impact on scoring is described under <a href="#scoring">Scoring Procedures</a> below. In addition, when the child is mentioned, pronouns were changed from he/she to “the child” for gender neutrality.</p>
-</div>
-
-{{ scoring(instruments.screenq) }}
-
-## References
-
-<div class="references"> 
-<p>Hutton, J.S., Huang, G., Sahay, R.D. et al. A novel, composite measure of screen-based media use in young children (ScreenQ) and associations with parenting practices and cognitive abilities. <i>Pediatr Res</i> 87, 1211–1218 (2020). <a href="https://doi.org/10.1038/s41390-020-0765-1">https://doi.org/10.1038/s41390-020-0765-1</a></p>  
-</div>
-
+</div> -->
 
 <!-- 
 {{ scoring_banner_macro() }}
