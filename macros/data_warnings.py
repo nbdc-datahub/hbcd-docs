@@ -12,8 +12,8 @@ def build_data_warning(inst):
     )
 
     for i in warning_nums:
-        title = inst.get(f"warning{i}")
-        text = inst.get(f"warning{i}_text")
+        title = inst.get(f"warning{i}_title")
+        text = inst.get(f"warning{i}")
 
         if not title and not text:
             continue

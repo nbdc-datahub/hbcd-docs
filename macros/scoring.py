@@ -7,9 +7,8 @@ def build_scoring(inst):
     if not scoring:
         return ""
     
-    elif scoring:
-        scoring = scoring.replace("\n", "<br>")
-
+    else:
+        scoring = scoring.replace("\n", "<br>")  # Preserve line breaks in text
         return f"""
 <div id="scoring" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji">
@@ -25,7 +24,9 @@ def build_scoring(inst):
 </div>
 
 <div class="collapsible-content">
+<p>
     {scoring}
+</p>
 </div>
 """
 

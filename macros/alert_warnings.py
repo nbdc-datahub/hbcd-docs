@@ -12,9 +12,9 @@ def build_alert_warning(inst):
     )
 
     for i in alert_nums:
-        title = inst.get(f"alert{i}")
-        text = inst.get(f"alert{i}_text")
-
+        title = inst.get(f"alert{i}_title")
+        text = inst.get(f"alert{i}")
+        
         if not title and not text:
             continue
 

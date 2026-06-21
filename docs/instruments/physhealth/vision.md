@@ -1,46 +1,14 @@
 # VS100 Spot Vision Screener 
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
+{{ readme(instruments.vs100) }}
 
-<tr>
-  <td><b>Table Name</b></td>
-  <td><code>ph_ch_vs</code></td>
-</tr>
+*Note: Only administered if parent responds NO to eligibility question (“Have you been told that your child cannot see at all?” (i.e., cannot see shadows or distinguish light and dark)).*
 
-<tr>
-  <td><b>Construct</b></td>
-  <td>Vision</td>
-</tr>
-
-<tr>
-  <td><b>Study Visits</b></td>
-  <td>V04, V06, V08</td>
-</tr>
-
-<tr>
-  <td><b>Administration</b></td>
-  <td>
-    <b>Child-specific</b>: Yes<br>
-    <b>Respondent</b>: Child on Self<br>
-    <b>Method</b>: HBCD Study staff, in person (Few seconds estimated duration)<br>
-    <i>Only administered if parent responds NO to eligibility question (“Have you been told that your child cannot see at all?” (i.e., cannot see shadows or distinguish light and dark)</i>
-  </td>
-</tr>
-
-<tr>
-  <td><b>Quality Control</b></td>
-    <td>
-    <ul>
-      <li>Data are reviewed to verify that sites obtain a valid screening outcome (PASS or REFER).</li>
-      <li>The device does not generate results if it is used incorrectly.</li>
-    </ul>
-  </td>
-</tr>
-</tbody>
-</table>
-
+{{ alert_warning(instruments.vs100) }}
+{{ data_warning(instruments.vs100) }}
 {{ issues_banner_macro() }}
+
+
 
 ## Instrument Details
 
@@ -50,6 +18,9 @@ The **VS100 Spot Vision Screener** is used to screen for six vision and oculomot
  - **REFER / COMPLETE EYE EXAM RECOMMENDED**: One or more domains falls outside acceptable age-appropriate thresholds
 
 The current release includes completion status and overall screening results. Release data will eventually include all information recorded by the Vision Screener for each of the six domains, including both the overall screening result (PASS/REFER) **and** all measurements used to assess vision performance and determine the screening result.
+
+
+{{ scoring(instruments.vs100) }}
 
 ## References
 <div class="references">
