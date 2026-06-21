@@ -193,7 +193,8 @@ hbcd/
 </table>
 
 ## Concatenated Data
-The `concatenated/` folder contains participant-level files aggregated across all subjects for certain modalities, organized in modality-specific subfolders. Click *View README* links to view instrument documentation.
+
+Similar to tabulated data, concatenated data are participant-level datasets aggregated across all participants into a single file or file set. The key difference is that the data are not converted to the HBCD standard tabulated format. This is needed in cases where datasets include cohort-wide data and/or the original community-standard formats are required to support common analysis workflows and maximize compatibility with existing tools. Click *View README* links below to view instrument documentation.
 
 <pre class="folder-tree">
 hbcd/

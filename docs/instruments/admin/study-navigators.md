@@ -10,7 +10,7 @@
 
 {{ readme(instruments.study_nav) }}
 {{ alert_warning(instruments.study_nav) }}
-{{  data_warning(instruments.study_nav) }}
+{{ data_warning(instruments.study_nav) }}
 {{ issues_banner_macro() }}
 
 ---

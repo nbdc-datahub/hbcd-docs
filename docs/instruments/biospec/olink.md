@@ -1,13 +1,9 @@
 # Olink Explore 384 Inflammation 1 Panel
 
+
 {{ readme(instruments.olink) }}
-
-{{ warning_banner_macro() }}
-<div class="collapsible-content">
-<p><b>74 samples that were run in this batch are not included in this data release.</b> However, data normalized by median plate intensity included NPX values from these excluded subjects. We anticipate that these subjects will be included in later data releases.</p>
-<p><b>Limits of detection (LOD) were not calculated for this release.</b> Users should compute LOD values using negative control (NC) samples. Proteins with a high proportion of values below the LOD should be excluded or interpreted with caution. 14 assays have low NC counts and calculating LOD based on NPX is not appropriate, so these assays should also be interpreted with caution.</p>
-</div>
-
+{{ alert_warning(instruments.olink) }}
+{{ data_warning(instruments.olink) }}
 {{ issues_banner_macro() }}
 
 ---
