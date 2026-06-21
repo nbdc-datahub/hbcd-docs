@@ -18,6 +18,10 @@ def build_data_warning(inst):
         if not title and not text:
             continue
 
+        # Preserve line breaks in text
+        if text:
+            text = text.replace("\n", "<br>")
+
         title_html = f"""
 <div class="info-section-title">
     {title}

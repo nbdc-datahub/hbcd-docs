@@ -19,6 +19,7 @@ foodins:
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -58,6 +59,7 @@ aces:
   qc: QC is minimal as participants only report the total number of ACE events. Declines
     in ACE scores at later visits should be interpreted cautiously, as they may reflect
     inconsistent or inaccurate responding.
+  scoring: null
   alert1: This variable was only collected as a total ACE count, which means the specific
     items participants experienced are unknown. Total ACE counts are strongly associated
     with a variety of health-related outcomes, and we used this data collection strategy
@@ -104,6 +106,7 @@ assist:
   duration: 3-5 min
   qc: Response distributions are reviewed for outliers. For V1-V2, responses are cross-checked
     with TLFB for consistency in reported substance use.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -145,6 +148,7 @@ apa:
     Verification of scoring accuracy.
   - Summary statistics to examine item-level frequencies and total scores; Review
     of response distributions for potential outliers.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -183,6 +187,7 @@ bfy:
   duration: 4 min
   qc: Data dashboard was monitored for variable missingness, possible coding errors,
     scoring verification when needed, and data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -220,6 +225,7 @@ basic_demo:
   remote: null
   duration: null
   qc: null
+  scoring: null
   alert1: null
   alert1_text: 'When using HBCD data, all data users must agree to responsible use
     as described in the DUC. When conceptualizing studies, analyzing data, and communicating
@@ -279,31 +285,29 @@ bayley_4:
     range and consistency checks, to identify potential errors or deviations.
   - Completion rates were monitored across sites, with additional training provided
     when needed.
+  scoring: Bayley scores are generated automatically using QGlobal, Pearson’s official
+    scoring platform for the Bayley Scales. Scores reflect the standardized scoring
+    procedures implemented by Pearson, and no additional manual scoring or modification
+    is applied.
   alert1: null
-  alert1_text: 'Performance of the Bayley Scales of Infant and Toddler Development,
-    Fourth Edition, reflects the child''s developmental status, but various factors
+  alert1_text: Performance of the Bayley Scales of Infant and Toddler Development,
+    Fourth Edition, reflects the child's developmental status, but various factors
     might influence the results of the assessment that should be taken into account.
-
-
-    The test was given in the context of a battery of tests and procedures administered
-    to the child and his/her caregiver during the course of an extended visit. Some
-    children may experience fatigue from this and this may have adversely impacted
-    their performance. Ratings of arousal level of the child before and after the
-    assessment may help in identifying situations where the child may have under-performed.
-
-
-    The child''s exposure to different languages may also impact their performance.
+  alert2: null
+  alert2_text: The test was given in the context of a battery of tests and procedures
+    administered to the child and his/her caregiver during the course of an extended
+    visit. Some children may experience fatigue from this and this may have adversely
+    impacted their performance. Ratings of arousal level of the child before and after
+    the assessment may help in identifying situations where the child may have under-performed.
+  alert3: null
+  alert3_text: The child's exposure to different languages may also impact their performance.
     The Multilingual Language Development questionnaire was used to screen for parental
     preference for the test to be administered in Spanish or English (Spanish language
     translations used are available upon request). The instrument also documents other
     language exposures that the child may have. Exposure to languages other than Spanish
-    or English may impact a child''s performance. In addition, some items on the test
+    or English may impact a child's performance. In addition, some items on the test
     may be impacted by environmental experiences related to the task or items used.
-    In these cases, the test may underestimate the child''s developmental status.'
-  alert2: null
-  alert2_text: null
-  alert3: null
-  alert3_text: null
+    In these cases, the test may underestimate the child's developmental status.
   warning1: Missing Records
   warning1_text: A subset of participants are missing the Bayley-4 records, i.e. the
     <b>Administration</b> field (<code>ncl_ch_bayley_administration</code>) has a
@@ -344,6 +348,7 @@ bfh:
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -382,6 +387,19 @@ bisq:
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
+  scoring: 'The BISQ-SF is scored in collaboration with the instrument developers
+    (<a href="https://www.babysleep.com/BISQ/">https://www.babysleep.com/BISQ/</a>).
+    Parent responses are uploaded to the Baby Sleep team who scores the instrument
+    utilizing a proprietary algorithm and then sends scores back to the HBCD data
+    team. Note that the BISQ-R SF (short form) includes 19 scored questions and one
+    additional sleep duration question which is not scored.
+
+
+    <b>From <a href="http://babysleep.com">babysleep.com</a></b>: Scores on each subscale
+    and the total score are scaled from 0 to 100, with higher scores denoting better
+    sleep quality, more positive perception of infant sleep, and parent behaviors
+    that promote healthy and independent sleep. The Total score (T) is computed from
+    the average of the 3 subscale scores.'
   alert1: null
   alert1_text: null
   alert2: null
@@ -427,6 +445,7 @@ demographics_ch:
   duration: 10 min
   qc: 'Data dashboard was monitored for variable missingness, coding errors, and data
     consistency. High missingness was noted for income: this is in line with expectations.'
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -464,6 +483,7 @@ cabr_sf:
   remote: in-person
   duration: 2 min
   qc: Scoring verification, data consistency checks, and checks for missingness.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -505,6 +525,7 @@ chaos:
   - Verify scoring accuracy.
   - Review summary statistics (item frequencies, total scores).
   - Inspect response distributions for outliers.
+  scoring: null
   alert1: null
   alert1_text: The HBCD dataset includes many variables that may be important for
     sound and comprehensive analysis. The inclusion of additional variables will depend
@@ -549,6 +570,7 @@ employment:
   remote: either
   duration: 5 min
   qc: Data were inspected for missing response and proportions.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -587,6 +609,7 @@ demographics:
   duration: 10 min
   qc: 'Data dashboard was monitored for variable missingness, coding errors, and data
     consistency. High missingness was noted for income: this is in line with expectations.'
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -628,6 +651,7 @@ ptsd:
   - Verification of scoring accuracy.
   - Summary statistics to examine item-level frequencies and total scores.
   - Review of response distributions for potential outliers.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -665,6 +689,7 @@ erica:
   remote: in-person
   duration: 20-30 min
   qc: null
+  scoring: null
   alert1: null
   alert1_text: 'The HBCD dataset includes many variables that may be important for
     sound and comprehensive analysis. The inclusion of additional variables will depend
@@ -744,6 +769,7 @@ ecpromis_sleep:
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -782,6 +808,7 @@ ecpromis_pags:
   duration: 2 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -825,6 +852,7 @@ ecpromis:
   - Check age is within expected ranges.
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
+  scoring: null
   alert1: null
   alert1_text: The HBCD dataset includes many variables that may be important for
     sound and comprehensive analysis. The inclusion of additional variables will depend
@@ -880,6 +908,7 @@ ecpromis_peer:
   - Check age is within expected ranges.
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
+  scoring: null
   alert1: null
   alert1_text: The HBCD dataset includes many variables that may be important for
     sound and comprehensive analysis. The inclusion of additional variables will depend
@@ -928,6 +957,7 @@ ecpromis_selfreg:
   - Check age is within expected ranges.
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
+  scoring: null
   alert1: null
   alert1_text: The HBCD dataset includes many variables that may be important for
     sound and comprehensive analysis. The inclusion of additional variables will depend
@@ -976,6 +1006,7 @@ epds:
   - Verification of scoring accuracy.
   - Summary statistics to examine item-level frequencies and total scores.
   - Review of response distributions for potential outliers.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1014,6 +1045,7 @@ discr:
   duration: 3 min
   qc: Data dashboard monitored for variable missingness, possible coding errors, and
     data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1057,6 +1089,7 @@ fad:
   - Review summary statistics and visualizations (item frequencies, scores distributions,
     prorated scoring).
   - Cronbach’s alpha calculated to assess inter-item reliability.
+  scoring: null
   alert1: null
   alert1_text: The HBCD dataset includes many variables that may be important for
     sound and comprehensive analysis. The inclusion of additional variables will depend
@@ -1106,6 +1139,7 @@ gled:
   - Assess address history completeness to ensure continuous coverage back to at least
     one year before the child's estimated due date (EDD).
   - Geocode addresses and verify successful geocoding to ensure accurate linkage.
+  scoring: null
   alert1: null
   alert1_text: As a condition of using these data, specified in the data use certification
     (DUC), you agreed not to identify any individual from whom data was obtained and
@@ -1158,6 +1192,7 @@ growth:
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1197,6 +1232,7 @@ home21:
   duration: 10 min
   qc: Subject matter experts constructed an algorithm to verify and correct scores
     computed automatically.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1234,6 +1270,7 @@ chem_exp:
   remote: either
   duration: 5 min
   qc: Response proportions and unusual missing patterns were reviewed.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1282,6 +1319,7 @@ illumina:
   - Use FHET estimates to check for plate contamination.
   - Visually inspect plate effects on principal component space derived from PC-Relate.
   - GDC Genomics QC pipeline analysis - see details and summary statistics <a href="#gdc-genomics-qc-pipeline-analysis">below</a>.
+  scoring: null
   alert1: Anonymity
   alert1_text: Data users are prohibited from using HBCD data, including genomic data,
     to identify participants or their relatives. You accessed these data under a Data
@@ -1376,6 +1414,7 @@ ibqr:
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
   - Assess reliability (Cronbach’s α).
+  scoring: null
   alert1: null
   alert1_text: The HBCD dataset includes many variables that may be important for
     sound and comprehensive analysis. The inclusion of additional variables will depend
@@ -1437,6 +1476,7 @@ nutrition:
   duration: 10 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1478,6 +1518,7 @@ inf_sensor_q:
     common cause of missing responses was caregiver non-response, and less commonly
     due to human error (preferred contact/contact method not selected by RA) or technological
     malfunction.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1515,6 +1556,7 @@ lead_exp:
   remote: either
   duration: 5 min
   qc: Response proportions and unusual missing patterns were reviewed.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1561,6 +1603,17 @@ mb_cdi:
     completed within Web-CDI and then imported into the HBCD database. Data were reviewed
     to verify that fields are appropriately labeled upon import, and range checks
     of all summary variables were performed.
+  scoring: "All summary scores (e.g. <strong>Total Gestures</strong>, <strong>Words\
+    \ Understood</strong>, <strong>Words Produced</strong>) and associated percentiles\
+    \ (with and without adjustment for child sex) were computed within Web-CDI using\
+    \ the most updated norms within that software and described in MacArthur-Bates\
+    \ User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson,\
+    \ 2023).  \n\nThe child’s age at administration for purposes of scoring the CDI\
+    \ is entered by the caregiver as part of the Web-CDI form. The caregiver also\
+    \ notes on this form if the child was born prematurely and if so, by how many\
+    \ weeks. The Web-CDI then provides percentile scores both unadjusted and adjusted\
+    \ for prematurity. See <a href=\"https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf\"\
+    >https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf</a>."
   alert1: null
   alert1_text: The CDI forms are well-documented and widely used assessments. We note
     that percentile scores were calculated based on the norms described in MacArthur-Bates
@@ -1614,6 +1667,7 @@ med_hist:
   duration: 10 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1651,6 +1705,7 @@ mri_forms:
   remote: in-person
   duration: null
   qc: Brief visual review of data prior to release to check for errors and missingness.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1693,6 +1748,7 @@ maps_tl:
   - Review summary statistics and visualizations (item frequencies, age, prorated
     scores).
   - Assess reliability (Cronbach’s α).
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1733,6 +1789,7 @@ mlds:
   duration: 3-10 min
   qc: Monitor frequency of decline to answer and completeness during data collection
     (initial data showed that about 10% of questionnaires were not complete).
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1784,6 +1841,7 @@ olink:
     that did not meet Olink’s quality control criteria (N=10) have values of <em>0</em>
     for <code>{ASSAY}_Count</code> and <em>NA</em> for <code>ExtNPX</code>, <code>NPX</code>,
     and <code>PCNormalizedNPX</code>.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1829,6 +1887,7 @@ ehits:
   duration: 2 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1866,6 +1925,7 @@ fam_mh:
   remote: either
   duration: 5 min
   qc: Response distributions reviewed for outliers
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1903,6 +1963,7 @@ nbhsaf:
   remote: either
   duration: 1 min
   qc: Data dashboard monitored for missingness.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1940,6 +2001,7 @@ prescan_q:
   remote: null
   duration: null
   qc: Data dashboard monitored for variable missingness, coding errors, and data consistency
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -1978,6 +2040,7 @@ strsup:
   duration: 4 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -2015,6 +2078,7 @@ paces:
   remote: null
   duration: null
   qc: null
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -2053,6 +2117,7 @@ screenq:
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -2090,6 +2155,7 @@ shs:
   remote: either
   duration: 1 min
   qc: Response missingness and proportions were reviewed.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -2119,7 +2185,7 @@ spm_2:
   visits: V03 (Infant); V05 (Toddler)
   child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  administration: Self-administered remotely
   respondent_category: Parent on Child
   respondent: null
   respondent_notes: Primary CG
@@ -2128,14 +2194,24 @@ spm_2:
   duration: 12 min
   qc: Periodic review of data capture to ensure that items are being fully completed
     and spot checks on scoring to assure algorithms are being correctly employed.
+  scoring: The proprietary reference sample tables from which the SPM-2 summary scores
+    were derived are available from Western Psychological Services (Parham et al.
+    2021). These items contain imputed scores based on tables from the publisher.
+    At this time, released data does not specify the exact items that have been imputed.
   alert1: null
   alert1_text: null
   alert2: null
   alert2_text: null
   alert3: null
   alert3_text: null
-  warning1: null
-  warning1_text: null
+  warning1: Addition of Response Option "Decline to answer"
+  warning1_text: The response option "Decline to answer" was added on November 8,
+    2024 to allow participants to not answer any questions they choose. However, "Decline
+    to answer" is not a response option on the published form and was not used in
+    the reference sample from which the standard scores were derived. It is possible
+    that participants chose “Decline to Answer” rather than “never” for behaviors
+    that have never been seen (for example items related to reacting to food texture
+    for an infant who has not been exposed to solids).
   warning2: null
   warning2_text: null
   warning3: null
@@ -2169,6 +2245,7 @@ study_nav:
     Study Navigation Contact Form Guide</a>. Data review and cleaning has occurred
     3 times (September 2024, February 2025, and November 2025). Minor updates to the
     form and the form guide were completed in September 2024 and October 2025.
+  scoring: null
   alert1: null
   alert1_text: Study Navigators were strongly encouraged, but not required, to fill
     out the Study Navigator Contact Form. Guidance was provided to complete the contact
@@ -2220,6 +2297,7 @@ subst:
   duration: 5 min
   qc: Response distributions are reviewed for outliers and additionally cross-checked
     with ASSIST V1/V2 to ensure consistency in reported substances.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -2258,6 +2336,7 @@ tlfb:
   duration: 10 min
   qc: Response distributions are reviewed for outliers and additionally cross-checked
     with ASSIST V1/V2 to ensure consistency in reported substances.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -2305,6 +2384,7 @@ tic:
     information across multiple forms, and TIC being filled out for a later time point
     than when the transition occurred (e.g., V06 TIC available for TIC that occurred
     at V02).
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -2344,6 +2424,7 @@ nails:
   remote: in-person
   duration: 5 min
   qc: Examine assay ranges and categorical versus continuous measures
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -2399,6 +2480,7 @@ urine:
   remote: in-person
   duration: 5 min
   qc: Examine assay ranges and categorical versus continuous measures
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -2452,6 +2534,7 @@ via:
   qc: The VIA is administered only if the caregiver, spouse/partner, or any of the
     child's grandparents were born outside the U.S. If all are U.S.-born, the survey
     platform (REDCap) automatically ends the questionnaire after the screening questions.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -2481,7 +2564,7 @@ vineland_3:
   visits: V05, V09, V10
   child_specific: 'No'
   type: Parent Survey
-  administration: null
+  administration: Self-administered remotely
   respondent_category: Parent on Child
   respondent: null
   respondent_notes: Birth Parent or Primary Caregiver
@@ -2499,14 +2582,35 @@ vineland_3:
     and range checks of all summary variables were completed.
   - Completion rates were monitored for the overall consortium and at the site level
     to address any concerns.
+  scoring: 'Each item in the Vineland-3 is scored on a scale of 0 to 3, with higher
+    scores indicating higher levels of adaptive behavior. Summary scores are automatically
+    computed within the Pearson Q-Global system, which generates a standard score,
+    percentile rank, base rate score, confidence intervals (high/low), and standard
+    score minus the mean score. Full scoring details are described in Sparrow et al.
+    2026.
+
+
+    Three more complex Vineland-3 subdomains (Written, Domestic, Community) are unavailable
+    for very young children because they are designed for children age 3.0 years and
+    older. All Domain scores (Communication, Daily Living, Socialization) are available.
+    The Motor Skills Domain scores are available for children under age 10.0 years.'
   alert1: null
-  alert1_text: null
+  alert1_text: The Pearson products, including the Vineland-3, are under copyright
+    agreement. Data use is as signified by the test publisher, <a href="https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Behavior/Vineland-Adaptive-Behavior-Scales-%7C-Third-Edition/p/100001622?tab=overview">Pearson
+    Education, Inc.</a>.
   alert2: null
   alert2_text: null
   alert3: null
   alert3_text: null
   warning1: null
-  warning1_text: null
+  warning1_text: 'The Q-Global version of the Vineland-3 is not currently available
+    in Spanish therefore the Vineland-3 was only administered to those parents/caregivers
+    who indicated adequate English proficiency for completing this instrument.
+
+
+    In addition, at V05, note that a small number of participants (N=5) were administered
+    the Vineland-3 at 18-22 months of age, outside of the V05 visit window of 10-17
+    months of age.'
   warning2: null
   warning2_text: null
   warning3: null
@@ -2536,6 +2640,7 @@ visit_info:
   remote: null
   duration: null
   qc: null
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null
@@ -2576,6 +2681,7 @@ vision:
   duration: <1 min
   qc: Data are reviewed to verify that sites obtain a valid screening outcome (PASS
     or REFER). The device does not generate results if it is used incorrectly.
+  scoring: null
   alert1: null
   alert1_text: null
   alert2: null

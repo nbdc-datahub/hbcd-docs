@@ -9,24 +9,6 @@
 {{ issues_banner_macro() }}
 
 
-### ORIG
-
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>ncl_ch_mlds</code></td></tr>
-<tr><td><b>Construct</b></td><td>Multilingual Exposure</td></tr>
-<tr><td><b>Study Visits</b></td><td>V03, V04, V05, V07</td></tr>
-<tr><td><b>Administration</b></td>
-<td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Primary Caregiver<br>
-<b>Method</b>: Self-administered remotely (3-10 min estimated duration). If the caregiver does not complete the assessment remotely, it is conducted at the visit to document the child’s language exposure environments. The instrument can be administered by an HBCD Study team member in-person or via video as needed.</td></tr>
-<td><b>Quality Control</b></td>
-<td>Monitor frequency of decline to answer and completeness during data collection (initial data showed that about 10% of questionnaires were not complete).</td>
-</tr>
-</tbody>
-</table>
-
 ## Instrument Details
 
 The Multilingual Language Development Screener (MLDS) consists of questionnaires evaluating parental concerns about the child’s hearing and the presence of English, Spanish, or other languages in the child’s home and childcare environments. The measure estimates the child’s language exposure and identifies hearing concerns through forced-choice questions and sliding scales, which assess the percentage of time spent in various environments (i.e., home, daycare, other family member household, babysitter). Up to ten non-parental childcare arrangements were sampled.

@@ -13,6 +13,7 @@ from macros.readme_tables import build_readme
 
 from macros.data_warnings import build_data_warning
 from macros.alert_warnings import build_alert_warning
+from macros.scoring import build_scoring
 
 from macros.scoring_tables import (
     build_scoring_table,
@@ -66,6 +67,10 @@ def define_env(env):
     @env.macro
     def alert_warning(inst):
         return build_alert_warning(inst)
+    
+    @env.macro
+    def scoring(inst):
+        return build_scoring(inst)
 
     @env.macro
     def issues_banner_macro():

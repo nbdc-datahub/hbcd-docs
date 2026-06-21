@@ -14,11 +14,13 @@ def build_alert_warning(inst):
     for i in alert_nums:
         title = inst.get(f"alert{i}")
         text = inst.get(f"alert{i}_text")
-        # text = text.replace("\n", "<br>") 
-        # text = text.replace("\n", "<hr>") 
 
         if not title and not text:
             continue
+
+        # Preserve line breaks in text
+        if text:
+            text = text.replace("\n", "<br>")
 
         title_html = f"""
 <div class="info-section-title">
