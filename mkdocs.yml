@@ -5,21 +5,23 @@ use_directory_urls: true
 theme:
   name: readthedocs
   custom_dir: docs/overrides # for template overrides, used in this case for addition of "Page Last Updated: <DATE>" to pages
-  features:
-    - content.code.annotate 
-    - toc.integrate
-    - toc.follow
-    - navigation.expand
-    - navigation.instant
-    - navigation.sections
-    - header.autohide
-    - search.suggest       # show search suggestions as you type
-    - search.highlight     # highlight search terms in results and on page
-    - search.share         # add "Share Search" button to results page to copy URL with search query 
+#   # To add when switch is made to Material theme:
+#   features:
+#     - content.code.annotate 
+#     - toc.integrate
+#     - toc.follow
+#     - navigation.expand
+#     - navigation.instant
+#     - navigation.sections
+#     - header.autohide
+#     - search.suggest       # show search suggestions as you type
+#     - search.highlight     # highlight search terms in results and on page
+#     - search.share         # add "Share Search" button to results page to copy URL with search query 
  
 markdown_extensions:
   - toc:
       permalink: '🔗'  
+      toc_depth: 3  # Include headers 1 - 3  
   - pymdownx.arithmatex
   - pymdownx.snippets
 
@@ -128,6 +130,7 @@ nav:
             - HOME-21: instruments/SED/home21.md
             - Intimate Partner Violence: instruments/SED/ehits.md
             - Geocoded Linkage: instruments/SED/geocoded-linkage.md
+            - Geocoded Linkage ALT: instruments/SED/geocoded-linkage-ALT.md
             - Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
             - Lead Exposures: instruments/SED/lead-exposures.md
             - Neighborhood Safety: instruments/SED/safety.md
