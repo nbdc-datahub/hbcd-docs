@@ -53,7 +53,7 @@ Sex-specific birthweight for gestational age centiles and z-scores will be calcu
 
 ## Instrument Details
 
-Anthropometrics is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children (V08 & V10-V14), it will also include abdominal circumference (cm).
+Anthropometrics is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children (including visits V08 and V10-V14), it will also include abdominal circumference (cm).
 
 {{ scoring(instruments.growth) }}
 

@@ -153,7 +153,7 @@ growth:
   measure: Anthropometrics
   notes: null
   acronym: null
-  full_name: Anthropometrics
+  full_name: Anthropometrics <i>(Height/Weight/Head Circumference)</i>
   domain: Physical Health
   table_name: ph_ch_anthro
   construct: Growth
