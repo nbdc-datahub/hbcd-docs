@@ -1,5 +1,13 @@
 # Protective and Compensatory Experience (*PACEs*)
 
+{{ readme(instruments.NAME) }}
+{{ alert_warning(instruments.NAME) }}
+{{ data_warning(instruments.NAME) }}
+{{ issues_banner_macro() }}
+
+{{ hbcd_mods(instruments.NAME) }}
+{{ scoring(instruments.NAME) }}
+
 
 <table class="table-no-vertical-lines">
 <tbody>

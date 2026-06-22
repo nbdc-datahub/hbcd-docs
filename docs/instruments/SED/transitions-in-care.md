@@ -1,5 +1,14 @@
 # Transitions in Care Screener
 
+{{ readme(instruments.tic) }}
+{{ alert_warning(instruments.tic) }}
+{{ data_warning(instruments.tic) }}
+{{ issues_banner_macro() }}
+
+{{ hbcd_mods(instruments.tic) }}
+{{ scoring(instruments.tic) }}
+
+
 <table class="table-no-vertical-lines">
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>sed_cg_tic_screener</code></td></tr>

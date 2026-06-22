@@ -15,7 +15,7 @@ def build_hbcd_mods(inst):
     <i class="fa fa-gear"></i>
 </span>
 <span class="text-with-link">
-    <span class="text">HBCD Modification Details</span>
+    <span class="text">HBCD Modifications</span>
     <a class="anchor-link" href="#hbcd-mods" title="Copy link">
     <i class="fa-solid fa-link"></i>
     </a>

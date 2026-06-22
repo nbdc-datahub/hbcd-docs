@@ -1,22 +1,8 @@
 # Current Employment
 
-<table class="table-no-vertical-lines">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>sed_cg_employ</code></td></tr>
-<tr><td><b>Construct</b></td><td>Current Employment</td></tr>
-<tr><td><b>Study Visits</b></td><td>V05</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
-<b>Method</b>: Self administered (in person or remote) (5 min estimated duration)
-</td></tr>
-<tr>
-<td><b>Quality Control</b></td>
-<td>Data were inspected for missing response and proportions.</td>
-</tr>
-</tbody>
-</table>
-
+{{ readme(instruments.employment) }}
+{{ alert_warning(instruments.employment) }}
+{{ data_warning(instruments.employment) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
@@ -60,6 +46,10 @@ Version “Caregiver Occupation and Employment”. Caregiver employment and indu
 </tbody>
 </table>
 </div>
+
+{{ hbcd_mods(instruments.employment) }}
+{{ scoring(instruments.employment) }}
+
 
 ## References
 

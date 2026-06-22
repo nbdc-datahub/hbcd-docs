@@ -121,12 +121,12 @@ nav:
             - ACEs: instruments/SED/aces.md
             - Baby's First Years: instruments/SED/bfy.md
             - Composite Abuse Scale: instruments/SED/cab.md
+            - Current Employment: instruments/SED/current-employment.md
             - Demographics (Adult): instruments/SED/demo-cg.md
             - Child Demographics: instruments/SED/demo-ch.md
             - Food Insecurity: instruments/SED/foodinsecurity.md
             - HOME-21: instruments/SED/home21.md
             - Intimate Partner Violence: instruments/SED/ehits.md
-            - Employment: instruments/SED/current-employment.md
             - Geocoded Linkage: instruments/SED/geocoded-linkage.md
             - Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
             - Lead Exposures: instruments/SED/lead-exposures.md

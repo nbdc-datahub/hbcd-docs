@@ -12,13 +12,15 @@ foodins:
   type: Parent Survey
   administration: null
   respondent_category: Parent on Self
-  respondent: null
+  respondent: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: remote
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
-  hbcd_mods: null
+  hbcd_mods: This measure was modified slightly for HBCD to use gender-neutral terms
+    (children are referred to as “the child” in place of gendered pronouns) as well
+    as inclusion of "Don't know" as a response option to survey questions
   scoring: null
   alert1_title: null
   alert1: null
@@ -27,7 +29,8 @@ foodins:
   alert3_title: null
   alert3: null
   warning1_title: null
-  warning1: null
+  warning1: Researchers should be aware that the validated measure uses Yes/No answers
+    and does not account for missing data.
   warning2_title: null
   warning2: null
   warning3_title: null
@@ -619,7 +622,7 @@ employment:
   visits: V05
   child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  administration: Self-administered in-person or remotely
   respondent_category: Parent on Self
   respondent: Birth Parent or Primary Caregiver
   admin_notes: null
@@ -1331,10 +1334,23 @@ home21:
   duration: 10 min
   qc: Subject matter experts constructed an algorithm to verify and correct scores
     computed automatically.
-  hbcd_mods: null
-  scoring: null
+  hbcd_mods: For HBCD, HOME-21 was adapted for more inclusive language (“sister or
+    brother” changed to “sibling(s)”; “family members” changed to “another adult in
+    your home”).
+  scoring: Individual items are re-scored as Yes (1)/No (0) and summed within two
+    domains, Cognitive Stimulation (range 0-8) and Emotional Support (range 0-3),
+    plus a total score (range 0-12). The tool is intended to be used in infants aged
+    Birth - 2y 11m 30d. See the table below for details and <a href="https://doi.org/10.1037/pas0001183">Lansford
+    et al. (2023)</a> for complete scoring procedure details.
   alert1_title: null
-  alert1: null
+  alert1: The HBCD dataset includes many variables that may be important for sound
+    and comprehensive analysis. The inclusion of additional variables will depend
+    on the research question(s) and methodological approach. Users are encouraged
+    to take time to explore the full range of available variables—especially those
+    that may serve as controls, contextual indicators, confounders, mechanisms, or
+    modifiers—to ensure thoughtful and well-supported analytic decisions. Other important
+    considerations may include developmental functioning, broader family supports,
+    and early adverse and protective exposures.
   alert2_title: null
   alert2: null
   alert3_title: null
@@ -1657,7 +1673,16 @@ lead_exp:
   hbcd_mods: null
   scoring: null
   alert1_title: null
-  alert1: null
+  alert1: Incidents of pediatric lead poisoning have previously been linked to consumption
+    of certain imported candies and food colorings, traditional remedies, or food
+    storage vessels (<a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm">CDC
+    1998</a>; <a href="https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html">CDC
+    2025</a>). The identification of these specific sources in the Lead Exposures
+    questionnaire is based on documented cases of lead poisoning tied to specific
+    products and should not be interpreted as highlighting any group as having particularly
+    high risk as a result of their race or ethnicity. It is important to recognize
+    that products and sources others than those specifically listed may contain hazardous
+    levels of lead.
   alert2_title: null
   alert2: null
   alert3_title: null
@@ -1990,7 +2015,12 @@ ehits:
   duration: 2 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
-  hbcd_mods: null
+  hbcd_mods: Various research groups made minor word changes. Sherin and colleagues
+    developed the original instrument, HITS, published in 1998. Chan and colleagues
+    expanded HITS to include a question regarding forced sexual activity <a href="https://doi.org/10.1177/102490791001700202">Chan
+    et al. 2010</a>. To acknowledge these changes in future publications, we recommend
+    including the exact verbiage of the HBCD-version of the item in the methods section
+    of any reports, presentations, and manuscripts.
   scoring: null
   alert1_title: null
   alert1: null

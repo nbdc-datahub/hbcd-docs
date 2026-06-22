@@ -1,5 +1,14 @@
 # PhenX+ Neighborhood Safety 
 
+{{ readme(instruments.safety) }}
+{{ alert_warning(instruments.safety) }}
+{{ data_warning(instruments.safety) }}
+{{ issues_banner_macro() }}
+
+{{ hbcd_mods(instruments.safety) }}
+{{ scoring(instruments.safety) }}
+
+
 <table class="table-no-vertical-lines">
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>sed_bm_nbhsaf</code></td></tr>

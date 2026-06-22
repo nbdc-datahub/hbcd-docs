@@ -1,5 +1,14 @@
 # Second Hand Smoke Exposure
 
+{{ readme(instruments.NAME) }}
+{{ alert_warning(instruments.NAME) }}
+{{ data_warning(instruments.NAME) }}
+{{ issues_banner_macro() }}
+
+{{ hbcd_mods(instruments.NAME) }}
+{{ scoring(instruments.NAME) }}
+
+
 <table class="table-no-vertical-lines">
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>sed_cg_shs</code></td></tr>

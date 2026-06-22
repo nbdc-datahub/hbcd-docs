@@ -1,39 +1,17 @@
 # HOME-21 Infant-Toddler
 
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Home Observation for Measurement of the Environment Infant-Toddler Version</i></p>
-
-<table class="table-no-vertical-lines">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>sed_cg_home_it</code></td></tr>
-<tr><td><b>Construct</b></td><td>Child’s Home Environment: Cognitive Stimulation and Emotional Support in the Home</td></tr>
-<tr><td><b>Study Visits</b></td><td>V04, V06</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: No<br>
-<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
-<b>Method</b>: HBCD Study staff or self-administered (in-person or remote) (10 min estimated duration)
-</td></tr>
-<tr>
-<td><b>Quality Control</b></td>
-<td>Subject matter experts constructed an algorithm to verify and correct scores computed automatically.</td>
-</tr>
-</tbody>
-</table>
-
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables—especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers—to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
-</div>
-
+{{ readme(instruments.home21) }}
+{{ alert_warning(instruments.home21) }}
+{{ data_warning(instruments.home21) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
 
 Assessment of children’s home environments is crucial to understanding contexts and experiences that are important predictors of children’s development. The Home Observation for Measurement of the Environment (HOME) Inventory (Caldwell & Bradley, 2016, 2003) is one of the most widely used measures of the quality and quantity of support available to a child in the child’s home environment. The HOME-21 is a revision of the HOME-Short Form that was used in the NLSY. The HOME-21 includes updates to tool to be responsive to changes in the composition of families, gender roles and the division of childcare in families, norms about the acceptability and advisability of different forms of discipline, and the digital environment in which children live (<a href="https://doi.org/10.1037/pas0001183" target="_blank">Lansford et al., 2023</a>).
 
-{{ mods_banner_macro() }}
-<div class="collapsible-content">
-<p>For HBCD, HOME-21 was adapted for more inclusive language (“sister or brother” changed to “sibling(s)”; “family members” changed to “another adult in your home”).</p>
-</div>
+
+{{ hbcd_mods(instruments.home21) }}
+<!-- {{ scoring(instruments.home21) }} -->
 
 {{ scoring_banner_macro() }}
 <div class="collapsible-content">

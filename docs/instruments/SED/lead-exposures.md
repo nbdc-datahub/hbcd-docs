@@ -1,5 +1,16 @@
 # Lead Exposures
 
+
+{{ readme(instruments.lead) }}
+{{ alert_warning(instruments.lead) }}
+{{ data_warning(instruments.lead) }}
+{{ issues_banner_macro() }}
+
+{{ hbcd_mods(instruments.lead) }}
+{{ scoring(instruments.lead) }}
+
+
+
 <table class="table-no-vertical-lines">
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>sed_cg_ledexp</code></td></tr>

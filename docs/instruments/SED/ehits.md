@@ -1,28 +1,15 @@
 # Partner Dynamics Extended (eHITS)
 
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>Partner Dynamics Extended – Hurt, Insult, Threaten, Scream</i></p>
-
-<table class="table-no-vertical-lines">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>sed_bm_ehits</code></td></tr>
-<tr><td><b>Construct</b></td><td>Intimate Partner Violence</td></tr>
-<tr><td><b>Study Visits</b></td><td>V01</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: No<br>
-<b>Respondent</b>: Parent<br>
-<b>Method</b>: HBCD Study staff in-person (2 min estimated duration)
-</td></tr>
-<tr>
-<td><b>Quality Control</b></td>
-<td>Data dashboard monitored for variable missingness, possible coding errors, scoring verification, and data consistency.</td>
-</tr>
-</tbody>
-</table>
-
+{{ readme(instruments.ehits) }}
+{{ alert_warning(instruments.ehits) }}
+{{ data_warning(instruments.ehits) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
 The eHITS is a self-administered 5 question Likert scale screener for experiences of psychological aggression, physical assault, sexual coercion, and injury. Originally created for quick administration in a health care setting or emergency department, the eHITS asks individuals to indicate whether their partner has done any of the following over the past 12 months: "physically hurt you", "insulted you", "threatened to harm you", "screamed or cursed at you", or "forced you to have sexual activities."
+
+<!-- {{ hbcd_mods(instruments.ehits) }}
+{{ scoring(instruments.ehits) }} -->
 
 
 {{ mods_banner_macro() }}

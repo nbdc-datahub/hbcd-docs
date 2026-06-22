@@ -1,5 +1,14 @@
 # PROMIS Perceived Stress/Social Support
 
+{{ readme(instruments.NAME) }}
+{{ alert_warning(instruments.NAME) }}
+{{ data_warning(instruments.NAME) }}
+{{ issues_banner_macro() }}
+
+{{ hbcd_mods(instruments.NAME) }}
+{{ scoring(instruments.NAME) }}
+
+
 <p style="font-size: 1.1em; font-weight: 500; color: gray;"><i>Patient-Reported Outcome Measurement Information System (<i>PROMIS</i>) Perceived Stress/Social Support</i></p>
 
 <table class="table-no-vertical-lines" style="font-size: 1em;">
