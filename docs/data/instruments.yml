@@ -1,18 +1,18 @@
 foodins:
   measure: 2-item Food Insecurity
   notes: null
-  acronym: null
+  acronym: USDA short form
   full_name: 2-item Food Insecurity
   domain: Social & Environmental Determinants
   table_name: sed_cg_foodins
   construct: Food Insecurity
   concatenated: null
   visits: V02, V03
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
   remote: remote
   duration: 1 min
@@ -44,17 +44,17 @@ aces:
   measure: Adverse Childhood Experiences
   notes: aces & ped aces
   acronym: ACEs
-  full_name: Adverse Childhood Experiences
+  full_name: Adverse Childhood Experiences (Adult)
   domain: Social & Environmental Determinants
-  table_name: sed_cg_ace / sed_cg_pedaces (Pediatric ACES)
+  table_name: sed_cg_ace
   construct: Adverse Childhood Experiences (Caregiver)
   concatenated: null
   visits: V04
-  child_specific: null
   type: Parent Survey
-  administration: null
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
   remote: in-person
   duration: 2 min
@@ -98,11 +98,11 @@ assist:
     (3-month anchor) V4 : Postpartum (12-month anchor)'
   concatenated: null
   visits: V01 - V04
-  child_specific: 'No'
   type: Parent Interview
-  administration: null
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Pregnant Participant or Birth Parent (as applicable)
+  administration: null
   admin_notes: Self-administered in Alabama
   remote: in-person
   duration: 3-5 min
@@ -149,6 +149,53 @@ assist:
   warning5_title: null
   warning5: null
   Column 29: null
+growth:
+  measure: Anthropometrics
+  notes: null
+  acronym: null
+  full_name: Anthropometrics
+  domain: Physical Health
+  table_name: ph_ch_anthro
+  construct: Growth
+  concatenated: null
+  visits: V02, V03, V04, V06, V08
+  type: Direct Assessment
+  child_specific: 'Yes'
+  respondent_category: null
+  respondent: null
+  administration: HBCD Study Staff
+  admin_notes: null
+  remote: in-person
+  duration: 5 min
+  qc: Monitor data dashboard for variable missingness, possible coding errors, and
+    data consistency.
+  hbcd_mods: null
+  scoring: "<b>Anthropometric Z-Score and Percentile Calculations</b>\n Age-based\
+    \ z-scores and percentiles for growth measurements were calculated for V02 onward\
+    \ using the <a href=\"https://github.com/CDC-DNPAO/WHOanthro\">WHOanthro</a> R\
+    \ package. Calculations are based on estimated date of delivery, inherently adjusting\
+    \ for pre-mature birth. WHO growth charts were used for participants &lt;2 years\
+    \ old, and CDC growth charts were used for participants 2 years and older."
+  alert1_title: null
+  alert1: null
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: Range Checks For Growth
+  warning1: null
+  warning2_title: Sex-Specific Birthweight for Gestational Age
+  warning2: Sex-specific birthweight for gestational age centiles and z-scores will
+    be calculated in future data releases using Intergrowth curves (<a href="https://doi.org/10.1016/S0140-6736(14)60932-6">Villar
+    et al. 2014</a>). In the meantime, data users can use these growth curves or ones
+    of their choice to calculate centiles and small/large for gestational age variables.
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  Column 29: null
 apa:
   measure: APA 1/2
   notes: null
@@ -159,11 +206,11 @@ apa:
   construct: Mental Health
   concatenated: null
   visits: V01, V02, V03
-  child_specific: 'No'
   type: Parent Survey
-  administration: null
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Pregnant Participant/Birth Parent (as applicable) or Primary Caregiver
+  administration: null
   admin_notes: null
   remote: either
   duration: 5 min
@@ -212,11 +259,11 @@ bfy:
   construct: Benefits/Services, Economic Stress
   concatenated: null
   visits: V01, V05, V07
-  child_specific: 'No'
   type: Parent Interview
-  administration: HBCD Study Staff
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: null
+  administration: HBCD Study Staff
   admin_notes: null
   remote: in-person
   duration: 4 min
@@ -257,11 +304,11 @@ basic_demo:
   construct: Demographics data derived from multiple sources
   concatenated: null
   visits: null
-  child_specific: null
   type: Derived Data
-  administration: null
+  child_specific: null
   respondent_category: null
   respondent: null
+  administration: null
   admin_notes: null
   remote: null
   duration: null
@@ -308,11 +355,11 @@ bayley_4:
   construct: Child Development (Cognitive, Language, and Motor)
   concatenated: null
   visits: V04
-  child_specific: 'Yes'
   type: Parent Interview
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: null
+  administration: null
   admin_notes: null
   remote: in-person
   duration: 60-90 min
@@ -379,11 +426,11 @@ bfh:
   concatenated: null
   visits: V02, V03, V04, V06, V08 V08 (only administered if still breastfeeding at
     prior visit)
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: Self-administered remotely
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: null
+  administration: Self-administered remotely
   admin_notes: null
   remote: remote
   duration: 1 min
@@ -421,11 +468,11 @@ bisq:
   construct: Sleep
   concatenated: null
   visits: V04
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: null
+  administration: null
   admin_notes: null
   remote: remote
   duration: 5 min
@@ -480,11 +527,11 @@ demographics_ch:
   construct: Child Demographics
   concatenated: null
   visits: V04, V06
-  child_specific: 'Yes'
   type: Parent Interview
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: null
+  administration: null
   admin_notes: null
   remote: null
   duration: 10 min
@@ -519,11 +566,11 @@ cabr_sf:
   construct: Intimate Partner Violence
   concatenated: null
   visits: V04, V06
-  child_specific: 'No'
   type: Parent Survey
-  administration: Self-administered in person in a private setting
+  child_specific: 'No'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered in person in a private setting
   admin_notes: null
   remote: in-person
   duration: 2 min
@@ -571,11 +618,11 @@ chaos:
   construct: Family Organization
   concatenated: null
   visits: V05, V07
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Primary Caregiver
+  administration: null
   admin_notes: null
   remote: remote
   duration: 4-8 min
@@ -620,11 +667,11 @@ employment:
   construct: Current Employment
   concatenated: null
   visits: V05
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: Self-administered in-person or remotely
+  child_specific: 'Yes'
   respondent_category: Parent on Self
   respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered in-person or remotely
   admin_notes: null
   remote: either
   duration: 5 min
@@ -658,11 +705,11 @@ demographics:
   construct: Demographics (Birth Parent/Alternative Caregiver)
   concatenated: null
   visits: V01, V04, V06
-  child_specific: 'No'
   type: Parent Interview
-  administration: null
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
   remote: null
   duration: 10 min
@@ -697,11 +744,11 @@ ptsd:
   construct: PTSD/Acute Stress Disorder Symptom Severity
   concatenated: null
   visits: V01, V02, V03
-  child_specific: 'No'
   type: Parent Survey
-  administration: Self-administered in-person or remotely
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Pregnant Participant/Birth Parent (as applicable) or Primary Caregiver
+  administration: Self-administered in-person or remotely
   admin_notes: null
   remote: either
   duration: 3 min
@@ -754,11 +801,11 @@ erica:
   construct: Emotional Regulation, Parenting, Caregiver-Child Relationship
   concatenated: null
   visits: V03
-  child_specific: 'Yes'
   type: Parent Interview
-  administration: HBCD Study Staff
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff
   admin_notes: null
   remote: in-person
   duration: 20-30 min
@@ -826,11 +873,11 @@ ecpromis_pags:
   construct: Physical Activity
   concatenated: null
   visits: V04, V06
-  child_specific: 'Yes'
   type: Parent Survey or Interview
-  administration: HBCD Study Staff or Self
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
   remote: either
   duration: 2 min
@@ -875,11 +922,11 @@ ecpromis_sleep:
   construct: Sleep
   concatenated: null
   visits: V04, V06
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: HBCD Study Staff or Self
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
   remote: either
   duration: 1 min
@@ -925,11 +972,11 @@ ecpromis:
   visits: 'Inf: V03, V05
 
     1to5: V03, V05, V07'
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: null
+  administration: null
   admin_notes: null
   remote: remote
   duration: 1-2 min
@@ -981,11 +1028,11 @@ ecpromis_peer:
   construct: Peer Relationships
   concatenated: null
   visits: V05, V07, V09
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Primary Caregiver
+  administration: null
   admin_notes: null
   remote: remote
   duration: 1-2 min
@@ -1030,11 +1077,11 @@ ecpromis_selfreg:
   construct: Self-Regulation and Flexibility
   concatenated: null
   visits: V05, V07, V09
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Primary Caregiver
+  administration: null
   admin_notes: null
   remote: remote
   duration: 1-2 min
@@ -1079,11 +1126,11 @@ epds:
   construct: Postnatal Depression
   concatenated: null
   visits: V01, V02, V03
-  child_specific: 'No'
   type: Parent Survey
-  administration: Self-administered in-person or remotely
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Pregnant Participant or Birth Parent (as applicable)
+  administration: Self-administered in-person or remotely
   admin_notes: null
   remote: either
   duration: 3 min
@@ -1129,11 +1176,11 @@ discr:
   construct: Experiences of Unfair Treatment
   concatenated: null
   visits: V01, V05, V07
-  child_specific: 'No'
   type: Parent Survey
-  administration: Self-administered remotely
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered remotely
   admin_notes: null
   remote: remote
   duration: 3 min
@@ -1168,11 +1215,11 @@ fad:
   construct: Global Functioning of the Family Unit
   concatenated: null
   visits: V04, V06
-  child_specific: 'No'
   type: Parent Interview or Survey
-  administration: null
+  child_specific: 'No'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
   remote: either
   duration: 2 min
@@ -1219,11 +1266,11 @@ gled:
   construct: Neighborhood Measures
   concatenated: geocoding/
   visits: null
-  child_specific: 'Yes'
   type: Derived Data
-  administration: null
+  child_specific: 'Yes'
   respondent_category: null
   respondent: null
+  administration: null
   admin_notes: null
   remote: null
   duration: null
@@ -1266,53 +1313,6 @@ gled:
   warning5_title: null
   warning5: null
   Column 29: null
-growth:
-  measure: Growth
-  notes: null
-  acronym: null
-  full_name: Growth
-  domain: Physical Health
-  table_name: ph_ch_anthro
-  construct: Growth
-  concatenated: null
-  visits: V02, V03, V04, V06, V08
-  child_specific: 'Yes'
-  type: Direct Assessment
-  administration: HBCD Study Staff
-  respondent_category: null
-  respondent: null
-  admin_notes: null
-  remote: in-person
-  duration: 5 min
-  qc: Monitor data dashboard for variable missingness, possible coding errors, and
-    data consistency.
-  hbcd_mods: null
-  scoring: "<b>Anthropometric Z-Score and Percentile Calculations</b>\n Age-based\
-    \ z-scores and percentiles for growth measurements were calculated for V02 onward\
-    \ using the <a href=\"https://github.com/CDC-DNPAO/WHOanthro\">WHOanthro</a> R\
-    \ package. Calculations are based on estimated date of delivery, inherently adjusting\
-    \ for pre-mature birth. WHO growth charts were used for participants &lt;2 years\
-    \ old, and CDC growth charts were used for participants 2 years and older."
-  alert1_title: null
-  alert1: null
-  alert2_title: null
-  alert2: null
-  alert3_title: null
-  alert3: null
-  warning1_title: Range Checks For Growth
-  warning1: null
-  warning2_title: Sex-Specific Birthweight for Gestational Age
-  warning2: Sex-specific birthweight for gestational age centiles and z-scores will
-    be calculated in future data releases using Intergrowth curves (<a href="https://doi.org/10.1016/S0140-6736(14)60932-6">Villar
-    et al. 2014</a>). In the meantime, data users can use these growth curves or ones
-    of their choice to calculate centiles and small/large for gestational age variables.
-  warning3_title: null
-  warning3: null
-  warning4_title: null
-  warning4: null
-  warning5_title: null
-  warning5: null
-  Column 29: null
 home21:
   measure: HOME-21 Infant-Toddler
   notes: null
@@ -1324,11 +1324,11 @@ home21:
     in the Home'
   concatenated: null
   visits: V04, V06
-  child_specific: 'No'
   type: Parent Interview or Survey
-  administration: null
+  child_specific: 'No'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
   remote: either
   duration: 10 min
@@ -1376,11 +1376,11 @@ chem_exp:
   construct: Household Chemical Exposures
   concatenated: null
   visits: V05
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: Self-administered in-person or remotely
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered in-person or remotely
   admin_notes: null
   remote: either
   duration: 5 min
@@ -1422,11 +1422,11 @@ illumina:
     \  hbcd.{bed|bim|fam}"
   visits: Samples are assayed from one sample (from parent and child), but may come
     from any visit (V01-V06) based on DNA yields.
-  child_specific: null
   type: Direct Assessment
-  administration: null
+  child_specific: null
   respondent_category: null
   respondent: Birth Parent & Child
+  administration: null
   admin_notes: null
   remote: null
   duration: null
@@ -1521,11 +1521,11 @@ ibqr:
     / Extraversion
   concatenated: null
   visits: V03, V05
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  child_specific: 'Yes'
   respondent_category: null
   respondent: Primary Caregiver
+  administration: null
   admin_notes: null
   remote: remote
   duration: 7-10 min
@@ -1586,11 +1586,11 @@ nutrition:
   construct: Nutrition
   concatenated: null
   visits: V05
-  child_specific: 'Yes'
   type: Parent Interview
-  administration: HBCD Study Staff or Self
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
   remote: either
   duration: 10 min
@@ -1625,11 +1625,11 @@ inf_sensor_q:
   construct: Motor Development, Regulation (Sleep/Wake)
   concatenated: null
   visits: V02, V03
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Primary Caregiver
+  administration: null
   admin_notes: null
   remote: remote
   duration: null
@@ -1667,11 +1667,11 @@ lead:
   construct: Lead Exposures
   concatenated: null
   visits: V05
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: Self-administered in-person or remotely
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered in-person or remotely
   admin_notes: null
   remote: either
   duration: 5 min
@@ -1716,11 +1716,11 @@ mb_cdi:
   construct: Language Development
   concatenated: null
   visits: V04, V06
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
   remote: in-person
   duration: 20-60 min
@@ -1787,11 +1787,11 @@ med_hist:
   construct: Medical History
   concatenated: null
   visits: V04, V06
-  child_specific: 'Yes'
   type: Parent Interview
-  administration: HBCD Study Staff or Self
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
   remote: either
   duration: 10 min
@@ -1830,11 +1830,11 @@ mri_forms:
   construct: Pre-/Post-MRI Tech Checklists 1 <i>(Scan Session)</i> & 2 <i>(Data)<i>
   concatenated: null
   visits: V02 - V06
-  child_specific: 'Yes'
   type: MRI Technician Form
-  administration: null
+  child_specific: 'Yes'
   respondent_category: 'N/A: RA Form'
   respondent: null
+  administration: null
   admin_notes: null
   remote: in-person
   duration: null
@@ -1868,11 +1868,11 @@ maps_tl:
   construct: Irritability
   concatenated: null
   visits: V03
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Primary Caregiver
+  administration: null
   admin_notes: null
   remote: remote
   duration: 5 min
@@ -1911,11 +1911,11 @@ mlds:
   construct: Multilingual Exposure
   concatenated: null
   visits: V03, V04, V05, V07
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: Self-administered remotely
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Primary Caregiver
+  administration: Self-administered remotely
   admin_notes: If the caregiver does not complete the assessment remotely, it is conducted
     at the visit to document the child’s language exposure environments. The instrument
     can be administered by an HBCD Study team member in-person or via video as needed.
@@ -1960,11 +1960,11 @@ olink:
   concatenated: "└── proteins/olink/inflammation/\n    ├── Olink_allplates_long.csv\n\
     \    └── Olink_allplates_wide.csv"
   visits: V01
-  child_specific: 'No'
   type: Direct Assessment
-  administration: null
+  child_specific: 'No'
   respondent_category: null
   respondent: Pregnant Participant
+  administration: null
   admin_notes: null
   remote: in-person
   duration: null
@@ -2011,11 +2011,11 @@ ehits:
   construct: Intimate Partner Violence
   concatenated: null
   visits: V01
-  child_specific: 'No'
   type: Parent Interview
-  administration: null
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: null
+  administration: null
   admin_notes: null
   remote: in-person
   duration: 2 min
@@ -2045,6 +2045,44 @@ ehits:
   warning5_title: null
   warning5: null
   Column 29: null
+pedaces:
+  measure: Pediatric Adverse Childhood Experiences
+  notes: null
+  acronym: Ped ACEs
+  full_name: Pediatric Adverse Childhood Experiences
+  domain: Social & Environmental Determinants
+  table_name: sed_cg_pedaces
+  construct: Adverse Childhood Experiences (Child)
+  concatenated: null
+  visits: V04, V06
+  type: null
+  child_specific: 'Yes'
+  respondent_category: null
+  respondent: null
+  administration: null
+  admin_notes: null
+  remote: null
+  duration: null
+  qc: null
+  hbcd_mods: null
+  scoring: null
+  alert1_title: null
+  alert1: null
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: null
+  warning1: null
+  warning2_title: null
+  warning2: null
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  Column 29: null
 fam_mh:
   measure: Personal and Family Psychiatric History
   notes: null
@@ -2055,11 +2093,11 @@ fam_mh:
   construct: Personal and Family Mental Health
   concatenated: null
   visits: V01
-  child_specific: 'No'
   type: Parent Survey
-  administration: Self-administered in-person
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Pregnant Participant
+  administration: Self-administered in-person
   admin_notes: null
   remote: either
   duration: 5 min
@@ -2093,11 +2131,11 @@ nbhsaf:
   construct: Neighborhood Safety
   concatenated: null
   visits: V01, V02, V07, V09
-  child_specific: 'No'
   type: Parent Survey
-  administration: Self-administered in-person or remotely
+  child_specific: 'No'
   respondent_category: null
   respondent: null
+  administration: Self-administered in-person or remotely
   admin_notes: null
   remote: either
   duration: 1 min
@@ -2131,11 +2169,11 @@ prescan_q:
   construct: Infant Sleep Environment
   concatenated: null
   visits: V02 - V06
-  child_specific: 'Yes'
   type: Parent Interview
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: null
+  administration: null
   admin_notes: null
   remote: null
   duration: null
@@ -2170,11 +2208,11 @@ promis:
   construct: Perceived Stress/Social Support
   concatenated: null
   visits: V01, V02, V03
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Primary Caregiver
+  administration: null
   admin_notes: null
   remote: remote
   duration: 4 min
@@ -2210,11 +2248,11 @@ paces:
   construct: Protective Factors
   concatenated: null
   visits: V01
-  child_specific: 'No'
   type: Parent Survey
-  administration: Self-administered in-person or remotely
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: null
+  administration: Self-administered in-person or remotely
   admin_notes: null
   remote: null
   duration: null
@@ -2248,11 +2286,11 @@ screenq:
   construct: Media Use
   concatenated: null
   visits: V04, V06
-  child_specific: 'Yes'
   type: Parent Interview
-  administration: HBCD Study Staff or Self
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
   remote: either
   duration: 5 min
@@ -2297,11 +2335,11 @@ shs:
   construct: Second Hand Smoke
   concatenated: null
   visits: V05
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: Self-administered in-person or remotely
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered in-person or remotely
   admin_notes: null
   remote: either
   duration: 1 min
@@ -2346,11 +2384,11 @@ spm_2:
   construct: Sensory Processing/Integration
   concatenated: null
   visits: V03 (Infant); V05 (Toddler)
-  child_specific: 'Yes'
   type: Parent Survey
-  administration: Self-administered remotely
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Primary Caregiver
+  administration: Self-administered remotely
   admin_notes: null
   remote: remote
   duration: 12 min
@@ -2394,11 +2432,11 @@ study_nav:
   construct: Recruitment/Retention
   concatenated: study_navigator/
   visits: Filled out by the Study Navigator during and/or between study visits.
-  child_specific: null
   type: Parent Interview
-  administration: null
+  child_specific: null
   respondent_category: null
   respondent: Primary Caregiver
+  administration: null
   admin_notes: null
   remote: either
   duration: null
@@ -2449,11 +2487,11 @@ subst:
   construct: Substance Use in Pregnancy
   concatenated: null
   visits: V02
-  child_specific: 'No'
   type: Parent Survey
-  administration: Self-administered in-person
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Birth Parent
+  administration: Self-administered in-person
   admin_notes: null
   remote: in-person
   duration: 5 min
@@ -2540,11 +2578,11 @@ tlfb:
   construct: Substance Use Before and During Pregnancy
   concatenated: null
   visits: V01, V02
-  child_specific: 'No'
   type: Parent Interview
-  administration: HBCD Study Staff
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff
   admin_notes: self-administered in Alabama
   remote: in-person
   duration: 10 min
@@ -2605,11 +2643,11 @@ tic:
     in who provides primary care
   concatenated: null
   visits: V02 onward
-  child_specific: 'Yes'
   type: Parent Interview or Survey
-  administration: null
+  child_specific: 'Yes'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: RA administered via phone
   remote: remote
   duration: 5 min
@@ -2668,11 +2706,11 @@ nails:
   construct: Drug Panel, Environmental Exposure
   concatenated: null
   visits: V01, V02
-  child_specific: 'No'
   type: Direct Assessment
-  administration: Self-administered in-person
+  child_specific: 'No'
   respondent_category: null
   respondent: Pregnant Participant or Birth Parent (as applicable)
+  administration: Self-administered in-person
   admin_notes: null
   remote: in-person
   duration: 5 min
@@ -2724,11 +2762,11 @@ urine:
   construct: Drug Panel, Toxins
   concatenated: null
   visits: V01
-  child_specific: 'No'
   type: Direct Assessment
-  administration: Self-administered in-person
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Pregnant Participant or Birth Parent (as applicable)
+  administration: Self-administered in-person
   admin_notes: null
   remote: in-person
   duration: 5 min
@@ -2775,11 +2813,11 @@ via:
   construct: Acculturation
   concatenated: null
   visits: V05
-  child_specific: 'No'
   type: Parent Interview or Survey
-  administration: HBCD Study Staff or Self
+  child_specific: 'No'
   respondent_category: Parent on Self
   respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
   remote: either
   duration: 5 min
@@ -2846,11 +2884,11 @@ vineland_3:
   construct: Adaptive Behavior
   concatenated: null
   visits: V05, V09, V10
-  child_specific: 'No'
   type: Parent Survey
-  administration: Self-administered remotely
+  child_specific: 'No'
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered remotely
   admin_notes: null
   remote: remote
   duration: 15-30 min
@@ -2914,11 +2952,11 @@ visit_info:
   construct: Participant visit information
   concatenated: null
   visits: All
-  child_specific: null
   type: Derived Data
-  administration: null
+  child_specific: null
   respondent_category: null
   respondent: null
+  administration: null
   admin_notes: null
   remote: null
   duration: null
@@ -2952,11 +2990,11 @@ vs100:
   construct: Vision
   concatenated: null
   visits: V04, V06, V08
-  child_specific: 'Yes'
   type: Direct Assessment
-  administration: HBCD Study Staff
+  child_specific: 'Yes'
   respondent_category: Child on Self
   respondent: Child
+  administration: HBCD Study Staff
   admin_notes: Only administered if parent responds NO to eligibility question (“Have
     you been told that your child cannot see at all?” (i.e., cannot see shadows or
     distinguish light and dark)

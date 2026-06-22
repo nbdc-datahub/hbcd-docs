@@ -236,17 +236,17 @@ Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes impl
 <tbody>
 
 <tr>
-<td>Growth</td>
+<td>Anthropometrics</td>
 <td><i class="fas fa-bug icon-bug"></i> The data dictionary element <code>type_data</code> for <code>average_bmi</code> will be corrected to <code>double</code> (currently=<code>character</code>).</td>
 <td><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
-<td>Growth</td>
+<td>Anthropometrics</td>
 <td><i class="fas fa-bug icon-bug"></i> <code>ph_ch_anthro</code> filter ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#data-warning">Range Checks</a>) and will updated to be age/visit-specific </td>
 <td><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
-<td>Growth</td>
+<td>Anthropometrics</td>
 <td><i class="fas fa-bug icon-bug"></i> Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
 <td><span class='pr-pill pr-general'>3</span></td>
 </tr>
@@ -258,7 +258,7 @@ Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
 </tr>
 
 <tr>
-<td>Growth</td>
+<td>Anthropometrics</td>
 <td><i class="fa-solid fa-rotate icon-rotate"></i>
 Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#data-warning">Sex-Specific Birthweight for GA</a>).</td>
 <td><span class='pr-pill pr-general'>3</span></td>

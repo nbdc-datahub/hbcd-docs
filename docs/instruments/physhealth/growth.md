@@ -1,7 +1,7 @@
 <!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE - data warning -->
 
 
-# Growth
+# Anthropometrics
 
 {{ readme(instruments.growth) }}
 {{ alert_warning(instruments.growth) }}
@@ -53,7 +53,7 @@ Sex-specific birthweight for gestational age centiles and z-scores will be calcu
 
 ## Instrument Details
 
-Growth is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children, it will also include abdominal circumference (cm). 
+Anthropometrics is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children, it will also include abdominal circumference (cm). 
 
 {{ scoring(instruments.growth) }}
 
