@@ -324,6 +324,12 @@ PATCH RELEASE
 </thead>
 <tbody>
 <tr>
+  <td><a href="physhealth/growth" target="_blank">Anthropometrics</a></td>
+  <td></td>
+  <td>Growth</td>
+  <td><code>ph_ch_anthro</code></td>
+</tr> 
+<tr>
   <td><a href="physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
   <td></td>
   <td>Sleep</td>
@@ -347,12 +353,6 @@ PATCH RELEASE
   <td>Sleep</td>
   <td><code>ph_cg_pms__sleep</code></td>
 </tr>
-<tr>
-  <td><a href="physhealth/growth" target="_blank">Height/Weight/Head Circumference</a></td>
-  <td></td>
-  <td>Growth</td>
-  <td><code>ph_ch_anthro</code></td>
-</tr> 
 <tr>
   <td><a href="physhealth/medical-history" target="_blank">Medical History</a></td>
   <td></td>

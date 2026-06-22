@@ -1,6 +1,9 @@
-# Growth
+# Anthropometrics
 
+<div class="subtle-note">Height/Weight/Head Circumference</div>
 <!-- LUCI INTERNAL PATCH NOTE: update this page from 2.1 branch -->
+
+<br>
 
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
@@ -17,7 +20,12 @@
 
 <tr>
   <td><b>Study Visits</b></td>
-  <td>V02, V03, V04, V06, V08</td>
+  <td>      
+    <ul>
+      <li>V02-V04, V06, & V08: Height/Weight/Head Circumference</li>
+      <li>V08 & V10-V14: Height/Weight/Abdominal circumference/BI/BP</li>
+      </ul>
+    </td>
 </tr>
 
 <tr>
@@ -91,7 +99,7 @@ Sex-specific birthweight for gestational age centiles and z-scores will be calcu
 
 ## Instrument Details
 
-Growth is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children, it will also include abdominal circumference (cm). 
+Anthropometrics is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children, it will also include abdominal circumference (cm). 
 
 ## References
 
