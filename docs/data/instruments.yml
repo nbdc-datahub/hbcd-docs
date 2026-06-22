@@ -1431,8 +1431,8 @@ illumina:
   remote: null
   duration: null
   qc:
-  - Check that sampled ID matches from Sampled File and Lasso Database.
-  - Check that sample specific barcode matches between Sampled file and Lasso Database.
+  - Check that sampled ID and sample-specific barcodes match from Sampled File and
+    Lasso Database.
   - Check that genomic sex matches with sex at birth.
   - Check that genetic relatedness of each sample matches Lasso data (i.e., that IBD
     is ~0.25 between the birth parent and child as well as siblings; evaluate potential
