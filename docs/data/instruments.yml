@@ -1131,9 +1131,9 @@ discr:
   visits: V01, V05, V07
   child_specific: 'No'
   type: Parent Survey
-  administration: null
+  administration: Self-administered remotely
   respondent_category: Parent on Self
-  respondent: null
+  respondent: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: remote
   duration: 3 min
@@ -1378,14 +1378,16 @@ chem_exp:
   visits: V05
   child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  administration: Self-administered in-person or remotely
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
   duration: 5 min
   qc: Response proportions and unusual missing patterns were reviewed.
-  hbcd_mods: null
+  hbcd_mods: Certain instruction item prompts were modified for consistency and a
+    subset of items were removed, updated, or added - <a href="../chem-exposures_hbcd-mod.html"
+    target="_blank">see here for details</a>.
   scoring: null
   alert1_title: null
   alert1: null
@@ -1394,7 +1396,11 @@ chem_exp:
   alert3_title: null
   alert3: null
   warning1_title: null
-  warning1: null
+  warning1: Participants report information for the child’s primary residence. If
+    a child spends at least 2-days per week in multiple homes, reporters are asked
+    to provide information for the home they are most familiar with. As a result,
+    exposures to secondhand smoke or chemicals in those additional environments is
+    not captured, which may result in incomplete exposure data.
   warning2_title: null
   warning2: null
   warning3_title: null
@@ -1651,7 +1657,7 @@ inf_sensor_q:
   warning5_title: null
   warning5: null
   Column 29: null
-lead_exp:
+lead:
   measure: Lead Exposures
   notes: null
   acronym: null
@@ -1663,7 +1669,7 @@ lead_exp:
   visits: V05
   child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  administration: Self-administered in-person or remotely
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
   admin_notes: null
@@ -2089,7 +2095,7 @@ nbhsaf:
   visits: V01, V02, V07, V09
   child_specific: 'No'
   type: Parent Survey
-  administration: null
+  administration: Self-administered in-person or remotely
   respondent_category: null
   respondent: null
   admin_notes: null
@@ -2153,11 +2159,12 @@ prescan_q:
   warning5_title: null
   warning5: null
   Column 29: null
-strsup:
+promis:
   measure: PROMIS Perceived Stress/Social Support
   notes: null
   acronym: PROMIS
-  full_name: PROMIS Perceived Stress/Social Support
+  full_name: Patient-Reported Outcome Measurement Information System Perceived Stress/Social
+    Support
   domain: Social & Environmental Determinants
   table_name: sed_bm_strsup
   construct: Perceived Stress/Social Support
@@ -2173,7 +2180,8 @@ strsup:
   duration: 4 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
-  hbcd_mods: null
+  hbcd_mods: Response options for the PROMIS were modified to include the addition
+    of “Don’t know” and “Decline to answer.”
   scoring: null
   alert1_title: null
   alert1: null
@@ -2203,8 +2211,8 @@ paces:
   concatenated: null
   visits: V01
   child_specific: 'No'
-  type: null
-  administration: null
+  type: Parent Survey
+  administration: Self-administered in-person or remotely
   respondent_category: Parent on Self
   respondent: null
   admin_notes: null
@@ -2291,15 +2299,20 @@ shs:
   visits: V05
   child_specific: 'Yes'
   type: Parent Survey
-  administration: null
+  administration: Self-administered in-person or remotely
   respondent_category: Parent on Child
   respondent: Birth Parent or Primary Caregiver
   admin_notes: null
   remote: either
   duration: 1 min
   qc: Response missingness and proportions were reviewed.
-  hbcd_mods: null
-  scoring: null
+  hbcd_mods: 'Prompts for instruction items were modified to be consistent with the
+    housing/residence description and remove information on dose of exposure (given
+    lack of validation of dose-related information). Two items were removed: 2 1b
+    (<i>"How often, on average, are cigarettes smoked inside the child’s home or dwelling?"</i>)
+    and 3 2b-e (<i>Specifics on non-cigarette products used most often, and their
+    frequency</i>).'
+  scoring: Responses can be used in binary form (yes/no).
   alert1_title: null
   alert1: null
   alert2_title: null
@@ -2307,7 +2320,11 @@ shs:
   alert3_title: null
   alert3: null
   warning1_title: null
-  warning1: null
+  warning1: Participants report information for the child’s primary residence. If
+    a child spends at least 2-days per week in multiple homes, reporters are asked
+    to provide information for the home they are most familiar with. As a result,
+    exposures to secondhand smoke or chemicals in those additional environments is
+    not captured, which may result in incomplete exposure data.
   warning2_title: null
   warning2: null
   warning3_title: null
@@ -2609,13 +2626,27 @@ tic:
   hbcd_mods: null
   scoring: null
   alert1_title: null
-  alert1: null
+  alert1: 'TIC information alone or cross-tabulated with other HBCD data can result
+    in cells containing data from 1 to 10 persons (“small cells”). Small cells increase
+    the risk that a participant can be identified. Under the NBDC Data Use Certification
+    agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC
+    in a manner that establishes the individual identity of study participants or
+    establishes identities of their relatives. The DUC also prohibits you from publishing
+    or otherwise disseminating derived data that could help identify persons. To help
+    maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications
+    or other public reporting of the data and analyses.'
   alert2_title: null
   alert2: null
   alert3_title: null
   alert3: null
   warning1_title: null
-  warning1: null
+  warning1: Typically, there is only one birth parent TIC Screener form per timepoint.
+    However, if a TIC occurred, there is sometimes one TIC screener filled out when
+    talking to the birth parent and a second screener filled out when talking to the
+    alternate caregiver. This is not an error but reflects how these data were collected.
+    If a TIC occurred, another possibility is that there is only an alternate caregiver
+    TIC form (and not a birth parent form because we were unable to get in touch with
+    the birth parent).
   warning2_title: null
   warning2: null
   warning3_title: null
@@ -2746,7 +2777,7 @@ via:
   visits: V05
   child_specific: 'No'
   type: Parent Interview or Survey
-  administration: null
+  administration: HBCD Study Staff or Self
   respondent_category: Parent on Self
   respondent: Birth Parent or Primary Caregiver
   admin_notes: null
@@ -2756,13 +2787,44 @@ via:
     child's grandparents were born outside the U.S. If all are U.S.-born, the survey
     platform (REDCap) automatically ends the questionnaire after the screening questions.
   hbcd_mods: null
-  scoring: null
+  scoring: 'The family culture subscore is the mean of the 9 items asking about "family
+    culture," whereas the mainstream subscore is the mean of the 9 items asking about
+    "American culture."
+
+
+    Family culture questions are even-numbered: <code>sed_cg_via_006</code> through
+    <code>sed_cg_via_022</code>.
+
+
+    American culture questions are odd-numbered: <code>sed_cg_via_007</code> through
+    <code>sed_cg_via_023</code>.
+
+
+    If a participant chooses 777 ("Decline to answer"), or 999 ("Don''t know"), please
+    do not include those values in the mean score calculations.
+
+
+    High scores on each 9-item subscale can be interpreted as a positive orientation
+    toward the specific cultural group and/or higher levels of identification with
+    the culture represented. A high score on both subscales is associated with having
+    a strong bicultural identity. Subscale mean scores can be used independently and/or
+    compared by researchers in a variety of ways, depending on the research question.'
   alert1_title: null
-  alert1: null
+  alert1: When using HBCD data, all data users must agree to responsible use as described
+    in the data use certification (DUC). When conceptualizing studies, analyzing data,
+    and communicating analyses hat address socially sensitive topics, it is critical
+    that data users consider strategies to avoid stigmatization of any groups and
+    avoid perpetuating harmful biases.
   alert2_title: null
-  alert2: null
+  alert2: Immigration status was not collected as part of this measure, and data users
+    should not infer or assume immigration status in their analyses or interpretations.
   alert3_title: null
-  alert3: null
+  alert3: Some variables in this release have small cell sizes. As a condition of
+    using these data, specified in the DUC, you agree not to identify any individual
+    from whom data was obtained and not to identify their relatives. You agree to
+    a minimum cell threshold of 10 in any public reporting of the data (publications,
+    posters, or other presentations). Protecting participants’ anonymity demonstrates
+    respect for them and minimizes their research-related risks.
   warning1_title: null
   warning1: null
   warning2_title: null

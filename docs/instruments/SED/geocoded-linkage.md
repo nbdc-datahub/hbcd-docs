@@ -176,5 +176,3 @@ The GLED data in the current release include variables linked to the residential
 <div class="references"> 
 <p>Fan, C. C., Marshall, A., Smolker, H., Gonzalez, M. R., Tapert, S. F., Barch, D. M., Sowell, E., Dowling, G. J., Cardenas-Iniguez, C., Ross, J., Thompson, W. K., & Herting, M. M. (2021). Adolescent Brain Cognitive Development (ABCD) study Linked External Data (LED): Protocol and practices for geocoding and assignment of environmental data. <i>Developmental Cognitive Neuroscience</i> , 52(101030), 101030. <a href="https://doi.org/10.1016/j.dcn.2021.101030">https://doi.org/10.1016/j.dcn.2021.101030</a></p>  
 </div>
-
-<br>

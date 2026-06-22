@@ -1,36 +1,28 @@
+<!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE -->
+
+
 # Protective and Compensatory Experience (*PACEs*)
 
-{{ readme(instruments.NAME) }}
-{{ alert_warning(instruments.NAME) }}
-{{ data_warning(instruments.NAME) }}
-{{ issues_banner_macro() }}
-
-{{ hbcd_mods(instruments.NAME) }}
-{{ scoring(instruments.NAME) }}
-
-
-<table class="table-no-vertical-lines">
+<table class="table-no-vertical-lines readme-intro">
 <tbody>
 <tr>
   <td></td>
   <td>Current PACEs (<b>C-PACES</b>)</td>
   <td>Retrospective PACEs &lt;18 (<b>R-PACES</b>)</td>
 </tr>
-<tr><td><b>Table Names</b></td><td><code>sed_bm_paces</code></td><td><code>sed_cg_paces</code></td></tr>
-<tr><td><b>Study Visits</b></td><td>V01</td><td>V05</td></tr>
-<tr><td><b>Construct</b></td><td  colspan="2">Protective Factors</td></tr>
-<td><b>Administration</b></td><td colspan="2">
-  <ul>
-  <li><b>Child-specific</b>: No</li>
-  <li><b>Respondent</b>: Parent on Self</li>
-  <li><b>Method</b>: Self-administered, in-person or remote</li>
-  </ul>
-</tr>
-<tr><td><b>Quality Control</b></td>
+<tr><td>Table Names</td><td><code>sed_bm_paces</code></td><td><code>sed_cg_paces</code></td></tr>
+<tr><td>Study Visits</td><td>V01</td><td>V05</td></tr>
+<tr><td>Construct</td><td  colspan="2">Protective Factors</td></tr>
+<td>Type</td><td colspan="2">Parent Survey</td></tr>
+<tr><td>Quality Control</td>
 <td colspan="2">Data dashboard was monitored for variable missingness, possible coding errors, scoring verification, and data consistency.</td>
 </tr>
 </tbody>
 </table>
+
+<!-- {{ readme(instruments.paces) }} -->
+{{ alert_warning(instruments.paces) }}
+{{ data_warning(instruments.paces) }}
 
 {{ issues_banner_macro() }}
 
@@ -50,6 +42,11 @@ Protective and Compensatory Experience (PACEs) is a 10-question scale with score
 </tr>
 </tbody>
 </table>
+
+
+{{ hbcd_mods(instruments.paces) }}
+{{ scoring(instruments.paces) }}
+
 
 {{ mods_banner_macro() }}
 <div class="collapsible-content">

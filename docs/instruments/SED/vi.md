@@ -1,38 +1,8 @@
-# Vancouver Index of Acculturation (VIA)
+# Vancouver Index of Acculturation
 
-{{ readme(instruments.NAME) }}
-{{ alert_warning(instruments.NAME) }}
-{{ data_warning(instruments.NAME) }}
-{{ issues_banner_macro() }}
-
-{{ hbcd_mods(instruments.NAME) }}
-{{ scoring(instruments.NAME) }}
-
-
-<table class="table-no-vertical-lines">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>sed_cg_via</code></td></tr>
-<tr><td><b>Construct</b></td><td>Acculturation</td></tr>
-<tr><td><b>Study Visits</b></td><td>V05</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: No<br>
-<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
-<b>Method</b>: HBCD Study staff or self-administered, in person or remote (5 min estimated duration)
-</td></tr>
-<tr>
-<td><b>Quality Control</b></td>
-<td>The VIA is administered only if the caregiver, spouse/partner, or any of the child's grandparents were born outside the U.S. If all are U.S.-born, the survey platform (REDCap) automatically ends the questionnaire after the screening questions.</td>
-</tr>
-</tbody>
-</table>
-
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p>When using HBCD data, all data users must agree to responsible use as described in the data use certification (DUC). When conceptualizing studies, analyzing data, and communicating analyses hat address socially sensitive topics, it is critical that data users consider strategies to avoid stigmatization of any groups and avoid perpetuating harmful biases.</p> 
-<p>Immigration status was not collected as part of this measure, and data users should not infer or assume immigration status in their analyses or interpretations.</p> 
-<p>Some variables in this release have small cell sizes. As a condition of using these data, specified in the DUC, you agree not to identify any individual from whom data was obtained and not to identify their relatives. You agree to a minimum cell threshold of 10 in any public reporting of the data (publications, posters, or other presentations). Protecting participants’ anonymity demonstrates respect for them and minimizes their research-related risks.</p>
-</div>
-
+{{ readme(instruments.via) }}
+{{ alert_warning(instruments.via) }}
+{{ data_warning(instruments.via) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
@@ -45,14 +15,8 @@ Some immigrants may consider American culture as their family culture. They can 
 
 Participants are not to be asked about immigration or documentation status. The intent is that they only answer this survey if they feel comfortable revealing their generational status (first, second, or third generation immigrant) based on the gating questions provided.
 
-{{ scoring_banner_macro() }}
-<div class="collapsible-content">
-<p>The family culture subscore is the mean of the 9 items asking about "family culture," whereas the mainstream subscore is the mean of the 9 items asking about "American culture."</p>
-<p>Family culture questions are even-numbered: <code>sed_cg_via_006</code> through <code>sed_cg_via_022</code>.</p>
-<p>American culture questions are odd-numbered: <code>sed_cg_via_007</code> through <code>sed_cg_via_023</code>.</p>
-<p>If a participant chooses 777 ("Decline to answer"), or 999 ("Don't know"), please do not include those values in the mean score calculations.</p>
-<p>High scores on each 9-item subscale can be interpreted as a positive orientation toward the specific cultural group and/or higher levels of identification with the culture represented. A high score on both subscales is associated with having a strong bicultural identity. Subscale mean scores can be used independently and/or compared by researchers in a variety of ways, depending on the research question.</p>
-</div>
+{{ hbcd_mods(instruments.via) }}
+{{ scoring(instruments.via) }}
 
 ## References
 
@@ -60,3 +24,16 @@ Participants are not to be asked about immigration or documentation status. The 
   <p>Ryder, A. G., Alden, L. E., & Paulhus, D. L. (2000). Is acculturation unidimensional or bidimensional? A head-to-head comparison in the prediction of personality, self-identity, and adjustment. <i>Journal of Personality and Social Psychology</i>, 79(1), 49–65. <a href="https://doi.org/10.1037//0022-3514.79.1.49">doi: 10.1037//0022-3514.79.1.49.</a> PMID: 10909877.</p>
   <p>Testa, S., Doucerain, M. M., Miglietta, A., Jurcik, T., Ryder, A. G., & Gattino, S. (2019). The Vancouver Index of Acculturation (VIA): New evidence on dimensionality and measurement invariance across two cultural settings. <i>JInternational Journal of Intercultural Relations</i>, 71, 60–71. <a href="https://doi.org/10.1016/j.ijintrel.2019.04.001">https://doi.org/10.1016/j.ijintrel.2019.04.001</a></p>
 </div>
+
+
+
+<!-- 
+
+{{ scoring_banner_macro() }}
+<div class="collapsible-content">
+<p>The family culture subscore is the mean of the 9 items asking about "family culture," whereas the mainstream subscore is the mean of the 9 items asking about "American culture."</p>
+<p>Family culture questions are even-numbered: <code>sed_cg_via_006</code> through <code>sed_cg_via_022</code>.</p>
+<p>American culture questions are odd-numbered: <code>sed_cg_via_007</code> through <code>sed_cg_via_023</code>.</p>
+<p>If a participant chooses 777 ("Decline to answer"), or 999 ("Don't know"), please do not include those values in the mean score calculations.</p>
+<p>High scores on each 9-item subscale can be interpreted as a positive orientation toward the specific cultural group and/or higher levels of identification with the culture represented. A high score on both subscales is associated with having a strong bicultural identity. Subscale mean scores can be used independently and/or compared by researchers in a variety of ways, depending on the research question.</p>
+</div> -->

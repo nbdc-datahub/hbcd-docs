@@ -1,30 +1,8 @@
 # PhenX+ Neighborhood Safety 
 
-{{ readme(instruments.safety) }}
-{{ alert_warning(instruments.safety) }}
-{{ data_warning(instruments.safety) }}
-{{ issues_banner_macro() }}
-
-{{ hbcd_mods(instruments.safety) }}
-{{ scoring(instruments.safety) }}
-
-
-<table class="table-no-vertical-lines">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>sed_bm_nbhsaf</code></td></tr>
-<tr><td><b>Construct</b></td><td>Neighborhood Safety</td></tr>
-<tr><td><b>Study Visits</b></td><td>V01, V02, V07, V09</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: No<br>
-<b>Respondent</b>: Parent<br>
-<b>Method</b>: Self-administered (in-person or remote) (1 min estimated duration)
-</td></tr>
-<tr>
-<td><b>Quality Control</b></td>
-<td>Data dashboard monitored for missingness.</td>
-</tr>
-</tbody>
-</table>
+{{ readme(instruments.nbhsaf) }}
+{{ alert_warning(instruments.nbhsaf) }}
+{{ data_warning(instruments.nbhsaf) }}
 
 {{ issues_banner_macro() }}
 

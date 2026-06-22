@@ -1,27 +1,21 @@
+<!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE - HBCD mods section -->
+
+
+
 # Experiences of Unfair Treatment
 
-<table class="table-no-vertical-lines">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>sed_bm_phx__discr</code></td></tr>
-<tr><td><b>Construct</b></td><td>Experiences of Unfair Treatment</td></tr>
-<tr><td><b>Study Visits</b></td><td>V01, V05, V07</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: No<br>
-<b>Respondent</b>: Parent<br>
-<b>Method</b>: Self-administered remotely (3 min estimated duration)
-</td></tr>
-<tr>
-<td><b>Quality Control</b></td>
-<td>Data dashboard monitored for variable missingness, possible coding errors, and data consistency.</td>
-</tr>
-</tbody>
-</table>
-
+{{ readme(instruments.discr) }}
+{{ alert_warning(instruments.discr) }}
+{{ data_warning(instruments.discr) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
 
 This [PhenX+ Toolkit Discrimination](https://www.phenxtoolkit.org/protocols/view/210302) measure is a questionnaire to assess perceived experiences of being treated unfairly. This is an important factor in an individual’s health because it affects access to employment, housing, and education opportunities and can affect self-esteem and cause stress. It includes the **Major Experiences and Everyday Discrimination Scales**.
+
+{{ hbcd_mods(instruments.discr) }}
+{{ scoring(instruments.discr) }}
+
 
 {{ mods_banner_macro() }}
 <div class="collapsible-content">

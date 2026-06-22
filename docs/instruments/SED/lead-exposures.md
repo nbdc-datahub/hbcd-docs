@@ -1,38 +1,8 @@
 # Lead Exposures
 
-
 {{ readme(instruments.lead) }}
 {{ alert_warning(instruments.lead) }}
 {{ data_warning(instruments.lead) }}
-{{ issues_banner_macro() }}
-
-{{ hbcd_mods(instruments.lead) }}
-{{ scoring(instruments.lead) }}
-
-
-
-<table class="table-no-vertical-lines">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>sed_cg_ledexp</code></td></tr>
-<tr><td><b>Construct</b></td><td>Lead Exposures</td></tr>
-<tr><td><b>Study Visits</b></td><td>V05</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Birth Parent or Primary Caregiver<br>
-<b>Method</b>: Self-administered (in-person or remote) (5 min estimated duration)
-</td></tr>
-<tr>
-<td><b>Quality Control</b></td>
-<td>Response proportions and unusual missing patterns were reviewed.</td>
-</tr>
-</tbody>
-</table>
-
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p>Incidents of pediatric lead poisoning have previously been linked to consumption of certain imported candies and food colorings, traditional remedies, or food storage vessels (<a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm">CDC 1998</a>; <a href="https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html">CDC 2025</a>). The identification of these specific sources in the Lead Exposures questionnaire is based on documented cases of lead poisoning tied to specific products and should not be interpreted as highlighting any group as having particularly high risk as a result of their race or ethnicity. It is important to recognize that products and sources others than those specifically listed may contain hazardous levels of lead.</p>
-</div>
-
 {{ issues_banner_macro() }}
 
 ## Instrument Details
@@ -42,11 +12,6 @@ There is no safe level of lead in the blood. Even low levels of blood lead can i
 CDC-recommended lead testing protocols are described [here](https://www.cdc.gov/lead-prevention/testing/index.html). While there are limited available studies, a recent meta-analysis concluded that more than 1 positive answer on the 5-item 1991 CDC screening questionnaire had a pooled sensitivity of 48% and specificity of 58% for identifying venous blood lead level greater than 10 ug/dL1. However, the current blood lead reference value is 3.5ug/dL, which identifies the top 2.5% of US children with the highest blood lead levels. There is no data on how well screening instruments predict lead exposure at this level, or the extent to which multiple positive responses modify sensitivity and specificity.
 
 Incidents of pediatric lead poisoning have previously been linked to consumption of [certain imported candies and food colorings](https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm), [traditional remedies](https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html), or food storage vessels. The identification of these specific sources in the Lead Exposures questionnaire is based on documented cases of lead poisoning tied to specific products and should not be interpreted as highlighting any group as having particularly high risk as a result of their race or ethnicity. It is important to recognize that products and sources others than those specifically listed may contain hazardous levels of lead.
-
-{{ scoring_banner_macro() }}
-<div class="collapsible-content">
-<p>While lead screening protocols vary by state, many states screen children for lead exposure if they have at least one positive response to a lead exposure risk factor.</p>
-</div>
 
 ## References
 
