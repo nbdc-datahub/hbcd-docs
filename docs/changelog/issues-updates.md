@@ -416,19 +416,19 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Growth</td>
+<td>Anthropometrics</td>
 <td>The data dictionary element <code>type_data</code> for <code>average_bmi</code> will be corrected to <code>double</code> (currently=<code>character</code>).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Growth</td>
+<td>Anthropometrics</td>
 <td>Growth (<code>ph_ch_anthro</code>) filter ranges will be updated to be visit-specific, as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Growth</td>
+<td>Anthropometrics</td>
 <td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
@@ -440,13 +440,13 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Growth</td>
+<td>Anthropometrics</td>
 <td>Add age-based z-scores to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Z-Scores Excluded</a>).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Growth</td>
+<td>Anthropometrics</td>
 <td>Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
