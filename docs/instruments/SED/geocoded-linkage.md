@@ -15,9 +15,14 @@ Geocoded linkage measures were deliberately designed to be compatible with the A
 
 ## Release Data
 
-The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD). The dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a>:
+The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD). The dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a>.
 
-#### Geocoded Linkage Measures
+### Geocoded Linkage Measures
+
+
+<span style="color: red; font-size: 1.3em;"> <b>ADMIN NOTE:</b> <a style="color: red;" href="../HBCD-LED-DD.html" target="_blank">ADD HBCD-SPECIFIC DOCUMENTATION</a></span>
+
+
 <div class="banner">
   <span class="emoji"><i class="fa-solid fa-table"></i></span>
   <span class="text">See <a href="../gled-dd.html" target="_blank">supplemental table</a> for full descriptions of each variable.</span>
