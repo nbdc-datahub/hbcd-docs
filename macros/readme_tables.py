@@ -1,6 +1,5 @@
 from .utils import is_present, table_row
 
-
 def build_readme(inst):
 
     # for QC info, convert to list if there are multiple lines
@@ -16,6 +15,11 @@ def build_readme(inst):
 
     if acronym:
         full_name_value = f"{full_name_value} ({acronym})"
+
+    # Preserve line breaks for visits (rare cases)
+    # visits = inst.get("visits")
+    # if visits:
+    #     visits = visits.replace("\n", "<br>")
 
     type_value = inst.get("type", "")
     duration = inst.get("duration")

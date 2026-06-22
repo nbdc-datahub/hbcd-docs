@@ -97,7 +97,7 @@ nav:
             - SPM-2: instruments/neurocog/spm2.md
             - Vineland: instruments/neurocog/vineland.md
         - Physical Health:
-            - Anthropometries: instruments/physhealth/growth.md
+            - Anthropometrics: instruments/physhealth/growth.md
             - Brief Infant Sleep Questionnaire: instruments/physhealth/bisq-sf.md
             - Breastfeeding: instruments/physhealth/bf.md
             - ecPROMIS- PA/GS: instruments/physhealth/ecpromis-pags.md
