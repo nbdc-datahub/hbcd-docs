@@ -38,14 +38,17 @@ h4 {
 h5 {
   font-family: Lato;
   font-size: 1em;
-  margin: 0;
+  margin-bottom: 0.6em !important;
   padding: 0;
-  font-weight: bold;
+  font-weight: 700;
   border-bottom: 0.5px solid #6b6b6b66;
   line-height: 1.2;
   overflow: hidden;
+  /* Make slightly more unique with all uppercase and gray color: */
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
-
 
 /* Buttons */
 .button-link {
