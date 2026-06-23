@@ -19,7 +19,7 @@ The GLED data in the current release include variables linked to the residential
 
 <!-- ### Geocoded Linkage Measures -->
 
-<span style="color: red; font-size: 1.3em;"> <b>ADMIN NOTE:</b> <a style="color: red;" href="../HBCD-LED-DD.html" target="_blank">ADD HBCD-SPECIFIC DOCUMENTATION</a></span>
+<span style="color: red; font-size: 1.3em;"> <b>ADMIN NOTE:</b> COPIED FROM <a style="color: red;" href="../HBCD-LED-DD.html" target="_blank">HTML DOC</a> with some minor additonal polish</span>
 
 <style>
 .gled td:first-child {
@@ -385,35 +385,35 @@ Number of jobs and job density (number of jobs per square mile of land area) are
 </tr>
 <tr>
 <td>lodes_jobwhite_density</td>
-<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: White, Alone; LODES; census tract</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: White, Alone</td>
 </tr>
 <tr>
 <td>lodes_jobblack_density</td>
-<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Black or African American Alone; LODES; census tract</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Black or African American Alone</td>
 </tr>
 <tr>
 <td>lodes_jobaian_density</td>
-<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: American Indian or Alaska Native Alone; LODES; census tract</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: American Indian or Alaska Native Alone</td>
 </tr>
 <tr>
 <td>lodes_jobasian_density</td>
-<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Asian Alone; LODES; census tract</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Asian Alone</td>
 </tr>
 <tr>
 <td>lodes_jobnhpi_density</td>
-<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Native Hawaiian or Other Pacific Islander Alone; LODES; census tract</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Native Hawaiian or Other Pacific Islander Alone</td>
 </tr>
 <tr>
 <td>lodes_jobmulti_density</td>
-<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Two or More Race Groups; LODES; census tract</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Two or More Race Groups</td>
 </tr>
 <tr>
 <td>lodes_jobnonhisp_density</td>
-<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Ethnicity: Not Hispanic or Latino; LODES; census tract</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Ethnicity: Not Hispanic or Latino</td>
 </tr>
 <tr>
 <td>lodes_jobhisp_density</td>
-<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Ethnicity: Hispanic or Latino; LODES; census tract</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Ethnicity: Hispanic or Latino</td>
 </tr>
 </tbody>
 </table>
@@ -891,11 +891,11 @@ In order to approximate cost of living that may be associated with housing, the 
 
 ##### Key Variables
 
- - `rentmort_homevalue_med`
+ <!-- - `rentmort_homevalue_med`
  - `rentmort_ownership_prcnt`
  - `rentmort_rent_med`
  - `rentmort_rentburden_prcnt`
- - `rentmort_rentburdensev_prcnt`
+ - `rentmort_rentburdensev_prcnt` -->
 
 <table class="table-no-vertical-lines gled">
 <thead>
@@ -950,7 +950,9 @@ This data is part of the Smart Location Database for the year 2021, which is a n
 </table>
 
 ##### Key Reference
-U.S. Environmental Protection Agency. (2025, September 29). Smart Location Mapping. U.S. EPA. from [https://www.epa.gov/smartgrowth/smart-location-mapping](https://www.epa.gov/smartgrowth/smart-location-mapping)
+<div class="references"> 
+<p>U.S. Environmental Protection Agency. (2025, September 29). Smart Location Mapping. U.S. EPA. from <a href="https://urldefense.com/v3/__https://www.epa.gov/smartgrowth/smart-location-mapping__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moJUAuUGig$">https://www.epa.gov/smartgrowth/smart-location-mapping</a></p>
+</div>
 
 ## Walkability (EPA)
 
@@ -973,7 +975,9 @@ The National Walkability Index is a nationwide geographic data resource that ran
 </table>
 
 ##### Key Reference
-U.S. Environmental Protection Agency. (2025, September 29). Smart Location Mapping. U.S. EPA. from [https://www.epa.gov/smartgrowth/smart-location-mapping](https://www.epa.gov/smartgrowth/smart-location-mapping)
+<div class="references"> 
+<p>U.S. Environmental Protection Agency. (2025, September 29). Smart Location Mapping. U.S. EPA. from <a href="https://urldefense.com/v3/__https://www.epa.gov/smartgrowth/smart-location-mapping__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moJUAuUGig$">https://www.epa.gov/smartgrowth/smart-location-mapping</a></p>
+</div>
 
 ## Social Mobility (Opportunity Atlas)
 ##### Measure Description
@@ -1043,7 +1047,9 @@ The variable corresponding to the 25th percentile is typically the main index of
 <p></p>
 
 ##### Key Reference
-Opportunity Insights. Opportunity Atlas Data Tool Summary. 13 Aug. 2025, [opportunityinsights.org/wp-content/uploads/2025/08/OpportunityAtlas_DataToolSummary.pdf](opportunityinsights.org/wp-content/uploads/2025/08/OpportunityAtlas_DataToolSummary.pdf)
+<div class="references"> 
+<p>Opportunity Insights. Opportunity Atlas Data Tool Summary. 13 Aug. 2025, <a href="https://urldefense.com/v3/__http://opportunityinsights.org/wp-content/uploads/2025/08/OpportunityAtlas_DataToolSummary.pdf__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moLXaMuETA$">opportunityinsights.org/wp-content/uploads/2025/08/OpportunityAtlas_DataToolSummary.pdf</a></p>
+</div>
 
 ## Social Service (NaNDa)
 ##### Measure Description
@@ -1080,7 +1086,9 @@ Measure includes senior centers, youth centers, food banks, job training program
 </table>
 
 ##### Key Reference
-Melendez, Robert, Finlay, Jessica, Clarke, Philippa , Noppert, Grace, Gypin, Lindsay, and Dyke, Ellis. National Neighborhood Data Archive (NaNDA): Social Services by Census Tract and ZCTA, United States, 1990-2021. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2024-09-27. [https://doi.org/10.3886/E208207V3](https://doi.org/10.3886/E208207V3)
+<div class="references"> 
+<p>Melendez, Robert, Finlay, Jessica, Clarke, Philippa , Noppert, Grace, Gypin, Lindsay, and Dyke, Ellis. National Neighborhood Data Archive (NaNDA): Social Services by Census Tract and ZCTA, United States, 1990-2021. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2024-09-27. <a href="https://urldefense.com/v3/__https://doi.org/10.3886/E208207V3__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moKHP7-omA$">https://doi.org/10.3886/E208207V3</a></p>
+</div>
 
 ## Social Vulnerability Index (SVI)
 ##### Measure Description
@@ -1092,6 +1100,9 @@ ATSDR’s Geospatial Research, Analysis, & Services Program (GRASP) created the 
 SVI data for the year 2022 indicates the relative vulnerability of every U.S. census tract. Census tracts are subdivisions of counties for which the Census collects statistical data. SVI ranks the tracts on 16 social factors, such as unemployment, racial and ethnic minority status, and disability status. Then, SVI further groups the factors into four related themes. Thus, each tract receives a ranking for each Census variable and for each of the four themes as well as an overall ranking.
 
 ##### Key Variables
+
+ - `svi_*`
+
  <div id="svi" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-info"></i></span>
   <span class="text-with-link">
@@ -1252,7 +1263,9 @@ SVI data for the year 2022 indicates the relative vulnerability of every U.S. ce
 <p></p>
 
 ##### Key Reference
-Centers for Disease Control and Prevention/ Agency for Toxic Substances and Disease Registry/ Geospatial Research, Analysis, and Services Program. CDC/ATSDR Social Vulnerability Index 2022 Database U.S. [https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html](https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html).
+<div class="references"> 
+<p>Centers for Disease Control and Prevention/ Agency for Toxic Substances and Disease Registry/ Geospatial Research, Analysis, and Services Program. CDC/ATSDR Social Vulnerability Index 2022 Database U.S.. <a href="https://urldefense.com/v3/__https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moLlCHA8xQ$">https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html</a>.</p>
+</div>
 
 ## Urban/Rural Area (Census)
 ##### Measure Description
