@@ -1,0 +1,119 @@
+/* ===================================================================
+   NAVIGATION BARs: LEFT SIDE OF PAGE & BREADCRUMB NAV AT TOP OF PAGE
+   =================================================================== */
+
+/* ===================================================================
+    (1) BREADCRUMB NAV AT TOP OF PAGE
+   =================================================================== */
+/* Align icons and text */
+.md-path a,
+.md-path span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/* ===================================================================
+    (2) NAV BAR ON LEFT
+   =================================================================== */
+
+/* REMOVE SITE NAME FROM TOP OF NAV */
+.md-nav .md-nav__title {
+  display: none;
+}
+
+/* Remove left gutter so sidebar is flush with edge */
+.md-grid {
+  margin-left: 0;
+}
+.md-sidebar--primary {
+  left: 0;
+}
+.md-sidebar--primary {
+  background-color: #1e1e2f;
+  height: 100vh;
+}
+
+/* FONT & STYLING */
+.md-nav__item,
+.md-nav__link {
+  font-family: "Avenir", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  white-space: nowrap;
+}
+
+/* Top-level nav items only */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700; 
+  letter-spacing: 0.01em;
+}
+
+/* Active top-level section */
+.md-nav--primary > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+}
+/* Bold text for subsection of active page */
+.md-nav__link--active {
+  font-weight: 700;
+  color: var(--md-accent-fg-color);
+}
+
+
+
+/* ONLY DISPLAY THROUGH H2 */
+/* .md-nav__item .md-nav__item .md-nav {
+  display: none;
+}
+.md-nav__item--active > .md-nav {
+  display: block;
+} */
+
+/* Color */
+/* .md-nav {
+  background-color: #071B2C !important;
+  color: white;
+} */
+
+
+/* EXTRA */
+
+/* Accent bar to left of current section */
+/* .md-nav__link--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 50%;
+  background-color: var(--md-accent-fg-color);
+} */
+/* Ombre background highlighting for active subtree */
+/* .md-nav__item--active > .md-nav {
+  background-color: color-mix(
+    in srgb,
+    var(--md-accent-fg-color) 15%,
+    transparent
+  );
+} */
+
+
+
+/* ===================================================================
+   ACCESSIBILITY & INTERACTION STATES
+   =================================================================== */
+/* Focus States */
+a:focus-visible,
+button:focus-visible,
+.md-nav__link:focus-visible {
+  outline: 2px solid var(--md-primary-main);
+  outline-offset: 2px;
+}
+/* Selected States */
+.md-nav__item--active > .md-nav__link {
+  color: var(--md-primary-dark);
+}
+

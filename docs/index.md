@@ -1,3 +1,5 @@
+<h1 style="border-bottom: none;"></h1>
+
 <p align="center">
   <img src="images/logo_HBCD_final.png" alt="HBCD Study logo" width="450">
 </p>
@@ -26,12 +28,8 @@
 <p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 2 auto;">
   Explore detailed information about annual HBCD Study data releases hosted by the 
   <a href="https://nbdc-splash-beta.lassoinformatics.com" target="_blank">NBDC Data Hub</a>.<br>
-  See the <a href="changelog/releasenotes" target="_blank">Release Notes</a> for information on the latest release.
+  See the <a href="changelog/release-notes/" target="_blank">Release Notes</a> for information on the latest release.
 </p>
-
-<!-- <p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 2 auto;">
-  Key resources provided in the HBCD Data Release Docs include: <a href="access/download" target="_blank">Access & Download</a>, <a href="access/resp_data_use">Responsible Use</a>, <a href="instruments/">Data Structures</a>, <a href="instruments/">Instrument/Measure Documentation</a>, and <a href="instruments/processing/standards/">Processing Standards</a>.
-</p> -->
 
 <p></p>
 
