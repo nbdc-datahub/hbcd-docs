@@ -3,7 +3,7 @@
    =================================================================== */
 
 /* ===================================================================
-    (1) BREADCRUMB NAV AT TOP OF PAGE
+    BREADCRUMB NAV AT TOP OF PAGE
    =================================================================== */
 /* Align icons and text */
 .md-path a,
@@ -14,7 +14,7 @@
 }
 
 /* ===================================================================
-    (2) NAV BAR ON LEFT
+    NAV BAR ON LEFT
    =================================================================== */
 
 /* REMOVE SITE NAME FROM TOP OF NAV */
@@ -28,12 +28,21 @@
 }
 .md-sidebar--primary {
   left: 0;
-}
-.md-sidebar--primary {
   background-color: #1e1e2f;
   height: 100vh;
+  width: 280px;
 }
 
+/* Remove padding around nav */
+.md-sidebar__scrollwrap {
+  padding-left: 0;
+}
+@media screen and (min-width: 76.25em) {
+  .md-grid {
+    margin-left: 0;
+    max-width: 100%; /* allow full-width layout */
+  }
+}
 /* FONT & STYLING */
 .md-nav__item,
 .md-nav__link {
@@ -47,11 +56,10 @@
 /* Top-level nav items only */
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
   text-transform: uppercase;
-  color: white;
+  color: #199bd6;
   font-weight: 700; 
   letter-spacing: 0.01em;
 }
-
 /* Active top-level section */
 .md-nav--primary > .md-nav__list > .md-nav__item--active > .md-nav__link {
   color: var(--md-accent-fg-color);
@@ -64,6 +72,12 @@
 }
 
 
+
+
+
+/* .md-sidebar--primary {
+  border-right: 1px solid rgba(255,255,255,0.08);
+} */
 
 /* ONLY DISPLAY THROUGH H2 */
 /* .md-nav__item .md-nav__item .md-nav {
