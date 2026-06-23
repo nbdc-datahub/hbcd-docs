@@ -1,13 +1,62 @@
+/* SET FONT FOR ALL TABLES */
+
+table {
+  font-family: "Lato", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+
+table,
+table th,
+table td {
+  font-family: "Lato", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+
+.md-typeset table {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.9em;
+  line-height: 1.2;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  border-collapse: collapse;
+}
+.md-typeset table th, td {
+  border-top: thin solid #ddd;
+  border-bottom: thin solid #ddd;
+}
+
+/* For all table types, add dotted underline to text with hover box/tooltip */
+table a[title] {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  cursor: help;
+}
+
+/* For all table types, add dotted underline to text with hover box/tooltip */
+table a {
+  color: var(--md-primary-dark) !important;
+}
+
+/* For all table types, align list text to top of cell */
+table td ul {
+  margin-top: 0 !important;
+  margin-bottom: 0;
+  padding-left: 1.2em;
+}
+
+
+
+
+/* ORIG */
 /* Table styling */
 table {
     border-collapse: collapse;
     width: 100%;
     table-layout: fixed;
+    font-family: Lato;
 }
 th, td {
     border: 1px solid #ddd;
     word-wrap: break-word !important;
     white-space: normal !important;
+    font-family: Lato;
 }
 
 
