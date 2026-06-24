@@ -91,7 +91,7 @@ NASEM also published a report, [*Using Population Descriptors in Genetics and Ge
  - If demographic variables were used as covariates or for sample characteristic reporting, were they appropriately reported and are the limitations of such reporting addressed?
  - If your findings have shown significant differences between groups, describe how your data will inform the larger effort to improve public health.
 
-<b class="gray-text">Researchers should consider features of the data available in HBCD, the strengths and limitations therein, and follow guidance for rigor and reproducibility.</b> [Sarasoga-Harris and colleagues (2022)](https://doi.org/10.1016/j.dcn.2022.101115) have developed a practical guide for researchers and reviewers, including relevant analytical and methodological considerations.
+**Researchers should consider features of the data available in HBCD, the strengths and limitations therein, and follow guidance for rigor and reproducibility.** [Sarasoga-Harris and colleagues (2022)](https://doi.org/10.1016/j.dcn.2022.101115) have developed a practical guide for researchers and reviewers, including relevant analytical and methodological considerations.
 
 ---
 

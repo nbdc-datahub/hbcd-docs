@@ -62,9 +62,8 @@ nav:
     - Study Protocol: standards/protocol.md
     - Data Dictionary: standards/metadata.md
     - Naming Conventions: standards/naming-conventions.md
-    - Processing & Derivative Data: 
-        - Processing Pipelines: standards/processing/index.md
-        - Pipeline Software Standards: standards/processing/standards.md
+    - Processing Pipelines: standards/processing/pipelines.md
+    - Pipeline & Derivative Standards: standards/processing/standards.md
   - Data Structure & File Types:
     - Data Structure Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md

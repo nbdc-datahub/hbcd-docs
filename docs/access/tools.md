@@ -13,18 +13,18 @@ HBCD study data can be downloaded via the [NBDC Data Access Platform](https://nb
 
 ## Tabulated Data
 
-### <i class="fas fa-database header-icon"></i> NBDC Sandbox   
+### NBDC Sandbox   
 The [NBDC Sandbox](https://nbdc-safe.lassoinformatics.com/pun/sys/dashboard) provides a secure, cloud-based analysis environment designed to support data analysis workflows, particularly for neuroimaging and large-scale tabular datasets, without having to download and manage data locally. See the [NBDC Sandbox Tutorial Series](https://hdcc-sandbox-rtd.readthedocs.io/latest/) to get started.
 
-### <i class="fas fa-database header-icon"></i> NBDCtools
+### NBDCtools
 NBDCtools, available in both [R](https://software.nbdc-datahub.org/NBDCtools/) and [Python](https://software.nbdc-datahub.org/nbdctools-py/), is a package for creating custom, analysis-ready datasets by simply specifying the variable or table names you need. NBDCtools automatically retrieves the specified columns from locally downloaded HBCD tabulated data and assembles them into a single in-memory data frame, minimizing storage and memory use. This provides a flexible alternative to building datasets through the NBDC Data Access Platform or DEAP, eliminating the need to manually parse files or resolve formatting issues. In addition to dataset assembly, NBDCtools includes functions for working with shadow matrices as well as applying transformations and filters.   
 
 ## Brain Imaging Data
 
-#### <i class="fa-solid fa-eye header-icon"></i> ITK-Snap & FSLeyes
+#### ITK-Snap & FSLeyes
 For interactive visualization of MRI images, we recommend using either [ITK-Snap](http://www.itksnap.org/pmwiki/pmwiki.php) (see [Andy's Brain Blog](https://andysbrainbook.readthedocs.io/en/latest/ITK-Snap/ITK-Snap_Overview.html#itk-snap-overview) for a primer) or [FSLeyes](https://fsl.fmrib.ox.ac.uk/fsl/docs/#/utilities/fsleyes), part of the FSL software suite. Both are free, open-source image viewers for 3D and 4D medical images.
 
-#### <i class="fa-solid fa-eye header-icon"></i><i class="fas fa-cogs header-icon"></i> Connectome Workbench
+#### Connectome Workbench
 **[Connectome Workbench](https://www.humanconnectome.org/software/connectome-workbench)** is a free, open-source software package that includes critically useful tools such as:
 
 - **wb_view**: For interactive visualization of surface-based and connectivity data, creating overlays of structural/functional data, etc.

@@ -132,7 +132,6 @@ e.g., <code>mh_cg_ibqr_<span style="color: teal;"><b>beh</b></span>_001</code> =
 </tbody>
 </table>
 
-
 <div id="example" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
@@ -155,16 +154,17 @@ e.g., <code>mh_cg_ibqr_<span style="color: teal;"><b>beh</b></span>_001</code> =
 
 Some table/variable names deviate from the standard naming conventions and will be standardized in the future. Main exceptions include:
 
-**Demographics Domain**     
+##### Demographics Domain
 The [Demographics domain](../instruments/index.md#demo), which contains derived table data, does not have a unique domain code, resulting in unconventional table names. Includes:  `sed_basic_demographics` and `par_visit_data`.
 
-**Biospecimens Domain**     
+##### Biospecimens Domain
 The [Biospecimen domain](../instruments/index.md#biospec) `table` naming component includes additional underscores for subcomponents, e.g. <code>bio_bm_biosample_nails_results</code>, where `table` corresponds to `biosample_nails_results` instead of `biosample`.
 
-**Tabulated Pipeline Derivatives**      
-[Tabulated derivatives](../datacuration/overview.md#tabulated-pipeline-derivatives) derived from processed imaging and EEG data use the following naming convention, where `derivative` corresponds to the basename of the source derivative files:
+##### Tabulated Pipeline Derivatives  
+[Tabulated derivatives](../datacuration/overview.md#tabulated-pipeline-derivatives) generated from processed imaging and EEG data use the following naming convention, where `derivative` corresponds to the basename of the source derivative files:
 <div class="naming-pattern"><code>domain_pipeline_derivative</code></div>
-For example, the <a href="../../instruments/mri/fmri/#xcp-d" target="_blank">XCP-D</a> tabulated file:
-<code>img_xcpd<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code>    
+
+For example, the [BIBSNet](../instruments/mri/smri.md#bibsnet) tabulated file:
+<code>img_bibsnet<span style="color: teal;">_space-T1w_desc-aseg_volumes</span>.tsv</code>    
 is sourced from:
-<code>sub-[ID]_ses-[V0X]_task-rest_dir-PA_run-[X]<span style="color: teal;">_space-fsLR_seg_Gordon_stat-alff_bold</span>.tsv</code>
+<code>sub-[ID]_ses-[V0X]<span style="color: teal;">_space-T1w_desc-aseg_volumes</span>.tsv</code>

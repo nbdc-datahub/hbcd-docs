@@ -1,6 +1,3 @@
-
-<!-- HBCD pipeline developers, Workgroups, and community contributors who wish to integrate tools into the HBCD release environment must submit the [NMIND Coding Standards Checklist](https://www.nmind.org/standards-checklist/) to initiate third-party peer review. The software is reviewed by a third party, who reviews the accuracy of the submitted checklist and provides other suggested updates, reported to the developers via the [proceedings repository](https://github.com/nmind/proceedings). Reviewed tools are assigned badge ratings and published to [Evaluated Tools](https://www.nmind.org/proceedings/). At a minimum, tools must meet Bronze-level standards.  -->
-
 # Processing & Derivative Data Standards
 <img src="../nmind.png" alt="NMIND" width="70%" height="auto" class="center">
 
