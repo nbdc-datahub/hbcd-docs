@@ -276,10 +276,10 @@ pre > code {
 
 /* References section */ 
 .references p {
-    font-size: smaller;
-    line-height: 1.2; /* Reduce line spacing (default is around 1.5-1.6) */
-    margin: 5px 0; /* Reduce spacing between paragraphs or list items */
-    padding: 2.5px;
+    font-size: 0.85em !important;
+    /* line-height: 1.2;
+    margin: 5px 0;
+    padding: 2.5px; */
   }
 
 /* Styling for dropdown menu for selecting webpage version if we want to use this instead of default flyout menu */ 

@@ -357,7 +357,7 @@ Prior release notes are available via prior versions of this site as follows (al
 <td><strong>1.1</strong></td>
 <td>2025-10-10</td>
 <td>
-  <a href="https://docs.hbcdstudy.org/r1.1/changelog/releasenotes/#version-r11" target="_blank">
+  <a href="https://docs.hbcdstudy.org/r1.1/changelog/release-notes/#version-r11" target="_blank">
     View Release Notes
   </a>
 </td>

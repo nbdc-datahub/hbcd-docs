@@ -148,7 +148,7 @@ Visit Information (table name `par_visit_data`) includes general visit informati
 
 <div class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">See <a href="../../../changelog/releasenotes/#participant-population" target="_blank">Release Notes</a> for participant population inclusion/exclusion information.</span>
+  <span class="text">See <a href="../../../changelog/release-notes/#participant-population" target="_blank">Release Notes</a> for participant population inclusion/exclusion information.</span>
 </div>
 
 ### HBCD Cohorts

@@ -39,56 +39,50 @@ To facilitate responsible data use and scientific rigor, the following warnings 
 </div>
  
 ## Recommendations
-
-<p class="subtle-note">The HBCD Responsible Use of Data Committee (RUDC) provides the following recommendations for rigorous, reproducible, and responsible data use guidance for researchers and users of HBCD Study data.</p>
+The HBCD Responsible Use of Data Committee (RUDC) provides the following recommendations for rigorous, reproducible, and responsible data use guidance for researchers and users of HBCD Study data.
 
 ### Learn and abide by the provisions of the Data Use Certificate.
 
-##### All users of HBCD data should be listed on a Data Use Certificate (DUC) and bound by it.
+**All HBCD data users should be listed on a Data Use Certificate (DUC) and bound by it.**   
 The DUC prohibits any attempt to establish the identities of HBCD participants. To protect participants against identification, users agree to adhere to a minimum cell threshold of ten participants in publications and public presentations. Epidemiologists, statisticians, and other data analysts argue that a cell size between 1 and 10 is usually too small for meaningful analysis; therefore, avoiding analysis of small cells can produce more rigorous, reproducible science and also helps protect study participants from identification.   
 
-##### Access to HBCD data is limited to people who are listed on an active HBCD DUC.
+**Access to HBCD data is limited to people who are listed on an active HBCD DUC.**  
 This means you cannot enter HBCD data into a generative AI tool/large language model, such as ChatGPT; doing so would leak HBCD data to people who do not have a DUC (see [FAQ: Can I Use ChatGPT...](../help/faq.md/#faq-ai)).  
 
 ### Consider ethical principles throughout the research process.
-<b class="gray-text">Equity-focused reflection:</b> Regulations for the protection of humans in federally-funded research (e.g., 45 C.F.R. 46) do not require IRBs to oversee research using anonymized data obtained from a repository. Nonetheless, the data come from people to whom we have ethical obligations, including obligations of respect, minimizing harm, and justice. Data users should keep these principles in mind at each stage of their research. 
+**Equity-focused reflection:** Regulations for the protection of humans in federally-funded research (e.g., 45 C.F.R. 46) do not require IRBs to oversee research using anonymized data obtained from a repository. Nonetheless, the data come from people to whom we have ethical obligations, including obligations of respect, minimizing harm, and justice. Data users should keep these principles in mind at each stage of their research. 
 
 ### Use non-stigmatizing language in scientific communications.
-<b class="gray-text">Use clear and respectful language when describing people whose data you analyzed.</b> Person-first language emphasizes individuals’ inherent value and respects them as people before describing any conditions or diseases they may have (*[Writing respectfully: Person-first and identity-first language](https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language)*). For example, consider using “person with a substance use disorder” or “person in recovery from a substance use disorder” and avoid referring to participants as “addicts,” “users,” or “former users.”  Avoid terms such as “drug baby” or “crack baby” in favor of descriptions such as “Infant with prenatal substance exposure” or “infant with neonatal opioid withdrawal syndrome” ([Appleseth et al. 2023](https://doi.org/10.1186/s13011-023-00536-z)).   
-
-***Recommendations for ...***
+**Use clear and respectful language when describing people whose data you analyzed.** Person-first language emphasizes individuals’ inherent value and respects them as people before describing any conditions or diseases they may have (*[Writing respectfully: Person-first and identity-first language](https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language)*). For example, consider using “person with a substance use disorder” or “person in recovery from a substance use disorder” and avoid referring to participants as “addicts,” “users,” or “former users.”  Avoid terms such as “drug baby” or “crack baby” in favor of descriptions such as “Infant with prenatal substance exposure” or “infant with neonatal opioid withdrawal syndrome” ([Appleseth et al. 2023](https://doi.org/10.1186/s13011-023-00536-z)). Recommendations for specific cases are as follows:
 
  - Language regarding people with substance use disorders:
-    - [Words Matter - Terms to Use and Avoid When Talking About Addiction](https://nida.nih.gov/nidamed-medical-health-professionals/health-professions-education/words-matter-terms-to-use-avoid-when-talking-about-addiction)
-    - Why language matters in alcohol research: Reducing stigma ([Shi et al., 2022](https://doi.org/10.1111/acer.14840))
- - Writing and talking about Fetal Alcohol Spectrum Disorder:
-    - [Common Messages: Guidelines for talking and writing about FASD](https://canfasd.ca/wp-content/uploads/publications/CanFASD-Common-Messages-Guide-2023_FINAL-1.pdf)
- - Using language regarding people with disabilities:
-    - [Communicating With and About People with Disabilities (CDC)](https://www.cdc.gov/disability-and-health/articles-documents/communicating-with-and-about-people-with-disabilities.html)
+    - [*Words Matter - Terms to Use and Avoid When Talking About Addiction*](https://nida.nih.gov/nidamed-medical-health-professionals/health-professions-education/words-matter-terms-to-use-avoid-when-talking-about-addiction)
+    - *Why language matters in alcohol research: Reducing stigma* ([Shi et al., 2022](https://doi.org/10.1111/acer.14840))
+ - Writing and talking about FASD: [*Common Messages: Guidelines for talking and writing about FASD*](https://canfasd.ca/wp-content/uploads/publications/CanFASD-Common-Messages-Guide-2023_FINAL-1.pdf)
+ - Language regarding people with disabilities: [*Communicating With and About People with Disabilities (CDC)*](https://www.cdc.gov/disability-and-health/articles-documents/communicating-with-and-about-people-with-disabilities.html)
 
-### Use population descriptors thoughtfully and scientifically.
+#### Use population descriptors thoughtfully and scientifically.
 
-##### Best practice is to include the right variable for the scientific question.
+**Best practice is to include the right variable for the scientific question.**     
 Genetic and/or biological variables are not interchangeable with demographic descriptions. Demographic descriptors should be used when they are scientifically justified and accompanied by clear definitions and rationales.
 
-##### Use of race and ethnicity:
-
+**Use of race and ethnicity**     
 The publicly available <span class="tooltip">NASEM<span class="tooltiptext">National Academies of Sciences, Engineering, and Medicine</span></span> report, [*Rethinking Race and Ethnicity in Biomedical Research*](https://doi.org/10.17226/27913), emphasizes that race variables are “not a substitute for unseen or unmeasured biological predictors of interest” (Conclusion 5-5; [NASEM, 2024](https://doi.org/10.17226/27913)). This report also notes that the <span class="tooltip">OMB<span class="tooltiptext">Office for Management and Budget</span></span>’s race and ethnicity categories, which must be used for government reporting purposes (e.g., by federal grantees), are a minimum set of categories and need not be used for scientific analyses (Conclusion 5-1; [NASEM, 2024](https://doi.org/10.17226/27913)).  
 
-##### Population descriptors in genomics research
+**Population descriptors in genomics research**     
 NASEM also published a report, [*Using Population Descriptors in Genetics and Genomics Research*](https://doi.org/10.17226/26902), articulating best practices for using population descriptors in genomics. Importantly, the report cautions researchers against using race as a proxy for genetic variation or assigning genetic ancestry labels based on race, regardless of whether race was self-identified. In addition, researchers should be mindful of the connotations and impacts of terminology used to label groups and should disclose how they select and assign group labels ([NASEM, 2023](https://doi.org/10.17226/26902)).
 
-### Analyses should reflect the complexity of brain and child development.  Use relevant social and environmental variables (available in the HBCD dataset) as covariates in your analyses.
-<b class="gray-text">It is essential to recognize the differences of life experiences and environments</b>, acknowledging that human development is a dynamic process influenced by the potential for adaptation and change ([Simmons et al., 2021](https://doi.org/10.1177/09567976211003564)). Studying this complexity requires use of statistical models that include appropriate covariates. Data users are encouraged to consider contextual information regarding which covariates might confound, modify, or mediate the effect they seek to study ([Greenland & Pearce, 2015](https://doi.org/10.1146/annurev-publhealth-031914-122559)).   
+#### Analyses should reflect the complexity of brain and child development.  Use relevant social and environmental variables (available in the HBCD dataset) as covariates in your analyses.
+**It is essential to recognize the differences of life experiences and environments**, acknowledging that human development is a dynamic process influenced by the potential for adaptation and change ([Simmons et al., 2021](https://doi.org/10.1177/09567976211003564)). Studying this complexity requires use of statistical models that include appropriate covariates. Data users are encouraged to consider contextual information regarding which covariates might confound, modify, or mediate the effect they seek to study ([Greenland & Pearce, 2015](https://doi.org/10.1146/annurev-publhealth-031914-122559)).   
 
-<b class="gray-text">Avoid oversimplifying complex constructs.</b> Constructs such as race and ethnicity are complex, shaped by historical, cultural, and social factors. These constructs do not refer to fixed, biological categories of people. At every stage of research, investigators should evaluate and decide whether use of such constructs is scientifically justified ([Cardenas-Inguinez & Gonzales, 2024](https://doi.org/10.1038/s41593-024-01608-4); [NASEM, 2024](https://doi.org/10.17226/27913)). 
+**Avoid oversimplifying complex constructs.** Constructs such as race and ethnicity are complex, shaped by historical, cultural, and social factors. These constructs do not refer to fixed, biological categories of people. At every stage of research, investigators should evaluate and decide whether use of such constructs is scientifically justified ([Cardenas-Inguinez & Gonzales, 2024](https://doi.org/10.1038/s41593-024-01608-4); [NASEM, 2024](https://doi.org/10.17226/27913)). 
 
-<b class="gray-text">Complex constructs, e.g., race, should not be used as proxies for variables such as socioeconomic status, access to healthcare, or environmental exposures.</b> Including social and environmental variables in one’s analysis allows for a more accurate understanding of underlying contributors to outcomes of interest ([Hoffman et al., 2022](https://doi.org/10.1016/j.jadohealth.2021.11.008)). HBCD has collected data on many social and environmental variables relevant for child development.
+**Complex constructs, e.g., race, should not be used as proxies for variables such as socioeconomic status, access to healthcare, or environmental exposures.** Including social and environmental variables in one’s analysis allows for a more accurate understanding of underlying contributors to outcomes of interest ([Hoffman et al., 2022](https://doi.org/10.1016/j.jadohealth.2021.11.008)). HBCD has collected data on many social and environmental variables relevant for child development.
 
-### Promoting transparency and reproducibility in research. 
-<b class="gray-text">Transparency in reporting methods and results is essential.</b> A review of [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study) manuscripts found that sharing analytic scripts (e.g., on Github, OSF, Zenodo) and providing detailed information about missing data significantly improved transparency and reproducibility ([Lopez et al., 2024](https://doi.org/10.1016/j.dcn.2024.101408)). We recommend that HBCD data users review the data analysis and manuscript preparation questions below to improve transparency and reproducibility.
+#### Promoting transparency and reproducibility in research. 
+**Transparency in reporting methods and results is essential.** A review of [ABCD Study](https://nbdc-splash-beta.lassoinformatics.com/abcd-study) manuscripts found that sharing analytic scripts (e.g., on Github, OSF, Zenodo) and providing detailed information about missing data significantly improved transparency and reproducibility ([Lopez et al., 2024](https://doi.org/10.1016/j.dcn.2024.101408)). We recommend that HBCD data users review the data analysis and manuscript preparation questions below to improve transparency and reproducibility.
 
-<b class="gray-text">Recommended considerations when preparing a manuscript:</b> 
+**Recommended considerations when preparing a manuscript**
 
  - What is your reason for analyzing data stratified by sample population?
  - Have you acknowledged any potential limitations in measures/constructs (known or suspected)?
@@ -101,8 +95,17 @@ NASEM also published a report, [*Using Population Descriptors in Genetics and Ge
 
 ---
 
-## References
-
+<div id="ref" class="banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
+  <span class="text-with-link">
+  <span class="text">References</span>
+  <a class="anchor-link" href="#ref" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
 <div class="references">
   <p>Appleseth, H. S., Moyers, S. A., Crockett-Barbera, E. K., Hartwell, M., Arndt, S., & Croff, J. M. (2023). Language considerations for children of parents with substance use disorders. Substance Abuse Treatment, Prevention, and Policy, 18(1), 28. <a href="https://doi.org/10.1186/s13011-023-00536-z">https://doi.org/10.1186/s13011-023-00536-z</a></p>
   <p>Canadian Fetal Alcohol Spectrum Disorder Research Network. (2023). Common messages guide. CanFASD. <a href="https://canfasd.ca/wp-content/uploads/publications/CanFASD-Common-Messages-Guide-2023_FINAL-1.pdf">https://canfasd.ca/wp-content/uploads/publications/CanFASD-Common-Messages-Guide-2023_FINAL-1.pdf</a></p>
@@ -120,4 +123,5 @@ NASEM also published a report, [*Using Population Descriptors in Genetics and Ge
   <p>Shi, H. D., McKee, S. A., & Cosgrove, K. P. (2022). Why language matters in alcohol research: Reducing stigma. Alcoholism, Clinical and Experimental Research, 46(6), 1103–1109. <a href="https://doi.org/10.1111/acer.14840">https://doi.org/10.1111/acer.14840</a></p>
   <p>Simmons, C., Conley, M. I., Gee, D. G., Baskin-Sommers, A., Barch, D. M., Hoffman, E. A., Huber, R. S., Iacono, W. G., Nagel, B. J., Palmer, C. E., Sheth, C. S., Sowell, E. R., Thompson, W. K., & Casey, B. J. (2021). Responsible use of open-access developmental data: The adolescent brain cognitive development (ABCD) study. Psychological Science, 32(6), 866–870. <a href="https://doi.org/10.1177/09567976211003564">https://doi.org/10.1177/09567976211003564</a></p>
   <p>Writing respectfully: Person-first and identity-first language. (n.d.). National Institutes of Health (NIH). Retrieved June 5, 2025, from <a href="https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language">https://www.nih.gov/about-nih/what-we-do/science-health-public-trust/perspectives/writing-respectfully-person-first-identity-first-language</a></p>
+</div>
 </div>
