@@ -118,6 +118,44 @@ hbcd/
 
 ### Links to Pipeline Derivatives
 
+
+
+## Concatenated Data
+
+Similar to tabulated data, concatenated data are participant-level datasets aggregated across all participants into a single file or file set. The key difference is that the data are not converted to the HBCD standard tabulated format. This is needed in cases where datasets include cohort-wide data and/or the original community-standard formats are required to support common analysis workflows and maximize compatibility with existing tools. Click *View README* links below to view instrument documentation.
+
+<pre class="folder-tree">
+hbcd/
+└── concatenated/
+    <span class="section"># Illumina Global Diversity GWAS Array</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/biospec/illumina-gda-gwas" target="_blank">View README</a></span>
+    ├── genetics/
+    │   └── genotype_microarray/
+    │       └── GDA/
+    │           ├── batch.info
+    │           ├── hbcd.bed
+    │           ├── hbcd.bim
+    │           └── hbcd.fam
+    │
+    <span class="section"># Geocoded Linked External Data (GLED)</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/SED/geocoded-linkage" target="_blank">View README</a></span>
+    ├── geocoding/
+    │   └── HBCD_address_history_geocoded.csv
+    │
+    <span class="section"># Olink Explore 384 Inflammation 1 Panel</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/biospec/olink/" target="_blank">View README</a></span>
+    ├── proteins/
+    │   └── olink/
+    │       └── inflammation/
+    │           ├── Olink_allplates_long.csv
+    │           └── Olink_allplates_wide.csv
+    │
+    <span class="section"># Study Navigator Contact Form</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/admin/study-navigators" target="_blank">View README</a></span>
+    └── study_navigator/
+        └── study_navigator_export.csv
+</pre>
+
+
+
+
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -191,36 +229,3 @@ hbcd/
 </tr>
 </tbody>
 </table>
-
-## Concatenated Data
-
-Similar to tabulated data, concatenated data are participant-level datasets aggregated across all participants into a single file or file set. The key difference is that the data are not converted to the HBCD standard tabulated format. This is needed in cases where datasets include cohort-wide data and/or the original community-standard formats are required to support common analysis workflows and maximize compatibility with existing tools. Click *View README* links below to view instrument documentation.
-
-<pre class="folder-tree">
-hbcd/
-└── concatenated/
-    <span class="section"># Illumina Global Diversity GWAS Array</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/biospec/illumina-gda-gwas" target="_blank">View README</a></span>
-    ├── genetics/
-    │   └── genotype_microarray/
-    │       └── GDA/
-    │           ├── batch.info
-    │           ├── hbcd.bed
-    │           ├── hbcd.bim
-    │           └── hbcd.fam
-    │
-    <span class="section"># Geocoded Linked External Data (GLED)</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/SED/geocoded-linkage" target="_blank">View README</a></span>
-    ├── geocoding/
-    │   └── HBCD_address_history_geocoded.csv
-    │
-    <span class="section"># Olink Explore 384 Inflammation 1 Panel</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/biospec/olink/" target="_blank">View README</a></span>
-    ├── proteins/
-    │   └── olink/
-    │       └── inflammation/
-    │           ├── Olink_allplates_long.csv
-    │           └── Olink_allplates_wide.csv
-    │
-    <span class="section"># Study Navigator Contact Form</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/admin/study-navigators" target="_blank">View README</a></span>
-    └── study_navigator/
-        └── study_navigator_export.csv
-</pre>
-

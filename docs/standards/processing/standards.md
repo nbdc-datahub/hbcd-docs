@@ -1,5 +1,5 @@
 # Processing & Derivative Data Standards
-<img src="../nmind.png" alt="NMIND" width="70%" height="auto" class="center">
+<img src="../images/nmind.png" alt="NMIND" width="70%" height="auto" class="center">
 
 All pipelines used for HBCD data processing must follow HBCD processing and derivative data standards, including: [NMIND standards for reproducible neuroimaging](#nmind-checklists-bronze-badge-items) and [HBCD-specific requirements](#hbcd-specific-requirements).
 
