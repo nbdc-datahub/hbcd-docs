@@ -31,7 +31,7 @@
 
 The HBCD processing pipelines are a collection of modular tools used to process HBCD Study data, including magnetic resonance imaging/spectroscopy (MRI/MRS), electroencephalography (EEG), and biosensor data. Pipeline outputs are provided within the data release as file-based <a href="../../datacuration/file-based-data/#derivatives" target="_blank">derivatives</a>. All community pipelines used for HBCD data processing must follow HBCD [Processing & Derivative Data Standards](standards.md). The table below includes links to the <a href="https://www.nmind.org/proceedings/">NMIND Evaluated Tools</a> page for each pipeline.
 
-<div class="table-title">HBCD Processing Pipelines & Relevant Links to Documentation</div>
+<h5>HBCD Processing Pipelines & Relevant Links to Documentation</h5>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
