@@ -646,8 +646,8 @@ In this section we provide a brief overview of each study instrument provided in
 </div>
 <div class="collapsible-content">
 <span class="table-title"><i class="fa-solid fa-folder-open header-icon"></i> EEG Domain</span>
-<p>See the <a href="eeg/#overview-eeg-protocols">Overview page</a> for protocols, quality control procedures, etc. and <a href="eeg/tasks/">HBCD EEG Tasks</a> for task protocols/documentation. EEG tasks include Auditory Mismatch Negativity (<a href="eeg/tasks/#auditory-mismatch-negativity-task" target="_blank">MMN</a>), Faces (<a href="eeg/tasks/#faces-task" target="_blank">FACE</a>), Visual Evoked Potential (<a href="eeg/tasks/#visual-evoked-potential-task" target="_blank">VEP</a>), and Video Resting State (<a href="eeg/tasks/#video-resting-state-task" target="_blank">RS</a>).</p>
-<p>The EEG domain contains file-based data, including <a href="eeg/#rawbids" target="_blank">raw BIDS-formatted data</a> and <a href="eeg/#made" target="_blank">HBCD-MADE pipeline</a> derivatives under <code>derivatives/made/</code>.</p>
+<p>See the <a href="eeg/#overview-eeg-protocols">Overview page</a> for protocols, quality control procedures, etc. and <a href="eeg/tasks/">HBCD EEG Tasks</a> for detailed task documentation. EEG tasks include Auditory Mismatch Negativity (<a href="eeg/tasks/#auditory-mismatch-negativity-task" target="_blank">MMN</a>), Faces (<a href="eeg/tasks/#faces-task" target="_blank">FACE</a>), Visual Evoked Potential (<a href="eeg/tasks/#visual-evoked-potential-task" target="_blank">VEP</a>), and Video Resting State (<a href="eeg/tasks/#video-resting-state-task" target="_blank">RS</a>).</p>
+<p>File-based EEG data include <a href="eeg/#rawbids" target="_blank">raw BIDS-formatted data</a> and <a href="eeg/#made" target="_blank">HBCD-MADE pipeline</a> derivatives under <code>derivatives/made/</code>.</p>
 <hr>
 <span class="table-title"><i class="fa-solid fa-table header-icon"></i> Tabular EEG Domain</span>
 <table class="table-no-vertical-lines index">
@@ -693,49 +693,64 @@ In this section we provide a brief overview of each study instrument provided in
 <div class="collapsible-content">
 <!-- FILE-BASED IMAGING DATA -->
 <span class="table-title"><i class="fa-solid fa-folder-open header-icon"></i> Imaging Domain <span class="subtle"><i>(File-Based Data)</i></span></span>
+<p>See <a href="mri/#release-data" target="_blank">Release Data</a> summary and other sections of the MR Overview page as well as <a href="mri/qc/" target="_blank">MR Quality Control</a>.</p>
 <table class="compact-table-no-vertical-lines index">
 <thead>
 <tr>
     <th>Modality</th>
-    <th>Raw BIDS <i>(<a href="mri/rawbids/" target="_blank">Documentation</a>)</i></th>
-    <th>Pipeline Derivatives <i>(see <a href="../datacuration/file-based-data/#links-to-pipeline-derivatives" target="_blank">Links to Pipeline Derivatives</a>)</i></th>
+    <th>Acronym</th>
+    <th style="text-align: center;">README</th>
+    <th>Raw BIDS 
+      <span class="subtle">(see <a href="mri/rawbids/" target="_blank">Raw MR BIDS</a>)</span></th>
+    <th>Pipeline Derivatives 
+      <span class="subtle">(see <a href="../standards/processing/" target="_blank">Processing Pipelines</a>)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Structural MRI (<a href="mri/smri" target="_blank">sMRI</a>)</td>
+  <td>Structural MRI</td>
+  <td>sMRI</td>
+  <td style="text-align: center;"><a href="mri/smri" target="_blank"></a><i class="fa-brands fa-readme table-icon"></i></td>
   <td><code>anat/</code></td>
-  <td>
-    MRIQC • BIBSNet</td>
+  <td>MRIQC • BIBSNet</td>
 </tr>
 <tr>
-  <td>Functional MRI (<a href="mri/fmri" target="_blank">fMRI</a>)</td>
+  <td>Functional MRI</td>
+  <td>fMRI</td>
+  <td style="text-align: center;"><a href="mri/fmri" target="_blank"></a><i class="fa-brands fa-readme table-icon"></i></td>
   <td><code>func/</code>, <code>fmap/</code></td>
   <td>
     MRIQC • Infant fMRIPrep + FreeSurfer / M-CRIB-S • XCP-D</td>
 </tr>
 <tr>
-    <td>Quantitative MRI (<a href="mri/qmri" target="_blank">qMRI</a>)</td>
-    <td><code>anat/</code>, <code>fmap/</code></td>
-    <td>SyMRI & qMRI PostProc</td>
+  <td>Quantitative MRI</td>
+  <td>qMRI</td>
+  <td style="text-align: center;"><a href="mri/qmri" target="_blank"></a><i class="fa-brands fa-readme table-icon"></i></td>
+  <td><code>anat/</code>, <code>fmap/</code></td>
+  <td>SyMRI & qMRI PostProc</td>
 </tr>
 <tr>
-    <td>Diffusion MRI (<a href="mri/dmri" target="_blank">dMRI</a>)</td>
-    <td><code>dwi/</code></td>
-    <td>
-      QSIPrep & QSIRecon (DSI Studio, DIPY DKI, TORTOISE)</td>
+  <td>Diffusion MRI</td>
+  <td>dMRI</td>
+  <td style="text-align: center;"><a href="mri/dmri" target="_blank"></a><i class="fa-brands fa-readme table-icon"></i></td>
+  <td><code>dwi/</code></td>
+  <td>QSIPrep & QSIRecon (DSI Studio, DIPY DKI, TORTOISE)</td>
 </tr>
+
 <tr>
-  <td>MR Spectroscopy (<a href="mri/mrs" target="_blank">MRS</a>)</td>
+  <td>MR Spectroscopy</td>
+  <td>MRS</td>
+  <td style="text-align: center;"><a href="mri/mrs" target="_blank"></a><i class="fa-brands fa-readme table-icon"></i></td>
   <td><code>mrs/</code></td>
   <td>OSPREY-BIDS</td>
 </tr>
+
 </tbody>
 </table>
 <!-- REGULAR TABULATED DATA -->
 <span class="table-title"><i class="fa-solid fa-table header-icon"></i> Tabular Imaging Domain</span>
 <p class="subtle">MRI Administrative Forms & Post-Processing Quality Control</p>
-<table class="table-no-vertical-lines index">
+<table class="compact-table-no-vertical-lines index">
 <thead>
 <tr>
 <th>Table</th>
@@ -745,25 +760,26 @@ In this section we provide a brief overview of each study instrument provided in
 </thead>
 <tbody>
 <tr>
-<td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms" target="_blank">MRI Summary Forms</a></td>
-<td>Pre-/Post-MRI Tech Checklist 1/2</td>
-<td><code>mri_ra_chkl_scan</code> <span class="subtle">(Checklist 1)</span><br>
-    <code>mri_ra_chkl_data</code> <span class="subtle">(Checklist 2)</span>
+<td>
+<a href="mri/mri-forms/#mri-scan-session-data-summary-forms" target="_blank">
+MRI Scan Session Summary Form <br> MRI Data Summary Form
+</a></td>
+<td>Pre-MRI Tech Checklist 1<br>
+Post-MRI Tech Checklist 2</td>
+<td><code>mri_ra_chkl_scan</code><br>
+    <code>mri_ra_chkl_data</code>
 </td>
 </tr>
-
-
-
-<tr>
+<!-- <tr>
 <td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms" target="_blank">MRI Scan Session Summary Form</a></td>
-<td>Pre-/Post-MRI Tech Checklist 1</td>
+<td>Pre-MRI Tech Checklist 1</td>
 <td><code>mri_ra_chkl_scan</code></td>
 </tr>
 <tr>
 <td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms" target="_blank">MRI Data Summary Form</a></td>
-<td>Pre-/Post-MRI Tech Checklist 2</td>
+<td>Post-MRI Tech Checklist 2</td>
 <td><code>mri_ra_chkl_data</code></td>
-</tr>
+</tr> -->
 <tr>
 <td><a href="mri/prescan-questionnaire" target="_blank">Pre/Post Scan Prep</a></td>
 <td>Infant Sleep</td>

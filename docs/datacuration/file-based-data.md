@@ -44,42 +44,17 @@ hbcd/
 </pre>
 <p></p>
 
-### Participant-, Session-, & Scan-Level Data
-<p>
-<div class="banner">
-  <span class="emoji"><i class="fa fa-circle-info"></i><i class="fa fa-person-cane"></i></span>
-<span class="text">MRI scanner information is now included in the session-level scans TSV files (<code>sub-[ID]_ses-[V0X]_scans.tsv</code>) and will be made available as tabulated data in a future release.</span>
-</div>
-</p>
+##### Participant-, Session-, & Scan-Level Data
+**Participant-Level Data** - `participants.tsv`       
+<span class="subtle" style="font-size: 1em;">General participant information (e.g., sex) to provide high-level overview of all study participants</span>
 
-Participant-, session-, and scan-level data are stored in TSV files accompanied by side JSONs with metadata:
+**Session-Level Data** - `sub-[ID]_sessions.tsv`      
+<span class="subtle" style="font-size: 1em;">Session information, including collection site, age at session, and head size</span>
 
-<table class="table-no-vertical-lines">
-<thead>
-<tr>
-  <th>Level</th>
-  <th>File Name</th>
-  <th style="width: 60%;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Participant</td>
-  <td><code>participants.tsv</code></td>
-  <td>Basic demographic and participant information (e.g., sex)</td>
-</tr>
-<tr>
-  <td>Session</td>
-  <td><code>sub-[ID]_sessions.tsv</code></td>
-  <td>Session information (e.g., collection site, age at each session, head size)</td>
-</tr>
-<tr>
-  <td>Scan</td>
-  <td><code>sub-[ID]_ses-[V0X]_scans.tsv</code></td>
-  <td>Per-scan information (e.g., age, <a href="../../instruments/mri/qc/#location-in-release-data" target="_blank">raw data QC metrics</a>, scanner info)</td>
-</tr>
-</tbody>
-</table>
+**Scan-Level Data** - `sub-[ID]_ses-[V0X]_scans.tsv`   
+<span class="subtle" style="font-size: 1em;">Per-scan information, including key fields of interest such as <a href="../../instruments/mri/qc/#location-in-release-data" target="_blank"><b>raw data QC metrics</b></a> and <b>scanner information</b>
+
+---
 
 ## Derivatives
 
@@ -116,9 +91,7 @@ hbcd/
 </pre>
 <p></p>
 
-### Links to Pipeline Derivatives
-
-
+---
 
 ## Concatenated Data
 
@@ -155,7 +128,7 @@ hbcd/
 
 
 
-
+<!-- ORIG DERIVATIVES TABLE ON THIS PAGE FOR REF
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -228,4 +201,4 @@ hbcd/
   <td><a href="../../instruments/sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a></td>
 </tr>
 </tbody>
-</table>
+</table> -->

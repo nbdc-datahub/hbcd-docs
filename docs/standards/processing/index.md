@@ -1,7 +1,7 @@
 <style>
 .wy-nav-content {
-    width: 90% !important;
-    max-width: 90% !important;
+    width: 85% !important;
+    max-width: 85% !important;
     flex-grow: 1 !important;
 }
 .compact-table-no-vertical-lines th:nth-child(4),
@@ -25,15 +25,13 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Processing details for each pipeline are provided within the modality-specific documentation under <a href="../../../instruments/">Study Instruments</a>, e.g., structural/functional MRI processing is described <a href="../../../instruments/mri/fmri/#processing-derivatives">here</a>. Full technical details on how each pipeline was executed and configured is available in the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> documentation, with pipeline-specific parameters detailed under <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html#tool-names">Tool Names</a> (e.g., <b>File Selection For Processing</b> and <b>Quality Control Selection Information</b> documentation).
+<p>Processing details for each pipeline are provided within the modality-specific documentation under <a href="../../instruments/">Study Instruments</a>, e.g., structural/functional MRI processing is described <a href="../../instruments/mri/fmri/#processing-derivatives">here</a>. Full technical details on how each pipeline was executed and configured is available in the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> documentation, with pipeline-specific parameters detailed under <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html#tool-names">Tool Names</a> (e.g., <b>File Selection For Processing</b> and <b>Quality Control Selection Information</b> documentation).
 </div>
 <p></p>
 
-The HBCD processing pipelines are a collection of modular tools used to process HBCD Study data, including magnetic resonance imaging/spectroscopy (MRI/MRS), electroencephalography (EEG), and biosensor data. Pipeline outputs are provided within the data release as file-based <a href="../../../datacuration/file-based-data/#derivatives" target="_blank">derivatives</a>. All community pipelines used for HBCD data processing must follow HBCD [Processing & Derivative Data Standards](standards.md). The table below includes links to the <a href="https://www.nmind.org/proceedings/">NMIND Evaluated Tools</a> page for each pipeline.
-<!-- 
-, including: <a href="#nmind-checklists-bronze-badge-items">NMIND standards for reproducible neuroimaging</a> and <a. href="#hbcd-specific-requirements">HBCD-specific requirements</a>. The table below includes links to  -->
+The HBCD processing pipelines are a collection of modular tools used to process HBCD Study data, including magnetic resonance imaging/spectroscopy (MRI/MRS), electroencephalography (EEG), and biosensor data. Pipeline outputs are provided within the data release as file-based <a href="../../datacuration/file-based-data/#derivatives" target="_blank">derivatives</a>. All community pipelines used for HBCD data processing must follow HBCD [Processing & Derivative Data Standards](standards.md). The table below includes links to the <a href="https://www.nmind.org/proceedings/">NMIND Evaluated Tools</a> page for each pipeline.
 
-<!-- <p class="subtle">Pipeline names link to documentation.</p> -->
+<div class="table-title">HBCD Processing Pipelines & Relevant Links to Documentation</div>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
