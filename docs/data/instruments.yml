@@ -8,9 +8,9 @@ foodins:
   construct: Food Insecurity
   concatenated: null
   visits: V02, V03
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Self
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -50,9 +50,9 @@ aces:
   construct: Adverse Childhood Experiences (Caregiver)
   concatenated: null
   visits: V04
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person
+  respondent_category: Parent on Self
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -98,9 +98,9 @@ assist:
     (3-month anchor) V4 : Postpartum (12-month anchor)'
   concatenated: null
   visits: V01 - V04
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Self
+  administration: In-person/Remote
   admin_notes: Self-administered remotely in Alabama
   ARCHIVE-respondent: Pregnant Participant or Birth Parent (as applicable)
   ARCHIVE-type: Parent Interview
@@ -159,9 +159,9 @@ growth:
   construct: Growth
   concatenated: null
   visits: V02, V03, V04, V06, V08
-  respondent_category: Child on Self
   assessment_type: Behavioral observation
-  administration: in-person
+  respondent_category: Child on Self
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: Direct Assessment
@@ -206,9 +206,9 @@ apa:
   construct: Mental Health
   concatenated: null
   visits: V01, V02, V03
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Self
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Pregnant Participant/Birth Parent (as applicable) or Primary
     Caregiver
@@ -260,9 +260,9 @@ bfy:
   construct: Benefits/Services, Economic Stress
   concatenated: null
   visits: V01, V05, V07
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Self
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: Parent Interview
@@ -304,9 +304,9 @@ basic_demo:
   table_name: sed_basic_demographics
   construct: Demographics data derived from multiple sources
   concatenated: null
-  visits: null
+  visits: All
+  assessment_type: Derived Data
   respondent_category: null
-  assessment_type: null
   administration: null
   admin_notes: null
   ARCHIVE-respondent: null
@@ -356,9 +356,9 @@ bayley_4:
   construct: Child Development (Cognitive, Language, and Motor)
   concatenated: null
   visits: V04
-  respondent_category: Parent on Child
   assessment_type: Cognitive testing
-  administration: in-person
+  respondent_category: Parent on Child
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: Parent Interview
@@ -427,9 +427,9 @@ bfh:
   concatenated: null
   visits: V02, V03, V04, V06, V08 V08 (only administered if still breastfeeding at
     prior visit)
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: Parent Survey
@@ -469,9 +469,9 @@ bisq:
   construct: Sleep
   concatenated: null
   visits: V04
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: Parent Survey
@@ -528,9 +528,9 @@ demographics_ch:
   construct: Child Demographics
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person
+  respondent_category: Parent on Child
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: Parent Interview
@@ -567,9 +567,9 @@ cabr_sf:
   construct: Intimate Partner Violence
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person
+  respondent_category: Parent on Self
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -619,9 +619,9 @@ chaos:
   construct: Family Organization
   concatenated: null
   visits: V05, V07
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -668,9 +668,9 @@ employment:
   construct: Current Employment
   concatenated: null
   visits: V05
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Self
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -706,9 +706,9 @@ demographics:
   construct: Demographics (Birth Parent/Alternative Caregiver)
   concatenated: null
   visits: V01, V04, V06
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person
+  respondent_category: Parent on Self
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Interview
@@ -745,9 +745,9 @@ ptsd:
   construct: PTSD/Acute Stress Disorder Symptom Severity
   concatenated: null
   visits: V01, V02, V03
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Self
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Pregnant Participant/Birth Parent (as applicable) or Primary
     Caregiver
@@ -803,9 +803,9 @@ erica:
   construct: Emotional Regulation, Parenting, Caregiver-Child Relationship
   concatenated: null
   visits: V03
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person
+  respondent_category: Parent on Child
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Interview
@@ -875,9 +875,9 @@ ecpromis_pags:
   construct: Physical Activity
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Child
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey or Interview
@@ -924,9 +924,9 @@ ecpromis_sleep:
   construct: Sleep
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Child
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -974,9 +974,9 @@ ecpromis:
   visits: 'Inf: V03, V05
 
     1to5: V03, V05, V07'
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: Parent Survey
@@ -1030,9 +1030,9 @@ ecpromis_peer:
   construct: Peer Relationships
   concatenated: null
   visits: V05, V07, V09
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -1079,9 +1079,9 @@ ecpromis_selfreg:
   construct: Self-Regulation and Flexibility
   concatenated: null
   visits: V05, V07, V09
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -1128,9 +1128,9 @@ epds:
   construct: Postnatal Depression
   concatenated: null
   visits: V01, V02, V03
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Self
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Pregnant Participant or Birth Parent (as applicable)
   ARCHIVE-type: Parent Survey
@@ -1178,9 +1178,9 @@ discr:
   construct: Experiences of Unfair Treatment
   concatenated: null
   visits: V01, V05, V07
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Self
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -1217,9 +1217,9 @@ fad:
   construct: Global Functioning of the Family Unit
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Child
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Interview or Survey
@@ -1268,8 +1268,8 @@ gled:
   construct: Neighborhood Measures
   concatenated: geocoding/
   visits: null
-  respondent_category: null
   assessment_type: Linked External Data
+  respondent_category: null
   administration: null
   admin_notes: null
   ARCHIVE-respondent: null
@@ -1326,9 +1326,9 @@ home21:
     in the Home'
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Child
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Interview or Survey
@@ -1378,9 +1378,9 @@ chem_exp:
   construct: Household Chemical Exposures
   concatenated: null
   visits: V05
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Child
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -1424,9 +1424,9 @@ illumina:
     \ hbcd.{bed|bim|fam}"
   visits: Samples are assayed from one sample (from parent and child), but may come
     from any visit (V01-V06) based on DNA yields.
-  respondent_category: null
   assessment_type: Biospecimen collection
-  administration: in-person
+  respondent_category: null
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: Birth Parent & Child
   ARCHIVE-type: Direct Assessment
@@ -1523,9 +1523,9 @@ ibqr:
     / Extraversion
   concatenated: null
   visits: V03, V05
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -1588,9 +1588,9 @@ nutrition:
   construct: Nutrition
   concatenated: null
   visits: V05
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Child
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Interview
@@ -1627,9 +1627,9 @@ inf_sensor_q:
   construct: Motor Development, Regulation (Sleep/Wake)
   concatenated: null
   visits: V02, V03
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -1669,9 +1669,9 @@ lead:
   construct: Lead Exposures
   concatenated: null
   visits: V05
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Child
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -1718,9 +1718,9 @@ mb_cdi:
   construct: Language Development
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person
+  respondent_category: Parent on Child
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -1789,9 +1789,9 @@ med_hist:
   construct: Medical History
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Child
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Interview
@@ -1832,9 +1832,9 @@ mri_forms:
   construct: Pre-/Post-MRI Tech Checklists 1 <i>(Scan Session)</i> & 2 <i>(Data)<i>
   concatenated: null
   visits: V02 - V06
-  respondent_category: 'N/A: RA Form'
   assessment_type: Checklist
-  administration: in-person
+  respondent_category: 'N/A: RA Form'
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: MRI Technician Form
@@ -1870,9 +1870,9 @@ maps_tl:
   construct: Irritability
   concatenated: null
   visits: V03
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -1913,9 +1913,9 @@ mlds:
   construct: Multilingual Exposure
   concatenated: null
   visits: V03, V04, V05, V07
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: If the caregiver does not complete the assessment remotely, it is conducted
     at the visit to document the child’s language exposure environments. The instrument
     can be administered by an HBCD Study team member in-person or via video as needed.
@@ -1962,9 +1962,9 @@ olink:
   concatenated: "└── proteins/olink/inflammation/\n    ├── Olink_allplates_long.csv\n\
     \    └── Olink_allplates_wide.csv"
   visits: V01
-  respondent_category: Parent on Self
   assessment_type: Biospecimen collection
-  administration: in-person
+  respondent_category: Parent on Self
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: Pregnant Participant
   ARCHIVE-type: Direct Assessment
@@ -2013,9 +2013,9 @@ ehits:
   construct: Intimate Partner Violence
   concatenated: null
   visits: V01
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person
+  respondent_category: Parent on Self
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: Parent Interview
@@ -2057,9 +2057,9 @@ pedaces:
   construct: Adverse Childhood Experiences (Child)
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: null
@@ -2095,9 +2095,9 @@ fam_mh:
   construct: Personal and Family Mental Health
   concatenated: null
   visits: V01
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Self
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Pregnant Participant
   ARCHIVE-type: Parent Survey
@@ -2133,9 +2133,9 @@ nbhsaf:
   construct: Neighborhood Safety
   concatenated: null
   visits: V01, V02, V07, V09
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Self
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: Parent Survey
@@ -2171,9 +2171,9 @@ prescan_q:
   construct: Infant Sleep Environment
   concatenated: null
   visits: V02 - V06
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person
+  respondent_category: Parent on Child
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: Parent Interview
@@ -2210,9 +2210,9 @@ promis:
   construct: Perceived Stress/Social Support
   concatenated: null
   visits: V01, V02, V03
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -2250,9 +2250,9 @@ paces:
   construct: Protective Factors
   concatenated: null
   visits: V01
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Self
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: null
   ARCHIVE-type: Parent Survey
@@ -2288,9 +2288,9 @@ screenq:
   construct: Media Use
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Child
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Interview
@@ -2337,9 +2337,9 @@ shs:
   construct: Second Hand Smoke
   concatenated: null
   visits: V05
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Child
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -2386,9 +2386,9 @@ spm_2:
   construct: Sensory Processing/Integration
   concatenated: null
   visits: V03 (Infant); V05 (Toddler)
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -2434,9 +2434,9 @@ study_nav:
   construct: Recruitment/Retention
   concatenated: study_navigator/
   visits: Filled out by the Study Navigator during and/or between study visits.
-  respondent_category: null
   assessment_type: Interview
-  administration: in-person/remote
+  respondent_category: null
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Primary Caregiver
   ARCHIVE-type: Parent Interview
@@ -2489,9 +2489,9 @@ subst:
   construct: Substance Use in Pregnancy
   concatenated: null
   visits: V02
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person
+  respondent_category: Parent on Self
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: Birth Parent
   ARCHIVE-type: Parent Survey
@@ -2580,9 +2580,9 @@ tlfb:
   construct: Substance Use Before and During Pregnancy
   concatenated: null
   visits: V01, V02
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person
+  respondent_category: Parent on Self
+  administration: In-person
   admin_notes: self-administered in Alabama
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Interview
@@ -2645,9 +2645,9 @@ tic:
     in who provides primary care
   concatenated: null
   visits: V02 onward
-  respondent_category: Parent on Child
   assessment_type: Interview
-  administration: in-person/remote
+  respondent_category: Parent on Child
+  administration: In-person/Remote
   admin_notes: RA administered via phone
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Interview or Survey
@@ -2708,9 +2708,9 @@ nails:
   construct: Drug Panel, Environmental Exposure
   concatenated: null
   visits: V01, V02
-  respondent_category: Parent on Self
   assessment_type: Biospecimen collection
-  administration: in-person
+  respondent_category: Parent on Self
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: Pregnant Participant or Birth Parent (as applicable)
   ARCHIVE-type: Direct Assessment
@@ -2764,9 +2764,9 @@ urine:
   construct: Drug Panel, Toxins
   concatenated: null
   visits: V01
-  respondent_category: Parent on Self
   assessment_type: Biospecimen collection
-  administration: in-person
+  respondent_category: Parent on Self
+  administration: In-person
   admin_notes: null
   ARCHIVE-respondent: Pregnant Participant or Birth Parent (as applicable)
   ARCHIVE-type: Direct Assessment
@@ -2815,9 +2815,9 @@ via:
   construct: Acculturation
   concatenated: null
   visits: V05
-  respondent_category: Parent on Self
   assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent_category: Parent on Self
+  administration: In-person/Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Interview or Survey
@@ -2886,9 +2886,9 @@ vineland_3:
   construct: Adaptive Behavior
   concatenated: null
   visits: V05, V09, V10
-  respondent_category: Parent on Child
   assessment_type: Questionnaire
-  administration: remote
+  respondent_category: Parent on Child
+  administration: Remote
   admin_notes: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-type: Parent Survey
@@ -2954,8 +2954,8 @@ visit_info:
   construct: Participant visit information
   concatenated: null
   visits: All
-  respondent_category: null
   assessment_type: null
+  respondent_category: null
   administration: null
   admin_notes: null
   ARCHIVE-respondent: null
@@ -2992,9 +2992,9 @@ vs100:
   construct: Vision
   concatenated: null
   visits: V04, V06, V08
-  respondent_category: Child on Self
   assessment_type: Wearable
-  administration: in-person
+  respondent_category: Child on Self
+  administration: In-person
   admin_notes: Only administered if parent responds NO to eligibility question (“Have
     you been told that your child cannot see at all?” (i.e., cannot see shadows or
     distinguish light and dark)

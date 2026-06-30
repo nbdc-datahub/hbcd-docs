@@ -21,15 +21,39 @@ def build_readme(inst):
     # if visits:
     #     visits = visits.replace("\n", "<br>")
 
-    assessment_type_value = inst.get("assessment_type", "")
-    respondent_category_value = inst.get("respondent_category", "")
-    duration = inst.get("duration")
 
-    # if duration:
-    #     type_value = f"{type_value} ({duration})"
+    # Type field summary
+    assessment_type = inst.get("assessment_type") # Questionnaire, interview, etc.
+    mode = inst.get("administration") # remote or in-person
+    resp = inst.get("respondent_category") # Parent on Child, Parent on Self, etc.
+    duration = inst.get("duration") # X min 
 
-    administration = f"{assessment_type_value} ({respondent_category_value}, {duration})"
-             
+    # Build base: Type
+    parts = []
+    if assessment_type:
+        base = assessment_type
+    else:
+        base = None
+
+    # Add respondent info 
+    details = []
+    if resp:
+        details.append(resp)
+    if duration:
+        details.append(f"{duration}")
+    if details:
+        base = f"{base} ({'; '.join(details)})" if base else f"({'; '.join(details)})"
+    
+    # Add mode as prefix
+    if mode and base:
+        administration_summary = f"{mode} {base}"
+    elif mode:
+        administration_summary = mode
+    else:
+        administration_summary = base or ""
+
+    # eg Remote Questionnaire (Parent on Child; 4-8 min duration)
+    
     return f"""
 <table class="table-no-vertical-lines readme-intro">
 <tbody>
@@ -38,7 +62,7 @@ def build_readme(inst):
 {table_row("Concatenated Data", inst.get('concatenated'), code=True)}
 {table_row("Construct", inst.get("construct"))}
 {table_row("Study Visits", inst.get("visits"))}
-{table_row("Type", administration)}
+{table_row("Type", administration_summary)}
 {table_row("Quality Control", qc)}
 
 </tbody>

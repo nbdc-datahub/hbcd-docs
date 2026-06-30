@@ -8,7 +8,10 @@
 
 # Basic Demographics Information 
 
-Basic Demographics (<code>sed_basic_demographics</code>) is a **derived measure** with information computed from the following sources: 
+{{ readme(instruments.basic_demo) }}
+
+
+Basic Demographics is a **derived measure** with information computed from the following sources: 
 
 - **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
 - **Demographics** instruments (Social & Environmental Determinants), including <a href="../../SED/demo-cg/" target="_blank">Adult</a> (`sed_bm_demo`) and <a href="../../SED/demo-ch/" target="_blank">Child</a> (`sed_ch_demo`)
