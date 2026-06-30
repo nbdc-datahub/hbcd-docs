@@ -9,15 +9,7 @@
 The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Peer Relationships Scale** assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors. 
 
 
-{{ mods_banner_macro() }}
-<div class="collapsible-content">
-<p>The item <code>[peer_yn]</code> was added to the beginning of the survey instrument for HBCD to assess whether the child had opportunities to interact with other children during the primary period (past 7 days).</p>
-<blockquote>
-<strong>Item text</strong>: <i>“My child had opportunities to interact with other children."</i><br>
-<strong>Response options</strong>: 0 [No]; 1 [Yes]; Decline to Answer
-</blockquote>
-The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn't scored), but can be used as a filter variable for analyses. This item was added with the approval of the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure.</p>
-</div>
+{{ hbcd_mods(instruments.ecpromis_peer) }}
 
 {{ scoring_banner_macro() }}
 <div class="collapsible-content">
@@ -39,34 +31,3 @@ The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn'
 <p>Lai, J.-S., Kallen, M. A., Blackwell, C. K., Wakschlag, L. S., & Cella, D. (2022). Psychometric considerations in developing PROMIS® measures for early childhood. <i>Journal of Pediatric Psychology</i>, 47(5), 510–522. <a href="https://doi.org/10.1093/jpepsy/jsac025" target="_blank">https://doi.org/10.1093/jpepsy/jsac025</a></p>  
 <p>Park, C. H., Blaisdell, C. J., & Gillman, M. W. (2022). The NIH ECHO program: An impetus for the development of early childhood PROMIS tools. <i>Journal of Pediatric Psychology</i>, 47(5), 497–499. <a href="https://doi.org/10.1093/jpepsy/jsac010" target="_blank">https://doi.org/10.1093/jpepsy/jsac010</a></p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-### ORIG
-<div id="hbcd-mod" class="banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-    <span class="text">HBCD Modification Details</span>
-    <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>The item <code>[peer_yn]</code> was added to the beginning of the survey instrument for HBCD to assess whether the child had opportunities to interact with other children during the primary period (past 7 days).</p>
-<blockquote>
-<strong>Item text</strong>: <i>“My child had opportunities to interact with other children."</i><br>
-<strong>Response options</strong>: 0 [No]; 1 [Yes]; Decline to Answer
-</blockquote>
-The addition of <code>[peer_yn]</code> does not affect scoring (as the item isn't scored), but can be used as a filter variable for analyses. This item was added with the approval of the measure creators. However, because ecPROMIS measures are copyrighted, it is important that any publications using this variable note that <code>[peer_yn]</code> was not part of the original measure.</p>
-</div>
-

@@ -1,12 +1,15 @@
 # Visit Level Data
 
 {{ readme(instruments.visit_info) }}
-
-Visit Information includes general visit information (e.g. site and information about missed visits and participant withdrawal), substance use flags, and cohort and caregiver types. 
-
 {{ alert_warning(instruments.visit_info) }}
 {{ data_warning(instruments.visit_info) }}
 {{ issues_banner_macro() }}
+
+---
+
+Visit Information includes general visit information (e.g. site and information about missed visits and participant withdrawal), substance use flags, and cohort and caregiver types. 
+
+---
 
 ## Age Of Child at Each Visit
 

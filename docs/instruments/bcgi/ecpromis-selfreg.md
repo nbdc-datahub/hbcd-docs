@@ -9,10 +9,7 @@
 
 The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Self-Regulation - Flexibility Scale** assesses young children’s ability to adapt in response to environmental demands, changes, and expectations. 
 
-{{ mods_banner_macro() }}
-<div class="collapsible-content">
-<p>The item queue was rearranged per the HBCD DEI Committee’s recommendation to: 2, 3, 4, 5, 1. The item order change is minimal, should have no effect on data, and was approved by the measure creators. While ecPROMIS measures are copyrighted, the content of each item is maintained.</p>
-</div>
+{{ hbcd_mods(instruments.ecpromis_selfreg) }}
 
 {{ scoring_banner_macro() }}
 <div class="collapsible-content">

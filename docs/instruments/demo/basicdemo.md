@@ -9,6 +9,10 @@
 # Basic Demographics
 
 {{ readme(instruments.basic_demo) }}
+{{ alert_warning(instruments.basic_demo) }}
+{{ issues_banner_macro() }}
+
+---
 
 Basic Demographics is a **derived measure** with information computed from the following sources: 
 
@@ -16,9 +20,6 @@ Basic Demographics is a **derived measure** with information computed from the f
 - **Demographics** instruments (Social & Environmental Determinants), including <a href="../../SED/demo-cg/" target="_blank">Adult</a> (`sed_bm_demo`) and <a href="../../SED/demo-ch/" target="_blank">Child</a> (`sed_ch_demo`)
 
 Basic Demographics includes global, visit-agnostic variables that do not change over time and should be consistent across all visits for the adult/caregiver and beginning at Visit 2 for the child (post-birth). Note that if only V01 data for a given adult participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about their child will be missing, as the child is not born until after the V01 visit.
-
-{{ alert_warning(instruments.basic_demo) }}
-{{ issues_banner_macro() }}
 
 ---
 

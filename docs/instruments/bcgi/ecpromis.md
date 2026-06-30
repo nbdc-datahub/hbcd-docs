@@ -11,13 +11,7 @@ The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Informati
 
 For the HBCD study, the ecPROMIS Child–Caregiver Relationship Form was developed based on the ecPROMIS Parent-Report Short Form v1.0 – Social Relationships: Child–Caregiver Interactions 5a. Because the original measure was designed for children aged **1–5 years**, an adapted version was created for **infants under 1 year** (i.e. 3-9 month old infants from visit V03), replacing the term ‘my child’ with 'my baby' per the guidance of ecPROMIS developers. 
 
-{{ mods_banner_macro() }}
-<div class="collapsible-content">
-<p><b>General Language Modiﬁcations</b><br> 
-Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible. In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
-<p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p> 
-<p>The caregiver-child ecPROMIS was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the HealthMeasures (ecPROMIS) team.</p>
-</div>
+{{ hbcd_mods(instruments.ecpromis) }}
 
 {{ scoring_banner_macro() }}
 <div class="collapsible-content">
@@ -91,4 +85,13 @@ Measure instructions and individual items that reference gendered pronouns (‘h
 The ecPROMIS assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p> 
 <p><b>Administration at V05 (<i>&lt;1 year</i> vs. <i>1–5 years</i>)</b><br>
 At V05 (10–17 months), the standard administration is the child (<i>1–5 years</i>) version of the ecPROMIS Child–Caregiver Relationship Scale. A small subset of participants (N=11) were administered both the child and infant (<i>&lt;1 year</i>) versions at this visit. Although data from both instruments are valid, <b>we recommend using the 1–5 years version for V05 analyses to ensure consistency across participants</b>, as most were administered only the 1–5 years version.</p>
+</div> -->
+
+<!-- 
+{{ mods_banner_macro() }}
+<div class="collapsible-content">
+<p><b>General Language Modiﬁcations</b><br> 
+Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replace with ‘my child’ when eliminating pronouns was not grammatically possible. In contrast to other measures, following consultation with measure creators, the term “parent” was not replaced with “parent/caregiver.”</p>
+<p>The wording changes are minimal, should have no effect on data, and were approved by the measure creators. Because ecPROMIS measures are copyrighted, however, it is important that publications account for and note edits made to individual items.</p> 
+<p>The caregiver-child ecPROMIS was originally developed to assess children aged 1 to 5 years old. Language adjustments were made for developmental appropriateness for infants and approved by the HealthMeasures (ecPROMIS) team.</p>
 </div> -->

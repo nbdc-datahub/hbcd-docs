@@ -1,6 +1,5 @@
 <!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE, including QC details and scoring -->
 
-
 # ERICA
 
 {{ readme(instruments.erica) }}

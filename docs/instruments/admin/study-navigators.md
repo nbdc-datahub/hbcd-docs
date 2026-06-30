@@ -37,7 +37,6 @@ The **Study Navigator Contact Form** captures visit-specific information when pa
 </div>
 <div class="collapsible-content">
 <p>There are four options the Study Navigator can select to indicate actions taken, i.e. how they responded, for each topic, including:</p>
-
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
@@ -64,7 +63,6 @@ The **Study Navigator Contact Form** captures visit-specific information when pa
 </tr>
 </tbody>
 </table>
-
 </div>
 
 ## Release Data
@@ -169,8 +167,6 @@ The Study Navigator Contact dataset is provided as a single <a href="../../../da
 </table>
 </div>
 
-
-
 <div id="metadata-barriers" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
@@ -218,7 +214,6 @@ childcare; concerns_about_confidentiality; family_instability; lack_of_time; tra
 </td>
 <td>newborn_and_infant_care; labor_birth; maternal_perinatal_health; postpartum_care; other</td>
 </tr>
-
 <tr>
 <td>
   <code>CHILD_HEALTH_CHECKBOXES</code>
@@ -226,7 +221,6 @@ childcare; concerns_about_confidentiality; family_instability; lack_of_time; tra
 </td>
 <td>mental_health; physical_health; safety; other</td>
 </tr>
-
 <tr>
 <td>
   <code>PARENTS_GUARDIANS_CHECKBOXES</code>
@@ -234,7 +228,6 @@ childcare; concerns_about_confidentiality; family_instability; lack_of_time; tra
 </td>
 <td> mental_health; parenting; physical_health; safety; other</td>
 </tr>
-
 <tr>
 <td>
   <code>BROADER_FAMILY_HEALTH_CHECKBOXES</code>
@@ -242,7 +235,6 @@ childcare; concerns_about_confidentiality; family_instability; lack_of_time; tra
 </td>
 <td>caregiving; mental_health; physical_health; safety; other</td>
 </tr>
-
 <tr>
 <td>
   <code>SOCIOECONOMIC_RESOURCES_CHECKBOXES</code>
@@ -261,7 +253,6 @@ childcare; financial; food_nutrition; housing; transportation; other
 behavioral; medical; recovery; other
 </td>
 </tr>
-
 <tr>
 <td>
   <code>OTHER_CHECKBOXES</code>
@@ -269,7 +260,6 @@ behavioral; medical; recovery; other
 </td>
 <td>family_crisis; court_or_legal; other</td>
 </tr>
-
 </tbody>
 </table>
 </div>

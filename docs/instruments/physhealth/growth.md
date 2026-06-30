@@ -7,7 +7,6 @@
 {{ alert_warning(instruments.growth) }}
 
 
-
 {{ warning_banner_macro() }}
 <div class="collapsible-content">
 <div class="info-section">

@@ -9,11 +9,7 @@
 
 The **Multidimensional Assessment Profiles- Temper Loss scale (MAPS-TL)** is a well-validated survey assessing irritability that serves as a tool for characterizing the developmental expression of early mental health risk. MAPS-TL measures a range of behaviors that encompass dysregulation, responsiveness to environmental input, and context. Questions inquire about the behaviors of the focal child over the past month. Irritability has been identified as an early dimensional marker of lifespan mental health risk. MAPS-TL aims to delineate the typical-to-atypical spectrum of irritability in early childhood and identify those young children at high probability of subsequent adaptational problems based on problems with dysregulation. 
 
-{{ mods_banner_macro() }}
-<div class="collapsible-content">
-<p><b>General Language Modifications</b><br>
-Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replaced with ‘my child’ when eliminating pronouns was not grammatically possible. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.</p>
-</div>
+{{ hbcd_mods(instruments.maps_tl) }}
 
 {{ scoring_banner_macro() }}
 <div class="collapsible-content">
