@@ -1,44 +1,6 @@
 # ecPROMIS Caregiver-Child Relationship Scale
 
-<!-- {{ readme(instruments.ecpromis) }} -->
-
-<table class="table-no-vertical-lines readme-intro">
-<tbody>
-<tr>
-  <td>Full Name</td><td>ecPROMIS Caregiver-Child Relationship Scale</td>
-</tr>
-<tr>
-  <td>Versions</td><td>Infant Version (&lt;1 year old)<br>Child Version (1 - 5 years old)</td>
-</tr>
-<tr>
-  <td>Table Name</td>
-  <td><code>mh_cg_pms__cc__inf</code><br>
-  <code>mh_cg_pms__cc__1to5</code></td>
-</tr>
-<tr>
-  <td>Study Visits</td>
-  <td>V03, V05 (Infant version);<br>
-  V03, V05, V07 (Child version)</td>
-</tr>
-<tr>
-  <td>Construct</td>  <td>Relationships</td>
-</tr>
-<tr>
-  <td>Type</td>  <td>Primary caregiver survey (child-specific; 1-2 min)</td>
-</tr>
-<tr>
-  <td>Quality Control</td>
-  <td>
-    <ul>
-    <li>Examine missingness by counting items answered per participant.</li>
-    <li>Check age is within expected ranges.</li>
-    <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
-    </ul>
-  </td>
-</tr>
-</tbody>
-</table>
-
+{{ readme(instruments.ecpromis) }}
 {{ alert_warning(instruments.ecpromis) }}
 {{ data_warning(instruments.ecpromis) }}
 {{ issues_banner_macro() }}
@@ -82,7 +44,42 @@ Measure instructions and individual items that reference gendered pronouns (‘h
 
 
 
-
+<!-- <table class="table-no-vertical-lines readme-intro">
+<tbody>
+<tr>
+  <td>Full Name</td><td>ecPROMIS Caregiver-Child Relationship Scale</td>
+</tr>
+<tr>
+  <td>Versions</td><td>Infant Version (&lt;1 year old)<br>Child Version (1 - 5 years old)</td>
+</tr>
+<tr>
+  <td>Table Name</td>
+  <td><code>mh_cg_pms__cc__inf</code><br>
+  <code>mh_cg_pms__cc__1to5</code></td>
+</tr>
+<tr>
+  <td>Study Visits</td>
+  <td>V03, V05 (Infant version);<br>
+  V03, V05, V07 (Child version)</td>
+</tr>
+<tr>
+  <td>Construct</td>  <td>Relationships</td>
+</tr>
+<tr>
+  <td>Type</td>  <td>Primary caregiver survey (child-specific; 1-2 min)</td>
+</tr>
+<tr>
+  <td>Quality Control</td>
+  <td>
+    <ul>
+    <li>Examine missingness by counting items answered per participant.</li>
+    <li>Check age is within expected ranges.</li>
+    <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table> -->
 
 <!-- <div class="collapsible-content">
 <p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>

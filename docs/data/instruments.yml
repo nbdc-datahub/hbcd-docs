@@ -1,14 +1,81 @@
+ecpromis:
+  measure: ecPROMIS Caregiver-Child Relationship Scale
+  notes: MANUAL
+  version1: Infant (<1 year old)
+  version2: Child (1 - 5 years old)
+  acronym: null
+  full_name: ecPROMIS Caregiver-Child Relationship Scale
+  domain: Behavior & Caregiver-Child Interactions
+  table_name: null
+  table_version1: mh_cg_pms__cc__inf
+  table_version2: mh_cg_pms__cc__1to5
+  construct: Relationships
+  concatenated: null
+  visits: null
+  visits_version1: V03, V05
+  visits_version2: V03, V05, V07
+  assessment_type: Questionnaire
+  respondent_category: Parent on Child
+  administration: Remote
+  admin_notes: null
+  ARCHIVE-respondent: null
+  ARCHIVE-type: Parent Survey
+  ARCHIVE-administration: null
+  duration: 1-2 min
+  qc:
+  - Examine missingness by counting items answered per participant.
+  - Check age is within expected ranges.
+  - Review summary statistics and visualizations (item frequencies, age, prorated
+    scores).
+  hbcd_mods: null
+  scoring: null
+  alert1_title: null
+  alert1: The HBCD dataset includes many variables that may be important for sound
+    and comprehensive analysis. The inclusion of additional variables will depend
+    on the research question(s) and methodological approach. Users are encouraged
+    to take time to explore the full range of available variables — especially those
+    that may serve as controls, contextual indicators, confounders, mechanisms, or
+    modifiers — to ensure thoughtful and well-supported analytic decisions. Other
+    important considerations may include developmental functioning, broader family
+    supports, and early adverse and protective exposures.
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: Data Interpretation
+  warning1: The ecPROMIS assesses normative variations in child behavior and should
+    be interpreted within the context of the child's age and developmental stage.
+    This is not clinical or diagnostic instrument.
+  warning2_title: Administration at V05 (<1 year vs. 1–5 years)
+  warning2: At V05 (10–17 months), the standard administration is the child (1–5 years)
+    version of the ecPROMIS Child–Caregiver Relationship Scale. A small subset of
+    participants (N=11) were administered both the child and infant (<1 year) versions
+    at this visit. Although data from both instruments are valid, we recommend using
+    the 1–5 years version for V05 analyses to ensure consistency across participants,
+    as most were administered only the 1–5 years version.
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-child_specific: 'Yes'
 foodins:
   measure: 2-item Food Insecurity
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: USDA short form
   full_name: 2-item Food Insecurity
   domain: Social & Environmental Determinants
   table_name: sed_cg_foodins
+  table_version1: null
+  table_version2: null
   construct: Food Insecurity
   concatenated: null
   visits: V02, V03
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: Remote
@@ -44,14 +111,19 @@ foodins:
 aces:
   measure: Adverse Childhood Experiences
   notes: aces & ped aces
-  versions: null
+  version1: null
+  version2: null
   acronym: ACEs
   full_name: Adverse Childhood Experiences (Adult)
   domain: Social & Environmental Determinants
   table_name: sed_cg_ace
+  table_version1: null
+  table_version2: null
   construct: Adverse Childhood Experiences (Caregiver)
   concatenated: null
   visits: V04
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person
@@ -91,16 +163,21 @@ aces:
 assist:
   measure: Alcohol, Smoking and Substance Involvement Screening Test V1-V4
   notes: MANUAL
-  versions: null
+  version1: null
+  version2: null
   acronym: ASSIST V1-V4
   full_name: Alcohol, Smoking and Substance Involvement Screening Test V1-V4
   domain: Pregnancy & Exposure, Including Substance Use
   table_name: pex_bm_assist{v1|v2|v3|v4}
+  table_version1: null
+  table_version2: null
   construct: 'ASSIST substance use assessment across visits: V1 : Pre-pregnancy and
     during pregnancy V2 : Late pregnancy and early postnatal (0–4 weeks) V3 : Postpartum
     (3-month anchor) V4 : Postpartum (12-month anchor)'
   concatenated: null
   visits: V01 - V04
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person/Remote
@@ -155,14 +232,19 @@ assist:
 growth:
   measure: Anthropometrics
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Anthropometrics <i>(Height/Weight/Head Circumference)</i>
   domain: Physical Health
   table_name: ph_ch_anthro
+  table_version1: null
+  table_version2: null
   construct: Growth
   concatenated: null
   visits: V02, V03, V04, V06, V08
+  visits_version1: null
+  visits_version2: null
   assessment_type: Behavioral observation
   respondent_category: Child on Self
   administration: In-person
@@ -203,14 +285,19 @@ growth:
 apa:
   measure: APA 1/2
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: APA 1/2
   full_name: DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure—Adult
   domain: Pregnancy & Exposure, Including Substance Use
   table_name: pex_bm_apa
+  table_version1: null
+  table_version2: null
   construct: Mental Health
   concatenated: null
   visits: V01, V02, V03
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person/Remote
@@ -258,14 +345,19 @@ apa:
 bfy:
   measure: Baby's First Years
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: BFY
   full_name: Baby's First Years
   domain: Social & Environmental Determinants
   table_name: sed_bm_bfy
+  table_version1: null
+  table_version2: null
   construct: Benefits/Services, Economic Stress
   concatenated: null
   visits: V01, V05, V07
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: Remote
@@ -304,14 +396,19 @@ bfy:
 basic_demo:
   measure: Basic Demographics
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Basic Demographics Information
   domain: Demographics
   table_name: sed_basic_demographics
+  table_version1: null
+  table_version2: null
   construct: Demographics data derived from multiple sources
   concatenated: null
   visits: null
+  visits_version1: null
+  visits_version2: null
   assessment_type: Derived Data
   respondent_category: null
   administration: null
@@ -356,14 +453,19 @@ basic_demo:
 bayley_4:
   measure: Bayley Scales of Infant and Toddler Development, Fourth Edition
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: Bayley-4
   full_name: Bayley Scales of Infant and Toddler Development, Fourth Edition
   domain: Neurocognition & Language
   table_name: ncl_ch_bayley
+  table_version1: null
+  table_version2: null
   construct: Child Development (Cognitive, Language, and Motor)
   concatenated: null
   visits: V04
+  visits_version1: null
+  visits_version2: null
   assessment_type: Cognitive testing
   respondent_category: Parent on Child
   administration: In-person
@@ -427,15 +529,20 @@ bayley_4:
 bfh:
   measure: Breast Feeding History
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: PHENX BF
   full_name: Breast Feeding History
   domain: Physical Health
   table_name: ph_cg_phx__bfh
+  table_version1: null
+  table_version2: null
   construct: Nutrition
   concatenated: null
   visits: V02, V03, V04, V06, V08 V08 (only administered if still breastfeeding at
     prior visit)
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -471,14 +578,19 @@ bfh:
 bisq:
   measure: Brief Infant Sleep Questionnaire
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: BISQ-SF
   full_name: Brief Infant Sleep Questionnaire- Short Form
   domain: Physical Health
   table_name: ph_cg_bisq
+  table_version1: null
+  table_version2: null
   construct: Sleep
   concatenated: null
   visits: V04
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -531,14 +643,19 @@ bisq:
 demographics_ch:
   measure: Child Demographics
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Child Demographics
   domain: Social & Environmental Determinants
   table_name: sed_bm_demo_child
+  table_version1: null
+  table_version2: null
   construct: Child Demographics
   concatenated: null
   visits: V04, V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person
@@ -571,14 +688,19 @@ demographics_ch:
 cabr_sf:
   measure: Composite Abuse Scale Revised - Short Form
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: CABr-SF
   full_name: Composite Abuse Scale Revised - Short Form
   domain: Social & Environmental Determinants
   table_name: sed_cg_cabr_sf
+  table_version1: null
+  table_version2: null
   construct: Intimate Partner Violence
   concatenated: null
   visits: V04, V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person
@@ -624,14 +746,19 @@ cabr_sf:
 chaos:
   measure: Confusion, Hubbub and Order Scale
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: CHAOS
   full_name: Confusion, Hubbub and Order Scale
   domain: Behavior & Caregiver-Child Interactions
   table_name: mh_cg_chaos
+  table_version1: null
+  table_version2: null
   construct: Family Organization
   concatenated: null
   visits: V05, V07
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -674,14 +801,19 @@ chaos:
 employment:
   measure: Current Employment
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Current Employment
   domain: Social & Environmental Determinants
   table_name: sed_cg_employ
+  table_version1: null
+  table_version2: null
   construct: Current Employment
   concatenated: null
   visits: V05
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person/Remote
@@ -713,14 +845,19 @@ employment:
 demographics:
   measure: Demographics (Adult)
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Demographics (Adult)
   domain: Social & Environmental Determinants
   table_name: sed_bm_demo
+  table_version1: null
+  table_version2: null
   construct: Demographics (Birth Parent/Alternative Caregiver)
   concatenated: null
   visits: V01, V04, V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person
@@ -753,14 +890,19 @@ demographics:
 ptsd:
   measure: DSM5 Severity Acute Stress or PTSD
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: PTSD/Acute Stress
   full_name: National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder
   domain: Pregnancy & Exposure, Including Substance Use
   table_name: pex_bm_str__ptsd
+  table_version1: null
+  table_version2: null
   construct: PTSD/Acute Stress Disorder Symptom Severity
   concatenated: null
   visits: V01, V02, V03
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person/Remote
@@ -810,16 +952,21 @@ ptsd:
 erica:
   measure: Early Regulation in Context Assessment
   notes: 2 files
-  versions: null
+  version1: null
+  version2: null
   acronym: ERICA
   full_name: Early Regulation in Context Assessment
   domain: Behavior & Caregiver-Child Interactions
   table_name: 'mh_cg_erica_3_9m (Primary coding data file)
 
     mh_cg_erica_rel_3_9m (Reliability codes)'
+  table_version1: null
+  table_version2: null
   construct: Emotional Regulation, Parenting, Caregiver-Child Relationship
   concatenated: null
   visits: V03
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person
@@ -885,14 +1032,19 @@ erica:
 ecpromis_pags:
   measure: ecPROMIS - Physical Activity/Greenspace
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: ecPROMIS - Physical Activity/Greenspace
   domain: Physical Health
   table_name: ph_cg_pms__pags
+  table_version1: null
+  table_version2: null
   construct: Physical Activity
   concatenated: null
   visits: V04, V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person/Remote
@@ -935,14 +1087,19 @@ ecpromis_pags:
 ecpromis_sleep:
   measure: ecPROMIS - Sleep
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: ecPROMIS - Sleep
   full_name: ecPROMIS - Parent Report Sleep Problems
   domain: Physical Health
   table_name: ph_cg_pms__sleep
+  table_version1: null
+  table_version2: null
   construct: Sleep
   concatenated: null
   visits: V04, V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person/Remote
@@ -981,78 +1138,22 @@ ecpromis_sleep:
   warning5_title: null
   warning5: null
   ARCHIVE-child_specific: 'Yes'
-ecpromis:
-  measure: ecPROMIS Caregiver-Child Relationship Scale
-  notes: MANUAL
-  versions: 'Infant Version (<1 year old)
-
-    Child Version (1 - 5 years old)'
-  acronym: null
-  full_name: ecPROMIS Caregiver-Child Relationship Scale
-  domain: Behavior & Caregiver-Child Interactions
-  table_name: mh_cg_pms__cc__inf / mh_cg_pms__cc__1to5
-  construct: Relationships
-  concatenated: null
-  visits: 'Inf: V03, V05
-
-    1to5: V03, V05, V07'
-  assessment_type: Questionnaire
-  respondent_category: Parent on Child
-  administration: Remote
-  admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
-  duration: 1-2 min
-  qc:
-  - Examine missingness by counting items answered per participant.
-  - Check age is within expected ranges.
-  - Review summary statistics and visualizations (item frequencies, age, prorated
-    scores).
-  hbcd_mods: null
-  scoring: null
-  alert1_title: null
-  alert1: The HBCD dataset includes many variables that may be important for sound
-    and comprehensive analysis. The inclusion of additional variables will depend
-    on the research question(s) and methodological approach. Users are encouraged
-    to take time to explore the full range of available variables — especially those
-    that may serve as controls, contextual indicators, confounders, mechanisms, or
-    modifiers — to ensure thoughtful and well-supported analytic decisions. Other
-    important considerations may include developmental functioning, broader family
-    supports, and early adverse and protective exposures.
-  alert2_title: null
-  alert2: null
-  alert3_title: null
-  alert3: null
-  warning1_title: Data Interpretation
-  warning1: The ecPROMIS assesses normative variations in child behavior and should
-    be interpreted within the context of the child's age and developmental stage.
-    This is not clinical or diagnostic instrument.
-  warning2_title: Administration at V05 (<1 year vs. 1–5 years)
-  warning2: At V05 (10–17 months), the standard administration is the child (1–5 years)
-    version of the ecPROMIS Child–Caregiver Relationship Scale. A small subset of
-    participants (N=11) were administered both the child and infant (<1 year) versions
-    at this visit. Although data from both instruments are valid, we recommend using
-    the 1–5 years version for V05 analyses to ensure consistency across participants,
-    as most were administered only the 1–5 years version.
-  warning3_title: null
-  warning3: null
-  warning4_title: null
-  warning4: null
-  warning5_title: null
-  warning5: null
-  ARCHIVE-child_specific: 'Yes'
 ecpromis_peer:
   measure: ecPROMIS Peer Relationships Scale
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: ecPROMIS-Peer
   full_name: ecPROMIS Peer Relationships Scale
   domain: Behavior & Caregiver-Child Interactions
   table_name: med_cg_pms__peer
+  table_version1: null
+  table_version2: null
   construct: Peer Relationships
   concatenated: null
   visits: V05, V07, V09
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -1095,14 +1196,19 @@ ecpromis_peer:
 ecpromis_selfreg:
   measure: ecPROMIS Self-Regulation - Flexibility Scale
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: ecPROMIS Self-Regulation - Flexibility Scale
   domain: Behavior & Caregiver-Child Interactions
   table_name: mh_cg_pms__selfreg
+  table_version1: null
+  table_version2: null
   construct: Self-Regulation and Flexibility
   concatenated: null
   visits: V05, V07, V09
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -1145,14 +1251,19 @@ ecpromis_selfreg:
 epds:
   measure: Edinburgh Postnatal Depression Scale
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: EPDS
   full_name: Edinburgh Postnatal Depression Scale
   domain: Pregnancy & Exposure, Including Substance Use
   table_name: pex_bm_epds
+  table_version1: null
+  table_version2: null
   construct: Postnatal Depression
   concatenated: null
   visits: V01, V02, V03
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person/Remote
@@ -1196,14 +1307,19 @@ epds:
 discr:
   measure: Experiences of Unfair Treatment
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Experiences of Unfair Treatment
   domain: Social & Environmental Determinants
   table_name: sed_bm_phx__discr
+  table_version1: null
+  table_version2: null
   construct: Experiences of Unfair Treatment
   concatenated: null
   visits: V01, V05, V07
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: Remote
@@ -1236,14 +1352,19 @@ discr:
 fad:
   measure: Family Assessment Device
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: FAD (GF6+)
   full_name: Family Assessment Device (General Functioning)
   domain: Behavior & Caregiver-Child Interactions
   table_name: mh_cg_fad
+  table_version1: null
+  table_version2: null
   construct: Global Functioning of the Family Unit
   concatenated: null
   visits: V04, V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person/Remote
@@ -1288,14 +1409,19 @@ fad:
 gled:
   measure: Geocoded Linked External Data
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: GLED
   full_name: Geocoded Linked External Data- Residential Address History
   domain: Social & Environmental Determinants
   table_name: null
+  table_version1: null
+  table_version2: null
   construct: Neighborhood Measures
   concatenated: geocoding/
   visits: null
+  visits_version1: null
+  visits_version2: null
   assessment_type: Linked External Data
   respondent_category: null
   administration: null
@@ -1346,15 +1472,20 @@ gled:
 home21:
   measure: HOME-21 Infant-Toddler
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: HOME-21
   full_name: Home Observation for Measurement of the Environment Infant-Toddler Version
   domain: Social & Environmental Determinants
   table_name: sed_cg_home_it
+  table_version1: null
+  table_version2: null
   construct: 'Child’s Home Environment: Cognitive Stimulation and Emotional Support
     in the Home'
   concatenated: null
   visits: V04, V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person/Remote
@@ -1400,14 +1531,19 @@ home21:
 chem_exp:
   measure: Household Chemical Exposures
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Household Chemical Exposures
   domain: Social & Environmental Determinants
   table_name: sed_cg_hce
+  table_version1: null
+  table_version2: null
   construct: Household Chemical Exposures
   concatenated: null
   visits: V05
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person/Remote
@@ -1445,16 +1581,21 @@ chem_exp:
 illumina:
   measure: Illumina Global Diversity GWAS Array
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: GDA GWAS
   full_name: Illumina Global Diversity GWAS Array
   domain: Biospecimen & Omics
   table_name: null
+  table_version1: null
+  table_version2: null
   construct: GWAS, EWAS, Transcriptome
   concatenated: "└── genetics/genotype_microarray/GDA/\n    ├── batch.info\n    └──\
     \ hbcd.{bed|bim|fam}"
   visits: Samples are assayed from one sample (from parent and child), but may come
     from any visit (V01-V06) based on DNA yields.
+  visits_version1: null
+  visits_version2: null
   assessment_type: Biospecimen collection
   respondent_category: null
   administration: In-person
@@ -1546,15 +1687,20 @@ illumina:
 ibqr:
   measure: Infant Behavior Questionnaire-Revised VSF+BI
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: IBQ-R
   full_name: Infant Behavior Questionnaire-Revised Very Short Form + Behavioral Inhibition
   domain: Behavior & Caregiver-Child Interactions
   table_name: mh_cg_ibqr
+  table_version1: null
+  table_version2: null
   construct: Behavioral Inhibition Negative Affectivity Effortful Control Surgency
     / Extraversion
   concatenated: null
   visits: V03, V05
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -1613,14 +1759,19 @@ ibqr:
 nutrition:
   measure: Infant Nutrition Questionnaire
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Infant Nutrition Questionnaire
   domain: Physical Health
   table_name: ph_cg_inq
+  table_version1: null
+  table_version2: null
   construct: Nutrition
   concatenated: null
   visits: V05
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person/Remote
@@ -1653,14 +1804,19 @@ nutrition:
 inf_sensor_q:
   measure: Infant Sensor Questionnaire 1/2/3
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Infant Sensor Questionnaire 1/2/3
   domain: Novel Tech & Wearable Sensors
   table_name: nt_ch_sens__qtn_{1|2|3}
+  table_version1: null
+  table_version2: null
   construct: Motor Development, Regulation (Sleep/Wake)
   concatenated: null
   visits: V02, V03
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -1696,14 +1852,19 @@ inf_sensor_q:
 lead:
   measure: Lead Exposures
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Lead Exposures
   domain: Social & Environmental Determinants
   table_name: sed_cg_ledexp
+  table_version1: null
+  table_version2: null
   construct: Lead Exposures
   concatenated: null
   visits: V05
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person/Remote
@@ -1744,16 +1905,21 @@ lead:
 mb_cdi:
   measure: MacArthur-Bates CDI
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: MB-CDI
   full_name: MacArthur-Bates Communicative Development Inventories, Words and Gestures
   domain: Neurocognition & Language
   table_name: 'ncl_ch_cdiwgen
 
     ncl_ch_cdiwges'
+  table_version1: null
+  table_version2: null
   construct: Language Development
   concatenated: null
   visits: V04, V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person
@@ -1818,14 +1984,19 @@ mb_cdi:
 med_hist:
   measure: Medical History Questionnaire
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Medical History Questionnaire
   domain: Physical Health
   table_name: ph_cg_ecls__medhist
+  table_version1: null
+  table_version2: null
   construct: Medical History
   concatenated: null
   visits: V04, V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person/Remote
@@ -1862,14 +2033,19 @@ med_hist:
 mri_forms:
   measure: MRI Scan Session & Data Summary Forms
   notes: 2 tables- make manually?
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: MRI Scan Session Summary Form / MRI Data Summary Form
   domain: Tabular Imaging
   table_name: mri_ra_chkl_scan / mri_ra_chkl_data
+  table_version1: null
+  table_version2: null
   construct: Pre-/Post-MRI Tech Checklists 1 <i>(Scan Session)</i> & 2 <i>(Data)<i>
   concatenated: null
   visits: V02 - V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Checklist
   respondent_category: 'N/A: RA Form'
   administration: In-person
@@ -1901,14 +2077,19 @@ mri_forms:
 maps_tl:
   measure: Multidimensional Assessment Profiles - Temper Loss Scale
   notes: MANUAL
-  versions: null
+  version1: null
+  version2: null
   acronym: MAPS-TL
   full_name: Multidimensional Assessment Profiles - Temper Loss Scale
   domain: Behavior & Caregiver-Child Interactions
   table_name: mh_cg_mapdb__inf
+  table_version1: null
+  table_version2: null
   construct: Irritability
   concatenated: null
   visits: V03
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -1945,14 +2126,19 @@ maps_tl:
 mlds:
   measure: Multilingual Language Development Screener
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: MLDS
   full_name: Multilingual Language Development Screener
   domain: Neurocognition & Language
   table_name: ncl_ch_mlds
+  table_version1: null
+  table_version2: null
   construct: Multilingual Exposure
   concatenated: null
   visits: V03, V04, V05, V07
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -1994,15 +2180,20 @@ mlds:
 olink:
   measure: Olink Explore 384 Inflammation 1 Panel
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: Olink
   full_name: Olink Explore 384 Inflammation 1 Panel
   domain: Biospecimen & Omics
   table_name: null
+  table_version1: null
+  table_version2: null
   construct: Maternal Inflammation
   concatenated: "└── proteins/olink/inflammation/\n    ├── Olink_allplates_long.csv\n\
     \    └── Olink_allplates_wide.csv"
   visits: V01
+  visits_version1: null
+  visits_version2: null
   assessment_type: Biospecimen collection
   respondent_category: Parent on Self
   administration: In-person
@@ -2047,14 +2238,19 @@ olink:
 ehits:
   measure: Partner Dynamics Extended
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: eHITS
   full_name: Partner Dynamics Extended – Hurt, Insult, Threaten, Scream
   domain: Social & Environmental Determinants
   table_name: sed_bm_ehits
+  table_version1: null
+  table_version2: null
   construct: Intimate Partner Violence
   concatenated: null
   visits: V01
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person
@@ -2092,14 +2288,19 @@ ehits:
 pedaces:
   measure: Pediatric Adverse Childhood Experiences
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: Ped ACEs
   full_name: Pediatric Adverse Childhood Experiences
   domain: Social & Environmental Determinants
   table_name: sed_cg_pedaces
+  table_version1: null
+  table_version2: null
   construct: Adverse Childhood Experiences (Child)
   concatenated: null
   visits: V04, V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -2131,14 +2332,19 @@ pedaces:
 fam_mh:
   measure: Personal and Family Psychiatric History
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: FAM MH
   full_name: Personal and Family Psychiatric History
   domain: Pregnancy & Exposure, Including Substance Use
   table_name: pex_bm_psych
+  table_version1: null
+  table_version2: null
   construct: Personal and Family Mental Health
   concatenated: null
   visits: V01
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person/Remote
@@ -2170,14 +2376,19 @@ fam_mh:
 nbhsaf:
   measure: PhenX+ Neighborhood Safety
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: PhenX+ Neighborhood Safety
   domain: Social & Environmental Determinants
   table_name: sed_bm_nbhsaf
+  table_version1: null
+  table_version2: null
   construct: Neighborhood Safety
   concatenated: null
   visits: V01, V02, V07, V09
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: Remote
@@ -2209,14 +2420,19 @@ nbhsaf:
 prescan_q:
   measure: Pre-Scan Questionnaire
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Pre-Scan Questionnaire
   domain: Tabular Imaging
   table_name: mri_ra_prep
+  table_version1: null
+  table_version2: null
   construct: Infant Sleep Environment
   concatenated: null
   visits: V02 - V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person
@@ -2248,15 +2464,20 @@ prescan_q:
 promis:
   measure: PROMIS Perceived Stress/Social Support
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: PROMIS
   full_name: Patient-Reported Outcome Measurement Information System Perceived Stress/Social
     Support
   domain: Social & Environmental Determinants
   table_name: sed_bm_strsup
+  table_version1: null
+  table_version2: null
   construct: Perceived Stress/Social Support
   concatenated: null
   visits: V01, V02, V03
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -2290,14 +2511,19 @@ promis:
 paces:
   measure: Protective and Compensatory Experience
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: PACEs
   full_name: Protective and Compensatory Experience
   domain: Social & Environmental Determinants
   table_name: sed_bm_paces
+  table_version1: null
+  table_version2: null
   construct: Protective Factors
   concatenated: null
   visits: V01
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: Remote
@@ -2329,14 +2555,19 @@ paces:
 screenq:
   measure: Screen-Based Media Use
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: ScreenQ
   full_name: Screen-Based Media Use
   domain: Physical Health
   table_name: ph_cg_screenq
+  table_version1: null
+  table_version2: null
   construct: Media Use
   concatenated: null
   visits: V04, V06
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person/Remote
@@ -2379,14 +2610,19 @@ screenq:
 shs:
   measure: Second Hand Smoke Exposure
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Second Hand Smoke Exposure
   domain: Social & Environmental Determinants
   table_name: sed_cg_shs
+  table_version1: null
+  table_version2: null
   construct: Second Hand Smoke
   concatenated: null
   visits: V05
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: In-person/Remote
@@ -2427,16 +2663,21 @@ shs:
 spm_2:
   measure: Sensory Processing Measure-2
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: SPM-2
   full_name: Sensory Processing Measure-2
   domain: Neurocognition & Language
   table_name: 'ncl_cg_spm2__inf (Infant version)
 
     ncl_cg_spm2__tod (Toddler version)'
+  table_version1: null
+  table_version2: null
   construct: Sensory Processing/Integration
   concatenated: null
   visits: V03 (Infant); V05 (Toddler)
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -2478,14 +2719,19 @@ spm_2:
 study_nav:
   measure: Study Navigator Contact Form
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Study Navigator Contact Form
   domain: Administrative
   table_name: null
+  table_version1: null
+  table_version2: null
   construct: Recruitment/Retention
   concatenated: study_navigator/
   visits: Filled out by the Study Navigator during and/or between study visits.
+  visits_version1: null
+  visits_version2: null
   assessment_type: Interview
   respondent_category: null
   administration: In-person/Remote
@@ -2534,14 +2780,19 @@ study_nav:
 subst:
   measure: Substance Use Patterns in Pregnancy
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Substance Use Patterns in Pregnancy
   domain: Pregnancy & Exposure, Including Substance Use
   table_name: pex_bm_subst
+  table_version1: null
+  table_version2: null
   construct: Substance Use in Pregnancy
   concatenated: null
   visits: V02
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person
@@ -2626,14 +2877,19 @@ subst:
 tlfb:
   measure: Timeline Follow Back
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: TLFB
   full_name: Timeline Follow Back
   domain: Pregnancy & Exposure, Including Substance Use
   table_name: pex_bm_tlfb
+  table_version1: null
+  table_version2: null
   construct: Substance Use Before and During Pregnancy
   concatenated: null
   visits: V01, V02
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person
@@ -2691,15 +2947,20 @@ tlfb:
 tic:
   measure: Transitions in Care Screener
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: TIC
   full_name: Transitions in Care Screener
   domain: Social & Environmental Determinants
   table_name: sed_cg_tic_screener
+  table_version1: null
+  table_version2: null
   construct: Documents when children spend time living in non-parental care/change
     in who provides primary care
   concatenated: null
   visits: V02 onward
+  visits_version1: null
+  visits_version2: null
   assessment_type: Interview
   respondent_category: Parent on Child
   administration: In-person/Remote
@@ -2754,16 +3015,21 @@ tic:
 nails:
   measure: USDTL Nails Toxicology (Maternal)
   notes: 2 files
-  versions: null
+  version1: null
+  version2: null
   acronym: Nails
   full_name: USDTL Nails Toxicology (Maternal)
   domain: Biospecimen & Omics
   table_name: 'bio_bm_biosample_nails_results
 
     bio_bm_biosample_nails_type'
+  table_version1: null
+  table_version2: null
   construct: Drug Panel, Environmental Exposure
   concatenated: null
   visits: V01, V02
+  visits_version1: null
+  visits_version2: null
   assessment_type: Biospecimen collection
   respondent_category: Parent on Self
   administration: In-person
@@ -2813,14 +3079,19 @@ nails:
 urine:
   measure: USDTL Urine Toxicology (Maternal)
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: Urine
   full_name: USDTL Urine Toxicology (Maternal)
   domain: Biospecimen & Omics
   table_name: bio_bm_biosample_urine_results
+  table_version1: null
+  table_version2: null
   construct: Drug Panel, Toxins
   concatenated: null
   visits: V01
+  visits_version1: null
+  visits_version2: null
   assessment_type: Biospecimen collection
   respondent_category: Parent on Self
   administration: In-person
@@ -2865,14 +3136,19 @@ urine:
 via:
   measure: Vancouver Index of Acculturation
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: VIA
   full_name: Vancouver Index of Acculturation
   domain: Social & Environmental Determinants
   table_name: sed_cg_via
+  table_version1: null
+  table_version2: null
   construct: Acculturation
   concatenated: null
   visits: V05
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Self
   administration: In-person/Remote
@@ -2937,14 +3213,19 @@ via:
 vineland_3:
   measure: Vineland-3
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: Vineland-3
   full_name: Vineland Adaptive Behavior Scales Third Edition
   domain: Neurocognition & Language
   table_name: ncl_cg_vabs
+  table_version1: null
+  table_version2: null
   construct: Adaptive Behavior
   concatenated: null
   visits: V05, V09, V10
+  visits_version1: null
+  visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
   administration: Remote
@@ -3006,14 +3287,19 @@ vineland_3:
 visit_info:
   measure: Visit Level Information
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: Visit Level Information
   domain: Demographics
   table_name: par_visit_data
+  table_version1: null
+  table_version2: null
   construct: Participant visit information
   concatenated: null
   visits: null
+  visits_version1: null
+  visits_version2: null
   assessment_type: Derived Data
   respondent_category: null
   administration: null
@@ -3045,14 +3331,19 @@ visit_info:
 vs100:
   measure: VS100 Spot Vision Screener
   notes: null
-  versions: null
+  version1: null
+  version2: null
   acronym: null
   full_name: VS100 Spot Vision Screener
   domain: Physical Health
   table_name: ph_ch_vs
+  table_version1: null
+  table_version2: null
   construct: Vision
   concatenated: null
   visits: V04, V06, V08
+  visits_version1: null
+  visits_version2: null
   assessment_type: Wearable
   respondent_category: Child on Self
   administration: In-person
