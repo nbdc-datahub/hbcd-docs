@@ -64,7 +64,25 @@ Calculated as the sum of all numerical item responses, excluding non-responses. 
 
 
 
-
+<!-- <table class="table-no-vertical-lines readme-intro">
+<tbody>
+<tr><td><b>Full Name</b></td><td>Confusion, Hubbub and Order Scale (CHAOS)</td></tr>
+<tr><td><b>Table Name</b></td><td><code>mh_cg_chaos</code></td></tr>
+<tr><td><b>Construct</b></td><td>Family Organization</td></tr>
+<tr><td><b>Study Visits</b></td><td>V05, V07</td></tr>
+<tr><td><b>Type</b></td><td>Questionnaire (Parent on Child, 4-8 min)</td></tr>
+<tr><td><b>Quality Control</b></td>
+<td>
+<ul>
+<li>Assess missingness (items completed per participant)</li>
+<li>Verify scoring accuracy</li>
+<li>Review summary statistics (item frequencies, total scores)</li>
+<li>Inspect response distributions for outliers</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table> -->
 <!-- 
 ### ORIG FULL HTML
 <table class="table-no-vertical-lines readme-intro">

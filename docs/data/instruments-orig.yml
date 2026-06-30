@@ -8,13 +8,13 @@ foodins:
   construct: Food Insecurity
   concatenated: null
   visits: V02, V03
+  type: Parent Survey
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: remote
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
@@ -39,7 +39,7 @@ foodins:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 aces:
   measure: Adverse Childhood Experiences
   notes: aces & ped aces
@@ -50,13 +50,13 @@ aces:
   construct: Adverse Childhood Experiences (Caregiver)
   concatenated: null
   visits: V04
+  type: Parent Survey
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person
+  respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: in-person
   duration: 2 min
   qc: QC is minimal as participants only report the total number of ACE events. Declines
     in ACE scores at later visits should be interpreted cautiously, as they may reflect
@@ -85,7 +85,7 @@ aces:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 assist:
   measure: Alcohol, Smoking and Substance Involvement Screening Test V1-V4
   notes: MANUAL
@@ -98,13 +98,13 @@ assist:
     (3-month anchor) V4 : Postpartum (12-month anchor)'
   concatenated: null
   visits: V01 - V04
+  type: Parent Interview
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person/remote
-  admin_notes: Self-administered remotely in Alabama
-  ARCHIVE-respondent: Pregnant Participant or Birth Parent (as applicable)
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: null
+  respondent: Pregnant Participant or Birth Parent (as applicable)
+  administration: null
+  admin_notes: Self-administered in Alabama
+  remote: in-person
   duration: 3-5 min
   qc: Response distributions are reviewed for outliers. For V1-V2, responses are cross-checked
     with TLFB for consistency in reported substance use.
@@ -148,7 +148,7 @@ assist:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 growth:
   measure: Anthropometrics
   notes: null
@@ -159,13 +159,13 @@ growth:
   construct: Growth
   concatenated: null
   visits: V02, V03, V04, V06, V08
-  respondent_category: Child on Self
-  assessment_type: Behavioral observation
-  administration: in-person
+  type: Direct Assessment
+  child_specific: 'Yes'
+  respondent_category: null
+  respondent: null
+  administration: HBCD Study Staff
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Direct Assessment
-  ARCHIVE-administration: HBCD Study Staff
+  remote: in-person
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
@@ -195,7 +195,7 @@ growth:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 apa:
   measure: APA 1/2
   notes: null
@@ -206,14 +206,13 @@ apa:
   construct: Mental Health
   concatenated: null
   visits: V01, V02, V03
+  type: Parent Survey
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Pregnant Participant/Birth Parent (as applicable) or Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Pregnant Participant/Birth Parent (as applicable) or Primary
-    Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: either
   duration: 5 min
   qc:
   - Checks for missing data based on counts for items completed by each participant;
@@ -249,7 +248,7 @@ apa:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 bfy:
   measure: Baby's First Years
   notes: null
@@ -260,13 +259,13 @@ bfy:
   construct: Benefits/Services, Economic Stress
   concatenated: null
   visits: V01, V05, V07
+  type: Parent Interview
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: null
+  administration: HBCD Study Staff
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: HBCD Study Staff
+  remote: in-person
   duration: 4 min
   qc: Data dashboard was monitored for variable missingness, possible coding errors,
     scoring verification when needed, and data consistency.
@@ -294,7 +293,7 @@ bfy:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 basic_demo:
   measure: Basic Demographics
   notes: null
@@ -305,13 +304,13 @@ basic_demo:
   construct: Demographics data derived from multiple sources
   concatenated: null
   visits: null
+  type: Derived Data
+  child_specific: null
   respondent_category: null
-  assessment_type: null
+  respondent: null
   administration: null
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Derived Data
-  ARCHIVE-administration: null
+  remote: null
   duration: null
   qc: null
   hbcd_mods: null
@@ -345,7 +344,7 @@ basic_demo:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: null
+  Column 29: null
 bayley_4:
   measure: Bayley Scales of Infant and Toddler Development, Fourth Edition
   notes: null
@@ -356,13 +355,13 @@ bayley_4:
   construct: Child Development (Cognitive, Language, and Motor)
   concatenated: null
   visits: V04
+  type: Parent Interview
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Cognitive testing
-  administration: in-person
+  respondent: null
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: null
+  remote: in-person
   duration: 60-90 min
   qc:
   - HBCD Study staff were trained and certified by experienced Bayley administrators
@@ -415,7 +414,7 @@ bayley_4:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 bfh:
   measure: Breast Feeding History
   notes: null
@@ -427,13 +426,13 @@ bfh:
   concatenated: null
   visits: V02, V03, V04, V06, V08 V08 (only administered if still breastfeeding at
     prior visit)
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: null
+  administration: Self-administered remotely
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered remotely
+  remote: remote
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
@@ -458,7 +457,7 @@ bfh:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 bisq:
   measure: Brief Infant Sleep Questionnaire
   notes: null
@@ -469,13 +468,13 @@ bisq:
   construct: Sleep
   concatenated: null
   visits: V04
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: null
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: remote
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
@@ -517,7 +516,7 @@ bisq:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 demographics_ch:
   measure: Child Demographics
   notes: null
@@ -528,13 +527,13 @@ demographics_ch:
   construct: Child Demographics
   concatenated: null
   visits: V04, V06
+  type: Parent Interview
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person
+  respondent: null
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: null
+  remote: null
   duration: 10 min
   qc: 'Data dashboard was monitored for variable missingness, coding errors, and data
     consistency. High missingness was noted for income: this is in line with expectations.'
@@ -556,7 +555,7 @@ demographics_ch:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 cabr_sf:
   measure: Composite Abuse Scale Revised - Short Form
   notes: null
@@ -567,13 +566,13 @@ cabr_sf:
   construct: Intimate Partner Violence
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person
+  type: Parent Survey
+  child_specific: 'No'
+  respondent_category: Parent on Child
+  respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered in person in a private setting
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person
+  remote: in-person
   duration: 2 min
   qc: Scoring verification, data consistency checks, and checks for missingness.
   hbcd_mods: 'Language was updated to use gender-neutral terminology in the definition
@@ -608,7 +607,7 @@ cabr_sf:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 chaos:
   measure: Confusion, Hubbub and Order Scale
   notes: null
@@ -619,13 +618,13 @@ chaos:
   construct: Family Organization
   concatenated: null
   visits: V05, V07
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: remote
   duration: 4-8 min
   qc:
   - Assess missingness (items completed per participant).
@@ -657,7 +656,7 @@ chaos:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 employment:
   measure: Current Employment
   notes: null
@@ -668,13 +667,13 @@ employment:
   construct: Current Employment
   concatenated: null
   visits: V05
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered in-person or remotely
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person or remotely
+  remote: either
   duration: 5 min
   qc: Data were inspected for missing response and proportions.
   hbcd_mods: null
@@ -695,7 +694,7 @@ employment:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 demographics:
   measure: Demographics (Adult)
   notes: null
@@ -706,13 +705,13 @@ demographics:
   construct: Demographics (Birth Parent/Alternative Caregiver)
   concatenated: null
   visits: V01, V04, V06
+  type: Parent Interview
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person
+  respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: null
+  remote: null
   duration: 10 min
   qc: 'Data dashboard was monitored for variable missingness, coding errors, and data
     consistency. High missingness was noted for income: this is in line with expectations.'
@@ -734,7 +733,7 @@ demographics:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 ptsd:
   measure: DSM5 Severity Acute Stress or PTSD
   notes: null
@@ -745,14 +744,13 @@ ptsd:
   construct: PTSD/Acute Stress Disorder Symptom Severity
   concatenated: null
   visits: V01, V02, V03
+  type: Parent Survey
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Pregnant Participant/Birth Parent (as applicable) or Primary Caregiver
+  administration: Self-administered in-person or remotely
   admin_notes: null
-  ARCHIVE-respondent: Pregnant Participant/Birth Parent (as applicable) or Primary
-    Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person or remotely
+  remote: either
   duration: 3 min
   qc:
   - Checks for missing data based on counts for items completed by each participant.
@@ -790,7 +788,7 @@ ptsd:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 erica:
   measure: Early Regulation in Context Assessment
   notes: 2 files
@@ -803,13 +801,13 @@ erica:
   construct: Emotional Regulation, Parenting, Caregiver-Child Relationship
   concatenated: null
   visits: V03
+  type: Parent Interview
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person
+  respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: HBCD Study Staff
+  remote: in-person
   duration: 20-30 min
   qc: QC procedures were conducted for ERICA site-level administration and centralized
     coding of ERICA videos - <a href="#qc">expand infobox below for details →</a>
@@ -864,7 +862,7 @@ erica:
   warning5: The code for "caregiver irritable behavior" in Data Release 2.1 has a
     low base rate because few caregivers exhibited elevated irritability. We recommend
     dichotomizing (0 = 0 and >0 = 1) for analysis.
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 ecpromis_pags:
   measure: ecPROMIS - Physical Activity/Greenspace
   notes: null
@@ -875,13 +873,13 @@ ecpromis_pags:
   construct: Physical Activity
   concatenated: null
   visits: V04, V06
+  type: Parent Survey or Interview
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey or Interview
-  ARCHIVE-administration: HBCD Study Staff or Self
+  remote: either
   duration: 2 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
@@ -913,7 +911,7 @@ ecpromis_pags:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 ecpromis_sleep:
   measure: ecPROMIS - Sleep
   notes: null
@@ -924,13 +922,13 @@ ecpromis_sleep:
   construct: Sleep
   concatenated: null
   visits: V04, V06
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: HBCD Study Staff or Self
+  remote: either
   duration: 1 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification when needed, and data consistency.
@@ -961,7 +959,7 @@ ecpromis_sleep:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 ecpromis:
   measure: ecPROMIS Caregiver-Child Relationship Scale
   notes: MANUAL
@@ -974,13 +972,13 @@ ecpromis:
   visits: 'Inf: V03, V05
 
     1to5: V03, V05, V07'
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: null
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: remote
   duration: 1-2 min
   qc:
   - Examine missingness by counting items answered per participant.
@@ -1019,7 +1017,7 @@ ecpromis:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 ecpromis_peer:
   measure: ecPROMIS Peer Relationships Scale
   notes: null
@@ -1030,13 +1028,13 @@ ecpromis_peer:
   construct: Peer Relationships
   concatenated: null
   visits: V05, V07, V09
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: remote
   duration: 1-2 min
   qc:
   - Examine missingness by counting items answered per participant.
@@ -1068,7 +1066,7 @@ ecpromis_peer:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 ecpromis_selfreg:
   measure: ecPROMIS Self-Regulation - Flexibility Scale
   notes: null
@@ -1079,13 +1077,13 @@ ecpromis_selfreg:
   construct: Self-Regulation and Flexibility
   concatenated: null
   visits: V05, V07, V09
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: remote
   duration: 1-2 min
   qc:
   - Examine missingness by counting items answered per participant.
@@ -1117,7 +1115,7 @@ ecpromis_selfreg:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 epds:
   measure: Edinburgh Postnatal Depression Scale
   notes: null
@@ -1128,13 +1126,13 @@ epds:
   construct: Postnatal Depression
   concatenated: null
   visits: V01, V02, V03
+  type: Parent Survey
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Pregnant Participant or Birth Parent (as applicable)
+  administration: Self-administered in-person or remotely
   admin_notes: null
-  ARCHIVE-respondent: Pregnant Participant or Birth Parent (as applicable)
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person or remotely
+  remote: either
   duration: 3 min
   qc:
   - Checks for missing data based on counts for items completed by each participant.
@@ -1167,7 +1165,7 @@ epds:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 discr:
   measure: Experiences of Unfair Treatment
   notes: null
@@ -1178,13 +1176,13 @@ discr:
   construct: Experiences of Unfair Treatment
   concatenated: null
   visits: V01, V05, V07
+  type: Parent Survey
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered remotely
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered remotely
+  remote: remote
   duration: 3 min
   qc: Data dashboard monitored for variable missingness, possible coding errors, and
     data consistency.
@@ -1206,7 +1204,7 @@ discr:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 fad:
   measure: Family Assessment Device
   notes: null
@@ -1217,13 +1215,13 @@ fad:
   construct: Global Functioning of the Family Unit
   concatenated: null
   visits: V04, V06
+  type: Parent Interview or Survey
+  child_specific: 'No'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Interview or Survey
-  ARCHIVE-administration: null
+  remote: either
   duration: 2 min
   qc:
   - Item- and measure-level missingness were examined.
@@ -1257,7 +1255,7 @@ fad:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 gled:
   measure: Geocoded Linked External Data
   notes: null
@@ -1268,13 +1266,13 @@ gled:
   construct: Neighborhood Measures
   concatenated: geocoding/
   visits: null
+  type: Derived Data
+  child_specific: 'Yes'
   respondent_category: null
-  assessment_type: Linked External Data
+  respondent: null
   administration: null
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Derived Data
-  ARCHIVE-administration: null
+  remote: null
   duration: null
   qc:
   - Verify that addresses from the address history form fall within the appropriate
@@ -1314,7 +1312,7 @@ gled:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 home21:
   measure: HOME-21 Infant-Toddler
   notes: null
@@ -1326,13 +1324,13 @@ home21:
     in the Home'
   concatenated: null
   visits: V04, V06
+  type: Parent Interview or Survey
+  child_specific: 'No'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Interview or Survey
-  ARCHIVE-administration: null
+  remote: either
   duration: 10 min
   qc: Subject matter experts constructed an algorithm to verify and correct scores
     computed automatically.
@@ -1367,7 +1365,7 @@ home21:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 chem_exp:
   measure: Household Chemical Exposures
   notes: null
@@ -1378,13 +1376,13 @@ chem_exp:
   construct: Household Chemical Exposures
   concatenated: null
   visits: V05
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered in-person or remotely
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person or remotely
+  remote: either
   duration: 5 min
   qc: Response proportions and unusual missing patterns were reviewed.
   hbcd_mods: Certain instruction item prompts were modified for consistency and a
@@ -1411,7 +1409,7 @@ chem_exp:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 illumina:
   measure: Illumina Global Diversity GWAS Array
   notes: null
@@ -1421,16 +1419,16 @@ illumina:
   table_name: null
   construct: GWAS, EWAS, Transcriptome
   concatenated: "└── genetics/genotype_microarray/GDA/\n    ├── batch.info\n    └──\
-    \ hbcd.{bed|bim|fam}"
+    \  hbcd.{bed|bim|fam}"
   visits: Samples are assayed from one sample (from parent and child), but may come
     from any visit (V01-V06) based on DNA yields.
+  type: Direct Assessment
+  child_specific: null
   respondent_category: null
-  assessment_type: Biospecimen collection
-  administration: in-person
+  respondent: Birth Parent & Child
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent & Child
-  ARCHIVE-type: Direct Assessment
-  ARCHIVE-administration: null
+  remote: null
   duration: null
   qc:
   - Check that sampled ID and sample-specific barcodes match from Sampled File and
@@ -1511,7 +1509,7 @@ illumina:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: null
+  Column 29: null
 ibqr:
   measure: Infant Behavior Questionnaire-Revised VSF+BI
   notes: null
@@ -1523,13 +1521,13 @@ ibqr:
     / Extraversion
   concatenated: null
   visits: V03, V05
-  respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  type: Parent Survey
+  child_specific: 'Yes'
+  respondent_category: null
+  respondent: Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: remote
   duration: 7-10 min
   qc:
   - Examine missingness by counting items answered per participant.
@@ -1577,7 +1575,7 @@ ibqr:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 nutrition:
   measure: Infant Nutrition Questionnaire
   notes: null
@@ -1588,13 +1586,13 @@ nutrition:
   construct: Nutrition
   concatenated: null
   visits: V05
+  type: Parent Interview
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: HBCD Study Staff or Self
+  remote: either
   duration: 10 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
@@ -1616,7 +1614,7 @@ nutrition:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 inf_sensor_q:
   measure: Infant Sensor Questionnaire 1/2/3
   notes: null
@@ -1627,13 +1625,13 @@ inf_sensor_q:
   construct: Motor Development, Regulation (Sleep/Wake)
   concatenated: null
   visits: V02, V03
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: remote
   duration: null
   qc: When no survey responses were received, research assistants were contacted to
     confirm whether the surveys had been sent to participants as intended. The most
@@ -1658,7 +1656,7 @@ inf_sensor_q:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 lead:
   measure: Lead Exposures
   notes: null
@@ -1669,13 +1667,13 @@ lead:
   construct: Lead Exposures
   concatenated: null
   visits: V05
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered in-person or remotely
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person or remotely
+  remote: either
   duration: 5 min
   qc: Response proportions and unusual missing patterns were reviewed.
   hbcd_mods: null
@@ -1705,7 +1703,7 @@ lead:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 mb_cdi:
   measure: MacArthur-Bates CDI
   notes: null
@@ -1718,13 +1716,13 @@ mb_cdi:
   construct: Language Development
   concatenated: null
   visits: V04, V06
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person
+  respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: in-person
   duration: 20-60 min
   qc:
   - HBCD SOPs instruct RAs to present instructions exactly as shown in the existing
@@ -1778,7 +1776,7 @@ mb_cdi:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 med_hist:
   measure: Medical History Questionnaire
   notes: null
@@ -1789,13 +1787,13 @@ med_hist:
   construct: Medical History
   concatenated: null
   visits: V04, V06
+  type: Parent Interview
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: HBCD Study Staff or Self
+  remote: either
   duration: 10 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, and
     data consistency.
@@ -1821,7 +1819,7 @@ med_hist:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 mri_forms:
   measure: MRI Scan Session & Data Summary Forms
   notes: 2 tables- make manually?
@@ -1832,13 +1830,13 @@ mri_forms:
   construct: Pre-/Post-MRI Tech Checklists 1 <i>(Scan Session)</i> & 2 <i>(Data)<i>
   concatenated: null
   visits: V02 - V06
+  type: MRI Technician Form
+  child_specific: 'Yes'
   respondent_category: 'N/A: RA Form'
-  assessment_type: Checklist
-  administration: in-person
+  respondent: null
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: MRI Technician Form
-  ARCHIVE-administration: null
+  remote: in-person
   duration: null
   qc: Brief visual review of data prior to release to check for errors and missingness.
   hbcd_mods: null
@@ -1859,7 +1857,7 @@ mri_forms:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 maps_tl:
   measure: Multidimensional Assessment Profiles - Temper Loss Scale
   notes: MANUAL
@@ -1870,13 +1868,13 @@ maps_tl:
   construct: Irritability
   concatenated: null
   visits: V03
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: remote
   duration: 5 min
   qc:
   - Examine missingness by counting items answered per participant.
@@ -1902,7 +1900,7 @@ maps_tl:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 mlds:
   measure: Multilingual Language Development Screener
   notes: null
@@ -1913,15 +1911,15 @@ mlds:
   construct: Multilingual Exposure
   concatenated: null
   visits: V03, V04, V05, V07
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: Primary Caregiver
+  administration: Self-administered remotely
   admin_notes: If the caregiver does not complete the assessment remotely, it is conducted
     at the visit to document the child’s language exposure environments. The instrument
     can be administered by an HBCD Study team member in-person or via video as needed.
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered remotely
+  remote: remote
   duration: 3-10 min
   qc: Monitor frequency of decline to answer and completeness during data collection
     (initial data showed that about 10% of questionnaires were not complete).
@@ -1950,7 +1948,7 @@ mlds:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 olink:
   measure: Olink Explore 384 Inflammation 1 Panel
   notes: null
@@ -1962,13 +1960,13 @@ olink:
   concatenated: "└── proteins/olink/inflammation/\n    ├── Olink_allplates_long.csv\n\
     \    └── Olink_allplates_wide.csv"
   visits: V01
-  respondent_category: Parent on Self
-  assessment_type: Biospecimen collection
-  administration: in-person
+  type: Direct Assessment
+  child_specific: 'No'
+  respondent_category: null
+  respondent: Pregnant Participant
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Pregnant Participant
-  ARCHIVE-type: Direct Assessment
-  ARCHIVE-administration: null
+  remote: in-person
   duration: null
   qc: Olink internal assay controls include extension (used for normalization to generate
     NPX values), incubation, and amplification controls used to monitor assay performance
@@ -2002,7 +2000,7 @@ olink:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 ehits:
   measure: Partner Dynamics Extended
   notes: null
@@ -2013,13 +2011,13 @@ ehits:
   construct: Intimate Partner Violence
   concatenated: null
   visits: V01
+  type: Parent Interview
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person
+  respondent: null
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: null
+  remote: in-person
   duration: 2 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
@@ -2046,7 +2044,7 @@ ehits:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 pedaces:
   measure: Pediatric Adverse Childhood Experiences
   notes: null
@@ -2057,14 +2055,14 @@ pedaces:
   construct: Adverse Childhood Experiences (Child)
   concatenated: null
   visits: V04, V06
-  respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  type: null
+  child_specific: 'Yes'
+  respondent_category: null
+  respondent: null
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: null
-  ARCHIVE-administration: Self-administered in-person
-  duration: 2 min
+  remote: null
+  duration: null
   qc: null
   hbcd_mods: null
   scoring: null
@@ -2084,7 +2082,7 @@ pedaces:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 fam_mh:
   measure: Personal and Family Psychiatric History
   notes: null
@@ -2095,13 +2093,13 @@ fam_mh:
   construct: Personal and Family Mental Health
   concatenated: null
   visits: V01
+  type: Parent Survey
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Pregnant Participant
+  administration: Self-administered in-person
   admin_notes: null
-  ARCHIVE-respondent: Pregnant Participant
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person
+  remote: either
   duration: 5 min
   qc: Response distributions reviewed for outliers
   hbcd_mods: null
@@ -2122,7 +2120,7 @@ fam_mh:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 nbhsaf:
   measure: PhenX+ Neighborhood Safety
   notes: null
@@ -2133,13 +2131,13 @@ nbhsaf:
   construct: Neighborhood Safety
   concatenated: null
   visits: V01, V02, V07, V09
-  respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: remote
+  type: Parent Survey
+  child_specific: 'No'
+  respondent_category: null
+  respondent: null
+  administration: Self-administered in-person or remotely
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person or remotely
+  remote: either
   duration: 1 min
   qc: Data dashboard monitored for missingness.
   hbcd_mods: null
@@ -2160,7 +2158,7 @@ nbhsaf:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 prescan_q:
   measure: Pre-Scan Questionnaire
   notes: null
@@ -2171,13 +2169,13 @@ prescan_q:
   construct: Infant Sleep Environment
   concatenated: null
   visits: V02 - V06
+  type: Parent Interview
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person
+  respondent: null
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: null
+  remote: null
   duration: null
   qc: Data dashboard monitored for variable missingness, coding errors, and data consistency
   hbcd_mods: null
@@ -2198,7 +2196,7 @@ prescan_q:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 promis:
   measure: PROMIS Perceived Stress/Social Support
   notes: null
@@ -2210,13 +2208,13 @@ promis:
   construct: Perceived Stress/Social Support
   concatenated: null
   visits: V01, V02, V03
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
+  remote: remote
   duration: 4 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
@@ -2239,24 +2237,24 @@ promis:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 paces:
   measure: Protective and Compensatory Experience
   notes: null
   acronym: PACEs
   full_name: Protective and Compensatory Experience
   domain: Social & Environmental Determinants
-  table_name: sed_bm_paces
+  table_name: null
   construct: Protective Factors
   concatenated: null
   visits: V01
+  type: Parent Survey
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: null
+  administration: Self-administered in-person or remotely
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person or remotely
+  remote: null
   duration: null
   qc: null
   hbcd_mods: null
@@ -2277,7 +2275,7 @@ paces:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 screenq:
   measure: Screen-Based Media Use
   notes: null
@@ -2288,13 +2286,13 @@ screenq:
   construct: Media Use
   concatenated: null
   visits: V04, V06
+  type: Parent Interview
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: HBCD Study Staff or Self
+  remote: either
   duration: 5 min
   qc: Monitor data dashboard for variable missingness, possible coding errors, scoring
     verification, and data consistency.
@@ -2326,7 +2324,7 @@ screenq:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 shs:
   measure: Second Hand Smoke Exposure
   notes: null
@@ -2337,13 +2335,13 @@ shs:
   construct: Second Hand Smoke
   concatenated: null
   visits: V05
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered in-person or remotely
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person or remotely
+  remote: either
   duration: 1 min
   qc: Response missingness and proportions were reviewed.
   hbcd_mods: 'Prompts for instruction items were modified to be consistent with the
@@ -2373,7 +2371,7 @@ shs:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 spm_2:
   measure: Sensory Processing Measure-2
   notes: null
@@ -2386,13 +2384,13 @@ spm_2:
   construct: Sensory Processing/Integration
   concatenated: null
   visits: V03 (Infant); V05 (Toddler)
+  type: Parent Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: Primary Caregiver
+  administration: Self-administered remotely
   admin_notes: null
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered remotely
+  remote: remote
   duration: 12 min
   qc: Periodic review of data capture to ensure that items are being fully completed
     and spot checks on scoring to assure algorithms are being correctly employed.
@@ -2423,7 +2421,7 @@ spm_2:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 study_nav:
   measure: Study Navigator Contact Form
   notes: null
@@ -2434,13 +2432,13 @@ study_nav:
   construct: Recruitment/Retention
   concatenated: study_navigator/
   visits: Filled out by the Study Navigator during and/or between study visits.
+  type: Parent Interview
+  child_specific: null
   respondent_category: null
-  assessment_type: Interview
-  administration: in-person/remote
+  respondent: Primary Caregiver
+  administration: null
   admin_notes: null
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: null
+  remote: either
   duration: null
   qc: This form is under development for HBCD. Data was collected with guidance using
     the <a href="../SNContactFormCompanionGuideOutline_Pilot_V4-HH.pdf" target="_blank">HBCD
@@ -2478,7 +2476,7 @@ study_nav:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: null
+  Column 29: null
 subst:
   measure: Substance Use Patterns in Pregnancy
   notes: null
@@ -2489,13 +2487,13 @@ subst:
   construct: Substance Use in Pregnancy
   concatenated: null
   visits: V02
+  type: Parent Survey
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person
+  respondent: Birth Parent
+  administration: Self-administered in-person
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person
+  remote: in-person
   duration: 5 min
   qc: Response distributions are reviewed for outliers and additionally cross-checked
     with ASSIST V1/V2 to ensure consistency in reported substances.
@@ -2569,7 +2567,7 @@ subst:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 tlfb:
   measure: Timeline Follow Back
   notes: null
@@ -2580,13 +2578,13 @@ tlfb:
   construct: Substance Use Before and During Pregnancy
   concatenated: null
   visits: V01, V02
+  type: Parent Interview
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person
+  respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff
   admin_notes: self-administered in Alabama
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: HBCD Study Staff
+  remote: in-person
   duration: 10 min
   qc: Response distributions are reviewed for outliers and additionally cross-checked
     with ASSIST V1/V2 to ensure consistency in reported substances.
@@ -2633,7 +2631,7 @@ tlfb:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 tic:
   measure: Transitions in Care Screener
   notes: null
@@ -2645,13 +2643,13 @@ tic:
     in who provides primary care
   concatenated: null
   visits: V02 onward
+  type: Parent Interview or Survey
+  child_specific: 'Yes'
   respondent_category: Parent on Child
-  assessment_type: Interview
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: null
   admin_notes: RA administered via phone
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Interview or Survey
-  ARCHIVE-administration: null
+  remote: remote
   duration: 5 min
   qc:
   - Monthly data consistency checks to identify discrepancies across submissions.
@@ -2695,7 +2693,7 @@ tic:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 nails:
   measure: USDTL Nails Toxicology (Maternal)
   notes: 2 files
@@ -2708,13 +2706,13 @@ nails:
   construct: Drug Panel, Environmental Exposure
   concatenated: null
   visits: V01, V02
-  respondent_category: Parent on Self
-  assessment_type: Biospecimen collection
-  administration: in-person
+  type: Direct Assessment
+  child_specific: 'No'
+  respondent_category: null
+  respondent: Pregnant Participant or Birth Parent (as applicable)
+  administration: Self-administered in-person
   admin_notes: null
-  ARCHIVE-respondent: Pregnant Participant or Birth Parent (as applicable)
-  ARCHIVE-type: Direct Assessment
-  ARCHIVE-administration: Self-administered in-person
+  remote: in-person
   duration: 5 min
   qc: Examine assay ranges and categorical versus continuous measures
   hbcd_mods: null
@@ -2753,7 +2751,7 @@ nails:
     the previous specimen), but insufficient sample remains to complete the repeat
     test. Because the results could not be validated, this should be treated as a
     true quantity insufficiency.
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 urine:
   measure: USDTL Urine Toxicology (Maternal)
   notes: null
@@ -2764,13 +2762,13 @@ urine:
   construct: Drug Panel, Toxins
   concatenated: null
   visits: V01
+  type: Direct Assessment
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Biospecimen collection
-  administration: in-person
+  respondent: Pregnant Participant or Birth Parent (as applicable)
+  administration: Self-administered in-person
   admin_notes: null
-  ARCHIVE-respondent: Pregnant Participant or Birth Parent (as applicable)
-  ARCHIVE-type: Direct Assessment
-  ARCHIVE-administration: Self-administered in-person
+  remote: in-person
   duration: 5 min
   qc: Examine assay ranges and categorical versus continuous measures
   hbcd_mods: null
@@ -2804,7 +2802,7 @@ urine:
     is available.
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 via:
   measure: Vancouver Index of Acculturation
   notes: null
@@ -2815,13 +2813,13 @@ via:
   construct: Acculturation
   concatenated: null
   visits: V05
+  type: Parent Interview or Survey
+  child_specific: 'No'
   respondent_category: Parent on Self
-  assessment_type: Questionnaire
-  administration: in-person/remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: HBCD Study Staff or Self
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Interview or Survey
-  ARCHIVE-administration: HBCD Study Staff or Self
+  remote: either
   duration: 5 min
   qc: The VIA is administered only if the caregiver, spouse/partner, or any of the
     child's grandparents were born outside the U.S. If all are U.S.-born, the survey
@@ -2875,7 +2873,7 @@ via:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'No'
+  Column 29: null
 vineland_3:
   measure: Vineland-3
   notes: null
@@ -2886,13 +2884,13 @@ vineland_3:
   construct: Adaptive Behavior
   concatenated: null
   visits: V05, V09, V10
+  type: Parent Survey
+  child_specific: 'No'
   respondent_category: Parent on Child
-  assessment_type: Questionnaire
-  administration: remote
+  respondent: Birth Parent or Primary Caregiver
+  administration: Self-administered remotely
   admin_notes: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered remotely
+  remote: remote
   duration: 15-30 min
   qc:
   - The caregiver is instructed to follow instructions as presented in Pearson Q-Global.
@@ -2943,7 +2941,7 @@ vineland_3:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
 visit_info:
   measure: Visit Level Information
   notes: null
@@ -2954,13 +2952,13 @@ visit_info:
   construct: Participant visit information
   concatenated: null
   visits: All
+  type: Derived Data
+  child_specific: null
   respondent_category: null
-  assessment_type: null
+  respondent: null
   administration: null
   admin_notes: null
-  ARCHIVE-respondent: null
-  ARCHIVE-type: Derived Data
-  ARCHIVE-administration: null
+  remote: null
   duration: null
   qc: null
   hbcd_mods: null
@@ -2981,7 +2979,7 @@ visit_info:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: null
+  Column 29: null
 vs100:
   measure: VS100 Spot Vision Screener
   notes: null
@@ -2992,15 +2990,15 @@ vs100:
   construct: Vision
   concatenated: null
   visits: V04, V06, V08
+  type: Direct Assessment
+  child_specific: 'Yes'
   respondent_category: Child on Self
-  assessment_type: Wearable
-  administration: in-person
+  respondent: Child
+  administration: HBCD Study Staff
   admin_notes: Only administered if parent responds NO to eligibility question (“Have
     you been told that your child cannot see at all?” (i.e., cannot see shadows or
     distinguish light and dark)
-  ARCHIVE-respondent: Child
-  ARCHIVE-type: Direct Assessment
-  ARCHIVE-administration: HBCD Study Staff
+  remote: in-person
   duration: <1 min
   qc:
   - Data are reviewed to verify that sites obtain a valid screening outcome (PASS
@@ -3024,4 +3022,4 @@ vs100:
   warning4: null
   warning5_title: null
   warning5: null
-  ARCHIVE-child_specific: 'Yes'
+  Column 29: null
