@@ -44,8 +44,8 @@ for _, row in df.iterrows():
 
         value = str(value).strip()
 
-        # For QC field, convert to list if there are multiple items (separated by line break in spreadsheet)
-        if field == "qc":
+        # Fields that may contain multi-line values
+        if field in ["qc", "full_name"]:
             items = [line.strip() for line in value.splitlines() if line.strip()]
 
             if len(items) == 1:

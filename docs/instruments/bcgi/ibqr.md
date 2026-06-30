@@ -8,53 +8,11 @@
 }
 </style>
 
-
 # Behavior Questionnaire + Inhibition (IBQ-R / ECBQ)
 
-<table class="table-no-vertical-lines" style="width: 100%;">
-<thead>
-  <th>Instrument</th>
-  <th>Table Name</th>
-  <th>Study Visits</th>
-  <th>Constructs</th>
-  <th>Type</th>
-</thead>
-<tbody>
-<tr>
-  <td>IBQ-R VSF + BI <i>(Infant)</i></td>
-  <td><code>mh_cg_ibqr</code></td>
-  <td>V03, V05</td>
-  <td rowspan="2">
-      <ul style="font-size: 0.9em;">
-        <li>Behavioral Inhibition</li>
-        <li>Negative Affectivity</li>
-        <li>Effortful Control</li>
-        <li>Surgency / Extraversion</li>
-    </ul>
-    </td>
-  <td rowspan="2">Parent Survey (7-10 min)
-    <br>&nbsp; - <i>Child-specific</i></td>
-</tr>
-<tr>
-  <td>ECBQ VSF + BI <i>(Early Childhood)</i></td>
-  <td><code>mh_cg_ecbq</code></td>
-  <td>V05</td>
-</tr>
-</tbody>
-</table>
-
-<div style="font-weight: 600; font-size: 1em; color: #6b6b6b;">Quality Control</div>
-<ul style="font-size: 0.9em;">
-    <li>Assess missingness (items completed per participant)</li>
-    <li>Verify age falls within expected range</li>
-    <li>Review summary statistics and visualizations (item frequencies, age, prorated scores)</li>
-    <li>Assess reliability (Cronbach’s α)</li>
-  </ul>
-
----
-
-{{ alert_warning(instruments.ibqr) }}
-{{  data_warning(instruments.ibqr) }}
+{{ readme(instruments.ibqr_ecbq) }}
+{{ alert_warning(instruments.ibqr_ecbq) }}
+{{  data_warning(instruments.ibqr_ecbq) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details

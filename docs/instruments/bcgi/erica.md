@@ -21,12 +21,10 @@
 <li>Additional training was provided as needed.</li>
 </ul>
 </div>
-
 <div class="info-section">
 <div class="info-section-title">
   Centralized Coding of ERICA Videos
 </div>
-
 <p>Videos are coded based on a single-pass review, with data entered directly into the HBCD database. Basic steps to ensure data completeness and accuracy include:</p>
 <ul>
   <li>Double data entry with conflict resolution to ensure accurate data entry</li>

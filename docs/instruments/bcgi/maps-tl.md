@@ -1,57 +1,8 @@
-<!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE -->
-
 # MAPS-TL
-<span class="readme-subtitle">Multidimensional Assessment Profiles - Temper Loss Scale</span>
 
-<table class="table-no-vertical-lines readme-intro">
-<thead>
-  <th>Instrument</th>
-  <th>Table Name</th>
-  <th>Study Visit</th>
-  <th>Construct</th>
-  <th>Type</th>
-</thead>
-<tbody>
-<tr>
-  <td>MAPS-TL Infancy (&lt;1 year old)</td>
-  <td><code>mh_cg_mapdb__inf</code></td>
-  <td>V03</td>
-  <td rowspan="2">Irritability</td>
-  <td rowspan="2">Parent Survey (5 min) - 
-  <br><i>Child-specific</i>
-  </td>
-</tr>
-<tr>
-  <td>MAPS-TL Toddlerhood & Preschool</td>
-  <td><code>mh_cg_mapdb__tod</code></td>
-  <td>V05</td>
-</tr>
-</tbody>
-</table>
-
-<div style="font-weight: 600; font-size: 1em; color: #6b6b6b;">Quality Control</div>
-<ul style="font-size: 0.9em;">
-  <li>Examine missingness by counting items answered per participant.</li>
-  <li>Check age is within expected ranges (3-9/10-17 months for Infant/Toddlerhood).</li>
-  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
-  <li>Cronbach's Alpha calculated to assess reliability.</li>
-  </ul>
-
----
-
+{{ readme(instruments.maps_tl) }}
 {{ alert_warning(instruments.maps_tl) }}
-
-
-{{ alert_banner_macro() }}
-<div class="collapsible-content">
-<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
-</div>
-
-{{ warning_banner_macro() }}
-<div class="collapsible-content">
-<p>The MAPS-TL assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p>  
-</div>
-
+{{ data_warning(instruments.maps_tl) }}
 {{ issues_banner_macro() }}
 
 ## Instrument Details
@@ -118,3 +69,51 @@ When some but not all items are completed (9–16 at V03 or 20–39 at V05), a p
 <p>Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. <em>Developmental Cognitive Neuroscience</em>, 69, 101422. <a href="https://doi.org/10.1016/j.dcn.2024.101422">https://doi.org/10.1016/j.dcn.2024.101422</a></p>
 <p>Krogh-Jespersen, S., Kaat, A. J., Petitclerc, A., Perlman, S. B., Briggs-Gowan, M. J., Burns, J. L., Adam, H., Nili, A., Gray, L., &amp; Wakschlag, L. S. (2022). Calibrating temper loss severity in the transition to toddlerhood: Implications for developmental science. <em>Applied Developmental Science</em>, 26(4), 785–798. <a href="https://doi.org/10.1080/10888691.2021.1995386">https://doi.org/10.1080/10888691.2021.1995386</a></p>
 </div>
+
+
+
+
+<!-- <span class="readme-subtitle">Multidimensional Assessment Profiles - Temper Loss Scale</span>
+<table class="table-no-vertical-lines readme-intro">
+<thead>
+  <th>Instrument</th>
+  <th>Table Name</th>
+  <th>Study Visit</th>
+  <th>Construct</th>
+  <th>Type</th>
+</thead>
+<tbody>
+<tr>
+  <td>MAPS-TL Infancy (&lt;1 year old)</td>
+  <td><code>mh_cg_mapdb__inf</code></td>
+  <td>V03</td>
+  <td rowspan="2">Irritability</td>
+  <td rowspan="2">Parent Survey (5 min) - 
+  <br><i>Child-specific</i>
+  </td>
+</tr>
+<tr>
+  <td>MAPS-TL Toddlerhood & Preschool</td>
+  <td><code>mh_cg_mapdb__tod</code></td>
+  <td>V05</td>
+</tr>
+</tbody>
+</table>
+<div style="font-weight: 600; font-size: 1em; color: #6b6b6b;">Quality Control</div>
+<ul style="font-size: 0.9em;">
+  <li>Examine missingness by counting items answered per participant.</li>
+  <li>Check age is within expected ranges (3-9/10-17 months for Infant/Toddlerhood).</li>
+  <li>Review summary statistics and visualizations (item frequencies, age, prorated scores).</li>
+  <li>Cronbach's Alpha calculated to assess reliability.</li>
+  </ul> -->
+
+
+  <!-- {{ alert_banner_macro() }}
+<div class="collapsible-content">
+<p>The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.</p>
+</div>
+
+{{ warning_banner_macro() }}
+<div class="collapsible-content">
+<p>The MAPS-TL assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.</p>  
+</div> -->

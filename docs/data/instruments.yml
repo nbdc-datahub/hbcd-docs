@@ -1,6 +1,216 @@
+ibqr_ecbq:
+  measure: 'Early Childhood Questionnaire VSF+BI (ECBQ)
+
+    Infant Behavior Questionnaire-Revised VSF+BI (IBQ-R)'
+  notes: special formatting
+  version1: null
+  version2: null
+  acronym: null
+  full_name:
+  - Early Childhood Behavior Questionnaire Very Short Form + Behavioral Inhibition
+    (ECBQ)
+  - Infant Behavior Questionnaire-Revised Very Short Form + Behavioral Inhibition
+    (IBQ-R)
+  domain: Behavior & Caregiver-Child Interactions
+  table_name: 'mh_cg_ecbq
+
+    mh_cg_ibqr'
+  table_version1: null
+  table_version2: null
+  construct: Behavioral Inhibition, Negative Affectivity, Effortful Control, Surgency
+    / Extraversion
+  concatenated: null
+  visits: V03 (IBQ-R only), V05 (IBQ-R & ECBQ)
+  visits_version1: null
+  visits_version2: null
+  assessment_type: Questionnaire
+  respondent_category: Parent on Child
+  administration: Remote
+  admin_notes: null
+  ARCHIVE-respondent: Primary Caregiver
+  ARCHIVE-type: Parent Survey
+  ARCHIVE-administration: null
+  duration: 7-10 min
+  qc:
+  - Examine missingness by counting items answered per participant.
+  - Check age is within expected ranges.
+  - Review summary statistics and visualizations (item frequencies, age, prorated
+    scores).
+  - Assess reliability (Cronbach’s α).
+  hbcd_mods: null
+  scoring: null
+  alert1_title: null
+  alert1: The HBCD dataset includes many variables that may be important for sound
+    and comprehensive analysis. The inclusion of additional variables will depend
+    on the research question(s) and methodological approach. Users are encouraged
+    to take time to explore the full range of available variables — especially those
+    that may serve as controls, contextual indicators, confounders, mechanisms, or
+    modifiers — to ensure thoughtful and well-supported analytic decisions. Other
+    important considerations may include developmental functioning, broader family
+    supports, and early adverse and protective exposures.
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: Interpreting Data
+  warning1: The IBQ-R (VSF)+BI and ECBQ (VSF)+BI measure normative variations in infant
+    and child behavior and should be interpreted in the context of the child’s age
+    and developmental stage. These instruments are not clinical or diagnostic tools.
+  warning2_title: IBQ-R vs ECBQ Administration at V05
+  warning2: 'At V05 (10–17 months), participants could be administered either the
+    IBQ-R (validated for ages 3–12 months) or the ECBQ (validated for ages 18–36 months),
+    depending on their age at the visit. Because no validated measure exists for 12–18
+    months, researchers are advised to select the instrument that best aligns with
+    their study design. The HBCD protocol spans this age gap, so the decision was
+    made to administer the IBQ-R to all infants at V03 and V05.
+
+
+    However, early in data collection, the ECBQ was inadvertently administered to
+    infants older than 12 months (N=78). In a small number of cases (N=10), caregivers
+    had not completed all of their V05 remote surveys before the child aged into the
+    ECBQ range, resulting in both measures being administered at V05. Although IBQ-R
+    and ECBQ assess similar constructs, they are not interchangeable. Users should
+    review measure-specific properties before incorporating these data into analyses.'
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-child_specific: 'Yes'
+ibqr:
+  measure: Infant Behavior Questionnaire-Revised VSF+BI
+  notes: null
+  version1: null
+  version2: null
+  acronym: IBQ-R
+  full_name: Infant Behavior Questionnaire-Revised Very Short Form + Behavioral Inhibition
+  domain: Behavior & Caregiver-Child Interactions
+  table_name: mh_cg_ibqr
+  table_version1: null
+  table_version2: null
+  construct: Behavioral Inhibition, Negative Affectivity, Effortful Control, Surgency
+    / Extraversion
+  concatenated: null
+  visits: V03, V05
+  visits_version1: null
+  visits_version2: null
+  assessment_type: Questionnaire
+  respondent_category: Parent on Child
+  administration: Remote
+  admin_notes: null
+  ARCHIVE-respondent: Primary Caregiver
+  ARCHIVE-type: Parent Survey
+  ARCHIVE-administration: null
+  duration: 7-10 min
+  qc:
+  - Examine missingness by counting items answered per participant.
+  - Check age is within expected ranges.
+  - Review summary statistics and visualizations (item frequencies, age, prorated
+    scores).
+  - Assess reliability (Cronbach’s α).
+  hbcd_mods: null
+  scoring: null
+  alert1_title: null
+  alert1: The HBCD dataset includes many variables that may be important for sound
+    and comprehensive analysis. The inclusion of additional variables will depend
+    on the research question(s) and methodological approach. Users are encouraged
+    to take time to explore the full range of available variables — especially those
+    that may serve as controls, contextual indicators, confounders, mechanisms, or
+    modifiers — to ensure thoughtful and well-supported analytic decisions. Other
+    important considerations may include developmental functioning, broader family
+    supports, and early adverse and protective exposures.
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: Interpreting Data
+  warning1: The IBQ-R (VSF)+BI and ECBQ (VSF)+BI measure normative variations in infant
+    and child behavior and should be interpreted in the context of the child’s age
+    and developmental stage. These instruments are not clinical or diagnostic tools.
+  warning2_title: IBQ-R vs ECBQ Administration at V05
+  warning2: 'At V05 (10–17 months), participants could be administered either the
+    IBQ-R (validated for ages 3–12 months) or the ECBQ (validated for ages 18–36 months),
+    depending on their age at the visit. Because no validated measure exists for 12–18
+    months, researchers are advised to select the instrument that best aligns with
+    their study design. The HBCD protocol spans this age gap, so the decision was
+    made to administer the IBQ-R to all infants at V03 and V05.
+
+
+    However, early in data collection, the ECBQ was inadvertently administered to
+    infants older than 12 months (N=78). In a small number of cases (N=10), caregivers
+    had not completed all of their V05 remote surveys before the child aged into the
+    ECBQ range, resulting in both measures being administered at V05. Although IBQ-R
+    and ECBQ assess similar constructs, they are not interchangeable. Users should
+    review measure-specific properties before incorporating these data into analyses.'
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-child_specific: 'Yes'
+maps_tl:
+  measure: Multidimensional Assessment Profiles - Temper Loss Scale
+  notes: null
+  version1: Infancy (<1 year old)
+  version2: Toddlerhood & Preschool
+  acronym: MAPS-TL
+  full_name: Multidimensional Assessment Profiles - Temper Loss Scale
+  domain: Behavior & Caregiver-Child Interactions
+  table_name: null
+  table_version1: mh_cg_mapdb__inf
+  table_version2: mh_cg_mapdb__tod
+  construct: Irritability
+  concatenated: null
+  visits: null
+  visits_version1: V03
+  visits_version2: V03
+  assessment_type: Questionnaire
+  respondent_category: Parent on Child
+  administration: Remote
+  admin_notes: null
+  ARCHIVE-respondent: Primary Caregiver
+  ARCHIVE-type: Parent Survey
+  ARCHIVE-administration: null
+  duration: 5 min
+  qc:
+  - Examine missingness by counting items answered per participant.
+  - Check age is within expected ranges  (3-9/10-17 months for Infant/Toddlerhood).
+  - Review summary statistics and visualizations (item frequencies, age, prorated
+    scores).
+  - Assess reliability (Cronbach’s α).
+  hbcd_mods: null
+  scoring: null
+  alert1_title: null
+  alert1: The HBCD dataset includes many variables that may be important for sound
+    and comprehensive analysis. The inclusion of additional variables will depend
+    on the research question(s) and methodological approach. Users are encouraged
+    to take time to explore the full range of available variables — especially those
+    that may serve as controls, contextual indicators, confounders, mechanisms, or
+    modifiers — to ensure thoughtful and well-supported analytic decisions. Other
+    important considerations may include developmental functioning, broader family
+    supports, and early adverse and protective exposures.
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: null
+  warning1: The MAPS-TL assesses normative variations in child behavior and should
+    be interpreted within the context of the child's age and developmental stage.
+    This is not clinical or diagnostic instrument.
+  warning2_title: null
+  warning2: null
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-child_specific: 'Yes'
 ecpromis:
   measure: ecPROMIS Caregiver-Child Relationship Scale
-  notes: MANUAL
+  notes: null
   version1: Infant (<1 year old)
   version2: Child (1 - 5 years old)
   acronym: null
@@ -951,7 +1161,7 @@ ptsd:
   ARCHIVE-child_specific: 'No'
 erica:
   measure: Early Regulation in Context Assessment
-  notes: 2 files
+  notes: null
   version1: null
   version2: null
   acronym: ERICA
@@ -1684,78 +1894,6 @@ illumina:
   warning5_title: null
   warning5: null
   ARCHIVE-child_specific: null
-ibqr:
-  measure: Infant Behavior Questionnaire-Revised VSF+BI
-  notes: null
-  version1: null
-  version2: null
-  acronym: IBQ-R
-  full_name: Infant Behavior Questionnaire-Revised Very Short Form + Behavioral Inhibition
-  domain: Behavior & Caregiver-Child Interactions
-  table_name: mh_cg_ibqr
-  table_version1: null
-  table_version2: null
-  construct: Behavioral Inhibition Negative Affectivity Effortful Control Surgency
-    / Extraversion
-  concatenated: null
-  visits: V03, V05
-  visits_version1: null
-  visits_version2: null
-  assessment_type: Questionnaire
-  respondent_category: Parent on Child
-  administration: Remote
-  admin_notes: null
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
-  duration: 7-10 min
-  qc:
-  - Examine missingness by counting items answered per participant.
-  - Check age is within expected ranges.
-  - Review summary statistics and visualizations (item frequencies, age, prorated
-    scores).
-  - Assess reliability (Cronbach’s α).
-  hbcd_mods: null
-  scoring: null
-  alert1_title: null
-  alert1: The HBCD dataset includes many variables that may be important for sound
-    and comprehensive analysis. The inclusion of additional variables will depend
-    on the research question(s) and methodological approach. Users are encouraged
-    to take time to explore the full range of available variables — especially those
-    that may serve as controls, contextual indicators, confounders, mechanisms, or
-    modifiers — to ensure thoughtful and well-supported analytic decisions. Other
-    important considerations may include developmental functioning, broader family
-    supports, and early adverse and protective exposures.
-  alert2_title: null
-  alert2: null
-  alert3_title: null
-  alert3: null
-  warning1_title: Interpreting Data
-  warning1: The IBQ-R (VSF)+BI and ECBQ (VSF)+BI measure normative variations in infant
-    and child behavior and should be interpreted in the context of the child’s age
-    and developmental stage. These instruments are not clinical or diagnostic tools.
-  warning2_title: IBQ-R vs ECBQ Administration at V05
-  warning2: 'At V05 (10–17 months), participants could be administered either the
-    IBQ-R (validated for ages 3–12 months) or the ECBQ (validated for ages 18–36 months),
-    depending on their age at the visit. Because no validated measure exists for 12–18
-    months, researchers are advised to select the instrument that best aligns with
-    their study design. The HBCD protocol spans this age gap, so the decision was
-    made to administer the IBQ-R to all infants at V03 and V05.
-
-
-    However, early in data collection, the ECBQ was inadvertently administered to
-    infants older than 12 months (N=78). In a small number of cases (N=10), caregivers
-    had not completed all of their V05 remote surveys before the child aged into the
-    ECBQ range, resulting in both measures being administered at V05. Although IBQ-R
-    and ECBQ assess similar constructs, they are not interchangeable. Users should
-    review measure-specific properties before incorporating these data into analyses.'
-  warning3_title: null
-  warning3: null
-  warning4_title: null
-  warning4: null
-  warning5_title: null
-  warning5: null
-  ARCHIVE-child_specific: 'Yes'
 nutrition:
   measure: Infant Nutrition Questionnaire
   notes: null
@@ -2055,55 +2193,6 @@ mri_forms:
   ARCHIVE-administration: null
   duration: null
   qc: Brief visual review of data prior to release to check for errors and missingness.
-  hbcd_mods: null
-  scoring: null
-  alert1_title: null
-  alert1: null
-  alert2_title: null
-  alert2: null
-  alert3_title: null
-  alert3: null
-  warning1_title: null
-  warning1: null
-  warning2_title: null
-  warning2: null
-  warning3_title: null
-  warning3: null
-  warning4_title: null
-  warning4: null
-  warning5_title: null
-  warning5: null
-  ARCHIVE-child_specific: 'Yes'
-maps_tl:
-  measure: Multidimensional Assessment Profiles - Temper Loss Scale
-  notes: MANUAL
-  version1: null
-  version2: null
-  acronym: MAPS-TL
-  full_name: Multidimensional Assessment Profiles - Temper Loss Scale
-  domain: Behavior & Caregiver-Child Interactions
-  table_name: mh_cg_mapdb__inf
-  table_version1: null
-  table_version2: null
-  construct: Irritability
-  concatenated: null
-  visits: V03
-  visits_version1: null
-  visits_version2: null
-  assessment_type: Questionnaire
-  respondent_category: Parent on Child
-  administration: Remote
-  admin_notes: null
-  ARCHIVE-respondent: Primary Caregiver
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: null
-  duration: 5 min
-  qc:
-  - Examine missingness by counting items answered per participant.
-  - Check age is within expected ranges  (3-9/10-17 months for Infant/Toddlerhood).
-  - Review summary statistics and visualizations (item frequencies, age, prorated
-    scores).
-  - Assess reliability (Cronbach’s α).
   hbcd_mods: null
   scoring: null
   alert1_title: null

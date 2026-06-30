@@ -37,8 +37,23 @@ def build_readme(inst):
         ) + "</ul>"
 
     full_name_value = inst.get("full_name")
-    acronym = inst.get("acronym")
 
+    # In rare instances where multiple instruments listed (separated by line breaks), convert to list (for IBQ-R and ECBQ)
+    if isinstance(full_name_value, list):
+        full_name_value = "<ul>" + "".join(
+            f"<li>{item}</li>"
+            for item in full_name_value
+        ) + "</ul>"
+
+
+
+    # Preserve line breaks for full_name column in rare instances (e.g. IBQ-R)
+    # full_name_value = full_name_value.replace("\n", "<br>")
+
+
+
+    
+    acronym = inst.get("acronym")
     if acronym:
         full_name_value = f"{full_name_value} ({acronym})"
 
