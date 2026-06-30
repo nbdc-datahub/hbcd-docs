@@ -2,6 +2,14 @@ from .utils import is_present, table_row
 
 def build_readme(inst):
 
+    # Multiple versions
+    versions = inst.get("versions")
+    if isinstance(versions, list):
+        versions = "<ul>" + "".join(
+            f"<li>{item}</li>"
+            for item in versions
+        ) + "</ul>"
+
     # for QC info, convert to list if there are multiple lines
     qc = inst.get("qc")
     if isinstance(qc, list):
@@ -58,6 +66,7 @@ def build_readme(inst):
 <table class="table-no-vertical-lines readme-intro">
 <tbody>
 {table_row("Full Name", full_name_value)}
+{table_row("Versions", versions)}
 {table_row("Table Name", inst.get("table_name"), code=True)}
 {table_row("Concatenated Data", inst.get('concatenated'), code=True)}
 {table_row("Construct", inst.get("construct"))}

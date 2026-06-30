@@ -6,10 +6,9 @@
 }
 </style>
 
-# Basic Demographics Information 
+# Basic Demographics
 
 {{ readme(instruments.basic_demo) }}
-
 
 Basic Demographics is a **derived measure** with information computed from the following sources: 
 

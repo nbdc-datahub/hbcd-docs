@@ -1,43 +1,34 @@
 # ecPROMIS Caregiver-Child Relationship Scale
 
+<!-- {{ readme(instruments.ecpromis) }} -->
+
 <table class="table-no-vertical-lines readme-intro">
-<thead>
-<tr>
-  <th></th>
-  <th>Infant Version (&lt;1 year old)</th>
-  <th>Child Version (1 - 5 years old)</th>
-</tr>
-</thead>
 <tbody>
 <tr>
+  <td>Full Name</td><td>ecPROMIS Caregiver-Child Relationship Scale</td>
+</tr>
+<tr>
+  <td>Versions</td><td>Infant Version (&lt;1 year old)<br>Child Version (1 - 5 years old)</td>
+</tr>
+<tr>
   <td>Table Name</td>
-  <td><code>mh_cg_pms__cc__inf</code></td>
-  <td><code>mh_cg_pms__cc__1to5</code></td>
+  <td><code>mh_cg_pms__cc__inf</code><br>
+  <code>mh_cg_pms__cc__1to5</code></td>
 </tr>
 <tr>
   <td>Study Visits</td>
-  <td class="visit-list">V03 · V05</td>
-  <td class="visit-list">V03 · V05 · V07</td>
+  <td>V03, V05 (Infant version);<br>
+  V03, V05, V07 (Child version)</td>
 </tr>
 <tr>
-  <td colspan="3" style="height: 2em;"></td>
-</tr>
-<tr class="section-divider">
-  <td colspan="3">SHARED INSTRUMENT INFORMATION</td>
+  <td>Construct</td>  <td>Relationships</td>
 </tr>
 <tr>
-  <td>Construct</td>
-  <td colspan="2">Relationships</td>
-</tr>
-<tr>
-  <td>Type</td>
-  <td colspan="2">
-  	Primary caregiver survey (child-specific; 1-2 min)
-  </td>
+  <td>Type</td>  <td>Primary caregiver survey (child-specific; 1-2 min)</td>
 </tr>
 <tr>
   <td>Quality Control</td>
-  <td colspan="2">
+  <td>
     <ul>
     <li>Examine missingness by counting items answered per participant.</li>
     <li>Check age is within expected ranges.</li>

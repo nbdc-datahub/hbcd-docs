@@ -1,6 +1,7 @@
 foodins:
   measure: 2-item Food Insecurity
   notes: null
+  versions: null
   acronym: USDA short form
   full_name: 2-item Food Insecurity
   domain: Social & Environmental Determinants
@@ -43,6 +44,7 @@ foodins:
 aces:
   measure: Adverse Childhood Experiences
   notes: aces & ped aces
+  versions: null
   acronym: ACEs
   full_name: Adverse Childhood Experiences (Adult)
   domain: Social & Environmental Determinants
@@ -89,6 +91,7 @@ aces:
 assist:
   measure: Alcohol, Smoking and Substance Involvement Screening Test V1-V4
   notes: MANUAL
+  versions: null
   acronym: ASSIST V1-V4
   full_name: Alcohol, Smoking and Substance Involvement Screening Test V1-V4
   domain: Pregnancy & Exposure, Including Substance Use
@@ -152,6 +155,7 @@ assist:
 growth:
   measure: Anthropometrics
   notes: null
+  versions: null
   acronym: null
   full_name: Anthropometrics <i>(Height/Weight/Head Circumference)</i>
   domain: Physical Health
@@ -199,6 +203,7 @@ growth:
 apa:
   measure: APA 1/2
   notes: null
+  versions: null
   acronym: APA 1/2
   full_name: DSM-5 Self-Rated Level 1/2 Cross-Cutting Symptom Measure—Adult
   domain: Pregnancy & Exposure, Including Substance Use
@@ -253,6 +258,7 @@ apa:
 bfy:
   measure: Baby's First Years
   notes: null
+  versions: null
   acronym: BFY
   full_name: Baby's First Years
   domain: Social & Environmental Determinants
@@ -298,13 +304,14 @@ bfy:
 basic_demo:
   measure: Basic Demographics
   notes: null
+  versions: null
   acronym: null
-  full_name: Basic Demographics
+  full_name: Basic Demographics Information
   domain: Demographics
   table_name: sed_basic_demographics
   construct: Demographics data derived from multiple sources
   concatenated: null
-  visits: All
+  visits: null
   assessment_type: Derived Data
   respondent_category: null
   administration: null
@@ -349,6 +356,7 @@ basic_demo:
 bayley_4:
   measure: Bayley Scales of Infant and Toddler Development, Fourth Edition
   notes: null
+  versions: null
   acronym: Bayley-4
   full_name: Bayley Scales of Infant and Toddler Development, Fourth Edition
   domain: Neurocognition & Language
@@ -419,6 +427,7 @@ bayley_4:
 bfh:
   measure: Breast Feeding History
   notes: null
+  versions: null
   acronym: PHENX BF
   full_name: Breast Feeding History
   domain: Physical Health
@@ -462,6 +471,7 @@ bfh:
 bisq:
   measure: Brief Infant Sleep Questionnaire
   notes: null
+  versions: null
   acronym: BISQ-SF
   full_name: Brief Infant Sleep Questionnaire- Short Form
   domain: Physical Health
@@ -521,6 +531,7 @@ bisq:
 demographics_ch:
   measure: Child Demographics
   notes: null
+  versions: null
   acronym: null
   full_name: Child Demographics
   domain: Social & Environmental Determinants
@@ -560,6 +571,7 @@ demographics_ch:
 cabr_sf:
   measure: Composite Abuse Scale Revised - Short Form
   notes: null
+  versions: null
   acronym: CABr-SF
   full_name: Composite Abuse Scale Revised - Short Form
   domain: Social & Environmental Determinants
@@ -612,6 +624,7 @@ cabr_sf:
 chaos:
   measure: Confusion, Hubbub and Order Scale
   notes: null
+  versions: null
   acronym: CHAOS
   full_name: Confusion, Hubbub and Order Scale
   domain: Behavior & Caregiver-Child Interactions
@@ -661,6 +674,7 @@ chaos:
 employment:
   measure: Current Employment
   notes: null
+  versions: null
   acronym: null
   full_name: Current Employment
   domain: Social & Environmental Determinants
@@ -699,6 +713,7 @@ employment:
 demographics:
   measure: Demographics (Adult)
   notes: null
+  versions: null
   acronym: null
   full_name: Demographics (Adult)
   domain: Social & Environmental Determinants
@@ -738,6 +753,7 @@ demographics:
 ptsd:
   measure: DSM5 Severity Acute Stress or PTSD
   notes: null
+  versions: null
   acronym: PTSD/Acute Stress
   full_name: National Stressful Events Survey- PTSD Short Scale/Acute Stress Disorder
   domain: Pregnancy & Exposure, Including Substance Use
@@ -794,6 +810,7 @@ ptsd:
 erica:
   measure: Early Regulation in Context Assessment
   notes: 2 files
+  versions: null
   acronym: ERICA
   full_name: Early Regulation in Context Assessment
   domain: Behavior & Caregiver-Child Interactions
@@ -868,6 +885,7 @@ erica:
 ecpromis_pags:
   measure: ecPROMIS - Physical Activity/Greenspace
   notes: null
+  versions: null
   acronym: null
   full_name: ecPROMIS - Physical Activity/Greenspace
   domain: Physical Health
@@ -917,6 +935,7 @@ ecpromis_pags:
 ecpromis_sleep:
   measure: ecPROMIS - Sleep
   notes: null
+  versions: null
   acronym: ecPROMIS - Sleep
   full_name: ecPROMIS - Parent Report Sleep Problems
   domain: Physical Health
@@ -965,6 +984,9 @@ ecpromis_sleep:
 ecpromis:
   measure: ecPROMIS Caregiver-Child Relationship Scale
   notes: MANUAL
+  versions: 'Infant Version (<1 year old)
+
+    Child Version (1 - 5 years old)'
   acronym: null
   full_name: ecPROMIS Caregiver-Child Relationship Scale
   domain: Behavior & Caregiver-Child Interactions
@@ -1023,6 +1045,7 @@ ecpromis:
 ecpromis_peer:
   measure: ecPROMIS Peer Relationships Scale
   notes: null
+  versions: null
   acronym: ecPROMIS-Peer
   full_name: ecPROMIS Peer Relationships Scale
   domain: Behavior & Caregiver-Child Interactions
@@ -1072,6 +1095,7 @@ ecpromis_peer:
 ecpromis_selfreg:
   measure: ecPROMIS Self-Regulation - Flexibility Scale
   notes: null
+  versions: null
   acronym: null
   full_name: ecPROMIS Self-Regulation - Flexibility Scale
   domain: Behavior & Caregiver-Child Interactions
@@ -1121,6 +1145,7 @@ ecpromis_selfreg:
 epds:
   measure: Edinburgh Postnatal Depression Scale
   notes: null
+  versions: null
   acronym: EPDS
   full_name: Edinburgh Postnatal Depression Scale
   domain: Pregnancy & Exposure, Including Substance Use
@@ -1171,6 +1196,7 @@ epds:
 discr:
   measure: Experiences of Unfair Treatment
   notes: null
+  versions: null
   acronym: null
   full_name: Experiences of Unfair Treatment
   domain: Social & Environmental Determinants
@@ -1210,6 +1236,7 @@ discr:
 fad:
   measure: Family Assessment Device
   notes: null
+  versions: null
   acronym: FAD (GF6+)
   full_name: Family Assessment Device (General Functioning)
   domain: Behavior & Caregiver-Child Interactions
@@ -1261,6 +1288,7 @@ fad:
 gled:
   measure: Geocoded Linked External Data
   notes: null
+  versions: null
   acronym: GLED
   full_name: Geocoded Linked External Data- Residential Address History
   domain: Social & Environmental Determinants
@@ -1318,6 +1346,7 @@ gled:
 home21:
   measure: HOME-21 Infant-Toddler
   notes: null
+  versions: null
   acronym: HOME-21
   full_name: Home Observation for Measurement of the Environment Infant-Toddler Version
   domain: Social & Environmental Determinants
@@ -1371,6 +1400,7 @@ home21:
 chem_exp:
   measure: Household Chemical Exposures
   notes: null
+  versions: null
   acronym: null
   full_name: Household Chemical Exposures
   domain: Social & Environmental Determinants
@@ -1415,6 +1445,7 @@ chem_exp:
 illumina:
   measure: Illumina Global Diversity GWAS Array
   notes: null
+  versions: null
   acronym: GDA GWAS
   full_name: Illumina Global Diversity GWAS Array
   domain: Biospecimen & Omics
@@ -1515,6 +1546,7 @@ illumina:
 ibqr:
   measure: Infant Behavior Questionnaire-Revised VSF+BI
   notes: null
+  versions: null
   acronym: IBQ-R
   full_name: Infant Behavior Questionnaire-Revised Very Short Form + Behavioral Inhibition
   domain: Behavior & Caregiver-Child Interactions
@@ -1581,6 +1613,7 @@ ibqr:
 nutrition:
   measure: Infant Nutrition Questionnaire
   notes: null
+  versions: null
   acronym: null
   full_name: Infant Nutrition Questionnaire
   domain: Physical Health
@@ -1620,6 +1653,7 @@ nutrition:
 inf_sensor_q:
   measure: Infant Sensor Questionnaire 1/2/3
   notes: null
+  versions: null
   acronym: null
   full_name: Infant Sensor Questionnaire 1/2/3
   domain: Novel Tech & Wearable Sensors
@@ -1662,6 +1696,7 @@ inf_sensor_q:
 lead:
   measure: Lead Exposures
   notes: null
+  versions: null
   acronym: null
   full_name: Lead Exposures
   domain: Social & Environmental Determinants
@@ -1709,6 +1744,7 @@ lead:
 mb_cdi:
   measure: MacArthur-Bates CDI
   notes: null
+  versions: null
   acronym: MB-CDI
   full_name: MacArthur-Bates Communicative Development Inventories, Words and Gestures
   domain: Neurocognition & Language
@@ -1782,6 +1818,7 @@ mb_cdi:
 med_hist:
   measure: Medical History Questionnaire
   notes: null
+  versions: null
   acronym: null
   full_name: Medical History Questionnaire
   domain: Physical Health
@@ -1825,6 +1862,7 @@ med_hist:
 mri_forms:
   measure: MRI Scan Session & Data Summary Forms
   notes: 2 tables- make manually?
+  versions: null
   acronym: null
   full_name: MRI Scan Session Summary Form / MRI Data Summary Form
   domain: Tabular Imaging
@@ -1863,6 +1901,7 @@ mri_forms:
 maps_tl:
   measure: Multidimensional Assessment Profiles - Temper Loss Scale
   notes: MANUAL
+  versions: null
   acronym: MAPS-TL
   full_name: Multidimensional Assessment Profiles - Temper Loss Scale
   domain: Behavior & Caregiver-Child Interactions
@@ -1906,6 +1945,7 @@ maps_tl:
 mlds:
   measure: Multilingual Language Development Screener
   notes: null
+  versions: null
   acronym: MLDS
   full_name: Multilingual Language Development Screener
   domain: Neurocognition & Language
@@ -1954,6 +1994,7 @@ mlds:
 olink:
   measure: Olink Explore 384 Inflammation 1 Panel
   notes: null
+  versions: null
   acronym: Olink
   full_name: Olink Explore 384 Inflammation 1 Panel
   domain: Biospecimen & Omics
@@ -2006,6 +2047,7 @@ olink:
 ehits:
   measure: Partner Dynamics Extended
   notes: null
+  versions: null
   acronym: eHITS
   full_name: Partner Dynamics Extended – Hurt, Insult, Threaten, Scream
   domain: Social & Environmental Determinants
@@ -2050,6 +2092,7 @@ ehits:
 pedaces:
   measure: Pediatric Adverse Childhood Experiences
   notes: null
+  versions: null
   acronym: Ped ACEs
   full_name: Pediatric Adverse Childhood Experiences
   domain: Social & Environmental Determinants
@@ -2088,6 +2131,7 @@ pedaces:
 fam_mh:
   measure: Personal and Family Psychiatric History
   notes: null
+  versions: null
   acronym: FAM MH
   full_name: Personal and Family Psychiatric History
   domain: Pregnancy & Exposure, Including Substance Use
@@ -2126,6 +2170,7 @@ fam_mh:
 nbhsaf:
   measure: PhenX+ Neighborhood Safety
   notes: null
+  versions: null
   acronym: null
   full_name: PhenX+ Neighborhood Safety
   domain: Social & Environmental Determinants
@@ -2164,6 +2209,7 @@ nbhsaf:
 prescan_q:
   measure: Pre-Scan Questionnaire
   notes: null
+  versions: null
   acronym: null
   full_name: Pre-Scan Questionnaire
   domain: Tabular Imaging
@@ -2202,6 +2248,7 @@ prescan_q:
 promis:
   measure: PROMIS Perceived Stress/Social Support
   notes: null
+  versions: null
   acronym: PROMIS
   full_name: Patient-Reported Outcome Measurement Information System Perceived Stress/Social
     Support
@@ -2243,6 +2290,7 @@ promis:
 paces:
   measure: Protective and Compensatory Experience
   notes: null
+  versions: null
   acronym: PACEs
   full_name: Protective and Compensatory Experience
   domain: Social & Environmental Determinants
@@ -2281,6 +2329,7 @@ paces:
 screenq:
   measure: Screen-Based Media Use
   notes: null
+  versions: null
   acronym: ScreenQ
   full_name: Screen-Based Media Use
   domain: Physical Health
@@ -2330,6 +2379,7 @@ screenq:
 shs:
   measure: Second Hand Smoke Exposure
   notes: null
+  versions: null
   acronym: null
   full_name: Second Hand Smoke Exposure
   domain: Social & Environmental Determinants
@@ -2377,6 +2427,7 @@ shs:
 spm_2:
   measure: Sensory Processing Measure-2
   notes: null
+  versions: null
   acronym: SPM-2
   full_name: Sensory Processing Measure-2
   domain: Neurocognition & Language
@@ -2427,6 +2478,7 @@ spm_2:
 study_nav:
   measure: Study Navigator Contact Form
   notes: null
+  versions: null
   acronym: null
   full_name: Study Navigator Contact Form
   domain: Administrative
@@ -2482,6 +2534,7 @@ study_nav:
 subst:
   measure: Substance Use Patterns in Pregnancy
   notes: null
+  versions: null
   acronym: null
   full_name: Substance Use Patterns in Pregnancy
   domain: Pregnancy & Exposure, Including Substance Use
@@ -2573,6 +2626,7 @@ subst:
 tlfb:
   measure: Timeline Follow Back
   notes: null
+  versions: null
   acronym: TLFB
   full_name: Timeline Follow Back
   domain: Pregnancy & Exposure, Including Substance Use
@@ -2637,6 +2691,7 @@ tlfb:
 tic:
   measure: Transitions in Care Screener
   notes: null
+  versions: null
   acronym: TIC
   full_name: Transitions in Care Screener
   domain: Social & Environmental Determinants
@@ -2699,6 +2754,7 @@ tic:
 nails:
   measure: USDTL Nails Toxicology (Maternal)
   notes: 2 files
+  versions: null
   acronym: Nails
   full_name: USDTL Nails Toxicology (Maternal)
   domain: Biospecimen & Omics
@@ -2757,6 +2813,7 @@ nails:
 urine:
   measure: USDTL Urine Toxicology (Maternal)
   notes: null
+  versions: null
   acronym: Urine
   full_name: USDTL Urine Toxicology (Maternal)
   domain: Biospecimen & Omics
@@ -2808,6 +2865,7 @@ urine:
 via:
   measure: Vancouver Index of Acculturation
   notes: null
+  versions: null
   acronym: VIA
   full_name: Vancouver Index of Acculturation
   domain: Social & Environmental Determinants
@@ -2879,6 +2937,7 @@ via:
 vineland_3:
   measure: Vineland-3
   notes: null
+  versions: null
   acronym: Vineland-3
   full_name: Vineland Adaptive Behavior Scales Third Edition
   domain: Neurocognition & Language
@@ -2947,14 +3006,15 @@ vineland_3:
 visit_info:
   measure: Visit Level Information
   notes: null
+  versions: null
   acronym: null
   full_name: Visit Level Information
   domain: Demographics
   table_name: par_visit_data
   construct: Participant visit information
   concatenated: null
-  visits: All
-  assessment_type: null
+  visits: null
+  assessment_type: Derived Data
   respondent_category: null
   administration: null
   admin_notes: null
@@ -2985,6 +3045,7 @@ visit_info:
 vs100:
   measure: VS100 Spot Vision Screener
   notes: null
+  versions: null
   acronym: null
   full_name: VS100 Spot Vision Screener
   domain: Physical Health
