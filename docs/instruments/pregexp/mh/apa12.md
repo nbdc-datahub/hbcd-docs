@@ -42,11 +42,11 @@ The co-occurrence of psychiatric symptoms and substance use during pregnancy is 
 
 ## Instrument Details
 
-The HBCD mental health screening instrument is a highly sensitive screening tool for use in community samples. It has two levels, adapted from DSM-5 Self-Rated [Level 1](https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf) and [Level 2](https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures) Cross-Cutting Symptom Measures:
+The HBCD mental health screening instrument is a highly sensitive screening tool for use in community samples. It has two levels, adapted from DSM-5 Self-Rated Level 1 and Level 2 Cross-Cutting Symptom Measures:
 
 <img src="../DSM-5Level2Cross-CuttingSymptomMeasures.png" width="90%" height="auto" class="center">
 
-**Level 1** includes 1 - 2 questions for each of the first 11 mental health domains displayed in the table above (*Depression* through *Dissociation*). When symptoms were reported for Level 1, participants were subsequently administered corresponding **Level 2** measures, which asked about additional symptoms associated with the following 8 mental health domains: *Depression*, *Anger*, *Mania*, *Anxiety*, *Somatic Symptoms*, *Sleep*, *Repetitive Behavior*, and *Personality*. 
+**Level 1** includes 1 - 2 questions for each of the first 11 mental health domains displayed in the table above (*Depression* → *Dissociation*). When symptoms were reported for Level 1, participants were subsequently administered corresponding **Level 2** measures, which asked about additional symptoms associated with the following 8 mental health domains: *Depression*, *Anger*, *Mania*, *Anxiety*, *Somatic Symptoms*, *Sleep*, *Repetitive Behavior*, and *Personality*. 
 
 <div id="table-summary" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
@@ -75,7 +75,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td>Participants proceed to Level 2 irrespective of Level 1 answers;<br>
- Level 2 measures replaced with PROMIS-SF v1.0 <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Depression 8a questionnaire</a>;<br>
+ Level 2 measures replaced with PROMIS-SF v1.0 Depression 8a questionnaire;<br>
  Clinical alert is triggered if responses (items from 'I felt worthless' to 'I felt that nothing could cheer me up') exceed threshold of 32</td>
 </tr>
 <tr>
@@ -119,7 +119,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td>
- Level 2 symptom measures replaced with PROMIS-SF v1.0 <a href="https://heal.nih.gov/files/CDEs/2024-07/promis-sleep-disturbance-8a-crf.pdf">Sleep Disturbance 8a</a></td>
+ Level 2 symptom measures replaced with PROMIS-SF v1.0 Sleep Disturbance 8a</td>
 </tr>
 <tr>
 <td>Memory</td>
@@ -144,7 +144,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 <td style="text-align:center;"><i class="fa-solid fa-x" style="color:red;"></i></td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td>Participants proceed to Level 2 without completing Level 1;<br>
-Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Personality Inventory for DSM-5 Brief</a>, which assesses 5 personality trait domains (<i>Negative Affect, Detachment, Antagonism, Disinhibition, & Psychoticism</i>)</td>
+Includes the Personality Inventory for DSM-5 Brief, which assesses 5 personality trait domains (<i>Negative Affect, Detachment, Antagonism, Disinhibition, & Psychoticism</i>)</td>
 </tr>
 <tr>
 <td>Substance Use</td>
@@ -168,10 +168,11 @@ Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Pr
 </div>
 <div class="collapsible-content">
 <p><b>Level 1 Modifications</b><br>
-HBCD excluded <i>Personality Functioning and Substance Use</i> present in the original measure (SU is captured by a separate set of instruments for HBCD - see measures listed <a href="../../../#pex" target="_blank">here</a>).</p>
+"Personality Functioning and Substance Use," present in the original measure, was excluded (already captured by a PEX Substance Use instruments).</p>
 <p><b>Gating Modifications</b><br>
-Gating was adapted for the HBCD study population so that participants proceeded automatically to the Level 2 measure for Personality Inventory without completing Level 1. In addition, all participants answered the Level 1 questions for Depression and Somatic Symptoms, but proceeded to Level 2* questions irrespective of answers. <strong>Future publications should be sure to acknowledge the removal of Level 1 and 2 Substance Use and the gating mechanisms for Personality Inventory, Depression, and Somatic Symptoms.</strong></p>
-<p><b>*</b><i>For HBCD, Level 2 symptom measures for Depression and Sleep Disturbance were replaced with the PROMIS Short Forms v1.0 <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Depression 8a questionnaire</a> and <a href="https://heal.nih.gov/files/CDEs/2024-07/promis-sleep-disturbance-8a-crf.pdf">Sleep Disturbance 8a</a>. Level 2 additionally includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Personality Inventory for DSM-5 Brief</a>, which assesses <span class="tooltip">5 personality trait domains <span class="emoji"><i class="fa-solid fa-circle-info"></i></span><span class="tooltiptext">Negative Affect, Detachment, Antagonism, Disinhibition, Psychoticism</span></span>.</i></p>
+Gating procedures were adapted for the HBCD population. Participants automatically advanced to the Level 2 Personality Inventory without completing Level 1. For Depression and Somatic Symptoms, all participants completed Level 1 items and proceeded to Level 2 questions regardless of their responses. Future publications should acknowledge the removal of Level 1 and Level 2 Substance Use measures, as well as the modified gating procedures for Personality Inventory, Depression, and Somatic Symptoms.</p>
+<p><b>Level 2 Measures</b><br>
+Level 2 symptom measures for Depression and Sleep Disturbance were replaced with the PROMIS Short Forms v1.0 Depression 8a and Sleep Disturbance 8a. Level 2 also includes the Personality Inventory for DSM-5 Brief, which assesses five personality trait domains: Negative Affect, Detachment, Antagonism, Disinhibition, and Psychoticism.</p>
 <p><b>Clinical Alerts</b><br>
 This measure was modified to alert HBCD study staff if responses to the Level 1 APA self-harm question ('Thoughts of actually hurting yourself?') or Level 2 APA Depression questionnaire (items from 'I felt worthless' to 'I felt that nothing could cheer me up') exceed thresholds of 0 and 32, respectively.</p>
 <p><b>Response Option Changes</b><br>
@@ -189,8 +190,7 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><b><a href="https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1</a> items (scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe) and gating overview, including HBCD adaptations:</b></p>
-
+<p><b>Level 1 items (scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe) and gating overview, including HBCD adaptations:</b></p>
 <table class="compact-table-no-vertical-lines">
 <tfoot><tr><td colspan="4"><b>*</b> <i>All items scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe</i></td></tr></tfoot>
 <thead>
@@ -283,7 +283,7 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 </tbody>
 </table>
 
-<p style="font-size: 1.0em;"><b><a href="https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures">Level 2</a> items and scoring overview, including HBCD adaptations:</b></p>
+<p style="font-size: 1.0em;"><b>Level 2 items and scoring overview, including HBCD adaptations:</b></p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -295,7 +295,7 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 </thead>
 <tbody>
 <tr>
-<td><a class="in-cell-link" href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Depression_Scoring_Manual_05Dec2023.pdf" target="_blank">Depression</a></td>
+<td><a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Depression_Scoring_Manual_05Dec2023.pdf" target="_blank">Depression</a></td>
 <td>apa_2_depr_001-apa_2_depr_008</td>
 <td>sum all items; look up t-score</td>
 <td>All items must be answered in order to produce a valid score using the scoring tables</td>
@@ -325,7 +325,7 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 <td>Less than 4 missing items, pro-rate ((raw score *15)/(number answered)). Four or more missing items should not be scored</td>
 </tr>
 <tr>
-<td><a class="in-cell-link" href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Sleep_Scoring_Manual.pdf" target="_blank">Sleep</a></td>
+<td><a class="in-cell-link" href="https://healthmeasures.net/pdfs/PROMIS%20Short%20Form%20v1.0%20-%20Sleep%20Disturbance%20-%208a%2016Mar2020.pdf" target="_blank">Sleep</a></td>
 <td>apa_2_sleep_001-apa_2_sleep_008</td>
 <td>sum all items (<b>note that items 2 and 8 are reverse-scored</b>); look up t-score</td>
 <td>All items must be answered in order to produce a valid score using the scoring tables</td>
@@ -351,7 +351,7 @@ For HBCD, the response option ‘Decline to answer’ was added to all questions
 <li><a href="https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1 Cross-Cutting Symptom Measures</a> </li>
 <li><a href="https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures">Level 2 Cross-Cutting Symptom Measures</a></li>
 <li><a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Depression_Scoring_Manual_05Dec2023.pdf">Depression 8a Questionnaire Scoring Manual</a> </li>
-<li><a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Sleep_Scoring_Manual.pdf">Sleep Disturbance 8a Scoring Manual</a></li>
+<li><a href="https://healthmeasures.net/pdfs/PROMIS%20Short%20Form%20v1.0%20-%20Sleep%20Disturbance%20-%208a%2016Mar2020.pdf">Sleep Disturbance 8a Scoring Manual</a></li>
 <li><a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Personality Inventory for DSM-5 Brief</a></li>
 </ul>
 
