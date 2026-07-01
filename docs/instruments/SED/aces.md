@@ -1,5 +1,3 @@
-<!-- come back to later -->
-
 # Adverse Childhood Experiences (ACEs)
 
 {{ readme(instruments.aces) }}
