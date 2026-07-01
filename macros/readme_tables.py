@@ -45,13 +45,8 @@ def build_readme(inst):
             for item in full_name_value
         ) + "</ul>"
 
-
-
     # Preserve line breaks for full_name column in rare instances (e.g. IBQ-R)
     # full_name_value = full_name_value.replace("\n", "<br>")
-
-
-
     
     acronym = inst.get("acronym")
     if acronym:

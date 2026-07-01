@@ -3268,7 +3268,7 @@ employment:
 discr:
   measure: Experiences of Unfair Treatment
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
+  automation_complete_except_scoring: 'yes'
   notes: null
   version1: null
   version2: null
@@ -3410,8 +3410,8 @@ gled:
 home21:
   measure: HOME-21 Infant-Toddler
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
-  notes: null
+  automation_complete_except_scoring: rich text (scoring)
+  notes: scoring
   version1: null
   version2: null
   acronym: HOME-21
@@ -3479,7 +3479,7 @@ home21:
 chem_exp:
   measure: Household Chemical Exposures
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
+  automation_complete_except_scoring: 'yes'
   notes: null
   version1: null
   version2: null
@@ -3539,7 +3539,7 @@ chem_exp:
 lead:
   measure: Lead Exposures
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
+  automation_complete_except_scoring: 'yes'
   notes: null
   version1: null
   version2: null
@@ -3716,8 +3716,8 @@ nbhsaf:
 promis:
   measure: PROMIS Perceived Stress/Social Support
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
-  notes: null
+  automation_complete_except_scoring: rich text (scoring)
+  notes: scoring
   version1: null
   version2: null
   acronym: PROMIS
@@ -3770,64 +3770,10 @@ promis:
   ARCHIVE-administration: null
   ARCHIVE-respondent: Primary Caregiver
   ARCHIVE-child_specific: 'Yes'
-paces:
-  measure: Protective and Compensatory Experience
-  domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
-  notes: null
-  version1: null
-  version2: null
-  acronym: PACEs
-  full_name: Protective and Compensatory Experience
-  table_name: sed_bm_paces
-  table_version1: null
-  table_version2: null
-  construct: Protective Factors
-  concatenated: null
-  visits: V01
-  visits_version1: null
-  visits_version2: null
-  assessment_type: Questionnaire
-  respondent_category: Parent on Self
-  administration: Remote
-  admin_notes: null
-  duration: null
-  qc: null
-  hbcd_mods1_title: null
-  hbcd_mods1: null
-  hbcd_mods2_title: null
-  hbcd_mods2: null
-  hbcd_mods3_title: null
-  hbcd_mods3: null
-  hbcd_mods4_title: null
-  hbcd_mods4: null
-  hbcd_mods5_title: null
-  hbcd_mods5: null
-  scoring: null
-  alert1_title: null
-  alert1: null
-  alert2_title: null
-  alert2: null
-  alert3_title: null
-  alert3: null
-  warning1_title: null
-  warning1: null
-  warning2_title: null
-  warning2: null
-  warning3_title: null
-  warning3: null
-  warning4_title: null
-  warning4: null
-  warning5_title: null
-  warning5: null
-  ARCHIVE-type: Parent Survey
-  ARCHIVE-administration: Self-administered in-person or remotely
-  ARCHIVE-respondent: null
-  ARCHIVE-child_specific: 'No'
 shs:
   measure: Second Hand Smoke Exposure
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
+  automation_complete_except_scoring: 'yes'
   notes: null
   version1: null
   version2: null
@@ -3890,7 +3836,7 @@ shs:
 tic:
   measure: Transitions in Care Screener
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
+  automation_complete_except_scoring: 'yes'
   notes: null
   version1: null
   version2: null
@@ -3968,7 +3914,7 @@ tic:
 via:
   measure: Vancouver Index of Acculturation
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
+  automation_complete_except_scoring: 'yes'
   notes: null
   version1: null
   version2: null
@@ -4160,3 +4106,464 @@ prescan_q:
   ARCHIVE-administration: null
   ARCHIVE-respondent: null
   ARCHIVE-child_specific: 'Yes'
+healthhx:
+  measure: Health V1- Health History
+  domain: Pregnancy & Exposure, Including Substance Use
+  automation_complete_except_scoring: 'no'
+  notes: null
+  version1: null
+  version2: null
+  acronym: Healthhx
+  full_name: Health V1- Health History
+  table_name: pex_bm_health_preg__healthhx
+  table_version1: null
+  table_version2: null
+  construct: Pre-pregnancy and pregnancy health
+  concatenated: null
+  visits: V01
+  visits_version1: null
+  visits_version2: null
+  assessment_type: Questionnaire
+  respondent_category: Parent on Self
+  administration: In-person/Remote
+  admin_notes: Self-Administered
+  duration: 5 min
+  qc: Review response distributions for outliers.
+  hbcd_mods1_title: null
+  hbcd_mods1: null
+  hbcd_mods2_title: null
+  hbcd_mods2: null
+  hbcd_mods3_title: null
+  hbcd_mods3: null
+  hbcd_mods4_title: null
+  hbcd_mods4: null
+  hbcd_mods5_title: null
+  hbcd_mods5: null
+  scoring: null
+  alert1_title: null
+  alert1: Amidst powerful societal expectations to ‘do what’s best for the baby’ during
+    pregnancy (i.e. by stopping substance use), up to half of pregnancies in the United
+    States are unintended with 1 in 5 unwanted (<a href="https://doi.org/10.1016/S2214-109X(20)30315-6">Bearak
+    et al. 2020</a>). This discrepancy contributes to implicit bias against pregnant
+    individuals who use substances as ‘not caring about their babies’ which is neither
+    humane, nor evidence based (<a href="https://doi.org/10.1016/j.socscimed.2022.115071">Massey
+    et al., 2022</a>). While cessation of substance use during pregnancy is universally
+    recognized as optimal, the ability to make this “parental” sacrifice varies substantially
+    between birthing individuals and within individuals between their different pregnancies
+    (<a href="https://doi.org/10.1007/s00737-023-01396-z">Level et al., 2024</a>).
+    Failure to recognize this inherent heterogeneity in pregnancy intention stigmatizes
+    substance users who did not intend to want to become pregnant. Summarily, inclusion
+    of pregnancy intention as a covariate in all studies that characterize prenatal
+    substance exposure (in the absence of a strong justification otherwise) is thus
+    strongly recommended to acknowledge myriad experiences of birthing parents who
+    participated in HBCD who made this research possible.
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: null
+  warning1: null
+  warning2_title: null
+  warning2: null
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-type: null
+  ARCHIVE-administration: null
+  ARCHIVE-respondent: null
+  ARCHIVE-child_specific: null
+vacc:
+  measure: Health V1- Exposures & Vaccines
+  domain: Pregnancy & Exposure, Including Substance Use
+  automation_complete_except_scoring: 'no'
+  notes: null
+  version1: null
+  version2: null
+  acronym: Vacc
+  full_name: Health V1- Exposures & Vaccines
+  table_name: pex_bm_health_preg__exp__vacc
+  table_version1: null
+  table_version2: null
+  construct: Vaccines in pregnancy
+  concatenated: null
+  visits: V01
+  visits_version1: null
+  visits_version2: null
+  assessment_type: Questionnaire
+  respondent_category: Parent on Self
+  administration: In-person/Remote
+  admin_notes: null
+  duration: 3 min
+  qc: Review response distributions for outliers.
+  hbcd_mods1_title: null
+  hbcd_mods1: null
+  hbcd_mods2_title: null
+  hbcd_mods2: null
+  hbcd_mods3_title: null
+  hbcd_mods3: null
+  hbcd_mods4_title: null
+  hbcd_mods4: null
+  hbcd_mods5_title: null
+  hbcd_mods5: null
+  scoring: null
+  alert1_title: null
+  alert1: null
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: null
+  warning1: null
+  warning2_title: null
+  warning2: null
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-type: null
+  ARCHIVE-administration: null
+  ARCHIVE-respondent: null
+  ARCHIVE-child_specific: null
+chroncond:
+  measure: Health V1- Chronic Conditions
+  domain: Pregnancy & Exposure, Including Substance Use
+  automation_complete_except_scoring: 'no'
+  notes: manually inserted into single page
+  version1: null
+  version2: null
+  acronym: Chroncond
+  full_name: Health V1- Chronic Conditions
+  table_name: pex_bm_health_preg__chroncond
+  table_version1: null
+  table_version2: null
+  construct: Chronic conditions/STIs in pregnancy
+  concatenated: null
+  visits: V01
+  visits_version1: null
+  visits_version2: null
+  assessment_type: Questionnaire
+  respondent_category: Parent on Self
+  administration: In-person/Remote
+  admin_notes: null
+  duration: 3 min
+  qc: Review response distributions for outliers.
+  hbcd_mods1_title: null
+  hbcd_mods1: null
+  hbcd_mods2_title: null
+  hbcd_mods2: null
+  hbcd_mods3_title: null
+  hbcd_mods3: null
+  hbcd_mods4_title: null
+  hbcd_mods4: null
+  hbcd_mods5_title: null
+  hbcd_mods5: null
+  scoring: null
+  alert1_title: null
+  alert1: null
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: null
+  warning1: null
+  warning2_title: null
+  warning2: null
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-type: null
+  ARCHIVE-administration: null
+  ARCHIVE-respondent: null
+  ARCHIVE-child_specific: null
+illness:
+  measure: Health V1- Illness
+  domain: Pregnancy & Exposure, Including Substance Use
+  automation_complete_except_scoring: 'no'
+  notes: manually inserted into single page
+  version1: null
+  version2: null
+  acronym: Illness
+  full_name: Health V1- Illness
+  table_name: pex_bm_health_preg__illness
+  table_version1: null
+  table_version2: null
+  construct: Illness in pregnancy
+  concatenated: null
+  visits: V01
+  visits_version1: null
+  visits_version2: null
+  assessment_type: Questionnaire
+  respondent_category: Parent on Self
+  administration: In-person/Remote
+  admin_notes: null
+  duration: 3 min
+  qc: Review response distributions for outliers.
+  hbcd_mods1_title: null
+  hbcd_mods1: null
+  hbcd_mods2_title: null
+  hbcd_mods2: null
+  hbcd_mods3_title: null
+  hbcd_mods3: null
+  hbcd_mods4_title: null
+  hbcd_mods4: null
+  hbcd_mods5_title: null
+  hbcd_mods5: null
+  scoring: null
+  alert1_title: null
+  alert1: null
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: null
+  warning1: Illnesses are captured from either BioPortal ICD codes or WHO (World Health
+    Organization) symptom codes, which were at times difficult for the participant
+    to name or the HBCD staff to correctly find in the ICD or symptom database.
+  warning2_title: null
+  warning2: null
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-type: null
+  ARCHIVE-administration: null
+  ARCHIVE-respondent: null
+  ARCHIVE-child_specific: null
+erhosp:
+  measure: Health V1- ER Admissions
+  domain: Pregnancy & Exposure, Including Substance Use
+  automation_complete_except_scoring: 'no'
+  notes: manually inserted into single page
+  version1: null
+  version2: null
+  acronym: ERhosp
+  full_name: Health V1- ER Admissions
+  table_name: pex_bm_health_preg__erhosp
+  table_version1: null
+  table_version2: null
+  construct: ER or hospitalization in pregnancy
+  concatenated: null
+  visits: V01
+  visits_version1: null
+  visits_version2: null
+  assessment_type: Questionnaire
+  respondent_category: Parent on Self
+  administration: In-person/Remote
+  admin_notes: null
+  duration: 5 min
+  qc: Review response distributions for outliers.
+  hbcd_mods1_title: null
+  hbcd_mods1: null
+  hbcd_mods2_title: null
+  hbcd_mods2: null
+  hbcd_mods3_title: null
+  hbcd_mods3: null
+  hbcd_mods4_title: null
+  hbcd_mods4: null
+  hbcd_mods5_title: null
+  hbcd_mods5: null
+  scoring: null
+  alert1_title: null
+  alert1: null
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: null
+  warning1: Reasons for ER visit or hospitalization are captured from ICD codes (from
+    BioPortal ICD), which were at times difficult for the participant to name or HBCD
+    study staff to correctly find in the ICD database. This was particularly apparent
+    for ER visits for routine care (no diagnosis) or false alarms (e.g., suspected
+    water break), frequently coded as "Don’t know."
+  warning2_title: null
+  warning2: null
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-type: null
+  ARCHIVE-administration: null
+  ARCHIVE-respondent: null
+  ARCHIVE-child_specific: null
+meds:
+  measure: Health V1- Medications
+  domain: Pregnancy & Exposure, Including Substance Use
+  automation_complete_except_scoring: 'no'
+  notes: manually inserted into single page
+  version1: null
+  version2: null
+  acronym: Meds
+  full_name: Health V1- Medications
+  table_name: pex_bm_health_preg__meds
+  table_version1: null
+  table_version2: null
+  construct: Medications in pregnancy
+  concatenated: null
+  visits: V01
+  visits_version1: null
+  visits_version2: null
+  assessment_type: Questionnaire
+  respondent_category: Parent on Self
+  administration: In-person/Remote
+  admin_notes: null
+  duration: 5 min
+  qc: Review response distributions for outliers.
+  hbcd_mods1_title: null
+  hbcd_mods1: null
+  hbcd_mods2_title: null
+  hbcd_mods2: null
+  hbcd_mods3_title: null
+  hbcd_mods3: null
+  hbcd_mods4_title: null
+  hbcd_mods4: null
+  hbcd_mods5_title: null
+  hbcd_mods5: null
+  scoring: null
+  alert1_title: null
+  alert1: null
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: null
+  warning1: Medication names are queried from the RxNORM database and reasons for
+    medication use are captured from ICD codes (from BioPortal ICD). Reasons for use
+    were sometimes difficult for the participant to name and/or HBCD study staff to
+    find in the ICD database. This was apparent with aspirin for preeclampsia prevention,
+    as there was not an option for coding preventive use. Aspirin was later moved
+    to the prenatal vitamin section as a result. Additionally, medications used PRN
+    (“as needed”) were difficult for participants to report. Finally, although not
+    asked, some medications were coded with dose, but this was not asked and should
+    not be used.
+  warning2_title: null
+  warning2: null
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-type: null
+  ARCHIVE-administration: null
+  ARCHIVE-respondent: null
+  ARCHIVE-child_specific: null
+healthv2_preg:
+  measure: Health V2- Pregnancy
+  domain: Pregnancy & Exposure, Including Substance Use
+  automation_complete_except_scoring: 'no'
+  notes: manually inserted into single page
+  version1: null
+  version2: null
+  acronym: null
+  full_name: Health V2- Pregnancy
+  table_name: pex_bm_healthv2_preg
+  table_version1: null
+  table_version2: null
+  construct: Health updates up to delivery
+  concatenated: null
+  visits: V02
+  visits_version1: null
+  visits_version2: null
+  assessment_type: Questionnaire
+  respondent_category: Parent on Self
+  administration: In-person/Remote
+  admin_notes: null
+  duration: 10 min
+  qc: Review response distributions for outliers.
+  hbcd_mods1_title: null
+  hbcd_mods1: null
+  hbcd_mods2_title: null
+  hbcd_mods2: null
+  hbcd_mods3_title: null
+  hbcd_mods3: null
+  hbcd_mods4_title: null
+  hbcd_mods4: null
+  hbcd_mods5_title: null
+  hbcd_mods5: null
+  scoring: null
+  alert1_title: null
+  alert1: null
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: null
+  warning1: null
+  warning2_title: null
+  warning2: null
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-type: null
+  ARCHIVE-administration: null
+  ARCHIVE-respondent: null
+  ARCHIVE-child_specific: null
+healthv2_inf:
+  measure: Health V2- Infancy
+  domain: Pregnancy & Exposure, Including Substance Use
+  automation_complete_except_scoring: 'no'
+  notes: manually inserted into single page
+  version1: null
+  version2: null
+  acronym: null
+  full_name: Health V2- Infancy
+  table_name: pex_bm_healthv2_inf
+  table_version1: null
+  table_version2: null
+  construct: Delivery and birth outcomes
+  concatenated: null
+  visits: V02
+  visits_version1: null
+  visits_version2: null
+  assessment_type: Questionnaire
+  respondent_category: Parent on Child
+  administration: In-person/Remote
+  admin_notes: null
+  duration: 10 min
+  qc: Review response distributions for outliers.
+  hbcd_mods1_title: null
+  hbcd_mods1: null
+  hbcd_mods2_title: null
+  hbcd_mods2: null
+  hbcd_mods3_title: null
+  hbcd_mods3: null
+  hbcd_mods4_title: null
+  hbcd_mods4: null
+  hbcd_mods5_title: null
+  hbcd_mods5: null
+  scoring: null
+  alert1_title: null
+  alert1: null
+  alert2_title: null
+  alert2: null
+  alert3_title: null
+  alert3: null
+  warning1_title: null
+  warning1: null
+  warning2_title: null
+  warning2: null
+  warning3_title: null
+  warning3: null
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-type: null
+  ARCHIVE-administration: null
+  ARCHIVE-respondent: null
+  ARCHIVE-child_specific: null
