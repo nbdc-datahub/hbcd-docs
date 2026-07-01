@@ -9,12 +9,7 @@
 
 The **MacArthur-Bates Communicative Development Inventories, Words and Gestures**, Web Version, English and Spanish is a caregiver -report assessment of children’s early language development, including expressive and receptive vocabulary and gesture. In HBCD, the Words and Gestures form is administered up to 16 months of age.  Beginning at 16 months of age, the Words and Gestures form the Words and Sentences form. See details about both forms at [https://mb-cdi.stanford.edu/](https://mb-cdi.stanford.edu/).
 
-
-{{ mods_banner_macro() }}
-<div class="collapsible-content">
-<p>Administration of the CDI-WG in English or Spanish is decided based on the results of the Multilingual Language Development questionnaire. If the caregiver reports that the child has 30% or greater exposure to English and/or Spanish, they are prompted to complete the CDI in that language; children who are exposed to both English and Spanish at a greater than 30% level are prompted to complete both forms. If caregivers report less than 30% exposure to either language, administration defaults to English.</p> 
-</div>
-
+{{ hbcd_mods(instruments.mb_cdi) }}
 {{ scoring(instruments.mb_cdi) }}
 
 ## References

@@ -11,11 +11,7 @@ The **Sensory Processing Measure – Infant/Toddler (SPM-2)** is designed to ass
 
 This questionnaire asks about the ways the child sensory systems contribute to daily functioning. The caregiver selects whether their child’s behavior during the past month never, occasionally, frequently, or always resembles the behavior described. Seven sensory domains are assessed as well as functions related to ideas/planning and social relatedness. 
 
-{{ mods_banner_macro() }}
-<div class="collapsible-content">
-<p>For HBCD, the response option ‘Decline to answer’ was added to all questions.</p> 
-</div>
-
+{{ hbcd_mods(instruments.spm_2) }}
 {{ scoring(instruments.spm_2) }}
 
 ## References

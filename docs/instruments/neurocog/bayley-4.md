@@ -1,6 +1,5 @@
 # Bayley Scales of Infant and Toddler Development
 
-
 {{ readme(instruments.bayley_4) }}
 {{ alert_warning(instruments.bayley_4) }}
 {{ data_warning(instruments.bayley_4) }}
@@ -10,18 +9,8 @@
 
 The **Bayley Scales of Infant and Toddler Development, Fourth Edition**, is an established, commercially available measure of early development. The test provides an estimate of the child's cognitive, language, and motor skills. The **Language Domain** evaluates both receptive and expressive communication skills. The **Motor Domain** evaluates both fine and gross motor skills. The **Social-Emotional** and **Adaptive Behavior** Scales of the Bayley-4 were not administered in this study. Publisher documentation for the Bayley-4 is available [here](https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Cognition-%26-Neuro/Bayley-Scales-of-Infant-and-Toddler-Development-%7C-Fourth-Edition/p/100001996).
 
-{{ mods_banner_macro() }}
-<div class="collapsible-content">
-<p><b>Administration</b><br>
-The test was designed to be administered by trained clinicians. For the HBCD Study, however, administration was performed primarily by trained Research Assistants (RAs). HBCD implemented a rigorous training and certification process to ensure that all RAs met study-wide standards before conducting assessments. For <strong>training</strong>, subject matter experts (licensed psychologists with expertise in infant testing and BSID-4 administration) provided lectures, group discussions, and office hours for individualized guidance. <strong>To be certified</strong>, RAs were required to submit both a recorded administration and their QGlobal item-level scoring for expert review.</p>
 
-<p><b>Use of Caregiver Questions</b><br>
-The use of Caregiver Questions on the BSID-4 was modified. RAs were instructed to query the caregiver if the child scored below a 2 on items where caregiver input is permitted to inform the assessment. The BSID-4 manual specifies using caregiver reports when the target behavior “has not been observed.” It also notes that caregiver questions were used in 95% of administrations in the normative sample, with no formal limit on their use. The manual indicates that the assessment’s validity may be questioned if there are frequent discrepancies between what is observed and what is reported.</p>
-
-<p><b>Accommodations For Spanish-Speaking Households</b><br>
-Modifications were made to accommodate Spanish-speaking households. <strong>English instructions were translated by experienced Bayley assessors</strong> accustomed to administering the BSID-4 in Spanish contexts for infants. The HBCD Spanish Language Committee reviewed translations, resolving discrepancies through iterative discussion. For families opting for Spanish administration, RAs used the approved HBCD Spanish translations of both instructions and caregiver questions. No modifications were made to the scoring of the responses and computation of the associated cluster and standard scores.</p> 
-</div>
-
+{{ hbcd_mods(instruments.bayley_4) }}
 {{ scoring(instruments.bayley_4) }}
 
 ## References
@@ -52,3 +41,17 @@ MOVED TO KNOWN ISSUES:
 <p><b>Invalid Scores for Subset of Participants</b><br>
 Participants may include invalid sub-test and/or domain scores of <code>-9999</code>. Users should remove this participant data prior to analysis.
 </p> -->
+
+<!-- 
+
+{{ mods_banner_macro() }}
+<div class="collapsible-content">
+<p><b>Administration</b><br>
+The test was designed to be administered by trained clinicians. For the HBCD Study, however, administration was performed primarily by trained Research Assistants (RAs). HBCD implemented a rigorous training and certification process to ensure that all RAs met study-wide standards before conducting assessments. For <strong>training</strong>, subject matter experts (licensed psychologists with expertise in infant testing and BSID-4 administration) provided lectures, group discussions, and office hours for individualized guidance. <strong>To be certified</strong>, RAs were required to submit both a recorded administration and their QGlobal item-level scoring for expert review.</p>
+
+<p><b>Use of Caregiver Questions</b><br>
+The use of Caregiver Questions on the BSID-4 was modified. RAs were instructed to query the caregiver if the child scored below a 2 on items where caregiver input is permitted to inform the assessment. The BSID-4 manual specifies using caregiver reports when the target behavior “has not been observed.” It also notes that caregiver questions were used in 95% of administrations in the normative sample, with no formal limit on their use. The manual indicates that the assessment’s validity may be questioned if there are frequent discrepancies between what is observed and what is reported.</p>
+
+<p><b>Accommodations For Spanish-Speaking Households</b><br>
+Modifications were made to accommodate Spanish-speaking households. <strong>English instructions were translated by experienced Bayley assessors</strong> accustomed to administering the BSID-4 in Spanish contexts for infants. The HBCD Spanish Language Committee reviewed translations, resolving discrepancies through iterative discussion. For families opting for Spanish administration, RAs used the approved HBCD Spanish translations of both instructions and caregiver questions. No modifications were made to the scoring of the responses and computation of the associated cluster and standard scores.</p> 
+</div> -->

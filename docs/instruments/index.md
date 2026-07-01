@@ -310,14 +310,14 @@ In this section we provide a brief overview of each study instrument provided in
   <td><code>ph_ch_anthro</code></td>
 </tr> 
 <tr>
-  <td><a href="physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
-  <td>Sleep</td>
-  <td><code>ph_cg_bisq</code></td>
-</tr>
-<tr>
   <td><a href="physhealth/bf" target="_blank">Breast Feeding History</a></td>
   <td>Nutrition</td>
   <td><code>ph_cg_phx__bfh</code></td>
+</tr>
+<tr>
+  <td><a href="physhealth/bisq-sf" target="_blank">Brief Infant Sleep Questionnaire</a></td>
+  <td>Sleep</td>
+  <td><code>ph_cg_bisq</code></td>
 </tr>
 <tr>
   <td><a href="physhealth/ecpromis-pags" target="_blank">ecPROMIS Physical Activity/Greenspace</a></td>

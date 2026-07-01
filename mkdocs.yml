@@ -99,8 +99,8 @@ nav:
             - Vineland: instruments/neurocog/vineland.md
         - Physical Health:
             - Anthropometrics: instruments/physhealth/growth.md
+            - Breastfeeding History: instruments/physhealth/bf.md
             - Brief Infant Sleep Questionnaire: instruments/physhealth/bisq-sf.md
-            - Breastfeeding: instruments/physhealth/bf.md
             - ecPROMIS- PA/GS: instruments/physhealth/ecpromis-pags.md
             - ecPROMIS- Sleep: instruments/physhealth/ecpromis-sleep.md
             - Medical History: instruments/physhealth/medical-history.md

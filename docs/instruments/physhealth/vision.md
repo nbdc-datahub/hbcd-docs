@@ -2,7 +2,7 @@
 
 {{ readme(instruments.vs100) }}
 
-*Note: Only administered if parent responds NO to eligibility question (“Have you been told that your child cannot see at all?” (i.e., cannot see shadows or distinguish light and dark)).*
+*Note: Only administered if parent responds NO to eligibility question (“Have you been told that your child cannot see at all?” - i.e., cannot see shadows or distinguish light and dark).*
 
 {{ alert_warning(instruments.vs100) }}
 {{ data_warning(instruments.vs100) }}

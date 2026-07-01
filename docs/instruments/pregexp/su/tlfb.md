@@ -2,7 +2,7 @@
 
 {{ readme(instruments.tlfb) }}
 
-*Note: The TLFB self-administered as a Parent Survey in Alabama*
+*Note: The TLFB was self-administered remotely in Alabama.*
 
 {{ alert_warning(instruments.tlfb) }}
 {{ data_warning(instruments.tlfb) }}
