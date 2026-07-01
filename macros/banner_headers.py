@@ -1,4 +1,25 @@
-# from .utils import is_present, table_row
+from .utils import is_present, table_row
+
+## REFERENCES BANNER
+def ref_banner(
+        banner_id="references",
+        text="References",
+        icon="fa-solid fa-book-open"
+    ):
+        return f"""
+<div id="{banner_id}" class="banner" onclick="toggleCollapse(this)">
+<span class="emoji">
+    <i class="{icon}"></i>
+</span>
+<span class="text-with-link">
+    <span class="text">{text}</span>
+    <a class="anchor-link" href="#{banner_id}" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+<span class="arrow">▸</span>
+</div>
+"""
 
 # GENERAL WARNING BANNER HEADER
 

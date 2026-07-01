@@ -95,16 +95,7 @@ NASEM also published a report, [*Using Population Descriptors in Genetics and Ge
 
 ---
 
-<div id="ref" class="banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
-  <span class="text-with-link">
-  <span class="text">References</span>
-  <a class="anchor-link" href="#ref" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
+{{ ref_banner_macro() }}
 <div class="collapsible-content">
 <div class="references">
   <p>Appleseth, H. S., Moyers, S. A., Crockett-Barbera, E. K., Hartwell, M., Arndt, S., & Croff, J. M. (2023). Language considerations for children of parents with substance use disorders. Substance Abuse Treatment, Prevention, and Policy, 18(1), 28. <a href="https://doi.org/10.1186/s13011-023-00536-z">https://doi.org/10.1186/s13011-023-00536-z</a></p>

@@ -123,7 +123,7 @@ aces:
 paces:
   measure: Protective and Compensatory Experiences
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
+  automation_complete_except_scoring: rich text (scoring)
   notes: C-Paces & R-Paces
   version1: C-PACES
   version2: R-PACES
@@ -2176,7 +2176,7 @@ erhosp:
   alert2: null
   alert3_title: null
   alert3: null
-  warning1_title: null
+  warning1_title: ERhosp
   warning1: Reasons for ER visit or hospitalization are captured from ICD codes (from
     BioPortal ICD), which were at times difficult for the participant to name or HBCD
     study staff to correctly find in the ICD database. This was particularly apparent
@@ -2282,7 +2282,7 @@ healthhx:
   hbcd_mods5_title: null
   hbcd_mods5: null
   scoring: null
-  alert1_title: null
+  alert1_title: Health V1 - Health History
   alert1: Amidst powerful societal expectations to ‘do what’s best for the baby’ during
     pregnancy (i.e. by stopping substance use), up to half of pregnancies in the United
     States are unintended with 1 in 5 unwanted (<a href="https://doi.org/10.1016/S2214-109X(20)30315-6">Bearak
@@ -2357,7 +2357,7 @@ illness:
   alert2: null
   alert3_title: null
   alert3: null
-  warning1_title: null
+  warning1_title: Illness
   warning1: Illnesses are captured from either BioPortal ICD codes or WHO (World Health
     Organization) symptom codes, which were at times difficult for the participant
     to name or the HBCD staff to correctly find in the ICD or symptom database.
@@ -2413,7 +2413,7 @@ meds:
   alert2: null
   alert3_title: null
   alert3: null
-  warning1_title: null
+  warning1_title: Meds
   warning1: Medication names are queried from the RxNORM database and reasons for
     medication use are captured from ICD codes (from BioPortal ICD). Reasons for use
     were sometimes difficult for the participant to name and/or HBCD study staff to
@@ -2475,8 +2475,10 @@ healthv2_inf:
   alert2: null
   alert3_title: null
   alert3: null
-  warning1_title: null
-  warning1: null
+  warning1_title: Healthv2- Inf
+  warning1: The same coding issues identified at V1, including difficulty with ICD
+    codes (from BioPortal ICD) and medication names (from RxNORM) apply to this visit
+    as well.
   warning2_title: null
   warning2: null
   warning3_title: null
@@ -2529,8 +2531,10 @@ healthv2_preg:
   alert2: null
   alert3_title: null
   alert3: null
-  warning1_title: null
-  warning1: null
+  warning1_title: Healthv2- Preg
+  warning1: The same coding issues identified at V1, including difficulty with ICD
+    codes (from BioPortal ICD) and medication names (from RxNORM) apply to this visit
+    as well.
   warning2_title: null
   warning2: null
   warning3_title: null

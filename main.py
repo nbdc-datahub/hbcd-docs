@@ -12,6 +12,7 @@ from macros.instrument_tables import (
 from macros.readme_tables import build_readme
 
 from macros.data_warnings import build_data_warning
+from macros.data_warning_multi import build_data_warning_multi
 from macros.alert_warnings import build_alert_warning
 from macros.hbcd_mods import build_hbcd_mods
 from macros.scoring import build_scoring
@@ -21,9 +22,10 @@ from macros.scoring_tables import (
 )
 
 from macros.banner_headers import (
+    ref_banner,
+    issues_banner,
     warning_banner,
     alert_banner,
-    issues_banner,
     scoring_banner, 
     mods_banner
 )
@@ -64,6 +66,9 @@ def define_env(env):
     @env.macro
     def data_warning(inst):
         return build_data_warning(inst)
+    @env.macro
+    def data_warning_multi(instruments, instrument_ids):
+        return build_data_warning_multi(instruments, instrument_ids)
     
     @env.macro
     def alert_warning(inst):
@@ -80,7 +85,10 @@ def define_env(env):
     @env.macro
     def issues_banner_macro():
         return issues_banner()
-
+    @env.macro
+    def ref_banner_macro():
+        return ref_banner()
+    
     @env.macro
     def warning_banner_macro():
         return warning_banner()

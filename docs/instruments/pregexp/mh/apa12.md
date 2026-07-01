@@ -124,7 +124,7 @@ Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Pr
 </div>
 
 {{ hbcd_mods(instruments.apa) }}
-<!-- {{ scoring(instruments.apa) }} -->
+{{ scoring(instruments.apa) }}
 
 {{ scoring_banner_macro() }}
 <div class="collapsible-content">
@@ -265,6 +265,74 @@ Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Pr
 <tr>
 <td><a class="in-cell-link" href="https://healthmeasures.net/pdfs/PROMIS%20Short%20Form%20v1.0%20-%20Sleep%20Disturbance%20-%208a%2016Mar2020.pdf" target="_blank">Sleep</a></td>
 <td>apa_2_sleep_001-apa_2_sleep_008</td>
+<td>sum all items (<b>note: items 2 and 8 are reverse-scored</b>); look up t-score</td>
+<td>All items must be answered in order to produce a valid score using the scoring tables</td>
+</tr>
+<tr>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/a451f9f0-40b7-4262-8ef2-e7be2ea004f2/APA-DSM5TR-Level2RepetitiveThoughtsAndBehaviorsAdult.pdf" target="_blank">Repetitive</a></td>
+<td>apa_2_repet_001-apa_2_repet_005</td>
+<td>sum all items; look up t-score</td>
+<td>One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
+</tr>
+<tr>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf" target="_blank">Personality</a></td>
+<td>apa_2_pers_001-apa_2_pers_025</td>
+<td>sum all items; look up t-score</td>
+<td>Six missing items, pro-rate ((raw score *25)/(number answered)). Seven or more missing items should not be scored</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+<p style="font-size: 1.0em;"><b><a href="https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures">Level 2</a> items and scoring overview, including HBCD adaptations:</b></p>
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>Level 2 Items</th>
+<th>Scoring</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="in-cell-link" href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Depression_Scoring_Manual_05Dec2023.pdf" target="_blank">Depression</a></td>
+<td>apa_2_depr_001-apa_2_depr_008</td>
+<td>sum all items; look up t-score</td>
+<td>All items must be answered in order to produce a valid score using the scoring tables</td>
+</tr>
+<tr>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/a56cc2a0-3818-4975-bbcb-4a047e1ffbea/APA-DSM5TR-Level2AngerAdult.pdf" target="_blank">Anger</a></td>
+<td>apa_2_anger_001-apa_2_anger_005</td>
+<td>sum all items; look up t-score</td>
+<td>One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
+</tr>
+<tr>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/c1783d55-268a-47b2-9932-a549b21c8d64/APA-DSM5TR-Level2ManiaAdult.pdf" target="_blank">Mania</a></td>
+<td>apa_2_mania_001-apa_2_mania_005</td>
+<td>sum all items; score of  &ge; 6 indicates high probability of mania</td>
+<td>One missing item, pro-rate ((raw score * 5)/(number answered)). Two or more missing items should not be scored</td>
+</tr>
+<tr>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/f284f967-ed9e-4754-99fc-b32765b1c4a0/APA-DSM5TR-Level2AnxietyAdult.pdf" target="_blank">Anxiety</a></td>
+<td>apa_2_anx_001-apa_2_anx_007</td>
+<td>sum all items; look up t-score</td>
+<td>Less than 3 missing items, pro-rate ((raw score *7)/(number answered)). Three or more missing items should not be scored</td>
+</tr>
+<tr>
+<td><a class="in-cell-link" href="https://www.psychiatry.org/getmedia/843c7fa5-9a40-4795-a25e-70208903d88c/APA-DSM5TR-Level2SomaticSymptomAdult.pdf" target="_blank">Somatic</a></td>
+<td>apa_2_somat_001-apa_2_somat_015</td>
+<td>sum all items; interpreted using the Interpretation Table for the PHQ-15 Somatic Symptom Severity scale</td>
+<td>Less than 4 missing items, pro-rate ((raw score *15)/(number answered)). Four or more missing items should not be scored</td>
+</tr>
+<tr>
+<td><a class="in-cell-link" href="https://healthmeasures.net/pdfs/PROMIS%20Short%20Form%20v1.0%20-%20Sleep%20Disturbance%20-%208a%2016Mar2020.pdf" target="_blank">Sleep</a></td>
+<td>apa_2_sleep_001-apa_2_sleep_008</td>
 <td>sum all items (<b>note that items 2 and 8 are reverse-scored</b>); look up t-score</td>
 <td>All items must be answered in order to produce a valid score using the scoring tables</td>
 </tr>
@@ -292,7 +360,7 @@ Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Pr
 <li><a href="https://healthmeasures.net/pdfs/PROMIS%20Short%20Form%20v1.0%20-%20Sleep%20Disturbance%20-%208a%2016Mar2020.pdf">Sleep Disturbance 8a Scoring Manual</a></li>
 <li><a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Personality Inventory for DSM-5 Brief</a></li>
 </ul>
-
+<!-- 
 ## References
 <div class="references">
 <p>Doss, R. A., &amp; Lowmaster, S. E. (2022). Validation of the DSM-5 Level 1 Cross-Cutting Symptom Measure in a Community  Sample. <em>Psychiatry Research</em>, <em>318</em>, 114935. <a href="https://doi.org/10.1016/j.psychres.2022.114935">https://doi.org/10.1016/j.psychres.2022.114935</a></p>
@@ -303,4 +371,4 @@ Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Pr
 <p>Massey, S. H., Reiss, D., Neiderhiser, J. M., Leve, L. D., Shaw, D. S., & Ganiban, J. M. (2016). Maternal personality traits associated with patterns of prenatal smoking and exposure: Implications for etiologic and prevention research. Neurotoxicology and Teratology, 53, 48–54. <a href="https://doi.org/10.1016/j.ntt.2015.11.010">https://doi.org/10.1016/j.ntt.2015.11.010</a></p>
 <p>Roche, M. J., Pincus, A. L., &amp; Cole, P. E. (2019). Linking dimensions and dynamics in psychopathology research: An example using DSM-5 instruments. <em>Journal of Research in Personality</em>, <em>82</em>, 103852. <a href="https://doi.org/https://doi.org/10.1016/j.jrp.2019.103852">https://doi.org/https://doi.org/10.1016/j.jrp.2019.103852</a></p>
 </div>
-
+ -->
