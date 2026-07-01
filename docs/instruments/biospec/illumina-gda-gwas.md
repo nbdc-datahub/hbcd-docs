@@ -1,5 +1,16 @@
 # Illumina Global Diversity GWAS Array 
 
+<!-- Imputed genotyping microarray data as vcf files are to be released in the next data release 
+
+Users can impute these data themselves on their own servers. One reminder; Note with data use agreements, you cannot upload genomic data to a server (e.g., topmed). There are a few different imputation approaches available - personally, we use minimac often - but there are other options. Minimac4 may be found here: https://github.com/statgen/Minimac4
+
+They would likely be interested in the following: Imputed data as vcf files are to be released in the next data release (should be first quarter of 2027).
+
+One other piece of info they may be interested in. There are no current immediate plans for additional genotyping in the sample, though we are looking avenues.
+
+Reminder. There are mothers and children here - would just like to remind everyone that there are related individuals in the sample.
+ -->
+
 Genomic data generated from the **Illumina Global Diversity Array (GDA GWAS)** is provided for both the birth parent and child. Samples are assayed from one sample, but may come from any visit (V01-V06) based on DNA yields.
 
 ## Release Data
