@@ -75,32 +75,35 @@ Health V1 & V2 instruments include 8 separate questionnaires administered in-per
 {{ data_warning_multi(instruments, ["chroncond", "erhosp", "vacc", "healthhx", "illness", "meds", "healthv2_inf", "healthv2_preg"]) | safe }}
 {{ issues_banner_macro() }}
 
+---
+
 ## Instrument Details
 
-### Health V1- Health History (Healthhx)
+#### Health V1- Health History (Healthhx)
 Pre-pregnancy and pregnancy health outcomes, including: gravidity and parity, height and weight, pregnancy intentions, use of assisted reproductive technology, start of prenatal care, prenatal vitamin or aspirin use, secondhand smoke.      
 
-### Health V1- Exposures & Vaccines (Vacc)
+#### Health V1- Exposures & Vaccines (Vacc)
 Vaccines in pregnancy, including receipt of common vaccines in pregnancy and trimester received.    
 
-### Health V1- Chronic Conditions (Chroncond)
+#### Health V1- Chronic Conditions (Chroncond)
 Information on chronic conditions and sexually transmitted infections (STIs) during pregnancy, including whether they are ongoing or resolved.      
 
-### Health V1- Illness (Illness)
+#### Health V1- Illness (Illness)
 Illness in pregnancy, including start and stop dates and whether the person had a fever.
 
-### Health V1- ER Admissions (ERhosp)
+#### Health V1- ER Admissions (ERhosp)
 ER visit(s) or hospitalization(s) during pregnancy, including occurrence(s) and reason(s).
 
-### Health V1- Medications (Meds)
+#### Health V1- Medications (Meds)
 Medications used during pregnancy (since last menstrual period), including prescription and over-the-counter medications. It includes details such as the name of the medication, its indication, frequency of use, and start/stop dates.
 
-### Health V2- Pregnancy (Healthv2 Preg)
+#### Health V2- Pregnancy (Healthv2 Preg)
 Health updates for the birth parent between enrollment and delivery, including: prenatal vitamin use, aspirin intake, infections and illnesses, vaccinations, medication use (ongoing and newly prescribed), pregnancy complications (e.g., gestational diabetes), labor and delivery details (e.g., delivery method, location, and hospital stay duration).
 
-### Health V2- Infancy (Healthv2 Inf)
+#### Health V2- Infancy (Healthv2 Inf)
 Delivery and birth outcomes, including: infant characteristics (birth weight & length, duration of hospital stay); newborn conditions (birth defects, genetic diagnoses); medical interventions including NICU admission and length of stay, intubation, adverse outcomes (e.g. bronchopulmonary dysplasia, congenital syphilis), medications (name, indication, status), healthcare access, specialist visits, and newborn hearing test results.
 
+##### Out-of-Range Filters
 Out-of-range values were filtered (i.e. changed to "n/a") for the following Health V2- Infancy fields:
 </p>
 <table class="compact-table-no-vertical-lines">
@@ -119,6 +122,7 @@ Out-of-range values were filtered (i.e. changed to "n/a") for the following Heal
 </tbody>
 </table>
 
+---
 
 {{ ref_banner_macro() }}
 <div class="collapsible-content">

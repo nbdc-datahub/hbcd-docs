@@ -8,43 +8,28 @@ def build_data_warning_multi(instruments, instrument_ids):
         if not inst:
             continue
 
-        warning_sections = ""
+        title = inst.get("warning1_title")
+        text = inst.get("warning1")
 
-        warning_nums = sorted(
-            int(k.replace("warning", ""))
-            for k in inst.keys()
-            if k.startswith("warning")
-            and k.replace("warning", "").isdigit()
-        )
+        # Skip completely empty warnings
+        if not title and not text:
+            continue
 
-        for i in warning_nums:
-            title = inst.get(f"warning{i}_title")
-            text = inst.get(f"warning{i}")
+        # Clean text only if present
+        if text:
+            text = text.replace("\n", "<br>")
+        else:
+            text = ""
 
-            if not title and not text:
-                continue
+        # Optional: avoid showing "None" as title
+        if not title:
+            title = ""
 
-            if text:
-                text = text.replace("\n", "<br>")
-
-            title_html = f"""
-<div class="info-section-title">
-    {title}
-</div>
-""" if title else ""
-
-            warning_sections += f"""
-<div class="info-section">
-{title_html}
-<p>{text or ""}</p>
-</div>
+        inst_html = f"""
+<div class="info-section-title">{title}</div>
+<div class="info-section">{text}</div>
 """
-        if warning_sections:
-            all_warning_sections += f"""
-<div class="instrument-warning-group">
-{warning_sections}
-</div>
-"""
+        all_warning_sections += inst_html
 
     if not all_warning_sections:
         return ""
