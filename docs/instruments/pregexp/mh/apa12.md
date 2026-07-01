@@ -9,11 +9,11 @@
 
 ## Instrument Details
 
-The HBCD mental health screening instrument is a highly sensitive screening tool for use in community samples. It has two levels, adapted from DSM-5 Self-Rated [Level 1](https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf) and [Level 2](https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures) Cross-Cutting Symptom Measures:
+The HBCD mental health screening instrument is a highly sensitive screening tool for use in community samples. It has two levels, adapted from DSM-5 Self-Rated Level 1 and Level 2 Cross-Cutting Symptom Measures:
 
 <img src="../DSM-5Level2Cross-CuttingSymptomMeasures.png" width="90%" height="auto" class="center">
 
-**Level 1** includes 1 - 2 questions for each of the first 11 mental health domains displayed in the table above (*Depression* through *Dissociation*). When symptoms were reported for Level 1, participants were subsequently administered corresponding **Level 2** measures, which asked about additional symptoms associated with the following 8 mental health domains: *Depression*, *Anger*, *Mania*, *Anxiety*, *Somatic Symptoms*, *Sleep*, *Repetitive Behavior*, and *Personality*. 
+**Level 1** includes 1 - 2 questions for each of the first 11 mental health domains displayed in the table above (*Depression* → *Dissociation*). When symptoms were reported for Level 1, participants were subsequently administered corresponding **Level 2** measures, which asked about additional symptoms associated with the following 8 mental health domains: *Depression*, *Anger*, *Mania*, *Anxiety*, *Somatic Symptoms*, *Sleep*, *Repetitive Behavior*, and *Personality*. 
 
 <div id="table-summary" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
@@ -26,7 +26,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><i>*Unless specified otherwise, Level 2 measures are only administered when symptoms are reported for Level 1</i></p>
+<p>Unless specified otherwise, Level 2 measures are only administered when symptoms are reported for Level 1.</p>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -42,7 +42,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td>Participants proceed to Level 2 irrespective of Level 1 answers;<br>
- Level 2 measures replaced with PROMIS-SF v1.0 <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Depression 8a questionnaire</a>;<br>
+ Level 2 measures replaced with PROMIS-SF v1.0 Depression 8a questionnaire;<br>
  Clinical alert is triggered if responses (items from 'I felt worthless' to 'I felt that nothing could cheer me up') exceed threshold of 32</td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ The HBCD mental health screening instrument is a highly sensitive screening tool
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td style="text-align:center;"><i class="fa-solid fa-check" style="color:green;"></i></td>
 <td>
- Level 2 symptom measures replaced with PROMIS-SF v1.0 <a href="https://heal.nih.gov/files/CDEs/2024-07/promis-sleep-disturbance-8a-crf.pdf">Sleep Disturbance 8a</a></td>
+ Level 2 symptom measures replaced with PROMIS-SF v1.0 <a href="https://healthmeasures.net/pdfs/PROMIS%20Short%20Form%20v1.0%20-%20Sleep%20Disturbance%20-%208a%2016Mar2020.pdf">Sleep Disturbance 8a</a></td>
 </tr>
 <tr>
 <td>Memory</td>
@@ -128,7 +128,7 @@ Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Pr
 
 {{ scoring_banner_macro() }}
 <div class="collapsible-content">
-<p><b><a href="https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1</a> items (scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe) and gating overview, including HBCD adaptations:</b></p>
+<p>Level 1 items (scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe) and gating, including HBCD adaptations:</p>
 <table class="compact-table-no-vertical-lines">
 <tfoot><tr><td colspan="4"><b>*</b> <i>All items scored as 0=none, 1=slight, 2=mild, 3=moderate, 4=severe</i></td></tr></tfoot>
 <thead>
@@ -263,7 +263,7 @@ Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Pr
 <td>Less than 4 missing items, pro-rate ((raw score *15)/(number answered)). Four or more missing items should not be scored</td>
 </tr>
 <tr>
-<td><a class="in-cell-link" href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Sleep_Scoring_Manual.pdf" target="_blank">Sleep</a></td>
+<td><a class="in-cell-link" href="https://healthmeasures.net/pdfs/PROMIS%20Short%20Form%20v1.0%20-%20Sleep%20Disturbance%20-%208a%2016Mar2020.pdf" target="_blank">Sleep</a></td>
 <td>apa_2_sleep_001-apa_2_sleep_008</td>
 <td>sum all items (<b>note that items 2 and 8 are reverse-scored</b>); look up t-score</td>
 <td>All items must be answered in order to produce a valid score using the scoring tables</td>
@@ -288,8 +288,8 @@ Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Pr
 <ul>
 <li><a href="https://www.psychiatry.org/getmedia/e0b4b299-95b3-407b-b8c2-caa871ca218d/APA-DSM5TR-Level1MeasureAdult.pdf">Level 1 Cross-Cutting Symptom Measures</a> </li>
 <li><a href="https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures">Level 2 Cross-Cutting Symptom Measures</a></li>
-<li><a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Depression_Scoring_Manual_05Dec2023.pdf">Depression 8a Questionnaire Scoring Manual</a> </li>
-<li><a href="https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Sleep_Scoring_Manual.pdf">Sleep Disturbance 8a Scoring Manual</a></li>
+<li><a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Depression 8a Questionnaire Scoring Manual</a> </li>
+<li><a href="https://healthmeasures.net/pdfs/PROMIS%20Short%20Form%20v1.0%20-%20Sleep%20Disturbance%20-%208a%2016Mar2020.pdf">Sleep Disturbance 8a Scoring Manual</a></li>
 <li><a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM5_The-Personality-Inventory-For-DSM-5-Brief-Form-Adult.pdf">Personality Inventory for DSM-5 Brief</a></li>
 </ul>
 
@@ -304,12 +304,3 @@ Includes the <a href="https://www.psychiatry.org/File%20Library/Psychiatrists/Pr
 <p>Roche, M. J., Pincus, A. L., &amp; Cole, P. E. (2019). Linking dimensions and dynamics in psychopathology research: An example using DSM-5 instruments. <em>Journal of Research in Personality</em>, <em>82</em>, 103852. <a href="https://doi.org/https://doi.org/10.1016/j.jrp.2019.103852">https://doi.org/https://doi.org/10.1016/j.jrp.2019.103852</a></p>
 </div>
 
-
-
-
-
-<!-- {{ warning_banner_macro() }}
-<div class="collapsible-content">
-<p><strong>Consideration of Mental Health Symptoms Experienced During Pregnancy</strong><br>
-The co-occurrence of psychiatric symptoms and substance use during pregnancy is well-documented (<a href="https://doi.org/10.1111/j.1521-0391.2010.00110.x">Massey et al., 2011</a>, <a href="https://doi.org/10.1016/j.addbeh.2012.04.002">Massey et al., 2012</a>). Phenotypic risk in birthing parents may affect offspring neurodevelopment through both prenatal and postnatal mechanisms, beyond direct exposure alone (<a href="https://doi.org/10.1007/s10519-015-9762-2">Estabrook et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2015.11.010">Massey et al., 2016</a>, <a href="https://doi.org/10.1016/j.ntt.2018.02.003">Massey et al., 2018</a>). These factors may confound associations between exposures and neuroimaging or neurodevelopmental outcomes, but they also represent malleable targets for prevention and early intervention. When possible, incorporating parental mental health symptoms as covariates offers a robust strategy to account for these confounding influences.</p> 
-</div> -->
