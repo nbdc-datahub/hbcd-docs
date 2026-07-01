@@ -1,6 +1,43 @@
 # Child Demographics
 
 {{ readme(instruments.demographics_ch) }}
+{{ alert_warning(instruments.demographics_ch) }}
+{{ data_warning(instruments.demographics_ch) }}
+{{ issues_banner_macro() }}
+
+## Instrument Details
+
+<p>
+<div class="banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">See <a href="../../demo/basicdemo/" target="_blank">Basic Demographics</a> for additional demographics variables derived from HBCD Demographics and administrative records collected during study enrolment/screening.</span>
+</div>
+</p>
+
+Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. **Beginning at Visit 4, the study includes a child demographic form** that captures detailed information about the child’s background, family structure, and household environment (see [Sources for Demographic Protocols & Modifications](demo-cg.md#demo-tables)). This includes:
+
+ - Child's sex at birth
+ - Child's race and ethnicity (with multiple selections allowed to capture diverse identities)
+ - Respondent's relationship to the child, legal guardianship status, and whether the respondent lives with the child (including the number of days per month they share residence)
+ - Detailed household composition, including the number of adults and children in the home and a household roster listing all individuals who live with the child at least two nights per week (including their age and sex)
+ - Total household income for the past year (if the child resides in more than one household, respondents are asked to provide the average household income across residences)
+
+These data are designed to support a nuanced analysis of the child’s social and family context within the HBCD study. See [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the HBCD Demographics survey.
+
+{{ hbcd_mods(instruments.demographics_ch) }}
+{{ scoring(instruments.demographics_ch) }}
+
+## References
+
+<div class="references">
+  <p>Barch, D. M., Albaugh, M. D., Avenevoli, S., Chang, L., Clark, D. B., Glantz, M. D., Hudziak, J. J., Jernigan, T. L., Tapert, S. F., Yurgelun-Todd, D., Alia-Klein, N., Potter, A. S., Paulus, M. P., Prouty, D., Zucker, R. A., & Sher, K. J. (2018). Demographic, physical and mental health assessments in the adolescent brain and cognitive development study: Rationale and description. <em>Developmental Cognitive Neuroscience</em>, 32, 55–66. <a href="https://doi.org/10.1016/j.dcn.2017.10.010" target="_blank">https://doi.org/10.1016/j.dcn.2017.10.010</a></p>
+  <p>Cioffredi, L.-A., Yerby, L. G., Burris, H. H., Cole, K. M., Engel, S. M., Murray, T. M., Slopen, N., Volk, H. E., Acheson, A., & HBCD Social and Environmental Determinants Working Group. (2024). Assessing prenatal and early childhood social and environmental determinants of health in the HEALthy Brain and Child Development Study (HBCD). <em>Developmental Cognitive Neuroscience</em>, 69(101429), 101429. <a href="https://doi.org/10.1016/j.dcn.2024.101429" target="_blank">https://doi.org/10.1016/j.dcn.2024.101429</a></p>
+  <p>Federal Register. (2023, January 27). Initial Proposals For Updating OMB’s Race and Ethnicity Statistical Standards (<a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards" target="_blank">Document No. 2023-01635</a>). 88 FR 5375-5384.</p>
+  <p>Jones, C. P., Truman, B. I., Elam-Evans, L. D., Jones, C. A., Jones, C. Y., Jiles, R., Rumisha, S. F., & Perry, G. S. (2008). Using “socially assigned race” to probe white advantages in health status. <em>Ethnicity & Disease</em>, 18(4), 496–504. <a href="https://www.ncbi.nlm.nih.gov/pubmed/19157256" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/19157256</a></p>
+</div>
+
+
+
 
 <!-- <td><b>Administration</b></td>
 <td>
@@ -9,7 +46,10 @@
   <b>Method</b>: HBCD Study Staff, in person (10 min estimated duration)
 </td> -->
 
-{{ alert_banner_macro() }}
+
+
+
+<!-- {{ alert_banner_macro() }}
 <div class="collapsible-content">
 <p>When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables such as race, ethnicity, country of origin, and socioeconomic data, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.</p> 
 <p>Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race and/or ethnicity variables as proxies for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.</p>
@@ -32,36 +72,4 @@ The item “How many days per month do you live with the child?” (<code>sed_bm
 <hr>
 <p><b>Household Roster</b><br>
 For household roster variables, respondents were instructed to <b>exclude the main child</b> when reporting the number of people living in the household (e.g., <a href="../demo-ch-table/#household-specific-details" target="_blank">item 29</a>). Metadata for relevant fields (<code>sed_bm_demo_child__roster_002__02__*</code>) will be updated in the future to make this instruction explicit. This includes fields describing the total number of children younger than 17, the total number of people in the household, and corresponding fields for a second household, if applicable.</p>
-</div>
-
-{{ issues_banner_macro() }}
-
-## Instrument Details
-
-<p>
-<div class="banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See <a href="../../demo/basicdemo/" target="_blank">Basic Demographics</a> for additional demographics variables derived from HBCD Demographics and administrative records collected during study enrolment/screening.</span>
-</div>
-</p>
-
-Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. **Beginning at Visit 4, the study includes a child demographic form** that captures detailed information about the child’s background, family structure, and household environment (see [Sources for Demographic Protocols & Modifications](demo-cg.md#demo-tables)). This includes:
-
- - Child's sex at birth
- - Child's race and ethnicity (with multiple selections allowed to capture diverse identities)
- - Respondent's relationship to the child, legal guardianship status, and whether the respondent lives with the child (including the number of days per month they share residence)
- - Detailed household composition, including the number of adults and children in the home and a household roster listing all individuals who live with the child at least two nights per week (including their age and sex)
- - Total household income for the past year (if the child resides in more than one household, respondents are asked to provide the average household income across residences)
-
-These data are designed to support a nuanced analysis of the child’s social and family context within the HBCD study. See [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the HBCD Demographics survey.
-
-## References
-
-<div class="references">
-  <p>Barch, D. M., Albaugh, M. D., Avenevoli, S., Chang, L., Clark, D. B., Glantz, M. D., Hudziak, J. J., Jernigan, T. L., Tapert, S. F., Yurgelun-Todd, D., Alia-Klein, N., Potter, A. S., Paulus, M. P., Prouty, D., Zucker, R. A., & Sher, K. J. (2018). Demographic, physical and mental health assessments in the adolescent brain and cognitive development study: Rationale and description. <em>Developmental Cognitive Neuroscience</em>, 32, 55–66. <a href="https://doi.org/10.1016/j.dcn.2017.10.010" target="_blank">https://doi.org/10.1016/j.dcn.2017.10.010</a></p>
-  <p>Cioffredi, L.-A., Yerby, L. G., Burris, H. H., Cole, K. M., Engel, S. M., Murray, T. M., Slopen, N., Volk, H. E., Acheson, A., & HBCD Social and Environmental Determinants Working Group. (2024). Assessing prenatal and early childhood social and environmental determinants of health in the HEALthy Brain and Child Development Study (HBCD). <em>Developmental Cognitive Neuroscience</em>, 69(101429), 101429. <a href="https://doi.org/10.1016/j.dcn.2024.101429" target="_blank">https://doi.org/10.1016/j.dcn.2024.101429</a></p>
-  <p>Federal Register. (2023, January 27). Initial Proposals For Updating OMB’s Race and Ethnicity Statistical Standards (<a href="https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards" target="_blank">Document No. 2023-01635</a>). 88 FR 5375-5384.</p>
-  <p>Jones, C. P., Truman, B. I., Elam-Evans, L. D., Jones, C. A., Jones, C. Y., Jiles, R., Rumisha, S. F., & Perry, G. S. (2008). Using “socially assigned race” to probe white advantages in health status. <em>Ethnicity & Disease</em>, 18(4), 496–504. <a href="https://www.ncbi.nlm.nih.gov/pubmed/19157256" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/19157256</a></p>
-</div>
-
-
+</div> -->

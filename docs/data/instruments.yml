@@ -2786,7 +2786,7 @@ foodins:
 aces:
   measure: Adverse Childhood Experiences
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
+  automation_complete_except_scoring: 'yes'
   notes: aces & ped aces
   version1: ACEs
   version2: Pediatric ACEs
@@ -2847,60 +2847,6 @@ aces:
   ARCHIVE-administration: null
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-child_specific: 'No'
-nan:
-  measure: Pediatric Adverse Childhood Experiences
-  domain: null
-  automation_complete_except_scoring: null
-  notes: null
-  version1: null
-  version2: null
-  acronym: null
-  full_name: null
-  table_name: null
-  table_version1: null
-  table_version2: null
-  construct: null
-  concatenated: null
-  visits: null
-  visits_version1: null
-  visits_version2: null
-  assessment_type: null
-  respondent_category: null
-  administration: null
-  admin_notes: null
-  duration: null
-  qc: null
-  hbcd_mods1_title: null
-  hbcd_mods1: null
-  hbcd_mods2_title: null
-  hbcd_mods2: null
-  hbcd_mods3_title: null
-  hbcd_mods3: null
-  hbcd_mods4_title: null
-  hbcd_mods4: null
-  hbcd_mods5_title: null
-  hbcd_mods5: null
-  scoring: null
-  alert1_title: null
-  alert1: null
-  alert2_title: null
-  alert2: null
-  alert3_title: null
-  alert3: null
-  warning1_title: null
-  warning1: null
-  warning2_title: null
-  warning2: null
-  warning3_title: null
-  warning3: null
-  warning4_title: null
-  warning4: null
-  warning5_title: null
-  warning5: null
-  ARCHIVE-type: null
-  ARCHIVE-administration: Self-administered in-person
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-child_specific: 'Yes'
 bfy:
   measure: Baby's First Years
   domain: Social & Environmental Determinants
@@ -2965,7 +2911,7 @@ bfy:
 demographics_ch:
   measure: Child Demographics
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
+  automation_complete_except_scoring: 'yes'
   notes: null
   version1: null
   version2: null
@@ -2981,6 +2927,102 @@ demographics_ch:
   visits_version2: null
   assessment_type: Questionnaire
   respondent_category: Parent on Child
+  administration: In-person
+  admin_notes: null
+  duration: 10 min
+  qc: 'Data dashboard was monitored for variable missingness, coding errors, and data
+    consistency. High missingness was noted for income: this is in line with expectations.'
+  hbcd_mods1_title: null
+  hbcd_mods1: null
+  hbcd_mods2_title: null
+  hbcd_mods2: null
+  hbcd_mods3_title: null
+  hbcd_mods3: null
+  hbcd_mods4_title: null
+  hbcd_mods4: null
+  hbcd_mods5_title: null
+  hbcd_mods5: null
+  scoring: null
+  alert1_title: null
+  alert1: When using HBCD data, all data users must agree to responsible use as described
+    in the DUC. When conceptualizing studies, analyzing data, and communicating findings
+    from studies that use variables such as race, ethnicity, country of origin, and
+    socioeconomic data, it is critical to consider strategies to avoid stigmatization
+    of any groups and perpetuating harmful biases.
+  alert2_title: null
+  alert2: Race and ethnicity are collected as a part of the HBCD protocol to reflect
+    social experiences (i.e., representing social constructs), and should not be conceptualized
+    as biological, natural, intrinsic, or fixed categories of people. In addition,
+    researchers sometimes use race and/or ethnicity variables as proxies for unmeasured
+    social experiences or environmental exposures. HBCD measures a wide variety of
+    social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity
+    should not be used as a proxy for measured variables.
+  alert3_title: null
+  alert3: null
+  warning1_title: Participant-Reported Challenges
+  warning1: Some participants reported challenges in answering certain questions,
+    such as those related to race and ethnicity (e.g. options did not capture how
+    they choose to identify their child).
+  warning2_title: Withheld Variables/Variable Data With Small Cell Sizes
+  warning2: 'Some variables do not contain any data in the current data release (e.g.,
+    household roster response options allowed for more household members than were
+    reported by the respondents who completed V04 or V06 to date). These variables
+    are currently being retained, as their relevance may change as data collection
+    proceeds.
+
+
+    Some variables in this release have small cell sizes (between 1 and ten people
+    per cell). As a condition of using these data, specified in the DUC, you agree
+    not to identify any individual from whom data was obtained and not to identify
+    their relatives. You agree to a minimum cell threshold of 10 in any public reporting
+    of the data (publications or presentations).'
+  warning3_title: Branching Logic
+  warning3: There are several items with branching logic; please consult the following
+    resources for each questionnaire to see question flow and data dictionaries for
+    information on skip patterns. Topics with branching logic include <a href="../images/household-relationships.png"
+    target="_blank">Household Roster</a> and Child Custody/Guardianship (see <a href="../images/child-custody-branching-logic.png"
+    target="_blank">items 15 and 16</a>). See <a href="../demo-ch-table" target="_blank">Child
+    Demographics Branching Logic</a> for full branching logic details.
+  warning4_title: Incorrect Interpretation of Days Per Month Living with Child Item
+  warning4: The item “How many days per month do you live with the child?” (<code>sed_bm_demo_child__relat_002__01</code>)
+    appears to have been misunderstood by some participants. An unexpectedly high
+    number of respondents entered “7,” which suggests that they may have interpreted
+    the question as referring to days per week rather than per month. The question
+    formatting has since been revised to emphasize “per month” and to present 30 as
+    the first response option. Users should interpret earlier responses (in V04) with
+    caution, as some values may reflect misunderstanding of the reference period.
+  warning5_title: Household Roster
+  warning5: For household roster variables, respondents were instructed to <b>exclude
+    the main child</b> when reporting the number of people living in the household
+    (e.g., <a href="../demo-ch-table/#household-specific-details" target="_blank">item
+    29</a>). Metadata for relevant fields (<code>sed_bm_demo_child__roster_002__02__*</code>)
+    will be updated in the future to make this instruction explicit. This includes
+    fields describing the total number of children younger than 17, the total number
+    of people in the household, and corresponding fields for a second household, if
+    applicable
+  ARCHIVE-type: Parent Interview
+  ARCHIVE-administration: null
+  ARCHIVE-respondent: null
+  ARCHIVE-child_specific: 'Yes'
+demographics:
+  measure: Demographics (Adult)
+  domain: Social & Environmental Determinants
+  automation_complete_except_scoring: null
+  notes: null
+  version1: null
+  version2: null
+  acronym: null
+  full_name: Demographics (Adult)
+  table_name: sed_bm_demo
+  table_version1: null
+  table_version2: null
+  construct: Demographics (Birth Parent/Alternative Caregiver)
+  concatenated: null
+  visits: V01, V04, V06
+  visits_version1: null
+  visits_version2: null
+  assessment_type: Questionnaire
+  respondent_category: Parent on Self
   administration: In-person
   admin_notes: null
   duration: 10 min
@@ -3015,12 +3057,96 @@ demographics_ch:
   warning5: null
   ARCHIVE-type: Parent Interview
   ARCHIVE-administration: null
+  ARCHIVE-respondent: Birth Parent or Primary Caregiver
+  ARCHIVE-child_specific: 'No'
+demo:
+  measure: Demographics (Adult / Child)
+  domain: Social & Environmental Determinants
+  automation_complete_except_scoring: null
+  notes: Adult & Child demo on same page
+  version1: Adult
+  version2: Child
+  acronym: null
+  full_name: Demographics / Demographics (Child)
+  table_name: null
+  table_version1: sed_bm_demo
+  table_version2: sed_bm_demo_child
+  construct: Demographics
+  concatenated: null
+  visits: null
+  visits_version1: V01, V04, V06
+  visits_version2: V04, V06
+  assessment_type: Questionnaire
+  respondent_category: Parent on Self / Child
+  administration: In-person
+  admin_notes: null
+  duration: 10 min
+  qc: 'Data dashboard was monitored for variable missingness, coding errors, and data
+    consistency. High missingness was noted for income: this is in line with expectations.'
+  hbcd_mods1_title: null
+  hbcd_mods1: null
+  hbcd_mods2_title: null
+  hbcd_mods2: null
+  hbcd_mods3_title: null
+  hbcd_mods3: null
+  hbcd_mods4_title: null
+  hbcd_mods4: null
+  hbcd_mods5_title: null
+  hbcd_mods5: null
+  scoring: null
+  alert1_title: null
+  alert1: When using HBCD data, all data users must agree to responsible use as described
+    in the DUC. When conceptualizing studies, analyzing data, and communicating findings
+    from studies that use variables such as race, ethnicity, country of origin, and
+    socioeconomic data, it is critical to consider strategies to avoid stigmatization
+    of any groups and perpetuating harmful biases.
+  alert2_title: null
+  alert2: Race and ethnicity are collected as a part of the HBCD protocol to reflect
+    social experiences (i.e., representing social constructs), and should not be conceptualized
+    as biological, natural, intrinsic, or fixed categories of people. In addition,
+    researchers sometimes use race and/or ethnicity variables as proxies for unmeasured
+    social experiences or environmental exposures. HBCD measures a wide variety of
+    social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity
+    should not be used as a proxy for measured variables.
+  alert3_title: null
+  alert3: null
+  warning1_title: Participant-Reported Challenges
+  warning1: Some participants reported challenges in answering certain questions,
+    such as those related to race and ethnicity (e.g. options did not capture how
+    they choose to identify their child).
+  warning2_title: Withheld Variables/Variable Data With Small Cell Sizes
+  warning2: 'Some variables do not contain any data in the current data release (e.g.,
+    household roster response options allowed for more household members than were
+    reported by the respondents who completed V04 or V06 to date). These variables
+    are currently being retained, as their relevance may change as data collection
+    proceeds.
+
+
+    Some variables in this release have small cell sizes (between 1 and ten people
+    per cell). As a condition of using these data, specified in the DUC, you agree
+    not to identify any individual from whom data was obtained and not to identify
+    their relatives. You agree to a minimum cell threshold of 10 in any public reporting
+    of the data (publications or presentations).'
+  warning3_title: Incorrect Interpretation of Days Per Month Living with Child Item
+  warning3: The item “How many days per month do you live with the child?” (<code>sed_bm_demo_child__relat_002__01</code>)
+    appears to have been misunderstood by some participants. An unexpectedly high
+    number of respondents entered “7,” which suggests that they may have interpreted
+    the question as referring to days per week rather than per month. The question
+    formatting has since been revised to emphasize “per month” and to present 30 as
+    the first response option. Users should interpret earlier responses (in V04) with
+    caution, as some values may reflect misunderstanding of the reference period.
+  warning4_title: null
+  warning4: null
+  warning5_title: null
+  warning5: null
+  ARCHIVE-type: null
+  ARCHIVE-administration: null
   ARCHIVE-respondent: null
-  ARCHIVE-child_specific: 'Yes'
+  ARCHIVE-child_specific: null
 cabr_sf:
   measure: Composite Abuse Scale Revised - Short Form
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
+  automation_complete_except_scoring: 'yes'
   notes: null
   version1: null
   version2: null
@@ -3088,8 +3214,8 @@ cabr_sf:
 employment:
   measure: Current Employment
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
-  notes: null
+  automation_complete_except_scoring: rich text (scoring)
+  notes: rich text hbcd mods
   version1: null
   version2: null
   acronym: null
@@ -3139,61 +3265,6 @@ employment:
   ARCHIVE-administration: Self-administered in-person or remotely
   ARCHIVE-respondent: Birth Parent or Primary Caregiver
   ARCHIVE-child_specific: 'No'
-demographics:
-  measure: Demographics (Adult)
-  domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
-  notes: null
-  version1: null
-  version2: null
-  acronym: null
-  full_name: Demographics (Adult)
-  table_name: sed_bm_demo
-  table_version1: null
-  table_version2: null
-  construct: Demographics (Birth Parent/Alternative Caregiver)
-  concatenated: null
-  visits: V01, V04, V06
-  visits_version1: null
-  visits_version2: null
-  assessment_type: Questionnaire
-  respondent_category: Parent on Self
-  administration: In-person
-  admin_notes: null
-  duration: 10 min
-  qc: 'Data dashboard was monitored for variable missingness, coding errors, and data
-    consistency. High missingness was noted for income: this is in line with expectations.'
-  hbcd_mods1_title: null
-  hbcd_mods1: null
-  hbcd_mods2_title: null
-  hbcd_mods2: null
-  hbcd_mods3_title: null
-  hbcd_mods3: null
-  hbcd_mods4_title: null
-  hbcd_mods4: null
-  hbcd_mods5_title: null
-  hbcd_mods5: null
-  scoring: null
-  alert1_title: null
-  alert1: null
-  alert2_title: null
-  alert2: null
-  alert3_title: null
-  alert3: null
-  warning1_title: null
-  warning1: null
-  warning2_title: null
-  warning2: null
-  warning3_title: null
-  warning3: null
-  warning4_title: null
-  warning4: null
-  warning5_title: null
-  warning5: null
-  ARCHIVE-type: Parent Interview
-  ARCHIVE-administration: null
-  ARCHIVE-respondent: Birth Parent or Primary Caregiver
-  ARCHIVE-child_specific: 'No'
 discr:
   measure: Experiences of Unfair Treatment
   domain: Social & Environmental Determinants
@@ -3218,10 +3289,24 @@ discr:
   duration: 3 min
   qc: Data dashboard monitored for variable missingness, possible coding errors, and
     data consistency.
-  hbcd_mods1_title: null
-  hbcd_mods1: null
-  hbcd_mods2_title: null
-  hbcd_mods2: null
+  hbcd_mods1_title: Modifications to Everyday Discrimination Scale
+  hbcd_mods1: "Instruction text was modified to: \"In the following questions, we\
+    \ are interested in your perceptions about the way other people have treated you.\
+    \  Can you tell me if any of the following has ever happened to you?\". Response\
+    \ options (\"main reason for these experiences\") were modified as follows:\n\
+    <ul>\n  <li>Standardized capitalization (e.g., \"Your ancestry or national origin\"\
+    \ → \"Your Ancestry or National Origin\").</li>\n  <li>Replaced “A physical disability”\
+    \ with “A Disability.”</li>\n  <li>Added options: Substance Use / Addiction, Don't\
+    \ Know, and Decline to Answer as well as the following based on participant feedback\
+    \ (01/2024): Mental Health or Neurodivergence, Physical Health, A Reason Not Listed</li>\n\
+    \  <li>Removed: “Your shade of skin color,” “Your tribe,” and “Other (SPECIFY).”</li>\n\
+    </ul>"
+  hbcd_mods2_title: Scoring Changes
+  hbcd_mods2: The follow-up question "What do you think is the main reason for these
+    experiences?" was asked once after completion of each scale to capture the main
+    reasons for any items marked “a few times a year” (Everyday Discrimination Scale)
+    or “yes” (Major Experiences of Discrimination). The original logic asked this
+    question a single time at the end of each individual scale.
   hbcd_mods3_title: null
   hbcd_mods3: null
   hbcd_mods4_title: null
@@ -3517,8 +3602,8 @@ lead:
 ehits:
   measure: Partner Dynamics Extended
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
-  notes: null
+  automation_complete_except_scoring: rich text (scoring)
+  notes: both mods and scoring
   version1: null
   version2: null
   acronym: eHITS
@@ -3577,7 +3662,7 @@ ehits:
 nbhsaf:
   measure: PhenX+ Neighborhood Safety
   domain: Social & Environmental Determinants
-  automation_complete_except_scoring: null
+  automation_complete_except_scoring: 'yes'
   notes: null
   version1: null
   version2: null

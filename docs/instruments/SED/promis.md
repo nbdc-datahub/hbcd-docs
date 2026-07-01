@@ -1,7 +1,5 @@
 <!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE - update Scoring section -->
 
-
-
 # PROMIS Perceived Stress/Social Support
 
 {{ readme(instruments.promis) }}

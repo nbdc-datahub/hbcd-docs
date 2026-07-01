@@ -3,7 +3,6 @@
 {{ readme(instruments.tic) }}
 {{ alert_warning(instruments.tic) }}
 {{ data_warning(instruments.tic) }}
-
 {{ issues_banner_macro() }}
 
 ## Instrument Details
@@ -12,7 +11,6 @@ The **Transitions in Care (TIC) Screener** captures children’s transitions to 
 
 {{ hbcd_mods(instruments.tic) }}
 {{ scoring(instruments.tic) }}
-
 
 ## References
 

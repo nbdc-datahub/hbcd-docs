@@ -11,7 +11,6 @@ The eHITS is a self-administered 5 question Likert scale screener for experience
 <!-- {{ hbcd_mods(instruments.ehits) }}
 {{ scoring(instruments.ehits) }} -->
 
-
 {{ mods_banner_macro() }}
 <div class="collapsible-content">
 <p>Various research groups made minor word changes. Sherin and colleagues developed the original instrument, HITS, published in 1998. Chan and colleagues expanded HITS to include a question regarding forced sexual activity <a href="https://doi.org/10.1177/102490791001700202">Chan et al. 2010</a>. To acknowledge these changes in future publications, we recommend including the exact verbiage of the HBCD-version of the item in the methods section of any reports, presentations, and manuscripts.</p>

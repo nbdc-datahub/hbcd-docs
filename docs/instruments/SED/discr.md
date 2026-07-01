@@ -1,7 +1,3 @@
-<!-- ADMIN NOTE: ALERT - MANUALLY STYLED PAGE - HBCD mods section -->
-
-
-
 # Experiences of Unfair Treatment
 
 {{ readme(instruments.discr) }}
@@ -17,21 +13,8 @@ This [PhenX+ Toolkit Discrimination](https://www.phenxtoolkit.org/protocols/view
 {{ scoring(instruments.discr) }}
 
 
-{{ mods_banner_macro() }}
-<div class="collapsible-content">
-<p><b>Modifications to Everyday Discrimination Scale</b><br>
-Instruction text was modified to: "In the following questions, we are interested in your perceptions about the way other people have treated you.  Can you tell me if any of the following has ever happened to you?".<br>
-<br>
-Response options ("main reason for these experiences") were modified as follows:</p>
-<ul>
-  <li>Standardized capitalization (e.g., "Your ancestry or national origin" → "Your Ancestry or National Origin").</li>
-  <li>Replaced “A physical disability” with “A Disability.”</li>
-  <li>Added options: Substance Use / Addiction, Don't Know, and Decline to Answer as well as the following based on participant feedback (01/2024): Mental Health or Neurodivergence, Physical Health, A Reason Not Listed</li>
-  <li>Removed: “Your shade of skin color,” “Your tribe,” and “Other (SPECIFY).”</li>
-</ul>
-<p><b>Scoring Changes</b><br>
-The follow-up question "What do you think is the main reason for these experiences?" was asked once after completion of each scale to capture the main reasons for any items marked “a few times a year” (Everyday Discrimination Scale) or “yes” (Major Experiences of Discrimination). The original logic asked this question a single time at the end of each individual scale.</p>
-</div>
+
+
 
 <!-- <table class="table-no-vertical-lines">
 <thead>
