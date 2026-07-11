@@ -285,7 +285,7 @@ There are four options the Study Navigator can select to indicate actions taken,
 </div>
 
 ## Quality Control
-This form is under development for HBCD. Data was collected with guidance using the <a href="../SNContactFormCompanionGuideOutline_Pilot_V4-HH.pdf" target="_blank">HBCD Study Navigation Contact Form Guide</a>.
+This form is under development for HBCD. Data was collected with guidance using the [HBCD Study Navigation Contact Form Guide](../../resources/SNContactFormCompanionGuideOutline_Pilot_V4-HH.pdf).
 Data review and cleaning has occurred 3 times: September 2024, February 2025, and November 2025. Minor updates to the form and the form guide were completed in September 2024 and October 2025.
 
 ## References
