@@ -1,7 +1,7 @@
 <style>
 .wy-nav-content {
-    width: 100% !important;
-    max-width: 100% !important;
+    width: 95% !important;
+    max-width: 95% !important;
     flex-grow: 1 !important;
 }
 .pr-pill {
@@ -41,7 +41,7 @@
 
 The tables below summarize known issues affecting the current data release and pending updates across study instruments. Entries are organized by domain and include the expected release in which each fix or update will be implemented. This page is updated regularly as new issues are identified and updates are planned.
 
-To ask a question or report an issue, please submit a ticket through the [Help Center in the NBDC Data Access Platform →](https://nbdc.lassoinformatics.com/issue-tracker)
+To ask a question or report an issue, please submit a ticket through the [Help Center in the NBDC Data Access Platform](https://nbdc.lassoinformatics.com/issue-tracker).
 
 ---
 
@@ -95,12 +95,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>MAPS-TL</td>
-<td>Notes appear in the score field in both versions (Infant/Toddlerhood) and will be moved to a separate field.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>MAPS-TL (&lt;1yr)</td>
 <td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
@@ -114,8 +108,14 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ECBQ</td>
-<td>Change coding for "Does not apply" to 8 to match the IBQ-R.</td>
+<td>Change 'Does not apply' index value from '0' to '8' to match the IBQ-R.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ECHO</td>
+<td>Addition of the Early Child Care and Education</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -125,8 +125,20 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>MAPS-EASI</td>
+<td>Addition of the MAPS-EASI- Toddler</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>MAPS-TL (Tod)</td>
 <td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>MCHAT</td>
+<td>Addition of the Modified Checklist for Autism in Toddlers</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table>
@@ -164,9 +176,15 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Blood</td>
+<td>Inclusion of Blood Spot Card Results data from USDTL.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Olink</td>
 <td>Add Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -192,19 +210,31 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
+<td>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Basic Demo</td>
+<td>The <code>screen_race_multi__*</code> variables are almost entirely coded as '0' and should not be used for analysis. Users interested in race and ethnicity information should instead use the corresponding derived ACS race and ethnicity variable. Values will be corrected in a future release.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Basic Demo</td>
 <td>Remove internal <code>recruitment_site</code> categories only present in data dictionary (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Basic Demo</td>
-<td>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
+<td>TLFB</td>
+<td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a></td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>RESTRUCTURE</td>
-<td>The Demographics domain includes 2 tables with derived information grouped into visit-specific data (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/">Visit Info</a>) and general demographics (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/">Basic Demographics</a>). In a future release, these tables will be restructured to instead organize variables as either longitudinal (dynamic measures that change over time) or global (static measures, such as sex assigned at birth and race/ethnicity).</td>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Visit Info</td>
+<td>Harmonize participant status and withdrawal fields</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
@@ -212,6 +242,12 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td>SU Flags</td>
 <td>A derived/rolled up substance use flag for Stimulants will be added based on positive instrument-specific Stimulant results.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Static &amp; Dynamic Tables</td>
+<td>The Demographics domain includes 2 tables with derived information grouped into visit-specific data (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/">Visit Info</a>) and general demographics (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/">Basic Demographics</a>). In a future release, these tables will be restructured to instead organize variables as either longitudinal (dynamic measures that change over time) or global (static measures, such as sex assigned at birth and race/ethnicity).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -236,21 +272,27 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Age fields</td>
-<td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>.set files</td>
 <td>Update EEG .set files to include subject release IDs.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
+<td>Age fields</td>
+<td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
 <td>MADE</td>
 <td>N=3 V04 session derivatives are missing corresponding tabulated data for FACE/MMN tasks. See <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> for impacted participant IDs.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>MADE v1.7.0</td>
+<td>HBCD-MADE derivatives processed through updated version v1.7.0</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table>
 
@@ -277,6 +319,18 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Instruction</td>
 <td>The 'instruction' data dictionary element is currently blank.</td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Blank Fields for Siblings</td>
+<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>FamilyID</td>
+<td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
@@ -284,12 +338,6 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td>Language</td>
 <td>Add language of administration across all instruments where applicable.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Multibirth Cohorts</td>
-<td>Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be added to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -338,15 +386,15 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>QSIRecon</td>
-<td>Tabulated data for QSIRecon (participant data combined across derivative files into single tidy table) will be provided in a future release.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+<td>Cook&#x27;s Distance</td>
+<td>Addition Cook's distance values computed for fMRI.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Scanner Info</td>
-<td>Scanner information must currently be parsed from raw BIDS data (specifically the scans .tsv files), as described <a href="https://docs.hbcdstudy.org/latest/help/faq/#faq-scanner-info">here</a>. Future releases will include a dedicated 'MRI Info' table that summarizes scanner information across participants, similar to the ABCD study (<a href="https://docs.abcdstudy.org/latest/documentation/imaging/admin.html#mr_y_adm__info">see details</a>).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+<td>QSIRecon</td>
+<td>Tabulated data for QSIRecon (participant data combined across derivative files into single tidy table) will be provided in a future release.</td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -358,7 +406,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Summary Forms</td>
 <td>Add MRI Scan Session + Data Summary Forms (information from the MRI technician obtained on day of scan).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table>
 
@@ -377,6 +425,18 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
+<td>Bayley</td>
+<td>Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>CDI</td>
+<td>Percentiles incorrectly converted for N=36 cases, resulting in values &gt;100 ('Adjusted Percentile' incorrectly parsed from 'Total Produced' instead of 'Total Produced Percentile-sex (adjusted)')</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
 <td>MLDS</td>
 <td>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis.</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
@@ -389,8 +449,20 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Bayley-4</td>
-<td>Add item-level scores.</td>
+<td>CDI-2</td>
+<td>Addition of the MacArthur-Bates CDI-2 Language</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Deferred Imitation</td>
+<td>Addition of instrument: Deferred Imitation Task: Gong and Berry-Go-Round</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>SPM-2</td>
+<td>Add missing raw and T-scores</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 <tr>
@@ -398,6 +470,27 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td>Vineland</td>
 <td>Add language field to <code>ncl_cg_vabs</code>.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+</tr>
+</tbody></table>
+
+
+### Novel Tech &amp; Wearable Sensors
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th></th><th>Table/Topic</th><th>Summary</th>
+<th style='text-align: center;'>
+  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
+</th></tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>GABI</td>
+<td>Addition of raw BIDS data for GABI (infant heart rate).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table>
 
@@ -417,6 +510,12 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Anthropometrics</td>
+<td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Anthropometrics</td>
 <td>The data dictionary element <code>type_data</code> for <code>average_bmi</code> will be corrected to <code>double</code> (currently=<code>character</code>).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
@@ -427,16 +526,10 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Anthropometrics</td>
-<td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>BISQ-SF</td>
-<td>Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+<td>Anthropometrics</td>
+<td>Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -446,8 +539,26 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Anthropometrics</td>
-<td>Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
+<td>BISQ-SF</td>
+<td>Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Child Nutrition</td>
+<td>Addition of the Child Nutrition Questionnaire.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Med History V1</td>
+<td>Addition of V06</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>PEDsQL</td>
+<td>Addition of the PEDsQL</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
@@ -460,7 +571,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ecPROMIS- Sleep</td>
 <td>Add <code>ph_cg_pms__sleep</code>  summary scores</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -499,18 +610,12 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Healthv2 Preg</td>
 <td>The field for the date when PNV was stopped (<code>pex_bm_healthv2_preg__exp__pnv_007__01</code>) is blank, despite participants having reported stopping.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Healthv2 Preg</td>
 <td>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>TLFB</td>
-<td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a>.</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr>
@@ -543,6 +648,18 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Demo</td>
+<td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Demo</td>
+<td>Roster was inappropriately collected at V02/V03 for all cohorts and should have been restricted to V02 PNRs and alternate caregiver cohorts; to be excluded.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Demo</td>
 <td>The variables <code>sed_bm_demo_residence_{001|002}</code>, present in the prior release, are missing in the current release.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
@@ -550,7 +667,7 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>eHITS</td>
 <td>Participants missing all item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -567,6 +684,24 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Demo</td>
+<td>Addition of V6 Adult</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Demo</td>
+<td>Addition of V6 Child</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Demo</td>
+<td>Add <code>work_{002–004}_post</code> (worked for pay + for X hours while pregnant) and <code>work_004__01</code> (job held ≥1 month since V01) (adult table).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Demo</td>
 <td>Add V01 household income (<code>income_002</code>) (adult table).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
 </tr>
@@ -578,8 +713,20 @@ To ask a question or report an issue, please submit a ticket through the [Help C
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Demo</td>
-<td>Add <code>work_{002–004}_post</code> (worked for pay + for X hours while pregnant) and <code>work_004__01</code> (job held ≥1 month since V01) (adult table).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>2.1</span></td>
+<td>GLED</td>
+<td>Addition of Geocoded Linkage from Home and Work Addresses</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Incarceration</td>
+<td>Addition of the Incarceration Questionnaire</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>TIC Questionnaire</td>
+<td>Addition of TIC Questionnaire table</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table><!-- END KNOWN_ISSUES_TABLE -->
