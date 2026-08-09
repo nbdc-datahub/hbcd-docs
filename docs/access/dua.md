@@ -1,3 +1,5 @@
+<!-- INTERNAL NOTE: THE CONTENTS AND FILENAME FOR THIS PAGE CANNOT BE CHANGED AS IT IS LINKED TO DIRECTLY FROM THE DUC FOR INSTRUCTIONS ON LANGUAGE TO USE FOR DATA USE ACKNOWLEDGEMENT -->
+
 # Data Use Acknowledgement
 
 When using HBCD Study data, processes, plans, and/or concepts in a publication, please include the acknowledgement text below (also provided in the NBDC Responsible Data Use Training required for data access).
