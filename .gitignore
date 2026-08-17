@@ -1,11 +1,11 @@
 site/
 .DS_Store
+.env
 docs/.DS_Store
 scratch/
+scratch.md
 __pycache__/
 .vscode/
 make_tables/
-tools/local/
-local/
-archive/
-tools-local/
+LOCAL/
+ARCHIVE/

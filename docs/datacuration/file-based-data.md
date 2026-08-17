@@ -9,9 +9,9 @@ File-based data is provided for imaging, EEG, and biosensor recordings. Unlike [
 ## Raw BIDS
 
 <p>
-<div id="agefields" class="table-banner">
+<div id="agefields" class="banner">
   <span class="emoji"><i class="fa fa-hourglass-half"></i><i class="fa fa-person-cane"></i></span>
-<span class="text">See <a href="../../instruments/agevariables/#file-based-data" target="_blank">Age Variable Definitions</a> for documentation on fields reporting age in raw BIDS data.</span>
+<span class="text">See <a href="../../instruments/agevariables/#file-based-data">Age Variable Definitions</a> for documentation on fields reporting age in raw BIDS data.</span>
 </div>
 </p>
 
@@ -19,71 +19,41 @@ Raw BIDS are raw file-based data in [BIDS](https://bids-specification.readthedoc
 
 <pre class="folder-tree">
 hbcd/
-└── <span class="folder">rawdata/</span>
-    ├── <span class="file">sub-[ID]_ses-[V0X]_scans.tsv</span>
-
+└── rawdata/
     <span class="section"># Raw BIDS (MRI/MRS, EEG, biosensors)</span>
-    ├── <span class="folder">sub-[ID]/</span>
-    │   └── <span class="folder">ses-[V0X]/</span>
-    │       <span style="color: #0af0e1; font-style: italic;"># Imaging & Spectroscopy - <a style="color: #0af0e1; font-style: italic;" href="../../instruments/mri/rawbids" target="_blank">See file contents</a></span>
-    │       ├── <span class="folder">anat/</span>   
-    │       ├── <span class="folder">dwi/</span>
-    │       ├── <span class="folder">fmap/</span>
-    │       ├── <span class="folder">func/</span>
-    │       ├── <span class="folder">mrs/</span>
-    │
-    │       <span style="color: #0af0e1; font-style: italic;"># EEG - <a style="color: #0af0e1; font-style: italic;" href="../../instruments/eeg/#rawbids" target="_blank">See file contents</a></span> 
-    │       ├── <span class="folder">eeg/</span>
-    │
-    │       <span style="color: #0af0e1; font-style: italic;"># Wearable sensors - <a style="color: #0af0e1; font-style: italic;" href="../../instruments/sensors/wearsensors/#rawbids" target="_blank">See file contents</a></span>
-    │       └── <span class="folder">motion/</span> 
+    ├── sub-[ID]/
+    │   └── ses-[V0X]/
+    │       ├── anat/     <span class="section"># <a href="../../instruments/mri/rawbids">Imaging & Spectroscopy</a></span>
+    │       ├── dwi/
+    │       ├── fmap/
+    │       ├── func/
+    │       ├── mrs/
+    │       ├── eeg/      <span class="section"># <a href="../../instruments/eeg/#rawbids">EEG</a></span>
+    │       ├── motion/   <span class="section"># <a href="../../instruments/sensors/wearsensors/#rawbids">Wearable sensors</a></span>
+            └── sub-[ID]_ses-[V0X]_scans.tsv
     │
     <span class="section"># Dataset-level metadata</span>
-    ├── <span class="file">dataset_description.json</span>
-    └── <span class="file">participants.tsv</span>
+    ├── dataset_description.json
+    └── participants.tsv
+    ├── sub-[ID]_ses-[V0X]_scans.tsv
 </pre>
 <p></p>
 
-### Participant-, Session-, & Scan-Level Data
-<p>
-<div class="table-banner">
-  <span class="emoji"><i class="fa fa-circle-info"></i><i class="fa fa-person-cane"></i></span>
-<span class="text">MRI scanner information is now included in the session-level scans TSV files (<code>sub-[ID]_ses-[V0X]_scans.tsv</code>) and will be made available as tabulated data in a future release.</span>
-</div>
-</p>
+##### Participant-, Session-, & Scan-Level Data
+**Participant-Level Data** - `participants.tsv`       
+<span class="subtle" style="font-size: 1em;">General participant information (e.g., sex) to provide high-level overview of all study participants</span>
 
-Participant-, session-, and scan-level data are stored in TSV files accompanied by side JSONs with metadata:
+**Session-Level Data** - `sub-[ID]_sessions.tsv`      
+<span class="subtle" style="font-size: 1em;">Session information, including collection site, age at session, and head size</span>
 
-<table class="table-no-vertical-lines">
-<thead>
-<tr>
-  <th>Level</th>
-  <th>File Name</th>
-  <th style="width: 60%;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Participant</td>
-  <td><code>participants.tsv</code></td>
-  <td>Basic demographic and participant information (e.g., sex)</td>
-</tr>
-<tr>
-  <td>Session</td>
-  <td><code>sub-[ID]_sessions.tsv</code></td>
-  <td>Session information (e.g., collection site, age at each session, head size)</td>
-</tr>
-<tr>
-  <td>Scan</td>
-  <td><code>sub-[ID]_ses-[V0X]_scans.tsv</code></td>
-  <td>Per-scan information (e.g., age, <a href="../../instruments/mri/qc/#location-in-release-data" target="_blank">raw data QC metrics</a>, scanner info)</td>
-</tr>
-</tbody>
-</table>
+**Scan-Level Data** - `sub-[ID]_ses-[V0X]_scans.tsv`   
+<span class="subtle" style="font-size: 1em;">Per-scan information, including key fields of interest such as <a href="../../instruments/mri/qc/#location-in-release-data"><b>raw data QC metrics</b></a> and <b>scanner information</b>
+
+---
 
 ## Derivatives
 
-The `derivatives/` folder contains derivatives, which are file outputs from <a href="../../standards/processing/" target="_blank">processing pipelines</a>. 
+The `derivatives/` folder contains derivatives, which are file outputs from <a href="../../standards/processing/">processing pipelines</a>. 
 
 <pre class="folder-tree">
 hbcd/
@@ -116,89 +86,16 @@ hbcd/
 </pre>
 <p></p>
 
-### Links to Pipeline Derivatives
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-  <th>Modality</th>
-  <th>Derivatives Folder</th>
-  <th>Pipeline Name & Link to Derivatives</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td rowspan="6">Structural & Functional MRI</td>
-  <td><code>mriqc/</code></td>
-  <td><a href="../../instruments/mri/smri/#mriqc" target="_blank">MRIQC</a></td>
-</tr>
-<tr>
-  <td><code>bme_x/</code></td>
-  <td><a href="../../instruments/mri/smri/#mriqc" target="_blank">BME-X</a></td>
-</tr>
-<tr>
-  <td><code>bibsnet/</code></td>
-  <td><a href="../../instruments/mri/smri/#bibsnet-derivs" target="_blank">BIBSNet</a></td>
-</tr>
-<tr>
-  <td><code>nibabies/</code></td>
-  <td><a href="../../instruments/mri/fmri/#nibabies-derivs" target="_blank">Infant fMRIPrep (or Nibabies)</a></td>
-</tr>
-<tr>
-  <td><code>freesurfer/</code> & <code>mcribs/</code></td>
-  <td><a href="../../instruments/mri/fmri/#fs" target="_blank">FreeSurfer</a> & <a href="../../instruments/mri/fmri/#mcribs" target="_blank">M-CRIB-S</a></td>
-</tr>
-<tr>
-  <td><code>xcp_d/</code></td>
-  <td><a href="../../instruments/mri/fmri/#xcpd-derivs" target="_blank">XCP-D</a></td>
-</tr>
-
-<tr>
-  <td>Quantitative MRI</td>
-  <td><code>symri/</code> & <code>qmri_postproc/</code></td>
-  <td><a href="../../instruments/mri/qmri/#qmri-derivs" target="_blank">SyMRI / qMRI PostProc</a></td>
-</tr>
-
-<tr>
-  <td rowspan="2">Diffusion MRI</td>
-  <td><code>qsiprep/</code></td>
-  <td><a href="../../instruments/mri/dmri/#qsiprep" target="_blank">QSIPrep</a></td>
-</tr>
-<tr>
-  <td><code>qsirecon/</code><br>
-  <code>qsirecon-DSIStudio/</code><br>
-  <code>qsirecon-DIPYDKI/</code><br>
-  <code>qsirecon-TORTOISE_model-MAPMRI/</code><br>
-  <code>qsirecon-TORTOISE_model-tensor/</code>
-  </td>
-  <td><a href="../../instruments/mri/dmri/#qsirecon" target="_blank">QSIRecon</a></td>
-</tr>
-
-<tr>
-  <td>MR Spectroscopy</td>
-  <td><code>osprey/</code></td>
-  <td><a href="../../instruments/mri/mrs/#derivatives" target="_blank">OSPREY-BIDS</a></td>
-</tr>
-<tr>
-  <td>EEG</td>
-  <td><code>made/</code></td>
-  <td><a href="../../instruments/eeg/#made" target="_blank">HBCD-MADE</a></td>
-</tr>
-<tr>
-  <td>Wearable Sensors</td>
-  <td><code>motion/</code></td>
-  <td><a href="../../instruments/sensors/wearsensors/#derivatives" target="_blank">HBCD-Motion</a></td>
-</tr>
-</tbody>
-</table>
+---
 
 ## Concatenated Data
-The `concatenated/` folder contains participant-level files aggregated across all subjects for certain modalities, organized in modality-specific subfolders. Click *View README* links to view instrument documentation.
+
+Similar to tabulated data, concatenated data are participant-level datasets aggregated across all participants into a single file or file set. The key difference is that the data are not converted to the HBCD standard tabulated format. This is needed in cases where datasets include cohort-wide data and/or the original community-standard formats are required to support common analysis workflows and maximize compatibility with existing tools. Click *View README* links below to view instrument documentation.
 
 <pre class="folder-tree">
 hbcd/
 └── concatenated/
-    <span class="section"># Illumina Global Diversity GWAS Array</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/biospec/illumina-gda-gwas" target="_blank">View README</a></span>
+    <span class="section"># Illumina Global Diversity GWAS Array</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/biospec/illumina-gda-gwas">View README</a></span>
     ├── genetics/
     │   └── genotype_microarray/
     │       └── GDA/
@@ -207,12 +104,18 @@ hbcd/
     │           ├── hbcd.bim
     │           └── hbcd.fam
     │
-    <span class="section"># Geocoded Linked External Data (GLED)</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/SED/geocoded-linkage" target="_blank">View README</a></span>
+    <span class="section"># Geocoded Linked External Data (GLED)</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/SED/geocoded-linkage">View README</a></span>
     ├── geocoding/
     │   └── HBCD_address_history_geocoded.csv
     │
-    <span class="section"># Study Navigator Contact Form</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/admin/study-navigators" target="_blank">View README</a></span>
+    <span class="section"># Olink Explore 384 Inflammation 1 Panel</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/biospec/olink/">View README</a></span>
+    ├── proteins/
+    │   └── olink/
+    │       └── inflammation/
+    │           ├── Olink_allplates_long.csv
+    │           └── Olink_allplates_wide.csv
+    │
+    <span class="section"># Study Navigator Contact Form</span> <span style="color: #0af0e1; font-style: italic;">- <a style="color: #0af0e1; font-style: italic;" href="../../instruments/admin/study-navigators">View README</a></span>
     └── study_navigator/
         └── study_navigator_export.csv
 </pre>
-

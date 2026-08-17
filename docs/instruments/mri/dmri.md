@@ -1,17 +1,18 @@
 # Diffusion MRI (dMRI)
 
-**Diffusion-Weighted Imaging (DWI)** measures the diffusion of water molecules in tissue and is used to model white matter microstructure and structural connectivity in the central nervous system.
+{{ alert_warning(instruments.dmri) }}
+{{ data_warning(instruments.dmri) }}
 
-## Acquisition
+<!-- ##### Overview & Acquisition -->
+{{ instrument_description(instruments.dmri) }}
 
-Full protocols, sequence installation, and operation instructions are available via <a href="https://hbcdsequences.readthedocs.io/">HBCD Study MRI Protocols</a>. In brief, the DWI protocol acquires roughly 140 diffusion-weighted echo planar images at four b-values (diffusion-weighting) between 0 and 3000 s/mm<sup>2</sup> (12-13 minutes total acquisition time). For raw image acquisition, a minimum of 60% of the diffusion-weighted volumes are required to be collected for the acquisition to be deemed successful.
+{{ csv_table("diffusion_pulse_sequence_timing.csv") }}
 
-## Processing & Derivatives
+## Processing 
 
-<div class="table-banner"> <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span> <span class="text"> Full details of HBCD diffusion MRI processing and methods are described in <a href="https://doi.org/10.1101/2025.11.10.687672">Cieslak et al. 2025</a>. </span> </div>
-<p></p>
+{{ suppx(instruments.dmri, "1") }}
 
-Diffusion MRI data are preprocessed using **[QSIPrep](https://qsiprep.readthedocs.io/)**, which performs motion and distortion correction, MP-PCA denoising, co-registration to T1w images, spatial normalization (ANTs), and tissue segmentation ([Cieslak et al. 2021](https://doi.org/10.1038/s41592-021-01185-5), [Cieslak et al. 2025](https://doi.org/10.1101/2025.11.10.687672)). Preprocessed outputs are then passed to **[QSIRecon](https://qsirecon.readthedocs.io/)**, which runs curated reconstruction workflows, including ODF/FOD reconstruction, tractography, Fixel estimation, and regional connectivity. 
+<!-- HARDCODED IMAGE -->
 
 <table class="compact-table-no-vertical-lines"> 
 <thead> <th>Pipeline</th> <th>Folder</th> <th>Description</th> </thead> 
@@ -29,15 +30,12 @@ Diffusion MRI data are preprocessed using **[QSIPrep](https://qsiprep.readthedoc
 <td><a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> Tensor fits and scalar maps</td> </tr> 
 </tbody> </table> 
 
-<p><a href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 
-<div id="qsiprep" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>  <span class="text-with-link">
-  <span class="text">QSIPrep Derivatives</span>  <a class="anchor-link" href="#qsiprep" title="Copy link">
-  <i class="fa-solid fa-link"></i>  </a>  </span>  <span class="arrow">▸</span></div>
-<div class="table-collapsible-content">
-<pre class="folder-tree" style="font-size: 11px;">
-hbcd/
+## Derivatives
+
+### QSIPrep
+
+<pre class="folder-tree">hbcd/
 └── derivatives/
     └── qsiprep/
         └── sub-[ID]/
@@ -71,25 +69,17 @@ hbcd/
                 │
                 ├── figures/
                 └── sub-[ID]_ses-[V0X].html
+<a href="../../../datacuration/overview/#filetrees"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a>
 </pre>
-</div>
 
-<div id="qsirecon" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span><span class="text-with-link">
-  <span class="text">QSIRecon Derivatives</span><a class="anchor-link" href="#qsirecon" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><a href="https://qsirecon.readthedocs.io/">QSIRecon</a> outputs are organized into separate derivative folders by reconstruction workflow. 
-The <code>qsirecon/</code> directory stores workflow metadata and logs. <i><b>Below:</b> Each folder corresponds to a reconstruction method; outputs are organized by session and modality (dwi/ + figures). For brevity, logs, figures, and JSON sidecars filenames are not shown.</i></p>
-<pre class="folder-tree" style="font-size: 11px;">
+
+### QSIRecon Details
+
+##### Diffusion Tensor Imaging (DTI)        
+DSI Studio models diffusion with a 3D Gaussian distribution of water displacements. Key outputs include fractional anisotropy (FA), i.e. anisotropic diffusion (typically higher in white matter bundles with dense, parallel fibers) and mean diffusivity (MD), i.e. directionally averaged apparent diffusion coefficient (inversely related to cellular membrane density) (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser 1994</a>).
+<pre class="folder-tree">
 hbcd/
 └── derivatives/
-    ├── qsirecon/
-    │   └── sub-[ID]/
-    │       └── log/*
-    
-  <span class="hashtag">DSI Studio</span>
     ├── qsirecon-DSIStudio/
     │   └── sub-[ID]/
     │       └── ses-[V0X]/
@@ -105,7 +95,13 @@ hbcd/
     │           ├── figures/*
     │           └── sub-[ID]_ses-[V0X].html
 
-  <span class="hashtag">DIPY-DKI</span>
+<span class="var">DTI-PARAM</span>: ad, fa, ha, md, rd, txx, txy, txz, tyy, tyz, tzz
+<span class="var">BUNDLE</span>: <a href="../dmri.html">see full list</a>
+</pre>
+
+##### Diffusion Kurtosis Imaging (DKI)
+DKI extends DTI to capture non-Gaussian diffusion. The main metric is mean kurtosis (MK), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).
+<pre class="folder-tree">
     ├── qsirecon-DIPYDKI/
     │   └── sub-[ID]/
     │       └── ses-[V0X]/
@@ -116,8 +112,13 @@ hbcd/
     │           │   └── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-tensor_param-fa_dwimap.nii.gz
     │           ├── figures/*
     │           └── sub-[ID]_ses-[V0X].html
-    
-  <span class="hashtag">TORTOISE MAP-MRI</span>
+
+<span class="var">DKI-PARAM</span>: ad, ak, kfa, md, mk, mkt, rd, rk
+</pre>
+
+##### Mean Apparent Propagator MRI (MAP-MRI)
+MAP-MRI Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution. This enables quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>).
+<pre class="folder-tree">
     ├── qsirecon-TORTOISE_model-MAPMRI/
     │   └── sub-[ID]/
     │       └── ses-[V0X]/
@@ -127,93 +128,10 @@ hbcd/
     │           │   └── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-tensor_param-<span class="var">{TENSOR}</span>_dwimap.nii.gz
     │           ├── figures/*
     │           └── sub-[ID]_ses-[V0X].html
-    
-  <span class="hashtag">TORTOISE Tensor</span>
-    └── qsirecon-TORTOISE_model-tensor/
-        └── sub-[ID]/
-            └── ses-[V0X]/
-                └── dwi/
-                    ├── *_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-                    └── *_space-MNIInfant+1_model-tensor_param-<span class="var">{TENSOR}</span>_dwimap.nii.gz
 
-<span class="hashtag"># Label Values Legend</span>
-Prefix: sub-[ID]_ses-[V0X]
-<span class="var">DTI-PARAM</span>: ad, fa, ha, md, rd, txx, txy, txz, tyy, tyz, tzz
-<span class="var">DKI-PARAM</span>: ad, ak, kfa, md, mk, mkt, rd, rk
 <span class="var">MAPMRI</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
-<span class="var">TENSOR</span>: ad, am, fa, li, rd
+</pre>
 
-<span class="hashtag"># DSI Studio {BUNDLE} groups:</span> → See <a href="#bundle">full DSIStudio bundle label list</a>
-Association<span class="var">{LABEL}</span>, Cerebellum<span class="var">{LABEL}</span>, Commissure<span class="var">{LABEL}</span>, ProjectionBasalGanglia<span class="var">{LABEL}</span>, ProjectionBrainstem<span class="var">{LABEL}</span>
-</pre>  
-</div>
-
-<div id="bundle" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-circle-info"></i></span>
-  <span class="text-with-link">
-  <span class="text">Label Values Legend Extended: DSIStudio <code>BUNDLE</code> Values</span>
-  <a class="anchor-link" href="#bundle" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines">
-<tr><thead><th>{BUNDLE} Values</th><th>Nested Bundle {LABEL} Values</th></thead><tr>
-<tbody>
-<tr>
-<td><strong style="color: #00a298ff;">Association{LABEL}</strong></td>
-<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>Cingulum{L/R}</span><span>ExtremeCapsule{L/R}</span><span>FrontalAslantTract{L/R}</span><span>ParietalAslantTract{L/R}</span><span>HippocampusAlveus{L/R}</span><span>ArcuateFasciculus{L/R}</span><span>AssociationUncinateFasciculus{L/R}</span><span>InferiorFrontoOccipitalFasciculus{L/R}</span><span>InferiorLongitudinalFasciculus{L/R}</span><span>MiddleLongitudinalFasciculus{L/R}</span><span>SuperiorLongitudinalFasciculus{L/R}</span><span>VerticalOccipitalFasciculus{L/R}</span></div></td>
-</tr>
-<tr>
-<td style="color: #00a298ff;"><strong>Cerebellum{LABEL}</strong></td>
-<td><div style="display: flex; flex-wrap: wrap; gap: 8px;">
-<span>Cerebellum{L/R}</span><span>InferiorCerebellarPeduncle{L/R}</span><span>MiddleCerebellarPeduncle</span><span>SuperiorCerebellarPeduncle</span><span>Vermis</span></div></td>
-</tr>
-<tr>
-<td><strong style="color: #00a298ff;">Commissure{LABEL}</strong></td>
-<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>AnteriorCommissure</span><span>CorpusCallosum</span></div></td>
-</tr>
-<tr>
-<td><strong style="color: #00a298ff;">ProjectionBasalGanglia{LABEL}</strong></td>
-<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>AcousticRadiation{L/R}</span><span>OpticRadiation{L/R}</span><span>ThalamicRadiation{L/R}</span><span>AnsaLenticularis{L/R}</span><span>FasciculusLenticularis{L/R}</span><span>AnsaSubthalamic{L/R}</span><span>FasciculusSubthalamicus{L/R}</span><span>CorticostriatalTract{L/R}</span><span>Fornix{L/R}</span></div></td>
-</tr>
-<tr>
-<td><strong style="color: #00a298ff;">ProjectionBrainstem{LABEL}</strong></td>
-<td><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span>CorticobulbarTract{L/R}</span><span>CorticopontineTract{L/R}</span><span>CorticospinalTract{L/R}</span><span>ReticularTract{L/R}</span><span>DentatorubrothalamicTract{lr/rl}</span><span>NonDecussatingDentatorubrothalamicTract{L/R}</span><span>MedialForebrainBundle{L/R}</span><span>MedialLemniscus{L/R}</span></div></td>
-</tr>
-</tbody>
-</table>
-</div>
-
-## dMRI Derivatives Quick Start Guide
-
-The diffusion encoding provided via the multiple QSIRecon derivative folders enable the estimation of multiple diffusion MRI models to create the derived data, including:
-
-#### Diffusion Tensor Imaging (DTI)        
-DSI Studio models diffusion with a 3D Gaussian distribution of water displacements. Key outputs include fractional anisotropy (FA), i.e. anisotropic diffusion (typically higher in white matter bundles with dense, parallel fibers) and mean diffusivity (MD), i.e. directionally averaged apparent diffusion coefficient (inversely related to cellular membrane density) (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser 1994</a>).     
-<i class="fas fa-folder-tree header-icon"></i>**Derivatives**: <a href="#qsirecon">qsirecon-DSIStudio/</a>   
-
-#### Diffusion Kurtosis Imaging (DKI)
-DKI extends DTI to capture non-Gaussian diffusion. The main metric is mean kurtosis (MK), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).      
-<i class="fas fa-folder-tree header-icon"></i>**Derivatives**: <a href="#qsirecon">qsirecon-DIPYDKI/</a>                  
-
-#### Mean Apparent Propagator MRI (MAP-MRI)
-MAP-MRI Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution. This enables quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>).     
-<i class="fas fa-folder-tree header-icon"></i>**Derivatives**: <a href="#qsirecon">qsirecon-TORTOISE_model-MAPMRI/</a>                  
-
-<div id="mapmri-metrics" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-atom"></i></span>
-  <span class="text-with-link">
-  <span class="text">MAP-MRI Metrics</span>
-  <a class="anchor-link" href="#mapmri-metrics" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>  <tr>    <th>Metric</th>    <th>Description</th>  </tr></thead>
 <tbody>
@@ -234,9 +152,22 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 </tr>
 </tbody>
 </table>
-</div>
 
-<div id="model-param-details" class="table-banner" onclick="toggleCollapse(this)">
+##### QSIRecon-TORTOISE Tensor
+
+<pre class="folder-tree">
+    └── qsirecon-TORTOISE_model-tensor/
+        └── sub-[ID]/
+            └── ses-[V0X]/
+                └── dwi/
+                    ├── *_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+                    └── *_space-MNIInfant+1_model-tensor_param-<span class="var">{TENSOR}</span>_dwimap.nii.g
+
+<span class="var">TENSOR</span>: ad, am, fa, li, rd
+</pre>
+
+
+<div id="model-param-details" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-atom"></i></span>
   <span class="text-with-link">
   <span class="text">QSIRecon Parametric Microstructure Maps Generated for HBCD</span>
@@ -246,7 +177,7 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -314,63 +245,25 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 </table>
 </div>
 
+---
+
 ## Quality Control Summary Statistics
 
-Automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-[ID]_ses-[V0X]_space-ACPC_desc-image_qc.tsv</code> within the QSIPrep derivatives (see <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details). Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. NDC can also be used as a covariate in analyses to account for QC variation. 
-<p><strong>Left</strong>: NDC calculated pre- and post-processing for each vendor using combined AP/PA scans<br>  
-<strong>Right</strong>: Shell-wise CNR calculated by Eddy. We do not provide exclusion threshold recommendations because all data passed preliminary QC. However, NDC and CNR are useful covariates when analyzing other derivatives.</p>
+{{ qc(instruments.dmri) }}
+
 <img src="../images/ndc_cnr_comparison.svg" width="95%" height="auto" class="center">
 
-## References
+---
 
-<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
-  <span class="text-with-link">
-  <span class="text">References</span>
-  <a class="anchor-link" href="#ref" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<div class="references">
-    <p>Alexander AL, Lee JE, Lazar M, Field AS. (2007). Diffusion tensor imaging of the brain. <em>Neurotherapeutics</em>, 4(3):316-29. <a href="https://doi.org/10.1016/j.nurt.2007.05.011">10.1016/j.nurt.2007.05.011</a></p>
-    <p>Basser PJ, Mattiello J, LeBihan D. (1994). MR diffusion tensor spectroscopy and imaging. <em>Biophys J.</em>, 66(1):259-67. <a href="https://doi.org/10.1016/S0006-3495(94)80775-1">10.1016/S0006-3495(94)80775-1</a></p>
-    <p>Cieslak M, Cook PA, He X, Yeh FC, Dhollander T, Adebimpe A, Aguirre GK, Bassett DS, Betzel RF, Bourque J, Cabral LM, Davatzikos C, Detre JA, Earl E, Elliott MA, Fadnavis S, Fair DA, Foran W, Fotiadis P, Garyfallidis E, Giesbrecht B, Gur RC, Gur RE, Kelz MB, Keshavan A, Larsen BS, Luna B, Mackey AP, Milham MP, Oathes DJ, Perrone A, Pines AR, Roalf DR, Richie-Halford A, Rokem A, Sydnor VJ, Tapera TM, Tooley UA, Vettel JM, Yeatman JD, Grafton ST, Satterthwaite TD. (2021). QSIPrep: an integrative platform for preprocessing and reconstructing diffusion MRI data. <em>Nature Methods</em>, 18(7):775-778. <a href="https://doi.org/10.1038/s41592-021-01185-5">10.1038/s41592-021-01185-5</a></p>
-    <p>Cieslak, M., Irfanoglu, M. O., Meisler, S. L., Salo, T., Raikes, A. C., Cook, P. A., Chung, A. W., Lee, E. G., Li, R., Li, X., Pecheva, D., Fair, D. A., Smyser, C. D., Harms, M. P., Landman, B. A., Wisnowski, J. L., Huang, H., Alexander, A. L., & Satterthwaite, T. D. (2025). Diffusion MRI processing in the HEALthy Brain and child development study: Innovations and applications. <em>In bioRxiv.</em> <a href="https://doi.org/10.1101/2025.11.10.687672">https://doi.org/10.1101/2025.11.10.687672</a></p>
-    <p>Jensen, J. H., Helpern, J. A., Ramani, A., Lu, H., & Kaczynski, K. (2005). Diffusional kurtosis imaging: the quantification of non-gaussian water diffusion by means of magnetic resonance imaging. Magnetic Resonance in Medicine, 53(6), 1432–1440. <a href="https://doi.org/10.1002/mrm.20508">https://doi.org/10.1002/mrm.20508</a></p>
-    <p>Özarslan E, Koay CG, Shepherd TM, Komlosh ME, İrfanoğlu MO, Pierpaoli C, Basser PJ. (2013). Mean apparent propagator (MAP) MRI: a novel diffusion imaging method for mapping tissue microstructure. <em>Neuroimage</em>, 78:16-32. <a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">10.1016/j.neuroimage.2013.04.016</a></p>
-</div>
-</div>
+{{ references(instruments.dmri) }}
 
 
 
 
 
-<!-- <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-    <th>Model</th>
-    <th>Description</th>
-    <th>Derivatives</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td><span class="tooltip">DTI<span class="tooltiptext">Diffusion Tensor Imaging</span></span></td>
-  <td>Models diffusion with a 3D Gaussian distribution of water displacements. Key outputs include Fractional Anisotropy (FA: anisotropic diffusion, typically higher in white matter bundles with dense, parallel fibers) and Mean Diffusivity (MD: the directionally averaged apparent diffusion coefficient, inversely related to cellular membrane density) (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser 1994</a>).</td>
-  <td><a href="#qsirecon-DSIStudio">qsirecon-<br>DSIStudio</a></td>
-</tr>
-<tr>
-  <td><span class="tooltip">DKI<span class="tooltiptext">Diffusion Kurtosis Imaging</span></span></td>
-  <td>Extends DTI to capture non-Gaussian diffusion. Main metric: MK (mean kurtosis), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).</td>
-  <td><a href="#qsirecon-DIPYDKI">qsirecon-<br>DIPYDKI</a></td>
-</tr>
-<tr>
-  <td><span class="tooltip">MAP-MRI<span class="tooltiptext">Mean Apparent Propagator MRI</span></span></td>
-  <td>Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution, enabling quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>). See <a href="#mapmri-metrics">MAP-MRI metrics</a>.</td>
-  <td><a href="#qsirecon-TORTOISE">qsirecon-<br>TORTOISE_model-<br>MAPMRI</a></td>
-</tr>
-</tbody>
-</table> -->
+
+
+
+<!-- Automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-[ID]_ses-[V0X]_space-ACPC_desc-image_qc.tsv</code> within the QSIPrep derivatives (see <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details). Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. NDC can also be used as a covariate in analyses to account for QC variation. 
+<p><strong>Left</strong>: NDC calculated pre- and post-processing for each vendor using combined AP/PA scans<br>  
+<strong>Right</strong>: Shell-wise CNR calculated by Eddy. We do not provide exclusion threshold recommendations because all data passed preliminary QC. However, NDC and CNR are useful covariates when analyzing other derivatives.</p> -->

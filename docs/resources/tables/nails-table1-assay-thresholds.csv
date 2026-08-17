@@ -1,0 +1,17 @@
+Analytes,LOD (pg/mL),LOQ (pg/mL),Cutoff (pg/mL)
+Amphetamine / Methamphetamine,20,40,100
+MDA / MDMA / MDEA,20,40,100
+Carboxy-delta-9-THC,0.01,0.02,0.05
+Cocaine,20,40,100
+Cocaethylene / Benzoylecgonine / Norcocaine,10,20,50
+6-MAM,20,40,100
+Codeine,20,40,100
+Hydrocodone,20,40,100
+Hydromorphone / Morphine,20,40,100
+Norhydrocodone,8,16,40
+Fentanyl / Norfentanyl / Alfentanil / Acetyl Fentanyl / Acetyl Norfentanyl,2,4,10
+Sufentanil,1,2,5
+Norsufentanil,2,2,5
+Tramadol,200,400,500
+Ethyl glucuronide,4,8,20
+Nicotine / Cotinine,20,40,100

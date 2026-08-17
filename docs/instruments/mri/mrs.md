@@ -15,7 +15,7 @@ Full protocols, sequence installation, and operation instructions are available 
 ## MRS Processing & Derivatives
 HBCD MRS data are processed with [OSPREY-BIDS](https://osprey-bids.readthedocs.io/en/latest/index.html), a customized automated pipeline based on OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)). Full details regarding HBCD processing implementation (e.g., file selection for processing) are available in the external [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/osprey.html) documentation.
 
-<div id="derivatives" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
+<div id="derivatives" class="banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
 <span class="text">OSPREY-BIDS Derivatives</span>
@@ -25,9 +25,9 @@ HBCD MRS data are processed with [OSPREY-BIDS](https://osprey-bids.readthedocs.i
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <pre class="folder-tree" style="font-size: 0.75em;">
-<span><a style="color: white;" href="../../../datacuration/overview/#filetrees" target="_blank"><i style="color: white;" class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+<span><a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 
 hbcd/
 └── derivatives/
@@ -117,10 +117,10 @@ MRS values are quantified relative to internal reference signals. Optimal refere
 
 ## References 
 
-<div id="ref" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ref" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-book-open"></i></span>
   <span class="text-with-link">
-  <span class="text">References <span class="hint">(Click to expand)</span></span>
+  <span class="text">References</span>
   <a class="anchor-link" href="#ref" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>

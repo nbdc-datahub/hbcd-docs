@@ -1,14 +1,8 @@
 
 # Tabulated Data
 
-<p>
-<div id="agefields" class="table-banner">
-  <span class="emoji"><i class="fa fa-hourglass-half"></i><i class="fa fa-person-cane"></i></span>
-<span class="text">See <a href="../../instruments/agevariables/#tabulated-instrument-data" target="_blank">Age Variable Definitions</a> for documentation on fields reporting age in tabulated instrument data.</span>
-</div>
-</p>
+Tabulated data are participant-level summaries for the majority of HBCD Study instruments listed under [Behavior, Biology, & Environment](../instruments/index.md#behavior-biology-environment) and [tabulated pipeline derivatives](overview.md#tabulated-pipeline-derivatives). Files are stored under `rawdata/phenotype/`:
 
-Tabulated data are participant-level summaries of HBCD Study instruments (<a href="../../instruments/#behavior-biology-environment" target="_blank">behavior, biology, and environment</a>), <a href="../../instruments/#demo" target="_blank">Demographics</a>, and select <a href="../overview/#warning" target="_blank">file-based</a> data. Files are stored under `rawdata/phenotype/`:
 <pre class="folder-tree">
 hbcd/
 └── rawdata/ 
@@ -16,21 +10,21 @@ hbcd/
         ├── sed_basic_demographics.*        <span class="hashtag"># Basic Demographics</span>
         ├── par_visit_data.*                <span class="hashtag"># Visit Level Data</span>
         ├── bio_biosample_<span class="var">{nails|urine}</span>.*   <span class="hashtag"># Toxicology</span>
-        └── <span class="var">{instrument_name}</span>.*             <span class="hashtag"># Instrument Data</span>
+        └── <span class="var">[instrument_name]</span>.*             <span class="hashtag"># Instrument Data</span>
 </pre>
 
 Key features of tabulated data include:
 
- - [Table Organization](#table-organization): tables are organized following the BIDS standard so that data from different sources can be linked together by participant ID and visit number
+ - Table Organization: tables are organized following the BIDS standard so that data from different sources can be linked together by participant ID and visit number
  - [File Types](#file-types): tables are available in both plain text (`.tsv`) and Parquet (`.parquet`) format, with accompanying metadata that explains the contents of each table
 
-## Table Organization
+<!-- ## Table Organization
 
 Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files/phenotypic-and-assessment-data.html) standard, each table includes unique identifier columns for the following items that allow you to link information between tables:
 
  - Participant ID (<code>participant_id</code>)
  - Session/visit number (<code>session_id</code>)
- - Run number (<code>run_id</code>) - only as applicable, e.g., for MRI where multiple runs are acquired 
+ - Run number (<code>run_id</code>) - only as applicable, e.g., for MRI where multiple runs are acquired  -->
  
 #### Study Design Logic: Child-Centric Data Structure
 
@@ -44,14 +38,14 @@ Tabulated data are available in two formats, **plain text files** (`.tsv`/`.csv`
 
 Tabulated data are provided in multiple formats to support a range of tools and user preferences. **Plain text files** (`.tsv`/`.csv`) are widely compatible and easy to open/inspect in Excel or text editors and have metadata (including column types, variable labels, categorical coding, etc.) stored in accompanying `.json` files. [Apache Parquet](https://parquet.apache.org/), or simply **Parquet** (`.parquet`), is a modern, compressed columnar format optimized for analysis and large-scale data. Unlike plain text files, metadata is embedded directly in parquet files, ensuring correct data types and enabling efficient loading and analysis in Python or R.
 
-<div id="csv-vs-parquet" class="table-banner" onclick="toggleCollapse(this)">
+<div id="csv-vs-parquet" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
     <span class="text">Which format should I use?</span>
     <a class="anchor-link" href="#csv-vs-parquet" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
+<div class="collapsible-content">
 <table class="compact-table-no-vertical-lines">
   <thead>
     <tr>
@@ -103,12 +97,12 @@ For large data, plain text formats (TSV/CSV) can cause import issues (in Python,
 - Misinterpretation of data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical
 - Mishandling missing values (columns with mostly missing values may be treated as empty)
 
-**If you do use CSV/TSV files for analysis:** be sure to (1) manually define column types during import using the sidecar JSON metadata files and (2) replace blank values with `n/a` (missing values are blank in HBCD data following [BIDS specification](https://bids-specification.readthedocs.io/en/stable/common-principles.html#tabular-files)). We recommend using [NBDCtools](../access/tools.md#tabulated-data) to automate these processes (e.g. [`read_dsv_formatted()`](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html)).
+**If you do use CSV/TSV files for analysis:** be sure to (1) manually define column types during import using the sidecar JSON metadata files and (2) replace blank values with `n/a` (missing values are blank in HBCD data following [BIDS specification](https://bids-specification.readthedocs.io/en/stable/common-principles.html#tabular-files)). We recommend using [NBDCtools](../access/tools.md#nbdctools) to automate these processes (e.g. [`read_dsv_formatted()`](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html)).
 
 #### Working with Parquet in Python and R
 
 <p>
-<div id="load-parquet" class="table-banner" onclick="toggleCollapse(this)">
+<div id="load-parquet" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji" style="margin-right: 4px;"><i class="fa-brands fa-python"></i>&nbsp;<i class="fa-brands fa-r-project"></i></span>
   <span class="text-with-link">
   <span class="text">Loading Parquet Files</span>
@@ -119,7 +113,7 @@ For large data, plain text formats (TSV/CSV) can cause import issues (in Python,
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<pre>Loading parquet files in Python (<a href="https://docs.pola.rs/" target="_blank">polars</a> or <a href="https://pandas.pydata.org/docs/getting_started/index.html" target="_blank">pandas</a> module):<code>
+<pre>Loading parquet files in Python (<a href="https://docs.pola.rs/">polars</a> or <a href="https://pandas.pydata.org/docs/getting_started/index.html">pandas</a> module):<code>
   # Using `polars` module [RECOMMENDED]:
   import polars as pl
   parquet_df = pl.read_parquet("path/to/file.parquet")
@@ -128,7 +122,7 @@ For large data, plain text formats (TSV/CSV) can cause import issues (in Python,
   import pandas as pd
   parquet_df = pd.read_parquet("path/to/file.parquet")
 </code></pre>
-<pre>Loading Parquet file in R (<a href="https://arrow.apache.org/docs/r/" target="_blank">arrow</a> package):<code>
+<pre>Loading Parquet file in R (<a href="https://arrow.apache.org/docs/r/">arrow</a> package):<code>
   # Using `arrow` package:
   library(arrow)
   parquet_df <- read_parquet("path/to/file.parquet")
@@ -140,7 +134,7 @@ For large data, plain text formats (TSV/CSV) can cause import issues (in Python,
 
 Each TSV or Parquet file in `/rawdata/phenotype/` has a corresponding **shadow matrix file** in the same format that record the reason for missing values (e.g., `Don't know`, `Decline to Answer`, `Logic Skipped`, etc.) in the phenotype data.
 
-<div id="sm-values" class="table-banner" onclick="toggleCollapse(this)">
+<div id="sm-values" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
   <span class="text">Shadow Matrix Values for Missingness</span>
@@ -185,7 +179,7 @@ The following domains/instruments have additional unique shadow matrix values us
 <td>
   <ul>
     <li><i>"Child's DOB not reported or available for participant"</i> [<code>{gestational|mother}_age_delivery</code>]</li>
-    <li><i>"Missing Information From Ripple"</i> [<a href="../../instruments/demo/basicdemo/#acs-derived-variables" target="_blank">ACS-derived fields</a>]</li>
+    <li><i>"Missing Information From Ripple"</i> [<a href="../../instruments/demo/basicdemo/#acs-derived-variables">ACS-derived fields</a>]</li>
   </ul> 
 </td>
 </tr>
@@ -227,7 +221,7 @@ Shadow matrices make analyses cleaner and more reliable by:
 
 While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, **there are situations where non-responses are themselves meaningful.** For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables. To understand patterns of missing data, users can re-integrate the non-responses from the shadow matrix back into the data using the following helper functions (*click to expand*):
 
-<div id="python-helper-function" class="table-banner" onclick="toggleCollapse(this)">
+<div id="python-helper-function" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-brands fa-python"></i></span>
   <span class="text-with-link">
   <span class="text">Python</span>
@@ -278,10 +272,10 @@ create_dataset(
 
 </div>
 
-<div id="r-helper-function" class="table-banner" onclick="toggleCollapse(this)">
+<div id="r-helper-function" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-brands fa-r-project"></i></span>
   <span class="text-with-link">
-  <span class="text">R (using <a href="../../access/tools.md#tabulated-data">NBDCtools</a>)</span>
+  <span class="text">R (using NBDCtools)</span>
   <a class="anchor-link" href="#r-helper-function" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>

@@ -1,105 +1,23 @@
-# Brief Infant Sleep Questionnaire (BISQ-SF)
+# Brief Infant Sleep Questionnaire
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>ph_cg_bisq</code></td></tr>
-<tr><td><b>Construct</b></td><td>Sleep</td></tr>
-<tr><td><b>Study Visits</b></td><td>V04</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
-<b>Respondent</b>: Parent on Child<br>
-<b>Method</b>: Remote survey (5 min estimated duration)</td></tr>
-<td><b>Quality Control</b></td>
-<td>Monitor data dashboard for variable missingness, possible coding errors, scoring verification when needed, and data consistency.</td></tr>
-</tbody>
-</table>
-
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</i></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p><b>Incomplete Summary Scores</b><br>
-Item-level responses are provided for the whole cohort; summary scores are present for all participants except those with data obtained in the month prior to the cutoff date for data inclusion (June 1st, 2025). Summary scores from <a href="http://babysleep.com">babysleep.com</a> will be available in subsequent releases.</p> 
-<p><b>Spanish Administration</b><br>
-Note that it is not currently possible to determine which participants were administered the Spanish version of the BISQ; a language field will be added in a future release.</p>
-<p><b>Appropriate Use</b><br>
-Scores are for research purposes only and are not for individual dissemination or clinical use.</p>
-</div>
-
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
+{{ readme_summary(instruments.bisq) }}
+{{ alert_warning(instruments.bisq) }}
+{{ data_warning(instruments.bisq) }}
+{{ issues_banner() }}
 
 ## Instrument Details
-The Brief Infant Sleep Questionnaire - Short Form (**BISQ-SF**) instrument has three subscales:
 
-<table class="compact-table-no-vertical-lines">
-<thead>
-  <tr>
-    <th style="width: 20%">Subscale</th>
-    <th style="white-space: nowrap !important;"># Items</th>
-    <th>Construct</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td><strong>Infant Sleep (IS)</strong></td>
-  <td style="text-align: center;">5</td>
-  <td>Sleep patterns: sleep onset latency, number and duration of night wakings, longest stretch of sleep, and total night sleep</td>
-</tr>
-<tr>
-  <td><strong>Parent Perception (PP)</strong></td>
-  <td style="text-align: center;">3</td>
-  <td>Caregiver perceptions of bedtime difficulty, overnight sleep, and overall child sleep problems</td>
-</tr>
-<tr>
-  <td><strong>Parent Behavior (PB)</strong></td>
-  <td style="text-align: center;">11</td>
-  <td>Sleep ecology: bedtime routine consistency, bedtime, parental behavior at time of sleep onset and following night wakings, and sleep locations at time of sleep onset and following night wakings</td>
-</tr>
-</tbody>
-</table>
+{{ instrument_description(instruments.bisq) }}
+{{ hbcd_mods(instruments.bisq) }}
+{{ scoring(instruments.bisq) }}
+{{ references(instruments.bisq) }}
 
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-    <span class="text">HBCD Modification Details</span>
-    <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>When the child is mentioned, pronouns were changed from "he/she" to “the child” or gender-neutral pronouns for gender neutrality.</p>
-</div>
 
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>The BISQ-SF is scored in collaboration with the instrument developers (<a href="https://www.babysleep.com/BISQ/">https://www.babysleep.com/BISQ/</a>). Parent responses are uploaded to the Baby Sleep team who scores the instrument utilizing a proprietary algorithm and then sends scores back to the HBCD data team. Note that the BISQ-R SF (short form) includes 19 scored questions and one additional sleep duration question which is not scored.</p>
-<p><b>From <a href="http://babysleep.com">babysleep.com</a></b>: Scores on each subscale and the total score are scaled from 0 to 100, with higher scores denoting better sleep quality, more positive perception of infant sleep, and parent behaviors that promote healthy and independent sleep. The Total score (T) is computed from the average of the 3 subscale scores.</p>
-</div>
+<!-- **Infant Sleep (IS)** (5 items)       
+    Sleep patterns, including sleep onset latency, number and duration of night wakings, longest stretch of sleep, and total nighttime sleep.
 
-## References
-<div class="references">
-<p>Mindell, J. A., Gould, R. A., Tikotzy, L., Leichman, E. S., & Walters, R. M. (2019). Norm-referenced scoring system for the Brief Infant Sleep Questionnaire - Revised (BISQ-R). <em>Sleep Medicine</em>, 63, 106–114. <a href="https://doi.org/10.1016/j.sleep.2019.05.010">https://doi.org/10.1016/j.sleep.2019.05.010</a></p>
-<p>Sadeh, A. (2004). A brief screening questionnaire for infant sleep problems: validation and findings for an Internet sample. <em>Pediatrics</em>, 113(6), e570-7. <a href="https://doi.org/10.1542/peds.113.6.e570">https://doi.org/10.1542/peds.113.6.e570</a></p>
-<p>Sadeh, A., Mindell, J. A., Luedtke, K., & Wiegand, B. (2009). Sleep and sleep ecology in the first 3 years: a web-based study. <em>Journal of Sleep Research</em>, 18(1), 60–73. <a href="https://doi.org/10.1111/j.1365-2869.2008.00699.x">https://doi.org/10.1111/j.1365-2869.2008.00699.x</a></p>
-</div>
+**Parent Perception (PP)** (3 items)      
+    Caregiver perceptions of bedtime difficulty, overnight sleep, and overall child sleep problems.
+
+**Parent Behavior (PB)** (11 items)       
+    Sleep ecology, including bedtime routine consistency, bedtime, parental behavior at sleep onset and following night wakings, and sleep locations at sleep onset and following night wakings. -->

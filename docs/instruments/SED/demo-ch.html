@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Child Demographics Branching Logic</title>
+
+  <link rel="stylesheet" href="../../css/tables.css">
+  <link rel="stylesheet" href="../../css/custom.css">
+
+  <style>
+    body {
+      margin: 2rem;
+      font-family: sans-serif;
+    }
+
+    .section-header td {
+      font-weight: 600;
+      background: #f5f7fa;
+      border-top: 2px solid #d7dce2;
+    }
+
+    .compact-table-no-vertical-lines th:first-child,
+    .compact-table-no-vertical-lines td:first-child {
+      width: 8%;
+      text-align: left;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>Child Demographics Branching Logic</h2>
+
+<p>
+The table below summarizes the branching logic used in this form. Only items involved in branching
+logic are included; questions without branching logic are omitted.
+</p>
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+  <th>Item</th>
+  <th>Question Text</th>
+  <th>Branching Logic</th>
+</tr>
+</thead>
+
+<tbody>
+
+<!-- Race & Ethnicity -->
+<tr class="section-header">
+  <td colspan="3">Race &amp; Ethnicity</td>
+</tr>
+
+<tr>
+  <td>3</td>
+  <td>Which categories describe your child? (Select all that apply)</td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td>4</td>
+  <td>American Indian or Alaska Native details</td>
+  <td>Item 3 = 0 (American Indian or Alaska Native)</td>
+</tr>
+
+<tr>
+  <td>5</td>
+  <td>Asian details</td>
+  <td>Item 3 = 1 (Asian)</td>
+</tr>
+
+<tr>
+  <td>6</td>
+  <td>Black, African American, or African details</td>
+  <td>Item 3 = 2 (Black, African American, or African)</td>
+</tr>
+
+<tr>
+  <td>7</td>
+  <td>Hispanic, Latino, or Spanish details</td>
+  <td>Item 3 = 3 (Hispanic, Latino, or Spanish)</td>
+</tr>
+
+<tr>
+  <td>8</td>
+  <td>Middle Eastern or North African details</td>
+  <td>Item 3 = 4 (Middle Eastern or North African)</td>
+</tr>
+
+<tr>
+  <td>9</td>
+  <td>Native Hawaiian or Other Pacific Islander details</td>
+  <td>Item 3 = 5 (Native Hawaiian or Other Pacific Islander)</td>
+</tr>
+
+<tr>
+  <td>10</td>
+  <td>White details</td>
+  <td>Item 3 = 6 (White)</td>
+</tr>
+
+<!-- Relationship -->
+<tr class="section-header">
+  <td colspan="3">Relationship &amp; Living with the Child</td>
+</tr>
+
+<tr>
+  <td>15</td>
+  <td>Do you live with the child?</td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td>16</td>
+  <td>How many days per month do you live with the child?</td>
+  <td>Item 15 = Yes</td>
+</tr>
+
+<!-- Child Custody -->
+<tr class="section-header">
+  <td colspan="3">Child Custody</td>
+</tr>
+
+<tr>
+  <td>18</td>
+  <td>Are you the child's legal guardian?</td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td>19</td>
+  <td>Aside from yourself, is there another adult in the household who is responsible for the child? […]</td>
+  <td>Item 18 = No</td>
+</tr>
+
+<tr>
+  <td>20</td>
+  <td>Is that other caregiver the child's legal guardian?</td>
+  <td>Item 19 = Yes</td>
+</tr>
+
+<tr>
+  <td>21</td>
+  <td>Does the child have a legal guardian living in the household?</td>
+  <td>Item 20 = No</td>
+</tr>
+
+<tr>
+  <td>22</td>
+  <td>Who is the child's legal guardian?</td>
+  <td>Item 21 = No</td>
+</tr>
+
+<!-- Household -->
+<tr class="section-header">
+  <td colspan="3">Household-Specific Details</td>
+</tr>
+
+<tr>
+  <td>27</td>
+  <td>
+    How would you describe this household?
+    <br>
+    <i>(1 = Private residence | 2 = Residence of relative/friend | 3 = Treatment facility | 4 = Shelter | 5 = No primary residence | 6 = Other)</i>
+  </td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td>28</td>
+  <td>How many rooms are in the house? […]</td>
+  <td>Item 27 = 1, 2, or 6</td>
+</tr>
+
+<tr>
+  <td>29</td>
+  <td>Excluding the child, how many people live in the child's household? […]</td>
+  <td>Item 27 = 1, 2, or 6</td>
+</tr>
+
+<tr>
+  <td>30</td>
+  <td>Number of adults (18 years of age or older)</td>
+  <td>Item 27 = 1, 2, or 6</td>
+</tr>
+
+<tr>
+  <td>31</td>
+  <td>Number of children (17 years of age or younger)</td>
+  <td>Item 27 = 1, 2, or 6</td>
+</tr>
+
+<tr>
+  <td>32</td>
+  <td>Total number in household (calculated field: Items 30 + 31)</td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><strong>34–39</strong></td>
+  <td><strong>Header rows for Persons 1–16</strong></td>
+  <td><strong>Item 32 ≥ 1</strong></td>
+</tr>
+
+<tr>
+  <td>40</td>
+  <td>Person 1 Age (Years)</td>
+  <td>Item 32 ≥ 1</td>
+</tr>
+
+<tr>
+  <td>41</td>
+  <td>Person 1 Age (Months)</td>
+  <td>Item 32 ≥ 1</td>
+</tr>
+
+<tr>
+  <td>42</td>
+  <td>Person 1 Gender</td>
+  <td>Item 32 ≥ 1</td>
+</tr>
+
+<tr>
+  <td>43</td>
+  <td>Person 1 Gender (Additional)</td>
+  <td>Item 32 ≥ 1</td>
+</tr>
+
+<tr>
+  <td>44</td>
+  <td>Person 1 Relationship to You</td>
+  <td>Item 32 ≥ 1</td>
+</tr>
+
+<tr>
+  <td>45</td>
+  <td>Person 1 Relationship to Child</td>
+  <td>Item 32 ≥ 1</td>
+</tr>
+
+<tr>
+  <td>46</td>
+  <td>Person 1 Caregiving</td>
+  <td>Item 32 ≥ 1</td>
+</tr>
+
+<tr>
+  <td>47–151</td>
+  <td><i>Persons 2–16 repeat Items 40–46 using the same branching logic.</i></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>152–280</td>
+  <td><i>Household 2 repeats Items 27–151 using the same branching logic.</i></td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</body>
+</html>

@@ -1,11 +1,19 @@
+<style>
+.wy-nav-content {
+    width: 90% !important;
+    max-width: 90% !important;
+    flex-grow: 1 !important;
+}
+</style>
+
 # Release Notes & History
 
-## Release 2.0
+## Release 2.1
 
 <div class="release-banner">
   <span class="release-text">
     <i class="fa-solid fa-calendar release-icon"></i>
-    Release Date: 2026-02-11
+    Release Date: 2026-08-14
   </span>
 </div>
 
@@ -37,97 +45,10 @@
   </div>
 </div>
 
-### Key Changes in 2.0
+### 2.1 New Instruments
 
-<ul>
-<li>New participant cohorts included: multiple birth participants and postnatal recruits (PNR)</li>
-<li>+40 new instruments across 10 domains</li>
-<li>Expanded MRI & EEG data (processed derivatives for more participants, no QC restriction on raw BIDS)</li>
-<li>Major data fixes and harmonization updates across multiple domains</li>
-</ul>
+Release data now include the addition of the following instruments:
 
-### Participant Population
-
-HBCD enrolls at least 25% of participants with more than minimal substance use during pregnancy, including opioids ([Si et al. 2024](https://doi.org/10.1016/j.dcn.2024.101432)). Enrollment strategies aim to yield a study population representative of individual and geographic characteristics of pregnant and postpartum individuals (18 years or older) in the U.S., including an adequate comparison group for substance-exposed individuals ([Nelson et al. 2024](https://doi.org/10.1016/j.dcn.2024.101441)). 
-
-### Inclusion & Exclusion Criteria
-
-<table class="compact-table-no-vertical-lines" style="font-size: 16px;">
-<thead>
-<tr>
-  <th colspan="2"><i>Items listed below are filtered/excluded from release data unless stated otherwise</i></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><b>Participants</b></td>
-  <td>
-  <ul>
-<li>DCC participants excluded</li>
-<li>Only CH Profiles included - Exclusion by PSCID prefix (PI, QI, XI, YI)</li>
-<li>Only 'Active' participants included</li>
-<li>Only selected 'Multiple Birth' profiles are included (based on clean-up procedures)</li>
-<li>Only selected 'Postnatal Recruitment' profiles are included (based on clean-up procedures)</li>
-<li>No sites excluded as of 2.0 </li>
-<li>Participant exclusion if 'Brain Rating' is 'Abnormal'</li>
-<li>Participant excluded due to 'Examiner' not 'REDCap' on REDCap surveys (possible modification of data between REDCap and LORIS, or data entered directly into LORIS) </li>
-</ul>
-  </td>
-</tr>
-<tr>
-  <td><b>Visits</b></td>
-  <td>
-   <ul>
-    <li>Only data from visits whose status is set to ‘LaunchPad Complete’ up to '2025-07-01' for 2.0 release and '2026-07-01' for 3.0 release (YYYY-MM-DD)</li>
-    <li>Forced insertion/exclusion of participants (based on 'LaunchPad Complete' date after July 1, 2024 exceptions granted for 1.0 release only)</li>
-    </ul>
-  </td>
-</tr>
-<tr>
-<td><b>Instruments</b></td>
-<td>
-    <ul>
-    <li>ERICA — <code>mh_cg_erica_{fcm_adm_}{3_7m|7_9m}</code></li>
-    <li>GABI Setup/Receipt — <code>nt_pa_gabi_{setup|rcpt}</code></li>
-    <li>MRI Data &amp; Scan Summary — <code>mri_ra_chkl_{data|scan}</code></li>
-    <li>NIH Baby Toolbox — <code>ncl_ch_nbtb</code></li>
-    <li>Participant &amp; RA Feedback — <code>adm_cg_fb</code> / <code>adm_ra_fb</code></li>
-    <li>Urgent Events &amp; Participant Alerts — <code>adm_fd_urgent</code> / <code>admin_alert</code></li>
-    </ul>
-</td>
-</tr>
-
-<tr>
-<td><b>Variables</b></td>
-<td>
-    <ul>
-    <li>Informant (<code>informant</code>), Validity (<code>validity</code>), Duration (<code>duration</code>), and Window Difference (<code>window_difference</code>)</li>
-    <li>Open text, descriptive, and line variables</li>
-    <li>Impossible or selected Extreme/Outlier values filtered out</li>
-    <li>Select Item/Score-level fields (hardcoded per instrument)</li>
-    </ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-### New Cohorts & Instruments
-
-Release data now include **multiple birth participants** (multiple participants from the same birth, e.g. twins) and **postnatal recruits (PNR)** who joined the study after the child is born (complete a modified V01 and V02). Participant IDs for multiples and PNR are provided in the *HBCD Private Release Notes* - see <a href="../../instruments/demo/visitinfo/#multiple-birth-participants" target="_blank">Multiple Birth Participants</a> under Visit Information for details.
-
-A number of new instruments were incorporated into R2.0 as well. Click to expand infobox below to view the full list.  
-
-<div id="2.0-new-tables" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-table"></i></span>
-  <span class="text-with-link">
-  <span class="text">+ 40 New Instruments Across 10 Domains</span>
-  <a class="anchor-link" href="#2.0-new-tables" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
@@ -137,141 +58,251 @@ A number of new instruments were incorporated into R2.0 as well. Click to expand
 </tr>
 </thead>
 <tbody>
+
 <tr>
-<td><a href="../../instruments/#adm" target="_blank"> Administrative</a></td>
-<td><span class="tooltip"><i class="fas fa-layer-group header-icon"></i><span class="tooltiptext">Concatenated data</span></span> Study Navigator Contact Form </td>
-  <td>Recruitment/Retention</td>
+<td>Behavior & Caregiver-Child Interaction</td>
+<td>ERICA (<code>mh_cg_erica{_rel}_3_9m</code>; raw scores only)</td>
+<td>Emotional Regulation</td>
 </tr>
+
 <tr>
-<td rowspan="7"><a href="../../instruments/#mh" target="_blank"> Behavior & Caregiver-Child Interaction</a></td>
-<td>CHAOS</td><td>Family Organization</td>
+<td>Biospecimen & Omics</td>
+<td>Olink Explore 384 Inflammation 1 Panel</td>
+<td>Maternal Inflammation</td>
 </tr>
-<tr><td>ecPROMIS CH-CG Relationship <b>[1-5 year]</b></td><td>Child-Caregiver Interaction</td></tr>
-<tr><td>ecPROMIS Peer Relationships</td><td>Peer Relationships</td></tr>
-<tr><td>ecPROMIS Self-Regulation</td><td>Self-Regulation and Flexibility</td></tr>
-<tr><td>FAD (GF6+)</td><td>Global Functioning of Family Unit</td></tr>
-<tr><td>ECBQ (VSF)+BI</td><td>Early Childhood Behavior + Inhibition</td></tr>
-<tr><td>MAPS-TL <b>[Toddlerhood & Preschool]</td> <td>Irritability</td></tr>
+
 <tr>
-<td><a href="../../instruments/#biospec" target="_blank">Biospecimen & Omics</a></td>
-<td><span class="tooltip"><i class="fas fa-layer-group header-icon"></i><span class="tooltiptext">Concatenated data</span></span> Illumina GDA GWAS</td>
-<td>GWAS, EWAS, Transcriptome</td>
-</tr>
-<tr><td rowspan="4"><a href="../../instruments/#ncl" target="_blank">Neurocognition & Language</a></td>
-<td>Bayley-4 Scales</td><td>Child Development (Cognitive, Language, Motor)</td>
-</tr>
-<tr><td>MacArthur-Bates CDI-I</td><td>Language Development (Words & Gestures)</td></tr>
-<tr><td>SPM-2 <b>[Toddler]</b></td>  <td>Sensory Processing/Integration</td></tr>
-<tr><td>Vineland Adaptive Behavior</td><td>Adaptive Behavior</td></tr>
-<tr><td rowspan="7"><a href="../../instruments/#ph" target="_blank"> Physical Health</a></td>
-<td>Brief Infant Sleep Questionnaire</td><td>Sleep</td>
-</tr>
-<tr><td>ecPROMIS Physical Activity/Greenspace</td> <td>Physical Activity</td></tr>
-<tr><td>ecPROMIS Sleep</td> <td>Sleep</td></tr>
-<tr><td>Medical History</td><td>Medical History</td></tr>
-<tr><td>Infant Nutrition Questionnaire</td><td>Nutrition</td></tr>
-<tr><td>Screen-Based Media Use (<i>ScreenQ</i>)</td><td>Media Use</td></tr>
-<tr><td>Vision Screener</td><td>Vision</td></tr>
-<tr><td rowspan="2"><a href="../../instruments/#pex" target="_blank"> Pregnancy & Exposure</a></td>
-<td>ASSIST <b>[V4]</b></td>  <td>Substance Use Post-Pregnancy</td></tr>
-<tr><td>Substance Use Patterns</td>  <td>Substance Use in Pregnancy</td></tr>
-<tr><td rowspan="12"><a href="../../instruments/#sed" target="_blank"> Social & Environment</a></td>
-<td><span class="tooltip"><i class="fas fa-layer-group header-icon"></i><span class="tooltiptext">Concatenated data</span></span> Geocoded Linkage</td>  <td>Neighborhood Measures</td></tr>
-<tr><td>ACEs</td>  <td>Adverse Childhood Experiences</td></tr>
-<tr><td>Child Demographics</td><td>Demographics</td></tr>
-<tr><td>Composite Abuse Scale (CABr-SF)</td>  <td>Intimate Partner Violence</td></tr>
-<tr><td>Current Employment</td><td>Current Employment</td></tr>  
-<tr><td>HOME-21 IT</td><td>Child’s Home Environment</td></tr>  
-<tr><td>Household Chemical Exposures</td> <td>Household Chemical Exposures</td></tr>  
-<tr><td>Lead Exposures</td><td>Lead Exposures</td></tr> 
-<tr><td>PACES <b>[&lt;18]</b></td><td>Protective Factors</td></tr>  
-<tr><td>Second Hand Smoke Exposure</td> <td>Second Hand Smoke Exposure</td></tr>
-<tr><td>Transition in Care Screener</td><td>Recruitment/Retention</td></tr>
-<tr><td>Vancouver Index of Acculturation (VIA)</td><td>Acculturation</td></tr> 
-<td rowspan="2"><a href="../../instruments/#eeg" target="_blank"> EEG</a></td>
-<td>EEG Acquisition Checklist + Reattempt 1/2</td><td>Acquisition Checklists</td></tr>
-<tr><td>ERP SummaryStats</td><td>Tabulated HBCD-MADE derivatives</td></tr>
-<tr>
-<td><a href="../../instruments/#mri" target="_blank"> MRI</a></td>
-<td>Pre-Scan Questionnaire</td><td>Infant Sleep Environment</td>
+<td rowspan="2">Tabulated Imaging</td>
+<td>MRI Data Summary Form</a></td>
+<td>Pre-/Post-MRI Tech Checklist 2</td>
 </tr>
 <tr>
-<td><a href="../../instruments/#sensors" target="_blank"> Novel Tech & Wearables</a></td>
-<td>Biosensor Receipt & Setup</td><td>Administrative</td></tr>
+<td>MRI Scan Session Summary Form</td>
+<td>Pre-/Post-MRI Tech Checklist 1</td>
 </tr>
+
 </tbody>
 </table>
+
+<a href="../../instruments/" class="button-link"> All instruments by domain →</a>
+
+### 2.1 Resolved Known Issues & Updates
+
+<div id="data-warning" class="banner data-warning" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
+<span class="text-with-link">
+  <span class="text">Updates to data dictionary not yet incorporated into JSON metadata files</span>
+  <a class="anchor-link" href="#data-warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+</span>
+<span class="arrow">▸</span>
+</div>
+<div class="collapsible-content" style="background-color: #fcfaed;">
+<p>For Release 2.1, updates were applied to the data dictionary information available via query tools within the NBDC Data Access Platform and DEAP. For users who download tabulated data in their original BIDS folder structure (e.g. via the "All Study Data" option), note that the metadata within these JSON files do not yet contain these updates. This is planned for a future release.</p>
+<p>A detailed summary of differences between the online data dictionaries and JSON file data is available <a href="https://hbcd-docs-internal.readthedocs.io/latest/changelog/versions/BR2X/BR21.3/#data-dictionary-updates">here</a>.</p>
 </div>
 
-### MRI & EEG Updates   
+---
 
-<ul>
-<li>Raw BIDS data now includes all available data, not restricted to data that only passed raw data quality control.</li>
-<li>Raw and processed data included for additional participants and visits.</li>
-<li>MRI scanner details now included in the session-level Scans TSV files, including: <code>ScannerManufacturer</code>, <code>ScannerModel</code>, <code>ScannerSoftwareVersion</code>, and <code>ScannerSerialNumber</code>.</li>
-<li>New procedures were implemented to remove processed MRI data with serious data quality issues (<a href="../../instruments/mri/#processed-derivatives">see details</a>).</li>
-</ul>
+<p style="font-size: 1.1em; color: #555; text-align: center;">
+<i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Resolved Known Issue &nbsp;&nbsp;&nbsp;
+<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Completed Pending Update</p>
 
-### Resolved Known Issues
-
-<table class="table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th>Domain</th>
-<th>Updates</th>
+<th style="width: 20%; white-space: nowrap;">Topic/Instrument</th>
+<th>Summary of Changes</th>
 </tr>
 </thead>
 <tbody>
+
+<tr class="table-group-row">
+  <td colspan="3">General</td>
+</tr>
+
 <tr>
-<td><b>General</b></td>
-<td>• Standardized Parquet precision by regenerating all data in a single step (<code>type_data</code> = <i>double</i>)</td>
+<td>Language</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added language of administration across all instruments where applicable</td>
+</tr>
+
+<tr class="table-group-row">
+  <td colspan="3">Administrative</td>
 </tr>
 <tr>
-<td><b>Demographics</b></td>
-<td>
-<b>Basic Demographics (<code>sed_basic_demographics</code>)</b><br>
-• Removed invalid <code>screen_mother_race</code> response option (2 = <i>Hawaiian</i>)<br>
-• Removed ACS Child Multi-Race (duplicate coding to <code>child_ethnoracial_acs_by_multi_ethnicity</code>)<br>
-• Removed Child Multi-Ethnicity V01 data<br><br>
-<b>Visit Data (<code>par_visit_data</code>)</b><br>
-• Set withdrawal dates for participants who did not withdraw to null (from 12/26/1999)<br>
-• Removed V02 urine toxicology substance use flags (urine not collected at V02)<br>
-• Corrected TLFB substance use flags for missing V02 visits ('no' → null)
-</td>
+<td>Study Navigators</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> SUBSTANCE_USE and OTHER checkbox fields populated</td>
+</tr>
+
+<tr class="table-group-row">
+  <td colspan="3">Behavior & Caregiver-Child Interaction</td>
 </tr>
 <tr>
-<td><b>Biospecimen &amp; Omics</b></td>
-<td>
-<b>Urine Toxicology</b><br>
-• Restored missing values for cotinine (<code>*_results_bio_c_cot_u</code>) incorrectly set to 0 (N = 18)
-</td>
+<td>ECBQ</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>  Coding for "Does not apply" changed to 8 to match the IBQ-R.</td>
+</tr>
+
+<tr class="table-group-row">
+  <td colspan="3">Biospecimens & Omics</td>
+</tr>
+
+<tr>
+<td>Nails</td>
+<td><i class="fas fa-bug icon-bug"></i> Added unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
 </tr>
 <tr>
-<td><b>Neurocognition &amp; Language</b></td>
-<td>
-<b>SPM-2 (<code>ncl_cg_spm2__inf</code>)</b><br>
-• Added age fields (gestational, adjusted, candidate)<br>
-• Added missing status scores
-</td>
+<td>Nails &amp; Urine</td>
+<td><i class="fas fa-bug icon-bug"></i> Removed quotes in data dictionary level values causing double quotes in downloaded data, e.g. 1=""positive""</td>
 </tr>
 <tr>
-<td><b>Pregnancy &amp; Exposure</b></td>
-<td>
-<b>APA 1/2 (<code>pex_bm_apa_anger_*</code>)</b><br>
-• Added missing T-scores and total scores for Anger subscale<br><br>
-<b>TLFB (<code>pex_ch_tlfb</code>)</b><br>
-• Added age variables (gestational / adjusted / candidate age)
-</td>
+<td>Urine</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added creatinine results (<code>bio_creat_u</code>).</td>
+</tr>
+
+<tr class="table-group-row">
+  <td colspan="3">Demographics</td>
 </tr>
 <tr>
-<td><b>Social &amp; Environmental</b></td>
-<td>
-<b>eHITS (<code>sed_bm_ehits</code>)</b><br>
-• Corrected score calculations (<code>score</code>, <code>total_score</code>)
-</td>
+<td>Basic Demo</td>
+<td><i class="fas fa-bug icon-bug"></i> Removed internal dictionary <code>recruitment_site</code> categories not present in data (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
 </tr>
-</tbody>
-</table>
+<tr>
+<td>Visit Info</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> New derived/rolled up substance use flag for Stimulants</td>
+</tr>
+
+<tr>
+<td>Visit Info</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> SU flags now include Nail toxicology results in addition to Urine</td>
+</tr>
+
+<tr class="table-group-row">
+  <td colspan="3">EEG</td>
+</tr>
+<tr>
+<td>HBCD-MADE</td>
+<td><i class="fas fa-bug icon-bug"></i> Added missing FACE/MMN tabulated data for N=3 V04 session derivatives</td>
+</tr>
+<tr>
+<td>.set files</td>
+<td><i class="fas fa-bug icon-bug"></i> Updated .set files to include subject release IDs</td>
+</tr>
+
+
+<tr class="table-group-row">
+  <td colspan="3">MRI</td>
+</tr>
+<tr>
+<td>Raw BIDS</td>
+<td><i class="fas fa-bug icon-bug"></i> Corrected 2 corrupted bold runs in V02 raw BIDs</td>
+</tr>
+
+<tr>
+<td>XCP-D</td>
+<td><i class="fas fa-bug icon-bug"></i> Corrected <code>sub_domain</code> values in tabulated XCP-D Myers-Labonte metadata to <code>Structural MRI</code></td>
+</tr>
+
+<tr>
+<td>BrainSwipes</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Addition of complete BrainSwipes MRI QC results</td>
+</tr>
+
+<tr class="table-group-row">
+  <td colspan="3">Neurocognition & Language</td>
+</tr>
+<tr>
+<td>Vineland</td>
+<td><i class="fas fa-bug icon-bug"></i> Corrected subset of variables with typo in the spelling of "receptive"</td>
+</tr>
+
+<tr>
+<td>Bayley-4</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added item-level scores</td>
+</tr>
+<tr>
+<td>SPM-2</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added raw and T-scores</td>
+</tr>
+<tr>
+<td>Vineland</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added language field</td>
+</tr>
+
+<tr class="table-group-row">
+  <td colspan="3">Physical Health</td>
+</tr>
+<tr>
+<td>Growth</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added age-based z-scores to <code>ph_ch_anthro</code></td>
+</tr>
+<tr>
+<td>ecPROMIS-PAGS</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added scores to <code>ph_cg_pms__pags</code></td>
+</tr>
+<tr>
+<td>ecPROMIS-Sleep</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added <code>ph_cg_pms__sleep</code> summary scores</td>
+</tr>
+
+<tr class="table-group-row">
+  <td colspan="3">Pregnancy & Environmental Exposure</td>
+</tr>
+
+<tr>
+<td>APA 1/2</td>
+<td><i class="fas fa-bug icon-bug"></i> Removed APA L2 item data in cases where L2 was administered despite unmet gating criteria (missing L1 responses and scoring)</td>
+</tr>
+
+<tr class="table-group-row">
+  <td colspan="3">Social & Environmental Determinants/td>
+</tr>
+<tr>
+<td>C-PACEs</td>
+<td><i class="fas fa-bug icon-bug"></i> Corrected summary scores</td>
+</tr>
+
+<tr>
+<td>Demographics (Adult)</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added V01 household income (<code>income_002</code>)<br>
+  <i class="fa-solid fa-rotate icon-rotate"></i> Added Other Biological Parent information variables<br>
+  <i class="fa-solid fa-rotate icon-rotate"></i> Added <code>work_{002–004}_post</code> (worked for pay + for X hours while pregnant)<br>
+  <i class="fa-solid fa-rotate icon-rotate"></i> Added <code>work_004__01</code> (job held ≥1 month since V01)<br>
+  <i class="fa-solid fa-rotate icon-rotate"></i> Re-addition of variables <code>sed_bm_demo_residence_{001|002}</code>
+  </td>
+</tr>
+</tbody></table>
+
+
+### 2.1 Inclusion & Exclusion Criteria
+
+##### Participants
+- DCC participants excluded
+- Only CH Profiles included — Exclusion by PSCID prefix (PI, QI, XI, YI)
+- Only 'Active' participants included
+- Only selected 'Multiple Birth' profiles are included (based on clean-up procedures)
+- Only selected 'Postnatal Recruitment' profiles are included (based on clean-up procedures)
+- No sites excluded as of 2.0
+- Participant exclusion if 'Brain Rating' is 'Abnormal'
+- Participant excluded due to 'Examiner' not 'REDCap' on REDCap surveys (possible modification of data between REDCap and LORIS, or data entered directly into LORIS)
+
+##### Visits
+- Only data from visits whose status is set to 'LaunchPad Complete' up to '2025-07-01' for 2.0 release and '2026-07-01' for 3.0 release (YYYY-MM-DD)
+- Forced insertion/exclusion of participants (based on 'LaunchPad Complete' date after July 1, 2024 exceptions granted for 1.0 release only)
+
+##### Instruments
+- GABI Setup/Receipt — `nt_pa_gabi_{setup|rcpt}`
+- NIH Baby Toolbox — `ncl_ch_nbtb`
+- Participant & RA Feedback — `adm_cg_fb` / `adm_ra_fb`
+- Urgent Events & Participant Alerts — `adm_fd_urgent` / `admin_alert`
+
+##### Variables
+- Informant (`informant`), Validity (`validity`), Duration (`duration`), and Window Difference (`window_difference`)
+- Open text, descriptive, and line variables
+- Impossible or selected Extreme/Outlier values filtered out
+- Select Item/Score-level fields (hardcoded per instrument)
+
+---
 
 ## Release History
 
@@ -286,20 +317,32 @@ Prior release notes are available via prior versions of this site as follows (al
 </tr>
 </thead>
 <tbody>
+
 <tr>
-<td><strong>1.0</strong></td>
-<td>2025-06-26</td>
+<td><strong>2.0</strong></td>
+<td>2026-02-11</td>
 <td>
-  <a href="https://docs.hbcdstudy.org/r1.0/changelog/versions/R1/" target="_blank">
+  <a href="https://docs.hbcdstudy.org/r2.0/changelog/release-notes/#release-20">
     View Release Notes
   </a>
 </td>
 </tr>
+
 <tr>
 <td><strong>1.1</strong></td>
 <td>2025-10-10</td>
 <td>
-  <a href="https://docs.hbcdstudy.org/r1.1/changelog/releasenotes/#version-r11" target="_blank">
+  <a href="https://docs.hbcdstudy.org/r1.1/changelog/releasenotes/#version-r11">
+    View Release Notes
+  </a>
+</td>
+</tr>
+
+<tr>
+<td><strong>1.0</strong></td>
+<td>2025-06-26</td>
+<td>
+  <a href="https://docs.hbcdstudy.org/r1.0/changelog/versions/R1/">
     View Release Notes
   </a>
 </td>

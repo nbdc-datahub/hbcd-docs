@@ -1,173 +1,23 @@
-# Overview & EEG Protocols
+# EEG Protocols
 
-The HBCD study includes four electroencephalography (EEG) tasks collected during visits V03, V04, and V06: Auditory Mismatch Negativity (MMN), Faces (FACE), Video Resting State (RS), and Visual Evoked Potential (VEP). See [HBCD EEG Tasks](tasks.md) for detailed descriptions of each task.
+The HBCD study includes four EEG tasks collected during visits V03, V04, and V06. EEG protocols are described in detail in [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and fully documented the [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030) and the [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/). 
 
-## EEG Protocols
+**Click the links below to view high-level summaries for each task:**
 
-**EEG protocols** are described in detail in [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and fully documented in [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030).
+- [**MMN** - Auditory Mismatch Negativity](tasks/mmn.md)
+- [**FACE** - Faces](tasks/faces.md)
+- [**VEP** - Visual Evoked Potential](tasks/vep.md)
+- [**RS** - Video Resting State](tasks/rs.md)
+
 
 <img src="images/EEGParams.png" style="max-width:100%; height:auto;">
 
-## Release Data
+---
 
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-circle"></i></span>
-    <span class="text-with-link">
-    <span class="text">Responsible Use Warning</span>
-    <a class="anchor-link" href="#alert" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-    </a>
-    </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="alert-collapsible-content">
-<p>The HBCD EEG data and EEG preprocessing outputs do not contain any personally identifiable information. It is important to consider that potentially stigmatizing conclusions could emerge from the inappropriate use of the EEG data together with available demographic information or questionnaires. Furthermore, all EEG tasks are all passive at the V03 age range and therefore conclusions should not be drawn about behavioral performance.</p> 
-<p>Methodologically, there are a number of best practices for responsible data use that will be included with each file. The first is selecting files that maintain a minimum trial threshold recommendation. For each task, there are three levels of quality control thresholds that can be used: (1) our QC thresholds used to provide feedback to sites on each upload, (2) a 30% trial retention threshold (which we use internally to indicate usability of an EEG recording), and (3) the reliability recommendations for each task.</p>
-<p><b>Threshold recommendations by task:</b>
-<ul>
-<li>RS - 108 trials</li>
-<li>FACE - 15 trials for each condition of interest</li>
-<li>MMN - 30 trials for each condition of interest</li>
-<li>VEP - 36 trials.</li>
-</ul>
-</p>
-<p>An additional consideration for responsible use of the HBCD EEG dataset applies to disproportionate missing data. It is possible that some participant data may be systematically missing from this dataset by virtue of not meeting the QC thresholds. For instance, with infants that are inattentive and prone to fussing out during the EEG recording, more data may be removed from their datasets by our preprocessing scripts. A similar risk holds with participants  who have thick or dense hairstyling and hair texture, which may impact capping success, impedance, and data quality (<a href="https://doi.org/10.1038/s41539-024-00240-y">Adams et al., 2024</a>). The consortium has proactively worked to address this risk by using scheduling procedures that are flexible to participants hairstyling routines and by purchasing 3 long pedestal nets per site in sizes appropriate for the V03, V04, and V06 visits (<a href="https://doi.org/10.1038/s41539-024-00240-y">Adams et al., 2024</a>; <a href="https://doi.org/10.1016/j.dcn.2024.101396">Mlandu et al., 2024</a>). Preliminary analyses indicate that capping quality for visits where the long pedestal net was used have been consistent with capping quality seen for the dataset at large.</p>
-<p>It is important to use these data in a manner which takes into account that physical and neurological differences between groups are not necessarily representative of intrinsic qualities of a given demographic  group. Discussions around data patterns should be sensitive to societal factors. In addition, it is important to note that variation within demographic populations is greater than variation across populations. Demographic markers are categorical proxies that cannot capture or explain the causal mechanisms that may account for evident differences.</p>
-</div>
 
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
-<p></p>
+{{ alert_warning(instruments.eeg) }}
+{{ data_warning(instruments.eeg) }}
+{{ issues_banner() }}
 
-EEG release data include the following - <i>see <a href="../../datacuration/overview" target="_blank">Data Structure Overview</a> for an explanation of these data types</i>:
 
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr><td><b><i class="fas fa-hammer header-icon"></i> Raw BIDS</b></td>
-<td>File-based data in modality-specific formats under subject- and session-specific <code>rawdata/</code> folders</td></tr>
-<tr><td><b><i class="fas fa-cog header-icon"></i> Derivatives</b></td>
-<td>File-based data in modality-specific formats processed through HBCD-MADE pipeline</td></tr>
-<tr><td><b><i class="fas fa-table header-icon"></i> Tabulated Data</b></td>
-<td>Pipeline derivatives in HBCD-tabulated format - see <a href="../#eeg" target="_blank">Tabular EEG</a>
-</td></tr>
-</tbody></table>
 
-<div id="rawbids" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-<span class="text">Raw BIDS Files (<code>eeg/</code>)</span>
-  <a class="anchor-link" href="#rawbids" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>Each participant’s BIDS <code>eeg/</code> folder contains task-specific .set and .fdt EEG recordings, along with channel metadata (<i>channels</i> and <i>events</i> TSF files). Electrodes are placed on either the head or chest (<i>acq-eeg/ecg</i>) and electrode placement information is stored in <i>electrodes</i> TSV files accompanied by <i>coordsystem</i> JSON files that define the Cartesian coordinates. Finally, the <code>sourcedata/</code> subfolder includes impedance measurements (<i>impedances</i> JSON) used to ensure good electrode contact and task <i>eventlogs</i> txt files describing stimulus presentation timing.<br>
-<p><a href="../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
-<pre class="folder-tree">
-hbcd/
-└── rawdata/
-    └── sub-[ID]/
-        └── ses-[V0X]/
-            └── eeg/
-              <span class="hashtag"># Task Acquisitions</span>
-                ├── *_task-<span class="var">{TASK}</span>_acq-<span class="var">{eeg|ecg}</span>_run-[X]_channels.tsv
-                ├── *_task-<span class="var">{TASK}</span>_acq-<span class="var">{eeg|ecg}</span>_run-[X]_eeg.set <span class="hashtag">(+JSON)</span>
-                ├── *_task-<span class="var">{TASK}</span>_acq-<span class="var">{eeg|ecg}</span>_run-[X]_events.tsv <span class="hashtag">(+JSON)</span>
-                ├── *_task-<span class="var">{TASK}</span>_acq-eeg_run-[X]_eeg.fdt
-              <span class="hashtag"># Electrode Placement</span>
-                ├── *_acq-eeg_space-<span class="var">{CapTrak|CTF}</span>_electrodes.tsv
-                ├── *_acq-eeg_space-<span class="var">{CapTrak|CTF}</span>_coordsystem.json
-                └── sourcedata/
-                    ├── *_acq-eeg_flags.json
-                    ├── *_acq-eeg_impedances.json
-                    └── *_task-<span class="var">{TASK}</span>_acq-eeg_run-[X]_eventlogs.txt
-
-<span class="hashtag"># Label Values Legend</span>
-File Prefixes: sub-[ID]_ses-[V0X]
-<span class="var">TASK</span>: FACE, MMN, RS, VEP
-</pre>
-<p><b>BIDS Conversion Procedures</b><br>BIDS conversion was performed with the <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application for HBCD EEG data management and formatting, installed at all HBCD sites. After each EEG session, raw data are uploaded to the Wizard, which converts them to the BIDS standard.</p>
-</div>
-
-<div id="made" class="table-banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-<span class="text">HBCD MADE Derivatives (<code>made/</code>)</span>
-  <a class="anchor-link" href="#made" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p>EEG data were processed using the <a href="https://docs-hbcd-made.readthedocs.io/" target="_blank">HBCD-MADE</a> pipeline, as described in the <a href="#data-processing">Data Processing</a> summary on this page. The file structure of derivative outputs included in the release is as follows:</p>
-<p><a href="../../datacuration/overview/#filetrees" target="_blank"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees</a></p>
-<pre class="folder-tree" style="font-size: 11.5px">
-hbcd/
-└── derivatives/
-    └── made/
-        └── sub-[ID]/
-            └── ses-[V0X]/
-                └── eeg/
-                    ├── filtered_data/
-                    │   └── *_task-<span class="var">{TASK}</span>_acq-eeg_run-[X]_desc-filtered_eeg<span class="var">{.fdt|.set}</span>
-                    │
-                    ├── ica_data/
-                    │   ├── *_adjustReport.txt
-                    │   └── *_desc-mergedICA_eeg<span class="var">{.fdt|.set}</span>
-                    │
-                    ├── merged_data/
-                    │   └── *_desc-merged_eeg<span class="var">{.fdt|.set}</span>
-                    │   └── *_desc-merged_eeg.json
-                    │
-                    ├── processed_data/
-                    │   ├── *.jpg <span class="comment"># Topographic and ERP plots- <a href="https://docs-hbcd-made.readthedocs.io/en/latest/expected-outputs/#expected-outputs-from-hbcd-made">see details</a></span>
-                    │   ├── *_task-RS_<span class="var">{Log|db|Abs}</span>PowerSpectra.csv
-                    │   ├── *_task-RS_spectra.mat
-                    │   ├── *_task-<span class="var">{FACE|MMN|VEP}</span>_ERPSummaryStats.csv
-                    │   ├── *_task-<span class="var">{FACE|MMN|VEP}</span>_ERPTrialMeasures.csv
-                    │   ├── *_task-<span class="var">{FACE|MMN|VEP}</span>_acq-eeg_run-[X]_ERP.mat
-                    │   └── *_task-<span class="var">{TASK}</span>_acq-eeg_run-[X]_desc-filteredprocessed_eeg<span class="var">{.fdt|.set}</span>
-                    │
-                    ├── *_acq-eeg_preprocessingReport.csv
-                    └── *_task-<span class="var">{TASK}</span>_acq-eeg_run-[X]_MADEspecification.json
-
-<span class="hashtag"># Label Values Legend</span>
-File Prefixes: sub-[ID]_ses-[V0X]
-<span class="var">TASK</span>: FACE, MMN, RS, VEP
-</pre>
-</div>
-
-## Data Processing
-
-EEG data were processed using **[HBCD-MADE](https://docs-hbcd-made.readthedocs.io)**, an adaptation of the Maryland Analysis of Developmental EEG (MADE) pipeline ([Debnath et al., 2020](https://doi.org/10.1111/psyp.13580)) developed specifically for the HBCD Study. HBCD-MADE is implemented as a containerized BIDS App that adheres to HBCD [Processing & Derivative Data Standards](../../standards/processing/standards.md).
-
-Full documentation of **processing parameters**, **pipeline configuration**, and **file selection logic** is available at:
-
-- The official [HBCD-MADE documentation site](https://docs-hbcd-made.readthedocs.io)
-- The external [HBCD Processing website](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/made.html)
-
-#### File Selection For Processing
-
-Not all raw EEG sessions are eligible for processing. Inclusion in the HBCD-MADE pipeline requires that sessions meet predefined <a href="qc/#eeg-net-placement-capping-quality-ratings">quality control</a> criteria. Common causes of exclusion include missing EEG capping images or very poor capping quality. For participants with multiple EEG acquisition attempts within a session, **only the final run was processed and included in the MADE derivatives.**
-
-#### Expected Differences Between Raw BIDS and Derivatives
-
-Raw BIDS data are released for all collected EEG sessions, regardless of processing eligibility. Therefore, **differences in session counts between raw BIDS and HBCD-MADE derivatives are expected.** In addition to exclusion based on quality control, ~2% of sessions had technical or acquisition issues that prevented complete processing. These data may be made available in future releases as issues are resolved.
-
-## Resources
-- [HBCD E-Prime Task Manual](https://docs.google.com/document/d/1PghQQpLbxjQavtVlHyIz7JVJxlyKcC4Do8z8j7srdaI/edit?usp=sharing)
-- [HBCD EEG Acquisition Protocol](https://zenodo.org/records/14795030)
-
-## References
-
-<div class="references">
-    <p>Adams, E. J., Scott, M. E., Amarante, M., Ramírez, C. A., Rowley, S. J., Noble, K. G., & Troller-Renfree, S. V. (2024). Fostering inclusion in EEG measures of pediatric brain activity. <i>Npj Science of Learning</i>, 9(1), 27. <a href="https://doi.org/10.1038/s41539-024-00240-y" target="_blank">https://doi.org/10.1038/s41539-024-00240-y</a></p>  
-    <p>Debnath, R., Buzzell, G. A., Morales, S., Bowers, M. E., Leach, S. C., & Fox, N. A. (2020). The Maryland analysis of developmental EEG (MADE) pipeline. <i>Psychophysiology</i>, 57(6), e13580. <a href="https://doi.org/10.1111/psyp.13580" target="_blank">https://doi.org/10.1111/psyp.13580</a></p>  
-    <p>Fox, N. A., Pérez-Edgar, K., Morales, S., Brito, N. H., Campbell, A. M., Cavanagh, J. F., Gabard-Durnam, L. J., Hudac, C. M., Key, A. P., Larson-Prior, L. J., Pedapati, E. V., Norton, E. S., Reetzke, R., Roberts, T. P., Rutter, T. M., Scott, L. S., Shuffrey, L. C., Antúnez, M., Boylan, M. R., … Yoder, L. (2024). The development and structure of the Healthy Brain and Child Development (HBCD) study EEG Protocol. <i>Developmental Cognitive Neuroscience</i>, 69, 101447. <a href="https://doi.org/10.1016/j.dcn.2024.101447" target="_blank">https://doi.org/10.1016/j.dcn.2024.101447</a></p> 
-    <p>Mlandu, N., McCormick, S. A., Davel, L., Zieff, M. R., Bradford, L., Herr, D., Jacobs, C. A., Khumalo, A., Knipe, C., Madi, Z., Mazubane, T., Methola, B., Mhlakwaphalwa, T., Miles, M., Nabi, Z. G., Negota, R., Nkubungu, K., Pan, T., Samuels, R., … Gabard-Durnam, L. J. (2024). Evaluating a novel high-density EEG sensor net structure for improving inclusivity in infants with curly or tightly coiled hair. <i>Developmental Cognitive Neuroscience</i>, 67(101396), 101396. <a href="https://doi.org/10.1016/j.dcn.2024.101396" target="_blank">https://doi.org/10.1016/j.dcn.2024.101396</a></p> 
-</div>

@@ -6,15 +6,13 @@
   <span style="
     display:inline-block;
     background-color: #00d7d7af;
-    color:#444;
     font-size:1.1em;
     font-weight:600;
     padding:6px 14px;
     border-radius:20px;
     letter-spacing:0.5px;
     text-transform:uppercase;">
-    Data Release 2.0
-    <!-- PATCH UPDATE: Data Release 2.1 -->
+    Data Release 2.1
   </span>
 </p>
 
@@ -25,13 +23,9 @@
 
 <p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 2 auto;">
   Explore detailed information about annual HBCD Study data releases hosted by the 
-  <a href="https://nbdc-splash-beta.lassoinformatics.com" target="_blank">NBDC Data Hub</a>.<br>
-  See the <a href="changelog/releasenotes" target="_blank">Release Notes</a> for information on the latest release.
+  <a href="https://nbdc-splash-beta.lassoinformatics.com">NBDC Data Hub</a>.<br>
+  See the <a href="changelog/release-notes/">Release Notes</a> for information on the latest release.
 </p>
-
-<!-- <p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 2 auto;">
-  Key resources provided in the HBCD Data Release Docs include: <a href="access/download" target="_blank">Access & Download</a>, <a href="access/resp_data_use">Responsible Use</a>, <a href="instruments/">Data Structures</a>, <a href="instruments/">Instrument/Measure Documentation</a>, and <a href="instruments/processing/standards/">Processing Standards</a>.
-</p> -->
 
 <p></p>
 
@@ -40,13 +34,14 @@
   (<a href="https://hbcdstudy.org/">hbcdstudy.org</a>) for comprehensive information about the study.
 </p>
 
-<p class="button-link-wrapper">
-  <a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study"
-     class="button-link">
-    HBCD Study on NBDC Data Hub
-    <i class="fa-solid fa-up-right-from-square"></i>
-  </a>
+<p></p>
+
+<p align="center">
+<a href="https://nbdc-splash-beta.lassoinformatics.com/hbcd-study" class="button-link" style="justify-content: center;">HBCD Study on NBDC Data Hub →
+</a>
 </p>
+
+
 
 <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ddd;">
 

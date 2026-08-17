@@ -1,24 +1,18 @@
 site_name: HBCD Data Release Docs
+site_url: https://docs.hbcdstudy.org/latest/
 
 use_directory_urls: true
 
 theme:
   name: readthedocs
-  custom_dir: docs/overrides # for template overrides, used in this case for addition of "Page Last Updated: <DATE>" to pages
-  features:
-    - content.code.annotate 
-    - toc.integrate
-    - toc.follow
-    - navigation.expand
-    - navigation.instant
-    - navigation.sections
-    - header.autohide
  
 markdown_extensions:
   - toc:
       permalink: '🔗'  
+      toc_depth: 6  # Include headers 1 - 6
   - pymdownx.arithmatex
   - pymdownx.snippets
+  - md_in_html # allows you to add markdown within html blocks and still render correctly
 
 extra_javascript:
   - js/extra.js
@@ -33,15 +27,16 @@ extra:
     property: G-BY0EH2K1YQ
 
 extra_css:
-  - css/banners.css
   - css/custom.css
+  - css/banners.css
   - css/tables.css
-  - overrides/styles.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
   - https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css
 
 plugins:
   - search
+  - macros 
+  - include-markdown
   - git-revision-date-localized:
       type: date
 
@@ -57,9 +52,8 @@ nav:
     - Study Protocol: standards/protocol.md
     - Data Dictionary: standards/metadata.md
     - Naming Conventions: standards/naming-conventions.md
-    - Processing & Derivative Data Standards: 
-        - Processing Pipelines: standards/processing/index.md
-        - Pipeline Software Standards: standards/processing/standards.md
+    - Processing Pipelines: standards/processing/index.md
+    - Processing & Derivative Standards: standards/processing/standards.md
   - Data Structure & File Types:
     - Data Structure Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md
@@ -67,23 +61,25 @@ nav:
   - Study Instruments:
     - List of Instruments: instruments/index.md
     - Age Variables: instruments/agevariables.md
-    - Administrative:
-        - Study Navigators: instruments/admin/study-navigators.md
-    - Demographics:
-        - Basic Demographics: instruments/demo/basicdemo.md
-        - Visit Level Data: instruments/demo/visitinfo.md
     - Behavior, Biology, & Environment:
+        - Administrative:
+            - Study Navigator Contact Form: instruments/admin/study-navigators.md
+        - Demographics:
+            - Basic Demographics: instruments/demo/basicdemo.md
+            - Visit Level Data: instruments/demo/visitinfo.md
         - Behavior & Caregiver-Child Interaction: 
             - CHAOS: instruments/bcgi/chaos.md
             - ecPROMIS Child-Caregiver Relationship: instruments/bcgi/ecpromis.md
             - ecPROMIS Peer Relationships: instruments/bcgi/ecpromis-pr.md
             - ecPROMIS Self-Regulation: instruments/bcgi/ecpromis-selfreg.md
+            - ERICA: instruments/bcgi/erica.md
             - FAD: instruments/bcgi/fad.md
             - IBQ-R & ECBQ: instruments/bcgi/ibqr.md
             - MAPS-TL: instruments/bcgi/maps-tl.md
         - Biospecimens & Omics:
             - Illumina GDA GWAS: instruments/biospec/illumina-gda-gwas.md
             - Nails: instruments/biospec/nails.md
+            - Olink: instruments/biospec/olink.md
             - Urine: instruments/biospec/urine.md
         - Neurocognition & Language:
             - Bayley-4: instruments/neurocog/bayley-4.md
@@ -93,8 +89,8 @@ nav:
             - Vineland: instruments/neurocog/vineland.md
         - Physical Health:
             - Anthropometrics: instruments/physhealth/growth.md
+            - Breastfeeding History: instruments/physhealth/bf.md
             - Brief Infant Sleep Questionnaire: instruments/physhealth/bisq-sf.md
-            - Breastfeeding: instruments/physhealth/bf.md
             - ecPROMIS- PA/GS: instruments/physhealth/ecpromis-pags.md
             - ecPROMIS- Sleep: instruments/physhealth/ecpromis-sleep.md
             - Medical History: instruments/physhealth/medical-history.md
@@ -113,15 +109,15 @@ nav:
                 - Substance Use Patterns: instruments/pregexp/su/su-patterns.md
                 - TLFB: instruments/pregexp/su/tlfb.md
         - Social & Environmental Determinants:
+            - 2-Item Food Insecurity: instruments/SED/foodinsecurity.md
             - ACEs: instruments/SED/aces.md
             - Baby's First Years: instruments/SED/bfy.md
             - Composite Abuse Scale: instruments/SED/cab.md
+            - Current Employment: instruments/SED/current-employment.md
             - Demographics (Adult): instruments/SED/demo-cg.md
             - Child Demographics: instruments/SED/demo-ch.md
-            - Food Insecurity: instruments/SED/foodinsecurity.md
             - HOME-21: instruments/SED/home21.md
             - Intimate Partner Violence: instruments/SED/ehits.md
-            - Employment: instruments/SED/current-employment.md
             - Geocoded Linkage: instruments/SED/geocoded-linkage.md
             - Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
             - Lead Exposures: instruments/SED/lead-exposures.md
@@ -129,22 +125,29 @@ nav:
             - Protective Factors: instruments/SED/paces.md
             - Perceived Stress/Social Support: instruments/SED/promis.md
             - Second Hand Smoke: instruments/SED/second-hand-smoke-exposure.md
-            - Transitions in Care: instruments/SED/transitions-in-care.md
+            - Transitions in Care Screener: instruments/SED/transitions-in-care.md
             - Unfair Treatment: instruments/SED/discr.md            
             - Vancouver Index: instruments/SED/vi.md
     - Brain Activity & Biosensors:
         - Electroencephalography:
-            - Overview & EEG Protocols: instruments/eeg/index.md
+            - EEG Protocols: instruments/eeg/index.md
+            - Release Data: instruments/eeg/release-data.md
             - Quality Control Procedures: instruments/eeg/qc.md
-            - EEG Task Details: instruments/eeg/tasks.md
+            - Tasks:
+                - Auditory Mismatch Negativity: instruments/eeg/tasks/mmn.md
+                - Faces: instruments/eeg/tasks/faces.md
+                - Visual Evoked Potential: instruments/eeg/tasks/vep.md
+                - Video Resting State: instruments/eeg/tasks/rs.md
         - Magnetic Resonance Imaging:
-            - Overview: instruments/mri/index.md
-            - Raw BIDS Data: instruments/mri/rawbids.md
+            - MR Protocols: instruments/mri/index.md
+            - Release Data: instruments/mri/release-data.md
             - Quality Control Procedures: instruments/mri/qc.md
-            - Prescan Questionnaire: instruments/mri/prescan-questionnaire.md
-            - Structural MRI: instruments/mri/smri.md
+            - Pre-Scan Questionnaire & Forms: instruments/mri/mri-forms.md
+            - Structural & Functional MRI:
+                - Structural MRI: instruments/mri/smri.md
+                - Functional MRI: instruments/mri/fmri.md
+                - Processing & Derivatives: instruments/mri/sfmri-processing.md
             - Quantitative MRI: instruments/mri/qmri.md
-            - Functional MRI: instruments/mri/fmri.md
             - Diffusion MRI: instruments/mri/dmri.md
             - MRS: instruments/mri/mrs.md 
         - Novel Tech & Wearable Sensors:

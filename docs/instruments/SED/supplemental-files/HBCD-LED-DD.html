@@ -1,0 +1,1283 @@
+<!DOCTYPE html><html><head>
+      <title>HBCD-LED-DD</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Wenjie Zheng\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.30\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-details{margin:0;padding:0;border:none}.markdown-preview .md-toc summary.md-toc-link-wrapper{cursor:pointer;list-style-position:outside}.markdown-preview .md-toc summary.md-toc-link-wrapper::marker{font-size:.85em}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='0']{margin-left:12px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='1']{margin-left:28px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='2']{margin-left:44px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='3']{margin-left:60px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='4']{margin-left:76px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='5']{margin-left:80px}.markdown-preview a.tag,.markdown-preview a.tag:active,.markdown-preview a.tag:link,.markdown-preview a.tag:visited,.markdown-preview span.tag:not(.token){display:inline-block;background-color:var(--vscode-badge-background,rgba(127,127,127,.18));color:var(--vscode-badge-foreground,currentColor);border-radius:2em;font-size:.85em;font-weight:500;padding:.05em .55em;line-height:1.5;white-space:nowrap;text-decoration:none;text-shadow:none;box-shadow:none;transition:background-color .12s ease,opacity .12s ease}.markdown-preview a.tag{cursor:pointer}.markdown-preview a.tag:focus,.markdown-preview a.tag:hover{background-color:var(--vscode-badge-background,rgba(127,127,127,.32));color:var(--vscode-badge-foreground,currentColor);opacity:.85;text-decoration:none;outline:0}.markdown-preview .wikilink-embed-content{border-left:3px solid var(--vscode-textBlockQuote-border,rgba(128,128,128,.3));background:var(--vscode-textBlockQuote-background,rgba(128,128,128,.05));margin:.5em 0;padding:.5em .75em;border-radius:0 3px 3px 0}.markdown-preview .wikilink-embed-content.wikilink-embed-error{border-left-color:var(--vscode-errorForeground,#cf222e);color:var(--vscode-errorForeground,#cf222e);font-style:italic;opacity:.8}.markdown-preview .wikilink-embed-content h1:first-child,.markdown-preview .wikilink-embed-content h2:first-child,.markdown-preview .wikilink-embed-content h3:first-child,.markdown-preview .wikilink-embed-content h4:first-child,.markdown-preview .wikilink-embed-content h5:first-child,.markdown-preview .wikilink-embed-content h6:first-child{margin-top:.25em}.markdown-preview .wikilink-embed-content .wikilink-embed-content{margin:.25em 0;padding:.25em .5em}.markdown-preview .block-id{display:none}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));border:4px solid var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));background-clip:content-box}.scrollbar-style::-webkit-scrollbar-thumb:hover{background-color:var(--vscode-scrollbarSlider-hoverBackground,rgba(120,120,120,.66))}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));border:4px solid var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb:hover{background-color:var(--vscode-scrollbarSlider-hoverBackground,rgba(120,120,120,.66))}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-details{margin:0;padding:0;border:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='0']{padding-left:0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='1']{padding-left:16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='2']{padding-left:32px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='3']{padding-left:48px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='4']{padding-left:64px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='5']{padding-left:80px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. -->
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="area-deprivation-index-adi">Area Deprivation Index (ADI) </h1>
+<p><strong>Measure description:</strong></p>
+<p>The Neighborhood Atlas hosts the Area Deprivation Index (ADI), a scientifically validated measure of the adverse social exposome (i.e., neighborhood disadvantage) that can be used to evaluate and improve factors that impact health across populations. The ADI ranks neighborhoods by adverse social exposome in a region of interest (e.g., at the state or national level), taking into account factors related to income, education, employment, and housing quality. The 2023 version is the latest version available. This version was created using 2019-2023 ACS data.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>adi_national_prcnt</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>adi_national_prcnt</td>
+<td>National percentile of block group ADI score of Numeric Ranking (1-100) or Suppression Codes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Kind AJH, Buckingham W. Making Neighborhood Disadvantage Metrics Accessible: The Neighborhood Atlas. New England Journal of Medicine, 2018. 378: 2456-2458. DOI: 10.1056/NEJMp1802313. PMCID: PMC6051533. AND University of Wisconsin School of Medicine Public Health. 2023 Area Deprivation Index v4.0. Downloaded from <a href="https://urldefense.com/v3/__https://www.neighborhoodatlas.medicine.wisc.edu/__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moKJ0Z58Lw$">https://www.neighborhoodatlas.medicine.wisc.edu/</a>.</p>
+<h1 id="census-return">Census Return </h1>
+<p><strong>Measure description:</strong></p>
+<p>The Census Bureau's Planning Database (PDB) contains select operational, housing, demographic, and socio-economic statistics from the Decennial Census and the American Community Survey (ACS) 5-year files. The 2023 PDB contains select 2017-2021 ACS 5-year estimates including the ACS tract level self-response rates, 2020 Census operational variables, and select Census variables typically found on the PDB.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>censusret_return_rate_2020</li>
+<li>censusret_selfresponse_rate_20192023</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>censusret_return_rate_2020</td>
+<td>Percent of occupied housing units providing a sufficient internet, paper, or phone self-response</td>
+</tr>
+<tr>
+<td>censusret_selfresponse_rate_20192023</td>
+<td>The self-response rate of in-ACS housing units in the tract</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>U.S. Census Bureau. (2024, June 13). 2023 Planning Database. U.S. Census Bureau. <a href="https://urldefense.com/v3/__https://www.census.gov/topics/research/guidance/planning-databases/2023.html*list-tab-1219258324__;Iw!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moKSfeOdqQ$">https://www.census.gov/topics/research/guidance/planning-databases/2023.html#list-tab-1219258324</a></p>
+<h1 id="child-opportunity-index-30-coi">Child Opportunity Index 3.0 (COI) </h1>
+<p><strong>Measure description:</strong></p>
+<p>The Child Opportunity Index (COI) 3.0 is a composite index of neighborhood conditions and resources that, per the research evidence, matter for children's healthy development. COI 3.0 is based on 44 component indicators spanning three domains (education, health and environment, and social and economic) and 14 subdomains. The latest release of the Child Opportunity Index, COI 3.0-2023, was published in 2025 and includes data covering the years from 2012 through 2023.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>coi<em>coi_total</em>{AREA}_{c5|score}</li>
+<li>coi<em>ed_total</em>{AREA}_{c5|score}</li>
+<li>coi<em>he_total</em>{AREA}_{c5|score}</li>
+<li>coi<em>se_total</em>{AREA}_{c5|score}</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>coi_coi_total_national_zscore</td>
+<td>z-scores, Child Opportunity Index, nationally normed; Weighted average of Child Opportunity Index component subdomain z-scores, nationally normed</td>
+</tr>
+<tr>
+<td>coi_ed_total_national_c5</td>
+<td>Child Opportunity Levels, education domain, nationally normed; Nationally normed Child Opportunity Levels (from very low to very high) for the education domain</td>
+</tr>
+<tr>
+<td>coi_he_total_national_c5</td>
+<td>Child Opportunity Levels, health and environment domain, nationally normed;Nationally normed Child Opportunity Levels (from very low to very high) for the health and environment domain</td>
+</tr>
+<tr>
+<td>coi_se_total_national_c5</td>
+<td>Child Opportunity Levels, social and economic domain, nationally normed ; Nationally normed Child Opportunity Levels (from very low to very high) for the social and economic domain</td>
+</tr>
+<tr>
+<td>coi_coi_total_national_c5</td>
+<td>Child Opportunity Levels, Child Opportunity Index, nationally normed; Nationally normed Child Opportunity Levels (from very low to very high) for the Child Opportunity Index</td>
+</tr>
+<tr>
+<td>coi_ed_total_national_score</td>
+<td>Child Opportunity Scores, education domain, nationally normed; Nationally normed Child Opportunity Scores (from 1 to 100) for the education domain</td>
+</tr>
+<tr>
+<td>coi_he_total_national_score</td>
+<td>Child Opportunity Scores, health and environment domain, nationally normed; Nationally normed Child Opportunity Scores (from 1 to 100) for the health and environment domain</td>
+</tr>
+<tr>
+<td>coi_se_total_national_score</td>
+<td>Child Opportunity Scores, social and economic domain, nationally normed; Nationally normed Child Opportunity Scores (from 1 to 100) for the social and economic domain</td>
+</tr>
+<tr>
+<td>coi_coi_total_national_score</td>
+<td>Child Opportunity Scores, Child Opportunity Index, nationally normed;Nationally normed Child Opportunity Scores (from 1 to 100) for the Child Opportunity Index</td>
+</tr>
+<tr>
+<td>coi_ed_total_state_c5</td>
+<td>Child Opportunity Levels, education domain, state normed;State normed Child Opportunity Levels (from very low to very high) for the education domain</td>
+</tr>
+<tr>
+<td>coi_he_total_state_c5</td>
+<td>Child Opportunity Levels, health and environment domain, state normed; State normed Child Opportunity Levels (from very low to very high) for the health and environment domain</td>
+</tr>
+<tr>
+<td>coi_se_total_state_c5</td>
+<td>Child Opportunity Levels, social and economic domain, state normed; State normed Child Opportunity Levels (from very low to very high) for the social and economic domain</td>
+</tr>
+<tr>
+<td>coi_coi_total_state_c5</td>
+<td>Child Opportunity Levels, Child Opportunity Index, state normed; State normed Child Opportunity Levels (from very low to very high) for the Child Opportunity Index</td>
+</tr>
+<tr>
+<td>coi_ed_total_state_score</td>
+<td>Child Opportunity Scores, education domain, state normed; State normed Child Opportunity Scores (from 1 to 100) for the education domain</td>
+</tr>
+<tr>
+<td>coi_he_total_state_score</td>
+<td>Child Opportunity Scores, health and environment domain, state normed; State normed Child Opportunity Scores (from 1 to 100) for the health and environment domain</td>
+</tr>
+<tr>
+<td>coi_se_total_state_score</td>
+<td>Child Opportunity Scores, social and economic domain, state normed; State normed Child Opportunity Scores (from 1 to 100) for the social and economic domain</td>
+</tr>
+<tr>
+<td>coi_coi_total_state_score</td>
+<td>Child Opportunity Scores, Child Opportunity Index, state normed; State normed Child Opportunity Scores (from 1 to 100) for the Child Opportunity Index</td>
+</tr>
+<tr>
+<td>coi_ed_total_metro_c5</td>
+<td>Child Opportunity Levels, education domain, metro normed; Metro normed Child Opportunity Levels (from very low to very high) for the education domain</td>
+</tr>
+<tr>
+<td>coi_he_total_metro_c5</td>
+<td>Child Opportunity Levels, health and environment domain, metro normed; Metro normed Child Opportunity Levels (from very low to very high) for the health and environment domain</td>
+</tr>
+<tr>
+<td>coi_se_total_metro_c5</td>
+<td>Child Opportunity Levels, social and economic domain, metro normed;Metro normed Child Opportunity Levels (from very low to very high) for the social and economic domain</td>
+</tr>
+<tr>
+<td>coi_coi_total_metro_c5</td>
+<td>Child Opportunity Levels, Child Opportunity Index, metro normed; Metro normed Child Opportunity Levels (from very low to very high) for the Child Opportunity Index</td>
+</tr>
+<tr>
+<td>coi_ed_total_metro_score</td>
+<td>Child Opportunity Scores, education domain, metro normed;Metro normed Child Opportunity Scores (from 1 to 100) for the education domain</td>
+</tr>
+<tr>
+<td>coi_he_total_metro_score</td>
+<td>Child Opportunity Scores, health and environment domain, metro normed; Metro normed Child Opportunity Scores (from 1 to 100) for the health and environment domain</td>
+</tr>
+<tr>
+<td>coi_se_total_metro_score</td>
+<td>Child Opportunity Scores, social and economic domain, metro normed; Metro normed Child Opportunity Scores (from 1 to 100) for the social and economic domain</td>
+</tr>
+<tr>
+<td>coi_coi_total_metro_score</td>
+<td>Child Opportunity Scores, Child Opportunity Index, metro normed; Metro normed Child Opportunity Scores (from 1 to 100) for the Child Opportunity Index</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p><a href="https://urldefense.com/v3/__http://diversitydatakids.org__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moK5dBS3qQ$">diversitydatakids.org</a>. (2025, July 24). Child Opportunity Index 3.0–2023 Census Tract Data. Retrieved from <a href="https://urldefense.com/v3/__https://www.diversitydatakids.org/research-library/child-opportunity-index-30-2023-census-tract-data__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moL1EblTyw$">https://www.diversitydatakids.org/research-library/child-opportunity-index-30-2023-census-tract-data</a></p>
+<h1 id="vehicle-density-acs">Vehicle Density (ACS) </h1>
+<p><strong>Measure description:</strong></p>
+<p>Vehicle density was calculated using data from the 2019-2023 American Community Survey 5-year estimates for primary, secondary, and tertiary addresses at the census tract level. Vehicle density was calculated in two ways:</p>
+<ul>
+<li>As an area estimate (aggregate number of variables in a census tract per square mile of land area), and</li>
+<li>As a population density (aggregate number of vehicles available in a census tract per individual). Vehicle density may be associated with neighborhood residents’ levels of exposure to noxious chemicals and their vulnerability to vehicle-related injuries or fatalities.</li>
+</ul>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>densveh_{area|pop}_density</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>densveh_area_density</td>
+<td>Aggregate Number of vehicles available per square mile of land area</td>
+</tr>
+<tr>
+<td>densveh_pop_density</td>
+<td>Aggregate Number of Vehicles available per individual</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>U.S. Census Bureau, U.S. Department of Commerce. "Aggregate Number of Vehicles Available by Tenure." American Community Survey, ACS 5-Year Estimates Detailed Tables, Table B25046, <a href="https://urldefense.com/v3/__https://data.census.gov/table/ACSDT5Y2023.B25046?q=B25046:*Aggregate*Number*of*Vehicles*Available*by*Tenure&amp;g=010XX00US$1400000__;KysrKysrKw!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moKnyE6dZA$">https://data.census.gov/table/ACSDT5Y2023.B25046?q=B25046:+Aggregate+Number+of+Vehicles+Available+by+Tenure&amp;g=010XX00US$1400000</a>. Accessed on 5 Jan 2026.</p>
+<h1 id="number-of-jobs-and-job-density-lodes">Number of Jobs and Job Density (LODES) </h1>
+<p><strong>Measure description:</strong></p>
+<p>Number of jobs and job density (number of jobs per square mile of land area) are available at the census tract level for participants’ addresses. Employment statistics are also available, broken down by race and ethnicity. Employment information was derived from the LEHD Origin-Destination Employment Statistics (LODES) dataset for the year 2019</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>lodes_job_count</li>
+<li>lodes_job_density</li>
+<li>lodes_job{RACE-ETH}_count</li>
+<li>lodes_job{RACE-ETH}_density</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lodes_job_count</td>
+<td>Total number of jobs</td>
+</tr>
+<tr>
+<td>lodes_jobwhite_count</td>
+<td>Number of jobs for workers with Race: White, Alone</td>
+</tr>
+<tr>
+<td>lodes_jobblack_count</td>
+<td>Number of jobs for workers with Race: Black or African American Alone</td>
+</tr>
+<tr>
+<td>lodes_jobaian_count</td>
+<td>Number of jobs for workers with Race: American Indian or Alaska Native Alone</td>
+</tr>
+<tr>
+<td>lodes_jobasian_count</td>
+<td>Number of jobs for workers with Race: Asian Alone</td>
+</tr>
+<tr>
+<td>lodes_jobnhpi_count</td>
+<td>Number of jobs for workers with Race: Native Hawaiian or Other Pacific Islander Alone</td>
+</tr>
+<tr>
+<td>lodes_jobmulti_count</td>
+<td>Number of jobs for workers with Race: Two or More Race Groups</td>
+</tr>
+<tr>
+<td>lodes_jobnonhisp_count</td>
+<td>Number of jobs for workers with Ethnicity: Not Hispanic or Latino</td>
+</tr>
+<tr>
+<td>lodes_jobhisp_count</td>
+<td>Number of jobs for workers with Ethnicity: Hispanic or Latino</td>
+</tr>
+<tr>
+<td>lodes_job_density</td>
+<td>Residential history derived - Total density of jobs (per sq. mile of land area)</td>
+</tr>
+<tr>
+<td>lodes_jobwhite_density</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: White, Alone; LODES; census tract</td>
+</tr>
+<tr>
+<td>lodes_jobblack_density</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Black or African American Alone; LODES; census tract</td>
+</tr>
+<tr>
+<td>lodes_jobaian_density</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: American Indian or Alaska Native Alone; LODES; census tract</td>
+</tr>
+<tr>
+<td>lodes_jobasian_density</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Asian Alone; LODES; census tract</td>
+</tr>
+<tr>
+<td>lodes_jobnhpi_density</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Native Hawaiian or Other Pacific Islander Alone; LODES; census tract</td>
+</tr>
+<tr>
+<td>lodes_jobmulti_density</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Race: Two or More Race Groups; LODES; census tract</td>
+</tr>
+<tr>
+<td>lodes_jobnonhisp_density</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Ethnicity: Not Hispanic or Latino; LODES; census tract</td>
+</tr>
+<tr>
+<td>lodes_jobhisp_density</td>
+<td>Residential history derived - Density of jobs (per sq. mile of land area) for workers with Ethnicity: Hispanic or Latino; LODES; census tract</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Urban Institute. 2022. Longitudinal Employer-Household Dynamics Origin-Destination Employment Statistics (LODES) Summary Files - Census Tract Level. Accessible from <a href="https://urldefense.com/v3/__https://datacatalog.urban.org/dataset/longitudinal-employer-household-dynamics-origin-destination-employment-statistics-lodes__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moKwp8Cl5w$">https://datacatalog.urban.org/dataset/longitudinal-employer-household-dynamics-origin-destination-employment-statistics-lodes</a>. Data originally sourced from the US Census Bureau, developed at Urban Institute, and made available under the ODC-BY 1.0 Attribution License.</p>
+<h1 id="minority-health-social-vulnerability-index-mhsvi">Minority Health Social Vulnerability Index (MHSVI) </h1>
+<p><strong>Measure description:</strong></p>
+<p>The Minority Health Index is a data resource developed jointly by the Centers for Disease Control and Prevention (CDC) and the U.S. Department of Health and Human Services (HHS) Office of Minority Health to help identify racial and ethnic minority communities that are at greatest risk for disproportionate impacts and adverse outcomes during public health emergencies. Its purpose is to enhance existing data tools and support public health research, planning, and response efforts with a focus on health equity. The data version is 2023.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>ssvi_{RACE-ETH}_prcnt</li>
+<li>ssvi_{LANGUAGE}_prcnt</li>
+<li>ssvi_hosp_state_prop</li>
+<li>ssvi_nocomp_prcnt</li>
+<li>ssvi_noint_prcnt</li>
+<li>ssvi_pcp_state_rate</li>
+<li>ssvi_pharm_state_prop</li>
+<li>ssvi_unins_prcnt</li>
+<li>ssvi_urg_state_prop</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ssvi_white_prcnt</td>
+<td>Percentage population estimate White</td>
+</tr>
+<tr>
+<td>ssvi_aian_prcnt</td>
+<td>Percentage population estimate American Indian and Alaska Native</td>
+</tr>
+<tr>
+<td>ssvi_asian_prcnt</td>
+<td>Percentage population estimate Asian</td>
+</tr>
+<tr>
+<td>ssvi_afam_prcnt</td>
+<td>Percentage population estimate Black or African American</td>
+</tr>
+<tr>
+<td>ssvi_nhpi_prcnt</td>
+<td>Percentage population estimate Native Hawaiian/Pacific Islander</td>
+</tr>
+<tr>
+<td>ssvi_his_prcnt</td>
+<td>Percentage population estimate Hispanic or Latino</td>
+</tr>
+<tr>
+<td>ssvi_span_prcnt</td>
+<td>percent Spanish Speakers who indicated they speak English less than "very well"</td>
+</tr>
+<tr>
+<td>ssvi_chin_prcnt</td>
+<td>percent Chinese Speakers who indicated they speak English less than "very well"</td>
+</tr>
+<tr>
+<td>ssvi_viet_prcnt</td>
+<td>percent Vietnamese Speakers who indicated they speak English less than "very well"</td>
+</tr>
+<tr>
+<td>ssvi_kor_prcnt</td>
+<td>percent Korean Speakers who indicated they speak English less than "very well"</td>
+</tr>
+<tr>
+<td>ssvi_rus_prcnt</td>
+<td>percent Russian Speakers who indicated they speak English less than "very well"</td>
+</tr>
+<tr>
+<td>ssvi_hosp_state_prop</td>
+<td>number of hospitals</td>
+</tr>
+<tr>
+<td>ssvi_urg_state_prop</td>
+<td>number of urgent care clinics</td>
+</tr>
+<tr>
+<td>ssvi_pharm_state_prop</td>
+<td>number of pharmacies</td>
+</tr>
+<tr>
+<td>ssvi_pcp_state_rate</td>
+<td>primary care physicians per 100,000 people</td>
+</tr>
+<tr>
+<td>ssvi_unins_prcnt</td>
+<td>Percentage population estimate persons without health insurance</td>
+</tr>
+<tr>
+<td>ssvi_noint_prcnt</td>
+<td>Percentage population estimate persons with no internet access</td>
+</tr>
+<tr>
+<td>ssvi_nocomp_prcnt</td>
+<td>Percentage population estimate persons with no computer access</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>U.S. Department of Health &amp; Human Services, Office of Minority Health. (n.d.). Minority Health Index. Retrieved from <a href="https://urldefense.com/v3/__https://minorityhealth.hhs.gov/minority-health-index__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moL8M0EtqA$">https://minorityhealth.hhs.gov/minority-health-index</a></p>
+<h1 id="neighborhood-socioeconomic-status-and-demographics-nanda">Neighborhood Socioeconomic Status and Demographics (NaNDA) </h1>
+<p><strong>Measure description:</strong></p>
+<p>These datasets contain measures of socioeconomic and demographic characteristics by U.S. census tract for the years 2018-2022</p>
+<p>The following were derived from the ACS 2018-2022 5-year estimates at the census tract level:</p>
+<ul>
+<li>Proportion of people who are foreign born</li>
+<li>Proportion of families with income greater than 75K</li>
+<li>Proportion of families with income greater than $100K</li>
+<li>Proportion 16+ civilian labor force unemployed</li>
+</ul>
+<p>In addition, three factors associated with neighborhood sociodemographics and structural characteristics are included (based on Morenoff et al. (2007)):</p>
+<ul>
+<li>Neighborhood disadvantage score is characterized by high levels of poverty, unemployment, female-headed families, households receiving public assistance income, and a high proportion of African Americans in a census tract.</li>
+<li>Neighborhood affluence score represents a mix of characteristics associated with neighborhood affluence (concentrations of adults with a college education; with incomes&gt;75K; and employed in managerial and professional occupations).</li>
+<li>Neighborhood ethnic/immigrant score represents ethnic and immigrant concentration. Higher values indicate more Hispanic and foreign born in the census tract.</li>
+</ul>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>nbhsoc_college_prop</li>
+<li>nbhsoc_factor{1|2|3}_tractscore</li>
+<li>nbhsoc_finc{75k|100k}_prop</li>
+<li>nbhsoc_forborn_prop</li>
+<li>nbhsoc_unemploy_prop</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nbhsoc*forborn_prop</td>
+<td>Proportion of people who are foreign born</td>
+</tr>
+<tr>
+<td>nbhsoc_college_prop</td>
+<td>Proportion of persons with Bachelors Degree or Higher</td>
+</tr>
+<tr>
+<td>nbhsoc_finc100k_prop</td>
+<td>Proportion of families with income $125,000 or more; 100k no longer exist;</td>
+</tr>
+<tr>
+<td>nbhsoc_finc75k_prop</td>
+<td>Proportion of families with income <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>75</mn><mo separator="true">,</mo><mn>000</mn><mi>t</mi><mi>o</mi></mrow><annotation encoding="application/x-tex">75,000 to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">75</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">000</span><span class="mord mathnormal">t</span><span class="mord mathnormal">o</span></span></span></span>124,999; for 75 k or more, sum with pfamincge125k;</td>
+</tr>
+<tr>
+<td>nbhsoc_unemploy_prop</td>
+<td>Proportion of age 16+ civilian labor force unemployed;</td>
+</tr>
+<tr>
+<td>nbhsoc_factor1_tractscore</td>
+<td>mean of pnhblack pfhfam ppubas ppov punemp</td>
+</tr>
+<tr>
+<td>nbhsoc_factor2_tractscore</td>
+<td>mean of ped3* pfamincge125k pprof</td>
+</tr>
+<tr>
+<td>nbhsoc_factor3_tractscore</td>
+<td>mean of phispanic pfborn plimeng</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Clarke, Philippa, Melendez, Robert, Noppert, Grace, Chenoweth, Megan, and Gypin, Lindsay. National Neighborhood Data Archive (NaNDA): Socioeconomic Status and Demographic Characteristics of Census Tracts and ZIP Code Tabulation Areas, United States, 1990-2022. Inter-university Consortium for Political and Social Research [distributor], 2025-10-27. <a href="https://urldefense.com/v3/__https://doi.org/10.3886/ICPSR38528.v6__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moKH9ffZsQ$">https://doi.org/10.3886/ICPSR38528.v6</a></p>
+<h1 id="parks-nanda">Parks (NaNDA) </h1>
+<p><strong>Measure description:</strong></p>
+<p>Prior research has demonstrated that access to parks and greenspace can have a positive impact on many aspects of and contributors to health, including physical activity levels (Kaczynski et al., 2007), healthy aging (Finlay, 2015), and sense of well-being (Larson et al., 2016). Neighborhood parks can also contribute to sense of community (Gómez, 2015). These datasets describe the number and area of parks in each census tract or each ZIP code tabulation area (ZCTA) in the United States. Measures include the total number of parks, park area, and proportion of park area within each census tract for the years 2018-2022.</p>
+<p>The dataset describes：</p>
+<ul>
+<li>Total number of parks per census tract (top coded at 10)</li>
+<li>Total number of open parks per county</li>
+<li>Proportion of open park land within census tract</li>
+</ul>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>parks<em>parks</em>{count|prop}</li>
+<li>parks_parks{county|tc10}_count</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>parks_parks_count</td>
+<td>Total number of open parks in the census tract</td>
+</tr>
+<tr>
+<td>parks_parkstc10_count</td>
+<td>Total number of open parks (top coded at 10) in census tract</td>
+</tr>
+<tr>
+<td>parks_parks_prop</td>
+<td>Proportion of open park land within census tract (tot_park_area / tract_area)</td>
+</tr>
+<tr>
+<td>parks_parkscounty_count</td>
+<td>DERIVED: groupby COUNTYFP and sum by COUNT_OPEN_PARKS</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Melendez, Robert, Pan, Longrong, Li, Mao, Khan, Anam, Gomez-Lopez, Iris, Clarke, Philippa, … Chemberlin, Birch. National Neighborhood Data Archive (NaNDA): Parks by Census Tract and ZIP Code Tabulation Area, United States, 2018 and 2022. Inter-university Consortium for Political and Social Research [distributor], 2023-11-29. <a href="https://urldefense.com/v3/__https://doi.org/10.3886/ICPSR38586.v2__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moLd7t1CCA$">https://doi.org/10.3886/ICPSR38586.v2</a></p>
+<h1 id="behavioral-health-measures-places">Behavioral Health Measures (PLACES) </h1>
+<p><strong>Measure description:</strong></p>
+<p>Measures from the PLACES dataset are available for participants’ addresses at the census tract level. The PLACES dataset is an expansion of the 500 Cities Project and is available from the Center for Disease and Control and Prevention (CDC), the Robert Wood Johnson Foundation (RWJF) and CDC Foundation. Data sources used to generate these model-based estimates are Behavioral Risk Factor Surveillance System (BRFSS) 2023 or 2022 data, Census Bureau 2020 population data, and American Community Survey 2019-2023 or 2018–2022 estimates. The 2025 release uses 2023 BRFSS data for 35 measures and 2022 BRFSS data for 5 measures (all teeth lost, dental visits, mammograms, colorectal cancer screening, and short sleep duration) that the survey collects data on every other year. Included are 24 measures for the entire United States including chronic disease-related unhealthy behaviors, health outcomes, and use of preventive services. More information about the methodology can be found at <a href="https://urldefense.com/v3/__http://www.cdc.gov/places__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moKJnGQq5Q$">www.cdc.gov/places</a>.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>places_*</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>places_access2_preval</td>
+<td>Current lack of health insurance among adults aged 18-64 years</td>
+</tr>
+<tr>
+<td>places_arthritis_preval</td>
+<td>Arthritis among adults</td>
+</tr>
+<tr>
+<td>places_binge_preval</td>
+<td>Binge drinking among adults</td>
+</tr>
+<tr>
+<td>places_bphigh_preval</td>
+<td>High blood pressure among adults</td>
+</tr>
+<tr>
+<td>places_bpmed_preval</td>
+<td>Taking medicine to control high blood pressure among adults with high blood pressure</td>
+</tr>
+<tr>
+<td>places_cancer_preval</td>
+<td>Cancer (non-skin) or melanoma among adults</td>
+</tr>
+<tr>
+<td>places_casthma_preval</td>
+<td>Current asthma among adults</td>
+</tr>
+<tr>
+<td>places_chd_preval</td>
+<td>Coronary heart disease among adults</td>
+</tr>
+<tr>
+<td>places_checkup_preval</td>
+<td>Visits to doctor for routine checkup within the past year among adults</td>
+</tr>
+<tr>
+<td>places_cholscreen_preval</td>
+<td>Cholesterol screening among adults</td>
+</tr>
+<tr>
+<td>places_colon_screen_preval</td>
+<td>Colorectal cancer screening among adults aged 45–75 years</td>
+</tr>
+<tr>
+<td>places_copd_preval</td>
+<td>Chronic obstructive pulmonary disease among adults</td>
+</tr>
+<tr>
+<td>places_csmoking_preval</td>
+<td>Current cigarette smoking among adults</td>
+</tr>
+<tr>
+<td>places_dental_preval</td>
+<td>Visited dentist or dental clinic in the past year among adults</td>
+</tr>
+<tr>
+<td>places_diabetes_preval</td>
+<td>Diagnosed diabetes among adults</td>
+</tr>
+<tr>
+<td>places_cholhigh_preval</td>
+<td>High cholesterol among adults who have ever been screened</td>
+</tr>
+<tr>
+<td>places_lpa_preval</td>
+<td>No leisure-time physical activity among adults</td>
+</tr>
+<tr>
+<td>places_mammouse_preval</td>
+<td>Mammography use among women aged 50-74 years</td>
+</tr>
+<tr>
+<td>places_mhlth_preval</td>
+<td>Frequent mental distress among adults</td>
+</tr>
+<tr>
+<td>places_obesity_preval</td>
+<td>Obesity among adults</td>
+</tr>
+<tr>
+<td>places_phlth_preval</td>
+<td>Frequent physical distress among adults</td>
+</tr>
+<tr>
+<td>places_sleep_preval</td>
+<td>Short sleep duration among adults</td>
+</tr>
+<tr>
+<td>places_stroke_preval</td>
+<td>Stroke among adults</td>
+</tr>
+<tr>
+<td>places_teethlost_preval</td>
+<td>All teeth lost among adults aged &gt;=65 years</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Centers for Disease Control and Prevention. (n.d.). PLACES: Local Data for Better Health, Census Tract Data. CDC Data Portal., from <a href="https://urldefense.com/v3/__https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-Census-Tract-D/cwsq-ngmh/about_data__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moKT9wS4LQ$">https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-Census-Tract-D/cwsq-ngmh/about_data</a></p>
+<h1 id="religiouscivic-organizations-nanda">Religious/Civic Organizations (NaNDa) </h1>
+<p><strong>Measure description:</strong></p>
+<p>This dataset contains measures of the number and density of select types of civic, social, and religious organizations per United States Census Tract for the year 2021.</p>
+<ul>
+<li>Total count of religious organizations</li>
+<li>Number of all religious organizations per 1000 people</li>
+<li>Total count of civic/social organizations</li>
+<li>Number of all civic/social organizations per 1000 people</li>
+</ul>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>relciv<em>civsoc</em>{count|prop}</li>
+<li>relciv<em>civsoccounty</em>{count|prop}</li>
+<li>relciv<em>relorg</em>{count|prop}</li>
+<li>relciv<em>relorgcounty</em>{count|prop}</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>relciv_relorg_count</td>
+<td>Total counts: Religious Organizations</td>
+</tr>
+<tr>
+<td>relciv_relorg_prop</td>
+<td>Religious Organizations per 1000 people</td>
+</tr>
+<tr>
+<td>relciv_relorgcounty_count</td>
+<td>groupby(county) and sum(count_religiousorgs)</td>
+</tr>
+<tr>
+<td>relciv_relorgcounty_prop</td>
+<td>groupby(county) and sum(den_religiousorgs)</td>
+</tr>
+<tr>
+<td>relciv_civsoc_count</td>
+<td>Total counts: Civic and Social Associations</td>
+</tr>
+<tr>
+<td>relciv_civsoc_prop</td>
+<td>Civic and Social Associations per 1000 people</td>
+</tr>
+<tr>
+<td>relciv_civsoccounty_count</td>
+<td>groupby(county) and sum(count_civsoc)</td>
+</tr>
+<tr>
+<td>relciv_civsoccounty_prop</td>
+<td>groupby(county) and sum(den_civsoc)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Melendez, Robert, Finlay, Jessica, Clarke, Philippa, Noppert, Grace, and Gypin, Lindsay. National Neighborhood Data Archive (NaNDA): Civic, Social, and Religious Organizations by Census Tract and ZCTA, United States, 1990-2021. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2024-07-24. <a href="https://urldefense.com/v3/__https://doi.org/10.3886/E207966V1__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moJ5svAf3w$">https://doi.org/10.3886/E207966V1</a></p>
+<h1 id="rent-and-mortgage-statistics-acs">Rent and Mortgage Statistics (ACS) </h1>
+<p><strong>Measure description:</strong></p>
+<p>In order to approximate cost of living that may be associated with housing, the following variables from the 2019-2023 American Community Survey (ACS) 5-year estimates have been linked to participants’ addresses at the census tract level:</p>
+<ul>
+<li>Percent home ownership</li>
+<li>Percent of households living with rent burden (rent is at least 30% of income),</li>
+<li>Percent of households living with severe rent burden (rent is at least 50% of income)</li>
+<li>Median monthly gross rent</li>
+<li>Median monthly mortgage payments.</li>
+</ul>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>rentmort_homevalue_med</li>
+<li>rentmort_ownership_prcnt</li>
+<li>rentmort_rent_med</li>
+<li>rentmort_rentburden_prcnt</li>
+<li>rentmort_rentburdensev_prcnt</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rentmort_ownership_prcnt</td>
+<td>Residential history derived - Percent Homeownership;ACS2019-2023; census tract; Occupied housing units(owner occupied) / Total tenure occupied housing units</td>
+</tr>
+<tr>
+<td>rentmort_homevalue_med</td>
+<td>Residential history derived - Median house value; ACS2019-2023; census tract</td>
+</tr>
+<tr>
+<td>rentmort_rentburden_prcnt</td>
+<td>Residential history derived - Percent rent burden(30% or more of income); ACS2019-2023; census tract</td>
+</tr>
+<tr>
+<td>rentmort_rentburdensev_prcnt</td>
+<td>Residential history derived - Percent severe rent burden (50% or more of income); ACS2019-2023; census tract</td>
+</tr>
+<tr>
+<td>rentmort_rent_med</td>
+<td>Residential history derived - Median rent per month; ACS2019-2023; census tract</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>U.S. Census Bureau. (2025, January 10). American Community Survey 5-Year Data (2009-2023). U.S. Census Bureau. From <a href="https://urldefense.com/v3/__https://www.census.gov/data/developers/data-sets/acs-5year.html__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moKK_9RVIA$">https://www.census.gov/data/developers/data-sets/acs-5year.html</a></p>
+<h1 id="building-density-epa">Building Density (EPA) </h1>
+<p><strong>Measure description:</strong></p>
+<p>This data is part of the Smart Location Database for the year 2021, which is a nationwide geographic data resource for measuring location efficiency. It measures Gross residential density (housing units per acre) on unprotected land.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>densbld_density</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>densbld_density</td>
+<td>Gross residential density (HU/acre) on unprotected land</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>U.S. Environmental Protection Agency. (2025, September 29). Smart Location Mapping. U.S. EPA. from <a href="https://urldefense.com/v3/__https://www.epa.gov/smartgrowth/smart-location-mapping__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moJUAuUGig$">https://www.epa.gov/smartgrowth/smart-location-mapping</a></p>
+<h1 id="walkability-epa">Walkability (EPA) </h1>
+<p><strong>Measure description:</strong></p>
+<p>The National Walkability Index is a nationwide geographic data resource that ranks block groups according to their relative walkability. The national dataset for the year 2021 includes walkability scores for all block groups as well as the underlying attributes that are used to rank the block groups.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>walk_idx</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>walk_idx</td>
+<td>Walkability index comprised of weighted sum of the ranked values of [D2a_EpHHm] (D2A_Ranked), [D2b_E8MixA] (D2B_Ranked), [D3b] (D3B_Ranked) and [D4a] (D4A_Ranked)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>U.S. Environmental Protection Agency. (2025, September 29). Smart Location Mapping. U.S. EPA. from <a href="https://urldefense.com/v3/__https://www.epa.gov/smartgrowth/smart-location-mapping__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moJUAuUGig$">https://www.epa.gov/smartgrowth/smart-location-mapping</a></p>
+<h1 id="social-mobility-opportunity-atlas">Social Mobility (Opportunity Atlas) </h1>
+<p><strong>Measure description:</strong></p>
+<p>The Opportunity Atlas uses anonymous data based on 20 million Americans followed from childhood to their mid-30s to provide outcomes for adults who grew up in each census tract. Percentile household incomes correspond to outcomes in adulthood of people who grew up in each census tract and were born between 1978 and 1983.</p>
+<p>The variable corresponding to the 25th percentile is typically the main index of upward social mobility for each census tract, as it captures the mean income rank in adulthood for children who grew up in low-income families in this census tract. See the US Census Bureau website for more details.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>socmob<em>kfrpp</em>{count|mean|se}</li>
+<li>socmob_kfrpp_p{1|25|50|75|100}_prcntile</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>socmob_kfrpp_mean</td>
+<td>Residential history derived - Opportunity Atlas Mean outcome for all children</td>
+</tr>
+<tr>
+<td>socmob_kfrpp_count</td>
+<td>Residential history derived - Opportunity Atlas # of children for all</td>
+</tr>
+<tr>
+<td>socmob_kfrpp_p1_prcntile</td>
+<td>Residential history derived - Opportunity Atlas Mean household income rank for children whose parents were at the 1st percentile of the national income distribution. Incomes for children were measured as mean earnings in 2014-2015 when they were between the ages 31-37 at census tract level.</td>
+</tr>
+<tr>
+<td>socmob_kfrpp_p100_prcntile</td>
+<td>Residential history derived - Opportunity Atlas Mean household income rank for children whose parents were at the 100thth percentile of the national income distribution. Incomes for children were measured as mean earnings in 2014-2015 when they were between the ages 31-37 at census tract level at census tract level.</td>
+</tr>
+<tr>
+<td>socmob_kfrpp_p25_prcntile</td>
+<td>Residential history derived - Opportunity Atlas Mean household income rank for children whose parents were at the 25th percentile of the national income distribution. Incomes for children were measured as mean earnings in 2014-2015 when they were between the ages 31-37 at census tract level. The 25th percentile variable is what is termed as ''upward mobility'' by Chetty, et al.</td>
+</tr>
+<tr>
+<td>socmob_kfrpp_p50_prcntile</td>
+<td>Residential history derived - Opportunity Atlas Mean household income rank for children whose parents were at the 50th percentile of the national income distribution. Incomes for children were measured as mean earnings in 2014-2015 when they were between the ages 31-37 at census tract level.</td>
+</tr>
+<tr>
+<td>socmob_kfrpp_p75_prcntile</td>
+<td>Residential history derived - Opportunity Atlas Mean household income rank for children whose parents were at the 75th percentile of the national income distribution. Incomes for children were measured as mean earnings in 2014-2015 when they were between the ages 31-37 at census tract level.</td>
+</tr>
+<tr>
+<td>socmob_kfrpp_se</td>
+<td>Residential history derived - Opportunity Atlas Estimated standard error all children</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Opportunity Insights. Opportunity Atlas Data Tool Summary. 13 Aug. 2025, <a href="https://urldefense.com/v3/__http://opportunityinsights.org/wp-content/uploads/2025/08/OpportunityAtlas_DataToolSummary.pdf__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moLXaMuETA$">opportunityinsights.org/wp-content/uploads/2025/08/OpportunityAtlas_DataToolSummary.pdf</a></p>
+<h1 id="social-service-nanda">Social Service (NaNDa) </h1>
+<p><strong>Measure description:</strong></p>
+<p>Measure includes senior centers, youth centers, food banks, job training programs, and day care centers(per census tract and per county) for the year 2021:</p>
+<ul>
+<li>Total count of social services</li>
+<li>Number of all social services per 1000 people</li>
+</ul>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>socsrv<em>socsrv</em>{count|prop}</li>
+<li>socsrv<em>socsrvcounty</em>{count|prop}</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>socsrv_socsrv_count</td>
+<td>Total counts: Total Individual and Family Services</td>
+</tr>
+<tr>
+<td>socsrv_socsrv_prop</td>
+<td>Total Individual and Family Services per 1000 people</td>
+</tr>
+<tr>
+<td>socsrv_socsrvcounty_count</td>
+<td>groupby(county) and sum(count_indivfamilyservices)</td>
+</tr>
+<tr>
+<td>socsrv_socsrvcounty_prop</td>
+<td>groupby(county) and sum(den_indivfamilyservices)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Melendez, Robert, Finlay, Jessica, Clarke, Philippa , Noppert, Grace, Gypin, Lindsay, and Dyke, Ellis. National Neighborhood Data Archive (NaNDA): Social Services by Census Tract and ZCTA, United States, 1990-2021. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2024-09-27. <a href="https://urldefense.com/v3/__https://doi.org/10.3886/E208207V3__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moKHP7-omA$">https://doi.org/10.3886/E208207V3</a></p>
+<h1 id="social-vulnerability-index-svi">Social Vulnerability Index (SVI) </h1>
+<p><strong>Measure description:</strong></p>
+<p>Every community must prepare for and respond to hazardous events, whether a natural disaster like a tornado or a disease outbreak, or an anthropogenic event such as a harmful chemical spill. The degree to which a community exhibits certain social conditions, including high poverty, low percentage of vehicle access, or crowded households, among others, may affect that community’s ability to prevent human suffering and financial loss in the event of a disaster. These factors describe a community’s social vulnerability.</p>
+<p>ATSDR’s Geospatial Research, Analysis, &amp; Services Program (GRASP) created the Centers for Disease Control and Prevention and Agency for Toxic Substances and Disease Registry Social Vulnerability Index (hereafter, CDC/ATSDR SVI or SVI) to help public health officials and emergency response planners identify and map the communities that will most likely need support before, during, and after a hazardous event.</p>
+<p>SVI data for the year 2022 indicates the relative vulnerability of every U.S. census tract. Census tracts are subdivisions of counties for which the Census collects statistical data. SVI ranks the tracts on 16 social factors, such as unemployment, racial and ethnic minority status, and disability status. Then, SVI further groups the factors into four related themes. Thus, each tract receives a ranking for each Census variable and for each of the four themes as well as an overall ranking.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>svi_*</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>svi_17younger_prcnt</td>
+<td>Percentile percentage of persons aged 17 and younger estimate</td>
+</tr>
+<tr>
+<td>svi_17younger_prcntile</td>
+<td>Percentage of persons aged 17 and younger estimate, 2018-2022 ACS</td>
+</tr>
+<tr>
+<td>svi_65older_prcnt</td>
+<td>Percentile percentage of persons aged 65 and older estimate</td>
+</tr>
+<tr>
+<td>svi_65older_prcntile</td>
+<td>Percentage of persons aged 65 and older estimate, 2018-2022 ACS</td>
+</tr>
+<tr>
+<td>svi_crowding_prcnt</td>
+<td>Percentage of occupied housing units with more people than rooms estimate</td>
+</tr>
+<tr>
+<td>svi_crowding_prcntile</td>
+<td>Percentile percentage households with more people than rooms estimate</td>
+</tr>
+<tr>
+<td>svi_disability_prcnt</td>
+<td>Percentile percentage of civilian noninstitutionalized population with a disability estimate</td>
+</tr>
+<tr>
+<td>svi_disability_prcntile</td>
+<td>Percentage of civilian noninstitutionalized population with a disability estimate, 2018-2022 ACS</td>
+</tr>
+<tr>
+<td>svi_unemploy_prcnt</td>
+<td>Percentile percentage of civilian (age 16+) unemployed estimate</td>
+</tr>
+<tr>
+<td>svi_unemploy_prcntile</td>
+<td>Unemployment Rate estimate</td>
+</tr>
+<tr>
+<td>svi_lesseng_prcnt</td>
+<td>Percentile percentage of persons (age 5+) who speak English "less than well" estimate</td>
+</tr>
+<tr>
+<td>svi_lesseng_prcntile</td>
+<td>Percentage of persons (age 5+) who speak English "less than well" estimate, 2018-2022 ACS</td>
+</tr>
+<tr>
+<td>svi_groupquarters_prcnt</td>
+<td>Percentile percentage of persons in group quarters estimate</td>
+</tr>
+<tr>
+<td>svi_groupquarters_prcntile</td>
+<td>Percentage of persons in group quarters estimate, 2018-2022 ACS</td>
+</tr>
+<tr>
+<td>svi_multiplehousing_prcnt</td>
+<td>Percentage of housing in structures with 10 or more units estimate</td>
+</tr>
+<tr>
+<td>svi_multiplehousing_prcntile</td>
+<td>Percentile percentage housing in structures with 10 or more units estimate</td>
+</tr>
+<tr>
+<td>svi_nohsdiploma_prcnt</td>
+<td>Percentile percentage of persons with no high school diploma (age 25+) estimate</td>
+</tr>
+<tr>
+<td>svi_nohsdiploma_prcntile</td>
+<td>Percentage of persons with no high school diploma (age 25+) estimate</td>
+</tr>
+<tr>
+<td>svi_minority_prcnt</td>
+<td>Percentile percentage minority (Hispanic or Latino (of any race); Black and African American, Not Hispanic or Latino; American Indian and Alaska Native, Not Hispanic or Latino; Asian, Not Hispanic or Latino; Native Hawaiian and Other Pacific Islander, Not Hispanic or Latino; Two or More Races, Not Hispanic or Latino; Other Races, Not Hispanic or Latino) estimate*</td>
+</tr>
+<tr>
+<td>svi_minority_prcntile</td>
+<td>Percentage minority (Hispanic or Latino (of any race); Black and African American, Not Hispanic or Latino; American Indian and Alaska Native, Not Hispanic or Latino; Asian, Not Hispanic or Latino; Native Hawaiian and Other Pacific Islander, Not Hispanic or Latino; Two or More Races, Not Hispanic or Latino; Other Races, Not Hispanic or Latino) estimate, 2018-2022 ACS*</td>
+</tr>
+<tr>
+<td>svi_mobilehomes_prcnt</td>
+<td>Percentile percentage mobile homes estimate</td>
+</tr>
+<tr>
+<td>svi_mobilehomes_prcntile</td>
+<td>Percentage of mobile homes estimate</td>
+</tr>
+<tr>
+<td>svi_poverty_prcnt</td>
+<td>Percentile percentage of persons below 150% poverty estimate</td>
+</tr>
+<tr>
+<td>svi_poverty_prcntile</td>
+<td>Percentage of persons below 150% poverty estimate</td>
+</tr>
+<tr>
+<td>svi_singlehousehold_prcnt</td>
+<td>Percentile percentage of single-parent households with children under 18 estimate</td>
+</tr>
+<tr>
+<td>svi_singlehousehold_prcntile</td>
+<td>Percentage of single-parent households with children under 18 estimate, 2018-2022 ACS</td>
+</tr>
+<tr>
+<td>svi_theme1_prcntile</td>
+<td>Percentile ranking for Socioeconomic Status theme summary</td>
+</tr>
+<tr>
+<td>svi_theme2_prcntile</td>
+<td>Percentile ranking for Household Characteristics theme summary</td>
+</tr>
+<tr>
+<td>svi_theme3_prcntile</td>
+<td>Percentile ranking for Racial and Ethnic Minority Status theme</td>
+</tr>
+<tr>
+<td>svi_theme4_prcntile</td>
+<td>Percentile ranking for Housing Type/ Transportation theme</td>
+</tr>
+<tr>
+<td>svi_total_prcntile</td>
+<td>Overall percentile ranking</td>
+</tr>
+<tr>
+<td>svi_uninsured_prcnt</td>
+<td>Percentage uninsured in the total civilian noninstitutionalized population estimate, 2018-2022 ACS</td>
+</tr>
+<tr>
+<td>svi_novehicle_prcnt</td>
+<td>Percentile percentage households with no vehicle available estimate</td>
+</tr>
+<tr>
+<td>svi_novehicle_prcntile</td>
+<td>Percentage of households with no vehicle available estimate</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Centers for Disease Control and Prevention/ Agency for Toxic Substances and Disease Registry/ Geospatial Research, Analysis, and Services Program. CDC/ATSDR Social Vulnerability Index 2022 Database U.S.. <a href="https://urldefense.com/v3/__https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moLlCHA8xQ$">https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html</a>.</p>
+<h1 id="urbanrural-area-census">Urban/Rural Area (Census) </h1>
+<p><strong>Measure description:</strong></p>
+<p>The Census Bureau’s urban-rural classification is a delineation of geographic areas, identifying both individual urban areas and the rural area of the nation. The Census Bureau’s urban areas represent densely developed territory, and encompass residential, commercial, and other non-residential urban land uses. The Census Bureau delineates urban areas after each decennial census by applying specified criteria to decennial census and other data. Rural encompasses all population, housing, and territory not included within an urban area.</p>
+<p>For the 2020 Census, an urban area will comprise a densely settled core of census blocks that meet minimum housing unit density and/or population density requirements. This includes adjacent territory containing non-residential urban land uses. To qualify as an urban area, the territory identified according to criteria must encompass at least 2,000 housing units or have a population of at least 5,000.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>urban_urbanclassification</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>urban_urbanclassification</td>
+<td>Urban/Rural Classification 1=urban; 0 not urban; urban cluster label no longer exist;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>U.S. Census Bureau. (2024, December 16). Urban and rural. U.S. Census Bureau. from <a href="https://urldefense.com/v3/__https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moKPwsPapA$">https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html</a></p>
+<h1 id="satellite-based-particulate-measures">Satellite-based Particulate Measures </h1>
+<p><strong>Measure description:</strong></p>
+<p>The Annual Mean PM2.5 Components (EC, NH4, NO3, OC, SO4) 50m Urban and 1km Non-Urban Area Grids for Contiguous U.S., 2019, v1 data set contains annual predictions of the chemical concentrations at a hyper resolution (50m x 50m grid cells) in urban areas and at a high resolution (1km x 1km grid cells) in non-urban areas for the years 2019. Particulate matter with an aerodynamic diameter less than 2.5 microgram per cubic meter (PM2.5) increases mortality and morbidity. The Coordinate Reference System (CRS) for predictions is the World Geodetic System 1984 (WGS84) and the Units for the PM2.5 Components are microgram per cubic meter.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li><em>particulat_{ec|nh4|no3|oc|so4}_mean_yb0</em></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>particulat_ec_mean_yb0</td>
+<td>annual average of Elemental Carbon in mcg/m^3</td>
+</tr>
+<tr>
+<td>particulat_nh4_mean_yb0</td>
+<td>annual average of Ammonium in mcg/m^3</td>
+</tr>
+<tr>
+<td>particulat_no3_mean_yb0</td>
+<td>annual average of Nitrate in mcg/m^3</td>
+</tr>
+<tr>
+<td>particulat_oc_mean_yb0</td>
+<td>annual average of Organic Carbon in mcg/m^3</td>
+</tr>
+<tr>
+<td>particulat_so4_mean_yb0</td>
+<td>annual average of Sulfate in mcg/m^3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong><br>
+Amini, H., Danesh-Yazdi, M., Di, Q., Requia, W., Wei, Y., AbuAwad, Y., Shi, L., Franklin, M., Kang, C., Wolfson, M. J., James, P., Habre, R., Zhu, Q., Apte, J. S., Andersen, Z. J., Xing, X., Hultquist, C., Kloog, I., Dominici, F., … Schwartz, J. (2023). <i>Annual Mean PM2.5 Components (EC, NH4, NO3, OC, SO4) 50m Urban and 1km Non-Urban Area Grids for Contiguous U.S., 2000-2019 v1</i> (Version 1.00) [Data set]. Palisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). <a href="https://urldefense.com/v3/__https://doi.org/10.7927/7WJ3-EN73__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moLpMfXFEA$">https://doi.org/10.7927/7WJ3-EN73</a> Date Accessed: 2026-01-05</p>
+<h1 id="population-density-epa">Population Density (EPA) </h1>
+<p><strong>Measure description:</strong></p>
+<p>The spatial distribution of population density in 2020 in 1km resolution, United States</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>denspop_density</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>denspop_density</td>
+<td>UN adjusted Population density (people per square mile) in 2020</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>WorldPop. (n.d.). Population density for United States of America. Humanitarian Data Exchange. from <a href="https://urldefense.com/v3/__https://data.humdata.org/dataset/worldpop-population-density-for-united-states-of-america__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moK2awTZ2w$">https://data.humdata.org/dataset/worldpop-population-density-for-united-states-of-america</a></p>
+<h1 id="measure-of-land-cover-and-tree-canopy-nlcd">Measure of Land Cover and Tree Canopy (NLCD) </h1>
+<p><strong>Measure description:</strong></p>
+<p>The USGS Land Cover program has combined the tried-and-true methodologies from premier land cover projects, National Land Cover Database (NLCD) and Land Change Monitoring, Assessment, and Projection (LCMAP), together with modern innovations in geospatial deep learning technologies to create the next generation of land cover and land change information. These land cover science product algorithms harness the remotely sensed Landsat data record to provide state-of-the-art land surface change information needed by scientists, resource managers, and decision-makers. Annual NLCD uses a modernized, integrated approach to map, monitor, synthesize, and understand the complexities of land use, cover, and condition change. Included in this release is the Annual NLCD, Collection 1.1, for the Conterminous U.S. for 2024. Questions about the Annual NLCD product suite can be directed to the Annual NLCD mapping team at USGS EROS, Sioux Falls, SD (605) 594-6151 or <a href="mailto:custserv@usgs.gov">custserv@usgs.gov</a>. See included spatial metadata for more details.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>nlcd</li>
+<li>tcc</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nlcd</td>
+<td>National Land Cover Database (NLCD)</td>
+</tr>
+<tr>
+<td>tcc</td>
+<td>Tree Canopy Cover (TCC)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Multi-Resolution Land Characteristics Consortium. (n.d.). MRLC from <a href="https://urldefense.com/v3/__https://www.mrlc.gov/__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moI2jNLjIg$">https://www.mrlc.gov/</a></p>
+<h1 id="soil-contamination-measures">Soil Contamination Measures </h1>
+<h2 id="lithium-concentrations-in-groundwater-sources-of-drinking-water">Lithium Concentrations in Groundwater Sources of Drinking Water </h2>
+<p><strong>Measure description:</strong></p>
+<p>This data release contains data used to develop models and maps that estimate the occurrence of lithium in groundwater used as drinking water throughout the conterminous United States. The measure is lithium concentration in soil C horizon milligrams per kilogram.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>gw_li</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gw_li</td>
+<td>Lithium concentration in soil C horizon (milligrams per kilogram)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Lombard, M. A., Brown, E. E., Saftner, D. M., Arienzo, M. M., Fuller-Thomson, E., Brown, C. J., &amp; Ayotte, J. D. (2024). Estimating Lithium Concentrations in Groundwater Used as Drinking Water for the Conterminous United States. Environmental Science &amp; Technology. <a href="https://urldefense.com/v3/__https://doi.org/10.1021/acs.est.3c03315__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moJu178O7Q$">https://doi.org/10.1021/acs.est.3c03315</a></p>
+<h2 id="grid-level-soil-pollution-measures-by-toxic-metals">Grid-level Soil Pollution Measures by Toxic Metals </h2>
+<p><strong>Measure description:</strong></p>
+<p>A compilation of a comprehensive global dataset on soil contamination by arsenic, cadmium, cobalt, chromium, copper, nickel and lead, sourced from investigations encompassing sampling locations across various climate zones, geological formations, and land usage patterns. The data measures the probability of exceedance for different toxic metals under Human Health and Ecological Thresholds (HHET) or the Agricultural Thresholds (AT) for each grid.</p>
+<p><strong>Key variables:</strong></p>
+<ul>
+<li>soilpoll<em>at</em>{As|Cd|Co|Cr|Cu|Ni|Pb}</li>
+<li>soilpoll<em>hhet</em>{As|Cd|Co|Cr|Cu|Ni|Pb}</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>soilpoll_hhet_As</td>
+<td>the probability of exceedance for arsenic (As) under Human Health and Ecological Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_hhet_Cd</td>
+<td>the probability of exceedance for cadmium (Cd) under Human Health and Ecological Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_hhet_Co</td>
+<td>the probability of exceedance for cobalt (Co) under Human Health and Ecological Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_hhet_Cr</td>
+<td>the probability of exceedance for chromium (Cr) under Human Health and Ecological Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_hhet_Cu</td>
+<td>the probability of exceedance for copper (Cu) under Human Health and Ecological Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_hhet_Ni</td>
+<td>the probability of exceedance for nickel (Ni) under Human Health and Ecological Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_hhet_Pb</td>
+<td>the probability of exceedance for lead (Pb) under Human Health and Ecological Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_at_As</td>
+<td>the probability of exceedance for arsenic (As) under Agricultural Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_at_Cd</td>
+<td>the probability of exceedance for cadmium (Cd) under Agricultural Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_at_Co</td>
+<td>the probability of exceedance for cobalt (Co) under Agricultural Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_at_Cr</td>
+<td>the probability of exceedance for chromium (Cr) under Agricultural Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_at_Cu</td>
+<td>the probability of exceedance for copper (Cu) under Agricultural Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_at_Ni</td>
+<td>the probability of exceedance for nickel (Ni) under Agricultural Thresholds for each grid</td>
+</tr>
+<tr>
+<td>soilpoll_at_Pb</td>
+<td>the probability of exceedance for lead (Pb) under Agricultural Thresholds for each grid</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key reference:</strong></p>
+<p>Hou, Deyi; Jia, Xiyue; Wang, Liuwei et al. (2025). Data from: Global soil pollution by toxic metals threatens agriculture and human health [Dataset]. Dryad. <a href="https://urldefense.com/v3/__https://doi.org/10.5061/dryad.83bk3jb2z__;!!Mih3wA!EpVTB9LMtTc2M41bAhf1JjoFfZ5Dr9N1J7o2i7kVRkIuAyvSy9ILZwGp0ZJHJ-fdgvZiZ5Z9Tge3moJPz-LwVg$">https://doi.org/10.5061/dryad.83bk3jb2z</a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

@@ -6,16 +6,12 @@ The HBCD Data Release Documentation is version-controlled, allowing researchers 
 
 The appropriate citation is listed in the **Citation** box on the right side of the page—simply copy and paste it into your references.
 
-<img src="../../images/zenodo.png" alt="Citation" width="40%" height="auto" class="center">
+<img src="../../images/zenodo.png" alt="Citation" width="40%" height="auto">
 
 ## View Archived Release Documentation
 
-Note that previous versions of the Release Docs website can be viewed by selecting a version from the flyout menu in the bottom-right corner of the page:
+Previous versions of the Release Docs website can be viewed by selecting a version from the flyout menu in the bottom-right corner of the page, e.g. (source: [ReadtheDocs](https://docs.readthedocs.com/platform/stable/flyout-menu.html#addons-flyout-menu)):
 
-<div class="img-with-text">
-    <img src="../../images/flyout-addons.webp" alt="Opened flyout menu example image from ReadTheDocs" width="30%" height="auto" class="center">
-    <p style="text-align: center;"><i>Opened flyout menu example (source: ReadtheDocs)</i></p>
-</div>
-
+<img src="../../images/flyout-addons.webp" alt="Opened flyout menu example image from ReadTheDocs" width="30%">
 
 

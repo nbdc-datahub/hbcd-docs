@@ -1,118 +1,40 @@
 # MacArthur-Bates CDI
 
-<p style="font-size: 1.4em; font-weight: 500; color: gray;"><i>MacArthur-Bates Communicative Development Inventories, Words and Gestures</i></p>
+{{ readme_summary(instruments.mb_cdi) }}
+{{ alert_warning(instruments.mb_cdi) }}
+{{ data_warning(instruments.mb_cdi) }}
+{{ issues_banner() }}
+
+## Instrument Details
+
+{{ instrument_description(instruments.mb_cdi) }}
+{{ hbcd_mods(instruments.mb_cdi) }}
+{{ scoring(instruments.mb_cdi) }}
+{{ references(instruments.mb_cdi) }}
+
+
+
+<!-- 
 
 <table class="table-no-vertical-lines" style="font-size: 1em;">
 <tbody>
 <tr><td><b>Table Name</b></td><td><code>ncl_ch_cdiwgen</code> (English version); <code>ncl_ch_cdiwges</code> (Spanish version)</td></tr>
-<tr><td><b>Construct</b></td><td>Language Development</td></tr>
+
 <tr><td><b>Study Visits</b></td><td>V04, V06</td></tr>
 <tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: Yes<br>
 <b>Respondent</b>: Birth Parent or Primary Caregiver<br>
-<b>Method</b>: Self administered in person (20-60 min estimated duration)</td></tr>
+<b>Method</b>: Self administered in person</td></tr>
 <td><b>Quality Control</b></td>
 <td>
   <ul>
   <li>
-    <strong>Administration QC:</strong> HBCD SOPs instruct RAs to present instructions exactly as shown in the existing 
-    <a href="https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf" target="_blank">Web-CDI Manual</a>.
+    HBCD SOPs instruct RAs to present instructions exactly as shown in the existing 
+    <a href="https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf">Web-CDI Manual</a>.
   </li>
   <li>All data collection, calculation of summary scores, and percentile scores are completed within Web-CDI and then 
     imported into the HBCD database. Data were reviewed to verify that fields are appropriately labeled upon import, 
     and range checks of all summary variables were performed.</li>
 </td></tr>
 </tbody>
-</table>
-
-<div id="alert" class="alert-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Responsible Use Warning</span>
-  <a class="anchor-link" href="#alert" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="alert-collapsible-content">
-<p>The CDI forms are well-documented and widely used assessments. We note that percentile scores were calculated based on the norms described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023), see additional references below. See <a href="#hbcd-mod">HBCD Modifications</a> for a description of how the CDI-WG is administered to children with exposure to different languages; users may want to consider the <a href="../mlds" target="_blank">Multilingual Language Development</a> questionnaire in conjunction with the CDI.</p>
-</div>
-
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p>The CDI-WG provides percentiles score but does not provide standard scores. Note that in some cases, the caregiver endorsed all items in certain sections of the Web-CDI form. These cases are included in the released data as completed by the caregiver, but users may take caution in interpretation.</p> 
-<p>In addition, the CDI includes a benchmark age that is based on entry by the caregiver. Note that the CDI is not administered until 9 months of age and data entry errors may occur. Users may want to use this in conjunction with other data on the child's age included elsewhere in HBCD.</p>
-</div>
-
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
-
-## Instrument Details
-
-The **MacArthur-Bates Communicative Development Inventories, Words and Gestures**, Web Version, English and Spanish is a caregiver -report assessment of children’s early language development, including expressive and receptive vocabulary and gesture. In HBCD, the Words and Gestures form is administered up to 16 months of age.  Beginning at 16 months of age, the Words and Gestures form the Words and Sentences form. See details about both forms at [https://mb-cdi.stanford.edu/](https://mb-cdi.stanford.edu/).
-
-
-<div id="hbcd-mod" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-gear"></i></span>
-  <span class="text-with-link">
-  <span class="text">HBCD Modification Details</span>
-  <a class="anchor-link" href="#hbcd-mod" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Administration of the CDI-WG in English or Spanish is decided based on the results of the Multilingual Language Development questionnaire. If the caregiver reports that the child has 30% or greater exposure to English and/or Spanish, they are prompted to complete the CDI in that language; children who are exposed to both English and Spanish at a greater than 30% level are prompted to complete both forms. If caregivers report less than 30% exposure to either language, administration defaults to English.</p> 
-</div>
-
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>All summary scores (e.g. <strong>Total Gestures</strong>, <strong>Words Understood</strong>, <strong>Words Produced</strong>) and associated percentiles (with and without adjustment for child sex) were computed within Web-CDI using the most updated norms within that software and described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023).</p>  
-<p>The child’s age at administration for purposes of scoring the CDI is entered by the caregiver as part of the Web-CDI form. The caregiver also notes on this form if the child was born prematurely and if so, by how many weeks. The Web-CDI then provides percentile scores both unadjusted and adjusted for prematurity. See <a href="https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf">https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf</a>.</p>
-</div>
-
-## References
-
-<div class="references"> 
-  <p>
-    deMayo, B., Kellier, D., Braginsky, M., Bergmann, C., Hendriks, C., Rowland, C., et al. (2021). 
-    Web-CDI: A system for online administration of the MacArthur-Bates Communicative Development Inventories. 
-    <i>Language Development Research</i>, 1, 55–98. 
-    <a href="https://doi.org/10.31234/osf.io/8mjx9" target="_blank">https://doi.org/10.31234/osf.io/8mjx9</a>
-  </p>  
-  <p>
-    Marchman, V. A., Dale, P. S., & Fenson, L. (2023). 
-    <i>The MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual</i> 
-    (V. A. Marchman, P. S. Dale, & L. Fenson, Eds.; 3rd ed.). 
-    Baltimore, MD: Brookes Publishing Co.
-  </p>  
-  <p>
-    Marchman, V. A., & Dale, P. S. (2023). 
-    The MacArthur-Bates Communicative Development Inventories: Updates from the CDI advisory board. 
-    <i>Frontiers in Psychology</i>, 14, 1170303. 
-    <a href="https://doi.org/10.3389/fpsyg.2023.1170303" target="_blank">https://doi.org/10.3389/fpsyg.2023.1170303</a>
-  </p>  
-</div>
+</table> -->
 

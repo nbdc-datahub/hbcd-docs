@@ -1,73 +1,18 @@
-# USDTL Nails Toxicology (Maternal)
+# USDTL Nails Toxicology
 
-<table class="table-no-vertical-lines" style="font-size: 1em;">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>bio_bm_biosample_nails_results</code> (toxicology screen), <code>bio_bm_biosample_nails_type</code> (specimen type)</td></tr>
-<tr><td><b>Construct</b></td><td>Drug Panel, Environmental Exposure</td></tr>
-<tr><td><b>Study Visits</b></td><td>V01, V02</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Respondent</b>: Pregnant/postpartum person<br>
-<b>Method</b>: Self-collected under supervision or collected by research team (5 min estimated duration)
-</td></tr>
-<td><b>Quality Control</b></td><td>Examine assay ranges and categorical versus continuous measures</td></tr>
-</tbody>
-</table>
+{{ readme_summary(instruments.nails) }}
+{{ alert_warning(instruments.nails) }}
+{{ data_warning(instruments.nails) }}
+{{ issues_banner() }}
 
-<div id="warning" class="warning-banner" onclick="toggleCollapse(this)">
-    <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-  <span class="text-with-link">
-  <span class="text">Data Warning</i></span>
-  <a class="anchor-link" href="#warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="warning-collapsible-content">
-<p><b>USDTL Screening Updates</b><br>
-As of November 2025, USDTL no longer assayed sufentanil in the nail samples.</p>
-<p><b>Continuous Variables</b><br>
-Continuous variables should be interpreted with caution based on limits of quantification (LOQ), i.e. the minimum concentration at which metabolites can be reliably quantified. See <a href="#nails-table1">Urine Assay Thresholds for Analytes</a>.</p>
-<p><b>Updated Workflow</b><br>
-As of July 1, 2024, the nail processing workflow was updated to optimize specimen use and allow confirmation testing for low sample quantities. Prior to this update, remnants of ELISA extract were not used for confirmation when specimens had insufficient sample.</p> 
-<p><b>Large Gaps Between Collection and Analysis Dates</b><br> A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.</p>
-<p><b>Interpretation of “QNS” in Confirmatory Results When a Positive Is Expected</b><br>
-In some cases, a specimen’s initial test meets the threshold for a positive result, but the confirmatory result is reported as “QNS” (Quantity Not Sufficient). This occurs when there is not enough specimen to conduct a confirmatory test or a confirmatory test must be repeated (following quality control procedures, e.g. unacceptable chromatography, poor recovery, or when a sample result is &lt;5% of the previous specimen), but insufficient sample remains to complete the repeat test. Because the results could not be validated, this should be treated as a true quantity insufficiency.</p>
-</div>
-
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
-<p></p>
+---
 
 ## Instrument Details
 
-For the USDTL assay, fingernail and toenail specimens are sorted by weight, and those weighing at least 20 mg undergo ELISA screening, followed by LCMSMS confirmation for presumptive positives, each requiring an additional 20 mg. If insufficient specimen remains for LCMSMS, the remnant ELISA extract is used for confirmation.
+{{ instrument_description(instruments.nails) }}
+{{ hbcd_mods(instruments.nails) }}
 
-<img src="../images/Fig1_nails.png" width="70%" height="auto" class="center">
-
-Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)), a confirmatory test result for any substance analyte is determined to be positive, negative, or invalid (*QNS* i.e. *quantity not sufficient*). Substance analytes (e.g. **Amphetamine/`c_amp_n`**) are grouped into different classes by analyte screening tests and confirmatory tests ([see details](#nails-table2)). 
-
-<style>
-.analyte-table .num {
-  text-align: right;
-  white-space: nowrap;
-}
-.analyte-table .unit {
-  font-size: 0.75em;
-  color: #6b7280;
-}
-.analyte-table .group td {
-  font-weight: 600;
-  font-size: 0.85em;
-  color: #4b5563;
-  padding-top: 10px;
-  border-top: 1px solid #e5e7eb;
-}
-</style>
-
-<div id="nails-table1" class="table-banner" onclick="toggleCollapse(this)">
+<div id="nails-table1" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-table"></i></span>
   <span class="text-with-link">
   <span class="text">Nail Assay Thresholds</span>
@@ -77,186 +22,26 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="table-collapsible-content">
-<p>The detection window for all analytes is 3-6 and 10-14 months for finger and toe nails, respectively, with the exception of Ethyl glucuronide (finger nails: 3; toe nails: no consensus).</p>
-<table class="compact-table-no-vertical-lines analyte-table">
-<thead>
-<tr>
-<th>Analytes</th>
-<th class="num"><span class="tooltip tooltip-bottom">LOD<span class="tooltiptext">Limit of detection</span></span> / <span class="unit">(pg/mL)</span></th>
-<th class="num"><span class="tooltip tooltip-bottom">LOQ<span class="tooltiptext">Limit of quantification</span></span> / <span class="unit">(pg/mL)</span></th>
-<th class="num"><span class="tooltip tooltip-left">Cutoff<span class="tooltiptext">Threshold used to classify results as positive or negative</span></span> / <span class="unit">(pg/mL)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr><td>Amphetamine / Methamphetamine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
-<tr><td>MDA / MDMA / MDEA</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
-<tr><td>Carboxy-delta-9-THC</td><td class="num">0.01</td><td class="num">0.02</td><td class="num">0.05</td></tr>
-<tr><td>Cocaine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
-<tr><td>Cocaethylene / Benzoylecgonine / Norcocaine</td><td class="num">10</td><td class="num">20</td><td class="num">50</td></tr>
-<tr><td>6-MAM</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
-<tr><td>Codeine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
-<tr><td>Hydrocodone</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
-<tr><td>Hydromorphone / Morphine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
-<tr><td>Norhydrocodone</td><td class="num">8</td><td class="num">16</td><td class="num">40</td></tr>
-<tr><td>Fentanyl / Norfentanyl / Alfentanil / Acetyl Fentanyl / Acetyl Norfentanyl</td><td class="num">2</td><td class="num">4</td><td class="num">10</td>
-</tr>
-<tr><td>Sufentanil</td><td class="num">1</td><td class="num">2</td><td class="num">5</td></tr>
-<tr><td>Norsufentanil</td><td class="num">2</td><td class="num">2</td><td class="num">5</td></tr>
-<tr><td>Tramadol</td><td class="num">200</td><td class="num">400</td><td class="num">500</td></tr>
-<tr><td>Ethyl glucuronide</td><td class="num">4</td><td class="num">8</td><td class="num">20</td></tr>
-<tr><td>Nicotine / Cotinine</td><td class="num">20</td><td class="num">40</td><td class="num">100</td></tr>
-</tbody>
-</table>
+<div class="collapsible-content">
+<p>The detection window for all analytes is 3-6 and 10-14 months for finger and toe nails, respectively, with the exception of Ethyl glucuronide (finger nails: 3; toe nails: no consensus). "Cutoff" is the threshold to classify results as positive or negative for an analyte.</p>
+{{ csv_table("nails-table1-assay-thresholds.csv") }}
 </div>
 
-<div id="nails-table2" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-table"></i></span>
-  <span class="text-with-link">
-  <span class="text">Mapping from Class to Screening Tests and Confirmatory Tests for Nails</span>
-  <a class="anchor-link" href="#nails-table2" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><i>See more easily parsable table <a href="../nails_table2.html">here</a>.</i></p>
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-    <th>Class: Label (<code>Name</code>)</th>
-    <th>Screening Test: Label (<code>Name</code>)</th>
-    <th>Confirmatory Test: Label (<code>Name</code>)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td rowspan="2">Stimulant (<code>c_any_stim_n</code>)</td>
-    <td>amp/mamp (<code>s_amp_n, s_mamp_n</code>)</td>
-    <td>Amphetamine (<code>c_amp_n</code>)<br>Methamphetamine (<code>c_meth_n</code>)<br>MDMA (<code>c_mdma_n</code>)<br>MDA (<code>c_mda_n</code>)<br>MDEA (<code>c_mdea_n</code>)</td></tr>
-<tr>
-    <td>coc (<code>s_coc_n</code>)</td>
-    <td>Cocaine (<code>c_coc_n</code>)<br>Cocaethylene (<code>c_cocae_n</code>)<br>Benzoylecgonine (<code>c_ben_n</code>)<br>Norcocaine (<code>c_ncoc_n</code>)</td>
-</tr>
 
-<tr>
-    <td>Cannabinoid (<code>c_any_cannabinoid_n</code>)</td>
-    <td>thc (<code>s_thc_n</code>)</td>
-    <td>Carboxy-delta-9-THC (<code>c_delta-9-THC_n</code>)</td>
-</tr>
-
-<tr>
-    <td>Barbiturate (<code>c_any_barb_n</code>)</td>
-    <td>bar (<code>s_bar_n</code>)</td>
-    <td>Amobarbital (<code>c_amobarb_n</code>)<br>
-    Secobarbital (<code>c_secobarb_n</code>)<br>
-    Pentobarbital (<code>c_pentobarb_n</code>)<br>
-    Phenobarbital (<code>c_phenobarb_n</code>)<br>
-    Butalbital (<code>c_butalbital_n</code>)</td>
-</tr> 
-<tr>
-    <td>Benzodiazepine (<code>c_any_benzo_n</code>)</td>
-    <td>benz (<code>s_benz_n</code>)</td>
-    <td>Diazepam (<code>c_diaz_n</code>)<br>
-    Oxazepam (<code>c_oxaz_n</code>)<br>
-    Nordiazepam (<code>c_nord_n</code>)<br>
-    Temazepam (<code>c_tema_n</code>)<br>
-    Midazolam (<code>c_mida_n</code>)<br>
-    Alprazolam (<code>c_alpa_n</code>)</td>
-</tr>
-<tr>
-    <td rowspan="7">Opioids (<code>c_any_opioid_n</code>)</td>
-    <td>opi (<code>s_opi_n</code>)</td>
-    <td>Codeine (<code>c_cod_n</code>)<br>
-    Morphine (<code>c_mor_n</code>)<br>
-    MAM (<code>c_mam_n</code>)<br>
-    Hydrocodone (<code>c_hydroc_n</code>)<br>
-    Norhydrocodone (<code>c_norh_n</code>)<br>
-    Hydromorphone (<code>c_hydrom_n</code>)</td>
-</tr>
-<tr>
-    <td>mtd (<code>s_mtd_n</code>)</td>
-    <td>Methadone (<code>c_mtd_n</code>)<br>EDDP (<code>c_eddp_n</code>)</td>
-</tr>
-<tr>
-    <td>oxyc (<code>s_oxyc_n</code>)</td>
-    <td>Oxycodone (<code>c_oxyc_n</code>)<br>
-        Noroxycodone (<code>c_noxyc_n</code>)<br>
-        Oxymorphone (<code>c_oxym_n</code>)</td>
-</tr>
-<tr>    
-    <td>tram (<code>s_tram_n</code>)</td>
-    <td>Tramadol (<code>c_tram_n</code>)</td>
-</tr>
-<tr>
-    <td>fent (<code>s_fent_n</code>)</td>
-    <td>Fentanyl (<code>c_fent_n</code>)<br>
-        Norfentanyl (<code>c_nfent_n</code>)<br>
-        Acetylfentanyl (<code>c_acfent_n</code>)<br>
-        ActlNorfentanyl (<code>c_acnfent_n</code>)</td>
-</tr>
-<tr>
-    <td>suf (<code>s_suf_n</code>)</td>
-    <td>Alfentanil (<code>c_afent_n</code>)<br>
-        Sufentanil (<code>c_suf_n</code>)<br>
-        Norsufentanil (<code>c_nsuf_n</code>)</td>
-</tr>
-<tr>
-    <td>bup (<code>s_bup_n</code>)</td>
-    <td>Buprenorphine (<code>c_bup_n</code>)<br>
-        Norbuprenorpine (<code>c_nbup_n</code>)</td>
-</tr>
-<tr>
-    <td>dissociative anesthetic (<code>c_disanesth_n</code>)</td>
-    <td>ket (<code>s_ket_n</code>)</td>
-    <td>Ketamine (<code>c_ket_n</code>)<br>Norketamine (<code>c_nket_n</code>)</td>
-</tr>
-<tr>
-    <td>Nicotine (<code>c_nicotine_n</code>)</td>
-    <td>cot (<code>s_cot_n</code>)</td>
-    <td>Nicotine (<code>c_nic_n</code>)<br>
-        Cotinine (<code>c_cot_n</code>)</td>
-</tr>
-<tr>
-    <td>Ethanol (<code>c_ethanol_n</code>)</td>
-    <td>&nbsp;</td>
-    <td>ethyl glucuronide (<code>c_etoh_n</code>)</td>
-</tr>
-</tbody>
-</table> 
+<div id="scoring" class="banner" onclick="toggleCollapse(this)">
+<span class="emoji">
+    <i class="fa fa-calculator"></i>
+</span>
+<span class="text-with-link">
+    <span class="text">Scoring Procedures</span>
+    <a class="anchor-link" href="#scoring" title="Copy link">
+        <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+<span class="arrow">▸</span>
 </div>
-
-<div id="scoring" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-calculator"></i></span>
-  <span class="text-with-link">
-  <span class="text">Scoring Procedures</span>
-  <a class="anchor-link" href="#scoring" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<p><b>Final results for each substance follow these rules:</b></p>
-<ul>
-  <li>
-    <b>Positive results:</b> If any confirmatory test for a substance analyte 
-    (e.g., Amphetamine/<code>c_amp_n</code>) is positive based on 
-    <a href="#nails-table1">predefined thresholds</a>, then the corresponding 
-    class-level (<code>c_any_stim_n</code>) and overall sample-level 
-    (<code>c_any_specimen_n</code>) results are also positive.
-  </li>
-  <li>
-    <b>Negative results:</b> If all confirmatory tests for analytes in a class are negative, 
-    then the class-level result is negative. If all classes are negative, the overall 
-    sample-level (<code>c_any_specimen_n</code>) result is negative.
-  </li>
-  <li>
-    <b>Invalid results:</b> If any confirmatory test for a substance analyte is invalid, 
-    then the corresponding class-level and overall sample-level results are also invalid.
-  </li>
-</ul>
+<div class="collapsible-content">
+{{ scoring_contents(instruments.nails) }}
 <table class="table-no-vertical-lines">
     <thead>
       <tr>
@@ -295,7 +80,7 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
 </tr>
 <tr>
 <td>Confirmatory results - categorical</td>
-<td><span class="tooltip"><code>c_amp_n_cat</code><span class="tooltiptext" style="font-size: 0.9em;">Categorical confirmatory test variable for alcohol follows a different convention and is ‘c_ethanol_n’</span></span></td>
+<td><code>c_amp_n_cat</code>*</td>
 <td><code>1</code>=positive<br>
     <code>0</code>=negative<br>
     <code>3</code>=invalid<br>
@@ -303,11 +88,7 @@ Based on the predefined thresholds (see [Nail Assay Thresholds](#nails-table1)),
 </tr>
 </tbody>
 </table>
+<p>*<i>Note: Categorical confirmatory test variable for alcohol follows a different convention and is <code>c_ethanol_n</code>.</i></p>
 </div>
 
-## References
-
-<div class="references">
-    <p>Bandoli, G., Anunziata, F., Bogdan, R., Zilverstand, A., Chaiyachati, B. H., Gurka, K. K., Sullivan, E., Croff, J., & Bakhireva, L. N. (2024). Assessment of substance exposures in nail clipping samples: A systematic review. <i>Drug and Alcohol Dependence</i>, 254, 111038. <a href="https://doi.org/10.1016/j.drugalcdep.2023.111038" target="_blank">https://doi.org/10.1016/j.drugalcdep.2023.111038</a></p>
-    <p>Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <a href="https://doi.org/10.1016/j.dcn.2024.101451">https://doi.org/10.1016/j.dcn.2024.101451</a></p>
-</div>
+{{ references(instruments.nails) }}

@@ -1,34 +1,13 @@
 # PhenX+ Neighborhood Safety 
 
-<table class="table-no-vertical-lines">
-<tbody>
-<tr><td><b>Table Name</b></td><td><code>sed_bm_nbhsaf</code></td></tr>
-<tr><td><b>Construct</b></td><td>Neighborhood Safety</td></tr>
-<tr><td><b>Study Visits</b></td><td>V01, V02, V07, V09</td></tr>
-<tr><td><b>Administration</b></td><td>
-<b>Child-specific</b>: No<br>
-<b>Respondent</b>: Parent<br>
-<b>Method</b>: Self-administered (in-person or remote) (1 min estimated duration)
-</td></tr>
-<tr>
-<td><b>Quality Control</b></td>
-<td>Data dashboard monitored for missingness.</td>
-</tr>
-</tbody>
-</table>
-
-<div id="issues" class="issues-banner">
-  <span class="emoji"><i class="fas fa-bug"></i></span>
-  <span class="text">Please review the <a href="https://docs.hbcdstudy.org/latest/changelog/issues-updates/" target="_blank">Known Issues & Pending Updates</a> page for updates that may affect data use.</span>
-</div>
+{{ readme_summary(instruments.nbhsaf) }}
+{{ alert_warning(instruments.nbhsaf) }}
+{{ data_warning(instruments.nbhsaf) }}
+{{ issues_banner() }}
 
 ## Instrument Details
 
-This measure is a three-item questionnaire to assess the respondent’s perceptions about safety, violence, and crime in their neighborhoods. Neighborhood safety may be relevant to a range of maternal and child health outcomes. The respondent’s perception of their neighborhood may also be used alongside geocoded measures of neighborhood crime statistics to help understand an individuals experience within a neighborhood. Response options for HBCD include the addition of “Don’t know” and “Decline to answer.” In addition, the original measure was scored by averaging all three items, but no scoring is used in HBCD - all responses are item-level only. 
-
-## References
-
-<div class="references">
-  <p>Mujahid, M. S., Diez Roux, A. V., Morenoff, J. D., &amp; Raghunathan, T. (2007). Assessing the measurement properties of neighborhood scales: from psychometrics to ecometrics. <em>American Journal of Epidemiology</em>, 165(8), 858–867. <a href="https://doi.org/10.1093/aje/kwm040">https://doi.org/10.1093/aje/kwm040</a></p>
-  <p>PhenX Toolkit. (2024 November 01). Neighborhood Safety, PhenX Toolkit. <a href="https://www.phenxtoolkit.org/protocols/view/210901">https://www.phenxtoolkit.org/protocols/view/210901</a></p>
-</div>
+{{ instrument_description(instruments.nbhsaf) }}
+{{ hbcd_mods(instruments.nbhsaf) }}
+{{ scoring(instruments.nbhsaf) }}
+{{ references(instruments.nbhsaf) }}

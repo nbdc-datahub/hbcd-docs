@@ -1,0 +1,35 @@
+Analytes,Unit,LOD,LOQ,Cutoff,Detection Window
+2-Hydroxyethylflurazepam,ng/mL,20,40,100,1–4 days
+6-MAM,ng/mL,2,4,10,8 hours
+"7-Aminoflunitrazepam / 7-Aminoclonazepam /
+7-Aminonitrazepam",ng/mL,20,40,100,1–4 days
+"α-Hydroxyalprazolam / α-Hydroxymidazolam /
+α-Hydroxytirazolam",ng/mL,20,40,100,1–4 days
+Amphetamine / Methamphetamine,ng/mL,50,100,250,2–3 days
+Amobarbital / Butalbital,ng/mL,40,100,200,2–4 days
+Benzoylecgonine,ng/mL,20,50,100,2–3 days
+Buprenorphine / Norbuprenorphine,ng/mL,1,2,5,2–3 days
+Carboxy-delta-9-THC,ng/mL,3,7.5,15,Casual: 2–5; Chronic: 10–14 days
+Carboxy-delta-8-THC,ng/mL,3,7.5,15,No consensus
+Carboxy-cannabidiol,ng/mL,10,25,50,No consensus
+Carisoprodol,ng/mL,10,20,50,2–3 days
+Codeine / Hydrocodone,ng/mL,10,50,100,2–3 days
+Cotinine,ng/mL,34,34,500,Up to 7 days
+EDDP,ng/mL,60,120,300,2–3 days
+Ethyl glucuronide,ng/mL,50,100,100,2–3 days
+Ethyl sulfate,ng/mL,12.5,25,25,2–3 days
+Fentanyl / Norfentanyl / Alfentanil / Sufentanil,pg/mL,40,40,100,2–3 days
+Hydromorphone / Morphine,ng/mL,10,50,100,2–3 days
+Ketamine / Norketamine,ng/mL,10,50,100,2–3 days
+Lorazepam / Nordiazepam / Oxazepam / Temazepam,ng/mL,20,40,100,1–4 days
+MDA / MDMA / MDEA,ng/mL,50,100,250,2–3 days
+Meprobamate,ng/mL,10,20,50,2–3 days
+Methadone,ng/mL,60,120,300,2–3 days
+Normeperidine,ng/mL,40,100,200,2–3 days
+Norpropoxyphene,ng/mL,10,50,100,2–3 days
+Oxycodone / Oxymorphone,ng/mL,60,120,300,2–3 days
+Pentobarbital / Secobarbital,ng/mL,40,100,200,1–2 days
+Phenobarbital,ng/mL,40,100,200,2 weeks
+Phencyclidine,ng/mL,5,12.5,25,2–3 days
+Tramadol,ng/mL,40,80,200,2–3 days
+Zolpidem / Zolpidem Carboxylic Acid,ng/mL,4,8,20,2–3 days

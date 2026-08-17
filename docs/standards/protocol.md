@@ -1,7 +1,33 @@
 # HBCD Study Protocol Overview
 
+## Study Timeline & Visits
+
 <img src="https://hbcdstudy.org/wp-content/uploads/2025/03/HBCD_Timeline_March2025_Updated.png" 
 alt="Age of Child participants at each Visit number: Visit 1 (V01) = Prenatal; Visit 2 (V02) = 0-1 month old; Visit 3 (V03) = 3-9 months old; Visit 4 (V04) = 9-15 months old; Visit 5 (V05) = 10-17 months old;  Visit 6 (V06) = 15-30 months old; Visit 7 (V07) = 16-32 months old" width="90%" height="auto" class="center">
+
+<span class="table-title">The age range of the child participant at each visit (V0X) is as follows:</span>
+<table class="table-no-vertical-lines">
+<tbody>
+<tr>
+<td><b>Visit 1 (V01)</b></td>
+<td><b>Visit 2 (V02)</b></td>
+<td><b>Visit 3 (V03)</b></td>
+<td><b>Visit 4 (V04)</b></td>
+<td><b>Visit 5 (V05)</b></td>
+<td><b>Visit 6 (V06)</b></td>
+<td><b>Visit 7 (V07)</b></td>
+</tr>
+<tr>
+<td>Prenatal</td>
+<td>0-1 month</td>
+<td>3-9 months</td>
+<td>9-15 months</td>
+<td>10-17 months</td>
+<td>15-30 months</td>
+<td>16-32 months</td>
+</tr>
+</tbody>
+</table>
 
 ## Participant Population
 
