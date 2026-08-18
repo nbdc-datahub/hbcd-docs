@@ -1,7 +1,7 @@
 <style>
 .wy-nav-content {
-    width: 100% !important;
-    max-width: 100% !important;
+    width: 90% !important;
+    max-width: 90% !important;
     flex-grow: 1 !important;
 }
 </style>
@@ -21,7 +21,7 @@ The tables below summarize known issues affecting the current data release and p
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
 ### Behavior &amp; Child-Caregiver Interaction
 
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -57,6 +57,18 @@ The tables below summarize known issues affecting the current data release and p
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ERICA</td>
+<td>A future release will include reliability codes integrated into the primary coding dataset. Until then, users must perform this integration manually: see the ERICA Data Warning for instructions. Instructions include cleaning the current files to exclude n=44 participants with incorrect code values (data entry/form errors), capping <code>b_raw</code> values at 3.0 (n=3 participants), and removing the “Locomotor Ability” field (<code>mh_cg_erica_3_9m_locomotor_ability</code>), which has errors, also to be corrected in the next release.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ERICA</td>
+<td>Add all age and <code>date_taken</code> fields (currently excluded due to use of coding rather than visit dates).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>MAPS-EASI</td>
 <td>Addition of the MAPS-EASI- Toddler</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
@@ -78,7 +90,7 @@ The tables below summarize known issues affecting the current data release and p
 
 ### Biospecimens &amp; Omics
 
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -105,7 +117,7 @@ The tables below summarize known issues affecting the current data release and p
 
 ### Demographics
 
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -123,13 +135,25 @@ The tables below summarize known issues affecting the current data release and p
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
+<td>Basic Demo</td>
+<td>The <code>screen_race_multi__*</code> variables are almost entirely coded as '0' and should not be used for analysis. Users interested in race and ethnicity information should instead use the corresponding derived ACS race and ethnicity variable. Values will be corrected in a future release.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
 <td>TLFB</td>
 <td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a></td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Visit Info</td>
+<td>Harmonize participant status and withdrawal fields</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>RESTRUCTURE</td>
+<td>Static &amp; Dynamic Tables</td>
 <td>The Demographics domain includes 2 tables with derived information grouped into visit-specific data (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/">Visit Info</a>) and general demographics (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/">Basic Demographics</a>). In a future release, these tables will be restructured to instead organize variables as either longitudinal (dynamic measures that change over time) or global (static measures, such as sex assigned at birth and race/ethnicity).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
@@ -138,7 +162,7 @@ The tables below summarize known issues affecting the current data release and p
 
 ### EEG
 
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -165,7 +189,7 @@ The tables below summarize known issues affecting the current data release and p
 
 ### General
 
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -188,9 +212,21 @@ The tables below summarize known issues affecting the current data release and p
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Score text</td>
+<td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts ecPROMIS-PAGS; MAPS-TL; SPM-2).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Multibirth Cohorts</td>
-<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child. A future release will also populate these fields for sibling records (e.g., HBCD Multiple Birth – Sibling) and include a <code>FamilyID</code> field to identify sibling relationships. Until then, users should obtain family-level values for sibling participants by referencing the corresponding Main Child in the mapping file.</td>
+<td>Blank Fields for Siblings</td>
+<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>FamilyID</td>
+<td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
@@ -204,7 +240,7 @@ The tables below summarize known issues affecting the current data release and p
 
 ### MRI
 
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -236,7 +272,7 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Source DICOMs</td>
 <td>Add source DICOMs for all imaging modalities.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -249,7 +285,7 @@ The tables below summarize known issues affecting the current data release and p
 
 ### Neurocognition &amp; Language
 
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -267,9 +303,21 @@ The tables below summarize known issues affecting the current data release and p
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
+<td>CDI</td>
+<td>Percentiles incorrectly converted for N=36 cases, resulting in values &gt;100 ('Adjusted Percentile' incorrectly parsed from 'Total Produced' instead of 'Total Produced Percentile-sex (adjusted)')</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
 <td>MLDS</td>
 <td>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis.</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Vineland</td>
+<td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -288,7 +336,7 @@ The tables below summarize known issues affecting the current data release and p
 
 ### Novel Tech &amp; Wearable Sensors
 
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -309,7 +357,7 @@ The tables below summarize known issues affecting the current data release and p
 
 ### Physical Health
 
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -357,6 +405,12 @@ The tables below summarize known issues affecting the current data release and p
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Med History V1</td>
+<td>Addition of V06</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>PEDsQL</td>
 <td>Addition of the PEDsQL</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
@@ -372,7 +426,7 @@ The tables below summarize known issues affecting the current data release and p
 
 ### Pregnancy &amp; Environmental Exposure
 
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -411,7 +465,7 @@ The tables below summarize known issues affecting the current data release and p
 
 ### Social &amp; Environmental Determinants
 
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -467,6 +521,12 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Incarceration</td>
 <td>Addition of the Incarceration Questionnaire</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>TIC Questionnaire</td>
+<td>Addition of TIC Questionnaire table</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table><!-- END KNOWN_ISSUES_TABLE -->

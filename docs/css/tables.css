@@ -144,19 +144,7 @@ th, td {
 
 /* =========================================================
    KNOWN ISSUES/PENDING UPDATES PAGE TABLE & OTHER FEATURES
-========================================================= */
-/* TABLE */
-.issues {
-    font-size: 0.9em !important;
-}     
-.issues th:last-child,
-.issues td:last-child {
-    text-align: center;
-}     
-.issues th:first-child,
-.issues td:first-child {
-    white-space: nowrap !important;
-}   
+========================================================= */ 
 
 /* PILLS */
 .pr-pill {
