@@ -22,7 +22,7 @@
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
-<th colspan="3"><b>ERICA Inter-rater Reliability for HBCD Data Release 2.1 (n=177)</b></th>
+<th colspan="3"><b>ERICA Inter-rater Reliability for HBCD Data Release 2.1 (n=171)</b></th>
 </tr><tr><th>Codes</th><th>ICC</th><th>Kappa</th></tr>
 </thead>
 <tbody>
