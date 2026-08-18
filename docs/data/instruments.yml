@@ -4172,8 +4172,11 @@ erica:
   hbcd_mods_collapsed: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recvRJ5BP4HmtSmgL
   warning1: |-
-    Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (`mh_cg_erica_rel_3_9m`) into the primary coding data (`mh_cg_erica_3_9m`). **Failure to integrate these data correctly prior to analysis will result in incorrect results.** In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release.
-    See the [Integration Instructions](https://docs.hbcdstudy.org/latest/resources/ERICA_2.1_Integrated_Analytic_Data_INSTRUCTIONS.pdf) PDF for details. Relevant participant lists can be downloaded from the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com) (DUC access required).
+    Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (`mh_cg_erica_rel_3_9m`) into the primary coding data (`mh_cg_erica_3_9m`). **Failure to integrate these data correctly prior to analysis will result in incorrect results.** In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release. Download the following files:
+
+    - [Integration Instructions](https://docs.hbcdstudy.org/latest/resources/ERICA_2.1_Integrated_Analytic_Data_INSTRUCTIONS.pdf)
+    - [ERICA_2.1_Analytic_REMOVALS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_Analytic_REMOVALS.csv) (in [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/)- DUC access required)
+    - [ERICA_2.1_DataError_EXCLUSIONS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv) (in [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com)- DUC access required)
   description: "The Early Regulation in Context Assessment (**ERICA**) is a standardized observational paradigm that is adapted from the well-validated Disruptive Behavior Diagnostic Observation Schedule (DB-DOS) ([Krogh-Jespersen et al. 2022](https://doi.org/10.3389/fpsyg.2021.732312)). The ERICA assesses early child regulation in the context of the caregiver-child relationship via a series of five brief, developmentally appropriate activities that “press” for regulation within the dyad (e.g., frustration, engagement, enjoyment). The ERICA is coded using a one-pass, global coding system adapted for HBCD. Seven codes are organized across child, caregiver, and dyadic domains:\n\n- **Child:** Positive affect, Irritability, Social engagement\n- **Caregiver**: Responsive behavior, Irritable behavior, Directive behavior\n- **Dyadic**: Caregiver–child connectedness \n\nCodes are scored on a 4-point scale (0-3), reflecting the frequency, intensity, and duration of observed behaviors across the\
     \ paradigm, with higher scores indicating higher levels of observed behavior. See [Edwards et al. (2024)](https://doi.org/10.1016/j.dcn.2024.101422) for additional details on the ERICA paradigm and adaptation for HBCD."
   slug: early-regulation-in-context-assessment
@@ -4201,8 +4204,11 @@ erica:
     - `mh_cg_erica_3_9m_g_raw` — Dyadic Connectedness
   all_warnings_collapsed: |-
     Integrated Analytic Dataset (REQUIRED)
-    Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (mh_cg_erica_rel_3_9m) into the primary coding data (mh_cg_erica_3_9m). Failure to integrate these data correctly prior to analysis will result in incorrect results. In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release.
-    See the Integration Instructions PDF for details. Relevant participant lists can be downloaded from the HBCD Private Release Notes (DUC access required).
+    Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (mh_cg_erica_rel_3_9m) into the primary coding data (mh_cg_erica_3_9m). Failure to integrate these data correctly prior to analysis will result in incorrect results. In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release. Download the following files:
+
+    - Integration Instructions
+    - [ERICA_2.1_Analytic_REMOVALS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_Analytic_REMOVALS.csv) (in HBCD Private Release Notes- DUC access required)
+    - [ERICA_2.1_DataError_EXCLUSIONS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv) (in HBCD Private Release Notes- DUC access required)
 
     General
     Data Release 2.1 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month). Coded data for a subset of participants may be missing from this data release for various reasons. These data will be added in future releases.

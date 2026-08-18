@@ -36,6 +36,13 @@
 
 
 <!-- 
+
+Integration Instructions PDF
+[ERICA_2.1_Analytic_REMOVALS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_Analytic_REMOVALS.csv)
+[ERICA_2.1_DataError_EXCLUSIONS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv) HBCD Private Release Notes (DUC access required).
+
+
+
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
