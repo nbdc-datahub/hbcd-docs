@@ -19,6 +19,23 @@
 {{ suppx(instruments.erica, "1") }}
 
 <!-- HARD-CODED TABLE -->
+{{ csv_table(
+    "ERICA-inter-rater-reliability-2.1.csv",
+    title="ERICA Inter-rater Reliability for HBCD Data Release 2.1 (n=171)",
+    row_colors={
+        "#e8f5fb": range(0, 3),
+        "#bfe6f5": range(3, 6),
+        "#8ad4f1": range(6, 7)
+    },
+    note="ICC is a two-way, mixed effects, multiple rater intraclass correlation (ICC (3,k)) per Shrout and Fleiss (1979) conventions. ICC is best for continuous variables. Kappas are unweighted Cohen’s Kappa and are calculated for binary/categorical scores."
+) }}
+
+{{ references(instruments.erica) }}
+
+
+
+
+<!-- 
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
@@ -37,12 +54,7 @@
 </tbody>
 </table>
 
-{{ references(instruments.erica) }}
-
-
-
-
-<!-- <div id="qc" class="banner" onclick="toggleCollapse(this)">
+<div id="qc" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-shield"></i></span><span class="text-with-link">
 <span class="text">QC Procedures: Administration & Centralized Coding</span>
 <a class="anchor-link" href="#qc" title="Copy link"><i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span></div>
