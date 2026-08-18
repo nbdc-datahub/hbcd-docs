@@ -1,7 +1,6 @@
-
 # Tabulated Data
 
-Tabulated data are participant-level summaries for the majority of HBCD Study instruments listed under [Behavior, Biology, & Environment](../instruments/index.md#behavior-biology-environment) and [tabulated pipeline derivatives](overview.md#tabulated-pipeline-derivatives). Files are stored under `rawdata/phenotype/`:
+Tabulated data contain participant-level summaries for the majority of HBCD behavioral/phenotypical instruments (as well as [tabulated pipeline derivatives](overview.md#tabulated-pipeline-derivatives)). Tables follow the BIDS organizational structure so data from different sources can be linked by participant ID and visit number. Files are stored in `rawdata/phenotype/`:
 
 <pre class="folder-tree">
 hbcd/
@@ -13,99 +12,73 @@ hbcd/
         └── <span class="var">[instrument_name]</span>.*             <span class="hashtag"># Instrument Data</span>
 </pre>
 
-Key features of tabulated data include:
+## File Formats
 
- - Table Organization: tables are organized following the BIDS standard so that data from different sources can be linked together by participant ID and visit number
- - [File Types](#file-types): tables are available in both plain text (`.tsv`) and Parquet (`.parquet`) format, with accompanying metadata that explains the contents of each table
+Each table is available as:
 
-<!-- ## Table Organization
+* **TSV/CSV**: plain text files for easy inspection and broad compatibility
+* **Parquet**: compressed files optimized for efficient analysis in Python and R ([see details](https://parquet.apache.org/))
+* **Shadow matrix**: a companion file that records why individual values are missing
 
-Following the [BIDS](https://bids-specification.readthedocs.io/en/stable/modality-agnostic-files/phenotypic-and-assessment-data.html) standard, each table includes unique identifier columns for the following items that allow you to link information between tables:
+### TSV/CSV vs. Parquet
 
- - Participant ID (<code>participant_id</code>)
- - Session/visit number (<code>session_id</code>)
- - Run number (<code>run_id</code>) - only as applicable, e.g., for MRI where multiple runs are acquired  -->
- 
-#### Study Design Logic: Child-Centric Data Structure
+One of the key difference between these file types is that TSV/CSV file types store metadata in accompanying `.json` files, whereas Parquet stores metadata directly in the file, reducing import errors and improving performance for large datasets. Review the table below to choose the optimal format for your needs:
 
-The HBCD Study organizes data around the Child ID as the primary key, meaning each caregiver and child share the same participant ID, with all caregiver-reported data nested under the corresponding Child ID. This structure supports longitudinal analyses by enabling straightforward tracking of each child’s data over time without needing to remap caregiver information. It also simplifies multi-birth cases: when a caregiver reports on multiple children, each child is assigned a unique record, so each child's data remains distinct (avoiding complex joins or disambiguation).
-
-## File Types
-
-Tabulated data are available in two formats, **plain text files** (`.tsv`/`.csv`) and **Parquet** (`.parquet`) - [see details](#plain-text-vs-parquet-files) below. Each data table also comes with a **shadow matrix file** (`<instrument_name>_shadow.<tsv|parquet>`), which has the same structure of the corresponding data table, but contains codes explaining why values are missing - [see details](#shadow-matrices-for-missing-data) below. 
-
-### Plain Text vs. Parquet Files
-
-Tabulated data are provided in multiple formats to support a range of tools and user preferences. **Plain text files** (`.tsv`/`.csv`) are widely compatible and easy to open/inspect in Excel or text editors and have metadata (including column types, variable labels, categorical coding, etc.) stored in accompanying `.json` files. [Apache Parquet](https://parquet.apache.org/), or simply **Parquet** (`.parquet`), is a modern, compressed columnar format optimized for analysis and large-scale data. Unlike plain text files, metadata is embedded directly in parquet files, ensuring correct data types and enabling efficient loading and analysis in Python or R.
-
-<div id="csv-vs-parquet" class="banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text-with-link">
-    <span class="text">Which format should I use?</span>
-    <a class="anchor-link" href="#csv-vs-parquet" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<table class="compact-table-no-vertical-lines">
+<table class="table-no-vertical-lines">
   <thead>
     <tr>
       <th>Format</th>
+      <th>Best for</th>
       <th>Advantages</th>
       <th>Limitations</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><b>TSV/CSV</b><br>
-        <i>Quick inspection/spreadsheets</i>
+      <td><strong>TSV/CSV</strong></td>
+      <td>Quick inspection and spreadsheets</td>
+      <td>
+        <ul>
+          <li>Easy to open</li>
+          <li>Widely compatible</li>
+        </ul>
       </td>
       <td>
-        <i style="color: blue;" class="fas fa-check"></i> Easy to open<br>
-        <i style="color: blue;" class="fas fa-check"></i> Widely compatible format
-      </td>
-      <td>
-        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Large files load slowly<br>
-        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Separate metadata (<i>see <a href="#caution-using-plain-text-files-for-analysis">Caution</a> below</i>)<br>
-        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Selective column loading not supported
+        <ul>
+          <li>Slower for large files</li>
+          <li>Metadata stored separately</li>
+          <li>No selective column loading</li>
+        </ul>
       </td>
     </tr>
     <tr>
-      <td><b>Parquet</b><br>
-        <i>Large data analysis in Python/R</i>
+      <td><strong>Parquet</strong></td>
+      <td>Analysis in Python or R</td>
+      <td>
+        <ul>
+          <li>Fast and compact</li>
+          <li>Embedded metadata</li>
+          <li>Preserves data types</li>
+          <li>Supports selective column loading</li>
+        </ul>
       </td>
       <td>
-        <i style="color: blue;" class="fas fa-check"></i> Optimized for large-scale data<br>
-        <i style="color: blue;" class="fas fa-check"></i> Fast loading and smaller files<br>
-        <i style="color: blue;" class="fas fa-check"></i> Metadata embedded<br>
-        <i style="color: blue;" class="fas fa-check"></i> Ensures correctly specified data types<br>
-        <i style="color: blue;" class="fas fa-check"></i> Supports selective column loading (saves memory)
-      </td>
-      <td>
-        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Not easily viewable in Excel<br>
-        <i style="color: #ffa500;" class="fas fa-exclamation-triangle"></i> Not currently supported by <a href="https://bids-specification.readthedocs.io/en/stable/">BIDS</a>
+        <ul>
+          <li>Not easily viewed in Excel</li>
+          <li>Not currently supported by BIDS</li>
+        </ul>
       </td>
     </tr>
   </tbody>
 </table>
-</div>
-<p></p>
 
-#### <i style="color: #ffa500;" class="fas fa-exclamation-triangle header-icon"></i> CAUTION: Using Plain Text Files for Analysis
-
-For large data, plain text formats (TSV/CSV) can cause import issues (in Python, R, etc.) due to the separation of metadata. **We therefore recommend using Parquet files for analysis whenever possible to avoid these issues.** Parquet files embed metadata directly, ensuring correct data types and handling of missing values. Common issues include:
-
-- Misinterpretation of data types, e.g., `0`/`1` used for “Yes/No” may be read as numeric instead of categorical
-- Mishandling missing values (columns with mostly missing values may be treated as empty)
-
-**If you do use CSV/TSV files for analysis:** be sure to (1) manually define column types during import using the sidecar JSON metadata files and (2) replace blank values with `n/a` (missing values are blank in HBCD data following [BIDS specification](https://bids-specification.readthedocs.io/en/stable/common-principles.html#tabular-files)). We recommend using [NBDCtools](../access/tools.md#nbdctools) to automate these processes (e.g. [`read_dsv_formatted()`](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html)).
-
-#### Working with Parquet in Python and R
+**NOTE:** Because TSV/CSV metadata are stored separately, analysis software may infer data types incorrectly. For example, categorical `0`/`1` values representing “Yes/No” may be interpreted as numeric. When using TSV/CSV files for analysis, be sure to define column types during import using the accompanying JSON metadata. We recommend using [NBDCtools](../access/tools.md#nbdctools) to automate these types of processes (e.g. [`read_dsv_formatted()`](https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html)).
 
 <p>
 <div id="load-parquet" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji" style="margin-right: 4px;"><i class="fa-brands fa-python"></i>&nbsp;<i class="fa-brands fa-r-project"></i></span>
   <span class="text-with-link">
-  <span class="text">Loading Parquet Files</span>
+  <span class="text">Loading Parquet Files in Python/R</span>
   <a class="anchor-link" href="#load-parquet" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -130,14 +103,21 @@ For large data, plain text formats (TSV/CSV) can cause import issues (in Python,
 </div>
 </p>
 
+---
+
 ### Shadow Matrices for Missing Data
 
-Each TSV or Parquet file in `/rawdata/phenotype/` has a corresponding **shadow matrix file** in the same format that record the reason for missing values (e.g., `Don't know`, `Decline to Answer`, `Logic Skipped`, etc.) in the phenotype data.
+Every TSV or Parquet file in `rawdata/phenotype/` has a corresponding **shadow matrix** in the same format. The shadow matrix has the same structure and column names as its data file but records **why values are missing**. For example, non-response codes such as `999` (“Don't Know”) and `777` (“Decline to Answer”) are converted to blank cells in the main data file. Their meaning is preserved in the corresponding shadow matrix. For each cell:
+
+* **Data value present →** shadow matrix cell is blank.
+* **Data value missing →** shadow matrix cell contains the reason for missingness.
+
+![](images/shadowmatrix.png)
 
 <div id="sm-values" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
-  <span class="text">Shadow Matrix Values for Missingness</span>
+  <span class="text">Missingness Reasons</span>
   <a class="anchor-link" href="#sm-values" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -145,18 +125,16 @@ Each TSV or Parquet file in `/rawdata/phenotype/` has a corresponding **shadow m
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Possible Values Across Instruments</b><br>
-The following are standard possible values for missingness reason found in the shadow matrices across instruments.</p>
+<p>Common shadow matrix values include:</p>
 <ul>
-<li><strong>Decline to Answer</strong> (e.g., participant declined to answer a question)</li>
-<li><strong>Don't Know</strong> (e.g., participant did not know the answer)</li>
-<li><strong>Missed Visit</strong> (e.g., participant did not attend a visit)</li>
-<li><strong>Missed Instrument</strong> (e.g., participant did not complete assessment)</li>
-<li><strong>Logic Skipped</strong> (e.g., question skipped due to branching logic)</li>
-<li><strong>Unknown Missing</strong> (e.g., reason for missing value unknown)</li>
+<li><strong>Decline to Answer</strong>- participant declined to answer a question</li>
+<li><strong>Don't Know</strong>- participant did not know the answer</li>
+<li><strong>Missed Visit</strong>- participant did not attend a visit</li>
+<li><strong>Missed Instrument</strong>- participant did not complete assessment</li>
+<li><strong>Logic Skipped</strong>- question skipped due to branching logic</li>
+<li><strong>Unknown Missing</strong>- reason for missing value unknown and/or instrument was not administered (check against the <i>Administration</i> field included for instruments)</li>
 </ul>
-<p> Note that <b>for cases where an instrument was not administered</b>, this would be indicated in the shadow matrix as 'Unknown Missing' for blank entries (as well as 'Logic Skipped' for fields skipped due to branching logic). There is also an 'Administration' field for all instruments that indicates whether an instrument was administered or not for a given participant/visit.</p>
-<p><b>Special Cases</b><br>
+<p>
 The following domains/instruments have additional unique shadow matrix values used where applicable:</p>
 <table class="table-no-vertical-lines">
 <thead>
@@ -198,28 +176,16 @@ The following domains/instruments have additional unique shadow matrix values us
 </div>
 <p></p>
 
-#### How They Work
+#### Why Use Shadow Matrices?
 
-In the data files, categorical codes for non-responses such as “Don’t know” (`999`) and “Decline to answer” (`777`) are deliberately converted to blank cells. The original responses are converted to a missingness reason stored in the shadow matrix, which mirror the structure and column names of the original data file (i.e. each cell corresponds to the same cell in the associated data file):
+Separating missingness reasons from the primary data:
 
- - If a data cell contains a value: the shadow matrix cell is blank.
- - If a data cell is missing: the shadow matrix cell records the reason (e.g., “Don’t know”)
- 
-For example, compare the <mark style="background-color: #f9cb9b; font-weight: normal;">highlighted cells</mark> in the data file (*left*) vs. the corresponding shadow matrix (*right*) below:
+* Prevents placeholder codes such as `777` or `999` from being interpreted as valid numeric values
+* Keeps column data types consistent
+* Preserves information about non-response without cluttering the main dataset
 
-![](images/shadowmatrix.png)
+In some analyses, the reason a value is missing may itself be meaningful. For example, researchers may want to examine how often participants report that they do not understand a question. In these cases, missingness information can be joined back to the primary data via the methods below.
 
-#### Why Shadow Matrices Are Useful
-
-Shadow matrices make analyses cleaner and more reliable by:
-
- - Preventing analytical errors, e.g., misinterpreting placeholder codes (like `777` or `999`) as valid numbers.
- - Maintaining consistent data types across entries (e.g., avoids mixing text notes into numeric fields).
- - Preserving non-response information without cluttering the main dataset.
-
-#### Working with Shadow Matrices in Python and R 
-
-While the approach of storing missingness reasons in a shadow matrix file supports cleaner analyses, **there are situations where non-responses are themselves meaningful.** For example, a researcher might be interested in how often participants do not understand a given question and how this relates to other variables. To understand patterns of missing data, users can re-integrate the non-responses from the shadow matrix back into the data using the following helper functions (*click to expand*):
 
 <div id="python-helper-function" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-brands fa-python"></i></span>
