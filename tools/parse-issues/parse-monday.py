@@ -68,7 +68,7 @@ def build_table(domain, rows):
 
     table_parts.append(f"\n### {html.escape(domain)}")
     table_parts.append("""
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
