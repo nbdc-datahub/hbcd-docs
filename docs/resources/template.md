@@ -2,13 +2,13 @@
 
 <table class="table-no-vertical-lines readme-intro">
 <tbody>
-<tr><td>Name</td><td>Full name of instrument with acronyms spelled out</td></tr>
-<tr><td>Table Name</td><td> Table name in Lasso</td></tr>
-<tr><td>Construct</td><td>The construct(s) that the measure assesses</td></tr>
-<tr><td>Study Visits</td><td>e.g. V01, V03, V05</td></tr>
-<tr><td>Type</td><td>e.g. Remote Questionnaire (Parent on Child; 4-8 min)</td></tr>
+<tr><td>Name</td><td>{Full name of instrument with acronyms spelled out} ({acronym})</td></tr>
+<tr><td>Table Name</td><td> {Table name in Lasso}</td></tr>
+<tr><td>Construct</td><td>{The construct(s) that the measure assesses}</td></tr>
+<tr><td>Study Visits</td><td>{e.g. V01, V03, V05}</td></tr>
+<tr><td>Type</td><td>{e.g. Remote Questionnaire (Parent on Child; 4-8 min)}</td></tr>
 <td><b>Quality Control</b></td>
-<td>Detail the QC procedures for this measure- scoring algorithm verification, data consistency checks, etc. May be provided as a list.</td></tr>
+<td>{Detail the QC procedures for this measure- scoring algorithm verification, data consistency checks, etc. May be provided as a list.}</td></tr>
 </tbody>
 </table>
 
