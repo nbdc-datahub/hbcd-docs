@@ -229,20 +229,23 @@ Tabulated HBCD study data is organized into a standardized table format per stud
     </div>
   </td>
 </tr>
+
 <tr>
-  <td><code>levels</code><i class="fa fa-language table-icon"></i></td>
-  <td>Levels</td>
-  <td>
-    <b>Value: Label</b> mappings for categorical variables
-    <div class="dd-inline-list">
-      e.g. <span class="tooltip"><i>0: FALSE ; 1: TRUE</i>
-        <span class="tooltiptext">
-          <img src="../levels.png" alt="Levels table example" style="max-height: 200px;">
-        </span>
-      </span>
-    </div>
-  </td>
+<td><code>levels</code><i class="fa fa-language table-icon"></i></td>
+<td>Levels</td>
+<td>
+<b>Value: Label</b> mappings for categorical variables, e.g. 
+<span class="tooltip">
+  <i>0: FALSE ; 1: TRUE</i>
+  <span class="tooltiptext">
+    <img src="../levels.png"
+         alt="Levels table example"
+         style="max-height: 200px;">
+  </span>
+</span>
+</td>
 </tr>
+
 <tr>
   <td><code>name</code><i class="fa-solid fa-lock table-icon"></i></td>
   <td>Variable name</td>

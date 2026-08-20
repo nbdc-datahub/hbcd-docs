@@ -114,7 +114,7 @@ T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infan
 <li>See <a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees</a> for additional guidance</li>
 <li>T1w-related files will only be present in the derivatives if a T1w was acquired</li>
 </ul>
-<pre class="folder-tree" style="font-size: 11px;">
+<pre class="folder-tree">
 hbcd/
 └── derivatives/
     └── nibabies-<span class="var">{HASH}</span>/
@@ -343,29 +343,13 @@ hbcd/
 </div>
 <div class="collapsible-content">
 <p>When downloaded, the symlink files present within the M-CRIB-S derivatives (<code>mcribs-0f306a2f/</code>), appended with <code>*_symlink_s3_object</code>, appear as text files that contain the S3 object path instead of the actual file content. If needed, you may restore these files as symlinks via the following terminal command, which restores all symlink files within your locally downloaded directory and renames them without <code>*_symlink_s3_object</code> to match the original sourcedata filenames:</p>
-<div class="copy-box">
-  <div class="copy-text-container">
-    <span id="specific-text-code">find . -type f -name "*_symlink_s3_object" -print | while read path ; do
+```
+find . -type f -name "*_symlink_s3_object" -print | while read path ; do
   symval=$(cat "$path")
   symdir=$(dirname "$path")
   symbase=$(basename "$path" _symlink_s3_object)
   ln -s "$symval" "$symdir/$symbase" && rm -f "$path" || break
-done</span>
-  <button class="copy-button">Copy</button>
-  </div>
-</div>
-<p>To simply print the commands needed to restore individual symlinks without making any changes to the local data, run the following command:</p>
-<div class="copy-box">
-<div class="copy-text-container">
-  <span id="specific-text-code">find . -type f -name "*_symlink_s3_object" -print | while read path ; do
-symval=$(cat "$path")
-symdir=$(dirname "$path")
-symbase=$(basename "$path" _symlink_s3_object)
-echo ln -s "$symval" "$symdir/$symbase" '&&' rm -f "$path"
-done</span>
-<button class="copy-button">Copy</button>
-</div>
-</div>
+```
 </div>
 
 ---

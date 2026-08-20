@@ -68,40 +68,36 @@ h6 {
   background-color: #dde6fe;
 }
 
-
-
 /* =========================================================
    BUTTONS
 ========================================================= */
 .button-link {
   display: inline-block;
-  background-color: #F2795E;
-  color: #071B2C !important;
+  background-color: #f2795ea2;
+  color: #071b2cc5 !important;
   text-decoration: none;
-  font-weight: 600;
-  padding: 0.65rem 1.2rem;
+  font-weight: 600 !important;
+  padding: 6px 12px !important;
   border: none;
-  border-radius: 999px;
-  /* border-radius: 14px;  */
+  border-radius: 999px !important;
   cursor: pointer;
-  box-shadow: 1px 2px 5px 0px rgba(21, 24, 24, 0.10);
+  box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.596);
   transition: all 0.2s ease;
 }
 .button-link:visited {
-  color: #071B2C !important;
+  color: #071b2cc5 !important;
   text-decoration: none;
 }
 .button-link:hover {
   background-color: #E15436;
-  box-shadow: 1px 2px 6px 1px rgba(21, 24, 24, 0.15);
+  box-shadow: -6px 5px 12px rgb(0, 0, 0);
   color: #071B2C !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* =========================================================
    ICONS 
 ========================================================= */
-
 .simple-icon {
   color: #199bd6; 
   font-size: 0.8em;
@@ -152,27 +148,6 @@ h6 {
   color: #199bd6; 
   font-size: 0.95em;
 }
-
-
-/* =========================================================
-   SUBTITLES
-========================================================= */
-.subtitle {
-  color: #6c757d;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 1.2em;
-}
-
-/* Subtitles for README pages*/
-.readme-subtitle {
-  color: #6c757d;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 1.4em;
-  margin-bottom: 1.2em;
-}
-
 
 /* EXPAND WIDTH OF MAIN CONTENT */
 /* Shrink the width of the right-hand blank area */
@@ -237,19 +212,6 @@ h6 {
   color: #0066cca7;
 }
 
-/* Inline code styling */
-/* Inline Markdown code */
-code {
-    color: #af00b1 !important;
-    font-size: 0.8em !important;
-    font-weight: 500;
-    font-family: monospace;
-    overflow-wrap: anywhere;
-    border: none !important;
-    background-color: none !important;
-    background: none !important;
-}
-
 /* Change color of upper left-hand background */ 
 .wy-side-nav-search {background-color: #199bd6;}
 
@@ -265,123 +227,38 @@ code {
     font-size: 0.85em !important;
   }
 
+/* =========================================================
+   INFOBOX (distinct from banners)
+========================================================= */
+.infobox {
+  margin: 1.25rem 0;
+  padding: 0.9rem 1.1rem;
+  border-left: 4px solid #dde6fe;
+  border-radius: 4px;
+  /* background: #42a2cf17; */
+  background-color: #dde6fe28;
+  color: #2f3742;
+}
+.infobox > strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #263746;
+  font-size: 0.95rem;
+}
+.infobox p {
+  margin: 0;
+}
+.infobox ul,
+.infobox ol {
+  margin-top: 0.3rem !important;
+  margin-bottom: 0 !important;
+  font-size: 0.9em;
+}
 
-/* COPY BOXES */
-.copy-box {
-    position: relative;
-    border: 1px solid #d3d7df;
-    border-radius: 5px;
-    padding: 3px 5px;
-    margin: 12px auto;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-    background-color: #f0f2f4;
-}
-.copy-button {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    border: 1px solid #cfd4dc;
-    padding: 6px 10px;
-    border-radius: 6px;
-    font-size: 12px;
-    color: #6a737d;
-    cursor: pointer;
-    transition: background 0.15s, color 0.15s;
-}
-.copy-button:hover {
-    background: #e8eaef;
-    color: #111;
-}
-.copy-text-container {
-    margin-top: 6px;
-}
-#specific-text-code {
-    display: block;
-    border-radius: 6px;
-    padding: 5px 10px;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: 11px;
-    white-space: pre-wrap;
-    overflow-x: auto;
-}
 
 /* =========================================================
-   RELEASE NOTES PAGE STYLING
+   TOOLTIPS (USED SPARINGLY)
 ========================================================= */
-
-/* RELEASE DATE BANNER */
-.release-banner {
-  background: #f2f6fc;
-  padding: 12px 20px;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 25px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-.release-banner .release-text {
-  font-size: 1.1em;
-  font-weight: 600;
-  color: #2a5d9f;
-}
-.release-banner .release-icon {
-  margin-right: 8px;
-  vertical-align: 1px;
-}
-
-/* STATS GRID */
-.stats-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 24px 0;
-  align-items: stretch;
-}
-.card {
-  flex: 1 1 260px;
-  display: flex;
-  flex-direction: column;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  padding: 22px;
-  border-radius: 14px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  text-align: center;
-}
-.card h3 {
-  margin: 0 0 18px 0;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #6b7280;
-}
-.metric {
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1;
-  color: #1d4f91;
-  margin-bottom: auto;
-}
-.metric-sub {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #1d4f91;
-  margin: 8px 0;
-}
-.detail {
-  margin-top: 18px;
-
-  font-size: 0.9rem;
-  line-height: 1.5;
-
-  color: #4b5563;
-}
-.muted {
-  color: #6b7280;
-  font-weight: 500;
-}
-
-/* TOOLTIPS */
 .tooltip {
     position: relative;
     cursor: help;
@@ -423,48 +300,67 @@ code {
     border-bottom: 1px dotted #0056b3;
 }
 
-/* Arrow */
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 5px;
-    border-style: solid;
-    border-color: #333 transparent transparent transparent;
-}
 
-/* Buttons */
-.button-link {
-  display: inline-block;
-  background-color: #f2795ea2;
-  color: #071b2cc5 !important;
-  text-decoration: none;
-  font-weight: 600 !important;
-  padding: 6px 12px !important;
-  border: none;
-  border-radius: 999px !important;
-  cursor: pointer;
-  box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.596);
-  transition: all 0.2s ease;
+
+/* =========================================================
+   CODE BLOCKS
+========================================================= */
+
+/* Simple Markdown code blocks for file trees or other uses */
+.markdown pre:has(code.language-tree) {
+  padding: 1rem 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
 }
-.button-link:visited {
-  color: #071b2cc5 !important;
-  text-decoration: none;
-}
-.button-link:hover {
-  background-color: #E15436;
-  box-shadow: -6px 5px 12px rgb(0, 0, 0);
-  color: #071B2C !important;
-  text-decoration: none !important;
+.markdown code.language-tree {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.7;
+  color: #334155 !important;
+  background: transparent;
 }
 
 
 /* =========================================================
-   FOLDER TREES
+   CODE BLOCKS
 ========================================================= */
+
+/* Inline code styling (markdown and otherwise) */
+code {
+    color: #af00b1;
+    font-size: 0.8em;
+    font-weight: 500;
+    font-family: monospace;
+    overflow-wrap: anywhere;
+    border: none !important;
+    background-color: none !important;
+    background: none !important;
+}
+
+/* Simple Markdown code blocks for file trees or other uses */
+.markdown pre:has(code.language-tree) {
+  padding: 1rem 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.markdown code.language-tree {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.7;
+  color: #334155 !important;
+  background: transparent;
+}
+
+/* ADDITIONAL FOLDER TREE STYLING WHERE NEEDED */
 .folder-tree {
+  padding: 1rem 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.3em;
+}
+/* .folder-tree {
   font-family: monospace;
   background-color: #fafafa;
   color: #222;
@@ -474,7 +370,7 @@ code {
   white-space: pre;
   display: block;
   overflow-x: auto;
-}
+} */
 /* Placeholder variables */
 .folder-tree .var {
   color: #0b84c6;
@@ -505,32 +401,4 @@ code {
 .folder-tree .comment {
   color: #7d7d7d;
   font-style: italic;
-}
-
-/* =========================================================
-   INFOBOX (distinct from banners)
-========================================================= */
-.infobox {
-  margin: 1.25rem 0;
-  padding: 0.9rem 1.1rem;
-  border-left: 4px solid #dde6fe;
-  border-radius: 4px;
-  /* background: #42a2cf17; */
-  background-color: #dde6fe28;
-  color: #2f3742;
-}
-.infobox > strong {
-  display: block;
-  margin-bottom: 0.35rem;
-  color: #263746;
-  font-size: 0.95rem;
-}
-.infobox p {
-  margin: 0;
-}
-.infobox ul,
-.infobox ol {
-  margin-top: 0.3rem !important;
-  margin-bottom: 0 !important;
-  font-size: 0.9em;
 }
