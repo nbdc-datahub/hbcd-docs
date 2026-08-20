@@ -4,6 +4,77 @@
     max-width: 90% !important;
     flex-grow: 1 !important;
 }
+/* RELEASE DATE BANNER */
+.release-banner {
+  background: #f2f6fc;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.release-banner .release-text {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #2a5d9f;
+}
+.release-banner .release-icon {
+  margin-right: 8px;
+  vertical-align: 1px;
+}
+
+/* STATS GRID */
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 24px 0;
+  align-items: stretch;
+}
+.card {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.card h3 {
+  margin: 0 0 18px 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+.metric {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #1d4f91;
+  margin-bottom: auto;
+}
+.metric-sub {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1d4f91;
+  margin: 8px 0;
+}
+.detail {
+  margin-top: 18px;
+
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+  color: #4b5563;
+}
+.muted {
+  color: #6b7280;
+  font-weight: 500;
+}
 </style>
 
 # Release Notes & History

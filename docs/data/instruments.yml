@@ -953,9 +953,12 @@ foodins:
   measure: 2-item Food Insecurity
   construct: Food Insecurity
 gabi:
-  status: Work in progress - I'm still working on certain sections
+  supp2_text: null
+  status: Notify administrator to update README with latest changes
   alert1: Users of HBCD infant heart rate wearable sensor data must follow the study's data use guidelines and the conditions of the Data Use Certificate (DUC). These standards are in place to protect participant privacy, ensure scientific rigor, and promote respectful, non-stigmatizing research practices. Users should review relevant data warnings before downloading or analyzing infant heart rate sensor variables. This includes checking the data dictionary and instrument documentation for indicators such as incomplete recordings, periods of sensor removal, or discrepancies with setup/return metadata.
+  hbcd_mods1: null
   duration: 72 hours continuous wear
+  hbcd_mods2: null
   full_name: GABI SmartCare Heart Rate Sensor - Electrocardiography
   alert3: In analysis, users should exercise caution when working with datasets containing missing data, as missingness may not be random. Users should ensure transparency and reproducibility in all analyses by sharing analytic scripts, documenting missing data, and clearly describing decisions about wear-time, sensor removal, or exclusions. Users should not upload HBCD data to generative AI tools or other public platforms, as this would violate the DUC and risk unintended data exposure.
   all_alerts_collapsed: |2-
@@ -967,9 +970,11 @@ gabi:
 
 
     In analysis, users should exercise caution when working with datasets containing missing data, as missingness may not be random. Users should ensure transparency and reproducibility in all analyses by sharing analytic scripts, documenting missing data, and clearly describing decisions about wear-time, sensor removal, or exclusions. Users should not upload HBCD data to generative AI tools or other public platforms, as this would violate the DUC and risk unintended data exposure.
+  warning4: null
   alert2: Users should avoid reporting results from groups smaller than ten participants to reduce the risk of re-identification. Users should interpret findings within broader social and environmental contexts, incorporating relevant covariates (e.g., demographic, environmental, caregiving factors) to improve scientific rigor and avoid oversimplifying developmental outcomes.
   assessment_type: EEG/MRI/Wearable sensor
   table_name: null
+  warning2: null
   references: |-
     Fifer, W. P., Myers, M. M., Sahni, R., Ohira-Kist, K., Kashyap, S., Stark, R. I., & Schulze, K. F. (2005). Interactions between sleeping position and feeding on cardiorespiratory activity in preterm infants. _Developmental Psychobiology_, 47(3), 288–296. <https://doi.org/10.1002/dev.20096>
     Hamideh, D., & Nebeker, C. (2020). The digital health landscape in addiction and substance use research: Will digital health exacerbate or mitigate health inequities in vulnerable populations? _Current Addiction Reports_, 7(3), 317–332. <https://doi.org/10.1007/s40429-020-00325-9>
@@ -980,23 +985,22 @@ gabi:
   respondent_category: Child on Self
   admin_notes: Info already provided in the past - please review for accuracy
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/sensors/gabi/
+  email: np2600@cumc.columbia.edu
   visits: V02, V03
+  hbcd_mods3: null
   primary_data_type: File-based (raw BIDS/derivatives)
+  submitter_name: Nicolo Pini
+  alert4: null
   acronym: GABI
+  warning3: null
   hbcd_mods_collapsed: null
+  alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recHy0XkXvVr66UC9
   warning1: Note that infant heart rate sensor data may contain non-consecutive samples. The most likely reason is an inconsistent connection between the sensor and the receiver tablet, which can result in missing samples. Always refer to the timestamps embedded in the files to reconstruct the temporal sequence of the data. Infant heart rate sensor recordings may also be shorter than the planned 72 hours, which can occur due to human error, technical issues, or a parent/legal guardian deciding to discontinue data collection.
-  description: |-
-    **Infant Heart Rate Wearable Sensor data** captures information related to the infant's physiology and sleep. The device is fastened to the infant's upper arm with a soft-textile band by HBCD Study staff and worn for 72 hours, during which time data is collected across the child's typical activities in their natural environment. The photoplethysmography (PPG) sensors (one emitting green light PPG and one emitting red light PPG) embedded in the device allow for the collection of three biosignal estimates sampled at 1 Hz:
-
-    - **Rulse rate** (beats per minute)
-    - **Blood oxygen saturation** (SpO2, percentage)
-    - **Respiratory rate** (breaths per minute)
-
-    In addition, sleep states are derived from these vital sign data. Data collection is planned for 72 continuous hours. Caregivers followed typical routines, removing the sensor only for water exposure (e.g., baths) and repositioning it afterward. See [Pini et al. 2024](https://www.sciencedirect.com/science/article/pii/S1878929324001075?via%3Dihub) for a full measure description.
-
-    **Infant heart rate data collected from wearable sensors includes raw BIDS and processed derivatives as described below.**
+  description: "**Infant Heart Rate Wearable Sensor data** captures information related to the infant's physiology and sleep. The device is fastened to the infant's upper arm with a soft-textile band by HBCD Study staff and worn for 72 hours, during which time data is collected across the child's typical activities in their natural environment. The photoplethysmography (PPG) sensors (one emitting green light PPG and one emitting red light PPG) embedded in the device allow for the collection of three biosignal estimates sampled at 1 Hz:\n\n- **Rulse rate** (beats per minute)\n- **Blood oxygen saturation** (SpO2, percentage)\n- **Respiratory rate** (breaths per minute)\n\nIn addition, sleep states are derived from these vital sign data. Data collection is planned for 72 continuous hours. Caregivers followed typical routines, removing the sensor only for water exposure (e.g., baths) and repositioning it afterward. See [Pini et al. 2024](https://www.sciencedirect.com/science/article/pii/S1878929324001075?via%3Dihub)\
+    \ for a full measure description.\n\n##### Raw BIDS\n\nThe current release includes the raw BIDS data for infant HR data, including HR, SpO2, and RR along with their respective measures of reliability, timestamps, and metadata.\n\n```\nhbcd/\n└── rawdata/ \n    └── sub-[ID]\n        └── ses-[V0X]\n            └── gabi/\n```"
   slug: gabi-infant-heart-rate-
+  supp3_text: null
   domain: Novel Tech & Wearable Sensors
   release: '3.0'
   qc: |-
@@ -1005,10 +1009,12 @@ gabi:
     Issues with the sensor data were generally rare, and most data were deemed present and accurately collected (when captured correctly). Errors that did arise were corrected, when possible, though this was typically not feasible. Common errors noted included inadequate or missing data (due to human error, technical issues, or a parent/legal guardian declining participation in this aspect of the study), sensors being removed for extended periods during the 72-hour collection, or unavailability of devices to conduct the data collection.
   administration: Remote
   scoring: null
+  changelog: removed "and processed derivatives" from Description section as derivatives are not included in 3.0
   all_warnings_collapsed: |2-
 
     Note that infant heart rate sensor data may contain non-consecutive samples. The most likely reason is an inconsistent connection between the sensor and the receiver tablet, which can result in missing samples. Always refer to the timestamps embedded in the files to reconstruct the temporal sequence of the data. Infant heart rate sensor recordings may also be shorter than the planned 72 hours, which can occur due to human error, technical issues, or a parent/legal guardian deciding to discontinue data collection.
   resources: null
+  supp1_text: null
   measure: GABI (Infant Heart Rate)
   construct: Regulation (Sleep State Cycles) / Autonomic Function
 apa:
@@ -1128,66 +1134,6 @@ mlds:
     This measure assesses a child’s exposure to language to guide the selection of appropriate measures for their next in-person study visit. It estimates the percentage of time the child is exposed to languages in caregiving environments, based on caregiver reports. These estimates are approximate and also may not account for all languages the child encounters. The measure does not evaluate or quantify the child’s interactions or their expressive or receptive language skills in a given language, but rather provides an estimate of the time spent in environments where specific languages are spoken.
   measure: Multilingual Language Development Screener
   construct: Multilingual Exposure
-R3_urine:
-  status: Work in progress - I'm still working on certain sections
-  warning3_title: Urinary Concentration Corrections
-  duration: 5 min
-  warning1_title: USDTL Screening Updates
-  full_name: USDTL Urine Toxicology (Maternal & Child)
-  all_alerts_collapsed: null
-  warning4: A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.
-  assessment_type: Biospecimen collection
-  table_name: bio_bm_biosample_urine_results
-  warning2: Continuous variables should be interpreted with caution based on limits of quantification (LOQ), i.e. the minimum concentration at which metabolites can be reliably quantified. See <a href="#urine-table1">Urine Assay Thresholds for Analytes</a>.
-  warning2_title: Continuous Variables
-  references: 'Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <https://doi.org/10.1016/j.dcn.2024.101451>'
-  respondent_category: Child on Self
-  admin_notes: SMEs - For R3.0, please update this documentation to add Child Urine-specific information where needed
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/urine/
-  primary_data_type: Tabulated data
-  acronym: Urine
-  warning3: Urinary concentration varies by participant. Researchers who wish to correct for urinary concentration in continuous measures, or apply different thresholds, can do so using creatinine or specific gravity results from sample validation.
-  hbcd_mods_collapsed: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recNQ2sKcadHTr1nT
-  warning1: As of May 19, 2025, USDTL transitioned the initial urine screening test for fentanyl and sufentanil from LDTD to ELISA. As of November 2025, urine samples were no longer assayed for sufentanil, and USDTL simplified its specimen validity assessment, replacing a multi-parameter algorithm (including pH and nitrite) with a single creatinine-based measure to evaluate urine hydration.
-  description: |-
-    Urine toxicology assay results include:
-
-    - **Screening results**: initial screening results for substances (e.g. Amphetamine/`s_amp_u`), determined to be positive/negative based on predefined thresholds, or invalid based on Validation Procedures (_see details below_)
-    - **Confirmatory results**: confirm positive screening results for a given substance analyte, e.g. _Amphetamine_, including continuous (`c_amp_u`) and categorical (`c_amp_u_cat`) results
-    - **Classification**: results are grouped into different classes based on analyte screening and confirmatory tests (see _Mapping From Class to Screening & Confirmatory Tests_)
-
-    <img src="https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/resources/biospec/Fig1_biospec_urine.png" alt="Urine toxicology processing workflow" width="600" height="auto" class="center">
-
-    ##### **Validation Procedures**
-
-    Assay results may be scored as invalid if specimens are identified as dilute, substituted, adulterated, or otherwise insufficient based on validation. Validation is based on creatinine, pH, and nitrite measurements, with creatinine analysis repeated to rule out issues with the first analysis (e.g., sample mix-ups, air bubble in a line on the instrument). Specimens with low creatinine (< 20 mg/dL) are confirmed using specific gravity via a refractometer. Decision grid:
-  slug: usdtl-urine-toxicology-r3-0-maternal-child-
-  domain: Biospecimen & Omics
-  release: '3.0'
-  qc: Examine assay ranges and categorical versus continuous measures
-  administration: In-person
-  scoring: |-
-    **Final results for each substance follow these rules:**
-
-    - **Positive results:** If any confirmatory test for a substance analyte (e.g., Amphetamine/`c_amp_u`) is positive, then the corresponding class-level (`c_any_stim_u`) and overall sample-level (`c_any_specimen_u`) results are also positive.
-    - **Negative results:** If all confirmatory tests for analytes in a class are negative (e.g., `c_ethglu_u`, `c_ethsyl_u`), then the class-level result (e.g., `c_etgeia_u`) is negative. If all classes are negative, the overall sample-level (`c_any_specimen_u`) result is negative.
-    - **Invalid results:** If any confirmatory test for a substance analyte is invalid, then the corresponding class-level and overall sample-level results are also invalid.
-  all_warnings_collapsed: |-
-    USDTL Screening Updates
-    As of May 19, 2025, USDTL transitioned the initial urine screening test for fentanyl and sufentanil from LDTD to ELISA. As of November 2025, urine samples were no longer assayed for sufentanil, and USDTL simplified its specimen validity assessment, replacing a multi-parameter algorithm (including pH and nitrite) with a single creatinine-based measure to evaluate urine hydration.
-
-    Continuous Variables
-    Continuous variables should be interpreted with caution based on limits of quantification (LOQ), i.e. the minimum concentration at which metabolites can be reliably quantified. See <a href="#urine-table1">Urine Assay Thresholds for Analytes</a>.
-
-    Urinary Concentration Corrections
-    Urinary concentration varies by participant. Researchers who wish to correct for urinary concentration in continuous measures, or apply different thresholds, can do so using creatinine or specific gravity results from sample validation.
-
-    Large Gaps Between Collection and Analysis Dates
-    A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.
-  warning4_title: Large Gaps Between Collection and Analysis Dates
-  measure: USDTL Urine Toxicology R3.0 (Maternal & Child)
-  construct: Drug Panel, Toxins
 olink:
   status: Form complete & synced with README page contents
   full_name: Olink Explore 384 Inflammation 1 Panel
@@ -4275,24 +4221,41 @@ ecpromis_peer:
   measure: ecPROMIS Peer Relationships Scale
   construct: Peer Relationships
 blood:
-  status: Work in progress - I'm still working on certain sections
+  supp2_text: null
+  status: Form complete & synced with README page contents
+  alert1: null
+  warning3_title: Missing Data Due to Contamination
+  hbcd_mods1: null
   duration: 5 min
+  hbcd_mods2: null
   warning1_title: Continuous Variables
   full_name: USDTL Blood Toxicology (Maternal)
   all_alerts_collapsed: null
+  warning4: null
+  alert2: null
   assessment_type: Biospecimen collection
   table_name: bio_bm_biosample_blood
+  warning2: A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.
+  warning2_title: Large Gaps Between Collection and Analysis Dates
+  references: 'Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <https://doi.org/10.1016/j.dcn.2024.101451>'
   respondent_category: Parent on Self
-  admin_notes: README info was already provided in the past, so we inserted the info accordingly - please review and update as needed for accuracy
+  admin_notes: '8/20 Luci note: I have updated the README based on the changes submitted by Elinor Aug 20th (and the changes should render shortly) and reviewed the page for accuracy. I made one minor formatting change to turn the short list in the description to a single sentence ("PEth is confirmatory-testing only, with **20phsphtdetbsp (`c_peth_b_cat`)** as the confirmatory test and **Ethanol (`c_ethanol_b`)** as the class."). I will mark as complete for now and follow up with Elinor via email to inform her (while I''m still perfecting the workflow to hopefully add automated notifications and such)'
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/blood
+  email: sullivel@ohsu.edu
   visits: V01
+  hbcd_mods3: null
   primary_data_type: Tabulated data
+  submitter_name: Elinor Sullivan
+  alert4: null
   acronym: Blood
+  warning3: Out of an abundance of caution there may be missing data for some sites based on the potential use of ethanol based products which may have caused contamination of assay results.
   hbcd_mods_collapsed: null
+  alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recyzSFRJ2eDiSQy3
   warning1: For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative (see **Blood Assay Thresholds PEth** below).
-  description: "USDTL Blood is a toxicology screen for substances & environmental exposures (metals, nutrition, toxins, proteins) conducted on phlebotomist-collected venous blood pipetted onto dried blood spot cards. Processing of blood spot cards consists of preparing 3x 1/8” punches of dried blood spot followed by extraction using an organic solvent. Detection of PETH in the extract is accomplished with a single pass using LCMSMS: \n\n<img src=\"https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/images/Fig1_blood.png\" alt=\"PeTH test\" width=\"600\" height=\"auto\" class=\"center\">\n\nBased on the predefined threshold below, the PEth test (`c_peth_b_cat`) is determined to be positive, negative, or canceled. Substance analytes are grouped into classes by analyte screening tests and confirmatory tests. PEth is confirmatory-testing only:\n\n- **Confirmatory test**: 20phsphtdetbsp (`c_peth_b_cat`)\n- **Class**: Ethanol (`c_ethanol_b`)"
+  description: 'USDTL Blood is a toxicology screen for phosphatidylethanol (PEth) conducted on phlebotomist-collected venous blood pipetted onto dried blood spot cards. Processing of blood spot cards consists of preparing 3x 1/8” punches of dried blood spot followed by extraction using an organic solvent. Detection of PETH in the extract is accomplished with a single pass using LCMSMS:   <img src="https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/images/Fig1_blood.png" alt="PeTH test" width="600" height="auto" class="center">  Based on the predefined threshold below, the PEth test (`c_peth_b_cat`) is determined to be positive, negative, or canceled. Substance analytes are grouped into classes by analyte screening tests and confirmatory tests. PEth is confirmatory-testing only, with **20phsphtdetbsp (`c_peth_b_cat`)** as the confirmatory test and **Ethanol (`c_ethanol_b`)** as the class.'
   slug: usdtl-blood-toxicology
+  supp3_text: null
   domain: Biospecimen & Omics
   release: '3.0'
   qc: Examine assay ranges and categorical versus continuous measures.
@@ -4303,10 +4266,18 @@ blood:
     - If the PEth test is positive (`c_peth_b_cat`), the sample level (`c_any_specimen_b`) is positive (value = 1).
     - If the PEth confirmatory tests is negative (value = 0), then sample-level (`c_any_specimen_b`) is negative (0).
     - If the PEth confirmatory tests is cancelled (value = 3) then sample-level (`c_any_specimen_b`) is cancelled (value = 3).
+  changelog: Added an additional data warning and resource and edited the description.
   all_warnings_collapsed: |-
     Continuous Variables
     For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative (see Blood Assay Thresholds PEth below).
+
+    Large Gaps Between Collection and Analysis Dates
+    A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.
+
+    Missing Data Due to Contamination
+    Out of an abundance of caution there may be missing data for some sites based on the potential use of ethanol based products which may have caused contamination of assay results.
   resources: null
+  supp1_text: null
   measure: USDTL Blood Toxicology
   construct: Drug, Environmental Exposure (metals, nutrition, toxins, proteins)
 vs100:
