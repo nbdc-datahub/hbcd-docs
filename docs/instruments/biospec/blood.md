@@ -34,7 +34,7 @@
 {{ hbcd_mods(instruments.blood) }}
 
 <!-- Insert scoring banner contents including text from Airtable and hardcoded table below -->
-{{ scoring_banner_macro() }}
+{{ scoring_banner() }}
 
 <div class="collapsible-content">
 {{ scoring_contents_macro(instruments.blood) }}
