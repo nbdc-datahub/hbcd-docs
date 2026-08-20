@@ -252,6 +252,13 @@ The tables below summarize known issues affecting the current data release and p
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
+<td>dMRI metadata</td>
+<td><code>LargeDelta</code> and <code>SmallDelta</code> in the sidecars currently are set to vendor-specific values (which aren't always correct because the models have their own values) and will be updated to reflect accurate values.</td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+</tr>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
 <td>Run ID</td>
 <td>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
