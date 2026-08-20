@@ -1,14 +1,14 @@
-# Infant Nutrition Questionnaire
+# Infant & Child Nutrition Questionnaires
 
-{{ readme_summary(instruments.nutrition) }}
-{{ alert_warning(instruments.nutrition) }}
-{{ data_warning(instruments.nutrition) }}
-{{ issues_banner() }}
+{{ readme(instruments.R3_nutrition) }}
+{{ alert_warning(instruments.R3_nutrition) }}
+{{ data_warning(instruments.R3_nutrition) }}
+{{ issues_banner_macro() }}
 
 ## Instrument Details
 
-{{ instrument_description(instruments.nutrition) }}
-{{ hbcd_mods(instruments.nutrition) }}
-{{ scoring(instruments.nutrition) }}
-{{ references(instruments.nutrition) }}
+{{ instrument_description_macro(instruments.R3_nutrition) }}
+{{ hbcd_mods(instruments.R3_nutrition) }}
+{{ scoring(instruments.R3_nutrition) }}
+{{ references(instruments.R3_nutrition) }}
 

@@ -12,7 +12,7 @@
     border-radius:20px;
     letter-spacing:0.5px;
     text-transform:uppercase;">
-    Data Release 2.1
+    Data Release 3.0
   </span>
 </p>
 

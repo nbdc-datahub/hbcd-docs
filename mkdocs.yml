@@ -21,10 +21,10 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://www.googletagmanager.com/gtag/js?id=G-BY0EH2K1YQ
 
-extra:
-  analytics:
-    provider: google
-    property: G-BY0EH2K1YQ
+# extra:
+#   analytics:
+#     provider: google
+#     property: G-BY0EH2K1YQ
 
 extra_css:
   - css/custom.css
@@ -43,30 +43,17 @@ plugins:
 docs_dir: docs
 
 nav: 
-  - Data Access & Use:
-    - Access & Download Data: access/download.md
-    - Responsible Data Use: access/resp_data_use.md
-    - Data Use Acknowledgment: access/dua.md
-    - Tools: access/tools.md
-  - Study Standards & Conventions:
-    - Study Protocol: standards/protocol.md
-    - Data Dictionary: standards/metadata.md
-    - Naming Conventions: standards/naming-conventions.md
-    - Processing Pipelines: standards/processing/index.md
-    - Processing & Derivative Standards: standards/processing/standards.md
-  - Data Structure & File Types:
-    - Data Structure Overview: datacuration/overview.md
-    - Tabulated Data: datacuration/phenotypes.md
-    - File-Based Data: datacuration/file-based-data.md
   - Study Instruments:
     - List of Instruments: instruments/index.md
     - Age Variables: instruments/agevariables.md
     - Behavior, Biology, & Environment:
         - Administrative:
             - Study Navigator Contact Form: instruments/admin/study-navigators.md
+            
         - Demographics:
-            - Basic Demographics: instruments/demo/basicdemo.md
-            - Visit Level Data: instruments/demo/visitinfo.md
+            - Dynamic Table: instruments/demo/dynamic.md
+            - Static Table: instruments/demo/static.md
+
         - Behavior & Caregiver-Child Interaction: 
             - CHAOS: instruments/bcgi/chaos.md
             - ecPROMIS Child-Caregiver Relationship: instruments/bcgi/ecpromis.md
@@ -75,18 +62,27 @@ nav:
             - ERICA: instruments/bcgi/erica.md
             - FAD: instruments/bcgi/fad.md
             - IBQ-R & ECBQ: instruments/bcgi/ibqr.md
+            - MAPS-EASI: instruments/bcgi/maps-easi.md
             - MAPS-TL: instruments/bcgi/maps-tl.md
+            - MCHAT: instruments/bcgi/mchat.md
+
         - Biospecimens & Omics:
+            - Blood: instruments/biospec/blood.md
             - Illumina GDA GWAS: instruments/biospec/illumina-gda-gwas.md
             - Nails: instruments/biospec/nails.md
             - Olink: instruments/biospec/olink.md
             - Urine: instruments/biospec/urine.md
+
         - Neurocognition & Language:
             - Bayley-4: instruments/neurocog/bayley-4.md
+            - Deferred Imitation: instruments/neurocog/dit.md
             - MacArthur-Bates CDI: instruments/neurocog/macarthur-bates.md
             - MLDS: instruments/neurocog/mlds.md
+            - NIH BTB Cognitive/Executive Function/Memory: instruments/neurocog/nbtb-cog.md
+            - NIH BTB Language: instruments/neurocog/mullen.md
             - SPM-2: instruments/neurocog/spm2.md
             - Vineland: instruments/neurocog/vineland.md
+
         - Physical Health:
             - Anthropometrics: instruments/physhealth/growth.md
             - Breastfeeding History: instruments/physhealth/bf.md
@@ -95,8 +91,10 @@ nav:
             - ecPROMIS- Sleep: instruments/physhealth/ecpromis-sleep.md
             - Medical History: instruments/physhealth/medical-history.md
             - Nutrition: instruments/physhealth/nutrition.md
+            - PEDsQL: instruments/physhealth/pedsql.md
             - ScreenQ: instruments/physhealth/screenq.md
             - Vision Screener: instruments/physhealth/vision.md
+
         - Pregnancy & Exposures:
             - Pregnancy & Infant Health: instruments/pregexp/pex.md
             - Mental Health:
@@ -108,6 +106,7 @@ nav:
                 - ASSIST: instruments/pregexp/su/assist.md
                 - Substance Use Patterns: instruments/pregexp/su/su-patterns.md
                 - TLFB: instruments/pregexp/su/tlfb.md
+        
         - Social & Environmental Determinants:
             - 2-Item Food Insecurity: instruments/SED/foodinsecurity.md
             - ACEs: instruments/SED/aces.md
@@ -116,7 +115,9 @@ nav:
             - Current Employment: instruments/SED/current-employment.md
             - Demographics (Adult): instruments/SED/demo-cg.md
             - Child Demographics: instruments/SED/demo-ch.md
+            - Early Care & Education: instruments/SED/echo.md
             - HOME-21: instruments/SED/home21.md
+            - Incarceration: instruments/SED/incarceration.md
             - Intimate Partner Violence: instruments/SED/ehits.md
             - Geocoded Linkage: instruments/SED/geocoded-linkage.md
             - Household Chemical Exposures: instruments/SED/household-chemical-exposures.md
@@ -126,8 +127,10 @@ nav:
             - Perceived Stress/Social Support: instruments/SED/promis.md
             - Second Hand Smoke: instruments/SED/second-hand-smoke-exposure.md
             - Transitions in Care Screener: instruments/SED/transitions-in-care.md
+            - TIC Questionnaire: instruments/SED/tic_quest.md
             - Unfair Treatment: instruments/SED/discr.md            
             - Vancouver Index: instruments/SED/vi.md
+        
     - Brain Activity & Biosensors:
         - Electroencephalography:
             - EEG Protocols: instruments/eeg/index.md
@@ -150,14 +153,13 @@ nav:
             - Quantitative MRI: instruments/mri/qmri.md
             - Diffusion MRI: instruments/mri/dmri.md
             - MRS: instruments/mri/mrs.md 
+
         - Novel Tech & Wearable Sensors:
+            - GABI Infant Heart Rate: instruments3.0/sensors/gabi.md
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
+
   - Release Notes: 
     - Release Notes & History: changelog/release-notes.md
     - Known Issues & Pending Updates: changelog/issues-updates.md
-  - Help & Support:
-    - FAQs: help/faq.md
-    - Report Issues: help/reportissue.md
-    - How To Cite Release Docs: help/citation.md
  

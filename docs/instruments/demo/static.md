@@ -6,21 +6,19 @@
 }
 </style>
 
-# Basic Demographics
 
-{{ alert_warning(instruments.basic_demo) }}
-{{ data_warning(instruments.basic_demo) }}
-{{ issues_banner() }}
+# Static Table
+
+{{ alert_warning(instruments.static) }}
+{{ data_warning(instruments.static) }}
+{{ issues_banner_macro() }}
 
 ---  
 
-{{ instrument_description(instruments.basic_demo) }}
+{{ instrument_description_macro(instruments.static) }}
 
----
-
-<!-- ## Age, Sex, & Other Variables -->
-
-{{ suppx(instruments.basic_demo, "1") }}
+<!-- ## Age, Sex, & Other Variables  -->
+{{ suppx_macro(instruments.static, "1") }}
 
 <table class="compact-table-no-vertical-lines static-dynamic-tables">
 <thead>
@@ -66,22 +64,28 @@ Birth parent's age in years (2 decimal places) at time of child's delivery<br>
   <td>Derived from administrative records</td>
 </tr>
 <tr>
-  <td>Birth mother education</td>
-  <td>rc_mother_education</td> 
-  <td>V01</td>
-  <td>Derived from the Demographics Form (sed_bm_demo_edu_001)</td>
-</tr>
-<tr>
-  <td>Total household income</td>
-  <td>rc_mother_income</td>
-  <td>V01</td>
-  <td>Derived from the Demographics Form (sed_bm_demo_income_002)</td>
-</tr>
-<tr>
   <td>Recruitment site</td>
   <td>recruitment_site</td> 
   <td>V01</td>
-  <td>De-identified site ID derived from administrative records</td>
+  <td>Site ID derived from administrative records</td>
+</tr>
+<tr>
+  <td>Area Deprivation Index</td>
+  <td>adi_national_prcnt</td> 
+  <td></td>
+  <td>Geocoded in national percentile in ADI 1% – 100%</td>
+</tr>
+<tr>
+  <td>Birth mother education</td>
+  <td>rc_mother_education</td> 
+  <td>V01</td>
+  <td>Highest level of school completed derived from the Demographics Form</td>
+</tr>
+<tr>
+  <td>Household income</td>
+  <td>rc_mother_income</td>
+  <td>V01</td>
+  <td>Household income derived from the Demographics Form</td>
 </tr>
 </tbody>
 </table>
@@ -89,8 +93,7 @@ Birth parent's age in years (2 decimal places) at time of child's delivery<br>
 ---
 
 <!-- ## Race & Ethnicity - ACS/Administrative Records -->
-
-{{ suppx(instruments.basic_demo, "2") }}
+{{ suppx_macro(instruments.static, "2") }}
 
 <table class="compact-table-no-vertical-lines static-dynamic-tables">
 <thead>
@@ -115,6 +118,12 @@ Birth parent's age in years (2 decimal places) at time of child's delivery<br>
 <td>Standard ACS race item</td>
 </tr>
 <tr>
+<td>Child race indicators (0-5)</td>
+<td>acs_child_race_multi___{0 - 5}</td>
+<td>V01</td>
+<td>Child race collected at V01 pregnancy check-in</td>
+</tr>
+<tr>
 <td>Child race/ethnicity, multiracial aggregation by ethnicity</td>
 <td>child_ethnoracial_acs_by_multi_ethnicity</td>
 <td>V02</td>
@@ -131,20 +140,6 @@ Birth parent's age in years (2 decimal places) at time of child's delivery<br>
 <td>screen_mother_ethnicity</td>
 <td>V01</td>
 <td>Standard ACS ethnicity item</td>
-</tr>
-<tr>
-  <td>Mother race indicator<br>variables (0–5)</td>
-  <td>screen_mother_race_<br>multi___{0–5}</td>
-  <td>V01</td>
-  <td>
-    Indicator variables from ACS race item:<br>
-    0 = <b>White<br>
-    1 = <b>Black or African American</b><br>
-    2 = <b>American Indian or Alaska Native</b><br>
-    3 = <b>Asian</b><br>
-    4 = <b>Native Hawaiian or Other Pacific Islander</b><br>
-    5 = <b>Other race</b>
-  </td>
 </tr>
 <tr>
 <td>Mother race/ethnicity, multiracial aggregation by ethnicity</td>
@@ -164,7 +159,7 @@ Birth parent's age in years (2 decimal places) at time of child's delivery<br>
 ---
 
 <!-- ## Race & Ethnicity - All of US -->
-{{ suppx(instruments.basic_demo, "3") }}
+{{ suppx_macro(instruments.static, "3") }}
 
 <table class="compact-table-no-vertical-lines static-dynamic-tables">
 <thead>
@@ -199,7 +194,28 @@ Birth parent's age in years (2 decimal places) at time of child's delivery<br>
   <td>Aggregated maternal race/ethnicity constructed from AOU item. Participants are classified as either Hispanic or Non-Hispanic ({Asian|Black|White}).
 </td>
 </tr>
+<tr>
+  <td>Child race indicators (0–7)</td>
+  <td>rc_child_race___{0–7}</td>
+  <td>V04</td>
+  <td>AOU item race indicators (values mirror Mother race indicators)</td>
+</tr>
+</tbody>
+</table>
 </tbody>
 </table>
 
-{{ references(instruments.basic_demo) }}
+
+{{ references(instruments.static) }}
+
+
+
+
+
+<!-- Unless stated otherwise in the description, the following variables such as sex and age are computed from administrative records collected during screening. Variables such as education and income are derived from the [Demographics](../../instruments/SED/demo-cg.md) instrument (Adult Form), noted in the description. -->
+
+
+<!-- Race and ethnicity variables are computed from [ACS](https://www.census.gov/programs-surveys/acs.html) race and ethnicity items derived from administrative records collected during screening. Combined race and ethnicity variables are constructed following current federal standards. Participants who identify as **Hispanic or Latino** are categorized as `Hispanic`, regardless of race. Participants who select more than one race are categorized as **Multiracial**, with aggregation performed by either **ethnicity** based on Hispanic identity (*Multiracial (Hispanic)* or *Multiracial (non-Hispanic)*) or **race** based on Black/African American identity (*Multiracial (Black)* or *Multiracial (non-Black)*). -->
+
+
+<!-- A second set of race and ethnicity variables are computed from a single All of Us (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations">AOU</a>) race/ethnicity item collected as part of the <a href="../../../instruments/SED/demo-cg/">Demographics</a> instrument. For AOU-derived variables, combined race and ethnicity variables are constructed following [OMB](https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards) standards: Participants who identify as Hispanic/Latino (alone or with another group) are categorized as *Hispanic or Latino*; all others are categorized as non-Hispanic (*Non-Hispanic {Asian|Black|White}*). -->
