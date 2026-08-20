@@ -7,19 +7,16 @@
 
 ## Release Data
 
-Infant heart rate data collected from wearable sensors includes raw BIDS and processed derivatives:
-
-<!-- - Raw BIDS: Raw data in the standardized BIDS format
-- Derivatives: Processed, analysis-ready data -->
+{{ instrument_description(instruments.gabi) }}
 
 
 ##### Raw BIDS
-The raw data contain the heart rate (HR), the blood oxygen saturation (SpO2), and the respiratory rate (RR), along with their respective measures of reliability, timestamps and metadata.
+The raw data includes HR, SpO2, and RR along with their respective measures of reliability, timestamps, and metadata.
 
 <pre class="folder-tree">
 hbcd/
 └── rawdata/ 
-    └── sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw sensor data</span>
+    └── sub-<span class="label">&lt;label&gt;</span>/
         └── ses-<span class="label">&lt;label&gt;</span>/
             └── gabi/
 </pre>
@@ -27,40 +24,10 @@ hbcd/
 
 ##### Derivatives
 
+Derivatives include processed, analysis-ready data.
 
-<!-- <div id="rawbids" class="banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-  <span class="text">Raw BIDS</span>
-  <a class="anchor-link" href="#rawbids" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content"> -->
+---
 
-<!-- </div> -->
-
-
-<!-- <div id="derivatives" class="banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-    <span class="text">Derivatives</span>
-  <a class="anchor-link" href="#derivatives" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-</div> -->
-
-## Instrument Details
-
-{{ instrument_description(instruments.gabi) }}
-{{ hbcd_mods(instruments.gabi) }}
-{{ scoring(instruments.gabi) }}
 {{ references(instruments.gabi) }}
 
 
@@ -70,16 +37,6 @@ hbcd/
 
 
 <!-- 
-## Data Acquisition
-
-**Infant heart rate sensor data** collected by the infant heart rate wearable sensor for HBCD captures information related to the infant's physiology and sleep. The device is fastened to the infant's upper arm with a soft-textile band by HBCD Study staff and worn for 72 hours, during which time data is collected across the child's typical activities in their natural environment. The photoplethysmography (PPG) sensors (one emitting green light PPG and one emitting red light PPG) embedded in the device allow for the collection of three biosignal estimates sampled at 1 Hz: 
-
- - **Rulse rate** (beats per minute)
- - **Blood oxygen saturation** (SpO<sub>2</sub>, percentage)
- - **Respiratory rate** (breaths per minute)
-
-In addition, sleep states are derived from these vital sign data. Data collection is planned for 72 continuous hours. Caregivers followed typical routines, removing the sensor only for water exposure (e.g., baths) and repositioning it afterward. See [Pini et al. 2024](https://www.sciencedirect.com/science/article/pii/S1878929324001075?via%3Dihub) for a full measure description.
-
 
 ## Quality Control
 
