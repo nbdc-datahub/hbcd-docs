@@ -1,6 +1,6 @@
 # USDTL Blood Toxicology
 
-{{ readme(instruments.blood) }}
+{{ readme_summary(instruments.blood) }}
 {{ alert_warning(instruments.blood) }}
 {{ data_warning(instruments.blood) }}
 {{ issues_banner() }}

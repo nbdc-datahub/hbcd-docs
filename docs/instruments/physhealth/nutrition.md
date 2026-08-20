@@ -1,6 +1,6 @@
 # Infant & Child Nutrition Questionnaires
 
-{{ readme(instruments.R3_nutrition) }}
+{{ readme_summary(instruments.R3_nutrition) }}
 {{ alert_warning(instruments.R3_nutrition) }}
 {{ data_warning(instruments.R3_nutrition) }}
 {{ issues_banner() }}

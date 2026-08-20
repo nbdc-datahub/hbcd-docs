@@ -1,6 +1,6 @@
 # NIH BTB Mullen Receptive & Expressive + Observation
 
-{{ readme(instruments.mullen) }}
+{{ readme_summary(instruments.mullen) }}
 {{ alert_warning(instruments.mullen) }}
 {{ data_warning(instruments.mullen) }}
 {{ issues_banner() }}

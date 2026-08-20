@@ -1,7 +1,7 @@
 # Transition in Care Questionnaire
 
 
-{{ readme(instruments.tic_quest) }}
+{{ readme_summary(instruments.tic_quest) }}
 {{ alert_warning(instruments.tic_quest) }}
 {{ data_warning(instruments.tic_quest) }}
 {{ issues_banner() }}

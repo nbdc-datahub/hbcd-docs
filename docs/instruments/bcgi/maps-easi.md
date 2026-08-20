@@ -1,6 +1,6 @@
 # MAPS-EASI Toddler
 
-{{ readme(instruments.maps_easi) }}
+{{ readme_summary(instruments.maps_easi) }}
 {{ alert_warning(instruments.maps_easi) }}
 {{ data_warning(instruments.maps_easi) }}
 {{ issues_banner() }}

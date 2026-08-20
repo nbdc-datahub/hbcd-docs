@@ -1,6 +1,6 @@
 # NIH BTB Cognitive/Executive Function/Memory
 
-{{ readme(instruments.nbtb_cog) }}
+{{ readme_summary(instruments.nbtb_cog) }}
 {{ alert_warning(instruments.nbtb_cog) }}
 {{ data_warning(instruments.nbtb_cog) }}
 {{ issues_banner() }}

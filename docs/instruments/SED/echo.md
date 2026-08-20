@@ -1,7 +1,7 @@
 # ECHO Early Care and Education
 
 
-{{ readme(instruments.echo) }}
+{{ readme_summary(instruments.echo) }}
 {{ alert_warning(instruments.echo) }}
 {{ data_warning(instruments.echo) }}
 {{ issues_banner() }}

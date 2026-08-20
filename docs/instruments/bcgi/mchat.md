@@ -1,6 +1,6 @@
 # Modified Checklist for Autism in Toddlers
 
-{{ readme(instruments.mchat) }}
+{{ readme_summary(instruments.mchat) }}
 {{ alert_warning(instruments.mchat) }}
 {{ data_warning(instruments.mchat) }}
 {{ issues_banner() }}

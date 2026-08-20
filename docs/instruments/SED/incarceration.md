@@ -1,6 +1,6 @@
 # Incarceration Questionnaire
 
-{{ readme(instruments.nsc) }}
+{{ readme_summary(instruments.nsc) }}
 {{ alert_warning(instruments.nsc) }}
 {{ data_warning(instruments.nsc) }}
 {{ issues_banner() }}
