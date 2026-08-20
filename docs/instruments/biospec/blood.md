@@ -33,12 +33,21 @@
 
 {{ hbcd_mods(instruments.blood) }}
 
-<!-- Insert scoring banner contents including text from Airtable and hardcoded table below -->
-{{ scoring_banner() }}
 
+<div id="scoring" class="banner" onclick="toggleCollapse(this)">
+<span class="emoji">
+    <i class="fa fa-calculator"></i>
+</span>
+<span class="text-with-link">
+    <span class="text">Scoring Procedures</span>
+    <a class="anchor-link" href="#scoring" title="Copy link">
+        <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+<span class="arrow">▸</span>
+</div>
 <div class="collapsible-content">
-{{ scoring_contents_macro(instruments.blood) }}
-
+{{ scoring_contents(instruments.blood) }}
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
