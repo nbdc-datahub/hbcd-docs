@@ -3,7 +3,7 @@
 {{ readme_summary(instruments.pedsql) }}
 {{ alert_warning(instruments.pedsql) }}
 {{ data_warning(instruments.pedsql) }}
-{{ issues_banner_macro() }}
+{{ issues_banner() }}
 
 ## Instrument Details
 

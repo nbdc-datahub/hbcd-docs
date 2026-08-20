@@ -7,12 +7,28 @@
 
 ## Release Data
 
-Infant heart rate data collected from wearable sensors includes:
+Infant heart rate data collected from wearable sensors includes raw BIDS and processed derivatives:
 
-- <i class="fa fa-hammer header-icon"></i> [Raw BIDS](../../datacuration/file-based-data.md#file-based-data)</a> stored under subject- and session-specific `gabi/` folders
-- <i class="fas fa-cog header-icon"></i> [Derivatives](../../datacuration/file-based-data.md/#derivatives) will be available in a future release 
+<!-- - Raw BIDS: Raw data in the standardized BIDS format
+- Derivatives: Processed, analysis-ready data -->
 
-<div id="rawbids" class="banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
+
+##### Raw BIDS
+The raw data contain the heart rate (HR), the blood oxygen saturation (SpO2), and the respiratory rate (RR), along with their respective measures of reliability, timestamps and metadata.
+
+<pre class="folder-tree">
+hbcd/
+└── rawdata/ 
+    └── sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw sensor data</span>
+        └── ses-<span class="label">&lt;label&gt;</span>/
+            └── gabi/
+</pre>
+
+
+##### Derivatives
+
+
+<!-- <div id="rawbids" class="banner" onclick="toggleCollapse(this)" style="background-color: #dde6fe;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
   <span class="text-with-link">
   <span class="text">Raw BIDS</span>
@@ -22,16 +38,9 @@ Infant heart rate data collected from wearable sensors includes:
   </span>
   <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
-<p>The raw data contain the heart rate (HR), the blood oxygen saturation (SpO2), and the respiratory rate (RR), along with their respective measures of reliability, timestamps and metadata.</p>
-<pre class="folder-tree">
-hbcd/
-└── rawdata/ 
-    └── sub-<span class="label">&lt;label&gt;</span>/   <span class="hashtag"># Raw sensor data</span>
-        └── ses-<span class="label">&lt;label&gt;</span>/
-            └── gabi/
-</pre>
-</div>
+<div class="collapsible-content"> -->
+
+<!-- </div> -->
 
 
 <!-- <div id="derivatives" class="banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
