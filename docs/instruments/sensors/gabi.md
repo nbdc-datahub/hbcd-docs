@@ -1,9 +1,9 @@
 # Infant Heart Rate (GABI)
 
-{{ readme(instruments.gabi) }}
+{{ readme_summary(instruments.gabi) }}
 {{ alert_warning(instruments.gabi) }}
 {{ data_warning(instruments.gabi) }}
-{{ issues_banner_macro() }}
+{{ issues_banner() }}
 
 ## Release Data
 
@@ -49,7 +49,7 @@ hbcd/
 
 ## Instrument Details
 
-{{ instrument_description_macro(instruments.gabi) }}
+{{ instrument_description(instruments.gabi) }}
 {{ hbcd_mods(instruments.gabi) }}
 {{ scoring(instruments.gabi) }}
 {{ references(instruments.gabi) }}

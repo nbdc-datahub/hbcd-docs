@@ -3,11 +3,11 @@
 {{ readme(instruments.blood) }}
 {{ alert_warning(instruments.blood) }}
 {{ data_warning(instruments.blood) }}
-{{ issues_banner_macro() }}
+{{ issues_banner() }}
 
 ## Instrument Details
 
-{{ instrument_description_macro(instruments.blood) }}
+{{ instrument_description(instruments.blood) }}
 
 <div class="table-title">Blood Assay Thresholds PEth</div>
 <table class="compact-table-no-vertical-lines">

@@ -3,11 +3,11 @@
 {{ readme(instruments.dit) }}
 {{ alert_warning(instruments.dit) }}
 {{ data_warning(instruments.dit) }}
-{{ issues_banner_macro() }}
+{{ issues_banner() }}
 
 ## Instrument Details
 
-{{ instrument_description_macro(instruments.dit) }}
+{{ instrument_description(instruments.dit) }}
 {{ hbcd_mods(instruments.dit) }}
 {{ scoring(instruments.dit) }}
 {{ references(instruments.dit) }}

@@ -10,13 +10,13 @@
 
 {{ alert_warning(instruments.dynamic) }}
 {{ data_warning(instruments.dynamic) }}
-{{ issues_banner_macro() }}
+{{ issues_banner() }}
 
 ---
 
 ## Overview
 
-{{ instrument_description_macro(instruments.dynamic) }}
+{{ instrument_description(instruments.dynamic) }}
 
 <table class="compact-table-no-vertical-lines static-dynamic-tables">
 <thead>
@@ -116,7 +116,7 @@
 </table>
 
 
-{{ suppx_macro(instruments.dynamic, "1") }}
+{{ suppx(instruments.dynamic, "1") }}
 
 
 <table class="table-no-vertical-lines">

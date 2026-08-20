@@ -11,14 +11,14 @@
 
 {{ alert_warning(instruments.static) }}
 {{ data_warning(instruments.static) }}
-{{ issues_banner_macro() }}
+{{ issues_banner() }}
 
 ---  
 
-{{ instrument_description_macro(instruments.static) }}
+{{ instrument_description(instruments.static) }}
 
 <!-- ## Age, Sex, & Other Variables  -->
-{{ suppx_macro(instruments.static, "1") }}
+{{ suppx(instruments.static, "1") }}
 
 <table class="compact-table-no-vertical-lines static-dynamic-tables">
 <thead>
@@ -93,7 +93,7 @@ Birth parent's age in years (2 decimal places) at time of child's delivery<br>
 ---
 
 <!-- ## Race & Ethnicity - ACS/Administrative Records -->
-{{ suppx_macro(instruments.static, "2") }}
+{{ suppx(instruments.static, "2") }}
 
 <table class="compact-table-no-vertical-lines static-dynamic-tables">
 <thead>
@@ -159,7 +159,7 @@ Birth parent's age in years (2 decimal places) at time of child's delivery<br>
 ---
 
 <!-- ## Race & Ethnicity - All of US -->
-{{ suppx_macro(instruments.static, "3") }}
+{{ suppx(instruments.static, "3") }}
 
 <table class="compact-table-no-vertical-lines static-dynamic-tables">
 <thead>
