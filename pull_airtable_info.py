@@ -16,8 +16,8 @@ AIRTABLE_TOKEN = os.environ["AIRTABLE_TOKEN"]
 AIRTABLE_BASE_ID = os.environ["AIRTABLE_BASE_ID"]
 AIRTABLE_TABLE_ID = os.environ["AIRTABLE_TABLE_ID"]
 
-OUTPUT_FILE = Path("../docs/data/instruments.yml")
-CSV_OUTPUT_FILE = Path("../docs/data/instruments.csv")
+OUTPUT_FILE = Path("docs/data/instruments.yml")
+CSV_OUTPUT_FILE = Path("docs/data/instruments.csv")
 
 # Set this to an Airtable view name or ID to limit exported records
 # (e.g. AIRTABLE_VIEW = "Website Export")

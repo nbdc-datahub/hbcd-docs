@@ -7,8 +7,8 @@ import re
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
-XLSX= "latest.xlsx"
-HBCD_DOCS_MD = "../../docs/changelog/issues-updates.md"
+XLSX= "docs/data/latest-knownissues.xlsx"
+HBCD_DOCS_MD = "docs/changelog/issues-updates.md"
 
 # FUNCTIONS
 def load_and_filter_xlsx(xlsx_path):
@@ -68,7 +68,7 @@ def build_table(domain, rows):
 
     table_parts.append(f"\n### {html.escape(domain)}")
     table_parts.append("""
-<table class="compact-table-no-vertical-lines issues">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
