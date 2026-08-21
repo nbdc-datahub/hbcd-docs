@@ -12,8 +12,19 @@
 <!-- ## MRS Processing & Derivatives -->
 {{ suppx(instruments.mrs, "1") }}
 
-<pre class="folder-tree">
+<div id="osprey" class="banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">OSPREY-BIDS</span>
+  <a class="anchor-link" href="#osprey" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
 <span><a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+<pre class="folder-tree">
 hbcd/
 └── derivatives/
     └── osprey/
@@ -47,25 +58,26 @@ hbcd/
                 │
                 └── unedited/* <span class="hashtag"># Mirrors HERCULES/ folder structure</span>
 </pre>
+</div>
 
 <!-- ## Osprey MRS Output User Guide -->
 {{ suppx(instruments.mrs, "2") }}
 
 
-<table class="compact-table-no-vertical-lines">
-<thead><tr><th>Spectrum</th><th>Best-Quantified Metabolites</th><th>Table Name (in <a href="../../../datacuration/overview/#tabulated-pipeline-derivatives">tabulated pipeline derivatives</a>)
-</th></tr></thead>
+<table class="table-no-vertical-lines">
+<thead><tr><th>Spectrum</th><th>Best-Quantified Metabolites</th><th>Table Name</th></tr></thead>
 <tbody>
-<tr><td><b>Short-TE Unedited</b></td><td>tNAA, tCr, tCho, mI, Glx, Scyllo</d><td><code>img_osprey_unedited_A_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
+<tr><td>Short-TE Unedited</td><td>tNAA, tCr, tCho, mI, Glx, Scyllo</d><td><code>img_osprey_unedited_A_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
 </tr>
-<tr><td><b>HERCULES Sum</b></td><td>NAA, Glu, Gln</td><td><code>img_osprey_HERCULES_sum_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
+<tr><td>HERCULES Sum</td><td>NAA, Glu, Gln</td><td><code>img_osprey_HERCULES_sum_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
 </tr>
-<tr><td><b>HERCULES Diff1</b></td><td>GABA+</td><td><code>img_osprey_HERCULES_diff1_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
+<tr><td>HERCULES Diff1</td><td>GABA+</td><td><code>img_osprey_HERCULES_diff1_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
 </tr>
-<tr><td><b>HERCULES Diff2</b></td><td>GSH, Lac, NAAG, PE</td><td><code>img_osprey_HERCULES_diff2_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
+<tr><td>HERCULES Diff2</td><td>GSH, Lac, NAAG, PE</td><td><code>img_osprey_HERCULES_diff2_TissCorrWaterScaled_Voxel_1_Basis_1</code></td>
 </tr>
 </tbody>
 </table>
+
 
 <!-- ### Quantification Approaches -->
 {{ suppx(instruments.mrs, "3") }}
@@ -73,3 +85,14 @@ hbcd/
 ---
 
 {{ references(instruments.mrs) }}
+
+
+
+
+<!-- ## Osprey MRS Output User Guide
+
+The primary outcome variables from MRS data processed with the Osprey pipeline are metabolite concentrations. Osprey outputs are available as both **file-based derivatives** within individual participant directories and **tabulated derivatives** that combine pipeline outputs across participants for analysis (see full list of available tabulated outputs [here](tables/osprey.html)).
+
+### Metabolite Quantification by Spectrum
+
+The ISTHMUS acquisition generates four spectra, each modeled separately using linear combination modeling with an inclusive basis set. Although most metabolites may contribute at least minimally to multiple spectra, each spectrum is best suited for quantifying a particular subset of metabolites. -->

@@ -3,7 +3,7 @@
 {{ alert_warning(instruments.qmri) }}
 {{ data_warning(instruments.qmri) }}
 
-## Overview
+---
 
 {{ instrument_description(instruments.qmri) }}
 
@@ -16,7 +16,6 @@
 
 <span><a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees</a></span>
 <pre class="folder-tree">
-<span class="hashtag"># JSON files excluded for brevity</span>
 hbcd/
 └── derivatives/
     <span class="hashtag"># SyMRI</span>

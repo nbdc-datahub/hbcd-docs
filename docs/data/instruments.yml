@@ -1877,7 +1877,11 @@ mrs:
   supp2_text: |-
     ## Osprey MRS Output User Guide
 
-    The primary of outcome variables from MRS data processed through the Osprey pipeline are metabolite concentrations. The ISTHMUS acquisition generates four spectra, each modeled separately using linear combination modeling with inclusive basis sets (since most metabolites may contribute, at least minimally, to all spectra). Each spectrum provides optimal quantification for a different subset of metabolites as follows:
+    The primary outcome variables from MRS data processed with the Osprey pipeline are metabolite concentrations. Osprey outputs are available as both **file-based derivatives** within individual participant directories and **tabulated derivatives** that combine pipeline outputs across participants for analysis (see full list of available tabulated outputs [here](http://127.0.0.1:8000/latest/instruments/mri/tables/osprey.html)).
+
+    ### Metabolite Quantification by Spectrum
+
+    The ISTHMUS acquisition generates four spectra, each modeled separately using linear combination modeling with an inclusive basis set. Although most metabolites may contribute at least minimally to multiple spectra, each spectrum is best suited for quantifying a particular subset of metabolites.
   status: Work in progress
   full_name: Magnetic Resonance Spectroscopy
   references: |-

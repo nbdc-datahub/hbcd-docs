@@ -797,7 +797,11 @@ Full protocols, sequence installation, and operation instructions are available 
 
 HBCD MRS data are processed with [OSPREY-BIDS](https://osprey-bids.readthedocs.io/en/latest/index.html), a customized automated pipeline based on OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)). Full details regarding HBCD processing implementation (e.g., file selection for processing) are available in the external [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/osprey.html) documentation.",MRS,,,,,,,,,,,,,,,,,,,,,,,,,"## Osprey MRS Output User Guide
 
-The primary of outcome variables from MRS data processed through the Osprey pipeline are metabolite concentrations. The ISTHMUS acquisition generates four spectra, each modeled separately using linear combination modeling with inclusive basis sets (since most metabolites may contribute, at least minimally, to all spectra). Each spectrum provides optimal quantification for a different subset of metabolites as follows:",,"### Quantification Approaches
+The primary outcome variables from MRS data processed with the Osprey pipeline are metabolite concentrations. Osprey outputs are available as both **file-based derivatives** within individual participant directories and **tabulated derivatives** that combine pipeline outputs across participants for analysis (see full list of available tabulated outputs [here](http://127.0.0.1:8000/latest/instruments/mri/tables/osprey.html)).
+
+### Metabolite Quantification by Spectrum
+
+The ISTHMUS acquisition generates four spectra, each modeled separately using linear combination modeling with an inclusive basis set. Although most metabolites may contribute at least minimally to multiple spectra, each spectrum is best suited for quantifying a particular subset of metabolites.",,"### Quantification Approaches
 
 MRS values are quantified relative to internal reference signals. Optimal reference for HBCD data has not yet been established, so several quantification methods are provided (see [Harris et al., 2015](https://doi.org/10.1002/jmri.24903)):
 
