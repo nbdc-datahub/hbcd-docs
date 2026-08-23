@@ -300,25 +300,63 @@ motion:
   measure: Infant Leg Motion
   construct: Regulation (Sleep State Cycles) / Autonomic Function
 tic_quest:
-  status: Work in progress
+  supp2_text: null
+  status: README updated & ready for SME review
+  alert1: 'Transition in Care information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
+  hbcd_mods1: null
+  duration: 5 minutes or less
+  hbcd_mods2: null
   full_name: Transition in Care Questionnaire
+  warning4: null
+  alert2: null
   assessment_type: Interview
   table_name: sed_cg_tic
+  warning2: null
+  references: 'Radel, L., & Bramlett, M. (2014). Children in nonparental care: Findings from the 2011-2012 National Survey of Children’s Health. ASPE, DHHS. <https://aspe.hhs.gov/reports/children-nonparental-care-findings-2011-2012-national-survey-childrens-health-0>'
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/tic_quest/
+  email: japoehlmann@wisc.edu
   visits: V06, V08
+  hbcd_mods3: null
   primary_data_type: Tabulated data
+  submitter_name: Julie Poehlmann
+  alert4: null
   acronym: TIC
+  warning3: null
+  alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec4lCy78s88tToRi
+  warning1: null
+  description: The TIC Questionnaire is designed to capture children’s formal and informal transitions to alternate or non-parental care that last for 2 weeks or more, including living in foster care, kinship care, with other relatives, or in other non-parental care arrangements. The transitions involve the child being separated from the parent/caregiver who usually lives with the child and usually provides support, care, and decision-making. (The transitions documented do NOT include very short periods like a weekend away or a vacation, or periods of time like when the parent was working or had an appointment.) The measure asks about whether or not a transition has occurred, when the transition occurred, how long it lasted, and the reasons for the transition. It also asks about who cared for the child during the transition (e.g., grandparent, foster parent, etc). The TIC Questionnaire is completed by the caregiver or parent who is the adult participant in the HBCD study at the time of the
+    assessment. The questions are based on the National Survey of Health 2011-2012 follow-up study of children living in non-parental care.
   slug: tic-questionnaire
+  supp3_text: null
   domain: Social & Environmental Determinants
   release: '3.0'
+  qc: |-
+    **QC Procedures**:
+
+    ○  Monthly data consistency checks
+
+    ○  Handling of incomplete or missing responses by sites
+
+    **Common Issues Identified**:
+
+    ○  In 12 cases, the TIC Questionnaire was erroneously completed at V4 instead of V6
+
+    ○  In some early cases, RAs did not administer the TIC Questionnaire because they thought it was the same as the TIC Screener. However, these are different instruments.
+
+    ○  Missing data patterns
   administration: In-person
+  scoring: null
+  changelog: in the measure description it says "interview" but it' a RedCAP survey
+  resources: null
+  supp1_text: null
   measure: TIC Questionnaire
   construct: Transition in Care
 R3_nutrition:
-  status: Work in progress
+  supp2_text: null
+  status: DONE! Complete/stable for release
   alert1: null
   hbcd_mods1: null
   duration: 10 min
@@ -337,24 +375,30 @@ R3_nutrition:
   respondent_category: Parent on Child
   admin_notes: Please update the exhisting README page to include documentation for the Child Nutrition Questionnaire for Release 3.0 (note that the 2.1 documentation is available via a separate form and will not be updated)
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/nutrition/
+  email: leigh-anne.cioffredi@uvm.edu
   visits: |-
     Infant: V05
     Child: V06, V08
   hbcd_mods3: null
   primary_data_type: Tabulated data
+  submitter_name: Leigh-Anne Cioffredi
   alert4: null
   acronym: null
   warning3: null
+  alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec58YCrvlD50qAzo
   warning1: null
-  description: "ADD/INCORPORATE DESCRIPTION OF CHILD NUTRITION AS NEEDED \n\nThe Infant Nutrition Questionnaire aligns with the Infant Feeding Questionnaire used in Environmental Influences on Child Health Outcomes (ECHO) protocol. It has been shortened by the physical health working group members to include nutritional behavior during infancy related to breastfeeding, formula feeding and introduction of solid foods. It also assesses feeding behaviors after introducing solid foods, and investigating type and quantity of specific food and beverages consumed in early childhood with the same 7 day dietary recall used in ECHO."
+  description: " The Infant Nutrition Questionnaire aligns with the Infant Feeding Questionnaire used in Environmental Influences on Child Health Outcomes (ECHO) protocol. It has been shortened by the physical health working group members to include nutritional behavior during infancy related to breastfeeding, formula feeding and introduction of solid foods. It also assesses feeding behaviors after introducing solid foods, and investigating type and quantity of specific food and beverages consumed in early childhood with the same 7 day dietary recall used in ECHO. \n\nThe Child Nutrition Questionnaire assesses food behaviors around the transition to table foods, independent eating and mealtime routines. Similar to the infant nutrition questionnaire, it contains a dietary recall assessing specific foods and beverages consumed in childhood that is consistent with that used in ECHO."
   slug: infant-child-nutrition-questionnaires
+  supp3_text: null
   domain: Physical Health
   release: '3.0'
   qc: Monitor data dashboard for variable missingness, possible coding errors, and data consistency.
   administration: In-person/Remote
   scoring: null
+  changelog: added description of child nutrition questionnaire
   resources: null
+  supp1_text: null
   measure: Infant & Child Nutrition Questionnaires
   construct: Nutrition
 prescan_q:
@@ -398,22 +442,48 @@ dit:
   measure: 'Deferred Imitation Task: Gong and Berry-Go-Round'
   construct: Memory
 pedsql:
-  status: Work in progress
+  supp2_text: null
+  status: DONE! Complete/stable for release
+  alert1: null
+  hbcd_mods1: null
+  duration: 5 min
+  hbcd_mods2: null
   full_name: Pediatric Quality of Life Inventory
+  warning4: null
+  alert2: null
   assessment_type: Questionnaire
   table_name: ph_cg_pedsql
+  warning2: null
+  references: |-
+    Varni JW, Seid M, Kurtin PS. PedsQL 4.0: reliability and validity of the Pediatric Quality of Life Inventory version 4.0 generic core scales in healthy and patient populations. Med Care. 2001 Aug;39(8):800-12. doi: 10.1097/00005650-200108000-00006. PMID: 11468499.
+
+    Martínez-Shaw ML, Del Río FJ, Sánchez-Sandoval Y. Spanish validation of the Pediatric Quality of Life Inventory (PedsQL™ 4.0) for parent report for toddlers (ages 2-4). Health Qual Life Outcomes. 2023 May 18;21(1):48. doi: 10.1186/s12955-023-02128-8. PMID: 37202825; PMCID: PMC10197329.
   respondent_category: Parent on Child
   admin_notes: 3.0 documentation - please only fill out for PEDsQL (and not PEDsQL Youth just yet - so Versions section is currently marked as NA)
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/pedsql/
+  email: leigh-anne.cioffredi@uvm.edu
   visits: V07, V09
+  hbcd_mods3: null
   primary_data_type: Tabulated data
+  submitter_name: Leigh-Anne Cioffredi
+  alert4: null
   acronym: PEDsQL
+  warning3: null
+  alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec6B66wZDZh5SBa5
-  description: ADD
+  warning1: null
+  description: 'PedsQL is a measure of pediatric quality of life across 4 dimensions: Physical Health, Emotional Health, Social and School functioning. In total there are 19-23 items depending on age. For ages 2-4 the form is parent reported.'
   slug: pedsql
+  supp3_text: null
   domain: Physical Health
   release: '3.0'
+  qc: Monitor data dashboard for variable missingness, possible coding errors, and data consistency.
   administration: Remote
+  scoring: "**General Scoring Description: **  \nThe PedsQL is scored in 4 domains:\n\n·      Physical Functioning\n\n·      Emotional functioning\n\n·      Social Functioning\n\n·      School Functioning\n\n \n\n**Scoring Procedure**\n\nItems are reverse scored and linearly transformed to a 0-100 scale as follows: 0=100, 1=75, 2=50, 3=25, 4=0\n\n \n\nIf more than 50% of the items in the scale are missing, the scale scores should not be computed\n\nMean score = Sum of the items over the number of items answered\n\n \n\nPsychosocial Health Summary Score = Sum of the items over the number of items answered in the Emotional, Social, and School Functioning Scales  \n\n \n\nPhysical Health Summary Score = Physical Functioning Scale Score \n\n \n\nTotal Score: Sum of all the items over the number of items answered on all the Scales\n\n \n\n**Missing data:**\n\nIf more than 50% of the items in the scale are missing, the Scale Scores should not be computed.\n\nIf 50% or more items are completed:\
+    \ Impute the mean of the completed items in a scale."
+  changelog: Filled it out
+  resources: null
+  supp1_text: null
   measure: PEDsQL
   construct: Pediatric Quality of Life
 mri_forms:
@@ -1113,15 +1183,16 @@ demographics:
   measure: Demographics (Adult)
   construct: Demographics (Birth Parent/Alternative Caregiver)
 bayley_4:
+  supp2_text: null
   status: README updated & ready for SME review
   alert1: Performance of the Bayley Scales of Infant and Toddler Development, Fourth Edition, reflects the child's developmental status, but various factors might influence the results of the assessment that should be taken into account.
   hbcd_mods2_title: Use of Caregiver Questions
   hbcd_mods1: The test was designed to be administered by trained clinicians. For the HBCD Study, however, administration was performed primarily by trained Research Assistants (RAs). HBCD implemented a rigorous training and certification process to ensure that all RAs met study-wide standards before conducting assessments. For training, subject matter experts (licensed psychologists with expertise in infant testing and BSID-4 administration) provided lectures, group discussions, and office hours for individualized guidance. To be certified, RAs were required to submit both a recorded administration and their QGlobal item-level scoring for expert review.
   duration: 60-90 min
   hbcd_mods2: The use of Caregiver Questions on the BSID-4 was modified. RAs were instructed to query the caregiver if the child scored below a 2 on items where caregiver input is permitted to inform the assessment. The BSID-4 manual specifies using caregiver reports when the target behavior “has not been observed.” It also notes that caregiver questions were used in 95% of administrations in the normative sample, with no formal limit on their use. The manual indicates that the assessment’s validity may be questioned if there are frequent discrepancies between what is observed and what is reported.
-  warning1_title: Missing Records
   full_name: Bayley Scales of Infant and Toddler Development, Fourth Edition
   alert3: The child's exposure to different languages may also impact their performance. The Multilingual Language Development questionnaire was used to screen for parental preference for the test to be administered in Spanish or English (Spanish language translations used are available upon request). The instrument also documents other language exposures that the child may have. Exposure to languages other than Spanish or English may impact a child's performance. In addition, some items on the test may be impacted by environmental experiences related to the task or items used. In these cases, the test may underestimate the child's developmental status.
+  warning4: null
   alert2: The test was given in the context of a battery of tests and procedures administered to the child and his/her caregiver during the course of an extended visit. Some children may experience fatigue from this and this may have adversely impacted their performance. Ratings of arousal level of the child before and after the assessment may help in identifying situations where the child may have under-performed.
   assessment_type: Cognitive testing
   table_name: ncl_ch_bayley
@@ -1131,15 +1202,21 @@ bayley_4:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/latest/instruments/neurocog/bayley-4/
+  email: jkabl01@emory.edu
   visits: V04
   hbcd_mods3: Modifications were made to accommodate Spanish-speaking households. English instructions were translated by experienced Bayley assessors accustomed to administering the BSID-4 in Spanish contexts for infants. The HBCD Spanish Language Committee reviewed translations, resolving discrepancies through iterative discussion. For families opting for Spanish administration, RAs used the approved HBCD Spanish translations of both instructions and caregiver questions. No modifications were made to the scoring of the responses and computation of the associated cluster and standard scores.
   primary_data_type: Tabulated data
+  submitter_name: Julie Kable
+  alert4: null
   acronym: Bayley-4
+  warning3: null
+  alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recOfvzHWYKX64ErY
-  warning1: A subset of participants are missing the Bayley-4 records, i.e. the <b>Administration</b> field (<code>ncl_ch_bayley_administration</code>) has a value of 'None.' However, there are a variety of reasons why the data may be missing, therefore a value of 'None' does not mean that the Bayley was not administered. These data will be added in future releases as it becomes available.
-  description: The **Bayley Scales of Infant and Toddler Development, Fourth Edition**, is an established, commercially available measure of early development. The test provides an estimate of the child's cognitive, language, and motor skills. The **Language Domain** evaluates both receptive and expressive communication skills. The **Motor Domain** evaluates both fine and gross motor skills. The **Social-Emotional** and **Adaptive Behavior** Scales of the Bayley-4 were not administered in this study. Publisher documentation for the Bayley-4 is available [here](https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Cognition-%26-Neuro/Bayley-Scales-of-Infant-and-Toddler-Development-%7C-Fourth-Edition/p/100001996).
+  warning1: null
+  description: The **Bayley Scales of Infant and Toddler Development, Fourth Edition**, is an established, commercially available measure of early development. The test provides an estimate of the child's cognitive, language, and motor skills. The **Language Domain** evaluates both receptive and expressive communication skills. The **Motor Domain** evaluates both fine and gross motor skills. The **Social-Emotional** and **Adaptive Behavior** Scales of the Bayley-4 were not administered in this study. Publisher documentation for the Bayley-4 is available [here](https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Cognition-%26-Neuro/Bayley-Scales-of-Infant-and-Toddler-Development-|-Fourth-Edition/p/100001996).
   slug: bayley-scales-of-infant-and-toddler-development-fourth-edition
   hbcd_mods3_title: Accommodations For Spanish-Speaking Households
+  supp3_text: null
   domain: Neurocognition & Language
   release: '2.1'
   qc: |-
@@ -1149,7 +1226,10 @@ bayley_4:
     - Completion rates were monitored across sites, with additional training provided when needed.
   administration: In-person
   scoring: Bayley scores are generated automatically using QGlobal, Pearson’s official scoring platform for the Bayley Scales. Scores reflect the standardized scoring procedures implemented by Pearson, and no additional manual scoring or modification is applied.
+  changelog: Removed text related to the subset of participants that were withheld due to a delay in validity checking the items.
+  resources: null
   hbcd_mods1_title: Administration
+  supp1_text: null
   measure: Bayley Scales of Infant and Toddler Development, Fourth Edition
   construct: Child Development (Cognitive, Language, and Motor)
 assist:
@@ -2428,21 +2508,52 @@ vep:
   measure: VEP
   construct: null
 nsc:
-  status: Work in progress
-  full_name: Incarceration Questionnaire (Experiences with the criminal justice system)
+  supp2_text: null
+  status: README updated & ready for SME review
+  alert1: 'Incarceration or arrest information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
+  hbcd_mods1: null
+  duration: 5 minutes or null if not applicable
+  hbcd_mods2: null
+  full_name: Incarceration History Questionnaire (Experiences with the criminal justice system)
+  warning4: null
+  alert2: null
   assessment_type: Questionnaire
   table_name: sed_cg_incarc
+  warning2: null
+  references: 'Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., ... & Wildeman, C. (2019). What percentage of Americans have ever had a family member incarcerated?: Evidence from the family history of incarceration survey (FamHIS). _Socius_, _5_, 2378023119829332. ++<https://doi.org/10.1177/237802311982>++'
   respondent_category: Parent on Self
+  admin_notes: null
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
+  email: japoehlmann@wisc.edu
   visits: V07, V09
+  hbcd_mods3: null
   primary_data_type: Tabulated data
-  submitter_name: Incarceration Questionnaire
+  submitter_name: Julie Poehlmann
+  alert4: null
   acronym: NSC
+  warning3: null
+  alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recepzgEHD3phY9C2
+  warning1: null
+  description: The Incarceration History Questionnaire is designed to capture maternal, paternal, and other household member's involvement with the criminal justice system in the prenatal and postnatal periods. It asks about arrest, incarceration, and community supervision. The questionnaire is completed by the adult participant in HBCD, usually the child's parent or caregiver. It is based on the Family History of Incarceration Survey, with questions added regarding the specific times in the child's life that involvement with the criminal justice system occurred, and if the justice involvement was related to substances. If incarceration occurred, the measure asks about the length of the incarceration.
   slug: incarceration-questionnaire
+  supp3_text: null
   domain: Social & Environmental Determinants
   release: '3.0'
+  qc: |-
+    **QC Procedures**:
+
+    ○      Monthly data consistency checks
+
+    ○      Handling of incomplete or missing responses by sites
+
+    **Common Issues Identified**:
+
+    ○      Missing data patterns
   administration: Remote
+  scoring: null
+  resources: null
+  supp1_text: null
   measure: Incarceration Questionnaire
   construct: Parental/Caregiver Arrests and incarceration during pregnancy and early childhood
 ecpromis:
@@ -3167,22 +3278,57 @@ subst:
   measure: Substance Use Patterns in Pregnancy
   construct: Substance Use in Pregnancy
 nbtb_cog:
+  supp2_text: null
   status: Work in progress
-  full_name: NIH Baby Toolbox EF Gazed-Based Tasks
+  alert1: Performance of the NIH Baby Toolbox reflects the child's developmental status, but various factors might influence the results of the assessment that should be taken into account.
+  hbcd_mods1: null
+  duration: Variable (V03 45-60 minutes, V04 15-20 minutes, V06-40-60 minutes)
+  hbcd_mods2: null
+  warning1_title: Changes in NIH Baby Toolbox Versions in HBCD
+  full_name: NIH Baby Toolbox
+  alert3: The NIH Baby Toolbox is available in English and Spanish. The child's exposure to other languages may also impact their performance. The Multilingual Language Development questionnaire was used to screen for parental preference for the test to be administered in Spanish or English. The instrument also documents other language exposures that the child may have. Exposure to languages other than Spanish or English may impact a child's performance. In addition, some items on the test may be impacted by environmental experiences related to the task or items used. In these cases, the test may underestimate the child's developmental status.
+  warning4: null
+  alert2: The test was given in the context of a battery of tests and procedures administered to the child and his/her caregiver during the course of an extended visit. Some children may experience fatigue from this and this may have adversely impacted their performance. Ratings of arousal level of the child before and after the assessment may help in identifying situations where the child may have under-performed.
   assessment_type: Cognitive testing
   table_name: nc_ch_nbtb
+  warning2: The V04 NIH Baby Toolbox assessment was reduced to shorten the length of the V04 visit during the course of the study. Some participants will have outcomes on subtests that were not administered to later participants.
+  warning2_title: Reduction in the HBCD V04 Battery
+  references: |-
+    Blackwell, C. K. (2025). Bringing developmental assessment to the 21st century: The NIH Baby Toolbox. _Infant Behavior and Development, 80_, 102127. <https://doi.org/10.1016/j.infbeh.2025.102127>
+
+    Han, Y. C., Dworak, E. M., Mansolf, M., Adam, H., Yao, L., Novack, M. A., ... & Kaat, A. J. (2025). _NIH Baby Toolbox® methodology and norms development_. _Infant Behavior and Development, 80_. <https://pubmed.ncbi.nlm.nih.gov/40743801/>
+
+    Morris AS, Wakschlag L, Krogh-Jespersen S, Fox N, Planalp B, Perlman SB, Shuffrey LC, Smith B, Lorenzo NE, Amso D, Coles CD, Johnson SP. Principles for Guiding the Selection of Early Childhood Neurodevelopmental Risk and Resilience Measures: HEALthy Brain and Child Development Study as an Exemplar. Advers Resil Sci. 2020;1(4):247-267. doi: 10.1007/s42844-020-00025-3. Epub 2020 Nov 9. PMID: 33196052; PMCID: PMC7649097.
+
+    NIH Infant and Toddler (Baby) Toolbox (2024, June 24, 2022) Retrieved from <https://neuroscienceblueprint.nih.gov/resources-tools/blueprint-resources-tools-library/nih-infant-and-toddler-baby-toolbox>
+
+    NIH Baby Toolbox. (n.d.). _Home_. Retrieved August 21, 2026, from <https://nihbabytoolbox.org/>
+
+    NIH Baby Toolbox. (n.d.). _Cognition assessments_ (Page 2 of 3). Retrieved August 21, 2026, from <https://nihbabytoolbox.org/domain/cognition/page/2/>
   respondent_category: Child on Self
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb-cog/
+  email: jkabl01@emory.edu
   visits: V03, V04, V06
+  hbcd_mods3: null
   primary_data_type: Tabulated data
+  submitter_name: Julie Kable
+  alert4: null
   acronym: NBTB
+  warning3: null
+  alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rect6eIwToFbEGoVJ
-  description: switch to touch-based around 24m
+  warning1: HBCD implemented the beta version of the NIH Baby Toolbox that was used for collecting the standardization sample. In December of 2025, HBCD transitioned to the final standardized version that was made available to the public. Some subtests in the original version were not retained in the standardized version.  These subtests will have raw performance metrics but will not have standardized scores.
+  description: The National Institute of Health (NIH) Infant and Toddler Toolbox (NBT) is a new nationally-normed assessment. HBCD administered modules to measure cognition, language, early mathematics/numeracy, and executive function in children between 1- and 42-months of age. Assessments include direct child assessment and observations supplemented as needed by reporting from parents or legal guardians. In addition, gaze-based measures were used to assess aspects of cognitive functioning in children under 24 months of age and touch screen measures were used for children who were 24 months or older.  The NIH Baby Toolbox Cognition Domain provides individual performance measures or scores and composite scores. Additional supplemental tests were also used that do not contribute to the composites but can be used to better understand the child's cognitive skills.  Please see the NBT instructional manual for details. These are available from <https://resources.nihtoolbox.org/manuals-and-test-materials/nih-baby-toolbox-documentation/>.
   slug: nih-btb-cognitive-executive-function-memory
+  supp3_text: null
   domain: Neurocognition & Language
   release: '3.0'
+  qc: '- The Infant Testing Core of HBCD were trained and certified by the developers of the NIH Baby Toolbox.  HBCD Study staff were provided trainings from the developers of the NIH Baby Toolbox via zoom.  The ITC of HBCD provided additional trainings and then certified HBCD staff to ensure adherence to standardized procedures.  During testing, responses were entered into NIH Baby Toolbox software, which automatically applied scoring rules and generated standardized scores. Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations. - Completion rates were monitored across sites, with additional training provided when needed.'
   administration: In-person
+  scoring: This is autoscored by the software and data are uploaded to a web server. Please see the NBT technical manual for details. These are available from <https://resources.nihtoolbox.org/manuals-and-test-materials/nih-baby-toolbox-documentation/>.
+  resources: null
+  supp1_text: null
   measure: NIH_BTB Cognitive/Executive Function/Memory
   construct: Cognition/Executive Function/Memory
 eeg:
