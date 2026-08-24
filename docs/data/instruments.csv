@@ -242,50 +242,31 @@ prescan_q,README updated & ready for SME review,Pre-Scan Questionnaire,Questionn
 </tbody>
 </table>",pre-scan-questionnaire,Imaging/Tabular Imaging,2.1,"Data dashboard monitored for variable missingness, coding errors, and data consistency",In-person,,Pre-Scan Questionnaire,,,,,,,,V02 - V06,,,,,Infant Sleep Environment,,,,,,,,,,,,,,,,,,,,,,,,,,
 dit,Work in progress,Deferred Imitation Task,Cognitive testing,ncl_ch_di_v06,,Child on Self,,https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/dit/,Tabulated data,DI,https://form.fillout.com/t/qaNxHYsnPBus?id=rec5I08Qeoit27sq4,,,deferred-imitation-task-gong-and-berry-go-round,Neurocognition & Language,3.0,,In-person,,Deferred Imitation Task: Gong and Berry-Go-Round,,,,,,,,"V06, V08",,,,,Memory,,,,,,,,,,,,,,,,,,,,,,,,,,
-pedsql,DONE! Complete/stable for release,Pediatric Quality of Life Inventory,Questionnaire,ph_cg_pedsql,"Varni JW, Seid M, Kurtin PS. PedsQL 4.0: reliability and validity of the Pediatric Quality of Life Inventory version 4.0 generic core scales in healthy and patient populations. Med Care. 2001 Aug;39(8):800-12. doi: 10.1097/00005650-200108000-00006. PMID: 11468499.
+pedsql,DONE! Complete/stable for release,Pediatric Quality of Life Inventory,Questionnaire,ph_cg_pedsql,"Varni JW, Seid M, Kurtin PS. PedsQL 4.0: reliability and validity of the Pediatric Quality of Life Inventory version 4.0 generic core scales in healthy and patient populations. Med Care. 2001 Aug;39(8):800-12. doi: [10.1097/00005650-200108000-00006](https://doi.org/10.1097/00005650-200108000-00006). PMID: 11468499.
 
-Martínez-Shaw ML, Del Río FJ, Sánchez-Sandoval Y. Spanish validation of the Pediatric Quality of Life Inventory (PedsQL™ 4.0) for parent report for toddlers (ages 2-4). Health Qual Life Outcomes. 2023 May 18;21(1):48. doi: 10.1186/s12955-023-02128-8. PMID: 37202825; PMCID: PMC10197329.",Parent on Child,3.0 documentation - please only fill out for PEDsQL (and not PEDsQL Youth just yet - so Versions section is currently marked as NA),https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/pedsql/,Tabulated data,PEDsQL,https://form.fillout.com/t/qaNxHYsnPBus?id=rec6B66wZDZh5SBa5,,"PedsQL is a measure of pediatric quality of life across 4 dimensions: Physical Health, Emotional Health, Social and School functioning. In total there are 19-23 items depending on age. For ages 2-4 the form is parent reported.",pedsql,Physical Health,3.0,"Monitor data dashboard for variable missingness, possible coding errors, and data consistency.",Remote,,PEDsQL,,,5 min,,,,,"V07, V09",,,"**General Scoring Description: **  
+Martínez-Shaw ML, Del Río FJ, Sánchez-Sandoval Y. Spanish validation of the Pediatric Quality of Life Inventory (PedsQL™ 4.0) for parent report for toddlers (ages 2-4). Health Qual Life Outcomes. 2023 May 18;21(1):48. doi: [10.1186/s12955-023-02128-8](https://doi.org/10.1186/s12955-023-02128-8?urlappend=%3Futm_source%3Dresearchgate.net%26utm_medium%3Darticle). PMID: 37202825; PMCID: PMC10197329.",Parent on Child,Minor updates to clean up formatting,https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/pedsql/,Tabulated data,PEDsQL,https://form.fillout.com/t/qaNxHYsnPBus?id=rec6B66wZDZh5SBa5,,"PedsQL is a measure of pediatric quality of life across 4 dimensions: Physical Health, Emotional Health, Social and School functioning. In total there are 19-23 items depending on age. For ages 2-4 the form is parent reported.",pedsql,Physical Health,3.0,"Monitor data dashboard for variable missingness, possible coding errors, and data consistency.",Remote,,PEDsQL,,,5 min,,,,,"V07, V09",,,"**##### General Scoring Description**
+
 The PedsQL is scored in 4 domains:
 
-·      Physical Functioning
-
-·      Emotional functioning
-
-·      Social Functioning
-
-·      School Functioning
+- Physical Functioning
+- Emotional functioning
+- Social Functioning
+- School Functioning
 
  
 
-**Scoring Procedure**
+**##### Scoring Procedure**
 
-Items are reverse scored and linearly transformed to a 0-100 scale as follows: 0=100, 1=75, 2=50, 3=25, 4=0
+Items are reverse scored and linearly transformed to a 0-100 scale as follows: 0=100, 1=75, 2=50, 3=25, 4=0. If more than 50% of the items in the scale are missing, the scale scores should not be computed.
 
- 
+- Mean score = Sum of the items over the number of items answered
+- Psychosocial Health Summary Score = Sum of the items over the number of items answered in the Emotional, Social, and School Functioning Scales  
+- Physical Health Summary Score = Physical Functioning Scale Score 
+- Total Score: Sum of all the items over the number of items answered on all the Scales
 
-If more than 50% of the items in the scale are missing, the scale scores should not be computed
+**##### Missing data**
 
-Mean score = Sum of the items over the number of items answered
-
- 
-
-Psychosocial Health Summary Score = Sum of the items over the number of items answered in the Emotional, Social, and School Functioning Scales  
-
- 
-
-Physical Health Summary Score = Physical Functioning Scale Score 
-
- 
-
-Total Score: Sum of all the items over the number of items answered on all the Scales
-
- 
-
-**Missing data:**
-
-If more than 50% of the items in the scale are missing, the Scale Scores should not be computed.
-
-If 50% or more items are completed: Impute the mean of the completed items in a scale.",,Pediatric Quality of Life,,,,,,,,,leigh-anne.cioffredi@uvm.edu,Leigh-Anne Cioffredi,,Filled it out,,,,,,,,,,,,,,
+If more than 50% of the items in the scale are missing, the Scale Scores are not and should not be computed. If 50% or more items are completed: the mean of the completed items in a scare are imputed.",,Pediatric Quality of Life,,,,,,,,,leigh-anne.cioffredi@uvm.edu,Leigh-Anne Cioffredi,,Filled it out,,,,,,,,,,,,,,
 mri_forms,README updated & ready for SME review,"MRI Scan Session Summary Form (Pre-Scan Checklist 1)
 
 MRI Data Summary Form (Post-Scan Checklist 2)",Checklist,"mri_ra_chkl_scan
@@ -1034,7 +1015,7 @@ The Visual Evoked Potential Task (**VEP**) (v.11.29.23) measures development of 
 A flashing black and white 20x20 checkerboard with a red circle in the center is shown for the duration of the task (trial counts of 60 Checkerboard A and 60 Checkerboard B for a total of 120). The task elicits a VEP response in the occipital area (Oz), which consists of the following components: **N1** (first negative peak), **P1** (first positive peak), and **N2** (second negative peak).
 
 <img src=""../images/eeg-vep-checkerboard.png"" alt=""EEG Face Task"" width=""30%"" height=""auto"" class=""center"">",vep,EEG,2.1,NA - DO NOT ADD INFORMATION TO THIS FIELD UNLESS DIRECTLY INSTRUCTED (it is not autoparsed and will not show up on the site),In-person,,VEP,,,,,,,,"V03, V04, V06",,,,,,,,,,,,,,kmannin4@umd.edu,Katherine Manning,,,,,,,,,,,,,,,,
-nsc,README updated & ready for SME review,Incarceration History Questionnaire (Experiences with the criminal justice system),Questionnaire,sed_cg_incarc,"Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., ... & Wildeman, C. (2019). What percentage of Americans have ever had a family member incarcerated?: Evidence from the family history of incarceration survey (FamHIS). _Socius_, _5_, 2378023119829332. <https://doi.org/10.1177/237802311982>",Parent on Self,,https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/,Tabulated data,NSC,https://form.fillout.com/t/qaNxHYsnPBus?id=recepzgEHD3phY9C2,,"The Incarceration History Questionnaire is designed to capture maternal, paternal, and other household member's involvement with the criminal justice system in the prenatal and postnatal periods. It asks about arrest, incarceration, and community supervision. The questionnaire is completed by the adult participant in HBCD, usually the child's parent or caregiver. It is based on the Family History of Incarceration Survey, with questions added regarding the specific times in the child's life that involvement with the criminal justice system occurred, and if the justice involvement was related to substances. If incarceration occurred, the measure asks about the length of the incarceration.",incarceration-questionnaire,Social & Environmental Determinants,3.0,"**QC Procedures**:
+nsc,README updated & ready for SME review,Incarceration History Questionnaire (Experiences with the criminal justice system),Questionnaire,sed_cg_incarc,"Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., ... & Wildeman, C. (2019). What percentage of Americans have ever had a family member incarcerated?: Evidence from the family history of incarceration survey (FamHIS). _Socius_, _5_, 2378023119829332. <https://doi.org/10.1177/237802311982>",Parent on Self,README autoupdated with some minor cleanup 8/24,https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/,Tabulated data,NSC,https://form.fillout.com/t/qaNxHYsnPBus?id=recepzgEHD3phY9C2,,"The Incarceration History Questionnaire is designed to capture maternal, paternal, and other household member's involvement with the criminal justice system in the prenatal and postnatal periods. It asks about arrest, incarceration, and community supervision. The questionnaire is completed by the adult participant in HBCD, usually the child's parent or caregiver. It is based on the Family History of Incarceration Survey, with questions added regarding the specific times in the child's life that involvement with the criminal justice system occurred, and if the justice involvement was related to substances. If incarceration occurred, the measure asks about the length of the incarceration.",incarceration-questionnaire,Social & Environmental Determinants,3.0,"**QC Procedures**:
 
 ○      Monthly data consistency checks
 

@@ -450,11 +450,11 @@ pedsql:
   table_name: ph_cg_pedsql
   warning2: null
   references: |-
-    Varni JW, Seid M, Kurtin PS. PedsQL 4.0: reliability and validity of the Pediatric Quality of Life Inventory version 4.0 generic core scales in healthy and patient populations. Med Care. 2001 Aug;39(8):800-12. doi: 10.1097/00005650-200108000-00006. PMID: 11468499.
+    Varni JW, Seid M, Kurtin PS. PedsQL 4.0: reliability and validity of the Pediatric Quality of Life Inventory version 4.0 generic core scales in healthy and patient populations. Med Care. 2001 Aug;39(8):800-12. doi: [10.1097/00005650-200108000-00006](https://doi.org/10.1097/00005650-200108000-00006). PMID: 11468499.
 
-    Martínez-Shaw ML, Del Río FJ, Sánchez-Sandoval Y. Spanish validation of the Pediatric Quality of Life Inventory (PedsQL™ 4.0) for parent report for toddlers (ages 2-4). Health Qual Life Outcomes. 2023 May 18;21(1):48. doi: 10.1186/s12955-023-02128-8. PMID: 37202825; PMCID: PMC10197329.
+    Martínez-Shaw ML, Del Río FJ, Sánchez-Sandoval Y. Spanish validation of the Pediatric Quality of Life Inventory (PedsQL™ 4.0) for parent report for toddlers (ages 2-4). Health Qual Life Outcomes. 2023 May 18;21(1):48. doi: [10.1186/s12955-023-02128-8](https://doi.org/10.1186/s12955-023-02128-8?urlappend=%3Futm_source%3Dresearchgate.net%26utm_medium%3Darticle). PMID: 37202825; PMCID: PMC10197329.
   respondent_category: Parent on Child
-  admin_notes: 3.0 documentation - please only fill out for PEDsQL (and not PEDsQL Youth just yet - so Versions section is currently marked as NA)
+  admin_notes: Minor updates to clean up formatting
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/pedsql/
   email: leigh-anne.cioffredi@uvm.edu
   visits: V07, V09
@@ -474,8 +474,8 @@ pedsql:
   release: '3.0'
   qc: Monitor data dashboard for variable missingness, possible coding errors, and data consistency.
   administration: Remote
-  scoring: "**General Scoring Description: **  \nThe PedsQL is scored in 4 domains:\n\n·      Physical Functioning\n\n·      Emotional functioning\n\n·      Social Functioning\n\n·      School Functioning\n\n \n\n**Scoring Procedure**\n\nItems are reverse scored and linearly transformed to a 0-100 scale as follows: 0=100, 1=75, 2=50, 3=25, 4=0\n\n \n\nIf more than 50% of the items in the scale are missing, the scale scores should not be computed\n\nMean score = Sum of the items over the number of items answered\n\n \n\nPsychosocial Health Summary Score = Sum of the items over the number of items answered in the Emotional, Social, and School Functioning Scales  \n\n \n\nPhysical Health Summary Score = Physical Functioning Scale Score \n\n \n\nTotal Score: Sum of all the items over the number of items answered on all the Scales\n\n \n\n**Missing data:**\n\nIf more than 50% of the items in the scale are missing, the Scale Scores should not be computed.\n\nIf 50% or more items are completed:\
-    \ Impute the mean of the completed items in a scale."
+  scoring: "**##### General Scoring Description**\n\nThe PedsQL is scored in 4 domains:\n\n- Physical Functioning\n- Emotional functioning\n- Social Functioning\n- School Functioning\n\n \n\n**##### Scoring Procedure**\n\nItems are reverse scored and linearly transformed to a 0-100 scale as follows: 0=100, 1=75, 2=50, 3=25, 4=0. If more than 50% of the items in the scale are missing, the scale scores should not be computed.\n\n- Mean score = Sum of the items over the number of items answered\n- Psychosocial Health Summary Score = Sum of the items over the number of items answered in the Emotional, Social, and School Functioning Scales  \n- Physical Health Summary Score = Physical Functioning Scale Score \n- Total Score: Sum of all the items over the number of items answered on all the Scales\n\n**##### Missing data**\n\nIf more than 50% of the items in the scale are missing, the Scale Scores are not and should not be computed. If 50% or more items are completed: the mean of the completed\
+    \ items in a scare are imputed."
   changelog: Filled it out
   resources: null
   supp1_text: null
@@ -2544,7 +2544,7 @@ nsc:
   warning2: null
   references: 'Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., ... & Wildeman, C. (2019). What percentage of Americans have ever had a family member incarcerated?: Evidence from the family history of incarceration survey (FamHIS). _Socius_, _5_, 2378023119829332. <https://doi.org/10.1177/237802311982>'
   respondent_category: Parent on Self
-  admin_notes: null
+  admin_notes: README autoupdated with some minor cleanup 8/24
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
   email: japoehlmann@wisc.edu
   visits: V07, V09
