@@ -244,7 +244,7 @@ prescan_q,README updated & ready for SME review,Pre-Scan Questionnaire,Questionn
 dit,Work in progress,Deferred Imitation Task,Cognitive testing,ncl_ch_di_v06,,Child on Self,,https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/dit/,Tabulated data,DI,https://form.fillout.com/t/qaNxHYsnPBus?id=rec5I08Qeoit27sq4,,,deferred-imitation-task-gong-and-berry-go-round,Neurocognition & Language,3.0,,In-person,,Deferred Imitation Task: Gong and Berry-Go-Round,,,,,,,,"V06, V08",,,,,Memory,,,,,,,,,,,,,,,,,,,,,,,,,,
 pedsql,DONE! Complete/stable for release,Pediatric Quality of Life Inventory,Questionnaire,ph_cg_pedsql,"Varni JW, Seid M, Kurtin PS. PedsQL 4.0: reliability and validity of the Pediatric Quality of Life Inventory version 4.0 generic core scales in healthy and patient populations. Med Care. 2001 Aug;39(8):800-12. doi: [10.1097/00005650-200108000-00006](https://doi.org/10.1097/00005650-200108000-00006). PMID: 11468499.
 
-Martínez-Shaw ML, Del Río FJ, Sánchez-Sandoval Y. Spanish validation of the Pediatric Quality of Life Inventory (PedsQL™ 4.0) for parent report for toddlers (ages 2-4). Health Qual Life Outcomes. 2023 May 18;21(1):48. doi: [10.1186/s12955-023-02128-8](https://doi.org/10.1186/s12955-023-02128-8?urlappend=%3Futm_source%3Dresearchgate.net%26utm_medium%3Darticle). PMID: 37202825; PMCID: PMC10197329.",Parent on Child,Minor updates to clean up formatting,https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/pedsql/,Tabulated data,PEDsQL,https://form.fillout.com/t/qaNxHYsnPBus?id=rec6B66wZDZh5SBa5,,"PedsQL is a measure of pediatric quality of life across 4 dimensions: Physical Health, Emotional Health, Social and School functioning. In total there are 19-23 items depending on age. For ages 2-4 the form is parent reported.",pedsql,Physical Health,3.0,"Monitor data dashboard for variable missingness, possible coding errors, and data consistency.",Remote,,PEDsQL,,,5 min,,,,,"V07, V09",,,"**##### General Scoring Description**
+Martínez-Shaw ML, Del Río FJ, Sánchez-Sandoval Y. Spanish validation of the Pediatric Quality of Life Inventory (PedsQL™ 4.0) for parent report for toddlers (ages 2-4). Health Qual Life Outcomes. 2023 May 18;21(1):48. doi: [10.1186/s12955-023-02128-8](https://doi.org/10.1186/s12955-023-02128-8?urlappend=%3Futm_source%3Dresearchgate.net%26utm_medium%3Darticle). PMID: 37202825; PMCID: PMC10197329.",Parent on Child,Minor updates to clean up formatting,https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/pedsql/,Tabulated data,PEDsQL,https://form.fillout.com/t/qaNxHYsnPBus?id=rec6B66wZDZh5SBa5,,"PedsQL is a measure of pediatric quality of life across 4 dimensions: Physical Health, Emotional Health, Social and School functioning. In total there are 19-23 items depending on age. For ages 2-4 the form is parent reported.",pedsql,Physical Health,3.0,"Monitor data dashboard for variable missingness, possible coding errors, and data consistency.",Remote,,PEDsQL,,,5 min,,,,,"V07, V09",,,"##### General Scoring Description
 
 The PedsQL is scored in 4 domains:
 
@@ -255,7 +255,7 @@ The PedsQL is scored in 4 domains:
 
  
 
-**##### Scoring Procedure**
+##### Scoring Procedure
 
 Items are reverse scored and linearly transformed to a 0-100 scale as follows: 0=100, 1=75, 2=50, 3=25, 4=0. If more than 50% of the items in the scale are missing, the scale scores should not be computed.
 
@@ -264,7 +264,7 @@ Items are reverse scored and linearly transformed to a 0-100 scale as follows: 0
 - Physical Health Summary Score = Physical Functioning Scale Score 
 - Total Score: Sum of all the items over the number of items answered on all the Scales
 
-**##### Missing data**
+##### Missing data
 
 If more than 50% of the items in the scale are missing, the Scale Scores are not and should not be computed. If 50% or more items are completed: the mean of the completed items in a scare are imputed.",,Pediatric Quality of Life,,,,,,,,,leigh-anne.cioffredi@uvm.edu,Leigh-Anne Cioffredi,,Filled it out,,,,,,,,,,,,,,
 mri_forms,README updated & ready for SME review,"MRI Scan Session Summary Form (Pre-Scan Checklist 1)

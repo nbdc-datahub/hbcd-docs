@@ -342,7 +342,7 @@ def define_env(env):
 </span>
 <span class="arrow">▸</span>
 </div>
-<div class="collapsible-content">
+<div class="collapsible-content" markdown="1">
 {scoring}
 </div>
 """
