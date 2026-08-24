@@ -3362,7 +3362,12 @@ nbtb:
   supp3_text: null
   domain: Neurocognition & Language
   release: '3.0'
-  qc: The Infant Testing Core of HBCD were trained and certified by the developers of the NIH Baby Toolbox.  HBCD Study staff were provided trainings from the developers of the NIH Baby Toolbox via zoom.  The ITC of HBCD provided additional trainings and then certified HBCD staff to ensure adherence to standardized procedures.  During testing, responses were entered into NIH Baby Toolbox software, which automatically applied scoring rules and generated standardized scores. Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations. - Completion rates were monitored across sites, with additional training provided when needed.
+  qc: |-
+    The Infant Testing Core of HBCD were trained and certified by the developers of the NIH Baby Toolbox.  HBCD Study staff were provided trainings from the developers of the NIH Baby Toolbox via zoom. The ITC of HBCD provided additional trainings and then certified HBCD staff to ensure adherence to standardized procedures.
+
+    During testing, responses were entered into NIH Baby Toolbox software, which automatically applied scoring rules and generated standardized scores. Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations.
+
+    Completion rates were monitored across sites, with additional training provided when needed.
   administration: In-person
   scoring: This is autoscored by the software and data are uploaded to a web server. Please see the NBT technical manual for details.  These are available from [NIH Baby Toolbox® Manuals & Test Materials](https://resources.nihtoolbox.org/manuals-and-test-materials/nih-baby-toolbox-documentation/).
   resources: null
