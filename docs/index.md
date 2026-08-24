@@ -41,8 +41,6 @@
 </a>
 </p>
 
-
-
 <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ddd;">
 
 <p style="font-style: italic; text-align: center; font-size: 0.95em;">

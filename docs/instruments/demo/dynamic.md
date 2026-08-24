@@ -8,6 +8,7 @@
 
 # Dynamic Table
 
+{{ readme_summary(instruments.dynamic) }}
 {{ alert_warning(instruments.dynamic) }}
 {{ data_warning(instruments.dynamic) }}
 {{ issues_banner() }}

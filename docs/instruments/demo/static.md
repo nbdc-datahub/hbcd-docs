@@ -6,7 +6,6 @@
 }
 </style>
 
-
 # Static Table
 
 {{ readme_summary(instruments.static) }}
