@@ -3320,7 +3320,7 @@ nbtb:
   alert1: Performance of the NIH Baby Toolbox reflects the child's developmental status, but various factors might influence the results of the assessment that should be taken into account.
   Date: '2026-08-24'
   hbcd_mods1: null
-  duration: V03 45-60 min; V04 15-20 min; V06-40-60 min
+  duration: V03 45-60 min / V04 15-20 min / V06-40-60 min
   hbcd_mods2: null
   warning1_title: Changes in NIH Baby Toolbox Versions in HBCD
   full_name: NIH Baby Toolbox
