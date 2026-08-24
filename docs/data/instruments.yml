@@ -306,10 +306,11 @@ tic_quest:
   hbcd_mods1: null
   duration: 5 minutes or less
   hbcd_mods2: null
+  warning1_title: Common issues identified from QC
   full_name: Transition in Care Questionnaire
   warning4: null
   alert2: null
-  assessment_type: Interview
+  assessment_type: Questionnaire
   table_name: sed_cg_tic
   warning2: null
   references: 'Radel, L., & Bramlett, M. (2014). Children in nonparental care: Findings from the 2011-2012 National Survey of Children’s Health. ASPE, DHHS. <https://aspe.hhs.gov/reports/children-nonparental-care-findings-2011-2012-national-survey-childrens-health-0>'
@@ -326,27 +327,21 @@ tic_quest:
   warning3: null
   alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec4lCy78s88tToRi
-  warning1: null
-  description: The TIC Questionnaire is designed to capture children’s formal and informal transitions to alternate or non-parental care that last for 2 weeks or more, including living in foster care, kinship care, with other relatives, or in other non-parental care arrangements. The transitions involve the child being separated from the parent/caregiver who usually lives with the child and usually provides support, care, and decision-making. (The transitions documented do NOT include very short periods like a weekend away or a vacation, or periods of time like when the parent was working or had an appointment.) The measure asks about whether or not a transition has occurred, when the transition occurred, how long it lasted, and the reasons for the transition. It also asks about who cared for the child during the transition (e.g., grandparent, foster parent, etc). The TIC Questionnaire is completed by the caregiver or parent who is the adult participant in the HBCD study at the time of the
-    assessment. The questions are based on the National Survey of Health 2011-2012 follow-up study of children living in non-parental care.
+  warning1: |-
+    - In 12 cases, the TIC Questionnaire was erroneously completed at V4 instead of V6
+    - In some early cases, RAs did not administer the TIC Questionnaire because they thought it was the same as the TIC Screener. However, these are different instruments
+    - Missing data patterns
+  description: |-
+    The TIC Questionnaire is designed to capture children’s formal and informal transitions to alternate or non-parental care that last for 2 weeks or more, including living in foster care, kinship care, with other relatives, or in other non-parental care arrangements. The transitions involve the child being separated from the parent/caregiver who usually lives with the child and usually provides support, care, and decision-making. The transitions documented do NOT include very short periods like a weekend away or a vacation, or periods of time like when the parent was working or had an appointment.
+
+    The measure asks about whether or not a transition has occurred, when the transition occurred, how long it lasted, and the reasons for the transition. It also asks about who cared for the child during the transition (e.g., grandparent, foster parent, etc). The TIC Questionnaire is completed by the caregiver or parent who is the adult participant in the HBCD study at the time of the assessment. The questions are based on the National Survey of Health 2011-2012 follow-up study of children living in non-parental care.
   slug: tic-questionnaire
   supp3_text: null
   domain: Social & Environmental Determinants
   release: '3.0'
   qc: |-
-    **QC Procedures**:
-
-    ○  Monthly data consistency checks
-
-    ○  Handling of incomplete or missing responses by sites
-
-    **Common Issues Identified**:
-
-    ○  In 12 cases, the TIC Questionnaire was erroneously completed at V4 instead of V6
-
-    ○  In some early cases, RAs did not administer the TIC Questionnaire because they thought it was the same as the TIC Screener. However, these are different instruments.
-
-    ○  Missing data patterns
+    - Monthly data consistency checks
+    - Handling of incomplete or missing responses by sites
   administration: In-person
   scoring: null
   changelog: in the measure description it says "interview" but it' a RedCAP survey
@@ -355,7 +350,7 @@ tic_quest:
   measure: TIC Questionnaire
   construct: Transition in Care
 R3_nutrition:
-  Done (admin): true
+  Done (admin): DONE
   supp2_text: null
   status: DONE! Complete/stable for release
   alert1: null
@@ -437,7 +432,7 @@ dit:
   measure: 'Deferred Imitation Task: Gong and Berry-Go-Round'
   construct: Memory
 pedsql:
-  Done (admin): true
+  Done (admin): DONE
   supp2_text: null
   status: DONE! Complete/stable for release
   alert1: null
@@ -3696,6 +3691,7 @@ ecpromis_peer:
   measure: ecPROMIS Peer Relationships Scale
   construct: Peer Relationships
 blood:
+  Done (admin): DONE
   supp2_text: null
   status: README updated & ready for SME review
   alert1: null
@@ -3713,7 +3709,7 @@ blood:
   warning2_title: Large Gaps Between Collection and Analysis Dates
   references: 'Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <https://doi.org/10.1016/j.dcn.2024.101451>'
   respondent_category: Parent on Self
-  admin_notes: '8/20 Luci note: I have updated the README based on the changes submitted by Elinor Aug 20th (and the changes should render shortly) and reviewed the page for accuracy. I made one minor formatting change to turn the short list in the description to a single sentence ("PEth is confirmatory-testing only, with **20phsphtdetbsp (`c_peth_b_cat`)** as the confirmatory test and **Ethanol (`c_ethanol_b`)** as the class."). I will mark as complete for now and follow up with Elinor via email to inform her (while I''m still perfecting the workflow to hopefully add automated notifications and such)'
+  admin_notes: "8/24: marking as complete now \n8/20 Luci note: I have updated the README based on the changes submitted by Elinor Aug 20th (and the changes should render shortly) and reviewed the page for accuracy. I made one minor formatting change to turn the short list in the description to a single sentence (\"PEth is confirmatory-testing only, with **20phsphtdetbsp (`c_peth_b_cat`)** as the confirmatory test and **Ethanol (`c_ethanol_b`)** as the class.\"). I will mark as complete for now and follow up with Elinor via email to inform her (while I'm still perfecting the workflow to hopefully add automated notifications and such)"
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/blood
   email: sullivel@ohsu.edu
   visits: V01
