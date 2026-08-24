@@ -914,7 +914,7 @@ gabi:
     Pini, N., Ong, J. L., Yilmaz, G., Chee, N. I. Y. N., Siting, Z., Awasthi, A., Biju, S., Kishan, K., Patanaik, A., Fifer, W. P., & Lucchini, M. (2022). An automated heart rate-based algorithm for sleep stage classification: Validation using conventional polysomnography and an innovative wearable electrocardiogram device. _Frontiers in Neuroscience_, 16, 974192. <https://doi.org/10.3389/fnins.2022.974192>
     Zinzuwadia, A., & Singh, J. P. (2022). Wearable devices-addressing bias and inequity. _The Lancet Digital Health_, 4(12), e856–e857. <https://doi.org/10.1016/S2589-7500(22)00194-7>
   respondent_category: Child on Self
-  admin_notes: "- 8/20: Per Nicolo, I have removed mention of derivatives \n- Luci note: I think the only thing missing is the list of GABI files in the file tree - I originally had that hard-coded, but just added it to this form. if it's difficult to enter/update via this form (these forms have some funny formatting issues), feel free to email me with a list of files and I'll update it on my end"
+  admin_notes: '- 8/20: Per Nicolo, I have removed mention of derivatives. I think the only thing missing is the list of GABI files in the file tree - if it''s difficult to provide list via this form due to formatting reasons, enter it anyway or email me with the info to add'
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/sensors/gabi/
   email: np2600@cumc.columbia.edu
   visits: V02, V03
@@ -939,7 +939,9 @@ gabi:
     Issues with the sensor data were generally rare, and most data were deemed present and accurately collected (when captured correctly). Errors that did arise were corrected, when possible, though this was typically not feasible. Common errors noted included inadequate or missing data (due to human error, technical issues, or a parent/legal guardian declining participation in this aspect of the study), sensors being removed for extended periods during the 72-hour collection, or unavailability of devices to conduct the data collection.
   administration: Remote
   scoring: null
-  changelog: removed "and processed derivatives" from Description section as derivatives are not included in 3.0 - COMPLETE 8/20 (Luci added note)
+  changelog: |-
+    - NEW NOTES FOR NEXT CHANGE: {}
+    - 8/20: removed "and processed derivatives" from Description section as derivatives are not included in 3.0 - COMPLETE 8/20 (Luci)
   resources: null
   supp1_text: null
   measure: GABI (Infant Heart Rate)
