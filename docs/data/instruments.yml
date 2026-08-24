@@ -1618,6 +1618,7 @@ dynamic:
   supp2_text: null
   status: Work in progress
   alert1: When using HBCD data, all data users must follow responsible use requirements described in the Data Use Certification (DUC). When conceptualizing studies, analyzing data, and communicating findings using demographic, socioeconomic, household, caregiver, neighborhood, or other social and environmental characteristics, researchers should consider approaches that avoid stigmatizing individuals or groups and perpetuating harmful biases.
+  Date: '2026-08-24'
   hbcd_mods1: null
   alert1_title: ' Responsible Use of Demographic and Social Variables'
   duration: null
@@ -1641,9 +1642,9 @@ dynamic:
     Additional references for substance-use flags: TBD pending confirmation of variables and source measures.
   alert2_title: Interpretation of Contextual Measures
   respondent_category: null
-  admin_notes: |2-
+  admin_notes: |-
+    FROM LUCI:
 
-    - The subsection text cannot yet be edited via this form. I (Luci) will let you know when that is available and you can submit changes as needed then
     - I have set up a shared google sheet [here](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?usp=sharing) where you can update the table text (this sheet is autoparsed to populate the webpage) - remember people should look at the data dictionary for full info, so this table only needs to include summary info critical to understanding basics - SEE TAB NAMED "Dynamic"
     - Larger changes to the organization of the page are also ok, whatever the SMEs would like. Just consult with Luci since you likely can't make those changes via this form
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/dynamic/
@@ -1661,7 +1662,7 @@ dynamic:
   description: |-
     Datasets within the Demographics domain are intended to provide HBCD investigators with a concise set of commonly used variables without requiring users to navigate multiple source files.
 
-    The Dynamic Table (TABLENAME) is a **derived measure** with information computed from  study instruments such as the Adult and Child Demographics (`sed_{bm|ch}_demo`). Dynamic data include critical participant- and visit-level data that, unlike the Static Table variables, may vary across study visits.
+    The Dynamic Table is a **derived measure** with information computed from  study instruments such as the Adult and Child Demographics (`sed_{bm|ch}_demo`). Dynamic data include critical participant- and visit-level data that, unlike the Static Table variables, may vary across study visits.
   slug: dynamic-table
   supp3_text: null
   domain: Participant Derived
@@ -1720,8 +1721,6 @@ dynamic:
     ##### SU Flag Variable Summary
 
     _All variable names are prefixed with `su_flag_`, omitted below for readability._
-
-    <!-- HARD-CODED TABLE -->
   measure: Dynamic Table
 home21:
   status: README updated & ready for SME review
