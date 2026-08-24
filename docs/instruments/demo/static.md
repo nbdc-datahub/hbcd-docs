@@ -9,6 +9,7 @@
 
 # Static Table
 
+{{ readme_summary(instruments.static) }}
 {{ alert_warning(instruments.static) }}
 {{ data_warning(instruments.static) }}
 {{ issues_banner() }}
@@ -19,6 +20,9 @@
 
 <!-- ## Age, Sex, & Other Variables  -->
 {{ suppx(instruments.static, "1") }}
+
+
+<!-- HARD-CODED TABLE -->
 
 <table class="compact-table-no-vertical-lines static-dynamic-tables">
 <thead>

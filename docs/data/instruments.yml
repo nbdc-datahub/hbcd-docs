@@ -914,7 +914,7 @@ gabi:
     Pini, N., Ong, J. L., Yilmaz, G., Chee, N. I. Y. N., Siting, Z., Awasthi, A., Biju, S., Kishan, K., Patanaik, A., Fifer, W. P., & Lucchini, M. (2022). An automated heart rate-based algorithm for sleep stage classification: Validation using conventional polysomnography and an innovative wearable electrocardiogram device. _Frontiers in Neuroscience_, 16, 974192. <https://doi.org/10.3389/fnins.2022.974192>
     Zinzuwadia, A., & Singh, J. P. (2022). Wearable devices-addressing bias and inequity. _The Lancet Digital Health_, 4(12), e856–e857. <https://doi.org/10.1016/S2589-7500(22)00194-7>
   respondent_category: Child on Self
-  admin_notes: '- 8/20: Per Nicolo, I have removed mention of derivatives. I think the only thing missing is the list of GABI files in the file tree - if it''s difficult to provide list via this form due to formatting reasons, enter it anyway or email me with the info to add'
+  admin_notes: '8/20: Per Nicolo, I have removed mention of derivatives. I think the only thing missing is the list of GABI files in the file tree - if it''s difficult to provide list via this form due to formatting reasons, enter it anyway or email me with the info to add'
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/sensors/gabi/
   email: np2600@cumc.columbia.edu
   visits: V02, V03
@@ -939,9 +939,7 @@ gabi:
     Issues with the sensor data were generally rare, and most data were deemed present and accurately collected (when captured correctly). Errors that did arise were corrected, when possible, though this was typically not feasible. Common errors noted included inadequate or missing data (due to human error, technical issues, or a parent/legal guardian declining participation in this aspect of the study), sensors being removed for extended periods during the 72-hour collection, or unavailability of devices to conduct the data collection.
   administration: Remote
   scoring: null
-  changelog: |-
-    - NEW NOTES FOR NEXT CHANGE: {}
-    - 8/20: removed "and processed derivatives" from Description section as derivatives are not included in 3.0 - COMPLETE 8/20 (Luci)
+  changelog: '- 8/20: removed "and processed derivatives" from Description section as derivatives are not included in 3.0 - COMPLETE 8/20 (Luci)'
   resources: null
   supp1_text: null
   measure: GABI (Infant Heart Rate)
@@ -1643,8 +1641,8 @@ dynamic:
     Additional references for substance-use flags: TBD pending confirmation of variables and source measures.
   alert2_title: Interpretation of Contextual Measures
   respondent_category: null
-  admin_notes: |-
-    - The current draft page is an updated version of the Visit Info README with some changes made based on recent drafts for Dynamic table info
+  admin_notes: |2-
+
     - The subsection text cannot yet be edited via this form. I (Luci) will let you know when that is available and you can submit changes as needed then
     - I have set up a shared google sheet [here](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?usp=sharing) where you can update the table text (this sheet is autoparsed to populate the webpage) - remember people should look at the data dictionary for full info, so this table only needs to include summary info critical to understanding basics - SEE TAB NAMED "Dynamic"
     - Larger changes to the organization of the page are also ok, whatever the SMEs would like. Just consult with Luci since you likely can't make those changes via this form
@@ -1666,7 +1664,7 @@ dynamic:
     The Dynamic Table (TABLENAME) is a **derived measure** with information computed from  study instruments such as the Adult and Child Demographics (`sed_{bm|ch}_demo`). Dynamic data include critical participant- and visit-level data that, unlike the Static Table variables, may vary across study visits.
   slug: dynamic-table
   supp3_text: null
-  domain: Demographics
+  domain: Participant Derived
   release: '3.0'
   qc: |-
     - Data are visually inspected for unexpected values, distributions, missingness patterns, and other apparent anomalies.
@@ -3148,12 +3146,14 @@ employment:
   measure: Current Employment
   construct: Current Employment
 static:
+  Done (admin): Waiting on SME response
   supp2_text: |-
     ## Race & Ethnicity - ACS/Administrative Records
 
     Race and ethnicity variables are computed from [ACS](https://www.census.gov/programs-surveys/acs.html) race and ethnicity items derived from administrative records collected during screening. Combined race and ethnicity variables are constructed following current federal standards. Participants who identify as **Hispanic or Latino** are categorized as `Hispanic`, regardless of race. Participants who select more than one race are categorized as **Multiracial**, with aggregation performed by either **ethnicity** based on Hispanic identity (_Multiracial (Hispanic)_ or _Multiracial (non-Hispanic)_) or **race** based on Black/African American identity (_Multiracial (Black)_ or _Multiracial (non-Black)_).
   status: Work in progress
   alert1: When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables such as race, ethnicity, country of origin, and socioeconomic data, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.
+  Date: '2026-08-24'
   hbcd_mods1: null
   alert1_title: General Considerations
   duration: null
@@ -3164,7 +3164,7 @@ static:
   warning4: null
   alert2: Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race/ethnicity variables as a proxy for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.
   assessment_type: Derived Data
-  table_name: TBD
+  table_name: par_gd_sdc
   warning2: null
   references: |-
     All of Us Research Program. (2025, February 17). _Race and ethnicity data collection and transformation_. <https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-Ethnicity-Data-Collection-and-Transformation>
@@ -3172,7 +3172,11 @@ static:
     Reference for ADI [pending]
   alert2_title: Use of Race & Ethnicity Variables
   respondent_category: null
-  admin_notes: "NEW NOTES: \n\n- Scoring Procedures field can be NA for Demographics variables\n\nOTHER:\n\n- The current draft page is basically a copy of Basic Demographics with some updates based on recent drafts for Static table info\n- I have set up a shared google sheet where you can update the table text (this sheet is autoparsed to populate the webpage): [https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177)\n- contact Luci for changes you would like to make that are not possible via this form"
+  admin_notes: |-
+    - I have set up a [shared google sheet ](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177)where you can update the table text (this sheet is autoparsed to populate the webpage)
+    - contact Luci for changes you would like to make that are not possible via this form
+
+    8/24: page was updated as part of updates made to other instrument pages FYI!
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/static/
   email: nslopen@hsph.harvard.edu
   visits: V01, V04, V06
@@ -3197,7 +3201,7 @@ static:
     ## Race & Ethnicity - All of US
 
     A second set of race and ethnicity variables are computed from a single All of Us ([AOU](https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations)) race/ethnicity item collected as part of the [Demographics](https://docs.hbcdstudy.org/3.0/instruments/SED/demo-cg/) instrument. For AOU-derived variables, combined race and ethnicity variables are constructed following [OMB](https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards) standards: Participants who identify as Hispanic/Latino (alone or with another group) are categorized as _Hispanic or Latino_; all others are categorized as non-Hispanic (_Non-Hispanic {Asian|Black|White}_).
-  domain: Demographics
+  domain: Participant Derived
   release: '3.0'
   alert3_title: Use of Constructed Race and Ethnicity Variables
   qc: |-
@@ -3344,7 +3348,7 @@ nbtb:
 
     NIH Baby Toolbox. (n.d.). _Cognition assessments_ (Page 2 of 3). Retrieved August 21, 2026, from <https://nihbabytoolbox.org/domain/cognition/page/2/>
   respondent_category: Child on Self
-  admin_notes: '8/24: update to include all BTB (1 Language & 2 Cognitive/Executive Function/Memory) per SME request!'
+  admin_notes: '8/24: update to include all BTB (1 Language & 2 Cognitive/Executive Function/Memory) per SME request! please mark as done if complete'
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb/
   email: jkabl01@emory.edu
   visits: V03, V04, V06

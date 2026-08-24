@@ -2,6 +2,7 @@ import csv
 import html
 from pathlib import Path
 
+# mainly used for ERICA at the moment
 
 def define_env(env):
 

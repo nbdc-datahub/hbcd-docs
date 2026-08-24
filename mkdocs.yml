@@ -46,14 +46,13 @@ nav:
   - Study Instruments:
     - List of Instruments: instruments/index.md
     - Age Variables: instruments/agevariables.md
-    - Behavior, Biology, & Environment:
+    - Administrative & Derived:
         - Administrative:
             - Study Navigator Contact Form: instruments/admin/study-navigators.md
-            
-        - Demographics:
-            - Dynamic Table: instruments/demo/dynamic.md
+        - Participant Derived:
             - Static Table: instruments/demo/static.md
-
+            - Dynamic Table: instruments/demo/dynamic.md
+    - Behavior, Biology, & Environment:
         - Behavior & Caregiver-Child Interaction: 
             - CHAOS: instruments/bcgi/chaos.md
             - ecPROMIS Child-Caregiver Relationship: instruments/bcgi/ecpromis.md

@@ -24,7 +24,7 @@ This page lists all instruments included in the current release, organized by do
 </div>
 
 
-###### <i class="fa fa-clipboard-list header-icon"></i> Administrative &nbsp;/ &nbsp; <i class="fas fa-id-card header-icon"></i> Demographics
+###### <i class="fa fa-clipboard-list header-icon"></i> Administrative &nbsp;/ &nbsp; <i class="fas fa-id-card header-icon"></i> Participant Derived
 
 <table class="compact-table-no-vertical-lines" style="width: 100%;">
 <thead>
@@ -41,15 +41,15 @@ This page lists all instruments included in the current release, organized by do
 <td><i>concatenated/study_navigator/</i></td>
 </tr>
 <tr>
-  <td style="color: #6b7280;" rowspan="2"><b>DEMOGRAPHICS</b></td>
-  <td><a href="demo/basicdemo/">Basic Demographics</a></td>
-  <td>Derived Demographics</td>
-  <td><code>sed_basic_demographics</code></td>
+  <td><a href="demo/static/">Static Table</a></td>
+  <td>Static derived participant information</td>
+  <td><code>par_gd_sdc</code></td>
 </tr>
-  <tr>
-  <td><a href="demo/visitinfo/">Visit Level Data</a></td>
-  <td>Participant visit information</td>
-  <td><code>par_visit_data</code></td>
+<tr>
+  <td style="color: #6b7280;" rowspan="2"><b>PARTICIPANT DERIVED</b></td>
+  <td><a href="demo/dynamic/">Dynamic Table</a></td>
+  <td>Dynamic derived participant information</td>
+  <td><code>ADD</code></td>
 </tr>
 </tbody>
 </table>
