@@ -314,7 +314,7 @@ tic_quest:
   warning2: null
   references: 'Radel, L., & Bramlett, M. (2014). Children in nonparental care: Findings from the 2011-2012 National Survey of Children’s Health. ASPE, DHHS. <https://aspe.hhs.gov/reports/children-nonparental-care-findings-2011-2012-national-survey-childrens-health-0>'
   respondent_category: Parent on Child
-  admin_notes: None
+  admin_notes: null
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/tic_quest/
   email: japoehlmann@wisc.edu
   visits: V06, V08
@@ -437,6 +437,7 @@ dit:
   measure: 'Deferred Imitation Task: Gong and Berry-Go-Round'
   construct: Memory
 pedsql:
+  Done (admin): true
   supp2_text: null
   status: DONE! Complete/stable for release
   alert1: null
@@ -454,7 +455,7 @@ pedsql:
 
     Martínez-Shaw ML, Del Río FJ, Sánchez-Sandoval Y. Spanish validation of the Pediatric Quality of Life Inventory (PedsQL™ 4.0) for parent report for toddlers (ages 2-4). Health Qual Life Outcomes. 2023 May 18;21(1):48. doi: [10.1186/s12955-023-02128-8](https://doi.org/10.1186/s12955-023-02128-8?urlappend=%3Futm_source%3Dresearchgate.net%26utm_medium%3Darticle). PMID: 37202825; PMCID: PMC10197329.
   respondent_category: Parent on Child
-  admin_notes: Minor updates to clean up formatting
+  admin_notes: Minor updates to clean up formatting - marking as complete on my end!
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/pedsql/
   email: leigh-anne.cioffredi@uvm.edu
   visits: V07, V09
@@ -2532,7 +2533,7 @@ vep:
   construct: null
 nsc:
   supp2_text: null
-  status: README updated & ready for SME review
+  status: Work in progress
   alert1: 'Incarceration or arrest information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
   hbcd_mods1: null
   hbcd_mods2: null
@@ -2544,7 +2545,7 @@ nsc:
   warning2: null
   references: 'Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., ... & Wildeman, C. (2019). What percentage of Americans have ever had a family member incarcerated?: Evidence from the family history of incarceration survey (FamHIS). _Socius_, _5_, 2378023119829332. <https://doi.org/10.1177/237802311982>'
   respondent_category: Parent on Self
-  admin_notes: README autoupdated with some minor cleanup 8/24
+  admin_notes: README autoupdated with some minor cleanup 8/24 - please change the status to "Ready for README update" or "DONE! .." when final changes are complete!
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
   email: japoehlmann@wisc.edu
   visits: V07, V09
@@ -2563,15 +2564,9 @@ nsc:
   domain: Social & Environmental Determinants
   release: '3.0'
   qc: |-
-    **QC Procedures**:
-
-    ○      Monthly data consistency checks
-
-    ○      Handling of incomplete or missing responses by sites
-
-    **Common Issues Identified**:
-
-    ○      Missing data patterns
+    - Monthly data consistency checks
+    - Handling of incomplete or missing responses by sites
+    - Common issues identified include missing data patterns
   administration: Remote
   scoring: null
   resources: null
