@@ -2535,7 +2535,6 @@ nsc:
   status: README updated & ready for SME review
   alert1: 'Incarceration or arrest information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
   hbcd_mods1: null
-  duration: 5 minutes or null if not applicable
   hbcd_mods2: null
   full_name: Incarceration History Questionnaire (Experiences with the criminal justice system)
   warning4: null
@@ -2543,7 +2542,7 @@ nsc:
   assessment_type: Questionnaire
   table_name: sed_cg_incarc
   warning2: null
-  references: 'Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., ... & Wildeman, C. (2019). What percentage of Americans have ever had a family member incarcerated?: Evidence from the family history of incarceration survey (FamHIS). _Socius_, _5_, 2378023119829332. ++<https://doi.org/10.1177/237802311982>++'
+  references: 'Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., ... & Wildeman, C. (2019). What percentage of Americans have ever had a family member incarcerated?: Evidence from the family history of incarceration survey (FamHIS). _Socius_, _5_, 2378023119829332. <https://doi.org/10.1177/237802311982>'
   respondent_category: Parent on Self
   admin_notes: null
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
@@ -3342,7 +3341,7 @@ nbtb:
     NIH Baby Toolbox. (n.d.). _Cognition assessments_ (Page 2 of 3). Retrieved August 21, 2026, from <https://nihbabytoolbox.org/domain/cognition/page/2/>
   respondent_category: Child on Self
   admin_notes: includes (1) NIH_BTB Language & (2) NIH_BTB Cognitive/Executive Function/Memory
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb-cog/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb/
   email: jkabl01@emory.edu
   visits: V03, V04, V06
   hbcd_mods3: null
@@ -3506,23 +3505,6 @@ fmri:
   release: '2.1'
   administration: In-person
   measure: Functional MRI
-mullen:
-  status: Work in progress
-  full_name: NIH Baby Toolbox Mullen Receptive and Mullen Expressive + Observation
-  assessment_type: Cognitive testing
-  table_name: nc_ch_nbtb
-  respondent_category: Child on Self
-  admin_notes: None
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mullen/
-  primary_data_type: Tabulated data
-  acronym: NBTB
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recvLab7JAbTLkhbA
-  slug: nih-btb-language
-  domain: Neurocognition & Language
-  release: '3.0'
-  administration: In-person
-  measure: NIH_BTB Language
-  construct: Language
 erica:
   status: README updated & ready for SME review
   alert1: |-
