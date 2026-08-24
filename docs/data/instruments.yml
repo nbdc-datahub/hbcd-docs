@@ -300,9 +300,11 @@ motion:
   measure: Infant Leg Motion
   construct: Regulation (Sleep State Cycles) / Autonomic Function
 tic_quest:
+  Done (admin): Waiting on SME response
   supp2_text: null
   status: README updated & ready for SME review
   alert1: 'Transition in Care information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
+  Date: '2026-08-24'
   hbcd_mods1: null
   duration: 5 minutes or less
   hbcd_mods2: null
@@ -315,7 +317,7 @@ tic_quest:
   warning2: null
   references: 'Radel, L., & Bramlett, M. (2014). Children in nonparental care: Findings from the 2011-2012 National Survey of Children’s Health. ASPE, DHHS. <https://aspe.hhs.gov/reports/children-nonparental-care-findings-2011-2012-national-survey-childrens-health-0>'
   respondent_category: Parent on Child
-  admin_notes: null
+  admin_notes: 'Luci note 8/24: I changed the type from Interview to Questionnaire per SME''s note. I also moved the "common issues from QC" info as a data warning instead. looks complete to me now, but please make further updates as needed!'
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/tic_quest/
   email: japoehlmann@wisc.edu
   visits: V06, V08
@@ -414,6 +416,7 @@ prescan_q:
   measure: Pre-Scan Questionnaire
   construct: Infant Sleep Environment
 dit:
+  Done (admin): Not yet started
   status: Work in progress
   full_name: Deferred Imitation Task
   assessment_type: Cognitive testing
@@ -888,9 +891,11 @@ foodins:
   measure: 2-item Food Insecurity
   construct: Food Insecurity
 gabi:
+  Done (admin): Waiting on SME response
   supp2_text: null
   status: README updated & ready for SME review
   alert1: Users of HBCD infant heart rate wearable sensor data must follow the study's data use guidelines and the conditions of the Data Use Certificate (DUC). These standards are in place to protect participant privacy, ensure scientific rigor, and promote respectful, non-stigmatizing research practices. Users should review relevant data warnings before downloading or analyzing infant heart rate sensor variables. This includes checking the data dictionary and instrument documentation for indicators such as incomplete recordings, periods of sensor removal, or discrepancies with setup/return metadata.
+  Date: '2026-08-20'
   hbcd_mods1: null
   duration: 72 hours continuous wear
   hbcd_mods2: null
@@ -2198,6 +2203,7 @@ urine:
   measure: USDTL Urine Toxicology (Maternal)
   construct: Drug Panel, Toxins
 maps_easi:
+  Done (admin): Not yet started
   status: Work in progress
   full_name: Multidimensional Assessment Profile Temper Loss Scale-EASI (MAPS-EASI TL), Toddlerhood (Short Form)
   assessment_type: Questionnaire
@@ -2527,9 +2533,11 @@ vep:
   measure: VEP
   construct: null
 nsc:
+  Done (admin): Waiting on SME response
   supp2_text: null
   status: Work in progress
   alert1: 'Incarceration or arrest information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
+  Date: '2026-08-24'
   hbcd_mods1: null
   hbcd_mods2: null
   full_name: Incarceration History Questionnaire (Experiences with the criminal justice system)
@@ -2748,6 +2756,7 @@ visit_info:
   measure: Visit Level Information
   construct: null
 mchat:
+  Done (admin): Not yet started
   status: Work in progress
   full_name: Modified Checklist for Autism in Toddlers R/F
   assessment_type: Questionnaire
@@ -2899,6 +2908,7 @@ echo:
   measure: Early Child Care and Education
   construct: School
 illumina_r3:
+  Done (admin): Not yet started
   status: README updated & ready for SME review
   alert1: Data users are prohibited from using HBCD data, including genomic data, to identify participants or their relatives. You accessed these data under a Data Use Certification (DUC) agreement in which you and your institution agreed that you would not attempt to establish the individual identity of any study participants or their relatives. You also agreed to adhere to a minimum cell threshold of 10 in any public reporting of data (i.e., publications, posters, or other presentations). Protecting participants’ anonymity demonstrates respect for them and minimizes their research-related risks.
   hbcd_mods1: null
@@ -3302,11 +3312,13 @@ subst:
   measure: Substance Use Patterns in Pregnancy
   construct: Substance Use in Pregnancy
 nbtb:
+  Done (admin): Waiting on SME response
   supp2_text: null
   status: Work in progress
   alert1: Performance of the NIH Baby Toolbox reflects the child's developmental status, but various factors might influence the results of the assessment that should be taken into account.
+  Date: '2026-08-24'
   hbcd_mods1: null
-  duration: (V03 45-60 min; V04 15-20 min; V06-40-60 min)
+  duration: V03 45-60 min; V04 15-20 min; V06-40-60 min
   hbcd_mods2: null
   warning1_title: Changes in NIH Baby Toolbox Versions in HBCD
   full_name: NIH Baby Toolbox
@@ -3330,7 +3342,7 @@ nbtb:
 
     NIH Baby Toolbox. (n.d.). _Cognition assessments_ (Page 2 of 3). Retrieved August 21, 2026, from <https://nihbabytoolbox.org/domain/cognition/page/2/>
   respondent_category: Child on Self
-  admin_notes: includes (1) NIH_BTB Language & (2) NIH_BTB Cognitive/Executive Function/Memory
+  admin_notes: '8/24: update to include all BTB (1 Language & 2 Cognitive/Executive Function/Memory) per SME request!'
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb/
   email: jkabl01@emory.edu
   visits: V03, V04, V06
@@ -3343,7 +3355,7 @@ nbtb:
   alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rect6eIwToFbEGoVJ
   warning1: HBCD implemented the beta version of the NIH Baby Toolbox that was used for collecting the standardization sample. In December of 2025, HBCD transitioned to the final standardized version that was made available to the public. Some subtests in the original version were not retained in the standardized version.  These subtests will have raw performance metrics but will not have standardized scores.
-  description: The National Institute of Health (NIH) Infant and Toddler Toolbox (NBT) is a new nationally-normed assessment. HBCD administered modules to measure cognition, language, early mathematics/numeracy, and executive function in children between 1- and 42-months of age. Assessments include direct child assessment and observations supplemented as needed by reporting from parents or legal guardians. In addition, gaze-based measures were used to assess aspects of cognitive functioning in children under 24 months of age and touch screen measures were used for children who were 24 months or older.  The NIH Baby Toolbox Cognition Domain provides individual performance measures or scores and composite scores. Additional supplemental tests were also used that do not contribute to the composites but can be used to better understand the child's cognitive skills.  Please see the NBT instructional manual for details. These are available from [NIH Baby Toolbox® Manuals & Test Materials](https://resources.nihtoolbox.org/manuals-and-test-materials/nih-baby-toolbox-documentation/).
+  description: "The National Institute of Health (NIH) Infant and Toddler Toolbox (NBT) is a new nationally-normed assessment. HBCD administered modules to measure cognition, language, early mathematics/numeracy, and executive function in children between 1- and 42-months of age. Assessments include direct child assessment and observations supplemented as needed by reporting from parents or legal guardians. In addition, gaze-based measures were used to assess aspects of cognitive functioning in children under 24 months of age and touch screen measures were used for children who were 24 months or older.  The NIH Baby Toolbox Cognition Domain provides individual performance measures or scores and composite scores. \n\nAdditional supplemental tests were also used that do not contribute to the composites but can be used to better understand the child's cognitive skills.  Please see the NBT instructional manual for details. These are available from [NIH Baby Toolbox® Manuals & Test Materials](https://resources.nihtoolbox.org/manuals-and-test-materials/nih-baby-toolbox-documentation/)."
   slug: nih-btb
   supp3_text: null
   domain: Neurocognition & Language
