@@ -41,12 +41,12 @@ This page lists all instruments included in the current release, organized by do
 <td><i>concatenated/study_navigator/</i></td>
 </tr>
 <tr>
+  <td style="color: #6b7280;" rowspan="2"><b>PARTICIPANT DERIVED</b></td>
   <td><a href="demo/static/">Static Table</a></td>
   <td>Static derived participant information</td>
   <td><code>par_gd_sdc</code></td>
 </tr>
 <tr>
-  <td style="color: #6b7280;" rowspan="2"><b>PARTICIPANT DERIVED</b></td>
   <td><a href="demo/dynamic/">Dynamic Table</a></td>
   <td>Dynamic derived participant information</td>
   <td><code>ADD</code></td>
