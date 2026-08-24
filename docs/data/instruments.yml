@@ -1620,7 +1620,7 @@ dynamic:
   alert1: When using HBCD data, all data users must follow responsible use requirements described in the Data Use Certification (DUC). When conceptualizing studies, analyzing data, and communicating findings using demographic, socioeconomic, household, caregiver, neighborhood, or other social and environmental characteristics, researchers should consider approaches that avoid stigmatizing individuals or groups and perpetuating harmful biases.
   hbcd_mods1: null
   alert1_title: ' Responsible Use of Demographic and Social Variables'
-  duration: 'null'
+  duration: null
   hbcd_mods2: null
   warning1_title: Variables Are Not Available at Every Visit
   full_name: Dynamic Table
