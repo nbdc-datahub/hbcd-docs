@@ -1645,6 +1645,7 @@ dynamic:
   admin_notes: |-
     FROM LUCI:
 
+    - README was updated 8/24 due to autoparsing of others sections and I also updated some of the info here (I see that the domain is now Participant Derived)
     - I have set up a shared google sheet [here](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?usp=sharing) where you can update the table text (this sheet is autoparsed to populate the webpage) - remember people should look at the data dictionary for full info, so this table only needs to include summary info critical to understanding basics - SEE TAB NAMED "Dynamic"
     - Larger changes to the organization of the page are also ok, whatever the SMEs would like. Just consult with Luci since you likely can't make those changes via this form
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/dynamic/
@@ -1659,10 +1660,7 @@ dynamic:
   alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recSACxqruv4qvXiH
   warning1: The Dynamic Table contains one row per HBCD child per scheduled visit/session through V06, but not all variables are collected or applicable at every visit. A missing value may therefore indicate that a measure was not administered or applicable at that visit, that the scheduled visit was missed, or that the requested information was otherwise unavailable. Researchers should consider each variable's source and expected collection timing when interpreting longitudinal missingness.
-  description: |-
-    Datasets within the Demographics domain are intended to provide HBCD investigators with a concise set of commonly used variables without requiring users to navigate multiple source files.
-
-    The Dynamic Table is a **derived measure** with information computed from  study instruments such as the Adult and Child Demographics (`sed_{bm|ch}_demo`). Dynamic data include critical participant- and visit-level data that, unlike the Static Table variables, may vary across study visits.
+  description: Datasets within the Demographics domain are intended to provide HBCD investigators with a concise set of commonly used variables without requiring users to navigate multiple source files. The Dynamic Table is a **derived measure** with information computed from  study instruments such as the Adult and Child Demographics (`sed_{bm|ch}_demo`). Dynamic data include critical participant- and visit-level data that, unlike the Static Table variables, may vary across study visits.
   slug: dynamic-table
   supp3_text: null
   domain: Participant Derived

@@ -19,106 +19,14 @@
 
 {{ instrument_description(instruments.dynamic) }}
 
-<table class="compact-table-no-vertical-lines static-dynamic-tables">
-<thead>
-<tr>
-  <th>Construct</th>
-  <th>Variable Name</th>
-  <th>Visit</th>
-  <th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Caregiver education</td>
-  <td>rc_cg_education</td> 
-  <td>V01, V04+</td>
-  <td>Highest level of school completed from Demographics (Adult)</td>
-</tr>
-<tr>
-  <td>Household income</td>
-  <td>rc_cg_income</td> 
-  <td>V01, V04+</td>
-  <td>Primary caregiver’s household income from Demographics (Adult)</td>
-</tr>
-<tr>
-  <td>Transitions in Care</td>
-  <td>TBD</td> 
-  <td></td>
-  <td>Flag for transitions in care</td>
-</tr>
-<tr>
-  <td>Caregiver type</td>
-  <td>TBD</td> 
-  <td>V02+</td>
-  <td>Caregiver type at each wave, derived from administrative records</td>
-</tr>
-<tr>
-  <td>Cohort</td>
-  <td>data_cohort</td> 
-  <td>V02+</td>
-  <td>Cohort subtype, derived from administrative records</td>
-</tr>
-<tr>
-  <td>Site</td>
-  <td>site</td> 
-  <td>V01+</td>
-  <td>Location (site) at visit</td>
-</tr>
-<tr>
-  <td>Missed Visit</td>
-  <td>TBD</td> 
-  <td>V02+</td>
-  <td>Missed study visit</td>
-</tr>
-<tr>
-  <td>Gestational Age at Visit</td>
-  <td>TBD</td> 
-  <td>V01+</td>
-  <td>TBD</td>
-</tr>
-<tr>
-  <td>Total Household 1 Roster- Adult</td>
-  <td>TBD</td> 
-  <td>V01</td>
-  <td>Total number of people (adults+children) in Household 1, from Demographics (Adult)</a></td>
-</tr>
-<tr>
-  <td>Total Household 1 Roster- Child</td>
-  <td>TBD</td> 
-  <td>V04+</td>
-  <td>Total number of people (adults+children) in Household 1, from Demographics (Child)</td>
-</tr>
-<tr>
-  <td>Caregiver marital/partner status</td>
-  <td>TBD</td> 
-  <td>V01, V04+</td>
-  <td>Caregiver marital/partner status, from Demographics (Adult)</td>
-</tr>
-<tr>
-  <td>Urban Rural Classification</td>
-  <td>urban_urbanclassification</td> 
-  <td></td>
-  <td></td>
-</tr>
-<tr>
-  <td>Social Vulnerability Index</td>
-  <td>svi_theme4_prcntile</td> 
-  <td></td>
-  <td>SVI– Housing Type/Transportation national percentiles 1 to 100</td>
-</tr>
-<tr>
-  <td>Substance use flags</td>
-  <td>su_flag_*</td> 
-  <td></td>
-  <td>SU flags derived from multiple instruments- see details below</td>
-</tr>
-</tbody>
-</table>
-
+{{ csv_table(
+    "demo/dynamic1.csv",
+    table_class="compact-table-no-vertical-lines static-dynamic-tables"
+) }}
 
 {{ suppx(instruments.dynamic, "1") }}
 
+<!-- Table sourced from google sheets -->
 
 <table class="table-no-vertical-lines">
 <thead>
@@ -312,3 +220,102 @@ Postnatal Recruits are enrolled in the study after the child is born and complet
 ##### Multiple Birth Participants
 
 Multiple Birth cohorts include siblings/twins enrolled as <b>Main Child</b> and <b>Sibling</b> participants. Instruments or instrument fields that are specific to the caregiver and not child will be identical across siblings. For twins and triplets, age variables will also be identical (including those derived from jittered date of birth). See the supplemental [Multibirth participant list](https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv), including mapping between sibling participant IDs, is available available to DUC-authorized users via the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download). -->
+
+
+
+<!-- <table class="compact-table-no-vertical-lines static-dynamic-tables">
+<thead>
+<tr>
+  <th>Construct</th>
+  <th>Variable Name</th>
+  <th>Visit</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Caregiver education</td>
+  <td>rc_cg_education</td> 
+  <td>V01, V04+</td>
+  <td>Highest level of school completed from Demographics (Adult)</td>
+</tr>
+<tr>
+  <td>Household income</td>
+  <td>rc_cg_income</td> 
+  <td>V01, V04+</td>
+  <td>Primary caregiver’s household income from Demographics (Adult)</td>
+</tr>
+<tr>
+  <td>Transitions in Care</td>
+  <td>TBD</td> 
+  <td></td>
+  <td>Flag for transitions in care</td>
+</tr>
+<tr>
+  <td>Caregiver type</td>
+  <td>TBD</td> 
+  <td>V02+</td>
+  <td>Caregiver type at each wave, derived from administrative records</td>
+</tr>
+<tr>
+  <td>Cohort</td>
+  <td>data_cohort</td> 
+  <td>V02+</td>
+  <td>Cohort subtype, derived from administrative records</td>
+</tr>
+<tr>
+  <td>Site</td>
+  <td>site</td> 
+  <td>V01+</td>
+  <td>Location (site) at visit</td>
+</tr>
+<tr>
+  <td>Missed Visit</td>
+  <td>TBD</td> 
+  <td>V02+</td>
+  <td>Missed study visit</td>
+</tr>
+<tr>
+  <td>Gestational Age at Visit</td>
+  <td>TBD</td> 
+  <td>V01+</td>
+  <td>TBD</td>
+</tr>
+<tr>
+  <td>Total Household 1 Roster- Adult</td>
+  <td>TBD</td> 
+  <td>V01</td>
+  <td>Total number of people (adults+children) in Household 1, from Demographics (Adult)</a></td>
+</tr>
+<tr>
+  <td>Total Household 1 Roster- Child</td>
+  <td>TBD</td> 
+  <td>V04+</td>
+  <td>Total number of people (adults+children) in Household 1, from Demographics (Child)</td>
+</tr>
+<tr>
+  <td>Caregiver marital/partner status</td>
+  <td>TBD</td> 
+  <td>V01, V04+</td>
+  <td>Caregiver marital/partner status, from Demographics (Adult)</td>
+</tr>
+<tr>
+  <td>Urban Rural Classification</td>
+  <td>urban_urbanclassification</td> 
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Social Vulnerability Index</td>
+  <td>svi_theme4_prcntile</td> 
+  <td></td>
+  <td>SVI– Housing Type/Transportation national percentiles 1 to 100</td>
+</tr>
+<tr>
+  <td>Substance use flags</td>
+  <td>su_flag_*</td> 
+  <td></td>
+  <td>SU flags derived from multiple instruments- see details below</td>
+</tr>
+</tbody>
+</table> -->

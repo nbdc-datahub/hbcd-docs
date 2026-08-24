@@ -9,17 +9,24 @@ TABLES = [
     {
         "gid": "0",
         "range": None,
-        "output": "docs/resources/tables/example.csv",
+        "output": "../docs/resources/tables/demo/static1-sex-age-other.csv"
     },
-
-    # Additional examples:
-    # {
-    #     "gid": "123456789",
-    #     "range": "A1:F20",
-    #     "output": "docs/resources/tables/another_table.csv",
-    # },
+    {
+        "gid": "361477160",
+        "range": None,
+        "output": "../docs/resources/tables/demo/static2-ACS-race-ethnicity.csv",
+    },
+    {
+        "gid": "1954407438",
+        "range": None,
+        "output": "../docs/resources/tables/demo/static3-AOU-race-ethnicity.csv",
+    },
+    {
+        "gid": "973349704",
+        "range": None,
+        "output": "../docs/resources/tables/demo/dynamic1.csv",
+    }
 ]
-
 
 def download_table(gid, output, cell_range=None):
     params = {

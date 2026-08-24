@@ -22,10 +22,53 @@
 <!-- ## Age, Sex, & Other Variables  -->
 {{ suppx(instruments.static, "1") }}
 
+<!-- Table sourced from google sheets -->
+{{ csv_table(
+    "demo/static1-sex-age-other.csv",
+    table_class="compact-table-no-vertical-lines static-dynamic-tables"
+) }}
 
-<!-- HARD-CODED TABLE -->
+---
 
-<table class="compact-table-no-vertical-lines static-dynamic-tables">
+<!-- ## Race & Ethnicity - ACS/Administrative Records -->
+{{ suppx(instruments.static, "2") }}
+
+<!-- Table sourced from google sheets -->
+{{ csv_table(
+    "demo/static2-ACS-race-ethnicity.csv",
+    table_class="compact-table-no-vertical-lines static-dynamic-tables"
+) }}
+
+---
+
+<!-- ## Race & Ethnicity - All of US -->
+{{ suppx(instruments.static, "3") }}
+
+<!-- Table sourced from google sheets -->
+{{ csv_table(
+    "demo/static3-AOU-race-ethnicity.csv",
+    table_class="compact-table-no-vertical-lines static-dynamic-tables"
+) }}
+
+---
+
+{{ references(instruments.static) }}
+
+
+
+
+
+<!-- Unless stated otherwise in the description, the following variables such as sex and age are computed from administrative records collected during screening. Variables such as education and income are derived from the [Demographics](../../instruments/SED/demo-cg.md) instrument (Adult Form), noted in the description. -->
+
+
+<!-- Race and ethnicity variables are computed from [ACS](https://www.census.gov/programs-surveys/acs.html) race and ethnicity items derived from administrative records collected during screening. Combined race and ethnicity variables are constructed following current federal standards. Participants who identify as **Hispanic or Latino** are categorized as `Hispanic`, regardless of race. Participants who select more than one race are categorized as **Multiracial**, with aggregation performed by either **ethnicity** based on Hispanic identity (*Multiracial (Hispanic)* or *Multiracial (non-Hispanic)*) or **race** based on Black/African American identity (*Multiracial (Black)* or *Multiracial (non-Black)*). -->
+
+
+<!-- A second set of race and ethnicity variables are computed from a single All of Us (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations">AOU</a>) race/ethnicity item collected as part of the <a href="../../../instruments/SED/demo-cg/">Demographics</a> instrument. For AOU-derived variables, combined race and ethnicity variables are constructed following [OMB](https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards) standards: Participants who identify as Hispanic/Latino (alone or with another group) are categorized as *Hispanic or Latino*; all others are categorized as non-Hispanic (*Non-Hispanic {Asian|Black|White}*). -->
+
+
+
+<!-- <table class="compact-table-no-vertical-lines static-dynamic-tables">
 <thead>
 <tr>
   <th>Construct</th>
@@ -93,13 +136,9 @@ Birth parent's age in years (2 decimal places) at time of child's delivery<br>
   <td>Household income derived from the Demographics Form</td>
 </tr>
 </tbody>
-</table>
+</table> -->
 
----
-
-<!-- ## Race & Ethnicity - ACS/Administrative Records -->
-{{ suppx(instruments.static, "2") }}
-
+<!-- 
 <table class="compact-table-no-vertical-lines static-dynamic-tables">
 <thead>
 <tr>
@@ -159,14 +198,11 @@ Birth parent's age in years (2 decimal places) at time of child's delivery<br>
 <td>Maternal combined race and ethnicity constructed from ACS items, with multiracial aggregation by Black/non-Black distinction</td>
 </tr>
 </tbody>
-</table>
+</table> -->
 
----
 
-<!-- ## Race & Ethnicity - All of US -->
-{{ suppx(instruments.static, "3") }}
 
-<table class="compact-table-no-vertical-lines static-dynamic-tables">
+<!-- <table class="compact-table-no-vertical-lines static-dynamic-tables">
 <thead>
 <tr>
   <th>Construct</th>
@@ -208,19 +244,4 @@ Birth parent's age in years (2 decimal places) at time of child's delivery<br>
 </tbody>
 </table>
 </tbody>
-</table>
-
-
-{{ references(instruments.static) }}
-
-
-
-
-
-<!-- Unless stated otherwise in the description, the following variables such as sex and age are computed from administrative records collected during screening. Variables such as education and income are derived from the [Demographics](../../instruments/SED/demo-cg.md) instrument (Adult Form), noted in the description. -->
-
-
-<!-- Race and ethnicity variables are computed from [ACS](https://www.census.gov/programs-surveys/acs.html) race and ethnicity items derived from administrative records collected during screening. Combined race and ethnicity variables are constructed following current federal standards. Participants who identify as **Hispanic or Latino** are categorized as `Hispanic`, regardless of race. Participants who select more than one race are categorized as **Multiracial**, with aggregation performed by either **ethnicity** based on Hispanic identity (*Multiracial (Hispanic)* or *Multiracial (non-Hispanic)*) or **race** based on Black/African American identity (*Multiracial (Black)* or *Multiracial (non-Black)*). -->
-
-
-<!-- A second set of race and ethnicity variables are computed from a single All of Us (<a href="https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations">AOU</a>) race/ethnicity item collected as part of the <a href="../../../instruments/SED/demo-cg/">Demographics</a> instrument. For AOU-derived variables, combined race and ethnicity variables are constructed following [OMB](https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards) standards: Participants who identify as Hispanic/Latino (alone or with another group) are categorized as *Hispanic or Latino*; all others are categorized as non-Hispanic (*Non-Hispanic {Asian|Black|White}*). -->
+</table> -->

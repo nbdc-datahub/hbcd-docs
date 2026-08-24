@@ -1,0 +1,12 @@
+"Construct","Variable","Visit","Description"
+"Maternal age at V01","mother_age_v01","V01","Birth parent's age in years (2 decimal places) at V01 visit
+Formula: Number of whole months (rounded down) divided by 12"
+"Maternal age at delivery","mother_age_delivery","V02","Birth parent's age in years (2 decimal places) at time of child's delivery
+Formula: Number of whole months (rounded down) divided by 12"
+"Gestational age at delivery","gestational_age_delivery","V02","Age of child at delivery
+Formula: Whole weeks (rounded down) between LMP and child's DOB"
+"Child sex","sex","V02","Derived from administrative records"
+"Recruitment site","recruitment_site","V01","Site ID derived from administrative records"
+"Area Deprivation Index","adi_national_prcnt","","Geocoded in national percentile in ADI 1% – 100%"
+"Birth mother education","rc_mother_education","V01","Highest level of school completed derived from the Demographics Form"
+"Household income","rc_mother_income","V01","Household income derived from the Demographics Form"

@@ -2,7 +2,18 @@ import csv
 import html
 from pathlib import Path
 
-# mainly used for ERICA at the moment
+# Mainly used for ERICA and Static/Dynamic tables.
+
+def format_cell(cell):
+    """Escape HTML and preserve line breaks within CSV cells."""
+    escaped = html.escape(cell)
+
+    return (
+        escaped
+        .replace("\r\n", "\n")
+        .replace("\r", "\n")
+        .replace("\n", "<br>")
+    )
 
 def define_env(env):
 
@@ -33,8 +44,9 @@ def define_env(env):
         data_rows = rows[1:]
         num_columns = len(headers)
 
-        # Optional spanning title row
+        # Optional spanning title row.
         title_row = ""
+
         if title:
             title_row = f"""
 <tr>
@@ -44,28 +56,38 @@ def define_env(env):
 </tr>
 """
 
-        # Regular column headers
+        # Regular column headers.
         headings = "".join(
             f"<th>{html.escape(header)}</th>"
             for header in headers
         )
 
-        # Optional row colors:
+        # Table body with optional row colors.
         body_rows = []
 
-        for i, row in enumerate(data_rows):
+        for row_index, row in enumerate(data_rows):
             style = ""
 
             if row_colors:
                 for color, indices in row_colors.items():
-                    if i in indices:
-                        style = f' style="background-color: {html.escape(color)};"'
+                    if row_index in indices:
+                        safe_color = html.escape(
+                            str(color),
+                            quote=True,
+                        )
+                        style = (
+                            f' style="background-color: {safe_color};"'
+                        )
                         break
 
+            # cells = "".join(
+            #     f"<td>{html.escape(cell)}</td>"
+            #     for cell in row
+            # )
             cells = "".join(
-                f"<td>{html.escape(cell)}</td>"
+                f"<td>{format_cell(cell)}</td>"
                 for cell in row
-            )
+)
 
             body_rows.append(
                 f"<tr{style}>{cells}</tr>"
@@ -73,8 +95,9 @@ def define_env(env):
 
         body = "\n".join(body_rows)
 
-        # Optional spanning footer/note
+        # Optional spanning footer/note.
         note_row = ""
+
         if note:
             note_row = f"""
 <tr>
@@ -84,8 +107,13 @@ def define_env(env):
 </tr>
 """
 
+        safe_table_class = html.escape(
+            table_class,
+            quote=True,
+        )
+
         return f"""
-<table class="{html.escape(table_class)}">
+<table class="{safe_table_class}">
 <thead>
 {title_row}
 <tr>{headings}</tr>
