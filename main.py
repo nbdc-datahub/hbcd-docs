@@ -13,7 +13,6 @@ def define_env(env):
     # Global paths
     data_path = os.path.join(
         env.project_dir,
-        "docs",
         "data",
         "instruments.yml",
     )

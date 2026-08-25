@@ -2,6 +2,9 @@
 
 {{ alert_warning(instruments.smri) }}
 {{ data_warning(instruments.smri) }}
+{{ issues_banner() }}
+
+---
 
 <!-- ##### Overview & Acquisition -->
 

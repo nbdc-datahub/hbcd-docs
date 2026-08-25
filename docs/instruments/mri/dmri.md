@@ -2,11 +2,14 @@
 
 {{ alert_warning(instruments.dmri) }}
 {{ data_warning(instruments.dmri) }}
+{{ issues_banner() }}
+
+---
 
 <!-- ##### Overview & Acquisition -->
 {{ instrument_description(instruments.dmri) }}
 
-{{ csv_table("diffusion_pulse_sequence_timing.csv") }}
+{{ csv_table("mri/diffusion_pulse_sequence_timing.csv") }}
 
 ## Processing 
 

@@ -1,13 +1,14 @@
 Docs website for HEALthy Brain and Child Development (HBCD) Study Data Release documentation: [https://docs.hbcdstudy.org](https://docs.hbcdstudy.org).
 
 
-## Current workflow for parsing tables from google sheets 
+## Current workflow for parsing tables from google sheets and airtable
 
-### Static & Dynamic Tables
+`python3 autoparse-all.py`
 
-Pulling the info occurs manually via:
+this script:
 
-`cd scripts`
-`python3 sync_demo_tables.py`
+- pulls all info for static and dynamic tables from google sheets
+- pulls all Airtable instrument info
 
-The page is then updated automatically via macros
+
+The relevant pages are then updated automatically via macros

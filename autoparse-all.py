@@ -1,5 +1,97 @@
-import csv
-import json
+from pathlib import Path
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
+
+'''
+This script does 2 things to pull data locally, which iss then automatically autoparsed via macros, requiring no further action:
+
+1. Autoparses google sheets for Static/Dynamic tables
+2. Autoparses all instrument info from Airtable
+
+'''
+
+SPREADSHEET_ID = "1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA"
+
+OUT_DIR="data/tables/demo"
+
+TABLES = [
+    {
+        "gid": "0",
+        "range": None,
+        "output": f"{OUT_DIR}/static1-sex-age-other.csv"
+    },
+    {
+        "gid": "361477160",
+        "range": None,
+        "output": f"{OUT_DIR}/static2-ACS-race-ethnicity.csv",
+    },
+    {
+        "gid": "1954407438",
+        "range": None,
+        "output": f"{OUT_DIR}/static3-AOU-race-ethnicity.csv",
+    },
+    {
+        "gid": "973349704",
+        "range": None,
+        "output": f"{OUT_DIR}/dynamic1.csv",
+    }
+]
+
+def download_table(gid, output, cell_range=None):
+    params = {
+        "tqx": "out:csv",
+        "gid": str(gid),
+    }
+
+    if cell_range:
+        params["range"] = cell_range
+
+    url = (
+        f"https://docs.google.com/spreadsheets/d/"
+        f"{SPREADSHEET_ID}/gviz/tq?{urlencode(params)}"
+    )
+
+    request = Request(
+        url,
+        headers={"User-Agent": "Mozilla/5.0"},
+    )
+
+    output_path = Path(output)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    print(
+        f"Downloading gid={gid}"
+        f"{f', range={cell_range}' if cell_range else ''}"
+        f" → {output_path}"
+    )
+
+    with urlopen(request, timeout=30) as response:
+        csv_data = response.read()
+
+    # Write only after a successful download.
+    temporary_path = output_path.with_suffix(".csv.tmp")
+    temporary_path.write_bytes(csv_data)
+    temporary_path.replace(output_path)
+
+
+def main():
+    for table in TABLES:
+        download_table(
+            gid=table["gid"],
+            cell_range=table.get("range"),
+            output=table["output"],
+        )
+
+
+if __name__ == "__main__":
+    main()
+
+
+'''
+2 - AUTOPARSE INSTRUMENT INFO FROM AIRTABLE
+
+'''
+
 import os
 import re
 from pathlib import Path
@@ -16,15 +108,12 @@ AIRTABLE_TOKEN = os.environ["AIRTABLE_TOKEN"]
 AIRTABLE_BASE_ID = os.environ["AIRTABLE_BASE_ID"]
 AIRTABLE_TABLE_ID = os.environ["AIRTABLE_TABLE_ID"]
 
-OUTPUT_FILE = Path("docs/data/instruments.yml")
-CSV_OUTPUT_FILE = Path("docs/data/instruments.csv")
+OUTPUT_FILE = Path("data/instruments.yml")
 
-# Set this to an Airtable view name or ID to limit exported records
-# (e.g. AIRTABLE_VIEW = "Website Export")
+# Set this to an Airtable view name or ID to limit exported records (e.g. AIRTABLE_VIEW = "Website Export")
 AIRTABLE_VIEW: Optional[str] = None
 
-# Airtable field used as the key in the generated YAML.
-# TO DO: eventually change this to "slug"
+# Airtable field used as the key in the generated YAML. TO DO: eventually change this to "slug"
 KEY_FIELD = "id"
 
 class LiteralString(str):
@@ -50,7 +139,7 @@ LiteralDumper.add_representer(
     represent_literal_string,
 )
 
-# Removes backslashes used to escape Markdown punctuation (e.g. Fig1\_nails.png  -> Fig1_nails.png - note that this will not remove ALL backslashes)
+# Removes backslashes used to escape Markdown punctuation (e.g. Fig1\_nails.png  -> Fig1_nails.png)
 MARKDOWN_ESCAPE_PATTERN = re.compile(
     r"\\([\\`*_{}\[\]()<>#+.!|>\-~])"
 )
@@ -95,7 +184,6 @@ def fetch_airtable_records() -> List[Dict[str, Any]]:
 
     return records
 
-
 def unescape_markdown(value: str) -> str:
     """
     Remove Markdown escape characters including URLs, markdown links/images, regular markdown text (e.g. Fig1\\_nails.png -> Fig1_nails.png)
@@ -118,10 +206,8 @@ def clean_html_attribute_escapes(value: str) -> str:
     """
     Remove unnecessary escape backslashes inside raw HTML tags. Normally the general Markdown cleaup will handle this, but this is an additional pass to catch backslashes before URL-safe punctuation that may appear in src, href, id, class, other HTML attributes
     """
-
     def clean_tag(match: re.Match) -> str:
         tag = match.group(0)
-        # Remove a backslash preceding characters commonly found in URLs, filenames, fragments, and HTML attributes.
         tag = re.sub(
             r"\\([A-Za-z0-9_./:?&=#%+\-])",
             r"\1",
@@ -178,13 +264,10 @@ def prepare_value(
             value,
             field_name=field_name,
         )
-
         # Airtable rich-text fields commonly end with a newline.
         value = value.rstrip()
-
         if value in {"", "NA"}:
             return None
-
         if "\n" in value:
             return LiteralString(value)
 
@@ -209,7 +292,6 @@ def prepare_value(
         }
 
     return value
-
 
 def build_instruments(
     records: List[Dict[str, Any]],
@@ -271,87 +353,10 @@ def write_yaml(
         f"to {OUTPUT_FILE}"
     )
 
-
-def prepare_csv_value(value: Any) -> Any:
-    """
-    Convert a processed value into a CSV-compatible value.
-
-    Lists and dictionaries are serialized as JSON strings. Null values are
-    written as blank cells.
-    """
-
-    if value is None:
-        return ""
-
-    if isinstance(value, (list, dict)):
-        return json.dumps(
-            value,
-            ensure_ascii=False,
-        )
-
-    return str(value)
-
-
-def write_csv(
-    instruments: Dict[str, Dict[str, Any]],
-) -> None:
-    """Write the processed instrument records to the CSV output file."""
-
-    CSV_OUTPUT_FILE.parent.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    # Collect every field name while preserving its first-seen order.
-    field_names: List[str] = []
-
-    for instrument in instruments.values():
-        for field_name in instrument:
-            if field_name not in field_names:
-                field_names.append(field_name)
-
-    csv_columns = [KEY_FIELD] + field_names
-
-    with CSV_OUTPUT_FILE.open(
-        "w",
-        encoding="utf-8",
-        newline="",
-    ) as file:
-        writer = csv.DictWriter(
-            file,
-            fieldnames=csv_columns,
-        )
-
-        writer.writeheader()
-
-        for key, instrument in instruments.items():
-            row = {
-                KEY_FIELD: key,
-                **{
-                    field_name: prepare_csv_value(
-                        instrument.get(field_name)
-                    )
-                    for field_name in field_names
-                },
-            }
-
-            writer.writerow(row)
-
-    print(
-        f"Wrote {len(instruments)} instruments "
-        f"to {CSV_OUTPUT_FILE}"
-    )
-
-
 def main() -> None:
-    """Fetch Airtable records and write the YAML and CSV files."""
-
     records = fetch_airtable_records()
     instruments = build_instruments(records)
-
     write_yaml(instruments)
-    write_csv(instruments)
-
 
 if __name__ == "__main__":
     main()

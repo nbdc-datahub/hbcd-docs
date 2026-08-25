@@ -2,6 +2,9 @@
 
 {{ alert_warning(instruments.qmri) }}
 {{ data_warning(instruments.qmri) }}
+{{ issues_banner() }}
+
+---
 
 ## Overview
 

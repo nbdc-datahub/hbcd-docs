@@ -1,0 +1,12 @@
+"Construct","Variable","Visit","Description"
+"Mother race indicators (0–7)","rc_mother_race___{0–7}","V01","AOU item race indicators:
+0=American Indian or Alaska Native
+1=Asian
+2=Black, African American, or African
+3=Hispanic, Latino, or Spanish
+4=Middle Eastern or North African
+5=Native Hawaiian or Other Pacific Islander
+6=White\n
+7=None of these fully describe me"
+"Mother race/ethnicity","rc_mother_ethnoracial_aou_race_ethnicity","V01","Aggregated maternal race/ethnicity constructed from AOU item. Participants are classified as either Hispanic or Non-Hispanic ({Asian|Black|White})."
+"Child race indicators (0–7)","rc_child_race___{0–7}","V04","AOU item race indicators (values mirror Mother race indicators)"

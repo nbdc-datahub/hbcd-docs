@@ -7,7 +7,7 @@ import re
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
-XLSX= "docs/data/latest-knownissues.xlsx"
+XLSX= "data/latest-knownissues.xlsx"
 HBCD_DOCS_MD = "docs/changelog/issues-updates.md"
 
 # FUNCTIONS

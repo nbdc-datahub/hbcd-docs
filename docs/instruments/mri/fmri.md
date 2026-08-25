@@ -3,8 +3,9 @@
 
 {{ alert_warning(instruments.fmri) }}
 {{ data_warning(instruments.fmri) }}
+{{ issues_banner() }}
 
-<p></p>
+---
 
 <!-- ##### Overview & Acquisition -->
 {{ instrument_description(instruments.fmri) }}

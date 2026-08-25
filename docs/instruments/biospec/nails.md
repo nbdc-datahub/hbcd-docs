@@ -24,7 +24,7 @@
 </div>
 <div class="collapsible-content">
 <p>The detection window for all analytes is 3-6 and 10-14 months for finger and toe nails, respectively, with the exception of Ethyl glucuronide (finger nails: 3; toe nails: no consensus). "Cutoff" is the threshold to classify results as positive or negative for an analyte.</p>
-{{ csv_table("nails-table1-assay-thresholds.csv") }}
+{{ csv_table("bio/nails-table1-assay-thresholds.csv") }}
 </div>
 
 

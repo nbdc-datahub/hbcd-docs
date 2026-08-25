@@ -3,6 +3,7 @@ import html
 from pathlib import Path
 
 # Mainly used for ERICA and Static/Dynamic tables.
+# outputs to data/tables
 
 def format_cell(cell):
     """Escape HTML and preserve line breaks within CSV cells."""
@@ -29,7 +30,7 @@ def define_env(env):
 
         csv_path = (
             Path(env.project_dir)
-            / "docs/resources/tables"
+            / "data/"
             / csv_file
         )
 

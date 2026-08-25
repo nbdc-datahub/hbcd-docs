@@ -20,7 +20,7 @@
 
 <!-- HARD-CODED TABLE -->
 {{ csv_table(
-    "ERICA-inter-rater-reliability-2.1.csv",
+    "bcgi/ERICA-inter-rater-reliability-2.1.csv",
     title="ERICA Inter-rater Reliability for HBCD Data Release 2.1 (n=171)",
     row_colors={
         "#e8f5fb": range(0, 3),

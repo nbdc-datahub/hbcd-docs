@@ -27,7 +27,7 @@
 <i class="fa-solid fa-link"></i></a></span><span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-{{ csv_table("urine-assay-thresholds.csv") }}
+{{ csv_table("bio/urine-assay-thresholds.csv") }}
 </div>
 
 <div id="scoring" class="banner" onclick="toggleCollapse(this)">

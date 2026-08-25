@@ -1,5 +1,11 @@
 # Magnetic Resonance Spectroscopy (MRS)
 
+{{ alert_warning(instruments.mrs) }}
+{{ data_warning(instruments.mrs) }}
+{{ issues_banner() }}
+
+---
+
 **Magnetic Resonance Spectroscopy (MRS)** measures biochemicals involved in neuronal metabolism, neurotransmission, and oxidative stress, enabling investigation of mechanisms underlying structural, functional, and behavioral development. HBCD is the first study of this scale to incorporate MRS into a comprehensive pediatric neuroimaging protocol, with data acquired via Integrated Short-TE and Hadamard Multi-Sequence (ISTHMUS) ([Hui et al., 2024](https://doi.org/10.1016/j.jneumeth.2024.110206); [Oeltzschner et al., 2019](https://doi.org/10.1016/j.neuroimage.2018.10.002)). Primary metabolites measured for HBCD include: 
 
 - **N-acetylaspartate (NAA)**: marker of neuronal mitochondrial metabolism

@@ -99,7 +99,6 @@ The tables below summarize known issues affecting the current data release and p
 </th></tr>
 </thead>
 <tbody>
-
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Nails</td>
@@ -126,7 +125,6 @@ The tables below summarize known issues affecting the current data release and p
 </th></tr>
 </thead>
 <tbody>
-
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
