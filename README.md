@@ -12,3 +12,15 @@ this script:
 
 
 The relevant pages are then updated automatically via macros
+
+FUTURE TO DO: make autoparsing happen on build (likely need to clean things up to be more efficient otherwise will go over API call budget on Airtable), e.g. in `.readthedocs.yaml`:
+
+```
+build:
+  os: ubuntu-24.04
+  tools:
+    python: "3.13"
+  jobs:
+    pre_build:
+      - python autoparse-all.py
+```

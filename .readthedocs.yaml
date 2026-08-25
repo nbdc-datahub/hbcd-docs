@@ -10,7 +10,7 @@ build:
     python: "3.13"
   # jobs:
   #   pre_build:
-  #     - python scripts/sync_demo_tables.py
+  #     - python3 autoparse-all.py
 
 mkdocs:
   configuration: mkdocs.yml
