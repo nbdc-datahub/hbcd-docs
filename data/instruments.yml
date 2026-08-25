@@ -1,7 +1,7 @@
 dmri:
   status: README updated & ready for SME review
   full_name: Diffusion MRI
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   table_name: img_qsiprep_space-ACPC_desc-image_qc
   references: |-
     Alexander AL, Lee JE, Lazar M, Field AS. (2007). Diffusion tensor imaging of the brain. _Neurotherapeutics_, 4(3):316-29. [10.1016/j.nurt.2007.05.011](https://doi.org/10.1016/j.nurt.2007.05.011)
@@ -267,7 +267,7 @@ motion:
   status: README updated & ready for SME review
   duration: 72 hours continuous wear
   full_name: Wearable Motion Sensor Data (Accelerometer/Gyroscope)
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   table_name: null
   warning2: For raw data downloads, when calibration files are missing or not collected correctly, it is technically possible to use a different set of calibration files from the same 2 sensors that were collected from a different data collection session close in time. It is also possible to manually adjust (downsample) an incorrect sampling rate if it was set too high. For processed data downloads, when calibration files are missing or not collected correctly, or the sampling rate is incorrect, data are not processed. In analysis, users are advised to use caution in analyzing datasets with missing data as missing data may not be randomly distributed across the sample.
   references: |-
@@ -830,7 +830,7 @@ face:
   full_name: Faces Task
   warning4: null
   alert2: null
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   table_name: null
   warning2: null
   references: |-
@@ -903,7 +903,7 @@ gabi:
   alert3: In analysis, users should exercise caution when working with datasets containing missing data, as missingness may not be random. Users should ensure transparency and reproducibility in all analyses by sharing analytic scripts, documenting missing data, and clearly describing decisions about wear-time, sensor removal, or exclusions. Users should not upload HBCD data to generative AI tools or other public platforms, as this would violate the DUC and risk unintended data exposure.
   warning4: null
   alert2: Users should avoid reporting results from groups smaller than ten participants to reduce the risk of re-identification. Users should interpret findings within broader social and environmental contexts, incorporating relevant covariates (e.g., demographic, environmental, caregiving factors) to improve scientific rigor and avoid oversimplifying developmental outcomes.
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   table_name: null
   warning2: null
   references: |-
@@ -928,7 +928,7 @@ gabi:
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recHy0XkXvVr66UC9
   warning1: Note that infant heart rate sensor data may contain non-consecutive samples. The most likely reason is an inconsistent connection between the sensor and the receiver tablet, which can result in missing samples. Always refer to the timestamps embedded in the files to reconstruct the temporal sequence of the data. Infant heart rate sensor recordings may also be shorter than the planned 72 hours, which can occur due to human error, technical issues, or a parent/legal guardian deciding to discontinue data collection.
   description: "**Infant Heart Rate Wearable Sensor data** captures information related to the infant's physiology and sleep. The device is fastened to the infant's upper arm with a soft-textile band by HBCD Study staff and worn for 72 hours, during which time data is collected across the child's typical activities in their natural environment. The photoplethysmography (PPG) sensors (one emitting green light PPG and one emitting red light PPG) embedded in the device allow for the collection of three biosignal estimates sampled at 1 Hz:\n\n- **Rulse rate** (beats per minute)\n- **Blood oxygen saturation** (SpO2, percentage)\n- **Respiratory rate** (breaths per minute)\n\nIn addition, sleep states are derived from these vital sign data. Data collection is planned for 72 continuous hours. Caregivers followed typical routines, removing the sensor only for water exposure (e.g., baths) and repositioning it afterward. See [Pini et al. 2024](https://www.sciencedirect.com/science/article/pii/S1878929324001075?via%3Dihub)\
-    \ for a full measure description.\n\n##### Raw BIDS\n\nThe current release includes the raw BIDS data for infant HR data, including HR, SpO2, and RR along with their respective measures of reliability, timestamps, and metadata.\n\n```\nhbcd/\n└── rawdata/ \n    └── sub-[ID]\n        └── ses-[V0X]\n            └── gabi/\n```"
+    \ for a full measure description.\n\n##### Raw BIDS\n\nThe current release includes the raw BIDS data for infant HR data, including HR, SpO2, and RR along with their respective measures of reliability, timestamps, and metadata.\n\n```\nhbcd/\n└── rawdata/ \n    └── sub-[ID]\n        └── ses-[V0X]\n            └── beh/\n                ├── *_task-rest_acq-HeartRateSensor_recording-plx_beh.json\n                ├── *_task-rest_acq-HeartRateSensor_recording-plx_beh.tsv.gz\n                ├── *_task-rest_acq-HeartRateSensor_recording-temperature_beh.json\n                └── *_task-rest_acq-HeartRateSensor_recording-temperature_beh.tsv.gz\n```"
   slug: gabi-infant-heart-rate-
   supp3_text: null
   domain: Novel Tech & Wearable Sensors
@@ -1097,7 +1097,7 @@ ecpromis_sleep:
 smri:
   status: Work in progress
   full_name: Structural MRI
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   table_name: null
   references: |-
     Andersen, M., Björkman-Burtscher, I. M., Marsman, A., Petersen, E. T., & Boer, V. O. (2019). Improvement in diagnostic quality of structural and angiographic MRI of the brain using motion correction with interleaved, volumetric navigators. _PLoS One_, 14(5), e0217145. <https://doi.org/10.1371/journal.pone.0217145>
@@ -1572,7 +1572,7 @@ qmri:
   status: Work in progress
   warning1_title: Varying Motion Degradation Criteria Across Sites
   full_name: Quantitative MRI
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   table_name: null
   warning2: Estimated quantitative T1 values show variability across MRI vendors and participant age. Current estimates do not align well with values reported in the literature, likely due to assumptions made in the modeling procedures. Work is ongoing to address these issues. As a result, quantitative T1 values (and by extension, PD values) will not be included initial release data.
   warning2_title: Vendor Variability
@@ -1615,6 +1615,7 @@ qmri:
     The HBCD protocol includes a short B1+ field map acquisition (~30–45 seconds across all scanner types) to calibrate flip angle measurements, which can vary spatially due to B1+ field inhomogeneity. This calibration is required for accurate T1, T2, and PD estimation. Because the transmit B1+ field varies smoothly across space, coarse spatial resolution is sufficient, enabling rapid acquisition. Vendor-specific implementations in the HBCD protocol include Actual Flip Angle Imaging (AFI) for GE and Philips, and a pre-saturation turbo-FLASH readout for Siemens ([Yarnykh 2007](https://doi.org/10.1002/mrm.21120)).
   measure: Quantitative MRI
 dynamic:
+  Done (admin): Waiting on SME response
   supp2_text: null
   status: Work in progress
   alert1: When using HBCD data, all data users must follow responsible use requirements described in the Data Use Certification (DUC). When conceptualizing studies, analyzing data, and communicating findings using demographic, socioeconomic, household, caregiver, neighborhood, or other social and environmental characteristics, researchers should consider approaches that avoid stigmatizing individuals or groups and perpetuating harmful biases.
@@ -1645,8 +1646,10 @@ dynamic:
   admin_notes: |-
     FROM LUCI:
 
-    - README was updated 8/24 due to autoparsing of others sections and I also updated some of the info here (I see that the domain is now Participant Derived)
-    - I have set up a shared google sheet [here](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?usp=sharing) where you can update the table text (this sheet is autoparsed to populate the webpage) - remember people should look at the data dictionary for full info, so this table only needs to include summary info critical to understanding basics - SEE TAB NAMED "Dynamic"
+    - README updated 8/24
+    - Domain is now Participant Derived
+    - See dynamic1 tab of this google sheet [here](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?usp=sharing) to update dynamic table overview
+    - other main text sections are stored under "Supplemental Text Seciont 1" in this form
     - Larger changes to the organization of the page are also ok, whatever the SMEs would like. Just consult with Luci since you likely can't make those changes via this form
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/dynamic/
   email: nslopen@hsph.harvard.edu
@@ -2081,7 +2084,7 @@ mmn:
   full_name: Auditory Mismatch Negativity Task
   warning4: null
   alert2: null
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   table_name: null
   warning2: null
   references: |-
@@ -2226,7 +2229,7 @@ rs:
   full_name: Resting State Task
   warning4: null
   alert2: null
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   table_name: null
   warning2: null
   references: |-
@@ -2494,7 +2497,7 @@ vep:
   full_name: Visual Evoked Potential Task
   warning4: null
   alert2: null
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   table_name: null
   warning2: null
   references: |-
@@ -3398,7 +3401,7 @@ eeg:
     - FACE 15 trials (for each condition of interest)
     - MMN 30 trials (for each condition of interest)
     - VEP 36 trials
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   table_name: null
   warning2: The MMN, VEP, and FACE task data may contain an artifact originating from the StimTracker device used for stimulus timing - see more information on this [here](http://127.0.0.1:8000/instruments/eeg/qc/#stimtracker-artifact-detection).
   warning2_title: Stimtracker Artifact
@@ -3478,7 +3481,7 @@ fmri:
   warning1_title: 'V02: Use `hash-0f306a2f` Derivatives Only'
   full_name: Functional MRI
   alert2: 'Researchers interested in examining brain-behavior associations or multivariate predictions should follow strategies such as those in [Eggebrecht 2017](https://doi.org/10.1093/cercor/bhw403) to: 1) assess how missing data impacts dependent, independent variables and covariates, 2) examine the association between the degrees of freedom and non-FC variables, 3) use trimmed FC measures when needed to mitigate artifacts due to data quality.'
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   warning2: |-
     A subset of Philips fMRI scans exhibit signal intensity clipping, where voxel intensities >4095 are capped due to a reconstruction scaling error. This produces hyperintense regions that can distort BOLD registration and impact downstream measures such as functional connectivity. The issue was identified during pilot data collection and fixed at most sites before the main study. Residual cases remain at VAN and CCH (patch implemented Oct 2024). Approximately ~20% of scans at these sites show some clipping, with ~6% classified as severe. Severe cases fail raw data QC, so are naturally filtered out from inclusion in downstream processing steps.
     Users should practice caution in sensitive analyses and consider including clipping metrics as covariates. The presence and severity of clipping can be estimated based on raw data QC metrics. Potential clipping is indicated if: (1) the fraction of max intensity voxels in the brain mask (`brain_fvox_max`) is > 0.001 **AND** (2) the med/max image intensity ratio (`brain_median`/`brain_max`) is > 0.5 _(> 0.8 indicates severe clipping)._
@@ -3764,7 +3767,7 @@ vs100:
   status: README updated & ready for SME review
   duration: <1 min
   full_name: VS100 Spot Vision Screener
-  assessment_type: EEG/MRI/Wearable sensor
+  assessment_type: Direct Assessment
   table_name: ph_ch_vs
   references: Misra, N., Khanna, R. C., Mettla, A. L., Marmamula, S., & Keeffe, J. E. (2021). Agreement and diagnostic accuracy of vision screening in preschool children between vision technicians and spot vision screener. _Indian Journal of Ophthalmology_, 69(1), 117–121. <https://doi.org/10.4103/ijo.IJO_1740_19>
   respondent_category: Child on Self

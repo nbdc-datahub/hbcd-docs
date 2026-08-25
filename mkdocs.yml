@@ -153,7 +153,7 @@ nav:
             - MRS: instruments/mri/mrs.md 
 
         - Novel Tech & Wearable Sensors:
-            - GABI Infant Heart Rate: instruments/sensors/gabi.md
+            - Infant Heart Rate: instruments/sensors/gabi.md
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
 

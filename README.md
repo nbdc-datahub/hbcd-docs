@@ -3,6 +3,8 @@ Docs website for HEALthy Brain and Child Development (HBCD) Study Data Release d
 
 ## Current workflow for parsing tables from google sheets and airtable
 
+Either use the scripts under `/scripts` or the following in the root directory:
+
 `python3 autoparse-all.py`
 
 this script:
@@ -24,3 +26,4 @@ build:
     pre_build:
       - python autoparse-all.py
 ```
+
