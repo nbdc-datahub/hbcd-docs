@@ -77,7 +77,7 @@ One of the key difference between these file types is that TSV/CSV file types st
     &nbsp;<b>WARNING: Incorrect Data Types Inferred for CSV/TSV</b>
 <br>
 <br>
-<p>Because TSV/CSV metadata are stored separately, programming languages like Python or R must guess the data types during import, which can lead to errors. For example, categorical values provided as numbers that are formatted as strings (e.g., "0"/"1" to represent “Yes”/“No”) may be interpreted as numeric. To avoid this, users need to manually specify column types using the accompanying metadata upon import. The <a href="../access/tools/#nbdctools">NBDCtools</a> R package offers a helper function, <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a>, to automate this process (see the R packages page for details).</p>
+<p>Because TSV/CSV metadata are stored separately, programming languages like Python or R must guess the data types during import, which can lead to errors. For example, categorical values provided as numbers that are formatted as strings (e.g., "0"/"1" to represent “Yes”/“No”) may be interpreted as numeric. To avoid this, users need to manually specify column types using the accompanying metadata upon import. The <a href="../../access/tools/#nbdctools">NBDCtools</a> R package offers a helper function, <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a>, to automate this process (see the R packages page for details).</p>
 </div>
 
 <p>
