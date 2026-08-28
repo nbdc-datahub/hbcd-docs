@@ -22,6 +22,14 @@ Each table is available as:
 
 ### TSV/CSV vs. Parquet
 
+<div class="infobox" style="background-color: #fff8e1; border-left: 4px solid #ffa500;">
+  <i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
+    &nbsp;<b>WARNING: Incorrect Data Types Inferred for CSV/TSV</b>
+<br>
+<br>
+<p>Because TSV/CSV metadata are stored separately, programming languages like Python or R must guess the data types during import, which can lead to errors. For example, categorical values provided as numbers that are formatted as strings (e.g., "0"/"1" to represent “Yes”/“No”) may be interpreted as numeric. To avoid this, users need to manually specify column types using the accompanying metadata upon import. The <a href="../../access/tools/#nbdctools">NBDCtools</a> R package offers a helper function, <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a>, to automate this process (see the R packages page for details).</p>
+</div>
+
 One of the key difference between these file types is that TSV/CSV file types store metadata in accompanying `.json` files, whereas Parquet stores metadata directly in the file, reducing import errors and improving performance for large datasets. Review the table below to choose the optimal format for your needs:
 
 <table class="table-no-vertical-lines">
@@ -71,14 +79,6 @@ One of the key difference between these file types is that TSV/CSV file types st
     </tr>
   </tbody>
 </table>
-
-<div class="infobox" style="background-color: #fff8e1; border-left: 4px solid #ffa500;">
-  <i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
-    &nbsp;<b>WARNING: Incorrect Data Types Inferred for CSV/TSV</b>
-<br>
-<br>
-<p>Because TSV/CSV metadata are stored separately, programming languages like Python or R must guess the data types during import, which can lead to errors. For example, categorical values provided as numbers that are formatted as strings (e.g., "0"/"1" to represent “Yes”/“No”) may be interpreted as numeric. To avoid this, users need to manually specify column types using the accompanying metadata upon import. The <a href="../../access/tools/#nbdctools">NBDCtools</a> R package offers a helper function, <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a>, to automate this process (see the R packages page for details).</p>
-</div>
 
 <p>
 <div id="load-parquet" class="banner" onclick="toggleCollapse(this)">
