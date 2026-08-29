@@ -48,6 +48,9 @@ nav:
     - Responsible Data Use: access/resp_data_use.md
     - Data Use Acknowledgment: access/dua.md
     - Tools: access/tools.md
+  - Release Notes: 
+    - Release Notes & History: changelog/release-notes.md
+    - Known Issues & Pending Updates: changelog/issues-updates.md
   - Study Standards & Conventions:
     - Study Protocol: standards/protocol.md
     - Data Dictionary: standards/metadata.md
@@ -153,9 +156,6 @@ nav:
         - Novel Tech & Wearable Sensors:
             - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
-  - Release Notes: 
-    - Release Notes & History: changelog/release-notes.md
-    - Known Issues & Pending Updates: changelog/issues-updates.md
   - Help & Support:
     - FAQs: help/faq.md
     - Report Issues: help/reportissue.md
