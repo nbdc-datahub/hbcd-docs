@@ -22,7 +22,6 @@ Each table is available as:
 
 ### TSV/CSV vs. Parquet
 
-
 <div class="infobox" style="background-color: #fff8e1; border-left: 4px solid #ffa500;">
   <i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
     &nbsp;<b>WARNING: Incorrect Data Types Inferred for CSV/TSV</b>

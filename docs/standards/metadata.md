@@ -41,6 +41,31 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 
 ## Data Dictionary Elements
 
+<div class="infobox" style="background-color: #fff8e1; border-left: 4px solid #ffa500;">
+  <i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
+    &nbsp;<b>WARNING: Incorrect Data Types Inferred for CSV/TSV</b>
+<br>
+<br>
+<p>
+  CSV and TSV files do not contain an embedded data schema. Because column
+  metadata are provided separately, import tools in Python and R may infer
+  some column types incorrectly. For example:
+</p>
+<ul>
+  <li>
+    Categorical codes stored as strings, such as <code>"0"</code> and
+    <code>"1"</code> for “No” and “Yes,” may be imported as numbers.
+  </li>
+  <li>
+    Numeric columns may be imported as text when missing values are represented
+    as <code>n/a</code>, as required for TSV files by the BIDS specification.
+  </li>
+</ul>
+<p>
+  <b>It is therefore critical that you specify column types during import</b>, particularly data type (<code>type_data</code>), using the accompanying metadata. See <a href="../../access/tools/#nbdctools">NBDCtools</a> for available functions to automate this process (e.g. <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a> for R users).
+</p>
+</div>
+
 <div class="table-legend">
   <span class="legend-item">
     <i class="fa-solid fa-lock legend-icon"></i>
