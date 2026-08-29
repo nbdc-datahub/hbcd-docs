@@ -73,15 +73,15 @@ h6 {
 ========================================================= */
 .button-link {
   display: inline-block;
-  background-color: #F2795E;
-  color: #071B2C !important;
+  background-color: #f2795ea2;
+  color: #071b2cc5 !important;
   text-decoration: none;
-  font-weight: 600;
-  padding: 0.65rem 1.2rem;
+  font-weight: 600 !important;
+  padding: 6px 12px !important;
   border: none;
-  border-radius: 999px;
+  border-radius: 999px !important;
   cursor: pointer;
-  box-shadow: 1px 2px 5px 0px rgba(21, 24, 24, 0.10);
+  box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.596);
   transition: all 0.2s ease;
 }
 .button-link:visited {
@@ -98,6 +98,7 @@ h6 {
 /* =========================================================
    ICONS 
 ========================================================= */
+
 .simple-icon {
   color: #199bd6; 
   font-size: 0.8em;
@@ -235,67 +236,26 @@ h6 {
   padding: 0.9rem 1.1rem;
   border-left: 4px solid #dde6fe;
   border-radius: 4px;
+  /* background: #42a2cf17; */
   background-color: #dde6fe28;
   color: #2f3742;
 }
+.infobox > strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #263746;
+  font-size: 0.95rem;
+}
 .infobox p {
   margin: 0;
-  font-size: 0.9em;
-}
-.infobox code {
-  margin: 0;
-  font-size: 0.9em !important;
 }
 .infobox ul,
 .infobox ol {
-  margin-top: 0.3em !important;
-  margin-bottom: 0.3em !important;
+  margin-top: 0.3rem !important;
+  margin-bottom: 0 !important;
   font-size: 0.9em;
 }
 
-/* =========================================================
-   TOOLTIPS (USED SPARINGLY)
-========================================================= */
-.tooltip {
-    position: relative;
-    cursor: help;
-    border-bottom: 1px dotted #555;
-    color: teal;
-    font-weight: 500;
-}
-.tooltip .tooltiptext {
-    position: absolute;
-    z-index: 9999;
-    min-width: 160px;
-    max-width: 40ch;
-    width: max-content;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 8px 10px;
-    border-radius: 4px;
-    font-size: 12.5px;
-    line-height: 1.4;
-    box-sizing: border-box;
-    word-break: break-word;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(-50%) translateY(4px);
-    transition: opacity 0.2s ease, transform 0.2s ease;
-    bottom: 100%;
-    left: 50%;
-    margin-bottom: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-}
-.tooltip:hover .tooltiptext {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateX(-50%) translateY(0);
-}
-.tooltip:hover {
-    color: rgb(0, 207, 207);
-    border-bottom: 1px dotted #0056b3;
-}
 
 /* =========================================================
    CODE BLOCKS
@@ -354,29 +314,4 @@ h6 {
 .folder-tree .comment {
   color: #7d7d7d;
   font-style: italic;
-}
-
-/* Inline code styling (markdown and otherwise) */
-code {
-    font-size: 0.9em !important;
-    font-weight: 500;
-    font-family: monospace;
-    overflow-wrap: anywhere;
-    border: none !important;
-    background: none !important;
-    padding-inline: 0.15em !important;
-}
-
-/* Simple Markdown code blocks for file trees or other uses */
-.markdown pre:has(code.language-tree) {
-  padding: 1rem 1.25rem;
-  background: #f8fafc;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-}
-.markdown code.language-tree {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  line-height: 1.7;
-  color: #334155 !important;
-  background: transparent;
 }
