@@ -48,6 +48,26 @@ HBCD structural and functional MRI data are processed through a sequence of BIDS
 
 ### BIBSNet
 
+<div id="data-warning" class="banner data-warning" onclick="toggleCollapse(this)">
+<span class="emoji">
+    <i class="fas fa-exclamation-triangle"></i>
+</span>
+<span class="text-with-link">
+    <span class="text">Data Warning</span>
+    <a class="anchor-link" href="#data-warning" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+</span>
+<span class="arrow">▸</span>
+</div>
+<div class="collapsible-content" style="background-color: #fcfaed;">
+<div class="info-section-title">Check Data Type - Critical to Ensure Accurate Analysis!!</div>
+<div class="info-section">
+<p>CSV/TSV files do not contain an embedded data schema and import tools in Python and R may infer some column types incorrectly (<a href="../../../datacuration/phenotypes/#tsvcsv-vs-parquet">see details</a>). In order to obtain accurate results when analyzing BIBSNet tabulated derivatives, be sure that the data type for volume columns are properly identified according to the sidecar JSON (as <code>double</code>).</p>
+</div>
+</div>
+<p></p>
+
 BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentation (<a href="https://doi.org/10.1101/2023.03.22.533696">Hendrickson et al. 2024</a>). The <a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet pipeline</a> generates native-space brain segmentations and brain masks (as well as <code>volumes.tsv</code> files with ROI volume statistics), which are fed into Infant fMRIPrep for use in anatomical preprocessing and surface reconstruction.
 
 <pre class="folder-tree">
