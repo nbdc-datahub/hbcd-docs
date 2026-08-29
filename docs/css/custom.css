@@ -73,15 +73,15 @@ h6 {
 ========================================================= */
 .button-link {
   display: inline-block;
-  background-color: #f2795ea2;
-  color: #071b2cc5 !important;
+  background-color: #F2795E;
+  color: #071B2C !important;
   text-decoration: none;
-  font-weight: 600 !important;
-  padding: 6px 12px !important;
+  font-weight: 600;
+  padding: 0.65rem 1.2rem;
   border: none;
-  border-radius: 999px !important;
+  border-radius: 999px;
   cursor: pointer;
-  box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.596);
+  box-shadow: 1px 2px 5px 0px rgba(21, 24, 24, 0.10);
   transition: all 0.2s ease;
 }
 .button-link:visited {
@@ -235,26 +235,23 @@ h6 {
   padding: 0.9rem 1.1rem;
   border-left: 4px solid #dde6fe;
   border-radius: 4px;
-  /* background: #42a2cf17; */
   background-color: #dde6fe28;
   color: #2f3742;
 }
-.infobox > strong {
-  display: block;
-  margin-bottom: 0.35rem;
-  color: #263746;
-  font-size: 0.95rem;
-}
 .infobox p {
   margin: 0;
+  font-size: 0.9em;
+}
+.infobox code {
+  margin: 0;
+  font-size: 0.9em !important;
 }
 .infobox ul,
 .infobox ol {
-  margin-top: 0.3rem !important;
-  margin-bottom: 0 !important;
+  margin-top: 0.3em !important;
+  margin-bottom: 0.3em !important;
   font-size: 0.9em;
 }
-
 
 /* =========================================================
    TOOLTIPS (USED SPARINGLY)
@@ -300,41 +297,9 @@ h6 {
     border-bottom: 1px dotted #0056b3;
 }
 
-
-
 /* =========================================================
    CODE BLOCKS
 ========================================================= */
-
-/* Simple Markdown code blocks for file trees or other uses */
-.markdown pre:has(code.language-tree) {
-  padding: 1rem 1.25rem;
-  background: #f8fafc;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-}
-.markdown code.language-tree {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  line-height: 1.7;
-  color: #334155 !important;
-  background: transparent;
-}
-
-
-/* =========================================================
-   CODE BLOCKS
-========================================================= */
-
-/* Inline code styling (markdown and otherwise) */
-code {
-    font-size: 0.9em;
-    font-weight: 500;
-    font-family: monospace;
-    overflow-wrap: anywhere;
-    border: none !important;
-    background-color: none !important;
-    background: none !important;
-}
 
 /* Simple Markdown code blocks for file trees or other uses */
 .markdown pre:has(code.language-tree) {
@@ -359,17 +324,6 @@ code {
   font-size: 12px;
   line-height: 1.3em;
 }
-/* .folder-tree {
-  font-family: monospace;
-  background-color: #fafafa;
-  color: #222;
-  font-size: 12px;
-  padding: 5px;
-  line-height: 1.3em;
-  white-space: pre;
-  display: block;
-  overflow-x: auto;
-} */
 /* Placeholder variables */
 .folder-tree .var {
   color: #0b84c6;
@@ -400,4 +354,29 @@ code {
 .folder-tree .comment {
   color: #7d7d7d;
   font-style: italic;
+}
+
+/* Inline code styling (markdown and otherwise) */
+code {
+    font-size: 0.9em !important;
+    font-weight: 500;
+    font-family: monospace;
+    overflow-wrap: anywhere;
+    border: none !important;
+    background: none !important;
+    padding-inline: 0.15em !important;
+}
+
+/* Simple Markdown code blocks for file trees or other uses */
+.markdown pre:has(code.language-tree) {
+  padding: 1rem 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.markdown code.language-tree {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.7;
+  color: #334155 !important;
+  background: transparent;
 }

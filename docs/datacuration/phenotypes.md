@@ -22,12 +22,30 @@ Each table is available as:
 
 ### TSV/CSV vs. Parquet
 
+
 <div class="infobox" style="background-color: #fff8e1; border-left: 4px solid #ffa500;">
   <i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
     &nbsp;<b>WARNING: Incorrect Data Types Inferred for CSV/TSV</b>
 <br>
 <br>
-<p>Because TSV/CSV metadata are stored separately, programming languages like Python or R must guess the data types during import, which can lead to errors. For example, categorical values provided as numbers that are formatted as strings (e.g., "0"/"1" to represent “Yes”/“No”) may be interpreted as numeric. To avoid this, users need to manually specify column types using the accompanying metadata upon import. The <a href="../../access/tools/#nbdctools">NBDCtools</a> R package offers a helper function, <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a>, to automate this process (see the R packages page for details).</p>
+<p>
+  CSV and TSV files do not contain an embedded data schema. Because column
+  metadata are provided separately, import tools in Python and R may infer
+  some column types incorrectly. For example:
+</p>
+<ul>
+  <li>
+    Categorical codes stored as strings, such as <code>"0"</code> and
+    <code>"1"</code> for “No” and “Yes,” may be imported as numbers.
+  </li>
+  <li>
+    Numeric columns may be imported as text when missing values are represented
+    as <code>n/a</code>, as required for TSV files by the BIDS specification.
+  </li>
+</ul>
+<p>
+  <b>It is therefore critical that you specify column types during import</b>, particularly data type (<code>type_data</code>), using the accompanying metadata. See <a href="../../access/tools/#nbdctools">NBDCtools</a> for available functions to automate this process (e.g. <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a> for R users).
+</p>
 </div>
 
 One of the key difference between these file types is that TSV/CSV file types store metadata in accompanying `.json` files, whereas Parquet stores metadata directly in the file, reducing import errors and improving performance for large datasets. Review the table below to choose the optimal format for your needs:
