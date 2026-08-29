@@ -68,34 +68,31 @@ h6 {
   background-color: #dde6fe;
 }
 
-
-
 /* =========================================================
    BUTTONS
 ========================================================= */
 .button-link {
   display: inline-block;
-  background-color: #F2795E;
-  color: #071B2C !important;
+  background-color: #f2795ea2;
+  color: #071b2cc5 !important;
   text-decoration: none;
-  font-weight: 600;
-  padding: 0.65rem 1.2rem;
+  font-weight: 600 !important;
+  padding: 6px 12px !important;
   border: none;
-  border-radius: 999px;
-  /* border-radius: 14px;  */
+  border-radius: 999px !important;
   cursor: pointer;
-  box-shadow: 1px 2px 5px 0px rgba(21, 24, 24, 0.10);
+  box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.596);
   transition: all 0.2s ease;
 }
 .button-link:visited {
-  color: #071B2C !important;
+  color: #071b2cc5 !important;
   text-decoration: none;
 }
 .button-link:hover {
   background-color: #E15436;
-  box-shadow: 1px 2px 6px 1px rgba(21, 24, 24, 0.15);
+  box-shadow: -6px 5px 12px rgb(0, 0, 0);
   color: #071B2C !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* =========================================================
@@ -231,34 +228,6 @@ h6 {
     font-size: 0.85em !important;
   }
 
-
-/* =========================================================
-   BUTTONS
-========================================================= */
-.button-link {
-  display: inline-block;
-  background-color: #f2795ea2;
-  color: #071b2cc5 !important;
-  text-decoration: none;
-  font-weight: 600 !important;
-  padding: 6px 12px !important;
-  border: none;
-  border-radius: 999px !important;
-  cursor: pointer;
-  box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.596);
-  transition: all 0.2s ease;
-}
-.button-link:visited {
-  color: #071b2cc5 !important;
-  text-decoration: none;
-}
-.button-link:hover {
-  background-color: #E15436;
-  box-shadow: -6px 5px 12px rgb(0, 0, 0);
-  color: #071B2C !important;
-  text-decoration: none !important;
-}
-
 /* =========================================================
    INFOBOX (distinct from banners)
 ========================================================= */
@@ -346,4 +315,3 @@ h6 {
   color: #7d7d7d;
   font-style: italic;
 }
-

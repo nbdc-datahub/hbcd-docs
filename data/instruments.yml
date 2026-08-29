@@ -300,11 +300,11 @@ motion:
   measure: Infant Leg Motion
   construct: Regulation (Sleep State Cycles) / Autonomic Function
 tic_quest:
-  Done (admin): Waiting on SME response
+  Done (admin): DONE
   supp2_text: null
-  status: README updated & ready for SME review
+  status: DONE! Complete/stable for release
   alert1: 'Transition in Care information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
-  Date: '2026-08-24'
+  Date: '2026-08-29'
   hbcd_mods1: null
   duration: 5 minutes or less
   hbcd_mods2: null
@@ -356,6 +356,7 @@ R3_nutrition:
   supp2_text: null
   status: DONE! Complete/stable for release
   alert1: null
+  Date: '2026-08-29'
   hbcd_mods1: null
   duration: 10 min
   hbcd_mods2: null
@@ -367,7 +368,7 @@ R3_nutrition:
   warning2: null
   references: null
   respondent_category: Parent on Child
-  admin_notes: Please update the exhisting README page to include documentation for the Child Nutrition Questionnaire for Release 3.0 (note that the 2.1 documentation is available via a separate form and will not be updated)
+  admin_notes: COMPLETE
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/nutrition/
   email: leigh-anne.cioffredi@uvm.edu
   visits: 'Infant: V05 / Child: V06, V08'
@@ -417,21 +418,56 @@ prescan_q:
   construct: Infant Sleep Environment
 dit:
   Done (admin): Not yet started
+  supp2_text: null
   status: Work in progress
+  alert1: null
+  Date: '2026-08-25'
+  warning3_title: Parent Error
+  hbcd_mods1: null
+  hbcd_mods2: null
+  warning1_title: Task administered by non-certified individual
   full_name: Deferred Imitation Task
+  warning4: "An Error code is used to indicate when there was a malfunction with the materials. Recommendation is to not use these data. \n\nAn Error code is used to indicate when the child refused to participate in the task/engage with the props. Recommendation is to not use these data."
+  alert2: null
   assessment_type: Cognitive testing
   table_name: ncl_ch_di_v06
+  warning2: An Error code is used to indicate when the task administration included a major experimenter error (e.g., task administered out of order, child's intent not assisted during recall, child's intent assisted during baseline).  Recommendation is to not use these data.
+  warning2_title: Experimenter Error
+  references: |-
+    Lukowski, A. F., & Milojevich, H. M. (2016). Examining Recall Memory in Infancy and Early Childhood Using the Elicited Imitation Paradigm. _Journal of visualized experiments : JoVE_, (110), 53347.
+
+    Cheatham, C.L., Bauer, P.J., and Georgieff, M.K. (2006).  Predicting individual differences in recall by infants born preterm and full term.  _Infancy_, 10(1), 17-42.
+
+    DeBoer, T., Wewerka, S., Bauer, P.J., Georgieff, M.K., and Nelson, C.A. (2005).  Explicit memory performance in infants of diabetic mothers at 1 year of age.  _Developmental Medicine & Child Neurology_, 47(8), 525-531.
   respondent_category: Child on Self
   admin_notes: null
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/dit/
+  email: riggins@umd.edu
   visits: V06, V08
+  hbcd_mods3: null
   primary_data_type: Tabulated data
+  submitter_name: Tracy Riggins
+  alert4: null
   acronym: DI
+  warning3: An Error code is used to indicate when the parent provided assistance. Recommendation is to not use these data.
+  alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec5I08Qeoit27sq4
+  warning1: An Error code is used to indicate when the task was administered by a non-certified individual (who was still undergoing training/certification). Recommendation is to use data with caution.
+  description: This is an assessment of long-term memory. Children are shown two action sequences with novel props and after 10min (minimum) their memory for the action sequences is assessed.  A baseline is included to control for problem solving/creativity.  Administration is standardized, parents/caregivers should NOT help their children.
   slug: deferred-imitation-task-gong-and-berry-go-round
+  supp3_text: null
   domain: Neurocognition & Language
   release: '3.0'
+  qc: "++**Deferred imitation methods**++\n\nWritten by Tracy Riggins, Edited by SarahJane Dube, Reviewed by Alexi Potter, Julie Kable  and Natacha Akshoomoff\n\n8/5/25\n\n**Visit 6:**\n\nAn SOP was provided with detailed administration and scoring instructions. Training was conducted via Zoom and in-person sessions and consisted of detailed descriptions and example videos.\n\nEach RA went through a two-step certification process – administration and scoring. For the first step, each RA administered the V06 deferred imitation protocol to an adult, video recorded it, filled out a self-assessment form (with scores) and submitted these materials to the Infant Testing Core for review. An expert (TR, ZC, IS, SD, NS, AG) reviewed the video for both administration and scoring accuracy.  Feedback was always given.  If the _administration_ met a standard threshold (no major administration errors), the RA was certified to administer the task.  If the _administration_ did not meet threshold, the RA\
+    \ was asked to submit another video. If scoring was inaccurate, this was communicated to the RA so they could correct it in the second certification step. This process continued until the RA submitted a video that met threshold, at which point RAs were certified in administration and released to proceed to the second step.\n\nRAs who were certified to administer the task, then video recorded their administration to a child (pilot OR main study) participant. RAs scored the child’s performance (in LORIS for main study participants, on the self-assessment form for pilots) and an expert (TR, ZC, SD, NS) reviewed the video for ++both administration and scoring accuracy++.  Feedback was always given.  If the administration met a standard threshold (i.e., no administration or scoring errors), the RA was certified in scoring the task and fully certified to administer deferred imitation in main study without the need for expert video review.  If the administration did not meet threshold, the\
+    \ RA was asked to submit another video with a different child participant and submit the video for review.  If during any video review, scores were incorrect, the RA was asked to correct them in LORIS _and make a note to this effect in the RA comments_.  The expert reviewer ensured the scores were updated accurately and noted this in the certification log notes.  \n\nAfter the two-step certification process, RAs were released to administer and score deferred imitation to child participants without video review.\n\n \n\n \n\n**Visit 8:**\n\nAn SOP was provided with detailed administration and scoring instructions. Although the core concepts are the same for the deferred imitation task at V06 and V08, the event sequences differ, therefore there was a need for expert review, despite the previous certification. Training was conducted via Zoom and in-person sessions and consisted of detailed descriptions and example videos. \n\nEach RA was asked to record their first V08 child participant\
+    \ (pilot OR main study), score the child’s performance (in LORIS for main study participants, on the self-assessment form for pilots) and submit for expert review.  An expert reviewer (TR, ZC, SD, NS) reviewed the video for accuracy.  Feedback was always given.  If the administration met a standard threshold (i.e., no major administration or scoring errors), the RA was approved to continue without video expert review.  If the administration and/or scoring did not meet threshold, the RA was asked to submit a video of their next V08 DI administration with another child participant.  Until approved for V08, any incorrect scores were corrected by the RA in LORIS and a note was made to this effect in the RA comments.  The expert reviewer ensured the scores were updated accurately and noted this in the data log notes."
   administration: In-person
+  scoring: Each target action is recorded. Pairs of actions in the correct temporal order are automatically calculated.  Actions and pairs of actions are summed across event sequences.
+  changelog: initial draft
+  resources: null
+  warning4_title: Malfunction or Refusal
+  supp1_text: null
   measure: 'Deferred Imitation Task: Gong and Berry-Go-Round'
   construct: Memory
 pedsql:
@@ -439,6 +475,7 @@ pedsql:
   supp2_text: null
   status: DONE! Complete/stable for release
   alert1: null
+  Date: '2026-08-29'
   hbcd_mods1: null
   duration: 5 min
   hbcd_mods2: null
@@ -453,7 +490,7 @@ pedsql:
 
     Martínez-Shaw ML, Del Río FJ, Sánchez-Sandoval Y. Spanish validation of the Pediatric Quality of Life Inventory (PedsQL™ 4.0) for parent report for toddlers (ages 2-4). Health Qual Life Outcomes. 2023 May 18;21(1):48. doi: [10.1186/s12955-023-02128-8](https://doi.org/10.1186/s12955-023-02128-8?urlappend=%3Futm_source%3Dresearchgate.net%26utm_medium%3Darticle). PMID: 37202825; PMCID: PMC10197329.
   respondent_category: Parent on Child
-  admin_notes: Minor updates to clean up formatting - marking as complete on my end!
+  admin_notes: COMPLETE
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/pedsql/
   email: leigh-anne.cioffredi@uvm.edu
   visits: V07, V09
@@ -482,7 +519,7 @@ pedsql:
   construct: Pediatric Quality of Life
 medhx_r3:
   Done (admin): Not yet started
-  status: Work in progress
+  status: Not started
   alert1: null
   Date: '2026-08-24'
   known_issue_3: null
@@ -503,7 +540,7 @@ medhx_r3:
   references: null
   alert2_title: null
   respondent_category: Parent on Child
-  admin_notes: made copy of 2.1 form to update for 3.0
+  admin_notes: Waiting on SME submission - made copy of 2.1 form to update for 3.0 as requested
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/medical-history/
   visits: V04, V06
   hbcd_mods3: null
@@ -941,7 +978,7 @@ foodins:
   measure: 2-item Food Insecurity
   construct: Food Insecurity
 gabi:
-  Done (admin): Waiting on SME response
+  Done (admin): DONE
   supp2_text: null
   status: README updated & ready for SME review
   alert1: Users of HBCD infant heart rate wearable sensor data must follow the study's data use guidelines and the conditions of the Data Use Certificate (DUC). These standards are in place to protect participant privacy, ensure scientific rigor, and promote respectful, non-stigmatizing research practices. Users should review relevant data warnings before downloading or analyzing infant heart rate sensor variables. This includes checking the data dictionary and instrument documentation for indicators such as incomplete recordings, periods of sensor removal, or discrepancies with setup/return metadata.
@@ -964,9 +1001,7 @@ gabi:
     Pini, N., Ong, J. L., Yilmaz, G., Chee, N. I. Y. N., Siting, Z., Awasthi, A., Biju, S., Kishan, K., Patanaik, A., Fifer, W. P., & Lucchini, M. (2022). An automated heart rate-based algorithm for sleep stage classification: Validation using conventional polysomnography and an innovative wearable electrocardiogram device. _Frontiers in Neuroscience_, 16, 974192. <https://doi.org/10.3389/fnins.2022.974192>
     Zinzuwadia, A., & Singh, J. P. (2022). Wearable devices-addressing bias and inequity. _The Lancet Digital Health_, 4(12), e856–e857. <https://doi.org/10.1016/S2589-7500(22)00194-7>
   respondent_category: Child on Self
-  admin_notes: |-
-    8/24: I added the raw BIDS filenames - is there anything else you would like to add or is this README page now complete?
-    8/20: Per Nicolo, I have removed mention of derivatives.
+  admin_notes: '8/24: removed derivatives per Nico''s note and also added raw BIDS filenames in filetree - marking as complete for now, but feel free to submit further changes as needed'
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/sensors/gabi/
   email: np2600@cumc.columbia.edu
   visits: V02, V03
@@ -1668,16 +1703,22 @@ qmri:
   measure: Quantitative MRI
 dynamic:
   Done (admin): Waiting on SME response
-  supp2_text: null
+  supp2_text: |-
+    ##Transition in Care variable
+
+    The Transition in Care (TIC) variable in the dynamic table is derived from 2 measures: (a) the Transition in Care Screener, which is administered by Research Assistants prior to each visit starting with V2, and (b) the Transition in Care Questionnaire, which is completed by participants at V6 and V8. The TIC derived variable indicates whether or not a child ever experienced a change in primary caregiver, either temporary or permanent, and reflects informal placement with relatives as well as formal placements like foster care and kinship care. (defined as 0 = not experienced a TIC, and 1 = experienced a TIC).
+
+    (link to TIC Screener and TIC Questionnaire READ ME documents, which provide more details and references)
   status: Work in progress
   alert1: When using HBCD data, all data users must follow responsible use requirements described in the Data Use Certification (DUC). When conceptualizing studies, analyzing data, and communicating findings using demographic, socioeconomic, household, caregiver, neighborhood, or other social and environmental characteristics, researchers should consider approaches that avoid stigmatizing individuals or groups and perpetuating harmful biases.
-  Date: '2026-08-24'
+  Date: '2026-08-29'
   hbcd_mods1: null
   alert1_title: ' Responsible Use of Demographic and Social Variables'
   duration: null
   hbcd_mods2: null
   warning1_title: Variables Are Not Available at Every Visit
   full_name: Dynamic Table
+  alert3: 'TIC information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
   warning4: null
   alert2: The Dynamic Table includes contextual measures linked to participants at specific study visits, including urban/rural classification and area-based social vulnerability measures. These variables characterize aspects of the geographic context associated with a participant at a designated time point and should not be interpreted as direct measures of an individual or family's characteristics or experiences. Researchers should consider the level at which each contextual variable is defined when selecting analyses and interpreting findings.
   assessment_type: Derived Data
@@ -1700,10 +1741,10 @@ dynamic:
     - Domain is now Participant Derived
     - See dynamic1 tab of google sheet [here](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?usp=sharing) to update dynamic table overview
     - other main text sections are stored under "Supplemental Text Seciont 1" in this form
-    - for changes not possible via this form, email Luci directly to request changes
+    - Changed status back to Work In Progress per Natalie
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/dynamic/
   email: nslopen@hsph.harvard.edu
-  visits: V01, V04, V06
+  visits: V01, V02, V04, V06
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Natalie Slopen
@@ -1718,14 +1759,15 @@ dynamic:
   supp3_text: null
   domain: Participant Derived
   release: '3.0'
+  alert3_title: Transition in Care Variable
   qc: |-
     - Data are visually inspected for unexpected values, distributions, missingness patterns, and other apparent anomalies.
     - Potential issues identified during review are flagged for further investigation as needed.
   administration: null
   resource1_url: https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177
-  scoring: "The Dynamic Table does not use conventional scoring procedures. It combines source variables with derived or harmonized variables, organized by child and scheduled study visit/session.\n\nVariables retain the value associated with the relevant visit or are constructed from source data associated with that visit. \n\nFor primary caregiver education and household income, source responses are collapsed into standardized categories for use in the Dynamic Table. The longitudinal variables are intended to represent the caregiver or household information applicable at the corresponding study visit.\n\nHousehold size is a constructed measure. At V01, household size is calculated from the Adult Demographics form by summing the reported number of adults aged 18 years and older and children aged 17 years and younger, and then adding one because the questions exclude the respondent. At V04 and later applicable visits, household size is calculated from the Child Demographics form by summing\
-    \ the reported number of adults and children and then adding one because the questions exclude the focal HBCD child.\n\nVisit-specific contextual variables, including urban/rural classification and Social Vulnerability Index measures, are linked to the residential information associated with the corresponding visit.\n\nAdditional derivation details for caregiver transitions, gestational age at visit, missed-visit status, and substance-use flags are TBD pending confirmation from the responsible Working Groups/DCC."
-  changelog: this is still in progress - to be confirmed after our WG meeting later today
+  scoring: The Dynamic Table does not use conventional scoring procedures. It combines source variables with derived or harmonized variables, organized by child and scheduled study visit/session.  Variables retain the value associated with the relevant visit or are constructed from source data associated with that visit.   For primary caregiver education and household income, source responses are collapsed into standardized categories for use in the Dynamic Table. The longitudinal variables are intended to represent the caregiver or household information applicable at the corresponding study visit.  Household size is a constructed measure. At V01, household size is calculated from the Adult Demographics form by summing the reported number of adults aged 18 years and older and children aged 17 years and younger, and then adding one because the questions exclude the respondent. At V04 and later applicable visits, household size is calculated from the Child Demographics form by summing the
+    reported number of adults and children and then adding one because the questions exclude the focal HBCD child.  Visit-specific contextual variables, including urban/rural classification and Social Vulnerability Index measures, are linked to the residential information associated with the corresponding visit.
+  changelog: this should be considered in draft form until the data table is finalized
   resources: null
   supp1_text: |-
     ## HBCD Cohorts & Caregiver Types
@@ -2254,12 +2296,12 @@ urine:
   construct: Drug Panel, Toxins
 maps_easi:
   Done (admin): Not yet started
-  status: Work in progress
+  status: Not started
   full_name: Multidimensional Assessment Profile Temper Loss Scale-EASI (MAPS-EASI TL), Toddlerhood (Short Form)
   assessment_type: Questionnaire
   table_name: mh_cg_mapstl_easi
   respondent_category: Parent on Child
-  admin_notes: None
+  admin_notes: Waiting on SME submission
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps-easi/
   visits: V07, V09
   primary_data_type: Tabulated data
@@ -2583,9 +2625,9 @@ vep:
   measure: VEP
   construct: null
 nsc:
-  Done (admin): Waiting on SME response
+  Done (admin): DONE
   supp2_text: null
-  status: Work in progress
+  status: DONE! Complete/stable for release
   alert1: 'Incarceration or arrest information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
   Date: '2026-08-24'
   hbcd_mods1: null
@@ -2598,7 +2640,7 @@ nsc:
   warning2: null
   references: 'Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., ... & Wildeman, C. (2019). What percentage of Americans have ever had a family member incarcerated?: Evidence from the family history of incarceration survey (FamHIS). _Socius_, _5_, 2378023119829332. <https://doi.org/10.1177/237802311982>'
   respondent_category: Parent on Self
-  admin_notes: README autoupdated with some minor cleanup 8/24 - please change the status to "Ready for README update" or "DONE! .." when final changes are complete!
+  admin_notes: COMPLETE
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
   email: japoehlmann@wisc.edu
   visits: V07, V09
@@ -2807,12 +2849,12 @@ visit_info:
   construct: null
 mchat:
   Done (admin): Not yet started
-  status: Work in progress
+  status: Not started
   full_name: Modified Checklist for Autism in Toddlers R/F
   assessment_type: Questionnaire
   table_name: mh_ch_mchat
   respondent_category: Parent on Child
-  admin_notes: None
+  admin_notes: Waiting on SME submission
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
   visits: V07
   primary_data_type: Tabulated data
@@ -2959,7 +3001,7 @@ echo:
   construct: School
 illumina_r3:
   Done (admin): Not yet started
-  status: README updated & ready for SME review
+  status: Not started
   alert1: Data users are prohibited from using HBCD data, including genomic data, to identify participants or their relatives. You accessed these data under a Data Use Certification (DUC) agreement in which you and your institution agreed that you would not attempt to establish the individual identity of any study participants or their relatives. You also agreed to adhere to a minimum cell threshold of 10 in any public reporting of data (i.e., publications, posters, or other presentations). Protecting participants’ anonymity demonstrates respect for them and minimizes their research-related risks.
   hbcd_mods1: null
   alert1_title: Anonymity
@@ -2985,7 +3027,7 @@ illumina_r3:
     Meyer, M. N., Appelbaum, P. S., Benjamin, D. J., Callier, S. L., Comfort, N., Conley, D., Freese, J., Garrison, N. A., Hammonds, E. M., Harden, K. P., Lee, S. S.-J., Martin, A. R., Martschenko, D. O., Neale, B. M., Palmer, R. H. C., Tabery, J., Turkheimer, E., Turley, P., & Parens, E. (2023). Wrestling with social and behavioral genomics: Risks, potential benefits, and ethical responsibility. _The Hastings Center Report_, 53 Suppl 1, S2–S49. <https://doi.org/10.1002/hast.1477>
   alert2_title: Population Descriptors
   respondent_category: null
-  admin_notes: null
+  admin_notes: Waiting on SME submission for required updates for 3.0 as needed
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/illumina-gda-gwas/
   visits: Samples are assayed from one sample (from parent and child), but may come from any visit (V01-V06) based on DNA yields.
   hbcd_mods3: null
@@ -3203,7 +3245,7 @@ static:
     Race and ethnicity variables are computed from [ACS](https://www.census.gov/programs-surveys/acs.html) race and ethnicity items derived from administrative records collected during screening. Combined race and ethnicity variables are constructed following current federal standards. Participants who identify as **Hispanic or Latino** are categorized as `Hispanic`, regardless of race. Participants who select more than one race are categorized as **Multiracial**, with aggregation performed by either **ethnicity** based on Hispanic identity (_Multiracial (Hispanic)_ or _Multiracial (non-Hispanic)_) or **race** based on Black/African American identity (_Multiracial (Black)_ or _Multiracial (non-Black)_).
   status: Work in progress
   alert1: When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables such as race, ethnicity, country of origin, and socioeconomic data, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.
-  Date: '2026-08-24'
+  Date: '2026-08-29'
   hbcd_mods1: null
   alert1_title: General Considerations
   duration: null
@@ -3224,12 +3266,10 @@ static:
   respondent_category: null
   admin_notes: |-
     - I have set up a [shared google sheet ](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177)where you can update the table text (this sheet is autoparsed to populate the webpage)
-    - contact Luci for changes you would like to make that are not possible via this form
-
-    8/24: page was updated as part of updates made to other instrument pages FYI!
+    - Page has been updated based on recent changes and changed status back to WIP per Natalie's note
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/static/
   email: nslopen@hsph.harvard.edu
-  visits: V01, V04, V06
+  visits: V01, V02, V04, V06
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Natalie Slopen
@@ -3260,7 +3300,7 @@ static:
   administration: null
   resource1_url: https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177
   scoring: N/A
-  changelog: still in progress but made a few updates -- will make more later today after our group meeting
+  changelog: this is ready for ReadMe review, but should be considered in progress until the table is created and finalized
   resources: null
   supp1_text: |-
     ## Age, Sex, Baseline Socioeconomic & Other Variables
@@ -3368,11 +3408,11 @@ subst:
   measure: Substance Use Patterns in Pregnancy
   construct: Substance Use in Pregnancy
 nbtb:
-  Done (admin): Waiting on SME response
+  Done (admin): DONE
   supp2_text: null
-  status: Work in progress
+  status: DONE! Complete/stable for release
   alert1: Performance of the NIH Baby Toolbox reflects the child's developmental status, but various factors might influence the results of the assessment that should be taken into account.
-  Date: '2026-08-24'
+  Date: '2026-08-29'
   hbcd_mods1: null
   duration: V03 45-60 min / V04 15-20 min / V06-40-60 min
   hbcd_mods2: null
@@ -3398,7 +3438,9 @@ nbtb:
 
     NIH Baby Toolbox. (n.d.). _Cognition assessments_ (Page 2 of 3). Retrieved August 21, 2026, from <https://nihbabytoolbox.org/domain/cognition/page/2/>
   respondent_category: Child on Self
-  admin_notes: '8/24: update to include all BTB (1 Language & 2 Cognitive/Executive Function/Memory) per SME request! please mark as done if complete'
+  admin_notes: |-
+    8/29: marking this as DONE, feel free to submit further changes if needed however
+    8/24: update to include all BTB (1 Language & 2 Cognitive/Executive Function/Memory) per SME request! please mark as done if complete
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb/
   email: jkabl01@emory.edu
   visits: V03, V04, V06
@@ -3427,7 +3469,7 @@ nbtb:
   resources: null
   supp1_text: null
   measure: NIH BTB
-  construct: Cognition/Executive Function/Memory
+  construct: Cognition/Executive Function/Memory, Language
 eeg:
   supp2_text: null
   status: README updated & ready for SME review
@@ -3768,6 +3810,7 @@ blood:
   supp2_text: null
   status: DONE! Complete/stable for release
   alert1: null
+  Date: '2026-08-29'
   warning3_title: Missing Data Due to Contamination
   hbcd_mods1: null
   duration: 5 min
@@ -3782,7 +3825,9 @@ blood:
   warning2_title: Large Gaps Between Collection and Analysis Dates
   references: 'Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <https://doi.org/10.1016/j.dcn.2024.101451>'
   respondent_category: Parent on Self
-  admin_notes: "8/24: marking as complete now \n8/20 Luci note: I have updated the README based on the changes submitted by Elinor Aug 20th (and the changes should render shortly) and reviewed the page for accuracy. I made one minor formatting change to turn the short list in the description to a single sentence (\"PEth is confirmatory-testing only, with **20phsphtdetbsp (`c_peth_b_cat`)** as the confirmatory test and **Ethanol (`c_ethanol_b`)** as the class.\"). I will mark as complete for now and follow up with Elinor via email to inform her (while I'm still perfecting the workflow to hopefully add automated notifications and such)"
+  admin_notes: |-
+    8/24: COMPLETE
+    8/20 Luci note: I have updated the README based on the changes submitted by Elinor Aug 20th (and the changes should render shortly) and reviewed the page for accuracy. I made one minor formatting change to turn the short list in the description to a single sentence ("PEth is confirmatory-testing only, with **20phsphtdetbsp (`c_peth_b_cat`)** as the confirmatory test and **Ethanol (`c_ethanol_b`)** as the class."). I will mark as complete for now and follow up with Elinor via email to inform her (while I'm still perfecting the workflow to hopefully add automated notifications and such)
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/blood
   email: sullivel@ohsu.edu
   visits: V01
