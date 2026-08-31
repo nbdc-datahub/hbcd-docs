@@ -20,8 +20,8 @@ OUTPUT_FILE = Path("docs/data/instruments.yml")
 CSV_OUTPUT_FILE = Path("docs/data/instruments.csv")
 
 # Set this to an Airtable view name or ID to limit exported records
-# (e.g. AIRTABLE_VIEW = "Website Export")
-AIRTABLE_VIEW: Optional[str] = None
+# AIRTABLE_VIEW: Optional[str] = None
+AIRTABLE_VIEW: Optional[str] = "2.1 READMEs"
 
 # Airtable field used as the key in the generated YAML.
 # TO DO: eventually change this to "slug"
