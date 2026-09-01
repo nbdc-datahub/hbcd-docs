@@ -3,7 +3,7 @@
 ========================================================= */
 table {
     border-collapse: collapse;
-    width: 100% !important;
+    width: 100%;
     table-layout: fixed;
     font-size: 1em;
 }
@@ -62,7 +62,7 @@ th, td {
    COMPACT TABLE W/ NO VERTICAL LINES
 ========================================================= */
 .compact-table-no-vertical-lines {
-  width: 100% !important;
+  width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
   font-size: 0.95em !important;
