@@ -2,7 +2,7 @@
 
 ## Raw MR Data QC
 
-Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing. Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, manual visual review is only performed for series that fail automated QC. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC. Raw MR QC metrics are provided in the raw BIDS `scans.tsv` files in the release ([see details](../../datacuration/file-based-data.md#participant-session-scan-level-data)).
+Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing. Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, manual visual review is only performed for series that fail automated QC. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC. Raw MR QC metrics are provided in the raw BIDS `scans.tsv` files in the release ([see included fields relevant to QC](tables/scans-tsv.html)).
 
 <div id="compliance" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
