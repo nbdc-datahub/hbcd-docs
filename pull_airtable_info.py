@@ -18,6 +18,7 @@ OUTPUT_FILE = Path("data/instruments.yml")
 
 # Set this to an Airtable view name or ID to limit exported records (e.g. AIRTABLE_VIEW = "Website Export")
 AIRTABLE_VIEW: Optional[str] = "3.0 READMEs"
+# AIRTABLE_VIEW: Optional[str] = None
 
 # Airtable field used as the key in the generated YAML. TO DO: eventually change this to "slug"
 KEY_FIELD = "id"
@@ -48,6 +49,15 @@ LiteralDumper.add_representer(
 # Removes backslashes used to escape Markdown punctuation (e.g. Fig1\_nails.png  -> Fig1_nails.png)
 MARKDOWN_ESCAPE_PATTERN = re.compile(
     r"\\([\\`*_{}\[\]()<>#+.!|>\-~])"
+)
+
+# Airtable rich-text conversion may wrap highlighted/underlined text in the
+# PyMdown "mark" syntax: ++text++. MkDocs renders those delimiters literally
+# unless the mark extension is enabled, so remove only matched pairs. This
+# deliberately leaves ordinary text such as "C++" unchanged.
+MARKDOWN_MARK_PATTERN = re.compile(
+    r"\+\+(?=\S)(.+?\S)\+\+",
+    flags=re.DOTALL,
 )
 
 # Retrieve all records available from Airtable
@@ -108,6 +118,21 @@ def unescape_markdown(value: str) -> str:
     return value
 
 
+def remove_markdown_mark_delimiters(value: str) -> str:
+    """Unwrap paired ``++text++`` markup without removing ordinary plus signs."""
+
+    previous_value = None
+
+    while value != previous_value:
+        previous_value = value
+        value = MARKDOWN_MARK_PATTERN.sub(
+            r"\1",
+            value,
+        )
+
+    return value
+
+
 def clean_html_attribute_escapes(value: str) -> str:
     """
     Remove unnecessary escape backslashes inside raw HTML tags. Normally the general Markdown cleaup will handle this, but this is an additional pass to catch backslashes before URL-safe punctuation that may appear in src, href, id, class, other HTML attributes
@@ -138,6 +163,7 @@ def clean_string_value(
     """
 
     value = unescape_markdown(value)
+    value = remove_markdown_mark_delimiters(value)
     value = clean_html_attribute_escapes(value)
 
     # Replace non-breaking spaces with regular spaces.
