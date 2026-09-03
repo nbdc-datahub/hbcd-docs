@@ -2,8 +2,103 @@
 
 ## Raw MR Data QC
 
-Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing. Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, manual visual review is only performed for series that fail automated QC. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC. Raw MR QC metrics are provided in the raw BIDS `scans.tsv` files in the release ([see included fields relevant to QC](tables/scans-tsv.html)).
+Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing. Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, manual visual review is only performed for series that fail automated QC. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC. Raw MR QC metrics are provided in the raw BIDS `scans.tsv` files in the release.
 
+<div id="scans-tsv" class="banner" onclick="toggleCollapse(this)">
+<span class="emoji"><i class="fa fa-circle-check"></i></span>
+<span class="text-with-link">
+<span class="text">QC Metrics Included in SCANS TSV Files</span>
+<a class="anchor-link" href="#scans-tsv" title="Copy link"><i class="fa-solid fa-link"></i></a>
+</span>
+<span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<table class="compact-table-no-vertical-lines">
+<thead><tr><th>Field</th><th>Description</th></tr></thead>
+<tbody>
+<tr class="table-group-row"><td colspan="2">[ Summary QC Metric ]</td></tr>
+<tr><td><code>QC</code></td><td>Overall QC score: 1 (pass) or 0 (fail). If manual QC is not required, this equals <code>auto_qc_score</code></td></tr>
+
+<tr class="table-group-row"><td colspan="2">[ Manual QC Metrics ]</td></tr>
+<tr><td><code>notes</code></td><td>Optional notes from manual QC review</td></tr>
+<tr><td><code>nrev</code></td><td>Number of manual QC reviewers</td></tr>
+<tr><td><code>QU_cutoff</code></td><td>Qualitative manual QC score for FOV cutoff artifacts (dMRI, fMRI, and field maps)</td></tr>
+<tr><td><code>QU_line</code></td><td>Qualitative manual QC score for line artifacts (dMRI, fMRI, and field maps)</td></tr>
+<tr><td><code>QU_motion</code></td><td>Qualitative manual QC score for motion (sMRI and qMRI)</td></tr>
+<tr><td><code>QU_sus</code></td><td>Qualitative manual QC score for susceptibility artifacts (dMRI, fMRI, and field maps)</td></tr>
+
+<tr class="table-group-row"><td colspan="2">[ Automated QC Metrics ]</td></tr>
+<tr><td><code>AdditionalInfo</code></td><td>Notes on classification and protocol compliance</td></tr>
+<tr><td><code>aqc_motion</code></td><td>Automated motion QC score for sMRI</td></tr>
+<tr><td><code>auto_qc_notes</code></td><td>Reason for automated QC failure</td></tr>
+<tr><td><code>auto_qc_score</code></td><td>Automated QC score: 1 (pass) or 0 (fail)</td></tr>
+<tr><td><code>b0_mean</code></td><td>Mean b=0 image intensity within the brain mask</td></tr>
+<tr><td><code>b0_{median|std}</code></td><td>Median or standard deviation of b=0 image intensity within the brain mask</td></tr>
+<tr><td><code>bad_philips_exam_card_values</code></td><td>Whether the QALAS exam card used for acquisition contained incorrect values</td></tr>
+<tr><td><code>brain_entropy</code></td><td>Entropy of voxel intensities within the brain mask</td></tr>
+<tr><td><code>brain_{mean|std|SNR}</code></td><td>Mean, standard deviation, or SNR of image intensity within the brain mask</td></tr>
+<tr><td><code>brain_{min|max|median}</code></td><td>Minimum, maximum, or median image intensity within the brain mask</td></tr>
+<tr><td><code>brain_{n|f}vox_max</code></td><td>Number or fraction of voxels within the brain mask at maximum image intensity</td></tr>
+<tr><td><code>brain_tSNR_{mean|median|std}</code></td><td>Mean, median, or standard deviation of temporal SNR within the brain mask</td></tr>
+<tr><td><code>brainvol</code></td><td>Volume of the brain mask (mm<sup>3</sup>)</td></tr>
+<tr><td><code>censor_thresh</code></td><td>Threshold used to censor outlier slices (dMRI)</td></tr>
+<tr><td><code>Completed</code></td><td>Whether the series contains the expected number of files</td></tr>
+<tr><td><code>cutoff</code></td><td>Sum of the dorsal and ventral cutoff scores</td></tr>
+<tr><td><code>{dorsal|ventral}_cutoff</code></td><td>Dorsal or ventral cutoff score</td></tr>
+<tr><td><code>{DT|RSI}err_rel</code></td><td>Median DTI or RSI RMS error across all frames and voxels, relative to the within-voxel RMS signal</td></tr>
+<tr><td><code>{DT|RSI}err_rel_b{X}</code></td><td>Median DTI or RSI RMS error across voxels for b-value <code>X</code>, relative to the within-voxel RMS b=0 signal (<code>X</code> = <code>0–3000</code>)</td></tr>
+<tr><td><code>DTerr_{mean|median|std}</code></td><td>Mean, median, or standard deviation across frames of RMS residual error relative to RMS signal within brain voxels</td></tr>
+<tr><td><code>FA_{mean|median}</code></td><td>Mean or median fractional anisotropy within the brain mask</td></tr>
+<tr><td><code>FA_std</code></td><td>Standard deviation of fractional anisotropy within the brain mask</td></tr>
+<tr><td><code>fwhm_x</code></td><td>Full width at half maximum spatial smoothness along the x-axis (left–right)</td></tr>
+<tr><td><code>fwhm_y</code></td><td>Full width at half maximum spatial smoothness along the y-axis (anterior–posterior)</td></tr>
+<tr><td><code>fwhm_z</code></td><td>Full width at half maximum spatial smoothness along the z-axis (inferior–superior)</td></tr>
+<tr><td><code>FWHM{x|y|z}_b{X}</code></td><td>FWHM spatial smoothness along the x-, y-, or z-axis (L–R, A–P, or I–S) for b-value <code>X</code> (<code>X</code> = <code>0–3000</code>)</td></tr>
+<tr><td><code>HBCD_compliant</code></td><td>Whether the series passes the minimal protocol compliance check</td></tr>
+<tr><td><code>line_max_{score|count}</code></td><td>Maximum line artifact score or count across frames</td></tr>
+<tr><td><code>line_mean_{score|count}</code></td><td>Mean line artifact score or count across frames</td></tr>
+<tr><td><code>line_nframes</code></td><td>Number of frames with line artifacts</td></tr>
+<tr><td><code>loris_qc_status</code></td><td>Pass/fail value mapped from the UCSD QC JSON file</td></tr>
+<tr><td><code>loris_selected</code></td><td>Whether the file is selected for further processing</td></tr>
+<tr><td><code>max_{dx|dy|dz|rx|ry|rz}</code></td><td>Maximum absolute x-, y-, or z-axis translation (<code>d</code>) or rotation (<code>r</code>) (mm)</td></tr>
+<tr><td><code>max_nbad_frames_per_frame</code></td><td>Maximum number of outlier frames identified for any frame</td></tr>
+<tr><td><code>max_nbad_frames_per_slice</code></td><td>Maximum number of outlier frames identified for any slice</td></tr>
+<tr><td><code>MD_{mean|median}</code></td><td>Mean or median mean diffusivity within the brain mask</td></tr>
+<tr><td><code>MD_std</code></td><td>Standard deviation of mean diffusivity within the brain mask</td></tr>
+<tr><td><code>mean_{motion|trans|rot}</code></td><td>Mean framewise displacement, translation, or rotation (mm)</td></tr>
+<tr><td><code>nbad_{frames|slices}</code></td><td>Number of frames or slices containing outlier slices or frames (dMRI)</td></tr>
+<tr><td><code>nbad_{frames|slices}_b{X}</code></td><td>Number of frames or slices containing outlier slices or frames for b-value <code>X</code> (dMRI; <code>X</code> = <code>0–3000</code>)</td></tr>
+<tr><td><code>nbad_frame_slices</code></td><td>Number of outlier frame–slice combinations (dMRI)</td></tr>
+<tr><td><code>nbad_frame_slices_b{X}</code></td><td>Number of outlier frame–slice combinations for b-value <code>X</code> (dMRI; <code>X</code> = <code>0–3000</code>)</td></tr>
+<tr><td><code>nframes_b{X}</code></td><td>Number of frames for b-value <code>X</code> (<code>X</code> = <code>0–3000</code>)</td></tr>
+<tr><td><code>ngood_frames</code></td><td>Number of frames without outlier slices (dMRI)</td></tr>
+<tr><td><code>ngood_frames_b{X}</code></td><td>Number of frames without outlier slices for b-value <code>X</code> (dMRI; <code>X</code> = <code>0–3000</code>)</td></tr>
+<tr><td><code>nonbrain_{mean|std|snr}</code></td><td>Mean, standard deviation, or SNR of image intensity outside the brain mask</td></tr>
+<tr><td><code>nreps</code></td><td>Number of repetitions or frames</td></tr>
+<tr><td><code>NumberOfFiles</code></td><td>Number of DICOM files</td></tr>
+<tr><td><code>NumberOfFilesExtra</code></td><td>Number of extra DICOM files received, including non-image, corrupt, or duplicate files</td></tr>
+<tr><td><code>NumberOfFilesMissing</code></td><td>Number of DICOM files apparently missing based on gaps in <code>InstanceNumber</code> values</td></tr>
+<tr><td><code>NumberOfFilesOrig</code></td><td>Number of DICOM files received before excluding non-image, corrupt, or extra files</td></tr>
+<tr><td><code>NumberOfFilesValid</code></td><td>Number of valid DICOM files after excluding non-image, corrupt, or extra files, but before excluding files from the final partial frame</td></tr>
+<tr><td><code>Num{Head|Neck|Spine}CoilElem</code></td><td>Number of head, neck, or spine coil elements</td></tr>
+<tr><td><code>part_of_a_pair</code></td><td>Whether the DWI file is part of a pair</td></tr>
+<tr><td><code>qc_selection</code></td><td>Whether the series is selected for manual QC</td></tr>
+<tr><td><code>qc_status</code></td><td>Manual QC review status, such as pending or complete</td></tr>
+<tr><td><code>revdisp</code></td><td>Whether manual QC reviewers disagreed</td></tr>
+<tr><td><code>subthresh_{02|03|04}</code></td><td>Number of seconds with framewise displacement below 0.2, 0.3, or 0.4 mm</td></tr>
+<tr><td><code>tSNR_b{X}</code></td><td>Median temporal SNR within the brain mask for b-value <code>X</code> (<code>X</code> = <code>0–3000</code>)</td></tr>
+</tbody>
+</table>
+</div>
+
+### Protocol Adherence & Completeness Checks
+Acquired imaging data are automatically uploaded to central servers, where they undergo automated protocol compliance and completeness checks. Data that fail are flagged for review and excluded from release until the issues are resolved.
+ 
+ - **Protocol compliance** is performed by extracting imaging parameters from DICOM headers to confirm that key parameters (e.g., voxel size, TR, orientation) match the expected scanner protocol. Out-of-compliance series are flagged for review, with site followup as necessary.
+ - **Completeness checks** verify that all expected series are present in each imaging session. Missing data may be caused by aborted scans, incomplete sessions, and/or incomplete data transfer. Valid sessions are expected to include: T1w & T2w, 2 resting state functional runs (each accompanied by fieldmaps acquired in AP/PA phase encoding directions), diffusion scans (acquired AP/PA), quantitative QALAS and B1 maps, and MRS scan and SVS localizer.
+
+### Automated QC
+<!-- 
 <div id="compliance" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-check"></i></span>
   <span class="text-with-link">
@@ -18,11 +113,9 @@ Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed 
 <p>Acquired imaging data are automatically uploaded to central servers, where they undergo automated protocol compliance and completeness checks. Data that fail are flagged for review and excluded from release until the issues are resolved.</p>
 <p><b>Protocol compliance</b> is performed by extracting imaging parameters from DICOM headers to confirm that key parameters (e.g., voxel size, TR, orientation) match the expected scanner protocol. Out-of-compliance series are flagged for review, with site followup as necessary.</p>
 <p><b>Completeness checks</b> verify that all expected series are present in each imaging session. Missing data may be caused by aborted scans, incomplete sessions, and/or incomplete data transfer. Valid sessions are expected to include: T1w & T2w, 2 resting state functional runs (each accompanied by fieldmaps acquired in AP/PA phase encoding directions), diffusion scans (acquired AP/PA), quantitative QALAS and B1 maps, and MRS scan and SVS localizer. </p>
-</div>
+</div> -->
 
-### Automated QC
-
-Data that pass [protocol adherence and completeness checks](#compliance) move to the next stage of automated QC. Automated QC metrics are calculated for modalities as follows:
+Data that pass protocol adherence and completeness checks move to the next stage of automated QC, calculated for modalities as follows:
 
 <table class="compact-table-no-vertical-lines readme-intro">
   <thead>
