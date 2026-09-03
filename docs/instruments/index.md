@@ -542,7 +542,7 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
 </tr>
 <tr>
   <td><a href="mri/sfmri-processing/#mriqc">MRIQC</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
-  <td>Raw BIDS QC Metrics</td>
+  <td>MRIQC Pipeline IQM Results</td>
   <td><code>img_mriqc_<span class="blue-text">{T1w|T2w|bold}</span></code></td>
 </tr>
 <tr>
