@@ -1184,6 +1184,7 @@ smri:
   assessment_type: Direct Assessment
   table_name: null
   references: |-
+    Adamson, C. L., Alexander, B., Ball, G., Beare, R., Cheong, J. L. Y., Spittle, A. J., Doyle, L. W., Anderson, P. J., Seal, M. L., & Thompson, D. K. (2020). Parcellation of the neonatal cortex using Surface-based Melbourne Children’s Regional Infant Brain atlases (M-CRIB-S). _Scientific Reports_, 10(1), 4359. <https://doi.org/10.1038/s41598-020-61326-2>
     Andersen, M., Björkman-Burtscher, I. M., Marsman, A., Petersen, E. T., & Boer, V. O. (2019). Improvement in diagnostic quality of structural and angiographic MRI of the brain using motion correction with interleaved, volumetric navigators. _PLoS One_, 14(5), e0217145. <https://doi.org/10.1371/journal.pone.0217145>
     Casey, B. J., Cannonier, T., Conley, M. I., Cohen, A. O., Barch, D. M., Heitzeg, M. M., Soules, M. E., Teslovich, T., Dellarco, D. V., Garavan, H., Orr, C. A., Wager, T. D., Banich, M. T., Speer, N. K., Sutherland, M. T., Riedel, M. C., Dick, A. S., Bjork, J. M., Thomas, K. M., … ABCD Imaging Acquisition Workgroup. (2018). The Adolescent Brain Cognitive Development (ABCD) study: Imaging acquisition across 21 sites. _Developmental Cognitive Neuroscience_, 32, 43–54. <https://doi.org/10.1016/j.dcn.2018.03.001>
     Hendrickson, T. J., Reiners, P., Moore, L. A., Lundquist, J. T., Fayzullobekova, B., Perrone, A. J., Lee, E. G., Moser, J., Day, T. K. M., Alexopoulos, D., Styner, M., Kardan, O., Chamberlain, T. A., Mummaneni, A., Caldas, H. A., Bower, B., Stoyell, S., Martin, T., Sung, S., … Feczko, E. (2024). BIBSNet: A deep learning Baby image brain segmentation network for MRI scans. _In bioRxivorg_. <https://doi.org/10.1101/2023.03.22.533696>
@@ -1191,6 +1192,7 @@ smri:
     Myers, M. J., Labonte, A. K., Gordon, E. M., Laumann, T. O., Tu, J. C., Wheelock, M. D., Nielsen, A. N., Schwarzlose, R., Camacho, M. C., Warner, B. B., Raghuraman, N., Luby, J. L., Barch, D. M., Fair, D. A., Petersen, S. E., Rogers, C. E., Smyser, C. D., & Sylvester, C. M. (2023). Functional parcellation of the neonatal brain. In _bioRxivorg_. <https://doi.org/10.1101/2023.11.10.566629>
     Tisdall, M. D., Reuter, M., Qureshi, A., Buckner, R. L., Fischl, B., & van der Kouwe, A. J. W. (2016). Prospective motion correction with volumetric navigators (vNavs) reduces the bias and variance in brain morphometry induced by subject motion. _Neuroimage_, 127, 11-22. <https://doi.org/10.1016/j.neuroimage.2015.11.054>
     White, N., Roddey, C., Shankaranarayanan, A., Han, E., Rettmann, D., Santos, J., Kuperman, J., & Dale, A. (2010). PROMO: Real-time prospective motion correction in MRI using image-based tracking. _Magnetic Resonance in Medicine_, 63(1), 91–105. <https://doi.org/10.1002/mrm.22176>
+    Zöllei, L., Iglesias, J. E., Ou, Y., Grant, P. E., & Fischl, B. (2020). Infant FreeSurfer: An automated segmentation and surface extraction pipeline for T1-weighted neuroimaging data of infants 0-2 years. _NeuroImage_, 218(116946), 116946. <https://doi.org/10.1016/j.neuroimage.2020.116946>
   respondent_category: Child on Self
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/latest/instruments/mri/smri/
@@ -3030,13 +3032,12 @@ illumina_r3:
     Meyer, M. N., Appelbaum, P. S., Benjamin, D. J., Callier, S. L., Comfort, N., Conley, D., Freese, J., Garrison, N. A., Hammonds, E. M., Harden, K. P., Lee, S. S.-J., Martin, A. R., Martschenko, D. O., Neale, B. M., Palmer, R. H. C., Tabery, J., Turkheimer, E., Turley, P., & Parens, E. (2023). Wrestling with social and behavioral genomics: Risks, potential benefits, and ethical responsibility. _The Hastings Center Report_, 53 Suppl 1, S2–S49. <https://doi.org/10.1002/hast.1477>
   alert2_title: Population Descriptors
   respondent_category: null
-  admin_notes: Waiting on SME submission for required updates for 3.0 as needed
+  admin_notes: Illumina is complex compared to most other pages , so let's just use the google docs instead of this form for now. - https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?tab=t.gi9ky13h9emu
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/illumina-gda-gwas/
   email: lmoore@umn.edu
   visits: Samples are assayed from one sample (from parent and child), but may come from any visit (V01-V06) based on DNA yields.
   hbcd_mods3: null
   primary_data_type: Concatenated data
-  submitter_name: luci
   alert4: null
   acronym: GDA GWAS
   warning3: null
@@ -3047,11 +3048,6 @@ illumina_r3:
     ## Instrument Details
 
     The genomic dataset generated from the **Illumina Global Diversity Array (GDA GWAS)** includes batch metadata and interlinked PLINK files (`.bed`, `.bim`, `.fam`) aligned to the **GRCh38/hg38 Build**. The dataset is provided in the release as concatenated data:
-
-    - `batch.info`: Plain-text file mapping participants to genotyping batches
-    - `hbcd.bed` ([PLINK 1.9 .bed](https://www.cog-genomics.org/plink/1.9/formats#bed), distinct from UCSC BED): Binary genotype file
-    - `hbcd.bim` ([PLINK 1.9 .bim](https://www.cog-genomics.org/plink/1.9/formats#bim)): Variant information (chromosome, rsID, position, alleles)
-    - `hbcd.fam` ([PLINK 1.9 .fam](https://www.cog-genomics.org/plink/1.9/formats#fam)): Participant information
   slug: illumina-global-diversity-gwas-array-3-0-
   supp3_text: null
   domain: Biospecimen & Omics
@@ -3066,7 +3062,6 @@ illumina_r3:
     - GDC Genomics QC pipeline analysis - see details and summary statistics [below](#gdc-genomics-qc-pipeline-analysis).
   administration: In-person
   scoring: null
-  changelog: '- test updates submitted by Luci to confirm form is working'
   resources: null
   supp1_text: |-
     ## Release Data
@@ -3585,6 +3580,7 @@ fmri:
     Dosenbach, N. U. F., Koller, J. M., Earl, E. A., Miranda-Dominguez, O., Klein, R. L., Van, A. N., Snyder, A. Z., Nagel, B. J., Nigg, J. T., Nguyen, A. L., Wesevich, V., Greene, D. J., & Fair, D. A. (2017). Real-time motion analytics during brain MRI improve data quality and reduce costs. _NeuroImage_, 161, 80-93. <https://doi.org/10.1016/j.neuroimage.2017.08.025>
     Eggebrecht, A. T., Elison, J. T., Feczko, E., Todorov, A., Wolff, J. J., Kandala, S., Adams, C. M., Snyder, A. Z., Lewis, J. D., Estes, A. M., Zwaigenbaum, L., Botteron, K. N., McKinstry, R. C., Constantino, J. N., Evans, A., Hazlett, H. C., Dager, S., Paterson, S. J., Schultz, R. T., … Pruett, J. R., Jr. (2017). Joint attention and brain functional connectivity in infants and toddlers. _Cerebral Cortex (New York, N.Y.: 1991)_, 27(3), 1709–1720. [doi: 10.1093/cercor/bhw403](https://doi.org/10.1093/cercor/bhw403)
     Fair, D. A., Schlaggar, B. L., Cohen, A. L., Miezin, F. M., Dosenbach, N. U. F., Wenger, K. K., Fox, M. D., Snyder, A. Z., Raichle, M. E., & Petersen, S. E. (2007). A method for using blocked and event-related fMRI data to study “resting state” functional connectivity. _NeuroImage_, 35(1), 396–405. [doi: 10.1016/j.neuroimage.2006.11.051](https://doi.org/10.1016/j.neuroimage.2006.11.051)
+    Goncalves, M., Moser, J., Madison, T. J., McCollum, R., Lundquist, J. T., Fayzullobekova, B., Hadera, L., Pham, H. H. N., Moore, L. A., Houghton, A., Conan, G., Styner, M. A., Alexopoulos, D., Smyser, C. D., Stoyell, S. M., Koirala, S., Nelson, S. M., Weldon, K. B., Lee, E., … Fair, D. A. (2025). FMRIPrep Lifespan: Extending A robust pipeline for functional MRI preprocessing to developmental neuroimaging. _In bioRxivorg._ <https://doi.org/10.1101/2025.05.14.654069>
     Gratton, C., Dworetsky, A., Coalson, R. S., Adeyemo, B., Laumann, T. O., Wig, G. S., Kong, T. S., Gratton, G., Fabiani, M., Barch, D. M., Tranel, D., Miranda-Dominguez, O., Fair, D. A., Dosenbach, N. U. F., Snyder, A. Z., Perlmutter, J. S., Petersen, S. E., & Campbell, M. C. (2020). Removal of high frequency contamination from motion estimates in single-band fMRI saves data without biasing functional connectivity. _NeuroImage_, 217(116866), 116866. [doi: 10.1016/j.neuroimage.2020.116866](https://doi.org/10.1016/j.neuroimage.2020.116866)
     Power, J. D., Barnes, K. A., Snyder, A. Z., Schlaggar, B. L., & Petersen, S. E. (2012). Spurious but systematic correlations in functional connectivity MRI networks arise from subject motion. _NeuroImage_, 59(3), 2142–2154. [doi: 10.1016/j.neuroimage.2011.10.018](https://doi.org/10.1016/j.neuroimage.2011.10.018)
     Power, J. D., Mitra, A., Laumann, T. O., Snyder, A. Z., Schlaggar, B. L., & Petersen, S. E. (2014). Methods to detect, characterize, and remove motion artifact in resting state fMRI. _NeuroImage_, 84, 320–341. [doi: 10.1016/j.neuroimage.2013.08.048](https://doi.org/10.1016/j.neuroimage.2013.08.048)
