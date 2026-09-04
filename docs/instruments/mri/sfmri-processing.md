@@ -46,7 +46,7 @@ HBCD structural and functional MRI data are processed through a sequence of BIDS
 
 --- 
 
-### BIBSNet
+<!-- ### BIBSNet
 
 BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentation (<a href="https://doi.org/10.1101/2023.03.22.533696">Hendrickson et al. 2024</a>). The <a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet pipeline</a> generates native-space brain segmentations and brain masks (as well as <code>volumes.tsv</code> files with ROI volume statistics), which are fed into Infant fMRIPrep for use in anatomical preprocessing and surface reconstruction.
 
@@ -62,11 +62,11 @@ hbcd/
                     └── sub-[ID]_ses-[V0X]_space-<span class="var">{T1w|T2w}</span>_desc-aseg_brain-mask.nii.gz <span class="hashtag">(+JSON)</span>
 
 <span><a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
-</pre>
+</pre> -->
 
 ---
 
-### Infant fMRIPrep
+<!-- ### Infant fMRIPrep
 
 <a href="https://nibabies.readthedocs.io/en/latest/">Infant-fMRIPrep</a> (also known as NiBabies) performs minimal structural and functional MRI processing. It is an adapted version of <em>fMRIPrep</em> optimized for infant data processing, using age-appropriate templates and surface reconstruction methods optimized for early development (<a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>). Pipeline outputs include visual quality assessment reports, preprocessed derivatives, and confounds used for denoising in subsequent processing steps.
 
@@ -195,7 +195,7 @@ File Prefixes (anat/, fmap/ files): sub-[ID]_ses-[V0X]_hash-{HASH}_run-[X]
 File Prefixes (func/): sub-[ID]_ses-[V0X]_hash-{HASH}_task-rest_dir-PA_run-[X]
 <span class="var">STD_SPACE</span>: MNI152NLin6Asym_res-2 , T2w
 </pre>
-</div>
+</div> -->
 
 ---
 
@@ -354,7 +354,7 @@ find . -type f -name "*_symlink_s3_object" -print | while read path ; do
 </div>
 
 ---
-
+<!-- 
 ### XCP-D
 <a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a> performs functional MRI post-processing and noise regression from Infant-fMRIPrep derivatives, producing cleaned and parcellated data (<a href="#parc">see parcellation atlases</a>) ready for analysis.
 
@@ -443,7 +443,7 @@ hbcd/
 <span class="var">METRIC</span>  : curv , sulc , thickness  
 <span class="var">PARC</span>    : 4S-{156|256|...|1056}Parcels , Glasser , Gordon , MIDB , MyersLabonte , HCP (func/ only) , Tian  (func/ only)
 <span class="var">SURF</span>    : midthickness , pial , white , inflated , vinflated
-</div>
+</div> -->
 
 ## QC Pipelines: MRIQC & BME-X
 

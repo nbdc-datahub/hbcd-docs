@@ -143,11 +143,11 @@ nav:
             - MR Protocols: instruments/mri/index.md
             - Release Data: instruments/mri/release-data.md
             - Quality Control Procedures: instruments/mri/qc.md
+            - Derivatives Guide: instruments/mri/derivatives-guide.md
             - Pre-Scan Questionnaire & Forms: instruments/mri/mri-forms.md
-            - Structural & Functional MRI:
-                - Structural MRI: instruments/mri/smri.md
-                - Functional MRI: instruments/mri/fmri.md
-                - Processing & Derivatives: instruments/mri/sfmri-processing.md
+            - Structural MRI: instruments/mri/smri.md
+            - Functional MRI: instruments/mri/fmri.md
+            - sfMRI Processing & Derivatives: instruments/mri/sfmri-processing.md
             - Quantitative MRI: instruments/mri/qmri.md
             - Diffusion MRI: instruments/mri/dmri.md
             - MRS: instruments/mri/mrs.md 
