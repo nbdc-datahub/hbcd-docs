@@ -75,7 +75,8 @@ nav:
         - Neurocognition & Language:
             - Bayley-4: instruments/neurocog/bayley-4.md
             - Deferred Imitation: instruments/neurocog/dit.md
-            - MacArthur-Bates CDI: instruments/neurocog/macarthur-bates.md
+            - CDI Words & Gestures: instruments/neurocog/mbcdi-1.md
+            - CDI Words & Sentences: instruments/neurocog/mbcdi-2.md
             - MLDS: instruments/neurocog/mlds.md
             - NIH Baby Toolbox: instruments/neurocog/nbtb.md
             - SPM-2: instruments/neurocog/spm2.md

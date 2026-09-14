@@ -1,16 +1,16 @@
 # MacArthur-Bates CDI
 
-{{ readme_summary(instruments.mb_cdi) }}
-{{ alert_warning(instruments.mb_cdi) }}
-{{ data_warning(instruments.mb_cdi) }}
+{{ readme_summary(instruments.mbcdi) }}
+{{ alert_warning(instruments.mbcdi) }}
+{{ data_warning(instruments.mbcdi) }}
 {{ issues_banner() }}
 
 ## Instrument Details
 
-{{ instrument_description(instruments.mb_cdi) }}
-{{ hbcd_mods(instruments.mb_cdi) }}
-{{ scoring(instruments.mb_cdi) }}
-{{ references(instruments.mb_cdi) }}
+{{ instrument_description(instruments.mbcdi) }}
+{{ hbcd_mods(instruments.mbcdi) }}
+{{ scoring(instruments.mbcdi) }}
+{{ references(instruments.mbcdi) }}
 
 
 

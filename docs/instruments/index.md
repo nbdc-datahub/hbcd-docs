@@ -172,7 +172,7 @@ This page lists all instruments included in the current release, organized by do
   <td><code>ncl_ch_bayley</code></td>
 </tr>
 <tr>
-  <td><a href="neurocog/macarthur-bates">MacArthur-Bates CDI-I</a>
+  <td><a href="neurocog/mbcdi">MacArthur-Bates CDI-I</a>
 </td>
   <td>Language Development (Words & Gestures)</td>
   <td><code>ncl_ch_cdiwgen</code> <span class="subtle">(English)</span> /
