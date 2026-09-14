@@ -191,7 +191,7 @@ erica_r3:
     \ before continuing.\n\n \n\n##### Coding Reliability Statistics\n\n \n\nInter-rater reliability was quantified using a two-way mixed-effects intraclass correlation coefficient (ICC) (see table below). All codes were evaluated using ICC except for Caregiver Irritable Behavior. Due to its low base rate, this code was dichotomized and reliability was estimated using an unweighted kappa statistic. Updated reliability estimates may be provided in future data releases as additional data become available."
   measure: Early Regulation in Context Assessment [R3]
   construct: Emotional Regulation, Parenting, Caregiver-Child Relationship
-mb_cdi:
+mbcdi:
   status: README updated & ready for SME review
   alert1: The CDI forms are well-documented and widely used assessments. We note that percentile scores were calculated based on the norms described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023), see additional references below. See [HBCD Modifications](#hbcd-mod) for a description of how the CDI-WG is administered to children with exposure to different languages; users may want to consider the [Multilingual Language Development](../mlds) questionnaire in conjunction with the CDI.
   warning3_title: Benchmark Age
@@ -203,9 +203,7 @@ mb_cdi:
   warning4: null
   alert2: null
   assessment_type: Questionnaire
-  table_name: |-
-    ncl_ch_cdiwgen
-    ncl_ch_cdiwges
+  table_name: ncl_ch_cdiwgen; ncl_ch_cdiwges
   warning2: Note that in some cases, the caregiver endorsed all items in certain sections of the Web-CDI form. These cases are included in the released data as completed by the caregiver, but users may take caution in interpretation.
   warning2_title: Cases Where All Items Endorsed
   references: |-
@@ -214,6 +212,7 @@ mb_cdi:
     Marchman, V. A., & Dale, P. S. (2023). The MacArthur-Bates Communicative Development Inventories: Updates from the CDI advisory board. _Frontiers in Psychology_, 14, 1170303. <https://doi.org/10.3389/fpsyg.2023.1170303>
   respondent_category: Parent on Child
   admin_notes: copied from 2.1 README info
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mbcdi/
   visits: V04, V06
   hbcd_mods3: null
   primary_data_type: Tabulated data
@@ -3531,8 +3530,8 @@ mbcdi_2:
     Marchman, V. A., & Dale, P. S. (2023). The MacArthur-Bates Communicative Development Inventories: Updates from the CDI advisory board. _Frontiers in Psychology_, 14, 1170303. <https://doi.org/10.3389/fpsyg.2023.1170303>
   respondent_category: Parent on Child
   admin_notes: The content here is copied from the **Words and Gestures form**
-  README URL: https://docs.hbcdstudy.org/latest/instruments/neurocog/macarthur-bates/
-  visits: V04, V06
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mbcdi-2/
+  visits: V06, V07
   hbcd_mods3: null
   primary_data_type: Tabulated data
   alert4: null
