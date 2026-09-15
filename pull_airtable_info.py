@@ -17,8 +17,8 @@ AIRTABLE_TABLE_ID = os.environ["AIRTABLE_TABLE_ID"]
 OUTPUT_FILE = Path("data/instruments.yml")
 
 # Set this to an Airtable view name or ID to limit exported records (e.g. AIRTABLE_VIEW = "Website Export")
-AIRTABLE_VIEW: Optional[str] = "3.0 READMEs"
-# AIRTABLE_VIEW: Optional[str] = None
+# AIRTABLE_VIEW: Optional[str] = "3.0 READMEs"
+AIRTABLE_VIEW: Optional[str] = None
 
 # Airtable field used as the key in the generated YAML. TO DO: eventually change this to "slug"
 KEY_FIELD = "id"

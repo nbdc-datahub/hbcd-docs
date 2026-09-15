@@ -2,21 +2,21 @@
 
 # ERICA
 
-{{ readme_summary(instruments.erica) }}
-{{ alert_warning(instruments.erica) }}
-{{ data_warning(instruments.erica) }}
+{{ readme_summary(instruments.erica_r3) }}
+{{ alert_warning(instruments.erica_r3) }}
+{{ data_warning(instruments.erica_r3) }}
 {{ issues_banner() }}
 
 ---
 
 ## Instrument Details
 
-{{ instrument_description(instruments.erica) }}
-{{ hbcd_mods(instruments.erica) }}
-{{ scoring(instruments.erica) }}
+{{ instrument_description(instruments.erica_r3) }}
+{{ hbcd_mods(instruments.erica_r3) }}
+{{ scoring(instruments.erica_r3) }}
 
 <!-- ## Centralized Coding of ERICA Videos -->
-{{ suppx(instruments.erica, "1") }}
+{{ suppx(instruments.erica_r3, "1") }}
 
 <!-- HARD-CODED TABLE -->
 {{ csv_table(
@@ -30,7 +30,7 @@
     note="ICC is a two-way, mixed effects, multiple rater intraclass correlation (ICC (3,k)) per Shrout and Fleiss (1979) conventions. ICC is best for continuous variables. Kappas are unweighted Cohen’s Kappa and are calculated for binary/categorical scores."
 ) }}
 
-{{ references(instruments.erica) }}
+{{ references(instruments.erica_r3) }}
 
 
 
