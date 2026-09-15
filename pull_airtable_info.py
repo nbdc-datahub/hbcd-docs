@@ -17,8 +17,8 @@ AIRTABLE_TABLE_ID = os.environ["AIRTABLE_TABLE_ID"]
 OUTPUT_FILE = Path("data/instruments.yml")
 
 # Set this to an Airtable view name or ID to limit exported records (e.g. AIRTABLE_VIEW = "Website Export")
-# AIRTABLE_VIEW: Optional[str] = "3.0 READMEs"
-AIRTABLE_VIEW: Optional[str] = None
+AIRTABLE_VIEW: Optional[str] = "3.0 READMEs"
+# AIRTABLE_VIEW: Optional[str] = None
 
 # Airtable field used as the key in the generated YAML. TO DO: eventually change this to "slug"
 KEY_FIELD = "id"
@@ -257,22 +257,44 @@ def build_instruments(
     return instruments
 
 
+def load_existing_instruments() -> Dict[str, Dict[str, Any]]:
+    """Load the current YAML output file, if any, to merge updates into."""
+
+    if not OUTPUT_FILE.exists():
+        return {}
+
+    with OUTPUT_FILE.open(
+        "r",
+        encoding="utf-8",
+    ) as file:
+        existing = yaml.safe_load(file)
+
+    return existing or {}
+
+
 def write_yaml(
     instruments: Dict[str, Dict[str, Any]],
 ) -> None:
-    """Write the processed instrument records to the YAML output file."""
+    """
+    Merge the processed instrument records into the existing YAML output
+    file: instruments already present are updated in place, and any new
+    instruments are appended, rather than overwriting the whole file.
+    """
 
     OUTPUT_FILE.parent.mkdir(
         parents=True,
         exist_ok=True,
     )
 
+    merged_instruments = load_existing_instruments()
+    merged_instruments.update(instruments)
+
     with OUTPUT_FILE.open(
         "w",
         encoding="utf-8",
     ) as file:
         yaml.dump(
-            instruments,
+            merged_instruments,
             file,
             Dumper=LiteralDumper,
             sort_keys=False,
@@ -281,8 +303,8 @@ def write_yaml(
         )
 
     print(
-        f"Wrote {len(instruments)} instruments "
-        f"to {OUTPUT_FILE}"
+        f"Wrote {len(instruments)} freshly fetched instruments "
+        f"to {OUTPUT_FILE} ({len(merged_instruments)} total)"
     )
 
 def main() -> None:
