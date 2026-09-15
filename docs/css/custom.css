@@ -74,14 +74,14 @@ h6 {
 .button-link {
   display: inline-block;
   background-color: #f2795ea2;
-  color: #071b2cc5 !important;
+  color: #071b2c9b !important;
   text-decoration: none;
   font-weight: 600 !important;
   padding: 6px 12px !important;
   border: none;
   border-radius: 999px !important;
   cursor: pointer;
-  box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.596);
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.596);
   transition: all 0.2s ease;
 }
 .button-link:visited {

@@ -145,10 +145,13 @@ erica_r3:
     Krogh-Jespersen, S., MacNeill, L. A., Anderson, E. L., Stroup, H. E., Harriott, E. M., Gut, E., Blum, A., Fareedi, E., Fredian, K. M., Wert, S. L., Wakschlag, L. S., & Norton, E. S. (2021). Disruption leads to methodological and analytic innovation in developmental sciences: Recommendations for remote administration and dealing with messy data. _Frontiers in Psychology_, 12, 732312. <https://doi.org/10.3389/fpsyg.2021.732312>
     Edwards, R. C., Planalp, E. M., Bosquet Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interactions Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child interactions in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69(101422), 101422.<https://doi.org/10.1016/j.dcn.2024.101422>
   respondent_category: Parent on Child
-  admin_notes: Note that this page includes a hard-coded table that cannot be updated via this form - contact administrators to update table values for now
+  admin_notes: This page includes a hard-coded table that cannot be updated via this form - contact Luci to update table if needed
   visits: V03
   hbcd_mods3: null
   primary_data_type: Tabulated data
+  README:
+    label: View
+    url: null
   acronym: ERICA
   resource1_description: 'ERICA-inter-rater-reliability-2.1.csv file used to parse to create table under Coding Reliability Stats: https://docs.hbcdstudy.org/latest/instruments/bcgi/erica/#coding-reliability-statistics'
   warning3: The ERICA was administered in Spanish and English. The language of administration (i.e., language in which RAs delivered the instructions) does not always correspond with the language spoken by the caregiver/child during the activities. All videos in which the dyad speaks Spanish during the activities were coded by fully Spanish-English bilingual coders.
@@ -166,6 +169,9 @@ erica_r3:
   release: '3.0'
   qc: "**ERICA Site-Level Administration**\n\n- HBCD study staff were trained and certified by experienced ERICA administrators to ensure standardized administration procedures.\n- Ongoing administration quality was monitored through video review of at least 10% of administrations at each site, with additional reviews conducted for sites that did not meet fidelity benchmarks.\n- Completion rates were monitored, and site-level data on administration was reviewed for potential QC issues (e.g., frequent protocol interruptions or tech issues), with results informing additional site-level training and follow-up provided as needed. \n\n**Centralized Coding**\n\n- See [Centralized Coding of ERICA Videos](#centralized-coding-of-erica-videos) below for QC details"
   administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec1WAh2tmcUCsPLU
   resource1_url: https://github.com/nbdc-datahub/hbcd-docs/blob/main/docs/resources/tables/ERICA-inter-rater-reliability-2.1.csv
   scoring: |-
     Coders rate each construct at the activity level on a 4-point scale (None = 0, Low = 1, Medium = 2, High = 3). Activity-level ratings are then averaged across all activities to generate a continuous global score, ranging from 0-3, with higher scores reflecting higher levels of observed behavior.
@@ -191,7 +197,7 @@ erica_r3:
   measure: Early Regulation in Context Assessment [R3]
   construct: Emotional Regulation, Parenting, Caregiver-Child Relationship
 mbcdi:
-  status: README updated & ready for SME review
+  status: Complete / Stable
   alert1: The CDI forms are well-documented and widely used assessments. We note that percentile scores were calculated based on the norms described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023), see additional references below. See [HBCD Modifications](#hbcd-mod) for a description of how the CDI-WG is administered to children with exposure to different languages; users may want to consider the [Multilingual Language Development](../mlds) questionnaire in conjunction with the CDI.
   warning3_title: Benchmark Age
   hbcd_mods1: "Administration of the CDI-WG in English or Spanish is decided based on the results of the Multilingual Language Development questionnaire. \n\n- If the caregiver reports that the child has 30% or greater exposure to English and/or Spanish, they are prompted to complete the CDI in that language.\n- Children who are exposed to both English and Spanish at a greater than 30% level are prompted to complete both forms.\n- If caregivers report less than 30% exposure to either language, administration defaults to English."
@@ -210,11 +216,17 @@ mbcdi:
     Marchman, V. A., Dale, P. S., & Fenson, L. (2023). _The MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual_ (V. A. Marchman, P. S. Dale, & L. Fenson, Eds.; 3rd ed.). Baltimore, MD: Brookes Publishing Co.
     Marchman, V. A., & Dale, P. S. (2023). The MacArthur-Bates Communicative Development Inventories: Updates from the CDI advisory board. _Frontiers in Psychology_, 14, 1170303. <https://doi.org/10.3389/fpsyg.2023.1170303>
   respondent_category: Parent on Child
-  admin_notes: copied from 2.1 README info
+  admin_notes: |-
+    STABLE
+
+    Luci note 9/14: copied from 2.1 README info in case SMEs would like to make changes - currently marking as Stable however in case this is not needed
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mbcdi/
   visits: V04, V06
   hbcd_mods3: null
   primary_data_type: Tabulated data
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mbcdi/
   alert4: null
   acronym: MBCDI
   warning3: The CDI includes a benchmark age that is based on entry by the caregiver. Note that the CDI is not administered until 9 months of age and data entry errors may occur. Users may want to use this in conjunction with other data on the child's age included elsewhere in HBCD.
@@ -229,6 +241,9 @@ mbcdi:
     - HBCD SOPs instruct RAs to present instructions exactly as shown in the existing [https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf](http://127.0.0.1:8000/instruments/neurocog/macarthur-bates/%3Ca%20href=).
     - All data collection, calculation of summary scores, and percentile scores are completed within Web-CDI and then imported into the HBCD database. Data were reviewed to verify that fields are appropriately labeled upon import, and range checks of all summary variables were performed.
   administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec278spEPxEvTOgI
   scoring: This instrument is proprietary. All summary scores (e.g. Total Gestures, Words Understood, Words Produced) and associated percentiles (with and without adjustment for child sex) were computed within Web-CDI using the most updated norms within that software and described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023).  The child’s age at administration for purposes of scoring the CDI is entered by the caregiver as part of the Web-CDI form. The caregiver also notes on this form if the child was born prematurely and if so, by how many weeks. The Web-CDI then provides percentile scores both unadjusted and adjusted for prematurity. See <https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf>.
   resources: <https://mb-cdi.stanford.edu/>
   hbcd_mods1_title: English vs. Spanish Administration
@@ -376,9 +391,9 @@ motion:
   construct: Regulation (Sleep State Cycles) / Autonomic Function
 tic_quest:
   supp2_text: null
-  status: DONE! Complete/stable for release
+  status: Complete / Stable
   alert1: 'Transition in Care information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
-  Date: '2026-08-29'
+  Date submitted: '2026-08-29'
   hbcd_mods1: null
   duration: 5 minutes or less
   hbcd_mods2: null
@@ -391,13 +406,19 @@ tic_quest:
   warning2: null
   references: 'Radel, L., & Bramlett, M. (2014). Children in nonparental care: Findings from the 2011-2012 National Survey of Children’s Health. ASPE, DHHS. <https://aspe.hhs.gov/reports/children-nonparental-care-findings-2011-2012-national-survey-childrens-health-0>'
   respondent_category: Parent on Child
-  admin_notes: 'Luci note 8/24: I changed the type from Interview to Questionnaire per SME''s note. I also moved the "common issues from QC" info as a data warning instead. looks complete to me now, but please make further updates as needed!'
+  admin_notes: |-
+    DONE
+
+    Luci note 8/24: I changed the type from Interview to Questionnaire per SME's note. I also moved the "common issues from QC" info as a data warning instead. looks complete to me now, but please make further updates as needed!
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/tic_quest/
   email: japoehlmann@wisc.edu
   visits: V06, V08
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Julie Poehlmann
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/tic_quest/
   alert4: null
   acronym: TIC
   warning3: null
@@ -419,6 +440,9 @@ tic_quest:
     - Monthly data consistency checks
     - Handling of incomplete or missing responses by sites
   administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec4lCy78s88tToRi
   scoring: null
   changelog: in the measure description it says "interview" but it' a RedCAP survey
   resources: null
@@ -427,9 +451,9 @@ tic_quest:
   construct: Transition in Care
 R3_nutrition:
   supp2_text: null
-  status: DONE! Complete/stable for release
+  status: Complete / Stable
   alert1: null
-  Date: '2026-08-29'
+  Date submitted: '2026-08-29'
   hbcd_mods1: null
   duration: 10 min
   hbcd_mods2: null
@@ -441,13 +465,16 @@ R3_nutrition:
   warning2: null
   references: null
   respondent_category: Parent on Child
-  admin_notes: COMPLETE
+  admin_notes: DONE
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/nutrition/
   email: leigh-anne.cioffredi@uvm.edu
   visits: 'Infant: V05 / Child: V06, V08'
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Leigh-Anne Cioffredi
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/nutrition/
   alert4: null
   acronym: null
   warning3: null
@@ -461,6 +488,9 @@ R3_nutrition:
   release: '3.0'
   qc: Monitor data dashboard for variable missingness, possible coding errors, and data consistency.
   administration: In-person/Remote
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec58YCrvlD50qAzo
   scoring: null
   changelog: added description of child nutrition questionnaire
   resources: null
@@ -493,7 +523,7 @@ dit:
   supp2_text: null
   status: Work in progress
   alert1: null
-  Date: '2026-08-25'
+  Date submitted: '2026-08-25'
   warning3_title: Parent Error
   hbcd_mods1: null
   hbcd_mods2: null
@@ -513,16 +543,18 @@ dit:
     DeBoer, T., Wewerka, S., Bauer, P.J., Georgieff, M.K., and Nelson, C.A. (2005).  Explicit memory performance in infants of diabetic mothers at 1 year of age.  _Developmental Medicine & Child Neurology_, 47(8), 525-531.
   respondent_category: Child on Self
   admin_notes: |-
-    8/29 Notes
+    9/14 notes (Luci)
 
-    Tracy the QC section looks great, but I wonder if you would like to provide as a PDF instead (you can just provide me a publicly-accesible google drive links for example) or I could add as a separate section to this page?
-    -Luci
+    I moved the QC section to a supplemental page - make edits to QC info under supp1_text
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/dit/
   email: riggins@umd.edu
   visits: V06, V08
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Tracy Riggins
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/dit/
   alert4: null
   acronym: DI
   warning3: An Error code is used to indicate when the parent provided assistance. Recommendation is to not use these data.
@@ -534,23 +566,50 @@ dit:
   supp3_text: null
   domain: Neurocognition & Language
   release: '3.0'
-  qc: "**Deferred imitation methods**\n\nWritten by Tracy Riggins, Edited by SarahJane Dube, Reviewed by Alexi Potter, Julie Kable  and Natacha Akshoomoff\n\n8/5/25\n\n**Visit 6:**\n\nAn SOP was provided with detailed administration and scoring instructions. Training was conducted via Zoom and in-person sessions and consisted of detailed descriptions and example videos.\n\nEach RA went through a two-step certification process – administration and scoring. For the first step, each RA administered the V06 deferred imitation protocol to an adult, video recorded it, filled out a self-assessment form (with scores) and submitted these materials to the Infant Testing Core for review. An expert (TR, ZC, IS, SD, NS, AG) reviewed the video for both administration and scoring accuracy.  Feedback was always given.  If the _administration_ met a standard threshold (no major administration errors), the RA was certified to administer the task.  If the _administration_ did not meet threshold, the RA was\
-    \ asked to submit another video. If scoring was inaccurate, this was communicated to the RA so they could correct it in the second certification step. This process continued until the RA submitted a video that met threshold, at which point RAs were certified in administration and released to proceed to the second step.\n\nRAs who were certified to administer the task, then video recorded their administration to a child (pilot OR main study) participant. RAs scored the child’s performance (in LORIS for main study participants, on the self-assessment form for pilots) and an expert (TR, ZC, SD, NS) reviewed the video for both administration and scoring accuracy.  Feedback was always given.  If the administration met a standard threshold (i.e., no administration or scoring errors), the RA was certified in scoring the task and fully certified to administer deferred imitation in main study without the need for expert video review.  If the administration did not meet threshold, the RA was asked\
-    \ to submit another video with a different child participant and submit the video for review.  If during any video review, scores were incorrect, the RA was asked to correct them in LORIS _and make a note to this effect in the RA comments_.  The expert reviewer ensured the scores were updated accurately and noted this in the certification log notes.  \n\nAfter the two-step certification process, RAs were released to administer and score deferred imitation to child participants without video review.\n\n \n\n \n\n**Visit 8:**\n\nAn SOP was provided with detailed administration and scoring instructions. Although the core concepts are the same for the deferred imitation task at V06 and V08, the event sequences differ, therefore there was a need for expert review, despite the previous certification. Training was conducted via Zoom and in-person sessions and consisted of detailed descriptions and example videos. \n\nEach RA was asked to record their first V08 child participant (pilot OR main\
-    \ study), score the child’s performance (in LORIS for main study participants, on the self-assessment form for pilots) and submit for expert review.  An expert reviewer (TR, ZC, SD, NS) reviewed the video for accuracy.  Feedback was always given.  If the administration met a standard threshold (i.e., no major administration or scoring errors), the RA was approved to continue without video expert review.  If the administration and/or scoring did not meet threshold, the RA was asked to submit a video of their next V08 DI administration with another child participant.  Until approved for V08, any incorrect scores were corrected by the RA in LORIS and a note was made to this effect in the RA comments.  The expert reviewer ensured the scores were updated accurately and noted this in the data log notes."
+  qc: <a href="../dit-qc.html" target="_blank">View SOP (opens in new tab)</a>
   administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec5I08Qeoit27sq4
   scoring: Each target action is recorded. Pairs of actions in the correct temporal order are automatically calculated.  Actions and pairs of actions are summed across event sequences.
   changelog: initial draft
   resources: null
   warning4_title: Malfunction or Refusal
-  supp1_text: null
+  supp1_text: |-
+    # Deferred Imitation Methods
+    **Written by:** Tracy Riggins
+    **Edited by:** SarahJane Dube
+    **Reviewed by:** Alexi Potter, Julie Kable, and Natacha Akshoomoff
+    **Date:** August 5, 2025
+    ## Visit 6
+    An SOP was provided with detailed administration and scoring instructions. Training was conducted via Zoom and in-person sessions and consisted of detailed descriptions and example videos.
+    Each RA went through a two-step certification process – administration and scoring. For the first step, each RA administered the V06 deferred imitation protocol to an adult, video recorded it, filled out a self-assessment form (with scores), and submitted these materials to the Infant Testing Core for review.
+    An expert (TR, ZC, IS, SD, NS, AG) reviewed the video for both administration and scoring accuracy. Feedback was always given. If the _administration_ met a standard threshold (no major administration errors), the RA was certified to administer the task.
+    If the _administration_ did not meet threshold, the RA was asked to submit another video. If scoring was inaccurate, this was communicated to the RA so they could correct it in the second certification step. This process continued until the RA submitted a video that met threshold, at which point RAs were certified in administration and released to proceed to the second step.
+
+    ### Scoring Certification
+    RAs who were certified to administer the task then video recorded their administration to a child (pilot OR main study) participant. RAs scored the child’s performance (in LORIS for main study participants, on the self-assessment form for pilots) and an expert (TR, ZC, SD, NS) reviewed the video for both administration and scoring accuracy.
+    Feedback was always given. If the administration met a standard threshold (i.e., no administration or scoring errors), the RA was certified in scoring the task and fully certified to administer deferred imitation in the main study without the need for expert video review.
+    If the administration did not meet threshold, the RA was asked to submit another video with a different child participant and submit the video for review.
+
+    **Score corrections:** If during any video review, scores were incorrect, the RA was asked to correct them in LORIS _and make a note to this effect in the RA comments_. The expert reviewer ensured the scores were updated accurately and noted this in the certification log notes.
+    After the two-step certification process, RAs were released to administer and score deferred imitation to child participants without video review.
+
+    ## Visit 8
+    An SOP was provided with detailed administration and scoring instructions. Although the core concepts are the same for the deferred imitation task at V06 and V08, the event sequences differ, therefore there was a need for expert review, despite the previous certification. Training was conducted via Zoom and in-person sessions and consisted of detailed descriptions and example videos.
+    Each RA was asked to record their first V08 child participant (pilot OR main study), score the child’s performance (in LORIS for main study participants, on the self-assessment form for pilots) and submit for expert review.
+    An expert reviewer (TR, ZC, SD, NS) reviewed the video for accuracy. Feedback was always given.
+    If the administration met a standard threshold (i.e., no major administration or scoring errors), the RA was approved to continue without video expert review.
+    If the administration and/or scoring did not meet threshold, the RA was asked to submit a video of their next V08 DI administration with another child participant.
+
+    **Score corrections:** Until approved for V08, any incorrect scores were corrected by the RA in LORIS and a note was made to this effect in the RA comments. The expert reviewer ensured the scores were updated accurately and noted this in the data log notes.
   measure: 'Deferred Imitation Task: Gong and Berry-Go-Round'
   construct: Memory
 pedsql:
   supp2_text: null
-  status: DONE! Complete/stable for release
+  status: Complete / Stable
   alert1: null
-  Date: '2026-08-29'
+  Date submitted: '2026-08-29'
   hbcd_mods1: null
   duration: 5 min
   hbcd_mods2: null
@@ -572,6 +631,9 @@ pedsql:
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Leigh-Anne Cioffredi
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/pedsql/
   alert4: null
   acronym: PEDsQL
   warning3: null
@@ -585,6 +647,9 @@ pedsql:
   release: '3.0'
   qc: Monitor data dashboard for variable missingness, possible coding errors, and data consistency.
   administration: Remote
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec6B66wZDZh5SBa5
   scoring: "##### General Scoring Description\n\nThe PedsQL is scored in 4 domains:\n\n- Physical Functioning\n- Emotional functioning\n- Social Functioning\n- School Functioning\n\n \n\n##### Scoring Procedure\n\nItems are reverse scored and linearly transformed to a 0-100 scale as follows: 0=100, 1=75, 2=50, 3=25, 4=0. If more than 50% of the items in the scale are missing, the scale scores should not be computed.\n\n- Mean score = Sum of the items over the number of items answered\n- Psychosocial Health Summary Score = Sum of the items over the number of items answered in the Emotional, Social, and School Functioning Scales  \n- Physical Health Summary Score = Physical Functioning Scale Score \n- Total Score: Sum of all the items over the number of items answered on all the Scales\n\n##### Missing data\n\nIf more than 50% of the items in the scale are missing, the Scale Scores are not and should not be computed. If 50% or more items are completed: the mean of the completed items in a\
     \ scare are imputed."
   changelog: Filled it out
@@ -594,9 +659,9 @@ pedsql:
   construct: Pediatric Quality of Life
 medhx_r3:
   supp2_text: null
-  status: DONE! Complete/stable for release
+  status: Complete / Stable
   alert1: null
-  Date: '2026-09-11'
+  Date submitted: '2026-09-11'
   known_issue_3: null
   hbcd_mods2_title: null
   warning3_title: null
@@ -623,6 +688,9 @@ medhx_r3:
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Leigh-Anne Cioffredi
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/medical-history/
   alert4: null
   acronym: null
   warning3: null
@@ -639,6 +707,9 @@ medhx_r3:
   alert3_title: null
   qc: Monitor data dashboard for variable missingness, possible coding errors, and data consistency.
   administration: Remote
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec7N3eSDUdvLQNLZ
   scoring: null
   changelog: Reviewed, made tiny edits.
   known_issue_2: null
@@ -1102,9 +1173,9 @@ foodins:
   construct: Food Insecurity
 gabi:
   supp2_text: null
-  status: DONE! Complete/stable for release
+  status: Complete / Stable
   alert1: Users of HBCD infant heart rate wearable sensor data must follow the study's data use guidelines and the conditions of the Data Use Certificate (DUC). These standards are in place to protect participant privacy, ensure scientific rigor, and promote respectful, non-stigmatizing research practices. Users should review relevant data warnings before downloading or analyzing infant heart rate sensor variables. This includes checking the data dictionary and instrument documentation for indicators such as incomplete recordings, periods of sensor removal, or discrepancies with setup/return metadata.
-  Date: '2026-08-20'
+  Date submitted: '2026-08-20'
   hbcd_mods1: null
   duration: 72 hours continuous wear
   hbcd_mods2: null
@@ -1123,13 +1194,18 @@ gabi:
     Pini, N., Ong, J. L., Yilmaz, G., Chee, N. I. Y. N., Siting, Z., Awasthi, A., Biju, S., Kishan, K., Patanaik, A., Fifer, W. P., & Lucchini, M. (2022). An automated heart rate-based algorithm for sleep stage classification: Validation using conventional polysomnography and an innovative wearable electrocardiogram device. _Frontiers in Neuroscience_, 16, 974192. <https://doi.org/10.3389/fnins.2022.974192>
     Zinzuwadia, A., & Singh, J. P. (2022). Wearable devices-addressing bias and inequity. _The Lancet Digital Health_, 4(12), e856–e857. <https://doi.org/10.1016/S2589-7500(22)00194-7>
   respondent_category: Child on Self
-  admin_notes: '8/24: removed derivatives per Nico''s note and also added raw BIDS filenames in filetree - marking as complete for now, but feel free to submit further changes as needed'
+  admin_notes: |-
+    DONE
+    8/24: removed derivatives per Nico's note and also added raw BIDS filenames in filetree - marking as complete
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/sensors/gabi/
   email: np2600@cumc.columbia.edu
   visits: V02, V03
   hbcd_mods3: null
   primary_data_type: File-based (raw BIDS/derivatives)
   submitter_name: Nicolo Pini
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/sensors/gabi/
   alert4: null
   acronym: GABI
   warning3: null
@@ -1147,6 +1223,9 @@ gabi:
 
     Issues with the sensor data were generally rare, and most data were deemed present and accurately collected (when captured correctly). Errors that did arise were corrected, when possible, though this was typically not feasible. Common errors noted included inadequate or missing data (due to human error, technical issues, or a parent/legal guardian declining participation in this aspect of the study), sensors being removed for extended periods during the 72-hour collection, or unavailability of devices to conduct the data collection.
   administration: Remote
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recHy0XkXvVr66UC9
   scoring: null
   changelog: '- 8/20: removed "and processed derivatives" from Description section as derivatives are not included in 3.0 - COMPLETE 8/20 (Luci)'
   resources: null
@@ -1905,7 +1984,7 @@ dynamic:
     (link to TIC Screener and TIC Questionnaire READ ME documents, which provide more details and references)
   status: Work in progress
   alert1: When using HBCD data, all data users must follow responsible use requirements described in the Data Use Certification (DUC). When conceptualizing studies, analyzing data, and communicating findings using demographic, socioeconomic, household, caregiver, neighborhood, or other social and environmental characteristics, researchers should consider approaches that avoid stigmatizing individuals or groups and perpetuating harmful biases.
-  Date: '2026-08-25'
+  Date submitted: '2026-08-25'
   hbcd_mods1: null
   alert1_title: ' Responsible Use of Demographic and Social Variables'
   duration: null
@@ -1944,6 +2023,9 @@ dynamic:
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Natalie Slopen
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/dynamic/
   alert4: null
   resource1_description: Tabs labeled with "Static-*" / "Dynamic-*" contain tables that are autoparsed to populate the tables included in the Static/Dynamic README pages
   warning3: null
@@ -1960,6 +2042,9 @@ dynamic:
     - Data are visually inspected for unexpected values, distributions, missingness patterns, and other apparent anomalies.
     - Potential issues identified during review are flagged for further investigation as needed.
   administration: null
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recSACxqruv4qvXiH
   resource1_url: https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177
   scoring: The Dynamic Table does not use conventional scoring procedures. It combines source variables with derived or harmonized variables, organized by child and scheduled study visit/session.  Variables retain the value associated with the relevant visit or are constructed from source data associated with that visit.   For primary caregiver education and household income, source responses are collapsed into standardized categories for use in the Dynamic Table. The longitudinal variables are intended to represent the caregiver or household information applicable at the corresponding study visit.  Household size is a constructed measure. At V01, household size is calculated from the Adult Demographics form by summing the reported number of adults aged 18 years and older and children aged 17 years and younger, and then adding one because the questions exclude the respondent. At V04 and later applicable visits, household size is calculated from the Child Demographics form by summing the
     reported number of adults and children and then adding one because the questions exclude the focal HBCD child.  Visit-specific contextual variables, including urban/rural classification and Social Vulnerability Index measures, are linked to the residential information associated with the corresponding visit.
@@ -2013,9 +2098,9 @@ dynamic:
   measure: Dynamic Table
 illumina_r3:
   supp2_text: null
-  status: Not started
+  status: Work in progress
   alert1: Data users are prohibited from using HBCD data, including genomic data, to identify participants or their relatives. You accessed these data under a Data Use Certification (DUC) agreement in which you and your institution agreed that you would not attempt to establish the individual identity of any study participants or their relatives. You also agreed to adhere to a minimum cell threshold of 10 in any public reporting of data (i.e., publications, posters, or other presentations). Protecting participants’ anonymity demonstrates respect for them and minimizes their research-related risks.
-  Date: '2026-09-02'
+  Date submitted: '2026-09-02'
   hbcd_mods1: null
   alert1_title: Anonymity
   duration: null
@@ -2040,12 +2125,15 @@ illumina_r3:
     Meyer, M. N., Appelbaum, P. S., Benjamin, D. J., Callier, S. L., Comfort, N., Conley, D., Freese, J., Garrison, N. A., Hammonds, E. M., Harden, K. P., Lee, S. S.-J., Martin, A. R., Martschenko, D. O., Neale, B. M., Palmer, R. H. C., Tabery, J., Turkheimer, E., Turley, P., & Parens, E. (2023). Wrestling with social and behavioral genomics: Risks, potential benefits, and ethical responsibility. _The Hastings Center Report_, 53 Suppl 1, S2–S49. <https://doi.org/10.1002/hast.1477>
   alert2_title: Population Descriptors
   respondent_category: null
-  admin_notes: Illumina is complex compared to most other pages , so let's just use the google docs instead of this form for now. - https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?tab=t.gi9ky13h9emu
+  admin_notes: Using google docs for Illumina for now in place of forms - https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?tab=t.gi9ky13h9emu
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/illumina-gda-gwas/
   email: lmoore@umn.edu
   visits: Samples are assayed from one sample (from parent and child), but may come from any visit (V01-V06) based on DNA yields.
   hbcd_mods3: null
   primary_data_type: Concatenated data
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/illumina-gda-gwas/
   alert4: null
   acronym: GDA GWAS
   warning3: null
@@ -2069,6 +2157,9 @@ illumina_r3:
     - Visually inspect plate effects on principal component space derived from PC-Relate.
     - GDC Genomics QC pipeline analysis - see details and summary statistics [below](#gdc-genomics-qc-pipeline-analysis).
   administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recojL45MiljQmOZB
   scoring: null
   resources: null
   supp1_text: |-
@@ -2090,9 +2181,9 @@ illumina_r3:
   construct: GWAS, EWAS, Transcriptome
 nsc:
   supp2_text: null
-  status: DONE! Complete/stable for release
+  status: Complete / Stable
   alert1: 'Incarceration or arrest information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
-  Date: '2026-08-24'
+  Date submitted: '2026-08-24'
   hbcd_mods1: null
   hbcd_mods2: null
   full_name: Incarceration History Questionnaire (Experiences with the criminal justice system)
@@ -2103,13 +2194,16 @@ nsc:
   warning2: null
   references: 'Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., ... & Wildeman, C. (2019). What percentage of Americans have ever had a family member incarcerated?: Evidence from the family history of incarceration survey (FamHIS). _Socius_, _5_, 2378023119829332. <https://doi.org/10.1177/237802311982>'
   respondent_category: Parent on Self
-  admin_notes: COMPLETE
+  admin_notes: DONE
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
   email: japoehlmann@wisc.edu
   visits: V07, V09
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Julie Poehlmann
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
   alert4: null
   acronym: NSC
   warning3: null
@@ -2126,6 +2220,9 @@ nsc:
     - Handling of incomplete or missing responses by sites
     - Common issues identified include missing data patterns
   administration: Remote
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recepzgEHD3phY9C2
   scoring: null
   resources: null
   supp1_text: null
@@ -2156,6 +2253,9 @@ mbcdi_2:
   visits: V06, V07
   hbcd_mods3: null
   primary_data_type: Tabulated data
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mbcdi-2/
   alert4: null
   acronym: MBCDI-2
   warning3: The CDI includes a benchmark age that is based on entry by the caregiver. Note that the CDI is not administered until 9 months of age and data entry errors may occur. Users may want to use this in conjunction with other data on the child's age included elsewhere in HBCD.
@@ -2170,6 +2270,9 @@ mbcdi_2:
     - HBCD SOPs instruct RAs to present instructions exactly as shown in the existing [https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf](http://127.0.0.1:8000/instruments/neurocog/macarthur-bates/%3Ca%20href=).
     - All data collection, calculation of summary scores, and percentile scores are completed within Web-CDI and then imported into the HBCD database. Data were reviewed to verify that fields are appropriately labeled upon import, and range checks of all summary variables were performed.
   administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rect66sWwFnTWbtmz
   scoring: This instrument is proprietary. All summary scores (e.g. Total Gestures, Words Understood, Words Produced) and associated percentiles (with and without adjustment for child sex) were computed within Web-CDI using the most updated norms within that software and described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023).  The child’s age at administration for purposes of scoring the CDI is entered by the caregiver as part of the Web-CDI form. The caregiver also notes on this form if the child was born prematurely and if so, by how many weeks. The Web-CDI then provides percentile scores both unadjusted and adjusted for prematurity. See <https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf>.
   resources: <https://mb-cdi.stanford.edu/>
   hbcd_mods1_title: English vs. Spanish Administration
@@ -2177,9 +2280,9 @@ mbcdi_2:
   construct: Language Development
 maps_easi:
   supp2_text: null
-  status: Ready for README update
+  status: Complete / Stable
   alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
-  Date: '2026-09-09'
+  Date submitted: '2026-09-09'
   hbcd_mods1: Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replaced with ‘my child’ when eliminating pronouns was not grammatically possible. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.
   duration: 2 min
   hbcd_mods2: null
@@ -2194,13 +2297,19 @@ maps_easi:
 
     Wakschlag, L. S., Zhang, Y., Heffernan, M. E., MacNeill, L. A., Peterson, E. O., Friedland, S., Sass, A. J., Smith, J. D., Davis, M. M., & Wiggins, J. L. (2024). How EASI can it be? Closing the research-to-practice gap via population-based validation of the MAPS-EASI 2.0 early childhood irritability screener for translation to clinical use. _Translational issues in psychological science_, _10_(4), 435–448. <https://doi.org/10.1037/tps0000428>
   respondent_category: Parent on Child
-  admin_notes: null
+  admin_notes: |-
+    DONE
+
+    9/14 Luci Notes: change are integrated after a fixing a few formatting errors (resulting from fillout form, not user's fault). SME can submit further changes as needed still, but for now I am marking as complete!
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps-easi/
   email: isabel.jordan@northwestern.edu
   visits: V07
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Isabel Jordan
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps-easi/
   alert4: null
   acronym: MAPS-EASI TL
   warning3: null
@@ -2218,6 +2327,9 @@ maps_easi:
     - Review summary statistics and visualizations (item frequencies, age, prorated scores).
     - Assess reliability (Cronbach’s α).
   administration: Remote
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recbJKtKQ0yAjge19
   scoring: "The 3 MAPS-EASI Irritability Scale items (`mapstl__easi_{001|002|003}`) are answered on a scale of 0:5. Possible responses include:\n\n0, Never | 1, Rarely (Less than once per week) | 2, Some (1-3) days of the week | 3, Most (4-6) days of the week | 4, Every day of the week | 5, Many times each day | Prefer not to answer \n\nThe 2 MAPS-EASI Impact Rating items (`mapstl__easi_{004|005}`) are answered on a scale of 0:3. Possible responses include:\n\n0, No problems | 1, Minimal problems | 2, A lot of problems | 3, Severe problems | Prefer not to answer \n\nA sum score is calculated for all Irritability Scale items. If any of the 3 Irritability Scale items are left unanswered (NA/Decline to answer/etc.), the sum score will be set to NA/missing (strict missingness rule)."
   changelog: This is a new form for the MAPS-EASI at V07.
   resources: null
@@ -2230,23 +2342,29 @@ mchat:
   assessment_type: Questionnaire
   table_name: mh_ch_mchat
   respondent_category: Parent on Child
-  admin_notes: Waiting on SME submission
+  admin_notes: null
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
   visits: V07
   primary_data_type: Tabulated data
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
   acronym: MCHAT
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reciqnhrslaTGLOZY
   slug: modified-checklist-for-autism-in-toddlers
   domain: Behavior & Caregiver-Child Interactions
   release: '3.0'
   administration: Remote
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=reciqnhrslaTGLOZY
   measure: Modified Checklist for Autism in Toddlers
   construct: Autism
 nbtb:
   supp2_text: null
-  status: DONE! Complete/stable for release
+  status: Complete / Stable
   alert1: Performance of the NIH Baby Toolbox reflects the child's developmental status, but various factors might influence the results of the assessment that should be taken into account.
-  Date: '2026-08-29'
+  Date submitted: '2026-08-29'
   hbcd_mods1: null
   duration: V03 45-60 min / V04 15-20 min / V06-40-60 min
   hbcd_mods2: null
@@ -2281,6 +2399,9 @@ nbtb:
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Julie Kable
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb/
   alert4: null
   acronym: NBTB
   warning3: null
@@ -2299,6 +2420,9 @@ nbtb:
 
     Completion rates were monitored across sites, with additional training provided when needed.
   administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rect6eIwToFbEGoVJ
   scoring: This is autoscored by the software and data are uploaded to a web server. Please see the NBT technical manual for details.  These are available from [NIH Baby Toolbox® Manuals & Test Materials](https://resources.nihtoolbox.org/manuals-and-test-materials/nih-baby-toolbox-documentation/).
   resources: null
   supp1_text: null
@@ -2311,7 +2435,7 @@ static:
     Race and ethnicity variables are computed from [ACS](https://www.census.gov/programs-surveys/acs.html) race and ethnicity items derived from administrative records collected during screening. Combined race and ethnicity variables are constructed following current federal standards. Participants who identify as **Hispanic or Latino** are categorized as `Hispanic`, regardless of race. Participants who select more than one race are categorized as **Multiracial**, with aggregation performed by either **ethnicity** based on Hispanic identity (_Multiracial (Hispanic)_ or _Multiracial (non-Hispanic)_) or **race** based on Black/African American identity (_Multiracial (Black)_ or _Multiracial (non-Black)_).
   status: Work in progress
   alert1: When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables such as race, ethnicity, country of origin, and socioeconomic data, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.
-  Date: '2026-08-25'
+  Date submitted: '2026-08-25'
   hbcd_mods1: null
   alert1_title: General Considerations
   duration: null
@@ -2341,6 +2465,9 @@ static:
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Natalie Slopen
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/static/
   alert4: null
   resource1_description: Tabs labeled with "Static-*" / "Dynamic-*" contain tables that are autoparsed to populate the tables included in the Static/Dynamic README pages
   warning3: null
@@ -2366,6 +2493,9 @@ static:
     - Data are visually inspected for unexpected values, distributions, missingness patterns, and other apparent anomalies.
     - Potential issues identified during review are flagged for further investigation as needed.
   administration: null
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recqmyWoJlgOLnHBD
   resource1_url: https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177
   scoring: N/A
   changelog: this is ready for ReadMe review, but should be considered in progress until the table is created and finalized
@@ -2383,9 +2513,9 @@ static:
   measure: Static Table
 blood:
   supp2_text: null
-  status: DONE! Complete/stable for release
+  status: Complete / Stable
   alert1: null
-  Date: '2026-08-29'
+  Date submitted: '2026-08-29'
   warning3_title: Missing Data Due to Contamination
   hbcd_mods1: null
   duration: 5 min
@@ -2401,6 +2531,8 @@ blood:
   references: 'Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <https://doi.org/10.1016/j.dcn.2024.101451>'
   respondent_category: Parent on Self
   admin_notes: |-
+    DONE
+
     8/24: COMPLETE
     8/20 Luci note: I have updated the README based on the changes submitted by Elinor Aug 20th (and the changes should render shortly) and reviewed the page for accuracy. I made one minor formatting change to turn the short list in the description to a single sentence ("PEth is confirmatory-testing only, with **20phsphtdetbsp (`c_peth_b_cat`)** as the confirmatory test and **Ethanol (`c_ethanol_b`)** as the class."). I will mark as complete for now and follow up with Elinor via email to inform her (while I'm still perfecting the workflow to hopefully add automated notifications and such)
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/blood
@@ -2409,6 +2541,9 @@ blood:
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Elinor Sullivan
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/blood
   alert4: null
   acronym: Blood
   warning3: Out of an abundance of caution there may be missing data for some sites based on the potential use of ethanol based products which may have caused contamination of assay results.
@@ -2422,6 +2557,9 @@ blood:
   release: '3.0'
   qc: Examine assay ranges and categorical versus continuous measures.
   administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recyzSFRJ2eDiSQy3
   scoring: |-
     Final PEth assay results follow these rules:
 
