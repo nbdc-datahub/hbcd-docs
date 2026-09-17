@@ -426,15 +426,15 @@ Uniformity, periods within the EEG data where **all** channels are correlated wi
 
 **Impedances left on:** If impedances were left on during data collection, the file will not contain neural signal.
 
-<img src=""https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/instruments/eeg/images/Impedences_On_Image.png"" alt=""impedences on example"" width=""90%"" height=""auto"" class=""center"">    
+<img src=""https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/instruments/eeg/images/Impedences_On_Image.png"" alt=""impedences on example"" width=""600"" height=""auto"" class=""center"">    
 
 **Drifting signal:** Signal is attenuated and drifting, likely due to poor ref/com signal.
 
-<img src= ""https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/instruments/eeg/images/Drifting_Signal_Image.png"" alt=""drifting signal example"" width=""90%"" height=""auto"" class=""center"">  
+<img src= ""https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/instruments/eeg/images/Drifting_Signal_Image.png"" alt=""drifting signal example"" width=""600"" height=""auto"" class=""center"">  
 
 **Persistent electrical noise:** Electrical artifacts are obscuring the neural signal.
 
-<img src= ""https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/instruments/eeg/images/Electrical_Noise_Image.png"" alt=""electrical noise example"" width=""90%"" height=""auto"" class=""center"">      
+<img src= ""https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/instruments/eeg/images/Electrical_Noise_Image.png"" alt=""electrical noise example"" width=""600"" height=""auto"" class=""center"">      
   
      
 
