@@ -14,21 +14,13 @@ The tables below summarize known issues affecting the current data release and p
 
 <p style="font-size: 1.2em; color: #555; text-align: center; line-height: 2;">
 <i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Known Issue &nbsp;&nbsp;&nbsp;
-<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Pending Update &nbsp;&nbsp;&nbsp;
-<i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.1em;"></i> = Target Release for Fix
-</p>
+<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Pending Update</p>
 
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
 ### Behavior &amp; Child-Caregiver Interaction
 
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 
 <tr>
@@ -91,13 +83,7 @@ The tables below summarize known issues affecting the current data release and p
 ### Biospecimens &amp; Omics
 
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 
 <tr>
@@ -118,13 +104,7 @@ The tables below summarize known issues affecting the current data release and p
 ### Demographics
 
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 
 <tr>
@@ -163,13 +143,7 @@ The tables below summarize known issues affecting the current data release and p
 ### EEG
 
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 
 <tr>
@@ -190,13 +164,7 @@ The tables below summarize known issues affecting the current data release and p
 ### General
 
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 
 <tr>
@@ -241,13 +209,7 @@ The tables below summarize known issues affecting the current data release and p
 ### MRI
 
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 
 <tr>
@@ -286,13 +248,7 @@ The tables below summarize known issues affecting the current data release and p
 ### Neurocognition &amp; Language
 
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 
 <tr>
@@ -337,13 +293,7 @@ The tables below summarize known issues affecting the current data release and p
 ### Novel Tech &amp; Wearable Sensors
 
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 
 <tr>
@@ -358,13 +308,7 @@ The tables below summarize known issues affecting the current data release and p
 ### Physical Health
 
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 
 <tr>
@@ -427,13 +371,7 @@ The tables below summarize known issues affecting the current data release and p
 ### Pregnancy &amp; Environmental Exposure
 
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 
 <tr>
@@ -466,13 +404,7 @@ The tables below summarize known issues affecting the current data release and p
 ### Social &amp; Environmental Determinants
 
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 
 <tr>

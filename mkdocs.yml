@@ -50,7 +50,7 @@ nav:
     - Tools: access/tools.md
   - Release Notes: 
     - Release Notes & History: changelog/release-notes.md
-    - Known Issues & Pending Updates: changelog/issues-updates.md
+    - Known Issues: changelog/issues-updates.md
   - Study Standards & Conventions:
     - Study Protocol: standards/protocol.md
     - Data Dictionary: standards/metadata.md

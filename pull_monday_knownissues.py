@@ -69,13 +69,7 @@ def build_table(domain, rows):
     table_parts.append(f"\n### {html.escape(domain)}")
     table_parts.append("""
 <table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
-</thead>
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
 """)
 
