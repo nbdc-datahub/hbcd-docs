@@ -244,9 +244,9 @@ mbcdi:
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec278spEPxEvTOgI
   warning1: The CDI-WG provides percentiles score, but does not provide standard scores.
   description: The **MacArthur-Bates Communicative Development Inventories, Words and Gestures**, Web Version, English and Spanish is a caregiver -report assessment of children’s early language development, including expressive and receptive vocabulary and gesture. In HBCD, the Words and Gestures form is administered up to 16 months of age. Beginning at 16 months of age, the Words and Gestures form the Words and Sentences form. See details about both forms at <https://mb-cdi.stanford.edu/>.
-  slug: macarthur-bates-cdi-i-3.0
+  slug: macarthur-bates-cdi-i-2.1
   domain: Neurocognition & Language
-  release: '3.0'
+  release: '2.1'
   3.0- new OR updates required: true
   qc: |-
     - HBCD SOPs instruct RAs to present instructions exactly as shown in the existing [https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf](http://127.0.0.1:8000/instruments/neurocog/macarthur-bates/%3Ca%20href=).
@@ -3038,7 +3038,7 @@ bfh:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/latest/instruments/physhealth/bf/
-  visits: V02, V03, V04, V06, V08 (only administered if still breastfeeding at prior visit)
+  visits: V02, V03, V04, V06, V08 (only administered if still breastfeeding at prior visit or data was missing from the prior visit)
   primary_data_type: Tabulated data
   README:
     label: View
@@ -3046,7 +3046,7 @@ bfh:
   acronym: PHENX BF
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recdpOrKKpofN0NgL
   warning1: Breast feeding history is obtained via self-report, so is vulnerable to recall bias concerning the timing of starting and/or stopping breast feeding. In addition, as the data is obtained via a survey, it is likely that missing data will need to be statistically addressed during analysis.
-  description: 'Breast Feeding History is a nutrition construct that measures initiation, exclusivity, and cessation of breast milk feedings. Note that the current data release only includes one item from this questionnaire: _history (ever/never) of breastfeeding_.'
+  description: Breast Feeding History is a nutrition construct that measures initiation, exclusivity, and cessation of breast milk feedings.
   slug: breast-feeding-history-2.1
   domain: Physical Health
   release: '2.1'
