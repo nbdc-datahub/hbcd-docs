@@ -267,7 +267,7 @@ Through Release 2.1, the **Demographics** domain included two tables containing 
 <tr data-type="pending">
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>QSIRecon</td>
-<td>Tabulated data for QSIRecon (participant data combined across derivative files into single tidy table) will be provided in a future release.</td>
+<td>Addition of tabulated data for QSIRecon (participant data combined across derivative files into single tidy table).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr data-type="pending">
