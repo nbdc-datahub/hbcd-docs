@@ -39,6 +39,21 @@ def map_type(value):
         return "Pending Update"
     return None
 
+# Domain-specific notes inserted after the heading and before the table
+DOMAIN_NOTES = {
+    "Demographics": """
+<div id="infobox" class="infobox" markdown="1">
+
+<i class="fa-solid fa-rotate icon-rotate"></i> **Major update in Release 3.0: Demographics → Participant Derived**
+
+Through Release 2.1, the **Demographics** domain included two tables containing derived participant information, **[Visit Info](../instruments/demo/visitinfo.md)** (visit-specific information) and **[Basic Demographics](../instruments/demo/basicdemo.md)** (general participant information derived from SED Demographics and administrative records). For **Release 3.0**, the Demographics domain will be renamed **Participant Derived**, with information organized into static and dynamic tables:
+
+* **Static Participant Information**: information that remains constant across visits, such as sex assigned at birth and race/ethnicity
+* **Dynamic Participant Information**: information that may change over time and is therefore represented longitudinally
+</div>
+""",
+}
+
 
 def insert_into_markdown(md_path, combined_html):
     START_MARKER = "<!-- BEGIN KNOWN_ISSUES_TABLE -->"
@@ -69,6 +84,10 @@ def build_table(domain, rows):
 
     table_parts.append(f'\n<div class="ki-domain-section" data-domain="{domain_escaped}" markdown="1">')
     table_parts.append(f"\n### {domain_escaped}")
+
+    if domain in DOMAIN_NOTES:
+        table_parts.append(DOMAIN_NOTES[domain])
+
     table_parts.append("""
 <table class="compact-table-no-vertical-lines">
 <thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>

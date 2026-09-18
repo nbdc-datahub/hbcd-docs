@@ -21,6 +21,7 @@ The tables below summarize known issues affecting the current data release and p
 </div>
 <p id="ki-no-results" class="ki-no-results" style="display:none;">No known issues or pending updates match your filters.</p>
 
+
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
 <div class="ki-domain-section" data-domain="All Data / General" markdown="1">
 
@@ -170,6 +171,17 @@ The tables below summarize known issues affecting the current data release and p
 
 ### Demographics
 
+<div id="infobox" class="infobox" markdown="1">
+
+<i class="fa-solid fa-rotate icon-rotate"></i> **Major update in Release 3.0: Demographics → Participant Derived**
+
+Through Release 2.1, the **Demographics** domain included two tables containing derived participant information, **[Visit Info](../instruments/demo/visitinfo.md)** (visit-specific information) and **[Basic Demographics](../instruments/demo/basicdemo.md)** (general participant information derived from SED Demographics and administrative records). For **Release 3.0**, the Demographics domain will be renamed **Participant Derived**, with information organized into static and dynamic tables:
+
+* **Static Participant Information**: information that remains constant across visits, such as sex assigned at birth and race/ethnicity
+* **Dynamic Participant Information**: information that may change over time and is therefore represented longitudinally
+</div>
+
+
 <table class="compact-table-no-vertical-lines">
 <thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
 <tbody>
@@ -196,12 +208,6 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Visit Info</td>
 <td>Harmonize participant status and withdrawal fields</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr data-type="pending">
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Static &amp; Dynamic Tables</td>
-<td>The Demographics domain includes 2 tables with derived information grouped into visit-specific data (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/">Visit Info</a>) and general demographics (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/">Basic Demographics</a>). In a future release, these tables will be restructured to instead organize variables as either longitudinal (dynamic measures that change over time) or global (static measures, such as sex assigned at birth and race/ethnicity).</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table>
