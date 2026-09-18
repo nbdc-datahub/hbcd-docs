@@ -79,6 +79,12 @@
 
 # Release Notes & History
 
+
+## Release 3.0
+
+**ADD that demographics has changed to Participant Derived**
+
+
 ## Release 2.1
 
 <div class="release-banner">

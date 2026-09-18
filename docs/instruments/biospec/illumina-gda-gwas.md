@@ -1,8 +1,8 @@
 # Illumina Global Diversity GWAS Array 
 
-{{ readme_summary(instruments.illumina_r3) }}
-{{ alert_warning(instruments.illumina_r3) }}
-{{ data_warning(instruments.illumina_r3) }}
+{{ readme_summary(instruments.illumina) }}
+{{ alert_warning(instruments.illumina) }}
+{{ data_warning(instruments.illumina) }}
 {{ issues_banner() }}
 
 ---
@@ -105,5 +105,5 @@ HBCD provides copy number variation (CNV) calls derived directly from microarray
 
 ---
 
-{{ references(instruments.illumina_r3) }}
+{{ references(instruments.illumina) }}
 
