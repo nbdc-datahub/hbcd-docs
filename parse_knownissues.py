@@ -11,11 +11,48 @@ XLSX= "docs/data/latest.xlsx"
 HBCD_DOCS_MD = "docs/changelog/issues-updates.md"
 
 # FUNCTIONS
+def clean_raw_export(xlsx_path):
+    """
+    Load the raw Monday.com XLSX export and strip out the extra/odd rows it
+    contains: the leading title row, per-group label rows (e.g. "After 3.0
+    release (2027)"), repeated header rows (one per group), group
+    summary/footer rows ("undefined" placeholders), and blank separator rows.
+    Returns a DataFrame with the real header row as its columns.
+    """
+    raw = pd.read_excel(xlsx_path, header=None, dtype=str)
+
+    # Locate the real header row (first row starting with "Name", "PR")
+    header_mask = (raw[0] == "Name") & (raw[1] == "PR")
+    header_rows = raw.index[header_mask].tolist()
+    if not header_rows:
+        raise ValueError(f"Could not locate header row in {xlsx_path}")
+
+    header = raw.loc[header_rows[0]].tolist()
+    df = raw.iloc[header_rows[0] + 1:].copy()
+    df.columns = header
+
+    # Drop rows that are entirely blank (group separator rows)
+    df = df.dropna(how="all")
+
+    # Drop repeated header rows (one per Monday.com group)
+    df = df[~((df["Name"] == "Name") & (df["PR"] == "PR"))]
+
+    # Drop group summary/footer rows ("undefined" placeholders)
+    df = df[~df.apply(lambda row: (row == "undefined").any(), axis=1)]
+
+    # Drop group label rows (only "Name" populated, every other column blank)
+    other_cols = [c for c in df.columns if c != "Name"]
+    df = df[~df[other_cols].isna().all(axis=1)]
+
+    return df.reset_index(drop=True)
+
+
 def load_and_filter_xlsx(xlsx_path):
     """
-    Load XLSX file, rename columns, filter rows, fill missing values, and strip whitespace.
+    Load XLSX file, clean up extra/odd rows, rename columns, filter rows,
+    fill missing values, and strip whitespace.
     """
-    df = pd.read_excel(xlsx_path, dtype=str)
+    df = clean_raw_export(xlsx_path)
     df = df.rename(columns={
     "RTDs": "Type",
     "RTDs Text (markdown format)": "Text"})
