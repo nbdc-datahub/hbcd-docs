@@ -17,6 +17,57 @@ The tables below summarize known issues affecting the current data release and p
 <i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Pending Update</p>
 
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
+### All Data / General
+
+<table class="compact-table-no-vertical-lines">
+<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
+<tbody>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Implausible GA</td>
+<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Incorrect JSONs</td>
+<td>Metadata field values were corrected for several instruments, but are not yet corrected in the JSON files. IN PARTICULAR, PLEASE CHECK <code>type_data</code> CAREFULLY as an incorrect data type may impact analyses. Impacted instruments include: <strong>APA 1/2</strong>, <strong>Bayley-4</strong>, and <strong>EEG Form-2</strong>. See details in <a href="../release-notes/#data-warning">Release Notes</a>.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Instruction</td>
+<td>The 'instruction' data dictionary element is currently blank.</td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Score text</td>
+<td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts ecPROMIS-PAGS; MAPS-TL; SPM-2).</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Blank Fields for Siblings</td>
+<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>FamilyID</td>
+<td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Sequence Field</td>
+<td>The currently included Sequence field is blank across all instruments and will be removed.</td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+</tr>
+</tbody></table>
+
+
 ### Behavior &amp; Child-Caregiver Interaction
 
 <table class="compact-table-no-vertical-lines">
@@ -45,7 +96,7 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ECHO</td>
 <td>Addition of the Early Child Care and Education</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -161,51 +212,6 @@ The tables below summarize known issues affecting the current data release and p
 </tbody></table>
 
 
-### General
-
-<table class="compact-table-no-vertical-lines">
-<thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
-<tbody>
-
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Implausible GA</td>
-<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Instruction</td>
-<td>The 'instruction' data dictionary element is currently blank.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Score text</td>
-<td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts ecPROMIS-PAGS; MAPS-TL; SPM-2).</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Blank Fields for Siblings</td>
-<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>FamilyID</td>
-<td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Sequence Field</td>
-<td>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
-</tr>
-</tbody></table>
-
-
 ### MRI
 
 <table class="compact-table-no-vertical-lines">
@@ -219,6 +225,12 @@ The tables below summarize known issues affecting the current data release and p
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>dMRI metadata</td>
+<td><code>LargeDelta</code> and <code>SmallDelta</code> in the sidecars currently are set to vendor-specific values (which aren't always correct because the models have their own values) and ﻿will be updated to reflect accurate values.﻿ ﻿</td>
+<td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
+</tr>
+<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Cook&#x27;s Distance</td>
 <td>Addition Cook's distance values computed for fMRI.</td>
@@ -228,6 +240,12 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>QSIRecon</td>
 <td>Tabulated data for QSIRecon (participant data combined across derivative files into single tidy table) will be provided in a future release.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Raw QC Metrics</td>
+<td>Raw MR data QC metrics provided in the raw BIDS SCANS TSV files will be combined into a single table across participants/sessions.</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr>
@@ -238,8 +256,8 @@ The tables below summarize known issues affecting the current data release and p
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Summary Forms</td>
-<td>Add MRI Scan Session + Data Summary Forms (information from the MRI technician obtained on day of scan).</td>
+<td>fmap QC</td>
+<td>Additional QC fields added to the scans TSV files related to line artifacts in fmaps (<code>line2_*</code>)</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table>
@@ -434,13 +452,7 @@ The tables below summarize known issues affecting the current data release and p
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Demo</td>
-<td>Addition of V6 Adult</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Demo</td>
-<td>Addition of V6 Child</td>
+<td>Addition of V6 Adult and V6 Child Demographics</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr>
