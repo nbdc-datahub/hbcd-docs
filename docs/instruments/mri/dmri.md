@@ -10,7 +10,55 @@
 {{ instrument_description(instruments.dmri) }}
 
 ##### Diffusion Pulse Sequence Timings
-{{ csv_table("diffusion_pulse_sequence_timing.csv") }}
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>Scanner model</th>
+<th>Gmax (mT/m)</th>
+<th><code>SmallDelta</code> (ms)</th>
+<th><code>LargeDelta</code> (ms)</th>
+</tr>
+</thead>
+  <tbody>
+    <tr>
+      <td>Philips Achieva</td>
+      <td>54.3</td>
+      <td>19.81</td>
+      <td>42.82</td>
+    </tr>
+    <tr>
+      <td>Philips MR7700</td>
+      <td>59.7</td>
+      <td>17.47</td>
+      <td>44.36</td>
+    </tr>
+    <tr>
+      <td>Philips R2D2</td>
+      <td>59.8</td>
+      <td>17.5</td>
+      <td>44.45</td>
+    </tr>
+    <tr>
+      <td>Siemens Prisma</td>
+      <td>73.7</td>
+      <td>14.2</td>
+      <td>42.97</td>
+    </tr>
+    <tr>
+      <td>Siemens Prisma Fit</td>
+      <td>73.7</td>
+      <td>14.2</td>
+      <td>42.97</td>
+    </tr>
+    <tr>
+      <td>GE MR750</td>
+      <td>49.6</td>
+      <td>21.8</td>
+      <td>43.1</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Processing 
 

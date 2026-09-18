@@ -183,6 +183,60 @@ th, td {
   font-size: 1em;
 }
 
+/* FILTER/SEARCH TOOLBAR */
+.ki-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 0.5rem 0 1.5rem;
+  padding: 12px 16px;
+  background-color: #f5f7fa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.ki-search-input {
+  flex: 1 1 240px;
+  padding: 6px 10px;
+  border: 1px solid #ccd3da;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+.ki-select {
+  padding: 6px 10px;
+  border: 1px solid #ccd3da;
+  border-radius: 6px;
+  font-size: 0.95em;
+  background-color: #fff;
+}
+.ki-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9em;
+  color: #444;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.ki-reset-btn {
+  padding: 6px 12px;
+  border: 1px solid #ccd3da;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #444;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.ki-reset-btn:hover {
+  background-color: #eef1f4;
+}
+.ki-no-results {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
 
 /* =========================================================
    DATA DICTIONARY TABLE

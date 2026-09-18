@@ -62,11 +62,13 @@ def insert_into_markdown(md_path, combined_html):
         f.write(new_content)
     print("Known issues table successfully updated.")
 
-# Generate HTML tables 
+# Generate HTML tables
 def build_table(domain, rows):
     table_parts = []
+    domain_escaped = html.escape(domain)
 
-    table_parts.append(f"\n### {html.escape(domain)}")
+    table_parts.append(f'\n<div class="ki-domain-section" data-domain="{domain_escaped}" markdown="1">')
+    table_parts.append(f"\n### {domain_escaped}")
     table_parts.append("""
 <table class="compact-table-no-vertical-lines">
 <thead><tr><th></th><th>Table/Topic</th><th>Summary</th><th>Target</th></tr></thead>
@@ -74,7 +76,8 @@ def build_table(domain, rows):
 """)
 
     for issue_type, table, summary_html, pr in rows:
-        table_parts.append("<tr>")
+        row_type = "issue" if issue_type == "Issue" else "pending"
+        table_parts.append(f'<tr data-type="{row_type}">')
         if issue_type == "Issue":
             type_label = '<i class="fas fa-bug icon-bug"></i>'
         else:
@@ -94,6 +97,7 @@ def build_table(domain, rows):
             )
         table_parts.append("</tr>")
     table_parts.append("</tbody></table>")
+    table_parts.append("</div>")
 
     return "\n".join(table_parts)
 
