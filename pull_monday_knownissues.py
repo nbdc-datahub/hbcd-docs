@@ -175,8 +175,8 @@ def build_combined_tables():
 
     for domain in sorted(grouped_by_domain.keys()):
         rows = grouped_by_domain[domain]
-        # Sort within domain
-        rows = sorted(rows, key=lambda x: (x[0], x[1]))  # (type, table)
+        # Sort within domain: by type (Issue before Pending Update), then alphabetically by Table/Topic
+        rows = sorted(rows, key=lambda x: (x[0], x[1].lower()))  # (type, table)
         tables.append(build_table(domain, rows))
 
     return "\n\n".join(tables)

@@ -1,7 +1,7 @@
 <style>
 .wy-nav-content {
-    width: 90% !important;
-    max-width: 90% !important;
+    width: 95% !important;
+    max-width: 95% !important;
     flex-grow: 1 !important;
 }
 </style>
@@ -87,6 +87,12 @@ The tables below summarize known issues affecting the current data release and p
 
 <tr data-type="issue">
 <td><i class="fas fa-bug icon-bug"></i></td>
+<td>ecPROMIS CC</td>
+<td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr data-type="issue">
+<td><i class="fas fa-bug icon-bug"></i></td>
 <td>FAD</td>
 <td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
@@ -95,12 +101,6 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>MAPS-TL (&lt;1yr)</td>
 <td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr data-type="issue">
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>ecPROMIS CC</td>
-<td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr data-type="pending">
@@ -248,20 +248,26 @@ Through Release 2.1, the **Demographics** domain included two tables containing 
 
 <tr data-type="issue">
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Run ID</td>
-<td>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
+<td>dMRI metadata</td>
+<td><code>LargeDelta</code> and <code>SmallDelta</code> in the sidecars currently are set to vendor-specific values (which aren't always correct because the models have their own values) and ﻿will be updated to reflect accurate values.﻿ ﻿</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr data-type="issue">
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>dMRI metadata</td>
-<td><code>LargeDelta</code> and <code>SmallDelta</code> in the sidecars currently are set to vendor-specific values (which aren't always correct because the models have their own values) and ﻿will be updated to reflect accurate values.﻿ ﻿</td>
+<td>Run ID</td>
+<td>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
 <td style='text-align: center;'><span class='pr-pill pr-tbd'>TBD</span></td>
 </tr>
 <tr data-type="pending">
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Cook&#x27;s Distance</td>
 <td>Addition Cook's distance values computed for fMRI.</td>
+<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
+</tr>
+<tr data-type="pending">
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>fmap QC</td>
+<td>Additional QC fields added to the scans TSV files related to line artifacts in fmaps (<code>line2_*</code>)</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 <tr data-type="pending">
@@ -280,12 +286,6 @@ Through Release 2.1, the **Demographics** domain included two tables containing 
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Source DICOMs</td>
 <td>Add source DICOMs for all imaging modalities.</td>
-<td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
-</tr>
-<tr data-type="pending">
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>fmap QC</td>
-<td>Additional QC fields added to the scans TSV files related to line artifacts in fmaps (<code>line2_*</code>)</td>
 <td style='text-align: center;'><span class='pr-pill pr-general'>3</span></td>
 </tr>
 </tbody></table>
