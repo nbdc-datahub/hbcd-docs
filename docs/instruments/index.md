@@ -9,19 +9,21 @@
 }
 </style>
 
-# Study Instruments
+# Study Measures
 
 This page lists all instruments included in the current release, organized by domain. Each instrument links to a separate README page containing instrument documentation, including, where applicable, details of implementation and data collection, quality control procedures, data and responsible use warnings, scoring procedures, and references. Study protocols are also available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). 
-
----
 
 ## Behavior, Biology, & Environment
 
 <div class="infobox">
+  <strong>The following domains provide the majority of tabulated data and ALL concatenated data included in the release.</strong>
+</div>
+
+<!-- <div class="infobox">
   <strong>The following domains provide most of the tabulated data and ALL concatenated data included in the release.</strong>
   <p>For the small number of concatenated datasets, the folder name is provided in the summary tables below in place of table names. 
     See <a href="../datacuration/overview/">Data Structure Overview</a> for an overview of release data types.</p>
-</div>
+</div> -->
 
 
 ###### <i class="fa fa-clipboard-list header-icon"></i> Administrative &nbsp;/ &nbsp; <i class="fas fa-id-card header-icon"></i> Participant Derived
@@ -474,8 +476,10 @@ This page lists all instruments included in the current release, organized by do
 
 <div class="infobox">
   <strong>The following domains are the source of ALL file-based raw BIDS and processed derivatives in the release.</strong>
-  <p>Associated tabulated data include tabulated pipeline derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives">see details</a>), participant questionnaires, and session/acquisition forms filled out by technicians. See <a href="../datacuration/overview/">Data Structure Overview</a> for an overview of release data types.</p>
+  <p>Associated tabulated data include tabulated pipeline derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives">see details</a>), participant questionnaires, and session/acquisition forms filled out by technicians.</p>
 </div>
+
+<!-- See <a href="../datacuration/overview/">Data Structure Overview</a> for an overview of release data types. -->
 
 ###### <i class="fa-solid fa-file-waveform header-icon"></i> EEG / Tabular EEG
 <p></p>

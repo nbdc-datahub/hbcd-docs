@@ -57,8 +57,8 @@ nav:
     - Data Structure Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md
     - File-Based Data: datacuration/file-based-data.md
-  - Study Instruments:
-    - List of Instruments: instruments/index.md
+  - Study Measures:
+    - Search All: instruments/index.md
     - Age Variables: instruments/agevariables.md
     - Administrative & Derived:
         - Administrative:
