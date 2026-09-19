@@ -314,9 +314,43 @@ h6 {
   font-size: 0.8em;
   background-color: #888; /* fallback */
 }
-.archive-table {
-  margin-top: 0.4rem;
+
+
+/* =========================================================
+   ADMIN NOTES — TEMPORARY DEVELOPMENT ONLY
+   Remove this class and associated content before release.
+   ========================================================= */
+
+.admin-note {
+  display: block;
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+
+  background: repeating-linear-gradient(
+    -45deg,
+    #fff3cd,
+    #fff3cd 10px,
+    #ffe69c 10px,
+    #ffe69c 20px
+  );
+
+  border: 3px solid #dc3545;
+  border-radius: 6px;
+
+  color: #721c24;
+  font-weight: 600;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
-.archive-table-title {
-  margin: 1.5rem 0 0.4rem;
+
+.admin-note::before {
+  content: "⚠ ADMIN NOTE — REMOVE BEFORE RELEASE";
+  display: block;
+  margin-bottom: 0.5rem;
+
+  color: #dc3545;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }

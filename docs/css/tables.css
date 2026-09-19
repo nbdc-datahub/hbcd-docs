@@ -143,48 +143,6 @@ th, td {
 }  
 
 /* =========================================================
-   KNOWN ISSUES/PENDING UPDATES PAGE TABLE & OTHER FEATURES
-========================================================= */ 
-
-/* PILLS */
-.pr-pill {
-  display: inline-block;
-  padding: 2px 8px;
-  font-size: 1em;
-  font-weight: 600;
-  border-radius: 999px;
-  line-height: 1;
-  white-space: nowrap;
-}
-/* Version-specific styling */
-.pr-general {
-  background-color: #e6f0ff;
-  color: #1a4fb3;
-}
-/* TBD PILL*/
-.pr-tbd {
-  background-color: #f1f3f5;
-  color: #666;
-  font-style: italic;
-}
-/* ICONS */
-.icon-crosshairs {
-  color: #489000;
-  font-size: 1.3em;
-}
-.icon-rotate {
-  color: #199bd6;
-  margin-right: 0.4em;
-  font-size: 1em;
-}
-.icon-bug {
-  color: #f97316;
-  margin-right: 0.4em;
-  font-size: 1em;
-}
-
-
-/* =========================================================
    DATA DICTIONARY TABLE
 ========================================================= */
 /* .dd {
