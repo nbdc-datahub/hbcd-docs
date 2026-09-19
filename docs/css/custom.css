@@ -165,7 +165,7 @@ h6 {
 /* =========================================================
    PILL BADGES
 ========================================================= */
-.pill-badge {
+/* .pill-badge {
   display: inline-block;
   background-color: #199bd6;
   color: white;
@@ -185,7 +185,7 @@ h6 {
   padding: 2px 4px;
   font-size: 0.85em;
   white-space: nowrap;
-}
+} */
 
 /* ADD SPACE ABOVE THE BOTTOM NAVIGATION BUTTONS */
 .rst-footer-buttons {
@@ -314,4 +314,38 @@ h6 {
 .folder-tree .comment {
   color: #7d7d7d;
   font-style: italic;
+}
+
+
+/* =========================================================
+   KNOWN ISSUES PAGE
+========================================================= */
+.icon-rotate {
+  color: #199bd6;
+  margin-right: 0.4em;
+  font-size: 1em;
+}
+.icon-bug {
+  color: #f97316;
+  margin-right: 0.4em;
+  font-size: 1em;
+}
+.pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: white;
+  font-weight: 500;
+  font-size: 0.8em;
+  background-color: #888; /* fallback */
+}
+.archive-table {
+  margin-top: 1.5rem;
+}
+.archive-table-title {
+  caption-side: top;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 0 0 0.4rem;
 }

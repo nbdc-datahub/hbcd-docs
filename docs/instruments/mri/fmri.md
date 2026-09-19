@@ -16,9 +16,6 @@
 
 <div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 5px;" class="fa-solid fa-up-right-from-square"></i></a></span> </div>
 
-<p style="font-size: 2em; color: red;">ADD OVERVIEW TEXT</p>
-
-
 ### Infant fMRIPrep
 
 <a href="https://nibabies.readthedocs.io/en/latest/">Infant-fMRIPrep</a> (also known as NiBabies) performs minimal structural and functional MRI processing. It is an adapted version of <em>fMRIPrep</em> optimized for infant data processing, using age-appropriate templates and surface reconstruction methods optimized for early development (<a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>). Pipeline outputs include visual quality assessment reports, preprocessed derivatives, and confounds used for denoising in subsequent processing steps.

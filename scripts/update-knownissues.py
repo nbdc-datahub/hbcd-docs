@@ -1,44 +1,49 @@
-import pandas as pd
 import html
 import os
 import markdown
-import numpy as np
 import re
+from datetime import datetime
+from utils import load_and_filter
 
+# NEW VERSION OF parse-by-domains.py that parses text documenting issues from a separate google sheet and matches issue based on ID#
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
-XLSX= "data/latest-knownissues.xlsx"
-HBCD_DOCS_MD = "docs/changelog/issues-updates.md"
+XLSX= "latest.xlsx"
+# Parse text describing issue from google sheet
+sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
+sheet_gid = "0"
+# Populate known issues page
+HBCD_DOCS_MD = "../docs/changelog/issues-updates.md"
 
 # FUNCTIONS
-def load_and_filter_xlsx(xlsx_path):
-    """
-    Load XLSX file, rename columns, filter rows, fill missing values, and strip whitespace.
-    """
-    df = pd.read_excel(xlsx_path, dtype=str)
-    df = df.rename(columns={
-    "RTDs": "Type",
-    "RTDs Text (markdown format)": "Text"})
-
-    # Filter - only include items marked for autoparsing
-    df = df[df['Autoparsed?'].str.contains('Yes')]
-
-    # Fill missing values and strip whitespace 
-    df = df.fillna('')
-    df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
-
-    # Remove rows where PR == 2.1
-    df = df[df['PR'] != '2.1'] 
-    
-    return df  
-
 def map_type(value):
-    if value == "known_issue":
+    if "issue" in value:
         return "Issue"
-    elif value == "pending":
+    elif "pending" in value:
         return "Pending Update"
     return None
 
+def format_pr(pr):
+    """Normalize numeric Target (PR) values to always show one decimal (e.g. '3' -> '3.0')."""
+    if not pr:
+        return "TBD"
+    if pr != "TBD" and "." not in pr:
+        try:
+            float(pr)
+            pr = f"{pr}.0"
+        except ValueError:
+            pass
+    return pr
+
+def target_sort_key(pr):
+    """Sort Target (PR) values numerically ascending, with TBD sorted last."""
+    pr = str(pr)
+    if pr.upper() == "TBD":
+        return (1, 0.0)
+    try:
+        return (0, float(pr))
+    except ValueError:
+        return (0, pr)
 
 def insert_into_markdown(md_path, combined_html):
     START_MARKER = "<!-- BEGIN KNOWN_ISSUES_TABLE -->"
@@ -66,21 +71,21 @@ def insert_into_markdown(md_path, combined_html):
 def build_table(domain, rows):
     table_parts = []
 
-    table_parts.append(f"\n### {html.escape(domain)}")
-    table_parts.append("""
-<table class="compact-table-no-vertical-lines issues">
+    domain_esc = html.escape(domain)
+    table_parts.append(f"""
+<table class="compact-table-no-vertical-lines archive-table" data-domain="{domain_esc}">
+<caption class="archive-table-title">{domain_esc}</caption>
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.2em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 """)
 
     for issue_type, table, summary_html, pr in rows:
-        table_parts.append("<tr>")
+        type_attr = "issue" if issue_type == "Issue" else "update"
+        table_parts.append(f'<tr data-domain="{domain_esc}" data-type="{type_attr}">')
         if issue_type == "Issue":
             type_label = '<i class="fas fa-bug icon-bug"></i>'
         else:
@@ -88,36 +93,17 @@ def build_table(domain, rows):
         table_parts.append(f"<td>{type_label}</td>")
         table_parts.append(f"<td>{html.escape(str(table))}</td>")
         table_parts.append(f"<td>{summary_html}</td>")
-
-         # Determine pill class based on PR value
-        if str(pr).upper() == "TBD":
-            pill_class = "pr-pill pr-tbd"
-        else:
-            pill_class = f"pr-pill pr-general"
-
         table_parts.append(
-                f"<td style='text-align: center;'><span class='{pill_class}'>{html.escape(str(pr))}</span></td>"
-            )
+            f"<td style='text-align: center;'><span class='pill'>{html.escape(str(pr))}</span></td>"
+        )
         table_parts.append("</tr>")
     table_parts.append("</tbody></table>")
 
     return "\n".join(table_parts)
 
 # WORK
-df = load_and_filter_xlsx(XLSX)
-
-# Drop unecessary columns (for troubleshooting purposes)
-df = df.drop(['Name'], axis=1)
-df = df.drop(['Status'], axis=1)
-df = df.drop(['BR'], axis=1)
-
-# Replace empty PR cells with 'TBD'
-df['PR'] = df['PR'].replace('', 'TBD') 
-
-# Type mapping and sort by (1) domain, (2) table/topic
-df["MappedType"] = df["Type"].apply(map_type)
-df = df[df["MappedType"].notna()]
-df = df.sort_values(by=['Domain', 'Table/Topic'])
+df = load_and_filter(XLSX, sheet_id, sheet_gid)
+df = df[df["PR"] != "3"]
 
 # Type mapping and sort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)
@@ -132,7 +118,7 @@ for _, row in df.iterrows():
     issue_type = row["MappedType"]
     table = row["Table/Topic"]
     summary_md = row["Text"]
-    pr = row["PR"]
+    pr = format_pr(row["PR"])
 
     # Convert Markdown → HTML & strip outer <p>
     summary_html = markdown.markdown(
@@ -145,7 +131,7 @@ for _, row in df.iterrows():
         (issue_type, table, summary_html, pr)
     )
 
-# Generate known issues and pending tables 
+# Generate known issues and pending tables for internal page
 table_configs = [
     ("Issue",
      '<i class="fas fa-bug icon-bug"></i> Known Issues'),
@@ -158,8 +144,8 @@ def build_combined_tables():
 
     for domain in sorted(grouped_by_domain.keys()):
         rows = grouped_by_domain[domain]
-        # Sort within domain
-        rows = sorted(rows, key=lambda x: (x[0], x[1]))  # (type, table)
+        # Sort within domain by Target (PR), then type, then Table/Topic
+        rows = sorted(rows, key=lambda x: (target_sort_key(x[3]), x[0], x[1]))
         tables.append(build_table(domain, rows))
 
     return "\n\n".join(tables)
