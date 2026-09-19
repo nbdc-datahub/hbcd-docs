@@ -1,5 +1,47 @@
 <style>
-/* Known issues filter controls */
+  /* Known Issues tables */
+.compact-table-no-vertical-lines {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+/* Consistent column widths across every section */
+.compact-table-no-vertical-lines th:nth-child(1),
+.compact-table-no-vertical-lines td:nth-child(1) {
+  width: 4%;
+  text-align: center;
+}
+.compact-table-no-vertical-lines th:nth-child(2),
+.compact-table-no-vertical-lines td:nth-child(2) {
+  width: 18%;
+}
+.compact-table-no-vertical-lines th:nth-child(3),
+.compact-table-no-vertical-lines td:nth-child(3) {
+  width: 68%;
+}
+.compact-table-no-vertical-lines th:nth-child(4),
+.compact-table-no-vertical-lines td:nth-child(4) {
+  width: 10%;
+  text-align: center;
+}
+/* Keep long content from forcing columns wider */
+.compact-table-no-vertical-lines th,
+.compact-table-no-vertical-lines td {
+  box-sizing: border-box;
+  vertical-align: top;
+}
+/* Let long code/field names wrap rather than expanding the table */
+.compact-table-no-vertical-lines code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+/* Keep target pills visually centered */
+.compact-table-no-vertical-lines td:last-child {
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* KNOWN ISSUES FILTER */
 .archive-controls {
   margin: 1.5rem 0 1rem;
   padding: 1rem 1.1rem;
@@ -129,22 +171,22 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<th></th><th>Table/Topic</th>
+<th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
-
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Instruction</td>
 <td>The 'instruction' data dictionary element is currently blank.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Sequence Field</td>
 <td>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -154,7 +196,8 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<th></th><th>Table/Topic</th>
+<th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
@@ -163,7 +206,7 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ECHO</td>
 <td>Addition of the Early Child Care and Education</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -173,7 +216,8 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<th></th><th>Table/Topic</th>
+<th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
@@ -182,7 +226,7 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Age fields</td>
 <td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>3.1</span></td>
+<td><span class='pill'>3.1</span></td>
 </tr>
 </tbody></table>
 
@@ -192,7 +236,8 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<th></th><th>Table/Topic</th>
+<th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
@@ -201,19 +246,19 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Run ID</td>
 <td>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>dMRI metadata</td>
 <td><code>LargeDelta</code> and <code>SmallDelta</code> in the sidecars currently are set to vendor-specific values (which aren't always correct because the models have their own values) and will be updated to reflect accurate values.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Raw QC Metrics</td>
 <td>Raw MR data QC metrics provided in the raw BIDS SCANS TSV files will be combined into a single table across participants/sessions.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -223,7 +268,8 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<th></th><th>Table/Topic</th>
+<th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
@@ -232,7 +278,7 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>MLDS</td>
 <td>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -242,7 +288,8 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<th></th><th>Table/Topic</th>
+<th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
@@ -251,13 +298,13 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>BISQ-SF</td>
 <td>Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Vision Screener</td>
 <td>Add more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results).</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -267,7 +314,8 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th><th>Summary</th>
+<th></th><th>Table/Topic</th>
+<th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
@@ -276,13 +324,13 @@ The tables below summarize known issues affecting the current data release and p
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Healthv2 Preg</td>
 <td>The field for the date when PNV was stopped (<code>pex_bm_healthv2_preg__exp__pnv_007__01</code>) is blank, despite participants having reported stopping.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Healthv2 Preg</td>
 <td>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table><!-- END KNOWN_ISSUES_TABLE -->
 

@@ -106,7 +106,7 @@ def build_table(domain, rows):
         table_parts.append(f"<td>{html.escape(str(table))}</td>")
         table_parts.append(f"<td>{summary_html}</td>")
         table_parts.append(
-            f"<td style='text-align: center;'><span class='pill'>{html.escape(str(br))}</span></td>"
+            f"<td><span class='pill'>{html.escape(str(br))}</span></td>"
         )
         table_parts.append("</tr>")
     table_parts.append("</tbody></table>")
