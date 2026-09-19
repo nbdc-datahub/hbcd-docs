@@ -236,6 +236,50 @@ hbcd/
 <span class="var">METRIC</span>  : curv , sulc , thickness  
 <span class="var">PARC</span>    : 4S-{156|256|...|1056}Parcels , Glasser , Gordon , MIDB , MyersLabonte , HCP (func/ only) , Tian  (func/ only)
 <span class="var">SURF</span>    : midthickness , pial , white , inflated , vinflated
+</pre>
+</div>
+
+### ModelArrayIO
+
+Mass-univariate statistical modeling for large neuroimaging datasets, or [ModelArrayIO](https://modelarrayio.readthedocs.io/en/latest/), is a Python package that converts neuroimaging file formats to HDF5 (`.h5`) for compatibility with the [ModelArray R package](https://github.com/ModelArray/ModelArray). For HBCD, ModelArrayIO is used as a downstream aggregation step, converting subject-level outputs from XCP-D into cohort-level arrays. This enables efficient, large-scale statistical analyses via ModelArray without having to load individual subject files.  
+
+XCP-D-ModelArray outputs include cohort-level HDF5 arrays aggregating structural and functional derivatives:
+
+  - Surface morphometry (curvature, sulcal depth, cortical thickness)  
+  - Functional maps (ALFF, ReHo)  
+  - Resting-state functional connectivity.`<ATLAS>` = `Gordon`, `HCP`, `MIDB`
+
+<div id="modelarray" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">ModelArrayIO Outputs</span>
+  <a class="anchor-link" href="#modelarray" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<pre style="font-size: 11px;" class="folder-tree">
+hbcd/
+└── derivatives/
+    └── xcp_d-<span class="var">{HASH}</span>-ModelArray/
+        │    <span class="comment"># Surface morphometry</span>
+        ├── xcp_d_v0.13.0_param-<span class="var">{curv|sulc|thickness}</span>.h5
+        ├── xcp_d_v0.13.0_param-<span class="var">{curv|sulc|thickness}</span>.csv
+        │
+        │    <span class="comment"># Functional maps</span>
+        ├── xcp_d_v0.13.0_param-<span class="var">{alff|reho}</span>.h5
+        ├── xcp_d_v0.13.0_param-<span class="var">{alff|reho}</span>.csv
+        │
+        │    <span class="comment"># Resting-state functional connectivity</span>
+        ├── xcp_d_v0.13.0_task-rest_seg-<span class="var">{ATLAS}</span>_param-pearsoncorrelation.h5
+        └── xcp_d_v0.13.0_task-rest_seg-<span class="var">{ATLAS}</span>_param-pearsoncorrelation.csv
+
+<span class="hashtag"># ── Label Legend ─────────────────────────────────────────────</span>
+<span class="var">HASH</span>    : 0f306a2f+0ef9c88a , 2afa9081+0ef9c88a
+<span class="var">ATLAS</span>    : 4S-{156|256|...|1056}Parcels , Glasser , Gordon , MIDB , MyersLabonte
+</pre>
 </div>
 
 

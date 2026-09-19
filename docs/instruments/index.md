@@ -7,43 +7,141 @@
 .blue-text {
   color: #2563eb;
 }
+
+/* INSTRUMENTS FILTER */
+.archive-controls {
+  margin: 1.5rem 0 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.archive-controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.archive-search {
+  flex: 1 1 280px;
+  min-width: 220px;
+}
+
+.archive-controls input,
+.archive-controls select,
+.archive-controls button {
+  box-sizing: border-box;
+  height: 38px;
+  border: 1px solid #cfd4da;
+  border-radius: 5px;
+  background: white;
+  padding: 0 0.75rem;
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.archive-controls input:focus,
+.archive-controls select:focus,
+.archive-controls button:focus {
+  outline: 2px solid rgba(25, 155, 214, 0.25);
+  border-color: #199bd6;
+}
+
+.archive-controls button {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.archive-controls button:hover {
+  background: #f1f3f5;
+}
+
+.archive-status {
+  margin-top: 0.65rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.archive-empty {
+  display: none;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+  .archive-controls-row {
+    align-items: stretch;
+  }
+
+  .archive-controls input,
+  .archive-controls select,
+  .archive-controls button {
+    width: 100%;
+  }
+
+  .archive-search {
+    flex-basis: 100%;
+  }
+}
 </style>
 
 # Study Measures
 
 This page lists all instruments included in the current release, organized by domain. Each instrument links to a separate README page containing instrument documentation, including, where applicable, details of implementation and data collection, quality control procedures, data and responsible use warnings, scoring procedures, and references. Study protocols are also available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). 
 
-## Behavior, Biology, & Environment
+<div class="archive-controls" aria-label="Instrument filters">
+  <div class="archive-controls-row">
+    <input
+      id="instr-search"
+      class="archive-search"
+      type="search"
+      placeholder="Search instrument, construct, or table name..."
+      aria-label="Search instruments"
+    >
 
-<div class="infobox">
-  <strong>The following domains provide the majority of tabulated data and ALL concatenated data included in the release.</strong>
+    <select id="instr-domain" aria-label="Filter by domain">
+      <option value="">All domains</option>
+    </select>
+
+    <button id="instr-reset" type="button">Clear filters</button>
+  </div>
+  <div id="instr-status" class="archive-status" aria-live="polite"></div>
 </div>
 
-<!-- <div class="infobox">
-  <strong>The following domains provide most of the tabulated data and ALL concatenated data included in the release.</strong>
-  <p>For the small number of concatenated datasets, the folder name is provided in the summary tables below in place of table names. 
-    See <a href="../datacuration/overview/">Data Structure Overview</a> for an overview of release data types.</p>
-</div> -->
+<div id="instr-empty" class="archive-empty">No matching instruments found.</div>
 
 
-###### <i class="fa fa-clipboard-list header-icon"></i> Administrative &nbsp;/ &nbsp; <i class="fas fa-id-card header-icon"></i> Participant Derived
+### <i class="fa fa-clipboard-list header-icon"></i> Administrative
 
 <table class="compact-table-no-vertical-lines" style="width: 100%;">
 <thead>
-<th>Domain</th>
 <th>Instrument</th>
 <th>Construct</th>
 <th>Table / Folder Name</th>
 </thead>
 <tbody>
 <tr>
-<td style="color: #6b7280;"><b>ADMINISTRATIVE</b></td>
 <td><a href="admin/study-navigators">Study Navigator Contact Form</a></td>
 <td>Recruitment/Retention</td>
 <td><i>concatenated/study_navigator/</i></td>
 </tr>
+</tbody>
+</table>
+
+### <i class="fas fa-id-card header-icon"></i> Participant Derived
+
+<table class="compact-table-no-vertical-lines" style="width: 100%;">
+<thead>
+<th>Instrument</th>
+<th>Construct</th>
+<th>Table / Folder Name</th>
+</thead>
+<tbody>
 <tr>
-  <td style="color: #6b7280;" rowspan="2"><b>PARTICIPANT DERIVED</b></td>
   <td><a href="demo/static/">Static Table</a></td>
   <td>Static derived participant information</td>
   <td><code>par_gd_sdc</code></td>
@@ -56,8 +154,7 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
-
-###### <i class="fa fa-people-arrows header-icon"></i> Behavior & Caregiver-Child Interaction
+### <i class="fa fa-people-arrows header-icon"></i> Behavior & Caregiver-Child Interaction
 <table class="compact-table-no-vertical-lines">
 <thead>
   <tr>
@@ -127,7 +224,7 @@ This page lists all instruments included in the current release, organized by do
   </table>
 
 
-###### <i class="fa fa-vial header-icon"></i> Biospecimen & Omics
+### <i class="fa fa-vial header-icon"></i> Biospecimen & Omics
 <table class="compact-table-no-vertical-lines">
 <thead>
 <th>Instrument</th>
@@ -158,7 +255,7 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
-###### <i class="fa-solid fa-puzzle-piece header-icon"></i> Neurocognition & Language
+### <i class="fa-solid fa-puzzle-piece header-icon"></i> Neurocognition & Language
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -200,7 +297,7 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
-###### <i class="fa fa-heart-pulse header-icon"></i> Physical Health
+### <i class="fa fa-heart-pulse header-icon"></i> Physical Health
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -258,7 +355,7 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
-###### <i class="fa-solid fa-baby header-icon"></i> Pregnancy & Exposure, Including Substance Use
+### <i class="fa-solid fa-baby header-icon"></i> Pregnancy & Exposure, Including Substance Use
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -360,9 +457,7 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
-
-
-###### <i class="fas fa-city header-icon"></i> Social & Environmental Determinants
+### <i class="fas fa-city header-icon"></i> Social & Environmental Determinants
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -472,17 +567,7 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
-## Brain Activity & Biosensors
-
-<div class="infobox">
-  <strong>The following domains are the source of ALL file-based raw BIDS and processed derivatives in the release.</strong>
-  <p>Associated tabulated data include tabulated pipeline derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives">see details</a>), participant questionnaires, and session/acquisition forms filled out by technicians.</p>
-</div>
-
-<!-- See <a href="../datacuration/overview/">Data Structure Overview</a> for an overview of release data types. -->
-
-###### <i class="fa-solid fa-file-waveform header-icon"></i> EEG / Tabular EEG
-<p></p>
+### <i class="fa-solid fa-file-waveform header-icon"></i> EEG / Tabular EEG
 The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Faces (FACE), Visual Evoked Potential (VEP), and Video Resting State (RS). File-based EEG data include raw BIDS and HBCD-MADE pipeline derivatives; see <a href="eeg/release-data/">Release Data</a> for details. Tabular EEG data includes tabulated pipeline derivatives, acquisition forms, and quality-control metrics:
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -518,8 +603,7 @@ The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Face
 </tbody>
 </table>
 
-###### <i class="fa fa-brain header-icon"></i> Imaging / Tabular Imaging
-<p></p>
+### <i class="fa fa-brain header-icon"></i> Imaging / Tabular Imaging
 Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [Release Data](mri/release-data.md) for details. Tabular Imaging includes tabulated pipeline derivatives (<i class="fa-solid fa-gear simple-icon"></i>), questionnaire/form data, and quality-control metrics:
 <table class="compact-table-no-vertical-lines"> 
 <thead>
@@ -586,8 +670,7 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
 </tbody>
 </table>
 
-###### <i class="fa fa-microchip header-icon"></i> Novel Technologies & Wearable Sensors
-<p></p>
+### <i class="fa fa-microchip header-icon"></i> Novel Technologies & Wearable Sensors
 Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensors/#derivatives">HBCD-Motion</a> pipeline derivatives - see [Release Data](sensors/wearsensors.md#release-data) for details. Tabulated data includes questionnaires and sensor checklists:
 
 <table class="compact-table-no-vertical-lines"> 
@@ -611,6 +694,170 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
 </tr>
 </tbody>
 </table>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".wy-nav-content") || document.body;
+
+  const searchInput = document.getElementById("instr-search");
+  const domainSelect = document.getElementById("instr-domain");
+  const resetButton = document.getElementById("instr-reset");
+  const status = document.getElementById("instr-status");
+  const emptyMessage = document.getElementById("instr-empty");
+
+  if (!searchInput) return;
+
+  function normalize(value) {
+    return value.toLowerCase().replace(/\s+/g, " ").trim();
+  }
+
+  function cleanHeadingText(heading) {
+    const clone = heading.cloneNode(true);
+    clone.querySelectorAll(".headerlink, i").forEach(el => el.remove());
+    return clone.textContent.replace(/ /g, " ").replace(/\s+/g, " ").trim();
+  }
+
+  // Walk the page in document order, pairing each h3 domain heading with the
+  // table that follows it.
+  const flow = Array.from(
+    container.querySelectorAll("h3, table.compact-table-no-vertical-lines")
+  );
+
+  const sections = [];
+
+  flow.forEach((el, i) => {
+    if (el.tagName !== "H3") return;
+
+    let j = i + 1;
+    while (j < flow.length && flow[j].tagName === "H3") j++;
+    const table = j < flow.length && flow[j].tagName === "TABLE" ? flow[j] : null;
+    if (!table) return;
+
+    // Collect any intro text/notes between the heading and its table so they
+    // hide/show together with the section.
+    const extras = [];
+    let node = el.nextElementSibling;
+    while (node && node !== table) {
+      extras.push(node);
+      node = node.nextElementSibling;
+    }
+
+    sections.push({
+      heading: el,
+      table,
+      extras,
+      domain: cleanHeadingText(el),
+    });
+  });
+
+  sections.forEach(section => {
+    domainSelect.add(new Option(section.domain, section.domain));
+  });
+
+  // Group table rows so that rowspan blocks and "table-group-row" sub-headers
+  // stay intact and are shown/hidden as a unit rather than row-by-row.
+  function buildRowGroups(table) {
+    const rows = Array.from(table.querySelectorAll("tbody > tr"));
+    const groups = [];
+    let i = 0;
+    while (i < rows.length) {
+      const row = rows[i];
+      if (row.classList.contains("table-group-row")) {
+        groups.push({ type: "header", rows: [row] });
+        i++;
+        continue;
+      }
+      let span = 1;
+      row.querySelectorAll("td[rowspan]").forEach(td => {
+        const n = parseInt(td.getAttribute("rowspan"), 10);
+        if (!Number.isNaN(n) && n > span) span = n;
+      });
+      groups.push({ type: "data", rows: rows.slice(i, i + span) });
+      i += span;
+    }
+    return groups;
+  }
+
+  function filterTable(table, search) {
+    const groups = buildRowGroups(table);
+    let visibleCount = 0;
+    let pendingHeader = null;
+    let headerHasVisible = false;
+
+    function flushHeader() {
+      if (pendingHeader) {
+        pendingHeader.rows.forEach(r => (r.style.display = headerHasVisible ? "" : "none"));
+      }
+    }
+
+    groups.forEach(group => {
+      if (group.type === "header") {
+        flushHeader();
+        pendingHeader = group;
+        headerHasVisible = false;
+        return;
+      }
+
+      const text = normalize(group.rows.map(r => r.textContent).join(" "));
+      const show = !search || text.includes(search);
+      group.rows.forEach(r => (r.style.display = show ? "" : "none"));
+      if (show) {
+        visibleCount += group.rows.length;
+        headerHasVisible = true;
+      }
+    });
+
+    flushHeader();
+    return visibleCount;
+  }
+
+  function applyFilters() {
+    const search = normalize(searchInput.value);
+    const domain = domainSelect.value;
+
+    let totalVisible = 0;
+    let domainsVisible = 0;
+
+    sections.forEach(section => {
+      if (domain && section.domain !== domain) {
+        section.heading.style.display = "none";
+        section.table.style.display = "none";
+        section.extras.forEach(el => (el.style.display = "none"));
+        return;
+      }
+
+      const sectionMatchesSearch = !search || normalize(section.domain).includes(search);
+
+      const visible = filterTable(section.table, sectionMatchesSearch ? "" : search);
+      const showSection = visible > 0;
+
+      section.heading.style.display = showSection ? "" : "none";
+      section.table.style.display = showSection ? "" : "none";
+      section.extras.forEach(el => (el.style.display = showSection ? "" : "none"));
+
+      if (showSection) domainsVisible++;
+      totalVisible += visible;
+    });
+
+    status.textContent =
+      `Showing ${totalVisible} instrument${totalVisible === 1 ? "" : "s"} across ${domainsVisible} domain${domainsVisible === 1 ? "" : "s"}.`;
+    emptyMessage.style.display = totalVisible === 0 ? "block" : "none";
+  }
+
+  [searchInput, domainSelect].forEach(control => {
+    control.addEventListener("input", applyFilters);
+    control.addEventListener("change", applyFilters);
+  });
+
+  resetButton.addEventListener("click", function () {
+    searchInput.value = "";
+    domainSelect.value = "";
+    applyFilters();
+  });
+
+  applyFilters();
+});
+</script>
 
 
 
