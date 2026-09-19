@@ -7,6 +7,7 @@ Mass-univariate statistical modeling for large neuroimaging datasets
 
 [ModelArrayIO](https://modelarrayio.readthedocs.io/en/latest/) is a Python package that converts neuroimaging file formats to HDF5 (`.h5`) for compatibility with the [ModelArray R package](https://github.com/ModelArray/ModelArray). For HBCD, ModelArrayIO is used as a downstream aggregation step, converting subject-level outputs from QSIRecon and XCP-D into cohort-level arrays. This enables efficient, large-scale statistical analyses via ModelArray without having to load individual subject files.  
 
+**LUCI ADDED THIS AI-GENERATED SUMMARY IN CASE IT'S HELPFUL**
 ModelArrayIO was used to aggregate subject-level neuroimaging data listed in the cohort CSV into a cohort-level HDF5 ModelArray file. The scalar file paths specified by SCALAR_COLUMNS were read from the cohort table, with the input modality automatically detected from the source file extensions. The data were stored as float32 values using the HDF5 backend. Gzip compression at level 9 was applied to the output, and the HDF5 spatial chunks were automatically sized to target approximately 32 MiB per chunk. For source files stored on S3, four parallel workers were used to download/load the imaging data. The resulting .h5 file contains the aggregated subject-by-element data in a format suitable for downstream large-scale statistical analysis with ModelArray.
 
 *Note: Each `.h5` file is paired with a `.csv` file indexing included subjects and sessions.*

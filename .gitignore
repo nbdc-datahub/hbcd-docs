@@ -9,3 +9,4 @@ __pycache__/
 make_tables/
 LOCAL/
 ARCHIVE/
+.scratch/

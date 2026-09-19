@@ -155,7 +155,6 @@ nav:
                 - Video Resting State: instruments/eeg/tasks/rs.md
 
         - Magnetic Resonance Imaging:
-            - postproc: instruments/mri/postproc.md
             - MR Protocols & Release Data: instruments/mri/index.md
             - Quality Control Procedures: instruments/mri/qc.md
             - Derivatives Guide: instruments/mri/derivatives-guide.md
