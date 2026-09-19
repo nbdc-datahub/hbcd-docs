@@ -733,11 +733,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const table = j < flow.length && flow[j].tagName === "TABLE" ? flow[j] : null;
     if (!table) return;
 
+    // The ReadTheDocs theme's own JS wraps every <table> in a
+    // ".wy-table-responsive" div at runtime, so the table itself is not
+    // necessarily a direct sibling of the heading. Walk up from the table to
+    // whichever ancestor-or-self IS that sibling, so hiding it doesn't leave
+    // the wrapper's own margin behind. Doing this lazily (not once at setup)
+    // means it stays correct however late that wrapping happens.
+    function outerTableContainer() {
+      let node = table;
+      while (node.parentElement && node.parentElement !== el.parentElement) {
+        node = node.parentElement;
+      }
+      return node;
+    }
+
     // Collect any intro text/notes between the heading and its table so they
     // hide/show together with the section.
     const extras = [];
     let node = el.nextElementSibling;
-    while (node && node !== table) {
+    while (node && !node.contains(table)) {
       extras.push(node);
       node = node.nextElementSibling;
     }
@@ -745,6 +759,7 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.push({
       heading: el,
       table,
+      outerTableContainer,
       extras,
       domain: cleanHeadingText(el),
     });
@@ -819,9 +834,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let domainsVisible = 0;
 
     sections.forEach(section => {
+      const container = section.outerTableContainer();
+
       if (domain && section.domain !== domain) {
         section.heading.style.display = "none";
-        section.table.style.display = "none";
+        container.style.display = "none";
         section.extras.forEach(el => (el.style.display = "none"));
         return;
       }
@@ -832,7 +849,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const showSection = visible > 0;
 
       section.heading.style.display = showSection ? "" : "none";
-      section.table.style.display = showSection ? "" : "none";
+      container.style.display = showSection ? "" : "none";
       section.extras.forEach(el => (el.style.display = showSection ? "" : "none"));
 
       if (showSection) domainsVisible++;
