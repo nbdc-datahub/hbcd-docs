@@ -159,8 +159,8 @@ The tables below summarize known issues affecting the current data release and p
 </div>
 
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
+<h5 class="archive-table-title" data-domain="All Data / General">All Data / General</h5>
 <table class="compact-table-no-vertical-lines archive-table" data-domain="All Data / General">
-<caption class="archive-table-title">All Data / General</caption>
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -183,8 +183,8 @@ The tables below summarize known issues affecting the current data release and p
 </tbody></table>
 
 
+<h5 class="archive-table-title" data-domain="Behavior &amp; Child-Caregiver Interaction">Behavior &amp; Child-Caregiver Interaction</h5>
 <table class="compact-table-no-vertical-lines archive-table" data-domain="Behavior &amp; Child-Caregiver Interaction">
-<caption class="archive-table-title">Behavior &amp; Child-Caregiver Interaction</caption>
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -201,8 +201,8 @@ The tables below summarize known issues affecting the current data release and p
 </tbody></table>
 
 
+<h5 class="archive-table-title" data-domain="EEG">EEG</h5>
 <table class="compact-table-no-vertical-lines archive-table" data-domain="EEG">
-<caption class="archive-table-title">EEG</caption>
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -219,8 +219,8 @@ The tables below summarize known issues affecting the current data release and p
 </tbody></table>
 
 
+<h5 class="archive-table-title" data-domain="MRI">MRI</h5>
 <table class="compact-table-no-vertical-lines archive-table" data-domain="MRI">
-<caption class="archive-table-title">MRI</caption>
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -249,8 +249,8 @@ The tables below summarize known issues affecting the current data release and p
 </tbody></table>
 
 
+<h5 class="archive-table-title" data-domain="Neurocognition &amp; Language">Neurocognition &amp; Language</h5>
 <table class="compact-table-no-vertical-lines archive-table" data-domain="Neurocognition &amp; Language">
-<caption class="archive-table-title">Neurocognition &amp; Language</caption>
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -267,8 +267,8 @@ The tables below summarize known issues affecting the current data release and p
 </tbody></table>
 
 
+<h5 class="archive-table-title" data-domain="Physical Health">Physical Health</h5>
 <table class="compact-table-no-vertical-lines archive-table" data-domain="Physical Health">
-<caption class="archive-table-title">Physical Health</caption>
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -291,8 +291,8 @@ The tables below summarize known issues affecting the current data release and p
 </tbody></table>
 
 
+<h5 class="archive-table-title" data-domain="Pregnancy &amp; Environmental Exposure">Pregnancy &amp; Environmental Exposure</h5>
 <table class="compact-table-no-vertical-lines archive-table" data-domain="Pregnancy &amp; Environmental Exposure">
-<caption class="archive-table-title">Pregnancy &amp; Environmental Exposure</caption>
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>
@@ -320,9 +320,9 @@ The tables below summarize known issues affecting the current data release and p
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  // Each domain gets its own <table class="archive-table" data-domain="...">
-  // with a <caption> as its title. Rows carry their own data-domain/data-type
-  // so filtering doesn't depend on column position.
+  // Each domain gets its own <table class="archive-table" data-domain="...">,
+  // preceded by an <h5 class="archive-table-title"> as its title. Rows carry
+  // their own data-domain/data-type so filtering doesn't depend on column position.
   const tables = Array.from(document.querySelectorAll(".archive-table"));
   const rows = tables.flatMap(t => Array.from(t.querySelectorAll("tbody tr")));
 
@@ -381,12 +381,16 @@ document.addEventListener("DOMContentLoaded", function () {
       if (show) visible++;
     });
 
-    // Hide a domain's whole table (title included, via its <caption>) when
-    // none of its rows match.
+    // Hide a domain's whole table, along with its preceding <h5> title,
+    // when none of its rows match.
     tables.forEach(table => {
       const tableVisible = Array.from(table.querySelectorAll("tbody tr"))
         .some(row => row.style.display !== "none");
       table.style.display = tableVisible ? "" : "none";
+      const title = table.previousElementSibling;
+      if (title && title.classList.contains("archive-table-title")) {
+        title.style.display = tableVisible ? "" : "none";
+      }
     });
 
     status.textContent =

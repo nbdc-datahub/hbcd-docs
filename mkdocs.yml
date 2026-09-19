@@ -43,6 +43,20 @@ plugins:
 docs_dir: docs
 
 nav: 
+  - Data Access & Use:
+    - Access & Download Data: access/download.md
+    - Responsible Data Use: access/resp_data_use.md
+    - Acknowledgment: access/dua.md
+    - Tools: access/tools.md
+  - Study Standards & Conventions:
+    - Study Protocol: standards/protocol.md
+    - Data Dictionary: standards/metadata.md
+    - Naming Conventions: standards/naming-conventions.md
+    - Processing & Derivative Standards: standards/processing/standards.md
+  - Data Structure & File Types:
+    - Data Structure Overview: datacuration/overview.md
+    - Tabulated Data: datacuration/phenotypes.md
+    - File-Based Data: datacuration/file-based-data.md
   - Study Instruments:
     - List of Instruments: instruments/index.md
     - Age Variables: instruments/agevariables.md
@@ -142,8 +156,8 @@ nav:
                 - Video Resting State: instruments/eeg/tasks/rs.md
 
         - Magnetic Resonance Imaging:
+            - postproc: instruments/mri/postproc.md
             - MR Protocols & Release Data: instruments/mri/index.md
-            # - Release Data: instruments/mri/release-data.md
             - Quality Control Procedures: instruments/mri/qc.md
             - Derivatives Guide: instruments/mri/derivatives-guide.md
             - Pre-Scan Questionnaire & Forms: instruments/mri/mri-forms.md
@@ -160,7 +174,10 @@ nav:
 
   - Release Notes: 
     - Release Notes & History: changelog/release-notes.md
-    - Known Issues & Pending Updates: changelog/issues-updates.md
-    - Issues & Pending Updates: changelog/issues.md
+    - Issues & Pending Updates: changelog/issues-updates.md
+  - Help & Support:
+    - FAQs: help/faq.md
+    - Report Issues: help/reportissue.md
+    - How To Cite Release Docs: help/citation.md
 
  

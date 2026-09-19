@@ -1,9 +1,9 @@
 import html
 import os
 import markdown
+import pandas as pd
 import re
 from datetime import datetime
-from utils import load_and_filter
 
 # NEW VERSION OF parse-by-domains.py that parses text documenting issues from a separate google sheet and matches issue based on ID#
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
@@ -16,6 +16,25 @@ sheet_gid = "0"
 HBCD_DOCS_MD = "../docs/changelog/issues-updates.md"
 
 # FUNCTIONS
+def load_and_filter(xlsx_path, sheet_id, sheet_gid):
+    """
+    Load XLSX file, merge in google sheet issue text, filter to autoparsed
+    rows, fill missing values, and strip whitespace.
+    """
+    df_monday = pd.read_excel(xlsx_path, dtype=str)
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_gid}"
+    df_gsheet = pd.read_csv(url, usecols=['ID', 'Text'])
+    df = pd.merge(df_monday, df_gsheet, on='ID', how='left')
+
+    # Filter - only include items marked for autoparsing
+    df = df[df['Autoparsed?'].str.contains('Yes')]
+
+    # Fill missing values and strip whitespace
+    df = df.fillna('')
+    df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
+
+    return df
+
 def map_type(value):
     if "issue" in value:
         return "Issue"
@@ -73,8 +92,8 @@ def build_table(domain, rows):
 
     domain_esc = html.escape(domain)
     table_parts.append(f"""
+<h5 class="archive-table-title" data-domain="{domain_esc}">{domain_esc}</h5>
 <table class="compact-table-no-vertical-lines archive-table" data-domain="{domain_esc}">
-<caption class="archive-table-title">{domain_esc}</caption>
 <thead>
 <tr>
 <th></th><th>Table/Topic</th><th>Summary</th>

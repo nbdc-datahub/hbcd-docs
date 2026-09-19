@@ -3,7 +3,6 @@ import html
 import os
 import markdown
 import re
-from utils import load_and_filter
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -14,20 +13,6 @@ knownissues_md = "../docs/changelog/issues.md"
 sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
 sheet_gid = "0"
 
-domain_mapping = {
-    "Demographics": "Demo",
-    "Administrative": "ADM",
-    "All Data / General": "All/NA",
-    "Behavior & Child-Caregiver Interaction": "MH",
-    "Biospecimens & Omics": "BIO",
-    "Neurocognition & Language": "NCL",
-    "Novel Tech & Wearable Sensors": "NT",
-    "Participant Derived": "PAR",
-    "Physical Health": "PH",
-    "Pregnancy & Environmental Exposure": "PEX",
-    "Social & Environmental Determinants": "SED"
-}
-
 # ----------------------------------------------------------------------
 # HTML
 # ----------------------------------------------------------------------
@@ -36,6 +21,25 @@ type_icons = {
     "known_issue": '<i class="fas fa-bug icon-bug"></i>',
     "pending": '<i class="fa-solid fa-rotate icon-rotate"></i>',
 }
+
+def load_and_filter(xlsx_path, sheet_id, sheet_gid):
+    """
+    Load XLSX file, merge in google sheet issue text, filter to autoparsed
+    rows, fill missing values, and strip whitespace.
+    """
+    df_monday = pd.read_excel(xlsx_path, dtype=str)
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_gid}"
+    df_gsheet = pd.read_csv(url, usecols=['ID', 'Text'])
+    df = pd.merge(df_monday, df_gsheet, on='ID', how='left')
+
+    # Filter - only include items marked for autoparsing
+    df = df[df['Autoparsed?'].str.contains('Yes')]
+
+    # Fill missing values and strip whitespace
+    df = df.fillna('')
+    df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
+
+    return df
 
 
 def normalize_text(text):
@@ -47,13 +51,19 @@ def normalize_text(text):
     text = html.unescape(text)
     return re.sub(r"\s+", " ", text).strip().lower()
 
-
 def build_rows(df):
-    """Build HTML <tr> markup, sorted alphabetically by Domain."""
+    """Build HTML table rows grouped by Domain."""
 
     rows_html = []
 
     for domain, group in df.groupby("Domain", sort=True):
+
+        # Domain header
+        rows_html.append(
+            f'<tr class="domain-row" data-domain="{html.escape(str(domain))}">'
+            f'<th colspan="3">{html.escape(str(domain))}</th>'
+            f'</tr>'
+        )
 
         for _, row in group.iterrows():
 
@@ -71,23 +81,38 @@ def build_rows(df):
                 flags=re.DOTALL
             )
 
-            rows_html.append("<tr>")
+            # Searchable text
+            search_text = " ".join([
+                str(row["Table/Topic"]),
+                str(row["Summary"]),
+                str(row["Type"]),
+                str(row["PR"]),
+                str(domain)
+            ])
+
             rows_html.append(
-                f"<td>{html.escape(str(row['Domain']))}</td>"
+                f'<tr class="issue-row" '
+                f'data-domain="{html.escape(str(domain))}" '
+                f'data-type="{html.escape(str(row["Type"]))}" '
+                f'data-release="{html.escape(str(row["PR"]))}" '
+                f'data-search="{html.escape(search_text.lower())}">'
             )
+
             rows_html.append(
-                f"<td>{html.escape(str(row['Table/Topic']))}</td>"
+                f'<td>{html.escape(str(row["Table/Topic"]))}</td>'
             )
+
             rows_html.append(
-                f"<td>{icon} {summary_html}</td>"
+                f'<td>{icon} {summary_html}</td>'
             )
+
             rows_html.append(
-                f"<td>{html.escape(str(row['PR']))}</td>"
+                f'<td>{html.escape(str(row["PR"]))}</td>'
             )
+
             rows_html.append("</tr>")
 
     return "\n".join(rows_html)
-
 
 def replace_table_contents(md_path, rows_html):
     """
@@ -136,7 +161,7 @@ df = load_and_filter(XLSX, sheet_id, sheet_gid)
 df = df.rename(columns={"Text": "Summary"})
 
 # Map full domain names to short codes
-df["Domain"] = df["Domain"].replace(domain_mapping)
+# df["Domain"] = df["Domain"].replace(domain_mapping)
 
 # Build HTML table rows
 rows_html = build_rows(df)
