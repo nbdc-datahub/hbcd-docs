@@ -162,31 +162,6 @@ h6 {
   }
 } */
 
-/* =========================================================
-   PILL BADGES
-========================================================= */
-/* .pill-badge {
-  display: inline-block;
-  background-color: #199bd6;
-  color: white;
-  font-weight: 500;
-  border-radius: 16px;
-  padding: 1px 8px;
-  font-size: 0.8em;
-  white-space: nowrap;
-  line-height: 1.6;
-}
-
-.pill-badge-emoji {
-  background-color: none;
-  color: teal;
-  border: 1px solid teal;
-  border-radius: 12px;
-  padding: 2px 4px;
-  font-size: 0.85em;
-  white-space: nowrap;
-} */
-
 /* ADD SPACE ABOVE THE BOTTOM NAVIGATION BUTTONS */
 .rst-footer-buttons {
   margin-top: 3em; 
@@ -318,7 +293,7 @@ h6 {
 
 
 /* =========================================================
-   KNOWN ISSUES PAGE
+   KNOWN ISSUES PAGE + PILL BADGES
 ========================================================= */
 .icon-rotate {
   color: #199bd6;

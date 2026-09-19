@@ -122,7 +122,7 @@ def build_table(domain, rows):
 
 # WORK
 df = load_and_filter(XLSX, sheet_id, sheet_gid)
-df = df[df["PR"] != "3"]
+# df = df[df["PR"] != "3"]
 
 # Type mapping and sort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)
