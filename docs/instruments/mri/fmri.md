@@ -248,6 +248,7 @@ XCP-D-ModelArray outputs include cohort-level HDF5 arrays aggregating structural
   - Surface morphometry (curvature, sulcal depth, cortical thickness)  
   - Functional maps (ALFF, ReHo)  
   - Resting-state functional connectivity.`<ATLAS>` = `Gordon`, `HCP`, `MIDB`
+  <!-- - Resting-state functional connectivity.`<ATLAS>` = `Gordon`, `HCP`, `MIDB` -->
 
 <div id="modelarray" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
@@ -263,21 +264,20 @@ XCP-D-ModelArray outputs include cohort-level HDF5 arrays aggregating structural
 <pre style="font-size: 11px;" class="folder-tree">
 hbcd/
 └── derivatives/
-    └── xcp_d-<span class="var">{HASH}</span>-ModelArray/
+    └── xcp_d-364caa63+7a4c379b-ModelArray/
         │    <span class="comment"># Surface morphometry</span>
-        ├── xcp_d_v0.13.0_param-<span class="var">{curv|sulc|thickness}</span>.h5
-        ├── xcp_d_v0.13.0_param-<span class="var">{curv|sulc|thickness}</span>.csv
+        ├── xcp_d-364caa63+7a4c379b_param-<span class="var">{curv|sulc|thickness}</span>.h5
+        ├── xcp_d-64caa63+7a4c379b_param-<span class="var">{curv|sulc|thickness}</span>.csv
         │
         │    <span class="comment"># Functional maps</span>
-        ├── xcp_d_v0.13.0_param-<span class="var">{alff|reho}</span>.h5
-        ├── xcp_d_v0.13.0_param-<span class="var">{alff|reho}</span>.csv
+        ├── xcp_d-364caa63+7a4c379b_param-<span class="var">{alff|reho}</span>.h5
+        ├── xcp_d-364caa63+7a4c379b_param-<span class="var">{alff|reho}</span>.csv
         │
         │    <span class="comment"># Resting-state functional connectivity</span>
-        ├── xcp_d_v0.13.0_task-rest_seg-<span class="var">{ATLAS}</span>_param-pearsoncorrelation.h5
-        └── xcp_d_v0.13.0_task-rest_seg-<span class="var">{ATLAS}</span>_param-pearsoncorrelation.csv
+        ├── xcp_d-364caa63+7a4c379b_task-rest_atlas-<span class="var">{ATLAS}</span>_param-pearsoncorrelation.h5
+        └── xcp_d-364caa63+7a4c379b_task-rest_atlas-<span class="var">{ATLAS}</span>_param-pearsoncorrelation.csv
 
 <span class="hashtag"># ── Label Legend ─────────────────────────────────────────────</span>
-<span class="var">HASH</span>    : 0f306a2f+0ef9c88a , 2afa9081+0ef9c88a
 <span class="var">ATLAS</span>    : 4S-{156|256|...|1056}Parcels , Glasser , Gordon , MIDB , MyersLabonte
 </pre>
 </div>
