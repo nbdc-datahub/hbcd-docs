@@ -12,11 +12,11 @@ dmri:
     Özarslan E, Koay CG, Shepherd TM, Komlosh ME, İrfanoğlu MO, Pierpaoli C, Basser PJ. (2013). Mean apparent propagator (MAP) MRI: a novel diffusion imaging method for mapping tissue microstructure. _Neuroimage_, 78:16-32. [10.1016/j.neuroimage.2013.04.016](https://doi.org/10.1016/j.neuroimage.2013.04.016)
   respondent_category: Child on Self
   admin_notes: Note that not all parts of the page are editable via this form - reach out to Luci for assistance
-  README URL: https://docs.hbcdstudy.org/latest/instruments/mri/dmri/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/dmri/
   primary_data_type: File-based (raw BIDS/derivatives)
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/mri/dmri/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/dmri/
   acronym: dMRI
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec0BINzmTsH2DHdm
   warning1: '`LargeDelta` and `SmallDelta` in the raw BIDS sidecar JSON files currently are set to vendor-specific values, which aren''t always correct because the models have their own values. These changes don’t affect the preprocessing of the data and only affect the QSIRecon outputs of the MAP-MRI model by an offset. This is also listed as a known issue and will be updated to reflect accurate values (see "Diffusion Pulse Sequence Timings" table on this page).'
@@ -59,13 +59,13 @@ ecpromis_selfreg:
     Park, C. H., Blaisdell, C. J., & Gillman, M. W. (2022). The NIH ECHO program: An impetus for the development of early childhood PROMIS tools. _Journal of Pediatric Psychology_, 47(5), 497–499. <https://doi.org/10.1093/jpepsy/jsac010>
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/bcgi/ecpromis-selfreg/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/ecpromis-selfreg/
   visits: V05, V07, V09
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/bcgi/ecpromis-selfreg/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/ecpromis-selfreg/
   acronym: null
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec0ctQownF7OTsHL
@@ -102,13 +102,13 @@ study_nav:
   references: Hilliard, F., Horan, H., Zgierska, A. E., Edwards, R. C., & HBCD Study Navigator Workgroup. (2025). Establishing a model of peer support for pregnant persons with a substance use disorder as an innovative approach for engaging participants in the healthy brain and child development study. Developmental Cognitive Neuroscience, 71(101495), 101495. <https://doi.org/10.1016/j.dcn.2024.101495>
   respondent_category: null
   admin_notes: Table included in README is hard-coded and can't be updated via this form - reach out to administrators to update
-  README URL: https://docs.hbcdstudy.org/latest/instruments/admin/study-navigators/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/admin/study-navigators/
   visits: Filled out by the Study Navigator during and/or between study visits.
   hbcd_mods3: null
   primary_data_type: Concatenated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/admin/study-navigators/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/admin/study-navigators/
   acronym: null
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec0wADCcpnUKR8fu
@@ -304,13 +304,13 @@ bfy:
     Sanbonmatsu, L., Marvakov, J., Potter, N. A., Yang, F., Adam, E. K., Congdon, W. J., Duncan, G. J., Gennetian, L. A., Katz, L. F., Kling, J. R., Kessler, R. C., Lindau, S. T., Ludwig, J., & McDade, T. W. (2012). The long-term effects of moving to opportunity on adult health and economic self-sufficiency. _Cityscape: A Journal of Policy Development and Research_, 14, 109-136.
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/bfy/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/bfy/
   visits: V01, V05, V07
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/bfy/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/bfy/
   acronym: BFY
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec37QnIWCJIZnpiu
@@ -352,13 +352,13 @@ demographics_ch:
     Jones, C. P., Truman, B. I., Elam-Evans, L. D., Jones, C. A., Jones, C. Y., Jiles, R., Rumisha, S. F., & Perry, G. S. (2008). Using “socially assigned race” to probe white advantages in health status. _Ethnicity & Disease_, 18(4), 496–504. <https://www.ncbi.nlm.nih.gov/pubmed/19157256>
   respondent_category: Parent on Child
   admin_notes: supp html table and possible broken links - Luci to check
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/demo-ch/
   visits: V04, V06
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/demo-ch/
   warning3: There are several items with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include [Household Roster](https://docs.hbcdstudy.org/latest/resources/household-relationships.png) and Child Custody/Guardianship (see [items 15 & 16](https://docs.hbcdstudy.org/latest/resources/child-custody-branching-logic.png)). See [Child Demographics Branching Logic](../demo-ch.html) for full branching logic details.
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec3sig18xLxnQHfc
   warning1: Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture how they choose to identify their child).
@@ -394,12 +394,12 @@ motion:
     Trujillo-Priego, I. A., Zhou, J., Werner, I. F., Deng, W., & Smith, B. A. (2020). Infant leg activity intensity before and after naps. _Journal for the Measurement of Physical Behaviour_, 3(2), 157–163.<https://doi.org/10.1123/jmpb.2019-0011>
   respondent_category: Child on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/sensors/wearsensors/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/sensors/wearsensors/
   visits: V02, V03
   primary_data_type: File-based (raw BIDS/derivatives)
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/sensors/wearsensors/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/sensors/wearsensors/
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec4P8i59zOhJTUJZ
   warning1: Note that accelerometer sensor timestamps can drift over time. Although right and left leg sensors start recording simultaneously with the same sampling rate and duration, exact time alignment cannot be assumed. By our estimates, Axivity AX6 sensors recording at 25 samples/sec diverge from one another by a couple of seconds over 72 hours, with the magnitude of this discrepancy increasing over time. Furthermore, offsets differed between sensors, necessitating a calibration procedure to correct for these differences ([Oh et al. 2024](https://doi.org/10.3390/s24175736)).
   description: "Infant leg movement data collected by wearable sensors for HBCD captures information related to motor behavior, physical activity, sleep. Wearable sensors are placed on the child's right and left ankles by an HBCD Study team member during a visit. Sensor data (accelerometer and gyroscope) was collected continuously over 72 hours to estimate movement frequency, intensity, and sleep periods. Caregivers followed typical routines, removing sensors only for water exposure (e.g., baths) and replacing them afterward. Each sensor (Axivity AX6) was calibrated by recording 10 seconds on each of its six flat surfaces before data collection. Sensors recorded accelerometer (±16 g) and gyroscope (±2000 dps) data at 25 Hz, enabling estimates of sedentary, light, moderate-to-vigorous activity, and sleep. See [Pini et al. 2024](https://doi.org/10.1016/j.dcn.2024.101446) for a full measure description. \n\nRelease data includes both raw and processed, analysis-ready motion/accelerometry data\
@@ -530,12 +530,12 @@ prescan_q:
   table_name: mri_ra_prep
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/mri/mri-forms/#pre-scan-questionnaire
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/mri-forms/#pre-scan-questionnaire
   visits: V02 - V06
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/mri/mri-forms/#pre-scan-questionnaire
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/mri-forms/#pre-scan-questionnaire
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec5BhWmewcMn3tKP
   description: "The Pre-Scan Questionnaire is completed by HBCD Study staff when planning MRI procedures. It captures caregiver-reported sleep routines, habits, and environment, as summarized in the table below (see data dictionary for full details). **Note that missingness may vary across sites.** \n\n<table class=\"compact-table-no-vertical-lines\">\n<thead>\n<tr>\n<th>Item</th>\n<th>Description</th>\n<th>Response Options\n<span class=\"subtle\">(  <i class=\"fa fa-square-check\" style=\"color:#00aeae\"></i>\n  = Select all that apply )</span></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>s1_bsi_002*</code></td>\n<td>Typical sleep routine</td>\n<td><i class=\"fa fa-square-check\" style=\"color: #00aeae; margin-right: 0.5em\"></i> Bottle feeding; Breast feeding; Bath; Reading; Other</td>\n</tr>\n<tr>\n<td><code>s1_bsi_003*</code></td>\n<td>Time to fall asleep at bedtime</td>\n<td><i>(Free text)</i></td>\n</tr>\n<tr>\n<td><code>s1_bsi_004*</code></td>\n<td>Usual start time of longest naps</td>\n\
     <td><i>(Free text)</i></td>\n</tr>\n<tr>\n<td><code>s1_slp_001</code></td>\n<td>If skipping nap before visit helps</td>\n<td>Yes / No</td>\n</tr>\n<tr>\n<td><code>s1_slp_002</code></td>\n<td>Length of bedtime routine</td>\n<td>0–5, 5–10, ... 45–60 min; 1+ hr; No routine</td>\n</tr>\n<tr>\n<td><code>s1_slp_003</code></td>\n<td>Length of nap routine</td>\n<td>0–5, 5–10, ... 45–60 min; 1+ hr; No routine</td>\n</tr>\n<tr>\n<td><code>s1_slp_004</code></td>\n<td>Time to sleep after bedtime routine</td>\n<td>0–5, 5–10, ... 45–60 min; 1+ hr; No routine</td>\n</tr>\n<tr>\n<td><code>s1_slp_005</code></td>\n<td>Typical sleep duration</td>\n<td>0-30, 30-60 min; 1-2 hr; 2+ hrs</td>\n</tr>\n<tr>\n<td><code>s1_slp_006</code></td>\n<td>Consistency of nap/sleep schedule</td>\n<td>Very; Somewhat; Not consistent; No sleep schedule</td>\n</tr>\n<tr>\n<td><code>s1_slp_007*</code></td>\n<td>What helps child sleep</td>\n<td><i class=\"fa fa-square-check\" style=\"color: #00aeae; margin-right: 0.5em\"></i>\
@@ -773,13 +773,13 @@ mri_forms:
   references: null
   respondent_category: RA Form
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/mri/mri-forms/#mri-scan-session-data-summary-forms
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/mri-forms/#mri-scan-session-data-summary-forms
   visits: V02 - V06
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/mri/mri-forms/#mri-scan-session-data-summary-forms
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/mri-forms/#mri-scan-session-data-summary-forms
   alert4: null
   acronym: null
   warning3: null
@@ -831,19 +831,19 @@ pex_all:
     Schoenaker, D. A. J. M., Ploubidis, G. B., Goodman, A., & Mishra, G. D. (2017). Factors across the life course predict women’s change in smoking behaviour during pregnancy and in midlife: results from the National Child Development Study. Journal of Epidemiology and Community Health, 71(12), 1137–1144. <https://doi.org/10.1136/jech-2017-209493>
   respondent_category: null
   admin_notes: includes info for ALL Health V1/V2 instruments
-  README URL: https://docs.hbcdstudy.org/latest/instruments/pregexp/pex/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/pex/
   visits: V01, V02
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/pregexp/pex/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/pex/
   warning3: "Out-of-range values were filtered (i.e. changed to \"n/a\") based on the following valid range values:\n\n- Weight at birth (oz) (`pex_bm_healthv2_inf_001__01`): ≤16 \n- Weight at birth (lbs) (`pex_bm_healthv2_inf_001__02`): ≤66 \n- Length at birth (inches) (`pex_bm_healthv2_inf_002`): 12-51\n- Calculated length at birth (cm) (`pex_bm_healthv2_inf_002__01`): 30-130"
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec9YqCKh8O2rAK8m
   warning1: |2-
      **ERhosp:** Reasons for ER visit or hospitalization, captured from BioPortal ICD codes, were at times difficult for the participant to name or HBCD study staff to correctly find in the ICD database. For example, ER visits for routine care (no diagnosis) and false alarms (e.g., suspected water break) were frequently coded as "Don’t know."
 
-    **Illness:** lnesses are captured from either BioPortal ICD codes or WHO (World Health Organization) symptom codes, which were at times difficult for the participant to name or the HBCD staff to correctly find in the ICD or symptom database.
+    **Illness:** Illnesses are captured from either BioPortal ICD codes or WHO (World Health Organization) symptom codes, which were at times difficult for the participant to name or the HBCD staff to correctly find in the ICD or symptom database.
 
     **Meds:** Medication names are queried from the RxNORM database and reasons for medication use are captured from ICD codes (from BioPortal ICD). Reasons for use were sometimes difficult for the participant to name and/or HBCD study staff to find in the ICD database. This was apparent with aspirin for preeclampsia prevention, as there was not an option for coding preventive use. Aspirin was later moved to the prenatal vitamin section as a result. Additionally, medications used PRN (“as needed”) were difficult for participants to report. Finally, although not asked, some medications were coded with dose, but this was not asked and should not be used.
   description: The **Health V1** and **Health V2** instruments comprise eight questionnaires, administered in person or remotely at study visits 1/2. _Health V2-Infancy_ is completed by the caregiver about the child, while all other questionnaires are self-report. V1 and V2 questionnaires require 3–5 and 10 minutes each to complete, respectively. Quality control includes reviewing response distributions for potential outliers.
@@ -873,13 +873,13 @@ cabr_sf:
   references: 'Ford-Gilboe, M., Wathen, C. N., Varcoe, C., MacMillan, H. L., Scott-Storey, K., Mantler, T., Hegarty, K., & Perrin, N. (2016). Development of a brief measure of intimate partner violence experiences: the Composite Abuse Scale (Revised)-Short Form (CASR-SF). _BMJ Open_, 6(12), e012824. <https://doi.org/10.1136/bmjopen-2016-012824>'
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/cab/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/cab/
   visits: V04, V06
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/cab/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/cab/
   acronym: CABr-SF
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recAFvqNTPDOdQjns
@@ -915,13 +915,13 @@ discr:
     Williams, D. R. (2015). Measuring discrimination resource. <http://scholar.harvard.edu/davidrwilliams/node/32777>
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/discr/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/discr/
   visits: V01, V05, V07
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/discr/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/discr/
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recB47y0LK49TGCEN
   warning1: null
@@ -959,13 +959,13 @@ chaos:
     Wilhoit, S. A., Trentacosta, C. J., Beeghly, M., Boeve, J. L., Lewis, T. L., & Thomason, M. E. (2021). Household chaos and early childhood behavior problems: The moderating role of mother-child reciprocity in lower-income families. _Family Relations_, 70(4), 1040–1054. <https://doi.org/10.1111/fare.12560>
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/bcgi/chaos/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/chaos/
   visits: V05, V07
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/bcgi/chaos/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/chaos/
   alert4: null
   acronym: CHAOS
   warning3: null
@@ -1006,12 +1006,12 @@ ptsd:
     Massey, S. H., Reiss, D., Neiderhiser, J. M., Leve, L. D., Shaw, D. S., & Ganiban, J. M. (2016). Maternal personality traits associated with patterns of prenatal smoking and exposure: Implications for etiologic and prevention research. Neurotoxicology and Teratology, 53, 48–54. <https://doi.org/10.1016/j.ntt.2015.11.010>
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/pregexp/mh/ptsd/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/mh/ptsd/
   visits: V01, V02, V03
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/pregexp/mh/ptsd/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/mh/ptsd/
   acronym: PTSD/Acute Stress
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recBchc8ZLpR2fKA4
   description: |-
@@ -1070,12 +1070,12 @@ nutrition:
   table_name: ph_cg_inq
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/physhealth/nutrition/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/nutrition/
   visits: V05
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/physhealth/nutrition/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/nutrition/
   acronym: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recC2eNSaZ6wKsrRL
   description: The Infant Nutrition Questionnaire aligns with the Infant Feeding Questionnaire used in Environmental Influences on Child Health Outcomes (ECHO) protocol. It has been shortened by the physical health working group members to include nutritional behavior during infancy related to breastfeeding, formula feeding and introduction of solid foods. It also assesses feeding behaviors after introducing solid foods, and investigating type and quantity of specific food and beverages consumed in early childhood with the same 7 day dietary recall used in ECHO.
@@ -1110,7 +1110,7 @@ aces:
     Koita K, Long D, Hessler D, Benson M, Daley K, Bucci M, et al. (2018) Development and implementation of a pediatric adverse childhood experiences (ACEs) and other determinants of health questionnaire in the pediatric medical home: A pilot study. _PLoS ONE_ 13(12): e0208088. <https://doi.org/10.1371/journal.pone.0208088>
   respondent_category: Parent on Self / Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/aces/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/aces/
   visits: |-
     ACEs: V04, V06
     Pediatric ACEs: V04
@@ -1118,7 +1118,7 @@ aces:
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/aces/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/aces/
   alert4: null
   acronym: null
   warning3: null
@@ -1153,7 +1153,7 @@ face:
     Markant, J., & Scott, L. S. (2018). Attention and perceptual learning interact in the development of the other-race effect. _Current Directions in Psychological Science_, 27(3), 163–169. <https://doi.org/10.1177/0963721418769884>
     Scherf, K. S., & Scott, L. S. (2012). Connecting developmental trajectories: Biases in face processing from infancy to adulthood. _Developmental Psychobiology_, 54(6), 643–663. <https://doi.org/10.1002/dev.21013>
   respondent_category: Child on Self
-  README URL: https://docs.hbcdstudy.org/latest/instruments/eeg/tasks/#faces-task
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/tasks/#faces-task
   email: kmannin4@umd.edu
   visits: V03, V04, V06
   hbcd_mods3: null
@@ -1161,7 +1161,7 @@ face:
   submitter_name: Katherine Manning
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/eeg/tasks/#faces-task
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/tasks/#faces-task
   alert4: null
   acronym: FACE
   warning3: null
@@ -1193,12 +1193,12 @@ foodins:
   references: Hager, E. R., Quigg, A. M., Black, M. M., Coleman, S. M., Heeren, T., Rose-Jacobs, R., Cook, J. T., Ettinger de Cuba, S. A., Casey, P. H., Chilton, M., Cutts, D. B., Meyers, A. F., & Frank, D. A. (2010). Development and validity of a 2-item screen to identify families at risk for food insecurity. Pediatrics, 126(1), e26-32. <https://doi.org/10.1542/peds.2009-3146>
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/foodinsecurity/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/foodinsecurity/
   visits: V02, V03
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/foodinsecurity/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/foodinsecurity/
   acronym: USDA short form
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recHqArhTXbJOrZ1k
@@ -1303,13 +1303,13 @@ apa:
     Roche, M. J., Pincus, A. L., & Cole, P. E. (2019). Linking dimensions and dynamics in psychopathology research: An example using DSM-5 instruments. _Journal of Research in Personality_, _82_, 103852. <https://doi.org/https://doi.org/10.1016/j.jrp.2019.103852>
   respondent_category: Parent on Self
   admin_notes: README includes several hard-coded tables that cannot be updated via this form - reach out to administrators directly to make changes
-  README URL: https://docs.hbcdstudy.org/latest/instruments/pregexp/mh/apa12/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/mh/apa12/
   visits: V01, V02, V03
   hbcd_mods3: A “Decline to answer” option was added to all questions. A “Don’t know” option was initially included, but later removed. Responses marked as “Decline to answer” or “Don’t know” are treated as missing data.
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/pregexp/mh/apa12/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/mh/apa12/
   acronym: APA 1/2
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recIBd6w4TvZ5kmPk
@@ -1349,12 +1349,12 @@ mlds:
   table_name: ncl_ch_mlds
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/neurocog/mlds/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mlds/
   visits: V03, V04, V05, V07
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/neurocog/mlds/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mlds/
   acronym: MLDS
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recKnBJgLJm6gBopU
   warning1: This measure assesses a child’s exposure to language to guide the selection of appropriate measures for their next in-person study visit. It estimates the percentage of time the child is exposed to languages in caregiving environments, based on caregiver reports. These estimates are approximate and also may not account for all languages the child encounters. The measure does not evaluate or quantify the child’s interactions or their expressive or receptive language skills in a given language, but rather provides an estimate of the time spent in environments where specific languages are spoken.
@@ -1387,12 +1387,12 @@ olink:
   warning2: Limits of detection (LOD) were not calculated for this release. Users should compute LOD values using negative control (NC) samples. Proteins with a high proportion of values below the LOD should be excluded or interpreted with caution. 14 assays have low NC counts and calculating LOD based on NPX is not appropriate, so these assays should also be interpreted with caution.
   respondent_category: Parent on Self
   admin_notes: 'NOTE: README includes hard-coded tables that can''t be updated via this form - reach out to administrators to update'
-  README URL: https://docs.hbcdstudy.org/latest/instruments/biospec/olink/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/olink/
   visits: V01
   primary_data_type: Concatenated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/biospec/olink/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/olink/
   acronym: Olink
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recNrD0mkv6VhQwyn
   warning1: 74 samples that were run in this batch are not included in this data release. However, data normalized by median plate intensity included NPX values from these excluded subjects. We anticipate that these subjects will be included in later data releases.
@@ -1422,12 +1422,12 @@ ecpromis_sleep:
   references: Lai, J.-S., Blackwell, C. K., Tucker, C. A., Jensen, S. E., & Cella, D. (2022). Measuring PROMIS® physical activity and Sleep Problems in Early Childhood. _Journal of Pediatric Psychology_, 47(5), 534–546. <https://doi.org/10.1093/jpepsy/jsac028>
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-sleep/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/ecpromis-sleep/
   visits: V04, V06
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-sleep/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/ecpromis-sleep/
   acronym: ecPROMIS - Sleep
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recO9lIvrZ1fAgb1N
   warning1: Note that summary scores are currently absent from the release data and will be added in the future - see <a href="../../../changelog/issues-updates/#pending-updates" target="_blank">Pending Updates</a>.
@@ -1445,7 +1445,7 @@ ecpromis_sleep:
   measure: ecPROMIS - Sleep
   construct: Sleep
 smri:
-  status: Work in progress
+  status: Complete / Stable
   full_name: Structural MRI
   assessment_type: Direct Assessment
   table_name: null
@@ -1461,11 +1461,11 @@ smri:
     Zöllei, L., Iglesias, J. E., Ou, Y., Grant, P. E., & Fischl, B. (2020). Infant FreeSurfer: An automated segmentation and surface extraction pipeline for T1-weighted neuroimaging data of infants 0-2 years. _NeuroImage_, 218(116946), 116946. <https://doi.org/10.1016/j.neuroimage.2020.116946>
   respondent_category: Child on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/mri/smri/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/smri/
   primary_data_type: File-based (raw BIDS/derivatives)
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/mri/smri/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/smri/
   acronym: sMRI
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recOPRQ21hWokbEFN
   description: |-
@@ -1513,13 +1513,13 @@ demographics:
     Zachek, C. M., Schwartz, J. M., Glasser, M., DeMicco, E., & Woodruff, T. J. (2019). A screening questionnaire for occupational and hobby exposures during pregnancy. Occupational Medicine (Oxford, England), 69(6), 428–435. <https://doi.org/10.1093/occmed/kqz094>
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/demo-cg/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/demo-cg/
   visits: V01, V04, V06
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/demo-cg/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/demo-cg/
   acronym: null
   warning3: |-
     There are several items that Alternate Caregivers receive with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include: [Household roster](https://docs.hbcdstudy.org/latest/resources/household-relationships.png), [Nativity](https://www.phenxtoolkit.org/protocols/view/10201), [Jobs/work environment](https://www.phenxtoolkit.org/protocols/view/60501) ([Zachek et al., 2019](https://doi.org/10.1093/occmed/kqz094)), and items on other biological parent with opt-in responses, e.g.:
@@ -1559,7 +1559,7 @@ bayley_4:
   references: 'Bayley, N., & Aylward, G. (2019). _Administration Manual: Bayley Scales Infant Toddler Development, Fourth Edition_. Pearson.'
   respondent_category: Parent on Child
   admin_notes: 8/22 requested updates to data warnings complete
-  README URL: https://docs.hbcdstudy.org/latest/instruments/neurocog/bayley-4/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/bayley-4/
   email: jkabl01@emory.edu
   visits: V04
   hbcd_mods3: Modifications were made to accommodate Spanish-speaking households. English instructions were translated by experienced Bayley assessors accustomed to administering the BSID-4 in Spanish contexts for infants. The HBCD Spanish Language Committee reviewed translations, resolving discrepancies through iterative discussion. For families opting for Spanish administration, RAs used the approved HBCD Spanish translations of both instructions and caregiver questions. No modifications were made to the scoring of the responses and computation of the associated cluster and standard scores.
@@ -1567,7 +1567,7 @@ bayley_4:
   submitter_name: Julie Kable
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/neurocog/bayley-4/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/bayley-4/
   alert4: null
   acronym: Bayley-4
   warning3: null
@@ -1662,13 +1662,13 @@ assist:
     Wakeman, S. E., Bryant, A., & Harrison, N. (2022). Redefining child protection. _Obstetrics and Gynecology_, **140**(2), 167–173. <https://doi.org/10.1097/aog.0000000000004786>
   respondent_category: Parent on Self
   admin_notes: README includes hardcoded html page for expanded substance types that cannot be updated via this form - reach out to administrators directly to make changes
-  README URL: https://docs.hbcdstudy.org/latest/instruments/pregexp/su/assist/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/su/assist/
   visits: V01 - V04
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/pregexp/su/assist/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/su/assist/
   alert4: null
   acronym: ASSIST V1-V4
   warning3: null
@@ -1725,7 +1725,7 @@ ibqr_ecbq:
     _Rothbart, M. K. (1981). Measurement of temperament in infancy. Child Development, 52(2), 569–578. <https://doi.org/10.1111/j.1467-8624.1981.tb03082.x>_
   respondent_category: Parent on Child
   admin_notes: 'NOTE: README includes hard-coded table that cannot be updated via this form - reach out to administrators to update'
-  README URL: https://docs.hbcdstudy.org/latest/instruments/bcgi/ibqr/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/ibqr/
   visits: |-
     IBQ-R: V03, V05
     ECBQ: V05
@@ -1733,7 +1733,7 @@ ibqr_ecbq:
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/bcgi/ibqr/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/ibqr/
   acronym: null
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recPOMWpIcXSOJkQi
@@ -1823,12 +1823,12 @@ nails:
     Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <https://doi.org/10.1016/j.dcn.2024.101451>
   respondent_category: Parent on Self
   admin_notes: 'NOTE: README includes hard-coded table(s) that can''t be updated via this form - reach out to administrators to update'
-  README URL: https://docs.hbcdstudy.org/latest/instruments/biospec/nails/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/nails/
   visits: V01, V02
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/biospec/nails/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/nails/
   acronym: Nails
   warning3: A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recQ513WlWpLFHjHB
@@ -1873,12 +1873,12 @@ via:
     Testa, S., Doucerain, M. M., Miglietta, A., Jurcik, T., Ryder, A. G., & Gattino, S. (2019). The Vancouver Index of Acculturation (VIA): New evidence on dimensionality and measurement invariance across two cultural settings. _JInternational Journal of Intercultural Relations_, 71, 60–71. <https://doi.org/10.1016/j.ijintrel.2019.04.001>
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/vi/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/vi/
   visits: V05
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/vi/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/vi/
   acronym: VIA
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recQGFsaNGnYEZNsM
   description: |-
@@ -1921,13 +1921,13 @@ tic:
   references: 'Radel, L., & Bramlett, M. (2014). Children in nonparental care: Findings from the 2011-2012 National Survey of Children’s Health. ASPE, DHHS. <https://aspe.hhs.gov/reports/children-nonparental-care-findings-2011-2012-national-survey-childrens-health-0>'
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/transitions-in-care/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/transitions-in-care/
   visits: V02 onward
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/transitions-in-care/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/transitions-in-care/
   alert4: null
   acronym: TIC
   warning3: null
@@ -1972,7 +1972,7 @@ qmri:
     ## Processing & Derivatives
 
     qMRI data are processed via [SyMRI](https://syntheticmr.com/products/symri-neuro/) followed by minimal post-processing through [qMRI PostProc](https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html). SyMRI derives synthetic T1w/T2w images and quantitative relaxometry maps from 3D-QALAS acquisitions by reintroducing estimated T1/T2 relaxation times into the MR signal equation (Bloch equations).
-  status: Work in progress
+  status: Complete / Stable
   warning1_title: Varying Motion Degradation Criteria Across Sites
   full_name: Quantitative MRI
   assessment_type: Direct Assessment
@@ -1992,11 +1992,11 @@ qmri:
     Kvernby, S., Warntjes, M. J. B., Haraldsson, H., Carlhäll, C.-J., Engvall, J., & Ebbers, T. (2014). Simultaneous three-dimensional myocardial T1 and T2 mapping in one breath hold with 3D-QALAS. _Journal of Cardiovascular Magnetic Resonance: Official Journal of the Society for Cardiovascular Magnetic Resonance_, 16(1), 102. <https://doi.org/10.1186/s12968-014-0102-0>
     Yarnykh, V. L. (2007). Actual flip-angle imaging in the pulsed steady state: a method for rapid three-dimensional mapping of the transmitted radiofrequency field. _Magnetic Resonance in Medicine_, 57(1), 192–200. <https://doi.org/10.1002/mrm.21120>
   admin_notes: 'Hardcode warning: file trees for processed data'
-  README URL: https://docs.hbcdstudy.org/latest/instruments/mri/qmri/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/qmri/
   primary_data_type: File-based (raw BIDS/derivatives)
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/mri/qmri/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/qmri/
   acronym: qMRI
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recRLPMN2ca51nBml
   warning1: Note that different sites may apply varying criteria for identifying motion-degraded QALAS and B1+ mapping scans. For 3D-QALAS, the SyMRI toolbox does **not** incorporate externally acquired B1+ field maps when estimating quantitative T1, T2, and proton density (PD) values.
@@ -2646,13 +2646,13 @@ home21:
     Mott, F. L. (2004). The utility of the HOME-SF scale for child development research in a large national longitudinal survey: The national longitudinal survey of youth 1979 cohort. _Parenting, Science and Practice_, 4(2–3), 259–270. <https://doi.org/10.1080/15295192.2004.9681273>
   respondent_category: Parent on Child
   admin_notes: Includes hard-coded supplementary html that cannot be updated directly via this form - reach out to administrators directly to make changes
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/home21/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/home21/
   visits: V04, V06
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/home21/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/home21/
   acronym: HOME-21
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recUnKUe9AeqdPpsB
@@ -2686,13 +2686,13 @@ growth:
   references: 'Villar, J., Cheikh Ismail, L., Victora, C. G., Ohuma, E. O., Bertino, E., Altman, D. G., Lambert, A., Papageorghiou, A. T., Carvalho, M., Jaffer, Y. A., Gravett, M. G., Purwar, M., Frederick, I. O., Noble, A. J., Pang, R., Barros, F. C., Chumlea, C., Bhutta, Z. A., Kennedy, S. H., & International Fetal and Newborn Growth Consortium for the 21st Century (INTERGROWTH-21st). (2014). _International standards for newborn weight, length, and head circumference by gestational age and sex: the Newborn Cross-Sectional Study of the INTERGROWTH-21st Project_. Lancet, 384(9946), 857–868. <https://doi.org/10.1016/S0140-6736(14)60932-6>'
   respondent_category: Child on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/growth/
   visits: V02, V03, V04, V06, V08
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/growth/
   acronym: null
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recW48341QUKhAa0s
@@ -2702,7 +2702,7 @@ growth:
     - **Average length** (`ph_ch_anthro_len_001__03`): Valid range 30–130 cm
     - **Head circumference** (`ph_ch_anthro_head_001__03`): Valid range 25–55 cm
     - **Average weight** (`ph_ch_anthro_wei_001__03`): Valid range 0.5–30 kg
-  description: Anthropometrics is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children (including visits V08 and V10-V14), it will also include abdominal circumference (cm). Z scores, to be included in Release 3.0, will be calculated at V03+ and are based on jittered birthdate.
+  description: Anthropometrics is a standard direct measure of child growth, including height or length (in cm), weight (in kg), and head circumference (cm). In older children (including visits V08 and V10-V14), it will also include abdominal circumference (cm). Z scores are calculated at V03+ and are based on jittered birthdate.
   domain: Physical Health
   release: '3.0'
   qc: Monitor data dashboard for variable missingness, possible coding errors, and data consistency.
@@ -2735,14 +2735,14 @@ maps_tl:
     Krogh-Jespersen, S., Kaat, A. J., Petitclerc, A., Perlman, S. B., Briggs-Gowan, M. J., Burns, J. L., Adam, H., Nili, A., Gray, L., & Wakschlag, L. S. (2022). Calibrating temper loss severity in the transition to toddlerhood: Implications for developmental science. _Applied Developmental Science_, 26(4), 785–798. <https://doi.org/10.1080/10888691.2021.1995386>
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/bcgi/maps-tl/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps-tl/
   visits: |-
     Infancy: V03
     Toddlerhood & Preschool: V05
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/bcgi/maps-tl/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps-tl/
   acronym: MAPS-TL
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recW4BNhNIb3FLKM8
@@ -2870,13 +2870,13 @@ lead:
     CDC. Lead poisoning associated with imported candy and powdered food coloring -- California and Michigan. MMWR 1998;47(48);1041-1043. <https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm>
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/lead-exposures/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/lead-exposures/
   visits: V05
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/lead-exposures/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/lead-exposures/
   acronym: null
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recWXV3v63hvIyvD5
@@ -2907,7 +2907,7 @@ mrs:
     ### Metabolite Quantification by Spectrum
 
     The ISTHMUS acquisition generates four spectra, each modeled separately using linear combination modeling with an inclusive basis set. Although most metabolites may contribute at least minimally to multiple spectra, each spectrum is best suited for quantifying a particular subset of metabolites.
-  status: Work in progress
+  status: Complete / Stable
   full_name: Magnetic Resonance Spectroscopy
   references: |-
     Bottomley, P. A. (1987). Spatial localization in NMR spectroscopy in vivo. _Annals of the New York Academy of Sciences_, 508(1), 333–348. <https://doi.org/10.1111/j.1749-6632.1987.tb32915.x>
@@ -2919,11 +2919,11 @@ mrs:
     Oeltzschner, G., Zöllner, H. J., Hui, S. C. N., Mikkelsen, M., Saleh, M. G., Tapper, S., & Edden, R. A. E. (2020). Osprey: Open-source processing, reconstruction & estimation of magnetic resonance spectroscopy data. Journal of Neuroscience Methods, 343(108827), 108827. <https://doi.org/10.1016/j.jneumeth.2020.108827>
     Träber, F., Block, W., Lamerichs, R., Gieseke, J., & Schild, H. H. (2004). 1H metabolite relaxation times at 3.0 tesla: Measurements of T1 and T2 values in normal brain and determination of regional differences in transverse relaxation. _Journal of Magnetic Resonance Imaging_, 19(5), 537–545. <https://doi.org/10.1002/jmri.20053>
     Zöllner, H. J., Davies-Jenkins, C. W., Lee, E. G., Hendrickson, T. J., Clarke, W. T., Edden, R. A. E., Wisnowski, J. L., Gudmundson, A. T., & Oeltzschner, G. (2023). Continuous automated analysis workflow for MRS studies. Journal of Medical Systems, 47(1), 69. <https://doi.org/10.1007/s10916-023-01969-6>
-  README URL: https://docs.hbcdstudy.org/latest/instruments/mri/mrs/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/mrs/
   primary_data_type: File-based (raw BIDS/derivatives)
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/mri/mrs/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/mrs/
   acronym: MRS
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recXytTSPFEl2VXdI
   description: |-
@@ -2976,13 +2976,13 @@ medhx:
   alert2_title: null
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/physhealth/medical-history/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/medical-history/
   visits: V04, V06
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/physhealth/medical-history/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/medical-history/
   alert4: null
   acronym: null
   warning3: null
@@ -3032,13 +3032,13 @@ mmn:
     Reeb-Sutherland, B. C., Vanderwert, R. E., Degnan, K. A., Marshall, P. J., Pérez-Edgar, K., Chronis-Tuscano, A., Pine, D. S., & Fox, N. A. (2009). Attention to novelty in behaviorally inhibited adolescents moderates risk for anxiety. _Journal of Child Psychology and Psychiatry_, 50(11), 1365–1372. <https://doi.org/10.1111/j.1469-7610.2009.02170.x>
     Schwartz, S., Shinn-Cunningham, B., & Tager-Flusberg, H. (2018). Meta-analysis and systematic review of the literature characterizing auditory mismatch negativity in individuals with autism. _Neuroscience & Biobehavioral Reviews_, 87, 106–117. <https://doi.org/10.1016/j.neubiorev.2018.01.008>
   respondent_category: Child on Self
-  README URL: https://docs.hbcdstudy.org/latest/instruments/eeg/tasks/#auditory-mismatch-negativity-task
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/tasks/#auditory-mismatch-negativity-task
   visits: V03, V04, V06
   hbcd_mods3: null
   primary_data_type: File-based (raw BIDS/derivatives)
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/eeg/tasks/#auditory-mismatch-negativity-task
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/tasks/#auditory-mismatch-negativity-task
   alert4: null
   acronym: MMN
   warning3: null
@@ -3073,13 +3073,13 @@ chem_exp:
   references: 'Zota, A. R., Singla, V., Adamkiewicz, G., Mitro, S. D., & Dodson, R. E. (2017). Reducing chemical exposures at home: opportunities for action. _Journal of Epidemiology and Community Health_, 71(9), 937–940. <https://doi.org/10.1136/jech-2016-208676>'
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/household-chemical-exposures/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/household-chemical-exposures/
   visits: V05
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/household-chemical-exposures/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/household-chemical-exposures/
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reca1cb2UJkNk36iE
   warning1: Participants report information for the child’s primary residence. If a child spends at least 2-days per week in multiple homes, reporters are asked to provide information for the home they are most familiar with. As a result, exposures to secondhand smoke or chemicals in those additional environments is not captured, which may result in incomplete exposure data.
@@ -3109,12 +3109,12 @@ urine:
   references: 'Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <https://doi.org/10.1016/j.dcn.2024.101451>'
   respondent_category: Parent on Self
   admin_notes: 'NOTE: README includes hard-coded table(s) that can''t be updated via this form - reach out to administrators to update'
-  README URL: https://docs.hbcdstudy.org/latest/instruments/biospec/urine/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/urine/
   visits: V01
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/biospec/urine/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/urine/
   acronym: Urine
   warning3: Urinary concentration varies by participant. Researchers who wish to correct for urinary concentration in continuous measures, or apply different thresholds, can do so using creatinine or specific gravity results from sample validation.
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reca5TUjo1ZbMBYnG
@@ -3167,7 +3167,7 @@ rs:
     Whedon, M., Perry, N. B., & Bell, M. A. (2020). Relations between frontal EEG maturation and inhibitory control in preschool in the prediction of children’s early academic skills. _Brain and Cognition_, 145, 105636. <https://doi.org/10.1016/j.bandc.2020.105636>
   respondent_category: Child on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/eeg/tasks/#video-resting-state-task
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/tasks/#video-resting-state-task
   email: kmannin4@umd.edu
   visits: V03, V04, V06
   hbcd_mods3: null
@@ -3175,7 +3175,7 @@ rs:
   submitter_name: Katherine Manning
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/eeg/tasks/#video-resting-state-task
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/tasks/#video-resting-state-task
   alert4: null
   acronym: RS
   warning3: null
@@ -3206,12 +3206,12 @@ fam_mh:
   references: 'Rice, J. P., Reich, T., Bucholz, K., Neuman, R. J., Fishman, R., Rochberg, N., Hesselbrock, V. M., Numberger, J. I., Shuckit, M. A., & Begleiter, H. (1995). Comparison of Direct Interview and Family History Diagnoses of Alcohol Dependence. _Alcoholism: Clinical and Experimental Research_, _19_, 1018-1023. <https://doi.org/10.1111/j.1530-0277.1995.tb00983.x>'
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/pregexp/mh/fam-mh/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/mh/fam-mh/
   visits: V01
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/pregexp/mh/fam-mh/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/mh/fam-mh/
   acronym: FAM MH
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reccNy5uO2cUQ9g9b
   warning1: This instrument is a descriptive compilation of family psychiatric history adapted from existing measures. It is **not** a clinical or diagnostic tool. Publications should describe it as a combination of items from the FHAM and All of Us Personal and Family Health History instruments (see details below).
@@ -3283,12 +3283,12 @@ epds:
   references: Cox, J. L., Holden, J. M., & Sagovsky, R. (1987). Detection of postnatal depression . Development of the 10-item Edinburgh Postnatal Depression Scale. _British Journal of Psychiatry_, _150_, 782–786. <https://doi.org/10.1192/bjp.150.6.782>
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/pregexp/mh/epds/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/mh/epds/
   visits: V01, V02, V03
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/pregexp/mh/epds/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/mh/epds/
   acronym: EPDS
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reccheRcp1Hy7o49X
   description: |-
@@ -3324,12 +3324,12 @@ fad:
     Epstein, N. B., Baldwin, L. M., & Bishop, D. S. (1983). The McMaster Family Assessment Device. _Journal of Marital and Family Therapy_, 9(2): 171–180. doi: [10.1111/j.1752-0606.1983.tb01497.x](https://doi.org/10.1111/j.1752-0606.1983.tb01497.x)
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/bcgi/fad/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/fad/
   visits: V04, V06
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/bcgi/fad/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/fad/
   acronym: FAD (GF6+)
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recddpUNuTIEK10X6
   description: The **General Functioning (GF) subscale of the Family Assessment Device (FAD)** measures global functioning of the family unit, aiming to capture the quality of communication, emotional climate, problem-solving, and closeness among members the family unit. The original 12-item (GF12) subscale is one of seven subscales of The McMaster Family Assessment Device ([Epstein et al., 1983](https://doi.org/10.1111/j.1752-0606.1983.tb01497.x)). A shorter, validated 6-item (GF6+) subscale includes the six positively worded items from the GF12 ([Boterhoven de Haan et al., 2015](https://doi.org/10.1111/famp.12113)). The GF6+ is used in HBCD.
@@ -3363,14 +3363,14 @@ spm_2:
   references: 'Parham, L. D., Ecker, C. L., Kuhaneck, H., Henry, D. A., & Glennon, T. J. (2021). _Sensory Processing Measure, Second Edition (SPM-2)_ [Manual]. Torrance, CA: Western Psychological Services.'
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/neurocog/spm2/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/spm2/
   visits: |-
     Infant: V03
     Toddler: V05
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/neurocog/spm2/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/spm2/
   acronym: SPM-2
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recdoZxc5Ra1IClFR
   warning1: The response option "Decline to answer" was added on November 8, 2024 to allow participants to not answer any questions they choose. However, "Decline to answer" is not a response option on the published form and was not used in the reference sample from which the standard scores were derived. It is possible that participants chose “Decline to Answer” rather than “never” for behaviors that have never been seen (for example items related to reacting to food texture for an infant who has not been exposed to solids).
@@ -3397,12 +3397,12 @@ bfh:
   references: null
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/physhealth/bf/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/bf/
   visits: V02, V03, V04, V06, V08 (only administered if still breastfeeding at prior visit or data was missing from the prior visit)
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/physhealth/bf/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/bf/
   acronym: PHENX BF
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recdpOrKKpofN0NgL
   warning1: Breast feeding history is obtained via self-report, so is vulnerable to recall bias concerning the timing of starting and/or stopping breast feeding. In addition, as the data is obtained via a survey, it is likely that missing data will need to be statistically addressed during analysis.
@@ -3433,13 +3433,13 @@ nbhsaf:
     PhenX Toolkit. (2024 November 01). Neighborhood Safety, PhenX Toolkit. <https://www.phenxtoolkit.org/protocols/view/210901>
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/safety/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/safety/
   visits: V01, V02, V07, V09
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/safety/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/safety/
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recelk2KXaqRYN8bY
   warning1: null
@@ -3476,7 +3476,7 @@ vep:
     Shandiz, J. H., Heyrani, M., Sobhani-Rad, D., Salehinejad, Z., Shojaei, S., Khoshsima, M. J., Azimi, A., Yekta, A. A., & Yazdi, S. H. H. (2017). Pattern Visual Evoked Potentials in Dyslexic Children. _Journal of Ophthalmic & Vision Research_, 12(4), 402–406. <https://doi.org/10.4103/jovr.jovr_106_16>
   respondent_category: Child on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/eeg/tasks/#visual-evoked-potential-task
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/tasks/#visual-evoked-potential-task
   email: kmannin4@umd.edu
   visits: V03, V04, V06
   hbcd_mods3: null
@@ -3484,7 +3484,7 @@ vep:
   submitter_name: Katherine Manning
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/eeg/tasks/#visual-evoked-potential-task
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/tasks/#visual-evoked-potential-task
   alert4: null
   acronym: VEP
   warning3: null
@@ -3534,7 +3534,7 @@ ecpromis:
     Park, C. H., Blaisdell, C. J., & Gillman, M. W. (2022). The NIH ECHO program: An impetus for the development of early childhood PROMIS tools. _Journal of Pediatric Psychology_, 47(5), 497–499. <https://doi.org/10.1093/jpepsy/jsac010>
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/bcgi/ecpromis/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/ecpromis/
   visits: |-
     Infant: V03, V05
     Toddler: V03, V05, V07
@@ -3542,7 +3542,7 @@ ecpromis:
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/bcgi/ecpromis/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/ecpromis/
   alert4: null
   acronym: ecPROMIS
   warning3: null
@@ -3584,13 +3584,13 @@ ecpromis_pags:
   references: Lai, J.-S., Blackwell, C. K., Tucker, C. A., Jensen, S. E., & Cella, D. (2022). Measuring PROMIS® physical activity and Sleep Problems in Early Childhood. _Journal of Pediatric Psychology_, 47(5), 534–546. <https://doi.org/10.1093/jpepsy/jsac028>
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/ecpromis-pags/
   visits: V04, V06
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/ecpromis-pags/
   acronym: null
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recgxGDBYmBsSz3D7
@@ -3665,12 +3665,12 @@ vineland_3:
   references: 'Sparrow, S.S., Cicchetti, D.V., & Saulnier, C. A. (2016). _Vineland Adaptive Behavior Scales, Third Edition (Vineland-3)_. San Antonio, TX: Pearson.'
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/neurocog/vineland/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/vineland/
   visits: V05, V09, V10
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/neurocog/vineland/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/vineland/
   acronym: Vineland-3 / VABS
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recm5WwXQXWxRuwJy
   warning1: |-
@@ -3708,12 +3708,12 @@ gled:
   references: 'Fan, C. C., Marshall, A., Smolker, H., Gonzalez, M. R., Tapert, S. F., Barch, D. M., Sowell, E., Dowling, G. J., Cardenas-Iniguez, C., Ross, J., Thompson, W. K., & Herting, M. M. (2021). Adolescent Brain Cognitive Development (ABCD) study Linked External Data (LED): Protocol and practices for geocoding and assignment of environmental data. _Developmental Cognitive Neuroscience_ , 52(101030), 101030. <https://doi.org/10.1016/j.dcn.2021.101030>'
   respondent_category: null
   admin_notes: hard-coded table
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/geocoded-linkage/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/geocoded-linkage/
   visits: The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD)
   primary_data_type: Concatenated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/geocoded-linkage/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/geocoded-linkage/
   acronym: GLED
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reco7qGzxT8T1BBOZ
   warning1: The geocoded variables were based on intersections between residential addresses reported by participants and geospatial databases built by environmental and neighborhood through publicly available geospatial database, including CDC and EPA. Therefore, the coded values represent estimates about potential exposures or experience given where the participants have spent their time. The accuracy of such estimates would be influenced by multiple factors, including the validity of the original geospatial databases. For detailed information about how original geospatial databases were built by publicly available geospatial databases, including CDC and EPA, please refer to the data dictionary where the link to the source data is provided.
@@ -3752,13 +3752,13 @@ promis:
     Hahn, E. A., Cella, D., Bode, R. K., & Hanrahan, R. T. (2010). Measuring social well-being in people with chronic illness. _Social Indicators Research_, 96(3), 381–401. <https://doi.org/10.1007/s11205-009-9484-z>
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/promis/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/promis/
   visits: V01, V02, V03
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/promis/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/promis/
   alert4: null
   acronym: PROMIS
   warning3: null
@@ -3827,13 +3827,13 @@ shs:
     U.S. Environmental Protection Agency. (2024, December 20). What is EPA’s position on children’s exposure to secondhand smoke/aerosol? <https://www.epa.gov/indoor-air-quality-iaq/what-epas-position-childrens-exposure-secondhand-smokeaerosol>
   respondent_category: Parent on Child
   admin_notes: none
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/second-hand-smoke-exposure/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/second-hand-smoke-exposure/
   visits: V05
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/second-hand-smoke-exposure/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/second-hand-smoke-exposure/
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recokXLMyPkJrgTtA
   warning1: |-
@@ -3875,7 +3875,7 @@ paces:
     Morris, A. S., Treat, A., Hays-Grudo, J., Chesher, T., Williamson, A. C., & Mendez, J. (2018). Integrating research and theory on early relationships to guide intervention and prevention. In _Building Early Social and Emotional Relationships with Infants and Toddlers_ (pp. 1–25). Springer International Publishing. <https://doi.org/10.1007/978-3-030-03110-7_1>
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/paces/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/paces/
   visits: |-
     C-PACES: V01
     R-PACES: V05
@@ -3883,7 +3883,7 @@ paces:
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/paces/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/paces/
   alert4: null
   acronym: C-PACES & R-PACES
   warning3: null
@@ -3920,13 +3920,13 @@ inf_sensor_q:
   references: Pini, N., Fifer, W. P., Oh, J., Nebeker, C., Croff, J. M., Smith, B. A., & Novel Technology/Wearable Sensors Working Group. (2024). Remote data collection of infant activity and sleep patterns via wearable sensors in the HEALthy Brain and Child Development Study (HBCD). _Developmental Cognitive Neuroscience_, 69(101446), 101446. <https://doi.org/10.1016/j.dcn.2024.101446>
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/sensors/questionnaire/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/sensors/questionnaire/
   visits: V02, V03
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/sensors/questionnaire/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/sensors/questionnaire/
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recqE6JV6LhctBF2Q
   warning1: Researchers should consider that occurrence of caregiver non-response (see Quality Control information) may not be randomly distributed across the sample.
@@ -3958,13 +3958,13 @@ employment:
     National Institute for Occupational Safety and Health. (2024, April 3). About take-home exposures. U.S. Centers for Disease Control and Prevention. <https://www.cdc.gov/niosh/reproductive-health/about/take-home.html>
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/current-employment/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/current-employment/
   visits: V05
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/current-employment/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/current-employment/
   warning3: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recqQZ15W8HcT4Sup
   warning1: null
@@ -3996,7 +3996,7 @@ ehits:
     Sherin, K. M., Sinacore, J. M., Li, X. Q., Zitter, R. E., & Shakil, A. (1998). HITS: a short domestic violence screening tool for use in a family practice setting. _Family Medicine_, 30(7), 508–512. <https://www.ncbi.nlm.nih.gov/pubmed/9669164>
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/SED/ehits/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/ehits/
   visits: V01
   hbcd_mods3: |-
     Compared with previous versions (Sherin et al., 1998; Chan et al., 2010), HBCD:
@@ -4009,7 +4009,7 @@ ehits:
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/SED/ehits/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/ehits/
   acronym: eHITS
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recqtbp2QX5swcIFx
   description: 'The eHITS is a self-administered 5 question Likert scale screener for experiences of psychological aggression, physical assault, sexual coercion, and injury. Originally created for quick administration in a health care setting or emergency department, the eHITS asks individuals to indicate whether their partner has done any of the following over the past 12 months: "physically hurt you", "insulted you", "threatened to harm you", "screamed or cursed at you", or "forced you to have sexual activities."'
@@ -4061,13 +4061,13 @@ subst:
   references: null
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/pregexp/su/su-patterns/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/su/su-patterns/
   visits: V02
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/pregexp/su/su-patterns/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/su/su-patterns/
   alert4: Please take care not to overinterpret your results or to make assumptions about causation if your analysis is not designed for causal inference. We cannot control how other people, such as policy makers, educators, or clinicians, use the results of our research, but we can minimize risks of misuse by such non-scientist constituencies by being very clear, in papers and presentations, about the limits of our findings.
   acronym: null
   warning3: null
@@ -4120,7 +4120,7 @@ eeg:
     Mlandu, N., McCormick, S. A., Davel, L., Zieff, M. R., Bradford, L., Herr, D., Jacobs, C. A., Khumalo, A., Knipe, C., Madi, Z., Mazubane, T., Methola, B., Mhlakwaphalwa, T., Miles, M., Nabi, Z. G., Negota, R., Nkubungu, K., Pan, T., Samuels, R., … Gabard-Durnam, L. J. (2024). Evaluating a novel high-density EEG sensor net structure for improving inclusivity in infants with curly or tightly coiled hair. _Developmental Cognitive Neuroscience_, 67(101396), 101396. <https://doi.org/10.1016/j.dcn.2024.101396>
   respondent_category: Child on Self
   admin_notes: The supplemental stimartifact page cannot be updated via this form - please reach out to Luci directly to make changes until form functionality is improved
-  README URL: https://docs.hbcdstudy.org/latest/instruments/eeg/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/
   email: kmannin4@umd.edu
   visits: V03, V04, V06
   hbcd_mods3: null
@@ -4128,7 +4128,7 @@ eeg:
   submitter_name: Katherine Manning
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/eeg/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/
   alert4: null
   warning3: The interstimulus interval (ISI) for the Auditory Mismatch Negativity task changed between visits V03 and V04/V06 - see [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and [Morr et al. 2002](https://doi.org/10.1097/00003446-200204000-00005) for details.
   alert4_title: null
@@ -4175,12 +4175,12 @@ screenq:
   references: Hutton, J.S., Huang, G., Sahay, R.D. et al. A novel, composite measure of screen-based media use in young children (ScreenQ) and associations with parenting practices and cognitive abilities. _Pediatr Res_ 87, 1211–1218 (2020). <https://doi.org/10.1038/s41390-020-0765-1>
   respondent_category: Parent on Child
   admin_notes: none
-  README URL: https://docs.hbcdstudy.org/latest/instruments/physhealth/screenq/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/screenq/
   visits: V04, V06
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/physhealth/screenq/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/screenq/
   acronym: ScreenQ
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rectq0UxEPG6oCXUR
   description: '**ScreenQ** is designed to measure child screen use patterns. Questions are based on the AAP guidelines for media use. ScreenQ scores have been correlated with language development, working memory and executive functioning.'
@@ -4197,7 +4197,7 @@ screenq:
   measure: Screen-Based Media Use
   construct: Media Use
 fmri:
-  status: Work in progress
+  status: Complete / Stable
   alert1: |-
     Head motion is a serious issue in neuroimaging, especially for resting state fMRI, as it creates brain-wide artifactual effects such as inflated short-distance connectivity and attenuated long-distance connectivity ([Power et al. 2012](https://doi.org/10.1016/j.neuroimage.2011.10.018)). Researchers employ a variety of strategies to mitigate head motion during acquisition and processing ([Power et al. 2014](https://doi.org/10.1016/j.neuroimage.2013.08.048); [2015](https://doi.org/10.1016/j.neuroimage.2014.10.044); [Satterthwaite et al. 2013](https://doi.org/10.1016/j.neuroimage.2012.08.052); [Siegel et al. 2017](https://doi.org/10.1093/cercor/bhw253); [Gratton et al. 2020](https://doi.org/10.1016/j.neuroimage.2020.116866)). This includes motion censoring (discarding individual frames that are proximal to motion events within a run) and/or excluding entire runs due to high motion. These strategies may lead to the exclusion of some participants from further analysis due to lack of sufficient data.
 
@@ -4228,15 +4228,15 @@ fmri:
     Siegel JS, Mitra A, Laumann TO, Seitzman BA, Raichle M, Corbetta M, Snyder AZ. Data Quality Influences Observed Links Between Functional Connectivity and Behavior. _Cereb Cortex_ 27, 4492-4502, 2017. [doi: 10.1093/cercor/bhw253](https://doi.org/10.1093/cercor/bhw253)
   alert2_title: Brain-Behavior Associations
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/mri/fmri/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/fmri/
   primary_data_type: File-based (raw BIDS/derivatives)
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/mri/fmri/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/fmri/
   acronym: fMRI
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recuUGVjvp50fU2Z4
   warning1: |-
-    V02 data (0-1 month old) were processed in Infant fMRIPrep via two separate surface reconstruction workflows, M-CRIB-S (`hash-d902942d`) and Infant FreeSurfer (`hash-364caa63`). Expert review and BrainSwipes QC consistently showed higher-quality surfaces from M-CRIB-S. This is expected, as M-CRIB-S uses T2w images, which are much higher contrast than the T1w (on which FreeSurfer relies) in neonates. [Goncalves et al., 2025](https://doi.org/10.1101/2025.05.14.654069) report optimal performance for M-CRIB-S ≤5 months and Infant FreeSurfer ≥3 months. We therefore recommend only using data processed via the M-CRIB-S worfklow for analyses (`nibabies-d902942d`/`xcp_d-d902942d+7a4c379b`).
+    V02 data (0-1 month old) were processed in Infant fMRIPrep via two separate surface reconstruction workflows, M-CRIB-S (`hash-d902942d`) and Infant FreeSurfer (`hash-364caa63`). Expert review and BrainSwipes QC consistently showed higher-quality surfaces from M-CRIB-S. This is expected, as M-CRIB-S uses T2w images, which are much higher contrast than the T1w (on which FreeSurfer relies) in neonates. [Goncalves et al., 2025](https://doi.org/10.1101/2025.05.14.654069) report optimal performance for M-CRIB-S ≤5 months and Infant FreeSurfer ≥3 months. We therefore recommend only using data processed via the M-CRIB-S worfklow for analyses (`nibabies-d902942d/xcp_d-d902942d+7a4c379b`).
     _Note:_ M-CRIB-S outputs can still be affected by poor T1w quality as it uses an externally generated brain segmentation from BIBSNet fed into Infant fMRIPrep as an external derivative. BIBSNet uses both T1w and T2w (when available), and low-quality T1w data may degrade segmentation quality.
   description: |-
     Functional MRI (fMRI) measures brain activity via the blood oxygen level–dependent (BOLD) signal. The HBCD Study includes resting-state fMRI (rs-fMRI), with head motion monitored in real time using [FIRMM](https://firmm.readthedocs.io/) to estimate usable data during acquisition as quantified by framewise displacement (FD) ([Dosenbach et al., 2017](https://doi.org/10.1016/j.neuroimage.2017.08.025)).
@@ -4345,12 +4345,12 @@ tlfb:
     Sobell, L., & Sobell, M. (2000). Alcohol timeline follow-back (TLFB). In _Handbook of psychiatric measures_ (p. 477). American Psychiatric Association.
   respondent_category: Parent on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/su/tlfb/
   visits: V01, V02
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/su/tlfb/
   acronym: TLFB
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recx1DsRfW9TRpyOV
   warning1: The sampling covers specific weeks before pregnancy (Weeks 1-2) and during pregnancy (Weeks 3-9). Consequently, substance use reported outside these weeks may not appear in the TLFB, and a positive biospecimen may lack corresponding TLFB data for the same reason. This sampling approach balances participant burden (avoiding a full 40-week TLFB) with capturing key pregnancy phases when behaviors often shift, such as before and after pregnancy recognition and in late pregnancy.
@@ -4397,13 +4397,13 @@ bisq:
     Sadeh, A., Mindell, J. A., Luedtke, K., & Wiegand, B. (2009). Sleep and sleep ecology in the first 3 years: a web-based study. _Journal of Sleep Research_, 18(1), 60–73. <https://doi.org/10.1111/j.1365-2869.2008.00699.x>
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/physhealth/bisq-sf/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/bisq-sf/
   visits: V04
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/physhealth/bisq-sf/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/bisq-sf/
   acronym: BISQ-SF
   warning3: Scores are for research purposes only and are not for individual dissemination or clinical use.
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recxaTXeuihM8BEqS
@@ -4439,12 +4439,12 @@ ecpromis_peer:
     Park, C. H., Blaisdell, C. J., & Gillman, M. W. (2022). The NIH ECHO program: An impetus for the development of early childhood PROMIS tools. _Journal of Pediatric Psychology_, 47(5), 497–499. <https://doi.org/10.1093/jpepsy/jsac010>
   respondent_category: Parent on Child
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/bcgi/ecpromis-pr/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/ecpromis-pr/
   visits: V05, V07, V09
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/bcgi/ecpromis-pr/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/ecpromis-pr/
   acronym: ecPROMIS-Peer
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recyUAdg2SfTBqTwp
   description: The **ecPROMIS** (Early Childhood Patient-Reported Outcome Measurement Information System) is a set of primary caregiver report questionnaires that offer clinicians and researchers a brief, efficient, and precise way to evaluate young children’s well-being. The **Peer Relationships Scale **assesses young children’s positive peer interactions, sociability (getting along well with others), and empathic behaviors.
@@ -4473,12 +4473,12 @@ vs100:
   references: Misra, N., Khanna, R. C., Mettla, A. L., Marmamula, S., & Keeffe, J. E. (2021). Agreement and diagnostic accuracy of vision screening in preschool children between vision technicians and spot vision screener. _Indian Journal of Ophthalmology_, 69(1), 117–121. <https://doi.org/10.4103/ijo.IJO_1740_19>
   respondent_category: Child on Self
   admin_notes: None
-  README URL: https://docs.hbcdstudy.org/latest/instruments/physhealth/vision/
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/vision/
   visits: V04, V06, V08
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/physhealth/vision/
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/vision/
   acronym: vs100
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reczm7zrouwQNALku
   description: |-

@@ -16,7 +16,7 @@ HBCD structural and functional MRI data are processed through a sequence of BIDS
 
 Infant fMRIPrep and XCP-D derivative folder/filenames include unique hash IDs to indicate distinct processing parameters used for a given pipeline. In the case of HBCD data, the hash IDs correspond to which surface reconstruction method was used for processing within Infant fMRIPrep.
 
-Downstream XCP-D derivatives include a second hash ID (`0ef9c88a`) indicating the XCP-D processing configuration. This value is identical for all HBCD data because the XCP-D parameters were fixed. Below we summarize the processing workflows and resulting derivative folder names. 
+Downstream XCP-D derivatives include a second hash ID (`7a4c379b`) indicating the XCP-D processing configuration. This value is identical for all HBCD data because the XCP-D parameters were fixed. Below we summarize the processing workflows and resulting derivative folder names. 
 <p align="center">
   <img src="../images/proc-hashes.png" alt="Detailed MRI Processing Workflow">
 </p>

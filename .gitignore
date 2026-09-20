@@ -10,3 +10,4 @@ make_tables/
 LOCAL/
 ARCHIVE/
 .scratch/
+.claude/
