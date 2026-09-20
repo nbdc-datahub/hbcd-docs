@@ -109,6 +109,16 @@ The HBCD processing pipelines are a collection of modular tools used to process 
   <i class="fa fa-shield"></i></a></td>
 </tr>
 
+<tr>
+  <td><a href="https://pennlinc.github.io/ModelArray/">ModelArray</a></td>
+  <td><code>modelarray/</code></td>
+  <td>Aggregates cohort-level HDF5 arrays for efficient large-scale analyses</td>
+  <td><a href="../../../instruments/mri/fmri/#modelarrayio">
+      <i class="fa-solid fa-folder-tree header icon"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/">
+  <i class="fa fa-shield"></i></a></td>
+</tr>
+
 <tr class="table-group-row">
   <td colspan="5">Quantitative MRI</td>
 </tr>
