@@ -8,15 +8,15 @@ flowchart LR
     n1(["<b>V02</b>"]) --> n3["<b>BIBSNet</b><br>"] & n10["<b>BIBSNet</b><br>"]
     n3 --> n4["bibsnet/"]
     n4 --> n5@{ label: "<b>Infant fMRIPrep<br></b><i style=\"--tw-scale-x:\">M-CRIB-S surf recon</i>" }
-    n5 --> n6["nibabies-0f306a2f/<br>mcribs-0f306a2f/<br>freesurfer-0f306a2f/"]
+    n5 --> n6["nibabies-d902942d/<br>mcribs-d902942d/<br>freesurfer-d902942d/"]
     n6 --> n7["<b>XCP-D</b><br>"]
-    n7 --> n8["xcp_d-0f306a2f+0ef9c88a/"]
+    n7 --> n8["xcp_d-d902942d+7a4c379b/"]
     n9(["<b>V03 &amp; V04</b>"]) --> n10
     n10 --> n11["bibsnet/"]
     n11 --> n12@{ label: "<b>Infant fMRIPrep<br></b><i style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\">Infant FS surf recon</span></i>" }
-    n12 --> n13["nibabies-2afa9081/<br>freesurfer-2afa9081/"]
+    n12 --> n13["nibabies-364caa63/<br>freesurfer-364caa63/"]
     n13 --> n14["<b>XCP-D</b><br>"]
-    n14 --> n15["xcp_d-2afa9081+0ef9c88a/"]
+    n14 --> n15["xcp_d-364caa63+7a4c379b/"]
     n3@{ shape: rounded}
     n10@{ shape: rounded}
     n4@{ shape: text}

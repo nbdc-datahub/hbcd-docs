@@ -58,19 +58,19 @@ hbcd/
 
 ### M-CRIB-S & FreeSurfer
 
-M-CRIB-S & FreeSurfer are alternative surface reconstruction methods supported by Infant fMRIPrep optimized for different age ranges (see table below). The derivative folders provided in the release are generated from the [intermediate FreeSurfer-like folders](https://nibabies.readthedocs.io/en/latest/outputs.html#surface-reconstruction) produced by Infant fMRIPrep during surface reconstruction. When M-CRIB-S is used, Infant fMRIPrep still creates a FreeSurfer-structured folder containing the M-CRIB-S results mapped to the standard <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/ReconAllOutputFiles">recon-all</a> layout; these appear in the release under <code>freesurfer-0f306a2f/</code>.
+M-CRIB-S & FreeSurfer are alternative surface reconstruction methods supported by Infant fMRIPrep optimized for different age ranges (see table below). The derivative folders provided in the release are generated from the [intermediate FreeSurfer-like folders](https://nibabies.readthedocs.io/en/latest/outputs.html#surface-reconstruction) produced by Infant fMRIPrep during surface reconstruction. When M-CRIB-S is used, Infant fMRIPrep still creates a FreeSurfer-structured folder containing the M-CRIB-S results mapped to the standard <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/ReconAllOutputFiles">recon-all</a> layout; these appear in the release under <code>freesurfer-d902942d/</code>.
 
 <table class="table-no-vertical-lines">
 <thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Visits <i>(Age Range in Months)</i></th> </tr> </thead>
 <tbody>
 <tr>
 <td>M-CRIB-S</td>
-<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/nibabies_25.2.0-0f306a2f.html">0f306a2f</a></td>
+<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/nibabies_25.2.0-d902942d.html">d902942d</a></td>
 <td>T2w-based method for neonates</td>
 <td>V02 <i>(0-1 m)</i></td>
 </tr> <tr>
 <td>Infant FreeSurfer</td>
-<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/nibabies_25.2.0-2afa9081.html">2afa9081</a></td> <td>T1w-based method for infants 0-2 years old</td>
+<td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/nibabies_25.2.0-364caa63.html">364caa63</a></td> <td>T1w-based method for infants 0-2 years old</td>
 <td>V02 <i>(0-1 m)</i>, V03 <i>(3-9 m)</i>, V04 <i>(9-15 m)</i></td>
 </tr> </tbody>
 </table>
@@ -116,7 +116,7 @@ hbcd/
             └── scripts/*
 
 <span class="hashtag"># Label Legend</span>
-<span class="var">HASH</span>: 0f306a2f | 2afa9081
+<span class="var">HASH</span>: d902942d | 364caa63
 <span class="var">HEM</span>: lh | rh
 <span class="var">ATLAS</span>: aparc | aparc+DKTatlas
 </pre>
@@ -136,7 +136,7 @@ hbcd/
 <pre class="folder-tree">
 hbcd/
 └── derivatives/
-    └── mcribs-0f306a2f/
+    └── mcribs-d902942d/
         └── sub-[ID]_ses-V02/
             ├── RawT2/sub-[ID]_ses-V02.nii.gz
             ├── RawT2RadiologicalIsotropic/sub-[ID]_ses-V02.nii.gz_symlink_s3_object
@@ -179,7 +179,7 @@ hbcd/
 </pre>
 
 <h5>Restoring Symlink Files Present in M-CRIB-S Derivatives</h5>
-<p>When downloaded, the symlink files present within the M-CRIB-S derivatives (<code>mcribs-0f306a2f/</code>), appended with <code>*_symlink_s3_object</code>, appear as text files that contain the S3 object path instead of the actual file content. If needed, you may restore these files as symlinks via the following terminal command, which restores all symlink files within your locally downloaded directory and renames them without <code>*_symlink_s3_object</code> to match the original sourcedata filenames:</p>
+<p>When downloaded, the symlink files present within the M-CRIB-S derivatives (<code>mcribs-d902942d/</code>), appended with <code>*_symlink_s3_object</code>, appear as text files that contain the S3 object path instead of the actual file content. If needed, you may restore these files as symlinks via the following terminal command, which restores all symlink files within your locally downloaded directory and renames them without <code>*_symlink_s3_object</code> to match the original sourcedata filenames:</p>
 
 ```
 find . -type f -name "*_symlink_s3_object" -print | while read path ; do

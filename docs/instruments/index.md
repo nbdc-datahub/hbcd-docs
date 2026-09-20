@@ -624,8 +624,8 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
   <td><a href="mri/qc/#brainswipes">BrainSwipes</a></td>
   <td>Manual QC</td>
   <td>
-    <code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">{T2w|bold}</span></code><br>
-    <code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">{T1w|bold}</span></code>
+    <code>img_brainswipes_xcpd_hash-d902942d+7a4c379b_<span class="blue-text">{T2w|bold}</span></code><br>
+    <code>img_brainswipes_xcpd_hash-364caa63+7a4c379b_<span class="blue-text">{T1w|bold}</span></code>
   </td>
 </tr>
 <tr>

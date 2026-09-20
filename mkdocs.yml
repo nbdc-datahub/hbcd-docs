@@ -52,7 +52,6 @@ nav:
     - Study Protocol: standards/protocol.md
     - Metadata & Variable Names: standards/metadata.md
     - Age Variables: instruments/agevariables.md
-    # - Naming Conventions: standards/naming-conventions.md
     - Processing & Derivative Standards: standards/processing/standards.md
   - Data Structure & File Types:
     - Data Structure Overview: datacuration/overview.md

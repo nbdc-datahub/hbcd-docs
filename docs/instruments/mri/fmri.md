@@ -7,16 +7,19 @@
 
 ---
 
-## Overview & Acquisition
+## Overview
 
-<!-- ##### Overview & Acquisition -->
+### Acquisition
+
 {{ instrument_description(instruments.fmri) }}
 
-## Processing & Derivatives
+### Processing & Derivatives
 
 <div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 5px;" class="fa-solid fa-up-right-from-square"></i></a></span> </div>
 
-### Infant fMRIPrep
+See the remaining sections on this page for an overview of the multiple processed derivatives for functional MRI included in the release as well as the [Derivatives Guide](derivatives-guide.md) for a general introduction to what the different files are and how they can be used for analysis.
+
+## Infant fMRIPrep
 
 <a href="https://nibabies.readthedocs.io/en/latest/">Infant-fMRIPrep</a> (also known as NiBabies) performs minimal structural and functional MRI processing. It is an adapted version of <em>fMRIPrep</em> optimized for infant data processing, using age-appropriate templates and surface reconstruction methods optimized for early development (<a href="https://doi.org/10.1101/2025.05.14.654069">Goncalves et al., 2025</a>). Pipeline outputs include visual quality assessment reports, preprocessed derivatives, and confounds used for denoising in subsequent processing steps.
 
@@ -79,7 +82,7 @@ hbcd/
             └── sub-[ID]_ses-[V0X]_hash-<span class="var">{HASH}</span>.html
 
 <span class="hashtag"># Label Values Legend</span>
-<span class="var">HASH</span>: 0f306a2f , 2afa9081
+<span class="var">HASH</span>: d902942d , 364caa63
 </pre>
 <p style="font-size: 1.1em; font-weight: 600;">Anatomical Folder Details</p>
 <pre class="folder-tree" style="font-size: 11px;">
@@ -148,7 +151,7 @@ File Prefixes (func/): sub-[ID]_ses-[V0X]_hash-{HASH}_task-rest_dir-PA_run-[X]
 </div>
 
 
-### XCP-D
+## XCP-D
 <a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a> performs functional MRI post-processing and noise regression from Infant-fMRIPrep derivatives, producing cleaned and parcellated data (<a href="#parc">see parcellation atlases</a>) ready for analysis.
 
 <div id="xcpd" class="banner" onclick="toggleCollapse(this)">
@@ -232,14 +235,14 @@ hbcd/
                 └── sub-[ID].html
 
 <span class="hashtag"># ── Label Legend ─────────────────────────────────────────────</span>
-<span class="var">HASH</span>    : 0f306a2f+0ef9c88a , 2afa9081+0ef9c88a
+<span class="var">HASH</span>    : d902942d+7a4c379b , 364caa63+7a4c379b
 <span class="var">METRIC</span>  : curv , sulc , thickness  
 <span class="var">PARC</span>    : 4S-{156|256|...|1056}Parcels , Glasser , Gordon , MIDB , MyersLabonte , HCP (func/ only) , Tian  (func/ only)
 <span class="var">SURF</span>    : midthickness , pial , white , inflated , vinflated
 </pre>
 </div>
 
-### ModelArrayIO
+## ModelArrayIO
 
 Mass-univariate statistical modeling for large neuroimaging datasets, or [ModelArrayIO](https://modelarrayio.readthedocs.io/en/latest/), is a Python package that converts neuroimaging file formats to HDF5 (`.h5`) for compatibility with the [ModelArray R package](https://github.com/ModelArray/ModelArray). For HBCD, ModelArrayIO is used as a downstream aggregation step, converting subject-level outputs from XCP-D into cohort-level arrays. This enables efficient, large-scale statistical analyses via ModelArray without having to load individual subject files.  
 
