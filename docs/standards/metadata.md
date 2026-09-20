@@ -1,19 +1,38 @@
 <style>
 .wy-nav-content {
-    width: 95% !important;
-    max-width: 95% !important;
+    width: 90% !important;
+    max-width: 90% !important;
     flex-grow: 1 !important;
+}
+.naming-pattern {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+.naming-pattern code {
+  background: var(--md-code-bg-color, #f5f5f5);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.table-name-part {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
 }
 </style>
 
-# NBDC Data Dictionary
+# Metadata & Table/Variable Naming Conventions
 
-Tabulated HBCD study data is organized into a standardized table format per study instrument/measure, with each table containing a set of variables (see [Data Structure Overview](../datacuration/overview.md) for details). Metadata is organized via a data dictionary following NBDC standards (similar to the [ABCD Study](https://docs.abcdstudy.org/latest/documentation/curation/metadata.html)), which provides detailed information about table variables, including variable name, label, description, data type, etc. All data dictionary elements are outlined below. 
+Tabulated HBCD study data is organized into a standardized table format per study instrument/measure, with each table containing a set of variables. Both the metadata conventions and table/variable naming conventions follow NBDC standards and therefore largely align with the ABCD Study - see [Metadata](https://docs.abcdstudy.org/latest/documentation/curation/metadata.html) and [Naming conventions](https://docs.abcdstudy.org/latest/documentation/curation/naming.html) information within the ABCD data documentation site. Metadata is organized via a data dictionary following NBDC standards, which provides detailed information about table variables, including variable name, label, description, data type, etc. Table/variable naming conventions ensure consistency across instruments and derived datasets and intuitive parsing of variable meaning and structure.
+
+## NBDC Data Dictionary Elements
 
 <div id="lasso" class="banner data-warning" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
 <span class="text-with-link">
-<span class="text">NBDC Data Access Platform caveats & notes</span>
+<span class="text">Warnings, Caveat, & Notes</span>
 <a class="anchor-link" href="#lasso" title="Copy link">
   <i class="fa-solid fa-link"></i>
 </a>
@@ -23,29 +42,8 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <div class="collapsible-content">
 <div class="info-section">
 <div class="info-section-title">
-  Blank Columns in Query Tool
+  <b>WARNING: Incorrect Data Types Inferred for CSV/TSV</b>
 </div>
-<p>
-  Dictionary Query Tool searches within the NBDC Data Access Platform currently display columns that are not applicable to HBCD study data, including columns ending with <code>nda</code>, <code>deap</code>, and <code>redcap</code>. Inapplicable columns will be removed in the future and can safely be ignored. Note that columns may also be blank if they have yet to be populated (currently common for columns ending with <code>*_es</code>). Note that only applicable columns are included in the data dictionary table above.
-</p>
-</div>
-<div class="info-section">
-<div class="info-section-title">
-  Site & Cohort Information
-</div>
-<p>
-  Datasets downloaded from the NBDC Data Access Platform contain two additional fields not listed in the data dictionary, <code>cohort</code> and <code>site</code>, derived directly from <strong>Visit Level Data</strong> table variables (<code>par_visit_data_{cohort/site}</code>) - see the <a href="../../instruments/demo/visitinfo">Visit Level Data</a> page for details.
-</p>
-</div>
-</div>
-
-## Data Dictionary Elements
-
-<div class="infobox" style="background-color: #fff8e1; border-left: 4px solid #ffa500;">
-  <i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
-    &nbsp;<b>WARNING: Incorrect Data Types Inferred for CSV/TSV</b>
-<br>
-<br>
 <p>
   CSV and TSV files do not contain an embedded data schema. Because column
   metadata are provided separately, import tools in Python and R may infer
@@ -64,6 +62,23 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <p>
   <b>It is therefore critical that you specify column types during import</b>, particularly data type (<code>type_data</code>), using the accompanying metadata. See <a href="../../access/tools/#nbdctools">NBDCtools</a> for available functions to automate this process (e.g. <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a> for R users).
 </p>
+</div>
+<div class="info-section">
+<div class="info-section-title">
+  NBDC Data Access Platform: Blank Columns in Query Tool
+</div>
+<p>
+  Dictionary Query Tool searches within the NBDC Data Access Platform currently display columns that are not applicable to HBCD study data, including columns ending with <code>nda</code>, <code>deap</code>, and <code>redcap</code>. Inapplicable columns will be removed in the future and can safely be ignored. Note that columns may also be blank if they have yet to be populated, currently common for Spanish-specific version (ending with <code>*_es</code>) and variable-level responsible use (<code>url_warn_use</code>) and data warnings (<code>url_warn_data</code>). Only active and applicable columns are included in the data dictionary table below for clarity.
+</p>
+</div>
+<div class="info-section">
+<div class="info-section-title">
+  NBDC Data Access Platform: Site & Cohort Information
+</div>
+<p>
+  Datasets downloaded from the NBDC Data Access Platform contain two additional fields not listed in the data dictionary, <code>cohort</code> and <code>site</code>, derived directly from <strong>Visit Level Data</strong> table variables (<code>par_visit_data_{cohort/site}</code>) - see the <a href="../../instruments/demo/visitinfo">Visit Level Data</a> page for details.
+</p>
+</div>
 </div>
 
 <div class="table-legend">
@@ -203,7 +218,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 
 <tr>
   <td><code>url_table_warn_data</code></td>
-  <td>Data Warning (table)</td>
+  <td>Data Warning</td>
   <td>
     Table-level <a href="../../access/resp_data_use/#data-warning">Data Warning</a>
   </td>
@@ -211,7 +226,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 
 <tr>
   <td><code>url_table_warn_use</code></td>
-  <td>Responsible Use Warning (table)</td>
+  <td>Use Warning</td>
   <td>
     Table-level <a href="../../access/resp_data_use/#alert"> Responsible Use Warning</a>
   </td>
@@ -265,7 +280,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   <span class="tooltiptext">
     <img src="../levels.png"
          alt="Levels table example"
-         style="max-height: 200px;">
+         style="max-height: 150px;">
   </span>
 </span>
 </td>
@@ -341,7 +356,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
     </div>
   </td>
 </tr>
-<tr>
+<!-- <tr>
   <td><code>url_warn_data</code></td>
   <td>Data Warning (var)</td>
   <td>Variable-level <a href="../../access/resp_data_use/#data-warning">Data Warning</a></td>
@@ -350,7 +365,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   <td><code>url_warn_use</code></td>
   <td>Responsible Use Warning (var)</td>
   <td>Variable-level <a href="../../access/resp_data_use/#alert">Responsible Use Warning</a></td>
-</tr>
+</tr> -->
 
 <!-- DISPLAY -->
 <tr class="table-group-row">
@@ -403,7 +418,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 </tbody>
 </table>
 
-## Variable Types
+### Variable Types
 
 <table class="table-no-vertical-lines dd">
 <thead>
@@ -452,6 +467,128 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 </table>
 
 
+## Naming Conventions
+
+The instrument table and variable names used for tabulated HBCD study data largely follow standardized naming conventions adapted from the [ABCD Study](https://docs.abcdstudy.org/latest/documentation/curation/naming.html). This ensures consistency across instruments and derived datasets, allowing for intuitive parsing of variable meaning and structure.
+
+### Convention Logic & Rules
+
+Variable names are constructed from a set of ordered main components separated by single underscores. Subcomponents, if present, are preceded by double or triple underscores, which represent *subscale*, *version*, or *counter type* and multiselect fields. Main components include:
+<div class="naming-pattern"><code><span class="table-components"><span style="background-color: #f500e92c">domain_source_table</span></span>_{scale}_item</code>
+</div>
+
+ - The first 3 main components, <code><span style="background-color: #f500e92c">domain_source_table</span></code>, make up the name of the table
+ - <code><span style="color: teal;">{scale}</span></code> is only included for instruments that have subscales
+
+<table class="table-no-vertical-lines">
+<thead class="table-header">
+<tr>
+<th width="35%">Naming Component</th>
+<th>Possible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+  <span class="naming-token"><code>domain</code></span>
+  <div class="naming-description">
+    Data domain
+  </div>
+</td>
+<td>
+<div class="dd-inline-list">
+<ul>
+    <li><code>bio</code>: Biospecimen &amp; Omics</li>
+    <li><code>eeg</code>: Tabular EEG</li>
+    <li><code>img</code>: Tabular Imaging</li>
+    <li><code>mh</code>: Behavior/Child-Caregiver Interaction</li>
+    <li><code>ncl</code>: Neurocognition and Language</li>
+    <li><code>nt</code>: Novel Technology &amp; Wearable Sensors</li>
+    <li><code>ph</code>: Physical Health</li>
+    <li><code>pex</code>: Pregnancy/Exposure Including Substance</li>
+    <li><code>sed</code>: Social and Environmental Determinants</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>
+    <span class="naming-token"><code>source</code></span>
+    <div class="naming-description">
+    Respondent <b>OR</b> who the data is about
+    </div>
+</td>
+<td>
+<div class="dd-inline-list">
+<ul>
+    <li><code>bm</code>: Biological Mother</li>
+    <li><code>cg</code>: Caregiver (Responsible Adult)</li>
+    <li><code>ch</code>: Child</li>
+    <li><code>ld</code>: Linked Data</li>
+    <li><code>ra</code>: RA (Research Assistant)</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>
+    <span class="naming-token"><code>table</code></span>
+    <div class="naming-description">
+    Instrument name
+    </div>
+</td>
+<td>
+<div class="dd-inline-list">
+e.g., <code>ibqr</code> — Infant Behavior Questionnaire–Revised (IBQ-R)
+</div>
+</td>
+</tr>
+
+<tr>
+<td>
+    <span class="naming-token"><code>{scale}</code></span>
+    <div class="naming-description">
+    Instrument subscale, as applicable
+    </div>
+</td>
+<td>
+<div class="dd-inline-list">
+e.g., <code>mh_cg_ibqr_<span style="color: teal;"><b>beh</b></span>_001</code> = <b>Behavioral Inhibition</b> subscale
+</div>
+</td>
+</tr>
+
+<tr>
+<td>
+    <span class="naming-token"><code>item</code></span>
+    <div class="naming-description">
+    Item number OR admin/score fields
+    </div>
+</td>
+<td>
+<div class="dd-inline-list">
+<ul>
+  <li>Item number example: <code>001</code></li>
+  <li>See <a href="#variable-types">Variable Types</a> for details on administrative and summary score fields</li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Exceptions
+
+Some table/variable names deviate from the standard naming conventions and will be standardized in the future. Main exceptions include the following. See [Study Instruments](../instruments/index.md) for more details about each domain. This includes, for example, Demographics, which are derived data tables with unconventional table naming (`sed_basic_demographics` and `par_visit_data`).      
+[Tabulated derivatives](../datacuration/overview.md#tabulated-pipeline-derivatives) generated from processed imaging and EEG data also follow slightly different conventions (where `derivative` corresponds to the basename of the source derivative files):
+<div class="naming-pattern"><code>domain_pipeline_derivative</code></div>
+
+For example, the BIBSNet tabulated file:
+<code>img_bibsnet<span style="color: teal;">_space-T1w_desc-aseg_volumes</span>.tsv</code>    
+is sourced from:
+<code>sub-[ID]_ses-[V0X]<span style="color: teal;">_space-T1w_desc-aseg_volumes</span>.tsv</code>
 
 
 
