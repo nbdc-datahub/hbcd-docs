@@ -51,7 +51,7 @@ The HBCD processing pipelines are a collection of modular tools used to process 
   <td><code>mriqc/</code></td>
   <td>Extracts image quality metrics from raw MRI data</td>
 <td>
-  <a href="../../instruments/mri/sfmri-processing/#mriqc"><i class="fa-solid fa-folder-tree header icon"></i>
+  <a href="../../instruments/mri/smri/#mriqc"><i class="fa-solid fa-folder-tree header icon"></i>
   </a>
 </td>
   <td><a href="https://www.nmind.org/proceedings/mriqc/"><i class="fa fa-shield"></i></a></td>
@@ -60,7 +60,7 @@ The HBCD processing pipelines are a collection of modular tools used to process 
   <td><a href="https://brain-mri-enhancement.readthedocs.io/">BME-X</a></td>
   <td><code>bme_x/</code></td>
   <td>Structural pipeline for T1w/T2w image quality enhancement</td>
-  <td><a href="../../instruments/mri/sfmri-processing/#mriqc">
+  <td><a href="../../instruments/mri/smri/#mriqc">
   <i class="fa-solid fa-folder-tree header icon"></i></a></td>
   <td><a href="https://www.nmind.org/proceedings/bmex/"><i class="fa fa-shield"></i></a></td>
 </tr>
@@ -68,7 +68,7 @@ The HBCD processing pipelines are a collection of modular tools used to process 
   <td><a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet</a></td>
   <td><code>bibsnet/</code></td>
   <td>Deep learning model for brain segmentation</td>
-  <td><a href="../../instruments/mri/sfmri-processing/#bibsnet">
+  <td><a href="../../instruments/mri/smri/#bibsnet">
     <i class="fa-solid fa-folder-tree header icon"></i></a></td>
   <td><a href="https://www.nmind.org/proceedings/bibsnet/"><i class="fa fa-shield"></i></a></td>
 </tr>
@@ -76,7 +76,7 @@ The HBCD processing pipelines are a collection of modular tools used to process 
   <td><a href="https://nibabies.readthedocs.io/en/latest/">Infant-fMRIPrep</a></td>
   <td><code>nibabies/</code></td>
   <td>Structural and functional MRI preprocessing pipeline</td>
-  <td><a href="../../instruments/mri/sfmri-processing/#nibabies-derivs">
+  <td><a href="../../instruments/mri/fmri/#nibabies-derivs">
     <i class="fa-solid fa-folder-tree header icon"></i></a></td>
   <td><a href="https://www.nmind.org/proceedings/nibabies/">
   <i class="fa fa-shield"></i></a></td>
@@ -86,7 +86,7 @@ The HBCD processing pipelines are a collection of modular tools used to process 
   <td><code>freesurfer/</code></td>
   <td>Infant FreeSurfer surface reconstruction workflow run in fMRIPrep</td>
   <td>
-    <a href="../../instruments/mri/sfmri-processing/#fs">
+    <a href="../../instruments/mri/smri/#fs">
     <i class="fa-solid fa-folder-tree header icon"></i></a></td>
   <td>—</td>
 </tr>
@@ -95,7 +95,7 @@ The HBCD processing pipelines are a collection of modular tools used to process 
   <td><code>mcribs/</code></td>
   <td>Neonatal surface reconstruction workflow run in fMRIPrep</td>
   <td>
-    <a href="../../instruments/mri/sfmri-processing/#mcribs">
+    <a href="../../instruments/mri/smri/#mcribs">
     <i class="fa-solid fa-folder-tree header icon"></i></a></td>
   <td>—</td>
 </tr>
@@ -103,7 +103,7 @@ The HBCD processing pipelines are a collection of modular tools used to process 
   <td><a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a></td>
   <td><code>xcp_d/</code></td>
   <td>Functional MRI post-processing and noise regression pipeline</td>
-  <td><a href="../../instruments/mri/sfmri-processing/#xcpd-derivs">
+  <td><a href="../../instruments/mri/fmri/#xcpd-derivs">
       <i class="fa-solid fa-folder-tree header icon"></i></a></td>
   <td><a href="https://www.nmind.org/proceedings/xcpd/">
   <i class="fa fa-shield"></i></a></td>

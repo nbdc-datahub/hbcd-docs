@@ -102,21 +102,16 @@ This page lists all instruments included in the current release, organized by do
       placeholder="Search instrument, construct, or table name..."
       aria-label="Search instruments"
     >
-
     <select id="instr-domain" aria-label="Filter by domain">
       <option value="">All domains</option>
     </select>
-
     <button id="instr-reset" type="button">Clear filters</button>
   </div>
   <div id="instr-status" class="archive-status" aria-live="polite"></div>
 </div>
-
 <div id="instr-empty" class="archive-empty">No matching instruments found.</div>
 
-
 ### <i class="fa fa-clipboard-list header-icon"></i> Administrative
-
 <table class="compact-table-no-vertical-lines" style="width: 100%;">
 <thead>
 <th>Instrument</th>
@@ -128,28 +123,6 @@ This page lists all instruments included in the current release, organized by do
 <td><a href="admin/study-navigators">Study Navigator Contact Form</a></td>
 <td>Recruitment/Retention</td>
 <td><i>concatenated/study_navigator/</i></td>
-</tr>
-</tbody>
-</table>
-
-### <i class="fas fa-id-card header-icon"></i> Participant Derived
-
-<table class="compact-table-no-vertical-lines" style="width: 100%;">
-<thead>
-<th>Instrument</th>
-<th>Construct</th>
-<th>Table / Folder Name</th>
-</thead>
-<tbody>
-<tr>
-  <td><a href="demo/static/">Static Table</a></td>
-  <td>Static derived participant information</td>
-  <td><code>par_gd_sdc</code></td>
-</tr>
-<tr>
-  <td><a href="demo/dynamic/">Dynamic Table</a></td>
-  <td>Dynamic derived participant information</td>
-  <td><code>ADD</code></td>
 </tr>
 </tbody>
 </table>
@@ -255,6 +228,110 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
+### <i class="fa-solid fa-file-waveform header-icon"></i> EEG
+The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Faces (FACE), Visual Evoked Potential (VEP), and Video Resting State (RS). File-based EEG data include raw BIDS and HBCD-MADE pipeline derivatives; see <a href="eeg/release-data/">Release Data</a> for details. Tabular EEG data includes tabulated pipeline derivatives, acquisition forms, and quality-control metrics:
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>Table</th>
+<th>Construct</th>
+<th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2">HBCD-MADE tabulated derivatives</td>
+  <td>Processing Reports</td>
+  <td><code>eeg_made_task-<span class="blue-text">{FACE|MMN|RS|VEP}</span>_acq-eeg_preprocessingReport</code></td>
+</tr>
+<tr>
+  <td>Summary Statistics</td>
+  <td><code>eeg_made_task-<span class="blue-text">{FACE|MMN|VEP}</span>FACE_ERPSummaryStats</code></td>
+</tr>
+<tr>
+  <td>EEG Acquisition Checklists</td>
+  <td>Acquisition Prep</td>
+  <td><code>eeg_ch_chkl</code>, 
+  <code>eeg_ch_chkl_1</code>,
+  <code>eeg_ch_chkl_2</code></td>
+</tr>
+<tr>
+  <td><a href="eeg/qc">Quality Control Metrics</a></td>
+  <td>Quality Control</td>
+  <td><code>eeg_qc_task-<span class="blue-text">{FACE|MMN|RS|VEP}</span></code>
+  </td>
+</tr>
+</tbody>
+</table>
+
+
+### <i class="fa fa-brain header-icon"></i> Imaging
+Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [Release Data](mri/release-data.md) for details. Tabular Imaging includes tabulated pipeline derivatives (<i class="fa-solid fa-gear simple-icon"></i>), questionnaire/form data, and quality-control metrics:
+<table class="compact-table-no-vertical-lines"> 
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Construct</th>
+  <th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="mri/smri/#bibsnet">BIBSNet</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td>Brain ROI Volumes</td>
+  <td><code>img_bibsnet_space-<span class="blue-text">{T1w|T2w}</span>_desc-aseg_volumes</code></td>
+</tr>
+<tr>
+  <td><a href="mri/qc/#brainswipes">BrainSwipes</a></td>
+  <td>Manual QC</td>
+  <td>
+    <code>img_brainswipes_xcpd_hash-d902942d+7a4c379b_<span class="blue-text">{T2w|bold}</span></code><br>
+    <code>img_brainswipes_xcpd_hash-364caa63+7a4c379b_<span class="blue-text">{T1w|bold}</span></code>
+  </td>
+</tr>
+<tr>
+  <td><a href="mri/smri/#mriqc">MRIQC</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td>Raw BIDS QC Metrics</td>
+  <td><code>img_mriqc_<span class="blue-text">{T1w|T2w|bold}</span></code></td>
+</tr>
+<tr>
+  <td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms">MRI Summary Forms</a></td>
+  <td>Pre/Post-Scan Checklists</td>
+  <td><code>mri_ra_chkl_scan</code> / <code>mri_ra_chkl_data</code></td>
+</tr>
+<tr>
+  <td><a href="mri/mrs/#derivatives">OSPREY-BIDS</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td>Metabolites</td>
+  <td>
+    <code>img_osprey_<span class="blue-text">{HERCULES|unedited}</span>_*</code>
+    <a href="mri/tables/osprey.html">→ View full file list &amp; details</a>
+  </td>
+</tr>
+<tr>
+  <td><a href="mri/mri-forms/#pre-scan-questionnaire">Pre-Scan Questionnaire</a></td>
+  <td>Infant Sleep Environment</td>
+  <td><code>mri_ra_prep</code></td>
+</tr>
+<tr>
+  <td><a href="mri/dmri/#qsiprep">QSIPrep</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td>QSIPrep QC Metrics</td>
+  <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td> 
+</tr>
+<tr> 
+  <td><a href="mri/fmri/#xcp-d">XCP-D</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td>Morph/fMRI metrics</td>
+  <td>
+    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-mean_desc-<span class="blue-text">{METRIC}</span>_morph</code>
+    <br>
+    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-<span class="blue-text">{alff|coverage|reho}</span>_bold</code>
+    <br>
+    &nbsp;&nbsp;<a href="mri/tables/xcpd.html">→ View full file list &amp; details</a>
+  </td>
+</tr>
+</tbody>
+</table>
+
 ### <i class="fa-solid fa-puzzle-piece header-icon"></i> Neurocognition & Language
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -293,6 +370,54 @@ This page lists all instruments included in the current release, organized by do
   <td><a href="neurocog/vineland">Vineland</a></td>
   <td>Adaptive Behavior</td>
   <td><code>ncl_cg_vabs</code></td>
+</tr>
+</tbody>
+</table>
+
+
+
+### <i class="fa fa-microchip header-icon"></i> Novel Technologies & Wearable Sensors
+Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensors/#derivatives">HBCD-Motion</a> pipeline derivatives - see [Release Data](sensors/wearsensors.md#release-data) for details. Tabulated data includes questionnaires and sensor checklists:
+
+<table class="compact-table-no-vertical-lines"> 
+<thead>
+<tr>
+<th>Instrument</th>
+<th>Construct</th>
+<th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="sensors/questionnaire">Infant Sensor Questionnaire 1/2/3</a></td>
+<td>Motor Development, Regulation (Sleep/Wake) <i>(Day 1/2/3)</i></td>
+<td><code>nt_ch_sens__qtn_<span class="blue-text">{1|2|3}</span></code></td>
+</tr>
+<tr>
+<td>Biosensor Receipt / Setup</td>
+<td>Administrative</td>
+<td><code>nt_ch_sens_rcpt</code> / <code>nt_ch_sens_setup</code></td>
+</tr>
+</tbody>
+</table>
+
+### <i class="fas fa-id-card header-icon"></i> Participant Derived
+<table class="compact-table-no-vertical-lines" style="width: 100%;">
+<thead>
+<th>Instrument</th>
+<th>Construct</th>
+<th>Table / Folder Name</th>
+</thead>
+<tbody>
+<tr>
+  <td><a href="demo/static/">Static Table</a></td>
+  <td>Static derived participant information</td>
+  <td><code>par_gd_sdc</code></td>
+</tr>
+<tr>
+  <td><a href="demo/dynamic/">Dynamic Table</a></td>
+  <td>Dynamic derived participant information</td>
+  <td><code>ADD</code></td>
 </tr>
 </tbody>
 </table>
@@ -567,133 +692,10 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
-### <i class="fa-solid fa-file-waveform header-icon"></i> EEG / Tabular EEG
-The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Faces (FACE), Visual Evoked Potential (VEP), and Video Resting State (RS). File-based EEG data include raw BIDS and HBCD-MADE pipeline derivatives; see <a href="eeg/release-data/">Release Data</a> for details. Tabular EEG data includes tabulated pipeline derivatives, acquisition forms, and quality-control metrics:
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th>Table</th>
-<th>Construct</th>
-<th>Table Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td rowspan="2">HBCD-MADE tabulated derivatives</td>
-  <td>Processing Reports</td>
-  <td><code>eeg_made_task-<span class="blue-text">{FACE|MMN|RS|VEP}</span>_acq-eeg_preprocessingReport</code></td>
-</tr>
-<tr>
-  <td>Summary Statistics</td>
-  <td><code>eeg_made_task-<span class="blue-text">{FACE|MMN|VEP}</span>FACE_ERPSummaryStats</code></td>
-</tr>
-<tr>
-  <td>EEG Acquisition Checklists</td>
-  <td>Acquisition Prep</td>
-  <td><code>eeg_ch_chkl</code>, 
-  <code>eeg_ch_chkl_1</code>,
-  <code>eeg_ch_chkl_2</code></td>
-</tr>
-<tr>
-  <td><a href="eeg/qc">Quality Control Metrics</a></td>
-  <td>Quality Control</td>
-  <td><code>eeg_qc_task-<span class="blue-text">{FACE|MMN|RS|VEP}</span></code>
-  </td>
-</tr>
-</tbody>
-</table>
 
-### <i class="fa fa-brain header-icon"></i> Imaging / Tabular Imaging
-Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [Release Data](mri/release-data.md) for details. Tabular Imaging includes tabulated pipeline derivatives (<i class="fa-solid fa-gear simple-icon"></i>), questionnaire/form data, and quality-control metrics:
-<table class="compact-table-no-vertical-lines"> 
-<thead>
-<tr>
-  <th>Table</th>
-  <th>Construct</th>
-  <th>Table Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="mri/sfmri-processing/#bibsnet">BIBSNet</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
-  <td>Brain ROI Volumes</td>
-  <td><code>img_bibsnet_space-<span class="blue-text">{T1w|T2w}</span>_desc-aseg_volumes</code></td>
-</tr>
-<tr>
-  <td><a href="mri/qc/#brainswipes">BrainSwipes</a></td>
-  <td>Manual QC</td>
-  <td>
-    <code>img_brainswipes_xcpd_hash-d902942d+7a4c379b_<span class="blue-text">{T2w|bold}</span></code><br>
-    <code>img_brainswipes_xcpd_hash-364caa63+7a4c379b_<span class="blue-text">{T1w|bold}</span></code>
-  </td>
-</tr>
-<tr>
-  <td><a href="mri/sfmri-processing/#mriqc">MRIQC</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
-  <td>Raw BIDS QC Metrics</td>
-  <td><code>img_mriqc_<span class="blue-text">{T1w|T2w|bold}</span></code></td>
-</tr>
-<tr>
-  <td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms">MRI Summary Forms</a></td>
-  <td>Pre/Post-Scan Checklists</td>
-  <td><code>mri_ra_chkl_scan</code> / <code>mri_ra_chkl_data</code></td>
-</tr>
-<tr>
-  <td><a href="mri/mrs/#derivatives">OSPREY-BIDS</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
-  <td>Metabolites</td>
-  <td>
-    <code>img_osprey_<span class="blue-text">{HERCULES|unedited}</span>_*</code>
-    <a href="mri/tables/osprey.html">→ View full file list &amp; details</a>
-  </td>
-</tr>
-<tr>
-  <td><a href="mri/mri-forms/#pre-scan-questionnaire">Pre-Scan Questionnaire</a></td>
-  <td>Infant Sleep Environment</td>
-  <td><code>mri_ra_prep</code></td>
-</tr>
-<tr>
-  <td><a href="mri/dmri/#qsiprep">QSIPrep</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
-  <td>QSIPrep QC Metrics</td>
-  <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td> 
-</tr>
-<tr> 
-  <td><a href="mri/sfmri-processing/#xcp-d">XCP-D</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
-  <td>Morph/fMRI metrics</td>
-  <td>
-    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-mean_desc-<span class="blue-text">{METRIC}</span>_morph</code>
-    <br>
-    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-<span class="blue-text">{alff|coverage|reho}</span>_bold</code>
-    <br>
-    &nbsp;&nbsp;<a href="mri/tables/xcpd.html">→ View full file list &amp; details</a>
-  </td>
-</tr>
-</tbody>
-</table>
 
-### <i class="fa fa-microchip header-icon"></i> Novel Technologies & Wearable Sensors
-Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensors/#derivatives">HBCD-Motion</a> pipeline derivatives - see [Release Data](sensors/wearsensors.md#release-data) for details. Tabulated data includes questionnaires and sensor checklists:
 
-<table class="compact-table-no-vertical-lines"> 
-<thead>
-<tr>
-<th>Instrument</th>
-<th>Construct</th>
-<th>Table Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="sensors/questionnaire">Infant Sensor Questionnaire 1/2/3</a></td>
-<td>Motor Development, Regulation (Sleep/Wake) <i>(Day 1/2/3)</i></td>
-<td><code>nt_ch_sens__qtn_<span class="blue-text">{1|2|3}</span></code></td>
-</tr>
-<tr>
-<td>Biosensor Receipt / Setup</td>
-<td>Administrative</td>
-<td><code>nt_ch_sens_rcpt</code> / <code>nt_ch_sens_setup</code></td>
-</tr>
-</tbody>
-</table>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {

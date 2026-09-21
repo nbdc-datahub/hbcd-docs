@@ -179,7 +179,7 @@ hbcd/
 </div>
 <div class="collapsible-content">
 <p>
-Structural and functional MRI derivatives with an average BrainSwipes QC score < 0.5 were flagged for expert manual review. Session data with confirmed severe structural issues were excluded from the release, including structural/functional pipelines outlined <a href="../sfmri-processing/#multistep-processing-workflow">here</a>, Osprey (MRS), and qMRI-PostProc. Sessions flagged for functional issues ONLY (at least one severely failing BOLD run) were only removed from Infant fMRIPrep and XCP-D derivatives. </p>
+Structural and functional MRI derivatives with an average BrainSwipes QC score < 0.5 were flagged for expert manual review. Session data with confirmed severe structural issues were excluded from the release, including structural/functional pipelines outlined <a href="../derivatives-guide/#multistep-processing-workflow">here</a>, Osprey (MRS), and qMRI-PostProc. Sessions flagged for functional issues ONLY (at least one severely failing BOLD run) were only removed from Infant fMRIPrep and XCP-D derivatives. </p>
 <p><b>Note that V02 sessions processed using Infant FreeSurfer (<code>hash-364caa63</code>) for surface reconstruction should not be used for analysis - <a href="../fmri/#data-warning">see Data Warning</a>.</b></p>
 <p>
 The table below reports the percentage of session folders removed due to QC failures for each visit.
