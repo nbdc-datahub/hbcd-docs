@@ -1,11 +1,37 @@
 <style>
-.wy-nav-content {
-    width: 90% !important;
-    max-width: 90% !important;
-    flex-grow: 1 !important;
-}
 .blue-text {
   color: #2563eb;
+}
+
+.compact-table-no-vertical-lines {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+/* Consistent column widths across every section */
+.compact-table-no-vertical-lines th:nth-child(1),
+.compact-table-no-vertical-lines td:nth-child(1) {
+  width: 30%;
+}
+.compact-table-no-vertical-lines th:nth-child(2),
+.compact-table-no-vertical-lines td:nth-child(2) {
+  width: 35%;
+}
+.compact-table-no-vertical-lines th:nth-child(3),
+.compact-table-no-vertical-lines td:nth-child(3) {
+  width: 35%;
+}
+
+/* Keep long content from forcing columns wider */
+.compact-table-no-vertical-lines th,
+.compact-table-no-vertical-lines td {
+  box-sizing: border-box;
+  vertical-align: top;
+}
+/* Let long code/field names wrap rather than expanding the table */
+.compact-table-no-vertical-lines code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 /* INSTRUMENTS FILTER */
@@ -112,7 +138,7 @@ This page lists all instruments included in the current release, organized by do
 <div id="instr-empty" class="archive-empty">No matching instruments found.</div>
 
 ### <i class="fa fa-clipboard-list header-icon"></i> Administrative
-<table class="compact-table-no-vertical-lines" style="width: 100%;">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <th>Instrument</th>
 <th>Construct</th>
@@ -147,8 +173,9 @@ This page lists all instruments included in the current release, organized by do
       <a href="bcgi/ecpromis">ecPROMIS Caregiver-Child</a> 
       </td>
     <td>Caregiver-Child Interactions</td>
-    <td><code>mh_cg_pms__cc__inf</code> <span class="subtle">(&lt;1 year)</span> /
-    <code>mh_cg_pms__cc__1to5</code> <span class="subtle">(1-5 years)</span></td>
+    <td><code>mh_cg_pms__cc__inf</code> / <code>mh_cg_pms__cc__1to5</code> </td>
+        <!-- <td><code>mh_cg_pms__cc__inf</code> <span class="subtle">(&lt;1 year)</span> /
+    <code>mh_cg_pms__cc__1to5</code> <span class="subtle">(1-5 years)</span></td> -->
   </tr>
   <tr>
     <td><a href="bcgi/ecpromis-pr">ecPROMIS Peer</a></td>
@@ -173,9 +200,9 @@ This page lists all instruments included in the current release, organized by do
   <tr>
     <td><a href="bcgi/ibqr">IBQ-R (VSF)+BI</a></td>
     <td rowspan="2">
-      Surgency/Extraversion,<br>
-      Negative Affectivity,<br>
-      Effortful Control,<br>
+      Surgency/Extraversion,
+      Negative Affectivity,
+      Effortful Control,
       Behavioral Inhibition
       </td>
     <td><code>mh_cg_ibqr</code></td>
@@ -188,10 +215,11 @@ This page lists all instruments included in the current release, organized by do
     <td><a href="bcgi/maps-tl">MAPS-TL</a>
     </td>
     <td>Irritability</td>
-    <td>
+    <td><code>mh_cg_mapdb__inf</code> / <code>mh_cg_mapstl__tod</code></td>
+    <!-- <td>
     <code>mh_cg_mapdb__inf</code> <span class="subtle">(Infant)</span> /
     <code>mh_cg_mapstl__tod</code> <span class="subtle">(Toddler)</span>
-    </td>
+    </td> -->
   </tr>
   </tbody>
   </table>
@@ -213,7 +241,7 @@ This page lists all instruments included in the current release, organized by do
 <tr>
     <td><a href="biospec/nails">Maternal Nails</a></td>
     <td>Drug, Environmental Exposure</td>
-    <td><code>bio_bm_biosample_nails_results</code> / <code>bio_bm_biosample_nails_type</code></td>
+    <td><code>bio_bm_biosample_nails_<span class="blue-text">{results|type}</span></code></td>
 </tr>
 <tr>
     <td><a href="biospec/urine">Maternal Urine</a></td>
@@ -251,9 +279,7 @@ The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Face
 <tr>
   <td>EEG Acquisition Checklists</td>
   <td>Acquisition Prep</td>
-  <td><code>eeg_ch_chkl</code>, 
-  <code>eeg_ch_chkl_1</code>,
-  <code>eeg_ch_chkl_2</code></td>
+  <td><code>eeg_ch_<span class="blue-text">{chkl|chkl_1|chkl_2}</span></code></td>
 </tr>
 <tr>
   <td><a href="eeg/qc">Quality Control Metrics</a></td>
@@ -333,6 +359,14 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
 </table>
 
 ### <i class="fa-solid fa-puzzle-piece header-icon"></i> Neurocognition & Language
+
+<div class="table-legend">
+  <span class="legend-item">
+    <i class="fa-solid fa-language legend-icon"></i>
+    Spanish version available
+  </span>
+</div>
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -344,16 +378,14 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
 <tbody>
 <tr>
   <td><a href="neurocog/bayley-4">Bayley-4 Scales</a></td>
-  <td>Child Development (Cognitive, Language, and Motor)</td>
+  <td>Child Development (Cognitive, Language, Motor)</td>
   <td><code>ncl_ch_bayley</code></td>
 </tr>
 <tr>
-  <td><a href="neurocog/mbcdi">MacArthur-Bates CDI-I</a>
+  <td><a href="neurocog/mbcdi">MacArthur-Bates CDI-I</a><i class="fa-solid fa-language table-icon"></i>
 </td>
   <td>Language Development (Words & Gestures)</td>
-  <td><code>ncl_ch_cdiwgen</code> <span class="subtle">(English)</span> /
-  <code>ncl_ch_cdiwges</code> <span class="subtle">(Spanish)</span>  
-  </td>
+  <td><code>ncl_ch_cdiwgen</code> / <code>ncl_ch_cdiwges</code></td>
 </tr>
 <tr>
   <td><a href="neurocog/mlds">MLDS</a></td>
@@ -361,10 +393,10 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
   <td><code>ncl_ch_mlds</code></td>
 </tr>
 <tr>
-  <td><a href="neurocog/spm2">SPM-2</a>
+  <td><a href="neurocog/spm2">SPM-2</a> <span class="subtle">(Infant/Toddler)</span>
   </td>
   <td>Sensory Processing/Integration</td>
-  <td><code>ncl_cg_spm2__inf</code> <span class="subtle">(Infant)</span> / <code>ncl_cg_spm2__tod</code> <span class="subtle">(Toddler)</span></td>
+  <td><code>ncl_cg_spm2__inf</code> / <code>ncl_cg_spm2__tod</code></td>
 </tr>
 <tr>
   <td><a href="neurocog/vineland">Vineland</a></td>
@@ -389,8 +421,8 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
 </thead>
 <tbody>
 <tr>
-<td><a href="sensors/questionnaire">Infant Sensor Questionnaire 1/2/3</a></td>
-<td>Motor Development, Regulation (Sleep/Wake) <i>(Day 1/2/3)</i></td>
+<td><a href="sensors/questionnaire">Infant Sensor Questionnaires</a></td>
+<td>Motor Development, Regulation (Sleep/Wake)</td>
 <td><code>nt_ch_sens__qtn_<span class="blue-text">{1|2|3}</span></code></td>
 </tr>
 <tr>
@@ -593,9 +625,9 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
 </thead>
 <tbody>
 <tr>
-  <td><a href="SED/aces">ACES</a></td>
+  <td><a href="SED/aces">ACES</a>  <span class="subtle">(Adult/Pediatric)</td>
   <td>Adverse Childhood Experiences</td>
-  <td><code>sed_cg_ace</code> / <code>sed_cg_pedaces</code> <span class="subtle">(Pediatric ACES)</span>
+  <td><code>sed_cg_ace</code> / <code>sed_cg_pedaces</code></span>
   </td>
 </tr>  
 <tr>
@@ -661,7 +693,7 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
 <tr>
   <td><a href="SED/paces">PACEs</a></td>
   <td>Protective Factors</td>
-  <td><code>sed_bm_paces</code> <span class="subtle">(Current)</span> / <code>sed_cg_paces</code> <span class="subtle">(Retrospective &lt;18)</span><br>
+  <td><code>sed_bm_paces</code> / <code>sed_cg_paces</code><br>
   </td>
 </tr>
 <tr>
