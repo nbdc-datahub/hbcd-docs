@@ -7,7 +7,7 @@
 <tr><td>Construct</td><td>{The construct(s) that the measure assesses}</td></tr>
 <tr><td>Study Visits</td><td>{e.g. V01, V03, V05}</td></tr>
 <tr><td>Type</td><td>{e.g. Remote Questionnaire (Parent on Child; 4-8 min)}</td></tr>
-<td><b>Quality Control</b></td>
+<tr><td><b>Quality Control</b></td>
 <td>{Detail the QC procedures for this measure- scoring algorithm verification, data consistency checks, etc. May be provided as a list.}</td></tr>
 </tbody>
 </table>
@@ -77,7 +77,7 @@
 <li>Was the language altered from ‘parent’ to caregiver or alternate? </li>
 <li>Do any modifications made for HBCD impact data analyses or interpretation of results? If yes, please describe</li>
 <li>Does the Workgroup recommend measure changes be noted in future publications? If yes, are there particular details you would want users to be sure to mention?</li>
-<li>Other?</i>
+<li>Other?</li>
 
 </div>
 

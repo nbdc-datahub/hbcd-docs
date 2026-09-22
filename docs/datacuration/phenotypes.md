@@ -180,7 +180,7 @@ The following domains/instruments have additional unique shadow matrix values us
 <td>
   <ul>
     <li><i>"Child's DOB not reported or available for participant"</i> [<code>{gestational|mother}_age_delivery</code>]</li>
-    <li><i>"Missing Information From Ripple"</i> [<a href="../../instruments/demo/basicdemo/#acs-derived-variables">ACS-derived fields</a>]</li>
+    <li><i>"Missing Information From Ripple"</i> [<a href="../../instruments/demo/static/#race-ethnicity-acsadministrative-records">ACS-derived fields</a>]</li>
   </ul> 
 </td>
 </tr>

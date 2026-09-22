@@ -324,9 +324,9 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
 <tr>
   <td><a href="mri/qc/#brainswipes">BrainSwipes</a></td>
   <td>Manual QC</td>
-  <td>
-    <code>img_brainswipes_xcpd_hash-d902942d+7a4c379b_<span class="blue-text">{T2w|bold}</span></code><br>
-    <code>img_brainswipes_xcpd_hash-364caa63+7a4c379b_<span class="blue-text">{T1w|bold}</span></code>
+  <td><code>img_brainswipes_xcpd_hash-<span class="blue-text">{HASH}</span>_<span class="blue-text">{T1w/T2w|bold}</span></code><br>
+    <!-- <code>img_brainswipes_xcpd_hash-d902942d+7a4c379b_<span class="blue-text">{T2w|bold}</span></code><br>
+    <code>img_brainswipes_xcpd_hash-364caa63+7a4c379b_<span class="blue-text">{T1w|bold}</span></code> -->
   </td>
 </tr>
 <tr>
@@ -344,7 +344,7 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
   <td>Metabolites</td>
   <td>
     <code>img_osprey_<span class="blue-text">{HERCULES|unedited}</span>_*</code>
-    <a href="mri/tables/osprey.html">→ View full file list &amp; details</a>
+    <a href="mri/tables/osprey.html">→ View full file list</a>
   </td>
 </tr>
 <tr>
@@ -361,11 +361,7 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
   <td><a href="mri/fmri/#xcp-d">XCP-D</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
   <td>Morph/fMRI metrics</td>
   <td>
-    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-mean_desc-<span class="blue-text">{METRIC}</span>_morph</code>
-    <br>
-    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-<span class="blue-text">{alff|coverage|reho}</span>_bold</code>
-    <br>
-    &nbsp;&nbsp;<a href="mri/tables/xcpd.html">→ View full file list &amp; details</a>
+    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-*</code> <a href="mri/tables/xcpd.html">→ View full file list</a>
   </td>
 </tr>
 </tbody>

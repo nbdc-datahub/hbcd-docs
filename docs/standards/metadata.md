@@ -441,13 +441,14 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   <span>lang</span>
   <span>location</span>
   </div>
+</td>
 </tr>
 <tr>
   <td>derived item</td>
   <td>
       Derived from original participant data, either directly (e.g., <code>sex</code> from administrative records) or by combining variables (e.g., race and ethnicity)
       <div class="dd-inline-list">
-      See <a href="../../instruments/demo/basicdemo/">Basic Demographics</a> for examples
+      See <a href="../../instruments/demo/static/">Basic Demographics</a> for examples
       </div>
   </td>
 </tr>

@@ -136,7 +136,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The <b>source</b> element in the <a href="../../standards/metadata/">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../standards/naming-conventions">Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../datacuration/phenotypes/#study-design-logic-child-centric-data-structure">here</a>.</p>
+<p>The <b>source</b> element in the <a href="../../standards/metadata/">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../standards/metadata/#naming-conventions">Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../datacuration/phenotypes/#study-design-logic-child-centric-data-structure">here</a>.</p>
 </div>
 
 <div id="faq-age" class="banner" onclick="toggleCollapse(this)">

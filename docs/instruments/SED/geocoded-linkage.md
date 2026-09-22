@@ -102,21 +102,17 @@
   target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 </tr>
 <tr>
-</tr>
-<tr>
   <td>Urban/Rural Area (Census)</td>
   <td><code>urban_urbanclassification</code></td>
   <td><a href="../GLED-measures/#urbanrural-area-census"
   target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 </tr>
 <tr>
-<tr>
   <td>Walkability (EPA)</td>
   <td><code>walk_idx</code></td>
   <td><a href="../GLED-measures/#walkability-epa"
   target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 </tr>
-<tr>
 <!-- Community Health Burden -->
 <tr>
   <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>COMMUNITY HEALTH BURDEN</b></td>
@@ -127,7 +123,6 @@
   <td><a href="../GLED-measures/#behavioral-health-measures-places"
   target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 </tr>
-<tr>
 <!-- Natural Space and Satellite -->
 <tr>
   <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>NATURAL SPACE & SATELLITE</b></td>
@@ -138,17 +133,16 @@
   <td><a href="../GLED-measures/#measure-of-land-cover-and-tree-canopy-nlcd"
   target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 </tr>
-<tr>
 <!-- Neighborhood Social Factors -->
 <tr>
   <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>NEIGHBORHOOD SOCIAL FACTORS</b></td>
+</tr>
 <tr>
   <td>Census Return (Anomie/Disenfranchisement/Social Capital)</td>
   <td><code>censusret_*</code></td>
   <td><a href="../GLED-measures/#census-return"
   target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 </tr>
-<tr>
 <tr>
   <td>Number of Jobs and Job Density (LODES)</td>
   <td><code>lodes_job*_{count|density}</code></td>
@@ -173,7 +167,7 @@
 <!-- Neighborhood Composite Measures -->
 <tr>
   <td colspan="3" style="font-size: 0.9em; line-height: 1.0; color: #00819bff; background-color: #ebf8fa57;"><b>NEIGHBORHOOD COMPOSITE MEASURES</b></td>
-<tr>
+</tr>
 <tr>
   <td>Area Deprivation Index (ADI)</td>
   <td><code>adi_national_prcnt</code></td>

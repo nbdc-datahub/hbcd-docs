@@ -20,7 +20,7 @@ MRI and MRS release data includes:
 
 - **[Raw BIDS](#raw-mr-bids)**: Raw imaging/spectroscopy data in the standardized BIDS format
 - **[Derivatives](#derivatives)**: Processed, analysis-ready imaging/spectroscopy pipeline outputs
-- **[Tabular Imaging](../index.md#imaging-tabular-imaging)**: Questionnaires, technician forms from scan session, and tabulated pipeline derivatives
+- **[Tabular Imaging](../index.md#imaging)**: Questionnaires, technician forms from scan session, and tabulated pipeline derivatives
 
 ## Raw MR BIDS
 

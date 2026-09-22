@@ -332,7 +332,7 @@ Release data now include the addition of the following instruments:
 </tr>
 
 <tr class="table-group-row">
-  <td colspan="3">Social & Environmental Determinants/td>
+  <td colspan="3">Social & Environmental Determinants</td>
 </tr>
 <tr>
 <td>C-PACEs</td>

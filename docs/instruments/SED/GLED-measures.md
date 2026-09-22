@@ -29,6 +29,7 @@ The Neighborhood Atlas hosts the Area Deprivation Index (ADI), a scientifically 
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -53,6 +54,7 @@ The Census Bureau's Planning Database (PDB) contains select operational, housing
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -280,6 +282,7 @@ Vehicle density was calculated using data from the 2019-2023 American Community 
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -326,6 +329,7 @@ Number of jobs and job density (number of jobs per square mile of land area) are
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -443,6 +447,7 @@ The Minority Health Index is a data resource developed jointly by the Centers fo
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -558,6 +563,7 @@ In addition, three factors associated with neighborhood sociodemographics and st
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -616,6 +622,7 @@ The dataset describes：
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -666,6 +673,7 @@ Measures from the PLACES dataset are available for participants’ addresses at 
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -796,6 +804,7 @@ This dataset contains measures of the number and density of select types of civi
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -861,6 +870,7 @@ In order to approximate cost of living that may be associated with housing, the 
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -899,6 +909,7 @@ This data is part of the Smart Location Database for the year 2021, which is a n
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -924,6 +935,7 @@ The National Walkability Index is a nationwide geographic data resource that ran
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -1010,6 +1022,7 @@ Measure includes senior centers, youth centers, food banks, job training program
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -1065,6 +1078,7 @@ SVI data for the year 2022 indicates the relative vulnerability of every U.S. ce
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -1225,6 +1239,7 @@ For the 2020 Census, an urban area will comprise a densely settled core of censu
 <tr>
 <th>Variable Name</th>
 <th>Description</th>
+</tr>
 </thead>
 <tbody>
 <tr>

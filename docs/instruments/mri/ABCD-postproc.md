@@ -35,7 +35,7 @@ modelarrayio to-modelarray \
 
 ### QSIRecon ModelArray
 
-QSIRecon-ModelArray outputs include cohort-level HDF5 arrays aggregating diffusion MRI scalar maps across QSIRecon reconstruction methods, including DIPY, DSI Studio, TORTOISE, and wmNODDI (see [QSIRecon](abcc_qsiprep-qsirecon.qmd#qsirecon) for details).
+QSIRecon-ModelArray outputs include cohort-level HDF5 arrays aggregating diffusion MRI scalar maps across QSIRecon reconstruction methods, including DIPY, DSI Studio, TORTOISE, and wmNODDI (see QSIRecon for details).
 
 ```default
 abcd/
@@ -173,7 +173,7 @@ XCP-D-ModelArray outputs include cohort-level HDF5 arrays aggregating structural
 
   - **[1]** Surface morphometry (curvature, sulcal depth, cortical thickness)  
   - **[2]** Functional maps (ALFF, ReHo)  
-  - **[3]** Resting-state functional connectivity.`<ATLAS>` = `Gordon`, `HCP`, `MIDB` ([see details](abcc_xcpd.qmd#parcellated-outputs))
+  - **[3]** Resting-state functional connectivity.`<ATLAS>` = `Gordon`, `HCP`, `MIDB`
 
 ```default
 abcd/
@@ -192,17 +192,6 @@ abcd/
         ├── xcp_d_v0.13.0_task-rest_seg-<ATLAS>_param-pearsoncorrelation.h5
         └── xcp_d_v0.13.0_task-rest_seg-<ATLAS>_param-pearsoncorrelation.csv
 ```
-
-<!-- `<PARAM>` values for surface morphometry and functional maps:
-
-- `alff` — Amplitude of Low-Frequency Fluctuations (fsLR 91k)
-- `reho` — Regional Homogeneity (fsLR 91k) -->
-<!-- - `curv` — Cortical curvature
-- `sulc` — Sulcal depth
-- `thickness` — Cortical thickness -->
-
-<!-- `<ATLAS>` specifies the parcellation atlas used for parcellated functional connectivity matrices (see [XCP-D Parcellated Outputs](abcc_xcpd.qmd#parcellated-outputs)) and include: `Gordon`, `MIDB`, `HCP` -->
-
 ---
 
 ## ReproTM 

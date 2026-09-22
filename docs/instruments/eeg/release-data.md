@@ -11,7 +11,7 @@ EEG release data include the following:
 
 - **[Raw BIDS](#raw-eeg-bids)**: Raw imaging/spectroscopy data in the standardized BIDS format under `eeg/`
 - **[HBCD-MADE pipeline derivatives](#hbcd-made-derivatives)**: Processed, analysis-ready pipeline outputs
-- **[Tabular EEG](../index.md#eeg-tabular-eeg)**: Questionnaires/forms and tabulated HBCD-MADE derivatives
+- **[Tabular EEG](../index.md#eeg)**: Questionnaires/forms and tabulated HBCD-MADE derivatives
 
 ---
 

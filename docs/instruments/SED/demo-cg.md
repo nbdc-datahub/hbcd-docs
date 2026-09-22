@@ -10,7 +10,7 @@
 <p>
 <div class="banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See <a href="../../demo/basicdemo/">Basic Demographics</a> for additional demographics variables derived from HBCD Demographics and administrative records collected during study enrolment/screening.</span>
+  <span class="text">See <a href="../demo/static/">Basic Demographics</a> for additional demographics variables derived from HBCD Demographics and administrative records collected during study enrolment/screening.</span>
 </div>
 </p>
 
@@ -73,7 +73,6 @@
         <td><a href="https://www.phenxtoolkit.org/protocols/view/11201">PhenX</a></td>
         <td>Hamilton, et al. (2011)</td>
     </tr>
-    <tr>
     <tr>
       <td>Race/Ethnicity</td>
       <td>OMB</td>
@@ -201,11 +200,3 @@
 
 {{ scoring(instruments.demographics) }}
 {{ references(instruments.demographics) }}
-
-
-<!-- <img src="https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/resources/other-parent.png" alt="Demographics of baby's other biological parent form item screenshot" width="600" height="auto" class="center"> -->
-
-<!-- 
-Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. The **HBCD Study demographics survey at V01** was designed to gather comprehensive information on socioeconomic status and various demographic factors. Its primary purpose is to capture data on race, ethnicity, nativity, income, education, and occupation, as well as relationship status, primary residence, and household composition of the parent carrying the child, and some basic information on the other biological parent. Please see [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the baseline HBCD Demographics survey.
-
-**At subsequent times of assessment (i.e., V04+)**, a selected set of variables that can change over time were re-administered, and several new questions were added (i.e., disability status and access to reliable transportation). Of note, from V04 onward, there is a separate <a href="../demo-ch">Child Demographics</a> form that includes child-focused information including child race and ethnicity, relationship to the child/custody, household roster, type of residence, and household income. In addition, from V04 onward, data on caregiver work/employment characteristics are in a separate form (see <a href="../current-employment">Current Employment</a>). -->
