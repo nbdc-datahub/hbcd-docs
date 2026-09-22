@@ -36,18 +36,6 @@
   width: 55%;
 }
 
-/* Keep long content from forcing columns wider */
-.compact-table-no-vertical-lines th,
-.compact-table-no-vertical-lines td {
-  box-sizing: border-box;
-  vertical-align: top;
-}
-/* Let long code/field names wrap rather than expanding the table */
-.compact-table-no-vertical-lines code {
-  overflow-wrap: anywhere;
-  word-break: break-word;
-}
-
 /* INSTRUMENTS FILTER */
 .archive-controls {
   margin: 1.5rem 0 1rem;
@@ -305,7 +293,15 @@ The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Face
 
 
 ### <i class="fa fa-brain header-icon"></i> Imaging
-Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [Release Data](mri/release-data.md) for details. Tabular Imaging includes tabulated pipeline derivatives (<i class="fa-solid fa-gear simple-icon"></i>), questionnaire/form data, and quality-control metrics:
+Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [Release Data](mri/release-data.md) for details. Tabular Imaging includes tabulated pipeline derivatives, questionnaire/form data, and quality-control metrics:
+
+<div class="table-legend">
+  <span class="legend-item">
+    <i class="fa-solid fa-gear legend-icon"></i>
+    Tabulated pipeline derivatives
+  </span>
+</div>
+
 <table class="compact-table-no-vertical-lines wide-name-col"> 
 <thead>
 <tr>
@@ -491,10 +487,10 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
   <td><code>ph_cg_bisq</code></td>
 </tr>
 <tr>
-  <td><a href="physhealth/ecpromis-pags">ecPROMIS Physical Activity/Greenspace</a></td>
-  <td>Physical Activity</td>
+  <td><a href="physhealth/ecpromis-pags">ecPROMIS Physical Activity</a></td>
+  <td>Physical Activity / Greenspace</td>
   <td><code>ph_cg_pms__pags</code></td>
-</tr>
+</tr> 
 <tr>
   <td><a href="physhealth/ecpromis-sleep">ecPROMIS Sleep</a></td>
   <td>Sleep</td>
