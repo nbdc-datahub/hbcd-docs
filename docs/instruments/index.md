@@ -152,11 +152,14 @@ This page lists all instruments included in the current release, organized by do
 <div id="instr-empty" class="archive-empty">No matching instruments found.</div>
 
 ### <i class="fa fa-clipboard-list header-icon"></i> Administrative
+
 <table class="compact-table-no-vertical-lines">
 <thead>
+<tr>
 <th>Instrument</th>
 <th>Construct</th>
 <th>Table / Folder Name</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -242,9 +245,11 @@ This page lists all instruments included in the current release, organized by do
 ### <i class="fa fa-vial header-icon"></i> Biospecimen & Omics
 <table class="compact-table-no-vertical-lines">
 <thead>
+<tr>
 <th>Instrument</th>
 <th>Construct</th>
 <th>Table / Folder Name</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -450,9 +455,11 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
 ### <i class="fas fa-id-card header-icon"></i> Participant Derived
 <table class="compact-table-no-vertical-lines" style="width: 100%;">
 <thead>
+<tr>
 <th>Instrument</th>
 <th>Construct</th>
 <th>Table / Folder Name</th>
+</tr>
 </thead>
 <tbody>
 <tr>
