@@ -1,16 +1,6 @@
 # Tabulated Data
 
-Tabulated data contain participant-level summaries for the majority of HBCD behavioral/phenotypical instruments (as well as [tabulated pipeline derivatives](overview.md#tabulated-pipeline-derivatives)). Tables follow the BIDS organizational structure so data from different sources can be linked by participant ID and visit number. Files are stored in `rawdata/phenotype/`:
-
-<pre class="folder-tree">
-hbcd/
-└── rawdata/ 
-    └── phenotype/ 
-        ├── sed_basic_demographics.*        <span class="hashtag"># Basic Demographics</span>
-        ├── par_visit_data.*                <span class="hashtag"># Visit Level Data</span>
-        ├── bio_biosample_<span class="var">{nails|urine}</span>.*   <span class="hashtag"># Toxicology</span>
-        └── <span class="var">[instrument_name]</span>.*             <span class="hashtag"># Instrument Data</span>
-</pre>
+Tabulated data contain participant-level summaries for the majority of HBCD behavioral/phenotypical instruments (as well as [tabulated pipeline derivatives](overview.md#tabulated-pipeline-derivatives)). Tables follow the BIDS organizational structure so data from different sources can be linked by participant ID and visit number. 
 
 ## File Formats
 
@@ -172,25 +162,6 @@ The following domains/instruments have additional unique shadow matrix values us
 <td>
   <ul>
     <li><i>"Please refer to corresponding categorical field for more details"</i></li>
-  </ul>
-</td>
-</tr>
-<tr>
-<td><strong>Basic Demographics</strong></td>
-<td>
-  <ul>
-    <li><i>"Child's DOB not reported or available for participant"</i> [<code>{gestational|mother}_age_delivery</code>]</li>
-    <li><i>"Missing Information From Ripple"</i> [<a href="../../instruments/demo/static/#race-ethnicity-acsadministrative-records">ACS-derived fields</a>]</li>
-  </ul> 
-</td>
-</tr>
-<tr>
-<td><strong>Visit Level Data</strong></td>
-<td>
-  <ul>
-    <li><i>"Data not available for participants at this timepoint"</i></li>
-    <li><i>"No candidate age for V01"</i> [<code>candidate_age</code>]</li>
-    <li><i>"Gestational Age at Administration is only at V01 and not calculated for V02 onwards"</i> [<code>gestational_age</code>]</li>
   </ul>
 </td>
 </tr>

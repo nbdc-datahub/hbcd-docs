@@ -582,14 +582,8 @@ e.g., <code>mh_cg_ibqr_<span style="color: teal;"><b>beh</b></span>_001</code> =
 
 ### Exceptions
 
-Some table/variable names deviate from the standard naming conventions and will be standardized in the future. Main exceptions include the following. See [Study Instruments](../instruments/index.md) for more details about each domain. This includes, for example, Demographics, which are derived data tables with unconventional table naming (`sed_basic_demographics` and `par_visit_data`).      
-[Tabulated derivatives](../datacuration/overview.md#tabulated-pipeline-derivatives) generated from processed imaging and EEG data also follow slightly different conventions (where `derivative` corresponds to the basename of the source derivative files):
-<div class="naming-pattern"><code>domain_pipeline_derivative</code></div>
+Some table/variable names deviate from the standard naming conventions. One notable example is [tabulated derivatives](../datacuration/overview.md#tabulated-pipeline-derivatives) generated from processed imaging and EEG data. These tables are named based on the pattern `domain_pipeline_derivative`, where `derivative` corresponds to the basename of the source derivative files. For example:       
 
-For example, the BIBSNet tabulated file:
-<code>img_bibsnet<span style="color: teal;">_space-T1w_desc-aseg_volumes</span>.tsv</code>    
-is sourced from:
-<code>sub-[ID]_ses-[V0X]<span style="color: teal;">_space-T1w_desc-aseg_volumes</span>.tsv</code>
-
-
+- The tabulated BIBSNet file: <code>img_bibsnet<span style="color: teal;">_space-T1w_desc-aseg_volumes</span>.tsv</code>
+- Is sourced from: <code>sub-[ID]_ses-[V0X]<span style="color: teal;">_space-T1w_desc-aseg_volumes</span>.tsv</code>
 
