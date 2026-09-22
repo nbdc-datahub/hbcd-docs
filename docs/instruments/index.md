@@ -22,6 +22,20 @@
   width: 35%;
 }
 
+/* Wider Table Name column for sections with long/multiple codes (EEG, Imaging) */
+.compact-table-no-vertical-lines.wide-name-col th:nth-child(1),
+.compact-table-no-vertical-lines.wide-name-col td:nth-child(1) {
+  width: 22%;
+}
+.compact-table-no-vertical-lines.wide-name-col th:nth-child(2),
+.compact-table-no-vertical-lines.wide-name-col td:nth-child(2) {
+  width: 23%;
+}
+.compact-table-no-vertical-lines.wide-name-col th:nth-child(3),
+.compact-table-no-vertical-lines.wide-name-col td:nth-child(3) {
+  width: 55%;
+}
+
 /* Keep long content from forcing columns wider */
 .compact-table-no-vertical-lines th,
 .compact-table-no-vertical-lines td {
@@ -258,7 +272,7 @@ This page lists all instruments included in the current release, organized by do
 
 ### <i class="fa-solid fa-file-waveform header-icon"></i> EEG
 The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Faces (FACE), Visual Evoked Potential (VEP), and Video Resting State (RS). File-based EEG data include raw BIDS and HBCD-MADE pipeline derivatives; see <a href="eeg/release-data/">Release Data</a> for details. Tabular EEG data includes tabulated pipeline derivatives, acquisition forms, and quality-control metrics:
-<table class="compact-table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines wide-name-col">
 <thead>
 <tr>
 <th>Table</th>
@@ -293,7 +307,7 @@ The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Face
 
 ### <i class="fa fa-brain header-icon"></i> Imaging
 Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [Release Data](mri/release-data.md) for details. Tabular Imaging includes tabulated pipeline derivatives (<i class="fa-solid fa-gear simple-icon"></i>), questionnaire/form data, and quality-control metrics:
-<table class="compact-table-no-vertical-lines"> 
+<table class="compact-table-no-vertical-lines wide-name-col"> 
 <thead>
 <tr>
   <th>Table</th>
