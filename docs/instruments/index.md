@@ -187,12 +187,10 @@ This page lists all instruments included in the current release, organized by do
   </tr>
   <tr>
     <td>
-      <a href="bcgi/ecpromis">ecPROMIS Caregiver-Child</a> 
+      <a href="bcgi/ecpromis">ecPROMIS Caregiver-Child</a> <span class="subtle">(&lt;1/1-5 yrs)</span>
       </td>
     <td>Caregiver-Child Interactions</td>
     <td><code>mh_cg_pms__cc__inf</code> / <code>mh_cg_pms__cc__1to5</code> </td>
-        <!-- <td><code>mh_cg_pms__cc__inf</code> <span class="subtle">(&lt;1 year)</span> /
-    <code>mh_cg_pms__cc__1to5</code> <span class="subtle">(1-5 years)</span></td> -->
   </tr>
   <tr>
     <td><a href="bcgi/ecpromis-pr">ecPROMIS Peer</a></td>
