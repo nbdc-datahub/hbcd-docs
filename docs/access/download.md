@@ -16,6 +16,7 @@ The platforms below allow users to explore, query, and download HBCD Study data.
 
 <table class="table-no-vertical-lines">
 <thead>
+<tr>
 <th>
 </th>
 <th style="text-align: center; width: 40%;">
@@ -39,6 +40,7 @@ The platforms below allow users to explore, query, and download HBCD Study data.
     </div>
     Data Exploration and Analysis Portal
 </th>
+</tr>
 </thead>
 <tbody>
 <tr><td><b>Access portal</b></td><td><a href="https://nbdc-datashare.lassoinformatics.com/">Open portal</a></td><td><a href="https://hbcd.deapscience.com/#/home">Open portal</a></td></tr>

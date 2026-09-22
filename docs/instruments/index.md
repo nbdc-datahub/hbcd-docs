@@ -227,14 +227,10 @@ This page lists all instruments included in the current release, organized by do
     <td><code>mh_cg_ecbq</code></td>
   </tr>
   <tr>
-    <td><a href="bcgi/maps-tl">MAPS-TL</a>
+    <td><a href="bcgi/maps-tl">MAPS-TL</a> <span class="subtle">(Infant/Toddler)</span>
     </td>
     <td>Irritability</td>
     <td><code>mh_cg_mapdb__inf</code> / <code>mh_cg_mapstl__tod</code></td>
-    <!-- <td>
-    <code>mh_cg_mapdb__inf</code> <span class="subtle">(Infant)</span> /
-    <code>mh_cg_mapstl__tod</code> <span class="subtle">(Toddler)</span>
-    </td> -->
   </tr>
   </tbody>
   </table>
@@ -928,18 +924,3 @@ document.addEventListener("DOMContentLoaded", function () {
   applyFilters();
 });
 </script>
-
-
-
-
-
-
-
-
-
-
-
-<!-- ##### Data types included in this section
-
-The following study domains are the **source of all file-based raw BIDS and processed derivatives** (see full list of processing pipelines <a href="../standards/processing/">here</a>) data provided in the release. There are also some tabulated data, including <a href="../datacuration/overview/#tabulated-pipeline-derivatives">tabulated pipeline derivatives</a>, participant questionnaires, and session/acquisition forms filled out by technicians. See <a href="../datacuration/overview/">Data Structure Overview</a> for an overview of different data types.
- -->

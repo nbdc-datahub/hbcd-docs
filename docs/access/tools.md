@@ -76,5 +76,6 @@ ReproSchema maintains transparent, detailed version histories so researchers can
 <td>On average, how many hours of sleep do you get in a 24-hour period, including naps?</td>
 <td>Same as Release 2.0</td> 
 <td>2.0 → 3.0: Adding naps changes the construct, affecting cross-release comparability</td>
+</tr>
 </tbody> </table> 
 
