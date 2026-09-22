@@ -127,12 +127,12 @@ study_nav:
   resources: null
   measure: Study Navigator Contact Form
   construct: Recruitment/Retention
-erica_r3:
+erica:
   status: Not started
-  alert1: 'The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables—especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers—to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
+  alert1: |-
+    The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables—especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers—to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
 
-
-    The ERICA assesses variations in child behavior, parenting, and the caregiver-child relationship and should be interpreted within the context of the child''s age and developmental stage. This is not a clinical or diagnostic instrument.'
+    The ERICA assesses variations in child behavior, parenting, and the caregiver-child relationship and should be interpreted within the context of the child's age and developmental stage. This is not a clinical or diagnostic instrument.
   hbcd_mods1: null
   duration: 20-30 min
   hbcd_mods2: null
@@ -141,78 +141,65 @@ erica_r3:
   warning4: The code for "caregiver irritable behavior" in Data Release 2.1 has a low base rate because few caregivers exhibited elevated irritability. We recommend dichotomizing (0 = 0 and >0 = 1) for analysis.
   alert2: null
   assessment_type: Questionnaire
-  table_name: 'mh_cg_erica_3_9m
-
-    mh_cg_erica_rel_3_9m'
+  table_name: |-
+    mh_cg_erica_3_9m
+    mh_cg_erica_rel_3_9m
   warning2: Data Release 2.1 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month). Coded data for a subset of participants may be missing from this data release for various reasons. These data will be added in future releases.
   warning2_title: General
-  references: 'Krogh-Jespersen, S., MacNeill, L. A., Anderson, E. L., Stroup, H. E., Harriott, E. M., Gut, E., Blum, A., Fareedi, E., Fredian, K. M., Wert, S. L., Wakschlag, L. S., & Norton, E. S. (2021). Disruption leads to methodological and analytic innovation in developmental sciences: Recommendations for remote administration and dealing with messy data. _Frontiers in Psychology_, 12, 732312. <https://doi.org/10.3389/fpsyg.2021.732312>
-
-    Edwards, R. C., Planalp, E. M., Bosquet Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interactions Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child interactions in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69(101422), 101422.<https://doi.org/10.1016/j.dcn.2024.101422>'
+  references: |-
+    Krogh-Jespersen, S., MacNeill, L. A., Anderson, E. L., Stroup, H. E., Harriott, E. M., Gut, E., Blum, A., Fareedi, E., Fredian, K. M., Wert, S. L., Wakschlag, L. S., & Norton, E. S. (2021). Disruption leads to methodological and analytic innovation in developmental sciences: Recommendations for remote administration and dealing with messy data. _Frontiers in Psychology_, 12, 732312. <https://doi.org/10.3389/fpsyg.2021.732312>
+    Edwards, R. C., Planalp, E. M., Bosquet Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interactions Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child interactions in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69(101422), 101422.<https://doi.org/10.1016/j.dcn.2024.101422>
   respondent_category: Parent on Child
   admin_notes: This page includes a hard-coded table that cannot be updated via this form - contact Luci to update table if needed
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/erica/
   visits: V03
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
     label: View
-    url: null
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/erica/
   acronym: ERICA
   resource1_description: 'ERICA-inter-rater-reliability-2.1.csv file used to parse to create table under Coding Reliability Stats: https://docs.hbcdstudy.org/latest/instruments/bcgi/erica/#coding-reliability-statistics'
   warning3: The ERICA was administered in Spanish and English. The language of administration (i.e., language in which RAs delivered the instructions) does not always correspond with the language spoken by the caregiver/child during the activities. All videos in which the dyad speaks Spanish during the activities were coded by fully Spanish-English bilingual coders.
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec1WAh2tmcUCsPLU
-  warning1: 'Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (`mh_cg_erica_rel_3_9m`) into the primary coding data (`mh_cg_erica_3_9m`). **Failure to integrate these data correctly prior to analysis will result in incorrect results.** In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release. Download the following files:
-
+  warning1: |-
+    Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (`mh_cg_erica_rel_3_9m`) into the primary coding data (`mh_cg_erica_3_9m`). **Failure to integrate these data correctly prior to analysis will result in incorrect results.** In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release. Download the following files:
 
     - [Integration Instructions](https://docs.hbcdstudy.org/latest/resources/ERICA_2.1_Integrated_Analytic_Data_INSTRUCTIONS.pdf)
-
     - [ERICA_2.1_Analytic_REMOVALS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_Analytic_REMOVALS.csv) (in [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/)- DUC access required)
-
-    - [ERICA_2.1_DataError_EXCLUSIONS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv) (in [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com)- DUC access required)'
+    - [ERICA_2.1_DataError_EXCLUSIONS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv) (in [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com)- DUC access required)
   description: "The Early Regulation in Context Assessment (**ERICA**) is a standardized observational paradigm that is adapted from the well-validated Disruptive Behavior Diagnostic Observation Schedule (DB-DOS) ([Krogh-Jespersen et al. 2022](https://doi.org/10.3389/fpsyg.2021.732312)). The ERICA assesses early child regulation in the context of the caregiver-child relationship via a series of five brief, developmentally appropriate activities that “press” for regulation within the dyad (e.g., frustration, engagement, enjoyment). The ERICA is coded using a one-pass, global coding system adapted for HBCD. Seven codes are organized across child, caregiver, and dyadic domains:\n\n- **Child:** Positive affect, Irritability, Social engagement\n- **Caregiver**: Responsive behavior, Irritable behavior, Directive behavior\n- **Dyadic**: Caregiver–child connectedness \n\nCodes are scored on a 4-point scale (0-3), reflecting the frequency, intensity, and duration of observed behaviors across the\
     \ paradigm, with higher scores indicating higher levels of observed behavior. See [Edwards et al. (2024)](https://doi.org/10.1016/j.dcn.2024.101422) for additional details on the ERICA paradigm and adaptation for HBCD."
-  slug: early-regulation-in-context-assessment-r3-
   domain: Behavior & Caregiver-Child Interactions
-  release: '3.0'
+  release: 3.0 (new instrument/info required)
   qc: "**ERICA Site-Level Administration**\n\n- HBCD study staff were trained and certified by experienced ERICA administrators to ensure standardized administration procedures.\n- Ongoing administration quality was monitored through video review of at least 10% of administrations at each site, with additional reviews conducted for sites that did not meet fidelity benchmarks.\n- Completion rates were monitored, and site-level data on administration was reviewed for potential QC issues (e.g., frequent protocol interruptions or tech issues), with results informing additional site-level training and follow-up provided as needed. \n\n**Centralized Coding**\n\n- See [Centralized Coding of ERICA Videos](#centralized-coding-of-erica-videos) below for QC details"
   administration: In-person
   Form:
     label: Form Link
     url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec1WAh2tmcUCsPLU
   resource1_url: https://github.com/nbdc-datahub/hbcd-docs/blob/main/docs/resources/tables/ERICA-inter-rater-reliability-2.1.csv
-  scoring: 'Coders rate each construct at the activity level on a 4-point scale (None = 0, Low = 1, Medium = 2, High = 3). Activity-level ratings are then averaged across all activities to generate a continuous global score, ranging from 0-3, with higher scores reflecting higher levels of observed behavior.
+  scoring: |-
+    Coders rate each construct at the activity level on a 4-point scale (None = 0, Low = 1, Medium = 2, High = 3). Activity-level ratings are then averaged across all activities to generate a continuous global score, ranging from 0-3, with higher scores reflecting higher levels of observed behavior.
 
-
-    Modifiers (-1, +1, and +2) may be used with three codes (_child irritability, caregiver responsive behavior, and dyadic connectedness_) to capture important qualitative distinctions. For example, for child irritability, a **+1** is added at the activity level when a child is highly irritable throughout an entire activity, with no recovery or re-engagement and a **+2** is added if a child becomes intensely dysregulated during an activity (e.g., intense crying with breath holding, gagging, other indications of intense dysregulation). When used, modifiers are included in the sum for the global scores. For caregiver responsive behavior, a **-1** is added at the activity level when a caregiver does not responds at all to intense dysregulation in a child, is delayed in responding to child distress and this results in the child becoming intensely dysregulated, or is repeatedly doing things that are dysregulating to the child, resulting in the child becoming more and more distressed. For dyadic
-    connectedness, a **-1** is added at the activity level, when a child is distressed through much of the activity without any ability to be soothed by the caregiver and distress is not resolved by the end of the activity or during the immediate re-engagement period when transitioning to the next activity.
-
+    Modifiers (-1, +1, and +2) may be used with three codes (_child irritability, caregiver responsive behavior, and dyadic connectedness_) to capture important qualitative distinctions. For example, for child irritability, a **+1** is added at the activity level when a child is highly irritable throughout an entire activity, with no recovery or re-engagement and a **+2** is added if a child becomes intensely dysregulated during an activity (e.g., intense crying with breath holding, gagging, other indications of intense dysregulation). When used, modifiers are included in the sum for the global scores. For caregiver responsive behavior, a **-1** is added at the activity level when a caregiver does not responds at all to intense dysregulation in a child, is delayed in responding to child distress and this results in the child becoming intensely dysregulated, or is repeatedly doing things that are dysregulating to the child, resulting in the child becoming more and more distressed. For dyadic connectedness, a **-1** is added at the activity level, when a child is distressed through much of the activity without any ability to be soothed by the caregiver and distress is not resolved by the end of the activity or during the immediate re-engagement period when transitioning to the next activity.
 
     Modifiers are intended to weight the global score toward the higher or lower end of the 0-3 scale. When used, they are included in the sum for the global scores, however the scale is capped at 0-3, meaning the highest score possible is a 3.0, the lowest score possible is a 0. In cases where the use of modifiers results in global raw scores >3.0, the value is converted to a 3 prior to analysis; similarly, if modifiers result in a global raw score <0, the value is converted to a 0 prior to analysis.
 
-
     Videos are coded and global scores generated as long as 3 out of the 5 ERICA activities are completed. If less than 3 activities are completed, the video is not coded and scores are not generated.
-
 
     The following summary scores are produced:
 
-
     - `mh_cg_erica_3_9m_a_raw` — Child Positive Affect
-
     - `mh_cg_erica_3_9m_b_raw` — Child Irritability
-
     - `mh_cg_erica_3_9m_c_raw` — Child Social Engagement
-
     - `mh_cg_erica_3_9m_d_raw` — Caregiver Responsive Behavior
-
     - `mh_cg_erica_3_9m_e_raw` — Caregiver Irritable Behavior
-
     - `mh_cg_erica_3_9m_f_raw` — Caregiver Directive Behavior
-
-    - `mh_cg_erica_3_9m_g_raw` — Dyadic Connectedness'
+    - `mh_cg_erica_3_9m_g_raw` — Dyadic Connectedness
   resources: null
   supp1_text: "## Centralized Coding of ERICA Videos  \n\nVideos are coded based on a single-pass review, with data entered directly into the HBCD database. Basic steps to ensure data completeness and accuracy include:\n\n \n\n- Double data entry with conflict resolution to ensure accurate data entry\n- Regular review of dashboards and reports to identify missing data and unexpected score distributions\n- Completion reports cross-referenced with video files \n\n \n\n##### ERICA Coding Training and Reliability Monitoring\n\nCoders were trained and certified by coding experts under the supervision of ERICA developers. Certification required ≥80% agreement with expert ratings (exact agreement within ±0.5 decimal points per code). To ensure ongoing coder reliability, 20% of each coder's videos were randomly selected for double coding by experts (reliability coders) on a weekly basis. Coders who fell below 80% agreement for two consecutive weeks on any code were pulled from coding and re-trained/certified\
     \ before continuing.\n\n \n\n##### Coding Reliability Statistics\n\n \n\nInter-rater reliability was quantified using a two-way mixed-effects intraclass correlation coefficient (ICC) (see table below). All codes were evaluated using ICC except for Caregiver Irritable Behavior. Due to its low base rate, this code was dichotomized and reliability was estimated using an unweighted kappa statistic. Updated reliability estimates may be provided in future data releases as additional data become available."
-  measure: Early Regulation in Context Assessment [R3]
+  measure: Early Regulation in Context Assessment
   construct: Emotional Regulation, Parenting, Caregiver-Child Relationship
 mbcdi:
   status: Complete / Stable
@@ -266,23 +253,6 @@ mbcdi:
   hbcd_mods1_title: English vs. Spanish Administration
   measure: MacArthur-Bates CDI-I
   construct: Language Development
-template:
-  status: Work in progress
-  full_name: '{Full name of instrument with acronyms spelled out}'
-  admin_notes: This will contain notes from site maintainer about things that need to be changed, suggested updates, hard-coded fields that can't be updated via this form, etc.
-  README URL: https://docs.hbcdstudy.org/2.1/resources/template/
-  visits: '{Visits}'
-  primary_data_type: Tabulated data
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/2.1/resources/template/
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec2X17E3OjPXwwzQ
-  slug: template
-  release: '2.1'
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec2X17E3OjPXwwzQ
-  measure: TEMPLATE
 bfy:
   status: Complete / Stable
   alert1: null
@@ -362,8 +332,8 @@ demographics_ch:
   warning3: There are several items with branching logic; please consult the following resources for each questionnaire to see question flow and data dictionaries for information on skip patterns. Topics with branching logic include [Household Roster](https://docs.hbcdstudy.org/latest/resources/household-relationships.png) and Child Custody/Guardianship (see [items 15 & 16](https://docs.hbcdstudy.org/latest/resources/child-custody-branching-logic.png)). See [Child Demographics Branching Logic](../demo-ch.html) for full branching logic details.
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec3sig18xLxnQHfc
   warning1: Some participants reported challenges in answering certain questions, such as those related to race and ethnicity (e.g. options did not capture how they choose to identify their child).
-  description: "See [Basic Demographics](../demo/static.md) for additional demographics variables derived from HBCD Demographics and administrative records collected during study enrolment/screening.\n\n \n\nDemographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. **Beginning at Visit 4, the study includes a child demographic form** that captures detailed information about the child’s background, family structure, and household environment (see [Sources for Demographic Protocols & Modifications](demo-cg.md#demo-tables)). This includes:\n\n \n\n- Child's sex at birth\n- Child's race and ethnicity (with multiple selections allowed to capture diverse identities)\n- Respondent's relationship to the child, legal guardianship status, and whether the respondent lives with the child (including the number\
-    \ of days per month they share residence)\n- Detailed household composition, including the number of adults and children in the home and a household roster listing all individuals who live with the child at least two nights per week (including their age and sex)\n- Total household income for the past year (if the child resides in more than one household, respondents are asked to provide the average household income across residences)\n\n \n\nThese data are designed to support a nuanced analysis of the child’s social and family context within the HBCD study. See [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the HBCD Demographics survey."
+  description: "Demographic information is crucial for understanding the child’s environment and identifying how social, structural, and economic factors influence development over time in a longitudinal study of child development. **Beginning at Visit 4, the study includes a child demographic form** that captures detailed information about the child’s background, family structure, and household environment (see [Sources for Demographic Protocols & Modifications](http://127.0.0.1:8000/instruments/SED/demo-cg/#demo-tables)). This includes:\n\n \n\n- Child's sex at birth\n- Child's race and ethnicity (with multiple selections allowed to capture diverse identities)\n- Respondent's relationship to the child, legal guardianship status, and whether the respondent lives with the child (including the number of days per month they share residence)\n- Detailed household composition, including the number of adults and children in the home and a household roster listing all individuals who live with\
+    \ the child at least two nights per week (including their age and sex)\n- Total household income for the past year (if the child resides in more than one household, respondents are asked to provide the average household income across residences)\n\n \n\nThese data are designed to support a nuanced analysis of the child’s social and family context within the HBCD study. See [Cioffredi et al. 2024](https://doi.org/10.1016/j.dcn.2024.101429) for a detailed description of the HBCD Demographics survey."
   domain: Social & Environmental Determinants
   release: '3.0'
   qc: 'Data dashboard was monitored for variable missingness, coding errors, and data consistency. High missingness was noted for income: this is in line with expectations.'
@@ -689,71 +659,6 @@ pedsql:
   supp1_text: null
   measure: PEDsQL
   construct: Pediatric Quality of Life
-medhx_r3:
-  supp2_text: null
-  status: Complete / Stable
-  alert1: null
-  Date submitted: '2026-09-11'
-  known_issue_3: null
-  hbcd_mods2_title: null
-  warning3_title: null
-  pending_update_1: null
-  hbcd_mods1: null
-  duration: 10 min
-  hbcd_mods2: null
-  warning1_title: null
-  full_name: Medical History Questionnaire
-  alert3: null
-  warning4: null
-  alert2: null
-  assessment_type: Questionnaire
-  table_name: ph_cg_ecls__medhist
-  warning2: null
-  warning2_title: null
-  references: null
-  alert2_title: null
-  respondent_category: Parent on Child
-  admin_notes: 'DONE
-
-
-    9/14: Luci pulled updates and reviewed for formatting errors- looks good'
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/medical-history/
-  email: leigh-anne.cioffredi@uvm.edu
-  visits: V04, V06
-  hbcd_mods3: null
-  primary_data_type: Tabulated data
-  submitter_name: Leigh-Anne Cioffredi
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/medical-history/
-  alert4: null
-  acronym: null
-  warning3: null
-  alert4_title: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec7N3eSDUdvLQNLZ
-  warning1: null
-  pending_update_2: null
-  description: The Medical History Questionnaire is a questionnaire developed by the physical health working group members that assesses medical diagnoses, exposure to medications surgical and therapeutic interventions, vaccine behavior, dental health, insurance coverage and injury prevention behaviors. Of note, injury prevention questions change at each visit to correlate with preventable injuries at specific ages.
-  slug: medical-history-questionnaire-r3-0-
-  hbcd_mods3_title: null
-  supp3_text: null
-  domain: Physical Health
-  release: '3.0'
-  alert3_title: null
-  qc: Monitor data dashboard for variable missingness, possible coding errors, and data consistency.
-  administration: Remote
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec7N3eSDUdvLQNLZ
-  scoring: null
-  changelog: Reviewed, made tiny edits.
-  known_issue_2: null
-  resources: null
-  known_issue_1: null
-  hbcd_mods1_title: null
-  supp1_text: null
-  measure: Medical History Questionnaire [R3.0]
-  construct: Medical History
 mri_forms:
   status: Complete / Stable
   alert1: null
@@ -1755,58 +1660,6 @@ ibqr_ecbq:
   resources: null
   measure: IBQ-R / ECBQ
   construct: Behavioral Inhibition, Negative Affectivity, Effortful Control, Surgency / Extraversion
-basic_demo:
-  supp2_text: '## Race & Ethnicity - ACS/Administrative Records
-
-
-    Race and ethnicity variables are computed from [ACS](https://www.census.gov/programs-surveys/acs.html) race and ethnicity items derived from administrative records collected during screening. Combined race and ethnicity variables are constructed following current federal standards. Participants who identify as **Hispanic or Latino** are categorized as `Hispanic`, regardless of race. Participants who select more than one race are categorized as **Multiracial**, with aggregation performed by either **ethnicity** based on Hispanic identity (_Multiracial (Hispanic)_ or _Multiracial (non-Hispanic)_) or **race** based on Black/African American identity (_Multiracial (Black)_ or _Multiracial (non-Black)_).'
-  status: README updated & ready for SME review
-  alert1: When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables such as race, ethnicity, country of origin, and socioeconomic data, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.
-  hbcd_mods1: null
-  alert1_title: General Considerations
-  duration: null
-  hbcd_mods2: null
-  full_name: Basic Demographics Information
-  warning4: null
-  alert2: Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race/ethnicity variables as a proxy for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.
-  assessment_type: Derived Data
-  table_name: sed_basic_demographics
-  warning2: null
-  references: null
-  alert2_title: Use of Race & Ethnicity Variables
-  respondent_category: null
-  admin_notes: The basic demo and visit info READMEs are unique compared to other instrument READMEs, so much of the information on the page is hard-coded, meaning that it can't be updated directly via this form. Touch base with Luci first for how to best use this form
-  README URL: https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/
-  visits: null
-  hbcd_mods3: null
-  primary_data_type: Tabulated data
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/
-  warning3: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recPkGt2kdoIsNArP
-  warning1: null
-  description: "Basic Demographics (`sed_basic_demographics`) is a **derived measure** with information computed from the following sources:  \n\n \n\n- **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)\n- **Demographics instruments** (Social & Environmental Determinants), including Adult and Child (`sed_{bm|ch}_demo`)\n\n \n\nBasic Demographics includes global, visit-agnostic variables that do not change over time and should be consistent across all visits for the adult/caregiver and beginning at Visit 2 for the child (post-birth). Note that if only V01 data for a given adult participant is included in the release (due to ongoing enrollment, participant withdrawal, etc.), then items about their child will be missing, as the child is not born until after the V01 visit."
-  slug: basic-demographics
-  supp3_text: '## Race & Ethnicity - All of US
-
-
-    A second set of race and ethnicity variables are computed from a single All of Us ([AOU](https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations)) race/ethnicity item collected as part of the [Demographics](https://docs.hbcdstudy.org/3.0/instruments/SED/demo-cg/) instrument. For AOU-derived variables, combined race and ethnicity variables are constructed following [OMB](https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards) standards: Participants who identify as Hispanic/Latino (alone or with another group) are categorized as _Hispanic or Latino_; all others are categorized as non-Hispanic (_Non-Hispanic {Asian|Black|White}_).'
-  domain: Demographics
-  release: '2.1'
-  qc: null
-  administration: null
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recPkGt2kdoIsNArP
-  scoring: null
-  resources: null
-  supp1_text: '## Age, Sex, & Other Variables
-
-
-    Unless stated otherwise in the description, the following variables such as sex and age are computed from administrative records collected during screening. Variables such as education and income are derived from the [Demographics](https://docs.hbcdstudy.org/3.0/instruments/SED/demo-cg/) instrument (Adult Form), noted in the description.'
-  measure: Basic Demographics
-  construct: Demographics data derived from multiple sources
 nails:
   status: Complete / Stable
   warning3_title: Large Gaps Between Collection and Analysis Dates
@@ -2141,489 +1994,6 @@ dynamic:
 
     _All variable names are prefixed with `su_flag_`, omitted below for readability._
   measure: Dynamic Table
-illumina_r3:
-  supp2_text: null
-  status: Work in progress
-  alert1: Data users are prohibited from using HBCD data, including genomic data, to identify participants or their relatives. You accessed these data under a Data Use Certification (DUC) agreement in which you and your institution agreed that you would not attempt to establish the individual identity of any study participants or their relatives. You also agreed to adhere to a minimum cell threshold of 10 in any public reporting of data (i.e., publications, posters, or other presentations). Protecting participants’ anonymity demonstrates respect for them and minimizes their research-related risks.
-  Date submitted: '2026-09-02'
-  hbcd_mods1: null
-  alert1_title: Anonymity
-  duration: null
-  hbcd_mods2: null
-  warning1_title: Twins Present in Birth Parents
-  full_name: Illumina Global Diversity GWAS Array
-  alert3: 'Analysts using HBCD data have ethical obligations to minimize risks, including psychological, social, and economic risks, to research participants who generously provided their data. Risk minimization includes avoiding stigmatizing language when describing participants or the populations with which they identify, their phenotypes, or their genetic risks. It also includes carefully and clearly articulating limitations and caveats when reporting results and discussing how the results should and should not be interpreted or generalized.
-
-
-    Results generated from HBCD data may be used to guide policy (e.g., for social services, education, or public health interventions). Researchers should be aware of policy implications and controversies related to their research. Some approaches for ethically conducting and reporting research using genetic data are discussed in [Meyer et al. (2023)](https://doi.org/10.1002/hast.1477), *Wrestling with Social and Behavioral Genomics: Risks, Potential Benefits, and Ethical Responsibility* (**The Hastings Center Report**).
-
-
-    Researchers cannot control how others, including members of the public and policy makers, interpret scientific results we publish. However, we can take steps to minimize the likelihood our results will be misinterpreted or overinterpreted. In addition to clearly denoting limitations and caveats when reporting results, specific approaches for working with genomic data in this context are discussed in [Martshenko et al. (2025)](https://doi.org/10.1146/annurev-genom-011224-015733), *Social and Behavioral Genomics: On the Ethics of the Research and Its Downstream Applications* (**Annual Reviews Genomics and Human Genetics**). For examples of brief documents that explain social and behavioral genomics for non-experts, see “FAQs on Human Genomics Studies” at [https://www.thehastingscenter.org/genomics-research-index/](https://www.thehastingscenter.org/genomics-research-index/).'
-  warning4: null
-  alert2: The use of population descriptors in genetic research has been varied and inconsistent. The National Academies of Science, Engineering, and Medicine (NASEM) published a report on the use of population descriptors, such as ancestry, race, ethnicity, and geography, in genomics (). We encourage data users working with HBCD genomics data to consult the NASEM report to understand the past and current use of population descriptors in genomics research as well as current best practice recommendations when analyzing or reporting on HBCD genomic data. Race and ethnicity represent social constructs that are conceptually distinct from ancestry inferred from genetic data. Description of race and ethnicity variables in HBCD may be found in [Basic Demographics](../demo/static.md).
-  assessment_type: Biospecimen collection
-  table_name: genetics/genotype_microarray/GDA/
-  warning2: A total of 22 samples were excluded from data release (i.e., are not contained in the public release files) due to poor genotyping quality (i.e., SNP Missingness >10%), unexpected unrelatedness with no confirmed use of reproductive technology, unexpected relatedness (i.e., identical samples across adults), and sex check mismatch.
-  warning2_title: Data Exclusions
-  references: 'Committee on the Use of Race, Ethnicity, and Ancestry as Population Descriptors in Genomics Research, Board on Health Sciences Policy, Committee on Population, Health and Medicine Division, Division of Behavioral and Social Sciences and Education, & National Academies of Sciences, Engineering, and Medicine. (2023). Using population descriptors in genetics and genomics research. National Academies Press. <https://doi.org/10.17226/26902>
-
-    Martschenko, D. O., Lee, S. S.-J., Meyer, M. N., & Parens, E. (2025). Social and behavioral genomics: On the ethics of the research and its downstream applications. _Annual Review of Genomics and Human Genetics_, 26(1), 425–447. <https://doi.org/10.1146/annurev-genom-011224-015733>
-
-    Meyer, M. N., Appelbaum, P. S., Benjamin, D. J., Callier, S. L., Comfort, N., Conley, D., Freese, J., Garrison, N. A., Hammonds, E. M., Harden, K. P., Lee, S. S.-J., Martin, A. R., Martschenko, D. O., Neale, B. M., Palmer, R. H. C., Tabery, J., Turkheimer, E., Turley, P., & Parens, E. (2023). Wrestling with social and behavioral genomics: Risks, potential benefits, and ethical responsibility. _The Hastings Center Report_, 53 Suppl 1, S2–S49. <https://doi.org/10.1002/hast.1477>'
-  alert2_title: Population Descriptors
-  respondent_category: null
-  admin_notes: Using google docs for Illumina for now in place of forms - https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?tab=t.gi9ky13h9emu
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/illumina-gda-gwas/
-  email: lmoore@umn.edu
-  visits: Samples are assayed from one sample (from parent and child), but may come from any visit (V01-V06) based on DNA yields.
-  hbcd_mods3: null
-  primary_data_type: Concatenated data
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/illumina-gda-gwas/
-  alert4: null
-  acronym: GDA GWAS
-  warning3: null
-  alert4_title: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recojL45MiljQmOZB
-  warning1: The dataset includes two birth parents who are monozygotic twins (along with their respective families), which may complicate certain analyses. The participant IDs associated with this twin pair are under internal review and may be shared in a future update.
-  description: '## Instrument Details
-
-
-    The genomic dataset generated from the **Illumina Global Diversity Array (GDA GWAS)** includes batch metadata and interlinked PLINK files (`.bed`, `.bim`, `.fam`) aligned to the **GRCh38/hg38 Build**. The dataset is provided in the release as concatenated data:'
-  slug: illumina-global-diversity-gwas-array-3-0-
-  supp3_text: null
-  domain: Biospecimen & Omics
-  release: '3.0'
-  alert3_title: Ethical Obligations to Minimize Risks
-  qc: '- Check that sampled ID and sample-specific barcodes match from Sampled File and Lasso Database.
-
-    - Check that genomic sex matches with sex at birth.
-
-    - Check that genetic relatedness of each sample matches Lasso data (i.e., that IBD is ~0.25 between the birth parent and child as well as siblings; evaluate potential twins).
-
-    - Use FHET estimates to check for plate contamination.
-
-    - Visually inspect plate effects on principal component space derived from PC-Relate.
-
-    - GDC Genomics QC pipeline analysis - see details and summary statistics [below](#gdc-genomics-qc-pipeline-analysis).'
-  administration: In-person
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recojL45MiljQmOZB
-  scoring: null
-  resources: null
-  supp1_text: '## Release Data
-
-
-
-    The GDA GWAS dataset is provided as **[concatenated data](http://127.0.0.1:8000/datacuration/file-based-data/#concatenated-data)** including the following files:
-
-
-    - `batch.info`: Plain-text file mapping participants to genotyping batches
-
-    - `hbcd.bed` (**[PLINK 1.9 .bed](https://www.cog-genomics.org/plink/1.9/formats#bed)**, distinct from UCSC BED): Binary genotype file
-
-    - `hbcd.bim` (**[PLINK 1.9 .bim](https://www.cog-genomics.org/plink/1.9/formats#bim)**): Variant information (chromosome, rsID, position, alleles)
-
-    - `hbcd.fam` (**[PLINK 1.9 .fam](https://www.cog-genomics.org/plink/1.9/formats#fam)**): Participant information
-
-    - `pcrelate_relatedness.grm.bin`: PC-Relate adjusted genetic relatedness matrix
-
-    - `pcrelate_relatedness.grm.N.bin`: PC-Relate pairwise common SNP count
-
-    - `pcrelate_relatedness.grm.id`: PC-Relate subject IDs, corresponding to the matrix column and row order
-
-    - `pcrelate_relatedness.tsv`
-
-    - `family_clusters.txt`'
-  measure: Illumina Global Diversity GWAS Array (3.0)
-  construct: GWAS, EWAS, Transcriptome
-nsc:
-  supp2_text: null
-  status: Complete / Stable
-  alert1: 'Incarceration or arrest information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
-  Date submitted: '2026-08-24'
-  hbcd_mods1: null
-  hbcd_mods2: null
-  full_name: Incarceration History Questionnaire (Experiences with the criminal justice system)
-  warning4: null
-  alert2: null
-  assessment_type: Questionnaire
-  table_name: sed_cg_incarc
-  warning2: null
-  references: 'Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., ... & Wildeman, C. (2019). What percentage of Americans have ever had a family member incarcerated?: Evidence from the family history of incarceration survey (FamHIS). _Socius_, _5_, 2378023119829332. <https://doi.org/10.1177/237802311982>'
-  respondent_category: Parent on Self
-  admin_notes: DONE
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
-  email: japoehlmann@wisc.edu
-  visits: V07, V09
-  hbcd_mods3: null
-  primary_data_type: Tabulated data
-  submitter_name: Julie Poehlmann
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
-  alert4: null
-  acronym: NSC
-  warning3: null
-  alert4_title: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recepzgEHD3phY9C2
-  warning1: null
-  description: The Incarceration History Questionnaire is designed to capture maternal, paternal, and other household member's involvement with the criminal justice system in the prenatal and postnatal periods. It asks about arrest, incarceration, and community supervision. The questionnaire is completed by the adult participant in HBCD, usually the child's parent or caregiver. It is based on the Family History of Incarceration Survey, with questions added regarding the specific times in the child's life that involvement with the criminal justice system occurred, and if the justice involvement was related to substances. If incarceration occurred, the measure asks about the length of the incarceration.
-  supp3_text: null
-  domain: Social & Environmental Determinants
-  release: 3.0 (new instrument/info required)
-  qc: |-
-    - Monthly data consistency checks
-    - Handling of incomplete or missing responses by sites
-    - Common issues identified include missing data patterns
-  administration: Remote
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recepzgEHD3phY9C2
-  scoring: null
-  resources: null
-  supp1_text: null
-  measure: Incarceration Questionnaire
-  construct: Parental/Caregiver Arrests and incarceration during pregnancy and early childhood
-mbcdi_2:
-  status: Not started
-  alert1: The CDI forms are well-documented and widely used assessments. We note that percentile scores were calculated based on the norms described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023), see additional references below. See [HBCD Modifications](#hbcd-mod) for a description of how the CDI-WG is administered to children with exposure to different languages; users may want to consider the [Multilingual Language Development](../mlds) questionnaire in conjunction with the CDI.
-  warning3_title: Benchmark Age
-  hbcd_mods1: "Administration of the CDI-WG in English or Spanish is decided based on the results of the Multilingual Language Development questionnaire. \n\n- If the caregiver reports that the child has 30% or greater exposure to English and/or Spanish, they are prompted to complete the CDI in that language.\n- Children who are exposed to both English and Spanish at a greater than 30% level are prompted to complete both forms.\n- If caregivers report less than 30% exposure to either language, administration defaults to English."
-  duration: 20-60 min
-  hbcd_mods2: null
-  warning1_title: Provided Scores
-  full_name: 'MacArthur-Bates Communicative Development Inventory: Words and Sentences (Toddler)'
-  warning4: null
-  alert2: null
-  assessment_type: Questionnaire
-  table_name: ncl_ch_cdiwsen; ncl_ch_wses
-  warning2: Note that in some cases, the caregiver endorsed all items in certain sections of the Web-CDI form. These cases are included in the released data as completed by the caregiver, but users may take caution in interpretation.
-  warning2_title: Cases Where All Items Endorsed
-  references: |-
-    deMayo, B., Kellier, D., Braginsky, M., Bergmann, C., Hendriks, C., Rowland, C., et al. (2021). Web-CDI: A system for online administration of the MacArthur-Bates Communicative Development Inventories. _Language Development Research_, 1, 55–98. <https://doi.org/10.31234/osf.io/8mjx9>
-    Marchman, V. A., Dale, P. S., & Fenson, L. (2023). _The MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual_ (V. A. Marchman, P. S. Dale, & L. Fenson, Eds.; 3rd ed.). Baltimore, MD: Brookes Publishing Co.
-    Marchman, V. A., & Dale, P. S. (2023). The MacArthur-Bates Communicative Development Inventories: Updates from the CDI advisory board. _Frontiers in Psychology_, 14, 1170303. <https://doi.org/10.3389/fpsyg.2023.1170303>
-  respondent_category: Parent on Child
-  admin_notes: The content here is copied from the **Words and Gestures form**
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mbcdi-2/
-  visits: V06, V07
-  hbcd_mods3: null
-  primary_data_type: Tabulated data
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mbcdi-2/
-  alert4: null
-  acronym: MBCDI-2
-  warning3: The CDI includes a benchmark age that is based on entry by the caregiver. Note that the CDI is not administered until 9 months of age and data entry errors may occur. Users may want to use this in conjunction with other data on the child's age included elsewhere in HBCD.
-  alert4_title: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rect66sWwFnTWbtmz
-  warning1: The CDI-WG provides percentiles score, but does not provide standard scores.
-  description: The **MacArthur-Bates Communicative Development Inventories, Words and Gestures**, Web Version, English and Spanish is a caregiver -report assessment of children’s early language development, including expressive and receptive vocabulary and gesture. In HBCD, the Words and Gestures form is administered up to 16 months of age. Beginning at 16 months of age, the Words and Gestures form the Words and Sentences form. See details about both forms at <https://mb-cdi.stanford.edu/>.
-  domain: Neurocognition & Language
-  release: 3.0 (new instrument/info required)
-  qc: |-
-    - HBCD SOPs instruct RAs to present instructions exactly as shown in the existing [https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf](http://127.0.0.1:8000/instruments/neurocog/macarthur-bates/%3Ca%20href=).
-    - All data collection, calculation of summary scores, and percentile scores are completed within Web-CDI and then imported into the HBCD database. Data were reviewed to verify that fields are appropriately labeled upon import, and range checks of all summary variables were performed.
-  administration: In-person
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rect66sWwFnTWbtmz
-  scoring: This instrument is proprietary. All summary scores (e.g. Total Gestures, Words Understood, Words Produced) and associated percentiles (with and without adjustment for child sex) were computed within Web-CDI using the most updated norms within that software and described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023).  The child’s age at administration for purposes of scoring the CDI is entered by the caregiver as part of the Web-CDI form. The caregiver also notes on this form if the child was born prematurely and if so, by how many weeks. The Web-CDI then provides percentile scores both unadjusted and adjusted for prematurity. See <https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf>.
-  resources: <https://mb-cdi.stanford.edu/>
-  hbcd_mods1_title: English vs. Spanish Administration
-  measure: MacArthur-Bates CDI-2 Language
-  construct: Language Development
-maps_easi:
-  supp2_text: null
-  status: Complete / Stable
-  alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
-  Date submitted: '2026-09-09'
-  hbcd_mods1: Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replaced with ‘my child’ when eliminating pronouns was not grammatically possible. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.
-  duration: 2 min
-  hbcd_mods2: null
-  full_name: Multidimensional Assessment Profile Temper Loss Scale-EASI, Toddlerhood (Short Form)
-  warning4: null
-  alert2: null
-  assessment_type: Questionnaire
-  table_name: mh_cg_mapstl_easi
-  warning2: null
-  references: |-
-    Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69, 101422. <https://doi.org/10.1016/j.dcn.2024.101422>
-
-    Wakschlag, L. S., Zhang, Y., Heffernan, M. E., MacNeill, L. A., Peterson, E. O., Friedland, S., Sass, A. J., Smith, J. D., Davis, M. M., & Wiggins, J. L. (2024). How EASI can it be? Closing the research-to-practice gap via population-based validation of the MAPS-EASI 2.0 early childhood irritability screener for translation to clinical use. _Translational issues in psychological science_, _10_(4), 435–448. <https://doi.org/10.1037/tps0000428>
-  respondent_category: Parent on Child
-  admin_notes: |-
-    DONE
-
-    9/14 Luci Notes: change are integrated after a fixing a few formatting errors (resulting from fillout form, not user's fault). SME can submit further changes as needed still, but for now I am marking as complete!
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps-easi/
-  email: isabel.jordan@northwestern.edu
-  visits: V07
-  hbcd_mods3: null
-  primary_data_type: Tabulated data
-  submitter_name: Isabel Jordan
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps-easi/
-  alert4: null
-  acronym: MAPS-EASI TL
-  warning3: null
-  alert4_title: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recbJKtKQ0yAjge19
-  warning1: The MAPS-EASI assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.
-  description: Multidimensional Assessment Profiles- Early Assessment Screener for Irritability (**MAPS-EASI**) is a newly developed MAPS-TL (MAPS- Temper Loss) short form. MAPS-TL is a well-validated survey assessing irritability that serves as a tool for characterizing the developmental expression of early mental health risk. MAPS-TL measures a range of behaviors that encompass dysregulation, responsiveness to environmental input, and context. Irritability has been identified as an early dimensional marker of lifespan mental health risk. MAPS-TL aims to delineate the typical:atypical spectrum of irritability in early childhood and identify those young children at high probability of subsequent adaptational problems based on problems with dysregulation.
-  supp3_text: null
-  domain: Behavior & Caregiver-Child Interactions
-  release: 3.0 (new instrument/info required)
-  qc: |-
-    - Examine missingness by counting items answered per participant.
-    - Check age is within expected ranges (18-31 months).
-    - Review summary statistics and visualizations (item frequencies, age, prorated scores).
-    - Assess reliability (Cronbach’s α).
-  administration: Remote
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recbJKtKQ0yAjge19
-  scoring: "The 3 MAPS-EASI Irritability Scale items (`mapstl__easi_{001|002|003}`) are answered on a scale of 0:5. Possible responses include:\n\n0, Never | 1, Rarely (Less than once per week) | 2, Some (1-3) days of the week | 3, Most (4-6) days of the week | 4, Every day of the week | 5, Many times each day | Prefer not to answer \n\nThe 2 MAPS-EASI Impact Rating items (`mapstl__easi_{004|005}`) are answered on a scale of 0:3. Possible responses include:\n\n0, No problems | 1, Minimal problems | 2, A lot of problems | 3, Severe problems | Prefer not to answer \n\nA sum score is calculated for all Irritability Scale items. If any of the 3 Irritability Scale items are left unanswered (NA/Decline to answer/etc.), the sum score will be set to NA/missing (strict missingness rule)."
-  changelog: This is a new form for the MAPS-EASI at V07.
-  resources: null
-  supp1_text: null
-  measure: MAPS-EASI- Toddler
-  construct: Irritability
-mchat:
-  status: Not started
-  full_name: Modified Checklist for Autism in Toddlers R/F
-  assessment_type: Questionnaire
-  table_name: mh_ch_mchat
-  respondent_category: Parent on Child
-  admin_notes: null
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
-  visits: V07
-  primary_data_type: Tabulated data
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
-  acronym: MCHAT
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reciqnhrslaTGLOZY
-  domain: Behavior & Caregiver-Child Interactions
-  release: 3.0 (new instrument/info required)
-  administration: Remote
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=reciqnhrslaTGLOZY
-  measure: Modified Checklist for Autism in Toddlers
-  construct: Autism
-nbtb:
-  supp2_text: null
-  status: Complete / Stable
-  alert1: Performance of the NIH Baby Toolbox reflects the child's developmental status, but various factors might influence the results of the assessment that should be taken into account.
-  Date submitted: '2026-08-29'
-  hbcd_mods1: null
-  duration: V03 45-60 min / V04 15-20 min / V06-40-60 min
-  hbcd_mods2: null
-  warning1_title: Changes in NIH Baby Toolbox Versions in HBCD
-  full_name: NIH Baby Toolbox
-  alert3: The NIH Baby Toolbox is available in English and Spanish. The child's exposure to other languages may also impact their performance. The Multilingual Language Development questionnaire was used to screen for parental preference for the test to be administered in Spanish or English. The instrument also documents other language exposures that the child may have. Exposure to languages other than Spanish or English may impact a child's performance. In addition, some items on the test may be impacted by environmental experiences related to the task or items used. In these cases, the test may underestimate the child's developmental status.
-  warning4: null
-  alert2: The test was given in the context of a battery of tests and procedures administered to the child and his/her caregiver during the course of an extended visit. Some children may experience fatigue from this and this may have adversely impacted their performance. Ratings of arousal level of the child before and after the assessment may help in identifying situations where the child may have under-performed.
-  assessment_type: Cognitive testing
-  table_name: nc_ch_nbtb
-  warning2: The V04 NIH Baby Toolbox assessment was reduced to shorten the length of the V04 visit during the course of the study. Some participants will have outcomes on subtests that were not administered to later participants.
-  warning2_title: Reduction in the HBCD V04 Battery
-  references: |-
-    Blackwell, C. K. (2025). Bringing developmental assessment to the 21st century: The NIH Baby Toolbox. _Infant Behavior and Development, 80_, 102127. <https://doi.org/10.1016/j.infbeh.2025.102127>
-
-    Han, Y. C., Dworak, E. M., Mansolf, M., Adam, H., Yao, L., Novack, M. A., ... & Kaat, A. J. (2025). _NIH Baby Toolbox® methodology and norms development_. _Infant Behavior and Development, 80_. <https://pubmed.ncbi.nlm.nih.gov/40743801/>
-
-    Morris AS, Wakschlag L, Krogh-Jespersen S, Fox N, Planalp B, Perlman SB, Shuffrey LC, Smith B, Lorenzo NE, Amso D, Coles CD, Johnson SP. Principles for Guiding the Selection of Early Childhood Neurodevelopmental Risk and Resilience Measures: HEALthy Brain and Child Development Study as an Exemplar. Advers Resil Sci. 2020;1(4):247-267. doi: 10.1007/s42844-020-00025-3. Epub 2020 Nov 9. PMID: 33196052; PMCID: PMC7649097.
-
-    NIH Infant and Toddler (Baby) Toolbox (2024, June 24, 2022) Retrieved from <https://neuroscienceblueprint.nih.gov/resources-tools/blueprint-resources-tools-library/nih-infant-and-toddler-baby-toolbox>
-
-    NIH Baby Toolbox. (n.d.). _Home_. Retrieved August 21, 2026, from <https://nihbabytoolbox.org/>
-
-    NIH Baby Toolbox. (n.d.). _Cognition assessments_ (Page 2 of 3). Retrieved August 21, 2026, from <https://nihbabytoolbox.org/domain/cognition/page/2/>
-  respondent_category: Child on Self
-  admin_notes: |-
-    8/29: marking this as DONE, feel free to submit further changes if needed however
-    8/24: update to include all BTB (1 Language & 2 Cognitive/Executive Function/Memory) per SME request! please mark as done if complete
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb/
-  email: jkabl01@emory.edu
-  visits: V03, V04, V06
-  hbcd_mods3: null
-  primary_data_type: Tabulated data
-  submitter_name: Julie Kable
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb/
-  alert4: null
-  acronym: NBTB
-  warning3: null
-  alert4_title: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rect6eIwToFbEGoVJ
-  warning1: HBCD implemented the beta version of the NIH Baby Toolbox that was used for collecting the standardization sample. In December of 2025, HBCD transitioned to the final standardized version that was made available to the public. Some subtests in the original version were not retained in the standardized version.  These subtests will have raw performance metrics but will not have standardized scores.
-  description: "The National Institute of Health (NIH) Infant and Toddler Toolbox (NBT) is a new nationally-normed assessment. HBCD administered modules to measure cognition, language, early mathematics/numeracy, and executive function in children between 1- and 42-months of age. Assessments include direct child assessment and observations supplemented as needed by reporting from parents or legal guardians. In addition, gaze-based measures were used to assess aspects of cognitive functioning in children under 24 months of age and touch screen measures were used for children who were 24 months or older.  The NIH Baby Toolbox Cognition Domain provides individual performance measures or scores and composite scores. \n\nAdditional supplemental tests were also used that do not contribute to the composites but can be used to better understand the child's cognitive skills.  Please see the NBT instructional manual for details. These are available from [NIH Baby Toolbox® Manuals & Test Materials](https://resources.nihtoolbox.org/manuals-and-test-materials/nih-baby-toolbox-documentation/)."
-  supp3_text: null
-  domain: Neurocognition & Language
-  release: 3.0 (new instrument/info required)
-  qc: |-
-    The Infant Testing Core of HBCD were trained and certified by the developers of the NIH Baby Toolbox.  HBCD Study staff were provided trainings from the developers of the NIH Baby Toolbox via zoom. The ITC of HBCD provided additional trainings and then certified HBCD staff to ensure adherence to standardized procedures.
-
-    During testing, responses were entered into NIH Baby Toolbox software, which automatically applied scoring rules and generated standardized scores. Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations.
-
-    Completion rates were monitored across sites, with additional training provided when needed.
-  administration: In-person
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rect6eIwToFbEGoVJ
-  scoring: This is autoscored by the software and data are uploaded to a web server. Please see the NBT technical manual for details.  These are available from [NIH Baby Toolbox® Manuals & Test Materials](https://resources.nihtoolbox.org/manuals-and-test-materials/nih-baby-toolbox-documentation/).
-  resources: null
-  supp1_text: null
-  measure: NIH BTB
-  construct: Cognition/Executive Function/Memory, Language
-static:
-  supp2_text: |-
-    ## Race & Ethnicity - ACS/Administrative Records
-
-    Race and ethnicity variables are computed from [ACS](https://www.census.gov/programs-surveys/acs.html) race and ethnicity items derived from administrative records collected during screening. Combined race and ethnicity variables are constructed following current federal standards. Participants who identify as **Hispanic or Latino** are categorized as `Hispanic`, regardless of race. Participants who select more than one race are categorized as **Multiracial**, with aggregation performed by either **ethnicity** based on Hispanic identity (_Multiracial (Hispanic)_ or _Multiracial (non-Hispanic)_) or **race** based on Black/African American identity (_Multiracial (Black)_ or _Multiracial (non-Black)_).
-  status: Work in progress
-  alert1: When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables such as race, ethnicity, country of origin, and socioeconomic data, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.
-  Date submitted: '2026-08-25'
-  hbcd_mods1: null
-  alert1_title: General Considerations
-  duration: null
-  hbcd_mods2: null
-  warning1_title: Missing Baseline Data for Postnatally Recruited Participants
-  full_name: Static Table
-  alert3: The Static Table includes both source race and ethnicity variables and derived variables that combine or aggregate responses into broader categories. These derived categories reflect specific HBCD coding decisions and should not be interpreted as equivalent to participants’ original self-reported responses. Researchers should review the variable descriptions and derivation rules and use the most appropriate variables for their research question.
-  warning4: null
-  alert2: Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race/ethnicity variables as a proxy for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.
-  assessment_type: Derived Data
-  table_name: par_gd_sdc
-  warning2: null
-  references: |-
-    All of Us Research Program. (2025, February 17). _Race and ethnicity data collection and transformation_. <https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-Ethnicity-Data-Collection-and-Transformation>
-
-    Reference for ADI [pending]
-  alert2_title: Use of Race & Ethnicity Variables
-  respondent_category: null
-  admin_notes: |-
-    8/29 Notes
-    Status: waiting on further updates from SME, prior updates complete
-
-    See [shared google sheet ](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177)to update tables (this sheet is autoparsed to populate the webpage)
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/static/
-  email: nslopen@hsph.harvard.edu
-  visits: V01, V02, V04, V06
-  hbcd_mods3: null
-  primary_data_type: Tabulated data
-  submitter_name: Natalie Slopen
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/static/
-  alert4: null
-  resource1_description: Tabs labeled with "Static-*" / "Dynamic-*" contain tables that are autoparsed to populate the tables included in the Static/Dynamic README pages
-  warning3: null
-  alert4_title: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recqmyWoJlgOLnHBD
-  warning1: For Release 3.0, some baseline variables may be missing for children recruited postnatally because we do not currently use data collected after recruitment to populate or impute otherwise unavailable prenatal or V01 values. Users should consider recruitment timing when interpreting missingness in Static Table variables. A future release may harmonize postnatal recruitment data.
-  description: |-
-    Datasets within the Demographics domain are intended to provide HBCD investigators with a concise set of commonly used variables without requiring users to navigate multiple source files. The Static Table is a **derived measure** with information computed from the following sources:
-
-    - **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
-    - **Demographics instruments** (Social & Environmental Determinants), including Adult and Child (`sed_{bm|ch}_demo`)
-
-    Static data include global, visit-agnostic variables that do not change over time and should be consistent across all visits for the adult/caregiver and beginning at Visit 2 for the child (post-birth). Note that if the release includes only V01 data for a given adult participant (due to ongoing enrollment, participant withdrawal, etc.), items about their child will be missing, as the child is not born until after the V01 visit.
-  supp3_text: |-
-    ## Race & Ethnicity - All of US
-
-    A second set of race and ethnicity variables are computed from a single All of Us ([AOU](https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations)) race/ethnicity item collected as part of the [Demographics](https://docs.hbcdstudy.org/3.0/instruments/SED/demo-cg/) instrument. For AOU-derived variables, combined race and ethnicity variables are constructed following [OMB](https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards) standards: Participants who identify as Hispanic/Latino (alone or with another group) are categorized as _Hispanic or Latino_; all others are categorized as non-Hispanic (_Non-Hispanic {Asian|Black|White}_).
-  domain: Participant Derived
-  release: 3.0 (new instrument/info required)
-  alert3_title: Use of Constructed Race and Ethnicity Variables
-  qc: |-
-    - Data are visually inspected for unexpected values, distributions, missingness patterns, and other apparent anomalies.
-    - Potential issues identified during review are flagged for further investigation as needed.
-  administration: null
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recqmyWoJlgOLnHBD
-  resource1_url: https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177
-  scoring: N/A
-  changelog: this is ready for ReadMe review, but should be considered in progress until the table is created and finalized
-  resources: null
-  supp1_text: |-
-    ## Age, Sex, Baseline Socioeconomic & Other Variables
-
-    The Static Table includes selected child, birth-mother, household, recruitment, and contextual characteristics, represented once per HBCD child. The original source and collection timing vary by variable and are documented in the accompanying variable information.
-
-    Child sex, maternal age at V01, maternal age at delivery, gestational age at delivery, recruitment site, and selected other characteristics are derived from HBCD administrative or enrollment records. Baseline birth-mother education and V01 household income are derived from responses collected through the Adult Demographics instrument and are included here as baseline reference characteristics.
-
-    Because education and household income may change over time, their inclusion in the Static Demographics Table should not be interpreted as indicating that these characteristics are inherently fixed. The Dynamic Table provides longitudinal measures of caregiver education and household income.
-
-    The Static Table also includes a baseline residential Area Deprivation Index (ADI) measure derived using the residential address available at screening. This measure represents neighborhood context at that designated time point and should not be interpreted as a longitudinal measure of residential context.
-  measure: Static Table
-blood:
-  supp2_text: null
-  status: Complete / Stable
-  alert1: null
-  Date submitted: '2026-08-29'
-  warning3_title: Missing Data Due to Contamination
-  hbcd_mods1: null
-  duration: 5 min
-  hbcd_mods2: null
-  warning1_title: Continuous Variables
-  full_name: USDTL Blood Toxicology (Maternal)
-  warning4: null
-  alert2: null
-  assessment_type: Biospecimen collection
-  table_name: bio_bm_biosample_blood
-  warning2: A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.
-  warning2_title: Large Gaps Between Collection and Analysis Dates
-  references: 'Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <https://doi.org/10.1016/j.dcn.2024.101451>'
-  respondent_category: Parent on Self
-  admin_notes: |-
-    DONE
-
-    8/24: COMPLETE
-    8/20 Luci note: I have updated the README based on the changes submitted by Elinor Aug 20th (and the changes should render shortly) and reviewed the page for accuracy. I made one minor formatting change to turn the short list in the description to a single sentence ("PEth is confirmatory-testing only, with **20phsphtdetbsp (`c_peth_b_cat`)** as the confirmatory test and **Ethanol (`c_ethanol_b`)** as the class."). I will mark as complete for now and follow up with Elinor via email to inform her (while I'm still perfecting the workflow to hopefully add automated notifications and such)
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/blood
-  email: sullivel@ohsu.edu
-  visits: V01
-  hbcd_mods3: null
-  primary_data_type: Tabulated data
-  submitter_name: Elinor Sullivan
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/blood
-  alert4: null
-  acronym: Blood
-  warning3: Out of an abundance of caution there may be missing data for some sites based on the potential use of ethanol based products which may have caused contamination of assay results.
-  alert4_title: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recyzSFRJ2eDiSQy3
-  warning1: For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative (see **Blood Assay Thresholds PEth** below).
-  description: 'USDTL Blood is a toxicology screen for phosphatidylethanol (PEth) conducted on phlebotomist-collected venous blood pipetted onto dried blood spot cards. Processing of blood spot cards consists of preparing 3x 1/8” punches of dried blood spot followed by extraction using an organic solvent. Detection of PETH in the extract is accomplished with a single pass using LCMSMS:   <img src="https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/images/Fig1_blood.png" alt="PeTH test" width="600" height="auto" class="center">  Based on the predefined threshold below, the PEth test (`c_peth_b_cat`) is determined to be positive, negative, or canceled. Substance analytes are grouped into classes by analyte screening tests and confirmatory tests. PEth is confirmatory-testing only, with **20phsphtdetbsp (`c_peth_b_cat`)** as the confirmatory test and **Ethanol (`c_ethanol_b`)** as the class.'
-  supp3_text: null
-  domain: Biospecimen & Omics
-  release: 3.0 (new instrument/info required)
-  qc: Examine assay ranges and categorical versus continuous measures.
-  administration: In-person
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recyzSFRJ2eDiSQy3
-  scoring: |-
-    Final PEth assay results follow these rules:
-
-    - If the PEth test is positive (`c_peth_b_cat`), the sample level (`c_any_specimen_b`) is positive (value = 1).
-    - If the PEth confirmatory tests is negative (value = 0), then sample-level (`c_any_specimen_b`) is negative (0).
-    - If the PEth confirmatory tests is cancelled (value = 3) then sample-level (`c_any_specimen_b`) is cancelled (value = 3).
-  changelog: Added an additional data warning and resource and edited the description.
-  resources: null
-  supp1_text: null
-  measure: USDTL Blood Toxicology
-  construct: Drug, Environmental Exposure (metals, nutrition, toxins, proteins)
 home21:
   status: Complete / Stable
   alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables—especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers—to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
@@ -2768,88 +2138,6 @@ maps_tl:
     **_Prorated Score_**_ = (Sum of answered items ÷ Number of answered items) × Total number of items_
   measure: Multidimensional Assessment Profiles - Temper Loss Scale
   construct: Irritability
-illumina:
-  supp2_text: null
-  status: Work in progress
-  alert1: Data users are prohibited from using HBCD data, including genomic data, to identify participants or their relatives. You accessed these data under a Data Use Certification (DUC) agreement in which you and your institution agreed that you would not attempt to establish the individual identity of any study participants or their relatives. You also agreed to adhere to a minimum cell threshold of 10 in any public reporting of data (i.e., publications, posters, or other presentations). Protecting participants’ anonymity demonstrates respect for them and minimizes their research-related risks.
-  Date submitted: '2026-09-02'
-  hbcd_mods1: null
-  alert1_title: Anonymity
-  duration: null
-  hbcd_mods2: null
-  warning1_title: Twins Present in Birth Parents
-  full_name: Illumina Global Diversity GWAS Array
-  alert3: |-
-    Analysts using HBCD data have ethical obligations to minimize risks, including psychological, social, and economic risks, to research participants who generously provided their data. Risk minimization includes avoiding stigmatizing language when describing participants or the populations with which they identify, their phenotypes, or their genetic risks. It also includes carefully and clearly articulating limitations and caveats when reporting results and discussing how the results should and should not be interpreted or generalized.
-
-    Results generated from HBCD data may be used to guide policy (e.g., for social services, education, or public health interventions). Researchers should be aware of policy implications and controversies related to their research. Some approaches for ethically conducting and reporting research using genetic data are discussed in [Meyer et al. (2023)](https://doi.org/10.1002/hast.1477), *Wrestling with Social and Behavioral Genomics: Risks, Potential Benefits, and Ethical Responsibility* (**The Hastings Center Report**).
-
-    Researchers cannot control how others, including members of the public and policy makers, interpret scientific results we publish. However, we can take steps to minimize the likelihood our results will be misinterpreted or overinterpreted. In addition to clearly denoting limitations and caveats when reporting results, specific approaches for working with genomic data in this context are discussed in [Martshenko et al. (2025)](https://doi.org/10.1146/annurev-genom-011224-015733), *Social and Behavioral Genomics: On the Ethics of the Research and Its Downstream Applications* (**Annual Reviews Genomics and Human Genetics**). For examples of brief documents that explain social and behavioral genomics for non-experts, see “FAQs on Human Genomics Studies” at [https://www.thehastingscenter.org/genomics-research-index/](https://www.thehastingscenter.org/genomics-research-index/).
-  warning4: null
-  alert2: The use of population descriptors in genetic research has been varied and inconsistent. The National Academies of Science, Engineering, and Medicine (NASEM) published a report on the use of population descriptors, such as ancestry, race, ethnicity, and geography, in genomics (). We encourage data users working with HBCD genomics data to consult the NASEM report to understand the past and current use of population descriptors in genomics research as well as current best practice recommendations when analyzing or reporting on HBCD genomic data. Race and ethnicity represent social constructs that are conceptually distinct from ancestry inferred from genetic data. Description of race and ethnicity variables in HBCD may be found in [Basic Demographics](../demo/static.md).
-  assessment_type: Biospecimen collection
-  table_name: genetics/genotype_microarray/GDA/
-  warning2: A total of 22 samples were excluded from data release (i.e., are not contained in the public release files) due to poor genotyping quality (i.e., SNP Missingness >10%), unexpected unrelatedness with no confirmed use of reproductive technology, unexpected relatedness (i.e., identical samples across adults), and sex check mismatch.
-  warning2_title: Data Exclusions
-  references: |-
-    Committee on the Use of Race, Ethnicity, and Ancestry as Population Descriptors in Genomics Research, Board on Health Sciences Policy, Committee on Population, Health and Medicine Division, Division of Behavioral and Social Sciences and Education, & National Academies of Sciences, Engineering, and Medicine. (2023). Using population descriptors in genetics and genomics research. National Academies Press. <https://doi.org/10.17226/26902>
-    Martschenko, D. O., Lee, S. S.-J., Meyer, M. N., & Parens, E. (2025). Social and behavioral genomics: On the ethics of the research and its downstream applications. _Annual Review of Genomics and Human Genetics_, 26(1), 425–447. <https://doi.org/10.1146/annurev-genom-011224-015733>
-    Meyer, M. N., Appelbaum, P. S., Benjamin, D. J., Callier, S. L., Comfort, N., Conley, D., Freese, J., Garrison, N. A., Hammonds, E. M., Harden, K. P., Lee, S. S.-J., Martin, A. R., Martschenko, D. O., Neale, B. M., Palmer, R. H. C., Tabery, J., Turkheimer, E., Turley, P., & Parens, E. (2023). Wrestling with social and behavioral genomics: Risks, potential benefits, and ethical responsibility. _The Hastings Center Report_, 53 Suppl 1, S2–S49. <https://doi.org/10.1002/hast.1477>
-  alert2_title: Population Descriptors
-  respondent_category: null
-  admin_notes: Using google docs for Illumina for now in place of forms - https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?tab=t.gi9ky13h9emu
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/illumina-gda-gwas/
-  email: lmoore@umn.edu
-  visits: Samples are assayed from one sample (from parent and child), but may come from any visit (V01-V06) based on DNA yields.
-  hbcd_mods3: null
-  primary_data_type: Concatenated data
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/illumina-gda-gwas/
-  alert4: null
-  acronym: GDA GWAS
-  warning3: null
-  alert4_title: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recojL45MiljQmOZB
-  warning1: The dataset includes two birth parents who are monozygotic twins (along with their respective families), which may complicate certain analyses. The participant IDs associated with this twin pair are under internal review and may be shared in a future update.
-  description: |-
-    ## Instrument Details
-
-    The genomic dataset generated from the **Illumina Global Diversity Array (GDA GWAS)** includes batch metadata and interlinked PLINK files (`.bed`, `.bim`, `.fam`) aligned to the **GRCh38/hg38 Build**. The dataset is provided in the release as concatenated data:
-  supp3_text: null
-  domain: Biospecimen & Omics
-  release: 3.0 (new instrument/info required)
-  alert3_title: Ethical Obligations to Minimize Risks
-  qc: |-
-    - Check that sampled ID and sample-specific barcodes match from Sampled File and Lasso Database.
-    - Check that genomic sex matches with sex at birth.
-    - Check that genetic relatedness of each sample matches Lasso data (i.e., that IBD is ~0.25 between the birth parent and child as well as siblings; evaluate potential twins).
-    - Use FHET estimates to check for plate contamination.
-    - Visually inspect plate effects on principal component space derived from PC-Relate.
-    - GDC Genomics QC pipeline analysis - see details and summary statistics [below](#gdc-genomics-qc-pipeline-analysis).
-  administration: In-person
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recojL45MiljQmOZB
-  scoring: null
-  resources: null
-  supp1_text: |-
-    ## Release Data
-
-
-    The GDA GWAS dataset is provided as **[concatenated data](http://127.0.0.1:8000/datacuration/file-based-data/#concatenated-data)** including the following files:
-
-    - `batch.info`: Plain-text file mapping participants to genotyping batches
-    - `hbcd.bed` (**[PLINK 1.9 .bed](https://www.cog-genomics.org/plink/1.9/formats#bed)**, distinct from UCSC BED): Binary genotype file
-    - `hbcd.bim` (**[PLINK 1.9 .bim](https://www.cog-genomics.org/plink/1.9/formats#bim)**): Variant information (chromosome, rsID, position, alleles)
-    - `hbcd.fam` (**[PLINK 1.9 .fam](https://www.cog-genomics.org/plink/1.9/formats#fam)**): Participant information
-    - `pcrelate_relatedness.grm.bin`: PC-Relate adjusted genetic relatedness matrix
-    - `pcrelate_relatedness.grm.N.bin`: PC-Relate pairwise common SNP count
-    - `pcrelate_relatedness.grm.id`: PC-Relate subject IDs, corresponding to the matrix column and row order
-    - `pcrelate_relatedness.tsv`
-    - `family_clusters.txt`
-  measure: Illumina Global Diversity GWAS Array (3.0)
-  construct: GWAS, EWAS, Transcriptome
 lead:
   status: Complete / Stable
   alert1: Incidents of pediatric lead poisoning have previously been linked to consumption of certain imported candies and food colorings, traditional remedies, or food storage vessels ([CDC 1998](https://www.cdc.gov/mmwr/preview/mmwrhtml/00055939.htm); [CDC 2025](https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html)). The identification of these specific sources in the Lead Exposures questionnaire is based on documented cases of lead poisoning tied to specific products and should not be interpreted as highlighting any group as having particularly high risk as a result of their race or ethnicity. It is important to recognize that products and sources others than those specifically listed may contain hazardous levels of lead.
@@ -3148,6 +2436,63 @@ urine:
   warning4_title: Large Gaps Between Collection and Analysis Dates
   measure: USDTL Urine Toxicology (Maternal)
   construct: Drug Panel, Toxins
+maps_easi:
+  supp2_text: null
+  status: Complete / Stable
+  alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
+  Date submitted: '2026-09-09'
+  hbcd_mods1: Alterations were made to replace “parent” with “parent/caregiver” where appropriate. In addition, measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or replaced with ‘my child’ when eliminating pronouns was not grammatically possible. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.
+  duration: 2 min
+  hbcd_mods2: null
+  full_name: Multidimensional Assessment Profile Temper Loss Scale-EASI, Toddlerhood (Short Form)
+  warning4: null
+  alert2: null
+  assessment_type: Questionnaire
+  table_name: mh_cg_mapstl_easi
+  warning2: null
+  references: |-
+    Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69, 101422. <https://doi.org/10.1016/j.dcn.2024.101422>
+
+    Wakschlag, L. S., Zhang, Y., Heffernan, M. E., MacNeill, L. A., Peterson, E. O., Friedland, S., Sass, A. J., Smith, J. D., Davis, M. M., & Wiggins, J. L. (2024). How EASI can it be? Closing the research-to-practice gap via population-based validation of the MAPS-EASI 2.0 early childhood irritability screener for translation to clinical use. _Translational issues in psychological science_, _10_(4), 435–448. <https://doi.org/10.1037/tps0000428>
+  respondent_category: Parent on Child
+  admin_notes: |-
+    DONE
+
+    9/14 Luci Notes: change are integrated after a fixing a few formatting errors (resulting from fillout form, not user's fault). SME can submit further changes as needed still, but for now I am marking as complete!
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps-easi/
+  email: isabel.jordan@northwestern.edu
+  visits: V07
+  hbcd_mods3: null
+  primary_data_type: Tabulated data
+  submitter_name: Isabel Jordan
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps-easi/
+  alert4: null
+  acronym: MAPS-EASI TL
+  warning3: null
+  alert4_title: null
+  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recbJKtKQ0yAjge19
+  warning1: The MAPS-EASI assesses normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.
+  description: Multidimensional Assessment Profiles- Early Assessment Screener for Irritability (**MAPS-EASI**) is a newly developed MAPS-TL (MAPS- Temper Loss) short form. MAPS-TL is a well-validated survey assessing irritability that serves as a tool for characterizing the developmental expression of early mental health risk. MAPS-TL measures a range of behaviors that encompass dysregulation, responsiveness to environmental input, and context. Irritability has been identified as an early dimensional marker of lifespan mental health risk. MAPS-TL aims to delineate the typical:atypical spectrum of irritability in early childhood and identify those young children at high probability of subsequent adaptational problems based on problems with dysregulation.
+  supp3_text: null
+  domain: Behavior & Caregiver-Child Interactions
+  release: 3.0 (new instrument/info required)
+  qc: |-
+    - Examine missingness by counting items answered per participant.
+    - Check age is within expected ranges (18-31 months).
+    - Review summary statistics and visualizations (item frequencies, age, prorated scores).
+    - Assess reliability (Cronbach’s α).
+  administration: Remote
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recbJKtKQ0yAjge19
+  scoring: "The 3 MAPS-EASI Irritability Scale items (`mapstl__easi_{001|002|003}`) are answered on a scale of 0:5. Possible responses include:\n\n0, Never | 1, Rarely (Less than once per week) | 2, Some (1-3) days of the week | 3, Most (4-6) days of the week | 4, Every day of the week | 5, Many times each day | Prefer not to answer \n\nThe 2 MAPS-EASI Impact Rating items (`mapstl__easi_{004|005}`) are answered on a scale of 0:3. Possible responses include:\n\n0, No problems | 1, Minimal problems | 2, A lot of problems | 3, Severe problems | Prefer not to answer \n\nA sum score is calculated for all Irritability Scale items. If any of the 3 Irritability Scale items are left unanswered (NA/Decline to answer/etc.), the sum score will be set to NA/missing (strict missingness rule)."
+  changelog: This is a new form for the MAPS-EASI at V07.
+  resources: null
+  supp1_text: null
+  measure: MAPS-EASI- Toddler
+  construct: Irritability
 rs:
   status: Complete / Stable
   alert1: null
@@ -3503,6 +2848,54 @@ vep:
   resources: null
   measure: VEP
   construct: null
+nsc:
+  supp2_text: null
+  status: Complete / Stable
+  alert1: 'Incarceration or arrest information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
+  Date submitted: '2026-08-24'
+  hbcd_mods1: null
+  hbcd_mods2: null
+  full_name: Incarceration History Questionnaire (Experiences with the criminal justice system)
+  warning4: null
+  alert2: null
+  assessment_type: Questionnaire
+  table_name: sed_cg_incarc
+  warning2: null
+  references: 'Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., ... & Wildeman, C. (2019). What percentage of Americans have ever had a family member incarcerated?: Evidence from the family history of incarceration survey (FamHIS). _Socius_, _5_, 2378023119829332. <https://doi.org/10.1177/237802311982>'
+  respondent_category: Parent on Self
+  admin_notes: DONE
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
+  email: japoehlmann@wisc.edu
+  visits: V07, V09
+  hbcd_mods3: null
+  primary_data_type: Tabulated data
+  submitter_name: Julie Poehlmann
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
+  alert4: null
+  acronym: NSC
+  warning3: null
+  alert4_title: null
+  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recepzgEHD3phY9C2
+  warning1: null
+  description: The Incarceration History Questionnaire is designed to capture maternal, paternal, and other household member's involvement with the criminal justice system in the prenatal and postnatal periods. It asks about arrest, incarceration, and community supervision. The questionnaire is completed by the adult participant in HBCD, usually the child's parent or caregiver. It is based on the Family History of Incarceration Survey, with questions added regarding the specific times in the child's life that involvement with the criminal justice system occurred, and if the justice involvement was related to substances. If incarceration occurred, the measure asks about the length of the incarceration.
+  supp3_text: null
+  domain: Social & Environmental Determinants
+  release: 3.0 (new instrument/info required)
+  qc: |-
+    - Monthly data consistency checks
+    - Handling of incomplete or missing responses by sites
+    - Common issues identified include missing data patterns
+  administration: Remote
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recepzgEHD3phY9C2
+  scoring: null
+  resources: null
+  supp1_text: null
+  measure: Incarceration Questionnaire
+  construct: Parental/Caregiver Arrests and incarceration during pregnancy and early childhood
 ecpromis:
   status: Complete / Stable
   alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
@@ -3613,48 +3006,29 @@ ecpromis_pags:
     - [PROMIS® Physical Activity Scoring Manual](http://127.0.0.1:8000/instruments/physhealth/images/PROMIS_Physical_Activity_Scoring_Manual_06.01.2023[95].pdf) (also see [Scoring Procedures](http://127.0.0.1:8000/instruments/physhealth/ecpromis-pags/#scoring) above)
   measure: ecPROMIS - Physical Activity/Greenspace
   construct: Physical Activity
-visit_info:
-  status: README updated & ready for SME review
-  alert1: null
-  hbcd_mods1: null
-  duration: null
-  full_name: Visit Level Information
-  warning4: null
-  alert2: null
-  assessment_type: Derived Data
-  table_name: par_visit_data
-  warning2: null
-  references: 'Gurka, K. K., Burris, H. H., Ciciolla, L., Coles, C. D., Massey, S. H., Newman, S., Rajagopalan, V., Smith, L. M., Zilverstand, A., Bandoli, G., & HBCD Pregnancy Exposures, Including Substances Workgroup. (2025). Assessment of maternal health and behavior during pregnancy in the HEALthy Brain and Child Development Study: Rationale and approach. _Developmental Cognitive Neuroscience_, 71(101494), 101494. <https://doi.org/10.1016/j.dcn.2024.101494>'
-  respondent_category: null
-  admin_notes: The basic demo and visit info READMEs are unique compared to other instrument READMEs, so much of the information on the page is hard-coded, meaning that it can't be updated directly via this form. Touch base with Luci first for how to best use this form
-  README URL: https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/
-  visits: null
-  hbcd_mods3: null
+mchat:
+  status: Not started
+  full_name: Modified Checklist for Autism in Toddlers R/F
+  assessment_type: Questionnaire
+  table_name: mh_ch_mchat
+  respondent_category: Parent on Child
+  admin_notes: null
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
+  visits: V07
   primary_data_type: Tabulated data
   README:
     label: View
-    url: https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/
-  acronym: null
-  warning3: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reciWOUlrPpHzkEE7
-  warning1: null
-  description: Visit Information (table name `par_visit_data`) is derived data that includes general visit information (site, participant withdrawal, etc.), substance use flags, and cohort and caregiver types.
-  slug: visit-level-information
-  domain: Demographics
-  release: '2.1'
-  qc: null
-  administration: null
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
+  acronym: MCHAT
+  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reciqnhrslaTGLOZY
+  domain: Behavior & Caregiver-Child Interactions
+  release: 3.0 (new instrument/info required)
+  administration: Remote
   Form:
     label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=reciWOUlrPpHzkEE7
-  scoring: null
-  resources: null
-  supp1_text: "## HBCD Cohorts & Caregiver Types\n\n**Cohort** information (`data_cohort`) includes cohort subtypes and caregiver Type A-E for each participant. Cohort subtypes are split into **Main Child** and **Multiple Birth**, with additional labeling for _Postnatal Recruits_ (_PNR_) and Multiple Birth siblings (_Main Child_ vs. _Sibling_):\n\n- **HBCD Main Child**\n    - HBCD Main Child\n    - HBCD Main Child - Postnatal Recruitment\n    - HBCD Main Child - Type _A - E_\n- **HBCD Multiple Birth**\n    - HBCD Multiple Birth - Main Child\n    - HBCD Multiple Birth - Postnatal Recruitment\n    - HBCD Multiple Birth - Postnatal Recruitment - Sibling\n    - HBCD Multiple Birth - Sibling\n    - HBCD Multiple Birth - Type _A - E_\n\n##### Caregiver Types\n\n- **Type A:** Temporary alternative caregiver\n- **Type B:** Change in primary caregiver (placement only) without change in legal custody (Birth Parent unable to complete visit)\n- **Type C:** Change in joint custody\n- **Type D:** Change\
-    \ in placement (Child removed from birth parent and placed in foster care)\n- **Type E:** Change in legal custody and placement (e.g., adoption)\n\n##### Postnatal Recruits (PNR)\n\nPostnatal Recruits are enrolled in the study after the child is born and complete a modified V01 and V02. The PNR cohort is only denoted for the V02 visit, with all subsequent visits falling under the same cohort as a standard participant. To check if a participant was part of a PNR cohort, users can either check the cohort at V02 or refer to the [PNR participant list](https://hbcd-docs-private.lassoinformatics.com/participant_lists/PNR_participants-supplemental.csv) available to DUC-authorized users via the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download).\n\n##### Multiple Birth Participants\n\nMultiple Birth cohorts include siblings/twins enrolled as **Main Child** and **Sibling** participants. Instruments or instrument fields that are specific to the caregiver and\
-    \ not child will be identical across siblings. For twins and triplets, age variables will also be identical (including those derived from jittered date of birth). See the supplemental [Multibirth participant list](https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv), including mapping between sibling participant IDs, is available available to DUC-authorized users via the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download).\n\n## Substance Use Flags\n\n**Substance use (SU) flag** variables indicate whether a participant met study-defined criteria for prenatal exposure to Alcohol, Nicotine, Cannabis, Opioids, or Stimulants ([Gurka et al., 2025](https://doi.org/10.1016/j.dcn.2024.101494)). Variables include instrument-specific and rolled up SU flags aggregate evidence across instruments to provide a single indicator per substance. Source study instruments include:\n\n- [Timeline Follow Back (TLFB)](https://docs.hbcdstudy.org/2.1/instruments/pregexp/su/tlfb):\
-    \ Self-reported use\n- [Health V2- Infancy](https://docs.hbcdstudy.org/2.1/instruments/pregexp/pex): Diagnosis of Neonatal Opioid Withdrawal Syndrome (NOWS) or Fetal Alcohol Syndrome (FAS)\n- [Nail](https://docs.hbcdstudy.org/2.1/instruments/biospec/nails) and/or [Urine](https://docs.hbcdstudy.org/2.1/instruments/biospec/urine) positive toxicology results\n\nPrenatal exposure thresholds that define when an instrument-specific report is considered positive for prenatal exposure are outlined in [Table 2 of Gurka et al. 2025](https://www.sciencedirect.com/science/article/pii/S1878929324001555?via%3Dihub#tbl0010). For each substance, the derived SU flag is positive if one or more of the corresponding instrument-specific reports are positive.\n\n##### SU Flag Variable Summary\n\n_All variable names are prefixed with `su_flag_`, omitted below for readability._\n\n<!-- HARD-CODED TABLE -->"
-  measure: Visit Level Information
-  construct: null
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=reciqnhrslaTGLOZY
+  measure: Modified Checklist for Autism in Toddlers
+  construct: Autism
 vineland_3:
   status: Complete / Stable
   alert1: The Pearson products, including the Vineland-3, are under copyright agreement. Data use is as signified by the test publisher,[ Pearson Education, Inc.](https://www.pearsonassessments.com/en-us/Store/Professional-Assessments/Behavior/Vineland-Adaptive-Behavior-Scales-%7C-Third-Edition/p/100001622?tab=overview).
@@ -3808,6 +3182,88 @@ echo:
     url: https://form.fillout.com/t/qaNxHYsnPBus?id=recoW261ACT4p564T
   measure: Early Child Care and Education
   construct: School
+illumina:
+  supp2_text: null
+  status: Work in progress
+  alert1: Data users are prohibited from using HBCD data, including genomic data, to identify participants or their relatives. You accessed these data under a Data Use Certification (DUC) agreement in which you and your institution agreed that you would not attempt to establish the individual identity of any study participants or their relatives. You also agreed to adhere to a minimum cell threshold of 10 in any public reporting of data (i.e., publications, posters, or other presentations). Protecting participants’ anonymity demonstrates respect for them and minimizes their research-related risks.
+  Date submitted: '2026-09-02'
+  hbcd_mods1: null
+  alert1_title: Anonymity
+  duration: null
+  hbcd_mods2: null
+  warning1_title: Twins Present in Birth Parents
+  full_name: Illumina Global Diversity GWAS Array
+  alert3: |-
+    Analysts using HBCD data have ethical obligations to minimize risks, including psychological, social, and economic risks, to research participants who generously provided their data. Risk minimization includes avoiding stigmatizing language when describing participants or the populations with which they identify, their phenotypes, or their genetic risks. It also includes carefully and clearly articulating limitations and caveats when reporting results and discussing how the results should and should not be interpreted or generalized.
+
+    Results generated from HBCD data may be used to guide policy (e.g., for social services, education, or public health interventions). Researchers should be aware of policy implications and controversies related to their research. Some approaches for ethically conducting and reporting research using genetic data are discussed in [Meyer et al. (2023)](https://doi.org/10.1002/hast.1477), *Wrestling with Social and Behavioral Genomics: Risks, Potential Benefits, and Ethical Responsibility* (**The Hastings Center Report**).
+
+    Researchers cannot control how others, including members of the public and policy makers, interpret scientific results we publish. However, we can take steps to minimize the likelihood our results will be misinterpreted or overinterpreted. In addition to clearly denoting limitations and caveats when reporting results, specific approaches for working with genomic data in this context are discussed in [Martshenko et al. (2025)](https://doi.org/10.1146/annurev-genom-011224-015733), *Social and Behavioral Genomics: On the Ethics of the Research and Its Downstream Applications* (**Annual Reviews Genomics and Human Genetics**). For examples of brief documents that explain social and behavioral genomics for non-experts, see “FAQs on Human Genomics Studies” at [https://www.thehastingscenter.org/genomics-research-index/](https://www.thehastingscenter.org/genomics-research-index/).
+  warning4: null
+  alert2: The use of population descriptors in genetic research has been varied and inconsistent. The National Academies of Science, Engineering, and Medicine (NASEM) published a report on the use of population descriptors, such as ancestry, race, ethnicity, and geography, in genomics (). We encourage data users working with HBCD genomics data to consult the NASEM report to understand the past and current use of population descriptors in genomics research as well as current best practice recommendations when analyzing or reporting on HBCD genomic data. Race and ethnicity represent social constructs that are conceptually distinct from ancestry inferred from genetic data. Description of race and ethnicity variables in HBCD may be found in [Basic Demographics](../../demo/basicdemo/#race-ethnicity-variables).
+  assessment_type: Biospecimen collection
+  table_name: genetics/genotype_microarray/GDA/
+  warning2: A total of 22 samples were excluded from data release (i.e., are not contained in the public release files) due to poor genotyping quality (i.e., SNP Missingness >10%), unexpected unrelatedness with no confirmed use of reproductive technology, unexpected relatedness (i.e., identical samples across adults), and sex check mismatch.
+  warning2_title: Data Exclusions
+  references: |-
+    Committee on the Use of Race, Ethnicity, and Ancestry as Population Descriptors in Genomics Research, Board on Health Sciences Policy, Committee on Population, Health and Medicine Division, Division of Behavioral and Social Sciences and Education, & National Academies of Sciences, Engineering, and Medicine. (2023). Using population descriptors in genetics and genomics research. National Academies Press. <https://doi.org/10.17226/26902>
+    Martschenko, D. O., Lee, S. S.-J., Meyer, M. N., & Parens, E. (2025). Social and behavioral genomics: On the ethics of the research and its downstream applications. _Annual Review of Genomics and Human Genetics_, 26(1), 425–447. <https://doi.org/10.1146/annurev-genom-011224-015733>
+    Meyer, M. N., Appelbaum, P. S., Benjamin, D. J., Callier, S. L., Comfort, N., Conley, D., Freese, J., Garrison, N. A., Hammonds, E. M., Harden, K. P., Lee, S. S.-J., Martin, A. R., Martschenko, D. O., Neale, B. M., Palmer, R. H. C., Tabery, J., Turkheimer, E., Turley, P., & Parens, E. (2023). Wrestling with social and behavioral genomics: Risks, potential benefits, and ethical responsibility. _The Hastings Center Report_, 53 Suppl 1, S2–S49. <https://doi.org/10.1002/hast.1477>
+  alert2_title: Population Descriptors
+  respondent_category: null
+  admin_notes: Using google docs for Illumina for now in place of forms - https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?tab=t.gi9ky13h9emu
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/illumina-gda-gwas/
+  email: lmoore@umn.edu
+  visits: Samples are assayed from one sample (from parent and child), but may come from any visit (V01-V06) based on DNA yields.
+  hbcd_mods3: null
+  primary_data_type: Concatenated data
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/illumina-gda-gwas/
+  alert4: null
+  acronym: GDA GWAS
+  warning3: null
+  alert4_title: null
+  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recojL45MiljQmOZB
+  warning1: The dataset includes two birth parents who are monozygotic twins (along with their respective families), which may complicate certain analyses. The participant IDs associated with this twin pair are under internal review and may be shared in a future update.
+  description: |-
+    ## Instrument Details
+
+    The genomic dataset generated from the **Illumina Global Diversity Array (GDA GWAS)** includes batch metadata and interlinked PLINK files (`.bed`, `.bim`, `.fam`) aligned to the **GRCh38/hg38 Build**. The dataset is provided in the release as concatenated data:
+  supp3_text: null
+  domain: Biospecimen & Omics
+  release: 3.0 (new instrument/info required)
+  alert3_title: Ethical Obligations to Minimize Risks
+  qc: |-
+    - Check that sampled ID and sample-specific barcodes match from Sampled File and Lasso Database.
+    - Check that genomic sex matches with sex at birth.
+    - Check that genetic relatedness of each sample matches Lasso data (i.e., that IBD is ~0.25 between the birth parent and child as well as siblings; evaluate potential twins).
+    - Use FHET estimates to check for plate contamination.
+    - Visually inspect plate effects on principal component space derived from PC-Relate.
+    - GDC Genomics QC pipeline analysis - see details and summary statistics [below](#gdc-genomics-qc-pipeline-analysis).
+  administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recojL45MiljQmOZB
+  scoring: null
+  resources: null
+  supp1_text: |-
+    ## Release Data
+
+
+    The GDA GWAS dataset is provided as **[concatenated data](http://127.0.0.1:8000/datacuration/file-based-data/#concatenated-data)** including the following files:
+
+    - `batch.info`: Plain-text file mapping participants to genotyping batches
+    - `hbcd.bed` (**[PLINK 1.9 .bed](https://www.cog-genomics.org/plink/1.9/formats#bed)**, distinct from UCSC BED): Binary genotype file
+    - `hbcd.bim` (**[PLINK 1.9 .bim](https://www.cog-genomics.org/plink/1.9/formats#bim)**): Variant information (chromosome, rsID, position, alleles)
+    - `hbcd.fam` (**[PLINK 1.9 .fam](https://www.cog-genomics.org/plink/1.9/formats#fam)**): Participant information
+    - `pcrelate_relatedness.grm.bin`: PC-Relate adjusted genetic relatedness matrix
+    - `pcrelate_relatedness.grm.N.bin`: PC-Relate pairwise common SNP count
+    - `pcrelate_relatedness.grm.id`: PC-Relate subject IDs, corresponding to the matrix column and row order
+    - `pcrelate_relatedness.tsv`
+    - `family_clusters.txt`
+  measure: Illumina Global Diversity GWAS Array (3.0)
+  construct: GWAS, EWAS, Transcriptome
 shs:
   status: Complete / Stable
   alert1: null
@@ -3981,6 +3437,88 @@ employment:
   hbcd_mods1_title: null
   measure: Current Employment
   construct: Current Employment
+static:
+  supp2_text: |-
+    ## Race & Ethnicity - ACS/Administrative Records
+
+    Race and ethnicity variables are computed from [ACS](https://www.census.gov/programs-surveys/acs.html) race and ethnicity items derived from administrative records collected during screening. Combined race and ethnicity variables are constructed following current federal standards. Participants who identify as **Hispanic or Latino** are categorized as `Hispanic`, regardless of race. Participants who select more than one race are categorized as **Multiracial**, with aggregation performed by either **ethnicity** based on Hispanic identity (_Multiracial (Hispanic)_ or _Multiracial (non-Hispanic)_) or **race** based on Black/African American identity (_Multiracial (Black)_ or _Multiracial (non-Black)_).
+  status: Work in progress
+  alert1: When using HBCD data, all data users must agree to responsible use as described in the DUC. When conceptualizing studies, analyzing data, and communicating findings from studies that use variables such as race, ethnicity, country of origin, and socioeconomic data, it is critical to consider strategies to avoid stigmatization of any groups and perpetuating harmful biases.
+  Date submitted: '2026-08-25'
+  hbcd_mods1: null
+  alert1_title: General Considerations
+  duration: null
+  hbcd_mods2: null
+  warning1_title: Missing Baseline Data for Postnatally Recruited Participants
+  full_name: Static Table
+  alert3: The Static Table includes both source race and ethnicity variables and derived variables that combine or aggregate responses into broader categories. These derived categories reflect specific HBCD coding decisions and should not be interpreted as equivalent to participants’ original self-reported responses. Researchers should review the variable descriptions and derivation rules and use the most appropriate variables for their research question.
+  warning4: null
+  alert2: Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race/ethnicity variables as a proxy for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.
+  assessment_type: Derived Data
+  table_name: par_gd_sdc
+  warning2: null
+  references: |-
+    All of Us Research Program. (2025, February 17). _Race and ethnicity data collection and transformation_. <https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-Ethnicity-Data-Collection-and-Transformation>
+
+    Reference for ADI [pending]
+  alert2_title: Use of Race & Ethnicity Variables
+  respondent_category: null
+  admin_notes: |-
+    8/29 Notes
+    Status: waiting on further updates from SME, prior updates complete
+
+    See [shared google sheet ](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177)to update tables (this sheet is autoparsed to populate the webpage)
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/static/
+  email: nslopen@hsph.harvard.edu
+  visits: V01, V02, V04, V06
+  hbcd_mods3: null
+  primary_data_type: Tabulated data
+  submitter_name: Natalie Slopen
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/static/
+  alert4: null
+  resource1_description: Tabs labeled with "Static-*" / "Dynamic-*" contain tables that are autoparsed to populate the tables included in the Static/Dynamic README pages
+  warning3: null
+  alert4_title: null
+  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recqmyWoJlgOLnHBD
+  warning1: For Release 3.0, some baseline variables may be missing for children recruited postnatally because we do not currently use data collected after recruitment to populate or impute otherwise unavailable prenatal or V01 values. Users should consider recruitment timing when interpreting missingness in Static Table variables. A future release may harmonize postnatal recruitment data.
+  description: |-
+    Datasets within the Demographics domain are intended to provide HBCD investigators with a concise set of commonly used variables without requiring users to navigate multiple source files. The Static Table is a **derived measure** with information computed from the following sources:
+
+    - **Administrative screening records** collected by HBCD Study staff, as reported by the birth parent, during the enrolment/screening process (e.g. the age and race/ethnicity of the pregnant study participant)
+    - **Demographics instruments** (Social & Environmental Determinants), including Adult and Child (`sed_{bm|ch}_demo`)
+
+    Static data include global, visit-agnostic variables that do not change over time and should be consistent across all visits for the adult/caregiver and beginning at Visit 2 for the child (post-birth). Note that if the release includes only V01 data for a given adult participant (due to ongoing enrollment, participant withdrawal, etc.), items about their child will be missing, as the child is not born until after the V01 visit.
+  supp3_text: |-
+    ## Race & Ethnicity - All of US
+
+    A second set of race and ethnicity variables are computed from a single All of Us ([AOU](https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-ethnicity-generalizations)) race/ethnicity item collected as part of the [Demographics](https://docs.hbcdstudy.org/3.0/instruments/SED/demo-cg/) instrument. For AOU-derived variables, combined race and ethnicity variables are constructed following [OMB](https://www.federalregister.gov/documents/2023/01/27/2023-01635/initial-proposals-for-updating-ombs-race-and-ethnicity-statistical-standards) standards: Participants who identify as Hispanic/Latino (alone or with another group) are categorized as _Hispanic or Latino_; all others are categorized as non-Hispanic (_Non-Hispanic {Asian|Black|White}_).
+  domain: Participant Derived
+  release: 3.0 (new instrument/info required)
+  alert3_title: Use of Constructed Race and Ethnicity Variables
+  qc: |-
+    - Data are visually inspected for unexpected values, distributions, missingness patterns, and other apparent anomalies.
+    - Potential issues identified during review are flagged for further investigation as needed.
+  administration: null
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recqmyWoJlgOLnHBD
+  resource1_url: https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177
+  scoring: N/A
+  changelog: this is ready for ReadMe review, but should be considered in progress until the table is created and finalized
+  resources: null
+  supp1_text: |-
+    ## Age, Sex, Baseline Socioeconomic & Other Variables
+
+    The Static Table includes selected child, birth-mother, household, recruitment, and contextual characteristics, represented once per HBCD child. The original source and collection timing vary by variable and are documented in the accompanying variable information.
+
+    Child sex, maternal age at V01, maternal age at delivery, gestational age at delivery, recruitment site, and selected other characteristics are derived from HBCD administrative or enrollment records. Baseline birth-mother education and V01 household income are derived from responses collected through the Adult Demographics instrument and are included here as baseline reference characteristics.
+
+    Because education and household income may change over time, their inclusion in the Static Demographics Table should not be interpreted as indicating that these characteristics are inherently fixed. The Dynamic Table provides longitudinal measures of caregiver education and household income.
+
+    The Static Table also includes a baseline residential Area Deprivation Index (ADI) measure derived using the residential address available at screening. This measure represents neighborhood context at that designated time point and should not be interpreted as a longitudinal measure of residential context.
+  measure: Static Table
 ehits:
   status: Complete / Stable
   hbcd_mods2_title: Instruction/Assessment Item Modifications
@@ -4085,6 +3623,122 @@ subst:
   resources: null
   measure: Substance Use Patterns in Pregnancy
   construct: Substance Use in Pregnancy
+mbcdi_2:
+  status: Not started
+  alert1: The CDI forms are well-documented and widely used assessments. We note that percentile scores were calculated based on the norms described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023), see additional references below. See [HBCD Modifications](#hbcd-mod) for a description of how the CDI-WG is administered to children with exposure to different languages; users may want to consider the [Multilingual Language Development](../mlds) questionnaire in conjunction with the CDI.
+  warning3_title: Benchmark Age
+  hbcd_mods1: "Administration of the CDI-WG in English or Spanish is decided based on the results of the Multilingual Language Development questionnaire. \n\n- If the caregiver reports that the child has 30% or greater exposure to English and/or Spanish, they are prompted to complete the CDI in that language.\n- Children who are exposed to both English and Spanish at a greater than 30% level are prompted to complete both forms.\n- If caregivers report less than 30% exposure to either language, administration defaults to English."
+  duration: 20-60 min
+  hbcd_mods2: null
+  warning1_title: Provided Scores
+  full_name: 'MacArthur-Bates Communicative Development Inventory: Words and Sentences (Toddler)'
+  warning4: null
+  alert2: null
+  assessment_type: Questionnaire
+  table_name: ncl_ch_cdiwsen; ncl_ch_wses
+  warning2: Note that in some cases, the caregiver endorsed all items in certain sections of the Web-CDI form. These cases are included in the released data as completed by the caregiver, but users may take caution in interpretation.
+  warning2_title: Cases Where All Items Endorsed
+  references: |-
+    deMayo, B., Kellier, D., Braginsky, M., Bergmann, C., Hendriks, C., Rowland, C., et al. (2021). Web-CDI: A system for online administration of the MacArthur-Bates Communicative Development Inventories. _Language Development Research_, 1, 55–98. <https://doi.org/10.31234/osf.io/8mjx9>
+    Marchman, V. A., Dale, P. S., & Fenson, L. (2023). _The MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual_ (V. A. Marchman, P. S. Dale, & L. Fenson, Eds.; 3rd ed.). Baltimore, MD: Brookes Publishing Co.
+    Marchman, V. A., & Dale, P. S. (2023). The MacArthur-Bates Communicative Development Inventories: Updates from the CDI advisory board. _Frontiers in Psychology_, 14, 1170303. <https://doi.org/10.3389/fpsyg.2023.1170303>
+  respondent_category: Parent on Child
+  admin_notes: The content here is copied from the **Words and Gestures form**
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mbcdi-2/
+  visits: V06, V07
+  hbcd_mods3: null
+  primary_data_type: Tabulated data
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mbcdi-2/
+  alert4: null
+  acronym: MBCDI-2
+  warning3: The CDI includes a benchmark age that is based on entry by the caregiver. Note that the CDI is not administered until 9 months of age and data entry errors may occur. Users may want to use this in conjunction with other data on the child's age included elsewhere in HBCD.
+  alert4_title: null
+  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rect66sWwFnTWbtmz
+  warning1: The CDI-WG provides percentiles score, but does not provide standard scores.
+  description: The **MacArthur-Bates Communicative Development Inventories, Words and Gestures**, Web Version, English and Spanish is a caregiver -report assessment of children’s early language development, including expressive and receptive vocabulary and gesture. In HBCD, the Words and Gestures form is administered up to 16 months of age. Beginning at 16 months of age, the Words and Gestures form the Words and Sentences form. See details about both forms at <https://mb-cdi.stanford.edu/>.
+  domain: Neurocognition & Language
+  release: 3.0 (new instrument/info required)
+  qc: |-
+    - HBCD SOPs instruct RAs to present instructions exactly as shown in the existing [https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf](http://127.0.0.1:8000/instruments/neurocog/macarthur-bates/%3Ca%20href=).
+    - All data collection, calculation of summary scores, and percentile scores are completed within Web-CDI and then imported into the HBCD database. Data were reviewed to verify that fields are appropriately labeled upon import, and range checks of all summary variables were performed.
+  administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rect66sWwFnTWbtmz
+  scoring: This instrument is proprietary. All summary scores (e.g. Total Gestures, Words Understood, Words Produced) and associated percentiles (with and without adjustment for child sex) were computed within Web-CDI using the most updated norms within that software and described in MacArthur-Bates User's Guide and Technical Manual, 3rd Edition (Marchman, Dale, and Fenson, 2023).  The child’s age at administration for purposes of scoring the CDI is entered by the caregiver as part of the Web-CDI form. The caregiver also notes on this form if the child was born prematurely and if so, by how many weeks. The Web-CDI then provides percentile scores both unadjusted and adjusted for prematurity. See <https://webcdi.org/static/webcdi/pdf/webCDIManual.pdf>.
+  resources: <https://mb-cdi.stanford.edu/>
+  hbcd_mods1_title: English vs. Spanish Administration
+  measure: MacArthur-Bates CDI-2 Language
+  construct: Language Development
+nbtb:
+  supp2_text: null
+  status: Complete / Stable
+  alert1: Performance of the NIH Baby Toolbox reflects the child's developmental status, but various factors might influence the results of the assessment that should be taken into account.
+  Date submitted: '2026-08-29'
+  hbcd_mods1: null
+  duration: V03 45-60 min / V04 15-20 min / V06-40-60 min
+  hbcd_mods2: null
+  warning1_title: Changes in NIH Baby Toolbox Versions in HBCD
+  full_name: NIH Baby Toolbox
+  alert3: The NIH Baby Toolbox is available in English and Spanish. The child's exposure to other languages may also impact their performance. The Multilingual Language Development questionnaire was used to screen for parental preference for the test to be administered in Spanish or English. The instrument also documents other language exposures that the child may have. Exposure to languages other than Spanish or English may impact a child's performance. In addition, some items on the test may be impacted by environmental experiences related to the task or items used. In these cases, the test may underestimate the child's developmental status.
+  warning4: null
+  alert2: The test was given in the context of a battery of tests and procedures administered to the child and his/her caregiver during the course of an extended visit. Some children may experience fatigue from this and this may have adversely impacted their performance. Ratings of arousal level of the child before and after the assessment may help in identifying situations where the child may have under-performed.
+  assessment_type: Cognitive testing
+  table_name: nc_ch_nbtb
+  warning2: The V04 NIH Baby Toolbox assessment was reduced to shorten the length of the V04 visit during the course of the study. Some participants will have outcomes on subtests that were not administered to later participants.
+  warning2_title: Reduction in the HBCD V04 Battery
+  references: |-
+    Blackwell, C. K. (2025). Bringing developmental assessment to the 21st century: The NIH Baby Toolbox. _Infant Behavior and Development, 80_, 102127. <https://doi.org/10.1016/j.infbeh.2025.102127>
+
+    Han, Y. C., Dworak, E. M., Mansolf, M., Adam, H., Yao, L., Novack, M. A., ... & Kaat, A. J. (2025). _NIH Baby Toolbox® methodology and norms development_. _Infant Behavior and Development, 80_. <https://pubmed.ncbi.nlm.nih.gov/40743801/>
+
+    Morris AS, Wakschlag L, Krogh-Jespersen S, Fox N, Planalp B, Perlman SB, Shuffrey LC, Smith B, Lorenzo NE, Amso D, Coles CD, Johnson SP. Principles for Guiding the Selection of Early Childhood Neurodevelopmental Risk and Resilience Measures: HEALthy Brain and Child Development Study as an Exemplar. Advers Resil Sci. 2020;1(4):247-267. doi: 10.1007/s42844-020-00025-3. Epub 2020 Nov 9. PMID: 33196052; PMCID: PMC7649097.
+
+    NIH Infant and Toddler (Baby) Toolbox (2024, June 24, 2022) Retrieved from <https://neuroscienceblueprint.nih.gov/resources-tools/blueprint-resources-tools-library/nih-infant-and-toddler-baby-toolbox>
+
+    NIH Baby Toolbox. (n.d.). _Home_. Retrieved August 21, 2026, from <https://nihbabytoolbox.org/>
+
+    NIH Baby Toolbox. (n.d.). _Cognition assessments_ (Page 2 of 3). Retrieved August 21, 2026, from <https://nihbabytoolbox.org/domain/cognition/page/2/>
+  respondent_category: Child on Self
+  admin_notes: |-
+    8/29: marking this as DONE, feel free to submit further changes if needed however
+    8/24: update to include all BTB (1 Language & 2 Cognitive/Executive Function/Memory) per SME request! please mark as done if complete
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb/
+  email: jkabl01@emory.edu
+  visits: V03, V04, V06
+  hbcd_mods3: null
+  primary_data_type: Tabulated data
+  submitter_name: Julie Kable
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb/
+  alert4: null
+  acronym: NBTB
+  warning3: null
+  alert4_title: null
+  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rect6eIwToFbEGoVJ
+  warning1: HBCD implemented the beta version of the NIH Baby Toolbox that was used for collecting the standardization sample. In December of 2025, HBCD transitioned to the final standardized version that was made available to the public. Some subtests in the original version were not retained in the standardized version.  These subtests will have raw performance metrics but will not have standardized scores.
+  description: "The National Institute of Health (NIH) Infant and Toddler Toolbox (NBT) is a new nationally-normed assessment. HBCD administered modules to measure cognition, language, early mathematics/numeracy, and executive function in children between 1- and 42-months of age. Assessments include direct child assessment and observations supplemented as needed by reporting from parents or legal guardians. In addition, gaze-based measures were used to assess aspects of cognitive functioning in children under 24 months of age and touch screen measures were used for children who were 24 months or older.  The NIH Baby Toolbox Cognition Domain provides individual performance measures or scores and composite scores. \n\nAdditional supplemental tests were also used that do not contribute to the composites but can be used to better understand the child's cognitive skills.  Please see the NBT instructional manual for details. These are available from [NIH Baby Toolbox® Manuals & Test Materials](https://resources.nihtoolbox.org/manuals-and-test-materials/nih-baby-toolbox-documentation/)."
+  supp3_text: null
+  domain: Neurocognition & Language
+  release: 3.0 (new instrument/info required)
+  qc: |-
+    The Infant Testing Core of HBCD were trained and certified by the developers of the NIH Baby Toolbox.  HBCD Study staff were provided trainings from the developers of the NIH Baby Toolbox via zoom. The ITC of HBCD provided additional trainings and then certified HBCD staff to ensure adherence to standardized procedures.
+
+    During testing, responses were entered into NIH Baby Toolbox software, which automatically applied scoring rules and generated standardized scores. Data underwent quality checks at both the individual and cohort levels, including range and consistency checks, to identify potential errors or deviations.
+
+    Completion rates were monitored across sites, with additional training provided when needed.
+  administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rect6eIwToFbEGoVJ
+  scoring: This is autoscored by the software and data are uploaded to a web server. Please see the NBT technical manual for details.  These are available from [NIH Baby Toolbox® Manuals & Test Materials](https://resources.nihtoolbox.org/manuals-and-test-materials/nih-baby-toolbox-documentation/).
+  resources: null
+  supp1_text: null
+  measure: NIH BTB
+  construct: Cognition/Executive Function/Memory, Language
 eeg:
   supp2_text: null
   status: Complete / Stable
@@ -4249,80 +3903,6 @@ fmri:
     label: Form Link
     url: https://form.fillout.com/t/qaNxHYsnPBus?id=recuUGVjvp50fU2Z4
   measure: Functional MRI
-erica:
-  status: Not started
-  alert1: |-
-    The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables—especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers—to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
-
-    The ERICA assesses variations in child behavior, parenting, and the caregiver-child relationship and should be interpreted within the context of the child's age and developmental stage. This is not a clinical or diagnostic instrument.
-  hbcd_mods1: null
-  duration: 20-30 min
-  hbcd_mods2: null
-  warning1_title: Integrated Analytic Dataset (REQUIRED)
-  full_name: Early Regulation in Context Assessment
-  warning4: The code for "caregiver irritable behavior" in Data Release 2.1 has a low base rate because few caregivers exhibited elevated irritability. We recommend dichotomizing (0 = 0 and >0 = 1) for analysis.
-  alert2: null
-  assessment_type: Questionnaire
-  table_name: |-
-    mh_cg_erica_3_9m
-    mh_cg_erica_rel_3_9m
-  warning2: Data Release 2.1 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month). Coded data for a subset of participants may be missing from this data release for various reasons. These data will be added in future releases.
-  warning2_title: General
-  references: |-
-    Krogh-Jespersen, S., MacNeill, L. A., Anderson, E. L., Stroup, H. E., Harriott, E. M., Gut, E., Blum, A., Fareedi, E., Fredian, K. M., Wert, S. L., Wakschlag, L. S., & Norton, E. S. (2021). Disruption leads to methodological and analytic innovation in developmental sciences: Recommendations for remote administration and dealing with messy data. _Frontiers in Psychology_, 12, 732312. <https://doi.org/10.3389/fpsyg.2021.732312>
-    Edwards, R. C., Planalp, E. M., Bosquet Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interactions Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child interactions in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69(101422), 101422.<https://doi.org/10.1016/j.dcn.2024.101422>
-  respondent_category: Parent on Child
-  admin_notes: This page includes a hard-coded table that cannot be updated via this form - contact Luci to update table if needed
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/erica/
-  visits: V03
-  hbcd_mods3: null
-  primary_data_type: Tabulated data
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/erica/
-  acronym: ERICA
-  resource1_description: 'ERICA-inter-rater-reliability-2.1.csv file used to parse to create table under Coding Reliability Stats: https://docs.hbcdstudy.org/latest/instruments/bcgi/erica/#coding-reliability-statistics'
-  warning3: The ERICA was administered in Spanish and English. The language of administration (i.e., language in which RAs delivered the instructions) does not always correspond with the language spoken by the caregiver/child during the activities. All videos in which the dyad speaks Spanish during the activities were coded by fully Spanish-English bilingual coders.
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec1WAh2tmcUCsPLU
-  warning1: |-
-    Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (`mh_cg_erica_rel_3_9m`) into the primary coding data (`mh_cg_erica_3_9m`). **Failure to integrate these data correctly prior to analysis will result in incorrect results.** In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release. Download the following files:
-
-    - [Integration Instructions](https://docs.hbcdstudy.org/latest/resources/ERICA_2.1_Integrated_Analytic_Data_INSTRUCTIONS.pdf)
-    - [ERICA_2.1_Analytic_REMOVALS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_Analytic_REMOVALS.csv) (in [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/)- DUC access required)
-    - [ERICA_2.1_DataError_EXCLUSIONS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv) (in [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com)- DUC access required)
-  description: "The Early Regulation in Context Assessment (**ERICA**) is a standardized observational paradigm that is adapted from the well-validated Disruptive Behavior Diagnostic Observation Schedule (DB-DOS) ([Krogh-Jespersen et al. 2022](https://doi.org/10.3389/fpsyg.2021.732312)). The ERICA assesses early child regulation in the context of the caregiver-child relationship via a series of five brief, developmentally appropriate activities that “press” for regulation within the dyad (e.g., frustration, engagement, enjoyment). The ERICA is coded using a one-pass, global coding system adapted for HBCD. Seven codes are organized across child, caregiver, and dyadic domains:\n\n- **Child:** Positive affect, Irritability, Social engagement\n- **Caregiver**: Responsive behavior, Irritable behavior, Directive behavior\n- **Dyadic**: Caregiver–child connectedness \n\nCodes are scored on a 4-point scale (0-3), reflecting the frequency, intensity, and duration of observed behaviors across the\
-    \ paradigm, with higher scores indicating higher levels of observed behavior. See [Edwards et al. (2024)](https://doi.org/10.1016/j.dcn.2024.101422) for additional details on the ERICA paradigm and adaptation for HBCD."
-  domain: Behavior & Caregiver-Child Interactions
-  release: 3.0 (new instrument/info required)
-  qc: "**ERICA Site-Level Administration**\n\n- HBCD study staff were trained and certified by experienced ERICA administrators to ensure standardized administration procedures.\n- Ongoing administration quality was monitored through video review of at least 10% of administrations at each site, with additional reviews conducted for sites that did not meet fidelity benchmarks.\n- Completion rates were monitored, and site-level data on administration was reviewed for potential QC issues (e.g., frequent protocol interruptions or tech issues), with results informing additional site-level training and follow-up provided as needed. \n\n**Centralized Coding**\n\n- See [Centralized Coding of ERICA Videos](#centralized-coding-of-erica-videos) below for QC details"
-  administration: In-person
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec1WAh2tmcUCsPLU
-  resource1_url: https://github.com/nbdc-datahub/hbcd-docs/blob/main/docs/resources/tables/ERICA-inter-rater-reliability-2.1.csv
-  scoring: |-
-    Coders rate each construct at the activity level on a 4-point scale (None = 0, Low = 1, Medium = 2, High = 3). Activity-level ratings are then averaged across all activities to generate a continuous global score, ranging from 0-3, with higher scores reflecting higher levels of observed behavior.
-
-    Modifiers (-1, +1, and +2) may be used with three codes (_child irritability, caregiver responsive behavior, and dyadic connectedness_) to capture important qualitative distinctions. For example, for child irritability, a **+1** is added at the activity level when a child is highly irritable throughout an entire activity, with no recovery or re-engagement and a **+2** is added if a child becomes intensely dysregulated during an activity (e.g., intense crying with breath holding, gagging, other indications of intense dysregulation). When used, modifiers are included in the sum for the global scores. For caregiver responsive behavior, a **-1** is added at the activity level when a caregiver does not responds at all to intense dysregulation in a child, is delayed in responding to child distress and this results in the child becoming intensely dysregulated, or is repeatedly doing things that are dysregulating to the child, resulting in the child becoming more and more distressed. For dyadic connectedness, a **-1** is added at the activity level, when a child is distressed through much of the activity without any ability to be soothed by the caregiver and distress is not resolved by the end of the activity or during the immediate re-engagement period when transitioning to the next activity.
-
-    Modifiers are intended to weight the global score toward the higher or lower end of the 0-3 scale. When used, they are included in the sum for the global scores, however the scale is capped at 0-3, meaning the highest score possible is a 3.0, the lowest score possible is a 0. In cases where the use of modifiers results in global raw scores >3.0, the value is converted to a 3 prior to analysis; similarly, if modifiers result in a global raw score <0, the value is converted to a 0 prior to analysis.
-
-    Videos are coded and global scores generated as long as 3 out of the 5 ERICA activities are completed. If less than 3 activities are completed, the video is not coded and scores are not generated.
-
-    The following summary scores are produced:
-
-    - `mh_cg_erica_3_9m_a_raw` — Child Positive Affect
-    - `mh_cg_erica_3_9m_b_raw` — Child Irritability
-    - `mh_cg_erica_3_9m_c_raw` — Child Social Engagement
-    - `mh_cg_erica_3_9m_d_raw` — Caregiver Responsive Behavior
-    - `mh_cg_erica_3_9m_e_raw` — Caregiver Irritable Behavior
-    - `mh_cg_erica_3_9m_f_raw` — Caregiver Directive Behavior
-    - `mh_cg_erica_3_9m_g_raw` — Dyadic Connectedness
-  resources: null
-  supp1_text: "## Centralized Coding of ERICA Videos  \n\nVideos are coded based on a single-pass review, with data entered directly into the HBCD database. Basic steps to ensure data completeness and accuracy include:\n\n \n\n- Double data entry with conflict resolution to ensure accurate data entry\n- Regular review of dashboards and reports to identify missing data and unexpected score distributions\n- Completion reports cross-referenced with video files \n\n \n\n##### ERICA Coding Training and Reliability Monitoring\n\nCoders were trained and certified by coding experts under the supervision of ERICA developers. Certification required ≥80% agreement with expert ratings (exact agreement within ±0.5 decimal points per code). To ensure ongoing coder reliability, 20% of each coder's videos were randomly selected for double coding by experts (reliability coders) on a weekly basis. Coders who fell below 80% agreement for two consecutive weeks on any code were pulled from coding and re-trained/certified\
-    \ before continuing.\n\n \n\n##### Coding Reliability Statistics\n\n \n\nInter-rater reliability was quantified using a two-way mixed-effects intraclass correlation coefficient (ICC) (see table below). All codes were evaluated using ICC except for Caregiver Irritable Behavior. Due to its low base rate, this code was dichotomized and reliability was estimated using an unweighted kappa statistic. Updated reliability estimates may be provided in future data releases as additional data become available."
-  measure: Early Regulation in Context Assessment
-  construct: Emotional Regulation, Parenting, Caregiver-Child Relationship
 tlfb:
   status: Complete / Stable
   alert1: |-
@@ -4464,6 +4044,65 @@ ecpromis_peer:
     **_Prorated Score = _**_(Sum of answered items ÷ Number of answered items) × 4_
   measure: ecPROMIS Peer Relationships Scale
   construct: Peer Relationships
+blood:
+  supp2_text: null
+  status: Complete / Stable
+  alert1: null
+  Date submitted: '2026-08-29'
+  warning3_title: Missing Data Due to Contamination
+  hbcd_mods1: null
+  duration: 5 min
+  hbcd_mods2: null
+  warning1_title: Continuous Variables
+  full_name: USDTL Blood Toxicology (Maternal)
+  warning4: null
+  alert2: null
+  assessment_type: Biospecimen collection
+  table_name: bio_bm_biosample_blood
+  warning2: A substantial number of samples show unusually long intervals between collection and analysis (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs). We are working to determine whether this reflects a data entry or site-level issue and will provide an update once more information is available.
+  warning2_title: Large Gaps Between Collection and Analysis Dates
+  references: 'Sullivan, E. L., Bogdan, R., Bakhireva, L., Levitt, P., Jones, J., Sheldon, M., Croff, J. M., Thomason, M., Lo, J. O., MacIntyre, L., Shrivastava, S., Cioffredi, L.-A., Edlow, A. G., Howell, B. R., Chaiyachati, B. H., Lashley-Simms, N., Molloy, K., Lam, C., Stoermann, A. M., … HBCD Biospecimens Workgroup. (2024). Biospecimens in the HEALthy Brain and Child Development (HBCD) study: Rationale and protocol. Developmental Cognitive Neuroscience, 70(101451), 101451. <https://doi.org/10.1016/j.dcn.2024.101451>'
+  respondent_category: Parent on Self
+  admin_notes: |-
+    DONE
+
+    8/24: COMPLETE
+    8/20 Luci note: I have updated the README based on the changes submitted by Elinor Aug 20th (and the changes should render shortly) and reviewed the page for accuracy. I made one minor formatting change to turn the short list in the description to a single sentence ("PEth is confirmatory-testing only, with **20phsphtdetbsp (`c_peth_b_cat`)** as the confirmatory test and **Ethanol (`c_ethanol_b`)** as the class."). I will mark as complete for now and follow up with Elinor via email to inform her (while I'm still perfecting the workflow to hopefully add automated notifications and such)
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/blood
+  email: sullivel@ohsu.edu
+  visits: V01
+  hbcd_mods3: null
+  primary_data_type: Tabulated data
+  submitter_name: Elinor Sullivan
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/biospec/blood
+  alert4: null
+  acronym: Blood
+  warning3: Out of an abundance of caution there may be missing data for some sites based on the potential use of ethanol based products which may have caused contamination of assay results.
+  alert4_title: null
+  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recyzSFRJ2eDiSQy3
+  warning1: For all toxicology screens, continuous variables should be interpreted with caution based on the threshold limits of quantification (LOQs), or the cutoff concentration used to categorize metabolites as positive or negative (see **Blood Assay Thresholds PEth** below).
+  description: 'USDTL Blood is a toxicology screen for phosphatidylethanol (PEth) conducted on phlebotomist-collected venous blood pipetted onto dried blood spot cards. Processing of blood spot cards consists of preparing 3x 1/8” punches of dried blood spot followed by extraction using an organic solvent. Detection of PETH in the extract is accomplished with a single pass using LCMSMS:   <img src="https://github.com/nbdc-datahub/hbcd-docs/raw/main/docs/images/Fig1_blood.png" alt="PeTH test" width="600" height="auto" class="center">  Based on the predefined threshold below, the PEth test (`c_peth_b_cat`) is determined to be positive, negative, or canceled. Substance analytes are grouped into classes by analyte screening tests and confirmatory tests. PEth is confirmatory-testing only, with **20phsphtdetbsp (`c_peth_b_cat`)** as the confirmatory test and **Ethanol (`c_ethanol_b`)** as the class.'
+  supp3_text: null
+  domain: Biospecimen & Omics
+  release: 3.0 (new instrument/info required)
+  qc: Examine assay ranges and categorical versus continuous measures.
+  administration: In-person
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=recyzSFRJ2eDiSQy3
+  scoring: |-
+    Final PEth assay results follow these rules:
+
+    - If the PEth test is positive (`c_peth_b_cat`), the sample level (`c_any_specimen_b`) is positive (value = 1).
+    - If the PEth confirmatory tests is negative (value = 0), then sample-level (`c_any_specimen_b`) is negative (0).
+    - If the PEth confirmatory tests is cancelled (value = 3) then sample-level (`c_any_specimen_b`) is cancelled (value = 3).
+  changelog: Added an additional data warning and resource and edited the description.
+  resources: null
+  supp1_text: null
+  measure: USDTL Blood Toxicology
+  construct: Drug, Environmental Exposure (metals, nutrition, toxins, proteins)
 vs100:
   status: Complete / Stable
   duration: <1 min

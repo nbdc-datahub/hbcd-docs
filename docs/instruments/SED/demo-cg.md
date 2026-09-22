@@ -9,8 +9,8 @@
 
 <p>
 <div class="banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">See <a href="../demo/static/">Basic Demographics</a> for additional demographics variables derived from HBCD Demographics and administrative records collected during study enrolment/screening.</span>
+<span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+<span class="text">See the <a href="../#participant-derived">Participant Derived</a> tables for derived demographics including study enrollment and screening records.</span>
 </div>
 </p>
 
