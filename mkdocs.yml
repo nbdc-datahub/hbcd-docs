@@ -46,8 +46,6 @@ nav:
   - Data Access & Use:
     - Access & Download Data: access/download.md
     - Data Use Requirements: access/dua.md
-    # - Responsible Use: access/resp_data_use.md
-    # - Acknowledgment: access/dua.md
   - Study Standards & Conventions:
     - Study Protocol: standards/protocol.md
     - Metadata & Variable Names: standards/metadata.md
