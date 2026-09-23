@@ -4,11 +4,14 @@
 
 # Data Use Requirements
 
-## [1] Data Use Acknowledgement
+## Data Use Acknowledgement
 
 When using HBCD Study data, processes, plans, and/or concepts in a publication, please include the acknowledgement text below (also provided in the NBDC Responsible Data Use Training required for data access).
 
 **Copy the text below and adjust contents of text within [SQUARE BRACKETS]:**
+
+<div class="copy-box-wrapper" markdown="1">
+<div id="dua-ack-text" class="copy-box" markdown="1">
 
 **[DATA/PROCESS/PLAN/CONCEPT (select as applicable)]** used in the preparation of this article were obtained from the [HEALthy Brain and Child Development (HBCD) Study](https://hbcdstudy.org/), held in the NIH Brain Development Cohorts Data Sharing Platform. This is a multisite, longitudinal study designed to recruit approximately 7,000 families and follow them from pregnancy to early childhood.
 
@@ -18,7 +21,11 @@ A full list of participating sites is available at [Study Sites-HBCD Study](http
 
 The HBCD dataset grows and changes over time. The HBCD data used in this report came from **[NBDC Digital Object Identifier (DOI)]**. DOIs can be found at <https://www.nbdc-datahub.org/hbcd-study>.
 
-## [2] Responsible Data Use
+</div>
+<button class="copy-button" data-copy-target="dua-ack-text" title="Copy text to clipboard">Copy</button>
+</div>
+
+## Responsible Data Use
 
 ### Rationale
 The HBCD study dataset is a large, rich, and complex resource that can drive scientific discovery, provide a foundation for translation and implementation research, and inform development of public policy. To create this dataset, thousands of participants have given generously of their time and their bodies to help advance science. They have trusted us with sensitive information. The use of HBCD data carries ethical responsibilities to minimize risks of harm to participants and to treat them respectfully and justly. One way data users can respect participants’ contributions is by conducting careful, high-quality science.  

@@ -57,7 +57,7 @@ nav:
     - Data Structure Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md
     - File-Based Data: datacuration/file-based-data.md
-    - Tools: access/tools.md
+    - Tools: resources/tools.md
   - Study Measures:
     - Search All: instruments/index.md
     - Behavior, Biology, & Environment:

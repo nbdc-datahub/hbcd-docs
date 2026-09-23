@@ -51,20 +51,69 @@ window.addEventListener('hashchange', () => {
   }
 });
 
-// Click to copy 
+// Click to copy
+// Converts a copy-box's rendered HTML into a plain-text version that inlines
+// link URLs as "text (href)" instead of silently dropping them, since plain
+// innerText/textContent only keeps a link's visible label.
+function copyBoxNodeToPlainText(node) {
+  let result = "";
+  node.childNodes.forEach(function (child) {
+      if (child.nodeType === Node.TEXT_NODE) {
+          result += child.textContent;
+      } else if (child.nodeType === Node.ELEMENT_NODE) {
+          const tag = child.tagName.toLowerCase();
+          if (tag === "a" && child.href) {
+              const linkText = copyBoxNodeToPlainText(child).trim();
+              result += linkText === child.href ? linkText : `${linkText} (${child.href})`;
+          } else if (tag === "br") {
+              result += "\n";
+          } else if (tag === "p" || tag === "div" || tag === "li" || /^h[1-6]$/.test(tag)) {
+              result += copyBoxNodeToPlainText(child).trim() + "\n\n";
+          } else {
+              result += copyBoxNodeToPlainText(child);
+          }
+      }
+  });
+  return result;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".copy-button").forEach(function (button) {
       button.addEventListener("click", function () {
-          const textToCopy = this.previousElementSibling.textContent; // Get the text from the sibling element
-          navigator.clipboard.writeText(textToCopy).then(
-              () => {
-                  button.textContent = "Copied!";
-                  setTimeout(() => (button.textContent = "Copy"), 2000);
-              },
-              () => {
-                  button.textContent = "Error";
-              }
-          );
+          // Prefer an explicit data-copy-target id (needed when md_in_html wraps the
+          // button in its own <p>, breaking the previousElementSibling relationship);
+          // fall back to the sibling element for simpler, non-Markdown usages.
+          const targetId = this.dataset.copyTarget;
+          const source = targetId ? document.getElementById(targetId) : this.previousElementSibling;
+          if (!source) {
+              button.textContent = "Error";
+              return;
+          }
+
+          const plainText = copyBoxNodeToPlainText(source).trim().replace(/\n{3,}/g, "\n\n");
+          const markCopied = () => {
+              button.textContent = "Copied!";
+              setTimeout(() => (button.textContent = "Copy"), 2000);
+          };
+          const markError = () => {
+              button.textContent = "Error";
+          };
+
+          if (navigator.clipboard.write && window.ClipboardItem) {
+              // Write both flavors so pasting into a rich-text editor (Word, Google Docs,
+              // email) keeps real clickable links, while a plain-text paste still gets
+              // the URLs inlined via copyBoxNodeToPlainText above.
+              const item = new ClipboardItem({
+                  "text/plain": new Blob([plainText], { type: "text/plain" }),
+                  "text/html": new Blob([source.innerHTML], { type: "text/html" }),
+              });
+              navigator.clipboard.write([item]).then(
+                  markCopied,
+                  () => navigator.clipboard.writeText(plainText).then(markCopied, markError)
+              );
+          } else {
+              navigator.clipboard.writeText(plainText).then(markCopied, markError);
+          }
       });
   });
 });
@@ -72,8 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Color pills along a light -> dark shade of the site's blue (#199bd6),
 // ordered by the numeric version embedded in each pill's value
-// (e.g. "30.1" -> 30.1, "R3.0" -> 3.0), so color tracks progression
-// rather than being pseudo-random per value.
 const PILL_GRADIENT_HUE = 199;
 const PILL_GRADIENT_SATURATION = 79;
 const PILL_GRADIENT_LIGHTNESS_START = 75; // light blue

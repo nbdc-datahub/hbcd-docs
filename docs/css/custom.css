@@ -233,6 +233,50 @@ h6 {
 
 
 /* =========================================================
+   COPY BOX — bordered text block with a click-to-copy button
+========================================================= */
+.copy-box-wrapper {
+  position: relative;
+  margin: 1.25rem 0;
+}
+/* md_in_html wraps the button in its own <p>; strip that margin so it doesn't
+   add extra space below the box (the button itself is positioned absolutely). */
+.copy-box-wrapper > p {
+  margin: 0;
+}
+.copy-box {
+  padding: 1rem 5.5rem 1rem 1.25rem;
+  background-color: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #199bd6;
+  border-radius: 6px;
+  color: #2f3742;
+}
+.copy-box p {
+  margin: 0 0 0.85em;
+}
+.copy-box p:last-child {
+  margin-bottom: 0;
+}
+.copy-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #fff;
+  background-color: #199bd6;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.copy-button:hover {
+  background-color: #157fb3;
+}
+
+/* =========================================================
    CODE BLOCKS
 ========================================================= */
 

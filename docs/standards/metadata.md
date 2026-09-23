@@ -60,7 +60,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   </li>
 </ul>
 <p>
-  <b>It is therefore critical that you specify column types during import</b>, particularly data type (<code>type_data</code>), using the accompanying metadata. See <a href="../../access/tools/#nbdctools">NBDCtools</a> for available functions to automate this process (e.g. <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a> for R users).
+  <b>It is therefore critical that you specify column types during import</b>, particularly data type (<code>type_data</code>), using the accompanying metadata. See <a href="../../resources/tools/#nbdctools">NBDCtools</a> for available functions to automate this process (e.g. <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a> for R users).
 </p>
 </div>
 <div class="info-section">
