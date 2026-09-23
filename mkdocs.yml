@@ -45,9 +45,9 @@ docs_dir: docs
 nav: 
   - Data Access & Use:
     - Access & Download Data: access/download.md
-    - Responsible Data Use: access/resp_data_use.md
-    - Acknowledgment: access/dua.md
-    - Tools: access/tools.md
+    - Data Use Requirements: access/dua.md
+    # - Responsible Use: access/resp_data_use.md
+    # - Acknowledgment: access/dua.md
   - Study Standards & Conventions:
     - Study Protocol: standards/protocol.md
     - Metadata & Variable Names: standards/metadata.md
@@ -57,6 +57,7 @@ nav:
     - Data Structure Overview: datacuration/overview.md
     - Tabulated Data: datacuration/phenotypes.md
     - File-Based Data: datacuration/file-based-data.md
+    - Tools: access/tools.md
   - Study Measures:
     - Search All: instruments/index.md
     - Behavior, Biology, & Environment:
