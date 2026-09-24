@@ -136,7 +136,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The <b>source</b> element in the <a href="../../standards/metadata/">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../standards/metadata/#naming-conventions">Naming Conventions</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../datacuration/phenotypes/#study-design-logic-child-centric-data-structure">here</a>.</p>
+<p>The <b>source</b> element in the <a href="../../standards/metadata/">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../standards/metadata/#naming-convention">Naming Convention</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../datacuration/phenotypes/#study-design-logic-child-centric-data-structure">here</a>.</p>
 </div>
 
 <div id="faq-age" class="banner" onclick="toggleCollapse(this)">
@@ -152,20 +152,6 @@
 <div class="collapsible-content">
 <p>See <a href="../../instruments/agevariables">Age Variable Definitions</a>.</p>
 </div>
-
-<!-- <div id="faq-underscores" class="banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text-with-link">
-    <span class="text">What is the significance of single versus double underscores in table and field names?</span>
-    <a class="anchor-link" href="#faq-underscores" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-    </a>
-    </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Instrument table and field names may contain either single or double underscores. Single underscores separate main naming components (e.g. the domain or source of the data) while double underscores separate subcomponents that provide additional details nested within the main naming components. See <a href="../../standards/naming-conventions/#convention-logic-rules">Naming Conventions</a> for full details.
-</div> -->
 
 ## Imaging Data
 
@@ -240,7 +226,7 @@ REVIEW & REVISE THIS FAQ
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Please refer to the <a href="../../standards/processing">HBCD Processing Pipelines</a> for an overview of the pipelines and software standards. For full documentation on how each pipeline was used for HBCD processing, please visit the external <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> page.</p>
+<p>Please refer to the <a href="../../standards/pipelines/">HBCD Processing Pipelines</a> for an overview of the pipelines and software standards. For full documentation on how each pipeline was used for HBCD processing, please visit the external <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/">HBCD Processing</a> page.</p>
 </div>
 
 <!-- <div id="faq-FS" class="banner" onclick="toggleCollapse(this)">
@@ -315,3 +301,27 @@ See <a href="../../instruments/mri/fmri/#m-crib-s-freesurfer">M-CRIB-S & FreeSur
 <p>If the cutoff is <b>severe (&gt;30%)</b>, the dMRI or fMRI series <b>fails QC</b>. <b>Mild (&lt;10%)</b> to <b>moderate (10–30%)</b> cutoff does not lead to QC failure, but regions outside the FOV will have missing values in the tabulated imaging data. The remaining brain areas remain usable.</p>
 <p>All QC metrics are provided to help researchers make informed decisions about data inclusion. If FOV cutoff is a potential issue for your analysis, refer to the <a href="../../instruments/mri/qc/#scanstsv">scans TSV</a> file for automated and manual FOV cutoff metrics.</p>
 </div>
+
+
+
+<!-- 
+REMOVED
+
+<div id="faq-underscores" class="banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+    <span class="text-with-link">
+    <span class="text">What is the significance of single versus double underscores in table and field names?</span>
+    <a class="anchor-link" href="#faq-underscores" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+    </a>
+    </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>Instrument table and field names may contain either single or double underscores. Single underscores separate main naming components (e.g. the domain or source of the data) while double underscores separate subcomponents that provide additional details nested within the main naming components. See <a href="../../standards/naming-conventions/#convention-logic-rules">Naming Convention</a> for full details.
+</div>
+
+
+-->
+
+

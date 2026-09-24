@@ -1877,9 +1877,9 @@ qmri:
   measure: Quantitative MRI
 dynamic:
   supp2_text: |-
-    ##Transition in Care variable
+    ## Transition in Care
 
-    The Transition in Care (TIC) variable in the dynamic table is derived from 2 measures: (a) the Transition in Care Screener, which is administered by Research Assistants prior to each visit starting with V2, and (b) the Transition in Care Questionnaire, which is completed by participants at V6 and V8. The TIC derived variable indicates whether or not a child ever experienced a change in primary caregiver, either temporary or permanent, and reflects informal placement with relatives as well as formal placements like foster care and kinship care. (defined as 0 = not experienced a TIC, and 1 = experienced a TIC).
+    The Transition in Care (TIC) variable in the Dynamic Participant Information dataset is derived from 2 measures: (a) the Transition in Care Screener, which is administered by Research Assistants prior to each visit starting with V2, and (b) the Transition in Care Questionnaire, which is completed by participants at V6 and V8. The TIC derived variable indicates whether or not a child ever experienced a change in primary caregiver, either temporary or permanent, and reflects informal placement with relatives as well as formal placements like foster care and kinship care. (defined as 0 = not experienced a TIC, and 1 = experienced a TIC).
 
     (link to TIC Screener and TIC Questionnaire READ ME documents, which provide more details and references)
   status: Work in progress
@@ -1993,7 +1993,7 @@ dynamic:
     ##### SU Flag Variable Summary
 
     _All variable names are prefixed with `su_flag_`, omitted below for readability._
-  measure: Dynamic Table
+  measure: Dynamic Participant Information
 home21:
   status: Complete / Stable
   alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables—especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers—to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
@@ -3511,14 +3511,14 @@ static:
   supp1_text: |-
     ## Age, Sex, Baseline Socioeconomic & Other Variables
 
-    The Static Table includes selected child, birth-mother, household, recruitment, and contextual characteristics, represented once per HBCD child. The original source and collection timing vary by variable and are documented in the accompanying variable information.
+    The Static Participant Information dataset includes selected child, birth-mother, household, recruitment, and contextual characteristics, represented once per HBCD child. The original source and collection timing vary by variable and are documented in the accompanying variable information.
 
     Child sex, maternal age at V01, maternal age at delivery, gestational age at delivery, recruitment site, and selected other characteristics are derived from HBCD administrative or enrollment records. Baseline birth-mother education and V01 household income are derived from responses collected through the Adult Demographics instrument and are included here as baseline reference characteristics.
 
     Because education and household income may change over time, their inclusion in the Static Demographics Table should not be interpreted as indicating that these characteristics are inherently fixed. The Dynamic Table provides longitudinal measures of caregiver education and household income.
 
-    The Static Table also includes a baseline residential Area Deprivation Index (ADI) measure derived using the residential address available at screening. This measure represents neighborhood context at that designated time point and should not be interpreted as a longitudinal measure of residential context.
-  measure: Static Table
+    Static Participant Information also includes a baseline residential Area Deprivation Index (ADI) measure derived using the residential address available at screening. This measure represents neighborhood context at that designated time point and should not be interpreted as a longitudinal measure of residential context.
+  measure: Static Participant Information
 ehits:
   status: Complete / Stable
   hbcd_mods2_title: Instruction/Assessment Item Modifications

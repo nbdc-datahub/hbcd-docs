@@ -23,9 +23,9 @@
 }
 </style>
 
-# Metadata & Table/Variable Naming Conventions
+# Metadata & Table/Variable Naming Convention
 
-Tabulated HBCD study data is organized into a standardized table format per study instrument/measure, with each table containing a set of variables. Both the metadata conventions and table/variable naming conventions follow NBDC standards and therefore largely align with the ABCD Study - see [Metadata](https://docs.abcdstudy.org/latest/documentation/curation/metadata.html) and [Naming conventions](https://docs.abcdstudy.org/latest/documentation/curation/naming.html) information within the ABCD data documentation site. Metadata is organized via a data dictionary following NBDC standards, which provides detailed information about table variables, including variable name, label, description, data type, etc. Table/variable naming conventions ensure consistency across instruments and derived datasets and intuitive parsing of variable meaning and structure.
+Tabulated HBCD study data is organized into a standardized table format per study instrument/measure, with each table containing a set of variables. Both metadata and table/variable naming conventions follow NBDC standards and therefore largely align with the ABCD Study - see [Metadata](https://docs.abcdstudy.org/latest/documentation/curation/metadata.html) and [Naming convention](https://docs.abcdstudy.org/latest/documentation/curation/naming.html) information within the ABCD data documentation site. Metadata is organized via a data dictionary following NBDC standards, which provides detailed information about table variables, including variable name, label, description, data type, etc. The table/variable naming convention ensure consistency across instruments and derived datasets and intuitive parsing of variable meaning and structure.
 
 ## NBDC Data Dictionary Elements
 
@@ -468,9 +468,9 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 </table>
 
 
-## Naming Conventions
+## Naming Convention
 
-The instrument table and variable names used for tabulated HBCD study data largely follow standardized naming conventions adapted from the [ABCD Study](https://docs.abcdstudy.org/latest/documentation/curation/naming.html). This ensures consistency across instruments and derived datasets, allowing for intuitive parsing of variable meaning and structure.
+The instrument table and variable names used for tabulated HBCD study data largely follow a standardized naming convention adapted from the [ABCD Study](https://docs.abcdstudy.org/latest/documentation/curation/naming.html). This ensures consistency across instruments and derived datasets, allowing for intuitive parsing of variable meaning and structure.
 
 ### Convention Logic & Rules
 
@@ -582,7 +582,7 @@ e.g., <code>mh_cg_ibqr_<span style="color: teal;"><b>beh</b></span>_001</code> =
 
 ### Exceptions
 
-Some table/variable names deviate from the standard naming conventions. One notable example is [tabulated derivatives](../datacuration/overview.md#tabulated-derivatives) generated from processed imaging and EEG data. These tables are named based on the pattern `domain_pipeline_derivative`, where `derivative` corresponds to the basename of the source derivative files. For example:       
+Some table/variable names deviate from the standard naming convention. One notable example is [tabulated derivatives](../datacuration/overview.md#tabulated-derivatives) generated from processed imaging and EEG data. These tables are named based on the pattern `domain_pipeline_derivative`, where `derivative` corresponds to the basename of the source derivative files. For example:       
 
 - The tabulated BIBSNet file: <code>img_bibsnet<span style="color: teal;">_space-T1w_desc-aseg_volumes</span>.tsv</code>
 - Is sourced from: <code>sub-[ID]_ses-[V0X]<span style="color: teal;">_space-T1w_desc-aseg_volumes</span>.tsv</code>

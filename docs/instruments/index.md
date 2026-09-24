@@ -449,12 +449,12 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
 </thead>
 <tbody>
 <tr>
-  <td><a href="demo/static/">Static Table</a></td>
+  <td><a href="demo/static/">Static Participant Information</a></td>
   <td>Static derived participant information</td>
   <td><code>par_gd_sdc</code></td>
 </tr>
 <tr>
-  <td><a href="demo/dynamic/">Dynamic Table</a></td>
+  <td><a href="demo/dynamic/">Dynamic Participant Information</a></td>
   <td>Dynamic derived participant information</td>
   <td><code>ADD</code></td>
 </tr>

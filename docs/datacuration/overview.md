@@ -209,20 +209,7 @@ hbcd/
     └── sub-[ID]_ses-[V0X]_scans.tsv         <span class="section"># Scan-level metadata</span>
 </pre>
 
-<div id="participant-session-scan-level-data" class="banner" onclick="toggleCollapse(this)">
-<span class="emoji">
-<i class="fa-solid fa-circle-info"></i>
-</span>
-<span class="text-with-link">
-    <span class="text">Participant-, session-, and scan-level metadata</span>
-    <a class="anchor-link" href="#participant-session-scan-level-data" title="Copy link">
-        <i class="fa-solid fa-link"></i>
-    </a>
-</span>
-<span class="arrow rotate">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Raw BIDS data include participant-, session-, and scan-level metadata:</p>
+#### Participant-, session-, and scan-level metadata
 <table class="table-no-vertical-lines">
 <thead><tr><th>Level</th><th>File</th><th>Description</th></tr></thead>
 <tbody>
@@ -231,8 +218,6 @@ hbcd/
 <tr><td>Scan</td><td><code>sub-[ID]_ses-[V0X]_scans.tsv</code></td><td>Per-scan information, including <a href="../../instruments/mri/qc/#location-in-release-data">raw data QC metrics</a> and scanner metadata.</td></tr>
 </tbody>
 </table>
-</div>
-<p></p>
 
 #### Derivatives (`derivatives/`)
 
