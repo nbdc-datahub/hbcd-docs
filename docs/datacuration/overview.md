@@ -2,7 +2,7 @@
 
 ## Folder Structure
 
-The HBCD dataset follows NBDC data structure standards established as part of the ABCD Study (<a href="https://docs.abcdstudy.org/latest/documentation/curation/structure.html">see details</a>), which incorporates the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. Release data are organized as displayed in the file tree below (see [How to read file trees](../resources/index.md#how-to-read-file-trees)). At a high level, data are organized into two categories: **[tabulated](#tabulated-data)** and **[file-based](#file-based-data)** data.
+The HBCD dataset follows NBDC data structure standards established as part of the ABCD Study (<a href="https://docs.abcdstudy.org/latest/documentation/curation/structure.html">see details</a>), which incorporates the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. Release data are organized as displayed in the file tree below (see [How to read file trees](../help/resources.md#how-to-read-file-trees)). At a high level, data are organized into two categories: **[tabulated](#tabulated-data)** and **[file-based](#file-based-data)** data.
 
 <pre class="folder-tree">
 hbcd/
@@ -67,7 +67,7 @@ Tabulated data are data across all participants organized tidy tables following 
 <div class="banner">
   <span class="emoji"><i class="fa-brands fa-python"></i></span>
   <span class="text">
-  See helper functions for loading Parquet files under <a href="../../resources/#load-parquet-files">Resources</a>.
+  See helper functions for loading Parquet files under <a href="../../help/resources/#load-parquet-files">Resources</a>.
   </span>
 </div>
 </p>
@@ -151,7 +151,7 @@ One of the key difference between these file types is that TSV/CSV file types st
   </li>
 </ul>
 <p>
-  <b>It is therefore critical that you specify column types during import</b>, particularly data type (<code>type_data</code>), using the accompanying metadata. See <a href="../../resources/tools/#nbdctools">NBDCtools</a> for available functions to automate this process (e.g. <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a> for R users).
+  <b>It is therefore critical that you specify column types during import</b>, particularly data type (<code>type_data</code>), using the accompanying metadata. See <a href="../../help/resources/#nbdctools">NBDCtools</a> for available functions to automate this process (e.g. <a href="https://software.nbdc-datahub.org/NBDCtools/reference/read_dsv_formatted.html"><code>read_dsv_formatted()</code></a> for R users).
 </p>
 </div>
 <p></p>

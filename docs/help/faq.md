@@ -212,7 +212,7 @@ REVIEW & REVISE THIS FAQ
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>MRI scanner information, including <i>scanner manufacturer, model, software, and serial_number</i>, can be found in the raw BIDS data, including the session-level <a href="../../datacuration/file-based-data/#participant-session-scan-level-data">scans TSV files</a> (<code>sub-[ID]_ses-[V0X]_scans.tsv</code>) and imaging file JSON metadata. Scanner information may be additionally provided as tabulated data in a future release.</p>
+<p>MRI scanner information, including <i>scanner manufacturer, model, software, and serial_number</i>, can be found in the raw BIDS data, including the session-level <a href="../../datacuration/overview/#participant-session-and-scan-level-metadata">scans TSV files</a> and imaging file JSON metadata. Scanner information may be additionally provided as tabulated data in a future release.</p>
 </div>
 
 <div id="faq-dataproc" class="banner" onclick="toggleCollapse(this)">
@@ -269,7 +269,7 @@ See <a href="../../instruments/mri/fmri/#m-crib-s-freesurfer">M-CRIB-S & FreeSur
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>HBCD image processing pipelines use field maps to perform distortion correction for structural and functional MRI data. Most researchers will likely use the processed data for their analyses and therefore do not need to use the fieldmaps for anything, as all pipeline output derivatives are already distortion corrected. However, if using the <a href="../../datacuration/file-based-data/#raw-bids">raw BIDS data</a> for your research, note that each fMRI acquisition will have a specific pair of fieldmaps associated with it, acquired in AP and PA phase encoding directions, located under <code>fmap/</code>. The matching EPI fieldmaps can easily be identified by the run number, specified by <code>run-[X]</code> in the filename (<a href="../../instruments/mri/fmri/#rawbids">see details</a>).</p>
+<p>HBCD image processing pipelines use field maps to perform distortion correction for structural and functional MRI data. Most researchers will likely use the processed data for their analyses and therefore do not need to use the fieldmaps for anything, as all pipeline output derivatives are already distortion corrected. However, if using raw BIDS, note that each fMRI acquisition will have a specific pair of fieldmaps associated with it, acquired in AP and PA phase encoding directions, located under <code>fmap/</code>. The matching EPI fieldmaps can easily be identified by the run number, specified by <code>run-[X]</code> in the filename.</p>
 </div>
 
 <div id="faq-qc" class="banner" onclick="toggleCollapse(this)">
