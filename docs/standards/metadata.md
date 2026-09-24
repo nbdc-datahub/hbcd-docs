@@ -382,7 +382,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   <td><code>identifier_column</code><i class="fa-solid fa-lock table-icon"></i></td>
   <td>Identifier column(s)</td>
   <td>
-    <a href="../../datacuration/phenotypes/#table-organization">Participant/session identifiers</a>
+    Participant/session identifiers
     <div class="dd-inline-list">
     <span>participant_id</span>
     <span>session_id</span>

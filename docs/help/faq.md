@@ -136,7 +136,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The <b>source</b> element in the <a href="../../standards/metadata/">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../standards/metadata/#naming-convention">Naming Convention</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../datacuration/phenotypes/#study-design-logic-child-centric-data-structure">here</a>.</p>
+<p>The <b>source</b> element in the <a href="../../standards/metadata/">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../standards/metadata/#naming-convention">Naming Convention</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../instruments/protocol/#study-design-logic-child-centric-data-structure">here</a>.</p>
 </div>
 
 <div id="faq-age" class="banner" onclick="toggleCollapse(this)">
@@ -182,7 +182,7 @@ REVIEW & REVISE THIS FAQ
 <ul>
 <li>.</li>
 <li>Processing pipelines, such as XCP-D (for structural and functional MRI) and <a href="../../instruments/mri/dmri/#qsiprep">QSIPrep</a> (for diffusion MRI), produce visual reports that can help guide data selection.</li>
-<li>Visual QC is performed on these reports using <a href="../../instruments/mri/brainswipes/">BrainSwipes</a>, and the results are available as <a href="../../datacuration/phenotypes">tabulated data</a>.</li>
+<li>Visual QC is performed on these reports using <a href="../../instruments/mri/brainswipes/">BrainSwipes</a>, and the results are available as tabulated data.</li>
 </ul>
 </div> -->
 
