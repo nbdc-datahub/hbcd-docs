@@ -297,7 +297,7 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
 
 <div class="table-legend">
   <span class="legend-item">
-    <i class="fa-solid fa-gear legend-icon"></i>
+    <i class="fa-solid fa-diagram-project legend-icon"></i>
     Tabulated pipeline derivatives
   </span>
 </div>
@@ -313,7 +313,7 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
 <tbody>
 <tr>
 <td>
-<a href="mri/smri/#bibsnet">BIBSNet</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
+<a href="mri/smri/#bibsnet">BIBSNet</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
   <td>Brain ROI Volumes</td>
   <td><code>img_bibsnet_space-<span class="blue-text">{T1w|T2w}</span>_desc-aseg_volumes</code></td>
 </tr>
@@ -326,7 +326,7 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
   </td>
 </tr>
 <tr>
-  <td><a href="mri/smri/#mriqc">MRIQC</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td><a href="mri/smri/#mriqc">MRIQC</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
   <td>Raw BIDS QC Metrics</td>
   <td><code>img_mriqc_<span class="blue-text">{T1w|T2w|bold}</span></code></td>
 </tr>
@@ -336,7 +336,7 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
   <td><code>mri_ra_chkl_scan</code> / <code>mri_ra_chkl_data</code></td>
 </tr>
 <tr>
-  <td><a href="mri/mrs/#derivatives">OSPREY-BIDS</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td><a href="mri/mrs/#derivatives">OSPREY-BIDS</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
   <td>Metabolites</td>
   <td>
     <code>img_osprey_<span class="blue-text">{HERCULES|unedited}</span>_*</code>
@@ -349,12 +349,12 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
   <td><code>mri_ra_prep</code></td>
 </tr>
 <tr>
-  <td><a href="mri/dmri/#qsiprep">QSIPrep</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td><a href="mri/dmri/#qsiprep">QSIPrep</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
   <td>QSIPrep QC Metrics</td>
   <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td> 
 </tr>
 <tr> 
-  <td><a href="mri/fmri/#xcp-d">XCP-D</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td><a href="mri/fmri/#xcp-d">XCP-D</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
   <td>Morph/fMRI metrics</td>
   <td>
     <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-*</code> <a href="mri/tables/xcpd.html">→ View full file list</a>

@@ -50,12 +50,14 @@ nav:
     - Study Protocol: standards/protocol.md
     - Metadata & Variable Names: standards/metadata.md
     - Age Variables: instruments/agevariables.md
-    - Processing & Derivative Standards: standards/processing/standards.md
-  - Data Structure & File Types:
-    - Data Structure Overview: datacuration/overview.md
-    - Tabulated Data: datacuration/phenotypes.md
-    - File-Based Data: datacuration/file-based-data.md
+    - Processing & Derivative Standards: standards/pipelines.md
+
+  - Resources:
+    - Guidance: resources/index.md
     - Tools: resources/tools.md
+
+  - Data Curation & Structure:
+    - Data Structure Overview: datacuration/overview.md
   - Study Measures:
     - Search All: instruments/index.md
     - Behavior, Biology, & Environment:

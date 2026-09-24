@@ -258,20 +258,6 @@ REVIEW & REVISE THIS FAQ
 See <a href="../../instruments/mri/fmri/#m-crib-s-freesurfer">M-CRIB-S & FreeSurfer Surface Reconstruction Methods</a> for details.</p>
 </div> -->
 
-<!-- <div id="faq-raw" class="banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text-with-link">
-    <span class="text">How can I download raw DICOM or source data?</span>
-    <a class="anchor-link" href="#faq-raw" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-    </a>
-    </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Unprocessed raw imaging DICOM files will be made publicly available in a <a href="../../changelog/issues-updates/#pending-updates">future release</a>. However, raw data converted to the Brain Imaging Data Structure (BIDS) standard is currently available - see <a href="../../datacuration/file-based-data/#raw-bids">Raw BIDS</a>.</p>
-</div> -->
-
 <!-- <div id="faq-dmri" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
     <span class="text-with-link">
