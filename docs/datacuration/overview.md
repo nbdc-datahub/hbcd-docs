@@ -36,7 +36,7 @@ hbcd/
 
 ## Tabulated Data
 
-Tabulated data are data across all participants organized tidy tables following a standard format with one row per participant session and one column per variable. This includes demographics, behavioral/phenotypic questionnaires, and select [tabulated pipeline derivatives](#tabulated-pipeline-derivatives). Tables follow the BIDS organizational structure so data from different sources can be linked by participant ID and visit number. Each table is available as:
+Tabulated data are data across all participants organized tidy tables following a standard format with one row per participant session and one column per variable. This includes demographics, behavioral/phenotypic questionnaires, and select [tabulated pipeline derivatives](#tabulated-derivatives). Tables follow the BIDS organizational structure so data from different sources can be linked by participant ID and visit number. Each table is available as:
 
 * **TSV/CSV**: plain text files for easy inspection and broad compatibility
 * **Parquet**: compressed files optimized for efficient analysis in Python and R ([see details](https://parquet.apache.org/))
@@ -209,13 +209,13 @@ hbcd/
     └── sub-[ID]_ses-[V0X]_scans.tsv         <span class="section"># Scan-level metadata</span>
 </pre>
 
-<div id="pipelines" class="banner" onclick="toggleCollapse(this)">
+<div id="participant-session-scan-level-data" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji">
 <i class="fa-solid fa-circle-info"></i>
 </span>
 <span class="text-with-link">
     <span class="text">Participant-, session-, and scan-level metadata</span>
-    <a class="anchor-link" href="#scoring" title="Copy link">
+    <a class="anchor-link" href="#participant-session-scan-level-data" title="Copy link">
         <i class="fa-solid fa-link"></i>
     </a>
 </span>

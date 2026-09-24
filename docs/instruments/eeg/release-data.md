@@ -61,7 +61,8 @@ hbcd/
 
 ## HBCD-MADE Derivatives
 
-EEG data were processed using [HBCD-MADE](https://docs-hbcd-made.readthedocs.io/), an adaptation of the Maryland Analysis of Developmental EEG (MADE) pipeline ([Debnath et al., 2020](https://doi.org/10.1111/psyp.13580)) developed specifically for the HBCD Study. HBCD-MADE is implemented as a containerized BIDS App that adheres to HBCD processing and derivative data standards. Full documentation of processing parameters, pipeline configuration, and file selection logic is available at the official [HBCD-MADE documentation site](https://docs-hbcd-made.readthedocs.io/) and external [HBCD Processing website](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/made.html).
+<!-- ## Centralized Coding of ERICA Videos -->
+{{ suppx(instruments.eeg, "1") }}
 
 <pre class="folder-tree">
 <span><a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
@@ -95,9 +96,9 @@ hbcd/
                     └── *_task-<span class="var">{FACE|MMN|RS|VEP}</span>_acq-eeg_run-[X]_MADEspecification.json
 </pre>
 
-##### File Selection For Processing
+<!-- ##### File Selection For Processing -->
 
-Not all raw EEG sessions are eligible for processing. Inclusion in the HBCD-MADE pipeline requires that sessions meet predefined quality control criteria. Common causes of exclusion include missing EEG capping images or very poor capping quality. For participants with multiple EEG acquisition attempts within a session, only the final run was processed and included in the MADE derivatives.
+{{ suppx(instruments.eeg, "2") }}
 
 ---
 

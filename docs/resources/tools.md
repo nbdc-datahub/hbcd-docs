@@ -9,7 +9,7 @@
 ## Recommended Tools
 
 ### Download Platforms
-HBCD study data can be downloaded via the [NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/) or [DEAP](https://hbcd.deapscience.com/#/home")- see [Access & Download Data](download.md#explore-download).
+HBCD study data can be downloaded via the [NBDC Data Access Platform](https://nbdc-datashare.lassoinformatics.com/) or [DEAP](https://hbcd.deapscience.com/#/home")- see [Access & Download Data](../access/download.md).
 
 ### Tabulated Data
 
@@ -32,7 +32,7 @@ For interactive visualization of MRI images, we recommend using either [ITK-Snap
 
 ### NMIND
 
-[NMIND](https://www.nmind.org/about) is a collaborative initiative dedicated to improving transparency, reproducibility, and efficiency in neuroimaging research. NMIND principles, standards, and tools were used to develop the HBCD [Processing & Derivative Data Standards](../standards/processing/standards.md). Explore a growing collection of tools tested and improved through the NMIND process at [Evaluated Tools](https://www.nmind.org/proceedings/).
+[NMIND](https://www.nmind.org/about) is a collaborative initiative dedicated to improving transparency, reproducibility, and efficiency in neuroimaging research. NMIND principles, standards, and tools were used to develop the HBCD [Processing & Derivative Data Standards](../standards/pipelines.md). Explore a growing collection of tools tested and improved through the NMIND process at [Evaluated Tools](https://www.nmind.org/proceedings/).
 
 ### ReproSchema
 

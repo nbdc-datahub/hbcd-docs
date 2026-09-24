@@ -2511,7 +2511,7 @@ rs:
     Jones, E. J. H., Goodwin, A., Orekhova, E., Charman, T., Dawson, G., Webb, S. J., & Johnson, M. H. (2020). Infant EEG theta modulation predicts childhood intelligence. _Scientific Reports_, 10(1), 11232. <https://doi.org/10.1038/s41598-020-67687-y>
     Whedon, M., Perry, N. B., & Bell, M. A. (2020). Relations between frontal EEG maturation and inhibitory control in preschool in the prediction of children’s early academic skills. _Brain and Cognition_, 145, 105636. <https://doi.org/10.1016/j.bandc.2020.105636>
   respondent_category: Child on Self
-  admin_notes: None
+  admin_notes: null
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/tasks/#video-resting-state-task
   email: kmannin4@umd.edu
   visits: V03, V04, V06
@@ -2820,7 +2820,7 @@ vep:
     Nazhvani, A. D., Boostani, R., Afrasiabi, S., & Sadatnezhad, K. (2013). Classification of ADHD and BMD patients using visual evoked potential. _Clinical Neurology and Neurosurgery_, 115(11), 2329–2335. <https://doi.org/10.1016/j.clineuro.2013.08.009>
     Shandiz, J. H., Heyrani, M., Sobhani-Rad, D., Salehinejad, Z., Shojaei, S., Khoshsima, M. J., Azimi, A., Yekta, A. A., & Yazdi, S. H. H. (2017). Pattern Visual Evoked Potentials in Dyslexic Children. _Journal of Ophthalmic & Vision Research_, 12(4), 402–406. <https://doi.org/10.4103/jovr.jovr_106_16>
   respondent_category: Child on Self
-  admin_notes: None
+  admin_notes: null
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/tasks/#visual-evoked-potential-task
   email: kmannin4@umd.edu
   visits: V03, V04, V06
@@ -3740,7 +3740,10 @@ nbtb:
   measure: NIH BTB
   construct: Cognition/Executive Function/Memory, Language
 eeg:
-  supp2_text: null
+  supp2_text: |-
+    ##### File Selection for Processing
+
+    Not all raw EEG sessions are eligible for processing. Inclusion in the HBCD-MADE pipeline requires that sessions meet predefined [quality control](http://127.0.0.1:8000/instruments/eeg/qc/#eeg-net-placement-capping-quality-ratings) criteria. Common causes of exclusion include missing EEG capping images or very poor capping quality. For participants with multiple EEG acquisition attempts within a session, **only the final run was processed and included in the MADE derivatives.**
   status: Complete / Stable
   alert1: The HBCD EEG data and EEG preprocessing outputs do not contain any personally identifiable information. It is important to consider that potentially stigmatizing conclusions could emerge from the inappropriate use of the EEG data together with available demographic information or questionnaires. Furthermore, all EEG tasks are all passive at the V03 age range and therefore conclusions should not be drawn about behavioral performance.
   Date submitted: '2026-09-22'
@@ -3773,7 +3776,7 @@ eeg:
     Fox, N. A., Pérez-Edgar, K., Morales, S., Brito, N. H., Campbell, A. M., Cavanagh, J. F., Gabard-Durnam, L. J., Hudac, C. M., Key, A. P., Larson-Prior, L. J., Pedapati, E. V., Norton, E. S., Reetzke, R., Roberts, T. P., Rutter, T. M., Scott, L. S., Shuffrey, L. C., Antúnez, M., Boylan, M. R., … Yoder, L. (2024). The development and structure of the Healthy Brain and Child Development (HBCD) study EEG Protocol. _Developmental Cognitive Neuroscience_, 69, 101447. <https://doi.org/10.1016/j.dcn.2024.101447>
     Mlandu, N., McCormick, S. A., Davel, L., Zieff, M. R., Bradford, L., Herr, D., Jacobs, C. A., Khumalo, A., Knipe, C., Madi, Z., Mazubane, T., Methola, B., Mhlakwaphalwa, T., Miles, M., Nabi, Z. G., Negota, R., Nkubungu, K., Pan, T., Samuels, R., … Gabard-Durnam, L. J. (2024). Evaluating a novel high-density EEG sensor net structure for improving inclusivity in infants with curly or tightly coiled hair. _Developmental Cognitive Neuroscience_, 67(101396), 101396. <https://doi.org/10.1016/j.dcn.2024.101396>
   respondent_category: Child on Self
-  admin_notes: The supplemental stimartifact page cannot be updated via this form - please reach out to Luci directly to make changes until form functionality is improved
+  admin_notes: null
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/
   email: kmannin4@umd.edu
   visits: V03, V04, V06
@@ -3806,17 +3809,10 @@ eeg:
     label: Form Link
     url: https://form.fillout.com/t/qaNxHYsnPBus?id=rectTp1YpywMK7Joe
   scoring: null
-  changelog: I made some small edits to the Uniformity Detection section.
+  changelog: I made some small edits to the Uniformity Detection section. - UPDATES INTEGRATED INTO SITE (LM 9/23)
   resources: null
   warning4_title: 'RS: Change in Video Content Between Visits'
-  supp1_text: |-
-    ## File Selection For Processing
-
-    Not all raw EEG sessions are eligible for processing. Inclusion in the HBCD-MADE pipeline requires that sessions meet predefined [quality control](http://127.0.0.1:8000/instruments/eeg/qc/#eeg-net-placement-capping-quality-ratings) criteria. Common causes of exclusion include missing EEG capping images or very poor capping quality. For participants with multiple EEG acquisition attempts within a session, **only the final run was processed and included in the MADE derivatives.**
-
-    ## Data Processing
-
-    EEG data were processed using **[HBCD-MADE](https://docs-hbcd-made.readthedocs.io/)**, an adaptation of the Maryland Analysis of Developmental EEG (MADE) pipeline ([Debnath et al., 2020](https://doi.org/10.1111/psyp.13580)) developed specifically for the HBCD Study. HBCD-MADE is implemented as a containerized BIDS App that adheres to HBCD [Processing & Derivative Data Standards](https://docs.hbcdstudy.org/2.1/standards/processing/standards/). Full documentation of processing parameters, pipeline configuration, and file selection logic is available at the official [HBCD-MADE documentation site](https://docs-hbcd-made.readthedocs.io/) and external [HBCD Processing website](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/made.html).
+  supp1_text: EEG data were processed using **[HBCD-MADE](https://docs-hbcd-made.readthedocs.io/)**, an adaptation of the Maryland Analysis of Developmental EEG (MADE) pipeline ([Debnath et al., 2020](https://doi.org/10.1111/psyp.13580)) developed specifically for the HBCD Study. HBCD-MADE is implemented as a containerized BIDS App that adheres to HBCD [Processing & Derivative Standards](../../standards/pipelines.md). Full documentation of processing parameters, pipeline configuration, and file selection logic is available at the official [HBCD-MADE documentation site](https://docs-hbcd-made.readthedocs.io/) and external [HBCD Processing website](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/made.html).
   measure: EEG Main
   construct: null
 screenq:
