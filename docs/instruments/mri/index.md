@@ -167,6 +167,17 @@ hbcd/
     └── osprey/
 </pre>
 
+
+
+
+
+
+
+
+
+
+<!-- REMOVED FOR 3.0 
+
 <div id="deriv-exclusions" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text-with-link">
@@ -194,7 +205,7 @@ The table below reports the percentage of session folders removed due to QC fail
 </tbody></table>
 </div>
 
-
+-->
 
 
 
