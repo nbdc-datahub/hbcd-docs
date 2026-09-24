@@ -47,14 +47,12 @@ nav:
     - Access & Download Data: access/download.md
     - Data Use Requirements: access/dua.md
 
-  - Study Standards & Conventions:
+  - Curation & Standards:
     - Study Protocol: standards/protocol.md
+    - Data Structure: datacuration/overview.md
     - Metadata & Variable Names: standards/metadata.md
     - Age Variables: instruments/agevariables.md
-    - Processing & Derivative Standards: standards/pipelines.md
-
-  - Data Curation & Structure:
-    - Data Structure Overview: datacuration/overview.md
+    - Processing & Derivative Standards: standards/pipelines.md    
 
   - Study Measures:
     - Search All: instruments/index.md
