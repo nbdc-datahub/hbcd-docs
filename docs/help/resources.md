@@ -2,8 +2,6 @@
 
 ## Recommended Tools
 
-***All of the following are free, open-source applications.***
-
 ### NBDC Sandbox   
 The [NBDC Sandbox](https://nbdc-safe.lassoinformatics.com/pun/sys/dashboard) provides a secure, cloud-based analysis environment designed to support data analysis workflows, particularly for neuroimaging and large-scale tabular datasets, without having to download and manage data locally. See the [NBDC Sandbox Tutorial Series](https://hdcc-sandbox-rtd.readthedocs.io/latest/) to get started.
 
@@ -11,6 +9,8 @@ The [NBDC Sandbox](https://nbdc-safe.lassoinformatics.com/pun/sys/dashboard) pro
 NBDCtools, available in both [R](https://software.nbdc-datahub.org/NBDCtools/) and [Python](https://software.nbdc-datahub.org/nbdctools-py/), is a package for creating custom, analysis-ready datasets by simply specifying the variable or table names you need. NBDCtools automatically retrieves the specified columns from locally downloaded HBCD tabulated data and assembles them into a single in-memory data frame, minimizing storage and memory use. This provides a flexible alternative to building datasets through the NBDC Data Access Platform or DEAP, eliminating the need to manually parse files or resolve formatting issues. In addition to dataset assembly, NBDCtools includes functions for working with shadow matrices as well as applying transformations and filters.   
 
 ### Brain Imaging Utilities
+
+*All of the following are free, open-source applications.*
 
 - **[ITK-Snap](http://www.itksnap.org/pmwiki/pmwiki.php)**: Recommended for interactive visualization of MRI images. See [Andy's Brain Blog](https://andysbrainbook.readthedocs.io/en/latest/ITK-Snap/ITK-Snap_Overview.html#itk-snap-overview) for primer and tutorials.
 - **[FSLeyes](https://fsl.fmrib.ox.ac.uk/fsl/docs/#/utilities/fsleyes)**: Also recommended for interactive visualization of MRI images. Part of the FSL software suite.
