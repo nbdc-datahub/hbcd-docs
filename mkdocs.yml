@@ -46,18 +46,16 @@ nav:
   - Data Access & Use:
     - Access & Download Data: access/download.md
     - Data Use Requirements: access/dua.md
+
   - Study Standards & Conventions:
     - Study Protocol: standards/protocol.md
     - Metadata & Variable Names: standards/metadata.md
     - Age Variables: instruments/agevariables.md
     - Processing & Derivative Standards: standards/pipelines.md
 
-  - Resources:
-    - Guidance: resources/index.md
-    - Tools: resources/tools.md
-
   - Data Curation & Structure:
     - Data Structure Overview: datacuration/overview.md
+
   - Study Measures:
     - Search All: instruments/index.md
     - Behavior, Biology, & Environment:
@@ -173,7 +171,9 @@ nav:
   - Release Notes: 
     - Release Notes & History: changelog/release-notes.md
     - Issues & Pending Updates: changelog/issues-updates.md
+
   - Help & Support:
+    - Tools & Resources: help/resources.md
     - FAQs: help/faq.md
     - Report Issues: help/reportissue.md
     - How To Cite Release Docs: help/citation.md
