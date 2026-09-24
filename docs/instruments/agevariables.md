@@ -10,7 +10,7 @@
 This page defines how age is represented for the child and birth parent across HBCD datasets. 
 
 ## Participant Derived
-The Static Participant Derived table contains global, static variables derived across administrative and instrument data. Age variables include the child's **Gestational Age at Delivery** as well as age variables specific to the birth parent, including **Maternal Age at V01** and **Maternal Age at Delivery**. See documentation under the derived [Static Table](demo/static.md#age-sex-baseline-socioeconomic-other-variables) measure for details.
+The Static Participant Derived table contains global, static variables derived across administrative and instrument data. Age variables include the child's **Gestational Age at Delivery** as well as age variables specific to the birth parent, including **Maternal Age at V01** and **Maternal Age at Delivery**. See documentation under the derived [Static Participant Information](demo/static.md#age-sex-baseline-socioeconomic-other-variables) dataset for details.
 
 ## Tabulated Instrument Data
 Age variables within tabulated instrument data describe the child’s age at instrument administration.

@@ -76,7 +76,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
   NBDC Data Access Platform: Site & Cohort Information
 </div>
 <p>
-  Datasets downloaded from the NBDC Data Access Platform contain two additional fields not listed in the data dictionary, <code>cohort</code> and <code>site</code>, derived directly from <strong>Visit Level Data</strong> table variables (<code>par_visit_data_{cohort/site}</code>) - see the <a href="../../instruments/demo/visitinfo">Visit Level Data</a> page for details.
+  Datasets downloaded from the NBDC Data Access Platform contain two additional fields not listed in the data dictionary, <code>cohort</code> and <code>site</code>, derived directly from the <a href="../../instruments/demo/static/">Static Participant Information</a> dataset (<code>par_gd_stc_{cohort/site}</code>).
 </p>
 </div>
 </div>
@@ -418,7 +418,7 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 </tbody>
 </table>
 
-### Variable Types
+## Variable Types
 
 <table class="table-no-vertical-lines dd">
 <thead>
@@ -446,9 +446,9 @@ Tabulated HBCD study data is organized into a standardized table format per stud
 <tr>
   <td>derived item</td>
   <td>
-      Derived from original participant data, either directly (e.g., <code>sex</code> from administrative records) or by combining variables (e.g., race and ethnicity)
+      Derived from original participant data or administrative records
       <div class="dd-inline-list">
-      See <a href="../../instruments/demo/static/">Basic Demographics</a> for examples
+      <span>sex, race and ethnicity, etc.</span>
       </div>
   </td>
 </tr>

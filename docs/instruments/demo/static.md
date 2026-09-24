@@ -6,7 +6,7 @@
 }
 </style>
 
-# Static Table
+# Static Participant Information
 
 {{ readme_summary(instruments.static) }}
 {{ alert_warning(instruments.static) }}

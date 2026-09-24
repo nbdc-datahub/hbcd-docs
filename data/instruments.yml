@@ -1890,12 +1890,12 @@ dynamic:
   duration: null
   hbcd_mods2: null
   warning1_title: Variables Are Not Available at Every Visit
-  full_name: Dynamic Table
+  full_name: Dynamic Participant Information
   alert3: 'TIC information alone or cross-tabulated with other HBCD data can result in cells containing data from 1 to 10 persons (“small cells”).  Small cells increase the risk that a participant can be identified.  Under the NBDC Data Use Certification agreement (DUC, Terms and Conditions # 5), you agreed NOT to use data from NBDC in a manner that establishes the individual identity of study participants or establishes identities of their relatives.  The DUC also prohibits you from publishing or otherwise disseminating derived data that could help identify persons. To help maintain anonymity, you agreed to use a minimum cell threshold of 10 in publications or other public reporting of the data and analyses.'
   warning4: null
   alert2: The Dynamic Table includes contextual measures linked to participants at specific study visits, including urban/rural classification and area-based social vulnerability measures. These variables characterize aspects of the geographic context associated with a participant at a designated time point and should not be interpreted as direct measures of an individual or family's characteristics or experiences. Researchers should consider the level at which each contextual variable is defined when selecting analyses and interpreting findings.
   assessment_type: Derived Data
-  table_name: TBD
+  table_name: par_gd_dyn
   warning2: null
   references: |-
     Gurka, K. K., Burris, H. H., Ciciolla, L., Coles, C. D., Massey, S. H., Newman, S., Rajagopalan, V., Smith, L. M., Zilverstand, A., Bandoli, G., & HBCD Pregnancy Exposures, Including Substances Workgroup. (2025). Assessment of maternal health and behavior during pregnancy in the HEALthy Brain and Child Development Study: Rationale and approach. _Developmental Cognitive Neuroscience_, 71(101494), 101494. <<https://doi.org/10.1016/j.dcn.2024.101494>>
@@ -1931,7 +1931,7 @@ dynamic:
   alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recSACxqruv4qvXiH
   warning1: The Dynamic Table contains one row per HBCD child per scheduled visit/session through V06, but not all variables are collected or applicable at every visit. A missing value may therefore indicate that a measure was not administered or applicable at that visit, that the scheduled visit was missed, or that the requested information was otherwise unavailable. Researchers should consider each variable's source and expected collection timing when interpreting longitudinal missingness.
-  description: Datasets within the Demographics domain are intended to provide HBCD investigators with a concise set of commonly used variables without requiring users to navigate multiple source files. The Dynamic Table is a **derived measure** with information computed from  study instruments such as the Adult and Child Demographics (`sed_{bm|ch}_demo`). Dynamic data include critical participant- and visit-level data that, unlike the Static Table variables, may vary across study visits.
+  description: Datasets within the Demographics domain are intended to provide HBCD investigators with a concise set of commonly used variables without requiring users to navigate multiple source files. The Dynamic Table is a **derived measure** with information computed from  study instruments such as the Adult and Child Demographics (`sed_{bm|ch}_demo`). Dynamic data include critical participant- and visit-level data that, unlike the Static Participant Information, may vary across study visits.
   supp3_text: null
   domain: Participant Derived
   release: 3.0 (new instrument/info required)
@@ -3450,12 +3450,12 @@ static:
   duration: null
   hbcd_mods2: null
   warning1_title: Missing Baseline Data for Postnatally Recruited Participants
-  full_name: Static Table
+  full_name: Static Participant Information
   alert3: The Static Table includes both source race and ethnicity variables and derived variables that combine or aggregate responses into broader categories. These derived categories reflect specific HBCD coding decisions and should not be interpreted as equivalent to participants’ original self-reported responses. Researchers should review the variable descriptions and derivation rules and use the most appropriate variables for their research question.
   warning4: null
   alert2: Race and ethnicity are collected as a part of the HBCD protocol to reflect social experiences (i.e., representing social constructs), and should not be conceptualized as biological, natural, intrinsic, or fixed categories of people. In addition, researchers sometimes use race/ethnicity variables as a proxy for unmeasured social experiences or environmental exposures. HBCD measures a wide variety of social experiences and environmental exposures. In analyzing HBCD data, race/ethnicity should not be used as a proxy for measured variables.
   assessment_type: Derived Data
-  table_name: par_gd_sdc
+  table_name: par_gd_stc
   warning2: null
   references: |-
     All of Us Research Program. (2025, February 17). _Race and ethnicity data collection and transformation_. <https://support.researchallofus.org/hc/en-us/articles/360039299632-Race-and-Ethnicity-Data-Collection-and-Transformation>
