@@ -67,7 +67,7 @@ Tabulated data are data across all participants organized tidy tables following 
 <div class="banner">
   <span class="emoji"><i class="fa-brands fa-python"></i></span>
   <span class="text">
-  See helper functions for loading Parquet files under <a href="../../resources/#load-parquet-files-pythonr">Resources</a>.
+  See helper functions for loading Parquet files under <a href="../../resources/#load-parquet-files">Resources</a>.
   </span>
 </div>
 </p>

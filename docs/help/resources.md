@@ -80,7 +80,7 @@ The following conventions are used to improve readability of file tree diagrams 
 <li>Some pipelines generate an <code>.html</code> visual summary report for quality assessment. These reports source images from a <code>figures/</code> directory within the derivatives folder. The contents of <code>figures/</code> are not listed for brevity.</li>
 </ul>
 
-### Load Parquet files (Python/R)
+### Loading Parquet files
 
 <pre>Loading parquet files in Python (<a href="https://docs.pola.rs/">polars</a> or <a href="https://pandas.pydata.org/docs/getting_started/index.html">pandas</a> module):<code>
   # Using `polars` module [RECOMMENDED]:
