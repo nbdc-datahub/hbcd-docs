@@ -124,11 +124,16 @@
 
 # Known Issues & Pending Updates 
 
-The tables below summarize known issues affecting the current data release and pending updates across study instruments. Entries are organized by domain and include the expected release in which each fix or update will be implemented. This page is updated regularly as new issues are reported. **To ask a question or report an issue, please submit a ticket through the [Help Center in the NBDC Data Access Platform](https://nbdc.lassoinformatics.com/issue-tracker)**.
+The tables below summarize known issues affecting the current data release and pending updates across study instruments. Entries are organized by domain and include the expected release in which each fix or update will be implemented. This page is updated regularly as new issues are reported. 
+
+<p>
+<div class="banner">
+<span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+<span class="text">Report issues via the <a href="https://nbdc-datashare.lassoinformatics.com/help-center">Help Center in the NBDC Data Access Platform</a> (<a href="https://nbdc.lassoinformatics.com/issue-tracker">see instructions</a>).</span>
+</div>
+</p>
 
 ---
-
-
 <p style="font-size: 1.2em; color: #555; text-align: center; line-height: 2;">
 <i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Known Issue &nbsp;&nbsp;&nbsp;
 <i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Pending Update
