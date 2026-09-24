@@ -165,7 +165,7 @@ One of the key difference between these file types is that TSV/CSV file types st
 <div class="banner">
   <span class="emoji"><i class="fa-brands fa-python"></i></span>
   <span class="text">
-  See helper functions for re-integrating shadow matrix information with the main table under <a href="../../resources/#shadow-matrices">Resources</a>.
+  See helper functions for re-integrating shadow matrix information with the main table under <a href="../../help/resources/#shadow-matrices">Resources</a>.
   </span>
 </div>
 </p>
