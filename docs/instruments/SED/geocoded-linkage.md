@@ -197,18 +197,3 @@
 
 {{ references(instruments.gled) }}
 
-
-
-
-
-<!-- ### Release Data
-
-The GLED dataset is provided as <a href="../../../datacuration/file-based-data/#concatenated-data">concatenated data</a>:
-
-
-<code>
-hbcd/
-└── concatenated/ 
-    └── geocoding/
-        └── HBCD_address_history_geocoded_filtered.csv
-</code> -->

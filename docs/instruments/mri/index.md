@@ -105,7 +105,7 @@ MRI and MRS release data includes:
 Each participant/session folder within `rawdata/` contains raw imaging data organized into modality-specific subfolders (`anat/`, `func/`, etc.), with filenames encoding acquisition details (task, direction, run, etc.).
 
 <pre class="folder-tree">
-<span><a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+<span><a href="../../help/resources/#how-to-read-file-trees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 
 hbcd/
 └── rawdata/

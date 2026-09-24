@@ -122,7 +122,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>HBCD Study data includes data in both tabulated and file-based formats - see the <a href="../../datacuration/overview">Data Structure Overview</a> for an explanation of how these file types.</p>
+<p>HBCD Study data includes data in both tabulated and file-based formats - see <a href="../../standards/structure/">Data Structure</a> for details.</p>
 </div>
 
 <div id="faq-subids" class="banner" onclick="toggleCollapse(this)">
@@ -136,7 +136,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The <b>source</b> element in the <a href="../../standards/metadata/">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../standards/metadata/#naming-convention">Naming Convention</a> for details. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child. Please see details of the design logic <a href="../../instruments/protocol/#study-design-logic-child-centric-data-structure">here</a>.</p>
+<p>The <b>source</b> element in the <a href="../../standards/metadata/">NBDC Data Dictionary</a> indicates whether the data came from the caregiver, child, etc. Source is also typically included in the table name itself, with some exceptions - see <a href="../../standards/metadata/#naming-convention">Naming Convention</a>. Note that, in the HBCD Study, <i>all</i> data are collected under the child’s subject ID, even when provided by the birth parent or another caregiver. This is because most information collected from caregivers pertains to the child - <a href="../../instruments/protocol/#study-design-logic-child-centric-data-structure">see details</a>.</p>
 </div>
 
 <div id="faq-age" class="banner" onclick="toggleCollapse(this)">
@@ -212,7 +212,7 @@ REVIEW & REVISE THIS FAQ
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>MRI scanner information, including <i>scanner manufacturer, model, software, and serial_number</i>, can be found in the raw BIDS data, including the session-level <a href="../../datacuration/overview/#participant-session-and-scan-level-metadata">scans TSV files</a> and imaging file JSON metadata. Scanner information may be additionally provided as tabulated data in a future release.</p>
+<p>MRI scanner information, including <i>scanner manufacturer, model, software, and serial_number</i>, can be found in the raw BIDS data, including the session-level <a href="../standards/structure/#participant-session-and-scan-level-metadata">scans TSV files</a> and imaging file JSON metadata. Scanner information may be additionally provided as tabulated data in a future release.</p>
 </div>
 
 <div id="faq-dataproc" class="banner" onclick="toggleCollapse(this)">

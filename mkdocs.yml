@@ -48,7 +48,7 @@ nav:
     - Data Use Requirements: access/dua.md
 
   - Curation & Standards:
-    - Data Structure: datacuration/overview.md
+    - Data Structure: standards/structure.md
     - Metadata & Variable Names: standards/metadata.md
     - Age Variables: instruments/agevariables.md
     - Processing & Derivative Standards: standards/pipelines.md    

@@ -2,9 +2,11 @@
 
 ## Folder Structure
 
-The HBCD dataset follows NBDC data structure standards established as part of the ABCD Study (<a href="https://docs.abcdstudy.org/latest/documentation/curation/structure.html">see details</a>), which incorporates the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. Release data are organized as displayed in the file tree below (see [How to read file trees](../help/resources.md#how-to-read-file-trees)). At a high level, data are organized into two categories: **[tabulated](#tabulated-data)** and **[file-based](#file-based-data)** data.
+The HBCD dataset follows NBDC data structure standards established as part of the [ABCD Study](https://docs.abcdstudy.org/latest/documentation/curation/structure.html), including the use of [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) wherever possible for cross-study consistency. Release data are organized as displayed in the file tree below, which include two key data structures covered on this page: **[tabulated](#tabulated-data)** and **[file-based](#file-based-data)** data.
 
 <pre class="folder-tree">
+<span><a href="../../help/resources/#how-to-read-file-trees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+
 hbcd/
 ├── rawdata/
 │   ├── phenotype/        <span class="section"># Tabulated data (demographics, behavior, etc.)</span>

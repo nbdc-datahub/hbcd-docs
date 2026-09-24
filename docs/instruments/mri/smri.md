@@ -52,7 +52,7 @@ hbcd/
                     ├── sub-[ID]_ses-[V0X]_space-<span class="var">{T1w|T2w}</span>_desc-aseg_volumes.tsv <span class="hashtag">(+JSON)</span>         
                     └── sub-[ID]_ses-[V0X]_space-<span class="var">{T1w|T2w}</span>_desc-aseg_brain-mask.nii.gz <span class="hashtag">(+JSON)</span>
 
-<span><a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+<span><a href="../../../help/resources/#how-to-read-file-trees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 </pre>
 </div>
 
@@ -220,7 +220,7 @@ hbcd/
                     |__ sub-[ID]_ses-[V0X]_run-[X]_space-<span class="var">{T1w|T2w}</span>_desc-brain_mask.nii.gz <span class="hashtag">(+JSON)</span>
                     |__ sub-[ID]_ses-[V0X]_run-[X]_<span class="var">{T1w|T2w}</span>.nii.gz <span class="hashtag">(+JSON)</span>
 
-<span><a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+<span><a href="../../../help/resources/#how-to-read-file-trees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 </pre>
 </div>
 

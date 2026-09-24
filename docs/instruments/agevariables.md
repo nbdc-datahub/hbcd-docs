@@ -57,7 +57,7 @@ Age variables within tabulated instrument data describe the child’s age at ins
 </table>
 
 ## File-Based Data
-Age variables within file-based data, provided within higher-level [session- and scan-level metadata](../datacuration/file-based-data.md#participant-session-scan-level-data), describe the child’s age on day of scan/data acquisition for MR, EEG, and biosensor data.
+Age variables within file-based data, provided within higher-level [session- and scan-level metadata](../standards/structure.md#participant-session-and-scan-level-metadata), describe the child’s age on day of scan/data acquisition for MR, EEG, and biosensor data.
 
 <table class="compact-table-no-vertical-lines">
 <thead>

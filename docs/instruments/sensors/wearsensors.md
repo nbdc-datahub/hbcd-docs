@@ -26,7 +26,7 @@ hbcd/
                 ├── *_task-<span class="var">{Left|Right}</span>LegMovement_tracksys-imu_acq-primary_motion.tsv   <span class="hashtag">(+JSON)</span>
                 └── *_task-<span class="var">{Left|Right}</span>LegMovement_tracksys-imu_acq-primary_channels.tsv <span class="hashtag">(+JSON)</span>
 </pre>
-<p><a href="../../../datacuration/overview/#filetrees"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
+<p><a href="../../../help/resources/#how-to-read-file-trees"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a></p>
 
 
 ##### Derivatives

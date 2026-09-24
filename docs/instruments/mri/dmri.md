@@ -74,7 +74,7 @@
                 │
                 ├── figures/
                 └── sub-[ID]_ses-[V0X].html
-<a href="../../../datacuration/overview/#filetrees"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a>
+<a href="../../../help/resources/#how-to-read-file-trees"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a>
 </pre>
 
 

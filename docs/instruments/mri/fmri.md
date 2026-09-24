@@ -64,7 +64,7 @@ T1w and T2w images are denoised, bias-corrected, and normalized to the MNI Infan
 <p style="font-size: 1.1em; font-weight: 600;">Overview</p>
 <ul>
 <li>JSON files excluded for brevity from file trees below</li>
-<li>See <a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees</a> for additional guidance</li>
+<li>See <a href="../../../help/resources/#how-to-read-file-trees"><i class="fa fa-circle-info"></i> How To Read File Trees</a> for additional guidance</li>
 <li>T1w-related files will only be present in the derivatives if a T1w was acquired</li>
 </ul>
 <pre class="folder-tree" style="font-size: 11px;">
@@ -190,7 +190,7 @@ For each BOLD run, XCP-D performs a series of cleanup and quality-control steps:
 <div class="collapsible-content">
 <pre style="font-size: 11px;" class="folder-tree">
 <span class="hashtag"># JSON files excluded for brevity</span>
-<span><a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+<span><a href="../../../help/resources/#how-to-read-file-trees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 
 hbcd/
 └── derivatives/

@@ -37,7 +37,7 @@ EEG release data include the following:
 Each participant’s BIDS `eeg/` folder contains task-specific .set and .fdt EEG recordings, along with channel metadata (*channels* and *events* TSV files). Electrodes are placed on either the head or chest (*acq-eeg/ecg*) and electrode placement information is stored in *electrodes* TSV files accompanied by *coordsystem* JSON files that define the Cartesian coordinates. Finally, the `sourcedata/` subfolder includes impedance measurements (*impedances* JSON) used to ensure good electrode contact and task *eventlogs* txt files describing stimulus presentation timing.
 
 <pre class="folder-tree">
-<span><a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+<span><a href="../../../help/resources/#how-to-read-file-trees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 hbcd/
 └── rawdata/
     └── sub-[ID]/
@@ -65,7 +65,7 @@ hbcd/
 {{ suppx(instruments.eeg, "1") }}
 
 <pre class="folder-tree">
-<span><a href="../../../datacuration/overview/#filetrees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+<span><a href="../../../help/resources/#how-to-read-file-trees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
 hbcd/
 └── derivatives/
     └── made/

@@ -13,7 +13,7 @@
 
 ## Release Data
 
-The Olink datasets are provided as [concatenated data](../../datacuration/overview.md#concatenated-data), including two versions of the main data to support different analysis workflows:
+The Olink datasets are provided as concatenated data, including two versions of the main data to support different analysis workflows:
 
 <table class="table-no-vertical-lines">
 <thead> <tr> <th></th> <th><code><b>Olink_allplates_long.csv</b></code></th> <th><code><b>Olink_allplates_wide.csv</b></code></th> </tr> </thead> <tbody> <tr> <td><strong>Format</strong></td> <td>Long</td> <td>Wide</td> </tr> 
