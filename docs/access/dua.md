@@ -2,6 +2,102 @@
 
 <!-- # Data Use Acknowledgement -->
 
+<style>
+.recommendations-summary {
+  --rec-accent: #256377;
+  --rec-text: #263442;
+  --rec-background: #ffffff;
+  --rec-border: #dce4e8;
+  --rec-muted: #526270;
+
+  margin: 1.75rem 0 2.5rem;
+  color: var(--rec-text);
+}
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 1em;
+}
+.recommendations-summary .recommendation-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.5em 1em !important;
+  overflow: hidden;
+  border: 1px solid var(--rec-border);
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--rec-accent) 6%, var(--rec-background)),
+    var(--rec-background) 65%
+  );
+  box-shadow: 0 2px 6px rgb(0 0 0 / 3%);
+  color: var(--rec-text);
+  text-decoration: none;
+  line-height: 1.55;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+.recommendation-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--rec-accent),
+    color-mix(in srgb, var(--rec-accent) 15%, var(--rec-background))
+  );
+}
+.recommendation-card .recommendation-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-bottom: 0.15rem;
+  border: 1px solid color-mix(in srgb, var(--rec-accent) 18%, transparent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--rec-accent) 10%, var(--rec-background));
+  color: var(--rec-accent);
+  font-size: 0.8em;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.recommendation-card > strong {
+  color: var(--rec-text);
+  font-size: 1.02em;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.recommendation-card > span:not(.recommendation-number):not(.recommendation-link) {
+  color: var(--rec-muted);
+  font-size: 0.9em;
+}
+.recommendation-card .recommendation-link {
+  align-self: stretch;
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rec-border);
+  color: var(--rec-accent);
+  font-size: 0.85em;
+  font-weight: 600;
+}
+.recommendation-card:hover .recommendation-link,
+.recommendation-card:focus-visible .recommendation-link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.recommendations-summary .recommendation-card:focus-visible {
+  outline: 3px solid var(--rec-accent);
+  outline-offset: 4px;
+}
+</style>
+
 # Data Use Requirements
 
 ## Data Use Acknowledgement
@@ -61,7 +157,50 @@ To facilitate responsible data use and scientific rigor, the following warnings 
 </div>
  
 ### Recommendations
+
 The HBCD Responsible Use of Data Committee (RUDC) provides the following recommendations for rigorous, reproducible, and responsible data use guidance for researchers and users of HBCD Study data.
+
+#### At a glance
+<nav class="recommendations-summary" label="Recommendations at a glance">
+  <div class="recommendations-grid">
+    <a class="recommendation-card" href="#learn-and-abide-by-the-provisions-of-the-data-use-certificate">
+      <span class="recommendation-number">01</span>
+      <strong>Follow data use requirements</strong>
+      <span>Maintain authorized access, protect participant identities, and follow sharing and reporting restrictions.</span>
+      <span class="recommendation-link">Data Use Certificate &rarr;</span>
+    </a>
+    <a class="recommendation-card" href="#consider-ethical-principles-throughout-the-research-process">
+      <span class="recommendation-number">02</span>
+      <strong>Apply ethical principles</strong>
+      <span>Consider respect, harm minimization, justice, and equity throughout the research process.</span>
+      <span class="recommendation-link">Research ethics &rarr;</span>
+    </a>
+    <a class="recommendation-card" href="#use-non-stigmatizing-language-in-scientific-communications">
+      <span class="recommendation-number">03</span>
+      <strong>Use respectful language</strong>
+      <span>Describe participants and communities clearly and respectfully, avoiding language that reinforces stigma.</span>
+      <span class="recommendation-link">Language guidance &rarr;</span>
+    </a>
+    <a class="recommendation-card" href="#use-population-descriptors-thoughtfully-and-scientifically">
+      <span class="recommendation-number">04</span>
+      <strong>Choose descriptors thoughtfully</strong>
+      <span>Use scientifically justified descriptors with clear definitions. Do not use race as a proxy for biology or genetic ancestry.</span>
+      <span class="recommendation-link">Population descriptors &rarr;</span>
+    </a>
+    <a class="recommendation-card" href="#analyses-should-reflect-the-complexity-of-brain-and-child-development-use-relevant-social-and-environmental-variables-available-in-the-hbcd-dataset-as-covariates-in-your-analyses">
+      <span class="recommendation-number">05</span>
+      <strong>Reflect developmental complexity</strong>
+      <span>Consider social and environmental context, and select covariates appropriate to your research question.</span>
+      <span class="recommendation-link">Analysis considerations &rarr;</span>
+    </a>
+    <a class="recommendation-card" href="#promoting-transparency-and-reproducibility-in-research">
+      <span class="recommendation-number">06</span>
+      <strong>Support reproducibility</strong>
+      <span>Share analytic methods and scripts, explain missing data, and report limitations transparently.</span>
+      <span class="recommendation-link">Reporting guidance &rarr;</span>
+    </a>
+  </div>
+</nav>
 
 #### Learn and abide by the provisions of the Data Use Certificate.
 
