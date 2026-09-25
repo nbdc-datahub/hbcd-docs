@@ -177,7 +177,7 @@ Every TSV and Parquet file in `rawdata/phenotype/` has a corresponding **shadow 
 
 ![](images/shadowmatrix.png)
 
-Separating missingness reasons from the primary data serves several purposes, such as preserving information about non-response without cluttering the main dataset. However, in some analyses, the reason a value is missing may itself be meaningful. For example, researchers may want to examine how often participants report that they do not understand a question. In these cases, missingness information can be joined back to the primary data (see [Resources](../resources/index.md#shadow-matrices)).
+Separating missingness reasons from the primary data serves several purposes, such as preserving information about non-response without cluttering the main dataset. However, in some analyses, the reason a value is missing may itself be meaningful. For example, researchers may want to examine how often participants report that they do not understand a question. In these cases, missingness information can be joined back to the primary data (see [Resources](../help/resources.md#shadow-matrices)).
 
 
 ## File-Based Data

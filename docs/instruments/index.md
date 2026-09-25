@@ -293,7 +293,7 @@ The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Face
 
 
 ### <i class="fa fa-brain header-icon"></i> Imaging
-Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [Release Data](mri/release-data.md) for details. Tabular Imaging includes tabulated pipeline derivatives, questionnaire/form data, and quality-control metrics:
+Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [Release Data](mri/index.md#release-data) for details. Tabular Imaging includes tabulated pipeline derivatives, questionnaire/form data, and quality-control metrics:
 
 <div class="table-legend">
   <span class="legend-item">
