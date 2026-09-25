@@ -152,7 +152,7 @@ erica:
   respondent_category: Parent on Child
   admin_notes: This page includes a hard-coded table that cannot be updated via this form - contact Luci to update table if needed
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/erica/
-  visits: V03
+  visits: V03, V06, V10, V12, V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -226,7 +226,7 @@ mbcdi:
 
     Luci note 9/14: copied from 2.1 README info in case SMEs would like to make changes - currently marking as Stable however in case this is not needed
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mbcdi/
-  visits: V04, V06
+  visits: V04, V06, V07
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -275,7 +275,7 @@ bfy:
   respondent_category: Parent on Self
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/bfy/
-  visits: V01, V05, V07
+  visits: V01, V05, V07, V09-V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -865,7 +865,7 @@ chaos:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/chaos/
-  visits: V05, V07
+  visits: V04, V06, V07, V10, V12
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -912,7 +912,7 @@ ptsd:
   respondent_category: Parent on Self
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/mh/ptsd/
-  visits: V01, V02, V03
+  visits: V01-V04, V08, V13
   primary_data_type: Tabulated data
   README:
     label: View
@@ -1099,7 +1099,7 @@ foodins:
   respondent_category: Parent on Self
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/foodinsecurity/
-  visits: V02, V03
+  visits: V02-V04, V06, V08, V10-V14
   primary_data_type: Tabulated data
   README:
     label: View
@@ -1209,7 +1209,7 @@ apa:
   respondent_category: Parent on Self
   admin_notes: README includes several hard-coded tables that cannot be updated via this form - reach out to administrators directly to make changes
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/pregexp/mh/apa12/
-  visits: V01, V02, V03
+  visits: V01-V04, V06, V10-V14
   hbcd_mods3: A “Decline to answer” option was added to all questions. A “Don’t know” option was initially included, but later removed. Responses marked as “Decline to answer” or “Don’t know” are treated as missing data.
   primary_data_type: Tabulated data
   README:
@@ -2602,7 +2602,7 @@ lab_tab:
     Planalp, E. M., Van Hulle, C., Gagne, J. R., & Goldsmith, H. H. (2017). The infant version of the laboratory temperament assessment battery (Lab-TAB): Measurement properties and implications for concepts of temperament. _Frontiers in Psychology_, 8, 846. <https://doi.org/10.3389/fpsyg.2017.00846>
   respondent_category: Child on Self
   admin_notes: None
-  visits: V04,
+  visits: V04
   primary_data_type: Tabulated data
   README:
     label: View
@@ -2670,7 +2670,7 @@ fad:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/fad/
-  visits: V04, V06
+  visits: V04, V06, V11, V14
   primary_data_type: Tabulated data
   README:
     label: View
@@ -3040,7 +3040,7 @@ vineland_3:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/vineland/
-  visits: V05, V09, V10
+  visits: V05, V09, V10, V12, V14
   primary_data_type: Tabulated data
   README:
     label: View
@@ -4016,7 +4016,7 @@ ecpromis_peer:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/ecpromis-pr/
-  visits: V05, V07, V09
+  visits: V05, V07, V09, V10
   primary_data_type: Tabulated data
   README:
     label: View
