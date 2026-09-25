@@ -2930,7 +2930,7 @@ ecpromis:
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/ecpromis/
   visits: |-
     Infant: V03, V05
-    Toddler: V03, V05, V07
+    Toddler: V03, V05, V07, V09, V10
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
