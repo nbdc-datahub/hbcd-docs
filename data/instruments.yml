@@ -410,7 +410,7 @@ tic_quest:
     Luci note 8/24: I changed the type from Interview to Questionnaire per SME's note. I also moved the "common issues from QC" info as a data warning instead. looks complete to me now, but please make further updates as needed!
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/tic_quest/
   email: japoehlmann@wisc.edu
-  visits: V06, V08
+  visits: V06, V08, V10, V12
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Julie Poehlmann
@@ -630,7 +630,7 @@ pedsql:
   admin_notes: COMPLETE
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/pedsql/
   email: leigh-anne.cioffredi@uvm.edu
-  visits: V07, V09
+  visits: V07, V09–V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Leigh-Anne Cioffredi
@@ -779,7 +779,7 @@ cabr_sf:
   respondent_category: Parent on Self
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/cab/
-  visits: V04, V06
+  visits: V04, V06, V08, V10–V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -821,7 +821,7 @@ discr:
   respondent_category: Parent on Self
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/discr/
-  visits: V01, V05, V07
+  visits: V01, V05, V07, V09–V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -1018,7 +1018,7 @@ aces:
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/aces/
   visits: |-
     ACEs: V04, V06
-    Pediatric ACEs: V04
+    Pediatric ACEs: V04, V06, V08, V10-V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -1255,7 +1255,7 @@ mlds:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/mlds/
-  visits: V03, V04, V05, V07
+  visits: V03, V04, V06, V07, V08, V10-V14
   primary_data_type: Tabulated data
   README:
     label: View
@@ -1328,7 +1328,7 @@ ecpromis_sleep:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/ecpromis-sleep/
-  visits: V04, V06
+  visits: V04, V06, V08, V10
   primary_data_type: Tabulated data
   README:
     label: View
@@ -2017,7 +2017,7 @@ home21:
   respondent_category: Parent on Child
   admin_notes: Includes hard-coded supplementary html that cannot be updated directly via this form - reach out to administrators directly to make changes
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/home21/
-  visits: V04, V06
+  visits: V04, V06, V08
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -2057,7 +2057,7 @@ growth:
   respondent_category: Child on Self
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/growth/
-  visits: V02, V03, V04, V06, V08
+  visits: V02–V04, V06, V08, V10–V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -2159,7 +2159,7 @@ lead:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/lead-exposures/
-  visits: V05
+  visits: V05, V07
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -2362,7 +2362,7 @@ chem_exp:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/household-chemical-exposures/
-  visits: V05
+  visits: V05, V07, V10-V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -2779,7 +2779,7 @@ nbhsaf:
   respondent_category: Parent on Self
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/safety/
-  visits: V01, V02, V07, V09
+  visits: V01, V05, V07, V09–V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -2866,7 +2866,7 @@ nsc:
   admin_notes: DONE
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/incarceration/
   email: japoehlmann@wisc.edu
-  visits: V07, V09
+  visits: V07, V09–V10, V12
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Julie Poehlmann
@@ -2978,7 +2978,7 @@ ecpromis_pags:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/ecpromis-pags/
-  visits: V04, V06
+  visits: V04, V06, V08, V10
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -3083,7 +3083,7 @@ gled:
   respondent_category: null
   admin_notes: hard-coded table
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/geocoded-linkage/
-  visits: The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD)
+  visits: V01-V07. The GLED data in the current release include variables linked to the residential address history of the child for visit V01 (prenatal period up to 1 year before EDD)
   primary_data_type: Concatenated data
   README:
     label: View
@@ -3127,7 +3127,7 @@ promis:
   respondent_category: Parent on Child
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/promis/
-  visits: V01, V02, V03
+  visits: V01–V04, V06, V08, V10–V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -3284,7 +3284,7 @@ shs:
   respondent_category: Parent on Child
   admin_notes: none
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/second-hand-smoke-exposure/
-  visits: V05
+  visits: V05, V07, V09-V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -3333,7 +3333,7 @@ paces:
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/paces/
   visits: |-
-    C-PACES: V01
+    C-PACES: V01, V10, V12, V14
     R-PACES: V05
   hbcd_mods3: null
   primary_data_type: Tabulated data
@@ -3415,7 +3415,7 @@ employment:
   respondent_category: Parent on Self
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/SED/current-employment/
-  visits: V05
+  visits: V05, V07, V09-V14
   hbcd_mods3: null
   primary_data_type: Tabulated data
   README:
@@ -3707,7 +3707,7 @@ nbtb:
     8/24: update to include all BTB (1 Language & 2 Cognitive/Executive Function/Memory) per SME request! please mark as done if complete
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/nbtb/
   email: jkabl01@emory.edu
-  visits: V03, V04, V06
+  visits: V03, V04, V06, V08
   hbcd_mods3: null
   primary_data_type: Tabulated data
   submitter_name: Julie Kable
@@ -3826,7 +3826,7 @@ screenq:
   respondent_category: Parent on Child
   admin_notes: none
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/screenq/
-  visits: V04, V06
+  visits: V04, V06, V08, V10–V11
   primary_data_type: Tabulated data
   README:
     label: View
@@ -4109,7 +4109,7 @@ vs100:
   respondent_category: Child on Self
   admin_notes: None
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/physhealth/vision/
-  visits: V04, V06, V08
+  visits: V04, V06, V08–V14
   primary_data_type: Tabulated data
   README:
     label: View
