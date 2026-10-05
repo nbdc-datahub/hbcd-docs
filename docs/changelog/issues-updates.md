@@ -176,11 +176,11 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th>
-<th>Summary</th>
+<th></th><th>Table/Topic</th><th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
+
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Instruction</td>
@@ -201,8 +201,7 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th>
-<th>Summary</th>
+<th></th><th>Table/Topic</th><th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
@@ -221,8 +220,7 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th>
-<th>Summary</th>
+<th></th><th>Table/Topic</th><th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
@@ -241,8 +239,7 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th>
-<th>Summary</th>
+<th></th><th>Table/Topic</th><th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
@@ -273,8 +270,7 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th>
-<th>Summary</th>
+<th></th><th>Table/Topic</th><th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
@@ -293,8 +289,7 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th>
-<th>Summary</th>
+<th></th><th>Table/Topic</th><th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
@@ -319,8 +314,7 @@ The tables below summarize known issues affecting the current data release and p
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th></th><th>Table/Topic</th>
-<th>Summary</th>
+<th></th><th>Table/Topic</th><th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
