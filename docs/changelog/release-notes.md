@@ -80,17 +80,22 @@
 # Release Notes & History
 
 
+
+<div class="admin-note" markdown="1">
+LUCI NOTES: 
+
+- 3.0 release notes are under construction currently
+-  update Release Date
+- Add that demographics has changed to Participant Derived if not already in auto-generated release notes somehow (or make point to emphasize it/make it super clear)
+</div>
+
+
 ## Release 3.0
-
-**ADD that demographics has changed to Participant Derived**
-
-
-## Release 2.1
 
 <div class="release-banner">
   <span class="release-text">
     <i class="fa-solid fa-calendar release-icon"></i>
-    Release Date: 2026-08-14
+    Release Date: 2026-11-XX
   </span>
 </div>
 
@@ -98,31 +103,36 @@
   <div class="card">
     <h3>Participants</h3>
     <div class="metric">
-      3,605
+      5,467
     </div>
   </div>
   <div class="card">
     <h3>Total Visits</h3>
     <div class="metric">
-      8,415
+      16,853
     </div>
     <div class="detail">
-      V01: 3,545 | V02: 2,310 | V03: 1,398<br>
-      V04: 679 | V05: 483
+      <b>V01</b>: 4,672  |   <b>V02</b>: 3,820
+      <br>
+      <b>V03</b>: 2,792 | <b>V04</b>: 1,909
+      <br>
+      <b>V05</b>: 1,784  |   <b>V06</b>: 686
+      <br>
+      <b>V07</b>: 587  |   <b>V07a</b>: 603
     </div>
   </div>
   <div class="card">
     <h3>By Sex</h3>
     <div class="metric-sub">
-      1,175 Unknown <span class="muted">[V01]</span>
+      848 Unknown <span class="muted">[V01]</span>
     </div>
     <div class="metric-sub">
-      1,159 F | 1,271 M <span class="muted">[V02+]</span>
+      2,568 F | 2,051 M M <span class="muted">[V02+]</span>
     </div>
   </div>
 </div>
 
-### 2.1 New Instruments
+### 3.0 New Instruments
 
 Release data now include the addition of the following instruments:
 
@@ -136,7 +146,7 @@ Release data now include the addition of the following instruments:
 </thead>
 <tbody>
 
-<tr>
+<!-- <tr>
 <td>Behavior & Caregiver-Child Interaction</td>
 <td>ERICA (<code>mh_cg_erica{_rel}_3_9m</code>; raw scores only)</td>
 <td>Emotional Regulation</td>
@@ -156,37 +166,20 @@ Release data now include the addition of the following instruments:
 <tr>
 <td>MRI Scan Session Summary Form</td>
 <td>Pre-/Post-MRI Tech Checklist 1</td>
-</tr>
+</tr> -->
 
 </tbody>
 </table>
 
 <a href="../../instruments/" class="button-link"> All instruments by domain →</a>
 
-### 2.1 Resolved Known Issues & Updates
-
-<div id="data-warning" class="banner data-warning" onclick="toggleCollapse(this)">
-<span class="emoji"><i class="fas fa-exclamation-triangle"></i></span>
-<span class="text-with-link">
-  <span class="text">Updates to data dictionary not yet incorporated into JSON metadata files</span>
-  <a class="anchor-link" href="#data-warning" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-</span>
-<span class="arrow">▸</span>
-</div>
-<div class="collapsible-content" style="background-color: #fcfaed;">
-<p>For Release 2.1, updates were applied to the data dictionary information available via query tools within the NBDC Data Access Platform and DEAP. For users who download tabulated data in their original BIDS folder structure (e.g. via the "All Study Data" option), note that the metadata within these JSON files do not yet contain these updates. This is planned for a future release.</p>
-<p>A detailed summary of differences between the online data dictionaries and JSON file data is available <a href="https://hbcd-docs-internal.readthedocs.io/latest/changelog/versions/BR2X/BR21.3/#data-dictionary-updates">here</a>.</p>
-</div>
-
----
+### 3.0 Resolved Known Issues & Updates
 
 <p style="font-size: 1.1em; color: #555; text-align: center;">
 <i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Resolved Known Issue &nbsp;&nbsp;&nbsp;
 <i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Completed Pending Update</p>
 
-<table class="compact-table-no-vertical-lines">
+<!-- <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th style="width: 20%; white-space: nowrap;">Topic/Instrument</th>
@@ -348,10 +341,10 @@ Release data now include the addition of the following instruments:
   <i class="fa-solid fa-rotate icon-rotate"></i> Re-addition of variables <code>sed_bm_demo_residence_{001|002}</code>
   </td>
 </tr>
-</tbody></table>
+</tbody></table> -->
 
 
-### 2.1 Inclusion & Exclusion Criteria
+### 3.0 Inclusion & Exclusion Criteria
 
 ##### Participants
 - DCC participants excluded
@@ -368,8 +361,6 @@ Release data now include the addition of the following instruments:
 - Forced insertion/exclusion of participants (based on 'LaunchPad Complete' date after July 1, 2024 exceptions granted for 1.0 release only)
 
 ##### Instruments
-- GABI Setup/Receipt — `nt_pa_gabi_{setup|rcpt}`
-- NIH Baby Toolbox — `ncl_ch_nbtb`
 - Participant & RA Feedback — `adm_cg_fb` / `adm_ra_fb`
 - Urgent Events & Participant Alerts — `adm_fd_urgent` / `admin_alert`
 
@@ -394,6 +385,16 @@ Prior release notes are available via prior versions of this site as follows (al
 </tr>
 </thead>
 <tbody>
+
+<tr>
+<td><strong>2.1</strong></td>
+<td>2026-08-14</td>
+<td>
+  <a href="https://docs.hbcdstudy.org/r2.1/changelog/release-notes/#release-21">
+    View Release Notes
+  </a>
+</td>
+</tr>
 
 <tr>
 <td><strong>2.0</strong></td>
