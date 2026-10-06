@@ -240,19 +240,24 @@ This page lists all instruments included in the current release, organized by do
     <td><i>concatenated/genetics/</i></td>
 </tr>
 <tr>
-    <td><a href="biospec/nails">Maternal Nails</a></td>
+    <td><a href="biospec/olink">Olink Explore</a></td>
+    <td>Maternal Inflammation</td>
+    <td><i>concatenated/proteins/</i></td>
+</tr>
+<tr>
+    <td><a href="biospec/blood">USDTL Blood Toxicology</a></td>
+    <td>Drug, Environmental Exposure</td>
+    <td><code>bio_bm_biosample_blood</code></td>
+</tr>
+<tr>
+    <td><a href="biospec/nails">USDTL Nails Toxicology</a></td>
     <td>Drug, Environmental Exposure</td>
     <td><code>bio_bm_biosample_nails_<span class="blue-text">{results|type}</span></code></td>
 </tr>
 <tr>
-    <td><a href="biospec/urine">Maternal Urine</a></td>
+    <td><a href="biospec/urine">USDTL Urine Toxicology</a></td>
     <td>Drug Panel, Toxins</td>
     <td><code>bio_bm_biosample_urine_results</code></td>
-</tr>
-<tr>
-    <td><a href="biospec/olink">Olink Explore</a></td>
-    <td>Maternal Inflammation</td>
-    <td><i>concatenated/proteins/</i></td>
 </tr>
 </tbody>
 </table>

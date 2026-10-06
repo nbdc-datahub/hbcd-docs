@@ -86,7 +86,6 @@ LUCI NOTES:
 
 - 3.0 release notes are under construction currently
 -  update Release Date
-- Add that demographics has changed to Participant Derived if not already in auto-generated release notes somehow (or make point to emphasize it/make it super clear)
 </div>
 
 
@@ -132,50 +131,79 @@ LUCI NOTES:
   </div>
 </div>
 
+### 3.0 New Domain: *Participant Derived*
+
+The **Demographics** domain has been replaced with the domain **Participant Derived**. Through Release 2.1, the Demographics domain included two tables containing derived participant information, *Visit Info* (visit-specific information) and *Basic Demographics* (general participant information derived from SED Demographics and administrative records). For Release 3.0, the Demographics domain has been renamed **Participant Derived**, with information organized into static and dynamic tables:
+
+- **Static Participant Information**: information that remains constant across visits, such as sex assigned at birth and race/ethnicity
+- **Dynamic Participant Information**: information that may change over time and is therefore represented longitudinally
+
+
 ### 3.0 New Measures
 
 Release data now include the addition of the following measures, expanded data types, versions, and/or visits:
 
-<table class="compact-table-no-vertical-lines">
+<table class="table-no-vertical-lines">
 <thead>
 <tr>
-<th width="50%">Domain</th>
-<th width="50%">Measure</th>
+<th width="35%">Domain</th>
+<th>Measure</th>
 </tr>
 </thead>
 <tbody>
 </tr>
 <tr>
-<td rowspan="2">Behavior &amp; Child-Caregiver Interaction</td>
+<td rowspan="2">
+<i class="fa fa-people-arrows table-icon-left"></i>
+<a href="../../instruments/#behavior-caregiver-child-interaction">Behavior &amp; Child-Caregiver Interaction</a></td>
 <td>MAPS-EASI- Toddler</td>
 </tr>
 <tr><td>Modified Checklist for Autism in Toddlers (MCHAT)</td></tr>
 
 <tr>
-<td>Imaging</td>
-<td>Addition of source DICOMs for all imaging modalities</td>
-</tr>
+<td>
+<i class="fa fa-vial table-icon-left"></i>
+<a href="../../instruments/#biospecimen-omics">Biospecimen & Omics</a></td>
+<td>USDTL Blood Toxicology</td></tr>
 
 <tr>
-<td rowspan="2">Neurocognition & Language</td>
+<td rowspan="3">
+<i class="fa fa-brain table-icon-left"></i>
+<a href="../../instruments/#imaging">Imaging</a></td>
+<td>Addition of source DICOMs for all imaging modalities</td>
+</tr>
+<tr><td>Addition of <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs for XCP-D for efficient voxel-wise statistical modeling.</td></tr>
+<tr><td>Addition of tabulated pipeline derivatives for QSIRecon.</td></tr>
+
+<tr>
+<td rowspan="2">
+<i class="fa-solid fa-puzzle-piece table-icon-left"></i>
+<a href="../../instruments/#neurocognition-language">Neurocognition & Language</a></td>
 <td>Deferred Imitation Task: Gong and Berry-Go-Round</td>
 </tr>
 <tr><td>MacArthur-Bates CDI-2 Language</td></tr>
 
 <tr>
-<td>Novel Technology & Wearable Sensors</td>
+<td>
+<i class="fa fa-microchip table-icon-left"></i>
+<a href="../../instruments/#novel-technologies-wearable-sensors">Novel Technology & Wearable Sensors</a></td>
 <td>GABI (infant heart rate) raw BIDS data</td>
 </tr>
 
 <tr>
-<td rowspan="3">Physical Health</td>
+<td rowspan="3">
+<i class="fa fa-heart-pulse table-icon-left"></i>
+<a href="../../instruments/#physical-health">Physical Health</a></td>
 <td>Child Nutrition Questionnaire</td>
 </tr>
 <tr><td>PEDsQL</td></tr>
 <tr><td>Med History V1 - addition of V06</td></tr>
 
+
 <tr>
-<td>Social & Environmental Determinants</td>
+<td>
+<i class="fas fa-city table-icon-left"></i>
+<a href="../../instruments/#social-environmental-determinants">Social & Environmental Determinants</a></td>
 <td>V6 Adult and V6 Child Demographics</td>
 </tr>
 
@@ -183,184 +211,173 @@ Release data now include the addition of the following measures, expanded data t
 </table>
 
 
-
-
-
-
-
-
-
-<a href="../../instruments/" class="button-link"> All instruments by domain →</a>
-
 ### 3.0 Resolved Known Issues & Updates
 
 <p style="font-size: 1.1em; color: #555; text-align: center;">
 <i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Resolved Known Issue &nbsp;&nbsp;&nbsp;
 <i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Completed Pending Update</p>
 
+##### All Data / General
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th style="width: 20%; white-space: nowrap;">Topic/Instrument</th>
+<th style="width: 20%; white-space: nowrap;">Topic</th>
 <th>Summary of Changes</th>
 </tr>
 </thead>
 <tbody>
-
-<tr class="table-group-row">
-  <td colspan="3">General</td>
-</tr>
-
 <tr>
-<td>Language</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Added language of administration across all instruments where applicable</td>
-</tr>
-
-<tr class="table-group-row">
-  <td colspan="3">Administrative</td>
+<td>Incorrect JSONs</td>
+<td><i class="fas fa-bug icon-bug"></i> Corrected JSON metadata (e.g. <code>type_data</code>) for several instruments (APA 1/2, Bayley-4, EEG Form-2, etc.).</td>
 </tr>
 <tr>
-<td>Study Navigators</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> SUBSTANCE_USE and OTHER checkbox fields populated</td>
-</tr>
-
-<tr class="table-group-row">
-  <td colspan="3">Behavior & Caregiver-Child Interaction</td>
+<td>Instruction</td>
+<td><i class="fas fa-bug icon-bug"></i> Populated the previously blank instruction data dictionary element.</td>
 </tr>
 <tr>
-<td>ECBQ</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i>  Coding for "Does not apply" changed to 8 to match the IBQ-R.</td>
-</tr>
-
-<tr class="table-group-row">
-  <td colspan="3">Biospecimens & Omics</td>
-</tr>
-
-<tr>
-<td>Nails</td>
-<td><i class="fas fa-bug icon-bug"></i> Added unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
+<td>Blank Fields for Siblings</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Corrected family-level (i.e., non-child-specific) instrument fields so that they are now populated for sibling records, including HBCD Multiple Birth – Sibling records.</td>
 </tr>
 <tr>
-<td>Nails &amp; Urine</td>
-<td><i class="fas fa-bug icon-bug"></i> Removed quotes in data dictionary level values causing double quotes in downloaded data, e.g. 1=""positive""</td>
+<td>FamilyID</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added FamilyID across tables to identify sibling relationships/enable mapping between Main Child and Sibling records.
+</td>
 </tr>
 <tr>
-<td>Urine</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Added creatinine results (<code>bio_creat_u</code>).</td>
-</tr>
-
-<tr class="table-group-row">
-  <td colspan="3">Demographics</td>
-</tr>
-<tr>
-<td>Basic Demo</td>
-<td><i class="fas fa-bug icon-bug"></i> Removed internal dictionary <code>recruitment_site</code> categories not present in data (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
-</tr>
-<tr>
-<td>Visit Info</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> New derived/rolled up substance use flag for Stimulants</td>
-</tr>
-
-<tr>
-<td>Visit Info</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> SU flags now include Nail toxicology results in addition to Urine</td>
-</tr>
-
-<tr class="table-group-row">
-  <td colspan="3">EEG</td>
-</tr>
-<tr>
-<td>HBCD-MADE</td>
-<td><i class="fas fa-bug icon-bug"></i> Added missing FACE/MMN tabulated data for N=3 V04 session derivatives</td>
-</tr>
-<tr>
-<td>.set files</td>
-<td><i class="fas fa-bug icon-bug"></i> Updated .set files to include subject release IDs</td>
-</tr>
-
-
-<tr class="table-group-row">
-  <td colspan="3">MRI</td>
-</tr>
-<tr>
-<td>Raw BIDS</td>
-<td><i class="fas fa-bug icon-bug"></i> Corrected 2 corrupted bold runs in V02 raw BIDs</td>
-</tr>
-
-<tr>
-<td>XCP-D</td>
-<td><i class="fas fa-bug icon-bug"></i> Corrected <code>sub_domain</code> values in tabulated XCP-D Myers-Labonte metadata to <code>Structural MRI</code></td>
-</tr>
-
-<tr>
-<td>BrainSwipes</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Addition of complete BrainSwipes MRI QC results</td>
-</tr>
-
-<tr class="table-group-row">
-  <td colspan="3">Neurocognition & Language</td>
-</tr>
-<tr>
-<td>Vineland</td>
-<td><i class="fas fa-bug icon-bug"></i> Corrected subset of variables with typo in the spelling of "receptive"</td>
-</tr>
-
-<tr>
-<td>Bayley-4</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Added item-level scores</td>
-</tr>
-<tr>
-<td>SPM-2</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Added raw and T-scores</td>
-</tr>
-<tr>
-<td>Vineland</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Added language field</td>
-</tr>
-
-<tr class="table-group-row">
-  <td colspan="3">Physical Health</td>
-</tr>
-<tr>
-<td>Growth</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Added age-based z-scores to <code>ph_ch_anthro</code></td>
-</tr>
-<tr>
-<td>ecPROMIS-PAGS</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Added scores to <code>ph_cg_pms__pags</code></td>
-</tr>
-<tr>
-<td>ecPROMIS-Sleep</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Added <code>ph_cg_pms__sleep</code> summary scores</td>
-</tr>
-
-<tr class="table-group-row">
-  <td colspan="3">Pregnancy & Environmental Exposure</td>
-</tr>
-
-<tr>
-<td>APA 1/2</td>
-<td><i class="fas fa-bug icon-bug"></i> Removed APA L2 item data in cases where L2 was administered despite unmet gating criteria (missing L1 responses and scoring)</td>
-</tr>
-
-<tr class="table-group-row">
-  <td colspan="3">Social & Environmental Determinants</td>
-</tr>
-<tr>
-<td>C-PACEs</td>
-<td><i class="fas fa-bug icon-bug"></i> Corrected summary scores</td>
-</tr>
-
-<tr>
-<td>Demographics (Adult)</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Added V01 household income (<code>income_002</code>)<br>
-  <i class="fa-solid fa-rotate icon-rotate"></i> Added Other Biological Parent information variables<br>
-  <i class="fa-solid fa-rotate icon-rotate"></i> Added <code>work_{002–004}_post</code> (worked for pay + for X hours while pregnant)<br>
-  <i class="fa-solid fa-rotate icon-rotate"></i> Added <code>work_004__01</code> (job held ≥1 month since V01)<br>
-  <i class="fa-solid fa-rotate icon-rotate"></i> Re-addition of variables <code>sed_bm_demo_residence_{001|002}</code>
-  </td>
+<td>Sequence Field</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Removed the previously included Sequence field, which was blank across instruments.
+</td>
 </tr>
 </tbody></table>
+
+##### Behavior &amp; Child-Caregiver Interaction
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th style="width: 20%; white-space: nowrap;">Measure</th>
+<th>Summary of Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ecPROMIS CC</td>
+<td><i class="fas fa-bug icon-bug"></i>
+Corrected scoring for N=12 V03 participants with fewer than 3 item responses in <code>mh_cg_pms__cc__inf</code> (previously '0'; now 'null').
+</td>
+</tr>
+<tr>
+<td>FAD</td>
+<td><i class="fas fa-bug icon-bug"></i>
+Corrected scoring for N=4 V06 participants with fewer than 3 item responses (previously '0'; now 'null').
+</td>
+</tr>
+<tr>
+<td>MAPS-TL (&lt;1yr)</td>
+<td><i class="fas fa-bug icon-bug"></i>
+Corrected scoring for N=4 participants with no item responses (previously '0'; now 'null').
+</td>
+</tr>
+<tr>
+<td>MAPS-TL (Tod)</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>
+Implemented pro-rated scoring for <code>mh_cg_mapdb__tod</code>, resolving missing scores for N=16 participants.</td>
+</tr>
+</tbody></table>
+
+##### Biospecimens &amp; Omics
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th style="width: 20%; white-space: nowrap;">Measure</th>
+<th>Summary of Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nails</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected nail type in main results table (<code>*_nails_results</code>) (formerly reported as 4 (Unknown)).
+</td>
+</tr>
+</tbody></table>
+
+##### EEG
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th style="width: 20%; white-space: nowrap;">Topic</th>
+<th>Summary of Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Age fields</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected chronological and adjusted age values for N=74 V03 sessions that fell outside the expected 3–9 month range due to site entry errors.
+</td>
+</tr>
+<tr>
+<td>MADE v1.7.0</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>
+HBCD-MADE derivatives processed through updated version v1.7.0.</td>
+</tr>
+</tbody></table>
+
+##### Imaging
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th style="width: 20%; white-space: nowrap;">Topic</th>
+<th>Summary of Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dMRI metadata</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected <code>LargeDelta</code> and <code>SmallDelta</code> values in dMRI sidecars to reflect accurate model-specific values rather than vendor-specific values.
+</td>
+</tr>
+<tr>
+<td>Run ID</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected <code>run-{X}</code> assignments so that they reflect chronological acquisition order.
+</td>
+</tr>
+</tbody></table>
+
+
+##### Neurocognition & Language
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th style="width: 20%; white-space: nowrap;">Topic</th>
+<th>Summary of Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bayley</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Removed participant data with invalid scores of <code>-9999</code>. 
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
 
 
 ### 3.0 Inclusion & Exclusion Criteria

@@ -118,6 +118,15 @@ th, td {
   letter-spacing: 0.02em;
 }
 
+/* SPECIAL CLASS FOR WHEN TABLE ROWS SPAN MULTIPLE COLUMNS */
+/* .readme-intro-rowspan td.intro-label {
+  font-weight: 550;
+  font-size: 1.1em;
+  width: 140px;
+  color: #6b6b6b;
+  white-space: nowrap !important;
+} */
+
 /* ICONS INCLUDED IN TABLE ROWS TO RIGHT OF TEXT */
 .table-icon {
   margin-left: 0.4em;
