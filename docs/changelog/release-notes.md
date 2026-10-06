@@ -175,10 +175,7 @@ Release data now include the addition of the following measures, expanded data t
 <tr><td>Med History V1 - addition of V06</td></tr>
 
 <tr>
-<td rowspan="2">Social & Environmental Determinants</td>
-<td>Incarceration Questionnaire</td>
-</tr>
-<tr>
+<td>Social & Environmental Determinants</td>
 <td>V6 Adult and V6 Child Demographics</td>
 </tr>
 
