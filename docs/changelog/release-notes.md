@@ -332,7 +332,7 @@ HBCD-MADE derivatives processed through updated version v1.7.0.</td>
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th style="width: 20%; white-space: nowrap;">Topic</th>
+<th>Topic</th>
 <th>Summary of Changes</th>
 </tr>
 </thead>
@@ -340,7 +340,7 @@ HBCD-MADE derivatives processed through updated version v1.7.0.</td>
 <tr>
 <td>dMRI metadata</td>
 <td><i class="fa-solid fa-bug icon-bug"></i>
-Corrected <code>LargeDelta</code> and <code>SmallDelta</code> values in dMRI sidecars to reflect accurate model-specific values rather than vendor-specific values.
+Corrected <code>LargeDelta</code> and <code>SmallDelta</code> in metadata to reflect accurate model-specific rather than vendor-specific values.
 </td>
 </tr>
 <tr>

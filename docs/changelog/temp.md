@@ -8,12 +8,6 @@
 </thead>
 <tbody>
 
-<!-- BR30.1 -->
-<tr>
-<td>PEX</td>
-<td>EPDS</td>
-<td><i class="fas fa-bug icon-bug"></i> Inconsistent scoring: (1) item responses present, but score is null (N=1); (2) all items null, but score is <code>0</code> (N≥3).</td>
-
 <tr>
 <td>Demo</td>
 <td>Static table</td>
