@@ -132,44 +132,66 @@ LUCI NOTES:
   </div>
 </div>
 
-### 3.0 New Instruments
+### 3.0 New Measures
 
-Release data now include the addition of the following instruments:
+Release data now include the addition of the following measures, expanded data types, versions, and/or visits:
 
-<table class="table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th>Domain</th>
-<th>Instrument</th>
-<th>Construct</th>
+<th width="50%">Domain</th>
+<th width="50%">Measure</th>
 </tr>
 </thead>
 <tbody>
+</tr>
+<tr>
+<td rowspan="2">Behavior &amp; Child-Caregiver Interaction</td>
+<td>MAPS-EASI- Toddler</td>
+</tr>
+<tr><td>Modified Checklist for Autism in Toddlers (MCHAT)</td></tr>
 
-<!-- <tr>
-<td>Behavior & Caregiver-Child Interaction</td>
-<td>ERICA (<code>mh_cg_erica{_rel}_3_9m</code>; raw scores only)</td>
-<td>Emotional Regulation</td>
+<tr>
+<td>Imaging</td>
+<td>Addition of source DICOMs for all imaging modalities</td>
 </tr>
 
 <tr>
-<td>Biospecimen & Omics</td>
-<td>Olink Explore 384 Inflammation 1 Panel</td>
-<td>Maternal Inflammation</td>
+<td rowspan="2">Neurocognition & Language</td>
+<td>Deferred Imitation Task: Gong and Berry-Go-Round</td>
+</tr>
+<tr><td>MacArthur-Bates CDI-2 Language</td></tr>
+
+<tr>
+<td>Novel Technology & Wearable Sensors</td>
+<td>GABI (infant heart rate) raw BIDS data</td>
 </tr>
 
 <tr>
-<td rowspan="2">Tabulated Imaging</td>
-<td>MRI Data Summary Form</a></td>
-<td>Pre-/Post-MRI Tech Checklist 2</td>
+<td rowspan="3">Physical Health</td>
+<td>Child Nutrition Questionnaire</td>
+</tr>
+<tr><td>PEDsQL</td></tr>
+<tr><td>Med History V1 - addition of V06</td></tr>
+
+<tr>
+<td rowspan="2">Social & Environmental Determinants</td>
+<td>Incarceration Questionnaire</td>
 </tr>
 <tr>
-<td>MRI Scan Session Summary Form</td>
-<td>Pre-/Post-MRI Tech Checklist 1</td>
-</tr> -->
+<td>V6 Adult and V6 Child Demographics</td>
+</tr>
 
 </tbody>
 </table>
+
+
+
+
+
+
+
+
 
 <a href="../../instruments/" class="button-link"> All instruments by domain →</a>
 
@@ -179,7 +201,7 @@ Release data now include the addition of the following instruments:
 <i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Resolved Known Issue &nbsp;&nbsp;&nbsp;
 <i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Completed Pending Update</p>
 
-<!-- <table class="compact-table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th style="width: 20%; white-space: nowrap;">Topic/Instrument</th>
@@ -341,7 +363,7 @@ Release data now include the addition of the following instruments:
   <i class="fa-solid fa-rotate icon-rotate"></i> Re-addition of variables <code>sed_bm_demo_residence_{001|002}</code>
   </td>
 </tr>
-</tbody></table> -->
+</tbody></table>
 
 
 ### 3.0 Inclusion & Exclusion Criteria
