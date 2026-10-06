@@ -84,8 +84,8 @@
 <div class="admin-note" markdown="1">
 LUCI NOTES: 
 
-- 3.0 release notes are under construction currently
--  update Release Date
+- 3.0 release notes are under construction - please contact Luci directly to request updates
+- update Release Date
 </div>
 
 
@@ -126,12 +126,12 @@ LUCI NOTES:
       848 Unknown <span class="muted">[V01]</span>
     </div>
     <div class="metric-sub">
-      2,568 F | 2,051 M M <span class="muted">[V02+]</span>
+      2,568 F | 2,051 M <span class="muted">[V02+]</span>
     </div>
   </div>
 </div>
 
-### 3.0 New Domain: *Participant Derived*
+### 3.0 New Domain: Participant Derived
 
 The **Demographics** domain has been replaced with the domain **Participant Derived**. Through Release 2.1, the Demographics domain included two tables containing derived participant information, *Visit Info* (visit-specific information) and *Basic Demographics* (general participant information derived from SED Demographics and administrative records). For Release 3.0, the Demographics domain has been renamed **Participant Derived**, with information organized into static and dynamic tables:
 
@@ -370,7 +370,7 @@ Scanner info in raw BIDS SCANS TSV files are now combined into a single table ac
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th>Topic</th>
+<th>Measure</th>
 <th>Summary of Changes</th>
 </tr>
 </thead>
@@ -384,7 +384,7 @@ Removed participant data with invalid scores of <code>-9999</code>.
 <tr>
 <td>CDI</td>
 <td><i class="fa-solid fa-bug icon-bug"></i>
-Corrected percentile calculations for N=36 cases in which 'Adjusted Percentile' had been incorrectly parsed from 'Total Produced' rather than 'Total Produced Percentile-sex (adjusted)'.
+Corrected percentile calculations for N=36 cases in which 'Adjusted Percentile' had been incorrectly parsed from 'Total Produced' rather than 'Total Produced Percentile-sex (adjusted).'
 </td>
 </tr>
 <tr>
@@ -530,7 +530,6 @@ Corrected scoring for participants missing all item responses, which had previou
 ### 3.0 Inclusion & Exclusion Criteria
 
 ##### Participants
-- DCC participants excluded
 - Only CH Profiles included — Exclusion by PSCID prefix (PI, QI, XI, YI)
 - Only 'Active' participants included
 - Only selected 'Multiple Birth' profiles are included (based on clean-up procedures)
