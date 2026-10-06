@@ -170,10 +170,10 @@ Release data now include the addition of the following measures, expanded data t
 <td rowspan="3">
 <i class="fa fa-brain table-icon-left"></i>
 <a href="../../instruments/#imaging">Imaging</a></td>
-<td>Addition of source DICOMs for all imaging modalities</td>
+<td>Source DICOMs for all imaging modalities</td>
 </tr>
-<tr><td>Addition of <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs for XCP-D for efficient voxel-wise statistical modeling.</td></tr>
-<tr><td>Addition of tabulated pipeline derivatives for QSIRecon.</td></tr>
+<tr><td><a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs for XCP-D for efficient voxel-wise statistical modeling</td></tr>
+<tr><td>Tabulated pipeline derivatives for QSIRecon</td></tr>
 
 <tr>
 <td rowspan="2">
@@ -199,13 +199,13 @@ Release data now include the addition of the following measures, expanded data t
 <tr><td>PEDsQL</td></tr>
 <tr><td>Med History V1 - addition of V06</td></tr>
 
-
 <tr>
-<td>
+<td rowspan="2">
 <i class="fas fa-city table-icon-left"></i>
 <a href="../../instruments/#social-environmental-determinants">Social & Environmental Determinants</a></td>
 <td>V6 Adult and V6 Child Demographics</td>
 </tr>
+<tr><td>Addition of Geocoded Linkage (GLED) from Home and Work Addresses</td></tr>
 
 </tbody>
 </table>
@@ -237,11 +237,11 @@ Release data now include the addition of the following measures, expanded data t
 </tr>
 <tr>
 <td>Blank Fields for Siblings</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Corrected family-level (i.e., non-child-specific) instrument fields so that they are now populated for sibling records, including HBCD Multiple Birth – Sibling records.</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Populated family-level/non-child-specific instrument fields for sibling records (e.g., HBCD Multiple Birth–Sibling).</td>
 </tr>
 <tr>
 <td>FamilyID</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Added FamilyID across tables to identify sibling relationships/enable mapping between Main Child and Sibling records.
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Added FamilyID across tables to identify sibling relationships/enable mapping between Main Child and Sibling.
 </td>
 </tr>
 <tr>
@@ -264,19 +264,19 @@ Release data now include the addition of the following measures, expanded data t
 <tr>
 <td>ecPROMIS CC</td>
 <td><i class="fas fa-bug icon-bug"></i>
-Corrected scoring for N=12 V03 participants with fewer than 3 item responses in <code>mh_cg_pms__cc__inf</code> (previously '0'; now 'null').
+Corrected scoring for N=12 V03 participants with &lt;3 item responses in <code>mh_cg_pms__cc__inf</code> from '0' to 'null.'
 </td>
 </tr>
 <tr>
 <td>FAD</td>
 <td><i class="fas fa-bug icon-bug"></i>
-Corrected scoring for N=4 V06 participants with fewer than 3 item responses (previously '0'; now 'null').
+Corrected scoring for N=4 V06 participants with fewer than 3 item responses from '0' to 'null.'
 </td>
 </tr>
 <tr>
 <td>MAPS-TL (&lt;1yr)</td>
 <td><i class="fas fa-bug icon-bug"></i>
-Corrected scoring for N=4 participants with no item responses (previously '0'; now 'null').
+Corrected scoring for N=4 participants with no item responses from '0' to 'null.'
 </td>
 </tr>
 <tr>
@@ -309,7 +309,7 @@ Corrected nail type in main results table (<code>*_nails_results</code>) (former
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th style="width: 20%; white-space: nowrap;">Topic</th>
+<th>Topic</th>
 <th>Summary of Changes</th>
 </tr>
 </thead>
@@ -317,7 +317,7 @@ Corrected nail type in main results table (<code>*_nails_results</code>) (former
 <tr>
 <td>Age fields</td>
 <td><i class="fa-solid fa-bug icon-bug"></i>
-Corrected chronological and adjusted age values for N=74 V03 sessions that fell outside the expected 3–9 month range due to site entry errors.
+Corrected chronological and adjusted age values for N=74 V03 sessions that fell outside the expected 3–9 month range.
 </td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ Scanner info in raw BIDS SCANS TSV files are now combined into a single table ac
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th style="width: 20%; white-space: nowrap;">Topic</th>
+<th>Topic</th>
 <th>Summary of Changes</th>
 </tr>
 </thead>
@@ -381,24 +381,150 @@ Scanner info in raw BIDS SCANS TSV files are now combined into a single table ac
 Removed participant data with invalid scores of <code>-9999</code>. 
 </td>
 </tr>
-
 <tr>
 <td>CDI</td>
 <td><i class="fa-solid fa-bug icon-bug"></i>
 Corrected percentile calculations for N=36 cases in which 'Adjusted Percentile' had been incorrectly parsed from 'Total Produced' rather than 'Total Produced Percentile-sex (adjusted)'.
 </td>
 </tr>
-
+<tr>
+<td>MLDS</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected implausible values (&gt;168 hours) in <code>ncl_ch_mlds_arr_hr_wk</code> resulting from data entry errors.
+</td>
+</tr>
 </tbody></table>
 
+##### Participant Derived
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>Topic</th>
+<th>Summary of Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maternal Age</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected Maternal Age at V01 values of 0 for N=14 participants.
+</td>
+</tr>
 
+<tr>
+<td>Static table</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected values for the <code>screen_race_multi__*</code> variables (formerly were almost entirely coded as '0').</td>
+</tr>
+<tr>
+<td>TLFB</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Updated PNR data from TLFB versions 1/2 to version 3 specific to PNR.
+</td>
+</tr>
 
+<!-- <tr>
+<td>??</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Harmonized participant status and withdrawal fields.
+</td>
+</tr> -->
+</tbody></table>
 
+##### Physical Health
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>Topic</th>
+<th>Summary of Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anthropometrics</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected N=303 "unknown missing" adjusted age values associated with missing 'Date of Administration.'
+</td>
+</tr>
+<tr>
+<td>Anthropometrics</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected the data dictionary element <code>type_data</code> for <code>average_bmi</code> from <code>character</code> to <code>double</code>.</td>
+</tr>
+<tr>
+<td>Anthropometrics</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>
+Added sex-specific birth weight.
+</td>
+</tr>
+<tr>
+<td>BISQ-SF</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>
+Added Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
+</tr>
+<tr>
+<td>Vision Screener</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>
+Additional fields added to <code>ph_ch_vs</code> (2.1 release includes completion status and overall screening results).</td>
+</tr>
+</tbody></table>
 
+##### Pregnancy &amp; Environmental Exposure
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>Topic</th>
+<th>Summary of Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EPDS</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected inconsistent scoring: (1) item responses present, but score null; (2) all items null, but score is <code>0</code>.</td>
+</tr>
+<tr>
+<td>Healthv2 Preg</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Populated <code>pex_bm_healthv2_preg__exp__pnv_007__01</code> field for participants who reported stopping PNV.
+</td>
+</tr>
+<tr>
+<td>Healthv2 Preg</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected missing aspirin-use items (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>).
+</td>
+</tr>
+<tr>
+<td>PEX Health</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>
+Standardized ICD code reporting for the <code>pex_bm_health*</code> tables and added corresponding names/labels.
+</td>
+</tr>
+</tbody></table>
 
+##### Social & Environmental Determinants
 
-
-
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>Topic</th>
+<th>Summary of Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Demographics</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected roster to restrict to V02 PNR and alternate caregiver cohorts (excluding inappropriate collection at V02/V03).</td>
+</tr>
+<tr>
+<td>eHITS</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected scoring for participants missing all item responses, which had previously been incorrectly scored as 0.
+</td>
+</tr>
+</tbody></table>
 
 
 ### 3.0 Inclusion & Exclusion Criteria
