@@ -20,9 +20,6 @@
 
 
 
-
-
-
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -55,26 +52,13 @@
 <td>Harmonize participant status and withdrawal fields</td>
 </tr>
 
-<!-- MRI -->
 
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Raw QC Metrics</td>
-<td>Raw MR data QC metrics provided in the raw BIDS SCANS TSV files will be combined into a single table across participants/sessions.</td>
-</tr>
 
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i> Scanner info</td>
-<td>Scanner metadata, currently available within the raw BIDS Scans TSV files, will be additionally provided within the tabulated data for ease of access (see <a href="#infobbox">Participant Derived</a> domain info on this page).</td>
-</tr>
 
 <tr class="domain-row">
 <td colspan="2"><strong>Neurocognition &amp; Language</strong></td>
 </tr>
 
-<tr>
-<td><i class="fas fa-bug icon-bug"></i> CDI</td>
-<td>Percentiles incorrectly converted for N=36 cases, resulting in values &gt;100 ('Adjusted Percentile' incorrectly parsed from 'Total Produced' instead of 'Total Produced Percentile-sex (adjusted)')</td>
-</tr>
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i> MLDS</td>

@@ -349,6 +349,19 @@ Corrected <code>LargeDelta</code> and <code>SmallDelta</code> in metadata to ref
 Corrected <code>run-{X}</code> assignments so that they reflect chronological acquisition order.
 </td>
 </tr>
+
+<tr>
+<td>Raw QC Metrics</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>
+Raw MR data QC metrics in raw BIDS SCANS TSV files are now combined into a single table across participants/sessions.</td>
+</tr>
+
+<tr>
+<td>Scanner info</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>
+Scanner info in raw BIDS SCANS TSV files are now combined into a single table across participants/sessions.</td>
+</tr>
+
 </tbody></table>
 
 
@@ -368,6 +381,14 @@ Corrected <code>run-{X}</code> assignments so that they reflect chronological ac
 Removed participant data with invalid scores of <code>-9999</code>. 
 </td>
 </tr>
+
+<tr>
+<td>CDI</td>
+<td><i class="fa-solid fa-bug icon-bug"></i>
+Corrected percentile calculations for N=36 cases in which 'Adjusted Percentile' had been incorrectly parsed from 'Total Produced' rather than 'Total Produced Percentile-sex (adjusted)'.
+</td>
+</tr>
+
 </tbody></table>
 
 
