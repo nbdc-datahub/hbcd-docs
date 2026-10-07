@@ -399,13 +399,13 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
 </tr>
 
 <tr>
-  <td><a href="neurocog/mbcdi">MacArthur-Bates CDI Words & Gestures</a><i class="fa-solid fa-language table-icon"></i></td>
+  <td><a href="neurocog/mbcdi">CDI Words & Gestures</a><i class="fa-solid fa-language table-icon"></i></td>
   <td>Language Development</td>
   <td><code>ncl_ch_cdiwgen</code> / <code>ncl_ch_cdiwges</code></td>
 </tr>
 
 <tr>
-  <td><a href="neurocog/mbcdi-2">MacArthur-Bates CDI Words & Sentences</a><i class="fa-solid fa-language table-icon"></i></td>
+  <td><a href="neurocog/mbcdi-2">CDI Words & Sentences</a><i class="fa-solid fa-language table-icon"></i></td>
   <td>Language Development</td>
   <td><code>ncl_ch_cdiwsen</code> / <code>ncl_ch_cdiwses</code></td>
 </tr>
