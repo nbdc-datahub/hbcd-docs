@@ -46,10 +46,3 @@ hbcd/
 ---
 
 {{ references(instruments.qmri) }}
-
-
-
-
-<!-- 
-qMRI data are processed via <a href="https://syntheticmr.com/products/symri-neuro/">SyMRI</a> followed by minimal post-processing through <a href="https://hbcd-symri-postproc.readthedocs.io/en/latest/index.html">qMRI PostProc</a>. SyMRI derives synthetic T1w/T2w images and quantitative relaxometry maps from 3D-QALAS acquisitions by reintroducing estimated T1/T2 relaxation times into the MR signal equation (Bloch equations). -->
-
