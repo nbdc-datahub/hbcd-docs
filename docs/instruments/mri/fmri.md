@@ -242,13 +242,39 @@ hbcd/
 
 ## ModelArrayIO
 
-Mass-univariate statistical modeling for large neuroimaging datasets, or [ModelArrayIO](https://modelarrayio.readthedocs.io/en/latest/), is a Python package that converts neuroimaging file formats to HDF5 (`.h5`) for compatibility with the [ModelArray R package](https://github.com/ModelArray/ModelArray). For HBCD, ModelArrayIO is used as a downstream aggregation step, converting subject-level outputs from XCP-D into cohort-level arrays. This enables efficient, large-scale statistical analyses via ModelArray without having to load individual subject files.  
+Mass-univariate statistical modeling for large neuroimaging datasets, or [ModelArrayIO](https://modelarrayio.readthedocs.io/en/latest/), is a Python package that converts neuroimaging file formats to HDF5 (`.h5`) for compatibility with the [ModelArray R package](https://github.com/ModelArray/ModelArray). For HBCD, ModelArrayIO is used as a downstream aggregation step to convert subject-level XCP-D outputs into cohort-level arrays, enabling efficient large-scale statistical analysis without loading individual subject files.
 
-XCP-D-ModelArray outputs include cohort-level HDF5 arrays aggregating structural and functional derivatives:
+XCP-D-ModelArrayIO outputs include cohort-level HDF5 arrays for:
 
-  - Surface morphometry (curvature, sulcal depth, cortical thickness)  
-  - Functional maps (ALFF, ReHo)  
-  - Resting-state functional connectivity
+- Surface morphometry (curvature, sulcal depth, cortical thickness)
+- Functional maps (ALFF, ReHo)
+- Resting-state functional connectivity
+
+### Processing
+
+ModelArrayIO read the input file paths from the cohort CSV using `SCALAR_COLUMNS`. Input modalities were automatically detected from the source file extensions. Data were stored as `float32` using the HDF5 backend with gzip compression (level 9).
+
+HDF5 spatial chunks were automatically sized to approximately 32 MiB. Four parallel workers were used for S3-based input files.
+
+**Note:** Each `.h5` output is paired with a `.csv` file indexing the included subjects and sessions.
+
+### ModelArrayIO Run Command & Parameters
+
+Outputs were generated via the following command. See the [ModelArrayIO Usage Notes](https://modelarrayio.readthedocs.io/en/latest/usage.html) for additional details.
+
+```bash
+modelarrayio to-modelarray \
+    --cohort-file ${cohort_csv} \
+    --output ${out_h5} \
+    --scalar-columns ${SCALAR_COLUMNS} \
+    --backend hdf5 \
+    --dtype float32 \
+    --compression gzip \
+    --compression-level 9 \
+    --s3-workers 4 \
+    --log-level INFO \
+    --target-chunk-mb 32
+````
 
 <div id="modelarray" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>

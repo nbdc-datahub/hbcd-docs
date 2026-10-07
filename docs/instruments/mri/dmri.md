@@ -95,17 +95,25 @@ hbcd/
     │           │   ├── *_space-ACPC_model-gqi_dwimap.fib.gz
     │           │   ├── *_space-ACPC_model-gqi_dwimap.fib.gz.icbm152_adult.map.gz
     │           │   ├── *_space-ACPC_model-gqi_param-<span class="var">{gfa|iso|qa}</span>_dwimap.nii.gz
-    │           │   ├── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-rdi_param-<span class="var">{rd1|rd2}</span>_dwimap.nii.gz
-    │           │   └── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-tensor_param-<span class="var">{DTI-PARAM}</span>_dwimap.nii.gz
+    │           │   ├── *_space-<span class="var">{SPACE}</span>_model-rdi_param-<span class="var">{rd1|rd2}</span>_dwimap.nii.gz
+    │           │   └── *_space-<span class="var">{SPACE}</span>_model-tensor_param-<span class="var">{DTI-PARAM}</span>_dwimap.nii.gz
     │           ├── figures/*
     │           └── sub-[ID]_ses-[V0X].html
 
+<span class="hashtag"># ── Session / Template Mapping ─────────────────────────────</span>
+<span class="var">ses-V02</span> : ACPC, MNIInfant+1
+<span class="var">ses-V03</span> : ACPC, MNIInfant+3
+<span class="var">ses-V04</span> : ACPC, MNIInfant+5
+<span class="var">ses-V06</span> : ACPC, MNIInfant+7
+
+<span class="hashtag"># ── Parameter Legend ───────────────────────────────────────</span>
 <span class="var">DTI-PARAM</span>: ad, fa, ha, md, rd, txx, txy, txz, tyy, tyz, tzz
 <span class="var">BUNDLE</span>: <a href="../dmri.html">see full list</a>
 </pre>
 
 #### Diffusion Kurtosis Imaging (DKI)
 DKI extends DTI to capture non-Gaussian diffusion. The main metric is mean kurtosis (MK), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).
+
 <pre class="folder-tree">
     ├── qsirecon-DIPYDKI/
     │   └── sub-[ID]/
@@ -113,13 +121,21 @@ DKI extends DTI to capture non-Gaussian diffusion. The main metric is mean kurto
     │           ├── dwi/
     │           │   # DIPY DKI
     │           │   ├── *_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-    │           │   ├── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-dki_param-<span class="var">{DKI-PARAM}</span>_dwimap.nii.gz
-    │           │   └── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-tensor_param-fa_dwimap.nii.gz
+    │           │   ├── *_space-<span class="var">{SPACE}</span>_model-dki_param-<span class="var">{DKI-PARAM}</span>_dwimap.nii.gz
+    │           │   └── *_space-<span class="var">{SPACE}</span>_model-tensor_param-fa_dwimap.nii.gz
     │           ├── figures/*
     │           └── sub-[ID]_ses-[V0X].html
 
-<span class="var">DKI-PARAM</span>: ad, ak, kfa, md, mk, mkt, rd, rk
+<span class="hashtag"># ── Session / Template Mapping ─────────────────────────────</span>
+<span class="var">ses-V02</span> : ACPC, MNIInfant+1
+<span class="var">ses-V03</span> : ACPC, MNIInfant+3
+<span class="var">ses-V04</span> : ACPC, MNIInfant+5
+<span class="var">ses-V06</span> : ACPC, MNIInfant+7
+
+<span class="hashtag"># ── Parameter Legend ───────────────────────────────────────</span>
+<span class="var">DKI-PARAM</span> : ad, ak, kfa, md, mk, mkt, rd, rk
 </pre>
+
 
 #### Mean Apparent Propagator MRI (MAP-MRI)
 MAP-MRI Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution. This enables quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>).
@@ -129,11 +145,18 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
     │       └── ses-[V0X]/
     │           ├── dwi/
     │           │   ├── *_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-    │           │   ├── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-mapmri_param-<span class="var">{MAPMRI}</span>_dwimap.nii.gz
-    │           │   └── *_space-<span class="var">{ACPC|MNIInfant+1}</span>_model-tensor_param-<span class="var">{TENSOR}</span>_dwimap.nii.gz
+    │           │   ├── *_space-<span class="var">{SPACE}</span>_model-mapmri_param-<span class="var">{MAPMRI}</span>_dwimap.nii.gz
+    │           │   └── *_space-<span class="var">{SPACE}</span>_model-tensor_param-<span class="var">{TENSOR}</span>_dwimap.nii.gz
     │           ├── figures/*
     │           └── sub-[ID]_ses-[V0X].html
 
+<span class="hashtag"># ── Session / Template Mapping ─────────────────────────────</span>
+<span class="var">ses-V02</span> : ACPC, MNIInfant+1
+<span class="var">ses-V03</span> : ACPC, MNIInfant+3
+<span class="var">ses-V04</span> : ACPC, MNIInfant+5
+<span class="var">ses-V06</span> : ACPC, MNIInfant+7
+
+<span class="hashtag"># ── Parameter Legend ───────────────────────────────────────</span>
 <span class="var">MAPMRI</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
 </pre>
 
@@ -166,8 +189,15 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
             └── ses-[V0X]/
                 └── dwi/
                     ├── *_space-ACPC_bundles-DSIStudio_scalarstats.tsv
-                    └── *_space-MNIInfant+1_model-tensor_param-<span class="var">{TENSOR}</span>_dwimap.nii.g
+                    └── *_space-{SPACE}_model-tensor_param-<span class="var">{TENSOR}</span>_dwimap.nii.g
+                    
+<span class="hashtag"># ── Session / Template Mapping ─────────────────────────────</span>
+<span class="var">ses-V02</span> : MNIInfant+1
+<span class="var">ses-V03</span> : MNIInfant+3
+<span class="var">ses-V04</span> : MNIInfant+5
+<span class="var">ses-V06</span> : MNIInfant+7
 
+<span class="hashtag"># ── Parameter Legend ───────────────────────────────────────</span>
 <span class="var">TENSOR</span>: ad, am, fa, li, rd
 </pre>
 
@@ -248,108 +278,451 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 
 ## ModelArrayIO
 
-Mass-univariate statistical modeling for large neuroimaging datasets, or [ModelArrayIO](https://modelarrayio.readthedocs.io/en/latest/), is a Python package that converts neuroimaging file formats to HDF5 (`.h5`) for compatibility with the [ModelArray R package](https://github.com/ModelArray/ModelArray). For HBCD diffusion data, ModelArrayIO is used as a downstream aggregation step, converting subject-level MRI scalar maps across QSIRecon reconstruction methods into cohort-level arrays. This enables efficient, large-scale statistical analyses via ModelArray without having to load individual subject files.  
+Mass-univariate statistical modeling for large neuroimaging datasets, or [ModelArrayIO](https://modelarrayio.readthedocs.io/en/latest/), is a Python package that converts neuroimaging file formats to HDF5 (`.h5`) for compatibility with the [ModelArray R package](https://github.com/ModelArray/ModelArray). For HBCD diffusion data, ModelArrayIO is used as a downstream aggregation step, converting subject-level MRI scalar maps across QSIRecon reconstruction methods into cohort-level arrays. This enables efficient, large-scale statistical analyses via ModelArray without having to load individual subject files. 
 
-<pre class="folder-tree">
-    └── qsirecon-ModelArray/
-        │    <span class="comment"># DIPY outputs</span>
-        ├── qsirecon-DIPY_model-<span class="var">{tensor|dki}</span>_param-<span class="var">{PARAM}</span>.h5
-        ├── qsirecon-DIPY_model-<span class="var">{tensor|dki}</span>_param-<span class="var">{PARAM}</span>.csv
+The QSIRecon-ModelArrayIO outputs include scalar maps from:
+
+- DIPYDKI
+- DSI Studio
+- TORTOISE model-tensor
+- TORTOISE MAPMRI
+
+### Processing
+
+ModelArrayIO reads input file paths from the cohort CSV using `SCALAR_COLUMNS`. The input modality is automatically detected from the source file extension. Data are stored as `float32` using the HDF5 backend with gzip compression at level 9.
+
+HDF5 spatial chunks are automatically sized to approximately 32 MiB. Four parallel workers are used when loading input files from S3.
+
+**Note:** Each `.h5` output is paired with a `.csv` file that indexes the subjects and sessions included in the corresponding array.
+
+### ModelArrayIO Run Command
+```bash
+modelarrayio to-modelarray \
+    --cohort-file ${cohort_csv} \
+    --output ${out_h5} \
+    --scalar-columns ${SCALAR_COLUMNS} \
+    --backend hdf5 \
+    --dtype float32 \
+    --compression gzip \
+    --compression-level 9 \
+    --s3-workers 4 \
+    --log-level INFO \
+    --target-chunk-mb 32
+```
+
+<div id="modelarray" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+    <span class="text">ModelArrayIO Outputs</span>
+    <a class="anchor-link" href="#modelarray" title="Copy link">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<pre style="font-size: 11px;" class="folder-tree">
+hbcd/
+└── derivatives/
+    └── qsirecon-ModelArrayIO/
+        │    <span class="comment"># DIPYDKI outputs</span>
+        ├── qsirecon-DIPYDKI_space-<span class="var">{SPACE}</span>_model-<span class="var">{tensor|dki}</span>_param-<span class="var">{PARAM}</span>.h5
+        ├── qsirecon-DIPYDKI_space-<span class="var">{SPACE}</span>_model-<span class="var">{tensor|dki}</span>_param-<span class="var">{PARAM}</span>.csv
         │
         │    <span class="comment"># DSI Studio outputs</span>
-        ├── qsirecon-DSIStudio_model-<span class="var">{tensor|gqi|rdi}</span>_param-<span class="var">{PARAM}</span>.h5
-        ├── qsirecon-DSIStudio_model-<span class="var">{tensor|gqi|rdi}</span>_param-<span class="var">{PARAM}</span>.csv
+        ├── qsirecon-DSIStudio_space-<span class="var">{SPACE}</span>_model-<span class="var">{tensor|gqi|rdi}</span>_param-<span class="var">{PARAM}</span>.h5
+        ├── qsirecon-DSIStudio_space-<span class="var">{SPACE}</span>_model-<span class="var">{tensor|gqi|rdi}</span>_param-<span class="var">{PARAM}</span>.csv
         │
-        │    <span class="comment"># TORTOISE outputs</span>
-        ├── qsirecon-TORTOISE_model-tensor_param-<span class="var">{PARAM}</span>.h5
-        └── qsirecon-TORTOISE_model-tensor_param-<span class="var">{PARAM}</span>.csv
+        │    <span class="comment"># TORTOISE model-tensor outputs</span>
+        ├── qsirecon-TORTOISE_model-tensor_space-<span class="var">{SPACE}</span>_param-<span class="var">{PARAM}</span>.h5
+        ├── qsirecon-TORTOISE_model-tensor_space-<span class="var">{SPACE}</span>_param-<span class="var">{PARAM}</span>.csv
+        │
+        │    <span class="comment"># TORTOISE MAPMRI outputs</span>
+        ├── qsirecon-TORTOISE_model-MAPMRI_space-<span class="var">{SPACE}</span>_param-<span class="var">{PARAM}</span>.h5
+        └── qsirecon-TORTOISE_model-MAPMRI_space-<span class="var">{SPACE}</span>_param-<span class="var">{PARAM}</span>.csv
+
+<span class="hashtag"># ── Label Legend ─────────────────────────────────────────────</span>
+<span class="var">PARAM</span>    : QSIRecon scalar map/parameter
+<span class="var">SPACE</span>    : MNIInfant+1, MNIInfant+3, MNIInfant+5, MNIInfant+7
 </pre>
+</div>
 
 <div class="param-filter">
 <label for="param-method">Select reconstruction method to view associated <code>&lt;PARAM&gt;</code> values:</label>
 <select id="param-method">
 <option value="" selected disabled>Select</option>
-<option value="DIPY">DIPY</option>
+<option value="DIPYDKI">DIPY</option>
 <option value="DSIStudio">DSIStudio</option>
-<option value="TORTOISE">TORTOISE</option>
+<option value="TORTOISE_model-tensor">TORTOISE (tensor)</option>
+<option value="TORTOISE_model-MAPMRI">TORTOISE (MAPMRI)</option>
 </select>
 </div>
+
 <style>
-.param-filter { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
-.param-filter label { font-size: 0.85rem; color: #475569; margin: 0; }
-.param-filter select { font-size: 0.85rem; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 6px; color: #334155; background: #fff; cursor: pointer; }
-.param-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
-.param-table thead tr { border-bottom: 2px solid #e2e8f0; }
-.param-table th { text-align: left; padding: 10px 14px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #64748b; }
-.param-table td { padding: 9px 14px; border-bottom: 1px solid #f1f5f9; vertical-align: middle; }
-.param-table tbody tr:hover td { background: #f8fafc; }
-.param-table tr[hidden] { display: none; }
-.param-table .badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.03em; }
-.badge-dipy { background: #EEEDFE; color: #3C3489; }
-.badge-dsistudio { background: #E1F5EE; color: #085041; }
-.badge-tortoise { background: #FAEEDA; color: #633806; }
-.param-code { font-family: ui-monospace, monospace; font-size: 0.82rem; background: #f1f5f9; color: #334155; padding: 2px 7px; border-radius: 4px; }
-.desc-text { color: #475569; }
-.table-wrap { border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; margin-top: 12px; }
-.param-empty td { color: #94a3b8; font-style: italic; }
+.param-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.param-filter label {
+  font-size: 0.85rem;
+  color: #475569;
+  margin: 0;
+}
+
+.param-filter select {
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  color: #334155;
+  background: #fff;
+  cursor: pointer;
+}
+
+.param-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.param-table thead tr {
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.param-table th {
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+}
+
+.param-table td {
+  padding: 9px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.param-table tbody tr:hover td {
+  background: #f8fafc;
+}
+
+.param-table tr[hidden] {
+  display: none;
+}
+
+.param-table .badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.badge-dipy {
+  background: #EEEDFE;
+  color: #3C3489;
+}
+
+.badge-dsistudio {
+  background: #E1F5EE;
+  color: #085041;
+}
+
+.badge-tortoise {
+  background: #FAEEDA;
+  color: #633806;
+}
+
+.model-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  color: #475569;
+  background: #f1f5f9;
+}
+
+.param-code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.82rem;
+  background: #f1f5f9;
+  color: #334155;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.desc-text {
+  color: #475569;
+}
+
+.table-wrap {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.param-empty td {
+  color: #94a3b8;
+  font-style: italic;
+}
 </style>
+
 <div class="table-wrap">
 <table class="param-table">
 <thead>
-<tr><th>Reconstruction Method</th><th>Param</th><th>Description</th></tr>
+<tr>
+  <th>Reconstruction Method</th>
+  <th>Param</th>
+  <th>Description</th>
+  <th>Underlying Model</th>
+</tr>
 </thead>
+
 <tbody>
-<tr class="param-empty"><td colspan="3">Select a reconstruction method above.</td></tr>
-<tr data-subtype="DIPY" hidden><td><span class="badge badge-dipy">DIPY</span></td><td><span class="param-code">fa</span></td><td class="desc-text">Fractional Anisotropy (tensor model)</td></tr>
-<tr data-subtype="DIPY" hidden><td><span class="badge badge-dipy">DIPY</span></td><td><span class="param-code">ad</span></td><td class="desc-text">Axial Diffusivity</td></tr>
-<tr data-subtype="DIPY" hidden><td><span class="badge badge-dipy">DIPY</span></td><td><span class="param-code">rd</span></td><td class="desc-text">Radial Diffusivity</td></tr>
-<tr data-subtype="DIPY" hidden><td><span class="badge badge-dipy">DIPY</span></td><td><span class="param-code">md</span></td><td class="desc-text">Mean Diffusivity</td></tr>
-<tr data-subtype="DIPY" hidden><td><span class="badge badge-dipy">DIPY</span></td><td><span class="param-code">ak</span></td><td class="desc-text">Axial Kurtosis (DKI model)</td></tr>
-<tr data-subtype="DIPY" hidden><td><span class="badge badge-dipy">DIPY</span></td><td><span class="param-code">mk</span></td><td class="desc-text">Mean Kurtosis (DKI model)</td></tr>
-<tr data-subtype="DIPY" hidden><td><span class="badge badge-dipy">DIPY</span></td><td><span class="param-code">mkt</span></td><td class="desc-text">Mean Kurtosis Tensor</td></tr>
-<tr data-subtype="DIPY" hidden><td><span class="badge badge-dipy">DIPY</span></td><td><span class="param-code">rk</span></td><td class="desc-text">Radial Kurtosis</td></tr>
-<tr data-subtype="DIPY" hidden><td><span class="badge badge-dipy">DIPY</span></td><td><span class="param-code">kfa</span></td><td class="desc-text">Kurtosis Fractional Anisotropy</td></tr>
-<tr data-subtype="DSIStudio" hidden><td><span class="badge badge-dsistudio">DSIStudio</span></td><td><span class="param-code">fa</span></td><td class="desc-text">Fractional Anisotropy (tensor)</td></tr>
-<tr data-subtype="DSIStudio" hidden><td><span class="badge badge-dsistudio">DSIStudio</span></td><td><span class="param-code">ad</span></td><td class="desc-text">Axial Diffusivity</td></tr>
-<tr data-subtype="DSIStudio" hidden><td><span class="badge badge-dsistudio">DSIStudio</span></td><td><span class="param-code">rd</span></td><td class="desc-text">Radial Diffusivity</td></tr>
-<tr data-subtype="DSIStudio" hidden><td><span class="badge badge-dsistudio">DSIStudio</span></td><td><span class="param-code">md</span></td><td class="desc-text">Mean Diffusivity</td></tr>
-<tr data-subtype="DSIStudio" hidden><td><span class="badge badge-dsistudio">DSIStudio</span></td><td><span class="param-code">ha</span></td><td class="desc-text">Helix Angle</td></tr>
-<tr data-subtype="DSIStudio" hidden><td><span class="badge badge-dsistudio">DSIStudio</span></td><td><span class="param-code">gfa</span></td><td class="desc-text">Generalized Fractional Anisotropy (GQI)</td></tr>
-<tr data-subtype="DSIStudio" hidden><td><span class="badge badge-dsistudio">DSIStudio</span></td><td><span class="param-code">qa</span></td><td class="desc-text">Quantitative Anisotropy (GQI)</td></tr>
-<tr data-subtype="DSIStudio" hidden><td><span class="badge badge-dsistudio">DSIStudio</span></td><td><span class="param-code">iso</span></td><td class="desc-text">Isotropic Diffusion</td></tr>
-<tr data-subtype="DSIStudio" hidden><td><span class="badge badge-dsistudio">DSIStudio</span></td><td><span class="param-code">rd1</span></td><td class="desc-text">Restricted Diffusion Index 1</td></tr>
-<tr data-subtype="DSIStudio" hidden><td><span class="badge badge-dsistudio">DSIStudio</span></td><td><span class="param-code">rd2</span></td><td class="desc-text">Restricted Diffusion Index 2</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">fa</span></td><td class="desc-text">Fractional Anisotropy (tensor)</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">ad</span></td><td class="desc-text">Axial Diffusivity</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">rd</span></td><td class="desc-text">Radial Diffusivity</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">am</span></td><td class="desc-text">Axial Mean Diffusivity</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">li</span></td><td class="desc-text">Linearity Index</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">ng</span></td><td class="desc-text">Non-Gaussianity (MAP-MRI)</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">ngpar</span></td><td class="desc-text">Non-Gaussianity (parallel)</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">ngperp</span></td><td class="desc-text">Non-Gaussianity (perpendicular)</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">pa</span></td><td class="desc-text">Propagator Anisotropy</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">path</span></td><td class="desc-text">Propagator Anisotropy (thresholded)</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">rtap</span></td><td class="desc-text">Return-to-Axis Probability</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">rtop</span></td><td class="desc-text">Return-to-Origin Probability</td></tr>
-<tr data-subtype="TORTOISE" hidden><td><span class="badge badge-tortoise">TORTOISE</span></td><td><span class="param-code">rtpp</span></td><td class="desc-text">Return-to-Plane Probability</td></tr>
+
+<tr class="param-empty">
+  <td colspan="4">Select a reconstruction method above.</td>
+</tr>
+
+<!-- DIPY -->
+<tr data-subtype="DIPY" hidden>
+  <td><span class="badge badge-dipy">DIPY</span></td>
+  <td><span class="param-code">fa</span></td>
+  <td class="desc-text">Fractional Anisotropy</td>
+  <td><span class="model-badge">Tensor</span></td>
+</tr>
+<tr data-subtype="DIPY" hidden>
+  <td><span class="badge badge-dipy">DIPY</span></td>
+  <td><span class="param-code">ad</span></td>
+  <td class="desc-text">Axial Diffusivity</td>
+  <td><span class="model-badge">DKI</span></td>
+</tr>
+<tr data-subtype="DIPY" hidden>
+  <td><span class="badge badge-dipy">DIPY</span></td>
+  <td><span class="param-code">rd</span></td>
+  <td class="desc-text">Radial Diffusivity</td>
+  <td><span class="model-badge">DKI</span></td>
+</tr>
+<tr data-subtype="DIPY" hidden>
+  <td><span class="badge badge-dipy">DIPY</span></td>
+  <td><span class="param-code">md</span></td>
+  <td class="desc-text">Mean Diffusivity</td>
+  <td><span class="model-badge">DKI</span></td>
+</tr>
+<tr data-subtype="DIPY" hidden>
+  <td><span class="badge badge-dipy">DIPY</span></td>
+  <td><span class="param-code">ak</span></td>
+  <td class="desc-text">Axial Kurtosis</td>
+  <td><span class="model-badge">DKI</span></td>
+</tr>
+<tr data-subtype="DIPY" hidden>
+  <td><span class="badge badge-dipy">DIPY</span></td>
+  <td><span class="param-code">mk</span></td>
+  <td class="desc-text">Mean Kurtosis</td>
+  <td><span class="model-badge">DKI</span></td>
+</tr>
+<tr data-subtype="DIPY" hidden>
+  <td><span class="badge badge-dipy">DIPY</span></td>
+  <td><span class="param-code">mkt</span></td>
+  <td class="desc-text">Mean Kurtosis Tensor</td>
+  <td><span class="model-badge">DKI</span></td>
+</tr>
+<tr data-subtype="DIPY" hidden>
+  <td><span class="badge badge-dipy">DIPY</span></td>
+  <td><span class="param-code">rk</span></td>
+  <td class="desc-text">Radial Kurtosis</td>
+  <td><span class="model-badge">DKI</span></td>
+</tr>
+<tr data-subtype="DIPY" hidden>
+  <td><span class="badge badge-dipy">DIPY</span></td>
+  <td><span class="param-code">kfa</span></td>
+  <td class="desc-text">Kurtosis Fractional Anisotropy</td>
+  <td><span class="model-badge">DKI</span></td>
+</tr>
+
+<!-- DSIStudio -->
+<tr data-subtype="DSIStudio" hidden>
+  <td><span class="badge badge-dsistudio">DSIStudio</span></td>
+  <td><span class="param-code">fa</span></td>
+  <td class="desc-text">Fractional Anisotropy</td>
+  <td><span class="model-badge">Tensor</span></td>
+</tr>
+<tr data-subtype="DSIStudio" hidden>
+  <td><span class="badge badge-dsistudio">DSIStudio</span></td>
+  <td><span class="param-code">ad</span></td>
+  <td class="desc-text">Axial Diffusivity</td>
+  <td><span class="model-badge">Tensor</span></td>
+</tr>
+<tr data-subtype="DSIStudio" hidden>
+  <td><span class="badge badge-dsistudio">DSIStudio</span></td>
+  <td><span class="param-code">rd</span></td>
+  <td class="desc-text">Radial Diffusivity</td>
+  <td><span class="model-badge">Tensor</span></td>
+</tr>
+<tr data-subtype="DSIStudio" hidden>
+  <td><span class="badge badge-dsistudio">DSIStudio</span></td>
+  <td><span class="param-code">md</span></td>
+  <td class="desc-text">Mean Diffusivity</td>
+  <td><span class="model-badge">Tensor</span></td>
+</tr>
+<tr data-subtype="DSIStudio" hidden>
+  <td><span class="badge badge-dsistudio">DSIStudio</span></td>
+  <td><span class="param-code">ha</span></td>
+  <td class="desc-text">Helix Angle</td>
+  <td><span class="model-badge">Tensor</span></td>
+</tr>
+<tr data-subtype="DSIStudio" hidden>
+  <td><span class="badge badge-dsistudio">DSIStudio</span></td>
+  <td><span class="param-code">gfa</span></td>
+  <td class="desc-text">Generalized Fractional Anisotropy</td>
+  <td><span class="model-badge">GQI</span></td>
+</tr>
+<tr data-subtype="DSIStudio" hidden>
+  <td><span class="badge badge-dsistudio">DSIStudio</span></td>
+  <td><span class="param-code">qa</span></td>
+  <td class="desc-text">Quantitative Anisotropy</td>
+  <td><span class="model-badge">GQI</span></td>
+</tr>
+<tr data-subtype="DSIStudio" hidden>
+  <td><span class="badge badge-dsistudio">DSIStudio</span></td>
+  <td><span class="param-code">iso</span></td>
+  <td class="desc-text">Isotropic Diffusion</td>
+  <td><span class="model-badge">GQI</span></td>
+</tr>
+<tr data-subtype="DSIStudio" hidden>
+  <td><span class="badge badge-dsistudio">DSIStudio</span></td>
+  <td><span class="param-code">rd1</span></td>
+  <td class="desc-text">Restricted Diffusion Index 1</td>
+  <td><span class="model-badge">RDI</span></td>
+</tr>
+<tr data-subtype="DSIStudio" hidden>
+  <td><span class="badge badge-dsistudio">DSIStudio</span></td>
+  <td><span class="param-code">rd2</span></td>
+  <td class="desc-text">Restricted Diffusion Index 2</td>
+  <td><span class="model-badge">RDI</span></td>
+</tr>
+
+<!-- TORTOISE Tensor -->
+<tr data-subtype="TORTOISE_model-tensor" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">fa</span></td>
+  <td class="desc-text">Fractional Anisotropy</td>
+  <td><span class="model-badge">Tensor</span></td>
+</tr>
+<tr data-subtype="TORTOISE_model-tensor" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">ad</span></td>
+  <td class="desc-text">Axial Diffusivity</td>
+  <td><span class="model-badge">Tensor</span></td>
+</tr>
+<tr data-subtype="TORTOISE_model-tensor" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">rd</span></td>
+  <td class="desc-text">Radial Diffusivity</td>
+  <td><span class="model-badge">Tensor</span></td>
+</tr>
+<tr data-subtype="TORTOISE_model-tensor" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">am</span></td>
+  <td class="desc-text">Axial Mean Diffusivity</td>
+  <td><span class="model-badge">Tensor</span></td>
+</tr>
+<tr data-subtype="TORTOISE_model-tensor" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">li</span></td>
+  <td class="desc-text">Linearity Index</td>
+  <td><span class="model-badge">Tensor</span></td>
+</tr>
+
+<!-- TORTOISE MAPMRI -->
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">ng</span></td>
+  <td class="desc-text">Non-Gaussianity</td>
+  <td><span class="model-badge">MAPMRI</span></td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">ngpar</span></td>
+  <td class="desc-text">Non-Gaussianity (parallel)</td>
+  <td><span class="model-badge">MAPMRI</span></td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">ngperp</span></td>
+  <td class="desc-text">Non-Gaussianity (perpendicular)</td>
+  <td><span class="model-badge">MAPMRI</span></td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">pa</span></td>
+  <td class="desc-text">Propagator Anisotropy</td>
+  <td><span class="model-badge">MAPMRI</span></td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">path</span></td>
+  <td class="desc-text">Propagator Anisotropy (thresholded)</td>
+  <td><span class="model-badge">MAPMRI</span></td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">rtap</span></td>
+  <td class="desc-text">Return-to-Axis Probability</td>
+  <td><span class="model-badge">MAPMRI</span></td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">rtop</span></td>
+  <td class="desc-text">Return-to-Origin Probability</td>
+  <td><span class="model-badge">MAPMRI</span></td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden>
+  <td><span class="badge badge-tortoise">TORTOISE</span></td>
+  <td><span class="param-code">rtpp</span></td>
+  <td class="desc-text">Return-to-Plane Probability</td>
+  <td><span class="model-badge">MAPMRI</span></td>
+</tr>
+
 </tbody>
 </table>
 </div>
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const select = document.getElementById("param-method");
   if (!select) return;
-  const rows = document.querySelectorAll(".param-table tbody tr[data-subtype]");
-  const empty = document.querySelector(".param-table .param-empty td");
+
+  const rows = document.querySelectorAll(
+    ".param-table tbody tr[data-subtype]"
+  );
+  const empty = document.querySelector(".param-table .param-empty");
+  const emptyCell = empty.querySelector("td");
+
   select.addEventListener("change", function () {
     let shown = 0;
+
     rows.forEach(function (row) {
       const match = row.dataset.subtype === select.value;
       row.hidden = !match;
+
       if (match) shown++;
     });
-    empty.parentElement.hidden = shown > 0;
-    empty.textContent = "No parameters listed for " + select.value + ".";
+
+    empty.hidden = shown > 0;
+
+    if (shown === 0) {
+      emptyCell.textContent =
+        "No parameters listed for " + select.value + ".";
+    }
   });
 });
 </script>

@@ -1,158 +1,1714 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DSIStudio Bundle Values</title>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-  <link rel="stylesheet" href="../../css/custom.css">
-  <link rel="stylesheet" href="../../css/tables.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      line-height: 1;
-    }
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2em;
-      font-size: 1.2em;
-    }
-    .bundle-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    .bundle-table td {
-      padding: 0em 0.75em;
-      border-bottom: 1px solid #ddd;
-    }
-    .bundle-table code {
-      font-size: 1.2em;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>dmri</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="dmri_files/libs/clipboard/clipboard.min.js"></script>
+<script src="dmri_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="dmri_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="dmri_files/libs/quarto-html/popper.min.js"></script>
+<script src="dmri_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="dmri_files/libs/quarto-html/anchor.min.js"></script>
+<link href="dmri_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="dmri_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="dmri_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="dmri_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="dmri_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
 </head>
 
-<body>
-<main>
-  <h2>DSIStudio {BUNDLE} Values ({L/R} indicates left or right hemisphere)</h2>
-  <table class="table-no-vertical-lines bundle-table">
-    <tbody>
-      <tr>
-        <td><code>AssociationArcuateFasciculus{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>AssociationAssociationUncinateFasciculus{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>AssociationCingulum{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>AssociationExtremeCapsule{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>AssociationFrontalAslantTract{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>AssociationHippocampusAlveus{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>AssociationInferiorFrontoOccipitalFasciculus{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>AssociationInferiorLongitudinalFasciculus{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>AssociationMiddleLongitudinalFasciculus{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>AssociationParietalAslantTract{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>AssociationSuperiorLongitudinalFasciculus{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>AssociationVerticalOccipitalFasciculus{L/R}</code></td>
-      </tr>
+<body class="fullcontent quarto-light">
 
-      <tr>
-        <td><code>CerebellumCerebellum{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>CerebellumInferiorCerebellarPeduncle{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>CerebellumMiddleCerebellarPeduncle</code></td>
-      </tr>
-      <tr>
-        <td><code>CerebellumSuperiorCerebellarPeduncle</code></td>
-      </tr>
-      <tr>
-        <td><code>CerebellumVermis</code></td>
-      </tr>
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 
-      <tr>
-        <td><code>CommissureAnteriorCommissure</code></td>
-      </tr>
-      <tr>
-        <td><code>CommissureCorpusCallosum</code></td>
-      </tr>
+<main class="content" id="quarto-document-content">
 
-      <tr>
-        <td><code>ProjectionBasalGangliaAcousticRadiation{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBasalGangliaAnsaLenticularis{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBasalGangliaAnsaSubthalamic{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBasalGangliaCorticostriatalTract{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBasalGangliaFasciculusLenticularis{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBasalGangliaFasciculusSubthalamicus{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBasalGangliaFornix{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBasalGangliaOpticRadiation{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBasalGangliaThalamicRadiation{L/R}</code></td>
-      </tr>
 
-      <tr>
-        <td><code>ProjectionBrainstemCorticobulbarTract{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBrainstemCorticopontineTract{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBrainstemCorticospinalTract{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBrainstemDentatorubrothalamicTract{lr/rl}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBrainstemMedialForebrainBundle{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBrainstemMedialLemniscus{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBrainstemNonDecussatingDentatorubrothalamicTract{L/R}</code></td>
-      </tr>
-      <tr>
-        <td><code>ProjectionBrainstemReticularTract{L/R}</code></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+<section id="diffusion-mri-dmri" class="level1">
+<h1>Diffusion MRI (dMRI)</h1>
+<p>{{ alert_warning(instruments.dmri) }} {{ data_warning(instruments.dmri) }} {{ issues_banner() }}</p>
+<hr>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<section id="acquisition" class="level4">
+<h4 class="anchored" data-anchor-id="acquisition">Acquisition</h4>
+<!-- ##### Overview & Acquisition -->
+<p>{{ instrument_description(instruments.dmri) }}</p>
+<p>{{ csv_table(“mri/diffusion_pulse_sequence_timing.csv”) }}</p>
+</section>
+<section id="processing-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="processing-derivatives">Processing &amp; Derivatives</h4>
+<div class="banner" style="margin-bottom: 1em;">
+<span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 5px;" class="fa-solid fa-up-right-from-square"></i></a></span>
+</div>
+<p>{{ suppx(instruments.dmri, “1”) }}</p>
+<!-- HARDCODED IMAGE -->
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr><th>
+Pipeline
+</th>
+<th>
+Folder
+</th>
+<th>
+Description
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+<b>QSIPrep</b>
+</td>
+<td>
+<code>qsiprep/</code>
+</td>
+<td>
+Preprocessed diffusion data, transforms, QC metrics &amp; reports
+</td>
+</tr>
+<tr>
+<td>
+<b>QSIRecon</b>
+</td>
+<td>
+<code>qsirecon/</code>
+</td>
+<td>
+<a href="https://qsirecon.readthedocs.io/">QSIRecon</a> workflow logs and configuration files
+</td>
+</tr>
+<tr>
+<td>
+<b>QSIRecon-DSIStudio</b>
+</td>
+<td>
+<code>qsirecon-DSIStudio/</code>
+</td>
+<td>
+<a href="https://dsi-studio.labsolver.org/">DSI Studio</a> DTI reconstruction &amp; tractography
+</td>
+</tr>
+<tr>
+<td>
+<b>QSIRecon-DIPYDKI</b>
+</td>
+<td>
+<code>qsirecon-DIPYDKI/</code>
+</td>
+<td>
+<a href="https://dipy.org/">DIPY</a> Diffusion kurtosis (DKI) and tensor-derived maps
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<b>QSIRecon-TORTOISE</b>
+</td>
+<td>
+<code>qsirecon-TORTOISE_model-MAPMRI/</code>
+</td>
+<td>
+<a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> MAP-MRI and scalar maps
+</td>
+</tr>
+<tr>
+<td>
+<code>qsirecon-TORTOISE_model-tensor/</code>
+</td>
+<td>
+<a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> Tensor fits and scalar maps
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="qsiprep" class="level2">
+<h2 class="anchored" data-anchor-id="qsiprep">QSIPrep</h2>
+<pre class="folder-tree">hbcd/
+└── derivatives/
+    └── qsiprep/
+        └── sub-[ID]/
+            ├── log/
+            └── ses-[V0X]/
+                ├── anat/
+                │   <span class="hashtag"># Transforms</span>
+                │   ├── *_from-<span class="var">{ACPC_to-anat|anat_to-ACPC}</span>_mode-image_xfm.mat
+                │   ├── *_from-<span class="var">{ACPC_to-MNIInfant+1|MNIInfant+1_to-ACPC}</span>_mode-image_xfm.h5
+                │   ├── *_from-orig_to-anat_mode-image_xfm.txt
+                │
+                │   <span class="hashtag"># Structural outputs (ACPC space)</span>
+                │   ├── *_space-ACPC_desc-preproc_T2w.nii.gz <span class="hashtag">(+JSON)</span>
+                │   ├── *_space-ACPC_desc-<span class="var">{aseg_dseg|brain_mask}</span>.nii.gz
+                │   └── *_space-ACPC_dseg.nii.gz
+                │
+                ├── dwi/
+                │   <span class="hashtag"># QC &amp; confounds</span>
+                │   ├── *_desc-confounds_timeseries.tsv
+                │   ├── *_desc-<span class="var">{image|pepolar}</span>_qc.tsv
+                │   ├── *_space-ACPC_desc-slice_qc.json
+                │
+                │   <span class="hashtag"># Preprocessed data</span>
+                │   ├── *_space-ACPC_desc-preproc_dwi.nii.gz <span class="hashtag">(+JSON)</span>
+                │   ├── *_space-ACPC_desc-preproc_dwi.<span class="var">{bval|bvec|b|b_table.txt}</span>
+                │   ├── *_space-ACPC_dwiref.nii.gz
+                │
+                │   <span class="hashtag"># Masks &amp; maps</span>
+                │   ├── *_space-ACPC_desc-brain_mask.nii.gz
+                │   └── *_space-ACPC_model-eddy_stat-cnr_dwimap.nii.gz <span class="hashtag">(+JSON)</span>
+                │
+                ├── figures/
+                └── sub-[ID]_ses-[V0X].html
+<a href="../../../help/resources/#how-to-read-file-trees"><i style="color: #199bd6; margin-right: 4px;" class="fa fa-circle-info"></i> How To Read File Trees →</a>
+</pre>
+</section>
+<section id="qsirecon" class="level2">
+<h2 class="anchored" data-anchor-id="qsirecon">QSIRecon</h2>
+<section id="diffusion-tensor-imaging-dti" class="level4">
+<h4 class="anchored" data-anchor-id="diffusion-tensor-imaging-dti">Diffusion Tensor Imaging (DTI)</h4>
+DSI Studio models diffusion with a 3D Gaussian distribution of water displacements. Key outputs include fractional anisotropy (FA), i.e.&nbsp;anisotropic diffusion (typically higher in white matter bundles with dense, parallel fibers) and mean diffusivity (MD), i.e.&nbsp;directionally averaged apparent diffusion coefficient (inversely related to cellular membrane density) (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser 1994</a>).
+<pre class="folder-tree">hbcd/
+└── derivatives/
+    ├── qsirecon-DSIStudio/
+    │   └── sub-[ID]/
+    │       └── ses-[V0X]/
+    │           ├── dwi/
+    │           │   ├── *_space-ACPC_bundles-DSIStudio_<span class="var">{scalar|tdi}</span>stats.tsv
+    │           │   ├── *_space-ACPC_model-gqi_bundle-<span class="var">{BUNDLE}</span>_streamlines.tck.gz
+    │           │   ├── *_space-ACPC_model-gqi_bundlestats.csv
+    │           │   ├── *_space-ACPC_model-gqi_dwimap.fib.gz
+    │           │   ├── *_space-ACPC_model-gqi_dwimap.fib.gz.icbm152_adult.map.gz
+    │           │   ├── *_space-ACPC_model-gqi_param-<span class="var">{gfa|iso|qa}</span>_dwimap.nii.gz
+    │           │   ├── *_space-<span class="var">{SPACE}</span>_model-rdi_param-<span class="var">{rd1|rd2}</span>_dwimap.nii.gz
+    │           │   └── *_space-<span class="var">{SPACE}</span>_model-tensor_param-<span class="var">{DTI-PARAM}</span>_dwimap.nii.gz
+    │           ├── figures/*
+    │           └── sub-[ID]_ses-[V0X].html
+
+<span class="hashtag"># ── Session / Template Mapping ─────────────────────────────</span>
+<span class="var">ses-V02</span> : ACPC, MNIInfant+1
+<span class="var">ses-V03</span> : ACPC, MNIInfant+3
+<span class="var">ses-V04</span> : ACPC, MNIInfant+5
+<span class="var">ses-V06</span> : ACPC, MNIInfant+7
+
+<span class="hashtag"># ── Parameter Legend ───────────────────────────────────────</span>
+<span class="var">DTI-PARAM</span>: ad, fa, ha, md, rd, txx, txy, txz, tyy, tyz, tzz
+<span class="var">BUNDLE</span>: <a href="../dmri.html">see full list</a>
+</pre>
+</section>
+<section id="diffusion-kurtosis-imaging-dki" class="level4">
+<h4 class="anchored" data-anchor-id="diffusion-kurtosis-imaging-dki">Diffusion Kurtosis Imaging (DKI)</h4>
+<p>DKI extends DTI to capture non-Gaussian diffusion. The main metric is mean kurtosis (MK), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).</p>
+<pre class="folder-tree">    ├── qsirecon-DIPYDKI/
+    │   └── sub-[ID]/
+    │       └── ses-[V0X]/
+    │           ├── dwi/
+    │           │   # DIPY DKI
+    │           │   ├── *_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+    │           │   ├── *_space-<span class="var">{SPACE}</span>_model-dki_param-<span class="var">{DKI-PARAM}</span>_dwimap.nii.gz
+    │           │   └── *_space-<span class="var">{SPACE}</span>_model-tensor_param-fa_dwimap.nii.gz
+    │           ├── figures/*
+    │           └── sub-[ID]_ses-[V0X].html
+
+<span class="hashtag"># ── Session / Template Mapping ─────────────────────────────</span>
+<span class="var">ses-V02</span> : ACPC, MNIInfant+1
+<span class="var">ses-V03</span> : ACPC, MNIInfant+3
+<span class="var">ses-V04</span> : ACPC, MNIInfant+5
+<span class="var">ses-V06</span> : ACPC, MNIInfant+7
+
+<span class="hashtag"># ── Parameter Legend ───────────────────────────────────────</span>
+<span class="var">DKI-PARAM</span> : ad, ak, kfa, md, mk, mkt, rd, rk
+</pre>
+</section>
+<section id="mean-apparent-propagator-mri-map-mri" class="level4">
+<h4 class="anchored" data-anchor-id="mean-apparent-propagator-mri-map-mri">Mean Apparent Propagator MRI (MAP-MRI)</h4>
+MAP-MRI Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution. This enables quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>).
+<pre class="folder-tree">    ├── qsirecon-TORTOISE_model-MAPMRI/
+    │   └── sub-[ID]/
+    │       └── ses-[V0X]/
+    │           ├── dwi/
+    │           │   ├── *_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+    │           │   ├── *_space-<span class="var">{SPACE}</span>_model-mapmri_param-<span class="var">{MAPMRI}</span>_dwimap.nii.gz
+    │           │   └── *_space-<span class="var">{SPACE}</span>_model-tensor_param-<span class="var">{TENSOR}</span>_dwimap.nii.gz
+    │           ├── figures/*
+    │           └── sub-[ID]_ses-[V0X].html
+
+<span class="hashtag"># ── Session / Template Mapping ─────────────────────────────</span>
+<span class="var">ses-V02</span> : ACPC, MNIInfant+1
+<span class="var">ses-V03</span> : ACPC, MNIInfant+3
+<span class="var">ses-V04</span> : ACPC, MNIInfant+5
+<span class="var">ses-V06</span> : ACPC, MNIInfant+7
+
+<span class="hashtag"># ── Parameter Legend ───────────────────────────────────────</span>
+<span class="var">MAPMRI</span>: ng, ngpar, ngperp, pa, path, rtap, rtop, rtpp
+</pre>
+<pre><code>&lt;th&gt;Description&lt;/th&gt;  &lt;/tr&gt;&lt;/thead&gt;</code></pre><table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>
+Metric
+</th>
+
+</tr></thead><tbody>
+<tr>
+<td>
+Propagator Anisotropy (PA)
+</td>
+<td>
+Quantifies anisotropy by computing the dissimilarity of the full MAP-MRI propagator from its fully isotropic counterpart. More accurate than FA.
+</td>
+</tr>
+<tr>
+<td>
+Non-Gaussianity (NG)
+</td>
+<td>
+Quantifies deviation from Gaussian diffusion. <strong>NG</strong> measures overall deviation, <strong>NGpar</strong> along the primary diffusion axis (fiber direction in white matter), and <strong>NGperp</strong> perpendicular to it (often related to restriction).
+</td>
+</tr>
+<tr>
+<td>
+Return To Origin Probability (RTOP)
+</td>
+<td>
+Probability that a water molecule returns to its starting point. Low in unrestricted diffusion (large cells), high in restricted diffusion (small or impermeable cells). Inversely related to pore volume.
+</td>
+</tr>
+<tr>
+<td>
+Return To Axis Probability (RTAP)
+</td>
+<td>
+Probability that a water molecule returns to the principal diffusion axis (primary eigenvector).
+</td>
+</tr>
+<tr>
+<td>
+Return To Plane Probability (RTPP)
+</td>
+<td>
+Reciprocal of mean cylinder length and inversely proportional to axial diffusivity; Related to diffusion taking place within coherently oriented cylinders.
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="qsirecon-tortoise-tensor" class="level4">
+<h4 class="anchored" data-anchor-id="qsirecon-tortoise-tensor">QSIRecon-TORTOISE Tensor</h4>
+<pre class="folder-tree">    └── qsirecon-TORTOISE_model-tensor/
+        └── sub-[ID]/
+            └── ses-[V0X]/
+                └── dwi/
+                    ├── *_space-ACPC_bundles-DSIStudio_scalarstats.tsv
+                    └── *_space-{SPACE}_model-tensor_param-<span class="var">{TENSOR}</span>_dwimap.nii.g
+                    
+<span class="hashtag"># ── Session / Template Mapping ─────────────────────────────</span>
+<span class="var">ses-V02</span> : MNIInfant+1
+<span class="var">ses-V03</span> : MNIInfant+3
+<span class="var">ses-V04</span> : MNIInfant+5
+<span class="var">ses-V06</span> : MNIInfant+7
+
+<span class="hashtag"># ── Parameter Legend ───────────────────────────────────────</span>
+<span class="var">TENSOR</span>: ad, am, fa, li, rd
+</pre>
+<div id="model-param-details" class="banner" onclick="toggleCollapse(this)">
+<p><span class="emoji"><i class="fa fa-atom"></i></span> <span class="text-with-link"> <span class="text">QSIRecon Parametric Microstructure Maps Generated for HBCD</span> <a class="anchor-link" href="#model-param-details" title="Copy link"> <i class="fa-solid fa-link"></i> </a> </span> <span class="arrow">▸</span></p>
+</div>
+<div class="collapsible-content">
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>
+QSIRecon Workflow
+</th>
+<th>
+Model (Shells)
+</th>
+<th>
+Parameters
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<!-- DSI Studio -->
+<tr>
+<td rowspan="8">
+<b>DSI Studio</b>
+</td>
+<td rowspan="3">
+<b>gqi</b><br>(Full shells)
+</td>
+<td>
+gfa
+</td>
+<td>
+Generalized fractional anisotropy
+</td>
+</tr>
+<tr>
+<td>
+iso
+</td>
+<td>
+Isotropic diffusion component
+</td>
+</tr>
+<tr>
+<td>
+qa
+</td>
+<td>
+Quantitative anisotropy
+</td>
+</tr>
+<tr>
+<td rowspan="5">
+<b>tensor</b><br>(Inner shells)
+</td>
+<td>
+fa
+</td>
+<td>
+Fractional anisotropy
+</td>
+</tr>
+<tr>
+<td>
+ad / md / rd
+</td>
+<td>
+Axial / Mean / Radial diffusivity
+</td>
+</tr>
+<tr>
+<td>
+rd1 / rd2
+</td>
+<td>
+Second and third eigenvalues (λ₂ / λ₃)
+</td>
+</tr>
+<tr>
+<td>
+ha
+</td>
+<td>
+Helix angle
+</td>
+</tr>
+<tr>
+<td>
+txx / txy / txz / tyy / tyz / tzz
+</td>
+<td>
+Diffusion tensor elements
+</td>
+</tr>
+<!-- DIPY DKI -->
+<tr>
+<td rowspan="4">
+<b>DIPY DKI</b>
+</td>
+<td rowspan="4">
+<b>dki</b><br>(Full shells)
+</td>
+<td>
+ad / ak
+</td>
+<td>
+Axial diffusivity / Axial kurtosis
+</td>
+</tr>
+<tr>
+<td>
+fa / kfa
+</td>
+<td>
+Fractional anisotropy / Kurtosis FA
+</td>
+</tr>
+<tr>
+<td>
+md / mk / mkt
+</td>
+<td>
+Mean diffusivity / Mean kurtosis / Mean kurtosis tensor
+</td>
+</tr>
+<tr>
+<td>
+rd / rk
+</td>
+<td>
+Radial diffusivity / Radial kurtosis
+</td>
+</tr>
+<!-- TORTOISE MAPMRI -->
+<tr>
+<td rowspan="7">
+<b>TORTOISE-<br>MAPMRI</b>
+</td>
+<td rowspan="4">
+<b>mapmri</b><br>(Full shells)
+</td>
+<td>
+ng / ngpar / ngperp
+</td>
+<td>
+Non-Gaussianity / Parallel NG / Perpendicular NG
+</td>
+</tr>
+<tr>
+<td>
+fa / kfa
+</td>
+<td>
+Fractional anisotropy / Kurtosis FA
+</td>
+</tr>
+<tr>
+<td>
+pa / path
+</td>
+<td>
+Propagator anisotropy / Thresholded PA
+</td>
+</tr>
+<tr>
+<td>
+rtap / rtop / rtpp
+</td>
+<td>
+Return-to-axis / origin / plane probability
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<b>tensor</b><br>(Inner shells)
+</td>
+<td>
+ad / rd
+</td>
+<td>
+Axial / Radial diffusivity
+</td>
+</tr>
+<tr>
+<td>
+am / fa
+</td>
+<td>
+A0 (mean signal) / Fractional anisotropy
+</td>
+</tr>
+<tr>
+<td>
+li
+</td>
+<td>
+Lattice index
+</td>
+</tr>
+<!-- TORTOISE Tensor -->
+<tr>
+<td rowspan="5">
+<b>TORTOISE-<br>Tensor</b>
+</td>
+<td rowspan="5">
+<b>tensor</b><br>(Full shells)
+</td>
+<td>
+ad / rd
+</td>
+<td>
+Axial / Radial diffusivity
+</td>
+</tr>
+<tr>
+<td>
+am / fa
+</td>
+<td>
+A0 (mean signal) / Fractional anisotropy
+</td>
+</tr>
+<tr>
+<td>
+li
+</td>
+<td>
+Lattice index
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="modelarrayio" class="level2">
+<h2 class="anchored" data-anchor-id="modelarrayio">ModelArrayIO</h2>
+<p>Mass-univariate statistical modeling for large neuroimaging datasets, or <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArrayIO</a>, is a Python package that converts neuroimaging file formats to HDF5 (<code>.h5</code>) for compatibility with the <a href="https://github.com/ModelArray/ModelArray">ModelArray R package</a>. For HBCD diffusion data, ModelArrayIO is used as a downstream aggregation step, converting subject-level MRI scalar maps across QSIRecon reconstruction methods into cohort-level arrays. This enables efficient, large-scale statistical analyses via ModelArray without having to load individual subject files.</p>
+<p>The QSIRecon-ModelArrayIO outputs include scalar maps from:</p>
+<ul>
+<li>DIPYDKI</li>
+<li>DSI Studio</li>
+<li>TORTOISE model-tensor</li>
+<li>TORTOISE MAPMRI</li>
+</ul>
+<section id="processing" class="level3">
+<h3 class="anchored" data-anchor-id="processing">Processing</h3>
+<p>ModelArrayIO reads input file paths from the cohort CSV using <code>SCALAR_COLUMNS</code>. The input modality is automatically detected from the source file extension. Data are stored as <code>float32</code> using the HDF5 backend with gzip compression at level 9.</p>
+<p>HDF5 spatial chunks are automatically sized to approximately 32 MiB. Four parallel workers are used when loading input files from S3.</p>
+<p><strong>Note:</strong> Each <code>.h5</code> output is paired with a <code>.csv</code> file that indexes the subjects and sessions included in the corresponding array.</p>
+</section>
+<section id="modelarrayio-run-command" class="level3">
+<h3 class="anchored" data-anchor-id="modelarrayio-run-command">ModelArrayIO Run Command</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">modelarrayio</span> to-modelarray <span class="dt">\</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">--cohort-file</span> <span class="va">${cohort_csv}</span> <span class="dt">\</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">--output</span> <span class="va">${out_h5}</span> <span class="dt">\</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">--scalar-columns</span> <span class="va">${SCALAR_COLUMNS}</span> <span class="dt">\</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">--backend</span> hdf5 <span class="dt">\</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">--dtype</span> float32 <span class="dt">\</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">--compression</span> gzip <span class="dt">\</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">--compression-level</span> 9 <span class="dt">\</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">--s3-workers</span> 4 <span class="dt">\</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">--log-level</span> INFO <span class="dt">\</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">--target-chunk-mb</span> 32</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="modelarray" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+<p><span class="emoji"><i class="fa fa-folder-tree"></i></span> <span class="text-with-link"> <span class="text">ModelArrayIO Outputs</span> <a class="anchor-link" href="#modelarray" title="Copy link"> <i class="fa-solid fa-link"></i> </a> </span> <span class="arrow">▸</span></p>
+</div>
+<div class="collapsible-content">
+<pre style="font-size: 11px;" class="folder-tree">hbcd/
+└── derivatives/
+    └── qsirecon-ModelArrayIO/
+        │    <span class="comment"># DIPYDKI outputs</span>
+        ├── qsirecon-DIPYDKI_space-<span class="var">{SPACE}</span>_model-<span class="var">{tensor|dki}</span>_param-<span class="var">{PARAM}</span>.h5
+        ├── qsirecon-DIPYDKI_space-<span class="var">{SPACE}</span>_model-<span class="var">{tensor|dki}</span>_param-<span class="var">{PARAM}</span>.csv
+        │
+        │    <span class="comment"># DSI Studio outputs</span>
+        ├── qsirecon-DSIStudio_space-<span class="var">{SPACE}</span>_model-<span class="var">{tensor|gqi|rdi}</span>_param-<span class="var">{PARAM}</span>.h5
+        ├── qsirecon-DSIStudio_space-<span class="var">{SPACE}</span>_model-<span class="var">{tensor|gqi|rdi}</span>_param-<span class="var">{PARAM}</span>.csv
+        │
+        │    <span class="comment"># TORTOISE model-tensor outputs</span>
+        ├── qsirecon-TORTOISE_model-tensor_space-<span class="var">{SPACE}</span>_param-<span class="var">{PARAM}</span>.h5
+        ├── qsirecon-TORTOISE_model-tensor_space-<span class="var">{SPACE}</span>_param-<span class="var">{PARAM}</span>.csv
+        │
+        │    <span class="comment"># TORTOISE MAPMRI outputs</span>
+        ├── qsirecon-TORTOISE_model-MAPMRI_space-<span class="var">{SPACE}</span>_param-<span class="var">{PARAM}</span>.h5
+        └── qsirecon-TORTOISE_model-MAPMRI_space-<span class="var">{SPACE}</span>_param-<span class="var">{PARAM}</span>.csv
+
+<span class="hashtag"># ── Label Legend ─────────────────────────────────────────────</span>
+<span class="var">PARAM</span>    : QSIRecon scalar map/parameter
+<span class="var">SPACE</span>    : MNIInfant+1, MNIInfant+3, MNIInfant+5, MNIInfant+7
+</pre>
+</div>
+<div class="param-filter">
+<p><label for="param-method">Select reconstruction method to view associated <code>&lt;PARAM&gt;</code> values:</label> <select id="param-method"> <option value="" selected="" disabled="">Select</option> <option value="DIPYDKI">DIPY</option> <option value="DSIStudio">DSIStudio</option> <option value="TORTOISE_model-tensor">TORTOISE (tensor)</option> <option value="TORTOISE_model-MAPMRI">TORTOISE (MAPMRI)</option> </select></p>
+</div>
+<style>
+.param-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.param-filter label {
+  font-size: 0.85rem;
+  color: #475569;
+  margin: 0;
+}
+
+.param-filter select {
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  color: #334155;
+  background: #fff;
+  cursor: pointer;
+}
+
+.param-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.param-table thead tr {
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.param-table th {
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+}
+
+.param-table td {
+  padding: 9px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.param-table tbody tr:hover td {
+  background: #f8fafc;
+}
+
+.param-table tr[hidden] {
+  display: none;
+}
+
+.param-table .badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.badge-dipy {
+  background: #EEEDFE;
+  color: #3C3489;
+}
+
+.badge-dsistudio {
+  background: #E1F5EE;
+  color: #085041;
+}
+
+.badge-tortoise {
+  background: #FAEEDA;
+  color: #633806;
+}
+
+.model-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  color: #475569;
+  background: #f1f5f9;
+}
+
+.param-code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.82rem;
+  background: #f1f5f9;
+  color: #334155;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.desc-text {
+  color: #475569;
+}
+
+.table-wrap {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.param-empty td {
+  color: #94a3b8;
+  font-style: italic;
+}
+</style>
+<div class="table-wrap">
+<table class="param-table">
+<thead>
+<tr>
+<th>
+Reconstruction Method
+</th>
+<th>
+Param
+</th>
+<th>
+Description
+</th>
+<th>
+Underlying Model
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="param-empty">
+<td colspan="4">
+Select a reconstruction method above.
+</td>
+</tr>
+<!-- DIPY -->
+<tr data-subtype="DIPY" hidden="">
+<td>
+<span class="badge badge-dipy">DIPY</span>
+</td>
+<td>
+<span class="param-code">fa</span>
+</td>
+<td class="desc-text">
+Fractional Anisotropy
+</td>
+<td>
+<span class="model-badge">Tensor</span>
+</td>
+</tr>
+<tr data-subtype="DIPY" hidden="">
+<td>
+<span class="badge badge-dipy">DIPY</span>
+</td>
+<td>
+<span class="param-code">ad</span>
+</td>
+<td class="desc-text">
+Axial Diffusivity
+</td>
+<td>
+<span class="model-badge">DKI</span>
+</td>
+</tr>
+<tr data-subtype="DIPY" hidden="">
+<td>
+<span class="badge badge-dipy">DIPY</span>
+</td>
+<td>
+<span class="param-code">rd</span>
+</td>
+<td class="desc-text">
+Radial Diffusivity
+</td>
+<td>
+<span class="model-badge">DKI</span>
+</td>
+</tr>
+<tr data-subtype="DIPY" hidden="">
+<td>
+<span class="badge badge-dipy">DIPY</span>
+</td>
+<td>
+<span class="param-code">md</span>
+</td>
+<td class="desc-text">
+Mean Diffusivity
+</td>
+<td>
+<span class="model-badge">DKI</span>
+</td>
+</tr>
+<tr data-subtype="DIPY" hidden="">
+<td>
+<span class="badge badge-dipy">DIPY</span>
+</td>
+<td>
+<span class="param-code">ak</span>
+</td>
+<td class="desc-text">
+Axial Kurtosis
+</td>
+<td>
+<span class="model-badge">DKI</span>
+</td>
+</tr>
+<tr data-subtype="DIPY" hidden="">
+<td>
+<span class="badge badge-dipy">DIPY</span>
+</td>
+<td>
+<span class="param-code">mk</span>
+</td>
+<td class="desc-text">
+Mean Kurtosis
+</td>
+<td>
+<span class="model-badge">DKI</span>
+</td>
+</tr>
+<tr data-subtype="DIPY" hidden="">
+<td>
+<span class="badge badge-dipy">DIPY</span>
+</td>
+<td>
+<span class="param-code">mkt</span>
+</td>
+<td class="desc-text">
+Mean Kurtosis Tensor
+</td>
+<td>
+<span class="model-badge">DKI</span>
+</td>
+</tr>
+<tr data-subtype="DIPY" hidden="">
+<td>
+<span class="badge badge-dipy">DIPY</span>
+</td>
+<td>
+<span class="param-code">rk</span>
+</td>
+<td class="desc-text">
+Radial Kurtosis
+</td>
+<td>
+<span class="model-badge">DKI</span>
+</td>
+</tr>
+<tr data-subtype="DIPY" hidden="">
+<td>
+<span class="badge badge-dipy">DIPY</span>
+</td>
+<td>
+<span class="param-code">kfa</span>
+</td>
+<td class="desc-text">
+Kurtosis Fractional Anisotropy
+</td>
+<td>
+<span class="model-badge">DKI</span>
+</td>
+</tr>
+<!-- DSIStudio -->
+<tr data-subtype="DSIStudio" hidden="">
+<td>
+<span class="badge badge-dsistudio">DSIStudio</span>
+</td>
+<td>
+<span class="param-code">fa</span>
+</td>
+<td class="desc-text">
+Fractional Anisotropy
+</td>
+<td>
+<span class="model-badge">Tensor</span>
+</td>
+</tr>
+<tr data-subtype="DSIStudio" hidden="">
+<td>
+<span class="badge badge-dsistudio">DSIStudio</span>
+</td>
+<td>
+<span class="param-code">ad</span>
+</td>
+<td class="desc-text">
+Axial Diffusivity
+</td>
+<td>
+<span class="model-badge">Tensor</span>
+</td>
+</tr>
+<tr data-subtype="DSIStudio" hidden="">
+<td>
+<span class="badge badge-dsistudio">DSIStudio</span>
+</td>
+<td>
+<span class="param-code">rd</span>
+</td>
+<td class="desc-text">
+Radial Diffusivity
+</td>
+<td>
+<span class="model-badge">Tensor</span>
+</td>
+</tr>
+<tr data-subtype="DSIStudio" hidden="">
+<td>
+<span class="badge badge-dsistudio">DSIStudio</span>
+</td>
+<td>
+<span class="param-code">md</span>
+</td>
+<td class="desc-text">
+Mean Diffusivity
+</td>
+<td>
+<span class="model-badge">Tensor</span>
+</td>
+</tr>
+<tr data-subtype="DSIStudio" hidden="">
+<td>
+<span class="badge badge-dsistudio">DSIStudio</span>
+</td>
+<td>
+<span class="param-code">ha</span>
+</td>
+<td class="desc-text">
+Helix Angle
+</td>
+<td>
+<span class="model-badge">Tensor</span>
+</td>
+</tr>
+<tr data-subtype="DSIStudio" hidden="">
+<td>
+<span class="badge badge-dsistudio">DSIStudio</span>
+</td>
+<td>
+<span class="param-code">gfa</span>
+</td>
+<td class="desc-text">
+Generalized Fractional Anisotropy
+</td>
+<td>
+<span class="model-badge">GQI</span>
+</td>
+</tr>
+<tr data-subtype="DSIStudio" hidden="">
+<td>
+<span class="badge badge-dsistudio">DSIStudio</span>
+</td>
+<td>
+<span class="param-code">qa</span>
+</td>
+<td class="desc-text">
+Quantitative Anisotropy
+</td>
+<td>
+<span class="model-badge">GQI</span>
+</td>
+</tr>
+<tr data-subtype="DSIStudio" hidden="">
+<td>
+<span class="badge badge-dsistudio">DSIStudio</span>
+</td>
+<td>
+<span class="param-code">iso</span>
+</td>
+<td class="desc-text">
+Isotropic Diffusion
+</td>
+<td>
+<span class="model-badge">GQI</span>
+</td>
+</tr>
+<tr data-subtype="DSIStudio" hidden="">
+<td>
+<span class="badge badge-dsistudio">DSIStudio</span>
+</td>
+<td>
+<span class="param-code">rd1</span>
+</td>
+<td class="desc-text">
+Restricted Diffusion Index 1
+</td>
+<td>
+<span class="model-badge">RDI</span>
+</td>
+</tr>
+<tr data-subtype="DSIStudio" hidden="">
+<td>
+<span class="badge badge-dsistudio">DSIStudio</span>
+</td>
+<td>
+<span class="param-code">rd2</span>
+</td>
+<td class="desc-text">
+Restricted Diffusion Index 2
+</td>
+<td>
+<span class="model-badge">RDI</span>
+</td>
+</tr>
+<!-- TORTOISE Tensor -->
+<tr data-subtype="TORTOISE_model-tensor" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">fa</span>
+</td>
+<td class="desc-text">
+Fractional Anisotropy
+</td>
+<td>
+<span class="model-badge">Tensor</span>
+</td>
+</tr>
+<tr data-subtype="TORTOISE_model-tensor" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">ad</span>
+</td>
+<td class="desc-text">
+Axial Diffusivity
+</td>
+<td>
+<span class="model-badge">Tensor</span>
+</td>
+</tr>
+<tr data-subtype="TORTOISE_model-tensor" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">rd</span>
+</td>
+<td class="desc-text">
+Radial Diffusivity
+</td>
+<td>
+<span class="model-badge">Tensor</span>
+</td>
+</tr>
+<tr data-subtype="TORTOISE_model-tensor" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">am</span>
+</td>
+<td class="desc-text">
+Axial Mean Diffusivity
+</td>
+<td>
+<span class="model-badge">Tensor</span>
+</td>
+</tr>
+<tr data-subtype="TORTOISE_model-tensor" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">li</span>
+</td>
+<td class="desc-text">
+Linearity Index
+</td>
+<td>
+<span class="model-badge">Tensor</span>
+</td>
+</tr>
+<!-- TORTOISE MAPMRI -->
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">ng</span>
+</td>
+<td class="desc-text">
+Non-Gaussianity
+</td>
+<td>
+<span class="model-badge">MAPMRI</span>
+</td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">ngpar</span>
+</td>
+<td class="desc-text">
+Non-Gaussianity (parallel)
+</td>
+<td>
+<span class="model-badge">MAPMRI</span>
+</td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">ngperp</span>
+</td>
+<td class="desc-text">
+Non-Gaussianity (perpendicular)
+</td>
+<td>
+<span class="model-badge">MAPMRI</span>
+</td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">pa</span>
+</td>
+<td class="desc-text">
+Propagator Anisotropy
+</td>
+<td>
+<span class="model-badge">MAPMRI</span>
+</td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">path</span>
+</td>
+<td class="desc-text">
+Propagator Anisotropy (thresholded)
+</td>
+<td>
+<span class="model-badge">MAPMRI</span>
+</td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">rtap</span>
+</td>
+<td class="desc-text">
+Return-to-Axis Probability
+</td>
+<td>
+<span class="model-badge">MAPMRI</span>
+</td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">rtop</span>
+</td>
+<td class="desc-text">
+Return-to-Origin Probability
+</td>
+<td>
+<span class="model-badge">MAPMRI</span>
+</td>
+</tr>
+<tr data-subtype="TORTOISE_model-MAPMRI" hidden="">
+<td>
+<span class="badge badge-tortoise">TORTOISE</span>
+</td>
+<td>
+<span class="param-code">rtpp</span>
+</td>
+<td class="desc-text">
+Return-to-Plane Probability
+</td>
+<td>
+<span class="model-badge">MAPMRI</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const select = document.getElementById("param-method");
+  if (!select) return;
+
+  const rows = document.querySelectorAll(
+    ".param-table tbody tr[data-subtype]"
+  );
+  const empty = document.querySelector(".param-table .param-empty");
+  const emptyCell = empty.querySelector("td");
+
+  select.addEventListener("change", function () {
+    let shown = 0;
+
+    rows.forEach(function (row) {
+      const match = row.dataset.subtype === select.value;
+      row.hidden = !match;
+
+      if (match) shown++;
+    });
+
+    empty.hidden = shown > 0;
+
+    if (shown === 0) {
+      emptyCell.textContent =
+        "No parameters listed for " + select.value + ".";
+    }
+  });
+});
+</script>
+<hr>
+</section>
+</section>
+<section id="quality-control-summary-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="quality-control-summary-statistics">Quality Control Summary Statistics</h2>
+<p>{{ qc(instruments.dmri) }}</p>
+<p><img src="../images/ndc_cnr_comparison.svg" width="95%" height="auto" class="center"></p>
+<hr>
+<p>{{ references(instruments.dmri) }}</p>
+<!-- Automated QC for processed diffusion data is fairly robust, with metrics provided in <code>sub-[ID]_ses-[V0X]_space-ACPC_desc-image_qc.tsv</code> within the QSIPrep derivatives (see <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">QSIPrep documentation</a> for details). Below are distributions of automated QC metrics from HBCD visits V02 and V03. Higher Neighboring DWI Correlation (NDC; closer to 1) and Contrast-to-Noise Ratio (CNR) indicate better image quality. NDC can also be used as a covariate in analyses to account for QC variation. 
+<p><strong>Left</strong>: NDC calculated pre- and post-processing for each vendor using combined AP/PA scans<br>  
+<strong>Right</strong>: Shell-wise CNR calculated by Eddy. We do not provide exclusion threshold recommendations because all data passed preliminary QC. However, NDC and CNR are useful covariates when analyzing other derivatives.</p> -->
+</section>
+</section>
 
 </main>
-</body>
-</html>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
