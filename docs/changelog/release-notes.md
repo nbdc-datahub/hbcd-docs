@@ -348,7 +348,6 @@ Release data now include the addition of the following instruments:
 ### 2.1 Inclusion & Exclusion Criteria
 
 ##### Participants
-- DCC participants excluded
 - Only CH Profiles included — Exclusion by PSCID prefix (PI, QI, XI, YI)
 - Only 'Active' participants included
 - Only selected 'Multiple Birth' profiles are included (based on clean-up procedures)

@@ -162,8 +162,6 @@ df = load_and_filter_xlsx(XLSX)
 
 # Drop unecessary columns (for troubleshooting purposes)
 df = df.drop(['Name'], axis=1)
-df = df.drop(['Status'], axis=1)
-df = df.drop(['BR'], axis=1)
 
 # Replace empty PR cells with 'TBD'
 df['PR'] = df['PR'].replace('', 'TBD') 
