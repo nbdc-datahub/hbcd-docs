@@ -250,47 +250,132 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 
 Mass-univariate statistical modeling for large neuroimaging datasets, or [ModelArrayIO](https://modelarrayio.readthedocs.io/en/latest/), is a Python package that converts neuroimaging file formats to HDF5 (`.h5`) for compatibility with the [ModelArray R package](https://github.com/ModelArray/ModelArray). For HBCD diffusion data, ModelArrayIO is used as a downstream aggregation step, converting subject-level MRI scalar maps across QSIRecon reconstruction methods into cohort-level arrays. This enables efficient, large-scale statistical analyses via ModelArray without having to load individual subject files.  
 
-
-
 <!-- XCP-D-ModelArray outputs include cohort-level HDF5 arrays aggregating structural and functional derivatives:
 
   - Surface morphometry (curvature, sulcal depth, cortical thickness)  
   - Functional maps (ALFF, ReHo)  
   - Resting-state functional connectivity -->
 
-<div id="modelarray" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
-  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
-  <span class="text-with-link">
-<span class="text">ModelArrayIO Outputs</span>
-  <a class="anchor-link" href="#modelarray" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<pre style="font-size: 11px;" class="folder-tree">
-hbcd/
-└── derivatives/
+
+<pre class="folder-tree">
     └── qsirecon-ModelArray/
         │    <span class="comment"># DIPY outputs</span>
-        ├── qsirecon-DIPY_model-<tensor|dki>_param-<PARAM>.h5
-        ├── qsirecon-DIPY_model-<tensor|dki>_param-<PARAM>.csv
+        ├── qsirecon-DIPY_model-<span class="var">{tensor|dki}</span>_param-<span class="var">{PARAM}</span>.h5
+        ├── qsirecon-DIPY_model-<span class="var">{tensor|dki}</span>_param-<span class="var">{PARAM}</span>.csv
         │
         │    <span class="comment"># DSI Studio outputs</span>
-        ├── qsirecon-DSIStudio_model-<tensor|gqi|rdi>_param-<PARAM>.h5
-        ├── qsirecon-DSIStudio_model-<tensor|gqi|rdi>_param-<PARAM>.csv
+        ├── qsirecon-DSIStudio_model-<span class="var">{tensor|gqi|rdi}</span>_param-<span class="var">{PARAM}</span>.h5
+        ├── qsirecon-DSIStudio_model-<span class="var">{tensor|gqi|rdi}</span>_param-<span class="var">{PARAM}</span>.csv
         │
         │    <span class="comment"># TORTOISE outputs</span>
-        ├── qsirecon-TORTOISE_model-tensor_param-<PARAM>.h5
-        └── qsirecon-TORTOISE_model-tensor_param-<PARAM>.csv
-
-<span class="hashtag"># ── Label Legend ─────────────────────────────────────────────</span>
-<span class="var">HASH</span>    : d902942d+7a4c379b, 364caa63+7a4c379b
-<span class="var">ATLAS</span>    : 4S-{156|256|...|1056}Parcels , Glasser , Gordon , MIDB , MyersLabonte
+        ├── qsirecon-TORTOISE_model-tensor_param-<span class="var">{PARAM}</span>.h5
+        └── qsirecon-TORTOISE_model-tensor_param-<span class="var">{PARAM}</span>.csv
 </pre>
-</div>
 
+
+UNDER CONSTRUCTION - 
+
+```{ojs}
+//| echo: false
+
+data = [
+  {subtype: "DIPY", param: "fa", description: "Fractional Anisotropy (tensor model)"},
+  {subtype: "DIPY", param: "ad", description: "Axial Diffusivity"},
+  {subtype: "DIPY", param: "rd", description: "Radial Diffusivity"},
+  {subtype: "DIPY", param: "md", description: "Mean Diffusivity"},
+  {subtype: "DIPY", param: "ak", description: "Axial Kurtosis (DKI model)"},
+  {subtype: "DIPY", param: "mk", description: "Mean Kurtosis (DKI model)"},
+  {subtype: "DIPY", param: "mkt", description: "Mean Kurtosis Tensor"},
+  {subtype: "DIPY", param: "rk", description: "Radial Kurtosis"},
+  {subtype: "DIPY", param: "kfa", description: "Kurtosis Fractional Anisotropy"},
+  {subtype: "DSIStudio", param: "fa", description: "Fractional Anisotropy (tensor)"},
+  {subtype: "DSIStudio", param: "ad", description: "Axial Diffusivity"},
+  {subtype: "DSIStudio", param: "rd", description: "Radial Diffusivity"},
+  {subtype: "DSIStudio", param: "md", description: "Mean Diffusivity"},
+  {subtype: "DSIStudio", param: "ha", description: "Helix Angle"},
+  {subtype: "DSIStudio", param: "gfa", description: "Generalized Fractional Anisotropy (GQI)"},
+  {subtype: "DSIStudio", param: "qa", description: "Quantitative Anisotropy (GQI)"},
+  {subtype: "DSIStudio", param: "iso", description: "Isotropic Diffusion"},
+  {subtype: "DSIStudio", param: "rd1", description: "Restricted Diffusion Index 1"},
+  {subtype: "DSIStudio", param: "rd2", description: "Restricted Diffusion Index 2"},
+  {subtype: "TORTOISE", param: "fa", description: "Fractional Anisotropy (tensor)"},
+  {subtype: "TORTOISE", param: "ad", description: "Axial Diffusivity"},
+  {subtype: "TORTOISE", param: "rd", description: "Radial Diffusivity"},
+  {subtype: "TORTOISE", param: "am", description: "Axial Mean Diffusivity"},
+  {subtype: "TORTOISE", param: "li", description: "Linearity Index"},
+  {subtype: "TORTOISE", param: "ng", description: "Non-Gaussianity (MAP-MRI)"},
+  {subtype: "TORTOISE", param: "ngpar", description: "Non-Gaussianity (parallel)"},
+  {subtype: "TORTOISE", param: "ngperp", description: "Non-Gaussianity (perpendicular)"},
+  {subtype: "TORTOISE", param: "pa", description: "Propagator Anisotropy"},
+  {subtype: "TORTOISE", param: "path", description: "Propagator Anisotropy (thresholded)"},
+  {subtype: "TORTOISE", param: "rtap", description: "Return-to-Axis Probability"},
+  {subtype: "TORTOISE", param: "rtop", description: "Return-to-Origin Probability"},
+  {subtype: "TORTOISE", param: "rtpp", description: "Return-to-Plane Probability"},
+]
+
+subtypeColors = ({
+  "DIPY":      {bg: "#EEEDFE", color: "#3C3489"},
+  "DSIStudio": {bg: "#E1F5EE", color: "#085041"},
+  "TORTOISE":  {bg: "#FAEEDA", color: "#633806"},
+})
+
+viewof selected = {
+  const wrapper = html`<div style="display:flex; align-items:center; gap:10px; margin-bottom:4px;">
+    <label style="font-size:0.85rem; color:#475569; white-space:nowrap; margin:0;">Select reconstruction method to view associated <code>&lt;PARAM&gt;</code> values:</label>
+    <select style="font-size:0.85rem; padding:4px 8px; border:1px solid #e2e8f0; border-radius:6px; color:#334155; background:#fff; cursor:pointer;">
+      <option value="" selected disabled><i>Select</i></option>
+      <option value="DIPY">DIPY</option>
+      <option value="DSIStudio">DSIStudio</option>
+      <option value="TORTOISE">TORTOISE</option>
+      <option value="wmNODDI">wmNODDI</option>
+    </select>
+  </div>`
+
+  const sel = wrapper.querySelector("select")
+  sel.addEventListener("input", () => wrapper.value = sel.value || null)
+
+  wrapper.value = null
+  return wrapper
+}
+
+filtered = selected === "All" ? data : data.filter(d => d.subtype === selected)
+
+html`<style>
+  .param-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .param-table thead tr { border-bottom: 2px solid #e2e8f0; }
+  .param-table th { text-align: left; padding: 10px 14px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #64748b; }
+  .param-table td { padding: 9px 14px; border-bottom: 1px solid #f1f5f9; vertical-align: middle; }
+  .param-table tbody tr:last-child td { border-bottom: none; }
+  .param-table tbody tr:hover td { background: #f8fafc; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.03em; }
+  .param-code { font-family: ui-monospace, monospace; font-size: 0.82rem; background: #f1f5f9; color: #334155; padding: 2px 7px; border-radius: 4px; }
+  .desc-text { color: #475569; }
+  .table-wrap { border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; margin-top: 12px; }
+  .table-footer { padding: 8px 14px; font-size: 0.78rem; color: #94a3b8; background: #f8fafc; border-top: 1px solid #f1f5f9; }
+</style>
+
+<div class="table-wrap">
+  <table class="param-table">
+    <thead>
+      <tr>
+        <th>Reconstruction Method</th>
+        <th>Param</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${filtered.map(d => {
+        const c = subtypeColors[d.subtype];
+        return html`<tr>
+          <td><span class="badge" style="background:${c.bg}; color:${c.color}">${d.subtype}</span></td>
+          <td><span class="param-code">${d.param}</span></td>
+          <td class="desc-text">${d.description}</td>
+        </tr>`
+      })}
+    </tbody>
+  </table>
+</div>`
+```
 
 ---
 
