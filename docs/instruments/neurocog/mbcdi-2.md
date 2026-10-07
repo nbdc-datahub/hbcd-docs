@@ -1,4 +1,4 @@
-# MacArthur-Bates CDI
+# MacArthur-Bates CDI Words & Sentences
 
 {{ readme_summary(instruments.mbcdi_2) }}
 {{ alert_warning(instruments.mbcdi_2) }}

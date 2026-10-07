@@ -391,17 +391,37 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
   <td>Child Development (Cognitive, Language, Motor)</td>
   <td><code>ncl_ch_bayley</code></td>
 </tr>
+
 <tr>
-  <td><a href="neurocog/mbcdi">MacArthur-Bates CDI-I</a><i class="fa-solid fa-language table-icon"></i>
-</td>
-  <td>Language Development (Words & Gestures)</td>
+  <td><a href="neurocog/dit">Deferred Imitation Task</a></td>
+  <td>Memory</td>
+  <td><code>ncl_ch_di_v06</code></td>
+</tr>
+
+<tr>
+  <td><a href="neurocog/mbcdi">MacArthur-Bates CDI Words & Gestures</a><i class="fa-solid fa-language table-icon"></i></td>
+  <td>Language Development</td>
   <td><code>ncl_ch_cdiwgen</code> / <code>ncl_ch_cdiwges</code></td>
 </tr>
+
+<tr>
+  <td><a href="neurocog/mbcdi-2">MacArthur-Bates CDI Words & Sentences</a><i class="fa-solid fa-language table-icon"></i></td>
+  <td>Language Development</td>
+  <td><code>ncl_ch_cdiwsen</code> / <code>ncl_ch_cdiwses</code></td>
+</tr>
+
 <tr>
   <td><a href="neurocog/mlds">MLDS</a></td>
   <td>Multilingual Exposure</td>
   <td><code>ncl_ch_mlds</code></td>
 </tr>
+
+<tr>
+  <td><a href="neurocog/mlds">NIH Baby Toolbox</a></td>
+  <td>Cognition/Executive Function/Memory, Language</td>
+  <td><code>ncl_ch_nbtb</code></td>
+</tr>
+
 <tr>
   <td><a href="neurocog/spm2">SPM-2</a> <span class="subtle">(Infant/Toddler)</span>
   </td>

@@ -2882,7 +2882,7 @@ nsc:
   description: The Incarceration History Questionnaire is designed to capture maternal, paternal, and other household member's involvement with the criminal justice system in the prenatal and postnatal periods. It asks about arrest, incarceration, and community supervision. The questionnaire is completed by the adult participant in HBCD, usually the child's parent or caregiver. It is based on the Family History of Incarceration Survey, with questions added regarding the specific times in the child's life that involvement with the criminal justice system occurred, and if the justice involvement was related to substances. If incarceration occurred, the measure asks about the length of the incarceration.
   supp3_text: null
   domain: Social & Environmental Determinants
-  release: 3.0 (new instrument/info required)
+  release: unsure
   qc: |-
     - Monthly data consistency checks
     - Handling of incomplete or missing responses by sites
@@ -3007,26 +3007,86 @@ ecpromis_pags:
   measure: ecPROMIS - Physical Activity/Greenspace
   construct: Physical Activity
 mchat:
-  status: Not started
+  supp2_text: null
+  status: Ready for README update
+  alert1: null
+  Date submitted: '2026-09-30'
+  hbcd_mods1: |-
+    If a child fails an item the caregiver is immediately presented with the additional questions (rather than administering all items in the screener form prior to moving on to follow-up interview questions. This modification was applied for ease of completion in web-based format to group related questions,
+
+    This modification means that some participants received follow-up questions that they would not have in the validated paper-administered version (i.e., screener scores of 0-2).
+  resource2_url: M-CHAT-R Spanish
+  duration: Remote Questionnaire (Parent on Child; 5-10 minutes)
+  hbcd_mods2: null
+  warning1_title: V07 and V07a administration
   full_name: Modified Checklist for Autism in Toddlers R/F
+  warning4: null
+  alert2: null
   assessment_type: Questionnaire
   table_name: mh_ch_mchat
+  warning2: null
+  references: |-
+    Robins, D.L., Casagrande, K., Barton, M.L., Chen, C., Dumont-Mathieu, T., & Fein, D. (2014). Validation of the Modified Checklist for Autism in Toddlers-Revised with Follow-Up (M- CHAT-R/F). _Pediatrics_, 133 (1), 37-45. PMID:24366990. PMCID: PMC3876182.
+
+    Attar SM, Bradstreet LE, Ramsey RK, Kelly K, Robins DL. Validation of the Electronic Modified Checklist for Autism in Toddlers, Revised with Follow-Up: A Nonrandomized Controlled Trial. J Pediatr. 2023 Feb 2;262:113343. doi: 10.1016/j.jpeds.2022.11.044. Epub 2023 Feb 2. PMID: 36736890; PMCID: PMC10390646.
   respondent_category: Parent on Child
   admin_notes: null
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
+  email: nakshoomoff@health.ucsd.edu
   visits: V07
+  hbcd_mods3: null
   primary_data_type: Tabulated data
+  submitter_name: Natacha Akshoomoff
   README:
     label: View
     url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
+  alert4: null
   acronym: MCHAT
+  resource1_description: This document depicts how the decision tree was implemented for web-based administration of the M-CHAT-R(F) Follow-Up interview questions
+  warning3: null
+  alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reciqnhrslaTGLOZY
+  warning1: |-
+    In the initial stage of data collection, the M-CHAT-R/F was administered at the V07a visit before it was removed from the protocol. It is now only included at the V07 visit.
+
+    A small number of participants (N=28) were administered the M-CHAT-R/F twice (at both V07a and V07). In those cases, only the M-CHAT-R/F data collected at V07 are included in the data release.
+
+    Four participants only completed the M-CHAT-R/F at V07a. These data will be included with the V07 data in a later release.
+
+    Five participants completed the M-CHAT-R/F at V07a but at the time of the data release had not yet completed the M-CHAT-R/F at V07. The V07a data are not included in the current data release. In a later release, only the V07 data will be included in the data set and the M-CHAT-R/F at V07a will not be included in the data release.
+  description: |-
+    The M-CHAT-R/F (Robins et al., 2014) is a two-stage parent-report screening tool to assess the likelihood for autism. There are 20 questions. If a child fails an item, the caregiver is later interviewed and presented with additional questions for clarification.
+
+    The M-CHATR/F is available as a free download for clinical, research, and educational purposes. It is available in English and Spanish.
+  supp3_text: null
   domain: Behavior & Caregiver-Child Interactions
   release: 3.0 (new instrument/info required)
+  resource2_description: This document provides Spanish translation of the measure.
+  qc: |-
+    - All item-level responses and scores were electronically captured and scored within the HBCD database.
+    - Data was reviewed to verify that failed item level responses generated a follow-up response.
+    - Completion rates were monitored for the overall consortium and at the site level to address any concerns.
   administration: Remote
   Form:
     label: Form Link
     url: https://form.fillout.com/t/qaNxHYsnPBus?id=reciqnhrslaTGLOZY
+  resource1_url: M-CHAT-R(F) Electronic Decision Tree
+  scoring: |-
+    Scoring procedures are included for each question to determine if the responses to the additional questions result in a pass or a fail and whether follow-up interview will be administered.
+
+    For all items except 2, 5, and 12, the response “NO” indicates elevated likelihood of autism; for items 2, 5, and 12, “YES” indicates elevated likelihood of autism.
+
+    The total of these responses is used to determine if the results are associated with the criterion for High Risk (follow-up score of 2 or higher) or Low Risk (score of 0 or 1).
+
+    The follow-up questions and scoring procedures for the web-based, electronic version of the M-CHAT-R/F were provided to HBCD by one of the test authors (Diana Robins, Ph.D.)
+
+    In the web-based, electronic version of the M-CHAT-R/F (Attar et al., 2023), the caregiver is instructed to follow instructions as presented onscreen.
+
+    The initial responses and the follow-up responses for each question are included in the data release.
+  changelog: Will provide PDF documents via email.
+  resources: null
+  hbcd_mods1_title: Modifications Associated with Web-Based Administration
+  supp1_text: null
   measure: Modified Checklist for Autism in Toddlers
   construct: Autism
 vineland_3:
@@ -3635,7 +3695,7 @@ mbcdi_2:
   warning4: null
   alert2: null
   assessment_type: Questionnaire
-  table_name: ncl_ch_cdiwsen; ncl_ch_wses
+  table_name: ncl_ch_cdiwsen; ncl_ch_cdiwses
   warning2: Note that in some cases, the caregiver endorsed all items in certain sections of the Web-CDI form. These cases are included in the released data as completed by the caregiver, but users may take caution in interpretation.
   warning2_title: Cases Where All Items Endorsed
   references: |-
@@ -3675,7 +3735,7 @@ mbcdi_2:
 nbtb:
   supp2_text: null
   status: Complete / Stable
-  alert1: Performance of the NIH Baby Toolbox reflects the child's developmental status, but various factors might influence the results of the assessment that should be taken into account.
+  alert1: Performance of the NIH Baby Toolbox reflects the child's developmental status, but various factors might influence the results of the assessment that should be considered. A few are noted below. Other factors may include health disparities based on social, cultural and economic influences.
   Date submitted: '2026-08-29'
   hbcd_mods1: null
   duration: V03 45-60 min / V04 15-20 min / V06-40-60 min
@@ -3686,7 +3746,7 @@ nbtb:
   warning4: null
   alert2: The test was given in the context of a battery of tests and procedures administered to the child and his/her caregiver during the course of an extended visit. Some children may experience fatigue from this and this may have adversely impacted their performance. Ratings of arousal level of the child before and after the assessment may help in identifying situations where the child may have under-performed.
   assessment_type: Cognitive testing
-  table_name: nc_ch_nbtb
+  table_name: ncl_ch_nbtb
   warning2: The V04 NIH Baby Toolbox assessment was reduced to shorten the length of the V04 visit during the course of the study. Some participants will have outcomes on subtests that were not administered to later participants.
   warning2_title: Reduction in the HBCD V04 Battery
   references: |-

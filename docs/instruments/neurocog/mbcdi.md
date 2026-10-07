@@ -1,4 +1,4 @@
-# MacArthur-Bates CDI
+# MacArthur-Bates CDI Words & Gestures
 
 {{ readme_summary(instruments.mbcdi) }}
 {{ alert_warning(instruments.mbcdi) }}
