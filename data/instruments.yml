@@ -3951,7 +3951,7 @@ fmri:
   description: |-
     Functional MRI (fMRI) measures brain activity via the blood oxygen level–dependent (BOLD) signal. The HBCD Study includes resting-state fMRI (rs-fMRI), with head motion monitored in real time using [FIRMM](https://firmm.readthedocs.io/) to estimate usable data during acquisition as quantified by framewise displacement (FD) ([Dosenbach et al., 2017](https://doi.org/10.1016/j.neuroimage.2017.08.025)).
 
-    A minimum of 2 runs are collected (during sleep for infants <30 months old), each lasting 7.5 minutes. A target of 7.5 minutes of usable low-motion data ((FD<0.3 mm)) is acquired across runs per session, with additional runs acquired as needed/possible to reach the target. Each run includes forward and reverse phase-encoding spin-echo EPI images for distortion correction. Data are acquired at 2 mm isotropic resolution with a repetition time (TR) of 1725 ms and multiband (MB) factor of 4.
+    A minimum of 2 runs are collected (during sleep for infants <30 months old), each lasting 7.5 minutes. A target of 7.5 minutes of usable low-motion data ((FD<0.3 mm) is acquired across runs per session, with additional runs acquired as needed/possible to reach the target. Each run includes forward and reverse phase-encoding spin-echo EPI images for distortion correction. Data are acquired at 2 mm isotropic resolution with a repetition time (TR) of 1725 ms and multiband (MB) factor of 4.
   domain: Imaging/Tabular Imaging
   release: '3.0'
   administration: In-person

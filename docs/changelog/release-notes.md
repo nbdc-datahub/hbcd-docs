@@ -172,7 +172,7 @@ Release data now include the addition of the following measures, expanded data t
 <a href="../../instruments/#imaging">Imaging</a></td>
 <td>Source DICOMs for all imaging modalities</td>
 </tr>
-<tr><td><a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs for XCP-D for efficient voxel-wise statistical modeling</td></tr>
+<tr><td><a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArrayIO</a> outputs for XCP-D for efficient voxel-wise statistical modeling</td></tr>
 <tr><td>Tabulated pipeline derivatives for QSIRecon</td></tr>
 
 <tr>

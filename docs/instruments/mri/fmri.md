@@ -8,12 +8,11 @@
 ---
 
 ## Overview
-
-### Acquisition
+#### Acquisition
 
 {{ instrument_description(instruments.fmri) }}
 
-### Processing & Derivatives
+#### Processing & Derivatives
 
 <div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 5px;" class="fa-solid fa-up-right-from-square"></i></a></span> </div>
 
@@ -149,7 +148,6 @@ File Prefixes (func/): sub-[ID]_ses-[V0X]_hash-{HASH}_task-rest_dir-PA_run-[X]
 <span class="var">STD_SPACE</span>: MNI152NLin6Asym_res-2 , T2w
 </pre>
 </div>
-
 
 ## XCP-D
 <a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a> performs functional MRI post-processing and noise regression from Infant-fMRIPrep derivatives, producing cleaned and parcellated data (<a href="#parc">see parcellation atlases</a>) ready for analysis.

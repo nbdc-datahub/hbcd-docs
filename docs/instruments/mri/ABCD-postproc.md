@@ -1,63 +1,6 @@
 ## Post-Processing: ReproTM & ModelArrayIO
 
-## ModelArrayIO
-<div class="subtle">
-Mass-univariate statistical modeling for large neuroimaging datasets
-</div>
-
-[ModelArrayIO](https://modelarrayio.readthedocs.io/en/latest/) is a Python package that converts neuroimaging file formats to HDF5 (`.h5`) for compatibility with the [ModelArray R package](https://github.com/ModelArray/ModelArray). For HBCD, ModelArrayIO is used as a downstream aggregation step, converting subject-level outputs from QSIRecon and XCP-D into cohort-level arrays. This enables efficient, large-scale statistical analyses via ModelArray without having to load individual subject files.  
-
-**LUCI ADDED THIS AI-GENERATED SUMMARY IN CASE IT'S HELPFUL**
-ModelArrayIO was used to aggregate subject-level neuroimaging data listed in the cohort CSV into a cohort-level HDF5 ModelArray file. The scalar file paths specified by SCALAR_COLUMNS were read from the cohort table, with the input modality automatically detected from the source file extensions. The data were stored as float32 values using the HDF5 backend. Gzip compression at level 9 was applied to the output, and the HDF5 spatial chunks were automatically sized to target approximately 32 MiB per chunk. For source files stored on S3, four parallel workers were used to download/load the imaging data. The resulting .h5 file contains the aggregated subject-by-element data in a format suitable for downstream large-scale statistical analysis with ModelArray.
-
-*Note: Each `.h5` file is paired with a `.csv` file indexing included subjects and sessions.*
-
-`ModelArrayIO` Run Command & Parameters
-
-Outputs were generated via the following command (see [Usage Notes](https://modelarrayio.readthedocs.io/en/latest/usage.html) for details):
-
-```default
-modelarrayio to-modelarray \
-    --cohort-file ${cohort_csv} \
-    --output ${out_h5} \
-    --scalar-columns ${SCALAR_COLUMNS} \
-    --backend hdf5 \
-    --dtype float32 \
-    --compression gzip \
-    --compression-level 9 \
-    --s3-workers 4 \
-    --log-level INFO \
-    --chunk-voxels 0 \
-    --target-chunk-mb 32
-```
-
----
-
 ### QSIRecon ModelArray
-
-QSIRecon-ModelArray outputs include cohort-level HDF5 arrays aggregating diffusion MRI scalar maps across QSIRecon reconstruction methods, including DIPY, DSI Studio, TORTOISE, and wmNODDI (see QSIRecon for details).
-
-```default
-abcd/
-└── derivatives/
-    └── abcc-qsirecon-ModelArray/
-
-        # DIPY outputs
-        ├── qsirecon-DIPY_model-<tensor|dki>_param-<PARAM>.h5
-        ├── qsirecon-DIPY_model-<tensor|dki>_param-<PARAM>.csv
-
-        # DSI Studio outputs
-        ├── qsirecon-DSIStudio_model-<tensor|gqi|rdi>_param-<PARAM>.h5
-        ├── qsirecon-DSIStudio_model-<tensor|gqi|rdi>_param-<PARAM>.csv
-
-        # TORTOISE outputs
-        ├── qsirecon-TORTOISE_model-tensor_param-<PARAM>.h5
-        ├── qsirecon-TORTOISE_model-tensor_param-<PARAM>.csv
-
-        # wmNODDI outputs
-        ├── qsirecon-wmNODDI_model-noddi_param-<PARAM>.h5
-        └── qsirecon-wmNODDI_model-noddi_param-<PARAM>.csv
-```
 
 ```{ojs}
 //| echo: false

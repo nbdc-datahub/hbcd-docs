@@ -6,12 +6,15 @@
 
 ---
 
+## Overview
+#### Acquisition
+
 <!-- ##### Overview & Acquisition -->
 {{ instrument_description(instruments.dmri) }}
 
 {{ csv_table("mri/diffusion_pulse_sequence_timing.csv") }}
 
-## Processing 
+#### Processing & Derivatives
 
 <div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 5px;" class="fa-solid fa-up-right-from-square"></i></a></span> </div>
 
@@ -35,10 +38,7 @@
 <td><a href="https://github.com/QMICodeBase/TORTOISEV4">TORTOISE</a> Tensor fits and scalar maps</td> </tr> 
 </tbody> </table> 
 
-
-## Derivatives
-
-### QSIPrep
+## QSIPrep
 
 <pre class="folder-tree">hbcd/
 └── derivatives/
@@ -78,9 +78,9 @@
 </pre>
 
 
-### QSIRecon Details
+## QSIRecon
 
-##### Diffusion Tensor Imaging (DTI)        
+#### Diffusion Tensor Imaging (DTI)        
 DSI Studio models diffusion with a 3D Gaussian distribution of water displacements. Key outputs include fractional anisotropy (FA), i.e. anisotropic diffusion (typically higher in white matter bundles with dense, parallel fibers) and mean diffusivity (MD), i.e. directionally averaged apparent diffusion coefficient (inversely related to cellular membrane density) (<a href="https://doi.org/10.1016/S0006-3495(94)80775-1">Basser 1994</a>).
 <pre class="folder-tree">
 hbcd/
@@ -104,7 +104,7 @@ hbcd/
 <span class="var">BUNDLE</span>: <a href="../dmri.html">see full list</a>
 </pre>
 
-##### Diffusion Kurtosis Imaging (DKI)
+#### Diffusion Kurtosis Imaging (DKI)
 DKI extends DTI to capture non-Gaussian diffusion. The main metric is mean kurtosis (MK), which is more sensitive to complex or restricted diffusion and often higher in dense white matter (<a href="https://doi.org/10.1002/mrm.20508">Jensen 2005</a>).
 <pre class="folder-tree">
     ├── qsirecon-DIPYDKI/
@@ -121,7 +121,7 @@ DKI extends DTI to capture non-Gaussian diffusion. The main metric is mean kurto
 <span class="var">DKI-PARAM</span>: ad, ak, kfa, md, mk, mkt, rd, rk
 </pre>
 
-##### Mean Apparent Propagator MRI (MAP-MRI)
+#### Mean Apparent Propagator MRI (MAP-MRI)
 MAP-MRI Extends DTI by estimating the full spatial probability distribution (propagator) of water diffusion without assuming Gaussian distribution. This enables quantification of non-Gaussian diffusion and more accurate measures of directionality and anisotropy (<a href="https://doi.org/10.1016/j.neuroimage.2013.04.016">Özarslan 2013</a>).
 <pre class="folder-tree">
     ├── qsirecon-TORTOISE_model-MAPMRI/
@@ -158,7 +158,7 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 </tbody>
 </table>
 
-##### QSIRecon-TORTOISE Tensor
+#### QSIRecon-TORTOISE Tensor
 
 <pre class="folder-tree">
     └── qsirecon-TORTOISE_model-tensor/
@@ -201,7 +201,6 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 </tr>
 <tr><td>iso</td><td>Isotropic diffusion component</td></tr>
 <tr><td>qa</td><td>Quantitative anisotropy</td></tr>
-
 <tr>
 <td rowspan="5"><b>tensor</b><br>(Inner shells)</td>
 <td>fa</td><td>Fractional anisotropy</td>
@@ -210,7 +209,6 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 <tr><td>rd1 / rd2</td><td>Second and third eigenvalues (λ₂ / λ₃)</td></tr>
 <tr><td>ha</td><td>Helix angle</td></tr>
 <tr><td>txx / txy / txz / tyy / tyz / tzz</td><td>Diffusion tensor elements</td></tr>
-
 <!-- DIPY DKI -->
 <tr>
 <td rowspan="4"><b>DIPY DKI</b></td>
@@ -220,7 +218,6 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 <tr><td>fa / kfa</td><td>Fractional anisotropy / Kurtosis FA</td></tr>
 <tr><td>md / mk / mkt</td><td>Mean diffusivity / Mean kurtosis / Mean kurtosis tensor</td></tr>
 <tr><td>rd / rk</td><td>Radial diffusivity / Radial kurtosis</td></tr>
-
 <!-- TORTOISE MAPMRI -->
 <tr>
 <td rowspan="7"><b>TORTOISE-<br>MAPMRI</b></td>
@@ -230,14 +227,12 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 <tr><td>fa / kfa</td><td>Fractional anisotropy / Kurtosis FA</td></tr>
 <tr><td>pa / path</td><td>Propagator anisotropy / Thresholded PA</td></tr>
 <tr><td>rtap / rtop / rtpp</td><td>Return-to-axis / origin / plane probability</td></tr>
-
 <tr>
 <td rowspan="3"><b>tensor</b><br>(Inner shells)</td>
 <td>ad / rd</td><td>Axial / Radial diffusivity</td>
 </tr>
 <tr><td>am / fa</td><td>A0 (mean signal) / Fractional anisotropy</td></tr>
 <tr><td>li</td><td>Lattice index</td></tr>
-
 <!-- TORTOISE Tensor -->
 <tr>
 <td rowspan="5"><b>TORTOISE-<br>Tensor</b></td>
@@ -249,6 +244,53 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 </tbody>
 </table>
 </div>
+
+
+## ModelArrayIO
+
+Mass-univariate statistical modeling for large neuroimaging datasets, or [ModelArrayIO](https://modelarrayio.readthedocs.io/en/latest/), is a Python package that converts neuroimaging file formats to HDF5 (`.h5`) for compatibility with the [ModelArray R package](https://github.com/ModelArray/ModelArray). For HBCD diffusion data, ModelArrayIO is used as a downstream aggregation step, converting subject-level MRI scalar maps across QSIRecon reconstruction methods into cohort-level arrays. This enables efficient, large-scale statistical analyses via ModelArray without having to load individual subject files.  
+
+
+
+<!-- XCP-D-ModelArray outputs include cohort-level HDF5 arrays aggregating structural and functional derivatives:
+
+  - Surface morphometry (curvature, sulcal depth, cortical thickness)  
+  - Functional maps (ALFF, ReHo)  
+  - Resting-state functional connectivity -->
+
+<div id="modelarray" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
+  <span class="emoji"><i class="fa fa-folder-tree"></i></span>
+  <span class="text-with-link">
+<span class="text">ModelArrayIO Outputs</span>
+  <a class="anchor-link" href="#modelarray" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<pre style="font-size: 11px;" class="folder-tree">
+hbcd/
+└── derivatives/
+    └── qsirecon-ModelArray/
+        │    <span class="comment"># DIPY outputs</span>
+        ├── qsirecon-DIPY_model-<tensor|dki>_param-<PARAM>.h5
+        ├── qsirecon-DIPY_model-<tensor|dki>_param-<PARAM>.csv
+        │
+        │    <span class="comment"># DSI Studio outputs</span>
+        ├── qsirecon-DSIStudio_model-<tensor|gqi|rdi>_param-<PARAM>.h5
+        ├── qsirecon-DSIStudio_model-<tensor|gqi|rdi>_param-<PARAM>.csv
+        │
+        │    <span class="comment"># TORTOISE outputs</span>
+        ├── qsirecon-TORTOISE_model-tensor_param-<PARAM>.h5
+        └── qsirecon-TORTOISE_model-tensor_param-<PARAM>.csv
+
+<span class="hashtag"># ── Label Legend ─────────────────────────────────────────────</span>
+<span class="var">HASH</span>    : d902942d+7a4c379b, 364caa63+7a4c379b
+<span class="var">ATLAS</span>    : 4S-{156|256|...|1056}Parcels , Glasser , Gordon , MIDB , MyersLabonte
+</pre>
+</div>
+
 
 ---
 
