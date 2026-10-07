@@ -272,7 +272,6 @@ Mass-univariate statistical modeling for large neuroimaging datasets, or [ModelA
 <option value="DIPY">DIPY</option>
 <option value="DSIStudio">DSIStudio</option>
 <option value="TORTOISE">TORTOISE</option>
-<option value="wmNODDI">wmNODDI</option>
 </select>
 </div>
 <style>
