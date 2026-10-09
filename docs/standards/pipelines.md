@@ -52,7 +52,7 @@ The HBCD processing pipelines are a collection of modular tools used to process 
   <td><code>mriqc/</code></td>
   <td>Extracts image quality metrics from raw MRI data</td>
 <td>
-  <a href="../../instruments/mri/smri/#mriqc"><i class="fa-solid fa-folder-tree header icon"></i>
+  <a href="../../instruments/mri/smri/#qc-pipelines-mriqc-bme-x"><i class="fa-solid fa-folder-tree header icon"></i>
   </a>
 </td>
   <td><a href="https://www.nmind.org/proceedings/mriqc/"><i class="fa fa-shield"></i></a></td>
@@ -112,9 +112,9 @@ The HBCD processing pipelines are a collection of modular tools used to process 
 
 <tr>
   <td><a href="https://pennlinc.github.io/ModelArray/">ModelArrayIO</a></td>
-  <td><code>modelarray/</code></td>
+  <td><code>xcp_d-{HASH}-ModelArrayIO/</code></td>
   <td>Aggregates cohort-level HDF5 arrays for efficient large-scale analyses</td>
-  <td><a href="../../../instruments/mri/fmri/#modelarrayio">
+  <td><a href="../../instruments/mri/fmri/#modelarrayio">
       <i class="fa-solid fa-folder-tree header icon"></i></a></td>
   <td><a href="https://www.nmind.org/proceedings/">
   <i class="fa fa-shield"></i></a></td>
@@ -159,6 +159,16 @@ The HBCD processing pipelines are a collection of modular tools used to process 
   <td><a href="../../instruments/mri/dmri/#qsirecon">
     <i class="fa-solid fa-folder-tree header icon"></i></a></td>
   <td><a href="https://www.nmind.org/proceedings/qsirecon/"><i class="fa fa-shield"></i></a></td>
+</tr>
+
+<tr>
+  <td><a href="https://pennlinc.github.io/ModelArray/">ModelArrayIO</a></td>
+  <td><code>qsirecon-ModelArrayIO/</code></td>
+  <td>Aggregates cohort-level HDF5 arrays for efficient large-scale analyses</td>
+  <td><a href="../../instruments/mri/dmri/#modelarrayio">
+      <i class="fa-solid fa-folder-tree header icon"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/">
+  <i class="fa fa-shield"></i></a></td>
 </tr>
 
 <tr class="table-group-row">

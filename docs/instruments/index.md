@@ -140,7 +140,6 @@ This page lists all instruments included in the current release, organized by do
 <div id="instr-empty" class="archive-empty">No matching instruments found.</div>
 
 ### <i class="fa fa-clipboard-list header-icon"></i> Administrative
-
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>

@@ -290,7 +290,7 @@ modelarrayio to-modelarray \
 <pre style="font-size: 11px;" class="folder-tree">
 hbcd/
 └── derivatives/
-    └── xcp_d-<span class="var">{HASH}</span>-ModelArray/
+    └── xcp_d-<span class="var">{HASH}</span>-ModelArrayIO/
         │    <span class="comment"># Surface morphometry</span>
         ├── xcp_d-<span class="var">{HASH}</span>_param-<span class="var">{curv|sulc|thickness}</span>.h5
         ├── xcp_d-<span class="var">{HASH}</span>_param-<span class="var">{curv|sulc|thickness}</span>.csv
