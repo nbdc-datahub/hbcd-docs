@@ -277,12 +277,12 @@ Corrected scoring for N=4 V06 participants with fewer than 3 item responses from
 <tr>
 <td>ERICA</td>
 <td><i class="fa-solid fa-rotate icon-rotate"></i>
-Reliability codes are now integrated into the primary coding dataset and no longer require manual integration by users. Integration includes cleaning to exclude incorrect code values (n=44 participants), capping <code>b_raw</code> values at 3.0 (n=3 participants), and correction of <code>locomotor_ability</code> errors.</td>
+Reliability codes are now included in the primary coding dataset; users no longer need to merge them manually. Invalid code values were excluded for 44 participants, and <code>b_raw</code> values were capped at 3.0 for 3 participants.</td>
 </tr>
 <tr>
 <td>ERICA</td>
 <td><i class="fa-solid fa-rotate icon-rotate"></i>
-Added all age and <code>date_taken</code> fields.</td>
+Added all age fields and <code>date_taken</code>; removed <code>locomotor_ability</code>.</td>
 </tr>
 
 <tr>
