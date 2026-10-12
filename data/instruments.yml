@@ -136,16 +136,15 @@ erica:
   hbcd_mods1: null
   duration: 20-30 min
   hbcd_mods2: null
-  warning1_title: Integrated Analytic Dataset (REQUIRED)
+  warning1_title: General
   full_name: Early Regulation in Context Assessment
-  warning4: The code for "caregiver irritable behavior" in Data Release 2.1 has a low base rate because few caregivers exhibited elevated irritability. We recommend dichotomizing (0 = 0 and >0 = 1) for analysis.
+  warning4: null
   alert2: null
   assessment_type: Questionnaire
   table_name: |-
     mh_cg_erica_3_9m
     mh_cg_erica_rel_3_9m
-  warning2: Data Release 2.1 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month). Coded data for a subset of participants may be missing from this data release for various reasons. These data will be added in future releases.
-  warning2_title: General
+  warning2: The ERICA was administered in Spanish and English. The language of administration (i.e., language in which RAs delivered the instructions) does not always correspond with the language spoken by the caregiver/child during the activities. All videos in which the dyad speaks Spanish during the activities were coded by fully Spanish-English bilingual coders.
   references: |-
     Krogh-Jespersen, S., MacNeill, L. A., Anderson, E. L., Stroup, H. E., Harriott, E. M., Gut, E., Blum, A., Fareedi, E., Fredian, K. M., Wert, S. L., Wakschlag, L. S., & Norton, E. S. (2021). Disruption leads to methodological and analytic innovation in developmental sciences: Recommendations for remote administration and dealing with messy data. _Frontiers in Psychology_, 12, 732312. <https://doi.org/10.3389/fpsyg.2021.732312>
     Edwards, R. C., Planalp, E. M., Bosquet Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interactions Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child interactions in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69(101422), 101422.<https://doi.org/10.1016/j.dcn.2024.101422>
@@ -160,14 +159,9 @@ erica:
     url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/erica/
   acronym: ERICA
   resource1_description: 'ERICA-inter-rater-reliability-2.1.csv file used to parse to create table under Coding Reliability Stats: https://docs.hbcdstudy.org/latest/instruments/bcgi/erica/#coding-reliability-statistics'
-  warning3: The ERICA was administered in Spanish and English. The language of administration (i.e., language in which RAs delivered the instructions) does not always correspond with the language spoken by the caregiver/child during the activities. All videos in which the dyad speaks Spanish during the activities were coded by fully Spanish-English bilingual coders.
+  warning3: The code for "caregiver irritable behavior" in Data Release 2.1 has a low base rate because few caregivers exhibited elevated irritability. We recommend dichotomizing (0 = 0 and >0 = 1) for analysis.
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec1WAh2tmcUCsPLU
-  warning1: |-
-    Prior to analysis, you must create a final integrated analytic dataset by merging the reliability codes (`mh_cg_erica_rel_3_9m`) into the primary coding data (`mh_cg_erica_3_9m`). **Failure to integrate these data correctly prior to analysis will result in incorrect results.** In future releases, this will not be necessary, as the integrated, analytic data set will be created prior to release. Download the following files:
-
-    - [Integration Instructions](https://docs.hbcdstudy.org/latest/resources/ERICA_2.1_Integrated_Analytic_Data_INSTRUCTIONS.pdf)
-    - [ERICA_2.1_Analytic_REMOVALS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_Analytic_REMOVALS.csv) (in [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/)- DUC access required)
-    - [ERICA_2.1_DataError_EXCLUSIONS.csv](https://hbcd-docs-private.lassoinformatics.com/participant_lists/ERICA_2.1_DataError_EXCLUSIONS.csv) (in [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com)- DUC access required)
+  warning1: Data Release 3.0 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month). Coded data for a subset of participants may be missing from this data release for various reasons. These data will be added in future releases.
   description: "The Early Regulation in Context Assessment (**ERICA**) is a standardized observational paradigm that is adapted from the well-validated Disruptive Behavior Diagnostic Observation Schedule (DB-DOS) ([Krogh-Jespersen et al. 2022](https://doi.org/10.3389/fpsyg.2021.732312)). The ERICA assesses early child regulation in the context of the caregiver-child relationship via a series of five brief, developmentally appropriate activities that “press” for regulation within the dyad (e.g., frustration, engagement, enjoyment). The ERICA is coded using a one-pass, global coding system adapted for HBCD. Seven codes are organized across child, caregiver, and dyadic domains:\n\n- **Child:** Positive affect, Irritability, Social engagement\n- **Caregiver**: Responsive behavior, Irritable behavior, Directive behavior\n- **Dyadic**: Caregiver–child connectedness \n\nCodes are scored on a 4-point scale (0-3), reflecting the frequency, intensity, and duration of observed behaviors across the\
     \ paradigm, with higher scores indicating higher levels of observed behavior. See [Edwards et al. (2024)](https://doi.org/10.1016/j.dcn.2024.101422) for additional details on the ERICA paradigm and adaptation for HBCD."
   domain: Behavior & Caregiver-Child Interactions
@@ -3951,7 +3945,7 @@ fmri:
   description: |-
     Functional MRI (fMRI) measures brain activity via the blood oxygen level–dependent (BOLD) signal. The HBCD Study includes resting-state fMRI (rs-fMRI), with head motion monitored in real time using [FIRMM](https://firmm.readthedocs.io/) to estimate usable data during acquisition as quantified by framewise displacement (FD) ([Dosenbach et al., 2017](https://doi.org/10.1016/j.neuroimage.2017.08.025)).
 
-    A minimum of 2 runs are collected (during sleep for infants <30 months old), each lasting 7.5 minutes. A target of 7.5 minutes of usable low-motion data ((FD<0.3 mm) is acquired across runs per session, with additional runs acquired as needed/possible to reach the target. Each run includes forward and reverse phase-encoding spin-echo EPI images for distortion correction. Data are acquired at 2 mm isotropic resolution with a repetition time (TR) of 1725 ms and multiband (MB) factor of 4.
+    A minimum of 2 runs are collected (during sleep for infants <30 months old), each lasting 7.5 minutes. A target of 7.5 minutes of usable low-motion data (FD<0.3 mm) is acquired across runs per session, with additional runs acquired as needed/possible to reach the target. Each run includes forward and reverse phase-encoding spin-echo EPI images for distortion correction. Data are acquired at 2 mm isotropic resolution with a repetition time (TR) of 1725 ms and multiband (MB) factor of 4.
   domain: Imaging/Tabular Imaging
   release: '3.0'
   administration: In-person

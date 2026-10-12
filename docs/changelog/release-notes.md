@@ -273,6 +273,18 @@ Corrected scoring for N=12 V03 participants with &lt;3 item responses in <code>m
 Corrected scoring for N=4 V06 participants with fewer than 3 item responses from '0' to 'null.'
 </td>
 </tr>
+
+<tr>
+<td>ERICA</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>
+Reliability codes are now integrated into the primary coding dataset and no longer require manual integration by users. Integration includes cleaning to exclude incorrect code values (n=44 participants), capping <code>b_raw</code> values at 3.0 (n=3 participants), and correction of <code>locomotor_ability</code> errors.</td>
+</tr>
+<tr>
+<td>ERICA</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>
+Added all age and <code>date_taken</code> fields.</td>
+</tr>
+
 <tr>
 <td>MAPS-TL (&lt;1yr)</td>
 <td><i class="fas fa-bug icon-bug"></i>
