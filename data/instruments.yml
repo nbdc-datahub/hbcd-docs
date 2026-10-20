@@ -128,7 +128,7 @@ study_nav:
   measure: Study Navigator Contact Form
   construct: Recruitment/Retention
 erica:
-  status: Not started
+  status: Work in progress
   alert1: |-
     The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables—especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers—to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
 
@@ -148,7 +148,13 @@ erica:
     Krogh-Jespersen, S., MacNeill, L. A., Anderson, E. L., Stroup, H. E., Harriott, E. M., Gut, E., Blum, A., Fareedi, E., Fredian, K. M., Wert, S. L., Wakschlag, L. S., & Norton, E. S. (2021). Disruption leads to methodological and analytic innovation in developmental sciences: Recommendations for remote administration and dealing with messy data. _Frontiers in Psychology_, 12, 732312. <https://doi.org/10.3389/fpsyg.2021.732312>
     Edwards, R. C., Planalp, E. M., Bosquet Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interactions Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child interactions in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69(101422), 101422.<https://doi.org/10.1016/j.dcn.2024.101422>
   respondent_category: Parent on Child
-  admin_notes: This page includes a hard-coded table that cannot be updated via this form - contact Luci to update table if needed
+  admin_notes: |-
+    Luci notes 10.19:
+
+    - I updated the data warnings to remove mention of known issues that were resolved for 3.0
+    - Also removed mention of 2.1 from this data warning: "The code for "caregiver irritable behavior" has a low base rate because few caregivers exhibited elevated irritability. We recommend dichotomizing (0 = 0 and >0 = 1) for analysis."
+    - Are any other updates needed?
+    - Note that this page includes a hard-coded table that cannot be updated via this form - contact Luci to update table if needed
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/erica/
   visits: V03, V06, V10, V12, V14
   hbcd_mods3: null
@@ -158,7 +164,7 @@ erica:
     url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/erica/
   acronym: ERICA
   resource1_description: 'ERICA-inter-rater-reliability-2.1.csv file used to parse to create table under Coding Reliability Stats: https://docs.hbcdstudy.org/latest/instruments/bcgi/erica/#coding-reliability-statistics'
-  warning3: The code for "caregiver irritable behavior" in Data Release 2.1 has a low base rate because few caregivers exhibited elevated irritability. We recommend dichotomizing (0 = 0 and >0 = 1) for analysis.
+  warning3: The code for "caregiver irritable behavior" has a low base rate because few caregivers exhibited elevated irritability. We recommend dichotomizing (0 = 0 and >0 = 1) for analysis.
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec1WAh2tmcUCsPLU
   warning1: Data Release 3.0 includes data from ERICA administrations completed as part of HBCD study visit 3 (3–9 Month) as of July 1, 2025, utilizing the ERICA infant paradigm, which includes a prelocomotor (3–7 month) and locomotor protocol (7–9 month). Coded data for a subset of participants may be missing from this data release for various reasons. These data will be added in future releases.
   description: "The Early Regulation in Context Assessment (**ERICA**) is a standardized observational paradigm that is adapted from the well-validated Disruptive Behavior Diagnostic Observation Schedule (DB-DOS) ([Krogh-Jespersen et al. 2022](https://doi.org/10.3389/fpsyg.2021.732312)). The ERICA assesses early child regulation in the context of the caregiver-child relationship via a series of five brief, developmentally appropriate activities that “press” for regulation within the dyad (e.g., frustration, engagement, enjoyment). The ERICA is coded using a one-pass, global coding system adapted for HBCD. Seven codes are organized across child, caregiver, and dyadic domains:\n\n- **Child:** Positive affect, Irritability, Social engagement\n- **Caregiver**: Responsive behavior, Irritable behavior, Directive behavior\n- **Dyadic**: Caregiver–child connectedness \n\nCodes are scored on a 4-point scale (0-3), reflecting the frequency, intensity, and duration of observed behaviors across the\
