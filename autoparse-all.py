@@ -3,7 +3,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 '''
-This script does 2 things to pull data locally, which iss then automatically autoparsed via macros, requiring no further action:
+This script does 2 things to pull data locally, which is then automatically autoparsed via macros, requiring no further action:
 
 1. Autoparses google sheets for Static/Dynamic tables
 2. Autoparses all instrument info from Airtable

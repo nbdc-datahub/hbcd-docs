@@ -213,8 +213,13 @@ This page lists all instruments included in the current release, organized by do
     <td><a href="bcgi/ibqr">ECBQ (VSF)+BI</a></td>
     <td><code>mh_cg_ecbq</code></td>
   </tr>
+    <tr>
+    <td><a href="bcgi/maps">MAPS-EASI</a> <span class="subtle">(Toddler)</span></td>
+    <td>Irritability</td>
+    <td><code>mh_cg_mapstl__easi</code></td>
+  </tr>
   <tr>
-    <td><a href="bcgi/maps-tl">MAPS-TL</a> <span class="subtle">(Infant/Toddler)</span>
+    <td><a href="bcgi/maps">MAPS-TL</a> <span class="subtle">(Infant/Toddler)</span>
     </td>
     <td>Irritability</td>
     <td><code>mh_cg_mapdb__inf</code> / <code>mh_cg_mapstl__tod</code></td>

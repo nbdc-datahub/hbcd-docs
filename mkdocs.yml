@@ -72,8 +72,9 @@ nav:
             - ERICA: instruments/bcgi/erica.md
             - FAD: instruments/bcgi/fad.md
             - IBQ-R & ECBQ: instruments/bcgi/ibqr.md
-            - MAPS-EASI: instruments/bcgi/maps-easi.md
-            - MAPS-TL: instruments/bcgi/maps-tl.md
+            - MAPS: instruments/bcgi/maps.md
+            # - MAPS-EASI: instruments/bcgi/maps-easi.md
+            # - MAPS-TL: instruments/bcgi/maps-tl.md
             - MCHAT: instruments/bcgi/mchat.md
 
         - Biospecimens & Omics:
