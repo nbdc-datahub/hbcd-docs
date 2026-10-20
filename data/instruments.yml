@@ -3005,7 +3005,7 @@ ecpromis_pags:
   construct: Physical Activity
 mchat:
   supp2_text: null
-  status: Ready for README update
+  status: README updated & ready for SME review
   alert1: null
   Date submitted: '2026-09-30'
   hbcd_mods1: |-
@@ -3027,7 +3027,7 @@ mchat:
 
     Attar SM, Bradstreet LE, Ramsey RK, Kelly K, Robins DL. Validation of the Electronic Modified Checklist for Autism in Toddlers, Revised with Follow-Up: A Nonrandomized Controlled Trial. J Pediatr. 2023 Feb 2;262:113343. doi: 10.1016/j.jpeds.2022.11.044. Epub 2023 Feb 2. PMID: 36736890; [PMCID: PMC10390646](https://doi.org/10.1016/j.jpeds.2022.11.044).
   respondent_category: Parent on Child
-  admin_notes: null
+  admin_notes: 'Luci 10/19 notes: made minor copy-edit updates, followed up via email to inquire about PDF attachments mentioned in changelog'
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
   email: nakshoomoff@health.ucsd.edu
   visits: V07
@@ -3054,7 +3054,7 @@ mchat:
   description: |-
     The M-CHAT-R/F (Robins et al., 2014) is a two-stage parent-report screening tool to assess the likelihood for autism. There are 20 questions. If a child fails an item, the caregiver is later interviewed and presented with additional questions for clarification.
 
-    The M-CHATR/F is available as a free download for clinical, research, and educational purposes. It is available in English and Spanish.
+    The [M-CHATR/F](https://www.mchatscreen.com/) is available as a free download for clinical, research, and educational purposes. It is available in English and Spanish.
 
     In the web-based, electronic version of the M-CHAT-R/F (Attar et al., 2023), the caregiver is instructed to follow instructions as presented onscreen. The initial responses and the follow-up responses for each question are included in the data release.
   supp3_text: null
@@ -3077,7 +3077,7 @@ mchat:
 
     The follow-up questions and scoring procedures for the web-based, electronic version of the M-CHAT-R/F were provided to HBCD by one of the test authors (Diana Robins, Ph.D.).
   changelog: Will provide PDF documents via email.
-  resources: null
+  resources: '- [Official M-CHAT](https://www.mchatscreen.com/): The Modified Checklist for Autism in Toddlers, Revised with Follow-Up'
   hbcd_mods1_title: Modifications Associated with Web-Based Administration
   supp1_text: null
   measure: Modified Checklist for Autism in Toddlers
