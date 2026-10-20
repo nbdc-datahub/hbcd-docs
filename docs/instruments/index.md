@@ -227,8 +227,8 @@ This page lists all instruments included in the current release, organized by do
   <tr>
     <td><a href="bcgi/mchat">MCHAT</a>
     </td>
-    <td>Irritability</td>
-    <td><code>mh_cg_mapdb__inf</code> / <code>mh_cg_mapstl__tod</code></td>
+    <td>Autism</td>
+    <td><code>mh_ch_mchat</code></td>
   </tr>
   </tbody>
   </table>
