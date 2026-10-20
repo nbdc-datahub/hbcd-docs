@@ -273,7 +273,7 @@ This page lists all instruments included in the current release, organized by do
 </table>
 
 ### <i class="fa-solid fa-file-waveform header-icon"></i> EEG
-The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Faces (FACE), Visual Evoked Potential (VEP), and Video Resting State (RS). File-based EEG data include raw BIDS and HBCD-MADE pipeline derivatives; see <a href="eeg/release-data/">Release Data</a> for details. Tabular EEG data includes tabulated pipeline derivatives, acquisition forms, and quality-control metrics:
+The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Faces (FACE), Visual Evoked Potential (VEP), and Video Resting State (RS). File-based EEG data include raw BIDS and HBCD-MADE pipeline derivatives; see <a href="eeg/">EEG Protocols & Release Data</a> for details. Tabular EEG data includes tabulated pipeline derivatives, acquisition forms, and quality-control metrics:
 <table class="compact-table-no-vertical-lines wide-name-col">
 <thead>
 <tr>
@@ -308,7 +308,7 @@ The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Face
 
 
 ### <i class="fa fa-brain header-icon"></i> Imaging
-Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [Release Data](mri/index.md#release-data) for details. Tabular Imaging includes tabulated pipeline derivatives, questionnaire/form data, and quality-control metrics:
+Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [MR Protocols & Release Data](mri/index.md) for details. Tabular Imaging includes tabulated pipeline derivatives, questionnaire/form data, and quality-control metrics:
 
 <div class="table-legend">
   <span class="legend-item">

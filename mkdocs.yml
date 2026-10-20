@@ -73,8 +73,6 @@ nav:
             - FAD: instruments/bcgi/fad.md
             - IBQ-R & ECBQ: instruments/bcgi/ibqr.md
             - MAPS: instruments/bcgi/maps.md
-            # - MAPS-EASI: instruments/bcgi/maps-easi.md
-            # - MAPS-TL: instruments/bcgi/maps-tl.md
             - MCHAT: instruments/bcgi/mchat.md
 
         - Biospecimens & Omics:
@@ -143,8 +141,7 @@ nav:
         
     - Brain Activity & Biosensors:
         - Electroencephalography:
-            - EEG Protocols: instruments/eeg/index.md
-            - Release Data: instruments/eeg/release-data.md
+            - EEG Protocols & Release Data: instruments/eeg/index.md
             - Quality Control Procedures: instruments/eeg/qc.md
             - Tasks:
                 - Auditory Mismatch Negativity: instruments/eeg/tasks/mmn.md

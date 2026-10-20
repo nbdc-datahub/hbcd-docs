@@ -1,7 +1,6 @@
-# MR Protocols
+# MR Protocols & Release Data
 
-## Overview
-
+## MR Protocols
 HBCD includes magnetic resonance imaging (**MRI**) and spectroscopy (**MRS**) data acquired as part of a comprehensive pediatric neuroimaging protocol, meticulously designed to overcome technical challenges of imaging early in life. All modalities are acquired during visits V02-V04, V06, V08, and V10-V14.
 
 HBCD Study MRI protocols and acquisition parameters are described in <a href="https://doi.org/10.1016/j.dcn.2024.101452">Dean et al. 2024</a>. See the external [HBCD Study MRI Protocols](https://hbcdsequences.readthedocs.io) documentation for full protocols, sequence installation, and operation instructions.       
