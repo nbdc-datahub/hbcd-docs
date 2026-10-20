@@ -2433,7 +2433,7 @@ urine:
   construct: Drug Panel, Toxins
 maps_easi:
   supp2_text: null
-  status: Ready for README update
+  status: README updated & ready for SME review
   alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
   Date submitted: '2026-10-13'
   hbcd_mods1: Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or were replaced with ‘my child’ or 'them' when eliminating pronouns was not grammatically possible. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.
@@ -2450,7 +2450,7 @@ maps_easi:
 
     Wakschlag, L. S., Zhang, Y., Heffernan, M. E., MacNeill, L. A., Peterson, E. O., Friedland, S., Sass, A. J., Smith, J. D., Davis, M. M., & Wiggins, J. L. (2024). How EASI can it be? Closing the research-to-practice gap via population-based validation of the MAPS-EASI 2.0 early childhood irritability screener for translation to clinical use. _Translational issues in psychological science_, _10_(4), 435–448. <https://doi.org/10.1037/tps0000428>
   respondent_category: Parent on Child
-  admin_notes: null
+  admin_notes: contacted SMEs about potentially combing MAPS-TL and MAPS-EASI pages 10/19
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps-easi/
   email: isabel.jordan@northwestern.edu
   visits: V07
@@ -3013,7 +3013,7 @@ mchat:
 
     This modification means that some participants received follow-up questions that they would not have in the validated paper-administered version (i.e., screener scores of 0-2).
   resource2_url: M-CHAT-R Spanish
-  duration: Remote Questionnaire (Parent on Child; 5-10 minutes)
+  duration: 5-10 min
   hbcd_mods2: null
   warning1_title: V07 and V07a administration
   full_name: Modified Checklist for Autism in Toddlers R/F
@@ -3023,9 +3023,9 @@ mchat:
   table_name: mh_ch_mchat
   warning2: null
   references: |-
-    Robins, D.L., Casagrande, K., Barton, M.L., Chen, C., Dumont-Mathieu, T., & Fein, D. (2014). Validation of the Modified Checklist for Autism in Toddlers-Revised with Follow-Up (M- CHAT-R/F). _Pediatrics_, 133 (1), 37-45. PMID:24366990. PMCID: PMC3876182.
+    Robins, D.L., Casagrande, K., Barton, M.L., Chen, C., Dumont-Mathieu, T., & Fein, D. (2014). Validation of the Modified Checklist for Autism in Toddlers-Revised with Follow-Up (M- CHAT-R/F). _Pediatrics_, 133 (1), 37-45. PMID:24366990. [PMCID: PMC3876182](https://doi.org/10.1542/peds.2013-1813).
 
-    Attar SM, Bradstreet LE, Ramsey RK, Kelly K, Robins DL. Validation of the Electronic Modified Checklist for Autism in Toddlers, Revised with Follow-Up: A Nonrandomized Controlled Trial. J Pediatr. 2023 Feb 2;262:113343. doi: 10.1016/j.jpeds.2022.11.044. Epub 2023 Feb 2. PMID: 36736890; PMCID: PMC10390646.
+    Attar SM, Bradstreet LE, Ramsey RK, Kelly K, Robins DL. Validation of the Electronic Modified Checklist for Autism in Toddlers, Revised with Follow-Up: A Nonrandomized Controlled Trial. J Pediatr. 2023 Feb 2;262:113343. doi: 10.1016/j.jpeds.2022.11.044. Epub 2023 Feb 2. PMID: 36736890; [PMCID: PMC10390646](https://doi.org/10.1016/j.jpeds.2022.11.044).
   respondent_category: Parent on Child
   admin_notes: null
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
@@ -3055,6 +3055,8 @@ mchat:
     The M-CHAT-R/F (Robins et al., 2014) is a two-stage parent-report screening tool to assess the likelihood for autism. There are 20 questions. If a child fails an item, the caregiver is later interviewed and presented with additional questions for clarification.
 
     The M-CHATR/F is available as a free download for clinical, research, and educational purposes. It is available in English and Spanish.
+
+    In the web-based, electronic version of the M-CHAT-R/F (Attar et al., 2023), the caregiver is instructed to follow instructions as presented onscreen. The initial responses and the follow-up responses for each question are included in the data release.
   supp3_text: null
   domain: Behavior & Caregiver-Child Interactions
   release: 3.0 (new instrument/info required)
@@ -3071,15 +3073,9 @@ mchat:
   scoring: |-
     Scoring procedures are included for each question to determine if the responses to the additional questions result in a pass or a fail and whether follow-up interview will be administered.
 
-    For all items except 2, 5, and 12, the response “NO” indicates elevated likelihood of autism; for items 2, 5, and 12, “YES” indicates elevated likelihood of autism.
+    For all items except 2, 5, and 12, the response “NO” indicates elevated likelihood of autism; for items 2, 5, and 12, “YES” indicates elevated likelihood of autism. The total of these responses is used to determine if the results are associated with the criterion for High Risk (follow-up score of 2 or higher) or Low Risk (score of 0 or 1).
 
-    The total of these responses is used to determine if the results are associated with the criterion for High Risk (follow-up score of 2 or higher) or Low Risk (score of 0 or 1).
-
-    The follow-up questions and scoring procedures for the web-based, electronic version of the M-CHAT-R/F were provided to HBCD by one of the test authors (Diana Robins, Ph.D.)
-
-    In the web-based, electronic version of the M-CHAT-R/F (Attar et al., 2023), the caregiver is instructed to follow instructions as presented onscreen.
-
-    The initial responses and the follow-up responses for each question are included in the data release.
+    The follow-up questions and scoring procedures for the web-based, electronic version of the M-CHAT-R/F were provided to HBCD by one of the test authors (Diana Robins, Ph.D.).
   changelog: Will provide PDF documents via email.
   resources: null
   hbcd_mods1_title: Modifications Associated with Web-Based Administration
@@ -4192,7 +4188,7 @@ vs100:
   measure: VS100 Spot Vision Screener
   construct: Vision
 maps:
-  status: Complete / Stable
+  status: README updated & ready for SME review
   alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
   hbcd_mods1: Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or were replaced with ‘my child’ or 'them' when eliminating pronouns was not grammatically possible. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.
   duration: 5 min MAPS-TL/2 min MAPS-EASI
@@ -4216,7 +4212,10 @@ maps:
 
     Wakschlag, L. S., Zhang, Y., Heffernan, M. E., MacNeill, L. A., Peterson, E. O., Friedland, S., Sass, A. J., Smith, J. D., Davis, M. M., & Wiggins, J. L. (2024). How EASI can it be? Closing the research-to-practice gap via population-based validation of the MAPS-EASI 2.0 early childhood irritability screener for translation to clinical use. _Translational issues in psychological science_, _10_(4), 435–448. <https://doi.org/10.1037/tps0000428>
   respondent_category: Parent on Child
-  admin_notes: combined MAPS-TL and MAPS-EASI
+  admin_notes: |-
+    Luci note 10/19: combined MAPS-TL and MAPS-EASI - check with SMEs to see if they approve or not!
+
+    Isabel Rendon Jordan <isabel.jordan@northwestern.edu>
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps
   visits: |-
     MAPS-TL (Infancy): V03
@@ -4258,5 +4257,5 @@ maps:
     The 2 MAPS-EASI Impact Rating items (items `004`_ & _`005`) are answered on a scale of 0-3. Possible responses include: _0 = No problems, 1 = Minimal problems, 2 = A lot of problems, 3 = Severe problems, Prefer not to answer._
 
     A sum score is calculated for all Irritability Scale items (`001`_ - _`003`). If any of the 3 Irritability Scale items are left unanswered (NA/Decline to answer/etc.), the sum score will be set to NA/missing (strict missingness rule).
-  measure: MAPS-TL & MAPS-EASI
+  measure: MAPS
   construct: Irritability
