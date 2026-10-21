@@ -3843,7 +3843,7 @@ eeg:
     label: View
     url: https://docs.hbcdstudy.org/3.0-readmes/instruments/eeg/
   alert4: null
-  warning3: "Between visits V03 and V04/V06, the follow task protocols were changed:\n- Auditory Mismatch Negativity (MMN) task interstimulus interval (ISI).\n- Resting State (RS) task video content. Also note that RS is not a true resting state as there is a visual stimulus present. \nSee [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and [Morr et al. 2002](https://doi.org/10.1097/00003446-200204000-00005) for details."
+  warning3: "Between visits V03 and V04/V06, the follow task protocols were changed:\n\n- Auditory Mismatch Negativity (MMN) task interstimulus interval (ISI).\n- Resting State (RS) task video content. Also note that RS is not a true resting state as there is a visual stimulus present. \n\nSee [Fox et al. 2024](https://doi.org/10.1016/j.dcn.2024.101447) and [Morr et al. 2002](https://doi.org/10.1097/00003446-200204000-00005) for details."
   alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rectTp1YpywMK7Joe
   warning1: |-
