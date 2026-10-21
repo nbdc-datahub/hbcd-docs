@@ -6,16 +6,10 @@
 }
 </style>
 
-# StimTracker Artifact- detailed
-
-## Effects of Artifact on ERP Derivatives by Task
-
+# Artifact Effects on ERPs by Task
 To assess the artifact’s impact on EEG derivatives, ERPs were computed for each task and ROI. Because there were many more artifact-free files, 100 artifact-present and 100 artifact-free files per task were randomly selected for comparison to balance the groups. Waveforms for each ERP are shown below, and differences by task and ROI are summarized in accompanying tables.
 
-See: [VEP](#vep), [MMN](#mmn), and [Faces](#face-task-by-roi). 
-
 ## VEP
-
 <img src="../images/vep-erp-oz.jpeg" width="40%" height="auto" class="center">
 
 <table class="compact-table-no-vertical-lines">
