@@ -479,7 +479,7 @@ This page lists all instruments included in the current release, organized by do
 
 ###### <i class="fa-solid fa-file-waveform header-icon"></i> EEG / Tabular EEG
 <p></p>
-The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Faces (FACE), Visual Evoked Potential (VEP), and Video Resting State (RS). File-based EEG data include raw BIDS and HBCD-MADE pipeline derivatives; see <a href="eeg/release-data/">Release Data</a> for details. Tabular EEG data includes tabulated pipeline derivatives, acquisition forms, and quality-control metrics:
+The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Faces (FACE), Visual Evoked Potential (VEP), and Video Resting State (RS). File-based EEG data include raw BIDS and HBCD-MADE pipeline derivatives; see <a href="eeg/">EEG Protocols & Release Data</a> for details. Tabular EEG data includes tabulated pipeline derivatives, acquisition forms, and quality-control metrics:
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>

@@ -134,8 +134,7 @@ nav:
             - Vancouver Index: instruments/SED/vi.md
     - Brain Activity & Biosensors:
         - Electroencephalography:
-            - EEG Protocols: instruments/eeg/index.md
-            - Release Data: instruments/eeg/release-data.md
+            - EEG Protocols & Release Data: instruments/eeg/index.md
             - Quality Control Procedures: instruments/eeg/qc.md
             - Tasks:
                 - Auditory Mismatch Negativity: instruments/eeg/tasks/mmn.md
