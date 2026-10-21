@@ -1,10 +1,5 @@
 # Processing & Derivative Data Standards
 
-<img src="../images/nmind.png" alt="NMIND" width="70%" height="auto" class="center">
-
-**All community pipelines used for HBCD data processing must follow HBCD Processing and Derivative Data Standards**, including the completion of NMIND Checklists to adhere to NMIND standards for reproducible neuroimaging and HBCD-specific requirements.
-
-
 ## HBCD Processing Pipelines
 
 The HBCD processing pipelines are a collection of modular tools used to process HBCD Study data, including magnetic resonance imaging/spectroscopy (MRI/MRS), electroencephalography (EEG), and biosensor data. Pipeline outputs are provided within the data release as file-based derivatives. The table below includes links to the <a href="https://www.nmind.org/proceedings/">NMIND Evaluated Tools</a> page for each pipeline.
@@ -72,7 +67,9 @@ The HBCD processing pipelines are a collection of modular tools used to process 
 </tr>
 <tr>
   <td><a href="https://nibabies.readthedocs.io/en/latest/">Infant-fMRIPrep</a></td>
-  <td><a href="../../instruments/mri/fmri/#infant-fmriprep" aria-label="View HBCD file documentation for Infant-fMRIPrep" title="View HBCD file documentation"><code>nibabies/</code></a></td>
+  <td><a href="../../instruments/mri/fmri/#infant-fmriprep" aria-label="View HBCD file documentation for Infant-fMRIPrep" title="View HBCD file documentation"><code>nibabies-d902942d/</code></a>
+    <br>
+    <code>nibabies-d902942d/</code></td>
     <td>Preprocesses structural and functional MRI data</td>
   <td><a href="https://www.nmind.org/proceedings/nibabies/" aria-label="View Infant-fMRIPrep NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
 </tr>
@@ -176,13 +173,17 @@ The HBCD processing pipelines are a collection of modular tools used to process 
 
 ## NMIND Checklists
 
+<img src="../images/nmind.png" alt="NMIND" width="70%" height="auto" class="center">
+
 <div class="banner">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
   <span class="text">See NMIND checklist ratings under <a href="https://www.nmind.org/proceedings/">Evaluated Tools</a> (specific links provided in <a href="../#hbcd-pipelines">pipeline table</a>).</span>
 </div>
 <p></p>
 
-The [NMIND](https://www.nmind.org/about) consortium is dedicated to the advancement of community standards and utilities in support of reproducible neuroimaging research ([Kiar et al. 2023](https://www.nature.com/articles/s41562-023-01647-0)). For HBCD, peer review of software is performed via submission of the [NMIND Coding Standards Checklist](https://www.nmind.org/standards-checklist/). Software is reviewed against community-driven scientific software standards across three main categories: documentation, infrastructure, and testability. Reviewed tools are assigned badge ratings and published to [Evaluated Tools](https://www.nmind.org/proceedings/). **At a minimum, HBCD pipelines must meet Bronze-level standards.** Pipelines are additionally published with DOIs to support reproducibility.  
+The [NMIND](https://www.nmind.org/about) consortium is dedicated to the advancement of community standards and utilities in support of reproducible neuroimaging research ([Kiar et al. 2023](https://www.nature.com/articles/s41562-023-01647-0)). **All community pipelines used for HBCD data processing must follow HBCD Processing and Derivative Data Standards**, including the completion of NMIND Checklists to adhere to NMIND standards for reproducible neuroimaging and HBCD-specific requirements. 
+
+Peer review of software is performed via submission of the [NMIND Coding Standards Checklist](https://www.nmind.org/standards-checklist/). Software is reviewed against community-driven scientific software standards across three main categories: documentation, infrastructure, and testability. Reviewed tools are assigned badge ratings and published to [Evaluated Tools](https://www.nmind.org/proceedings/). **At a minimum, HBCD pipelines must meet Bronze-level standards.** Pipelines are additionally published with DOIs to support reproducibility.  
 
 After submitting the NMIND Checklist, an issue is automatically generated in the [NMIND Proceedings GitHub repository](https://github.com/nmind/proceedings/issues), where the NMIND team triages to initiate third-party review. Feel free to review and comment on the issue created there for updates.
 

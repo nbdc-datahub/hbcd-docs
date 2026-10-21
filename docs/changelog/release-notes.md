@@ -138,7 +138,6 @@ The **Demographics** domain has been replaced with the domain **Participant Deri
 - **Static Participant Information**: information that remains constant across visits, such as sex assigned at birth and race/ethnicity
 - **Dynamic Participant Information**: information that may change over time and is therefore represented longitudinally
 
-
 ### 3.0 New Measures
 
 Release data now include the addition of the following measures, expanded data types, versions, and/or visits:
@@ -207,6 +206,44 @@ Release data now include the addition of the following measures, expanded data t
 </tr>
 <tr><td>Addition of Geocoded Linkage (GLED) from Home and Work Addresses</td></tr>
 
+</tbody>
+</table>
+
+### 3.0 Updated Image Processing
+
+In addition to the inclusion of more participant data, all structural and functional MRI has been reprocessed through updated versions of Infant fMRIPrep and XCP-D pipelines. As such, the hash IDs included in the derivative folder and file names as well as tabulated derivative files have been updated. The updated hash IDs are as follows: 
+
+<table class="table-no-vertical-lines">
+<thead>
+<tr>
+<th>Pipeline</th>
+<th>2.0 Hash ID</th>
+<th>New 3.0 Hash ID</th>
+<th>Surface reconstruction</th>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Infant fMRIPrep</td>
+<td><code>0f306a2f</code></td>
+<td><code>d902942d</code></td>
+<td>M-CRIB-S</td>
+</tr>
+<tr>
+<td><code>2afa9081</code></td>
+<td><code>364caa63</code></td>
+<td>Infant FreeSurfer</td>
+</tr>
+<tr>
+<td rowspan="2">XCP-D</td>
+<td><code>0f306a2f+0ef9c88a</code></td>
+<td><code>d902942d+7a4c379b</code></td>
+<td>M-CRIB-S</td>
+</tr>
+<tr>
+<td><code>2afa9081+0ef9c88a</code></td>
+<td><code>364caa63+7a4c379b</code></td>
+<td>Infant FreeSurfer</td>
+</tr>
 </tbody>
 </table>
 
@@ -556,7 +593,7 @@ Corrected scoring for participants missing all item responses, which had previou
 
 ##### Instruments
 - Participant & RA Feedback — `adm_cg_fb` / `adm_ra_fb`
-- Urgent Events & Participant Alerts — `adm_fd_urgent` / `admin_alert`
+- Urgent Events & Participant Alerts  — `adm_fd_urgent` / `admin_alert`
 
 ##### Variables
 - Informant (`informant`), Validity (`validity`), Duration (`duration`), and Window Difference (`window_difference`)

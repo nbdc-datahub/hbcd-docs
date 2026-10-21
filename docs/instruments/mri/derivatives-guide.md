@@ -11,16 +11,13 @@ HBCD structural and functional MRI data are processed through a sequence of BIDS
 </style>
 <div style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; font-size: 0.95em;"> <div style="text-align: center;"> <a href="https://bibsnet.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #a9bffcff; border-radius: 12px; background-color: #dde6fe; color: #222;"> <strong>BIBSNet</strong><br> <small>Brain segmentations & masks</small> </div> </a> </div> <span style="font-size: 20px;"><i class="fa-solid fa-arrow-right"></i></span> <div style="text-align: center;"> <a href="https://nibabies.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #a89df9ff; border-radius: 12px; background-color: #dcd8fb; color: #222;"> <strong>Infant-fMRIPrep</strong><br> <strong>(Includes M-CRIB-S/Infant FreeSurfer)</strong><br><small>Surface reconstruction, preprocessing & confounds</small> </div> </a> </div> <span style="font-size: 20px;"><i class="fa-solid fa-arrow-right"></i></span> <div style="text-align: center;"> <a href="https://xcp-d.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #d794fcff; border-radius: 12px; background-color: #f0dcfb; color: #222;"> <strong>XCP-D</strong><br> <small>Post-processing & denoising</small> </div> </a> </div> </div>
 
-
 ## Hashes
 
-Infant fMRIPrep and XCP-D derivative folder/filenames include unique hash IDs to indicate distinct processing parameters used for a given pipeline. In the case of HBCD data, the hash IDs correspond to which surface reconstruction method was used for processing within Infant fMRIPrep.
+Infant fMRIPrep and XCP-D derivative folder/filenames include unique hash IDs to indicate distinct processing parameters used for a given pipeline. In the case of HBCD data, the hash IDs correspond to which surface reconstruction method was used for processing within Infant fMRIPrep: M-CRIB-S (`d902942d`) or Infant FreeSurfer (`364caa63`).
 
 Downstream XCP-D derivatives include a second hash ID (`7a4c379b`) indicating the XCP-D processing configuration. This value is identical for all HBCD data because the XCP-D parameters were fixed. Below we summarize the processing workflows and resulting derivative folder names. 
-<p align="center">
-  <img src="../images/proc-hashes.png" alt="Detailed MRI Processing Workflow">
-</p>
-
+<!-- source diagram: https://canva.link/pndtkg25cdfer95 -->
+<img src="../images/proc-hashes.svg" alt="Detailed MRI Processing Workflow">
 
 ## Derivatives Highlight
 
