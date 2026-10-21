@@ -67,10 +67,12 @@ The HBCD processing pipelines are a collection of modular tools used to process 
 </tr>
 <tr>
   <td><a href="https://nibabies.readthedocs.io/en/latest/">Infant-fMRIPrep</a></td>
-  <td><a href="../../instruments/mri/fmri/#infant-fmriprep" aria-label="View HBCD file documentation for Infant-fMRIPrep" title="View HBCD file documentation"><code>nibabies-d902942d/</code></a>
+  <td>
+    <code>nibabies-d902942d/</code>
     <br>
-    <code>nibabies-d902942d/</code></td>
-    <td>Preprocesses structural and functional MRI data</td>
+    <code>nibabies-d902942d/</code>
+  </td>
+    <td>Preprocesses structural and functional MRI data <a href="../../instruments/mri/fmri/#infant-fmriprep"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
   <td><a href="https://www.nmind.org/proceedings/nibabies/" aria-label="View Infant-fMRIPrep NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
 </tr>
 <tr>
