@@ -63,7 +63,7 @@ nav:
     - Tabulated Data: datacuration/phenotypes.md
     - File-Based Data: datacuration/file-based-data.md
   - Study Instruments:
-    - List of Instruments: instruments/index.md
+    - Search All: instruments/index.md
     - Age Variables: instruments/agevariables.md
     - Behavior, Biology, & Environment:
         - Administrative:
@@ -135,7 +135,7 @@ nav:
     - Brain Activity & Biosensors:
         - Electroencephalography:
             - EEG Protocols & Release Data: instruments/eeg/index.md
-            - Quality Control Procedures: instruments/eeg/qc.md
+            - Quality Control: instruments/eeg/qc.md
             - Tasks:
                 - Auditory Mismatch Negativity: instruments/eeg/tasks/mmn.md
                 - Faces: instruments/eeg/tasks/faces.md
@@ -144,7 +144,7 @@ nav:
         - Magnetic Resonance Imaging:
             - MR Protocols: instruments/mri/index.md
             - Release Data: instruments/mri/release-data.md
-            - Quality Control Procedures: instruments/mri/qc.md
+            - Quality Control: instruments/mri/qc.md
             - Pre-Scan Questionnaire & Forms: instruments/mri/mri-forms.md
             - Structural & Functional MRI:
                 - Structural MRI: instruments/mri/smri.md

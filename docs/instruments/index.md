@@ -1,61 +1,163 @@
 <style>
-.wy-nav-content {
-    width: 90% !important;
-    max-width: 90% !important;
-    flex-grow: 1 !important;
-}
 .blue-text {
   color: #2563eb;
 }
+
+.compact-table-no-vertical-lines {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+/* Consistent column widths across every section */
+.compact-table-no-vertical-lines th:nth-child(1),
+.compact-table-no-vertical-lines td:nth-child(1) {
+  width: 30%;
+}
+.compact-table-no-vertical-lines th:nth-child(2),
+.compact-table-no-vertical-lines td:nth-child(2) {
+  width: 35%;
+}
+.compact-table-no-vertical-lines th:nth-child(3),
+.compact-table-no-vertical-lines td:nth-child(3) {
+  width: 35%;
+}
+
+/* Wider Table Name column for sections with long/multiple codes (EEG, Imaging) */
+.compact-table-no-vertical-lines.wide-name-col th:nth-child(1),
+.compact-table-no-vertical-lines.wide-name-col td:nth-child(1) {
+  width: 22%;
+}
+.compact-table-no-vertical-lines.wide-name-col th:nth-child(2),
+.compact-table-no-vertical-lines.wide-name-col td:nth-child(2) {
+  width: 23%;
+}
+.compact-table-no-vertical-lines.wide-name-col th:nth-child(3),
+.compact-table-no-vertical-lines.wide-name-col td:nth-child(3) {
+  width: 55%;
+}
+
+/* INSTRUMENTS FILTER */
+.archive-controls {
+  margin: 1.5rem 0 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.archive-controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.archive-search {
+  flex: 1 1 280px;
+  min-width: 220px;
+}
+
+.archive-controls input,
+.archive-controls select,
+.archive-controls button {
+  box-sizing: border-box;
+  height: 38px;
+  border: 1px solid #cfd4da;
+  border-radius: 5px;
+  background: white;
+  padding: 0 0.75rem;
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.archive-controls input:focus,
+.archive-controls select:focus,
+.archive-controls button:focus {
+  outline: 2px solid rgba(25, 155, 214, 0.25);
+  border-color: #199bd6;
+}
+
+.archive-controls button {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.archive-controls button:hover {
+  background: #f1f3f5;
+}
+
+.archive-status {
+  margin-top: 0.65rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.archive-empty {
+  display: none;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+  .archive-controls-row {
+    align-items: stretch;
+  }
+
+  .archive-controls input,
+  .archive-controls select,
+  .archive-controls button {
+    width: 100%;
+  }
+
+  .archive-search {
+    flex-basis: 100%;
+  }
+}
 </style>
 
-# Study Instruments
+# Study Measures
 
 This page lists all instruments included in the current release, organized by domain. Each instrument links to a separate README page containing instrument documentation, including, where applicable, details of implementation and data collection, quality control procedures, data and responsible use warnings, scoring procedures, and references. Study protocols are also available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). 
 
----
-
-## Behavior, Biology, & Environment
-
-<div class="infobox">
-  <strong>The following domains provide most of the tabulated data and ALL concatenated data included in the release.</strong>
-  <p>For the small number of concatenated datasets, the folder name is provided in the summary tables below in place of table names. 
-    See <a href="../datacuration/overview/">Data Structure Overview</a> for an overview of release data types.</p>
+<div class="archive-controls" aria-label="Instrument filters">
+  <div class="archive-controls-row">
+    <input
+      id="instr-search"
+      class="archive-search"
+      type="search"
+      placeholder="Search instrument, construct, or table name..."
+      aria-label="Search instruments"
+    >
+    <select id="instr-domain" aria-label="Filter by domain">
+      <option value="">All domains</option>
+    </select>
+    <button id="instr-reset" type="button">Clear filters</button>
+  </div>
+  <div id="instr-status" class="archive-status" aria-live="polite"></div>
 </div>
+<div id="instr-empty" class="archive-empty">No matching instruments found.</div>
 
-
-###### <i class="fa fa-clipboard-list header-icon"></i> Administrative &nbsp;/ &nbsp; <i class="fas fa-id-card header-icon"></i> Demographics
-
-<table class="compact-table-no-vertical-lines" style="width: 100%;">
+### <i class="fa fa-clipboard-list header-icon"></i> Administrative
+<table class="compact-table-no-vertical-lines">
 <thead>
-<th>Domain</th>
+<tr>
 <th>Instrument</th>
 <th>Construct</th>
 <th>Table / Folder Name</th>
+</tr>
 </thead>
 <tbody>
 <tr>
-<td style="color: #6b7280;"><b>ADMINISTRATIVE</b></td>
 <td><a href="admin/study-navigators">Study Navigator Contact Form</a></td>
 <td>Recruitment/Retention</td>
 <td><i>concatenated/study_navigator/</i></td>
 </tr>
-<tr>
-  <td style="color: #6b7280;" rowspan="2"><b>DEMOGRAPHICS</b></td>
-  <td><a href="demo/basicdemo/">Basic Demographics</a></td>
-  <td>Derived Demographics</td>
-  <td><code>sed_basic_demographics</code></td>
-</tr>
-  <tr>
-  <td><a href="demo/visitinfo/">Visit Level Data</a></td>
-  <td>Participant visit information</td>
-  <td><code>par_visit_data</code></td>
-</tr>
 </tbody>
 </table>
 
-
-###### <i class="fa fa-people-arrows header-icon"></i> Behavior & Caregiver-Child Interaction
+### <i class="fa fa-people-arrows header-icon"></i> Behavior & Caregiver-Child Interaction
 <table class="compact-table-no-vertical-lines">
 <thead>
   <tr>
@@ -72,11 +174,10 @@ This page lists all instruments included in the current release, organized by do
   </tr>
   <tr>
     <td>
-      <a href="bcgi/ecpromis">ecPROMIS Caregiver-Child</a> 
+      <a href="bcgi/ecpromis">ecPROMIS Caregiver-Child</a> <span class="subtle">(&lt;1/1-5 yrs)</span>
       </td>
     <td>Caregiver-Child Interactions</td>
-    <td><code>mh_cg_pms__cc__inf</code> <span class="subtle">(&lt;1 year)</span> /
-    <code>mh_cg_pms__cc__1to5</code> <span class="subtle">(1-5 years)</span></td>
+    <td><code>mh_cg_pms__cc__inf</code> / <code>mh_cg_pms__cc__1to5</code> </td>
   </tr>
   <tr>
     <td><a href="bcgi/ecpromis-pr">ecPROMIS Peer</a></td>
@@ -101,9 +202,9 @@ This page lists all instruments included in the current release, organized by do
   <tr>
     <td><a href="bcgi/ibqr">IBQ-R (VSF)+BI</a></td>
     <td rowspan="2">
-      Surgency/Extraversion,<br>
-      Negative Affectivity,<br>
-      Effortful Control,<br>
+      Surgency/Extraversion,
+      Negative Affectivity,
+      Effortful Control,
       Behavioral Inhibition
       </td>
     <td><code>mh_cg_ibqr</code></td>
@@ -113,24 +214,23 @@ This page lists all instruments included in the current release, organized by do
     <td><code>mh_cg_ecbq</code></td>
   </tr>
   <tr>
-    <td><a href="bcgi/maps-tl">MAPS-TL</a>
+    <td><a href="bcgi/maps">MAPS-TL</a> <span class="subtle">(Infant/Toddler)</span>
     </td>
     <td>Irritability</td>
-    <td>
-    <code>mh_cg_mapdb__inf</code> <span class="subtle">(Infant)</span> /
-    <code>mh_cg_mapstl__tod</code> <span class="subtle">(Toddler)</span>
-    </td>
+    <td><code>mh_cg_mapdb__inf</code> / <code>mh_cg_mapstl__tod</code></td>
   </tr>
   </tbody>
   </table>
 
 
-###### <i class="fa fa-vial header-icon"></i> Biospecimen & Omics
+### <i class="fa fa-vial header-icon"></i> Biospecimen & Omics
 <table class="compact-table-no-vertical-lines">
 <thead>
+<tr>
 <th>Instrument</th>
 <th>Construct</th>
 <th>Table / Folder Name</th>
+</tr>
 </thead>
 <tbody>
 <tr>
@@ -139,24 +239,161 @@ This page lists all instruments included in the current release, organized by do
     <td><i>concatenated/genetics/</i></td>
 </tr>
 <tr>
-    <td><a href="biospec/nails">Maternal Nails</a></td>
-    <td>Drug, Environmental Exposure</td>
-    <td><code>bio_bm_biosample_nails_results</code> / <code>bio_bm_biosample_nails_type</code></td>
-</tr>
-<tr>
-    <td><a href="biospec/urine">Maternal Urine</a></td>
-    <td>Drug Panel, Toxins</td>
-    <td><code>bio_bm_biosample_urine_results</code></td>
-</tr>
-<tr>
     <td><a href="biospec/olink">Olink Explore</a></td>
     <td>Maternal Inflammation</td>
     <td><i>concatenated/proteins/</i></td>
 </tr>
+<tr>
+    <td><a href="biospec/nails">USDTL Nails Toxicology</a></td>
+    <td>Drug, Environmental Exposure</td>
+    <td><code>bio_bm_biosample_nails_<span class="blue-text">{results|type}</span></code></td>
+</tr>
+<tr>
+    <td><a href="biospec/urine">USDTL Urine Toxicology</a></td>
+    <td>Drug Panel, Toxins</td>
+    <td><code>bio_bm_biosample_urine_results</code></td>
+</tr>
 </tbody>
 </table>
 
-###### <i class="fa-solid fa-puzzle-piece header-icon"></i> Neurocognition & Language
+### <i class="fas fa-id-card header-icon"></i> Demographics
+
+<table class="compact-table-no-vertical-lines wide-name-col">
+<thead>
+<th>Instrument</th>
+<th>Construct</th>
+<th>Table Name</th>
+</thead>
+<tbody>
+<tr>
+  <td><a href="demo/basicdemo/">Basic Demographics</a></td>
+  <td>Derived Demographics</td>
+  <td><code>sed_basic_demographics</code></td>
+</tr>
+  <tr>
+  <td><a href="demo/visitinfo/">Visit Level Data</a></td>
+  <td>Participant visit information</td>
+  <td><code>par_visit_data</code></td>
+</tr>
+</tbody>
+</table>
+
+
+### <i class="fa-solid fa-file-waveform header-icon"></i> EEG
+The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Faces (FACE), Visual Evoked Potential (VEP), and Video Resting State (RS). File-based EEG data include raw BIDS and HBCD-MADE pipeline derivatives; see <a href="eeg/">EEG Protocols & Release Data</a> for details. Tabular EEG data includes tabulated pipeline derivatives, acquisition forms, and quality-control metrics:
+<table class="compact-table-no-vertical-lines wide-name-col">
+<thead>
+<tr>
+<th>Table</th>
+<th>Construct</th>
+<th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2">HBCD-MADE tabulated derivatives</td>
+  <td>Processing Reports</td>
+  <td><code>eeg_made_task-<span class="blue-text">{FACE|MMN|RS|VEP}</span>_acq-eeg_preprocessingReport</code></td>
+</tr>
+<tr>
+  <td>Summary Statistics</td>
+  <td><code>eeg_made_task-<span class="blue-text">{FACE|MMN|VEP}</span>FACE_ERPSummaryStats</code></td>
+</tr>
+<tr>
+  <td>EEG Acquisition Checklists</td>
+  <td>Acquisition Prep</td>
+  <td><code>eeg_ch_<span class="blue-text">{chkl|chkl_1|chkl_2}</span></code></td>
+</tr>
+<tr>
+  <td><a href="eeg/qc">Quality Control Metrics</a></td>
+  <td>Quality Control</td>
+  <td><code>eeg_qc_task-<span class="blue-text">{FACE|MMN|RS|VEP}</span></code>
+  </td>
+</tr>
+</tbody>
+</table>
+
+
+### <i class="fa fa-brain header-icon"></i> Imaging
+Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [MR Protocols & Release Data](mri/index.md) for details. Tabular Imaging includes tabulated pipeline derivatives, questionnaire/form data, and quality-control metrics:
+
+<div class="table-legend">
+  <span class="legend-item">
+    <i class="fa-solid fa-diagram-project legend-icon"></i>
+    Tabulated pipeline derivatives
+  </span>
+</div>
+
+<table class="compact-table-no-vertical-lines wide-name-col"> 
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Construct</th>
+  <th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="mri/smri/#bibsnet">BIBSNet</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td>Brain ROI Volumes</td>
+  <td><code>img_bibsnet_space-<span class="blue-text">{T1w|T2w}</span>_desc-aseg_volumes</code></td>
+</tr>
+<tr>
+  <td><a href="mri/qc/#brainswipes">BrainSwipes</a></td>
+  <td>Manual QC</td>
+  <td><code>img_brainswipes_xcpd_hash-<span class="blue-text">{HASH}</span>_<span class="blue-text">{T1w/T2w|bold}</span></code><br>
+    <!-- <code>img_brainswipes_xcpd_hash-d902942d+7a4c379b_<span class="blue-text">{T2w|bold}</span></code><br>
+    <code>img_brainswipes_xcpd_hash-364caa63+7a4c379b_<span class="blue-text">{T1w|bold}</span></code> -->
+  </td>
+</tr>
+<tr>
+  <td><a href="mri/smri/#mriqc">MRIQC</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td>Raw BIDS QC Metrics</td>
+  <td><code>img_mriqc_<span class="blue-text">{T1w|T2w|bold}</span></code></td>
+</tr>
+<tr>
+  <td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms">MRI Summary Forms</a></td>
+  <td>Pre/Post-Scan Checklists</td>
+  <td><code>mri_ra_chkl_scan</code> / <code>mri_ra_chkl_data</code></td>
+</tr>
+<tr>
+  <td><a href="mri/mrs/#derivatives">OSPREY-BIDS</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td>Metabolites</td>
+  <td>
+    <code>img_osprey_<span class="blue-text">{HERCULES|unedited}</span>_*</code>
+    <a href="mri/tables/osprey.html">→ View full file list</a>
+  </td>
+</tr>
+<tr>
+  <td><a href="mri/mri-forms/#pre-scan-questionnaire">Pre-Scan Questionnaire</a></td>
+  <td>Infant Sleep Environment</td>
+  <td><code>mri_ra_prep</code></td>
+</tr>
+<tr>
+  <td><a href="mri/dmri/#qsiprep">QSIPrep</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td>QSIPrep QC Metrics</td>
+  <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td> 
+</tr>
+<tr> 
+  <td><a href="mri/fmri/#xcp-d">XCP-D</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td>Morph/fMRI metrics</td>
+  <td>
+    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-*</code> <a href="mri/tables/xcpd.html">→ View full file list</a>
+  </td>
+</tr>
+</tbody>
+</table>
+
+### <i class="fa-solid fa-puzzle-piece header-icon"></i> Neurocognition & Language
+
+<div class="table-legend">
+  <span class="legend-item">
+    <i class="fa-solid fa-language legend-icon"></i>
+    Spanish version available
+  </span>
+</div>
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -168,16 +405,13 @@ This page lists all instruments included in the current release, organized by do
 <tbody>
 <tr>
   <td><a href="neurocog/bayley-4">Bayley-4 Scales</a></td>
-  <td>Child Development (Cognitive, Language, and Motor)</td>
+  <td>Child Development (Cognitive, Language, Motor)</td>
   <td><code>ncl_ch_bayley</code></td>
 </tr>
 <tr>
-  <td><a href="neurocog/macarthur-bates">MacArthur-Bates CDI-I</a>
-</td>
-  <td>Language Development (Words & Gestures)</td>
-  <td><code>ncl_ch_cdiwgen</code> <span class="subtle">(English)</span> /
-  <code>ncl_ch_cdiwges</code> <span class="subtle">(Spanish)</span>  
-  </td>
+  <td><a href="neurocog/mbcdi">CDI Words & Gestures</a><i class="fa-solid fa-language table-icon"></i></td>
+  <td>Language Development</td>
+  <td><code>ncl_ch_cdiwgen</code> / <code>ncl_ch_cdiwges</code></td>
 </tr>
 <tr>
   <td><a href="neurocog/mlds">MLDS</a></td>
@@ -185,10 +419,10 @@ This page lists all instruments included in the current release, organized by do
   <td><code>ncl_ch_mlds</code></td>
 </tr>
 <tr>
-  <td><a href="neurocog/spm2">SPM-2</a>
+  <td><a href="neurocog/spm2">SPM-2</a> <span class="subtle">(Infant/Toddler)</span>
   </td>
   <td>Sensory Processing/Integration</td>
-  <td><code>ncl_cg_spm2__inf</code> <span class="subtle">(Infant)</span> / <code>ncl_cg_spm2__tod</code> <span class="subtle">(Toddler)</span></td>
+  <td><code>ncl_cg_spm2__inf</code> / <code>ncl_cg_spm2__tod</code></td>
 </tr>
 <tr>
   <td><a href="neurocog/vineland">Vineland</a></td>
@@ -198,7 +432,36 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
-###### <i class="fa fa-heart-pulse header-icon"></i> Physical Health
+
+
+### <i class="fa fa-microchip header-icon"></i> Novel Technologies & Wearable Sensors
+Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensors/#derivatives">HBCD-Motion</a> pipeline derivatives - see [Release Data](sensors/wearsensors.md#release-data) for details. Tabulated data includes questionnaires and sensor checklists:
+
+<table class="compact-table-no-vertical-lines"> 
+<thead>
+<tr>
+<th>Instrument</th>
+<th>Construct</th>
+<th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="sensors/questionnaire">Infant Sensor Questionnaires</a></td>
+<td>Motor Development, Regulation (Sleep/Wake)</td>
+<td><code>nt_ch_sens__qtn_<span class="blue-text">{1|2|3}</span></code></td>
+</tr>
+<tr>
+<td>Biosensor Receipt / Setup</td>
+<td>Administrative</td>
+<td><code>nt_ch_sens_rcpt</code> / <code>nt_ch_sens_setup</code></td>
+</tr>
+</tbody>
+</table>
+
+
+
+### <i class="fa fa-heart-pulse header-icon"></i> Physical Health
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -224,10 +487,10 @@ This page lists all instruments included in the current release, organized by do
   <td><code>ph_cg_bisq</code></td>
 </tr>
 <tr>
-  <td><a href="physhealth/ecpromis-pags">ecPROMIS Physical Activity/Greenspace</a></td>
-  <td>Physical Activity</td>
+  <td><a href="physhealth/ecpromis-pags">ecPROMIS Physical Activity</a></td>
+  <td>Physical Activity / Greenspace</td>
   <td><code>ph_cg_pms__pags</code></td>
-</tr>
+</tr> 
 <tr>
   <td><a href="physhealth/ecpromis-sleep">ecPROMIS Sleep</a></td>
   <td>Sleep</td>
@@ -256,7 +519,7 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
-###### <i class="fa-solid fa-baby header-icon"></i> Pregnancy & Exposure, Including Substance Use
+### <i class="fa-solid fa-baby header-icon"></i> Pregnancy & Exposure, Including Substance Use
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -358,9 +621,7 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
-
-
-###### <i class="fas fa-city header-icon"></i> Social & Environmental Determinants
+### <i class="fas fa-city header-icon"></i> Social & Environmental Determinants
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -371,9 +632,9 @@ This page lists all instruments included in the current release, organized by do
 </thead>
 <tbody>
 <tr>
-  <td><a href="SED/aces">ACES</a></td>
+  <td><a href="SED/aces">ACES</a>  <span class="subtle">(Adult/Pediatric)</td>
   <td>Adverse Childhood Experiences</td>
-  <td><code>sed_cg_ace</code> / <code>sed_cg_pedaces</code> <span class="subtle">(Pediatric ACES)</span>
+  <td><code>sed_cg_ace</code> / <code>sed_cg_pedaces</code></span>
   </td>
 </tr>  
 <tr>
@@ -439,7 +700,7 @@ This page lists all instruments included in the current release, organized by do
 <tr>
   <td><a href="SED/paces">PACEs</a></td>
   <td>Protective Factors</td>
-  <td><code>sed_bm_paces</code> <span class="subtle">(Current)</span> / <code>sed_cg_paces</code> <span class="subtle">(Retrospective &lt;18)</span><br>
+  <td><code>sed_bm_paces</code> / <code>sed_cg_paces</code><br>
   </td>
 </tr>
 <tr>
@@ -470,155 +731,188 @@ This page lists all instruments included in the current release, organized by do
 </tbody>
 </table>
 
-## Brain Activity & Biosensors
-
-<div class="infobox">
-  <strong>The following domains are the source of ALL file-based raw BIDS and processed derivatives in the release.</strong>
-  <p>Associated tabulated data include tabulated pipeline derivatives (<a href="../datacuration/overview/#tabulated-pipeline-derivatives">see details</a>), participant questionnaires, and session/acquisition forms filled out by technicians. See <a href="../datacuration/overview/">Data Structure Overview</a> for an overview of release data types.</p>
-</div>
-
-###### <i class="fa-solid fa-file-waveform header-icon"></i> EEG / Tabular EEG
-<p></p>
-The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Faces (FACE), Visual Evoked Potential (VEP), and Video Resting State (RS). File-based EEG data include raw BIDS and HBCD-MADE pipeline derivatives; see <a href="eeg/">EEG Protocols & Release Data</a> for details. Tabular EEG data includes tabulated pipeline derivatives, acquisition forms, and quality-control metrics:
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr>
-<th>Table</th>
-<th>Construct</th>
-<th>Table Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td rowspan="2">HBCD-MADE tabulated derivatives</td>
-  <td>Processing Reports</td>
-  <td><code>eeg_made_task-<span class="blue-text">{FACE|MMN|RS|VEP}</span>_acq-eeg_preprocessingReport</code></td>
-</tr>
-<tr>
-  <td>Summary Statistics</td>
-  <td><code>eeg_made_task-<span class="blue-text">{FACE|MMN|VEP}</span>FACE_ERPSummaryStats</code></td>
-</tr>
-<tr>
-  <td>EEG Acquisition Checklists</td>
-  <td>Acquisition Prep</td>
-  <td><code>eeg_ch_chkl</code>, 
-  <code>eeg_ch_chkl_1</code>,
-  <code>eeg_ch_chkl_2</code></td>
-</tr>
-<tr>
-  <td><a href="eeg/qc">Quality Control Metrics</a></td>
-  <td>Quality Control</td>
-  <td><code>eeg_qc_task-<span class="blue-text">{FACE|MMN|RS|VEP}</span></code>
-  </td>
-</tr>
-</tbody>
-</table>
-
-###### <i class="fa fa-brain header-icon"></i> Imaging / Tabular Imaging
-<p></p>
-Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [Release Data](mri/release-data.md) for details. Tabular Imaging includes tabulated pipeline derivatives (<i class="fa-solid fa-gear simple-icon"></i>), questionnaire/form data, and quality-control metrics:
-<table class="compact-table-no-vertical-lines"> 
-<thead>
-<tr>
-  <th>Table</th>
-  <th>Construct</th>
-  <th>Table Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="mri/sfmri-processing/#bibsnet">BIBSNet</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
-  <td>Brain ROI Volumes</td>
-  <td><code>img_bibsnet_space-<span class="blue-text">{T1w|T2w}</span>_desc-aseg_volumes</code></td>
-</tr>
-<tr>
-  <td><a href="mri/qc/#brainswipes">BrainSwipes</a></td>
-  <td>Manual QC</td>
-  <td>
-    <code>img_brainswipes_xcpd_hash-0f306a2f+0ef9c88a_<span class="blue-text">{T2w|bold}</span></code><br>
-    <code>img_brainswipes_xcpd_hash-2afa9081+0ef9c88a_<span class="blue-text">{T1w|bold}</span></code>
-  </td>
-</tr>
-<tr>
-  <td><a href="mri/sfmri-processing/#mriqc">MRIQC</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
-  <td>MRIQC Pipeline IQM Results</td>
-  <td><code>img_mriqc_<span class="blue-text">{T1w|T2w|bold}</span></code></td>
-</tr>
-<tr>
-  <td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms">MRI Summary Forms</a></td>
-  <td>Pre/Post-Scan Checklists</td>
-  <td><code>mri_ra_chkl_scan</code> / <code>mri_ra_chkl_data</code></td>
-</tr>
-<tr>
-  <td><a href="mri/mrs/#derivatives">OSPREY-BIDS</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
-  <td>Metabolites</td>
-  <td>
-    <code>img_osprey_<span class="blue-text">{HERCULES|unedited}</span>_*</code>
-    <a href="mri/tables/osprey.html">→ View full file list &amp; details</a>
-  </td>
-</tr>
-<tr>
-  <td><a href="mri/mri-forms/#pre-scan-questionnaire">Pre-Scan Questionnaire</a></td>
-  <td>Infant Sleep Environment</td>
-  <td><code>mri_ra_prep</code></td>
-</tr>
-<tr>
-  <td><a href="mri/dmri/#qsiprep">QSIPrep</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
-  <td>QSIPrep QC Metrics</td>
-  <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td> 
-</tr>
-<tr> 
-  <td><a href="mri/sfmri-processing/#xcp-d">XCP-D</a><i class="fa-solid fa-gear simple-icon" title="Tabulated pipeline derivative"></i></td>
-  <td>Morph/fMRI metrics</td>
-  <td>
-    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-mean_desc-<span class="blue-text">{METRIC}</span>_morph</code>
-    <br>
-    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-<span class="blue-text">{alff|coverage|reho}</span>_bold</code>
-    <br>
-    &nbsp;&nbsp;<a href="mri/tables/xcpd.html">→ View full file list &amp; details</a>
-  </td>
-</tr>
-</tbody>
-</table>
-
-###### <i class="fa fa-microchip header-icon"></i> Novel Technologies & Wearable Sensors
-<p></p>
-Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensors/#derivatives">HBCD-Motion</a> pipeline derivatives - see [Release Data](sensors/wearsensors.md#release-data) for details. Tabulated data includes questionnaires and sensor checklists:
-
-<table class="compact-table-no-vertical-lines"> 
-<thead>
-<tr>
-<th>Instrument</th>
-<th>Construct</th>
-<th>Table Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="sensors/questionnaire">Infant Sensor Questionnaire 1/2/3</a></td>
-<td>Motor Development, Regulation (Sleep/Wake) <i>(Day 1/2/3)</i></td>
-<td><code>nt_ch_sens__qtn_<span class="blue-text">{1|2|3}</span></code></td>
-</tr>
-<tr>
-<td>Biosensor Receipt / Setup</td>
-<td>Administrative</td>
-<td><code>nt_ch_sens_rcpt</code> / <code>nt_ch_sens_setup</code></td>
-</tr>
-</tbody>
-</table>
 
 
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".wy-nav-content") || document.body;
 
+  const searchInput = document.getElementById("instr-search");
+  const domainSelect = document.getElementById("instr-domain");
+  const resetButton = document.getElementById("instr-reset");
+  const status = document.getElementById("instr-status");
+  const emptyMessage = document.getElementById("instr-empty");
 
+  if (!searchInput) return;
 
+  function normalize(value) {
+    return value.toLowerCase().replace(/\s+/g, " ").trim();
+  }
 
+  function cleanHeadingText(heading) {
+    const clone = heading.cloneNode(true);
+    clone.querySelectorAll(".headerlink, i").forEach(el => el.remove());
+    return clone.textContent.replace(/ /g, " ").replace(/\s+/g, " ").trim();
+  }
 
+  // Walk the page in document order, pairing each h3 domain heading with the
+  // table that follows it.
+  const flow = Array.from(
+    container.querySelectorAll("h3, table.compact-table-no-vertical-lines")
+  );
 
-<!-- ##### Data types included in this section
+  const sections = [];
 
-The following study domains are the **source of all file-based raw BIDS and processed derivatives** (see full list of processing pipelines <a href="../standards/processing/">here</a>) data provided in the release. There are also some tabulated data, including <a href="../datacuration/overview/#tabulated-pipeline-derivatives">tabulated pipeline derivatives</a>, participant questionnaires, and session/acquisition forms filled out by technicians. See <a href="../datacuration/overview/">Data Structure Overview</a> for an overview of different data types.
- -->
+  flow.forEach((el, i) => {
+    if (el.tagName !== "H3") return;
+
+    let j = i + 1;
+    while (j < flow.length && flow[j].tagName === "H3") j++;
+    const table = j < flow.length && flow[j].tagName === "TABLE" ? flow[j] : null;
+    if (!table) return;
+
+    // The ReadTheDocs theme's own JS wraps every <table> in a
+    // ".wy-table-responsive" div at runtime, so the table itself is not
+    // necessarily a direct sibling of the heading. Walk up from the table to
+    // whichever ancestor-or-self IS that sibling, so hiding it doesn't leave
+    // the wrapper's own margin behind. Doing this lazily (not once at setup)
+    // means it stays correct however late that wrapping happens.
+    function outerTableContainer() {
+      let node = table;
+      while (node.parentElement && node.parentElement !== el.parentElement) {
+        node = node.parentElement;
+      }
+      return node;
+    }
+
+    // Collect any intro text/notes between the heading and its table so they
+    // hide/show together with the section.
+    const extras = [];
+    let node = el.nextElementSibling;
+    while (node && !node.contains(table)) {
+      extras.push(node);
+      node = node.nextElementSibling;
+    }
+
+    sections.push({
+      heading: el,
+      table,
+      outerTableContainer,
+      extras,
+      domain: cleanHeadingText(el),
+    });
+  });
+
+  sections.forEach(section => {
+    domainSelect.add(new Option(section.domain, section.domain));
+  });
+
+  // Group table rows so that rowspan blocks and "table-group-row" sub-headers
+  // stay intact and are shown/hidden as a unit rather than row-by-row.
+  function buildRowGroups(table) {
+    const rows = Array.from(table.querySelectorAll("tbody > tr"));
+    const groups = [];
+    let i = 0;
+    while (i < rows.length) {
+      const row = rows[i];
+      if (row.classList.contains("table-group-row")) {
+        groups.push({ type: "header", rows: [row] });
+        i++;
+        continue;
+      }
+      let span = 1;
+      row.querySelectorAll("td[rowspan]").forEach(td => {
+        const n = parseInt(td.getAttribute("rowspan"), 10);
+        if (!Number.isNaN(n) && n > span) span = n;
+      });
+      groups.push({ type: "data", rows: rows.slice(i, i + span) });
+      i += span;
+    }
+    return groups;
+  }
+
+  function filterTable(table, search) {
+    const groups = buildRowGroups(table);
+    let visibleCount = 0;
+    let pendingHeader = null;
+    let headerHasVisible = false;
+
+    function flushHeader() {
+      if (pendingHeader) {
+        pendingHeader.rows.forEach(r => (r.style.display = headerHasVisible ? "" : "none"));
+      }
+    }
+
+    groups.forEach(group => {
+      if (group.type === "header") {
+        flushHeader();
+        pendingHeader = group;
+        headerHasVisible = false;
+        return;
+      }
+
+      const text = normalize(group.rows.map(r => r.textContent).join(" "));
+      const show = !search || text.includes(search);
+      group.rows.forEach(r => (r.style.display = show ? "" : "none"));
+      if (show) {
+        visibleCount += group.rows.length;
+        headerHasVisible = true;
+      }
+    });
+
+    flushHeader();
+    return visibleCount;
+  }
+
+  function applyFilters() {
+    const search = normalize(searchInput.value);
+    const domain = domainSelect.value;
+
+    let totalVisible = 0;
+    let domainsVisible = 0;
+
+    sections.forEach(section => {
+      const container = section.outerTableContainer();
+
+      if (domain && section.domain !== domain) {
+        section.heading.style.display = "none";
+        container.style.display = "none";
+        section.extras.forEach(el => (el.style.display = "none"));
+        return;
+      }
+
+      const sectionMatchesSearch = !search || normalize(section.domain).includes(search);
+
+      const visible = filterTable(section.table, sectionMatchesSearch ? "" : search);
+      const showSection = visible > 0;
+
+      section.heading.style.display = showSection ? "" : "none";
+      container.style.display = showSection ? "" : "none";
+      section.extras.forEach(el => (el.style.display = showSection ? "" : "none"));
+
+      if (showSection) domainsVisible++;
+      totalVisible += visible;
+    });
+
+    status.textContent =
+      `Showing ${totalVisible} instrument${totalVisible === 1 ? "" : "s"} across ${domainsVisible} domain${domainsVisible === 1 ? "" : "s"}.`;
+    emptyMessage.style.display = totalVisible === 0 ? "block" : "none";
+  }
+
+  [searchInput, domainSelect].forEach(control => {
+    control.addEventListener("input", applyFilters);
+    control.addEventListener("change", applyFilters);
+  });
+
+  resetButton.addEventListener("click", function () {
+    searchInput.value = "";
+    domainSelect.value = "";
+    applyFilters();
+  });
+
+  applyFilters();
+});
+</script>

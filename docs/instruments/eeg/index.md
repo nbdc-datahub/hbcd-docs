@@ -26,8 +26,6 @@ EEG release data include the following:
 - **[HBCD-MADE pipeline derivatives](#hbcd-made-derivatives)**: Processed, analysis-ready pipeline outputs
 - **[Tabular EEG](../index.md#eeg-tabular-eeg)**: Questionnaires/forms and tabulated HBCD-MADE derivatives
 
----
-
 ## Raw EEG BIDS
 
 <div id="bids-conversion" class="banner" onclick="toggleCollapse(this)">
@@ -69,8 +67,6 @@ hbcd/
                     ├── *_acq-eeg_impedances.json
                     └── *_task-<span class="var">{FACE|MMN|RS|VEP}</span>_acq-eeg_run-[X]_eventlogs.txt
 </pre>
-
----
 
 ## HBCD-MADE Derivatives
 
