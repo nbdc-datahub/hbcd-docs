@@ -64,8 +64,6 @@ hbcd/
                     └── *_task-<span class="var">{FACE|MMN|RS|VEP}</span>_acq-eeg_run-[X]_eventlogs.txt
 </pre>
 
----
-
 ## HBCD-MADE Derivatives
 {{ suppx(instruments.eeg, "1") }}
 
