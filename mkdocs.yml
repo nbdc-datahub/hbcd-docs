@@ -142,8 +142,7 @@ nav:
                 - Visual Evoked Potential: instruments/eeg/tasks/vep.md
                 - Video Resting State: instruments/eeg/tasks/rs.md
         - Magnetic Resonance Imaging:
-            - MR Protocols: instruments/mri/index.md
-            - Release Data: instruments/mri/release-data.md
+            - MR Protocols & Release Data: instruments/mri/index.md
             - Quality Control: instruments/mri/qc.md
             - Pre-Scan Questionnaire & Forms: instruments/mri/mri-forms.md
             - Structural & Functional MRI:
