@@ -142,7 +142,7 @@ nav:
     - Brain Activity & Biosensors:
         - Electroencephalography:
             - EEG Protocols & Release Data: instruments/eeg/index.md
-            - Quality Control Procedures: instruments/eeg/qc.md
+            - Quality Control: instruments/eeg/qc.md
             - Tasks:
                 - Auditory Mismatch Negativity: instruments/eeg/tasks/mmn.md
                 - Faces: instruments/eeg/tasks/faces.md
@@ -151,7 +151,7 @@ nav:
 
         - Magnetic Resonance Imaging:
             - MR Protocols & Release Data: instruments/mri/index.md
-            - Quality Control Procedures: instruments/mri/qc.md
+            - Quality Control: instruments/mri/qc.md
             - Derivatives Guide: instruments/mri/derivatives-guide.md
             - Pre-Scan Questionnaire & Forms: instruments/mri/mri-forms.md
             - Structural MRI: instruments/mri/smri.md
