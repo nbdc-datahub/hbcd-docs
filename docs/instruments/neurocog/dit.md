@@ -1,7 +1,7 @@
 # Deferred Imitation Task: Gong and Berry-Go-Round
 
 <div class="admin-note" markdown="1">
-LUCI NOTES: potentially merge the information across current QC, Instrument Details, and Scoring Procedures? I can provide input on how to organize the information as well if needed. we can also provide SOP/method as a separate page/document, e.g. if Workgroup wants to provide a PDF (that you could then publish to Zenodo for version control) or I can create html page like this one - <a href="../dit-qc.html">DI Methods</a>
+LUCI NOTES: potentially merge the information across current QC, Instrument Details, and Scoring Procedures? I put together a quick draft of what this might look like - see <a href="../dit-alt/">DI ALT VERSION page</a>
 </div>
 
 {{ readme_summary(instruments.dit) }}
