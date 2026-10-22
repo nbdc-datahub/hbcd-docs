@@ -520,20 +520,20 @@ prescan_q:
   construct: Infant Sleep Environment
 dit:
   supp2_text: null
-  status: Work in progress
+  status: Ready for README update
   alert1: null
   Date submitted: '2026-10-20'
-  warning3_title: Parent Error
+  warning3_title: Malfunction or Refusal
   hbcd_mods1: null
   hbcd_mods2: null
   warning1_title: Task administered by non-certified individual
   full_name: Deferred Imitation Task
-  warning4: "An Error code is used to indicate when there was a malfunction with the materials. Recommendation is to not use these data. \n\nAn Error code is used to indicate when the child refused to participate in the task/engage with the props. Recommendation is to not use these data."
+  warning4: _Delays shorter than 9 or 10min should not be used and longer than 59min should be used with caution._ Maximum Delay possible for RAs to enter was 59:59 Any delays longer than 1 hour were coded using the maximum 59:59 and the actual delay and reason for deviation noted in RA NOTES/FEEDBACK. _Users are encouraged to look at RA Feedback to understand the delay discrepancy.  If significant variation exists in the delay variable, it should be examined as a possible covariate in analyses._
   alert2: null
   assessment_type: Cognitive testing
   table_name: ncl_ch_di_v06
-  warning2: An Error code is used to indicate when the task administration included a major experimenter error that may have impacted the child’s score (e.g., task administered out of order, child's intent not assisted during recall, child's intent assisted during baseline).  Recommendation is to not use these data.  *_However, users may interrogate the RA Feedback notes for DI to understand the nature of the errors and determine whether to include data on a case-by-case basis._
-  warning2_title: Experimenter Error
+  warning2: "An Error code is used to indicate when the task administration included a major experimenter error that may have impacted the child’s score (e.g., task administered out of order, child's intent not assisted during recall, child's intent assisted during baseline).  Recommendation is to not use these data.  *_However, users may interrogate the RA Feedback notes for DI to understand the nature of the errors and determine whether to include data on a case-by-case basis._ \n\nAn Error code is used to indicate when the parent provided assistance. Recommendation is to not use these data."
+  warning2_title: Experimenter or Parent Error
   references: |-
     Lukowski, A. F., & Milojevich, H. M. (2016). Examining Recall Memory in Infancy and Early Childhood Using the Elicited Imitation Paradigm. _Journal of visualized experiments : JoVE_, (110), 53347.
 
@@ -541,10 +541,7 @@ dit:
 
     DeBoer, T., Wewerka, S., Bauer, P.J., Georgieff, M.K., and Nelson, C.A. (2005).  Explicit memory performance in infants of diabetic mothers at 1 year of age.  _Developmental Medicine & Child Neurology_, 47(8), 525-531.
   respondent_category: Child on Self
-  admin_notes: |-
-    9/14 notes (Luci)
-    - I moved the QC section to a supplemental page - make edits to QC info under supp1_text
-    - this looks done to me, but I will wait for SMEs to change status just in case
+  admin_notes: '10/22 Luci notes: I have some formatting suggestions once the content is complete'
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/dit/
   email: riggins@umd.edu
   visits: V06, V08
@@ -556,11 +553,12 @@ dit:
     url: https://docs.hbcdstudy.org/3.0-readmes/instruments/neurocog/dit/
   alert4: null
   acronym: DI
-  warning3: An Error code is used to indicate when the parent provided assistance. Recommendation is to not use these data.
+  warning3: "An Error code is used to indicate when there was a malfunction with the materials. Recommendation is to not use these data. \n\nAn Error code is used to indicate when the child refused to participate in the task/engage with the props. Recommendation is to not use these data."
   alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec5I08Qeoit27sq4
   warning1: An Error code is used to indicate when the task was administered by a non-certified individual (who was still undergoing training/certification). Recommendation is to use data only when the administration was also video recorded. If a video recording was made, the administration and scoring received expert review and were corrected to ensure accurate data. If no video recording is indicated, no expert review occurred, use data with caution.
-  description: This is an assessment of long-term memory. Children are shown two event sequences (one with 3-steps and one 4-steps) using novel props. After 10min (minimum) delay their memory for the action sequences is assessed.  A target action is scored only the first time the child demonstrates it (during baseline and then again during recall). A baseline is included to control for problem solving/creativity.  Administration is standardized, parents/caregivers should NOT help their children.
+  description: "This is an assessment of long-term memory. RAs MODEL two event sequences using novel props.  One event sequence is 3-steps (i.e., has 3 specific 'target actions' to be completed in a specific order), called \"Gong\" and the other event sequence is 4-steps, called \"Beary-Go-Round.\"  Event order is randomized.  After a 10 minute (minimum) DELAY children's memory for the actions in the event sequences is assessed.  \n\nThe child's ability to recall is scored as the number of target actions completed (\"target actions\" in the correct temporal order (termed \"pairs of actions\") during RECALL.\n\nA target action is scored only the first time the child demonstrates it (during BASELINE and then again during RECALL). \n\nThe BASELINE is included prior to modeling to control for problem solving/creativity. \n\nA 2-3 warm up activity with slinkys is used to introduce the child to this imitation based task.  RAs rate on a scale of 1-7 how much the child \"warmed up\" to the task\
+    \ and \"imitated\" actions during the warm up activity. \n\nLength of delay is recorded to control for variations in duration. Administration, prop presentation and supporting prompts are standardized. \n\nAdministration order: warm up, baseline for event 1, modeling (twice) for event 1, baseline for event 2, modeling (twice) for event 2, delay, recall for event 1, recall for event 2."
   supp3_text: null
   domain: Neurocognition & Language
   release: '3.0'
@@ -568,15 +566,15 @@ dit:
     \ to the RA so they could correct it in the second certification step. This process continued until the RA submitted a video that met threshold, at which point RAs were certified in administration and released to study participants and to proceed to the second step.\n\nRAs who were certified to administer the task, then video recorded their administration to a child (pilot OR main study) participant. RAs scored the child’s performance (in LORIS) and an expert (TR, ZC, SD, NS) reviewed the video for both administration and scoring accuracy.  Feedback was always given.  If the administration met a standard threshold (i.e., no administration or scoring errors), the RA was certified in scoring the task and fully certified to administer deferred imitation in main study without the need for expert video review.  If the administration did not meet threshold, the RA was asked to submit another video with a different child participant and submit the video for review.  If during any video review,\
     \ scores were incorrect, the RA was asked to correct them in _LORIS_ (see Error code: \"Task administered by non-certified individual\").**  The expert reviewer ensured the scores were updated accurately and noted this in the certification log notes.  \n\nAfter the two-step certification process, RAs were released to administer and score deferred imitation to child participants without video review. To prevent drift, address questions and assess inter-rater-reliability, Training Review Sessions led by an expert (SD, TR) were mandatory at which certified RAs would review administration and scoring procedures followed by submitting a video of their next administration for personalized feedback.\n\n \n\n \n\n**Visit 8 (Farm and Garden):**\n\nAn SOP was provided with detailed administration and scoring instructions. Although the core concepts are the same for the deferred imitation task at V06 and V08, the event sequences differ, therefore there was a need for expert review, despite the\
     \ previous certification. Training was conducted via Zoom and in-person sessions and consisted of detailed descriptions and example videos. \n\nEach RA (certified to administer V06) was asked to record their first V08 child participant (pilot OR main study), score the child’s performance (in LORIS) and submit for expert review.  An expert reviewer (TR, ZC, SD, NS) reviewed the video for accuracy.  Feedback was always given.  If the administration met a standard threshold (i.e., no major administration or scoring errors), the RA was approved to continue without video expert review.  If the administration and/or scoring did not meet threshold, the RA was asked to submit a video of their next V08 DI administration with another child participant.  Until approved for V08, any incorrect scores were corrected by the RA in LORIS.  The expert reviewer ensured the scores were updated accurately and noted this in the certification log notes. To prevent drift, address questions and assess inter-rater-reliability,\
-    \ Training Review Sessions led by an expert (SD, TR) were mandatory at which certified RAs would review administration and scoring procedures followed by submitting a video of their next administration for personalized feedback. \n\n_Delays shorter than 9 or 10min should not be used and longer than 59min should be used with caution._ Maximum Delay possible for RAs to enter was 59:59. Any delays longer than 1 hour were coded using the maximum 59:59 and the actual delay and reason for deviation noted in RA NOTES/FEEDBACK. _Users are encouraged to look at RA Feedback to understand the delay discrepancy.  If significant variation exists in the delay variable, it should be examined as a possible covariate in analyses._"
+    \ Training Review Sessions led by an expert (SD, TR) were mandatory at which certified RAs would review administration and scoring procedures followed by submitting a video of their next administration for personalized feedback. \n\n_Delays shorter than 9 or 10min should not be used and longer than 59min should be used with caution._ Maximum Delay possible for RAs to enter was 59:59 Any delays longer than 1 hour were coded using the maximum 59:59 and the actual delay and reason for deviation noted in RA NOTES/FEEDBACK. _Users are encouraged to look at RA Feedback to understand the delay discrepancy.  If significant variation exists in the delay variable, it should be examined as a possible covariate in analyses._"
   administration: In-person
   Form:
     label: Form Link
     url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec5I08Qeoit27sq4
-  scoring: RA's record each target action in order the first time they are performed by the child during baseline and again during recall for each event sequence (e.g., "ring the bell). Pairs of actions that occur in the correct temporal order are automatically calculated (e.g., "hang the bell"  followed by "ring the bell" = 1 pair). Actions and pairs of actions are summed across the two event sequences at baseline and recall. RAs record errors when applicable.
+  scoring: RAs record each target action in order the first time they are performed by the child during baseline and again during recall for each event sequence (e.g., "ring the bell). Pairs of actions that occur in the correct temporal order are automatically calculated (e.g., "hang the bell"  followed by "ring the bell" = 1 pair). Actions and pairs of actions are summed across the two event sequences at baseline and recall. RAs record errors when applicable.
   changelog: updated to address Linda and Patti's questions.
   resources: null
-  warning4_title: Malfunction or Refusal
+  warning4_title: Delay duration
   supp1_text: null
   measure: 'Deferred Imitation Task: Gong and Berry-Go-Round'
   construct: Memory
