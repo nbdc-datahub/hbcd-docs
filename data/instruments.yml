@@ -3010,7 +3010,7 @@ ecpromis_pags:
   construct: Physical Activity
 mchat:
   supp2_text: null
-  status: README updated & ready for SME review
+  status: Complete / Stable
   alert1: null
   Date submitted: '2026-09-30'
   hbcd_mods1: |-
@@ -3032,7 +3032,7 @@ mchat:
 
     Attar SM, Bradstreet LE, Ramsey RK, Kelly K, Robins DL. Validation of the Electronic Modified Checklist for Autism in Toddlers, Revised with Follow-Up: A Nonrandomized Controlled Trial. J Pediatr. 2023 Feb 2;262:113343. doi: 10.1016/j.jpeds.2022.11.044. Epub 2023 Feb 2. PMID: 36736890; [PMCID: PMC10390646](https://doi.org/10.1016/j.jpeds.2022.11.044).
   respondent_category: Parent on Child
-  admin_notes: 'Luci 10/19 notes: made minor copy-edit updates to add links in Resources, followed up via email to inquire about PDF attachments mentioned in changelog'
+  admin_notes: 'Luci 10/21 notes: made minor copy-edit updates and added link provided via email to the Resources section. I will mark this is complete for now, but SMEs feel free to submit further changes as needed!'
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
   email: nakshoomoff@health.ucsd.edu
   visits: V07
@@ -3057,7 +3057,7 @@ mchat:
 
     Five participants completed the M-CHAT-R/F at V07a but at the time of the data release had not yet completed the M-CHAT-R/F at V07. The V07a data are not included in the current data release. In a later release, only the V07 data will be included in the data set and the M-CHAT-R/F at V07a will not be included in the data release.
   description: |-
-    The M-CHAT-R/F (Robins et al., 2014) is a two-stage parent-report screening tool to assess the likelihood for autism. There are 20 questions. If a child fails an item, the caregiver is later interviewed and presented with additional questions for clarification. In the web-based, electronic version of the M-CHAT-R/F (Attar et al., 2023), the caregiver is instructed to follow instructions as presented onscreen. The initial responses and the follow-up responses for each question are included in the data release.
+    The M-CHAT-R/F ([Robins et al., 2014](https://doi.org/10.1542/peds.2013-1813)) is a two-stage parent-report screening tool to assess the likelihood for autism. There are 20 questions. If a child fails an item, the caregiver is later interviewed and presented with additional questions for clarification. In the web-based, electronic version of the M-CHAT-R/F (Attar et al., 2023), the caregiver is instructed to follow instructions as presented onscreen. The initial responses and the follow-up responses for each question are included in the data release.
 
     The M-CHATR/F is available as a free download for clinical, research, and educational purposes (available in English and Spanish). See Resources below.
   supp3_text: null
@@ -3083,7 +3083,7 @@ mchat:
   resources: null
   hbcd_mods1_title: Modifications Associated with Web-Based Administration
   supp1_text: null
-  measure: Modified Checklist for Autism in Toddlers
+  measure: MCHAT
   construct: Autism
 vineland_3:
   status: Complete / Stable
