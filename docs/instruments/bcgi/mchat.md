@@ -10,4 +10,5 @@
 {{ instrument_description(instruments.mchat) }}
 {{ hbcd_mods(instruments.mchat) }}
 {{ scoring(instruments.mchat) }}
+{{ resources(instruments.mchat) }}
 {{ references(instruments.mchat) }}
