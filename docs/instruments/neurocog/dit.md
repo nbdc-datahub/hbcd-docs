@@ -1,5 +1,8 @@
 # Deferred Imitation Task: Gong and Berry-Go-Round
 
+
+<!-- See [DIT Methods](dit-methods.html) for details. -->
+
 {{ readme_summary(instruments.dit) }}
 {{ alert_warning(instruments.dit) }}
 {{ data_warning(instruments.dit) }}
@@ -11,3 +14,4 @@
 {{ hbcd_mods(instruments.dit) }}
 {{ scoring(instruments.dit) }}
 {{ references(instruments.dit) }}
+
