@@ -3059,7 +3059,7 @@ mchat:
   description: |-
     The M-CHAT-R/F (Robins et al., 2014) is a two-stage parent-report screening tool to assess the likelihood for autism. There are 20 questions. If a child fails an item, the caregiver is later interviewed and presented with additional questions for clarification. In the web-based, electronic version of the M-CHAT-R/F (Attar et al., 2023), the caregiver is instructed to follow instructions as presented onscreen. The initial responses and the follow-up responses for each question are included in the data release.
 
-    The [M-CHATR/F](https://www.mchatscreen.com/) is available as a free download for clinical, research, and educational purposes. It is available in English and Spanish.
+    The M-CHATR/F is available as a free download for clinical, research, and educational purposes (available in English and Spanish). See Resources below.
   supp3_text: null
   domain: Behavior & Caregiver-Child Interactions
   release: 3.0 (new instrument/info required)
@@ -3080,7 +3080,7 @@ mchat:
 
     The follow-up questions and scoring procedures for the web-based, electronic version of the M-CHAT-R/F were provided to HBCD by one of the test authors (Diana Robins, Ph.D.).
   changelog: Will provide PDF documents via email.
-  resources: '- [Official M-CHAT](https://www.mchatscreen.com/): The Modified Checklist for Autism in Toddlers, Revised with Follow-Up'
+  resources: null
   hbcd_mods1_title: Modifications Associated with Web-Based Administration
   supp1_text: null
   measure: Modified Checklist for Autism in Toddlers
@@ -4210,7 +4210,7 @@ maps:
     Wakschlag, L. S., Zhang, Y., Heffernan, M. E., MacNeill, L. A., Peterson, E. O., Friedland, S., Sass, A. J., Smith, J. D., Davis, M. M., & Wiggins, J. L. (2024). How EASI can it be? Closing the research-to-practice gap via population-based validation of the MAPS-EASI 2.0 early childhood irritability screener for translation to clinical use. _Translational issues in psychological science_, _10_(4), 435–448. <https://doi.org/10.1037/tps0000428>
   respondent_category: Parent on Child
   admin_notes: |-
-    Luci note 10/19: combined MAPS-TL and MAPS-EASI - check with SMEs to see if they approve or not!
+    Luci note 10/19: combined MAPS-TL and MAPS-EASI - check with SMEs to see if they approve or not! followed up via email for final confirmation, will regard as complete unless i hear otherwise
 
     Isabel Rendon Jordan <isabel.jordan@northwestern.edu>
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps
