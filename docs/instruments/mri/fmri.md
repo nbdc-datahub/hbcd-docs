@@ -5,6 +5,18 @@
 {{ data_warning(instruments.fmri) }}
 {{ issues_banner() }}
 
+
+<!-- 
+
+NEW DATA WARNING:
+
+### Bad frame removal from raw BIDS fmaps
+
+During raw data QC for field maps, scans are failed for line artifact if dark slices or banding is observed on more than half of the frames. Most fmaps have two frames, so if one frame has artifacts, but the other frame looks good, the scan will receive a passing QC score. In order to maximize the data available while also excluding bad frames that negatively impact the quality of procuessed outputs, we added an additional step post-BIDS conversion that identifies and removes bad fmap frames. The raw data QC provided within the `scans.TSV` files ([see all QC fields](qc.md#scanstsv)) include additional fields for line artifact scores per frame (`line2_f{1|2}1_score`) and the best frame based on the frame with the lowest line artifact score. This operation was only performed on fmaps files with a passing overall QC score (`QC`=1) and a manual QC score for line artifacts of `QU_line`≥1.5. Frame removal, which was performed on ~1000 fmap files, is documented in the sidecar JSONs.
+
+(e.g. QC score will not change post-frame removal (because will be QC of 1 both pre- and post-removal), but are there other QC metrics that will?) -->
+
+
 ---
 
 ## Overview
