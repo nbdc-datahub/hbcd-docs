@@ -16,7 +16,7 @@
 
 #### Processing & Derivatives
 
-<div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 5px;" class="fa-solid fa-up-right-from-square"></i></a></span> </div>
+<div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">See the {{ hbcd_processing_site }} for full pipeline configuration and processing details.</span> </div>
 
 {{ suppx(instruments.dmri, "1") }}
 
@@ -200,7 +200,6 @@ MAP-MRI Extends DTI by estimating the full spatial probability distribution (pro
 <span class="hashtag"># ── Parameter Legend ───────────────────────────────────────</span>
 <span class="var">TENSOR</span>: ad, am, fa, li, rd
 </pre>
-
 
 <div id="model-param-details" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-atom"></i></span>

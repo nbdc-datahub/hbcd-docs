@@ -15,14 +15,13 @@
 
 ## MRS Acquisition
 
-Full protocols, sequence installation, and operation instructions are available via <a href="https://hbcdsequences.readthedocs.io/">HBCD Study MRI Protocols</a>. Of note, a key challenge in MRS is sensitivity to scanner frequency drift, which can degrade data quality by altering editing efficiency and signal contributions (<a href="https://doi.org/10.1002/mrm.25009">Harris et al., 2014</a>). To address this, HBCD incorporates interleaved water referencing for real-time frequency correction, initially implemented on Philips systems and later extended to Siemens and GE platforms
- (<a href="https://doi.org/10.1002/jmri.25304">Edden et al., 2016</a>).
+Full protocols, sequence installation, and operation instructions are available via <a href="https://hbcdsequences.readthedocs.io/">HBCD Study MRI Protocols</a>. Of note, a key challenge in MRS is sensitivity to scanner frequency drift, which can degrade data quality by altering editing efficiency and signal contributions (<a href="https://doi.org/10.1002/mrm.25009">Harris et al., 2014</a>). To address this, HBCD incorporates interleaved water referencing for real-time frequency correction, initially implemented on Philips systems and later extended to Siemens and GE platforms (<a href="https://doi.org/10.1002/jmri.25304">Edden et al., 2016</a>).
 
 ## MRS Processing & Derivatives
 
-<div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">Full pipeline configuration details are available on the <a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tool_details.html">HBCD Processing site&nbsp;<i style="font-size: 5px;" class="fa-solid fa-up-right-from-square"></i></a></span> </div>
+<div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">See the {{ hbcd_processing_site }} for full pipeline configuration and processing details.</span> </div>
 
-HBCD MRS data are processed with [OSPREY-BIDS](https://osprey-bids.readthedocs.io/en/latest/index.html), a customized automated pipeline based on OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)). Full details regarding HBCD processing implementation (e.g., file selection for processing) are available in the external [HBCD Processing](https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/osprey.html) documentation.
+HBCD MRS data are processed with [OSPREY-BIDS](https://osprey-bids.readthedocs.io/en/latest/index.html), a customized automated pipeline based on OSPREY ([Oeltzschner et al., 2020](https://doi.org/10.1016/j.jneumeth.2020.108827); [Zöllner et al., 2023](https://doi.org/10.1007/s10916-023-01969-6)).
 
 <div id="derivatives" class="banner" onclick="toggleCollapse(this)" style="background-color: #dcd8fb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span>
