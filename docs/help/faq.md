@@ -212,7 +212,7 @@ REVIEW & REVISE THIS FAQ
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>MRI scanner information, including <i>scanner manufacturer, model, software, and serial_number</i>, can be found in the raw BIDS data, including the session-level <a href="../standards/structure/#participant-session-and-scan-level-metadata">scans TSV files</a> and imaging file JSON metadata. Scanner information may be additionally provided as tabulated data in a future release.</p>
+<p>MRI scanner information is combined across participants within the <code>mri_gd_info</code> table and includes scanner manufacturer, model, software, and serial_number. This data is sourced from the raw BIDS data, where scanner information is stored within imaging file JSONs and the session-level SCANS TSV files.</p>
 </div>
 
 <div id="faq-dataproc" class="banner" onclick="toggleCollapse(this)">

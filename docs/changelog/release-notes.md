@@ -408,11 +408,10 @@ Raw MR data QC metrics in raw BIDS SCANS TSV files are now combined into a singl
 <tr>
 <td>Scanner info</td>
 <td><i class="fa-solid fa-rotate icon-rotate"></i>
-Scanner info in raw BIDS SCANS TSV files are now combined into a single table across participants/sessions.</td>
+Scanner information from raw BIDS SCANS TSV files is now consolidated across participants/sessions into <code>mri_gd_info</code></td>
 </tr>
 
 </tbody></table>
-
 
 ##### Neurocognition & Language
 

@@ -346,6 +346,11 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
   <td><code>img_mriqc_<span class="blue-text">{T1w|T2w|bold}</span></code></td>
 </tr>
 <tr>
+  <td>MRI Scanner Information</td>
+  <td>Scanner information</td>
+  <td><code>mri_gd_info</code></td>
+</tr>
+<tr>
   <td><a href="mri/mri-forms/#mri-scan-session-data-summary-forms">MRI Summary Forms</a></td>
   <td>Pre/Post-Scan Checklists</td>
   <td><code>mri_ra_chkl_scan</code> / <code>mri_ra_chkl_data</code></td>
