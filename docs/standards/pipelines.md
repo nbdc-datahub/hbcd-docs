@@ -6,6 +6,11 @@ The HBCD processing pipelines are a collection of modular tools used to process 
 
 **Full technical details on how each pipeline was executed and configured is available in {{ hbcd_processing_site }},** with pipeline-specific parameters detailed under **Tool Names** (e.g., 'File Selection For Processing' and 'Quality Control Selection Information').
 
+<div class="admin-note" markdown="1">
+LUCI NOTE: update table to reorganize links to HBCD DOcs pages and also include pipeline versions. also add new HBCD-ECG pipeline
+</div>
+
+
 <style>
 .compact-table-no-vertical-lines th {
   white-space: nowrap !important;
