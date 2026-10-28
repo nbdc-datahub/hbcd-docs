@@ -24,10 +24,49 @@
     table_class="compact-table-no-vertical-lines static-dynamic-tables"
 ) }}
 
-{{ suppx(instruments.dynamic, "1") }}
+## SUPP NEW
+
+## HBCD Cohorts & Caregiver Types
+Cohort information (`data_cohort`) includes cohort subtypes and caregiver Types A-E for each participant. Cohort subtypes are split into `Main Child` and `Multiple Birth`, with additional labeling for Postnatal Recruits (PNR) and Multiple Birth siblings (Main Child vs. Sibling):
+
+- **HBCD Main Child**
+    - HBCD Main Child
+    - HBCD Main Child - Postnatal Recruitment
+    - HBCD Main Child - Type A-E
+- **HBCD Multiple Birth**
+    - HBCD Multiple Birth - Main Child
+    - HBCD Multiple Birth - Postnatal Recruitment
+    - HBCD Multiple Birth - Postnatal Recruitment - Sibling
+    - HBCD Multiple Birth - Sibling
+    - HBCD Multiple Birth - Type A - E  
+
+#### Caregiver Types
+ 
+ - **Type A**: Temporary alternative caregiver
+ - **Type B**: Change in primary caregiver (placement only) without change in legal custody (Birth Parent unable to complete visit)
+ - **Type C**: Change in joint custody
+ - **Type D**: Change in placement (Child removed from birth parent and placed in foster care)
+ - **Type E**: Change in legal custody and placement (e.g., adoption)
+ 
+##### Postnatal Recruits (PNR)
+Postnatal Recruits are enrolled in the study after the child is born and complete modified V01 and V02 visits. The PNR cohort is only denoted for the V02 visit, with all subsequent visits falling under the same cohort as a standard participant. To check whether a participant was part of a PNR cohort, users can either check the cohort at V02 or refer to the [PNR participant list](https://hbcd-docs-private.lassoinformatics.com/participant_lists/PNR_participants-supplemental.csv) available to DUC-authorized users via the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download).
+
+##### Multiple Birth Participants
+Multiple Birth cohorts include siblings/twins enrolled as **Main Child** and **Sibling** participants. Instruments or instrument fields that are specific to the caregiver rather than the child will be identical across siblings. For twins and triplets, age variables will also be identical (including those derived from jittered date of birth). The supplemental [Multibirth participant list](https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv), which includes mapping between sibling participant IDs, is available to DUC-authorized users via the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download).
+
+## Substance Use Flags
+**Substance use (SU) flag** variables indicate whether a participant met study-defined criteria for prenatal exposure to Alcohol, Nicotine, Cannabis, Opioids, or Stimulants ([Gurka et al., 2025](https://doi.org/10.1016/j.dcn.2024.101494)). Variables include instrument-specific and "rolled-up" SU flags that aggregate evidence across instruments to provide a single indicator per substance. Source study instruments include:
+
+- Timeline Follow Back ([TLFB](../pregexp/su/tlfb.md)): Self-reported use
+- [Health V2-Infancy](../pregexp/pex.md): Diagnosis of Neonatal Opioid Withdrawal Syndrome (NOWS) or Fetal Alcohol Syndrome (FAS)
+- [Nail](../biospec/nails.md) and/or [Urine](../biospec/urine.md) positive toxicology results
+
+Prenatal exposure thresholds that define when an instrument-specific report is considered positive for prenatal exposure are outlined in [Table 2 of Gurka et al. 2025](https://www.sciencedirect.com/science/article/pii/S1878929324001555?via%3Dihub#tbl0010). For each substance, the derived SU flag is positive if one or more of the corresponding instrument-specific reports are positive.
+
+##### SU Flag Variable Summary
+*All variable names are prefixed with `su_flag_`, omitted below for readability.*
 
 <!-- Table sourced from google sheets -->
-
 <table class="table-no-vertical-lines">
 <thead>
 <tr>
@@ -80,6 +119,10 @@
 ---
 
 {{ references(instruments.dynamic) }}
+
+
+
+<!-- {{ suppx(instruments.dynamic, "1") }} -->
 
 
 
