@@ -24,8 +24,6 @@
     table_class="compact-table-no-vertical-lines static-dynamic-tables"
 ) }}
 
-## SUPP NEW
-
 ## HBCD Cohorts & Caregiver Types
 Cohort information (`data_cohort`) includes cohort subtypes and caregiver Types A-E for each participant. Cohort subtypes are split into `Main Child` and `Multiple Birth`, with additional labeling for Postnatal Recruits (PNR) and Multiple Birth siblings (Main Child vs. Sibling):
 
@@ -119,6 +117,9 @@ Prenatal exposure thresholds that define when an instrument-specific report is c
 ## Transition in Care
 
 The Transition in Care (TIC) variable in the Dynamic Participant Information dataset is derived from 2 measures: (a) the [Transition in Care Screener](../SED/transitions-in-care.md), which is administered by Research Assistants prior to each visit starting with V2, and (b) the [Transition in Care Questionnaire](../SED/tic_quest.md), which is completed by participants at V6 and V8. The TIC derived variable indicates whether or not a child ever experienced a change in primary caregiver, either temporary or permanent, and reflects informal placement with relatives as well as formal placements like foster care and kinship care. (defined as 0 = not experienced a TIC, and 1 = experienced a TIC).
+
+
+{{ scoring(instruments.dynamic) }}
 
 ---
 
