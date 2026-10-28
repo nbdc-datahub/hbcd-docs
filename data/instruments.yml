@@ -3461,10 +3461,10 @@ static:
   README:
     label: View
     url: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/static/
-  alert4: null
+  alert4: In accordance with the HBCD Data Use Certification (DUC), recipients of HBCD data must not publicly report results for cells containing fewer than 10 participants. Researchers should account for this requirement when planning analyses, preparing tables and figures, and reporting or disseminating findings.
   resource1_description: Tabs labeled with "Static-*" / "Dynamic-*" contain tables that are autoparsed to populate the tables included in the Static/Dynamic README pages
   warning3: null
-  alert4_title: null
+  alert4_title: Minimum Cell Size for Public Reporting
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recqmyWoJlgOLnHBD
   warning1: For Release 3.0, some baseline variables may be missing for children recruited postnatally because we do not currently use data collected after recruitment to populate or impute otherwise unavailable prenatal or V01 values. Users should consider recruitment timing when interpreting missingness in Static Table variables. A future release may harmonize postnatal recruitment data.
   description: |-
