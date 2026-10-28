@@ -121,16 +121,15 @@
 
 This page lists all instruments included in the current release, organized by domain. Each instrument links to a separate README page containing instrument documentation, including, where applicable, details of implementation and data collection, quality control procedures, data and responsible use warnings, scoring procedures, and references. Study protocols are also available on the [HBCD Study site](https://hbcdstudy.org/study-protocols/). 
 
-<div class="archive-controls" aria-label="Instrument filters">
+<div class="archive-controls">
   <div class="archive-controls-row">
     <input
       id="instr-search"
       class="archive-search"
       type="search"
       placeholder="Search instrument, construct, or table name..."
-      aria-label="Search instruments"
     >
-    <select id="instr-domain" aria-label="Filter by domain">
+    <select id="instr-domain">
       <option value="">All domains</option>
     </select>
     <button id="instr-reset" type="button">Clear filters</button>
@@ -310,6 +309,8 @@ The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Face
 ### <i class="fa fa-brain header-icon"></i> Imaging
 Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [MR Protocols & Release Data](mri/index.md) for details. Tabular Imaging includes tabulated pipeline derivatives, questionnaire/form data, and quality-control metrics:
 
+**See the supplemental [Tabulated Derivatives for OSPREY, QSIRecon, and XCP-D pipelines](mri/tables/tabulated-derivatives.html) for the full list of tables included for these pipelines (filter by pipeline name).**
+
 <div class="table-legend">
   <span class="legend-item">
     <i class="fa-solid fa-diagram-project legend-icon"></i>
@@ -360,7 +361,7 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
   <td>Metabolites</td>
   <td>
     <code>img_osprey_<span class="blue-text">{HERCULES|unedited}</span>_*</code>
-    <a href="mri/tables/osprey.html">→ View full file list</a>
+    <a href="mri/tables/tabulated-derivatives.html">→ View full file list</a>
   </td>
 </tr>
 <tr>
@@ -373,11 +374,16 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
   <td>QSIPrep QC Metrics</td>
   <td><code>img_qsiprep_space-ACPC_desc-image_qc</code></td> 
 </tr>
+<tr>
+  <td><a href="mri/dmri/#qsirecon">QSIRecon</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+  <td>QSIRecon Metrics</td>
+  <td><code>img_qsirecon-*</code> <a href="mri/tables/tabulated-derivatives.html">→ View full file list</a></td> 
+</tr>
 <tr> 
   <td><a href="mri/fmri/#xcp-d">XCP-D</a><i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
   <td>Morph/fMRI metrics</td>
   <td>
-    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-*</code> <a href="mri/tables/xcpd.html">→ View full file list</a>
+    <code>img_xcpd_hash-<span class="blue-text">{HASH}</span>_space-fsLR_seg-<span class="blue-text">{PARC}</span>_stat-*</code> <a href="mri/tables/tabulated-derivatives.html">→ View full file list</a>
   </td>
 </tr>
 </tbody>

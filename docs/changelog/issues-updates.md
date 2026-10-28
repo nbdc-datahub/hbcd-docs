@@ -40,7 +40,6 @@
   text-align: center;
   white-space: nowrap;
 }
-
 /* KNOWN ISSUES FILTER */
 .archive-controls {
   margin: 1.5rem 0 1rem;
@@ -49,14 +48,12 @@
   border-radius: 8px;
   background: #f8f9fa;
 }
-
 .archive-controls-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
   align-items: center;
 }
-
 .archive-search {
   flex: 1 1 280px;
   min-width: 220px;
@@ -81,22 +78,18 @@
   outline: 2px solid rgba(25, 155, 214, 0.25);
   border-color: #199bd6;
 }
-
 .archive-controls button {
   cursor: pointer;
   font-weight: 600;
 }
-
 .archive-controls button:hover {
   background: #f1f3f5;
 }
-
 .archive-status {
   margin-top: 0.65rem;
   font-size: 0.85rem;
   color: #666;
 }
-
 .archive-empty {
   display: none;
   padding: 2rem 1rem;
@@ -109,7 +102,6 @@
   .archive-controls-row {
     align-items: stretch;
   }
-
   .archive-controls input,
   .archive-controls select,
   .archive-controls button {
@@ -139,36 +131,30 @@ The tables below summarize known issues affecting the current data release and p
 <i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Pending Update
 </p>
 
-<div class="archive-controls" aria-label="Known issues filters">
+<div class="archive-controls">
   <div class="archive-controls-row">
     <input
       id="ki-search"
       class="archive-search"
       type="search"
-      placeholder="Search table/topic or summary..."
-      aria-label="Search known issues"
-    >
-
-    <select id="ki-domain" aria-label="Filter by domain">
+      placeholder="Search table/topic or summary...">
+    <select id="ki-domain">
       <option value="">All domains</option>
     </select>
-
-    <select id="ki-target" aria-label="Filter by target release">
+    <select id="ki-target">
       <option value="">All targets</option>
     </select>
-
-    <select id="ki-type" aria-label="Filter by type">
+    <select id="ki-type">
       <option value="">All types</option>
       <option value="issue">Known Issues</option>
       <option value="update">Pending Updates</option>
     </select>
     <button id="ki-reset" type="button">Clear filters</button>
   </div>
-  <div id="ki-status" class="archive-status" aria-live="polite"></div>
+  <div id="ki-status" class="archive-status"></div>
 </div>
 
 <div id="ki-empty" class="archive-empty">No matching issues or updates found.</div>
-
 
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
 ### All Data / General
@@ -331,12 +317,8 @@ The tables below summarize known issues affecting the current data release and p
 <td>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
 <td><span class='pill'>TBD</span></td>
 </tr>
-</tbody></table><!-- END KNOWN_ISSUES_TABLE -->
-
-
-
-
-  <br>
+</tbody></table>
+<!-- END KNOWN_ISSUES_TABLE -->
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {

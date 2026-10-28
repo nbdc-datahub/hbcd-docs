@@ -54,21 +54,21 @@ LUCI NOTE: update table to reorganize links to HBCD DOcs pages and also include 
 
 <tr>
   <td><a href="https://mriqc.readthedocs.io/en/latest/">MRIQC</a></td>
-    <td><a href="../../instruments/mri/smri/#qc-pipelines-mriqc-bme-x" aria-label="View HBCD file documentation for MRIQC" title="View HBCD file documentation"><code>mriqc/</code></a></td>
+    <td><a href="../../instruments/mri/smri/#qc-pipelines-mriqc-bme-x"><code>mriqc/</code></a></td>
   <td>Extracts image quality metrics from raw MRI data</td>
-  <td><a href="https://www.nmind.org/proceedings/mriqc/" aria-label="View MRIQC NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/mriqc/"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 <tr>
   <td><a href="https://brain-mri-enhancement.readthedocs.io/">BME-X</a></td>
-<td><a href="../../instruments/mri/smri/#qc-pipelines-mriqc-bme-x" aria-label="View HBCD file documentation for BME-X" title="View HBCD file documentation"><code>bme_x/</code></a></td>
+<td><a href="../../instruments/mri/smri/#qc-pipelines-mriqc-bme-x"><code>bme_x/</code></a></td>
   <td>Enhances structural T1w/T2w image quality</td>
-  <td><a href="https://www.nmind.org/proceedings/bmex/" aria-label="View BME-X NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/bmex/"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 <tr>
   <td><a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet</a></td>
-    <td><a href="../../instruments/mri/smri/#bibsnet" aria-label="View HBCD file documentation for BIBSNet" title="View HBCD file documentation"><code>bibsnet/</code></a></td>
+    <td><a href="../../instruments/mri/smri/#bibsnet"><code>bibsnet/</code></a></td>
   <td>Performs automated tissue segmentation for infant MRI via deep learning model</td>
-  <td><a href="https://www.nmind.org/proceedings/bibsnet/" aria-label="View BIBSNet NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/bibsnet/"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 <tr>
   <td><a href="https://nibabies.readthedocs.io/en/latest/">Infant-fMRIPrep</a></td>
@@ -78,7 +78,7 @@ LUCI NOTE: update table to reorganize links to HBCD DOcs pages and also include 
     <code>nibabies-d902942d/</code>
   </td>
     <td>Preprocesses structural and functional MRI data <a href="../../instruments/mri/fmri/#infant-fmriprep"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
-  <td><a href="https://www.nmind.org/proceedings/nibabies/" aria-label="View Infant-fMRIPrep NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/nibabies/" aria-label="View Infant-fMRIPrep NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 <tr>
   <td><a href="https://doi.org/10.1016/j.neuroimage.2020.116946">FreeSurfer</a></td>
@@ -96,13 +96,13 @@ LUCI NOTE: update table to reorganize links to HBCD DOcs pages and also include 
   <td><a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a></td>
   <td><a href="../../instruments/mri/fmri/#xcp-d" aria-label="View HBCD file documentation for XCP-D" title="View HBCD file documentation"><code>xcp_d/</code></a></td>
   <td>Performs functional MRI post-processing (denoising, connectivity matrices, etc.)</td>
-  <td><a href="https://www.nmind.org/proceedings/xcpd/" aria-label="View XCP-D NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/xcpd/" aria-label="View XCP-D NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 <tr>
   <td><a href="https://pennlinc.github.io/ModelArray/">ModelArrayIO</a></td>
   <td><a href="../../instruments/mri/fmri/#modelarrayio" aria-label="View HBCD file documentation for ModelArrayIO (fMRI)" title="View HBCD file documentation"><code>xcp_d-*-ModelArrayIO/</code></a></td>
   <td>Aggregates cohort-level HDF5 arrays from XCP-D</td>
-  <td><a href="https://www.nmind.org/proceedings/" aria-label="Browse NMIND proceedings for ModelArrayIO (fMRI)" title="Browse NMIND proceedings"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/" aria-label="Browse NMIND proceedings for ModelArrayIO (fMRI)" title="Browse NMIND proceedings"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 
 <tr class="table-group-row">
@@ -118,7 +118,7 @@ LUCI NOTE: update table to reorganize links to HBCD DOcs pages and also include 
   <td><a href="https://hbcd-symri-postproc.readthedocs.io/en/latest/">qMRI Postproc</a></td>
   <td><a href="../../instruments/mri/qmri/#processing-derivatives" aria-label="View HBCD file documentation for qMRI Postproc" title="View HBCD file documentation"><code>qmri_postproc/</code></a></td>
   <td>Performs minimal post-processing of SyMRI images</td>
-  <td><a href="https://www.nmind.org/proceedings/hbcd_qmri_postproc/" aria-label="View qMRI Postproc NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/hbcd_qmri_postproc/" aria-label="View qMRI Postproc NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 
 <tr class="table-group-row">
@@ -128,19 +128,19 @@ LUCI NOTE: update table to reorganize links to HBCD DOcs pages and also include 
   <td><a href="https://qsiprep.readthedocs.io/en/latest/">QSIPrep</a></td>
   <td><a href="../../instruments/mri/dmri/#qsiprep" aria-label="View HBCD file documentation for QSIPrep" title="View HBCD file documentation"><code>qsiprep/</code></a></td>
   <td>Preprocesses dMRI data (e.g. motion and distortion correction)</td>
-  <td><a href="https://www.nmind.org/proceedings/qsiprep/" aria-label="View QSIPrep NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/qsiprep/" aria-label="View QSIPrep NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 <tr>
   <td><a href="https://qsirecon.readthedocs.io/en/latest/">QSIRecon</a></td>
   <td><a href="../../instruments/mri/dmri/#qsirecon" aria-label="View HBCD file documentation for QSIRecon" title="View HBCD file documentation"><code>qsirecon-*/</code></a></td>
   <td>Runs post-processing reconstruction workflows</td>
-  <td><a href="https://www.nmind.org/proceedings/qsirecon/" aria-label="View QSIRecon NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/qsirecon/" aria-label="View QSIRecon NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 <tr>
   <td><a href="https://pennlinc.github.io/ModelArray/">ModelArrayIO</a></td>
   <td><a href="../../instruments/mri/dmri/#modelarrayio" aria-label="View HBCD file documentation for ModelArrayIO (dMRI)" title="View HBCD file documentation"><code>qsirecon-ModelArrayIO/</code></a></td>
   <td>Aggregates cohort-level HDF5 arrays</td>
-  <td><a href="https://www.nmind.org/proceedings/" aria-label="Browse NMIND proceedings for ModelArrayIO (dMRI)" title="Browse NMIND proceedings"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/" aria-label="Browse NMIND proceedings for ModelArrayIO (dMRI)" title="Browse NMIND proceedings"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 
 <tr class="table-group-row">
@@ -150,7 +150,7 @@ LUCI NOTE: update table to reorganize links to HBCD DOcs pages and also include 
   <td><a href="https://osprey-bids.readthedocs.io/en/latest/">OSPREY-BIDS</a></td>
   <td><a href="../../instruments/mri/mrs/#mrs-processing-derivatives" aria-label="View HBCD file documentation for OSPREY-BIDS" title="View HBCD file documentation"><code>osprey/</code></a></td>
   <td>Processes MRS data using OSPREY-compatible BIDS inputs and outputs</td>
-  <td><a href="https://www.nmind.org/proceedings/osprey_bids/" aria-label="View OSPREY-BIDS NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/osprey_bids/" aria-label="View OSPREY-BIDS NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 
 <tr class="table-group-row">
@@ -160,7 +160,7 @@ LUCI NOTE: update table to reorganize links to HBCD DOcs pages and also include 
   <td><a href="https://docs-hbcd-made.readthedocs.io/en/latest/">HBCD-MADE</a></td>
   <td><a href="../../instruments/eeg/release-data/#hbcd-made-derivatives" aria-label="View HBCD file documentation for HBCD-MADE" title="View HBCD file documentation"><code>made/</code></a></td>
   <td>Processes EEG data using MADE-compatible BIDS inputs and outputs</td>
-  <td><a href="https://www.nmind.org/proceedings/hbcdmade/" aria-label="View HBCD-MADE NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/hbcdmade/" aria-label="View HBCD-MADE NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 
 <tr class="table-group-row">
@@ -170,7 +170,7 @@ LUCI NOTE: update table to reorganize links to HBCD DOcs pages and also include 
   <td><a href="https://hbcd-motion-postproc.readthedocs.io/en/latest/">HBCD-Motion</a></td>
   <td><a href="../../instruments/sensors/wearsensors/#derivatives" aria-label="View HBCD file documentation for HBCD-Motion" title="View HBCD file documentation"><code>motion/</code></a></td>
   <td>Processes leg movement data from wearable sensor recordings</td>
-  <td><a href="https://www.nmind.org/proceedings/hbcd_motion_postproc/" aria-label="View HBCD-Motion NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield" aria-hidden="true"></i></a></td>
+  <td><a href="https://www.nmind.org/proceedings/hbcd_motion_postproc/" aria-label="View HBCD-Motion NMIND evaluation" title="View NMIND evaluation"><i class="fa-solid fa-shield"></i></a></td>
 </tr>
 
 </tbody>
