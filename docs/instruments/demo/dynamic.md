@@ -13,8 +13,6 @@
 {{ data_warning(instruments.dynamic) }}
 {{ issues_banner() }}
 
----
-
 ## Overview
 
 {{ instrument_description(instruments.dynamic) }}
@@ -25,32 +23,34 @@
 ) }}
 
 ## HBCD Cohorts & Caregiver Types
-Cohort information (`data_cohort`) includes cohort subtypes and caregiver Types A-E for each participant. Cohort subtypes are split into `Main Child` and `Multiple Birth`, with additional labeling for Postnatal Recruits (PNR) and Multiple Birth siblings (Main Child vs. Sibling):
+The `data_cohort` field identifies each participant’s cohort and subtype, including postnatal recruitment (PNR), multiple-birth child role (Main Child or Sibling), and caregiver type (A–E).
 
-- **HBCD Main Child**
-    - HBCD Main Child
-    - HBCD Main Child - Postnatal Recruitment
-    - HBCD Main Child - Type A-E
-- **HBCD Multiple Birth**
-    - HBCD Multiple Birth - Main Child
-    - HBCD Multiple Birth - Postnatal Recruitment
-    - HBCD Multiple Birth - Postnatal Recruitment - Sibling
-    - HBCD Multiple Birth - Sibling
-    - HBCD Multiple Birth - Type A - E  
+**HBCD Main Child**
 
-#### Caregiver Types
- 
+- HBCD Main Child
+- HBCD Main Child - Postnatal Recruitment
+- HBCD Main Child - Type A-E
+
+**HBCD Multiple Birth**
+
+- HBCD Multiple Birth - Main Child
+- HBCD Multiple Birth - Postnatal Recruitment
+- HBCD Multiple Birth - Postnatal Recruitment - Sibling
+- HBCD Multiple Birth - Sibling
+- HBCD Multiple Birth - Type A - E
+
+### Caregiver Types 
  - **Type A**: Temporary alternative caregiver
- - **Type B**: Change in primary caregiver (placement only) without change in legal custody (Birth Parent unable to complete visit)
+ - **Type B**: Change in primary caregiver or placement without change in legal custody; birth parent unable to complete the visit
  - **Type C**: Change in joint custody
- - **Type D**: Change in placement (Child removed from birth parent and placed in foster care)
+ - **Type D**: Type D: Change in placement; the child is removed from the birth parent and placed in foster care
  - **Type E**: Change in legal custody and placement (e.g., adoption)
  
-##### Postnatal Recruits (PNR)
-Postnatal Recruits are enrolled in the study after the child is born and complete modified V01 and V02 visits. The PNR cohort is only denoted for the V02 visit, with all subsequent visits falling under the same cohort as a standard participant. To check whether a participant was part of a PNR cohort, users can either check the cohort at V02 or refer to the [PNR participant list](https://hbcd-docs-private.lassoinformatics.com/participant_lists/PNR_participants-supplemental.csv) available to DUC-authorized users via the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download).
+### Postnatal Recruits (PNR)
+Postnatal recruits enroll after birth and complete modified V01 and V02 visits. **The PNR cohort designation appears only at V02.** Subsequent visits use the standard cohort designation. To identify PNR participants, check `data_cohort` at V02 or consult the [PNR participant list](https://hbcd-docs-private.lassoinformatics.com/participant_lists/PNR_participants-supplemental.csv), available to DUC-authorized users through the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download).
 
-##### Multiple Birth Participants
-Multiple Birth cohorts include siblings/twins enrolled as **Main Child** and **Sibling** participants. Instruments or instrument fields that are specific to the caregiver rather than the child will be identical across siblings. For twins and triplets, age variables will also be identical (including those derived from jittered date of birth). The supplemental [Multibirth participant list](https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv), which includes mapping between sibling participant IDs, is available to DUC-authorized users via the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download).
+### Multiple Birth Participants
+Multiple-birth participants are enrolled as **Main Child** or **Sibling**. Caregiver-specific instruments and fields have identical values across siblings. For twins and triplets, age variables are also identical, including those derived from jittered dates of birth. The [Multibirth participant list](https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv) maps sibling participant IDs and is available to DUC-authorized users through the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download).
 
 ## Substance Use Flags
 **Substance use (SU) flag** variables indicate whether a participant met study-defined criteria for prenatal exposure to Alcohol, Nicotine, Cannabis, Opioids, or Stimulants ([Gurka et al., 2025](https://doi.org/10.1016/j.dcn.2024.101494)). Variables include instrument-specific and "rolled-up" SU flags that aggregate evidence across instruments to provide a single indicator per substance. Source study instruments include:
@@ -118,11 +118,9 @@ Prenatal exposure thresholds that define when an instrument-specific report is c
 
 The Transition in Care (TIC) variable in the Dynamic Participant Information dataset is derived from 2 measures: (a) the [Transition in Care Screener](../SED/transitions-in-care.md), which is administered by Research Assistants prior to each visit starting with V2, and (b) the [Transition in Care Questionnaire](../SED/tic_quest.md), which is completed by participants at V6 and V8. The TIC derived variable indicates whether or not a child ever experienced a change in primary caregiver, either temporary or permanent, and reflects informal placement with relatives as well as formal placements like foster care and kinship care. (defined as 0 = not experienced a TIC, and 1 = experienced a TIC).
 
-
-{{ scoring(instruments.dynamic) }}
-
 ---
 
+{{ scoring(instruments.dynamic) }}
 {{ references(instruments.dynamic) }}
 
 

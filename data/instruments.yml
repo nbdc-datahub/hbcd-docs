@@ -1846,15 +1846,11 @@ qmri:
     The HBCD protocol includes a short B1+ field map acquisition (~30–45 seconds across all scanner types) to calibrate flip angle measurements, which can vary spatially due to B1+ field inhomogeneity. This calibration is required for accurate T1, T2, and PD estimation. Because the transmit B1+ field varies smoothly across space, coarse spatial resolution is sufficient, enabling rapid acquisition. Vendor-specific implementations in the HBCD protocol include Actual Flip Angle Imaging (AFI) for GE and Philips, and a pre-saturation turbo-FLASH readout for Siemens ([Yarnykh 2007](https://doi.org/10.1002/mrm.21120)).
   measure: Quantitative MRI
 dynamic:
-  supp2_text: |-
-    ## Transition in Care
-
-    The Transition in Care (TIC) variable in the Dynamic Participant Information dataset is derived from 2 measures: (a) the Transition in Care Screener, which is administered by Research Assistants prior to each visit starting with V2, and (b) the Transition in Care Questionnaire, which is completed by participants at V6 and V8. The TIC derived variable indicates whether or not a child ever experienced a change in primary caregiver, either temporary or permanent, and reflects informal placement with relatives as well as formal placements like foster care and kinship care. (defined as 0 = not experienced a TIC, and 1 = experienced a TIC).
-
-    (link to TIC Screener and TIC Questionnaire READ ME documents, which provide more details and references)
+  supp2_text: DO NOT USE
   status: Work in progress
   alert1: When using HBCD data, all data users must follow responsible use requirements described in the Data Use Certification (DUC). When conceptualizing studies, analyzing data, and communicating findings using demographic, socioeconomic, household, caregiver, neighborhood, or other social and environmental characteristics, researchers should consider approaches that avoid stigmatizing individuals or groups and perpetuating harmful biases.
   Date submitted: '2026-08-25'
+  hbcd_mods2_title: null
   hbcd_mods1: null
   alert1_title: ' Responsible Use of Demographic and Social Variables'
   duration: null
@@ -1880,12 +1876,8 @@ dynamic:
   alert2_title: Interpretation of Contextual Measures
   respondent_category: null
   admin_notes: |-
-    8/24 Notes
-
-    README updated
-    - Domain is now Participant Derived
-    - See dynamic1 tab of google sheet [here](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?usp=sharing) to update dynamic table overview
-    - other main text sections are stored under "Supplemental Text Seciont 1" in this form
+    - See dynamic1 tab of google sheet [here](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?usp=sharing) to update table overview
+    - most text is hardcoded and not available to update via this form - reach out to Luci directly to make changes to those sections
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/dynamic/
   email: nslopen@hsph.harvard.edu
   visits: V01, V02, V04, V06
@@ -1902,13 +1894,12 @@ dynamic:
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recSACxqruv4qvXiH
   warning1: The Dynamic Table contains one row per HBCD child per scheduled visit/session through V06, but not all variables are collected or applicable at every visit. A missing value may therefore indicate that a measure was not administered or applicable at that visit, that the scheduled visit was missed, or that the requested information was otherwise unavailable. Researchers should consider each variable's source and expected collection timing when interpreting longitudinal missingness.
   description: Datasets within the Demographics domain are intended to provide HBCD investigators with a concise set of commonly used variables without requiring users to navigate multiple source files. The Dynamic Table is a **derived measure** with information computed from  study instruments such as the Adult and Child Demographics (`sed_{bm|ch}_demo`). Dynamic data include critical participant- and visit-level data that, unlike the Static Participant Information, may vary across study visits.
-  supp3_text: null
+  hbcd_mods3_title: null
+  supp3_text: DO NOT USE
   domain: HBCD General
   release: 3.0 (new instrument/info required)
   alert3_title: Transition in Care Variable
-  qc: |-
-    - Data are visually inspected for unexpected values, distributions, missingness patterns, and other apparent anomalies.
-    - Potential issues identified during review are flagged for further investigation as needed.
+  qc: Data are visually inspected for unexpected values, distributions, missingness patterns, and other anomalies, with potential issues flagged for further investigation as needed.
   administration: null
   Form:
     label: Form Link
@@ -1918,10 +1909,8 @@ dynamic:
     reported number of adults and children and then adding one because the questions exclude the focal HBCD child.  Visit-specific contextual variables, including urban/rural classification and Social Vulnerability Index measures, are linked to the residential information associated with the corresponding visit.
   changelog: this should be considered in draft form until the data table is finalized
   resources: null
-  supp1_text: '## HBCD Cohorts & Caregiver Types  **Cohort** information (`data_cohort`) includes cohort subtypes and caregiver Types A-E for each participant. Cohort subtypes are split into **Main Child** and **Multiple Birth**, with additional labeling for _Postnatal Recruits_ (_PNR_) and Multiple Birth siblings (_Main Child_ vs. _Sibling_):  - **HBCD Main Child**     - HBCD Main Child     - HBCD Main Child - Postnatal Recruitment     - HBCD Main Child - Type _A - E_ - **HBCD Multiple Birth**     - HBCD Multiple Birth - Main Child     - HBCD Multiple Birth - Postnatal Recruitment     - HBCD Multiple Birth - Postnatal Recruitment - Sibling     - HBCD Multiple Birth - Sibling     - HBCD Multiple Birth - Type _A - E_  ##### Caregiver Types  - **Type A:** Temporary alternative caregiver - **Type B:** Change in primary caregiver (placement only) without change in legal custody (Birth Parent unable to complete visit) - **Type C:** Change in joint custody - **Type D:** Change in placement (Child
-    removed from birth parent and placed in foster care) - **Type E:** Change in legal custody and placement (e.g., adoption)  ##### Postnatal Recruits (PNR)  Postnatal Recruits are enrolled in the study after the child is born and complete modified V01 and V02 visits. The PNR cohort is only denoted for the V02 visit, with all subsequent visits falling under the same cohort as a standard participant. To check whether a participant was part of a PNR cohort, users can either check the cohort at V02 or refer to the [PNR participant list](https://hbcd-docs-private.lassoinformatics.com/participant_lists/PNR_participants-supplemental.csv) available to DUC-authorized users via the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download).  ##### Multiple Birth Participants  Multiple Birth cohorts include siblings/twins enrolled as **Main Child** and **Sibling** participants. Instruments or instrument fields that are specific to the caregiver rather than the child will
-    be identical across siblings. For twins and triplets, age variables will also be identical (including those derived from jittered date of birth). The supplemental [Multibirth participant list](https://hbcd-docs-private.lassoinformatics.com/participant_lists/multi_birth_participants-supplemental.csv), which includes mapping between sibling participant IDs, is available to DUC-authorized users via the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download).  ## Substance Use Flags  **Substance use (SU) flag** variables indicate whether a participant met study-defined criteria for prenatal exposure to Alcohol, Nicotine, Cannabis, Opioids, or Stimulants ([Gurka et al., 2025](https://doi.org/10.1016/j.dcn.2024.101494)). Variables include instrument-specific and "rolled-up" SU flags that aggregate evidence across instruments to provide a single indicator per substance. Source study instruments include:  - [Timeline Follow Back (TLFB)](https://docs.hbcdstudy.org/2.1/instruments/pregexp/su/tlfb):
-    Self-reported use - [Health V2- Infancy](https://docs.hbcdstudy.org/2.1/instruments/pregexp/pex): Diagnosis of Neonatal Opioid Withdrawal Syndrome (NOWS) or Fetal Alcohol Syndrome (FAS) - [Nail](https://docs.hbcdstudy.org/2.1/instruments/biospec/nails) and/or [Urine](https://docs.hbcdstudy.org/2.1/instruments/biospec/urine) positive toxicology results  Prenatal exposure thresholds that define when an instrument-specific report is considered positive for prenatal exposure are outlined in [Table 2 of Gurka et al. 2025](https://www.sciencedirect.com/science/article/pii/S1878929324001555?via%3Dihub#tbl0010). For each substance, the derived SU flag is positive if one or more of the corresponding instrument-specific reports are positive.  ##### SU Flag Variable Summary  _All variable names are prefixed with `su_flag_`, omitted below for readability._'
+  hbcd_mods1_title: null
+  supp1_text: DO NOT USE
   measure: Dynamic Participant Information
   construct: Demographics
 home21:
@@ -2173,10 +2162,8 @@ mrs:
 medhx:
   status: Complete / Stable
   alert1: null
-  known_issue_3: null
   hbcd_mods2_title: null
   warning3_title: null
-  pending_update_1: null
   hbcd_mods1: null
   duration: 10 min
   hbcd_mods2: null
@@ -2205,7 +2192,6 @@ medhx:
   alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recYXU0ptFD1MAF1L
   warning1: null
-  pending_update_2: null
   description: The **Medical History Questionnaire** is a questionnaire developed by the physical health working group members that assesses medical diagnoses, exposure to medications surgical and therapeutic interventions, vaccine behavior, dental health, insurance coverage and injury prevention behaviors. Of note, injury prevention questions change at each visit to correlate with preventable injuries at specific ages.
   hbcd_mods3_title: null
   domain: Physical Health
@@ -2217,9 +2203,7 @@ medhx:
     label: Form Link
     url: https://form.fillout.com/t/qaNxHYsnPBus?id=recYXU0ptFD1MAF1L
   scoring: null
-  known_issue_2: null
   resources: null
-  known_issue_1: null
   hbcd_mods1_title: null
   measure: Medical History Questionnaire
   construct: Medical History
@@ -3053,7 +3037,6 @@ vineland_3:
     Each item in the Vineland-3 is scored on a scale of 0 to 3, with higher scores indicating higher levels of adaptive behavior. Summary scores are automatically computed within the Pearson Q-Global system, which generates a standard score, percentile rank, base rate score, confidence intervals (high/low), and standard score minus the mean score. Full scoring details are described in Sparrow et al. 2026.
 
     Three more complex Vineland-3 subdomains (Written, Domestic, Community) are unavailable for very young children because they are designed for children age 3.0 years and older. All Domain scores (Communication, Daily Living, Socialization) are available. The Motor Skills Domain scores are available for children under age 10.0 years.
-  known_issue_1: All values for subtests Coping Skills, Domestic, and Written are not given to children at V05 as they are too young, but the missing reason for some participants is instead coded in the shadow matrix as "Logic skipped" or "Unknown." These will be resolved in a future release.
   measure: Vineland-3
   construct: Adaptive Behavior
 gled:
@@ -3481,9 +3464,7 @@ static:
   domain: HBCD General
   release: 3.0 (new instrument/info required)
   alert3_title: Use of Constructed Race and Ethnicity Variables
-  qc: |-
-    - Data are visually inspected for unexpected values, distributions, missingness patterns, and other apparent anomalies.
-    - Potential issues identified during review are flagged for further investigation as needed.
+  qc: Data are visually inspected for unexpected values, distributions, missingness patterns, and other anomalies, with potential issues flagged for further investigation as needed.
   administration: null
   Form:
     label: Form Link
@@ -3503,6 +3484,7 @@ static:
 
     Static Participant Information also includes a baseline residential Area Deprivation Index (ADI) measure derived using the residential address available at screening. This measure represents neighborhood context at that designated time point and should not be interpreted as a longitudinal measure of residential context.
   measure: Static Participant Information
+  construct: Demographics
 ehits:
   status: Complete / Stable
   hbcd_mods2_title: Instruction/Assessment Item Modifications
