@@ -131,9 +131,8 @@ LUCI NOTES:
   </div>
 </div>
 
-### 3.0 New Domain: Participant Derived
-
-The **Demographics** domain has been replaced with the domain **Participant Derived**. Through Release 2.1, the Demographics domain included two tables containing derived participant information, *Visit Info* (visit-specific information) and *Basic Demographics* (general participant information derived from SED Demographics and administrative records). For Release 3.0, the Demographics domain has been renamed **Participant Derived**, with information organized into static and dynamic tables:
+### 3.0 New Domain: HBCD General
+Through Release 2.1, the Demographics domain included two tables containing derived participant information, *Visit Info* (visit-specific information) and *Basic Demographics* (general participant information derived from SED Demographics and administrative records). For Release 3.0, the Demographics domain has been renamed **HBCD General**, with information organized into static and dynamic tables:
 
 - **Static Participant Information**: information that remains constant across visits, such as sex assigned at birth and race/ethnicity
 - **Dynamic Participant Information**: information that may change over time and is therefore represented longitudinally
@@ -443,7 +442,7 @@ Corrected implausible values (&gt;168 hours) in <code>ncl_ch_mlds_arr_hr_wk</cod
 </tr>
 </tbody></table>
 
-##### Participant Derived
+##### ived
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>

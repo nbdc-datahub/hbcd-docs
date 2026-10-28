@@ -484,7 +484,7 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
 </tbody>
 </table>
 
-### <i class="fas fa-id-card header-icon"></i> Participant Derived
+### <i class="fas fa-id-card header-icon"></i> HBCD General
 <table class="compact-table-no-vertical-lines" style="width: 100%;">
 <thead>
 <tr>

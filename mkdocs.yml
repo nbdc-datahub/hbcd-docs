@@ -61,7 +61,7 @@ nav:
     - Behavior, Biology, & Environment:
         - Administrative:
             - Study Navigator Contact Form: instruments/admin/study-navigators.md
-        - Participant Derived:
+        - HBCD General:
             - Static Participant Information: instruments/demo/static.md
             - Dynamic Participant Information: instruments/demo/dynamic.md
         - Behavior & Caregiver-Child Interaction: 
