@@ -306,6 +306,29 @@ The EEG datasets include task data from Auditory Mismatch Negativity (MMN), Face
 </table>
 
 
+### <i class="fas fa-id-card header-icon"></i> HBCD General
+<table class="compact-table-no-vertical-lines" style="width: 100%;">
+<thead>
+<tr>
+<th>Instrument</th>
+<th>Construct</th>
+<th>Table Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="demo/dynamic/">Dynamic Participant Information</a></td>
+  <td>Dynamic derived participant information</td>
+  <td><code>par_gd_dyn</code></td>
+</tr>
+<tr>
+  <td><a href="demo/static/">Static Participant Information</a></td>
+  <td>Static derived participant information</td>
+  <td><code>par_gd_stc</code></td>
+</tr>
+</tbody>
+</table>
+
 ### <i class="fa fa-brain header-icon"></i> Imaging
 Imaging includes Magnetic Resonance Imaging (structural, functional, quantitative, and diffusion MRI) as well as MR Spectroscopy (MRS) datasets. File-based data include raw BIDS and pipeline derivatives; see [MR Protocols & Release Data](mri/index.md) for details. Tabular Imaging includes tabulated pipeline derivatives, questionnaire/form data, and quality-control metrics:
 
@@ -457,8 +480,6 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
 </tbody>
 </table>
 
-
-
 ### <i class="fa fa-microchip header-icon"></i> Novel Technologies & Wearable Sensors
 Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensors/#derivatives">HBCD-Motion</a> pipeline derivatives - see [Release Data](sensors/wearsensors.md#release-data) for details. Tabulated data includes questionnaires and sensor checklists:
 
@@ -480,29 +501,6 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
 <td>Biosensor Receipt / Setup</td>
 <td>Administrative</td>
 <td><code>nt_ch_sens_rcpt</code> / <code>nt_ch_sens_setup</code></td>
-</tr>
-</tbody>
-</table>
-
-### <i class="fas fa-id-card header-icon"></i> HBCD General
-<table class="compact-table-no-vertical-lines" style="width: 100%;">
-<thead>
-<tr>
-<th>Instrument</th>
-<th>Construct</th>
-<th>Table Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><a href="demo/dynamic/">Dynamic Participant Information</a></td>
-  <td>Dynamic derived participant information</td>
-  <td><code>par_gd_dyn</code></td>
-</tr>
-<tr>
-  <td><a href="demo/static/">Static Participant Information</a></td>
-  <td>Static derived participant information</td>
-  <td><code>par_gd_stc</code></td>
 </tr>
 </tbody>
 </table>
