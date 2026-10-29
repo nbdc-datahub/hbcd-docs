@@ -344,6 +344,78 @@ demographics_ch:
   warning4_title: Incorrect Interpretation of Days Per Month Living with Child Item
   measure: Child Demographics
   construct: null
+maps:
+  status: README updated & ready for SME review
+  alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
+  hbcd_mods1: Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or were replaced with ‘my child’ or 'them' when eliminating pronouns was not grammatically possible. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.
+  duration: 5 min MAPS-TL/2 min MAPS-EASI
+  full_name: |-
+    Multidimensional Assessment Profiles-Temper Loss Scale, Version: Infancy (<1 year old)
+
+    Multidimensional Assessment Profiles-Temper Loss Scale, Version: Toddlerhood & Preschool
+
+    Multidimensional Assessment Profiles-Early Assessment Screener for Irritability, Version: Toddlerhood (Short Form)
+  alert2: null
+  assessment_type: Questionnaire
+  table_name: |-
+    mh_cg_mapdb__inf
+    mh_cg_mapstl__tod
+    mh_cg_mapstl__easi
+  warning2: null
+  references: |-
+    Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69, 101422. <https://doi.org/10.1016/j.dcn.2024.101422>
+
+    Krogh-Jespersen, S., Kaat, A. J., Petitclerc, A., Perlman, S. B., Briggs-Gowan, M. J., Burns, J. L., Adam, H., Nili, A., Gray, L., & Wakschlag, L. S. (2022). Calibrating temper loss severity in the transition to toddlerhood: Implications for developmental science. _Applied Developmental Science_, 26(4), 785–798. <https://doi.org/10.1080/10888691.2021.1995386>
+
+    Wakschlag, L. S., Zhang, Y., Heffernan, M. E., MacNeill, L. A., Peterson, E. O., Friedland, S., Sass, A. J., Smith, J. D., Davis, M. M., & Wiggins, J. L. (2024). How EASI can it be? Closing the research-to-practice gap via population-based validation of the MAPS-EASI 2.0 early childhood irritability screener for translation to clinical use. _Translational issues in psychological science_, _10_(4), 435–448. <https://doi.org/10.1037/tps0000428>
+  respondent_category: Parent on Child
+  admin_notes: |-
+    Luci note 10/19: combined MAPS-TL and MAPS-EASI - check with SMEs to see if they approve or not! followed up via email for final confirmation, will regard as complete unless i hear otherwise
+
+    Isabel Rendon Jordan <isabel.jordan@northwestern.edu>
+  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps
+  visits: |-
+    MAPS-TL (Infancy): V03
+    MAPS-TL (Toddlerhood & Preschool): V05
+    MAPS-EASI (Toddlerhood): V07
+  primary_data_type: Tabulated data
+  README:
+    label: View
+    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps
+  warning3: null
+  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec4Nw2EYTIySNxXe
+  warning1: The MAPS-TL and MAPS-EASI assess normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.
+  description: The **Multidimensional Assessment Profiles–Temper Loss scale (MAPS-TL)** is a well-validated survey assessing irritability across the typical-to-atypical spectrum. Irritability has been identified as an early dimensional marker of lifespan mental health risk Questions address the child’s behavior over the past month, including dysregulation, responses to environmental input, and the contexts in which behaviors occur. The scale helps characterize early mental health risk and identify children at increased risk for later adjustment difficulties ([Edwards et al., 2024](https://doi.org/10.1016/j.dcn.2024.101422)). The **Multidimensional Assessment Profiles–Early Assessment Screener for Irritability (MAPS-EASI)** is a more recently developed short form of the MAPS-TL ([Wakschlag et al., 2024](https://doi.org/10.1037/tps0000428)).
+  domain: Behavior & Caregiver-Child Interactions
+  release: 3.0 (new instrument/info required)
+  qc: |-
+    - Examine missingness by counting items answered per participant.
+    - Check age is within expected ranges  (3-9 months MAPS-TL Infant / 10-17 months MAPS-TL Toddlerhood / 18-31 months MAPS-EASI).
+    - Review summary statistics and visualizations (item frequencies, age, prorated scores).
+    - Assess reliability (Cronbach’s α).
+  administration: Remote
+  Form:
+    label: Form Link
+    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec4Nw2EYTIySNxXe
+  scoring: |-
+    ### MAPS-TL
+
+    The MAPS-TL includes 17 items at Visit 3 (V03) and 40 items at Visit 5 (V05). Items are rated on a 6-point frequency scale, where higher scores indicate more frequent occurrence of the measured behaviors (_1 = Never, 2 = Rarely (<1 day/week), 3 = Some days (1–3 days/week), 4 = Most days (4–6 days/week), 5 = Every day, 6 = Many times each day)._
+
+    A summary score is calculated when responses are available for at least 9 of 17 items at V03 and 20 of 40 items at V05.
+    If fewer items are completed, the score is recorded as missing. When some items are missing, but the minimum number has been answered, a prorated score is calculated:
+
+    **_Prorated Score_**_ = (Sum of answered items ÷ Number of answered items) × Total number of items_
+
+    ### MAPS-EASI
+
+    The 3 MAPS-EASI Irritability Scale items (items `001`_ - _`003`) are answered on a scale of 0-5. Possible responses include:_ 0 = Never, 1 = Rarely (Less than once per week), 2 = Some (1-3) days of the week, 3 = Most (4-6) days of the week, 4 = Every day of the week, 5 = Many times each day, Prefer not to answer._
+
+    The 2 MAPS-EASI Impact Rating items (items `004`_ & _`005`) are answered on a scale of 0-3. Possible responses include: _0 = No problems, 1 = Minimal problems, 2 = A lot of problems, 3 = Severe problems, Prefer not to answer._
+
+    A sum score is calculated for all Irritability Scale items (`001`_ - _`003`). If any of the 3 Irritability Scale items are left unanswered (NA/Decline to answer/etc.), the sum score will be set to NA/missing (strict missingness rule).
+  measure: MAPS
+  construct: Irritability
 motion:
   status: Complete / Stable
   duration: 72 hours continuous wear
@@ -562,10 +634,10 @@ dit:
   supp3_text: null
   domain: Neurocognition & Language
   release: '3.0'
-  qc: "**Deferred imitation methods**\n\nWritten by Tracy Riggins, Edited by Sarahjane Dube, Reviewed by Alexi Potter, Julie Kable  and Natacha Akshoomoff\n\n8/5/25\n\n**Visit 6 (Gong and Beary-Go-Round):**\n\nAn SOP was provided with detailed administration and scoring instructions. Training was conducted via Zoom and in-person sessions and consisted of detailed descriptions and example videos.\n\nEach RA went through a two-step certification process – administration and scoring. For the first step, each RA administered the V06 deferred imitation protocol to an adult, video recorded it, filled out a self-assessment form (with scores) and submitted these materials to the Infant Testing Core for review. An expert (TR, ZC, IS, SD, NS, AG) reviewed the video for both administration and scoring accuracy.  Feedback was always given.  If the _administration_ did not meet threshold, the RA was asked to submit another video with an adult participant. If scoring was inaccurate, this was communicated\
-    \ to the RA so they could correct it in the second certification step. This process continued until the RA submitted a video that met threshold, at which point RAs were certified in administration and released to study participants and to proceed to the second step.\n\nRAs who were certified to administer the task, then video recorded their administration to a child (pilot OR main study) participant. RAs scored the child’s performance (in LORIS) and an expert (TR, ZC, SD, NS) reviewed the video for both administration and scoring accuracy.  Feedback was always given.  If the administration met a standard threshold (i.e., no administration or scoring errors), the RA was certified in scoring the task and fully certified to administer deferred imitation in main study without the need for expert video review.  If the administration did not meet threshold, the RA was asked to submit another video with a different child participant and submit the video for review.  If during any video review,\
-    \ scores were incorrect, the RA was asked to correct them in _LORIS_ (see Error code: \"Task administered by non-certified individual\").**  The expert reviewer ensured the scores were updated accurately and noted this in the certification log notes.  \n\nAfter the two-step certification process, RAs were released to administer and score deferred imitation to child participants without video review. To prevent drift, address questions and assess inter-rater-reliability, Training Review Sessions led by an expert (SD, TR) were mandatory at which certified RAs would review administration and scoring procedures followed by submitting a video of their next administration for personalized feedback.\n\n \n\n \n\n**Visit 8 (Farm and Garden):**\n\nAn SOP was provided with detailed administration and scoring instructions. Although the core concepts are the same for the deferred imitation task at V06 and V08, the event sequences differ, therefore there was a need for expert review, despite the\
-    \ previous certification. Training was conducted via Zoom and in-person sessions and consisted of detailed descriptions and example videos. \n\nEach RA (certified to administer V06) was asked to record their first V08 child participant (pilot OR main study), score the child’s performance (in LORIS) and submit for expert review.  An expert reviewer (TR, ZC, SD, NS) reviewed the video for accuracy.  Feedback was always given.  If the administration met a standard threshold (i.e., no major administration or scoring errors), the RA was approved to continue without video expert review.  If the administration and/or scoring did not meet threshold, the RA was asked to submit a video of their next V08 DI administration with another child participant.  Until approved for V08, any incorrect scores were corrected by the RA in LORIS.  The expert reviewer ensured the scores were updated accurately and noted this in the certification log notes. To prevent drift, address questions and assess inter-rater-reliability,\
+  qc: "++**Deferred imitation methods**++\n\nWritten by Tracy Riggins, Edited by Sarahjane Dube, Reviewed by Alexi Potter, Julie Kable  and Natacha Akshoomoff\n\n8/5/25\n\n**Visit 6 (Gong and Beary-Go-Round):**\n\nAn SOP was provided with detailed administration and scoring instructions. Training was conducted via Zoom and in-person sessions and consisted of detailed descriptions and example videos.\n\nEach RA went through a two-step certification process – administration and scoring. For the first step, each RA administered the V06 deferred imitation protocol to an adult, video recorded it, filled out a self-assessment form (with scores) and submitted these materials to the Infant Testing Core for review. An expert (TR, ZC, IS, SD, NS, AG) reviewed the video for both administration and scoring accuracy.  Feedback was always given.  If the _administration_ did not meet threshold, the RA was asked to submit another video with an adult participant. If scoring was inaccurate, this was communicated\
+    \ to the RA so they could correct it in the second certification step. This process continued until the RA submitted a video that met threshold, at which point RAs were certified in administration and released to study participants and to proceed to the second step.\n\nRAs who were certified to administer the task, then video recorded their administration to a child (pilot OR main study) participant. RAs scored the child’s performance (in LORIS) and an expert (TR, ZC, SD, NS) reviewed the video for ++both administration and scoring accuracy++.  Feedback was always given.  If the administration met a standard threshold (i.e., no administration or scoring errors), the RA was certified in scoring the task and fully certified to administer deferred imitation in main study without the need for expert video review.  If the administration did not meet threshold, the RA was asked to submit another video with a different child participant and submit the video for review.  If during any video\
+    \ review, scores were incorrect, the RA was asked to correct them in _LORIS_ (see Error code: \"Task administered by non-certified individual\").**  The expert reviewer ensured the scores were updated accurately and noted this in the certification log notes.  \n\nAfter the two-step certification process, RAs were released to administer and score deferred imitation to child participants without video review. To prevent drift, address questions and assess inter-rater-reliability, Training Review Sessions led by an expert (SD, TR) were mandatory at which certified RAs would review administration and scoring procedures followed by submitting a video of their next administration for personalized feedback.\n\n \n\n \n\n**Visit 8 (Farm and Garden):**\n\nAn SOP was provided with detailed administration and scoring instructions. Although the core concepts are the same for the deferred imitation task at V06 and V08, the event sequences differ, therefore there was a need for expert review, despite\
+    \ the previous certification. Training was conducted via Zoom and in-person sessions and consisted of detailed descriptions and example videos. \n\nEach RA (certified to administer V06) was asked to record their first V08 child participant (pilot OR main study), score the child’s performance (in LORIS) and submit for expert review.  An expert reviewer (TR, ZC, SD, NS) reviewed the video for accuracy.  Feedback was always given.  If the administration met a standard threshold (i.e., no major administration or scoring errors), the RA was approved to continue without video expert review.  If the administration and/or scoring did not meet threshold, the RA was asked to submit a video of their next V08 DI administration with another child participant.  Until approved for V08, any incorrect scores were corrected by the RA in LORIS.  The expert reviewer ensured the scores were updated accurately and noted this in the certification log notes. To prevent drift, address questions and assess inter-rater-reliability,\
     \ Training Review Sessions led by an expert (SD, TR) were mandatory at which certified RAs would review administration and scoring procedures followed by submitting a video of their next administration for personalized feedback. \n\n_Delays shorter than 9 or 10min should not be used and longer than 59min should be used with caution._ Maximum Delay possible for RAs to enter was 59:59 Any delays longer than 1 hour were coded using the maximum 59:59 and the actual delay and reason for deviation noted in RA NOTES/FEEDBACK. _Users are encouraged to look at RA Feedback to understand the delay discrepancy.  If significant variation exists in the delay variable, it should be examined as a possible covariate in analyses._"
   administration: In-person
   Form:
@@ -2363,7 +2435,7 @@ maps_easi:
   table_name: mh_cg_mapstl__easi
   warning2: null
   references: |-
-    Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69, 101422. <https://doi.org/10.1016/j.dcn.2024.101422>
+    Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69, 101422. ++<https://doi.org/10.1016/j.dcn.2024.101422>++
 
     Wakschlag, L. S., Zhang, Y., Heffernan, M. E., MacNeill, L. A., Peterson, E. O., Friedland, S., Sass, A. J., Smith, J. D., Davis, M. M., & Wiggins, J. L. (2024). How EASI can it be? Closing the research-to-practice gap via population-based validation of the MAPS-EASI 2.0 early childhood irritability screener for translation to clinical use. _Translational issues in psychological science_, _10_(4), 435–448. <https://doi.org/10.1037/tps0000428>
   respondent_category: Parent on Child
@@ -3221,9 +3293,9 @@ illumina:
     The GDA GWAS dataset is provided as concatenated data including the following files:
 
     - `batch.info`: Plain-text file mapping participants to genotyping batches
-    - `hbcd.bed` (**[PLINK 1.9 .bed](https://www.cog-genomics.org/plink/1.9/formats#bed)**, distinct from UCSC BED): Binary genotype file
-    - `hbcd.bim` (**[PLINK 1.9 .bim](https://www.cog-genomics.org/plink/1.9/formats#bim)**): Variant information (chromosome, rsID, position, alleles)
-    - `hbcd.fam` (**[PLINK 1.9 .fam](https://www.cog-genomics.org/plink/1.9/formats#fam)**): Participant information
+    - `hbcd.bed` (++**[PLINK 1.9 .bed](https://www.cog-genomics.org/plink/1.9/formats#bed)**++, distinct from UCSC BED): Binary genotype file
+    - `hbcd.bim` (++**[PLINK 1.9 .bim](https://www.cog-genomics.org/plink/1.9/formats#bim)**++): Variant information (chromosome, rsID, position, alleles)
+    - `hbcd.fam` (++**[PLINK 1.9 .fam](https://www.cog-genomics.org/plink/1.9/formats#fam)**++): Participant information
     - `pcrelate_relatedness.grm.bin`: PC-Relate adjusted genetic relatedness matrix
     - `pcrelate_relatedness.grm.N.bin`: PC-Relate pairwise common SNP count
     - `pcrelate_relatedness.grm.id`: PC-Relate subject IDs, corresponding to the matrix column and row order
@@ -3430,11 +3502,7 @@ static:
     Reference for ADI [pending]
   alert2_title: Use of Race & Ethnicity Variables
   respondent_category: null
-  admin_notes: |-
-    8/29 Notes
-    Status: waiting on further updates from SME, prior updates complete
-
-    See [shared google sheet ](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177)to update tables (this sheet is autoparsed to populate the webpage)
+  admin_notes: 'Luci notes: See [shared google sheet ](https://docs.google.com/spreadsheets/d/1l2nbu_iLbhqgF_TMDnNpaQPTSuJ1Ria0-Y5Em8QlEpA/edit?gid=1221272177#gid=1221272177)to update tables (this sheet is autoparsed to populate the webpage)'
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/demo/static/
   email: nslopen@hsph.harvard.edu
   visits: V01, V02, V04, V06
@@ -3845,7 +3913,8 @@ fmri:
     label: View
     url: https://docs.hbcdstudy.org/3.0-readmes/instruments/mri/fmri/
   acronym: fMRI
-  warning3: "During raw data QC, scans are failed for line artifact if dark slices or banding is observed on more than half of the frames. Most field maps contain two frames, so a scan passes if one frame contains artifacts and the other is acceptable.\nTo retain usable data while excluding frames that could degrade processed output quality, an additional step after BIDS conversion identifies and removes artifact-affected frames. This step applies only to field maps that meet both criteria: (1) passing overall QC score (`QC`=1) and (2) manual line artifact score `QU_line`≥1.5. \nThe raw data QC records in [`scans.tsv`](../qc/#scans-tsv) include per-frame line artifact scores (`line2_f{1|2}1_score`) and identify the best frame as the one with the lowest score (`line2_best_frame`). Frame removal, which was performed on one or more fmap files across ~700 sessions in the current release, is documented in the sidecar JSONs."
+  warning3: "During raw data QC, scans are failed for line artifact if dark slices or banding is observed on more than half of the frames. Most field maps contain two frames, so a scan passes if one frame contains artifacts and the other is acceptable.\nTo retain usable data while excluding frames that could degrade processed output quality, an additional step after BIDS conversion identifies and removes artifact-affected frames. This step applies only to field maps that meet both criteria: (1) passing overall QC score (`QC`=1) and (2) manual line artifact score `QU_line`≥1.5. \nThe raw data QC records in [`scans.tsv`](../qc/#scans-tsv) include per-frame line artifact scores (`line2_f{1|2}1_score`) and identify either frame 1 or 2 as the best frame (`line2_best_frame`) based on the lowest score. Frame removal was performed on one or more fmap files across ~700 sessions in the current release. The fmap file header information and sidecar JSON include an additional field, `KeptFrames`, to\
+    \ indicate whether the present fmap files contain frame 1 or 2 from the raw DICOMs."
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=recuUGVjvp50fU2Z4
   warning1: |-
     V02 data (0-1 month old) were processed in Infant fMRIPrep via two separate surface reconstruction workflows, M-CRIB-S (`hash-d902942d`) and Infant FreeSurfer (`hash-364caa63`). Expert review and BrainSwipes QC consistently showed higher-quality surfaces from M-CRIB-S. This is expected, as M-CRIB-S uses T2w images, which are much higher contrast than the T1w (on which FreeSurfer relies) in neonates. [Goncalves et al., 2025](https://doi.org/10.1101/2025.05.14.654069) report optimal performance for M-CRIB-S ≤5 months and Infant FreeSurfer ≥3 months. We therefore recommend only using data processed via the M-CRIB-S worfklow for analyses (`nibabies-d902942d/xcp_d-d902942d+7a4c379b`).
@@ -4096,75 +4165,3 @@ vs100:
     url: https://form.fillout.com/t/qaNxHYsnPBus?id=reczm7zrouwQNALku
   measure: VS100 Spot Vision Screener
   construct: Vision
-maps:
-  status: README updated & ready for SME review
-  alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables — especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers — to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
-  hbcd_mods1: Measure instructions and individual items that reference gendered pronouns (‘his/hers’, ‘he/she’) were edited to either eliminate the pronouns entirely or were replaced with ‘my child’ or 'them' when eliminating pronouns was not grammatically possible. Because the psychometric validation for these measures was done using items from the original measures, future publications should account for and note edits made to individual items.
-  duration: 5 min MAPS-TL/2 min MAPS-EASI
-  full_name: |-
-    Multidimensional Assessment Profiles-Temper Loss Scale, Version: Infancy (<1 year old)
-
-    Multidimensional Assessment Profiles-Temper Loss Scale, Version: Toddlerhood & Preschool
-
-    Multidimensional Assessment Profiles-Early Assessment Screener for Irritability, Version: Toddlerhood (Short Form)
-  alert2: null
-  assessment_type: Questionnaire
-  table_name: |-
-    mh_cg_mapdb__inf
-    mh_cg_mapstl__tod
-    mh_cg_mapstl__easi
-  warning2: null
-  references: |-
-    Edwards, R. C., Planalp, E. M., Bosquet-Enlow, M., Akshoomoff, N., Bodison, S. C., Brennan, M. B., Ciciolla, L., Eiden, R. D., Fillipi, C. A., Gustafsson, H. C., McKelvey, L. M., Morris, A. S., Peralta-Carcelén, M., Poehlmann, J., Wakschlag, L. S., Wilson, S., & HBCD Child Behavior and Caregiver-Child Interaction Workgroup. (2024). Capturing the complexity of child behavior and caregiver-child relationships in the HEALthy Brain and Child Development (HBCD) Study using a rigorous and equitable approach. _Developmental Cognitive Neuroscience_, 69, 101422. <https://doi.org/10.1016/j.dcn.2024.101422>
-
-    Krogh-Jespersen, S., Kaat, A. J., Petitclerc, A., Perlman, S. B., Briggs-Gowan, M. J., Burns, J. L., Adam, H., Nili, A., Gray, L., & Wakschlag, L. S. (2022). Calibrating temper loss severity in the transition to toddlerhood: Implications for developmental science. _Applied Developmental Science_, 26(4), 785–798. <https://doi.org/10.1080/10888691.2021.1995386>
-
-    Wakschlag, L. S., Zhang, Y., Heffernan, M. E., MacNeill, L. A., Peterson, E. O., Friedland, S., Sass, A. J., Smith, J. D., Davis, M. M., & Wiggins, J. L. (2024). How EASI can it be? Closing the research-to-practice gap via population-based validation of the MAPS-EASI 2.0 early childhood irritability screener for translation to clinical use. _Translational issues in psychological science_, _10_(4), 435–448. <https://doi.org/10.1037/tps0000428>
-  respondent_category: Parent on Child
-  admin_notes: |-
-    Luci note 10/19: combined MAPS-TL and MAPS-EASI - check with SMEs to see if they approve or not! followed up via email for final confirmation, will regard as complete unless i hear otherwise
-
-    Isabel Rendon Jordan <isabel.jordan@northwestern.edu>
-  README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps
-  visits: |-
-    MAPS-TL (Infancy): V03
-    MAPS-TL (Toddlerhood & Preschool): V05
-    MAPS-EASI (Toddlerhood): V07
-  primary_data_type: Tabulated data
-  README:
-    label: View
-    url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/maps
-  warning3: null
-  Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=rec4Nw2EYTIySNxXe
-  warning1: The MAPS-TL and MAPS-EASI assess normative variations in child behavior and should be interpreted within the context of the child's age and developmental stage. This is not clinical or diagnostic instrument.
-  description: The **Multidimensional Assessment Profiles–Temper Loss scale (MAPS-TL)** is a well-validated survey assessing irritability across the typical-to-atypical spectrum. Irritability has been identified as an early dimensional marker of lifespan mental health risk Questions address the child’s behavior over the past month, including dysregulation, responses to environmental input, and the contexts in which behaviors occur. The scale helps characterize early mental health risk and identify children at increased risk for later adjustment difficulties ([Edwards et al., 2024](https://doi.org/10.1016/j.dcn.2024.101422)). The **Multidimensional Assessment Profiles–Early Assessment Screener for Irritability (MAPS-EASI)** is a more recently developed short form of the MAPS-TL ([Wakschlag et al., 2024](https://doi.org/10.1037/tps0000428)).
-  domain: Behavior & Caregiver-Child Interactions
-  release: 3.0 (new instrument/info required)
-  qc: |-
-    - Examine missingness by counting items answered per participant.
-    - Check age is within expected ranges  (3-9 months MAPS-TL Infant / 10-17 months MAPS-TL Toddlerhood / 18-31 months MAPS-EASI).
-    - Review summary statistics and visualizations (item frequencies, age, prorated scores).
-    - Assess reliability (Cronbach’s α).
-  administration: Remote
-  Form:
-    label: Form Link
-    url: https://form.fillout.com/t/qaNxHYsnPBus?id=rec4Nw2EYTIySNxXe
-  scoring: |-
-    ### MAPS-TL
-
-    The MAPS-TL includes 17 items at Visit 3 (V03) and 40 items at Visit 5 (V05). Items are rated on a 6-point frequency scale, where higher scores indicate more frequent occurrence of the measured behaviors (_1 = Never, 2 = Rarely (<1 day/week), 3 = Some days (1–3 days/week), 4 = Most days (4–6 days/week), 5 = Every day, 6 = Many times each day)._
-
-    A summary score is calculated when responses are available for at least 9 of 17 items at V03 and 20 of 40 items at V05.
-    If fewer items are completed, the score is recorded as missing. When some items are missing, but the minimum number has been answered, a prorated score is calculated:
-
-    **_Prorated Score_**_ = (Sum of answered items ÷ Number of answered items) × Total number of items_
-
-    ### MAPS-EASI
-
-    The 3 MAPS-EASI Irritability Scale items (items `001`_ - _`003`) are answered on a scale of 0-5. Possible responses include:_ 0 = Never, 1 = Rarely (Less than once per week), 2 = Some (1-3) days of the week, 3 = Most (4-6) days of the week, 4 = Every day of the week, 5 = Many times each day, Prefer not to answer._
-
-    The 2 MAPS-EASI Impact Rating items (items `004`_ & _`005`) are answered on a scale of 0-3. Possible responses include: _0 = No problems, 1 = Minimal problems, 2 = A lot of problems, 3 = Severe problems, Prefer not to answer._
-
-    A sum score is calculated for all Irritability Scale items (`001`_ - _`003`). If any of the 3 Irritability Scale items are left unanswered (NA/Decline to answer/etc.), the sum score will be set to NA/missing (strict missingness rule).
-  measure: MAPS
-  construct: Irritability
