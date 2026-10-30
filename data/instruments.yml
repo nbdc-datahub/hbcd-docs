@@ -3016,7 +3016,7 @@ mchat:
 
     Attar SM, Bradstreet LE, Ramsey RK, Kelly K, Robins DL. Validation of the Electronic Modified Checklist for Autism in Toddlers, Revised with Follow-Up: A Nonrandomized Controlled Trial. J Pediatr. 2023 Feb 2;262:113343. doi: 10.1016/j.jpeds.2022.11.044. Epub 2023 Feb 2. PMID: 36736890; [PMCID: PMC10390646](https://doi.org/10.1016/j.jpeds.2022.11.044).
   respondent_category: Parent on Child
-  admin_notes: "Luci 10/30 notes: \n\nI suggest adding this content back into the instrument description section:\n\nThe M-CHAT-R/F ([Robins et al., 2014](https://doi.org/10.1542/peds.2013-1813)) is a two-stage parent-report screening tool to assess the likelihood for autism. There are 20 questions. If a child fails an item, the caregiver is later interviewed and presented with additional questions for clarification."
+  admin_notes: "Luci 10/30 notes: \nI added some notes at the top of the current page that contains a link to the prior page version in case you want to add back in any missing content"
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
   email: nakshoomoff@health.ucsd.edu
   visits: V07
@@ -3060,9 +3060,9 @@ mchat:
   scoring: "Scoring procedures are included for each question to determine whether follow-up questions will be administered.\n\nFor all items except 2, 5, and 12, the response “NO” indicates elevated likelihood of autism; for items 2, 5, and 12, “YES” indicates elevated likelihood of autism. \n\nA follow-up score of 2 or higher is considered High Risk. A follow-up score of 0 or 1 is considered Low Risk."
   changelog: I described the differences between the electronic version we created for HBCD and that used in the Attar et al., 2023 paper.
   resources: |-
-    The M-CHAT-R/F is available as a free download for clinical, research, and educational purposes (available in English and Spanish):
-
-    <https://www.mchatscreen.com/>
+    - The M-CHAT-R/F is available as a free download for clinical, research, and educational purposes (available in English and Spanish): <https://www.mchatscreen.com/>
+    - [Web-based, electronic version of the M-CHAT-R/F](mchat/M-CHAT-R(F)_ELECTRONIC[16].pdf)
+    - [Web-based, electronic version of the M-CHAT-R/F - _*Spanish version*_](mchat/M-CHAT-R_F_SpanishWH[23].pdf)
   hbcd_mods1_title: Modifications Associated with HBCD Electronic Administration
   supp1_text: null
   measure: MCHAT

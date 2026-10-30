@@ -1,8 +1,5 @@
 <div class="admin-note" markdown="1">
-LUCI NOTE: WG please confirm that latest form information is correct and not missing anything (e.g. I noticed that the Instrument Details section no longer includes a basic introduction/overview of the instrument as it did before). see the former version of this page in <a href="../orig-MCHAT.pdf">this PDF</a> for reference!
-<br>
-Also did you still want me to include this in the resources or no?
-<a href="../M-CHAT-R(F)_ELECTRONIC.pdf">Web-based, electronic version of the M-CHAT-R/F</a>
+LUCI NOTE: WG please confirm that latest form information is correct and not missing anything (e.g. I noticed that the Instrument Details section no longer includes a basic introduction/overview of the instrument as it did before). see the former version of this page in <a href="orig-MCHAT.pdf">this PDF</a> for reference!
 </div>
 
 
@@ -23,8 +20,9 @@ Also did you still want me to include this in the resources or no?
 {{ resources(instruments.mchat) }}
 
 <!-- ## Resources
-- [Web-based, electronic version of the M-CHAT-R/F](M-CHAT-R(F)_ELECTRONIC.pdf)
-- [Official M-CHAT](https://www.mchatscreen.com/): The Modified Checklist for Autism in Toddlers, Revised with Follow-Up -->
+- The M-CHAT-R/F is available as a free download for clinical, research, and educational purposes (available in English and Spanish): <https://www.mchatscreen.com/>
+- [Web-based, electronic version of the M-CHAT-R/F](mchat/M-CHAT-R(F)_ELECTRONIC[16].pdf)
+- [Web-based, electronic version of the M-CHAT-R/F - *Spanish version*](mchat/M-CHAT-R_F_SpanishWH[23].pdf) -->
 
 ---
 
