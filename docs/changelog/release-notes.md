@@ -165,6 +165,12 @@ Release data now include the addition of the following measures, expanded data t
 <td>USDTL Blood Toxicology</td></tr>
 
 <tr>
+<td>
+<i class="fa-solid fa-file-waveform table-icon-left"></i>
+<a href="../../instruments/#eeg">EEG</a></td>
+<td>HBCD ECG pipeline derivatives</td></tr>
+
+<tr>
 <td rowspan="3">
 <i class="fa fa-brain table-icon-left"></i>
 <a href="../../instruments/#imaging">Imaging</a></td>
