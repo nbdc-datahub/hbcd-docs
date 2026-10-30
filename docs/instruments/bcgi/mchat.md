@@ -17,8 +17,11 @@ LUCI NOTE: WG please confirm that latest form information is correct and not mis
 {{ scoring(instruments.mchat) }}
 
 ## Resources
+{{ resources(instruments.mchat) }}
+
+<!-- ## Resources
 - [Web-based, electronic version of the M-CHAT-R/F](M-CHAT-R(F)_ELECTRONIC.pdf)
-- [Official M-CHAT](https://www.mchatscreen.com/): The Modified Checklist for Autism in Toddlers, Revised with Follow-Up
+- [Official M-CHAT](https://www.mchatscreen.com/): The Modified Checklist for Autism in Toddlers, Revised with Follow-Up -->
 
 ---
 
