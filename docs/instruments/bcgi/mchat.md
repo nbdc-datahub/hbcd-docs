@@ -1,3 +1,8 @@
+<div class="admin-note" markdown="1">
+LUCI NOTE: WG please confirm that latest form information is correct and not missing anything (e.g. I noticed that the Instrument Details section no longer includes a basic introduction/overview of the instrument as it did before). see the former version of this page in <a href="../orig-MCHAT.pdf">this PDF</a> for reference!
+</div>
+
+
 # Modified Checklist for Autism in Toddlers
 
 {{ readme_summary(instruments.mchat) }}
