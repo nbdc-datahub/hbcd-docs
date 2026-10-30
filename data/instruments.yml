@@ -2997,10 +2997,7 @@ mchat:
   status: Complete / Stable
   alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables—especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers—to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
   Date submitted: '2026-10-30'
-  hbcd_mods1: |-
-    In the  electronic modified version of the M-CHAT-R/F (Attar et al., 2023), follow-up questions were only presented if the total screener score was 0, 1, or 2.
-
-    In the HBCD version, follow-up questions were immediately presented for each failed item. This modification provides additional details for each failed item.
+  hbcd_mods1: In the electronic modified version of the M-CHAT-R/F ([Attar et al., 2023](https://doi.org/10.1016/j.jpeds.2022.11.044)), follow-up questions were only presented if the total screener score was 0, 1, or 2. In the HBCD version, follow-up questions were immediately presented for each failed item. This modification provides additional details for each failed item.
   resource2_url: M-CHAT-R/F Electronic Decision Tree (Spanish)
   duration: 5-10 min
   hbcd_mods2: null
@@ -3012,9 +3009,9 @@ mchat:
   table_name: mh_ch_mchat
   warning2: null
   references: |-
-    Robins, D.L., Casagrande, K., Barton, M.L., Chen, C., Dumont-Mathieu, T., & Fein, D. (2014). Validation of the Modified Checklist for Autism in Toddlers-Revised with Follow-Up (M- CHAT-R/F). _Pediatrics_, 133 (1), 37-45. PMID:24366990. [PMCID: PMC3876182](https://doi.org/10.1542/peds.2013-1813).
-
     Attar SM, Bradstreet LE, Ramsey RK, Kelly K, Robins DL. Validation of the Electronic Modified Checklist for Autism in Toddlers, Revised with Follow-Up: A Nonrandomized Controlled Trial. J Pediatr. 2023 Feb 2;262:113343. doi: 10.1016/j.jpeds.2022.11.044. Epub 2023 Feb 2. PMID: 36736890; [PMCID: PMC10390646](https://doi.org/10.1016/j.jpeds.2022.11.044).
+
+    Robins, D.L., Casagrande, K., Barton, M.L., Chen, C., Dumont-Mathieu, T., & Fein, D. (2014). Validation of the Modified Checklist for Autism in Toddlers-Revised with Follow-Up (M- CHAT-R/F). _Pediatrics_, 133 (1), 37-45. PMID:24366990. [PMCID: PMC3876182](https://doi.org/10.1542/peds.2013-1813).
   respondent_category: Parent on Child
   admin_notes: "Luci 10/30 notes: \nI added some notes at the top of the current page that contains a link to the prior page version in case you want to add back in any missing content"
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
@@ -3028,7 +3025,10 @@ mchat:
     url: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
   alert4: null
   acronym: MCHAT
-  resource1_description: This document describes how the decision tree was implemented for web-based administration of the M-CHAT-R/F Follow-Up interview questions.
+  resource1_description: |-
+    LUCI ADMIN NOTE: this has been added to the repo and is linked under Resources
+
+    This document describes how the decision tree was implemented for web-based administration of the M-CHAT-R/F Follow-Up interview questions.
   warning3: null
   alert4_title: null
   Form Link: https://form.fillout.com/t/qaNxHYsnPBus?id=reciqnhrslaTGLOZY
@@ -3039,15 +3039,18 @@ mchat:
 
     Four participants only completed the M-CHAT-R/F at V07a. These data will be included with the V07 data in a later release.
 
-    Five participants completed the M-CHAT-R/F at V07a but at the time of the data release had not yet completed the M-CHAT-R/F at V07. The V07a data for these participants are not included in the current data release. In a future release, only the M-CHAT-R/F at V07 will be included in the data set for these participants (their V07a M-CHAT-R/F data will not be included).
+    Five participants completed the M-CHAT-R/F at V07a, but at the time of the data release, had not yet completed the M-CHAT-R/F at V07. The V07a data for these participants are not included in the current data release. In a future release, only the M-CHAT-R/F at V07 will be included in the data set for these participants (their V07a M-CHAT-R/F data will not be included).
   description: |-
-    In the electronic version of the M-CHAT-R/F, the caregiver is instructed to follow instructions as presented onscreen. The electronic version of the M-CHAT-R/F includes the same initial items as the paper version and the same additional questions for failed items.
+    The M-CHAT-R/F ([Robins et al., 2014](https://doi.org/10.1542/peds.2013-1813)) is a two-stage parent-report screening tool to assess the likelihood for autism. There are 20 questions. If a child fails an item, the caregiver is later interviewed and presented with additional questions for clarification. In the electronic version of the M-CHAT-R/F, the caregiver is instructed to follow instructions as presented onscreen. The electronic version of the M-CHAT-R/F includes the same initial items as the paper version and the same additional questions for failed items.
 
     The M-CHAT-R/F is available as a free download for clinical, research, and educational purposes. It is available in English and Spanish.
   supp3_text: null
   domain: Behavior & Caregiver-Child Interactions
   release: 3.0 (new instrument/info required)
-  resource2_description: This document describes how the decision tree was implemented for web-based administration of the M-CHAT-R/F Follow-Up interview questions. This is the Spanish-Western Hemisphere version 2.
+  resource2_description: |-
+    LUCI ADMIN NOTE: this has been added to the repo and is linked under Resources
+
+    This document describes how the decision tree was implemented for web-based administration of the M-CHAT-R/F Follow-Up interview questions. This is the Spanish-Western Hemisphere version 2.
   qc: |-
     - All item-level responses and scores were electronically captured and scored within the HBCD database.
     - Data was reviewed to verify that failed item level responses generated a follow-up response.
@@ -3061,8 +3064,8 @@ mchat:
   changelog: I described the differences between the electronic version we created for HBCD and that used in the Attar et al., 2023 paper.
   resources: |-
     - The M-CHAT-R/F is available as a free download for clinical, research, and educational purposes (available in English and Spanish): <https://www.mchatscreen.com/>
-    - [Web-based, electronic version of the M-CHAT-R/F](mchat/M-CHAT-R(F)_ELECTRONIC[16].pdf)
-    - [Web-based, electronic version of the M-CHAT-R/F - _*Spanish version*_](mchat/M-CHAT-R_F_SpanishWH[23].pdf)
+    - [Web-based, electronic version of the M-CHAT-R/F](M-CHAT-R(F)_ELECTRONIC[16].pdf)
+    - [Web-based, electronic version of the M-CHAT-R/F - _*Spanish version*_](M-CHAT-R_F_SpanishWH[23].pdf)
   hbcd_mods1_title: Modifications Associated with HBCD Electronic Administration
   supp1_text: null
   measure: MCHAT
