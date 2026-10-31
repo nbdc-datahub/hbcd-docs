@@ -65,6 +65,9 @@ hbcd/
 </pre>
 
 ## HBCD-MADE Derivatives
+
+<div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">See the {{ hbcd_processing_site }} for full pipeline configuration and processing details.</span> </div>
+
 {{ suppx(instruments.eeg, "1") }}
 
 <pre class="folder-tree">
@@ -104,6 +107,8 @@ hbcd/
 {{ suppx(instruments.eeg, "2") }}
 
 ## HBCD ECG Derivatives
+
+<div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">See the {{ hbcd_processing_site }} for full pipeline configuration and processing details.</span> </div>
 
 ECG data were processed via the [HBCD ECG](https://github.com/DCAN-Labs/HBCD_ECG_pipeline) pipeline, a BIDS-style ECG quality-control and analysis workflow for task-based EEG/ECG recordings.
 
