@@ -12,7 +12,7 @@ th {
 }
 th, td {
     position: relative;
-    overflow: visible;
+    /* overflow: visible; */
     border: 1px solid #ddd;
     word-wrap: break-word !important;
     white-space: normal !important;
@@ -259,7 +259,7 @@ DEMOGRAPHICS STATIC/DYNAMIC TABLES
 
 /* Variable Name column */
 .static-dynamic-tables td:nth-child(2) {
-    overflow-wrap: anywhere !important;
+    /* overflow-wrap: anywhere !important; */
     word-break: normal !important;
 }
 .static-dynamic-tables td:nth-child(2) {

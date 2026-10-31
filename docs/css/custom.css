@@ -285,12 +285,18 @@ h6 {
   background: #f8fafc;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .markdown code.language-tree {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   line-height: 1.7;
   color: #334155 !important;
   background: transparent;
+  white-space: pre;
+  display: block;
+  width: max-content;
+  min-width: 100%;
 }
 
 /* ADDITIONAL FOLDER TREE STYLING WHERE NEEDED */
@@ -301,6 +307,9 @@ h6 {
   border-radius: 8px;
   font-size: 12px;
   line-height: 1.3em;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: pre;
 }
 /* Placeholder variables */
 .folder-tree .var {
