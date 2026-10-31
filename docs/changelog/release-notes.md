@@ -584,7 +584,7 @@ Corrected scoring for participants missing all item responses, which had previou
 
 ##### Participants
 - Only CH Profiles included — Exclusion by PSCID prefix (PI, QI, XI, YI)
-- Only 'Active' participants included
+- Only 'Active' participants included; a list of withdrawn participants (*'Withdrew consent to share'*) is provided within the [HBCD Private Release Notes](https://hbcd-docs-private.lassoinformatics.com/#download).
 - Only selected 'Multiple Birth' profiles are included (based on clean-up procedures)
 - Only selected 'Postnatal Recruitment' profiles are included (based on clean-up procedures)
 - No sites excluded as of 2.0
