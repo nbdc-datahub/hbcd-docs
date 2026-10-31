@@ -1,25 +1,72 @@
 # Deferred Imitation Task: Gong and Berry-Go-Round
 
-<div class="admin-note" markdown="1">
-LUCI NOTES: potentially merge the information across current QC, Instrument Details, and Scoring Procedures? I put together a quick draft of what this might look like - see <a href="../dit-alt/">DI ALT VERSION page</a>
-</div>
+<table class="table-no-vertical-lines readme-intro">
+<tbody>
+<tr>
+<td>Name</td>
+<td>
+<p>Deferred Imitation Task (DI)</p>
+</td>
+</tr>
+<tr>
+<td>Table Name</td>
+<td><code>ncl_ch_di_v06</code></td>
+</tr>
+<tr>
+<td>Construct</td>
+<td>
+<p>Memory</p>
+</td>
+</tr>
+<tr>
+<td>Study Visits</td>
+<td>
+<p>V06, V08</p>
+</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>In-person Cognitive testing (Child on Self)</td>
+</tr>
+<tr>
+<td>Quality Control</td>
+<td>Research assistants administering the Deferred Imitation Task were trained following a strict SOP with frequent standards checks - see <a href="../dit-qc.html">Deferred Imitation RA Training</a> for details.</td>
+</tr>
+</tbody>
+</table>
+</tbody>
+</table>
 
-{{ readme_summary(instruments.dit) }}
+
 {{ alert_warning(instruments.dit) }}
 {{ data_warning(instruments.dit) }}
 {{ issues_banner() }}
 
 ## Instrument Details
 
-{{ instrument_description(instruments.dit) }}
-{{ hbcd_mods(instruments.dit) }}
-{{ scoring(instruments.dit) }}
+The **Deferred Imitation Task** measures long-term memory through deferred imitation of two event sequences using novel props:
+
+- **Gong:** 3-steps sequence with three target actions performed in a specific order.
+- **Beary-Go-Round:** 4-steps sequence with four target actions performed in a randomized order.
+
+After a minimum delay 10 minutes, children are assessed on their recall of the actions and their order. Administration, prop presentation, and supporting prompts are standardized.
+
+### Administration Details
+A brief 2-3 minute warm-up with slinkys introduces the child to the imitation task. RAs rate on a 1-7 scale how much the child "warmed up" to the task and "imitated" actions during the warm up activity. Baseline data is acquired for each sequence to control for problem solving/creativity.
+
+The assessment proceeds as follows:
+
+1. Warm-up.
+1. Event 1: Baseline followed by modeling (twice)
+1. Event 2: Baseline followed by modeling (twice)
+1. Delay of at least 10 minutes (length of delay recorded to control for variations in duration)
+5. Recall for event 1, followed by recall for event 2.
+
+A target action is scored only the first time the child demonstrates it, during BASELINE and then again during RECALL, for each event sequence (e.g., "ring the bell"). The child's ability to recall is scored as the number of target actions completed ("target actions" in the correct temporal order, termed "pairs of actions") during RECALL. Pairs of actions that occur in the correct temporal order are automatically calculated (e.g., "hang the bell" followed by "ring the bell" = 1 pair). Actions and pairs of actions are summed across the two event sequences at baseline and recall. RAs record errors when applicable.
+
 {{ references(instruments.dit) }}
 
-
-
 <!-- Original supp1 yml info:
-
 
 supp1_text: |-
     # Deferred Imitation Methods
