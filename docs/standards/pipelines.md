@@ -211,8 +211,8 @@ LUCI NOTE: update table to reorganize links to HBCD DOcs pages and also include 
 </tr>
 
 <tr>
-  <td><a href="../../instruments/eeg/release-data/">HBCD ECG</a></td>
-  <td><code>ADD</code></td>
+  <td><a href="../../instruments/eeg/#hbcd-ecg-derivatives">HBCD ECG</a></td>
+  <td><code>hbcd_ecg/</code></td>
   <td>Task-based EEG/ECG recording quality control and analysis pipeline.</td>
   <td>
     <a href="https://github.com/DCAN-Labs/HBCD_ECG_pipeline" aria-label="View HBCD-MADE developer documentation" title="View developer documentation"><i class="fa-solid fa-book"></i></a>
@@ -220,7 +220,7 @@ LUCI NOTE: update table to reorganize links to HBCD DOcs pages and also include 
 </tr>
 
 <tr>
-  <td><a href="../../instruments/eeg/release-data/#hbcd-made-derivatives">HBCD-MADE</a></td>
+  <td><a href="../../instruments/eeg/#hbcd-made-derivatives">HBCD-MADE</a></td>
   <td><code>made/</code></td>
   <td>Processes EEG data using MADE-compatible BIDS inputs and outputs</td>
   <td>

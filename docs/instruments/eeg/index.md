@@ -103,6 +103,32 @@ hbcd/
 
 {{ suppx(instruments.eeg, "2") }}
 
+## HBCD ECG Derivatives
+
+ECG data were processed via the [HBCD ECG](https://github.com/DCAN-Labs/HBCD_ECG_pipeline) pipeline, a BIDS-style ECG quality-control and analysis workflow for task-based EEG/ECG recordings.
+
+<pre class="folder-tree">
+<span><a href="../../../help/resources/#how-to-read-file-trees"><i class="fa fa-circle-info"></i> How To Read File Trees →</a></span>
+hbcd/
+└── derivatives/
+    └── hbcd_ecg/
+        └── sub-[ID]/
+            └── ses-[V0X]/
+                └── ecg/
+                    └── rs-task/
+                        ├── csv/
+                        │   ├── *_task-RS_final_rpeaks_rr.csv
+                        │   └── *_task-RS_summary.csv
+                        │
+                        ├── data/
+                        │   ├── *_task-RS_filtered_ecg.set
+                        │   ├── *_task-RS_final_processed_ecg.set
+                        │   └── *_task-RS_raw_bas_trsp.set
+                        │
+                        └── png/*
+</pre>
+
+
 ---
 
 {{ references(instruments.eeg) }}
