@@ -1,207 +1,176 @@
 # Guide to Structural & Functional MRI Derivatives
 
-<!-- Below we highlight key information to introduce you to the structural and functional MRI pipeline processing workflows and resulting derivatives.
+This guide helps you choose HBCD structural and resting-state functional MRI (rsfMRI) derivatives, identify their processing configurations, and locate files for analysis. Outputs include cortical morphology measures, cortical surfaces, denoised BOLD time series, and functional connectivity matrices.
 
-## Multistep Processing Workflow -->
+## At A Glance
 
-HBCD structural and functional MRI data are processed through a sequence of BIDS App pipelines. At a high level, **BIBSNet** generates brain tissue segmentations and masks for T1w/T2w images. These are fed into **Infant-fMRIPrep** to generate confound files and motion-corrected data (in MNI space, registered to age-specific volumetric atlases) as well as fs_LR32k surface space. Outputs are then fed into **XCP-D** to run nuisance regression/denoising, parcellate the fMRI data, and compute summary measures.
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr><th>Analysis</th><th>Derivative</th><th>File Format</th></tr>
+</thead>
+<tbody>
+<tr><td>Compare cortical curvature, sulcal depth, or thickness at individual vertices</td><td><a href="#cortical-metrics">Cortical metrics</a></td><td><code>.dscalar.nii</code></td></tr>
+<tr><td>Compare regional averages of cortical measures</td><td><a href="#parcellated-structural-measures">Parcellated structural measures</a></td><td><code>.tsv</code></td></tr>
+<tr><td>Visualize cortical anatomy or display surface overlays</td><td><a href="#cortical-surfaces">Cortical surfaces</a></td><td><code>.surf.gii</code></td></tr>
+<tr><td>Analyze BOLD signals at individual cortical vertices or subcortical voxels</td><td><a href="#dense-time-series">Dense time series</a></td><td><code>.dtseries.nii</code></td></tr>
+<tr><td>Analyze regional BOLD signals or calculate ROI-to-ROI connectivity</td><td><a href="#parcellated-time-series">Parcellated time series</a></td><td><code>.tsv</code>, <code>.ptseries.nii</code></td></tr>
+<tr><td>Use precomputed ROI-to-ROI correlations</td><td><a href="#connectivity-matrices">Connectivity matrices</a></td><td><code>.tsv</code></td></tr>
+<tr><td>Assess motion, censoring, or nuisance regressors</td><td><a href="#motion-and-confound-files">Motion and confound files</a></td><td><code>.tsv</code></td></tr>
+</tbody>
+</table>
 
-<style> .pipeline-step { transition: all 0.25s ease; } 
-.pipeline-step:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(100, 100, 255, 0.2); } 
-</style>
-<div style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; font-size: 0.95em;"> <div style="text-align: center;"> <a href="https://bibsnet.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #a9bffcff; border-radius: 12px; background-color: #dde6fe; color: #222;"> <strong>BIBSNet</strong><br> <small>Brain segmentations & masks</small> </div> </a> </div> <span style="font-size: 20px;"><i class="fa-solid fa-arrow-right"></i></span> <div style="text-align: center;"> <a href="https://nibabies.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #a89df9ff; border-radius: 12px; background-color: #dcd8fb; color: #222;"> <strong>Infant-fMRIPrep</strong><br> <strong>(Includes M-CRIB-S/Infant FreeSurfer)</strong><br><small>Surface reconstruction, preprocessing & confounds</small> </div> </a> </div> <span style="font-size: 20px;"><i class="fa-solid fa-arrow-right"></i></span> <div style="text-align: center;"> <a href="https://xcp-d.readthedocs.io/en/latest/" style="text-decoration: none;"> <div class="pipeline-step" style="padding: 12px 20px; border: 2px solid #d794fcff; border-radius: 12px; background-color: #f0dcfb; color: #222;"> <strong>XCP-D</strong><br> <small>Post-processing & denoising</small> </div> </a> </div> </div>
+## Processing Workflow
 
-## Hashes
-
-Infant fMRIPrep and XCP-D derivative folder/filenames include unique hash IDs to indicate distinct processing parameters used for a given pipeline. In the case of HBCD data, the hash IDs correspond to which surface reconstruction method was used for processing within Infant fMRIPrep: M-CRIB-S (`d902942d`) or Infant FreeSurfer (`364caa63`).
-
-Downstream XCP-D derivatives include a second hash ID (`7a4c379b`) indicating the XCP-D processing configuration. This value is identical for all HBCD data because the XCP-D parameters were fixed. Below we summarize the processing workflows and resulting derivative folder names. 
-<!-- source diagram: https://canva.link/pndtkg25cdfer95 -->
-<img src="../images/proc-hashes.svg" alt="Detailed MRI Processing Workflow">
-
-## Derivatives Highlight
-
-Below is a summary of key MRI derivatives used for structural morphology and resting-state functional MRI (rsfMRI) functional connectivity analyses. Key derivatives, produced by the [XCP-D](https://xcp-d.readthedocs.io/en/latest/) pipeline, include volumetric and surface-based time series for each participant. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. 
-
-## Derivatives: Structural Morphology 
-<div id="struc" class="banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-cubes"></i></span>
-  <span class="text-with-link">
-  <span class="text">Structural Morphology: Key Derivatives for Analysis</span>
-  <a class="anchor-link" href="#struc" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow rotate">▸</span>
-</div>
-<div class="collapsible-content open">
-<p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; border-bottom: 1px solid #6b6b6b66;">Curvature, Sulcal Depth, & Cortical Thickness</p>
-<p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>anat/*_space-fsLR_den-91k_<span style="color: teal;">{curv|sulc|thickness}</span>.dscalar.nii</code></i><br>
-<i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> Vertex-wise cortical morphology analyses (e.g., folding, curvature, thickness comparisons).</p>
-<p class="details">
-These CIFTI scalar files contain surface-based structural metrics derived from reconstructed L/R cortical surfaces, aligned to the fsLR template (~64k vertices per hemisphere).  
-<ul style="margin-top: 0; font-size: 0.9em;">
-<li><b>Curvature</b>: Characterizes cortical folding and morphology; often used as a covariate in morphometric analyses.</li>
-<li><b>Sulcal depth</b>: Complements curvature to describe cortical shape and folding complexity.</li>
-<li><b>Cortical thickness</b>: Distance between pial and white matter surfaces (mm); typically averaged within ROIs or compared across participants to study development, aging, or group effects.</li>
-</ul>
-</p>
-<p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; border-bottom: 1px solid #6b6b6b66;">Parcellated Structural Measures</p>
-<p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>anat/*_space-fsLR_seg-<span style="color: teal;">{PARC}</span>_stat-mean_desc-<span style="color: teal;">{curv|sulc|thickness}</span>_morph.tsv</code></i><br>
-<i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> Region-based (ROI-level) analyses such as group comparisons or developmental modeling.</p>
-<p class="details">
-Tabulated summaries of cortical metrics (curvature, sulcal depth, thickness) within anatomical regions defined by 
-<a href="#parc">parcellation atlases</a>. These files provide regional averages for statistical modeling or visualization.
-</p>
-<p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; padding-top: 12px; border-bottom: 1px solid #6b6b6b66;">Midthickness, Pial, and White Matter Surfaces</p>
-<p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>anat/*_hemi-<span style="color: teal;">{L|R}</span>_space-fsLR_den-32k_<span style="color: teal;">{midthickness|pial|white}</span>.surf.gii</code></i><br>
-<i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> Visualizing cortical anatomy or mapping functional data to anatomical space.</p>
-<p class="details">
-3D surface models representing the midthickness, gray–white matter boundary, and pial surfaces for each hemisphere.  
-Useful for rendering structural data, computing surface-based metrics, or visualizing functional overlays.
-</p>
-</div>
-
-## Derivatives: Functional Connectivity
-<div id="fc" class="banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-globe"></i></span>
-  <span class="text-with-link">
-  <span class="text">Functional Connectivity: Key Derivatives for Analysis</span>
-  <a class="anchor-link" href="#fc" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow rotate">▸</span>
-</div>
-<div class="collapsible-content open">
-<p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px;  padding-top: 12px; border-bottom: 1px solid #6b6b6b66;">Dense Timeseries</p>
-<p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_space-fsLR_den-91k_desc-<span style="color: teal;">{denoised|denoisedSmoothed}</span>_bold.dtseries.nii</code></i><br>
-<i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> Voxelwise or seed-based FC analyses, timeseries analysis via sliding windows or markov chains, etc.</p>
-<p class="details">
-CIFTI dense time series containing fully preprocessed, temporally filtered, and nuisance-regressed BOLD data.
-These files combine the left and right surfaces, aligned to the standard fsLR surface template, with the subcortical volume annotated by subcortical structure.
-Each greyordinate (~96k total) represents a vertex or voxel with pre-processed resting-state functional MRI time-series.
-</p>
-<p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; padding-top: 12px; border-bottom: 1px solid #6b6b6b66;">Parcellated Timeseries</p>
-<p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_space-fsLR_seg-<span style="color: teal;">{PARC}</span>_stat-mean_timeseries.tsv</code></i><br>
-<i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> ROI-to-ROI connectivity or network analyses using mean BOLD signals per region.</p>
-<p class="details">
-Tabulated mean BOLD time series for each region in the 
-<a href="#parc">parcellation atlases</a>.  
-Also available as CIFTI <code>.ptseries.nii</code> files, where columns = regions and rows = timepoints.
-</p>
-<p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; padding-top: 12px; border-bottom: 1px solid #6b6b6b66;">Connectivity Matrices</p>
-<p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_space-fsLR_seg-<span style="color: teal;">{PARC}</span>_stat-pearsoncorrelation_relmat.tsv</code></i><br>
-<i style="font-size: 0.9em;" class="fa-solid fa-star"></i> <b>Recommended for:</b> Quick inspection, validation, or as input to network and graph analyses.</p>
-<p class="details">
-Tab-delimited matrices of pairwise Pearson correlations between atlas regions, computed from parcellated time series using all available low-motion data (motion censored with a framewise displacement threshold of 0.3 mm). These matrices form the foundation for ROI-to-ROI connectivity analyses.
-</p>
-<p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; padding-top: 12px; border-bottom: 1px solid #6b6b6b66;">Motion Detection and Confound Files</p>
-<p class="recommended">
-<i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_dir-PA_run-{X}_<span style="color: teal;">{design|motion|outliers}</span>.tsv</code></i><br>
-<i style="font-size: 0.9em;" class="fa-solid fa-triangle-exclamation"></i> <b>Required for:</b> Motion assessment and filtering low-quality data prior to group analyses.</p>
-<p class="details">
-Includes framewise displacement values and nuisance regressor design files.  
-Design files contain one column per regressor (e.g., motion parameters, high-motion outlier volume indicators).  
-See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outputs-include-quality-control-framewise-displacement-and-confounds-files">XCP-D documentation</a> for details.
-</p>
-</div>
-<style>
-.filename {
-  background-color: #f8f9fa;
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
-  padding: 6px 10px;
-  font-family: monospace;
-  font-size: 0.95em;
-  margin-bottom: 6px;
-  overflow-x: auto;
-}
-.recommended {
-  background-color: #eef6ff;
-  padding: 6px 10px;
-  font-size: 0.9em;
-  border-radius: 4px;
-  margin: 4px 0 10px;
-}
-.details {
-  margin-top: 0;
-  font-size: 0.95em;
-  color: #333;
-}
-</style>
-
-<div id="parc" class="banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-solid fa-book-atlas"></i></span>
-  <span class="text-with-link">
-  <span class="text">Parcellations</span>
-  <a class="anchor-link" href="#parc" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow rotate">▸</span>
-</div>
-<div class="collapsible-content open">
-<p><i>See <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#parcellations-and-atlases">Parcellations & Atlases</a> in the XCP-D documentation for more details.</i></p>
-
+HBCD structural and functional MRI data are processed through a sequence of BIDS App pipelines:
 
 <style>
-    .compact-table-clean {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
+.mri-workflow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  list-style: none !important;
+  margin: 1.25rem 0 !important;
+  padding: 0 !important;
 }
-
-.compact-table-clean th {
-  text-align: left;
-  font-weight: 600;
-  padding: 0.6em 0.5em;
-  border-bottom: 2px solid #e5e7eb;
+.mri-workflow > .mri-workflow-step {
+  position: relative;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 1rem;
+  border: 2px solid;
+  border-radius: 12px;
+  color: #222;
 }
-
-.compact-table-clean td {
-  padding: 0.65em 0.5em;
-  vertical-align: top;
-  word-break: break-word;
-}
-
-.compact-table-clean tr:not(:last-child) td {
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.compact-table-clean code {
-  font-weight: 600;
-  font-size: 0.95em;
-}
-
-.atlas-type {
-  font-weight: 600;
-}
-
-.atlas-details {
-  color: #6b7280;
-  font-size: 0.85em;
-  display: block;
-  margin-top: 0.15em;
-}
-
-.atlas-use {
+.mri-workflow-step-1 { background: #dde6fe; border-color: #a9bffc !important; }
+.mri-workflow-step-2 { background: #dcd8fb; border-color: #a89df9 !important; }
+.mri-workflow-step-3 { background: #f0dcfb; border-color: #d794fc !important; }
+.mri-workflow-name {
   display: inline-block;
-  margin-top: 0.35em;
-  font-size: 0.8em;
-  color: #0f766e;
-  background: #eef6f6;
-  padding: 2px 6px;
-  border-radius: 6px;
+  color: #212658 !important;
+  font-size: 1.05em;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.mri-workflow-name:focus-visible { outline: 2px solid #212658; outline-offset: 4px; }
+.mri-workflow-step p {
+  margin: 0.65rem 0 0;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+.mri-workflow-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1.4rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-top: 2px solid #626782;
+  border-right: 2px solid #626782;
+  transform: translateY(-50%) rotate(45deg);
+}
+@media (max-width: 800px) {
+  .mri-workflow { grid-template-columns: 1fr; }
+  .mri-workflow-step:not(:last-child)::after {
+    top: auto;
+    bottom: -1.35rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%) rotate(135deg);
+  }
 }
 </style>
 
+<ol class="mri-workflow" aria-label="MRI processing pipeline sequence">
+  <li class="mri-workflow-step mri-workflow-step-1">
+    <a href="https://bibsnet.readthedocs.io/en/latest/" class="mri-workflow-name">BIBSNet</a>
+    <p>Generates brain tissue segmentations and masks from T1w/T2w images for downstream preprocessing.</p>
+  </li>
+  <li class="mri-workflow-step mri-workflow-step-2">
+    <a href="https://nibabies.readthedocs.io/en/latest/" class="mri-workflow-name">Infant fMRIPrep</a>
+    <p>Performs anatomical and functional preprocessing, including surface reconstruction with M-CRIB-S or Infant FreeSurfer, registration, motion correction, and confound estimation.</p>
+  </li>
+  <li class="mri-workflow-step mri-workflow-step-3">
+    <a href="https://xcp-d.readthedocs.io/en/latest/" class="mri-workflow-name">XCP-D</a>
+    <p>Performs functional post-processing and denoising, summarizes data within parcellations, and generates connectivity and other summary measures.</p>
+  </li>
+</ol>
+
+## Configurations & Folder Names
+
+**Derivative folder and file names include hash IDs that identify the processing configuration.** For Infant fMRIPrep, the hashes distinguish the surface reconstruction method. Downstream XCP-D derivatives also include a hash identifying the XCP-D configuration.
+
+<table class="table-no-vertical-lines">
+<thead><tr><th>Pipeline</th><th>Configuration</th><th>Hash ID</th></tr></thead>
+<tbody>
+<tr><td>Infant fMRIPrep</td><td>M-CRIB-S surface reconstruction</td><td><code>d902942d</code></td></tr>
+<tr><td>Infant fMRIPrep</td><td>Infant FreeSurfer surface reconstruction</td><td><code>364caa63</code></td></tr>
+<tr><td>XCP-D</td><td>Fixed XCP-D processing configuration</td><td><code>7a4c379b</code></td></tr>
+</tbody>
+</table>
+
+Use the Infant fMRIPrep hash to distinguish derivatives generated with M-CRIB-S from those generated with Infant FreeSurfer. The XCP-D hash is shared across the configurations described here because the XCP-D parameters were fixed. The processing workflows and corresponding derivative folder names are as follows:
+
+<!-- Source diagram: https://canva.link/pndtkg25cdfer95 -->
+<figure>
+  <img src="../images/proc-hashes.svg" alt="MRI processing workflows and derivative folder names for the M-CRIB-S and Infant FreeSurfer configurations" width="100%">
+</figure>
+
+## Structural MRI Derivatives
+##### Cortical Metrics
+CIFTI scalar files contain curvature, sulcal depth, and cortical thickness values derived from reconstructed cortical surfaces and aligned to fsLR space.   
+**Recommended for:** Vertex-wise cortical morphology analyses.      
+**File pattern:** `anat/*_space-fsLR_den-91k_{curv|sulc|thickness}.dscalar.nii`
+
+<table class="table-no-vertical-lines">
+<thead><tr><th>Measure</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>curv</code></td><td>Curvature: characterizes cortical folding and shape.</td></tr>
+<tr><td><code>sulc</code></td><td>Sulcal depth: describes the depth of cortical folds.</td></tr>
+<tr><td><code>thickness</code></td><td>Cortical thickness: distance between the white matter and pial surfaces, measured in millimeters.</td></tr>
+</tbody>
+</table>
+
+##### Cortical Surfaces
+GIFTI files provide midthickness, pial, and white matter surface models for each hemisphere in fsLR space.    
+**Recommended for:** Visualizing cortical anatomy, displaying structural metrics, or overlaying functional data.      
+**File pattern:** `anat/*_hemi-{L|R}_space-fsLR_den-32k_{midthickness|pial|white}.surf.gii`
+
+##### Parcellated Structural Measures
+TSV files contain regional averages of curvature, sulcal depth, and cortical thickness within regions defined by a [parcellation atlas](#parc).   
+**Recommended for:** ROI-level group comparisons, developmental modeling, and other analyses of regional cortical morphology.     
+**File pattern:** `anat/*_space-fsLR_seg-{PARC}_stat-mean_desc-{curv|sulc|thickness}_morph.tsv`
+
+## Functional MRI Derivatives
+The files below support analyses of denoised resting-state BOLD signals and functional connectivity. Review [motion and confound files](#motion-and-confound-files) before selecting runs for analysis.
+
+##### Dense Time Series
+CIFTI dense time series contain preprocessed, temporally filtered, and nuisance-regressed BOLD signals. Each grayordinate represents a cortical surface vertex or subcortical voxel. The files combine cortical data aligned to fsLR space with subcortical volumetric data. The `denoised` and `denoisedSmoothed` file labels distinguish denoised outputs from denoised outputs with spatial smoothing.      
+**Recommended for:** Analyses of BOLD signals at individual grayordinates, including seed-based connectivity and time series analyses.    
+**File pattern:** `func/*_task-rest_space-fsLR_den-91k_desc-{denoised|denoisedSmoothed}_bold.dtseries.nii`    
+
+##### Parcellated Time Series
+These files contain the mean BOLD signal within each region of a [parcellation atlas](#parc). Outputs are available as TSV tables and CIFTI parcellated time series (`.ptseries.nii`), where rows represent time points and columns represent regions.      
+**Recommended for:** ROI-to-ROI connectivity and network analyses using regional BOLD signals.      
+**TSV file pattern:** `func/*_task-rest_space-fsLR_seg-{PARC}_stat-mean_timeseries.tsv`
+
+##### Connectivity Matrices
+TSV matrices contain pairwise Pearson correlations between atlas regions, calculated from parcellated time series using available low-motion data. Motion censoring uses a framewise displacement (FD) threshold of 0.3 mm.   
+**Recommended for:** ROI-to-ROI connectivity analyses, network and graph analyses, and inspection of regional correlation patterns.     
+**File pattern:** `func/*_task-rest_space-fsLR_seg-{PARC}_stat-pearsoncorrelation_relmat.tsv`
+
+##### Other Functional Summary Measures
+The release also includes regional homogeneity (ReHo) and amplitude of low-frequency fluctuation (ALFF) values. See the [XCP-D output documentation](https://xcp-d.readthedocs.io/en/latest/outputs.html) for descriptions of these measures.
+
+##### Motion and Confound Files
+Review motion and confound files to assess run quality and understand nuisance regression and censoring before group analyses.    
+**File pattern:** `func/*_task-rest_dir-PA_run-{X}_{design|motion|outliers}.tsv`    
+These files document motion estimates, nuisance regressors, and outlier volumes. Design files contain the regressors used for denoising; motion and outlier files support assessment of motion and censoring. See the [XCP-D documentation on quality control, framewise displacement, and confound files](https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outputs-include-quality-control-framewise-displacement-and-confounds-files) for details.
+
+
+
+##  Parcellations & Atlases
+Parcellations define the regions used to summarize structural measures and BOLD time series. Their identifiers appear in the `seg-{PARC}` portion of derivative filenames. The table below summarizes the atlases described in this guide. See the [XCP-D parcellations and atlases documentation](https://xcp-d.readthedocs.io/en/latest/outputs.html#parcellations-and-atlases) for additional details.
 
 <table class="compact-table-clean">
 <thead>
@@ -290,5 +259,44 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
 </tr>
 </tbody>
 </table>
-</div>
 
+<style>
+.compact-table-clean {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.95em;
+}
+.compact-table-clean th {
+  text-align: left;
+  font-weight: 600;
+  padding: 0.55em 0.5em;
+  border-bottom: 2px solid #e5e7eb;
+}
+.compact-table-clean td {
+  padding: 0.55em 0.5em;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+.compact-table-clean tbody tr:not(:last-child) td {
+  border-bottom: 1px solid #f0f0f0;
+}
+.compact-table-clean .atlas-type {
+  font-weight: 600;
+}
+.compact-table-clean .atlas-details {
+  color: #555;
+  font-size: 0.9em;
+  display: block;
+  margin-top: 0.15em;
+}
+.compact-table-clean .atlas-use {
+  display: inline-block;
+  margin-top: 0.35em;
+  font-size: 0.85em;
+  color: #0f766e;
+  background: #eef6f6;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+</style>
