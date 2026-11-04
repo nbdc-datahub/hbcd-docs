@@ -1,6 +1,15 @@
 # Guide to Structural & Functional MRI Derivatives
 
-This guide helps you choose HBCD structural and resting-state functional MRI (rsfMRI) derivatives, identify their processing configurations, and locate files for analysis. Outputs include cortical morphology measures, cortical surfaces, denoised BOLD time series, and functional connectivity matrices.
+This guide helps you navigate HBCD structural and resting-state functional MRI (rsfMRI) derivatives, identify their processing configurations, and locate files for analysis. Outputs include cortical morphology measures, cortical surfaces, denoised BOLD time series, and functional connectivity matrices. The release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data, using an FD threshold of 0.3 mm for motion censoring.
+
+
+<!-- ## Usable Data Requirements
+ Before analysis:
+
+- Check the usable data duration and motion characteristics for each run.
+- Confirm the processing configuration, parcellation, and smoothing variant selected for your analysis. -->
+
+<!-- Key derivatives, produced by the [XCP-D](https://xcp-d.readthedocs.io/en/latest/) pipeline, include volumetric and surface-based time series for each participant.  -->
 
 ## At A Glance
 
@@ -115,6 +124,16 @@ Use the Infant fMRIPrep hash to distinguish derivatives generated with M-CRIB-S 
 <figure>
   <img src="../images/proc-hashes.svg" alt="MRI processing workflows and derivative folder names for the M-CRIB-S and Infant FreeSurfer configurations" width="100%">
 </figure>
+
+<!-- ## Reading the File Patterns
+
+The patterns below show paths relative to a participant/session derivative directory:
+
+- `anat/` contains anatomical derivatives; `func/` contains functional derivatives.
+- `*` represents the filename prefix, including participant/session identifiers and any additional entities.
+- `{PARC}` represents a [parcellation identifier](#parc).
+- Braces containing alternatives, such as `{curv|sulc|thickness}`, indicate separate files for each listed measure.
+- `{L|R}` identifies the left or right hemisphere; `{X}` represents a run number. -->
 
 ## Structural MRI Derivatives
 ##### Cortical Metrics
