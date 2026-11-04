@@ -12,7 +12,7 @@
 
 <div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">See the {{ hbcd_processing_site }} for full pipeline configuration and processing details.</span> </div>
 
-<div id="file-selection" class="banner" onclick="toggleCollapse(this)">
+<!-- <div id="file-selection" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa fa-circle-info"></i></span>
   <span class="text-with-link">
 <span class="text">File Selection for Processing</span>
@@ -30,7 +30,7 @@
 <li>Infant FreeSurfer (T1w-based): requires both T1w and T2w</li>
 </ul>
 </div>
-<p></p>
+<p></p> -->
 
 ### BIBSNet
 
