@@ -48,8 +48,8 @@ When multiple eligible T1w or T2w scans are available, the scan with the best qu
 #### Anatomical scan requirements
 **Processing uses both T1w and T2w scans when both are available and meet the QC criteria.** Processing with a single anatomical modality is supported only when it meets the minimum requirements for the visit and surface reconstruction method used within Infant fMRIPrep ([see details](smri.md#m-crib-s-freesurfer)).
 
-<span class="table-title">Minimum anatomical scan requirements by visit and surface reconstruction method:</span>
 <table class="table-no-vertical-lines" width="100%"> 
+<caption>Minimum anatomical scan requirements by visit and surface reconstruction method</caption>
 <thead>
 <tr>
 <th>Surface reconstruction method</th>
