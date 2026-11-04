@@ -8,9 +8,10 @@
 
 {{ instrument_description(instruments.smri) }}
 
-## File Selection for Processing
+## Processing & File Selection
+<div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">See the {{ hbcd_processing_site }} for full pipeline configuration and processing details.</span> </div>
 
-#### Scan eligibility and selection
+### Scan eligibility and selection
 When multiple eligible T1w or T2w scans are available, the scan with the best quality is selected for each modality. Scans must meet both of the following raw data quality control (QC) criteria (see {{ hbcd_processing_site }} for full configuration details):
 
  <table class="table-no-vertical-lines">
@@ -45,10 +46,10 @@ When multiple eligible T1w or T2w scans are available, the scan with the best qu
   </tbody>
 </table>
 
-#### Anatomical scan requirements
-**Processing uses both T1w and T2w scans when both are available and meet the QC criteria.** Processing with a single anatomical modality is supported only when it meets the minimum requirements for the visit and surface reconstruction method used within Infant fMRIPrep ([see details](smri.md#m-crib-s-freesurfer)).
+### Anatomical scan requirements
+**Processing uses both T1w and T2w scans when both are available and meet the QC criteria.** Processing with a single anatomical modality is supported only when it meets the minimum requirements for the visit and surface reconstruction method used within Infant fMRIPrep (see [M-CRIB-S & FreeSurfer](#m-crib-s-freesurfer) section below).
 
-<table class="table-no-vertical-lines" width="100%"> 
+<table class="compact-table-no-vertical-lines" width="100%"> 
 <caption>Minimum anatomical scan requirements by visit and surface reconstruction method</caption>
 <thead>
 <tr>
@@ -62,7 +63,7 @@ When multiple eligible T1w or T2w scans are available, the scan with the best qu
 </thead>
 <tbody>
 <tr>
-<td><strong>M-CRIB-S</strong> (T2w-based)</td>
+<td><strong>M-CRIB-S</strong> <i>(T2w-based method for neonates)</i></td>
 <td><code>hash-d902942d</code></td>
 <td>T2w</td>
 <td>-</td>
@@ -70,7 +71,7 @@ When multiple eligible T1w or T2w scans are available, the scan with the best qu
 <td>-</td>
 </tr>
 <tr>
-<td><strong>Infant FreeSurfer</strong> (T1w-based)</td>
+<td><strong>Infant FreeSurfer</strong> <i>(T1w-based method for infants 0-2 years old)</i></td>
 <td><code>hash-364caa63</code></td>
 <td>T1w and T2w</td>
 <td>T1w and T2w</td>
@@ -79,14 +80,11 @@ When multiple eligible T1w or T2w scans are available, the scan with the best qu
 </tr>
 </tbody>
 </table>
+
 <!-- 
 *Note that this only applies to the full processing workflow from BIBSNet to XCP-D. All sessions are processed through BIBSNet in spite of visit/age as long as at least one anatomical, T1w or T2w, is present. The restrictions above determine whether the data will continue through Infant fMRIPrep and XCP-D processing as well after BIBSNet.* -->
 
-## Processing & Derivatives
-
-<div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">See the {{ hbcd_processing_site }} for full pipeline configuration and processing details.</span> </div>
-
-### BIBSNet
+## BIBSNet
 
 BIBSNet is a deep learning model optimized for infant MRI brain tissue segmentation (<a href="https://doi.org/10.1101/2023.03.22.533696">Hendrickson et al. 2024</a>). The <a href="https://bibsnet.readthedocs.io/en/latest/">BIBSNet pipeline</a> generates native-space brain segmentations and brain masks (as well as <code>volumes.tsv</code> files with ROI volume statistics), which are fed into Infant fMRIPrep for use in anatomical preprocessing and surface reconstruction.
 
@@ -110,24 +108,24 @@ hbcd/
 </pre>
 </div>
 
-### M-CRIB-S & FreeSurfer
+## M-CRIB-S & FreeSurfer
 
-M-CRIB-S & FreeSurfer are alternative surface reconstruction methods supported by Infant fMRIPrep optimized for different age ranges (see table below). The derivative folders provided in the release are generated from the [intermediate FreeSurfer-like folders](https://nibabies.readthedocs.io/en/latest/outputs.html#surface-reconstruction) produced by Infant fMRIPrep during surface reconstruction. When M-CRIB-S is used, Infant fMRIPrep still creates a FreeSurfer-structured folder containing the M-CRIB-S results mapped to the standard <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/ReconAllOutputFiles">recon-all</a> layout; these appear in the release under <code>freesurfer-d902942d/</code>.
+M-CRIB-S & FreeSurfer are available surface reconstruction methods supported by Infant fMRIPrep, optimized for different age ranges (see table under [Anatomical scan requirements](#anatomical-scan-requirements)). The derivative folders provided in the release are generated from the [intermediate FreeSurfer-like folders](https://nibabies.readthedocs.io/en/latest/outputs.html#surface-reconstruction) produced by Infant fMRIPrep during surface reconstruction. When M-CRIB-S is used, Infant fMRIPrep still creates a FreeSurfer-structured folder containing the M-CRIB-S results mapped to the standard <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/ReconAllOutputFiles">recon-all</a> layout; these appear in the release under <code>freesurfer-d902942d/</code>.
 
-<table class="table-no-vertical-lines">
-<thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Visits <i>(Age Range in Months)</i></th> </tr> </thead>
+<!-- <table class="table-no-vertical-lines">
+<thead> <tr> <th>Method</th> <th>Hash ID</th> <th>Description</th> <th>Visits</th> </tr> </thead>
 <tbody>
 <tr>
 <td>M-CRIB-S</td>
 <td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/nibabies_25.2.0-d902942d.html">d902942d</a></td>
 <td>T2w-based method for neonates</td>
-<td>V02 <i>(0-1 m)</i></td>
+<td>V02 only</td>
 </tr> <tr>
 <td>Infant FreeSurfer</td>
 <td><a href="https://hbcd-cbrain-processing.readthedocs.io/release_2.0/tools/nibabies_25.2.0-364caa63.html">364caa63</a></td> <td>T1w-based method for infants 0-2 years old</td>
-<td>V02 <i>(0-1 m)</i>, V03 <i>(3-9 m)</i>, V04 <i>(9-15 m)</i></td>
+<td>All</td>
 </tr> </tbody>
-</table>
+</table> -->
 
 <div id="fs" class="banner" onclick="toggleCollapse(this)" style="background-color: #f0dcfb;">
   <span class="emoji"><i class="fa fa-folder-tree"></i></span><span class="text-with-link">
@@ -244,8 +242,7 @@ find . -type f -name "*_symlink_s3_object" -print | while read path ; do
 ```
 </div>
 
-
-### QC Pipelines: MRIQC & BME-X
+## QC Pipelines: MRIQC & BME-X
 
 [MRIQC](https://mriqc.readthedocs.io/en/latest/about.html) extracts image quality metrics (IQMs) for each T1w/T2w and functional BOLD run and generates visual `.html` reports. The [BME-X](https://brain-mri-enhancement.readthedocs.io/) pipeline performs motion correction, resolution enhancement, denoising, and harmonization of MR images.
 
