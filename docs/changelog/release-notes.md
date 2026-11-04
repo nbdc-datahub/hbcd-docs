@@ -216,7 +216,7 @@ Release data now include the addition of the following measures, expanded data t
 
 ### 3.0 Updated Image Processing
 
-In addition to the inclusion of more participant data, all structural and functional MRI has been reprocessed through updated versions of Infant fMRIPrep and XCP-D pipelines. As such, the hash IDs included in the derivative folder and file names as well as tabulated derivative files have been updated. The updated hash IDs are as follows: 
+In addition to the inclusion of more participant data, Release 3.0 also includes processed data for V04 and V06 sessions where only a T1w was acquired, as this age range does not require both T1w and T2w to produce high-quality processed outputs. All structural and functional MRI have also been reprocessed through updated versions of Infant fMRIPrep and XCP-D pipelines. As such, the hash IDs included in the derivative folder and file names as well as tabulated derivative files have been updated. The updated hash IDs are as follows: 
 
 <table class="table-no-vertical-lines">
 <thead>
@@ -251,7 +251,6 @@ In addition to the inclusion of more participant data, all structural and functi
 </tr>
 </tbody>
 </table>
-
 
 ### 3.0 Resolved Known Issues & Updates
 
