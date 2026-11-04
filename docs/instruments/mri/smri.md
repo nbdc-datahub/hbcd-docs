@@ -8,29 +8,83 @@
 
 {{ instrument_description(instruments.smri) }}
 
+## File Selection for Processing
+
+#### Scan eligibility and selection
+When multiple eligible T1w or T2w scans are available, the scan with the best quality is selected for each modality. Scans must meet both of the following raw data quality control (QC) criteria (see {{ hbcd_processing_site }} for full configuration details):
+
+ <table class="table-no-vertical-lines">
+  <thead>
+    <tr>
+      <th>QC criterion</th>
+      <th>Field</th>
+      <th>Requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Passing overall QC</td>
+      <td><code>QC</code></td>
+      <td>= 1</td>
+    </tr>
+    <tr>
+      <td>Low motion</td>
+      <td><code>QU_motion</code></td>
+      <td>&lt; 2.01</td>
+    </tr>
+    <tr>
+      <td>Automated motion QC score for sMRI</td>
+      <td><code>aqc_motion</code></td>
+      <td>&lt; 10000</td>
+    </tr>
+    <tr>
+      <td>SNR ratio of image intensity within the brain mask</td>
+      <td><code>brain_SNR</code></td>
+      <td>&gt; -1000</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Anatomical scan requirements
+**Processing uses both T1w and T2w scans when both are available and meet the QC criteria.** Processing with a single anatomical modality is supported only when it meets the minimum requirements for the visit and surface reconstruction method used within Infant fMRIPrep ([see details](smri.md#m-crib-s-freesurfer)).
+
+<span class="table-title">Minimum anatomical scan requirements by visit and surface reconstruction method:</span>
+<table class="table-no-vertical-lines" width="100%"> 
+<thead>
+<tr>
+<th>Surface reconstruction method</th>
+<th>Derivatives hash ID</th>
+<th>V02</th>
+<th>V03</th>
+<th>V04</th>
+<th>V06</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>M-CRIB-S</strong> (T2w-based)</td>
+<td><code>hash-d902942d</code></td>
+<td>T2w</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Infant FreeSurfer</strong> (T1w-based)</td>
+<td><code>hash-364caa63</code></td>
+<td>T1w and T2w</td>
+<td>T1w and T2w</td>
+<td>T1w</td>
+<td>T1w</td>
+</tr>
+</tbody>
+</table>
+<!-- 
+*Note that this only applies to the full processing workflow from BIBSNet to XCP-D. All sessions are processed through BIBSNet in spite of visit/age as long as at least one anatomical, T1w or T2w, is present. The restrictions above determine whether the data will continue through Infant fMRIPrep and XCP-D processing as well after BIBSNet.* -->
+
 ## Processing & Derivatives
 
 <div class="banner" style="margin-bottom: 1em;"> <span class="emoji"><i class="fa-solid fa-circle-info"></i><i class="fa fa-person-cane"></i></span> <span class="text">See the {{ hbcd_processing_site }} for full pipeline configuration and processing details.</span> </div>
-
-<!-- <div id="file-selection" class="banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa fa-circle-info"></i></span>
-  <span class="text-with-link">
-<span class="text">File Selection for Processing</span>
-  <a class="anchor-link" href="#file-selection" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>For structural and functional MRI processing, file selection is based on raw data quality control metrics. Only scans with a passing overall QC score (<code>QC</code> = 1) and low motion (<code>QU_Motion</code> ≤ 2) are selected for processing. If multiple scans are present for a given modality (T1w/T2w), the scan with the highest QC metrics is used.</p>
-<p>All processing streams utilized both the T1w and T2w if they were present. Processing was still executed with only a single modality present as well, with certain requirements depending on the surface reconstruction method utilized within Infant fMRIPrep (<a href="#m-crib-s-freesurfer">see details</a>):</p>
-<ul>
-<li>M-CRIB-S (T2w-based): requires T2w</li>
-<li>Infant FreeSurfer (T1w-based): requires both T1w and T2w</li>
-</ul>
-</div>
-<p></p> -->
 
 ### BIBSNet
 

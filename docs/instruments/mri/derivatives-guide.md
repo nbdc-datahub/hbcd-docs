@@ -1,8 +1,8 @@
 # Guide to Structural & Functional MRI Derivatives
 
-Below we highlight key information to introduce you to the structural and functional MRI pipeline processing workflows and resulting derivatives.
+<!-- Below we highlight key information to introduce you to the structural and functional MRI pipeline processing workflows and resulting derivatives.
 
-## Multistep Processing Workflow
+## Multistep Processing Workflow -->
 
 HBCD structural and functional MRI data are processed through a sequence of BIDS App pipelines. At a high level, **BIBSNet** generates brain tissue segmentations and masks for T1w/T2w images. These are fed into **Infant-fMRIPrep** to generate confound files and motion-corrected data (in MNI space, registered to age-specific volumetric atlases) as well as fs_LR32k surface space. Outputs are then fed into **XCP-D** to run nuisance regression/denoising, parcellate the fMRI data, and compute summary measures.
 
@@ -19,85 +19,11 @@ Downstream XCP-D derivatives include a second hash ID (`7a4c379b`) indicating th
 <!-- source diagram: https://canva.link/pndtkg25cdfer95 -->
 <img src="../images/proc-hashes.svg" alt="Detailed MRI Processing Workflow">
 
-## File Selection for Processing
-
-### Scan eligibility and selection
-When multiple eligible T1w or T2w scans are available, the scan with the best quality is selected for each modality. Scans must meet both of the following raw data quality control (QC) criteria (see {{ hbcd_processing_site }} for full configuration details):
-
- <table class="table-no-vertical-lines">
-  <thead>
-    <tr>
-      <th>QC criterion</th>
-      <th>Field</th>
-      <th>Requirement</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Passing overall QC</td>
-      <td><code>QC</code></td>
-      <td>= 1</td>
-    </tr>
-    <tr>
-      <td>Low motion</td>
-      <td><code>QU_motion</code></td>
-      <td>&lt; 2.01</td>
-    </tr>
-    <tr>
-      <td>Automated motion QC score for sMRI</td>
-      <td><code>aqc_motion</code></td>
-      <td>&lt; 10000</td>
-    </tr>
-    <tr>
-      <td>SNR ratio of image intensity within the brain mask</td>
-      <td><code>brain_SNR</code></td>
-      <td>&gt; -1000</td>
-    </tr>
-  </tbody>
-</table>
-
-### Anatomical scan requirements
-**Processing uses both T1w and T2w scans when both are available and meet the QC criteria.** Processing with a single anatomical modality is supported only when it meets the minimum requirements for the visit and surface reconstruction method used within Infant fMRIPrep ([see details](smri.md#m-crib-s-freesurfer)).
-
-<span class="table-title">Minimum anatomical scan requirements by visit and surface reconstruction method:</span>
-<table class="table-no-vertical-lines" width="100%"> 
-<thead>
-<tr>
-<th>Surface reconstruction method</th>
-<th>Derivatives hash ID</th>
-<th>V02</th>
-<th>V03</th>
-<th>V04</th>
-<th>V06</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>M-CRIB-S</strong> (T2w-based)</td>
-<td><code>hash-d902942d</code></td>
-<td>T2w</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td><strong>Infant FreeSurfer</strong> (T1w-based)</td>
-<td><code>hash-364caa63</code></td>
-<td>T1w and T2w</td>
-<td>T1w and T2w</td>
-<td>T1w</td>
-<td>T1w</td>
-</tr>
-</tbody>
-</table>
-
-*Note that this only applies to the full processing workflow from BIBSNet to XCP-D. All sessions are processed through BIBSNet in spite of visit/age as long as at least one anatomical, T1w or T2w, is present. The restrictions above determine whether the data will continue through Infant fMRIPrep and XCP-D processing as well after BIBSNet.*
-
 ## Derivatives Highlight
 
 Below is a summary of key MRI derivatives used for structural morphology and resting-state functional MRI (rsfMRI) functional connectivity analyses. Key derivatives, produced by the [XCP-D](https://xcp-d.readthedocs.io/en/latest/) pipeline, include volumetric and surface-based time series for each participant. The data release also includes dense and parcellated time series with at least 2.5 minutes of low-motion data (FD>0.3), functional connectivity matrices, regional homogeneity values, and amplitude of low-frequency fluctuation values. 
 
-
+## Derivatives: Structural Morphology 
 <div id="struc" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-cubes"></i></span>
   <span class="text-with-link">
@@ -106,9 +32,9 @@ Below is a summary of key MRI derivatives used for structural morphology and res
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
-  <span class="arrow">▸</span>
+  <span class="arrow rotate">▸</span>
 </div>
-<div class="collapsible-content">
+<div class="collapsible-content open">
 <p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px; border-bottom: 1px solid #6b6b6b66;">Curvature, Sulcal Depth, & Cortical Thickness</p>
 <p class="recommended">
 <i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>anat/*_space-fsLR_den-91k_<span style="color: teal;">{curv|sulc|thickness}</span>.dscalar.nii</code></i><br>
@@ -139,6 +65,7 @@ Useful for rendering structural data, computing surface-based metrics, or visual
 </p>
 </div>
 
+## Derivatives: Functional Connectivity
 <div id="fc" class="banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-solid fa-globe"></i></span>
   <span class="text-with-link">
@@ -147,9 +74,9 @@ Useful for rendering structural data, computing surface-based metrics, or visual
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
-  <span class="arrow">▸</span>
+  <span class="arrow rotate">▸</span>
 </div>
-<div class="collapsible-content">
+<div class="collapsible-content open">
 <p style="font-size: 1.1em; font-weight:bold; padding-bottom: 2px;  padding-top: 12px; border-bottom: 1px solid #6b6b6b66;">Dense Timeseries</p>
 <p class="recommended">
 <i style="font-size: 0.9em;" class="fa-solid fa-folder-open"></i> <b>File:</b> <code>func/*_task-rest_space-fsLR_den-91k_desc-<span style="color: teal;">{denoised|denoisedSmoothed}</span>_bold.dtseries.nii</code></i><br>
@@ -218,9 +145,9 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
-  <span class="arrow">▸</span>
+  <span class="arrow rotate">▸</span>
 </div>
-<div class="collapsible-content">
+<div class="collapsible-content open">
 <p><i>See <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#parcellations-and-atlases">Parcellations & Atlases</a> in the XCP-D documentation for more details.</i></p>
 
 
@@ -274,6 +201,8 @@ See the <a href="https://xcp-d.readthedocs.io/en/latest/outputs.html#other-outpu
   border-radius: 6px;
 }
 </style>
+
+
 <table class="compact-table-clean">
 <thead>
 <tr>
