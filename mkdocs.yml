@@ -42,6 +42,10 @@ plugins:
 
 docs_dir: docs
 
+# Rebuild on changes to table data used by csv_table
+watch:
+  - data
+
 nav: 
   # - Home: index.md
 
