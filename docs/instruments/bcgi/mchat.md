@@ -3,19 +3,22 @@
 {{ readme_summary(instruments.mchat) }}
 {{ alert_warning(instruments.mchat) }}
 {{ data_warning(instruments.mchat) }}
-<!-- 
+
 <div id="data-warning" class="banner data-warning" onclick="toggleCollapse(this)">
 <span class="emoji">
     <i class="fas fa-exclamation-triangle"></i>
 </span>
 <span class="text-with-link">
-    <span class="text">Data Warning Alt Version</span>
+    <span class="text">Data Warning - revised text based on expected updates for 3.0 & organized info in table format</span>
     <a class="anchor-link" href="#data-warning" title="Copy link">
     <i class="fa-solid fa-link"></i>
     </a>
 </span><span class="arrow">▸</span></div>
 <div class="collapsible-content" style="background-color: #fcfaed;">
-<p>The M-CHAT-R/F was initially administered at the V07a visit, but the protocol was later revised to administer it at V07. Accordingly, the current release prioritizes V07 data where possible: </p>
+<div class="info-section-title">V07 and V07a administration</div>
+<div class="info-section">
+<p>The M-CHAT-R/F was initially administered at the V07a visit, but the protocol was later revised to administer it at V07. Accordingly, the current release prioritizes V07 data where possible:</p>
+<br>
 <table class="compact-table-no-vertical-lines">
   <thead>
     <tr>
@@ -42,8 +45,8 @@
     </tr>
   </tbody>
 </table>
-
-</div> -->
+</div>
+</div>
 
 {{ issues_banner() }}
 
