@@ -1,9 +1,3 @@
-<div class="admin-note" markdown="1">
-LUCI NOTE: WG please confirm that latest form information is correct and not missing anything (see <a href="orig-MCHAT.pdf">Original draft page</a>). I added the following intro statement back in the Instrument Description section (to provide a high-level overview of what the instrument is), please modify in fillout form as needed:
-
-<i>The M-CHAT-R/F (Robins et al., 2014) is a two-stage parent-report screening tool to assess the likelihood for autism. There are 20 questions. If a child fails an item, the caregiver is later interviewed and presented with additional questions for clarification.</i>
-</div>
-
 # Modified Checklist for Autism in Toddlers
 
 {{ readme_summary(instruments.mchat) }}

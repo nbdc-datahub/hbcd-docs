@@ -317,8 +317,7 @@ The tables below summarize known issues affecting the current data release and p
 <td>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
 <td><span class='pill'>TBD</span></td>
 </tr>
-</tbody></table>
-<!-- END KNOWN_ISSUES_TABLE -->
+</tbody></table><!-- END KNOWN_ISSUES_TABLE -->
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
