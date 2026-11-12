@@ -5,8 +5,6 @@
 {{ data_warning(instruments.fmri) }}
 {{ issues_banner() }}
 
----
-
 ## Overview
 #### Acquisition
 

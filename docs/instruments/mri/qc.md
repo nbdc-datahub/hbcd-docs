@@ -4,6 +4,7 @@
 
 Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed data and identify acquisition errors, image artifacts, or corrupted files before downstream processing. Automated QC is applied to all data. Due to the large data volume and time-intensive nature of manual inspection, manual visual review is only performed for series that fail automated QC. Although automated tools detect most quality issues, some artifacts may be missed if misclassified or not assessed as part of automated QC. Raw MR QC metrics are provided in the raw BIDS `scans.tsv` files in the release ([see details](../../standards/structure.md#participant-session-and-scan-level-metadata)).
 
+
 <div id="scans-tsv" class="banner" onclick="toggleCollapse(this)">
 <span class="emoji"><i class="fa fa-circle-check"></i></span>
 <span class="text-with-link">
@@ -13,6 +14,7 @@ Raw MRI QC combines **automated** and **manual** checks to evaluate unprocessed 
 <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p>NOTE: Raw data QC metrics in the release are based on DICOM assessments and may not accurately reflect raw BIDS data when post-conversion corrections have been applied. For example, some raw BIDS fieldmap files were scrubbed to remove poor-quality frames (see <a href="../fmri/#data-warning">fMRI Data Warning - Fieldmap bad frame removal</a>). Consequently, metrics such as <code>line_nframes</code>, the number of frames with line artifacts, will be inaccurate for raw BIDS files where these frames were removed.</p>
 <table class="compact-table-no-vertical-lines">
 <thead><tr><th>Field</th><th>Description</th></tr></thead>
 <tbody>
