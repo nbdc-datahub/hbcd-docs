@@ -2,14 +2,13 @@
 
 {{ readme_summary(instruments.mchat) }}
 {{ alert_warning(instruments.mchat) }}
-{{ data_warning(instruments.mchat) }}
 
 <div id="data-warning" class="banner data-warning" onclick="toggleCollapse(this)">
 <span class="emoji">
     <i class="fas fa-exclamation-triangle"></i>
 </span>
 <span class="text-with-link">
-    <span class="text">Data Warning - revised text based on expected updates for 3.0 & organized info in table format</span>
+    <span class="text">Data Warning</span>
     <a class="anchor-link" href="#data-warning" title="Copy link">
     <i class="fa-solid fa-link"></i>
     </a>
