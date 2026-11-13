@@ -2994,7 +2994,7 @@ ecpromis_pags:
   construct: Physical Activity
 mchat:
   supp2_text: null
-  status: README updated & ready for SME review
+  status: Complete / Stable
   alert1: The HBCD dataset includes many variables that may be important for sound and comprehensive analysis. The inclusion of additional variables will depend on the research question(s) and methodological approach. Users are encouraged to take time to explore the full range of available variables—especially those that may serve as controls, contextual indicators, confounders, mechanisms, or modifiers—to ensure thoughtful and well-supported analytic decisions. Other important considerations may include developmental functioning, broader family supports, and early adverse and protective exposures.
   Date submitted: '2026-10-30'
   hbcd_mods1: |-
@@ -3016,7 +3016,7 @@ mchat:
 
     Robins, D.L., Casagrande, K., Barton, M.L., Chen, C., Dumont-Mathieu, T., & Fein, D. (2014). Validation of the Modified Checklist for Autism in Toddlers-Revised with Follow-Up (M- CHAT-R/F). _Pediatrics_, 133 (1), 37-45. PMID:24366990. [PMCID: PMC3876182](https://doi.org/10.1542/peds.2013-1813).
   respondent_category: Parent on Child
-  admin_notes: "Luci 11/9 notes: \nI will consider complete until i hear otherwise - the WG just has a few minor details to tie off\n\nThere were some issues using this form, so we are using a shared google doc instead to finalize drafting. I will update the form data on the backend directly from this google doc to prevent whatever errors are happening with the FillOut form! <https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?tab=t.clr1r8eadxaq>"
+  admin_notes: "Luci 11/12 notes: \ntied off remaining feedback from WG - now complete"
   README URL: https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/
   email: nakshoomoff@health.ucsd.edu
   visits: V07
@@ -3056,8 +3056,8 @@ mchat:
     label: Form Link
     url: https://form.fillout.com/t/qaNxHYsnPBus?id=reciqnhrslaTGLOZY
   resource1_url: M-CHAT-R/F Electronic Decision Tree (English)
-  scoring: "Each of the initial 20 screening questions is scored as “pass” or “fail”. A pass equals a score of 0 and a fail equals a score of 1.  \n\n- For all items except 2, 5, and 12, the response “NO” indicates a fail (and score of 1)\n- For items 2, 5, and 12, “YES” indicates a fail (and score of 1).\n\nFor screening items with a “fail” response and score of 1, the follow-up questions are administered (see [HBCD Modifications](#hbcd_mods)). Each set of follow-up questions has a scoring algorithm/flow-chart (see [Web-based M-CHAT-R/F](https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/M-CHAT-R(F)_ELECTRONIC[16].pdf)) to determine if the item remains as a fail (score =1) or changes to a pass (score=0).\n\nThe total score is the sum of the “fails” after all follow-up questions are administered. The following guidelines are used:\n\n- \"High Risk\": Follow-Up score of 2 or higher\n- \"Low Risk\": Follow-Up score of 0 or 1 \n\nThe initial responses and the follow-up responses\
-    \ for each question are included in the data release."
+  scoring: "Each of the initial 20 screening questions is scored as “pass” or “fail”. A pass equals a score of 0 and a fail equals a score of 1.  \n\n- For all items except 2, 5, and 12, the response “NO” indicates a fail (score of 1)\n- For items 2, 5, and 12, “YES” indicates a fail (score of 1).\n\nFor screening items with a “fail” response (score of 1), the follow-up questions are administered (see [HBCD Modifications](#hbcd_mods)). Each set of follow-up questions has a scoring algorithm/flow-chart (see [Web-based M-CHAT-R/F](https://docs.hbcdstudy.org/3.0-readmes/instruments/bcgi/mchat/M-CHAT-R(F)_ELECTRONIC[16].pdf)) to determine if the item's follow-up score will be a fail (score =1) or a pass (score=0).\n\nThe total score is the sum of the “fails” after all questions are administered. The following guidelines are used:\n\n- \"High Risk\": Follow-up score of 2 or higher\n- \"Low Risk\": Follow-up score of 0 or 1 \n\nThe initial and follow-up responses for each question are included\
+    \ in the data release."
   changelog: I described the differences between the electronic version we created for HBCD and that used in the Attar et al., 2023 paper.
   resources: |-
     - [Web-based, electronic version of the M-CHAT-R/F](M-CHAT-R(F)_ELECTRONIC[16].pdf)
