@@ -31,7 +31,7 @@
 
 <p style="text-align: center; font-size: 1.1em; max-width: 900px; margin: 0 auto;">
   Visit the central HBCD Study website 
-  (<a href="https://hbcdstudy.org/">hbcdstudy.org</a>) for comprehensive information about the study.
+  (<a href="https://hbcdstudy.org/">hbcdstudy.org</a>) for comprehensive information about the study and resulting publications.
 </p>
 
 <p></p>

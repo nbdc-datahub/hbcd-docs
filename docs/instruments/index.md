@@ -485,27 +485,90 @@ Imaging includes Magnetic Resonance Imaging (structural, functional, quantitativ
 ### <i class="fa fa-microchip header-icon"></i> Novel Technologies & Wearable Sensors
 Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensors/#derivatives">HBCD-Motion</a> pipeline derivatives - see [Release Data](sensors/wearsensors.md#release-data) for details. Tabulated data includes questionnaires and sensor checklists:
 
+<div class="table-legend">
+  <span class="legend-item">
+    <i class="fa-solid fa-diagram-project legend-icon"></i>
+    Tabulated HBCD-Motion pipeline derivatives
+  </span>
+</div>
+
 <table class="compact-table-no-vertical-lines"> 
 <thead>
 <tr>
-<th>Instrument</th>
+<th>Table</th>
 <th>Construct</th>
-<th>Table Name</th>
+<th style="white-space: nowrap;">Table Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="sensors/questionnaire">Infant Sensor Questionnaires</a></td>
-<td>Motor Development, Regulation (Sleep/Wake)</td>
+<td>Motor Development, Regulation</td>
 <td><code>nt_ch_sens__qtn_<span class="blue-text">{1|2|3}</span></code></td>
 </tr>
 <tr>
-<td>Biosensor Receipt / Setup</td>
+<td><a href="sensors/wearsensors/">Biosensor Receipt</a></td>
 <td>Administrative</td>
-<td><code>nt_ch_sens_rcpt</code> / <code>nt_ch_sens_setup</code></td>
+<td><code>nt_ch_sens_rcpt</code></td>
 </tr>
+<tr>
+<td><a href="sensors/wearsensors/">Biosensor Setup</a></td>
+<td>Administrative</td>
+<td><code>nt_ch_sens_setup</code></td>
+</tr>
+
+<tr>
+<td><a href="sensors/gabi/">GABI Receipt</a></td>
+<td>Administrative</td>
+<td><code>nt_pa_gabi_rcpt</code></td>
+</tr>
+<tr>
+<td><a href="sensors/gabi/">GABI Setup</a></td>
+<td>Administrative</td>
+<td><code>nt_pa_gabi_setup</code></td>
+</tr>
+
+<tr>
+<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td>Jerk PA (left leg)</td>
+<td><code>nt_ch_biosensor_leg-left_desc-jerkpa_summary</code></td>
+</tr>
+<tr>
+<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td>Jerk PA (right leg)</td>
+<td><code>nt_ch_biosensor_leg-right_desc-jerkpa_summary</code></td>
+</tr>
+
+<tr>
+<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td>Kinematics-20Hz</td>
+<td style="white-space: nowrap;"><code>nt_ch_biosensor_desc-kinematics_recording-20_motion</code></td>
+</tr>
+<tr>
+<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td>Kinematics-25Hz</td>
+<td><code>nt_ch_biosensor_desc-kinematics_recording-25_motion</code></td>
+</tr>
+
+<tr>
+<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td>Acceleration PA (left leg)</td>
+<td><code>nt_ch_biosensor_leg-left_desc-accelerationpa_summary</code></td>
+</tr>
+<tr>
+<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td>Acceleration PA (right leg)</td>
+<td><code>nt_ch_biosensor_leg-right_desc-accelerationpa_summary</code></td>
+</tr>
+
 </tbody>
 </table>
+
+
+
+
+
+
 
 ### <i class="fa fa-heart-pulse header-icon"></i> Physical Health
 <table class="compact-table-no-vertical-lines">
