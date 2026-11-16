@@ -22,18 +22,11 @@
   width: 35%;
 }
 
-/* Wider Table Name column for sections with long/multiple codes (EEG, Imaging) */
-.compact-table-no-vertical-lines.wide-name-col th:nth-child(1),
-.compact-table-no-vertical-lines.wide-name-col td:nth-child(1) {
-  width: 22%;
-}
-.compact-table-no-vertical-lines.wide-name-col th:nth-child(2),
-.compact-table-no-vertical-lines.wide-name-col td:nth-child(2) {
-  width: 23%;
-}
-.compact-table-no-vertical-lines.wide-name-col th:nth-child(3),
-.compact-table-no-vertical-lines.wide-name-col td:nth-child(3) {
-  width: 55%;
+/* Wider Table Name column for sections with long/multiple codes (EEG, Imaging, Novel Tech) */
+.compact-table-no-vertical-lines.wide-name-col th,
+.compact-table-no-vertical-lines.wide-name-col td,
+.compact-table-no-vertical-lines.wide-name-col code {
+  white-space: nowrap;
 }
 
 /* INSTRUMENTS FILTER */
@@ -492,7 +485,7 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
   </span>
 </div>
 
-<table class="compact-table-no-vertical-lines"> 
+<table class="compact-table-no-vertical-lines wide-name-col"> 
 <thead>
 <tr>
 <th>Table</th>
@@ -501,11 +494,6 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="sensors/questionnaire">Infant Sensor Questionnaires</a></td>
-<td>Motor Development, Regulation</td>
-<td><code>nt_ch_sens__qtn_<span class="blue-text">{1|2|3}</span></code></td>
-</tr>
 <tr>
 <td><a href="sensors/wearsensors/">Biosensor Receipt</a></td>
 <td>Administrative</td>
@@ -529,44 +517,47 @@ Wearable sensor data includes raw BIDS and processed <a href="sensors/wearsensor
 </tr>
 
 <tr>
-<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
-<td>Jerk PA (left leg)</td>
+
+<td><a href="sensors/wearsensors/">HBCD-Motion</a> <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td>Acceleration PA (Left Leg)</td>
+<td><code>nt_ch_biosensor_leg-left_desc-accelerationpa_summary</code></td>
+</tr>
+<tr>
+<td><a href="sensors/wearsensors/">HBCD-Motion</a> <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td>Acceleration PA (Right Leg)</td>
+<td><code>nt_ch_biosensor_leg-right_desc-accelerationpa_summary</code></td>
+</tr>
+
+<tr>
+<td><a href="sensors/wearsensors/">HBCD-Motion</a> <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td>Jerk PA (Left Leg)</td>
 <td><code>nt_ch_biosensor_leg-left_desc-jerkpa_summary</code></td>
 </tr>
 <tr>
-<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
-<td>Jerk PA (right leg)</td>
+<td><a href="sensors/wearsensors/">HBCD-Motion</a> <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td>Jerk PA (Right Leg)</td>
 <td><code>nt_ch_biosensor_leg-right_desc-jerkpa_summary</code></td>
 </tr>
 
 <tr>
-<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td><a href="sensors/wearsensors/">HBCD-Motion</a> <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
 <td>Kinematics-20Hz</td>
 <td style="white-space: nowrap;"><code>nt_ch_biosensor_desc-kinematics_recording-20_motion</code></td>
 </tr>
 <tr>
-<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
+<td><a href="sensors/wearsensors/">HBCD-Motion</a> <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
 <td>Kinematics-25Hz</td>
 <td><code>nt_ch_biosensor_desc-kinematics_recording-25_motion</code></td>
 </tr>
 
 <tr>
-<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
-<td>Acceleration PA (left leg)</td>
-<td><code>nt_ch_biosensor_leg-left_desc-accelerationpa_summary</code></td>
-</tr>
-<tr>
-<td>HBCD-Motion <i class="fa-solid fa-diagram-project simple-icon" title="Tabulated pipeline derivative"></i></td>
-<td>Acceleration PA (right leg)</td>
-<td><code>nt_ch_biosensor_leg-right_desc-accelerationpa_summary</code></td>
+<td><a href="sensors/questionnaire">Infant Sensor Questionnaire 1/2/3</a></td>
+<td>Motor Development, Regulation</td>
+<td><code>nt_ch_sens__qtn_<span class="blue-text">{1|2|3}</span></code></td>
 </tr>
 
 </tbody>
 </table>
-
-
-
-
 
 
 

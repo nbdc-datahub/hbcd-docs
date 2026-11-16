@@ -166,7 +166,7 @@ nav:
 
         - Novel Tech & Wearable Sensors:
             - Infant Heart Rate: instruments/sensors/gabi.md
-            - Infant Leg Motion Sensors: instruments/sensors/wearsensors.md
+            - Infant Leg Motion: instruments/sensors/wearsensors.md
             - Infant Sensor Questionnaire: instruments/sensors/questionnaire.md
 
   - Release Notes: 
